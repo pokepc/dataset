@@ -1,6 +1,8 @@
 # PokéPC static dataset
 
-JSON data files for Pokémon, Games, Pokédexes, Living Dex Box presets, etc.
+JSON data files of Pokémon, Games, Pokédexes, Living Dex Box presets, etc., used in https://pokepc.net and https://classic.pokepc.net.
+
+Data has been collected from many public sources including: PokéAPI, Serebii.net and Bulbapedia.
 
 ## Structure
 
