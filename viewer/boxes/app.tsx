@@ -1,5 +1,5 @@
 import { render } from 'preact'
-import { useState } from 'preact/hooks'
+import { useCallback, useEffect, useState } from 'preact/hooks'
 
 // macro imports (Bun runs them at build time when called, bundling the result inline):
 import {
@@ -40,24 +40,19 @@ function getCleanPokemonId(pokemonId: string): string {
   return pass1
 }
 
+function getPokemonInfo(pokemonId: string): { id: string; name: string; sprite: string } {
+  const pid = getCleanPokemonId(pokemonId)
+  return { id: pid, name: pokemonById[pid]?.names.eng ?? pid, sprite: getPokemonSprite(pid) }
+}
+
 function getBoxPokemon(
   pokemon: Pkds.LegacyBoxPresetBoxPokemon,
-): { id: string; sprite: string } | null {
+): { id: string; name: string; sprite: string } | null {
   if (typeof pokemon === 'string') {
-    const pid = getCleanPokemonId(pokemon)
-    return { id: pid, sprite: getPokemonSprite(pid) }
+    return getPokemonInfo(pokemon)
   }
 
-  if (pokemon && pokemon.gmax) {
-    const pid = getCleanPokemonId(pokemon.pid)
-    return {
-      id: pid,
-      sprite: getPokemonSprite(pid),
-    }
-  }
-
-  const pid = pokemon ? getCleanPokemonId(pokemon.pid) : null
-  return pid ? { id: pid, sprite: getPokemonSprite(pid) } : null
+  return pokemon ? getPokemonInfo(pokemon.pid) : null
 }
 
 function PokeBox({ box, boxIndex }: { box: Pkds.LegacyBoxPresetBox; boxIndex: number }) {
@@ -71,16 +66,12 @@ function PokeBox({ box, boxIndex }: { box: Pkds.LegacyBoxPresetBox; boxIndex: nu
       <div className="poke-box-title">{box.title || `Box ${boxIndex + 1}`}</div>
       <div className="poke-box-cells">
         {cells.map((pokemon) => (
-          <div className={cn('poke-box-cell', { 'poke-box-cell-empty': !pokemon })}>
+          <div
+            data-tooltip={pokemon ? pokemon.name : undefined}
+            className={cn('poke-box-cell', { 'poke-box-cell-empty': !pokemon })}
+          >
             {pokemon ? (
-              <img
-                title={pokemon.id}
-                src={pokemon.sprite}
-                alt={pokemon.id}
-                loading="lazy"
-                width={40}
-                height={40}
-              />
+              <img src={pokemon.sprite} alt={pokemon.id} loading="lazy" width={40} height={40} />
             ) : undefined}
           </div>
         ))}
@@ -101,18 +92,61 @@ function PokeBoxList({ boxes }: { boxes: Array<Pkds.LegacyBoxPresetBox> }) {
   )
 }
 
+function useQueryStringStates<K extends string>(
+  keys: K[],
+  defaultValue?: Record<K, string | null>,
+): [Record<K, string | null>, (values: Record<K, string | null>) => void] {
+  function readFromUrl(): Record<K, string | null> {
+    const url = new URL(window.location.href)
+    return Object.fromEntries(
+      keys.map((key) => [key, url.searchParams.get(key) ?? defaultValue?.[key] ?? null]),
+    ) as Record<K, string | null>
+  }
+
+  const [values, setValues] = useState<Record<K, string | null>>(readFromUrl)
+
+  const setUrlValues = useCallback(
+    (newValues: Record<K, string | null>) => {
+      const url = new URL(window.location.href)
+      for (const key of keys) {
+        const value = newValues[key]
+        if (value === null || value === undefined || value === '') {
+          url.searchParams.delete(key)
+        } else {
+          url.searchParams.set(key, String(value))
+        }
+      }
+      window.history.pushState({}, '', url.toString())
+      setValues(newValues)
+    },
+    [keys],
+  )
+
+  useEffect(() => {
+    function handlePopState() {
+      setValues(readFromUrl())
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => {
+      window.removeEventListener('popstate', handlePopState)
+    }
+  }, [])
+
+  return [values, setUrlValues]
+}
+
 function App() {
-  const [selectedGame, setSelectedGame] = useState<string | undefined>()
-  const [selectedBoxPreset, setSelectedBoxPreset] = useState<string | undefined>()
-  const [selectedPokemon, setSelectedPokemon] = useState<string | undefined>()
-  const boxPresets = boxPresetsClassic.filter((preset) => preset.gameset === selectedGame)
+  const [qs, setQs] = useQueryStringStates(['game', 'preset', 'pokemon'])
+
+  const boxPresets = boxPresetsClassic.filter((preset) => preset.gameset === qs.game)
   const boxPresetsCount = boxPresets
     .map((preset) => preset.presets.length)
     .reduce((a, b) => a + b, 0)
 
   const currentBoxPreset = boxPresets
-    .find((preset) => preset.gameset === selectedGame)
-    ?.presets.find((preset) => preset.id === selectedBoxPreset)
+    .find((preset) => preset.gameset === qs.game)
+    ?.presets.find((preset) => preset.id === qs.preset)
 
   return (
     <main className="container">
@@ -126,11 +160,9 @@ function App() {
       <div className="select-bar">
         <select
           className="select"
-          value={selectedGame}
+          value={qs.game ?? undefined}
           onChange={(e) => {
-            setSelectedGame(e.currentTarget?.value)
-            setSelectedBoxPreset('')
-            setSelectedPokemon('')
+            setQs({ game: e.currentTarget?.value ?? null, preset: null, pokemon: null })
           }}
         >
           <button>
@@ -149,9 +181,9 @@ function App() {
         </select>
         <select
           className="select"
-          value={selectedBoxPreset}
-          onChange={(e) => setSelectedBoxPreset(e.currentTarget?.value)}
-          disabled={boxPresetsCount === 0 || !selectedGame}
+          value={qs.preset ?? undefined}
+          onChange={(e) => setQs({ ...qs, preset: e.currentTarget?.value ?? null })}
+          disabled={boxPresetsCount === 0 || !qs.game}
         >
           <button>
             <selectedcontent />
@@ -172,8 +204,8 @@ function App() {
         <select
           hidden
           className="select"
-          value={selectedPokemon}
-          onChange={(e) => setSelectedPokemon(e.currentTarget?.value)}
+          value={qs.pokemon ?? undefined}
+          onChange={(e) => setQs({ ...qs, pokemon: e.currentTarget?.value ?? null })}
         >
           <button>
             <selectedcontent />

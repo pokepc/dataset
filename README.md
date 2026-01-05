@@ -16,8 +16,8 @@ Requirements: Bun 1.3+ and PNPM 10.27+
   imports or type errors.
 
 > TIP: If you edit a Box preset, you can preview it by running `pnpm run dev` and visiting
-  `http://localhost:4011/boxes` (you will need to restart the server to see any data changes).
-<img width="745" height="340" alt="image" src="https://github.com/user-attachments/assets/73f18a73-9dd6-4b23-8d3e-1b846c3b130a" />
+> `http://localhost:4011/boxes` (you will need to restart the server to see any data changes).
+> <img width="745" height="340" alt="image" src="https://github.com/user-attachments/assets/73f18a73-9dd6-4b23-8d3e-1b846c3b130a" />
 
 ## Structure
 

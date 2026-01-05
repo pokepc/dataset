@@ -27,12 +27,15 @@
   .poke-box {
     display: flex;
     flex-direction: column;
-    background: teal;
+    background: hsl(180, 90%, 25%);
     border-radius: 8px;
     padding: 0.5rem;
     gap: 0.5rem;
     max-width: 800px;
     margin: 0 auto;
+    &.alternate {
+      background: hsl(24, 90%, 50%);
+    }
   }
 
   .poke-box-title {
@@ -150,6 +153,45 @@
   @starting-style {
     .select::picker(select):popover-open {
       opacity: 0;
+    }
+  }
+
+  /* base */
+  [data-tooltip] {
+    position: relative;
+  }
+
+  [data-tooltip]::after {
+    background-color: #fff;
+    color: #222;
+    font-size: 14px;
+    padding: 8px 12px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    content: attr(data-tooltip);
+    transform: translate(-50%, 110%) scale(0);
+    transform-origin: top;
+    transition: 100ms ease-in-out;
+    box-shadow:
+      0 4px 14px 0 rgba(0, 0, 0, 0.2),
+      0 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  [data-tooltip]:hover::after {
+    display: block;
+    transform: translate(-50%, 110%) scale(1);
+    z-index: 100;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    [data-tooltip]::after {
+      background-color: #222;
+      color: #fff;
     }
   }
 }
