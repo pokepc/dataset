@@ -1,2 +1,3 @@
-# box-presets
-Community Living Dex Box Presets
+# PokéPC static dataset
+
+JSON data files for Pokémon, Games, Pokédexes, Living Dex Box presets, etc.
