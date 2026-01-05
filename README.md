@@ -19,7 +19,10 @@ JSON data files for Pokémon, Games, Pokédexes, Living Dex Box presets, etc.
   - `fs.ts`: File system utilities to load the dataset JSON files with the correct types.
   - `languages.ts`: Languages extra data and utilities.
   - `schemas.ts`: Zod schemas for the dataset.
-  - `types.ts`: All type definitions created from the schemas and the enums.
+  - `search.ts`: Full-text search utilities. This is what powers the Pokémon searchbox on the PokéPC
+    website.
+  - `types.ts`: All type definitions created from the schemas and the enums. Use the `Pkds.` prefix
+    to access them directly without imports. e.g. `Pkds.Pokemon`.
   - `utils.ts`: Utility functions and helpers.
   - `validators.ts`: Validators for the dataset.
 
@@ -45,7 +48,7 @@ The recommended way to use it in your projects is to add it as a git submodule, 
 git submodule add git@github.com:pokepc/dataset.git src/dataset
 ```
 
-This way, you can directly use the dataset and the lib `ts` files in your project.
+This way, you can directly use the dataset and the lib `*.ts` files in your project as you wish.
 
 Once you build your own project, make sure you delete any content that is not needed, such as the
 `dataset/tests/` directory, so you can save some space.
