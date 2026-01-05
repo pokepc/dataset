@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+
+# frameworks and other local files
+build/
+dist/
+
+# artifacts
+.eslintcache
+*~lock~
+*.zip
+*.tar.gz
+*.gz
+*.min.json
