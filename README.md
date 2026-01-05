@@ -1,6 +1,7 @@
 # PokéPC static dataset
 
-JSON data files of Pokémon, Games, Pokédexes, Living Dex Box presets, etc., used in https://pokepc.net and https://classic.pokepc.net.
+JSON data files of Pokémon, Games, Pokédexes, Living Dex Box presets, etc., used in
+https://pokepc.net and https://classic.pokepc.net.
 
 Data has been collected from many public sources including: PokéAPI, Serebii.net and Bulbapedia.
 
@@ -30,12 +31,17 @@ Data has been collected from many public sources including: PokéAPI, Serebii.ne
 
 - `tests/*.test.ts`: Tests for the whole dataset.
 
+- `viewer/`: Viewer apps for the dataset. They are built with just Preact, TailwindCSS and Bun. Run
+  `pnpm run dev` to start them.
+
 ## How to update the dataset
 
 Requirements: Bun 1.3+ and PNPM 10.27+
 
 - Clone this project and install the dependencies with `pnpm install`.
 - Edit the files that you need.
+- If you edit a Box preset, you can preview it by running `pnpm run dev` and visiting
+  `http://localhost:4011/boxes` (you will need to restart the server to see any data changes).
 - Run `pnpm test` to check if the dataset is still valid.
 - Before pushing any code, run `pnpm lint` and `pnpm typecheck` to check if there are any circular
   imports or type errors.

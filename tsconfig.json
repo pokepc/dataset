@@ -6,6 +6,8 @@
     "target": "ES2024",
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "rootDirs": ["."],
     "allowArbitraryExtensions": true,
     "allowImportingTsExtensions": true,

@@ -53,6 +53,10 @@ declare global {
   namespace Pkds {
     // Classic PokéPC Types
     export type LegacyBoxPreset = z.infer<typeof boxPresetSchema>
+    export type LegacyBoxPresetByGameset = {
+      gameset: string
+      presets: LegacyBoxPreset[]
+    }
     export type LegacyBoxPresetBox = z.infer<typeof boxPresetBoxSchema>
     export type LegacyBoxPresetBoxPokemon = z.infer<typeof boxPresetBoxPokemonSchema>
     // Schema-based Types

@@ -1,9 +1,11 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { yolodb } from 'yolodb'
-import { arrayUnique } from './utils'
+import { arrayUnique, MemoryCache } from './utils'
 
 const DATASET_DIR = process.env.POKEPC_DATASET_DIR || path.join(process.cwd(), 'data')
+const DEFAULT_CACHE_TTL = 1000 * 10 // 10 seconds
+const memoryCache = new MemoryCache(DEFAULT_CACHE_TTL)
 
 export function absDatasetFile(fileName: string) {
   return path.join(DATASET_DIR, fileName)
@@ -132,6 +134,25 @@ export function joinPokedexesFilesFromIndex(index: string[]): Pkds.Pokedex[] {
   return pokedexes
 }
 
+export function joinBoxPresetFilesFromIndex(
+  index: string[],
+  variant: 'classic' | 'modern' = 'classic',
+): Array<Pkds.LegacyBoxPresetByGameset> {
+  const boxPresetGroups: Array<Pkds.LegacyBoxPresetByGameset> = []
+  for (const item of index) {
+    const filePath = absDatasetFile(`boxpresets/${variant}/${item}.json`)
+    if (!fs.existsSync(filePath)) {
+      console.error(`Box preset ${item} not found at ${filePath}`)
+      continue
+    }
+    const boxPresets = JSON.parse(fs.readFileSync(filePath, 'utf8'))
+    // const parsed = legacyBoxPresetSchema.parse(boxPreset)
+    boxPresetGroups.push({ gameset: item, presets: Object.values(boxPresets) })
+  }
+
+  return boxPresetGroups
+}
+
 export function readIndexFile(indexName: 'pokemon' | 'games' | 'pokedexes'): string[] {
   const indexFilePath = absDatasetFile(`indices/${indexName}.json`)
   if (!fs.existsSync(indexFilePath)) {
@@ -148,18 +169,45 @@ export function regeneratePokemonIndexFile(): string[] {
 }
 
 export function loadAllPokemon(): Pkds.Pokemon[] {
-  const index = readIndexFile('pokemon')
-  return joinPokemonFilesFromIndex(index)
+  return memoryCache.cached('allPokemon', () => {
+    const index = readIndexFile('pokemon')
+    return joinPokemonFilesFromIndex(index)
+  })
+}
+
+export function loadAllGameSets(): Pkds.Game[] {
+  return loadAllGames().filter((game) => {
+    if (game.type === 'set') {
+      return true
+    }
+    if (game.type === 'game' && !game.gameSet) {
+      return true
+    }
+    return false
+  })
+}
+
+export function loadAllBoxPresets(
+  variant: 'classic' | 'modern' = 'classic',
+): Array<Pkds.LegacyBoxPresetByGameset> {
+  return memoryCache.cached(`allBoxPresets-${variant}`, () => {
+    const filenames = loadAllGameSets().map((game) => game.id)
+    return joinBoxPresetFilesFromIndex(filenames, variant)
+  })
 }
 
 export function loadAllGames(): Pkds.Game[] {
-  const index = readIndexFile('games')
-  return joinGamesFilesFromIndex(index)
+  return memoryCache.cached('allGames', () => {
+    const index = readIndexFile('games')
+    return joinGamesFilesFromIndex(index)
+  })
 }
 
 export function loadAllPokedexes(): Pkds.Pokedex[] {
-  const index = readIndexFile('pokedexes')
-  return joinPokedexesFilesFromIndex(index)
+  return memoryCache.cached('allPokedexes', () => {
+    const index = readIndexFile('pokedexes')
+    return joinPokedexesFilesFromIndex(index)
+  })
 }
 
 export function loadAllCharacters(): Pkds.Character[] {
