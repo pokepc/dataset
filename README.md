@@ -5,6 +5,20 @@ https://pokepc.net and https://classic.pokepc.net.
 
 Data has been collected from many public sources including: PokéAPI, Serebii.net and Bulbapedia.
 
+## How to update the dataset
+
+Requirements: Bun 1.3+ and PNPM 10.27+
+
+- Clone this project and install the dependencies with `pnpm install`.
+- Edit the files that you need.
+- Run `pnpm test` to check if the dataset is still valid.
+- Before pushing any code, run `pnpm lint` and `pnpm typecheck` to check if there are any circular
+  imports or type errors.
+
+> TIP: If you edit a Box preset, you can preview it by running `pnpm run dev` and visiting
+  `http://localhost:4011/boxes` (you will need to restart the server to see any data changes).
+<img width="745" height="340" alt="image" src="https://github.com/user-attachments/assets/73f18a73-9dd6-4b23-8d3e-1b846c3b130a" />
+
 ## Structure
 
 - `data/`
@@ -31,20 +45,8 @@ Data has been collected from many public sources including: PokéAPI, Serebii.ne
 
 - `tests/*.test.ts`: Tests for the whole dataset.
 
-- `viewer/`: Viewer apps for the dataset. They are built with just Preact, TailwindCSS and Bun. Run
+- `viewer/`: Viewer apps for the dataset. They are built with just Preact and Bun. Run
   `pnpm run dev` to start them.
-
-## How to update the dataset
-
-Requirements: Bun 1.3+ and PNPM 10.27+
-
-- Clone this project and install the dependencies with `pnpm install`.
-- Edit the files that you need.
-- If you edit a Box preset, you can preview it by running `pnpm run dev` and visiting
-  `http://localhost:4011/boxes` (you will need to restart the server to see any data changes).
-- Run `pnpm test` to check if the dataset is still valid.
-- Before pushing any code, run `pnpm lint` and `pnpm typecheck` to check if there are any circular
-  imports or type errors.
 
 ## How to use the dataset and the lib in other projects
 
