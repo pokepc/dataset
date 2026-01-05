@@ -4,6 +4,17 @@
   "type": "module",
   "scripts": {
     "build": "echo 'Not implemented yet'",
-    "test": "echo 'Not implemented yet'"
+    "lint": "bunx --bun madge --circular --extensions ts,tsx lib/ tests/",
+    "test": "bun test tests/ --bail 20",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "yolodb": "^1.2.0",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.5",
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
   }
 }

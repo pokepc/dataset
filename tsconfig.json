@@ -1,0 +1,28 @@
+{
+  "include": ["**/*", "**/.server/**/*", "**/.client/**/*", ".react-router/types/**/*"],
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ES2024"],
+    "types": ["node", "bun"],
+    "target": "ES2024",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "rootDirs": ["."],
+    "allowArbitraryExtensions": true,
+    "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    // Stricter linting rules:
+    "erasableSyntaxOnly": true,
+    "verbatimModuleSyntax": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noImplicitThis": true,
+    "noFallthroughCasesInSwitch": true
+  }
+}
