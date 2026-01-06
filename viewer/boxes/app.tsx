@@ -2,14 +2,19 @@ import { render } from 'preact'
 import { useCallback, useEffect, useState } from 'preact/hooks'
 
 // macro imports (Bun runs them at build time when called, bundling the result inline):
-import { loadAllBoxPresets, loadAllGames, loadAllPokemon } from '../../lib/fs' with { type: 'macro' }
+import {
+  loadAllBoxPresets,
+  loadAllGames,
+  loadAllPokemon,
+} from '../../lib/fs' with { type: 'macro' }
 import { cn } from '../utils'
 
 const games = loadAllGames()
 const supportedGameSets = games
   .filter(
     (game) =>
-      (game.type === 'set' || (game.type === 'game' && !game.gameSet)) && new Date(game.releaseDate) < new Date(),
+      (game.type === 'set' || (game.type === 'game' && !game.gameSet)) &&
+      new Date(game.releaseDate) < new Date(),
   )
   .toReversed()
 const pokemon = loadAllPokemon()
@@ -40,7 +45,9 @@ function getPokemonInfo(pokemonId: string): { id: string; name: string; sprite: 
   return { id: pid, name: pokemonById[pid]?.names.eng ?? pid, sprite: getPokemonSprite(pid) }
 }
 
-function getBoxPokemon(pokemon: Pkds.LegacyBoxPresetBoxPokemon): { id: string; name: string; sprite: string } | null {
+function getBoxPokemon(
+  pokemon: Pkds.LegacyBoxPresetBoxPokemon,
+): { id: string; name: string; sprite: string } | null {
   if (typeof pokemon === 'string') {
     return getPokemonInfo(pokemon)
   }
@@ -64,7 +71,9 @@ function PokeBox({ box, boxIndex }: { box: Pkds.LegacyBoxPresetBox; boxIndex: nu
             className={cn('poke-box-cell', { 'poke-box-cell-empty': !pokemon })}
             key={`cell-${boxIndex}-${cellIndex}`}
           >
-            {pokemon ? <img src={pokemon.sprite} alt={pokemon.id} loading="lazy" width={40} height={40} /> : undefined}
+            {pokemon ? (
+              <img src={pokemon.sprite} alt={pokemon.id} loading="lazy" width={40} height={40} />
+            ) : undefined}
           </div>
         ))}
       </div>
@@ -74,7 +83,9 @@ function PokeBox({ box, boxIndex }: { box: Pkds.LegacyBoxPresetBox; boxIndex: nu
 
 function PokeBoxList({ boxes }: { boxes: Array<Pkds.LegacyBoxPresetBox> }) {
   return (
-    <div className={cn('poke-box-list', { 'has-1': boxes.length === 1, 'has-2': boxes.length === 2 })}>
+    <div
+      className={cn('poke-box-list', { 'has-1': boxes.length === 1, 'has-2': boxes.length === 2 })}
+    >
       {boxes.map((box, index) => (
         <PokeBox box={box} boxIndex={index} key={`box-${index}`} />
       ))}
@@ -130,7 +141,9 @@ function App() {
   const [qs, setQs] = useQueryStringStates(['game', 'preset', 'pokemon'])
 
   const boxPresets = boxPresetsClassic.filter((preset) => preset.gameset === qs.game)
-  const boxPresetsCount = boxPresets.map((preset) => preset.presets.length).reduce((a, b) => a + b, 0)
+  const boxPresetsCount = boxPresets
+    .map((preset) => preset.presets.length)
+    .reduce((a, b) => a + b, 0)
 
   const currentBoxPreset = boxPresets
     .find((preset) => preset.gameset === qs.game)
@@ -141,8 +154,8 @@ function App() {
       <h2>Box Preset Viewer</h2>
       <p>
         - Select a game set to view the box presets for that game set. <br />
-        - Select a box preset to view the boxes for that box preset. <br />- If you edit the dataset JSON files, you
-        will have to stop and restart the Bun server to see the changes. <br />
+        - Select a box preset to view the boxes for that box preset. <br />- If you edit the dataset
+        JSON files, you will have to stop and restart the Bun server to see the changes. <br />
         {/* - Select a Pokémon to view the Pokémon for that box. <br /> */}
       </p>
       <div className="select-bar">
