@@ -1,0 +1,24 @@
+# Ignore:
+build/
+dist/
+node_modules/
+.yarn/
+.cache/
+coverage/
+
+pnpm-*.yaml
+*.min.json
+package.json
+.pnpm-store
+.pnpm-store/
+
+.ignore/
+.local/
+
+app/generated/
+dataset/generated/
+*-index.json
+*.min.json
+
+data/
+
