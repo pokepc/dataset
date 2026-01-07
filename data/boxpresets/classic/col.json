@@ -1,1 +1,138 @@
-{}
+{
+  "sorted-species": {
+    "id": "sorted-species",
+    "name": "National: Sorted by Species",
+    "version": 1,
+    "gameSet": "col",
+    "description": "(Recommended) Pokémon Boxes are sorted following HOME's National Dex order, separating Species and Forms. First you will find all the species, then all the forms starting in a new box (leaving a gap with the species).",
+    "boxes": [
+      {
+        "pokemon": [
+          "bayleef",
+          "quilava",
+          "croconaw",
+          "furret",
+          "noctowl",
+          "ledian",
+          "ariados",
+          "togetic",
+          "flaaffy",
+          "sudowoodo",
+          "skiploom",
+          "aipom",
+          "sunflora",
+          "yanma",
+          "quagsire",
+          "espeon",
+          "umbreon",
+          "murkrow",
+          "misdreavus",
+          "forretress",
+          "dunsparce",
+          "gligar",
+          "granbull",
+          "qwilfish",
+          "shuckle",
+          "heracross",
+          "sneasel",
+          "ursaring",
+          "slugma",
+          "piloswine"
+        ]
+      },
+      {
+        "pokemon": [
+          "remoraid",
+          "delibird",
+          "mantine",
+          "skarmory",
+          "houndoom",
+          "stantler",
+          "smeargle",
+          "hitmontop",
+          "miltank",
+          "raikou",
+          "entei",
+          "suicune",
+          "tyranitar",
+          "hooh",
+          "makuhita",
+          "meditite",
+          "plusle",
+          "vibrava",
+          "swablu",
+          "tropius",
+          "absol",
+          "metagross"
+        ]
+      }
+    ],
+    "fullId": "col-sorted-species"
+  },
+  "sorted-species-minimal": {
+    "id": "sorted-species-minimal",
+    "name": "National: Sorted by Species (Minimal)",
+    "version": 1,
+    "gameSet": "col",
+    "description": "Pokémon Boxes are sorted following HOME's National Dex order separating Species and Forms, but Legendary or Mythical Pokémon forms (like Magearna Original Color, etc) will be excluded. First you will find all the species, then all the forms starting in a new box (leaving a gap with the species).",
+    "boxes": [
+      {
+        "pokemon": [
+          "bayleef",
+          "quilava",
+          "croconaw",
+          "furret",
+          "noctowl",
+          "ledian",
+          "ariados",
+          "togetic",
+          "flaaffy",
+          "sudowoodo",
+          "skiploom",
+          "aipom",
+          "sunflora",
+          "yanma",
+          "quagsire",
+          "espeon",
+          "umbreon",
+          "murkrow",
+          "misdreavus",
+          "forretress",
+          "dunsparce",
+          "gligar",
+          "granbull",
+          "qwilfish",
+          "shuckle",
+          "heracross",
+          "sneasel",
+          "ursaring",
+          "slugma",
+          "piloswine"
+        ]
+      },
+      {
+        "pokemon": [
+          "remoraid",
+          "delibird",
+          "mantine",
+          "skarmory",
+          "houndoom",
+          "stantler",
+          "smeargle",
+          "hitmontop",
+          "miltank",
+          "tyranitar",
+          "makuhita",
+          "meditite",
+          "plusle",
+          "vibrava",
+          "swablu",
+          "tropius",
+          "absol",
+          "metagross"
+        ]
+      }
+    ],
+    "fullId": "col-sorted-species-minimal"
+  }
+}
