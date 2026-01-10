@@ -221,6 +221,7 @@ export const pokemonSchema = z.object({
   isPrerelease: z.coerce.boolean(),
   isDefault: z.coerce.boolean(),
   isForm: z.coerce.boolean(),
+  formItem: common.slug.optional(),
   isLegendary: z.coerce.boolean(),
   isMythical: z.coerce.boolean(),
   isBaby: z.coerce.boolean(),
