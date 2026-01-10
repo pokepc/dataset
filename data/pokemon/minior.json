@@ -7,11 +7,11 @@
   "gen": 7,
   "type1": "rock",
   "type2": "flying",
-  "color": "red",
+  "color": "brown",
   "ability1": "shieldsdown",
   "isPrerelease": false,
   "isDefault": false,
-  "isForm": false,
+  "isForm": true,
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -48,6 +48,7 @@
   "weight": 4000,
   "maleRate": 0,
   "femaleRate": 0,
+  "baseSpecies": "minior-red",
   "baseForms": [
     "minior-red",
     "minior-orange",
@@ -57,15 +58,7 @@
     "minior-indigo",
     "minior-violet"
   ],
-  "forms": [
-    "minior-red",
-    "minior-orange",
-    "minior-yellow",
-    "minior-green",
-    "minior-blue",
-    "minior-indigo",
-    "minior-violet"
-  ],
+  "forms": [],
   "refs": {
     "pkApiId": "774",
     "pkApiFormId": "774",
@@ -74,16 +67,18 @@
     "showdown": "miniormeteor",
     "showdownName": "Minior-Meteor",
     "serebii": "minior",
-    "bulbapedia": "Minior Meteor Form"
+    "bulbapedia": "Minior"
   },
   "names": {
-    "eng": "Minior",
-    "fra": "Météno",
-    "deu": "Meteno",
-    "jap": "メテノ",
-    "kor": "메테노",
-    "chs": "小陨星",
-    "cht": "小隕星"
+    "eng": "Minior (Meteor Form)",
+    "esp": "Minior (Forma Meteorito)",
+    "fra": "Météno (Forme Météore)",
+    "deu": "Meteno (Meteorform)",
+    "ita": "Minior (Forma Meteora)",
+    "jap": "メテノ (りゅうせいのすがた)",
+    "kor": "메테노 (유성의 모습)",
+    "chs": "小陨星 (流星的樣子)",
+    "cht": "小隕星 (流星的样子)"
   },
   "genus": {
     "eng": "Meteor Pokémon",
@@ -96,6 +91,24 @@
     "chs": "流星宝可梦",
     "cht": "流星寶可夢"
   },
-  "speciesNames": {},
-  "formNames": {}
+  "speciesNames": {
+    "eng": "Minior",
+    "fra": "Météno",
+    "deu": "Meteno",
+    "jap": "メテノ",
+    "kor": "메테노",
+    "chs": "小陨星",
+    "cht": "小隕星"
+  },
+  "formNames": {
+    "eng": "Meteor Form",
+    "esp": "Forma Meteorito",
+    "fra": "Forme Météore",
+    "deu": "Meteorform",
+    "ita": "Forma Meteora",
+    "jap": "りゅうせいのすがた",
+    "kor": "유성의 모습",
+    "chs": "流星的樣子",
+    "cht": "流星的样子"
+  }
 }
