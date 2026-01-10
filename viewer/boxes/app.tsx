@@ -40,9 +40,17 @@ function getCleanPokemonId(pokemonId: string): string {
   return pass1
 }
 
-function getPokemonInfo(pokemonId: string): { id: string; name: string; sprite: string } {
+function getPokemonInfo(pokemonId: string): {
+  id: string
+  name: string
+  sprite: string
+} {
   const pid = getCleanPokemonId(pokemonId)
-  return { id: pid, name: pokemonById[pid]?.names.eng ?? pid, sprite: getPokemonSprite(pid) }
+  return {
+    id: pid,
+    name: pokemonById[pid]?.names.eng ?? pid,
+    sprite: getPokemonSprite(pid),
+  }
 }
 
 function getBoxPokemon(
@@ -84,7 +92,10 @@ function PokeBox({ box, boxIndex }: { box: Pkds.LegacyBoxPresetBox; boxIndex: nu
 function PokeBoxList({ boxes }: { boxes: Array<Pkds.LegacyBoxPresetBox> }) {
   return (
     <div
-      className={cn('poke-box-list', { 'has-1': boxes.length === 1, 'has-2': boxes.length === 2 })}
+      className={cn('poke-box-list', {
+        'has-1': boxes.length === 1,
+        'has-2': boxes.length === 2,
+      })}
     >
       {boxes.map((box, index) => (
         <PokeBox box={box} boxIndex={index} key={`box-${index}`} />
@@ -163,7 +174,11 @@ function App() {
           className="select"
           value={qs.game ?? undefined}
           onChange={(e) => {
-            setQs({ game: e.currentTarget?.value ?? null, preset: null, pokemon: null })
+            setQs({
+              game: e.currentTarget?.value ?? null,
+              preset: null,
+              pokemon: null,
+            })
           }}
         >
           <button>

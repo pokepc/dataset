@@ -3,7 +3,9 @@ import path from 'node:path'
 import { yolodb } from 'yolodb'
 import { arrayUnique, MemoryCache } from './utils'
 
-const DATASET_DIR = process.env.POKEPC_DATASET_DIR || path.join(process.cwd(), 'data')
+const DATASET_DIR = path.resolve(process.env.POKEPC_DATASET_DIR || path.join(process.cwd(), 'data'))
+console.debug('Resolved POKEPC dataset directory:', DATASET_DIR)
+
 const DEFAULT_CACHE_TTL = 1000 * 10 // 10 seconds
 const memoryCache = new MemoryCache(DEFAULT_CACHE_TTL)
 
