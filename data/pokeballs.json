@@ -1,10 +1,19 @@
 [
   {
+    "id": "blankball",
+    "name": "Blank Ball",
+    "gen": 1,
+    "shortDesc": "An unofficial Poké Ball that can be used as a placeholder, e.g. if you don't need to track Pokéballs. It represents a blank or unchecked state.",
+    "desc": "An unofficial Poké Ball that can be used as a placeholder, e.g. if you don't need to track Pokéballs. It represents a blank or unchecked state.",
+    "category": "regular",
+    "unusable": false
+  },
+  {
     "id": "greenball",
     "name": "Green Ball",
     "gen": 1,
-    "shortDesc": "An semi-official Poké Ball (appears on the Anime only) that can be used as a placeholder, e.g. if you don't need to track Pokéballs and just want a checklist.",
-    "desc": "An semi-official Poké Ball (appears on the Anime only) that can be used as a placeholder, e.g. if you don't need to track Pokéballs and just want a checklist.",
+    "shortDesc": "An semi-official Poké Ball (appears on the Anime only) that can be used as a placeholder, similar to the Blank Ball. It represents a green or checked state.",
+    "desc": "An semi-official Poké Ball (appears on the Anime only) that can be used as a placeholder, similar to the Blank Ball. It represents a green or checked state.",
     "category": "regular",
     "unusable": false
   },
