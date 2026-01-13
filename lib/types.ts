@@ -1,5 +1,6 @@
 import type z from 'zod'
 import type {
+  battleStyles,
   gamePlatforms,
   gameSeries,
   gameType,
@@ -12,6 +13,7 @@ import type {
   moveCategory,
   pokeballCategory,
   pokemonSizes,
+  raidStyles,
   ribbonCategory,
   statIds,
   titleTypes,
@@ -33,6 +35,7 @@ import type {
   markSchema,
   moveSchema,
   natureSchema,
+  onlineFeaturesSchema,
   originMarkSchema,
   personalitySchema,
   pokeballSchema,
@@ -66,6 +69,7 @@ declare global {
     export type Color = z.infer<typeof colorSchema>
     export type Game = z.infer<typeof gameSchema>
     export type GameFeatures = z.infer<typeof gameFeaturesSchema>
+    export type GameOnlineFeatures = z.infer<typeof onlineFeaturesSchema>
     export type GameType = (typeof gameType)[number]
     export type GamePlatform = (typeof gamePlatforms)[number]
     export type GameSeries = (typeof gameSeries)[number]
@@ -107,6 +111,8 @@ declare global {
     export type TitleType = (typeof titleTypes)[number]
     export type PokemonSize = (typeof pokemonSizes)[number]
     export type IvJudgeValue = (typeof ivJudgeValues)[number]
+    export type GameBattleStyle = (typeof battleStyles)[number]
+    export type GameRaidStyle = (typeof raidStyles)[number]
 
     // Computed Types -------------------------------------------------------------
 

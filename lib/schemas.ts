@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { POKEPC_LATEST_GENERATION } from './constants'
 import {
+  battleStyles,
   gamePlatforms,
   gameSeries,
   gameType,
@@ -11,6 +12,7 @@ import {
   languageInGameCodes,
   moveCategory,
   pokeballCategory,
+  raidStyles,
   ribbonCategory,
   statIds,
   typeIds,
@@ -97,6 +99,14 @@ export const gameFeaturesSchema = z.object({
   sizes: z.boolean(), // For some games like Let's GO, Legends, etc.
   abilities: z.boolean(), // gen 1-2 and Legends games have no abilities
 })
+export const onlineFeaturesSchema = z.object({
+  battles: z.boolean(),
+  battleStyles: z.array(z.enum(battleStyles)),
+  trades: z.boolean(),
+  raids: z.boolean(),
+  raidStyles: z.array(z.enum(raidStyles)),
+  coop: z.boolean(),
+})
 export const gameSchema = base.entity.extend({
   gen: common.gen,
   nameSlug: common.slug,
@@ -112,8 +122,9 @@ export const gameSchema = base.entity.extend({
   maxBoxes: common.int,
   maxBoxSize: common.int,
   platforms: z.array(z.enum(gamePlatforms)).min(1),
-  features: gameFeaturesSchema,
   isUnreleased: z.coerce.boolean().optional(),
+  features: gameFeaturesSchema,
+  onlineFeatures: onlineFeaturesSchema.optional(),
   // sprite: z.string(),
   // spriteIcon: z.string(),
 })

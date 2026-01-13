@@ -95,3 +95,6 @@ IV of 30: "Fantastic"
 IV of 31: "Best"
  */
 export const ivJudgeValues = ['nogood', 'decent', 'good', 'verygood', 'fantastic', 'best'] as const
+
+export const battleStyles = ['singles', 'doubles', 'triples', 'rotation', 'royale'] as const
+export const raidStyles = ['dynamax', 'tera'] as const
