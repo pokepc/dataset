@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'bun:test'
+import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
 import { loadAllAbilities, loadAllGames, loadAllPokemon } from '../lib/fs'
 import { pokemonSchema } from '../lib/schemas'

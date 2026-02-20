@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'bun:test'
+import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
 import { loadAllRibbons } from '../lib/fs'
 import { ribbonSchema } from '../lib/schemas'
