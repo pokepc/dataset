@@ -1,9 +1,4 @@
-import {
-  dexNumToGen,
-  formatDexNum,
-  generatePokemonSearchableText,
-  sanitizeSearchQuery,
-} from './utils'
+import { dexNumToGen, formatDexNum, generatePokemonSearchableText, sanitizeSearchQuery } from './utils'
 
 const MIN_SEARCH_LENGTH = 2
 
@@ -44,9 +39,7 @@ export function searchPokemon(
   }
 }
 
-export function createSearchablePokemonList(
-  pokemon: Array<Pkds.Pokemon>,
-): Array<Pkds.TranslatedPokemon> {
+export function createSearchablePokemonList(pokemon: Array<Pkds.Pokemon>): Array<Pkds.TranslatedPokemon> {
   return pokemon.map(
     (pokemon: Pkds.Pokemon): Pkds.TranslatedPokemon => ({
       ...pokemon,

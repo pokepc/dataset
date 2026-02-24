@@ -29,30 +29,8 @@ export const itemCategory = [
 ] as const
 export const pokeballCategory = ['regular', 'special', 'hisuian', 'other'] as const
 export const languageIds = ['en', 'es', 'esla', 'fr', 'de', 'it', 'ja', 'ko', 'chs', 'cht'] as const
-export const languageAlpha3Codes = [
-  'eng',
-  'esp',
-  'esla',
-  'fra',
-  'deu',
-  'ita',
-  'jap',
-  'kor',
-  'chs',
-  'cht',
-] as const
-export const languageInGameCodes = [
-  'ENG',
-  'ES-ES',
-  'ES-LA',
-  'FRA',
-  'DEU',
-  'ITA',
-  'JPN',
-  'KOR',
-  'CHT',
-  'CHS',
-] as const
+export const languageAlpha3Codes = ['eng', 'esp', 'esla', 'fra', 'deu', 'ita', 'jap', 'kor', 'chs', 'cht'] as const
+export const languageInGameCodes = ['ENG', 'ES-ES', 'ES-LA', 'FRA', 'DEU', 'ITA', 'JPN', 'KOR', 'CHT', 'CHS'] as const
 
 export const ribbonCategory = ['league', 'contest', 'tower', 'memory', 'gift'] as const
 export const typeIds = [

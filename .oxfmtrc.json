@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "semi": false,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "proseWrap": "always",
+  "singleQuote": true,
+  "arrowParens": "always",
+  "jsxSingleQuote": false,
+  "quoteProps": "as-needed",
+  "sortPackageJson": true,
+  "ignorePatterns": [
+    "build/",
+    "dist/",
+    "node_modules/",
+    ".yarn/",
+    ".cache/",
+    "coverage/",
+    "pnpm-*.yaml",
+    "*.min.json",
+    ".pnpm-store/",
+    ".ignore/",
+    ".local/",
+    "dataset/generated/",
+    "*-index.json",
+    "*.min.json"
+  ]
+}

@@ -6,9 +6,7 @@ import { validate } from './_utils'
 
 const pokemonRegionsMap = Object.fromEntries(regionsFs.all().map((region) => [region.id, region]))
 const pokedexesById = Object.fromEntries(loadAllPokedexes().map((pokedex) => [pokedex.id, pokedex]))
-const originMarksById = Object.fromEntries(
-  originMarksFs.all().map((originMark) => [originMark.id, originMark]),
-)
+const originMarksById = Object.fromEntries(originMarksFs.all().map((originMark) => [originMark.id, originMark]))
 
 describe('Validate games.json data', () => {
   const recordList = loadAllGames()
@@ -45,9 +43,7 @@ describe('Validate games.json data', () => {
 
   it('should have valid originMark IDs', () => {
     recordList.forEach((record) => {
-      expect(record.originMark === null || originMarksById[record.originMark] !== undefined).toBe(
-        true,
-      )
+      expect(record.originMark === null || originMarksById[record.originMark] !== undefined).toBe(true)
     })
   })
 })
@@ -82,9 +78,7 @@ describe('Validate games.json pokedex references', () => {
       })
 
       it('should have valid gameset ID', () => {
-        expect(
-          record.gameSuperSet === null || gamesIndexById[record.gameSuperSet] !== undefined,
-        ).toBe(true)
+        expect(record.gameSuperSet === null || gamesIndexById[record.gameSuperSet] !== undefined).toBe(true)
       })
 
       it('should have valid game superset ID', () => {

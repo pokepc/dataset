@@ -66,14 +66,9 @@ export const naturesFs = yolodb<Pkds.Nature>(absDatasetFile('natures.json'), 'id
   superjsonEnabled: false,
 })
 
-export const personalitiesFs = yolodb<Pkds.Personality>(
-  absDatasetFile('personalities.json'),
-  'id',
-  [],
-  {
-    superjsonEnabled: false,
-  },
-)
+export const personalitiesFs = yolodb<Pkds.Personality>(absDatasetFile('personalities.json'), 'id', [], {
+  superjsonEnabled: false,
+})
 
 export const regionsFs = yolodb<Pkds.Region>(absDatasetFile('regions.json'), 'id', [], {
   superjsonEnabled: false,
@@ -189,9 +184,7 @@ export function loadAllGameSets(): Pkds.Game[] {
   })
 }
 
-export function loadAllBoxPresets(
-  variant: 'classic' | 'modern' = 'classic',
-): Array<Pkds.LegacyBoxPresetByGameset> {
+export function loadAllBoxPresets(variant: 'classic' | 'modern' = 'classic'): Array<Pkds.LegacyBoxPresetByGameset> {
   return memoryCache.cached(`allBoxPresets-${variant}`, () => {
     const filenames = loadAllGameSets().map((game) => game.id)
     return joinBoxPresetFilesFromIndex(filenames, variant)

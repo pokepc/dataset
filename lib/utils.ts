@@ -183,10 +183,7 @@ export function getPokemonGender(
 
 // ----- Dataset Text and Translation UTILS --------------------------------------------
 
-export function translatePokemonText(
-  pkm: Pkds.Pokemon,
-  lang3Char: Pkds.LanguageAlpha3,
-): Pkds.PokemonText {
+export function translatePokemonText(pkm: Pkds.Pokemon, lang3Char: Pkds.LanguageAlpha3): Pkds.PokemonText {
   const fallback = lang3Char === 'eng' ? undefined : translatePokemon(pkm, 'eng')
   const pkmName = pkm.names[lang3Char] ?? fallback?.name ?? pkm.id
 
@@ -211,10 +208,7 @@ export function translatePokemon(
       ...pokemon,
       ...translatePokemonText(pokemon, lang),
       speciesGen: dexNumToGen(pokemon.dexNum),
-      dexNum: formatDexNum(
-        pokemon.dexNum,
-        dexNumPositions ?? Math.max(3, String(pokemon.dexNum).length),
-      ),
+      dexNum: formatDexNum(pokemon.dexNum, dexNumPositions ?? Math.max(3, String(pokemon.dexNum).length)),
       searchableText: generatePokemonSearchableText(pokemon),
     }
   }
@@ -236,24 +230,17 @@ export function translatePokemonById(
   pokemonList: Array<Pkds.Pokemon | Pkds.TranslatedPokemon>,
   lang: Pkds.LanguageAlpha3,
 ): Record<string, Pkds.TranslatedPokemon> {
-  return Object.fromEntries(
-    pokemonList.map((pokemon) => [pokemon.id, translatePokemon(pokemon, lang)]),
-  )
+  return Object.fromEntries(pokemonList.map((pokemon) => [pokemon.id, translatePokemon(pokemon, lang)]))
 }
 
 export function translatePokemonByNid(
   pokemonList: Array<Pkds.Pokemon | Pkds.TranslatedPokemon>,
   lang: Pkds.LanguageAlpha3,
 ): Record<string, Pkds.TranslatedPokemon> {
-  return Object.fromEntries(
-    pokemonList.map((pokemon) => [pokemon.nid, translatePokemon(pokemon, lang)]),
-  )
+  return Object.fromEntries(pokemonList.map((pokemon) => [pokemon.nid, translatePokemon(pokemon, lang)]))
 }
 
-export function generatePokemonDescription(
-  pokemon: Pkds.TranslatedPokemon,
-  lang3Char: Pkds.LanguageAlpha3,
-) {
+export function generatePokemonDescription(pokemon: Pkds.TranslatedPokemon, lang3Char: Pkds.LanguageAlpha3) {
   const parts = []
   const features = []
   const text = translatePokemonText(pokemon, lang3Char)
@@ -340,9 +327,7 @@ export function generateGameDescription(game: Pkds.Game, gameCatText: string) {
   const parts = []
   const genPart = game.gen > 0 ? ` from Generation ${game.gen} ` : ''
 
-  parts.push(
-    `Pokémon ${game.name} is a ${gameCatText} ${game.type} ${genPart}released for ${platforms}`,
-  )
+  parts.push(`Pokémon ${game.name} is a ${gameCatText} ${game.type} ${genPart}released for ${platforms}`)
 
   // if (game.gen > 0) {
   //   parts.push(`It's a Generation ${game.gen} game`)
