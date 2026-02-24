@@ -401,3 +401,14 @@ export function resolvePokemonName(
   }
   return nameObj
 }
+
+/**
+ * Useful to keep certain IDs in a given order (e.g. game IDs in the Pokemon data)
+ */
+export function sortIdsInGivenOrder(ids: string[] | undefined, rightOrder: string[]) {
+  return [...(ids ?? [])].sort((a, b) => {
+    const aIndex = rightOrder.indexOf(a)
+    const bIndex = rightOrder.indexOf(b)
+    return aIndex - bIndex
+  })
+}

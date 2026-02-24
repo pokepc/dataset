@@ -256,11 +256,12 @@ export const pokemonSchema = z.object({
   // ---- Obtainability:
   debutIn: common.slug, // the first game it appeared in
   obtainableIn: z.array(common.slug), // if it can be obtained in-game any time, without temporary or online events
-  eventOnlyIn: z.array(common.slug), // if it's exclusive to an event, and not obtainable in-game
+  transferOnlyIn: z.array(common.slug), // if it can only be obtained by transferring from another games
   storableIn: z.array(common.slug), // if it's storable in the game's boxes
+  eventOnlyIn: z.array(common.slug), // if it's exclusive to an event, and not obtainable in-game
+  shinyLockedIn: z.array(common.slug).optional(), // if it's shiny locked in that game.
   shinyReleased: z.coerce.boolean(),
   shinyBase: common.slug.optional(),
-  shinyLockedIn: z.array(common.slug).optional(), // if it's shiny locked in that game.
   // -------------------
   baseHp: common.statValue,
   baseAtk: common.statValue,
