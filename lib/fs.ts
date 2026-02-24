@@ -8,6 +8,14 @@ console.debug('Resolved POKEPC dataset directory:', DATASET_DIR)
 
 const DEFAULT_CACHE_TTL = 1000 * 10 // 10 seconds
 const memoryCache = new MemoryCache(DEFAULT_CACHE_TTL)
+const MEMORY_CACHE_DISABLED = process.env.POKEPC_DISABLE_MEMORY_CACHE === '1'
+
+function cached<T>(key: string, fn: () => T, ttl: number = DEFAULT_CACHE_TTL): T {
+  if (MEMORY_CACHE_DISABLED) {
+    return fn()
+  }
+  return memoryCache.cached(key, fn, ttl)
+}
 
 export function absDatasetFile(fileName: string) {
   return path.join(DATASET_DIR, fileName)
@@ -166,7 +174,7 @@ export function regeneratePokemonIndexFile(): string[] {
 }
 
 export function loadAllPokemon(): Pkds.Pokemon[] {
-  return memoryCache.cached('allPokemon', () => {
+  return cached('allPokemon', () => {
     const index = readIndexFile('pokemon')
     return joinPokemonFilesFromIndex(index)
   })
@@ -185,21 +193,21 @@ export function loadAllGameSets(): Pkds.Game[] {
 }
 
 export function loadAllBoxPresets(variant: 'classic' | 'modern' = 'classic'): Array<Pkds.LegacyBoxPresetByGameset> {
-  return memoryCache.cached(`allBoxPresets-${variant}`, () => {
+  return cached(`allBoxPresets-${variant}`, () => {
     const filenames = loadAllGameSets().map((game) => game.id)
     return joinBoxPresetFilesFromIndex(filenames, variant)
   })
 }
 
 export function loadAllGames(): Pkds.Game[] {
-  return memoryCache.cached('allGames', () => {
+  return cached('allGames', () => {
     const index = readIndexFile('games')
     return joinGamesFilesFromIndex(index)
   })
 }
 
 export function loadAllPokedexes(): Pkds.Pokedex[] {
-  return memoryCache.cached('allPokedexes', () => {
+  return cached('allPokedexes', () => {
     const index = readIndexFile('pokedexes')
     return joinPokedexesFilesFromIndex(index)
   })

@@ -36,10 +36,14 @@ export class MemoryCache {
 
   get<T>(key: string): T | undefined {
     const value = this.#cache.get(key)
-    if (value && (value.exptime > Date.now() || value.exptime === 0)) {
+    if (!value) {
+      return undefined
+    }
+    if (value.exptime > Date.now() || value.exptime === 0) {
       return value.value
     }
-    return value?.value || undefined
+    this.#cache.delete(key)
+    return undefined
   }
 
   set(key: string, value: any, ttl: number = this.defaultTTL) {
