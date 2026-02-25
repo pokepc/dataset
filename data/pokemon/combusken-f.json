@@ -4,7 +4,7 @@
   "dexNum": 256,
   "formId": "f",
   "region": "hoenn",
-  "gen": 4,
+  "gen": 3,
   "type1": "fire",
   "type2": "fighting",
   "color": "red",
@@ -33,10 +33,31 @@
   "canGmax": false,
   "canDynamax": true,
   "canBeAlpha": false,
-  "debutIn": "dp",
-  "obtainableIn": ["oras-or", "oras-as", "go", "swsh-sw", "swsh-sh", "bdsp-bd", "bdsp-sp", "sv-s", "sv-v", "lza"],
+  "debutIn": "rs",
+  "obtainableIn": [
+    "rs-r",
+    "rs-s",
+    "e",
+    "oras-or",
+    "oras-as",
+    "go",
+    "swsh-sw",
+    "swsh-sh",
+    "bdsp-bd",
+    "bdsp-sp",
+    "sv-s",
+    "sv-v",
+    "lza"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
+    "rs-r",
+    "rs-s",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -126,5 +147,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["col", "frlg-fr", "frlg-lg", "xd"]
 }

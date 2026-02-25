@@ -4,7 +4,7 @@
   "dexNum": 85,
   "formId": "f",
   "region": "kanto",
-  "gen": 4,
+  "gen": 2,
   "type1": "normal",
   "type2": "flying",
   "color": "brown",
@@ -34,11 +34,8 @@
   "canGmax": false,
   "canDynamax": true,
   "canBeAlpha": false,
-  "debutIn": "dp",
+  "debutIn": "gs",
   "obtainableIn": [
-    "rb-r",
-    "rb-b",
-    "y",
     "gs-g",
     "gs-s",
     "c",
@@ -64,6 +61,16 @@
   ],
   "eventOnlyIn": [],
   "storableIn": [
+    "gs-g",
+    "gs-s",
+    "c",
+    "rs-r",
+    "rs-s",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -153,5 +160,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["col"]
 }

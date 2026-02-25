@@ -4,7 +4,7 @@
   "dexNum": 111,
   "formId": "f",
   "region": "kanto",
-  "gen": 4,
+  "gen": 2,
   "type1": "ground",
   "type2": "rock",
   "color": "gray",
@@ -34,8 +34,16 @@
   "canGmax": false,
   "canDynamax": true,
   "canBeAlpha": true,
-  "debutIn": "dp",
+  "debutIn": "gs",
   "obtainableIn": [
+    "gs-g",
+    "gs-s",
+    "c",
+    "rs-r",
+    "rs-s",
+    "frlg-fr",
+    "frlg-lg",
+    "e",
     "pt",
     "hgss-hg",
     "hgss-ss",
@@ -56,6 +64,16 @@
   ],
   "eventOnlyIn": [],
   "storableIn": [
+    "gs-g",
+    "gs-s",
+    "c",
+    "rs-r",
+    "rs-s",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -146,5 +164,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["col", "xd"]
 }

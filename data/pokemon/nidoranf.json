@@ -32,7 +32,7 @@
   "canGmax": false,
   "canDynamax": true,
   "canBeAlpha": false,
-  "debutIn": "dp",
+  "debutIn": "rb",
   "obtainableIn": [
     "rb-r",
     "rb-b",
@@ -64,9 +64,11 @@
     "c",
     "rs-r",
     "rs-s",
+    "col",
     "frlg-fr",
     "frlg-lg",
     "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -138,5 +140,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["rs-r", "rs-s", "col", "e", "xd"]
 }

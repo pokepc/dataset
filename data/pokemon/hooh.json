@@ -34,16 +34,18 @@
   "canBeAlpha": false,
   "debutIn": "gs",
   "obtainableIn": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss", "go", "swsh-sw", "swsh-sh", "bdsp-bd", "bdsp-sp"],
-  "eventOnlyIn": [],
+  "eventOnlyIn": ["frlg-fr", "frlg-lg"],
   "storableIn": [
     "gs-g",
     "gs-s",
     "c",
     "rs-r",
     "rs-s",
+    "col",
     "frlg-fr",
     "frlg-lg",
     "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -114,5 +116,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["rs-r", "rs-s", "col", "e", "xd"]
 }

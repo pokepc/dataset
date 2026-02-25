@@ -43,7 +43,6 @@
     "c",
     "frlg-fr",
     "frlg-lg",
-    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -73,6 +72,7 @@
     "c",
     "rs-r",
     "rs-s",
+    "col",
     "frlg-fr",
     "frlg-lg",
     "e",
@@ -99,7 +99,8 @@
     "lgpe-lge",
     "home",
     "bdsp-bd",
-    "bdsp-sp"
+    "bdsp-sp",
+    "lza"
   ],
   "shinyReleased": true,
   "baseHp": 63,
@@ -148,5 +149,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["rs-r", "rs-s", "col", "e", "xd", "bw-b", "b2w2-b2", "b2w2-w2", "sm-s", "sm-m", "home"]
 }

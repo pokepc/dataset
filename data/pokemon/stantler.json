@@ -33,7 +33,22 @@
   "canDynamax": true,
   "canBeAlpha": true,
   "debutIn": "gs",
-  "obtainableIn": ["gs-g", "gs-s", "c", "col", "hgss-hg", "hgss-ss", "go", "bdsp-bd", "bdsp-sp", "la", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "gs-g",
+    "gs-s",
+    "c",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "hgss-hg",
+    "hgss-ss",
+    "go",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "gs-g",
@@ -45,6 +60,7 @@
     "frlg-fr",
     "frlg-lg",
     "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -115,5 +131,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["rs-r", "rs-s", "e", "xd"]
 }

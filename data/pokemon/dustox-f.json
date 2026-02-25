@@ -4,7 +4,7 @@
   "dexNum": 269,
   "formId": "f",
   "region": "hoenn",
-  "gen": 4,
+  "gen": 3,
   "type1": "bug",
   "type2": "poison",
   "color": "green",
@@ -33,10 +33,17 @@
   "canGmax": false,
   "canDynamax": true,
   "canBeAlpha": true,
-  "debutIn": "dp",
-  "obtainableIn": ["dp-d", "dp-p", "pt", "oras-or", "oras-as", "go", "bdsp-bd", "bdsp-sp", "la"],
+  "debutIn": "rs",
+  "obtainableIn": ["rs-r", "rs-s", "e", "dp-d", "dp-p", "pt", "oras-or", "oras-as", "go", "bdsp-bd", "bdsp-sp", "la"],
   "eventOnlyIn": [],
   "storableIn": [
+    "rs-r",
+    "rs-s",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -123,5 +130,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["col", "frlg-fr", "frlg-lg", "xd"]
 }

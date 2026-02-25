@@ -4,7 +4,7 @@
   "dexNum": 224,
   "formId": "f",
   "region": "johto",
-  "gen": 4,
+  "gen": 2,
   "type1": "water",
   "color": "red",
   "ability1": "suctioncups",
@@ -33,9 +33,12 @@
   "canGmax": false,
   "canDynamax": true,
   "canBeAlpha": true,
-  "debutIn": "dp",
+  "debutIn": "gs",
   "obtainableIn": [
+    "gs-g",
+    "gs-s",
     "col",
+    "frlg-lg",
     "dp-d",
     "dp-p",
     "pt",
@@ -56,6 +59,16 @@
   ],
   "eventOnlyIn": [],
   "storableIn": [
+    "gs-g",
+    "gs-s",
+    "c",
+    "rs-r",
+    "rs-s",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -144,5 +157,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["c", "rs-r", "rs-s", "frlg-fr", "e", "xd"]
 }

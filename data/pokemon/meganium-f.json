@@ -4,7 +4,7 @@
   "dexNum": 154,
   "formId": "f",
   "region": "johto",
-  "gen": 4,
+  "gen": 2,
   "type1": "grass",
   "color": "green",
   "ability1": "overgrow",
@@ -32,7 +32,7 @@
   "canGmax": false,
   "canDynamax": true,
   "canBeAlpha": false,
-  "debutIn": "dp",
+  "debutIn": "gs",
   "obtainableIn": ["gs-g", "gs-s", "c", "col", "hgss-hg", "hgss-ss", "go", "bdsp-bd", "bdsp-sp", "sv-s", "sv-v", "lza"],
   "eventOnlyIn": [],
   "storableIn": [
@@ -41,10 +41,11 @@
     "c",
     "rs-r",
     "rs-s",
+    "col",
     "frlg-fr",
     "frlg-lg",
     "e",
-    "col",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -132,5 +133,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["rs-r", "rs-s", "frlg-fr", "frlg-lg", "e", "xd"]
 }

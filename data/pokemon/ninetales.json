@@ -33,15 +33,11 @@
   "canBeAlpha": true,
   "debutIn": "rb",
   "obtainableIn": [
-    "rb-r",
     "rb-b",
     "y",
-    "gs-g",
     "gs-s",
-    "c",
     "rs-r",
     "rs-s",
-    "frlg-fr",
     "frlg-lg",
     "e",
     "xd",
@@ -76,9 +72,11 @@
     "c",
     "rs-r",
     "rs-s",
+    "col",
     "frlg-fr",
     "frlg-lg",
     "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -155,5 +153,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["rb-r", "gs-g", "c", "col", "frlg-fr"]
 }

@@ -35,7 +35,6 @@
   "canBeAlpha": false,
   "debutIn": "rs",
   "obtainableIn": [
-    "rs-r",
     "rs-s",
     "e",
     "xy-x",
@@ -54,9 +53,11 @@
   "storableIn": [
     "rs-r",
     "rs-s",
+    "col",
     "frlg-fr",
     "frlg-lg",
     "e",
+    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -128,5 +129,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["rs-r", "col", "frlg-fr", "frlg-lg", "xd"]
 }
