@@ -304,6 +304,10 @@ export function generatePokemonSearchableText(poke: Pkds.Pokemon) {
     poke.isConvergent ? 'convergent' : '',
     poke.isCosmeticForm ? 'cosmetic' : '',
     poke.isGmax ? 'gigantamax' : '',
+    poke.isForm ? `is-form` : `not-form`,
+    poke.isMega ? `is-mega` : `not-mega`,
+    poke.isBattleOnlyForm ? `is-battle-only` : `not-battle-only`,
+    poke.storableIn.length > 0 ? 'is-storable' : 'not-storable',
   ]
     .filter(Boolean)
     .join(' ')
