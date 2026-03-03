@@ -94,6 +94,15 @@ export const pokeLangData: Record<`${SupportedPokeLang2Char}`, PokeLangData> = {
     fullTitle: '简体中文 (Simplified Chinese)',
     synonyms: ['chs', 'chs-CN', 'zh-Hans', 'zh-CN'],
   },
+  pt: {
+    flag: '🇧🇷',
+    code2Char: 'pt',
+    code3Char: 'por',
+    locale: 'pt-BR',
+    title: 'Português',
+    fullTitle: 'Português (Brazil)',
+    synonyms: ['pt', 'por', 'pt-BR', 'pt-br', 'pt_BR'],
+  },
 }
 
 export type PokemonGameLocaleData = {
@@ -112,6 +121,7 @@ export const pokemonGameLocales: Array<PokemonGameLocaleData> = [
   { id: 'KOR', name: 'Korean' },
   { id: 'CHT', name: 'Chinese (Traditional)' },
   { id: 'CHS', name: 'Chinese (Simplified)' },
+  { id: 'PT-BR', name: 'Portuguese (Brazil)' },
 ]
 
 export const pokemonLangToGameLocale: Record<Pkds.LanguageAlpha2 | Pkds.LanguageAlpha3, Pkds.LanguageInGameCode> = {
@@ -132,6 +142,8 @@ export const pokemonLangToGameLocale: Record<Pkds.LanguageAlpha2 | Pkds.Language
   chs: 'CHS',
   ja: 'JPN',
   jap: 'JPN',
+  pt: 'PT-BR',
+  por: 'PT-BR',
 }
 
 export const supportedPokeLangs: Record<SupportedPokeLang, PokeLangData> = {
@@ -151,6 +163,8 @@ export const supportedPokeLangs: Record<SupportedPokeLang, PokeLangData> = {
   chs: pokeLangData.chs,
   ja: pokeLangData.ja,
   jap: pokeLangData.ja,
+  pt: pokeLangData.pt,
+  por: pokeLangData.pt,
 }
 
 export const supportedPokeLangIds2Char: SupportedPokeLang2Char[] = [
@@ -163,6 +177,7 @@ export const supportedPokeLangIds2Char: SupportedPokeLang2Char[] = [
   'cht',
   'chs',
   'ja',
+  'pt',
 ]
 
 export const supportedPokeLangIds3Char: SupportedPokeLang3Char[] = [
@@ -175,4 +190,5 @@ export const supportedPokeLangIds3Char: SupportedPokeLang3Char[] = [
   'cht',
   'chs',
   'jap',
+  'por',
 ]
