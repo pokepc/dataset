@@ -334,8 +334,9 @@ export function generateGameDescription(game: Pkds.Game, gameCatText: string) {
   const features = []
   const parts = []
   const genPart = game.gen > 0 ? ` from Generation ${game.gen} ` : ''
+  const releaseText = game.isUnreleased ? 'that will be released for' : 'released for'
 
-  parts.push(`Pokémon ${game.name} is a ${gameCatText} ${game.type} ${genPart}released for ${platforms}`)
+  parts.push(`Pokémon ${game.name} is a ${gameCatText} ${game.type} ${genPart}${releaseText} ${platforms}`)
 
   // if (game.gen > 0) {
   //   parts.push(`It's a Generation ${game.gen} game`)
