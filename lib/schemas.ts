@@ -63,6 +63,8 @@ const base = {
   }),
 }
 
+export const i18nTextSchema = z.record(z.enum(languageAlpha3Codes), z.string().optional())
+
 export const abilitySchema = base.entityWithGenAndDescsAndShowdownName
 export const personalitySchema = z.object({
   id: common.slug,
@@ -189,6 +191,20 @@ export const pokedexEntrySchema = z.object({
   dexNum: common.dexNum,
   isForm: z.coerce.boolean(),
   originDex: common.slug.optional(),
+  isNonCanonical: z.coerce.boolean().optional(), // if true, the pokemon is not canonical/main-series species or form. e.g Mosslax.
+  // meta: optional data that can be used if the pokemon is not found in the main-series dataset,
+  // e.g. this is relevant for spin-off games that contain special forms like in Pokopia.
+  // For example, Mosslax has a different dex number than Snorlax in Pokopia, so it needs a special entry.
+  meta: z
+    .object({
+      names: i18nTextSchema,
+      type1: common.slug,
+      type2: common.slug.optional(),
+      attributes: z.record(common.slug, z.string()), // key-value info
+      tags: z.array(common.slug),
+      canonicalPid: common.slug.optional(), // e.g. for professor tangrowth, it would be tangrowth
+    })
+    .optional(),
 })
 
 export const pokedexSchema = base.entity.extend({
@@ -200,7 +216,6 @@ export const pokedexSchema = base.entity.extend({
   entries: z.array(pokedexEntrySchema.strict()),
 })
 
-export const i18nTextSchema = z.record(z.enum(languageAlpha3Codes), z.string().optional())
 export const pokemonRefsSchema = z.object({
   pkApiId: z.string(),
   pkApiFormId: z.string(),
