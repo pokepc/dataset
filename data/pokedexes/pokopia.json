@@ -48,18 +48,14 @@
     { "pid": "weezing", "dexNum": 39, "isForm": false },
     { "pid": "tangela", "dexNum": 40, "isForm": false },
     {
-      "pid": "professortangrowth",
+      "pid": "tangrowth",
       "dexNum": 41,
       "isForm": false,
-      "isNonCanonical": true,
       "meta": {
-        "names": {
-          "eng": "Professor Tangrowth"
-        },
-        "type1": "grass",
-        "attributes": {},
-        "tags": [],
-        "canonicalPid": "tangrowth"
+        "names": { "eng": "Professor Tangrowth" },
+        "speciesNames": { "eng": "Tangrowth" },
+        "formNames": { "eng": "Professor" },
+        "imgNid": "0000-professortangrowth"
       }
     },
     { "pid": "tangrowth", "dexNum": 41, "isForm": true },
@@ -103,18 +99,14 @@
     { "pid": "cramorant", "dexNum": 77, "isForm": false },
     { "pid": "pichu", "dexNum": 78, "isForm": false },
     {
-      "pid": "peakychu",
+      "pid": "pikachu",
       "dexNum": 79,
       "isForm": false,
-      "isNonCanonical": true,
       "meta": {
-        "names": {
-          "eng": "Peakychu"
-        },
-        "type1": "electric",
-        "attributes": {},
-        "tags": [],
-        "canonicalPid": "pikachu"
+        "names": { "eng": "Peakychu" },
+        "speciesNames": { "eng": "Peakychu" },
+        "formNames": { "eng": "" },
+        "imgNid": "0000-peakychu"
       }
     },
     { "pid": "pikachu", "dexNum": 79, "isForm": true },
@@ -147,18 +139,16 @@
     { "pid": "lapras", "dexNum": 106, "isForm": false },
     { "pid": "munchlax", "dexNum": 107, "isForm": false },
     {
-      "pid": "mosslax",
+      "pid": "snorlax",
       "dexNum": 108,
       "isForm": false,
-      "isNonCanonical": true,
       "meta": {
         "names": {
           "eng": "Mosslax"
         },
-        "type1": "normal",
-        "attributes": {},
-        "tags": [],
-        "canonicalPid": "snorlax"
+        "speciesNames": { "eng": "Mosslax" },
+        "formNames": { "eng": "" },
+        "imgNid": "0000-mosslax"
       }
     },
     { "pid": "snorlax", "dexNum": 108, "isForm": true },
@@ -173,18 +163,16 @@
     { "pid": "wooper-paldea", "dexNum": 117, "isForm": false },
     { "pid": "clodsire", "dexNum": 118, "isForm": false },
     {
-      "pid": "smearguru",
+      "pid": "smeargle",
       "dexNum": 119,
       "isForm": false,
-      "isNonCanonical": true,
       "meta": {
         "names": {
           "eng": "Smearguru"
         },
-        "type1": "normal",
-        "attributes": {},
-        "tags": [],
-        "canonicalPid": "smeargle"
+        "speciesNames": { "eng": "Smearguru" },
+        "formNames": { "eng": "" },
+        "imgNid": "0000-smearguru"
       }
     },
     { "pid": "torchic", "dexNum": 120, "isForm": false },
@@ -252,19 +240,18 @@
     { "pid": "riolu", "dexNum": 180, "isForm": false },
     { "pid": "lucario", "dexNum": 181, "isForm": false },
     {
-      "pid": "djrotom",
+      "pid": "rotom",
       "dexNum": 182,
       "isForm": false,
-      "isNonCanonical": true,
       "meta": {
         "names": {
           "eng": "Stereo Rotom (DJ Rotom)"
         },
+        "speciesNames": { "eng": "Rotom (DJ Rotom)" },
+        "formNames": { "eng": "Stereo Form" },
         "type1": "electric",
         "type2": "normal",
-        "attributes": {},
-        "tags": [],
-        "canonicalPid": "rotom"
+        "imgNid": "0000-djrotom"
       }
     },
     { "pid": "larvesta", "dexNum": 183, "isForm": false },
@@ -277,18 +264,16 @@
     { "pid": "cinderace", "dexNum": 190, "isForm": false },
     { "pid": "skwovet", "dexNum": 191, "isForm": false },
     {
-      "pid": "chefdente",
+      "pid": "greedent",
       "dexNum": 192,
       "isForm": false,
-      "isNonCanonical": true,
       "meta": {
         "names": {
           "eng": "Chef Dente"
         },
-        "type1": "normal",
-        "attributes": {},
-        "tags": [],
-        "canonicalPid": "greedent"
+        "speciesNames": { "eng": "Chef Dente" },
+        "formNames": { "eng": "" },
+        "imgNid": "0000-chefdente"
       }
     },
     { "pid": "rolycoly", "dexNum": 193, "isForm": false },
@@ -370,19 +355,14 @@
     { "pid": "tinkatink", "dexNum": 268, "isForm": false },
     { "pid": "tinkatuff", "dexNum": 269, "isForm": false },
     {
-      "pid": "tinkamaster",
+      "pid": "tinkaton",
       "dexNum": 270,
       "isForm": false,
-      "isNonCanonical": true,
       "meta": {
-        "names": {
-          "eng": "Tinkamaster"
-        },
-        "type1": "fairy",
-        "type2": "steel",
-        "attributes": {},
-        "tags": [],
-        "canonicalPid": "tinkaton"
+        "names": { "eng": "Tinkamaster" },
+        "speciesNames": { "eng": "Tinkamaster" },
+        "formNames": { "eng": "" },
+        "imgNid": "0000-tinkamaster"
       }
     },
     { "pid": "aerodactyl", "dexNum": 271, "isForm": false },

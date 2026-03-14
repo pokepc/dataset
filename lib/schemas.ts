@@ -198,11 +198,14 @@ export const pokedexEntrySchema = z.object({
   meta: z
     .object({
       names: i18nTextSchema,
-      type1: common.slug,
+      speciesNames: i18nTextSchema.optional(),
+      formNames: i18nTextSchema.optional(),
+      type1: common.slug.optional(),
       type2: common.slug.optional(),
-      attributes: z.record(common.slug, z.string()), // key-value info
-      tags: z.array(common.slug),
+      attributes: z.record(common.slug, z.string()).optional(), // key-value info
+      tags: z.array(common.slug).optional(),
       canonicalPid: common.slug.optional(), // e.g. for professor tangrowth, it would be tangrowth
+      imgNid: common.slug.optional(), // if using a different nid for the image
     })
     .optional(),
 })
@@ -230,6 +233,7 @@ export const pokemonRefsSchema = z.object({
 export const pokemonSchema = z.object({
   id: common.slug,
   nid: common.slug,
+  imgNid: common.slug.optional(), // if using a different nid for the image
   dexNum: common.dexNum,
   formId: common.slug.optional(),
   // sprite2d: z.string().nullable(), // TODO:! make not nullable
