@@ -9,6 +9,22 @@
     "format:check": "oxfmt --check",
     "typecheck": "tsc --noEmit"
   },
+  "files": [
+    "lib",
+    "data",
+    "!lib/**/*.test.ts"
+  ],
+  "exports": {
+    "./lib/constants": "./lib/constants.ts",
+    "./lib/enums": "./lib/enums.ts",
+    "./lib/fs": "./lib/fs.ts",
+    "./lib/languages": "./lib/languages.ts",
+    "./lib/schemas": "./lib/schemas.ts",
+    "./lib/search": "./lib/search.ts",
+    "./lib/types": "./lib/types.ts",
+    "./lib/utils": "./lib/utils.ts",
+    "./lib/validators": "./lib/validators.ts"
+  },
   "dependencies": {
     "yolodb": "^1.2.0",
     "zod": "^4.3.6"
