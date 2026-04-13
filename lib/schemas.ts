@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { POKEPC_LATEST_GENERATION } from './constants'
 import {
+  abilityTagIds,
   battleStyles,
   gamePlatforms,
   gameSeries,
@@ -65,7 +66,11 @@ const base = {
 
 export const i18nTextSchema = z.record(z.enum(languageAlpha3Codes), z.string().optional())
 
-export const abilitySchema = base.entityWithGenAndDescsAndShowdownName
+export const abilitySchema = base.entityWithGenAndDescsAndShowdownName.extend({
+  tags: z.array(z.enum(abilityTagIds)).min(1),
+  immunities: z.array(common.typeId).optional(),
+  weaknesses: z.array(common.typeId).optional(),
+})
 export const personalitySchema = z.object({
   id: common.slug,
   shortDesc: common.shortDesc,

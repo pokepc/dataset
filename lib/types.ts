@@ -1,5 +1,6 @@
 import type z from 'zod'
 import type {
+  abilityTagIds,
   battleStyles,
   gamePlatforms,
   gameSeries,
@@ -64,6 +65,7 @@ declare global {
     export type LegacyBoxPresetBoxPokemon = z.infer<typeof boxPresetBoxPokemonSchema>
     // Schema-based Types
     export type Ability = z.infer<typeof abilitySchema>
+    export type AbilityTagId = (typeof abilityTagIds)[number]
     export type Personality = z.infer<typeof personalitySchema>
     export type Character = z.infer<typeof characterSchema>
     export type Color = z.infer<typeof colorSchema>

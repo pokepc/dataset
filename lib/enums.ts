@@ -81,6 +81,32 @@ export const typeIds = [
   'stellar', // keep. it can be used as Tera type and move damage in Scarlet and Violet
 ] as const
 
+/** Category tags on abilities (data/abilities.json `tags`). */
+export const abilityTagIds = [
+  'alert',
+  'ally-helper',
+  'stat-boost',
+  'move-boost',
+  'bypass',
+  'defense',
+  'handicap',
+  'heal',
+  'items',
+  'priority-control',
+  'damage',
+  'target-weaken',
+  'status-trigger',
+  'status-immunity',
+  'steal',
+  'weather',
+  'terrain',
+  'trap',
+  'ability-change',
+  'type-change',
+  'species-specific',
+  'other',
+] as const
+
 export const statIds = ['hp', 'atk', 'def', 'spa', 'spd', 'spe', 'acc', 'eva'] as const
 export const moveCategory = ['physical', 'special', 'status'] as const
 export const genders = ['m', 'f'] as const // m: male, f: female, null/undefined: genderless

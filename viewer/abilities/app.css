@@ -1,0 +1,473 @@
+@layer app {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Surfaces: avoid theme.css vars that are often unset — use Canvas/CanvasText mixes */
+  .abilities-root {
+    --ab-page: color-mix(in oklab, Canvas 96%, CanvasText);
+    --ab-elevated: Canvas;
+    --ab-muted: color-mix(in oklab, CanvasText 6%, Canvas);
+    --ab-muted-strong: color-mix(in oklab, CanvasText 10%, Canvas);
+    --ab-border: color-mix(in oklab, CanvasText 16%, Canvas);
+    --ab-border-strong: color-mix(in oklab, CanvasText 26%, Canvas);
+    --ab-shadow: color-mix(in oklab, CanvasText 14%, transparent);
+    --ab-accent: hsl(220 65% 52%);
+    --ab-accent-soft: color-mix(in oklab, hsl(220 65% 52%) 22%, Canvas);
+
+    min-height: 100dvh;
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 1.25rem 1rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--ab-page);
+    color: CanvasText;
+  }
+
+  .abilities-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem 1.25rem;
+    padding: 1rem 1.15rem;
+    border-radius: 0.625rem;
+    background: var(--ab-elevated);
+    border: 1px solid var(--ab-border-strong);
+    box-shadow: 0 1px 0 var(--ab-shadow);
+  }
+
+  .abilities-header-titles h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: var(--font-brand);
+    font-weight: 700;
+  }
+
+  .abilities-header-sub {
+    margin: 0.35rem 0 0;
+    font-size: 0.875rem;
+    color: color-mix(in oklab, CanvasText 72%, Canvas);
+    max-width: 28rem;
+    line-height: 1.4;
+  }
+
+  .abilities-back {
+    flex-shrink: 0;
+    padding: 0.4rem 0.65rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--ab-border);
+    background: var(--ab-muted);
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .abilities-back:hover {
+    background: var(--ab-muted-strong);
+    border-color: var(--ab-border-strong);
+  }
+
+  .abilities-toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 0.625rem;
+    background: var(--ab-elevated);
+    border: 1px solid var(--ab-border-strong);
+    box-shadow: 0 2px 8px var(--ab-shadow);
+    overflow: hidden;
+  }
+
+  .abilities-toolbar-section {
+    padding: 0.9rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .abilities-toolbar-section + .abilities-toolbar-section {
+    border-top: 1px solid var(--ab-border);
+  }
+
+  .abilities-section-label {
+    margin: 0;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: color-mix(in oklab, CanvasText 58%, Canvas);
+    font-family: var(--font-sans);
+  }
+
+  .abilities-field-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: color-mix(in oklab, CanvasText 70%, Canvas);
+    margin-bottom: 0.25rem;
+  }
+
+  .abilities-field-label--inline {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .abilities-tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+  }
+
+  .abilities-search {
+    width: 100%;
+    padding: 0.55rem 0.85rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--ab-border-strong);
+    background: var(--ab-muted);
+    color: inherit;
+    font: inherit;
+    outline: none;
+  }
+
+  .abilities-search:focus {
+    border-color: var(--ab-accent);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--ab-accent) 35%, transparent);
+    background: var(--ab-elevated);
+  }
+
+  .abilities-search::placeholder {
+    color: color-mix(in oklab, CanvasText 45%, Canvas);
+  }
+
+  .abilities-tag-mode {
+    display: inline-flex;
+    border-radius: 0.5rem;
+    border: 1px solid var(--ab-border-strong);
+    overflow: hidden;
+    font-size: 0.8125rem;
+    background: var(--ab-muted);
+  }
+
+  .abilities-tag-mode button {
+    padding: 0.4rem 0.75rem;
+    border: none;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+    color: inherit;
+    border-right: 1px solid var(--ab-border);
+  }
+
+  .abilities-tag-mode button:last-child {
+    border-right: none;
+  }
+
+  .abilities-tag-mode button[aria-pressed='true'] {
+    background: var(--ab-accent-soft);
+    font-weight: 600;
+    color: CanvasText;
+  }
+
+  .abilities-tag-mode button:focus-visible {
+    outline: 2px solid var(--ab-accent);
+    outline-offset: -2px;
+  }
+
+  .abilities-tag-add {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .abilities-tag-add-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .abilities-tag-add select {
+    min-width: 12rem;
+    padding: 0.45rem 0.65rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--ab-border-strong);
+    font: inherit;
+    background: var(--ab-muted);
+    color: inherit;
+  }
+
+  .abilities-tag-add select:focus {
+    outline: none;
+    border-color: var(--ab-accent);
+    box-shadow: 0 0 0 2px color-mix(in oklab, var(--ab-accent) 30%, transparent);
+  }
+
+  .abilities-tag-add button {
+    padding: 0.45rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--ab-border-strong);
+    background: var(--ab-muted-strong);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    color: inherit;
+  }
+
+  .abilities-tag-add button:hover:not(:disabled) {
+    background: color-mix(in oklab, CanvasText 14%, Canvas);
+  }
+
+  .abilities-tag-add button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .abilities-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .abilities-pills-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    min-height: 1.75rem;
+    align-items: center;
+    padding: 0.5rem 0.65rem;
+    border-radius: 0.5rem;
+    border: 1px dashed var(--ab-border);
+    background: var(--ab-muted);
+  }
+
+  .abilities-pills-empty {
+    font-size: 0.8125rem;
+    color: color-mix(in oklab, CanvasText 55%, Canvas);
+    font-style: italic;
+  }
+
+  .abilities-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.35rem 0.2rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    background: var(--ab-accent-soft);
+    border: 1px solid color-mix(in oklab, var(--ab-accent) 45%, var(--ab-border));
+  }
+
+  .abilities-pill button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.35rem;
+    height: 1.35rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: color-mix(in oklab, CanvasText 12%, transparent);
+    color: inherit;
+    font-size: 1.1rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .abilities-pill button:hover {
+    background: color-mix(in oklab, CanvasText 22%, transparent);
+  }
+
+  .abilities-toolbar-footer {
+    padding: 0.65rem 1.1rem;
+    border-top: 1px solid var(--ab-border);
+    background: var(--ab-muted);
+    font-size: 0.875rem;
+    color: color-mix(in oklab, CanvasText 78%, Canvas);
+  }
+
+  .abilities-toolbar-footer strong {
+    color: CanvasText;
+    font-weight: 700;
+  }
+
+  .abilities-results {
+    border-radius: 0.625rem;
+    border: 1px solid var(--ab-border-strong);
+    background: var(--ab-elevated);
+    box-shadow: 0 2px 8px var(--ab-shadow);
+    padding: 0.75rem;
+  }
+
+  .abilities-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .abilities-card {
+    border-radius: 0.5rem;
+    border: 1px solid var(--ab-border);
+    background: var(--ab-muted);
+    padding: 0.85rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    transition:
+      border-color 0.12s ease,
+      box-shadow 0.12s ease;
+  }
+
+  .abilities-card:hover {
+    border-color: var(--ab-border-strong);
+    box-shadow: 0 1px 4px var(--ab-shadow);
+  }
+
+  .abilities-card-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.75rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--ab-border);
+  }
+
+  .abilities-id {
+    font-family: ui-monospace, 'Cascadia Code', monospace;
+    font-size: 0.78rem;
+    padding: 0.12rem 0.4rem;
+    border-radius: 0.25rem;
+    background: color-mix(in oklab, CanvasText 8%, Canvas);
+    color: color-mix(in oklab, CanvasText 80%, Canvas);
+  }
+
+  .abilities-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    font-family: var(--font-brand);
+  }
+
+  .abilities-gen {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0.2rem 0.45rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--ab-border);
+    background: var(--ab-elevated);
+    color: color-mix(in oklab, CanvasText 75%, Canvas);
+  }
+
+  .abilities-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .abilities-chip {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    padding: 0.2rem 0.45rem;
+    border-radius: 0.25rem;
+    background: var(--ab-accent-soft);
+    border: 1px solid color-mix(in oklab, var(--ab-accent) 40%, var(--ab-border));
+    color: CanvasText;
+  }
+
+  .abilities-iw {
+    font-size: 0.8125rem;
+    padding: 0.45rem 0.55rem;
+    border-radius: 0.375rem;
+    background: var(--ab-elevated);
+    border: 1px solid var(--ab-border);
+    line-height: 1.45;
+  }
+
+  .abilities-iw strong {
+    font-weight: 700;
+    margin-right: 0.35rem;
+    color: color-mix(in oklab, CanvasText 88%, Canvas);
+  }
+
+  .abilities-short {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    color: color-mix(in oklab, CanvasText 92%, Canvas);
+  }
+
+  .abilities-details {
+    border: 1px solid var(--ab-border);
+    border-radius: 0.5rem;
+    background: var(--ab-elevated);
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .abilities-details summary {
+    cursor: pointer;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    padding: 0.5rem 0.75rem;
+    list-style: none;
+    background: var(--ab-muted);
+    border-bottom: 1px solid transparent;
+  }
+
+  .abilities-details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .abilities-details summary::before {
+    content: '';
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    margin-right: 0.45rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    vertical-align: 0.15em;
+    opacity: 0.65;
+    transition: transform 0.15s ease;
+  }
+
+  .abilities-details[open] summary::before {
+    transform: rotate(45deg);
+    vertical-align: 0.05em;
+  }
+
+  .abilities-details[open] summary {
+    border-bottom-color: var(--ab-border);
+  }
+
+  .abilities-details summary:hover {
+    background: var(--ab-muted-strong);
+  }
+
+  .abilities-desc {
+    font-size: 0.875rem;
+    line-height: 1.55;
+    margin: 0;
+    padding: 0.65rem 0.75rem 0.75rem;
+    color: color-mix(in oklab, CanvasText 88%, Canvas);
+  }
+}
