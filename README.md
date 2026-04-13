@@ -56,8 +56,8 @@ The recommended way to use it in your projects is to add it as a git submodule, 
 git submodule add git@github.com:pokepc/dataset.git packages/dataset
 ```
 
-This way, you can directly use the dataset and the lib `*.ts` files in your project as you wish,
-e.g. as a monorepo workspace dependency: `"@pokepc/dataset": "workspace:*",`
+This way, you can directly use the dataset and the lib `*.ts` files in your project as you wish, e.g. as a monorepo
+workspace dependency: `"@pokepc/dataset": "workspace:*",`
 
 Once you build your own project, make sure you delete any content that is not needed, such as the `dataset/tests/`
 directory, so you can save some space.
