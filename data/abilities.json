@@ -2803,5 +2803,41 @@
     "shortDesc": "Pecharunt: If this Pokemon poisons a target, the target also becomes confused.",
     "desc": "If this Pokemon is a Pecharunt and poisons or badly poisons a target, the target also becomes confused.",
     "tags": ["species-specific", "status-trigger"]
+  },
+  {
+    "id": "piercingdrill",
+    "name": "Piercing Drill",
+    "psName": "Piercing Drill",
+    "gen": 9,
+    "shortDesc": "When the Pokémon uses contact moves, it can hit even targets that are protecting themselves at 1/4 of the damage.",
+    "desc": "When the Pokémon uses contact moves, it can hit even targets that are protecting themselves, dealing 1/4 of the damage that the move would otherwise deal. Everything aside from the target's protective effects is still triggered.",
+    "tags": ["bypass"]
+  },
+  {
+    "id": "dragonize",
+    "name": "Dragon Claw",
+    "psName": "Dragon Claw",
+    "gen": 9,
+    "shortDesc": "The Pokémon's Normal-type moves become Dragon-type moves and their power is boosted by 20%.",
+    "desc": "The Pokémon's Normal-type moves become Dragon-type moves and their power is boosted by 20%.",
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "megasol",
+    "name": "Mega Sol",
+    "psName": "Mega Sol",
+    "gen": 9,
+    "shortDesc": "The Pokémon can use its moves as if the weather were harsh sunlight.",
+    "desc": "Even when the sunlight has not turned harsh, the Pokémon can use its moves as if the weather were harsh sunlight. The effects also apply to Weather Ball.",
+    "tags": ["weather"]
+  },
+  {
+    "id": "spicyspray",
+    "name": "Spicy Spray",
+    "psName": "Spicy Spray",
+    "gen": 9,
+    "shortDesc": "When the Pokémon takes damage from a move, it burns the attacker.",
+    "desc": "When the Pokémon takes damage from a move, it burns the attacker.",
+    "tags": ["status-trigger"]
   }
 ]
