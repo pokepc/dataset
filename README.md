@@ -61,3 +61,14 @@ workspace dependency: `"@pokepc/dataset": "workspace:*",`
 
 Once you build your own project, make sure you delete any content that is not needed, such as the `dataset/tests/`
 directory, so you can save some space.
+
+## Credits
+
+A big part of the data in this dataset is made possible thanks to the following projects:
+
+- [Pokémon Showdown](https://pokemonshowdown.com/)
+- [PokéAPI](https://pokeapi.co/)
+- [Serebii.net](https://serebii.net/)
+- [Bulbapedia](https://bulbapedia.bulbagarden.net/)
+
+Thanks to everyone for collecting and making the game data available to the public.
