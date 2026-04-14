@@ -35,25 +35,7 @@
   "debutIn": "la",
   "obtainableIn": ["la"],
   "eventOnlyIn": ["pt", "go", "bdsp-bd", "bdsp-sp"],
-  "storableIn": [
-    "bw-b",
-    "bw-w",
-    "b2w2-b2",
-    "b2w2-w2",
-    "xy-x",
-    "xy-y",
-    "oras-or",
-    "oras-as",
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "home",
-    "bdsp-bd",
-    "bdsp-sp",
-    "la"
-  ],
+  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "bdsp-bd", "bdsp-sp", "la"],
   "shinyReleased": true,
   "shinyLockedIn": ["la"],
   "baseHp": 100,
@@ -121,5 +103,5 @@
     "chs": "天空形态",
     "cht": "天空形態"
   },
-  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w"]
+  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2"]
 }

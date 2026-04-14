@@ -34,20 +34,7 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "bw",
-  "obtainableIn": [
-    "bw-w",
-    "b2w2-b2",
-    "b2w2-w2",
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "swsh-sw",
-    "swsh-sh",
-    "sv-s",
-    "sv-v"
-  ],
+  "obtainableIn": ["bw-w", "b2w2-w2", "go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
   "eventOnlyIn": [],
   "storableIn": [
     "bw-b",
@@ -116,5 +103,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["bw-b"]
+  "transferOnlyIn": ["bw-b", "b2w2-b2"]
 }
