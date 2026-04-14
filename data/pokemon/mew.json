@@ -32,22 +32,7 @@
   "canBeAlpha": false,
   "debutIn": "rb",
   "obtainableIn": ["go", "bdsp-bd", "bdsp-sp"],
-  "eventOnlyIn": [
-    "rb-r",
-    "rb-b",
-    "y",
-    "gs-g",
-    "gs-s",
-    "c",
-    "e",
-    "xy-x",
-    "xy-y",
-    "oras-or",
-    "oras-as",
-    "go",
-    "lgpe-lgp",
-    "lgpe-lge"
-  ],
+  "eventOnlyIn": ["rb-r", "rb-b", "y", "gs-g", "gs-s", "c", "e", "xy-x", "xy-y", "go", "lgpe-lgp", "lgpe-lge"],
   "storableIn": [
     "rb-r",
     "rb-b",
@@ -151,6 +136,8 @@
     "bw-b",
     "bw-w",
     "b2w2-b2",
-    "b2w2-w2"
+    "b2w2-w2",
+    "oras-or",
+    "oras-as"
   ]
 }
