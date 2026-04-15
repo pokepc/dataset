@@ -1,7 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
 import { loadAllPokedexes, loadAllPokemon } from '../lib/fs'
-import type { Pkds } from '../lib/types'
 import { pokedexSchema } from '../lib/schemas'
 import { validate } from './_utils'
 

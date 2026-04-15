@@ -46,6 +46,62 @@ Requirements: Bun 1.3+ and PNPM 10.27+
 
 - `viewer/`: Viewer apps for the dataset. They are built with just Preact and Bun. Run `pnpm run dev` to start them.
 
+## Pokemon search syntax
+
+The Pokemon search is powered by `generatePokemonSearchableText()` in `lib/utils.ts` and the matching helpers in
+`lib/search.ts`.
+
+### How matching works
+
+- Search is case-insensitive.
+- Commas are treated like spaces.
+- Multiple spaces are collapsed.
+- Positive tokens are combined with AND. Example: `pikachu electric` only matches entries containing both terms.
+- Negated tokens start with `!` and must **not** be present. Example: `pikachu !mega` matches Pikachu results that do
+  not contain `mega`.
+
+### Searchable criteria
+
+Each Pokemon contributes searchable text from the following data:
+
+- Pokemon names from all available languages
+- Form names from all available languages
+- National Dex number
+- Pokemon `id`
+- `type:<type-id>` for both primary and secondary types
+- `region:<region-id>`
+- `color:<color-id>` Special case: brown Pokemon also include `color:orange`
+- Generation tokens for both species dex generation and the Pokemon's own `gen` field: `gen1`, `gen:1`, `gen2`, `gen:2`,
+  etc.
+- Tags/flags when applicable: `mythical`, `legendary`, `female`, `baby`, `ultrabeast`, `ultra beast`, `regional`,
+  `fusion`, `paradox`, `convergent`, `cosmetic`, `gigantamax`, `gmax`, `is-form`, `is-mega`, `is-battle-only`,
+  `not-battle-only`, `is-storable`, `not-storable`
+
+### Examples
+
+- `charizard type:fire`
+- `pikachu !is-form`
+- `type:water !region:paldea`
+- `gen:4 !legendary`
+- `gmax !is-battle-only`
+
+### Usage snippet
+
+```ts
+import { loadAllPokemon } from '@pokepc/dataset/lib/fs'
+import { createSearchablePokemonList, searchPokemon } from '@pokepc/dataset/lib/search'
+
+const pokemon = createSearchablePokemonList(loadAllPokemon())
+
+// all Pokemon or forms in generation 9 that are not mega and are electric and green
+const results = searchPokemon(pokemon, {
+  q: 'gen9 !is-mega electric green', // or 'gen9 !is-mega type:electric color:green'
+  forms: true,
+})
+
+console.log(results.pokemon.map((item) => item.id))
+```
+
 ## How to use the dataset and the lib in other projects
 
 We don't offer a built version of this code via npm or similar.

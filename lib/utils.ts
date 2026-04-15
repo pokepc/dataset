@@ -25,6 +25,43 @@ export function sanitizeSearchQuery(query?: string | null) {
   )
 }
 
+export function splitSearchQueryTokens(query?: string | null): {
+  positive: string[]
+  negative: string[]
+} {
+  const tokens = sanitizeSearchQuery(query).trim().split(/\s+/).filter(Boolean)
+
+  return tokens.reduce(
+    (result, token) => {
+      if (token.startsWith('!')) {
+        const negatedToken = token.slice(1).trim()
+        if (negatedToken) {
+          result.negative.push(negatedToken)
+        }
+      } else {
+        result.positive.push(token)
+      }
+
+      return result
+    },
+    { positive: [] as string[], negative: [] as string[] },
+  )
+}
+
+export function matchesSearchQuery(haystack: string, query?: string | null): boolean {
+  const { positive, negative } = splitSearchQueryTokens(query)
+  if (positive.length === 0 && negative.length === 0) {
+    return true
+  }
+
+  const normalizedHaystack = sanitizeSearchQuery(haystack)
+
+  return (
+    positive.every((token) => normalizedHaystack.includes(token)) &&
+    negative.every((token) => !normalizedHaystack.includes(token))
+  )
+}
+
 export class MemoryCache {
   defaultTTL: number = 1000 * 60 // 1 minute
 
@@ -303,9 +340,9 @@ export function generatePokemonSearchableText(poke: Pkds.Pokemon) {
     poke.isParadox ? 'paradox' : '',
     poke.isConvergent ? 'convergent' : '',
     poke.isCosmeticForm ? 'cosmetic' : '',
-    poke.isGmax ? 'gigantamax gmax' : 'not-gmax',
-    poke.isForm ? `is-form` : `not-form`,
-    poke.isMega ? `is-mega` : `not-mega`,
+    poke.isGmax ? 'gigantamax gmax' : '',
+    poke.isForm ? `is-form` : ``,
+    poke.isMega ? `is-mega` : ``,
     poke.isBattleOnlyForm ? `is-battle-only` : `not-battle-only`,
     poke.storableIn.length > 0 ? 'is-storable' : 'not-storable',
   ]

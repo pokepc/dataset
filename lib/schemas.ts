@@ -195,6 +195,7 @@ export const pokedexEntrySchema = z.object({
   pid: common.slug,
   dexNum: common.dexNum,
   isForm: z.coerce.boolean(),
+  transferOnly: z.coerce.boolean().optional(),
   originDex: common.slug.optional(),
   isNonCanonical: z.coerce.boolean().optional(), // if true, the pokemon is not canonical/main-series species or form. e.g Mosslax.
   // meta: optional data that can be used if the pokemon is not found in the main-series dataset,
@@ -216,12 +217,15 @@ export const pokedexEntrySchema = z.object({
 })
 
 export const pokedexSchema = base.entity.extend({
+  shortDesc: common.shortDesc.optional(),
+  desc: common.desc.optional(),
   gen: common.gen,
   region: common.slug.nullable(),
   isNational: z.coerce.boolean(),
   baseDex: common.slug.nullable(),
   pkApiId: z.string().nullable(),
   entries: z.array(pokedexEntrySchema.strict()),
+  // transferEntries: z.array(pokedexEntrySchema.strict()).optional(),
 })
 
 export const pokemonRefsSchema = z.object({

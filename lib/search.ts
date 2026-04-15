@@ -1,4 +1,10 @@
-import { dexNumToGen, formatDexNum, generatePokemonSearchableText, sanitizeSearchQuery } from './utils'
+import {
+  dexNumToGen,
+  formatDexNum,
+  generatePokemonSearchableText,
+  matchesSearchQuery,
+  sanitizeSearchQuery,
+} from './utils'
 
 const MIN_SEARCH_LENGTH = 2
 
@@ -25,10 +31,7 @@ export function searchPokemon(
     if (filters.type && ![p.type1, p.type2].filter(Boolean).includes(filters.type)) return false
     if (filterGen > 0 && p.speciesGen !== filters.gen) return false
 
-    if (filters.q) {
-      const search = sanitizeSearchQuery(filters.q).split(' ')
-      if (!search.every((s) => p.searchableText.includes(s))) return false
-    }
+    if (filters.q && !matchesSearchQuery(p.searchableText, filters.q)) return false
 
     return true
   })
