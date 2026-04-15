@@ -34,7 +34,20 @@
   "debutIn": "xy",
   "obtainableIn": ["xy-x", "xy-y", "sv-s", "sv-v", "lza"],
   "eventOnlyIn": [],
-  "storableIn": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home", "sv-s", "sv-v"],
+  "storableIn": [
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "sv-s",
+    "sv-v",
+    "lza"
+  ],
   "shinyReleased": true,
   "baseHp": 66,
   "baseAtk": 65,
@@ -80,5 +93,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["oras-or", "oras-as"]
+  "transferOnlyIn": ["oras-or", "oras-as", "home"]
 }

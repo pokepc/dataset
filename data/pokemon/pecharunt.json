@@ -32,8 +32,8 @@
   "canDynamax": false,
   "canBeAlpha": false,
   "debutIn": "sv",
-  "obtainableIn": ["sv-s", "sv-v"],
-  "eventOnlyIn": [],
+  "obtainableIn": [],
+  "eventOnlyIn": ["sv-s", "sv-v"],
   "storableIn": ["go", "home", "sv-s", "sv-v"],
   "shinyReleased": false,
   "shinyLockedIn": ["sv-s", "sv-v"],
@@ -77,5 +77,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["home"]
 }

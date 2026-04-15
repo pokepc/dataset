@@ -56,7 +56,6 @@
     "bdsp-bd",
     "bdsp-sp",
     "sv-s",
-    "sv-v",
     "lza"
   ],
   "eventOnlyIn": [],
@@ -95,7 +94,8 @@
     "bdsp-bd",
     "bdsp-sp",
     "sv-s",
-    "sv-v"
+    "sv-v",
+    "lza"
   ],
   "shinyReleased": true,
   "baseHp": 50,
@@ -142,5 +142,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["rs-r", "rs-s", "col", "e", "xd", "dp-p", "xy-x", "oras-or", "oras-as"]
+  "transferOnlyIn": ["rs-r", "rs-s", "col", "e", "xd", "dp-p", "xy-x", "oras-or", "oras-as", "home", "sv-v"]
 }

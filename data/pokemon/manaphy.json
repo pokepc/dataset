@@ -31,7 +31,7 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "dp",
-  "obtainableIn": ["la"],
+  "obtainableIn": ["home", "la"],
   "eventOnlyIn": ["dp-d", "dp-p", "pt", "oras-or", "oras-as", "bdsp-bd", "bdsp-sp"],
   "storableIn": [
     "dp-d",
@@ -55,7 +55,9 @@
     "home",
     "bdsp-bd",
     "bdsp-sp",
-    "la"
+    "la",
+    "sv-s",
+    "sv-v"
   ],
   "shinyReleased": true,
   "shinyLockedIn": ["la"],
@@ -103,5 +105,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y"]
+  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "sv-s", "sv-v"]
 }

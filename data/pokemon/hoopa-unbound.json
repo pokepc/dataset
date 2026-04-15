@@ -35,7 +35,7 @@
   "debutIn": "oras",
   "obtainableIn": ["lza"],
   "eventOnlyIn": ["oras-or", "oras-as", "go"],
-  "storableIn": ["oras-or", "oras-as", "go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "sv-s", "sv-v"],
+  "storableIn": ["oras-or", "oras-as", "go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "sv-s", "sv-v", "lza"],
   "shinyReleased": false,
   "shinyLockedIn": ["lza"],
   "baseHp": 80,
@@ -103,5 +103,5 @@
     "chs": "解放胡帕",
     "cht": "解放胡帕"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

@@ -303,7 +303,7 @@ export function generatePokemonSearchableText(poke: Pkds.Pokemon) {
     poke.isParadox ? 'paradox' : '',
     poke.isConvergent ? 'convergent' : '',
     poke.isCosmeticForm ? 'cosmetic' : '',
-    poke.isGmax ? 'gigantamax' : '',
+    poke.isGmax ? 'gigantamax gmax' : 'not-gmax',
     poke.isForm ? `is-form` : `not-form`,
     poke.isMega ? `is-mega` : `not-mega`,
     poke.isBattleOnlyForm ? `is-battle-only` : `not-battle-only`,

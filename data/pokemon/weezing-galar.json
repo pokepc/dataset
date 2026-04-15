@@ -35,7 +35,7 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "swsh",
-  "obtainableIn": ["go", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh"],
   "eventOnlyIn": [],
   "storableIn": ["go", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
   "shinyReleased": true,
@@ -106,5 +106,5 @@
     "chs": "伽勒尔的样子",
     "cht": "伽勒爾的樣子"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

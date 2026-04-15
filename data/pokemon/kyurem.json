@@ -32,7 +32,19 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "bw",
-  "obtainableIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "oras-or", "oras-as", "go", "swsh-sw", "swsh-sh"],
+  "obtainableIn": [
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "oras-or",
+    "oras-as",
+    "go",
+    "swsh-sw",
+    "swsh-sh",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "bw-b",
@@ -50,7 +62,9 @@
     "usum-um",
     "swsh-sw",
     "swsh-sh",
-    "home"
+    "home",
+    "sv-s",
+    "sv-v"
   ],
   "shinyReleased": true,
   "shinyLockedIn": ["sv-s", "sv-v"],
@@ -99,5 +113,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["xy-x", "xy-y"]
+  "transferOnlyIn": ["xy-x", "xy-y", "home"]
 }

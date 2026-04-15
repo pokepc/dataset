@@ -32,9 +32,9 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "sm",
-  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home"],
+  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
   "shinyReleased": true,
   "shinyLockedIn": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
   "baseHp": 137,
@@ -83,5 +83,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["home"]
 }

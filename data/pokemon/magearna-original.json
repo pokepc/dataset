@@ -34,10 +34,9 @@
   "canBeAlpha": false,
   "debutIn": "home",
   "obtainableIn": ["home"],
-  "eventOnlyIn": ["home"],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v", "lza"],
   "shinyReleased": false,
-  "shinyLockedIn": ["home"],
   "baseHp": 80,
   "baseAtk": 95,
   "baseDef": 115,
@@ -103,5 +102,5 @@
     "chs": "５００年前的颜色",
     "cht": "５００年前的顏色"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["sv-s", "sv-v", "lza"]
 }

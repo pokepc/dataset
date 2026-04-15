@@ -50,10 +50,9 @@
     "swsh-sw",
     "swsh-sh",
     "bdsp-bd",
-    "bdsp-sp",
-    "lza"
+    "bdsp-sp"
   ],
-  "eventOnlyIn": [],
+  "eventOnlyIn": ["lza"],
   "storableIn": [
     "rb-r",
     "rb-b",
@@ -98,7 +97,7 @@
     "lza"
   ],
   "shinyReleased": true,
-  "shinyLockedIn": ["xy-x", "xy-y", "lza"],
+  "shinyLockedIn": ["xy-x", "xy-y"],
   "baseHp": 106,
   "baseAtk": 110,
   "baseDef": 90,
@@ -160,6 +159,9 @@
     "b2w2-b2",
     "b2w2-w2",
     "oras-or",
-    "oras-as"
+    "oras-as",
+    "home",
+    "sv-s",
+    "sv-v"
   ]
 }
