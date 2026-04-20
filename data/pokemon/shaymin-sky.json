@@ -35,7 +35,19 @@
   "debutIn": "pt",
   "obtainableIn": ["go", "la"],
   "eventOnlyIn": ["pt", "oras-or", "oras-as", "bdsp-bd", "bdsp-sp"],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "bdsp-bd", "bdsp-sp", "la", "sv-s", "sv-v"],
+  "storableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
   "shinyReleased": true,
   "shinyLockedIn": ["la"],
   "baseHp": 100,
@@ -83,15 +95,7 @@
     "chs": "感谢宝可梦",
     "cht": "感謝寶可夢"
   },
-  "speciesNames": {
-    "eng": "Shaymin",
-    "fra": "Shaymin",
-    "deu": "Shaymin",
-    "jap": "シェイミ",
-    "kor": "쉐이미",
-    "chs": "谢米",
-    "cht": "謝米"
-  },
+  "speciesNames": { "eng": "Shaymin", "fra": "Shaymin", "deu": "Shaymin", "jap": "シェイミ", "kor": "쉐이미", "chs": "谢米", "cht": "謝米" },
   "formNames": {
     "eng": "Sky Forme",
     "esp": "Forma Cielo",
@@ -103,5 +107,17 @@
     "chs": "天空形态",
     "cht": "天空形態"
   },
-  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "home", "sv-s", "sv-v"]
+  "transferOnlyIn": [
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "home",
+    "sv-s",
+    "sv-v"
+  ]
 }

@@ -33,7 +33,18 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "bw",
-  "obtainableIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "oras-or", "oras-as", "go", "sv-s", "sv-v", "lza"],
+  "obtainableIn": [
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sv-s",
+    "sv-v",
+    "lza"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "bw-b",
@@ -79,15 +90,7 @@
   },
   "evolvesFrom": "tepig",
   "evoFromLevel": 17,
-  "names": {
-    "eng": "Pignite",
-    "fra": "Grotichon",
-    "deu": "Ferkokel",
-    "jap": "チャオブー",
-    "kor": "차오꿀",
-    "chs": "炒炒猪",
-    "cht": "炒炒豬"
-  },
+  "names": { "eng": "Pignite", "fra": "Grotichon", "deu": "Ferkokel", "jap": "チャオブー", "kor": "차오꿀", "chs": "炒炒猪", "cht": "炒炒豬" },
   "genus": {
     "eng": "Fire Pig Pokémon",
     "esp": "Pokémon Cerdo Fuego",

@@ -34,9 +34,30 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "sm",
-  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "storableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "sv-s",
+    "sv-v"
+  ],
   "shinyReleased": true,
   "baseHp": 40,
   "baseAtk": 45,
@@ -60,15 +81,7 @@
     "serebii": "cutiefly",
     "bulbapedia": "Cutiefly"
   },
-  "names": {
-    "eng": "Cutiefly",
-    "fra": "Bombydou",
-    "deu": "Wommel",
-    "jap": "アブリー",
-    "kor": "에블리",
-    "chs": "萌虻",
-    "cht": "萌虻"
-  },
+  "names": { "eng": "Cutiefly", "fra": "Bombydou", "deu": "Wommel", "jap": "アブリー", "kor": "에블리", "chs": "萌虻", "cht": "萌虻" },
   "genus": {
     "eng": "Bee Fly Pokémon",
     "esp": "Pokémon Mosca Abeja",

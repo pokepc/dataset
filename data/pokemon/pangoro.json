@@ -34,7 +34,18 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "xy",
-  "obtainableIn": ["xy-x", "xy-y", "go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "lza"],
+  "obtainableIn": [
+    "xy-x",
+    "xy-y",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "lza"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "xy-x",
@@ -77,15 +88,7 @@
   "evolvesFrom": "pancham",
   "evoFromLevel": 32,
   "evoFromCondition": "with a Dark-type in the party",
-  "names": {
-    "eng": "Pangoro",
-    "fra": "Pandarbare",
-    "deu": "Pandagro",
-    "jap": "ゴロンダ",
-    "kor": "부란다",
-    "chs": "霸道熊猫",
-    "cht": "流氓熊貓"
-  },
+  "names": { "eng": "Pangoro", "fra": "Pandarbare", "deu": "Pandagro", "jap": "ゴロンダ", "kor": "부란다", "chs": "霸道熊猫", "cht": "流氓熊貓" },
   "genus": {
     "eng": "Daunting Pokémon",
     "esp": "Pokémon Rostro Fiero",

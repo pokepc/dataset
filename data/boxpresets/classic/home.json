@@ -181,10 +181,7 @@
           "mewtwo"
         ]
       },
-      {
-        "title": "Kanto 6",
-        "pokemon": ["mew"]
-      },
+      { "title": "Kanto 6", "pokemon": ["mew"] },
       {
         "title": "Kanto Females",
         "pokemon": [
@@ -589,10 +586,7 @@
           "relicanth-f"
         ]
       },
-      {
-        "title": "Hoenn Alternate",
-        "pokemon": ["deoxys-attack", "deoxys-defense", "deoxys-speed"]
-      },
+      { "title": "Hoenn Alternate", "pokemon": ["deoxys-attack", "deoxys-defense", "deoxys-speed"] },
       {
         "title": "Sinnoh 1",
         "pokemon": [
@@ -755,10 +749,7 @@
           "tangrowth-f"
         ]
       },
-      {
-        "title": "Sinnoh Fem. 2",
-        "pokemon": ["mamoswine-f"]
-      },
+      { "title": "Sinnoh Fem. 2", "pokemon": ["mamoswine-f"] },
       {
         "title": "Sinnoh Altern.",
         "pokemon": [
@@ -951,10 +942,7 @@
           "reshiram"
         ]
       },
-      {
-        "title": "Unova 6",
-        "pokemon": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"]
-      },
+      { "title": "Unova 6", "pokemon": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"] },
       {
         "title": "Unova Alternate",
         "pokemon": [
@@ -1267,10 +1255,7 @@
           "marowak-alola"
         ]
       },
-      {
-        "title": "Unknown Region",
-        "pokemon": ["meltan", "melmetal"]
-      },
+      { "title": "Unknown Region", "pokemon": ["meltan", "melmetal"] },
       {
         "title": "Galar 1",
         "pokemon": [
@@ -1377,14 +1362,7 @@
       },
       {
         "title": "Galar Alternate",
-        "pokemon": [
-          "indeedee-f",
-          "toxtricity-low-key",
-          "sinistea-antique",
-          "polteageist-antique",
-          "urshifu-rapid-strike",
-          "zarude-dada"
-        ]
+        "pokemon": ["indeedee-f", "toxtricity-low-key", "sinistea-antique", "polteageist-antique", "urshifu-rapid-strike", "zarude-dada"]
       },
       {
         "title": "Galarian Forms",
@@ -1491,164 +1469,49 @@
       {
         "title": "Gigantamax 1",
         "pokemon": [
-          {
-            "pid": "venusaur",
-            "gmax": true
-          },
-          {
-            "pid": "venusaur-f",
-            "gmax": true
-          },
-          {
-            "pid": "charizard",
-            "gmax": true
-          },
-          {
-            "pid": "blastoise",
-            "gmax": true
-          },
-          {
-            "pid": "butterfree",
-            "gmax": true
-          },
-          {
-            "pid": "butterfree-f",
-            "gmax": true
-          },
-          {
-            "pid": "pikachu",
-            "gmax": true
-          },
-          {
-            "pid": "pikachu-f",
-            "gmax": true
-          },
-          {
-            "pid": "meowth",
-            "gmax": true
-          },
-          {
-            "pid": "machamp",
-            "gmax": true
-          },
-          {
-            "pid": "gengar",
-            "gmax": true
-          },
-          {
-            "pid": "kingler",
-            "gmax": true
-          },
-          {
-            "pid": "lapras",
-            "gmax": true
-          },
-          {
-            "pid": "eevee",
-            "gmax": true
-          },
-          {
-            "pid": "eevee-f",
-            "gmax": true
-          },
-          {
-            "pid": "snorlax",
-            "gmax": true
-          },
-          {
-            "pid": "garbodor",
-            "gmax": true
-          },
-          {
-            "pid": "melmetal",
-            "gmax": true,
-            "shinyLocked": true
-          },
-          {
-            "pid": "rillaboom",
-            "gmax": true
-          },
-          {
-            "pid": "cinderace",
-            "gmax": true
-          },
-          {
-            "pid": "inteleon",
-            "gmax": true
-          },
-          {
-            "pid": "corviknight",
-            "gmax": true
-          },
-          {
-            "pid": "orbeetle",
-            "gmax": true
-          },
-          {
-            "pid": "drednaw",
-            "gmax": true
-          },
-          {
-            "pid": "coalossal",
-            "gmax": true
-          },
-          {
-            "pid": "flapple",
-            "gmax": true
-          },
-          {
-            "pid": "appletun",
-            "gmax": true
-          },
-          {
-            "pid": "sandaconda",
-            "gmax": true
-          },
-          {
-            "pid": "toxtricity",
-            "gmax": true
-          },
-          {
-            "pid": "toxtricity-low-key",
-            "gmax": true
-          }
+          { "pid": "venusaur", "gmax": true },
+          { "pid": "venusaur-f", "gmax": true },
+          { "pid": "charizard", "gmax": true },
+          { "pid": "blastoise", "gmax": true },
+          { "pid": "butterfree", "gmax": true },
+          { "pid": "butterfree-f", "gmax": true },
+          { "pid": "pikachu", "gmax": true },
+          { "pid": "pikachu-f", "gmax": true },
+          { "pid": "meowth", "gmax": true },
+          { "pid": "machamp", "gmax": true },
+          { "pid": "gengar", "gmax": true },
+          { "pid": "kingler", "gmax": true },
+          { "pid": "lapras", "gmax": true },
+          { "pid": "eevee", "gmax": true },
+          { "pid": "eevee-f", "gmax": true },
+          { "pid": "snorlax", "gmax": true },
+          { "pid": "garbodor", "gmax": true },
+          { "pid": "melmetal", "gmax": true, "shinyLocked": true },
+          { "pid": "rillaboom", "gmax": true },
+          { "pid": "cinderace", "gmax": true },
+          { "pid": "inteleon", "gmax": true },
+          { "pid": "corviknight", "gmax": true },
+          { "pid": "orbeetle", "gmax": true },
+          { "pid": "drednaw", "gmax": true },
+          { "pid": "coalossal", "gmax": true },
+          { "pid": "flapple", "gmax": true },
+          { "pid": "appletun", "gmax": true },
+          { "pid": "sandaconda", "gmax": true },
+          { "pid": "toxtricity", "gmax": true },
+          { "pid": "toxtricity-low-key", "gmax": true }
         ]
       },
       {
         "title": "Gigantamax 2",
         "pokemon": [
-          {
-            "pid": "centiskorch",
-            "gmax": true
-          },
-          {
-            "pid": "hatterene",
-            "gmax": true
-          },
-          {
-            "pid": "grimmsnarl",
-            "gmax": true
-          },
-          {
-            "pid": "alcremie",
-            "gmax": true
-          },
-          {
-            "pid": "copperajah",
-            "gmax": true
-          },
-          {
-            "pid": "duraludon",
-            "gmax": true
-          },
-          {
-            "pid": "urshifu",
-            "gmax": true
-          },
-          {
-            "pid": "urshifu-rapid-strike",
-            "gmax": true
-          }
+          { "pid": "centiskorch", "gmax": true },
+          { "pid": "hatterene", "gmax": true },
+          { "pid": "grimmsnarl", "gmax": true },
+          { "pid": "alcremie", "gmax": true },
+          { "pid": "copperajah", "gmax": true },
+          { "pid": "duraludon", "gmax": true },
+          { "pid": "urshifu", "gmax": true },
+          { "pid": "urshifu-rapid-strike", "gmax": true }
         ]
       },
       {
@@ -1845,10 +1708,7 @@
           "ursaluna-bloodmoon"
         ]
       },
-      {
-        "title": "Paldean Forms",
-        "pokemon": ["tauros-paldea", "tauros-paldea-fire", "tauros-paldea-water", "wooper-paldea"]
-      }
+      { "title": "Paldean Forms", "pokemon": ["tauros-paldea", "tauros-paldea-fire", "tauros-paldea-water", "wooper-paldea"] }
     ],
     "fullId": "home-grouped-region"
   },
@@ -3049,10 +2909,7 @@
           "gougingfire"
         ]
       },
-      {
-        "title": "Species 35",
-        "pokemon": ["ragingbolt", "ironboulder", "ironcrown", "terapagos", "pecharunt"]
-      },
+      { "title": "Species 35", "pokemon": ["ragingbolt", "ironboulder", "ironcrown", "terapagos", "pecharunt"] },
       {
         "title": "Females (1)",
         "pokemon": [
@@ -3511,170 +3368,52 @@
       {
         "title": "Gigantamax 1",
         "pokemon": [
-          {
-            "pid": "venusaur",
-            "gmax": true
-          },
-          {
-            "pid": "venusaur-f",
-            "gmax": true
-          },
-          {
-            "pid": "charizard",
-            "gmax": true
-          },
-          {
-            "pid": "blastoise",
-            "gmax": true
-          },
-          {
-            "pid": "butterfree",
-            "gmax": true
-          },
-          {
-            "pid": "butterfree-f",
-            "gmax": true
-          },
-          {
-            "pid": "pikachu",
-            "gmax": true
-          },
-          {
-            "pid": "pikachu-f",
-            "gmax": true
-          },
-          {
-            "pid": "meowth",
-            "gmax": true
-          },
-          {
-            "pid": "machamp",
-            "gmax": true
-          },
-          {
-            "pid": "gengar",
-            "gmax": true
-          },
-          {
-            "pid": "kingler",
-            "gmax": true
-          },
-          {
-            "pid": "lapras",
-            "gmax": true
-          },
-          {
-            "pid": "eevee",
-            "gmax": true
-          },
-          {
-            "pid": "eevee-f",
-            "gmax": true
-          },
-          {
-            "pid": "snorlax",
-            "gmax": true
-          },
-          {
-            "pid": "garbodor",
-            "gmax": true
-          },
-          {
-            "pid": "melmetal",
-            "gmax": true,
-            "shinyLocked": true
-          },
-          {
-            "pid": "rillaboom",
-            "gmax": true
-          },
-          {
-            "pid": "cinderace",
-            "gmax": true
-          },
-          {
-            "pid": "inteleon",
-            "gmax": true
-          },
-          {
-            "pid": "corviknight",
-            "gmax": true
-          },
-          {
-            "pid": "orbeetle",
-            "gmax": true
-          },
-          {
-            "pid": "drednaw",
-            "gmax": true
-          },
-          {
-            "pid": "coalossal",
-            "gmax": true
-          },
-          {
-            "pid": "flapple",
-            "gmax": true
-          },
-          {
-            "pid": "appletun",
-            "gmax": true
-          },
-          {
-            "pid": "sandaconda",
-            "gmax": true
-          },
-          {
-            "pid": "toxtricity",
-            "gmax": true
-          },
-          {
-            "pid": "toxtricity-low-key",
-            "gmax": true
-          }
+          { "pid": "venusaur", "gmax": true },
+          { "pid": "venusaur-f", "gmax": true },
+          { "pid": "charizard", "gmax": true },
+          { "pid": "blastoise", "gmax": true },
+          { "pid": "butterfree", "gmax": true },
+          { "pid": "butterfree-f", "gmax": true },
+          { "pid": "pikachu", "gmax": true },
+          { "pid": "pikachu-f", "gmax": true },
+          { "pid": "meowth", "gmax": true },
+          { "pid": "machamp", "gmax": true },
+          { "pid": "gengar", "gmax": true },
+          { "pid": "kingler", "gmax": true },
+          { "pid": "lapras", "gmax": true },
+          { "pid": "eevee", "gmax": true },
+          { "pid": "eevee-f", "gmax": true },
+          { "pid": "snorlax", "gmax": true },
+          { "pid": "garbodor", "gmax": true },
+          { "pid": "melmetal", "gmax": true, "shinyLocked": true },
+          { "pid": "rillaboom", "gmax": true },
+          { "pid": "cinderace", "gmax": true },
+          { "pid": "inteleon", "gmax": true },
+          { "pid": "corviknight", "gmax": true },
+          { "pid": "orbeetle", "gmax": true },
+          { "pid": "drednaw", "gmax": true },
+          { "pid": "coalossal", "gmax": true },
+          { "pid": "flapple", "gmax": true },
+          { "pid": "appletun", "gmax": true },
+          { "pid": "sandaconda", "gmax": true },
+          { "pid": "toxtricity", "gmax": true },
+          { "pid": "toxtricity-low-key", "gmax": true }
         ]
       },
       {
         "title": "Gigantamax 2",
         "pokemon": [
-          {
-            "pid": "centiskorch",
-            "gmax": true
-          },
-          {
-            "pid": "hatterene",
-            "gmax": true
-          },
-          {
-            "pid": "grimmsnarl",
-            "gmax": true
-          },
-          {
-            "pid": "alcremie",
-            "gmax": true
-          },
-          {
-            "pid": "copperajah",
-            "gmax": true
-          },
-          {
-            "pid": "duraludon",
-            "gmax": true
-          },
-          {
-            "pid": "urshifu",
-            "gmax": true
-          },
-          {
-            "pid": "urshifu-rapid-strike",
-            "gmax": true
-          }
+          { "pid": "centiskorch", "gmax": true },
+          { "pid": "hatterene", "gmax": true },
+          { "pid": "grimmsnarl", "gmax": true },
+          { "pid": "alcremie", "gmax": true },
+          { "pid": "copperajah", "gmax": true },
+          { "pid": "duraludon", "gmax": true },
+          { "pid": "urshifu", "gmax": true },
+          { "pid": "urshifu-rapid-strike", "gmax": true }
         ]
       },
-      {
-        "title": "Gen 9 Forms",
-        "pokemon": []
-      },
+      { "title": "Gen 9 Forms", "pokemon": [] },
       {
         "title": "Alolan Forms",
         "pokemon": [
@@ -3943,9 +3682,7 @@
           "mewtwo"
         ]
       },
-      {
-        "pokemon": ["mew"]
-      },
+      { "pokemon": ["mew"] },
       {
         "pokemon": [
           "chikorita",
@@ -4048,20 +3785,7 @@
           "miltank"
         ]
       },
-      {
-        "pokemon": [
-          "blissey",
-          "raikou",
-          "entei",
-          "suicune",
-          "larvitar",
-          "pupitar",
-          "tyranitar",
-          "lugia",
-          "hooh",
-          "celebi"
-        ]
-      },
+      { "pokemon": ["blissey", "raikou", "entei", "suicune", "larvitar", "pupitar", "tyranitar", "lugia", "hooh", "celebi"] },
       {
         "pokemon": [
           "treecko",
@@ -4510,9 +4234,7 @@
           "reshiram"
         ]
       },
-      {
-        "pokemon": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"]
-      },
+      { "pokemon": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"] },
       {
         "pokemon": [
           "chespin",
@@ -4798,9 +4520,7 @@
           "wyrdeer"
         ]
       },
-      {
-        "pokemon": ["kleavor", "ursaluna", "basculegion", "sneasler", "overqwil", "enamorus"]
-      },
+      { "pokemon": ["kleavor", "ursaluna", "basculegion", "sneasler", "overqwil", "enamorus"] },
       {
         "pokemon": [
           "sprigatito",
@@ -5535,9 +5255,7 @@
           "mewtwo"
         ]
       },
-      {
-        "pokemon": ["mew"]
-      },
+      { "pokemon": ["mew"] },
       {
         "pokemon": [
           "chikorita",
@@ -5640,20 +5358,7 @@
           "miltank"
         ]
       },
-      {
-        "pokemon": [
-          "blissey",
-          "raikou",
-          "entei",
-          "suicune",
-          "larvitar",
-          "pupitar",
-          "tyranitar",
-          "lugia",
-          "hooh",
-          "celebi"
-        ]
-      },
+      { "pokemon": ["blissey", "raikou", "entei", "suicune", "larvitar", "pupitar", "tyranitar", "lugia", "hooh", "celebi"] },
       {
         "pokemon": [
           "treecko",
@@ -6102,9 +5807,7 @@
           "reshiram"
         ]
       },
-      {
-        "pokemon": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"]
-      },
+      { "pokemon": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"] },
       {
         "pokemon": [
           "chespin",
@@ -6390,9 +6093,7 @@
           "wyrdeer"
         ]
       },
-      {
-        "pokemon": ["kleavor", "ursaluna", "basculegion", "sneasler", "overqwil", "enamorus"]
-      },
+      { "pokemon": ["kleavor", "ursaluna", "basculegion", "sneasler", "overqwil", "enamorus"] },
       {
         "pokemon": [
           "sprigatito",
@@ -6631,9 +6332,7 @@
           "basculegion-f"
         ]
       },
-      {
-        "pokemon": ["oinkologne-f", "maushold-three", "dudunsparce-three-segment", "gimmighoul-roaming"]
-      }
+      { "pokemon": ["oinkologne-f", "maushold-three", "dudunsparce-three-segment", "gimmighoul-roaming"] }
     ],
     "fullId": "home-sorted-species-minimal"
   },
@@ -6882,9 +6581,7 @@
           "zapdos"
         ]
       },
-      {
-        "pokemon": ["zapdos-galar", "moltres", "moltres-galar", "dratini", "dragonair", "dragonite", "mewtwo", "mew"]
-      },
+      { "pokemon": ["zapdos-galar", "moltres", "moltres-galar", "dratini", "dragonair", "dragonite", "mewtwo", "mew"] },
       {
         "pokemon": [
           "chikorita",
@@ -7055,9 +6752,7 @@
           "suicune"
         ]
       },
-      {
-        "pokemon": ["larvitar", "pupitar", "tyranitar", "lugia", "hooh", "celebi"]
-      },
+      { "pokemon": ["larvitar", "pupitar", "tyranitar", "lugia", "hooh", "celebi"] },
       {
         "pokemon": [
           "treecko",
@@ -7228,18 +6923,7 @@
           "latios"
         ]
       },
-      {
-        "pokemon": [
-          "kyogre",
-          "groudon",
-          "rayquaza",
-          "jirachi",
-          "deoxys",
-          "deoxys-attack",
-          "deoxys-defense",
-          "deoxys-speed"
-        ]
-      },
+      { "pokemon": ["kyogre", "groudon", "rayquaza", "jirachi", "deoxys", "deoxys-attack", "deoxys-defense", "deoxys-speed"] },
       {
         "pokemon": [
           "turtwig",
@@ -9249,9 +8933,7 @@
           "naganadel"
         ]
       },
-      {
-        "pokemon": ["stakataka", "blacephalon", "zeraora", "meltan", "melmetal"]
-      },
+      { "pokemon": ["stakataka", "blacephalon", "zeraora", "meltan", "melmetal"] },
       {
         "pokemon": [
           "grookey",
@@ -9504,9 +9186,7 @@
           "ragingbolt"
         ]
       },
-      {
-        "pokemon": ["ironboulder", "ironcrown", "terapagos", "pecharunt"]
-      }
+      { "pokemon": ["ironboulder", "ironcrown", "terapagos", "pecharunt"] }
     ],
     "fullId": "home-fully-sorted-minimal"
   }

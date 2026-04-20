@@ -32,7 +32,19 @@
   "canDynamax": true,
   "canBeAlpha": true,
   "debutIn": "dp",
-  "obtainableIn": ["dp-d", "dp-p", "pt", "oras-or", "oras-as", "go", "bdsp-bd", "bdsp-sp", "la", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "dp-d",
+    "dp-p",
+    "pt",
+    "oras-or",
+    "oras-as",
+    "go",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "dp-d",
@@ -85,15 +97,7 @@
   },
   "evolvesFrom": "piplup",
   "evoFromLevel": 16,
-  "names": {
-    "eng": "Prinplup",
-    "fra": "Prinplouf",
-    "deu": "Pliprin",
-    "jap": "ポッタイシ",
-    "kor": "팽태자",
-    "chs": "波皇子",
-    "cht": "波皇子"
-  },
+  "names": { "eng": "Prinplup", "fra": "Prinplouf", "deu": "Pliprin", "jap": "ポッタイシ", "kor": "팽태자", "chs": "波皇子", "cht": "波皇子" },
   "genus": {
     "eng": "Penguin Pokémon",
     "esp": "Pokémon Pingüino",
@@ -107,5 +111,15 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "home"]
+  "transferOnlyIn": [
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "home"
+  ]
 }

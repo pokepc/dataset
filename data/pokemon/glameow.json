@@ -33,7 +33,17 @@
   "canDynamax": true,
   "canBeAlpha": true,
   "debutIn": "dp",
-  "obtainableIn": ["dp-p", "b2w2-b2", "b2w2-w2", "oras-or", "oras-as", "go", "bdsp-bd", "bdsp-sp", "la"],
+  "obtainableIn": [
+    "dp-p",
+    "b2w2-b2",
+    "b2w2-w2",
+    "oras-or",
+    "oras-as",
+    "go",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "dp-d",
@@ -82,15 +92,7 @@
     "serebii": "glameow",
     "bulbapedia": "Glameow"
   },
-  "names": {
-    "eng": "Glameow",
-    "fra": "Chaglam",
-    "deu": "Charmian",
-    "jap": "ニャルマー",
-    "kor": "나옹마",
-    "chs": "魅力喵",
-    "cht": "魅力喵"
-  },
+  "names": { "eng": "Glameow", "fra": "Chaglam", "deu": "Charmian", "jap": "ニャルマー", "kor": "나옹마", "chs": "魅力喵", "cht": "魅力喵" },
   "genus": {
     "eng": "Catty Pokémon",
     "esp": "Pokémon Gastuto",
@@ -104,5 +106,15 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["dp-d", "pt", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "xy-x", "xy-y", "home"]
+  "transferOnlyIn": [
+    "dp-d",
+    "pt",
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "xy-x",
+    "xy-y",
+    "home"
+  ]
 }

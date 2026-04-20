@@ -32,7 +32,19 @@
   "canDynamax": true,
   "canBeAlpha": true,
   "debutIn": "dp",
-  "obtainableIn": ["dp-d", "dp-p", "pt", "oras-or", "oras-as", "go", "bdsp-bd", "bdsp-sp", "la", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "dp-d",
+    "dp-p",
+    "pt",
+    "oras-or",
+    "oras-as",
+    "go",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "dp-d",
@@ -85,15 +97,7 @@
   },
   "evolvesFrom": "turtwig",
   "evoFromLevel": 18,
-  "names": {
-    "eng": "Grotle",
-    "fra": "Boskara",
-    "deu": "Chelcarain",
-    "jap": "ハヤシガメ",
-    "kor": "수풀부기",
-    "chs": "树林龟",
-    "cht": "樹林龜"
-  },
+  "names": { "eng": "Grotle", "fra": "Boskara", "deu": "Chelcarain", "jap": "ハヤシガメ", "kor": "수풀부기", "chs": "树林龟", "cht": "樹林龜" },
   "genus": {
     "eng": "Grove Pokémon",
     "esp": "Pokémon Arboleda",
@@ -107,5 +111,15 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "home"]
+  "transferOnlyIn": [
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "home"
+  ]
 }

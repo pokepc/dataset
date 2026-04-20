@@ -121,7 +121,11 @@ function buildUserContent(batch: Array<{ id: string; name: string; shortDesc: st
 
 type BatchRow = z.infer<typeof batchResponseSchema>['results'][number]
 
-function normalizeEntry(parsed: BatchRow): { tags: string[]; immunities?: string[]; weaknesses?: string[] } {
+function normalizeEntry(parsed: BatchRow): {
+  tags: string[]
+  immunities?: string[]
+  weaknesses?: string[]
+} {
   const tags = [...new Set(parsed.tags)].sort()
   const out: { tags: string[]; immunities?: string[]; weaknesses?: string[] } = { tags }
   const im = parsed.immunities

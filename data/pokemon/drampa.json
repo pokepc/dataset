@@ -36,7 +36,17 @@
   "debutIn": "sm",
   "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "lza"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "lza"],
+  "storableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "lza"
+  ],
   "shinyReleased": true,
   "baseHp": 78,
   "baseAtk": 60,
@@ -60,15 +70,7 @@
     "serebii": "drampa",
     "bulbapedia": "Drampa"
   },
-  "names": {
-    "eng": "Drampa",
-    "fra": "Draïeul",
-    "deu": "Sen-Long",
-    "jap": "ジジーロン",
-    "kor": "할비롱",
-    "chs": "老翁龙",
-    "cht": "老翁龍"
-  },
+  "names": { "eng": "Drampa", "fra": "Draïeul", "deu": "Sen-Long", "jap": "ジジーロン", "kor": "할비롱", "chs": "老翁龙", "cht": "老翁龍" },
   "genus": {
     "eng": "Placid Pokémon",
     "esp": "Pokémon Sosiego",

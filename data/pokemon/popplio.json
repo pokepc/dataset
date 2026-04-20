@@ -32,9 +32,30 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "sm",
-  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "storableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "sv-s",
+    "sv-v"
+  ],
   "shinyReleased": true,
   "baseHp": 50,
   "baseAtk": 54,
@@ -58,15 +79,7 @@
     "serebii": "popplio",
     "bulbapedia": "Popplio"
   },
-  "names": {
-    "eng": "Popplio",
-    "fra": "Otaquin",
-    "deu": "Robball",
-    "jap": "アシマリ",
-    "kor": "누리공",
-    "chs": "球球海狮",
-    "cht": "球球海獅"
-  },
+  "names": { "eng": "Popplio", "fra": "Otaquin", "deu": "Robball", "jap": "アシマリ", "kor": "누리공", "chs": "球球海狮", "cht": "球球海獅" },
   "genus": {
     "eng": "Sea Lion Pokémon",
     "esp": "Pokémon León Marino",

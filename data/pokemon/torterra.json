@@ -33,7 +33,19 @@
   "canDynamax": true,
   "canBeAlpha": true,
   "debutIn": "dp",
-  "obtainableIn": ["dp-d", "dp-p", "pt", "oras-or", "oras-as", "go", "bdsp-bd", "bdsp-sp", "la", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "dp-d",
+    "dp-p",
+    "pt",
+    "oras-or",
+    "oras-as",
+    "go",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "dp-d",
@@ -86,15 +98,7 @@
   },
   "evolvesFrom": "grotle",
   "evoFromLevel": 32,
-  "names": {
-    "eng": "Torterra",
-    "fra": "Torterra",
-    "deu": "Chelterrar",
-    "jap": "ドダイトス",
-    "kor": "토대부기",
-    "chs": "土台龟",
-    "cht": "土台龜"
-  },
+  "names": { "eng": "Torterra", "fra": "Torterra", "deu": "Chelterrar", "jap": "ドダイトス", "kor": "토대부기", "chs": "土台龟", "cht": "土台龜" },
   "genus": {
     "eng": "Continent Pokémon",
     "esp": "Pokémon Continente",
@@ -108,5 +112,15 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "home"]
+  "transferOnlyIn": [
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "home"
+  ]
 }

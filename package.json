@@ -21,8 +21,11 @@
   "scripts": {
     "dev": "PORT=4011 bun run 'viewer/**/*.html'",
     "test": "vitest --run --bail 20",
-    "format": "oxfmt --write .",
-    "format:check": "oxfmt --check",
+    "format": "oxfmt --write . && pnpm format:data",
+    "format:data": "pnpm format:json ./data --write",
+    "format:data-check": "pnpm format:json ./data --check",
+    "format:check": "oxfmt --check && pnpm format:data-check",
+    "format:json": "bun run scripts/format-json-dir.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

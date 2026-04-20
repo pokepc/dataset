@@ -32,9 +32,30 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "sm",
-  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "storableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "sv-s",
+    "sv-v"
+  ],
   "shinyReleased": true,
   "baseHp": 45,
   "baseAtk": 65,
@@ -58,15 +79,7 @@
     "serebii": "litten",
     "bulbapedia": "Litten"
   },
-  "names": {
-    "eng": "Litten",
-    "fra": "Flamiaou",
-    "deu": "Flamiau",
-    "jap": "ニャビー",
-    "kor": "냐오불",
-    "chs": "火斑喵",
-    "cht": "火斑喵"
-  },
+  "names": { "eng": "Litten", "fra": "Flamiaou", "deu": "Flamiau", "jap": "ニャビー", "kor": "냐오불", "chs": "火斑喵", "cht": "火斑喵" },
   "genus": {
     "eng": "Fire Cat Pokémon",
     "esp": "Pokémon Gato Fuego",
