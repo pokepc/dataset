@@ -1,0 +1,3 @@
+# Genesect (Piromodulo)
+
+Pokémon Paleozoico

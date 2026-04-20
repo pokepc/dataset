@@ -1,0 +1,3 @@
+# Kyogre (Protomorphose)
+
+Seegründler-Pokémon

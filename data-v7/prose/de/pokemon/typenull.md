@@ -1,0 +1,3 @@
+# Typ:Null
+
+Modifikations-Pokémon

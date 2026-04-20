@@ -1,0 +1,3 @@
+# Raikou
+
+Donner-Pokémon

@@ -1,0 +1,3 @@
+# Mega Barbaracle
+
+Collective Pokémon

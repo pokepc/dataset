@@ -1,0 +1,3 @@
+# Bronzor
+
+Bronze Pokémon

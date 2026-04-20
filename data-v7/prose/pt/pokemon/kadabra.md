@@ -1,0 +1,3 @@
+# Kadabra
+
+Psi Pokémon

@@ -1,0 +1,3 @@
+# Dialga
+
+Pokémon Temps

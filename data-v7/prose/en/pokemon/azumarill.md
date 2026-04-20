@@ -1,0 +1,3 @@
+# Azumarill
+
+Aqua Rabbit Pokémon

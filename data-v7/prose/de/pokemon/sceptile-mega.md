@@ -1,0 +1,3 @@
+# Mega-Gewaldro
+
+Dschungel-Pokémon

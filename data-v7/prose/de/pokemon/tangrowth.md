@@ -1,0 +1,3 @@
+# Tangoloss
+
+Ranken-Pokémon

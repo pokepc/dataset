@@ -1,0 +1,3 @@
+# Furioseta
+
+Paradox Pokémon

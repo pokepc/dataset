@@ -1,0 +1,3 @@
+# Relicanth (Female)
+
+Pokémon Longévité

@@ -1,0 +1,3 @@
+# Crocalor
+
+Fire Croc Pokémon

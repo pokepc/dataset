@@ -1,0 +1,3 @@
+# Pantimimi
+
+Mimen-Pokémon

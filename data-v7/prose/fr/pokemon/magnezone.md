@@ -1,0 +1,3 @@
+# Magnézone
+
+Pokémon Aimant

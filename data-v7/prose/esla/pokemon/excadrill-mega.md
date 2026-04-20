@@ -1,0 +1,3 @@
+# Mega Excadrill
+
+Subterrene Pokémon

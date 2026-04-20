@@ -1,0 +1,3 @@
+# Skorupi
+
+Scorpion Pokémon

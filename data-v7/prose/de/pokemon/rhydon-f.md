@@ -1,0 +1,3 @@
+# Rizeros (Female)
+
+Bohrer-Pokémon

@@ -1,0 +1,3 @@
+# Gengar
+
+Schatten-Pokémon

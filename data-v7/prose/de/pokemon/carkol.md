@@ -1,0 +1,3 @@
+# Wagong
+
+Kohle-Pokémon

@@ -1,0 +1,3 @@
+# Gothita
+
+Pokémon Fissosguardo

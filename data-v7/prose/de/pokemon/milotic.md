@@ -1,0 +1,3 @@
+# Milotic
+
+Zartheits-Pokémon

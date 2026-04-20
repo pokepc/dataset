@@ -1,0 +1,3 @@
+# Tokorico
+
+Pokémon Tutélaire

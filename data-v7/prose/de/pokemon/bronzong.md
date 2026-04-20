@@ -1,0 +1,3 @@
+# Bronzong
+
+Bronzeglocken-Pokémon

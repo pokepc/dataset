@@ -1,0 +1,3 @@
+# Omastar
+
+Spiral Pokémon

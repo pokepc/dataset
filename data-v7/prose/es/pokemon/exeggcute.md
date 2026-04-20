@@ -1,0 +1,3 @@
+# Exeggcute
+
+Pokémon Huevo

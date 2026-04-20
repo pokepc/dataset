@@ -1,0 +1,3 @@
+# MégaStaross
+
+Pokémon Mystérieux

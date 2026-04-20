@@ -1,0 +1,3 @@
+# Darmanitan
+
+Blazing Pokémon

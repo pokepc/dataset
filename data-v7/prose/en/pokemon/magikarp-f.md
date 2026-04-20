@@ -1,0 +1,3 @@
+# Magikarp (Female)
+
+Fish Pokémon

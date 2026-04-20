@@ -1,0 +1,3 @@
+# Mega-Voltenso
+
+Entladungs-Pokémon

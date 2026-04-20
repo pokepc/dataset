@@ -1,0 +1,3 @@
+# Seaking (Female)
+
+Goldfish Pokémon

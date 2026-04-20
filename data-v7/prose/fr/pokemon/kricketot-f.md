@@ -1,0 +1,3 @@
+# Crikzik (Female)
+
+Pokémon Criquet

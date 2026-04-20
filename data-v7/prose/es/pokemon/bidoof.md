@@ -1,0 +1,3 @@
+# Bidoof
+
+Pokémon Gran Ratón

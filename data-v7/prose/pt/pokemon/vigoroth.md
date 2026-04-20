@@ -1,0 +1,3 @@
+# Vigoroth
+
+Wild Monkey Pokémon

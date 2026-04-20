@@ -1,0 +1,3 @@
+# Cubone
+
+Lonely Pokémon

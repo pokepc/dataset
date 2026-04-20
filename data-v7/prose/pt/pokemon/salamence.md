@@ -1,0 +1,3 @@
+# Salamence
+
+Dragon Pokémon

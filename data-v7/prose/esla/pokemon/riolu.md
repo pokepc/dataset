@@ -1,0 +1,3 @@
+# Riolu
+
+Emanation Pokémon

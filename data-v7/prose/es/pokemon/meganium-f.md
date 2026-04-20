@@ -1,0 +1,3 @@
+# Meganium (Female)
+
+Pokémon Hierba

@@ -1,0 +1,3 @@
+# Zoroark
+
+Polymorfuchs-Pokémon

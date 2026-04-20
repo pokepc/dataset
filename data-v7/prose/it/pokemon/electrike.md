@@ -1,0 +1,3 @@
+# Electrike
+
+Pokémon Lampo

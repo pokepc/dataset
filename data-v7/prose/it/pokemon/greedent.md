@@ -1,0 +1,3 @@
+# Greedent
+
+Pokémon Ingordigia

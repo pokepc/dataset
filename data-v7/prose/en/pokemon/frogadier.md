@@ -1,0 +1,3 @@
+# Frogadier
+
+Bubble Frog Pokémon

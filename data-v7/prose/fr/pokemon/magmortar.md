@@ -1,0 +1,3 @@
+# Maganon
+
+Pokémon Explosion

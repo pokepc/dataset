@@ -1,0 +1,3 @@
+# Blaziken
+
+Blaze Pokémon

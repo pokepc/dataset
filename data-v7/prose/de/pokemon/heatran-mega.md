@@ -1,0 +1,3 @@
+# Mega-Heatran
+
+Lavadom-Pokémon

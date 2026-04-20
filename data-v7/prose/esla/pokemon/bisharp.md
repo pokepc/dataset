@@ -1,0 +1,3 @@
+# Bisharp
+
+Sword Blade Pokémon

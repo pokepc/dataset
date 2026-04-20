@@ -1,0 +1,3 @@
+# Kyurem Negro
+
+Pokémon Frontera

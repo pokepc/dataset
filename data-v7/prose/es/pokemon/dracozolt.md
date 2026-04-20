@@ -1,0 +1,3 @@
+# Dracozolt
+
+Pokémon Fósil

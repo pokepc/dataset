@@ -1,0 +1,3 @@
+# Ferroverdor
+
+Paradox Pokémon

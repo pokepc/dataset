@@ -1,0 +1,3 @@
+# Tangoloss (Female)
+
+Ranken-Pokémon

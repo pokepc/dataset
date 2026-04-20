@@ -1,0 +1,3 @@
+# Kricketot (Female)
+
+Pokémon Grillo

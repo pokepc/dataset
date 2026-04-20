@@ -1,0 +1,3 @@
+# Barrikadax
+
+Barrikaden-Pokémon

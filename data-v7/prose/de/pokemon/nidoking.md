@@ -1,0 +1,3 @@
+# Nidoking
+
+Bohrer-Pokémon

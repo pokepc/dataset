@@ -1,0 +1,3 @@
+# Camérupt
+
+Pokémon Éruption

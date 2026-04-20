@@ -1,0 +1,3 @@
+# MégaFlorizarre
+
+Pokémon Graine

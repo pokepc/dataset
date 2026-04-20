@@ -1,0 +1,3 @@
+# Omastar
+
+Pokémon Spirale

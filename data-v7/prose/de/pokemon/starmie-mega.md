@@ -1,0 +1,3 @@
+# Mega-Starmie
+
+Mysteriös-Pokémon

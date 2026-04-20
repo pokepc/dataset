@@ -1,0 +1,3 @@
+# Kranidos
+
+Pokémon Coud’Boule

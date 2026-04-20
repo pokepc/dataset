@@ -1,0 +1,3 @@
+# Corsola
+
+Pokémon Corallo

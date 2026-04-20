@@ -1,0 +1,3 @@
+# Seedraking
+
+Drachen-Pokémon

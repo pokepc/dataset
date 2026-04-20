@@ -1,0 +1,3 @@
+# Psyduck
+
+Pokémon Pato

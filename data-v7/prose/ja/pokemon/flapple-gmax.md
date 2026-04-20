@@ -1,0 +1,3 @@
+# Flapple (Gigantamax Form)
+
+りんごはねポケモン

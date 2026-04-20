@@ -1,0 +1,3 @@
+# Mamoswine
+
+Pokémon Duezanne

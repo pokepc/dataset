@@ -1,0 +1,3 @@
+# Código Cero
+
+Pokémon Multigénico

@@ -1,0 +1,3 @@
+# Shroomish
+
+Pokémon Fungo

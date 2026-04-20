@@ -1,0 +1,3 @@
+# Rotom Taglio
+
+Pokémon Plasma

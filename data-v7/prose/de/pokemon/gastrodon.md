@@ -1,0 +1,3 @@
+# Gastrodon
+
+Seeschnecken-Pokémon

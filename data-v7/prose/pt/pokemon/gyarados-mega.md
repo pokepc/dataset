@@ -1,0 +1,3 @@
+# Mega Gyarados
+
+Atrocious Pokémon

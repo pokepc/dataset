@@ -1,0 +1,3 @@
+# Hippopotas (Female)
+
+Hippo Pokémon

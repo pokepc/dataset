@@ -1,0 +1,3 @@
+# Greavard
+
+Ghost Dog Pokémon

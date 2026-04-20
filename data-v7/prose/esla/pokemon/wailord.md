@@ -1,0 +1,3 @@
+# Wailord
+
+Float Whale Pokémon

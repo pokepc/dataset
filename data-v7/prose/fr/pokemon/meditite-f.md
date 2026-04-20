@@ -1,0 +1,3 @@
+# Méditikka (Female)
+
+Pokémon Méditation

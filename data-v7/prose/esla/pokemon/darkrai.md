@@ -1,0 +1,3 @@
+# Darkrai
+
+Pitch-Black Pokémon

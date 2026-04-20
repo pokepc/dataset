@@ -1,0 +1,3 @@
+# Noibat
+
+Sound Wave Pokémon

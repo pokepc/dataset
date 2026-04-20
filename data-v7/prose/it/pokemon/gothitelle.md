@@ -1,0 +1,3 @@
+# Gothitelle
+
+Pokémon Corpoceleste

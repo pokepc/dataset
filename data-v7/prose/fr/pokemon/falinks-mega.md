@@ -1,0 +1,3 @@
+# MégaHexadron
+
+Pokémon Escadron

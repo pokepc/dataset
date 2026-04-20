@@ -1,0 +1,3 @@
+# Garbodor
+
+Pokémon Discarica

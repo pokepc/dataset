@@ -1,0 +1,3 @@
+# Mega Banette
+
+Pokémon Marionetta

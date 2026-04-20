@@ -1,0 +1,3 @@
+# Ursaring (Female)
+
+Hibernator Pokémon

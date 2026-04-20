@@ -1,0 +1,3 @@
+# Anego
+
+Parasiten-Pokémon

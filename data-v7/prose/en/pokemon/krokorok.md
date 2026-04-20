@@ -1,0 +1,3 @@
+# Krokorok
+
+Desert Croc Pokémon

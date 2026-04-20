@@ -1,0 +1,3 @@
+# Luxio (Female)
+
+Funken-Pokémon

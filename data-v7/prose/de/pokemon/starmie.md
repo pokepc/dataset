@@ -1,0 +1,3 @@
+# Starmie
+
+Mysteriös-Pokémon

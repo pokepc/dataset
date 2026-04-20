@@ -1,0 +1,3 @@
+# Magby
+
+Glutherd-Pokémon

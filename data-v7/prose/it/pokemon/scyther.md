@@ -1,0 +1,3 @@
+# Scyther
+
+Pokémon Mantide

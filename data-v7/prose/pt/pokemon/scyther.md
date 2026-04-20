@@ -1,0 +1,3 @@
+# Scyther
+
+Mantis Pokémon

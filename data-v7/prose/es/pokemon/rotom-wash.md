@@ -1,0 +1,3 @@
+# Rotom Lavado
+
+Pokémon Plasma

@@ -1,0 +1,3 @@
+# Brute Bonnet
+
+Paradox Pokémon

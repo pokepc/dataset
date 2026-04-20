@@ -1,0 +1,3 @@
+# Gobou
+
+Pokémon Poissonboue

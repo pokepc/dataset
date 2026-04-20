@@ -1,0 +1,3 @@
+# Ambipom
+
+Pokémon Lungacoda

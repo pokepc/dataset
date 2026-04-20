@@ -1,0 +1,3 @@
+# Minccino
+
+Chinchilla Pokémon

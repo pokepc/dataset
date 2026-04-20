@@ -110,7 +110,7 @@ function processGames() {
 
   for (const gameSet of gameSets) {
     const destDir = path.resolve(NEW_DATA_PATH, `games/${gameSet.id}`)
-    const requiredDirs = [`${destDir}/prose`, `${destDir}/mods`, `${destDir}/lists`, `${destDir}/dexes`]
+    const requiredDirs = [`${destDir}/prose`, `${destDir}/mods`, `${destDir}/dexes`]
 
     for (const dir of requiredDirs) {
       if (!fs.existsSync(dir)) {
@@ -181,7 +181,11 @@ function processGames() {
 
     // markdown texts
     for (const lang of langs) {
-      fs.writeFileSync(`${destDir}/prose/description-${lang.id}.md`, `# ${gameSet.name}\n\n`)
+      const proseDir = path.resolve(NEW_DATA_PATH, `prose/${lang.id}/games`)
+      if (!fs.existsSync(proseDir)) {
+        fs.mkdirSync(proseDir, { recursive: true })
+      }
+      fs.writeFileSync(`${proseDir}/${gameSet.id}.md`, `# ${gameSet.name}\n\n`)
     }
 
     // mods
@@ -189,11 +193,6 @@ function processGames() {
     fs.writeFileSync(`${destDir}/mods/abilities.json`, `{}`)
     fs.writeFileSync(`${destDir}/mods/items.json`, `{}`)
     fs.writeFileSync(`${destDir}/mods/pokemon.json`, `{}`)
-
-    // lists
-    // fs.writeFileSync(`${destDir}/lists/pokemon-storable.json`, `[]`)
-    // fs.writeFileSync(`${destDir}/lists/pokemon-version-exclusives.json`, `{}`)
-    // fs.writeFileSync(`${destDir}/lists/pokemon-obtainable.json`, `[[]]`) // gameplay, events, transfer-only
 
     copyDexes(gameSet.pokedexes, `${destDir}/dexes`)
   }
@@ -210,7 +209,12 @@ function buildPokemonI18n(langA3: Pkds.LanguageAlpha3, pkm: Pkds.Pokemon): Pokem
   }
 }
 
-const allGames = loadAllGames().filter((g) => g.type === 'game')
+const allGames = loadAllGames()
+  .filter((g) => g.type === 'game')
+  .map((g) => ({
+    ...g,
+    dirname: g.gameSet ?? g.id,
+  }))
 const allGamesByGameset = (() => {
   const gamesByGameset: Record<string, string[]> = {}
   for (const game of allGames) {
@@ -232,13 +236,6 @@ function processPokemon() {
     fs.mkdirSync(destDir, { recursive: true })
   }
 
-  const obtainableByGameId = Object.fromEntries(allGames.map((g) => [g.id, new Set<string>()]))
-  const storableByGameId = Object.fromEntries(allGames.map((g) => [g.id, new Set<string>()]))
-  const transferOnlyByGameId = Object.fromEntries(allGames.map((g) => [g.id, new Set<string>()]))
-  const eventOnlyByGameId = Object.fromEntries(allGames.map((g) => [g.id, new Set<string>()]))
-  const shinyLockedByGameId = Object.fromEntries(allGames.map((g) => [g.id, new Set<string>()]))
-  const exclusivesByGameId = Object.fromEntries(allGames.map((g) => [g.id, new Set<string>()]))
-
   for (const pkm of allPokes) {
     const destFile = path.resolve(destDir, `${pkm.id}.json`)
     index.push({
@@ -247,74 +244,6 @@ function processPokemon() {
       isForm: pkm.isForm || false,
       baseSpecies: pkm.baseSpecies || undefined,
     })
-
-    // const {
-    //   // i18n:
-    //   names,
-    //   genus,
-    //   speciesNames,
-    //   formNames,
-    //   // availability:
-    //   obtainableIn,
-    //   storableIn,
-    //   transferOnlyIn,
-    //   eventOnlyIn,
-    //   shinyLockedIn,
-    // } = pkm
-
-    if (pkm.family) {
-      console.log(`${pkm.id} has family ${pkm.family}`)
-    }
-
-    for (const game of allGames) {
-      const gameDir = game.gameSet ?? game.id
-
-      if (pkm.obtainableIn.includes(game.id)) {
-        if (!obtainableByGameId[gameDir]) {
-          obtainableByGameId[gameDir] = new Set<string>()
-        }
-        obtainableByGameId[gameDir].add(pkm.id)
-      }
-      if (pkm.storableIn.includes(game.id)) {
-        if (!storableByGameId[gameDir]) {
-          storableByGameId[gameDir] = new Set<string>()
-        }
-        storableByGameId[gameDir].add(pkm.id)
-      }
-      if (pkm.transferOnlyIn.includes(game.id)) {
-        if (!transferOnlyByGameId[gameDir]) {
-          transferOnlyByGameId[gameDir] = new Set<string>()
-        }
-        transferOnlyByGameId[gameDir].add(pkm.id)
-      }
-      if (pkm.eventOnlyIn.includes(game.id)) {
-        if (!eventOnlyByGameId[gameDir]) {
-          eventOnlyByGameId[gameDir] = new Set<string>()
-        }
-        eventOnlyByGameId[gameDir].add(pkm.id)
-      }
-      if (pkm.shinyLockedIn?.includes(game.id)) {
-        if (!shinyLockedByGameId[gameDir]) {
-          shinyLockedByGameId[gameDir] = new Set<string>()
-        }
-        shinyLockedByGameId[gameDir].add(pkm.id)
-      }
-    }
-
-    for (const game of allGames) {
-      const gameDir = game.gameSet ?? game.id
-      const counterpartGames = allGamesByGameset[gameDir].filter((g) => g !== game.id)
-      if (counterpartGames.length === 0) continue
-      if (!pkm.obtainableIn.includes(game.id)) continue
-
-      const isExclusive = counterpartGames.every((g) => !pkm.obtainableIn.includes(g))
-      if (isExclusive) {
-        if (!exclusivesByGameId[game.id]) {
-          exclusivesByGameId[game.id] = new Set<string>()
-        }
-        exclusivesByGameId[game.id].add(pkm.id)
-      }
-    }
 
     const newPkm: PokemonV2 = {
       id: pkm.id,
@@ -402,53 +331,22 @@ function processPokemon() {
     }
 
     fs.writeFileSync(destFile, JSON.stringify(newPkm, null, 2))
+
+    // markdown texts
+    for (const lang of langs) {
+      const proseDir = path.resolve(NEW_DATA_PATH, `prose/${lang.id}/pokemon`)
+      if (!fs.existsSync(proseDir)) {
+        fs.mkdirSync(proseDir, { recursive: true })
+      }
+      const name = newPkm.i18n[lang.id].name
+      const genus = newPkm.i18n[lang.id].genus
+      const content = [`# ${name}`, genus ? `${genus}` : undefined].filter(Boolean).join('\n\n')
+
+      fs.writeFileSync(`${proseDir}/${newPkm.id}.md`, content + '\n')
+    }
   }
 
   fs.writeFileSync(`${NEW_DATA_PATH}/pokemon-index.json`, JSON.stringify(index, null, 2))
-
-  for (const game of allGames) {
-    const gameDir = game.gameSet ?? game.id
-    const destDir = path.resolve(NEW_DATA_PATH, `games/${gameDir}/lists`)
-    if (!fs.existsSync(destDir)) {
-      throw new Error(`List directory ${destDir} does not exist.`)
-    }
-
-    fs.writeFileSync(
-      `${destDir}/pokemon-obtainable.json`,
-      JSON.stringify(Array.from(obtainableByGameId[gameDir] ?? []), null, 2),
-    )
-    fs.writeFileSync(
-      `${destDir}/pokemon-storable.json`,
-      JSON.stringify(Array.from(storableByGameId[gameDir] ?? []), null, 2),
-    )
-    fs.writeFileSync(
-      `${destDir}/pokemon-transfer-only.json`,
-      JSON.stringify(Array.from(transferOnlyByGameId[gameDir] ?? []), null, 2),
-    )
-    fs.writeFileSync(
-      `${destDir}/pokemon-event-only.json`,
-      JSON.stringify(Array.from(eventOnlyByGameId[gameDir] ?? []), null, 2),
-    )
-    fs.writeFileSync(
-      `${destDir}/pokemon-shiny-locked.json`,
-      JSON.stringify(Array.from(shinyLockedByGameId[gameDir] ?? []), null, 2),
-    )
-
-    const gamesetGames = allGamesByGameset[gameDir]
-    if (gamesetGames.length > 1) {
-      const exclusives: Record<string, string[]> = {}
-      for (const gameId of gamesetGames) {
-        if (!exclusivesByGameId[gameId] || exclusivesByGameId[gameId].size === 0) {
-          continue
-        }
-        exclusives[gameId] = Array.from(exclusivesByGameId[gameId])
-      }
-
-      if (Object.keys(exclusives).length > 0) {
-        fs.writeFileSync(`${destDir}/pokemon-version-exclusives.json`, JSON.stringify(exclusives, null, 2))
-      }
-    }
-  }
 }
 
 type GamePokemon = {
@@ -461,13 +359,6 @@ type GamePokemon = {
 
 function processGamePokemonLists() {
   const allPokes = loadAllPokemon()
-  const allGames = loadAllGames()
-    .filter((g) => g.type === 'game')
-    .map((g) => ({
-      ...g,
-      dirname: g.gameSet ?? g.id,
-    }))
-
   const gamePokemon: Record<string, GamePokemon[]> = {}
 
   for (const game of allGames) {
@@ -498,7 +389,7 @@ function processGamePokemonLists() {
   }
 
   for (const game of allGames) {
-    const destDir = path.resolve(NEW_DATA_PATH, `games/${game.dirname}/lists`)
+    const destDir = path.resolve(NEW_DATA_PATH, `games/${game.dirname}`)
     if (!fs.existsSync(destDir)) {
       throw new Error(`List directory ${destDir} does not exist.`)
     }

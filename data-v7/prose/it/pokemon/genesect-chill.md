@@ -1,0 +1,3 @@
+# Genesect (Gelomodulo)
+
+Pokémon Paleozoico

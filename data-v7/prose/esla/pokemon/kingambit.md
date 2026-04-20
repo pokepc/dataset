@@ -1,0 +1,3 @@
+# Kingambit
+
+Big Blade Pokémon

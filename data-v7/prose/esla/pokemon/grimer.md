@@ -1,0 +1,3 @@
+# Grimer
+
+Sludge Pokémon

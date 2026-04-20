@@ -1,0 +1,3 @@
+# Cradily
+
+Barnacle Pokémon

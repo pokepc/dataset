@@ -1,0 +1,3 @@
+# Blitzle
+
+Electrified Pokémon

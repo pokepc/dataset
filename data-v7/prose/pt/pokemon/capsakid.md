@@ -1,0 +1,3 @@
+# Capsakid
+
+Spicy Pepper Pokémon

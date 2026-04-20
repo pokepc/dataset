@@ -1,0 +1,3 @@
+# Mediras
+
+Schuppentier-Pokémon

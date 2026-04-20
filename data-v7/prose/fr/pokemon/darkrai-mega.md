@@ -1,0 +1,3 @@
+# MégaDarkrai
+
+Pokémon Noirtotal

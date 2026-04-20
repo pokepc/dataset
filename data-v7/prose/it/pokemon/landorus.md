@@ -1,0 +1,3 @@
+# Landorus
+
+Pokémon Fertilità

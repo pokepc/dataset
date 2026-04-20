@@ -1,0 +1,3 @@
+# Kubfu
+
+Wushu Pokémon

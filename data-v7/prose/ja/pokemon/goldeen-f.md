@@ -1,0 +1,3 @@
+# Goldeen (Female)
+
+きんぎょポケモン

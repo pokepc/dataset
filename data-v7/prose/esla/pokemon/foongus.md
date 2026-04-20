@@ -1,0 +1,3 @@
+# Foongus
+
+Mushroom Pokémon

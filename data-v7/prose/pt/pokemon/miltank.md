@@ -1,0 +1,3 @@
+# Miltank
+
+Milk Cow Pokémon

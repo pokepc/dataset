@@ -1,0 +1,3 @@
+# Oshawott
+
+Sea Otter Pokémon

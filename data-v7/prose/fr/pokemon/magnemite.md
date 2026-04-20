@@ -1,0 +1,3 @@
+# Magnéti
+
+Pokémon Magnétique

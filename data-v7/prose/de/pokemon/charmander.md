@@ -1,0 +1,3 @@
+# Glumanda
+
+Echsen-Pokémon

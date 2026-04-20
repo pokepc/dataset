@@ -1,0 +1,3 @@
+# Hypnomade
+
+Pokémon Hypnose

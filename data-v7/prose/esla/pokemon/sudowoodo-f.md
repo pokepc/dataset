@@ -1,0 +1,3 @@
+# Sudowoodo (Female)
+
+Imitation Pokémon

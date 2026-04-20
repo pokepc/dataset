@@ -1,0 +1,3 @@
+# Dedenne
+
+Antennen-Pokémon

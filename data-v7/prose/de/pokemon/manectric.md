@@ -1,0 +1,3 @@
+# Voltenso
+
+Entladungs-Pokémon

@@ -1,0 +1,3 @@
+# Fasasnob (Female)
+
+Stolz-Pokémon

@@ -1,0 +1,3 @@
+# Dialga
+
+Zeitweilig-Pokémon

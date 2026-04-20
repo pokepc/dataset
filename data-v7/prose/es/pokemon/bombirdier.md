@@ -1,0 +1,3 @@
+# Bombirdier
+
+Item Drop Pokémon

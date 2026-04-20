@@ -1,0 +1,3 @@
+# Tragosso
+
+Einsam-Pokémon

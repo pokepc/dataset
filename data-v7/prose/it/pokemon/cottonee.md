@@ -1,0 +1,3 @@
+# Cottonee
+
+Pokémon Cotonpalla

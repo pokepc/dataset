@@ -1,0 +1,3 @@
+# MégaEctoplasma
+
+Pokémon Ombre

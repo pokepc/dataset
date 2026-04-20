@@ -1,0 +1,3 @@
+# Kricketune (Female)
+
+こおろぎポケモン

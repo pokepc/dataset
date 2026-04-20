@@ -1,0 +1,3 @@
+# Shinx (Female)
+
+Flash Pokémon

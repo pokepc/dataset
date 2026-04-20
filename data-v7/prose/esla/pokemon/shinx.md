@@ -1,0 +1,3 @@
+# Shinx
+
+Flash Pokémon

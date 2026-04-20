@@ -1,0 +1,3 @@
+# Carnivine
+
+Pokémon Insettivoro

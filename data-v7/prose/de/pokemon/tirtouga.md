@@ -1,0 +1,3 @@
+# Galapaflos
+
+Urzeitkröten-Pokémon

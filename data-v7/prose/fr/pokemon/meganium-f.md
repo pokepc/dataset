@@ -1,0 +1,3 @@
+# Méganium (Female)
+
+Pokémon Herbe

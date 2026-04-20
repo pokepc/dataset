@@ -1,0 +1,3 @@
+# Xatu
+
+Mystik-Pokémon

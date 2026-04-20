@@ -1,0 +1,3 @@
+# Mega Barbaracle
+
+Pokémon Combinación

@@ -1,0 +1,3 @@
+# Golduck
+
+Pokémon Papero

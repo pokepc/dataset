@@ -1,0 +1,3 @@
+# Mega Ampharos
+
+Light Pokémon

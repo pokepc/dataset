@@ -1,0 +1,3 @@
+# Passerouge
+
+Pokémon Rougegorge

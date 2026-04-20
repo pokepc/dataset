@@ -1,0 +1,3 @@
+# Victini
+
+Triumph-Pokémon

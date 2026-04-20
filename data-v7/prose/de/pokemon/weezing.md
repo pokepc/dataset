@@ -1,0 +1,3 @@
+# Smogmog
+
+Giftwolken-Pokémon

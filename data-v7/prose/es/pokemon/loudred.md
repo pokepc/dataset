@@ -1,0 +1,3 @@
+# Loudred
+
+Pokémon Chillón

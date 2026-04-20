@@ -1,0 +1,112 @@
+{
+  "id": "charizard",
+  "nid": "charizard",
+  "name": "Charizard",
+  "genus": "Flame Pokémon",
+  "dexNum": 6,
+  "gen": 1,
+  "region": "kanto",
+  "debutIn": "rb",
+  "type1": "fire",
+  "type2": "flying",
+  "color": "red",
+  "abilities": [
+    "blaze",
+    "solarpower"
+  ],
+  "baseHp": 78,
+  "baseAtk": 84,
+  "baseDef": 78,
+  "baseSpAtk": 109,
+  "baseSpDef": 85,
+  "baseSpeed": 100,
+  "height": 170,
+  "weight": 9050,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "charizard-mega-x",
+    "charizard-mega-y",
+    "charizard-gmax"
+  ],
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": false,
+  "canDynamax": true,
+  "canGmax": true,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "evolvesFrom": "charmeleon",
+  "evoFromLevel": 36,
+  "refs": {
+    "pkApiId": "6",
+    "pkApiFormId": "6",
+    "pkApiFormSlug": "charizard",
+    "smogon": "charizard",
+    "showdown": "charizard",
+    "showdownName": "Charizard",
+    "serebii": "charizard",
+    "bulbapedia": "Charizard"
+  },
+  "i18n": {
+    "en": {
+      "name": "Charizard",
+      "genus": "Flame Pokémon"
+    },
+    "fr": {
+      "name": "Dracaufeu",
+      "genus": "Pokémon Flamme"
+    },
+    "de": {
+      "name": "Glurak",
+      "genus": "Flammen-Pokémon"
+    },
+    "es": {
+      "name": "Charizard",
+      "genus": "Pokémon Llama"
+    },
+    "esla": {
+      "name": "Charizard",
+      "genus": "Flame Pokémon"
+    },
+    "it": {
+      "name": "Charizard",
+      "genus": "Pokémon Fiamma"
+    },
+    "pt": {
+      "name": "Charizard",
+      "genus": "Flame Pokémon"
+    },
+    "ja": {
+      "name": "リザードン",
+      "genus": "かえんポケモン"
+    },
+    "ko": {
+      "name": "리자몽",
+      "genus": "화염포켓몬"
+    },
+    "chs": {
+      "name": "喷火龙",
+      "genus": "火焰宝可梦"
+    },
+    "cht": {
+      "name": "噴火龍",
+      "genus": "火焰寶可夢"
+    }
+  }
+}

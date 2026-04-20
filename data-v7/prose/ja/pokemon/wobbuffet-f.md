@@ -1,0 +1,3 @@
+# Wobbuffet (Female)
+
+がまんポケモン

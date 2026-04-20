@@ -1,0 +1,3 @@
+# Koffing
+
+Poison Gas Pokémon

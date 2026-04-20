@@ -1,0 +1,3 @@
+# Granbull
+
+Pokémon Hada

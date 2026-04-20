@@ -1,0 +1,3 @@
+# Mega Gallade
+
+Pokémon Lama

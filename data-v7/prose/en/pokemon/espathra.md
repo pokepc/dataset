@@ -1,0 +1,3 @@
+# Espathra
+
+Ostrich Pokémon

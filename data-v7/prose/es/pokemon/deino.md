@@ -1,0 +1,3 @@
+# Deino
+
+Pokémon Tosco

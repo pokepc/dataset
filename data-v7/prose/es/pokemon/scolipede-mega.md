@@ -1,0 +1,3 @@
+# Mega Scolipede
+
+Pokémon Megaciempiés

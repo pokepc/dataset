@@ -1,0 +1,3 @@
+# Krakos
+
+Pokémon Jujitsu

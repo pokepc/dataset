@@ -1,0 +1,3 @@
+# Milotic (Female)
+
+いつくしみポケモン

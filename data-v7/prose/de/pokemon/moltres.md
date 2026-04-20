@@ -1,0 +1,3 @@
+# Lavados
+
+Flammen-Pokémon

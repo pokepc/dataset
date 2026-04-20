@@ -1,0 +1,3 @@
+# Beedrill
+
+Poison Bee Pokémon

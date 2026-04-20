@@ -1,0 +1,3 @@
+# Lotad
+
+Pokémon Lenteja Agua

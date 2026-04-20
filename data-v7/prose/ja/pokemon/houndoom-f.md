@@ -1,0 +1,3 @@
+# Houndoom (Female)
+
+ダークポケモン

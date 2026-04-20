@@ -1,0 +1,3 @@
+# Diggersby
+
+Digging Pokémon

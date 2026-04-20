@@ -1,0 +1,3 @@
+# Luxray
+
+Gleam Eyes Pokémon

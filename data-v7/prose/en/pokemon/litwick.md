@@ -1,0 +1,3 @@
+# Litwick
+
+Candle Pokémon

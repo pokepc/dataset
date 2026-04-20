@@ -1,0 +1,3 @@
+# Teddiursa
+
+Pokémon Mini Ours

@@ -1,0 +1,3 @@
+# Rotom
+
+Pokémon Plasma

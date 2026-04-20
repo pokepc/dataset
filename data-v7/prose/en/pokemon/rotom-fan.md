@@ -1,0 +1,3 @@
+# Fan Rotom
+
+Plasma Pokémon

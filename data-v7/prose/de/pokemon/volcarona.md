@@ -1,0 +1,3 @@
+# Ramoth
+
+Sonnen-Pokémon

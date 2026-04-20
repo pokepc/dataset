@@ -1,0 +1,306 @@
+{
+  "id": "swsh",
+  "name": "Sword & Shield",
+  "gen": 8,
+  "nameSlug": "sword-shield",
+  "codename": "Orion",
+  "type": "set",
+  "series": "main",
+  "gameSet": null,
+  "gameSuperSet": null,
+  "releaseDate": "2019-11-15",
+  "region": "galar",
+  "originMark": "galar",
+  "pokedexes": [
+    "galar",
+    "galar-isle-armor",
+    "galar-crown-tundra"
+  ],
+  "maxBoxes": 32,
+  "maxBoxSize": 30,
+  "platforms": [
+    "switch"
+  ],
+  "features": {
+    "storage": true,
+    "pokedex": true,
+    "training": true,
+    "shiny": true,
+    "items": true,
+    "gender": true,
+    "pokerus": true,
+    "nature": true,
+    "ribbons": true,
+    "marks": true,
+    "markings": true,
+    "shadow": false,
+    "ball": true,
+    "mega": false,
+    "zmove": false,
+    "gmax": true,
+    "alpha": false,
+    "tera": false,
+    "plusmvs": false,
+    "mints": false,
+    "sizes": false,
+    "abilities": true
+  },
+  "games": [
+    {
+      "id": "swsh-sw",
+      "name": "Sword",
+      "nameSlug": "sword",
+      "i18n": {
+        "en": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "fr": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "de": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "es": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "esla": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "it": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "ja": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "chs": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "cht": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "ko": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        },
+        "pt": {
+          "name": "Sword",
+          "nameSlug": "sword"
+        }
+      }
+    },
+    {
+      "id": "swsh-sh",
+      "name": "Shield",
+      "nameSlug": "shield",
+      "i18n": {
+        "en": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "fr": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "de": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "es": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "esla": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "it": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "ja": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "chs": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "cht": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "ko": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        },
+        "pt": {
+          "name": "Shield",
+          "nameSlug": "shield"
+        }
+      }
+    }
+  ],
+  "dlcs": [
+    {
+      "id": "swsh-islearmor",
+      "name": "The Isle of Armor",
+      "nameSlug": "the-isle-of-armor",
+      "codename": "Rigel",
+      "releaseDate": "2020-06-17",
+      "i18n": {
+        "en": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "fr": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "de": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "es": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "esla": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "it": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "ja": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "chs": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "cht": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "ko": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        },
+        "pt": {
+          "name": "The Isle of Armor",
+          "nameSlug": "the-isle-of-armor"
+        }
+      }
+    },
+    {
+      "id": "swsh-crowntundra",
+      "name": "The Crown Tundra",
+      "nameSlug": "the-crown-tundra",
+      "codename": "Rigel",
+      "releaseDate": "2020-10-22",
+      "i18n": {
+        "en": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "fr": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "de": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "es": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "esla": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "it": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "ja": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "chs": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "cht": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "ko": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        },
+        "pt": {
+          "name": "The Crown Tundra",
+          "nameSlug": "the-crown-tundra"
+        }
+      }
+    }
+  ],
+  "i18n": {
+    "en": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "fr": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "de": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "es": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "esla": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "it": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "ja": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "chs": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "cht": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "ko": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    },
+    "pt": {
+      "name": "Sword & Shield",
+      "nameSlug": "sword-shield"
+    }
+  }
+}

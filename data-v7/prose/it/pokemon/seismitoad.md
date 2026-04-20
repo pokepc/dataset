@@ -1,0 +1,3 @@
+# Seismitoad
+
+Pokémon Vibrazione

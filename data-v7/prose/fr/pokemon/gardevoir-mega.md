@@ -1,0 +1,3 @@
+# MégaGardevoir
+
+Pokémon Étreinte

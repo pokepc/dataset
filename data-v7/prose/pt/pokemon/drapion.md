@@ -1,0 +1,3 @@
+# Drapion
+
+Ogre Scorpion Pokémon

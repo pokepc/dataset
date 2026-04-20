@@ -1,0 +1,3 @@
+# Regidrago
+
+Drachenkugel-Pokémon

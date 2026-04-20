@@ -1,0 +1,3 @@
+# Ferrothorn
+
+Pokémon Bola Espina

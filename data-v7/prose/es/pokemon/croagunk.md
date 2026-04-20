@@ -1,0 +1,3 @@
+# Croagunk
+
+Pokémon Boca Tóxica

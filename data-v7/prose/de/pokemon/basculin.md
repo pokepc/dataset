@@ -1,0 +1,3 @@
+# Barschuft
+
+Grobheits-Pokémon

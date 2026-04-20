@@ -1,0 +1,3 @@
+# Tangrowth
+
+Pokémon Enredadera

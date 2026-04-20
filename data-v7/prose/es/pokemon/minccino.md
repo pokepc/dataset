@@ -1,0 +1,3 @@
+# Minccino
+
+Pokémon Chinchilla

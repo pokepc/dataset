@@ -1,0 +1,3 @@
+# Mimikyu
+
+Pokémon Fantasmanto

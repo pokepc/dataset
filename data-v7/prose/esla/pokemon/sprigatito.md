@@ -1,0 +1,3 @@
+# Sprigatito
+
+Grass Cat Pokémon

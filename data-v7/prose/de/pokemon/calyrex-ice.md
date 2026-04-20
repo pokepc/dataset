@@ -1,0 +1,3 @@
+# Coronospa (Schimmelreiter)
+
+Königs-Pokémon

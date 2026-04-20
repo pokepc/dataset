@@ -1,0 +1,3 @@
+# Entoron
+
+Enten-Pokémon

@@ -1,0 +1,3 @@
+# Miniras
+
+Schuppentier-Pokémon

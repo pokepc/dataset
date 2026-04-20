@@ -1,0 +1,3 @@
+# Mawile
+
+Pokémon Tramposo

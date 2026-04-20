@@ -1,0 +1,3 @@
+# Lohgock (Female)
+
+Großbrand-Pokémon

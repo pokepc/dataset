@@ -1,0 +1,3 @@
+# Mega Tyranitar
+
+Pokémon Armatura

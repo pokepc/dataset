@@ -1,0 +1,3 @@
+# Fulguris
+
+Pokémon Foudroyeur

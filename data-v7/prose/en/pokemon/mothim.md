@@ -1,0 +1,3 @@
+# Mothim
+
+Moth Pokémon

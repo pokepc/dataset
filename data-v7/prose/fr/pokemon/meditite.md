@@ -1,0 +1,3 @@
+# Méditikka
+
+Pokémon Méditation

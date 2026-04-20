@@ -1,0 +1,3 @@
+# Basculegion (Female)
+
+Pokémon Pescegrosso

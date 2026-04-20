@@ -1,0 +1,3 @@
+# Nincada
+
+Vorbereiter-Pokémon

@@ -1,0 +1,3 @@
+# Eternatus (Eternamax)
+
+Gigantic Pokémon

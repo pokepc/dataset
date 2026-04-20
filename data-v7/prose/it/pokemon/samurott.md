@@ -1,0 +1,3 @@
+# Samurott
+
+Pokémon Dignità

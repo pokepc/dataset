@@ -1,0 +1,3 @@
+# Mega Eelektross
+
+EleFish Pokémon

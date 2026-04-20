@@ -1,0 +1,3 @@
+# Pangoro
+
+Pokémon Occhiotruce

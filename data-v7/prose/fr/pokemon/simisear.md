@@ -1,0 +1,3 @@
+# Flamoutan
+
+Pokémon Braise

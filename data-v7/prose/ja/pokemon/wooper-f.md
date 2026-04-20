@@ -1,0 +1,3 @@
+# Wooper (Female)
+
+みずうおポケモン

@@ -1,0 +1,3 @@
+# Jellicent (Female)
+
+ふゆうポケモン

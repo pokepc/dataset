@@ -1,0 +1,3 @@
+# Cranidos
+
+Head Butt Pokémon

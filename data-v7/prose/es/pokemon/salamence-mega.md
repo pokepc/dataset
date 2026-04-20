@@ -1,0 +1,3 @@
+# Mega Salamence
+
+Pokémon Dragón

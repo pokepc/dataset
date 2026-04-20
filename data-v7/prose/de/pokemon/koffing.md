@@ -1,0 +1,3 @@
+# Smogon
+
+Giftwolken-Pokémon

@@ -1,0 +1,3 @@
+# MégaGaleking
+
+Pokémon Armurfer

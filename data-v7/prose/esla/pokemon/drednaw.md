@@ -1,0 +1,3 @@
+# Drednaw
+
+Bite Pokémon

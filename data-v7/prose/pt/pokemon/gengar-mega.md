@@ -1,0 +1,3 @@
+# Mega Gengar
+
+Shadow Pokémon

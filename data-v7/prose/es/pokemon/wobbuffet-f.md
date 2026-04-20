@@ -1,0 +1,3 @@
+# Wobbuffet (Female)
+
+Pokémon Paciente

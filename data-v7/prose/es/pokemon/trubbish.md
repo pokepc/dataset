@@ -1,0 +1,3 @@
+# Trubbish
+
+Pokémon Bolsa Basura

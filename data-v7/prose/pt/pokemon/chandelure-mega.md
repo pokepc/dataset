@@ -1,0 +1,3 @@
+# Mega Chandelure
+
+Luring Pokémon

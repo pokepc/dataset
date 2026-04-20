@@ -1,0 +1,3 @@
+# Chacripan
+
+Pokémon Scélérat

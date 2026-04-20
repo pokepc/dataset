@@ -1,0 +1,3 @@
+# Oddish
+
+Pokémon Hierbajo

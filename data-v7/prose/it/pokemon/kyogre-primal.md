@@ -1,0 +1,3 @@
+# Kyogre (Archeorisveglio)
+
+Pokémon Oceano

@@ -1,0 +1,3 @@
+# Lombre
+
+Pokémon Jovial

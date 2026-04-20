@@ -1,0 +1,3 @@
+# Cottonee
+
+Cotton Puff Pokémon

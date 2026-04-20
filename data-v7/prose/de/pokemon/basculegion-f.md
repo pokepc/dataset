@@ -1,0 +1,3 @@
+# Salmagnis (Weiblich)
+
+Großfisch-Pokémon

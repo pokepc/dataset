@@ -1,0 +1,3 @@
+# Mega Tyranitar
+
+Armor Pokémon

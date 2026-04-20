@@ -1,0 +1,3 @@
+# Coiffwaff (Kavaliersschnitt)
+
+Pudel

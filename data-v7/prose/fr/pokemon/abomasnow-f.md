@@ -1,0 +1,3 @@
+# Blizzaroi (Female)
+
+Pokémon Arbregelé

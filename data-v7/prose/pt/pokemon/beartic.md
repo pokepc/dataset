@@ -1,0 +1,3 @@
+# Beartic
+
+Freezing Pokémon

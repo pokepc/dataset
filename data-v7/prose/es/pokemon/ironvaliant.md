@@ -1,0 +1,3 @@
+# Ferropaladín
+
+Paradox Pokémon

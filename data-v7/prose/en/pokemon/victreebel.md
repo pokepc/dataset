@@ -1,0 +1,3 @@
+# Victreebel
+
+Flycatcher Pokémon

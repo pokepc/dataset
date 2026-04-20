@@ -1,0 +1,3 @@
+# Pidgeotto
+
+Bird Pokémon

@@ -1,0 +1,111 @@
+{
+  "id": "weezing",
+  "nid": "weezing",
+  "name": "Weezing",
+  "genus": "Poison Gas Pokémon",
+  "dexNum": 110,
+  "gen": 1,
+  "region": "kanto",
+  "debutIn": "rb",
+  "type1": "poison",
+  "type2": null,
+  "color": "purple",
+  "abilities": [
+    "levitate",
+    "neutralizinggas",
+    "stench"
+  ],
+  "baseHp": 65,
+  "baseAtk": 90,
+  "baseDef": 120,
+  "baseSpAtk": 85,
+  "baseSpDef": 70,
+  "baseSpeed": 60,
+  "height": 120,
+  "weight": 950,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "weezing-galar"
+  ],
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": false,
+  "canDynamax": true,
+  "canGmax": false,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "evolvesFrom": "koffing",
+  "evoFromLevel": 35,
+  "refs": {
+    "pkApiId": "110",
+    "pkApiFormId": "110",
+    "pkApiFormSlug": "weezing",
+    "smogon": "weezing",
+    "showdown": "weezing",
+    "showdownName": "Weezing",
+    "serebii": "weezing",
+    "bulbapedia": "Weezing"
+  },
+  "i18n": {
+    "en": {
+      "name": "Weezing",
+      "genus": "Poison Gas Pokémon"
+    },
+    "fr": {
+      "name": "Smogogo",
+      "genus": "Pokémon Gaz Mortel"
+    },
+    "de": {
+      "name": "Smogmog",
+      "genus": "Giftwolken-Pokémon"
+    },
+    "es": {
+      "name": "Weezing",
+      "genus": "Pokémon Gas Venenoso"
+    },
+    "esla": {
+      "name": "Weezing",
+      "genus": "Poison Gas Pokémon"
+    },
+    "it": {
+      "name": "Weezing",
+      "genus": "Pokémon Velenuvola"
+    },
+    "pt": {
+      "name": "Weezing",
+      "genus": "Poison Gas Pokémon"
+    },
+    "ja": {
+      "name": "マタドガス",
+      "genus": "どくガスポケモン"
+    },
+    "ko": {
+      "name": "또도가스",
+      "genus": "독가스포켓몬"
+    },
+    "chs": {
+      "name": "双弹瓦斯",
+      "genus": "毒气宝可梦"
+    },
+    "cht": {
+      "name": "雙彈瓦斯",
+      "genus": "毒氣寶可夢"
+    }
+  }
+}

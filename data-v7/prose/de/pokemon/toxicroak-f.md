@@ -1,0 +1,3 @@
+# Toxiquak (Female)
+
+Giftmund-Pokémon

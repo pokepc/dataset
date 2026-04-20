@@ -1,0 +1,3 @@
+# Magikarp
+
+Fish Pokémon

@@ -1,0 +1,3 @@
+# Snibunna (Female)
+
+Stichklauen-Pokémon

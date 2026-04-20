@@ -1,0 +1,3 @@
+# Blastoise
+
+Shellfish Pokémon

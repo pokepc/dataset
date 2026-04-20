@@ -1,0 +1,3 @@
+# Magmar
+
+Brenner-Pokémon

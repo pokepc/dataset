@@ -1,0 +1,3 @@
+# Barbaracle
+
+Pokémon Aggregato

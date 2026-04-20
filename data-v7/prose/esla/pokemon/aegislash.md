@@ -1,0 +1,3 @@
+# Aegislash
+
+Royal Sword Pokémon

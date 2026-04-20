@@ -1,0 +1,3 @@
+# Staraptor (Female)
+
+Predator Pokémon

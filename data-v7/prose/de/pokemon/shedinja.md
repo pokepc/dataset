@@ -1,0 +1,3 @@
+# Ninjatom
+
+Häutungs-Pokémon

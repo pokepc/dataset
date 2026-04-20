@@ -1,0 +1,3 @@
+# Zeraora
+
+Blitzsturm-Pokémon

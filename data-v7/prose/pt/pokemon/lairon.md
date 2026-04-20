@@ -1,0 +1,3 @@
+# Lairon
+
+Iron Armor Pokémon

@@ -1,0 +1,3 @@
+# Mustébouée (Female)
+
+Pokémon Aquabelette

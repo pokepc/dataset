@@ -1,0 +1,3 @@
+# Raichu (Female)
+
+Maus-Pokémon

@@ -1,0 +1,3 @@
+# Ivysaur
+
+Seed Pokémon

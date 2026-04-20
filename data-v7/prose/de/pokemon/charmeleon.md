@@ -1,0 +1,3 @@
+# Glutexo
+
+Flammen-Pokémon

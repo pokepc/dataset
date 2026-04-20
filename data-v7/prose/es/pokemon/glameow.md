@@ -1,0 +1,3 @@
+# Glameow
+
+Pokémon Gastuto

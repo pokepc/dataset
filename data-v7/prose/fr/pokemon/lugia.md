@@ -1,0 +1,3 @@
+# Lugia
+
+Pokémon Plongeon

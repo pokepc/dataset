@@ -1,0 +1,3 @@
+# Tynamo
+
+EleFish Pokémon

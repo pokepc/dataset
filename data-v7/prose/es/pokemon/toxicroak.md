@@ -1,0 +1,3 @@
+# Toxicroak
+
+Pokémon Boca Tóxica

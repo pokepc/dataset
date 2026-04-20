@@ -1,0 +1,3 @@
+# Parasect
+
+Pokémon Hongo

@@ -1,0 +1,3 @@
+# Solgaleo
+
+Sonnenkreis-Pokémon

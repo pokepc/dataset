@@ -1,0 +1,3 @@
+# Stunky
+
+Skunk Pokémon

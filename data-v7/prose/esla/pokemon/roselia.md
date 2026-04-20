@@ -1,0 +1,3 @@
+# Roselia
+
+Thorn Pokémon

@@ -1,0 +1,3 @@
+# Sliggoo
+
+Pokémon Mollusco

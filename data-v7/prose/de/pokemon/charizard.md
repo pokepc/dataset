@@ -1,0 +1,3 @@
+# Glurak
+
+Flammen-Pokémon

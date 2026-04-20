@@ -1,0 +1,3 @@
+# Gulpin (Female)
+
+Stomach Pokémon

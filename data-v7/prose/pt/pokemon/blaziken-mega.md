@@ -1,0 +1,3 @@
+# Mega Blaziken
+
+Blaze Pokémon

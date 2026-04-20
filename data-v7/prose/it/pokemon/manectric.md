@@ -1,0 +1,3 @@
+# Manectric
+
+Pokémon Scossa

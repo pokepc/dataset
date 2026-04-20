@@ -1,0 +1,3 @@
+# Combusken (Female)
+
+わかどりポケモン

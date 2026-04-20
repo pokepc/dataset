@@ -1,0 +1,3 @@
+# Roselia (Female)
+
+Thorn Pokémon

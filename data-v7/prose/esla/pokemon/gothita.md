@@ -1,0 +1,3 @@
+# Gothita
+
+Fixation Pokémon

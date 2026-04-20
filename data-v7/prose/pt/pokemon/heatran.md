@@ -1,0 +1,3 @@
+# Heatran
+
+Lava Dome Pokémon

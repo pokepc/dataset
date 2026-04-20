@@ -1,0 +1,3 @@
+# MégaBlindépique
+
+Pokémon Épinarmure

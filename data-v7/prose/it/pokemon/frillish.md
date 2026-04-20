@@ -1,0 +1,3 @@
+# Frillish
+
+Pokémon Fluttuante

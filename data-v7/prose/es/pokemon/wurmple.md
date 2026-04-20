@@ -1,0 +1,3 @@
+# Wurmple
+
+Pokémon Gusano

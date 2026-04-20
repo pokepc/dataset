@@ -1,0 +1,3 @@
+# Krookodile
+
+Intimidation Pokémon

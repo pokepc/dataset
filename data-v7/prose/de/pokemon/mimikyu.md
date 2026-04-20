@@ -1,0 +1,3 @@
+# Mimigma
+
+Kostümspuk-Pokémon

@@ -1,0 +1,3 @@
+# Growlithe
+
+Puppy Pokémon

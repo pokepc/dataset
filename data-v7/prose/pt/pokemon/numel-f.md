@@ -1,0 +1,3 @@
+# Numel (Female)
+
+Numb Pokémon

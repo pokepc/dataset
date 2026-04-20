@@ -1,0 +1,3 @@
+# Zeraora
+
+Thunderclap Pokémon

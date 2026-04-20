@@ -1,0 +1,3 @@
+# Shedinja
+
+Shed Pokémon

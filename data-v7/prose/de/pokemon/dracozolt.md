@@ -1,0 +1,3 @@
+# Lectragon
+
+Fossil-Pokémon

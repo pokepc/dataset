@@ -1,0 +1,3 @@
+# Kabuto
+
+Shellfish Pokémon

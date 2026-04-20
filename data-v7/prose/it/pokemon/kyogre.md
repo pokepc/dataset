@@ -1,0 +1,3 @@
+# Kyogre
+
+Pokémon Oceano

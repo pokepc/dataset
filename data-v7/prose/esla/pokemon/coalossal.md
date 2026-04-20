@@ -1,0 +1,3 @@
+# Coalossal
+
+Coal Pokémon

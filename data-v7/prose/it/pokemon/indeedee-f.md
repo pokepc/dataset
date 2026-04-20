@@ -1,0 +1,3 @@
+# Indeedee (Femmina)
+
+Pokémon Emozione

@@ -1,0 +1,3 @@
+# Rhyperior (Female)
+
+Pokémon Taladro

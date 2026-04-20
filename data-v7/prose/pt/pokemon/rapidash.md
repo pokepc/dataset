@@ -1,0 +1,3 @@
+# Rapidash
+
+Fire Horse Pokémon

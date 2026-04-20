@@ -1,0 +1,3 @@
+# Gourgeist (Maxi)
+
+Pokémon Zucca

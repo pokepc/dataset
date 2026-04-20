@@ -1,0 +1,3 @@
+# Abra
+
+Pokémon Psico

@@ -1,0 +1,3 @@
+# Uxie
+
+Knowledge Pokémon

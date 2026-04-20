@@ -1,0 +1,3 @@
+# Infamomo
+
+Subjugation Pokémon

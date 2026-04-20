@@ -1,0 +1,3 @@
+# Genesect
+
+Pokémon Paleozoico

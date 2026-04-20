@@ -1,0 +1,3 @@
+# Gabite
+
+Cave Pokémon

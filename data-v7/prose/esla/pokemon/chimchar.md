@@ -1,0 +1,3 @@
+# Chimchar
+
+Chimp Pokémon

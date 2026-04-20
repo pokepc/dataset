@@ -1,0 +1,3 @@
+# Kastadur
+
+Dornfrucht-Pokémon

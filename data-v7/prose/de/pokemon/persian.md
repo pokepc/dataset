@@ -1,0 +1,3 @@
+# Snobilikat
+
+Rassekatzen-Pokémon

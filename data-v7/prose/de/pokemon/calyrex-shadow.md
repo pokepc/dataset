@@ -1,0 +1,3 @@
+# Coronospa (Rappenreiter)
+
+Königs-Pokémon

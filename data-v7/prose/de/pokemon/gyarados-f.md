@@ -1,0 +1,3 @@
+# Garados (Female)
+
+Grausam-Pokémon

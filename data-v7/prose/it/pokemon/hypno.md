@@ -1,0 +1,3 @@
+# Hypno
+
+Pokémon Ipnosi

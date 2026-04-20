@@ -1,0 +1,3 @@
+# Naganadel
+
+Poison Pin Pokémon

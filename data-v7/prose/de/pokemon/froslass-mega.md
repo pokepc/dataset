@@ -1,0 +1,3 @@
+# Mega-Frosdedje
+
+Schneegebiets-Pokémon

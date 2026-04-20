@@ -1,0 +1,3 @@
+# Mega Glimmora
+
+Ore Pokémon

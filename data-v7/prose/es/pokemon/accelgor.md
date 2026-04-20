@@ -1,0 +1,3 @@
+# Accelgor
+
+Pokémon Sincaparazón

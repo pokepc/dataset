@@ -1,0 +1,3 @@
+# Ampharos
+
+Pokémon Luce

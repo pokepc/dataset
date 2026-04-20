@@ -1,0 +1,3 @@
+# Steelix
+
+Pokémon Serpiente Férrea

@@ -1,0 +1,3 @@
+# Mega Sceptile
+
+Forest Pokémon

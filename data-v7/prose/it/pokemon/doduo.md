@@ -1,0 +1,3 @@
+# Doduo
+
+Pokémon Biuccello

@@ -1,0 +1,3 @@
+# Zarude (Papa)
+
+Finsteraffen-Pokémon

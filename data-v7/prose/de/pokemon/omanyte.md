@@ -1,0 +1,3 @@
+# Amonitas
+
+Spiralen-Pokémon

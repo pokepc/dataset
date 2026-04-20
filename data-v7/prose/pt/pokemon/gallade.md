@@ -1,0 +1,3 @@
+# Gallade
+
+Blade Pokémon

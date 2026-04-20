@@ -1,0 +1,3 @@
+# Inteleon (Gigantamax Form)
+
+エージェントポケモン

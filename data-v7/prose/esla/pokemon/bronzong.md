@@ -1,0 +1,3 @@
+# Bronzong
+
+Bronze Bell Pokémon

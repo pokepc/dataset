@@ -1,0 +1,3 @@
+# Scizor (Female)
+
+Pincer Pokémon

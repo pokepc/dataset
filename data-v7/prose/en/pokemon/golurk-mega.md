@@ -1,0 +1,3 @@
+# Mega Golurk
+
+Automaton Pokémon

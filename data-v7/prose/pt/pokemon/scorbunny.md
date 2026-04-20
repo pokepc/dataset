@@ -1,0 +1,3 @@
+# Scorbunny
+
+Rabbit Pokémon

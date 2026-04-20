@@ -1,0 +1,3 @@
+# Mega Kangaskhan
+
+Pokémon Genitore

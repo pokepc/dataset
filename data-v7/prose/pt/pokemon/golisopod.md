@@ -1,0 +1,3 @@
+# Golisopod
+
+Hard Scale Pokémon

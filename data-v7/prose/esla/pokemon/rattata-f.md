@@ -1,0 +1,3 @@
+# Rattata (Female)
+
+Mouse Pokémon

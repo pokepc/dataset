@@ -1,0 +1,3 @@
+# Flamara
+
+Feuer-Pokémon

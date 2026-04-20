@@ -1,0 +1,3 @@
+# Unown (G)
+
+Pokémon Símbolo

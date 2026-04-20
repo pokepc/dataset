@@ -1,0 +1,3 @@
+# Pupitar
+
+Pokémon Caparazón

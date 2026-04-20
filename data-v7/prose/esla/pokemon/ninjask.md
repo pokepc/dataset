@@ -1,0 +1,3 @@
+# Ninjask
+
+Ninja Pokémon

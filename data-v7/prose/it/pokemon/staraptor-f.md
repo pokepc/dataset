@@ -1,0 +1,3 @@
+# Staraptor (Female)
+
+Pokémon Rapace

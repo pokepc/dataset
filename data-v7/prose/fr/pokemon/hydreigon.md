@@ -1,0 +1,3 @@
+# Trioxhydre
+
+Pokémon Brutal

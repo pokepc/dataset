@@ -1,0 +1,3 @@
+# Lampent
+
+Pokémon Farolillo

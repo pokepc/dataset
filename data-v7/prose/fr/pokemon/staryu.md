@@ -1,0 +1,3 @@
+# Stari
+
+Pokémon Étoile

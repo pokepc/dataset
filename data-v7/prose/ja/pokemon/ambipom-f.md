@@ -1,0 +1,3 @@
+# Ambipom (Female)
+
+おながポケモン

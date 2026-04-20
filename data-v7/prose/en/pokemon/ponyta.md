@@ -1,0 +1,3 @@
+# Ponyta
+
+Fire Horse Pokémon

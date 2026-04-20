@@ -1,0 +1,3 @@
+# Gallade
+
+Pokémon Cuchilla

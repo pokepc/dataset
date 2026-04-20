@@ -1,0 +1,3 @@
+# Noibat
+
+Pokémon Onda Sónica

@@ -1,0 +1,3 @@
+# Gothorita
+
+Pokémon Raggiro

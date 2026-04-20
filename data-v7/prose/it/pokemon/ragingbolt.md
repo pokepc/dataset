@@ -1,0 +1,3 @@
+# Furiatonante
+
+Paradox Pokémon

@@ -1,0 +1,3 @@
+# Rapidash
+
+Pokémon Cavalfuoco

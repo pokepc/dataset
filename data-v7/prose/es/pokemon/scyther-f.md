@@ -1,0 +1,3 @@
+# Scyther (Female)
+
+Pokémon Mantis

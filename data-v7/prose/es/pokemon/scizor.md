@@ -1,0 +1,3 @@
+# Scizor
+
+Pokémon Tenaza

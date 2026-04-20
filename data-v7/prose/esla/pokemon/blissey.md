@@ -1,0 +1,3 @@
+# Blissey
+
+Happiness Pokémon

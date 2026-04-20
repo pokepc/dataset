@@ -1,0 +1,3 @@
+# Durengard (Klingenform)
+
+Königsklingen-Pokémon

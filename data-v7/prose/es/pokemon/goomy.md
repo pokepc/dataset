@@ -1,0 +1,3 @@
+# Goomy
+
+Pokémon Molusco

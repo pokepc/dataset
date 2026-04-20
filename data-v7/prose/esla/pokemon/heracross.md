@@ -1,0 +1,3 @@
+# Heracross
+
+Single Horn Pokémon

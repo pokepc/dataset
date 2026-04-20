@@ -1,0 +1,3 @@
+# Tyrunt
+
+Pokémon Heredero

@@ -1,0 +1,3 @@
+# Sucroquin
+
+Pokémon Confiserie

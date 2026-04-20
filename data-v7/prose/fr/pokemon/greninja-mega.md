@@ -1,0 +1,3 @@
+# MégaAmphinobi
+
+Pokémon Ninja

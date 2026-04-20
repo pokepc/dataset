@@ -1,0 +1,3 @@
+# Xatu
+
+Mystic Pokémon

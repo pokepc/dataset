@@ -1,0 +1,3 @@
+# Lampi
+
+Angler-Pokémon

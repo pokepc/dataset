@@ -1,0 +1,3 @@
+# Flambusard
+
+Pokémon Fournaise

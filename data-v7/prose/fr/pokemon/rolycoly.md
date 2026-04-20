@@ -1,0 +1,3 @@
+# Charbi
+
+Pokémon Charbon

@@ -1,0 +1,3 @@
+# Articuno
+
+Freeze Pokémon

@@ -1,0 +1,3 @@
+# Magikarp
+
+Pokémon Pesce

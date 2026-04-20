@@ -1,0 +1,3 @@
+# Gothitelle
+
+Astral Body Pokémon

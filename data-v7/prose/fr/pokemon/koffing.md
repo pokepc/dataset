@@ -1,0 +1,3 @@
+# Smogo
+
+Pokémon Gaz Mortel

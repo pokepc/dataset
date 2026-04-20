@@ -1,0 +1,3 @@
+# Charjabug
+
+Pokémon Batería

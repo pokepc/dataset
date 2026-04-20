@@ -1,0 +1,3 @@
+# Mega-Tectass
+
+Rüstungs-Pokémon

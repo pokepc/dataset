@@ -1,0 +1,3 @@
+# Dewott
+
+Discipline Pokémon

@@ -1,0 +1,3 @@
+# Ho-Oh
+
+Pokémon Arcobaleno

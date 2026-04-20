@@ -1,0 +1,3 @@
+# Briduradon
+
+Alloy Pokémon

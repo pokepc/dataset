@@ -1,0 +1,3 @@
+# Trikephalo
+
+Brutal-Pokémon

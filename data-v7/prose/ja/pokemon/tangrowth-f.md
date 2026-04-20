@@ -1,0 +1,3 @@
+# Tangrowth (Female)
+
+ツルじょうポケモン

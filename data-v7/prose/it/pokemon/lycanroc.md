@@ -1,0 +1,3 @@
+# Lycanroc
+
+Pokémon Lupo

@@ -1,0 +1,3 @@
+# Kapu-Kime
+
+Schutzpatron-Pokémon

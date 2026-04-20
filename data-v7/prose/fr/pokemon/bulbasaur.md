@@ -1,0 +1,3 @@
+# Bulbizarre
+
+Pokémon Graine

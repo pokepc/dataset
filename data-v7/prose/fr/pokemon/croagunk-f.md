@@ -1,0 +1,3 @@
+# Cradopaud (Female)
+
+Pokémon Toxique

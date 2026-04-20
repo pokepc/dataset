@@ -1,0 +1,3 @@
+# Luxtra
+
+Glühaugen-Pokémon

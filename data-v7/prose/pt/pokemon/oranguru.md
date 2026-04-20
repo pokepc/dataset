@@ -1,0 +1,3 @@
+# Oranguru
+
+Sage Pokémon

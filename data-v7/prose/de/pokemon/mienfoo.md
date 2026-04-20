@@ -1,0 +1,3 @@
+# Lin-Fu
+
+Kampfkünste-Pokémon

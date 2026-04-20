@@ -1,0 +1,3 @@
+# Rabigator
+
+Abschreckungs-Pokémon

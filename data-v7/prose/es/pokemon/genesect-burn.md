@@ -1,0 +1,3 @@
+# Genesect (PiroROM)
+
+Pokémon Paleozoico

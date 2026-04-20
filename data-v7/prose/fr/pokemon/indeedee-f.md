@@ -1,0 +1,3 @@
+# Wimessir (Femelle)
+
+Pokémon Émotion

@@ -1,0 +1,3 @@
+# Kobalium
+
+Eisenkern-Pokémon

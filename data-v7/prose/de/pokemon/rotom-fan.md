@@ -1,0 +1,3 @@
+# Wirbel-Rotom
+
+Plasma-Pokémon

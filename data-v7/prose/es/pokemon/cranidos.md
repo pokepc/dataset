@@ -1,0 +1,3 @@
+# Cranidos
+
+Pokémon Cabezazo

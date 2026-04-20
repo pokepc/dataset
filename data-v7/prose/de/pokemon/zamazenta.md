@@ -1,0 +1,3 @@
+# Zamazenta
+
+Krieger-Pokémon

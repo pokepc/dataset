@@ -1,0 +1,3 @@
+# Pumpkaboo (Maxi)
+
+Pokémon Zucca

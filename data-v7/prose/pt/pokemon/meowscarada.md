@@ -1,0 +1,3 @@
+# Meowscarada
+
+Magician Pokémon

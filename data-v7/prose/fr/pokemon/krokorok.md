@@ -1,0 +1,3 @@
+# Escroco
+
+Pokémon Croco Sable

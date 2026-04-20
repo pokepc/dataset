@@ -1,0 +1,3 @@
+# Golbat (Female)
+
+Pokémon Murciélago

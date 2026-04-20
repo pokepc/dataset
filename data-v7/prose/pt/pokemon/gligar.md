@@ -1,0 +1,3 @@
+# Gligar
+
+Fly Scorpion Pokémon

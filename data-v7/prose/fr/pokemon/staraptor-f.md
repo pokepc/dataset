@@ -1,0 +1,3 @@
+# Étouraptor (Female)
+
+Pokémon Rapace

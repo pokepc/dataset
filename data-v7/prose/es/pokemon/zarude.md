@@ -1,0 +1,3 @@
+# Zarude
+
+Pokémon Simiestro

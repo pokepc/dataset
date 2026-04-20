@@ -1,0 +1,3 @@
+# Goldini (Female)
+
+Goldfisch-Pokémon

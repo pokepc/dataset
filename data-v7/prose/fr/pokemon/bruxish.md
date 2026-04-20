@@ -1,0 +1,3 @@
+# Denticrisse
+
+Pokémon Grincedent

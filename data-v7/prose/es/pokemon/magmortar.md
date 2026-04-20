@@ -1,0 +1,3 @@
+# Magmortar
+
+Pokémon Explosión

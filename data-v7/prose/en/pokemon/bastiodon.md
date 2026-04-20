@@ -1,0 +1,3 @@
+# Bastiodon
+
+Shield Pokémon

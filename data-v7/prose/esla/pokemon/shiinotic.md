@@ -1,0 +1,3 @@
+# Shiinotic
+
+Illuminating Pokémon

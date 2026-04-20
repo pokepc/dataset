@@ -1,0 +1,3 @@
+# Finizen
+
+Dolphin Pokémon

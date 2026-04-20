@@ -1,0 +1,3 @@
+# Sepiatop
+
+Pokémon Rotation

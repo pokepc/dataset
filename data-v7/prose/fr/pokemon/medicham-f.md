@@ -1,0 +1,3 @@
+# Charmina (Female)
+
+Pokémon Méditation

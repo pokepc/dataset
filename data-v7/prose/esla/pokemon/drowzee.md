@@ -1,0 +1,3 @@
+# Drowzee
+
+Hypnosis Pokémon

@@ -1,0 +1,3 @@
+# Trubbish
+
+Trash Bag Pokémon

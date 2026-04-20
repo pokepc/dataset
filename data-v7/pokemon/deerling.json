@@ -1,0 +1,113 @@
+{
+  "id": "deerling",
+  "nid": "deerling",
+  "name": "Deerling",
+  "genus": "Season Pokémon",
+  "dexNum": 585,
+  "gen": 5,
+  "region": "unova",
+  "debutIn": "bw",
+  "type1": "normal",
+  "type2": "grass",
+  "color": "pink",
+  "abilities": [
+    "chlorophyll",
+    "sapsipper",
+    "serenegrace"
+  ],
+  "baseHp": 60,
+  "baseAtk": 60,
+  "baseDef": 50,
+  "baseSpAtk": 40,
+  "baseSpDef": 50,
+  "baseSpeed": 75,
+  "height": 60,
+  "weight": 1950,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "formId": "spring",
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "deerling-summer",
+    "deerling-autumn",
+    "deerling-winter"
+  ],
+  "formsDesc": "Forms only affect appearance.  Deerling switches forms to match the season if it is in the party upon loading the game.\n\nIf the season has changed since the game was saved, and the game was saved indoors, the previous save's season will be displayed upon loading the game, and Deerling will change according to that season.  Upon stepping outdoors, the change of season is displayed and Deerling will change again.",
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": false,
+  "canDynamax": true,
+  "canGmax": false,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "refs": {
+    "pkApiId": "585",
+    "pkApiFormId": "585",
+    "pkApiFormSlug": "deerling-spring",
+    "smogon": "deerling",
+    "showdown": "deerling",
+    "showdownName": "Deerling",
+    "serebii": "deerling",
+    "bulbapedia": "Deerling"
+  },
+  "i18n": {
+    "en": {
+      "name": "Deerling",
+      "genus": "Season Pokémon"
+    },
+    "fr": {
+      "name": "Vivaldaim",
+      "genus": "Pokémon Saison"
+    },
+    "de": {
+      "name": "Sesokitz",
+      "genus": "Jahreszeit"
+    },
+    "es": {
+      "name": "Deerling",
+      "genus": "Pokémon Estacional"
+    },
+    "esla": {
+      "name": "Deerling",
+      "genus": "Season Pokémon"
+    },
+    "it": {
+      "name": "Deerling",
+      "genus": "Pokémon Stagione"
+    },
+    "pt": {
+      "name": "Deerling",
+      "genus": "Season Pokémon"
+    },
+    "ja": {
+      "name": "シキジカ",
+      "genus": "きせつポケモン"
+    },
+    "ko": {
+      "name": "사철록",
+      "genus": "계절포켓몬"
+    },
+    "chs": {
+      "name": "四季鹿",
+      "genus": "季节宝可梦"
+    },
+    "cht": {
+      "name": "四季鹿",
+      "genus": "季節寶可夢"
+    }
+  }
+}

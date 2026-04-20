@@ -1,0 +1,3 @@
+# Croagunk (Female)
+
+どくづきポケモン

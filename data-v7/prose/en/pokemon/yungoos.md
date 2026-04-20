@@ -1,0 +1,3 @@
+# Yungoos
+
+Loitering Pokémon

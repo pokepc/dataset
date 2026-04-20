@@ -1,0 +1,3 @@
+# Medicham (Female)
+
+Meditate Pokémon

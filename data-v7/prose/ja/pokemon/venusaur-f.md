@@ -1,0 +1,3 @@
+# Venusaur (Female)
+
+たねポケモン

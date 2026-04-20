@@ -1,0 +1,3 @@
+# Buzzwole
+
+Pokémon Gonfiacorpo

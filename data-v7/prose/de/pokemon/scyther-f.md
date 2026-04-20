@@ -1,0 +1,3 @@
+# Sichlor (Female)
+
+Mantis-Pokémon

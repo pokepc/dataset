@@ -1,0 +1,3 @@
+# Furfrou
+
+Poodle Pokémon

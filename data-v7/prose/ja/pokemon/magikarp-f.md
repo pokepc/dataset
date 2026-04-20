@@ -1,0 +1,3 @@
+# Magikarp (Female)
+
+さかなポケモン

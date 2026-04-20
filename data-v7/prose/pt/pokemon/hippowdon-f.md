@@ -1,0 +1,3 @@
+# Hippowdon (Female)
+
+Heavyweight Pokémon

@@ -1,0 +1,3 @@
+# Hypno (Female)
+
+Pokémon Hipnosis

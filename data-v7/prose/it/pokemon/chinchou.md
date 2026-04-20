@@ -1,0 +1,3 @@
+# Chinchou
+
+Pokémon Pescatore

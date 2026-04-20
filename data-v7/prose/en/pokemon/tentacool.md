@@ -1,0 +1,3 @@
+# Tentacool
+
+Jellyfish Pokémon

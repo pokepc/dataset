@@ -1,0 +1,3 @@
+# Goodra
+
+Dragon Pokémon

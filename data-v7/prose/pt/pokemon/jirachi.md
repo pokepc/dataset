@@ -1,0 +1,3 @@
+# Jirachi
+
+Wish Pokémon

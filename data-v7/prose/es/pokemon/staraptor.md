@@ -1,0 +1,3 @@
+# Staraptor
+
+Pokémon Depredador

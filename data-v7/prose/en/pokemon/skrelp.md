@@ -1,0 +1,3 @@
+# Skrelp
+
+Mock Kelp Pokémon

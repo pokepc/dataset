@@ -1,0 +1,3 @@
+# Giratina
+
+Pokémon Ribelle

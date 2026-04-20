@@ -1,0 +1,3 @@
+# Cofagrigus
+
+Pokémon Bara

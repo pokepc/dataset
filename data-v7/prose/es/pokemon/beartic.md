@@ -1,0 +1,3 @@
+# Beartic
+
+Pokémon Glaciación

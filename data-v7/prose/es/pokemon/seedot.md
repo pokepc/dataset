@@ -1,0 +1,3 @@
+# Seedot
+
+Pokémon Bellota

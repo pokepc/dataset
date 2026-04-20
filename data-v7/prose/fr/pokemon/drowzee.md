@@ -1,0 +1,3 @@
+# Soporifik
+
+Pokémon Hypnose

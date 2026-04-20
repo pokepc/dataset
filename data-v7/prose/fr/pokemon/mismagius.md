@@ -1,0 +1,3 @@
+# Magirêve
+
+Pokémon Magique

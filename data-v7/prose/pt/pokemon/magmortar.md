@@ -1,0 +1,3 @@
+# Magmortar
+
+Blast Pokémon

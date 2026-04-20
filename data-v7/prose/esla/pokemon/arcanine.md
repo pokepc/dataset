@@ -1,0 +1,3 @@
+# Arcanine
+
+Legendary Pokémon

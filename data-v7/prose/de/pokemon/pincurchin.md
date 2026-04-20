@@ -1,0 +1,3 @@
+# Britzigel
+
+Seeigel-Pokémon

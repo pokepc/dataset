@@ -1,0 +1,112 @@
+{
+  "id": "rotom",
+  "nid": "rotom",
+  "name": "Rotom",
+  "genus": "Plasma Pokémon",
+  "dexNum": 479,
+  "gen": 4,
+  "region": "sinnoh",
+  "debutIn": "dp",
+  "type1": "electric",
+  "type2": "ghost",
+  "color": "red",
+  "abilities": [
+    "levitate"
+  ],
+  "baseHp": 50,
+  "baseAtk": 50,
+  "baseDef": 77,
+  "baseSpAtk": 95,
+  "baseSpDef": 77,
+  "baseSpeed": 91,
+  "height": 30,
+  "weight": 30,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "rotom-heat",
+    "rotom-wash",
+    "rotom-frost",
+    "rotom-fan",
+    "rotom-mow"
+  ],
+  "formsDesc": "Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.  In Generation IV, all forms are Electric/Ghost type.\n\nWhen switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns thunder shock to avoid having no moves.\n\nAppliances for switching Rotom's form can be found in the following locations, depending on the game:\n\n* Platinum: In the Team Galactic Eterna Building.  Requires a secret key.\n* HeartGold and SoulSilver: In the Silph Co. Office Building.  Enter the building when walking with Rotom and enter the broken elevator.\n* Black and White 1 & 2: In Shopping Mall Nine.  Found in boxes in a storage room on the first floor on the far right.",
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": true,
+  "canDynamax": true,
+  "canGmax": false,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "refs": {
+    "pkApiId": "479",
+    "pkApiFormId": "479",
+    "pkApiFormSlug": "rotom",
+    "smogon": "rotom",
+    "showdown": "rotom",
+    "showdownName": "Rotom",
+    "serebii": "rotom",
+    "bulbapedia": "Rotom"
+  },
+  "i18n": {
+    "en": {
+      "name": "Rotom",
+      "genus": "Plasma Pokémon"
+    },
+    "fr": {
+      "name": "Motisma",
+      "genus": "Pokémon Plasma"
+    },
+    "de": {
+      "name": "Rotom",
+      "genus": "Plasma-Pokémon"
+    },
+    "es": {
+      "name": "Rotom",
+      "genus": "Pokémon Plasma"
+    },
+    "esla": {
+      "name": "Rotom",
+      "genus": "Plasma Pokémon"
+    },
+    "it": {
+      "name": "Rotom",
+      "genus": "Pokémon Plasma"
+    },
+    "pt": {
+      "name": "Rotom",
+      "genus": "Plasma Pokémon"
+    },
+    "ja": {
+      "name": "ロトム",
+      "genus": "プラズマポケモン"
+    },
+    "ko": {
+      "name": "로토무",
+      "genus": "플라스마포켓몬"
+    },
+    "chs": {
+      "name": "洛托姆",
+      "genus": "等离子宝可梦"
+    },
+    "cht": {
+      "name": "洛托姆",
+      "genus": "等離子寶可夢"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Blanas (Female)
+
+Hinterlist-Pokémon

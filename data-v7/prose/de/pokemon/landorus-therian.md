@@ -1,0 +1,3 @@
+# Demeteros (Tiergeistform)
+
+Reichtums-Pokémon

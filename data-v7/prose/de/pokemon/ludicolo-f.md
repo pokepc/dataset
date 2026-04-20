@@ -1,0 +1,3 @@
+# Kappalores (Female)
+
+Sorglos-Pokémon

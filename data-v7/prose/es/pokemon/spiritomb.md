@@ -1,0 +1,3 @@
+# Spiritomb
+
+Pokémon Prohibido

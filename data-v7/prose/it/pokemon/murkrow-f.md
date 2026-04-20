@@ -1,0 +1,3 @@
+# Murkrow (Female)
+
+Pokémon Oscurità

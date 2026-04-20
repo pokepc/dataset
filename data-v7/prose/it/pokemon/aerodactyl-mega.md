@@ -1,0 +1,3 @@
+# Mega Aerodactyl
+
+Pokémon Fossile

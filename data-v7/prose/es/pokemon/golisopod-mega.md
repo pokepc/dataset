@@ -1,0 +1,3 @@
+# Mega Golisopod
+
+Pokémon Blindaje

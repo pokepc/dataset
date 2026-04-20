@@ -1,0 +1,3 @@
+# Rotom Calor
+
+Pokémon Plasma

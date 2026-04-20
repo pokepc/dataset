@@ -1,0 +1,3 @@
+# Lixy (Female)
+
+Pokémon Flash

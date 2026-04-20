@@ -1,0 +1,3 @@
+# Dartignis
+
+Funkenregen-Pokémon

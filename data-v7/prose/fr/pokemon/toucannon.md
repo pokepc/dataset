@@ -1,0 +1,3 @@
+# Bazoucan
+
+Pokémon Canon

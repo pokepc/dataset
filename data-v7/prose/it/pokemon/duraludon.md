@@ -1,0 +1,3 @@
+# Duraludon
+
+Pokémon Metallolega

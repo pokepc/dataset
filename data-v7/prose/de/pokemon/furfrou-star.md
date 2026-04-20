@@ -1,0 +1,3 @@
+# Coiffwaff (Sternchenschnitt)
+
+Pudel

@@ -1,0 +1,3 @@
+# Goldeen
+
+Pokémon Pescerosso

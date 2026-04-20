@@ -1,0 +1,3 @@
+# Girafarig (Female)
+
+Pokémon Lungocollo

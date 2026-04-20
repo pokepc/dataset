@@ -1,0 +1,3 @@
+# Swablu
+
+Pokémon Alidicotone

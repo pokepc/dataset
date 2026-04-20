@@ -1,0 +1,3 @@
+# Kommo-o
+
+Pokémon Escamas

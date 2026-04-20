@@ -1,0 +1,3 @@
+# Sterndu
+
+Sternform-Pokémon

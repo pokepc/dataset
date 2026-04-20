@@ -1,0 +1,3 @@
+# Froakie
+
+Bubble Frog Pokémon

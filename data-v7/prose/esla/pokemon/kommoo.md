@@ -1,0 +1,3 @@
+# Kommo-o
+
+Scaly Pokémon

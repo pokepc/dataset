@@ -1,0 +1,3 @@
+# Swablu
+
+Cotton Bird Pokémon

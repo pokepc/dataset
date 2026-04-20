@@ -1,0 +1,3 @@
+# Mamutel
+
+Doppelstoßzahn-Pokémon

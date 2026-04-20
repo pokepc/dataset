@@ -1,0 +1,3 @@
+# Psiaugon (Weiblich)
+
+Fassungs-Pokémon

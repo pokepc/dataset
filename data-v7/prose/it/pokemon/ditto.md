@@ -1,0 +1,3 @@
+# Ditto
+
+Pokémon Mutante

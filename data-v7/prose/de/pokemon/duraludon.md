@@ -1,0 +1,3 @@
+# Duraludon
+
+Legierungs-Pokémon

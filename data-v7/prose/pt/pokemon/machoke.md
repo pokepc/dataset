@@ -1,0 +1,3 @@
+# Machoke
+
+Superpower Pokémon

@@ -1,0 +1,3 @@
+# Sudowoodo
+
+Pokémon Imitación

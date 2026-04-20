@@ -1,0 +1,3 @@
+# Démolosse
+
+Pokémon Sombre

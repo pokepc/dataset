@@ -1,0 +1,3 @@
+# Kommandutan
+
+Weisheits-Pokémon

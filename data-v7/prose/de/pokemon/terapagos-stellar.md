@@ -1,0 +1,3 @@
+# Terapagos (Stellarform)
+
+Tera Pokémon

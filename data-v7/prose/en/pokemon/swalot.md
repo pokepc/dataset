@@ -1,0 +1,3 @@
+# Swalot
+
+Poison Bag Pokémon

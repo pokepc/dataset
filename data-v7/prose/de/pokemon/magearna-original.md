@@ -1,0 +1,3 @@
+# Magearna (Originalfarbe)
+
+Fabrikats-Pokémon

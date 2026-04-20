@@ -1,0 +1,3 @@
+# Terapagos
+
+Tera Pokémon

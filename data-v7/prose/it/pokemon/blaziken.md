@@ -1,0 +1,3 @@
+# Blaziken
+
+Pokémon Vampe

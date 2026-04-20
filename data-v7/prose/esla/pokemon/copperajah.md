@@ -1,0 +1,3 @@
+# Copperajah
+
+Copperderm Pokémon

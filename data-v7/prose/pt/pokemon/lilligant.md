@@ -1,0 +1,3 @@
+# Lilligant
+
+Flowering Pokémon

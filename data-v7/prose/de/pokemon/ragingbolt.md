@@ -1,0 +1,3 @@
+# Furienblitz
+
+Paradox Pokémon

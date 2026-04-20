@@ -1,0 +1,3 @@
+# Relicanth
+
+Pokémon Longévité

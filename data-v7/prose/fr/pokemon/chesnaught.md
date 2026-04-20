@@ -1,0 +1,3 @@
+# Blindépique
+
+Pokémon Épinarmure

@@ -1,0 +1,3 @@
+# Omanyte
+
+Spiral Pokémon

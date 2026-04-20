@@ -1,0 +1,3 @@
+# Magneton
+
+Magnet Pokémon

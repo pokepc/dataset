@@ -1,0 +1,3 @@
+# Grimer
+
+Pokémon Lodo

@@ -1,0 +1,3 @@
+# Kinoso (Sonnenform)
+
+Blüten-Pokémon

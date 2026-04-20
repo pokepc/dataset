@@ -1,0 +1,3 @@
+# Boldore
+
+Ore Pokémon

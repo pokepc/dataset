@@ -1,0 +1,3 @@
+# Zarude (Papá)
+
+Pokémon Simiestro

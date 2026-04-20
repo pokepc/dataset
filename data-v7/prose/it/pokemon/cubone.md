@@ -1,0 +1,3 @@
+# Cubone
+
+Pokémon Solitario

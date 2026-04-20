@@ -1,0 +1,3 @@
+# Dratini
+
+Dragon Pokémon

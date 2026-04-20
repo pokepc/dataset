@@ -1,0 +1,3 @@
+# Sidérella
+
+Pokémon Cosmique

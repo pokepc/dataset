@@ -1,0 +1,3 @@
+# イイネイヌ
+
+Retainer Pokémon

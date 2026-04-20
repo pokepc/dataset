@@ -1,0 +1,3 @@
+# Mega Golurk
+
+Pokémon Statuanimata

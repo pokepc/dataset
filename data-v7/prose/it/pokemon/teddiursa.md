@@ -1,0 +1,3 @@
+# Teddiursa
+
+Pokémon Orsetto

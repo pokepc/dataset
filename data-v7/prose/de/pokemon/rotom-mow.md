@@ -1,0 +1,3 @@
+# Schneid-Rotom
+
+Plasma-Pokémon

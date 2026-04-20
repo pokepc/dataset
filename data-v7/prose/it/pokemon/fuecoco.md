@@ -1,0 +1,3 @@
+# Fuecoco
+
+Fire Croc Pokémon

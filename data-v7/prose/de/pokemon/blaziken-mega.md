@@ -1,0 +1,3 @@
+# Mega-Lohgock
+
+Großbrand-Pokémon

@@ -1,0 +1,3 @@
+# Tatsugiri
+
+Mimicry Pokémon

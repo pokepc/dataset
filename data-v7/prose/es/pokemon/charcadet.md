@@ -1,0 +1,3 @@
+# Charcadet
+
+Fire Child Pokémon

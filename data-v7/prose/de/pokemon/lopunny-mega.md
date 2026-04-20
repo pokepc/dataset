@@ -1,0 +1,3 @@
+# Mega-Schlapor
+
+Hasen-Pokémon

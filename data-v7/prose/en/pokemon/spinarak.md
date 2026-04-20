@@ -1,0 +1,3 @@
+# Spinarak
+
+String Spit Pokémon

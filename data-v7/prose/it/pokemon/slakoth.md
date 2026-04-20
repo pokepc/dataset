@@ -1,0 +1,3 @@
+# Slakoth
+
+Pokémon Ozioso

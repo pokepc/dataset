@@ -1,0 +1,3 @@
+# Frillish (Female)
+
+Pokémon Ingrávido

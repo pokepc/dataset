@@ -1,0 +1,3 @@
+# Politoed
+
+Frog Pokémon

@@ -1,0 +1,3 @@
+# Medicham
+
+Meditate Pokémon

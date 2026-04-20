@@ -1,0 +1,3 @@
+# Golurk
+
+Pokémon Statuanimata

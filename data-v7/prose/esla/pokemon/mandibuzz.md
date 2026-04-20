@@ -1,0 +1,3 @@
+# Mandibuzz
+
+Bone Vulture Pokémon

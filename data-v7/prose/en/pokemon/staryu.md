@@ -1,0 +1,3 @@
+# Staryu
+
+Star Shape Pokémon

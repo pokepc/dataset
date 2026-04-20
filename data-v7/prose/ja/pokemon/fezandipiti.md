@@ -1,0 +1,3 @@
+# キチキギス
+
+Retainer Pokémon

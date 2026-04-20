@@ -1,0 +1,3 @@
+# Bronzong
+
+Pokémon Campana Bronce

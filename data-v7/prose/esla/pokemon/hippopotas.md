@@ -1,0 +1,3 @@
+# Hippopotas
+
+Hippo Pokémon

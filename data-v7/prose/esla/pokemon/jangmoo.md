@@ -1,0 +1,3 @@
+# Jangmo-o
+
+Scaly Pokémon

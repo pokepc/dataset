@@ -1,0 +1,3 @@
+# Feebas
+
+Fish Pokémon

@@ -1,0 +1,3 @@
+# Scoppel
+
+Baugräber-Pokémon

@@ -1,0 +1,3 @@
+# Clefable
+
+Fairy Pokémon

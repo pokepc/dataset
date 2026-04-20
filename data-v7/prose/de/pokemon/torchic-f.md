@@ -1,0 +1,3 @@
+# Flemmli (Female)
+
+Küken-Pokémon

@@ -1,0 +1,3 @@
+# Golisopod
+
+Pokémon Blindaje

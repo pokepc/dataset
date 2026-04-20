@@ -1,0 +1,3 @@
+# Megalon
+
+Grips-Pokémon

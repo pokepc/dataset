@@ -1,0 +1,3 @@
+# Bruxish
+
+Gnash Teeth Pokémon

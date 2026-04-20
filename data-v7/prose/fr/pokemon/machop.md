@@ -1,0 +1,3 @@
+# Machoc
+
+Pokémon Colosse

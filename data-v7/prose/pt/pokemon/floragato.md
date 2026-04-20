@@ -1,0 +1,3 @@
+# Floragato
+
+Grass Cat Pokémon

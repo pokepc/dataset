@@ -1,0 +1,3 @@
+# Swampert
+
+Pokémon Fango Pesce

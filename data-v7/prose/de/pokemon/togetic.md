@@ -1,0 +1,3 @@
+# Togetic
+
+Freuden-Pokémon

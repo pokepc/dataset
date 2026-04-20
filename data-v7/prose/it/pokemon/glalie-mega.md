@@ -1,0 +1,3 @@
+# Mega Glalie
+
+Pokémon Tuttomuso

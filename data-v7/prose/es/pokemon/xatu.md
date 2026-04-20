@@ -1,0 +1,3 @@
+# Xatu
+
+Pokémon Místico

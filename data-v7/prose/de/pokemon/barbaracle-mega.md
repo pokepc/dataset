@@ -1,0 +1,3 @@
+# Mega-Thanathora
+
+Ballungs-Pokémon

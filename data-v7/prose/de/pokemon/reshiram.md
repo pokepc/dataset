@@ -1,0 +1,3 @@
+# Reshiram
+
+Wahres Weiß-Pokémon

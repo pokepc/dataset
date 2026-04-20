@@ -1,0 +1,3 @@
+# Kyurem
+
+Boundary Pokémon

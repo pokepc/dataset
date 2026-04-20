@@ -1,0 +1,3 @@
+# Kupfanti
+
+Kupferfant-Pokémon

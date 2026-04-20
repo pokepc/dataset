@@ -1,0 +1,3 @@
+# Incineroar
+
+Pokémon Rudo

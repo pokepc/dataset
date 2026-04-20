@@ -1,0 +1,3 @@
+# Slugma
+
+Pokémon Lava

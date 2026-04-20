@@ -1,0 +1,3 @@
+# MégaMewtwo X
+
+Pokémon Génétique

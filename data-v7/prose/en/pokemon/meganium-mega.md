@@ -1,0 +1,3 @@
+# Mega Meganium
+
+Herb Pokémon

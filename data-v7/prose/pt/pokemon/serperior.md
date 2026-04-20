@@ -1,0 +1,3 @@
+# Serperior
+
+Regal Pokémon

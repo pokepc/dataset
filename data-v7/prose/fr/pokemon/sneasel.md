@@ -1,0 +1,3 @@
+# Farfuret
+
+Pokémon Grifacérée

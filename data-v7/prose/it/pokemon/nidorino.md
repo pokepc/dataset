@@ -1,0 +1,3 @@
+# Nidorino
+
+Pokémon Velenago

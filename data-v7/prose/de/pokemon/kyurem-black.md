@@ -1,0 +1,3 @@
+# Schwarzes Kyurem
+
+Schwellen-Pokémon

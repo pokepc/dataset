@@ -1,0 +1,3 @@
+# Mega Glalie
+
+Face Pokémon

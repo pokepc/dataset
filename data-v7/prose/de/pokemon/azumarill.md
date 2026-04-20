@@ -1,0 +1,3 @@
+# Azumarill
+
+Aquahasen-Pokémon

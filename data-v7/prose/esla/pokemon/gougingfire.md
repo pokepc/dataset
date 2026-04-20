@@ -1,0 +1,3 @@
+# Gouging Fire
+
+Paradox Pokémon

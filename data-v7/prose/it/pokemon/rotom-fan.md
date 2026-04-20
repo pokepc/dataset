@@ -1,0 +1,3 @@
+# Rotom Vortice
+
+Pokémon Plasma

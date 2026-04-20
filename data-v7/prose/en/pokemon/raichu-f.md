@@ -1,0 +1,3 @@
+# Raichu (Female)
+
+Mouse Pokémon

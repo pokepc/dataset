@@ -1,0 +1,3 @@
+# Empoleon
+
+Pokémon Imperatore

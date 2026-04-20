@@ -1,0 +1,3 @@
+# Mega-Diancie
+
+Edelstein-Pokémon

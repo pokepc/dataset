@@ -1,0 +1,3 @@
+# Genesect (CrioROM)
+
+Pokémon Paleozoico

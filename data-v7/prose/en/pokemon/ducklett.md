@@ -1,0 +1,3 @@
+# Ducklett
+
+Water Bird Pokémon

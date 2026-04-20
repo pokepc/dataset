@@ -1,0 +1,3 @@
+# Bibarel
+
+Beaver Pokémon

@@ -1,0 +1,3 @@
+# Frigibax
+
+Ice Fin Pokémon

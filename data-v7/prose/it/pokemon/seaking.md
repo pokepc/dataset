@@ -1,0 +1,3 @@
+# Seaking
+
+Pokémon Pescerosso

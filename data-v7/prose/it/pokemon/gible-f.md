@@ -1,0 +1,3 @@
+# Gible (Female)
+
+Pokémon Squaloterra

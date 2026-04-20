@@ -1,0 +1,3 @@
+# Kricketune
+
+Cricket Pokémon

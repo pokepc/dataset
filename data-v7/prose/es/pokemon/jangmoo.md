@@ -1,0 +1,3 @@
+# Jangmo-o
+
+Pokémon Escamas

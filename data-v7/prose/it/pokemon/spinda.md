@@ -1,0 +1,3 @@
+# Spinda
+
+Pokémon Macchipanda

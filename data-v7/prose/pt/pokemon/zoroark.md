@@ -1,0 +1,3 @@
+# Zoroark
+
+Illusion Fox Pokémon

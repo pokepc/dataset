@@ -1,0 +1,3 @@
+# Milotic (Female)
+
+Pokémon Tenerezza

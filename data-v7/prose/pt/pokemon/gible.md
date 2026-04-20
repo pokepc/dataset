@@ -1,0 +1,3 @@
+# Gible
+
+Land Shark Pokémon

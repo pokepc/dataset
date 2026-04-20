@@ -1,0 +1,3 @@
+# Électhor
+
+Pokémon Électrique

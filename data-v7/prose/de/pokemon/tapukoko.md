@@ -1,0 +1,3 @@
+# Kapu-Riki
+
+Schutzpatron-Pokémon

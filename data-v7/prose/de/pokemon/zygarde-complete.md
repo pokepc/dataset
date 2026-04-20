@@ -1,0 +1,3 @@
+# Zygarde (Optimumform)
+
+Ordnungs-Pokémon

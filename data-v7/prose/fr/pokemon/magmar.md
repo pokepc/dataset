@@ -1,0 +1,3 @@
+# Magmar
+
+Pokémon Crache-Feu

@@ -1,0 +1,3 @@
+# MégaDiancie
+
+Pokémon Joyau

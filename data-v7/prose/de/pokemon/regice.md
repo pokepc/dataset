@@ -1,0 +1,3 @@
+# Regice
+
+Eisberg-Pokémon

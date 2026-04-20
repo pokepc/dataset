@@ -1,0 +1,3 @@
+# Koffing
+
+Pokémon Gas Venenoso

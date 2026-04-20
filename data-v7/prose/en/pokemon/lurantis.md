@@ -1,0 +1,3 @@
+# Lurantis
+
+Bloom Sickle Pokémon

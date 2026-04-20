@@ -1,0 +1,3 @@
+# Slakoth
+
+Slacker Pokémon

@@ -1,0 +1,3 @@
+# Skuntank
+
+Stinktier-Pokémon

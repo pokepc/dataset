@@ -1,0 +1,3 @@
+# Parasect
+
+Mushroom Pokémon

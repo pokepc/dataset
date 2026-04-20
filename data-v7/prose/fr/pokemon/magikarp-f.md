@@ -1,0 +1,3 @@
+# Magicarpe (Female)
+
+Pokémon Poisson

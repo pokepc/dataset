@@ -1,0 +1,3 @@
+# Zapdos
+
+Pokémon Elettrico

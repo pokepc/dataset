@@ -1,0 +1,3 @@
+# Dracozolt
+
+Fossil Pokémon

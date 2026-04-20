@@ -1,0 +1,3 @@
+# Wugtrio
+
+Garden Eel Pokémon

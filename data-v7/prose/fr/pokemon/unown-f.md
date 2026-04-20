@@ -1,0 +1,3 @@
+# Zarbi (F)
+
+Pokémon Symbolique

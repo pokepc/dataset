@@ -1,0 +1,3 @@
+# Impidimp
+
+Pokémon Astuto

@@ -1,0 +1,3 @@
+# Staryu
+
+Pokémon Estrella

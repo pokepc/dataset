@@ -1,0 +1,3 @@
+# Galagladi
+
+Klingen-Pokémon

@@ -1,0 +1,3 @@
+# Porygon-Z
+
+Virtuell-Pokémon

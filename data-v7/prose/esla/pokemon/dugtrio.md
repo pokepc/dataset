@@ -1,0 +1,3 @@
+# Dugtrio
+
+Mole Pokémon

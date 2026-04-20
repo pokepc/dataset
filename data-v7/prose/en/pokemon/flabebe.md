@@ -1,0 +1,3 @@
+# Flabébé
+
+Single Bloom Pokémon

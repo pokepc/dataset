@@ -1,0 +1,3 @@
+# Kikugi
+
+Kirschen-Pokémon

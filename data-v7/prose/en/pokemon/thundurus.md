@@ -1,0 +1,3 @@
+# Thundurus
+
+Bolt Strike Pokémon

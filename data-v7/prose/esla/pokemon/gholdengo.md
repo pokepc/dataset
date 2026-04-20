@@ -1,0 +1,3 @@
+# Gholdengo
+
+Coin Entity Pokémon

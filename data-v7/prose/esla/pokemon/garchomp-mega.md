@@ -1,0 +1,3 @@
+# Mega Garchomp
+
+Mach Pokémon

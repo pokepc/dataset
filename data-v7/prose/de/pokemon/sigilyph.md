@@ -1,0 +1,3 @@
+# Symvolara
+
+Vogelgleich-Pokémon

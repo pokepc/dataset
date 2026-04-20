@@ -1,0 +1,3 @@
+# Bidoof
+
+Plump Mouse Pokémon

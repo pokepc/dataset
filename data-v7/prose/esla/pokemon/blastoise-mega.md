@@ -1,0 +1,3 @@
+# Mega Blastoise
+
+Shellfish Pokémon

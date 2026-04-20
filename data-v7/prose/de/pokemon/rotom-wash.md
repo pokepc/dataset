@@ -1,0 +1,3 @@
+# Wasch-Rotom
+
+Plasma-Pokémon

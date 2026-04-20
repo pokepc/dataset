@@ -1,0 +1,3 @@
+# Solgaleo
+
+Pokémon Solare

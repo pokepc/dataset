@@ -1,0 +1,3 @@
+# Kirlia
+
+Emotion Pokémon

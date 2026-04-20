@@ -1,0 +1,3 @@
+# Kangourex
+
+Pokémon Maternel

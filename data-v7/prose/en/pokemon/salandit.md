@@ -1,0 +1,3 @@
+# Salandit
+
+Toxic Lizard Pokémon

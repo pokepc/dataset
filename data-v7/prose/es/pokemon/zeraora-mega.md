@@ -1,0 +1,3 @@
+# Mega Zeraora
+
+Pokémon Fulgor

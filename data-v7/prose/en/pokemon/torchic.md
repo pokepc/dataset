@@ -1,0 +1,3 @@
+# Torchic
+
+Chick Pokémon

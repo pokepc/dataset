@@ -1,0 +1,3 @@
+# Drapion
+
+Pokémon Escorpiogro

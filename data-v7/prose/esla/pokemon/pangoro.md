@@ -1,0 +1,3 @@
+# Pangoro
+
+Daunting Pokémon

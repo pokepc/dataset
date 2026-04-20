@@ -1,0 +1,3 @@
+# Scampisto
+
+Aquapistolen-Pokémon

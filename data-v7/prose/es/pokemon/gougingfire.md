@@ -1,0 +1,3 @@
+# Flamariete
+
+Paradox Pokémon

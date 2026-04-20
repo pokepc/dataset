@@ -1,0 +1,3 @@
+# Magearna
+
+Pokémon Artificiel

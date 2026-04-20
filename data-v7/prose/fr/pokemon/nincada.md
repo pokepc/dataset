@@ -1,0 +1,3 @@
+# Ningale
+
+Pokémon Apprenti

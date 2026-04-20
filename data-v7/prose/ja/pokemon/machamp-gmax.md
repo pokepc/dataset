@@ -1,0 +1,3 @@
+# Machamp (Gigantamax Form)
+
+かいりきポケモン

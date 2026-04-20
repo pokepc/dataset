@@ -1,0 +1,3 @@
+# Zorua
+
+Tricky Fox Pokémon

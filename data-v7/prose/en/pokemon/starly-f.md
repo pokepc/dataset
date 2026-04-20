@@ -1,0 +1,3 @@
+# Starly (Female)
+
+Starling Pokémon

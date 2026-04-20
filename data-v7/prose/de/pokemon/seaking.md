@@ -1,0 +1,3 @@
+# Golking
+
+Goldfisch-Pokémon

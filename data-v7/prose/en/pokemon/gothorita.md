@@ -1,0 +1,3 @@
+# Gothorita
+
+Manipulate Pokémon

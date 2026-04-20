@@ -1,0 +1,3 @@
+# Hatenna
+
+Calm Pokémon

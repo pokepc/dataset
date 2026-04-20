@@ -1,0 +1,3 @@
+# Charmander
+
+Lizard Pokémon

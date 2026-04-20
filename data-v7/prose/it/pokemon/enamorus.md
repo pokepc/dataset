@@ -1,0 +1,3 @@
+# Enamorus
+
+Pokémon Amoreodio

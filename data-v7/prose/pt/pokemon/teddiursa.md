@@ -1,0 +1,3 @@
+# Teddiursa
+
+Little Bear Pokémon

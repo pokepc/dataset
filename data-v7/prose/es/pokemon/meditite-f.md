@@ -1,0 +1,3 @@
+# Meditite (Female)
+
+Pokémon Meditador

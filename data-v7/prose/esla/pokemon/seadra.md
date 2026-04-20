@@ -1,0 +1,3 @@
+# Seadra
+
+Dragon Pokémon

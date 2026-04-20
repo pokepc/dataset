@@ -1,0 +1,3 @@
+# Alomomola
+
+Caring Pokémon

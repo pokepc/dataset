@@ -1,0 +1,3 @@
+# Lickilicky
+
+Pokémon Lametazo

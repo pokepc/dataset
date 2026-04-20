@@ -1,0 +1,3 @@
+# Azumarill
+
+Pokémon Aqualapin

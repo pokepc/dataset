@@ -1,0 +1,3 @@
+# Mammochon (Female)
+
+Pokémon Deudéfenses

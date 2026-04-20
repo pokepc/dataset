@@ -1,0 +1,3 @@
+# Indeedee (Female)
+
+Emotion Pokémon

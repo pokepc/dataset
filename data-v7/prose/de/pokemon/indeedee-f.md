@@ -1,0 +1,3 @@
+# Servol (Weiblich)
+
+Emotions-Pokémon

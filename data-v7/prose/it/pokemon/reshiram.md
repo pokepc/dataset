@@ -1,0 +1,3 @@
+# Reshiram
+
+Pokémon Bianco Verità

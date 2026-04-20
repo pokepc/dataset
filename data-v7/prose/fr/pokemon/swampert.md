@@ -1,0 +1,3 @@
+# Laggron
+
+Pokémon Poissonboue

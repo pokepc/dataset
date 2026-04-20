@@ -1,0 +1,3 @@
+# Barschuft (Weißlinienform)
+
+Grobheits-Pokémon

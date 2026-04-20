@@ -1,0 +1,3 @@
+# Ursaring
+
+Pokémon Hibernant

@@ -1,0 +1,3 @@
+# Ribombee
+
+Pokémon Bombilide

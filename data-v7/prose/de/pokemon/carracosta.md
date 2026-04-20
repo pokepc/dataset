@@ -1,0 +1,3 @@
+# Karippas
+
+Urzeitkröten-Pokémon

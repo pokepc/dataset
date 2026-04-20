@@ -1,0 +1,3 @@
+# Combusken
+
+Young Fowl Pokémon

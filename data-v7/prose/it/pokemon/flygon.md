@@ -1,0 +1,3 @@
+# Flygon
+
+Pokémon Magico

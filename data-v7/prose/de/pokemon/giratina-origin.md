@@ -1,0 +1,3 @@
+# Giratina (Urform)
+
+Rebellen-Pokémon

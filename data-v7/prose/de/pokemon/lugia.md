@@ -1,0 +1,3 @@
+# Lugia
+
+Taucher-Pokémon

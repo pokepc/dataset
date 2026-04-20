@@ -1,0 +1,3 @@
+# Bergmite
+
+Ice Chunk Pokémon

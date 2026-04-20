@@ -1,0 +1,3 @@
+# Raticate (Female)
+
+ねずみポケモン

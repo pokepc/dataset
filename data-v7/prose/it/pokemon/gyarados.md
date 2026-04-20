@@ -1,0 +1,3 @@
+# Gyarados
+
+Pokémon Atroce

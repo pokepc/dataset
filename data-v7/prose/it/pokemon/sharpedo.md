@@ -1,0 +1,3 @@
+# Sharpedo
+
+Pokémon Brutale

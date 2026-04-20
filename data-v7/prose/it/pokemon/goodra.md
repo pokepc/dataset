@@ -1,0 +1,3 @@
+# Goodra
+
+Pokémon Drago

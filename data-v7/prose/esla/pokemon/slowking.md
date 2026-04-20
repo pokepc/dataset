@@ -1,0 +1,3 @@
+# Slowking
+
+Royal Pokémon

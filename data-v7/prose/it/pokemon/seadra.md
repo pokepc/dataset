@@ -1,0 +1,3 @@
+# Seadra
+
+Pokémon Drago

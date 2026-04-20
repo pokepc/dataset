@@ -1,0 +1,3 @@
+# Quagsire
+
+Water Fish Pokémon

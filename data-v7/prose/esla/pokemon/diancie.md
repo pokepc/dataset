@@ -1,0 +1,3 @@
+# Diancie
+
+Jewel Pokémon

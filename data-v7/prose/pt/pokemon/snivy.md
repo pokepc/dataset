@@ -1,0 +1,3 @@
+# Snivy
+
+Grass Snake Pokémon

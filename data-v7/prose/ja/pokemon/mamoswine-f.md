@@ -1,0 +1,3 @@
+# Mamoswine (Female)
+
+２ほんキバポケモン

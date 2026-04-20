@@ -1,0 +1,3 @@
+# Kleinstein (Alola-Form)
+
+Gestein

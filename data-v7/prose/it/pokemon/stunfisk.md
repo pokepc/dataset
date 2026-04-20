@@ -1,0 +1,3 @@
+# Stunfisk
+
+Pokémon Trappola

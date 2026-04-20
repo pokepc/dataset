@@ -1,0 +1,3 @@
+# Zekrom
+
+Reines Schwarz-Pokémon

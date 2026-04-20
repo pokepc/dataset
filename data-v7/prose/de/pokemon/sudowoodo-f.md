@@ -1,0 +1,3 @@
+# Mogelbaum (Female)
+
+Imitations-Pokémon

@@ -1,0 +1,3 @@
+# Genesect (HidroROM)
+
+Pokémon Paleozoico

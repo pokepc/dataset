@@ -1,0 +1,3 @@
+# Riolu
+
+Wellenspiel-Pokémon

@@ -1,0 +1,3 @@
+# Gorebyss
+
+South Sea Pokémon

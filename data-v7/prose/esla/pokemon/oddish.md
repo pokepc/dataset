@@ -1,0 +1,3 @@
+# Oddish
+
+Weed Pokémon

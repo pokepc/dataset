@@ -1,0 +1,3 @@
+# Purugly
+
+Tiger Cat Pokémon

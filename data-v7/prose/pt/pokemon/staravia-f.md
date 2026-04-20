@@ -1,0 +1,3 @@
+# Staravia (Female)
+
+Starling Pokémon

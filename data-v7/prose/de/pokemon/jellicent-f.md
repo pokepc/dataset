@@ -1,0 +1,3 @@
+# Apoquallyp (Female)
+
+Gleit-Pokémon

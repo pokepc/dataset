@@ -1,0 +1,3 @@
+# Lecryodon
+
+Fossil-Pokémon

@@ -1,0 +1,3 @@
+# Hypnomade (Female)
+
+Pokémon Hypnose

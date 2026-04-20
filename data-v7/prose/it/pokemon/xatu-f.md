@@ -1,0 +1,3 @@
+# Xatu (Female)
+
+Pokémon Magico

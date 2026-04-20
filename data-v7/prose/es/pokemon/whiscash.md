@@ -1,0 +1,3 @@
+# Whiscash
+
+Pokémon Bigotudo

@@ -1,0 +1,3 @@
+# Ledian
+
+Pokémon Pentastra

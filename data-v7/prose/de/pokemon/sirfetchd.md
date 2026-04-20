@@ -1,0 +1,3 @@
+# Lauchzelot
+
+Wildenten-Pokémon

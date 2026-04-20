@@ -1,0 +1,3 @@
+# Zebstrika
+
+Thunderbolt Pokémon

@@ -1,0 +1,3 @@
+# Mega-Zobiris
+
+Finsternis-Pokémon

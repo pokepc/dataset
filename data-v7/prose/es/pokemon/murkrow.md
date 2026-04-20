@@ -1,0 +1,3 @@
+# Murkrow
+
+Pokémon Oscuridad

@@ -1,0 +1,3 @@
+# Gloupti
+
+Pokémon Estomac

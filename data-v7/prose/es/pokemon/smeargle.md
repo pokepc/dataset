@@ -1,0 +1,3 @@
+# Smeargle
+
+Pokémon Pintor

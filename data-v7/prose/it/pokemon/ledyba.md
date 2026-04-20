@@ -1,0 +1,3 @@
+# Ledyba
+
+Pokémon Pentastra

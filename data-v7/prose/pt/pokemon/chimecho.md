@@ -1,0 +1,3 @@
+# Chimecho
+
+Wind Chime Pokémon

@@ -1,0 +1,3 @@
+# Vulpix
+
+Fox Pokémon

@@ -1,0 +1,3 @@
+# Mega Alakazam
+
+Pokémon Psi

@@ -1,0 +1,3 @@
+# Aipom
+
+Pokémon Lungacoda

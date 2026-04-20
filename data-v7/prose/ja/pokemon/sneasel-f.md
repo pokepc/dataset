@@ -1,0 +1,3 @@
+# Sneasel (Female)
+
+かぎづめポケモン

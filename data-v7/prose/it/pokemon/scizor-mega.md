@@ -1,0 +1,3 @@
+# Mega Scizor
+
+Pokémon Chela

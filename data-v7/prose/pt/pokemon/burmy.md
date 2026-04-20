@@ -1,0 +1,3 @@
+# Burmy
+
+Bagworm Pokémon

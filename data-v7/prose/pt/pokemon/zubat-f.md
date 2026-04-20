@@ -1,0 +1,3 @@
+# Zubat (Female)
+
+Bat Pokémon

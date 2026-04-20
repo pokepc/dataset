@@ -1,0 +1,3 @@
+# Zarude
+
+Rogue Monkey Pokémon

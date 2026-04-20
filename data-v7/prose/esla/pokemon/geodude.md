@@ -1,0 +1,3 @@
+# Geodude
+
+Rock Pokémon

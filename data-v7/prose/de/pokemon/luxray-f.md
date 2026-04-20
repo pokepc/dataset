@@ -1,0 +1,3 @@
+# Luxtra (Female)
+
+Glühaugen-Pokémon

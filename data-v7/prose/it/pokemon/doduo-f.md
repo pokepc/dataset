@@ -1,0 +1,3 @@
+# Doduo (Female)
+
+Pokémon Biuccello

@@ -1,0 +1,3 @@
+# M. Mime
+
+Pokémon Bloqueur

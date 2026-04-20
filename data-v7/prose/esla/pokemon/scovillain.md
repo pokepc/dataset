@@ -1,0 +1,3 @@
+# Scovillain
+
+Spicy Pepper Pokémon

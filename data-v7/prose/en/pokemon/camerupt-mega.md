@@ -1,0 +1,3 @@
+# Mega Camerupt
+
+Eruption Pokémon

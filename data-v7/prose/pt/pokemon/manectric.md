@@ -1,0 +1,3 @@
+# Manectric
+
+Discharge Pokémon

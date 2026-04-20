@@ -1,0 +1,3 @@
+# Rossana
+
+Humanotyp-Pokémon

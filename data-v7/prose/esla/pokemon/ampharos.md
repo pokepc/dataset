@@ -1,0 +1,3 @@
+# Ampharos
+
+Light Pokémon

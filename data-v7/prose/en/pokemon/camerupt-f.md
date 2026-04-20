@@ -1,0 +1,3 @@
+# Camerupt (Female)
+
+Eruption Pokémon

@@ -1,0 +1,3 @@
+# Bidoof (Female)
+
+Pokémon Topaffuto

@@ -1,0 +1,3 @@
+# Mamoswine
+
+Twin Tusk Pokémon

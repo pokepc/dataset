@@ -1,0 +1,3 @@
+# Eldegoss
+
+Pokémon Cotofronzolo

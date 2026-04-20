@@ -1,0 +1,3 @@
+# Araquanid
+
+Water Bubble Pokémon

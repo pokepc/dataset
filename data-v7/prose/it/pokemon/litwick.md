@@ -1,0 +1,3 @@
+# Litwick
+
+Pokémon Candela

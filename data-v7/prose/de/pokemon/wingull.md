@@ -1,0 +1,3 @@
+# Wingull
+
+Seemöwen-Pokémon

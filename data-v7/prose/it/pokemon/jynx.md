@@ -1,0 +1,3 @@
+# Jynx
+
+Pokémon Umanoide

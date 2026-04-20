@@ -1,0 +1,3 @@
+# Regigigas
+
+Pokémon Colossale

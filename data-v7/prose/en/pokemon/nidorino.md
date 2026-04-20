@@ -1,0 +1,3 @@
+# Nidorino
+
+Poison Pin Pokémon

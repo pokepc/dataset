@@ -1,0 +1,3 @@
+# Torchic (Female)
+
+Chick Pokémon

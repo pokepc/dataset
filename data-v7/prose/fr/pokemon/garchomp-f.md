@@ -1,0 +1,3 @@
+# Carchacrok (Female)
+
+Pokémon Supersonic

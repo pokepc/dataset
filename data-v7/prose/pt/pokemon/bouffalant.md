@@ -1,0 +1,3 @@
+# Bouffalant
+
+Bash Buffalo Pokémon

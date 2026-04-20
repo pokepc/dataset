@@ -1,0 +1,3 @@
+# Vulpix
+
+Pokémon Zorro

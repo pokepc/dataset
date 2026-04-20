@@ -1,0 +1,3 @@
+# Codaurlante
+
+Paradox Pokémon

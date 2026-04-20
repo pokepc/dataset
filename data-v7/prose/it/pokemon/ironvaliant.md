@@ -1,0 +1,3 @@
+# Eroeferreo
+
+Paradox Pokémon

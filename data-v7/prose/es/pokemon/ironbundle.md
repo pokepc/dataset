@@ -1,0 +1,3 @@
+# Ferrosaco
+
+Paradox Pokémon

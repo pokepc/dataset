@@ -1,0 +1,3 @@
+# Chikorita
+
+Leaf Pokémon

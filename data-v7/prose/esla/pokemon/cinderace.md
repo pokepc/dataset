@@ -1,0 +1,3 @@
+# Cinderace
+
+Striker Pokémon

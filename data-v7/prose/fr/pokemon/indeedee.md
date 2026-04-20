@@ -1,0 +1,3 @@
+# Wimessir
+
+Pokémon Émotion

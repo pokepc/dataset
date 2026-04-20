@@ -1,0 +1,3 @@
+# Dimoret
+
+Pokémon Grifacérée

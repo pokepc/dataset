@@ -1,0 +1,3 @@
+# Mega Venusaur
+
+Seed Pokémon

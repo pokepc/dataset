@@ -1,0 +1,3 @@
+# Growlithe
+
+Pokémon Cagnolino

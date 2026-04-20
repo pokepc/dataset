@@ -1,0 +1,3 @@
+# Grindur
+
+Pokémon Graine Épine

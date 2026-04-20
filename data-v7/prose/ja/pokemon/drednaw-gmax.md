@@ -1,0 +1,3 @@
+# Drednaw (Gigantamax Form)
+
+かみつきポケモン

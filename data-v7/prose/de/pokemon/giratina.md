@@ -1,0 +1,3 @@
+# Giratina
+
+Rebellen-Pokémon

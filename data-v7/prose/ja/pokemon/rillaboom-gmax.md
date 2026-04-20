@@ -1,0 +1,3 @@
+# Rillaboom (Gigantamax Form)
+
+ドラマーポケモン

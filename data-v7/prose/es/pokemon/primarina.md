@@ -1,0 +1,3 @@
+# Primarina
+
+Pokémon Solista

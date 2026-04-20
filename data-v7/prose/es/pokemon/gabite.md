@@ -1,0 +1,3 @@
+# Gabite
+
+Pokémon Cueva

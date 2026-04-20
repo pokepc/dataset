@@ -1,0 +1,3 @@
+# Prinplup
+
+Pokémon Pinguino

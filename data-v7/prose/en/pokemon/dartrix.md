@@ -1,0 +1,3 @@
+# Dartrix
+
+Blade Quill Pokémon

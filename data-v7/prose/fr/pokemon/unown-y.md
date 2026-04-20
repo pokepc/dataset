@@ -1,0 +1,3 @@
+# Zarbi (Y)
+
+Pokémon Symbolique

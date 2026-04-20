@@ -1,0 +1,3 @@
+# Grandizanne
+
+Paradox Pokémon

@@ -1,0 +1,3 @@
+# Buzzwole
+
+Swollen Pokémon

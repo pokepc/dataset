@@ -1,0 +1,3 @@
+# Laternecto
+
+Lampen-Pokémon

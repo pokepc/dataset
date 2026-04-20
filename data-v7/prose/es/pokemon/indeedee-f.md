@@ -1,0 +1,3 @@
+# Indeedee (Hembra)
+
+Pokémon Sensorio

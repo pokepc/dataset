@@ -1,0 +1,3 @@
+# Icognito (R)
+
+Symbol

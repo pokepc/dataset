@@ -1,0 +1,3 @@
+# Pyroar (Female)
+
+Royal Pokémon

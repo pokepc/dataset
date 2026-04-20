@@ -1,0 +1,3 @@
+# Genesect (FulgoROM)
+
+Pokémon Paleozoico

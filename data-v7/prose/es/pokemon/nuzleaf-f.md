@@ -1,0 +1,3 @@
+# Nuzleaf (Female)
+
+Pokémon Astuto

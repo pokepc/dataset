@@ -1,0 +1,3 @@
+# Tyrunt
+
+Royal Heir Pokémon

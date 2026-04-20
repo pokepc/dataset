@@ -1,0 +1,3 @@
+# Azurill
+
+Gepunktet-Pokémon

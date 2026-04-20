@@ -1,0 +1,3 @@
+# Georok (Alola-Form)
+
+Gestein

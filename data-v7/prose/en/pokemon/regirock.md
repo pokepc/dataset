@@ -1,0 +1,3 @@
+# Regirock
+
+Rock Peak Pokémon

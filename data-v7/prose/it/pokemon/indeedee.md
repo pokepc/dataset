@@ -1,0 +1,3 @@
+# Indeedee
+
+Pokémon Emozione

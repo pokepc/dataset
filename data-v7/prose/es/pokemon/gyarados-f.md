@@ -1,0 +1,3 @@
+# Gyarados (Female)
+
+Pokémon Atrocidad

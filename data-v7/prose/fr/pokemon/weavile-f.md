@@ -1,0 +1,3 @@
+# Dimoret (Female)
+
+Pokémon Grifacérée

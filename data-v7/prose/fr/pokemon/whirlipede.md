@@ -1,0 +1,3 @@
+# Scobolide
+
+Pokémon Coconplopode

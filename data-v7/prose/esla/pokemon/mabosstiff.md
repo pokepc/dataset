@@ -1,0 +1,3 @@
+# Mabosstiff
+
+Boss Pokémon

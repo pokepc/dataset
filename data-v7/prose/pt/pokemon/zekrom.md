@@ -1,0 +1,3 @@
+# Zekrom
+
+Deep Black Pokémon

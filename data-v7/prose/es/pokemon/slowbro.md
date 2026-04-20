@@ -1,0 +1,3 @@
+# Slowbro
+
+Pokémon Ermitaño

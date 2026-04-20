@@ -1,0 +1,3 @@
+# Bellsprout
+
+Flower Pokémon

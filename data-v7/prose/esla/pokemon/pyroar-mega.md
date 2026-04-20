@@ -1,0 +1,3 @@
+# Mega Pyroar
+
+Royal Pokémon

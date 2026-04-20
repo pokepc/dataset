@@ -1,0 +1,3 @@
+# Cofagrigus
+
+Coffin Pokémon

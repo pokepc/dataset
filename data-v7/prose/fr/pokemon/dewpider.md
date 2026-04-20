@@ -1,0 +1,3 @@
+# Araqua
+
+Pokémon Aquabulle

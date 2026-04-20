@@ -1,0 +1,3 @@
+# Larvitar
+
+Rock Skin Pokémon

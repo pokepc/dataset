@@ -1,0 +1,3 @@
+# Kadabra (Female)
+
+Pokémon Psy

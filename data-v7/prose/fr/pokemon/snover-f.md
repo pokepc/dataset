@@ -1,0 +1,3 @@
+# Blizzi (Female)
+
+Pokémon Arbregelé

@@ -1,0 +1,3 @@
+# Gossifleur
+
+Pokémon Fiorfronzolo

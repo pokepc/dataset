@@ -1,0 +1,3 @@
+# Swampert
+
+Mud Fish Pokémon

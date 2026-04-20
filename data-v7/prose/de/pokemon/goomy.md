@@ -1,0 +1,3 @@
+# Viscora
+
+Schneckedei-Pokémon

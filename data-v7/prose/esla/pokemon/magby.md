@@ -1,0 +1,3 @@
+# Magby
+
+Live Coal Pokémon

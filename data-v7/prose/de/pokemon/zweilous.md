@@ -1,0 +1,3 @@
+# Duodino
+
+Grobheits-Pokémon

@@ -1,0 +1,3 @@
+# Wummer
+
+Aquawummen-Pokémon

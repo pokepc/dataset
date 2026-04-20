@@ -1,0 +1,3 @@
+# Galopa
+
+Pokémon Cheval Feu

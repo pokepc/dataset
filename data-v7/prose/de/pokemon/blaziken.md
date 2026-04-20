@@ -1,0 +1,3 @@
+# Lohgock
+
+Großbrand-Pokémon

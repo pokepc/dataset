@@ -1,0 +1,3 @@
+# Regirock
+
+Steingipfel-Pokémon

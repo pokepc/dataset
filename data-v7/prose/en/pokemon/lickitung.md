@@ -1,0 +1,3 @@
+# Lickitung
+
+Licking Pokémon

@@ -1,0 +1,3 @@
+# Tinkaton
+
+Hammer Pokémon

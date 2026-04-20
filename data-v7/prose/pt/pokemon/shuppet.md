@@ -1,0 +1,3 @@
+# Shuppet
+
+Puppet Pokémon

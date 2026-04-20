@@ -1,0 +1,3 @@
+# Lusardin (Schwarmform)
+
+Kleinfisch-Pokémon

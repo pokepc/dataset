@@ -1,0 +1,3 @@
+# Flareon
+
+Flame Pokémon

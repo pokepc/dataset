@@ -1,0 +1,3 @@
+# Barrakiefa
+
+Spieß-Pokémon

@@ -1,0 +1,3 @@
+# MégaAlakazam
+
+Pokémon Psy

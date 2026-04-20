@@ -1,0 +1,3 @@
+# Sedimantur
+
+Erz-Pokémon

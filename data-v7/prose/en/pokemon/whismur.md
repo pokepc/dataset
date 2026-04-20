@@ -1,0 +1,3 @@
+# Whismur
+
+Whisper Pokémon

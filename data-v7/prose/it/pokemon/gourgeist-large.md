@@ -1,0 +1,3 @@
+# Gourgeist (Grande)
+
+Pokémon Zucca

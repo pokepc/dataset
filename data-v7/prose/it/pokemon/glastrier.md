@@ -1,0 +1,3 @@
+# Glastrier
+
+Pokémon Furiequino

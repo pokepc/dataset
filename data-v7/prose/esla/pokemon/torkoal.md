@@ -1,0 +1,3 @@
+# Torkoal
+
+Coal Pokémon

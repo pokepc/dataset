@@ -1,0 +1,3 @@
+# Mime Jr.
+
+Mime Pokémon

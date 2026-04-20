@@ -1,0 +1,3 @@
+# Floatzel
+
+Sea Weasel Pokémon

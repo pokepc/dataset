@@ -1,0 +1,3 @@
+# Skarmory
+
+Armor Bird Pokémon

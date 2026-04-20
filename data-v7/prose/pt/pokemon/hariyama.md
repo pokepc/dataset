@@ -1,0 +1,3 @@
+# Hariyama
+
+Arm Thrust Pokémon

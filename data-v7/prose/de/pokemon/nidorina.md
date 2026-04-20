@@ -1,0 +1,3 @@
+# Nidorina
+
+Giftdorn-Pokémon

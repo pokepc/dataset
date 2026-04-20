@@ -1,0 +1,3 @@
+# Medicham
+
+Pokémon Meditazione

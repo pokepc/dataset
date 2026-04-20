@@ -1,0 +1,3 @@
+# Hydreigon
+
+Pokémon Brutale

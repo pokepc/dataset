@@ -1,0 +1,3 @@
+# Nincada
+
+Pokémon Aprendiz

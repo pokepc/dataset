@@ -1,0 +1,110 @@
+{
+  "id": "castform",
+  "nid": "castform",
+  "name": "Castform",
+  "genus": "Weather Pokémon",
+  "dexNum": 351,
+  "gen": 3,
+  "region": "hoenn",
+  "debutIn": "rs",
+  "type1": "normal",
+  "type2": null,
+  "color": "gray",
+  "abilities": [
+    "forecast"
+  ],
+  "baseHp": 70,
+  "baseAtk": 70,
+  "baseDef": 70,
+  "baseSpAtk": 70,
+  "baseSpDef": 70,
+  "baseSpeed": 70,
+  "height": 30,
+  "weight": 80,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "castform-sunny",
+    "castform-rainy",
+    "castform-snowy"
+  ],
+  "formsDesc": "Form changes along with type to match the weather in battle, due to forecast.  Castform is always in its normal form outside of battle, regardless of weather.",
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": false,
+  "canDynamax": true,
+  "canGmax": false,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "refs": {
+    "pkApiId": "351",
+    "pkApiFormId": "351",
+    "pkApiFormSlug": "castform",
+    "smogon": "castform",
+    "showdown": "castform",
+    "showdownName": "Castform",
+    "serebii": "castform",
+    "bulbapedia": "Castform"
+  },
+  "i18n": {
+    "en": {
+      "name": "Castform",
+      "genus": "Weather Pokémon"
+    },
+    "fr": {
+      "name": "Morphéo",
+      "genus": "Pokémon Climat"
+    },
+    "de": {
+      "name": "Formeo",
+      "genus": "Wetter"
+    },
+    "es": {
+      "name": "Castform",
+      "genus": "Pokémon Clima"
+    },
+    "esla": {
+      "name": "Castform",
+      "genus": "Weather Pokémon"
+    },
+    "it": {
+      "name": "Castform",
+      "genus": "Pokémon Meteo"
+    },
+    "pt": {
+      "name": "Castform",
+      "genus": "Weather Pokémon"
+    },
+    "ja": {
+      "name": "ポワルン",
+      "genus": "てんきポケモン"
+    },
+    "ko": {
+      "name": "캐스퐁",
+      "genus": "날씨포켓몬"
+    },
+    "chs": {
+      "name": "飘浮泡泡",
+      "genus": "天气宝可梦"
+    },
+    "cht": {
+      "name": "飄浮泡泡",
+      "genus": "天氣寶可夢"
+    }
+  }
+}

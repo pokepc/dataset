@@ -1,0 +1,3 @@
+# Shiftry (Female)
+
+Wicked Pokémon

@@ -1,0 +1,3 @@
+# Litten
+
+Fire Cat Pokémon

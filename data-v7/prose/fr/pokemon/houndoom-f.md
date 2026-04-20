@@ -1,0 +1,3 @@
+# Démolosse (Female)
+
+Pokémon Sombre

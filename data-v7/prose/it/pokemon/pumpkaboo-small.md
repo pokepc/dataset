@@ -1,0 +1,3 @@
+# Pumpkaboo (Mini)
+
+Pokémon Zucca

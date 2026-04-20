@@ -1,0 +1,3 @@
+# Infernape
+
+Flame Pokémon

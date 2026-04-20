@@ -1,0 +1,3 @@
+# Mega Tatsugiri
+
+Mimicry Pokémon

@@ -1,0 +1,3 @@
+# Tyranitar
+
+Armor Pokémon

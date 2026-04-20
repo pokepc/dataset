@@ -1,0 +1,3 @@
+# Ting-Lu
+
+Ruinous Pokémon

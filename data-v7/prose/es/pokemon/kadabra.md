@@ -1,0 +1,3 @@
+# Kadabra
+
+Pokémon Psi

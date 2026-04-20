@@ -1,0 +1,3 @@
+# Mow Rotom
+
+Plasma Pokémon

@@ -1,0 +1,3 @@
+# Flittle
+
+Frill Pokémon

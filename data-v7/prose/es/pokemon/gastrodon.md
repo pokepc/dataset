@@ -1,0 +1,3 @@
+# Gastrodon
+
+Pokémon Babosa Marina

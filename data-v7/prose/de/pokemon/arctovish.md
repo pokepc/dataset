@@ -1,0 +1,3 @@
+# Pescryodon
+
+Fossil-Pokémon

@@ -1,0 +1,3 @@
+# Elezard
+
+Generatoren-Pokémon

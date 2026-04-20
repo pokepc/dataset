@@ -1,0 +1,3 @@
+# Regidrago
+
+Dragon Orb Pokémon

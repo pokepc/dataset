@@ -1,0 +1,3 @@
+# Miraidon
+
+Paradox Pokémon

@@ -1,0 +1,3 @@
+# Emolga
+
+Sky Squirrel Pokémon

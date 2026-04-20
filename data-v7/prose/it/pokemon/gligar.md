@@ -1,0 +1,3 @@
+# Gligar
+
+Pokémon Aliscorpio

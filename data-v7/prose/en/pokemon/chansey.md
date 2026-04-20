@@ -1,0 +1,3 @@
+# Chansey
+
+Egg Pokémon

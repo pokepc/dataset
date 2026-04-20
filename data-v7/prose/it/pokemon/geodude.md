@@ -1,0 +1,3 @@
+# Geodude
+
+Pokémon Roccia

@@ -1,0 +1,3 @@
+# Orbeetle (Gigantamax Form)
+
+ななほしポケモン

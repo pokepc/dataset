@@ -1,0 +1,3 @@
+# Rihorn (Female)
+
+Stachler-Pokémon

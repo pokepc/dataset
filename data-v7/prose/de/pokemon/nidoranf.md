@@ -1,0 +1,3 @@
+# Nidoran♀
+
+Giftdorn-Pokémon

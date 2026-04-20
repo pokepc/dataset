@@ -1,0 +1,3 @@
+# Mega Medicham
+
+Meditate Pokémon

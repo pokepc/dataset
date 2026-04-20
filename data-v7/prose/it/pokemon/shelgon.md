@@ -1,0 +1,3 @@
+# Shelgon
+
+Pokémon Resistenza

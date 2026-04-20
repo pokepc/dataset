@@ -1,0 +1,3 @@
+# Golbat
+
+Fledermaus-Pokémon

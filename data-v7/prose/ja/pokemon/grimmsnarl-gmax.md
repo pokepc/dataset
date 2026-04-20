@@ -1,0 +1,3 @@
+# Grimmsnarl (Gigantamax Form)
+
+ビルドアップポケモン

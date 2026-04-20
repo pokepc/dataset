@@ -1,0 +1,3 @@
+# Bibarel (Female)
+
+ビーバーポケモン

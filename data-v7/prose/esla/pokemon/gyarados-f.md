@@ -1,0 +1,3 @@
+# Gyarados (Female)
+
+Atrocious Pokémon

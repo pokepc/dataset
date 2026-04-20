@@ -1,0 +1,3 @@
+# Electrofuria
+
+Paradox Pokémon

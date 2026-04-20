@@ -1,0 +1,3 @@
+# Gloom (Female)
+
+Pokémon Malerba

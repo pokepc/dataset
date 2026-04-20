@@ -1,0 +1,3 @@
+# Pachirisu (Female)
+
+EleSquirrel Pokémon

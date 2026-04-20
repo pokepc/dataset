@@ -1,0 +1,3 @@
+# Combee (Female)
+
+Pokémon Apetta

@@ -1,0 +1,3 @@
+# Knakrack (Female)
+
+Rasanz-Pokémon

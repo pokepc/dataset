@@ -1,0 +1,3 @@
+# Buneary
+
+Rabbit Pokémon

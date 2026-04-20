@@ -1,0 +1,3 @@
+# Lampignon
+
+Pokémon Luminescent

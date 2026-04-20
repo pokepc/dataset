@@ -1,0 +1,3 @@
+# Ramoloss
+
+Pokémon Crétin

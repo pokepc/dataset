@@ -1,0 +1,3 @@
+# Lotad
+
+Water Weed Pokémon

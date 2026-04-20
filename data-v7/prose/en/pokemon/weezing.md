@@ -1,0 +1,3 @@
+# Weezing
+
+Poison Gas Pokémon

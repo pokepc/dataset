@@ -1,0 +1,3 @@
+# Raging Bolt
+
+Paradox Pokémon

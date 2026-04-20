@@ -1,0 +1,3 @@
+# Electabuzz
+
+Pokémon Elettrico

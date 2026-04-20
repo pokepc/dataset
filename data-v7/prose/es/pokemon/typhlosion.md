@@ -1,0 +1,3 @@
+# Typhlosion
+
+Pokémon Volcán

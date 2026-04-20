@@ -1,0 +1,3 @@
+# Wadribie (Female)
+
+Kleinbienen-Pokémon

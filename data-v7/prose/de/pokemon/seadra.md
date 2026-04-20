@@ -1,0 +1,3 @@
+# Seemon
+
+Drachen-Pokémon

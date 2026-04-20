@@ -1,0 +1,3 @@
+# Kyogre
+
+Sea Basin Pokémon

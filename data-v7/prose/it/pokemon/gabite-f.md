@@ -1,0 +1,3 @@
+# Gabite (Female)
+
+Pokémon Grotta

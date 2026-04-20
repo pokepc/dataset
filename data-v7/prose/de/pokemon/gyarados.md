@@ -1,0 +1,3 @@
+# Garados
+
+Grausam-Pokémon

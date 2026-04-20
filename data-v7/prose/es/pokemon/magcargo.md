@@ -1,0 +1,3 @@
+# Magcargo
+
+Pokémon Lava

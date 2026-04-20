@@ -1,0 +1,3 @@
+# Quagsire (Female)
+
+みずうおポケモン

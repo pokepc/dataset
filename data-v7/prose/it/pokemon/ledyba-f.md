@@ -1,0 +1,3 @@
+# Ledyba (Female)
+
+Pokémon Pentastra

@@ -1,0 +1,3 @@
+# Floatzel (Female)
+
+うみイタチポケモン

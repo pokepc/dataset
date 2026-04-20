@@ -1,0 +1,3 @@
+# Wooper
+
+Water Fish Pokémon

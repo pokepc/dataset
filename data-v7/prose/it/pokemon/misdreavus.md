@@ -1,0 +1,3 @@
+# Misdreavus
+
+Pokémon Strido

@@ -1,0 +1,3 @@
+# Type: Null
+
+Synthetic Pokémon

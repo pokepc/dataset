@@ -1,0 +1,3 @@
+# Thundurus
+
+Pokémon Centella

@@ -1,0 +1,3 @@
+# Unown (J)
+
+Symbol Pokémon

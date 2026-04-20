@@ -1,0 +1,3 @@
+# Grandiras
+
+Schuppentier-Pokémon

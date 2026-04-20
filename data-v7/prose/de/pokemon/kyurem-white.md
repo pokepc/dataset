@@ -1,0 +1,3 @@
+# Weißes Kyurem
+
+Schwellen-Pokémon

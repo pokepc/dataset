@@ -1,0 +1,3 @@
+# Samurzel
+
+Eichelnuss-Pokémon

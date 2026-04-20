@@ -1,0 +1,3 @@
+# Pikachu (Female)
+
+Mouse Pokémon

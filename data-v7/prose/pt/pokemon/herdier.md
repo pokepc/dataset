@@ -1,0 +1,3 @@
+# Herdier
+
+Loyal Dog Pokémon

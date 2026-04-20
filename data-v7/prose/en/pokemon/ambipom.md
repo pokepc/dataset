@@ -1,0 +1,3 @@
+# Ambipom
+
+Long Tail Pokémon

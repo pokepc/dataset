@@ -1,0 +1,3 @@
+# Scizor
+
+Pincer Pokémon

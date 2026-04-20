@@ -1,0 +1,3 @@
+# Sandy Shocks
+
+Paradox Pokémon

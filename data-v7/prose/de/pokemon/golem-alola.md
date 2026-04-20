@@ -1,0 +1,3 @@
+# Geowaz (Alola-Form)
+
+Urgestein

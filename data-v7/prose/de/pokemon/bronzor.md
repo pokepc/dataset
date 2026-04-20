@@ -1,0 +1,3 @@
+# Bronzel
+
+Bronze-Pokémon

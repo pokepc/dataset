@@ -1,0 +1,3 @@
+# Mega Victreebel
+
+Flycatcher Pokémon

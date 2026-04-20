@@ -1,0 +1,3 @@
+# Elektek
+
+Elektro-Pokémon

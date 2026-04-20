@@ -1,0 +1,3 @@
+# Slaking
+
+Pokémon Pigrizia

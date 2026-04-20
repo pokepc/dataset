@@ -1,0 +1,3 @@
+# Kinoso
+
+Blüten-Pokémon

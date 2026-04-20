@@ -1,0 +1,3 @@
+# Doduo
+
+Twin Bird Pokémon

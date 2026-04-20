@@ -1,0 +1,3 @@
+# Lycanroc
+
+Wolf Pokémon

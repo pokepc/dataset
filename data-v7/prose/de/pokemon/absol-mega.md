@@ -1,0 +1,3 @@
+# Mega-Absol
+
+Desaster-Pokémon

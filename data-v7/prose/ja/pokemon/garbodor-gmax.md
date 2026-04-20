@@ -1,0 +1,3 @@
+# Garbodor (Gigantamax Form)
+
+ゴミすてばポケモン

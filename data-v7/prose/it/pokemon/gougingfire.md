@@ -1,0 +1,3 @@
+# Vampeaguzze
+
+Paradox Pokémon

@@ -1,0 +1,3 @@
+# Tyrantrum
+
+Pokémon Tiranno

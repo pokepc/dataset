@@ -1,0 +1,3 @@
+# Roserade
+
+Pokémon Floreale

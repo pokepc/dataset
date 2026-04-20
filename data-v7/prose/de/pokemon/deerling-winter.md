@@ -1,0 +1,3 @@
+# Sesokitz (Winterform)
+
+Jahreszeit

@@ -1,0 +1,3 @@
+# Bewear
+
+Strong Arm Pokémon

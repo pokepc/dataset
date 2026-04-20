@@ -1,0 +1,3 @@
+# Amoonguss
+
+Mushroom Pokémon

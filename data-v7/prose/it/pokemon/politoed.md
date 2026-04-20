@@ -1,0 +1,3 @@
+# Politoed
+
+Pokémon Rana

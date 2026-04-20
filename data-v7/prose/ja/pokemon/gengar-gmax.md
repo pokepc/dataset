@@ -1,0 +1,3 @@
+# Gengar (Gigantamax Form)
+
+シャドーポケモン

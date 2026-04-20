@@ -1,0 +1,3 @@
+# Carnivine
+
+Bug Catcher Pokémon

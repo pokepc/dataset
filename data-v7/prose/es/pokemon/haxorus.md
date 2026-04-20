@@ -1,0 +1,3 @@
+# Haxorus
+
+Pokémon Boca Hacha

@@ -1,0 +1,3 @@
+# Gliscor
+
+Fang Scorpion Pokémon

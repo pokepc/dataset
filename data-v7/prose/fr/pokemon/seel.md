@@ -1,0 +1,3 @@
+# Otaria
+
+Pokémon Otarie

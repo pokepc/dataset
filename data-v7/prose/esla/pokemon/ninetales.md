@@ -1,0 +1,3 @@
+# Ninetales
+
+Fox Pokémon

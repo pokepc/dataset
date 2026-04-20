@@ -1,0 +1,3 @@
+# Linoone
+
+Rushing Pokémon

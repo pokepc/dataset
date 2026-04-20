@@ -1,0 +1,3 @@
+# Eelektrik
+
+EleFish Pokémon

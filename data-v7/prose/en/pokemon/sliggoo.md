@@ -1,0 +1,3 @@
+# Sliggoo
+
+Soft Tissue Pokémon

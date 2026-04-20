@@ -1,0 +1,3 @@
+# Guzzlord
+
+Pokémon Divoratutto

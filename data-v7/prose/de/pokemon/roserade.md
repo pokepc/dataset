@@ -1,0 +1,3 @@
+# Roserade
+
+Blumenstrauß-Pokémon

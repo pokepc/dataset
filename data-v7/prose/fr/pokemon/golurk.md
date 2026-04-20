@@ -1,0 +1,3 @@
+# Golemastoc
+
+Pokémon Golem Ancien

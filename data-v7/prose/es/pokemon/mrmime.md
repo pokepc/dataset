@@ -1,0 +1,3 @@
+# Mr. Mime
+
+Pokémon Barrera

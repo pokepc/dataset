@@ -1,0 +1,3 @@
+# Zytomega
+
+Vermehrungs-Pokémon

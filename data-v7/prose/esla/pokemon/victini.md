@@ -1,0 +1,3 @@
+# Victini
+
+Victory Pokémon

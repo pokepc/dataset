@@ -1,0 +1,3 @@
+# Scrafty
+
+Pokémon Gamberro

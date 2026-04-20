@@ -1,0 +1,3 @@
+# Mega Staraptor
+
+Pokémon Depredador

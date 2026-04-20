@@ -1,0 +1,3 @@
+# Alakazam
+
+Psi Pokémon

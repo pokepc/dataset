@@ -1,0 +1,3 @@
+# Budew
+
+Pokémon Germoglio

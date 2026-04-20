@@ -1,0 +1,3 @@
+# Tranchodon
+
+Pokémon Hachomenton

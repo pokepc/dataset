@@ -1,0 +1,3 @@
+# Togedemaru
+
+Einigler-Pokémon

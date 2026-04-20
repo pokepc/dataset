@@ -1,0 +1,3 @@
+# Magnemite
+
+Pokémon Imán

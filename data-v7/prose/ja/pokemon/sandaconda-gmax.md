@@ -1,0 +1,3 @@
+# Sandaconda (Gigantamax Form)
+
+すなへびポケモン

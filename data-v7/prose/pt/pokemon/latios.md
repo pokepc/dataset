@@ -1,0 +1,3 @@
+# Latios
+
+Eon Pokémon

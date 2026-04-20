@@ -1,0 +1,3 @@
+# Rhydon (Female)
+
+Drill Pokémon

@@ -1,0 +1,3 @@
+# Deoxys (Verteidigungsform)
+
+DNS

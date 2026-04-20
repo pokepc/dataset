@@ -1,0 +1,3 @@
+# Giratina
+
+Renegade Pokémon

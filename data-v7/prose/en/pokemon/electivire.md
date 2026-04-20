@@ -1,0 +1,3 @@
+# Electivire
+
+Thunderbolt Pokémon

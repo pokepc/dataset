@@ -1,0 +1,3 @@
+# Lucanon
+
+Pokémon Scarabée

@@ -1,0 +1,3 @@
+# Garganacl
+
+Rock Salt Pokémon

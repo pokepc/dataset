@@ -1,0 +1,114 @@
+{
+  "id": "darmanitan",
+  "nid": "darmanitan",
+  "name": "Darmanitan",
+  "genus": "Blazing Pokémon",
+  "dexNum": 555,
+  "gen": 5,
+  "region": "unova",
+  "debutIn": "bw",
+  "type1": "fire",
+  "type2": null,
+  "color": "red",
+  "abilities": [
+    "sheerforce",
+    "zenmode"
+  ],
+  "baseHp": 105,
+  "baseAtk": 140,
+  "baseDef": 55,
+  "baseSpAtk": 30,
+  "baseSpDef": 55,
+  "baseSpeed": 95,
+  "height": 130,
+  "weight": 9290,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "formId": "standard",
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "darmanitan-zen",
+    "darmanitan-galar",
+    "darmanitan-galar-zen"
+  ],
+  "formsDesc": "Forms have different stats and types.  If Darmanitan's ability is zen mode, it changes to Zen Mode in battle if it ends a turn below 50% HP, and back to Standard Mode if it ends a turn at 50% HP or above, leaves battle, or loses its ability.",
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": false,
+  "canDynamax": true,
+  "canGmax": false,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "evolvesFrom": "darumaka",
+  "evoFromLevel": 35,
+  "refs": {
+    "pkApiId": "555",
+    "pkApiFormId": "555",
+    "pkApiFormSlug": "darmanitan-standard",
+    "smogon": "darmanitan",
+    "showdown": "darmanitan",
+    "showdownName": "Darmanitan",
+    "serebii": "darmanitan",
+    "bulbapedia": "Darmanitan"
+  },
+  "i18n": {
+    "en": {
+      "name": "Darmanitan",
+      "genus": "Blazing Pokémon"
+    },
+    "fr": {
+      "name": "Darumacho",
+      "genus": "Pokémon Enflammé"
+    },
+    "de": {
+      "name": "Flampivian",
+      "genus": "Lichterloh-Pokémon"
+    },
+    "es": {
+      "name": "Darmanitan",
+      "genus": "Pokémon Candente"
+    },
+    "esla": {
+      "name": "Darmanitan",
+      "genus": "Blazing Pokémon"
+    },
+    "it": {
+      "name": "Darmanitan",
+      "genus": "Pokémon Altefiamme"
+    },
+    "pt": {
+      "name": "Darmanitan",
+      "genus": "Blazing Pokémon"
+    },
+    "ja": {
+      "name": "ヒヒダルマ",
+      "genus": "えんじょうポケモン"
+    },
+    "ko": {
+      "name": "불비달마",
+      "genus": "염상포켓몬"
+    },
+    "chs": {
+      "name": "达摩狒狒",
+      "genus": "爆燃宝可梦"
+    },
+    "cht": {
+      "name": "達摩狒狒",
+      "genus": "爆燃寶可夢"
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Pottrott
+
+Schimmel-Pokémon

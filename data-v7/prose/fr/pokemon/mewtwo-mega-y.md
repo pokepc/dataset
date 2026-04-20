@@ -1,0 +1,3 @@
+# MégaMewtwo Y
+
+Pokémon Génétique

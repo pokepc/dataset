@@ -1,0 +1,3 @@
+# Diglett
+
+Mole Pokémon

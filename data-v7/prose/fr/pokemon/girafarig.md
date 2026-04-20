@@ -1,0 +1,3 @@
+# Girafarig
+
+Pokémon Long-Cou

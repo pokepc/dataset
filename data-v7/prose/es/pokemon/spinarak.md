@@ -1,0 +1,3 @@
+# Spinarak
+
+Pokémon Escupesoga

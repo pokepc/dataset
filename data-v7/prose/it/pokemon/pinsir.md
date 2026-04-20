@@ -1,0 +1,3 @@
+# Pinsir
+
+Pokémon Cervolante

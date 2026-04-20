@@ -1,0 +1,3 @@
+# Centiskorch (Gigantamax Form)
+
+はつねつポケモン

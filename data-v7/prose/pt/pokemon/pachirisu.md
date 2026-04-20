@@ -1,0 +1,3 @@
+# Pachirisu
+
+EleSquirrel Pokémon

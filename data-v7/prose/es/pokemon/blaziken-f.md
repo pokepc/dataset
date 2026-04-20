@@ -1,0 +1,3 @@
+# Blaziken (Female)
+
+Pokémon Llameante

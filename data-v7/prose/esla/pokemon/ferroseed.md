@@ -1,0 +1,3 @@
+# Ferroseed
+
+Thorn Seed Pokémon

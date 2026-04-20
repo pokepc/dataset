@@ -1,0 +1,3 @@
+# Sarmuraï
+
+Pokémon Blindé

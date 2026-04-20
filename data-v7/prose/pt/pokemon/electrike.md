@@ -1,0 +1,3 @@
+# Electrike
+
+Lightning Pokémon

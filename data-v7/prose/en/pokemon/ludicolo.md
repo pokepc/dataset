@@ -1,0 +1,3 @@
+# Ludicolo
+
+Carefree Pokémon

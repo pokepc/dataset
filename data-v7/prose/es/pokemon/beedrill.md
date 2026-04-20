@@ -1,0 +1,3 @@
+# Beedrill
+
+Pokémon Abeja Veneno

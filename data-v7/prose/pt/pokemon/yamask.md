@@ -1,0 +1,3 @@
+# Yamask
+
+Spirit Pokémon

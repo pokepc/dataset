@@ -1,0 +1,3 @@
+# Mamoswine (Female)
+
+Pokémon Duezanne

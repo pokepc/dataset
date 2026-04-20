@@ -1,0 +1,3 @@
+# Tritosor
+
+Pokémon Aqualimace

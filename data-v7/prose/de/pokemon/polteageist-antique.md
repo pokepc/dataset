@@ -1,0 +1,3 @@
+# Mortipot (Originalform)
+
+Schwarztee-Pokémon

@@ -1,0 +1,3 @@
+# Glibunkel (Female)
+
+Giftmund-Pokémon

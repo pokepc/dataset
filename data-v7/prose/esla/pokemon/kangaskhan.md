@@ -1,0 +1,3 @@
+# Kangaskhan
+
+Parent Pokémon

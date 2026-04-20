@@ -1,0 +1,3 @@
+# Elekid
+
+Elektro-Pokémon

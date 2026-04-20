@@ -1,0 +1,3 @@
+# Thanathora
+
+Ballungs-Pokémon

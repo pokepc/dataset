@@ -1,0 +1,3 @@
+# Vileplume (Female)
+
+Flower Pokémon

@@ -1,0 +1,3 @@
+# Armarouge
+
+Fire Warrior Pokémon

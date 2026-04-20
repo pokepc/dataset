@@ -1,0 +1,3 @@
+# Mega-Ohrdoch
+
+Gehör-Pokémon

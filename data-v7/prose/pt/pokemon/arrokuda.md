@@ -1,0 +1,3 @@
+# Arrokuda
+
+Rush Pokémon

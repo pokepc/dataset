@@ -1,0 +1,3 @@
+# Raticate
+
+Mouse Pokémon

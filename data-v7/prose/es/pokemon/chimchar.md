@@ -1,0 +1,3 @@
+# Chimchar
+
+Pokémon Chimpancé

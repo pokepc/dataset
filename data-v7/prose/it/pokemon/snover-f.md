@@ -1,0 +1,3 @@
+# Snover (Female)
+
+Pokémon Albergelo

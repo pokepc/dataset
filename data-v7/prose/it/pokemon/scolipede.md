@@ -1,0 +1,3 @@
+# Scolipede
+
+Pokémon Megapede

@@ -1,0 +1,3 @@
+# Garbodor
+
+Trash Heap Pokémon

@@ -1,0 +1,3 @@
+# Palkia (Urform)
+
+Räumlich-Pokémon

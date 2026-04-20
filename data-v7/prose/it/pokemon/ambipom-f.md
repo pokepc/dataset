@@ -1,0 +1,3 @@
+# Ambipom (Female)
+
+Pokémon Lungacoda

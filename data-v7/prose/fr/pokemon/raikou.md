@@ -1,0 +1,3 @@
+# Raikou
+
+Pokémon Foudre

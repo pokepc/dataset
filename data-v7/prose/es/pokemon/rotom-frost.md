@@ -1,0 +1,3 @@
+# Rotom Frío
+
+Pokémon Plasma

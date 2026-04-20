@@ -1,0 +1,3 @@
+# Fukano
+
+Welpen-Pokémon

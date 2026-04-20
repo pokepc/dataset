@@ -1,0 +1,3 @@
+# Barbicha
+
+Pokémon Barbillon

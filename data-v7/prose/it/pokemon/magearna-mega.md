@@ -1,0 +1,3 @@
+# Mega Magearna
+
+Pokémon Artificiale

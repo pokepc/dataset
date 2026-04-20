@@ -1,0 +1,3 @@
+# Gastrodon
+
+Sea Slug Pokémon

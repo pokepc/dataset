@@ -1,0 +1,3 @@
+# Exagide
+
+Pokémon Noble Lame

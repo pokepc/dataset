@@ -1,0 +1,2 @@
+# FireRed & LeafGreen
+

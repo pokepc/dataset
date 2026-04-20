@@ -1,0 +1,3 @@
+# Emolga
+
+Flughörnchen-Pokémon

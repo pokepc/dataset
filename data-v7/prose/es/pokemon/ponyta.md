@@ -1,0 +1,3 @@
+# Ponyta
+
+Pokémon Caballo Fuego

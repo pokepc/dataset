@@ -1,0 +1,3 @@
+# Pionskora
+
+Skorpion-Pokémon

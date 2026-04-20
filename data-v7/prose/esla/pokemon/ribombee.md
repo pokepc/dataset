@@ -1,0 +1,3 @@
+# Ribombee
+
+Bee Fly Pokémon

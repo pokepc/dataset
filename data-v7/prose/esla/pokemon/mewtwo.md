@@ -1,0 +1,3 @@
+# Mewtwo
+
+Genetic Pokémon

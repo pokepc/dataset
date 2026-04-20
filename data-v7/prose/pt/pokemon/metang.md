@@ -1,0 +1,3 @@
+# Metang
+
+Iron Claw Pokémon

@@ -1,0 +1,3 @@
+# Scatterbug
+
+Scatterdust Pokémon

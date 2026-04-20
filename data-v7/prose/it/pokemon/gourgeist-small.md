@@ -1,0 +1,3 @@
+# Gourgeist (Mini)
+
+Pokémon Zucca

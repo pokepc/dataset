@@ -1,0 +1,3 @@
+# Araquanid
+
+Pokémon Bolladacqua

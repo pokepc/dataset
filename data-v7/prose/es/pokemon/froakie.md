@@ -1,0 +1,3 @@
+# Froakie
+
+Pokémon Burburrana

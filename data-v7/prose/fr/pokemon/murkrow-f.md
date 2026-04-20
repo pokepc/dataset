@@ -1,0 +1,3 @@
+# Cornèbre (Female)
+
+Pokémon Obscurité

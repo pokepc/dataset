@@ -1,0 +1,3 @@
+# Mega Pinsir
+
+Pokémon Escarabajo

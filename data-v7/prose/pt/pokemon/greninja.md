@@ -1,0 +1,3 @@
+# Greninja
+
+Ninja Pokémon

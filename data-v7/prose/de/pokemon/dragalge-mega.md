@@ -1,0 +1,3 @@
+# Mega-Tandrak
+
+Tangmimikry-Pokémon

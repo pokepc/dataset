@@ -1,0 +1,306 @@
+{
+  "id": "sv",
+  "name": "Scarlet & Violet",
+  "gen": 9,
+  "nameSlug": "scarlet-violet",
+  "codename": "Titan",
+  "type": "set",
+  "series": "main",
+  "gameSet": null,
+  "gameSuperSet": null,
+  "releaseDate": "2022-11-18",
+  "region": "paldea",
+  "originMark": "paldea",
+  "pokedexes": [
+    "paldea",
+    "paldea-kitakami",
+    "paldea-blueberry"
+  ],
+  "maxBoxes": 32,
+  "maxBoxSize": 30,
+  "platforms": [
+    "switch"
+  ],
+  "features": {
+    "storage": true,
+    "pokedex": true,
+    "training": true,
+    "shiny": true,
+    "items": true,
+    "gender": true,
+    "pokerus": true,
+    "nature": true,
+    "ribbons": true,
+    "marks": true,
+    "markings": true,
+    "shadow": false,
+    "ball": true,
+    "mega": false,
+    "zmove": false,
+    "gmax": false,
+    "alpha": false,
+    "tera": true,
+    "plusmvs": false,
+    "mints": false,
+    "sizes": false,
+    "abilities": true
+  },
+  "games": [
+    {
+      "id": "sv-s",
+      "name": "Scarlet",
+      "nameSlug": "scarlet",
+      "i18n": {
+        "en": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "fr": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "de": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "es": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "esla": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "it": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "ja": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "chs": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "cht": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "ko": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        },
+        "pt": {
+          "name": "Scarlet",
+          "nameSlug": "scarlet"
+        }
+      }
+    },
+    {
+      "id": "sv-v",
+      "name": "Violet",
+      "nameSlug": "violet",
+      "i18n": {
+        "en": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "fr": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "de": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "es": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "esla": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "it": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "ja": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "chs": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "cht": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "ko": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        },
+        "pt": {
+          "name": "Violet",
+          "nameSlug": "violet"
+        }
+      }
+    }
+  ],
+  "dlcs": [
+    {
+      "id": "sv-tealmask",
+      "name": "The Teal Mask",
+      "nameSlug": "the-teal-mask",
+      "codename": "Sudachi",
+      "releaseDate": "2023-10-22",
+      "i18n": {
+        "en": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "fr": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "de": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "es": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "esla": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "it": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "ja": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "chs": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "cht": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "ko": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        },
+        "pt": {
+          "name": "The Teal Mask",
+          "nameSlug": "the-teal-mask"
+        }
+      }
+    },
+    {
+      "id": "sv-indigodisk",
+      "name": "The Indigo Disk",
+      "nameSlug": "the-indigo-disk",
+      "codename": "Sudachi",
+      "releaseDate": "2023-12-31",
+      "i18n": {
+        "en": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "fr": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "de": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "es": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "esla": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "it": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "ja": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "chs": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "cht": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "ko": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        },
+        "pt": {
+          "name": "The Indigo Disk",
+          "nameSlug": "the-indigo-disk"
+        }
+      }
+    }
+  ],
+  "i18n": {
+    "en": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "fr": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "de": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "es": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "esla": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "it": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "ja": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "chs": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "cht": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "ko": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    },
+    "pt": {
+      "name": "Scarlet & Violet",
+      "nameSlug": "scarlet-violet"
+    }
+  }
+}

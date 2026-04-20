@@ -1,0 +1,3 @@
+# Ferroseed
+
+Pokémon Fruto Espina

@@ -1,0 +1,3 @@
+# Trubbish
+
+Pokémon Spazzatura

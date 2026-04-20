@@ -1,0 +1,3 @@
+# Primeape
+
+Pokémon Suinpanzé

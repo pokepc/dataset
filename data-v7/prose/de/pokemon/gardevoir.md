@@ -1,0 +1,3 @@
+# Guardevoir
+
+Umarmungs-Pokémon

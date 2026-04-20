@@ -1,0 +1,3 @@
+# Politoed (Female)
+
+Frog Pokémon

@@ -1,0 +1,3 @@
+# Maschock
+
+Kraftprotz-Pokémon

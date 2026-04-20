@@ -1,0 +1,3 @@
+# Cobalion
+
+Pokémon Metalcuore

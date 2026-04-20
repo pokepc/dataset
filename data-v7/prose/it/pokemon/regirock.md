@@ -1,0 +1,3 @@
+# Regirock
+
+Pokémon Picco

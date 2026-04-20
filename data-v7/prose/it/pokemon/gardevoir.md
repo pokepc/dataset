@@ -1,0 +1,3 @@
+# Gardevoir
+
+Pokémon Abbraccio

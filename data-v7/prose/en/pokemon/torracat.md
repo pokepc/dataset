@@ -1,0 +1,3 @@
+# Torracat
+
+Fire Cat Pokémon

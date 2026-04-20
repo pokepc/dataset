@@ -1,0 +1,3 @@
+# Golgantes
+
+Urgolem-Pokémon

@@ -1,0 +1,3 @@
+# Eldegoss
+
+Cotton Bloom Pokémon

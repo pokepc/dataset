@@ -1,0 +1,3 @@
+# Mega Gallade
+
+Blade Pokémon

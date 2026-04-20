@@ -1,0 +1,3 @@
+# Demeteros
+
+Reichtums-Pokémon

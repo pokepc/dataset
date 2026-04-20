@@ -1,0 +1,3 @@
+# Ferrothorn
+
+Thorn Pod Pokémon

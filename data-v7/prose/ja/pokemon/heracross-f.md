@@ -1,0 +1,3 @@
+# Heracross (Female)
+
+１ぽんヅノポケモン

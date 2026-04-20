@@ -1,0 +1,3 @@
+# Mega Darkrai
+
+Pokémon Oscuridad

@@ -1,0 +1,3 @@
+# Slowbro
+
+Hermit Crab Pokémon

@@ -1,0 +1,3 @@
+# Raikou
+
+Thunder Pokémon

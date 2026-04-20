@@ -1,0 +1,3 @@
+# Hydrapple
+
+Apple Hydra Pokémon

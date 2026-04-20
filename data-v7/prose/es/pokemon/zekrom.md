@@ -1,0 +1,3 @@
+# Zekrom
+
+Pokémon Negro Puro

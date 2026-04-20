@@ -1,0 +1,3 @@
+# Jellicent
+
+Floating Pokémon

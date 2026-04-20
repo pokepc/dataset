@@ -1,0 +1,3 @@
+# Silvally
+
+Synthetic Pokémon

@@ -1,0 +1,3 @@
+# Gallopa
+
+Feuerpferd-Pokémon

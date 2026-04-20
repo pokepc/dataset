@@ -1,0 +1,3 @@
+# Magnezone
+
+Magnetgebiets-Pokémon

@@ -1,0 +1,3 @@
+# Fennekin
+
+Fox Pokémon

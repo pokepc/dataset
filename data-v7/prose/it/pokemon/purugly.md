@@ -1,0 +1,3 @@
+# Purugly
+
+Pokémon Gattotigre

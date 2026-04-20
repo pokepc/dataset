@@ -1,0 +1,3 @@
+# Okidogi
+
+Retainer Pokémon

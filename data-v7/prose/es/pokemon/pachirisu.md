@@ -1,0 +1,3 @@
+# Pachirisu
+
+Pokémon Ardillalec

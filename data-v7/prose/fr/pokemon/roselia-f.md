@@ -1,0 +1,3 @@
+# Rosélia (Female)
+
+Pokémon Épine

@@ -1,0 +1,3 @@
+# Sedisal
+
+Steinsalz

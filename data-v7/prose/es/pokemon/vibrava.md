@@ -1,0 +1,3 @@
+# Vibrava
+
+Pokémon Vibrante

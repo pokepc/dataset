@@ -1,0 +1,3 @@
+# Alakazam (Female)
+
+Psi Pokémon

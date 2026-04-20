@@ -1,0 +1,3 @@
+# Pinsir
+
+Kneifkäfer-Pokémon

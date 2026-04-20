@@ -1,0 +1,3 @@
+# Gliscor
+
+Pokémon Scorpidente

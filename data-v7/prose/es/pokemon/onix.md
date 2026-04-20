@@ -1,0 +1,3 @@
+# Onix
+
+Pokémon Serpiente Roca

@@ -1,0 +1,3 @@
+# Whiscash
+
+Whiskers Pokémon

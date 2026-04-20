@@ -1,0 +1,3 @@
+# Glimmora
+
+Ore Pokémon

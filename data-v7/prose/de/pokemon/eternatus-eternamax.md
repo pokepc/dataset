@@ -1,0 +1,3 @@
+# Endynalos (Unendynamax)
+
+Giganten-Pokémon

@@ -1,0 +1,3 @@
+# Voltorb
+
+Ball Pokémon

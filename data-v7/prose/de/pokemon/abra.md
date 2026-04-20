@@ -1,0 +1,3 @@
+# Abra
+
+Psi-Pokémon

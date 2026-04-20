@@ -1,0 +1,3 @@
+# Mega Latios
+
+Pokémon Eón

@@ -1,0 +1,3 @@
+# Buizel
+
+Sea Weasel Pokémon

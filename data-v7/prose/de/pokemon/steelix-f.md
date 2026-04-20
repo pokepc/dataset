@@ -1,0 +1,3 @@
+# Stahlos (Female)
+
+Stahlboa-Pokémon

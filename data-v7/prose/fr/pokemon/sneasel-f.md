@@ -1,0 +1,3 @@
+# Farfuret (Female)
+
+Pokémon Grifacérée

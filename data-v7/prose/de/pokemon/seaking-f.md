@@ -1,0 +1,3 @@
+# Golking (Female)
+
+Goldfisch-Pokémon

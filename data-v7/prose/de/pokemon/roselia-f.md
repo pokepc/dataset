@@ -1,0 +1,3 @@
+# Roselia (Female)
+
+Dorn-Pokémon

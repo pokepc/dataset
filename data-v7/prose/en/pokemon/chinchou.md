@@ -1,0 +1,3 @@
+# Chinchou
+
+Angler Pokémon

@@ -1,0 +1,3 @@
+# Nincada
+
+Trainee Pokémon

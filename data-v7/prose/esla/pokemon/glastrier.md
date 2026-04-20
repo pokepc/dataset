@@ -1,0 +1,3 @@
+# Glastrier
+
+Wild Horse Pokémon

@@ -1,0 +1,3 @@
+# Kingdra
+
+Dragon Pokémon

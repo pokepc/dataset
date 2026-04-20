@@ -1,0 +1,115 @@
+{
+  "id": "sawsbuck",
+  "nid": "sawsbuck",
+  "name": "Sawsbuck",
+  "genus": "Season Pokémon",
+  "dexNum": 586,
+  "gen": 5,
+  "region": "unova",
+  "debutIn": "bw",
+  "type1": "normal",
+  "type2": "grass",
+  "color": "brown",
+  "abilities": [
+    "chlorophyll",
+    "sapsipper",
+    "serenegrace"
+  ],
+  "baseHp": 80,
+  "baseAtk": 100,
+  "baseDef": 70,
+  "baseSpAtk": 60,
+  "baseSpDef": 70,
+  "baseSpeed": 95,
+  "height": 190,
+  "weight": 9250,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "formId": "spring",
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "sawsbuck-summer",
+    "sawsbuck-autumn",
+    "sawsbuck-winter"
+  ],
+  "formsDesc": "Forms only affect appearance.  Sawsbuck switches forms to match the season if it is in the party upon loading the game.\n\nIf the season has changed since the game was saved, and the game was saved indoors, the previous save's season will be displayed upon loading the game, and Sawsbuck will change according to that season.  Upon stepping outdoors, the change of season is displayed and Deerling will change again.",
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": false,
+  "canDynamax": true,
+  "canGmax": false,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "evolvesFrom": "deerling",
+  "evoFromLevel": 34,
+  "refs": {
+    "pkApiId": "586",
+    "pkApiFormId": "586",
+    "pkApiFormSlug": "sawsbuck-spring",
+    "smogon": "sawsbuck",
+    "showdown": "sawsbuck",
+    "showdownName": "Sawsbuck",
+    "serebii": "sawsbuck",
+    "bulbapedia": "Sawsbuck"
+  },
+  "i18n": {
+    "en": {
+      "name": "Sawsbuck",
+      "genus": "Season Pokémon"
+    },
+    "fr": {
+      "name": "Haydaim",
+      "genus": "Pokémon Saison"
+    },
+    "de": {
+      "name": "Kronjuwild",
+      "genus": "Jahreszeit"
+    },
+    "es": {
+      "name": "Sawsbuck",
+      "genus": "Pokémon Estacional"
+    },
+    "esla": {
+      "name": "Sawsbuck",
+      "genus": "Season Pokémon"
+    },
+    "it": {
+      "name": "Sawsbuck",
+      "genus": "Pokémon Stagione"
+    },
+    "pt": {
+      "name": "Sawsbuck",
+      "genus": "Season Pokémon"
+    },
+    "ja": {
+      "name": "メブキジカ",
+      "genus": "きせつポケモン"
+    },
+    "ko": {
+      "name": "바라철록",
+      "genus": "계절포켓몬"
+    },
+    "chs": {
+      "name": "萌芽鹿",
+      "genus": "季节宝可梦"
+    },
+    "cht": {
+      "name": "萌芽鹿",
+      "genus": "季節寶可夢"
+    }
+  }
+}

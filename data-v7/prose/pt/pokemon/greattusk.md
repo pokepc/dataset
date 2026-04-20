@@ -1,0 +1,3 @@
+# Great Tusk
+
+Paradox Pokémon

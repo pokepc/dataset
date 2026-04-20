@@ -1,0 +1,3 @@
+# Honedge
+
+Sword Pokémon

@@ -1,0 +1,111 @@
+{
+  "id": "blastoise",
+  "nid": "blastoise",
+  "name": "Blastoise",
+  "genus": "Shellfish Pokémon",
+  "dexNum": 9,
+  "gen": 1,
+  "region": "kanto",
+  "debutIn": "rb",
+  "type1": "water",
+  "type2": null,
+  "color": "blue",
+  "abilities": [
+    "torrent",
+    "raindish"
+  ],
+  "baseHp": 79,
+  "baseAtk": 83,
+  "baseDef": 100,
+  "baseSpAtk": 85,
+  "baseSpDef": 105,
+  "baseSpeed": 78,
+  "height": 160,
+  "weight": 8550,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "forms": [
+    "blastoise-mega",
+    "blastoise-gmax"
+  ],
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "canBeAlpha": false,
+  "canDynamax": true,
+  "canGmax": true,
+  "shinyReleased": true,
+  "isParadox": false,
+  "isConvergent": false,
+  "evolvesFrom": "wartortle",
+  "evoFromLevel": 36,
+  "refs": {
+    "pkApiId": "9",
+    "pkApiFormId": "9",
+    "pkApiFormSlug": "blastoise",
+    "smogon": "blastoise",
+    "showdown": "blastoise",
+    "showdownName": "Blastoise",
+    "serebii": "blastoise",
+    "bulbapedia": "Blastoise"
+  },
+  "i18n": {
+    "en": {
+      "name": "Blastoise",
+      "genus": "Shellfish Pokémon"
+    },
+    "fr": {
+      "name": "Tortank",
+      "genus": "Pokémon Carapace"
+    },
+    "de": {
+      "name": "Turtok",
+      "genus": "Panzertier-Pokémon"
+    },
+    "es": {
+      "name": "Blastoise",
+      "genus": "Pokémon Armazón"
+    },
+    "esla": {
+      "name": "Blastoise",
+      "genus": "Shellfish Pokémon"
+    },
+    "it": {
+      "name": "Blastoise",
+      "genus": "Pokémon Crostaceo"
+    },
+    "pt": {
+      "name": "Blastoise",
+      "genus": "Shellfish Pokémon"
+    },
+    "ja": {
+      "name": "カメックス",
+      "genus": "こうらポケモン"
+    },
+    "ko": {
+      "name": "거북왕",
+      "genus": "껍질포켓몬"
+    },
+    "chs": {
+      "name": "水箭龟",
+      "genus": "甲壳宝可梦"
+    },
+    "cht": {
+      "name": "水箭龜",
+      "genus": "甲殼寶可夢"
+    }
+  }
+}

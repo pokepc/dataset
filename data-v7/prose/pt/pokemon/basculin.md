@@ -1,0 +1,3 @@
+# Basculin
+
+Hostile Pokémon

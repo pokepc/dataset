@@ -1,0 +1,3 @@
+# Tandrak
+
+Tangmimikry-Pokémon

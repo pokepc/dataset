@@ -1,0 +1,3 @@
+# Landorus
+
+Abundance Pokémon

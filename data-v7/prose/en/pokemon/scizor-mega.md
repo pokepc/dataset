@@ -1,0 +1,3 @@
+# Mega Scizor
+
+Pincer Pokémon

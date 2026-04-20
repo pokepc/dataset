@@ -1,0 +1,3 @@
+# Meganium (Female)
+
+Herb Pokémon

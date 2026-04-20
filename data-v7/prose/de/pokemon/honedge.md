@@ -1,0 +1,3 @@
+# Gramokles
+
+Klingenkraft-Pokémon

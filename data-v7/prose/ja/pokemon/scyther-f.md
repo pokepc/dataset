@@ -1,0 +1,3 @@
+# Scyther (Female)
+
+かまきりポケモン

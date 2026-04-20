@@ -1,0 +1,3 @@
+# Simsala (Female)
+
+Psi-Pokémon

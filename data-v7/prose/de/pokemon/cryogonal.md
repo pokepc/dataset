@@ -1,0 +1,3 @@
+# Frigometri
+
+Kristall-Pokémon

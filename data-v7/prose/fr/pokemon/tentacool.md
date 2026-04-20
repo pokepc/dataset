@@ -1,0 +1,3 @@
+# Tentacool
+
+Pokémon Mollusque

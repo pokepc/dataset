@@ -1,0 +1,3 @@
+# Rampardos
+
+Pokémon Cranioso

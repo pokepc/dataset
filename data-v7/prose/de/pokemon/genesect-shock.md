@@ -1,0 +1,3 @@
+# Genesect (Blitzmodul)
+
+Paläozoikums-Pokémon

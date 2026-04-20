@@ -1,0 +1,3 @@
+# Spododo
+
+Pokémon Luminescent

@@ -1,0 +1,3 @@
+# Gloupti (Female)
+
+Pokémon Estomac

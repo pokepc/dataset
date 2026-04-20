@@ -1,0 +1,3 @@
+# Floette
+
+Single Bloom Pokémon

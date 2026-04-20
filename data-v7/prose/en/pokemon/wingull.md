@@ -1,0 +1,3 @@
+# Wingull
+
+Seagull Pokémon

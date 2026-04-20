@@ -1,0 +1,3 @@
+# Hitze-Rotom
+
+Plasma-Pokémon

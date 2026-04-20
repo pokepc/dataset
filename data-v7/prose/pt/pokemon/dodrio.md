@@ -1,0 +1,3 @@
+# Dodrio
+
+Triple Bird Pokémon

@@ -1,0 +1,3 @@
+# Clefairy
+
+Fairy Pokémon

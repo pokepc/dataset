@@ -1,0 +1,3 @@
+# Ash-Greninja
+
+Ninja Pokémon

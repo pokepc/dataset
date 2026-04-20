@@ -1,0 +1,3 @@
+# Nuzleaf (Female)
+
+Wily Pokémon

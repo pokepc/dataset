@@ -1,0 +1,3 @@
+# Aquali
+
+Pokémon Bulleur

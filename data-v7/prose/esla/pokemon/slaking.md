@@ -1,0 +1,3 @@
+# Slaking
+
+Lazy Pokémon

@@ -1,0 +1,3 @@
+# Brimova
+
+Geruhsam-Pokémon

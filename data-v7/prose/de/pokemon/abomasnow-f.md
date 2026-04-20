@@ -1,0 +1,3 @@
+# Rexblisar (Female)
+
+Frostbaum-Pokémon

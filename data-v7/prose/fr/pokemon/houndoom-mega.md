@@ -1,0 +1,3 @@
+# MégaDémolosse
+
+Pokémon Sombre

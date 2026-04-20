@@ -1,0 +1,3 @@
+# Kappalores
+
+Sorglos-Pokémon

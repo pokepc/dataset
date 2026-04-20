@@ -1,0 +1,3 @@
+# MégaSharpedo
+
+Pokémon Brutal

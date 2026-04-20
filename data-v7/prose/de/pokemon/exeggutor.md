@@ -1,0 +1,3 @@
+# Kokowei
+
+Palmfrucht-Pokémon

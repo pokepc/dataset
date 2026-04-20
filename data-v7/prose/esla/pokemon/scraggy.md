@@ -1,0 +1,3 @@
+# Scraggy
+
+Shedding Pokémon

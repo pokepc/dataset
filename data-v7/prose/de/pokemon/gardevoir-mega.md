@@ -1,0 +1,3 @@
+# Mega-Guardevoir
+
+Umarmungs-Pokémon

@@ -1,0 +1,3 @@
+# Meganium
+
+Pokémon Erbe

@@ -1,0 +1,3 @@
+# Florizarre (Female)
+
+Pokémon Graine

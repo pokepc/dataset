@@ -1,0 +1,3 @@
+# Tynamo
+
+Pokémon Elettropesce

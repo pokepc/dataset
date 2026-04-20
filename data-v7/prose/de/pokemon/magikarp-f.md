@@ -1,0 +1,3 @@
+# Karpador (Female)
+
+Fisch-Pokémon

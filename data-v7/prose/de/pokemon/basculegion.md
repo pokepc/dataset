@@ -1,0 +1,3 @@
+# Salmagnis
+
+Großfisch-Pokémon

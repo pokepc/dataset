@@ -1,0 +1,3 @@
+# Magnezone
+
+Magnet Area Pokémon

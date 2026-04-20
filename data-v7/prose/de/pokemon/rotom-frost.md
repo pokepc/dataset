@@ -1,0 +1,3 @@
+# Frost-Rotom
+
+Plasma-Pokémon

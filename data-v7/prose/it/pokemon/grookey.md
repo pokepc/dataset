@@ -1,0 +1,3 @@
+# Grookey
+
+Pokémon Scimpanzé

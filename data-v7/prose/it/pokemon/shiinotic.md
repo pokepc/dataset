@@ -1,0 +1,3 @@
+# Shiinotic
+
+Pokémon Luminescenza

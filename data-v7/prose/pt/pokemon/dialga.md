@@ -1,0 +1,3 @@
+# Dialga
+
+Temporal Pokémon

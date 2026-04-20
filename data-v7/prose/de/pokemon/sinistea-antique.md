@@ -1,0 +1,3 @@
+# Fatalitee (Originalform)
+
+Schwarztee-Pokémon

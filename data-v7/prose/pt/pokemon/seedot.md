@@ -1,0 +1,3 @@
+# Seedot
+
+Acorn Pokémon

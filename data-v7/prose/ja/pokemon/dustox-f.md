@@ -1,0 +1,3 @@
+# Dustox (Female)
+
+どくがポケモン

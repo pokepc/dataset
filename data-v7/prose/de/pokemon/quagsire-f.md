@@ -1,0 +1,3 @@
+# Morlord (Female)
+
+Fisch-Pokémon

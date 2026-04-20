@@ -1,0 +1,3 @@
+# Mega Greninja
+
+Pokémon Ninja

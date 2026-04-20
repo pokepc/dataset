@@ -1,0 +1,3 @@
+# MégaBrutapode
+
+Pokémon Mégaplopode

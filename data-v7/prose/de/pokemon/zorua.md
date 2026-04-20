@@ -1,0 +1,3 @@
+# Zorua
+
+Lausefuchs-Pokémon

@@ -1,0 +1,3 @@
+# Urgl (Stopfform)
+
+Schling-Pokémon

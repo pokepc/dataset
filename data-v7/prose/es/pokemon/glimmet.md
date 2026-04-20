@@ -1,0 +1,3 @@
+# Glimmet
+
+Ore Pokémon

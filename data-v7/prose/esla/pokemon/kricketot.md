@@ -1,0 +1,3 @@
+# Kricketot
+
+Cricket Pokémon

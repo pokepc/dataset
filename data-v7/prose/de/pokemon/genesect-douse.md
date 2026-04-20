@@ -1,0 +1,3 @@
+# Genesect (Aquamodul)
+
+Paläozoikums-Pokémon

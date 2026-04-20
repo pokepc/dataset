@@ -1,0 +1,3 @@
+# Yanmega
+
+Ogre Darner Pokémon

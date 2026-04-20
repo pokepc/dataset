@@ -1,0 +1,3 @@
+# Krookodile
+
+Pokémon Amenazador

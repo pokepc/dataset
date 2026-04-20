@@ -1,0 +1,3 @@
+# Nidoqueen
+
+Drill Pokémon

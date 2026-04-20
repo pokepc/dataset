@@ -1,0 +1,3 @@
+# MégaCamérupt
+
+Pokémon Éruption

@@ -1,0 +1,3 @@
+# Araqua
+
+Wasserblasen-Pokémon

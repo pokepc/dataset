@@ -1,0 +1,3 @@
+# Élekable
+
+Pokémon Foudrélec

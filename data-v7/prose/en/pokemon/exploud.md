@@ -1,0 +1,3 @@
+# Exploud
+
+Loud Noise Pokémon

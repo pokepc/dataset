@@ -1,0 +1,3 @@
+# Genesect (Flammenmodul)
+
+Paläozoikums-Pokémon

@@ -1,0 +1,3 @@
+# Emboar
+
+Pokémon Cerdo Ígneo

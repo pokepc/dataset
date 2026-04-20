@@ -1,0 +1,3 @@
+# Cottini
+
+Blumenzier-Pokémon

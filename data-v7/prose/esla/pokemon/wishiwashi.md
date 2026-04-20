@@ -1,0 +1,3 @@
+# Wishiwashi
+
+Small Fry Pokémon

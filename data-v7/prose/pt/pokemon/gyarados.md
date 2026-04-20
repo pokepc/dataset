@@ -1,0 +1,3 @@
+# Gyarados
+
+Atrocious Pokémon

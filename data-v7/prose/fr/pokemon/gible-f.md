@@ -1,0 +1,3 @@
+# Griknot (Female)
+
+Pokémon Terrequin

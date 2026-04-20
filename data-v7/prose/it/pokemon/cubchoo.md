@@ -1,0 +1,3 @@
+# Cubchoo
+
+Pokémon Freddo

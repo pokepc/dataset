@@ -1,0 +1,3 @@
+# Clodsire
+
+Spiny Fish Pokémon

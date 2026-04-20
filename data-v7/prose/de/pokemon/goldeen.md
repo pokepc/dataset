@@ -1,0 +1,3 @@
+# Goldini
+
+Goldfisch-Pokémon

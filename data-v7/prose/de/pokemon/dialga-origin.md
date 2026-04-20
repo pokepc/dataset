@@ -1,0 +1,3 @@
+# Dialga (Urform)
+
+Zeitweilig-Pokémon

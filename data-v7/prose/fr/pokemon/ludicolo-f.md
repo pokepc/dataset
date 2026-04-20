@@ -1,0 +1,3 @@
+# Ludicolo (Female)
+
+Pokémon Insouciant

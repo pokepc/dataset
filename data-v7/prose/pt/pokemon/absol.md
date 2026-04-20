@@ -1,0 +1,3 @@
+# Absol
+
+Disaster Pokémon

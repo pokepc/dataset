@@ -1,0 +1,3 @@
+# Lippoutou
+
+Pokémon Humanoïde

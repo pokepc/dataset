@@ -1,0 +1,3 @@
+# Pachirisu (Female)
+
+Pokémon Écurélec

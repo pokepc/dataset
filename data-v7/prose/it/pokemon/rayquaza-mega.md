@@ -1,0 +1,3 @@
+# Mega Rayquaza
+
+Pokémon Stratosfera

@@ -1,0 +1,3 @@
+# Mega Delphox
+
+Fox Pokémon

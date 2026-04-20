@@ -1,0 +1,3 @@
+# Mega Drampa
+
+Placid Pokémon

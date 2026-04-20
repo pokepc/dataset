@@ -1,0 +1,3 @@
+# Groudon
+
+Kontinent-Pokémon

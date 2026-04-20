@@ -1,0 +1,3 @@
+# Mega Scrafty
+
+Pokémon Furfante

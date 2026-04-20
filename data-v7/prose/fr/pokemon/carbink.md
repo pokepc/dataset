@@ -1,0 +1,3 @@
+# Strassie
+
+Pokémon Joyau

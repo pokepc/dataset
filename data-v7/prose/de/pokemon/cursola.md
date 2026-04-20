@@ -1,0 +1,3 @@
+# Gorgasonn
+
+Korallen-Pokémon

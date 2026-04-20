@@ -1,0 +1,3 @@
+# Pelipper
+
+Water Bird Pokémon

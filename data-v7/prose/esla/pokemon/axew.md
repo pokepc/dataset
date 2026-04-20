@@ -1,0 +1,3 @@
+# Axew
+
+Tusk Pokémon
