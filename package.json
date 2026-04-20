@@ -22,8 +22,8 @@
     "dev": "PORT=4011 bun run 'viewer/**/*.html'",
     "test": "vitest --run --bail 20",
     "format": "oxfmt --write . && pnpm format:data",
-    "format:data": "pnpm format:json ./data --write",
-    "format:data-check": "pnpm format:json ./data --check",
+    "format:data": "pnpm format:json ./data --write && pnpm format:json ./data-v7 --write",
+    "format:data-check": "pnpm format:json ./data --check && pnpm format:json ./data-v7 --check",
     "format:check": "oxfmt --check && pnpm format:data-check",
     "format:json": "bun run scripts/format-json-dir.ts",
     "typecheck": "tsc --noEmit"
