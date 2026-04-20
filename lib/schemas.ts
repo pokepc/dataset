@@ -157,6 +157,7 @@ export const languageSchema = base.entity.extend({
   inGameCode: z.enum(languageInGameCodes),
   locale: z.string(),
   flag: z.string(),
+  pkApiId: z.string().nullable(), // PokeAPI ID
 })
 export const markSchema = base.entityWithGenAndDescs.extend({
   title: common.shortDesc,
