@@ -34,6 +34,11 @@ import type {
   itemSchema,
   languageSchema,
   markSchema,
+  modernBoxPresetBoxSchema,
+  modernBoxPresetIndexSchema,
+  modernBoxPresetSchema,
+  modernBoxPresetSlotSchema,
+  modernBoxPresetTags,
   moveSchema,
   natureSchema,
   onlineFeaturesSchema,
@@ -63,6 +68,11 @@ declare global {
     }
     export type LegacyBoxPresetBox = z.infer<typeof boxPresetBoxSchema>
     export type LegacyBoxPresetBoxPokemon = z.infer<typeof boxPresetBoxPokemonSchema>
+    export type ModernBoxPresetTag = (typeof modernBoxPresetTags)[number]
+    export type ModernBoxPresetIndex = z.infer<typeof modernBoxPresetIndexSchema>
+    export type ModernBoxPreset = z.infer<typeof modernBoxPresetSchema>
+    export type ModernBoxPresetBox = z.infer<typeof modernBoxPresetBoxSchema>
+    export type ModernBoxPresetSlot = z.infer<typeof modernBoxPresetSlotSchema>
     // Schema-based Types
     export type Ability = z.infer<typeof abilitySchema>
     export type AbilityTagId = (typeof abilityTagIds)[number]

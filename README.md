@@ -27,7 +27,10 @@ Requirements: Bun 1.3+ and PNPM 10.27+
   - `metadata/`: Extra metadata files (e.g. Pokémon sprite slice coords, etc.)
   - `pokedexes/`: Individial JSON files for each Pokédex.
   - `pokemon/`: Individial JSON files for each Pokémon.
-  - `boxpresets/`: Individial JSON files for each Living Dex Box preset.
+  - `boxpresets/`: Living Dex Box presets.
+    - `classic/`: legacy one-file-per-game-set preset maps.
+    - `modern/`: route-loadable prepared presets. Each `GAMESET_ID.json` is an ordered array of preset ids, and each
+      `GAMESET_ID/PRESET_ID.json` is one standalone preset file.
   - `.*.json`: Standalone JSON files (types, colors, items, etc.)
 
 - `lib/`
@@ -45,6 +48,26 @@ Requirements: Bun 1.3+ and PNPM 10.27+
 - `tests/*.test.ts`: Tests for the whole dataset.
 
 - `viewer/`: Viewer apps for the dataset. They are built with just Preact and Bun. Run `pnpm run dev` to start them.
+
+## Modern box presets
+
+Modern prepared box presets are generated from `data/boxpresets/classic/**` with:
+
+```bash
+pnpm cdn:boxpresets-modern
+```
+
+The generated layout is intentionally easy to prune by hand:
+
+- `data/boxpresets/modern/GAMESET_ID.json`: ordered preset ids for that game set.
+- `data/boxpresets/modern/GAMESET_ID/PRESET_ID.json`: one schema-versioned preset file.
+
+During `pnpm build:data`, this tree is copied to `public/dataset/boxpresets/` without adding the presets to the main
+`pokepc-static-data*.min.json` bundle. Route loaders should fetch only the needed same-origin asset, such as
+`/dataset/boxpresets/home.json` or `/dataset/boxpresets/home/grouped-region.json`.
+
+Known Classic-only Pokémon ids are sanitized to `null` slots by `lib/box-preset-sanitizer.ts` so box and slot order
+stays stable while incompatible content is made visible in transform diagnostics.
 
 ## Pokemon search syntax
 

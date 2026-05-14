@@ -347,14 +347,14 @@ export const boxPresetBoxPokemonSchema = common.slug.nullable().or(
 )
 
 export const boxPresetBoxSchema = z.object({
-  title: common.name.optional(),
+  title: z.string().max(120).optional(),
   pokemon: z.array(boxPresetBoxPokemonSchema),
 })
 
 export const boxPresetSchema = z.object({
   id: common.slug,
   legacyId: common.slug.optional(),
-  name: common.name,
+  name: z.string().max(120),
   version: z.coerce.number().int().min(0),
   gameSet: common.slug.nullable(),
   description: z.string(),
@@ -363,6 +363,58 @@ export const boxPresetSchema = z.object({
 })
 
 export const boxPresetMapSchema = z.record(z.string(), z.record(z.string(), boxPresetSchema))
+
+export const modernBoxPresetTags = [
+  'recommended',
+  'national',
+  'grouped',
+  'sorted',
+  'minimal',
+  'shiny',
+  'forms',
+] as const
+
+export const modernBoxPresetIndexSchema = z.array(common.slug)
+
+export const modernBoxPresetSlotSchema = common.slug.nullable().or(
+  z
+    .object({
+      pokemon: common.slug,
+      shiny: z.coerce.boolean().optional(),
+      gmax: z.coerce.boolean().optional(),
+      shinyLocked: z.coerce.boolean().optional(),
+    })
+    .strict(),
+)
+
+export const modernBoxPresetBoxSchema = z
+  .object({
+    name: z.string().max(120).optional(),
+    slots: z.array(modernBoxPresetSlotSchema),
+  })
+  .strict()
+
+export const modernBoxPresetSchema = z
+  .object({
+    schemaVersion: z.literal(1),
+    id: common.slug,
+    gameSet: common.slug,
+    name: z.string().max(120),
+    description: z.string().max(2000).optional(),
+    source: z
+      .object({
+        kind: z.literal('classic'),
+        gameSet: common.slug,
+        presetId: common.slug,
+        version: z.coerce.number().int().min(0).optional(),
+        legacyId: common.slug.optional(),
+      })
+      .strict()
+      .optional(),
+    tags: z.array(z.enum(modernBoxPresetTags)).optional(),
+    boxes: z.array(modernBoxPresetBoxSchema),
+  })
+  .strict()
 
 export const pokemonSearchFilterSchema = z.object({
   q: z.string().optional().catch(undefined),
