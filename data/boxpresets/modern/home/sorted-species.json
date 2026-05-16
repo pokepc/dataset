@@ -2,15 +2,19 @@
   "schemaVersion": 1,
   "id": "sorted-species",
   "gameSet": "home",
-  "name": "National: Sorted by Species",
-  "description": "(Recommended) Pokémon Boxes are sorted following HOME's National Dex order, separating Species and Forms. First you will find all the species, then all the forms starting in a new box (leaving a gap with the species).",
+  "name": "Species by Region, then sorted Forms",
+  "description": "Sorts species in National Dex order, then starts a separate form section after the species boxes. Generation breaks keep the species section readable while forms remain separated from the main Living Dex sequence. Forms are fully sorted without breaks.",
   "source": {
     "kind": "classic",
     "gameSet": "home",
     "presetId": "sorted-species",
     "version": 1
   },
-  "tags": ["national", "sorted"],
+  "tags": [
+    "grouped",
+    "sorted",
+    "forms"
+  ],
   "boxes": [
     {
       "slots": [
@@ -183,7 +187,9 @@
       ]
     },
     {
-      "slots": ["mew"]
+      "slots": [
+        "mew"
+      ]
     },
     {
       "slots": [
@@ -288,7 +294,18 @@
       ]
     },
     {
-      "slots": ["blissey", "raikou", "entei", "suicune", "larvitar", "pupitar", "tyranitar", "lugia", "hooh", "celebi"]
+      "slots": [
+        "blissey",
+        "raikou",
+        "entei",
+        "suicune",
+        "larvitar",
+        "pupitar",
+        "tyranitar",
+        "lugia",
+        "hooh",
+        "celebi"
+      ]
     },
     {
       "slots": [
@@ -739,7 +756,14 @@
       ]
     },
     {
-      "slots": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"]
+      "slots": [
+        "zekrom",
+        "landorus",
+        "kyurem",
+        "keldeo",
+        "meloetta",
+        "genesect"
+      ]
     },
     {
       "slots": [
@@ -1022,12 +1046,19 @@
         "regidrago",
         "glastrier",
         "spectrier",
-        "calyrex",
-        "wyrdeer"
+        "calyrex"
       ]
     },
     {
-      "slots": ["kleavor", "ursaluna", "basculegion", "sneasler", "overqwil", "enamorus"]
+      "slots": [
+        "wyrdeer",
+        "kleavor",
+        "ursaluna",
+        "basculegion",
+        "sneasler",
+        "overqwil",
+        "enamorus"
+      ]
     },
     {
       "slots": [
@@ -1408,7 +1439,6 @@
         "thundurus-therian",
         "landorus-therian",
         "keldeo-resolute",
-        null,
         "vivillon-meadow",
         "vivillon-polar",
         "vivillon-tundra",
@@ -1434,13 +1464,14 @@
         "flabebe-white",
         "flabebe-yellow",
         "floette-blue",
-        "floette-orange"
+        "floette-orange",
+        "floette-white"
       ]
     },
     {
       "slots": [
-        "floette-white",
         "floette-yellow",
+        "floette-eternal",
         "florges-blue",
         "florges-orange",
         "florges-white",
@@ -1464,19 +1495,16 @@
         "gourgeist-large",
         "gourgeist-super",
         "avalugg-hisui",
-        null,
         "zygarde-10",
-        null,
         "hoopa-unbound",
-        "decidueye-hisui"
+        "decidueye-hisui",
+        "oricorio-pom-pom",
+        "oricorio-pau"
       ]
     },
     {
       "slots": [
-        "oricorio-pom-pom",
-        "oricorio-pau",
         "oricorio-sensu",
-        null,
         "lycanroc-midnight",
         "lycanroc-dusk",
         "minior-red",
@@ -1502,14 +1530,14 @@
         "alcremie-ruby-cream-star",
         "alcremie-ruby-cream-clover",
         "alcremie-ruby-cream-flower",
-        "alcremie-ruby-cream-ribbon"
+        "alcremie-ruby-cream-ribbon",
+        "alcremie-matcha-cream-strawberry",
+        "alcremie-matcha-cream-berry",
+        "alcremie-matcha-cream-love"
       ]
     },
     {
       "slots": [
-        "alcremie-matcha-cream-strawberry",
-        "alcremie-matcha-cream-berry",
-        "alcremie-matcha-cream-love",
         "alcremie-matcha-cream-star",
         "alcremie-matcha-cream-clover",
         "alcremie-matcha-cream-flower",
@@ -1536,14 +1564,14 @@
         "alcremie-salted-cream-flower",
         "alcremie-salted-cream-ribbon",
         "alcremie-ruby-swirl-strawberry",
-        "alcremie-ruby-swirl-berry"
+        "alcremie-ruby-swirl-berry",
+        "alcremie-ruby-swirl-love",
+        "alcremie-ruby-swirl-star",
+        "alcremie-ruby-swirl-clover"
       ]
     },
     {
       "slots": [
-        "alcremie-ruby-swirl-love",
-        "alcremie-ruby-swirl-star",
-        "alcremie-ruby-swirl-clover",
         "alcremie-ruby-swirl-flower",
         "alcremie-ruby-swirl-ribbon",
         "alcremie-caramel-swirl-strawberry",
@@ -1570,14 +1598,14 @@
         "maushold-three",
         "squawkabilly-blue",
         "squawkabilly-yellow",
-        "squawkabilly-white"
+        "squawkabilly-white",
+        "tatsugiri-droopy",
+        "tatsugiri-stretchy",
+        "dudunsparce-three-segment"
       ]
     },
     {
       "slots": [
-        "tatsugiri-droopy",
-        "tatsugiri-stretchy",
-        "dudunsparce-three-segment",
         "gimmighoul-roaming",
         "poltchageist-artisan",
         "sinistcha-masterpiece"

@@ -2,15 +2,18 @@
   "schemaVersion": 1,
   "id": "fully-sorted",
   "gameSet": "home",
-  "name": "National: Sorted by Forms",
-  "description": "Pokémon Boxes are sorted following HOME's National Dex order, mixing Species and Forms together.",
+  "name": "Fully Sorted by Regions",
+  "description": "Recommended when you want to sort species and forms together in National Pokédex order, with generation breaks and reserve space where useful. This is the most direct full-sort layout for a compact Living Dex that still makes future reorganization minimal thanks to the box breaks.",
   "source": {
     "kind": "classic",
     "gameSet": "home",
     "presetId": "fully-sorted",
     "version": 1
   },
-  "tags": ["national", "sorted", "forms"],
+  "tags": [
+    "grouped",
+    "sorted"
+  ],
   "boxes": [
     {
       "slots": [
@@ -251,7 +254,16 @@
       ]
     },
     {
-      "slots": ["zapdos-galar", "moltres", "moltres-galar", "dratini", "dragonair", "dragonite", "mewtwo", "mew"]
+      "slots": [
+        "zapdos-galar",
+        "moltres",
+        "moltres-galar",
+        "dratini",
+        "dragonair",
+        "dragonite",
+        "mewtwo",
+        "mew"
+      ]
     },
     {
       "slots": [
@@ -424,7 +436,14 @@
       ]
     },
     {
-      "slots": ["larvitar", "pupitar", "tyranitar", "lugia", "hooh", "celebi"]
+      "slots": [
+        "larvitar",
+        "pupitar",
+        "tyranitar",
+        "lugia",
+        "hooh",
+        "celebi"
+      ]
     },
     {
       "slots": [
@@ -597,7 +616,16 @@
       ]
     },
     {
-      "slots": ["kyogre", "groudon", "rayquaza", "jirachi", "deoxys", "deoxys-attack", "deoxys-defense", "deoxys-speed"]
+      "slots": [
+        "kyogre",
+        "groudon",
+        "rayquaza",
+        "jirachi",
+        "deoxys",
+        "deoxys-attack",
+        "deoxys-defense",
+        "deoxys-speed"
+      ]
     },
     {
       "slots": [
@@ -768,6 +796,10 @@
         "shaymin-sky",
         "arceus"
       ]
+    },
+    {
+      "name": "Box 26",
+      "slots": []
     },
     {
       "slots": [
@@ -974,6 +1006,10 @@
       ]
     },
     {
+      "name": "Box 33",
+      "slots": []
+    },
+    {
       "slots": [
         "chespin",
         "quilladin",
@@ -984,7 +1020,6 @@
         "froakie",
         "frogadier",
         "greninja",
-        null,
         "bunnelby",
         "diggersby",
         "fletchling",
@@ -1004,12 +1039,12 @@
         "vivillon-archipelago",
         "vivillon-high-plains",
         "vivillon-sandstorm",
-        "vivillon-river"
+        "vivillon-river",
+        "vivillon-monsoon"
       ]
     },
     {
       "slots": [
-        "vivillon-monsoon",
         "vivillon-savanna",
         "vivillon-sun",
         "vivillon-ocean",
@@ -1029,6 +1064,7 @@
         "floette-orange",
         "floette-white",
         "floette-yellow",
+        "floette-eternal",
         "florges",
         "florges-blue",
         "florges-orange",
@@ -1110,7 +1146,14 @@
       ]
     },
     {
-      "slots": ["zygarde", null, "zygarde-10", null, "diancie", "hoopa", "hoopa-unbound", "volcanion"]
+      "slots": [
+        "zygarde",
+        "zygarde-10",
+        "diancie",
+        "hoopa",
+        "hoopa-unbound",
+        "volcanion"
+      ]
     },
     {
       "slots": [
@@ -1141,14 +1184,13 @@
         "cutiefly",
         "ribombee",
         "rockruff",
-        null,
         "lycanroc",
-        "lycanroc-midnight"
+        "lycanroc-midnight",
+        "lycanroc-dusk"
       ]
     },
     {
       "slots": [
-        "lycanroc-dusk",
         "wishiwashi",
         "mareanie",
         "toxapex",
@@ -1177,12 +1219,12 @@
         "pyukumuku",
         "typenull",
         "silvally",
-        "minior-red"
+        "minior-red",
+        "minior-orange"
       ]
     },
     {
       "slots": [
-        "minior-orange",
         "minior-yellow",
         "minior-green",
         "minior-blue",
@@ -1211,12 +1253,12 @@
         "pheromosa",
         "xurkitree",
         "celesteela",
-        "kartana"
+        "kartana",
+        "guzzlord"
       ]
     },
     {
       "slots": [
-        "guzzlord",
         "necrozma",
         "magearna",
         "magearna-original",

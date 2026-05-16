@@ -2,15 +2,17 @@
   "schemaVersion": 1,
   "id": "grouped-region",
   "gameSet": "home",
-  "name": "National: Grouped by Regions (Recommended)",
-  "description": "(Recommended) Boxes will be organized grouped by the Species and Forms discovered on every region, with the species placed before all the region's forms. This is the default one for HOME, since it does not shift or alter the order of other Pokémon whenever a new form or species are introduced.",
+  "name": "Grouped by Regions (Classic)",
+  "description": "Organizes each region with species first, then alternate forms in separate form boxes. Regional forms and Gigantamax-capable entries get their own sections, keeping the main regional species boxes stable when new forms are added.",
   "source": {
     "kind": "classic",
     "gameSet": "home",
     "presetId": "grouped-region",
     "version": 2
   },
-  "tags": ["recommended", "national", "grouped"],
+  "tags": [
+    "grouped"
+  ],
   "boxes": [
     {
       "name": "Kanto 1",
@@ -189,7 +191,9 @@
     },
     {
       "name": "Kanto 6",
-      "slots": ["mew"]
+      "slots": [
+        "mew"
+      ]
     },
     {
       "name": "Kanto Females",
@@ -339,7 +343,18 @@
     },
     {
       "name": "Johto 4",
-      "slots": ["blissey", "raikou", "entei", "suicune", "larvitar", "pupitar", "tyranitar", "lugia", "hooh", "celebi"]
+      "slots": [
+        "blissey",
+        "raikou",
+        "entei",
+        "suicune",
+        "larvitar",
+        "pupitar",
+        "tyranitar",
+        "lugia",
+        "hooh",
+        "celebi"
+      ]
     },
     {
       "name": "Johto Females",
@@ -586,7 +601,11 @@
     },
     {
       "name": "Hoenn Alternate",
-      "slots": ["deoxys-attack", "deoxys-defense", "deoxys-speed"]
+      "slots": [
+        "deoxys-attack",
+        "deoxys-defense",
+        "deoxys-speed"
+      ]
     },
     {
       "name": "Sinnoh 1",
@@ -752,10 +771,12 @@
     },
     {
       "name": "Sinnoh Fem. 2",
-      "slots": ["mamoswine-f"]
+      "slots": [
+        "mamoswine-f"
+      ]
     },
     {
-      "name": "Sinnoh Altern.",
+      "name": "Sinnoh Alt.",
       "slots": [
         "burmy-sandy",
         "burmy-trash",
@@ -948,7 +969,14 @@
     },
     {
       "name": "Unova 6",
-      "slots": ["zekrom", "landorus", "kyurem", "keldeo", "meloetta", "genesect"]
+      "slots": [
+        "zekrom",
+        "landorus",
+        "kyurem",
+        "keldeo",
+        "meloetta",
+        "genesect"
+      ]
     },
     {
       "name": "Unova Alternate",
@@ -1059,7 +1087,6 @@
     {
       "name": "Kalos Alt. 1",
       "slots": [
-        null,
         "pyroar-f",
         "meowstic-f",
         "pumpkaboo-small",
@@ -1085,6 +1112,7 @@
         "floette-orange",
         "floette-blue",
         "floette-white",
+        "floette-eternal",
         "florges-yellow",
         "florges-orange",
         "florges-blue",
@@ -1093,7 +1121,10 @@
     },
     {
       "name": "Kalos Alt. 2",
-      "slots": [null, "zygarde-10", null, "hoopa-unbound"]
+      "slots": [
+        "zygarde-10",
+        "hoopa-unbound"
+      ]
     },
     {
       "name": "Vivillon Patt.",
@@ -1227,7 +1258,6 @@
         "oricorio-pom-pom",
         "oricorio-pau",
         "oricorio-sensu",
-        null,
         "lycanroc-midnight",
         "lycanroc-dusk",
         "minior-orange",
@@ -1240,7 +1270,7 @@
       ]
     },
     {
-      "name": "Alolan Forms",
+      "name": "Alola Regional",
       "slots": [
         "rattata-alola",
         "raticate-alola",
@@ -1263,8 +1293,11 @@
       ]
     },
     {
-      "name": "Unknown Region",
-      "slots": ["meltan", "melmetal"]
+      "name": "Unknown Origins",
+      "slots": [
+        "meltan",
+        "melmetal"
+      ]
     },
     {
       "name": "Galar 1",
@@ -1382,7 +1415,7 @@
       ]
     },
     {
-      "name": "Galarian Forms",
+      "name": "Galar Regional",
       "slots": [
         "meowth-galar",
         "ponyta-galar",
@@ -1661,7 +1694,7 @@
       ]
     },
     {
-      "name": "Hisuian Forms",
+      "name": "Hisui Regional",
       "slots": [
         "growlithe-hisui",
         "arcanine-hisui",
@@ -1841,8 +1874,13 @@
       ]
     },
     {
-      "name": "Paldean Forms",
-      "slots": ["tauros-paldea", "tauros-paldea-fire", "tauros-paldea-water", "wooper-paldea"]
+      "name": "Paldea Regional",
+      "slots": [
+        "tauros-paldea",
+        "tauros-paldea-fire",
+        "tauros-paldea-water",
+        "wooper-paldea"
+      ]
     }
   ]
 }

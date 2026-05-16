@@ -10,7 +10,10 @@
     "presetId": "sorted-species",
     "version": 1
   },
-  "tags": ["national", "sorted"],
+  "tags": [
+    "national",
+    "sorted"
+  ],
   "boxes": [
     {
       "slots": [
@@ -340,7 +343,13 @@
       ]
     },
     {
-      "slots": ["unown-v", "unown-w", "unown-x", "unown-y", "unown-z"]
+      "slots": [
+        "unown-v",
+        "unown-w",
+        "unown-x",
+        "unown-y",
+        "unown-z"
+      ]
     }
   ]
 }

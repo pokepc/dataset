@@ -2,21 +2,26 @@
   "schemaVersion": 1,
   "id": "fully-sorted-minimal",
   "gameSet": "home",
-  "name": "National: Sorted by Forms (Minimal)",
-  "description": "Pokémon Boxes are sorted following HOME's National Dex order mixing Species and Forms, but Legendary or Mythical Pokémon forms (like Hoopa Unbound, etc) will be excluded.",
+  "name": "Fully Sorted by Regions (Minimal)",
+  "description": "Same as 'Fully Sorted by Regions,' but Legendary and Mythical switchable forms are omitted.",
   "source": {
     "kind": "classic",
     "gameSet": "home",
     "presetId": "fully-sorted-minimal",
     "version": 1
   },
-  "tags": ["national", "sorted", "minimal", "forms"],
+  "tags": [
+    "grouped",
+    "sorted",
+    "minimal"
+  ],
   "boxes": [
     {
       "slots": [
         "bulbasaur",
         "ivysaur",
         "venusaur",
+        "venusaur-f",
         "charmander",
         "charmeleon",
         "charizard",
@@ -26,6 +31,7 @@
         "caterpie",
         "metapod",
         "butterfree",
+        "butterfree-f",
         "weedle",
         "kakuna",
         "beedrill",
@@ -33,27 +39,31 @@
         "pidgeotto",
         "pidgeot",
         "rattata",
+        "rattata-f",
         "rattata-alola",
         "raticate",
+        "raticate-f",
         "raticate-alola",
         "spearow",
         "fearow",
         "ekans",
-        "arbok",
-        "pikachu",
-        "pikachu-original",
-        "pikachu-hoenn",
-        "pikachu-sinnoh"
+        "arbok"
       ]
     },
     {
       "slots": [
+        "pikachu",
+        "pikachu-f",
+        "pikachu-original",
+        "pikachu-hoenn",
+        "pikachu-sinnoh",
         "pikachu-unova",
         "pikachu-kalos",
         "pikachu-alola",
         "pikachu-partner",
         "pikachu-world",
         "raichu",
+        "raichu-f",
         "raichu-alola",
         "sandshrew",
         "sandshrew-alola",
@@ -71,17 +81,21 @@
         "vulpix-alola",
         "ninetales",
         "ninetales-alola",
-        "jigglypuff",
-        "wigglytuff",
-        "zubat",
-        "golbat",
-        "oddish",
-        "gloom",
-        "vileplume"
+        "jigglypuff"
       ]
     },
     {
       "slots": [
+        "wigglytuff",
+        "zubat",
+        "zubat-f",
+        "golbat",
+        "golbat-f",
+        "oddish",
+        "gloom",
+        "gloom-f",
+        "vileplume",
+        "vileplume-f",
         "paras",
         "parasect",
         "venonat",
@@ -101,21 +115,23 @@
         "primeape",
         "growlithe",
         "growlithe-hisui",
-        "arcanine",
+        "arcanine"
+      ]
+    },
+    {
+      "slots": [
         "arcanine-hisui",
         "poliwag",
         "poliwhirl",
         "poliwrath",
         "abra",
         "kadabra",
+        "kadabra-f",
         "alakazam",
+        "alakazam-f",
         "machop",
         "machoke",
-        "machamp"
-      ]
-    },
-    {
-      "slots": [
+        "machamp",
         "bellsprout",
         "weepinbell",
         "victreebel",
@@ -133,23 +149,25 @@
         "rapidash-galar",
         "slowpoke",
         "slowpoke-galar",
-        "slowbro",
+        "slowbro"
+      ]
+    },
+    {
+      "slots": [
         "slowbro-galar",
         "magnemite",
         "magneton",
         "farfetchd",
         "farfetchd-galar",
         "doduo",
+        "doduo-f",
         "dodrio",
+        "dodrio-f",
         "seel",
         "dewgong",
         "grimer",
         "grimer-alola",
-        "muk"
-      ]
-    },
-    {
-      "slots": [
+        "muk",
         "muk-alola",
         "shellder",
         "cloyster",
@@ -159,12 +177,17 @@
         "onix",
         "drowzee",
         "hypno",
+        "hypno-f",
         "krabby",
         "kingler",
         "voltorb",
         "voltorb-hisui",
         "electrode",
-        "electrode-hisui",
+        "electrode-hisui"
+      ]
+    },
+    {
+      "slots": [
         "exeggcute",
         "exeggutor",
         "exeggutor-alola",
@@ -178,23 +201,28 @@
         "weezing",
         "weezing-galar",
         "rhyhorn",
+        "rhyhorn-f",
         "rhydon",
-        "chansey"
-      ]
-    },
-    {
-      "slots": [
+        "rhydon-f",
+        "chansey",
         "tangela",
         "kangaskhan",
         "horsea",
         "seadra",
         "goldeen",
+        "goldeen-f",
         "seaking",
+        "seaking-f",
         "staryu",
         "starmie",
         "mrmime",
         "mrmime-galar",
-        "scyther",
+        "scyther"
+      ]
+    },
+    {
+      "slots": [
+        "scyther-f",
         "jynx",
         "electabuzz",
         "magmar",
@@ -204,27 +232,33 @@
         "tauros-paldea-fire",
         "tauros-paldea-water",
         "magikarp",
+        "magikarp-f",
         "gyarados",
+        "gyarados-f",
         "lapras",
         "ditto",
         "eevee",
+        "eevee-f",
         "vaporeon",
         "jolteon",
         "flareon",
         "porygon",
         "omanyte",
-        "omastar"
-      ]
-    },
-    {
-      "slots": [
+        "omastar",
         "kabuto",
         "kabutops",
         "aerodactyl",
         "snorlax",
         "articuno",
-        "zapdos",
+        "articuno-galar",
+        "zapdos"
+      ]
+    },
+    {
+      "slots": [
+        "zapdos-galar",
         "moltres",
+        "moltres-galar",
         "dratini",
         "dragonair",
         "dragonite",
@@ -237,6 +271,7 @@
         "chikorita",
         "bayleef",
         "meganium",
+        "meganium-f",
         "cyndaquil",
         "quilava",
         "typhlosion",
@@ -249,7 +284,9 @@
         "hoothoot",
         "noctowl",
         "ledyba",
+        "ledyba-f",
         "ledian",
+        "ledian-f",
         "spinarak",
         "ariados",
         "crobat",
@@ -260,82 +297,133 @@
         "igglybuff",
         "togepi",
         "togetic",
-        "natu",
-        "xatu",
-        "mareep",
-        "flaaffy"
+        "natu"
       ]
     },
     {
       "slots": [
+        "xatu",
+        "xatu-f",
+        "mareep",
+        "flaaffy",
         "ampharos",
         "bellossom",
         "marill",
         "azumarill",
         "sudowoodo",
+        "sudowoodo-f",
         "politoed",
+        "politoed-f",
         "hoppip",
         "skiploom",
         "jumpluff",
         "aipom",
+        "aipom-f",
         "sunkern",
         "sunflora",
         "yanma",
         "wooper",
+        "wooper-f",
         "wooper-paldea",
         "quagsire",
+        "quagsire-f",
         "espeon",
         "umbreon",
         "murkrow",
-        "slowking",
-        "slowking-galar",
-        "misdreavus",
-        "unown",
-        "wobbuffet",
-        "girafarig",
-        "pineco",
-        "forretress",
-        "dunsparce",
-        "gligar",
-        "steelix"
+        "murkrow-f",
+        "slowking"
       ]
     },
     {
       "slots": [
+        "slowking-galar",
+        "misdreavus",
+        "unown",
+        "unown-b",
+        "unown-c",
+        "unown-d",
+        "unown-e",
+        "unown-f",
+        "unown-g",
+        "unown-h",
+        "unown-i",
+        "unown-j",
+        "unown-k",
+        "unown-l",
+        "unown-m",
+        "unown-n",
+        "unown-o",
+        "unown-p",
+        "unown-q",
+        "unown-r",
+        "unown-s",
+        "unown-t",
+        "unown-u",
+        "unown-v",
+        "unown-w",
+        "unown-x",
+        "unown-y",
+        "unown-z",
+        "unown-exclamation",
+        "unown-question"
+      ]
+    },
+    {
+      "slots": [
+        "wobbuffet",
+        "wobbuffet-f",
+        "girafarig",
+        "girafarig-f",
+        "pineco",
+        "forretress",
+        "dunsparce",
+        "gligar",
+        "gligar-f",
+        "steelix",
+        "steelix-f",
         "snubbull",
         "granbull",
         "qwilfish",
         "qwilfish-hisui",
         "scizor",
+        "scizor-f",
         "shuckle",
         "heracross",
+        "heracross-f",
         "sneasel",
+        "sneasel-f",
         "sneasel-hisui",
+        "sneasel-hisui-f",
         "teddiursa",
         "ursaring",
+        "ursaring-f",
         "slugma",
         "magcargo",
-        "swinub",
+        "swinub"
+      ]
+    },
+    {
+      "slots": [
         "piloswine",
+        "piloswine-f",
         "corsola",
         "corsola-galar",
         "remoraid",
         "octillery",
+        "octillery-f",
         "delibird",
         "mantine",
         "skarmory",
         "houndour",
         "houndoom",
+        "houndoom-f",
         "kingdra",
         "phanpy",
         "donphan",
+        "donphan-f",
         "porygon2",
         "stantler",
-        "smeargle"
-      ]
-    },
-    {
-      "slots": [
+        "smeargle",
         "tyrogue",
         "hitmontop",
         "smoochum",
@@ -345,7 +433,11 @@
         "blissey",
         "raikou",
         "entei",
-        "suicune",
+        "suicune"
+      ]
+    },
+    {
+      "slots": [
         "larvitar",
         "pupitar",
         "tyranitar",
@@ -360,8 +452,11 @@
         "grovyle",
         "sceptile",
         "torchic",
+        "torchic-f",
         "combusken",
+        "combusken-f",
         "blaziken",
+        "blaziken-f",
         "mudkip",
         "marshtomp",
         "swampert",
@@ -374,22 +469,27 @@
         "wurmple",
         "silcoon",
         "beautifly",
+        "beautifly-f",
         "cascoon",
         "dustox",
+        "dustox-f",
         "lotad",
         "lombre",
         "ludicolo",
-        "seedot",
-        "nuzleaf",
-        "shiftry",
-        "taillow",
-        "swellow",
-        "wingull",
-        "pelipper"
+        "ludicolo-f",
+        "seedot"
       ]
     },
     {
       "slots": [
+        "nuzleaf",
+        "nuzleaf-f",
+        "shiftry",
+        "shiftry-f",
+        "taillow",
+        "swellow",
+        "wingull",
+        "pelipper",
         "ralts",
         "kirlia",
         "gardevoir",
@@ -411,34 +511,45 @@
         "azurill",
         "nosepass",
         "skitty",
-        "delcatty",
+        "delcatty"
+      ]
+    },
+    {
+      "slots": [
         "sableye",
         "mawile",
         "aron",
         "lairon",
         "aggron",
         "meditite",
+        "meditite-f",
         "medicham",
-        "electrike"
-      ]
-    },
-    {
-      "slots": [
+        "medicham-f",
+        "electrike",
         "manectric",
         "plusle",
         "minun",
         "volbeat",
         "illumise",
         "roselia",
+        "roselia-f",
         "gulpin",
+        "gulpin-f",
         "swalot",
+        "swalot-f",
         "carvanha",
         "sharpedo",
         "wailmer",
         "wailord",
         "numel",
+        "numel-f",
         "camerupt",
-        "torkoal",
+        "camerupt-f",
+        "torkoal"
+      ]
+    },
+    {
+      "slots": [
         "spoink",
         "grumpig",
         "spinda",
@@ -447,17 +558,14 @@
         "flygon",
         "cacnea",
         "cacturne",
+        "cacturne-f",
         "swablu",
         "altaria",
         "zangoose",
         "seviper",
         "lunatone",
         "solrock",
-        "barboach"
-      ]
-    },
-    {
-      "slots": [
+        "barboach",
         "whiscash",
         "corphish",
         "crawdaunt",
@@ -469,8 +577,13 @@
         "armaldo",
         "feebas",
         "milotic",
+        "milotic-f",
         "castform",
-        "kecleon",
+        "kecleon"
+      ]
+    },
+    {
+      "slots": [
         "shuppet",
         "banette",
         "duskull",
@@ -487,11 +600,8 @@
         "clamperl",
         "huntail",
         "gorebyss",
-        "relicanth"
-      ]
-    },
-    {
-      "slots": [
+        "relicanth",
+        "relicanth-f",
         "luvdisc",
         "bagon",
         "shelgon",
@@ -503,7 +613,11 @@
         "regice",
         "registeel",
         "latias",
-        "latios",
+        "latios"
+      ]
+    },
+    {
+      "slots": [
         "kyogre",
         "groudon",
         "rayquaza",
@@ -523,40 +637,64 @@
         "prinplup",
         "empoleon",
         "starly",
+        "starly-f",
         "staravia",
+        "staravia-f",
         "staraptor",
+        "staraptor-f",
         "bidoof",
+        "bidoof-f",
         "bibarel",
+        "bibarel-f",
         "kricketot",
+        "kricketot-f",
         "kricketune",
+        "kricketune-f",
         "shinx",
+        "shinx-f",
         "luxio",
+        "luxio-f",
         "luxray",
-        "budew",
+        "luxray-f",
+        "budew"
+      ]
+    },
+    {
+      "slots": [
         "roserade",
+        "roserade-f",
         "cranidos",
         "rampardos",
         "shieldon",
         "bastiodon",
         "burmy",
+        "burmy-sandy",
+        "burmy-trash",
         "wormadam",
         "wormadam-sandy",
         "wormadam-trash",
-        "mothim"
+        "mothim",
+        "combee",
+        "combee-f",
+        "vespiquen",
+        "pachirisu",
+        "pachirisu-f",
+        "buizel",
+        "buizel-f",
+        "floatzel",
+        "floatzel-f",
+        "cherubi",
+        "cherrim",
+        "shellos",
+        "shellos-east",
+        "gastrodon",
+        "gastrodon-east",
+        "ambipom",
+        "ambipom-f"
       ]
     },
     {
       "slots": [
-        "combee",
-        "vespiquen",
-        "pachirisu",
-        "buizel",
-        "floatzel",
-        "cherubi",
-        "cherrim",
-        "shellos",
-        "gastrodon",
-        "ambipom",
         "drifloon",
         "drifblim",
         "buneary",
@@ -576,45 +714,60 @@
         "chatot",
         "spiritomb",
         "gible",
-        "gabite"
-      ]
-    },
-    {
-      "slots": [
+        "gible-f",
+        "gabite",
+        "gabite-f",
         "garchomp",
+        "garchomp-f",
         "munchlax",
         "riolu",
         "lucario",
         "hippopotas",
-        "hippowdon",
-        "skorupi",
-        "drapion",
-        "croagunk",
-        "toxicroak",
-        "carnivine",
-        "finneon",
-        "lumineon",
-        "mantyke",
-        "snover",
-        "abomasnow",
-        "weavile",
-        "magnezone",
-        "lickilicky",
-        "rhyperior",
-        "tangrowth",
-        "electivire",
-        "magmortar",
-        "togekiss",
-        "yanmega",
-        "leafeon",
-        "glaceon",
-        "gliscor",
-        "mamoswine",
-        "porygonz"
+        "hippopotas-f",
+        "hippowdon"
       ]
     },
     {
       "slots": [
+        "hippowdon-f",
+        "skorupi",
+        "drapion",
+        "croagunk",
+        "croagunk-f",
+        "toxicroak",
+        "toxicroak-f",
+        "carnivine",
+        "finneon",
+        "finneon-f",
+        "lumineon",
+        "lumineon-f",
+        "mantyke",
+        "snover",
+        "snover-f",
+        "abomasnow",
+        "abomasnow-f",
+        "weavile",
+        "weavile-f",
+        "magnezone",
+        "lickilicky",
+        "rhyperior",
+        "rhyperior-f",
+        "tangrowth",
+        "tangrowth-f",
+        "electivire",
+        "magmortar",
+        "togekiss",
+        "yanmega",
+        "leafeon"
+      ]
+    },
+    {
+      "slots": [
+        "glaceon",
+        "gliscor",
+        "mamoswine",
+        "mamoswine-f",
+        "porygonz",
         "gallade",
         "probopass",
         "dusknoir",
@@ -672,11 +825,12 @@
         "pidove",
         "tranquill",
         "unfezant",
-        "blitzle"
+        "unfezant-f"
       ]
     },
     {
       "slots": [
+        "blitzle",
         "zebstrika",
         "roggenrola",
         "boldore",
@@ -705,12 +859,12 @@
         "petilil",
         "lilligant",
         "lilligant-hisui",
-        "basculin",
-        "basculin-blue-striped"
+        "basculin"
       ]
     },
     {
       "slots": [
+        "basculin-blue-striped",
         "basculin-white-striped",
         "sandile",
         "krokorok",
@@ -739,12 +893,12 @@
         "zoroark",
         "zoroark-hisui",
         "minccino",
-        "cinccino",
-        "gothita"
+        "cinccino"
       ]
     },
     {
       "slots": [
+        "gothita",
         "gothorita",
         "gothitelle",
         "solosis",
@@ -756,16 +910,28 @@
         "vanillish",
         "vanilluxe",
         "deerling",
+        "deerling-summer",
+        "deerling-autumn",
+        "deerling-winter",
         "sawsbuck",
+        "sawsbuck-summer",
+        "sawsbuck-autumn",
+        "sawsbuck-winter",
         "emolga",
         "karrablast",
         "escavalier",
         "foongus",
         "amoonguss",
         "frillish",
+        "frillish-f",
         "jellicent",
+        "jellicent-f",
         "alomomola",
-        "joltik",
+        "joltik"
+      ]
+    },
+    {
+      "slots": [
         "galvantula",
         "ferroseed",
         "ferrothorn",
@@ -774,11 +940,7 @@
         "klinklang",
         "tynamo",
         "eelektrik",
-        "eelektross"
-      ]
-    },
-    {
-      "slots": [
+        "eelektross",
         "elgyem",
         "beheeyem",
         "litwick",
@@ -799,7 +961,11 @@
         "druddigon",
         "golett",
         "golurk",
-        "pawniard",
+        "pawniard"
+      ]
+    },
+    {
+      "slots": [
         "bisharp",
         "bouffalant",
         "rufflet",
@@ -808,11 +974,7 @@
         "vullaby",
         "mandibuzz",
         "heatmor",
-        "durant"
-      ]
-    },
-    {
-      "slots": [
+        "durant",
         "deino",
         "zweilous",
         "hydreigon",
@@ -843,7 +1005,6 @@
         "froakie",
         "frogadier",
         "greninja",
-        null,
         "bunnelby",
         "diggersby",
         "fletchling",
@@ -852,22 +1013,68 @@
         "scatterbug",
         "spewpa",
         "vivillon",
-        "litleo",
-        "pyroar",
-        "flabebe",
-        "floette",
-        "florges",
-        "skiddo",
-        "gogoat",
-        "pancham",
-        "pangoro",
-        "furfrou",
-        "espurr",
-        "meowstic"
+        "vivillon-meadow",
+        "vivillon-polar",
+        "vivillon-tundra",
+        "vivillon-continental",
+        "vivillon-garden",
+        "vivillon-elegant",
+        "vivillon-modern",
+        "vivillon-marine",
+        "vivillon-archipelago",
+        "vivillon-high-plains",
+        "vivillon-sandstorm",
+        "vivillon-river",
+        "vivillon-monsoon"
       ]
     },
     {
       "slots": [
+        "vivillon-savanna",
+        "vivillon-sun",
+        "vivillon-ocean",
+        "vivillon-jungle",
+        "vivillon-fancy",
+        "vivillon-pokeball",
+        "litleo",
+        "pyroar",
+        "pyroar-f",
+        "flabebe",
+        "flabebe-blue",
+        "flabebe-orange",
+        "flabebe-white",
+        "flabebe-yellow",
+        "floette",
+        "floette-blue",
+        "floette-orange",
+        "floette-white",
+        "floette-yellow",
+        "floette-eternal",
+        "florges",
+        "florges-blue",
+        "florges-orange",
+        "florges-white",
+        "florges-yellow",
+        "skiddo",
+        "gogoat",
+        "pancham",
+        "pangoro",
+        "furfrou"
+      ]
+    },
+    {
+      "slots": [
+        "furfrou-heart",
+        "furfrou-star",
+        "furfrou-diamond",
+        "furfrou-debutante",
+        "furfrou-matron",
+        "furfrou-dandy",
+        "furfrou-la-reine",
+        "furfrou-kabuki",
+        "furfrou-pharaoh",
+        "espurr",
+        "meowstic",
         "meowstic-f",
         "honedge",
         "doublade",
@@ -886,7 +1093,11 @@
         "clawitzer",
         "helioptile",
         "heliolisk",
-        "tyrunt",
+        "tyrunt"
+      ]
+    },
+    {
+      "slots": [
         "tyrantrum",
         "amaura",
         "aurorus",
@@ -897,11 +1108,7 @@
         "goomy",
         "sliggoo",
         "sliggoo-hisui",
-        "goodra"
-      ]
-    },
-    {
-      "slots": [
+        "goodra",
         "goodra-hisui",
         "klefki",
         "phantump",
@@ -920,7 +1127,11 @@
         "noibat",
         "noivern",
         "xerneas",
-        "yveltal",
+        "yveltal"
+      ]
+    },
+    {
+      "slots": [
         "zygarde",
         "diancie",
         "hoopa",
@@ -956,14 +1167,13 @@
         "cutiefly",
         "ribombee",
         "rockruff",
-        null,
         "lycanroc",
-        "lycanroc-midnight"
+        "lycanroc-midnight",
+        "lycanroc-dusk"
       ]
     },
     {
       "slots": [
-        "lycanroc-dusk",
         "wishiwashi",
         "mareanie",
         "toxapex",
@@ -992,11 +1202,17 @@
         "pyukumuku",
         "typenull",
         "silvally",
-        "minior-red"
+        "minior-red",
+        "minior-orange"
       ]
     },
     {
       "slots": [
+        "minior-yellow",
+        "minior-green",
+        "minior-blue",
+        "minior-indigo",
+        "minior-violet",
         "komala",
         "turtonator",
         "togedemaru",
@@ -1021,16 +1237,22 @@
         "xurkitree",
         "celesteela",
         "kartana",
-        "guzzlord",
+        "guzzlord"
+      ]
+    },
+    {
+      "slots": [
         "necrozma",
         "magearna",
         "marshadow",
         "poipole",
-        "naganadel"
+        "naganadel",
+        "stakataka",
+        "blacephalon",
+        "zeraora",
+        "meltan",
+        "melmetal"
       ]
-    },
-    {
-      "slots": ["stakataka", "blacephalon", "zeraora", "meltan", "melmetal"]
     },
     {
       "slots": [
@@ -1084,7 +1306,9 @@
         "clobbopus",
         "grapploct",
         "sinistea",
+        "sinistea-antique",
         "polteageist",
+        "polteageist-antique",
         "hatenna",
         "hattrem",
         "hatterene",
@@ -1095,14 +1319,84 @@
         "perrserker",
         "cursola",
         "sirfetchd",
-        "mrrime",
-        "runerigus",
-        "milcery"
+        "mrrime"
       ]
     },
     {
       "slots": [
+        "runerigus",
+        "milcery",
         "alcremie",
+        "alcremie-vanilla-cream-berry",
+        "alcremie-vanilla-cream-love",
+        "alcremie-vanilla-cream-star",
+        "alcremie-vanilla-cream-clover",
+        "alcremie-vanilla-cream-flower",
+        "alcremie-vanilla-cream-ribbon",
+        "alcremie-ruby-cream-strawberry",
+        "alcremie-ruby-cream-berry",
+        "alcremie-ruby-cream-love",
+        "alcremie-ruby-cream-star",
+        "alcremie-ruby-cream-clover",
+        "alcremie-ruby-cream-flower",
+        "alcremie-ruby-cream-ribbon",
+        "alcremie-matcha-cream-strawberry",
+        "alcremie-matcha-cream-berry",
+        "alcremie-matcha-cream-love",
+        "alcremie-matcha-cream-star",
+        "alcremie-matcha-cream-clover",
+        "alcremie-matcha-cream-flower",
+        "alcremie-matcha-cream-ribbon",
+        "alcremie-mint-cream-strawberry",
+        "alcremie-mint-cream-berry",
+        "alcremie-mint-cream-love",
+        "alcremie-mint-cream-star",
+        "alcremie-mint-cream-clover",
+        "alcremie-mint-cream-flower",
+        "alcremie-mint-cream-ribbon"
+      ]
+    },
+    {
+      "slots": [
+        "alcremie-lemon-cream-strawberry",
+        "alcremie-lemon-cream-berry",
+        "alcremie-lemon-cream-love",
+        "alcremie-lemon-cream-star",
+        "alcremie-lemon-cream-clover",
+        "alcremie-lemon-cream-flower",
+        "alcremie-lemon-cream-ribbon",
+        "alcremie-salted-cream-strawberry",
+        "alcremie-salted-cream-berry",
+        "alcremie-salted-cream-love",
+        "alcremie-salted-cream-star",
+        "alcremie-salted-cream-clover",
+        "alcremie-salted-cream-flower",
+        "alcremie-salted-cream-ribbon",
+        "alcremie-ruby-swirl-strawberry",
+        "alcremie-ruby-swirl-berry",
+        "alcremie-ruby-swirl-love",
+        "alcremie-ruby-swirl-star",
+        "alcremie-ruby-swirl-clover",
+        "alcremie-ruby-swirl-flower",
+        "alcremie-ruby-swirl-ribbon",
+        "alcremie-caramel-swirl-strawberry",
+        "alcremie-caramel-swirl-berry",
+        "alcremie-caramel-swirl-love",
+        "alcremie-caramel-swirl-star",
+        "alcremie-caramel-swirl-clover",
+        "alcremie-caramel-swirl-flower",
+        "alcremie-caramel-swirl-ribbon",
+        "alcremie-rainbow-swirl-strawberry",
+        "alcremie-rainbow-swirl-berry"
+      ]
+    },
+    {
+      "slots": [
+        "alcremie-rainbow-swirl-love",
+        "alcremie-rainbow-swirl-star",
+        "alcremie-rainbow-swirl-clover",
+        "alcremie-rainbow-swirl-flower",
+        "alcremie-rainbow-swirl-ribbon",
         "falinks",
         "pincurchin",
         "snom",
@@ -1127,15 +1421,15 @@
         "eternatus",
         "kubfu",
         "urshifu",
-        "zarude",
-        "regieleki",
-        "regidrago",
-        "glastrier",
-        "spectrier"
+        "zarude"
       ]
     },
     {
       "slots": [
+        "regieleki",
+        "regidrago",
+        "glastrier",
+        "spectrier",
         "calyrex",
         "wyrdeer",
         "kleavor",
@@ -1178,12 +1472,15 @@
         "dolliv",
         "arboliva",
         "squawkabilly",
-        "nacli",
-        "naclstack"
+        "squawkabilly-blue",
+        "squawkabilly-yellow"
       ]
     },
     {
       "slots": [
+        "squawkabilly-white",
+        "nacli",
+        "naclstack",
         "garganacl",
         "charcadet",
         "armarouge",
@@ -1210,14 +1507,14 @@
         "tinkatink",
         "tinkatuff",
         "tinkaton",
-        "wiglett",
-        "wugtrio",
-        "bombirdier",
-        "finizen"
+        "wiglett"
       ]
     },
     {
       "slots": [
+        "wugtrio",
+        "bombirdier",
+        "finizen",
         "palafin",
         "varoom",
         "revavroom",
@@ -1233,6 +1530,8 @@
         "veluza",
         "dondozo",
         "tatsugiri",
+        "tatsugiri-droopy",
+        "tatsugiri-stretchy",
         "annihilape",
         "clodsire",
         "farigiraf",
@@ -1242,16 +1541,16 @@
         "greattusk",
         "screamtail",
         "brutebonnet",
-        "fluttermane",
-        "slitherwing",
-        "sandyshocks",
-        "irontreads",
-        "ironbundle",
-        "ironhands"
+        "fluttermane"
       ]
     },
     {
       "slots": [
+        "slitherwing",
+        "sandyshocks",
+        "irontreads",
+        "ironbundle",
+        "ironhands",
         "ironjugulis",
         "ironmoth",
         "ironthorns",
@@ -1273,19 +1572,26 @@
         "ironleaves",
         "dipplin",
         "poltchageist",
+        "poltchageist-artisan",
         "sinistcha",
-        "okidogi",
+        "sinistcha-masterpiece",
+        "okidogi"
+      ]
+    },
+    {
+      "slots": [
         "munkidori",
         "fezandipiti",
         "ogerpon",
         "archaludon",
         "hydrapple",
         "gougingfire",
-        "ragingbolt"
+        "ragingbolt",
+        "ironboulder",
+        "ironcrown",
+        "terapagos",
+        "pecharunt"
       ]
-    },
-    {
-      "slots": ["ironboulder", "ironcrown", "terapagos", "pecharunt"]
     }
   ]
 }

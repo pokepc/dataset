@@ -2,15 +2,18 @@
   "schemaVersion": 1,
   "id": "species-first",
   "gameSet": "home",
-  "name": "National: Grouped by Species, then Forms",
-  "description": "Grouped with the Species first and the Forms after all of them, grouped by generation and categories. You may need to alter the order of your form boxes if there are a lot of species introduced in a new game. This mode also adds many duplicated Pokémon, to visualize all the forms together, including the base form.",
+  "name": "Sorted species, then Form Groups",
+  "description": "Organizes species boxes first without gaps, followed by form boxes grouped by generation and form category. Base forms are repeated in form sections when it makes sense visually, so related forms can be viewed together.",
   "source": {
     "kind": "classic",
     "gameSet": "home",
     "presetId": "species-first",
     "version": 2
   },
-  "tags": ["national", "grouped", "forms"],
+  "tags": [
+    "sorted",
+    "forms"
+  ],
   "boxes": [
     {
       "name": "Species 1",
@@ -1204,7 +1207,13 @@
     },
     {
       "name": "Species 35",
-      "slots": ["ragingbolt", "ironboulder", "ironcrown", "terapagos", "pecharunt"]
+      "slots": [
+        "ragingbolt",
+        "ironboulder",
+        "ironcrown",
+        "terapagos",
+        "pecharunt"
+      ]
     },
     {
       "name": "Females (1)",
@@ -1330,9 +1339,8 @@
       ]
     },
     {
-      "name": "Pikachu Forms",
+      "name": "Cap Pikachu",
       "slots": [
-        "pikachu-f",
         "pikachu-original",
         "pikachu-hoenn",
         "pikachu-sinnoh",
@@ -1480,7 +1488,7 @@
         "floette-orange",
         "floette-blue",
         "floette-white",
-        null,
+        "floette-eternal",
         "florges",
         "florges-yellow",
         "florges-orange",
@@ -1489,16 +1497,7 @@
         null,
         "hoopa",
         "hoopa-unbound",
-        null,
-        null,
-        null,
-        null,
-        "greninja",
-        null,
-        "zygarde",
-        "zygarde-10",
-        null,
-        null
+        "zygarde-10"
       ]
     },
     {
@@ -1536,10 +1535,10 @@
         null,
         null,
         "rockruff",
-        null,
         "lycanroc",
         "lycanroc-midnight",
         "lycanroc-dusk",
+        null,
         null,
         "minior-red",
         "minior-orange",
@@ -1914,7 +1913,13 @@
     },
     {
       "name": "Paldean Forms",
-      "slots": ["tauros-paldea", "tauros-paldea-fire", "tauros-paldea-water", "wooper-paldea", "ursaluna-bloodmoon"]
+      "slots": [
+        "tauros-paldea",
+        "tauros-paldea-fire",
+        "tauros-paldea-water",
+        "wooper-paldea",
+        "ursaluna-bloodmoon"
+      ]
     }
   ]
 }

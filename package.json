@@ -8,6 +8,7 @@
   ],
   "type": "module",
   "exports": {
+    "./lib/box-preset-transform": "./lib/box-preset-transform.ts",
     "./lib/constants": "./lib/constants.ts",
     "./lib/enums": "./lib/enums.ts",
     "./lib/box-preset-sanitizer": "./lib/box-preset-sanitizer.ts",

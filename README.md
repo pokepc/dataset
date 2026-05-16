@@ -51,11 +51,13 @@ Requirements: Bun 1.3+ and PNPM 10.27+
 
 ## Modern box presets
 
-Modern prepared box presets are generated from `data/boxpresets/classic/**` with:
+Modern box presets can be migrated from `data/boxpresets/classic/**` with:
 
 ```bash
-pnpm cdn:boxpresets-modern
+bun scripts/transform-modern-box-presets.ts
 ```
+
+> NOTE: this will replace the existing `data/boxpresets/modern/**` presets, so make sure to back up your work first.
 
 The generated layout is intentionally easy to prune by hand:
 
