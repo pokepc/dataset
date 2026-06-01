@@ -17,14 +17,21 @@
       "default": "./build/lib/*.mjs"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
+    "dev": "node src/openapi/dev.ts",
     "build": "tsdown",
+    "build:openapi": "node src/openapi/build.ts",
+    "build:pages": "node src/openapi/build.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",
     "test": "vitest --run --bail 20",
     "test:e2e": "node src/tests/pkg-smoke-test.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build"
   },
   "dependencies": {
     "yolodb": "^1.2.0",
@@ -38,6 +45,7 @@
     "publint": "^0.3.21",
     "tsdown": "^0.22.1",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.7"
+    "vitest": "^4.1.7",
+    "zod-openapi": "^5.4.6"
   }
 }
