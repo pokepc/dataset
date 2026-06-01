@@ -1,11 +1,12 @@
 /**
  * Re-tags abilities via OpenAI structured outputs (Zod). Writes data/abilities.json.
  *
- * Requires: OPENAI_API_KEY
- * Optional: OPENAI_MODEL (default: gpt-5.4), BATCH_SIZE (default: 8), DRY_RUN=1
+ * Requires: OPENAI_API_KEY environment variable
+ * Optional: OPENAI_MODEL_ID (default: gpt-5.5), BATCH_SIZE (default: 8), DRY_RUN=1
+ * @see https://developers.openai.com/api/docs/models
  *
  * Run (do not commit API keys):
- *   OPENAI_API_KEY=... bun run scripts/tag-abilities-openai.ts
+ *   bun run scripts/tag-abilities-openai.ts
  *   DRY_RUN=1 bun run scripts/tag-abilities-openai.ts   # no write, log sample
  *
  * Limit for testing: --limit=20
@@ -19,7 +20,7 @@ import { zodResponseFormat } from 'openai/helpers/zod'
 import { z } from 'zod'
 import { abilityTagIds, typeIds } from '../lib/enums'
 
-const MODEL = process.env.OPENAI_MODEL ?? 'gpt-5.4'
+const MODEL = process.env.OPENAI_MODEL_ID ?? 'gpt-5.5'
 const BATCH_SIZE = Math.max(1, Number(process.env.BATCH_SIZE ?? 8) || 8)
 const DRY_RUN = process.env.DRY_RUN === '1' || process.argv.includes('--dry-run')
 

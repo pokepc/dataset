@@ -5,16 +5,23 @@
   "files": [
     "build",
     "data",
+    "data-next",
     "LICENSE",
     "README.md"
   ],
   "type": "module",
   "exports": {
     "./data/*": "./data/*.json",
+    "./data-next/*": "./data-next/*.json",
     "./lib/*": {
       "types": "./build/lib/*.d.mts",
       "import": "./build/lib/*.mjs",
       "default": "./build/lib/*.mjs"
+    },
+    "./lib-next/*": {
+      "types": "./build/lib-next/*.d.mts",
+      "import": "./build/lib-next/*.mjs",
+      "default": "./build/lib-next/*.mjs"
     }
   },
   "publishConfig": {
@@ -25,6 +32,7 @@
     "build": "tsdown",
     "build:openapi": "node src/openapi/build.ts",
     "build:pages": "node src/openapi/build.ts",
+    "build:champs": "bun src/upstream-adapters/projectpokemon-champout/build.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",

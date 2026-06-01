@@ -48,7 +48,7 @@ export function renderOpenApiIndexHtml() {
       }
 
       .swagger-ui .topbar .topbar-wrapper .link::before {
-        background-image: url("https://pokepc.net/images/logo/pokepc-icon.png");
+        background-image: url("https://avatars.githubusercontent.com/u/186428333?s=200&v=4");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;

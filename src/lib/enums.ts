@@ -54,6 +54,10 @@ export const languageAlpha3Codes = [
   'cht',
   'por',
 ] as const
+
+/**
+ * @deprecated use gameLocales from lib-next/languages
+ */
 export const languageInGameCodes = [
   'ENG',
   'ES-ES',
