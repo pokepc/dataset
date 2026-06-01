@@ -1,13 +1,5 @@
 const swaggerUiVersion = '5.32.6'
 const brandName = 'PokePC Dataset API'
-const brandSubtitle = 'Static JSON API'
-const brandLogoSvg = encodeURIComponent(`
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <rect width="48" height="48" rx="12" fill="#78e044"/>
-  <path d="M15 18v7c0 2 1 3 3 3h1v4h3v-7h-3c-1 0-1-.4-1-1v-6h-3Zm18 0v7c0 2-1 3-3 3h-1v4h-3v-7h3c1 0 1-.4 1-1v-6h3ZM21 17h3v4h-3v-4Zm3 10h3v4h-3v-4Zm3-10h3v4h-3v-4Z" fill="#172125"/>
-  <circle cx="13" cy="24" r="2" fill="#172125"/>
-  <circle cx="35" cy="24" r="2" fill="#172125"/>
-</svg>`)
 
 export function renderOpenApiIndexHtml() {
   return `<!doctype html>
