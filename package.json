@@ -1,11 +1,13 @@
 {
   "name": "@pokepc/dataset",
   "version": "6.3.0",
+  "license": "MIT",
   "files": [
     "build",
-    "data"
+    "data",
+    "LICENSE",
+    "README.md"
   ],
-  "license": "MIT",
   "type": "module",
   "exports": {
     "./data/*": "./data/*.json",
@@ -21,6 +23,7 @@
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",
     "test": "vitest --run --bail 20",
+    "test:e2e": "node src/tests/pkg-smoke-test.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
