@@ -16,7 +16,10 @@ describe('box preset sanitizer', () => {
 
   it('keeps compatible strings and maps compatible object slots', () => {
     expect(
-      sanitizeModernBoxPresetSlots(['bulbasaur', { pid: 'charizard', shiny: true, gmax: true }, null], context),
+      sanitizeModernBoxPresetSlots(
+        ['bulbasaur', { pid: 'charizard', shiny: true, gmax: true }, null],
+        context,
+      ),
     ).toEqual(['bulbasaur', { pokemon: 'charizard', shiny: true, gmax: true }, null])
   })
 

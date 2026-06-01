@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllRibbons } from '../lib/fs'
-import { ribbonSchema } from '../lib/schemas'
+import { loadAllRibbons } from '../src/lib/fs'
+import { ribbonSchema } from '../src/lib/schemas'
 import { validate } from './_utils'
 
 describe('Validate ribbons.json data', () => {

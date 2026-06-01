@@ -35,7 +35,7 @@
   "debutIn": "sv",
   "obtainableIn": ["go", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "home", "sv-s", "sv-v"],
+  "storableIn": ["go", "home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 109,
   "baseAtk": 64,
@@ -61,7 +61,15 @@
   },
   "evolvesFrom": "tadbulb",
   "evoFromItem": "thunderstone",
-  "names": { "eng": "Bellibolt", "fra": "Ampibidou", "deu": "Wampitz", "jap": "ハラバリー", "kor": "찌리배리", "chs": "电肚蛙", "cht": "電肚蛙" },
+  "names": {
+    "eng": "Bellibolt",
+    "fra": "Ampibidou",
+    "deu": "Wampitz",
+    "jap": "ハラバリー",
+    "kor": "찌리배리",
+    "chs": "电肚蛙",
+    "cht": "電肚蛙"
+  },
   "genus": {
     "eng": "EleFrog Pokémon",
     "fra": "Élecrapaud",

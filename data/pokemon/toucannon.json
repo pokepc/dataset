@@ -36,7 +36,7 @@
   "debutIn": "sm",
   "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "sv-s", "sv-v"],
+  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 80,
   "baseAtk": 120,
@@ -62,7 +62,15 @@
   },
   "evolvesFrom": "trumbeak",
   "evoFromLevel": 28,
-  "names": { "eng": "Toucannon", "fra": "Bazoucan", "deu": "Tukanon", "jap": "ドデカバシ", "kor": "왕큰부리", "chs": "铳嘴大鸟", "cht": "銃嘴大鳥" },
+  "names": {
+    "eng": "Toucannon",
+    "fra": "Bazoucan",
+    "deu": "Tukanon",
+    "jap": "ドデカバシ",
+    "kor": "왕큰부리",
+    "chs": "铳嘴大鸟",
+    "cht": "銃嘴大鳥"
+  },
   "genus": {
     "eng": "Cannon Pokémon",
     "esp": "Pokémon Cañón",

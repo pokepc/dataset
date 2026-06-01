@@ -1,9 +1,52 @@
+import { MemoryCache } from '../utils/memory-cache'
+import { arrayUnique } from '../utils/utils-internal'
 import fs from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { yolodb } from 'yolodb'
-import { arrayUnique, MemoryCache } from './utils'
 
-const DATASET_DIR = path.resolve(process.env.POKEPC_DATASET_DIR || path.join(process.cwd(), 'data'))
+const DATASET_PACKAGE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
+const MONOREPO_ROOT = path.resolve(DATASET_PACKAGE_ROOT, '..', '..')
+
+function uniquePaths(paths: string[]) {
+  return Array.from(new Set(paths))
+}
+
+function resolveDatasetDirCandidates(value: string | undefined) {
+  if (!value) {
+    return uniquePaths([
+      path.join(DATASET_PACKAGE_ROOT, 'data'),
+      path.join(process.cwd(), 'data'),
+      path.join(MONOREPO_ROOT, 'packages/dataset/data'),
+    ])
+  }
+
+  if (path.isAbsolute(value)) {
+    return [value]
+  }
+
+  return uniquePaths([
+    path.resolve(process.cwd(), value),
+    path.resolve(MONOREPO_ROOT, value),
+    path.resolve(DATASET_PACKAGE_ROOT, value),
+  ])
+}
+
+const DATASET_DIR_CANDIDATES = [...resolveDatasetDirCandidates(process.env.POKEPC_DATASET_DIR)]
+const RESOLVED_DATASET_DIR = DATASET_DIR_CANDIDATES.find((candidate) =>
+  fs.existsSync(path.join(candidate, 'types.json')),
+)
+
+if (!RESOLVED_DATASET_DIR) {
+  const errMsg =
+    'Could not find dataset directory. Set POKEPC_DATASET_DIR and try again. Tried: ' +
+    DATASET_DIR_CANDIDATES.join(', ')
+  console.error(errMsg)
+  throw new Error(errMsg)
+}
+
+const DATASET_DIR = RESOLVED_DATASET_DIR
+
 console.debug('Resolved POKEPC dataset directory:', DATASET_DIR)
 
 const DEFAULT_CACHE_TTL = 1000 * 10 // 10 seconds
@@ -74,9 +117,14 @@ export const naturesFs = yolodb<Pkds.Nature>(absDatasetFile('natures.json'), 'id
   superjsonEnabled: false,
 })
 
-export const personalitiesFs = yolodb<Pkds.Personality>(absDatasetFile('personalities.json'), 'id', [], {
-  superjsonEnabled: false,
-})
+export const personalitiesFs = yolodb<Pkds.Personality>(
+  absDatasetFile('personalities.json'),
+  'id',
+  [],
+  {
+    superjsonEnabled: false,
+  },
+)
 
 export const regionsFs = yolodb<Pkds.Region>(absDatasetFile('regions.json'), 'id', [], {
   superjsonEnabled: false,
@@ -192,7 +240,9 @@ export function loadAllGameSets(): Pkds.Game[] {
   })
 }
 
-export function loadAllBoxPresets(variant: 'classic' | 'modern' = 'classic'): Array<Pkds.LegacyBoxPresetByGameset> {
+export function loadAllBoxPresets(
+  variant: 'classic' | 'modern' = 'classic',
+): Array<Pkds.LegacyBoxPresetByGameset> {
   return cached(`allBoxPresets-${variant}`, () => {
     const filenames = loadAllGameSets().map((game) => game.id)
     return joinBoxPresetFilesFromIndex(filenames, variant)

@@ -1,13 +1,11 @@
 {
-  "include": ["**/*", "**/.server/**/*", "**/.client/**/*", ".react-router/types/**/*"],
+  "include": ["src/**/*.ts", "*.ts"],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2024"],
     "types": ["node", "bun"],
     "target": "ES2024",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact",
     "rootDirs": ["."],
     "allowArbitraryExtensions": true,
     "allowImportingTsExtensions": true,

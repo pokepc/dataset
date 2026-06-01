@@ -1,133 +1,6 @@
-// ----- Generic UTILS --------------------------------------------
-
-export function arrayUnique<T>(index: T[]): T[] {
-  return [...new Set(index)]
-}
-
-export function ucfirst(str: string): string {
-  return str.charAt(0).toUpperCase() + str.slice(1)
-}
-
-export function sanitizeSearchQuery(query?: string | null) {
-  if (query === undefined || query === null) {
-    return ''
-  }
-  return (
-    query
-      // .trim()
-      .toLowerCase()
-      // replace multiple spaces with a single space
-      .replace(/\s{2,}/, ' ')
-      // replace commas with a space
-      .replace(/,/g, ' ')
-      // replace multiple spaces with a single space
-      .replace(/\s{2,}/, ' ')
-  )
-}
-
-export function splitSearchQueryTokens(query?: string | null): {
-  positive: string[]
-  negative: string[]
-} {
-  const tokens = sanitizeSearchQuery(query).trim().split(/\s+/).filter(Boolean)
-
-  return tokens.reduce(
-    (result, token) => {
-      if (token.startsWith('!')) {
-        const negatedToken = token.slice(1).trim()
-        if (negatedToken) {
-          result.negative.push(negatedToken)
-        }
-      } else {
-        result.positive.push(token)
-      }
-
-      return result
-    },
-    { positive: [] as string[], negative: [] as string[] },
-  )
-}
-
-export function matchesSearchQuery(haystack: string, query?: string | null): boolean {
-  const { positive, negative } = splitSearchQueryTokens(query)
-  if (positive.length === 0 && negative.length === 0) {
-    return true
-  }
-
-  const normalizedHaystack = sanitizeSearchQuery(haystack)
-
-  return (
-    positive.every((token) => normalizedHaystack.includes(token)) &&
-    negative.every((token) => !normalizedHaystack.includes(token))
-  )
-}
-
-export class MemoryCache {
-  defaultTTL: number = 1000 * 60 // 1 minute
-
-  constructor(defaultTTL: number = 1000 * 10) {
-    this.defaultTTL = defaultTTL
-  }
-
-  #cache: Map<string, { exptime: number; value: any }> = new Map()
-
-  get<T>(key: string): T | undefined {
-    const value = this.#cache.get(key)
-    if (!value) {
-      return undefined
-    }
-    if (value.exptime > Date.now() || value.exptime === 0) {
-      return value.value
-    }
-    this.#cache.delete(key)
-    return undefined
-  }
-
-  set(key: string, value: any, ttl: number = this.defaultTTL) {
-    this.#cache.set(key, { exptime: ttl === 0 ? 0 : Date.now() + ttl, value })
-  }
-
-  delete(key: string) {
-    this.#cache.delete(key)
-  }
-
-  has(key: string) {
-    const value = this.#cache.get(key)
-    return value && (value.exptime > Date.now() || value.exptime === 0)
-  }
-
-  clear() {
-    this.#cache.clear()
-  }
-
-  keys() {
-    return Array.from(this.#cache.keys())
-  }
-
-  values() {
-    return Array.from(this.#cache.values()).map((value) => value.value)
-  }
-
-  entries() {
-    return Array.from(this.#cache.entries()).map(([key, value]) => [key, value.value])
-  }
-
-  size() {
-    return this.#cache.size
-  }
-
-  cached<T>(key: string, fn: () => T, ttl: number = this.defaultTTL): T {
-    const value = this.get<T>(key)
-    if (value) {
-      return value
-    }
-    const result = fn()
-    this.set(key, result, ttl)
-    return result
-  }
-}
-
 // ----- Dataset UTILS --------------------------------------------
+
+import { arrayUnique, capitalizeFirstLetter } from '../utils/utils-internal'
 
 export function formatDexNum(num: number | string, positions: number = 4): string {
   return num.toString().padStart(positions, '0')
@@ -224,7 +97,10 @@ export function getPokemonGender(
 
 // ----- Dataset Text and Translation UTILS --------------------------------------------
 
-export function translatePokemonText(pkm: Pkds.Pokemon, lang3Char: Pkds.LanguageAlpha3): Pkds.PokemonText {
+export function translatePokemonText(
+  pkm: Pkds.Pokemon,
+  lang3Char: Pkds.LanguageAlpha3,
+): Pkds.PokemonText {
   const fallback = lang3Char === 'eng' ? undefined : translatePokemon(pkm, 'eng')
   const pkmName = pkm.names[lang3Char] ?? fallback?.name ?? pkm.id
 
@@ -249,7 +125,10 @@ export function translatePokemon(
       ...pokemon,
       ...translatePokemonText(pokemon, lang),
       speciesGen: dexNumToGen(pokemon.dexNum),
-      dexNum: formatDexNum(pokemon.dexNum, dexNumPositions ?? Math.max(3, String(pokemon.dexNum).length)),
+      dexNum: formatDexNum(
+        pokemon.dexNum,
+        dexNumPositions ?? Math.max(3, String(pokemon.dexNum).length),
+      ),
       searchableText: generatePokemonSearchableText(pokemon),
     }
   }
@@ -271,17 +150,24 @@ export function translatePokemonById(
   pokemonList: Array<Pkds.Pokemon | Pkds.TranslatedPokemon>,
   lang: Pkds.LanguageAlpha3,
 ): Record<string, Pkds.TranslatedPokemon> {
-  return Object.fromEntries(pokemonList.map((pokemon) => [pokemon.id, translatePokemon(pokemon, lang)]))
+  return Object.fromEntries(
+    pokemonList.map((pokemon) => [pokemon.id, translatePokemon(pokemon, lang)]),
+  )
 }
 
 export function translatePokemonByNid(
   pokemonList: Array<Pkds.Pokemon | Pkds.TranslatedPokemon>,
   lang: Pkds.LanguageAlpha3,
 ): Record<string, Pkds.TranslatedPokemon> {
-  return Object.fromEntries(pokemonList.map((pokemon) => [pokemon.nid, translatePokemon(pokemon, lang)]))
+  return Object.fromEntries(
+    pokemonList.map((pokemon) => [pokemon.nid, translatePokemon(pokemon, lang)]),
+  )
 }
 
-export function generatePokemonDescription(pokemon: Pkds.TranslatedPokemon, lang3Char: Pkds.LanguageAlpha3) {
+export function generatePokemonDescription(
+  pokemon: Pkds.TranslatedPokemon,
+  lang3Char: Pkds.LanguageAlpha3,
+) {
   const parts = []
   const features = []
   const text = translatePokemonText(pokemon, lang3Char)
@@ -305,7 +191,7 @@ export function generatePokemonDescription(pokemon: Pkds.TranslatedPokemon, lang
   // Type and generation information
   const types = [pokemon.type1]
   if (pokemon.type2) types.push(pokemon.type2)
-  parts.push(`${types.map(ucfirst).join('/')} type`)
+  parts.push(`${types.map(capitalizeFirstLetter).join('/')} type`)
   parts.push(`It was discovered in Generation ${pokemon.gen}`)
 
   if (features.length > 0) {
@@ -373,7 +259,9 @@ export function generateGameDescription(game: Pkds.Game, gameCatText: string) {
   const genPart = game.gen > 0 ? ` from Generation ${game.gen} ` : ''
   const releaseText = game.isUnreleased ? 'that will be released for' : 'released for'
 
-  parts.push(`Pokémon ${game.name} is a ${gameCatText} ${game.type} ${genPart}${releaseText} ${platforms}`)
+  parts.push(
+    `Pokémon ${game.name} is a ${gameCatText} ${game.type} ${genPart}${releaseText} ${platforms}`,
+  )
 
   // if (game.gen > 0) {
   //   parts.push(`It's a Generation ${game.gen} game`)
@@ -431,15 +319,4 @@ export function resolvePokemonName(
     nameObj.displayName = `${nickname} - ${nameObj.displayName}`
   }
   return nameObj
-}
-
-/**
- * Useful to keep certain IDs in a given order (e.g. game IDs in the Pokemon data)
- */
-export function sortIdsInGivenOrder(ids: string[] | undefined, rightOrder: string[]) {
-  return [...(ids ?? [])].sort((a, b) => {
-    const aIndex = rightOrder.indexOf(a)
-    const bIndex = rightOrder.indexOf(b)
-    return aIndex - bIndex
-  })
 }

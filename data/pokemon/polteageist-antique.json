@@ -35,7 +35,7 @@
   "debutIn": "swsh",
   "obtainableIn": ["go", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "storableIn": ["go", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 60,
   "baseAtk": 65,
@@ -88,6 +88,11 @@
     "chs": "怖思壶",
     "cht": "怖思壺"
   },
-  "formNames": { "eng": "Antique Form", "fra": "Forme Authentique", "deu": "Originalform", "jap": "しんさくフォルム" },
+  "formNames": {
+    "eng": "Antique Form",
+    "fra": "Forme Authentique",
+    "deu": "Originalform",
+    "jap": "しんさくフォルム"
+  },
   "transferOnlyIn": ["home"]
 }

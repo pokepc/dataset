@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllMarks } from '../lib/fs'
-import { markSchema } from '../lib/schemas'
+import { loadAllMarks } from '../src/lib/fs'
+import { markSchema } from '../src/lib/schemas'
 import { validate } from './_utils'
 
 describe('Validate marks.json data', () => {

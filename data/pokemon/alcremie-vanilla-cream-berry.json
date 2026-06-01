@@ -35,7 +35,7 @@
   "debutIn": "swsh",
   "obtainableIn": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "storableIn": ["swsh-sw", "swsh-sh", "home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 65,
   "baseAtk": 60,
@@ -78,7 +78,19 @@
     "chs": "鲜奶油宝可梦",
     "cht": "鮮奶油寶可夢"
   },
-  "speciesNames": { "eng": "Alcremie", "fra": "Charmilly", "deu": "Pokusan", "jap": "マホイップ", "kor": "마휘핑", "chs": "霜奶仙", "cht": "霜奶仙" },
-  "formNames": { "eng": "Vanilla Cream Berry Sweet", "fra": "Lait Vanille Baie en Sucre", "deu": "Vanilla Cream Berry Sweet" },
+  "speciesNames": {
+    "eng": "Alcremie",
+    "fra": "Charmilly",
+    "deu": "Pokusan",
+    "jap": "マホイップ",
+    "kor": "마휘핑",
+    "chs": "霜奶仙",
+    "cht": "霜奶仙"
+  },
+  "formNames": {
+    "eng": "Vanilla Cream Berry Sweet",
+    "fra": "Lait Vanille Baie en Sucre",
+    "deu": "Vanilla Cream Berry Sweet"
+  },
   "transferOnlyIn": ["home"]
 }

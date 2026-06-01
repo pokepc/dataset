@@ -11,7 +11,14 @@
   "releaseDate": "2022-01-28",
   "region": "hisui",
   "originMark": "hisui",
-  "pokedexes": ["hisui", "hisui-obsidian", "hisui-crimson", "hisui-cobalt", "hisui-coronet", "hisui-alabaster"],
+  "pokedexes": [
+    "hisui",
+    "hisui-obsidian",
+    "hisui-crimson",
+    "hisui-cobalt",
+    "hisui-coronet",
+    "hisui-alabaster"
+  ],
   "maxBoxes": 32,
   "maxBoxSize": 30,
   "platforms": ["switch"],
@@ -39,5 +46,12 @@
     "sizes": false,
     "abilities": false
   },
-  "onlineFeatures": { "battles": false, "battleStyles": [], "trades": true, "raids": false, "raidStyles": [], "coop": false }
+  "onlineFeatures": {
+    "battles": false,
+    "battleStyles": [],
+    "trades": true,
+    "raids": false,
+    "raidStyles": [],
+    "coop": false
+  }
 }

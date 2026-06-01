@@ -34,7 +34,7 @@
   "debutIn": "sv",
   "obtainableIn": ["sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["home", "sv-s", "sv-v"],
+  "storableIn": ["home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 100,
   "baseAtk": 70,
@@ -60,7 +60,15 @@
   },
   "evolvesFrom": "finizen",
   "evoFromLevel": 38,
-  "names": { "eng": "Palafin", "fra": "Superdofin", "deu": "Delfinator", "jap": "イルカマン", "kor": "돌핀맨", "chs": "海豚侠", "cht": "海豚俠" },
+  "names": {
+    "eng": "Palafin",
+    "fra": "Superdofin",
+    "deu": "Delfinator",
+    "jap": "イルカマン",
+    "kor": "돌핀맨",
+    "chs": "海豚侠",
+    "cht": "海豚俠"
+  },
   "genus": {
     "eng": "Dolphin Pokémon",
     "fra": "Dauphin/Super Héros",

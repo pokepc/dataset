@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { MemoryCache } from '../lib/utils'
+import { MemoryCache } from '../src/utils/memory-cache'
 
 describe('MemoryCache', () => {
   it('returns undefined after key expiration', async () => {

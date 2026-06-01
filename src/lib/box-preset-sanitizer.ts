@@ -59,7 +59,10 @@ export function sanitizeModernBoxPresetSlot(
   slot: ModernBoxPresetSlotInput,
   context: ModernBoxPresetSlotSanitizerContext,
 ): Pkds.ModernBoxPresetSlot {
-  const sanitized = modernBoxPresetSlotFilters.reduce((currentSlot, filter) => filter(currentSlot, context), slot)
+  const sanitized = modernBoxPresetSlotFilters.reduce(
+    (currentSlot, filter) => filter(currentSlot, context),
+    slot,
+  )
   if (sanitized === null || typeof sanitized === 'string') {
     return sanitized
   }

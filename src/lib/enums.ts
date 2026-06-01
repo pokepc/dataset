@@ -28,7 +28,19 @@ export const itemCategory = [
   'other',
 ] as const
 export const pokeballCategory = ['regular', 'special', 'hisuian', 'other'] as const
-export const languageIds = ['en', 'es', 'esla', 'fr', 'de', 'it', 'ja', 'ko', 'chs', 'cht', 'pt'] as const
+export const languageIds = [
+  'en',
+  'es',
+  'esla',
+  'fr',
+  'de',
+  'it',
+  'ja',
+  'ko',
+  'chs',
+  'cht',
+  'pt',
+] as const
 export const languageAlpha3Codes = [
   'eng',
   'esp',

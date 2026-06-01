@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllAbilities, loadAllGames, loadAllPokemon } from '../lib/fs'
-import { pokemonSchema } from '../lib/schemas'
+import { loadAllAbilities, loadAllGames, loadAllPokemon } from '../src/lib/fs'
+import { pokemonSchema } from '../src/lib/schemas'
 import { validate } from './_utils'
 
 describe('Validate pokemon/*.json data', () => {

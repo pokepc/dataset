@@ -1,22 +1,22 @@
 # PokéPC static dataset
 
-JSON data files of Pokémon, Games, Pokédexes, Living Dex Box presets, etc., used in https://pokepc.net and
-https://classic.pokepc.net.
+JSON data files of Pokémon, Games, Pokédexes, Living Dex Box presets, etc., used in
+https://pokepc.net and https://classic.pokepc.net.
 
 Data has been collected from many public sources including: PokéAPI, Serebii.net and Bulbapedia.
 
 ## How to update the dataset
 
-Requirements: Bun 1.3+ and PNPM 10.27+
+Requirements: Bun 1.3+ and PNPM 11.5+
 
 - Clone this project and install the dependencies with `pnpm install`.
 - Edit the files that you need.
 - Run `pnpm test` to check if the dataset is still valid.
-- Before pushing any code, run `pnpm lint` and `pnpm typecheck` to check if there are any circular imports or type
-  errors.
+- Before pushing any code, run `pnpm lint` and `pnpm typecheck` to check if there are any circular
+  imports or type errors.
 
-> TIP: If you edit a Box preset, you can preview it by running `pnpm run dev` and visiting `http://localhost:4011/boxes`
-> (you will need to restart the server to see any data changes).
+> TIP: If you edit a Box preset, you can preview it by running `pnpm run dev` and visiting
+> `http://localhost:4011/boxes` (you will need to restart the server to see any data changes).
 > <img width="745" height="340" alt="image" src="https://github.com/user-attachments/assets/73f18a73-9dd6-4b23-8d3e-1b846c3b130a" />
 
 ## Structure
@@ -29,61 +29,67 @@ Requirements: Bun 1.3+ and PNPM 10.27+
   - `pokemon/`: Individial JSON files for each Pokémon.
   - `boxpresets/`: Living Dex Box presets.
     - `classic/`: legacy one-file-per-game-set preset maps.
-    - `modern/`: route-loadable prepared presets. Each `GAMESET_ID.json` is an ordered array of preset ids, and each
-      `GAMESET_ID/PRESET_ID.json` is one standalone preset file.
+    - `modern/`: route-loadable prepared presets. Each `GAMESET_ID.json` is an ordered array of
+      preset ids, and each `GAMESET_ID/PRESET_ID.json` is one standalone preset file.
   - `.*.json`: Standalone JSON files (types, colors, items, etc.)
 
-- `lib/`
+- `src/lib/`
   - `constants.ts`: Constants.
   - `enums.ts`: Values that are constant (e.g. move categories, item categories, etc.).
   - `fs.ts`: File system utilities to load the dataset JSON files with the correct types.
   - `languages.ts`: Languages extra data and utilities.
   - `schemas.ts`: Zod schemas for the dataset.
-  - `search.ts`: Full-text search utilities. This is what powers the Pokémon searchbox on the PokéPC website.
-  - `types.ts`: All type definitions created from the schemas and the enums. Use the `Pkds.` prefix to access them
-    directly without imports. e.g. `Pkds.Pokemon`.
+  - `search.ts`: Full-text search utilities. This is what powers the Pokémon searchbox on the PokéPC
+    website.
+  - `types.ts`: All type definitions created from the schemas and the enums. Use the `Pkds.` prefix
+    to access them directly without imports. e.g. `Pkds.Pokemon`.
   - `utils.ts`: Utility functions and helpers.
   - `validators.ts`: Validators for the dataset.
 
-- `tests/*.test.ts`: Tests for the whole dataset.
+- `src/utils/`: Generic utils.
 
-- `viewer/`: Viewer apps for the dataset. They are built with just Preact and Bun. Run `pnpm run dev` to start them.
+- `src/scripts/`: Various maintenance scripts.
+
+- `tests/*.test.ts`: Tests for the whole dataset.
 
 ## Modern box presets
 
 Modern box presets can be migrated from `data/boxpresets/classic/**` with:
 
 ```bash
-bun scripts/transform-modern-box-presets.ts
+bun src/scripts/transform-modern-box-presets.ts
 ```
 
-> NOTE: this will replace the existing `data/boxpresets/modern/**` presets, so make sure to back up your work first.
+> NOTE: this will replace the existing `data/boxpresets/modern/**` presets, so make sure to back up
+> your work first.
 
 The generated layout is intentionally easy to prune by hand:
 
 - `data/boxpresets/modern/GAMESET_ID.json`: ordered preset ids for that game set.
 - `data/boxpresets/modern/GAMESET_ID/PRESET_ID.json`: one schema-versioned preset file.
 
-During `pnpm build:data`, this tree is copied to `public/dataset/boxpresets/` without adding the presets to the main
-`pokepc-static-data*.min.json` bundle. Route loaders should fetch only the needed same-origin asset, such as
-`/dataset/boxpresets/home.json` or `/dataset/boxpresets/home/grouped-region.json`.
+During `pnpm build:data`, this tree is copied to `public/dataset/boxpresets/` without adding the
+presets to the main `pokepc-static-data*.min.json` bundle. Route loaders should fetch only the
+needed same-origin asset, such as `/dataset/boxpresets/home.json` or
+`/dataset/boxpresets/home/grouped-region.json`.
 
-Known Classic-only Pokémon ids are sanitized to `null` slots by `lib/box-preset-sanitizer.ts` so box and slot order
-stays stable while incompatible content is made visible in transform diagnostics.
+Known Classic-only Pokémon ids are sanitized to `null` slots by `lib/box-preset-sanitizer.ts` so box
+and slot order stays stable while incompatible content is made visible in transform diagnostics.
 
 ## Pokemon search syntax
 
-The Pokemon search is powered by `generatePokemonSearchableText()` in `lib/utils.ts` and the matching helpers in
-`lib/search.ts`.
+The Pokemon search is powered by `generatePokemonSearchableText()` in `lib/utils.ts` and the
+matching helpers in `lib/search.ts`.
 
 ### How matching works
 
 - Search is case-insensitive.
 - Commas are treated like spaces.
 - Multiple spaces are collapsed.
-- Positive tokens are combined with AND. Example: `pikachu electric` only matches entries containing both terms.
-- Negated tokens start with `!` and must **not** be present. Example: `pikachu !mega` matches Pikachu results that do
-  not contain `mega`.
+- Positive tokens are combined with AND. Example: `pikachu electric` only matches entries containing
+  both terms.
+- Negated tokens start with `!` and must **not** be present. Example: `pikachu !mega` matches
+  Pikachu results that do not contain `mega`.
 
 ### Searchable criteria
 
@@ -96,11 +102,11 @@ Each Pokemon contributes searchable text from the following data:
 - `type:<type-id>` for both primary and secondary types
 - `region:<region-id>`
 - `color:<color-id>` Special case: brown Pokemon also include `color:orange`
-- Generation tokens for both species dex generation and the Pokemon's own `gen` field: `gen1`, `gen:1`, `gen2`, `gen:2`,
-  etc.
-- Tags/flags when applicable: `mythical`, `legendary`, `female`, `baby`, `ultrabeast`, `ultra beast`, `regional`,
-  `fusion`, `paradox`, `convergent`, `cosmetic`, `gigantamax`, `gmax`, `is-form`, `is-mega`, `is-battle-only`,
-  `not-battle-only`, `is-storable`, `not-storable`
+- Generation tokens for both species dex generation and the Pokemon's own `gen` field: `gen1`,
+  `gen:1`, `gen2`, `gen:2`, etc.
+- Tags/flags when applicable: `mythical`, `legendary`, `female`, `baby`, `ultrabeast`,
+  `ultra beast`, `regional`, `fusion`, `paradox`, `convergent`, `cosmetic`, `gigantamax`, `gmax`,
+  `is-form`, `is-mega`, `is-battle-only`, `not-battle-only`, `is-storable`, `not-storable`
 
 ### Examples
 
@@ -137,11 +143,11 @@ The recommended way to use it in your projects is to add it as a git submodule, 
 git submodule add git@github.com:pokepc/dataset.git packages/dataset
 ```
 
-This way, you can directly use the dataset and the lib `*.ts` files in your project as you wish, e.g. as a monorepo
-workspace dependency: `"@pokepc/dataset": "workspace:*",`
+This way, you can directly use the dataset and the lib `*.ts` files in your project as you wish,
+e.g. as a monorepo workspace dependency: `"@pokepc/dataset": "workspace:*",`
 
-Once you build your own project, make sure you delete any content that is not needed, such as the `dataset/tests/`
-directory, so you can save some space.
+Once you build your own project, make sure you delete any content that is not needed, such as the
+`dataset/tests/` directory, so you can save some space.
 
 ## Credits
 

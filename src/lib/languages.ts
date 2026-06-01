@@ -124,7 +124,10 @@ export const pokemonGameLocales: Array<PokemonGameLocaleData> = [
   { id: 'PT-BR', name: 'Portuguese (Brazil)' },
 ]
 
-export const pokemonLangToGameLocale: Record<Pkds.LanguageAlpha2 | Pkds.LanguageAlpha3, Pkds.LanguageInGameCode> = {
+export const pokemonLangToGameLocale: Record<
+  Pkds.LanguageAlpha2 | Pkds.LanguageAlpha3,
+  Pkds.LanguageInGameCode
+> = {
   en: 'ENG',
   eng: 'ENG',
   de: 'DEU',

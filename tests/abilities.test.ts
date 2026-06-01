@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllAbilities } from '../lib/fs'
-import { abilitySchema } from '../lib/schemas'
+import { loadAllAbilities } from '../src/lib/fs'
+import { abilitySchema } from '../src/lib/schemas'
 import { validate } from './_utils'
 
 describe('Validate abilities.json data', () => {

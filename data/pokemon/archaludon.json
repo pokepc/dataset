@@ -36,7 +36,7 @@
   "debutIn": "sv",
   "obtainableIn": ["go", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "home", "sv-s", "sv-v"],
+  "storableIn": ["go", "home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 90,
   "baseAtk": 105,
@@ -71,7 +71,13 @@
     "chs": "铝钢桥龙",
     "cht": "鋁鋼橋龍"
   },
-  "genus": { "eng": "Alloy Pokémon", "fra": "Alliage", "deu": "Alloy Pokémon", "jap": "ごうきんポケモン", "kor": "합금포켓몬" },
+  "genus": {
+    "eng": "Alloy Pokémon",
+    "fra": "Alliage",
+    "deu": "Alloy Pokémon",
+    "jap": "ごうきんポケモン",
+    "kor": "합금포켓몬"
+  },
   "speciesNames": {},
   "formNames": {},
   "transferOnlyIn": ["home"]

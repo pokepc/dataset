@@ -36,17 +36,7 @@
   "debutIn": "sm",
   "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "lza"],
   "eventOnlyIn": [],
-  "storableIn": [
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "swsh-sw",
-    "swsh-sh",
-    "home",
-    "lza"
-  ],
+  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home", "lza"],
   "shinyReleased": true,
   "shinyLockedIn": ["usum-us", "usum-um", "lza"],
   "baseHp": 54,
@@ -94,7 +84,15 @@
     "chs": "秩序宝可梦",
     "cht": "秩序寶可夢"
   },
-  "speciesNames": { "eng": "Zygarde", "fra": "Zygarde", "deu": "Zygarde", "jap": "ジガルデ", "kor": "지가르데", "chs": "基格尔德", "cht": "基格爾德" },
+  "speciesNames": {
+    "eng": "Zygarde",
+    "fra": "Zygarde",
+    "deu": "Zygarde",
+    "jap": "ジガルデ",
+    "kor": "지가르데",
+    "chs": "基格尔德",
+    "cht": "基格爾德"
+  },
   "formNames": {
     "eng": "10% Forme",
     "esp": "Forma 10%",

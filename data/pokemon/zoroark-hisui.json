@@ -35,7 +35,7 @@
   "debutIn": "la",
   "obtainableIn": ["go", "la"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "home", "la", "sv-s", "sv-v"],
+  "storableIn": ["go", "home", "la", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 55,
   "baseAtk": 100,
@@ -79,7 +79,20 @@
     "chs": "妖狐宝可梦",
     "cht": "妖狐寶可夢"
   },
-  "speciesNames": { "eng": "Zoroark", "fra": "Zoroark", "deu": "Zoroark", "jap": "ゾロアーク", "kor": "조로아크", "chs": "索罗亚克", "cht": "索羅亞克" },
-  "formNames": { "eng": "Hisuian Form", "fra": "Forme de Hisui", "deu": "Hisui-Form", "jap": "ヒスイのすがた" },
+  "speciesNames": {
+    "eng": "Zoroark",
+    "fra": "Zoroark",
+    "deu": "Zoroark",
+    "jap": "ゾロアーク",
+    "kor": "조로아크",
+    "chs": "索罗亚克",
+    "cht": "索羅亞克"
+  },
+  "formNames": {
+    "eng": "Hisuian Form",
+    "fra": "Forme de Hisui",
+    "deu": "Hisui-Form",
+    "jap": "ヒスイのすがた"
+  },
   "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

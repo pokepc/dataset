@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllPokedexes, loadAllPokemon } from '../lib/fs'
-import { pokedexSchema } from '../lib/schemas'
+import { loadAllPokedexes, loadAllPokemon } from '../src/lib/fs'
+import { pokedexSchema } from '../src/lib/schemas'
 import { validate } from './_utils'
 
 const pokemonById = Object.fromEntries(loadAllPokemon().map((pokemon) => [pokemon.id, pokemon]))
@@ -21,7 +21,9 @@ function assertPidSlotRules(entries: Pkds.PokedexEntry[], dexId: string) {
   for (const [pid, group] of byPid) {
     if (group.length === 1) continue
     if (group.length !== 2) {
-      throw new Error(`${dexId}: pid "${pid}" appears ${group.length} times (max 2 with meta + form slot)`)
+      throw new Error(
+        `${dexId}: pid "${pid}" appears ${group.length} times (max 2 with meta + form slot)`,
+      )
     }
     const [a, b] = group
     const aIsVariant = a.meta != null && a.isForm === false

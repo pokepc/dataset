@@ -185,4 +185,89 @@ declare global {
   }
 }
 
+declare global {
+  namespace Pkds {
+    export type Sortable<T> = T & { sortIndex: number }
+
+    export type PokedexesWithStats = {
+      dexes: Pokedex[]
+      totalPokemon: number
+      totalSpecies: number
+      totalForms: number
+      allPokemon: PokedexEntry[]
+    }
+
+    export type CdnDataBundle = {
+      pokemon: Pkds.Pokemon[]
+      games: Pkds.Game[]
+      pokedexes: Pkds.Pokedex[]
+      abilities: Pkds.Ability[]
+      moves: Pkds.Move[]
+      items: Pkds.Item[]
+      pokeballs: Pkds.Pokeball[]
+      characters: Pkds.Character[]
+      personalities: Pkds.Personality[]
+      ribbons: Pkds.Ribbon[]
+      marks: Pkds.Mark[]
+      originMarks: Pkds.OriginMark[]
+      types: Pkds.Type[]
+      natures: Pkds.Nature[]
+      regions: Pkds.Region[]
+    }
+
+    export type CdnDataBundleComputed = {
+      supportedGames: Pkds.Game[]
+      supportedGamesById: Record<string, Pkds.Game | undefined>
+      supportedGamesBySlug: Record<string, Pkds.Game | undefined>
+      pokedexesById: Record<string, Pkds.Pokedex | undefined>
+      pokemonByNid: Record<string, Pkds.Pokemon | undefined>
+      pokemonById: Record<string, Pkds.Pokemon | undefined>
+      searchablePokemon: Pkds.TranslatedPokemon[]
+      searchablePokemonByNid: Pkds.TranslatedPokemonByKey
+      searchablePokemonById: Pkds.TranslatedPokemonByKey
+      charactersById: Record<string, Pkds.Character | undefined>
+      typesById: Record<string, Pkds.Type | undefined>
+      abilitiesById: Record<string, Pkds.Ability | undefined>
+      gamesById: Record<string, Pkds.Game | undefined>
+      movesById: Record<string, Pkds.Move | undefined>
+      itemsById: Record<string, Pkds.Item | undefined>
+      pokeballsById: Record<string, Pkds.Pokeball | undefined>
+      originMarksById: Record<string, Pkds.OriginMark | undefined>
+      marksById: Record<string, Pkds.Mark | undefined>
+      ribbonsById: Record<string, Pkds.Ribbon | undefined>
+      naturesById: Record<string, Pkds.Nature | undefined>
+      regionsById: Record<string, Pkds.Region | undefined>
+      personalitiesById: Record<string, Pkds.Personality | undefined>
+    }
+
+    export type FullCdnDataBundle = CdnDataBundle & CdnDataBundleComputed
+    export type FullCdnDataBundleLoad = Readonly<FullCdnDataBundle> & {
+      loaded: boolean
+    }
+  }
+
+  var __pokepcData: Pkds.FullCdnDataBundleLoad
+
+  export type CatalogBoxCellPokemonData = {
+    nid: string
+    box?: number
+    cell?: number
+    shiny?: boolean | null
+    origMark?: string | null
+    origGame?: string | null
+    size?: 'xs' | 's' | 'm' | 'l' | 'xl' | null
+    [key: string]: any
+  }
+
+  export type CatalogBoxCellData = CatalogBoxCellPokemonData | null
+
+  export type CatalogBoxData = {
+    id?: string
+    name?: string | null
+    pokemon: CatalogBoxCellData[]
+    sortIndex?: number
+    [key: string]: unknown
+  }
+}
+
 export {}

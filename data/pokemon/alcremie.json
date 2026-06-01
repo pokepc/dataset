@@ -35,7 +35,7 @@
   "debutIn": "swsh",
   "obtainableIn": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "storableIn": ["swsh-sw", "swsh-sh", "home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 65,
   "baseAtk": 60,
@@ -125,7 +125,15 @@
   },
   "evolvesFrom": "milcery",
   "evoFromCondition": "spin while holding a Sweet",
-  "names": { "eng": "Alcremie", "fra": "Charmilly", "deu": "Pokusan", "jap": "マホイップ", "kor": "마휘핑", "chs": "霜奶仙", "cht": "霜奶仙" },
+  "names": {
+    "eng": "Alcremie",
+    "fra": "Charmilly",
+    "deu": "Pokusan",
+    "jap": "マホイップ",
+    "kor": "마휘핑",
+    "chs": "霜奶仙",
+    "cht": "霜奶仙"
+  },
   "genus": {
     "eng": "Cream Pokémon",
     "esp": "Pokémon Nata",

@@ -1,10 +1,8 @@
 {
   "name": "@pokepc/dataset",
-  "private": true,
   "files": [
-    "lib",
-    "data",
-    "!lib/**/*.test.ts"
+    "build",
+    "data"
   ],
   "type": "module",
   "exports": {
@@ -21,7 +19,6 @@
     "./lib/validators": "./lib/validators.ts"
   },
   "scripts": {
-    "dev": "PORT=4011 bun run 'viewer/**/*.html'",
     "test": "vitest --run --bail 20",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
@@ -33,12 +30,10 @@
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
-    "@types/node": "^25.8.0",
-    "clsx": "^2.1.1",
-    "openai": "^6.37.0",
-    "oxfmt": "^0.49.0",
-    "preact": "^10.29.1",
+    "@types/node": "^25.9.1",
+    "openai": "^6.39.1",
+    "oxfmt": "^0.52.0",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.6"
+    "vitest": "^4.1.7"
   }
 }

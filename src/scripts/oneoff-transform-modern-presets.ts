@@ -25,7 +25,9 @@ const result = transformModernBoxPresets({
   validPokemonIds: loadValidPokemonIds(datasetDir),
 })
 
-console.log(`[box-presets-modern] generated ${result.presetCount} presets for ${result.gameSets.length} game sets`)
+console.log(
+  `[box-presets-modern] generated ${result.presetCount} presets for ${result.gameSets.length} game sets`,
+)
 
 if (result.diagnostics.length > 0) {
   console.log('[box-presets-modern] sanitizer diagnostics:', JSON.stringify(result.diagnostics))

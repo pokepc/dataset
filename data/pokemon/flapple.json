@@ -36,7 +36,7 @@
   "debutIn": "swsh",
   "obtainableIn": ["go", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "storableIn": ["go", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 70,
   "baseAtk": 110,
@@ -62,7 +62,15 @@
   },
   "evolvesFrom": "applin",
   "evoFromItem": "tartapple",
-  "names": { "eng": "Flapple", "fra": "Pomdrapi", "deu": "Drapfel", "jap": "アップリュー", "kor": "애프룡", "chs": "苹裹龙", "cht": "蘋裹龍" },
+  "names": {
+    "eng": "Flapple",
+    "fra": "Pomdrapi",
+    "deu": "Drapfel",
+    "jap": "アップリュー",
+    "kor": "애프룡",
+    "chs": "苹裹龙",
+    "cht": "蘋裹龍"
+  },
   "genus": {
     "eng": "Apple Wing Pokémon",
     "esp": "Pokémon Manzanala",

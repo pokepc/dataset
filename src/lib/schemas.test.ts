@@ -11,7 +11,9 @@ describe('modernBoxPresetSlotSchema', () => {
   })
 
   it('accepts pokemon object slots with shiny and gmax flags', () => {
-    expect(modernBoxPresetSlotSchema.parse({ pokemon: 'charizard', shiny: true, gmax: true })).toEqual({
+    expect(
+      modernBoxPresetSlotSchema.parse({ pokemon: 'charizard', shiny: true, gmax: true }),
+    ).toEqual({
       pokemon: 'charizard',
       shiny: true,
       gmax: true,
@@ -36,7 +38,12 @@ describe('modernBoxPresetSchema', () => {
       name: 'Mixed slot variants',
       boxes: [
         {
-          slots: ['bulbasaur', { pokemon: 'charizard', gmax: true }, { pokemon: 'mewtwo', shiny: true }, null],
+          slots: [
+            'bulbasaur',
+            { pokemon: 'charizard', gmax: true },
+            { pokemon: 'mewtwo', shiny: true },
+            null,
+          ],
         },
       ],
     }

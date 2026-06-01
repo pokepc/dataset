@@ -34,7 +34,10 @@ const batchResponseSchema = z.object({
     .array(
       z.object({
         id: z.string().describe('Exact ability id from the input batch'),
-        tags: z.array(tagEnum).min(1).describe('At least one tag; only values from the allowed list'),
+        tags: z
+          .array(tagEnum)
+          .min(1)
+          .describe('At least one tag; only values from the allowed list'),
         immunities: z
           .array(typeEnum)
           .nullable()
@@ -103,7 +106,9 @@ function parseArgs() {
   return { limit: Number.isFinite(limit) && limit! > 0 ? limit : undefined }
 }
 
-function buildUserContent(batch: Array<{ id: string; name: string; shortDesc: string; desc: string }>): string {
+function buildUserContent(
+  batch: Array<{ id: string; name: string; shortDesc: string; desc: string }>,
+): string {
   const lines = batch.map((a) =>
     JSON.stringify({
       id: a.id,
@@ -257,7 +262,9 @@ async function main() {
   })
 
   fs.writeFileSync(ABILITIES_PATH, JSON.stringify(next, null, 2) + '\n')
-  console.error(`Wrote ${ABILITIES_PATH} (${idToMeta.size} abilities updated from ${slice.length} processed).`)
+  console.error(
+    `Wrote ${ABILITIES_PATH} (${idToMeta.size} abilities updated from ${slice.length} processed).`,
+  )
 }
 
 main().catch((e) => {

@@ -55,7 +55,9 @@ function writeClassicPresetFile(datasetDir: string) {
 }
 
 function readModernFile(datasetDir: string, relativePath: string): unknown {
-  return JSON.parse(fs.readFileSync(path.join(datasetDir, 'boxpresets', 'modern', relativePath), 'utf8'))
+  return JSON.parse(
+    fs.readFileSync(path.join(datasetDir, 'boxpresets', 'modern', relativePath), 'utf8'),
+  )
 }
 
 describe('modern box preset transform', () => {
@@ -79,7 +81,9 @@ describe('modern box preset transform', () => {
       presetCount: 2,
     })
     expect(readModernFile(datasetDir, 'home.json')).toEqual(['grouped-region', 'minimal'])
-    expect(fs.existsSync(path.join(datasetDir, 'boxpresets', 'modern', 'home', 'hidden.json'))).toBe(false)
+    expect(
+      fs.existsSync(path.join(datasetDir, 'boxpresets', 'modern', 'home', 'hidden.json')),
+    ).toBe(false)
     expect(readModernFile(datasetDir, 'home/grouped-region.json')).toMatchObject({
       schemaVersion: 1,
       id: 'grouped-region',
@@ -105,9 +109,15 @@ describe('modern box preset transform', () => {
     writeClassicPresetFile(datasetDir)
 
     transformModernBoxPresets({ datasetDir, validPokemonIds })
-    const first = fs.readFileSync(path.join(datasetDir, 'boxpresets', 'modern', 'home', 'grouped-region.json'), 'utf8')
+    const first = fs.readFileSync(
+      path.join(datasetDir, 'boxpresets', 'modern', 'home', 'grouped-region.json'),
+      'utf8',
+    )
     transformModernBoxPresets({ datasetDir, validPokemonIds })
-    const second = fs.readFileSync(path.join(datasetDir, 'boxpresets', 'modern', 'home', 'grouped-region.json'), 'utf8')
+    const second = fs.readFileSync(
+      path.join(datasetDir, 'boxpresets', 'modern', 'home', 'grouped-region.json'),
+      'utf8',
+    )
 
     expect(second).toBe(first)
   })

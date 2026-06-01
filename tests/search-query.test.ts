@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { matchesSearchQuery, splitSearchQueryTokens } from '../lib/utils'
+import { matchesSearchQuery, splitSearchQueryTokens } from '../src/utils/utils-internal'
 
 describe('search query helpers', () => {
   it('splits positive and negated tokens', () => {

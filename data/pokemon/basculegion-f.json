@@ -37,7 +37,7 @@
   "debutIn": "la",
   "obtainableIn": ["la", "sv-s", "sv-v"],
   "eventOnlyIn": [],
-  "storableIn": ["home", "la", "sv-s", "sv-v"],
+  "storableIn": ["home", "la", "sv-s", "sv-v", "champions"],
   "shinyReleased": true,
   "baseHp": 120,
   "baseAtk": 92,
@@ -64,7 +64,12 @@
   },
   "evolvesFrom": "basculin-white-striped",
   "evoFromCondition": "Receive 294+ recoil without fainting",
-  "names": { "eng": "Basculegion (Female)", "fra": "Paragruel (Femelle)", "deu": "Salmagnis (Weiblich)", "jap": "イダイトウ (メスのすがた)" },
+  "names": {
+    "eng": "Basculegion (Female)",
+    "fra": "Paragruel (Femelle)",
+    "deu": "Salmagnis (Weiblich)",
+    "jap": "イダイトウ (メスのすがた)"
+  },
   "genus": {
     "eng": "Big Fish Pokémon",
     "fra": "Pokémon Poissigrand",

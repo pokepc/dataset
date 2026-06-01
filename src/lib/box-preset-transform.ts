@@ -40,7 +40,10 @@ function getSlotPokemonId(slot: Pkds.ModernBoxPresetSlot): string | null {
   return slot.pokemon
 }
 
-function validateModernPresetPokemonIds(preset: Pkds.ModernBoxPreset, validPokemonIds: ReadonlySet<string>) {
+function validateModernPresetPokemonIds(
+  preset: Pkds.ModernBoxPreset,
+  validPokemonIds: ReadonlySet<string>,
+) {
   for (const [boxIndex, box] of preset.boxes.entries()) {
     for (const [slotIndex, slot] of box.slots.entries()) {
       const pokemonId = getSlotPokemonId(slot)
@@ -129,7 +132,9 @@ export function transformClassicBoxPreset(
   }
 }
 
-export function transformModernBoxPresets(options: TransformModernBoxPresetsOptions): TransformModernBoxPresetsResult {
+export function transformModernBoxPresets(
+  options: TransformModernBoxPresetsOptions,
+): TransformModernBoxPresetsResult {
   const classicDir = path.join(options.datasetDir, 'boxpresets', 'classic')
   const modernDir = path.join(options.datasetDir, 'boxpresets', 'modern')
   const gameSetFiles = fs
@@ -147,7 +152,9 @@ export function transformModernBoxPresets(options: TransformModernBoxPresetsOpti
 
   for (const filename of gameSetFiles) {
     const gameSet = path.basename(filename, '.json')
-    const classicPresetsById = readJson<Record<string, Pkds.LegacyBoxPreset>>(path.join(classicDir, filename))
+    const classicPresetsById = readJson<Record<string, Pkds.LegacyBoxPreset>>(
+      path.join(classicDir, filename),
+    )
     const presetIds = Object.keys(classicPresetsById).filter(
       (presetId) => !isHiddenClassicPreset(classicPresetsById[presetId]),
     )

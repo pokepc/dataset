@@ -33,17 +33,7 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "bw",
-  "obtainableIn": [
-    "bw-b",
-    "bw-w",
-    "b2w2-b2",
-    "b2w2-w2",
-    "xy-y",
-    "go",
-    "swsh-sw",
-    "swsh-sh",
-    "lza"
-  ],
+  "obtainableIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-y", "go", "swsh-sw", "swsh-sh", "lza"],
   "eventOnlyIn": [],
   "storableIn": [
     "bw-b",
@@ -62,7 +52,8 @@
     "swsh-sw",
     "swsh-sh",
     "home",
-    "lza"
+    "lza",
+    "champions"
   ],
   "shinyReleased": true,
   "baseHp": 64,
@@ -89,7 +80,15 @@
   },
   "evolvesFrom": "purrloin",
   "evoFromLevel": 20,
-  "names": { "eng": "Liepard", "fra": "Léopardus", "deu": "Kleoparda", "jap": "レパルダス", "kor": "레파르다스", "chs": "酷豹", "cht": "酷豹" },
+  "names": {
+    "eng": "Liepard",
+    "fra": "Léopardus",
+    "deu": "Kleoparda",
+    "jap": "レパルダス",
+    "kor": "레파르다스",
+    "chs": "酷豹",
+    "cht": "酷豹"
+  },
   "genus": {
     "eng": "Cruel Pokémon",
     "esp": "Pokémon Calculador",

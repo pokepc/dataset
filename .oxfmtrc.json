@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
   "semi": false,
-  "printWidth": 120,
+  "printWidth": 100,
   "trailingComma": "all",
   "tabWidth": 2,
   "proseWrap": "always",
@@ -9,22 +9,36 @@
   "arrowParens": "always",
   "jsxSingleQuote": false,
   "quoteProps": "as-needed",
+  "sortTailwindcss": {
+    "functions": ["cn", "twMerge", "createTheme"],
+    "attributes": ["theme", "class", "className"]
+  },
   "sortPackageJson": true,
   "ignorePatterns": [
     "build/",
     "dist/",
-    "data/",
+    ".git/",
+    ".next/",
+    ".turbo/",
+    ".react-router/",
     "node_modules/",
     ".yarn/",
     ".cache/",
     "coverage/",
-    "pnpm-*.yaml",
+    ".vercel/",
+    ".astro/",
+    ".wrangler/",
     "*.min.json",
+    "pnpm-*.yaml",
     ".pnpm-store/",
     ".ignore/",
     ".local/",
+    "public/",
+    "app/generated/",
     "dataset/generated/",
     "*-index.json",
-    "*.min.json"
+    "*.min.json",
+    "resources/",
+    "spritesheets/*.json"
   ]
 }
