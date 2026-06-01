@@ -1,27 +1,26 @@
 {
   "name": "@pokepc/dataset",
+  "version": "6.3.0",
   "files": [
     "build",
     "data"
   ],
+  "license": "MIT",
   "type": "module",
   "exports": {
-    "./lib/box-preset-transform": "./lib/box-preset-transform.ts",
-    "./lib/constants": "./lib/constants.ts",
-    "./lib/enums": "./lib/enums.ts",
-    "./lib/box-preset-sanitizer": "./lib/box-preset-sanitizer.ts",
-    "./lib/fs": "./lib/fs.ts",
-    "./lib/languages": "./lib/languages.ts",
-    "./lib/schemas": "./lib/schemas.ts",
-    "./lib/search": "./lib/search.ts",
-    "./lib/types": "./lib/types.ts",
-    "./lib/utils": "./lib/utils.ts",
-    "./lib/validators": "./lib/validators.ts"
+    "./data/*": "./data/*.json",
+    "./lib/*": {
+      "types": "./build/lib/*.d.mts",
+      "import": "./build/lib/*.mjs",
+      "default": "./build/lib/*.mjs"
+    }
   },
   "scripts": {
-    "test": "vitest --run --bail 20",
+    "build": "tsdown",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
+    "lint": "publint && pnpm typecheck",
+    "test": "vitest --run --bail 20",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -33,6 +32,8 @@
     "@types/node": "^25.9.1",
     "openai": "^6.39.1",
     "oxfmt": "^0.52.0",
+    "publint": "^0.3.21",
+    "tsdown": "^0.22.1",
     "typescript": "^6.0.3",
     "vitest": "^4.1.7"
   }
