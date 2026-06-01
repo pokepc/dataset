@@ -1,14 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllAbilities } from '../src/lib/fs'
-import { abilitySchema } from '../src/lib/schemas'
-import { validate } from './_utils'
+import { loadAllMarks } from '../../src/lib/fs'
+import { markSchema } from '../../src/lib/schemas'
+import { validate } from '../_utils'
 
-describe('Validate abilities.json data', () => {
-  const recordList = loadAllAbilities()
+describe('Validate marks.json data', () => {
+  const recordList = loadAllMarks()
 
   it('should be valid', () => {
-    const listSchema = z.array(abilitySchema)
+    const listSchema = z.array(markSchema)
     const validation = validate(listSchema, recordList)
 
     if (!validation.success) {

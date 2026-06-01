@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllPokedexes, loadAllPokemon } from '../src/lib/fs'
-import { pokedexSchema } from '../src/lib/schemas'
-import { validate } from './_utils'
+import { loadAllPokedexes, loadAllPokemon } from '../../src/lib/fs'
+import { pokedexSchema } from '../../src/lib/schemas'
+import { validate } from '../_utils'
 
 const pokemonById = Object.fromEntries(loadAllPokemon().map((pokemon) => [pokemon.id, pokemon]))
 

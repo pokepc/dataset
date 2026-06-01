@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { charactersFs } from '../src/lib/fs'
-import { characterSchema } from '../src/lib/schemas'
-import { validate } from './_utils'
+import { charactersFs } from '../../src/lib/fs'
+import { characterSchema } from '../../src/lib/schemas'
+import { validate } from '../_utils'
 
 describe('Validate characters.json data', () => {
   // Read the characters data directly from the file

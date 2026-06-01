@@ -29,7 +29,7 @@
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",
     "test": "vitest --run --bail 20",
-    "test:e2e": "node src/tests/pkg-smoke-test.ts",
+    "test:e2e": "node tests/smoke-tests/pkg-smoke-test-run.ts",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "pnpm build"
   },
