@@ -5,11 +5,6 @@ on:
     tags:
       - '*.*.*'
   workflow_dispatch:
-    inputs:
-      ref:
-        description: 'Semver tag to publish, e.g. 1.5.4. Defaults to the selected ref.'
-        required: false
-        type: string
 
 permissions:
   contents: read
@@ -24,25 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Resolve release ref
-        id: release
-        shell: bash
-        env:
-          RELEASE_REF: ${{ github.event.inputs.ref || github.ref_name }}
-        run: |
-          release_ref="${RELEASE_REF#refs/tags/}"
-
-          if [[ ! "$release_ref" =~ ^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-[0-9A-Za-z.-]+)?(\+[0-9A-Za-z.-]+)?$ ]]; then
-            echo "::error title=Invalid release ref::Expected a semver tag like 1.5.4 or 1.5.4-beta.1, got '$release_ref'."
-            exit 1
-          fi
-
-          echo "ref=$release_ref" >> "$GITHUB_OUTPUT"
-
       - name: Checkout
         uses: actions/checkout@v6
         with:
-          ref: ${{ steps.release.outputs.ref }}
           persist-credentials: false
           show-progress: false
           submodules: recursive
@@ -55,7 +34,7 @@ jobs:
         with:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
-          package-manager-cache: false
+          package-manager-cache: false # never use cache for publishing
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
