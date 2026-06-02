@@ -1,0 +1,19 @@
+{
+  "editor.rulers": [90, 100],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.removeUnusedImports": "explicit"
+  },
+  "typescript.preferences.organizeImports": {
+    "enabled": true,
+    "typeImports": true,
+    "typeImportsOrder": "alphabetical",
+    "typeImportsOrderStyle": "natural"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.mdx": "markdown",
+    "*.svg": "html"
+  }
+}

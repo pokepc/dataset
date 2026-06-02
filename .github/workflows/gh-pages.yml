@@ -3,8 +3,12 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    tags:
-      - '*.*.*'
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'data-next/**'
+      - 'src/openapi/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
