@@ -1,0 +1,5847 @@
+[
+  {
+    "id": "1",
+    "slug": "pound",
+    "slugLoc": "magcigi",
+    "name": "막치기",
+    "description": ""
+  },
+  {
+    "id": "2",
+    "slug": "karate-chop",
+    "slugLoc": "taegweondangsu",
+    "name": "태권당수",
+    "description": ""
+  },
+  {
+    "id": "3",
+    "slug": "double-slap",
+    "slugLoc": "yeonsogbbyamcigi",
+    "name": "연속뺨치기",
+    "description": ""
+  },
+  {
+    "id": "4",
+    "slug": "comet-punch",
+    "slugLoc": "yeonsogpeonci",
+    "name": "연속펀치",
+    "description": ""
+  },
+  {
+    "id": "5",
+    "slug": "mega-punch",
+    "slugLoc": "megatonpeonci",
+    "name": "메가톤펀치",
+    "description": ""
+  },
+  {
+    "id": "6",
+    "slug": "pay-day",
+    "slugLoc": "goyangidonbadgi",
+    "name": "고양이돈받기",
+    "description": ""
+  },
+  {
+    "id": "7",
+    "slug": "fire-punch",
+    "slugLoc": "bulggocpeonci",
+    "name": "불꽃펀치",
+    "description": "10% 확률로 상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "8",
+    "slug": "ice-punch",
+    "slugLoc": "naengdongpeonci",
+    "name": "냉동펀치",
+    "description": "10% 확률로 상대를 얼음 상태로 만든다."
+  },
+  {
+    "id": "9",
+    "slug": "thunder-punch",
+    "slugLoc": "beongaepeonci",
+    "name": "번개펀치",
+    "description": "10% 확률로 상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "10",
+    "slug": "scratch",
+    "slugLoc": "halkwigi",
+    "name": "할퀴기",
+    "description": ""
+  },
+  {
+    "id": "11",
+    "slug": "vise-grip",
+    "slugLoc": "jjibgi",
+    "name": "찝기",
+    "description": ""
+  },
+  {
+    "id": "12",
+    "slug": "guillotine",
+    "slugLoc": "gawijareugi",
+    "name": "가위자르기",
+    "description": "상대를 기절시킨다.\n명중률은 30%로 고정된다."
+  },
+  {
+    "id": "13",
+    "slug": "razor-wind",
+    "slugLoc": "kalbaram",
+    "name": "칼바람",
+    "description": ""
+  },
+  {
+    "id": "14",
+    "slug": "swords-dance",
+    "slugLoc": "kalcum",
+    "name": "칼춤",
+    "description": "자신의 공격을 2단계 올린다."
+  },
+  {
+    "id": "15",
+    "slug": "cut",
+    "slugLoc": "pulbegi",
+    "name": "풀베기",
+    "description": ""
+  },
+  {
+    "id": "16",
+    "slug": "gust",
+    "slugLoc": "baramileukigi",
+    "name": "바람일으키기",
+    "description": ""
+  },
+  {
+    "id": "17",
+    "slug": "wing-attack",
+    "slugLoc": "nalgaecigi",
+    "name": "날개치기",
+    "description": ""
+  },
+  {
+    "id": "18",
+    "slug": "whirlwind",
+    "slugLoc": "nalryeobeorigi",
+    "name": "날려버리기",
+    "description": "상대에게 교체할 포켓몬이 있는 경우\n랜덤한 포켓몬으로 교체시킨다."
+  },
+  {
+    "id": "19",
+    "slug": "fly",
+    "slugLoc": "gongjungnalgi",
+    "name": "공중날기",
+    "description": "사용한 턴에 공중 상태가 되어\n다음 턴에 공격한다."
+  },
+  {
+    "id": "20",
+    "slug": "bind",
+    "slugLoc": "joigi",
+    "name": "조이기",
+    "description": "상대를 바인드 상태로 만든다."
+  },
+  {
+    "id": "21",
+    "slug": "slam",
+    "slugLoc": "himggeoscigi",
+    "name": "힘껏치기",
+    "description": ""
+  },
+  {
+    "id": "22",
+    "slug": "vine-whip",
+    "slugLoc": "deonggulcaejjig",
+    "name": "덩굴채찍",
+    "description": ""
+  },
+  {
+    "id": "23",
+    "slug": "stomp",
+    "slugLoc": "jisbalbgi",
+    "name": "짓밟기",
+    "description": ""
+  },
+  {
+    "id": "24",
+    "slug": "double-kick",
+    "slugLoc": "dubeoncagi",
+    "name": "두번차기",
+    "description": ""
+  },
+  {
+    "id": "25",
+    "slug": "mega-kick",
+    "slugLoc": "megatonkig",
+    "name": "메가톤킥",
+    "description": ""
+  },
+  {
+    "id": "26",
+    "slug": "jump-kick",
+    "slugLoc": "jeompeukig",
+    "name": "점프킥",
+    "description": ""
+  },
+  {
+    "id": "27",
+    "slug": "rolling-kick",
+    "slugLoc": "dolryeocagi",
+    "name": "돌려차기",
+    "description": ""
+  },
+  {
+    "id": "28",
+    "slug": "sand-attack",
+    "slugLoc": "moraebburigi",
+    "name": "모래뿌리기",
+    "description": ""
+  },
+  {
+    "id": "29",
+    "slug": "headbutt",
+    "slugLoc": "bagcigi",
+    "name": "박치기",
+    "description": ""
+  },
+  {
+    "id": "30",
+    "slug": "horn-attack",
+    "slugLoc": "bbuljjireugi",
+    "name": "뿔찌르기",
+    "description": ""
+  },
+  {
+    "id": "31",
+    "slug": "fury-attack",
+    "slugLoc": "magujjireugi",
+    "name": "마구찌르기",
+    "description": ""
+  },
+  {
+    "id": "32",
+    "slug": "horn-drill",
+    "slugLoc": "bbuldeuril",
+    "name": "뿔드릴",
+    "description": "상대를 기절시킨다.\n명중률은 30%로 고정된다."
+  },
+  {
+    "id": "33",
+    "slug": "tackle",
+    "slugLoc": "momtongbagcigi",
+    "name": "몸통박치기",
+    "description": ""
+  },
+  {
+    "id": "34",
+    "slug": "body-slam",
+    "slugLoc": "nureugi",
+    "name": "누르기",
+    "description": "30% 확률로 상대를 마비 상태로 만든다.\n작아지기 상태인 상대에게는\n위력이 2배가 되며 반드시 명중한다."
+  },
+  {
+    "id": "35",
+    "slug": "wrap",
+    "slugLoc": "gimbabmali",
+    "name": "김밥말이",
+    "description": "상대를 바인드 상태로 만든다."
+  },
+  {
+    "id": "36",
+    "slug": "take-down",
+    "slugLoc": "doljin",
+    "name": "돌진",
+    "description": ""
+  },
+  {
+    "id": "37",
+    "slug": "thrash",
+    "slugLoc": "nandongburigi",
+    "name": "난동부리기",
+    "description": "자신은 난동 상태가 된다."
+  },
+  {
+    "id": "38",
+    "slug": "double-edge",
+    "slugLoc": "ipansapantaekeul",
+    "name": "이판사판태클",
+    "description": "준 데미지의 1/3만큼 자신도 데미지를 입는다."
+  },
+  {
+    "id": "39",
+    "slug": "tail-whip",
+    "slugLoc": "ggoriheundeulgi",
+    "name": "꼬리흔들기",
+    "description": ""
+  },
+  {
+    "id": "40",
+    "slug": "poison-sting",
+    "slugLoc": "dogcim",
+    "name": "독침",
+    "description": ""
+  },
+  {
+    "id": "41",
+    "slug": "twineedle",
+    "slugLoc": "deobeulnideul",
+    "name": "더블니들",
+    "description": ""
+  },
+  {
+    "id": "42",
+    "slug": "pin-missile",
+    "slugLoc": "baneulmisail",
+    "name": "바늘미사일",
+    "description": "2~5회 연속으로 공격한다."
+  },
+  {
+    "id": "43",
+    "slug": "leer",
+    "slugLoc": "jjaeryeobogi",
+    "name": "째려보기",
+    "description": ""
+  },
+  {
+    "id": "44",
+    "slug": "bite",
+    "slugLoc": "mulgi",
+    "name": "물기",
+    "description": "30% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "45",
+    "slug": "growl",
+    "slugLoc": "uleumsori",
+    "name": "울음소리",
+    "description": ""
+  },
+  {
+    "id": "46",
+    "slug": "roar",
+    "slugLoc": "ulbujijgi",
+    "name": "울부짖기",
+    "description": "상대에게 교체할 포켓몬이 있는 경우\n랜덤한 포켓몬으로 교체시킨다."
+  },
+  {
+    "id": "47",
+    "slug": "sing",
+    "slugLoc": "noraehagi",
+    "name": "노래하기",
+    "description": "상대를 잠듦 상태로 만든다."
+  },
+  {
+    "id": "48",
+    "slug": "supersonic",
+    "slugLoc": "coeumpa",
+    "name": "초음파",
+    "description": ""
+  },
+  {
+    "id": "49",
+    "slug": "sonic-boom",
+    "slugLoc": "sonigbum",
+    "name": "소닉붐",
+    "description": ""
+  },
+  {
+    "id": "50",
+    "slug": "disable",
+    "slugLoc": "saseulmugggi",
+    "name": "사슬묶기",
+    "description": "4턴 동안\n상대를 기술봉인 상태로 만든다."
+  },
+  {
+    "id": "51",
+    "slug": "acid",
+    "slugLoc": "yonghaeaeg",
+    "name": "용해액",
+    "description": ""
+  },
+  {
+    "id": "52",
+    "slug": "ember",
+    "slugLoc": "bulggocserye",
+    "name": "불꽃세례",
+    "description": ""
+  },
+  {
+    "id": "53",
+    "slug": "flamethrower",
+    "slugLoc": "hwayeombangsa",
+    "name": "화염방사",
+    "description": "10% 확률로 상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "54",
+    "slug": "mist",
+    "slugLoc": "hyinangae",
+    "name": "흰안개",
+    "description": ""
+  },
+  {
+    "id": "55",
+    "slug": "water-gun",
+    "slugLoc": "muldaepo",
+    "name": "물대포",
+    "description": ""
+  },
+  {
+    "id": "56",
+    "slug": "hydro-pump",
+    "slugLoc": "haideuropeompeu",
+    "name": "하이드로펌프",
+    "description": ""
+  },
+  {
+    "id": "57",
+    "slug": "surf",
+    "slugLoc": "padotagi",
+    "name": "파도타기",
+    "description": "수중 상태인 상대에게는 위력이 2배가 된다."
+  },
+  {
+    "id": "58",
+    "slug": "ice-beam",
+    "slugLoc": "naengdongbim",
+    "name": "냉동빔",
+    "description": "10% 확률로 상대를 얼음 상태로 만든다."
+  },
+  {
+    "id": "59",
+    "slug": "blizzard",
+    "slugLoc": "nunbora",
+    "name": "눈보라",
+    "description": "10% 확률로 상대를 얼음 상태로 만든다.\n눈 상태인 경우 상대에게 반드시 명중한다."
+  },
+  {
+    "id": "60",
+    "slug": "psybeam",
+    "slugLoc": "hwansangbim",
+    "name": "환상빔",
+    "description": ""
+  },
+  {
+    "id": "61",
+    "slug": "bubble-beam",
+    "slugLoc": "geopumgwangseon",
+    "name": "거품광선",
+    "description": ""
+  },
+  {
+    "id": "62",
+    "slug": "aurora-beam",
+    "slugLoc": "ororabim",
+    "name": "오로라빔",
+    "description": ""
+  },
+  {
+    "id": "63",
+    "slug": "hyper-beam",
+    "slugLoc": "pagoegwangseon",
+    "name": "파괴광선",
+    "description": "사용한 다음 턴에\n자신은 반동 상태가 된다."
+  },
+  {
+    "id": "64",
+    "slug": "peck",
+    "slugLoc": "jjogi",
+    "name": "쪼기",
+    "description": ""
+  },
+  {
+    "id": "65",
+    "slug": "drill-peck",
+    "slugLoc": "hoejeonburi",
+    "name": "회전부리",
+    "description": ""
+  },
+  {
+    "id": "66",
+    "slug": "submission",
+    "slugLoc": "jiogyibakwi",
+    "name": "지옥의바퀴",
+    "description": ""
+  },
+  {
+    "id": "67",
+    "slug": "low-kick",
+    "slugLoc": "andarigeolgi",
+    "name": "안다리걸기",
+    "description": "상대가 무거울수록 위력이 올라간다.\n(위력은 20~120)"
+  },
+  {
+    "id": "68",
+    "slug": "counter",
+    "slugLoc": "kaunteo",
+    "name": "카운터",
+    "description": "사용한 턴에 상대의 물리 기술로 입은 데미지를\n2배로 돌려준다."
+  },
+  {
+    "id": "69",
+    "slug": "seismic-toss",
+    "slugLoc": "jigudeonjigi",
+    "name": "지구던지기",
+    "description": "상대 HP에 50데미지를 준다."
+  },
+  {
+    "id": "70",
+    "slug": "strength",
+    "slugLoc": "goeryeog",
+    "name": "괴력",
+    "description": ""
+  },
+  {
+    "id": "71",
+    "slug": "absorb",
+    "slugLoc": "heubsu",
+    "name": "흡수",
+    "description": ""
+  },
+  {
+    "id": "72",
+    "slug": "mega-drain",
+    "slugLoc": "megadeurein",
+    "name": "메가드레인",
+    "description": ""
+  },
+  {
+    "id": "73",
+    "slug": "leech-seed",
+    "slugLoc": "ssibburigi",
+    "name": "씨뿌리기",
+    "description": "상대를 씨뿌리기 상태로 만든다."
+  },
+  {
+    "id": "74",
+    "slug": "growth",
+    "slugLoc": "seongjang",
+    "name": "성장",
+    "description": "자신의 공격, 특수공격을 1단계 올린다.\n쾌청 상태인 경우 2단계 올린다."
+  },
+  {
+    "id": "75",
+    "slug": "razor-leaf",
+    "slugLoc": "ipnalgareugi",
+    "name": "잎날가르기",
+    "description": ""
+  },
+  {
+    "id": "76",
+    "slug": "solar-beam",
+    "slugLoc": "solrabim",
+    "name": "솔라빔",
+    "description": "사용한 턴에 차지 상태가 되어 다음 턴에 공격한다.\n쾌청 상태인 경우 차지 상태를 생략하고\n바로 공격할 수 있다.\n다른 날씨인 경우 위력이 1/2이 된다."
+  },
+  {
+    "id": "77",
+    "slug": "poison-powder",
+    "slugLoc": "doggaru",
+    "name": "독가루",
+    "description": "상대를 독 상태로 만든다."
+  },
+  {
+    "id": "78",
+    "slug": "stun-spore",
+    "slugLoc": "jeorigaru",
+    "name": "저리가루",
+    "description": "상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "79",
+    "slug": "sleep-powder",
+    "slugLoc": "sumyeongaru",
+    "name": "수면가루",
+    "description": "상대를 잠듦 상태로 만든다."
+  },
+  {
+    "id": "80",
+    "slug": "petal-dance",
+    "slugLoc": "ggocipdaenseu",
+    "name": "꽃잎댄스",
+    "description": "자신은 난동 상태가 된다."
+  },
+  {
+    "id": "81",
+    "slug": "string-shot",
+    "slugLoc": "silbbumgi",
+    "name": "실뿜기",
+    "description": "상대의 스피드를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "82",
+    "slug": "dragon-rage",
+    "slugLoc": "yongyibunno",
+    "name": "용의분노",
+    "description": ""
+  },
+  {
+    "id": "83",
+    "slug": "fire-spin",
+    "slugLoc": "hoeoribulggoc",
+    "name": "회오리불꽃",
+    "description": "상대를 바인드 상태로 만든다."
+  },
+  {
+    "id": "84",
+    "slug": "thunder-shock",
+    "slugLoc": "jeongisyokeu",
+    "name": "전기쇼크",
+    "description": ""
+  },
+  {
+    "id": "85",
+    "slug": "thunderbolt",
+    "slugLoc": "10manbolteu",
+    "name": "10만볼트",
+    "description": "10% 확률로 상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "86",
+    "slug": "thunder-wave",
+    "slugLoc": "jeongijaseogpa",
+    "name": "전기자석파",
+    "description": "상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "87",
+    "slug": "thunder",
+    "slugLoc": "beongae",
+    "name": "번개",
+    "description": "30% 확률로 상대를 마비 상태로 만든다.\n비 상태인 경우 상대에게 반드시 명중한다.\n공중 상태인 상대에게도 맞는다."
+  },
+  {
+    "id": "88",
+    "slug": "rock-throw",
+    "slugLoc": "dolddeolgugi",
+    "name": "돌떨구기",
+    "description": ""
+  },
+  {
+    "id": "89",
+    "slug": "earthquake",
+    "slugLoc": "jijin",
+    "name": "지진",
+    "description": "지중 상태인 상대에게는 위력이 2배가 된다.\n그래스필드 상태일 때\n위력이 1/2이 된다."
+  },
+  {
+    "id": "90",
+    "slug": "fissure",
+    "slugLoc": "ddanggareugi",
+    "name": "땅가르기",
+    "description": "상대를 기절시킨다.\n명중률은 30%로 고정된다."
+  },
+  {
+    "id": "91",
+    "slug": "dig",
+    "slugLoc": "gumeongpagi",
+    "name": "구멍파기",
+    "description": "사용한 턴에 지중 상태가 되어\n다음 턴에 공격한다."
+  },
+  {
+    "id": "92",
+    "slug": "toxic",
+    "slugLoc": "maengdog",
+    "name": "맹독",
+    "description": "상대를 맹독 상태로 만든다.\n독타입 포켓몬이 사용하면\n상대에게 반드시 명중한다."
+  },
+  {
+    "id": "93",
+    "slug": "confusion",
+    "slugLoc": "yeomdongryeog",
+    "name": "염동력",
+    "description": ""
+  },
+  {
+    "id": "94",
+    "slug": "psychic",
+    "slugLoc": "saikokinesiseu",
+    "name": "사이코키네시스",
+    "description": "10% 확률로 상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "95",
+    "slug": "hypnosis",
+    "slugLoc": "coemyeonsul",
+    "name": "최면술",
+    "description": "상대를 잠듦 상태로 만든다."
+  },
+  {
+    "id": "96",
+    "slug": "meditate",
+    "slugLoc": "yogapojeu",
+    "name": "요가포즈",
+    "description": ""
+  },
+  {
+    "id": "97",
+    "slug": "agility",
+    "slugLoc": "gosogidong",
+    "name": "고속이동",
+    "description": "자신의 스피드를 2단계 올린다."
+  },
+  {
+    "id": "98",
+    "slug": "quick-attack",
+    "slugLoc": "jeongwangseoghwa",
+    "name": "전광석화",
+    "description": ""
+  },
+  {
+    "id": "99",
+    "slug": "rage",
+    "slugLoc": "bunno",
+    "name": "분노",
+    "description": ""
+  },
+  {
+    "id": "100",
+    "slug": "teleport",
+    "slugLoc": "sunganidong",
+    "name": "순간이동",
+    "description": ""
+  },
+  {
+    "id": "101",
+    "slug": "night-shade",
+    "slugLoc": "naiteuhedeu",
+    "name": "나이트헤드",
+    "description": "상대 HP에 50데미지를 준다."
+  },
+  {
+    "id": "102",
+    "slug": "mimic",
+    "slugLoc": "hyungnaenaegi",
+    "name": "흉내내기",
+    "description": ""
+  },
+  {
+    "id": "103",
+    "slug": "screech",
+    "slugLoc": "silheunsori",
+    "name": "싫은소리",
+    "description": "상대의 방어를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "104",
+    "slug": "double-team",
+    "slugLoc": "geurimjabunsin",
+    "name": "그림자분신",
+    "description": "자신의 회피율을 1단계 올린다."
+  },
+  {
+    "id": "105",
+    "slug": "recover",
+    "slugLoc": "hphoebog",
+    "name": "HP회복",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다."
+  },
+  {
+    "id": "106",
+    "slug": "harden",
+    "slugLoc": "dandanhaejigi",
+    "name": "단단해지기",
+    "description": ""
+  },
+  {
+    "id": "107",
+    "slug": "minimize",
+    "slugLoc": "jagajigi",
+    "name": "작아지기",
+    "description": "자신의 회피율을 2단계 올린다.\n자신은 작아지기 상태가 된다."
+  },
+  {
+    "id": "108",
+    "slug": "smokescreen",
+    "slugLoc": "yeonmag",
+    "name": "연막",
+    "description": ""
+  },
+  {
+    "id": "109",
+    "slug": "confuse-ray",
+    "slugLoc": "isanghanbic",
+    "name": "이상한빛",
+    "description": "상대를 혼란 상태로 만든다."
+  },
+  {
+    "id": "110",
+    "slug": "withdraw",
+    "slugLoc": "ggeobjilesumgi",
+    "name": "껍질에숨기",
+    "description": ""
+  },
+  {
+    "id": "111",
+    "slug": "defense-curl",
+    "slugLoc": "ungkeurigi",
+    "name": "웅크리기",
+    "description": ""
+  },
+  {
+    "id": "112",
+    "slug": "barrier",
+    "slugLoc": "baerieo",
+    "name": "배리어",
+    "description": ""
+  },
+  {
+    "id": "113",
+    "slug": "light-screen",
+    "slugLoc": "bicyijangmag",
+    "name": "빛의장막",
+    "description": "5턴 동안 같은 편 필드를\n빛의장막 상태로 만든다."
+  },
+  {
+    "id": "114",
+    "slug": "haze",
+    "slugLoc": "heugangae",
+    "name": "흑안개",
+    "description": "전체 필드의 능력 변화를 없앤다."
+  },
+  {
+    "id": "115",
+    "slug": "reflect",
+    "slugLoc": "ripeulregteo",
+    "name": "리플렉터",
+    "description": "5턴 동안 같은 편 필드를\n리플렉터 상태로 만든다."
+  },
+  {
+    "id": "116",
+    "slug": "focus-energy",
+    "slugLoc": "gicungjeon",
+    "name": "기충전",
+    "description": "자신은 급소업 상태가 된다. (+2)"
+  },
+  {
+    "id": "117",
+    "slug": "bide",
+    "slugLoc": "camgi",
+    "name": "참기",
+    "description": ""
+  },
+  {
+    "id": "118",
+    "slug": "metronome",
+    "slugLoc": "songaragheundeulgi",
+    "name": "손가락흔들기",
+    "description": ""
+  },
+  {
+    "id": "119",
+    "slug": "mirror-move",
+    "slugLoc": "ddarahagi",
+    "name": "따라하기",
+    "description": ""
+  },
+  {
+    "id": "120",
+    "slug": "self-destruct",
+    "slugLoc": "japog",
+    "name": "자폭",
+    "description": "사용하면 자신은 기절하게 된다."
+  },
+  {
+    "id": "121",
+    "slug": "egg-bomb",
+    "slugLoc": "alpogtan",
+    "name": "알폭탄",
+    "description": ""
+  },
+  {
+    "id": "122",
+    "slug": "lick",
+    "slugLoc": "haltgi",
+    "name": "핥기",
+    "description": ""
+  },
+  {
+    "id": "123",
+    "slug": "smog",
+    "slugLoc": "seumogeu",
+    "name": "스모그",
+    "description": ""
+  },
+  {
+    "id": "124",
+    "slug": "sludge",
+    "slugLoc": "omulgonggyeog",
+    "name": "오물공격",
+    "description": ""
+  },
+  {
+    "id": "125",
+    "slug": "bone-club",
+    "slugLoc": "bbyeodagwicigi",
+    "name": "뼈다귀치기",
+    "description": ""
+  },
+  {
+    "id": "126",
+    "slug": "fire-blast",
+    "slugLoc": "buldaemunja",
+    "name": "불대문자",
+    "description": "10% 확률로 상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "127",
+    "slug": "waterfall",
+    "slugLoc": "pogpooreugi",
+    "name": "폭포오르기",
+    "description": "20% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "128",
+    "slug": "clamp",
+    "slugLoc": "ggeobjilggiugi",
+    "name": "껍질끼우기",
+    "description": ""
+  },
+  {
+    "id": "129",
+    "slug": "swift",
+    "slugLoc": "seupideuseuta",
+    "name": "스피드스타",
+    "description": ""
+  },
+  {
+    "id": "130",
+    "slug": "skull-bash",
+    "slugLoc": "rokesbagcigi",
+    "name": "로켓박치기",
+    "description": ""
+  },
+  {
+    "id": "131",
+    "slug": "spike-cannon",
+    "slugLoc": "gasidaepo",
+    "name": "가시대포",
+    "description": ""
+  },
+  {
+    "id": "132",
+    "slug": "constrict",
+    "slugLoc": "hwigamgi",
+    "name": "휘감기",
+    "description": ""
+  },
+  {
+    "id": "133",
+    "slug": "amnesia",
+    "slugLoc": "manggagsul",
+    "name": "망각술",
+    "description": "자신의 특수방어를 2단계 올린다."
+  },
+  {
+    "id": "134",
+    "slug": "kinesis",
+    "slugLoc": "sudgaraghwigi",
+    "name": "숟가락휘기",
+    "description": ""
+  },
+  {
+    "id": "135",
+    "slug": "soft-boiled",
+    "slugLoc": "alnahgi",
+    "name": "알낳기",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다."
+  },
+  {
+    "id": "136",
+    "slug": "high-jump-kick",
+    "slugLoc": "mureupcagi",
+    "name": "무릎차기",
+    "description": "빗나가거나 실패하면 자신의 최대 HP의\n1/2만큼 데미지를 입는다."
+  },
+  {
+    "id": "137",
+    "slug": "glare",
+    "slugLoc": "baemnuncori",
+    "name": "뱀눈초리",
+    "description": "상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "138",
+    "slug": "dream-eater",
+    "slugLoc": "ggummeoggi",
+    "name": "꿈먹기",
+    "description": ""
+  },
+  {
+    "id": "139",
+    "slug": "poison-gas",
+    "slugLoc": "doggaseu",
+    "name": "독가스",
+    "description": ""
+  },
+  {
+    "id": "140",
+    "slug": "barrage",
+    "slugLoc": "guseuldeonjigi",
+    "name": "구슬던지기",
+    "description": ""
+  },
+  {
+    "id": "141",
+    "slug": "leech-life",
+    "slugLoc": "heubhyeol",
+    "name": "흡혈",
+    "description": "상대에게 준 데미지의 1/2만큼\n자신의 HP를 회복한다."
+  },
+  {
+    "id": "142",
+    "slug": "lovely-kiss",
+    "slugLoc": "agmayikiseu",
+    "name": "악마의키스",
+    "description": ""
+  },
+  {
+    "id": "143",
+    "slug": "sky-attack",
+    "slugLoc": "bulsae",
+    "name": "불새",
+    "description": "사용한 턴에 차지 상태가 되어 다음 턴에 공격한다.\n30% 확률로 상대를 풀죽게 한다.\n급소업+1로 공격한다."
+  },
+  {
+    "id": "144",
+    "slug": "transform",
+    "slugLoc": "byeonsin",
+    "name": "변신",
+    "description": "상대와 같은 포켓몬으로 변신한다.\nHP 이외의 스테이터스도 똑같아진다."
+  },
+  {
+    "id": "145",
+    "slug": "bubble",
+    "slugLoc": "geopum",
+    "name": "거품",
+    "description": ""
+  },
+  {
+    "id": "146",
+    "slug": "dizzy-punch",
+    "slugLoc": "jaemjaempeonci",
+    "name": "잼잼펀치",
+    "description": ""
+  },
+  {
+    "id": "147",
+    "slug": "spore",
+    "slugLoc": "beoseospoja",
+    "name": "버섯포자",
+    "description": "상대를 잠듦 상태로 만든다."
+  },
+  {
+    "id": "148",
+    "slug": "flash",
+    "slugLoc": "peulraesi",
+    "name": "플래시",
+    "description": ""
+  },
+  {
+    "id": "149",
+    "slug": "psywave",
+    "slugLoc": "saikoweibeu",
+    "name": "사이코웨이브",
+    "description": ""
+  },
+  {
+    "id": "150",
+    "slug": "splash",
+    "slugLoc": "twieooreugi",
+    "name": "튀어오르기",
+    "description": ""
+  },
+  {
+    "id": "151",
+    "slug": "acid-armor",
+    "slugLoc": "noggi",
+    "name": "녹기",
+    "description": "자신의 방어를 2단계 올린다."
+  },
+  {
+    "id": "152",
+    "slug": "crabhammer",
+    "slugLoc": "jibgehaemeo",
+    "name": "집게해머",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "153",
+    "slug": "explosion",
+    "slugLoc": "daepogbal",
+    "name": "대폭발",
+    "description": "사용하면 자신은 기절하게 된다."
+  },
+  {
+    "id": "154",
+    "slug": "fury-swipes",
+    "slugLoc": "maguhalkwigi",
+    "name": "마구할퀴기",
+    "description": ""
+  },
+  {
+    "id": "155",
+    "slug": "bonemerang",
+    "slugLoc": "bbyeodagwibumerang",
+    "name": "뼈다귀부메랑",
+    "description": ""
+  },
+  {
+    "id": "156",
+    "slug": "rest",
+    "slugLoc": "jamjagi",
+    "name": "잠자기",
+    "description": "자신의 HP와 상태 이상을 모두 회복한다.\n2턴 동안 잠듦 상태가 된다.\nHP가 꽉 찬 상태면 실패한다."
+  },
+  {
+    "id": "157",
+    "slug": "rock-slide",
+    "slugLoc": "seutonsyaweo",
+    "name": "스톤샤워",
+    "description": "30% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "158",
+    "slug": "hyper-fang",
+    "slugLoc": "pilsalapni",
+    "name": "필살앞니",
+    "description": ""
+  },
+  {
+    "id": "159",
+    "slug": "sharpen",
+    "slugLoc": "gagjigi",
+    "name": "각지기",
+    "description": ""
+  },
+  {
+    "id": "160",
+    "slug": "conversion",
+    "slugLoc": "tegseuceo",
+    "name": "텍스처",
+    "description": ""
+  },
+  {
+    "id": "161",
+    "slug": "tri-attack",
+    "slugLoc": "teuraieotaeg",
+    "name": "트라이어택",
+    "description": "20% 확률로 상대를 마비, 화상, 얼음 중\n하나의 상태로 만든다."
+  },
+  {
+    "id": "162",
+    "slug": "super-fang",
+    "slugLoc": "bunnoyiapni",
+    "name": "분노의앞니",
+    "description": "상대의 남은 HP의 절반만큼 데미지를 준다.\n1만 남은 경우 1데미지를 준다."
+  },
+  {
+    "id": "163",
+    "slug": "slash",
+    "slugLoc": "beeogareugi",
+    "name": "베어가르기",
+    "description": ""
+  },
+  {
+    "id": "164",
+    "slug": "substitute",
+    "slugLoc": "daetaculdong",
+    "name": "대타출동",
+    "description": "자신의 최대 HP의 1/4만큼 HP를 소비하여\n대타를 내보낸다.\n대타는 자신을 대신해 기술을 받는다.\n최대 HP의 1/4의 데미지를 입으면 사라진다."
+  },
+  {
+    "id": "165",
+    "slug": "struggle",
+    "slugLoc": "balbeodung",
+    "name": "발버둥",
+    "description": ""
+  },
+  {
+    "id": "166",
+    "slug": "sketch",
+    "slugLoc": "seukeci",
+    "name": "스케치",
+    "description": ""
+  },
+  {
+    "id": "167",
+    "slug": "triple-kick",
+    "slugLoc": "teuripeulkig",
+    "name": "트리플킥",
+    "description": ""
+  },
+  {
+    "id": "168",
+    "slug": "thief",
+    "slugLoc": "dodugjil",
+    "name": "도둑질",
+    "description": "자신이 도구를 지니고 있지 않은 경우\n상대의 도구를 빼앗는다."
+  },
+  {
+    "id": "169",
+    "slug": "spider-web",
+    "slugLoc": "geomijib",
+    "name": "거미집",
+    "description": ""
+  },
+  {
+    "id": "170",
+    "slug": "mind-reader",
+    "slugLoc": "maeumyinun",
+    "name": "마음의눈",
+    "description": ""
+  },
+  {
+    "id": "171",
+    "slug": "nightmare",
+    "slugLoc": "agmong",
+    "name": "악몽",
+    "description": ""
+  },
+  {
+    "id": "172",
+    "slug": "flame-wheel",
+    "slugLoc": "hwayeombakwi",
+    "name": "화염바퀴",
+    "description": ""
+  },
+  {
+    "id": "173",
+    "slug": "snore",
+    "slugLoc": "kogolgi",
+    "name": "코골기",
+    "description": "자신이 잠듦 상태인 경우 사용할 수 있다.\n30% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "174",
+    "slug": "curse",
+    "slugLoc": "jeoju",
+    "name": "저주",
+    "description": "자신의 최대 HP의 1/2만큼 HP를 소비하여\n상대를 저주 상태로 만든다."
+  },
+  {
+    "id": "175",
+    "slug": "flail",
+    "slugLoc": "badungbadung",
+    "name": "바둥바둥",
+    "description": "자신의 남은 HP가 적을수록 위력이 올라간다.\n(위력은 20~200)"
+  },
+  {
+    "id": "176",
+    "slug": "conversion-2",
+    "slugLoc": "tegseuceo2",
+    "name": "텍스처2",
+    "description": ""
+  },
+  {
+    "id": "177",
+    "slug": "aeroblast",
+    "slugLoc": "eeorobeulraseuteu",
+    "name": "에어로블라스트",
+    "description": ""
+  },
+  {
+    "id": "178",
+    "slug": "cotton-spore",
+    "slugLoc": "moghwapoja",
+    "name": "목화포자",
+    "description": "상대의 스피드를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "179",
+    "slug": "reversal",
+    "slugLoc": "gisahoesaeng",
+    "name": "기사회생",
+    "description": "자신의 남은 HP가 적을수록 위력이 올라간다.\n(위력은 20~200)"
+  },
+  {
+    "id": "180",
+    "slug": "spite",
+    "slugLoc": "weonhan",
+    "name": "원한",
+    "description": "상대가 마지막으로 사용한 기술의 PP를 4 줄인다."
+  },
+  {
+    "id": "181",
+    "slug": "powder-snow",
+    "slugLoc": "nunssaragi",
+    "name": "눈싸라기",
+    "description": ""
+  },
+  {
+    "id": "182",
+    "slug": "protect",
+    "slugLoc": "bangeo",
+    "name": "방어",
+    "description": "사용한 턴 동안 상대의 기술로부터 몸을 보호한다.\n연속해서 사용하면\n성공률이 이전에 사용했을 때의 1/3이 된다."
+  },
+  {
+    "id": "183",
+    "slug": "mach-punch",
+    "slugLoc": "mahapeonci",
+    "name": "마하펀치",
+    "description": ""
+  },
+  {
+    "id": "184",
+    "slug": "scary-face",
+    "slugLoc": "geobnaneuneolgul",
+    "name": "겁나는얼굴",
+    "description": "상대의 스피드를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "185",
+    "slug": "feint-attack",
+    "slugLoc": "sogyeoddaerigi",
+    "name": "속여때리기",
+    "description": ""
+  },
+  {
+    "id": "186",
+    "slug": "sweet-kiss",
+    "slugLoc": "ceonsayikiseu",
+    "name": "천사의키스",
+    "description": "상대를 혼란 상태로 만든다."
+  },
+  {
+    "id": "187",
+    "slug": "belly-drum",
+    "slugLoc": "baebug",
+    "name": "배북",
+    "description": "자신의 최대 HP의 1/2만큼 HP를 소비하여\n공격을 6단계까지 올린다.\n남은 HP가 부족한 경우 실패한다."
+  },
+  {
+    "id": "188",
+    "slug": "sludge-bomb",
+    "slugLoc": "omulpogtan",
+    "name": "오물폭탄",
+    "description": "30% 확률로 상대를 독 상태로 만든다."
+  },
+  {
+    "id": "189",
+    "slug": "mud-slap",
+    "slugLoc": "jinheulgbburigi",
+    "name": "진흙뿌리기",
+    "description": "상대의 명중률을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "190",
+    "slug": "octazooka",
+    "slugLoc": "daepomunopo",
+    "name": "대포무노포",
+    "description": ""
+  },
+  {
+    "id": "191",
+    "slug": "spikes",
+    "slugLoc": "abjeongbburigi",
+    "name": "압정뿌리기",
+    "description": "상대 필드를\n압정뿌리기 상태로 만든다."
+  },
+  {
+    "id": "192",
+    "slug": "zap-cannon",
+    "slugLoc": "jeonjapo",
+    "name": "전자포",
+    "description": "상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "193",
+    "slug": "foresight",
+    "slugLoc": "ggweddulheobogi",
+    "name": "꿰뚫어보기",
+    "description": ""
+  },
+  {
+    "id": "194",
+    "slug": "destiny-bond",
+    "slugLoc": "gildongmu",
+    "name": "길동무",
+    "description": "자신은 길동무 상태가 된다.\n연속해서 사용하면 실패한다."
+  },
+  {
+    "id": "195",
+    "slug": "perish-song",
+    "slugLoc": "myeolmangyinorae",
+    "name": "멸망의노래",
+    "description": "필드의 전원을\n멸망 상태로 만든다."
+  },
+  {
+    "id": "196",
+    "slug": "icy-wind",
+    "slugLoc": "eoleobuteunbaram",
+    "name": "얼어붙은바람",
+    "description": "상대의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "197",
+    "slug": "detect",
+    "slugLoc": "panbyeol",
+    "name": "판별",
+    "description": "사용한 턴 동안 상대의 기술로부터 몸을 보호한다.\n연속해서 사용하면\n성공률이 이전에 사용했을 때의 1/3이 된다."
+  },
+  {
+    "id": "198",
+    "slug": "bone-rush",
+    "slugLoc": "bonreosi",
+    "name": "본러시",
+    "description": "2~5회 연속으로 공격한다."
+  },
+  {
+    "id": "199",
+    "slug": "lock-on",
+    "slugLoc": "rogon",
+    "name": "록온",
+    "description": "자신은 록온 상태가 된다."
+  },
+  {
+    "id": "200",
+    "slug": "outrage",
+    "slugLoc": "yeogrin",
+    "name": "역린",
+    "description": "자신은 난동 상태가 된다."
+  },
+  {
+    "id": "201",
+    "slug": "sandstorm",
+    "slugLoc": "moraebaram",
+    "name": "모래바람",
+    "description": "5턴 동안 모래바람 상태로 만든다."
+  },
+  {
+    "id": "202",
+    "slug": "giga-drain",
+    "slugLoc": "gigadeurein",
+    "name": "기가드레인",
+    "description": "상대에게 준 데미지의 1/2만큼\n자신의 HP를 회복한다."
+  },
+  {
+    "id": "203",
+    "slug": "endure",
+    "slugLoc": "beotigi",
+    "name": "버티기",
+    "description": "사용한 턴 동안 기절할 듯한 기술로\n데미지를 입으면 HP를 1 남기고 버틴다.\n연속해서 사용하면\n성공률이 이전에 사용했을 때의 1/3이 된다."
+  },
+  {
+    "id": "204",
+    "slug": "charm",
+    "slugLoc": "aegyoburigi",
+    "name": "애교부리기",
+    "description": "상대의 공격을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "205",
+    "slug": "rollout",
+    "slugLoc": "gureugi",
+    "name": "구르기",
+    "description": ""
+  },
+  {
+    "id": "206",
+    "slug": "false-swipe",
+    "slugLoc": "kaldeungcigi",
+    "name": "칼등치기",
+    "description": ""
+  },
+  {
+    "id": "207",
+    "slug": "swagger",
+    "slugLoc": "bbomnaegi",
+    "name": "뽐내기",
+    "description": "상대의 공격을 2단계 올리고\n혼란 상태로 만든다."
+  },
+  {
+    "id": "208",
+    "slug": "milk-drink",
+    "slugLoc": "uyumasigi",
+    "name": "우유마시기",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다."
+  },
+  {
+    "id": "209",
+    "slug": "spark",
+    "slugLoc": "seupakeu",
+    "name": "스파크",
+    "description": ""
+  },
+  {
+    "id": "210",
+    "slug": "fury-cutter",
+    "slugLoc": "yeonsogjareugi",
+    "name": "연속자르기",
+    "description": ""
+  },
+  {
+    "id": "211",
+    "slug": "steel-wing",
+    "slugLoc": "gangceolnalgae",
+    "name": "강철날개",
+    "description": "10% 확률로 자신의 방어를 1단계 올린다."
+  },
+  {
+    "id": "212",
+    "slug": "mean-look",
+    "slugLoc": "geomeunnunbic",
+    "name": "검은눈빛",
+    "description": "상대를 교체 불가 상태로 만든다."
+  },
+  {
+    "id": "213",
+    "slug": "attract",
+    "slugLoc": "herongherong",
+    "name": "헤롱헤롱",
+    "description": "상대를 헤롱헤롱 상태로 만든다.\n성별이 같거나 불명인 상대에게는 실패한다."
+  },
+  {
+    "id": "214",
+    "slug": "sleep-talk",
+    "slugLoc": "jamggodae",
+    "name": "잠꼬대",
+    "description": "자신이 잠듦 상태인 경우 사용할 수 있다.\n자신이 배운 다른 기술 중에서\n무작위로 기술을 사용한다."
+  },
+  {
+    "id": "215",
+    "slug": "heal-bell",
+    "slugLoc": "ciryobangul",
+    "name": "치료방울",
+    "description": "자신과 같은 편과\n지닌 포켓몬 전원의\n상태 이상을 회복한다."
+  },
+  {
+    "id": "216",
+    "slug": "return",
+    "slugLoc": "eunhyegapgi",
+    "name": "은혜갚기",
+    "description": ""
+  },
+  {
+    "id": "217",
+    "slug": "present",
+    "slugLoc": "peurejenteu",
+    "name": "프레젠트",
+    "description": ""
+  },
+  {
+    "id": "218",
+    "slug": "frustration",
+    "slugLoc": "hwapuli",
+    "name": "화풀이",
+    "description": ""
+  },
+  {
+    "id": "219",
+    "slug": "safeguard",
+    "slugLoc": "sinbiyibujeog",
+    "name": "신비의부적",
+    "description": "5턴 동안 같은 편 필드를\n신비의부적 상태로 만든다."
+  },
+  {
+    "id": "220",
+    "slug": "pain-split",
+    "slugLoc": "apeumnanugi",
+    "name": "아픔나누기",
+    "description": "자신과 상대의 남은 HP를 더한 다음\n1/2씩 나눠 갖는다."
+  },
+  {
+    "id": "221",
+    "slug": "sacred-fire",
+    "slugLoc": "seongseureounbulggoc",
+    "name": "성스러운불꽃",
+    "description": ""
+  },
+  {
+    "id": "222",
+    "slug": "magnitude",
+    "slugLoc": "maegeunityudeu",
+    "name": "매그니튜드",
+    "description": ""
+  },
+  {
+    "id": "223",
+    "slug": "dynamic-punch",
+    "slugLoc": "pogbalpeonci",
+    "name": "폭발펀치",
+    "description": "상대를 혼란 상태로 만든다."
+  },
+  {
+    "id": "224",
+    "slug": "megahorn",
+    "slugLoc": "megahon",
+    "name": "메가혼",
+    "description": ""
+  },
+  {
+    "id": "225",
+    "slug": "dragon-breath",
+    "slugLoc": "yongyisumgyeol",
+    "name": "용의숨결",
+    "description": ""
+  },
+  {
+    "id": "226",
+    "slug": "baton-pass",
+    "slugLoc": "baeteonteoci",
+    "name": "배턴터치",
+    "description": "다른 지닌 포켓몬과 교체한다.\n능력 변화, 대타출동 등을\n그 포켓몬이 이어받는다."
+  },
+  {
+    "id": "227",
+    "slug": "encore",
+    "slugLoc": "angkoreu",
+    "name": "앙코르",
+    "description": "상대를 앙코르 상태로 만든다."
+  },
+  {
+    "id": "228",
+    "slug": "pursuit",
+    "slugLoc": "ddaragaddaerigi",
+    "name": "따라가때리기",
+    "description": ""
+  },
+  {
+    "id": "229",
+    "slug": "rapid-spin",
+    "slugLoc": "gosogseupin",
+    "name": "고속스핀",
+    "description": "자신의 바인드, 씨뿌리기 상태와\n같은 편 필드의 압정뿌리기, 독압정,\n끈적끈적네트, 스텔스록 상태를 해제한다.\n자신의 스피드를 1단계 올린다."
+  },
+  {
+    "id": "230",
+    "slug": "sweet-scent",
+    "slugLoc": "dalkomhanhyanggi",
+    "name": "달콤한향기",
+    "description": "상대의 회피율을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "231",
+    "slug": "iron-tail",
+    "slugLoc": "aieonteil",
+    "name": "아이언테일",
+    "description": "30% 확률로 상대의 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "232",
+    "slug": "metal-claw",
+    "slugLoc": "metalkeulro",
+    "name": "메탈클로",
+    "description": ""
+  },
+  {
+    "id": "233",
+    "slug": "vital-throw",
+    "slugLoc": "badadeonjigi",
+    "name": "받아던지기",
+    "description": ""
+  },
+  {
+    "id": "234",
+    "slug": "morning-sun",
+    "slugLoc": "acimhaessal",
+    "name": "아침햇살",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다.\n쾌청 상태인 경우 2/3만큼 회복한다.\n다른 날씨인 경우 1/4만큼 회복한다."
+  },
+  {
+    "id": "235",
+    "slug": "synthesis",
+    "slugLoc": "gwanghabseong",
+    "name": "광합성",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다.\n쾌청 상태인 경우 2/3만큼 회복한다.\n다른 날씨인 경우 1/4만큼 회복한다."
+  },
+  {
+    "id": "236",
+    "slug": "moonlight",
+    "slugLoc": "dalbic",
+    "name": "달빛",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다.\n쾌청 상태인 경우 2/3만큼 회복한다.\n다른 날씨인 경우 1/4만큼 회복한다."
+  },
+  {
+    "id": "237",
+    "slug": "hidden-power",
+    "slugLoc": "jamjaepaweo",
+    "name": "잠재파워",
+    "description": ""
+  },
+  {
+    "id": "238",
+    "slug": "cross-chop",
+    "slugLoc": "keuroseucob",
+    "name": "크로스촙",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "239",
+    "slug": "twister",
+    "slugLoc": "hoeori",
+    "name": "회오리",
+    "description": ""
+  },
+  {
+    "id": "240",
+    "slug": "rain-dance",
+    "slugLoc": "bibaragi",
+    "name": "비바라기",
+    "description": "5턴 동안 비 상태로 만든다."
+  },
+  {
+    "id": "241",
+    "slug": "sunny-day",
+    "slugLoc": "kwaeceong",
+    "name": "쾌청",
+    "description": "5턴 동안 쾌청 상태로 만든다."
+  },
+  {
+    "id": "242",
+    "slug": "crunch",
+    "slugLoc": "ggaemuleobusugi",
+    "name": "깨물어부수기",
+    "description": "20% 확률로 상대의 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "243",
+    "slug": "mirror-coat",
+    "slugLoc": "mireokoteu",
+    "name": "미러코트",
+    "description": "사용한 턴에 상대의 특수 기술로 입은 데미지를\n2배로 돌려준다."
+  },
+  {
+    "id": "244",
+    "slug": "psych-up",
+    "slugLoc": "jagiamsi",
+    "name": "자기암시",
+    "description": "상대의 능력 변화를\n자신도 똑같이 만든다."
+  },
+  {
+    "id": "245",
+    "slug": "extreme-speed",
+    "slugLoc": "sinsog",
+    "name": "신속",
+    "description": ""
+  },
+  {
+    "id": "246",
+    "slug": "ancient-power",
+    "slugLoc": "weonsiyihim",
+    "name": "원시의힘",
+    "description": "10% 확률로 자신의 공격, 방어, 특수공격,\n특수방어, 스피드를 1단계 올린다."
+  },
+  {
+    "id": "247",
+    "slug": "shadow-ball",
+    "slugLoc": "syaedobol",
+    "name": "섀도볼",
+    "description": "20% 확률로 상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "248",
+    "slug": "future-sight",
+    "slugLoc": "miraeyeji",
+    "name": "미래예지",
+    "description": "상대가 위치한 자리를\n미래의 공격 상태로 만든다."
+  },
+  {
+    "id": "249",
+    "slug": "rock-smash",
+    "slugLoc": "bawiggaegi",
+    "name": "바위깨기",
+    "description": ""
+  },
+  {
+    "id": "250",
+    "slug": "whirlpool",
+    "slugLoc": "badahoeori",
+    "name": "바다회오리",
+    "description": "상대를 바인드 상태로 만든다.\n수중 상태인 상대에게는 위력이 2배가 된다."
+  },
+  {
+    "id": "251",
+    "slug": "beat-up",
+    "slugLoc": "jibdanguta",
+    "name": "집단구타",
+    "description": "지닌 포켓몬의 수만큼 상대를 공격한다.\n기절했거나 상태 이상에 걸린 포켓몬은 포함하지 않는다.\n기술의 위력은 지닌 포켓몬의 공격으로 계산된다."
+  },
+  {
+    "id": "252",
+    "slug": "fake-out",
+    "slugLoc": "sogigi",
+    "name": "속이기",
+    "description": "상대를 풀죽게 한다.\n등장하고 가장 먼저 사용하지 않으면 실패한다."
+  },
+  {
+    "id": "253",
+    "slug": "uproar",
+    "slugLoc": "soranpigi",
+    "name": "소란피기",
+    "description": "자신은 소란피기 상태가 된다."
+  },
+  {
+    "id": "254",
+    "slug": "stockpile",
+    "slugLoc": "bicughagi",
+    "name": "비축하기",
+    "description": "자신의 방어, 특수방어를 1단계 올린다.\n비축하기 상태를 1회 추가한다.\n비축하기 상태는 최대 3회까지 추가할 수 있다."
+  },
+  {
+    "id": "255",
+    "slug": "spit-up",
+    "slugLoc": "tohaenaegi",
+    "name": "토해내기",
+    "description": "비축하기 상태의 수치가 높을수록 위력이 올라간다.\n(위력은 100~300)\n비축하기 상태가 아닌 경우 이 기술은 실패한다."
+  },
+  {
+    "id": "256",
+    "slug": "swallow",
+    "slugLoc": "ggulggeog",
+    "name": "꿀꺽",
+    "description": "비축하기 상태의 수치가 높을수록 HP를 많이 회복한다.\n1번이라면 최대 HP의 1/4만큼 회복한다.\n2번이라면 최대 HP의 1/2만큼 회복한다.\n3번이라면 모두 회복한다.\n비축하기 상태가 아닌 경우 이 기술은 실패한다."
+  },
+  {
+    "id": "257",
+    "slug": "heat-wave",
+    "slugLoc": "yeolpung",
+    "name": "열풍",
+    "description": "10% 확률로 상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "258",
+    "slug": "hail",
+    "slugLoc": "ssaraginun",
+    "name": "싸라기눈",
+    "description": ""
+  },
+  {
+    "id": "259",
+    "slug": "torment",
+    "slugLoc": "teujib",
+    "name": "트집",
+    "description": "상대를 연속 불가 상태로 만든다."
+  },
+  {
+    "id": "260",
+    "slug": "flatter",
+    "slugLoc": "bucugigi",
+    "name": "부추기기",
+    "description": "상대의 특수공격을 1단계 올리고\n혼란 상태로 만든다.\n"
+  },
+  {
+    "id": "261",
+    "slug": "will-o-wisp",
+    "slugLoc": "doggaebibul",
+    "name": "도깨비불",
+    "description": "상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "262",
+    "slug": "memento",
+    "slugLoc": "cueogyiseonmul",
+    "name": "추억의선물",
+    "description": "자신은 기절하게 되지만\n상대의 공격, 특수공격을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "263",
+    "slug": "facade",
+    "slugLoc": "gaeggi",
+    "name": "객기",
+    "description": "자신이 독, 맹독, 마비, 화상 상태일 때\n위력이 2배가 된다.\n화상 상태에 의한 물리 기술의 데미지가\n반감되는 효과는 무시한다."
+  },
+  {
+    "id": "264",
+    "slug": "focus-punch",
+    "slugLoc": "himggeospeonci",
+    "name": "힘껏펀치",
+    "description": "자신이 기술을 사용하는 턴에\n상대로부터 먼저 기술로 데미지를 입으면 실패한다."
+  },
+  {
+    "id": "265",
+    "slug": "smelling-salts",
+    "slugLoc": "jeongsincarigi",
+    "name": "정신차리기",
+    "description": ""
+  },
+  {
+    "id": "266",
+    "slug": "follow-me",
+    "slugLoc": "nalddareum",
+    "name": "날따름",
+    "description": "상대의 기술을 모두 자신이 받는다.\n상대를 선택하는 기술에만 효과가 있다."
+  },
+  {
+    "id": "267",
+    "slug": "nature-power",
+    "slugLoc": "jayeonyihim",
+    "name": "자연의힘",
+    "description": ""
+  },
+  {
+    "id": "268",
+    "slug": "charge",
+    "slugLoc": "cungjeon",
+    "name": "충전",
+    "description": "자신의 특수방어를 1단계 올린다.\n전기위력업 상태가 된다."
+  },
+  {
+    "id": "269",
+    "slug": "taunt",
+    "slugLoc": "dobal",
+    "name": "도발",
+    "description": "상대를 도발 상태로 만든다."
+  },
+  {
+    "id": "270",
+    "slug": "helping-hand",
+    "slugLoc": "doumi",
+    "name": "도우미",
+    "description": "사용한 턴 동안\n같은 편의 기술 위력을 1.5배로 만든다."
+  },
+  {
+    "id": "271",
+    "slug": "trick",
+    "slugLoc": "teurig",
+    "name": "트릭",
+    "description": "상대와 자신의 지니고 있는 도구를 바꾼다."
+  },
+  {
+    "id": "272",
+    "slug": "role-play",
+    "slugLoc": "yeoghal",
+    "name": "역할",
+    "description": "자신의 특성을 상대와 같은 특성으로 바꾼다."
+  },
+  {
+    "id": "273",
+    "slug": "wish",
+    "slugLoc": "hyimangsahang",
+    "name": "희망사항",
+    "description": "자신이 위치한 자리를\n희망사항 상태로 만든다."
+  },
+  {
+    "id": "274",
+    "slug": "assist",
+    "slugLoc": "josu",
+    "name": "조수",
+    "description": ""
+  },
+  {
+    "id": "275",
+    "slug": "ingrain",
+    "slugLoc": "bburibaggi",
+    "name": "뿌리박기",
+    "description": "자신은 뿌리박기 상태가 된다."
+  },
+  {
+    "id": "276",
+    "slug": "superpower",
+    "slugLoc": "eomceongnanhim",
+    "name": "엄청난힘",
+    "description": "자신의 공격, 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "277",
+    "slug": "magic-coat",
+    "slugLoc": "maejigkoteu",
+    "name": "매직코트",
+    "description": ""
+  },
+  {
+    "id": "278",
+    "slug": "recycle",
+    "slugLoc": "risaikeul",
+    "name": "리사이클",
+    "description": "자신이 마지막으로 소비한 도구를\n원래 상태로 돌려놓아 다시 지닌다."
+  },
+  {
+    "id": "279",
+    "slug": "revenge",
+    "slugLoc": "ribenji",
+    "name": "리벤지",
+    "description": ""
+  },
+  {
+    "id": "280",
+    "slug": "brick-break",
+    "slugLoc": "ggaeteurigi",
+    "name": "깨트리기",
+    "description": "상대 필드의 빛의장막, 리플렉터,\n오로라베일 상태를 해제하고 공격한다."
+  },
+  {
+    "id": "281",
+    "slug": "yawn",
+    "slugLoc": "hapum",
+    "name": "하품",
+    "description": "상대를 졸음 상태로 만든다.\n상대에게 반드시 명중한다."
+  },
+  {
+    "id": "282",
+    "slug": "knock-off",
+    "slugLoc": "tagcyeoseoddeolgugi",
+    "name": "탁쳐서떨구기",
+    "description": "상대가 도구를 지니고 있으면 위력이 1.5배가 된다.\n상대의 도구를 없앤다."
+  },
+  {
+    "id": "283",
+    "slug": "endeavor",
+    "slugLoc": "juggisalgi",
+    "name": "죽기살기",
+    "description": "상대의 남은 HP에서 자신의 남은 HP를\n뺀 수치만큼 데미지를 준다.\n상대의 HP가 자신의 HP 이하면 실패한다."
+  },
+  {
+    "id": "284",
+    "slug": "eruption",
+    "slugLoc": "bunhwa",
+    "name": "분화",
+    "description": "자신의 남은 HP가 적을수록 위력이 떨어진다.\n(위력은 1~150)"
+  },
+  {
+    "id": "285",
+    "slug": "skill-swap",
+    "slugLoc": "seukilseuwab",
+    "name": "스킬스왑",
+    "description": "자신과 상대의 특성을 바꾼다."
+  },
+  {
+    "id": "286",
+    "slug": "imprison",
+    "slugLoc": "bongin",
+    "name": "봉인",
+    "description": "자신은 봉인 상태가 된다."
+  },
+  {
+    "id": "287",
+    "slug": "refresh",
+    "slugLoc": "ripeuresi",
+    "name": "리프레시",
+    "description": ""
+  },
+  {
+    "id": "288",
+    "slug": "grudge",
+    "slugLoc": "weonnyeom",
+    "name": "원념",
+    "description": ""
+  },
+  {
+    "id": "289",
+    "slug": "snatch",
+    "slugLoc": "garocaegi",
+    "name": "가로채기",
+    "description": ""
+  },
+  {
+    "id": "290",
+    "slug": "secret-power",
+    "slugLoc": "bimilyihim",
+    "name": "비밀의힘",
+    "description": ""
+  },
+  {
+    "id": "291",
+    "slug": "dive",
+    "slugLoc": "daibing",
+    "name": "다이빙",
+    "description": "사용한 턴에 수중 상태가 되어\n다음 턴에 공격한다."
+  },
+  {
+    "id": "292",
+    "slug": "arm-thrust",
+    "slugLoc": "sonbadagcigi",
+    "name": "손바닥치기",
+    "description": ""
+  },
+  {
+    "id": "293",
+    "slug": "camouflage",
+    "slugLoc": "bohosaeg",
+    "name": "보호색",
+    "description": ""
+  },
+  {
+    "id": "294",
+    "slug": "tail-glow",
+    "slugLoc": "bandisbul",
+    "name": "반딧불",
+    "description": ""
+  },
+  {
+    "id": "295",
+    "slug": "luster-purge",
+    "slugLoc": "reoseuteopeoji",
+    "name": "러스터퍼지",
+    "description": ""
+  },
+  {
+    "id": "296",
+    "slug": "mist-ball",
+    "slugLoc": "miseuteubol",
+    "name": "미스트볼",
+    "description": ""
+  },
+  {
+    "id": "297",
+    "slug": "feather-dance",
+    "slugLoc": "gisteoldaenseu",
+    "name": "깃털댄스",
+    "description": "상대의 공격을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "298",
+    "slug": "teeter-dance",
+    "slugLoc": "heundeulheundeuldaenseu",
+    "name": "흔들흔들댄스",
+    "description": "자신을 제외한 필드의 전원을\n혼란 상태로 만든다."
+  },
+  {
+    "id": "299",
+    "slug": "blaze-kick",
+    "slugLoc": "beulreijeukig",
+    "name": "블레이즈킥",
+    "description": "10% 확률로 상대를 화상 상태로 만든다.\n급소업+1로 공격한다."
+  },
+  {
+    "id": "300",
+    "slug": "mud-sport",
+    "slugLoc": "heulgnoli",
+    "name": "흙놀이",
+    "description": ""
+  },
+  {
+    "id": "301",
+    "slug": "ice-ball",
+    "slugLoc": "aiseubol",
+    "name": "아이스볼",
+    "description": ""
+  },
+  {
+    "id": "302",
+    "slug": "needle-arm",
+    "slugLoc": "baneulpal",
+    "name": "바늘팔",
+    "description": ""
+  },
+  {
+    "id": "303",
+    "slug": "slack-off",
+    "slugLoc": "geeureumpiugi",
+    "name": "게으름피우기",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다."
+  },
+  {
+    "id": "304",
+    "slug": "hyper-voice",
+    "slugLoc": "haipeoboiseu",
+    "name": "하이퍼보이스",
+    "description": ""
+  },
+  {
+    "id": "305",
+    "slug": "poison-fang",
+    "slugLoc": "maengdogeomni",
+    "name": "맹독엄니",
+    "description": "50% 확률로 상대를 맹독 상태로 만든다."
+  },
+  {
+    "id": "306",
+    "slug": "crush-claw",
+    "slugLoc": "beureikeukeulro",
+    "name": "브레이크클로",
+    "description": "50% 확률로 상대의 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "307",
+    "slug": "blast-burn",
+    "slugLoc": "beulraseuteubeon",
+    "name": "블라스트번",
+    "description": "사용한 다음 턴에\n자신은 반동 상태가 된다."
+  },
+  {
+    "id": "308",
+    "slug": "hydro-cannon",
+    "slugLoc": "haideurokaenon",
+    "name": "하이드로캐논",
+    "description": "사용한 다음 턴에\n자신은 반동 상태가 된다."
+  },
+  {
+    "id": "309",
+    "slug": "meteor-mash",
+    "slugLoc": "komespeonci",
+    "name": "코멧펀치",
+    "description": "20% 확률로 자신의 공격을 1단계 올린다."
+  },
+  {
+    "id": "310",
+    "slug": "astonish",
+    "slugLoc": "nolraekigi",
+    "name": "놀래키기",
+    "description": ""
+  },
+  {
+    "id": "311",
+    "slug": "weather-ball",
+    "slugLoc": "wedeobol",
+    "name": "웨더볼",
+    "description": "날씨가 바뀐 경우 위력이 2배가 되며\n기술의 타입도 바뀐다.\n쾌청 상태: 불꽃\n비 상태: 물\n눈 상태: 얼음\n모래바람 상태: 바위"
+  },
+  {
+    "id": "312",
+    "slug": "aromatherapy",
+    "slugLoc": "aromaterapi",
+    "name": "아로마테라피",
+    "description": ""
+  },
+  {
+    "id": "313",
+    "slug": "fake-tears",
+    "slugLoc": "geojisuleum",
+    "name": "거짓울음",
+    "description": "상대의 특수방어를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "314",
+    "slug": "air-cutter",
+    "slugLoc": "eeokeoteo",
+    "name": "에어커터",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "315",
+    "slug": "overheat",
+    "slugLoc": "obeohiteu",
+    "name": "오버히트",
+    "description": "자신의 특수공격을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "316",
+    "slug": "odor-sleuth",
+    "slugLoc": "naemsaegubyeol",
+    "name": "냄새구별",
+    "description": ""
+  },
+  {
+    "id": "317",
+    "slug": "rock-tomb",
+    "slugLoc": "amseogbongin",
+    "name": "암석봉인",
+    "description": "상대의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "318",
+    "slug": "silver-wind",
+    "slugLoc": "eunbicbaram",
+    "name": "은빛바람",
+    "description": ""
+  },
+  {
+    "id": "319",
+    "slug": "metal-sound",
+    "slugLoc": "geumsogeum",
+    "name": "금속음",
+    "description": "상대의 특수방어를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "320",
+    "slug": "grass-whistle",
+    "slugLoc": "pulpiri",
+    "name": "풀피리",
+    "description": ""
+  },
+  {
+    "id": "321",
+    "slug": "tickle",
+    "slugLoc": "ganjireugi",
+    "name": "간지르기",
+    "description": "상대의 공격, 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "322",
+    "slug": "cosmic-power",
+    "slugLoc": "koseumigpaweo",
+    "name": "코스믹파워",
+    "description": "자신의 방어, 특수방어를 1단계 올린다."
+  },
+  {
+    "id": "323",
+    "slug": "water-spout",
+    "slugLoc": "haesuseupauting",
+    "name": "해수스파우팅",
+    "description": "자신의 남은 HP가 적을수록 위력이 떨어진다.\n(위력은 1~150)"
+  },
+  {
+    "id": "324",
+    "slug": "signal-beam",
+    "slugLoc": "sigeuneolbim",
+    "name": "시그널빔",
+    "description": ""
+  },
+  {
+    "id": "325",
+    "slug": "shadow-punch",
+    "slugLoc": "syaedopeonci",
+    "name": "섀도펀치",
+    "description": "상대에게 반드시 명중한다."
+  },
+  {
+    "id": "326",
+    "slug": "extrasensory",
+    "slugLoc": "sintongryeog",
+    "name": "신통력",
+    "description": "10% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "327",
+    "slug": "sky-uppercut",
+    "slugLoc": "seukaieopeo",
+    "name": "스카이어퍼",
+    "description": ""
+  },
+  {
+    "id": "328",
+    "slug": "sand-tomb",
+    "slugLoc": "moraejiog",
+    "name": "모래지옥",
+    "description": "상대를 바인드 상태로 만든다."
+  },
+  {
+    "id": "329",
+    "slug": "sheer-cold",
+    "slugLoc": "jeoldaeyeongdo",
+    "name": "절대영도",
+    "description": "상대를 기절시킨다. 명중률은 30%로 고정된다.\n얼음타입인 상대에게는 맞지 않는다.\n얼음타입 이외의 포켓몬이 사용하면\n명중률이 20%가 된다."
+  },
+  {
+    "id": "330",
+    "slug": "muddy-water",
+    "slugLoc": "tagryu",
+    "name": "탁류",
+    "description": "30% 확률로 상대의 명중률을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "331",
+    "slug": "bullet-seed",
+    "slugLoc": "ssigigwancong",
+    "name": "씨기관총",
+    "description": "2~5회 연속으로 공격한다."
+  },
+  {
+    "id": "332",
+    "slug": "aerial-ace",
+    "slugLoc": "jebibanhwan",
+    "name": "제비반환",
+    "description": "상대에게 반드시 명중한다."
+  },
+  {
+    "id": "333",
+    "slug": "icicle-spear",
+    "slugLoc": "godeureumcim",
+    "name": "고드름침",
+    "description": "2~5회 연속으로 공격한다."
+  },
+  {
+    "id": "334",
+    "slug": "iron-defense",
+    "slugLoc": "ceolbyeog",
+    "name": "철벽",
+    "description": "자신의 방어를 2단계 올린다."
+  },
+  {
+    "id": "335",
+    "slug": "block",
+    "slugLoc": "beulrog",
+    "name": "블록",
+    "description": "상대를 교체 불가 상태로 만든다."
+  },
+  {
+    "id": "336",
+    "slug": "howl",
+    "slugLoc": "meolrijijgi",
+    "name": "멀리짖기",
+    "description": "자신과 같은 편의 공격을 1단계 올린다."
+  },
+  {
+    "id": "337",
+    "slug": "dragon-claw",
+    "slugLoc": "deuraegonkeulro",
+    "name": "드래곤클로",
+    "description": ""
+  },
+  {
+    "id": "338",
+    "slug": "frenzy-plant",
+    "slugLoc": "hadeupeulraenteu",
+    "name": "하드플랜트",
+    "description": "사용한 다음 턴에\n자신은 반동 상태가 된다."
+  },
+  {
+    "id": "339",
+    "slug": "bulk-up",
+    "slugLoc": "beolkeueob",
+    "name": "벌크업",
+    "description": "자신의 공격, 방어를 1단계 올린다."
+  },
+  {
+    "id": "340",
+    "slug": "bounce",
+    "slugLoc": "ddwieooreugi",
+    "name": "뛰어오르기",
+    "description": "사용한 턴에 공중 상태가 되어\n다음 턴에 공격한다.\n30% 확률로 상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "341",
+    "slug": "mud-shot",
+    "slugLoc": "meodeusyas",
+    "name": "머드샷",
+    "description": "상대의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "342",
+    "slug": "poison-tail",
+    "slugLoc": "poijeunteil",
+    "name": "포이즌테일",
+    "description": ""
+  },
+  {
+    "id": "343",
+    "slug": "covet",
+    "slugLoc": "tamnaegi",
+    "name": "탐내기",
+    "description": "자신이 도구를 지니고 있지 않은 경우\n상대의 도구를 빼앗는다."
+  },
+  {
+    "id": "344",
+    "slug": "volt-tackle",
+    "slugLoc": "bolteutaekeul",
+    "name": "볼트태클",
+    "description": "준 데미지의 1/3만큼 자신도 데미지를 입는다.\n10% 확률로 상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "345",
+    "slug": "magical-leaf",
+    "slugLoc": "maejikeolripeu",
+    "name": "매지컬리프",
+    "description": ""
+  },
+  {
+    "id": "346",
+    "slug": "water-sport",
+    "slugLoc": "mulnoli",
+    "name": "물놀이",
+    "description": ""
+  },
+  {
+    "id": "347",
+    "slug": "calm-mind",
+    "slugLoc": "myeongsang",
+    "name": "명상",
+    "description": "자신의 특수공격, 특수방어를 1단계 올린다."
+  },
+  {
+    "id": "348",
+    "slug": "leaf-blade",
+    "slugLoc": "ripeubeulreideu",
+    "name": "리프블레이드",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "349",
+    "slug": "dragon-dance",
+    "slugLoc": "yongyicum",
+    "name": "용의춤",
+    "description": "자신의 공격, 스피드를 1단계 올린다."
+  },
+  {
+    "id": "350",
+    "slug": "rock-blast",
+    "slugLoc": "rogbeulraseuteu",
+    "name": "록블라스트",
+    "description": "2~5회 연속으로 공격한다."
+  },
+  {
+    "id": "351",
+    "slug": "shock-wave",
+    "slugLoc": "jeongyeogpa",
+    "name": "전격파",
+    "description": ""
+  },
+  {
+    "id": "352",
+    "slug": "water-pulse",
+    "slugLoc": "mulyipadong",
+    "name": "물의파동",
+    "description": "20% 확률로 상대를 혼란 상태로 만든다."
+  },
+  {
+    "id": "353",
+    "slug": "doom-desire",
+    "slugLoc": "pamyeolyisoweon",
+    "name": "파멸의소원",
+    "description": ""
+  },
+  {
+    "id": "354",
+    "slug": "psycho-boost",
+    "slugLoc": "saikobuseuteu",
+    "name": "사이코부스트",
+    "description": ""
+  },
+  {
+    "id": "355",
+    "slug": "roost",
+    "slugLoc": "nalgaeswigi",
+    "name": "날개쉬기",
+    "description": "자신의 최대 HP의 1/2만큼 회복한다.\n비행타입이 사용하면 그 턴 동안\n비행타입이 아니게 된다."
+  },
+  {
+    "id": "356",
+    "slug": "gravity",
+    "slugLoc": "jungryeog",
+    "name": "중력",
+    "description": "5턴 동안 전체 필드를\n중력 상태로 만든다."
+  },
+  {
+    "id": "357",
+    "slug": "miracle-eye",
+    "slugLoc": "mirakeulai",
+    "name": "미라클아이",
+    "description": ""
+  },
+  {
+    "id": "358",
+    "slug": "wake-up-slap",
+    "slugLoc": "jamggaeumbbyamcigi",
+    "name": "잠깨움뺨치기",
+    "description": ""
+  },
+  {
+    "id": "359",
+    "slug": "hammer-arm",
+    "slugLoc": "amhaemeo",
+    "name": "암해머",
+    "description": "자신의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "360",
+    "slug": "gyro-ball",
+    "slugLoc": "jairobol",
+    "name": "자이로볼",
+    "description": "자신의 스피드가 상대보다 느릴수록\n위력이 올라간다. (위력은 1~150)"
+  },
+  {
+    "id": "361",
+    "slug": "healing-wish",
+    "slugLoc": "ciyusoweon",
+    "name": "치유소원",
+    "description": "자신은 기절하게 되지만\n다음에 내보내는 포켓몬의\nHP를 모두 회복하고 상태 이상을 회복한다."
+  },
+  {
+    "id": "362",
+    "slug": "brine",
+    "slugLoc": "sogeummul",
+    "name": "소금물",
+    "description": ""
+  },
+  {
+    "id": "363",
+    "slug": "natural-gift",
+    "slugLoc": "jayeonyieunhye",
+    "name": "자연의은혜",
+    "description": ""
+  },
+  {
+    "id": "364",
+    "slug": "feint",
+    "slugLoc": "peinteu",
+    "name": "페인트",
+    "description": "방어, 판별 등의 효과를\n해제하고 공격한다."
+  },
+  {
+    "id": "365",
+    "slug": "pluck",
+    "slugLoc": "jjoadaegi",
+    "name": "쪼아대기",
+    "description": "상대가 나무열매를 지니고 있으면\n그 나무열매를 대신 먹고\n자신이 효과를 받는다."
+  },
+  {
+    "id": "366",
+    "slug": "tailwind",
+    "slugLoc": "sunpung",
+    "name": "순풍",
+    "description": "4턴 동안 같은 편 필드를\n순풍 상태로 만든다."
+  },
+  {
+    "id": "367",
+    "slug": "acupressure",
+    "slugLoc": "gyeonghyeoljjireugi",
+    "name": "경혈찌르기",
+    "description": "자신 또는 같은 편의\n공격, 방어, 특수공격, 특수방어, 스피드,\n명중률, 회피율 중 하나를 2단계 올린다."
+  },
+  {
+    "id": "368",
+    "slug": "metal-burst",
+    "slugLoc": "metalbeoseuteu",
+    "name": "메탈버스트",
+    "description": "사용한 턴에 상대의 기술로 입은 데미지를\n1.5배로 돌려준다."
+  },
+  {
+    "id": "369",
+    "slug": "u-turn",
+    "slugLoc": "yuteon",
+    "name": "유턴",
+    "description": "공격한 다음 다른 지닌 포켓몬과 교체한다."
+  },
+  {
+    "id": "370",
+    "slug": "close-combat",
+    "slugLoc": "inpaiteu",
+    "name": "인파이트",
+    "description": "자신의 방어, 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "371",
+    "slug": "payback",
+    "slugLoc": "bobog",
+    "name": "보복",
+    "description": "상대보다 나중에 공격하면 위력이 2배가 된다."
+  },
+  {
+    "id": "372",
+    "slug": "assurance",
+    "slugLoc": "seungbugudhigi",
+    "name": "승부굳히기",
+    "description": "사용한 턴 동안\n상대가 이미 데미지를 입었다면\n위력이 2배가 된다."
+  },
+  {
+    "id": "373",
+    "slug": "embargo",
+    "slugLoc": "geumje",
+    "name": "금제",
+    "description": ""
+  },
+  {
+    "id": "374",
+    "slug": "fling",
+    "slugLoc": "naedeonjigi",
+    "name": "내던지기",
+    "description": "지니고 있는 도구에 따라\n위력과 효과가 바뀐다.\n사용하면 도구는 사라진다."
+  },
+  {
+    "id": "375",
+    "slug": "psycho-shift",
+    "slugLoc": "saikosipeuteu",
+    "name": "사이코시프트",
+    "description": ""
+  },
+  {
+    "id": "376",
+    "slug": "trump-card",
+    "slugLoc": "majimagsudan",
+    "name": "마지막수단",
+    "description": ""
+  },
+  {
+    "id": "377",
+    "slug": "heal-block",
+    "slugLoc": "hoebogbongin",
+    "name": "회복봉인",
+    "description": ""
+  },
+  {
+    "id": "378",
+    "slug": "wring-out",
+    "slugLoc": "jwieojjagi",
+    "name": "쥐어짜기",
+    "description": ""
+  },
+  {
+    "id": "379",
+    "slug": "power-trick",
+    "slugLoc": "paweoteurig",
+    "name": "파워트릭",
+    "description": "자신은 공방반전 상태가 된다."
+  },
+  {
+    "id": "380",
+    "slug": "gastro-acid",
+    "slugLoc": "wiaeg",
+    "name": "위액",
+    "description": "상대를 특성 없음 상태로 만든다."
+  },
+  {
+    "id": "381",
+    "slug": "lucky-chant",
+    "slugLoc": "jusul",
+    "name": "주술",
+    "description": ""
+  },
+  {
+    "id": "382",
+    "slug": "me-first",
+    "slugLoc": "seoncwi",
+    "name": "선취",
+    "description": ""
+  },
+  {
+    "id": "383",
+    "slug": "copycat",
+    "slugLoc": "hyungnaejaengi",
+    "name": "흉내쟁이",
+    "description": "마지막으로 사용된 기술을 사용한다.\n사용된 기술이 없는 경우 실패한다."
+  },
+  {
+    "id": "384",
+    "slug": "power-swap",
+    "slugLoc": "paweoseuwab",
+    "name": "파워스왑",
+    "description": "자신의 공격, 특수공격 능력 변화를\n상대의 공격, 특수공격 능력 변화와 바꾼다."
+  },
+  {
+    "id": "385",
+    "slug": "guard-swap",
+    "slugLoc": "gadeuseuwab",
+    "name": "가드스왑",
+    "description": "자신의 방어, 특수방어 능력 변화를\n상대의 방어, 특수방어 능력 변화와 바꾼다."
+  },
+  {
+    "id": "386",
+    "slug": "punishment",
+    "slugLoc": "honnaegi",
+    "name": "혼내기",
+    "description": ""
+  },
+  {
+    "id": "387",
+    "slug": "last-resort",
+    "slugLoc": "bijangyimugi",
+    "name": "비장의무기",
+    "description": "다른 배운 기술을\n모두 사용하지 않은 경우 실패한다."
+  },
+  {
+    "id": "388",
+    "slug": "worry-seed",
+    "slugLoc": "gominssi",
+    "name": "고민씨",
+    "description": "상대의 특성을 불면으로 만든다."
+  },
+  {
+    "id": "389",
+    "slug": "sucker-punch",
+    "slugLoc": "giseub",
+    "name": "기습",
+    "description": "상대가 공격 기술을 선택하였고\n이 기술을 사용한 턴 동안\n이미 공격하였다면 실패한다."
+  },
+  {
+    "id": "390",
+    "slug": "toxic-spikes",
+    "slugLoc": "dogabjeong",
+    "name": "독압정",
+    "description": "상대 필드를\n독압정 상태로 만든다."
+  },
+  {
+    "id": "391",
+    "slug": "heart-swap",
+    "slugLoc": "hateuseuwab",
+    "name": "하트스왑",
+    "description": ""
+  },
+  {
+    "id": "392",
+    "slug": "aqua-ring",
+    "slugLoc": "akuaring",
+    "name": "아쿠아링",
+    "description": "자신은 아쿠아링 상태가 된다."
+  },
+  {
+    "id": "393",
+    "slug": "magnet-rise",
+    "slugLoc": "jeonjabuyu",
+    "name": "전자부유",
+    "description": "자신은 전자부유 상태가 된다."
+  },
+  {
+    "id": "394",
+    "slug": "flare-blitz",
+    "slugLoc": "peulreeodeuraibeu",
+    "name": "플레어드라이브",
+    "description": "준 데미지의 1/3만큼 자신도 데미지를 입는다.\n10% 확률로 상대를 화상 상태로 만든다.\n사용하면 자신의 얼음 상태를 회복한다."
+  },
+  {
+    "id": "395",
+    "slug": "force-palm",
+    "slugLoc": "balgyeong",
+    "name": "발경",
+    "description": ""
+  },
+  {
+    "id": "396",
+    "slug": "aura-sphere",
+    "slugLoc": "padongtan",
+    "name": "파동탄",
+    "description": "상대에게 반드시 명중한다."
+  },
+  {
+    "id": "397",
+    "slug": "rock-polish",
+    "slugLoc": "rogkeoteu",
+    "name": "록커트",
+    "description": "자신의 스피드를 2단계 올린다."
+  },
+  {
+    "id": "398",
+    "slug": "poison-jab",
+    "slugLoc": "dogjjireugi",
+    "name": "독찌르기",
+    "description": "30% 확률로 상대를 독 상태로 만든다."
+  },
+  {
+    "id": "399",
+    "slug": "dark-pulse",
+    "slugLoc": "agyipadong",
+    "name": "악의파동",
+    "description": "20% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "400",
+    "slug": "night-slash",
+    "slugLoc": "ggamjjagbegi",
+    "name": "깜짝베기",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "401",
+    "slug": "aqua-tail",
+    "slugLoc": "akuateil",
+    "name": "아쿠아테일",
+    "description": ""
+  },
+  {
+    "id": "402",
+    "slug": "seed-bomb",
+    "slugLoc": "ssipogtan",
+    "name": "씨폭탄",
+    "description": ""
+  },
+  {
+    "id": "403",
+    "slug": "air-slash",
+    "slugLoc": "eeoseulraesi",
+    "name": "에어슬래시",
+    "description": "30% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "404",
+    "slug": "x-scissor",
+    "slugLoc": "sijeokeuroseu",
+    "name": "시저크로스",
+    "description": ""
+  },
+  {
+    "id": "405",
+    "slug": "bug-buzz",
+    "slugLoc": "beolreyiyadanbeobseog",
+    "name": "벌레의야단법석",
+    "description": "10% 확률로 상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "406",
+    "slug": "dragon-pulse",
+    "slugLoc": "yongyipadong",
+    "name": "용의파동",
+    "description": ""
+  },
+  {
+    "id": "407",
+    "slug": "dragon-rush",
+    "slugLoc": "deuraegondaibeu",
+    "name": "드래곤다이브",
+    "description": "20% 확률로 상대를 풀죽게 한다.\n작아지기 상태인 상대에게는\n위력이 2배가 되며 반드시 명중한다."
+  },
+  {
+    "id": "408",
+    "slug": "power-gem",
+    "slugLoc": "paweojem",
+    "name": "파워젬",
+    "description": ""
+  },
+  {
+    "id": "409",
+    "slug": "drain-punch",
+    "slugLoc": "deureinpeonci",
+    "name": "드레인펀치",
+    "description": "상대에게 준 데미지의 1/2만큼\n자신의 HP를 회복한다."
+  },
+  {
+    "id": "410",
+    "slug": "vacuum-wave",
+    "slugLoc": "jingongpa",
+    "name": "진공파",
+    "description": ""
+  },
+  {
+    "id": "411",
+    "slug": "focus-blast",
+    "slugLoc": "gihabguseul",
+    "name": "기합구슬",
+    "description": "10% 확률로 상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "412",
+    "slug": "energy-ball",
+    "slugLoc": "eneojibol",
+    "name": "에너지볼",
+    "description": "10% 확률로 상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "413",
+    "slug": "brave-bird",
+    "slugLoc": "beureibeubeodeu",
+    "name": "브레이브버드",
+    "description": "준 데미지의 1/3만큼 자신도 데미지를 입는다."
+  },
+  {
+    "id": "414",
+    "slug": "earth-power",
+    "slugLoc": "daejiyihim",
+    "name": "대지의힘",
+    "description": "10% 확률로 상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "415",
+    "slug": "switcheroo",
+    "slugLoc": "baggweocigi",
+    "name": "바꿔치기",
+    "description": "상대와 자신의 지니고 있는 도구를 바꾼다."
+  },
+  {
+    "id": "416",
+    "slug": "giga-impact",
+    "slugLoc": "gigaimpaegteu",
+    "name": "기가임팩트",
+    "description": "사용한 다음 턴에\n자신은 반동 상태가 된다."
+  },
+  {
+    "id": "417",
+    "slug": "nasty-plot",
+    "slugLoc": "nabbeuneummo",
+    "name": "나쁜음모",
+    "description": "자신의 특수공격을 2단계 올린다."
+  },
+  {
+    "id": "418",
+    "slug": "bullet-punch",
+    "slugLoc": "bulrispeonci",
+    "name": "불릿펀치",
+    "description": ""
+  },
+  {
+    "id": "419",
+    "slug": "avalanche",
+    "slugLoc": "nunsatae",
+    "name": "눈사태",
+    "description": "이 기술을 사용하는 턴에\n상대에게 기술의 데미지를 입으면 위력이 2배가 된다."
+  },
+  {
+    "id": "420",
+    "slug": "ice-shard",
+    "slugLoc": "eoleummungci",
+    "name": "얼음뭉치",
+    "description": ""
+  },
+  {
+    "id": "421",
+    "slug": "shadow-claw",
+    "slugLoc": "syaedokeulro",
+    "name": "섀도클로",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "422",
+    "slug": "thunder-fang",
+    "slugLoc": "beongaeeomni",
+    "name": "번개엄니",
+    "description": "10% 확률로 상대를 마비 상태로 만든다.\n10% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "423",
+    "slug": "ice-fang",
+    "slugLoc": "eoleumeomni",
+    "name": "얼음엄니",
+    "description": "10% 확률로 상대를 얼음 상태로 만든다.\n10% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "424",
+    "slug": "fire-fang",
+    "slugLoc": "bulggoceomni",
+    "name": "불꽃엄니",
+    "description": "10% 확률로 상대를 화상 상태로 만든다.\n10% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "425",
+    "slug": "shadow-sneak",
+    "slugLoc": "yaseub",
+    "name": "야습",
+    "description": ""
+  },
+  {
+    "id": "426",
+    "slug": "mud-bomb",
+    "slugLoc": "jinheulgpogtan",
+    "name": "진흙폭탄",
+    "description": ""
+  },
+  {
+    "id": "427",
+    "slug": "psycho-cut",
+    "slugLoc": "saikokeoteo",
+    "name": "사이코커터",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "428",
+    "slug": "zen-headbutt",
+    "slugLoc": "sanyeomyibagcigi",
+    "name": "사념의박치기",
+    "description": "20% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "429",
+    "slug": "mirror-shot",
+    "slugLoc": "mireosyas",
+    "name": "미러샷",
+    "description": ""
+  },
+  {
+    "id": "430",
+    "slug": "flash-cannon",
+    "slugLoc": "reoseuteokaenon",
+    "name": "러스터캐논",
+    "description": "10% 확률로 상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "431",
+    "slug": "rock-climb",
+    "slugLoc": "rogkeulraim",
+    "name": "록클라임",
+    "description": ""
+  },
+  {
+    "id": "432",
+    "slug": "defog",
+    "slugLoc": "angaejegeo",
+    "name": "안개제거",
+    "description": "상대의 회피율을 1단계 떨어뜨린다.\n리플렉터, 압정뿌리기, 신비의부적,\n필드 등을 해제한다."
+  },
+  {
+    "id": "433",
+    "slug": "trick-room",
+    "slugLoc": "teurigrum",
+    "name": "트릭룸",
+    "description": "5턴 동안 전체 필드를\n트릭룸 상태로 만든다."
+  },
+  {
+    "id": "434",
+    "slug": "draco-meteor",
+    "slugLoc": "yongseonggun",
+    "name": "용성군",
+    "description": "자신의 특수공격을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "435",
+    "slug": "discharge",
+    "slugLoc": "bangjeon",
+    "name": "방전",
+    "description": "30% 확률로 상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "436",
+    "slug": "lava-plume",
+    "slugLoc": "bunyeon",
+    "name": "분연",
+    "description": "30% 확률로 상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "437",
+    "slug": "leaf-storm",
+    "slugLoc": "ripeuseutom",
+    "name": "리프스톰",
+    "description": "자신의 특수공격을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "438",
+    "slug": "power-whip",
+    "slugLoc": "paweohwib",
+    "name": "파워휩",
+    "description": ""
+  },
+  {
+    "id": "439",
+    "slug": "rock-wrecker",
+    "slugLoc": "amseogpo",
+    "name": "암석포",
+    "description": "사용한 다음 턴에\n자신은 반동 상태가 된다."
+  },
+  {
+    "id": "440",
+    "slug": "cross-poison",
+    "slugLoc": "keuroseupoijeun",
+    "name": "크로스포이즌",
+    "description": "10% 확률로 상대를 독 상태로 만든다.\n급소업+1로 공격한다."
+  },
+  {
+    "id": "441",
+    "slug": "gunk-shot",
+    "slugLoc": "deoseuteusyuteu",
+    "name": "더스트슈트",
+    "description": "30% 확률로 상대를 독 상태로 만든다."
+  },
+  {
+    "id": "442",
+    "slug": "iron-head",
+    "slugLoc": "aieonhedeu",
+    "name": "아이언헤드",
+    "description": "20% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "443",
+    "slug": "magnet-bomb",
+    "slugLoc": "mageunesbom",
+    "name": "마그넷봄",
+    "description": ""
+  },
+  {
+    "id": "444",
+    "slug": "stone-edge",
+    "slugLoc": "seutoneji",
+    "name": "스톤에지",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "445",
+    "slug": "captivate",
+    "slugLoc": "yuhog",
+    "name": "유혹",
+    "description": ""
+  },
+  {
+    "id": "446",
+    "slug": "stealth-rock",
+    "slugLoc": "seutelseurog",
+    "name": "스텔스록",
+    "description": "상대 필드를\n스텔스록 상태로 만든다."
+  },
+  {
+    "id": "447",
+    "slug": "grass-knot",
+    "slugLoc": "pulmugggi",
+    "name": "풀묶기",
+    "description": "상대가 무거울수록 위력이 올라간다.\n(위력은 20~120)"
+  },
+  {
+    "id": "448",
+    "slug": "chatter",
+    "slugLoc": "suda",
+    "name": "수다",
+    "description": ""
+  },
+  {
+    "id": "449",
+    "slug": "judgment",
+    "slugLoc": "simpanyimungci",
+    "name": "심판의뭉치",
+    "description": ""
+  },
+  {
+    "id": "450",
+    "slug": "bug-bite",
+    "slugLoc": "beolremeoggi",
+    "name": "벌레먹기",
+    "description": "상대가 나무열매를 지니고 있으면\n그 나무열매를 대신 먹고\n자신이 효과를 받는다."
+  },
+  {
+    "id": "451",
+    "slug": "charge-beam",
+    "slugLoc": "cajibim",
+    "name": "차지빔",
+    "description": "70% 확률로 자신의 특수공격을 1단계 올린다."
+  },
+  {
+    "id": "452",
+    "slug": "wood-hammer",
+    "slugLoc": "udeuhaemeo",
+    "name": "우드해머",
+    "description": "준 데미지의 1/3만큼 자신도 데미지를 입는다."
+  },
+  {
+    "id": "453",
+    "slug": "aqua-jet",
+    "slugLoc": "akuajeteu",
+    "name": "아쿠아제트",
+    "description": ""
+  },
+  {
+    "id": "454",
+    "slug": "attack-order",
+    "slugLoc": "gonggyeogjiryeong",
+    "name": "공격지령",
+    "description": ""
+  },
+  {
+    "id": "455",
+    "slug": "defend-order",
+    "slugLoc": "bangeojiryeong",
+    "name": "방어지령",
+    "description": ""
+  },
+  {
+    "id": "456",
+    "slug": "heal-order",
+    "slugLoc": "hoebogjiryeong",
+    "name": "회복지령",
+    "description": ""
+  },
+  {
+    "id": "457",
+    "slug": "head-smash",
+    "slugLoc": "yangnalbagcigi",
+    "name": "양날박치기",
+    "description": "준 데미지의 1/2만큼 자신도 데미지를 입는다."
+  },
+  {
+    "id": "458",
+    "slug": "double-hit",
+    "slugLoc": "deobeuleotaeg",
+    "name": "더블어택",
+    "description": "2회 연속으로 공격한다."
+  },
+  {
+    "id": "459",
+    "slug": "roar-of-time",
+    "slugLoc": "siganyipohyo",
+    "name": "시간의포효",
+    "description": ""
+  },
+  {
+    "id": "460",
+    "slug": "spacial-rend",
+    "slugLoc": "gongganjeoldan",
+    "name": "공간절단",
+    "description": ""
+  },
+  {
+    "id": "461",
+    "slug": "lunar-dance",
+    "slugLoc": "coseungdalcum",
+    "name": "초승달춤",
+    "description": ""
+  },
+  {
+    "id": "462",
+    "slug": "crush-grip",
+    "slugLoc": "mugsabal",
+    "name": "묵사발",
+    "description": ""
+  },
+  {
+    "id": "463",
+    "slug": "magma-storm",
+    "slugLoc": "mageumaseutom",
+    "name": "마그마스톰",
+    "description": ""
+  },
+  {
+    "id": "464",
+    "slug": "dark-void",
+    "slugLoc": "dakeuhol",
+    "name": "다크홀",
+    "description": ""
+  },
+  {
+    "id": "465",
+    "slug": "seed-flare",
+    "slugLoc": "sideupeulreeo",
+    "name": "시드플레어",
+    "description": ""
+  },
+  {
+    "id": "466",
+    "slug": "ominous-wind",
+    "slugLoc": "goesanghanbaram",
+    "name": "괴상한바람",
+    "description": ""
+  },
+  {
+    "id": "467",
+    "slug": "shadow-force",
+    "slugLoc": "syaedodaibeu",
+    "name": "섀도다이브",
+    "description": ""
+  },
+  {
+    "id": "468",
+    "slug": "hone-claws",
+    "slugLoc": "sontobgalgi",
+    "name": "손톱갈기",
+    "description": ""
+  },
+  {
+    "id": "469",
+    "slug": "wide-guard",
+    "slugLoc": "waideugadeu",
+    "name": "와이드가드",
+    "description": "사용한 턴 동안\n같은 편 전원을 공격하는 기술로부터 몸을 보호한다."
+  },
+  {
+    "id": "470",
+    "slug": "guard-split",
+    "slugLoc": "gadeusyeeo",
+    "name": "가드셰어",
+    "description": "자신과 상대의\n방어와 특수방어 수치를 각각 더해서\n1/2씩 나눠 갖는다."
+  },
+  {
+    "id": "471",
+    "slug": "power-split",
+    "slugLoc": "paweosyeeo",
+    "name": "파워셰어",
+    "description": "자신과 상대의\n공격과 특수공격 수치를 각각 더해서\n1/2씩 나눠 갖는다."
+  },
+  {
+    "id": "472",
+    "slug": "wonder-room",
+    "slugLoc": "weondeorum",
+    "name": "원더룸",
+    "description": "5턴 동안 전체 필드를\n원더룸 상태로 만든다."
+  },
+  {
+    "id": "473",
+    "slug": "psyshock",
+    "slugLoc": "saikosyokeu",
+    "name": "사이코쇼크",
+    "description": "이 기술은 특수 기술이나\n상대의 방어를 기준으로 데미지를 계산한다."
+  },
+  {
+    "id": "474",
+    "slug": "venoshock",
+    "slugLoc": "benomsyokeu",
+    "name": "베놈쇼크",
+    "description": "상대가 독, 맹독 상태인 경우 위력이 2배가 된다."
+  },
+  {
+    "id": "475",
+    "slug": "autotomize",
+    "slugLoc": "badipeoji",
+    "name": "바디퍼지",
+    "description": ""
+  },
+  {
+    "id": "476",
+    "slug": "rage-powder",
+    "slugLoc": "bunnogaru",
+    "name": "분노가루",
+    "description": "상대의 기술을 모두 자신이 받는다.\n상대를 선택하는 기술에만 효과가 있다."
+  },
+  {
+    "id": "477",
+    "slug": "telekinesis",
+    "slugLoc": "telrekinesiseu",
+    "name": "텔레키네시스",
+    "description": ""
+  },
+  {
+    "id": "478",
+    "slug": "magic-room",
+    "slugLoc": "maejigrum",
+    "name": "매직룸",
+    "description": "5턴 동안 전체 필드를\n매직룸 상태로 만든다."
+  },
+  {
+    "id": "479",
+    "slug": "smack-down",
+    "slugLoc": "ddeoleoddeurigi",
+    "name": "떨어뜨리기",
+    "description": "땅 위에 있지 않은 상대를 추락 상태로 만든다.\n공중 상태인 상대에게도 맞는다."
+  },
+  {
+    "id": "480",
+    "slug": "storm-throw",
+    "slugLoc": "eobeohurigi",
+    "name": "업어후리기",
+    "description": "반드시 급소에 맞는다."
+  },
+  {
+    "id": "481",
+    "slug": "flame-burst",
+    "slugLoc": "bulggoctwigigi",
+    "name": "불꽃튀기기",
+    "description": ""
+  },
+  {
+    "id": "482",
+    "slug": "sludge-wave",
+    "slugLoc": "omulweibeu",
+    "name": "오물웨이브",
+    "description": "10% 확률로 상대를 독 상태로 만든다."
+  },
+  {
+    "id": "483",
+    "slug": "quiver-dance",
+    "slugLoc": "nabicum",
+    "name": "나비춤",
+    "description": "자신의 특수공격, 특수방어, 스피드를 1단계 올린다."
+  },
+  {
+    "id": "484",
+    "slug": "heavy-slam",
+    "slugLoc": "hebibombeo",
+    "name": "헤비봄버",
+    "description": "자신이 상대보다 무거울수록\n위력이 올라간다. (위력은 40~120)\n작아지기 상태인 상대에게는\n위력이 2배가 되며 반드시 명중한다."
+  },
+  {
+    "id": "485",
+    "slug": "synchronoise",
+    "slugLoc": "singkeuronoijeu",
+    "name": "싱크로노이즈",
+    "description": ""
+  },
+  {
+    "id": "486",
+    "slug": "electro-ball",
+    "slugLoc": "ilregteurigbol",
+    "name": "일렉트릭볼",
+    "description": "자신의 스피드가 상대보다 빠를수록\n위력이 올라간다. (위력은 40~150)"
+  },
+  {
+    "id": "487",
+    "slug": "soak",
+    "slugLoc": "mulbusgi",
+    "name": "물붓기",
+    "description": "상대의 타입을 물타입으로 바꾼다."
+  },
+  {
+    "id": "488",
+    "slug": "flame-charge",
+    "slugLoc": "niteurocaji",
+    "name": "니트로차지",
+    "description": "자신의 스피드를 1단계 올린다."
+  },
+  {
+    "id": "489",
+    "slug": "coil",
+    "slugLoc": "ddwariteulgi",
+    "name": "똬리틀기",
+    "description": "자신의 공격, 방어, 명중률을 1단계 올린다."
+  },
+  {
+    "id": "490",
+    "slug": "low-sweep",
+    "slugLoc": "rokig",
+    "name": "로킥",
+    "description": "상대의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "491",
+    "slug": "acid-spray",
+    "slugLoc": "aesideubom",
+    "name": "애시드봄",
+    "description": "상대의 특수방어를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "492",
+    "slug": "foul-play",
+    "slugLoc": "sogimsu",
+    "name": "속임수",
+    "description": "자신의 공격이 아닌\n상대의 공격 수치에 따라 데미지가 결정된다."
+  },
+  {
+    "id": "493",
+    "slug": "simple-beam",
+    "slugLoc": "simpeulbim",
+    "name": "심플빔",
+    "description": "상대의 특성을 단순으로 만든다."
+  },
+  {
+    "id": "494",
+    "slug": "entrainment",
+    "slugLoc": "dongryomandeulgi",
+    "name": "동료만들기",
+    "description": "상대의 특성을 자신과 같은 특성으로 만든다."
+  },
+  {
+    "id": "495",
+    "slug": "after-you",
+    "slugLoc": "dangsinmeonjeo",
+    "name": "당신먼저",
+    "description": "상대의 행동 순서를\n자신의 바로 다음으로 만든다."
+  },
+  {
+    "id": "496",
+    "slug": "round",
+    "slugLoc": "dolrimnorae",
+    "name": "돌림노래",
+    "description": "같은 턴에 복수의 포켓몬이 이 기술을 사용하면\n첫 번째가 사용한 바로 다음에 두 번째 이후가 사용한다.\n두 번째 이후의 위력은 2배가 된다."
+  },
+  {
+    "id": "497",
+    "slug": "echoed-voice",
+    "slugLoc": "ekoboiseu",
+    "name": "에코보이스",
+    "description": ""
+  },
+  {
+    "id": "498",
+    "slug": "chip-away",
+    "slugLoc": "yageumyageum",
+    "name": "야금야금",
+    "description": ""
+  },
+  {
+    "id": "499",
+    "slug": "clear-smog",
+    "slugLoc": "keulrieoseumogeu",
+    "name": "클리어스모그",
+    "description": "상대의 능력 변화를 원래대로 되돌린다.\n상대에게 반드시 명중한다."
+  },
+  {
+    "id": "500",
+    "slug": "stored-power",
+    "slugLoc": "eosiseuteupaweo",
+    "name": "어시스트파워",
+    "description": "자신의 올라간 능력 변화 1단계당\n이 기술의 위력이 20씩 올라간다."
+  },
+  {
+    "id": "501",
+    "slug": "quick-guard",
+    "slugLoc": "paeseuteugadeu",
+    "name": "패스트가드",
+    "description": "사용한 턴 동안 자신과 같은 편을\n선제 기술로부터 보호한다."
+  },
+  {
+    "id": "502",
+    "slug": "ally-switch",
+    "slugLoc": "saideuceinji",
+    "name": "사이드체인지",
+    "description": "자신과 같은 편의 자리를 바꾼다.\n연속해서 사용하면\n성공률이 이전에 사용했을 때의 1/3이 된다."
+  },
+  {
+    "id": "503",
+    "slug": "scald",
+    "slugLoc": "yeoltang",
+    "name": "열탕",
+    "description": "30% 확률로 상대를 화상 상태로 만든다.\n상대의 얼음 상태를 회복한다.\n사용하면 자신의 얼음 상태를 회복한다."
+  },
+  {
+    "id": "504",
+    "slug": "shell-smash",
+    "slugLoc": "ggeobjilggaegi",
+    "name": "껍질깨기",
+    "description": "자신의 방어, 특수방어를 1단계 떨어뜨리고\n공격, 특수공격, 스피드를 2단계 올린다."
+  },
+  {
+    "id": "505",
+    "slug": "heal-pulse",
+    "slugLoc": "ciyupadong",
+    "name": "치유파동",
+    "description": "상대의 HP를 최대 HP의 1/2만큼 회복시킨다."
+  },
+  {
+    "id": "506",
+    "slug": "hex",
+    "slugLoc": "byeongsangceombyeong",
+    "name": "병상첨병",
+    "description": "상대가 상태 이상인 경우\n위력이 2배가 된다."
+  },
+  {
+    "id": "507",
+    "slug": "sky-drop",
+    "slugLoc": "peuripol",
+    "name": "프리폴",
+    "description": ""
+  },
+  {
+    "id": "508",
+    "slug": "shift-gear",
+    "slugLoc": "gieoceinji",
+    "name": "기어체인지",
+    "description": ""
+  },
+  {
+    "id": "509",
+    "slug": "circle-throw",
+    "slugLoc": "baedaedwicigi",
+    "name": "배대뒤치기",
+    "description": "상대에게 교체할 포켓몬이 있는 경우\n랜덤한 포켓몬으로 교체시킨다."
+  },
+  {
+    "id": "510",
+    "slug": "incinerate",
+    "slugLoc": "bultaeugi",
+    "name": "불태우기",
+    "description": ""
+  },
+  {
+    "id": "511",
+    "slug": "quash",
+    "slugLoc": "sunseomirugi",
+    "name": "순서미루기",
+    "description": "상대의 행동 순서를\n사용한 턴의 가장 마지막으로 만든다."
+  },
+  {
+    "id": "512",
+    "slug": "acrobatics",
+    "slugLoc": "aekeureobaes",
+    "name": "애크러뱃",
+    "description": "자신이 도구를 지니고 있지 않은 경우\n위력이 2배가 된다."
+  },
+  {
+    "id": "513",
+    "slug": "reflect-type",
+    "slugLoc": "mireotaib",
+    "name": "미러타입",
+    "description": "자신의 타입을 상대와 같은 타입으로 바꾼다."
+  },
+  {
+    "id": "514",
+    "slug": "retaliate",
+    "slugLoc": "weonsugapgi",
+    "name": "원수갚기",
+    "description": ""
+  },
+  {
+    "id": "515",
+    "slug": "final-gambit",
+    "slugLoc": "mogsumgeolgi",
+    "name": "목숨걸기",
+    "description": "자신은 기절하게 되며\n사용할 때 남은 HP만큼의 데미지를 준다."
+  },
+  {
+    "id": "516",
+    "slug": "bestow",
+    "slugLoc": "gipeuteupaeseu",
+    "name": "기프트패스",
+    "description": ""
+  },
+  {
+    "id": "517",
+    "slug": "inferno",
+    "slugLoc": "yeonog",
+    "name": "연옥",
+    "description": "상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "518",
+    "slug": "water-pledge",
+    "slugLoc": "mulyimaengse",
+    "name": "물의맹세",
+    "description": ""
+  },
+  {
+    "id": "519",
+    "slug": "fire-pledge",
+    "slugLoc": "bulggocyimaengse",
+    "name": "불꽃의맹세",
+    "description": ""
+  },
+  {
+    "id": "520",
+    "slug": "grass-pledge",
+    "slugLoc": "pulyimaengse",
+    "name": "풀의맹세",
+    "description": ""
+  },
+  {
+    "id": "521",
+    "slug": "volt-switch",
+    "slugLoc": "bolteuceinji",
+    "name": "볼트체인지",
+    "description": "공격한 다음 다른 지닌 포켓몬과 교체한다."
+  },
+  {
+    "id": "522",
+    "slug": "struggle-bug",
+    "slugLoc": "beolreyijeohang",
+    "name": "벌레의저항",
+    "description": "상대의 특수공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "523",
+    "slug": "bulldoze",
+    "slugLoc": "ddanggoreugi",
+    "name": "땅고르기",
+    "description": "상대의 스피드를 1단계 떨어뜨린다.\n그래스필드 상태일 때\n위력이 1/2이 된다."
+  },
+  {
+    "id": "524",
+    "slug": "frost-breath",
+    "slugLoc": "eoleumsumgyeol",
+    "name": "얼음숨결",
+    "description": "반드시 급소에 맞는다."
+  },
+  {
+    "id": "525",
+    "slug": "dragon-tail",
+    "slugLoc": "deuraegonteil",
+    "name": "드래곤테일",
+    "description": "상대에게 교체할 포켓몬이 있는 경우\n랜덤한 포켓몬으로 교체시킨다."
+  },
+  {
+    "id": "526",
+    "slug": "work-up",
+    "slugLoc": "bunbal",
+    "name": "분발",
+    "description": ""
+  },
+  {
+    "id": "527",
+    "slug": "electroweb",
+    "slugLoc": "ilregteurigneteu",
+    "name": "일렉트릭네트",
+    "description": "상대의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "528",
+    "slug": "wild-charge",
+    "slugLoc": "waildeubolteu",
+    "name": "와일드볼트",
+    "description": "준 데미지의 1/4만큼 자신도 데미지를 입는다."
+  },
+  {
+    "id": "529",
+    "slug": "drill-run",
+    "slugLoc": "deurilraineo",
+    "name": "드릴라이너",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "530",
+    "slug": "dual-chop",
+    "slugLoc": "deobeulcob",
+    "name": "더블촙",
+    "description": ""
+  },
+  {
+    "id": "531",
+    "slug": "heart-stamp",
+    "slugLoc": "hateuseutaempeu",
+    "name": "하트스탬프",
+    "description": ""
+  },
+  {
+    "id": "532",
+    "slug": "horn-leech",
+    "slugLoc": "udeuhon",
+    "name": "우드혼",
+    "description": "상대에게 준 데미지의 1/2만큼\n자신의 HP를 회복한다."
+  },
+  {
+    "id": "533",
+    "slug": "sacred-sword",
+    "slugLoc": "seongseureounkal",
+    "name": "성스러운칼",
+    "description": "상대의 능력 변화를 무시하고 데미지를 준다."
+  },
+  {
+    "id": "534",
+    "slug": "razor-shell",
+    "slugLoc": "syelbeulreideu",
+    "name": "셸블레이드",
+    "description": "50% 확률로 상대의 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "535",
+    "slug": "heat-crash",
+    "slugLoc": "hiteuseutaempeu",
+    "name": "히트스탬프",
+    "description": "자신이 상대보다 무거울수록\n위력이 올라간다. (위력은 40~120)\n작아지기 상태인 상대에게는\n위력이 2배가 되며 반드시 명중한다."
+  },
+  {
+    "id": "536",
+    "slug": "leaf-tornado",
+    "slugLoc": "geuraeseumigseo",
+    "name": "그래스믹서",
+    "description": ""
+  },
+  {
+    "id": "537",
+    "slug": "steamroller",
+    "slugLoc": "hadeurolreo",
+    "name": "하드롤러",
+    "description": ""
+  },
+  {
+    "id": "538",
+    "slug": "cotton-guard",
+    "slugLoc": "koteungadeu",
+    "name": "코튼가드",
+    "description": "자신의 방어를 3단계 올린다."
+  },
+  {
+    "id": "539",
+    "slug": "night-daze",
+    "slugLoc": "naiteubeoseuteu",
+    "name": "나이트버스트",
+    "description": "40% 확률로 상대의 명중률을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "540",
+    "slug": "psystrike",
+    "slugLoc": "saikobeureikeu",
+    "name": "사이코브레이크",
+    "description": ""
+  },
+  {
+    "id": "541",
+    "slug": "tail-slap",
+    "slugLoc": "seuwipeubbyamcigi",
+    "name": "스위프뺨치기",
+    "description": "2~5회 연속으로 공격한다."
+  },
+  {
+    "id": "542",
+    "slug": "hurricane",
+    "slugLoc": "pogpung",
+    "name": "폭풍",
+    "description": "30% 확률로 상대를 혼란 상태로 만든다.\n비 상태인 경우 상대에게 반드시 명중한다.\n공중 상태인 상대에게도 맞는다."
+  },
+  {
+    "id": "543",
+    "slug": "head-charge",
+    "slugLoc": "apeurobeureikeu",
+    "name": "아프로브레이크",
+    "description": ""
+  },
+  {
+    "id": "544",
+    "slug": "gear-grind",
+    "slugLoc": "gieososeo",
+    "name": "기어소서",
+    "description": ""
+  },
+  {
+    "id": "545",
+    "slug": "searing-shot",
+    "slugLoc": "hwayeomtan",
+    "name": "화염탄",
+    "description": ""
+  },
+  {
+    "id": "546",
+    "slug": "techno-blast",
+    "slugLoc": "tekeunobeoseuteo",
+    "name": "테크노버스터",
+    "description": ""
+  },
+  {
+    "id": "547",
+    "slug": "relic-song",
+    "slugLoc": "yesnorae",
+    "name": "옛노래",
+    "description": ""
+  },
+  {
+    "id": "548",
+    "slug": "secret-sword",
+    "slugLoc": "sinbiyikal",
+    "name": "신비의칼",
+    "description": ""
+  },
+  {
+    "id": "549",
+    "slug": "glaciate",
+    "slugLoc": "eoleobuteunsegye",
+    "name": "얼어붙은세계",
+    "description": ""
+  },
+  {
+    "id": "550",
+    "slug": "bolt-strike",
+    "slugLoc": "noegyeog",
+    "name": "뇌격",
+    "description": ""
+  },
+  {
+    "id": "551",
+    "slug": "blue-flare",
+    "slugLoc": "pureunbulggoc",
+    "name": "푸른불꽃",
+    "description": ""
+  },
+  {
+    "id": "552",
+    "slug": "fiery-dance",
+    "slugLoc": "bulggoccum",
+    "name": "불꽃춤",
+    "description": "50% 확률로 자신의 특수공격을 1단계 올린다."
+  },
+  {
+    "id": "553",
+    "slug": "freeze-shock",
+    "slugLoc": "peurijeubolteu",
+    "name": "프리즈볼트",
+    "description": ""
+  },
+  {
+    "id": "554",
+    "slug": "ice-burn",
+    "slugLoc": "koldeupeulreeo",
+    "name": "콜드플레어",
+    "description": ""
+  },
+  {
+    "id": "555",
+    "slug": "snarl",
+    "slugLoc": "bakeuaus",
+    "name": "바크아웃",
+    "description": "상대의 특수공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "556",
+    "slug": "icicle-crash",
+    "slugLoc": "godeureumddeolgugi",
+    "name": "고드름떨구기",
+    "description": "30% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "557",
+    "slug": "v-create",
+    "slugLoc": "vjeneoreiteu",
+    "name": "V제너레이트",
+    "description": ""
+  },
+  {
+    "id": "558",
+    "slug": "fusion-flare",
+    "slugLoc": "keuroseupeulreim",
+    "name": "크로스플레임",
+    "description": ""
+  },
+  {
+    "id": "559",
+    "slug": "fusion-bolt",
+    "slugLoc": "keuroseusseondeo",
+    "name": "크로스썬더",
+    "description": ""
+  },
+  {
+    "id": "560",
+    "slug": "flying-press",
+    "slugLoc": "peulraingpeureseu",
+    "name": "플라잉프레스",
+    "description": "이 기술의 타입과 비행타입\n두 타입의 상성을 종합하여 데미지가 결정된다.\n작아지기 상태인 상대에게는\n위력이 2배가 되며 반드시 명중한다."
+  },
+  {
+    "id": "561",
+    "slug": "mat-block",
+    "slugLoc": "marusbadagseweomaggi",
+    "name": "마룻바닥세워막기",
+    "description": ""
+  },
+  {
+    "id": "562",
+    "slug": "belch",
+    "slugLoc": "teurim",
+    "name": "트림",
+    "description": "배틀 중에 나무열매를 먹지 않은 경우\n이 기술은 실패한다."
+  },
+  {
+    "id": "563",
+    "slug": "rototiller",
+    "slugLoc": "ilgugi",
+    "name": "일구기",
+    "description": ""
+  },
+  {
+    "id": "564",
+    "slug": "sticky-web",
+    "slugLoc": "ggeunjeogggeunjeogneteu",
+    "name": "끈적끈적네트",
+    "description": "상대 필드를\n끈적끈적네트 상태로 만든다."
+  },
+  {
+    "id": "565",
+    "slug": "fell-stinger",
+    "slugLoc": "majimagilcim",
+    "name": "마지막일침",
+    "description": "이 기술로 상대를 쓰러뜨리면\n공격이 3단계 올라간다."
+  },
+  {
+    "id": "566",
+    "slug": "phantom-force",
+    "slugLoc": "goseuteudaibeu",
+    "name": "고스트다이브",
+    "description": "사용한 턴에 잠복 상태가 되어\n다음 턴에 공격한다.\n방어, 판별 등의 효과를\n해제하고 공격한다."
+  },
+  {
+    "id": "567",
+    "slug": "trick-or-treat",
+    "slugLoc": "haelreowin",
+    "name": "핼러윈",
+    "description": "상대를 핼러윈 상태로 만든다."
+  },
+  {
+    "id": "568",
+    "slug": "noble-roar",
+    "slugLoc": "bureujijgi",
+    "name": "부르짖기",
+    "description": "상대의 공격, 특수공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "569",
+    "slug": "ion-deluge",
+    "slugLoc": "peulraseumasyaweo",
+    "name": "플라스마샤워",
+    "description": ""
+  },
+  {
+    "id": "570",
+    "slug": "parabolic-charge",
+    "slugLoc": "parabolracaji",
+    "name": "파라볼라차지",
+    "description": "상대에게 준 데미지의 1/2만큼\n자신의 HP를 회복한다."
+  },
+  {
+    "id": "571",
+    "slug": "forests-curse",
+    "slugLoc": "supyijeoju",
+    "name": "숲의저주",
+    "description": "상대를 숲의저주 상태로 만든다."
+  },
+  {
+    "id": "572",
+    "slug": "petal-blizzard",
+    "slugLoc": "ggocbora",
+    "name": "꽃보라",
+    "description": ""
+  },
+  {
+    "id": "573",
+    "slug": "freeze-dry",
+    "slugLoc": "peurijeudeurai",
+    "name": "프리즈드라이",
+    "description": "물타입인 상대에게도 효과가 굉장해진다."
+  },
+  {
+    "id": "574",
+    "slug": "disarming-voice",
+    "slugLoc": "camingboiseu",
+    "name": "차밍보이스",
+    "description": ""
+  },
+  {
+    "id": "575",
+    "slug": "parting-shot",
+    "slugLoc": "magmalnaebaetgi",
+    "name": "막말내뱉기",
+    "description": "상대의 공격, 특수공격을 1단계 떨어뜨리고\n자신은 다른 지닌 포켓몬과 교체한다."
+  },
+  {
+    "id": "576",
+    "slug": "topsy-turvy",
+    "slugLoc": "dwijibeoeopgi",
+    "name": "뒤집어엎기",
+    "description": ""
+  },
+  {
+    "id": "577",
+    "slug": "draining-kiss",
+    "slugLoc": "deureinkiseu",
+    "name": "드레인키스",
+    "description": "상대에게 준 데미지의 3/4만큼\n자신의 HP를 회복한다."
+  },
+  {
+    "id": "578",
+    "slug": "crafty-shield",
+    "slugLoc": "teuriggadeu",
+    "name": "트릭가드",
+    "description": ""
+  },
+  {
+    "id": "579",
+    "slug": "flower-shield",
+    "slugLoc": "peulraweogadeu",
+    "name": "플라워가드",
+    "description": ""
+  },
+  {
+    "id": "580",
+    "slug": "grassy-terrain",
+    "slugLoc": "geuraeseupildeu",
+    "name": "그래스필드",
+    "description": "5턴 동안 전체 필드를\n그래스필드 상태로 만든다."
+  },
+  {
+    "id": "581",
+    "slug": "misty-terrain",
+    "slugLoc": "miseuteupildeu",
+    "name": "미스트필드",
+    "description": "5턴 동안 전체 필드를\n미스트필드 상태로 만든다."
+  },
+  {
+    "id": "582",
+    "slug": "electrify",
+    "slugLoc": "songjeon",
+    "name": "송전",
+    "description": "상대가 기술을 사용하기 전에 이 기술이 명중하면\n그 턴 동안 상대의 기술은 전기타입이 된다."
+  },
+  {
+    "id": "583",
+    "slug": "play-rough",
+    "slugLoc": "cigeungeorigi",
+    "name": "치근거리기",
+    "description": "10% 확률로 상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "584",
+    "slug": "fairy-wind",
+    "slugLoc": "yojeongyibaram",
+    "name": "요정의바람",
+    "description": ""
+  },
+  {
+    "id": "585",
+    "slug": "moonblast",
+    "slugLoc": "munposeu",
+    "name": "문포스",
+    "description": "10% 확률로 상대의 특수공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "586",
+    "slug": "boomburst",
+    "slugLoc": "pogeumpa",
+    "name": "폭음파",
+    "description": ""
+  },
+  {
+    "id": "587",
+    "slug": "fairy-lock",
+    "slugLoc": "peeorirog",
+    "name": "페어리록",
+    "description": "필드의 전원을\n페어리록 상태로 만든다."
+  },
+  {
+    "id": "588",
+    "slug": "kings-shield",
+    "slugLoc": "kingsildeu",
+    "name": "킹실드",
+    "description": "사용한 턴 동안 상대의 공격으로부터 몸을 보호하며\n접촉 기술을 받으면 상대의 공격을 1단계 떨어뜨린다.\n실드폼으로 폼체인지한다.\n연속해서 사용하면\n성공률이 이전에 사용했을 때의 1/3이 된다."
+  },
+  {
+    "id": "589",
+    "slug": "play-nice",
+    "slugLoc": "cinhaejigi",
+    "name": "친해지기",
+    "description": ""
+  },
+  {
+    "id": "590",
+    "slug": "confide",
+    "slugLoc": "bimiliyagi",
+    "name": "비밀이야기",
+    "description": ""
+  },
+  {
+    "id": "591",
+    "slug": "diamond-storm",
+    "slugLoc": "daiaseutom",
+    "name": "다이아스톰",
+    "description": ""
+  },
+  {
+    "id": "592",
+    "slug": "steam-eruption",
+    "slugLoc": "seutimbeoseuteu",
+    "name": "스팀버스트",
+    "description": ""
+  },
+  {
+    "id": "593",
+    "slug": "hyperspace-hole",
+    "slugLoc": "icaweonhol",
+    "name": "이차원홀",
+    "description": ""
+  },
+  {
+    "id": "594",
+    "slug": "water-shuriken",
+    "slugLoc": "mulsurigeom",
+    "name": "물수리검",
+    "description": "2~5회 연속으로 공격한다."
+  },
+  {
+    "id": "595",
+    "slug": "mystical-fire",
+    "slugLoc": "maejikeolpeulreim",
+    "name": "매지컬플레임",
+    "description": "상대의 특수공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "596",
+    "slug": "spiky-shield",
+    "slugLoc": "nideulgadeu",
+    "name": "니들가드",
+    "description": "사용한 턴 동안 상대의 기술로부터 몸을 보호하며\n접촉 기술로 공격한 상대 최대 HP의\n1/8만큼 데미지를 준다.\n연속해서 사용하면\n성공률이 이전에 사용했을 때의 1/3이 된다."
+  },
+  {
+    "id": "597",
+    "slug": "aromatic-mist",
+    "slugLoc": "aromamiseuteu",
+    "name": "아로마미스트",
+    "description": "자신의 특수방어를 1단계 올린다."
+  },
+  {
+    "id": "598",
+    "slug": "eerie-impulse",
+    "slugLoc": "goejeonpa",
+    "name": "괴전파",
+    "description": "상대의 특수공격을 2단계 떨어뜨린다."
+  },
+  {
+    "id": "599",
+    "slug": "venom-drench",
+    "slugLoc": "benomteuraeb",
+    "name": "베놈트랩",
+    "description": ""
+  },
+  {
+    "id": "600",
+    "slug": "powder",
+    "slugLoc": "bunjin",
+    "name": "분진",
+    "description": ""
+  },
+  {
+    "id": "601",
+    "slug": "geomancy",
+    "slugLoc": "jiokeonteurol",
+    "name": "지오컨트롤",
+    "description": ""
+  },
+  {
+    "id": "602",
+    "slug": "magnetic-flux",
+    "slugLoc": "jagijangjojag",
+    "name": "자기장조작",
+    "description": "특성이 플러스, 마이너스인\n자신과 같은 편의 방어, 특수방어를 1단계 올린다."
+  },
+  {
+    "id": "603",
+    "slug": "happy-hour",
+    "slugLoc": "haepitaim",
+    "name": "해피타임",
+    "description": ""
+  },
+  {
+    "id": "604",
+    "slug": "electric-terrain",
+    "slugLoc": "ilregteurigpildeu",
+    "name": "일렉트릭필드",
+    "description": "5턴 동안 전체 필드를\n일렉트릭필드 상태로 만든다."
+  },
+  {
+    "id": "605",
+    "slug": "dazzling-gleam",
+    "slugLoc": "maejikeolsyain",
+    "name": "매지컬샤인",
+    "description": ""
+  },
+  {
+    "id": "606",
+    "slug": "celebrate",
+    "slugLoc": "cugha",
+    "name": "축하",
+    "description": ""
+  },
+  {
+    "id": "607",
+    "slug": "hold-hands",
+    "slugLoc": "sonesonjabgi",
+    "name": "손에손잡기",
+    "description": ""
+  },
+  {
+    "id": "608",
+    "slug": "baby-doll-eyes",
+    "slugLoc": "corongcorongnundongja",
+    "name": "초롱초롱눈동자",
+    "description": "상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "609",
+    "slug": "nuzzle",
+    "slugLoc": "bolbubibubi",
+    "name": "볼부비부비",
+    "description": "상대를 마비 상태로 만든다."
+  },
+  {
+    "id": "610",
+    "slug": "hold-back",
+    "slugLoc": "jeogdanghisonbwajugi",
+    "name": "적당히손봐주기",
+    "description": ""
+  },
+  {
+    "id": "611",
+    "slug": "infestation",
+    "slugLoc": "eonggyeobutgi",
+    "name": "엉겨붙기",
+    "description": "상대를 바인드 상태로 만든다."
+  },
+  {
+    "id": "612",
+    "slug": "power-up-punch",
+    "slugLoc": "geuroupeonci",
+    "name": "그로우펀치",
+    "description": ""
+  },
+  {
+    "id": "613",
+    "slug": "oblivion-wing",
+    "slugLoc": "deseuwing",
+    "name": "데스윙",
+    "description": ""
+  },
+  {
+    "id": "614",
+    "slug": "thousand-arrows",
+    "slugLoc": "saujeondeuaero",
+    "name": "사우전드애로",
+    "description": ""
+  },
+  {
+    "id": "615",
+    "slug": "thousand-waves",
+    "slugLoc": "saujeondeuweibeu",
+    "name": "사우전드웨이브",
+    "description": ""
+  },
+  {
+    "id": "616",
+    "slug": "lands-wrath",
+    "slugLoc": "geuraundeuposeu",
+    "name": "그라운드포스",
+    "description": ""
+  },
+  {
+    "id": "617",
+    "slug": "light-of-ruin",
+    "slugLoc": "pamyeolyibic",
+    "name": "파멸의빛",
+    "description": "준 데미지의 1/2만큼 자신도 데미지를 입는다."
+  },
+  {
+    "id": "618",
+    "slug": "origin-pulse",
+    "slugLoc": "geunweonyipadong",
+    "name": "근원의파동",
+    "description": ""
+  },
+  {
+    "id": "619",
+    "slug": "precipice-blades",
+    "slugLoc": "danaeyikal",
+    "name": "단애의칼",
+    "description": ""
+  },
+  {
+    "id": "620",
+    "slug": "dragon-ascent",
+    "slugLoc": "hwaryongjeomjeong",
+    "name": "화룡점정",
+    "description": ""
+  },
+  {
+    "id": "621",
+    "slug": "hyperspace-fury",
+    "slugLoc": "icaweonreosi",
+    "name": "이차원러시",
+    "description": ""
+  },
+  {
+    "id": "659",
+    "slug": "shore-up",
+    "slugLoc": "moraemoeugi",
+    "name": "모래모으기",
+    "description": ""
+  },
+  {
+    "id": "660",
+    "slug": "first-impression",
+    "slugLoc": "mannajamaja",
+    "name": "만나자마자",
+    "description": "등장하고 가장 먼저 사용하지 않으면 실패한다."
+  },
+  {
+    "id": "661",
+    "slug": "baneful-bunker",
+    "slugLoc": "tocika",
+    "name": "토치카",
+    "description": "사용한 턴 동안 상대의 기술로부터 몸을 보호한다.\n접촉 기술을 받으면 상대를 독 상태로 만든다.\n연속해서 사용하면\n성공률이 이전에 사용했을 때의 1/3이 된다."
+  },
+  {
+    "id": "662",
+    "slug": "spirit-shackle",
+    "slugLoc": "geurimjaggwemaegi",
+    "name": "그림자꿰매기",
+    "description": "상대를 교체 불가 상태로 만든다."
+  },
+  {
+    "id": "663",
+    "slug": "darkest-lariat",
+    "slugLoc": "ddraerieoteu",
+    "name": "DD래리어트",
+    "description": "상대의 능력 변화를 무시하고 데미지를 준다."
+  },
+  {
+    "id": "664",
+    "slug": "sparkling-aria",
+    "slugLoc": "mulgeopumaria",
+    "name": "물거품아리아",
+    "description": "상대의 화상 상태를 회복한다."
+  },
+  {
+    "id": "665",
+    "slug": "ice-hammer",
+    "slugLoc": "aiseuhaemeo",
+    "name": "아이스해머",
+    "description": "자신의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "666",
+    "slug": "floral-healing",
+    "slugLoc": "peulraweohil",
+    "name": "플라워힐",
+    "description": ""
+  },
+  {
+    "id": "667",
+    "slug": "high-horsepower",
+    "slugLoc": "10manmaryeog",
+    "name": "10만마력",
+    "description": ""
+  },
+  {
+    "id": "668",
+    "slug": "strength-sap",
+    "slugLoc": "himheubsu",
+    "name": "힘흡수",
+    "description": "상대의 공격 수치만큼\n자신의 HP를 회복한다.\n상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "669",
+    "slug": "solar-blade",
+    "slugLoc": "solrabeulreideu",
+    "name": "솔라블레이드",
+    "description": "사용한 턴에 차지 상태가 되어 다음 턴에 공격한다.\n쾌청 상태인 경우 차지 상태를 생략하고\n바로 공격할 수 있다.\n다른 날씨인 경우 위력이 1/2이 된다."
+  },
+  {
+    "id": "670",
+    "slug": "leafage",
+    "slugLoc": "namusip",
+    "name": "나뭇잎",
+    "description": ""
+  },
+  {
+    "id": "671",
+    "slug": "spotlight",
+    "slugLoc": "seupoteuraiteu",
+    "name": "스포트라이트",
+    "description": ""
+  },
+  {
+    "id": "672",
+    "slug": "toxic-thread",
+    "slugLoc": "dogsil",
+    "name": "독실",
+    "description": "상대의 스피드를 2단계 떨어뜨린다.\n상대를 독 상태로 만든다."
+  },
+  {
+    "id": "673",
+    "slug": "laser-focus",
+    "slugLoc": "yeminhaejigi",
+    "name": "예민해지기",
+    "description": ""
+  },
+  {
+    "id": "674",
+    "slug": "gear-up",
+    "slugLoc": "eosiseuteugieo",
+    "name": "어시스트기어",
+    "description": ""
+  },
+  {
+    "id": "675",
+    "slug": "throat-chop",
+    "slugLoc": "jiogjjireugi",
+    "name": "지옥찌르기",
+    "description": "상대를 지옥찌르기 상태로 만든다."
+  },
+  {
+    "id": "676",
+    "slug": "pollen-puff",
+    "slugLoc": "ggocgarugyeongdan",
+    "name": "꽃가루경단",
+    "description": "같은 편에게 사용하면 데미지를 주는 대신\n최대 HP의 1/2만큼 같은 편의 HP를 회복한다."
+  },
+  {
+    "id": "677",
+    "slug": "anchor-shot",
+    "slugLoc": "aengkeosyas",
+    "name": "앵커샷",
+    "description": ""
+  },
+  {
+    "id": "678",
+    "slug": "psychic-terrain",
+    "slugLoc": "saikopildeu",
+    "name": "사이코필드",
+    "description": "5턴 동안 전체 필드를\n사이코필드 상태로 만든다."
+  },
+  {
+    "id": "679",
+    "slug": "lunge",
+    "slugLoc": "deombyeodeulgi",
+    "name": "덤벼들기",
+    "description": "상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "680",
+    "slug": "fire-lash",
+    "slugLoc": "bulggoccaejjig",
+    "name": "불꽃채찍",
+    "description": "상대의 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "681",
+    "slug": "power-trip",
+    "slugLoc": "gieooreugi",
+    "name": "기어오르기",
+    "description": "자신의 올라간 능력 변화 1단계당\n이 기술의 위력이 20씩 올라간다."
+  },
+  {
+    "id": "682",
+    "slug": "burn-up",
+    "slugLoc": "bulsareugi",
+    "name": "불사르기",
+    "description": "자신의 불꽃타입이 없어진다.\n사용하면 자신의 얼음 상태를 회복한다.\n자신이 불꽃타입이 아닌 경우 실패한다."
+  },
+  {
+    "id": "683",
+    "slug": "speed-swap",
+    "slugLoc": "seupideuseuwab",
+    "name": "스피드스왑",
+    "description": "자신과 상대의 스피드를 바꾼다."
+  },
+  {
+    "id": "684",
+    "slug": "smart-strike",
+    "slugLoc": "seumateuhon",
+    "name": "스마트혼",
+    "description": "상대에게 반드시 명중한다."
+  },
+  {
+    "id": "685",
+    "slug": "purify",
+    "slugLoc": "jeonghwa",
+    "name": "정화",
+    "description": ""
+  },
+  {
+    "id": "686",
+    "slug": "revelation-dance",
+    "slugLoc": "jamjaedaenseu",
+    "name": "잠재댄스",
+    "description": ""
+  },
+  {
+    "id": "687",
+    "slug": "core-enforcer",
+    "slugLoc": "koeopeonisyeo",
+    "name": "코어퍼니셔",
+    "description": ""
+  },
+  {
+    "id": "688",
+    "slug": "trop-kick",
+    "slugLoc": "teuropikeolkig",
+    "name": "트로피컬킥",
+    "description": "상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "689",
+    "slug": "instruct",
+    "slugLoc": "jihwi",
+    "name": "지휘",
+    "description": "상대가 직전에 사용한 기술을\n한 번 더 사용하게 한다."
+  },
+  {
+    "id": "690",
+    "slug": "beak-blast",
+    "slugLoc": "burikaenon",
+    "name": "부리캐논",
+    "description": "기술을 사용하기 전에 접촉 기술을 받으면\n그 상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "691",
+    "slug": "clanging-scales",
+    "slugLoc": "seukeilnoijeu",
+    "name": "스케일노이즈",
+    "description": "자신의 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "692",
+    "slug": "dragon-hammer",
+    "slugLoc": "deuraegonhaemeo",
+    "name": "드래곤해머",
+    "description": ""
+  },
+  {
+    "id": "693",
+    "slug": "brutal-swing",
+    "slugLoc": "secagehwidureugi",
+    "name": "세차게휘두르기",
+    "description": ""
+  },
+  {
+    "id": "694",
+    "slug": "aurora-veil",
+    "slugLoc": "ororabeil",
+    "name": "오로라베일",
+    "description": "5턴 동안 같은 편 필드를\n오로라베일 상태로 만든다.\n눈 상태인 경우에만 사용할 수 있다."
+  },
+  {
+    "id": "704",
+    "slug": "shell-trap",
+    "slugLoc": "teuraebsyel",
+    "name": "트랩셸",
+    "description": ""
+  },
+  {
+    "id": "705",
+    "slug": "fleur-cannon",
+    "slugLoc": "peulroereukaenon",
+    "name": "플뢰르캐논",
+    "description": ""
+  },
+  {
+    "id": "706",
+    "slug": "psychic-fangs",
+    "slugLoc": "saikopaeng",
+    "name": "사이코팽",
+    "description": "상대 필드의 빛의장막, 리플렉터,\n오로라베일 상태를 해제하고 공격한다."
+  },
+  {
+    "id": "707",
+    "slug": "stomping-tantrum",
+    "slugLoc": "bunhamyibalgureugi",
+    "name": "분함의발구르기",
+    "description": "직전 턴에 자신이 행동하지 못했거나\n기술이 빗나가거나 실패한 경우\n위력이 2배가 된다."
+  },
+  {
+    "id": "708",
+    "slug": "shadow-bone",
+    "slugLoc": "syaedobon",
+    "name": "섀도본",
+    "description": ""
+  },
+  {
+    "id": "709",
+    "slug": "accelerock",
+    "slugLoc": "aegselrog",
+    "name": "액셀록",
+    "description": ""
+  },
+  {
+    "id": "710",
+    "slug": "liquidation",
+    "slugLoc": "akuabeureikeu",
+    "name": "아쿠아브레이크",
+    "description": "20% 확률로 상대의 방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "711",
+    "slug": "prismatic-laser",
+    "slugLoc": "peurijeumreijeo",
+    "name": "프리즘레이저",
+    "description": ""
+  },
+  {
+    "id": "712",
+    "slug": "spectral-thief",
+    "slugLoc": "syaedoseutil",
+    "name": "섀도스틸",
+    "description": ""
+  },
+  {
+    "id": "713",
+    "slug": "sunsteel-strike",
+    "slugLoc": "meteodeuraibeu",
+    "name": "메테오드라이브",
+    "description": ""
+  },
+  {
+    "id": "714",
+    "slug": "moongeist-beam",
+    "slugLoc": "syaedorei",
+    "name": "섀도레이",
+    "description": ""
+  },
+  {
+    "id": "715",
+    "slug": "tearful-look",
+    "slugLoc": "nunmulgeureonggeureong",
+    "name": "눈물그렁그렁",
+    "description": "상대의 공격, 특수공격을 1단계 떨어뜨린다.\n상대의 회피율, 기술 방어 등을 무시하고 맞힐 수 있다."
+  },
+  {
+    "id": "716",
+    "slug": "zing-zap",
+    "slugLoc": "jjiririddaggeumddaggeum",
+    "name": "찌리리따끔따끔",
+    "description": ""
+  },
+  {
+    "id": "717",
+    "slug": "natures-madness",
+    "slugLoc": "jayeonyibunno",
+    "name": "자연의분노",
+    "description": ""
+  },
+  {
+    "id": "718",
+    "slug": "multi-attack",
+    "slugLoc": "meoltieotaeg",
+    "name": "멀티어택",
+    "description": ""
+  },
+  {
+    "id": "720",
+    "slug": "mind-blown",
+    "slugLoc": "ggamjjaghedeu",
+    "name": "깜짝헤드",
+    "description": ""
+  },
+  {
+    "id": "721",
+    "slug": "plasma-fists",
+    "slugLoc": "peulraseumapiseuteu",
+    "name": "플라스마피스트",
+    "description": ""
+  },
+  {
+    "id": "722",
+    "slug": "photon-geyser",
+    "slugLoc": "potongaijeo",
+    "name": "포톤가이저",
+    "description": ""
+  },
+  {
+    "id": "742",
+    "slug": "double-iron-bash",
+    "slugLoc": "deobeulpeonceo",
+    "name": "더블펀처",
+    "description": ""
+  },
+  {
+    "id": "744",
+    "slug": "dynamax-cannon",
+    "slugLoc": "daimaegseupo",
+    "name": "다이맥스포",
+    "description": ""
+  },
+  {
+    "id": "745",
+    "slug": "snipe-shot",
+    "slugLoc": "noryeomajhigi",
+    "name": "노려맞히기",
+    "description": ""
+  },
+  {
+    "id": "746",
+    "slug": "jaw-lock",
+    "slugLoc": "mulgobeotigi",
+    "name": "물고버티기",
+    "description": ""
+  },
+  {
+    "id": "747",
+    "slug": "stuff-cheeks",
+    "slugLoc": "bolgadeugneohgi",
+    "name": "볼가득넣기",
+    "description": "지니고 있는 나무열매를 먹는다.\n자신의 방어를 2단계 올린다.\n나무열매를 지니고 있지 않다면 이 기술을 사용할 수 없다."
+  },
+  {
+    "id": "748",
+    "slug": "no-retreat",
+    "slugLoc": "baesuyijin",
+    "name": "배수의진",
+    "description": ""
+  },
+  {
+    "id": "749",
+    "slug": "tar-shot",
+    "slugLoc": "tareusyas",
+    "name": "타르샷",
+    "description": ""
+  },
+  {
+    "id": "750",
+    "slug": "magic-powder",
+    "slugLoc": "mabeobgaru",
+    "name": "마법가루",
+    "description": "상대의 타입을 에스퍼타입으로 바꾼다."
+  },
+  {
+    "id": "751",
+    "slug": "dragon-darts",
+    "slugLoc": "deuraegonaero",
+    "name": "드래곤애로",
+    "description": "2회 연속으로 공격한다.\n상대가 2마리 있는 경우\n각각 1회씩 공격한다."
+  },
+  {
+    "id": "752",
+    "slug": "teatime",
+    "slugLoc": "dagwahoe",
+    "name": "다과회",
+    "description": "필드의 전원은\n각각 지니고 있는 나무열매를 먹는다."
+  },
+  {
+    "id": "753",
+    "slug": "octolock",
+    "slugLoc": "muneogudhigi",
+    "name": "문어굳히기",
+    "description": ""
+  },
+  {
+    "id": "754",
+    "slug": "bolt-beak",
+    "slugLoc": "jeongyeogburi",
+    "name": "전격부리",
+    "description": ""
+  },
+  {
+    "id": "755",
+    "slug": "fishious-rend",
+    "slugLoc": "agamimulgi",
+    "name": "아가미물기",
+    "description": ""
+  },
+  {
+    "id": "756",
+    "slug": "court-change",
+    "slugLoc": "koteuceinji",
+    "name": "코트체인지",
+    "description": ""
+  },
+  {
+    "id": "775",
+    "slug": "clangorous-soul",
+    "slugLoc": "soulbiteu",
+    "name": "소울비트",
+    "description": "자신의 최대 HP의 1/3만큼 HP를 소비하여\n자신의 공격, 방어, 특수공격, 특수방어, 스피드를\n1단계 올린다.\n남은 HP가 부족한 경우 실패한다."
+  },
+  {
+    "id": "776",
+    "slug": "body-press",
+    "slugLoc": "badipeureseu",
+    "name": "바디프레스",
+    "description": "이 기술은 공격이 아닌\n방어 수치에 따라 데미지가 결정된다."
+  },
+  {
+    "id": "777",
+    "slug": "decorate",
+    "slugLoc": "dekoreisyeon",
+    "name": "데코레이션",
+    "description": "상대의 공격, 특수공격을 2단계 올린다."
+  },
+  {
+    "id": "778",
+    "slug": "drum-beating",
+    "slugLoc": "deureomeotaeg",
+    "name": "드럼어택",
+    "description": ""
+  },
+  {
+    "id": "779",
+    "slug": "snap-trap",
+    "slugLoc": "jibgedeoc",
+    "name": "집게덫",
+    "description": "상대를 바인드 상태로 만든다."
+  },
+  {
+    "id": "780",
+    "slug": "pyro-ball",
+    "slugLoc": "hwayeombol",
+    "name": "화염볼",
+    "description": ""
+  },
+  {
+    "id": "781",
+    "slug": "behemoth-blade",
+    "slugLoc": "geosucam",
+    "name": "거수참",
+    "description": ""
+  },
+  {
+    "id": "782",
+    "slug": "behemoth-bash",
+    "slugLoc": "geosutan",
+    "name": "거수탄",
+    "description": ""
+  },
+  {
+    "id": "783",
+    "slug": "aura-wheel",
+    "slugLoc": "orahwil",
+    "name": "오라휠",
+    "description": "자신의 스피드를 1단계 올린다.\n모르페코의 폼에 따라 타입이 바뀐다."
+  },
+  {
+    "id": "784",
+    "slug": "breaking-swipe",
+    "slugLoc": "waideubeureikeo",
+    "name": "와이드브레이커",
+    "description": "상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "785",
+    "slug": "branch-poke",
+    "slugLoc": "gajijjireugi",
+    "name": "가지찌르기",
+    "description": ""
+  },
+  {
+    "id": "786",
+    "slug": "overdrive",
+    "slugLoc": "obeodeuraibeu",
+    "name": "오버드라이브",
+    "description": ""
+  },
+  {
+    "id": "787",
+    "slug": "apple-acid",
+    "slugLoc": "sagwasan",
+    "name": "사과산",
+    "description": "상대의 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "788",
+    "slug": "grav-apple",
+    "slugLoc": "gyihim",
+    "name": "G의힘",
+    "description": "상대의 방어를 1단계 떨어뜨린다.\n중력 상태인 경우 위력이 1.5배가 된다."
+  },
+  {
+    "id": "789",
+    "slug": "spirit-break",
+    "slugLoc": "soulkeuraesi",
+    "name": "소울크래시",
+    "description": ""
+  },
+  {
+    "id": "790",
+    "slug": "strange-steam",
+    "slugLoc": "weondeoseutim",
+    "name": "원더스팀",
+    "description": ""
+  },
+  {
+    "id": "791",
+    "slug": "life-dew",
+    "slugLoc": "saengmyeongyimulbangul",
+    "name": "생명의물방울",
+    "description": "자신과 같은 편의 HP를\n각각 최대 HP의 1/4만큼 회복한다."
+  },
+  {
+    "id": "792",
+    "slug": "obstruct",
+    "slugLoc": "beulroking",
+    "name": "블로킹",
+    "description": ""
+  },
+  {
+    "id": "793",
+    "slug": "false-surrender",
+    "slugLoc": "sajoeyijjireugi",
+    "name": "사죄의찌르기",
+    "description": ""
+  },
+  {
+    "id": "794",
+    "slug": "meteor-assault",
+    "slugLoc": "seutaeoseolteu",
+    "name": "스타어설트",
+    "description": ""
+  },
+  {
+    "id": "795",
+    "slug": "eternabeam",
+    "slugLoc": "muhandaibim",
+    "name": "무한다이빔",
+    "description": ""
+  },
+  {
+    "id": "796",
+    "slug": "steel-beam",
+    "slugLoc": "ceoljegwangseon",
+    "name": "철제광선",
+    "description": "공격한 다음 자신의 최대 HP의\n1/2만큼 데미지를 입는다."
+  },
+  {
+    "id": "797",
+    "slug": "expanding-force",
+    "slugLoc": "waideuposeu",
+    "name": "와이드포스",
+    "description": "사이코필드 상태의 효과를 받고 있는 경우\n위력이 1.5배가 되며 상대 전체를 공격한다."
+  },
+  {
+    "id": "798",
+    "slug": "steel-roller",
+    "slugLoc": "aieonrolreo",
+    "name": "아이언롤러",
+    "description": "필드가 전개되어 있지 않은 경우 실패한다.\n필드를 해제한다."
+  },
+  {
+    "id": "799",
+    "slug": "scale-shot",
+    "slugLoc": "seukeilsyas",
+    "name": "스케일샷",
+    "description": "2~5회 연속으로 공격한다.\n자신의 방어를 1단계 떨어뜨리고\n스피드를 1단계 올린다."
+  },
+  {
+    "id": "800",
+    "slug": "meteor-beam",
+    "slugLoc": "meteobim",
+    "name": "메테오빔",
+    "description": "사용한 턴에 차지 상태가 되어 다음 턴에 공격한다.\n사용한 턴에 자신의 특수공격을 1단계 올린다."
+  },
+  {
+    "id": "801",
+    "slug": "shell-side-arm",
+    "slugLoc": "syelamjeu",
+    "name": "셸암즈",
+    "description": "20% 확률로 상대를 독 상태로 만든다.\n물리 기술일 때 데미지가 더 높은 경우\n물리 기술이 된다."
+  },
+  {
+    "id": "802",
+    "slug": "misty-explosion",
+    "slugLoc": "miseuteubeoseuteu",
+    "name": "미스트버스트",
+    "description": "사용하면 자신은 기절하게 된다.\n미스트필드 상태의 효과를 받고 있는 경우\n위력이 1.5배가 된다."
+  },
+  {
+    "id": "803",
+    "slug": "grassy-glide",
+    "slugLoc": "geuraeseuseulraideo",
+    "name": "그래스슬라이더",
+    "description": "그래스필드 상태의 효과를 받고 있는 경우\n우선도 +1이 된다."
+  },
+  {
+    "id": "804",
+    "slug": "rising-voltage",
+    "slugLoc": "raijingbolteu",
+    "name": "라이징볼트",
+    "description": "상대가 일렉트릭필드 상태의\n효과를 받고 있는 경우 위력이 2배가 된다."
+  },
+  {
+    "id": "805",
+    "slug": "terrain-pulse",
+    "slugLoc": "daejiyipadong",
+    "name": "대지의파동",
+    "description": "자신이 필드의 효과를 받고 있는 경우\n위력이 2배가 된다.\n필드의 종류에 따라 타입이 바뀐다."
+  },
+  {
+    "id": "806",
+    "slug": "skitter-smack",
+    "slugLoc": "eomseubhaneunilgyeog",
+    "name": "엄습하는일격",
+    "description": "상대의 특수공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "807",
+    "slug": "burning-jealousy",
+    "slugLoc": "jiltuyibulggoc",
+    "name": "질투의불꽃",
+    "description": "사용한 턴 동안 상대의 능력이 올라간 경우\n상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "808",
+    "slug": "lash-out",
+    "slugLoc": "bunpuli",
+    "name": "분풀이",
+    "description": "사용한 턴 동안 자신의 능력이 떨어진 경우\n위력이 2배가 된다."
+  },
+  {
+    "id": "809",
+    "slug": "poltergeist",
+    "slugLoc": "polteogaiseuteu",
+    "name": "폴터가이스트",
+    "description": "상대가 도구를 지니고 있지 않은 경우 실패한다."
+  },
+  {
+    "id": "810",
+    "slug": "corrosive-gas",
+    "slugLoc": "busiggaseu",
+    "name": "부식가스",
+    "description": "자신을 제외한 필드의 전원이\n지니고 있는 도구를 없앤다."
+  },
+  {
+    "id": "811",
+    "slug": "coaching",
+    "slugLoc": "kocing",
+    "name": "코칭",
+    "description": "같은 편의 공격, 방어를 1단계 올린다."
+  },
+  {
+    "id": "812",
+    "slug": "flip-turn",
+    "slugLoc": "kwigteon",
+    "name": "퀵턴",
+    "description": "공격한 다음 다른 지닌 포켓몬과 교체한다."
+  },
+  {
+    "id": "813",
+    "slug": "triple-axel",
+    "slugLoc": "teuripeulagsel",
+    "name": "트리플악셀",
+    "description": "첫 번째는 위력 20, 두 번째는 위력 40,\n세 번째는 위력 60으로 3회 연속 공격한다.\n도중에 빗나가면 공격이 끝난다."
+  },
+  {
+    "id": "814",
+    "slug": "dual-wingbeat",
+    "slugLoc": "deobeulwing",
+    "name": "더블윙",
+    "description": "2회 연속으로 공격한다."
+  },
+  {
+    "id": "815",
+    "slug": "scorching-sands",
+    "slugLoc": "yeolsayidaeji",
+    "name": "열사의대지",
+    "description": "30% 확률로 상대를 화상 상태로 만든다.\n상대의 얼음 상태를 회복한다.\n사용하면 자신의 얼음 상태를 회복한다."
+  },
+  {
+    "id": "816",
+    "slug": "jungle-healing",
+    "slugLoc": "jeonggeulhil",
+    "name": "정글힐",
+    "description": ""
+  },
+  {
+    "id": "817",
+    "slug": "wicked-blow",
+    "slugLoc": "amheuggangta",
+    "name": "암흑강타",
+    "description": ""
+  },
+  {
+    "id": "818",
+    "slug": "surging-strikes",
+    "slugLoc": "suryuyeonta",
+    "name": "수류연타",
+    "description": ""
+  },
+  {
+    "id": "819",
+    "slug": "thunder-cage",
+    "slugLoc": "sseondeopeurijeun",
+    "name": "썬더프리즌",
+    "description": ""
+  },
+  {
+    "id": "820",
+    "slug": "dragon-energy",
+    "slugLoc": "deuraegoneneoji",
+    "name": "드래곤에너지",
+    "description": ""
+  },
+  {
+    "id": "821",
+    "slug": "freezing-glare",
+    "slugLoc": "eoleobutneunsiseon",
+    "name": "얼어붙는시선",
+    "description": ""
+  },
+  {
+    "id": "822",
+    "slug": "fiery-wrath",
+    "slugLoc": "taoreuneunbunno",
+    "name": "타오르는분노",
+    "description": ""
+  },
+  {
+    "id": "823",
+    "slug": "thunderous-kick",
+    "slugLoc": "ceondungcagi",
+    "name": "천둥차기",
+    "description": ""
+  },
+  {
+    "id": "824",
+    "slug": "glacial-lance",
+    "slugLoc": "beulrijadeuraenseu",
+    "name": "블리자드랜스",
+    "description": ""
+  },
+  {
+    "id": "825",
+    "slug": "astral-barrage",
+    "slugLoc": "aseuteuralbiteu",
+    "name": "아스트랄비트",
+    "description": ""
+  },
+  {
+    "id": "826",
+    "slug": "eerie-spell",
+    "slugLoc": "seomddeughanjumun",
+    "name": "섬뜩한주문",
+    "description": "상대가 마지막으로 사용한 기술의 PP를 3 줄인다."
+  },
+  {
+    "id": "827",
+    "slug": "dire-claw",
+    "slugLoc": "peitalkeulro",
+    "name": "페이탈클로",
+    "description": "30% 확률로 상대를 독, 마비, 잠듦 중\n하나의 상태로 만든다."
+  },
+  {
+    "id": "828",
+    "slug": "psyshield-bash",
+    "slugLoc": "baerieoreosi",
+    "name": "배리어러시",
+    "description": "자신의 방어를 1단계 올린다."
+  },
+  {
+    "id": "829",
+    "slug": "power-shift",
+    "slugLoc": "paweosipeuteu",
+    "name": "파워시프트",
+    "description": "자신은 공방반전 상태가 된다."
+  },
+  {
+    "id": "830",
+    "slug": "stone-axe",
+    "slugLoc": "amseogaegseu",
+    "name": "암석액스",
+    "description": "상대 필드를\n스텔스록 상태로 만든다."
+  },
+  {
+    "id": "831",
+    "slug": "springtide-storm",
+    "slugLoc": "bomyipogpung",
+    "name": "봄의폭풍",
+    "description": ""
+  },
+  {
+    "id": "832",
+    "slug": "mystical-power",
+    "slugLoc": "sinbiyihim",
+    "name": "신비의힘",
+    "description": ""
+  },
+  {
+    "id": "833",
+    "slug": "raging-fury",
+    "slugLoc": "daegyeogbun",
+    "name": "대격분",
+    "description": "자신은 난동 상태가 된다."
+  },
+  {
+    "id": "834",
+    "slug": "wave-crash",
+    "slugLoc": "weibeutaekeul",
+    "name": "웨이브태클",
+    "description": "준 데미지의 1/3만큼 자신도 데미지를 입는다."
+  },
+  {
+    "id": "835",
+    "slug": "chloroblast",
+    "slugLoc": "keulrorobeulraseuteu",
+    "name": "클로로블라스트",
+    "description": ""
+  },
+  {
+    "id": "836",
+    "slug": "mountain-gale",
+    "slugLoc": "bingsanbaram",
+    "name": "빙산바람",
+    "description": "30% 확률로 상대를 풀죽게 한다."
+  },
+  {
+    "id": "837",
+    "slug": "victory-dance",
+    "slugLoc": "seungriyicum",
+    "name": "승리의춤",
+    "description": ""
+  },
+  {
+    "id": "838",
+    "slug": "headlong-rush",
+    "slugLoc": "deulibadgi",
+    "name": "들이받기",
+    "description": "자신의 방어, 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "839",
+    "slug": "barb-barrage",
+    "slugLoc": "dogcimceonbal",
+    "name": "독침천발",
+    "description": ""
+  },
+  {
+    "id": "840",
+    "slug": "esper-wing",
+    "slugLoc": "orawing",
+    "name": "오라윙",
+    "description": ""
+  },
+  {
+    "id": "841",
+    "slug": "bitter-malice",
+    "slugLoc": "ceoncujihan",
+    "name": "천추지한",
+    "description": "상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "842",
+    "slug": "shelter",
+    "slugLoc": "nongseong",
+    "name": "농성",
+    "description": "자신의 방어를 2단계 올린다."
+  },
+  {
+    "id": "843",
+    "slug": "triple-arrows",
+    "slugLoc": "3yeonhwasal",
+    "name": "3연화살",
+    "description": "50% 확률로 상대의 방어를 1단계 떨어뜨린다.\n30% 확률로 상대를 풀죽게 한다.\n급소업+1로 공격한다."
+  },
+  {
+    "id": "844",
+    "slug": "infernal-parade",
+    "slugLoc": "baeggwiyahaeng",
+    "name": "백귀야행",
+    "description": "30% 확률로 상대를 화상 상태로 만든다.\n상대가 상태 이상인 경우\n위력이 2배가 된다."
+  },
+  {
+    "id": "845",
+    "slug": "ceaseless-edge",
+    "slugLoc": "bigeomceonjungpa",
+    "name": "비검천중파",
+    "description": "상대 필드를\n압정뿌리기 상태로 만든다."
+  },
+  {
+    "id": "846",
+    "slug": "bleakwind-storm",
+    "slugLoc": "canbarampogpung",
+    "name": "찬바람폭풍",
+    "description": ""
+  },
+  {
+    "id": "847",
+    "slug": "wildbolt-storm",
+    "slugLoc": "beongaepogpung",
+    "name": "번개폭풍",
+    "description": ""
+  },
+  {
+    "id": "848",
+    "slug": "sandsear-storm",
+    "slugLoc": "yeolsayipogpung",
+    "name": "열사의폭풍",
+    "description": ""
+  },
+  {
+    "id": "849",
+    "slug": "lunar-blessing",
+    "slugLoc": "coseungdalyigido",
+    "name": "초승달의기도",
+    "description": ""
+  },
+  {
+    "id": "850",
+    "slug": "take-heart",
+    "slugLoc": "beureibeucaji",
+    "name": "브레이브차지",
+    "description": ""
+  },
+  {
+    "id": "851",
+    "slug": "tera-blast",
+    "slugLoc": "terabeoseuteu",
+    "name": "테라버스트",
+    "description": ""
+  },
+  {
+    "id": "852",
+    "slug": "silk-trap",
+    "slugLoc": "seuredeuteuraeb",
+    "name": "스레드트랩",
+    "description": ""
+  },
+  {
+    "id": "853",
+    "slug": "axe-kick",
+    "slugLoc": "balggumcijjiggi",
+    "name": "발꿈치찍기",
+    "description": "30% 확률로 상대를 혼란 상태로 만든다.\n빗나가거나 실패하면 자신의 최대 HP의\n1/2만큼 데미지를 입는다."
+  },
+  {
+    "id": "854",
+    "slug": "last-respects",
+    "slugLoc": "seongmyo",
+    "name": "성묘",
+    "description": "지닌 포켓몬이 1마리 기절할 때마다\n위력이 50 올라간다."
+  },
+  {
+    "id": "855",
+    "slug": "lumina-crash",
+    "slugLoc": "ruminakolrijeon",
+    "name": "루미나콜리전",
+    "description": "상대의 특수방어를 2단계 떨어뜨린다."
+  },
+  {
+    "id": "856",
+    "slug": "order-up",
+    "slugLoc": "hanpannaegi",
+    "name": "한판내기",
+    "description": ""
+  },
+  {
+    "id": "857",
+    "slug": "jet-punch",
+    "slugLoc": "jeteupeonci",
+    "name": "제트펀치",
+    "description": ""
+  },
+  {
+    "id": "858",
+    "slug": "spicy-extract",
+    "slugLoc": "habaneroeggiseu",
+    "name": "하바네로엑기스",
+    "description": "상대의 방어를 2단계 떨어뜨리고\n공격을 2단계 올린다."
+  },
+  {
+    "id": "859",
+    "slug": "spin-out",
+    "slugLoc": "hwilseupin",
+    "name": "휠스핀",
+    "description": ""
+  },
+  {
+    "id": "860",
+    "slug": "population-bomb",
+    "slugLoc": "jjigjjigbegi",
+    "name": "찍찍베기",
+    "description": "1~10회 연속으로 공격한다.\n도중에 빗나가면 공격이 끝난다."
+  },
+  {
+    "id": "861",
+    "slug": "ice-spinner",
+    "slugLoc": "aiseuseupineo",
+    "name": "아이스스피너",
+    "description": "필드를 해제한다."
+  },
+  {
+    "id": "862",
+    "slug": "glaive-rush",
+    "slugLoc": "daegeomdolgyeog",
+    "name": "대검돌격",
+    "description": ""
+  },
+  {
+    "id": "863",
+    "slug": "revival-blessing",
+    "slugLoc": "hoesaengyigido",
+    "name": "회생의기도",
+    "description": "기절한 지닌 포켓몬을\n최대 HP의 1/2 상태로 부활시킨다."
+  },
+  {
+    "id": "864",
+    "slug": "salt-cure",
+    "slugLoc": "sogeumjeoli",
+    "name": "소금절이",
+    "description": "상대를 소금절이 상태로 만든다."
+  },
+  {
+    "id": "865",
+    "slug": "triple-dive",
+    "slugLoc": "teuripeuldaibeu",
+    "name": "트리플다이브",
+    "description": ""
+  },
+  {
+    "id": "866",
+    "slug": "mortal-spin",
+    "slugLoc": "kilreoseupin",
+    "name": "킬러스핀",
+    "description": "자신의 바인드, 씨뿌리기 상태와\n같은 편 필드의 압정뿌리기, 독압정,\n끈적끈적네트, 스텔스록 상태를 해제한다.\n상대를 독 상태로 만든다."
+  },
+  {
+    "id": "867",
+    "slug": "doodle",
+    "slugLoc": "beggyeogeurigi",
+    "name": "베껴그리기",
+    "description": ""
+  },
+  {
+    "id": "868",
+    "slug": "fillet-away",
+    "slugLoc": "jesalggagggi",
+    "name": "제살깎기",
+    "description": ""
+  },
+  {
+    "id": "869",
+    "slug": "kowtow-cleave",
+    "slugLoc": "dogagcam",
+    "name": "도각참",
+    "description": "상대에게 반드시 명중한다."
+  },
+  {
+    "id": "870",
+    "slug": "flower-trick",
+    "slugLoc": "teurigpeulraweo",
+    "name": "트릭플라워",
+    "description": "상대에게 반드시 명중한다.\n반드시 급소에 맞는다."
+  },
+  {
+    "id": "871",
+    "slug": "torch-song",
+    "slugLoc": "peulreeosong",
+    "name": "플레어송",
+    "description": "자신의 특수공격을 1단계 올린다."
+  },
+  {
+    "id": "872",
+    "slug": "aqua-step",
+    "slugLoc": "akuaseuteb",
+    "name": "아쿠아스텝",
+    "description": "자신의 스피드를 1단계 올린다."
+  },
+  {
+    "id": "873",
+    "slug": "raging-bull",
+    "slugLoc": "reijingbul",
+    "name": "레이징불",
+    "description": "자신의 폼에 따라 기술의 타입이 바뀐다.\n상대 필드의 리플렉터, 빛의장막,\n오로라베일 상태를 해제하고 공격한다."
+  },
+  {
+    "id": "874",
+    "slug": "make-it-rain",
+    "slugLoc": "goldeureosi",
+    "name": "골드러시",
+    "description": ""
+  },
+  {
+    "id": "875",
+    "slug": "psyblade",
+    "slugLoc": "saikobeulreideu",
+    "name": "사이코블레이드",
+    "description": ""
+  },
+  {
+    "id": "876",
+    "slug": "hydro-steam",
+    "slugLoc": "haideuroseutim",
+    "name": "하이드로스팀",
+    "description": ""
+  },
+  {
+    "id": "877",
+    "slug": "ruination",
+    "slugLoc": "kataseuteuropi",
+    "name": "카타스트로피",
+    "description": ""
+  },
+  {
+    "id": "878",
+    "slug": "collision-course",
+    "slugLoc": "aegselbeureikeu",
+    "name": "액셀브레이크",
+    "description": ""
+  },
+  {
+    "id": "879",
+    "slug": "electro-drift",
+    "slugLoc": "raiteuningdeuraibeu",
+    "name": "라이트닝드라이브",
+    "description": ""
+  },
+  {
+    "id": "880",
+    "slug": "shed-tail",
+    "slugLoc": "ggorijareugi",
+    "name": "꼬리자르기",
+    "description": "자신의 최대 HP의 1/2만큼 HP를 소비하여\n대타를 내보낸다.\n이후 다른 지닌 포켓몬과 교체한다.\n대타는 자신을 대신해 기술을 받는다.\n최대 HP의 1/4의 데미지를 입으면 사라진다."
+  },
+  {
+    "id": "881",
+    "slug": "chilly-reception",
+    "slugLoc": "sseolreonggaegeu",
+    "name": "썰렁개그",
+    "description": "5턴 동안 눈 상태로 만든다.\n다른 지닌 포켓몬과 교체한다."
+  },
+  {
+    "id": "882",
+    "slug": "tidy-up",
+    "slugLoc": "jeongrijeongdon",
+    "name": "정리정돈",
+    "description": "전체 필드의 끈적끈적네트, 스텔스록,\n대타출동, 압정뿌리기, 독압정 상태를 해제한다.\n자신의 공격, 스피드를 1단계 올린다."
+  },
+  {
+    "id": "883",
+    "slug": "snowscape",
+    "slugLoc": "seolgyeong",
+    "name": "설경",
+    "description": "5턴 동안 눈 상태로 만든다."
+  },
+  {
+    "id": "884",
+    "slug": "pounce",
+    "slugLoc": "dalryeodeulgi",
+    "name": "달려들기",
+    "description": "상대의 스피드를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "885",
+    "slug": "trailblaze",
+    "slugLoc": "gaeceoghagi",
+    "name": "개척하기",
+    "description": "자신의 스피드를 1단계 올린다."
+  },
+  {
+    "id": "886",
+    "slug": "chilling-water",
+    "slugLoc": "canmulggieonjgi",
+    "name": "찬물끼얹기",
+    "description": "상대의 공격을 1단계 떨어뜨린다."
+  },
+  {
+    "id": "887",
+    "slug": "hyper-drill",
+    "slugLoc": "haipeodeuril",
+    "name": "하이퍼드릴",
+    "description": ""
+  },
+  {
+    "id": "888",
+    "slug": "twin-beam",
+    "slugLoc": "teuwinbim",
+    "name": "트윈빔",
+    "description": "2회 연속으로 공격한다."
+  },
+  {
+    "id": "889",
+    "slug": "rage-fist",
+    "slugLoc": "bunnoyijumeog",
+    "name": "분노의주먹",
+    "description": ""
+  },
+  {
+    "id": "890",
+    "slug": "armor-cannon",
+    "slugLoc": "ameokaenon",
+    "name": "아머캐논",
+    "description": "자신의 방어, 특수방어를 1단계 떨어뜨린다."
+  },
+  {
+    "id": "891",
+    "slug": "bitter-blade",
+    "slugLoc": "weonnyeomyikal",
+    "name": "원념의칼",
+    "description": "상대에게 준 데미지의 1/2만큼\n자신의 HP를 회복한다."
+  },
+  {
+    "id": "892",
+    "slug": "double-shock",
+    "slugLoc": "jeongwangssanggyeog",
+    "name": "전광쌍격",
+    "description": "자신의 전기타입이 없어진다.\n자신이 전기타입이 아닌 경우 실패한다."
+  },
+  {
+    "id": "893",
+    "slug": "gigaton-hammer",
+    "slugLoc": "geodaehaemeo",
+    "name": "거대해머",
+    "description": "이 기술은 2회 연속으로 사용할 수 없다."
+  },
+  {
+    "id": "894",
+    "slug": "comeuppance",
+    "slugLoc": "anggapeum",
+    "name": "앙갚음",
+    "description": "사용한 턴에 상대의 기술로 입은 데미지를\n1.5배로 돌려준다."
+  },
+  {
+    "id": "895",
+    "slug": "aqua-cutter",
+    "slugLoc": "akuakeoteo",
+    "name": "아쿠아커터",
+    "description": "급소업+1로 공격한다."
+  },
+  {
+    "id": "896",
+    "slug": "blazing-torque",
+    "slugLoc": "beonaegsel",
+    "name": "번액셀",
+    "description": ""
+  },
+  {
+    "id": "897",
+    "slug": "wicked-torque",
+    "slugLoc": "dakeuaegsel",
+    "name": "다크액셀",
+    "description": ""
+  },
+  {
+    "id": "898",
+    "slug": "noxious-torque",
+    "slugLoc": "poijeunaegsel",
+    "name": "포이즌액셀",
+    "description": ""
+  },
+  {
+    "id": "899",
+    "slug": "combat-torque",
+    "slugLoc": "paiteuaegsel",
+    "name": "파이트액셀",
+    "description": ""
+  },
+  {
+    "id": "900",
+    "slug": "magical-torque",
+    "slugLoc": "maejikeolaegsel",
+    "name": "매지컬액셀",
+    "description": ""
+  },
+  {
+    "id": "901",
+    "slug": "blood-moon",
+    "slugLoc": "beulreodeumun",
+    "name": "블러드문",
+    "description": ""
+  },
+  {
+    "id": "902",
+    "slug": "matcha-gotcha",
+    "slugLoc": "hwijeoghwijeogpo",
+    "name": "휘적휘적포",
+    "description": "상대에게 준 데미지의 1/2만큼\n자신의 HP를 회복한다.\n20% 확률로 상대를 화상 상태로 만든다."
+  },
+  {
+    "id": "903",
+    "slug": "syrup-bomb",
+    "slugLoc": "sireobbom",
+    "name": "시럽봄",
+    "description": "3턴 동안\n상대를 물엿범벅 상태로 만든다."
+  },
+  {
+    "id": "904",
+    "slug": "ivy-cudgel",
+    "slugLoc": "deonggulbangmangi",
+    "name": "덩굴방망이",
+    "description": ""
+  },
+  {
+    "id": "905",
+    "slug": "electro-shot",
+    "slugLoc": "ilregteurobim",
+    "name": "일렉트로빔",
+    "description": "사용한 턴에 차지 상태가 되어 다음 턴에 공격한다.\n비 상태인 경우 차지 상태를 생략하고\n바로 공격할 수 있다.\n사용한 턴에 자신의 특수공격을 1단계 올린다."
+  },
+  {
+    "id": "906",
+    "slug": "tera-starstorm",
+    "slugLoc": "terakeulreoseuteo",
+    "name": "테라클러스터",
+    "description": ""
+  },
+  {
+    "id": "907",
+    "slug": "fickle-beam",
+    "slugLoc": "byeondeogreijeo",
+    "name": "변덕레이저",
+    "description": "30% 확률로 위력이 2배가 된다."
+  },
+  {
+    "id": "908",
+    "slug": "burning-bulwark",
+    "slugLoc": "hwayeomyisuho",
+    "name": "화염의수호",
+    "description": ""
+  },
+  {
+    "id": "909",
+    "slug": "thunderclap",
+    "slugLoc": "jilpungsinroe",
+    "name": "질풍신뢰",
+    "description": ""
+  },
+  {
+    "id": "910",
+    "slug": "mighty-cleave",
+    "slugLoc": "paweopuleji",
+    "name": "파워풀에지",
+    "description": ""
+  },
+  {
+    "id": "911",
+    "slug": "tachyon-cutter",
+    "slugLoc": "takionkeoteo",
+    "name": "타키온커터",
+    "description": ""
+  },
+  {
+    "id": "912",
+    "slug": "hard-press",
+    "slugLoc": "hadeupeureseu",
+    "name": "하드프레스",
+    "description": "상대의 남은 HP가 많을수록 위력이 올라간다.\n(위력은 1~100)"
+  },
+  {
+    "id": "913",
+    "slug": "dragon-cheer",
+    "slugLoc": "deuraegonyel",
+    "name": "드래곤옐",
+    "description": "같은 편을 급소업 상태로 만든다.\n(드래곤타입은 +2, 그 외 타입은 +1)"
+  },
+  {
+    "id": "914",
+    "slug": "alluring-voice",
+    "slugLoc": "maehogyiboiseu",
+    "name": "매혹의보이스",
+    "description": "사용한 턴 동안\n상대의 능력이 올라간 경우\n상대를 혼란 상태로 만든다."
+  },
+  {
+    "id": "915",
+    "slug": "temper-flare",
+    "slugLoc": "yeolbulnaegi",
+    "name": "열불내기",
+    "description": "직전 턴에 자신이 행동하지 못했거나\n기술이 빗나가거나 실패한 경우\n위력이 2배가 된다."
+  },
+  {
+    "id": "916",
+    "slug": "supercell-slam",
+    "slugLoc": "sseondeodaibeu",
+    "name": "썬더다이브",
+    "description": "빗나가거나 실패하면 자신의 최대 HP의\n1/2만큼 데미지를 입는다.\n작아지기 상태인 상대에게는\n위력이 2배가 되며 반드시 명중한다."
+  },
+  {
+    "id": "917",
+    "slug": "psychic-noise",
+    "slugLoc": "saikonoijeu",
+    "name": "사이코노이즈",
+    "description": "2턴 동안\n상대를 회복봉인 상태로 만든다."
+  },
+  {
+    "id": "918",
+    "slug": "upper-hand",
+    "slugLoc": "giseonjeab",
+    "name": "기선제압",
+    "description": "상대가 선제 기술을 사용하지 않은 경우 실패한다.\n상대를 풀죽게 한다."
+  },
+  {
+    "id": "919",
+    "slug": "malignant-chain",
+    "slugLoc": "agdogsaseul",
+    "name": "악독사슬",
+    "description": ""
+  },
+  {
+    "id": "920",
+    "slug": "nihil-light",
+    "slugLoc": "nihilreijeo",
+    "name": "니힐레이저",
+    "description": ""
+  }
+]

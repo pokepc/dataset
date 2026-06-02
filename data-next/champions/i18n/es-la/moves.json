@@ -1,0 +1,5847 @@
+[
+  {
+    "id": "1",
+    "slug": "pound",
+    "slugLoc": "destructor",
+    "name": "Destructor",
+    "description": ""
+  },
+  {
+    "id": "2",
+    "slug": "karate-chop",
+    "slugLoc": "golpe-karate",
+    "name": "Golpe Karate",
+    "description": ""
+  },
+  {
+    "id": "3",
+    "slug": "double-slap",
+    "slugLoc": "doble-bofeton",
+    "name": "Doble Bofetón",
+    "description": ""
+  },
+  {
+    "id": "4",
+    "slug": "comet-punch",
+    "slugLoc": "puno-cometa",
+    "name": "Puño Cometa",
+    "description": ""
+  },
+  {
+    "id": "5",
+    "slug": "mega-punch",
+    "slugLoc": "megapuno",
+    "name": "Megapuño",
+    "description": ""
+  },
+  {
+    "id": "6",
+    "slug": "pay-day",
+    "slugLoc": "dia-de-pago",
+    "name": "Día de Pago",
+    "description": ""
+  },
+  {
+    "id": "7",
+    "slug": "fire-punch",
+    "slugLoc": "puno-fuego",
+    "name": "Puño Fuego",
+    "description": "Tiene una probabilidad del 10% de quemar al objetivo."
+  },
+  {
+    "id": "8",
+    "slug": "ice-punch",
+    "slugLoc": "puno-hielo",
+    "name": "Puño Hielo",
+    "description": "Tiene una probabilidad del 10% de congelar al objetivo."
+  },
+  {
+    "id": "9",
+    "slug": "thunder-punch",
+    "slugLoc": "puno-trueno",
+    "name": "Puño Trueno",
+    "description": "Tiene una probabilidad del 10% de paralizar al objetivo."
+  },
+  {
+    "id": "10",
+    "slug": "scratch",
+    "slugLoc": "aranazo",
+    "name": "Arañazo",
+    "description": ""
+  },
+  {
+    "id": "11",
+    "slug": "vise-grip",
+    "slugLoc": "fuerza-de-garra",
+    "name": "Fuerza de Garra",
+    "description": ""
+  },
+  {
+    "id": "12",
+    "slug": "guillotine",
+    "slugLoc": "guillotina",
+    "name": "Guillotina",
+    "description": "Debilita al objetivo. Tiene una precisión fija del 30%."
+  },
+  {
+    "id": "13",
+    "slug": "razor-wind",
+    "slugLoc": "viento-cortante",
+    "name": "Viento Cortante",
+    "description": ""
+  },
+  {
+    "id": "14",
+    "slug": "swords-dance",
+    "slugLoc": "danza-de-espadas",
+    "name": "Danza de Espadas",
+    "description": "Aumenta dos niveles el Ataque del usuario."
+  },
+  {
+    "id": "15",
+    "slug": "cut",
+    "slugLoc": "corte",
+    "name": "Corte",
+    "description": ""
+  },
+  {
+    "id": "16",
+    "slug": "gust",
+    "slugLoc": "rafaga-de-aire",
+    "name": "Ráfaga de Aire",
+    "description": ""
+  },
+  {
+    "id": "17",
+    "slug": "wing-attack",
+    "slugLoc": "ataque-de-ala",
+    "name": "Ataque de Ala",
+    "description": ""
+  },
+  {
+    "id": "18",
+    "slug": "whirlwind",
+    "slugLoc": "torbellino",
+    "name": "Torbellino",
+    "description": "Obliga al objetivo a ser cambiado por otro Pokémon de su\nequipo al azar si hay alguno que pueda sustituirlo."
+  },
+  {
+    "id": "19",
+    "slug": "fly",
+    "slugLoc": "vuelo",
+    "name": "Vuelo",
+    "description": "El usuario adquiere el estado A gran altitud en el turno en el\nque usa este movimiento y ataca en el siguiente."
+  },
+  {
+    "id": "20",
+    "slug": "bind",
+    "slugLoc": "atadura",
+    "name": "Atadura",
+    "description": "Provoca el estado Apresado en el objetivo."
+  },
+  {
+    "id": "21",
+    "slug": "slam",
+    "slugLoc": "golpazo",
+    "name": "Golpazo",
+    "description": ""
+  },
+  {
+    "id": "22",
+    "slug": "vine-whip",
+    "slugLoc": "latigo-cepa",
+    "name": "Látigo Cepa",
+    "description": ""
+  },
+  {
+    "id": "23",
+    "slug": "stomp",
+    "slugLoc": "pisoton",
+    "name": "Pisotón",
+    "description": ""
+  },
+  {
+    "id": "24",
+    "slug": "double-kick",
+    "slugLoc": "doble-patada",
+    "name": "Doble Patada",
+    "description": ""
+  },
+  {
+    "id": "25",
+    "slug": "mega-kick",
+    "slugLoc": "megapatada",
+    "name": "Megapatada",
+    "description": ""
+  },
+  {
+    "id": "26",
+    "slug": "jump-kick",
+    "slugLoc": "patada-salto",
+    "name": "Patada Salto",
+    "description": ""
+  },
+  {
+    "id": "27",
+    "slug": "rolling-kick",
+    "slugLoc": "patada-giro",
+    "name": "Patada Giro",
+    "description": ""
+  },
+  {
+    "id": "28",
+    "slug": "sand-attack",
+    "slugLoc": "ataque-arena",
+    "name": "Ataque Arena",
+    "description": ""
+  },
+  {
+    "id": "29",
+    "slug": "headbutt",
+    "slugLoc": "golpe-cabeza",
+    "name": "Golpe Cabeza",
+    "description": ""
+  },
+  {
+    "id": "30",
+    "slug": "horn-attack",
+    "slugLoc": "ataque-cuerno",
+    "name": "Ataque Cuerno",
+    "description": ""
+  },
+  {
+    "id": "31",
+    "slug": "fury-attack",
+    "slugLoc": "ataque-furia",
+    "name": "Ataque Furia",
+    "description": ""
+  },
+  {
+    "id": "32",
+    "slug": "horn-drill",
+    "slugLoc": "cuerno-taladro",
+    "name": "Cuerno Taladro",
+    "description": "Debilita al objetivo. Tiene una precisión fija del 30%."
+  },
+  {
+    "id": "33",
+    "slug": "tackle",
+    "slugLoc": "tacleada",
+    "name": "Tacleada",
+    "description": ""
+  },
+  {
+    "id": "34",
+    "slug": "body-slam",
+    "slugLoc": "golpe-de-cuerpo",
+    "name": "Golpe de Cuerpo",
+    "description": "Tiene una probabilidad del 30% de paralizar al objetivo.\nSu potencia se duplica y nunca falla contra objetivos con\nel estado Reducido."
+  },
+  {
+    "id": "35",
+    "slug": "wrap",
+    "slugLoc": "constriccion",
+    "name": "Constricción",
+    "description": "Provoca el estado Apresado en el objetivo."
+  },
+  {
+    "id": "36",
+    "slug": "take-down",
+    "slugLoc": "derribo",
+    "name": "Derribo",
+    "description": ""
+  },
+  {
+    "id": "37",
+    "slug": "thrash",
+    "slugLoc": "golpiza",
+    "name": "Golpiza",
+    "description": "Provoca el estado Enojado en el usuario."
+  },
+  {
+    "id": "38",
+    "slug": "double-edge",
+    "slugLoc": "doble-filo",
+    "name": "Doble Filo",
+    "description": "El usuario recibe un 33.3% del daño que causa."
+  },
+  {
+    "id": "39",
+    "slug": "tail-whip",
+    "slugLoc": "latigo-de-cola",
+    "name": "Látigo de Cola",
+    "description": ""
+  },
+  {
+    "id": "40",
+    "slug": "poison-sting",
+    "slugLoc": "piquete-venenoso",
+    "name": "Piquete Venenoso",
+    "description": ""
+  },
+  {
+    "id": "41",
+    "slug": "twineedle",
+    "slugLoc": "doble-aguijon",
+    "name": "Doble Aguijón",
+    "description": ""
+  },
+  {
+    "id": "42",
+    "slug": "pin-missile",
+    "slugLoc": "misil-aguja",
+    "name": "Misil Aguja",
+    "description": "Ataca de dos a cinco veces seguidas."
+  },
+  {
+    "id": "43",
+    "slug": "leer",
+    "slugLoc": "malicioso",
+    "name": "Malicioso",
+    "description": ""
+  },
+  {
+    "id": "44",
+    "slug": "bite",
+    "slugLoc": "mordida",
+    "name": "Mordida",
+    "description": "Tiene una probabilidad del 30% de atemorizar al objetivo."
+  },
+  {
+    "id": "45",
+    "slug": "growl",
+    "slugLoc": "grunido",
+    "name": "Gruñido",
+    "description": ""
+  },
+  {
+    "id": "46",
+    "slug": "roar",
+    "slugLoc": "rugido",
+    "name": "Rugido",
+    "description": "Obliga al objetivo a ser cambiado por otro Pokémon de su\nequipo al azar si hay alguno que pueda sustituirlo."
+  },
+  {
+    "id": "47",
+    "slug": "sing",
+    "slugLoc": "canto",
+    "name": "Canto",
+    "description": "Duerme al objetivo."
+  },
+  {
+    "id": "48",
+    "slug": "supersonic",
+    "slugLoc": "supersonico",
+    "name": "Supersónico",
+    "description": ""
+  },
+  {
+    "id": "49",
+    "slug": "sonic-boom",
+    "slugLoc": "explosion-sonica",
+    "name": "Explosión Sónica",
+    "description": ""
+  },
+  {
+    "id": "50",
+    "slug": "disable",
+    "slugLoc": "anulacion",
+    "name": "Anulación",
+    "description": "Provoca el estado Movimiento anulado en el objetivo durante\ncuatro turnos."
+  },
+  {
+    "id": "51",
+    "slug": "acid",
+    "slugLoc": "acido",
+    "name": "Ácido",
+    "description": ""
+  },
+  {
+    "id": "52",
+    "slug": "ember",
+    "slugLoc": "brasas",
+    "name": "Brasas",
+    "description": ""
+  },
+  {
+    "id": "53",
+    "slug": "flamethrower",
+    "slugLoc": "lanzallamas",
+    "name": "Lanzallamas",
+    "description": "Tiene una probabilidad del 10% de quemar al objetivo."
+  },
+  {
+    "id": "54",
+    "slug": "mist",
+    "slugLoc": "neblina",
+    "name": "Neblina",
+    "description": ""
+  },
+  {
+    "id": "55",
+    "slug": "water-gun",
+    "slugLoc": "chorro-de-agua",
+    "name": "Chorro de Agua",
+    "description": ""
+  },
+  {
+    "id": "56",
+    "slug": "hydro-pump",
+    "slugLoc": "hidrobomba",
+    "name": "Hidrobomba",
+    "description": ""
+  },
+  {
+    "id": "57",
+    "slug": "surf",
+    "slugLoc": "surf",
+    "name": "Surf",
+    "description": "Su potencia se duplica contra objetivos con el\nestado Sumergido."
+  },
+  {
+    "id": "58",
+    "slug": "ice-beam",
+    "slugLoc": "rayo-de-hielo",
+    "name": "Rayo de Hielo",
+    "description": "Tiene una probabilidad del 10% de congelar al objetivo."
+  },
+  {
+    "id": "59",
+    "slug": "blizzard",
+    "slugLoc": "ventisca",
+    "name": "Ventisca",
+    "description": "Tiene una probabilidad del 10% de congelar al objetivo.\nNunca falla cuando nieva."
+  },
+  {
+    "id": "60",
+    "slug": "psybeam",
+    "slugLoc": "psicorrayo",
+    "name": "Psicorrayo",
+    "description": ""
+  },
+  {
+    "id": "61",
+    "slug": "bubble-beam",
+    "slugLoc": "rayo-burbuja",
+    "name": "Rayo Burbuja",
+    "description": ""
+  },
+  {
+    "id": "62",
+    "slug": "aurora-beam",
+    "slugLoc": "rayo-aurora",
+    "name": "Rayo Aurora",
+    "description": ""
+  },
+  {
+    "id": "63",
+    "slug": "hyper-beam",
+    "slugLoc": "hiperrayo",
+    "name": "Hiperrayo",
+    "description": "El usuario adquiere el estado Descansando en el\nsiguiente turno."
+  },
+  {
+    "id": "64",
+    "slug": "peck",
+    "slugLoc": "picotazo",
+    "name": "Picotazo",
+    "description": ""
+  },
+  {
+    "id": "65",
+    "slug": "drill-peck",
+    "slugLoc": "pico-taladro",
+    "name": "Pico Taladro",
+    "description": ""
+  },
+  {
+    "id": "66",
+    "slug": "submission",
+    "slugLoc": "sumision",
+    "name": "Sumisión",
+    "description": ""
+  },
+  {
+    "id": "67",
+    "slug": "low-kick",
+    "slugLoc": "patada-baja",
+    "name": "Patada Baja",
+    "description": "Tiene mayor potencia entre más pesado sea el objetivo,\ncon un rango entre 20 y 120."
+  },
+  {
+    "id": "68",
+    "slug": "counter",
+    "slugLoc": "contraataque",
+    "name": "Contraataque",
+    "description": "Si el usuario recibió daño de un ataque físico en ese turno,\nle devuelve el doble del daño al atacante."
+  },
+  {
+    "id": "69",
+    "slug": "seismic-toss",
+    "slugLoc": "sismico",
+    "name": "Sísmico",
+    "description": "El objetivo pierde 50 PS."
+  },
+  {
+    "id": "70",
+    "slug": "strength",
+    "slugLoc": "fuerza",
+    "name": "Fuerza",
+    "description": ""
+  },
+  {
+    "id": "71",
+    "slug": "absorb",
+    "slugLoc": "absorcion",
+    "name": "Absorción",
+    "description": ""
+  },
+  {
+    "id": "72",
+    "slug": "mega-drain",
+    "slugLoc": "megadrenado",
+    "name": "Megadrenado",
+    "description": ""
+  },
+  {
+    "id": "73",
+    "slug": "leech-seed",
+    "slugLoc": "drenadoras",
+    "name": "Drenadoras",
+    "description": "Provoca el estado Drenadoras en el objetivo."
+  },
+  {
+    "id": "74",
+    "slug": "growth",
+    "slugLoc": "crecimiento",
+    "name": "Crecimiento",
+    "description": "Aumenta un nivel el Ataque y el Ataque Especial del usuario,\no dos niveles cuando hace sol."
+  },
+  {
+    "id": "75",
+    "slug": "razor-leaf",
+    "slugLoc": "hojas-navaja",
+    "name": "Hojas Navaja",
+    "description": ""
+  },
+  {
+    "id": "76",
+    "slug": "solar-beam",
+    "slugLoc": "rayo-solar",
+    "name": "Rayo Solar",
+    "description": "El usuario adquiere el estado Cargando en el turno en el que\nusa este movimiento y ataca en el siguiente. Si hace sol,\nno adquiere este estado y ataca inmediatamente. Si hay otro\ntiempo atmosférico activo, la potencia del movimiento\nse reduce un 50%."
+  },
+  {
+    "id": "77",
+    "slug": "poison-powder",
+    "slugLoc": "polvo-venenoso",
+    "name": "Polvo Venenoso",
+    "description": "Envenena al objetivo."
+  },
+  {
+    "id": "78",
+    "slug": "stun-spore",
+    "slugLoc": "paralizador",
+    "name": "Paralizador",
+    "description": "Paraliza al objetivo."
+  },
+  {
+    "id": "79",
+    "slug": "sleep-powder",
+    "slugLoc": "somnifero",
+    "name": "Somnífero",
+    "description": "Duerme al objetivo."
+  },
+  {
+    "id": "80",
+    "slug": "petal-dance",
+    "slugLoc": "danza-de-petalos",
+    "name": "Danza de Pétalos",
+    "description": "Provoca el estado Enojado en el usuario."
+  },
+  {
+    "id": "81",
+    "slug": "string-shot",
+    "slugLoc": "disparo-de-seda",
+    "name": "Disparo de Seda",
+    "description": "Reduce dos niveles la Velocidad del objetivo."
+  },
+  {
+    "id": "82",
+    "slug": "dragon-rage",
+    "slugLoc": "furia-dragon",
+    "name": "Furia Dragón",
+    "description": ""
+  },
+  {
+    "id": "83",
+    "slug": "fire-spin",
+    "slugLoc": "giro-fuego",
+    "name": "Giro Fuego",
+    "description": "Provoca el estado Apresado en el objetivo."
+  },
+  {
+    "id": "84",
+    "slug": "thunder-shock",
+    "slugLoc": "impactrueno",
+    "name": "Impactrueno",
+    "description": ""
+  },
+  {
+    "id": "85",
+    "slug": "thunderbolt",
+    "slugLoc": "atactrueno",
+    "name": "Atactrueno",
+    "description": "Tiene una probabilidad del 10% de paralizar al objetivo."
+  },
+  {
+    "id": "86",
+    "slug": "thunder-wave",
+    "slugLoc": "onda-trueno",
+    "name": "Onda Trueno",
+    "description": "Paraliza al objetivo."
+  },
+  {
+    "id": "87",
+    "slug": "thunder",
+    "slugLoc": "trueno",
+    "name": "Trueno",
+    "description": "Tiene una probabilidad del 30% de paralizar al objetivo.\nNunca falla cuando llueve. Puede golpear a objetivos con\nel estado A gran altitud."
+  },
+  {
+    "id": "88",
+    "slug": "rock-throw",
+    "slugLoc": "lanzarrocas",
+    "name": "Lanzarrocas",
+    "description": ""
+  },
+  {
+    "id": "89",
+    "slug": "earthquake",
+    "slugLoc": "terremoto",
+    "name": "Terremoto",
+    "description": "Su potencia se duplica contra objetivos con el estado\nEnterrado, pero se reduce un 50% cuando hay un campo\nde césped activo en el terreno de combate."
+  },
+  {
+    "id": "90",
+    "slug": "fissure",
+    "slugLoc": "fisura",
+    "name": "Fisura",
+    "description": "Debilita al objetivo. Tiene una precisión fija del 30%."
+  },
+  {
+    "id": "91",
+    "slug": "dig",
+    "slugLoc": "excavar",
+    "name": "Excavar",
+    "description": "El usuario adquiere el estado Enterrado en el turno en el que\nusa este movimiento y ataca en el siguiente."
+  },
+  {
+    "id": "92",
+    "slug": "toxic",
+    "slugLoc": "toxico",
+    "name": "Tóxico",
+    "description": "Envenena gravemente al objetivo. Nunca falla si el usuario es\nde tipo Veneno."
+  },
+  {
+    "id": "93",
+    "slug": "confusion",
+    "slugLoc": "confusion",
+    "name": "Confusión",
+    "description": ""
+  },
+  {
+    "id": "94",
+    "slug": "psychic",
+    "slugLoc": "fuerza-psiquica",
+    "name": "Fuerza Psíquica",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel\nla Defensa Especial del objetivo."
+  },
+  {
+    "id": "95",
+    "slug": "hypnosis",
+    "slugLoc": "hipnosis",
+    "name": "Hipnosis",
+    "description": "Duerme al objetivo."
+  },
+  {
+    "id": "96",
+    "slug": "meditate",
+    "slugLoc": "meditacion",
+    "name": "Meditación",
+    "description": ""
+  },
+  {
+    "id": "97",
+    "slug": "agility",
+    "slugLoc": "agilidad",
+    "name": "Agilidad",
+    "description": "Aumenta dos niveles la Velocidad del usuario."
+  },
+  {
+    "id": "98",
+    "slug": "quick-attack",
+    "slugLoc": "ataque-rapido",
+    "name": "Ataque Rápido",
+    "description": ""
+  },
+  {
+    "id": "99",
+    "slug": "rage",
+    "slugLoc": "furia",
+    "name": "Furia",
+    "description": ""
+  },
+  {
+    "id": "100",
+    "slug": "teleport",
+    "slugLoc": "teletransporte",
+    "name": "Teletransporte",
+    "description": ""
+  },
+  {
+    "id": "101",
+    "slug": "night-shade",
+    "slugLoc": "tinieblas",
+    "name": "Tinieblas",
+    "description": "El objetivo pierde 50 PS."
+  },
+  {
+    "id": "102",
+    "slug": "mimic",
+    "slugLoc": "mimica",
+    "name": "Mímica",
+    "description": ""
+  },
+  {
+    "id": "103",
+    "slug": "screech",
+    "slugLoc": "chillido",
+    "name": "Chillido",
+    "description": "Reduce dos niveles la Defensa del objetivo."
+  },
+  {
+    "id": "104",
+    "slug": "double-team",
+    "slugLoc": "doble-equipo",
+    "name": "Doble Equipo",
+    "description": "Aumenta un nivel la Evasión del usuario."
+  },
+  {
+    "id": "105",
+    "slug": "recover",
+    "slugLoc": "recuperacion",
+    "name": "Recuperación",
+    "description": "Restaura un 50% de los PS máximos del usuario."
+  },
+  {
+    "id": "106",
+    "slug": "harden",
+    "slugLoc": "fortaleza",
+    "name": "Fortaleza",
+    "description": ""
+  },
+  {
+    "id": "107",
+    "slug": "minimize",
+    "slugLoc": "reduccion",
+    "name": "Reducción",
+    "description": "Aumenta dos niveles la Evasión del usuario y le provoca\nel estado Reducido."
+  },
+  {
+    "id": "108",
+    "slug": "smokescreen",
+    "slugLoc": "pantalla-de-humo",
+    "name": "Pantalla de Humo",
+    "description": ""
+  },
+  {
+    "id": "109",
+    "slug": "confuse-ray",
+    "slugLoc": "rayo-de-confusion",
+    "name": "Rayo de Confusión",
+    "description": "Confunde al objetivo."
+  },
+  {
+    "id": "110",
+    "slug": "withdraw",
+    "slugLoc": "refugio",
+    "name": "Refugio",
+    "description": ""
+  },
+  {
+    "id": "111",
+    "slug": "defense-curl",
+    "slugLoc": "hacerse-bolita",
+    "name": "Hacerse Bolita",
+    "description": ""
+  },
+  {
+    "id": "112",
+    "slug": "barrier",
+    "slugLoc": "barrera",
+    "name": "Barrera",
+    "description": ""
+  },
+  {
+    "id": "113",
+    "slug": "light-screen",
+    "slugLoc": "pantalla-de-luz",
+    "name": "Pantalla de Luz",
+    "description": "Provoca el estado Pantalla de Luz en el lado del usuario durante\ncinco turnos."
+  },
+  {
+    "id": "114",
+    "slug": "haze",
+    "slugLoc": "niebla",
+    "name": "Niebla",
+    "description": "Elimina los cambios en las características de todos los Pokémon\nen combate."
+  },
+  {
+    "id": "115",
+    "slug": "reflect",
+    "slugLoc": "reflejo",
+    "name": "Reflejo",
+    "description": "Provoca el estado Reflejo en el lado del usuario durante\ncinco turnos."
+  },
+  {
+    "id": "116",
+    "slug": "focus-energy",
+    "slugLoc": "centrar-energia",
+    "name": "Centrar Energía",
+    "description": "El usuario adquiere el estado Más críticos +2."
+  },
+  {
+    "id": "117",
+    "slug": "bide",
+    "slugLoc": "venganza",
+    "name": "Venganza",
+    "description": ""
+  },
+  {
+    "id": "118",
+    "slug": "metronome",
+    "slugLoc": "metronomo",
+    "name": "Metrónomo",
+    "description": ""
+  },
+  {
+    "id": "119",
+    "slug": "mirror-move",
+    "slugLoc": "espejo",
+    "name": "Espejo",
+    "description": ""
+  },
+  {
+    "id": "120",
+    "slug": "self-destruct",
+    "slugLoc": "autodestruccion",
+    "name": "Autodestrucción",
+    "description": "El usuario se debilita luego de usar este movimiento."
+  },
+  {
+    "id": "121",
+    "slug": "egg-bomb",
+    "slugLoc": "bomba-huevo",
+    "name": "Bomba Huevo",
+    "description": ""
+  },
+  {
+    "id": "122",
+    "slug": "lick",
+    "slugLoc": "lenguetazo",
+    "name": "Lengüetazo",
+    "description": ""
+  },
+  {
+    "id": "123",
+    "slug": "smog",
+    "slugLoc": "humo",
+    "name": "Humo",
+    "description": ""
+  },
+  {
+    "id": "124",
+    "slug": "sludge",
+    "slugLoc": "residuos",
+    "name": "Residuos",
+    "description": ""
+  },
+  {
+    "id": "125",
+    "slug": "bone-club",
+    "slugLoc": "maza-de-hueso",
+    "name": "Maza de Hueso",
+    "description": ""
+  },
+  {
+    "id": "126",
+    "slug": "fire-blast",
+    "slugLoc": "llamarada",
+    "name": "Llamarada",
+    "description": "Tiene una probabilidad del 10% de quemar al objetivo."
+  },
+  {
+    "id": "127",
+    "slug": "waterfall",
+    "slugLoc": "cascada",
+    "name": "Cascada",
+    "description": "Tiene una probabilidad del 20% de atemorizar al objetivo."
+  },
+  {
+    "id": "128",
+    "slug": "clamp",
+    "slugLoc": "tenaza",
+    "name": "Tenaza",
+    "description": ""
+  },
+  {
+    "id": "129",
+    "slug": "swift",
+    "slugLoc": "meteoros",
+    "name": "Meteoros",
+    "description": ""
+  },
+  {
+    "id": "130",
+    "slug": "skull-bash",
+    "slugLoc": "cabezazo",
+    "name": "Cabezazo",
+    "description": ""
+  },
+  {
+    "id": "131",
+    "slug": "spike-cannon",
+    "slugLoc": "canon-de-puas",
+    "name": "Cañón de Púas",
+    "description": ""
+  },
+  {
+    "id": "132",
+    "slug": "constrict",
+    "slugLoc": "restriccion",
+    "name": "Restricción",
+    "description": ""
+  },
+  {
+    "id": "133",
+    "slug": "amnesia",
+    "slugLoc": "amnesia",
+    "name": "Amnesia",
+    "description": "Aumenta dos niveles la Defensa Especial del usuario."
+  },
+  {
+    "id": "134",
+    "slug": "kinesis",
+    "slugLoc": "kinetico",
+    "name": "Kinético",
+    "description": ""
+  },
+  {
+    "id": "135",
+    "slug": "soft-boiled",
+    "slugLoc": "ovocuracion",
+    "name": "Ovocuración",
+    "description": "Restaura un 50% de los PS máximos del usuario."
+  },
+  {
+    "id": "136",
+    "slug": "high-jump-kick",
+    "slugLoc": "patada-salto-alto",
+    "name": "Patada Salto Alto",
+    "description": "El usuario recibe daño equivalente al 50% de sus PS máximos\nsi falla."
+  },
+  {
+    "id": "137",
+    "slug": "glare",
+    "slugLoc": "fulmirada",
+    "name": "Fulmirada",
+    "description": "Paraliza al objetivo."
+  },
+  {
+    "id": "138",
+    "slug": "dream-eater",
+    "slugLoc": "comesuenos",
+    "name": "Comesueños",
+    "description": ""
+  },
+  {
+    "id": "139",
+    "slug": "poison-gas",
+    "slugLoc": "gas-venenoso",
+    "name": "Gas Venenoso",
+    "description": ""
+  },
+  {
+    "id": "140",
+    "slug": "barrage",
+    "slugLoc": "bombardeo",
+    "name": "Bombardeo",
+    "description": ""
+  },
+  {
+    "id": "141",
+    "slug": "leech-life",
+    "slugLoc": "chupavidas",
+    "name": "Chupavidas",
+    "description": "El usuario recupera una cantidad de PS equivalente al 50%\ndel daño que causa."
+  },
+  {
+    "id": "142",
+    "slug": "lovely-kiss",
+    "slugLoc": "beso-amoroso",
+    "name": "Beso Amoroso",
+    "description": ""
+  },
+  {
+    "id": "143",
+    "slug": "sky-attack",
+    "slugLoc": "ataque-celestial",
+    "name": "Ataque Celestial",
+    "description": "El usuario adquiere el estado Cargando en el turno en el\nque usa este movimiento y ataca en el siguiente. Tiene una\nprobabilidad del 30% de atemorizar al objetivo. Aumenta\nun nivel la probabilidad de lanzar golpes críticos del usuario\ndurante este ataque."
+  },
+  {
+    "id": "144",
+    "slug": "transform",
+    "slugLoc": "transformacion",
+    "name": "Transformación",
+    "description": "Transforma al usuario en el mismo Pokémon que el objetivo.\nCopia todos los valores de las características del objetivo a\nexcepción de los PS."
+  },
+  {
+    "id": "145",
+    "slug": "bubble",
+    "slugLoc": "burbuja",
+    "name": "Burbuja",
+    "description": ""
+  },
+  {
+    "id": "146",
+    "slug": "dizzy-punch",
+    "slugLoc": "puno-mareador",
+    "name": "Puño Mareador",
+    "description": ""
+  },
+  {
+    "id": "147",
+    "slug": "spore",
+    "slugLoc": "esporas",
+    "name": "Esporas",
+    "description": "Duerme al objetivo."
+  },
+  {
+    "id": "148",
+    "slug": "flash",
+    "slugLoc": "destello",
+    "name": "Destello",
+    "description": ""
+  },
+  {
+    "id": "149",
+    "slug": "psywave",
+    "slugLoc": "psicoonda",
+    "name": "Psicoonda",
+    "description": ""
+  },
+  {
+    "id": "150",
+    "slug": "splash",
+    "slugLoc": "salpicadura",
+    "name": "Salpicadura",
+    "description": ""
+  },
+  {
+    "id": "151",
+    "slug": "acid-armor",
+    "slugLoc": "armadura-acida",
+    "name": "Armadura Ácida",
+    "description": "Aumenta dos niveles la Defensa del usuario."
+  },
+  {
+    "id": "152",
+    "slug": "crabhammer",
+    "slugLoc": "martillazo",
+    "name": "Martillazo",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "153",
+    "slug": "explosion",
+    "slugLoc": "explosion",
+    "name": "Explosión",
+    "description": "El usuario se debilita luego de usar este movimiento."
+  },
+  {
+    "id": "154",
+    "slug": "fury-swipes",
+    "slugLoc": "garras-furiosas",
+    "name": "Garras Furiosas",
+    "description": ""
+  },
+  {
+    "id": "155",
+    "slug": "bonemerang",
+    "slugLoc": "huesomerang",
+    "name": "Huesomerang",
+    "description": ""
+  },
+  {
+    "id": "156",
+    "slug": "rest",
+    "slugLoc": "descanso",
+    "name": "Descanso",
+    "description": "Restaura todos los PS y elimina todos los problemas de\nestado del usuario, pero lo duerme durante dos turnos.\nFalla si el usuario tiene los PS al máximo."
+  },
+  {
+    "id": "157",
+    "slug": "rock-slide",
+    "slugLoc": "avalancha",
+    "name": "Avalancha",
+    "description": "Tiene una probabilidad del 30% de atemorizar al objetivo."
+  },
+  {
+    "id": "158",
+    "slug": "hyper-fang",
+    "slugLoc": "hipercolmillo",
+    "name": "Hipercolmillo",
+    "description": ""
+  },
+  {
+    "id": "159",
+    "slug": "sharpen",
+    "slugLoc": "afilar",
+    "name": "Afilar",
+    "description": ""
+  },
+  {
+    "id": "160",
+    "slug": "conversion",
+    "slugLoc": "conversion",
+    "name": "Conversión",
+    "description": ""
+  },
+  {
+    "id": "161",
+    "slug": "tri-attack",
+    "slugLoc": "triataque",
+    "name": "Triataque",
+    "description": "Tiene una probabilidad del 20% de paralizar, quemar\no congelar al objetivo."
+  },
+  {
+    "id": "162",
+    "slug": "super-fang",
+    "slugLoc": "supercolmillo",
+    "name": "Supercolmillo",
+    "description": "El objetivo pierde un 50% de sus PS restantes.\nSi solo le queda 1 PS, pierde 1 PS."
+  },
+  {
+    "id": "163",
+    "slug": "slash",
+    "slugLoc": "cuchillada",
+    "name": "Cuchillada",
+    "description": ""
+  },
+  {
+    "id": "164",
+    "slug": "substitute",
+    "slugLoc": "sustituto",
+    "name": "Sustituto",
+    "description": "El usuario sacrifica un 25% de sus PS máximos para crear un\nsustituto. El sustituto recibirá los movimientos dirigidos al\nusuario en su lugar y desaparecerá cuando haya recibido una\ncantidad de daño equivalente a un 25% de los PS máximos\ndel usuario."
+  },
+  {
+    "id": "165",
+    "slug": "struggle",
+    "slugLoc": "forcejeo",
+    "name": "Forcejeo",
+    "description": ""
+  },
+  {
+    "id": "166",
+    "slug": "sketch",
+    "slugLoc": "boceto",
+    "name": "Boceto",
+    "description": ""
+  },
+  {
+    "id": "167",
+    "slug": "triple-kick",
+    "slugLoc": "triple-patada",
+    "name": "Triple Patada",
+    "description": ""
+  },
+  {
+    "id": "168",
+    "slug": "thief",
+    "slugLoc": "ladron",
+    "name": "Ladrón",
+    "description": "Si el usuario no lleva un objeto, roba el del objetivo."
+  },
+  {
+    "id": "169",
+    "slug": "spider-web",
+    "slugLoc": "telarana",
+    "name": "Telaraña",
+    "description": ""
+  },
+  {
+    "id": "170",
+    "slug": "mind-reader",
+    "slugLoc": "telepata",
+    "name": "Telépata",
+    "description": ""
+  },
+  {
+    "id": "171",
+    "slug": "nightmare",
+    "slugLoc": "pesadilla",
+    "name": "Pesadilla",
+    "description": ""
+  },
+  {
+    "id": "172",
+    "slug": "flame-wheel",
+    "slugLoc": "rueda-ignea",
+    "name": "Rueda Ígnea",
+    "description": ""
+  },
+  {
+    "id": "173",
+    "slug": "snore",
+    "slugLoc": "ronquido",
+    "name": "Ronquido",
+    "description": "Solo se puede usar si el usuario está dormido. Tiene una\nprobabilidad del 30% de atemorizar al objetivo."
+  },
+  {
+    "id": "174",
+    "slug": "curse",
+    "slugLoc": "maldicion",
+    "name": "Maldición",
+    "description": "Sacrifica un 50% de los PS máximos del usuario para provocar\nel estado Maldición en el objetivo."
+  },
+  {
+    "id": "175",
+    "slug": "flail",
+    "slugLoc": "azote",
+    "name": "Azote",
+    "description": "Tiene mayor potencia entre menos PS tenga el usuario,\ncon un rango entre 20 y 200."
+  },
+  {
+    "id": "176",
+    "slug": "conversion-2",
+    "slugLoc": "conversion-2",
+    "name": "Conversión 2",
+    "description": ""
+  },
+  {
+    "id": "177",
+    "slug": "aeroblast",
+    "slugLoc": "aerochorro",
+    "name": "Aerochorro",
+    "description": ""
+  },
+  {
+    "id": "178",
+    "slug": "cotton-spore",
+    "slugLoc": "esporagodon",
+    "name": "Esporagodón",
+    "description": "Reduce dos niveles la Velocidad del objetivo."
+  },
+  {
+    "id": "179",
+    "slug": "reversal",
+    "slugLoc": "inversion",
+    "name": "Inversión",
+    "description": "Tiene mayor potencia entre menos PS tenga el usuario,\ncon un rango entre 20 y 200."
+  },
+  {
+    "id": "180",
+    "slug": "spite",
+    "slugLoc": "rencor",
+    "name": "Rencor",
+    "description": "Reduce 4 PP del último movimiento que usó el objetivo."
+  },
+  {
+    "id": "181",
+    "slug": "powder-snow",
+    "slugLoc": "polvo-de-nieve",
+    "name": "Polvo de Nieve",
+    "description": ""
+  },
+  {
+    "id": "182",
+    "slug": "protect",
+    "slugLoc": "proteccion",
+    "name": "Protección",
+    "description": "Protege al usuario de los movimientos de los demás\nPokémon durante ese turno. Si se usa de forma consecutiva,\nsu probabilidad de éxito se reduce a 33.3% con respecto a la\nprobabilidad anterior."
+  },
+  {
+    "id": "183",
+    "slug": "mach-punch",
+    "slugLoc": "superpuno",
+    "name": "Superpuño",
+    "description": ""
+  },
+  {
+    "id": "184",
+    "slug": "scary-face",
+    "slugLoc": "cara-aterradora",
+    "name": "Cara Aterradora",
+    "description": "Reduce dos niveles la Velocidad del objetivo."
+  },
+  {
+    "id": "185",
+    "slug": "feint-attack",
+    "slugLoc": "ataque-finta",
+    "name": "Ataque Finta",
+    "description": ""
+  },
+  {
+    "id": "186",
+    "slug": "sweet-kiss",
+    "slugLoc": "beso-dulce",
+    "name": "Beso Dulce",
+    "description": "Confunde al objetivo."
+  },
+  {
+    "id": "187",
+    "slug": "belly-drum",
+    "slugLoc": "tambor",
+    "name": "Tambor",
+    "description": "Sacrifica un 50% de los PS máximos del usuario para aumentar\nhasta el sexto nivel su Ataque. Falla si el usuario no tiene\nsuficientes PS."
+  },
+  {
+    "id": "188",
+    "slug": "sludge-bomb",
+    "slugLoc": "bomba-lodo",
+    "name": "Bomba Lodo",
+    "description": "Tiene una probabilidad del 30% de envenenar al objetivo."
+  },
+  {
+    "id": "189",
+    "slug": "mud-slap",
+    "slugLoc": "bofeton-lodo",
+    "name": "Bofetón Lodo",
+    "description": "Reduce un nivel la Precisión del objetivo."
+  },
+  {
+    "id": "190",
+    "slug": "octazooka",
+    "slugLoc": "octazuca",
+    "name": "Octazuca",
+    "description": ""
+  },
+  {
+    "id": "191",
+    "slug": "spikes",
+    "slugLoc": "puas",
+    "name": "Púas",
+    "description": "Provoca el estado Púas en el lado rival."
+  },
+  {
+    "id": "192",
+    "slug": "zap-cannon",
+    "slugLoc": "electrocanon",
+    "name": "Electrocañón",
+    "description": "Paraliza al objetivo."
+  },
+  {
+    "id": "193",
+    "slug": "foresight",
+    "slugLoc": "vision",
+    "name": "Visión",
+    "description": ""
+  },
+  {
+    "id": "194",
+    "slug": "destiny-bond",
+    "slugLoc": "lazo-del-destino",
+    "name": "Lazo del Destino",
+    "description": "Provoca el estado Lazo del Destino en el usuario.\nFalla si se usa de forma consecutiva."
+  },
+  {
+    "id": "195",
+    "slug": "perish-song",
+    "slugLoc": "canto-mortal",
+    "name": "Canto Mortal",
+    "description": "Provoca el estado Cuenta regresiva en todos los Pokémon\nen combate."
+  },
+  {
+    "id": "196",
+    "slug": "icy-wind",
+    "slugLoc": "viento-helado",
+    "name": "Viento Helado",
+    "description": "Reduce un nivel la Velocidad del objetivo."
+  },
+  {
+    "id": "197",
+    "slug": "detect",
+    "slugLoc": "deteccion",
+    "name": "Detección",
+    "description": "Protege al usuario de los movimientos de los demás\nPokémon durante ese turno. Si se usa de forma consecutiva,\nsu probabilidad de éxito se reduce a 33.3% con respecto a la\nprobabilidad anterior."
+  },
+  {
+    "id": "198",
+    "slug": "bone-rush",
+    "slugLoc": "hueso-veloz",
+    "name": "Hueso Veloz",
+    "description": "Ataca de dos a cinco veces seguidas."
+  },
+  {
+    "id": "199",
+    "slug": "lock-on",
+    "slugLoc": "fijar-blanco",
+    "name": "Fijar Blanco",
+    "description": "Provoca el estado Blanco fijado en el usuario."
+  },
+  {
+    "id": "200",
+    "slug": "outrage",
+    "slugLoc": "enfado",
+    "name": "Enfado",
+    "description": "Provoca el estado Enojado en el usuario."
+  },
+  {
+    "id": "201",
+    "slug": "sandstorm",
+    "slugLoc": "tormenta-de-arena",
+    "name": "Tormenta de Arena",
+    "description": "Provoca una tormenta de arena que dura cinco turnos."
+  },
+  {
+    "id": "202",
+    "slug": "giga-drain",
+    "slugLoc": "gigadrenado",
+    "name": "Gigadrenado",
+    "description": "El usuario recupera una cantidad de PS equivalente al 50%\ndel daño que causa."
+  },
+  {
+    "id": "203",
+    "slug": "endure",
+    "slugLoc": "aguante",
+    "name": "Aguante",
+    "description": "El usuario aguanta con 1 PS un movimiento que lo debilitaría\nen ese turno. Si se usa de forma consecutiva, su probabilidad\nde éxito se reduce a 33.3% con respecto a la\nprobabilidad anterior."
+  },
+  {
+    "id": "204",
+    "slug": "charm",
+    "slugLoc": "encanto",
+    "name": "Encanto",
+    "description": "Reduce dos niveles el Ataque del objetivo."
+  },
+  {
+    "id": "205",
+    "slug": "rollout",
+    "slugLoc": "rodada",
+    "name": "Rodada",
+    "description": ""
+  },
+  {
+    "id": "206",
+    "slug": "false-swipe",
+    "slugLoc": "falsa-bofetada",
+    "name": "Falsa Bofetada",
+    "description": ""
+  },
+  {
+    "id": "207",
+    "slug": "swagger",
+    "slugLoc": "fanfarronear",
+    "name": "Fanfarronear",
+    "description": "Aumenta dos niveles el Ataque del objetivo y lo confunde."
+  },
+  {
+    "id": "208",
+    "slug": "milk-drink",
+    "slugLoc": "licuado",
+    "name": "Licuado",
+    "description": "Restaura un 50% de los PS máximos del usuario."
+  },
+  {
+    "id": "209",
+    "slug": "spark",
+    "slugLoc": "chispa",
+    "name": "Chispa",
+    "description": ""
+  },
+  {
+    "id": "210",
+    "slug": "fury-cutter",
+    "slugLoc": "corte-furia",
+    "name": "Corte Furia",
+    "description": ""
+  },
+  {
+    "id": "211",
+    "slug": "steel-wing",
+    "slugLoc": "ala-de-acero",
+    "name": "Ala de Acero",
+    "description": "Tiene una probabilidad del 10% de aumentar un nivel\nla Defensa del usuario."
+  },
+  {
+    "id": "212",
+    "slug": "mean-look",
+    "slugLoc": "mal-de-ojo",
+    "name": "Mal de Ojo",
+    "description": "Provoca el estado Huida imposible en el objetivo."
+  },
+  {
+    "id": "213",
+    "slug": "attract",
+    "slugLoc": "atraccion",
+    "name": "Atracción",
+    "description": "Provoca el estado Enamorado en el objetivo. Falla\ncontra objetivos del mismo sexo que el usuario o de\nsexo desconocido."
+  },
+  {
+    "id": "214",
+    "slug": "sleep-talk",
+    "slugLoc": "sonambulo",
+    "name": "Sonámbulo",
+    "description": "Solo se puede usar si el usuario está dormido. El usuario usa\nal azar uno de los otros movimientos que conoce."
+  },
+  {
+    "id": "215",
+    "slug": "heal-bell",
+    "slugLoc": "cascabel-sanador",
+    "name": "Cascabel Sanador",
+    "description": "Elimina los problemas de estado de todos los Pokémon del\nequipo del usuario, incluyendo al usuario y a sus aliados."
+  },
+  {
+    "id": "216",
+    "slug": "return",
+    "slugLoc": "retribucion",
+    "name": "Retribución",
+    "description": ""
+  },
+  {
+    "id": "217",
+    "slug": "present",
+    "slugLoc": "obsequio",
+    "name": "Obsequio",
+    "description": ""
+  },
+  {
+    "id": "218",
+    "slug": "frustration",
+    "slugLoc": "frustracion",
+    "name": "Frustración",
+    "description": ""
+  },
+  {
+    "id": "219",
+    "slug": "safeguard",
+    "slugLoc": "velo-sagrado",
+    "name": "Velo Sagrado",
+    "description": "Provoca el estado Velo Sagrado en el lado del usuario durante\ncinco turnos."
+  },
+  {
+    "id": "220",
+    "slug": "pain-split",
+    "slugLoc": "dividedolor",
+    "name": "Dividedolor",
+    "description": "Combina los PS restantes del usuario con los del objetivo\ny los reparte en partes iguales."
+  },
+  {
+    "id": "221",
+    "slug": "sacred-fire",
+    "slugLoc": "fuego-sagrado",
+    "name": "Fuego Sagrado",
+    "description": ""
+  },
+  {
+    "id": "222",
+    "slug": "magnitude",
+    "slugLoc": "magnitud",
+    "name": "Magnitud",
+    "description": ""
+  },
+  {
+    "id": "223",
+    "slug": "dynamic-punch",
+    "slugLoc": "puno-dinamico",
+    "name": "Puño Dinámico",
+    "description": "Confunde al objetivo."
+  },
+  {
+    "id": "224",
+    "slug": "megahorn",
+    "slugLoc": "megacuerno",
+    "name": "Megacuerno",
+    "description": ""
+  },
+  {
+    "id": "225",
+    "slug": "dragon-breath",
+    "slugLoc": "aliento-dragon",
+    "name": "Aliento Dragón",
+    "description": ""
+  },
+  {
+    "id": "226",
+    "slug": "baton-pass",
+    "slugLoc": "relevo",
+    "name": "Relevo",
+    "description": "El usuario se cambia por otro Pokémon del equipo.\nEl Pokémon que lo reemplaza hereda sus cambios en las\ncaracterísticas, su sustituto y otros efectos."
+  },
+  {
+    "id": "227",
+    "slug": "encore",
+    "slugLoc": "otra-vez",
+    "name": "Otra Vez",
+    "description": "Provoca el estado Otra Vez en el objetivo."
+  },
+  {
+    "id": "228",
+    "slug": "pursuit",
+    "slugLoc": "persecucion",
+    "name": "Persecución",
+    "description": ""
+  },
+  {
+    "id": "229",
+    "slug": "rapid-spin",
+    "slugLoc": "giro-rapido",
+    "name": "Giro Rápido",
+    "description": "Elimina los estados Apresado y Drenadoras del usuario, así\ncomo los estados Púas, Púas tóxicas, Red Pegajosa y Trampa\nde Rocas en el lado del usuario. Aumenta un nivel la Velocidad\ndel usuario."
+  },
+  {
+    "id": "230",
+    "slug": "sweet-scent",
+    "slugLoc": "dulce-aroma",
+    "name": "Dulce Aroma",
+    "description": "Reduce dos niveles la Evasión del objetivo."
+  },
+  {
+    "id": "231",
+    "slug": "iron-tail",
+    "slugLoc": "cola-de-hierro",
+    "name": "Cola de Hierro",
+    "description": "Tiene una probabilidad del 30% de reducir un nivel la Defensa\ndel objetivo."
+  },
+  {
+    "id": "232",
+    "slug": "metal-claw",
+    "slugLoc": "garra-de-metal",
+    "name": "Garra de Metal",
+    "description": ""
+  },
+  {
+    "id": "233",
+    "slug": "vital-throw",
+    "slugLoc": "llave-vital",
+    "name": "Llave Vital",
+    "description": ""
+  },
+  {
+    "id": "234",
+    "slug": "morning-sun",
+    "slugLoc": "sol-matutino",
+    "name": "Sol Matutino",
+    "description": "Restaura un 50% de los PS máximos del usuario, o un 66.6%\ncuando hace sol. Si hay otro tiempo atmosférico activo,\nsolo restaura un 25% de sus PS máximos."
+  },
+  {
+    "id": "235",
+    "slug": "synthesis",
+    "slugLoc": "fotosintesis",
+    "name": "Fotosíntesis",
+    "description": "Restaura un 50% de los PS máximos del usuario, o un 66.6%\ncuando hace sol. Si hay otro tiempo atmosférico activo,\nsolo restaura un 25% de sus PS máximos."
+  },
+  {
+    "id": "236",
+    "slug": "moonlight",
+    "slugLoc": "luz-lunar",
+    "name": "Luz Lunar",
+    "description": "Restaura un 50% de los PS máximos del usuario, o un 66.6%\ncuando hace sol. Si hay otro tiempo atmosférico activo,\nsolo restaura un 25% de sus PS máximos."
+  },
+  {
+    "id": "237",
+    "slug": "hidden-power",
+    "slugLoc": "poder-oculto",
+    "name": "Poder Oculto",
+    "description": ""
+  },
+  {
+    "id": "238",
+    "slug": "cross-chop",
+    "slugLoc": "golpe-cruzado",
+    "name": "Golpe Cruzado",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "239",
+    "slug": "twister",
+    "slugLoc": "tornado",
+    "name": "Tornado",
+    "description": ""
+  },
+  {
+    "id": "240",
+    "slug": "rain-dance",
+    "slugLoc": "danza-de-lluvia",
+    "name": "Danza de Lluvia",
+    "description": "Hace que llueva durante cinco turnos."
+  },
+  {
+    "id": "241",
+    "slug": "sunny-day",
+    "slugLoc": "dia-soleado",
+    "name": "Día Soleado",
+    "description": "Hace que salga el sol durante cinco turnos."
+  },
+  {
+    "id": "242",
+    "slug": "crunch",
+    "slugLoc": "triturar",
+    "name": "Triturar",
+    "description": "Tiene una probabilidad del 20% de reducir un nivel la Defensa\ndel objetivo."
+  },
+  {
+    "id": "243",
+    "slug": "mirror-coat",
+    "slugLoc": "escudo-espejo",
+    "name": "Escudo Espejo",
+    "description": "Si el usuario recibió daño de un ataque especial en ese turno,\nle devuelve el doble del daño al atacante."
+  },
+  {
+    "id": "244",
+    "slug": "psych-up",
+    "slugLoc": "autosugestion",
+    "name": "Autosugestión",
+    "description": "El usuario copia los cambios en las características del objetivo."
+  },
+  {
+    "id": "245",
+    "slug": "extreme-speed",
+    "slugLoc": "velocidad-extrema",
+    "name": "Velocidad Extrema",
+    "description": ""
+  },
+  {
+    "id": "246",
+    "slug": "ancient-power",
+    "slugLoc": "poder-antiguo",
+    "name": "Poder Antiguo",
+    "description": "Tiene una probabilidad del 10% de aumentar un nivel\nel Ataque, la Defensa, el Ataque Especial, la Defensa Especial\ny la Velocidad del usuario."
+  },
+  {
+    "id": "247",
+    "slug": "shadow-ball",
+    "slugLoc": "bola-sombra",
+    "name": "Bola Sombra",
+    "description": "Tiene una probabilidad del 20% de reducir un nivel\nla Defensa Especial del objetivo."
+  },
+  {
+    "id": "248",
+    "slug": "future-sight",
+    "slugLoc": "premonicion",
+    "name": "Premonición",
+    "description": "Provoca el estado Ataque futuro en la posición del objetivo."
+  },
+  {
+    "id": "249",
+    "slug": "rock-smash",
+    "slugLoc": "golpe-roca",
+    "name": "Golpe Roca",
+    "description": ""
+  },
+  {
+    "id": "250",
+    "slug": "whirlpool",
+    "slugLoc": "remolino",
+    "name": "Remolino",
+    "description": "Provoca el estado Apresado en el objetivo. Su potencia\nse duplica contra objetivos con el estado Sumergido."
+  },
+  {
+    "id": "251",
+    "slug": "beat-up",
+    "slugLoc": "paliza",
+    "name": "Paliza",
+    "description": "Golpea al objetivo tantas veces como Pokémon haya\nen el equipo del usuario. Los Pokémon debilitados o\ncon problemas de estado no se cuentan. La potencia\ndel movimiento se calcula con base en el Ataque de los\nPokémon del equipo del usuario."
+  },
+  {
+    "id": "252",
+    "slug": "fake-out",
+    "slugLoc": "sorpresa",
+    "name": "Sorpresa",
+    "description": "Atemoriza al objetivo. Falla si no es el primer movimiento que\nel usuario utiliza luego de entrar en combate."
+  },
+  {
+    "id": "253",
+    "slug": "uproar",
+    "slugLoc": "alboroto",
+    "name": "Alboroto",
+    "description": "Provoca el estado Alboroto en el usuario."
+  },
+  {
+    "id": "254",
+    "slug": "stockpile",
+    "slugLoc": "reserva",
+    "name": "Reserva",
+    "description": "Aumenta un nivel la Defensa y la Defensa Especial del usuario.\nAumenta en uno el número de reservas, hasta un\nmáximo de tres."
+  },
+  {
+    "id": "255",
+    "slug": "spit-up",
+    "slugLoc": "escupida",
+    "name": "Escupida",
+    "description": "Tiene mayor potencia entre más reservas acumule el usuario,\ncon un rango entre 100 y 300.\nFalla si el usuario no se encuentra en el estado Reserva."
+  },
+  {
+    "id": "256",
+    "slug": "swallow",
+    "slugLoc": "tragar",
+    "name": "Tragar",
+    "description": "Restaura más PS del usuario entre mayor sea su número\nde reservas.\n1 reserva: 25% de los PS máximos.\n2 reservas: 50% de los PS máximos.\n3 reservas: todos los PS.\nFalla si el usuario no se encuentra en el estado Reserva."
+  },
+  {
+    "id": "257",
+    "slug": "heat-wave",
+    "slugLoc": "onda-ignea",
+    "name": "Onda Ígnea",
+    "description": "Tiene una probabilidad del 10% de quemar al objetivo."
+  },
+  {
+    "id": "258",
+    "slug": "hail",
+    "slugLoc": "granizo",
+    "name": "Granizo",
+    "description": ""
+  },
+  {
+    "id": "259",
+    "slug": "torment",
+    "slugLoc": "tormento",
+    "name": "Tormento",
+    "description": "Provoca el estado Repetición anulada en el objetivo."
+  },
+  {
+    "id": "260",
+    "slug": "flatter",
+    "slugLoc": "halago",
+    "name": "Halago",
+    "description": "Aumenta un nivel el Ataque Especial del objetivo y lo confunde."
+  },
+  {
+    "id": "261",
+    "slug": "will-o-wisp",
+    "slugLoc": "fuego-fatuo",
+    "name": "Fuego Fatuo",
+    "description": "Quema al objetivo."
+  },
+  {
+    "id": "262",
+    "slug": "memento",
+    "slugLoc": "recuerdo",
+    "name": "Recuerdo",
+    "description": "Reduce dos niveles el Ataque y el Ataque Especial del objetivo.\nEl usuario se debilita luego de usar este movimiento."
+  },
+  {
+    "id": "263",
+    "slug": "facade",
+    "slugLoc": "fachada",
+    "name": "Fachada",
+    "description": "Si el usuario está envenenado, gravemente envenenado,\nparalizado o quemado, se duplica su potencia. El daño que\ncausa este ataque físico no es reducido a la mitad aunque\nel usuario esté quemado."
+  },
+  {
+    "id": "264",
+    "slug": "focus-punch",
+    "slugLoc": "puno-centrado",
+    "name": "Puño Centrado",
+    "description": "Falla si el usuario recibe daño de otro movimiento antes de usar\nel movimiento en ese turno."
+  },
+  {
+    "id": "265",
+    "slug": "smelling-salts",
+    "slugLoc": "estimulo",
+    "name": "Estímulo",
+    "description": ""
+  },
+  {
+    "id": "266",
+    "slug": "follow-me",
+    "slugLoc": "senuelo",
+    "name": "Señuelo",
+    "description": "Concentra sobre el usuario todos los movimientos de los rivales.\nSolo tiene efecto con movimientos que permiten seleccionar\na un objetivo."
+  },
+  {
+    "id": "267",
+    "slug": "nature-power",
+    "slugLoc": "adaptacion",
+    "name": "Adaptación",
+    "description": ""
+  },
+  {
+    "id": "268",
+    "slug": "charge",
+    "slugLoc": "carga",
+    "name": "Carga",
+    "description": "Aumenta un nivel la Defensa Especial del usuario y le provoca\nel estado Cargado de electricidad."
+  },
+  {
+    "id": "269",
+    "slug": "taunt",
+    "slugLoc": "provocacion",
+    "name": "Provocación",
+    "description": "Provoca el estado Provocación en el objetivo."
+  },
+  {
+    "id": "270",
+    "slug": "helping-hand",
+    "slugLoc": "refuerzos",
+    "name": "Refuerzos",
+    "description": "Aumenta un 50% la potencia del movimiento de un aliado\ndurante ese turno."
+  },
+  {
+    "id": "271",
+    "slug": "trick",
+    "slugLoc": "truco",
+    "name": "Truco",
+    "description": "Intercambia los objetos del usuario y el objetivo."
+  },
+  {
+    "id": "272",
+    "slug": "role-play",
+    "slugLoc": "imitacion",
+    "name": "Imitación",
+    "description": "Sustituye la habilidad del usuario por la del objetivo."
+  },
+  {
+    "id": "273",
+    "slug": "wish",
+    "slugLoc": "deseo",
+    "name": "Deseo",
+    "description": "Provoca el estado Deseo en la posición del usuario."
+  },
+  {
+    "id": "274",
+    "slug": "assist",
+    "slugLoc": "ayuda",
+    "name": "Ayuda",
+    "description": ""
+  },
+  {
+    "id": "275",
+    "slug": "ingrain",
+    "slugLoc": "arraigo",
+    "name": "Arraigo",
+    "description": "Provoca el estado Arraigo en el usuario."
+  },
+  {
+    "id": "276",
+    "slug": "superpower",
+    "slugLoc": "fuerza-bruta",
+    "name": "Fuerza Bruta",
+    "description": "Reduce un nivel el Ataque y la Defensa del usuario."
+  },
+  {
+    "id": "277",
+    "slug": "magic-coat",
+    "slugLoc": "capa-magica",
+    "name": "Capa Mágica",
+    "description": ""
+  },
+  {
+    "id": "278",
+    "slug": "recycle",
+    "slugLoc": "reciclaje",
+    "name": "Reciclaje",
+    "description": "El usuario recupera el último objeto que haya consumido\ny vuelve a equipárselo."
+  },
+  {
+    "id": "279",
+    "slug": "revenge",
+    "slugLoc": "desquite",
+    "name": "Desquite",
+    "description": ""
+  },
+  {
+    "id": "280",
+    "slug": "brick-break",
+    "slugLoc": "karatazo",
+    "name": "Karatazo",
+    "description": "Elimina los estados Pantalla de Luz, Reflejo y Velo Aurora\nen el lado del objetivo antes de causar daño."
+  },
+  {
+    "id": "281",
+    "slug": "yawn",
+    "slugLoc": "bostezo",
+    "name": "Bostezo",
+    "description": "Provoca somnolencia en el objetivo. Nunca falla."
+  },
+  {
+    "id": "282",
+    "slug": "knock-off",
+    "slugLoc": "desarme",
+    "name": "Desarme",
+    "description": "Aumenta un 50% su potencia si el objetivo lleva un objeto.\nHace que el objetivo pierda el objeto que lleva."
+  },
+  {
+    "id": "283",
+    "slug": "endeavor",
+    "slugLoc": "esfuerzo",
+    "name": "Esfuerzo",
+    "description": "Causa una cantidad de daño equivalente a la diferencia entre\nlos PS restantes del objetivo y los del usuario. Falla si el \nobjetivo tiene los mismos PS que el usuario o menos."
+  },
+  {
+    "id": "284",
+    "slug": "eruption",
+    "slugLoc": "estallido",
+    "name": "Estallido",
+    "description": "Tiene menor potencia entre menos PS tenga el usuario,\ncon un rango entre 1 y 150."
+  },
+  {
+    "id": "285",
+    "slug": "skill-swap",
+    "slugLoc": "intercambio",
+    "name": "Intercambio",
+    "description": "Intercambia las habilidades del usuario y el objetivo."
+  },
+  {
+    "id": "286",
+    "slug": "imprison",
+    "slugLoc": "sellar",
+    "name": "Sellar",
+    "description": "Provoca el estado Sellar en el usuario."
+  },
+  {
+    "id": "287",
+    "slug": "refresh",
+    "slugLoc": "alivio",
+    "name": "Alivio",
+    "description": ""
+  },
+  {
+    "id": "288",
+    "slug": "grudge",
+    "slugLoc": "rabia",
+    "name": "Rabia",
+    "description": ""
+  },
+  {
+    "id": "289",
+    "slug": "snatch",
+    "slugLoc": "robo",
+    "name": "Robo",
+    "description": ""
+  },
+  {
+    "id": "290",
+    "slug": "secret-power",
+    "slugLoc": "poder-secreto",
+    "name": "Poder Secreto",
+    "description": ""
+  },
+  {
+    "id": "291",
+    "slug": "dive",
+    "slugLoc": "buceo",
+    "name": "Buceo",
+    "description": "El usuario adquiere el estado Sumergido en el turno en el que\nusa este movimiento y ataca en el siguiente."
+  },
+  {
+    "id": "292",
+    "slug": "arm-thrust",
+    "slugLoc": "empujon",
+    "name": "Empujón",
+    "description": ""
+  },
+  {
+    "id": "293",
+    "slug": "camouflage",
+    "slugLoc": "camuflaje",
+    "name": "Camuflaje",
+    "description": ""
+  },
+  {
+    "id": "294",
+    "slug": "tail-glow",
+    "slugLoc": "luminicola",
+    "name": "Luminicola",
+    "description": ""
+  },
+  {
+    "id": "295",
+    "slug": "luster-purge",
+    "slugLoc": "resplandor",
+    "name": "Resplandor",
+    "description": ""
+  },
+  {
+    "id": "296",
+    "slug": "mist-ball",
+    "slugLoc": "bola-neblina",
+    "name": "Bola Neblina",
+    "description": ""
+  },
+  {
+    "id": "297",
+    "slug": "feather-dance",
+    "slugLoc": "danza-de-plumas",
+    "name": "Danza de Plumas",
+    "description": "Reduce dos niveles el Ataque del objetivo."
+  },
+  {
+    "id": "298",
+    "slug": "teeter-dance",
+    "slugLoc": "danza-del-caos",
+    "name": "Danza del Caos",
+    "description": "Confunde a todos los Pokémon en combate menos al usuario."
+  },
+  {
+    "id": "299",
+    "slug": "blaze-kick",
+    "slugLoc": "patada-ignea",
+    "name": "Patada Ígnea",
+    "description": "Tiene una probabilidad del 10% de quemar al objetivo.\nAumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "300",
+    "slug": "mud-sport",
+    "slugLoc": "chapoteo-de-lodo",
+    "name": "Chapoteo de Lodo",
+    "description": ""
+  },
+  {
+    "id": "301",
+    "slug": "ice-ball",
+    "slugLoc": "bola-hielo",
+    "name": "Bola Hielo",
+    "description": ""
+  },
+  {
+    "id": "302",
+    "slug": "needle-arm",
+    "slugLoc": "brazo-aguja",
+    "name": "Brazo Aguja",
+    "description": ""
+  },
+  {
+    "id": "303",
+    "slug": "slack-off",
+    "slugLoc": "relajar",
+    "name": "Relajar",
+    "description": "Restaura un 50% de los PS máximos del usuario."
+  },
+  {
+    "id": "304",
+    "slug": "hyper-voice",
+    "slugLoc": "hipervoz",
+    "name": "Hipervoz",
+    "description": ""
+  },
+  {
+    "id": "305",
+    "slug": "poison-fang",
+    "slugLoc": "colmillo-veneno",
+    "name": "Colmillo Veneno",
+    "description": "Tiene una probabilidad del 50% de envenenar gravemente\nal objetivo."
+  },
+  {
+    "id": "306",
+    "slug": "crush-claw",
+    "slugLoc": "garra-brutal",
+    "name": "Garra Brutal",
+    "description": "Tiene una probabilidad del 50% de reducir un nivel la Defensa\ndel objetivo."
+  },
+  {
+    "id": "307",
+    "slug": "blast-burn",
+    "slugLoc": "anillo-de-fuego",
+    "name": "Anillo de Fuego",
+    "description": "El usuario adquiere el estado Descansando en el\nsiguiente turno."
+  },
+  {
+    "id": "308",
+    "slug": "hydro-cannon",
+    "slugLoc": "hidrocanon",
+    "name": "Hidrocañón",
+    "description": "El usuario adquiere el estado Descansando en el\nsiguiente turno."
+  },
+  {
+    "id": "309",
+    "slug": "meteor-mash",
+    "slugLoc": "puno-meteoro",
+    "name": "Puño Meteoro",
+    "description": "Tiene una probabilidad del 20% de aumentar un nivel\nel Ataque del usuario."
+  },
+  {
+    "id": "310",
+    "slug": "astonish",
+    "slugLoc": "impresion",
+    "name": "Impresión",
+    "description": ""
+  },
+  {
+    "id": "311",
+    "slug": "weather-ball",
+    "slugLoc": "meteorobola",
+    "name": "Meteorobola",
+    "description": "Si hay algún tiempo atmosférico activo, su potencia se duplica\ny cambia de tipo.\nSol: cambia a tipo Fuego.\nLluvia: cambia a tipo Agua.\nNieve: cambia a tipo Hielo.\nTormenta de arena: cambia a tipo Roca."
+  },
+  {
+    "id": "312",
+    "slug": "aromatherapy",
+    "slugLoc": "aromaterapia",
+    "name": "Aromaterapia",
+    "description": ""
+  },
+  {
+    "id": "313",
+    "slug": "fake-tears",
+    "slugLoc": "llanto-falso",
+    "name": "Llanto Falso",
+    "description": "Reduce dos niveles la Defensa Especial del objetivo."
+  },
+  {
+    "id": "314",
+    "slug": "air-cutter",
+    "slugLoc": "aire-cortante",
+    "name": "Aire Cortante",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "315",
+    "slug": "overheat",
+    "slugLoc": "supercalor",
+    "name": "Supercalor",
+    "description": "Reduce dos niveles el Ataque Especial del usuario."
+  },
+  {
+    "id": "316",
+    "slug": "odor-sleuth",
+    "slugLoc": "rastreo",
+    "name": "Rastreo",
+    "description": ""
+  },
+  {
+    "id": "317",
+    "slug": "rock-tomb",
+    "slugLoc": "tumba-de-rocas",
+    "name": "Tumba de Rocas",
+    "description": "Reduce un nivel la Velocidad del objetivo."
+  },
+  {
+    "id": "318",
+    "slug": "silver-wind",
+    "slugLoc": "viento-plateado",
+    "name": "Viento Plateado",
+    "description": ""
+  },
+  {
+    "id": "319",
+    "slug": "metal-sound",
+    "slugLoc": "sonido-metalico",
+    "name": "Sonido Metálico",
+    "description": "Reduce dos niveles la Defensa Especial del objetivo."
+  },
+  {
+    "id": "320",
+    "slug": "grass-whistle",
+    "slugLoc": "silbato-de-hoja",
+    "name": "Silbato de Hoja",
+    "description": ""
+  },
+  {
+    "id": "321",
+    "slug": "tickle",
+    "slugLoc": "cosquillas",
+    "name": "Cosquillas",
+    "description": "Reduce un nivel el Ataque y la Defensa del objetivo."
+  },
+  {
+    "id": "322",
+    "slug": "cosmic-power",
+    "slugLoc": "masa-cosmica",
+    "name": "Masa Cósmica",
+    "description": "Aumenta un nivel la Defensa y la Defensa Especial del usuario."
+  },
+  {
+    "id": "323",
+    "slug": "water-spout",
+    "slugLoc": "columna-de-agua",
+    "name": "Columna de Agua",
+    "description": "Tiene menor potencia entre menos PS tenga el usuario,\ncon un rango entre 1 y 150."
+  },
+  {
+    "id": "324",
+    "slug": "signal-beam",
+    "slugLoc": "rayo-senal",
+    "name": "Rayo Señal",
+    "description": ""
+  },
+  {
+    "id": "325",
+    "slug": "shadow-punch",
+    "slugLoc": "puno-sombra",
+    "name": "Puño Sombra",
+    "description": "Nunca falla."
+  },
+  {
+    "id": "326",
+    "slug": "extrasensory",
+    "slugLoc": "extrasensorial",
+    "name": "Extrasensorial",
+    "description": "Tiene una probabilidad del 10% de atemorizar al objetivo."
+  },
+  {
+    "id": "327",
+    "slug": "sky-uppercut",
+    "slugLoc": "corte-elevado",
+    "name": "Corte Elevado",
+    "description": ""
+  },
+  {
+    "id": "328",
+    "slug": "sand-tomb",
+    "slugLoc": "tumba-de-arena",
+    "name": "Tumba de Arena",
+    "description": "Provoca el estado Apresado en el objetivo."
+  },
+  {
+    "id": "329",
+    "slug": "sheer-cold",
+    "slugLoc": "frio-extremo",
+    "name": "Frío Extremo",
+    "description": "Debilita al objetivo. Tiene una precisión fija del 20% o del\n30% si el usuario es de tipo Hielo. No afecta a los Pokémon\nde tipo Hielo."
+  },
+  {
+    "id": "330",
+    "slug": "muddy-water",
+    "slugLoc": "agua-lodosa",
+    "name": "Agua Lodosa",
+    "description": "Tiene una probabilidad del 30% de reducir un nivel la Precisión\ndel objetivo."
+  },
+  {
+    "id": "331",
+    "slug": "bullet-seed",
+    "slugLoc": "bala-semilla",
+    "name": "Bala Semilla",
+    "description": "Ataca de dos a cinco veces seguidas."
+  },
+  {
+    "id": "332",
+    "slug": "aerial-ace",
+    "slugLoc": "as-aereo",
+    "name": "As Aéreo",
+    "description": "Nunca falla."
+  },
+  {
+    "id": "333",
+    "slug": "icicle-spear",
+    "slugLoc": "lanza-de-hielo",
+    "name": "Lanza de Hielo",
+    "description": "Ataca de dos a cinco veces seguidas."
+  },
+  {
+    "id": "334",
+    "slug": "iron-defense",
+    "slugLoc": "defensa-de-hierro",
+    "name": "Defensa de Hierro",
+    "description": "Aumenta dos niveles la Defensa del usuario."
+  },
+  {
+    "id": "335",
+    "slug": "block",
+    "slugLoc": "bloqueo",
+    "name": "Bloqueo",
+    "description": "Provoca el estado Huida imposible en el objetivo."
+  },
+  {
+    "id": "336",
+    "slug": "howl",
+    "slugLoc": "aullido",
+    "name": "Aullido",
+    "description": "Aumenta un nivel el Ataque del usuario y sus aliados."
+  },
+  {
+    "id": "337",
+    "slug": "dragon-claw",
+    "slugLoc": "garra-dragon",
+    "name": "Garra Dragón",
+    "description": ""
+  },
+  {
+    "id": "338",
+    "slug": "frenzy-plant",
+    "slugLoc": "planta-feroz",
+    "name": "Planta Feroz",
+    "description": "El usuario adquiere el estado Descansando en el\nsiguiente turno."
+  },
+  {
+    "id": "339",
+    "slug": "bulk-up",
+    "slugLoc": "corpulencia",
+    "name": "Corpulencia",
+    "description": "Aumenta un nivel el Ataque y la Defensa del usuario."
+  },
+  {
+    "id": "340",
+    "slug": "bounce",
+    "slugLoc": "rebote",
+    "name": "Rebote",
+    "description": "El usuario adquiere el estado A gran altitud en el turno en el\nque usa este movimiento y ataca en el siguiente. Tiene una\nprobabilidad del 30% de paralizar al objetivo."
+  },
+  {
+    "id": "341",
+    "slug": "mud-shot",
+    "slugLoc": "disparo-de-lodo",
+    "name": "Disparo de Lodo",
+    "description": "Reduce un nivel la Velocidad del objetivo."
+  },
+  {
+    "id": "342",
+    "slug": "poison-tail",
+    "slugLoc": "cola-venenosa",
+    "name": "Cola Venenosa",
+    "description": ""
+  },
+  {
+    "id": "343",
+    "slug": "covet",
+    "slugLoc": "antojo",
+    "name": "Antojo",
+    "description": "Si el usuario no lleva un objeto, roba el del objetivo."
+  },
+  {
+    "id": "344",
+    "slug": "volt-tackle",
+    "slugLoc": "tacleada-de-voltios",
+    "name": "Tacleada de Voltios",
+    "description": "El usuario recibe un 33.3% del daño que causa.\nEste movimiento tiene una probabilidad del 10%\nde paralizar al objetivo."
+  },
+  {
+    "id": "345",
+    "slug": "magical-leaf",
+    "slugLoc": "hojas-magicas",
+    "name": "Hojas Mágicas",
+    "description": ""
+  },
+  {
+    "id": "346",
+    "slug": "water-sport",
+    "slugLoc": "chapoteo-de-agua",
+    "name": "Chapoteo de Agua",
+    "description": ""
+  },
+  {
+    "id": "347",
+    "slug": "calm-mind",
+    "slugLoc": "paz-mental",
+    "name": "Paz Mental",
+    "description": "Aumenta un nivel el Ataque Especial y la Defensa Especial\ndel usuario."
+  },
+  {
+    "id": "348",
+    "slug": "leaf-blade",
+    "slugLoc": "hoja-aguda",
+    "name": "Hoja Aguda",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "349",
+    "slug": "dragon-dance",
+    "slugLoc": "danza-de-dragon",
+    "name": "Danza de Dragón",
+    "description": "Aumenta un nivel el Ataque y la Velocidad del usuario."
+  },
+  {
+    "id": "350",
+    "slug": "rock-blast",
+    "slugLoc": "pedrada",
+    "name": "Pedrada",
+    "description": "Ataca de dos a cinco veces seguidas."
+  },
+  {
+    "id": "351",
+    "slug": "shock-wave",
+    "slugLoc": "onda-de-choque",
+    "name": "Onda de Choque",
+    "description": ""
+  },
+  {
+    "id": "352",
+    "slug": "water-pulse",
+    "slugLoc": "pulso-de-agua",
+    "name": "Pulso de Agua",
+    "description": "Tiene una probabilidad del 20% de confundir al objetivo."
+  },
+  {
+    "id": "353",
+    "slug": "doom-desire",
+    "slugLoc": "deseo-final",
+    "name": "Deseo Final",
+    "description": ""
+  },
+  {
+    "id": "354",
+    "slug": "psycho-boost",
+    "slugLoc": "psicoimpulso",
+    "name": "Psicoimpulso",
+    "description": ""
+  },
+  {
+    "id": "355",
+    "slug": "roost",
+    "slugLoc": "respiro",
+    "name": "Respiro",
+    "description": "Restaura un 50% de los PS máximos del usuario. Si el usuario es\nde tipo Volador, deja de serlo durante ese turno."
+  },
+  {
+    "id": "356",
+    "slug": "gravity",
+    "slugLoc": "gravedad",
+    "name": "Gravedad",
+    "description": "Provoca el estado Gravedad en ambos lados durante\ncinco turnos."
+  },
+  {
+    "id": "357",
+    "slug": "miracle-eye",
+    "slugLoc": "gran-ojo",
+    "name": "Gran Ojo",
+    "description": ""
+  },
+  {
+    "id": "358",
+    "slug": "wake-up-slap",
+    "slugLoc": "despabilador",
+    "name": "Despabilador",
+    "description": ""
+  },
+  {
+    "id": "359",
+    "slug": "hammer-arm",
+    "slugLoc": "brazo-martillo",
+    "name": "Brazo Martillo",
+    "description": "Reduce un nivel la Velocidad del usuario."
+  },
+  {
+    "id": "360",
+    "slug": "gyro-ball",
+    "slugLoc": "giro-bola",
+    "name": "Giro Bola",
+    "description": "Tiene mayor potencia entre menor sea la Velocidad del\nusuario en comparación con la del objetivo, con un rango\nentre 1 y 150."
+  },
+  {
+    "id": "361",
+    "slug": "healing-wish",
+    "slugLoc": "deseo-sanador",
+    "name": "Deseo Sanador",
+    "description": "El usuario se debilita, pero cura los problemas de estado\ny restaura todos los PS del Pokémon que sale a combatir\nen su lugar."
+  },
+  {
+    "id": "362",
+    "slug": "brine",
+    "slugLoc": "agua-salada",
+    "name": "Agua Salada",
+    "description": ""
+  },
+  {
+    "id": "363",
+    "slug": "natural-gift",
+    "slugLoc": "don-natural",
+    "name": "Don Natural",
+    "description": ""
+  },
+  {
+    "id": "364",
+    "slug": "feint",
+    "slugLoc": "amago",
+    "name": "Amago",
+    "description": "Puede golpear a objetivos que hayan usado movimientos como\nProtección o Detección y elimina sus efectos."
+  },
+  {
+    "id": "365",
+    "slug": "pluck",
+    "slugLoc": "picoteo",
+    "name": "Picoteo",
+    "description": "Si el objetivo lleva una baya, el usuario la consume y obtiene\nsus efectos."
+  },
+  {
+    "id": "366",
+    "slug": "tailwind",
+    "slugLoc": "viento-afin",
+    "name": "Viento Afín",
+    "description": "Provoca el estado Viento Afín en el lado del usuario durante\ncuatro turnos."
+  },
+  {
+    "id": "367",
+    "slug": "acupressure",
+    "slugLoc": "acupresion",
+    "name": "Acupresión",
+    "description": "Aumenta dos niveles una de las siguientes características al azar\ndel usuario o un aliado: Ataque, Defensa, Ataque Especial,\nDefensa Especial, Velocidad, Precisión o Evasión."
+  },
+  {
+    "id": "368",
+    "slug": "metal-burst",
+    "slugLoc": "expl-metalica",
+    "name": "Expl. Metálica",
+    "description": "Si el usuario recibió daño de un ataque en ese turno,\nle devuelve al rival el 150% del daño causado."
+  },
+  {
+    "id": "369",
+    "slug": "u-turn",
+    "slugLoc": "ida-y-vuelta",
+    "name": "Ida y Vuelta",
+    "description": "El usuario se cambia por otro Pokémon del equipo luego\nde atacar."
+  },
+  {
+    "id": "370",
+    "slug": "close-combat",
+    "slugLoc": "cuerpo-a-cuerpo",
+    "name": "Cuerpo a Cuerpo",
+    "description": "Reduce un nivel la Defensa y la Defensa Especial del usuario."
+  },
+  {
+    "id": "371",
+    "slug": "payback",
+    "slugLoc": "revancha",
+    "name": "Revancha",
+    "description": "Su potencia se duplica si el usuario ataca después del objetivo."
+  },
+  {
+    "id": "372",
+    "slug": "assurance",
+    "slugLoc": "garantia",
+    "name": "Garantía",
+    "description": "Su potencia se duplica si el objetivo ya recibió daño en\nese turno."
+  },
+  {
+    "id": "373",
+    "slug": "embargo",
+    "slugLoc": "embargo",
+    "name": "Embargo",
+    "description": ""
+  },
+  {
+    "id": "374",
+    "slug": "fling",
+    "slugLoc": "lanzamiento",
+    "name": "Lanzamiento",
+    "description": "Su potencia y efecto varían según el objeto que lleve el usuario.\nEl usuario pierde el objeto luego de atacar."
+  },
+  {
+    "id": "375",
+    "slug": "psycho-shift",
+    "slugLoc": "psicocambio",
+    "name": "Psicocambio",
+    "description": ""
+  },
+  {
+    "id": "376",
+    "slug": "trump-card",
+    "slugLoc": "as-oculto",
+    "name": "As Oculto",
+    "description": ""
+  },
+  {
+    "id": "377",
+    "slug": "heal-block",
+    "slugLoc": "anticuracion",
+    "name": "Anticuración",
+    "description": ""
+  },
+  {
+    "id": "378",
+    "slug": "wring-out",
+    "slugLoc": "apreton",
+    "name": "Apretón",
+    "description": ""
+  },
+  {
+    "id": "379",
+    "slug": "power-trick",
+    "slugLoc": "truco-fuerza",
+    "name": "Truco Fuerza",
+    "description": "Provoca el estado Ataque y Defensa invertidos en el usuario."
+  },
+  {
+    "id": "380",
+    "slug": "gastro-acid",
+    "slugLoc": "acido-gastrico",
+    "name": "Ácido Gástrico",
+    "description": "Provoca el estado Habilidad anulada en el objetivo."
+  },
+  {
+    "id": "381",
+    "slug": "lucky-chant",
+    "slugLoc": "cantico-suerte",
+    "name": "Cántico Suerte",
+    "description": ""
+  },
+  {
+    "id": "382",
+    "slug": "me-first",
+    "slugLoc": "yo-primero",
+    "name": "Yo Primero",
+    "description": ""
+  },
+  {
+    "id": "383",
+    "slug": "copycat",
+    "slugLoc": "copion",
+    "name": "Copión",
+    "description": "El usuario imita el último movimiento que se usó.\nEste movimiento falla si aún no se ha utilizado ninguno."
+  },
+  {
+    "id": "384",
+    "slug": "power-swap",
+    "slugLoc": "cambiafuerza",
+    "name": "Cambiafuerza",
+    "description": "Intercambia los cambios en el Ataque y el Ataque Especial\ndel usuario y el objetivo."
+  },
+  {
+    "id": "385",
+    "slug": "guard-swap",
+    "slugLoc": "cambiadefensa",
+    "name": "Cambiadefensa",
+    "description": "Intercambia los cambios en la Defensa y la Defensa Especial\ndel usuario y el objetivo."
+  },
+  {
+    "id": "386",
+    "slug": "punishment",
+    "slugLoc": "castigo",
+    "name": "Castigo",
+    "description": ""
+  },
+  {
+    "id": "387",
+    "slug": "last-resort",
+    "slugLoc": "ultimo-recurso",
+    "name": "Último Recurso",
+    "description": "Falla si el usuario no usa antes todos los demás\nmovimientos que conoce."
+  },
+  {
+    "id": "388",
+    "slug": "worry-seed",
+    "slugLoc": "abatidoras",
+    "name": "Abatidoras",
+    "description": "Sustituye la habilidad del objetivo por Insomnio."
+  },
+  {
+    "id": "389",
+    "slug": "sucker-punch",
+    "slugLoc": "golpe-bajo",
+    "name": "Golpe Bajo",
+    "description": "Falla si el objetivo no seleccionó un ataque o si ya\natacó en ese turno."
+  },
+  {
+    "id": "390",
+    "slug": "toxic-spikes",
+    "slugLoc": "puas-toxicas",
+    "name": "Púas Tóxicas",
+    "description": "Provoca el estado Púas tóxicas en el lado rival."
+  },
+  {
+    "id": "391",
+    "slug": "heart-swap",
+    "slugLoc": "cambiaalmas",
+    "name": "Cambiaalmas",
+    "description": ""
+  },
+  {
+    "id": "392",
+    "slug": "aqua-ring",
+    "slugLoc": "acuaanillo",
+    "name": "Acuaanillo",
+    "description": "Provoca el estado Acuaanillo en el usuario."
+  },
+  {
+    "id": "393",
+    "slug": "magnet-rise",
+    "slugLoc": "superiman",
+    "name": "Superimán",
+    "description": "El usuario es afectado por Superimán."
+  },
+  {
+    "id": "394",
+    "slug": "flare-blitz",
+    "slugLoc": "erupcion",
+    "name": "Erupción",
+    "description": "El usuario recibe un 33.3% del daño que causa y se libra de la\ncongelación. Este movimiento tiene una probabilidad del 10%\nde quemar al objetivo."
+  },
+  {
+    "id": "395",
+    "slug": "force-palm",
+    "slugLoc": "fuerza-de-palma",
+    "name": "Fuerza de Palma",
+    "description": ""
+  },
+  {
+    "id": "396",
+    "slug": "aura-sphere",
+    "slugLoc": "aura-esfera",
+    "name": "Aura Esfera",
+    "description": "Nunca falla."
+  },
+  {
+    "id": "397",
+    "slug": "rock-polish",
+    "slugLoc": "pulimento",
+    "name": "Pulimento",
+    "description": "Aumenta dos niveles la Velocidad del usuario."
+  },
+  {
+    "id": "398",
+    "slug": "poison-jab",
+    "slugLoc": "golpe-venenoso",
+    "name": "Golpe Venenoso",
+    "description": "Tiene una probabilidad del 30% de envenenar al objetivo."
+  },
+  {
+    "id": "399",
+    "slug": "dark-pulse",
+    "slugLoc": "pulso-oscuro",
+    "name": "Pulso Oscuro",
+    "description": "Tiene una probabilidad del 20% de atemorizar al objetivo."
+  },
+  {
+    "id": "400",
+    "slug": "night-slash",
+    "slugLoc": "corte-umbrio",
+    "name": "Corte Umbrío",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "401",
+    "slug": "aqua-tail",
+    "slugLoc": "cola-de-agua",
+    "name": "Cola de Agua",
+    "description": ""
+  },
+  {
+    "id": "402",
+    "slug": "seed-bomb",
+    "slugLoc": "bomba-semilla",
+    "name": "Bomba Semilla",
+    "description": ""
+  },
+  {
+    "id": "403",
+    "slug": "air-slash",
+    "slugLoc": "corte-aereo",
+    "name": "Corte Aéreo",
+    "description": "Tiene una probabilidad del 30% de atemorizar al objetivo."
+  },
+  {
+    "id": "404",
+    "slug": "x-scissor",
+    "slugLoc": "tijera-x",
+    "name": "Tijera X",
+    "description": ""
+  },
+  {
+    "id": "405",
+    "slug": "bug-buzz",
+    "slugLoc": "zumbido",
+    "name": "Zumbido",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel\nla Defensa Especial del objetivo."
+  },
+  {
+    "id": "406",
+    "slug": "dragon-pulse",
+    "slugLoc": "pulso-dragon",
+    "name": "Pulso Dragón",
+    "description": ""
+  },
+  {
+    "id": "407",
+    "slug": "dragon-rush",
+    "slugLoc": "carga-dragon",
+    "name": "Carga Dragón",
+    "description": "Tiene una probabilidad del 20% de atemorizar al objetivo.\nSu potencia se duplica y nunca falla contra objetivos con\nel estado Reducido."
+  },
+  {
+    "id": "408",
+    "slug": "power-gem",
+    "slugLoc": "joya-de-luz",
+    "name": "Joya de Luz",
+    "description": ""
+  },
+  {
+    "id": "409",
+    "slug": "drain-punch",
+    "slugLoc": "puno-drenador",
+    "name": "Puño Drenador",
+    "description": "El usuario recupera una cantidad de PS equivalente al 50%\ndel daño que causa."
+  },
+  {
+    "id": "410",
+    "slug": "vacuum-wave",
+    "slugLoc": "onda-de-vacio",
+    "name": "Onda de Vacío",
+    "description": ""
+  },
+  {
+    "id": "411",
+    "slug": "focus-blast",
+    "slugLoc": "ataque-centrado",
+    "name": "Ataque Centrado",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel\nla Defensa Especial del objetivo."
+  },
+  {
+    "id": "412",
+    "slug": "energy-ball",
+    "slugLoc": "bola-de-energia",
+    "name": "Bola de Energía",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel\nla Defensa Especial del objetivo."
+  },
+  {
+    "id": "413",
+    "slug": "brave-bird",
+    "slugLoc": "ave-brava",
+    "name": "Ave Brava",
+    "description": "El usuario recibe un 33.3% del daño que causa."
+  },
+  {
+    "id": "414",
+    "slug": "earth-power",
+    "slugLoc": "poder-terrestre",
+    "name": "Poder Terrestre",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel\nla Defensa Especial del objetivo."
+  },
+  {
+    "id": "415",
+    "slug": "switcheroo",
+    "slugLoc": "trueque",
+    "name": "Trueque",
+    "description": "Intercambia los objetos del usuario y el objetivo."
+  },
+  {
+    "id": "416",
+    "slug": "giga-impact",
+    "slugLoc": "gigaimpacto",
+    "name": "Gigaimpacto",
+    "description": "El usuario adquiere el estado Descansando en el\nsiguiente turno."
+  },
+  {
+    "id": "417",
+    "slug": "nasty-plot",
+    "slugLoc": "maquinacion",
+    "name": "Maquinación",
+    "description": "Aumenta dos niveles el Ataque Especial del usuario."
+  },
+  {
+    "id": "418",
+    "slug": "bullet-punch",
+    "slugLoc": "puno-bala",
+    "name": "Puño Bala",
+    "description": ""
+  },
+  {
+    "id": "419",
+    "slug": "avalanche",
+    "slugLoc": "alud",
+    "name": "Alud",
+    "description": "Su potencia se duplica si el usuario recibió daño de\nun movimiento del objetivo en ese mismo turno."
+  },
+  {
+    "id": "420",
+    "slug": "ice-shard",
+    "slugLoc": "esquirla-helada",
+    "name": "Esquirla Helada",
+    "description": ""
+  },
+  {
+    "id": "421",
+    "slug": "shadow-claw",
+    "slugLoc": "garra-de-sombra",
+    "name": "Garra de Sombra",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "422",
+    "slug": "thunder-fang",
+    "slugLoc": "colmillo-trueno",
+    "name": "Colmillo Trueno",
+    "description": "Tiene una probabilidad del 10% de paralizar al objetivo\ny una probabilidad del 10% de atemorizarlo."
+  },
+  {
+    "id": "423",
+    "slug": "ice-fang",
+    "slugLoc": "colmillo-hielo",
+    "name": "Colmillo Hielo",
+    "description": "Tiene una probabilidad del 10% de congelar al objetivo\ny una probabilidad del 10% de atemorizarlo."
+  },
+  {
+    "id": "424",
+    "slug": "fire-fang",
+    "slugLoc": "colmillo-fuego",
+    "name": "Colmillo Fuego",
+    "description": "Tiene una probabilidad del 10% de quemar al objetivo\ny una probabilidad del 10% de atemorizarlo."
+  },
+  {
+    "id": "425",
+    "slug": "shadow-sneak",
+    "slugLoc": "sombra-vil",
+    "name": "Sombra Vil",
+    "description": ""
+  },
+  {
+    "id": "426",
+    "slug": "mud-bomb",
+    "slugLoc": "bomba-fango",
+    "name": "Bomba Fango",
+    "description": ""
+  },
+  {
+    "id": "427",
+    "slug": "psycho-cut",
+    "slugLoc": "psicocorte",
+    "name": "Psicocorte",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "428",
+    "slug": "zen-headbutt",
+    "slugLoc": "cabezazo-zen",
+    "name": "Cabezazo Zen",
+    "description": "Tiene una probabilidad del 20% de atemorizar al objetivo."
+  },
+  {
+    "id": "429",
+    "slug": "mirror-shot",
+    "slugLoc": "disparo-espejo",
+    "name": "Disparo Espejo",
+    "description": ""
+  },
+  {
+    "id": "430",
+    "slug": "flash-cannon",
+    "slugLoc": "canon-resplandor",
+    "name": "Cañón Resplandor",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel\nla Defensa Especial del objetivo."
+  },
+  {
+    "id": "431",
+    "slug": "rock-climb",
+    "slugLoc": "treparrocas",
+    "name": "Treparrocas",
+    "description": ""
+  },
+  {
+    "id": "432",
+    "slug": "defog",
+    "slugLoc": "desempanar",
+    "name": "Desempañar",
+    "description": "Reduce un nivel la Evasión del objetivo. Elimina los estados\nReflejo, Púas y Velo Sagrado, entre otros, así como el campo\nactivo en el terreno de combate."
+  },
+  {
+    "id": "433",
+    "slug": "trick-room",
+    "slugLoc": "espacio-raro",
+    "name": "Espacio Raro",
+    "description": "Provoca el estado Espacio Raro en ambos lados durante\ncinco turnos."
+  },
+  {
+    "id": "434",
+    "slug": "draco-meteor",
+    "slugLoc": "meteoro-dragon",
+    "name": "Meteoro Dragón",
+    "description": "Reduce dos niveles el Ataque Especial del usuario."
+  },
+  {
+    "id": "435",
+    "slug": "discharge",
+    "slugLoc": "chispazo",
+    "name": "Chispazo",
+    "description": "Tiene una probabilidad del 30% de paralizar al objetivo."
+  },
+  {
+    "id": "436",
+    "slug": "lava-plume",
+    "slugLoc": "bomba-de-lava",
+    "name": "Bomba de Lava",
+    "description": "Tiene una probabilidad del 30% de quemar al objetivo."
+  },
+  {
+    "id": "437",
+    "slug": "leaf-storm",
+    "slugLoc": "tormenta-de-hojas",
+    "name": "Tormenta de Hojas",
+    "description": "Reduce dos niveles el Ataque Especial del usuario."
+  },
+  {
+    "id": "438",
+    "slug": "power-whip",
+    "slugLoc": "latigazo",
+    "name": "Latigazo",
+    "description": ""
+  },
+  {
+    "id": "439",
+    "slug": "rock-wrecker",
+    "slugLoc": "romperrocas",
+    "name": "Romperrocas",
+    "description": "El usuario adquiere el estado Descansando en el siguiente\nturno."
+  },
+  {
+    "id": "440",
+    "slug": "cross-poison",
+    "slugLoc": "veneno-x",
+    "name": "Veneno X",
+    "description": "Tiene una probabilidad del 10% de envenenar al objetivo.\nAumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "441",
+    "slug": "gunk-shot",
+    "slugLoc": "lanzamugre",
+    "name": "Lanzamugre",
+    "description": "Tiene una probabilidad del 30% de envenenar al objetivo."
+  },
+  {
+    "id": "442",
+    "slug": "iron-head",
+    "slugLoc": "cabeza-de-hierro",
+    "name": "Cabeza de Hierro",
+    "description": "Tiene una probabilidad del 20% de atemorizar al objetivo."
+  },
+  {
+    "id": "443",
+    "slug": "magnet-bomb",
+    "slugLoc": "magnetobomba",
+    "name": "Magnetobomba",
+    "description": ""
+  },
+  {
+    "id": "444",
+    "slug": "stone-edge",
+    "slugLoc": "roca-afilada",
+    "name": "Roca Afilada",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "445",
+    "slug": "captivate",
+    "slugLoc": "seduccion",
+    "name": "Seducción",
+    "description": ""
+  },
+  {
+    "id": "446",
+    "slug": "stealth-rock",
+    "slugLoc": "trampa-de-rocas",
+    "name": "Trampa de Rocas",
+    "description": "Provoca el estado Trampa de Rocas en el lado rival."
+  },
+  {
+    "id": "447",
+    "slug": "grass-knot",
+    "slugLoc": "nudo-de-pasto",
+    "name": "Nudo de Pasto",
+    "description": "Tiene mayor potencia entre más pesado sea el objetivo,\ncon un rango entre 20 y 120."
+  },
+  {
+    "id": "448",
+    "slug": "chatter",
+    "slugLoc": "parloteo",
+    "name": "Parloteo",
+    "description": ""
+  },
+  {
+    "id": "449",
+    "slug": "judgment",
+    "slugLoc": "juicio-final",
+    "name": "Juicio Final",
+    "description": ""
+  },
+  {
+    "id": "450",
+    "slug": "bug-bite",
+    "slugLoc": "picadura",
+    "name": "Picadura",
+    "description": "Si el objetivo lleva una baya, el usuario la consume y obtiene\nsus efectos."
+  },
+  {
+    "id": "451",
+    "slug": "charge-beam",
+    "slugLoc": "rayo-carga",
+    "name": "Rayo Carga",
+    "description": "Tiene una probabilidad del 70% de aumentar un nivel\nel Ataque Especial del usuario."
+  },
+  {
+    "id": "452",
+    "slug": "wood-hammer",
+    "slugLoc": "mazazo",
+    "name": "Mazazo",
+    "description": "El usuario recibe un 33.3% del daño que causa."
+  },
+  {
+    "id": "453",
+    "slug": "aqua-jet",
+    "slugLoc": "acuajet",
+    "name": "Acuajet",
+    "description": ""
+  },
+  {
+    "id": "454",
+    "slug": "attack-order",
+    "slugLoc": "al-ataque",
+    "name": "Al Ataque",
+    "description": ""
+  },
+  {
+    "id": "455",
+    "slug": "defend-order",
+    "slugLoc": "a-defender",
+    "name": "A Defender",
+    "description": ""
+  },
+  {
+    "id": "456",
+    "slug": "heal-order",
+    "slugLoc": "auxilio",
+    "name": "Auxilio",
+    "description": ""
+  },
+  {
+    "id": "457",
+    "slug": "head-smash",
+    "slugLoc": "topetazo",
+    "name": "Topetazo",
+    "description": "El usuario recibe un 50% del daño que causa."
+  },
+  {
+    "id": "458",
+    "slug": "double-hit",
+    "slugLoc": "doble-golpe",
+    "name": "Doble Golpe",
+    "description": "Ataca dos veces seguidas."
+  },
+  {
+    "id": "459",
+    "slug": "roar-of-time",
+    "slugLoc": "rugido-temporal",
+    "name": "Rugido Temporal",
+    "description": ""
+  },
+  {
+    "id": "460",
+    "slug": "spacial-rend",
+    "slugLoc": "corte-espacial",
+    "name": "Corte Espacial",
+    "description": ""
+  },
+  {
+    "id": "461",
+    "slug": "lunar-dance",
+    "slugLoc": "danza-de-la-luna",
+    "name": "Danza de la Luna",
+    "description": ""
+  },
+  {
+    "id": "462",
+    "slug": "crush-grip",
+    "slugLoc": "garra-aplastante",
+    "name": "Garra Aplastante",
+    "description": ""
+  },
+  {
+    "id": "463",
+    "slug": "magma-storm",
+    "slugLoc": "lluvia-ignea",
+    "name": "Lluvia Ígnea",
+    "description": ""
+  },
+  {
+    "id": "464",
+    "slug": "dark-void",
+    "slugLoc": "abismo-negro",
+    "name": "Abismo Negro",
+    "description": ""
+  },
+  {
+    "id": "465",
+    "slug": "seed-flare",
+    "slugLoc": "fulgor-semilla",
+    "name": "Fulgor Semilla",
+    "description": ""
+  },
+  {
+    "id": "466",
+    "slug": "ominous-wind",
+    "slugLoc": "viento-ominoso",
+    "name": "Viento Ominoso",
+    "description": ""
+  },
+  {
+    "id": "467",
+    "slug": "shadow-force",
+    "slugLoc": "golpe-umbrio",
+    "name": "Golpe Umbrío",
+    "description": ""
+  },
+  {
+    "id": "468",
+    "slug": "hone-claws",
+    "slugLoc": "afilagarras",
+    "name": "Afilagarras",
+    "description": ""
+  },
+  {
+    "id": "469",
+    "slug": "wide-guard",
+    "slugLoc": "guardia-amplia",
+    "name": "Guardia Amplia",
+    "description": "Protege al usuario y a sus aliados de los movimientos que\nafectarían a todos los aliados durante ese turno."
+  },
+  {
+    "id": "470",
+    "slug": "guard-split",
+    "slugLoc": "guardia-dividida",
+    "name": "Guardia Dividida",
+    "description": "Combina los valores de la Defensa y la Defensa Especial\ndel usuario con los del objetivo y los reparte en partes iguales."
+  },
+  {
+    "id": "471",
+    "slug": "power-split",
+    "slugLoc": "fuerza-dividida",
+    "name": "Fuerza Dividida",
+    "description": "Combina los valores del Ataque y el Ataque Especial del usuario\ncon los del objetivo y los reparte en partes iguales."
+  },
+  {
+    "id": "472",
+    "slug": "wonder-room",
+    "slugLoc": "zona-extrana",
+    "name": "Zona Extraña",
+    "description": "Provoca el estado Zona Extraña en ambos lados durante\ncinco turnos."
+  },
+  {
+    "id": "473",
+    "slug": "psyshock",
+    "slugLoc": "choque-psiquico",
+    "name": "Choque Psíquico",
+    "description": "A pesar de ser un ataque especial, el daño que causa se calcula\ncon el valor de la Defensa del objetivo."
+  },
+  {
+    "id": "474",
+    "slug": "venoshock",
+    "slugLoc": "carga-toxica",
+    "name": "Carga Tóxica",
+    "description": "Su potencia se duplica si el objetivo está envenenado\no gravemente envenenado."
+  },
+  {
+    "id": "475",
+    "slug": "autotomize",
+    "slugLoc": "aligerar",
+    "name": "Aligerar",
+    "description": ""
+  },
+  {
+    "id": "476",
+    "slug": "rage-powder",
+    "slugLoc": "polvo-ira",
+    "name": "Polvo Ira",
+    "description": "Concentra sobre el usuario todos los movimientos de los rivales.\nSolo tiene efecto con movimientos que permiten seleccionar\na un objetivo."
+  },
+  {
+    "id": "477",
+    "slug": "telekinesis",
+    "slugLoc": "telequinesis",
+    "name": "Telequinesis",
+    "description": ""
+  },
+  {
+    "id": "478",
+    "slug": "magic-room",
+    "slugLoc": "zona-magica",
+    "name": "Zona Mágica",
+    "description": "Provoca el estado Zona Mágica en ambos lados durante\ncinco turnos."
+  },
+  {
+    "id": "479",
+    "slug": "smack-down",
+    "slugLoc": "antiaereo",
+    "name": "Antiaéreo",
+    "description": "Hace que los rivales que no están en contacto con el suelo\nadquieran el estado Derribado. Puede golpear a objetivos con\nel estado A gran altitud."
+  },
+  {
+    "id": "480",
+    "slug": "storm-throw",
+    "slugLoc": "llave-tempestad",
+    "name": "Llave Tempestad",
+    "description": "Siempre lanza un golpe crítico."
+  },
+  {
+    "id": "481",
+    "slug": "flame-burst",
+    "slugLoc": "golpe-de-fuego",
+    "name": "Golpe de Fuego",
+    "description": ""
+  },
+  {
+    "id": "482",
+    "slug": "sludge-wave",
+    "slugLoc": "ola-de-lodo",
+    "name": "Ola de Lodo",
+    "description": "Tiene una probabilidad del 10% de envenenar al objetivo."
+  },
+  {
+    "id": "483",
+    "slug": "quiver-dance",
+    "slugLoc": "danza-del-aleteo",
+    "name": "Danza del Aleteo",
+    "description": "Aumenta un nivel el Ataque Especial, la Defensa Especial\ny la Velocidad del usuario."
+  },
+  {
+    "id": "484",
+    "slug": "heavy-slam",
+    "slugLoc": "golpe-pesado",
+    "name": "Golpe Pesado",
+    "description": "Tiene mayor potencia entre más pesado sea el usuario en\ncomparación con el objetivo, con un rango entre 40 y 120.\nSu potencia se duplica y nunca falla contra objetivos con\nel estado Reducido."
+  },
+  {
+    "id": "485",
+    "slug": "synchronoise",
+    "slugLoc": "sincrorruido",
+    "name": "Sincrorruido",
+    "description": ""
+  },
+  {
+    "id": "486",
+    "slug": "electro-ball",
+    "slugLoc": "electrobola",
+    "name": "Electrobola",
+    "description": "Tiene mayor potencia entre mayor sea la Velocidad del\nusuario en comparación con la del objetivo, con un rango\nentre 40 y 150."
+  },
+  {
+    "id": "487",
+    "slug": "soak",
+    "slugLoc": "empapar",
+    "name": "Empapar",
+    "description": "Cambia el tipo del objetivo al tipo Agua."
+  },
+  {
+    "id": "488",
+    "slug": "flame-charge",
+    "slugLoc": "carga-de-fuego",
+    "name": "Carga de Fuego",
+    "description": "Aumenta un nivel la Velocidad del usuario."
+  },
+  {
+    "id": "489",
+    "slug": "coil",
+    "slugLoc": "enrosque",
+    "name": "Enrosque",
+    "description": "Aumenta un nivel el Ataque, la Defensa y la Precisión\ndel usuario."
+  },
+  {
+    "id": "490",
+    "slug": "low-sweep",
+    "slugLoc": "barredora",
+    "name": "Barredora",
+    "description": "Reduce un nivel la Velocidad del objetivo."
+  },
+  {
+    "id": "491",
+    "slug": "acid-spray",
+    "slugLoc": "bomba-acida",
+    "name": "Bomba Ácida",
+    "description": "Reduce dos niveles la Defensa Especial del objetivo."
+  },
+  {
+    "id": "492",
+    "slug": "foul-play",
+    "slugLoc": "juego-sucio",
+    "name": "Juego Sucio",
+    "description": "El daño que causa se calcula con el valor del Ataque del\nobjetivo en vez del valor del Ataque del usuario."
+  },
+  {
+    "id": "493",
+    "slug": "simple-beam",
+    "slugLoc": "onda-simple",
+    "name": "Onda Simple",
+    "description": "Sustituye la habilidad del objetivo por Simple."
+  },
+  {
+    "id": "494",
+    "slug": "entrainment",
+    "slugLoc": "danza-amiga",
+    "name": "Danza Amiga",
+    "description": "Sustituye la habilidad del objetivo por la del usuario."
+  },
+  {
+    "id": "495",
+    "slug": "after-you",
+    "slugLoc": "ceda-el-paso",
+    "name": "Ceda el Paso",
+    "description": "Hace que el objetivo actúe justo a continuación del usuario."
+  },
+  {
+    "id": "496",
+    "slug": "round",
+    "slugLoc": "canon",
+    "name": "Canon",
+    "description": "Si varios Pokémon usan este movimiento en un mismo turno,\natacarán uno a continuación del otro. Además, se duplica la\npotencia del movimiento a partir del segundo Pokémon que\nlo use."
+  },
+  {
+    "id": "497",
+    "slug": "echoed-voice",
+    "slugLoc": "eco-voz",
+    "name": "Eco Voz",
+    "description": ""
+  },
+  {
+    "id": "498",
+    "slug": "chip-away",
+    "slugLoc": "guardia-baja",
+    "name": "Guardia Baja",
+    "description": ""
+  },
+  {
+    "id": "499",
+    "slug": "clear-smog",
+    "slugLoc": "humo-claro",
+    "name": "Humo Claro",
+    "description": "Elimina los cambios en las características del objetivo.\nNunca falla."
+  },
+  {
+    "id": "500",
+    "slug": "stored-power",
+    "slugLoc": "poder-acumulado",
+    "name": "Poder Acumulado",
+    "description": "Aumenta en 20 su potencia por cada nivel de incremento\nen las características del usuario."
+  },
+  {
+    "id": "501",
+    "slug": "quick-guard",
+    "slugLoc": "defensa-rapida",
+    "name": "Defensa Rápida",
+    "description": "Protege al usuario y a sus aliados de movimientos de prioridad\nalta durante ese turno."
+  },
+  {
+    "id": "502",
+    "slug": "ally-switch",
+    "slugLoc": "cambio-de-lado",
+    "name": "Cambio de Lado",
+    "description": "Intercambia la posición del usuario con la de un aliado.\nSi se usa de forma consecutiva, su probabilidad de éxito\nse reduce a 33.3% con respecto a la probabilidad\nanterior."
+  },
+  {
+    "id": "503",
+    "slug": "scald",
+    "slugLoc": "escaldar",
+    "name": "Escaldar",
+    "description": "Tiene una probabilidad del 30% de quemar al objetivo.\nElimina la congelación del usuario y el objetivo."
+  },
+  {
+    "id": "504",
+    "slug": "shell-smash",
+    "slugLoc": "rompecoraza",
+    "name": "Rompecoraza",
+    "description": "Reduce un nivel la Defensa y la Defensa Especial del usuario\ny aumenta dos niveles su Ataque, su Ataque Especial\ny su Velocidad."
+  },
+  {
+    "id": "505",
+    "slug": "heal-pulse",
+    "slugLoc": "pulso-sanador",
+    "name": "Pulso Sanador",
+    "description": "Restaura un 50% de los PS máximos del objetivo."
+  },
+  {
+    "id": "506",
+    "slug": "hex",
+    "slugLoc": "infortunio",
+    "name": "Infortunio",
+    "description": "Su potencia se duplica si el objetivo sufre un problema de\nestado."
+  },
+  {
+    "id": "507",
+    "slug": "sky-drop",
+    "slugLoc": "caida-libre",
+    "name": "Caída Libre",
+    "description": ""
+  },
+  {
+    "id": "508",
+    "slug": "shift-gear",
+    "slugLoc": "cambio-de-marcha",
+    "name": "Cambio de Marcha",
+    "description": ""
+  },
+  {
+    "id": "509",
+    "slug": "circle-throw",
+    "slugLoc": "llave-giro",
+    "name": "Llave Giro",
+    "description": "Obliga al objetivo a ser cambiado por otro Pokémon de su\nequipo al azar si hay alguno que pueda sustituirlo."
+  },
+  {
+    "id": "510",
+    "slug": "incinerate",
+    "slugLoc": "incinerar",
+    "name": "Incinerar",
+    "description": ""
+  },
+  {
+    "id": "511",
+    "slug": "quash",
+    "slugLoc": "ultimo-lugar",
+    "name": "Último Lugar",
+    "description": "Hace que el objetivo actúe de último en ese turno."
+  },
+  {
+    "id": "512",
+    "slug": "acrobatics",
+    "slugLoc": "acrobacia",
+    "name": "Acrobacia",
+    "description": "Su potencia se duplica si el usuario no lleva un objeto."
+  },
+  {
+    "id": "513",
+    "slug": "reflect-type",
+    "slugLoc": "clonatipo",
+    "name": "Clonatipo",
+    "description": "Cambia el tipo del usuario al tipo del objetivo."
+  },
+  {
+    "id": "514",
+    "slug": "retaliate",
+    "slugLoc": "represalia",
+    "name": "Represalia",
+    "description": ""
+  },
+  {
+    "id": "515",
+    "slug": "final-gambit",
+    "slugLoc": "sacrificio",
+    "name": "Sacrificio",
+    "description": "Causa una cantidad de daño equivalente a los PS restantes del\nusuario. El usuario se debilita tras usar este movimiento."
+  },
+  {
+    "id": "516",
+    "slug": "bestow",
+    "slugLoc": "ofrenda",
+    "name": "Ofrenda",
+    "description": ""
+  },
+  {
+    "id": "517",
+    "slug": "inferno",
+    "slugLoc": "infierno",
+    "name": "Infierno",
+    "description": "Quema al objetivo."
+  },
+  {
+    "id": "518",
+    "slug": "water-pledge",
+    "slugLoc": "voto-agua",
+    "name": "Voto Agua",
+    "description": ""
+  },
+  {
+    "id": "519",
+    "slug": "fire-pledge",
+    "slugLoc": "voto-fuego",
+    "name": "Voto Fuego",
+    "description": ""
+  },
+  {
+    "id": "520",
+    "slug": "grass-pledge",
+    "slugLoc": "voto-planta",
+    "name": "Voto Planta",
+    "description": ""
+  },
+  {
+    "id": "521",
+    "slug": "volt-switch",
+    "slugLoc": "cambiavoltaje",
+    "name": "Cambiavoltaje",
+    "description": "El usuario se cambia por otro Pokémon del equipo luego\nde atacar."
+  },
+  {
+    "id": "522",
+    "slug": "struggle-bug",
+    "slugLoc": "lucha-insecto",
+    "name": "Lucha Insecto",
+    "description": "Reduce un nivel el Ataque Especial del objetivo."
+  },
+  {
+    "id": "523",
+    "slug": "bulldoze",
+    "slugLoc": "terratemblor",
+    "name": "Terratemblor",
+    "description": "Reduce un nivel la Velocidad del objetivo. Su potencia\nse reduce a la mitad cuando hay un campo de césped\nactivo en el terreno de combate."
+  },
+  {
+    "id": "524",
+    "slug": "frost-breath",
+    "slugLoc": "vaho-helado",
+    "name": "Vaho Helado",
+    "description": "Siempre lanza un golpe crítico."
+  },
+  {
+    "id": "525",
+    "slug": "dragon-tail",
+    "slugLoc": "cola-de-dragon",
+    "name": "Cola de Dragón",
+    "description": "Obliga al objetivo a ser cambiado por otro Pokémon de su\nequipo al azar si hay alguno que pueda sustituirlo."
+  },
+  {
+    "id": "526",
+    "slug": "work-up",
+    "slugLoc": "avivar",
+    "name": "Avivar",
+    "description": ""
+  },
+  {
+    "id": "527",
+    "slug": "electroweb",
+    "slugLoc": "electrotela",
+    "name": "Electrotela",
+    "description": "Reduce un nivel la Velocidad del objetivo."
+  },
+  {
+    "id": "528",
+    "slug": "wild-charge",
+    "slugLoc": "carga-salvaje",
+    "name": "Carga Salvaje",
+    "description": "El usuario recibe 25% del daño que causa."
+  },
+  {
+    "id": "529",
+    "slug": "drill-run",
+    "slugLoc": "taladradora",
+    "name": "Taladradora",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "530",
+    "slug": "dual-chop",
+    "slugLoc": "golpe-dual",
+    "name": "Golpe Dual",
+    "description": ""
+  },
+  {
+    "id": "531",
+    "slug": "heart-stamp",
+    "slugLoc": "sello-de-corazon",
+    "name": "Sello de Corazón",
+    "description": ""
+  },
+  {
+    "id": "532",
+    "slug": "horn-leech",
+    "slugLoc": "drenacuerno",
+    "name": "Drenacuerno",
+    "description": "El usuario recupera una cantidad de PS equivalente al 50%\ndel daño que causa."
+  },
+  {
+    "id": "533",
+    "slug": "sacred-sword",
+    "slugLoc": "espada-sagrada",
+    "name": "Espada Sagrada",
+    "description": "Ignora los cambios en las características del objetivo al \ncausar daño."
+  },
+  {
+    "id": "534",
+    "slug": "razor-shell",
+    "slugLoc": "coraza-afilada",
+    "name": "Coraza Afilada",
+    "description": "Tiene una probabilidad del 50% de reducir un nivel\nla Defensa del objetivo."
+  },
+  {
+    "id": "535",
+    "slug": "heat-crash",
+    "slugLoc": "golpe-de-calor",
+    "name": "Golpe de Calor",
+    "description": "Tiene mayor potencia entre más pesado sea el usuario en\ncomparación con el objetivo, con un rango entre 40 y 120.\nSu potencia se duplica y nunca falla contra objetivos con\nel estado Reducido."
+  },
+  {
+    "id": "536",
+    "slug": "leaf-tornado",
+    "slugLoc": "ciclon-de-hojas",
+    "name": "Ciclón de Hojas",
+    "description": ""
+  },
+  {
+    "id": "537",
+    "slug": "steamroller",
+    "slugLoc": "aplanadora",
+    "name": "Aplanadora",
+    "description": ""
+  },
+  {
+    "id": "538",
+    "slug": "cotton-guard",
+    "slugLoc": "guardialgodon",
+    "name": "Guardialgodón",
+    "description": "Aumenta tres niveles la Defensa del usuario."
+  },
+  {
+    "id": "539",
+    "slug": "night-daze",
+    "slugLoc": "pulso-nocturno",
+    "name": "Pulso Nocturno",
+    "description": "Tiene una probabilidad del 40% de reducir un nivel la Precisión\ndel objetivo."
+  },
+  {
+    "id": "540",
+    "slug": "psystrike",
+    "slugLoc": "onda-mental",
+    "name": "Onda Mental",
+    "description": ""
+  },
+  {
+    "id": "541",
+    "slug": "tail-slap",
+    "slugLoc": "golpe-de-cola",
+    "name": "Golpe de Cola",
+    "description": "Ataca de dos a cinco veces seguidas."
+  },
+  {
+    "id": "542",
+    "slug": "hurricane",
+    "slugLoc": "huracan",
+    "name": "Huracán",
+    "description": "Tiene una probabilidad del 30% de confundir al objetivo.\nNunca falla cuando llueve. Puede golpear a objetivos con\nel estado A gran altitud."
+  },
+  {
+    "id": "543",
+    "slug": "head-charge",
+    "slugLoc": "carga-de-cabeza",
+    "name": "Carga de Cabeza",
+    "description": ""
+  },
+  {
+    "id": "544",
+    "slug": "gear-grind",
+    "slugLoc": "rueda-doble",
+    "name": "Rueda Doble",
+    "description": ""
+  },
+  {
+    "id": "545",
+    "slug": "searing-shot",
+    "slugLoc": "bomba-ignea",
+    "name": "Bomba Ígnea",
+    "description": ""
+  },
+  {
+    "id": "546",
+    "slug": "techno-blast",
+    "slugLoc": "tecno-shock",
+    "name": "Tecno Shock",
+    "description": ""
+  },
+  {
+    "id": "547",
+    "slug": "relic-song",
+    "slugLoc": "canto-arcaico",
+    "name": "Canto Arcaico",
+    "description": ""
+  },
+  {
+    "id": "548",
+    "slug": "secret-sword",
+    "slugLoc": "espada-secreta",
+    "name": "Espada Secreta",
+    "description": ""
+  },
+  {
+    "id": "549",
+    "slug": "glaciate",
+    "slugLoc": "mundo-gelido",
+    "name": "Mundo Gélido",
+    "description": ""
+  },
+  {
+    "id": "550",
+    "slug": "bolt-strike",
+    "slugLoc": "ataque-fulgor",
+    "name": "Ataque Fulgor",
+    "description": ""
+  },
+  {
+    "id": "551",
+    "slug": "blue-flare",
+    "slugLoc": "llama-azul",
+    "name": "Llama Azul",
+    "description": ""
+  },
+  {
+    "id": "552",
+    "slug": "fiery-dance",
+    "slugLoc": "danza-de-llamas",
+    "name": "Danza de Llamas",
+    "description": "Tiene una probabilidad del 50% de aumentar un nivel\nel Ataque Especial del usuario."
+  },
+  {
+    "id": "553",
+    "slug": "freeze-shock",
+    "slugLoc": "rayo-gelido",
+    "name": "Rayo Gélido",
+    "description": ""
+  },
+  {
+    "id": "554",
+    "slug": "ice-burn",
+    "slugLoc": "llama-gelida",
+    "name": "Llama Gélida",
+    "description": ""
+  },
+  {
+    "id": "555",
+    "slug": "snarl",
+    "slugLoc": "alarido",
+    "name": "Alarido",
+    "description": "Reduce un nivel el Ataque Especial del objetivo."
+  },
+  {
+    "id": "556",
+    "slug": "icicle-crash",
+    "slugLoc": "carambano",
+    "name": "Carámbano",
+    "description": "Tiene una probabilidad del 30% de atemorizar al objetivo."
+  },
+  {
+    "id": "557",
+    "slug": "v-create",
+    "slugLoc": "v-de-fuego",
+    "name": "V de Fuego",
+    "description": ""
+  },
+  {
+    "id": "558",
+    "slug": "fusion-flare",
+    "slugLoc": "llama-fusion",
+    "name": "Llama Fusión",
+    "description": ""
+  },
+  {
+    "id": "559",
+    "slug": "fusion-bolt",
+    "slugLoc": "rayo-fusion",
+    "name": "Rayo Fusión",
+    "description": ""
+  },
+  {
+    "id": "560",
+    "slug": "flying-press",
+    "slugLoc": "plancha-voladora",
+    "name": "Plancha Voladora",
+    "description": "El daño que causa se calcula con la compatibilidad entre tipos\ndel tipo de este movimiento y la del tipo Volador. Su potencia\nse duplica y nunca falla contra objetivos con el \nestado Reducido."
+  },
+  {
+    "id": "561",
+    "slug": "mat-block",
+    "slugLoc": "escudo-tatami",
+    "name": "Escudo Tatami",
+    "description": ""
+  },
+  {
+    "id": "562",
+    "slug": "belch",
+    "slugLoc": "eructo",
+    "name": "Eructo",
+    "description": "Falla si el usuario consumió una baya durante\nel combate."
+  },
+  {
+    "id": "563",
+    "slug": "rototiller",
+    "slugLoc": "fertilizante",
+    "name": "Fertilizante",
+    "description": ""
+  },
+  {
+    "id": "564",
+    "slug": "sticky-web",
+    "slugLoc": "red-pegajosa",
+    "name": "Red Pegajosa",
+    "description": "Provoca el estado Red Pegajosa en el lado rival."
+  },
+  {
+    "id": "565",
+    "slug": "fell-stinger",
+    "slugLoc": "aguijon-letal",
+    "name": "Aguijón Letal",
+    "description": "Aumenta tres niveles el Ataque del usuario si debilita al objetivo\ncon este movimiento."
+  },
+  {
+    "id": "566",
+    "slug": "phantom-force",
+    "slugLoc": "golpe-fantasma",
+    "name": "Golpe Fantasma",
+    "description": "El usuario adquiere el estado Oculto en el turno en el que\nusa este movimiento y ataca en el siguiente. Puede golpear\na objetivos que hayan usado movimientos como Protección\no Detección y elimina sus efectos."
+  },
+  {
+    "id": "567",
+    "slug": "trick-or-treat",
+    "slugLoc": "halloween",
+    "name": "Halloween",
+    "description": "Provoca el estado Halloween en el objetivo."
+  },
+  {
+    "id": "568",
+    "slug": "noble-roar",
+    "slugLoc": "rugido-de-guerra",
+    "name": "Rugido de Guerra",
+    "description": "Reduce un nivel el Ataque y el Ataque Especial del objetivo."
+  },
+  {
+    "id": "569",
+    "slug": "ion-deluge",
+    "slugLoc": "cortina-plasma",
+    "name": "Cortina Plasma",
+    "description": ""
+  },
+  {
+    "id": "570",
+    "slug": "parabolic-charge",
+    "slugLoc": "carga-parabolica",
+    "name": "Carga Parabólica",
+    "description": "El usuario recupera una cantidad de PS equivalente al 50%\ndel daño que causa."
+  },
+  {
+    "id": "571",
+    "slug": "forests-curse",
+    "slugLoc": "condena-silvana",
+    "name": "Condena Silvana",
+    "description": "Provoca el estado Condena Silvana en el objetivo."
+  },
+  {
+    "id": "572",
+    "slug": "petal-blizzard",
+    "slugLoc": "tormenta-de-petalos",
+    "name": "Tormenta de Pétalos",
+    "description": ""
+  },
+  {
+    "id": "573",
+    "slug": "freeze-dry",
+    "slugLoc": "liofilizacion",
+    "name": "Liofilización",
+    "description": "Es supereficaz contra Pokémon de tipo Agua."
+  },
+  {
+    "id": "574",
+    "slug": "disarming-voice",
+    "slugLoc": "voz-encantadora",
+    "name": "Voz Encantadora",
+    "description": ""
+  },
+  {
+    "id": "575",
+    "slug": "parting-shot",
+    "slugLoc": "ultima-palabra",
+    "name": "Última Palabra",
+    "description": "El usuario cambia a otro Pokémon del equipo luego de\nreducir un nivel el Ataque y el Ataque Especial del objetivo."
+  },
+  {
+    "id": "576",
+    "slug": "topsy-turvy",
+    "slugLoc": "reversion",
+    "name": "Reversión",
+    "description": ""
+  },
+  {
+    "id": "577",
+    "slug": "draining-kiss",
+    "slugLoc": "beso-drenador",
+    "name": "Beso Drenador",
+    "description": "El usuario recupera una cantidad de PS equivalente al 75% \ndel daño que causa."
+  },
+  {
+    "id": "578",
+    "slug": "crafty-shield",
+    "slugLoc": "truco-defensa",
+    "name": "Truco Defensa",
+    "description": ""
+  },
+  {
+    "id": "579",
+    "slug": "flower-shield",
+    "slugLoc": "defensa-floral",
+    "name": "Defensa Floral",
+    "description": ""
+  },
+  {
+    "id": "580",
+    "slug": "grassy-terrain",
+    "slugLoc": "campo-de-cesped",
+    "name": "Campo de Césped",
+    "description": "Crea un campo de césped en el terreno de combate durante\ncinco turnos."
+  },
+  {
+    "id": "581",
+    "slug": "misty-terrain",
+    "slugLoc": "campo-de-niebla",
+    "name": "Campo de Niebla",
+    "description": "Crea un campo de niebla en el terreno de combate durante\ncinco turnos."
+  },
+  {
+    "id": "582",
+    "slug": "electrify",
+    "slugLoc": "electrificacion",
+    "name": "Electrificación",
+    "description": "Si acierta al objetivo antes de que use un movimiento,\nsu movimiento pasará a ser de tipo Eléctrico durante ese turno."
+  },
+  {
+    "id": "583",
+    "slug": "play-rough",
+    "slugLoc": "juego-rudo",
+    "name": "Juego Rudo",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel el Ataque\ndel objetivo."
+  },
+  {
+    "id": "584",
+    "slug": "fairy-wind",
+    "slugLoc": "viento-feerico",
+    "name": "Viento Feérico",
+    "description": ""
+  },
+  {
+    "id": "585",
+    "slug": "moonblast",
+    "slugLoc": "fuerza-lunar",
+    "name": "Fuerza Lunar",
+    "description": "Tiene una probabilidad del 10% de reducir un nivel\nel Ataque Especial del objetivo."
+  },
+  {
+    "id": "586",
+    "slug": "boomburst",
+    "slugLoc": "estruendo",
+    "name": "Estruendo",
+    "description": ""
+  },
+  {
+    "id": "587",
+    "slug": "fairy-lock",
+    "slugLoc": "cerrojo-feerico",
+    "name": "Cerrojo Feérico",
+    "description": "Provoca el estado Cerrojo Feérico en todos los Pokémon\nen combate."
+  },
+  {
+    "id": "588",
+    "slug": "kings-shield",
+    "slugLoc": "escudo-real",
+    "name": "Escudo Real",
+    "description": "El usuario cambia a su Forma Escudo y se protege de los\nataques durante ese turno. Reduce un nivel el Ataque del\nPokémon que golpee al usuario con un movimiento de contacto.\nSi se usa de forma consecutiva, su probabilidad de éxito\nse reduce a 33.3% con respecto a la probabilidad\nanterior."
+  },
+  {
+    "id": "589",
+    "slug": "play-nice",
+    "slugLoc": "camaraderia",
+    "name": "Camaradería",
+    "description": ""
+  },
+  {
+    "id": "590",
+    "slug": "confide",
+    "slugLoc": "confidencia",
+    "name": "Confidencia",
+    "description": ""
+  },
+  {
+    "id": "591",
+    "slug": "diamond-storm",
+    "slugLoc": "tormenta-de-diamantes",
+    "name": "Tormenta de Diamantes",
+    "description": ""
+  },
+  {
+    "id": "592",
+    "slug": "steam-eruption",
+    "slugLoc": "chorro-de-vapor",
+    "name": "Chorro de Vapor",
+    "description": ""
+  },
+  {
+    "id": "593",
+    "slug": "hyperspace-hole",
+    "slugLoc": "paso-dimensional",
+    "name": "Paso Dimensional",
+    "description": ""
+  },
+  {
+    "id": "594",
+    "slug": "water-shuriken",
+    "slugLoc": "shuriken-de-agua",
+    "name": "Shuriken de Agua",
+    "description": "Ataca de dos a cinco veces seguidas."
+  },
+  {
+    "id": "595",
+    "slug": "mystical-fire",
+    "slugLoc": "fuego-mistico",
+    "name": "Fuego Místico",
+    "description": "Reduce un nivel el Ataque Especial del objetivo."
+  },
+  {
+    "id": "596",
+    "slug": "spiky-shield",
+    "slugLoc": "barrera-espinosa",
+    "name": "Barrera Espinosa",
+    "description": "El usuario se protege de los ataques durante ese turno.\nEl Pokémon que golpee al usuario con un movimiento de\ncontacto pierde un 12.5% de sus PS máximos. Si se usa de\nforma consecutiva, la probabilidad de éxito del movimiento\nse reduce a 33.3% con respecto a la probabilidad anterior."
+  },
+  {
+    "id": "597",
+    "slug": "aromatic-mist",
+    "slugLoc": "niebla-aromatica",
+    "name": "Niebla Aromática",
+    "description": "Aumenta un nivel la Defensa Especial de un aliado."
+  },
+  {
+    "id": "598",
+    "slug": "eerie-impulse",
+    "slugLoc": "onda-anomala",
+    "name": "Onda Anómala",
+    "description": "Reduce dos niveles el Ataque Especial del objetivo."
+  },
+  {
+    "id": "599",
+    "slug": "venom-drench",
+    "slugLoc": "trampa-venenosa",
+    "name": "Trampa Venenosa",
+    "description": ""
+  },
+  {
+    "id": "600",
+    "slug": "powder",
+    "slugLoc": "polvora",
+    "name": "Pólvora",
+    "description": ""
+  },
+  {
+    "id": "601",
+    "slug": "geomancy",
+    "slugLoc": "geocontrol",
+    "name": "Geocontrol",
+    "description": ""
+  },
+  {
+    "id": "602",
+    "slug": "magnetic-flux",
+    "slugLoc": "aura-magnetica",
+    "name": "Aura Magnética",
+    "description": "Aumenta un nivel la Defensa y la Defensa Especial del usuario\ny sus aliados si tienen la habilidad Más o la habilidad Menos."
+  },
+  {
+    "id": "603",
+    "slug": "happy-hour",
+    "slugLoc": "paga-extra",
+    "name": "Paga Extra",
+    "description": ""
+  },
+  {
+    "id": "604",
+    "slug": "electric-terrain",
+    "slugLoc": "campo-electrico",
+    "name": "Campo Eléctrico",
+    "description": "Crea un campo eléctrico en el terreno de combate durante\ncinco turnos."
+  },
+  {
+    "id": "605",
+    "slug": "dazzling-gleam",
+    "slugLoc": "brillo-magico",
+    "name": "Brillo Mágico",
+    "description": ""
+  },
+  {
+    "id": "606",
+    "slug": "celebrate",
+    "slugLoc": "celebracion",
+    "name": "Celebración",
+    "description": ""
+  },
+  {
+    "id": "607",
+    "slug": "hold-hands",
+    "slugLoc": "manos-juntas",
+    "name": "Manos Juntas",
+    "description": ""
+  },
+  {
+    "id": "608",
+    "slug": "baby-doll-eyes",
+    "slugLoc": "ojitos-tiernos",
+    "name": "Ojitos Tiernos",
+    "description": "Reduce un nivel el Ataque del objetivo."
+  },
+  {
+    "id": "609",
+    "slug": "nuzzle",
+    "slugLoc": "frote",
+    "name": "Frote",
+    "description": "Paraliza al objetivo."
+  },
+  {
+    "id": "610",
+    "slug": "hold-back",
+    "slugLoc": "clemencia",
+    "name": "Clemencia",
+    "description": ""
+  },
+  {
+    "id": "611",
+    "slug": "infestation",
+    "slugLoc": "infestacion",
+    "name": "Infestación",
+    "description": "Provoca el estado Apresado en el objetivo."
+  },
+  {
+    "id": "612",
+    "slug": "power-up-punch",
+    "slugLoc": "puno-incremento",
+    "name": "Puño Incremento",
+    "description": ""
+  },
+  {
+    "id": "613",
+    "slug": "oblivion-wing",
+    "slugLoc": "ala-del-olvido",
+    "name": "Ala del Olvido",
+    "description": ""
+  },
+  {
+    "id": "614",
+    "slug": "thousand-arrows",
+    "slugLoc": "mil-flechas",
+    "name": "Mil Flechas",
+    "description": ""
+  },
+  {
+    "id": "615",
+    "slug": "thousand-waves",
+    "slugLoc": "mil-temblores",
+    "name": "Mil Temblores",
+    "description": ""
+  },
+  {
+    "id": "616",
+    "slug": "lands-wrath",
+    "slugLoc": "fuerza-telurica",
+    "name": "Fuerza Telúrica",
+    "description": ""
+  },
+  {
+    "id": "617",
+    "slug": "light-of-ruin",
+    "slugLoc": "luz-aniquiladora",
+    "name": "Luz Aniquiladora",
+    "description": "El usuario recibe un 50% del daño que causa."
+  },
+  {
+    "id": "618",
+    "slug": "origin-pulse",
+    "slugLoc": "pulso-primigenio",
+    "name": "Pulso Primigenio",
+    "description": ""
+  },
+  {
+    "id": "619",
+    "slug": "precipice-blades",
+    "slugLoc": "filo-del-abismo",
+    "name": "Filo del Abismo",
+    "description": ""
+  },
+  {
+    "id": "620",
+    "slug": "dragon-ascent",
+    "slugLoc": "ascenso-draconico",
+    "name": "Ascenso Dracónico",
+    "description": ""
+  },
+  {
+    "id": "621",
+    "slug": "hyperspace-fury",
+    "slugLoc": "cerco-dimension",
+    "name": "Cerco Dimensión",
+    "description": ""
+  },
+  {
+    "id": "659",
+    "slug": "shore-up",
+    "slugLoc": "recogearena",
+    "name": "Recogearena",
+    "description": ""
+  },
+  {
+    "id": "660",
+    "slug": "first-impression",
+    "slugLoc": "escaramuza",
+    "name": "Escaramuza",
+    "description": "Falla si no es el primer movimiento que el usuario utiliza\nluego de entrar en combate."
+  },
+  {
+    "id": "661",
+    "slug": "baneful-bunker",
+    "slugLoc": "bunker",
+    "name": "Búnker",
+    "description": "Protege al usuario de los movimientos de los demás Pokémon\ndurante ese turno. Envenena al Pokémon que ataque al usuario\ncon un movimiento de contacto. Si se usa de forma consecutiva,\nsu probabilidad de éxito se reduce a 33.3% con respecto a la\nprobabilidad anterior."
+  },
+  {
+    "id": "662",
+    "slug": "spirit-shackle",
+    "slugLoc": "puntada-sombria",
+    "name": "Puntada Sombría",
+    "description": "Provoca el estado Huida imposible en el objetivo."
+  },
+  {
+    "id": "663",
+    "slug": "darkest-lariat",
+    "slugLoc": "lariat-oscuro",
+    "name": "Lariat Oscuro",
+    "description": "Ignora los cambios en las características del objetivo al\ncausar daño."
+  },
+  {
+    "id": "664",
+    "slug": "sparkling-aria",
+    "slugLoc": "aria-burbuja",
+    "name": "Aria Burbuja",
+    "description": "Elimina las quemaduras del objetivo."
+  },
+  {
+    "id": "665",
+    "slug": "ice-hammer",
+    "slugLoc": "martillo-hielo",
+    "name": "Martillo Hielo",
+    "description": "Reduce un nivel la Velocidad del usuario."
+  },
+  {
+    "id": "666",
+    "slug": "floral-healing",
+    "slugLoc": "flores-sanadoras",
+    "name": "Flores Sanadoras",
+    "description": ""
+  },
+  {
+    "id": "667",
+    "slug": "high-horsepower",
+    "slugLoc": "fuerza-equina",
+    "name": "Fuerza Equina",
+    "description": ""
+  },
+  {
+    "id": "668",
+    "slug": "strength-sap",
+    "slugLoc": "absorbefuerza",
+    "name": "Absorbefuerza",
+    "description": "El usuario recupera una cantidad de PS equivalente al valor\ndel Ataque del objetivo. Además, este movimiento reduce\nun nivel el Ataque del objetivo."
+  },
+  {
+    "id": "669",
+    "slug": "solar-blade",
+    "slugLoc": "cuchillada-solar",
+    "name": "Cuchillada Solar",
+    "description": "El usuario adquiere el estado Cargando en el turno en el que\nusa este movimiento y ataca en el siguiente. Si hace sol,\nno adquiere este estado y ataca inmediatamente. Si hay otro\ntiempo atmosférico activo, la potencia del movimiento se\nreduce un 50%."
+  },
+  {
+    "id": "670",
+    "slug": "leafage",
+    "slugLoc": "follaje",
+    "name": "Follaje",
+    "description": ""
+  },
+  {
+    "id": "671",
+    "slug": "spotlight",
+    "slugLoc": "foco",
+    "name": "Foco",
+    "description": ""
+  },
+  {
+    "id": "672",
+    "slug": "toxic-thread",
+    "slugLoc": "hilo-venenoso",
+    "name": "Hilo Venenoso",
+    "description": "Reduce dos niveles la Velocidad del objetivo y lo envenena."
+  },
+  {
+    "id": "673",
+    "slug": "laser-focus",
+    "slugLoc": "agudizar",
+    "name": "Agudizar",
+    "description": ""
+  },
+  {
+    "id": "674",
+    "slug": "gear-up",
+    "slugLoc": "engranajes",
+    "name": "Engranajes",
+    "description": ""
+  },
+  {
+    "id": "675",
+    "slug": "throat-chop",
+    "slugLoc": "golpe-al-cuello",
+    "name": "Golpe al Cuello",
+    "description": "Provoca el estado Golpe al Cuello en el objetivo."
+  },
+  {
+    "id": "676",
+    "slug": "pollen-puff",
+    "slugLoc": "bola-de-polen",
+    "name": "Bola de Polen",
+    "description": "Si se usa contra un aliado, restaura un 50% de sus PS máximos\nen vez de causarle daño."
+  },
+  {
+    "id": "677",
+    "slug": "anchor-shot",
+    "slugLoc": "anclaje",
+    "name": "Anclaje",
+    "description": ""
+  },
+  {
+    "id": "678",
+    "slug": "psychic-terrain",
+    "slugLoc": "campo-psiquico",
+    "name": "Campo Psíquico",
+    "description": "Crea un campo psíquico en el terreno de combate durante\ncinco turnos."
+  },
+  {
+    "id": "679",
+    "slug": "lunge",
+    "slugLoc": "plancha",
+    "name": "Plancha",
+    "description": "Reduce un nivel el Ataque del objetivo."
+  },
+  {
+    "id": "680",
+    "slug": "fire-lash",
+    "slugLoc": "latigo-igneo",
+    "name": "Látigo Ígneo",
+    "description": "Reduce un nivel la Defensa del objetivo."
+  },
+  {
+    "id": "681",
+    "slug": "power-trip",
+    "slugLoc": "arrogancia",
+    "name": "Arrogancia",
+    "description": "Aumenta en 20 su potencia por cada nivel de incremento\nen las características del usuario."
+  },
+  {
+    "id": "682",
+    "slug": "burn-up",
+    "slugLoc": "llama-final",
+    "name": "Llama Final",
+    "description": "El usuario deja de ser de tipo Fuego y se libra de la\ncongelación. Este movimiento falla si el usuario no es de \ntipo Fuego."
+  },
+  {
+    "id": "683",
+    "slug": "speed-swap",
+    "slugLoc": "cambiavelocidad",
+    "name": "Cambiavelocidad",
+    "description": "Intercambia la Velocidad del usuario y el objetivo."
+  },
+  {
+    "id": "684",
+    "slug": "smart-strike",
+    "slugLoc": "cuerno-certero",
+    "name": "Cuerno Certero",
+    "description": "Nunca falla."
+  },
+  {
+    "id": "685",
+    "slug": "purify",
+    "slugLoc": "purificacion",
+    "name": "Purificación",
+    "description": ""
+  },
+  {
+    "id": "686",
+    "slug": "revelation-dance",
+    "slugLoc": "danza-revelacion",
+    "name": "Danza Revelación",
+    "description": ""
+  },
+  {
+    "id": "687",
+    "slug": "core-enforcer",
+    "slugLoc": "nucleo-castigo",
+    "name": "Núcleo Castigo",
+    "description": ""
+  },
+  {
+    "id": "688",
+    "slug": "trop-kick",
+    "slugLoc": "patada-tropical",
+    "name": "Patada Tropical",
+    "description": "Reduce un nivel el Ataque del objetivo."
+  },
+  {
+    "id": "689",
+    "slug": "instruct",
+    "slugLoc": "mandato",
+    "name": "Mandato",
+    "description": "Fuerza al objetivo a repetir inmediatamente su último\nmovimiento."
+  },
+  {
+    "id": "690",
+    "slug": "beak-blast",
+    "slugLoc": "pico-canon",
+    "name": "Pico Cañón",
+    "description": "Si el usuario es alcanzado por un movimiento de contacto antes\nde golpear con este movimiento, quema al atacante."
+  },
+  {
+    "id": "691",
+    "slug": "clanging-scales",
+    "slugLoc": "fragor-escamas",
+    "name": "Fragor Escamas",
+    "description": "Reduce un nivel la Defensa del usuario."
+  },
+  {
+    "id": "692",
+    "slug": "dragon-hammer",
+    "slugLoc": "martillo-dragon",
+    "name": "Martillo Dragón",
+    "description": ""
+  },
+  {
+    "id": "693",
+    "slug": "brutal-swing",
+    "slugLoc": "giro-vil",
+    "name": "Giro Vil",
+    "description": ""
+  },
+  {
+    "id": "694",
+    "slug": "aurora-veil",
+    "slugLoc": "velo-aurora",
+    "name": "Velo Aurora",
+    "description": "Provoca el estado Velo Aurora en el lado del usuario durante\ncinco turnos. Solo se puede usar cuando nieva."
+  },
+  {
+    "id": "704",
+    "slug": "shell-trap",
+    "slugLoc": "trampa-coraza",
+    "name": "Trampa Coraza",
+    "description": ""
+  },
+  {
+    "id": "705",
+    "slug": "fleur-cannon",
+    "slugLoc": "canon-floral",
+    "name": "Cañón Floral",
+    "description": ""
+  },
+  {
+    "id": "706",
+    "slug": "psychic-fangs",
+    "slugLoc": "psicocolmillo",
+    "name": "Psicocolmillo",
+    "description": "Elimina los estados Pantalla de Luz, Reflejo y Velo Aurora\nen el lado del objetivo antes de causar daño."
+  },
+  {
+    "id": "707",
+    "slug": "stomping-tantrum",
+    "slugLoc": "pataleta",
+    "name": "Pataleta",
+    "description": "Su potencia se duplica si el usuario no pudo actuar o falló\nsu movimiento en el turno anterior."
+  },
+  {
+    "id": "708",
+    "slug": "shadow-bone",
+    "slugLoc": "hueso-sombrio",
+    "name": "Hueso Sombrío",
+    "description": ""
+  },
+  {
+    "id": "709",
+    "slug": "accelerock",
+    "slugLoc": "roca-veloz",
+    "name": "Roca Veloz",
+    "description": ""
+  },
+  {
+    "id": "710",
+    "slug": "liquidation",
+    "slugLoc": "hidroariete",
+    "name": "Hidroariete",
+    "description": "Tiene una probabilidad del 20% de reducir un nivel la Defensa\ndel objetivo."
+  },
+  {
+    "id": "711",
+    "slug": "prismatic-laser",
+    "slugLoc": "laser-prisma",
+    "name": "Láser Prisma",
+    "description": ""
+  },
+  {
+    "id": "712",
+    "slug": "spectral-thief",
+    "slugLoc": "robasombra",
+    "name": "Robasombra",
+    "description": ""
+  },
+  {
+    "id": "713",
+    "slug": "sunsteel-strike",
+    "slugLoc": "meteoimpacto",
+    "name": "Meteoimpacto",
+    "description": ""
+  },
+  {
+    "id": "714",
+    "slug": "moongeist-beam",
+    "slugLoc": "rayo-umbrio",
+    "name": "Rayo Umbrío",
+    "description": ""
+  },
+  {
+    "id": "715",
+    "slug": "tearful-look",
+    "slugLoc": "ojos-llorosos",
+    "name": "Ojos Llorosos",
+    "description": "Reduce un nivel el Ataque y el Ataque Especial del objetivo.\nIgnora la Evasión del objetivo y puede golpear a objetivos\nque hayan usado movimientos como Protección."
+  },
+  {
+    "id": "716",
+    "slug": "zing-zap",
+    "slugLoc": "electropunzada",
+    "name": "Electropunzada",
+    "description": ""
+  },
+  {
+    "id": "717",
+    "slug": "natures-madness",
+    "slugLoc": "ira-natural",
+    "name": "Ira Natural",
+    "description": ""
+  },
+  {
+    "id": "718",
+    "slug": "multi-attack",
+    "slugLoc": "multiataque",
+    "name": "Multiataque",
+    "description": ""
+  },
+  {
+    "id": "720",
+    "slug": "mind-blown",
+    "slugLoc": "cabeza-sorpresa",
+    "name": "Cabeza Sorpresa",
+    "description": ""
+  },
+  {
+    "id": "721",
+    "slug": "plasma-fists",
+    "slugLoc": "punos-plasma",
+    "name": "Puños Plasma",
+    "description": ""
+  },
+  {
+    "id": "722",
+    "slug": "photon-geyser",
+    "slugLoc": "geiser-fotonico",
+    "name": "Géiser Fotónico",
+    "description": ""
+  },
+  {
+    "id": "742",
+    "slug": "double-iron-bash",
+    "slugLoc": "ferropuno-doble",
+    "name": "Ferropuño Doble",
+    "description": ""
+  },
+  {
+    "id": "744",
+    "slug": "dynamax-cannon",
+    "slugLoc": "canon-dinamax",
+    "name": "Cañón Dinamax",
+    "description": ""
+  },
+  {
+    "id": "745",
+    "slug": "snipe-shot",
+    "slugLoc": "disparo-certero",
+    "name": "Disparo Certero",
+    "description": ""
+  },
+  {
+    "id": "746",
+    "slug": "jaw-lock",
+    "slugLoc": "presa-maxilar",
+    "name": "Presa Maxilar",
+    "description": ""
+  },
+  {
+    "id": "747",
+    "slug": "stuff-cheeks",
+    "slugLoc": "atiborramiento",
+    "name": "Atiborramiento",
+    "description": "El usuario consume la baya que lleva, lo que aumenta dos\nniveles su Defensa. Este movimiento no se puede usar si el\nusuario no lleva una baya."
+  },
+  {
+    "id": "748",
+    "slug": "no-retreat",
+    "slugLoc": "bastion-final",
+    "name": "Bastión Final",
+    "description": ""
+  },
+  {
+    "id": "749",
+    "slug": "tar-shot",
+    "slugLoc": "alquitranazo",
+    "name": "Alquitranazo",
+    "description": ""
+  },
+  {
+    "id": "750",
+    "slug": "magic-powder",
+    "slugLoc": "polvo-magia",
+    "name": "Polvo Magia",
+    "description": "Cambia el tipo del objetivo al tipo Psíquico."
+  },
+  {
+    "id": "751",
+    "slug": "dragon-darts",
+    "slugLoc": "dracoflechas",
+    "name": "Dracoflechas",
+    "description": "Ataca dos veces seguidas. Si hay dos rivales, ataca una vez\na cada uno."
+  },
+  {
+    "id": "752",
+    "slug": "teatime",
+    "slugLoc": "hora-del-te",
+    "name": "Hora del Té",
+    "description": "Todos los Pokémon en combate consumen las bayas que llevan."
+  },
+  {
+    "id": "753",
+    "slug": "octolock",
+    "slugLoc": "octopresa",
+    "name": "Octopresa",
+    "description": ""
+  },
+  {
+    "id": "754",
+    "slug": "bolt-beak",
+    "slugLoc": "electropico",
+    "name": "Electropico",
+    "description": ""
+  },
+  {
+    "id": "755",
+    "slug": "fishious-rend",
+    "slugLoc": "branquibocado",
+    "name": "Branquibocado",
+    "description": ""
+  },
+  {
+    "id": "756",
+    "slug": "court-change",
+    "slugLoc": "cambio-de-cancha",
+    "name": "Cambio de Cancha",
+    "description": ""
+  },
+  {
+    "id": "775",
+    "slug": "clangorous-soul",
+    "slugLoc": "estruendo-escama",
+    "name": "Estruendo Escama",
+    "description": "Sacrifica un 33.3% de los PS máximos del usuario para\naumentar un nivel su Ataque, su Defensa, su Ataque Especial,\nsu Defensa Especial y su Velocidad. Falla si el usuario no tiene\nsuficientes PS."
+  },
+  {
+    "id": "776",
+    "slug": "body-press",
+    "slugLoc": "plancha-corporal",
+    "name": "Plancha Corporal",
+    "description": "El daño que causa se calcula con el valor de la Defensa del\nusuario en vez del de su Ataque."
+  },
+  {
+    "id": "777",
+    "slug": "decorate",
+    "slugLoc": "decoracion",
+    "name": "Decoración",
+    "description": "Aumenta dos niveles el Ataque y el Ataque Especial \ndel objetivo."
+  },
+  {
+    "id": "778",
+    "slug": "drum-beating",
+    "slugLoc": "bateria-asalto",
+    "name": "Batería Asalto",
+    "description": ""
+  },
+  {
+    "id": "779",
+    "slug": "snap-trap",
+    "slugLoc": "trampa-presion",
+    "name": "Trampa Presión",
+    "description": "Provoca el estado Apresado en el objetivo."
+  },
+  {
+    "id": "780",
+    "slug": "pyro-ball",
+    "slugLoc": "balon-igneo",
+    "name": "Balón Ígneo",
+    "description": ""
+  },
+  {
+    "id": "781",
+    "slug": "behemoth-blade",
+    "slugLoc": "corte-supremo",
+    "name": "Corte Supremo",
+    "description": ""
+  },
+  {
+    "id": "782",
+    "slug": "behemoth-bash",
+    "slugLoc": "golpe-supremo",
+    "name": "Golpe Supremo",
+    "description": ""
+  },
+  {
+    "id": "783",
+    "slug": "aura-wheel",
+    "slugLoc": "rueda-aural",
+    "name": "Rueda Aural",
+    "description": "Aumenta un nivel la Velocidad del usuario. Su tipo varía según\nla forma que adopte Morpeko."
+  },
+  {
+    "id": "784",
+    "slug": "breaking-swipe",
+    "slugLoc": "vasto-impacto",
+    "name": "Vasto Impacto",
+    "description": "Reduce un nivel el Ataque del objetivo."
+  },
+  {
+    "id": "785",
+    "slug": "branch-poke",
+    "slugLoc": "ramazo-punzante",
+    "name": "Ramazo Punzante",
+    "description": ""
+  },
+  {
+    "id": "786",
+    "slug": "overdrive",
+    "slugLoc": "amplificador",
+    "name": "Amplificador",
+    "description": ""
+  },
+  {
+    "id": "787",
+    "slug": "apple-acid",
+    "slugLoc": "acido-malico",
+    "name": "Ácido Málico",
+    "description": "Reduce un nivel la Defensa Especial del objetivo."
+  },
+  {
+    "id": "788",
+    "slug": "grav-apple",
+    "slugLoc": "fuerza-g",
+    "name": "Fuerza G",
+    "description": "Reduce un nivel la Defensa del objetivo. Aumenta un 50%\nsu potencia si el estado Gravedad está activo."
+  },
+  {
+    "id": "789",
+    "slug": "spirit-break",
+    "slugLoc": "choque-animico",
+    "name": "Choque Anímico",
+    "description": ""
+  },
+  {
+    "id": "790",
+    "slug": "strange-steam",
+    "slugLoc": "cautivapor",
+    "name": "Cautivapor",
+    "description": ""
+  },
+  {
+    "id": "791",
+    "slug": "life-dew",
+    "slugLoc": "gota-vital",
+    "name": "Gota Vital",
+    "description": "Restaura 25% de los PS máximos del usuario y sus aliados."
+  },
+  {
+    "id": "792",
+    "slug": "obstruct",
+    "slugLoc": "obstruccion",
+    "name": "Obstrucción",
+    "description": ""
+  },
+  {
+    "id": "793",
+    "slug": "false-surrender",
+    "slugLoc": "irreverencia",
+    "name": "Irreverencia",
+    "description": ""
+  },
+  {
+    "id": "794",
+    "slug": "meteor-assault",
+    "slugLoc": "asalto-estelar",
+    "name": "Asalto Estelar",
+    "description": ""
+  },
+  {
+    "id": "795",
+    "slug": "eternabeam",
+    "slugLoc": "rayo-infinito",
+    "name": "Rayo Infinito",
+    "description": ""
+  },
+  {
+    "id": "796",
+    "slug": "steel-beam",
+    "slugLoc": "metalaser",
+    "name": "Metaláser",
+    "description": "El usuario recibe daño equivalente a un 50% de sus PS máximos\nluego de atacar."
+  },
+  {
+    "id": "797",
+    "slug": "expanding-force",
+    "slugLoc": "vasta-fuerza",
+    "name": "Vasta Fuerza",
+    "description": "Aumenta un 50% su potencia y ataca a todos los rivales\nsi el usuario está en contacto con un campo psíquico."
+  },
+  {
+    "id": "798",
+    "slug": "steel-roller",
+    "slugLoc": "ferroaplanadora",
+    "name": "Ferroaplanadora",
+    "description": "Elimina el campo activo en el terreno de combate.\nFalla si no hay ninguno."
+  },
+  {
+    "id": "799",
+    "slug": "scale-shot",
+    "slugLoc": "disparo-escamas",
+    "name": "Disparo Escamas",
+    "description": "Ataca de dos a cinco veces seguidas. Reduce un nivel\nla Defensa del usuario y aumenta un nivel su Velocidad."
+  },
+  {
+    "id": "800",
+    "slug": "meteor-beam",
+    "slugLoc": "rayo-meteorico",
+    "name": "Rayo Meteórico",
+    "description": "El usuario adquiere el estado Cargando, aumenta un nivel\nsu Ataque Especial en el turno en el que usa este movimiento\ny ataca en el siguiente."
+  },
+  {
+    "id": "801",
+    "slug": "shell-side-arm",
+    "slugLoc": "moluscanon",
+    "name": "Moluscañón",
+    "description": "Tiene una probabilidad del 20% de envenenar al objetivo.\nSe convierte en un ataque físico si de esa manera va a\ncausar más daño."
+  },
+  {
+    "id": "802",
+    "slug": "misty-explosion",
+    "slugLoc": "bruma-explosiva",
+    "name": "Bruma Explosiva",
+    "description": "Aumenta un 50% su potencia si el usuario está en contacto con\nun campo de niebla. El usuario se debilita luego de usarlo."
+  },
+  {
+    "id": "803",
+    "slug": "grassy-glide",
+    "slugLoc": "fitoimpulso",
+    "name": "Fitoimpulso",
+    "description": "Aumenta un nivel su prioridad si el usuario está en contacto\ncon un campo de césped."
+  },
+  {
+    "id": "804",
+    "slug": "rising-voltage",
+    "slugLoc": "alto-voltaje",
+    "name": "Alto Voltaje",
+    "description": "Su potencia se duplica si el objetivo está en contacto con\nun campo eléctrico."
+  },
+  {
+    "id": "805",
+    "slug": "terrain-pulse",
+    "slugLoc": "pulso-de-campo",
+    "name": "Pulso de Campo",
+    "description": "Su potencia se duplica si el usuario está en contacto con\nun campo. Su tipo varía según el campo que esté activo."
+  },
+  {
+    "id": "806",
+    "slug": "skitter-smack",
+    "slugLoc": "golpe-rastrero",
+    "name": "Golpe Rastrero",
+    "description": "Reduce un nivel el Ataque Especial del objetivo."
+  },
+  {
+    "id": "807",
+    "slug": "burning-jealousy",
+    "slugLoc": "envidia-ardiente",
+    "name": "Envidia Ardiente",
+    "description": "Quema al objetivo si sus características aumentaron en ese\nturno."
+  },
+  {
+    "id": "808",
+    "slug": "lash-out",
+    "slugLoc": "desahogo",
+    "name": "Desahogo",
+    "description": "Su potencia se duplica si las características del usuario se\nredujeron en este turno."
+  },
+  {
+    "id": "809",
+    "slug": "poltergeist",
+    "slugLoc": "poltergeist",
+    "name": "Poltergeist",
+    "description": "Falla si el objetivo no lleva un objeto."
+  },
+  {
+    "id": "810",
+    "slug": "corrosive-gas",
+    "slugLoc": "gas-corrosivo",
+    "name": "Gas Corrosivo",
+    "description": "Hace que todos los Pokémon en combate, menos el usuario,\npierdan el objeto que llevan."
+  },
+  {
+    "id": "811",
+    "slug": "coaching",
+    "slugLoc": "motivacion",
+    "name": "Motivación",
+    "description": "Aumenta un nivel el Ataque y la Defensa de todos los aliados."
+  },
+  {
+    "id": "812",
+    "slug": "flip-turn",
+    "slugLoc": "viraje",
+    "name": "Viraje",
+    "description": "El usuario se cambia por otro Pokémon del equipo luego\nde atacar."
+  },
+  {
+    "id": "813",
+    "slug": "triple-axel",
+    "slugLoc": "triple-axel",
+    "name": "Triple Axel",
+    "description": "Ataca tres veces seguidas. La potencia del primer golpe\nes de 20; la del segundo, de 40; y la del tercero, de 60.\nSe detiene si falla."
+  },
+  {
+    "id": "814",
+    "slug": "dual-wingbeat",
+    "slugLoc": "aletazo-doble",
+    "name": "Aletazo Doble",
+    "description": "Ataca dos veces seguidas."
+  },
+  {
+    "id": "815",
+    "slug": "scorching-sands",
+    "slugLoc": "arenas-ardientes",
+    "name": "Arenas Ardientes",
+    "description": "Tiene una probabilidad del 30% de quemar al objetivo.\nElimina la congelación del usuario y el objetivo."
+  },
+  {
+    "id": "816",
+    "slug": "jungle-healing",
+    "slugLoc": "selva-sanadora",
+    "name": "Selva Sanadora",
+    "description": ""
+  },
+  {
+    "id": "817",
+    "slug": "wicked-blow",
+    "slugLoc": "golpe-oscuro",
+    "name": "Golpe Oscuro",
+    "description": ""
+  },
+  {
+    "id": "818",
+    "slug": "surging-strikes",
+    "slugLoc": "golpe-torrencial",
+    "name": "Golpe Torrencial",
+    "description": ""
+  },
+  {
+    "id": "819",
+    "slug": "thunder-cage",
+    "slugLoc": "electrojaula",
+    "name": "Electrojaula",
+    "description": ""
+  },
+  {
+    "id": "820",
+    "slug": "dragon-energy",
+    "slugLoc": "dracoenergia",
+    "name": "Dracoenergía",
+    "description": ""
+  },
+  {
+    "id": "821",
+    "slug": "freezing-glare",
+    "slugLoc": "mirada-glacial",
+    "name": "Mirada Glacial",
+    "description": ""
+  },
+  {
+    "id": "822",
+    "slug": "fiery-wrath",
+    "slugLoc": "furia-candente",
+    "name": "Furia Candente",
+    "description": ""
+  },
+  {
+    "id": "823",
+    "slug": "thunderous-kick",
+    "slugLoc": "patada-relampago",
+    "name": "Patada Relámpago",
+    "description": ""
+  },
+  {
+    "id": "824",
+    "slug": "glacial-lance",
+    "slugLoc": "lanza-glacial",
+    "name": "Lanza Glacial",
+    "description": ""
+  },
+  {
+    "id": "825",
+    "slug": "astral-barrage",
+    "slugLoc": "orbes-espectro",
+    "name": "Orbes Espectro",
+    "description": ""
+  },
+  {
+    "id": "826",
+    "slug": "eerie-spell",
+    "slugLoc": "conjuro-funesto",
+    "name": "Conjuro Funesto",
+    "description": "Reduce 3 PP del último movimiento que usó el objetivo."
+  },
+  {
+    "id": "827",
+    "slug": "dire-claw",
+    "slugLoc": "garra-nociva",
+    "name": "Garra Nociva",
+    "description": "Tiene una probabilidad del 30% de envenenar, paralizar\no dormir al objetivo."
+  },
+  {
+    "id": "828",
+    "slug": "psyshield-bash",
+    "slugLoc": "asalto-barrera",
+    "name": "Asalto Barrera",
+    "description": "Aumenta un nivel la Defensa del usuario."
+  },
+  {
+    "id": "829",
+    "slug": "power-shift",
+    "slugLoc": "cambiapoder",
+    "name": "Cambiapoder",
+    "description": "Provoca el estado Ataque y Defensa invertidos en el usuario."
+  },
+  {
+    "id": "830",
+    "slug": "stone-axe",
+    "slugLoc": "hachazo-petreo",
+    "name": "Hachazo Pétreo",
+    "description": "Provoca el estado Trampa de Rocas en el lado rival."
+  },
+  {
+    "id": "831",
+    "slug": "springtide-storm",
+    "slugLoc": "ciclon-primavera",
+    "name": "Ciclón Primavera",
+    "description": ""
+  },
+  {
+    "id": "832",
+    "slug": "mystical-power",
+    "slugLoc": "poder-mistico",
+    "name": "Poder Místico",
+    "description": ""
+  },
+  {
+    "id": "833",
+    "slug": "raging-fury",
+    "slugLoc": "erupcion-de-ira",
+    "name": "Erupción de Ira",
+    "description": "Provoca el estado Enojado en el usuario."
+  },
+  {
+    "id": "834",
+    "slug": "wave-crash",
+    "slugLoc": "acuatacleada",
+    "name": "Acuatacleada",
+    "description": "El usuario recibe un 33.3% del daño que causa."
+  },
+  {
+    "id": "835",
+    "slug": "chloroblast",
+    "slugLoc": "clorofilaser",
+    "name": "Clorofiláser",
+    "description": ""
+  },
+  {
+    "id": "836",
+    "slug": "mountain-gale",
+    "slugLoc": "viento-carambano",
+    "name": "Viento Carámbano",
+    "description": "Tiene una probabilidad del 30% de atemorizar al objetivo."
+  },
+  {
+    "id": "837",
+    "slug": "victory-dance",
+    "slugLoc": "danza-triunfal",
+    "name": "Danza Triunfal",
+    "description": ""
+  },
+  {
+    "id": "838",
+    "slug": "headlong-rush",
+    "slugLoc": "asalto-frontal",
+    "name": "Asalto Frontal",
+    "description": "Reduce un nivel la Defensa y la Defensa Especial del usuario."
+  },
+  {
+    "id": "839",
+    "slug": "barb-barrage",
+    "slugLoc": "mil-puas-toxicas",
+    "name": "Mil Púas Tóxicas",
+    "description": ""
+  },
+  {
+    "id": "840",
+    "slug": "esper-wing",
+    "slugLoc": "ala-aural",
+    "name": "Ala Aural",
+    "description": ""
+  },
+  {
+    "id": "841",
+    "slug": "bitter-malice",
+    "slugLoc": "rencor-reprimido",
+    "name": "Rencor Reprimido",
+    "description": "Reduce un nivel el Ataque del objetivo."
+  },
+  {
+    "id": "842",
+    "slug": "shelter",
+    "slugLoc": "retraccion",
+    "name": "Retracción",
+    "description": "Aumenta dos niveles la Defensa del usuario."
+  },
+  {
+    "id": "843",
+    "slug": "triple-arrows",
+    "slugLoc": "triple-flecha",
+    "name": "Triple Flecha",
+    "description": "Tiene una probabilidad del 50% de reducir un nivel la Defensa\ndel objetivo y una probabilidad del 30% de atemorizarlo.\nAumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "844",
+    "slug": "infernal-parade",
+    "slugLoc": "marcha-espectral",
+    "name": "Marcha Espectral",
+    "description": "Tiene una probabilidad del 30% de quemar al objetivo.\nSu potencia se duplica si el objetivo sufre un problema\nde estado."
+  },
+  {
+    "id": "845",
+    "slug": "ceaseless-edge",
+    "slugLoc": "corte-metralla",
+    "name": "Corte Metralla",
+    "description": "Provoca el estado Púas en el lado rival."
+  },
+  {
+    "id": "846",
+    "slug": "bleakwind-storm",
+    "slugLoc": "vendaval-gelido",
+    "name": "Vendaval Gélido",
+    "description": ""
+  },
+  {
+    "id": "847",
+    "slug": "wildbolt-storm",
+    "slugLoc": "electormenta",
+    "name": "Electormenta",
+    "description": ""
+  },
+  {
+    "id": "848",
+    "slug": "sandsear-storm",
+    "slugLoc": "tifon-de-arena",
+    "name": "Tifón de Arena",
+    "description": ""
+  },
+  {
+    "id": "849",
+    "slug": "lunar-blessing",
+    "slugLoc": "plegaria-lunar",
+    "name": "Plegaria Lunar",
+    "description": ""
+  },
+  {
+    "id": "850",
+    "slug": "take-heart",
+    "slugLoc": "balsamo-osado",
+    "name": "Bálsamo Osado",
+    "description": ""
+  },
+  {
+    "id": "851",
+    "slug": "tera-blast",
+    "slugLoc": "teraexplosion",
+    "name": "Teraexplosión",
+    "description": ""
+  },
+  {
+    "id": "852",
+    "slug": "silk-trap",
+    "slugLoc": "telatrampa",
+    "name": "Telatrampa",
+    "description": ""
+  },
+  {
+    "id": "853",
+    "slug": "axe-kick",
+    "slugLoc": "patada-hacha",
+    "name": "Patada Hacha",
+    "description": "Tiene una probabilidad del 30% de confundir al objetivo.\nEl usuario recibe daño equivalente al 50% de sus PS máximos\nsi falla."
+  },
+  {
+    "id": "854",
+    "slug": "last-respects",
+    "slugLoc": "homenaje-postumo",
+    "name": "Homenaje Póstumo",
+    "description": "Aumenta en 50 su potencia cada vez que se debilita\nun Pokémon del equipo del usuario."
+  },
+  {
+    "id": "855",
+    "slug": "lumina-crash",
+    "slugLoc": "fotocolision",
+    "name": "Fotocolisión",
+    "description": "Reduce dos niveles la Defensa Especial del objetivo."
+  },
+  {
+    "id": "856",
+    "slug": "order-up",
+    "slugLoc": "emplatar",
+    "name": "Emplatar",
+    "description": ""
+  },
+  {
+    "id": "857",
+    "slug": "jet-punch",
+    "slugLoc": "puno-jet",
+    "name": "Puño Jet",
+    "description": ""
+  },
+  {
+    "id": "858",
+    "slug": "spicy-extract",
+    "slugLoc": "extracto-picante",
+    "name": "Extracto Picante",
+    "description": "Reduce dos niveles la Defensa y aumenta dos niveles el Ataque\ndel objetivo."
+  },
+  {
+    "id": "859",
+    "slug": "spin-out",
+    "slugLoc": "quemarrueda",
+    "name": "Quemarrueda",
+    "description": ""
+  },
+  {
+    "id": "860",
+    "slug": "population-bomb",
+    "slugLoc": "proliferacion",
+    "name": "Proliferación",
+    "description": "Ataca de una a diez veces seguidas. Se detiene si falla."
+  },
+  {
+    "id": "861",
+    "slug": "ice-spinner",
+    "slugLoc": "pirueta-helada",
+    "name": "Pirueta Helada",
+    "description": "Elimina el campo activo en el terreno de combate."
+  },
+  {
+    "id": "862",
+    "slug": "glaive-rush",
+    "slugLoc": "asalto-espadon",
+    "name": "Asalto Espadón",
+    "description": ""
+  },
+  {
+    "id": "863",
+    "slug": "revival-blessing",
+    "slugLoc": "plegaria-vital",
+    "name": "Plegaria Vital",
+    "description": "Revive a un Pokémon del equipo del usuario que se haya\ndebilitado y le restaura el 50% de sus PS máximos."
+  },
+  {
+    "id": "864",
+    "slug": "salt-cure",
+    "slugLoc": "salacion",
+    "name": "Salación",
+    "description": "Provoca el estado Salación en el objetivo."
+  },
+  {
+    "id": "865",
+    "slug": "triple-dive",
+    "slugLoc": "triple-inmersion",
+    "name": "Triple Inmersión",
+    "description": ""
+  },
+  {
+    "id": "866",
+    "slug": "mortal-spin",
+    "slugLoc": "giro-mortifero",
+    "name": "Giro Mortífero",
+    "description": "Elimina los estados Apresado y Drenadoras del usuario, así\ncomo los estados Púas, Púas tóxicas, Red Pegajosa y Trampa\nde Rocas en el lado del usuario. Envenena al objetivo."
+  },
+  {
+    "id": "867",
+    "slug": "doodle",
+    "slugLoc": "plagio",
+    "name": "Plagio",
+    "description": ""
+  },
+  {
+    "id": "868",
+    "slug": "fillet-away",
+    "slugLoc": "fileteo",
+    "name": "Fileteo",
+    "description": ""
+  },
+  {
+    "id": "869",
+    "slug": "kowtow-cleave",
+    "slugLoc": "genufendiente",
+    "name": "Genufendiente",
+    "description": "Nunca falla."
+  },
+  {
+    "id": "870",
+    "slug": "flower-trick",
+    "slugLoc": "truco-floral",
+    "name": "Truco Floral",
+    "description": "Nunca falla y siempre lanza un golpe crítico."
+  },
+  {
+    "id": "871",
+    "slug": "torch-song",
+    "slugLoc": "canto-igneo",
+    "name": "Canto Ígneo",
+    "description": "Aumenta un nivel el Ataque Especial del usuario."
+  },
+  {
+    "id": "872",
+    "slug": "aqua-step",
+    "slugLoc": "danza-acuatica",
+    "name": "Danza Acuática",
+    "description": "Aumenta un nivel la Velocidad del usuario."
+  },
+  {
+    "id": "873",
+    "slug": "raging-bull",
+    "slugLoc": "furia-taurina",
+    "name": "Furia Taurina",
+    "description": "Su tipo varía según la forma del usuario. Elimina los estados\nPantalla de Luz, Reflejo y Velo Aurora en el lado del objetivo."
+  },
+  {
+    "id": "874",
+    "slug": "make-it-rain",
+    "slugLoc": "fiebre-dorada",
+    "name": "Fiebre Dorada",
+    "description": ""
+  },
+  {
+    "id": "875",
+    "slug": "psyblade",
+    "slugLoc": "psicohojas",
+    "name": "Psicohojas",
+    "description": ""
+  },
+  {
+    "id": "876",
+    "slug": "hydro-steam",
+    "slugLoc": "hidrovapor",
+    "name": "Hidrovapor",
+    "description": ""
+  },
+  {
+    "id": "877",
+    "slug": "ruination",
+    "slugLoc": "calamidad",
+    "name": "Calamidad",
+    "description": ""
+  },
+  {
+    "id": "878",
+    "slug": "collision-course",
+    "slugLoc": "nitrochoque",
+    "name": "Nitrochoque",
+    "description": ""
+  },
+  {
+    "id": "879",
+    "slug": "electro-drift",
+    "slugLoc": "electroderrape",
+    "name": "Electroderrape",
+    "description": ""
+  },
+  {
+    "id": "880",
+    "slug": "shed-tail",
+    "slugLoc": "autotomia",
+    "name": "Autotomía",
+    "description": "El usuario sacrifica un 50% de sus PS máximos para crear un\nsustituto y se cambia por otro Pokémon del equipo. El sustituto\nrecibirá los movimientos dirigidos al Pokémon en su lugar y\ndesaparecerá cuando haya recibido una cantidad de daño\nequivalente al 25% de los PS máximos del usuario."
+  },
+  {
+    "id": "881",
+    "slug": "chilly-reception",
+    "slugLoc": "respuesta-fria",
+    "name": "Respuesta Fría",
+    "description": "Hace que nieve durante cinco turnos. El usuario se cambia por\notro Pokémon del equipo luego de atacar."
+  },
+  {
+    "id": "882",
+    "slug": "tidy-up",
+    "slugLoc": "limpieza-general",
+    "name": "Limpieza General",
+    "description": "Elimina los estados Red Pegajosa, Trampa de Rocas,\nPúas tóxicas y Púas, así como los sustitutos, en ambos lados.\nAdemás, aumenta un nivel el Ataque y la Velocidad del usuario."
+  },
+  {
+    "id": "883",
+    "slug": "snowscape",
+    "slugLoc": "paisaje-nevado",
+    "name": "Paisaje Nevado",
+    "description": "Hace que nieve durante cinco turnos."
+  },
+  {
+    "id": "884",
+    "slug": "pounce",
+    "slugLoc": "brinco",
+    "name": "Brinco",
+    "description": "Reduce un nivel la Velocidad del objetivo."
+  },
+  {
+    "id": "885",
+    "slug": "trailblaze",
+    "slugLoc": "abrecaminos",
+    "name": "Abrecaminos",
+    "description": "Aumenta un nivel la Velocidad del usuario."
+  },
+  {
+    "id": "886",
+    "slug": "chilling-water",
+    "slugLoc": "agua-fria",
+    "name": "Agua Fría",
+    "description": "Reduce un nivel el Ataque del objetivo."
+  },
+  {
+    "id": "887",
+    "slug": "hyper-drill",
+    "slugLoc": "hipertaladro",
+    "name": "Hipertaladro",
+    "description": ""
+  },
+  {
+    "id": "888",
+    "slug": "twin-beam",
+    "slugLoc": "laser-doble",
+    "name": "Láser Doble",
+    "description": "Ataca dos veces seguidas."
+  },
+  {
+    "id": "889",
+    "slug": "rage-fist",
+    "slugLoc": "puno-furia",
+    "name": "Puño Furia",
+    "description": ""
+  },
+  {
+    "id": "890",
+    "slug": "armor-cannon",
+    "slugLoc": "canon-armadura",
+    "name": "Cañón Armadura",
+    "description": "Reduce un nivel la Defensa y la Defensa Especial del usuario."
+  },
+  {
+    "id": "891",
+    "slug": "bitter-blade",
+    "slugLoc": "espada-lamento",
+    "name": "Espada Lamento",
+    "description": "El usuario recupera una cantidad de PS equivalente al 50%\ndel daño que causa."
+  },
+  {
+    "id": "892",
+    "slug": "double-shock",
+    "slugLoc": "electropalmas",
+    "name": "Electropalmas",
+    "description": "El usuario deja de ser de tipo Eléctrico. Este movimiento\nfalla si el usuario no es de tipo Eléctrico."
+  },
+  {
+    "id": "893",
+    "slug": "gigaton-hammer",
+    "slugLoc": "martillo-colosal",
+    "name": "Martillo Colosal",
+    "description": "No se puede usar dos veces seguidas."
+  },
+  {
+    "id": "894",
+    "slug": "comeuppance",
+    "slugLoc": "resarcimiento",
+    "name": "Resarcimiento",
+    "description": "Si el usuario recibió daño de un ataque en ese turno,\nle devuelve al rival el 150% del daño causado."
+  },
+  {
+    "id": "895",
+    "slug": "aqua-cutter",
+    "slugLoc": "corte-acuatico",
+    "name": "Corte Acuático",
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
+  },
+  {
+    "id": "896",
+    "slug": "blazing-torque",
+    "slugLoc": "pirochoque",
+    "name": "Pirochoque",
+    "description": ""
+  },
+  {
+    "id": "897",
+    "slug": "wicked-torque",
+    "slugLoc": "ominochoque",
+    "name": "Ominochoque",
+    "description": ""
+  },
+  {
+    "id": "898",
+    "slug": "noxious-torque",
+    "slugLoc": "ponzochoque",
+    "name": "Ponzochoque",
+    "description": ""
+  },
+  {
+    "id": "899",
+    "slug": "combat-torque",
+    "slugLoc": "pugnachoque",
+    "name": "Pugnachoque",
+    "description": ""
+  },
+  {
+    "id": "900",
+    "slug": "magical-torque",
+    "slugLoc": "feerichoque",
+    "name": "Feerichoque",
+    "description": ""
+  },
+  {
+    "id": "901",
+    "slug": "blood-moon",
+    "slugLoc": "luna-roja",
+    "name": "Luna Roja",
+    "description": ""
+  },
+  {
+    "id": "902",
+    "slug": "matcha-gotcha",
+    "slugLoc": "canon-batidor",
+    "name": "Cañón Batidor",
+    "description": "El usuario recupera una cantidad de PS equivalente al 50%\ndel daño que causa. Este movimiento tiene una probabilidad\ndel 20% de quemar al objetivo."
+  },
+  {
+    "id": "903",
+    "slug": "syrup-bomb",
+    "slugLoc": "bomba-caramelo",
+    "name": "Bomba Caramelo",
+    "description": "Provoca el estado Caramelizado en el objetivo durante\ntres turnos."
+  },
+  {
+    "id": "904",
+    "slug": "ivy-cudgel",
+    "slugLoc": "garrote-liana",
+    "name": "Garrote Liana",
+    "description": ""
+  },
+  {
+    "id": "905",
+    "slug": "electro-shot",
+    "slugLoc": "electrorrayo",
+    "name": "Electrorrayo",
+    "description": "El usuario adquiere el estado Cargando en el turno en el que\nusa este movimiento y ataca en el siguiente. Si llueve, no\nadquiere este estado y ataca inmediatamente.\nSu Ataque Especial aumenta un nivel al usar el movimiento."
+  },
+  {
+    "id": "906",
+    "slug": "tera-starstorm",
+    "slugLoc": "teracluster",
+    "name": "Teraclúster",
+    "description": ""
+  },
+  {
+    "id": "907",
+    "slug": "fickle-beam",
+    "slugLoc": "laser-caprichoso",
+    "name": "Láser Caprichoso",
+    "description": "Tiene una probabilidad del 30% de que su potencia\nse duplique."
+  },
+  {
+    "id": "908",
+    "slug": "burning-bulwark",
+    "slugLoc": "llama-protectora",
+    "name": "Llama Protectora",
+    "description": ""
+  },
+  {
+    "id": "909",
+    "slug": "thunderclap",
+    "slugLoc": "relampago-subito",
+    "name": "Relámpago Súbito",
+    "description": ""
+  },
+  {
+    "id": "910",
+    "slug": "mighty-cleave",
+    "slugLoc": "corte-potente",
+    "name": "Corte Potente",
+    "description": ""
+  },
+  {
+    "id": "911",
+    "slug": "tachyon-cutter",
+    "slugLoc": "corte-taquion",
+    "name": "Corte Taquión",
+    "description": ""
+  },
+  {
+    "id": "912",
+    "slug": "hard-press",
+    "slugLoc": "prensa-metalica",
+    "name": "Prensa Metálica",
+    "description": "Tiene mayor potencia entre más PS tenga el objetivo,\ncon un rango entre 1 y 100."
+  },
+  {
+    "id": "913",
+    "slug": "dragon-cheer",
+    "slugLoc": "bramido-dragon",
+    "name": "Bramido Dragón",
+    "description": "Provoca el estado Más Críticos +1 en los aliados. Si son\nde tipo Dragón, les provoca el estado Más Críticos +2."
+  },
+  {
+    "id": "914",
+    "slug": "alluring-voice",
+    "slugLoc": "canto-encantador",
+    "name": "Canto Encantador",
+    "description": "Confunde al objetivo si sus características aumentaron en\nese turno."
+  },
+  {
+    "id": "915",
+    "slug": "temper-flare",
+    "slugLoc": "furia-ardiente",
+    "name": "Furia Ardiente",
+    "description": "Su potencia se duplica si el usuario no pudo actuar o falló\nsu movimiento en el turno anterior."
+  },
+  {
+    "id": "916",
+    "slug": "supercell-slam",
+    "slugLoc": "golpe-voltaico",
+    "name": "Golpe Voltaico",
+    "description": "El usuario recibe daño equivalente al 50% de sus PS máximos\nsi falla. Su potencia se duplica y nunca falla contra objetivos con\nel estado Reducido."
+  },
+  {
+    "id": "917",
+    "slug": "psychic-noise",
+    "slugLoc": "psicorruido",
+    "name": "Psicorruido",
+    "description": "Provoca el estado Curación anulada en el objetivo durante\ndos turnos."
+  },
+  {
+    "id": "918",
+    "slug": "upper-hand",
+    "slugLoc": "palma-rauda",
+    "name": "Palma Rauda",
+    "description": "Atemoriza al objetivo. Falla si el objetivo no está preparando\nun movimiento de prioridad alta."
+  },
+  {
+    "id": "919",
+    "slug": "malignant-chain",
+    "slugLoc": "cadena-virulenta",
+    "name": "Cadena Virulenta",
+    "description": ""
+  },
+  {
+    "id": "920",
+    "slug": "nihil-light",
+    "slugLoc": "luz-devastadora",
+    "name": "Luz Devastadora",
+    "description": ""
+  }
+]

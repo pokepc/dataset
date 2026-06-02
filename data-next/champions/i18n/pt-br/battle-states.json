@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "slug": "harsh-sunlight",
+    "slugLoc": "harsh-sunlight",
+    "name": "Harsh Sunlight",
+    "description": "Boosts the damage dealt by Fire-type moves\nby 50% and halves the damage dealt by\nWater-type moves."
+  },
+  {
+    "id": "2",
+    "slug": "rain",
+    "slugLoc": "rain",
+    "name": "Rain",
+    "description": "Boosts the damage dealt by Water-type moves\nby 50% and halves the damage dealt by\nFire-type moves."
+  },
+  {
+    "id": "3",
+    "slug": "sandstorm",
+    "slugLoc": "sandstorm",
+    "name": "Sandstorm",
+    "description": "Pokémon that are not Rock, Ground, or Steel\ntypes take damage equal to 1/16 of their max\nHP at the end of every turn. Boosts the Sp. Def\nstats of Rock-type Pokémon by 50%."
+  },
+  {
+    "id": "4",
+    "slug": "snow",
+    "slugLoc": "snow",
+    "name": "Snow",
+    "description": "Boosts the Defense stats of Ice-type Pokémon by\n50%."
+  },
+  {
+    "id": "5",
+    "slug": "electric-terrain",
+    "slugLoc": "electric-terrain",
+    "name": "Electric Terrain",
+    "description": "Pokémon on the ground have the power of their\nElectric-type moves boosted by 30% and they\ncannot fall asleep."
+  },
+  {
+    "id": "6",
+    "slug": "grassy-terrain",
+    "slugLoc": "grassy-terrain",
+    "name": "Grassy Terrain",
+    "description": "Pokémon on the ground have the power of their\nGrass-type moves boosted by 30% and they\nhave 1/16 of their max HP restored at the end\nof every turn."
+  },
+  {
+    "id": "7",
+    "slug": "misty-terrain",
+    "slugLoc": "misty-terrain",
+    "name": "Misty Terrain",
+    "description": "Pokémon on the ground have the power of their\nDragon-type moves halved, they are immune to\nstatus conditions, and they cannot become\nconfused."
+  },
+  {
+    "id": "8",
+    "slug": "trick-room",
+    "slugLoc": "trick-room",
+    "name": "Trick Room",
+    "description": "Pokémon with lower Speed stats move first."
+  },
+  {
+    "id": "9",
+    "slug": "magic-room",
+    "slugLoc": "magic-room",
+    "name": "Magic Room",
+    "description": "Most held items do not work."
+  },
+  {
+    "id": "10",
+    "slug": "wonder-room",
+    "slugLoc": "wonder-room",
+    "name": "Wonder Room",
+    "description": "Pokémon's Defense and Sp. Def stats\nare swapped."
+  },
+  {
+    "id": "11",
+    "slug": "critical-hit-ratio-boost",
+    "slugLoc": "critical-hit-ratio-boost",
+    "name": "Critical-Hit Ratio Boost",
+    "description": "The Pokémon's attacks are more likely to be\ncritical hits."
+  },
+  {
+    "id": "12",
+    "slug": "confused",
+    "slugLoc": "confused",
+    "name": "Confused",
+    "description": "For 1–4 turns, the Pokémon has a 1-in-3 chance\nof hurting itself."
+  },
+  {
+    "id": "13",
+    "slug": "infatuated",
+    "slugLoc": "infatuated",
+    "name": "Infatuated",
+    "description": "The Pokémon has a 50% chance of being unable\nto use its moves while the Pokémon that gave it\nthe Infatuated status is on the field."
+  },
+  {
+    "id": "15",
+    "slug": "drowsy",
+    "slugLoc": "drowsy",
+    "name": "Drowsy",
+    "description": "The Pokémon will fall asleep at the end of the\nnext turn after becoming drowsy."
+  },
+  {
+    "id": "16",
+    "slug": "encore",
+    "slugLoc": "encore",
+    "name": "Encore",
+    "description": "The Pokémon can only use\n{0}."
+  },
+  {
+    "id": "17",
+    "slug": "no-ability",
+    "slugLoc": "no-ability",
+    "name": "No Ability",
+    "description": "The Pokémon's Ability loses its effect."
+  },
+  {
+    "id": "18",
+    "slug": "unable-to-repeat",
+    "slugLoc": "unable-to-repeat",
+    "name": "Unable to Repeat",
+    "description": "The Pokémon cannot use the same move twice\nin a row."
+  },
+  {
+    "id": "19",
+    "slug": "tailwind",
+    "slugLoc": "tailwind",
+    "name": "Tailwind",
+    "description": "Doubles the Pokémon's Speed stat."
+  },
+  {
+    "id": "24",
+    "slug": "move-disabled",
+    "slugLoc": "move-disabled",
+    "name": "Move Disabled",
+    "description": "{0} cannot be used."
+  },
+  {
+    "id": "25",
+    "slug": "cant-escape",
+    "slugLoc": "can-t-escape",
+    "name": "Can't Escape",
+    "description": "The Pokémon cannot be switched out of battle."
+  },
+  {
+    "id": "26",
+    "slug": "locked-on",
+    "slugLoc": "locked-on",
+    "name": "Locked On",
+    "description": "On the next turn after gaining the Locked On\nstatus, the Pokémon's move will not miss if\ntargeting the Pokémon that was locked onto."
+  },
+  {
+    "id": "28",
+    "slug": "electric-boost",
+    "slugLoc": "electric-boost",
+    "name": "Electric Boost",
+    "description": "The power of the next Electric-type move used\nby the Pokémon will be doubled."
+  },
+  {
+    "id": "29",
+    "slug": "gravity",
+    "slugLoc": "gravity",
+    "name": "Gravity",
+    "description": "Boosts the accuracy of moves by 67%. Pokémon\nsuch as Flying types or ones with the Levitate\nAbility become grounded. Moves that involve\nflying or leaping cannot be used."
+  },
+  {
+    "id": "31",
+    "slug": "safeguard",
+    "slugLoc": "safeguard",
+    "name": "Safeguard",
+    "description": "The Pokémon is immune to status conditions and\ncannot become confused."
+  },
+  {
+    "id": "32",
+    "slug": "stealth-rock",
+    "slugLoc": "stealth-rock",
+    "name": "Stealth Rock",
+    "description": "Pokémon that switch into battle will take damage\nequal to 1/8 of their max HP. This damage differs\ndepending on the Pokémon's type matchup with\nthe Rock type."
+  },
+  {
+    "id": "33",
+    "slug": "stockpiling",
+    "slugLoc": "stockpiling",
+    "name": "Stockpiling",
+    "description": "The Pokémon's Defense and Sp. Def stats are\nboosted by 1 stage for each time it has used\nStockpile."
+  },
+  {
+    "id": "34",
+    "slug": "taunted",
+    "slugLoc": "taunted",
+    "name": "Taunted",
+    "description": "The Pokémon can use only attacks."
+  },
+  {
+    "id": "36",
+    "slug": "magnet-rise",
+    "slugLoc": "magnet-rise",
+    "name": "Magnet Rise",
+    "description": "The Pokémon floats off the ground, making it\nimmune to Ground-type moves, as well as the\nSpikes, Toxic Spikes, and Sticky Web statuses."
+  },
+  {
+    "id": "37",
+    "slug": "toxic-spikes",
+    "slugLoc": "toxic-spikes",
+    "name": "Toxic Spikes",
+    "description": "Pokémon that switch into battle will be poisoned\nor, if 2 layers of Toxic Spikes are set, badly\npoisoned. Pokémon such as Flying types or ones\nwith the Levitate Ability are unaffected."
+  },
+  {
+    "id": "39",
+    "slug": "wish",
+    "slugLoc": "wish",
+    "name": "Wish",
+    "description": "At the end of the next turn after the Wish status\nis activated, the HP of the Pokémon in the\naffected spot will be restored by 1/2 of the max\nHP of the Pokémon that caused the status."
+  },
+  {
+    "id": "40",
+    "slug": "sticky-web",
+    "slugLoc": "sticky-web",
+    "name": "Sticky Web",
+    "description": "Pokémon that switch into battle will have their\nSpeed stats lowered by 1 stage. Pokémon such as\nFlying types or ones with the Levitate Ability\nare unaffected."
+  },
+  {
+    "id": "41",
+    "slug": "ingrained",
+    "slugLoc": "ingrained",
+    "name": "Ingrained",
+    "description": "The Pokémon has 1/16 of its max HP restored at\nthe end of every turn. It also becomes grounded\nand cannot be switched out of battle."
+  },
+  {
+    "id": "42",
+    "slug": "cursed",
+    "slugLoc": "cursed",
+    "name": "Cursed",
+    "description": "The Pokémon loses 1/4 of its max HP at the end\nof every turn."
+  },
+  {
+    "id": "43",
+    "slug": "trick-or-treating",
+    "slugLoc": "trick-or-treating",
+    "name": "Trick-or-Treating",
+    "description": "The Pokémon gains the Ghost type."
+  },
+  {
+    "id": "44",
+    "slug": "light-screen",
+    "slugLoc": "light-screen",
+    "name": "Light Screen",
+    "description": "Halves the damage taken from special moves.\nIn Double Battles, this damage is reduced by\n1/3 instead."
+  },
+  {
+    "id": "45",
+    "slug": "reflect",
+    "slugLoc": "reflect",
+    "name": "Reflect",
+    "description": "Halves the damage taken from physical moves.\nIn Double Battles, this damage is reduced by\n1/3 instead."
+  },
+  {
+    "id": "46",
+    "slug": "sealing-off",
+    "slugLoc": "sealing-off",
+    "name": "Sealing Off",
+    "description": "Any moves known by the Pokémon that caused\nthis status cannot be used by its opponents."
+  },
+  {
+    "id": "47",
+    "slug": "perishing",
+    "slugLoc": "perishing",
+    "name": "Perishing",
+    "description": "The Pokémon will faint 3 turns after gaining the\nPerishing status."
+  },
+  {
+    "id": "48",
+    "slug": "spikes",
+    "slugLoc": "spikes",
+    "name": "Spikes",
+    "description": "Pokémon that switch into battle will take damage\nequal to 1/8 of their max HP. This damage will\nincrease if 2 layers of Spikes are set, and again\nif 3 layers are set. Pokémon such as Flying types\nor ones with the Levitate Ability are unaffected."
+  },
+  {
+    "id": "50",
+    "slug": "destiny-bound",
+    "slugLoc": "destiny-bound",
+    "name": "Destiny Bound",
+    "description": "If the Pokémon is knocked out by an opponent,\nthat opponent will also be knocked out."
+  },
+  {
+    "id": "51",
+    "slug": "forest-cursed",
+    "slugLoc": "forest-cursed",
+    "name": "Forest Cursed",
+    "description": "The Pokémon gains the Grass type."
+  },
+  {
+    "id": "52",
+    "slug": "leech-seeded",
+    "slugLoc": "leech-seeded",
+    "name": "Leech Seeded",
+    "description": "The Pokémon takes damage equal to 1/8 of\nits max HP at the end of every turn. Whichever\nPokémon is in the spot of the Pokémon that\ncaused the Leech Seeded status has its HP\nrestored by the same amount."
+  },
+  {
+    "id": "54",
+    "slug": "bound",
+    "slugLoc": "bound",
+    "name": "Bound",
+    "description": "For 4–5 turns, the Pokémon takes damage equal\nto 1/8 of its max HP at the end of every turn. It\ncannot be switched out of battle."
+  },
+  {
+    "id": "57",
+    "slug": "rampaging",
+    "slugLoc": "rampaging",
+    "name": "Rampaging",
+    "description": "For 2–3 turns, the Pokémon continues its attack\nand is unable to take any other actions. After\nthat, it becomes confused."
+  },
+  {
+    "id": "59",
+    "slug": "badly-poisoned",
+    "slugLoc": "badly-poisoned",
+    "name": "Badly Poisoned",
+    "description": "The Pokémon takes increasing poison damage\nat the end of every turn, starting at 1/16 of the\nPokémon's max HP, then 2/16, then 3/16, and\nso on. If the Pokémon switches out and reenters\nbattle, the damage restarts at 1/16 of its max HP."
+  },
+  {
+    "id": "60",
+    "slug": "future-attack",
+    "slugLoc": "future-attack",
+    "name": "Future Attack",
+    "description": "The Pokémon in the targeted spot will take\ndamage 2 turns after the Future Attack status\nis activated."
+  },
+  {
+    "id": "61",
+    "slug": "uproar",
+    "slugLoc": "uproar",
+    "name": "Uproar",
+    "description": "For 3 turns, the Pokémon continues its attack and\nis unable to take any other actions. During this\ntime, no Pokémon on the field can fall asleep."
+  },
+  {
+    "id": "62",
+    "slug": "aqua-ring",
+    "slugLoc": "aqua-ring",
+    "name": "Aqua Ring",
+    "description": "The Pokémon has 1/16 of its max HP restored at\nthe end of every turn."
+  },
+  {
+    "id": "64",
+    "slug": "landed",
+    "slugLoc": "landed",
+    "name": "Landed",
+    "description": "The Pokémon is now grounded and can be\naffected by Ground-type moves."
+  },
+  {
+    "id": "65",
+    "slug": "fairy-locked",
+    "slugLoc": "fairy-locked",
+    "name": "Fairy Locked",
+    "description": "No Pokémon on the field can be switched out\nof battle until the end of the next turn after the\nFairy Locked status is activated."
+  },
+  {
+    "id": "72",
+    "slug": "psychic-terrain",
+    "slugLoc": "psychic-terrain",
+    "name": "Psychic Terrain",
+    "description": "Pokémon on the ground have the power of their\nPsychic-type moves boosted by 30% and they\nare immune to priority moves."
+  },
+  {
+    "id": "73",
+    "slug": "throat-chopped",
+    "slugLoc": "throat-chopped",
+    "name": "Throat Chopped",
+    "description": "The Pokémon cannot use any sound-based moves\nfor 2 turns."
+  },
+  {
+    "id": "74",
+    "slug": "aurora-veil",
+    "slugLoc": "aurora-veil",
+    "name": "Aurora Veil",
+    "description": "Halves the damage taken from physical and\nspecial moves. In Double Battles, this damage\nis reduced by 1/3 instead."
+  },
+  {
+    "id": "106",
+    "slug": "salt-cured",
+    "slugLoc": "salt-cured",
+    "name": "Salt Cured",
+    "description": "The Pokémon takes damage equal to 1/16 of its\nmax HP at the end of every turn. If the Pokémon\nis a Steel type or Water type, it takes damage\nequal to 1/8 of its max HP instead."
+  },
+  {
+    "id": "108",
+    "slug": "syrupy",
+    "slugLoc": "syrupy",
+    "name": "Syrupy",
+    "description": "The Pokémon's Speed stat is lowered by 1 stage\nat the end of every turn."
+  },
+  {
+    "id": "111",
+    "slug": "healing-prevented",
+    "slugLoc": "healing-prevented",
+    "name": "Healing Prevented",
+    "description": "The Pokémon is unable to restore HP through\nmoves, Abilities, or held items."
+  },
+  {
+    "id": "113",
+    "slug": "recharging",
+    "slugLoc": "recharging",
+    "name": "Recharging",
+    "description": "The Pokémon cannot take any actions for 1 turn."
+  },
+  {
+    "id": "114",
+    "slug": "charging",
+    "slugLoc": "charging",
+    "name": "Charging",
+    "description": "The Pokémon spends 1 turn charging before\nusing a move."
+  },
+  {
+    "id": "115",
+    "slug": "sky-high",
+    "slugLoc": "sky-high",
+    "name": "Sky-High",
+    "description": "The Pokémon cannot be hit by most moves,\nexcluding moves such as Thunder, Hurricane,\nand Smack Down. The Pokémon is also\nunaffected by the terrain."
+  },
+  {
+    "id": "116",
+    "slug": "submerged",
+    "slugLoc": "submerged",
+    "name": "Submerged",
+    "description": "The Pokémon cannot be hit by most moves, but\nSurf and Whirlpool will hit and will deal double\ndamage. The Pokémon is also unaffected by\nthe terrain."
+  },
+  {
+    "id": "117",
+    "slug": "underground",
+    "slugLoc": "underground",
+    "name": "Underground",
+    "description": "The Pokémon cannot be hit by most moves, but\nEarthquake will hit and will deal double damage.\nThe Pokémon is also unaffected by the terrain."
+  },
+  {
+    "id": "118",
+    "slug": "concealed",
+    "slugLoc": "concealed",
+    "name": "Concealed",
+    "description": "The Pokémon cannot be hit by moves and is\nunaffected by the terrain."
+  },
+  {
+    "id": "119",
+    "slug": "minimized",
+    "slugLoc": "minimized",
+    "name": "Minimized",
+    "description": "Moves such as Supercell Slam, Body Slam,\nDragon Rush, Flying Press, Heat Crash, and\nHeavy Slam will not miss the Pokémon and\nwill deal double damage."
+  },
+  {
+    "id": "120",
+    "slug": "atk-def-swapped",
+    "slugLoc": "atk-def-swapped",
+    "name": "Atk/Def Swapped",
+    "description": "The Pokémon's Attack and Defense stats\nare swapped."
+  },
+  {
+    "id": "121",
+    "slug": "flash-fire",
+    "slugLoc": "flash-fire",
+    "name": "Flash Fire",
+    "description": "Boosts the power of the Pokémon's Fire-type\nmoves by 50%."
+  },
+  {
+    "id": "125",
+    "slug": "micle-berry",
+    "slugLoc": "micle-berry",
+    "name": "Micle Berry",
+    "description": "Boosts the accuracy of the Pokémon's next move\nby 20%."
+  }
+]

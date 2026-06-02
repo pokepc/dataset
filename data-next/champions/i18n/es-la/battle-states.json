@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "slug": "harsh-sunlight",
+    "slugLoc": "sol",
+    "name": "Sol",
+    "description": "Aumenta un 50% el daño que causan los\nmovimientos de tipo Fuego y reduce un 50%\nel que causan los de tipo Agua."
+  },
+  {
+    "id": "2",
+    "slug": "rain",
+    "slugLoc": "lluvia",
+    "name": "Lluvia",
+    "description": "Aumenta un 50% el daño que causan los\nmovimientos de tipo Agua y reduce un 50%\nel que causan los de tipo Fuego."
+  },
+  {
+    "id": "3",
+    "slug": "sandstorm",
+    "slugLoc": "tormenta-de-arena",
+    "name": "Tormenta de arena",
+    "description": "Los Pokémon que no sean de tipo Roca, Tierra\ny Acero pierden un 6.25% de sus PS máximos\nal final de cada turno. Aumenta un 50% la\nDefensa Especial de los Pokémon de tipo Roca."
+  },
+  {
+    "id": "4",
+    "slug": "snow",
+    "slugLoc": "nieve",
+    "name": "Nieve",
+    "description": "Aumenta un 50% la Defensa de los Pokémon\nde tipo Hielo."
+  },
+  {
+    "id": "5",
+    "slug": "electric-terrain",
+    "slugLoc": "campo-electrico",
+    "name": "Campo eléctrico",
+    "description": "Aumenta un 30% la potencia de los movimientos\nde tipo Eléctrico de los Pokémon que están en\ncontacto con el suelo e impide que se queden\ndormidos."
+  },
+  {
+    "id": "6",
+    "slug": "grassy-terrain",
+    "slugLoc": "campo-de-cesped",
+    "name": "Campo de césped",
+    "description": "Aumenta un 30% la potencia de los movimientos\nde tipo Planta de los Pokémon que están en\ncontacto con el suelo y restaura un 6.25% de\nsus PS máximos al final de cada turno."
+  },
+  {
+    "id": "7",
+    "slug": "misty-terrain",
+    "slugLoc": "campo-de-niebla",
+    "name": "Campo de niebla",
+    "description": "Reduce un 50% la potencia de los\nmovimientos de tipo Dragón de los Pokémon\nque están en contacto con el suelo e impide\nque sufran problemas de estado o confusión."
+  },
+  {
+    "id": "8",
+    "slug": "trick-room",
+    "slugLoc": "espacio-raro",
+    "name": "Espacio Raro",
+    "description": "Los Pokémon con menor Velocidad \nactúan primero."
+  },
+  {
+    "id": "9",
+    "slug": "magic-room",
+    "slugLoc": "zona-magica",
+    "name": "Zona Mágica",
+    "description": "La mayoría de los objetos que llevan los\nPokémon quedan inutilizados."
+  },
+  {
+    "id": "10",
+    "slug": "wonder-room",
+    "slugLoc": "zona-extrana",
+    "name": "Zona Extraña",
+    "description": "Se intercambian los valores de la Defensa y\nla Defensa Especial de los Pokémon."
+  },
+  {
+    "id": "11",
+    "slug": "critical-hit-ratio-boost",
+    "slugLoc": "mas-criticos",
+    "name": "Más críticos",
+    "description": "Los ataques del Pokémon tienen más\nprobabilidades de lanzar un golpe crítico."
+  },
+  {
+    "id": "12",
+    "slug": "confused",
+    "slugLoc": "confundido",
+    "name": "Confundido",
+    "description": "De uno a cuatro turnos, el Pokémon tiene una\nprobabilidad del 33.3% de herirse a sí mismo."
+  },
+  {
+    "id": "13",
+    "slug": "infatuated",
+    "slugLoc": "enamorado",
+    "name": "Enamorado",
+    "description": "El Pokémon tiene una probabilidad del 50% de\nno poder usar movimientos si el Pokémon que le\nprovocó el estado Enamorado está presente en\ncombate."
+  },
+  {
+    "id": "15",
+    "slug": "drowsy",
+    "slugLoc": "somnoliento",
+    "name": "Somnoliento",
+    "description": "El Pokémon se dormirá al final del turno siguiente\nen el que haya recibido un movimiento que\nprovoca somnolencia."
+  },
+  {
+    "id": "16",
+    "slug": "encore",
+    "slugLoc": "otra-vez",
+    "name": "Otra Vez",
+    "description": "El Pokémon solo puede usar\n{0}."
+  },
+  {
+    "id": "17",
+    "slug": "no-ability",
+    "slugLoc": "habilidad-anulada",
+    "name": "Habilidad anulada",
+    "description": "La habilidad del Pokémon ya no tiene efecto."
+  },
+  {
+    "id": "18",
+    "slug": "unable-to-repeat",
+    "slugLoc": "repeticion-anulada",
+    "name": "Repetición anulada",
+    "description": "El Pokémon no puede usar el mismo movimiento\ndos veces seguidas."
+  },
+  {
+    "id": "19",
+    "slug": "tailwind",
+    "slugLoc": "viento-afin",
+    "name": "Viento Afín",
+    "description": "Duplica la Velocidad del Pokémon."
+  },
+  {
+    "id": "24",
+    "slug": "move-disabled",
+    "slugLoc": "movimiento-anulado",
+    "name": "Movimiento anulado",
+    "description": "El Pokémon no puede usar\n{0}."
+  },
+  {
+    "id": "25",
+    "slug": "cant-escape",
+    "slugLoc": "huida-imposible",
+    "name": "Huida imposible",
+    "description": "El Pokémon no puede ser cambiado por otro."
+  },
+  {
+    "id": "26",
+    "slug": "locked-on",
+    "slugLoc": "blanco-fijado",
+    "name": "Blanco fijado",
+    "description": "El movimiento del Pokémon acertará seguro\nen el siguiente turno al objetivo sobre el que\nse fijó el blanco."
+  },
+  {
+    "id": "28",
+    "slug": "electric-boost",
+    "slugLoc": "cargado-de-electricidad",
+    "name": "Cargado de electricidad",
+    "description": "El siguiente movimiento de tipo Eléctrico que\nel Pokémon use tendrá un 50% más de potencia."
+  },
+  {
+    "id": "29",
+    "slug": "gravity",
+    "slugLoc": "gravedad",
+    "name": "Gravedad",
+    "description": "Aumenta un 67% la precisión de los\nmovimientos. Los Pokémon de tipo Volador\no con la habilidad Levitación, entre otros, pasan\na estar en contacto con el suelo. No se pueden\nusar movimientos que separen del suelo."
+  },
+  {
+    "id": "31",
+    "slug": "safeguard",
+    "slugLoc": "velo-sagrado",
+    "name": "Velo Sagrado",
+    "description": "El Pokémon es inmune a los problemas de estado\no la confusión."
+  },
+  {
+    "id": "32",
+    "slug": "stealth-rock",
+    "slugLoc": "trampa-de-rocas",
+    "name": "Trampa de Rocas",
+    "description": "Los Pokémon que entran en combate pierden\n12.5% de sus PS máximos. El daño puede variar\nsegún la compatibilidad que el Pokémon tenga\ncon el tipo Roca."
+  },
+  {
+    "id": "33",
+    "slug": "stockpiling",
+    "slugLoc": "reserva",
+    "name": "Reserva",
+    "description": "Aumenta un nivel la Defensa y la Defensa\nEspecial del Pokémon cada vez que usa Reserva."
+  },
+  {
+    "id": "34",
+    "slug": "taunted",
+    "slugLoc": "provocacion",
+    "name": "Provocación",
+    "description": "El Pokémon solo puede usar ataques."
+  },
+  {
+    "id": "36",
+    "slug": "magnet-rise",
+    "slugLoc": "superiman",
+    "name": "Superimán",
+    "description": "El Pokémon flota y deja de estar en contacto\ncon el suelo, lo que impide que le afecten los\nmovimientos de tipo Tierra y los estados Púas,\nPúas tóxicas y Red Pegajosa."
+  },
+  {
+    "id": "37",
+    "slug": "toxic-spikes",
+    "slugLoc": "puas-toxicas",
+    "name": "Púas tóxicas",
+    "description": "Envenena a los Pokémon que entran en combate,\no los envenena gravemente si el estado vuelve\na provocarse una vez activo. No afecta a algunos\nPokémon, como los de tipo Volador o a los que\ntienen la habilidad Levitación, entre otros."
+  },
+  {
+    "id": "39",
+    "slug": "wish",
+    "slugLoc": "deseo",
+    "name": "Deseo",
+    "description": "Al final del turno siguiente en el que se haya \nusado el movimiento Deseo, el Pokémon que\nocupe esta posición recuperará el 50% de\nlos PS máximos del usuario."
+  },
+  {
+    "id": "40",
+    "slug": "sticky-web",
+    "slugLoc": "red-pegajosa",
+    "name": "Red Pegajosa",
+    "description": "Reduce un nivel la Velocidad de los Pokémon\nque entran en combate. No afecta a algunos\nPokémon, como los de tipo Volador o los que\ntienen la habilidad Levitación, entre otros."
+  },
+  {
+    "id": "41",
+    "slug": "ingrained",
+    "slugLoc": "arraigo",
+    "name": "Arraigo",
+    "description": "El Pokémon recupera un 6.25% de sus PS\nmáximos al final de cada turno, pero no puede\nser cambiado por otro y pasa a estar en contacto\ncon el suelo."
+  },
+  {
+    "id": "42",
+    "slug": "cursed",
+    "slugLoc": "maldicion",
+    "name": "Maldición",
+    "description": "El Pokémon pierde un 25% de sus PS máximos\nal final de cada turno."
+  },
+  {
+    "id": "43",
+    "slug": "trick-or-treating",
+    "slugLoc": "halloween",
+    "name": "Halloween",
+    "description": "El Pokémon adquiere el tipo Fantasma además\nde conservar sus tipos."
+  },
+  {
+    "id": "44",
+    "slug": "light-screen",
+    "slugLoc": "pantalla-de-luz",
+    "name": "Pantalla de Luz",
+    "description": "Reduce un 50% el daño recibido de ataques\nespeciales. En los Combates Dobles, lo reduce\nun 33.3%."
+  },
+  {
+    "id": "45",
+    "slug": "reflect",
+    "slugLoc": "reflejo",
+    "name": "Reflejo",
+    "description": "Reduce un 50% el daño recibido de ataques\nfísicos. En los Combates Dobles, lo reduce\nun 33.3%."
+  },
+  {
+    "id": "46",
+    "slug": "sealing-off",
+    "slugLoc": "sellar",
+    "name": "Sellar",
+    "description": "Ningún Pokémon rival puede utilizar los\nmovimientos que conoce el Pokémon que\nusó Sellar."
+  },
+  {
+    "id": "47",
+    "slug": "perishing",
+    "slugLoc": "cuenta-regresiva",
+    "name": "Cuenta regresiva",
+    "description": "El Pokémon se debilitará tres turnos después\nde adquirir este estado."
+  },
+  {
+    "id": "48",
+    "slug": "spikes",
+    "slugLoc": "puas",
+    "name": "Púas",
+    "description": "Los Pokémon que entran en combate pierden un\n12.5% de sus PS máximos. El daño aumentará si\neste estado se provoca una o dos veces más al ya\nestar activo. No afecta a algunos Pokémon, como\nlos de tipo Volador o con la habilidad Levitación."
+  },
+  {
+    "id": "50",
+    "slug": "destiny-bound",
+    "slugLoc": "lazo-del-destino",
+    "name": "Lazo del Destino",
+    "description": "Si el Pokémon se debilita por un ataque del\nrival, este también se debilitará."
+  },
+  {
+    "id": "51",
+    "slug": "forest-cursed",
+    "slugLoc": "condena-silvana",
+    "name": "Condena Silvana",
+    "description": "El Pokémon adquiere el tipo Planta además de\nconservar sus tipos."
+  },
+  {
+    "id": "52",
+    "slug": "leech-seeded",
+    "slugLoc": "drenadoras",
+    "name": "Drenadoras",
+    "description": "El Pokémon pierde 12.5% de sus PS máximos\nal final de cada turno. Cualquier Pokémon que\nocupe la posición del usuario de Drenadoras\nrecupera esa misma cantidad de PS."
+  },
+  {
+    "id": "54",
+    "slug": "bound",
+    "slugLoc": "apresado",
+    "name": "Apresado",
+    "description": "El Pokémon pierde 12.5% de sus PS máximos al\nfinal de cada turno durante cuatro o cinco turnos\ny no puede ser cambiado por otro."
+  },
+  {
+    "id": "57",
+    "slug": "rampaging",
+    "slugLoc": "enojado",
+    "name": "Enojado",
+    "description": "El Pokémon ataca durante dos o tres turnos,\nen los cuales no puede realizar otras acciones.\nDespués, se queda confundido."
+  },
+  {
+    "id": "59",
+    "slug": "badly-poisoned",
+    "slugLoc": "gravemente-envenenado",
+    "name": "Gravemente envenenado",
+    "description": "El Pokémon pierde PS al final de cada turno.\nEl daño empieza en 6.25% de sus PS máximos y\naumenta 6.25% por turno (12.5% en el 2.º,\n18.75% en el 3.º, etc.). Si se cambia por otro y\nvuelve al combate, se reinicia desde 6.25%."
+  },
+  {
+    "id": "60",
+    "slug": "future-attack",
+    "slugLoc": "ataque-futuro",
+    "name": "Ataque futuro",
+    "description": "Dos turnos después de que se haya previsto un \nataque, el Pokémon que ocupe esta posición\nrecibirá el daño."
+  },
+  {
+    "id": "61",
+    "slug": "uproar",
+    "slugLoc": "alboroto",
+    "name": "Alboroto",
+    "description": "El Pokémon ataca durante tres turnos, en los\ncuales no puede realizar otras acciones y ningún\nPokémon puede quedarse dormido."
+  },
+  {
+    "id": "62",
+    "slug": "aqua-ring",
+    "slugLoc": "acuaanillo",
+    "name": "Acuaanillo",
+    "description": "El Pokémon recupera 6.25% de sus PS máximos\nal final de cada turno."
+  },
+  {
+    "id": "64",
+    "slug": "landed",
+    "slugLoc": "derribado",
+    "name": "Derribado",
+    "description": "El Pokémon pasa a estar en contacto con el suelo\ny le afectan los movimientos de tipo Tierra."
+  },
+  {
+    "id": "65",
+    "slug": "fairy-locked",
+    "slugLoc": "cerrojo-feerico",
+    "name": "Cerrojo Feérico",
+    "description": "Ningún Pokémon puede ser cambiado por otro\nhasta el final del turno siguiente en el que haya\nusado el movimiento Cerrojo Feérico."
+  },
+  {
+    "id": "72",
+    "slug": "psychic-terrain",
+    "slugLoc": "campo-psiquico",
+    "name": "Campo psíquico",
+    "description": "Aumenta un 30% la potencia de los movimientos\nde tipo Psíquico de los Pokémon que están en\ncontacto con el suelo e impide que sean\nalcanzados por movimientos de prioridad alta."
+  },
+  {
+    "id": "73",
+    "slug": "throat-chopped",
+    "slugLoc": "golpe-al-cuello",
+    "name": "Golpe al Cuello",
+    "description": "El Pokémon no puede utilizar movimientos\nque usan sonido durante dos turnos."
+  },
+  {
+    "id": "74",
+    "slug": "aurora-veil",
+    "slugLoc": "velo-aurora",
+    "name": "Velo Aurora",
+    "description": "Reduce un 50% el daño recibido de ataques\nfísicos y especiales. En los Combates Dobles,\nse reduce un 33.3%."
+  },
+  {
+    "id": "106",
+    "slug": "salt-cured",
+    "slugLoc": "salacion",
+    "name": "Salación",
+    "description": "El Pokémon pierde un 6.25% de sus PS máximos\nal final de cada turno, o un 12.5% si es de tipo\nAcero o Agua."
+  },
+  {
+    "id": "108",
+    "slug": "syrupy",
+    "slugLoc": "caramelizado",
+    "name": "Caramelizado",
+    "description": "Reduce un nivel la Velocidad del Pokémon al\nfinal de cada turno."
+  },
+  {
+    "id": "111",
+    "slug": "healing-prevented",
+    "slugLoc": "curacion-anulada",
+    "name": "Curación anulada",
+    "description": "El Pokémon no puede recuperar PS usando\nmovimientos, habilidades o el objeto\nque lleve."
+  },
+  {
+    "id": "113",
+    "slug": "recharging",
+    "slugLoc": "descansando",
+    "name": "Descansando",
+    "description": "El Pokémon no puede actuar durante un turno."
+  },
+  {
+    "id": "114",
+    "slug": "charging",
+    "slugLoc": "cargando",
+    "name": "Cargando",
+    "description": "El Pokémon debe cargar su movimiento durante\nun turno antes de usarlo."
+  },
+  {
+    "id": "115",
+    "slug": "sky-high",
+    "slugLoc": "a-gran-altitud",
+    "name": "A gran altitud",
+    "description": "El Pokémon es inmune a los efectos del campo\nactivo y ningún movimiento puede alcanzarlo,\na excepción de algunos como Trueno, Huracán\ny Antiaéreo."
+  },
+  {
+    "id": "116",
+    "slug": "submerged",
+    "slugLoc": "sumergido",
+    "name": "Sumergido",
+    "description": "El Pokémon es inmune a los efectos del campo\nactivo y ningún movimiento puede alcanzarlo,\na excepción de Surf y Remolino, que causarán\nel doble de daño."
+  },
+  {
+    "id": "117",
+    "slug": "underground",
+    "slugLoc": "enterrado",
+    "name": "Enterrado",
+    "description": "El Pokémon es inmune a los efectos del campo\nactivo y ningún movimiento puede alcanzarlo,\na excepción de Terremoto, que causará el doble\nde daño."
+  },
+  {
+    "id": "118",
+    "slug": "concealed",
+    "slugLoc": "oculto",
+    "name": "Oculto",
+    "description": "El Pokémon es inmune a los efectos del campo\nactivo y ningún movimiento puede alcanzarlo."
+  },
+  {
+    "id": "119",
+    "slug": "minimized",
+    "slugLoc": "reducido",
+    "name": "Reducido",
+    "description": "Movimientos como Golpe Voltaico, Golpe de\nCuerpo, Carga Dragón, Plancha Voladora,\nGolpe de Calor y Golpe Pesado que se usen\ncontra el Pokémon acertarán seguro y causarán\nel doble de daño."
+  },
+  {
+    "id": "120",
+    "slug": "atk-def-swapped",
+    "slugLoc": "ataque-y-defensa-invertidos",
+    "name": "Ataque y Defensa invertidos",
+    "description": "Se intercambian los valores del Ataque y\nla Defensa del Pokémon."
+  },
+  {
+    "id": "121",
+    "slug": "flash-fire",
+    "slugLoc": "absorbefuego",
+    "name": "Absorbefuego",
+    "description": "Aumenta un 50% la potencia de los movimientos\nde tipo Fuego del Pokémon."
+  },
+  {
+    "id": "125",
+    "slug": "micle-berry",
+    "slugLoc": "baya-lagro",
+    "name": "Baya Lagro",
+    "description": "Aumenta un 20% la precisión del siguiente\nmovimiento que use el Pokémon."
+  }
+]

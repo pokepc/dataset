@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "slug": "harsh-sunlight",
+    "slugLoc": "soleil",
+    "name": "Soleil",
+    "description": "Les dégâts des capacités de type Feu\nsont multipliés par 1,5.\nLes dégâts des capacités de type Eau\nsont réduits de moitié."
+  },
+  {
+    "id": "2",
+    "slug": "rain",
+    "slugLoc": "pluie",
+    "name": "Pluie",
+    "description": "Les dégâts des capacités de type Eau\nsont multipliés par 1,5.\nLes dégâts des capacités de type Feu\nsont réduits de moitié."
+  },
+  {
+    "id": "3",
+    "slug": "sandstorm",
+    "slugLoc": "tempete-de-sable",
+    "name": "Tempête de sable",
+    "description": "Tous les Pokémon, sauf ceux de type Roche,\nSol ou Acier, subissent des dégâts équivalents\nà 1/16 de leurs PV max à la fin de chaque tour.\nLa Défense Spéciale des Pokémon de type\nRoche est multipliée par 1,5."
+  },
+  {
+    "id": "4",
+    "slug": "snow",
+    "slugLoc": "neige",
+    "name": "Neige",
+    "description": "La Défense des Pokémon de type Glace\nest multipliée par 1,5."
+  },
+  {
+    "id": "5",
+    "slug": "electric-terrain",
+    "slugLoc": "champ-electrifie",
+    "name": "Champ Électrifié",
+    "description": "Ces effets s'appliquent aux Pokémon au sol :\n・ La puissance de leurs capacités de type Électrik\nest multipliée par 1,3.\n・ Ils ne peuvent pas s'endormir."
+  },
+  {
+    "id": "6",
+    "slug": "grassy-terrain",
+    "slugLoc": "champ-herbu",
+    "name": "Champ Herbu",
+    "description": "Ces effets s'appliquent aux Pokémon au sol :\n・ La puissance de leurs capacités de type Plante\nest multipliée par 1,3.\n・ Ils récupèrent 1/16 de leurs PV max à la fin\nde chaque tour."
+  },
+  {
+    "id": "7",
+    "slug": "misty-terrain",
+    "slugLoc": "champ-brumeux",
+    "name": "Champ Brumeux",
+    "description": "Ces effets s'appliquent aux Pokémon au sol :\n・ La puissance de leurs capacités de type Dragon\nest réduite de moitié.\n・ Ils ne peuvent ni subir d'altérations de statut,\nni devenir confus."
+  },
+  {
+    "id": "8",
+    "slug": "trick-room",
+    "slugLoc": "distorsion",
+    "name": "Distorsion",
+    "description": "Les Pokémon agissent par ordre croissant\nde Vitesse (du plus lent au plus rapide)."
+  },
+  {
+    "id": "9",
+    "slug": "magic-room",
+    "slugLoc": "zone-magique",
+    "name": "Zone Magique",
+    "description": "De nombreux objets tenus ne peuvent pas\nactiver leur effet."
+  },
+  {
+    "id": "10",
+    "slug": "wonder-room",
+    "slugLoc": "zone-etrange",
+    "name": "Zone Étrange",
+    "description": "La Défense et la Défense Spéciale du Pokémon\nsont interverties."
+  },
+  {
+    "id": "11",
+    "slug": "critical-hit-ratio-boost",
+    "slugLoc": "taux-de-critiques",
+    "name": "Taux de critiques ↑",
+    "description": "Les attaques du Pokémon ont plus de chances\nd'infliger un coup critique."
+  },
+  {
+    "id": "12",
+    "slug": "confused",
+    "slugLoc": "confusion",
+    "name": "Confusion",
+    "description": "Le Pokémon a 1 chance sur 3 de s'attaquer\nlui-même pendant 1 à 4 tours."
+  },
+  {
+    "id": "13",
+    "slug": "infatuated",
+    "slugLoc": "attraction",
+    "name": "Attraction",
+    "description": "Le Pokémon a 50 % de chances de ne pas\npouvoir utiliser de capacité si l'adversaire\nqui lui a infligé l'état « Attraction »\nest sur le terrain."
+  },
+  {
+    "id": "15",
+    "slug": "drowsy",
+    "slugLoc": "somnolence",
+    "name": "Somnolence",
+    "description": "Le Pokémon s'endormira à la fin du tour suivant\nl'utilisation d'une capacité qui lui a infligé l'état\n« Somnolence »."
+  },
+  {
+    "id": "16",
+    "slug": "encore",
+    "slugLoc": "encore",
+    "name": "Encore",
+    "description": "Le Pokémon peut uniquement utiliser la capacité\n{0}."
+  },
+  {
+    "id": "17",
+    "slug": "no-ability",
+    "slugLoc": "pas-de-talent",
+    "name": "Pas de talent",
+    "description": "Le talent du Pokémon est inactif."
+  },
+  {
+    "id": "18",
+    "slug": "unable-to-repeat",
+    "slugLoc": "pas-de-repetition",
+    "name": "Pas de répétition",
+    "description": "Le Pokémon ne peut pas utiliser la même\ncapacité deux fois de suite."
+  },
+  {
+    "id": "19",
+    "slug": "tailwind",
+    "slugLoc": "vent-arriere",
+    "name": "Vent Arrière",
+    "description": "La Vitesse du Pokémon est multipliée par 2."
+  },
+  {
+    "id": "24",
+    "slug": "move-disabled",
+    "slugLoc": "capacite-bloquee",
+    "name": "Capacité bloquée",
+    "description": "Le Pokémon ne peut pas utiliser la capacité\n{0}."
+  },
+  {
+    "id": "25",
+    "slug": "cant-escape",
+    "slugLoc": "fuite-impossible",
+    "name": "Fuite impossible",
+    "description": "Le Pokémon ne peut pas quitter le terrain."
+  },
+  {
+    "id": "26",
+    "slug": "locked-on",
+    "slugLoc": "verrouillage",
+    "name": "Verrouillage",
+    "description": "La capacité que le Pokémon lancera au tour\nsuivant l'utilisation de la capacité Verrouillage\ntouchera à coup sûr la cible qu'il a verrouillée."
+  },
+  {
+    "id": "28",
+    "slug": "electric-boost",
+    "slugLoc": "boost-electrik",
+    "name": "Boost Électrik",
+    "description": "La puissance de la prochaine capacité de type\nÉlectrik utilisée par le Pokémon sera multipliée\npar 2."
+  },
+  {
+    "id": "29",
+    "slug": "gravity",
+    "slugLoc": "gravite",
+    "name": "Gravité",
+    "description": "La Précision des capacités est multipliée\npar 1,67. Les Pokémon de type Vol ou dotés\ndu talent Lévitation, entre autres, sont cloués\nau sol. Les capacités qui font décoller\nles Pokémon ne peuvent pas être utilisées."
+  },
+  {
+    "id": "31",
+    "slug": "safeguard",
+    "slugLoc": "rune-protect",
+    "name": "Rune Protect",
+    "description": "Le Pokémon est immunisé contre les altérations\nde statut et la confusion."
+  },
+  {
+    "id": "32",
+    "slug": "stealth-rock",
+    "slugLoc": "piege-de-roc",
+    "name": "Piège de Roc",
+    "description": "Les Pokémon entrant sur le terrain subissent\ndes dégâts équivalents à 1/8 de leurs PV max.\nLes dégâts peuvent varier en fonction\nde l'affinité du Pokémon avec le type Roche."
+  },
+  {
+    "id": "33",
+    "slug": "stockpiling",
+    "slugLoc": "stockage",
+    "name": "Stockage",
+    "description": "La Défense et la Défense Spéciale du Pokémon\naugmentent de 1 cran à chaque fois qu'il utilise\nStockage."
+  },
+  {
+    "id": "34",
+    "slug": "taunted",
+    "slugLoc": "provocation",
+    "name": "Provocation",
+    "description": "Le Pokémon peut uniquement utiliser\ndes attaques."
+  },
+  {
+    "id": "36",
+    "slug": "magnet-rise",
+    "slugLoc": "vol-magnetik",
+    "name": "Vol Magnétik",
+    "description": "Le Pokémon flotte au-dessus du sol, ce qui\nl'immunise contre les capacités de type Sol,\nainsi que les effets de Picots, Pics Toxik\net Toile Gluante."
+  },
+  {
+    "id": "37",
+    "slug": "toxic-spikes",
+    "slugLoc": "pics-toxik",
+    "name": "Pics Toxik",
+    "description": "Les Pokémon entrant sur le terrain sont\nempoisonnés. Si 2 effets de Pics Toxik sont actifs\nen même temps, ils sont gravement empoisonnés.\nCela n'affecte pas les Pokémon de type Vol\nou dotés du talent Lévitation, entre autres."
+  },
+  {
+    "id": "39",
+    "slug": "wish",
+    "slugLoc": "voeu",
+    "name": "Vœu",
+    "description": "À la fin du tour suivant l'utilisation de la capacité\nVœu, le Pokémon se trouvant à cet endroit\nrécupérera des PV équivalents à la moitié des\nPV max du Pokémon qui a utilisé la capacité."
+  },
+  {
+    "id": "40",
+    "slug": "sticky-web",
+    "slugLoc": "toile-gluante",
+    "name": "Toile Gluante",
+    "description": "La Vitesse des Pokémon entrant sur le terrain\nbaisse de 1 cran.\nCela n'affecte pas les Pokémon de type Vol\nou dotés du talent Lévitation, entre autres."
+  },
+  {
+    "id": "41",
+    "slug": "ingrained",
+    "slugLoc": "racines",
+    "name": "Racines",
+    "description": "Le Pokémon récupère 1/16 de ses PV max\nà la fin de chaque tour.\nLe Pokémon est cloué au sol et il ne peut pas\nquitter le terrain."
+  },
+  {
+    "id": "42",
+    "slug": "cursed",
+    "slugLoc": "malediction",
+    "name": "Malédiction",
+    "description": "Le Pokémon perd 1/4 de ses PV max à la fin\nde chaque tour."
+  },
+  {
+    "id": "43",
+    "slug": "trick-or-treating",
+    "slugLoc": "halloween",
+    "name": "Halloween",
+    "description": "Le Pokémon obtient le type Spectre."
+  },
+  {
+    "id": "44",
+    "slug": "light-screen",
+    "slugLoc": "mur-lumiere",
+    "name": "Mur Lumière",
+    "description": "Les dégâts des capacités spéciales subis\npar le Pokémon sont réduits de moitié.\nEn Combat Duo, ces capacités infligent 2/3\nde leurs dégâts à la place."
+  },
+  {
+    "id": "45",
+    "slug": "reflect",
+    "slugLoc": "protection",
+    "name": "Protection",
+    "description": "Les dégâts des capacités physiques subis\npar le Pokémon sont réduits de moitié.\nEn Combat Duo, ces capacités infligent 2/3\nde leurs dégâts à la place."
+  },
+  {
+    "id": "46",
+    "slug": "sealing-off",
+    "slugLoc": "possessif",
+    "name": "Possessif",
+    "description": "Aucun adversaire ne peut utiliser les capacités\nque le Pokémon ayant utilisé Possessif connaît."
+  },
+  {
+    "id": "47",
+    "slug": "perishing",
+    "slugLoc": "condamne",
+    "name": "Condamné",
+    "description": "Le Pokémon sera mis K.O. 3 tours après que\nl'état « Condamné » lui a été infligé."
+  },
+  {
+    "id": "48",
+    "slug": "spikes",
+    "slugLoc": "picots",
+    "name": "Picots",
+    "description": "Les Pokémon entrant sur le terrain subissent des\ndégâts équivalents à 1/8 de leurs PV max, et plus\nsi 2 ou 3 effets de Picots sont actifs en même\ntemps. Cela n'affecte pas les Pokémon de type\nVol ou dotés du talent Lévitation, entre autres."
+  },
+  {
+    "id": "50",
+    "slug": "destiny-bound",
+    "slugLoc": "lien-du-destin",
+    "name": "Lien du Destin",
+    "description": "Si le Pokémon est mis K.O., le Pokémon\nresponsable est également mis K.O."
+  },
+  {
+    "id": "51",
+    "slug": "forest-cursed",
+    "slugLoc": "malefice-sylvain",
+    "name": "Maléfice Sylvain",
+    "description": "Le Pokémon obtient le type Plante."
+  },
+  {
+    "id": "52",
+    "slug": "leech-seeded",
+    "slugLoc": "vampigraine",
+    "name": "Vampigraine",
+    "description": "À la fin de chaque tour, le Pokémon subit\ndes dégâts équivalents à 1/8 de ses PV max,\net l'adversaire qui se trouve à l'endroit depuis\nlequel la capacité Vampigraine a été lancée\nrécupère la même quantité de PV."
+  },
+  {
+    "id": "54",
+    "slug": "bound",
+    "slugLoc": "piege",
+    "name": "Piégé",
+    "description": "Le Pokémon subit des dégâts équivalents à\n1/8 de ses PV max à la fin de chaque tour,\net il ne peut pas quitter le terrain pendant\n4 à 5 tours."
+  },
+  {
+    "id": "57",
+    "slug": "rampaging",
+    "slugLoc": "enrage",
+    "name": "Enragé",
+    "description": "Le Pokémon continue d'attaquer avec\nla même capacité pendant 2 à 3 tours.\nPendant ce temps, il ne peut rien faire d'autre.\nEnsuite, il devient confus."
+  },
+  {
+    "id": "59",
+    "slug": "badly-poisoned",
+    "slugLoc": "poison-grave",
+    "name": "Poison grave",
+    "description": "À la fin de chaque tour, le Pokémon subit des\ndégâts qui augmentent au fil des tours, d'abord\néquivalents à 1/16 de ses PV max, puis à 2/16,\n3/16, etc. Si le Pokémon est remplacé et\nrevient sur le terrain, cette valeur repart de 1/16."
+  },
+  {
+    "id": "60",
+    "slug": "future-attack",
+    "slugLoc": "attaque-future",
+    "name": "Attaque future",
+    "description": "Le Pokémon se trouvant à l'endroit où\nune attaque future a été prévue subira\ndes dégâts 2 tours après la prévision\nde l'attaque."
+  },
+  {
+    "id": "61",
+    "slug": "uproar",
+    "slugLoc": "brouhaha",
+    "name": "Brouhaha",
+    "description": "Le Pokémon continue d'attaquer avec\nla même capacité pendant 2 à 3 tours.\nPendant ce temps, il ne peut rien faire d'autre\net les Pokémon présents sur le terrain ne peuvent\npas s'endormir."
+  },
+  {
+    "id": "62",
+    "slug": "aqua-ring",
+    "slugLoc": "anneau-hydro",
+    "name": "Anneau Hydro",
+    "description": "Le Pokémon récupère 1/16 de ses PV max\nà la fin de chaque tour."
+  },
+  {
+    "id": "64",
+    "slug": "landed",
+    "slugLoc": "cloue-au-sol",
+    "name": "Cloué au sol",
+    "description": "Le Pokémon est cloué au sol et devient sensible\naux capacités de type Sol."
+  },
+  {
+    "id": "65",
+    "slug": "fairy-locked",
+    "slugLoc": "verrou-enchante",
+    "name": "Verrou Enchanté",
+    "description": "Aucun Pokémon présent sur le terrain ne peut\nle quitter jusqu'à la fin du tour suivant\nl'utilisation de Verrou Enchanté."
+  },
+  {
+    "id": "72",
+    "slug": "psychic-terrain",
+    "slugLoc": "champ-psychique",
+    "name": "Champ Psychique",
+    "description": "Ces effets s'appliquent aux Pokémon au sol :\n・ La puissance de leurs capacités de type Psy\nest multipliée par 1,3.\n・ Ils sont immunisés contre les capacités\nprioritaires."
+  },
+  {
+    "id": "73",
+    "slug": "throat-chopped",
+    "slugLoc": "execu-son",
+    "name": "Exécu-Son",
+    "description": "Le Pokémon ne peut pas utiliser de capacités\nde son pendant 2 tours."
+  },
+  {
+    "id": "74",
+    "slug": "aurora-veil",
+    "slugLoc": "voile-aurore",
+    "name": "Voile Aurore",
+    "description": "Les dégâts des capacités physiques et spéciales\nsubis par le Pokémon sont réduits de moitié.\nEn Combat Duo, ces capacités infligent 2/3\nde leurs dégâts à la place."
+  },
+  {
+    "id": "106",
+    "slug": "salt-cured",
+    "slugLoc": "salaison",
+    "name": "Salaison",
+    "description": "Le Pokémon subit des dégâts équivalents\nà 1/16 de ses PV max à la fin de chaque tour.\nS'il est de type Acier ou Eau, il subit des dégâts\néquivalents à 1/8 de ses PV max."
+  },
+  {
+    "id": "108",
+    "slug": "syrupy",
+    "slugLoc": "recouvert-de-sirop",
+    "name": "Recouvert de sirop",
+    "description": "La Vitesse du Pokémon baisse de 1 cran\nà la fin de chaque tour."
+  },
+  {
+    "id": "111",
+    "slug": "healing-prevented",
+    "slugLoc": "soins-bloques",
+    "name": "Soins bloqués",
+    "description": "Le Pokémon ne peut pas récupérer de PV grâce\nà des capacités, talents ou objets tenus."
+  },
+  {
+    "id": "113",
+    "slug": "recharging",
+    "slugLoc": "epuisement",
+    "name": "Épuisement",
+    "description": "Le Pokémon ne peut pas agir pendant 1 tour."
+  },
+  {
+    "id": "114",
+    "slug": "charging",
+    "slugLoc": "en-charge",
+    "name": "En charge",
+    "description": "Le Pokémon charge la capacité pendant 1 tour\navant de l'utiliser."
+  },
+  {
+    "id": "115",
+    "slug": "sky-high",
+    "slugLoc": "dans-le-ciel",
+    "name": "Dans le ciel",
+    "description": "De nombreuses capacités ne peuvent pas\ntoucher le Pokémon, sauf certaines comme\nFatal-Foudre, Vent Violent ou encore Anti-Air.\nLes champs n'ont pas d'effet sur le Pokémon."
+  },
+  {
+    "id": "116",
+    "slug": "submerged",
+    "slugLoc": "sous-l-eau",
+    "name": "Sous l'eau",
+    "description": "De nombreuses capacités ne peuvent pas\ntoucher le Pokémon, sauf Surf et Siphon,\ndont les dégâts sont multipliés par 2.\nLes champs n'ont pas d'effet sur le Pokémon."
+  },
+  {
+    "id": "117",
+    "slug": "underground",
+    "slugLoc": "sous-la-terre",
+    "name": "Sous la terre",
+    "description": "De nombreuses capacités ne peuvent pas toucher\nle Pokémon, mais Séisme le peut et les dégâts de\ncette capacité sont multipliés par 2.\nLes champs n'ont pas d'effet sur le Pokémon."
+  },
+  {
+    "id": "118",
+    "slug": "concealed",
+    "slugLoc": "disparu",
+    "name": "Disparu",
+    "description": "Les capacités ne peuvent pas toucher\nle Pokémon et les champs n'ont pas d'effet\nsur lui."
+  },
+  {
+    "id": "119",
+    "slug": "minimized",
+    "slugLoc": "lilliputien",
+    "name": "Lilliputien",
+    "description": "Quand elles sont utilisées sur le Pokémon,\nles capacités telles que Volt Assaut, Plaquage,\nDraco-Charge, Flying Press, Tacle Feu et Tacle\nLourd n'échouent jamais et leurs dégâts sont\nmultipliés par 2."
+  },
+  {
+    "id": "120",
+    "slug": "atk-def-swapped",
+    "slugLoc": "atq-et-def-interverties",
+    "name": "Atq. et Déf. interverties",
+    "description": "L'Attaque et la Défense du Pokémon sont\ninterverties."
+  },
+  {
+    "id": "121",
+    "slug": "flash-fire",
+    "slugLoc": "torche",
+    "name": "Torche",
+    "description": "La puissance des capacités de type Feu\ndu Pokémon est multipliée par 1,5."
+  },
+  {
+    "id": "125",
+    "slug": "micle-berry",
+    "slugLoc": "baie-micle",
+    "name": "Baie Micle",
+    "description": "La Précision de la prochaine capacité utilisée\npar le Pokémon est multipliée par 1,2."
+  }
+]

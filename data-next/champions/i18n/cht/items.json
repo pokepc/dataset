@@ -1,0 +1,938 @@
+[
+  {
+    "id": "149",
+    "slug": "cheri-berry",
+    "slugLoc": "ying-zi-guo",
+    "name": "櫻子果",
+    "description": "可治癒麻痺狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "櫻子果"
+  },
+  {
+    "id": "150",
+    "slug": "chesto-berry",
+    "slugLoc": "ling-yu-guo",
+    "name": "零餘果",
+    "description": "可治癒睡眠狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "零餘果"
+  },
+  {
+    "id": "151",
+    "slug": "pecha-berry",
+    "slugLoc": "tao-tao-guo",
+    "name": "桃桃果",
+    "description": "可治癒中毒、劇毒狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "桃桃果"
+  },
+  {
+    "id": "152",
+    "slug": "rawst-berry",
+    "slugLoc": "mei-mei-guo",
+    "name": "莓莓果",
+    "description": "可治癒灼傷狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "莓莓果"
+  },
+  {
+    "id": "153",
+    "slug": "aspear-berry",
+    "slugLoc": "li-mu-guo",
+    "name": "利木果",
+    "description": "可治癒冰凍狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "利木果"
+  },
+  {
+    "id": "154",
+    "slug": "leppa-berry",
+    "slugLoc": "pin-ye-guo",
+    "name": "蘋野果",
+    "description": "會讓PP變為0的招式回復10PP。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "蘋野果"
+  },
+  {
+    "id": "155",
+    "slug": "oran-berry",
+    "slugLoc": "cheng-cheng-guo",
+    "name": "橙橙果",
+    "description": "剩餘HP降到最大HP的1/2以下時，\n會回復10HP。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "橙橙果"
+  },
+  {
+    "id": "156",
+    "slug": "persim-berry",
+    "slugLoc": "shi-zi-guo",
+    "name": "柿仔果",
+    "description": "可治癒混亂狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "柿仔果"
+  },
+  {
+    "id": "157",
+    "slug": "lum-berry",
+    "slugLoc": "mu-zi-guo",
+    "name": "木子果",
+    "description": "可治癒所有異常狀態、混亂狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "木子果"
+  },
+  {
+    "id": "158",
+    "slug": "sitrus-berry",
+    "slugLoc": "wen-you-guo",
+    "name": "文柚果",
+    "description": "剩餘HP降到最大HP的1/2以下時，\n會回復最大HP的1/4。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "文柚果"
+  },
+  {
+    "id": "184",
+    "slug": "occa-berry",
+    "slugLoc": "qiao-ke-guo",
+    "name": "巧可果",
+    "description": "受到效果絕佳的火屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "巧可果"
+  },
+  {
+    "id": "185",
+    "slug": "passho-berry",
+    "slugLoc": "qian-xiang-guo",
+    "name": "千香果",
+    "description": "受到效果絕佳的水屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "千香果"
+  },
+  {
+    "id": "186",
+    "slug": "wacan-berry",
+    "slugLoc": "zhu-mu-guo",
+    "name": "燭木果",
+    "description": "受到效果絕佳的電屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "燭木果"
+  },
+  {
+    "id": "187",
+    "slug": "rindo-berry",
+    "slugLoc": "luo-zi-guo",
+    "name": "羅子果",
+    "description": "受到效果絕佳的草屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "羅子果"
+  },
+  {
+    "id": "188",
+    "slug": "yache-berry",
+    "slugLoc": "fan-li-guo",
+    "name": "番荔果",
+    "description": "受到效果絕佳的冰屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "番荔果"
+  },
+  {
+    "id": "189",
+    "slug": "chople-berry",
+    "slugLoc": "lian-pu-guo",
+    "name": "蓮蒲果",
+    "description": "受到效果絕佳的格鬥屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "蓮蒲果"
+  },
+  {
+    "id": "190",
+    "slug": "kebia-berry",
+    "slugLoc": "tong-tong-guo",
+    "name": "通通果",
+    "description": "受到效果絕佳的毒屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "通通果"
+  },
+  {
+    "id": "191",
+    "slug": "shuca-berry",
+    "slugLoc": "yao-mu-guo",
+    "name": "腰木果",
+    "description": "受到效果絕佳的地面屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "腰木果"
+  },
+  {
+    "id": "192",
+    "slug": "coba-berry",
+    "slugLoc": "leng-gua-guo",
+    "name": "稜瓜果",
+    "description": "受到效果絕佳的飛行屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "稜瓜果"
+  },
+  {
+    "id": "193",
+    "slug": "payapa-berry",
+    "slugLoc": "fu-lu-guo",
+    "name": "福祿果",
+    "description": "受到效果絕佳的超能力屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "福祿果"
+  },
+  {
+    "id": "194",
+    "slug": "tanga-berry",
+    "slugLoc": "bian-ying-guo",
+    "name": "扁櫻果",
+    "description": "受到效果絕佳的蟲屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "扁櫻果"
+  },
+  {
+    "id": "195",
+    "slug": "charti-berry",
+    "slugLoc": "cao-can-guo",
+    "name": "草蠶果",
+    "description": "受到效果絕佳的岩石屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "草蠶果"
+  },
+  {
+    "id": "196",
+    "slug": "kasib-berry",
+    "slugLoc": "fo-gan-guo",
+    "name": "佛柑果",
+    "description": "受到效果絕佳的幽靈屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "佛柑果"
+  },
+  {
+    "id": "197",
+    "slug": "haban-berry",
+    "slugLoc": "mei-liu-guo",
+    "name": "莓榴果",
+    "description": "受到效果絕佳的龍屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "莓榴果"
+  },
+  {
+    "id": "198",
+    "slug": "colbur-berry",
+    "slugLoc": "ci-er-guo",
+    "name": "刺耳果",
+    "description": "受到效果絕佳的惡屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "刺耳果"
+  },
+  {
+    "id": "199",
+    "slug": "babiri-berry",
+    "slugLoc": "pi-pi-guo",
+    "name": "霹霹果",
+    "description": "受到效果絕佳的鋼屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "霹霹果"
+  },
+  {
+    "id": "200",
+    "slug": "chilan-berry",
+    "slugLoc": "deng-jiang-guo",
+    "name": "燈漿果",
+    "description": "受到一般屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "燈漿果"
+  },
+  {
+    "id": "213",
+    "slug": "bright-powder",
+    "slugLoc": "guang-fen",
+    "name": "光粉",
+    "description": "對手對自己使用的招式的\n命中率會變為0.9倍。",
+    "pluralName": "光粉"
+  },
+  {
+    "id": "214",
+    "slug": "white-herb",
+    "slugLoc": "bai-se-xiang-cao",
+    "name": "白色香草",
+    "description": "能力降低時，能夠讓能力復原。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "白色香草"
+  },
+  {
+    "id": "217",
+    "slug": "quick-claw",
+    "slugLoc": "xian-zhi-zhi-zhua",
+    "name": "先制之爪",
+    "description": "有20%的機率會在相同優先度的\n招式中第一個行動。",
+    "pluralName": "先制之爪"
+  },
+  {
+    "id": "219",
+    "slug": "mental-herb",
+    "slugLoc": "xin-ling-xiang-cao",
+    "name": "心靈香草",
+    "description": "可治癒著迷、挑釁、不可連續、\n招式封鎖、回復封鎖、再來一次狀態。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "心靈香草"
+  },
+  {
+    "id": "221",
+    "slug": "kings-rock",
+    "slugLoc": "wang-zhe-zhi-zheng",
+    "name": "王者之證",
+    "description": "用招式給予傷害時，\n有10%的機率會讓對手畏縮。",
+    "pluralName": "王者之證"
+  },
+  {
+    "id": "222",
+    "slug": "silver-powder",
+    "slugLoc": "yin-fen",
+    "name": "銀粉",
+    "description": "蟲屬性招式威力會變為1.2倍。",
+    "pluralName": "銀粉"
+  },
+  {
+    "id": "230",
+    "slug": "focus-band",
+    "slugLoc": "qi-shi-tou-dai",
+    "name": "氣勢頭帶",
+    "description": "受到會瀕死的招式傷害時，\n有10%的機率會剩下1HP撐過去。",
+    "pluralName": "氣勢頭帶"
+  },
+  {
+    "id": "232",
+    "slug": "scope-lens",
+    "slugLoc": "jiao-dian-jing",
+    "name": "焦點鏡",
+    "description": "易中要害+1。",
+    "pluralName": "焦點鏡"
+  },
+  {
+    "id": "233",
+    "slug": "metal-coat",
+    "slugLoc": "jin-shu-mo",
+    "name": "金屬膜",
+    "description": "鋼屬性招式威力會變為1.2倍。",
+    "pluralName": "金屬膜"
+  },
+  {
+    "id": "234",
+    "slug": "leftovers",
+    "slugLoc": "chi-sheng-de-dong-xi",
+    "name": "吃剩的東西",
+    "description": "在回合結束時，\n會回復最大HP的1/16。",
+    "pluralName": "吃剩的東西"
+  },
+  {
+    "id": "236",
+    "slug": "light-ball",
+    "slugLoc": "dian-qi-qiu",
+    "name": "電氣球",
+    "description": "皮卡丘的攻擊、特攻會變為2倍。",
+    "pluralName": "電氣球"
+  },
+  {
+    "id": "237",
+    "slug": "soft-sand",
+    "slugLoc": "rou-ruan-sha-zi",
+    "name": "柔軟沙子",
+    "description": "地面屬性招式威力會變為1.2倍。",
+    "pluralName": "柔軟沙子"
+  },
+  {
+    "id": "238",
+    "slug": "hard-stone",
+    "slugLoc": "ying-shi-tou",
+    "name": "硬石頭",
+    "description": "岩石屬性招式威力會變為1.2倍。",
+    "pluralName": "硬石頭"
+  },
+  {
+    "id": "239",
+    "slug": "miracle-seed",
+    "slugLoc": "qi-ji-zhong-zi",
+    "name": "奇跡種子",
+    "description": "草屬性招式威力會變為1.2倍。",
+    "pluralName": "奇跡種子"
+  },
+  {
+    "id": "240",
+    "slug": "black-glasses",
+    "slugLoc": "hei-se-yan-jing",
+    "name": "黑色眼鏡",
+    "description": "惡屬性招式威力會變為1.2倍。",
+    "pluralName": "黑色眼鏡"
+  },
+  {
+    "id": "241",
+    "slug": "black-belt",
+    "slugLoc": "hei-dai",
+    "name": "黑帶",
+    "description": "格鬥屬性招式威力會變為1.2倍。",
+    "pluralName": "黑帶"
+  },
+  {
+    "id": "242",
+    "slug": "magnet",
+    "slugLoc": "ci-tie",
+    "name": "磁鐵",
+    "description": "電屬性招式威力會變為1.2倍。",
+    "pluralName": "磁鐵"
+  },
+  {
+    "id": "243",
+    "slug": "mystic-water",
+    "slugLoc": "shen-mi-shui-di",
+    "name": "神秘水滴",
+    "description": "水屬性招式威力會變為1.2倍。",
+    "pluralName": "神秘水滴"
+  },
+  {
+    "id": "244",
+    "slug": "sharp-beak",
+    "slugLoc": "rui-li-niao-zui",
+    "name": "銳利鳥嘴",
+    "description": "飛行屬性招式威力會變為1.2倍。",
+    "pluralName": "銳利鳥嘴"
+  },
+  {
+    "id": "245",
+    "slug": "poison-barb",
+    "slugLoc": "du-zhen",
+    "name": "毒針",
+    "description": "毒屬性招式威力會變為1.2倍。",
+    "pluralName": "毒針"
+  },
+  {
+    "id": "246",
+    "slug": "never-melt-ice",
+    "slugLoc": "bu-rong-bing",
+    "name": "不融冰",
+    "description": "冰屬性招式威力會變為1.2倍。",
+    "pluralName": "不融冰"
+  },
+  {
+    "id": "247",
+    "slug": "spell-tag",
+    "slugLoc": "zu-zhou-zhi-fu",
+    "name": "詛咒之符",
+    "description": "幽靈屬性招式威力會變為1.2倍。",
+    "pluralName": "詛咒之符"
+  },
+  {
+    "id": "248",
+    "slug": "twisted-spoon",
+    "slugLoc": "wan-qu-de-tang-chi",
+    "name": "彎曲的湯匙",
+    "description": "超能力屬性招式威力會變為1.2倍。",
+    "pluralName": "彎曲的湯匙"
+  },
+  {
+    "id": "249",
+    "slug": "charcoal",
+    "slugLoc": "mu-tan",
+    "name": "木炭",
+    "description": "火屬性招式威力會變為1.2倍。",
+    "pluralName": "木炭"
+  },
+  {
+    "id": "250",
+    "slug": "dragon-fang",
+    "slugLoc": "long-zhi-ya",
+    "name": "龍之牙",
+    "description": "龍屬性招式威力會變為1.2倍。",
+    "pluralName": "龍之牙"
+  },
+  {
+    "id": "251",
+    "slug": "silk-scarf",
+    "slugLoc": "si-chou-wei-jin",
+    "name": "絲綢圍巾",
+    "description": "一般屬性招式威力會變為1.2倍。",
+    "pluralName": "絲綢圍巾"
+  },
+  {
+    "id": "253",
+    "slug": "shell-bell",
+    "slugLoc": "bei-ke-zhi-ling",
+    "name": "貝殼之鈴",
+    "description": "用招式給予傷害時，\n會回復自己該傷害的\n1/8的HP。",
+    "pluralName": "貝殼之鈴"
+  },
+  {
+    "id": "275",
+    "slug": "focus-sash",
+    "slugLoc": "qi-shi-pi-dai",
+    "name": "氣勢披帶",
+    "description": "HP全滿時，\n若受到一擊就會瀕死的招式傷害，\n會剩下1HP撐過去。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "氣勢披帶"
+  },
+  {
+    "id": "287",
+    "slug": "choice-scarf",
+    "slugLoc": "jiang-jiu-wei-jin",
+    "name": "講究圍巾",
+    "description": "速度會變為1.5倍，\n但一旦使出招式後，\n直到替換前都只能使出該招式。",
+    "pluralName": "講究圍巾"
+  },
+  {
+    "id": "656",
+    "slug": "gengarite",
+    "slugLoc": "geng-gui-jin-hua-shi",
+    "name": "耿鬼進化石",
+    "description": "能讓耿鬼超級進化的持有物。",
+    "pluralName": "耿鬼進化石"
+  },
+  {
+    "id": "657",
+    "slug": "gardevoirite",
+    "slugLoc": "sha-nai-duo-jin-hua-shi",
+    "name": "沙奈朵進化石",
+    "description": "能讓沙奈朵超級進化的持有物。",
+    "pluralName": "沙奈朵進化石"
+  },
+  {
+    "id": "658",
+    "slug": "ampharosite",
+    "slugLoc": "dian-long-jin-hua-shi",
+    "name": "電龍進化石",
+    "description": "能讓電龍超級進化的持有物。",
+    "pluralName": "電龍進化石"
+  },
+  {
+    "id": "659",
+    "slug": "venusaurite",
+    "slugLoc": "miao-wa-hua-jin-hua-shi",
+    "name": "妙蛙花進化石",
+    "description": "能讓妙蛙花超級進化的持有物。",
+    "pluralName": "妙蛙花進化石"
+  },
+  {
+    "id": "660",
+    "slug": "charizardite-x",
+    "slugLoc": "pen-huo-long-jin-hua-shi-x",
+    "name": "噴火龍進化石Ｘ",
+    "description": "能讓噴火龍超級進化的持有物。\n（超級噴火龍Ｘ）",
+    "pluralName": "噴火龍進化石Ｘ"
+  },
+  {
+    "id": "661",
+    "slug": "blastoisinite",
+    "slugLoc": "shui-jian-gui-jin-hua-shi",
+    "name": "水箭龜進化石",
+    "description": "能讓水箭龜超級進化的持有物。",
+    "pluralName": "水箭龜進化石"
+  },
+  {
+    "id": "665",
+    "slug": "medichamite",
+    "slugLoc": "qia-lei-mu-jin-hua-shi",
+    "name": "恰雷姆進化石",
+    "description": "能讓恰雷姆超級進化的持有物。",
+    "pluralName": "恰雷姆進化石"
+  },
+  {
+    "id": "666",
+    "slug": "houndoominite",
+    "slugLoc": "hei-lu-jia-jin-hua-shi",
+    "name": "黑魯加進化石",
+    "description": "能讓黑魯加超級進化的持有物。",
+    "pluralName": "黑魯加進化石"
+  },
+  {
+    "id": "667",
+    "slug": "aggronite",
+    "slugLoc": "bo-shi-ke-duo-la-jin-hua-shi",
+    "name": "波士可多拉進化石",
+    "description": "能讓波士可多拉超級進化的持有物。",
+    "pluralName": "波士可多拉進化石"
+  },
+  {
+    "id": "668",
+    "slug": "banettite",
+    "slugLoc": "zu-zhou-wa-wa-jin-hua-shi",
+    "name": "詛咒娃娃進化石",
+    "description": "能讓詛咒娃娃超級進化的持有物。",
+    "pluralName": "詛咒娃娃進化石"
+  },
+  {
+    "id": "669",
+    "slug": "tyranitarite",
+    "slugLoc": "ban-ji-la-si-jin-hua-shi",
+    "name": "班基拉斯進化石",
+    "description": "能讓班基拉斯超級進化的持有物。",
+    "pluralName": "班基拉斯進化石"
+  },
+  {
+    "id": "670",
+    "slug": "scizorite",
+    "slugLoc": "ju-qian-tang-lang-jin-hua-shi",
+    "name": "巨鉗螳螂進化石",
+    "description": "能讓巨鉗螳螂超級進化的持有物。",
+    "pluralName": "巨鉗螳螂進化石"
+  },
+  {
+    "id": "671",
+    "slug": "pinsirite",
+    "slugLoc": "kai-luo-si-jin-hua-shi",
+    "name": "凱羅斯進化石",
+    "description": "能讓凱羅斯超級進化的持有物。",
+    "pluralName": "凱羅斯進化石"
+  },
+  {
+    "id": "672",
+    "slug": "aerodactylite",
+    "slugLoc": "hua-shi-yi-long-jin-hua-shi",
+    "name": "化石翼龍進化石",
+    "description": "能讓化石翼龍超級進化的持有物。",
+    "pluralName": "化石翼龍進化石"
+  },
+  {
+    "id": "673",
+    "slug": "lucarionite",
+    "slugLoc": "lu-qia-li-ou-jin-hua-shi",
+    "name": "路卡利歐進化石",
+    "description": "能讓路卡利歐超級進化的持有物。\n（超級路卡利歐）",
+    "pluralName": "路卡利歐進化石"
+  },
+  {
+    "id": "674",
+    "slug": "abomasite",
+    "slugLoc": "bao-xue-wang-jin-hua-shi",
+    "name": "暴雪王進化石",
+    "description": "能讓暴雪王超級進化的持有物。",
+    "pluralName": "暴雪王進化石"
+  },
+  {
+    "id": "675",
+    "slug": "kangaskhanite",
+    "slugLoc": "dai-shou-jin-hua-shi",
+    "name": "袋獸進化石",
+    "description": "能讓袋獸超級進化的持有物。",
+    "pluralName": "袋獸進化石"
+  },
+  {
+    "id": "676",
+    "slug": "gyaradosite",
+    "slugLoc": "bao-li-long-jin-hua-shi",
+    "name": "暴鯉龍進化石",
+    "description": "能讓暴鯉龍超級進化的持有物。",
+    "pluralName": "暴鯉龍進化石"
+  },
+  {
+    "id": "677",
+    "slug": "absolite",
+    "slugLoc": "a-bo-suo-lu-jin-hua-shi",
+    "name": "阿勃梭魯進化石",
+    "description": "能讓阿勃梭魯超級進化的持有物。\n（超級阿勃梭魯）",
+    "pluralName": "阿勃梭魯進化石"
+  },
+  {
+    "id": "678",
+    "slug": "charizardite-y",
+    "slugLoc": "pen-huo-long-jin-hua-shi-y",
+    "name": "噴火龍進化石Ｙ",
+    "description": "能讓噴火龍超級進化的持有物。\n（超級噴火龍Ｙ）",
+    "pluralName": "噴火龍進化石Ｙ"
+  },
+  {
+    "id": "679",
+    "slug": "alakazite",
+    "slugLoc": "hu-di-jin-hua-shi",
+    "name": "胡地進化石",
+    "description": "能讓胡地超級進化的持有物。",
+    "pluralName": "胡地進化石"
+  },
+  {
+    "id": "680",
+    "slug": "heracronite",
+    "slugLoc": "he-la-ke-luo-si-jin-hua-shi",
+    "name": "赫拉克羅斯進化石",
+    "description": "能讓赫拉克羅斯超級進化的持有物。",
+    "pluralName": "赫拉克羅斯進化石"
+  },
+  {
+    "id": "682",
+    "slug": "manectite",
+    "slugLoc": "lei-dian-shou-jin-hua-shi",
+    "name": "雷電獸進化石",
+    "description": "能讓雷電獸超級進化的持有物。",
+    "pluralName": "雷電獸進化石"
+  },
+  {
+    "id": "683",
+    "slug": "garchompite",
+    "slugLoc": "lie-yao-lu-sha-jin-hua-shi",
+    "name": "烈咬陸鯊進化石",
+    "description": "能讓烈咬陸鯊超級進化的持有物。\n（超級烈咬陸鯊）",
+    "pluralName": "烈咬陸鯊進化石"
+  },
+  {
+    "id": "686",
+    "slug": "roseli-berry",
+    "slugLoc": "luo-mei-guo",
+    "name": "洛玫果",
+    "description": "受到效果絕佳的妖精屬性招式時，\n傷害會減半。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "洛玫果"
+  },
+  {
+    "id": "754",
+    "slug": "sablenite",
+    "slugLoc": "gou-hun-yan-jin-hua-shi",
+    "name": "勾魂眼進化石",
+    "description": "能讓勾魂眼超級進化的持有物。",
+    "pluralName": "勾魂眼進化石"
+  },
+  {
+    "id": "755",
+    "slug": "altarianite",
+    "slugLoc": "qi-xi-qing-niao-jin-hua-shi",
+    "name": "七夕青鳥進化石",
+    "description": "能讓七夕青鳥超級進化的持有物。",
+    "pluralName": "七夕青鳥進化石"
+  },
+  {
+    "id": "756",
+    "slug": "galladite",
+    "slugLoc": "ai-lu-lei-duo-jin-hua-shi",
+    "name": "艾路雷朵進化石",
+    "description": "能讓艾路雷朵超級進化的持有物。",
+    "pluralName": "艾路雷朵進化石"
+  },
+  {
+    "id": "757",
+    "slug": "audinite",
+    "slugLoc": "chai-bu-duo-wa-wa-jin-hua-shi",
+    "name": "差不多娃娃進化石",
+    "description": "能讓差不多娃娃超級進化的持有物。",
+    "pluralName": "差不多娃娃進化石"
+  },
+  {
+    "id": "759",
+    "slug": "sharpedonite",
+    "slugLoc": "ju-ya-sha-jin-hua-shi",
+    "name": "巨牙鯊進化石",
+    "description": "能讓巨牙鯊超級進化的持有物。",
+    "pluralName": "巨牙鯊進化石"
+  },
+  {
+    "id": "760",
+    "slug": "slowbronite",
+    "slugLoc": "ai-ke-shou-jin-hua-shi",
+    "name": "呆殼獸進化石",
+    "description": "能讓呆殼獸超級進化的持有物。\n對伽勒爾的樣子沒有效果。",
+    "pluralName": "呆殼獸進化石"
+  },
+  {
+    "id": "761",
+    "slug": "steelixite",
+    "slugLoc": "da-gang-she-jin-hua-shi",
+    "name": "大鋼蛇進化石",
+    "description": "能讓大鋼蛇超級進化的持有物。",
+    "pluralName": "大鋼蛇進化石"
+  },
+  {
+    "id": "762",
+    "slug": "pidgeotite",
+    "slugLoc": "da-bi-niao-jin-hua-shi",
+    "name": "大比鳥進化石",
+    "description": "能讓大比鳥超級進化的持有物。",
+    "pluralName": "大比鳥進化石"
+  },
+  {
+    "id": "763",
+    "slug": "glalitite",
+    "slugLoc": "bing-gui-hu-jin-hua-shi",
+    "name": "冰鬼護進化石",
+    "description": "能讓冰鬼護超級進化的持有物。",
+    "pluralName": "冰鬼護進化石"
+  },
+  {
+    "id": "767",
+    "slug": "cameruptite",
+    "slugLoc": "pen-huo-tuo-jin-hua-shi",
+    "name": "噴火駝進化石",
+    "description": "能讓噴火駝超級進化的持有物。",
+    "pluralName": "噴火駝進化石"
+  },
+  {
+    "id": "768",
+    "slug": "lopunnite",
+    "slugLoc": "chang-er-tu-jin-hua-shi",
+    "name": "長耳兔進化石",
+    "description": "能讓長耳兔超級進化的持有物。",
+    "pluralName": "長耳兔進化石"
+  },
+  {
+    "id": "770",
+    "slug": "beedrillite",
+    "slugLoc": "da-zhen-feng-jin-hua-shi",
+    "name": "大針蜂進化石",
+    "description": "能讓大針蜂超級進化的持有物。",
+    "pluralName": "大針蜂進化石"
+  },
+  {
+    "id": "2401",
+    "slug": "fairy-feather",
+    "slugLoc": "yao-jing-zhi-yu",
+    "name": "妖精之羽",
+    "description": "妖精屬性招式威力會變為1.2倍。",
+    "pluralName": "妖精之羽"
+  },
+  {
+    "id": "2559",
+    "slug": "clefablite",
+    "slugLoc": "pi-ke-xi-jin-hua-shi",
+    "name": "皮可西進化石",
+    "description": "能讓皮可西超級進化的持有物。",
+    "pluralName": "皮可西進化石"
+  },
+  {
+    "id": "2560",
+    "slug": "victreebelite",
+    "slugLoc": "da-shi-hua-jin-hua-shi",
+    "name": "大食花進化石",
+    "description": "能讓大食花超級進化的持有物。",
+    "pluralName": "大食花進化石"
+  },
+  {
+    "id": "2561",
+    "slug": "starminite",
+    "slugLoc": "bao-shi-hai-xing-jin-hua-shi",
+    "name": "寶石海星進化石",
+    "description": "能讓寶石海星超級進化的持有物。",
+    "pluralName": "寶石海星進化石"
+  },
+  {
+    "id": "2562",
+    "slug": "dragoninite",
+    "slugLoc": "kuai-long-jin-hua-shi",
+    "name": "快龍進化石",
+    "description": "能讓快龍超級進化的持有物。",
+    "pluralName": "快龍進化石"
+  },
+  {
+    "id": "2563",
+    "slug": "meganiumite",
+    "slugLoc": "da-zhu-kui-jin-hua-shi",
+    "name": "大竺葵進化石",
+    "description": "能讓大竺葵超級進化的持有物。",
+    "pluralName": "大竺葵進化石"
+  },
+  {
+    "id": "2564",
+    "slug": "feraligite",
+    "slugLoc": "da-li-e-jin-hua-shi",
+    "name": "大力鱷進化石",
+    "description": "能讓大力鱷超級進化的持有物。",
+    "pluralName": "大力鱷進化石"
+  },
+  {
+    "id": "2565",
+    "slug": "skarmorite",
+    "slugLoc": "kui-jia-niao-jin-hua-shi",
+    "name": "盔甲鳥進化石",
+    "description": "能讓盔甲鳥超級進化的持有物。",
+    "pluralName": "盔甲鳥進化石"
+  },
+  {
+    "id": "2566",
+    "slug": "froslassite",
+    "slugLoc": "xue-yao-nu-jin-hua-shi",
+    "name": "雪妖女進化石",
+    "description": "能讓雪妖女超級進化的持有物。",
+    "pluralName": "雪妖女進化石"
+  },
+  {
+    "id": "2569",
+    "slug": "emboarite",
+    "slugLoc": "yan-wu-wang-jin-hua-shi",
+    "name": "炎武王進化石",
+    "description": "能讓炎武王超級進化的持有物。",
+    "pluralName": "炎武王進化石"
+  },
+  {
+    "id": "2570",
+    "slug": "excadrite",
+    "slugLoc": "long-tou-di-shu-jin-hua-shi",
+    "name": "龍頭地鼠進化石",
+    "description": "能讓龍頭地鼠超級進化的持有物。",
+    "pluralName": "龍頭地鼠進化石"
+  },
+  {
+    "id": "2574",
+    "slug": "chandelurite",
+    "slugLoc": "shui-jing-deng-huo-ling-jin-hua-shi",
+    "name": "水晶燈火靈進化石",
+    "description": "能讓水晶燈火靈超級進化的持有物。",
+    "pluralName": "水晶燈火靈進化石"
+  },
+  {
+    "id": "2575",
+    "slug": "chesnaughtite",
+    "slugLoc": "bu-li-qia-long-jin-hua-shi",
+    "name": "布里卡隆進化石",
+    "description": "能讓布里卡隆超級進化的持有物。",
+    "pluralName": "布里卡隆進化石"
+  },
+  {
+    "id": "2576",
+    "slug": "delphoxite",
+    "slugLoc": "yao-huo-hong-hu-jin-hua-shi",
+    "name": "妖火紅狐進化石",
+    "description": "能讓妖火紅狐超級進化的持有物。",
+    "pluralName": "妖火紅狐進化石"
+  },
+  {
+    "id": "2577",
+    "slug": "greninjite",
+    "slugLoc": "jia-he-ren-wa-jin-hua-shi",
+    "name": "甲賀忍蛙進化石",
+    "description": "能讓甲賀忍蛙超級進化的持有物。",
+    "pluralName": "甲賀忍蛙進化石"
+  },
+  {
+    "id": "2579",
+    "slug": "floettite",
+    "slugLoc": "hua-xie-di-jin-hua-shi",
+    "name": "花葉蒂進化石",
+    "description": "能讓花葉蒂（永恆之花）超級進化的持有物。",
+    "pluralName": "花葉蒂進化石"
+  },
+  {
+    "id": "2583",
+    "slug": "hawluchanite",
+    "slugLoc": "shuai-jiao-ying-ren-jin-hua-shi",
+    "name": "摔角鷹人進化石",
+    "description": "能讓摔角鷹人超級進化的持有物。",
+    "pluralName": "摔角鷹人進化石"
+  },
+  {
+    "id": "2585",
+    "slug": "drampanite",
+    "slugLoc": "lao-weng-long-jin-hua-shi",
+    "name": "老翁龍進化石",
+    "description": "能讓老翁龍超級進化的持有物。",
+    "pluralName": "老翁龍進化石"
+  },
+  {
+    "id": "2637",
+    "slug": "chimechite",
+    "slugLoc": "feng-ling-ling-jin-hua-shi",
+    "name": "風鈴鈴進化石",
+    "description": "能讓風鈴鈴超級進化的持有物。",
+    "pluralName": "風鈴鈴進化石"
+  },
+  {
+    "id": "2642",
+    "slug": "golurkite",
+    "slugLoc": "ni-ou-ju-ren-jin-hua-shi",
+    "name": "泥偶巨人進化石",
+    "description": "能讓泥偶巨人超級進化的持有物。",
+    "pluralName": "泥偶巨人進化石"
+  },
+  {
+    "id": "2643",
+    "slug": "meowsticite",
+    "slugLoc": "chao-neng-miao-miao-jin-hua-shi",
+    "name": "超能妙喵進化石",
+    "description": "能讓超能妙喵超級進化的持有物。",
+    "pluralName": "超能妙喵進化石"
+  },
+  {
+    "id": "2644",
+    "slug": "crabominite",
+    "slugLoc": "hao-sheng-mao-xie-jin-hua-shi",
+    "name": "好勝毛蟹進化石",
+    "description": "能讓好勝毛蟹超級進化的持有物。",
+    "pluralName": "好勝毛蟹進化石"
+  },
+  {
+    "id": "2647",
+    "slug": "scovillainite",
+    "slugLoc": "hen-la-jiao-jin-hua-shi",
+    "name": "狠辣椒進化石",
+    "description": "能讓狠辣椒超級進化的持有物。",
+    "pluralName": "狠辣椒進化石"
+  },
+  {
+    "id": "2650",
+    "slug": "glimmoranite",
+    "slugLoc": "jing-guang-hua-jin-hua-shi",
+    "name": "晶光花進化石",
+    "description": "能讓晶光花超級進化的持有物。",
+    "pluralName": "晶光花進化石"
+  }
+]

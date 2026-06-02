@@ -37,15 +37,15 @@ export const DEFAULT_GAME_LOCALE: GameLocale = 'ENG'
 export const langSlugs = [
   'en',
   'es',
-  'el',
+  'mx', // latam spanish (mexican spanish is the standard basis for es-419/ES-LA)
   'de',
   'it',
   'fr',
   'kr',
   'jp',
-  'tw', // traditional chinese
-  'cn', // simplified chinese
-  'br',
+  'tw', // traditional chinese (taiwanese)
+  'cn', // simplified chinese (mainland)
+  'br', // brazilian portuguese
 ] as const
 export type LangSlug = (typeof langSlugs)[number]
 export const DEFAULT_LANG_SLUG: LangSlug = 'en'
@@ -53,7 +53,7 @@ export const DEFAULT_LANG_SLUG: LangSlug = 'en'
 export const browserLocaleMap: Record<BrowserLocale, { slug: LangSlug; gameLocale: GameLocale }> = {
   en: { slug: 'en', gameLocale: 'ENG' },
   es: { slug: 'es', gameLocale: 'ES-ES' },
-  'es-419': { slug: 'el', gameLocale: 'ES-LA' },
+  'es-419': { slug: 'mx', gameLocale: 'ES-LA' },
   de: { slug: 'de', gameLocale: 'DEU' },
   it: { slug: 'it', gameLocale: 'ITA' },
   fr: { slug: 'fr', gameLocale: 'FRA' },
@@ -66,7 +66,7 @@ export const browserLocaleMap: Record<BrowserLocale, { slug: LangSlug; gameLocal
 export const gameLocaleMap: Record<GameLocale, { slug: LangSlug; browserLocale: BrowserLocale }> = {
   ENG: { slug: 'en', browserLocale: 'en' },
   'ES-ES': { slug: 'es', browserLocale: 'es' },
-  'ES-LA': { slug: 'el', browserLocale: 'es-419' },
+  'ES-LA': { slug: 'mx', browserLocale: 'es-419' },
   DEU: { slug: 'de', browserLocale: 'de' },
   ITA: { slug: 'it', browserLocale: 'it' },
   FRA: { slug: 'fr', browserLocale: 'fr' },
@@ -83,7 +83,7 @@ export const langSlugMap: Record<
 > = {
   en: { gameLocale: 'ENG', browserLocale: 'en' },
   es: { gameLocale: 'ES-ES', browserLocale: 'es' },
-  el: { gameLocale: 'ES-LA', browserLocale: 'es-419' },
+  mx: { gameLocale: 'ES-LA', browserLocale: 'es-419' },
   de: { gameLocale: 'DEU', browserLocale: 'de' },
   it: { gameLocale: 'ITA', browserLocale: 'it' },
   fr: { gameLocale: 'FRA', browserLocale: 'fr' },
@@ -97,7 +97,7 @@ export const langSlugMap: Record<
 export const langMeta: Record<LangSlug, { name: string; engName: string; flag: string }> = {
   en: { name: 'English', engName: 'English', flag: '🇺🇸' },
   es: { name: 'Español', engName: 'Spanish', flag: '🇪🇸' },
-  el: { name: 'Español (Latinoamérica)', engName: 'Spanish (Latin America)', flag: '🇲🇽' },
+  mx: { name: 'Español (Latinoamérica)', engName: 'Spanish (Latin America)', flag: '🇲🇽' },
   de: { name: 'Deutsch', engName: 'German', flag: '🇩🇪' },
   it: { name: 'Italiano', engName: 'Italian', flag: '🇮🇹' },
   fr: { name: 'Français', engName: 'French', flag: '🇫🇷' },
@@ -125,3 +125,7 @@ export const appLangs: LangInfo[] = browserLocales.map((locale) => ({
   engName: langMeta[browserLocaleMap[locale].slug].engName,
   flag: langMeta[browserLocaleMap[locale].slug].flag,
 }))
+
+export const appLangsBySlug = Object.fromEntries(
+  Object.values(appLangs).map((info) => [info.slug, info]),
+) as Record<LangSlug, LangInfo>

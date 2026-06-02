@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "slug": "harsh-sunlight",
+    "slugLoc": "kwaeceong-sangtae",
+    "name": "쾌청 상태",
+    "description": "불꽃타입 기술의 데미지가 1.5배가 된다.\n물타입 기술의 데미지가 반감된다."
+  },
+  {
+    "id": "2",
+    "slug": "rain",
+    "slugLoc": "bi-sangtae",
+    "name": "비 상태",
+    "description": "물타입 기술의 데미지가 1.5배가 된다.\n불꽃타입 기술의 데미지가 반감된다."
+  },
+  {
+    "id": "3",
+    "slug": "sandstorm",
+    "slugLoc": "moraebaram-sangtae",
+    "name": "모래바람 상태",
+    "description": "바위, 땅, 강철타입 이외의 포켓몬은\n턴 종료 시 최대 HP의 1/16만큼\n데미지를 입는다.\n바위타입의 특수방어가 1.5배가 된다."
+  },
+  {
+    "id": "4",
+    "slug": "snow",
+    "slugLoc": "nun-sangtae",
+    "name": "눈 상태",
+    "description": "얼음타입의 방어가 1.5배가 된다."
+  },
+  {
+    "id": "5",
+    "slug": "electric-terrain",
+    "slugLoc": "ilregteurigpildeu-sangtae",
+    "name": "일렉트릭필드 상태",
+    "description": "전기타입 기술의 위력이 1.3배가 된다.\n잠듦 상태가 되지 않는다.\n땅 위에 있는 포켓몬만 효과를 받는다."
+  },
+  {
+    "id": "6",
+    "slug": "grassy-terrain",
+    "slugLoc": "geuraeseupildeu-sangtae",
+    "name": "그래스필드 상태",
+    "description": "풀타입 기술의 위력이 1.3배가 된다.\n턴 종료 시 최대 HP의 1/16만큼 회복한다.\n땅 위에 있는 포켓몬만 효과를 받는다."
+  },
+  {
+    "id": "7",
+    "slug": "misty-terrain",
+    "slugLoc": "miseuteupildeu-sangtae",
+    "name": "미스트필드 상태",
+    "description": "드래곤타입 기술의 위력이 반감된다.\n상태 이상과 혼란 상태가 되지 않는다.\n땅 위에 있는 포켓몬만 효과를 받는다."
+  },
+  {
+    "id": "8",
+    "slug": "trick-room",
+    "slugLoc": "teurigrum-sangtae",
+    "name": "트릭룸 상태",
+    "description": "스피드가 낮은 포켓몬부터 행동한다."
+  },
+  {
+    "id": "9",
+    "slug": "magic-room",
+    "slugLoc": "maejigrum-sangtae",
+    "name": "매직룸 상태",
+    "description": "지니고 있는 도구 대부분의\n효과가 사라진다."
+  },
+  {
+    "id": "10",
+    "slug": "wonder-room",
+    "slugLoc": "weondeorum-sangtae",
+    "name": "원더룸 상태",
+    "description": "방어와 특수방어가 바뀐다."
+  },
+  {
+    "id": "11",
+    "slug": "critical-hit-ratio-boost",
+    "slugLoc": "geubsoeob-sangtae",
+    "name": "급소업 상태",
+    "description": "자신의 공격이\n급소에 맞을 확률이 올라간다."
+  },
+  {
+    "id": "12",
+    "slug": "confused",
+    "slugLoc": "honran-sangtae",
+    "name": "혼란 상태",
+    "description": "1~4턴 동안\n1/3 확률로 자신을 공격한다."
+  },
+  {
+    "id": "13",
+    "slug": "infatuated",
+    "slugLoc": "herongherong-sangtae",
+    "name": "헤롱헤롱 상태",
+    "description": "헤롱헤롱 상태로 만든 상대가 필드에 있으면\n50% 확률로 기술을 사용할 수 없다."
+  },
+  {
+    "id": "15",
+    "slug": "drowsy",
+    "slugLoc": "joleum-sangtae",
+    "name": "졸음 상태",
+    "description": "기술을 받으면, 다음 턴 종료 시에\n잠듦 상태가 된다."
+  },
+  {
+    "id": "16",
+    "slug": "encore",
+    "slugLoc": "angkoreu-sangtae",
+    "name": "앙코르 상태",
+    "description": "{0}만 사용할 수 있다."
+  },
+  {
+    "id": "17",
+    "slug": "no-ability",
+    "slugLoc": "teugseong-eobseum-sangtae",
+    "name": "특성 없음 상태",
+    "description": "특성의 효과가 사라진다."
+  },
+  {
+    "id": "18",
+    "slug": "unable-to-repeat",
+    "slugLoc": "yeonsog-bulga-sangtae",
+    "name": "연속 불가 상태",
+    "description": "같은 기술을 연속해서 사용할 수 없다."
+  },
+  {
+    "id": "19",
+    "slug": "tailwind",
+    "slugLoc": "sunpung-sangtae",
+    "name": "순풍 상태",
+    "description": "스피드가 2배가 된다."
+  },
+  {
+    "id": "24",
+    "slug": "move-disabled",
+    "slugLoc": "gisulbongin-sangtae",
+    "name": "기술봉인 상태",
+    "description": "{0} 사용할 수 없다."
+  },
+  {
+    "id": "25",
+    "slug": "cant-escape",
+    "slugLoc": "gyoce-bulga-sangtae",
+    "name": "교체 불가 상태",
+    "description": "교체할 수 없다."
+  },
+  {
+    "id": "26",
+    "slug": "locked-on",
+    "slugLoc": "rogon-sangtae",
+    "name": "록온 상태",
+    "description": "기술을 사용한 다음 턴에\n록온한 상대에게\n기술이 반드시 맞는다."
+  },
+  {
+    "id": "28",
+    "slug": "electric-boost",
+    "slugLoc": "jeongiwiryeogeob-sangtae",
+    "name": "전기위력업 상태",
+    "description": "다음에 사용하는\n전기타입 기술의 위력이 2배가 된다."
+  },
+  {
+    "id": "29",
+    "slug": "gravity",
+    "slugLoc": "jungryeog-sangtae",
+    "name": "중력 상태",
+    "description": "기술의 명중률이 1.67배가 된다.\n비행타입, 특성 부유 등의\n포켓몬은 땅 위에 있게 된다.\n공중에 나는 기술을 사용할 수 없다."
+  },
+  {
+    "id": "31",
+    "slug": "safeguard",
+    "slugLoc": "sinbiyibujeog-sangtae",
+    "name": "신비의부적 상태",
+    "description": "상태 이상과 혼란 상태가 되지 않는다."
+  },
+  {
+    "id": "32",
+    "slug": "stealth-rock",
+    "slugLoc": "seutelseurog-sangtae",
+    "name": "스텔스록 상태",
+    "description": "교체한 포켓몬에게\n최대 HP의 1/8만큼 데미지를 준다.\n바위타입에 대한 상성에 따라\n데미지가 달라진다."
+  },
+  {
+    "id": "33",
+    "slug": "stockpiling",
+    "slugLoc": "bicughagi-sangtae",
+    "name": "비축하기 상태",
+    "description": "1회 비축할 때마다\n방어, 특수방어가 1단계 올라간다."
+  },
+  {
+    "id": "34",
+    "slug": "taunted",
+    "slugLoc": "dobal-sangtae",
+    "name": "도발 상태",
+    "description": "공격 기술만 사용할 수 있다."
+  },
+  {
+    "id": "36",
+    "slug": "magnet-rise",
+    "slugLoc": "jeonjabuyu-sangtae",
+    "name": "전자부유 상태",
+    "description": "땅 위에 있지 않게 되어\n땅타입 기술, 압정뿌리기, 독압정,\n끈적끈적네트 상태의 효과를 받지 않는다."
+  },
+  {
+    "id": "37",
+    "slug": "toxic-spikes",
+    "slugLoc": "dogabjeong-sangtae",
+    "name": "독압정 상태",
+    "description": "교체한 포켓몬을 독 상태로 만든다.\n2회 사용하면 맹독 상태로 만든다.\n비행타입, 특성 부유 등의 포켓몬은\n효과를 받지 않는다."
+  },
+  {
+    "id": "39",
+    "slug": "wish",
+    "slugLoc": "hyimangsahang-sangtae",
+    "name": "희망사항 상태",
+    "description": "기술을 사용하면, 다음 턴 종료 시에\n그 자리에 있는 포켓몬은\n기술을 사용한 포켓몬의\n최대 HP의 1/2만큼 회복한다."
+  },
+  {
+    "id": "40",
+    "slug": "sticky-web",
+    "slugLoc": "ggeunjeogggeunjeogneteu-sangtae",
+    "name": "끈적끈적네트 상태",
+    "description": "교체한 포켓몬의\n스피드를 1단계 떨어뜨린다.\n비행타입, 특성 부유 등의 포켓몬은\n효과를 받지 않는다."
+  },
+  {
+    "id": "41",
+    "slug": "ingrained",
+    "slugLoc": "bburibaggi-sangtae",
+    "name": "뿌리박기 상태",
+    "description": "턴 종료 시 최대 HP의 1/16만큼 회복한다.\n교체할 수 없다.\n땅 위에 있게 된다."
+  },
+  {
+    "id": "42",
+    "slug": "cursed",
+    "slugLoc": "jeoju-sangtae",
+    "name": "저주 상태",
+    "description": "턴 종료 시 최대 HP의 1/4만큼\nHP가 줄어든다."
+  },
+  {
+    "id": "43",
+    "slug": "trick-or-treating",
+    "slugLoc": "haelreowin-sangtae",
+    "name": "핼러윈 상태",
+    "description": "고스트타입이 추가된다."
+  },
+  {
+    "id": "44",
+    "slug": "light-screen",
+    "slugLoc": "bicyijangmag-sangtae",
+    "name": "빛의장막 상태",
+    "description": "특수 기술로 입는 데미지가 반감된다.\n더블배틀일 때는 2/3가 된다."
+  },
+  {
+    "id": "45",
+    "slug": "reflect",
+    "slugLoc": "ripeulregteo-sangtae",
+    "name": "리플렉터 상태",
+    "description": "물리 기술로 입는 데미지가 반감된다.\n더블배틀일 때는 2/3가 된다."
+  },
+  {
+    "id": "46",
+    "slug": "sealing-off",
+    "slugLoc": "bongin-sangtae",
+    "name": "봉인 상태",
+    "description": "봉인을 사용한 포켓몬이 배운 기술을\n상대의 포켓몬이 사용할 수 없게 된다."
+  },
+  {
+    "id": "47",
+    "slug": "perishing",
+    "slugLoc": "myeolmang-sangtae",
+    "name": "멸망 상태",
+    "description": "멸망 상태가 된 3턴 후에\n기절하게 된다."
+  },
+  {
+    "id": "48",
+    "slug": "spikes",
+    "slugLoc": "abjeongbburigi-sangtae",
+    "name": "압정뿌리기 상태",
+    "description": "교체한 포켓몬에게\n최대 HP의 1/8만큼 데미지를 준다.\n2~3회 사용하면 데미지가 증가한다.\n비행타입, 특성 부유 등의 포켓몬은\n효과를 받지 않는다."
+  },
+  {
+    "id": "50",
+    "slug": "destiny-bound",
+    "slugLoc": "gildongmu-sangtae",
+    "name": "길동무 상태",
+    "description": "자신을 기절시킨 상대를 기절시킨다."
+  },
+  {
+    "id": "51",
+    "slug": "forest-cursed",
+    "slugLoc": "supyijeoju-sangtae",
+    "name": "숲의저주 상태",
+    "description": "풀타입이 추가된다."
+  },
+  {
+    "id": "52",
+    "slug": "leech-seeded",
+    "slugLoc": "ssibburigi-sangtae",
+    "name": "씨뿌리기 상태",
+    "description": "턴 종료 시\n최대 HP의 1/8만큼 데미지를 입고\n그만큼 기술을 사용한 포켓몬이 있던\n자리에 있는 상대가 회복한다."
+  },
+  {
+    "id": "54",
+    "slug": "bound",
+    "slugLoc": "baindeu-sangtae",
+    "name": "바인드 상태",
+    "description": "4~5턴 동안 턴 종료 시\n최대 HP의 1/8만큼 데미지를 입는다.\n교체할 수 없다."
+  },
+  {
+    "id": "57",
+    "slug": "rampaging",
+    "slugLoc": "nandong-sangtae",
+    "name": "난동 상태",
+    "description": "2~3턴 동안 연속해서 공격한다.\n그동안 다른 행동을 할 수 없다.\n이후 혼란 상태가 된다."
+  },
+  {
+    "id": "59",
+    "slug": "badly-poisoned",
+    "slugLoc": "maengdog-sangtae",
+    "name": "맹독 상태",
+    "description": "턴이 진행될수록 최대 HP의 1/16,\n2/16, 3/16과 같이 턴 종료 시\n독으로 입는 데미지가 점점 증가한다.\n교체한 다음 다시 등장하면\n1/16부터 다시 시작한다."
+  },
+  {
+    "id": "60",
+    "slug": "future-attack",
+    "slugLoc": "miraeyi-gonggyeog-sangtae",
+    "name": "미래의 공격 상태",
+    "description": "기술이 사용된 2턴 후에\n그 자리에 있는 포켓몬은 데미지를 입는다."
+  },
+  {
+    "id": "61",
+    "slug": "uproar",
+    "slugLoc": "soranpigi-sangtae",
+    "name": "소란피기 상태",
+    "description": "3턴 동안 연속해서 공격한다.\n그동안 다른 행동을 할 수 없다.\n그동안 필드에 있는 포켓몬은\n잠듦 상태가 되지 않는다."
+  },
+  {
+    "id": "62",
+    "slug": "aqua-ring",
+    "slugLoc": "akuaring-sangtae",
+    "name": "아쿠아링 상태",
+    "description": "턴 종료 시 최대 HP의 1/16만큼 회복한다."
+  },
+  {
+    "id": "64",
+    "slug": "landed",
+    "slugLoc": "curag-sangtae",
+    "name": "추락 상태",
+    "description": "땅 위에 있게 되어\n땅타입 기술의 효과를 받게 된다."
+  },
+  {
+    "id": "65",
+    "slug": "fairy-locked",
+    "slugLoc": "peeorirog-sangtae",
+    "name": "페어리록 상태",
+    "description": "기술을 사용하면, 다음 턴 종료 시까지\n필드에 있는 모든 포켓몬은 교체할 수 없다."
+  },
+  {
+    "id": "72",
+    "slug": "psychic-terrain",
+    "slugLoc": "saikopildeu-sangtae",
+    "name": "사이코필드 상태",
+    "description": "에스퍼타입 기술의 위력이 1.3배가 된다.\n선제 기술의 효과를 받지 않는다.\n땅 위에 있는 포켓몬만 효과를 받는다."
+  },
+  {
+    "id": "73",
+    "slug": "throat-chopped",
+    "slugLoc": "jiogjjireugi-sangtae",
+    "name": "지옥찌르기 상태",
+    "description": "2턴 동안 소리 기술을 사용할 수 없다."
+  },
+  {
+    "id": "74",
+    "slug": "aurora-veil",
+    "slugLoc": "ororabeil-sangtae",
+    "name": "오로라베일 상태",
+    "description": "물리 기술과 특수 기술로\n입는 데미지가 반감된다.\n더블배틀일 때는 2/3가 된다."
+  },
+  {
+    "id": "106",
+    "slug": "salt-cured",
+    "slugLoc": "sogeumjeoli-sangtae",
+    "name": "소금절이 상태",
+    "description": "턴 종료 시\n최대 HP의 1/16만큼 데미지를 입는다.\n강철타입, 물타입인 경우\n최대 HP의 1/8만큼 데미지를 입는다."
+  },
+  {
+    "id": "108",
+    "slug": "syrupy",
+    "slugLoc": "mulyeosbeombeog-sangtae",
+    "name": "물엿범벅 상태",
+    "description": "턴 종료 시\n스피드가 1단계 떨어진다."
+  },
+  {
+    "id": "111",
+    "slug": "healing-prevented",
+    "slugLoc": "hoebogbongin-sangtae",
+    "name": "회복봉인 상태",
+    "description": "기술, 특성, 지니고 있는 도구로\nHP를 회복할 수 없다."
+  },
+  {
+    "id": "113",
+    "slug": "recharging",
+    "slugLoc": "bandong-sangtae",
+    "name": "반동 상태",
+    "description": "1턴 동안 행동할 수 없다."
+  },
+  {
+    "id": "114",
+    "slug": "charging",
+    "slugLoc": "caji-sangtae",
+    "name": "차지 상태",
+    "description": "기술을 사용하기 위해\n1턴 동안 차지한다."
+  },
+  {
+    "id": "115",
+    "slug": "sky-high",
+    "slugLoc": "gongjung-sangtae",
+    "name": "공중 상태",
+    "description": "많은 기술에 맞지 않게 되나\n번개, 폭풍, 떨어뜨리기 등은 맞는다.\n필드의 효과를 받지 않는다."
+  },
+  {
+    "id": "116",
+    "slug": "submerged",
+    "slugLoc": "sujung-sangtae",
+    "name": "수중 상태",
+    "description": "많은 기술에 맞지 않게 되나\n파도타기, 바다회오리에는 맞으며\n데미지를 2배로 입는다.\n필드의 효과를 받지 않는다."
+  },
+  {
+    "id": "117",
+    "slug": "underground",
+    "slugLoc": "jijung-sangtae",
+    "name": "지중 상태",
+    "description": "많은 기술에 맞지 않게 되나\n지진에는 맞으며 데미지를 2배로 입는다.\n필드의 효과를 받지 않는다."
+  },
+  {
+    "id": "118",
+    "slug": "concealed",
+    "slugLoc": "jambog-sangtae",
+    "name": "잠복 상태",
+    "description": "기술에 맞지 않게 되며\n필드의 효과를 받지 않는다."
+  },
+  {
+    "id": "119",
+    "slug": "minimized",
+    "slugLoc": "jagajigi-sangtae",
+    "name": "작아지기 상태",
+    "description": "썬더다이브, 누르기, 드래곤다이브,\n플라잉프레스, 히트스탬프, 헤비봄버 등에는\n반드시 맞게 되며 데미지가 2배가 된다."
+  },
+  {
+    "id": "120",
+    "slug": "atk-def-swapped",
+    "slugLoc": "gongbangbanjeon-sangtae",
+    "name": "공방반전 상태",
+    "description": "공격과 방어를 바꾼다."
+  },
+  {
+    "id": "121",
+    "slug": "flash-fire",
+    "slugLoc": "taoreuneunbulggoc-sangtae",
+    "name": "타오르는불꽃 상태",
+    "description": "불꽃타입 기술의 위력이 1.5배가 된다."
+  },
+  {
+    "id": "125",
+    "slug": "micle-berry",
+    "slugLoc": "mikeulyeolmae-sangtae",
+    "name": "미클열매 상태",
+    "description": "다음에 사용하는\n기술의 명중률이 1.2배가 된다."
+  }
+]

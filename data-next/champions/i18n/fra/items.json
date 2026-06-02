@@ -1,0 +1,938 @@
+[
+  {
+    "id": "149",
+    "slug": "cheri-berry",
+    "slugLoc": "baie-ceriz",
+    "name": "Baie Ceriz",
+    "description": "Soigne la paralysie.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Ceriz"
+  },
+  {
+    "id": "150",
+    "slug": "chesto-berry",
+    "slugLoc": "baie-maron",
+    "name": "Baie Maron",
+    "description": "Soigne le sommeil.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Maron"
+  },
+  {
+    "id": "151",
+    "slug": "pecha-berry",
+    "slugLoc": "baie-pecha",
+    "name": "Baie Pêcha",
+    "description": "Soigne le poison ou le poison grave.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Pêcha"
+  },
+  {
+    "id": "152",
+    "slug": "rawst-berry",
+    "slugLoc": "baie-fraive",
+    "name": "Baie Fraive",
+    "description": "Soigne la brûlure.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Fraive"
+  },
+  {
+    "id": "153",
+    "slug": "aspear-berry",
+    "slugLoc": "baie-willia",
+    "name": "Baie Willia",
+    "description": "Soigne le gel.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Willia"
+  },
+  {
+    "id": "154",
+    "slug": "leppa-berry",
+    "slugLoc": "baie-mepo",
+    "name": "Baie Mepo",
+    "description": "Restaure 10 PP d'une capacité lorsqu'ils sont réduits à 0.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Mepo"
+  },
+  {
+    "id": "155",
+    "slug": "oran-berry",
+    "slugLoc": "baie-oran",
+    "name": "Baie Oran",
+    "description": "Restaure 10 PV du Pokémon lorsque ses PV restants\nsont inférieurs ou égaux à la moitié de ses PV max.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Oran"
+  },
+  {
+    "id": "156",
+    "slug": "persim-berry",
+    "slugLoc": "baie-kika",
+    "name": "Baie Kika",
+    "description": "Soigne la confusion.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Kika"
+  },
+  {
+    "id": "157",
+    "slug": "lum-berry",
+    "slugLoc": "baie-prine",
+    "name": "Baie Prine",
+    "description": "Soigne toutes les altérations de statut ou la confusion.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Prine"
+  },
+  {
+    "id": "158",
+    "slug": "sitrus-berry",
+    "slugLoc": "baie-sitrus",
+    "name": "Baie Sitrus",
+    "description": "Restaure 1/4 des PV max du Pokémon lorsque\nses PV restants sont inférieurs ou égaux à la moitié\nde ses PV max. Disparaît pour le reste du combat\naprès une utilisation.",
+    "pluralName": "Baies Sitrus"
+  },
+  {
+    "id": "184",
+    "slug": "occa-berry",
+    "slugLoc": "baie-chocco",
+    "name": "Baie Chocco",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Feu super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Chocco"
+  },
+  {
+    "id": "185",
+    "slug": "passho-berry",
+    "slugLoc": "baie-pocpoc",
+    "name": "Baie Pocpoc",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Eau super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Pocpoc"
+  },
+  {
+    "id": "186",
+    "slug": "wacan-berry",
+    "slugLoc": "baie-parma",
+    "name": "Baie Parma",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Électrik super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Parma"
+  },
+  {
+    "id": "187",
+    "slug": "rindo-berry",
+    "slugLoc": "baie-ratam",
+    "name": "Baie Ratam",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Plante super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Ratam"
+  },
+  {
+    "id": "188",
+    "slug": "yache-berry",
+    "slugLoc": "baie-nanone",
+    "name": "Baie Nanone",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Glace super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Nanone"
+  },
+  {
+    "id": "189",
+    "slug": "chople-berry",
+    "slugLoc": "baie-pomroz",
+    "name": "Baie Pomroz",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Combat super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Pomroz"
+  },
+  {
+    "id": "190",
+    "slug": "kebia-berry",
+    "slugLoc": "baie-kebia",
+    "name": "Baie Kébia",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Poison super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Kébia"
+  },
+  {
+    "id": "191",
+    "slug": "shuca-berry",
+    "slugLoc": "baie-jouca",
+    "name": "Baie Jouca",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Sol super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Jouca"
+  },
+  {
+    "id": "192",
+    "slug": "coba-berry",
+    "slugLoc": "baie-cobaba",
+    "name": "Baie Cobaba",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Vol super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Cobaba"
+  },
+  {
+    "id": "193",
+    "slug": "payapa-berry",
+    "slugLoc": "baie-yapap",
+    "name": "Baie Yapap",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Psy super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Yapap"
+  },
+  {
+    "id": "194",
+    "slug": "tanga-berry",
+    "slugLoc": "baie-panga",
+    "name": "Baie Panga",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Insecte super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Panga"
+  },
+  {
+    "id": "195",
+    "slug": "charti-berry",
+    "slugLoc": "baie-charti",
+    "name": "Baie Charti",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Roche super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Charti"
+  },
+  {
+    "id": "196",
+    "slug": "kasib-berry",
+    "slugLoc": "baie-sedra",
+    "name": "Baie Sédra",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Spectre super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Sédra"
+  },
+  {
+    "id": "197",
+    "slug": "haban-berry",
+    "slugLoc": "baie-fraigo",
+    "name": "Baie Fraigo",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Dragon super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Fraigo"
+  },
+  {
+    "id": "198",
+    "slug": "colbur-berry",
+    "slugLoc": "baie-lampou",
+    "name": "Baie Lampou",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Ténèbres super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Lampou"
+  },
+  {
+    "id": "199",
+    "slug": "babiri-berry",
+    "slugLoc": "baie-babiri",
+    "name": "Baie Babiri",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Acier super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Babiri"
+  },
+  {
+    "id": "200",
+    "slug": "chilan-berry",
+    "slugLoc": "baie-zalis",
+    "name": "Baie Zalis",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Normal subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Zalis"
+  },
+  {
+    "id": "213",
+    "slug": "bright-powder",
+    "slugLoc": "poudre-claire",
+    "name": "Poudre Claire",
+    "description": "Multiplie par 0,9 la Précision des capacités\ndes adversaires visant le Pokémon.",
+    "pluralName": "Poudres Claires"
+  },
+  {
+    "id": "214",
+    "slug": "white-herb",
+    "slugLoc": "herbe-blanche",
+    "name": "Herbe Blanche",
+    "description": "Ramène les stats du Pokémon à la normale lorsqu'elles\nont été abaissées. Disparaît pour le reste du combat\naprès une utilisation.",
+    "pluralName": "Herbes Blanches"
+  },
+  {
+    "id": "217",
+    "slug": "quick-claw",
+    "slugLoc": "vive-griffe",
+    "name": "Vive Griffe",
+    "description": "Donne au Pokémon 20 % de chances d'agir en premier,\nmême si les autres capacités lancées ont le même niveau\nde priorité que la sienne.",
+    "pluralName": "Vives Griffes"
+  },
+  {
+    "id": "219",
+    "slug": "mental-herb",
+    "slugLoc": "herbe-mental",
+    "name": "Herbe Mental",
+    "description": "Soigne la provocation, l'impossibilité de répétition\ndes capacités, le blocage de capacités, le blocage\nde soins, ainsi que les états « Attraction » et « Encore ».\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Herbes Mental"
+  },
+  {
+    "id": "221",
+    "slug": "kings-rock",
+    "slugLoc": "roche-royale",
+    "name": "Roche Royale",
+    "description": "Donne au Pokémon 10 % de chances d'apeurer\nles adversaires après leur avoir infligé des dégâts\nà l'aide d'une capacité.",
+    "pluralName": "Roches Royales"
+  },
+  {
+    "id": "222",
+    "slug": "silver-powder",
+    "slugLoc": "poudre-argentee",
+    "name": "Poudre Argentée",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nInsecte du Pokémon.",
+    "pluralName": "Poudres Argentées"
+  },
+  {
+    "id": "230",
+    "slug": "focus-band",
+    "slugLoc": "bandeau",
+    "name": "Bandeau",
+    "description": "Donne au Pokémon 10 % de chances de résister\navec 1 PV lorsqu'il subit des dégâts d'une capacité\nqui devrait le mettre K.O.",
+    "pluralName": "Bandeaux"
+  },
+  {
+    "id": "232",
+    "slug": "scope-lens",
+    "slugLoc": "lentilscope",
+    "name": "Lentilscope",
+    "description": "Augmente de 1 cran le taux de critiques du Pokémon.",
+    "pluralName": "Lentilscopes"
+  },
+  {
+    "id": "233",
+    "slug": "metal-coat",
+    "slugLoc": "peau-metal",
+    "name": "Peau Métal",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nAcier du Pokémon.",
+    "pluralName": "Peaux Métal"
+  },
+  {
+    "id": "234",
+    "slug": "leftovers",
+    "slugLoc": "restes",
+    "name": "Restes",
+    "description": "Restaure 1/16 des PV max du Pokémon à la fin\nde chaque tour.",
+    "pluralName": "Restes"
+  },
+  {
+    "id": "236",
+    "slug": "light-ball",
+    "slugLoc": "balle-lumiere",
+    "name": "Balle Lumière",
+    "description": "Multiplie par 2 l'Attaque et l'Attaque Spéciale\nde Pikachu.",
+    "pluralName": "Balles Lumière"
+  },
+  {
+    "id": "237",
+    "slug": "soft-sand",
+    "slugLoc": "sable-doux",
+    "name": "Sable Doux",
+    "description": "Multiplie par 1,2 la puissance des capacités de type Sol\ndu Pokémon.",
+    "pluralName": "Sables Doux"
+  },
+  {
+    "id": "238",
+    "slug": "hard-stone",
+    "slugLoc": "pierre-dure",
+    "name": "Pierre Dure",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nRoche du Pokémon.",
+    "pluralName": "Pierres Dures"
+  },
+  {
+    "id": "239",
+    "slug": "miracle-seed",
+    "slugLoc": "graine-miracle",
+    "name": "Graine Miracle",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nPlante du Pokémon.",
+    "pluralName": "Graines Miracle"
+  },
+  {
+    "id": "240",
+    "slug": "black-glasses",
+    "slugLoc": "lunettes-noires",
+    "name": "Lunettes Noires",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nTénèbres du Pokémon.",
+    "pluralName": "Lunettes Noires"
+  },
+  {
+    "id": "241",
+    "slug": "black-belt",
+    "slugLoc": "ceinture-noire",
+    "name": "Ceinture Noire",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nCombat du Pokémon.",
+    "pluralName": "Ceintures Noires"
+  },
+  {
+    "id": "242",
+    "slug": "magnet",
+    "slugLoc": "aimant",
+    "name": "Aimant",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nÉlectrik du Pokémon.",
+    "pluralName": "Aimants"
+  },
+  {
+    "id": "243",
+    "slug": "mystic-water",
+    "slugLoc": "eau-mystique",
+    "name": "Eau Mystique",
+    "description": "Multiplie par 1,2 la puissance des capacités de type Eau\ndu Pokémon.",
+    "pluralName": "Eaux Mystiques"
+  },
+  {
+    "id": "244",
+    "slug": "sharp-beak",
+    "slugLoc": "bec-pointu",
+    "name": "Bec Pointu",
+    "description": "Multiplie par 1,2 la puissance des capacités de type Vol\ndu Pokémon.",
+    "pluralName": "Becs Pointus"
+  },
+  {
+    "id": "245",
+    "slug": "poison-barb",
+    "slugLoc": "pic-venin",
+    "name": "Pic Venin",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nPoison du Pokémon.",
+    "pluralName": "Pics Venin"
+  },
+  {
+    "id": "246",
+    "slug": "never-melt-ice",
+    "slugLoc": "glace-eternelle",
+    "name": "Glace Éternelle",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nGlace du Pokémon.",
+    "pluralName": "Glaces Éternelles"
+  },
+  {
+    "id": "247",
+    "slug": "spell-tag",
+    "slugLoc": "rune-sort",
+    "name": "Rune Sort",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nSpectre du Pokémon.",
+    "pluralName": "Runes Sort"
+  },
+  {
+    "id": "248",
+    "slug": "twisted-spoon",
+    "slugLoc": "cuillere-tordue",
+    "name": "Cuillère Tordue",
+    "description": "Multiplie par 1,2 la puissance des capacités de type Psy\ndu Pokémon.",
+    "pluralName": "Cuillères Tordues"
+  },
+  {
+    "id": "249",
+    "slug": "charcoal",
+    "slugLoc": "charbon",
+    "name": "Charbon",
+    "description": "Multiplie par 1,2 la puissance des capacités de type Feu\ndu Pokémon.",
+    "pluralName": "Charbons"
+  },
+  {
+    "id": "250",
+    "slug": "dragon-fang",
+    "slugLoc": "croc-dragon",
+    "name": "Croc Dragon",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nDragon du Pokémon.",
+    "pluralName": "Crocs Dragon"
+  },
+  {
+    "id": "251",
+    "slug": "silk-scarf",
+    "slugLoc": "mouchoir-soie",
+    "name": "Mouchoir Soie",
+    "description": "Multiplie par 1,2 la puissance des capacités de type\nNormal du Pokémon.",
+    "pluralName": "Mouchoirs Soie"
+  },
+  {
+    "id": "253",
+    "slug": "shell-bell",
+    "slugLoc": "grelot-coque",
+    "name": "Grelot Coque",
+    "description": "Lorsque le Pokémon inflige des dégâts à l'aide\nd'une capacité, il récupère des PV équivalents\nà 1/8 de ces dégâts.",
+    "pluralName": "Grelots Coque"
+  },
+  {
+    "id": "275",
+    "slug": "focus-sash",
+    "slugLoc": "ceinture-force",
+    "name": "Ceinture Force",
+    "description": "Permet au Pokémon de résister avec 1 PV s'il subit\ndes dégâts d'une capacité qui devrait le mettre K.O.\nen un coup, quand ses PV sont au maximum.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Ceintures Force"
+  },
+  {
+    "id": "287",
+    "slug": "choice-scarf",
+    "slugLoc": "mouchoir-choix",
+    "name": "Mouchoir Choix",
+    "description": "Multiplie par 1,5 la Vitesse du Pokémon, mais après\navoir utilisé une capacité, il ne peut plus utiliser que\ncelle-ci jusqu'à ce qu'il quitte le terrain.",
+    "pluralName": "Mouchoirs Choix"
+  },
+  {
+    "id": "656",
+    "slug": "gengarite",
+    "slugLoc": "ectoplasmite",
+    "name": "Ectoplasmite",
+    "description": "Objet à tenir permettant à Ectoplasma de méga-évoluer.",
+    "pluralName": "Ectoplasmites"
+  },
+  {
+    "id": "657",
+    "slug": "gardevoirite",
+    "slugLoc": "gardevoirite",
+    "name": "Gardevoirite",
+    "description": "Objet à tenir permettant à Gardevoir de méga-évoluer.",
+    "pluralName": "Gardevoirites"
+  },
+  {
+    "id": "658",
+    "slug": "ampharosite",
+    "slugLoc": "pharampite",
+    "name": "Pharampite",
+    "description": "Objet à tenir permettant à Pharamp de méga-évoluer.",
+    "pluralName": "Pharampites"
+  },
+  {
+    "id": "659",
+    "slug": "venusaurite",
+    "slugLoc": "florizarrite",
+    "name": "Florizarrite",
+    "description": "Objet à tenir permettant à Florizarre de méga-évoluer.",
+    "pluralName": "Florizarrites"
+  },
+  {
+    "id": "660",
+    "slug": "charizardite-x",
+    "slugLoc": "dracaufite-x",
+    "name": "Dracaufite X",
+    "description": "Objet à tenir permettant à Dracaufeu de méga-évoluer\nen Méga-Dracaufeu X.",
+    "pluralName": "Dracaufites X"
+  },
+  {
+    "id": "661",
+    "slug": "blastoisinite",
+    "slugLoc": "tortankite",
+    "name": "Tortankite",
+    "description": "Objet à tenir permettant à Tortank de méga-évoluer.",
+    "pluralName": "Tortankites"
+  },
+  {
+    "id": "665",
+    "slug": "medichamite",
+    "slugLoc": "charminite",
+    "name": "Charminite",
+    "description": "Objet à tenir permettant à Charmina de méga-évoluer.",
+    "pluralName": "Charminites"
+  },
+  {
+    "id": "666",
+    "slug": "houndoominite",
+    "slugLoc": "demolossite",
+    "name": "Démolossite",
+    "description": "Objet à tenir permettant à Démolosse de méga-évoluer.",
+    "pluralName": "Démolossites"
+  },
+  {
+    "id": "667",
+    "slug": "aggronite",
+    "slugLoc": "galekingite",
+    "name": "Galekingite",
+    "description": "Objet à tenir permettant à Galeking de méga-évoluer.",
+    "pluralName": "Galekingites"
+  },
+  {
+    "id": "668",
+    "slug": "banettite",
+    "slugLoc": "branettite",
+    "name": "Branettite",
+    "description": "Objet à tenir permettant à Branette de méga-évoluer.",
+    "pluralName": "Branettites"
+  },
+  {
+    "id": "669",
+    "slug": "tyranitarite",
+    "slugLoc": "tyranocivite",
+    "name": "Tyranocivite",
+    "description": "Objet à tenir permettant à Tyranocif de méga-évoluer.",
+    "pluralName": "Tyranocivites"
+  },
+  {
+    "id": "670",
+    "slug": "scizorite",
+    "slugLoc": "cizayoxite",
+    "name": "Cizayoxite",
+    "description": "Objet à tenir permettant à Cizayox de méga-évoluer.",
+    "pluralName": "Cizayoxites"
+  },
+  {
+    "id": "671",
+    "slug": "pinsirite",
+    "slugLoc": "scarabruite",
+    "name": "Scarabruite",
+    "description": "Objet à tenir permettant à Scarabrute de méga-évoluer.",
+    "pluralName": "Scarabruites"
+  },
+  {
+    "id": "672",
+    "slug": "aerodactylite",
+    "slugLoc": "pteraite",
+    "name": "Ptéraïte",
+    "description": "Objet à tenir permettant à Ptéra de méga-évoluer.",
+    "pluralName": "Ptéraïtes"
+  },
+  {
+    "id": "673",
+    "slug": "lucarionite",
+    "slugLoc": "lucarite",
+    "name": "Lucarite",
+    "description": "Objet à tenir permettant à Lucario de méga-évoluer\nen Méga-Lucario.",
+    "pluralName": "Lucarites"
+  },
+  {
+    "id": "674",
+    "slug": "abomasite",
+    "slugLoc": "blizzarite",
+    "name": "Blizzarite",
+    "description": "Objet à tenir permettant à Blizzaroi de méga-évoluer.",
+    "pluralName": "Blizzarites"
+  },
+  {
+    "id": "675",
+    "slug": "kangaskhanite",
+    "slugLoc": "kangourexite",
+    "name": "Kangourexite",
+    "description": "Objet à tenir permettant à Kangourex de méga-évoluer.",
+    "pluralName": "Kangourexites"
+  },
+  {
+    "id": "676",
+    "slug": "gyaradosite",
+    "slugLoc": "leviatorite",
+    "name": "Léviatorite",
+    "description": "Objet à tenir permettant à Léviator de méga-évoluer.",
+    "pluralName": "Léviatorites"
+  },
+  {
+    "id": "677",
+    "slug": "absolite",
+    "slugLoc": "absolite",
+    "name": "Absolite",
+    "description": "Objet à tenir permettant à Absol de méga-évoluer\nen Méga-Absol.",
+    "pluralName": "Absolites"
+  },
+  {
+    "id": "678",
+    "slug": "charizardite-y",
+    "slugLoc": "dracaufite-y",
+    "name": "Dracaufite Y",
+    "description": "Objet à tenir permettant à Dracaufeu de méga-évoluer\nen Méga-Dracaufeu Y.",
+    "pluralName": "Dracaufites Y"
+  },
+  {
+    "id": "679",
+    "slug": "alakazite",
+    "slugLoc": "alakazamite",
+    "name": "Alakazamite",
+    "description": "Objet à tenir permettant à Alakazam de méga-évoluer.",
+    "pluralName": "Alakazamites"
+  },
+  {
+    "id": "680",
+    "slug": "heracronite",
+    "slugLoc": "scarhinoite",
+    "name": "Scarhinoïte",
+    "description": "Objet à tenir permettant à Scarhino de méga-évoluer.",
+    "pluralName": "Scarhinoïtes"
+  },
+  {
+    "id": "682",
+    "slug": "manectite",
+    "slugLoc": "elecsprintite",
+    "name": "Élecsprintite",
+    "description": "Objet à tenir permettant à Élecsprint de méga-évoluer.",
+    "pluralName": "Élecsprintites"
+  },
+  {
+    "id": "683",
+    "slug": "garchompite",
+    "slugLoc": "carchacrokite",
+    "name": "Carchacrokite",
+    "description": "Objet à tenir permettant à Carchacrok de méga-évoluer\nen Méga-Carchacrok.",
+    "pluralName": "Carchacrokites"
+  },
+  {
+    "id": "686",
+    "slug": "roseli-berry",
+    "slugLoc": "baie-selro",
+    "name": "Baie Selro",
+    "description": "Réduit de moitié les dégâts d'une capacité de\ntype Fée super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Baies Selro"
+  },
+  {
+    "id": "754",
+    "slug": "sablenite",
+    "slugLoc": "tenefixite",
+    "name": "Ténéfixite",
+    "description": "Objet à tenir permettant à Ténéfix de méga-évoluer.",
+    "pluralName": "Ténéfixites"
+  },
+  {
+    "id": "755",
+    "slug": "altarianite",
+    "slugLoc": "altarite",
+    "name": "Altarite",
+    "description": "Objet à tenir permettant à Altaria de méga-évoluer.",
+    "pluralName": "Altarites"
+  },
+  {
+    "id": "756",
+    "slug": "galladite",
+    "slugLoc": "gallamite",
+    "name": "Gallamite",
+    "description": "Objet à tenir permettant à Gallame de méga-évoluer.",
+    "pluralName": "Gallamites"
+  },
+  {
+    "id": "757",
+    "slug": "audinite",
+    "slugLoc": "nanmeouite",
+    "name": "Nanméouïte",
+    "description": "Objet à tenir permettant à Nanméouïe de méga-évoluer.",
+    "pluralName": "Nanméouïtes"
+  },
+  {
+    "id": "759",
+    "slug": "sharpedonite",
+    "slugLoc": "sharpedite",
+    "name": "Sharpedite",
+    "description": "Objet à tenir permettant à Sharpedo de méga-évoluer.",
+    "pluralName": "Sharpedites"
+  },
+  {
+    "id": "760",
+    "slug": "slowbronite",
+    "slugLoc": "flagadossite",
+    "name": "Flagadossite",
+    "description": "Objet à tenir permettant à Flagadoss de méga-évoluer.\nCet objet n'a pas d'effet sur Flagadoss de Galar.",
+    "pluralName": "Flagadossites"
+  },
+  {
+    "id": "761",
+    "slug": "steelixite",
+    "slugLoc": "steelixite",
+    "name": "Steelixite",
+    "description": "Objet à tenir permettant à Steelix de méga-évoluer.",
+    "pluralName": "Steelixites"
+  },
+  {
+    "id": "762",
+    "slug": "pidgeotite",
+    "slugLoc": "roucarnagite",
+    "name": "Roucarnagite",
+    "description": "Objet à tenir permettant à Roucarnage de méga-évoluer.",
+    "pluralName": "Roucarnagites"
+  },
+  {
+    "id": "763",
+    "slug": "glalitite",
+    "slugLoc": "oniglalite",
+    "name": "Oniglalite",
+    "description": "Objet à tenir permettant à Oniglali de méga-évoluer.",
+    "pluralName": "Oniglalites"
+  },
+  {
+    "id": "767",
+    "slug": "cameruptite",
+    "slugLoc": "cameruptite",
+    "name": "Caméruptite",
+    "description": "Objet à tenir permettant à Camérupt de méga-évoluer.",
+    "pluralName": "Caméruptites"
+  },
+  {
+    "id": "768",
+    "slug": "lopunnite",
+    "slugLoc": "lockpinite",
+    "name": "Lockpinite",
+    "description": "Objet à tenir permettant à Lockpin de méga-évoluer.",
+    "pluralName": "Lockpinites"
+  },
+  {
+    "id": "770",
+    "slug": "beedrillite",
+    "slugLoc": "dardargnite",
+    "name": "Dardargnite",
+    "description": "Objet à tenir permettant à Dardargnan de méga-évoluer.",
+    "pluralName": "Dardargnites"
+  },
+  {
+    "id": "2401",
+    "slug": "fairy-feather",
+    "slugLoc": "plume-enchantee",
+    "name": "Plume Enchantée",
+    "description": "Multiplie par 1,2 la puissance des capacités de type Fée\ndu Pokémon.",
+    "pluralName": "Plumes Enchantées"
+  },
+  {
+    "id": "2559",
+    "slug": "clefablite",
+    "slugLoc": "melodelfite",
+    "name": "Mélodelfite",
+    "description": "Objet à tenir permettant à Mélodelfe de méga-évoluer.",
+    "pluralName": "Mélodelfites"
+  },
+  {
+    "id": "2560",
+    "slug": "victreebelite",
+    "slugLoc": "empiflorite",
+    "name": "Empiflorite",
+    "description": "Objet à tenir permettant à Empiflor de méga-évoluer.",
+    "pluralName": "Empiflorites"
+  },
+  {
+    "id": "2561",
+    "slug": "starminite",
+    "slugLoc": "starossite",
+    "name": "Starossite",
+    "description": "Objet à tenir permettant à Staross de méga-évoluer.",
+    "pluralName": "Starossites"
+  },
+  {
+    "id": "2562",
+    "slug": "dragoninite",
+    "slugLoc": "dracolossite",
+    "name": "Dracolossite",
+    "description": "Objet à tenir permettant à Dracolosse de méga-évoluer.",
+    "pluralName": "Dracolossites"
+  },
+  {
+    "id": "2563",
+    "slug": "meganiumite",
+    "slugLoc": "meganiumite",
+    "name": "Méganiumite",
+    "description": "Objet à tenir permettant à Méganium de méga-évoluer.",
+    "pluralName": "Méganiumites"
+  },
+  {
+    "id": "2564",
+    "slug": "feraligite",
+    "slugLoc": "aligatueurite",
+    "name": "Aligatueurite",
+    "description": "Objet à tenir permettant à Aligatueur de méga-évoluer.",
+    "pluralName": "Aligatueurites"
+  },
+  {
+    "id": "2565",
+    "slug": "skarmorite",
+    "slugLoc": "airmurite",
+    "name": "Airmurite",
+    "description": "Objet à tenir permettant à Airmure de méga-évoluer.",
+    "pluralName": "Airmurites"
+  },
+  {
+    "id": "2566",
+    "slug": "froslassite",
+    "slugLoc": "momartikite",
+    "name": "Momartikite",
+    "description": "Objet à tenir permettant à Momartik de méga-évoluer.",
+    "pluralName": "Momartikites"
+  },
+  {
+    "id": "2569",
+    "slug": "emboarite",
+    "slugLoc": "roitiflamite",
+    "name": "Roitiflamite",
+    "description": "Objet à tenir permettant à Roitiflam de méga-évoluer.",
+    "pluralName": "Roitiflamites"
+  },
+  {
+    "id": "2570",
+    "slug": "excadrite",
+    "slugLoc": "minotaupite",
+    "name": "Minotaupite",
+    "description": "Objet à tenir permettant à Minotaupe de méga-évoluer.",
+    "pluralName": "Minotaupites"
+  },
+  {
+    "id": "2574",
+    "slug": "chandelurite",
+    "slugLoc": "lugulabrite",
+    "name": "Lugulabrite",
+    "description": "Objet à tenir permettant à Lugulabre de méga-évoluer.",
+    "pluralName": "Lugulabrites"
+  },
+  {
+    "id": "2575",
+    "slug": "chesnaughtite",
+    "slugLoc": "blindepiquite",
+    "name": "Blindépiquite",
+    "description": "Objet à tenir permettant à Blindépique de méga-évoluer.",
+    "pluralName": "Blindépiquites"
+  },
+  {
+    "id": "2576",
+    "slug": "delphoxite",
+    "slugLoc": "goupelinite",
+    "name": "Goupelinite",
+    "description": "Objet à tenir permettant à Goupelin de méga-évoluer.",
+    "pluralName": "Goupelinites"
+  },
+  {
+    "id": "2577",
+    "slug": "greninjite",
+    "slugLoc": "amphinolite",
+    "name": "Amphinolite",
+    "description": "Objet à tenir permettant à Amphinobi de méga-évoluer.",
+    "pluralName": "Amphinolites"
+  },
+  {
+    "id": "2579",
+    "slug": "floettite",
+    "slugLoc": "floettite",
+    "name": "Floettite",
+    "description": "Objet à tenir permettant à Floette Éternelle\nde méga-évoluer.",
+    "pluralName": "Floettites"
+  },
+  {
+    "id": "2583",
+    "slug": "hawluchanite",
+    "slugLoc": "brutalibrite",
+    "name": "Brutalibrite",
+    "description": "Objet à tenir permettant à Brutalibré de méga-évoluer.",
+    "pluralName": "Brutalibrites"
+  },
+  {
+    "id": "2585",
+    "slug": "drampanite",
+    "slugLoc": "draieulite",
+    "name": "Draïeulite",
+    "description": "Objet à tenir permettant à Draïeul de méga-évoluer.",
+    "pluralName": "Draïeulites"
+  },
+  {
+    "id": "2637",
+    "slug": "chimechite",
+    "slugLoc": "eokite",
+    "name": "Éokite",
+    "description": "Objet à tenir permettant à Éoko de méga-évoluer.",
+    "pluralName": "Éokites"
+  },
+  {
+    "id": "2642",
+    "slug": "golurkite",
+    "slugLoc": "golemastokite",
+    "name": "Golemastokite",
+    "description": "Objet à tenir permettant à Golemastoc de méga-évoluer.",
+    "pluralName": "Golemastokites"
+  },
+  {
+    "id": "2643",
+    "slug": "meowsticite",
+    "slugLoc": "mistigrixite",
+    "name": "Mistigrixite",
+    "description": "Objet à tenir permettant à Mistigrix de méga-évoluer.",
+    "pluralName": "Mistigrixites"
+  },
+  {
+    "id": "2644",
+    "slug": "crabominite",
+    "slugLoc": "crabominablite",
+    "name": "Crabominablite",
+    "description": "Objet à tenir permettant à Crabominable\nde méga-évoluer.",
+    "pluralName": "Crabominablites"
+  },
+  {
+    "id": "2647",
+    "slug": "scovillainite",
+    "slugLoc": "scovilainite",
+    "name": "Scovilainite",
+    "description": "Objet à tenir permettant à Scovilain de méga-évoluer.",
+    "pluralName": "Scovilainites"
+  },
+  {
+    "id": "2650",
+    "slug": "glimmoranite",
+    "slugLoc": "floreclatite",
+    "name": "Floréclatite",
+    "description": "Objet à tenir permettant à Floréclat de méga-évoluer.",
+    "pluralName": "Floréclatites"
+  }
+]

@@ -30,6 +30,9 @@ importers:
       publint:
         specifier: ^0.3.21
         version: 0.3.21
+      transliteration:
+        specifier: ^2.6.1
+        version: 2.6.1
       tsdown:
         specifier: ^0.22.1
         version: 0.22.1(publint@0.3.21)(typescript@6.0.3)
@@ -914,6 +917,11 @@ packages:
     resolution: {integrity: sha512-Bf+ILmBgretUrdJxzXM0SgXLZ3XfiaUuOj/IKQHuTXip+05Xn+uyEYdVg0kYDipTBcLrCVyUzAPz7QmArb0mmw==}
     engines: {node: '>=14.0.0'}
 
+  transliteration@2.6.1:
+    resolution: {integrity: sha512-hJ9BhrQAOnNTbpOr1MxsNjZISkn7ppvF5TKUeFmTE1mG4ZPD/XVxF0L0LUoIUCWmQyxH0gJpVtfYLAWf298U9w==}
+    engines: {node: '>=20.0.0'}
+    hasBin: true
+
   tree-kill@1.2.2:
     resolution: {integrity: sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==}
     hasBin: true
@@ -1712,6 +1720,8 @@ snapshots:
   tinypool@2.1.0: {}
 
   tinyrainbow@3.1.0: {}
+
+  transliteration@2.6.1: {}
 
   tree-kill@1.2.2: {}
 

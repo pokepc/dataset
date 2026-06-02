@@ -1,0 +1,5847 @@
+[
+  {
+    "id": "1",
+    "slug": "pound",
+    "slugLoc": "pound",
+    "name": "Pound",
+    "description": ""
+  },
+  {
+    "id": "2",
+    "slug": "karate-chop",
+    "slugLoc": "karate-chop",
+    "name": "Karate Chop",
+    "description": ""
+  },
+  {
+    "id": "3",
+    "slug": "double-slap",
+    "slugLoc": "double-slap",
+    "name": "Double Slap",
+    "description": ""
+  },
+  {
+    "id": "4",
+    "slug": "comet-punch",
+    "slugLoc": "comet-punch",
+    "name": "Comet Punch",
+    "description": ""
+  },
+  {
+    "id": "5",
+    "slug": "mega-punch",
+    "slugLoc": "mega-punch",
+    "name": "Mega Punch",
+    "description": ""
+  },
+  {
+    "id": "6",
+    "slug": "pay-day",
+    "slugLoc": "pay-day",
+    "name": "Pay Day",
+    "description": ""
+  },
+  {
+    "id": "7",
+    "slug": "fire-punch",
+    "slugLoc": "fire-punch",
+    "name": "Fire Punch",
+    "description": "Has a 10% chance of burning the target."
+  },
+  {
+    "id": "8",
+    "slug": "ice-punch",
+    "slugLoc": "ice-punch",
+    "name": "Ice Punch",
+    "description": "Has a 10% chance of freezing the target."
+  },
+  {
+    "id": "9",
+    "slug": "thunder-punch",
+    "slugLoc": "thunder-punch",
+    "name": "Thunder Punch",
+    "description": "Has a 10% chance of paralyzing the target."
+  },
+  {
+    "id": "10",
+    "slug": "scratch",
+    "slugLoc": "scratch",
+    "name": "Scratch",
+    "description": ""
+  },
+  {
+    "id": "11",
+    "slug": "vise-grip",
+    "slugLoc": "vise-grip",
+    "name": "Vise Grip",
+    "description": ""
+  },
+  {
+    "id": "12",
+    "slug": "guillotine",
+    "slugLoc": "guillotine",
+    "name": "Guillotine",
+    "description": "Knocks out the target. The accuracy of this move is fixed\nat 30%."
+  },
+  {
+    "id": "13",
+    "slug": "razor-wind",
+    "slugLoc": "razor-wind",
+    "name": "Razor Wind",
+    "description": ""
+  },
+  {
+    "id": "14",
+    "slug": "swords-dance",
+    "slugLoc": "swords-dance",
+    "name": "Swords Dance",
+    "description": "Boosts the user's Attack stat by 2 stages."
+  },
+  {
+    "id": "15",
+    "slug": "cut",
+    "slugLoc": "cut",
+    "name": "Cut",
+    "description": ""
+  },
+  {
+    "id": "16",
+    "slug": "gust",
+    "slugLoc": "gust",
+    "name": "Gust",
+    "description": ""
+  },
+  {
+    "id": "17",
+    "slug": "wing-attack",
+    "slugLoc": "wing-attack",
+    "name": "Wing Attack",
+    "description": ""
+  },
+  {
+    "id": "18",
+    "slug": "whirlwind",
+    "slugLoc": "whirlwind",
+    "name": "Whirlwind",
+    "description": "If there are other Pokémon in the target's party that can switch\ninto battle, the target is forced to switch out of battle and is\nreplaced by one of those Pokémon at random."
+  },
+  {
+    "id": "19",
+    "slug": "fly",
+    "slugLoc": "fly",
+    "name": "Fly",
+    "description": "The user gains the Sky-High status on the turn this move is used,\nthen attacks on the following turn."
+  },
+  {
+    "id": "20",
+    "slug": "bind",
+    "slugLoc": "bind",
+    "name": "Bind",
+    "description": "Gives the target the Bound status."
+  },
+  {
+    "id": "21",
+    "slug": "slam",
+    "slugLoc": "slam",
+    "name": "Slam",
+    "description": ""
+  },
+  {
+    "id": "22",
+    "slug": "vine-whip",
+    "slugLoc": "vine-whip",
+    "name": "Vine Whip",
+    "description": ""
+  },
+  {
+    "id": "23",
+    "slug": "stomp",
+    "slugLoc": "stomp",
+    "name": "Stomp",
+    "description": ""
+  },
+  {
+    "id": "24",
+    "slug": "double-kick",
+    "slugLoc": "double-kick",
+    "name": "Double Kick",
+    "description": ""
+  },
+  {
+    "id": "25",
+    "slug": "mega-kick",
+    "slugLoc": "mega-kick",
+    "name": "Mega Kick",
+    "description": ""
+  },
+  {
+    "id": "26",
+    "slug": "jump-kick",
+    "slugLoc": "jump-kick",
+    "name": "Jump Kick",
+    "description": ""
+  },
+  {
+    "id": "27",
+    "slug": "rolling-kick",
+    "slugLoc": "rolling-kick",
+    "name": "Rolling Kick",
+    "description": ""
+  },
+  {
+    "id": "28",
+    "slug": "sand-attack",
+    "slugLoc": "sand-attack",
+    "name": "Sand Attack",
+    "description": ""
+  },
+  {
+    "id": "29",
+    "slug": "headbutt",
+    "slugLoc": "headbutt",
+    "name": "Headbutt",
+    "description": ""
+  },
+  {
+    "id": "30",
+    "slug": "horn-attack",
+    "slugLoc": "horn-attack",
+    "name": "Horn Attack",
+    "description": ""
+  },
+  {
+    "id": "31",
+    "slug": "fury-attack",
+    "slugLoc": "fury-attack",
+    "name": "Fury Attack",
+    "description": ""
+  },
+  {
+    "id": "32",
+    "slug": "horn-drill",
+    "slugLoc": "horn-drill",
+    "name": "Horn Drill",
+    "description": "Knocks out the target. The accuracy of this move is fixed\nat 30%."
+  },
+  {
+    "id": "33",
+    "slug": "tackle",
+    "slugLoc": "tackle",
+    "name": "Tackle",
+    "description": ""
+  },
+  {
+    "id": "34",
+    "slug": "body-slam",
+    "slugLoc": "body-slam",
+    "name": "Body Slam",
+    "description": "Has a 30% chance of paralyzing the target. If the target has the\nMinimized status, this move's power is doubled and it will be\nsure to hit."
+  },
+  {
+    "id": "35",
+    "slug": "wrap",
+    "slugLoc": "wrap",
+    "name": "Wrap",
+    "description": "Gives the target the Bound status."
+  },
+  {
+    "id": "36",
+    "slug": "take-down",
+    "slugLoc": "take-down",
+    "name": "Take Down",
+    "description": ""
+  },
+  {
+    "id": "37",
+    "slug": "thrash",
+    "slugLoc": "thrash",
+    "name": "Thrash",
+    "description": "The user gains the Rampaging status."
+  },
+  {
+    "id": "38",
+    "slug": "double-edge",
+    "slugLoc": "double-edge",
+    "name": "Double-Edge",
+    "description": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "id": "39",
+    "slug": "tail-whip",
+    "slugLoc": "tail-whip",
+    "name": "Tail Whip",
+    "description": ""
+  },
+  {
+    "id": "40",
+    "slug": "poison-sting",
+    "slugLoc": "poison-sting",
+    "name": "Poison Sting",
+    "description": ""
+  },
+  {
+    "id": "41",
+    "slug": "twineedle",
+    "slugLoc": "twineedle",
+    "name": "Twineedle",
+    "description": ""
+  },
+  {
+    "id": "42",
+    "slug": "pin-missile",
+    "slugLoc": "pin-missile",
+    "name": "Pin Missile",
+    "description": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "id": "43",
+    "slug": "leer",
+    "slugLoc": "leer",
+    "name": "Leer",
+    "description": ""
+  },
+  {
+    "id": "44",
+    "slug": "bite",
+    "slugLoc": "bite",
+    "name": "Bite",
+    "description": "Has a 30% chance of making the target flinch."
+  },
+  {
+    "id": "45",
+    "slug": "growl",
+    "slugLoc": "growl",
+    "name": "Growl",
+    "description": ""
+  },
+  {
+    "id": "46",
+    "slug": "roar",
+    "slugLoc": "roar",
+    "name": "Roar",
+    "description": "If there are other Pokémon in the target's party that can switch\ninto battle, the target is forced to switch out of battle and is\nreplaced by one of those Pokémon at random."
+  },
+  {
+    "id": "47",
+    "slug": "sing",
+    "slugLoc": "sing",
+    "name": "Sing",
+    "description": "Puts the target to sleep."
+  },
+  {
+    "id": "48",
+    "slug": "supersonic",
+    "slugLoc": "supersonic",
+    "name": "Supersonic",
+    "description": ""
+  },
+  {
+    "id": "49",
+    "slug": "sonic-boom",
+    "slugLoc": "sonic-boom",
+    "name": "Sonic Boom",
+    "description": ""
+  },
+  {
+    "id": "50",
+    "slug": "disable",
+    "slugLoc": "disable",
+    "name": "Disable",
+    "description": "Gives the target the Move Disabled status for 4 turns."
+  },
+  {
+    "id": "51",
+    "slug": "acid",
+    "slugLoc": "acid",
+    "name": "Acid",
+    "description": ""
+  },
+  {
+    "id": "52",
+    "slug": "ember",
+    "slugLoc": "ember",
+    "name": "Ember",
+    "description": ""
+  },
+  {
+    "id": "53",
+    "slug": "flamethrower",
+    "slugLoc": "flamethrower",
+    "name": "Flamethrower",
+    "description": "Has a 10% chance of burning the target."
+  },
+  {
+    "id": "54",
+    "slug": "mist",
+    "slugLoc": "mist",
+    "name": "Mist",
+    "description": ""
+  },
+  {
+    "id": "55",
+    "slug": "water-gun",
+    "slugLoc": "water-gun",
+    "name": "Water Gun",
+    "description": ""
+  },
+  {
+    "id": "56",
+    "slug": "hydro-pump",
+    "slugLoc": "hydro-pump",
+    "name": "Hydro Pump",
+    "description": ""
+  },
+  {
+    "id": "57",
+    "slug": "surf",
+    "slugLoc": "surf",
+    "name": "Surf",
+    "description": "This move's power is doubled against targets that have the\nSubmerged status."
+  },
+  {
+    "id": "58",
+    "slug": "ice-beam",
+    "slugLoc": "ice-beam",
+    "name": "Ice Beam",
+    "description": "Has a 10% chance of freezing the target."
+  },
+  {
+    "id": "59",
+    "slug": "blizzard",
+    "slugLoc": "blizzard",
+    "name": "Blizzard",
+    "description": "Has a 10% chance of freezing targets. This move never misses\nin snow."
+  },
+  {
+    "id": "60",
+    "slug": "psybeam",
+    "slugLoc": "psybeam",
+    "name": "Psybeam",
+    "description": ""
+  },
+  {
+    "id": "61",
+    "slug": "bubble-beam",
+    "slugLoc": "bubble-beam",
+    "name": "Bubble Beam",
+    "description": ""
+  },
+  {
+    "id": "62",
+    "slug": "aurora-beam",
+    "slugLoc": "aurora-beam",
+    "name": "Aurora Beam",
+    "description": ""
+  },
+  {
+    "id": "63",
+    "slug": "hyper-beam",
+    "slugLoc": "hyper-beam",
+    "name": "Hyper Beam",
+    "description": "The user gains the Recharging status on the turn after this move\nis used."
+  },
+  {
+    "id": "64",
+    "slug": "peck",
+    "slugLoc": "peck",
+    "name": "Peck",
+    "description": ""
+  },
+  {
+    "id": "65",
+    "slug": "drill-peck",
+    "slugLoc": "drill-peck",
+    "name": "Drill Peck",
+    "description": ""
+  },
+  {
+    "id": "66",
+    "slug": "submission",
+    "slugLoc": "submission",
+    "name": "Submission",
+    "description": ""
+  },
+  {
+    "id": "67",
+    "slug": "low-kick",
+    "slugLoc": "low-kick",
+    "name": "Low Kick",
+    "description": "The heavier the target, the greater this move's power (ranging\nbetween 20 and 120)."
+  },
+  {
+    "id": "68",
+    "slug": "counter",
+    "slugLoc": "counter",
+    "name": "Counter",
+    "description": "The user retaliates to deal double the damage it took from an\nopponent's physical move during the turn this move is used."
+  },
+  {
+    "id": "69",
+    "slug": "seismic-toss",
+    "slugLoc": "seismic-toss",
+    "name": "Seismic Toss",
+    "description": "Deals 50 HP of damage."
+  },
+  {
+    "id": "70",
+    "slug": "strength",
+    "slugLoc": "strength",
+    "name": "Strength",
+    "description": ""
+  },
+  {
+    "id": "71",
+    "slug": "absorb",
+    "slugLoc": "absorb",
+    "name": "Absorb",
+    "description": ""
+  },
+  {
+    "id": "72",
+    "slug": "mega-drain",
+    "slugLoc": "mega-drain",
+    "name": "Mega Drain",
+    "description": ""
+  },
+  {
+    "id": "73",
+    "slug": "leech-seed",
+    "slugLoc": "leech-seed",
+    "name": "Leech Seed",
+    "description": "Gives the target the Leech Seeded status."
+  },
+  {
+    "id": "74",
+    "slug": "growth",
+    "slugLoc": "growth",
+    "name": "Growth",
+    "description": "Boosts the user's Attack and Sp. Atk stats by 1 stage. In harsh\nsunlight, these stats will be boosted by 2 stages instead."
+  },
+  {
+    "id": "75",
+    "slug": "razor-leaf",
+    "slugLoc": "razor-leaf",
+    "name": "Razor Leaf",
+    "description": ""
+  },
+  {
+    "id": "76",
+    "slug": "solar-beam",
+    "slugLoc": "solar-beam",
+    "name": "Solar Beam",
+    "description": "The user gains the Charging status on the turn this move is used,\nthen attacks on the following turn. In harsh sunlight, the user\ndoes not gain the Charging status and can attack immediately.\nThis move's power is halved in any other weather condition."
+  },
+  {
+    "id": "77",
+    "slug": "poison-powder",
+    "slugLoc": "poison-powder",
+    "name": "Poison Powder",
+    "description": "Poisons the target."
+  },
+  {
+    "id": "78",
+    "slug": "stun-spore",
+    "slugLoc": "stun-spore",
+    "name": "Stun Spore",
+    "description": "Paralyzes the target."
+  },
+  {
+    "id": "79",
+    "slug": "sleep-powder",
+    "slugLoc": "sleep-powder",
+    "name": "Sleep Powder",
+    "description": "Puts the target to sleep."
+  },
+  {
+    "id": "80",
+    "slug": "petal-dance",
+    "slugLoc": "petal-dance",
+    "name": "Petal Dance",
+    "description": "The user gains the Rampaging status."
+  },
+  {
+    "id": "81",
+    "slug": "string-shot",
+    "slugLoc": "string-shot",
+    "name": "String Shot",
+    "description": "Lowers targets' Speed stats by 2 stages."
+  },
+  {
+    "id": "82",
+    "slug": "dragon-rage",
+    "slugLoc": "dragon-rage",
+    "name": "Dragon Rage",
+    "description": ""
+  },
+  {
+    "id": "83",
+    "slug": "fire-spin",
+    "slugLoc": "fire-spin",
+    "name": "Fire Spin",
+    "description": "Gives the target the Bound status."
+  },
+  {
+    "id": "84",
+    "slug": "thunder-shock",
+    "slugLoc": "thunder-shock",
+    "name": "Thunder Shock",
+    "description": ""
+  },
+  {
+    "id": "85",
+    "slug": "thunderbolt",
+    "slugLoc": "thunderbolt",
+    "name": "Thunderbolt",
+    "description": "Has a 10% chance of paralyzing the target."
+  },
+  {
+    "id": "86",
+    "slug": "thunder-wave",
+    "slugLoc": "thunder-wave",
+    "name": "Thunder Wave",
+    "description": "Paralyzes the target."
+  },
+  {
+    "id": "87",
+    "slug": "thunder",
+    "slugLoc": "thunder",
+    "name": "Thunder",
+    "description": "Has a 30% chance of paralyzing the target. This move never\nmisses in rain and can hit a target that has the Sky-High status."
+  },
+  {
+    "id": "88",
+    "slug": "rock-throw",
+    "slugLoc": "rock-throw",
+    "name": "Rock Throw",
+    "description": ""
+  },
+  {
+    "id": "89",
+    "slug": "earthquake",
+    "slugLoc": "earthquake",
+    "name": "Earthquake",
+    "description": "This move's power is doubled against targets that have\nthe Underground status. When Grassy Terrain is active,\nthis move's power is halved."
+  },
+  {
+    "id": "90",
+    "slug": "fissure",
+    "slugLoc": "fissure",
+    "name": "Fissure",
+    "description": "Knocks out the target. The accuracy of this move is fixed\nat 30%."
+  },
+  {
+    "id": "91",
+    "slug": "dig",
+    "slugLoc": "dig",
+    "name": "Dig",
+    "description": "The user gains the Underground status on the turn this move is\nused, then attacks on the following turn."
+  },
+  {
+    "id": "92",
+    "slug": "toxic",
+    "slugLoc": "toxic",
+    "name": "Toxic",
+    "description": "Badly poisons the target. If the user is a Poison type, this move\nwill never miss."
+  },
+  {
+    "id": "93",
+    "slug": "confusion",
+    "slugLoc": "confusion",
+    "name": "Confusion",
+    "description": ""
+  },
+  {
+    "id": "94",
+    "slug": "psychic",
+    "slugLoc": "psychic",
+    "name": "Psychic",
+    "description": "Has a 10% chance of lowering the target's Sp. Def stat by\n1 stage."
+  },
+  {
+    "id": "95",
+    "slug": "hypnosis",
+    "slugLoc": "hypnosis",
+    "name": "Hypnosis",
+    "description": "Puts the target to sleep."
+  },
+  {
+    "id": "96",
+    "slug": "meditate",
+    "slugLoc": "meditate",
+    "name": "Meditate",
+    "description": ""
+  },
+  {
+    "id": "97",
+    "slug": "agility",
+    "slugLoc": "agility",
+    "name": "Agility",
+    "description": "Boosts the user's Speed stat by 2 stages."
+  },
+  {
+    "id": "98",
+    "slug": "quick-attack",
+    "slugLoc": "quick-attack",
+    "name": "Quick Attack",
+    "description": ""
+  },
+  {
+    "id": "99",
+    "slug": "rage",
+    "slugLoc": "rage",
+    "name": "Rage",
+    "description": ""
+  },
+  {
+    "id": "100",
+    "slug": "teleport",
+    "slugLoc": "teleport",
+    "name": "Teleport",
+    "description": ""
+  },
+  {
+    "id": "101",
+    "slug": "night-shade",
+    "slugLoc": "night-shade",
+    "name": "Night Shade",
+    "description": "Deals 50 HP of damage."
+  },
+  {
+    "id": "102",
+    "slug": "mimic",
+    "slugLoc": "mimic",
+    "name": "Mimic",
+    "description": ""
+  },
+  {
+    "id": "103",
+    "slug": "screech",
+    "slugLoc": "screech",
+    "name": "Screech",
+    "description": "Lowers the target's Defense stat by 2 stages."
+  },
+  {
+    "id": "104",
+    "slug": "double-team",
+    "slugLoc": "double-team",
+    "name": "Double Team",
+    "description": "Boosts the user's evasiveness by 1 stage."
+  },
+  {
+    "id": "105",
+    "slug": "recover",
+    "slugLoc": "recover",
+    "name": "Recover",
+    "description": "Restores 1/2 of the user's max HP."
+  },
+  {
+    "id": "106",
+    "slug": "harden",
+    "slugLoc": "harden",
+    "name": "Harden",
+    "description": ""
+  },
+  {
+    "id": "107",
+    "slug": "minimize",
+    "slugLoc": "minimize",
+    "name": "Minimize",
+    "description": "Boosts the user's evasiveness by 2 stages. The user gains the\nMinimized status."
+  },
+  {
+    "id": "108",
+    "slug": "smokescreen",
+    "slugLoc": "smokescreen",
+    "name": "Smokescreen",
+    "description": ""
+  },
+  {
+    "id": "109",
+    "slug": "confuse-ray",
+    "slugLoc": "confuse-ray",
+    "name": "Confuse Ray",
+    "description": "Confuses the target."
+  },
+  {
+    "id": "110",
+    "slug": "withdraw",
+    "slugLoc": "withdraw",
+    "name": "Withdraw",
+    "description": ""
+  },
+  {
+    "id": "111",
+    "slug": "defense-curl",
+    "slugLoc": "defense-curl",
+    "name": "Defense Curl",
+    "description": ""
+  },
+  {
+    "id": "112",
+    "slug": "barrier",
+    "slugLoc": "barrier",
+    "name": "Barrier",
+    "description": ""
+  },
+  {
+    "id": "113",
+    "slug": "light-screen",
+    "slugLoc": "light-screen",
+    "name": "Light Screen",
+    "description": "Gives the user's side the Light Screen status for 5 turns."
+  },
+  {
+    "id": "114",
+    "slug": "haze",
+    "slugLoc": "haze",
+    "name": "Haze",
+    "description": "Eliminates every stat change on the entire field."
+  },
+  {
+    "id": "115",
+    "slug": "reflect",
+    "slugLoc": "reflect",
+    "name": "Reflect",
+    "description": "Gives the user's side the Reflect status for 5 turns."
+  },
+  {
+    "id": "116",
+    "slug": "focus-energy",
+    "slugLoc": "focus-energy",
+    "name": "Focus Energy",
+    "description": "The user gains a 2-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "117",
+    "slug": "bide",
+    "slugLoc": "bide",
+    "name": "Bide",
+    "description": ""
+  },
+  {
+    "id": "118",
+    "slug": "metronome",
+    "slugLoc": "metronome",
+    "name": "Metronome",
+    "description": ""
+  },
+  {
+    "id": "119",
+    "slug": "mirror-move",
+    "slugLoc": "mirror-move",
+    "name": "Mirror Move",
+    "description": ""
+  },
+  {
+    "id": "120",
+    "slug": "self-destruct",
+    "slugLoc": "self-destruct",
+    "name": "Self-Destruct",
+    "description": "The user faints upon using this move."
+  },
+  {
+    "id": "121",
+    "slug": "egg-bomb",
+    "slugLoc": "egg-bomb",
+    "name": "Egg Bomb",
+    "description": ""
+  },
+  {
+    "id": "122",
+    "slug": "lick",
+    "slugLoc": "lick",
+    "name": "Lick",
+    "description": ""
+  },
+  {
+    "id": "123",
+    "slug": "smog",
+    "slugLoc": "smog",
+    "name": "Smog",
+    "description": ""
+  },
+  {
+    "id": "124",
+    "slug": "sludge",
+    "slugLoc": "sludge",
+    "name": "Sludge",
+    "description": ""
+  },
+  {
+    "id": "125",
+    "slug": "bone-club",
+    "slugLoc": "bone-club",
+    "name": "Bone Club",
+    "description": ""
+  },
+  {
+    "id": "126",
+    "slug": "fire-blast",
+    "slugLoc": "fire-blast",
+    "name": "Fire Blast",
+    "description": "Has a 10% chance of burning the target."
+  },
+  {
+    "id": "127",
+    "slug": "waterfall",
+    "slugLoc": "waterfall",
+    "name": "Waterfall",
+    "description": "Has a 20% chance of making the target flinch."
+  },
+  {
+    "id": "128",
+    "slug": "clamp",
+    "slugLoc": "clamp",
+    "name": "Clamp",
+    "description": ""
+  },
+  {
+    "id": "129",
+    "slug": "swift",
+    "slugLoc": "swift",
+    "name": "Swift",
+    "description": ""
+  },
+  {
+    "id": "130",
+    "slug": "skull-bash",
+    "slugLoc": "skull-bash",
+    "name": "Skull Bash",
+    "description": ""
+  },
+  {
+    "id": "131",
+    "slug": "spike-cannon",
+    "slugLoc": "spike-cannon",
+    "name": "Spike Cannon",
+    "description": ""
+  },
+  {
+    "id": "132",
+    "slug": "constrict",
+    "slugLoc": "constrict",
+    "name": "Constrict",
+    "description": ""
+  },
+  {
+    "id": "133",
+    "slug": "amnesia",
+    "slugLoc": "amnesia",
+    "name": "Amnesia",
+    "description": "Boosts the user's Sp. Def stat by 2 stages."
+  },
+  {
+    "id": "134",
+    "slug": "kinesis",
+    "slugLoc": "kinesis",
+    "name": "Kinesis",
+    "description": ""
+  },
+  {
+    "id": "135",
+    "slug": "soft-boiled",
+    "slugLoc": "soft-boiled",
+    "name": "Soft-Boiled",
+    "description": "Restores 1/2 of the user's max HP."
+  },
+  {
+    "id": "136",
+    "slug": "high-jump-kick",
+    "slugLoc": "high-jump-kick",
+    "name": "High Jump Kick",
+    "description": "If this move misses or fails, the user takes damage equal to 1/2\nof its max HP."
+  },
+  {
+    "id": "137",
+    "slug": "glare",
+    "slugLoc": "glare",
+    "name": "Glare",
+    "description": "Paralyzes the target."
+  },
+  {
+    "id": "138",
+    "slug": "dream-eater",
+    "slugLoc": "dream-eater",
+    "name": "Dream Eater",
+    "description": ""
+  },
+  {
+    "id": "139",
+    "slug": "poison-gas",
+    "slugLoc": "poison-gas",
+    "name": "Poison Gas",
+    "description": ""
+  },
+  {
+    "id": "140",
+    "slug": "barrage",
+    "slugLoc": "barrage",
+    "name": "Barrage",
+    "description": ""
+  },
+  {
+    "id": "141",
+    "slug": "leech-life",
+    "slugLoc": "leech-life",
+    "name": "Leech Life",
+    "description": "The user's HP is restored by 1/2 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "142",
+    "slug": "lovely-kiss",
+    "slugLoc": "lovely-kiss",
+    "name": "Lovely Kiss",
+    "description": ""
+  },
+  {
+    "id": "143",
+    "slug": "sky-attack",
+    "slugLoc": "sky-attack",
+    "name": "Sky Attack",
+    "description": "The user gains the Charging status on the turn this move is used,\nthen attacks on the following turn. This move has a 30% chance\nof making the target flinch, and it has a 1-stage Critical-Hit\nRatio Boost."
+  },
+  {
+    "id": "144",
+    "slug": "transform",
+    "slugLoc": "transform",
+    "name": "Transform",
+    "description": "The user transforms into a copy of the target. It also copies all\nof the target's stats apart from its HP."
+  },
+  {
+    "id": "145",
+    "slug": "bubble",
+    "slugLoc": "bubble",
+    "name": "Bubble",
+    "description": ""
+  },
+  {
+    "id": "146",
+    "slug": "dizzy-punch",
+    "slugLoc": "dizzy-punch",
+    "name": "Dizzy Punch",
+    "description": ""
+  },
+  {
+    "id": "147",
+    "slug": "spore",
+    "slugLoc": "spore",
+    "name": "Spore",
+    "description": "Puts the target to sleep."
+  },
+  {
+    "id": "148",
+    "slug": "flash",
+    "slugLoc": "flash",
+    "name": "Flash",
+    "description": ""
+  },
+  {
+    "id": "149",
+    "slug": "psywave",
+    "slugLoc": "psywave",
+    "name": "Psywave",
+    "description": ""
+  },
+  {
+    "id": "150",
+    "slug": "splash",
+    "slugLoc": "splash",
+    "name": "Splash",
+    "description": ""
+  },
+  {
+    "id": "151",
+    "slug": "acid-armor",
+    "slugLoc": "acid-armor",
+    "name": "Acid Armor",
+    "description": "Boosts the user's Defense stat by 2 stages."
+  },
+  {
+    "id": "152",
+    "slug": "crabhammer",
+    "slugLoc": "crabhammer",
+    "name": "Crabhammer",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "153",
+    "slug": "explosion",
+    "slugLoc": "explosion",
+    "name": "Explosion",
+    "description": "The user faints upon using this move."
+  },
+  {
+    "id": "154",
+    "slug": "fury-swipes",
+    "slugLoc": "fury-swipes",
+    "name": "Fury Swipes",
+    "description": ""
+  },
+  {
+    "id": "155",
+    "slug": "bonemerang",
+    "slugLoc": "bonemerang",
+    "name": "Bonemerang",
+    "description": ""
+  },
+  {
+    "id": "156",
+    "slug": "rest",
+    "slugLoc": "rest",
+    "name": "Rest",
+    "description": "Fully restores the user's HP and cures any status conditions.\nThe user falls asleep for 2 turns. This move fails if the user's\nHP is full."
+  },
+  {
+    "id": "157",
+    "slug": "rock-slide",
+    "slugLoc": "rock-slide",
+    "name": "Rock Slide",
+    "description": "Has a 30% chance of making targets flinch."
+  },
+  {
+    "id": "158",
+    "slug": "hyper-fang",
+    "slugLoc": "hyper-fang",
+    "name": "Hyper Fang",
+    "description": ""
+  },
+  {
+    "id": "159",
+    "slug": "sharpen",
+    "slugLoc": "sharpen",
+    "name": "Sharpen",
+    "description": ""
+  },
+  {
+    "id": "160",
+    "slug": "conversion",
+    "slugLoc": "conversion",
+    "name": "Conversion",
+    "description": ""
+  },
+  {
+    "id": "161",
+    "slug": "tri-attack",
+    "slugLoc": "tri-attack",
+    "name": "Tri Attack",
+    "description": "Has a 20% chance of leaving the target burned, frozen,\nor paralyzed."
+  },
+  {
+    "id": "162",
+    "slug": "super-fang",
+    "slugLoc": "super-fang",
+    "name": "Super Fang",
+    "description": "Deals damage to the target equal to 1/2 of its remaining HP.\nDeals 1 HP of damage to a target that has only 1 HP left."
+  },
+  {
+    "id": "163",
+    "slug": "slash",
+    "slugLoc": "slash",
+    "name": "Slash",
+    "description": ""
+  },
+  {
+    "id": "164",
+    "slug": "substitute",
+    "slugLoc": "substitute",
+    "name": "Substitute",
+    "description": "The user loses 1/4 of its max HP to create a substitute. The\nsubstitute will be hit by moves instead of the user, and it will\nvanish when it takes damage equal to 1/4 of the user's max HP."
+  },
+  {
+    "id": "165",
+    "slug": "struggle",
+    "slugLoc": "struggle",
+    "name": "Struggle",
+    "description": ""
+  },
+  {
+    "id": "166",
+    "slug": "sketch",
+    "slugLoc": "sketch",
+    "name": "Sketch",
+    "description": ""
+  },
+  {
+    "id": "167",
+    "slug": "triple-kick",
+    "slugLoc": "triple-kick",
+    "name": "Triple Kick",
+    "description": ""
+  },
+  {
+    "id": "168",
+    "slug": "thief",
+    "slugLoc": "thief",
+    "name": "Thief",
+    "description": "If the user is not already holding an item, it steals the target's\nheld item."
+  },
+  {
+    "id": "169",
+    "slug": "spider-web",
+    "slugLoc": "spider-web",
+    "name": "Spider Web",
+    "description": ""
+  },
+  {
+    "id": "170",
+    "slug": "mind-reader",
+    "slugLoc": "mind-reader",
+    "name": "Mind Reader",
+    "description": ""
+  },
+  {
+    "id": "171",
+    "slug": "nightmare",
+    "slugLoc": "nightmare",
+    "name": "Nightmare",
+    "description": ""
+  },
+  {
+    "id": "172",
+    "slug": "flame-wheel",
+    "slugLoc": "flame-wheel",
+    "name": "Flame Wheel",
+    "description": ""
+  },
+  {
+    "id": "173",
+    "slug": "snore",
+    "slugLoc": "snore",
+    "name": "Snore",
+    "description": "Can be used only if the user is asleep. Has a 30% chance of\nmaking the target flinch."
+  },
+  {
+    "id": "174",
+    "slug": "curse",
+    "slugLoc": "curse",
+    "name": "Curse",
+    "description": "The user loses 1/2 of its max HP to give the target the\nCursed status."
+  },
+  {
+    "id": "175",
+    "slug": "flail",
+    "slugLoc": "flail",
+    "name": "Flail",
+    "description": "The less HP the user has left, the greater this move's power\n(ranging between 20 and 200)."
+  },
+  {
+    "id": "176",
+    "slug": "conversion-2",
+    "slugLoc": "conversion-2",
+    "name": "Conversion 2",
+    "description": ""
+  },
+  {
+    "id": "177",
+    "slug": "aeroblast",
+    "slugLoc": "aeroblast",
+    "name": "Aeroblast",
+    "description": ""
+  },
+  {
+    "id": "178",
+    "slug": "cotton-spore",
+    "slugLoc": "cotton-spore",
+    "name": "Cotton Spore",
+    "description": "Lowers targets' Speed stats by 2 stages."
+  },
+  {
+    "id": "179",
+    "slug": "reversal",
+    "slugLoc": "reversal",
+    "name": "Reversal",
+    "description": "The less HP the user has left, the greater this move's power\n(ranging between 20 and 200)."
+  },
+  {
+    "id": "180",
+    "slug": "spite",
+    "slugLoc": "spite",
+    "name": "Spite",
+    "description": "Removes 4 PP from the move last used by the target."
+  },
+  {
+    "id": "181",
+    "slug": "powder-snow",
+    "slugLoc": "powder-snow",
+    "name": "Powder Snow",
+    "description": ""
+  },
+  {
+    "id": "182",
+    "slug": "protect",
+    "slugLoc": "protect",
+    "name": "Protect",
+    "description": "The user protects itself from incoming moves for the turn. With\neach consecutive use, this move's chance of success becomes\n1/3 of what it was before."
+  },
+  {
+    "id": "183",
+    "slug": "mach-punch",
+    "slugLoc": "mach-punch",
+    "name": "Mach Punch",
+    "description": ""
+  },
+  {
+    "id": "184",
+    "slug": "scary-face",
+    "slugLoc": "scary-face",
+    "name": "Scary Face",
+    "description": "Lowers the target's Speed stat by 2 stages."
+  },
+  {
+    "id": "185",
+    "slug": "feint-attack",
+    "slugLoc": "feint-attack",
+    "name": "Feint Attack",
+    "description": ""
+  },
+  {
+    "id": "186",
+    "slug": "sweet-kiss",
+    "slugLoc": "sweet-kiss",
+    "name": "Sweet Kiss",
+    "description": "Confuses the target."
+  },
+  {
+    "id": "187",
+    "slug": "belly-drum",
+    "slugLoc": "belly-drum",
+    "name": "Belly Drum",
+    "description": "The user loses 1/2 of its max HP to boost its Attack stat to its\nsixth stage. This move fails if the user doesn't have enough\nremaining HP."
+  },
+  {
+    "id": "188",
+    "slug": "sludge-bomb",
+    "slugLoc": "sludge-bomb",
+    "name": "Sludge Bomb",
+    "description": "Has a 30% chance of poisoning the target."
+  },
+  {
+    "id": "189",
+    "slug": "mud-slap",
+    "slugLoc": "mud-slap",
+    "name": "Mud-Slap",
+    "description": "Lowers the target's accuracy by 1 stage."
+  },
+  {
+    "id": "190",
+    "slug": "octazooka",
+    "slugLoc": "octazooka",
+    "name": "Octazooka",
+    "description": ""
+  },
+  {
+    "id": "191",
+    "slug": "spikes",
+    "slugLoc": "spikes",
+    "name": "Spikes",
+    "description": "Gives the opponent's side the Spikes status."
+  },
+  {
+    "id": "192",
+    "slug": "zap-cannon",
+    "slugLoc": "zap-cannon",
+    "name": "Zap Cannon",
+    "description": "Paralyzes the target."
+  },
+  {
+    "id": "193",
+    "slug": "foresight",
+    "slugLoc": "foresight",
+    "name": "Foresight",
+    "description": ""
+  },
+  {
+    "id": "194",
+    "slug": "destiny-bond",
+    "slugLoc": "destiny-bond",
+    "name": "Destiny Bond",
+    "description": "The user gains the Destiny Bound status. This move fails if used\nin succession."
+  },
+  {
+    "id": "195",
+    "slug": "perish-song",
+    "slugLoc": "perish-song",
+    "name": "Perish Song",
+    "description": "Gives all Pokémon on the field the Perishing status."
+  },
+  {
+    "id": "196",
+    "slug": "icy-wind",
+    "slugLoc": "icy-wind",
+    "name": "Icy Wind",
+    "description": "Lowers targets' Speed stats by 1 stage."
+  },
+  {
+    "id": "197",
+    "slug": "detect",
+    "slugLoc": "detect",
+    "name": "Detect",
+    "description": "The user protects itself from incoming moves for the turn. With\neach consecutive use, this move's chance of success becomes\n1/3 of what it was before."
+  },
+  {
+    "id": "198",
+    "slug": "bone-rush",
+    "slugLoc": "bone-rush",
+    "name": "Bone Rush",
+    "description": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "id": "199",
+    "slug": "lock-on",
+    "slugLoc": "lock-on",
+    "name": "Lock-On",
+    "description": "The user gains the Locked On status."
+  },
+  {
+    "id": "200",
+    "slug": "outrage",
+    "slugLoc": "outrage",
+    "name": "Outrage",
+    "description": "The user gains the Rampaging status."
+  },
+  {
+    "id": "201",
+    "slug": "sandstorm",
+    "slugLoc": "sandstorm",
+    "name": "Sandstorm",
+    "description": "Summons a sandstorm for 5 turns."
+  },
+  {
+    "id": "202",
+    "slug": "giga-drain",
+    "slugLoc": "giga-drain",
+    "name": "Giga Drain",
+    "description": "The user's HP is restored by 1/2 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "203",
+    "slug": "endure",
+    "slugLoc": "endure",
+    "name": "Endure",
+    "description": "During the turn this move is used, if the user takes damage from\na move that would knock it out, it will endure the hit with 1 HP.\nWith each consecutive use, this move's chance of success\nbecomes 1/3 of what it was before."
+  },
+  {
+    "id": "204",
+    "slug": "charm",
+    "slugLoc": "charm",
+    "name": "Charm",
+    "description": "Lowers the target's Attack stat by 2 stages."
+  },
+  {
+    "id": "205",
+    "slug": "rollout",
+    "slugLoc": "rollout",
+    "name": "Rollout",
+    "description": ""
+  },
+  {
+    "id": "206",
+    "slug": "false-swipe",
+    "slugLoc": "false-swipe",
+    "name": "False Swipe",
+    "description": ""
+  },
+  {
+    "id": "207",
+    "slug": "swagger",
+    "slugLoc": "swagger",
+    "name": "Swagger",
+    "description": "Boosts the target's Attack stat by 2 stages and confuses it."
+  },
+  {
+    "id": "208",
+    "slug": "milk-drink",
+    "slugLoc": "milk-drink",
+    "name": "Milk Drink",
+    "description": "Restores 1/2 of the user's max HP."
+  },
+  {
+    "id": "209",
+    "slug": "spark",
+    "slugLoc": "spark",
+    "name": "Spark",
+    "description": ""
+  },
+  {
+    "id": "210",
+    "slug": "fury-cutter",
+    "slugLoc": "fury-cutter",
+    "name": "Fury Cutter",
+    "description": ""
+  },
+  {
+    "id": "211",
+    "slug": "steel-wing",
+    "slugLoc": "steel-wing",
+    "name": "Steel Wing",
+    "description": "Has a 10% chance of boosting the user's Defense stat by\n1 stage."
+  },
+  {
+    "id": "212",
+    "slug": "mean-look",
+    "slugLoc": "mean-look",
+    "name": "Mean Look",
+    "description": "Gives the target the Can't Escape status."
+  },
+  {
+    "id": "213",
+    "slug": "attract",
+    "slugLoc": "attract",
+    "name": "Attract",
+    "description": "Gives the target the Infatuated status. This move will fail against\na target that is the same gender as the user or whose gender\nis unknown."
+  },
+  {
+    "id": "214",
+    "slug": "sleep-talk",
+    "slugLoc": "sleep-talk",
+    "name": "Sleep Talk",
+    "description": "Can be used only if the user is asleep. The user uses one of the\nother moves it knows at random."
+  },
+  {
+    "id": "215",
+    "slug": "heal-bell",
+    "slugLoc": "heal-bell",
+    "name": "Heal Bell",
+    "description": "The user cures the status conditions of all the Pokémon in\nits party, including itself, as well as its allies."
+  },
+  {
+    "id": "216",
+    "slug": "return",
+    "slugLoc": "return",
+    "name": "Return",
+    "description": ""
+  },
+  {
+    "id": "217",
+    "slug": "present",
+    "slugLoc": "present",
+    "name": "Present",
+    "description": ""
+  },
+  {
+    "id": "218",
+    "slug": "frustration",
+    "slugLoc": "frustration",
+    "name": "Frustration",
+    "description": ""
+  },
+  {
+    "id": "219",
+    "slug": "safeguard",
+    "slugLoc": "safeguard",
+    "name": "Safeguard",
+    "description": "Gives the user's side the Safeguard status for 5 turns."
+  },
+  {
+    "id": "220",
+    "slug": "pain-split",
+    "slugLoc": "pain-split",
+    "name": "Pain Split",
+    "description": "The user adds its remaining HP to the target's remaining HP,\nthen splits the total in half for them to share."
+  },
+  {
+    "id": "221",
+    "slug": "sacred-fire",
+    "slugLoc": "sacred-fire",
+    "name": "Sacred Fire",
+    "description": ""
+  },
+  {
+    "id": "222",
+    "slug": "magnitude",
+    "slugLoc": "magnitude",
+    "name": "Magnitude",
+    "description": ""
+  },
+  {
+    "id": "223",
+    "slug": "dynamic-punch",
+    "slugLoc": "dynamic-punch",
+    "name": "Dynamic Punch",
+    "description": "Confuses the target."
+  },
+  {
+    "id": "224",
+    "slug": "megahorn",
+    "slugLoc": "megahorn",
+    "name": "Megahorn",
+    "description": ""
+  },
+  {
+    "id": "225",
+    "slug": "dragon-breath",
+    "slugLoc": "dragon-breath",
+    "name": "Dragon Breath",
+    "description": ""
+  },
+  {
+    "id": "226",
+    "slug": "baton-pass",
+    "slugLoc": "baton-pass",
+    "name": "Baton Pass",
+    "description": "The user switches out of battle to be replaced by another party\nPokémon. If the user had any stat changes, a substitute, or other\nsuch effects, they will be passed on to the Pokémon switching in."
+  },
+  {
+    "id": "227",
+    "slug": "encore",
+    "slugLoc": "encore",
+    "name": "Encore",
+    "description": "Gives the target the Encore status."
+  },
+  {
+    "id": "228",
+    "slug": "pursuit",
+    "slugLoc": "pursuit",
+    "name": "Pursuit",
+    "description": ""
+  },
+  {
+    "id": "229",
+    "slug": "rapid-spin",
+    "slugLoc": "rapid-spin",
+    "name": "Rapid Spin",
+    "description": "Removes the Bound and Leech Seeded statuses from the user\nand removes the Sticky Web, Stealth Rock, Spikes, and Toxic\nSpikes statuses from the user's side. Boosts the user's Speed stat\nby 1 stage."
+  },
+  {
+    "id": "230",
+    "slug": "sweet-scent",
+    "slugLoc": "sweet-scent",
+    "name": "Sweet Scent",
+    "description": "Lowers targets' evasiveness by 2 stages."
+  },
+  {
+    "id": "231",
+    "slug": "iron-tail",
+    "slugLoc": "iron-tail",
+    "name": "Iron Tail",
+    "description": "Has a 30% chance of lowering the target's Defense stat by\n1 stage."
+  },
+  {
+    "id": "232",
+    "slug": "metal-claw",
+    "slugLoc": "metal-claw",
+    "name": "Metal Claw",
+    "description": ""
+  },
+  {
+    "id": "233",
+    "slug": "vital-throw",
+    "slugLoc": "vital-throw",
+    "name": "Vital Throw",
+    "description": ""
+  },
+  {
+    "id": "234",
+    "slug": "morning-sun",
+    "slugLoc": "morning-sun",
+    "name": "Morning Sun",
+    "description": "Restores 1/2 of the user's max HP. In harsh sunlight, 2/3 of its\nmax HP will be restored instead. In all other weather conditions,\n1/4 of its max HP will be restored instead."
+  },
+  {
+    "id": "235",
+    "slug": "synthesis",
+    "slugLoc": "synthesis",
+    "name": "Synthesis",
+    "description": "Restores 1/2 of the user's max HP. In harsh sunlight, 2/3 of its\nmax HP will be restored instead. In all other weather conditions,\n1/4 of its max HP will be restored instead."
+  },
+  {
+    "id": "236",
+    "slug": "moonlight",
+    "slugLoc": "moonlight",
+    "name": "Moonlight",
+    "description": "Restores 1/2 of the user's max HP. In harsh sunlight, 2/3 of its\nmax HP will be restored instead. In all other weather conditions,\n1/4 of its max HP will be restored instead."
+  },
+  {
+    "id": "237",
+    "slug": "hidden-power",
+    "slugLoc": "hidden-power",
+    "name": "Hidden Power",
+    "description": ""
+  },
+  {
+    "id": "238",
+    "slug": "cross-chop",
+    "slugLoc": "cross-chop",
+    "name": "Cross Chop",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "239",
+    "slug": "twister",
+    "slugLoc": "twister",
+    "name": "Twister",
+    "description": ""
+  },
+  {
+    "id": "240",
+    "slug": "rain-dance",
+    "slugLoc": "rain-dance",
+    "name": "Rain Dance",
+    "description": "Summons rain for 5 turns."
+  },
+  {
+    "id": "241",
+    "slug": "sunny-day",
+    "slugLoc": "sunny-day",
+    "name": "Sunny Day",
+    "description": "Summons harsh sunlight for 5 turns."
+  },
+  {
+    "id": "242",
+    "slug": "crunch",
+    "slugLoc": "crunch",
+    "name": "Crunch",
+    "description": "Has a 20% chance of lowering the target's Defense stat by\n1 stage."
+  },
+  {
+    "id": "243",
+    "slug": "mirror-coat",
+    "slugLoc": "mirror-coat",
+    "name": "Mirror Coat",
+    "description": "The user retaliates to deal double the damage it took from an\nopponent's special move during the turn this move is used."
+  },
+  {
+    "id": "244",
+    "slug": "psych-up",
+    "slugLoc": "psych-up",
+    "name": "Psych Up",
+    "description": "The user copies the target's stat changes."
+  },
+  {
+    "id": "245",
+    "slug": "extreme-speed",
+    "slugLoc": "extreme-speed",
+    "name": "Extreme Speed",
+    "description": ""
+  },
+  {
+    "id": "246",
+    "slug": "ancient-power",
+    "slugLoc": "ancient-power",
+    "name": "Ancient Power",
+    "description": "Has a 10% chance of boosting the user's Attack, Defense,\nSp. Atk, Sp. Def, and Speed stats by 1 stage."
+  },
+  {
+    "id": "247",
+    "slug": "shadow-ball",
+    "slugLoc": "shadow-ball",
+    "name": "Shadow Ball",
+    "description": "Has a 20% chance of lowering the target's Sp. Def stat by\n1 stage."
+  },
+  {
+    "id": "248",
+    "slug": "future-sight",
+    "slugLoc": "future-sight",
+    "name": "Future Sight",
+    "description": "Gives the target's spot the Future Attack status."
+  },
+  {
+    "id": "249",
+    "slug": "rock-smash",
+    "slugLoc": "rock-smash",
+    "name": "Rock Smash",
+    "description": ""
+  },
+  {
+    "id": "250",
+    "slug": "whirlpool",
+    "slugLoc": "whirlpool",
+    "name": "Whirlpool",
+    "description": "Gives the target the Bound status. This move's power is\ndoubled if the target has the Submerged status."
+  },
+  {
+    "id": "251",
+    "slug": "beat-up",
+    "slugLoc": "beat-up",
+    "name": "Beat Up",
+    "description": "The target is attacked as many times as the number of Pokémon\nin the user's party. Pokémon that have fainted or have a status\ncondition are not counted. This move's power is calculated\nbased on the Attack stats of the party Pokémon."
+  },
+  {
+    "id": "252",
+    "slug": "fake-out",
+    "slugLoc": "fake-out",
+    "name": "Fake Out",
+    "description": "Makes the target flinch. This move fails unless it is the first move\nused by the user after it enters a battle."
+  },
+  {
+    "id": "253",
+    "slug": "uproar",
+    "slugLoc": "uproar",
+    "name": "Uproar",
+    "description": "The user gains the Uproar status."
+  },
+  {
+    "id": "254",
+    "slug": "stockpile",
+    "slugLoc": "stockpile",
+    "name": "Stockpile",
+    "description": "Boosts the user's Defense and Sp. Def stats by 1 stage. Raises\nthe user's Stockpiling level by 1. Can be used up to 3 times."
+  },
+  {
+    "id": "255",
+    "slug": "spit-up",
+    "slugLoc": "spit-up",
+    "name": "Spit Up",
+    "description": "The higher the user's Stockpiling level, the greater this move's\npower (ranging between 100 and 300). This move fails unless\nthe user has the Stockpiling status."
+  },
+  {
+    "id": "256",
+    "slug": "swallow",
+    "slugLoc": "swallow",
+    "name": "Swallow",
+    "description": "The higher the user's Stockpiling level, the more HP the\nuser restores. Level 1: 1/4 of the user's max HP is restored.\nLevel 2: 1/2 of the user's max HP is restored. Level 3: The\nuser's HP is fully restored. This move fails unless the user\nhas the Stockpiling status."
+  },
+  {
+    "id": "257",
+    "slug": "heat-wave",
+    "slugLoc": "heat-wave",
+    "name": "Heat Wave",
+    "description": "Has a 10% chance of burning targets."
+  },
+  {
+    "id": "258",
+    "slug": "hail",
+    "slugLoc": "hail",
+    "name": "Hail",
+    "description": ""
+  },
+  {
+    "id": "259",
+    "slug": "torment",
+    "slugLoc": "torment",
+    "name": "Torment",
+    "description": "Gives the target the Unable to Repeat status."
+  },
+  {
+    "id": "260",
+    "slug": "flatter",
+    "slugLoc": "flatter",
+    "name": "Flatter",
+    "description": "Boosts the target's Sp. Atk stat by 1 stage and confuses it."
+  },
+  {
+    "id": "261",
+    "slug": "will-o-wisp",
+    "slugLoc": "will-o-wisp",
+    "name": "Will-O-Wisp",
+    "description": "Burns the target."
+  },
+  {
+    "id": "262",
+    "slug": "memento",
+    "slugLoc": "memento",
+    "name": "Memento",
+    "description": "Lowers the target's Attack and Sp. Atk stats by 2 stages.\nThe user faints upon using this move."
+  },
+  {
+    "id": "263",
+    "slug": "facade",
+    "slugLoc": "facade",
+    "name": "Facade",
+    "description": "This move's power is doubled if the user is poisoned, badly\npoisoned, burned, or paralyzed. Although this move is a\nphysical move, the damage it deals is not halved when the\nuser is burned."
+  },
+  {
+    "id": "264",
+    "slug": "focus-punch",
+    "slugLoc": "focus-punch",
+    "name": "Focus Punch",
+    "description": "This move fails if the user has already taken damage from a\nmove in the same turn."
+  },
+  {
+    "id": "265",
+    "slug": "smelling-salts",
+    "slugLoc": "smelling-salts",
+    "name": "Smelling Salts",
+    "description": ""
+  },
+  {
+    "id": "266",
+    "slug": "follow-me",
+    "slugLoc": "follow-me",
+    "name": "Follow Me",
+    "description": "The user redirects opponents' moves toward itself. This effect\nworks only on single-target moves."
+  },
+  {
+    "id": "267",
+    "slug": "nature-power",
+    "slugLoc": "nature-power",
+    "name": "Nature Power",
+    "description": ""
+  },
+  {
+    "id": "268",
+    "slug": "charge",
+    "slugLoc": "charge",
+    "name": "Charge",
+    "description": "Boosts the user's Sp. Def stat by 1 stage. The user gains the\nElectric Boost status."
+  },
+  {
+    "id": "269",
+    "slug": "taunt",
+    "slugLoc": "taunt",
+    "name": "Taunt",
+    "description": "Gives the target the Taunted status."
+  },
+  {
+    "id": "270",
+    "slug": "helping-hand",
+    "slugLoc": "helping-hand",
+    "name": "Helping Hand",
+    "description": "Boosts the power of an ally's move by 50% during the turn this\nmove is used."
+  },
+  {
+    "id": "271",
+    "slug": "trick",
+    "slugLoc": "trick",
+    "name": "Trick",
+    "description": "The user and the target swap their held items."
+  },
+  {
+    "id": "272",
+    "slug": "role-play",
+    "slugLoc": "role-play",
+    "name": "Role Play",
+    "description": "Changes the user's Ability to be the same as the target's."
+  },
+  {
+    "id": "273",
+    "slug": "wish",
+    "slugLoc": "wish",
+    "name": "Wish",
+    "description": "Gives the user's spot the Wish status."
+  },
+  {
+    "id": "274",
+    "slug": "assist",
+    "slugLoc": "assist",
+    "name": "Assist",
+    "description": ""
+  },
+  {
+    "id": "275",
+    "slug": "ingrain",
+    "slugLoc": "ingrain",
+    "name": "Ingrain",
+    "description": "The user gains the Ingrained status."
+  },
+  {
+    "id": "276",
+    "slug": "superpower",
+    "slugLoc": "superpower",
+    "name": "Superpower",
+    "description": "Lowers the user's Attack and Defense stats by 1 stage."
+  },
+  {
+    "id": "277",
+    "slug": "magic-coat",
+    "slugLoc": "magic-coat",
+    "name": "Magic Coat",
+    "description": ""
+  },
+  {
+    "id": "278",
+    "slug": "recycle",
+    "slugLoc": "recycle",
+    "name": "Recycle",
+    "description": "Regenerates the last held item that the user consumed. The user\nthen holds this item once more."
+  },
+  {
+    "id": "279",
+    "slug": "revenge",
+    "slugLoc": "revenge",
+    "name": "Revenge",
+    "description": ""
+  },
+  {
+    "id": "280",
+    "slug": "brick-break",
+    "slugLoc": "brick-break",
+    "name": "Brick Break",
+    "description": "Removes the Light Screen, Reflect, and Aurora Veil statuses on\nthe target's side."
+  },
+  {
+    "id": "281",
+    "slug": "yawn",
+    "slugLoc": "yawn",
+    "name": "Yawn",
+    "description": "Makes the target drowsy. This move never misses."
+  },
+  {
+    "id": "282",
+    "slug": "knock-off",
+    "slugLoc": "knock-off",
+    "name": "Knock Off",
+    "description": "This move's power is boosted by 50% if the target is holding an\nitem. Causes the target to lose its held item."
+  },
+  {
+    "id": "283",
+    "slug": "endeavor",
+    "slugLoc": "endeavor",
+    "name": "Endeavor",
+    "description": "Deals damage to the target equal to its remaining HP minus the\nuser's remaining HP. This move fails if the target's HP is the same\nas or lower than the user's."
+  },
+  {
+    "id": "284",
+    "slug": "eruption",
+    "slugLoc": "eruption",
+    "name": "Eruption",
+    "description": "The less HP the user has left, the lower this move's power\n(ranging between 1 and 150)."
+  },
+  {
+    "id": "285",
+    "slug": "skill-swap",
+    "slugLoc": "skill-swap",
+    "name": "Skill Swap",
+    "description": "The user and the target swap their Abilities."
+  },
+  {
+    "id": "286",
+    "slug": "imprison",
+    "slugLoc": "imprison",
+    "name": "Imprison",
+    "description": "The user gains the Sealing Off status."
+  },
+  {
+    "id": "287",
+    "slug": "refresh",
+    "slugLoc": "refresh",
+    "name": "Refresh",
+    "description": ""
+  },
+  {
+    "id": "288",
+    "slug": "grudge",
+    "slugLoc": "grudge",
+    "name": "Grudge",
+    "description": ""
+  },
+  {
+    "id": "289",
+    "slug": "snatch",
+    "slugLoc": "snatch",
+    "name": "Snatch",
+    "description": ""
+  },
+  {
+    "id": "290",
+    "slug": "secret-power",
+    "slugLoc": "secret-power",
+    "name": "Secret Power",
+    "description": ""
+  },
+  {
+    "id": "291",
+    "slug": "dive",
+    "slugLoc": "dive",
+    "name": "Dive",
+    "description": "The user gains the Submerged status on the turn this move is\nused, then attacks on the following turn."
+  },
+  {
+    "id": "292",
+    "slug": "arm-thrust",
+    "slugLoc": "arm-thrust",
+    "name": "Arm Thrust",
+    "description": ""
+  },
+  {
+    "id": "293",
+    "slug": "camouflage",
+    "slugLoc": "camouflage",
+    "name": "Camouflage",
+    "description": ""
+  },
+  {
+    "id": "294",
+    "slug": "tail-glow",
+    "slugLoc": "tail-glow",
+    "name": "Tail Glow",
+    "description": ""
+  },
+  {
+    "id": "295",
+    "slug": "luster-purge",
+    "slugLoc": "luster-purge",
+    "name": "Luster Purge",
+    "description": ""
+  },
+  {
+    "id": "296",
+    "slug": "mist-ball",
+    "slugLoc": "mist-ball",
+    "name": "Mist Ball",
+    "description": ""
+  },
+  {
+    "id": "297",
+    "slug": "feather-dance",
+    "slugLoc": "feather-dance",
+    "name": "Feather Dance",
+    "description": "Lowers the target's Attack stat by 2 stages."
+  },
+  {
+    "id": "298",
+    "slug": "teeter-dance",
+    "slugLoc": "teeter-dance",
+    "name": "Teeter Dance",
+    "description": "Confuses all other Pokémon on the field."
+  },
+  {
+    "id": "299",
+    "slug": "blaze-kick",
+    "slugLoc": "blaze-kick",
+    "name": "Blaze Kick",
+    "description": "Has a 10% chance of burning the target. This move has a\n1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "300",
+    "slug": "mud-sport",
+    "slugLoc": "mud-sport",
+    "name": "Mud Sport",
+    "description": ""
+  },
+  {
+    "id": "301",
+    "slug": "ice-ball",
+    "slugLoc": "ice-ball",
+    "name": "Ice Ball",
+    "description": ""
+  },
+  {
+    "id": "302",
+    "slug": "needle-arm",
+    "slugLoc": "needle-arm",
+    "name": "Needle Arm",
+    "description": ""
+  },
+  {
+    "id": "303",
+    "slug": "slack-off",
+    "slugLoc": "slack-off",
+    "name": "Slack Off",
+    "description": "Restores 1/2 of the user's max HP."
+  },
+  {
+    "id": "304",
+    "slug": "hyper-voice",
+    "slugLoc": "hyper-voice",
+    "name": "Hyper Voice",
+    "description": ""
+  },
+  {
+    "id": "305",
+    "slug": "poison-fang",
+    "slugLoc": "poison-fang",
+    "name": "Poison Fang",
+    "description": "Has a 50% chance of badly poisoning the target."
+  },
+  {
+    "id": "306",
+    "slug": "crush-claw",
+    "slugLoc": "crush-claw",
+    "name": "Crush Claw",
+    "description": "Has a 50% chance of lowering the target's Defense stat by\n1 stage."
+  },
+  {
+    "id": "307",
+    "slug": "blast-burn",
+    "slugLoc": "blast-burn",
+    "name": "Blast Burn",
+    "description": "The user gains the Recharging status on the turn after this move\nis used."
+  },
+  {
+    "id": "308",
+    "slug": "hydro-cannon",
+    "slugLoc": "hydro-cannon",
+    "name": "Hydro Cannon",
+    "description": "The user gains the Recharging status on the turn after this move\nis used."
+  },
+  {
+    "id": "309",
+    "slug": "meteor-mash",
+    "slugLoc": "meteor-mash",
+    "name": "Meteor Mash",
+    "description": "Has a 20% chance of boosting the user's Attack stat by 1 stage."
+  },
+  {
+    "id": "310",
+    "slug": "astonish",
+    "slugLoc": "astonish",
+    "name": "Astonish",
+    "description": ""
+  },
+  {
+    "id": "311",
+    "slug": "weather-ball",
+    "slugLoc": "weather-ball",
+    "name": "Weather Ball",
+    "description": "When a weather condition is present, this move's power is\ndoubled and its type changes. Harsh sunlight: Fire type.\nRain: Water type. Snow: Ice type. Sandstorm: Rock type."
+  },
+  {
+    "id": "312",
+    "slug": "aromatherapy",
+    "slugLoc": "aromatherapy",
+    "name": "Aromatherapy",
+    "description": ""
+  },
+  {
+    "id": "313",
+    "slug": "fake-tears",
+    "slugLoc": "fake-tears",
+    "name": "Fake Tears",
+    "description": "Lowers the target's Sp. Def stat by 2 stages."
+  },
+  {
+    "id": "314",
+    "slug": "air-cutter",
+    "slugLoc": "air-cutter",
+    "name": "Air Cutter",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "315",
+    "slug": "overheat",
+    "slugLoc": "overheat",
+    "name": "Overheat",
+    "description": "Lowers the user's Sp. Atk stat by 2 stages."
+  },
+  {
+    "id": "316",
+    "slug": "odor-sleuth",
+    "slugLoc": "odor-sleuth",
+    "name": "Odor Sleuth",
+    "description": ""
+  },
+  {
+    "id": "317",
+    "slug": "rock-tomb",
+    "slugLoc": "rock-tomb",
+    "name": "Rock Tomb",
+    "description": "Lowers the target's Speed stat by 1 stage."
+  },
+  {
+    "id": "318",
+    "slug": "silver-wind",
+    "slugLoc": "silver-wind",
+    "name": "Silver Wind",
+    "description": ""
+  },
+  {
+    "id": "319",
+    "slug": "metal-sound",
+    "slugLoc": "metal-sound",
+    "name": "Metal Sound",
+    "description": "Lowers the target's Sp. Def stat by 2 stages."
+  },
+  {
+    "id": "320",
+    "slug": "grass-whistle",
+    "slugLoc": "grass-whistle",
+    "name": "Grass Whistle",
+    "description": ""
+  },
+  {
+    "id": "321",
+    "slug": "tickle",
+    "slugLoc": "tickle",
+    "name": "Tickle",
+    "description": "Lowers the target's Attack and Defense stats by 1 stage."
+  },
+  {
+    "id": "322",
+    "slug": "cosmic-power",
+    "slugLoc": "cosmic-power",
+    "name": "Cosmic Power",
+    "description": "Boosts the user's Defense and Sp. Def stats by 1 stage."
+  },
+  {
+    "id": "323",
+    "slug": "water-spout",
+    "slugLoc": "water-spout",
+    "name": "Water Spout",
+    "description": "The less HP the user has left, the lower this move's power\n(ranging between 1 and 150)."
+  },
+  {
+    "id": "324",
+    "slug": "signal-beam",
+    "slugLoc": "signal-beam",
+    "name": "Signal Beam",
+    "description": ""
+  },
+  {
+    "id": "325",
+    "slug": "shadow-punch",
+    "slugLoc": "shadow-punch",
+    "name": "Shadow Punch",
+    "description": "This move never misses."
+  },
+  {
+    "id": "326",
+    "slug": "extrasensory",
+    "slugLoc": "extrasensory",
+    "name": "Extrasensory",
+    "description": "Has a 10% chance of making the target flinch."
+  },
+  {
+    "id": "327",
+    "slug": "sky-uppercut",
+    "slugLoc": "sky-uppercut",
+    "name": "Sky Uppercut",
+    "description": ""
+  },
+  {
+    "id": "328",
+    "slug": "sand-tomb",
+    "slugLoc": "sand-tomb",
+    "name": "Sand Tomb",
+    "description": "Gives the target the Bound status."
+  },
+  {
+    "id": "329",
+    "slug": "sheer-cold",
+    "slugLoc": "sheer-cold",
+    "name": "Sheer Cold",
+    "description": "Knocks out the target. This move does not affect Ice types. The\naccuracy of this move is fixed at 30%. If used by Pokémon other\nthan Ice types, the accuracy of this move is 20%."
+  },
+  {
+    "id": "330",
+    "slug": "muddy-water",
+    "slugLoc": "muddy-water",
+    "name": "Muddy Water",
+    "description": "Has a 30% chance of lowering targets' accuracy by 1 stage."
+  },
+  {
+    "id": "331",
+    "slug": "bullet-seed",
+    "slugLoc": "bullet-seed",
+    "name": "Bullet Seed",
+    "description": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "id": "332",
+    "slug": "aerial-ace",
+    "slugLoc": "aerial-ace",
+    "name": "Aerial Ace",
+    "description": "This move never misses."
+  },
+  {
+    "id": "333",
+    "slug": "icicle-spear",
+    "slugLoc": "icicle-spear",
+    "name": "Icicle Spear",
+    "description": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "id": "334",
+    "slug": "iron-defense",
+    "slugLoc": "iron-defense",
+    "name": "Iron Defense",
+    "description": "Boosts the user's Defense stat by 2 stages."
+  },
+  {
+    "id": "335",
+    "slug": "block",
+    "slugLoc": "block",
+    "name": "Block",
+    "description": "Gives the target the Can't Escape status."
+  },
+  {
+    "id": "336",
+    "slug": "howl",
+    "slugLoc": "howl",
+    "name": "Howl",
+    "description": "Boosts the Attack stats of the user and its allies by 1 stage."
+  },
+  {
+    "id": "337",
+    "slug": "dragon-claw",
+    "slugLoc": "dragon-claw",
+    "name": "Dragon Claw",
+    "description": ""
+  },
+  {
+    "id": "338",
+    "slug": "frenzy-plant",
+    "slugLoc": "frenzy-plant",
+    "name": "Frenzy Plant",
+    "description": "The user gains the Recharging status on the turn after this move\nis used."
+  },
+  {
+    "id": "339",
+    "slug": "bulk-up",
+    "slugLoc": "bulk-up",
+    "name": "Bulk Up",
+    "description": "Boosts the user's Attack and Defense stats by 1 stage."
+  },
+  {
+    "id": "340",
+    "slug": "bounce",
+    "slugLoc": "bounce",
+    "name": "Bounce",
+    "description": "The user gains the Sky-High status on the turn this move is used,\nthen attacks on the following turn. This move has a 30% chance\nof paralyzing the target."
+  },
+  {
+    "id": "341",
+    "slug": "mud-shot",
+    "slugLoc": "mud-shot",
+    "name": "Mud Shot",
+    "description": "Lowers the target's Speed stat by 1 stage."
+  },
+  {
+    "id": "342",
+    "slug": "poison-tail",
+    "slugLoc": "poison-tail",
+    "name": "Poison Tail",
+    "description": ""
+  },
+  {
+    "id": "343",
+    "slug": "covet",
+    "slugLoc": "covet",
+    "name": "Covet",
+    "description": "If the user is not already holding an item, it steals the target's\nheld item."
+  },
+  {
+    "id": "344",
+    "slug": "volt-tackle",
+    "slugLoc": "volt-tackle",
+    "name": "Volt Tackle",
+    "description": "Has a 10% chance of paralyzing the target. The user also takes\n1/3 of the damage dealt by this move."
+  },
+  {
+    "id": "345",
+    "slug": "magical-leaf",
+    "slugLoc": "magical-leaf",
+    "name": "Magical Leaf",
+    "description": ""
+  },
+  {
+    "id": "346",
+    "slug": "water-sport",
+    "slugLoc": "water-sport",
+    "name": "Water Sport",
+    "description": ""
+  },
+  {
+    "id": "347",
+    "slug": "calm-mind",
+    "slugLoc": "calm-mind",
+    "name": "Calm Mind",
+    "description": "Boosts the user's Sp. Atk and Sp. Def stats by 1 stage."
+  },
+  {
+    "id": "348",
+    "slug": "leaf-blade",
+    "slugLoc": "leaf-blade",
+    "name": "Leaf Blade",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "349",
+    "slug": "dragon-dance",
+    "slugLoc": "dragon-dance",
+    "name": "Dragon Dance",
+    "description": "Boosts the user's Attack and Speed stats by 1 stage."
+  },
+  {
+    "id": "350",
+    "slug": "rock-blast",
+    "slugLoc": "rock-blast",
+    "name": "Rock Blast",
+    "description": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "id": "351",
+    "slug": "shock-wave",
+    "slugLoc": "shock-wave",
+    "name": "Shock Wave",
+    "description": ""
+  },
+  {
+    "id": "352",
+    "slug": "water-pulse",
+    "slugLoc": "water-pulse",
+    "name": "Water Pulse",
+    "description": "Has a 20% chance of confusing the target."
+  },
+  {
+    "id": "353",
+    "slug": "doom-desire",
+    "slugLoc": "doom-desire",
+    "name": "Doom Desire",
+    "description": ""
+  },
+  {
+    "id": "354",
+    "slug": "psycho-boost",
+    "slugLoc": "psycho-boost",
+    "name": "Psycho Boost",
+    "description": ""
+  },
+  {
+    "id": "355",
+    "slug": "roost",
+    "slugLoc": "roost",
+    "name": "Roost",
+    "description": "Restores 1/2 of the user's max HP. If the user is a Flying type,\nit will lose the Flying type for the turn."
+  },
+  {
+    "id": "356",
+    "slug": "gravity",
+    "slugLoc": "gravity",
+    "name": "Gravity",
+    "description": "Gives the entire field the Gravity status for 5 turns."
+  },
+  {
+    "id": "357",
+    "slug": "miracle-eye",
+    "slugLoc": "miracle-eye",
+    "name": "Miracle Eye",
+    "description": ""
+  },
+  {
+    "id": "358",
+    "slug": "wake-up-slap",
+    "slugLoc": "wake-up-slap",
+    "name": "Wake-Up Slap",
+    "description": ""
+  },
+  {
+    "id": "359",
+    "slug": "hammer-arm",
+    "slugLoc": "hammer-arm",
+    "name": "Hammer Arm",
+    "description": "Lowers the user's Speed stat by 1 stage."
+  },
+  {
+    "id": "360",
+    "slug": "gyro-ball",
+    "slugLoc": "gyro-ball",
+    "name": "Gyro Ball",
+    "description": "The lower the user's Speed stat compared to the target's, the\ngreater this move's power (ranging between 1 and 150)."
+  },
+  {
+    "id": "361",
+    "slug": "healing-wish",
+    "slugLoc": "healing-wish",
+    "name": "Healing Wish",
+    "description": "The user faints. The Pokémon taking its place will have its HP\nfully restored and its status conditions cured."
+  },
+  {
+    "id": "362",
+    "slug": "brine",
+    "slugLoc": "brine",
+    "name": "Brine",
+    "description": ""
+  },
+  {
+    "id": "363",
+    "slug": "natural-gift",
+    "slugLoc": "natural-gift",
+    "name": "Natural Gift",
+    "description": ""
+  },
+  {
+    "id": "364",
+    "slug": "feint",
+    "slugLoc": "feint",
+    "name": "Feint",
+    "description": "This move can hit a target using a move such as Protect or\nDetect and removes the effects of those moves."
+  },
+  {
+    "id": "365",
+    "slug": "pluck",
+    "slugLoc": "pluck",
+    "name": "Pluck",
+    "description": "If the target is holding a Berry, the user eats that Berry and\ngains its effect."
+  },
+  {
+    "id": "366",
+    "slug": "tailwind",
+    "slugLoc": "tailwind",
+    "name": "Tailwind",
+    "description": "Gives the user's side the Tailwind status for 4 turns."
+  },
+  {
+    "id": "367",
+    "slug": "acupressure",
+    "slugLoc": "acupressure",
+    "name": "Acupressure",
+    "description": "Boosts the Attack, Defense, Sp. Atk, Sp. Def, Speed, accuracy,\nor evasiveness of the user or an ally by 2 stages."
+  },
+  {
+    "id": "368",
+    "slug": "metal-burst",
+    "slugLoc": "metal-burst",
+    "name": "Metal Burst",
+    "description": "The user retaliates to deal 150% of the damage it took from an\nopponent's move during the turn this move is used."
+  },
+  {
+    "id": "369",
+    "slug": "u-turn",
+    "slugLoc": "u-turn",
+    "name": "U-turn",
+    "description": "After attacking, the user switches out of battle to be replaced\nby another party Pokémon."
+  },
+  {
+    "id": "370",
+    "slug": "close-combat",
+    "slugLoc": "close-combat",
+    "name": "Close Combat",
+    "description": "Lowers the user's Defense and Sp. Def stats by 1 stage."
+  },
+  {
+    "id": "371",
+    "slug": "payback",
+    "slugLoc": "payback",
+    "name": "Payback",
+    "description": "This move's power is doubled if the user attacks after the target."
+  },
+  {
+    "id": "372",
+    "slug": "assurance",
+    "slugLoc": "assurance",
+    "name": "Assurance",
+    "description": "This move's power is doubled if the target has already taken\ndamage during the turn this move is used."
+  },
+  {
+    "id": "373",
+    "slug": "embargo",
+    "slugLoc": "embargo",
+    "name": "Embargo",
+    "description": ""
+  },
+  {
+    "id": "374",
+    "slug": "fling",
+    "slugLoc": "fling",
+    "name": "Fling",
+    "description": "This move's power and effects depend on the user's held item.\nThe held item is lost after this move is used."
+  },
+  {
+    "id": "375",
+    "slug": "psycho-shift",
+    "slugLoc": "psycho-shift",
+    "name": "Psycho Shift",
+    "description": ""
+  },
+  {
+    "id": "376",
+    "slug": "trump-card",
+    "slugLoc": "trump-card",
+    "name": "Trump Card",
+    "description": ""
+  },
+  {
+    "id": "377",
+    "slug": "heal-block",
+    "slugLoc": "heal-block",
+    "name": "Heal Block",
+    "description": ""
+  },
+  {
+    "id": "378",
+    "slug": "wring-out",
+    "slugLoc": "wring-out",
+    "name": "Wring Out",
+    "description": ""
+  },
+  {
+    "id": "379",
+    "slug": "power-trick",
+    "slugLoc": "power-trick",
+    "name": "Power Trick",
+    "description": "The user gains the Atk/Def Swapped status."
+  },
+  {
+    "id": "380",
+    "slug": "gastro-acid",
+    "slugLoc": "gastro-acid",
+    "name": "Gastro Acid",
+    "description": "Gives the target the No Ability status."
+  },
+  {
+    "id": "381",
+    "slug": "lucky-chant",
+    "slugLoc": "lucky-chant",
+    "name": "Lucky Chant",
+    "description": ""
+  },
+  {
+    "id": "382",
+    "slug": "me-first",
+    "slugLoc": "me-first",
+    "name": "Me First",
+    "description": ""
+  },
+  {
+    "id": "383",
+    "slug": "copycat",
+    "slugLoc": "copycat",
+    "name": "Copycat",
+    "description": "The user mimics the move that was last used. This move fails if\nno other move has been used yet."
+  },
+  {
+    "id": "384",
+    "slug": "power-swap",
+    "slugLoc": "power-swap",
+    "name": "Power Swap",
+    "description": "The user swaps the changes to its Attack and Sp. Atk stats with\nthe changes to the target's Attack and Sp. Atk stats."
+  },
+  {
+    "id": "385",
+    "slug": "guard-swap",
+    "slugLoc": "guard-swap",
+    "name": "Guard Swap",
+    "description": "The user swaps the changes to its Defense and Sp. Def stats with\nthe changes to the target's Defense and Sp. Def stats."
+  },
+  {
+    "id": "386",
+    "slug": "punishment",
+    "slugLoc": "punishment",
+    "name": "Punishment",
+    "description": ""
+  },
+  {
+    "id": "387",
+    "slug": "last-resort",
+    "slugLoc": "last-resort",
+    "name": "Last Resort",
+    "description": "This move fails unless the user has already used all the other\nmoves it knows."
+  },
+  {
+    "id": "388",
+    "slug": "worry-seed",
+    "slugLoc": "worry-seed",
+    "name": "Worry Seed",
+    "description": "Changes the target's Ability to Insomnia."
+  },
+  {
+    "id": "389",
+    "slug": "sucker-punch",
+    "slugLoc": "sucker-punch",
+    "name": "Sucker Punch",
+    "description": "This move fails unless the target has chosen an attack and has\nnot yet attacked during the turn this move is used."
+  },
+  {
+    "id": "390",
+    "slug": "toxic-spikes",
+    "slugLoc": "toxic-spikes",
+    "name": "Toxic Spikes",
+    "description": "Gives the opponent's side the Toxic Spikes status."
+  },
+  {
+    "id": "391",
+    "slug": "heart-swap",
+    "slugLoc": "heart-swap",
+    "name": "Heart Swap",
+    "description": ""
+  },
+  {
+    "id": "392",
+    "slug": "aqua-ring",
+    "slugLoc": "aqua-ring",
+    "name": "Aqua Ring",
+    "description": "The user gains the Aqua Ring status."
+  },
+  {
+    "id": "393",
+    "slug": "magnet-rise",
+    "slugLoc": "magnet-rise",
+    "name": "Magnet Rise",
+    "description": "The user gains the Magnet Rise status."
+  },
+  {
+    "id": "394",
+    "slug": "flare-blitz",
+    "slugLoc": "flare-blitz",
+    "name": "Flare Blitz",
+    "description": "Has a 10% chance of burning the target. Cures the user of\nbeing frozen. The user also takes 1/3 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "395",
+    "slug": "force-palm",
+    "slugLoc": "force-palm",
+    "name": "Force Palm",
+    "description": ""
+  },
+  {
+    "id": "396",
+    "slug": "aura-sphere",
+    "slugLoc": "aura-sphere",
+    "name": "Aura Sphere",
+    "description": "This move never misses."
+  },
+  {
+    "id": "397",
+    "slug": "rock-polish",
+    "slugLoc": "rock-polish",
+    "name": "Rock Polish",
+    "description": "Boosts the user's Speed stat by 2 stages."
+  },
+  {
+    "id": "398",
+    "slug": "poison-jab",
+    "slugLoc": "poison-jab",
+    "name": "Poison Jab",
+    "description": "Has a 30% chance of poisoning the target."
+  },
+  {
+    "id": "399",
+    "slug": "dark-pulse",
+    "slugLoc": "dark-pulse",
+    "name": "Dark Pulse",
+    "description": "Has a 20% chance of making the target flinch."
+  },
+  {
+    "id": "400",
+    "slug": "night-slash",
+    "slugLoc": "night-slash",
+    "name": "Night Slash",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "401",
+    "slug": "aqua-tail",
+    "slugLoc": "aqua-tail",
+    "name": "Aqua Tail",
+    "description": ""
+  },
+  {
+    "id": "402",
+    "slug": "seed-bomb",
+    "slugLoc": "seed-bomb",
+    "name": "Seed Bomb",
+    "description": ""
+  },
+  {
+    "id": "403",
+    "slug": "air-slash",
+    "slugLoc": "air-slash",
+    "name": "Air Slash",
+    "description": "Has a 30% chance of making the target flinch."
+  },
+  {
+    "id": "404",
+    "slug": "x-scissor",
+    "slugLoc": "x-scissor",
+    "name": "X-Scissor",
+    "description": ""
+  },
+  {
+    "id": "405",
+    "slug": "bug-buzz",
+    "slugLoc": "bug-buzz",
+    "name": "Bug Buzz",
+    "description": "Has a 10% chance of lowering the target's Sp. Def stat by\n1 stage."
+  },
+  {
+    "id": "406",
+    "slug": "dragon-pulse",
+    "slugLoc": "dragon-pulse",
+    "name": "Dragon Pulse",
+    "description": ""
+  },
+  {
+    "id": "407",
+    "slug": "dragon-rush",
+    "slugLoc": "dragon-rush",
+    "name": "Dragon Rush",
+    "description": "Has a 20% chance of making the target flinch. If the target has\nthe Minimized status, this move's power is doubled and it will\nbe sure to hit."
+  },
+  {
+    "id": "408",
+    "slug": "power-gem",
+    "slugLoc": "power-gem",
+    "name": "Power Gem",
+    "description": ""
+  },
+  {
+    "id": "409",
+    "slug": "drain-punch",
+    "slugLoc": "drain-punch",
+    "name": "Drain Punch",
+    "description": "The user's HP is restored by 1/2 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "410",
+    "slug": "vacuum-wave",
+    "slugLoc": "vacuum-wave",
+    "name": "Vacuum Wave",
+    "description": ""
+  },
+  {
+    "id": "411",
+    "slug": "focus-blast",
+    "slugLoc": "focus-blast",
+    "name": "Focus Blast",
+    "description": "Has a 10% chance of lowering the target's Sp. Def stat by\n1 stage."
+  },
+  {
+    "id": "412",
+    "slug": "energy-ball",
+    "slugLoc": "energy-ball",
+    "name": "Energy Ball",
+    "description": "Has a 10% chance of lowering the target's Sp. Def stat by\n1 stage."
+  },
+  {
+    "id": "413",
+    "slug": "brave-bird",
+    "slugLoc": "brave-bird",
+    "name": "Brave Bird",
+    "description": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "id": "414",
+    "slug": "earth-power",
+    "slugLoc": "earth-power",
+    "name": "Earth Power",
+    "description": "Has a 10% chance of lowering the target's Sp. Def stat by\n1 stage."
+  },
+  {
+    "id": "415",
+    "slug": "switcheroo",
+    "slugLoc": "switcheroo",
+    "name": "Switcheroo",
+    "description": "The user and the target swap their held items."
+  },
+  {
+    "id": "416",
+    "slug": "giga-impact",
+    "slugLoc": "giga-impact",
+    "name": "Giga Impact",
+    "description": "The user gains the Recharging status on the turn after this move\nis used."
+  },
+  {
+    "id": "417",
+    "slug": "nasty-plot",
+    "slugLoc": "nasty-plot",
+    "name": "Nasty Plot",
+    "description": "Boosts the user's Sp. Atk stat by 2 stages."
+  },
+  {
+    "id": "418",
+    "slug": "bullet-punch",
+    "slugLoc": "bullet-punch",
+    "name": "Bullet Punch",
+    "description": ""
+  },
+  {
+    "id": "419",
+    "slug": "avalanche",
+    "slugLoc": "avalanche",
+    "name": "Avalanche",
+    "description": "This move's power is doubled if the target has already dealt\ndamage to the user with a move in the same turn."
+  },
+  {
+    "id": "420",
+    "slug": "ice-shard",
+    "slugLoc": "ice-shard",
+    "name": "Ice Shard",
+    "description": ""
+  },
+  {
+    "id": "421",
+    "slug": "shadow-claw",
+    "slugLoc": "shadow-claw",
+    "name": "Shadow Claw",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "422",
+    "slug": "thunder-fang",
+    "slugLoc": "thunder-fang",
+    "name": "Thunder Fang",
+    "description": "Has a 10% chance of paralyzing the target and a 10% chance\nof making the target flinch."
+  },
+  {
+    "id": "423",
+    "slug": "ice-fang",
+    "slugLoc": "ice-fang",
+    "name": "Ice Fang",
+    "description": "Has a 10% chance of freezing the target and a 10% chance of\nmaking the target flinch."
+  },
+  {
+    "id": "424",
+    "slug": "fire-fang",
+    "slugLoc": "fire-fang",
+    "name": "Fire Fang",
+    "description": "Has a 10% chance of burning the target and a 10% chance of\nmaking the target flinch."
+  },
+  {
+    "id": "425",
+    "slug": "shadow-sneak",
+    "slugLoc": "shadow-sneak",
+    "name": "Shadow Sneak",
+    "description": ""
+  },
+  {
+    "id": "426",
+    "slug": "mud-bomb",
+    "slugLoc": "mud-bomb",
+    "name": "Mud Bomb",
+    "description": ""
+  },
+  {
+    "id": "427",
+    "slug": "psycho-cut",
+    "slugLoc": "psycho-cut",
+    "name": "Psycho Cut",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "428",
+    "slug": "zen-headbutt",
+    "slugLoc": "zen-headbutt",
+    "name": "Zen Headbutt",
+    "description": "Has a 20% chance of making the target flinch."
+  },
+  {
+    "id": "429",
+    "slug": "mirror-shot",
+    "slugLoc": "mirror-shot",
+    "name": "Mirror Shot",
+    "description": ""
+  },
+  {
+    "id": "430",
+    "slug": "flash-cannon",
+    "slugLoc": "flash-cannon",
+    "name": "Flash Cannon",
+    "description": "Has a 10% chance of lowering the target's Sp. Def stat by\n1 stage."
+  },
+  {
+    "id": "431",
+    "slug": "rock-climb",
+    "slugLoc": "rock-climb",
+    "name": "Rock Climb",
+    "description": ""
+  },
+  {
+    "id": "432",
+    "slug": "defog",
+    "slugLoc": "defog",
+    "name": "Defog",
+    "description": "Lowers the target's evasiveness by 1 stage. Removes statuses\nsuch as Reflect, Spikes, and Safeguard, as well as any terrain."
+  },
+  {
+    "id": "433",
+    "slug": "trick-room",
+    "slugLoc": "trick-room",
+    "name": "Trick Room",
+    "description": "Gives the entire field the Trick Room status for 5 turns."
+  },
+  {
+    "id": "434",
+    "slug": "draco-meteor",
+    "slugLoc": "draco-meteor",
+    "name": "Draco Meteor",
+    "description": "Lowers the user's Sp. Atk stat by 2 stages."
+  },
+  {
+    "id": "435",
+    "slug": "discharge",
+    "slugLoc": "discharge",
+    "name": "Discharge",
+    "description": "Has a 30% chance of paralyzing targets."
+  },
+  {
+    "id": "436",
+    "slug": "lava-plume",
+    "slugLoc": "lava-plume",
+    "name": "Lava Plume",
+    "description": "Has a 30% chance of burning targets."
+  },
+  {
+    "id": "437",
+    "slug": "leaf-storm",
+    "slugLoc": "leaf-storm",
+    "name": "Leaf Storm",
+    "description": "Lowers the user's Sp. Atk stat by 2 stages."
+  },
+  {
+    "id": "438",
+    "slug": "power-whip",
+    "slugLoc": "power-whip",
+    "name": "Power Whip",
+    "description": ""
+  },
+  {
+    "id": "439",
+    "slug": "rock-wrecker",
+    "slugLoc": "rock-wrecker",
+    "name": "Rock Wrecker",
+    "description": "The user gains the Recharging status on the turn after this move\nis used."
+  },
+  {
+    "id": "440",
+    "slug": "cross-poison",
+    "slugLoc": "cross-poison",
+    "name": "Cross Poison",
+    "description": "Has a 10% chance of poisoning the target. This move has a\n1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "441",
+    "slug": "gunk-shot",
+    "slugLoc": "gunk-shot",
+    "name": "Gunk Shot",
+    "description": "Has a 30% chance of poisoning the target."
+  },
+  {
+    "id": "442",
+    "slug": "iron-head",
+    "slugLoc": "iron-head",
+    "name": "Iron Head",
+    "description": "Has a 20% chance of making the target flinch."
+  },
+  {
+    "id": "443",
+    "slug": "magnet-bomb",
+    "slugLoc": "magnet-bomb",
+    "name": "Magnet Bomb",
+    "description": ""
+  },
+  {
+    "id": "444",
+    "slug": "stone-edge",
+    "slugLoc": "stone-edge",
+    "name": "Stone Edge",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "445",
+    "slug": "captivate",
+    "slugLoc": "captivate",
+    "name": "Captivate",
+    "description": ""
+  },
+  {
+    "id": "446",
+    "slug": "stealth-rock",
+    "slugLoc": "stealth-rock",
+    "name": "Stealth Rock",
+    "description": "Gives the opponent's side the Stealth Rock status."
+  },
+  {
+    "id": "447",
+    "slug": "grass-knot",
+    "slugLoc": "grass-knot",
+    "name": "Grass Knot",
+    "description": "The heavier the target, the greater this move's power (ranging\nbetween 20 and 120)."
+  },
+  {
+    "id": "448",
+    "slug": "chatter",
+    "slugLoc": "chatter",
+    "name": "Chatter",
+    "description": ""
+  },
+  {
+    "id": "449",
+    "slug": "judgment",
+    "slugLoc": "judgment",
+    "name": "Judgment",
+    "description": ""
+  },
+  {
+    "id": "450",
+    "slug": "bug-bite",
+    "slugLoc": "bug-bite",
+    "name": "Bug Bite",
+    "description": "If the target is holding a Berry, the user eats that Berry and gains\nits effect."
+  },
+  {
+    "id": "451",
+    "slug": "charge-beam",
+    "slugLoc": "charge-beam",
+    "name": "Charge Beam",
+    "description": "Has a 70% chance of boosting the user's Sp. Atk stat by 1 stage."
+  },
+  {
+    "id": "452",
+    "slug": "wood-hammer",
+    "slugLoc": "wood-hammer",
+    "name": "Wood Hammer",
+    "description": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "id": "453",
+    "slug": "aqua-jet",
+    "slugLoc": "aqua-jet",
+    "name": "Aqua Jet",
+    "description": ""
+  },
+  {
+    "id": "454",
+    "slug": "attack-order",
+    "slugLoc": "attack-order",
+    "name": "Attack Order",
+    "description": ""
+  },
+  {
+    "id": "455",
+    "slug": "defend-order",
+    "slugLoc": "defend-order",
+    "name": "Defend Order",
+    "description": ""
+  },
+  {
+    "id": "456",
+    "slug": "heal-order",
+    "slugLoc": "heal-order",
+    "name": "Heal Order",
+    "description": ""
+  },
+  {
+    "id": "457",
+    "slug": "head-smash",
+    "slugLoc": "head-smash",
+    "name": "Head Smash",
+    "description": "The user takes 1/2 of the damage dealt by this move."
+  },
+  {
+    "id": "458",
+    "slug": "double-hit",
+    "slugLoc": "double-hit",
+    "name": "Double Hit",
+    "description": "The user attacks twice in a row."
+  },
+  {
+    "id": "459",
+    "slug": "roar-of-time",
+    "slugLoc": "roar-of-time",
+    "name": "Roar of Time",
+    "description": ""
+  },
+  {
+    "id": "460",
+    "slug": "spacial-rend",
+    "slugLoc": "spacial-rend",
+    "name": "Spacial Rend",
+    "description": ""
+  },
+  {
+    "id": "461",
+    "slug": "lunar-dance",
+    "slugLoc": "lunar-dance",
+    "name": "Lunar Dance",
+    "description": ""
+  },
+  {
+    "id": "462",
+    "slug": "crush-grip",
+    "slugLoc": "crush-grip",
+    "name": "Crush Grip",
+    "description": ""
+  },
+  {
+    "id": "463",
+    "slug": "magma-storm",
+    "slugLoc": "magma-storm",
+    "name": "Magma Storm",
+    "description": ""
+  },
+  {
+    "id": "464",
+    "slug": "dark-void",
+    "slugLoc": "dark-void",
+    "name": "Dark Void",
+    "description": ""
+  },
+  {
+    "id": "465",
+    "slug": "seed-flare",
+    "slugLoc": "seed-flare",
+    "name": "Seed Flare",
+    "description": ""
+  },
+  {
+    "id": "466",
+    "slug": "ominous-wind",
+    "slugLoc": "ominous-wind",
+    "name": "Ominous Wind",
+    "description": ""
+  },
+  {
+    "id": "467",
+    "slug": "shadow-force",
+    "slugLoc": "shadow-force",
+    "name": "Shadow Force",
+    "description": ""
+  },
+  {
+    "id": "468",
+    "slug": "hone-claws",
+    "slugLoc": "hone-claws",
+    "name": "Hone Claws",
+    "description": ""
+  },
+  {
+    "id": "469",
+    "slug": "wide-guard",
+    "slugLoc": "wide-guard",
+    "name": "Wide Guard",
+    "description": "During the turn this move is used, the user protects its side from\nmoves that target all allies."
+  },
+  {
+    "id": "470",
+    "slug": "guard-split",
+    "slugLoc": "guard-split",
+    "name": "Guard Split",
+    "description": "The user adds its Defense stat to the target's Defense stat, then\nsplits the total in half for them to share. It does the same with\neach of their Sp. Def stats."
+  },
+  {
+    "id": "471",
+    "slug": "power-split",
+    "slugLoc": "power-split",
+    "name": "Power Split",
+    "description": "The user adds its Attack stat to the target's Attack stat, then\nsplits the total in half for them to share. It does the same with\neach of their Sp. Atk stats."
+  },
+  {
+    "id": "472",
+    "slug": "wonder-room",
+    "slugLoc": "wonder-room",
+    "name": "Wonder Room",
+    "description": "Gives the entire field the Wonder Room status for 5 turns."
+  },
+  {
+    "id": "473",
+    "slug": "psyshock",
+    "slugLoc": "psyshock",
+    "name": "Psyshock",
+    "description": "This is a special move, but the damage it deals is calculated\nusing the target's Defense stat."
+  },
+  {
+    "id": "474",
+    "slug": "venoshock",
+    "slugLoc": "venoshock",
+    "name": "Venoshock",
+    "description": "This move's power is doubled if the target is poisoned or\nbadly poisoned."
+  },
+  {
+    "id": "475",
+    "slug": "autotomize",
+    "slugLoc": "autotomize",
+    "name": "Autotomize",
+    "description": ""
+  },
+  {
+    "id": "476",
+    "slug": "rage-powder",
+    "slugLoc": "rage-powder",
+    "name": "Rage Powder",
+    "description": "The user redirects opponents' moves toward itself. This effect\nworks only on single-target moves."
+  },
+  {
+    "id": "477",
+    "slug": "telekinesis",
+    "slugLoc": "telekinesis",
+    "name": "Telekinesis",
+    "description": ""
+  },
+  {
+    "id": "478",
+    "slug": "magic-room",
+    "slugLoc": "magic-room",
+    "name": "Magic Room",
+    "description": "Gives the entire field the Magic Room status for 5 turns."
+  },
+  {
+    "id": "479",
+    "slug": "smack-down",
+    "slugLoc": "smack-down",
+    "name": "Smack Down",
+    "description": "If the target is off the ground, it gains the Landed status. This\nmove can hit a target that has the Sky-High status."
+  },
+  {
+    "id": "480",
+    "slug": "storm-throw",
+    "slugLoc": "storm-throw",
+    "name": "Storm Throw",
+    "description": "Always a critical hit."
+  },
+  {
+    "id": "481",
+    "slug": "flame-burst",
+    "slugLoc": "flame-burst",
+    "name": "Flame Burst",
+    "description": ""
+  },
+  {
+    "id": "482",
+    "slug": "sludge-wave",
+    "slugLoc": "sludge-wave",
+    "name": "Sludge Wave",
+    "description": "Has a 10% chance of poisoning targets."
+  },
+  {
+    "id": "483",
+    "slug": "quiver-dance",
+    "slugLoc": "quiver-dance",
+    "name": "Quiver Dance",
+    "description": "Boosts the user's Sp. Atk, Sp. Def, and Speed stats by 1 stage."
+  },
+  {
+    "id": "484",
+    "slug": "heavy-slam",
+    "slugLoc": "heavy-slam",
+    "name": "Heavy Slam",
+    "description": "The more the user outweighs the target, the greater this move's\npower (ranging between 40 and 120). If the target has the\nMinimized status, this move's power is doubled and it will be\nsure to hit."
+  },
+  {
+    "id": "485",
+    "slug": "synchronoise",
+    "slugLoc": "synchronoise",
+    "name": "Synchronoise",
+    "description": ""
+  },
+  {
+    "id": "486",
+    "slug": "electro-ball",
+    "slugLoc": "electro-ball",
+    "name": "Electro Ball",
+    "description": "The higher the user's Speed stat compared to the target's, the\ngreater this move's power (ranging between 40 and 150)."
+  },
+  {
+    "id": "487",
+    "slug": "soak",
+    "slugLoc": "soak",
+    "name": "Soak",
+    "description": "Changes the target's type to Water."
+  },
+  {
+    "id": "488",
+    "slug": "flame-charge",
+    "slugLoc": "flame-charge",
+    "name": "Flame Charge",
+    "description": "Boosts the user's Speed stat by 1 stage."
+  },
+  {
+    "id": "489",
+    "slug": "coil",
+    "slugLoc": "coil",
+    "name": "Coil",
+    "description": "Boosts the user's Attack and Defense stats as well as its\naccuracy by 1 stage."
+  },
+  {
+    "id": "490",
+    "slug": "low-sweep",
+    "slugLoc": "low-sweep",
+    "name": "Low Sweep",
+    "description": "Lowers the target's Speed stat by 1 stage."
+  },
+  {
+    "id": "491",
+    "slug": "acid-spray",
+    "slugLoc": "acid-spray",
+    "name": "Acid Spray",
+    "description": "Lowers the target's Sp. Def stat by 2 stages."
+  },
+  {
+    "id": "492",
+    "slug": "foul-play",
+    "slugLoc": "foul-play",
+    "name": "Foul Play",
+    "description": "The damage dealt by this move is calculated using the target's\nAttack stat instead of the user's Attack stat."
+  },
+  {
+    "id": "493",
+    "slug": "simple-beam",
+    "slugLoc": "simple-beam",
+    "name": "Simple Beam",
+    "description": "Changes the target's Ability to Simple."
+  },
+  {
+    "id": "494",
+    "slug": "entrainment",
+    "slugLoc": "entrainment",
+    "name": "Entrainment",
+    "description": "Changes the target's Ability to be the same as the user's."
+  },
+  {
+    "id": "495",
+    "slug": "after-you",
+    "slugLoc": "after-you",
+    "name": "After You",
+    "description": "Makes the target move immediately after the user."
+  },
+  {
+    "id": "496",
+    "slug": "round",
+    "slugLoc": "round",
+    "name": "Round",
+    "description": "If multiple Pokémon use this move in the same turn, the second\nuser onward will act immediately after the first, and the power\nof the second Round onward will be doubled."
+  },
+  {
+    "id": "497",
+    "slug": "echoed-voice",
+    "slugLoc": "echoed-voice",
+    "name": "Echoed Voice",
+    "description": ""
+  },
+  {
+    "id": "498",
+    "slug": "chip-away",
+    "slugLoc": "chip-away",
+    "name": "Chip Away",
+    "description": ""
+  },
+  {
+    "id": "499",
+    "slug": "clear-smog",
+    "slugLoc": "clear-smog",
+    "name": "Clear Smog",
+    "description": "Removes all stat changes from the target. This move never\nmisses."
+  },
+  {
+    "id": "500",
+    "slug": "stored-power",
+    "slugLoc": "stored-power",
+    "name": "Stored Power",
+    "description": "This move's power is increased by 20 for each stage that the\nuser's stats have been boosted."
+  },
+  {
+    "id": "501",
+    "slug": "quick-guard",
+    "slugLoc": "quick-guard",
+    "name": "Quick Guard",
+    "description": "The user protects itself and its allies from priority moves for\nthe turn."
+  },
+  {
+    "id": "502",
+    "slug": "ally-switch",
+    "slugLoc": "ally-switch",
+    "name": "Ally Switch",
+    "description": "The user switches spots with one of its allies. With each\nconsecutive use, this move's chance of success becomes 1/3 of\nwhat it was before."
+  },
+  {
+    "id": "503",
+    "slug": "scald",
+    "slugLoc": "scald",
+    "name": "Scald",
+    "description": "Has a 30% chance of burning the target. Cures the user and\ntarget of being frozen."
+  },
+  {
+    "id": "504",
+    "slug": "shell-smash",
+    "slugLoc": "shell-smash",
+    "name": "Shell Smash",
+    "description": "Lowers the user's Defense and Sp. Def stats by 1 stage and\nboosts its Attack, Sp. Atk, and Speed stats by 2 stages."
+  },
+  {
+    "id": "505",
+    "slug": "heal-pulse",
+    "slugLoc": "heal-pulse",
+    "name": "Heal Pulse",
+    "description": "Restores 1/2 of the target's max HP."
+  },
+  {
+    "id": "506",
+    "slug": "hex",
+    "slugLoc": "hex",
+    "name": "Hex",
+    "description": "This move's power is doubled if the target has a\nstatus condition."
+  },
+  {
+    "id": "507",
+    "slug": "sky-drop",
+    "slugLoc": "sky-drop",
+    "name": "Sky Drop",
+    "description": ""
+  },
+  {
+    "id": "508",
+    "slug": "shift-gear",
+    "slugLoc": "shift-gear",
+    "name": "Shift Gear",
+    "description": ""
+  },
+  {
+    "id": "509",
+    "slug": "circle-throw",
+    "slugLoc": "circle-throw",
+    "name": "Circle Throw",
+    "description": "If there are other Pokémon in the target's party that can switch\ninto battle, the target is forced to switch out of battle and is\nreplaced by one of those Pokémon at random."
+  },
+  {
+    "id": "510",
+    "slug": "incinerate",
+    "slugLoc": "incinerate",
+    "name": "Incinerate",
+    "description": ""
+  },
+  {
+    "id": "511",
+    "slug": "quash",
+    "slugLoc": "quash",
+    "name": "Quash",
+    "description": "Causes the target to move last in the turn."
+  },
+  {
+    "id": "512",
+    "slug": "acrobatics",
+    "slugLoc": "acrobatics",
+    "name": "Acrobatics",
+    "description": "This move's power is doubled if the user isn't holding an item."
+  },
+  {
+    "id": "513",
+    "slug": "reflect-type",
+    "slugLoc": "reflect-type",
+    "name": "Reflect Type",
+    "description": "The user becomes the same type or types as the target."
+  },
+  {
+    "id": "514",
+    "slug": "retaliate",
+    "slugLoc": "retaliate",
+    "name": "Retaliate",
+    "description": ""
+  },
+  {
+    "id": "515",
+    "slug": "final-gambit",
+    "slugLoc": "final-gambit",
+    "name": "Final Gambit",
+    "description": "The user faints. This move deals damage to the target equal to\nthe user's remaining HP at the time this move was used."
+  },
+  {
+    "id": "516",
+    "slug": "bestow",
+    "slugLoc": "bestow",
+    "name": "Bestow",
+    "description": ""
+  },
+  {
+    "id": "517",
+    "slug": "inferno",
+    "slugLoc": "inferno",
+    "name": "Inferno",
+    "description": "Burns the target."
+  },
+  {
+    "id": "518",
+    "slug": "water-pledge",
+    "slugLoc": "water-pledge",
+    "name": "Water Pledge",
+    "description": ""
+  },
+  {
+    "id": "519",
+    "slug": "fire-pledge",
+    "slugLoc": "fire-pledge",
+    "name": "Fire Pledge",
+    "description": ""
+  },
+  {
+    "id": "520",
+    "slug": "grass-pledge",
+    "slugLoc": "grass-pledge",
+    "name": "Grass Pledge",
+    "description": ""
+  },
+  {
+    "id": "521",
+    "slug": "volt-switch",
+    "slugLoc": "volt-switch",
+    "name": "Volt Switch",
+    "description": "After attacking, the user switches out of battle to be replaced\nby another party Pokémon."
+  },
+  {
+    "id": "522",
+    "slug": "struggle-bug",
+    "slugLoc": "struggle-bug",
+    "name": "Struggle Bug",
+    "description": "Lowers targets' Sp. Atk stats by 1 stage."
+  },
+  {
+    "id": "523",
+    "slug": "bulldoze",
+    "slugLoc": "bulldoze",
+    "name": "Bulldoze",
+    "description": "Lowers targets' Speed stats by 1 stage. When Grassy Terrain\nis active, this move's power is halved."
+  },
+  {
+    "id": "524",
+    "slug": "frost-breath",
+    "slugLoc": "frost-breath",
+    "name": "Frost Breath",
+    "description": "Always a critical hit."
+  },
+  {
+    "id": "525",
+    "slug": "dragon-tail",
+    "slugLoc": "dragon-tail",
+    "name": "Dragon Tail",
+    "description": "If there are other Pokémon in the target's party that can switch\ninto battle, the target is forced to switch out of battle and is\nreplaced by one of those Pokémon at random."
+  },
+  {
+    "id": "526",
+    "slug": "work-up",
+    "slugLoc": "work-up",
+    "name": "Work Up",
+    "description": ""
+  },
+  {
+    "id": "527",
+    "slug": "electroweb",
+    "slugLoc": "electroweb",
+    "name": "Electroweb",
+    "description": "Lowers targets' Speed stats by 1 stage."
+  },
+  {
+    "id": "528",
+    "slug": "wild-charge",
+    "slugLoc": "wild-charge",
+    "name": "Wild Charge",
+    "description": "The user takes 1/4 of the damage dealt by this move."
+  },
+  {
+    "id": "529",
+    "slug": "drill-run",
+    "slugLoc": "drill-run",
+    "name": "Drill Run",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "530",
+    "slug": "dual-chop",
+    "slugLoc": "dual-chop",
+    "name": "Dual Chop",
+    "description": ""
+  },
+  {
+    "id": "531",
+    "slug": "heart-stamp",
+    "slugLoc": "heart-stamp",
+    "name": "Heart Stamp",
+    "description": ""
+  },
+  {
+    "id": "532",
+    "slug": "horn-leech",
+    "slugLoc": "horn-leech",
+    "name": "Horn Leech",
+    "description": "The user's HP is restored by 1/2 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "533",
+    "slug": "sacred-sword",
+    "slugLoc": "sacred-sword",
+    "name": "Sacred Sword",
+    "description": "This move ignores the target's stat changes when dealing\ndamage."
+  },
+  {
+    "id": "534",
+    "slug": "razor-shell",
+    "slugLoc": "razor-shell",
+    "name": "Razor Shell",
+    "description": "Has a 50% chance of lowering the target's Defense stat by\n1 stage."
+  },
+  {
+    "id": "535",
+    "slug": "heat-crash",
+    "slugLoc": "heat-crash",
+    "name": "Heat Crash",
+    "description": "The more the user outweighs the target, the greater this move's\npower (ranging between 40 and 120). If the target has the\nMinimized status, this move's power is doubled and it will be\nsure to hit."
+  },
+  {
+    "id": "536",
+    "slug": "leaf-tornado",
+    "slugLoc": "leaf-tornado",
+    "name": "Leaf Tornado",
+    "description": ""
+  },
+  {
+    "id": "537",
+    "slug": "steamroller",
+    "slugLoc": "steamroller",
+    "name": "Steamroller",
+    "description": ""
+  },
+  {
+    "id": "538",
+    "slug": "cotton-guard",
+    "slugLoc": "cotton-guard",
+    "name": "Cotton Guard",
+    "description": "Boosts the user's Defense stat by 3 stages."
+  },
+  {
+    "id": "539",
+    "slug": "night-daze",
+    "slugLoc": "night-daze",
+    "name": "Night Daze",
+    "description": "Has a 40% chance of lowering the target's accuracy by 1 stage."
+  },
+  {
+    "id": "540",
+    "slug": "psystrike",
+    "slugLoc": "psystrike",
+    "name": "Psystrike",
+    "description": ""
+  },
+  {
+    "id": "541",
+    "slug": "tail-slap",
+    "slugLoc": "tail-slap",
+    "name": "Tail Slap",
+    "description": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "id": "542",
+    "slug": "hurricane",
+    "slugLoc": "hurricane",
+    "name": "Hurricane",
+    "description": "Has a 30% chance of confusing the target. This move never\nmisses in rain and can hit a target that has the Sky-High status."
+  },
+  {
+    "id": "543",
+    "slug": "head-charge",
+    "slugLoc": "head-charge",
+    "name": "Head Charge",
+    "description": ""
+  },
+  {
+    "id": "544",
+    "slug": "gear-grind",
+    "slugLoc": "gear-grind",
+    "name": "Gear Grind",
+    "description": ""
+  },
+  {
+    "id": "545",
+    "slug": "searing-shot",
+    "slugLoc": "searing-shot",
+    "name": "Searing Shot",
+    "description": ""
+  },
+  {
+    "id": "546",
+    "slug": "techno-blast",
+    "slugLoc": "techno-blast",
+    "name": "Techno Blast",
+    "description": ""
+  },
+  {
+    "id": "547",
+    "slug": "relic-song",
+    "slugLoc": "relic-song",
+    "name": "Relic Song",
+    "description": ""
+  },
+  {
+    "id": "548",
+    "slug": "secret-sword",
+    "slugLoc": "secret-sword",
+    "name": "Secret Sword",
+    "description": ""
+  },
+  {
+    "id": "549",
+    "slug": "glaciate",
+    "slugLoc": "glaciate",
+    "name": "Glaciate",
+    "description": ""
+  },
+  {
+    "id": "550",
+    "slug": "bolt-strike",
+    "slugLoc": "bolt-strike",
+    "name": "Bolt Strike",
+    "description": ""
+  },
+  {
+    "id": "551",
+    "slug": "blue-flare",
+    "slugLoc": "blue-flare",
+    "name": "Blue Flare",
+    "description": ""
+  },
+  {
+    "id": "552",
+    "slug": "fiery-dance",
+    "slugLoc": "fiery-dance",
+    "name": "Fiery Dance",
+    "description": "Has a 50% chance of boosting the user's Sp. Atk stat by 1 stage."
+  },
+  {
+    "id": "553",
+    "slug": "freeze-shock",
+    "slugLoc": "freeze-shock",
+    "name": "Freeze Shock",
+    "description": ""
+  },
+  {
+    "id": "554",
+    "slug": "ice-burn",
+    "slugLoc": "ice-burn",
+    "name": "Ice Burn",
+    "description": ""
+  },
+  {
+    "id": "555",
+    "slug": "snarl",
+    "slugLoc": "snarl",
+    "name": "Snarl",
+    "description": "Lowers targets' Sp. Atk stats by 1 stage."
+  },
+  {
+    "id": "556",
+    "slug": "icicle-crash",
+    "slugLoc": "icicle-crash",
+    "name": "Icicle Crash",
+    "description": "Has a 30% chance of making the target flinch."
+  },
+  {
+    "id": "557",
+    "slug": "v-create",
+    "slugLoc": "v-create",
+    "name": "V-create",
+    "description": ""
+  },
+  {
+    "id": "558",
+    "slug": "fusion-flare",
+    "slugLoc": "fusion-flare",
+    "name": "Fusion Flare",
+    "description": ""
+  },
+  {
+    "id": "559",
+    "slug": "fusion-bolt",
+    "slugLoc": "fusion-bolt",
+    "name": "Fusion Bolt",
+    "description": ""
+  },
+  {
+    "id": "560",
+    "slug": "flying-press",
+    "slugLoc": "flying-press",
+    "name": "Flying Press",
+    "description": "The damage dealt by this move is calculated by combining the\neffectiveness of the move's own type with that of the Flying\ntype. If the target has the Minimized status, this move's power\nis doubled and it will be sure to hit."
+  },
+  {
+    "id": "561",
+    "slug": "mat-block",
+    "slugLoc": "mat-block",
+    "name": "Mat Block",
+    "description": ""
+  },
+  {
+    "id": "562",
+    "slug": "belch",
+    "slugLoc": "belch",
+    "name": "Belch",
+    "description": "This move fails unless the user has eaten a Berry during\nthe battle."
+  },
+  {
+    "id": "563",
+    "slug": "rototiller",
+    "slugLoc": "rototiller",
+    "name": "Rototiller",
+    "description": ""
+  },
+  {
+    "id": "564",
+    "slug": "sticky-web",
+    "slugLoc": "sticky-web",
+    "name": "Sticky Web",
+    "description": "Gives the opponent's side the Sticky Web status."
+  },
+  {
+    "id": "565",
+    "slug": "fell-stinger",
+    "slugLoc": "fell-stinger",
+    "name": "Fell Stinger",
+    "description": "Boosts the user's Attack stat by 3 stages if this move knocks\nout the target."
+  },
+  {
+    "id": "566",
+    "slug": "phantom-force",
+    "slugLoc": "phantom-force",
+    "name": "Phantom Force",
+    "description": "The user gains the Concealed status on the turn this move is\nused, then attacks on the following turn. This move can hit a\ntarget using a move such as Protect or Detect and removes\nthe effects of those moves."
+  },
+  {
+    "id": "567",
+    "slug": "trick-or-treat",
+    "slugLoc": "trick-or-treat",
+    "name": "Trick-or-Treat",
+    "description": "Gives the target the Trick-or-Treating status."
+  },
+  {
+    "id": "568",
+    "slug": "noble-roar",
+    "slugLoc": "noble-roar",
+    "name": "Noble Roar",
+    "description": "Lowers the target's Attack and Sp. Atk stats by 1 stage."
+  },
+  {
+    "id": "569",
+    "slug": "ion-deluge",
+    "slugLoc": "ion-deluge",
+    "name": "Ion Deluge",
+    "description": ""
+  },
+  {
+    "id": "570",
+    "slug": "parabolic-charge",
+    "slugLoc": "parabolic-charge",
+    "name": "Parabolic Charge",
+    "description": "The user's HP is restored by 1/2 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "571",
+    "slug": "forests-curse",
+    "slugLoc": "forest-s-curse",
+    "name": "Forest's Curse",
+    "description": "Gives the target the Forest Cursed status."
+  },
+  {
+    "id": "572",
+    "slug": "petal-blizzard",
+    "slugLoc": "petal-blizzard",
+    "name": "Petal Blizzard",
+    "description": ""
+  },
+  {
+    "id": "573",
+    "slug": "freeze-dry",
+    "slugLoc": "freeze-dry",
+    "name": "Freeze-Dry",
+    "description": "This move is also super effective against Water-type Pokémon."
+  },
+  {
+    "id": "574",
+    "slug": "disarming-voice",
+    "slugLoc": "disarming-voice",
+    "name": "Disarming Voice",
+    "description": ""
+  },
+  {
+    "id": "575",
+    "slug": "parting-shot",
+    "slugLoc": "parting-shot",
+    "name": "Parting Shot",
+    "description": "Lowers the target's Attack and Sp. Atk stats by 1 stage. The\nuser then switches out of battle to be replaced by another\nparty Pokémon."
+  },
+  {
+    "id": "576",
+    "slug": "topsy-turvy",
+    "slugLoc": "topsy-turvy",
+    "name": "Topsy-Turvy",
+    "description": ""
+  },
+  {
+    "id": "577",
+    "slug": "draining-kiss",
+    "slugLoc": "draining-kiss",
+    "name": "Draining Kiss",
+    "description": "The user's HP is restored by 3/4 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "578",
+    "slug": "crafty-shield",
+    "slugLoc": "crafty-shield",
+    "name": "Crafty Shield",
+    "description": ""
+  },
+  {
+    "id": "579",
+    "slug": "flower-shield",
+    "slugLoc": "flower-shield",
+    "name": "Flower Shield",
+    "description": ""
+  },
+  {
+    "id": "580",
+    "slug": "grassy-terrain",
+    "slugLoc": "grassy-terrain",
+    "name": "Grassy Terrain",
+    "description": "Turns the entire field into Grassy Terrain for 5 turns."
+  },
+  {
+    "id": "581",
+    "slug": "misty-terrain",
+    "slugLoc": "misty-terrain",
+    "name": "Misty Terrain",
+    "description": "Turns the entire field into Misty Terrain for 5 turns."
+  },
+  {
+    "id": "582",
+    "slug": "electrify",
+    "slugLoc": "electrify",
+    "name": "Electrify",
+    "description": "If this move hits the target before it uses a move, its move\nbecomes Electric type for that turn."
+  },
+  {
+    "id": "583",
+    "slug": "play-rough",
+    "slugLoc": "play-rough",
+    "name": "Play Rough",
+    "description": "Has a 10% chance of lowering the target's Attack stat by\n1 stage."
+  },
+  {
+    "id": "584",
+    "slug": "fairy-wind",
+    "slugLoc": "fairy-wind",
+    "name": "Fairy Wind",
+    "description": ""
+  },
+  {
+    "id": "585",
+    "slug": "moonblast",
+    "slugLoc": "moonblast",
+    "name": "Moonblast",
+    "description": "Has a 10% chance of lowering the target's Sp. Atk stat by\n1 stage."
+  },
+  {
+    "id": "586",
+    "slug": "boomburst",
+    "slugLoc": "boomburst",
+    "name": "Boomburst",
+    "description": ""
+  },
+  {
+    "id": "587",
+    "slug": "fairy-lock",
+    "slugLoc": "fairy-lock",
+    "name": "Fairy Lock",
+    "description": "Gives all Pokémon on the field the Fairy Locked status."
+  },
+  {
+    "id": "588",
+    "slug": "kings-shield",
+    "slugLoc": "king-s-shield",
+    "name": "King's Shield",
+    "description": "The user protects itself from incoming attacks for the turn and\nchanges into its Shield Forme. Any attackers that use contact\nmoves against the user during this turn will have their Attack\nstats lowered by 1 stage. With each consecutive use, this move's\nchance of success becomes 1/3 of what it was before."
+  },
+  {
+    "id": "589",
+    "slug": "play-nice",
+    "slugLoc": "play-nice",
+    "name": "Play Nice",
+    "description": ""
+  },
+  {
+    "id": "590",
+    "slug": "confide",
+    "slugLoc": "confide",
+    "name": "Confide",
+    "description": ""
+  },
+  {
+    "id": "591",
+    "slug": "diamond-storm",
+    "slugLoc": "diamond-storm",
+    "name": "Diamond Storm",
+    "description": ""
+  },
+  {
+    "id": "592",
+    "slug": "steam-eruption",
+    "slugLoc": "steam-eruption",
+    "name": "Steam Eruption",
+    "description": ""
+  },
+  {
+    "id": "593",
+    "slug": "hyperspace-hole",
+    "slugLoc": "hyperspace-hole",
+    "name": "Hyperspace Hole",
+    "description": ""
+  },
+  {
+    "id": "594",
+    "slug": "water-shuriken",
+    "slugLoc": "water-shuriken",
+    "name": "Water Shuriken",
+    "description": "The user attacks 2 to 5 times in a row."
+  },
+  {
+    "id": "595",
+    "slug": "mystical-fire",
+    "slugLoc": "mystical-fire",
+    "name": "Mystical Fire",
+    "description": "Lowers the target's Sp. Atk stat by 1 stage."
+  },
+  {
+    "id": "596",
+    "slug": "spiky-shield",
+    "slugLoc": "spiky-shield",
+    "name": "Spiky Shield",
+    "description": "The user protects itself from incoming moves for the turn. Any\nattackers that use contact moves against the user during this\nturn take damage equal to 1/8 of their max HP. With each\nconsecutive use, this move's chance of success becomes 1/3\nof what it was before."
+  },
+  {
+    "id": "597",
+    "slug": "aromatic-mist",
+    "slugLoc": "aromatic-mist",
+    "name": "Aromatic Mist",
+    "description": "Boosts an ally's Sp. Def stat by 1 stage."
+  },
+  {
+    "id": "598",
+    "slug": "eerie-impulse",
+    "slugLoc": "eerie-impulse",
+    "name": "Eerie Impulse",
+    "description": "Lowers the target's Sp. Atk stat by 2 stages."
+  },
+  {
+    "id": "599",
+    "slug": "venom-drench",
+    "slugLoc": "venom-drench",
+    "name": "Venom Drench",
+    "description": ""
+  },
+  {
+    "id": "600",
+    "slug": "powder",
+    "slugLoc": "powder",
+    "name": "Powder",
+    "description": ""
+  },
+  {
+    "id": "601",
+    "slug": "geomancy",
+    "slugLoc": "geomancy",
+    "name": "Geomancy",
+    "description": ""
+  },
+  {
+    "id": "602",
+    "slug": "magnetic-flux",
+    "slugLoc": "magnetic-flux",
+    "name": "Magnetic Flux",
+    "description": "If the user or its allies have the Plus Ability or the Minus Ability,\ntheir Defense and Sp. Def stats are boosted by 1 stage."
+  },
+  {
+    "id": "603",
+    "slug": "happy-hour",
+    "slugLoc": "happy-hour",
+    "name": "Happy Hour",
+    "description": ""
+  },
+  {
+    "id": "604",
+    "slug": "electric-terrain",
+    "slugLoc": "electric-terrain",
+    "name": "Electric Terrain",
+    "description": "Turns the entire field into Electric Terrain for 5 turns."
+  },
+  {
+    "id": "605",
+    "slug": "dazzling-gleam",
+    "slugLoc": "dazzling-gleam",
+    "name": "Dazzling Gleam",
+    "description": ""
+  },
+  {
+    "id": "606",
+    "slug": "celebrate",
+    "slugLoc": "celebrate",
+    "name": "Celebrate",
+    "description": ""
+  },
+  {
+    "id": "607",
+    "slug": "hold-hands",
+    "slugLoc": "hold-hands",
+    "name": "Hold Hands",
+    "description": ""
+  },
+  {
+    "id": "608",
+    "slug": "baby-doll-eyes",
+    "slugLoc": "baby-doll-eyes",
+    "name": "Baby-Doll Eyes",
+    "description": "Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "id": "609",
+    "slug": "nuzzle",
+    "slugLoc": "nuzzle",
+    "name": "Nuzzle",
+    "description": "Paralyzes the target."
+  },
+  {
+    "id": "610",
+    "slug": "hold-back",
+    "slugLoc": "hold-back",
+    "name": "Hold Back",
+    "description": ""
+  },
+  {
+    "id": "611",
+    "slug": "infestation",
+    "slugLoc": "infestation",
+    "name": "Infestation",
+    "description": "Gives the target the Bound status."
+  },
+  {
+    "id": "612",
+    "slug": "power-up-punch",
+    "slugLoc": "power-up-punch",
+    "name": "Power-Up Punch",
+    "description": ""
+  },
+  {
+    "id": "613",
+    "slug": "oblivion-wing",
+    "slugLoc": "oblivion-wing",
+    "name": "Oblivion Wing",
+    "description": ""
+  },
+  {
+    "id": "614",
+    "slug": "thousand-arrows",
+    "slugLoc": "thousand-arrows",
+    "name": "Thousand Arrows",
+    "description": ""
+  },
+  {
+    "id": "615",
+    "slug": "thousand-waves",
+    "slugLoc": "thousand-waves",
+    "name": "Thousand Waves",
+    "description": ""
+  },
+  {
+    "id": "616",
+    "slug": "lands-wrath",
+    "slugLoc": "land-s-wrath",
+    "name": "Land's Wrath",
+    "description": ""
+  },
+  {
+    "id": "617",
+    "slug": "light-of-ruin",
+    "slugLoc": "light-of-ruin",
+    "name": "Light of Ruin",
+    "description": "The user takes 1/2 of the damage dealt by this move."
+  },
+  {
+    "id": "618",
+    "slug": "origin-pulse",
+    "slugLoc": "origin-pulse",
+    "name": "Origin Pulse",
+    "description": ""
+  },
+  {
+    "id": "619",
+    "slug": "precipice-blades",
+    "slugLoc": "precipice-blades",
+    "name": "Precipice Blades",
+    "description": ""
+  },
+  {
+    "id": "620",
+    "slug": "dragon-ascent",
+    "slugLoc": "dragon-ascent",
+    "name": "Dragon Ascent",
+    "description": ""
+  },
+  {
+    "id": "621",
+    "slug": "hyperspace-fury",
+    "slugLoc": "hyperspace-fury",
+    "name": "Hyperspace Fury",
+    "description": ""
+  },
+  {
+    "id": "659",
+    "slug": "shore-up",
+    "slugLoc": "shore-up",
+    "name": "Shore Up",
+    "description": ""
+  },
+  {
+    "id": "660",
+    "slug": "first-impression",
+    "slugLoc": "first-impression",
+    "name": "First Impression",
+    "description": "This move fails unless it is the first move used by the user after\nit enters a battle."
+  },
+  {
+    "id": "661",
+    "slug": "baneful-bunker",
+    "slugLoc": "baneful-bunker",
+    "name": "Baneful Bunker",
+    "description": "The user protects itself from incoming moves for the turn. Any\nattackers that use contact moves against the user during this\nturn become poisoned. With each consecutive use, this move's\nchance of success becomes 1/3 of what it was before."
+  },
+  {
+    "id": "662",
+    "slug": "spirit-shackle",
+    "slugLoc": "spirit-shackle",
+    "name": "Spirit Shackle",
+    "description": "Gives the target the Can't Escape status."
+  },
+  {
+    "id": "663",
+    "slug": "darkest-lariat",
+    "slugLoc": "darkest-lariat",
+    "name": "Darkest Lariat",
+    "description": "This move ignores the target's stat changes when dealing\ndamage."
+  },
+  {
+    "id": "664",
+    "slug": "sparkling-aria",
+    "slugLoc": "sparkling-aria",
+    "name": "Sparkling Aria",
+    "description": "Cures targets of their burns."
+  },
+  {
+    "id": "665",
+    "slug": "ice-hammer",
+    "slugLoc": "ice-hammer",
+    "name": "Ice Hammer",
+    "description": "Lowers the user's Speed stat by 1 stage."
+  },
+  {
+    "id": "666",
+    "slug": "floral-healing",
+    "slugLoc": "floral-healing",
+    "name": "Floral Healing",
+    "description": ""
+  },
+  {
+    "id": "667",
+    "slug": "high-horsepower",
+    "slugLoc": "high-horsepower",
+    "name": "High Horsepower",
+    "description": ""
+  },
+  {
+    "id": "668",
+    "slug": "strength-sap",
+    "slugLoc": "strength-sap",
+    "name": "Strength Sap",
+    "description": "Restores the user's HP by an amount equal to the target's\nAttack stat. Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "id": "669",
+    "slug": "solar-blade",
+    "slugLoc": "solar-blade",
+    "name": "Solar Blade",
+    "description": "The user gains the Charging status on the turn this move is used,\nthen attacks on the following turn. In harsh sunlight, the user\ndoes not gain the Charging status and can attack immediately.\nThis move's power is halved in any other weather condition."
+  },
+  {
+    "id": "670",
+    "slug": "leafage",
+    "slugLoc": "leafage",
+    "name": "Leafage",
+    "description": ""
+  },
+  {
+    "id": "671",
+    "slug": "spotlight",
+    "slugLoc": "spotlight",
+    "name": "Spotlight",
+    "description": ""
+  },
+  {
+    "id": "672",
+    "slug": "toxic-thread",
+    "slugLoc": "toxic-thread",
+    "name": "Toxic Thread",
+    "description": "Lowers the target's Speed stat by 2 stages and poisons it."
+  },
+  {
+    "id": "673",
+    "slug": "laser-focus",
+    "slugLoc": "laser-focus",
+    "name": "Laser Focus",
+    "description": ""
+  },
+  {
+    "id": "674",
+    "slug": "gear-up",
+    "slugLoc": "gear-up",
+    "name": "Gear Up",
+    "description": ""
+  },
+  {
+    "id": "675",
+    "slug": "throat-chop",
+    "slugLoc": "throat-chop",
+    "name": "Throat Chop",
+    "description": "Gives the target the Throat Chopped status."
+  },
+  {
+    "id": "676",
+    "slug": "pollen-puff",
+    "slugLoc": "pollen-puff",
+    "name": "Pollen Puff",
+    "description": "When used on an ally, this move restores 1/2 of its max HP\ninstead of dealing damage."
+  },
+  {
+    "id": "677",
+    "slug": "anchor-shot",
+    "slugLoc": "anchor-shot",
+    "name": "Anchor Shot",
+    "description": ""
+  },
+  {
+    "id": "678",
+    "slug": "psychic-terrain",
+    "slugLoc": "psychic-terrain",
+    "name": "Psychic Terrain",
+    "description": "Turns the entire field into Psychic Terrain for 5 turns."
+  },
+  {
+    "id": "679",
+    "slug": "lunge",
+    "slugLoc": "lunge",
+    "name": "Lunge",
+    "description": "Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "id": "680",
+    "slug": "fire-lash",
+    "slugLoc": "fire-lash",
+    "name": "Fire Lash",
+    "description": "Lowers the target's Defense stat by 1 stage."
+  },
+  {
+    "id": "681",
+    "slug": "power-trip",
+    "slugLoc": "power-trip",
+    "name": "Power Trip",
+    "description": "This move's power is increased by 20 for each stage that the\nuser's stats have been boosted."
+  },
+  {
+    "id": "682",
+    "slug": "burn-up",
+    "slugLoc": "burn-up",
+    "name": "Burn Up",
+    "description": "The user loses the Fire type. Cures the user of being frozen.\nThis move fails unless it is used by a Fire type."
+  },
+  {
+    "id": "683",
+    "slug": "speed-swap",
+    "slugLoc": "speed-swap",
+    "name": "Speed Swap",
+    "description": "The user and the target swap their Speed stats."
+  },
+  {
+    "id": "684",
+    "slug": "smart-strike",
+    "slugLoc": "smart-strike",
+    "name": "Smart Strike",
+    "description": "This move never misses."
+  },
+  {
+    "id": "685",
+    "slug": "purify",
+    "slugLoc": "purify",
+    "name": "Purify",
+    "description": ""
+  },
+  {
+    "id": "686",
+    "slug": "revelation-dance",
+    "slugLoc": "revelation-dance",
+    "name": "Revelation Dance",
+    "description": ""
+  },
+  {
+    "id": "687",
+    "slug": "core-enforcer",
+    "slugLoc": "core-enforcer",
+    "name": "Core Enforcer",
+    "description": ""
+  },
+  {
+    "id": "688",
+    "slug": "trop-kick",
+    "slugLoc": "trop-kick",
+    "name": "Trop Kick",
+    "description": "Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "id": "689",
+    "slug": "instruct",
+    "slugLoc": "instruct",
+    "name": "Instruct",
+    "description": "The user makes the target reuse the last move it used."
+  },
+  {
+    "id": "690",
+    "slug": "beak-blast",
+    "slugLoc": "beak-blast",
+    "name": "Beak Blast",
+    "description": "If the user is hit by a contact move before it uses this move, the\nattacker will be burned."
+  },
+  {
+    "id": "691",
+    "slug": "clanging-scales",
+    "slugLoc": "clanging-scales",
+    "name": "Clanging Scales",
+    "description": "Lowers the user's Defense stat by 1 stage."
+  },
+  {
+    "id": "692",
+    "slug": "dragon-hammer",
+    "slugLoc": "dragon-hammer",
+    "name": "Dragon Hammer",
+    "description": ""
+  },
+  {
+    "id": "693",
+    "slug": "brutal-swing",
+    "slugLoc": "brutal-swing",
+    "name": "Brutal Swing",
+    "description": ""
+  },
+  {
+    "id": "694",
+    "slug": "aurora-veil",
+    "slugLoc": "aurora-veil",
+    "name": "Aurora Veil",
+    "description": "Gives the user's side the Aurora Veil status for 5 turns. This\nmove can be used only in snow."
+  },
+  {
+    "id": "704",
+    "slug": "shell-trap",
+    "slugLoc": "shell-trap",
+    "name": "Shell Trap",
+    "description": ""
+  },
+  {
+    "id": "705",
+    "slug": "fleur-cannon",
+    "slugLoc": "fleur-cannon",
+    "name": "Fleur Cannon",
+    "description": ""
+  },
+  {
+    "id": "706",
+    "slug": "psychic-fangs",
+    "slugLoc": "psychic-fangs",
+    "name": "Psychic Fangs",
+    "description": "Removes the Light Screen, Reflect, and Aurora Veil statuses on\nthe target's side."
+  },
+  {
+    "id": "707",
+    "slug": "stomping-tantrum",
+    "slugLoc": "stomping-tantrum",
+    "name": "Stomping Tantrum",
+    "description": "This move's power is doubled if the user couldn't act or its move\nmissed or failed on the previous turn."
+  },
+  {
+    "id": "708",
+    "slug": "shadow-bone",
+    "slugLoc": "shadow-bone",
+    "name": "Shadow Bone",
+    "description": ""
+  },
+  {
+    "id": "709",
+    "slug": "accelerock",
+    "slugLoc": "accelerock",
+    "name": "Accelerock",
+    "description": ""
+  },
+  {
+    "id": "710",
+    "slug": "liquidation",
+    "slugLoc": "liquidation",
+    "name": "Liquidation",
+    "description": "Has a 20% chance of lowering the target's Defense stat by\n1 stage."
+  },
+  {
+    "id": "711",
+    "slug": "prismatic-laser",
+    "slugLoc": "prismatic-laser",
+    "name": "Prismatic Laser",
+    "description": ""
+  },
+  {
+    "id": "712",
+    "slug": "spectral-thief",
+    "slugLoc": "spectral-thief",
+    "name": "Spectral Thief",
+    "description": ""
+  },
+  {
+    "id": "713",
+    "slug": "sunsteel-strike",
+    "slugLoc": "sunsteel-strike",
+    "name": "Sunsteel Strike",
+    "description": ""
+  },
+  {
+    "id": "714",
+    "slug": "moongeist-beam",
+    "slugLoc": "moongeist-beam",
+    "name": "Moongeist Beam",
+    "description": ""
+  },
+  {
+    "id": "715",
+    "slug": "tearful-look",
+    "slugLoc": "tearful-look",
+    "name": "Tearful Look",
+    "description": "Lowers the target's Attack and Sp. Atk stats by 1 stage. This\nmove ignores the target's evasiveness and can hit a target using\na move such as Protect."
+  },
+  {
+    "id": "716",
+    "slug": "zing-zap",
+    "slugLoc": "zing-zap",
+    "name": "Zing Zap",
+    "description": ""
+  },
+  {
+    "id": "717",
+    "slug": "natures-madness",
+    "slugLoc": "nature-s-madness",
+    "name": "Nature's Madness",
+    "description": ""
+  },
+  {
+    "id": "718",
+    "slug": "multi-attack",
+    "slugLoc": "multi-attack",
+    "name": "Multi-Attack",
+    "description": ""
+  },
+  {
+    "id": "720",
+    "slug": "mind-blown",
+    "slugLoc": "mind-blown",
+    "name": "Mind Blown",
+    "description": ""
+  },
+  {
+    "id": "721",
+    "slug": "plasma-fists",
+    "slugLoc": "plasma-fists",
+    "name": "Plasma Fists",
+    "description": ""
+  },
+  {
+    "id": "722",
+    "slug": "photon-geyser",
+    "slugLoc": "photon-geyser",
+    "name": "Photon Geyser",
+    "description": ""
+  },
+  {
+    "id": "742",
+    "slug": "double-iron-bash",
+    "slugLoc": "double-iron-bash",
+    "name": "Double Iron Bash",
+    "description": ""
+  },
+  {
+    "id": "744",
+    "slug": "dynamax-cannon",
+    "slugLoc": "dynamax-cannon",
+    "name": "Dynamax Cannon",
+    "description": ""
+  },
+  {
+    "id": "745",
+    "slug": "snipe-shot",
+    "slugLoc": "snipe-shot",
+    "name": "Snipe Shot",
+    "description": ""
+  },
+  {
+    "id": "746",
+    "slug": "jaw-lock",
+    "slugLoc": "jaw-lock",
+    "name": "Jaw Lock",
+    "description": ""
+  },
+  {
+    "id": "747",
+    "slug": "stuff-cheeks",
+    "slugLoc": "stuff-cheeks",
+    "name": "Stuff Cheeks",
+    "description": "The user eats its held Berry and boosts its Defense stat by 2\nstages. This move can't be used if the user is not holding a Berry."
+  },
+  {
+    "id": "748",
+    "slug": "no-retreat",
+    "slugLoc": "no-retreat",
+    "name": "No Retreat",
+    "description": ""
+  },
+  {
+    "id": "749",
+    "slug": "tar-shot",
+    "slugLoc": "tar-shot",
+    "name": "Tar Shot",
+    "description": ""
+  },
+  {
+    "id": "750",
+    "slug": "magic-powder",
+    "slugLoc": "magic-powder",
+    "name": "Magic Powder",
+    "description": "Changes the target's type to Psychic."
+  },
+  {
+    "id": "751",
+    "slug": "dragon-darts",
+    "slugLoc": "dragon-darts",
+    "name": "Dragon Darts",
+    "description": "The user attacks twice in a row. If there are 2 opposing\nPokémon, each of them is attacked once."
+  },
+  {
+    "id": "752",
+    "slug": "teatime",
+    "slugLoc": "teatime",
+    "name": "Teatime",
+    "description": "Causes all Pokémon on the field to eat their held Berries."
+  },
+  {
+    "id": "753",
+    "slug": "octolock",
+    "slugLoc": "octolock",
+    "name": "Octolock",
+    "description": ""
+  },
+  {
+    "id": "754",
+    "slug": "bolt-beak",
+    "slugLoc": "bolt-beak",
+    "name": "Bolt Beak",
+    "description": ""
+  },
+  {
+    "id": "755",
+    "slug": "fishious-rend",
+    "slugLoc": "fishious-rend",
+    "name": "Fishious Rend",
+    "description": ""
+  },
+  {
+    "id": "756",
+    "slug": "court-change",
+    "slugLoc": "court-change",
+    "name": "Court Change",
+    "description": ""
+  },
+  {
+    "id": "775",
+    "slug": "clangorous-soul",
+    "slugLoc": "clangorous-soul",
+    "name": "Clangorous Soul",
+    "description": "The user loses 1/3 of its max HP to boost its Attack, Defense,\nSp. Atk, Sp. Def, and Speed stats by 1 stage. This move fails if\nthe user doesn't have enough remaining HP."
+  },
+  {
+    "id": "776",
+    "slug": "body-press",
+    "slugLoc": "body-press",
+    "name": "Body Press",
+    "description": "The damage dealt by this move is calculated using the user's\nDefense stat instead of its Attack stat."
+  },
+  {
+    "id": "777",
+    "slug": "decorate",
+    "slugLoc": "decorate",
+    "name": "Decorate",
+    "description": "Boosts the target's Attack and Sp. Atk stats by 2 stages."
+  },
+  {
+    "id": "778",
+    "slug": "drum-beating",
+    "slugLoc": "drum-beating",
+    "name": "Drum Beating",
+    "description": ""
+  },
+  {
+    "id": "779",
+    "slug": "snap-trap",
+    "slugLoc": "snap-trap",
+    "name": "Snap Trap",
+    "description": "Gives the target the Bound status."
+  },
+  {
+    "id": "780",
+    "slug": "pyro-ball",
+    "slugLoc": "pyro-ball",
+    "name": "Pyro Ball",
+    "description": ""
+  },
+  {
+    "id": "781",
+    "slug": "behemoth-blade",
+    "slugLoc": "behemoth-blade",
+    "name": "Behemoth Blade",
+    "description": ""
+  },
+  {
+    "id": "782",
+    "slug": "behemoth-bash",
+    "slugLoc": "behemoth-bash",
+    "name": "Behemoth Bash",
+    "description": ""
+  },
+  {
+    "id": "783",
+    "slug": "aura-wheel",
+    "slugLoc": "aura-wheel",
+    "name": "Aura Wheel",
+    "description": "Boosts the user's Speed stat by 1 stage. This move's type\ndepends on Morpeko's form."
+  },
+  {
+    "id": "784",
+    "slug": "breaking-swipe",
+    "slugLoc": "breaking-swipe",
+    "name": "Breaking Swipe",
+    "description": "Lowers targets' Attack stats by 1 stage."
+  },
+  {
+    "id": "785",
+    "slug": "branch-poke",
+    "slugLoc": "branch-poke",
+    "name": "Branch Poke",
+    "description": ""
+  },
+  {
+    "id": "786",
+    "slug": "overdrive",
+    "slugLoc": "overdrive",
+    "name": "Overdrive",
+    "description": ""
+  },
+  {
+    "id": "787",
+    "slug": "apple-acid",
+    "slugLoc": "apple-acid",
+    "name": "Apple Acid",
+    "description": "Lowers the target's Sp. Def stat by 1 stage."
+  },
+  {
+    "id": "788",
+    "slug": "grav-apple",
+    "slugLoc": "grav-apple",
+    "name": "Grav Apple",
+    "description": "Lowers the target's Defense stat by 1 stage. This move's power\nis boosted by 50% when the Gravity status is active."
+  },
+  {
+    "id": "789",
+    "slug": "spirit-break",
+    "slugLoc": "spirit-break",
+    "name": "Spirit Break",
+    "description": ""
+  },
+  {
+    "id": "790",
+    "slug": "strange-steam",
+    "slugLoc": "strange-steam",
+    "name": "Strange Steam",
+    "description": ""
+  },
+  {
+    "id": "791",
+    "slug": "life-dew",
+    "slugLoc": "life-dew",
+    "name": "Life Dew",
+    "description": "Restores 1/4 of the max HP of the user and its allies."
+  },
+  {
+    "id": "792",
+    "slug": "obstruct",
+    "slugLoc": "obstruct",
+    "name": "Obstruct",
+    "description": ""
+  },
+  {
+    "id": "793",
+    "slug": "false-surrender",
+    "slugLoc": "false-surrender",
+    "name": "False Surrender",
+    "description": ""
+  },
+  {
+    "id": "794",
+    "slug": "meteor-assault",
+    "slugLoc": "meteor-assault",
+    "name": "Meteor Assault",
+    "description": ""
+  },
+  {
+    "id": "795",
+    "slug": "eternabeam",
+    "slugLoc": "eternabeam",
+    "name": "Eternabeam",
+    "description": ""
+  },
+  {
+    "id": "796",
+    "slug": "steel-beam",
+    "slugLoc": "steel-beam",
+    "name": "Steel Beam",
+    "description": "After attacking, the user takes damage equal to 1/2 of its\nmax HP."
+  },
+  {
+    "id": "797",
+    "slug": "expanding-force",
+    "slugLoc": "expanding-force",
+    "name": "Expanding Force",
+    "description": "If the user is under the effect of Psychic Terrain, this move's\npower is boosted by 50% and its range extends to\nall opponents."
+  },
+  {
+    "id": "798",
+    "slug": "steel-roller",
+    "slugLoc": "steel-roller",
+    "name": "Steel Roller",
+    "description": "Removes any terrain. This move fails if there is no terrain on\nthe field."
+  },
+  {
+    "id": "799",
+    "slug": "scale-shot",
+    "slugLoc": "scale-shot",
+    "name": "Scale Shot",
+    "description": "The user attacks 2 to 5 times in a row. This move lowers the\nuser's Defense stat by 1 stage and boosts its Speed stat by\n1 stage."
+  },
+  {
+    "id": "800",
+    "slug": "meteor-beam",
+    "slugLoc": "meteor-beam",
+    "name": "Meteor Beam",
+    "description": "The user gains the Charging status on the turn this move is used,\nthen attacks on the following turn. The user's Sp. Atk stat is\nboosted by 1 stage on the turn this move is used."
+  },
+  {
+    "id": "801",
+    "slug": "shell-side-arm",
+    "slugLoc": "shell-side-arm",
+    "name": "Shell Side Arm",
+    "description": "Has a 20% chance of poisoning the target. Becomes a physical\nmove if that will deal more damage."
+  },
+  {
+    "id": "802",
+    "slug": "misty-explosion",
+    "slugLoc": "misty-explosion",
+    "name": "Misty Explosion",
+    "description": "If the user is under the effect of Misty Terrain, this move's power\nis boosted by 50%. The user faints upon using this move."
+  },
+  {
+    "id": "803",
+    "slug": "grassy-glide",
+    "slugLoc": "grassy-glide",
+    "name": "Grassy Glide",
+    "description": "If the user is under the effect of Grassy Terrain, this move's\npriority becomes +1."
+  },
+  {
+    "id": "804",
+    "slug": "rising-voltage",
+    "slugLoc": "rising-voltage",
+    "name": "Rising Voltage",
+    "description": "This move's power is doubled if the target is under the effect of\nElectric Terrain."
+  },
+  {
+    "id": "805",
+    "slug": "terrain-pulse",
+    "slugLoc": "terrain-pulse",
+    "name": "Terrain Pulse",
+    "description": "This move's power is doubled if the user is under the effect of\na terrain. This move's type depends on the terrain."
+  },
+  {
+    "id": "806",
+    "slug": "skitter-smack",
+    "slugLoc": "skitter-smack",
+    "name": "Skitter Smack",
+    "description": "Lowers the target's Sp. Atk stat by 1 stage."
+  },
+  {
+    "id": "807",
+    "slug": "burning-jealousy",
+    "slugLoc": "burning-jealousy",
+    "name": "Burning Jealousy",
+    "description": "Burns targets if their stats were boosted during the turn this\nmove is used."
+  },
+  {
+    "id": "808",
+    "slug": "lash-out",
+    "slugLoc": "lash-out",
+    "name": "Lash Out",
+    "description": "This move's power is doubled if the user's stats were lowered\nduring the turn this move is used."
+  },
+  {
+    "id": "809",
+    "slug": "poltergeist",
+    "slugLoc": "poltergeist",
+    "name": "Poltergeist",
+    "description": "This move fails if the target isn't holding an item."
+  },
+  {
+    "id": "810",
+    "slug": "corrosive-gas",
+    "slugLoc": "corrosive-gas",
+    "name": "Corrosive Gas",
+    "description": "Causes all other Pokémon on the field to lose their held items."
+  },
+  {
+    "id": "811",
+    "slug": "coaching",
+    "slugLoc": "coaching",
+    "name": "Coaching",
+    "description": "Boosts allies' Attack and Defense stats by 1 stage."
+  },
+  {
+    "id": "812",
+    "slug": "flip-turn",
+    "slugLoc": "flip-turn",
+    "name": "Flip Turn",
+    "description": "After attacking, the user switches out of battle to be replaced\nby another party Pokémon."
+  },
+  {
+    "id": "813",
+    "slug": "triple-axel",
+    "slugLoc": "triple-axel",
+    "name": "Triple Axel",
+    "description": "The user attacks 3 times in a row—first with a power of 20, then\nwith a power of 40, then with a power of 60. The attack ends if\nthe user misses."
+  },
+  {
+    "id": "814",
+    "slug": "dual-wingbeat",
+    "slugLoc": "dual-wingbeat",
+    "name": "Dual Wingbeat",
+    "description": "The user attacks twice in a row."
+  },
+  {
+    "id": "815",
+    "slug": "scorching-sands",
+    "slugLoc": "scorching-sands",
+    "name": "Scorching Sands",
+    "description": "Has a 30% chance of burning the target. Cures the user and\ntarget of being frozen."
+  },
+  {
+    "id": "816",
+    "slug": "jungle-healing",
+    "slugLoc": "jungle-healing",
+    "name": "Jungle Healing",
+    "description": ""
+  },
+  {
+    "id": "817",
+    "slug": "wicked-blow",
+    "slugLoc": "wicked-blow",
+    "name": "Wicked Blow",
+    "description": ""
+  },
+  {
+    "id": "818",
+    "slug": "surging-strikes",
+    "slugLoc": "surging-strikes",
+    "name": "Surging Strikes",
+    "description": ""
+  },
+  {
+    "id": "819",
+    "slug": "thunder-cage",
+    "slugLoc": "thunder-cage",
+    "name": "Thunder Cage",
+    "description": ""
+  },
+  {
+    "id": "820",
+    "slug": "dragon-energy",
+    "slugLoc": "dragon-energy",
+    "name": "Dragon Energy",
+    "description": ""
+  },
+  {
+    "id": "821",
+    "slug": "freezing-glare",
+    "slugLoc": "freezing-glare",
+    "name": "Freezing Glare",
+    "description": ""
+  },
+  {
+    "id": "822",
+    "slug": "fiery-wrath",
+    "slugLoc": "fiery-wrath",
+    "name": "Fiery Wrath",
+    "description": ""
+  },
+  {
+    "id": "823",
+    "slug": "thunderous-kick",
+    "slugLoc": "thunderous-kick",
+    "name": "Thunderous Kick",
+    "description": ""
+  },
+  {
+    "id": "824",
+    "slug": "glacial-lance",
+    "slugLoc": "glacial-lance",
+    "name": "Glacial Lance",
+    "description": ""
+  },
+  {
+    "id": "825",
+    "slug": "astral-barrage",
+    "slugLoc": "astral-barrage",
+    "name": "Astral Barrage",
+    "description": ""
+  },
+  {
+    "id": "826",
+    "slug": "eerie-spell",
+    "slugLoc": "eerie-spell",
+    "name": "Eerie Spell",
+    "description": "Removes 3 PP from the move last used by the target."
+  },
+  {
+    "id": "827",
+    "slug": "dire-claw",
+    "slugLoc": "dire-claw",
+    "name": "Dire Claw",
+    "description": "Has a 30% chance of leaving the target poisoned, paralyzed,\nor asleep."
+  },
+  {
+    "id": "828",
+    "slug": "psyshield-bash",
+    "slugLoc": "psyshield-bash",
+    "name": "Psyshield Bash",
+    "description": "Boosts the user's Defense stat by 1 stage."
+  },
+  {
+    "id": "829",
+    "slug": "power-shift",
+    "slugLoc": "power-shift",
+    "name": "Power Shift",
+    "description": "The user gains the Atk/Def Swapped status."
+  },
+  {
+    "id": "830",
+    "slug": "stone-axe",
+    "slugLoc": "stone-axe",
+    "name": "Stone Axe",
+    "description": "Gives the opponent's side the Stealth Rock status."
+  },
+  {
+    "id": "831",
+    "slug": "springtide-storm",
+    "slugLoc": "springtide-storm",
+    "name": "Springtide Storm",
+    "description": ""
+  },
+  {
+    "id": "832",
+    "slug": "mystical-power",
+    "slugLoc": "mystical-power",
+    "name": "Mystical Power",
+    "description": ""
+  },
+  {
+    "id": "833",
+    "slug": "raging-fury",
+    "slugLoc": "raging-fury",
+    "name": "Raging Fury",
+    "description": "The user gains the Rampaging status."
+  },
+  {
+    "id": "834",
+    "slug": "wave-crash",
+    "slugLoc": "wave-crash",
+    "name": "Wave Crash",
+    "description": "The user takes 1/3 of the damage dealt by this move."
+  },
+  {
+    "id": "835",
+    "slug": "chloroblast",
+    "slugLoc": "chloroblast",
+    "name": "Chloroblast",
+    "description": ""
+  },
+  {
+    "id": "836",
+    "slug": "mountain-gale",
+    "slugLoc": "mountain-gale",
+    "name": "Mountain Gale",
+    "description": "Has a 30% chance of making the target flinch."
+  },
+  {
+    "id": "837",
+    "slug": "victory-dance",
+    "slugLoc": "victory-dance",
+    "name": "Victory Dance",
+    "description": ""
+  },
+  {
+    "id": "838",
+    "slug": "headlong-rush",
+    "slugLoc": "headlong-rush",
+    "name": "Headlong Rush",
+    "description": "Lowers the user's Defense and Sp. Def stats by 1 stage."
+  },
+  {
+    "id": "839",
+    "slug": "barb-barrage",
+    "slugLoc": "barb-barrage",
+    "name": "Barb Barrage",
+    "description": ""
+  },
+  {
+    "id": "840",
+    "slug": "esper-wing",
+    "slugLoc": "esper-wing",
+    "name": "Esper Wing",
+    "description": ""
+  },
+  {
+    "id": "841",
+    "slug": "bitter-malice",
+    "slugLoc": "bitter-malice",
+    "name": "Bitter Malice",
+    "description": "Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "id": "842",
+    "slug": "shelter",
+    "slugLoc": "shelter",
+    "name": "Shelter",
+    "description": "Boosts the user's Defense stat by 2 stages."
+  },
+  {
+    "id": "843",
+    "slug": "triple-arrows",
+    "slugLoc": "triple-arrows",
+    "name": "Triple Arrows",
+    "description": "Has a 50% chance of lowering the target's Defense stat by\n1 stage and has a 30% chance of making the target flinch.\nThis move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "844",
+    "slug": "infernal-parade",
+    "slugLoc": "infernal-parade",
+    "name": "Infernal Parade",
+    "description": "Has a 30% chance of burning the target. This move's power is\ndoubled if the target has a status condition."
+  },
+  {
+    "id": "845",
+    "slug": "ceaseless-edge",
+    "slugLoc": "ceaseless-edge",
+    "name": "Ceaseless Edge",
+    "description": "Gives the opponent's side the Spikes status."
+  },
+  {
+    "id": "846",
+    "slug": "bleakwind-storm",
+    "slugLoc": "bleakwind-storm",
+    "name": "Bleakwind Storm",
+    "description": ""
+  },
+  {
+    "id": "847",
+    "slug": "wildbolt-storm",
+    "slugLoc": "wildbolt-storm",
+    "name": "Wildbolt Storm",
+    "description": ""
+  },
+  {
+    "id": "848",
+    "slug": "sandsear-storm",
+    "slugLoc": "sandsear-storm",
+    "name": "Sandsear Storm",
+    "description": ""
+  },
+  {
+    "id": "849",
+    "slug": "lunar-blessing",
+    "slugLoc": "lunar-blessing",
+    "name": "Lunar Blessing",
+    "description": ""
+  },
+  {
+    "id": "850",
+    "slug": "take-heart",
+    "slugLoc": "take-heart",
+    "name": "Take Heart",
+    "description": ""
+  },
+  {
+    "id": "851",
+    "slug": "tera-blast",
+    "slugLoc": "tera-blast",
+    "name": "Tera Blast",
+    "description": ""
+  },
+  {
+    "id": "852",
+    "slug": "silk-trap",
+    "slugLoc": "silk-trap",
+    "name": "Silk Trap",
+    "description": ""
+  },
+  {
+    "id": "853",
+    "slug": "axe-kick",
+    "slugLoc": "axe-kick",
+    "name": "Axe Kick",
+    "description": "Has a 30% chance of confusing the target. If this move misses\nor fails, the user takes damage equal to 1/2 of its max HP."
+  },
+  {
+    "id": "854",
+    "slug": "last-respects",
+    "slugLoc": "last-respects",
+    "name": "Last Respects",
+    "description": "This move's power is increased by 50 for each time that a\nPokémon in the user's party has fainted."
+  },
+  {
+    "id": "855",
+    "slug": "lumina-crash",
+    "slugLoc": "lumina-crash",
+    "name": "Lumina Crash",
+    "description": "Lowers the target's Sp. Def stat by 2 stages."
+  },
+  {
+    "id": "856",
+    "slug": "order-up",
+    "slugLoc": "order-up",
+    "name": "Order Up",
+    "description": ""
+  },
+  {
+    "id": "857",
+    "slug": "jet-punch",
+    "slugLoc": "jet-punch",
+    "name": "Jet Punch",
+    "description": ""
+  },
+  {
+    "id": "858",
+    "slug": "spicy-extract",
+    "slugLoc": "spicy-extract",
+    "name": "Spicy Extract",
+    "description": "Lowers the target's Defense stat by 2 stages and boosts its\nAttack stat by 2 stages."
+  },
+  {
+    "id": "859",
+    "slug": "spin-out",
+    "slugLoc": "spin-out",
+    "name": "Spin Out",
+    "description": ""
+  },
+  {
+    "id": "860",
+    "slug": "population-bomb",
+    "slugLoc": "population-bomb",
+    "name": "Population Bomb",
+    "description": "The user attacks 1 to 10 times in a row. The attack ends if the\nuser misses."
+  },
+  {
+    "id": "861",
+    "slug": "ice-spinner",
+    "slugLoc": "ice-spinner",
+    "name": "Ice Spinner",
+    "description": "Removes any terrain."
+  },
+  {
+    "id": "862",
+    "slug": "glaive-rush",
+    "slugLoc": "glaive-rush",
+    "name": "Glaive Rush",
+    "description": ""
+  },
+  {
+    "id": "863",
+    "slug": "revival-blessing",
+    "slugLoc": "revival-blessing",
+    "name": "Revival Blessing",
+    "description": "Revives a Pokémon in the user's party that has fainted and\nrestores 1/2 of that Pokémon's max HP."
+  },
+  {
+    "id": "864",
+    "slug": "salt-cure",
+    "slugLoc": "salt-cure",
+    "name": "Salt Cure",
+    "description": "Gives the target the Salt Cured status."
+  },
+  {
+    "id": "865",
+    "slug": "triple-dive",
+    "slugLoc": "triple-dive",
+    "name": "Triple Dive",
+    "description": ""
+  },
+  {
+    "id": "866",
+    "slug": "mortal-spin",
+    "slugLoc": "mortal-spin",
+    "name": "Mortal Spin",
+    "description": "Removes the Bound and Leech Seeded statuses from the user\nand removes the Sticky Web, Stealth Rock, Spikes, and Toxic\nSpikes statuses from the user's side. Poisons targets."
+  },
+  {
+    "id": "867",
+    "slug": "doodle",
+    "slugLoc": "doodle",
+    "name": "Doodle",
+    "description": ""
+  },
+  {
+    "id": "868",
+    "slug": "fillet-away",
+    "slugLoc": "fillet-away",
+    "name": "Fillet Away",
+    "description": ""
+  },
+  {
+    "id": "869",
+    "slug": "kowtow-cleave",
+    "slugLoc": "kowtow-cleave",
+    "name": "Kowtow Cleave",
+    "description": "This move never misses."
+  },
+  {
+    "id": "870",
+    "slug": "flower-trick",
+    "slugLoc": "flower-trick",
+    "name": "Flower Trick",
+    "description": "This move never misses and is always a critical hit."
+  },
+  {
+    "id": "871",
+    "slug": "torch-song",
+    "slugLoc": "torch-song",
+    "name": "Torch Song",
+    "description": "Boosts the user's Sp. Atk stat by 1 stage."
+  },
+  {
+    "id": "872",
+    "slug": "aqua-step",
+    "slugLoc": "aqua-step",
+    "name": "Aqua Step",
+    "description": "Boosts the user's Speed stat by 1 stage."
+  },
+  {
+    "id": "873",
+    "slug": "raging-bull",
+    "slugLoc": "raging-bull",
+    "name": "Raging Bull",
+    "description": "Removes the Light Screen, Reflect, and Aurora Veil statuses on\nthe target's side. This move's type depends on the user's form."
+  },
+  {
+    "id": "874",
+    "slug": "make-it-rain",
+    "slugLoc": "make-it-rain",
+    "name": "Make It Rain",
+    "description": ""
+  },
+  {
+    "id": "875",
+    "slug": "psyblade",
+    "slugLoc": "psyblade",
+    "name": "Psyblade",
+    "description": ""
+  },
+  {
+    "id": "876",
+    "slug": "hydro-steam",
+    "slugLoc": "hydro-steam",
+    "name": "Hydro Steam",
+    "description": ""
+  },
+  {
+    "id": "877",
+    "slug": "ruination",
+    "slugLoc": "ruination",
+    "name": "Ruination",
+    "description": ""
+  },
+  {
+    "id": "878",
+    "slug": "collision-course",
+    "slugLoc": "collision-course",
+    "name": "Collision Course",
+    "description": ""
+  },
+  {
+    "id": "879",
+    "slug": "electro-drift",
+    "slugLoc": "electro-drift",
+    "name": "Electro Drift",
+    "description": ""
+  },
+  {
+    "id": "880",
+    "slug": "shed-tail",
+    "slugLoc": "shed-tail",
+    "name": "Shed Tail",
+    "description": "The user loses 1/2 of its max HP to create a substitute, then\nswitches out of battle to be replaced by another party\nPokémon. The substitute will be hit by moves instead of that\nPokémon, and it will vanish when it takes damage equal to 1/4\nof the user's max HP."
+  },
+  {
+    "id": "881",
+    "slug": "chilly-reception",
+    "slugLoc": "chilly-reception",
+    "name": "Chilly Reception",
+    "description": "Summons snow for 5 turns. The user switches out of battle to be\nreplaced by another party Pokémon."
+  },
+  {
+    "id": "882",
+    "slug": "tidy-up",
+    "slugLoc": "tidy-up",
+    "name": "Tidy Up",
+    "description": "Removes the Sticky Web, Stealth Rock, Substitute, Spikes, and\nToxic Spikes statuses from the entire field. Boosts the user's\nAttack and Speed stats by 1 stage."
+  },
+  {
+    "id": "883",
+    "slug": "snowscape",
+    "slugLoc": "snowscape",
+    "name": "Snowscape",
+    "description": "Summons snow for 5 turns."
+  },
+  {
+    "id": "884",
+    "slug": "pounce",
+    "slugLoc": "pounce",
+    "name": "Pounce",
+    "description": "Lowers the target's Speed stat by 1 stage."
+  },
+  {
+    "id": "885",
+    "slug": "trailblaze",
+    "slugLoc": "trailblaze",
+    "name": "Trailblaze",
+    "description": "Boosts the user's Speed stat by 1 stage."
+  },
+  {
+    "id": "886",
+    "slug": "chilling-water",
+    "slugLoc": "chilling-water",
+    "name": "Chilling Water",
+    "description": "Lowers the target's Attack stat by 1 stage."
+  },
+  {
+    "id": "887",
+    "slug": "hyper-drill",
+    "slugLoc": "hyper-drill",
+    "name": "Hyper Drill",
+    "description": ""
+  },
+  {
+    "id": "888",
+    "slug": "twin-beam",
+    "slugLoc": "twin-beam",
+    "name": "Twin Beam",
+    "description": "The user attacks twice in a row."
+  },
+  {
+    "id": "889",
+    "slug": "rage-fist",
+    "slugLoc": "rage-fist",
+    "name": "Rage Fist",
+    "description": ""
+  },
+  {
+    "id": "890",
+    "slug": "armor-cannon",
+    "slugLoc": "armor-cannon",
+    "name": "Armor Cannon",
+    "description": "Lowers the user's Defense and Sp. Def stats by 1 stage."
+  },
+  {
+    "id": "891",
+    "slug": "bitter-blade",
+    "slugLoc": "bitter-blade",
+    "name": "Bitter Blade",
+    "description": "The user's HP is restored by 1/2 of the damage dealt by\nthis move."
+  },
+  {
+    "id": "892",
+    "slug": "double-shock",
+    "slugLoc": "double-shock",
+    "name": "Double Shock",
+    "description": "The user loses the Electric type. This move fails unless it is used\nby an Electric type."
+  },
+  {
+    "id": "893",
+    "slug": "gigaton-hammer",
+    "slugLoc": "gigaton-hammer",
+    "name": "Gigaton Hammer",
+    "description": "This move can't be used twice in a row."
+  },
+  {
+    "id": "894",
+    "slug": "comeuppance",
+    "slugLoc": "comeuppance",
+    "name": "Comeuppance",
+    "description": "The user retaliates to deal 150% of the damage it took from an\nopponent's move during the turn this move is used."
+  },
+  {
+    "id": "895",
+    "slug": "aqua-cutter",
+    "slugLoc": "aqua-cutter",
+    "name": "Aqua Cutter",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "896",
+    "slug": "blazing-torque",
+    "slugLoc": "blazing-torque",
+    "name": "Blazing Torque",
+    "description": ""
+  },
+  {
+    "id": "897",
+    "slug": "wicked-torque",
+    "slugLoc": "wicked-torque",
+    "name": "Wicked Torque",
+    "description": ""
+  },
+  {
+    "id": "898",
+    "slug": "noxious-torque",
+    "slugLoc": "noxious-torque",
+    "name": "Noxious Torque",
+    "description": ""
+  },
+  {
+    "id": "899",
+    "slug": "combat-torque",
+    "slugLoc": "combat-torque",
+    "name": "Combat Torque",
+    "description": ""
+  },
+  {
+    "id": "900",
+    "slug": "magical-torque",
+    "slugLoc": "magical-torque",
+    "name": "Magical Torque",
+    "description": ""
+  },
+  {
+    "id": "901",
+    "slug": "blood-moon",
+    "slugLoc": "blood-moon",
+    "name": "Blood Moon",
+    "description": ""
+  },
+  {
+    "id": "902",
+    "slug": "matcha-gotcha",
+    "slugLoc": "matcha-gotcha",
+    "name": "Matcha Gotcha",
+    "description": "Has a 20% chance of burning targets. The user's HP is restored\nby 1/2 of the damage dealt by this move."
+  },
+  {
+    "id": "903",
+    "slug": "syrup-bomb",
+    "slugLoc": "syrup-bomb",
+    "name": "Syrup Bomb",
+    "description": "Gives the target the Syrupy status for 3 turns."
+  },
+  {
+    "id": "904",
+    "slug": "ivy-cudgel",
+    "slugLoc": "ivy-cudgel",
+    "name": "Ivy Cudgel",
+    "description": ""
+  },
+  {
+    "id": "905",
+    "slug": "electro-shot",
+    "slugLoc": "electro-shot",
+    "name": "Electro Shot",
+    "description": "The user gains the Charging status on the turn this move is used,\nthen attacks on the following turn. In rain, the user does not\ngain the Charging status and can attack immediately. The user's\nSp. Atk stat is boosted by 1 stage on the turn this move is used."
+  },
+  {
+    "id": "906",
+    "slug": "tera-starstorm",
+    "slugLoc": "tera-starstorm",
+    "name": "Tera Starstorm",
+    "description": ""
+  },
+  {
+    "id": "907",
+    "slug": "fickle-beam",
+    "slugLoc": "fickle-beam",
+    "name": "Fickle Beam",
+    "description": "This move has a 30% chance of its power being doubled."
+  },
+  {
+    "id": "908",
+    "slug": "burning-bulwark",
+    "slugLoc": "burning-bulwark",
+    "name": "Burning Bulwark",
+    "description": ""
+  },
+  {
+    "id": "909",
+    "slug": "thunderclap",
+    "slugLoc": "thunderclap",
+    "name": "Thunderclap",
+    "description": ""
+  },
+  {
+    "id": "910",
+    "slug": "mighty-cleave",
+    "slugLoc": "mighty-cleave",
+    "name": "Mighty Cleave",
+    "description": ""
+  },
+  {
+    "id": "911",
+    "slug": "tachyon-cutter",
+    "slugLoc": "tachyon-cutter",
+    "name": "Tachyon Cutter",
+    "description": ""
+  },
+  {
+    "id": "912",
+    "slug": "hard-press",
+    "slugLoc": "hard-press",
+    "name": "Hard Press",
+    "description": "The more HP the target has left, the greater this move's power\n(ranging between 1 and 100)."
+  },
+  {
+    "id": "913",
+    "slug": "dragon-cheer",
+    "slugLoc": "dragon-cheer",
+    "name": "Dragon Cheer",
+    "description": "Gives allies a Critical-Hit Ratio Boost. Dragon types receive a\n2-stage boost. All other types receive a 1-stage boost."
+  },
+  {
+    "id": "914",
+    "slug": "alluring-voice",
+    "slugLoc": "alluring-voice",
+    "name": "Alluring Voice",
+    "description": "Confuses the target if its stats were boosted during the turn this\nmove is used."
+  },
+  {
+    "id": "915",
+    "slug": "temper-flare",
+    "slugLoc": "temper-flare",
+    "name": "Temper Flare",
+    "description": "This move's power is doubled if the user couldn't act or its move\nmissed or failed on the previous turn."
+  },
+  {
+    "id": "916",
+    "slug": "supercell-slam",
+    "slugLoc": "supercell-slam",
+    "name": "Supercell Slam",
+    "description": "If this move misses or fails, the user takes damage equal to 1/2\nof its max HP. If the target has the Minimized status, this move's\npower is doubled and it will be sure to hit."
+  },
+  {
+    "id": "917",
+    "slug": "psychic-noise",
+    "slugLoc": "psychic-noise",
+    "name": "Psychic Noise",
+    "description": "Gives the target the Healing Prevented status for 2 turns."
+  },
+  {
+    "id": "918",
+    "slug": "upper-hand",
+    "slugLoc": "upper-hand",
+    "name": "Upper Hand",
+    "description": "Makes the target flinch. This move fails if the target isn't about\nto use a priority move."
+  },
+  {
+    "id": "919",
+    "slug": "malignant-chain",
+    "slugLoc": "malignant-chain",
+    "name": "Malignant Chain",
+    "description": ""
+  },
+  {
+    "id": "920",
+    "slug": "nihil-light",
+    "slugLoc": "nihil-light",
+    "name": "Nihil Light",
+    "description": ""
+  }
+]

@@ -1,0 +1,1360 @@
+[
+  {
+    "id": "1",
+    "slug": "stench",
+    "slugLoc": "stench",
+    "name": "Stench",
+    "description": "When the Pokémon deals damage with its moves, there is a\n10% chance that targets will flinch."
+  },
+  {
+    "id": "2",
+    "slug": "drizzle",
+    "slugLoc": "drizzle",
+    "name": "Drizzle",
+    "description": "Summons rain for 5 turns when the Pokémon enters a battle."
+  },
+  {
+    "id": "3",
+    "slug": "speed-boost",
+    "slugLoc": "speed-boost",
+    "name": "Speed Boost",
+    "description": "Boosts the Pokémon's Speed stat by 1 stage at the end of\nevery turn."
+  },
+  {
+    "id": "4",
+    "slug": "battle-armor",
+    "slugLoc": "battle-armor",
+    "name": "Battle Armor",
+    "description": "Attacks landed on the Pokémon will never be critical hits."
+  },
+  {
+    "id": "5",
+    "slug": "sturdy",
+    "slugLoc": "sturdy",
+    "name": "Sturdy",
+    "description": "If the Pokémon has full HP and takes damage from a move that\nwould knock it out in one hit, it will endure the hit with 1 HP.\nThe Pokémon is also immune to one-hit KO moves."
+  },
+  {
+    "id": "6",
+    "slug": "damp",
+    "slugLoc": "damp",
+    "name": "Damp",
+    "description": "All Pokémon become unable to use explosive moves.\nExplosive Abilities also fail to trigger."
+  },
+  {
+    "id": "7",
+    "slug": "limber",
+    "slugLoc": "limber",
+    "name": "Limber",
+    "description": "The Pokémon cannot be paralyzed."
+  },
+  {
+    "id": "8",
+    "slug": "sand-veil",
+    "slugLoc": "sand-veil",
+    "name": "Sand Veil",
+    "description": "Boosts the Pokémon's evasiveness by 25% in a sandstorm."
+  },
+  {
+    "id": "9",
+    "slug": "static",
+    "slugLoc": "static",
+    "name": "Static",
+    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being paralyzed."
+  },
+  {
+    "id": "10",
+    "slug": "volt-absorb",
+    "slugLoc": "volt-absorb",
+    "name": "Volt Absorb",
+    "description": "Electric-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP."
+  },
+  {
+    "id": "11",
+    "slug": "water-absorb",
+    "slugLoc": "water-absorb",
+    "name": "Water Absorb",
+    "description": "Water-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP."
+  },
+  {
+    "id": "12",
+    "slug": "oblivious",
+    "slugLoc": "oblivious",
+    "name": "Oblivious",
+    "description": "The Pokémon cannot gain the Infatuated or Taunted statuses\nand is unaffected by Intimidate."
+  },
+  {
+    "id": "13",
+    "slug": "cloud-nine",
+    "slugLoc": "cloud-nine",
+    "name": "Cloud Nine",
+    "description": "Eliminates the effects of weather."
+  },
+  {
+    "id": "14",
+    "slug": "compound-eyes",
+    "slugLoc": "compound-eyes",
+    "name": "Compound Eyes",
+    "description": "Boosts the accuracy of the Pokémon's moves by 30%."
+  },
+  {
+    "id": "15",
+    "slug": "insomnia",
+    "slugLoc": "insomnia",
+    "name": "Insomnia",
+    "description": "The Pokémon cannot become drowsy or be put to sleep."
+  },
+  {
+    "id": "17",
+    "slug": "immunity",
+    "slugLoc": "immunity",
+    "name": "Immunity",
+    "description": "The Pokémon cannot be poisoned or badly poisoned."
+  },
+  {
+    "id": "18",
+    "slug": "flash-fire",
+    "slugLoc": "flash-fire",
+    "name": "Flash Fire",
+    "description": "Fire-type moves do not work on the Pokémon. Instead, they\ngive the Pokémon the Flash Fire status."
+  },
+  {
+    "id": "19",
+    "slug": "shield-dust",
+    "slugLoc": "shield-dust",
+    "name": "Shield Dust",
+    "description": "The Pokémon is immune to additional effects from attacks."
+  },
+  {
+    "id": "20",
+    "slug": "own-tempo",
+    "slugLoc": "own-tempo",
+    "name": "Own Tempo",
+    "description": "The Pokémon cannot become confused and is unaffected by\nIntimidate."
+  },
+  {
+    "id": "21",
+    "slug": "suction-cups",
+    "slugLoc": "suction-cups",
+    "name": "Suction Cups",
+    "description": "The Pokémon is unaffected by the moves and held items of\nother Pokémon that would force it to switch out of battle."
+  },
+  {
+    "id": "22",
+    "slug": "intimidate",
+    "slugLoc": "intimidate",
+    "name": "Intimidate",
+    "description": "When the Pokémon enters a battle, it lowers the Attack stats of\nopponents by 1 stage."
+  },
+  {
+    "id": "23",
+    "slug": "shadow-tag",
+    "slugLoc": "shadow-tag",
+    "name": "Shadow Tag",
+    "description": "Opponents cannot be switched out of battle."
+  },
+  {
+    "id": "24",
+    "slug": "rough-skin",
+    "slugLoc": "rough-skin",
+    "name": "Rough Skin",
+    "description": "When the Pokémon is hit by a contact move, the attacker takes\ndamage equal to 1/8 of its max HP."
+  },
+  {
+    "id": "26",
+    "slug": "levitate",
+    "slugLoc": "levitate",
+    "name": "Levitate",
+    "description": "The Pokémon floats off the ground, making it immune to\nGround-type moves, as well as the Spikes, Toxic Spikes,\nand Sticky Web statuses."
+  },
+  {
+    "id": "28",
+    "slug": "synchronize",
+    "slugLoc": "synchronize",
+    "name": "Synchronize",
+    "description": "If the Pokémon is burned, paralyzed, poisoned, or badly\npoisoned by another Pokémon's move or Ability, that Pokémon\nwill also be inflicted with the same status condition."
+  },
+  {
+    "id": "29",
+    "slug": "clear-body",
+    "slugLoc": "clear-body",
+    "name": "Clear Body",
+    "description": "The Pokémon's stats cannot be lowered by other Pokémon's\nmoves or Abilities."
+  },
+  {
+    "id": "30",
+    "slug": "natural-cure",
+    "slugLoc": "natural-cure",
+    "name": "Natural Cure",
+    "description": "The Pokémon's status conditions are cured when it switches out\nof battle."
+  },
+  {
+    "id": "31",
+    "slug": "lightning-rod",
+    "slugLoc": "lightning-rod",
+    "name": "Lightning Rod",
+    "description": "The Pokémon draws in all Electric-type moves. These moves do\nnot work on the Pokémon. Instead, they boost its Sp. Atk stat by\n1 stage."
+  },
+  {
+    "id": "33",
+    "slug": "swift-swim",
+    "slugLoc": "swift-swim",
+    "name": "Swift Swim",
+    "description": "Doubles the Pokémon's Speed stat in rain."
+  },
+  {
+    "id": "34",
+    "slug": "chlorophyll",
+    "slugLoc": "chlorophyll",
+    "name": "Chlorophyll",
+    "description": "Doubles the Pokémon's Speed stat in harsh sunlight."
+  },
+  {
+    "id": "35",
+    "slug": "illuminate",
+    "slugLoc": "illuminate",
+    "name": "Illuminate",
+    "description": "The Pokémon ignores changes to targets' evasiveness and its\naccuracy cannot be lowered."
+  },
+  {
+    "id": "36",
+    "slug": "trace",
+    "slugLoc": "trace",
+    "name": "Trace",
+    "description": "When the Pokémon enters a battle, it changes its Ability to\nmatch that of an opponent."
+  },
+  {
+    "id": "37",
+    "slug": "huge-power",
+    "slugLoc": "huge-power",
+    "name": "Huge Power",
+    "description": "Doubles the power of the Pokémon's physical moves."
+  },
+  {
+    "id": "38",
+    "slug": "poison-point",
+    "slugLoc": "poison-point",
+    "name": "Poison Point",
+    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned."
+  },
+  {
+    "id": "39",
+    "slug": "inner-focus",
+    "slugLoc": "inner-focus",
+    "name": "Inner Focus",
+    "description": "The Pokémon never flinches when attacked and is unaffected\nby Intimidate."
+  },
+  {
+    "id": "40",
+    "slug": "magma-armor",
+    "slugLoc": "magma-armor",
+    "name": "Magma Armor",
+    "description": "The Pokémon cannot be frozen."
+  },
+  {
+    "id": "43",
+    "slug": "soundproof",
+    "slugLoc": "soundproof",
+    "name": "Soundproof",
+    "description": "The Pokémon is immune to sound-based moves."
+  },
+  {
+    "id": "44",
+    "slug": "rain-dish",
+    "slugLoc": "rain-dish",
+    "name": "Rain Dish",
+    "description": "The Pokémon has 1/16 of its max HP restored at the end of\nevery turn in rain."
+  },
+  {
+    "id": "45",
+    "slug": "sand-stream",
+    "slugLoc": "sand-stream",
+    "name": "Sand Stream",
+    "description": "Summons a sandstorm for 5 turns when the Pokémon enters\na battle."
+  },
+  {
+    "id": "46",
+    "slug": "pressure",
+    "slugLoc": "pressure",
+    "name": "Pressure",
+    "description": "Causes opponents to expend 1 more PP when using moves\nagainst the Pokémon."
+  },
+  {
+    "id": "47",
+    "slug": "thick-fat",
+    "slugLoc": "thick-fat",
+    "name": "Thick Fat",
+    "description": "Halves the damage the Pokémon takes from Fire- and Ice-type\nmoves."
+  },
+  {
+    "id": "48",
+    "slug": "early-bird",
+    "slugLoc": "early-bird",
+    "name": "Early Bird",
+    "description": "The Pokémon awakens from sleep twice as fast as other\nPokémon."
+  },
+  {
+    "id": "49",
+    "slug": "flame-body",
+    "slugLoc": "flame-body",
+    "name": "Flame Body",
+    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being burned."
+  },
+  {
+    "id": "51",
+    "slug": "keen-eye",
+    "slugLoc": "keen-eye",
+    "name": "Keen Eye",
+    "description": "The Pokémon ignores changes to targets' evasiveness and its\naccuracy cannot be lowered."
+  },
+  {
+    "id": "52",
+    "slug": "hyper-cutter",
+    "slugLoc": "hyper-cutter",
+    "name": "Hyper Cutter",
+    "description": "The Pokémon's Attack stat cannot be lowered by other\nPokémon's moves or Abilities."
+  },
+  {
+    "id": "53",
+    "slug": "pickup",
+    "slugLoc": "pickup",
+    "name": "Pickup",
+    "description": "If the Pokémon is not already holding an item, at the end of\nthe turn it will pick up an item that was consumed by another\nPokémon."
+  },
+  {
+    "id": "55",
+    "slug": "hustle",
+    "slugLoc": "hustle",
+    "name": "Hustle",
+    "description": "When the Pokémon uses physical moves, its Attack stat is\nboosted by 50%, but its accuracy is lowered by 20%."
+  },
+  {
+    "id": "56",
+    "slug": "cute-charm",
+    "slugLoc": "cute-charm",
+    "name": "Cute Charm",
+    "description": "When the Pokémon is hit by a contact move, the attacker has\na 30% chance of gaining the Infatuated status if the attacker\nand the Pokémon are of opposite genders."
+  },
+  {
+    "id": "57",
+    "slug": "plus",
+    "slugLoc": "plus",
+    "name": "Plus",
+    "description": "Boosts the Pokémon's Sp. Atk stat by 50% if an ally with the\nPlus or Minus Ability is also in battle."
+  },
+  {
+    "id": "58",
+    "slug": "minus",
+    "slugLoc": "minus",
+    "name": "Minus",
+    "description": "Boosts the Pokémon's Sp. Atk stat by 50% if an ally with the\nPlus or Minus Ability is also in battle."
+  },
+  {
+    "id": "59",
+    "slug": "forecast",
+    "slugLoc": "forecast",
+    "name": "Forecast",
+    "description": "The Pokémon transforms with the weather to change its type to\nWater, Fire, or Ice."
+  },
+  {
+    "id": "60",
+    "slug": "sticky-hold",
+    "slugLoc": "sticky-hold",
+    "name": "Sticky Hold",
+    "description": "The Pokémon's held item cannot be stolen or removed by other\nPokémon."
+  },
+  {
+    "id": "61",
+    "slug": "shed-skin",
+    "slugLoc": "shed-skin",
+    "name": "Shed Skin",
+    "description": "The Pokémon has a 30% chance of curing its own status\nconditions at the end of every turn."
+  },
+  {
+    "id": "62",
+    "slug": "guts",
+    "slugLoc": "guts",
+    "name": "Guts",
+    "description": "When the Pokémon has a status condition, its Attack stat is\nboosted by 50%. Being burned does not halve the damage\ndealt by the Pokémon's physical moves."
+  },
+  {
+    "id": "63",
+    "slug": "marvel-scale",
+    "slugLoc": "marvel-scale",
+    "name": "Marvel Scale",
+    "description": "When the Pokémon has a status condition, its Defense stat is\nboosted by 50%."
+  },
+  {
+    "id": "65",
+    "slug": "overgrow",
+    "slugLoc": "overgrow",
+    "name": "Overgrow",
+    "description": "Boosts the power of the Pokémon's Grass-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  {
+    "id": "66",
+    "slug": "blaze",
+    "slugLoc": "blaze",
+    "name": "Blaze",
+    "description": "Boosts the power of the Pokémon's Fire-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  {
+    "id": "67",
+    "slug": "torrent",
+    "slugLoc": "torrent",
+    "name": "Torrent",
+    "description": "Boosts the power of the Pokémon's Water-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  {
+    "id": "68",
+    "slug": "swarm",
+    "slugLoc": "swarm",
+    "name": "Swarm",
+    "description": "Boosts the power of the Pokémon's Bug-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  {
+    "id": "69",
+    "slug": "rock-head",
+    "slugLoc": "rock-head",
+    "name": "Rock Head",
+    "description": "The Pokémon will not lose HP due to recoil damage from\nits moves."
+  },
+  {
+    "id": "70",
+    "slug": "drought",
+    "slugLoc": "drought",
+    "name": "Drought",
+    "description": "Summons harsh sunlight for 5 turns when the Pokémon enters\na battle."
+  },
+  {
+    "id": "72",
+    "slug": "vital-spirit",
+    "slugLoc": "vital-spirit",
+    "name": "Vital Spirit",
+    "description": "The Pokémon cannot become drowsy or be put to sleep."
+  },
+  {
+    "id": "73",
+    "slug": "white-smoke",
+    "slugLoc": "white-smoke",
+    "name": "White Smoke",
+    "description": "The Pokémon's stats cannot be lowered by other Pokémon's\nmoves or Abilities."
+  },
+  {
+    "id": "74",
+    "slug": "pure-power",
+    "slugLoc": "pure-power",
+    "name": "Pure Power",
+    "description": "Doubles the power of the Pokémon's physical moves."
+  },
+  {
+    "id": "75",
+    "slug": "shell-armor",
+    "slugLoc": "shell-armor",
+    "name": "Shell Armor",
+    "description": "Attacks landed on the Pokémon will never be critical hits."
+  },
+  {
+    "id": "77",
+    "slug": "tangled-feet",
+    "slugLoc": "tangled-feet",
+    "name": "Tangled Feet",
+    "description": "Doubles the Pokémon's evasiveness if it is confused."
+  },
+  {
+    "id": "78",
+    "slug": "motor-drive",
+    "slugLoc": "motor-drive",
+    "name": "Motor Drive",
+    "description": "Electric-type moves do not work on the Pokémon. Instead, they\nboost its Speed stat by 1 stage."
+  },
+  {
+    "id": "79",
+    "slug": "rivalry",
+    "slugLoc": "rivalry",
+    "name": "Rivalry",
+    "description": "Boosts the power of the Pokémon's moves by 25% against\ntargets of the same gender, and lowers it by 25% against targets\nof the opposite gender. The power remains the same as usual if\neither Pokémon's gender is unknown."
+  },
+  {
+    "id": "80",
+    "slug": "steadfast",
+    "slugLoc": "steadfast",
+    "name": "Steadfast",
+    "description": "When the Pokémon flinches, its Speed stat is boosted by\n1 stage."
+  },
+  {
+    "id": "81",
+    "slug": "snow-cloak",
+    "slugLoc": "snow-cloak",
+    "name": "Snow Cloak",
+    "description": "Boosts the Pokémon's evasiveness by 25% in snow."
+  },
+  {
+    "id": "82",
+    "slug": "gluttony",
+    "slugLoc": "gluttony",
+    "name": "Gluttony",
+    "description": "If the Pokémon is holding a Berry to be eaten when its HP drops\nto 1/4 or less of its max, it will instead eat the Berry when its HP\ndrops to 1/2 or less of its max."
+  },
+  {
+    "id": "83",
+    "slug": "anger-point",
+    "slugLoc": "anger-point",
+    "name": "Anger Point",
+    "description": "Boosts the Pokémon's Attack stat to its sixth stage when the\nPokémon takes a critical hit."
+  },
+  {
+    "id": "84",
+    "slug": "unburden",
+    "slugLoc": "unburden",
+    "name": "Unburden",
+    "description": "Doubles the Pokémon's Speed stat when its held item is\nconsumed or lost."
+  },
+  {
+    "id": "85",
+    "slug": "heatproof",
+    "slugLoc": "heatproof",
+    "name": "Heatproof",
+    "description": "Halves the damage the Pokémon takes from Fire-type moves\nand from being burned."
+  },
+  {
+    "id": "86",
+    "slug": "simple",
+    "slugLoc": "simple",
+    "name": "Simple",
+    "description": "Doubles the Pokémon's stat changes."
+  },
+  {
+    "id": "87",
+    "slug": "dry-skin",
+    "slugLoc": "dry-skin",
+    "name": "Dry Skin",
+    "description": "Water-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP. However, the Pokémon takes 25%\nmore damage from Fire-type moves. The Pokémon has 1/8 of\nits max HP restored at the end of every turn in rain, but it loses\n1/8 of its max HP at the end of every turn in harsh sunlight."
+  },
+  {
+    "id": "89",
+    "slug": "iron-fist",
+    "slugLoc": "iron-fist",
+    "name": "Iron Fist",
+    "description": "Boosts the power of the Pokémon's punching moves by 20%."
+  },
+  {
+    "id": "90",
+    "slug": "poison-heal",
+    "slugLoc": "poison-heal",
+    "name": "Poison Heal",
+    "description": "If poisoned or badly poisoned, the Pokémon has 1/8 of its max\nHP restored at the end of every turn instead of losing HP."
+  },
+  {
+    "id": "91",
+    "slug": "adaptability",
+    "slugLoc": "adaptability",
+    "name": "Adaptability",
+    "description": "Boosts the power of moves of the same type as the Pokémon by\n100% instead of 50%."
+  },
+  {
+    "id": "92",
+    "slug": "skill-link",
+    "slugLoc": "skill-link",
+    "name": "Skill Link",
+    "description": "The Pokémon's multistrike moves always hit the maximum\nnumber of times."
+  },
+  {
+    "id": "93",
+    "slug": "hydration",
+    "slugLoc": "hydration",
+    "name": "Hydration",
+    "description": "Cures the Pokémon's status conditions at the end of every\nturn in rain."
+  },
+  {
+    "id": "94",
+    "slug": "solar-power",
+    "slugLoc": "solar-power",
+    "name": "Solar Power",
+    "description": "In harsh sunlight, the Pokémon's Sp. Atk stat is boosted by 50%,\nbut it loses 1/8 of its max HP at the end of every turn."
+  },
+  {
+    "id": "95",
+    "slug": "quick-feet",
+    "slugLoc": "quick-feet",
+    "name": "Quick Feet",
+    "description": "When the Pokémon has a status condition, its Speed stat is\nboosted by 50%. Being paralyzed does not lower the\nPokémon's Speed stat."
+  },
+  {
+    "id": "97",
+    "slug": "sniper",
+    "slugLoc": "sniper",
+    "name": "Sniper",
+    "description": "Boosts the power of the Pokémon's critical hits by 125%\ninstead of 50%."
+  },
+  {
+    "id": "98",
+    "slug": "magic-guard",
+    "slugLoc": "magic-guard",
+    "name": "Magic Guard",
+    "description": "The Pokémon takes damage only from attacks."
+  },
+  {
+    "id": "99",
+    "slug": "no-guard",
+    "slugLoc": "no-guard",
+    "name": "No Guard",
+    "description": "The accuracy of moves used both by and against the Pokémon\nbecomes 100%."
+  },
+  {
+    "id": "100",
+    "slug": "stall",
+    "slugLoc": "stall",
+    "name": "Stall",
+    "description": "The Pokémon's moves go last among moves of the same priority."
+  },
+  {
+    "id": "101",
+    "slug": "technician",
+    "slugLoc": "technician",
+    "name": "Technician",
+    "description": "Boosts the power of the Pokémon's moves by 50% if their\npower is 60 or less."
+  },
+  {
+    "id": "102",
+    "slug": "leaf-guard",
+    "slugLoc": "leaf-guard",
+    "name": "Leaf Guard",
+    "description": "The Pokémon is immune to status conditions in harsh sunlight."
+  },
+  {
+    "id": "103",
+    "slug": "klutz",
+    "slugLoc": "klutz",
+    "name": "Klutz",
+    "description": "Items do not work when held by the Pokémon."
+  },
+  {
+    "id": "104",
+    "slug": "mold-breaker",
+    "slugLoc": "mold-breaker",
+    "name": "Mold Breaker",
+    "description": "The Pokémon's moves are unaffected by the Ability of the\ntarget (with certain exceptions)."
+  },
+  {
+    "id": "105",
+    "slug": "super-luck",
+    "slugLoc": "super-luck",
+    "name": "Super Luck",
+    "description": "The Pokémon has a 1-stage Critical-Hit Ratio Boost."
+  },
+  {
+    "id": "106",
+    "slug": "aftermath",
+    "slugLoc": "aftermath",
+    "name": "Aftermath",
+    "description": "Attackers that knock out the Pokémon with a contact move take\ndamage equal to 1/4 of their max HP."
+  },
+  {
+    "id": "107",
+    "slug": "anticipation",
+    "slugLoc": "anticipation",
+    "name": "Anticipation",
+    "description": "When the Pokémon enters a battle, it senses whether the\nopponents know any one-hit KO moves or moves that are super\neffective against it."
+  },
+  {
+    "id": "109",
+    "slug": "unaware",
+    "slugLoc": "unaware",
+    "name": "Unaware",
+    "description": "The Pokémon ignores the target's stat changes when attacking,\nand ignores the attacker's stat changes when being attacked.\nIt cannot ignore changes to the Speed stat, however."
+  },
+  {
+    "id": "111",
+    "slug": "filter",
+    "slugLoc": "filter",
+    "name": "Filter",
+    "description": "Reduces the damage the Pokémon takes from supereffective\nmoves by 25%."
+  },
+  {
+    "id": "113",
+    "slug": "scrappy",
+    "slugLoc": "scrappy",
+    "name": "Scrappy",
+    "description": "The Pokémon can hit Ghost types with Normal- and\nFighting-type moves. It is also unaffected by Intimidate."
+  },
+  {
+    "id": "115",
+    "slug": "ice-body",
+    "slugLoc": "ice-body",
+    "name": "Ice Body",
+    "description": "The Pokémon has 1/16 of its max HP restored at the end of\nevery turn in snow."
+  },
+  {
+    "id": "116",
+    "slug": "solid-rock",
+    "slugLoc": "solid-rock",
+    "name": "Solid Rock",
+    "description": "Reduces the damage the Pokémon takes from supereffective\nmoves by 25%."
+  },
+  {
+    "id": "117",
+    "slug": "snow-warning",
+    "slugLoc": "snow-warning",
+    "name": "Snow Warning",
+    "description": "Summons snow for 5 turns when the Pokémon enters a battle."
+  },
+  {
+    "id": "119",
+    "slug": "frisk",
+    "slugLoc": "frisk",
+    "name": "Frisk",
+    "description": "When the Pokémon enters a battle, it identifies opponents'\nheld items."
+  },
+  {
+    "id": "120",
+    "slug": "reckless",
+    "slugLoc": "reckless",
+    "name": "Reckless",
+    "description": "Boosts the power of the Pokémon's moves by 20% if they have\nrecoil or crash damage."
+  },
+  {
+    "id": "124",
+    "slug": "pickpocket",
+    "slugLoc": "pickpocket",
+    "name": "Pickpocket",
+    "description": "When the Pokémon is hit by a contact move, it will steal the\nheld item of the attacker if it is not already holding an item."
+  },
+  {
+    "id": "125",
+    "slug": "sheer-force",
+    "slugLoc": "sheer-force",
+    "name": "Sheer Force",
+    "description": "The Pokémon's moves lose their additional effects, but the\npower of those moves will be boosted by 30%."
+  },
+  {
+    "id": "126",
+    "slug": "contrary",
+    "slugLoc": "contrary",
+    "name": "Contrary",
+    "description": "Reverses any stat changes affecting the Pokémon so that\nattempts to boost its stats instead lower them—and attempts\nto lower its stats will boost them."
+  },
+  {
+    "id": "127",
+    "slug": "unnerve",
+    "slugLoc": "unnerve",
+    "name": "Unnerve",
+    "description": "Makes opponents unable to eat Berries."
+  },
+  {
+    "id": "128",
+    "slug": "defiant",
+    "slugLoc": "defiant",
+    "name": "Defiant",
+    "description": "When the Pokémon has any of its stats lowered by an opponent,\nits Attack stat is boosted by 2 stages."
+  },
+  {
+    "id": "130",
+    "slug": "cursed-body",
+    "slugLoc": "cursed-body",
+    "name": "Cursed Body",
+    "description": "When the Pokémon takes damage from a move, the attacker has\na 30% chance of gaining the Move Disabled status for 4 turns."
+  },
+  {
+    "id": "131",
+    "slug": "healer",
+    "slugLoc": "healer",
+    "name": "Healer",
+    "description": "The Pokémon has a 50% chance of curing the status conditions\nof its allies at the end of every turn."
+  },
+  {
+    "id": "132",
+    "slug": "friend-guard",
+    "slugLoc": "friend-guard",
+    "name": "Friend Guard",
+    "description": "Reduces the damage allies take by 25%."
+  },
+  {
+    "id": "133",
+    "slug": "weak-armor",
+    "slugLoc": "weak-armor",
+    "name": "Weak Armor",
+    "description": "When the Pokémon takes damage from a physical move, its\nDefense stat is lowered by 1 stage, but its Speed stat is boosted\nby 2 stages."
+  },
+  {
+    "id": "134",
+    "slug": "heavy-metal",
+    "slugLoc": "heavy-metal",
+    "name": "Heavy Metal",
+    "description": "Doubles the Pokémon's weight."
+  },
+  {
+    "id": "135",
+    "slug": "light-metal",
+    "slugLoc": "light-metal",
+    "name": "Light Metal",
+    "description": "Halves the Pokémon's weight."
+  },
+  {
+    "id": "136",
+    "slug": "multiscale",
+    "slugLoc": "multiscale",
+    "name": "Multiscale",
+    "description": "Halves the damage the Pokémon takes while its HP is full."
+  },
+  {
+    "id": "139",
+    "slug": "harvest",
+    "slugLoc": "harvest",
+    "name": "Harvest",
+    "description": "If the Pokémon has used a Berry, it has a 50% chance of creating\nanother one at the end of every turn. In harsh sunlight, the\nPokémon will definitely create a Berry."
+  },
+  {
+    "id": "140",
+    "slug": "telepathy",
+    "slugLoc": "telepathy",
+    "name": "Telepathy",
+    "description": "The Pokémon dodges attacks from its allies."
+  },
+  {
+    "id": "141",
+    "slug": "moody",
+    "slugLoc": "moody",
+    "name": "Moody",
+    "description": "At the end of every turn, one of the Pokémon's stats will be\nboosted by 2 stages, but another will be lowered by 1 stage."
+  },
+  {
+    "id": "142",
+    "slug": "overcoat",
+    "slugLoc": "overcoat",
+    "name": "Overcoat",
+    "description": "The Pokémon takes no damage from sandstorms and is immune\nto moves and Abilities involving powder."
+  },
+  {
+    "id": "143",
+    "slug": "poison-touch",
+    "slugLoc": "poison-touch",
+    "name": "Poison Touch",
+    "description": "When the Pokémon hits a target with a contact move, the target\nhas a 30% chance of being poisoned."
+  },
+  {
+    "id": "144",
+    "slug": "regenerator",
+    "slugLoc": "regenerator",
+    "name": "Regenerator",
+    "description": "The Pokémon has 1/3 of its max HP restored when it switches\nout of battle."
+  },
+  {
+    "id": "145",
+    "slug": "big-pecks",
+    "slugLoc": "big-pecks",
+    "name": "Big Pecks",
+    "description": "The Pokémon's Defense stat cannot be lowered by other\nPokémon's moves or Abilities."
+  },
+  {
+    "id": "146",
+    "slug": "sand-rush",
+    "slugLoc": "sand-rush",
+    "name": "Sand Rush",
+    "description": "Doubles the Pokémon's Speed stat in a sandstorm."
+  },
+  {
+    "id": "148",
+    "slug": "analytic",
+    "slugLoc": "analytic",
+    "name": "Analytic",
+    "description": "Boosts the power of the Pokémon's moves by 30% when the\nPokémon is the last to move that turn."
+  },
+  {
+    "id": "149",
+    "slug": "illusion",
+    "slugLoc": "illusion",
+    "name": "Illusion",
+    "description": "The Pokémon enters battle disguised as the last Pokémon in its\nparty. It reverts to its usual appearance when it takes damage\nfrom a move."
+  },
+  {
+    "id": "150",
+    "slug": "imposter",
+    "slugLoc": "imposter",
+    "name": "Imposter",
+    "description": "The Pokémon transforms into the Pokémon in front of it. It also\ncopies all of that Pokémon's stats apart from its HP."
+  },
+  {
+    "id": "151",
+    "slug": "infiltrator",
+    "slugLoc": "infiltrator",
+    "name": "Infiltrator",
+    "description": "When using its moves, the Pokémon ignores the effects of\ntargets' Light Screen, Reflect, Aurora Veil, Safeguard, and\nsubstitutes."
+  },
+  {
+    "id": "152",
+    "slug": "mummy",
+    "slugLoc": "mummy",
+    "name": "Mummy",
+    "description": "When the Pokémon is hit by a contact move, the attacker has its\nAbility changed to Mummy."
+  },
+  {
+    "id": "153",
+    "slug": "moxie",
+    "slugLoc": "moxie",
+    "name": "Moxie",
+    "description": "When the Pokémon knocks out a target with an attack, its\nAttack stat is boosted by 1 stage."
+  },
+  {
+    "id": "154",
+    "slug": "justified",
+    "slugLoc": "justified",
+    "name": "Justified",
+    "description": "When the Pokémon takes damage from a Dark-type move, its\nAttack stat is boosted by 1 stage."
+  },
+  {
+    "id": "156",
+    "slug": "magic-bounce",
+    "slugLoc": "magic-bounce",
+    "name": "Magic Bounce",
+    "description": "Instead of being affected by other Pokémon's status moves,\nthe Pokémon bounces them back at the user."
+  },
+  {
+    "id": "157",
+    "slug": "sap-sipper",
+    "slugLoc": "sap-sipper",
+    "name": "Sap Sipper",
+    "description": "Grass-type moves do not work on the Pokémon. Instead, they\nboost its Attack stat by 1 stage."
+  },
+  {
+    "id": "158",
+    "slug": "prankster",
+    "slugLoc": "prankster",
+    "name": "Prankster",
+    "description": "Increases the priority of the Pokémon's status moves by 1 stage."
+  },
+  {
+    "id": "159",
+    "slug": "sand-force",
+    "slugLoc": "sand-force",
+    "name": "Sand Force",
+    "description": "Boosts the power of the Pokémon's Rock-, Ground-, and\nSteel-type moves by 30% in a sandstorm."
+  },
+  {
+    "id": "165",
+    "slug": "aroma-veil",
+    "slugLoc": "aroma-veil",
+    "name": "Aroma Veil",
+    "description": "The Pokémon and its allies cannot gain the Infatuated, Taunted,\nUnable to Repeat, Move Disabled, Healing Prevented, or\nEncore statuses."
+  },
+  {
+    "id": "166",
+    "slug": "flower-veil",
+    "slugLoc": "flower-veil",
+    "name": "Flower Veil",
+    "description": "Grass-type allies are immune to status conditions and cannot\nhave their stats lowered."
+  },
+  {
+    "id": "167",
+    "slug": "cheek-pouch",
+    "slugLoc": "cheek-pouch",
+    "name": "Cheek Pouch",
+    "description": "The Pokémon has 1/3 of its max HP restored when it eats a\nBerry, in addition to the Berry's usual effect."
+  },
+  {
+    "id": "168",
+    "slug": "protean",
+    "slugLoc": "protean",
+    "name": "Protean",
+    "description": "Changes the Pokémon's type to the type of the move it's\nabout to use. This works only once per time the Pokémon\nenters battle."
+  },
+  {
+    "id": "169",
+    "slug": "fur-coat",
+    "slugLoc": "fur-coat",
+    "name": "Fur Coat",
+    "description": "Halves the damage the Pokémon takes from physical moves."
+  },
+  {
+    "id": "170",
+    "slug": "magician",
+    "slugLoc": "magician",
+    "name": "Magician",
+    "description": "If the Pokémon is not already holding an item, it will steal the\nheld item from targets it deals damage to with its moves."
+  },
+  {
+    "id": "171",
+    "slug": "bulletproof",
+    "slugLoc": "bulletproof",
+    "name": "Bulletproof",
+    "description": "The Pokémon is immune to ball and bomb moves."
+  },
+  {
+    "id": "172",
+    "slug": "competitive",
+    "slugLoc": "competitive",
+    "name": "Competitive",
+    "description": "When the Pokémon has any of its stats lowered by an opponent,\nits Sp. Atk stat is boosted by 2 stages."
+  },
+  {
+    "id": "173",
+    "slug": "strong-jaw",
+    "slugLoc": "strong-jaw",
+    "name": "Strong Jaw",
+    "description": "Boosts the power of the Pokémon's biting moves by 50%."
+  },
+  {
+    "id": "174",
+    "slug": "refrigerate",
+    "slugLoc": "refrigerate",
+    "name": "Refrigerate",
+    "description": "The Pokémon's Normal-type moves become Ice-type moves\nand their power is boosted by 20%."
+  },
+  {
+    "id": "175",
+    "slug": "sweet-veil",
+    "slugLoc": "sweet-veil",
+    "name": "Sweet Veil",
+    "description": "The Pokémon and its allies cannot become drowsy or be\nput to sleep."
+  },
+  {
+    "id": "176",
+    "slug": "stance-change",
+    "slugLoc": "stance-change",
+    "name": "Stance Change",
+    "description": "The Pokémon changes into its Blade Forme when it attacks\nand changes into its Shield Forme when it uses the move\nKing's Shield."
+  },
+  {
+    "id": "177",
+    "slug": "gale-wings",
+    "slugLoc": "gale-wings",
+    "name": "Gale Wings",
+    "description": "Increases the priority of the Pokémon's Flying-type moves by\n1 stage while its HP is full."
+  },
+  {
+    "id": "178",
+    "slug": "mega-launcher",
+    "slugLoc": "mega-launcher",
+    "name": "Mega Launcher",
+    "description": "Boosts the power of the Pokémon's pulse moves by 50%."
+  },
+  {
+    "id": "180",
+    "slug": "symbiosis",
+    "slugLoc": "symbiosis",
+    "name": "Symbiosis",
+    "description": "When an ally consumes an item, the Pokémon gives its own held\nitem to that ally."
+  },
+  {
+    "id": "181",
+    "slug": "tough-claws",
+    "slugLoc": "tough-claws",
+    "name": "Tough Claws",
+    "description": "Boosts the power of the Pokémon's contact moves by 30%."
+  },
+  {
+    "id": "182",
+    "slug": "pixilate",
+    "slugLoc": "pixilate",
+    "name": "Pixilate",
+    "description": "The Pokémon's Normal-type moves become Fairy-type moves\nand their power is boosted by 20%."
+  },
+  {
+    "id": "183",
+    "slug": "gooey",
+    "slugLoc": "gooey",
+    "name": "Gooey",
+    "description": "When the Pokémon is hit by a contact move, the attacker's\nSpeed stat is lowered by 1 stage."
+  },
+  {
+    "id": "184",
+    "slug": "aerilate",
+    "slugLoc": "aerilate",
+    "name": "Aerilate",
+    "description": "The Pokémon's Normal-type moves become Flying-type moves\nand their power is boosted by 20%."
+  },
+  {
+    "id": "185",
+    "slug": "parental-bond",
+    "slugLoc": "parental-bond",
+    "name": "Parental Bond",
+    "description": "The parent and child attack one after the other. The power of\nthe child's attacks is 1/4 of those of the parent."
+  },
+  {
+    "id": "187",
+    "slug": "fairy-aura",
+    "slugLoc": "fairy-aura",
+    "name": "Fairy Aura",
+    "description": "Boosts the power of the Fairy-type moves of all Pokémon on the\nfield by 33%."
+  },
+  {
+    "id": "192",
+    "slug": "stamina",
+    "slugLoc": "stamina",
+    "name": "Stamina",
+    "description": "When the Pokémon takes damage from a move, its Defense stat\nis boosted by 1 stage."
+  },
+  {
+    "id": "196",
+    "slug": "merciless",
+    "slugLoc": "merciless",
+    "name": "Merciless",
+    "description": "The Pokémon's attacks become critical hits if the target is\npoisoned or badly poisoned."
+  },
+  {
+    "id": "199",
+    "slug": "water-bubble",
+    "slugLoc": "water-bubble",
+    "name": "Water Bubble",
+    "description": "Halves the damage the Pokémon takes from Fire-type moves\nand doubles the power of its Water-type moves. The Pokémon\ncannot be burned."
+  },
+  {
+    "id": "201",
+    "slug": "berserk",
+    "slugLoc": "berserk",
+    "name": "Berserk",
+    "description": "Boosts the Pokémon's Sp. Atk stat by 1 stage when an attack\ncauses its HP to drop to 1/2 or less of its max."
+  },
+  {
+    "id": "202",
+    "slug": "slush-rush",
+    "slugLoc": "slush-rush",
+    "name": "Slush Rush",
+    "description": "Doubles the Pokémon's Speed stat in snow."
+  },
+  {
+    "id": "203",
+    "slug": "long-reach",
+    "slugLoc": "long-reach",
+    "name": "Long Reach",
+    "description": "None of the moves used by the Pokémon are considered\ncontact moves."
+  },
+  {
+    "id": "204",
+    "slug": "liquid-voice",
+    "slugLoc": "liquid-voice",
+    "name": "Liquid Voice",
+    "description": "The Pokémon's sound-based moves become Water-type moves."
+  },
+  {
+    "id": "207",
+    "slug": "surge-surfer",
+    "slugLoc": "surge-surfer",
+    "name": "Surge Surfer",
+    "description": "Doubles the Pokémon's Speed stat on Electric Terrain."
+  },
+  {
+    "id": "209",
+    "slug": "disguise",
+    "slugLoc": "disguise",
+    "name": "Disguise",
+    "description": "When the Pokémon is in its Disguised Form and would take\ndamage from a move, it loses 1/8 of its max HP instead of\ntaking the damage, then changes into its Busted Form."
+  },
+  {
+    "id": "212",
+    "slug": "corrosion",
+    "slugLoc": "corrosion",
+    "name": "Corrosion",
+    "description": "The Pokémon can poison or badly poison targets even if they're\nSteel or Poison types."
+  },
+  {
+    "id": "214",
+    "slug": "queenly-majesty",
+    "slugLoc": "queenly-majesty",
+    "name": "Queenly Majesty",
+    "description": "Opponents are unable to use priority moves against the\nPokémon or its allies."
+  },
+  {
+    "id": "215",
+    "slug": "innards-out",
+    "slugLoc": "innards-out",
+    "name": "Innards Out",
+    "description": "When the Pokémon takes damage from a move that knocks it\nout, it deals the same amount of damage to the attacker."
+  },
+  {
+    "id": "222",
+    "slug": "receiver",
+    "slugLoc": "receiver",
+    "name": "Receiver",
+    "description": "The Pokémon changes its Ability to match that of a\ndefeated ally."
+  },
+  {
+    "id": "240",
+    "slug": "mirror-armor",
+    "slugLoc": "mirror-armor",
+    "name": "Mirror Armor",
+    "description": "Instead of being affected by stat-lowering effects, the Pokémon\nbounces them back at whichever Pokémon caused them."
+  },
+  {
+    "id": "242",
+    "slug": "stalwart",
+    "slugLoc": "stalwart",
+    "name": "Stalwart",
+    "description": "The Pokémon ignores the effects of Abilities and moves that\ndraw in moves."
+  },
+  {
+    "id": "245",
+    "slug": "sand-spit",
+    "slugLoc": "sand-spit",
+    "name": "Sand Spit",
+    "description": "Summons a sandstorm for 5 turns when the Pokémon takes\ndamage from moves."
+  },
+  {
+    "id": "247",
+    "slug": "ripen",
+    "slugLoc": "ripen",
+    "name": "Ripen",
+    "description": "Doubles the effects of Berries eaten by the Pokémon."
+  },
+  {
+    "id": "250",
+    "slug": "mimicry",
+    "slugLoc": "mimicry",
+    "name": "Mimicry",
+    "description": "The Pokémon's type changes depending on the terrain."
+  },
+  {
+    "id": "251",
+    "slug": "screen-cleaner",
+    "slugLoc": "screen-cleaner",
+    "name": "Screen Cleaner",
+    "description": "When the Pokémon enters a battle, it removes the Light Screen,\nReflect, and Aurora Veil statuses."
+  },
+  {
+    "id": "254",
+    "slug": "wandering-spirit",
+    "slugLoc": "wandering-spirit",
+    "name": "Wandering Spirit",
+    "description": "When the Pokémon is hit by a contact move, it swaps Abilities\nwith the attacker."
+  },
+  {
+    "id": "258",
+    "slug": "hunger-switch",
+    "slugLoc": "hunger-switch",
+    "name": "Hunger Switch",
+    "description": "The Pokémon changes its form, alternating between its Full Belly\nMode and Hangry Mode at the end of every turn."
+  },
+  {
+    "id": "259",
+    "slug": "quick-draw",
+    "slugLoc": "quick-draw",
+    "name": "Quick Draw",
+    "description": "The Pokémon's moves have a 30% chance of going first among\nmoves of the same priority."
+  },
+  {
+    "id": "260",
+    "slug": "unseen-fist",
+    "slugLoc": "unseen-fist",
+    "name": "Unseen Fist",
+    "description": "When the Pokémon uses contact moves, it can hit even targets\nthat are protecting themselves, dealing 1/4 of the damage that\nthe move would otherwise deal. Everything aside from the\ntarget's protective effects is still triggered."
+  },
+  {
+    "id": "261",
+    "slug": "curious-medicine",
+    "slugLoc": "curious-medicine",
+    "name": "Curious Medicine",
+    "description": "When the Pokémon enters a battle, it removes all stat changes\nfrom its allies."
+  },
+  {
+    "id": "272",
+    "slug": "purifying-salt",
+    "slugLoc": "purifying-salt",
+    "name": "Purifying Salt",
+    "description": "Halves the damage the Pokémon takes from Ghost-type moves.\nThe Pokémon is immune to status conditions."
+  },
+  {
+    "id": "278",
+    "slug": "zero-to-hero",
+    "slugLoc": "zero-to-hero",
+    "name": "Zero to Hero",
+    "description": "The Pokémon changes into its Hero Form when it switches out\nof battle."
+  },
+  {
+    "id": "280",
+    "slug": "electromorphosis",
+    "slugLoc": "electromorphosis",
+    "name": "Electromorphosis",
+    "description": "When the Pokémon takes damage from a move, it gains the\nElectric Boost status."
+  },
+  {
+    "id": "290",
+    "slug": "opportunist",
+    "slugLoc": "opportunist",
+    "name": "Opportunist",
+    "description": "When an opponent's stats are boosted, the Pokémon boosts its\nown stats in the exact same way."
+  },
+  {
+    "id": "291",
+    "slug": "cud-chew",
+    "slugLoc": "cud-chew",
+    "name": "Cud Chew",
+    "description": "If the Pokémon eats a Berry, it will eat that same Berry once\nmore at the end of the next turn."
+  },
+  {
+    "id": "292",
+    "slug": "sharpness",
+    "slugLoc": "sharpness",
+    "name": "Sharpness",
+    "description": "Boosts the power of the Pokémon's slicing moves by 50%."
+  },
+  {
+    "id": "293",
+    "slug": "supreme-overlord",
+    "slugLoc": "supreme-overlord",
+    "name": "Supreme Overlord",
+    "description": "When the Pokémon enters a battle, the power of its moves is\nboosted by 10% for each Pokémon in its party that has been\ndefeated in the battle already. The maximum boost is 50%."
+  },
+  {
+    "id": "295",
+    "slug": "toxic-debris",
+    "slugLoc": "toxic-debris",
+    "name": "Toxic Debris",
+    "description": "When the Pokémon takes damage from a physical move, it\ngives the opponent's side the Toxic Spikes status."
+  },
+  {
+    "id": "296",
+    "slug": "armor-tail",
+    "slugLoc": "armor-tail",
+    "name": "Armor Tail",
+    "description": "Opponents are unable to use priority moves against the\nPokémon or its allies."
+  },
+  {
+    "id": "297",
+    "slug": "earth-eater",
+    "slugLoc": "earth-eater",
+    "name": "Earth Eater",
+    "description": "Ground-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP."
+  },
+  {
+    "id": "299",
+    "slug": "hospitality",
+    "slugLoc": "hospitality",
+    "name": "Hospitality",
+    "description": "When the Pokémon enters a battle, it restores 1/4 of its ally's\nmax HP."
+  },
+  {
+    "id": "306",
+    "slug": "supersweet-syrup",
+    "slugLoc": "supersweet-syrup",
+    "name": "Supersweet Syrup",
+    "description": "When the Pokémon enters a battle, opponents' evasiveness is\nlowered by 1 stage. This Ability is triggered only once per battle."
+  },
+  {
+    "id": "311",
+    "slug": "piercing-drill",
+    "slugLoc": "piercing-drill",
+    "name": "Piercing Drill",
+    "description": "When the Pokémon uses contact moves, it can hit even targets\nthat are protecting themselves, dealing 1/4 of the damage that\nthe move would otherwise deal. Everything aside from the\ntarget's protective effects is still triggered."
+  },
+  {
+    "id": "312",
+    "slug": "dragonize",
+    "slugLoc": "dragonize",
+    "name": "Dragonize",
+    "description": "The Pokémon's Normal-type moves become Dragon-type moves\nand their power is boosted by 20%."
+  },
+  {
+    "id": "315",
+    "slug": "mega-sol",
+    "slugLoc": "mega-sol",
+    "name": "Mega Sol",
+    "description": "Even when the sunlight has not turned harsh, the Pokémon can\nuse its moves as if the weather were harsh sunlight."
+  },
+  {
+    "id": "318",
+    "slug": "spicy-spray",
+    "slugLoc": "spicy-spray",
+    "name": "Spicy Spray",
+    "description": "When the Pokémon takes damage from a move, it burns\nthe attacker."
+  }
+]

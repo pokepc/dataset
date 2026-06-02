@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "slug": "harsh-sunlight",
+    "slugLoc": "sole-intenso",
+    "name": "Sole intenso",
+    "description": "Aumenta del 50% i danni inflitti dalle mosse\ndi tipo Fuoco e dimezza i danni inflitti da quelle\ndi tipo Acqua."
+  },
+  {
+    "id": "2",
+    "slug": "rain",
+    "slugLoc": "pioggia",
+    "name": "Pioggia",
+    "description": "Aumenta del 50% i danni inflitti dalle mosse\ndi tipo Acqua e dimezza i danni inflitti da quelle\ndi tipo Fuoco."
+  },
+  {
+    "id": "3",
+    "slug": "sandstorm",
+    "slugLoc": "tempesta-di-sabbia",
+    "name": "Tempesta di sabbia",
+    "description": "Alla fine di ogni turno, infligge ai Pokémon che\nnon sono di tipo Roccia, Terra o Acciaio danni\npari a 1/16 dei loro PS massimi. Inoltre, aumenta\ndel 50% la Difesa Speciale dei Pokémon\ndi tipo Roccia."
+  },
+  {
+    "id": "4",
+    "slug": "snow",
+    "slugLoc": "neve",
+    "name": "Neve",
+    "description": "Aumenta del 50% la Difesa dei Pokémon\ndi tipo Ghiaccio."
+  },
+  {
+    "id": "5",
+    "slug": "electric-terrain",
+    "slugLoc": "campo-elettrico",
+    "name": "Campo elettrico",
+    "description": "Aumenta del 30% la potenza delle mosse di tipo\nElettro e rende immuni allo stato Sonno.\nHa effetto solo sui Pokémon a contatto\ncon il terreno."
+  },
+  {
+    "id": "6",
+    "slug": "grassy-terrain",
+    "slugLoc": "campo-erboso",
+    "name": "Campo erboso",
+    "description": "Aumenta del 30% la potenza delle mosse di tipo\nErba e restituisce 1/16 dei PS massimi alla fine\ndi ogni turno. Ha effetto solo sui Pokémon\na contatto con il terreno."
+  },
+  {
+    "id": "7",
+    "slug": "misty-terrain",
+    "slugLoc": "campo-nebbioso",
+    "name": "Campo nebbioso",
+    "description": "Dimezza la potenza delle mosse di tipo Drago\ne rende immuni ai problemi di stato e allo stato\nConfusione. Ha effetto solo sui Pokémon\na contatto con il terreno."
+  },
+  {
+    "id": "8",
+    "slug": "trick-room",
+    "slugLoc": "zona-distorta",
+    "name": "Zona distorta",
+    "description": "Fa sì che i Pokémon con la Velocità più bassa\nagiscano per primi."
+  },
+  {
+    "id": "9",
+    "slug": "magic-room",
+    "slugLoc": "zona-magica",
+    "name": "Zona magica",
+    "description": "Annulla l'effetto della maggior parte\ndegli strumenti."
+  },
+  {
+    "id": "10",
+    "slug": "wonder-room",
+    "slugLoc": "zona-miracolosa",
+    "name": "Zona miracolosa",
+    "description": "Inverte la Difesa con la Difesa Speciale."
+  },
+  {
+    "id": "11",
+    "slug": "critical-hit-ratio-boost",
+    "slugLoc": "brutto-colpo",
+    "name": "Brutto colpo+",
+    "description": "Aumenta la probabilità di sferrare brutti colpi."
+  },
+  {
+    "id": "12",
+    "slug": "confused",
+    "slugLoc": "confusione",
+    "name": "Confusione",
+    "description": "Per un periodo che va da 1 a 4 turni, fa sì che\nci sia una possibilità su tre che il Pokémon\nsi colpisca da solo."
+  },
+  {
+    "id": "13",
+    "slug": "infatuated",
+    "slugLoc": "infatuazione",
+    "name": "Infatuazione",
+    "description": "Fa sì che le mosse del Pokémon abbiano il 50%\ndi probabilità di fallire se in campo è presente\nil Pokémon che gli ha causato questo stato."
+  },
+  {
+    "id": "15",
+    "slug": "drowsy",
+    "slugLoc": "sonnolenza",
+    "name": "Sonnolenza",
+    "description": "Causa lo stato Sonno alla fine del turno\nsuccessivo a quello in cui il Pokémon è entrato\nin questo stato."
+  },
+  {
+    "id": "16",
+    "slug": "encore",
+    "slugLoc": "ripetizione",
+    "name": "Ripetizione",
+    "description": "Costringe il Pokémon a usare solamente\nla mossa {0}."
+  },
+  {
+    "id": "17",
+    "slug": "no-ability",
+    "slugLoc": "abilita-bloccata",
+    "name": "Abilità bloccata",
+    "description": "Neutralizza l'effetto dell'abilità del Pokémon."
+  },
+  {
+    "id": "18",
+    "slug": "unable-to-repeat",
+    "slugLoc": "ripetizione-bloccata",
+    "name": "Ripetizione bloccata",
+    "description": "Fa sì che il Pokémon non possa usare la stessa\nmossa più volte di seguito."
+  },
+  {
+    "id": "19",
+    "slug": "tailwind",
+    "slugLoc": "vento-in-coda",
+    "name": "Vento in coda",
+    "description": "Raddoppia la Velocità."
+  },
+  {
+    "id": "24",
+    "slug": "move-disabled",
+    "slugLoc": "mossa-bloccata",
+    "name": "Mossa bloccata",
+    "description": "Impedisce al Pokémon di usare la mossa\n{0}."
+  },
+  {
+    "id": "25",
+    "slug": "cant-escape",
+    "slugLoc": "antifuga",
+    "name": "Antifuga",
+    "description": "Impedisce la sostituzione."
+  },
+  {
+    "id": "26",
+    "slug": "locked-on",
+    "slugLoc": "localizzato",
+    "name": "Localizzato",
+    "description": "Fa sì che la mossa sferrata nel turno successivo\nall'utilizzo di quella che ha causato questo\nstato vada sicuramente a segno sul Pokémon\nlocalizzato."
+  },
+  {
+    "id": "28",
+    "slug": "electric-boost",
+    "slugLoc": "carica-elettrica",
+    "name": "Carica elettrica",
+    "description": "Raddoppia la potenza della mossa di tipo Elettro\nsferrata nel turno successivo."
+  },
+  {
+    "id": "29",
+    "slug": "gravity",
+    "slugLoc": "gravita",
+    "name": "Gravità",
+    "description": "Aumenta del 67% la precisione delle mosse.\nInoltre, costringe i Pokémon di tipo Volante,\nquelli che hanno l'abilità Levitazione e altri a\nentrare a contatto con il terreno, e impedisce di\nusare mosse che permettono di staccarsi da terra."
+  },
+  {
+    "id": "31",
+    "slug": "safeguard",
+    "slugLoc": "salvaguardia",
+    "name": "Salvaguardia",
+    "description": "Rende immuni ai problemi di stato\ne allo stato Confusione."
+  },
+  {
+    "id": "32",
+    "slug": "stealth-rock",
+    "slugLoc": "rocce-levitanti",
+    "name": "Rocce levitanti",
+    "description": "Infligge ai Pokémon che entrano in campo danni\npari a 1/8 dei loro PS massimi. Questi danni\nvariano a seconda dell'efficacia delle mosse\ndi tipo Roccia sul bersaglio."
+  },
+  {
+    "id": "33",
+    "slug": "stockpiling",
+    "slugLoc": "accumulo",
+    "name": "Accumulo",
+    "description": "Aumenta di 1 grado la Difesa e la Difesa\nSpeciale del Pokémon per ogni livello\ndi Accumulo."
+  },
+  {
+    "id": "34",
+    "slug": "taunted",
+    "slugLoc": "provocazione",
+    "name": "Provocazione",
+    "description": "Costringe il Pokémon a usare solo attacchi."
+  },
+  {
+    "id": "36",
+    "slug": "magnet-rise",
+    "slugLoc": "ascesa-magnetica",
+    "name": "Ascesa magnetica",
+    "description": "Fa sì che il Pokémon non sia più a contatto\ncon il terreno, rendendolo così immune alle\nmosse di tipo Terra e agli stati Punte,\nPunte velenose e Rete vischiosa."
+  },
+  {
+    "id": "37",
+    "slug": "toxic-spikes",
+    "slugLoc": "punte-velenose",
+    "name": "Punte velenose",
+    "description": "Causa lo stato Avvelenamento ai Pokémon che\nentrano in campo, o Iperavvelenamento se\nlo stato Punte velenose viene applicato ancora.\nNon ha effetto su alcuni Pokémon, come quelli\ndi tipo Volante o che hanno l'abilità Levitazione."
+  },
+  {
+    "id": "39",
+    "slug": "wish",
+    "slugLoc": "desiderio",
+    "name": "Desiderio",
+    "description": "Alla fine del turno successivo all'attivazione\ndello stato, restituisce metà dei PS massimi\ndi chi l'ha causato al Pokémon che si trova nella\nposizione in cui è stato attivato."
+  },
+  {
+    "id": "40",
+    "slug": "sticky-web",
+    "slugLoc": "rete-vischiosa",
+    "name": "Rete vischiosa",
+    "description": "Riduce di 1 grado la Velocità dei Pokémon\nche entrano in campo. Non ha effetto su alcuni\nPokémon, come quelli di tipo Volante o che\nhanno l'abilità Levitazione."
+  },
+  {
+    "id": "41",
+    "slug": "ingrained",
+    "slugLoc": "radicamento",
+    "name": "Radicamento",
+    "description": "Restituisce al Pokémon 1/16 dei PS massimi\nalla fine di ogni turno, ma lo costringe a entrare\na contatto con il terreno e gli impedisce\nla sostituzione."
+  },
+  {
+    "id": "42",
+    "slug": "cursed",
+    "slugLoc": "maledizione",
+    "name": "Maledizione",
+    "description": "Fa perdere 1/4 dei PS massimi alla fine\ndi ogni turno."
+  },
+  {
+    "id": "43",
+    "slug": "trick-or-treating",
+    "slugLoc": "halloween",
+    "name": "Halloween",
+    "description": "Rende il Pokémon anche di tipo Spettro."
+  },
+  {
+    "id": "44",
+    "slug": "light-screen",
+    "slugLoc": "schermo-di-luce",
+    "name": "Schermo di luce",
+    "description": "Dimezza i danni subiti dalle mosse speciali\nnelle Lotte in Singolo e li riduce di 1/3\nnelle Lotte in Doppio."
+  },
+  {
+    "id": "45",
+    "slug": "reflect",
+    "slugLoc": "riflesso",
+    "name": "Riflesso",
+    "description": "Dimezza i danni subiti dalle mosse fisiche\nnelle Lotte in Singolo e li riduce di 1/3\nnelle Lotte in Doppio."
+  },
+  {
+    "id": "46",
+    "slug": "sealing-off",
+    "slugLoc": "esclusiva",
+    "name": "Esclusiva",
+    "description": "Impedisce agli avversari di usare mosse\nconosciute anche dal Pokémon che ha causato\nEsclusiva."
+  },
+  {
+    "id": "47",
+    "slug": "perishing",
+    "slugLoc": "turni-contati",
+    "name": "Turni contati",
+    "description": "Fa andare KO il Pokémon 3 turni dopo che è\nentrato in questo stato."
+  },
+  {
+    "id": "48",
+    "slug": "spikes",
+    "slugLoc": "punte",
+    "name": "Punte",
+    "description": "Infligge ai Pokémon entrati in campo danni pari a\n1/8 dei loro PS massimi, che aumentano se Punte\nè applicato cumulativamente fino a 3 volte.\nNon ha effetto su alcuni Pokémon, come quelli\ndi tipo Volante o che hanno l'abilità Levitazione."
+  },
+  {
+    "id": "50",
+    "slug": "destiny-bound",
+    "slugLoc": "destino-obbligato",
+    "name": "Destino obbligato",
+    "description": "Fa sì che chi manda KO questo Pokémon finisca\nKO a sua volta."
+  },
+  {
+    "id": "51",
+    "slug": "forest-cursed",
+    "slugLoc": "malocchio-del-bosco",
+    "name": "Malocchio del bosco",
+    "description": "Rende il Pokémon anche di tipo Erba."
+  },
+  {
+    "id": "52",
+    "slug": "leech-seeded",
+    "slugLoc": "seme-parassita",
+    "name": "Seme parassita",
+    "description": "Alla fine di ogni turno, infligge al Pokémon danni\npari a 1/8 dei suoi PS massimi e fa recuperare\nPS in quantità uguale a chi si trova nella\nposizione di chi ha causato lo stato."
+  },
+  {
+    "id": "54",
+    "slug": "bound",
+    "slugLoc": "imprigionamento",
+    "name": "Imprigionamento",
+    "description": "Alla fine di ogni turno per 4 o 5 turni, infligge\ndanni al Pokémon pari a 1/8 dei suoi PS massimi\ne impedisce inoltre la sostituzione."
+  },
+  {
+    "id": "57",
+    "slug": "rampaging",
+    "slugLoc": "collera",
+    "name": "Collera",
+    "description": "Costringe il Pokémon ad attaccare per 2 o 3\nturni senza poter eseguire altre azioni.\nAl termine di questo periodo, gli causa inoltre\nlo stato Confusione."
+  },
+  {
+    "id": "59",
+    "slug": "badly-poisoned",
+    "slugLoc": "iperavvelenamento",
+    "name": "Iperavvelenamento",
+    "description": "Alla fine di ogni turno, infligge al Pokémon danni\nche crescono con il passare dei turni: 1/16\ndei PS massimi prima, poi 2/16, 3/16 e così via.\nSe il Pokémon viene sostituito e rimandato poi\nin campo, il calcolo riparte da 1/16."
+  },
+  {
+    "id": "60",
+    "slug": "future-attack",
+    "slugLoc": "attacco-futuro",
+    "name": "Attacco futuro",
+    "description": "2 turni dopo l'attivazione dello stato, infligge\ndanni al Pokémon che si trova nella posizione\nche è stata indicata."
+  },
+  {
+    "id": "61",
+    "slug": "uproar",
+    "slugLoc": "baraonda",
+    "name": "Baraonda",
+    "description": "Costringe il Pokémon ad attaccare per 3 turni\nsenza poter eseguire altre azioni. Durante questo\nperiodo, tutti i Pokémon in campo sono immuni\nallo stato Sonno."
+  },
+  {
+    "id": "62",
+    "slug": "aqua-ring",
+    "slugLoc": "velo-d-acqua",
+    "name": "Velo d'acqua",
+    "description": "Restituisce 1/16 dei PS massimi alla fine\ndi ogni turno."
+  },
+  {
+    "id": "64",
+    "slug": "landed",
+    "slugLoc": "atterrato",
+    "name": "Atterrato",
+    "description": "Costringe il Pokémon a entrare in contatto\ncon il terreno, rendendolo così vulnerabile\nalle mosse di tipo Terra."
+  },
+  {
+    "id": "65",
+    "slug": "fairy-locked",
+    "slugLoc": "blocco-fatato",
+    "name": "Blocco fatato",
+    "description": "Impedisce la sostituzione di tutti i Pokémon\nfino alla fine del turno successivo all'attivazione\ndello stato."
+  },
+  {
+    "id": "72",
+    "slug": "psychic-terrain",
+    "slugLoc": "campo-psichico",
+    "name": "Campo psichico",
+    "description": "Aumenta del 30% la potenza delle mosse di tipo\nPsico e rende immuni alle mosse ad alta priorità.\nHa effetto solo sui Pokémon a contatto\ncon il terreno."
+  },
+  {
+    "id": "73",
+    "slug": "throat-chopped",
+    "slugLoc": "colpo-infernale",
+    "name": "Colpo infernale",
+    "description": "Per 2 turni impedisce di usare le mosse\ndella classe Suono."
+  },
+  {
+    "id": "74",
+    "slug": "aurora-veil",
+    "slugLoc": "velo-dell-aurora",
+    "name": "Velo dell'aurora",
+    "description": "Dimezza i danni subiti dalle mosse fisiche e dalle\nmosse speciali nelle Lotte in Singolo e li riduce\ndi 1/3 nelle Lotte in Doppio."
+  },
+  {
+    "id": "106",
+    "slug": "salt-cured",
+    "slugLoc": "sotto-sale",
+    "name": "Sotto sale",
+    "description": "Alla fine di ogni turno, infligge al Pokémon danni\npari a 1/16 dei suoi PS massimi. Se il Pokémon\nè di tipo Acciaio o di tipo Acqua, i danni subiti\nsono invece pari a 1/8 dei suoi PS massimi."
+  },
+  {
+    "id": "108",
+    "slug": "syrupy",
+    "slugLoc": "ricoperto-di-sciroppo",
+    "name": "Ricoperto di sciroppo",
+    "description": "Riduce di 1 grado la Velocità alla fine\ndi ogni turno."
+  },
+  {
+    "id": "111",
+    "slug": "healing-prevented",
+    "slugLoc": "cura-disabilitata",
+    "name": "Cura disabilitata",
+    "description": "Impedisce al Pokémon di recuperare PS\nper effetto di mosse, abilità o strumenti."
+  },
+  {
+    "id": "113",
+    "slug": "recharging",
+    "slugLoc": "ricarica",
+    "name": "Ricarica",
+    "description": "Impedisce al Pokémon di agire per 1 turno."
+  },
+  {
+    "id": "114",
+    "slug": "charging",
+    "slugLoc": "carica",
+    "name": "Carica",
+    "description": "Costringe il Pokémon a caricarsi per 1 turno\nprima di poter sferrare una mossa."
+  },
+  {
+    "id": "115",
+    "slug": "sky-high",
+    "slugLoc": "in-aria",
+    "name": "In aria",
+    "description": "Fa sì che il Pokémon non venga colpito dalla\nmaggior parte delle mosse, a eccezione di\nalcune come Tuono, Tifone o Abbattimento.\nRende inoltre il Pokémon immune agli\nstati Campo."
+  },
+  {
+    "id": "116",
+    "slug": "submerged",
+    "slugLoc": "sott-acqua",
+    "name": "Sott'acqua",
+    "description": "Fa sì che il Pokémon non venga colpito\nda nessuna mossa a eccezione di Surf e\nMulinello, che invece gli infliggono il doppio\ndei danni. Rende inoltre il Pokémon immune\nagli stati Campo."
+  },
+  {
+    "id": "117",
+    "slug": "underground",
+    "slugLoc": "sottoterra",
+    "name": "Sottoterra",
+    "description": "Fa sì che il Pokémon non venga colpito\nda nessuna mossa a eccezione di Terremoto,\nche invece gli infligge il doppio dei danni. Rende\ninoltre il Pokémon immune agli stati Campo."
+  },
+  {
+    "id": "118",
+    "slug": "concealed",
+    "slugLoc": "scomparso",
+    "name": "Scomparso",
+    "description": "Fa sì che il Pokémon non venga colpito dalle\nmosse e lo rende immune agli stati Campo."
+  },
+  {
+    "id": "119",
+    "slug": "minimized",
+    "slugLoc": "minimizzato",
+    "name": "Minimizzato",
+    "description": "Raddoppia la potenza di alcune mosse subite,\ntra cui Elettrotuffo, Corposcontro, Dragofuria,\nSchiacciatuffo, Marchiafuoco e Pesobomba,\ne fa sì che vadano sempre a segno."
+  },
+  {
+    "id": "120",
+    "slug": "atk-def-swapped",
+    "slugLoc": "statistiche-scambiate",
+    "name": "Statistiche scambiate",
+    "description": "Inverte l'Attacco con la Difesa."
+  },
+  {
+    "id": "121",
+    "slug": "flash-fire",
+    "slugLoc": "fuocardore",
+    "name": "Fuocardore",
+    "description": "Aumenta del 50% la potenza delle mosse\ndi tipo Fuoco."
+  },
+  {
+    "id": "125",
+    "slug": "micle-berry",
+    "slugLoc": "baccaracolo",
+    "name": "Baccaracolo",
+    "description": "Aumenta del 20% la precisione della prossima\nmossa usata."
+  }
+]

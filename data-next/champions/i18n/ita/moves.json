@@ -1,0 +1,5847 @@
+[
+  {
+    "id": "1",
+    "slug": "pound",
+    "slugLoc": "botta",
+    "name": "Botta",
+    "description": ""
+  },
+  {
+    "id": "2",
+    "slug": "karate-chop",
+    "slugLoc": "colpokarate",
+    "name": "Colpokarate",
+    "description": ""
+  },
+  {
+    "id": "3",
+    "slug": "double-slap",
+    "slugLoc": "doppiasberla",
+    "name": "Doppiasberla",
+    "description": ""
+  },
+  {
+    "id": "4",
+    "slug": "comet-punch",
+    "slugLoc": "cometapugno",
+    "name": "Cometapugno",
+    "description": ""
+  },
+  {
+    "id": "5",
+    "slug": "mega-punch",
+    "slugLoc": "megapugno",
+    "name": "Megapugno",
+    "description": ""
+  },
+  {
+    "id": "6",
+    "slug": "pay-day",
+    "slugLoc": "giornopaga",
+    "name": "Giornopaga",
+    "description": ""
+  },
+  {
+    "id": "7",
+    "slug": "fire-punch",
+    "slugLoc": "fuocopugno",
+    "name": "Fuocopugno",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nScottatura al bersaglio."
+  },
+  {
+    "id": "8",
+    "slug": "ice-punch",
+    "slugLoc": "gelopugno",
+    "name": "Gelopugno",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nCongelamento al bersaglio."
+  },
+  {
+    "id": "9",
+    "slug": "thunder-punch",
+    "slugLoc": "tuonopugno",
+    "name": "Tuonopugno",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato Paralisi\nal bersaglio."
+  },
+  {
+    "id": "10",
+    "slug": "scratch",
+    "slugLoc": "graffio",
+    "name": "Graffio",
+    "description": ""
+  },
+  {
+    "id": "11",
+    "slug": "vise-grip",
+    "slugLoc": "presa",
+    "name": "Presa",
+    "description": ""
+  },
+  {
+    "id": "12",
+    "slug": "guillotine",
+    "slugLoc": "ghigliottina",
+    "name": "Ghigliottina",
+    "description": "Il Pokémon manda KO il bersaglio. La precisione di questa\nmossa è del 30%."
+  },
+  {
+    "id": "13",
+    "slug": "razor-wind",
+    "slugLoc": "ventagliente",
+    "name": "Ventagliente",
+    "description": ""
+  },
+  {
+    "id": "14",
+    "slug": "swords-dance",
+    "slugLoc": "danzaspada",
+    "name": "Danzaspada",
+    "description": "Il Pokémon aumenta di 2 gradi il suo Attacco."
+  },
+  {
+    "id": "15",
+    "slug": "cut",
+    "slugLoc": "taglio",
+    "name": "Taglio",
+    "description": ""
+  },
+  {
+    "id": "16",
+    "slug": "gust",
+    "slugLoc": "raffica",
+    "name": "Raffica",
+    "description": ""
+  },
+  {
+    "id": "17",
+    "slug": "wing-attack",
+    "slugLoc": "attacco-d-ala",
+    "name": "Attacco d'Ala",
+    "description": ""
+  },
+  {
+    "id": "18",
+    "slug": "whirlwind",
+    "slugLoc": "turbine",
+    "name": "Turbine",
+    "description": "Il bersaglio viene sostituito da un compagno di squadra casuale,\nse presente."
+  },
+  {
+    "id": "19",
+    "slug": "fly",
+    "slugLoc": "volo",
+    "name": "Volo",
+    "description": "Il Pokémon entra nello stato In aria nel turno in cui usa la mossa\ne attacca in quello seguente."
+  },
+  {
+    "id": "20",
+    "slug": "bind",
+    "slugLoc": "legatutto",
+    "name": "Legatutto",
+    "description": "Il Pokémon causa lo stato Imprigionamento al bersaglio."
+  },
+  {
+    "id": "21",
+    "slug": "slam",
+    "slugLoc": "schianto",
+    "name": "Schianto",
+    "description": ""
+  },
+  {
+    "id": "22",
+    "slug": "vine-whip",
+    "slugLoc": "frustata",
+    "name": "Frustata",
+    "description": ""
+  },
+  {
+    "id": "23",
+    "slug": "stomp",
+    "slugLoc": "pestone",
+    "name": "Pestone",
+    "description": ""
+  },
+  {
+    "id": "24",
+    "slug": "double-kick",
+    "slugLoc": "doppiocalcio",
+    "name": "Doppiocalcio",
+    "description": ""
+  },
+  {
+    "id": "25",
+    "slug": "mega-kick",
+    "slugLoc": "megacalcio",
+    "name": "Megacalcio",
+    "description": ""
+  },
+  {
+    "id": "26",
+    "slug": "jump-kick",
+    "slugLoc": "calciosalto",
+    "name": "Calciosalto",
+    "description": ""
+  },
+  {
+    "id": "27",
+    "slug": "rolling-kick",
+    "slugLoc": "calciorullo",
+    "name": "Calciorullo",
+    "description": ""
+  },
+  {
+    "id": "28",
+    "slug": "sand-attack",
+    "slugLoc": "turbosabbia",
+    "name": "Turbosabbia",
+    "description": ""
+  },
+  {
+    "id": "29",
+    "slug": "headbutt",
+    "slugLoc": "bottintesta",
+    "name": "Bottintesta",
+    "description": ""
+  },
+  {
+    "id": "30",
+    "slug": "horn-attack",
+    "slugLoc": "incornata",
+    "name": "Incornata",
+    "description": ""
+  },
+  {
+    "id": "31",
+    "slug": "fury-attack",
+    "slugLoc": "furia",
+    "name": "Furia",
+    "description": ""
+  },
+  {
+    "id": "32",
+    "slug": "horn-drill",
+    "slugLoc": "perforcorno",
+    "name": "Perforcorno",
+    "description": "Il Pokémon manda KO il bersaglio. La precisione di questa\nmossa è del 30%."
+  },
+  {
+    "id": "33",
+    "slug": "tackle",
+    "slugLoc": "azione",
+    "name": "Azione",
+    "description": ""
+  },
+  {
+    "id": "34",
+    "slug": "body-slam",
+    "slugLoc": "corposcontro",
+    "name": "Corposcontro",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato Paralisi\nal bersaglio. Se il bersaglio è affetto dallo stato Minimizzato,\nla mossa va sempre a segno e la sua potenza raddoppia."
+  },
+  {
+    "id": "35",
+    "slug": "wrap",
+    "slugLoc": "avvolgibotta",
+    "name": "Avvolgibotta",
+    "description": "Il Pokémon causa lo stato Imprigionamento al bersaglio."
+  },
+  {
+    "id": "36",
+    "slug": "take-down",
+    "slugLoc": "riduttore",
+    "name": "Riduttore",
+    "description": ""
+  },
+  {
+    "id": "37",
+    "slug": "thrash",
+    "slugLoc": "colpo",
+    "name": "Colpo",
+    "description": "Il Pokémon entra nello stato Collera."
+  },
+  {
+    "id": "38",
+    "slug": "double-edge",
+    "slugLoc": "sdoppiatore",
+    "name": "Sdoppiatore",
+    "description": "Il Pokémon subisce 1/3 dei danni inflitti."
+  },
+  {
+    "id": "39",
+    "slug": "tail-whip",
+    "slugLoc": "colpocoda",
+    "name": "Colpocoda",
+    "description": ""
+  },
+  {
+    "id": "40",
+    "slug": "poison-sting",
+    "slugLoc": "velenospina",
+    "name": "Velenospina",
+    "description": ""
+  },
+  {
+    "id": "41",
+    "slug": "twineedle",
+    "slugLoc": "doppio-ago",
+    "name": "Doppio Ago",
+    "description": ""
+  },
+  {
+    "id": "42",
+    "slug": "pin-missile",
+    "slugLoc": "missilspillo",
+    "name": "Missilspillo",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila."
+  },
+  {
+    "id": "43",
+    "slug": "leer",
+    "slugLoc": "fulmisguardo",
+    "name": "Fulmisguardo",
+    "description": ""
+  },
+  {
+    "id": "44",
+    "slug": "bite",
+    "slugLoc": "morso",
+    "name": "Morso",
+    "description": "Il Pokémon ha il 30% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "45",
+    "slug": "growl",
+    "slugLoc": "ruggito",
+    "name": "Ruggito",
+    "description": ""
+  },
+  {
+    "id": "46",
+    "slug": "roar",
+    "slugLoc": "boato",
+    "name": "Boato",
+    "description": "Il bersaglio viene sostituito da un compagno di squadra casuale,\nse presente."
+  },
+  {
+    "id": "47",
+    "slug": "sing",
+    "slugLoc": "canto",
+    "name": "Canto",
+    "description": "Il Pokémon causa lo stato Sonno al bersaglio."
+  },
+  {
+    "id": "48",
+    "slug": "supersonic",
+    "slugLoc": "supersuono",
+    "name": "Supersuono",
+    "description": ""
+  },
+  {
+    "id": "49",
+    "slug": "sonic-boom",
+    "slugLoc": "sonicboom",
+    "name": "Sonicboom",
+    "description": ""
+  },
+  {
+    "id": "50",
+    "slug": "disable",
+    "slugLoc": "inibitore",
+    "name": "Inibitore",
+    "description": "Il Pokémon causa lo stato Mossa bloccata al bersaglio\nper 4 turni."
+  },
+  {
+    "id": "51",
+    "slug": "acid",
+    "slugLoc": "acido",
+    "name": "Acido",
+    "description": ""
+  },
+  {
+    "id": "52",
+    "slug": "ember",
+    "slugLoc": "braciere",
+    "name": "Braciere",
+    "description": ""
+  },
+  {
+    "id": "53",
+    "slug": "flamethrower",
+    "slugLoc": "lanciafiamme",
+    "name": "Lanciafiamme",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nScottatura al bersaglio."
+  },
+  {
+    "id": "54",
+    "slug": "mist",
+    "slugLoc": "nebbia",
+    "name": "Nebbia",
+    "description": ""
+  },
+  {
+    "id": "55",
+    "slug": "water-gun",
+    "slugLoc": "pistolacqua",
+    "name": "Pistolacqua",
+    "description": ""
+  },
+  {
+    "id": "56",
+    "slug": "hydro-pump",
+    "slugLoc": "idropompa",
+    "name": "Idropompa",
+    "description": ""
+  },
+  {
+    "id": "57",
+    "slug": "surf",
+    "slugLoc": "surf",
+    "name": "Surf",
+    "description": "Se il bersaglio è nello stato Sott'acqua, la potenza della mossa\nraddoppia."
+  },
+  {
+    "id": "58",
+    "slug": "ice-beam",
+    "slugLoc": "geloraggio",
+    "name": "Geloraggio",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nCongelamento al bersaglio."
+  },
+  {
+    "id": "59",
+    "slug": "blizzard",
+    "slugLoc": "bora",
+    "name": "Bora",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nCongelamento al bersaglio. Se lo stato Neve è attivo,\nquesta mossa va sempre a segno."
+  },
+  {
+    "id": "60",
+    "slug": "psybeam",
+    "slugLoc": "psicoraggio",
+    "name": "Psicoraggio",
+    "description": ""
+  },
+  {
+    "id": "61",
+    "slug": "bubble-beam",
+    "slugLoc": "bollaraggio",
+    "name": "Bollaraggio",
+    "description": ""
+  },
+  {
+    "id": "62",
+    "slug": "aurora-beam",
+    "slugLoc": "raggiaurora",
+    "name": "Raggiaurora",
+    "description": ""
+  },
+  {
+    "id": "63",
+    "slug": "hyper-beam",
+    "slugLoc": "iper-raggio",
+    "name": "Iper Raggio",
+    "description": "Il turno dopo aver usato questa mossa, il Pokémon è affetto\ndallo stato Ricarica."
+  },
+  {
+    "id": "64",
+    "slug": "peck",
+    "slugLoc": "beccata",
+    "name": "Beccata",
+    "description": ""
+  },
+  {
+    "id": "65",
+    "slug": "drill-peck",
+    "slugLoc": "perforbecco",
+    "name": "Perforbecco",
+    "description": ""
+  },
+  {
+    "id": "66",
+    "slug": "submission",
+    "slugLoc": "sottomissione",
+    "name": "Sottomissione",
+    "description": ""
+  },
+  {
+    "id": "67",
+    "slug": "low-kick",
+    "slugLoc": "colpo-basso",
+    "name": "Colpo Basso",
+    "description": "Più pesante è il bersaglio, maggiore è la potenza della mossa,\nda un minimo di 20 a un massimo di 120."
+  },
+  {
+    "id": "68",
+    "slug": "counter",
+    "slugLoc": "contrattacco",
+    "name": "Contrattacco",
+    "description": "Se il Pokémon ha subito una mossa fisica durante il turno in\ncorso, infligge a chi lo ha attaccato il doppio dei danni ricevuti."
+  },
+  {
+    "id": "69",
+    "slug": "seismic-toss",
+    "slugLoc": "movim-sismico",
+    "name": "Movim. Sismico",
+    "description": "Il Pokémon infligge al bersaglio un danno pari a 50 PS."
+  },
+  {
+    "id": "70",
+    "slug": "strength",
+    "slugLoc": "forza",
+    "name": "Forza",
+    "description": ""
+  },
+  {
+    "id": "71",
+    "slug": "absorb",
+    "slugLoc": "assorbimento",
+    "name": "Assorbimento",
+    "description": ""
+  },
+  {
+    "id": "72",
+    "slug": "mega-drain",
+    "slugLoc": "megassorbimento",
+    "name": "Megassorbimento",
+    "description": ""
+  },
+  {
+    "id": "73",
+    "slug": "leech-seed",
+    "slugLoc": "parassiseme",
+    "name": "Parassiseme",
+    "description": "Il Pokémon causa lo stato Seme parassita al bersaglio."
+  },
+  {
+    "id": "74",
+    "slug": "growth",
+    "slugLoc": "crescita",
+    "name": "Crescita",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco e il suo Attacco\nSpeciale. Se lo stato Sole intenso è attivo, li aumenta di 2 gradi."
+  },
+  {
+    "id": "75",
+    "slug": "razor-leaf",
+    "slugLoc": "foglielama",
+    "name": "Foglielama",
+    "description": ""
+  },
+  {
+    "id": "76",
+    "slug": "solar-beam",
+    "slugLoc": "solarraggio",
+    "name": "Solarraggio",
+    "description": "Il Pokémon entra nello stato Carica nel turno in cui usa la mossa\ne attacca in quello seguente. Se lo stato Sole intenso è attivo,\nil Pokémon non entra nello stato Carica e può attaccare\nimmediatamente. Se invece sono attive altre condizioni\natmosferiche, la potenza di questa mossa è dimezzata."
+  },
+  {
+    "id": "77",
+    "slug": "poison-powder",
+    "slugLoc": "velenpolvere",
+    "name": "Velenpolvere",
+    "description": "Il Pokémon causa lo stato Avvelenamento al bersaglio."
+  },
+  {
+    "id": "78",
+    "slug": "stun-spore",
+    "slugLoc": "paralizzante",
+    "name": "Paralizzante",
+    "description": "Il Pokémon causa lo stato Paralisi al bersaglio."
+  },
+  {
+    "id": "79",
+    "slug": "sleep-powder",
+    "slugLoc": "sonnifero",
+    "name": "Sonnifero",
+    "description": "Il Pokémon causa lo stato Sonno al bersaglio."
+  },
+  {
+    "id": "80",
+    "slug": "petal-dance",
+    "slugLoc": "petalodanza",
+    "name": "Petalodanza",
+    "description": "Il Pokémon entra nello stato Collera."
+  },
+  {
+    "id": "81",
+    "slug": "string-shot",
+    "slugLoc": "millebave",
+    "name": "Millebave",
+    "description": "Il Pokémon riduce di 2 gradi la Velocità del bersaglio."
+  },
+  {
+    "id": "82",
+    "slug": "dragon-rage",
+    "slugLoc": "ira-di-drago",
+    "name": "Ira di Drago",
+    "description": ""
+  },
+  {
+    "id": "83",
+    "slug": "fire-spin",
+    "slugLoc": "turbofuoco",
+    "name": "Turbofuoco",
+    "description": "Il Pokémon causa lo stato Imprigionamento al bersaglio."
+  },
+  {
+    "id": "84",
+    "slug": "thunder-shock",
+    "slugLoc": "tuonoshock",
+    "name": "Tuonoshock",
+    "description": ""
+  },
+  {
+    "id": "85",
+    "slug": "thunderbolt",
+    "slugLoc": "fulmine",
+    "name": "Fulmine",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato Paralisi\nal bersaglio."
+  },
+  {
+    "id": "86",
+    "slug": "thunder-wave",
+    "slugLoc": "tuononda",
+    "name": "Tuononda",
+    "description": "Il Pokémon causa lo stato Paralisi al bersaglio."
+  },
+  {
+    "id": "87",
+    "slug": "thunder",
+    "slugLoc": "tuono",
+    "name": "Tuono",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato Paralisi\nal bersaglio. Questa mossa può colpire anche se il bersaglio è\nnello stato In aria e, se lo stato Pioggia è attivo, va sempre\na segno."
+  },
+  {
+    "id": "88",
+    "slug": "rock-throw",
+    "slugLoc": "sassata",
+    "name": "Sassata",
+    "description": ""
+  },
+  {
+    "id": "89",
+    "slug": "earthquake",
+    "slugLoc": "terremoto",
+    "name": "Terremoto",
+    "description": "La potenza della mossa raddoppia se il bersaglio è nello stato\nSottoterra, mentre si dimezza se lo stato Campo erboso\nè attivo."
+  },
+  {
+    "id": "90",
+    "slug": "fissure",
+    "slugLoc": "abisso",
+    "name": "Abisso",
+    "description": "Il Pokémon manda KO il bersaglio. La precisione di questa\nmossa è del 30%."
+  },
+  {
+    "id": "91",
+    "slug": "dig",
+    "slugLoc": "fossa",
+    "name": "Fossa",
+    "description": "Il Pokémon entra nello stato Sottoterra nel turno in cui usa\nla mossa e attacca in quello seguente."
+  },
+  {
+    "id": "92",
+    "slug": "toxic",
+    "slugLoc": "tossina",
+    "name": "Tossina",
+    "description": "Il Pokémon causa lo stato Iperavvelenamento al bersaglio.\nSe usata da un Pokémon di tipo Veleno, la mossa va sempre\na segno."
+  },
+  {
+    "id": "93",
+    "slug": "confusion",
+    "slugLoc": "confusione",
+    "name": "Confusione",
+    "description": ""
+  },
+  {
+    "id": "94",
+    "slug": "psychic",
+    "slugLoc": "psichico",
+    "name": "Psichico",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nla Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "95",
+    "slug": "hypnosis",
+    "slugLoc": "ipnosi",
+    "name": "Ipnosi",
+    "description": "Il Pokémon causa lo stato Sonno al bersaglio."
+  },
+  {
+    "id": "96",
+    "slug": "meditate",
+    "slugLoc": "meditazione",
+    "name": "Meditazione",
+    "description": ""
+  },
+  {
+    "id": "97",
+    "slug": "agility",
+    "slugLoc": "agilita",
+    "name": "Agilità",
+    "description": "Il Pokémon aumenta di 2 gradi la sua Velocità."
+  },
+  {
+    "id": "98",
+    "slug": "quick-attack",
+    "slugLoc": "attacco-rapido",
+    "name": "Attacco Rapido",
+    "description": ""
+  },
+  {
+    "id": "99",
+    "slug": "rage",
+    "slugLoc": "ira",
+    "name": "Ira",
+    "description": ""
+  },
+  {
+    "id": "100",
+    "slug": "teleport",
+    "slugLoc": "teletrasporto",
+    "name": "Teletrasporto",
+    "description": ""
+  },
+  {
+    "id": "101",
+    "slug": "night-shade",
+    "slugLoc": "ombra-notturna",
+    "name": "Ombra Notturna",
+    "description": "Il Pokémon infligge al bersaglio un danno pari a 50 PS."
+  },
+  {
+    "id": "102",
+    "slug": "mimic",
+    "slugLoc": "mimica",
+    "name": "Mimica",
+    "description": ""
+  },
+  {
+    "id": "103",
+    "slug": "screech",
+    "slugLoc": "stridio",
+    "name": "Stridio",
+    "description": "Il Pokémon riduce di 2 gradi la Difesa del bersaglio."
+  },
+  {
+    "id": "104",
+    "slug": "double-team",
+    "slugLoc": "doppioteam",
+    "name": "Doppioteam",
+    "description": "Il Pokémon aumenta di 1 grado la sua elusione."
+  },
+  {
+    "id": "105",
+    "slug": "recover",
+    "slugLoc": "ripresa",
+    "name": "Ripresa",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi."
+  },
+  {
+    "id": "106",
+    "slug": "harden",
+    "slugLoc": "rafforzatore",
+    "name": "Rafforzatore",
+    "description": ""
+  },
+  {
+    "id": "107",
+    "slug": "minimize",
+    "slugLoc": "minimizzato",
+    "name": "Minimizzato",
+    "description": "Il Pokémon aumenta di 2 gradi la sua elusione ed entra\nnello stato Minimizzato."
+  },
+  {
+    "id": "108",
+    "slug": "smokescreen",
+    "slugLoc": "muro-di-fumo",
+    "name": "Muro di Fumo",
+    "description": ""
+  },
+  {
+    "id": "109",
+    "slug": "confuse-ray",
+    "slugLoc": "stordiraggio",
+    "name": "Stordiraggio",
+    "description": "Il Pokémon causa lo stato Confusione al bersaglio."
+  },
+  {
+    "id": "110",
+    "slug": "withdraw",
+    "slugLoc": "ritirata",
+    "name": "Ritirata",
+    "description": ""
+  },
+  {
+    "id": "111",
+    "slug": "defense-curl",
+    "slugLoc": "ricciolscudo",
+    "name": "Ricciolscudo",
+    "description": ""
+  },
+  {
+    "id": "112",
+    "slug": "barrier",
+    "slugLoc": "barriera",
+    "name": "Barriera",
+    "description": ""
+  },
+  {
+    "id": "113",
+    "slug": "light-screen",
+    "slugLoc": "schermoluce",
+    "name": "Schermoluce",
+    "description": "Il Pokémon causa lo stato Schermoluce sul proprio campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "114",
+    "slug": "haze",
+    "slugLoc": "nube",
+    "name": "Nube",
+    "description": "Le modifiche alle statistiche di tutti i Pokémon in campo\nvengono eliminate."
+  },
+  {
+    "id": "115",
+    "slug": "reflect",
+    "slugLoc": "riflesso",
+    "name": "Riflesso",
+    "description": "Il Pokémon causa lo stato Riflesso sul proprio campo di lotta\nper 5 turni."
+  },
+  {
+    "id": "116",
+    "slug": "focus-energy",
+    "slugLoc": "focalenergia",
+    "name": "Focalenergia",
+    "description": "Il Pokémon entra nello stato Brutto colpo+2."
+  },
+  {
+    "id": "117",
+    "slug": "bide",
+    "slugLoc": "pazienza",
+    "name": "Pazienza",
+    "description": ""
+  },
+  {
+    "id": "118",
+    "slug": "metronome",
+    "slugLoc": "metronomo",
+    "name": "Metronomo",
+    "description": ""
+  },
+  {
+    "id": "119",
+    "slug": "mirror-move",
+    "slugLoc": "speculmossa",
+    "name": "Speculmossa",
+    "description": ""
+  },
+  {
+    "id": "120",
+    "slug": "self-destruct",
+    "slugLoc": "autodistruzione",
+    "name": "Autodistruzione",
+    "description": "Il Pokémon va KO."
+  },
+  {
+    "id": "121",
+    "slug": "egg-bomb",
+    "slugLoc": "uovobomba",
+    "name": "Uovobomba",
+    "description": ""
+  },
+  {
+    "id": "122",
+    "slug": "lick",
+    "slugLoc": "leccata",
+    "name": "Leccata",
+    "description": ""
+  },
+  {
+    "id": "123",
+    "slug": "smog",
+    "slugLoc": "smog",
+    "name": "Smog",
+    "description": ""
+  },
+  {
+    "id": "124",
+    "slug": "sludge",
+    "slugLoc": "fango",
+    "name": "Fango",
+    "description": ""
+  },
+  {
+    "id": "125",
+    "slug": "bone-club",
+    "slugLoc": "ossoclava",
+    "name": "Ossoclava",
+    "description": ""
+  },
+  {
+    "id": "126",
+    "slug": "fire-blast",
+    "slugLoc": "fuocobomba",
+    "name": "Fuocobomba",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nScottatura al bersaglio."
+  },
+  {
+    "id": "127",
+    "slug": "waterfall",
+    "slugLoc": "cascata",
+    "name": "Cascata",
+    "description": "Il Pokémon ha il 20% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "128",
+    "slug": "clamp",
+    "slugLoc": "tenaglia",
+    "name": "Tenaglia",
+    "description": ""
+  },
+  {
+    "id": "129",
+    "slug": "swift",
+    "slugLoc": "comete",
+    "name": "Comete",
+    "description": ""
+  },
+  {
+    "id": "130",
+    "slug": "skull-bash",
+    "slugLoc": "capocciata",
+    "name": "Capocciata",
+    "description": ""
+  },
+  {
+    "id": "131",
+    "slug": "spike-cannon",
+    "slugLoc": "sparalance",
+    "name": "Sparalance",
+    "description": ""
+  },
+  {
+    "id": "132",
+    "slug": "constrict",
+    "slugLoc": "limitazione",
+    "name": "Limitazione",
+    "description": ""
+  },
+  {
+    "id": "133",
+    "slug": "amnesia",
+    "slugLoc": "amnesia",
+    "name": "Amnesia",
+    "description": "Il Pokémon aumenta di 2 gradi la sua Difesa Speciale."
+  },
+  {
+    "id": "134",
+    "slug": "kinesis",
+    "slugLoc": "cinesi",
+    "name": "Cinèsi",
+    "description": ""
+  },
+  {
+    "id": "135",
+    "slug": "soft-boiled",
+    "slugLoc": "covauova",
+    "name": "Covauova",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi."
+  },
+  {
+    "id": "136",
+    "slug": "high-jump-kick",
+    "slugLoc": "calcinvolo",
+    "name": "Calcinvolo",
+    "description": "Se questa mossa non va a segno o fallisce, il Pokémon subisce\ndanni pari alla metà dei suoi PS massimi."
+  },
+  {
+    "id": "137",
+    "slug": "glare",
+    "slugLoc": "sguardo-feroce",
+    "name": "Sguardo Feroce",
+    "description": "Il Pokémon causa lo stato Paralisi al bersaglio."
+  },
+  {
+    "id": "138",
+    "slug": "dream-eater",
+    "slugLoc": "mangiasogni",
+    "name": "Mangiasogni",
+    "description": ""
+  },
+  {
+    "id": "139",
+    "slug": "poison-gas",
+    "slugLoc": "velenogas",
+    "name": "Velenogas",
+    "description": ""
+  },
+  {
+    "id": "140",
+    "slug": "barrage",
+    "slugLoc": "sferattacco",
+    "name": "Sferattacco",
+    "description": ""
+  },
+  {
+    "id": "141",
+    "slug": "leech-life",
+    "slugLoc": "sanguisuga",
+    "name": "Sanguisuga",
+    "description": "Il Pokémon recupera PS pari alla metà dei danni inflitti\nal bersaglio."
+  },
+  {
+    "id": "142",
+    "slug": "lovely-kiss",
+    "slugLoc": "demonbacio",
+    "name": "Demonbacio",
+    "description": ""
+  },
+  {
+    "id": "143",
+    "slug": "sky-attack",
+    "slugLoc": "aeroattacco",
+    "name": "Aeroattacco",
+    "description": "Il Pokémon entra nello stato Carica nel turno in cui usa la mossa\ne attacca in quello seguente con lo stato Brutto colpo+1.\nQuesta mossa ha il 30% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "144",
+    "slug": "transform",
+    "slugLoc": "trasformazione",
+    "name": "Trasformazione",
+    "description": "Il Pokémon si trasforma nel bersaglio, copiandone le statistiche\nma non i PS."
+  },
+  {
+    "id": "145",
+    "slug": "bubble",
+    "slugLoc": "bolla",
+    "name": "Bolla",
+    "description": ""
+  },
+  {
+    "id": "146",
+    "slug": "dizzy-punch",
+    "slugLoc": "stordipugno",
+    "name": "Stordipugno",
+    "description": ""
+  },
+  {
+    "id": "147",
+    "slug": "spore",
+    "slugLoc": "spora",
+    "name": "Spora",
+    "description": "Il Pokémon causa lo stato Sonno al bersaglio."
+  },
+  {
+    "id": "148",
+    "slug": "flash",
+    "slugLoc": "flash",
+    "name": "Flash",
+    "description": ""
+  },
+  {
+    "id": "149",
+    "slug": "psywave",
+    "slugLoc": "psiconda",
+    "name": "Psiconda",
+    "description": ""
+  },
+  {
+    "id": "150",
+    "slug": "splash",
+    "slugLoc": "splash",
+    "name": "Splash",
+    "description": ""
+  },
+  {
+    "id": "151",
+    "slug": "acid-armor",
+    "slugLoc": "scudo-acido",
+    "name": "Scudo Acido",
+    "description": "Il Pokémon aumenta di 2 gradi la sua Difesa."
+  },
+  {
+    "id": "152",
+    "slug": "crabhammer",
+    "slugLoc": "martellata",
+    "name": "Martellata",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "153",
+    "slug": "explosion",
+    "slugLoc": "esplosione",
+    "name": "Esplosione",
+    "description": "Il Pokémon va KO."
+  },
+  {
+    "id": "154",
+    "slug": "fury-swipes",
+    "slugLoc": "sfuriate",
+    "name": "Sfuriate",
+    "description": ""
+  },
+  {
+    "id": "155",
+    "slug": "bonemerang",
+    "slugLoc": "ossomerang",
+    "name": "Ossomerang",
+    "description": ""
+  },
+  {
+    "id": "156",
+    "slug": "rest",
+    "slugLoc": "riposo",
+    "name": "Riposo",
+    "description": "Il Pokémon recupera tutti i PS e guarisce dai problemi di stato,\nma entra nello stato Sonno per 2 turni. Se il Pokémon ha tutti\ni PS, la mossa fallisce."
+  },
+  {
+    "id": "157",
+    "slug": "rock-slide",
+    "slugLoc": "frana",
+    "name": "Frana",
+    "description": "Il Pokémon ha il 30% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "158",
+    "slug": "hyper-fang",
+    "slugLoc": "iperzanna",
+    "name": "Iperzanna",
+    "description": ""
+  },
+  {
+    "id": "159",
+    "slug": "sharpen",
+    "slugLoc": "affilatore",
+    "name": "Affilatore",
+    "description": ""
+  },
+  {
+    "id": "160",
+    "slug": "conversion",
+    "slugLoc": "conversione",
+    "name": "Conversione",
+    "description": ""
+  },
+  {
+    "id": "161",
+    "slug": "tri-attack",
+    "slugLoc": "tripletta",
+    "name": "Tripletta",
+    "description": "Il Pokémon ha il 20% di probabilità di causare lo stato Paralisi,\nScottatura o Congelamento al bersaglio."
+  },
+  {
+    "id": "162",
+    "slug": "super-fang",
+    "slugLoc": "superzanna",
+    "name": "Superzanna",
+    "description": "Il Pokémon dimezza i PS residui del bersaglio. Infligge danni\npari a 1 PS se è quanto resta al bersaglio."
+  },
+  {
+    "id": "163",
+    "slug": "slash",
+    "slugLoc": "lacerazione",
+    "name": "Lacerazione",
+    "description": ""
+  },
+  {
+    "id": "164",
+    "slug": "substitute",
+    "slugLoc": "sostituto",
+    "name": "Sostituto",
+    "description": "Il Pokémon perde 1/4 dei suoi PS massimi e crea un sostituto.\nIl sostituto viene colpito dalle mosse al posto del Pokémon\ne sparisce dopo aver subito danni pari a 1/4 dei PS massimi\ndel Pokémon che lo ha creato."
+  },
+  {
+    "id": "165",
+    "slug": "struggle",
+    "slugLoc": "scontro",
+    "name": "Scontro",
+    "description": ""
+  },
+  {
+    "id": "166",
+    "slug": "sketch",
+    "slugLoc": "schizzo",
+    "name": "Schizzo",
+    "description": ""
+  },
+  {
+    "id": "167",
+    "slug": "triple-kick",
+    "slugLoc": "triplocalcio",
+    "name": "Triplocalcio",
+    "description": ""
+  },
+  {
+    "id": "168",
+    "slug": "thief",
+    "slugLoc": "furto",
+    "name": "Furto",
+    "description": "Il Pokémon ruba lo strumento del bersaglio se non ne ha già\nuno con sé."
+  },
+  {
+    "id": "169",
+    "slug": "spider-web",
+    "slugLoc": "ragnatela",
+    "name": "Ragnatela",
+    "description": ""
+  },
+  {
+    "id": "170",
+    "slug": "mind-reader",
+    "slugLoc": "leggimente",
+    "name": "Leggimente",
+    "description": ""
+  },
+  {
+    "id": "171",
+    "slug": "nightmare",
+    "slugLoc": "incubo",
+    "name": "Incubo",
+    "description": ""
+  },
+  {
+    "id": "172",
+    "slug": "flame-wheel",
+    "slugLoc": "ruotafuoco",
+    "name": "Ruotafuoco",
+    "description": ""
+  },
+  {
+    "id": "173",
+    "slug": "snore",
+    "slugLoc": "russare",
+    "name": "Russare",
+    "description": "Il Pokémon ha il 30% di probabilità di far tentennare\nil bersaglio. Questa mossa può essere usata solo se è affetto\ndallo stato Sonno."
+  },
+  {
+    "id": "174",
+    "slug": "curse",
+    "slugLoc": "maledizione",
+    "name": "Maledizione",
+    "description": "Il Pokémon perde metà dei suoi PS massimi e causa lo stato\nMaledizione al bersaglio."
+  },
+  {
+    "id": "175",
+    "slug": "flail",
+    "slugLoc": "flagello",
+    "name": "Flagello",
+    "description": "Più bassi sono i PS residui del Pokémon, maggiore è la potenza\ndella mossa, da un minimo di 20 a un massimo di 200."
+  },
+  {
+    "id": "176",
+    "slug": "conversion-2",
+    "slugLoc": "conversione2",
+    "name": "Conversione2",
+    "description": ""
+  },
+  {
+    "id": "177",
+    "slug": "aeroblast",
+    "slugLoc": "aerocolpo",
+    "name": "Aerocolpo",
+    "description": ""
+  },
+  {
+    "id": "178",
+    "slug": "cotton-spore",
+    "slugLoc": "cotonspora",
+    "name": "Cotonspora",
+    "description": "Il Pokémon riduce di 2 gradi la Velocità del bersaglio."
+  },
+  {
+    "id": "179",
+    "slug": "reversal",
+    "slugLoc": "contropiede",
+    "name": "Contropiede",
+    "description": "Più bassi sono i PS residui del Pokémon, maggiore è la potenza\ndella mossa, da un minimo di 20 a un massimo di 200."
+  },
+  {
+    "id": "180",
+    "slug": "spite",
+    "slugLoc": "dispetto",
+    "name": "Dispetto",
+    "description": "Il Pokémon riduce di 4 i PP dell'ultima mossa usata\ndal bersaglio."
+  },
+  {
+    "id": "181",
+    "slug": "powder-snow",
+    "slugLoc": "polneve",
+    "name": "Polneve",
+    "description": ""
+  },
+  {
+    "id": "182",
+    "slug": "protect",
+    "slugLoc": "protezione",
+    "name": "Protezione",
+    "description": "Il Pokémon si protegge dalle mosse altrui durante il turno\nin corso. Con ogni uso consecutivo, la probabilità che\nquesta mossa vada a segno diminuisce di 2/3 rispetto all'uso\nprecedente."
+  },
+  {
+    "id": "183",
+    "slug": "mach-punch",
+    "slugLoc": "pugnorapido",
+    "name": "Pugnorapido",
+    "description": ""
+  },
+  {
+    "id": "184",
+    "slug": "scary-face",
+    "slugLoc": "visotruce",
+    "name": "Visotruce",
+    "description": "Il Pokémon riduce di 2 gradi la Velocità del bersaglio."
+  },
+  {
+    "id": "185",
+    "slug": "feint-attack",
+    "slugLoc": "finta",
+    "name": "Finta",
+    "description": ""
+  },
+  {
+    "id": "186",
+    "slug": "sweet-kiss",
+    "slugLoc": "dolcebacio",
+    "name": "Dolcebacio",
+    "description": "Il Pokémon causa lo stato Confusione al bersaglio."
+  },
+  {
+    "id": "187",
+    "slug": "belly-drum",
+    "slugLoc": "panciamburo",
+    "name": "Panciamburo",
+    "description": "Il Pokémon perde metà dei suoi PS massimi e aumenta\nil suo Attacco fino al sesto grado. Se non ha abbastanza PS,\nla mossa fallisce."
+  },
+  {
+    "id": "188",
+    "slug": "sludge-bomb",
+    "slugLoc": "fangobomba",
+    "name": "Fangobomba",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nAvvelenamento al bersaglio."
+  },
+  {
+    "id": "189",
+    "slug": "mud-slap",
+    "slugLoc": "fangosberla",
+    "name": "Fangosberla",
+    "description": "Il Pokémon riduce di 1 grado la precisione del bersaglio."
+  },
+  {
+    "id": "190",
+    "slug": "octazooka",
+    "slugLoc": "octazooka",
+    "name": "Octazooka",
+    "description": ""
+  },
+  {
+    "id": "191",
+    "slug": "spikes",
+    "slugLoc": "punte",
+    "name": "Punte",
+    "description": "Il Pokémon causa lo stato Punte sul campo di lotta avversario."
+  },
+  {
+    "id": "192",
+    "slug": "zap-cannon",
+    "slugLoc": "elettrocannone",
+    "name": "Elettrocannone",
+    "description": "Il Pokémon causa lo stato Paralisi al bersaglio."
+  },
+  {
+    "id": "193",
+    "slug": "foresight",
+    "slugLoc": "preveggenza",
+    "name": "Preveggenza",
+    "description": ""
+  },
+  {
+    "id": "194",
+    "slug": "destiny-bond",
+    "slugLoc": "destinobbligato",
+    "name": "Destinobbligato",
+    "description": "Il Pokémon è affetto dallo stato Destino obbligato. Se usata\nconsecutivamente, questa mossa fallisce."
+  },
+  {
+    "id": "195",
+    "slug": "perish-song",
+    "slugLoc": "ultimocanto",
+    "name": "Ultimocanto",
+    "description": "Il Pokémon causa lo stato Turni contati a tutti i Pokémon\nin campo."
+  },
+  {
+    "id": "196",
+    "slug": "icy-wind",
+    "slugLoc": "ventogelato",
+    "name": "Ventogelato",
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio."
+  },
+  {
+    "id": "197",
+    "slug": "detect",
+    "slugLoc": "individua",
+    "name": "Individua",
+    "description": "Il Pokémon si protegge dalle mosse altrui durante il turno\nin corso. Con ogni uso consecutivo, la probabilità che\nquesta mossa vada a segno diminuisce di 2/3 rispetto all'uso\nprecedente."
+  },
+  {
+    "id": "198",
+    "slug": "bone-rush",
+    "slugLoc": "ossoraffica",
+    "name": "Ossoraffica",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila."
+  },
+  {
+    "id": "199",
+    "slug": "lock-on",
+    "slugLoc": "localizza",
+    "name": "Localizza",
+    "description": "Il Pokémon entra nello stato Localizzato."
+  },
+  {
+    "id": "200",
+    "slug": "outrage",
+    "slugLoc": "oltraggio",
+    "name": "Oltraggio",
+    "description": "Il Pokémon entra nello stato Collera."
+  },
+  {
+    "id": "201",
+    "slug": "sandstorm",
+    "slugLoc": "terrempesta",
+    "name": "Terrempesta",
+    "description": "Il Pokémon causa lo stato Tempesta di sabbia per 5 turni."
+  },
+  {
+    "id": "202",
+    "slug": "giga-drain",
+    "slugLoc": "gigassorbimento",
+    "name": "Gigassorbimento",
+    "description": "Il Pokémon recupera PS pari alla metà dei danni inflitti\nal bersaglio."
+  },
+  {
+    "id": "203",
+    "slug": "endure",
+    "slugLoc": "resistenza",
+    "name": "Resistenza",
+    "description": "Il Pokémon resiste a una mossa che lo manderebbe KO e\nrimane invece con 1 PS. Con ogni uso consecutivo,\nla probabilità che questa mossa vada a segno diminuisce di 2/3\nrispetto all'uso precedente."
+  },
+  {
+    "id": "204",
+    "slug": "charm",
+    "slugLoc": "fascino",
+    "name": "Fascino",
+    "description": "Il Pokémon riduce di 2 gradi l'Attacco del bersaglio."
+  },
+  {
+    "id": "205",
+    "slug": "rollout",
+    "slugLoc": "rotolamento",
+    "name": "Rotolamento",
+    "description": ""
+  },
+  {
+    "id": "206",
+    "slug": "false-swipe",
+    "slugLoc": "falsofinale",
+    "name": "Falsofinale",
+    "description": ""
+  },
+  {
+    "id": "207",
+    "slug": "swagger",
+    "slugLoc": "bullo",
+    "name": "Bullo",
+    "description": "Il Pokémon aumenta di 2 gradi l'Attacco del bersaglio e\ngli causa lo stato Confusione."
+  },
+  {
+    "id": "208",
+    "slug": "milk-drink",
+    "slugLoc": "buonlatte",
+    "name": "Buonlatte",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi."
+  },
+  {
+    "id": "209",
+    "slug": "spark",
+    "slugLoc": "scintilla",
+    "name": "Scintilla",
+    "description": ""
+  },
+  {
+    "id": "210",
+    "slug": "fury-cutter",
+    "slugLoc": "tagliofuria",
+    "name": "Tagliofuria",
+    "description": ""
+  },
+  {
+    "id": "211",
+    "slug": "steel-wing",
+    "slugLoc": "alacciaio",
+    "name": "Alacciaio",
+    "description": "Il Pokémon ha il 10% di probabilità di aumentare di 1 grado\nla sua Difesa."
+  },
+  {
+    "id": "212",
+    "slug": "mean-look",
+    "slugLoc": "malosguardo",
+    "name": "Malosguardo",
+    "description": "Il Pokémon causa lo stato Antifuga al bersaglio."
+  },
+  {
+    "id": "213",
+    "slug": "attract",
+    "slugLoc": "attrazione",
+    "name": "Attrazione",
+    "description": "Il Pokémon causa lo stato Infatuazione al bersaglio. Se usata\nsu bersagli dello stesso sesso o di sesso sconosciuto,\nla mossa fallisce."
+  },
+  {
+    "id": "214",
+    "slug": "sleep-talk",
+    "slugLoc": "sonnolalia",
+    "name": "Sonnolalia",
+    "description": "Il Pokémon sferra una mossa a caso tra le altre mosse\nconosciute. Questa mossa può essere usata solo se è affetto\ndallo stato Sonno."
+  },
+  {
+    "id": "215",
+    "slug": "heal-bell",
+    "slugLoc": "rintoccasana",
+    "name": "Rintoccasana",
+    "description": "Il Pokémon cura i suoi problemi di stato e quelli di tutta\nla sua squadra."
+  },
+  {
+    "id": "216",
+    "slug": "return",
+    "slugLoc": "ritorno",
+    "name": "Ritorno",
+    "description": ""
+  },
+  {
+    "id": "217",
+    "slug": "present",
+    "slugLoc": "regalino",
+    "name": "Regalino",
+    "description": ""
+  },
+  {
+    "id": "218",
+    "slug": "frustration",
+    "slugLoc": "frustrazione",
+    "name": "Frustrazione",
+    "description": ""
+  },
+  {
+    "id": "219",
+    "slug": "safeguard",
+    "slugLoc": "salvaguardia",
+    "name": "Salvaguardia",
+    "description": "Il Pokémon causa lo stato Salvaguardia sul proprio campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "220",
+    "slug": "pain-split",
+    "slugLoc": "malcomune",
+    "name": "Malcomune",
+    "description": "Il Pokémon somma i propri PS residui a quelli del bersaglio,\npoi ridistribuisce equamente il risultato a ciascuno dei due."
+  },
+  {
+    "id": "221",
+    "slug": "sacred-fire",
+    "slugLoc": "magifuoco",
+    "name": "Magifuoco",
+    "description": ""
+  },
+  {
+    "id": "222",
+    "slug": "magnitude",
+    "slugLoc": "magnitudo",
+    "name": "Magnitudo",
+    "description": ""
+  },
+  {
+    "id": "223",
+    "slug": "dynamic-punch",
+    "slugLoc": "dinamipugno",
+    "name": "Dinamipugno",
+    "description": "Il Pokémon causa lo stato Confusione al bersaglio."
+  },
+  {
+    "id": "224",
+    "slug": "megahorn",
+    "slugLoc": "megacorno",
+    "name": "Megacorno",
+    "description": ""
+  },
+  {
+    "id": "225",
+    "slug": "dragon-breath",
+    "slugLoc": "dragospiro",
+    "name": "Dragospiro",
+    "description": ""
+  },
+  {
+    "id": "226",
+    "slug": "baton-pass",
+    "slugLoc": "staffetta",
+    "name": "Staffetta",
+    "description": "Il Pokémon si fa sostituire da un compagno di squadra,\nche eredita anche tutte le modifiche alle statistiche e gli effetti\ndi mosse come Sostituto."
+  },
+  {
+    "id": "227",
+    "slug": "encore",
+    "slugLoc": "ripeti",
+    "name": "Ripeti",
+    "description": "Il Pokémon causa lo stato Ripetizione al bersaglio."
+  },
+  {
+    "id": "228",
+    "slug": "pursuit",
+    "slugLoc": "inseguimento",
+    "name": "Inseguimento",
+    "description": ""
+  },
+  {
+    "id": "229",
+    "slug": "rapid-spin",
+    "slugLoc": "rapigiro",
+    "name": "Rapigiro",
+    "description": "Il Pokémon si libera dagli stati Imprigionamento e\nSeme parassita, e rimuove gli stati Punte, Punte velenose,\nRete vischiosa e Rocce levitanti dal suo campo di lotta.\nAumenta inoltre di 1 grado la sua Velocità."
+  },
+  {
+    "id": "230",
+    "slug": "sweet-scent",
+    "slugLoc": "profumino",
+    "name": "Profumino",
+    "description": "Il Pokémon riduce di 2 gradi l'elusione del bersaglio."
+  },
+  {
+    "id": "231",
+    "slug": "iron-tail",
+    "slugLoc": "codacciaio",
+    "name": "Codacciaio",
+    "description": "Il Pokémon ha il 30% di probabilità di ridurre di 1 grado\nla Difesa del bersaglio."
+  },
+  {
+    "id": "232",
+    "slug": "metal-claw",
+    "slugLoc": "ferrartigli",
+    "name": "Ferrartigli",
+    "description": ""
+  },
+  {
+    "id": "233",
+    "slug": "vital-throw",
+    "slugLoc": "vitaltiro",
+    "name": "Vitaltiro",
+    "description": ""
+  },
+  {
+    "id": "234",
+    "slug": "morning-sun",
+    "slugLoc": "mattindoro",
+    "name": "Mattindoro",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi. Se lo stato\nSole intenso è attivo, ne recupera 2/3. Se è attiva un'altra\ncondizione atmosferica, ne recupera invece 1/4."
+  },
+  {
+    "id": "235",
+    "slug": "synthesis",
+    "slugLoc": "sintesi",
+    "name": "Sintesi",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi. Se lo stato\nSole intenso è attivo, ne recupera 2/3. Se è attiva un'altra\ncondizione atmosferica, ne recupera invece 1/4."
+  },
+  {
+    "id": "236",
+    "slug": "moonlight",
+    "slugLoc": "lucelunare",
+    "name": "Lucelunare",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi. Se lo stato\nSole intenso è attivo, ne recupera 2/3. Se è attiva un'altra\ncondizione atmosferica, ne recupera invece 1/4."
+  },
+  {
+    "id": "237",
+    "slug": "hidden-power",
+    "slugLoc": "introforza",
+    "name": "Introforza",
+    "description": ""
+  },
+  {
+    "id": "238",
+    "slug": "cross-chop",
+    "slugLoc": "incrocolpo",
+    "name": "Incrocolpo",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "239",
+    "slug": "twister",
+    "slugLoc": "tornado",
+    "name": "Tornado",
+    "description": ""
+  },
+  {
+    "id": "240",
+    "slug": "rain-dance",
+    "slugLoc": "pioggiadanza",
+    "name": "Pioggiadanza",
+    "description": "Il Pokémon causa lo stato Pioggia per 5 turni."
+  },
+  {
+    "id": "241",
+    "slug": "sunny-day",
+    "slugLoc": "giornodisole",
+    "name": "Giornodisole",
+    "description": "Il Pokémon causa lo stato Sole intenso per 5 turni."
+  },
+  {
+    "id": "242",
+    "slug": "crunch",
+    "slugLoc": "sgranocchio",
+    "name": "Sgranocchio",
+    "description": "Il Pokémon ha il 20% di probabilità di ridurre di 1 grado\nla Difesa del bersaglio."
+  },
+  {
+    "id": "243",
+    "slug": "mirror-coat",
+    "slugLoc": "specchiovelo",
+    "name": "Specchiovelo",
+    "description": "Se il Pokémon ha subito una mossa speciale durante il turno\nin corso, infligge all'attaccante il doppio dei danni ricevuti."
+  },
+  {
+    "id": "244",
+    "slug": "psych-up",
+    "slugLoc": "psicamisu",
+    "name": "Psicamisù",
+    "description": "Il Pokémon copia le modifiche alle statistiche del bersaglio."
+  },
+  {
+    "id": "245",
+    "slug": "extreme-speed",
+    "slugLoc": "extrarapido",
+    "name": "Extrarapido",
+    "description": ""
+  },
+  {
+    "id": "246",
+    "slug": "ancient-power",
+    "slugLoc": "forzantica",
+    "name": "Forzantica",
+    "description": "Il Pokémon ha il 10% di probabilità di aumentare di 1 grado\nl'Attacco, la Difesa, l'Attacco Speciale, la Difesa Speciale\ne la Velocità."
+  },
+  {
+    "id": "247",
+    "slug": "shadow-ball",
+    "slugLoc": "palla-ombra",
+    "name": "Palla Ombra",
+    "description": "Il Pokémon ha il 20% di probabilità di ridurre di 1 grado\nla Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "248",
+    "slug": "future-sight",
+    "slugLoc": "divinazione",
+    "name": "Divinazione",
+    "description": "Il Pokémon causa lo stato Attacco futuro nella posizione\ndel bersaglio."
+  },
+  {
+    "id": "249",
+    "slug": "rock-smash",
+    "slugLoc": "spaccaroccia",
+    "name": "Spaccaroccia",
+    "description": ""
+  },
+  {
+    "id": "250",
+    "slug": "whirlpool",
+    "slugLoc": "mulinello",
+    "name": "Mulinello",
+    "description": "Il Pokémon causa lo stato Imprigionamento al bersaglio.\nSe il bersaglio è nello stato Sott'acqua, la potenza della mossa\nraddoppia."
+  },
+  {
+    "id": "251",
+    "slug": "beat-up",
+    "slugLoc": "picchiaduro",
+    "name": "Picchiaduro",
+    "description": "Il Pokémon attacca tante volte quanti sono i membri della\nsua squadra, eccetto quelli KO o affetti da problemi di stato.\nLa potenza della mossa è calcolata in base all'Attacco\ndei membri della squadra."
+  },
+  {
+    "id": "252",
+    "slug": "fake-out",
+    "slugLoc": "bruciapelo",
+    "name": "Bruciapelo",
+    "description": "Il Pokémon fa tentennare il bersaglio. Se non è la prima a essere\nusata quando il Pokémon entra in campo, questa mossa fallisce."
+  },
+  {
+    "id": "253",
+    "slug": "uproar",
+    "slugLoc": "baraonda",
+    "name": "Baraonda",
+    "description": "Il Pokémon entra nello stato Baraonda."
+  },
+  {
+    "id": "254",
+    "slug": "stockpile",
+    "slugLoc": "accumulo",
+    "name": "Accumulo",
+    "description": "Il Pokémon aumenta di 1 grado la sua Difesa e la sua Difesa\nSpeciale, e di 1 livello il suo stato Accumulo. Quest'ultimo\nnon può aumentare più di 3 volte."
+  },
+  {
+    "id": "255",
+    "slug": "spit-up",
+    "slugLoc": "sfoghenergia",
+    "name": "Sfoghenergia",
+    "description": "Più il livello dello stato Accumulo del Pokémon è alto, maggiore\nè la potenza della mossa, da un minimo di 100 a un massimo\ndi 300. Se il Pokémon non è nello stato Accumulo, questa\nmossa fallisce."
+  },
+  {
+    "id": "256",
+    "slug": "swallow",
+    "slugLoc": "introenergia",
+    "name": "Introenergia",
+    "description": "Più il livello dello stato Accumulo del Pokémon è alto, maggiori\nsono i PS recuperati con questa mossa. A 1 livello, il Pokémon\nrecupera 1/4 dei suoi PS massimi, a 2 livelli metà, e a 3 livelli\nrecupera tutti i PS. Se il Pokémon non è nello stato Accumulo,\nquesta mossa fallisce."
+  },
+  {
+    "id": "257",
+    "slug": "heat-wave",
+    "slugLoc": "ondacalda",
+    "name": "Ondacalda",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nScottatura al bersaglio."
+  },
+  {
+    "id": "258",
+    "slug": "hail",
+    "slugLoc": "grandine",
+    "name": "Grandine",
+    "description": ""
+  },
+  {
+    "id": "259",
+    "slug": "torment",
+    "slugLoc": "attaccalite",
+    "name": "Attaccalite",
+    "description": "Il Pokémon causa lo stato Ripetizione bloccata al bersaglio."
+  },
+  {
+    "id": "260",
+    "slug": "flatter",
+    "slugLoc": "adulazione",
+    "name": "Adulazione",
+    "description": "Il Pokémon aumenta di 1 grado l'Attacco Speciale del bersaglio,\nma gli causa lo stato Confusione."
+  },
+  {
+    "id": "261",
+    "slug": "will-o-wisp",
+    "slugLoc": "fuocofatuo",
+    "name": "Fuocofatuo",
+    "description": "Il Pokémon causa lo stato Scottatura al bersaglio."
+  },
+  {
+    "id": "262",
+    "slug": "memento",
+    "slugLoc": "memento",
+    "name": "Memento",
+    "description": "Il Pokémon va KO, ma riduce di 2 gradi l'Attacco e l'Attacco\nSpeciale del bersaglio."
+  },
+  {
+    "id": "263",
+    "slug": "facade",
+    "slugLoc": "facciata",
+    "name": "Facciata",
+    "description": "Se il Pokémon è affetto dallo stato Avvelenamento,\nIperavvelenamento, Paralisi o Scottatura, la potenza della\nmossa raddoppia, ignorando anche il dimezzamento dei\ndanni delle mosse fisiche dovuto allo stato Scottatura."
+  },
+  {
+    "id": "264",
+    "slug": "focus-punch",
+    "slugLoc": "centripugno",
+    "name": "Centripugno",
+    "description": "Se il Pokémon subisce danni da un attacco nel turno in cui sta\nper sferrarla, questa mossa fallisce."
+  },
+  {
+    "id": "265",
+    "slug": "smelling-salts",
+    "slugLoc": "maniereforti",
+    "name": "Maniereforti",
+    "description": ""
+  },
+  {
+    "id": "266",
+    "slug": "follow-me",
+    "slugLoc": "sonoqui",
+    "name": "Sonoqui",
+    "description": "Il Pokémon diventa il bersaglio di tutte le mosse avversarie\nche permettono di selezionarne uno."
+  },
+  {
+    "id": "267",
+    "slug": "nature-power",
+    "slugLoc": "naturforza",
+    "name": "Naturforza",
+    "description": ""
+  },
+  {
+    "id": "268",
+    "slug": "charge",
+    "slugLoc": "sottocarica",
+    "name": "Sottocarica",
+    "description": "Il Pokémon aumenta di 1 grado la sua Difesa Speciale\ned entra nello stato Carica elettrica."
+  },
+  {
+    "id": "269",
+    "slug": "taunt",
+    "slugLoc": "provocazione",
+    "name": "Provocazione",
+    "description": "Il Pokémon causa lo stato Provocazione al bersaglio."
+  },
+  {
+    "id": "270",
+    "slug": "helping-hand",
+    "slugLoc": "altruismo",
+    "name": "Altruismo",
+    "description": "Il Pokémon aumenta del 50% la potenza delle mosse sferrate\nda un alleato durante questo turno."
+  },
+  {
+    "id": "271",
+    "slug": "trick",
+    "slugLoc": "raggiro",
+    "name": "Raggiro",
+    "description": "Il Pokémon scambia lo strumento che ha con sé con quello\ndel bersaglio."
+  },
+  {
+    "id": "272",
+    "slug": "role-play",
+    "slugLoc": "giocodiruolo",
+    "name": "Giocodiruolo",
+    "description": "Il Pokémon cambia la propria abilità in quella del bersaglio."
+  },
+  {
+    "id": "273",
+    "slug": "wish",
+    "slugLoc": "desiderio",
+    "name": "Desiderio",
+    "description": "Il Pokémon causa lo stato Desiderio nella posizione in cui\nsi trova."
+  },
+  {
+    "id": "274",
+    "slug": "assist",
+    "slugLoc": "assistente",
+    "name": "Assistente",
+    "description": ""
+  },
+  {
+    "id": "275",
+    "slug": "ingrain",
+    "slugLoc": "radicamento",
+    "name": "Radicamento",
+    "description": "Il Pokémon entra nello stato Radicamento."
+  },
+  {
+    "id": "276",
+    "slug": "superpower",
+    "slugLoc": "troppoforte",
+    "name": "Troppoforte",
+    "description": "Il Pokémon riduce di 1 grado il suo Attacco e la sua Difesa."
+  },
+  {
+    "id": "277",
+    "slug": "magic-coat",
+    "slugLoc": "magivelo",
+    "name": "Magivelo",
+    "description": ""
+  },
+  {
+    "id": "278",
+    "slug": "recycle",
+    "slugLoc": "riciclo",
+    "name": "Riciclo",
+    "description": "Il Pokémon rigenera l'ultimo strumento consumato che aveva\ncon sé."
+  },
+  {
+    "id": "279",
+    "slug": "revenge",
+    "slugLoc": "vendetta",
+    "name": "Vendetta",
+    "description": ""
+  },
+  {
+    "id": "280",
+    "slug": "brick-break",
+    "slugLoc": "breccia",
+    "name": "Breccia",
+    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta avversario."
+  },
+  {
+    "id": "281",
+    "slug": "yawn",
+    "slugLoc": "sbadiglio",
+    "name": "Sbadiglio",
+    "description": "Il Pokémon causa lo stato Sonnolenza al bersaglio.\nQuesta mossa va sempre a segno."
+  },
+  {
+    "id": "282",
+    "slug": "knock-off",
+    "slugLoc": "privazione",
+    "name": "Privazione",
+    "description": "Se il bersaglio ha con sé uno strumento, la potenza di questa\nmossa aumenta del 50% e il Pokémon fa perdere lo strumento\nal bersaglio."
+  },
+  {
+    "id": "283",
+    "slug": "endeavor",
+    "slugLoc": "rimonta",
+    "name": "Rimonta",
+    "description": "Il Pokémon infligge al bersaglio una quantità di danni pari\nalla differenza tra i PS residui del bersaglio e i suoi.\nSe i PS residui del bersaglio sono uguali o inferiori a quelli\ndel Pokémon, questa mossa fallisce."
+  },
+  {
+    "id": "284",
+    "slug": "eruption",
+    "slugLoc": "eruzione",
+    "name": "Eruzione",
+    "description": "Più bassi sono i PS residui del Pokémon, minore è la potenza\ndella mossa, da un minimo di 1 a un massimo di 150."
+  },
+  {
+    "id": "285",
+    "slug": "skill-swap",
+    "slugLoc": "baratto",
+    "name": "Baratto",
+    "description": "Il Pokémon scambia la propria abilità con quella del bersaglio."
+  },
+  {
+    "id": "286",
+    "slug": "imprison",
+    "slugLoc": "esclusiva",
+    "name": "Esclusiva",
+    "description": "Il Pokémon entra nello stato Esclusiva."
+  },
+  {
+    "id": "287",
+    "slug": "refresh",
+    "slugLoc": "rinfrescata",
+    "name": "Rinfrescata",
+    "description": ""
+  },
+  {
+    "id": "288",
+    "slug": "grudge",
+    "slugLoc": "rancore",
+    "name": "Rancore",
+    "description": ""
+  },
+  {
+    "id": "289",
+    "slug": "snatch",
+    "slugLoc": "scippo",
+    "name": "Scippo",
+    "description": ""
+  },
+  {
+    "id": "290",
+    "slug": "secret-power",
+    "slugLoc": "forzasegreta",
+    "name": "Forzasegreta",
+    "description": ""
+  },
+  {
+    "id": "291",
+    "slug": "dive",
+    "slugLoc": "sub",
+    "name": "Sub",
+    "description": "Il Pokémon entra nello stato Sott'acqua nel turno in cui usa\nla mossa e attacca in quello seguente."
+  },
+  {
+    "id": "292",
+    "slug": "arm-thrust",
+    "slugLoc": "sberletese",
+    "name": "Sberletese",
+    "description": ""
+  },
+  {
+    "id": "293",
+    "slug": "camouflage",
+    "slugLoc": "camuffamento",
+    "name": "Camuffamento",
+    "description": ""
+  },
+  {
+    "id": "294",
+    "slug": "tail-glow",
+    "slugLoc": "codadiluce",
+    "name": "Codadiluce",
+    "description": ""
+  },
+  {
+    "id": "295",
+    "slug": "luster-purge",
+    "slugLoc": "abbagliante",
+    "name": "Abbagliante",
+    "description": ""
+  },
+  {
+    "id": "296",
+    "slug": "mist-ball",
+    "slugLoc": "foschisfera",
+    "name": "Foschisfera",
+    "description": ""
+  },
+  {
+    "id": "297",
+    "slug": "feather-dance",
+    "slugLoc": "danzadipiume",
+    "name": "Danzadipiume",
+    "description": "Il Pokémon riduce di 2 gradi l'Attacco del bersaglio."
+  },
+  {
+    "id": "298",
+    "slug": "teeter-dance",
+    "slugLoc": "strampadanza",
+    "name": "Strampadanza",
+    "description": "Il Pokémon causa lo stato Confusione a tutti gli altri Pokémon."
+  },
+  {
+    "id": "299",
+    "slug": "blaze-kick",
+    "slugLoc": "calciardente",
+    "name": "Calciardente",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1, e ha il 10%\ndi probabilità di causare lo stato Scottatura al bersaglio."
+  },
+  {
+    "id": "300",
+    "slug": "mud-sport",
+    "slugLoc": "fangata",
+    "name": "Fangata",
+    "description": ""
+  },
+  {
+    "id": "301",
+    "slug": "ice-ball",
+    "slugLoc": "palla-gelo",
+    "name": "Palla Gelo",
+    "description": ""
+  },
+  {
+    "id": "302",
+    "slug": "needle-arm",
+    "slugLoc": "pugnospine",
+    "name": "Pugnospine",
+    "description": ""
+  },
+  {
+    "id": "303",
+    "slug": "slack-off",
+    "slugLoc": "pigro",
+    "name": "Pigro",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi."
+  },
+  {
+    "id": "304",
+    "slug": "hyper-voice",
+    "slugLoc": "granvoce",
+    "name": "Granvoce",
+    "description": ""
+  },
+  {
+    "id": "305",
+    "slug": "poison-fang",
+    "slugLoc": "velenodenti",
+    "name": "Velenodenti",
+    "description": "Il Pokémon ha il 50% di probabilità di causare lo stato\nIperavvelenamento al bersaglio."
+  },
+  {
+    "id": "306",
+    "slug": "crush-claw",
+    "slugLoc": "tritartigli",
+    "name": "Tritartigli",
+    "description": "Il Pokémon ha il 50% di probabilità di ridurre di 1 grado\nla Difesa del bersaglio."
+  },
+  {
+    "id": "307",
+    "slug": "blast-burn",
+    "slugLoc": "incendio",
+    "name": "Incendio",
+    "description": "Il turno dopo aver usato questa mossa, il Pokémon è affetto\ndallo stato Ricarica."
+  },
+  {
+    "id": "308",
+    "slug": "hydro-cannon",
+    "slugLoc": "idrocannone",
+    "name": "Idrocannone",
+    "description": "Il turno dopo aver usato questa mossa, il Pokémon è affetto\ndallo stato Ricarica."
+  },
+  {
+    "id": "309",
+    "slug": "meteor-mash",
+    "slugLoc": "meteorpugno",
+    "name": "Meteorpugno",
+    "description": "Il Pokémon ha il 20% di probabilità di aumentare di 1 grado\nil suo Attacco."
+  },
+  {
+    "id": "310",
+    "slug": "astonish",
+    "slugLoc": "sgomento",
+    "name": "Sgomento",
+    "description": ""
+  },
+  {
+    "id": "311",
+    "slug": "weather-ball",
+    "slugLoc": "palla-clima",
+    "name": "Palla Clima",
+    "description": "Se è attiva una condizione atmosferica, la potenza di questa\nmossa raddoppia e il suo tipo cambia: Fuoco se è attivo\nlo stato Sole intenso, Acqua se è attivo lo stato Pioggia,\nGhiaccio se è attivo lo stato Neve e Roccia se è attivo lo stato\nTempesta di sabbia."
+  },
+  {
+    "id": "312",
+    "slug": "aromatherapy",
+    "slugLoc": "aromaterapia",
+    "name": "Aromaterapia",
+    "description": ""
+  },
+  {
+    "id": "313",
+    "slug": "fake-tears",
+    "slugLoc": "falselacrime",
+    "name": "Falselacrime",
+    "description": "Il Pokémon riduce di 2 gradi la Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "314",
+    "slug": "air-cutter",
+    "slugLoc": "aerasoio",
+    "name": "Aerasoio",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "315",
+    "slug": "overheat",
+    "slugLoc": "vampata",
+    "name": "Vampata",
+    "description": "Il Pokémon riduce di 2 gradi il suo Attacco Speciale."
+  },
+  {
+    "id": "316",
+    "slug": "odor-sleuth",
+    "slugLoc": "segugio",
+    "name": "Segugio",
+    "description": ""
+  },
+  {
+    "id": "317",
+    "slug": "rock-tomb",
+    "slugLoc": "rocciotomba",
+    "name": "Rocciotomba",
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio."
+  },
+  {
+    "id": "318",
+    "slug": "silver-wind",
+    "slugLoc": "ventargenteo",
+    "name": "Ventargenteo",
+    "description": ""
+  },
+  {
+    "id": "319",
+    "slug": "metal-sound",
+    "slugLoc": "ferrostrido",
+    "name": "Ferrostrido",
+    "description": "Il Pokémon riduce di 2 gradi la Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "320",
+    "slug": "grass-whistle",
+    "slugLoc": "meloderba",
+    "name": "Meloderba",
+    "description": ""
+  },
+  {
+    "id": "321",
+    "slug": "tickle",
+    "slugLoc": "solletico",
+    "name": "Solletico",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco e la Difesa del bersaglio."
+  },
+  {
+    "id": "322",
+    "slug": "cosmic-power",
+    "slugLoc": "cosmoforza",
+    "name": "Cosmoforza",
+    "description": "Il Pokémon aumenta di 1 grado la sua Difesa e la sua\nDifesa Speciale."
+  },
+  {
+    "id": "323",
+    "slug": "water-spout",
+    "slugLoc": "zampillo",
+    "name": "Zampillo",
+    "description": "Più bassi sono i PS residui del Pokémon, minore è la potenza\ndella mossa, da un minimo di 1 a un massimo di 150."
+  },
+  {
+    "id": "324",
+    "slug": "signal-beam",
+    "slugLoc": "segnoraggio",
+    "name": "Segnoraggio",
+    "description": ""
+  },
+  {
+    "id": "325",
+    "slug": "shadow-punch",
+    "slugLoc": "pugnodombra",
+    "name": "Pugnodombra",
+    "description": "Questa mossa va sempre a segno."
+  },
+  {
+    "id": "326",
+    "slug": "extrasensory",
+    "slugLoc": "extrasenso",
+    "name": "Extrasenso",
+    "description": "Il Pokémon ha il 10% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "327",
+    "slug": "sky-uppercut",
+    "slugLoc": "stramontante",
+    "name": "Stramontante",
+    "description": ""
+  },
+  {
+    "id": "328",
+    "slug": "sand-tomb",
+    "slugLoc": "sabbiotomba",
+    "name": "Sabbiotomba",
+    "description": "Il Pokémon causa lo stato Imprigionamento al bersaglio."
+  },
+  {
+    "id": "329",
+    "slug": "sheer-cold",
+    "slugLoc": "purogelo",
+    "name": "Purogelo",
+    "description": "Il Pokémon manda KO il bersaglio. La precisione di questa\nmossa è del 30%, ma se usata da un Pokémon che non è\ndi tipo Ghiaccio, scende al 20%. Inoltre, la mossa non ha\neffetto sui bersagli di tipo Ghiaccio."
+  },
+  {
+    "id": "330",
+    "slug": "muddy-water",
+    "slugLoc": "fanghiglia",
+    "name": "Fanghiglia",
+    "description": "Il Pokémon ha il 30% di probabilità di ridurre di 1 grado\nla precisione del bersaglio."
+  },
+  {
+    "id": "331",
+    "slug": "bullet-seed",
+    "slugLoc": "semitraglia",
+    "name": "Semitraglia",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila."
+  },
+  {
+    "id": "332",
+    "slug": "aerial-ace",
+    "slugLoc": "aeroassalto",
+    "name": "Aeroassalto",
+    "description": "Questa mossa va sempre a segno."
+  },
+  {
+    "id": "333",
+    "slug": "icicle-spear",
+    "slugLoc": "gelolancia",
+    "name": "Gelolancia",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila."
+  },
+  {
+    "id": "334",
+    "slug": "iron-defense",
+    "slugLoc": "ferroscudo",
+    "name": "Ferroscudo",
+    "description": "Il Pokémon aumenta di 2 gradi la sua Difesa."
+  },
+  {
+    "id": "335",
+    "slug": "block",
+    "slugLoc": "blocco",
+    "name": "Blocco",
+    "description": "Il Pokémon causa lo stato Antifuga al bersaglio."
+  },
+  {
+    "id": "336",
+    "slug": "howl",
+    "slugLoc": "gridodilotta",
+    "name": "Gridodilotta",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco e quello\ndell'alleato."
+  },
+  {
+    "id": "337",
+    "slug": "dragon-claw",
+    "slugLoc": "dragartigli",
+    "name": "Dragartigli",
+    "description": ""
+  },
+  {
+    "id": "338",
+    "slug": "frenzy-plant",
+    "slugLoc": "radicalbero",
+    "name": "Radicalbero",
+    "description": "Il turno dopo aver usato questa mossa, il Pokémon è affetto\ndallo stato Ricarica."
+  },
+  {
+    "id": "339",
+    "slug": "bulk-up",
+    "slugLoc": "granfisico",
+    "name": "Granfisico",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco e la sua Difesa."
+  },
+  {
+    "id": "340",
+    "slug": "bounce",
+    "slugLoc": "rimbalzo",
+    "name": "Rimbalzo",
+    "description": "Il Pokémon entra nello stato In aria nel turno in cui usa la mossa\ne attacca in quello seguente. Questa mossa ha il 30%\ndi probabilità di causare lo stato Paralisi al bersaglio."
+  },
+  {
+    "id": "341",
+    "slug": "mud-shot",
+    "slugLoc": "colpodifango",
+    "name": "Colpodifango",
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio."
+  },
+  {
+    "id": "342",
+    "slug": "poison-tail",
+    "slugLoc": "velenocoda",
+    "name": "Velenocoda",
+    "description": ""
+  },
+  {
+    "id": "343",
+    "slug": "covet",
+    "slugLoc": "supplica",
+    "name": "Supplica",
+    "description": "Il Pokémon ruba lo strumento del bersaglio se non ne ha già\nuno con sé."
+  },
+  {
+    "id": "344",
+    "slug": "volt-tackle",
+    "slugLoc": "locomovolt",
+    "name": "Locomovolt",
+    "description": "Il Pokémon subisce 1/3 dei danni inflitti. Ha il 10%\ndi probabilità di causare lo stato Paralisi al bersaglio."
+  },
+  {
+    "id": "345",
+    "slug": "magical-leaf",
+    "slugLoc": "fogliamagica",
+    "name": "Fogliamagica",
+    "description": ""
+  },
+  {
+    "id": "346",
+    "slug": "water-sport",
+    "slugLoc": "docciascudo",
+    "name": "Docciascudo",
+    "description": ""
+  },
+  {
+    "id": "347",
+    "slug": "calm-mind",
+    "slugLoc": "calmamente",
+    "name": "Calmamente",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco Speciale\ne la sua Difesa Speciale."
+  },
+  {
+    "id": "348",
+    "slug": "leaf-blade",
+    "slugLoc": "fendifoglia",
+    "name": "Fendifoglia",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "349",
+    "slug": "dragon-dance",
+    "slugLoc": "dragodanza",
+    "name": "Dragodanza",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco e la sua Velocità."
+  },
+  {
+    "id": "350",
+    "slug": "rock-blast",
+    "slugLoc": "cadutamassi",
+    "name": "Cadutamassi",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila."
+  },
+  {
+    "id": "351",
+    "slug": "shock-wave",
+    "slugLoc": "ondashock",
+    "name": "Ondashock",
+    "description": ""
+  },
+  {
+    "id": "352",
+    "slug": "water-pulse",
+    "slugLoc": "idropulsar",
+    "name": "Idropulsar",
+    "description": "Il Pokémon ha il 20% di probabilità di causare lo stato\nConfusione al bersaglio."
+  },
+  {
+    "id": "353",
+    "slug": "doom-desire",
+    "slugLoc": "desiderio-fatale",
+    "name": "Desiderio Fatale",
+    "description": ""
+  },
+  {
+    "id": "354",
+    "slug": "psycho-boost",
+    "slugLoc": "psicoslancio",
+    "name": "Psicoslancio",
+    "description": ""
+  },
+  {
+    "id": "355",
+    "slug": "roost",
+    "slugLoc": "trespolo",
+    "name": "Trespolo",
+    "description": "Il Pokémon recupera metà dei suoi PS massimi. Se è di tipo\nVolante, lo perde nel turno in cui usa questa mossa."
+  },
+  {
+    "id": "356",
+    "slug": "gravity",
+    "slugLoc": "gravita",
+    "name": "Gravità",
+    "description": "Il Pokémon causa lo stato Gravità sull'intero campo di lotta\nper 5 turni."
+  },
+  {
+    "id": "357",
+    "slug": "miracle-eye",
+    "slugLoc": "miracolvista",
+    "name": "Miracolvista",
+    "description": ""
+  },
+  {
+    "id": "358",
+    "slug": "wake-up-slap",
+    "slugLoc": "svegliopacca",
+    "name": "Svegliopacca",
+    "description": ""
+  },
+  {
+    "id": "359",
+    "slug": "hammer-arm",
+    "slugLoc": "martelpugno",
+    "name": "Martelpugno",
+    "description": "Il Pokémon riduce di 1 grado la sua Velocità."
+  },
+  {
+    "id": "360",
+    "slug": "gyro-ball",
+    "slugLoc": "vortexpalla",
+    "name": "Vortexpalla",
+    "description": "Minore è la Velocità del Pokémon rispetto a quella\ndel bersaglio, maggiore è la potenza della mossa,\nda un minimo di 1 a un massimo di 150."
+  },
+  {
+    "id": "361",
+    "slug": "healing-wish",
+    "slugLoc": "curardore",
+    "name": "Curardore",
+    "description": "Il Pokémon va KO, ma chi lo sostituisce recupera tutti i PS\ne guarisce dai problemi di stato."
+  },
+  {
+    "id": "362",
+    "slug": "brine",
+    "slugLoc": "acquadisale",
+    "name": "Acquadisale",
+    "description": ""
+  },
+  {
+    "id": "363",
+    "slug": "natural-gift",
+    "slugLoc": "dononaturale",
+    "name": "Dononaturale",
+    "description": ""
+  },
+  {
+    "id": "364",
+    "slug": "feint",
+    "slugLoc": "fintoattacco",
+    "name": "Fintoattacco",
+    "description": "Il Pokémon attacca rimuovendo dal bersaglio gli effetti di mosse\ncome Protezione e Individua."
+  },
+  {
+    "id": "365",
+    "slug": "pluck",
+    "slugLoc": "spennata",
+    "name": "Spennata",
+    "description": "Se il bersaglio ha con sé una bacca, il Pokémon la mangia\nricevendone gli effetti."
+  },
+  {
+    "id": "366",
+    "slug": "tailwind",
+    "slugLoc": "ventoincoda",
+    "name": "Ventoincoda",
+    "description": "Il Pokémon causa lo stato Vento in coda sul proprio campo\ndi lotta per 4 turni."
+  },
+  {
+    "id": "367",
+    "slug": "acupressure",
+    "slugLoc": "acupressione",
+    "name": "Acupressione",
+    "description": "Il Pokémon aumenta di 2 gradi una statistica sua o del suo\nalleato, scelta a caso tra Attacco, Difesa, Attacco Speciale,\nDifesa Speciale, Velocità, precisione ed elusione."
+  },
+  {
+    "id": "368",
+    "slug": "metal-burst",
+    "slugLoc": "metalscoppio",
+    "name": "Metalscoppio",
+    "description": "Se il Pokémon ha subito danni da una mossa durante il turno\nin corso, infligge a chi lo ha colpito il 150% dei danni ricevuti."
+  },
+  {
+    "id": "369",
+    "slug": "u-turn",
+    "slugLoc": "retromarcia",
+    "name": "Retromarcia",
+    "description": "Il Pokémon si fa sostituire da un compagno di squadra subito\ndopo aver attaccato."
+  },
+  {
+    "id": "370",
+    "slug": "close-combat",
+    "slugLoc": "zuffa",
+    "name": "Zuffa",
+    "description": "Il Pokémon riduce di 1 grado la sua Difesa e la sua\nDifesa Speciale."
+  },
+  {
+    "id": "371",
+    "slug": "payback",
+    "slugLoc": "rivincita",
+    "name": "Rivincita",
+    "description": "Se il Pokémon attacca dopo il bersaglio, la potenza della mossa\nraddoppia."
+  },
+  {
+    "id": "372",
+    "slug": "assurance",
+    "slugLoc": "garanzia",
+    "name": "Garanzia",
+    "description": "Se il bersaglio ha già subito danni in questo turno, la potenza\ndella mossa raddoppia."
+  },
+  {
+    "id": "373",
+    "slug": "embargo",
+    "slugLoc": "divieto",
+    "name": "Divieto",
+    "description": ""
+  },
+  {
+    "id": "374",
+    "slug": "fling",
+    "slugLoc": "lancio",
+    "name": "Lancio",
+    "description": "La potenza e l'effetto di questa mossa dipendono dallo\nstrumento che il Pokémon ha con sé. Dopo averla usata,\nil Pokémon perde lo strumento."
+  },
+  {
+    "id": "375",
+    "slug": "psycho-shift",
+    "slugLoc": "psicotransfer",
+    "name": "Psicotransfer",
+    "description": ""
+  },
+  {
+    "id": "376",
+    "slug": "trump-card",
+    "slugLoc": "asso",
+    "name": "Asso",
+    "description": ""
+  },
+  {
+    "id": "377",
+    "slug": "heal-block",
+    "slugLoc": "anticura",
+    "name": "Anticura",
+    "description": ""
+  },
+  {
+    "id": "378",
+    "slug": "wring-out",
+    "slugLoc": "strizzata",
+    "name": "Strizzata",
+    "description": ""
+  },
+  {
+    "id": "379",
+    "slug": "power-trick",
+    "slugLoc": "ingannoforza",
+    "name": "Ingannoforza",
+    "description": "Il Pokémon entra nello stato Statistiche scambiate."
+  },
+  {
+    "id": "380",
+    "slug": "gastro-acid",
+    "slugLoc": "gastroacido",
+    "name": "Gastroacido",
+    "description": "Il Pokémon causa lo stato Abilità bloccata al bersaglio."
+  },
+  {
+    "id": "381",
+    "slug": "lucky-chant",
+    "slugLoc": "fortuncanto",
+    "name": "Fortuncanto",
+    "description": ""
+  },
+  {
+    "id": "382",
+    "slug": "me-first",
+    "slugLoc": "precedenza",
+    "name": "Precedenza",
+    "description": ""
+  },
+  {
+    "id": "383",
+    "slug": "copycat",
+    "slugLoc": "copione",
+    "name": "Copione",
+    "description": "Il Pokémon copia l'ultima mossa utilizzata. Se non ne è ancora\nstata usata una, questa mossa fallisce."
+  },
+  {
+    "id": "384",
+    "slug": "power-swap",
+    "slugLoc": "barattoforza",
+    "name": "Barattoforza",
+    "description": "Il Pokémon scambia le proprie modifiche all'Attacco e\nall'Attacco Speciale con quelle del bersaglio."
+  },
+  {
+    "id": "385",
+    "slug": "guard-swap",
+    "slugLoc": "barattoscudo",
+    "name": "Barattoscudo",
+    "description": "Il Pokémon scambia le proprie modifiche alla Difesa e\nalla Difesa Speciale con quelle del bersaglio."
+  },
+  {
+    "id": "386",
+    "slug": "punishment",
+    "slugLoc": "punizione",
+    "name": "Punizione",
+    "description": ""
+  },
+  {
+    "id": "387",
+    "slug": "last-resort",
+    "slugLoc": "ultimascelta",
+    "name": "Ultimascelta",
+    "description": "Se il Pokémon non ha usato tutte le altre mosse che conosce,\nquesta mossa fallisce."
+  },
+  {
+    "id": "388",
+    "slug": "worry-seed",
+    "slugLoc": "affannoseme",
+    "name": "Affannoseme",
+    "description": "Il Pokémon cambia l'abilità del bersaglio in Insonnia."
+  },
+  {
+    "id": "389",
+    "slug": "sucker-punch",
+    "slugLoc": "sbigoattacco",
+    "name": "Sbigoattacco",
+    "description": "La mossa va a segno solo se nel turno in corso il bersaglio\nha scelto di usare un attacco e non l'ha ancora sferrato."
+  },
+  {
+    "id": "390",
+    "slug": "toxic-spikes",
+    "slugLoc": "fielepunte",
+    "name": "Fielepunte",
+    "description": "Il Pokémon causa lo stato Punte velenose sul campo di lotta\navversario."
+  },
+  {
+    "id": "391",
+    "slug": "heart-swap",
+    "slugLoc": "cuorbaratto",
+    "name": "Cuorbaratto",
+    "description": ""
+  },
+  {
+    "id": "392",
+    "slug": "aqua-ring",
+    "slugLoc": "acquanello",
+    "name": "Acquanello",
+    "description": "Il Pokémon entra nello stato Velo d'acqua."
+  },
+  {
+    "id": "393",
+    "slug": "magnet-rise",
+    "slugLoc": "magnetascesa",
+    "name": "Magnetascesa",
+    "description": "Il Pokémon entra nello stato Ascesa magnetica."
+  },
+  {
+    "id": "394",
+    "slug": "flare-blitz",
+    "slugLoc": "fuococarica",
+    "name": "Fuococarica",
+    "description": "Il Pokémon subisce 1/3 dei danni inflitti e ha il 10%\ndi probabilità di causare lo stato Scottatura al bersaglio.\nInoltre, guarisce dallo stato Congelamento."
+  },
+  {
+    "id": "395",
+    "slug": "force-palm",
+    "slugLoc": "palmoforza",
+    "name": "Palmoforza",
+    "description": ""
+  },
+  {
+    "id": "396",
+    "slug": "aura-sphere",
+    "slugLoc": "sferapulsar",
+    "name": "Sferapulsar",
+    "description": "Questa mossa va sempre a segno."
+  },
+  {
+    "id": "397",
+    "slug": "rock-polish",
+    "slugLoc": "lucidatura",
+    "name": "Lucidatura",
+    "description": "Il Pokémon aumenta di 2 gradi la sua Velocità."
+  },
+  {
+    "id": "398",
+    "slug": "poison-jab",
+    "slugLoc": "velenpuntura",
+    "name": "Velenpuntura",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nAvvelenamento al bersaglio."
+  },
+  {
+    "id": "399",
+    "slug": "dark-pulse",
+    "slugLoc": "neropulsar",
+    "name": "Neropulsar",
+    "description": "Il Pokémon ha il 20% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "400",
+    "slug": "night-slash",
+    "slugLoc": "nottesferza",
+    "name": "Nottesferza",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "401",
+    "slug": "aqua-tail",
+    "slugLoc": "idrondata",
+    "name": "Idrondata",
+    "description": ""
+  },
+  {
+    "id": "402",
+    "slug": "seed-bomb",
+    "slugLoc": "semebomba",
+    "name": "Semebomba",
+    "description": ""
+  },
+  {
+    "id": "403",
+    "slug": "air-slash",
+    "slugLoc": "eterelama",
+    "name": "Eterelama",
+    "description": "Il Pokémon ha il 30% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "404",
+    "slug": "x-scissor",
+    "slugLoc": "forbice-x",
+    "name": "Forbice X",
+    "description": ""
+  },
+  {
+    "id": "405",
+    "slug": "bug-buzz",
+    "slugLoc": "ronzio",
+    "name": "Ronzio",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nla Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "406",
+    "slug": "dragon-pulse",
+    "slugLoc": "dragopulsar",
+    "name": "Dragopulsar",
+    "description": ""
+  },
+  {
+    "id": "407",
+    "slug": "dragon-rush",
+    "slugLoc": "dragofuria",
+    "name": "Dragofuria",
+    "description": "Il Pokémon ha il 20% di probabilità di far tentennare\nil bersaglio. Inoltre, se questo è affetto dallo stato Minimizzato,\nla mossa va sempre a segno e la sua potenza raddoppia."
+  },
+  {
+    "id": "408",
+    "slug": "power-gem",
+    "slugLoc": "gemmoforza",
+    "name": "Gemmoforza",
+    "description": ""
+  },
+  {
+    "id": "409",
+    "slug": "drain-punch",
+    "slugLoc": "assorbipugno",
+    "name": "Assorbipugno",
+    "description": "Il Pokémon recupera PS pari alla metà dei danni inflitti\nal bersaglio."
+  },
+  {
+    "id": "410",
+    "slug": "vacuum-wave",
+    "slugLoc": "vuotonda",
+    "name": "Vuotonda",
+    "description": ""
+  },
+  {
+    "id": "411",
+    "slug": "focus-blast",
+    "slugLoc": "focalcolpo",
+    "name": "Focalcolpo",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nla Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "412",
+    "slug": "energy-ball",
+    "slugLoc": "energipalla",
+    "name": "Energipalla",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nla Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "413",
+    "slug": "brave-bird",
+    "slugLoc": "baldeali",
+    "name": "Baldeali",
+    "description": "Il Pokémon subisce 1/3 dei danni inflitti."
+  },
+  {
+    "id": "414",
+    "slug": "earth-power",
+    "slugLoc": "geoforza",
+    "name": "Geoforza",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nla Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "415",
+    "slug": "switcheroo",
+    "slugLoc": "rapidscambio",
+    "name": "Rapidscambio",
+    "description": "Il Pokémon scambia lo strumento che ha con sé con quello\ndel bersaglio."
+  },
+  {
+    "id": "416",
+    "slug": "giga-impact",
+    "slugLoc": "gigaimpatto",
+    "name": "Gigaimpatto",
+    "description": "Il turno dopo aver usato questa mossa, il Pokémon è affetto\ndallo stato Ricarica."
+  },
+  {
+    "id": "417",
+    "slug": "nasty-plot",
+    "slugLoc": "congiura",
+    "name": "Congiura",
+    "description": "Il Pokémon aumenta di 2 gradi il suo Attacco Speciale."
+  },
+  {
+    "id": "418",
+    "slug": "bullet-punch",
+    "slugLoc": "pugnoscarica",
+    "name": "Pugnoscarica",
+    "description": ""
+  },
+  {
+    "id": "419",
+    "slug": "avalanche",
+    "slugLoc": "slavina",
+    "name": "Slavina",
+    "description": "Se il Pokémon ha subito danni dal bersaglio nel turno in corso,\nla potenza di questa mossa raddoppia."
+  },
+  {
+    "id": "420",
+    "slug": "ice-shard",
+    "slugLoc": "geloscheggia",
+    "name": "Geloscheggia",
+    "description": ""
+  },
+  {
+    "id": "421",
+    "slug": "shadow-claw",
+    "slugLoc": "ombrartigli",
+    "name": "Ombrartigli",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "422",
+    "slug": "thunder-fang",
+    "slugLoc": "fulmindenti",
+    "name": "Fulmindenti",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato Paralisi\nal bersaglio e il 10% di probabilità di farlo tentennare."
+  },
+  {
+    "id": "423",
+    "slug": "ice-fang",
+    "slugLoc": "gelodenti",
+    "name": "Gelodenti",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nCongelamento al bersaglio e il 10% di probabilità\ndi farlo tentennare."
+  },
+  {
+    "id": "424",
+    "slug": "fire-fang",
+    "slugLoc": "rogodenti",
+    "name": "Rogodenti",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nScottatura al bersaglio e il 10% di probabilità\ndi farlo tentennare."
+  },
+  {
+    "id": "425",
+    "slug": "shadow-sneak",
+    "slugLoc": "furtivombra",
+    "name": "Furtivombra",
+    "description": ""
+  },
+  {
+    "id": "426",
+    "slug": "mud-bomb",
+    "slugLoc": "pantanobomba",
+    "name": "Pantanobomba",
+    "description": ""
+  },
+  {
+    "id": "427",
+    "slug": "psycho-cut",
+    "slugLoc": "psicotaglio",
+    "name": "Psicotaglio",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "428",
+    "slug": "zen-headbutt",
+    "slugLoc": "cozzata-zen",
+    "name": "Cozzata Zen",
+    "description": "Il Pokémon ha il 20% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "429",
+    "slug": "mirror-shot",
+    "slugLoc": "cristalcolpo",
+    "name": "Cristalcolpo",
+    "description": ""
+  },
+  {
+    "id": "430",
+    "slug": "flash-cannon",
+    "slugLoc": "cannonflash",
+    "name": "Cannonflash",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nla Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "431",
+    "slug": "rock-climb",
+    "slugLoc": "scalaroccia",
+    "name": "Scalaroccia",
+    "description": ""
+  },
+  {
+    "id": "432",
+    "slug": "defog",
+    "slugLoc": "scacciabruma",
+    "name": "Scacciabruma",
+    "description": "Il Pokémon riduce di 1 grado l'elusione del bersaglio. Inoltre\nrimuove gli stati Riflesso, Punte, Salvaguardia, gli stati Campo\ne simili."
+  },
+  {
+    "id": "433",
+    "slug": "trick-room",
+    "slugLoc": "distortozona",
+    "name": "Distortozona",
+    "description": "Il Pokémon causa lo stato Zona distorta sull'intero campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "434",
+    "slug": "draco-meteor",
+    "slugLoc": "dragobolide",
+    "name": "Dragobolide",
+    "description": "Il Pokémon riduce di 2 gradi il suo Attacco Speciale."
+  },
+  {
+    "id": "435",
+    "slug": "discharge",
+    "slugLoc": "scarica",
+    "name": "Scarica",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato Paralisi\nal bersaglio."
+  },
+  {
+    "id": "436",
+    "slug": "lava-plume",
+    "slugLoc": "lavasbuffo",
+    "name": "Lavasbuffo",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nScottatura al bersaglio."
+  },
+  {
+    "id": "437",
+    "slug": "leaf-storm",
+    "slugLoc": "verdebufera",
+    "name": "Verdebufera",
+    "description": "Il Pokémon riduce di 2 gradi il suo Attacco Speciale."
+  },
+  {
+    "id": "438",
+    "slug": "power-whip",
+    "slugLoc": "vigorcolpo",
+    "name": "Vigorcolpo",
+    "description": ""
+  },
+  {
+    "id": "439",
+    "slug": "rock-wrecker",
+    "slugLoc": "devastomasso",
+    "name": "Devastomasso",
+    "description": "Il turno dopo aver usato questa mossa, il Pokémon è affetto\ndallo stato Ricarica."
+  },
+  {
+    "id": "440",
+    "slug": "cross-poison",
+    "slugLoc": "velenocroce",
+    "name": "Velenocroce",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1 e ha il 10%\ndi probabilità di causare lo stato Avvelenamento al bersaglio."
+  },
+  {
+    "id": "441",
+    "slug": "gunk-shot",
+    "slugLoc": "sporcolancio",
+    "name": "Sporcolancio",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nAvvelenamento al bersaglio."
+  },
+  {
+    "id": "442",
+    "slug": "iron-head",
+    "slugLoc": "metaltestata",
+    "name": "Metaltestata",
+    "description": "Il Pokémon ha il 20% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "443",
+    "slug": "magnet-bomb",
+    "slugLoc": "bombagnete",
+    "name": "Bombagnete",
+    "description": ""
+  },
+  {
+    "id": "444",
+    "slug": "stone-edge",
+    "slugLoc": "pietrataglio",
+    "name": "Pietrataglio",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "445",
+    "slug": "captivate",
+    "slugLoc": "incanto",
+    "name": "Incanto",
+    "description": ""
+  },
+  {
+    "id": "446",
+    "slug": "stealth-rock",
+    "slugLoc": "levitoroccia",
+    "name": "Levitoroccia",
+    "description": "Il Pokémon causa lo stato Rocce levitanti sul campo di lotta\navversario."
+  },
+  {
+    "id": "447",
+    "slug": "grass-knot",
+    "slugLoc": "laccioerboso",
+    "name": "Laccioerboso",
+    "description": "Più pesante è il bersaglio, maggiore è la potenza della mossa,\nda un minimo di 20 a un massimo di 120."
+  },
+  {
+    "id": "448",
+    "slug": "chatter",
+    "slugLoc": "schiamazzo",
+    "name": "Schiamazzo",
+    "description": ""
+  },
+  {
+    "id": "449",
+    "slug": "judgment",
+    "slugLoc": "giudizio",
+    "name": "Giudizio",
+    "description": ""
+  },
+  {
+    "id": "450",
+    "slug": "bug-bite",
+    "slugLoc": "coleomorso",
+    "name": "Coleomorso",
+    "description": "Se il bersaglio ha con sé una bacca, il Pokémon la mangia\nricevendone gli effetti."
+  },
+  {
+    "id": "451",
+    "slug": "charge-beam",
+    "slugLoc": "raggioscossa",
+    "name": "Raggioscossa",
+    "description": "Il Pokémon ha il 70% di probabilità di aumentare di 1 grado\nil suo Attacco Speciale."
+  },
+  {
+    "id": "452",
+    "slug": "wood-hammer",
+    "slugLoc": "mazzuolegno",
+    "name": "Mazzuolegno",
+    "description": "Il Pokémon subisce 1/3 dei danni inflitti."
+  },
+  {
+    "id": "453",
+    "slug": "aqua-jet",
+    "slugLoc": "acquagetto",
+    "name": "Acquagetto",
+    "description": ""
+  },
+  {
+    "id": "454",
+    "slug": "attack-order",
+    "slugLoc": "comandourto",
+    "name": "Comandourto",
+    "description": ""
+  },
+  {
+    "id": "455",
+    "slug": "defend-order",
+    "slugLoc": "comandoscudo",
+    "name": "Comandoscudo",
+    "description": ""
+  },
+  {
+    "id": "456",
+    "slug": "heal-order",
+    "slugLoc": "comandocura",
+    "name": "Comandocura",
+    "description": ""
+  },
+  {
+    "id": "457",
+    "slug": "head-smash",
+    "slugLoc": "zuccata",
+    "name": "Zuccata",
+    "description": "Il Pokémon subisce metà dei danni inflitti."
+  },
+  {
+    "id": "458",
+    "slug": "double-hit",
+    "slugLoc": "doppiosmash",
+    "name": "Doppiosmash",
+    "description": "Il Pokémon colpisce 2 volte di fila."
+  },
+  {
+    "id": "459",
+    "slug": "roar-of-time",
+    "slugLoc": "fragortempo",
+    "name": "Fragortempo",
+    "description": ""
+  },
+  {
+    "id": "460",
+    "slug": "spacial-rend",
+    "slugLoc": "fendispazio",
+    "name": "Fendispazio",
+    "description": ""
+  },
+  {
+    "id": "461",
+    "slug": "lunar-dance",
+    "slugLoc": "lunardanza",
+    "name": "Lunardanza",
+    "description": ""
+  },
+  {
+    "id": "462",
+    "slug": "crush-grip",
+    "slugLoc": "sbriciolmano",
+    "name": "Sbriciolmano",
+    "description": ""
+  },
+  {
+    "id": "463",
+    "slug": "magma-storm",
+    "slugLoc": "magmaclisma",
+    "name": "Magmaclisma",
+    "description": ""
+  },
+  {
+    "id": "464",
+    "slug": "dark-void",
+    "slugLoc": "vuototetro",
+    "name": "Vuototetro",
+    "description": ""
+  },
+  {
+    "id": "465",
+    "slug": "seed-flare",
+    "slugLoc": "infuriaseme",
+    "name": "Infuriaseme",
+    "description": ""
+  },
+  {
+    "id": "466",
+    "slug": "ominous-wind",
+    "slugLoc": "funestovento",
+    "name": "Funestovento",
+    "description": ""
+  },
+  {
+    "id": "467",
+    "slug": "shadow-force",
+    "slugLoc": "oscurotuffo",
+    "name": "Oscurotuffo",
+    "description": ""
+  },
+  {
+    "id": "468",
+    "slug": "hone-claws",
+    "slugLoc": "unghiaguzze",
+    "name": "Unghiaguzze",
+    "description": ""
+  },
+  {
+    "id": "469",
+    "slug": "wide-guard",
+    "slugLoc": "bodyguard",
+    "name": "Bodyguard",
+    "description": "Il Pokémon protegge sé stesso e l'alleato dalle mosse che\ncolpiscono tutti gli alleati durante il turno in corso."
+  },
+  {
+    "id": "470",
+    "slug": "guard-split",
+    "slugLoc": "paridifesa",
+    "name": "Paridifesa",
+    "description": "Il Pokémon somma la propria Difesa e Difesa Speciale a quelle\ndel bersaglio, poi ridistribuisce equamente il risultato a ciascuno\ndei due."
+  },
+  {
+    "id": "471",
+    "slug": "power-split",
+    "slugLoc": "pariattacco",
+    "name": "Pariattacco",
+    "description": "Il Pokémon somma il proprio Attacco e Attacco Speciale\na quelli del bersaglio, poi ridistribuisce equamente il risultato\na ciascuno dei due."
+  },
+  {
+    "id": "472",
+    "slug": "wonder-room",
+    "slugLoc": "mirabilzona",
+    "name": "Mirabilzona",
+    "description": "Il Pokémon causa lo stato Zona miracolosa sull'intero campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "473",
+    "slug": "psyshock",
+    "slugLoc": "psicoshock",
+    "name": "Psicoshock",
+    "description": "I danni di questa mossa speciale vengono calcolati in base\nalla Difesa del bersaglio."
+  },
+  {
+    "id": "474",
+    "slug": "venoshock",
+    "slugLoc": "velenoshock",
+    "name": "Velenoshock",
+    "description": "Se il bersaglio è affetto dallo stato Avvelenamento\no Iperavvelenamento, la potenza della mossa raddoppia."
+  },
+  {
+    "id": "475",
+    "slug": "autotomize",
+    "slugLoc": "sganciapesi",
+    "name": "Sganciapesi",
+    "description": ""
+  },
+  {
+    "id": "476",
+    "slug": "rage-powder",
+    "slugLoc": "polverabbia",
+    "name": "Polverabbia",
+    "description": "Il Pokémon diventa il bersaglio di tutte le mosse avversarie\nche permettono di selezionarne uno."
+  },
+  {
+    "id": "477",
+    "slug": "telekinesis",
+    "slugLoc": "telecinesi",
+    "name": "Telecinesi",
+    "description": ""
+  },
+  {
+    "id": "478",
+    "slug": "magic-room",
+    "slugLoc": "magicozona",
+    "name": "Magicozona",
+    "description": "Il Pokémon causa lo stato Zona magica sull'intero campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "479",
+    "slug": "smack-down",
+    "slugLoc": "abbattimento",
+    "name": "Abbattimento",
+    "description": "Il Pokémon causa lo stato Atterrato al bersaglio se questo\nnon è a contatto con il terreno. La mossa può colpire anche\nse il bersaglio è nello stato In aria."
+  },
+  {
+    "id": "480",
+    "slug": "storm-throw",
+    "slugLoc": "tempestretta",
+    "name": "Tempestretta",
+    "description": "Questa mossa risulta sempre in un brutto colpo."
+  },
+  {
+    "id": "481",
+    "slug": "flame-burst",
+    "slugLoc": "pirolancio",
+    "name": "Pirolancio",
+    "description": ""
+  },
+  {
+    "id": "482",
+    "slug": "sludge-wave",
+    "slugLoc": "fangonda",
+    "name": "Fangonda",
+    "description": "Il Pokémon ha il 10% di probabilità di causare lo stato\nAvvelenamento al bersaglio."
+  },
+  {
+    "id": "483",
+    "slug": "quiver-dance",
+    "slugLoc": "eledanza",
+    "name": "Eledanza",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco Speciale, la sua\nDifesa Speciale e la sua Velocità."
+  },
+  {
+    "id": "484",
+    "slug": "heavy-slam",
+    "slugLoc": "pesobomba",
+    "name": "Pesobomba",
+    "description": "Più pesante è il Pokémon rispetto al bersaglio, maggiore è\nla potenza della mossa, da un minimo di 40 a un massimo\ndi 120. Se il bersaglio è affetto dallo stato Minimizzato,\nla mossa va sempre a segno e la sua potenza raddoppia."
+  },
+  {
+    "id": "485",
+    "slug": "synchronoise",
+    "slugLoc": "sincrumore",
+    "name": "Sincrumore",
+    "description": ""
+  },
+  {
+    "id": "486",
+    "slug": "electro-ball",
+    "slugLoc": "energisfera",
+    "name": "Energisfera",
+    "description": "Maggiore è la Velocità del Pokémon rispetto a quella\ndel bersaglio, maggiore è la potenza della mossa,\nda un minimo di 40 a un massimo di 150."
+  },
+  {
+    "id": "487",
+    "slug": "soak",
+    "slugLoc": "inondazione",
+    "name": "Inondazione",
+    "description": "Cambia il tipo del bersaglio in Acqua."
+  },
+  {
+    "id": "488",
+    "slug": "flame-charge",
+    "slugLoc": "nitrocarica",
+    "name": "Nitrocarica",
+    "description": "Il Pokémon aumenta di 1 grado la sua Velocità."
+  },
+  {
+    "id": "489",
+    "slug": "coil",
+    "slugLoc": "arrotola",
+    "name": "Arrotola",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco, la sua Difesa\ne la sua precisione."
+  },
+  {
+    "id": "490",
+    "slug": "low-sweep",
+    "slugLoc": "calciobasso",
+    "name": "Calciobasso",
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio."
+  },
+  {
+    "id": "491",
+    "slug": "acid-spray",
+    "slugLoc": "acidobomba",
+    "name": "Acidobomba",
+    "description": "Il Pokémon riduce di 2 gradi la Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "492",
+    "slug": "foul-play",
+    "slugLoc": "ripicca",
+    "name": "Ripicca",
+    "description": "I danni di questa mossa non vengono calcolati in base\nall'Attacco del Pokémon che la usa ma in base all'Attacco\ndel bersaglio."
+  },
+  {
+    "id": "493",
+    "slug": "simple-beam",
+    "slugLoc": "ondisinvolta",
+    "name": "Ondisinvolta",
+    "description": "Il Pokémon cambia l'abilità del bersaglio in Disinvoltura."
+  },
+  {
+    "id": "494",
+    "slug": "entrainment",
+    "slugLoc": "saltamicizia",
+    "name": "Saltamicizia",
+    "description": "Il Pokémon cambia l'abilità del bersaglio, copiando la propria.\n"
+  },
+  {
+    "id": "495",
+    "slug": "after-you",
+    "slugLoc": "cortesia",
+    "name": "Cortesia",
+    "description": "Il Pokémon costringe il bersaglio ad agire subito dopo di sé."
+  },
+  {
+    "id": "496",
+    "slug": "round",
+    "slugLoc": "coro",
+    "name": "Coro",
+    "description": "Se più Pokémon usano questa mossa nello stesso turno,\nattaccheranno uno dopo l'altro. Inoltre, la potenza della mossa\nraddoppia dal secondo Pokémon che la usa in poi."
+  },
+  {
+    "id": "497",
+    "slug": "echoed-voice",
+    "slugLoc": "echeggiavoce",
+    "name": "Echeggiavoce",
+    "description": ""
+  },
+  {
+    "id": "498",
+    "slug": "chip-away",
+    "slugLoc": "insidia",
+    "name": "Insidia",
+    "description": ""
+  },
+  {
+    "id": "499",
+    "slug": "clear-smog",
+    "slugLoc": "pulifumo",
+    "name": "Pulifumo",
+    "description": "Il Pokémon annulla tutte le modifiche alle statistiche\ndel bersaglio. Questa mossa va sempre a segno."
+  },
+  {
+    "id": "500",
+    "slug": "stored-power",
+    "slugLoc": "veicolaforza",
+    "name": "Veicolaforza",
+    "description": "La potenza di questa mossa aumenta di 20 per ogni grado\ndi aumento alle statistiche del Pokémon."
+  },
+  {
+    "id": "501",
+    "slug": "quick-guard",
+    "slugLoc": "anticipo",
+    "name": "Anticipo",
+    "description": "Il Pokémon protegge sé stesso e l'alleato dalle mosse ad alta\npriorità durante il turno in corso."
+  },
+  {
+    "id": "502",
+    "slug": "ally-switch",
+    "slugLoc": "cambiaposto",
+    "name": "Cambiaposto",
+    "description": "Il Pokémon cambia di posto con l'alleato. Con ogni uso\nconsecutivo, la probabilità che questa mossa vada a segno\ndiminuisce di 2/3 rispetto all'uso precedente."
+  },
+  {
+    "id": "503",
+    "slug": "scald",
+    "slugLoc": "idrovampata",
+    "name": "Idrovampata",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nScottatura al bersaglio. Sia il Pokémon che il bersaglio\nguariscono dallo stato Congelamento."
+  },
+  {
+    "id": "504",
+    "slug": "shell-smash",
+    "slugLoc": "gettaguscio",
+    "name": "Gettaguscio",
+    "description": "Il Pokémon riduce di 1 grado la sua Difesa e Difesa Speciale,\nma aumenta di 2 gradi l'Attacco, l'Attacco Speciale\ne la Velocità."
+  },
+  {
+    "id": "505",
+    "slug": "heal-pulse",
+    "slugLoc": "curapulsar",
+    "name": "Curapulsar",
+    "description": "Il Pokémon fa recuperare al bersaglio metà dei suoi PS massimi."
+  },
+  {
+    "id": "506",
+    "slug": "hex",
+    "slugLoc": "sciagura",
+    "name": "Sciagura",
+    "description": "Se il bersaglio è affetto da problemi di stato, la potenza\ndella mossa raddoppia."
+  },
+  {
+    "id": "507",
+    "slug": "sky-drop",
+    "slugLoc": "cadutalibera",
+    "name": "Cadutalibera",
+    "description": ""
+  },
+  {
+    "id": "508",
+    "slug": "shift-gear",
+    "slugLoc": "cambiomarcia",
+    "name": "Cambiomarcia",
+    "description": ""
+  },
+  {
+    "id": "509",
+    "slug": "circle-throw",
+    "slugLoc": "ribaltiro",
+    "name": "Ribaltiro",
+    "description": "Il bersaglio viene sostituito da un compagno di squadra casuale,\nse presente."
+  },
+  {
+    "id": "510",
+    "slug": "incinerate",
+    "slugLoc": "bruciatutto",
+    "name": "Bruciatutto",
+    "description": ""
+  },
+  {
+    "id": "511",
+    "slug": "quash",
+    "slugLoc": "spintone",
+    "name": "Spintone",
+    "description": "Il bersaglio agisce per ultimo nel turno in corso."
+  },
+  {
+    "id": "512",
+    "slug": "acrobatics",
+    "slugLoc": "acrobazia",
+    "name": "Acrobazia",
+    "description": "Se il Pokémon non ha con sé uno strumento, la potenza\ndella mossa raddoppia."
+  },
+  {
+    "id": "513",
+    "slug": "reflect-type",
+    "slugLoc": "riflettipo",
+    "name": "Riflettipo",
+    "description": "Il Pokémon cambia il proprio tipo in quello del bersaglio."
+  },
+  {
+    "id": "514",
+    "slug": "retaliate",
+    "slugLoc": "nemesi",
+    "name": "Nemesi",
+    "description": ""
+  },
+  {
+    "id": "515",
+    "slug": "final-gambit",
+    "slugLoc": "azzardo",
+    "name": "Azzardo",
+    "description": "Il Pokémon infligge danni pari ai suoi PS residui al bersaglio,\ne poi va KO."
+  },
+  {
+    "id": "516",
+    "slug": "bestow",
+    "slugLoc": "cediregalo",
+    "name": "Cediregalo",
+    "description": ""
+  },
+  {
+    "id": "517",
+    "slug": "inferno",
+    "slugLoc": "marchiatura",
+    "name": "Marchiatura",
+    "description": "Il Pokémon causa lo stato Scottatura al bersaglio."
+  },
+  {
+    "id": "518",
+    "slug": "water-pledge",
+    "slugLoc": "acquapatto",
+    "name": "Acquapatto",
+    "description": ""
+  },
+  {
+    "id": "519",
+    "slug": "fire-pledge",
+    "slugLoc": "fiammapatto",
+    "name": "Fiammapatto",
+    "description": ""
+  },
+  {
+    "id": "520",
+    "slug": "grass-pledge",
+    "slugLoc": "erbapatto",
+    "name": "Erbapatto",
+    "description": ""
+  },
+  {
+    "id": "521",
+    "slug": "volt-switch",
+    "slugLoc": "invertivolt",
+    "name": "Invertivolt",
+    "description": "Il Pokémon si fa sostituire da un compagno di squadra subito\ndopo aver attaccato."
+  },
+  {
+    "id": "522",
+    "slug": "struggle-bug",
+    "slugLoc": "entomoblocco",
+    "name": "Entomoblocco",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco Speciale del bersaglio."
+  },
+  {
+    "id": "523",
+    "slug": "bulldoze",
+    "slugLoc": "battiterra",
+    "name": "Battiterra",
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio.\nSe lo stato Campo erboso è attivo, la potenza della mossa\nsi dimezza."
+  },
+  {
+    "id": "524",
+    "slug": "frost-breath",
+    "slugLoc": "alitogelido",
+    "name": "Alitogelido",
+    "description": "Questa mossa risulta sempre in un brutto colpo."
+  },
+  {
+    "id": "525",
+    "slug": "dragon-tail",
+    "slugLoc": "codadrago",
+    "name": "Codadrago",
+    "description": "Il bersaglio viene sostituito da un compagno di squadra casuale,\nse presente."
+  },
+  {
+    "id": "526",
+    "slug": "work-up",
+    "slugLoc": "cuordileone",
+    "name": "Cuordileone",
+    "description": ""
+  },
+  {
+    "id": "527",
+    "slug": "electroweb",
+    "slugLoc": "elettrotela",
+    "name": "Elettrotela",
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio."
+  },
+  {
+    "id": "528",
+    "slug": "wild-charge",
+    "slugLoc": "sprizzalampo",
+    "name": "Sprizzalampo",
+    "description": "Il Pokémon subisce 1/4 dei danni inflitti."
+  },
+  {
+    "id": "529",
+    "slug": "drill-run",
+    "slugLoc": "giravvita",
+    "name": "Giravvita",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "530",
+    "slug": "dual-chop",
+    "slugLoc": "doppiocolpo",
+    "name": "Doppiocolpo",
+    "description": ""
+  },
+  {
+    "id": "531",
+    "slug": "heart-stamp",
+    "slugLoc": "cuorestampo",
+    "name": "Cuorestampo",
+    "description": ""
+  },
+  {
+    "id": "532",
+    "slug": "horn-leech",
+    "slugLoc": "legnicorno",
+    "name": "Legnicorno",
+    "description": "Il Pokémon recupera PS pari alla metà dei danni inflitti\nal bersaglio."
+  },
+  {
+    "id": "533",
+    "slug": "sacred-sword",
+    "slugLoc": "spadasolenne",
+    "name": "Spadasolenne",
+    "description": "I danni di questa mossa vengono calcolati ignorando\nle modifiche alle statistiche del bersaglio."
+  },
+  {
+    "id": "534",
+    "slug": "razor-shell",
+    "slugLoc": "conchilama",
+    "name": "Conchilama",
+    "description": "Il Pokémon ha il 50% di probabilità di ridurre di 1 grado\nla Difesa del bersaglio."
+  },
+  {
+    "id": "535",
+    "slug": "heat-crash",
+    "slugLoc": "marchiafuoco",
+    "name": "Marchiafuoco",
+    "description": "Più pesante è il Pokémon rispetto al bersaglio, maggiore è\nla potenza della mossa, da un minimo di 40 a un massimo\ndi 120. Se il bersaglio è affetto dallo stato Minimizzato,\nla mossa va sempre a segno e la sua potenza raddoppia."
+  },
+  {
+    "id": "536",
+    "slug": "leaf-tornado",
+    "slugLoc": "vorticerba",
+    "name": "Vorticerba",
+    "description": ""
+  },
+  {
+    "id": "537",
+    "slug": "steamroller",
+    "slugLoc": "rulloduro",
+    "name": "Rulloduro",
+    "description": ""
+  },
+  {
+    "id": "538",
+    "slug": "cotton-guard",
+    "slugLoc": "cotonscudo",
+    "name": "Cotonscudo",
+    "description": "Il Pokémon aumenta di 3 gradi la sua Difesa."
+  },
+  {
+    "id": "539",
+    "slug": "night-daze",
+    "slugLoc": "urtoscuro",
+    "name": "Urtoscuro",
+    "description": "Il Pokémon ha il 40% di probabilità di ridurre di 1 grado\nla precisione del bersaglio."
+  },
+  {
+    "id": "540",
+    "slug": "psystrike",
+    "slugLoc": "psicobotta",
+    "name": "Psicobotta",
+    "description": ""
+  },
+  {
+    "id": "541",
+    "slug": "tail-slap",
+    "slugLoc": "spazzasberla",
+    "name": "Spazzasberla",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila."
+  },
+  {
+    "id": "542",
+    "slug": "hurricane",
+    "slugLoc": "tifone",
+    "name": "Tifone",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nConfusione al bersaglio. Questa mossa può colpire anche\nse il bersaglio è nello stato In aria e, se lo stato Pioggia\nè attivo, va sempre a segno."
+  },
+  {
+    "id": "543",
+    "slug": "head-charge",
+    "slugLoc": "ricciolata",
+    "name": "Ricciolata",
+    "description": ""
+  },
+  {
+    "id": "544",
+    "slug": "gear-grind",
+    "slugLoc": "ingracolpo",
+    "name": "Ingracolpo",
+    "description": ""
+  },
+  {
+    "id": "545",
+    "slug": "searing-shot",
+    "slugLoc": "sparafuoco",
+    "name": "Sparafuoco",
+    "description": ""
+  },
+  {
+    "id": "546",
+    "slug": "techno-blast",
+    "slugLoc": "tecnobotto",
+    "name": "Tecnobotto",
+    "description": ""
+  },
+  {
+    "id": "547",
+    "slug": "relic-song",
+    "slugLoc": "cantoantico",
+    "name": "Cantoantico",
+    "description": ""
+  },
+  {
+    "id": "548",
+    "slug": "secret-sword",
+    "slugLoc": "spadamistica",
+    "name": "Spadamistica",
+    "description": ""
+  },
+  {
+    "id": "549",
+    "slug": "glaciate",
+    "slugLoc": "gelamondo",
+    "name": "Gelamondo",
+    "description": ""
+  },
+  {
+    "id": "550",
+    "slug": "bolt-strike",
+    "slugLoc": "lucesiluro",
+    "name": "Lucesiluro",
+    "description": ""
+  },
+  {
+    "id": "551",
+    "slug": "blue-flare",
+    "slugLoc": "fuocoblu",
+    "name": "Fuocoblu",
+    "description": ""
+  },
+  {
+    "id": "552",
+    "slug": "fiery-dance",
+    "slugLoc": "voldifuoco",
+    "name": "Voldifuoco",
+    "description": "Il Pokémon ha il 50% di probabilità di aumentare di 1 grado\nil suo Attacco Speciale."
+  },
+  {
+    "id": "553",
+    "slug": "freeze-shock",
+    "slugLoc": "elettrogelo",
+    "name": "Elettrogelo",
+    "description": ""
+  },
+  {
+    "id": "554",
+    "slug": "ice-burn",
+    "slugLoc": "vampagelida",
+    "name": "Vampagelida",
+    "description": ""
+  },
+  {
+    "id": "555",
+    "slug": "snarl",
+    "slugLoc": "urlorabbia",
+    "name": "Urlorabbia",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco Speciale del bersaglio."
+  },
+  {
+    "id": "556",
+    "slug": "icicle-crash",
+    "slugLoc": "scagliagelo",
+    "name": "Scagliagelo",
+    "description": "Il Pokémon ha il 30% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "557",
+    "slug": "v-create",
+    "slugLoc": "generatore-v",
+    "name": "Generatore V",
+    "description": ""
+  },
+  {
+    "id": "558",
+    "slug": "fusion-flare",
+    "slugLoc": "incrofiamma",
+    "name": "Incrofiamma",
+    "description": ""
+  },
+  {
+    "id": "559",
+    "slug": "fusion-bolt",
+    "slugLoc": "incrotuono",
+    "name": "Incrotuono",
+    "description": ""
+  },
+  {
+    "id": "560",
+    "slug": "flying-press",
+    "slugLoc": "schiacciatuffo",
+    "name": "Schiacciatuffo",
+    "description": "I danni di questa mossa sono il risultato della combinazione\ndell'efficacia del suo tipo e del tipo Volante. Se il bersaglio\nè affetto dallo stato Minimizzato, la mossa va sempre a segno\ne la sua potenza raddoppia."
+  },
+  {
+    "id": "561",
+    "slug": "mat-block",
+    "slugLoc": "ribaltappeto",
+    "name": "Ribaltappeto",
+    "description": ""
+  },
+  {
+    "id": "562",
+    "slug": "belch",
+    "slugLoc": "rutto",
+    "name": "Rutto",
+    "description": "Se il Pokémon non ha mangiato una bacca durante la lotta,\nquesta mossa fallisce."
+  },
+  {
+    "id": "563",
+    "slug": "rototiller",
+    "slugLoc": "aracampo",
+    "name": "Aracampo",
+    "description": ""
+  },
+  {
+    "id": "564",
+    "slug": "sticky-web",
+    "slugLoc": "rete-vischiosa",
+    "name": "Rete Vischiosa",
+    "description": "Il Pokémon causa lo stato Rete vischiosa sul campo di lotta\navversario."
+  },
+  {
+    "id": "565",
+    "slug": "fell-stinger",
+    "slugLoc": "pungiglione",
+    "name": "Pungiglione",
+    "description": "Il Pokémon aumenta di 3 gradi il suo Attacco quando causa\nun KO con questa mossa."
+  },
+  {
+    "id": "566",
+    "slug": "phantom-force",
+    "slugLoc": "spettrotuffo",
+    "name": "Spettrotuffo",
+    "description": "Il Pokémon entra nello stato Scomparso nel turno in cui usa\nla mossa e attacca in quello seguente, rimuovendo dal bersaglio\ngli effetti di mosse come Protezione e Individua."
+  },
+  {
+    "id": "567",
+    "slug": "trick-or-treat",
+    "slugLoc": "halloween",
+    "name": "Halloween",
+    "description": "Il Pokémon causa lo stato Halloween al bersaglio."
+  },
+  {
+    "id": "568",
+    "slug": "noble-roar",
+    "slugLoc": "urlo",
+    "name": "Urlo",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco e l'Attacco Speciale\ndel bersaglio."
+  },
+  {
+    "id": "569",
+    "slug": "ion-deluge",
+    "slugLoc": "pioggiaplasma",
+    "name": "Pioggiaplasma",
+    "description": ""
+  },
+  {
+    "id": "570",
+    "slug": "parabolic-charge",
+    "slugLoc": "caricaparabola",
+    "name": "Caricaparabola",
+    "description": "Il Pokémon recupera PS pari alla metà dei danni inflitti\nal bersaglio."
+  },
+  {
+    "id": "571",
+    "slug": "forests-curse",
+    "slugLoc": "boscomalocchio",
+    "name": "Boscomalocchio",
+    "description": "Il Pokémon causa lo stato Malocchio del bosco al bersaglio."
+  },
+  {
+    "id": "572",
+    "slug": "petal-blizzard",
+    "slugLoc": "fiortempesta",
+    "name": "Fiortempesta",
+    "description": ""
+  },
+  {
+    "id": "573",
+    "slug": "freeze-dry",
+    "slugLoc": "liofilizzazione",
+    "name": "Liofilizzazione",
+    "description": "Questa mossa è superefficace anche sui Pokémon di tipo Acqua."
+  },
+  {
+    "id": "574",
+    "slug": "disarming-voice",
+    "slugLoc": "incantavoce",
+    "name": "Incantavoce",
+    "description": ""
+  },
+  {
+    "id": "575",
+    "slug": "parting-shot",
+    "slugLoc": "monito",
+    "name": "Monito",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco e l'Attacco Speciale\ndel bersaglio e si fa sostituire da un compagno di squadra."
+  },
+  {
+    "id": "576",
+    "slug": "topsy-turvy",
+    "slugLoc": "sottosopra",
+    "name": "Sottosopra",
+    "description": ""
+  },
+  {
+    "id": "577",
+    "slug": "draining-kiss",
+    "slugLoc": "assorbibacio",
+    "name": "Assorbibacio",
+    "description": "Il Pokémon recupera PS pari a 3/4 dei danni inflitti\nal bersaglio."
+  },
+  {
+    "id": "578",
+    "slug": "crafty-shield",
+    "slugLoc": "truccodifesa",
+    "name": "Truccodifesa",
+    "description": ""
+  },
+  {
+    "id": "579",
+    "slug": "flower-shield",
+    "slugLoc": "fiordifesa",
+    "name": "Fiordifesa",
+    "description": ""
+  },
+  {
+    "id": "580",
+    "slug": "grassy-terrain",
+    "slugLoc": "campo-erboso",
+    "name": "Campo Erboso",
+    "description": "Il Pokémon causa lo stato Campo erboso sull'intero campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "581",
+    "slug": "misty-terrain",
+    "slugLoc": "campo-nebbioso",
+    "name": "Campo Nebbioso",
+    "description": "Il Pokémon causa lo stato Campo nebbioso sull'intero campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "582",
+    "slug": "electrify",
+    "slugLoc": "elettrocontagio",
+    "name": "Elettrocontagio",
+    "description": "Se questa mossa va a segno prima che il bersaglio abbia\nsferrato la sua, quest'ultima diventa di tipo Elettro."
+  },
+  {
+    "id": "583",
+    "slug": "play-rough",
+    "slugLoc": "carineria",
+    "name": "Carineria",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nl'Attacco del bersaglio."
+  },
+  {
+    "id": "584",
+    "slug": "fairy-wind",
+    "slugLoc": "vento-di-fata",
+    "name": "Vento di Fata",
+    "description": ""
+  },
+  {
+    "id": "585",
+    "slug": "moonblast",
+    "slugLoc": "forza-lunare",
+    "name": "Forza Lunare",
+    "description": "Il Pokémon ha il 10% di probabilità di ridurre di 1 grado\nl'Attacco Speciale del bersaglio."
+  },
+  {
+    "id": "586",
+    "slug": "boomburst",
+    "slugLoc": "ondaboato",
+    "name": "Ondaboato",
+    "description": ""
+  },
+  {
+    "id": "587",
+    "slug": "fairy-lock",
+    "slugLoc": "blocco-fatato",
+    "name": "Blocco Fatato",
+    "description": "Il Pokémon causa lo stato Blocco fatato a tutti i Pokémon\nin campo."
+  },
+  {
+    "id": "588",
+    "slug": "kings-shield",
+    "slugLoc": "scudo-reale",
+    "name": "Scudo Reale",
+    "description": "Il Pokémon assume la Forma Scudo, proteggendosi\ndagli attacchi altrui e riducendo di 1 grado l'Attacco di chi\nlo colpisce con una mossa da contatto durante il turno in corso.\nCon ogni uso consecutivo, la probabilità che questa mossa\nvada a segno diminuisce di 2/3 rispetto all'uso precedente."
+  },
+  {
+    "id": "589",
+    "slug": "play-nice",
+    "slugLoc": "simpatia",
+    "name": "Simpatia",
+    "description": ""
+  },
+  {
+    "id": "590",
+    "slug": "confide",
+    "slugLoc": "confidenza",
+    "name": "Confidenza",
+    "description": ""
+  },
+  {
+    "id": "591",
+    "slug": "diamond-storm",
+    "slugLoc": "diamantempesta",
+    "name": "Diamantempesta",
+    "description": ""
+  },
+  {
+    "id": "592",
+    "slug": "steam-eruption",
+    "slugLoc": "vaporscoppio",
+    "name": "Vaporscoppio",
+    "description": ""
+  },
+  {
+    "id": "593",
+    "slug": "hyperspace-hole",
+    "slugLoc": "forodimensionale",
+    "name": "Forodimensionale",
+    "description": ""
+  },
+  {
+    "id": "594",
+    "slug": "water-shuriken",
+    "slugLoc": "acqualame",
+    "name": "Acqualame",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila."
+  },
+  {
+    "id": "595",
+    "slug": "mystical-fire",
+    "slugLoc": "magifiamma",
+    "name": "Magifiamma",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco Speciale del bersaglio."
+  },
+  {
+    "id": "596",
+    "slug": "spiky-shield",
+    "slugLoc": "agodifesa",
+    "name": "Agodifesa",
+    "description": "Il Pokémon si protegge dalle mosse altrui durante il turno\nin corso, infliggendo inoltre danni pari a 1/8 dei suoi PS\nmassimi a chi lo colpisce con una mossa da contatto.\nCon ogni uso consecutivo, la probabilità che questa mossa\nvada a segno diminuisce di 2/3 rispetto all'uso precedente."
+  },
+  {
+    "id": "597",
+    "slug": "aromatic-mist",
+    "slugLoc": "nebularoma",
+    "name": "Nebularoma",
+    "description": "Il Pokémon aumenta di 1 grado la Difesa Speciale di un alleato."
+  },
+  {
+    "id": "598",
+    "slug": "eerie-impulse",
+    "slugLoc": "elettromistero",
+    "name": "Elettromistero",
+    "description": "Il Pokémon riduce di 2 gradi l'Attacco Speciale del bersaglio."
+  },
+  {
+    "id": "599",
+    "slug": "venom-drench",
+    "slugLoc": "velenotrappola",
+    "name": "Velenotrappola",
+    "description": ""
+  },
+  {
+    "id": "600",
+    "slug": "powder",
+    "slugLoc": "pulviscoppio",
+    "name": "Pulviscoppio",
+    "description": ""
+  },
+  {
+    "id": "601",
+    "slug": "geomancy",
+    "slugLoc": "geocontrollo",
+    "name": "Geocontrollo",
+    "description": ""
+  },
+  {
+    "id": "602",
+    "slug": "magnetic-flux",
+    "slugLoc": "controllo-polare",
+    "name": "Controllo Polare",
+    "description": "Se il Pokémon o l'alleato hanno l'abilità Più o Meno, la loro\nDifesa e Difesa Speciale aumentano di 1 grado."
+  },
+  {
+    "id": "603",
+    "slug": "happy-hour",
+    "slugLoc": "cuccagna",
+    "name": "Cuccagna",
+    "description": ""
+  },
+  {
+    "id": "604",
+    "slug": "electric-terrain",
+    "slugLoc": "campo-elettrico",
+    "name": "Campo Elettrico",
+    "description": "Il Pokémon causa lo stato Campo elettrico sull'intero campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "605",
+    "slug": "dazzling-gleam",
+    "slugLoc": "magibrillio",
+    "name": "Magibrillio",
+    "description": ""
+  },
+  {
+    "id": "606",
+    "slug": "celebrate",
+    "slugLoc": "auguri",
+    "name": "Auguri",
+    "description": ""
+  },
+  {
+    "id": "607",
+    "slug": "hold-hands",
+    "slugLoc": "mano-nella-mano",
+    "name": "Mano nella Mano",
+    "description": ""
+  },
+  {
+    "id": "608",
+    "slug": "baby-doll-eyes",
+    "slugLoc": "occhioni-teneri",
+    "name": "Occhioni Teneri",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco del bersaglio."
+  },
+  {
+    "id": "609",
+    "slug": "nuzzle",
+    "slugLoc": "elettrococcola",
+    "name": "Elettrococcola",
+    "description": "Il Pokémon causa lo stato Paralisi al bersaglio."
+  },
+  {
+    "id": "610",
+    "slug": "hold-back",
+    "slugLoc": "riguardo",
+    "name": "Riguardo",
+    "description": ""
+  },
+  {
+    "id": "611",
+    "slug": "infestation",
+    "slugLoc": "assillo",
+    "name": "Assillo",
+    "description": "Il Pokémon causa lo stato Imprigionamento al bersaglio."
+  },
+  {
+    "id": "612",
+    "slug": "power-up-punch",
+    "slugLoc": "crescipugno",
+    "name": "Crescipugno",
+    "description": ""
+  },
+  {
+    "id": "613",
+    "slug": "oblivion-wing",
+    "slugLoc": "ali-del-fato",
+    "name": "Ali del Fato",
+    "description": ""
+  },
+  {
+    "id": "614",
+    "slug": "thousand-arrows",
+    "slugLoc": "mille-frecce",
+    "name": "Mille Frecce",
+    "description": ""
+  },
+  {
+    "id": "615",
+    "slug": "thousand-waves",
+    "slugLoc": "mille-onde",
+    "name": "Mille Onde",
+    "description": ""
+  },
+  {
+    "id": "616",
+    "slug": "lands-wrath",
+    "slugLoc": "forza-tellurica",
+    "name": "Forza Tellurica",
+    "description": ""
+  },
+  {
+    "id": "617",
+    "slug": "light-of-ruin",
+    "slugLoc": "luce-nefasta",
+    "name": "Luce Nefasta",
+    "description": "Il Pokémon subisce metà dei danni inflitti."
+  },
+  {
+    "id": "618",
+    "slug": "origin-pulse",
+    "slugLoc": "primopulsar",
+    "name": "Primopulsar",
+    "description": ""
+  },
+  {
+    "id": "619",
+    "slug": "precipice-blades",
+    "slugLoc": "spade-telluriche",
+    "name": "Spade Telluriche",
+    "description": ""
+  },
+  {
+    "id": "620",
+    "slug": "dragon-ascent",
+    "slugLoc": "ascesa-del-drago",
+    "name": "Ascesa del Drago",
+    "description": ""
+  },
+  {
+    "id": "621",
+    "slug": "hyperspace-fury",
+    "slugLoc": "urtodimensionale",
+    "name": "Urtodimensionale",
+    "description": ""
+  },
+  {
+    "id": "659",
+    "slug": "shore-up",
+    "slugLoc": "sabbiaccumulo",
+    "name": "Sabbiaccumulo",
+    "description": ""
+  },
+  {
+    "id": "660",
+    "slug": "first-impression",
+    "slugLoc": "schermaglia",
+    "name": "Schermaglia",
+    "description": "Se non è la prima a essere usata quando il Pokémon entra\nin campo, questa mossa fallisce."
+  },
+  {
+    "id": "661",
+    "slug": "baneful-bunker",
+    "slugLoc": "fortino",
+    "name": "Fortino",
+    "description": "Il Pokémon si protegge dalle mosse altrui durante il turno\nin corso, causando inoltre lo stato Avvelenamento a chi\nlo colpisce con una mossa da contatto.\nCon ogni uso consecutivo, la probabilità che questa mossa\nvada a segno diminuisce di 2/3 rispetto all'uso precedente."
+  },
+  {
+    "id": "662",
+    "slug": "spirit-shackle",
+    "slugLoc": "cucitura-d-ombra",
+    "name": "Cucitura d'Ombra",
+    "description": "Il Pokémon causa lo stato Antifuga al bersaglio."
+  },
+  {
+    "id": "663",
+    "slug": "darkest-lariat",
+    "slugLoc": "braccioteso",
+    "name": "Braccioteso",
+    "description": "I danni di questa mossa vengono calcolati ignorando\nle modifiche alle statistiche del bersaglio."
+  },
+  {
+    "id": "664",
+    "slug": "sparkling-aria",
+    "slugLoc": "canto-effimero",
+    "name": "Canto Effimero",
+    "description": "Il Pokémon cura lo stato Scottatura del bersaglio."
+  },
+  {
+    "id": "665",
+    "slug": "ice-hammer",
+    "slugLoc": "martelgelo",
+    "name": "Martelgelo",
+    "description": "Il Pokémon riduce di 1 grado la sua Velocità."
+  },
+  {
+    "id": "666",
+    "slug": "floral-healing",
+    "slugLoc": "cura-floreale",
+    "name": "Cura Floreale",
+    "description": ""
+  },
+  {
+    "id": "667",
+    "slug": "high-horsepower",
+    "slugLoc": "forza-equina",
+    "name": "Forza Equina",
+    "description": ""
+  },
+  {
+    "id": "668",
+    "slug": "strength-sap",
+    "slugLoc": "assorbiforza",
+    "name": "Assorbiforza",
+    "description": "Il Pokémon recupera PS pari all'Attacco del bersaglio, e poi\nlo riduce di 1 grado."
+  },
+  {
+    "id": "669",
+    "slug": "solar-blade",
+    "slugLoc": "lama-solare",
+    "name": "Lama Solare",
+    "description": "Il Pokémon entra nello stato Carica nel turno in cui usa la mossa\ne attacca in quello seguente. Se lo stato Sole intenso è attivo,\nil Pokémon non entra nello stato Carica e può attaccare\nimmediatamente. Se invece sono attive altre condizioni\natmosferiche, la potenza di questa mossa è dimezzata."
+  },
+  {
+    "id": "670",
+    "slug": "leafage",
+    "slugLoc": "fogliame",
+    "name": "Fogliame",
+    "description": ""
+  },
+  {
+    "id": "671",
+    "slug": "spotlight",
+    "slugLoc": "riflettore",
+    "name": "Riflettore",
+    "description": ""
+  },
+  {
+    "id": "672",
+    "slug": "toxic-thread",
+    "slugLoc": "velenotela",
+    "name": "Velenotela",
+    "description": "Il Pokémon riduce di 2 gradi la Velocità del bersaglio e gli\ncausa lo stato Avvelenamento."
+  },
+  {
+    "id": "673",
+    "slug": "laser-focus",
+    "slugLoc": "concentrazione",
+    "name": "Concentrazione",
+    "description": ""
+  },
+  {
+    "id": "674",
+    "slug": "gear-up",
+    "slugLoc": "marciainpiu",
+    "name": "Marciainpiù",
+    "description": ""
+  },
+  {
+    "id": "675",
+    "slug": "throat-chop",
+    "slugLoc": "colpo-infernale",
+    "name": "Colpo Infernale",
+    "description": "Il Pokémon causa lo stato Colpo infernale al bersaglio."
+  },
+  {
+    "id": "676",
+    "slug": "pollen-puff",
+    "slugLoc": "sferapolline",
+    "name": "Sferapolline",
+    "description": "Se usata sull'alleato, questa mossa non infligge danni,\nma gli fa recuperare invece metà dei suoi PS massimi."
+  },
+  {
+    "id": "677",
+    "slug": "anchor-shot",
+    "slugLoc": "colpo-d-ancora",
+    "name": "Colpo d'Ancora",
+    "description": ""
+  },
+  {
+    "id": "678",
+    "slug": "psychic-terrain",
+    "slugLoc": "campo-psichico",
+    "name": "Campo Psichico",
+    "description": "Il Pokémon causa lo stato Campo psichico sull'intero campo\ndi lotta per 5 turni."
+  },
+  {
+    "id": "679",
+    "slug": "lunge",
+    "slugLoc": "assalto",
+    "name": "Assalto",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco del bersaglio."
+  },
+  {
+    "id": "680",
+    "slug": "fire-lash",
+    "slugLoc": "frusta-di-fuoco",
+    "name": "Frusta di Fuoco",
+    "description": "Il Pokémon riduce di 1 grado la Difesa del bersaglio."
+  },
+  {
+    "id": "681",
+    "slug": "power-trip",
+    "slugLoc": "tracotanza",
+    "name": "Tracotanza",
+    "description": "La potenza di questa mossa aumenta di 20 per ogni grado\ndi aumento alle statistiche del Pokémon."
+  },
+  {
+    "id": "682",
+    "slug": "burn-up",
+    "slugLoc": "ultima-fiamma",
+    "name": "Ultima Fiamma",
+    "description": "Il Pokémon perde il tipo Fuoco e guarisce dallo stato\nCongelamento. Se il Pokémon non è di tipo Fuoco,\nla mossa fallisce."
+  },
+  {
+    "id": "683",
+    "slug": "speed-swap",
+    "slugLoc": "velociscambio",
+    "name": "Velociscambio",
+    "description": "Il Pokémon scambia la propria Velocità con quella del bersaglio."
+  },
+  {
+    "id": "684",
+    "slug": "smart-strike",
+    "slugLoc": "sottilcorno",
+    "name": "Sottilcorno",
+    "description": "Questa mossa va sempre a segno."
+  },
+  {
+    "id": "685",
+    "slug": "purify",
+    "slugLoc": "purificazione",
+    "name": "Purificazione",
+    "description": ""
+  },
+  {
+    "id": "686",
+    "slug": "revelation-dance",
+    "slugLoc": "mutadanza",
+    "name": "Mutadanza",
+    "description": ""
+  },
+  {
+    "id": "687",
+    "slug": "core-enforcer",
+    "slugLoc": "nucleocastigo",
+    "name": "Nucleocastigo",
+    "description": ""
+  },
+  {
+    "id": "688",
+    "slug": "trop-kick",
+    "slugLoc": "tropicalcio",
+    "name": "Tropicalcio",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco del bersaglio."
+  },
+  {
+    "id": "689",
+    "slug": "instruct",
+    "slugLoc": "imposizione",
+    "name": "Imposizione",
+    "description": "Il Pokémon costringe il bersaglio a ripetere l'ultima mossa\nche ha sferrato."
+  },
+  {
+    "id": "690",
+    "slug": "beak-blast",
+    "slugLoc": "cannonbecco",
+    "name": "Cannonbecco",
+    "description": "Il Pokémon causa lo stato Scottatura a chi lo colpisce con\nuna mossa da contatto prima di aver sferrato questa mossa."
+  },
+  {
+    "id": "691",
+    "slug": "clanging-scales",
+    "slugLoc": "clamorsquame",
+    "name": "Clamorsquame",
+    "description": "Il Pokémon riduce di 1 grado la sua Difesa."
+  },
+  {
+    "id": "692",
+    "slug": "dragon-hammer",
+    "slugLoc": "marteldrago",
+    "name": "Marteldrago",
+    "description": ""
+  },
+  {
+    "id": "693",
+    "slug": "brutal-swing",
+    "slugLoc": "vorticolpo",
+    "name": "Vorticolpo",
+    "description": ""
+  },
+  {
+    "id": "694",
+    "slug": "aurora-veil",
+    "slugLoc": "velaurora",
+    "name": "Velaurora",
+    "description": "Il Pokémon causa lo stato Velo dell'aurora sul proprio campo\ndi lotta per 5 turni. Questa mossa può essere usata solo\nse lo stato Neve è attivo."
+  },
+  {
+    "id": "704",
+    "slug": "shell-trap",
+    "slugLoc": "gusciotrappola",
+    "name": "Gusciotrappola",
+    "description": ""
+  },
+  {
+    "id": "705",
+    "slug": "fleur-cannon",
+    "slugLoc": "cannonfiore",
+    "name": "Cannonfiore",
+    "description": ""
+  },
+  {
+    "id": "706",
+    "slug": "psychic-fangs",
+    "slugLoc": "psicozanna",
+    "name": "Psicozanna",
+    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta avversario."
+  },
+  {
+    "id": "707",
+    "slug": "stomping-tantrum",
+    "slugLoc": "battipiedi",
+    "name": "Battipiedi",
+    "description": "La potenza della mossa raddoppia se nel turno precedente\nil Pokémon non ha potuto agire, se la sua mossa ha fallito\no se non è andata a segno."
+  },
+  {
+    "id": "708",
+    "slug": "shadow-bone",
+    "slugLoc": "ossotetro",
+    "name": "Ossotetro",
+    "description": ""
+  },
+  {
+    "id": "709",
+    "slug": "accelerock",
+    "slugLoc": "rocciarapida",
+    "name": "Rocciarapida",
+    "description": ""
+  },
+  {
+    "id": "710",
+    "slug": "liquidation",
+    "slugLoc": "idrobreccia",
+    "name": "Idrobreccia",
+    "description": "Il Pokémon ha il 20% di probabilità di ridurre di 1 grado\nla Difesa del bersaglio."
+  },
+  {
+    "id": "711",
+    "slug": "prismatic-laser",
+    "slugLoc": "prismalaser",
+    "name": "Prismalaser",
+    "description": ""
+  },
+  {
+    "id": "712",
+    "slug": "spectral-thief",
+    "slugLoc": "ombrafurto",
+    "name": "Ombrafurto",
+    "description": ""
+  },
+  {
+    "id": "713",
+    "slug": "sunsteel-strike",
+    "slugLoc": "astrocarica",
+    "name": "Astrocarica",
+    "description": ""
+  },
+  {
+    "id": "714",
+    "slug": "moongeist-beam",
+    "slugLoc": "raggio-d-ombra",
+    "name": "Raggio d'Ombra",
+    "description": ""
+  },
+  {
+    "id": "715",
+    "slug": "tearful-look",
+    "slugLoc": "occhionilucidi",
+    "name": "Occhionilucidi",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco e l'Attacco Speciale\ndel bersaglio. Questa mossa ignora l'elusione del bersaglio\ne gli effetti di mosse come Protezione."
+  },
+  {
+    "id": "716",
+    "slug": "zing-zap",
+    "slugLoc": "elettropizzico",
+    "name": "Elettropizzico",
+    "description": ""
+  },
+  {
+    "id": "717",
+    "slug": "natures-madness",
+    "slugLoc": "ira-della-natura",
+    "name": "Ira della Natura",
+    "description": ""
+  },
+  {
+    "id": "718",
+    "slug": "multi-attack",
+    "slugLoc": "multiattacco",
+    "name": "Multiattacco",
+    "description": ""
+  },
+  {
+    "id": "720",
+    "slug": "mind-blown",
+    "slugLoc": "sbalorditesta",
+    "name": "Sbalorditesta",
+    "description": ""
+  },
+  {
+    "id": "721",
+    "slug": "plasma-fists",
+    "slugLoc": "pugni-plasma",
+    "name": "Pugni Plasma",
+    "description": ""
+  },
+  {
+    "id": "722",
+    "slug": "photon-geyser",
+    "slugLoc": "geyser-fotonico",
+    "name": "Geyser Fotonico",
+    "description": ""
+  },
+  {
+    "id": "742",
+    "slug": "double-iron-bash",
+    "slugLoc": "pugni-corazzati",
+    "name": "Pugni Corazzati",
+    "description": ""
+  },
+  {
+    "id": "744",
+    "slug": "dynamax-cannon",
+    "slugLoc": "cannone-dynamax",
+    "name": "Cannone Dynamax",
+    "description": ""
+  },
+  {
+    "id": "745",
+    "slug": "snipe-shot",
+    "slugLoc": "tiromirato",
+    "name": "Tiromirato",
+    "description": ""
+  },
+  {
+    "id": "746",
+    "slug": "jaw-lock",
+    "slugLoc": "morsostretto",
+    "name": "Morsostretto",
+    "description": ""
+  },
+  {
+    "id": "747",
+    "slug": "stuff-cheeks",
+    "slugLoc": "riempiguance",
+    "name": "Riempiguance",
+    "description": "Il Pokémon mangia la bacca che ha con sé e aumenta di 2 gradi\nla sua Difesa. Questa mossa può essere usata solo se il Pokémon\nha con sé una bacca."
+  },
+  {
+    "id": "748",
+    "slug": "no-retreat",
+    "slugLoc": "spalle-al-muro",
+    "name": "Spalle al Muro",
+    "description": ""
+  },
+  {
+    "id": "749",
+    "slug": "tar-shot",
+    "slugLoc": "colpocatrame",
+    "name": "Colpocatrame",
+    "description": ""
+  },
+  {
+    "id": "750",
+    "slug": "magic-powder",
+    "slugLoc": "magipolvere",
+    "name": "Magipolvere",
+    "description": "Il Pokémon cambia il tipo del bersaglio in Psico."
+  },
+  {
+    "id": "751",
+    "slug": "dragon-darts",
+    "slugLoc": "dragofrecce",
+    "name": "Dragofrecce",
+    "description": "Il Pokémon colpisce 2 volte di fila. Se sono presenti due\navversari, colpisce entrambi i bersagli, una volta ciascuno."
+  },
+  {
+    "id": "752",
+    "slug": "teatime",
+    "slugLoc": "ora-del-te",
+    "name": "Ora del Tè",
+    "description": "Il Pokémon fa sì che tutti i Pokémon in campo mangino\nle bacche che hanno con sé."
+  },
+  {
+    "id": "753",
+    "slug": "octolock",
+    "slugLoc": "tentacolock",
+    "name": "Tentacolock",
+    "description": ""
+  },
+  {
+    "id": "754",
+    "slug": "bolt-beak",
+    "slugLoc": "beccoshock",
+    "name": "Beccoshock",
+    "description": ""
+  },
+  {
+    "id": "755",
+    "slug": "fishious-rend",
+    "slugLoc": "branchiomorso",
+    "name": "Branchiomorso",
+    "description": ""
+  },
+  {
+    "id": "756",
+    "slug": "court-change",
+    "slugLoc": "cambiocampo",
+    "name": "Cambiocampo",
+    "description": ""
+  },
+  {
+    "id": "775",
+    "slug": "clangorous-soul",
+    "slugLoc": "dracofonia",
+    "name": "Dracofonia",
+    "description": "Il Pokémon perde 1/3 dei suoi PS massimi e aumenta di 1 grado\nl'Attacco, la Difesa, l'Attacco Speciale, la Difesa Speciale\ne la Velocità. Se il Pokémon non ha abbastanza PS, questa\nmossa fallisce."
+  },
+  {
+    "id": "776",
+    "slug": "body-press",
+    "slugLoc": "schiacciacorpo",
+    "name": "Schiacciacorpo",
+    "description": "I danni di questa mossa non vengono calcolati in base\nall'Attacco del Pokémon che la usa ma in base alla sua Difesa."
+  },
+  {
+    "id": "777",
+    "slug": "decorate",
+    "slugLoc": "decorazione",
+    "name": "Decorazione",
+    "description": "Il Pokémon aumenta di 2 gradi l'Attacco e l'Attacco Speciale\ndel bersaglio."
+  },
+  {
+    "id": "778",
+    "slug": "drum-beating",
+    "slugLoc": "tamburattacco",
+    "name": "Tamburattacco",
+    "description": ""
+  },
+  {
+    "id": "779",
+    "slug": "snap-trap",
+    "slugLoc": "tagliola",
+    "name": "Tagliola",
+    "description": "Il Pokémon causa lo stato Imprigionamento al bersaglio."
+  },
+  {
+    "id": "780",
+    "slug": "pyro-ball",
+    "slugLoc": "palla-infuocata",
+    "name": "Palla Infuocata",
+    "description": ""
+  },
+  {
+    "id": "781",
+    "slug": "behemoth-blade",
+    "slugLoc": "taglio-maestoso",
+    "name": "Taglio Maestoso",
+    "description": ""
+  },
+  {
+    "id": "782",
+    "slug": "behemoth-bash",
+    "slugLoc": "colpo-maestoso",
+    "name": "Colpo Maestoso",
+    "description": ""
+  },
+  {
+    "id": "783",
+    "slug": "aura-wheel",
+    "slugLoc": "ruota-d-aura",
+    "name": "Ruota d'Aura",
+    "description": "Il Pokémon aumenta di 1 grado la sua Velocità. Il tipo di questa\nmossa cambia in base alla forma assunta da Morpeko."
+  },
+  {
+    "id": "784",
+    "slug": "breaking-swipe",
+    "slugLoc": "vastoimpatto",
+    "name": "Vastoimpatto",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco del bersaglio."
+  },
+  {
+    "id": "785",
+    "slug": "branch-poke",
+    "slugLoc": "ramostoccata",
+    "name": "Ramostoccata",
+    "description": ""
+  },
+  {
+    "id": "786",
+    "slug": "overdrive",
+    "slugLoc": "overdrive",
+    "name": "Overdrive",
+    "description": ""
+  },
+  {
+    "id": "787",
+    "slug": "apple-acid",
+    "slugLoc": "acido-malico",
+    "name": "Acido Malico",
+    "description": "Il Pokémon riduce di 1 grado la Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "788",
+    "slug": "grav-apple",
+    "slugLoc": "forza-g",
+    "name": "Forza G",
+    "description": "Il Pokémon riduce di 1 grado la Difesa del bersaglio.\nSe lo stato Gravità è attivo, la potenza della mossa\naumenta del 50%."
+  },
+  {
+    "id": "789",
+    "slug": "spirit-break",
+    "slugLoc": "frantumanima",
+    "name": "Frantumanima",
+    "description": ""
+  },
+  {
+    "id": "790",
+    "slug": "strange-steam",
+    "slugLoc": "vapore-incantato",
+    "name": "Vapore Incantato",
+    "description": ""
+  },
+  {
+    "id": "791",
+    "slug": "life-dew",
+    "slugLoc": "goccia-vitale",
+    "name": "Goccia Vitale",
+    "description": "Il Pokémon e il suo alleato recuperano 1/4 dei rispettivi PS\nmassimi."
+  },
+  {
+    "id": "792",
+    "slug": "obstruct",
+    "slugLoc": "sbarramento",
+    "name": "Sbarramento",
+    "description": ""
+  },
+  {
+    "id": "793",
+    "slug": "false-surrender",
+    "slugLoc": "supplicolpo",
+    "name": "Supplicolpo",
+    "description": ""
+  },
+  {
+    "id": "794",
+    "slug": "meteor-assault",
+    "slugLoc": "sfolgorassalto",
+    "name": "Sfolgorassalto",
+    "description": ""
+  },
+  {
+    "id": "795",
+    "slug": "eternabeam",
+    "slugLoc": "raggio-infinito",
+    "name": "Raggio Infinito",
+    "description": ""
+  },
+  {
+    "id": "796",
+    "slug": "steel-beam",
+    "slugLoc": "raggio-d-acciaio",
+    "name": "Raggio d'Acciaio",
+    "description": "Dopo aver attaccato, il Pokémon perde metà dei PS massimi."
+  },
+  {
+    "id": "797",
+    "slug": "expanding-force",
+    "slugLoc": "vastenergia",
+    "name": "Vastenergia",
+    "description": "Se il Pokémon subisce l'effetto dello stato Campo psichico,\nquesto attacco ha come bersaglio tutti gli avversari\ne la sua potenza aumenta del 50%."
+  },
+  {
+    "id": "798",
+    "slug": "steel-roller",
+    "slugLoc": "ferrorullo",
+    "name": "Ferrorullo",
+    "description": "Il Pokémon rimuove lo stato Campo attivo. Se non ce ne sono\nattivi, la mossa fallisce."
+  },
+  {
+    "id": "799",
+    "slug": "scale-shot",
+    "slugLoc": "squamacolpo",
+    "name": "Squamacolpo",
+    "description": "Il Pokémon colpisce da 2 a 5 volte di fila, riducendo di 1 grado\nla sua Difesa e aumentando di 1 grado la sua Velocità."
+  },
+  {
+    "id": "800",
+    "slug": "meteor-beam",
+    "slugLoc": "raggiometeora",
+    "name": "Raggiometeora",
+    "description": "Il Pokémon entra nello stato Carica e aumenta di 1 grado\nil suo Attacco Speciale nel turno in corso, poi attacca\nin quello seguente."
+  },
+  {
+    "id": "801",
+    "slug": "shell-side-arm",
+    "slugLoc": "armaguscio",
+    "name": "Armaguscio",
+    "description": "Il Pokémon ha il 20% di probabilità di causare lo stato\nAvvelenamento al bersaglio. Questa mossa diventa fisica\nse così dovesse infliggere più danni."
+  },
+  {
+    "id": "802",
+    "slug": "misty-explosion",
+    "slugLoc": "nebbioscoppio",
+    "name": "Nebbioscoppio",
+    "description": "Se il Pokémon subisce l'effetto dello stato Campo nebbioso,\nla potenza della mossa aumenta del 50%, poi il Pokémon\nva KO."
+  },
+  {
+    "id": "803",
+    "slug": "grassy-glide",
+    "slugLoc": "erboscivolata",
+    "name": "Erboscivolata",
+    "description": "Se il Pokémon subisce l'effetto dello stato Campo erboso,\nla mossa guadagna priorità +1."
+  },
+  {
+    "id": "804",
+    "slug": "rising-voltage",
+    "slugLoc": "elettroimpennata",
+    "name": "Elettroimpennata",
+    "description": "Se il bersaglio subisce l'effetto dello stato Campo elettrico,\nla potenza della mossa raddoppia."
+  },
+  {
+    "id": "805",
+    "slug": "terrain-pulse",
+    "slugLoc": "campopulsar",
+    "name": "Campopulsar",
+    "description": "Se il Pokémon subisce l'effetto di uno stato Campo, la potenza\ndella mossa raddoppia. Il tipo della mossa cambia in base\nallo stato Campo attivo."
+  },
+  {
+    "id": "806",
+    "slug": "skitter-smack",
+    "slugLoc": "strisciacolpo",
+    "name": "Strisciacolpo",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco Speciale del bersaglio."
+  },
+  {
+    "id": "807",
+    "slug": "burning-jealousy",
+    "slugLoc": "fiamminvidia",
+    "name": "Fiamminvidia",
+    "description": "Se una delle statistiche del bersaglio è stata aumentata durante\nil turno in corso, il Pokémon gli causa lo stato Scottatura."
+  },
+  {
+    "id": "808",
+    "slug": "lash-out",
+    "slugLoc": "sfogarabbia",
+    "name": "Sfogarabbia",
+    "description": "Se una delle statistiche del Pokémon è stata ridotta durante\nil turno in corso, la potenza della mossa raddoppia."
+  },
+  {
+    "id": "809",
+    "slug": "poltergeist",
+    "slugLoc": "poltergeist",
+    "name": "Poltergeist",
+    "description": "Se il bersaglio non ha con sé uno strumento, questa mossa\nfallisce."
+  },
+  {
+    "id": "810",
+    "slug": "corrosive-gas",
+    "slugLoc": "gas-corrosivo",
+    "name": "Gas Corrosivo",
+    "description": "Il Pokémon fa sì che tutti gli altri Pokémon in campo perdano\ngli strumenti che hanno con sé."
+  },
+  {
+    "id": "811",
+    "slug": "coaching",
+    "slugLoc": "coaching",
+    "name": "Coaching",
+    "description": "Il Pokémon aumenta di 1 grado l'Attacco e la Difesa\ndell'alleato."
+  },
+  {
+    "id": "812",
+    "slug": "flip-turn",
+    "slugLoc": "virata",
+    "name": "Virata",
+    "description": "Il Pokémon si fa sostituire da un compagno di squadra subito\ndopo aver attaccato."
+  },
+  {
+    "id": "813",
+    "slug": "triple-axel",
+    "slugLoc": "triplo-axel",
+    "name": "Triplo Axel",
+    "description": "Il Pokémon colpisce 3 volte di fila: la prima volta con\npotenza 20, la seconda 40 e la terza 60. L'attacco termina\nappena un colpo non va a segno."
+  },
+  {
+    "id": "814",
+    "slug": "dual-wingbeat",
+    "slugLoc": "doppia-ala",
+    "name": "Doppia Ala",
+    "description": "Il Pokémon colpisce 2 volte di fila."
+  },
+  {
+    "id": "815",
+    "slug": "scorching-sands",
+    "slugLoc": "sabbiardente",
+    "name": "Sabbiardente",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nScottatura al bersaglio. Sia il Pokémon che il bersaglio\nguariscono dallo stato Congelamento."
+  },
+  {
+    "id": "816",
+    "slug": "jungle-healing",
+    "slugLoc": "giunglacura",
+    "name": "Giunglacura",
+    "description": ""
+  },
+  {
+    "id": "817",
+    "slug": "wicked-blow",
+    "slugLoc": "pugnotenebra",
+    "name": "Pugnotenebra",
+    "description": ""
+  },
+  {
+    "id": "818",
+    "slug": "surging-strikes",
+    "slugLoc": "idroraffica",
+    "name": "Idroraffica",
+    "description": ""
+  },
+  {
+    "id": "819",
+    "slug": "thunder-cage",
+    "slugLoc": "elettrogabbia",
+    "name": "Elettrogabbia",
+    "description": ""
+  },
+  {
+    "id": "820",
+    "slug": "dragon-energy",
+    "slugLoc": "dragoenergia",
+    "name": "Dragoenergia",
+    "description": ""
+  },
+  {
+    "id": "821",
+    "slug": "freezing-glare",
+    "slugLoc": "sguardo-gelido",
+    "name": "Sguardo Gelido",
+    "description": ""
+  },
+  {
+    "id": "822",
+    "slug": "fiery-wrath",
+    "slugLoc": "furia-ardente",
+    "name": "Furia Ardente",
+    "description": ""
+  },
+  {
+    "id": "823",
+    "slug": "thunderous-kick",
+    "slugLoc": "calcio-tonante",
+    "name": "Calcio Tonante",
+    "description": ""
+  },
+  {
+    "id": "824",
+    "slug": "glacial-lance",
+    "slugLoc": "lancia-glaciale",
+    "name": "Lancia Glaciale",
+    "description": ""
+  },
+  {
+    "id": "825",
+    "slug": "astral-barrage",
+    "slugLoc": "schegge-astrali",
+    "name": "Schegge Astrali",
+    "description": ""
+  },
+  {
+    "id": "826",
+    "slug": "eerie-spell",
+    "slugLoc": "inquietantesimo",
+    "name": "Inquietantesimo",
+    "description": "Il Pokémon riduce di 3 i PP dell'ultima mossa usata\ndal bersaglio."
+  },
+  {
+    "id": "827",
+    "slug": "dire-claw",
+    "slugLoc": "artigli-fatali",
+    "name": "Artigli Fatali",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nAvvelenamento, Paralisi o Sonno al bersaglio."
+  },
+  {
+    "id": "828",
+    "slug": "psyshield-bash",
+    "slugLoc": "barrierassalto",
+    "name": "Barrierassalto",
+    "description": "Il Pokémon aumenta di 1 grado la sua Difesa."
+  },
+  {
+    "id": "829",
+    "slug": "power-shift",
+    "slugLoc": "scambioforza",
+    "name": "Scambioforza",
+    "description": "Il Pokémon entra nello stato Statistiche scambiate."
+  },
+  {
+    "id": "830",
+    "slug": "stone-axe",
+    "slugLoc": "rocciascure",
+    "name": "Rocciascure",
+    "description": "Il Pokémon causa lo stato Rocce levitanti sul campo di lotta\navversario."
+  },
+  {
+    "id": "831",
+    "slug": "springtide-storm",
+    "slugLoc": "tempesta-zefirea",
+    "name": "Tempesta Zefirea",
+    "description": ""
+  },
+  {
+    "id": "832",
+    "slug": "mystical-power",
+    "slugLoc": "forza-mistica",
+    "name": "Forza Mistica",
+    "description": ""
+  },
+  {
+    "id": "833",
+    "slug": "raging-fury",
+    "slugLoc": "ira-furente",
+    "name": "Ira Furente",
+    "description": "Il Pokémon entra nello stato Collera."
+  },
+  {
+    "id": "834",
+    "slug": "wave-crash",
+    "slugLoc": "ondaschianto",
+    "name": "Ondaschianto",
+    "description": "Il Pokémon subisce 1/3 dei danni inflitti."
+  },
+  {
+    "id": "835",
+    "slug": "chloroblast",
+    "slugLoc": "clorofillaser",
+    "name": "Clorofillaser",
+    "description": ""
+  },
+  {
+    "id": "836",
+    "slug": "mountain-gale",
+    "slugLoc": "soffio-d-iceberg",
+    "name": "Soffio d'Iceberg",
+    "description": "Il Pokémon ha il 30% di probabilità di far tentennare\nil bersaglio."
+  },
+  {
+    "id": "837",
+    "slug": "victory-dance",
+    "slugLoc": "danzavittoria",
+    "name": "Danzavittoria",
+    "description": ""
+  },
+  {
+    "id": "838",
+    "slug": "headlong-rush",
+    "slugLoc": "scontro-frontale",
+    "name": "Scontro Frontale",
+    "description": "Il Pokémon riduce di 1 grado la sua Difesa e la sua\nDifesa Speciale."
+  },
+  {
+    "id": "839",
+    "slug": "barb-barrage",
+    "slugLoc": "mille-fielespine",
+    "name": "Mille Fielespine",
+    "description": ""
+  },
+  {
+    "id": "840",
+    "slug": "esper-wing",
+    "slugLoc": "ali-d-aura",
+    "name": "Ali d'Aura",
+    "description": ""
+  },
+  {
+    "id": "841",
+    "slug": "bitter-malice",
+    "slugLoc": "livore",
+    "name": "Livore",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco del bersaglio."
+  },
+  {
+    "id": "842",
+    "slug": "shelter",
+    "slugLoc": "barricata",
+    "name": "Barricata",
+    "description": "Il Pokémon aumenta di 2 gradi la sua Difesa."
+  },
+  {
+    "id": "843",
+    "slug": "triple-arrows",
+    "slugLoc": "triplodardo",
+    "name": "Triplodardo",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1.\nInoltre, ha il 50% di probabilità di ridurre di 1 grado\nla Difesa del bersaglio e il 30% di probabilità di farlo\ntentennare."
+  },
+  {
+    "id": "844",
+    "slug": "infernal-parade",
+    "slugLoc": "corteo-spettrale",
+    "name": "Corteo Spettrale",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nScottatura al bersaglio. Se il bersaglio è affetto da problemi\ndi stato, la potenza della mossa raddoppia."
+  },
+  {
+    "id": "845",
+    "slug": "ceaseless-edge",
+    "slugLoc": "lama-milleflutti",
+    "name": "Lama Milleflutti",
+    "description": "Il Pokémon causa lo stato Punte sul campo di lotta avversario."
+  },
+  {
+    "id": "846",
+    "slug": "bleakwind-storm",
+    "slugLoc": "tempesta-boreale",
+    "name": "Tempesta Boreale",
+    "description": ""
+  },
+  {
+    "id": "847",
+    "slug": "wildbolt-storm",
+    "slugLoc": "tempesta-tonante",
+    "name": "Tempesta Tonante",
+    "description": ""
+  },
+  {
+    "id": "848",
+    "slug": "sandsear-storm",
+    "slugLoc": "tempesta-ardente",
+    "name": "Tempesta Ardente",
+    "description": ""
+  },
+  {
+    "id": "849",
+    "slug": "lunar-blessing",
+    "slugLoc": "invocaluna",
+    "name": "Invocaluna",
+    "description": ""
+  },
+  {
+    "id": "850",
+    "slug": "take-heart",
+    "slugLoc": "baldimpulso",
+    "name": "Baldimpulso",
+    "description": ""
+  },
+  {
+    "id": "851",
+    "slug": "tera-blast",
+    "slugLoc": "terascoppio",
+    "name": "Terascoppio",
+    "description": ""
+  },
+  {
+    "id": "852",
+    "slug": "silk-trap",
+    "slugLoc": "telatrappola",
+    "name": "Telatrappola",
+    "description": ""
+  },
+  {
+    "id": "853",
+    "slug": "axe-kick",
+    "slugLoc": "calcio-ad-ascia",
+    "name": "Calcio ad Ascia",
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nConfusione al bersaglio. Se questa mossa non va a segno\no fallisce, il Pokémon subisce danni pari alla metà\ndei suoi PS massimi."
+  },
+  {
+    "id": "854",
+    "slug": "last-respects",
+    "slugLoc": "omaggio-ai-ko",
+    "name": "Omaggio ai KO",
+    "description": "Ogni volta che un compagno di squadra va KO, la potenza\ndi questa mossa aumenta di 50."
+  },
+  {
+    "id": "855",
+    "slug": "lumina-crash",
+    "slugLoc": "fotocollisione",
+    "name": "Fotocollisione",
+    "description": "Il Pokémon riduce di 2 gradi la Difesa Speciale del bersaglio."
+  },
+  {
+    "id": "856",
+    "slug": "order-up",
+    "slugLoc": "alta-cucina",
+    "name": "Alta Cucina",
+    "description": ""
+  },
+  {
+    "id": "857",
+    "slug": "jet-punch",
+    "slugLoc": "pugnojet",
+    "name": "Pugnojet",
+    "description": ""
+  },
+  {
+    "id": "858",
+    "slug": "spicy-extract",
+    "slugLoc": "essenza-piccante",
+    "name": "Essenza Piccante",
+    "description": "Il Pokémon riduce di 2 gradi la Difesa del bersaglio\nma ne aumenta l'Attacco di 2 gradi."
+  },
+  {
+    "id": "859",
+    "slug": "spin-out",
+    "slugLoc": "slittaruote",
+    "name": "Slittaruote",
+    "description": ""
+  },
+  {
+    "id": "860",
+    "slug": "population-bomb",
+    "slugLoc": "infestazione",
+    "name": "Infestazione",
+    "description": "Il Pokémon colpisce da 1 a 10 volte di fila. L'attacco termina\nappena un colpo non va a segno."
+  },
+  {
+    "id": "861",
+    "slug": "ice-spinner",
+    "slugLoc": "vortighiaccio",
+    "name": "Vortighiaccio",
+    "description": "Il Pokémon rimuove lo stato Campo attivo."
+  },
+  {
+    "id": "862",
+    "slug": "glaive-rush",
+    "slugLoc": "spadoncarica",
+    "name": "Spadoncarica",
+    "description": ""
+  },
+  {
+    "id": "863",
+    "slug": "revival-blessing",
+    "slugLoc": "preghiera-vitale",
+    "name": "Preghiera Vitale",
+    "description": "Il Pokémon rimette in sesto un compagno di squadra andato KO,\nfacendogli recuperare metà dei suoi PS massimi."
+  },
+  {
+    "id": "864",
+    "slug": "salt-cure",
+    "slugLoc": "sotto-sale",
+    "name": "Sotto Sale",
+    "description": "Il Pokémon causa lo stato Sotto sale al bersaglio."
+  },
+  {
+    "id": "865",
+    "slug": "triple-dive",
+    "slugLoc": "triplo-tuffo",
+    "name": "Triplo Tuffo",
+    "description": ""
+  },
+  {
+    "id": "866",
+    "slug": "mortal-spin",
+    "slugLoc": "glitturbine",
+    "name": "Glitturbine",
+    "description": "Il Pokémon si libera dagli stati Imprigionamento e\nSeme parassita, e rimuove gli stati Punte, Punte velenose,\nRete vischiosa e Rocce levitanti dal suo campo di lotta.\nCausa inoltre lo stato Avvelenamento al bersaglio."
+  },
+  {
+    "id": "867",
+    "slug": "doodle",
+    "slugLoc": "ricalco",
+    "name": "Ricalco",
+    "description": ""
+  },
+  {
+    "id": "868",
+    "slug": "fillet-away",
+    "slugLoc": "alleggerimento",
+    "name": "Alleggerimento",
+    "description": ""
+  },
+  {
+    "id": "869",
+    "slug": "kowtow-cleave",
+    "slugLoc": "genufendente",
+    "name": "Genufendente",
+    "description": "Questa mossa va sempre a segno."
+  },
+  {
+    "id": "870",
+    "slug": "flower-trick",
+    "slugLoc": "prestigiafiore",
+    "name": "Prestigiafiore",
+    "description": "Questa mossa va sempre a segno e risulta sempre in\nun brutto colpo."
+  },
+  {
+    "id": "871",
+    "slug": "torch-song",
+    "slugLoc": "canzone-ardente",
+    "name": "Canzone Ardente",
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco Speciale."
+  },
+  {
+    "id": "872",
+    "slug": "aqua-step",
+    "slugLoc": "idroballetto",
+    "name": "Idroballetto",
+    "description": "Il Pokémon aumenta di 1 grado la sua Velocità."
+  },
+  {
+    "id": "873",
+    "slug": "raging-bull",
+    "slugLoc": "scatenatoro",
+    "name": "Scatenatoro",
+    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta avversario.\nIl tipo di questa mossa cambia in base alla forma di chi la usa."
+  },
+  {
+    "id": "874",
+    "slug": "make-it-rain",
+    "slugLoc": "corsa-all-oro",
+    "name": "Corsa all'Oro",
+    "description": ""
+  },
+  {
+    "id": "875",
+    "slug": "psyblade",
+    "slugLoc": "psicolama",
+    "name": "Psicolama",
+    "description": ""
+  },
+  {
+    "id": "876",
+    "slug": "hydro-steam",
+    "slugLoc": "idrovapore",
+    "name": "Idrovapore",
+    "description": ""
+  },
+  {
+    "id": "877",
+    "slug": "ruination",
+    "slugLoc": "catastrofe",
+    "name": "Catastrofe",
+    "description": ""
+  },
+  {
+    "id": "878",
+    "slug": "collision-course",
+    "slugLoc": "turboschianto",
+    "name": "Turboschianto",
+    "description": ""
+  },
+  {
+    "id": "879",
+    "slug": "electro-drift",
+    "slugLoc": "fulmiscatto",
+    "name": "Fulmiscatto",
+    "description": ""
+  },
+  {
+    "id": "880",
+    "slug": "shed-tail",
+    "slugLoc": "tagliacoda",
+    "name": "Tagliacoda",
+    "description": "Il Pokémon perde metà dei suoi PS massimi, crea un sostituto e\npoi si fa sostituire da un compagno di squadra. Il sostituto viene\ncolpito dalle mosse al posto del Pokémon e sparisce dopo aver\nsubito danni pari a 1/4 dei PS massimi del Pokémon che\nlo ha creato."
+  },
+  {
+    "id": "881",
+    "slug": "chilly-reception",
+    "slugLoc": "freddura",
+    "name": "Freddura",
+    "description": "Il Pokémon causa lo stato Neve per 5 turni e si fa sostituire\nda un compagno di squadra."
+  },
+  {
+    "id": "882",
+    "slug": "tidy-up",
+    "slugLoc": "pulizie",
+    "name": "Pulizie",
+    "description": "Il Pokémon rimuove gli stati Rete vischiosa, Rocce levitanti,\nSostituto, Punte e Punte velenose dall'intero campo di lotta,\ne aumenta di 1 grado il suo Attacco e la sua Velocità."
+  },
+  {
+    "id": "883",
+    "slug": "snowscape",
+    "slugLoc": "vista-innevata",
+    "name": "Vista Innevata",
+    "description": "Il Pokémon causa lo stato Neve per 5 turni."
+  },
+  {
+    "id": "884",
+    "slug": "pounce",
+    "slugLoc": "balzo",
+    "name": "Balzo",
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio."
+  },
+  {
+    "id": "885",
+    "slug": "trailblaze",
+    "slugLoc": "apripista",
+    "name": "Apripista",
+    "description": "Il Pokémon aumenta di 1 grado la sua Velocità."
+  },
+  {
+    "id": "886",
+    "slug": "chilling-water",
+    "slugLoc": "doccia-fredda",
+    "name": "Doccia Fredda",
+    "description": "Il Pokémon riduce di 1 grado l'Attacco del bersaglio."
+  },
+  {
+    "id": "887",
+    "slug": "hyper-drill",
+    "slugLoc": "ipertrapano",
+    "name": "Ipertrapano",
+    "description": ""
+  },
+  {
+    "id": "888",
+    "slug": "twin-beam",
+    "slugLoc": "doppioraggio",
+    "name": "Doppioraggio",
+    "description": "Il Pokémon colpisce 2 volte di fila."
+  },
+  {
+    "id": "889",
+    "slug": "rage-fist",
+    "slugLoc": "pugno-furibondo",
+    "name": "Pugno Furibondo",
+    "description": ""
+  },
+  {
+    "id": "890",
+    "slug": "armor-cannon",
+    "slugLoc": "corazza-cannone",
+    "name": "Corazza Cannone",
+    "description": "Il Pokémon riduce di 1 grado la sua Difesa e la sua\nDifesa Speciale."
+  },
+  {
+    "id": "891",
+    "slug": "bitter-blade",
+    "slugLoc": "lama-del-rimorso",
+    "name": "Lama del Rimorso",
+    "description": "Il Pokémon recupera PS pari alla metà dei danni inflitti\nal bersaglio."
+  },
+  {
+    "id": "892",
+    "slug": "double-shock",
+    "slugLoc": "doppiolampo",
+    "name": "Doppiolampo",
+    "description": "Il Pokémon perde il tipo Elettro. Se il Pokémon non è\ndi tipo Elettro, la mossa fallisce."
+  },
+  {
+    "id": "893",
+    "slug": "gigaton-hammer",
+    "slugLoc": "granmartello",
+    "name": "Granmartello",
+    "description": "Questa mossa non può essere usata 2 volte di fila."
+  },
+  {
+    "id": "894",
+    "slug": "comeuppance",
+    "slugLoc": "ritorsione",
+    "name": "Ritorsione",
+    "description": "Se il Pokémon ha subito danni da una mossa durante il turno\nin corso, infligge a chi lo ha colpito il 150% dei danni ricevuti."
+  },
+  {
+    "id": "895",
+    "slug": "aqua-cutter",
+    "slugLoc": "idrotaglio",
+    "name": "Idrotaglio",
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
+  },
+  {
+    "id": "896",
+    "slug": "blazing-torque",
+    "slugLoc": "turboustione",
+    "name": "Turboustione",
+    "description": ""
+  },
+  {
+    "id": "897",
+    "slug": "wicked-torque",
+    "slugLoc": "turbotenebra",
+    "name": "Turbotenebra",
+    "description": ""
+  },
+  {
+    "id": "898",
+    "slug": "noxious-torque",
+    "slugLoc": "turbotossina",
+    "name": "Turbotossina",
+    "description": ""
+  },
+  {
+    "id": "899",
+    "slug": "combat-torque",
+    "slugLoc": "turborissa",
+    "name": "Turborissa",
+    "description": ""
+  },
+  {
+    "id": "900",
+    "slug": "magical-torque",
+    "slugLoc": "turboincanto",
+    "name": "Turboincanto",
+    "description": ""
+  },
+  {
+    "id": "901",
+    "slug": "blood-moon",
+    "slugLoc": "luna-rossa",
+    "name": "Luna Rossa",
+    "description": ""
+  },
+  {
+    "id": "902",
+    "slug": "matcha-gotcha",
+    "slugLoc": "spruzzate",
+    "name": "Spruzzatè",
+    "description": "Il Pokémon recupera PS pari alla metà dei danni inflitti\nal bersaglio, e ha il 20% di probabilità di causargli lo stato\nScottatura."
+  },
+  {
+    "id": "903",
+    "slug": "syrup-bomb",
+    "slugLoc": "bomba-sciroppata",
+    "name": "Bomba Sciroppata",
+    "description": "Il Pokémon causa al bersaglio lo stato Ricoperto di sciroppo\nper 3 turni."
+  },
+  {
+    "id": "904",
+    "slug": "ivy-cudgel",
+    "slugLoc": "clava-di-liane",
+    "name": "Clava di Liane",
+    "description": ""
+  },
+  {
+    "id": "905",
+    "slug": "electro-shot",
+    "slugLoc": "elettroraggio",
+    "name": "Elettroraggio",
+    "description": "Il Pokémon entra nello stato Carica e aumenta di 1 grado\nil suo Attacco Speciale nel turno in corso, poi attacca in quello\nseguente. Se lo stato Pioggia è attivo, il Pokémon non entra\nnello stato Carica e può attaccare immediatamente."
+  },
+  {
+    "id": "906",
+    "slug": "tera-starstorm",
+    "slugLoc": "teracluster",
+    "name": "Teracluster",
+    "description": ""
+  },
+  {
+    "id": "907",
+    "slug": "fickle-beam",
+    "slugLoc": "irregolaser",
+    "name": "Irregolaser",
+    "description": "La potenza di questa mossa ha il 30% di probabilità\ndi raddoppiare."
+  },
+  {
+    "id": "908",
+    "slug": "burning-bulwark",
+    "slugLoc": "egida-ignea",
+    "name": "Egida Ignea",
+    "description": ""
+  },
+  {
+    "id": "909",
+    "slug": "thunderclap",
+    "slugLoc": "saetta",
+    "name": "Saetta",
+    "description": ""
+  },
+  {
+    "id": "910",
+    "slug": "mighty-cleave",
+    "slugLoc": "taglio-poderoso",
+    "name": "Taglio Poderoso",
+    "description": ""
+  },
+  {
+    "id": "911",
+    "slug": "tachyon-cutter",
+    "slugLoc": "tachiontaglio",
+    "name": "Tachiontaglio",
+    "description": ""
+  },
+  {
+    "id": "912",
+    "slug": "hard-press",
+    "slugLoc": "pressa-d-acciaio",
+    "name": "Pressa d'Acciaio",
+    "description": "Più alti sono i PS residui del bersaglio, maggiore è la potenza\ndella mossa, da un minimo di 1 a un massimo di 100."
+  },
+  {
+    "id": "913",
+    "slug": "dragon-cheer",
+    "slugLoc": "grido-del-drago",
+    "name": "Grido del Drago",
+    "description": "Il Pokémon fa entrare l'alleato nello stato Brutto colpo+1.\nSe l'alleato è di tipo Drago, entra nello stato Brutto colpo+2."
+  },
+  {
+    "id": "914",
+    "slug": "alluring-voice",
+    "slugLoc": "ammaliavoce",
+    "name": "Ammaliavoce",
+    "description": "Se una delle statistiche del bersaglio è stata aumentata durante\nil turno in corso, il Pokémon gli causa lo stato Confusione."
+  },
+  {
+    "id": "915",
+    "slug": "temper-flare",
+    "slugLoc": "rabbia-bruciante",
+    "name": "Rabbia Bruciante",
+    "description": "La potenza della mossa raddoppia se nel turno precedente\nil Pokémon non ha potuto agire, se la sua mossa ha fallito\no se non è andata a segno."
+  },
+  {
+    "id": "916",
+    "slug": "supercell-slam",
+    "slugLoc": "elettrotuffo",
+    "name": "Elettrotuffo",
+    "description": "Se questa mossa non va a segno o fallisce, il Pokémon subisce\ndanni pari alla metà dei suoi PS massimi. Se il bersaglio è\naffetto dallo stato Minimizzato, la mossa va sempre a segno\ne la sua potenza raddoppia."
+  },
+  {
+    "id": "917",
+    "slug": "psychic-noise",
+    "slugLoc": "psicorumore",
+    "name": "Psicorumore",
+    "description": "Il Pokémon causa lo stato Cura disabilitata al bersaglio\nper 2 turni."
+  },
+  {
+    "id": "918",
+    "slug": "upper-hand",
+    "slugLoc": "colpo-di-mano",
+    "name": "Colpo di Mano",
+    "description": "Il Pokémon fa tentennare il bersaglio. Se quest'ultimo non\nha scelto di usare una mossa ad alta priorità, questa mossa\nfallisce."
+  },
+  {
+    "id": "919",
+    "slug": "malignant-chain",
+    "slugLoc": "intossicatena",
+    "name": "Intossicatena",
+    "description": ""
+  },
+  {
+    "id": "920",
+    "slug": "nihil-light",
+    "slugLoc": "tabula-laser",
+    "name": "Tabula Laser",
+    "description": ""
+  }
+]

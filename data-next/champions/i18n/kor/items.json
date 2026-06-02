@@ -1,0 +1,938 @@
+[
+  {
+    "id": "149",
+    "slug": "cheri-berry",
+    "slugLoc": "beociyeolmae",
+    "name": "버치열매",
+    "description": "마비 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "버치열매"
+  },
+  {
+    "id": "150",
+    "slug": "chesto-berry",
+    "slugLoc": "yuruyeolmae",
+    "name": "유루열매",
+    "description": "잠듦 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "유루열매"
+  },
+  {
+    "id": "151",
+    "slug": "pecha-berry",
+    "slugLoc": "bogsyungyeolmae",
+    "name": "복슝열매",
+    "description": "독, 맹독 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "복슝열매"
+  },
+  {
+    "id": "152",
+    "slug": "rawst-berry",
+    "slugLoc": "bogbunyeolmae",
+    "name": "복분열매",
+    "description": "화상 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "복분열매"
+  },
+  {
+    "id": "153",
+    "slug": "aspear-berry",
+    "slugLoc": "baeriyeolmae",
+    "name": "배리열매",
+    "description": "얼음 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "배리열매"
+  },
+  {
+    "id": "154",
+    "slug": "leppa-berry",
+    "slugLoc": "gwasayeolmae",
+    "name": "과사열매",
+    "description": "PP가 0이 된 기술의 PP를 10 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "과사열매"
+  },
+  {
+    "id": "155",
+    "slug": "oran-berry",
+    "slugLoc": "oraengyeolmae",
+    "name": "오랭열매",
+    "description": "남은 HP가 최대 HP의 1/2 이하가 되었을 때\nHP를 10 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "오랭열매"
+  },
+  {
+    "id": "156",
+    "slug": "persim-berry",
+    "slugLoc": "simonyeolmae",
+    "name": "시몬열매",
+    "description": "혼란 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "시몬열매"
+  },
+  {
+    "id": "157",
+    "slug": "lum-berry",
+    "slugLoc": "risaemyeolmae",
+    "name": "리샘열매",
+    "description": "모든 상태 이상과 혼란 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "리샘열매"
+  },
+  {
+    "id": "158",
+    "slug": "sitrus-berry",
+    "slugLoc": "jamungyeolmae",
+    "name": "자뭉열매",
+    "description": "남은 HP가 최대 HP의 1/2 이하가 되었을 때\n최대 HP의 1/4만큼 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "자뭉열매"
+  },
+  {
+    "id": "184",
+    "slug": "occa-berry",
+    "slugLoc": "okayeolmae",
+    "name": "오카열매",
+    "description": "효과가 굉장한 불꽃타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "오카열매"
+  },
+  {
+    "id": "185",
+    "slug": "passho-berry",
+    "slugLoc": "ggosigaeyeolmae",
+    "name": "꼬시개열매",
+    "description": "효과가 굉장한 물타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "꼬시개열매"
+  },
+  {
+    "id": "186",
+    "slug": "wacan-berry",
+    "slugLoc": "conayeolmae",
+    "name": "초나열매",
+    "description": "효과가 굉장한 전기타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "초나열매"
+  },
+  {
+    "id": "187",
+    "slug": "rindo-berry",
+    "slugLoc": "rindeuyeolmae",
+    "name": "린드열매",
+    "description": "효과가 굉장한 풀타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "린드열매"
+  },
+  {
+    "id": "188",
+    "slug": "yache-berry",
+    "slugLoc": "peulkayeolmae",
+    "name": "플카열매",
+    "description": "효과가 굉장한 얼음타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "플카열매"
+  },
+  {
+    "id": "189",
+    "slug": "chople-berry",
+    "slugLoc": "ropeulyeolmae",
+    "name": "로플열매",
+    "description": "효과가 굉장한 격투타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "로플열매"
+  },
+  {
+    "id": "190",
+    "slug": "kebia-berry",
+    "slugLoc": "eureumyeolmae",
+    "name": "으름열매",
+    "description": "효과가 굉장한 독타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "으름열매"
+  },
+  {
+    "id": "191",
+    "slug": "shuca-berry",
+    "slugLoc": "syukaeyeolmae",
+    "name": "슈캐열매",
+    "description": "효과가 굉장한 땅타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "슈캐열매"
+  },
+  {
+    "id": "192",
+    "slug": "coba-berry",
+    "slugLoc": "bakoyeolmae",
+    "name": "바코열매",
+    "description": "효과가 굉장한 비행타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "바코열매"
+  },
+  {
+    "id": "193",
+    "slug": "payapa-berry",
+    "slugLoc": "yapayeolmae",
+    "name": "야파열매",
+    "description": "효과가 굉장한 에스퍼타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "야파열매"
+  },
+  {
+    "id": "194",
+    "slug": "tanga-berry",
+    "slugLoc": "riceyeolmae",
+    "name": "리체열매",
+    "description": "효과가 굉장한 벌레타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "리체열매"
+  },
+  {
+    "id": "195",
+    "slug": "charti-berry",
+    "slugLoc": "rumiyeolmae",
+    "name": "루미열매",
+    "description": "효과가 굉장한 바위타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "루미열매"
+  },
+  {
+    "id": "196",
+    "slug": "kasib-berry",
+    "slugLoc": "subulyeolmae",
+    "name": "수불열매",
+    "description": "효과가 굉장한 고스트타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "수불열매"
+  },
+  {
+    "id": "197",
+    "slug": "haban-berry",
+    "slugLoc": "habanyeolmae",
+    "name": "하반열매",
+    "description": "효과가 굉장한 드래곤타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "하반열매"
+  },
+  {
+    "id": "198",
+    "slug": "colbur-berry",
+    "slugLoc": "makoyeolmae",
+    "name": "마코열매",
+    "description": "효과가 굉장한 악타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "마코열매"
+  },
+  {
+    "id": "199",
+    "slug": "babiri-berry",
+    "slugLoc": "baribiyeolmae",
+    "name": "바리비열매",
+    "description": "효과가 굉장한 강철타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "바리비열매"
+  },
+  {
+    "id": "200",
+    "slug": "chilan-berry",
+    "slugLoc": "kariyeolmae",
+    "name": "카리열매",
+    "description": "노말타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "카리열매"
+  },
+  {
+    "id": "213",
+    "slug": "bright-powder",
+    "slugLoc": "banjjaggaru",
+    "name": "반짝가루",
+    "description": "자신에게 상대가 사용하는 기술의\n명중률이 0.9배가 된다.",
+    "pluralName": "반짝가루"
+  },
+  {
+    "id": "214",
+    "slug": "white-herb",
+    "slugLoc": "hayangheobeu",
+    "name": "하양허브",
+    "description": "능력이 떨어지면 원래대로 되돌린다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "하양허브"
+  },
+  {
+    "id": "217",
+    "slug": "quick-claw",
+    "slugLoc": "seonjegonggyeogsontob",
+    "name": "선제공격손톱",
+    "description": "20% 확률로\n우선도가 같은 기술 중에서 가장 먼저 행동한다.",
+    "pluralName": "선제공격손톱"
+  },
+  {
+    "id": "219",
+    "slug": "mental-herb",
+    "slugLoc": "mentalheobeu",
+    "name": "멘탈허브",
+    "description": "헤롱헤롱, 도발, 연속 불가,\n기술봉인, 회복봉인, 앙코르 상태를 회복한다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "멘탈허브"
+  },
+  {
+    "id": "221",
+    "slug": "kings-rock",
+    "slugLoc": "wangyijingpyoseog",
+    "name": "왕의징표석",
+    "description": "기술로 데미지를 주었을 때\n10% 확률로 상대를 풀죽게 한다.",
+    "pluralName": "왕의징표석"
+  },
+  {
+    "id": "222",
+    "slug": "silver-powder",
+    "slugLoc": "eunbicgaru",
+    "name": "은빛가루",
+    "description": "벌레타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "은빛가루"
+  },
+  {
+    "id": "230",
+    "slug": "focus-band",
+    "slugLoc": "gihabyimeoriddi",
+    "name": "기합의머리띠",
+    "description": "기절할 듯한 기술로 데미지를 입으면\n10% 확률로 HP를 1 남기고 버틴다.",
+    "pluralName": "기합의머리띠"
+  },
+  {
+    "id": "232",
+    "slug": "scope-lens",
+    "slugLoc": "cojeomrenjeu",
+    "name": "초점렌즈",
+    "description": "급소업+1이 된다.",
+    "pluralName": "초점렌즈"
+  },
+  {
+    "id": "233",
+    "slug": "metal-coat",
+    "slugLoc": "geumsogkoteu",
+    "name": "금속코트",
+    "description": "강철타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "금속코트"
+  },
+  {
+    "id": "234",
+    "slug": "leftovers",
+    "slugLoc": "meogdanameuneumsig",
+    "name": "먹다남은음식",
+    "description": "턴 종료 시 최대 HP의 1/16만큼 회복한다.",
+    "pluralName": "먹다남은음식"
+  },
+  {
+    "id": "236",
+    "slug": "light-ball",
+    "slugLoc": "jeongiguseul",
+    "name": "전기구슬",
+    "description": "피카츄의 공격, 특수공격이 2배가 된다.",
+    "pluralName": "전기구슬"
+  },
+  {
+    "id": "237",
+    "slug": "soft-sand",
+    "slugLoc": "budeureounmorae",
+    "name": "부드러운모래",
+    "description": "땅타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "부드러운모래"
+  },
+  {
+    "id": "238",
+    "slug": "hard-stone",
+    "slugLoc": "ddagddaghandol",
+    "name": "딱딱한돌",
+    "description": "바위타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "딱딱한돌"
+  },
+  {
+    "id": "239",
+    "slug": "miracle-seed",
+    "slugLoc": "gijeogyissi",
+    "name": "기적의씨",
+    "description": "풀타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "기적의씨"
+  },
+  {
+    "id": "240",
+    "slug": "black-glasses",
+    "slugLoc": "geomeunangyeong",
+    "name": "검은안경",
+    "description": "악타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "검은안경"
+  },
+  {
+    "id": "241",
+    "slug": "black-belt",
+    "slugLoc": "geomeunddi",
+    "name": "검은띠",
+    "description": "격투타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "검은띠"
+  },
+  {
+    "id": "242",
+    "slug": "magnet",
+    "slugLoc": "jaseog",
+    "name": "자석",
+    "description": "전기타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "자석"
+  },
+  {
+    "id": "243",
+    "slug": "mystic-water",
+    "slugLoc": "sinbiyimulbangul",
+    "name": "신비의물방울",
+    "description": "물타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "신비의물방울"
+  },
+  {
+    "id": "244",
+    "slug": "sharp-beak",
+    "slugLoc": "yerihanburi",
+    "name": "예리한부리",
+    "description": "비행타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "예리한부리"
+  },
+  {
+    "id": "245",
+    "slug": "poison-barb",
+    "slugLoc": "dogbaneul",
+    "name": "독바늘",
+    "description": "독타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "독바늘"
+  },
+  {
+    "id": "246",
+    "slug": "never-melt-ice",
+    "slugLoc": "nogjianhneuneoleum",
+    "name": "녹지않는얼음",
+    "description": "얼음타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "녹지않는얼음"
+  },
+  {
+    "id": "247",
+    "slug": "spell-tag",
+    "slugLoc": "jeojuyibujeog",
+    "name": "저주의부적",
+    "description": "고스트타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "저주의부적"
+  },
+  {
+    "id": "248",
+    "slug": "twisted-spoon",
+    "slugLoc": "hwieojinseupun",
+    "name": "휘어진스푼",
+    "description": "에스퍼타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "휘어진스푼"
+  },
+  {
+    "id": "249",
+    "slug": "charcoal",
+    "slugLoc": "mogtan",
+    "name": "목탄",
+    "description": "불꽃타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "목탄"
+  },
+  {
+    "id": "250",
+    "slug": "dragon-fang",
+    "slugLoc": "yongyiibbal",
+    "name": "용의이빨",
+    "description": "드래곤타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "용의이빨"
+  },
+  {
+    "id": "251",
+    "slug": "silk-scarf",
+    "slugLoc": "silkeuseukapeu",
+    "name": "실크스카프",
+    "description": "노말타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "실크스카프"
+  },
+  {
+    "id": "253",
+    "slug": "shell-bell",
+    "slugLoc": "jogaeggeobjilbangul",
+    "name": "조개껍질방울",
+    "description": "기술로 데미지를 주었을 때\n그 데미지의 1/8만큼\n자신의 HP를 회복한다.",
+    "pluralName": "조개껍질방울"
+  },
+  {
+    "id": "275",
+    "slug": "focus-sash",
+    "slugLoc": "gihabyiddi",
+    "name": "기합의띠",
+    "description": "HP가 꽉 찼을 때\n일격에 기절할 듯한 기술로 데미지를 입으면\nHP를 1 남기고 버틴다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "기합의띠"
+  },
+  {
+    "id": "287",
+    "slug": "choice-scarf",
+    "slugLoc": "guaeseukapeu",
+    "name": "구애스카프",
+    "description": "스피드가 1.5배가 되지만\n한번 기술을 사용하면 교체하기 전까지\n그 기술만 사용할 수 있게 된다.",
+    "pluralName": "구애스카프"
+  },
+  {
+    "id": "656",
+    "slug": "gengarite",
+    "slugLoc": "paenteomnaiteu",
+    "name": "팬텀나이트",
+    "description": "팬텀이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "팬텀나이트"
+  },
+  {
+    "id": "657",
+    "slug": "gardevoirite",
+    "slugLoc": "gadiannaiteu",
+    "name": "가디안나이트",
+    "description": "가디안이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "가디안나이트"
+  },
+  {
+    "id": "658",
+    "slug": "ampharosite",
+    "slugLoc": "jeonryongnaiteu",
+    "name": "전룡나이트",
+    "description": "전룡이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "전룡나이트"
+  },
+  {
+    "id": "659",
+    "slug": "venusaurite",
+    "slugLoc": "isanghaeggocnaiteu",
+    "name": "이상해꽃나이트",
+    "description": "이상해꽃이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "이상해꽃나이트"
+  },
+  {
+    "id": "660",
+    "slug": "charizardite-x",
+    "slugLoc": "rijamongnaiteux",
+    "name": "리자몽나이트X",
+    "description": "리자몽이 메가진화할 수 있게 되는 도구.\n(메가리자몽X)",
+    "pluralName": "리자몽나이트X"
+  },
+  {
+    "id": "661",
+    "slug": "blastoisinite",
+    "slugLoc": "geobugwangnaiteu",
+    "name": "거북왕나이트",
+    "description": "거북왕이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "거북왕나이트"
+  },
+  {
+    "id": "665",
+    "slug": "medichamite",
+    "slugLoc": "yogaraemnaiteu",
+    "name": "요가램나이트",
+    "description": "요가램이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "요가램나이트"
+  },
+  {
+    "id": "666",
+    "slug": "houndoominite",
+    "slugLoc": "helganaiteu",
+    "name": "헬가나이트",
+    "description": "헬가가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "헬가나이트"
+  },
+  {
+    "id": "667",
+    "slug": "aggronite",
+    "slugLoc": "boseuroranaiteu",
+    "name": "보스로라나이트",
+    "description": "보스로라가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "보스로라나이트"
+  },
+  {
+    "id": "668",
+    "slug": "banettite",
+    "slugLoc": "dakeupesnaiteu",
+    "name": "다크펫나이트",
+    "description": "다크펫이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "다크펫나이트"
+  },
+  {
+    "id": "669",
+    "slug": "tyranitarite",
+    "slugLoc": "magiraseunaiteu",
+    "name": "마기라스나이트",
+    "description": "마기라스가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "마기라스나이트"
+  },
+  {
+    "id": "670",
+    "slug": "scizorite",
+    "slugLoc": "hassamnaiteu",
+    "name": "핫삼나이트",
+    "description": "핫삼이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "핫삼나이트"
+  },
+  {
+    "id": "671",
+    "slug": "pinsirite",
+    "slugLoc": "bbeusaijeonaiteu",
+    "name": "쁘사이저나이트",
+    "description": "쁘사이저가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "쁘사이저나이트"
+  },
+  {
+    "id": "672",
+    "slug": "aerodactylite",
+    "slugLoc": "peuteranaiteu",
+    "name": "프테라나이트",
+    "description": "프테라가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "프테라나이트"
+  },
+  {
+    "id": "673",
+    "slug": "lucarionite",
+    "slugLoc": "rukarionaiteu",
+    "name": "루카리오나이트",
+    "description": "루카리오가 메가진화할 수 있게 되는 도구.\n(메가루카리오)",
+    "pluralName": "루카리오나이트"
+  },
+  {
+    "id": "674",
+    "slug": "abomasite",
+    "slugLoc": "nunseolwangnaiteu",
+    "name": "눈설왕나이트",
+    "description": "눈설왕이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "눈설왕나이트"
+  },
+  {
+    "id": "675",
+    "slug": "kangaskhanite",
+    "slugLoc": "kaengkanaiteu",
+    "name": "캥카나이트",
+    "description": "캥카가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "캥카나이트"
+  },
+  {
+    "id": "676",
+    "slug": "gyaradosite",
+    "slugLoc": "gyaradoseunaiteu",
+    "name": "갸라도스나이트",
+    "description": "갸라도스가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "갸라도스나이트"
+  },
+  {
+    "id": "677",
+    "slug": "absolite",
+    "slugLoc": "aebsolnaiteu",
+    "name": "앱솔나이트",
+    "description": "앱솔이 메가진화할 수 있게 되는 도구.\n(메가앱솔)",
+    "pluralName": "앱솔나이트"
+  },
+  {
+    "id": "678",
+    "slug": "charizardite-y",
+    "slugLoc": "rijamongnaiteuy",
+    "name": "리자몽나이트Y",
+    "description": "리자몽이 메가진화할 수 있게 되는 도구.\n(메가리자몽Y)",
+    "pluralName": "리자몽나이트Y"
+  },
+  {
+    "id": "679",
+    "slug": "alakazite",
+    "slugLoc": "hudinaiteu",
+    "name": "후디나이트",
+    "description": "후딘이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "후디나이트"
+  },
+  {
+    "id": "680",
+    "slug": "heracronite",
+    "slugLoc": "herakeuroseunaiteu",
+    "name": "헤라크로스나이트",
+    "description": "헤라크로스가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "헤라크로스나이트"
+  },
+  {
+    "id": "682",
+    "slug": "manectite",
+    "slugLoc": "sseondeobolteunaiteu",
+    "name": "썬더볼트나이트",
+    "description": "썬더볼트가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "썬더볼트나이트"
+  },
+  {
+    "id": "683",
+    "slug": "garchompite",
+    "slugLoc": "hankariaseunaiteu",
+    "name": "한카리아스나이트",
+    "description": "한카리아스가 메가진화할 수 있게 되는 도구.\n(메가한카리아스)",
+    "pluralName": "한카리아스나이트"
+  },
+  {
+    "id": "686",
+    "slug": "roseli-berry",
+    "slugLoc": "roselyeolmae",
+    "name": "로셀열매",
+    "description": "효과가 굉장한 페어리타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "로셀열매"
+  },
+  {
+    "id": "754",
+    "slug": "sablenite",
+    "slugLoc": "ggamggaminaiteu",
+    "name": "깜까미나이트",
+    "description": "깜까미가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "깜까미나이트"
+  },
+  {
+    "id": "755",
+    "slug": "altarianite",
+    "slugLoc": "pabikorinaiteu",
+    "name": "파비코리나이트",
+    "description": "파비코리가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "파비코리나이트"
+  },
+  {
+    "id": "756",
+    "slug": "galladite",
+    "slugLoc": "elreideunaiteu",
+    "name": "엘레이드나이트",
+    "description": "엘레이드가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "엘레이드나이트"
+  },
+  {
+    "id": "757",
+    "slug": "audinite",
+    "slugLoc": "dabuninaiteu",
+    "name": "다부니나이트",
+    "description": "다부니가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "다부니나이트"
+  },
+  {
+    "id": "759",
+    "slug": "sharpedonite",
+    "slugLoc": "syakeunianaiteu",
+    "name": "샤크니아나이트",
+    "description": "샤크니아가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "샤크니아나이트"
+  },
+  {
+    "id": "760",
+    "slug": "slowbronite",
+    "slugLoc": "yadorannaiteu",
+    "name": "야도란나이트",
+    "description": "야도란이 메가진화할 수 있게 되는 도구.\n가라르의 모습에게는 효과가 없다.",
+    "pluralName": "야도란나이트"
+  },
+  {
+    "id": "761",
+    "slug": "steelixite",
+    "slugLoc": "gangceoltonnaiteu",
+    "name": "강철톤나이트",
+    "description": "강철톤이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "강철톤나이트"
+  },
+  {
+    "id": "762",
+    "slug": "pidgeotite",
+    "slugLoc": "pijyontunaiteu",
+    "name": "피죤투나이트",
+    "description": "피죤투가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "피죤투나이트"
+  },
+  {
+    "id": "763",
+    "slug": "glalitite",
+    "slugLoc": "eoleumgwisinnaiteu",
+    "name": "얼음귀신나이트",
+    "description": "얼음귀신이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "얼음귀신나이트"
+  },
+  {
+    "id": "767",
+    "slug": "cameruptite",
+    "slugLoc": "pogtanaiteu",
+    "name": "폭타나이트",
+    "description": "폭타가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "폭타나이트"
+  },
+  {
+    "id": "768",
+    "slug": "lopunnite",
+    "slugLoc": "ieorobnaiteu",
+    "name": "이어롭나이트",
+    "description": "이어롭이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "이어롭나이트"
+  },
+  {
+    "id": "770",
+    "slug": "beedrillite",
+    "slugLoc": "dogcimbungnaiteu",
+    "name": "독침붕나이트",
+    "description": "독침붕이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "독침붕나이트"
+  },
+  {
+    "id": "2401",
+    "slug": "fairy-feather",
+    "slugLoc": "yojeongyigisteol",
+    "name": "요정의깃털",
+    "description": "페어리타입 기술의 위력이 1.2배가 된다.",
+    "pluralName": "요정의깃털"
+  },
+  {
+    "id": "2559",
+    "slug": "clefablite",
+    "slugLoc": "pigsinaiteu",
+    "name": "픽시나이트",
+    "description": "픽시가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "픽시나이트"
+  },
+  {
+    "id": "2560",
+    "slug": "victreebelite",
+    "slugLoc": "uceuboteunaiteu",
+    "name": "우츠보트나이트",
+    "description": "우츠보트가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "우츠보트나이트"
+  },
+  {
+    "id": "2561",
+    "slug": "starminite",
+    "slugLoc": "akuseutanaiteu",
+    "name": "아쿠스타나이트",
+    "description": "아쿠스타가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "아쿠스타나이트"
+  },
+  {
+    "id": "2562",
+    "slug": "dragoninite",
+    "slugLoc": "mangnanyongnaiteu",
+    "name": "망나뇽나이트",
+    "description": "망나뇽이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "망나뇽나이트"
+  },
+  {
+    "id": "2563",
+    "slug": "meganiumite",
+    "slugLoc": "meganiumnaiteu",
+    "name": "메가니움나이트",
+    "description": "메가니움이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "메가니움나이트"
+  },
+  {
+    "id": "2564",
+    "slug": "feraligite",
+    "slugLoc": "jangkeurodailnaiteu",
+    "name": "장크로다일나이트",
+    "description": "장크로다일이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "장크로다일나이트"
+  },
+  {
+    "id": "2565",
+    "slug": "skarmorite",
+    "slugLoc": "mujangjonaiteu",
+    "name": "무장조나이트",
+    "description": "무장조가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "무장조나이트"
+  },
+  {
+    "id": "2566",
+    "slug": "froslassite",
+    "slugLoc": "nunyeoanaiteu",
+    "name": "눈여아나이트",
+    "description": "눈여아가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "눈여아나이트"
+  },
+  {
+    "id": "2569",
+    "slug": "emboarite",
+    "slugLoc": "yeommuwangnaiteu",
+    "name": "염무왕나이트",
+    "description": "염무왕이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "염무왕나이트"
+  },
+  {
+    "id": "2570",
+    "slug": "excadrite",
+    "slugLoc": "moldeuryunaiteu",
+    "name": "몰드류나이트",
+    "description": "몰드류가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "몰드류나이트"
+  },
+  {
+    "id": "2574",
+    "slug": "chandelurite",
+    "slugLoc": "syangdelranaiteu",
+    "name": "샹델라나이트",
+    "description": "샹델라가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "샹델라나이트"
+  },
+  {
+    "id": "2575",
+    "slug": "chesnaughtite",
+    "slugLoc": "beurigaronnaiteu",
+    "name": "브리가론나이트",
+    "description": "브리가론이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "브리가론나이트"
+  },
+  {
+    "id": "2576",
+    "slug": "delphoxite",
+    "slugLoc": "mapogsinaiteu",
+    "name": "마폭시나이트",
+    "description": "마폭시가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "마폭시나이트"
+  },
+  {
+    "id": "2577",
+    "slug": "greninjite",
+    "slugLoc": "gaegulninjanaiteu",
+    "name": "개굴닌자나이트",
+    "description": "개굴닌자가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "개굴닌자나이트"
+  },
+  {
+    "id": "2579",
+    "slug": "floettite",
+    "slugLoc": "peulraestenaiteu",
+    "name": "플라엣테나이트",
+    "description": "플라엣테(영원의 꽃)가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "플라엣테나이트"
+  },
+  {
+    "id": "2583",
+    "slug": "hawluchanite",
+    "slugLoc": "rucabulnaiteu",
+    "name": "루차불나이트",
+    "description": "루차불이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "루차불나이트"
+  },
+  {
+    "id": "2585",
+    "slug": "drampanite",
+    "slugLoc": "halbirongnaiteu",
+    "name": "할비롱나이트",
+    "description": "할비롱이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "할비롱나이트"
+  },
+  {
+    "id": "2637",
+    "slug": "chimechite",
+    "slugLoc": "cireongnaiteu",
+    "name": "치렁나이트",
+    "description": "치렁이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "치렁나이트"
+  },
+  {
+    "id": "2642",
+    "slug": "golurkite",
+    "slugLoc": "golrugeunaiteu",
+    "name": "골루그나이트",
+    "description": "골루그가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "골루그나이트"
+  },
+  {
+    "id": "2643",
+    "slug": "meowsticite",
+    "slugLoc": "nyaonigseunaiteu",
+    "name": "냐오닉스나이트",
+    "description": "냐오닉스가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "냐오닉스나이트"
+  },
+  {
+    "id": "2644",
+    "slug": "crabominite",
+    "slugLoc": "modandangenaiteu",
+    "name": "모단단게나이트",
+    "description": "모단단게가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "모단단게나이트"
+  },
+  {
+    "id": "2647",
+    "slug": "scovillainite",
+    "slugLoc": "seukobilreonnaiteu",
+    "name": "스코빌런나이트",
+    "description": "스코빌런이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "스코빌런나이트"
+  },
+  {
+    "id": "2650",
+    "slug": "glimmoranite",
+    "slugLoc": "kilrapeulroreunaiteu",
+    "name": "킬라플로르나이트",
+    "description": "킬라플로르가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "킬라플로르나이트"
+  }
+]

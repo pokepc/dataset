@@ -1,0 +1,5847 @@
+[
+  {
+    "id": "1",
+    "slug": "pound",
+    "slugLoc": "pai-ji",
+    "name": "拍击",
+    "description": ""
+  },
+  {
+    "id": "2",
+    "slug": "karate-chop",
+    "slugLoc": "kong-shou-pi",
+    "name": "空手劈",
+    "description": ""
+  },
+  {
+    "id": "3",
+    "slug": "double-slap",
+    "slugLoc": "lian-huan-ba-zhang",
+    "name": "连环巴掌",
+    "description": ""
+  },
+  {
+    "id": "4",
+    "slug": "comet-punch",
+    "slugLoc": "lian-xu-quan",
+    "name": "连续拳",
+    "description": ""
+  },
+  {
+    "id": "5",
+    "slug": "mega-punch",
+    "slugLoc": "bai-wan-dun-chong-quan",
+    "name": "百万吨重拳",
+    "description": ""
+  },
+  {
+    "id": "6",
+    "slug": "pay-day",
+    "slugLoc": "ju-bao-gong",
+    "name": "聚宝功",
+    "description": ""
+  },
+  {
+    "id": "7",
+    "slug": "fire-punch",
+    "slugLoc": "huo-yan-quan",
+    "name": "火焰拳",
+    "description": "有10%的机率会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "8",
+    "slug": "ice-punch",
+    "slugLoc": "bing-dong-quan",
+    "name": "冰冻拳",
+    "description": "有10%的机率会让对手陷入冰冻状态。"
+  },
+  {
+    "id": "9",
+    "slug": "thunder-punch",
+    "slugLoc": "lei-dian-quan",
+    "name": "雷电拳",
+    "description": "有10%的机率会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "10",
+    "slug": "scratch",
+    "slugLoc": "zhua",
+    "name": "抓",
+    "description": ""
+  },
+  {
+    "id": "11",
+    "slug": "vise-grip",
+    "slugLoc": "jia-zhu",
+    "name": "夹住",
+    "description": ""
+  },
+  {
+    "id": "12",
+    "slug": "guillotine",
+    "slugLoc": "ji-luo-qian",
+    "name": "极落钳",
+    "description": "会让对手陷入昏厥。\n命中率固定为30%。"
+  },
+  {
+    "id": "13",
+    "slug": "razor-wind",
+    "slugLoc": "xuan-feng-dao",
+    "name": "旋风刀",
+    "description": ""
+  },
+  {
+    "id": "14",
+    "slug": "swords-dance",
+    "slugLoc": "jian-wu",
+    "name": "剑舞",
+    "description": "会让自己的攻击提高2阶。"
+  },
+  {
+    "id": "15",
+    "slug": "cut",
+    "slugLoc": "ju-he-pi",
+    "name": "居合劈",
+    "description": ""
+  },
+  {
+    "id": "16",
+    "slug": "gust",
+    "slugLoc": "qi-feng",
+    "name": "起风",
+    "description": ""
+  },
+  {
+    "id": "17",
+    "slug": "wing-attack",
+    "slugLoc": "chi-bang-gong-ji",
+    "name": "翅膀攻击",
+    "description": ""
+  },
+  {
+    "id": "18",
+    "slug": "whirlwind",
+    "slugLoc": "chui-fei",
+    "name": "吹飞",
+    "description": "若对手有后备宝可梦，\n则会让对手随机进行替换。"
+  },
+  {
+    "id": "19",
+    "slug": "fly",
+    "slugLoc": "fei-xiang",
+    "name": "飞翔",
+    "description": "会在使用的回合变为空中状态，\n并在下一回合进行攻击。"
+  },
+  {
+    "id": "20",
+    "slug": "bind",
+    "slugLoc": "bang-jin",
+    "name": "绑紧",
+    "description": "会让对手陷入束缚状态。"
+  },
+  {
+    "id": "21",
+    "slug": "slam",
+    "slugLoc": "shuai-da",
+    "name": "摔打",
+    "description": ""
+  },
+  {
+    "id": "22",
+    "slug": "vine-whip",
+    "slugLoc": "teng-bian",
+    "name": "藤鞭",
+    "description": ""
+  },
+  {
+    "id": "23",
+    "slug": "stomp",
+    "slugLoc": "cai-ta",
+    "name": "踩踏",
+    "description": ""
+  },
+  {
+    "id": "24",
+    "slug": "double-kick",
+    "slugLoc": "er-lian-ti",
+    "name": "二连踢",
+    "description": ""
+  },
+  {
+    "id": "25",
+    "slug": "mega-kick",
+    "slugLoc": "bai-wan-dun-chong-ti",
+    "name": "百万吨重踢",
+    "description": ""
+  },
+  {
+    "id": "26",
+    "slug": "jump-kick",
+    "slugLoc": "fei-ti",
+    "name": "飞踢",
+    "description": ""
+  },
+  {
+    "id": "27",
+    "slug": "rolling-kick",
+    "slugLoc": "hui-xuan-ti",
+    "name": "回旋踢",
+    "description": ""
+  },
+  {
+    "id": "28",
+    "slug": "sand-attack",
+    "slugLoc": "po-sha",
+    "name": "泼沙",
+    "description": ""
+  },
+  {
+    "id": "29",
+    "slug": "headbutt",
+    "slugLoc": "tou-chui",
+    "name": "头锤",
+    "description": ""
+  },
+  {
+    "id": "30",
+    "slug": "horn-attack",
+    "slugLoc": "jiao-zhuang",
+    "name": "角撞",
+    "description": ""
+  },
+  {
+    "id": "31",
+    "slug": "fury-attack",
+    "slugLoc": "luan-ji",
+    "name": "乱击",
+    "description": ""
+  },
+  {
+    "id": "32",
+    "slug": "horn-drill",
+    "slugLoc": "jiao-zuan",
+    "name": "角钻",
+    "description": "会让对手陷入昏厥。\n命中率固定为30%。"
+  },
+  {
+    "id": "33",
+    "slug": "tackle",
+    "slugLoc": "zhuang-ji",
+    "name": "撞击",
+    "description": ""
+  },
+  {
+    "id": "34",
+    "slug": "body-slam",
+    "slugLoc": "tai-shan-ya-ding",
+    "name": "泰山压顶",
+    "description": "有30%的机率会让对手陷入麻痹状态。\n对变小状态的对手的\n威力会变为2倍，且必定会命中。"
+  },
+  {
+    "id": "35",
+    "slug": "wrap",
+    "slugLoc": "jin-shu",
+    "name": "紧束",
+    "description": "会让对手陷入束缚状态。"
+  },
+  {
+    "id": "36",
+    "slug": "take-down",
+    "slugLoc": "meng-zhuang",
+    "name": "猛撞",
+    "description": ""
+  },
+  {
+    "id": "37",
+    "slug": "thrash",
+    "slugLoc": "da-nao-yi-fan",
+    "name": "大闹一番",
+    "description": "自己会变为大闹状态。"
+  },
+  {
+    "id": "38",
+    "slug": "double-edge",
+    "slugLoc": "she-shen-chong-zhuang",
+    "name": "舍身冲撞",
+    "description": "自己也会受到给予的伤害的1/3。"
+  },
+  {
+    "id": "39",
+    "slug": "tail-whip",
+    "slugLoc": "yao-wei-ba",
+    "name": "摇尾巴",
+    "description": ""
+  },
+  {
+    "id": "40",
+    "slug": "poison-sting",
+    "slugLoc": "du-zhen",
+    "name": "毒针",
+    "description": ""
+  },
+  {
+    "id": "41",
+    "slug": "twineedle",
+    "slugLoc": "shuang-zhen",
+    "name": "双针",
+    "description": ""
+  },
+  {
+    "id": "42",
+    "slug": "pin-missile",
+    "slugLoc": "fei-dan-zhen",
+    "name": "飞弹针",
+    "description": "会连续攻击2～5次。"
+  },
+  {
+    "id": "43",
+    "slug": "leer",
+    "slugLoc": "deng-yan",
+    "name": "瞪眼",
+    "description": ""
+  },
+  {
+    "id": "44",
+    "slug": "bite",
+    "slugLoc": "yao-zhu",
+    "name": "咬住",
+    "description": "有30%的机率会让对手畏缩。"
+  },
+  {
+    "id": "45",
+    "slug": "growl",
+    "slugLoc": "jiao-sheng",
+    "name": "叫声",
+    "description": ""
+  },
+  {
+    "id": "46",
+    "slug": "roar",
+    "slugLoc": "hou-jiao",
+    "name": "吼叫",
+    "description": "若对手有后备宝可梦，\n则会让对手随机进行替换。"
+  },
+  {
+    "id": "47",
+    "slug": "sing",
+    "slugLoc": "chang-ge",
+    "name": "唱歌",
+    "description": "会让对手陷入睡眠状态。"
+  },
+  {
+    "id": "48",
+    "slug": "supersonic",
+    "slugLoc": "chao-yin-bo",
+    "name": "超音波",
+    "description": ""
+  },
+  {
+    "id": "49",
+    "slug": "sonic-boom",
+    "slugLoc": "yin-bao",
+    "name": "音爆",
+    "description": ""
+  },
+  {
+    "id": "50",
+    "slug": "disable",
+    "slugLoc": "ding-shen-fa",
+    "name": "定身法",
+    "description": "在4回合内，\n会让对手陷入招式封锁状态。"
+  },
+  {
+    "id": "51",
+    "slug": "acid",
+    "slugLoc": "rong-jie-ye",
+    "name": "溶解液",
+    "description": ""
+  },
+  {
+    "id": "52",
+    "slug": "ember",
+    "slugLoc": "huo-hua",
+    "name": "火花",
+    "description": ""
+  },
+  {
+    "id": "53",
+    "slug": "flamethrower",
+    "slugLoc": "pen-she-huo-yan",
+    "name": "喷射火焰",
+    "description": "有10%的机率会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "54",
+    "slug": "mist",
+    "slugLoc": "bai-wu",
+    "name": "白雾",
+    "description": ""
+  },
+  {
+    "id": "55",
+    "slug": "water-gun",
+    "slugLoc": "shui-qiang",
+    "name": "水枪",
+    "description": ""
+  },
+  {
+    "id": "56",
+    "slug": "hydro-pump",
+    "slugLoc": "shui-pao",
+    "name": "水炮",
+    "description": ""
+  },
+  {
+    "id": "57",
+    "slug": "surf",
+    "slugLoc": "chong-lang",
+    "name": "冲浪",
+    "description": "对水中状态的对手的\n威力会变为2倍。"
+  },
+  {
+    "id": "58",
+    "slug": "ice-beam",
+    "slugLoc": "bing-dong-guang-shu",
+    "name": "冰冻光束",
+    "description": "有10%的机率会让对手陷入冰冻状态。"
+  },
+  {
+    "id": "59",
+    "slug": "blizzard",
+    "slugLoc": "bao-feng-xue",
+    "name": "暴风雪",
+    "description": "有10%的机率会让对手陷入冰冻状态。\n下雪状态时，必定会命中对手。"
+  },
+  {
+    "id": "60",
+    "slug": "psybeam",
+    "slugLoc": "huan-xiang-guang-xian",
+    "name": "幻象光线",
+    "description": ""
+  },
+  {
+    "id": "61",
+    "slug": "bubble-beam",
+    "slugLoc": "pao-mo-guang-xian",
+    "name": "泡沫光线",
+    "description": ""
+  },
+  {
+    "id": "62",
+    "slug": "aurora-beam",
+    "slugLoc": "ji-guang-shu",
+    "name": "极光束",
+    "description": ""
+  },
+  {
+    "id": "63",
+    "slug": "hyper-beam",
+    "slugLoc": "po-pi-guang-xian",
+    "name": "破坏光线",
+    "description": "在使用后的下一回合，\n自己会陷入反作用力状态。"
+  },
+  {
+    "id": "64",
+    "slug": "peck",
+    "slugLoc": "zhuo",
+    "name": "啄",
+    "description": ""
+  },
+  {
+    "id": "65",
+    "slug": "drill-peck",
+    "slugLoc": "zhuo-zuan",
+    "name": "啄钻",
+    "description": ""
+  },
+  {
+    "id": "66",
+    "slug": "submission",
+    "slugLoc": "shen-yuan-fan-gun",
+    "name": "深渊翻滚",
+    "description": ""
+  },
+  {
+    "id": "67",
+    "slug": "low-kick",
+    "slugLoc": "ti-dao",
+    "name": "踢倒",
+    "description": "对手越重，威力就会越大。\n威力为20～120。"
+  },
+  {
+    "id": "68",
+    "slug": "counter",
+    "slugLoc": "shuang-bei-feng-huan",
+    "name": "双倍奉还",
+    "description": "会将在使用的回合受到的来自对手的\n物理招式的伤害变为2倍返还给对手。"
+  },
+  {
+    "id": "69",
+    "slug": "seismic-toss",
+    "slugLoc": "di-qiu-shang-tou",
+    "name": "地球上投",
+    "description": "会给予对手的HP50伤害。"
+  },
+  {
+    "id": "70",
+    "slug": "strength",
+    "slugLoc": "guai-li",
+    "name": "怪力",
+    "description": ""
+  },
+  {
+    "id": "71",
+    "slug": "absorb",
+    "slugLoc": "xi-qu",
+    "name": "吸取",
+    "description": ""
+  },
+  {
+    "id": "72",
+    "slug": "mega-drain",
+    "slugLoc": "chao-ji-xi-qu",
+    "name": "超级吸取",
+    "description": ""
+  },
+  {
+    "id": "73",
+    "slug": "leech-seed",
+    "slugLoc": "ji-sheng-zhong-zi",
+    "name": "寄生种子",
+    "description": "会让对手陷入寄生种子状态。"
+  },
+  {
+    "id": "74",
+    "slug": "growth",
+    "slugLoc": "sheng-chang",
+    "name": "生长",
+    "description": "会让自己的攻击、特攻提高1阶。\n若为大晴天状态，则会提高2阶。"
+  },
+  {
+    "id": "75",
+    "slug": "razor-leaf",
+    "slugLoc": "fei-ye-kuai-dao",
+    "name": "飞叶快刀",
+    "description": ""
+  },
+  {
+    "id": "76",
+    "slug": "solar-beam",
+    "slugLoc": "ri-guang-shu",
+    "name": "日光束",
+    "description": "会在使用的回合变为积蓄状态，\n并在下一回合进行攻击。\n若为大晴天状态，则不会变为积蓄状态，\n并能立即进行攻击。\n若为其他天气，则威力会变为1/2。"
+  },
+  {
+    "id": "77",
+    "slug": "poison-powder",
+    "slugLoc": "du-fen",
+    "name": "毒粉",
+    "description": "会让对手陷入中毒状态。"
+  },
+  {
+    "id": "78",
+    "slug": "stun-spore",
+    "slugLoc": "ma-bi-fen",
+    "name": "麻痹粉",
+    "description": "会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "79",
+    "slug": "sleep-powder",
+    "slugLoc": "cui-mian-fen",
+    "name": "催眠粉",
+    "description": "会让对手陷入睡眠状态。"
+  },
+  {
+    "id": "80",
+    "slug": "petal-dance",
+    "slugLoc": "hua-ban-wu",
+    "name": "花瓣舞",
+    "description": "自己会变为大闹状态。"
+  },
+  {
+    "id": "81",
+    "slug": "string-shot",
+    "slugLoc": "tu-si",
+    "name": "吐丝",
+    "description": "会让对手的速度降低2阶。"
+  },
+  {
+    "id": "82",
+    "slug": "dragon-rage",
+    "slugLoc": "long-zhi-nu",
+    "name": "龙之怒",
+    "description": ""
+  },
+  {
+    "id": "83",
+    "slug": "fire-spin",
+    "slugLoc": "huo-yan-xuan-wo",
+    "name": "火焰旋涡",
+    "description": "会让对手陷入束缚状态。"
+  },
+  {
+    "id": "84",
+    "slug": "thunder-shock",
+    "slugLoc": "dian-ji",
+    "name": "电击",
+    "description": ""
+  },
+  {
+    "id": "85",
+    "slug": "thunderbolt",
+    "slugLoc": "shi-wan-fu-te",
+    "name": "十万伏特",
+    "description": "有10%的机率会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "86",
+    "slug": "thunder-wave",
+    "slugLoc": "dian-ci-bo",
+    "name": "电磁波",
+    "description": "会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "87",
+    "slug": "thunder",
+    "slugLoc": "da-lei",
+    "name": "打雷",
+    "description": "有30%的机率会让对手陷入麻痹状态。\n下雨状态时，必定会命中对手，\n也会击中空中状态的对手。"
+  },
+  {
+    "id": "88",
+    "slug": "rock-throw",
+    "slugLoc": "luo-shi",
+    "name": "落石",
+    "description": ""
+  },
+  {
+    "id": "89",
+    "slug": "earthquake",
+    "slugLoc": "di-zhen",
+    "name": "地震",
+    "description": "对地下状态的对手的威力会变为2倍。\n青草场地状态时，\n威力会变为1/2。"
+  },
+  {
+    "id": "90",
+    "slug": "fissure",
+    "slugLoc": "di-lie",
+    "name": "地裂",
+    "description": "会让对手陷入昏厥。\n命中率固定为30%。"
+  },
+  {
+    "id": "91",
+    "slug": "dig",
+    "slugLoc": "wa-dong",
+    "name": "挖洞",
+    "description": "会在使用的回合变为地下状态，\n并在下一回合进行攻击。"
+  },
+  {
+    "id": "92",
+    "slug": "toxic",
+    "slugLoc": "ju-du",
+    "name": "剧毒",
+    "description": "让对手陷入剧毒状态。\n由毒属性使用时必定会命中对手。"
+  },
+  {
+    "id": "93",
+    "slug": "confusion",
+    "slugLoc": "nian-li",
+    "name": "念力",
+    "description": ""
+  },
+  {
+    "id": "94",
+    "slug": "psychic",
+    "slugLoc": "jing-shen-qiang-nian",
+    "name": "精神强念",
+    "description": "有10%的机率会让对手的特防降低1阶。"
+  },
+  {
+    "id": "95",
+    "slug": "hypnosis",
+    "slugLoc": "cui-mian-shu",
+    "name": "催眠术",
+    "description": "会让对手陷入睡眠状态。"
+  },
+  {
+    "id": "96",
+    "slug": "meditate",
+    "slugLoc": "yu-jia-zi-shi",
+    "name": "瑜伽姿势",
+    "description": ""
+  },
+  {
+    "id": "97",
+    "slug": "agility",
+    "slugLoc": "gao-su-yi-dong",
+    "name": "高速移动",
+    "description": "会让自己的速度提高2阶。"
+  },
+  {
+    "id": "98",
+    "slug": "quick-attack",
+    "slugLoc": "dian-guang-yi-shan",
+    "name": "电光一闪",
+    "description": ""
+  },
+  {
+    "id": "99",
+    "slug": "rage",
+    "slugLoc": "fen-nu",
+    "name": "愤怒",
+    "description": ""
+  },
+  {
+    "id": "100",
+    "slug": "teleport",
+    "slugLoc": "shun-jian-yi-dong",
+    "name": "瞬间移动",
+    "description": ""
+  },
+  {
+    "id": "101",
+    "slug": "night-shade",
+    "slugLoc": "hei-ye-mo-ying",
+    "name": "黑夜魔影",
+    "description": "会给予对手的HP50伤害。"
+  },
+  {
+    "id": "102",
+    "slug": "mimic",
+    "slugLoc": "mo-fang",
+    "name": "模仿",
+    "description": ""
+  },
+  {
+    "id": "103",
+    "slug": "screech",
+    "slugLoc": "ci-er-sheng",
+    "name": "刺耳声",
+    "description": "会让对手的防御降低2阶。"
+  },
+  {
+    "id": "104",
+    "slug": "double-team",
+    "slugLoc": "ying-zi-fen-shen",
+    "name": "影子分身",
+    "description": "会让自己的闪避率提高1阶。"
+  },
+  {
+    "id": "105",
+    "slug": "recover",
+    "slugLoc": "zi-wo-zai-sheng",
+    "name": "自我再生",
+    "description": "会让自己的HP回复最大HP的1/2。"
+  },
+  {
+    "id": "106",
+    "slug": "harden",
+    "slugLoc": "bian-ying",
+    "name": "变硬",
+    "description": ""
+  },
+  {
+    "id": "107",
+    "slug": "minimize",
+    "slugLoc": "bian-xiao",
+    "name": "变小",
+    "description": "会让自己的闪避率提高2阶。\n自己会变为变小状态。"
+  },
+  {
+    "id": "108",
+    "slug": "smokescreen",
+    "slugLoc": "yan-mu",
+    "name": "烟幕",
+    "description": ""
+  },
+  {
+    "id": "109",
+    "slug": "confuse-ray",
+    "slugLoc": "qi-yi-zhi-guang",
+    "name": "奇异之光",
+    "description": "会让对手陷入混乱状态。"
+  },
+  {
+    "id": "110",
+    "slug": "withdraw",
+    "slugLoc": "suo-ru-ke-zhong",
+    "name": "缩入壳中",
+    "description": ""
+  },
+  {
+    "id": "111",
+    "slug": "defense-curl",
+    "slugLoc": "bian-yuan",
+    "name": "变圆",
+    "description": ""
+  },
+  {
+    "id": "112",
+    "slug": "barrier",
+    "slugLoc": "ping-zhang",
+    "name": "屏障",
+    "description": ""
+  },
+  {
+    "id": "113",
+    "slug": "light-screen",
+    "slugLoc": "guang-qiang",
+    "name": "光墙",
+    "description": "在5回合内，\n会让我方场地变为光墙状态。"
+  },
+  {
+    "id": "114",
+    "slug": "haze",
+    "slugLoc": "hei-wu",
+    "name": "黑雾",
+    "description": "会消除整个场地的能力变化。"
+  },
+  {
+    "id": "115",
+    "slug": "reflect",
+    "slugLoc": "fan-she-bi",
+    "name": "反射壁",
+    "description": "在5回合内，\n会让我方场地变为反射壁状态。"
+  },
+  {
+    "id": "116",
+    "slug": "focus-energy",
+    "slugLoc": "ju-qi",
+    "name": "聚气",
+    "description": "自己会变为易中要害状态+2。"
+  },
+  {
+    "id": "117",
+    "slug": "bide",
+    "slugLoc": "ren-nai",
+    "name": "忍耐",
+    "description": ""
+  },
+  {
+    "id": "118",
+    "slug": "metronome",
+    "slugLoc": "hui-zhi",
+    "name": "挥指",
+    "description": ""
+  },
+  {
+    "id": "119",
+    "slug": "mirror-move",
+    "slugLoc": "ying-wu-xue-she",
+    "name": "鹦鹉学舌",
+    "description": ""
+  },
+  {
+    "id": "120",
+    "slug": "self-destruct",
+    "slugLoc": "yu-shi-ju-sui",
+    "name": "玉石俱碎",
+    "description": "使用后自己会陷入昏厥。"
+  },
+  {
+    "id": "121",
+    "slug": "egg-bomb",
+    "slugLoc": "zha-dan",
+    "name": "炸蛋",
+    "description": ""
+  },
+  {
+    "id": "122",
+    "slug": "lick",
+    "slugLoc": "she-tian",
+    "name": "舌舔",
+    "description": ""
+  },
+  {
+    "id": "123",
+    "slug": "smog",
+    "slugLoc": "zhuo-wu",
+    "name": "浊雾",
+    "description": ""
+  },
+  {
+    "id": "124",
+    "slug": "sludge",
+    "slugLoc": "wu-ni-gong-ji",
+    "name": "污泥攻击",
+    "description": ""
+  },
+  {
+    "id": "125",
+    "slug": "bone-club",
+    "slugLoc": "gu-bang",
+    "name": "骨棒",
+    "description": ""
+  },
+  {
+    "id": "126",
+    "slug": "fire-blast",
+    "slugLoc": "da-zi-bao-yan",
+    "name": "大字爆炎",
+    "description": "有10%的机率会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "127",
+    "slug": "waterfall",
+    "slugLoc": "pan-pu",
+    "name": "攀瀑",
+    "description": "有20%的机率会让对手畏缩。"
+  },
+  {
+    "id": "128",
+    "slug": "clamp",
+    "slugLoc": "bei-ke-jia-ji",
+    "name": "贝壳夹击",
+    "description": ""
+  },
+  {
+    "id": "129",
+    "slug": "swift",
+    "slugLoc": "gao-su-xing-xing",
+    "name": "高速星星",
+    "description": ""
+  },
+  {
+    "id": "130",
+    "slug": "skull-bash",
+    "slugLoc": "huo-jian-tou-chui",
+    "name": "火箭头锤",
+    "description": ""
+  },
+  {
+    "id": "131",
+    "slug": "spike-cannon",
+    "slugLoc": "jian-ci-jia-nong-pao",
+    "name": "尖刺加农炮",
+    "description": ""
+  },
+  {
+    "id": "132",
+    "slug": "constrict",
+    "slugLoc": "chan-rao",
+    "name": "缠绕",
+    "description": ""
+  },
+  {
+    "id": "133",
+    "slug": "amnesia",
+    "slugLoc": "shun-jian-shi-yi",
+    "name": "瞬间失忆",
+    "description": "会让自己的特防提高2阶。"
+  },
+  {
+    "id": "134",
+    "slug": "kinesis",
+    "slugLoc": "zhe-wan-tang-chi",
+    "name": "折弯汤匙",
+    "description": ""
+  },
+  {
+    "id": "135",
+    "slug": "soft-boiled",
+    "slugLoc": "sheng-dan",
+    "name": "生蛋",
+    "description": "会让自己的HP回复最大HP的1/2。"
+  },
+  {
+    "id": "136",
+    "slug": "high-jump-kick",
+    "slugLoc": "fei-xi-ti",
+    "name": "飞膝踢",
+    "description": "落空或失败时，会受到自己\n最大HP的1/2的伤害。"
+  },
+  {
+    "id": "137",
+    "slug": "glare",
+    "slugLoc": "da-she-deng-yan",
+    "name": "大蛇瞪眼",
+    "description": "会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "138",
+    "slug": "dream-eater",
+    "slugLoc": "shi-meng",
+    "name": "食梦",
+    "description": ""
+  },
+  {
+    "id": "139",
+    "slug": "poison-gas",
+    "slugLoc": "du-wa-si",
+    "name": "毒瓦斯",
+    "description": ""
+  },
+  {
+    "id": "140",
+    "slug": "barrage",
+    "slugLoc": "tou-qiu",
+    "name": "投球",
+    "description": ""
+  },
+  {
+    "id": "141",
+    "slug": "leech-life",
+    "slugLoc": "ji-qu",
+    "name": "汲取",
+    "description": "会让自己的HP回复\n给予对手伤害的1/2。"
+  },
+  {
+    "id": "142",
+    "slug": "lovely-kiss",
+    "slugLoc": "e-mo-zhi-wen",
+    "name": "恶魔之吻",
+    "description": ""
+  },
+  {
+    "id": "143",
+    "slug": "sky-attack",
+    "slugLoc": "shen-niao-meng-ji",
+    "name": "神鸟猛击",
+    "description": "会在使用的回合变为积蓄状态，\n并在下一回合进行攻击。\n有30%的机率会让对手畏缩。\n会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "144",
+    "slug": "transform",
+    "slugLoc": "bian-shen",
+    "name": "变身",
+    "description": "会变身为和对手相同的宝可梦。\nHP以外的能力也会变为相同。"
+  },
+  {
+    "id": "145",
+    "slug": "bubble",
+    "slugLoc": "pao-mo",
+    "name": "泡沫",
+    "description": ""
+  },
+  {
+    "id": "146",
+    "slug": "dizzy-punch",
+    "slugLoc": "mi-hun-quan",
+    "name": "迷昏拳",
+    "description": ""
+  },
+  {
+    "id": "147",
+    "slug": "spore",
+    "slugLoc": "mo-gu-bao-zi",
+    "name": "蘑菇孢子",
+    "description": "会让对手陷入睡眠状态。"
+  },
+  {
+    "id": "148",
+    "slug": "flash",
+    "slugLoc": "shan-guang",
+    "name": "闪光",
+    "description": ""
+  },
+  {
+    "id": "149",
+    "slug": "psywave",
+    "slugLoc": "jing-shen-bo",
+    "name": "精神波",
+    "description": ""
+  },
+  {
+    "id": "150",
+    "slug": "splash",
+    "slugLoc": "yue-qi",
+    "name": "跃起",
+    "description": ""
+  },
+  {
+    "id": "151",
+    "slug": "acid-armor",
+    "slugLoc": "rong-hua",
+    "name": "溶化",
+    "description": "会让自己的防御提高2阶。"
+  },
+  {
+    "id": "152",
+    "slug": "crabhammer",
+    "slugLoc": "xie-qian-chui",
+    "name": "蟹钳锤",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "153",
+    "slug": "explosion",
+    "slugLoc": "da-bao-zha",
+    "name": "大爆炸",
+    "description": "使用后自己会陷入昏厥。"
+  },
+  {
+    "id": "154",
+    "slug": "fury-swipes",
+    "slugLoc": "luan-zhua",
+    "name": "乱抓",
+    "description": ""
+  },
+  {
+    "id": "155",
+    "slug": "bonemerang",
+    "slugLoc": "gu-tou-hui-li-biao",
+    "name": "骨头回力镖",
+    "description": ""
+  },
+  {
+    "id": "156",
+    "slug": "rest",
+    "slugLoc": "shui-jue",
+    "name": "睡觉",
+    "description": "会让自己的HP完全回复，且会治愈异常状态。\n在2回合内会陷入睡眠状态。\nHP全满时会失败。"
+  },
+  {
+    "id": "157",
+    "slug": "rock-slide",
+    "slugLoc": "yan-beng",
+    "name": "岩崩",
+    "description": "有30%的机率会让对手畏缩。"
+  },
+  {
+    "id": "158",
+    "slug": "hyper-fang",
+    "slugLoc": "zhong-jie-men-ya",
+    "name": "终结门牙",
+    "description": ""
+  },
+  {
+    "id": "159",
+    "slug": "sharpen",
+    "slugLoc": "leng-jiao-hua",
+    "name": "棱角化",
+    "description": ""
+  },
+  {
+    "id": "160",
+    "slug": "conversion",
+    "slugLoc": "wen-li",
+    "name": "纹理",
+    "description": ""
+  },
+  {
+    "id": "161",
+    "slug": "tri-attack",
+    "slugLoc": "san-chong-gong-ji",
+    "name": "三重攻击",
+    "description": "有20%的机率会让对手陷入\n麻痹、灼伤、冰冻之中的一种状态。"
+  },
+  {
+    "id": "162",
+    "slug": "super-fang",
+    "slugLoc": "fen-nu-men-ya",
+    "name": "愤怒门牙",
+    "description": "会给予对手的剩余HP的1/2的伤害。\n若剩余HP为1，则会给予1伤害。"
+  },
+  {
+    "id": "163",
+    "slug": "slash",
+    "slugLoc": "pi-kai",
+    "name": "劈开",
+    "description": ""
+  },
+  {
+    "id": "164",
+    "slug": "substitute",
+    "slugLoc": "ti-shen",
+    "name": "替身",
+    "description": "会让自己的HP减少最大HP的1/4\n并制造替身。\n替身会代替自己承受招式。\n受到相当于最大HP的1/4的伤害时会消失。"
+  },
+  {
+    "id": "165",
+    "slug": "struggle",
+    "slugLoc": "zheng-zha",
+    "name": "挣扎",
+    "description": ""
+  },
+  {
+    "id": "166",
+    "slug": "sketch",
+    "slugLoc": "xie-sheng",
+    "name": "写生",
+    "description": ""
+  },
+  {
+    "id": "167",
+    "slug": "triple-kick",
+    "slugLoc": "san-lian-ti",
+    "name": "三连踢",
+    "description": ""
+  },
+  {
+    "id": "168",
+    "slug": "thief",
+    "slugLoc": "xiao-tou",
+    "name": "小偷",
+    "description": "若自己没有携带道具，\n则会夺走对手的道具。"
+  },
+  {
+    "id": "169",
+    "slug": "spider-web",
+    "slugLoc": "zhu-wang",
+    "name": "蛛网",
+    "description": ""
+  },
+  {
+    "id": "170",
+    "slug": "mind-reader",
+    "slugLoc": "xin-zhi-yan",
+    "name": "心之眼",
+    "description": ""
+  },
+  {
+    "id": "171",
+    "slug": "nightmare",
+    "slugLoc": "e-meng",
+    "name": "恶梦",
+    "description": ""
+  },
+  {
+    "id": "172",
+    "slug": "flame-wheel",
+    "slugLoc": "huo-yan-lun",
+    "name": "火焰轮",
+    "description": ""
+  },
+  {
+    "id": "173",
+    "slug": "snore",
+    "slugLoc": "da-han",
+    "name": "打鼾",
+    "description": "若自己是睡眠状态，则能使用。\n有30%的机率会让对手畏缩。"
+  },
+  {
+    "id": "174",
+    "slug": "curse",
+    "slugLoc": "zhou-shu",
+    "name": "咒术",
+    "description": "会让自己的HP减少最大HP的1/2，\n让对手陷入咒术状态。"
+  },
+  {
+    "id": "175",
+    "slug": "flail",
+    "slugLoc": "zhua-kuang",
+    "name": "抓狂",
+    "description": "自己的剩余HP越少，威力就会越大。\n威力为20～200。"
+  },
+  {
+    "id": "176",
+    "slug": "conversion-2",
+    "slugLoc": "wen-li-2",
+    "name": "纹理２",
+    "description": ""
+  },
+  {
+    "id": "177",
+    "slug": "aeroblast",
+    "slugLoc": "qi-xuan-gong-ji",
+    "name": "气旋攻击",
+    "description": ""
+  },
+  {
+    "id": "178",
+    "slug": "cotton-spore",
+    "slugLoc": "mian-bao-zi",
+    "name": "棉孢子",
+    "description": "会让对手的速度降低2阶。"
+  },
+  {
+    "id": "179",
+    "slug": "reversal",
+    "slugLoc": "jue-chu-feng-sheng",
+    "name": "绝处逢生",
+    "description": "自己的剩余HP越少，威力就会越大。\n威力为20～200。"
+  },
+  {
+    "id": "180",
+    "slug": "spite",
+    "slugLoc": "yuan-hen",
+    "name": "怨恨",
+    "description": "会让对手最后使用的招式的PP减少4。"
+  },
+  {
+    "id": "181",
+    "slug": "powder-snow",
+    "slugLoc": "xi-xue",
+    "name": "细雪",
+    "description": ""
+  },
+  {
+    "id": "182",
+    "slug": "protect",
+    "slugLoc": "shou-zhu",
+    "name": "守住",
+    "description": "在使用的回合内，会在对手的招式中守护自己。\n连续使用时，成功率会变为上次使用时的1/3。"
+  },
+  {
+    "id": "183",
+    "slug": "mach-punch",
+    "slugLoc": "yin-su-quan",
+    "name": "音速拳",
+    "description": ""
+  },
+  {
+    "id": "184",
+    "slug": "scary-face",
+    "slugLoc": "ke-pa-mian-kong",
+    "name": "可怕面孔",
+    "description": "会让对手的速度降低2阶。"
+  },
+  {
+    "id": "185",
+    "slug": "feint-attack",
+    "slugLoc": "chu-qi-yi-ji",
+    "name": "出奇一击",
+    "description": ""
+  },
+  {
+    "id": "186",
+    "slug": "sweet-kiss",
+    "slugLoc": "tian-shi-zhi-wen",
+    "name": "天使之吻",
+    "description": "会让对手陷入混乱状态。"
+  },
+  {
+    "id": "187",
+    "slug": "belly-drum",
+    "slugLoc": "fu-gu",
+    "name": "腹鼓",
+    "description": "会让自己的HP减少最大HP的1/2，\n让攻击提高至第6阶。\n若剩余HP不足，则会失败。"
+  },
+  {
+    "id": "188",
+    "slug": "sludge-bomb",
+    "slugLoc": "wu-ni-zha-dan",
+    "name": "污泥炸弹",
+    "description": "有30%的机率会让对手陷入中毒状态。"
+  },
+  {
+    "id": "189",
+    "slug": "mud-slap",
+    "slugLoc": "zhi-ni",
+    "name": "掷泥",
+    "description": "会让对手的命中率降低1阶。"
+  },
+  {
+    "id": "190",
+    "slug": "octazooka",
+    "slugLoc": "zhang-yu-tong-pao",
+    "name": "章鱼桶炮",
+    "description": ""
+  },
+  {
+    "id": "191",
+    "slug": "spikes",
+    "slugLoc": "sa-ling",
+    "name": "撒菱",
+    "description": "会让对手的场地变为撒菱状态。"
+  },
+  {
+    "id": "192",
+    "slug": "zap-cannon",
+    "slugLoc": "dian-ci-pao",
+    "name": "电磁炮",
+    "description": "会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "193",
+    "slug": "foresight",
+    "slugLoc": "shi-po",
+    "name": "识破",
+    "description": ""
+  },
+  {
+    "id": "194",
+    "slug": "destiny-bond",
+    "slugLoc": "tong-ming",
+    "name": "同命",
+    "description": "自己会变为同命状态。\n连续使用时会失败。"
+  },
+  {
+    "id": "195",
+    "slug": "perish-song",
+    "slugLoc": "zhong-yan-zhi-ge",
+    "name": "终焉之歌",
+    "description": "会让场上的所有宝可梦\n都陷入终焉状态。"
+  },
+  {
+    "id": "196",
+    "slug": "icy-wind",
+    "slugLoc": "bing-dong-zhi-feng",
+    "name": "冰冻之风",
+    "description": "会让对手的速度降低1阶。"
+  },
+  {
+    "id": "197",
+    "slug": "detect",
+    "slugLoc": "kan-chuan",
+    "name": "看穿",
+    "description": "在使用的回合内，会在对手的招式中守护自己。\n连续使用时，成功率会变为上次使用时的1/3。"
+  },
+  {
+    "id": "198",
+    "slug": "bone-rush",
+    "slugLoc": "gu-bang-luan-da",
+    "name": "骨棒乱打",
+    "description": "会连续攻击2～5次。"
+  },
+  {
+    "id": "199",
+    "slug": "lock-on",
+    "slugLoc": "suo-ding",
+    "name": "锁定",
+    "description": "自己会变为锁定状态。"
+  },
+  {
+    "id": "200",
+    "slug": "outrage",
+    "slugLoc": "ni-lin",
+    "name": "逆鳞",
+    "description": "自己会变为大闹状态。"
+  },
+  {
+    "id": "201",
+    "slug": "sandstorm",
+    "slugLoc": "sha-bao",
+    "name": "沙暴",
+    "description": "在5回合内会变为沙暴状态。"
+  },
+  {
+    "id": "202",
+    "slug": "giga-drain",
+    "slugLoc": "zhong-ji-xi-qu",
+    "name": "终极吸取",
+    "description": "会让自己的HP回复\n给予对手伤害的1/2。"
+  },
+  {
+    "id": "203",
+    "slug": "endure",
+    "slugLoc": "ting-zhu",
+    "name": "挺住",
+    "description": "在使用的回合内，\n受到会导致昏厥的招式的伤害时，\n会剩下1HP并撑过去。\n连续使用时，成功率会变为上次使用时的1/3。"
+  },
+  {
+    "id": "204",
+    "slug": "charm",
+    "slugLoc": "sa-jiao",
+    "name": "撒娇",
+    "description": "会让对手的攻击降低2阶。"
+  },
+  {
+    "id": "205",
+    "slug": "rollout",
+    "slugLoc": "gun-dong",
+    "name": "滚动",
+    "description": ""
+  },
+  {
+    "id": "206",
+    "slug": "false-swipe",
+    "slugLoc": "dian-dao-wei-zhi",
+    "name": "点到为止",
+    "description": ""
+  },
+  {
+    "id": "207",
+    "slug": "swagger",
+    "slugLoc": "xu-zhang-sheng-shi",
+    "name": "虚张声势",
+    "description": "会让对手的攻击提高2阶\n并陷入混乱状态。"
+  },
+  {
+    "id": "208",
+    "slug": "milk-drink",
+    "slugLoc": "he-niu-nai",
+    "name": "喝牛奶",
+    "description": "会让自己的HP回复最大HP的1/2。"
+  },
+  {
+    "id": "209",
+    "slug": "spark",
+    "slugLoc": "dian-guang",
+    "name": "电光",
+    "description": ""
+  },
+  {
+    "id": "210",
+    "slug": "fury-cutter",
+    "slugLoc": "lian-zhan",
+    "name": "连斩",
+    "description": ""
+  },
+  {
+    "id": "211",
+    "slug": "steel-wing",
+    "slugLoc": "gang-yi",
+    "name": "钢翼",
+    "description": "有10%的机率会让自己的防御提高1阶。"
+  },
+  {
+    "id": "212",
+    "slug": "mean-look",
+    "slugLoc": "hei-se-mu-guang",
+    "name": "黑色目光",
+    "description": "会让对手陷入无法逃走状态。"
+  },
+  {
+    "id": "213",
+    "slug": "attract",
+    "slugLoc": "mi-ren",
+    "name": "迷人",
+    "description": "会让对手陷入着迷状态。\n对同性、性别不明的对手使用会失败。"
+  },
+  {
+    "id": "214",
+    "slug": "sleep-talk",
+    "slugLoc": "meng-hua",
+    "name": "梦话",
+    "description": "若自己是睡眠状态，则能使用。\n会从自己已学会的其他招式中\n使用一种招式。"
+  },
+  {
+    "id": "215",
+    "slug": "heal-bell",
+    "slugLoc": "zhi-yu-ling-sheng",
+    "name": "治愈铃声",
+    "description": "治愈自己和同伴以及同行队伍中\n所有宝可梦的异常状态。"
+  },
+  {
+    "id": "216",
+    "slug": "return",
+    "slugLoc": "bao-en",
+    "name": "报恩",
+    "description": ""
+  },
+  {
+    "id": "217",
+    "slug": "present",
+    "slugLoc": "li-wu",
+    "name": "礼物",
+    "description": ""
+  },
+  {
+    "id": "218",
+    "slug": "frustration",
+    "slugLoc": "qian-nu",
+    "name": "迁怒",
+    "description": ""
+  },
+  {
+    "id": "219",
+    "slug": "safeguard",
+    "slugLoc": "shen-mi-shou-hu",
+    "name": "神秘守护",
+    "description": "在5回合内，\n会让我方场地变为神秘守护状态。"
+  },
+  {
+    "id": "220",
+    "slug": "pain-split",
+    "slugLoc": "fen-dan-tong-chu",
+    "name": "分担痛楚",
+    "description": "会将自己和对手的剩余HP相加，\n并各分1/2。"
+  },
+  {
+    "id": "221",
+    "slug": "sacred-fire",
+    "slugLoc": "shen-sheng-zhi-huo",
+    "name": "神圣之火",
+    "description": ""
+  },
+  {
+    "id": "222",
+    "slug": "magnitude",
+    "slugLoc": "zhen-ji",
+    "name": "震级",
+    "description": ""
+  },
+  {
+    "id": "223",
+    "slug": "dynamic-punch",
+    "slugLoc": "bao-lie-quan",
+    "name": "爆裂拳",
+    "description": "会让对手陷入混乱状态。"
+  },
+  {
+    "id": "224",
+    "slug": "megahorn",
+    "slugLoc": "chao-ji-jiao-ji",
+    "name": "超级角击",
+    "description": ""
+  },
+  {
+    "id": "225",
+    "slug": "dragon-breath",
+    "slugLoc": "long-xi",
+    "name": "龙息",
+    "description": ""
+  },
+  {
+    "id": "226",
+    "slug": "baton-pass",
+    "slugLoc": "jie-bang",
+    "name": "接棒",
+    "description": "会和同行队伍中的其他宝可梦进行替换。\n该宝可梦会继承能力变化、替身等。"
+  },
+  {
+    "id": "227",
+    "slug": "encore",
+    "slugLoc": "zai-lai-yi-ci",
+    "name": "再来一次",
+    "description": "会让对手陷入再来一次状态。"
+  },
+  {
+    "id": "228",
+    "slug": "pursuit",
+    "slugLoc": "zhui-da",
+    "name": "追打",
+    "description": ""
+  },
+  {
+    "id": "229",
+    "slug": "rapid-spin",
+    "slugLoc": "gao-su-xuan-zhuan",
+    "name": "高速旋转",
+    "description": "会解除自己的束缚、寄生种子状态，\n以及我方场地的撒菱、毒菱、\n黏黏网、隐形岩状态。\n会让自己的速度提高1阶。"
+  },
+  {
+    "id": "230",
+    "slug": "sweet-scent",
+    "slugLoc": "tian-tian-xiang-qi",
+    "name": "甜甜香气",
+    "description": "会让对手的闪避率降低2阶。"
+  },
+  {
+    "id": "231",
+    "slug": "iron-tail",
+    "slugLoc": "tie-wei",
+    "name": "铁尾",
+    "description": "有30%的机率会让对手的防御降低1阶。"
+  },
+  {
+    "id": "232",
+    "slug": "metal-claw",
+    "slugLoc": "jin-shu-zhua",
+    "name": "金属爪",
+    "description": ""
+  },
+  {
+    "id": "233",
+    "slug": "vital-throw",
+    "slugLoc": "jie-li-shuai",
+    "name": "借力摔",
+    "description": ""
+  },
+  {
+    "id": "234",
+    "slug": "morning-sun",
+    "slugLoc": "chen-guang",
+    "name": "晨光",
+    "description": "会让自己的HP回复最大HP的1/2。\n若为大晴天状态则会回复2/3。\n若为其他天气则会回复1/4。"
+  },
+  {
+    "id": "235",
+    "slug": "synthesis",
+    "slugLoc": "guang-he-zuo-yong",
+    "name": "光合作用",
+    "description": "会让自己的HP回复最大HP的1/2。\n若为大晴天状态则会回复2/3。\n若为其他天气则会回复1/4。"
+  },
+  {
+    "id": "236",
+    "slug": "moonlight",
+    "slugLoc": "yue-guang",
+    "name": "月光",
+    "description": "会让自己的HP回复最大HP的1/2。\n若为大晴天状态则会回复2/3。\n若为其他天气则会回复1/4。"
+  },
+  {
+    "id": "237",
+    "slug": "hidden-power",
+    "slugLoc": "jue-xing-li-liang",
+    "name": "觉醒力量",
+    "description": ""
+  },
+  {
+    "id": "238",
+    "slug": "cross-chop",
+    "slugLoc": "shi-zi-pi",
+    "name": "十字劈",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "239",
+    "slug": "twister",
+    "slugLoc": "long-juan-feng",
+    "name": "龙卷风",
+    "description": ""
+  },
+  {
+    "id": "240",
+    "slug": "rain-dance",
+    "slugLoc": "qiu-yu",
+    "name": "求雨",
+    "description": "在5回合内会变为下雨状态。"
+  },
+  {
+    "id": "241",
+    "slug": "sunny-day",
+    "slugLoc": "da-qing-tian",
+    "name": "大晴天",
+    "description": "在5回合内会变为大晴天状态。"
+  },
+  {
+    "id": "242",
+    "slug": "crunch",
+    "slugLoc": "yao-sui",
+    "name": "咬碎",
+    "description": "有20%的机率会让对手的防御降低1阶。"
+  },
+  {
+    "id": "243",
+    "slug": "mirror-coat",
+    "slugLoc": "jing-mian-fan-she",
+    "name": "镜面反射",
+    "description": "会将在使用的回合受到的来自对手的\n特殊招式的伤害变为2倍返还给对手。"
+  },
+  {
+    "id": "244",
+    "slug": "psych-up",
+    "slugLoc": "zi-wo-an-shi",
+    "name": "自我暗示",
+    "description": "会让自己获得与对手相同的能力变化。"
+  },
+  {
+    "id": "245",
+    "slug": "extreme-speed",
+    "slugLoc": "shen-su",
+    "name": "神速",
+    "description": ""
+  },
+  {
+    "id": "246",
+    "slug": "ancient-power",
+    "slugLoc": "yuan-shi-zhi-li",
+    "name": "原始之力",
+    "description": "有10%的机率会让自己的\n攻击、防御、特攻、特防、速度提高1阶。"
+  },
+  {
+    "id": "247",
+    "slug": "shadow-ball",
+    "slugLoc": "an-ying-qiu",
+    "name": "暗影球",
+    "description": "有20%的机率会让对手的特防降低1阶。"
+  },
+  {
+    "id": "248",
+    "slug": "future-sight",
+    "slugLoc": "yu-zhi-wei-lai",
+    "name": "预知未来",
+    "description": "会让对手所在的位置\n变为未来攻击状态。"
+  },
+  {
+    "id": "249",
+    "slug": "rock-smash",
+    "slugLoc": "sui-yan",
+    "name": "碎岩",
+    "description": ""
+  },
+  {
+    "id": "250",
+    "slug": "whirlpool",
+    "slugLoc": "chao-xuan",
+    "name": "潮旋",
+    "description": "会让对手陷入束缚状态。\n对水中状态的对手的\n威力会变为2倍。"
+  },
+  {
+    "id": "251",
+    "slug": "beat-up",
+    "slugLoc": "wei-gong",
+    "name": "围攻",
+    "description": "会攻击对手，攻击次数为同行队伍中的宝可梦数量。\n不计算昏厥和异常状态的宝可梦。\n招式的威力会以同行宝可梦的攻击来计算。"
+  },
+  {
+    "id": "252",
+    "slug": "fake-out",
+    "slugLoc": "ji-zhang-qi-xi",
+    "name": "击掌奇袭",
+    "description": "会让对手畏缩。\n若不是出场后第一个使出的招式，\n则会失败。"
+  },
+  {
+    "id": "253",
+    "slug": "uproar",
+    "slugLoc": "chao-nao",
+    "name": "吵闹",
+    "description": "自己会变为吵闹状态。"
+  },
+  {
+    "id": "254",
+    "slug": "stockpile",
+    "slugLoc": "xu-li",
+    "name": "蓄力",
+    "description": "会让自己的防御、特防提高1阶。\n会让蓄力状态增加1。\n最多能蓄力3次。"
+  },
+  {
+    "id": "255",
+    "slug": "spit-up",
+    "slugLoc": "pen-chu",
+    "name": "喷出",
+    "description": "蓄力状态的数值越大，威力就会越大。\n威力为100～300。\n若不是蓄力状态，则此招式会失败。"
+  },
+  {
+    "id": "256",
+    "slug": "swallow",
+    "slugLoc": "tun-xia",
+    "name": "吞下",
+    "description": "蓄力状态的数值越大，就会让HP回复得越多。\n1次则会回复最大HP的1/4。\n2次则会回复最大HP的1/2。\n3次则会完全回复。\n若不是蓄力状态，则此招式会失败。"
+  },
+  {
+    "id": "257",
+    "slug": "heat-wave",
+    "slugLoc": "re-feng",
+    "name": "热风",
+    "description": "有10%的机率会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "258",
+    "slug": "hail",
+    "slugLoc": "bing-bao",
+    "name": "冰雹",
+    "description": ""
+  },
+  {
+    "id": "259",
+    "slug": "torment",
+    "slugLoc": "wu-li-qu-nao",
+    "name": "无理取闹",
+    "description": "会让对手陷入无法连续状态。"
+  },
+  {
+    "id": "260",
+    "slug": "flatter",
+    "slugLoc": "chui-peng",
+    "name": "吹捧",
+    "description": "会让对手的特攻提高1阶\n并陷入混乱状态。"
+  },
+  {
+    "id": "261",
+    "slug": "will-o-wisp",
+    "slugLoc": "lin-huo",
+    "name": "磷火",
+    "description": "会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "262",
+    "slug": "memento",
+    "slugLoc": "lin-bie-li-wu",
+    "name": "临别礼物",
+    "description": "自己会陷入昏厥，\n但会让对手的攻击、特攻降低2阶。"
+  },
+  {
+    "id": "263",
+    "slug": "facade",
+    "slugLoc": "ying-cheng",
+    "name": "硬撑",
+    "description": "若自己是中毒、剧毒、麻痹、灼伤状态\n之中的一种状态，则威力会变为2倍。\n会无视灼伤状态造成的\n物理招式的伤害减半的效果。"
+  },
+  {
+    "id": "264",
+    "slug": "focus-punch",
+    "slugLoc": "zhen-qi-quan",
+    "name": "真气拳",
+    "description": "若在自己使出招式的回合\n先受到来自对手的招式的伤害，则会失败。"
+  },
+  {
+    "id": "265",
+    "slug": "smelling-salts",
+    "slugLoc": "qing-xing",
+    "name": "清醒",
+    "description": ""
+  },
+  {
+    "id": "266",
+    "slug": "follow-me",
+    "slugLoc": "kan-wo-ma",
+    "name": "看我嘛",
+    "description": "对手的招式全部会由自己承受。\n只对需要选择对手的招式有效。"
+  },
+  {
+    "id": "267",
+    "slug": "nature-power",
+    "slugLoc": "zi-ran-zhi-li",
+    "name": "自然之力",
+    "description": ""
+  },
+  {
+    "id": "268",
+    "slug": "charge",
+    "slugLoc": "chong-dian",
+    "name": "充电",
+    "description": "会让自己的特防提高1阶。\n会变为电属性威力提高状态。"
+  },
+  {
+    "id": "269",
+    "slug": "taunt",
+    "slugLoc": "tiao-xin",
+    "name": "挑衅",
+    "description": "会让对手陷入挑衅状态。"
+  },
+  {
+    "id": "270",
+    "slug": "helping-hand",
+    "slugLoc": "bang-zhu",
+    "name": "帮助",
+    "description": "在使用的回合内，\n会让同伴的招式威力变为1.5倍。"
+  },
+  {
+    "id": "271",
+    "slug": "trick",
+    "slugLoc": "xi-fa",
+    "name": "戏法",
+    "description": "会将对手和自己携带的道具互换。"
+  },
+  {
+    "id": "272",
+    "slug": "role-play",
+    "slugLoc": "ban-yan",
+    "name": "扮演",
+    "description": "会让自己的特性变为和对手相同。"
+  },
+  {
+    "id": "273",
+    "slug": "wish",
+    "slugLoc": "qi-yuan",
+    "name": "祈愿",
+    "description": "会让自己所在的位置\n变为祈愿状态。"
+  },
+  {
+    "id": "274",
+    "slug": "assist",
+    "slugLoc": "jie-zhu",
+    "name": "借助",
+    "description": ""
+  },
+  {
+    "id": "275",
+    "slug": "ingrain",
+    "slugLoc": "zha-gen",
+    "name": "扎根",
+    "description": "自己会变为扎根状态。"
+  },
+  {
+    "id": "276",
+    "slug": "superpower",
+    "slugLoc": "man-li",
+    "name": "蛮力",
+    "description": "会让自己的攻击、防御降低1阶。"
+  },
+  {
+    "id": "277",
+    "slug": "magic-coat",
+    "slugLoc": "mo-fa-fan-she",
+    "name": "魔法反射",
+    "description": ""
+  },
+  {
+    "id": "278",
+    "slug": "recycle",
+    "slugLoc": "hui-shou-li-yong",
+    "name": "回收利用",
+    "description": "会复原自己最后消耗的道具\n并再次携带。"
+  },
+  {
+    "id": "279",
+    "slug": "revenge",
+    "slugLoc": "bao-fu",
+    "name": "报复",
+    "description": ""
+  },
+  {
+    "id": "280",
+    "slug": "brick-break",
+    "slugLoc": "pi-wa",
+    "name": "劈瓦",
+    "description": "会解除对手场地的光墙、反射壁、\n极光幕状态并进行攻击。"
+  },
+  {
+    "id": "281",
+    "slug": "yawn",
+    "slugLoc": "ha-qian",
+    "name": "哈欠",
+    "description": "会让对手陷入瞌睡状态。\n必定会命中对手。"
+  },
+  {
+    "id": "282",
+    "slug": "knock-off",
+    "slugLoc": "pai-luo",
+    "name": "拍落",
+    "description": "对手有携带道具时，\n威力会变为1.5倍。\n会让对手失去道具。"
+  },
+  {
+    "id": "283",
+    "slug": "endeavor",
+    "slugLoc": "man-gan",
+    "name": "蛮干",
+    "description": "给予伤害的数值会是\n对手的剩余HP减去自己的剩余HP。\n对手的HP为自己的HP以下时会失败。"
+  },
+  {
+    "id": "284",
+    "slug": "eruption",
+    "slugLoc": "pen-huo",
+    "name": "喷火",
+    "description": "自己的剩余HP越少，威力就会越小。\n威力为1～150。"
+  },
+  {
+    "id": "285",
+    "slug": "skill-swap",
+    "slugLoc": "te-xing-hu-huan",
+    "name": "特性互换",
+    "description": "会将自己和对手的特性互换。"
+  },
+  {
+    "id": "286",
+    "slug": "imprison",
+    "slugLoc": "feng-yin",
+    "name": "封印",
+    "description": "自己会变为封印状态。"
+  },
+  {
+    "id": "287",
+    "slug": "refresh",
+    "slugLoc": "huan-ran-yi-xin",
+    "name": "焕然一新",
+    "description": ""
+  },
+  {
+    "id": "288",
+    "slug": "grudge",
+    "slugLoc": "yuan-nian",
+    "name": "怨念",
+    "description": ""
+  },
+  {
+    "id": "289",
+    "slug": "snatch",
+    "slugLoc": "hua-wei-ji-yong",
+    "name": "化为己用",
+    "description": ""
+  },
+  {
+    "id": "290",
+    "slug": "secret-power",
+    "slugLoc": "mi-mi-zhi-li",
+    "name": "秘密之力",
+    "description": ""
+  },
+  {
+    "id": "291",
+    "slug": "dive",
+    "slugLoc": "qian-shui",
+    "name": "潜水",
+    "description": "会在使用的回合变为水中状态，\n并在下一回合进行攻击。"
+  },
+  {
+    "id": "292",
+    "slug": "arm-thrust",
+    "slugLoc": "meng-tui",
+    "name": "猛推",
+    "description": ""
+  },
+  {
+    "id": "293",
+    "slug": "camouflage",
+    "slugLoc": "bao-hu-se",
+    "name": "保护色",
+    "description": ""
+  },
+  {
+    "id": "294",
+    "slug": "tail-glow",
+    "slugLoc": "ying-huo",
+    "name": "萤火",
+    "description": ""
+  },
+  {
+    "id": "295",
+    "slug": "luster-purge",
+    "slugLoc": "ji-jing-guang-mang",
+    "name": "洁净光芒",
+    "description": ""
+  },
+  {
+    "id": "296",
+    "slug": "mist-ball",
+    "slugLoc": "bo-wu-qiu",
+    "name": "薄雾球",
+    "description": ""
+  },
+  {
+    "id": "297",
+    "slug": "feather-dance",
+    "slugLoc": "yu-mao-wu",
+    "name": "羽毛舞",
+    "description": "会让对手的攻击降低2阶。"
+  },
+  {
+    "id": "298",
+    "slug": "teeter-dance",
+    "slugLoc": "yao-huang-wu",
+    "name": "摇晃舞",
+    "description": "会让自己以外的场上的所有宝可梦\n陷入混乱状态。"
+  },
+  {
+    "id": "299",
+    "slug": "blaze-kick",
+    "slugLoc": "huo-yan-ti",
+    "name": "火焰踢",
+    "description": "有10%的机率会让对手陷入灼伤状态。\n能以易中要害+1进行攻击。"
+  },
+  {
+    "id": "300",
+    "slug": "mud-sport",
+    "slugLoc": "wan-ni-ba",
+    "name": "玩泥巴",
+    "description": ""
+  },
+  {
+    "id": "301",
+    "slug": "ice-ball",
+    "slugLoc": "bing-qiu",
+    "name": "冰球",
+    "description": ""
+  },
+  {
+    "id": "302",
+    "slug": "needle-arm",
+    "slugLoc": "jian-ci-bi",
+    "name": "尖刺臂",
+    "description": ""
+  },
+  {
+    "id": "303",
+    "slug": "slack-off",
+    "slugLoc": "tou-lan",
+    "name": "偷懒",
+    "description": "会让自己的HP回复最大HP的1/2。"
+  },
+  {
+    "id": "304",
+    "slug": "hyper-voice",
+    "slugLoc": "ju-sheng",
+    "name": "巨声",
+    "description": ""
+  },
+  {
+    "id": "305",
+    "slug": "poison-fang",
+    "slugLoc": "ju-du-ya",
+    "name": "剧毒牙",
+    "description": "有50%的机率会让对手陷入剧毒状态。"
+  },
+  {
+    "id": "306",
+    "slug": "crush-claw",
+    "slugLoc": "si-lie-zhua",
+    "name": "撕裂爪",
+    "description": "有50%的机率会让对手的防御降低1阶。"
+  },
+  {
+    "id": "307",
+    "slug": "blast-burn",
+    "slugLoc": "bao-zha-lie-yan",
+    "name": "爆炸烈焰",
+    "description": "在使用后的下一回合，\n自己会陷入反作用力状态。"
+  },
+  {
+    "id": "308",
+    "slug": "hydro-cannon",
+    "slugLoc": "jia-nong-shui-pao",
+    "name": "加农水炮",
+    "description": "在使用后的下一回合，\n自己会陷入反作用力状态。"
+  },
+  {
+    "id": "309",
+    "slug": "meteor-mash",
+    "slugLoc": "hui-xing-quan",
+    "name": "彗星拳",
+    "description": "有20%的机率会让自己的攻击提高1阶。"
+  },
+  {
+    "id": "310",
+    "slug": "astonish",
+    "slugLoc": "liang-xia",
+    "name": "惊吓",
+    "description": ""
+  },
+  {
+    "id": "311",
+    "slug": "weather-ball",
+    "slugLoc": "qi-xiang-qiu",
+    "name": "气象球",
+    "description": "天气有所改变时，\n威力会变为2倍，属性也会改变。\n大晴天状态：火属性　　下雨状态：水属性\n下雪状态：冰属性　　沙暴状态：岩石属性"
+  },
+  {
+    "id": "312",
+    "slug": "aromatherapy",
+    "slugLoc": "fang-xiang-zhi-liao",
+    "name": "芳香治疗",
+    "description": ""
+  },
+  {
+    "id": "313",
+    "slug": "fake-tears",
+    "slugLoc": "jia-ku",
+    "name": "假哭",
+    "description": "会让对手的特防降低2阶。"
+  },
+  {
+    "id": "314",
+    "slug": "air-cutter",
+    "slugLoc": "kong-qi-li-ren",
+    "name": "空气利刃",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "315",
+    "slug": "overheat",
+    "slugLoc": "guo-re",
+    "name": "过热",
+    "description": "会让自己的特攻降低2阶。"
+  },
+  {
+    "id": "316",
+    "slug": "odor-sleuth",
+    "slugLoc": "qi-wei-zhen-ce",
+    "name": "气味侦测",
+    "description": ""
+  },
+  {
+    "id": "317",
+    "slug": "rock-tomb",
+    "slugLoc": "yan-shi-feng-suo",
+    "name": "岩石封锁",
+    "description": "会让对手的速度降低1阶。"
+  },
+  {
+    "id": "318",
+    "slug": "silver-wind",
+    "slugLoc": "yin-se-xuan-feng",
+    "name": "银色旋风",
+    "description": ""
+  },
+  {
+    "id": "319",
+    "slug": "metal-sound",
+    "slugLoc": "jin-shu-yin",
+    "name": "金属音",
+    "description": "会让对手的特防降低2阶。"
+  },
+  {
+    "id": "320",
+    "slug": "grass-whistle",
+    "slugLoc": "cao-di",
+    "name": "草笛",
+    "description": ""
+  },
+  {
+    "id": "321",
+    "slug": "tickle",
+    "slugLoc": "nao-yang",
+    "name": "挠痒",
+    "description": "会让对手的攻击、防御降低1阶。"
+  },
+  {
+    "id": "322",
+    "slug": "cosmic-power",
+    "slugLoc": "yu-zhou-li-liang",
+    "name": "宇宙力量",
+    "description": "会让自己的防御、特防提高1阶。"
+  },
+  {
+    "id": "323",
+    "slug": "water-spout",
+    "slugLoc": "pen-shui",
+    "name": "喷水",
+    "description": "自己的剩余HP越少，威力就会越小。\n威力为1～150。"
+  },
+  {
+    "id": "324",
+    "slug": "signal-beam",
+    "slugLoc": "xin-hao-guang-shu",
+    "name": "信号光束",
+    "description": ""
+  },
+  {
+    "id": "325",
+    "slug": "shadow-punch",
+    "slugLoc": "an-ying-quan",
+    "name": "暗影拳",
+    "description": "必定会命中对手。"
+  },
+  {
+    "id": "326",
+    "slug": "extrasensory",
+    "slugLoc": "shen-tong-li",
+    "name": "神通力",
+    "description": "有10%的机率会让对手畏缩。"
+  },
+  {
+    "id": "327",
+    "slug": "sky-uppercut",
+    "slugLoc": "chong-tian-quan",
+    "name": "冲天拳",
+    "description": ""
+  },
+  {
+    "id": "328",
+    "slug": "sand-tomb",
+    "slugLoc": "liu-sha-shen-yuan",
+    "name": "流沙深渊",
+    "description": "会让对手陷入束缚状态。"
+  },
+  {
+    "id": "329",
+    "slug": "sheer-cold",
+    "slugLoc": "jue-dui-ling-du",
+    "name": "绝对零度",
+    "description": "会让对手陷入昏厥。命中率固定为30%。\n不会击中冰属性的对手。\n由冰属性以外的宝可梦使用时，命中率会变为20%。"
+  },
+  {
+    "id": "330",
+    "slug": "muddy-water",
+    "slugLoc": "zhuo-liu",
+    "name": "浊流",
+    "description": "有30%的机率会让对手的命中率降低1阶。"
+  },
+  {
+    "id": "331",
+    "slug": "bullet-seed",
+    "slugLoc": "zhong-zi-ji-guan-qiang",
+    "name": "种子机关枪",
+    "description": "会连续攻击2～5次。"
+  },
+  {
+    "id": "332",
+    "slug": "aerial-ace",
+    "slugLoc": "yan-fan",
+    "name": "燕返",
+    "description": "必定会命中对手。"
+  },
+  {
+    "id": "333",
+    "slug": "icicle-spear",
+    "slugLoc": "bing-zhui",
+    "name": "冰锥",
+    "description": "会连续攻击2～5次。"
+  },
+  {
+    "id": "334",
+    "slug": "iron-defense",
+    "slugLoc": "tie-bi",
+    "name": "铁壁",
+    "description": "会让自己的防御提高2阶。"
+  },
+  {
+    "id": "335",
+    "slug": "block",
+    "slugLoc": "dang-lu",
+    "name": "挡路",
+    "description": "会让对手陷入无法逃走状态。"
+  },
+  {
+    "id": "336",
+    "slug": "howl",
+    "slugLoc": "chang-hao",
+    "name": "长嚎",
+    "description": "会让自己和同伴的攻击提高1阶。"
+  },
+  {
+    "id": "337",
+    "slug": "dragon-claw",
+    "slugLoc": "long-zhua",
+    "name": "龙爪",
+    "description": ""
+  },
+  {
+    "id": "338",
+    "slug": "frenzy-plant",
+    "slugLoc": "feng-kuang-zhi-wu",
+    "name": "疯狂植物",
+    "description": "在使用后的下一回合，\n自己会陷入反作用力状态。"
+  },
+  {
+    "id": "339",
+    "slug": "bulk-up",
+    "slugLoc": "jian-mei",
+    "name": "健美",
+    "description": "会让自己的攻击、防御提高1阶。"
+  },
+  {
+    "id": "340",
+    "slug": "bounce",
+    "slugLoc": "dan-tiao",
+    "name": "弹跳",
+    "description": "会在使用的回合变为空中状态，\n并在下一回合进行攻击。\n有30%的机率会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "341",
+    "slug": "mud-shot",
+    "slugLoc": "ni-ba-she-ji",
+    "name": "泥巴射击",
+    "description": "会让对手的速度降低1阶。"
+  },
+  {
+    "id": "342",
+    "slug": "poison-tail",
+    "slugLoc": "du-wei",
+    "name": "毒尾",
+    "description": ""
+  },
+  {
+    "id": "343",
+    "slug": "covet",
+    "slugLoc": "ke-wang",
+    "name": "渴望",
+    "description": "若自己没有携带道具，\n则会夺走对手的道具。"
+  },
+  {
+    "id": "344",
+    "slug": "volt-tackle",
+    "slugLoc": "fu-te-gong-ji",
+    "name": "伏特攻击",
+    "description": "自己也会受到给予的伤害的1/3。\n有10%的机率会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "345",
+    "slug": "magical-leaf",
+    "slugLoc": "mo-fa-ye",
+    "name": "魔法叶",
+    "description": ""
+  },
+  {
+    "id": "346",
+    "slug": "water-sport",
+    "slugLoc": "wan-shui",
+    "name": "玩水",
+    "description": ""
+  },
+  {
+    "id": "347",
+    "slug": "calm-mind",
+    "slugLoc": "ming-xiang",
+    "name": "冥想",
+    "description": "会让自己的特攻、特防提高1阶。"
+  },
+  {
+    "id": "348",
+    "slug": "leaf-blade",
+    "slugLoc": "ye-ren",
+    "name": "叶刃",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "349",
+    "slug": "dragon-dance",
+    "slugLoc": "long-zhi-wu",
+    "name": "龙之舞",
+    "description": "会让自己的攻击、速度提高1阶。"
+  },
+  {
+    "id": "350",
+    "slug": "rock-blast",
+    "slugLoc": "yan-shi-bao-ji",
+    "name": "岩石爆击",
+    "description": "会连续攻击2～5次。"
+  },
+  {
+    "id": "351",
+    "slug": "shock-wave",
+    "slugLoc": "dian-ji-bo",
+    "name": "电击波",
+    "description": ""
+  },
+  {
+    "id": "352",
+    "slug": "water-pulse",
+    "slugLoc": "shui-zhi-bo-dong",
+    "name": "水之波动",
+    "description": "有20%的机率会让对手陷入混乱状态。"
+  },
+  {
+    "id": "353",
+    "slug": "doom-desire",
+    "slugLoc": "po-mie-zhi-yuan",
+    "name": "破灭之愿",
+    "description": ""
+  },
+  {
+    "id": "354",
+    "slug": "psycho-boost",
+    "slugLoc": "jing-shen-tu-jin",
+    "name": "精神突进",
+    "description": ""
+  },
+  {
+    "id": "355",
+    "slug": "roost",
+    "slugLoc": "yu-qi",
+    "name": "羽栖",
+    "description": "会让自己的HP回复最大HP的1/2。\n由飞行属性使用时，\n在此回合内将不再是飞行属性。"
+  },
+  {
+    "id": "356",
+    "slug": "gravity",
+    "slugLoc": "chong-li",
+    "name": "重力",
+    "description": "在5回合内，\n会让整个场地变为重力状态。"
+  },
+  {
+    "id": "357",
+    "slug": "miracle-eye",
+    "slugLoc": "qi-ji-zhi-yan",
+    "name": "奇迹之眼",
+    "description": ""
+  },
+  {
+    "id": "358",
+    "slug": "wake-up-slap",
+    "slugLoc": "huan-xing-ba-zhang",
+    "name": "唤醒巴掌",
+    "description": ""
+  },
+  {
+    "id": "359",
+    "slug": "hammer-arm",
+    "slugLoc": "bi-chui",
+    "name": "臂锤",
+    "description": "会让自己的速度降低1阶。"
+  },
+  {
+    "id": "360",
+    "slug": "gyro-ball",
+    "slugLoc": "tuo-luo-qiu",
+    "name": "陀螺球",
+    "description": "自己的速度比对手越低，威力就会越大。\n威力为1～150。"
+  },
+  {
+    "id": "361",
+    "slug": "healing-wish",
+    "slugLoc": "zhi-yu-zhi-yuan",
+    "name": "治愈之愿",
+    "description": "虽然自己会陷入昏厥，\n但会完全回复接下来我方派出的\n宝可梦的HP，并治愈其异常状态。"
+  },
+  {
+    "id": "362",
+    "slug": "brine",
+    "slugLoc": "yan-shui",
+    "name": "盐水",
+    "description": ""
+  },
+  {
+    "id": "363",
+    "slug": "natural-gift",
+    "slugLoc": "zi-ran-zhi-en",
+    "name": "自然之恩",
+    "description": ""
+  },
+  {
+    "id": "364",
+    "slug": "feint",
+    "slugLoc": "yang-gong",
+    "name": "佯攻",
+    "description": "会解除守住、看穿等效果并进行攻击。"
+  },
+  {
+    "id": "365",
+    "slug": "pluck",
+    "slugLoc": "zhuo-shi",
+    "name": "啄食",
+    "description": "若对手有携带树果，\n则会代替对手吃掉该树果，\n并由自己获得其效果。"
+  },
+  {
+    "id": "366",
+    "slug": "tailwind",
+    "slugLoc": "shun-feng",
+    "name": "顺风",
+    "description": "在4回合内，\n会让我方场地变为顺风状态。"
+  },
+  {
+    "id": "367",
+    "slug": "acupressure",
+    "slugLoc": "dian-xue",
+    "name": "点穴",
+    "description": "会让自己或同伴的\n攻击、防御、特攻、特防、速度、\n命中率、闪避率之中的1种能力提高2阶。"
+  },
+  {
+    "id": "368",
+    "slug": "metal-burst",
+    "slugLoc": "jin-shu-bao-zha",
+    "name": "金属爆炸",
+    "description": "会将在使用的回合受到的来自对手的\n招式的伤害变为1.5倍返还给对手。"
+  },
+  {
+    "id": "369",
+    "slug": "u-turn",
+    "slugLoc": "ji-su-zhe-fan",
+    "name": "急速折返",
+    "description": "攻击后，会和同行队伍中的\n其他宝可梦进行替换。"
+  },
+  {
+    "id": "370",
+    "slug": "close-combat",
+    "slugLoc": "jin-shen-zhan",
+    "name": "近身战",
+    "description": "会让自己的防御、特防降低1阶。"
+  },
+  {
+    "id": "371",
+    "slug": "payback",
+    "slugLoc": "yi-ya-huan-ya",
+    "name": "以牙还牙",
+    "description": "在对手之后进行攻击时，\n威力会变为2倍。"
+  },
+  {
+    "id": "372",
+    "slug": "assurance",
+    "slugLoc": "e-yi-zhui-ji",
+    "name": "恶意追击",
+    "description": "在使用的回合内，\n若对手已经受到伤害，\n则威力会变为2倍。"
+  },
+  {
+    "id": "373",
+    "slug": "embargo",
+    "slugLoc": "cha-feng",
+    "name": "查封",
+    "description": ""
+  },
+  {
+    "id": "374",
+    "slug": "fling",
+    "slugLoc": "tou-zhi",
+    "name": "投掷",
+    "description": "威力和效果会根据\n携带的道具而改变。\n使用后道具就会消失。"
+  },
+  {
+    "id": "375",
+    "slug": "psycho-shift",
+    "slugLoc": "jing-shen-zhuan-yi",
+    "name": "精神转移",
+    "description": ""
+  },
+  {
+    "id": "376",
+    "slug": "trump-card",
+    "slugLoc": "wang-pai",
+    "name": "王牌",
+    "description": ""
+  },
+  {
+    "id": "377",
+    "slug": "heal-block",
+    "slugLoc": "hui-fu-feng-suo",
+    "name": "回复封锁",
+    "description": ""
+  },
+  {
+    "id": "378",
+    "slug": "wring-out",
+    "slugLoc": "jiao-jin",
+    "name": "绞紧",
+    "description": ""
+  },
+  {
+    "id": "379",
+    "slug": "power-trick",
+    "slugLoc": "li-liang-xi-fa",
+    "name": "力量戏法",
+    "description": "自己会变为攻防转换状态。"
+  },
+  {
+    "id": "380",
+    "slug": "gastro-acid",
+    "slugLoc": "wei-ye",
+    "name": "胃液",
+    "description": "会让对手变为无特性状态。"
+  },
+  {
+    "id": "381",
+    "slug": "lucky-chant",
+    "slugLoc": "xing-yun-zhou-yu",
+    "name": "幸运咒语",
+    "description": ""
+  },
+  {
+    "id": "382",
+    "slug": "me-first",
+    "slugLoc": "qiang-xian-yi-bu",
+    "name": "抢先一步",
+    "description": ""
+  },
+  {
+    "id": "383",
+    "slug": "copycat",
+    "slugLoc": "fang-xiao",
+    "name": "仿效",
+    "description": "会使出最后被使用的招式。\n若没有被使用过的招式，则会失败。"
+  },
+  {
+    "id": "384",
+    "slug": "power-swap",
+    "slugLoc": "li-liang-hu-huan",
+    "name": "力量互换",
+    "description": "会将自己的攻击、特攻的能力变化和\n对手的攻击、特攻的能力变化互换。"
+  },
+  {
+    "id": "385",
+    "slug": "guard-swap",
+    "slugLoc": "fang-shou-hu-huan",
+    "name": "防守互换",
+    "description": "会将自己的防御、特防的能力变化和\n对手的防御、特防的能力变化互换。"
+  },
+  {
+    "id": "386",
+    "slug": "punishment",
+    "slugLoc": "cheng-fa",
+    "name": "惩罚",
+    "description": ""
+  },
+  {
+    "id": "387",
+    "slug": "last-resort",
+    "slugLoc": "zhen-cang",
+    "name": "珍藏",
+    "description": "若没有将其他已学会的招式\n全部使用过，则会失败。"
+  },
+  {
+    "id": "388",
+    "slug": "worry-seed",
+    "slugLoc": "fan-nao-zhong-zi",
+    "name": "烦恼种子",
+    "description": "会让对手的特性变为不眠。"
+  },
+  {
+    "id": "389",
+    "slug": "sucker-punch",
+    "slugLoc": "tu-xi",
+    "name": "突袭",
+    "description": "此招式必须在对手已经选择了攻击，\n且对手在使用此招式的回合内还没有\n进行攻击时使出，否则会失败。"
+  },
+  {
+    "id": "390",
+    "slug": "toxic-spikes",
+    "slugLoc": "du-ling",
+    "name": "毒菱",
+    "description": "会让对手的场地变为毒菱状态。"
+  },
+  {
+    "id": "391",
+    "slug": "heart-swap",
+    "slugLoc": "xin-ling-hu-huan",
+    "name": "心灵互换",
+    "description": ""
+  },
+  {
+    "id": "392",
+    "slug": "aqua-ring",
+    "slugLoc": "shui-liu-huan",
+    "name": "水流环",
+    "description": "自己会变为水流环状态。"
+  },
+  {
+    "id": "393",
+    "slug": "magnet-rise",
+    "slugLoc": "dian-ci-piao-fu",
+    "name": "电磁飘浮",
+    "description": "自己会变为电磁飘浮状态。"
+  },
+  {
+    "id": "394",
+    "slug": "flare-blitz",
+    "slugLoc": "shan-yan-chong-feng",
+    "name": "闪焰冲锋",
+    "description": "自己也会受到给予的伤害的1/3。\n有10%的机率会让对手陷入灼伤状态。\n使用后会治愈自己的冰冻状态。"
+  },
+  {
+    "id": "395",
+    "slug": "force-palm",
+    "slugLoc": "fa-jing",
+    "name": "发劲",
+    "description": ""
+  },
+  {
+    "id": "396",
+    "slug": "aura-sphere",
+    "slugLoc": "bo-dao-dan",
+    "name": "波导弹",
+    "description": "必定会命中对手。"
+  },
+  {
+    "id": "397",
+    "slug": "rock-polish",
+    "slugLoc": "yan-shi-da-mo",
+    "name": "岩石打磨",
+    "description": "会让自己的速度提高2阶。"
+  },
+  {
+    "id": "398",
+    "slug": "poison-jab",
+    "slugLoc": "du-ji",
+    "name": "毒击",
+    "description": "有30%的机率会让对手陷入中毒状态。"
+  },
+  {
+    "id": "399",
+    "slug": "dark-pulse",
+    "slugLoc": "e-zhi-bo-dong",
+    "name": "恶之波动",
+    "description": "有20%的机率会让对手畏缩。"
+  },
+  {
+    "id": "400",
+    "slug": "night-slash",
+    "slugLoc": "an-xi-yao-hai",
+    "name": "暗袭要害",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "401",
+    "slug": "aqua-tail",
+    "slugLoc": "shui-liu-wei",
+    "name": "水流尾",
+    "description": ""
+  },
+  {
+    "id": "402",
+    "slug": "seed-bomb",
+    "slugLoc": "zhong-zi-zha-dan",
+    "name": "种子炸弹",
+    "description": ""
+  },
+  {
+    "id": "403",
+    "slug": "air-slash",
+    "slugLoc": "kong-qi-zhi-ren",
+    "name": "空气之刃",
+    "description": "有30%的机率会让对手畏缩。"
+  },
+  {
+    "id": "404",
+    "slug": "x-scissor",
+    "slugLoc": "shi-zi-jian",
+    "name": "十字剪",
+    "description": ""
+  },
+  {
+    "id": "405",
+    "slug": "bug-buzz",
+    "slugLoc": "chong-ming",
+    "name": "虫鸣",
+    "description": "有10%的机率会让对手的特防降低1阶。"
+  },
+  {
+    "id": "406",
+    "slug": "dragon-pulse",
+    "slugLoc": "long-zhi-bo-dong",
+    "name": "龙之波动",
+    "description": ""
+  },
+  {
+    "id": "407",
+    "slug": "dragon-rush",
+    "slugLoc": "long-zhi-fu-chong",
+    "name": "龙之俯冲",
+    "description": "有20%的机率会让对手畏缩。\n对变小状态的对手的\n威力会变为2倍，且必定会命中。"
+  },
+  {
+    "id": "408",
+    "slug": "power-gem",
+    "slugLoc": "li-liang-bao-shi",
+    "name": "力量宝石",
+    "description": ""
+  },
+  {
+    "id": "409",
+    "slug": "drain-punch",
+    "slugLoc": "xi-qu-quan",
+    "name": "吸取拳",
+    "description": "会让自己的HP回复\n给予对手伤害的1/2。"
+  },
+  {
+    "id": "410",
+    "slug": "vacuum-wave",
+    "slugLoc": "zhen-kong-bo",
+    "name": "真空波",
+    "description": ""
+  },
+  {
+    "id": "411",
+    "slug": "focus-blast",
+    "slugLoc": "zhen-qi-dan",
+    "name": "真气弹",
+    "description": "有10%的机率会让对手的特防降低1阶。"
+  },
+  {
+    "id": "412",
+    "slug": "energy-ball",
+    "slugLoc": "neng-liang-qiu",
+    "name": "能量球",
+    "description": "有10%的机率会让对手的特防降低1阶。"
+  },
+  {
+    "id": "413",
+    "slug": "brave-bird",
+    "slugLoc": "yong-niao-meng-gong",
+    "name": "勇鸟猛攻",
+    "description": "自己也会受到给予的伤害的1/3。"
+  },
+  {
+    "id": "414",
+    "slug": "earth-power",
+    "slugLoc": "da-di-zhi-li",
+    "name": "大地之力",
+    "description": "有10%的机率会让对手的特防降低1阶。"
+  },
+  {
+    "id": "415",
+    "slug": "switcheroo",
+    "slugLoc": "diao-bao-415",
+    "name": "掉包",
+    "description": "会将对手和自己携带的道具互换。"
+  },
+  {
+    "id": "416",
+    "slug": "giga-impact",
+    "slugLoc": "zhong-ji-chong-ji",
+    "name": "终极冲击",
+    "description": "在使用后的下一回合，\n自己会陷入反作用力状态。"
+  },
+  {
+    "id": "417",
+    "slug": "nasty-plot",
+    "slugLoc": "gui-ji",
+    "name": "诡计",
+    "description": "会让自己的特攻提高2阶。"
+  },
+  {
+    "id": "418",
+    "slug": "bullet-punch",
+    "slugLoc": "zi-dan-quan",
+    "name": "子弹拳",
+    "description": ""
+  },
+  {
+    "id": "419",
+    "slug": "avalanche",
+    "slugLoc": "xue-beng",
+    "name": "雪崩",
+    "description": "若在使用此招式的回合受到来自对手的\n招式的伤害，则威力会变为2倍。"
+  },
+  {
+    "id": "420",
+    "slug": "ice-shard",
+    "slugLoc": "bing-li",
+    "name": "冰砾",
+    "description": ""
+  },
+  {
+    "id": "421",
+    "slug": "shadow-claw",
+    "slugLoc": "an-ying-zhua",
+    "name": "暗影爪",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "422",
+    "slug": "thunder-fang",
+    "slugLoc": "lei-dian-ya",
+    "name": "雷电牙",
+    "description": "有10%的机率会让对手陷入麻痹状态。\n有10%的机率会让对手畏缩。"
+  },
+  {
+    "id": "423",
+    "slug": "ice-fang",
+    "slugLoc": "bing-dong-ya",
+    "name": "冰冻牙",
+    "description": "有10%的机率会让对手陷入冰冻状态。\n有10%的机率会让对手畏缩。"
+  },
+  {
+    "id": "424",
+    "slug": "fire-fang",
+    "slugLoc": "huo-yan-ya",
+    "name": "火焰牙",
+    "description": "有10%的机率会让对手陷入灼伤状态。\n有10%的机率会让对手畏缩。"
+  },
+  {
+    "id": "425",
+    "slug": "shadow-sneak",
+    "slugLoc": "ying-zi-tou-xi",
+    "name": "影子偷袭",
+    "description": ""
+  },
+  {
+    "id": "426",
+    "slug": "mud-bomb",
+    "slugLoc": "ni-ba-zha-dan",
+    "name": "泥巴炸弹",
+    "description": ""
+  },
+  {
+    "id": "427",
+    "slug": "psycho-cut",
+    "slugLoc": "jing-shen-li-ren",
+    "name": "精神利刃",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "428",
+    "slug": "zen-headbutt",
+    "slugLoc": "yi-nian-tou-chui",
+    "name": "意念头锤",
+    "description": "有20%的机率会让对手畏缩。"
+  },
+  {
+    "id": "429",
+    "slug": "mirror-shot",
+    "slugLoc": "jing-guang-she-ji",
+    "name": "镜光射击",
+    "description": ""
+  },
+  {
+    "id": "430",
+    "slug": "flash-cannon",
+    "slugLoc": "jia-nong-guang-pao",
+    "name": "加农光炮",
+    "description": "有10%的机率会让对手的特防降低1阶。"
+  },
+  {
+    "id": "431",
+    "slug": "rock-climb",
+    "slugLoc": "pan-yan",
+    "name": "攀岩",
+    "description": ""
+  },
+  {
+    "id": "432",
+    "slug": "defog",
+    "slugLoc": "qing-chu-nong-wu",
+    "name": "清除浓雾",
+    "description": "会让对手的闪避率降低1阶。\n会解除反射壁、撒菱、神秘守护、\n场地等状态。"
+  },
+  {
+    "id": "433",
+    "slug": "trick-room",
+    "slugLoc": "xi-fa-kong-jian",
+    "name": "戏法空间",
+    "description": "在5回合内，\n会让整个场地变为戏法空间状态。"
+  },
+  {
+    "id": "434",
+    "slug": "draco-meteor",
+    "slugLoc": "liu-xing-qun",
+    "name": "流星群",
+    "description": "会让自己的特攻降低2阶。"
+  },
+  {
+    "id": "435",
+    "slug": "discharge",
+    "slugLoc": "fang-dian",
+    "name": "放电",
+    "description": "有30%的机率会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "436",
+    "slug": "lava-plume",
+    "slugLoc": "pen-yan",
+    "name": "喷烟",
+    "description": "有30%的机率会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "437",
+    "slug": "leaf-storm",
+    "slugLoc": "fei-ye-feng-bao",
+    "name": "飞叶风暴",
+    "description": "会让自己的特攻降低2阶。"
+  },
+  {
+    "id": "438",
+    "slug": "power-whip",
+    "slugLoc": "qiang-li-bian-da",
+    "name": "强力鞭打",
+    "description": ""
+  },
+  {
+    "id": "439",
+    "slug": "rock-wrecker",
+    "slugLoc": "yan-shi-pao",
+    "name": "岩石炮",
+    "description": "在使用后的下一回合，\n自己会陷入反作用力状态。"
+  },
+  {
+    "id": "440",
+    "slug": "cross-poison",
+    "slugLoc": "shi-zi-du-ren",
+    "name": "十字毒刃",
+    "description": "有10%的机率会让对手陷入中毒状态。\n会以易中要害+1进行攻击。"
+  },
+  {
+    "id": "441",
+    "slug": "gunk-shot",
+    "slugLoc": "la-ji-she-ji",
+    "name": "垃圾射击",
+    "description": "有30%的机率会让对手陷入中毒状态。"
+  },
+  {
+    "id": "442",
+    "slug": "iron-head",
+    "slugLoc": "tie-tou",
+    "name": "铁头",
+    "description": "有20%的机率会让对手畏缩。"
+  },
+  {
+    "id": "443",
+    "slug": "magnet-bomb",
+    "slugLoc": "ci-tie-zha-dan",
+    "name": "磁铁炸弹",
+    "description": ""
+  },
+  {
+    "id": "444",
+    "slug": "stone-edge",
+    "slugLoc": "jian-shi-gong-ji",
+    "name": "尖石攻击",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "445",
+    "slug": "captivate",
+    "slugLoc": "you-huo",
+    "name": "诱惑",
+    "description": ""
+  },
+  {
+    "id": "446",
+    "slug": "stealth-rock",
+    "slugLoc": "yin-xing-yan",
+    "name": "隐形岩",
+    "description": "会让对手的场地变为隐形岩状态。"
+  },
+  {
+    "id": "447",
+    "slug": "grass-knot",
+    "slugLoc": "da-cao-jie",
+    "name": "打草结",
+    "description": "对手越重，威力就会越大。\n威力为20～120。"
+  },
+  {
+    "id": "448",
+    "slug": "chatter",
+    "slugLoc": "die-die-bu-xiu",
+    "name": "喋喋不休",
+    "description": ""
+  },
+  {
+    "id": "449",
+    "slug": "judgment",
+    "slugLoc": "zhi-cai-guang-li",
+    "name": "制裁光砾",
+    "description": ""
+  },
+  {
+    "id": "450",
+    "slug": "bug-bite",
+    "slugLoc": "chong-yao",
+    "name": "虫咬",
+    "description": "若对手有携带树果，\n则会代替对手吃掉该树果，\n并由自己获得其效果。"
+  },
+  {
+    "id": "451",
+    "slug": "charge-beam",
+    "slugLoc": "chong-dian-guang-shu",
+    "name": "充电光束",
+    "description": "有70%的机率会让自己的特攻提高1阶。"
+  },
+  {
+    "id": "452",
+    "slug": "wood-hammer",
+    "slugLoc": "mu-chui",
+    "name": "木槌",
+    "description": "自己也会受到给予的伤害的1/3。"
+  },
+  {
+    "id": "453",
+    "slug": "aqua-jet",
+    "slugLoc": "shui-liu-pen-she",
+    "name": "水流喷射",
+    "description": ""
+  },
+  {
+    "id": "454",
+    "slug": "attack-order",
+    "slugLoc": "gong-ji-zhi-ling",
+    "name": "攻击指令",
+    "description": ""
+  },
+  {
+    "id": "455",
+    "slug": "defend-order",
+    "slugLoc": "fang-yu-zhi-ling",
+    "name": "防御指令",
+    "description": ""
+  },
+  {
+    "id": "456",
+    "slug": "heal-order",
+    "slugLoc": "hui-fu-zhi-ling",
+    "name": "回复指令",
+    "description": ""
+  },
+  {
+    "id": "457",
+    "slug": "head-smash",
+    "slugLoc": "shuang-ren-tou-chui",
+    "name": "双刃头锤",
+    "description": "自己也会受到给予的伤害的1/2。"
+  },
+  {
+    "id": "458",
+    "slug": "double-hit",
+    "slugLoc": "er-lian-ji",
+    "name": "二连击",
+    "description": "会连续攻击2次。"
+  },
+  {
+    "id": "459",
+    "slug": "roar-of-time",
+    "slugLoc": "shi-guang-pao-xiao",
+    "name": "时光咆哮",
+    "description": ""
+  },
+  {
+    "id": "460",
+    "slug": "spacial-rend",
+    "slugLoc": "ya-kong-lie-zhan",
+    "name": "亚空裂斩",
+    "description": ""
+  },
+  {
+    "id": "461",
+    "slug": "lunar-dance",
+    "slugLoc": "xin-yue-wu",
+    "name": "新月舞",
+    "description": ""
+  },
+  {
+    "id": "462",
+    "slug": "crush-grip",
+    "slugLoc": "nie-sui",
+    "name": "捏碎",
+    "description": ""
+  },
+  {
+    "id": "463",
+    "slug": "magma-storm",
+    "slugLoc": "rong-yan-feng-bao",
+    "name": "熔岩风暴",
+    "description": ""
+  },
+  {
+    "id": "464",
+    "slug": "dark-void",
+    "slugLoc": "an-hei-dong",
+    "name": "暗黑洞",
+    "description": ""
+  },
+  {
+    "id": "465",
+    "slug": "seed-flare",
+    "slugLoc": "zhong-zi-shan-guang",
+    "name": "种子闪光",
+    "description": ""
+  },
+  {
+    "id": "466",
+    "slug": "ominous-wind",
+    "slugLoc": "qi-yi-zhi-feng",
+    "name": "奇异之风",
+    "description": ""
+  },
+  {
+    "id": "467",
+    "slug": "shadow-force",
+    "slugLoc": "an-ying-qian-xi",
+    "name": "暗影潜袭",
+    "description": ""
+  },
+  {
+    "id": "468",
+    "slug": "hone-claws",
+    "slugLoc": "mo-zhua",
+    "name": "磨爪",
+    "description": ""
+  },
+  {
+    "id": "469",
+    "slug": "wide-guard",
+    "slugLoc": "guang-yu-fang-shou",
+    "name": "广域防守",
+    "description": "在使用的回合内，\n会在击中我方所有宝可梦的招式中\n守护自己和同伴。"
+  },
+  {
+    "id": "470",
+    "slug": "guard-split",
+    "slugLoc": "fang-shou-ping-fen",
+    "name": "防守平分",
+    "description": "会将自己和对手的\n防御的数值和特防的数值相加，\n并各分1/2。"
+  },
+  {
+    "id": "471",
+    "slug": "power-split",
+    "slugLoc": "li-liang-ping-fen",
+    "name": "力量平分",
+    "description": "会将自己和对手的\n攻击的数值和特攻的数值相加，\n并各分1/2。"
+  },
+  {
+    "id": "472",
+    "slug": "wonder-room",
+    "slugLoc": "qi-miao-kong-jian",
+    "name": "奇妙空间",
+    "description": "在5回合内，\n会让整个场地变为奇妙空间状态。"
+  },
+  {
+    "id": "473",
+    "slug": "psyshock",
+    "slugLoc": "jing-shen-chong-ji",
+    "name": "精神冲击",
+    "description": "此招式虽然为特殊招式，\n但会以对手的防御来计算伤害。"
+  },
+  {
+    "id": "474",
+    "slug": "venoshock",
+    "slugLoc": "du-ye-chong-ji",
+    "name": "毒液冲击",
+    "description": "若对手为中毒、剧毒状态，\n则威力会变为2倍。"
+  },
+  {
+    "id": "475",
+    "slug": "autotomize",
+    "slugLoc": "shen-ti-qing-liang-hua",
+    "name": "身体轻量化",
+    "description": ""
+  },
+  {
+    "id": "476",
+    "slug": "rage-powder",
+    "slugLoc": "fen-nu-fen",
+    "name": "愤怒粉",
+    "description": "对手的招式全部会由自己承受。\n只对需要选择对手的招式有效。"
+  },
+  {
+    "id": "477",
+    "slug": "telekinesis",
+    "slugLoc": "yi-nian-yi-wu",
+    "name": "意念移物",
+    "description": ""
+  },
+  {
+    "id": "478",
+    "slug": "magic-room",
+    "slugLoc": "mo-fa-kong-jian",
+    "name": "魔法空间",
+    "description": "在5回合内，\n会让整个场地变为魔法空间状态。"
+  },
+  {
+    "id": "479",
+    "slug": "smack-down",
+    "slugLoc": "ji-luo",
+    "name": "击落",
+    "description": "会让不在地面上的对手变为落地状态。\n也会击中空中状态的对手。"
+  },
+  {
+    "id": "480",
+    "slug": "storm-throw",
+    "slugLoc": "shan-lan-shuai",
+    "name": "山岚摔",
+    "description": "必定会击中要害。"
+  },
+  {
+    "id": "481",
+    "slug": "flame-burst",
+    "slugLoc": "lie-yan-jian-she",
+    "name": "烈焰溅射",
+    "description": ""
+  },
+  {
+    "id": "482",
+    "slug": "sludge-wave",
+    "slugLoc": "wu-ni-bo",
+    "name": "污泥波",
+    "description": "有10%的机率会让对手陷入中毒状态。"
+  },
+  {
+    "id": "483",
+    "slug": "quiver-dance",
+    "slugLoc": "die-wu",
+    "name": "蝶舞",
+    "description": "会让自己的特攻、特防、速度提高1阶。"
+  },
+  {
+    "id": "484",
+    "slug": "heavy-slam",
+    "slugLoc": "chong-bang-chong-zhuang",
+    "name": "重磅冲撞",
+    "description": "自己比对手越重，威力就会越大。\n威力为40～120。\n对变小状态的对手的\n威力会变为2倍，且必定会命中。"
+  },
+  {
+    "id": "485",
+    "slug": "synchronoise",
+    "slugLoc": "tong-bu-gan-rao",
+    "name": "同步干扰",
+    "description": ""
+  },
+  {
+    "id": "486",
+    "slug": "electro-ball",
+    "slugLoc": "dian-qiu",
+    "name": "电球",
+    "description": "自己的速度比对手越高，威力就会越大。\n威力为40～150。"
+  },
+  {
+    "id": "487",
+    "slug": "soak",
+    "slugLoc": "jin-shui",
+    "name": "浸水",
+    "description": "会让对手的属性变为水属性。"
+  },
+  {
+    "id": "488",
+    "slug": "flame-charge",
+    "slugLoc": "xu-neng-yan-xi",
+    "name": "蓄能焰袭",
+    "description": "会让自己的速度提高1阶。"
+  },
+  {
+    "id": "489",
+    "slug": "coil",
+    "slugLoc": "pan-quan",
+    "name": "盘蜷",
+    "description": "会让自己的攻击、防御、命中率提高1阶。"
+  },
+  {
+    "id": "490",
+    "slug": "low-sweep",
+    "slugLoc": "xia-pan-ti",
+    "name": "下盘踢",
+    "description": "会让对手的速度降低1阶。"
+  },
+  {
+    "id": "491",
+    "slug": "acid-spray",
+    "slugLoc": "suan-ye-zha-dan",
+    "name": "酸液炸弹",
+    "description": "会让对手的特防降低2阶。"
+  },
+  {
+    "id": "492",
+    "slug": "foul-play",
+    "slugLoc": "yi-hua-jie-mu",
+    "name": "移花接木",
+    "description": "会以对手的攻击的数值\n而不是自己的攻击的数值来决定伤害。"
+  },
+  {
+    "id": "493",
+    "slug": "simple-beam",
+    "slugLoc": "dan-chun-guang-shu",
+    "name": "单纯光束",
+    "description": "会让对手的特性变为单纯。"
+  },
+  {
+    "id": "494",
+    "slug": "entrainment",
+    "slugLoc": "zhao-huo-ban",
+    "name": "找伙伴",
+    "description": "会让对手的特性变为和自己一样的特性。"
+  },
+  {
+    "id": "495",
+    "slug": "after-you",
+    "slugLoc": "nin-xian-qing",
+    "name": "您先请",
+    "description": "会让对手的行动紧接在\n自己的行动之后。"
+  },
+  {
+    "id": "496",
+    "slug": "round",
+    "slugLoc": "lun-chang",
+    "name": "轮唱",
+    "description": "在同一回合有复数的宝可梦使用此招式时，\n在第1只使出后，第2只及以后会紧接着使出。\n第2只及以后的威力会变为2倍。"
+  },
+  {
+    "id": "497",
+    "slug": "echoed-voice",
+    "slugLoc": "hui-sheng",
+    "name": "回声",
+    "description": ""
+  },
+  {
+    "id": "498",
+    "slug": "chip-away",
+    "slugLoc": "zhu-bu-ji-po",
+    "name": "逐步击破",
+    "description": ""
+  },
+  {
+    "id": "499",
+    "slug": "clear-smog",
+    "slugLoc": "qing-chu-zhi-yan",
+    "name": "清除之烟",
+    "description": "会让对手的能力变化复原。\n必定会命中对手。"
+  },
+  {
+    "id": "500",
+    "slug": "stored-power",
+    "slugLoc": "fu-zhu-li-liang",
+    "name": "辅助力量",
+    "description": "自己的能力变化每提高1阶，\n此招式的威力就会提高20。"
+  },
+  {
+    "id": "501",
+    "slug": "quick-guard",
+    "slugLoc": "kuai-su-fang-shou",
+    "name": "快速防守",
+    "description": "在使用的回合内，\n会保护自己和同伴不受先制招式影响。"
+  },
+  {
+    "id": "502",
+    "slug": "ally-switch",
+    "slugLoc": "jiao-huan-chang-di",
+    "name": "交换场地",
+    "description": "会将自己和同伴的位置互换。\n连续使用时，成功率会变为\n上次使用时的1/3。"
+  },
+  {
+    "id": "503",
+    "slug": "scald",
+    "slugLoc": "re-shui",
+    "name": "热水",
+    "description": "有30%的机率会让对手陷入灼伤状态。\n会治愈对手的冰冻状态。\n使用后会治愈自己的冰冻状态。"
+  },
+  {
+    "id": "504",
+    "slug": "shell-smash",
+    "slugLoc": "po-ke",
+    "name": "破壳",
+    "description": "会让自己的防御、特防降低1阶，\n攻击、特攻、速度提高2阶。"
+  },
+  {
+    "id": "505",
+    "slug": "heal-pulse",
+    "slugLoc": "zhi-yu-bo-dong",
+    "name": "治愈波动",
+    "description": "会让对手的HP回复最大HP的1/2。"
+  },
+  {
+    "id": "506",
+    "slug": "hex",
+    "slugLoc": "huo-bu-dan-xing",
+    "name": "祸不单行",
+    "description": "对手为异常状态时，\n威力会变为2倍。"
+  },
+  {
+    "id": "507",
+    "slug": "sky-drop",
+    "slugLoc": "zi-you-luo-ti",
+    "name": "自由落体",
+    "description": ""
+  },
+  {
+    "id": "508",
+    "slug": "shift-gear",
+    "slugLoc": "huan-dang",
+    "name": "换档",
+    "description": ""
+  },
+  {
+    "id": "509",
+    "slug": "circle-throw",
+    "slugLoc": "ba-tou",
+    "name": "巴投",
+    "description": "若对手有后备宝可梦，\n则会让对手随机进行替换。"
+  },
+  {
+    "id": "510",
+    "slug": "incinerate",
+    "slugLoc": "shao-jing",
+    "name": "烧净",
+    "description": ""
+  },
+  {
+    "id": "511",
+    "slug": "quash",
+    "slugLoc": "yan-hou",
+    "name": "延后",
+    "description": "会让对手的行动顺序\n变为该回合的最后。"
+  },
+  {
+    "id": "512",
+    "slug": "acrobatics",
+    "slugLoc": "za-ji",
+    "name": "杂技",
+    "description": "若自己没有携带道具，\n则威力会变为2倍。"
+  },
+  {
+    "id": "513",
+    "slug": "reflect-type",
+    "slugLoc": "jing-mian-shu-xing",
+    "name": "镜面属性",
+    "description": "会让自己的属性变为和对手相同的属性。"
+  },
+  {
+    "id": "514",
+    "slug": "retaliate",
+    "slugLoc": "bao-chou",
+    "name": "报仇",
+    "description": ""
+  },
+  {
+    "id": "515",
+    "slug": "final-gambit",
+    "slugLoc": "bo-ming",
+    "name": "搏命",
+    "description": "自己会陷入昏厥，\n且会给予相当于当时HP剩余量的伤害。"
+  },
+  {
+    "id": "516",
+    "slug": "bestow",
+    "slugLoc": "chuan-di-li-wu",
+    "name": "传递礼物",
+    "description": ""
+  },
+  {
+    "id": "517",
+    "slug": "inferno",
+    "slugLoc": "lie-huo-shen-yuan",
+    "name": "烈火深渊",
+    "description": "会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "518",
+    "slug": "water-pledge",
+    "slugLoc": "shui-zhi-shi-yue",
+    "name": "水之誓约",
+    "description": ""
+  },
+  {
+    "id": "519",
+    "slug": "fire-pledge",
+    "slugLoc": "huo-zhi-shi-yue",
+    "name": "火之誓约",
+    "description": ""
+  },
+  {
+    "id": "520",
+    "slug": "grass-pledge",
+    "slugLoc": "cao-zhi-shi-yue",
+    "name": "草之誓约",
+    "description": ""
+  },
+  {
+    "id": "521",
+    "slug": "volt-switch",
+    "slugLoc": "fu-te-ti-huan",
+    "name": "伏特替换",
+    "description": "攻击后，会和同行队伍中的\n其他宝可梦进行替换。"
+  },
+  {
+    "id": "522",
+    "slug": "struggle-bug",
+    "slugLoc": "chong-zhi-di-kang",
+    "name": "虫之抵抗",
+    "description": "会让对手的特攻降低1阶。"
+  },
+  {
+    "id": "523",
+    "slug": "bulldoze",
+    "slugLoc": "chong-ta",
+    "name": "重踏",
+    "description": "会让对手的速度降低1阶。\n青草场地状态时，\n威力会变为1/2。"
+  },
+  {
+    "id": "524",
+    "slug": "frost-breath",
+    "slugLoc": "bing-xi",
+    "name": "冰息",
+    "description": "必定会击中要害。"
+  },
+  {
+    "id": "525",
+    "slug": "dragon-tail",
+    "slugLoc": "long-wei",
+    "name": "龙尾",
+    "description": "若对手有后备宝可梦，\n则会让对手随机进行替换。"
+  },
+  {
+    "id": "526",
+    "slug": "work-up",
+    "slugLoc": "zi-wo-ji-li",
+    "name": "自我激励",
+    "description": ""
+  },
+  {
+    "id": "527",
+    "slug": "electroweb",
+    "slugLoc": "dian-wang",
+    "name": "电网",
+    "description": "会让对手的速度降低1阶。"
+  },
+  {
+    "id": "528",
+    "slug": "wild-charge",
+    "slugLoc": "feng-kuang-fu-te",
+    "name": "疯狂伏特",
+    "description": "自己也会受到给予的伤害的1/4。"
+  },
+  {
+    "id": "529",
+    "slug": "drill-run",
+    "slugLoc": "zhi-chong-zuan",
+    "name": "直冲钻",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "530",
+    "slug": "dual-chop",
+    "slugLoc": "er-lian-pi",
+    "name": "二连劈",
+    "description": ""
+  },
+  {
+    "id": "531",
+    "slug": "heart-stamp",
+    "slugLoc": "ai-xin-yin-zhang",
+    "name": "爱心印章",
+    "description": ""
+  },
+  {
+    "id": "532",
+    "slug": "horn-leech",
+    "slugLoc": "mu-jiao",
+    "name": "木角",
+    "description": "会让自己的HP回复\n给予对手伤害的1/2。"
+  },
+  {
+    "id": "533",
+    "slug": "sacred-sword",
+    "slugLoc": "sheng-jian",
+    "name": "圣剑",
+    "description": "会无视对手的能力变化给予伤害。"
+  },
+  {
+    "id": "534",
+    "slug": "razor-shell",
+    "slugLoc": "bei-ke-ren",
+    "name": "贝壳刃",
+    "description": "有50%的机率会让对手的防御降低1阶。"
+  },
+  {
+    "id": "535",
+    "slug": "heat-crash",
+    "slugLoc": "gao-wen-chong-ya",
+    "name": "高温重压",
+    "description": "自己比对手越重，威力就会越大。\n威力为40～120。\n对变小状态的对手的\n威力会变为2倍，且必定会命中。"
+  },
+  {
+    "id": "536",
+    "slug": "leaf-tornado",
+    "slugLoc": "qing-cao-jiao-ban-qi",
+    "name": "青草搅拌器",
+    "description": ""
+  },
+  {
+    "id": "537",
+    "slug": "steamroller",
+    "slugLoc": "feng-kuang-gun-ya",
+    "name": "疯狂滚压",
+    "description": ""
+  },
+  {
+    "id": "538",
+    "slug": "cotton-guard",
+    "slugLoc": "mian-hua-fang-shou",
+    "name": "棉花防守",
+    "description": "会让自己的防御提高3阶。"
+  },
+  {
+    "id": "539",
+    "slug": "night-daze",
+    "slugLoc": "an-hei-bao-po",
+    "name": "暗黑爆破",
+    "description": "有40%的机率会让对手的命中率降低1阶。"
+  },
+  {
+    "id": "540",
+    "slug": "psystrike",
+    "slugLoc": "jing-shen-ji-po",
+    "name": "精神击破",
+    "description": ""
+  },
+  {
+    "id": "541",
+    "slug": "tail-slap",
+    "slugLoc": "sao-wei-pai-da",
+    "name": "扫尾拍打",
+    "description": "会连续攻击2～5次。"
+  },
+  {
+    "id": "542",
+    "slug": "hurricane",
+    "slugLoc": "bao-feng",
+    "name": "暴风",
+    "description": "有30%的机率会让对手陷入混乱状态。\n若为下雨状态，则必定会命中对手。\n也会击中空中状态的对手。"
+  },
+  {
+    "id": "543",
+    "slug": "head-charge",
+    "slugLoc": "bao-zha-tou-tu-ji",
+    "name": "爆炸头突击",
+    "description": ""
+  },
+  {
+    "id": "544",
+    "slug": "gear-grind",
+    "slugLoc": "chi-lun-fei-pan",
+    "name": "齿轮飞盘",
+    "description": ""
+  },
+  {
+    "id": "545",
+    "slug": "searing-shot",
+    "slugLoc": "huo-yan-dan",
+    "name": "火焰弹",
+    "description": ""
+  },
+  {
+    "id": "546",
+    "slug": "techno-blast",
+    "slugLoc": "gao-ke-ji-guang-pao",
+    "name": "高科技光炮",
+    "description": ""
+  },
+  {
+    "id": "547",
+    "slug": "relic-song",
+    "slugLoc": "gu-lao-zhi-ge",
+    "name": "古老之歌",
+    "description": ""
+  },
+  {
+    "id": "548",
+    "slug": "secret-sword",
+    "slugLoc": "shen-mi-zhi-jian",
+    "name": "神秘之剑",
+    "description": ""
+  },
+  {
+    "id": "549",
+    "slug": "glaciate",
+    "slugLoc": "bing-feng-shi-jie",
+    "name": "冰封世界",
+    "description": ""
+  },
+  {
+    "id": "550",
+    "slug": "bolt-strike",
+    "slugLoc": "lei-ji",
+    "name": "雷击",
+    "description": ""
+  },
+  {
+    "id": "551",
+    "slug": "blue-flare",
+    "slugLoc": "qing-yan",
+    "name": "青焰",
+    "description": ""
+  },
+  {
+    "id": "552",
+    "slug": "fiery-dance",
+    "slugLoc": "huo-zhi-wu",
+    "name": "火之舞",
+    "description": "有50%的机率会让自己的特攻提高1阶。"
+  },
+  {
+    "id": "553",
+    "slug": "freeze-shock",
+    "slugLoc": "bing-dong-fu-te",
+    "name": "冰冻伏特",
+    "description": ""
+  },
+  {
+    "id": "554",
+    "slug": "ice-burn",
+    "slugLoc": "ji-han-leng-yan",
+    "name": "极寒冷焰",
+    "description": ""
+  },
+  {
+    "id": "555",
+    "slug": "snarl",
+    "slugLoc": "da-sheng-pao-xiao",
+    "name": "大声咆哮",
+    "description": "会让对手的特攻降低1阶。"
+  },
+  {
+    "id": "556",
+    "slug": "icicle-crash",
+    "slugLoc": "bing-zhu-zhui-ji",
+    "name": "冰柱坠击",
+    "description": "有30%的机率会让对手畏缩。"
+  },
+  {
+    "id": "557",
+    "slug": "v-create",
+    "slugLoc": "vre-yan",
+    "name": "Ｖ热焰",
+    "description": ""
+  },
+  {
+    "id": "558",
+    "slug": "fusion-flare",
+    "slugLoc": "jiao-cuo-huo-yan",
+    "name": "交错火焰",
+    "description": ""
+  },
+  {
+    "id": "559",
+    "slug": "fusion-bolt",
+    "slugLoc": "jiao-cuo-shan-dian",
+    "name": "交错闪电",
+    "description": ""
+  },
+  {
+    "id": "560",
+    "slug": "flying-press",
+    "slugLoc": "fei-shen-chong-ya",
+    "name": "飞身重压",
+    "description": "会结合此招式的属性和飞行属性\n这2种属性的相克关系来决定伤害。\n对变小状态的对手的\n威力会变为2倍，且必定会命中。"
+  },
+  {
+    "id": "561",
+    "slug": "mat-block",
+    "slugLoc": "xian-ta-ta-mi",
+    "name": "掀榻榻米",
+    "description": ""
+  },
+  {
+    "id": "562",
+    "slug": "belch",
+    "slugLoc": "da-ge",
+    "name": "打嗝",
+    "description": "若在战斗中没有吃树果，\n则此招式会失败。"
+  },
+  {
+    "id": "563",
+    "slug": "rototiller",
+    "slugLoc": "geng-di",
+    "name": "耕地",
+    "description": ""
+  },
+  {
+    "id": "564",
+    "slug": "sticky-web",
+    "slugLoc": "nian-nian-wang",
+    "name": "黏黏网",
+    "description": "会让对手的场地变为黏黏网状态。"
+  },
+  {
+    "id": "565",
+    "slug": "fell-stinger",
+    "slugLoc": "zhi-ming-zhen-ci",
+    "name": "致命针刺",
+    "description": "用此招式打倒对手时，\n攻击会提高3阶。"
+  },
+  {
+    "id": "566",
+    "slug": "phantom-force",
+    "slugLoc": "qian-ling-qi-xi",
+    "name": "潜灵奇袭",
+    "description": "会在使用的回合变为潜伏状态，\n并在下一回合进行攻击。\n会解除守住、看穿等效果并进行攻击。"
+  },
+  {
+    "id": "567",
+    "slug": "trick-or-treat",
+    "slugLoc": "wan-sheng-ye",
+    "name": "万圣夜",
+    "description": "会让对手陷入万圣夜状态。"
+  },
+  {
+    "id": "568",
+    "slug": "noble-roar",
+    "slugLoc": "zhan-hou",
+    "name": "战吼",
+    "description": "会让对手的攻击、特攻降低1阶。"
+  },
+  {
+    "id": "569",
+    "slug": "ion-deluge",
+    "slugLoc": "deng-chi-zi-yu",
+    "name": "等离子浴",
+    "description": ""
+  },
+  {
+    "id": "570",
+    "slug": "parabolic-charge",
+    "slugLoc": "pao-wu-mian-chong-dian",
+    "name": "抛物面充电",
+    "description": "会让自己的HP回复\n给予对手伤害的1/2。"
+  },
+  {
+    "id": "571",
+    "slug": "forests-curse",
+    "slugLoc": "sen-lin-zhou-shu",
+    "name": "森林咒术",
+    "description": "会让对手陷入森林咒术状态。"
+  },
+  {
+    "id": "572",
+    "slug": "petal-blizzard",
+    "slugLoc": "luo-ying-bin-fen",
+    "name": "落英缤纷",
+    "description": ""
+  },
+  {
+    "id": "573",
+    "slug": "freeze-dry",
+    "slugLoc": "leng-dong-gan-zao",
+    "name": "冷冻干燥",
+    "description": "对水属性的对手也会效果绝佳。"
+  },
+  {
+    "id": "574",
+    "slug": "disarming-voice",
+    "slugLoc": "mei-huo-zhi-sheng",
+    "name": "魅惑之声",
+    "description": ""
+  },
+  {
+    "id": "575",
+    "slug": "parting-shot",
+    "slugLoc": "pao-xia-hen-hua",
+    "name": "抛下狠话",
+    "description": "会让对手的攻击、特攻降低1阶。\n自己会和同行队伍中的其他宝可梦进行替换。"
+  },
+  {
+    "id": "576",
+    "slug": "topsy-turvy",
+    "slugLoc": "dian-dao",
+    "name": "颠倒",
+    "description": ""
+  },
+  {
+    "id": "577",
+    "slug": "draining-kiss",
+    "slugLoc": "xi-qu-zhi-wen",
+    "name": "吸取之吻",
+    "description": "会让自己的HP回复\n给予对手伤害的3/4。"
+  },
+  {
+    "id": "578",
+    "slug": "crafty-shield",
+    "slugLoc": "xi-fa-fang-shou",
+    "name": "戏法防守",
+    "description": ""
+  },
+  {
+    "id": "579",
+    "slug": "flower-shield",
+    "slugLoc": "xian-hua-fang-shou",
+    "name": "鲜花防守",
+    "description": ""
+  },
+  {
+    "id": "580",
+    "slug": "grassy-terrain",
+    "slugLoc": "qing-cao-chang-di",
+    "name": "青草场地",
+    "description": "在5回合内，\n会让整个场地变为青草场地状态。"
+  },
+  {
+    "id": "581",
+    "slug": "misty-terrain",
+    "slugLoc": "bo-wu-chang-di",
+    "name": "薄雾场地",
+    "description": "在5回合内，\n会让整个场地变为薄雾场地状态。"
+  },
+  {
+    "id": "582",
+    "slug": "electrify",
+    "slugLoc": "shu-dian",
+    "name": "输电",
+    "description": "若此招式在对手使出招式前命中，\n则在该回合，对手的招式会变为电属性。"
+  },
+  {
+    "id": "583",
+    "slug": "play-rough",
+    "slugLoc": "xi-nao",
+    "name": "嬉闹",
+    "description": "有10%的机率会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "584",
+    "slug": "fairy-wind",
+    "slugLoc": "yao-jing-zhi-feng",
+    "name": "妖精之风",
+    "description": ""
+  },
+  {
+    "id": "585",
+    "slug": "moonblast",
+    "slugLoc": "yue-liang-zhi-li",
+    "name": "月亮之力",
+    "description": "有10%的机率会让对手的特攻降低1阶。"
+  },
+  {
+    "id": "586",
+    "slug": "boomburst",
+    "slugLoc": "bao-yin-bo",
+    "name": "爆音波",
+    "description": ""
+  },
+  {
+    "id": "587",
+    "slug": "fairy-lock",
+    "slugLoc": "yao-jing-zhi-suo",
+    "name": "妖精之锁",
+    "description": "会让场上的所有宝可梦\n都陷入妖精之锁状态。"
+  },
+  {
+    "id": "588",
+    "slug": "kings-shield",
+    "slugLoc": "wang-zhe-dun-pai",
+    "name": "王者盾牌",
+    "description": "在使用的回合内，会在对手的招式中守护自己，\n且会让对自己使出接触类招式的对手的攻击降低1阶。\n会进行形态变化，变为盾牌形态。\n连续使用时，成功率会变为上次使用时的1/3。"
+  },
+  {
+    "id": "589",
+    "slug": "play-nice",
+    "slugLoc": "he-mu-xiang-chu",
+    "name": "和睦相处",
+    "description": ""
+  },
+  {
+    "id": "590",
+    "slug": "confide",
+    "slugLoc": "mi-yu",
+    "name": "密语",
+    "description": ""
+  },
+  {
+    "id": "591",
+    "slug": "diamond-storm",
+    "slugLoc": "zuan-shi-feng-bao",
+    "name": "钻石风暴",
+    "description": ""
+  },
+  {
+    "id": "592",
+    "slug": "steam-eruption",
+    "slugLoc": "zheng-qi-bao-zha",
+    "name": "蒸汽爆炸",
+    "description": ""
+  },
+  {
+    "id": "593",
+    "slug": "hyperspace-hole",
+    "slugLoc": "yi-ci-yuan-dong",
+    "name": "异次元洞",
+    "description": ""
+  },
+  {
+    "id": "594",
+    "slug": "water-shuriken",
+    "slugLoc": "fei-shui-shou-li-jian",
+    "name": "飞水手里剑",
+    "description": "会连续攻击2～5次。"
+  },
+  {
+    "id": "595",
+    "slug": "mystical-fire",
+    "slugLoc": "mo-fa-huo-yan",
+    "name": "魔法火焰",
+    "description": "会让对手的特攻降低1阶。"
+  },
+  {
+    "id": "596",
+    "slug": "spiky-shield",
+    "slugLoc": "jian-ci-fang-shou",
+    "name": "尖刺防守",
+    "description": "在使用的回合内，会在对手的招式中守护自己，\n且会给予对自己使出接触类招式的对手\n其最大HP的1/8的伤害。\n连续使用时，成功率会变为上次使用时的1/3。"
+  },
+  {
+    "id": "597",
+    "slug": "aromatic-mist",
+    "slugLoc": "fang-xiang-bo-wu",
+    "name": "芳香薄雾",
+    "description": "会让同伴的特防提高1阶。"
+  },
+  {
+    "id": "598",
+    "slug": "eerie-impulse",
+    "slugLoc": "guai-yi-dian-bo",
+    "name": "怪异电波",
+    "description": "会让对手的特攻降低2阶。"
+  },
+  {
+    "id": "599",
+    "slug": "venom-drench",
+    "slugLoc": "du-ye-xian-jing",
+    "name": "毒液陷阱",
+    "description": ""
+  },
+  {
+    "id": "600",
+    "slug": "powder",
+    "slugLoc": "fen-chen",
+    "name": "粉尘",
+    "description": ""
+  },
+  {
+    "id": "601",
+    "slug": "geomancy",
+    "slugLoc": "da-di-zhang-kong",
+    "name": "大地掌控",
+    "description": ""
+  },
+  {
+    "id": "602",
+    "slug": "magnetic-flux",
+    "slugLoc": "ci-chang-cao-kong",
+    "name": "磁场操控",
+    "description": "会让特性为正电和负电的\n自己和同伴的防御、特防提高1阶。"
+  },
+  {
+    "id": "603",
+    "slug": "happy-hour",
+    "slugLoc": "huan-le-shi-guang",
+    "name": "欢乐时光",
+    "description": ""
+  },
+  {
+    "id": "604",
+    "slug": "electric-terrain",
+    "slugLoc": "dian-qi-chang-di",
+    "name": "电气场地",
+    "description": "在5回合内，\n会让整个场地变为电气场地状态。"
+  },
+  {
+    "id": "605",
+    "slug": "dazzling-gleam",
+    "slugLoc": "mo-fa-shan-yao",
+    "name": "魔法闪耀",
+    "description": ""
+  },
+  {
+    "id": "606",
+    "slug": "celebrate",
+    "slugLoc": "qing-zhu",
+    "name": "庆祝",
+    "description": ""
+  },
+  {
+    "id": "607",
+    "slug": "hold-hands",
+    "slugLoc": "qian-shou",
+    "name": "牵手",
+    "description": ""
+  },
+  {
+    "id": "608",
+    "slug": "baby-doll-eyes",
+    "slugLoc": "yuan-tong",
+    "name": "圆瞳",
+    "description": "会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "609",
+    "slug": "nuzzle",
+    "slugLoc": "ceng-ceng-lian-jia",
+    "name": "蹭蹭脸颊",
+    "description": "会让对手陷入麻痹状态。"
+  },
+  {
+    "id": "610",
+    "slug": "hold-back",
+    "slugLoc": "shou-xia-liu-qing",
+    "name": "手下留情",
+    "description": ""
+  },
+  {
+    "id": "611",
+    "slug": "infestation",
+    "slugLoc": "jiu-chan-bu-xiu",
+    "name": "纠缠不休",
+    "description": "会让对手陷入束缚状态。"
+  },
+  {
+    "id": "612",
+    "slug": "power-up-punch",
+    "slugLoc": "zeng-qiang-quan",
+    "name": "增强拳",
+    "description": ""
+  },
+  {
+    "id": "613",
+    "slug": "oblivion-wing",
+    "slugLoc": "gui-tian-zhi-yi",
+    "name": "归天之翼",
+    "description": ""
+  },
+  {
+    "id": "614",
+    "slug": "thousand-arrows",
+    "slugLoc": "qian-jian-qi-fa",
+    "name": "千箭齐发",
+    "description": ""
+  },
+  {
+    "id": "615",
+    "slug": "thousand-waves",
+    "slugLoc": "qian-bo-ji-dang",
+    "name": "千波激荡",
+    "description": ""
+  },
+  {
+    "id": "616",
+    "slug": "lands-wrath",
+    "slugLoc": "da-di-shen-li",
+    "name": "大地神力",
+    "description": ""
+  },
+  {
+    "id": "617",
+    "slug": "light-of-ruin",
+    "slugLoc": "po-mie-zhi-guang",
+    "name": "破灭之光",
+    "description": "自己也会受到给予的伤害的1/2。"
+  },
+  {
+    "id": "618",
+    "slug": "origin-pulse",
+    "slugLoc": "gen-yuan-bo-dong",
+    "name": "根源波动",
+    "description": ""
+  },
+  {
+    "id": "619",
+    "slug": "precipice-blades",
+    "slugLoc": "duan-ya-zhi-jian",
+    "name": "断崖之剑",
+    "description": ""
+  },
+  {
+    "id": "620",
+    "slug": "dragon-ascent",
+    "slugLoc": "hua-long-dian-jing",
+    "name": "画龙点睛",
+    "description": ""
+  },
+  {
+    "id": "621",
+    "slug": "hyperspace-fury",
+    "slugLoc": "yi-ci-yuan-meng-gong",
+    "name": "异次元猛攻",
+    "description": ""
+  },
+  {
+    "id": "659",
+    "slug": "shore-up",
+    "slugLoc": "ji-sha",
+    "name": "集沙",
+    "description": ""
+  },
+  {
+    "id": "660",
+    "slug": "first-impression",
+    "slugLoc": "ying-tou-yi-ji",
+    "name": "迎头一击",
+    "description": "若不是出场后第一个使出的招式，\n则会失败。"
+  },
+  {
+    "id": "661",
+    "slug": "baneful-bunker",
+    "slugLoc": "diao-bao-661",
+    "name": "碉堡",
+    "description": "在使用的回合内，会在对手的招式中守护自己。\n且会让对自己使出接触类招式的对手陷入中毒状态。\n连续使用时，成功率会变为上次使用时的1/3。"
+  },
+  {
+    "id": "662",
+    "slug": "spirit-shackle",
+    "slugLoc": "feng-ying",
+    "name": "缝影",
+    "description": "会让对手陷入无法逃走状态。"
+  },
+  {
+    "id": "663",
+    "slug": "darkest-lariat",
+    "slugLoc": "ddjin-gou-bi",
+    "name": "ＤＤ金勾臂",
+    "description": "会无视对手的能力变化给予伤害。"
+  },
+  {
+    "id": "664",
+    "slug": "sparkling-aria",
+    "slugLoc": "pao-ying-de-yong-tan-diao",
+    "name": "泡影的咏叹调",
+    "description": "会治愈对手的灼伤状态。"
+  },
+  {
+    "id": "665",
+    "slug": "ice-hammer",
+    "slugLoc": "bing-chui",
+    "name": "冰锤",
+    "description": "会让自己的速度降低1阶。"
+  },
+  {
+    "id": "666",
+    "slug": "floral-healing",
+    "slugLoc": "hua-liao",
+    "name": "花疗",
+    "description": ""
+  },
+  {
+    "id": "667",
+    "slug": "high-horsepower",
+    "slugLoc": "shi-wan-ma-li",
+    "name": "十万马力",
+    "description": ""
+  },
+  {
+    "id": "668",
+    "slug": "strength-sap",
+    "slugLoc": "xi-qu-li-liang",
+    "name": "吸取力量",
+    "description": "会让自己的HP回复\n相当于对手的攻击的数值。\n会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "669",
+    "slug": "solar-blade",
+    "slugLoc": "ri-guang-ren",
+    "name": "日光刃",
+    "description": "会在使用的回合变为积蓄状态，\n并在下一回合进行攻击。\n若为大晴天状态，则不会变为积蓄状态，\n并能立即进行攻击。\n若为其他天气，则威力会变为1/2。"
+  },
+  {
+    "id": "670",
+    "slug": "leafage",
+    "slugLoc": "shu-ye",
+    "name": "树叶",
+    "description": ""
+  },
+  {
+    "id": "671",
+    "slug": "spotlight",
+    "slugLoc": "ju-guang-deng",
+    "name": "聚光灯",
+    "description": ""
+  },
+  {
+    "id": "672",
+    "slug": "toxic-thread",
+    "slugLoc": "du-si",
+    "name": "毒丝",
+    "description": "会让对手的速度降低2阶。\n会让对手陷入中毒状态。"
+  },
+  {
+    "id": "673",
+    "slug": "laser-focus",
+    "slugLoc": "mo-li",
+    "name": "磨砺",
+    "description": ""
+  },
+  {
+    "id": "674",
+    "slug": "gear-up",
+    "slugLoc": "fu-zhu-chi-lun",
+    "name": "辅助齿轮",
+    "description": ""
+  },
+  {
+    "id": "675",
+    "slug": "throat-chop",
+    "slugLoc": "shen-yuan-tu-ci",
+    "name": "深渊突刺",
+    "description": "会让对手陷入深渊突刺状态。"
+  },
+  {
+    "id": "676",
+    "slug": "pollen-puff",
+    "slugLoc": "hua-fen-tuan",
+    "name": "花粉团",
+    "description": "对同伴使用时不会给予伤害，\n而是会让该同伴的HP\n回复其最大HP的1/2。"
+  },
+  {
+    "id": "677",
+    "slug": "anchor-shot",
+    "slugLoc": "zhi-mao",
+    "name": "掷锚",
+    "description": ""
+  },
+  {
+    "id": "678",
+    "slug": "psychic-terrain",
+    "slugLoc": "jing-shen-chang-di",
+    "name": "精神场地",
+    "description": "在5回合内，\n会让整个场地变为精神场地状态。"
+  },
+  {
+    "id": "679",
+    "slug": "lunge",
+    "slugLoc": "meng-bu",
+    "name": "猛扑",
+    "description": "会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "680",
+    "slug": "fire-lash",
+    "slugLoc": "huo-yan-bian",
+    "name": "火焰鞭",
+    "description": "会让对手的防御降低1阶。"
+  },
+  {
+    "id": "681",
+    "slug": "power-trip",
+    "slugLoc": "xiao-zhang",
+    "name": "嚣张",
+    "description": "自己的能力变化每提高1阶，\n此招式的威力就会提高20。"
+  },
+  {
+    "id": "682",
+    "slug": "burn-up",
+    "slugLoc": "ran-jin",
+    "name": "燃尽",
+    "description": "自己的火属性会消失。\n使用后会治愈自己的冰冻状态。\n若自己不是火属性，则会失败。"
+  },
+  {
+    "id": "683",
+    "slug": "speed-swap",
+    "slugLoc": "su-du-hu-huan",
+    "name": "速度互换",
+    "description": "会将自己和对手的速度互换。"
+  },
+  {
+    "id": "684",
+    "slug": "smart-strike",
+    "slugLoc": "xiu-chang-zhi-jiao",
+    "name": "修长之角",
+    "description": "必定会命中对手。"
+  },
+  {
+    "id": "685",
+    "slug": "purify",
+    "slugLoc": "jing-hua",
+    "name": "净化",
+    "description": ""
+  },
+  {
+    "id": "686",
+    "slug": "revelation-dance",
+    "slugLoc": "jue-xing-zhi-wu",
+    "name": "觉醒之舞",
+    "description": ""
+  },
+  {
+    "id": "687",
+    "slug": "core-enforcer",
+    "slugLoc": "he-xin-cheng-fa-zhe",
+    "name": "核心惩罚者",
+    "description": ""
+  },
+  {
+    "id": "688",
+    "slug": "trop-kick",
+    "slugLoc": "re-dai-ti",
+    "name": "热带踢",
+    "description": "会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "689",
+    "slug": "instruct",
+    "slugLoc": "hao-ling",
+    "name": "号令",
+    "description": "会让对手再次使用\n最近一次使用的招式。"
+  },
+  {
+    "id": "690",
+    "slug": "beak-blast",
+    "slugLoc": "niao-zui-jia-nong-pao",
+    "name": "鸟嘴加农炮",
+    "description": "在使用招式前受到接触类招式影响时，\n会让该对手陷入灼伤状态。"
+  },
+  {
+    "id": "691",
+    "slug": "clanging-scales",
+    "slugLoc": "lin-pian-zao-yin",
+    "name": "鳞片噪音",
+    "description": "会让自己的防御降低1阶。"
+  },
+  {
+    "id": "692",
+    "slug": "dragon-hammer",
+    "slugLoc": "long-chui",
+    "name": "龙锤",
+    "description": ""
+  },
+  {
+    "id": "693",
+    "slug": "brutal-swing",
+    "slugLoc": "kuang-wu-hui-da",
+    "name": "狂舞挥打",
+    "description": ""
+  },
+  {
+    "id": "694",
+    "slug": "aurora-veil",
+    "slugLoc": "ji-guang-mu",
+    "name": "极光幕",
+    "description": "在5回合内，\n会让我方场地变为极光幕状态。\n只有在下雪状态时才能使用。"
+  },
+  {
+    "id": "704",
+    "slug": "shell-trap",
+    "slugLoc": "xian-jing-jia-ke",
+    "name": "陷阱甲壳",
+    "description": ""
+  },
+  {
+    "id": "705",
+    "slug": "fleur-cannon",
+    "slugLoc": "hua-duo-jia-nong-pao",
+    "name": "花朵加农炮",
+    "description": ""
+  },
+  {
+    "id": "706",
+    "slug": "psychic-fangs",
+    "slugLoc": "jing-shen-zhi-ya",
+    "name": "精神之牙",
+    "description": "会解除对手场地的光墙、反射壁、\n极光幕状态并进行攻击。"
+  },
+  {
+    "id": "707",
+    "slug": "stomping-tantrum",
+    "slugLoc": "duo-jiao",
+    "name": "跺脚",
+    "description": "若上一回合自己无法行动、\n招式落空或失败，\n则威力会变为2倍。"
+  },
+  {
+    "id": "708",
+    "slug": "shadow-bone",
+    "slugLoc": "an-ying-zhi-gu",
+    "name": "暗影之骨",
+    "description": ""
+  },
+  {
+    "id": "709",
+    "slug": "accelerock",
+    "slugLoc": "chong-yan",
+    "name": "冲岩",
+    "description": ""
+  },
+  {
+    "id": "710",
+    "slug": "liquidation",
+    "slugLoc": "shui-liu-lie-po",
+    "name": "水流裂破",
+    "description": "有20%的机率会让对手的防御降低1阶。"
+  },
+  {
+    "id": "711",
+    "slug": "prismatic-laser",
+    "slugLoc": "leng-jing-lei-she",
+    "name": "棱镜镭射",
+    "description": ""
+  },
+  {
+    "id": "712",
+    "slug": "spectral-thief",
+    "slugLoc": "an-ying-tou-dao",
+    "name": "暗影偷盗",
+    "description": ""
+  },
+  {
+    "id": "713",
+    "slug": "sunsteel-strike",
+    "slugLoc": "liu-xing-shan-chong",
+    "name": "流星闪冲",
+    "description": ""
+  },
+  {
+    "id": "714",
+    "slug": "moongeist-beam",
+    "slugLoc": "an-ying-zhi-guang",
+    "name": "暗影之光",
+    "description": ""
+  },
+  {
+    "id": "715",
+    "slug": "tearful-look",
+    "slugLoc": "lei-yan-wang-wang",
+    "name": "泪眼汪汪",
+    "description": "会让对手的攻击、特攻降低1阶。\n会无视对手的闪避率、守住等击中对手。"
+  },
+  {
+    "id": "716",
+    "slug": "zing-zap",
+    "slugLoc": "ma-ma-ci-ci",
+    "name": "麻麻刺刺",
+    "description": ""
+  },
+  {
+    "id": "717",
+    "slug": "natures-madness",
+    "slugLoc": "zi-ran-zhi-nu",
+    "name": "自然之怒",
+    "description": ""
+  },
+  {
+    "id": "718",
+    "slug": "multi-attack",
+    "slugLoc": "duo-shu-xing-gong-ji",
+    "name": "多属性攻击",
+    "description": ""
+  },
+  {
+    "id": "720",
+    "slug": "mind-blown",
+    "slugLoc": "liang-bao-da-tou",
+    "name": "惊爆大头",
+    "description": ""
+  },
+  {
+    "id": "721",
+    "slug": "plasma-fists",
+    "slugLoc": "deng-chi-zi-shan-dian-quan",
+    "name": "等离子闪电拳",
+    "description": ""
+  },
+  {
+    "id": "722",
+    "slug": "photon-geyser",
+    "slugLoc": "guang-zi-pen-yong",
+    "name": "光子喷涌",
+    "description": ""
+  },
+  {
+    "id": "742",
+    "slug": "double-iron-bash",
+    "slugLoc": "gang-quan-shuang-ji",
+    "name": "钢拳双击",
+    "description": ""
+  },
+  {
+    "id": "744",
+    "slug": "dynamax-cannon",
+    "slugLoc": "ji-ju-pao",
+    "name": "极巨炮",
+    "description": ""
+  },
+  {
+    "id": "745",
+    "slug": "snipe-shot",
+    "slugLoc": "ju-ji",
+    "name": "狙击",
+    "description": ""
+  },
+  {
+    "id": "746",
+    "slug": "jaw-lock",
+    "slugLoc": "jin-yao-bu-fang",
+    "name": "紧咬不放",
+    "description": ""
+  },
+  {
+    "id": "747",
+    "slug": "stuff-cheeks",
+    "slugLoc": "da-kuai-duo-yi",
+    "name": "大快朵颐",
+    "description": "会吃掉携带的树果。\n会让自己的防御提高2阶。\n若没有携带树果，则无法使用此招式。"
+  },
+  {
+    "id": "748",
+    "slug": "no-retreat",
+    "slugLoc": "bei-shui-yi-zhan",
+    "name": "背水一战",
+    "description": ""
+  },
+  {
+    "id": "749",
+    "slug": "tar-shot",
+    "slugLoc": "li-qing-she-ji",
+    "name": "沥青射击",
+    "description": ""
+  },
+  {
+    "id": "750",
+    "slug": "magic-powder",
+    "slugLoc": "mo-fa-fen",
+    "name": "魔法粉",
+    "description": "会让对手的属性变为超能力属性。"
+  },
+  {
+    "id": "751",
+    "slug": "dragon-darts",
+    "slugLoc": "long-jian",
+    "name": "龙箭",
+    "description": "会连续攻击2次。\n若对手有2只宝可梦，\n则会对它们各进行1次攻击。"
+  },
+  {
+    "id": "752",
+    "slug": "teatime",
+    "slugLoc": "cha-hui",
+    "name": "茶会",
+    "description": "场上的所有宝可梦都会\n吃掉并使用各自携带的树果。"
+  },
+  {
+    "id": "753",
+    "slug": "octolock",
+    "slugLoc": "shao-gu",
+    "name": "蛸固",
+    "description": ""
+  },
+  {
+    "id": "754",
+    "slug": "bolt-beak",
+    "slugLoc": "dian-hui",
+    "name": "电喙",
+    "description": ""
+  },
+  {
+    "id": "755",
+    "slug": "fishious-rend",
+    "slugLoc": "sai-yao",
+    "name": "鳃咬",
+    "description": ""
+  },
+  {
+    "id": "756",
+    "slug": "court-change",
+    "slugLoc": "huan-chang",
+    "name": "换场",
+    "description": ""
+  },
+  {
+    "id": "775",
+    "slug": "clangorous-soul",
+    "slugLoc": "hun-wu-lie-yin-bao",
+    "name": "魂舞烈音爆",
+    "description": "会让自己的HP减少最大HP的1/3，\n自己的攻击、防御、特攻、特防、\n速度提高1阶。\n若剩余HP不足，则会失败。"
+  },
+  {
+    "id": "776",
+    "slug": "body-press",
+    "slugLoc": "bu-ji",
+    "name": "扑击",
+    "description": "此招式会以防御的数值而不是\n攻击的数值来决定伤害。"
+  },
+  {
+    "id": "777",
+    "slug": "decorate",
+    "slugLoc": "zhuang-shi",
+    "name": "装饰",
+    "description": "会让对手的攻击、特攻提高2阶。"
+  },
+  {
+    "id": "778",
+    "slug": "drum-beating",
+    "slugLoc": "gu-ji",
+    "name": "鼓击",
+    "description": ""
+  },
+  {
+    "id": "779",
+    "slug": "snap-trap",
+    "slugLoc": "bu-shou-jia",
+    "name": "捕兽夹",
+    "description": "会让对手陷入束缚状态。"
+  },
+  {
+    "id": "780",
+    "slug": "pyro-ball",
+    "slugLoc": "huo-yan-qiu",
+    "name": "火焰球",
+    "description": ""
+  },
+  {
+    "id": "781",
+    "slug": "behemoth-blade",
+    "slugLoc": "ju-shou-zhan",
+    "name": "巨兽斩",
+    "description": ""
+  },
+  {
+    "id": "782",
+    "slug": "behemoth-bash",
+    "slugLoc": "ju-shou-dan",
+    "name": "巨兽弹",
+    "description": ""
+  },
+  {
+    "id": "783",
+    "slug": "aura-wheel",
+    "slugLoc": "qi-chang-lun",
+    "name": "气场轮",
+    "description": "会让自己的速度提高1阶。\n招式的属性会随莫鲁贝可的形态而改变。"
+  },
+  {
+    "id": "784",
+    "slug": "breaking-swipe",
+    "slugLoc": "guang-yu-po-pi",
+    "name": "广域破坏",
+    "description": "会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "785",
+    "slug": "branch-poke",
+    "slugLoc": "mu-zhi-tu-ci",
+    "name": "木枝突刺",
+    "description": ""
+  },
+  {
+    "id": "786",
+    "slug": "overdrive",
+    "slugLoc": "po-yin",
+    "name": "破音",
+    "description": ""
+  },
+  {
+    "id": "787",
+    "slug": "apple-acid",
+    "slugLoc": "ping-guo-suan",
+    "name": "苹果酸",
+    "description": "会让对手的特防降低1阶。"
+  },
+  {
+    "id": "788",
+    "slug": "grav-apple",
+    "slugLoc": "wan-you-yin-li",
+    "name": "万有引力",
+    "description": "会让对手的防御降低1阶。\n若为重力状态，则威力会变为1.5倍。"
+  },
+  {
+    "id": "789",
+    "slug": "spirit-break",
+    "slugLoc": "ling-hun-chong-ji",
+    "name": "灵魂冲击",
+    "description": ""
+  },
+  {
+    "id": "790",
+    "slug": "strange-steam",
+    "slugLoc": "shen-qi-zheng-qi",
+    "name": "神奇蒸汽",
+    "description": ""
+  },
+  {
+    "id": "791",
+    "slug": "life-dew",
+    "slugLoc": "sheng-ming-shui-di",
+    "name": "生命水滴",
+    "description": "会让自己和同伴的HP\n回复各自最大HP的1/4。"
+  },
+  {
+    "id": "792",
+    "slug": "obstruct",
+    "slugLoc": "lan-du",
+    "name": "拦堵",
+    "description": ""
+  },
+  {
+    "id": "793",
+    "slug": "false-surrender",
+    "slugLoc": "jia-gui-zhen-zhuang",
+    "name": "假跪真撞",
+    "description": ""
+  },
+  {
+    "id": "794",
+    "slug": "meteor-assault",
+    "slugLoc": "liu-xing-tu-ji",
+    "name": "流星突击",
+    "description": ""
+  },
+  {
+    "id": "795",
+    "slug": "eternabeam",
+    "slugLoc": "wu-ji-guang-shu",
+    "name": "无极光束",
+    "description": ""
+  },
+  {
+    "id": "796",
+    "slug": "steel-beam",
+    "slugLoc": "tie-ti-guang-xian",
+    "name": "铁蹄光线",
+    "description": "攻击后，会受到自己\n最大HP的1/2的伤害。"
+  },
+  {
+    "id": "797",
+    "slug": "expanding-force",
+    "slugLoc": "guang-yu-zhan-li",
+    "name": "广域战力",
+    "description": "若受到精神场地状态的效果影响，\n则威力会变为1.5倍，\n且会攻击全体对手。"
+  },
+  {
+    "id": "798",
+    "slug": "steel-roller",
+    "slugLoc": "tie-gun-lun",
+    "name": "铁滚轮",
+    "description": "若场上没有场地，则会失败。\n会解除场地。"
+  },
+  {
+    "id": "799",
+    "slug": "scale-shot",
+    "slugLoc": "lin-she",
+    "name": "鳞射",
+    "description": "会连续攻击2～5次。\n会让自己的防御降低1阶，\n速度提高1阶。"
+  },
+  {
+    "id": "800",
+    "slug": "meteor-beam",
+    "slugLoc": "liu-xing-guang-shu",
+    "name": "流星光束",
+    "description": "会在使用的回合变为积蓄状态，\n并在下一回合进行攻击。\n在使用的回合会让自己的特攻提高1阶。"
+  },
+  {
+    "id": "801",
+    "slug": "shell-side-arm",
+    "slugLoc": "bi-bei-wu-qi",
+    "name": "臂贝武器",
+    "description": "有20%的机率会让对手陷入中毒状态。\n若作为物理招式的伤害更大，\n则会变为物理招式。"
+  },
+  {
+    "id": "802",
+    "slug": "misty-explosion",
+    "slugLoc": "bo-wu-zha-lie",
+    "name": "薄雾炸裂",
+    "description": "使用后自己会陷入昏厥。\n若受到薄雾场地状态的效果影响，\n则威力会变为1.5倍。"
+  },
+  {
+    "id": "803",
+    "slug": "grassy-glide",
+    "slugLoc": "qing-cao-hua-ti",
+    "name": "青草滑梯",
+    "description": "若受到青草场地状态的效果影响，\n则会变为优先度+1。"
+  },
+  {
+    "id": "804",
+    "slug": "rising-voltage",
+    "slugLoc": "dian-li-shang-sheng",
+    "name": "电力上升",
+    "description": "若对手受到电气场地状态的效果影响，\n则威力会变为2倍。"
+  },
+  {
+    "id": "805",
+    "slug": "terrain-pulse",
+    "slugLoc": "da-di-bo-dong",
+    "name": "大地波动",
+    "description": "若自己受到场地的效果影响，\n则威力会变为2倍。\n属性会根据场地的种类而改变。"
+  },
+  {
+    "id": "806",
+    "slug": "skitter-smack",
+    "slugLoc": "pa-ji",
+    "name": "爬击",
+    "description": "会让对手的特攻降低1阶。"
+  },
+  {
+    "id": "807",
+    "slug": "burning-jealousy",
+    "slugLoc": "du-huo",
+    "name": "妒火",
+    "description": "若在使用的回合对手的能力有所提高，\n则会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "808",
+    "slug": "lash-out",
+    "slugLoc": "xie-fen",
+    "name": "泄愤",
+    "description": "若在使用的回合自己的能力有所降低，\n则威力会变为2倍。"
+  },
+  {
+    "id": "809",
+    "slug": "poltergeist",
+    "slugLoc": "ling-sao",
+    "name": "灵骚",
+    "description": "若对手没有携带道具，则会失败。"
+  },
+  {
+    "id": "810",
+    "slug": "corrosive-gas",
+    "slugLoc": "fu-shi-qi-ti",
+    "name": "腐蚀气体",
+    "description": "会让自己以外的场上的所有宝可梦\n失去携带的道具。"
+  },
+  {
+    "id": "811",
+    "slug": "coaching",
+    "slugLoc": "zhi-dao",
+    "name": "指导",
+    "description": "会让同伴的攻击、防御提高1阶。"
+  },
+  {
+    "id": "812",
+    "slug": "flip-turn",
+    "slugLoc": "kuai-su-zhe-fan",
+    "name": "快速折返",
+    "description": "攻击后，会和同行队伍中的\n其他宝可梦进行替换。"
+  },
+  {
+    "id": "813",
+    "slug": "triple-axel",
+    "slugLoc": "san-xuan-ji",
+    "name": "三旋击",
+    "description": "会连续进行3次攻击，第1次的威力为20，\n第2次的威力为40，第3次的威力为60。\n途中招式落空时，攻击会结束。"
+  },
+  {
+    "id": "814",
+    "slug": "dual-wingbeat",
+    "slugLoc": "shuang-yi",
+    "name": "双翼",
+    "description": "会连续攻击2次。"
+  },
+  {
+    "id": "815",
+    "slug": "scorching-sands",
+    "slugLoc": "re-sha-da-di",
+    "name": "热沙大地",
+    "description": "有30%的机率会让对手陷入灼伤状态。\n会治愈对手的冰冻状态。\n使用后会治愈自己的冰冻状态。"
+  },
+  {
+    "id": "816",
+    "slug": "jungle-healing",
+    "slugLoc": "cong-lin-zhi-liao",
+    "name": "丛林治疗",
+    "description": ""
+  },
+  {
+    "id": "817",
+    "slug": "wicked-blow",
+    "slugLoc": "an-ming-qiang-ji",
+    "name": "暗冥强击",
+    "description": ""
+  },
+  {
+    "id": "818",
+    "slug": "surging-strikes",
+    "slugLoc": "shui-liu-lian-da",
+    "name": "水流连打",
+    "description": ""
+  },
+  {
+    "id": "819",
+    "slug": "thunder-cage",
+    "slugLoc": "lei-dian-qiu-long",
+    "name": "雷电囚笼",
+    "description": ""
+  },
+  {
+    "id": "820",
+    "slug": "dragon-energy",
+    "slugLoc": "ju-long-wei-neng",
+    "name": "巨龙威能",
+    "description": ""
+  },
+  {
+    "id": "821",
+    "slug": "freezing-glare",
+    "slugLoc": "bing-leng-shi-xian",
+    "name": "冰冷视线",
+    "description": ""
+  },
+  {
+    "id": "822",
+    "slug": "fiery-wrath",
+    "slugLoc": "nu-huo-zhong-shao",
+    "name": "怒火中烧",
+    "description": ""
+  },
+  {
+    "id": "823",
+    "slug": "thunderous-kick",
+    "slugLoc": "lei-ming-cu-ji",
+    "name": "雷鸣蹴击",
+    "description": ""
+  },
+  {
+    "id": "824",
+    "slug": "glacial-lance",
+    "slugLoc": "xue-mao",
+    "name": "雪矛",
+    "description": ""
+  },
+  {
+    "id": "825",
+    "slug": "astral-barrage",
+    "slugLoc": "xing-sui",
+    "name": "星碎",
+    "description": ""
+  },
+  {
+    "id": "826",
+    "slug": "eerie-spell",
+    "slugLoc": "gui-yi-zhou-yu",
+    "name": "诡异咒语",
+    "description": "会让对手最后使用的招式的PP减少3。"
+  },
+  {
+    "id": "827",
+    "slug": "dire-claw",
+    "slugLoc": "ke-ming-zhua",
+    "name": "克命爪",
+    "description": "有30%的机率会让对手陷入\n中毒、麻痹、睡眠之中的一种状态。"
+  },
+  {
+    "id": "828",
+    "slug": "psyshield-bash",
+    "slugLoc": "ping-zhang-meng-gong",
+    "name": "屏障猛攻",
+    "description": "会让自己的防御提高1阶。"
+  },
+  {
+    "id": "829",
+    "slug": "power-shift",
+    "slugLoc": "li-liang-zhuan-huan",
+    "name": "力量转换",
+    "description": "自己会变为攻防转换状态。"
+  },
+  {
+    "id": "830",
+    "slug": "stone-axe",
+    "slugLoc": "yan-fu",
+    "name": "岩斧",
+    "description": "会让对手的场地变为隐形岩状态。"
+  },
+  {
+    "id": "831",
+    "slug": "springtide-storm",
+    "slugLoc": "yang-chun-feng-bao",
+    "name": "阳春风暴",
+    "description": ""
+  },
+  {
+    "id": "832",
+    "slug": "mystical-power",
+    "slugLoc": "shen-mi-zhi-li",
+    "name": "神秘之力",
+    "description": ""
+  },
+  {
+    "id": "833",
+    "slug": "raging-fury",
+    "slugLoc": "da-fen-kai",
+    "name": "大愤慨",
+    "description": "自己会变为大闹状态。"
+  },
+  {
+    "id": "834",
+    "slug": "wave-crash",
+    "slugLoc": "bo-dong-chong",
+    "name": "波动冲",
+    "description": "自己也会受到给予的伤害的1/3。"
+  },
+  {
+    "id": "835",
+    "slug": "chloroblast",
+    "slugLoc": "ye-lu-bao-zhen",
+    "name": "叶绿爆震",
+    "description": ""
+  },
+  {
+    "id": "836",
+    "slug": "mountain-gale",
+    "slugLoc": "bing-shan-feng",
+    "name": "冰山风",
+    "description": "有30%的机率会让对手畏缩。"
+  },
+  {
+    "id": "837",
+    "slug": "victory-dance",
+    "slugLoc": "sheng-li-zhi-wu",
+    "name": "胜利之舞",
+    "description": ""
+  },
+  {
+    "id": "838",
+    "slug": "headlong-rush",
+    "slugLoc": "tu-fei-meng-bu",
+    "name": "突飞猛扑",
+    "description": "会让自己的防御、特防降低1阶。"
+  },
+  {
+    "id": "839",
+    "slug": "barb-barrage",
+    "slugLoc": "du-qian-zhen",
+    "name": "毒千针",
+    "description": ""
+  },
+  {
+    "id": "840",
+    "slug": "esper-wing",
+    "slugLoc": "qi-chang-zhi-yi",
+    "name": "气场之翼",
+    "description": ""
+  },
+  {
+    "id": "841",
+    "slug": "bitter-malice",
+    "slugLoc": "yuan-yuan-xiang-bao",
+    "name": "冤冤相报",
+    "description": "会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "842",
+    "slug": "shelter",
+    "slugLoc": "bi-guan",
+    "name": "闭关",
+    "description": "会让自己的防御提高2阶。"
+  },
+  {
+    "id": "843",
+    "slug": "triple-arrows",
+    "slugLoc": "san-lian-jian",
+    "name": "三连箭",
+    "description": "有50%的机率会让对手的防御降低1阶。\n有30%的机率会让对手畏缩。\n会以易中要害+1进行攻击。"
+  },
+  {
+    "id": "844",
+    "slug": "infernal-parade",
+    "slugLoc": "qun-mo-luan-wu",
+    "name": "群魔乱舞",
+    "description": "有30%的机率会让对手陷入灼伤状态。\n对手为异常状态时，威力会变为2倍。"
+  },
+  {
+    "id": "845",
+    "slug": "ceaseless-edge",
+    "slugLoc": "mi-jian-qian-chong-tao",
+    "name": "秘剑・千重涛",
+    "description": "会让对手的场地变为撒菱状态。"
+  },
+  {
+    "id": "846",
+    "slug": "bleakwind-storm",
+    "slugLoc": "ku-ye-feng-bao",
+    "name": "枯叶风暴",
+    "description": ""
+  },
+  {
+    "id": "847",
+    "slug": "wildbolt-storm",
+    "slugLoc": "ming-lei-feng-bao",
+    "name": "鸣雷风暴",
+    "description": ""
+  },
+  {
+    "id": "848",
+    "slug": "sandsear-storm",
+    "slugLoc": "re-sha-feng-bao",
+    "name": "热沙风暴",
+    "description": ""
+  },
+  {
+    "id": "849",
+    "slug": "lunar-blessing",
+    "slugLoc": "xin-yue-qi-dao",
+    "name": "新月祈祷",
+    "description": ""
+  },
+  {
+    "id": "850",
+    "slug": "take-heart",
+    "slugLoc": "yong-qi-tian-chong",
+    "name": "勇气填充",
+    "description": ""
+  },
+  {
+    "id": "851",
+    "slug": "tera-blast",
+    "slugLoc": "tai-jing-bao-fa",
+    "name": "太晶爆发",
+    "description": ""
+  },
+  {
+    "id": "852",
+    "slug": "silk-trap",
+    "slugLoc": "xian-jing",
+    "name": "线阱",
+    "description": ""
+  },
+  {
+    "id": "853",
+    "slug": "axe-kick",
+    "slugLoc": "xia-ya-ti",
+    "name": "下压踢",
+    "description": "有30%的机率会让对手陷入混乱状态。\n落空或失败时，会受到自己\n最大HP的1/2的伤害。"
+  },
+  {
+    "id": "854",
+    "slug": "last-respects",
+    "slugLoc": "sao-mu",
+    "name": "扫墓",
+    "description": "每有1只同行队伍中的宝可梦陷入昏厥，\n威力就会提高50。"
+  },
+  {
+    "id": "855",
+    "slug": "lumina-crash",
+    "slugLoc": "liu-guang-chong-ji",
+    "name": "琉光冲激",
+    "description": "会让对手的特防降低2阶。"
+  },
+  {
+    "id": "856",
+    "slug": "order-up",
+    "slugLoc": "shang-cai",
+    "name": "上菜",
+    "description": ""
+  },
+  {
+    "id": "857",
+    "slug": "jet-punch",
+    "slugLoc": "pen-she-quan",
+    "name": "喷射拳",
+    "description": ""
+  },
+  {
+    "id": "858",
+    "slug": "spicy-extract",
+    "slugLoc": "la-jiao-jing-hua",
+    "name": "辣椒精华",
+    "description": "会让对手的防御降低2阶，\n攻击提高2阶。"
+  },
+  {
+    "id": "859",
+    "slug": "spin-out",
+    "slugLoc": "ji-su-zhuan-lun",
+    "name": "疾速转轮",
+    "description": ""
+  },
+  {
+    "id": "860",
+    "slug": "population-bomb",
+    "slugLoc": "shu-shu-er",
+    "name": "鼠数儿",
+    "description": "连续进行1～10次攻击。\n途中招式落空时，攻击会结束。"
+  },
+  {
+    "id": "861",
+    "slug": "ice-spinner",
+    "slugLoc": "bing-xuan",
+    "name": "冰旋",
+    "description": "会解除场地。"
+  },
+  {
+    "id": "862",
+    "slug": "glaive-rush",
+    "slugLoc": "ju-jian-tu-ji",
+    "name": "巨剑突击",
+    "description": ""
+  },
+  {
+    "id": "863",
+    "slug": "revival-blessing",
+    "slugLoc": "fu-sheng-qi-dao",
+    "name": "复生祈祷",
+    "description": "会让同行队伍中陷入昏厥的宝可梦\n以最大HP1/2的状态复活。"
+  },
+  {
+    "id": "864",
+    "slug": "salt-cure",
+    "slugLoc": "yan-an",
+    "name": "盐腌",
+    "description": "会让对手陷入盐腌状态。"
+  },
+  {
+    "id": "865",
+    "slug": "triple-dive",
+    "slugLoc": "san-lian-zuan",
+    "name": "三连钻",
+    "description": ""
+  },
+  {
+    "id": "866",
+    "slug": "mortal-spin",
+    "slugLoc": "jing-guang-zhuan-zhuan",
+    "name": "晶光转转",
+    "description": "会解除自己的束缚、寄生种子状态，\n以及我方场地的撒菱、毒菱、\n黏黏网、隐形岩状态。\n会让对手陷入中毒状态。"
+  },
+  {
+    "id": "867",
+    "slug": "doodle",
+    "slugLoc": "miao-hui",
+    "name": "描绘",
+    "description": ""
+  },
+  {
+    "id": "868",
+    "slug": "fillet-away",
+    "slugLoc": "shuai-rou",
+    "name": "甩肉",
+    "description": ""
+  },
+  {
+    "id": "869",
+    "slug": "kowtow-cleave",
+    "slugLoc": "pu-dao",
+    "name": "仆刀",
+    "description": "必定会命中对手。"
+  },
+  {
+    "id": "870",
+    "slug": "flower-trick",
+    "slugLoc": "qian-bian-wan-hua",
+    "name": "千变万花",
+    "description": "必定会命中对手。\n必定会击中要害。"
+  },
+  {
+    "id": "871",
+    "slug": "torch-song",
+    "slugLoc": "shan-yan-gao-ge",
+    "name": "闪焰高歌",
+    "description": "会让自己的特攻提高1阶。"
+  },
+  {
+    "id": "872",
+    "slug": "aqua-step",
+    "slugLoc": "liu-shui-xuan-wu",
+    "name": "流水旋舞",
+    "description": "会让自己的速度提高1阶。"
+  },
+  {
+    "id": "873",
+    "slug": "raging-bull",
+    "slugLoc": "nu-niu",
+    "name": "怒牛",
+    "description": "招式的属性会根据自己的形态而改变。\n会解除对手场地的光墙、反射壁、\n极光幕状态并进行攻击。"
+  },
+  {
+    "id": "874",
+    "slug": "make-it-rain",
+    "slugLoc": "tao-jin-chao",
+    "name": "淘金潮",
+    "description": ""
+  },
+  {
+    "id": "875",
+    "slug": "psyblade",
+    "slugLoc": "jing-shen-jian",
+    "name": "精神剑",
+    "description": ""
+  },
+  {
+    "id": "876",
+    "slug": "hydro-steam",
+    "slugLoc": "shui-zheng-qi",
+    "name": "水蒸气",
+    "description": ""
+  },
+  {
+    "id": "877",
+    "slug": "ruination",
+    "slugLoc": "da-zai-nan",
+    "name": "大灾难",
+    "description": ""
+  },
+  {
+    "id": "878",
+    "slug": "collision-course",
+    "slugLoc": "quan-kai-meng-zhuang",
+    "name": "全开猛撞",
+    "description": ""
+  },
+  {
+    "id": "879",
+    "slug": "electro-drift",
+    "slugLoc": "shan-dian-meng-chong",
+    "name": "闪电猛冲",
+    "description": ""
+  },
+  {
+    "id": "880",
+    "slug": "shed-tail",
+    "slugLoc": "duan-wei",
+    "name": "断尾",
+    "description": "会让自己的HP减少最大HP的1/2\n并制造替身。\n之后会和同行队伍中的其他宝可梦进行替换。\n替身会代替自己承受招式。\n受到相当于最大HP的1/4的伤害时会消失。"
+  },
+  {
+    "id": "881",
+    "slug": "chilly-reception",
+    "slugLoc": "leng-xiao-hua",
+    "name": "冷笑话",
+    "description": "在5回合内会变为下雪状态。\n会和同行队伍中的其他宝可梦进行替换。"
+  },
+  {
+    "id": "882",
+    "slug": "tidy-up",
+    "slugLoc": "da-sao-chu",
+    "name": "大扫除",
+    "description": "会解除整个场地的黏黏网、隐形岩、\n替身、撒菱、毒菱状态。\n会让自己的攻击、速度提高1阶。"
+  },
+  {
+    "id": "883",
+    "slug": "snowscape",
+    "slugLoc": "xue-jing",
+    "name": "雪景",
+    "description": "在5回合内会变为下雪状态。"
+  },
+  {
+    "id": "884",
+    "slug": "pounce",
+    "slugLoc": "chong-bu",
+    "name": "虫扑",
+    "description": "会让对手的速度降低1阶。"
+  },
+  {
+    "id": "885",
+    "slug": "trailblaze",
+    "slugLoc": "qi-cao",
+    "name": "起草",
+    "description": "会让自己的速度提高1阶。"
+  },
+  {
+    "id": "886",
+    "slug": "chilling-water",
+    "slugLoc": "po-leng-shui",
+    "name": "泼冷水",
+    "description": "会让对手的攻击降低1阶。"
+  },
+  {
+    "id": "887",
+    "slug": "hyper-drill",
+    "slugLoc": "qiang-li-zuan",
+    "name": "强力钻",
+    "description": ""
+  },
+  {
+    "id": "888",
+    "slug": "twin-beam",
+    "slugLoc": "shuang-guang-shu",
+    "name": "双光束",
+    "description": "会连续攻击2次。"
+  },
+  {
+    "id": "889",
+    "slug": "rage-fist",
+    "slugLoc": "fen-nu-zhi-quan",
+    "name": "愤怒之拳",
+    "description": ""
+  },
+  {
+    "id": "890",
+    "slug": "armor-cannon",
+    "slugLoc": "kai-nong-pao",
+    "name": "铠农炮",
+    "description": "会让自己的防御、特防降低1阶。"
+  },
+  {
+    "id": "891",
+    "slug": "bitter-blade",
+    "slugLoc": "hui-nian-jian",
+    "name": "悔念剑",
+    "description": "会让自己的HP回复\n给予对手伤害的1/2。"
+  },
+  {
+    "id": "892",
+    "slug": "double-shock",
+    "slugLoc": "dian-guang-shuang-ji",
+    "name": "电光双击",
+    "description": "自己的电属性会消失。\n若自己不是电属性，则会失败。"
+  },
+  {
+    "id": "893",
+    "slug": "gigaton-hammer",
+    "slugLoc": "ju-li-chui",
+    "name": "巨力锤",
+    "description": "此招式无法连续使出2次。"
+  },
+  {
+    "id": "894",
+    "slug": "comeuppance",
+    "slugLoc": "fu-chou",
+    "name": "复仇",
+    "description": "会将在使用的回合受到的来自对手的\n招式的伤害变为1.5倍返还给对手。"
+  },
+  {
+    "id": "895",
+    "slug": "aqua-cutter",
+    "slugLoc": "shui-bo-dao",
+    "name": "水波刀",
+    "description": "会以易中要害+1来进行攻击。"
+  },
+  {
+    "id": "896",
+    "slug": "blazing-torque",
+    "slugLoc": "zhuo-re-bao-chong",
+    "name": "灼热暴冲",
+    "description": ""
+  },
+  {
+    "id": "897",
+    "slug": "wicked-torque",
+    "slugLoc": "hei-an-bao-chong",
+    "name": "黑暗暴冲",
+    "description": ""
+  },
+  {
+    "id": "898",
+    "slug": "noxious-torque",
+    "slugLoc": "ju-du-bao-chong",
+    "name": "剧毒暴冲",
+    "description": ""
+  },
+  {
+    "id": "899",
+    "slug": "combat-torque",
+    "slugLoc": "ge-dou-bao-chong",
+    "name": "格斗暴冲",
+    "description": ""
+  },
+  {
+    "id": "900",
+    "slug": "magical-torque",
+    "slugLoc": "mo-fa-bao-chong",
+    "name": "魔法暴冲",
+    "description": ""
+  },
+  {
+    "id": "901",
+    "slug": "blood-moon",
+    "slugLoc": "xie-yue",
+    "name": "血月",
+    "description": ""
+  },
+  {
+    "id": "902",
+    "slug": "matcha-gotcha",
+    "slugLoc": "shua-shua-cha-pao",
+    "name": "刷刷茶炮",
+    "description": "会让自己的HP回复\n给予对手伤害的1/2。\n有20%的机率会让对手陷入灼伤状态。"
+  },
+  {
+    "id": "903",
+    "slug": "syrup-bomb",
+    "slugLoc": "tang-jiang-zha-dan",
+    "name": "糖浆炸弹",
+    "description": "在3回合内，\n会让对手陷入满身糖状态。"
+  },
+  {
+    "id": "904",
+    "slug": "ivy-cudgel",
+    "slugLoc": "ji-teng-bang",
+    "name": "棘藤棒",
+    "description": ""
+  },
+  {
+    "id": "905",
+    "slug": "electro-shot",
+    "slugLoc": "dian-guang-shu",
+    "name": "电光束",
+    "description": "会在使用的回合变为积蓄状态，\n并在下一回合进行攻击。\n若为下雨状态，则不会变为积蓄状态，\n并能立即进行攻击。\n在使用的回合，会让自己的特攻提高1阶。"
+  },
+  {
+    "id": "906",
+    "slug": "tera-starstorm",
+    "slugLoc": "jing-guang-xing-qun",
+    "name": "晶光星群",
+    "description": ""
+  },
+  {
+    "id": "907",
+    "slug": "fickle-beam",
+    "slugLoc": "sui-ji-guang",
+    "name": "随机光",
+    "description": "有30%的机率会让威力变为2倍。"
+  },
+  {
+    "id": "908",
+    "slug": "burning-bulwark",
+    "slugLoc": "huo-yan-shou-hu",
+    "name": "火焰守护",
+    "description": ""
+  },
+  {
+    "id": "909",
+    "slug": "thunderclap",
+    "slugLoc": "xun-lei",
+    "name": "迅雷",
+    "description": ""
+  },
+  {
+    "id": "910",
+    "slug": "mighty-cleave",
+    "slugLoc": "qiang-ren-gong-ji",
+    "name": "强刃攻击",
+    "description": ""
+  },
+  {
+    "id": "911",
+    "slug": "tachyon-cutter",
+    "slugLoc": "xun-zi-li-ren",
+    "name": "迅子利刃",
+    "description": ""
+  },
+  {
+    "id": "912",
+    "slug": "hard-press",
+    "slugLoc": "ying-ya",
+    "name": "硬压",
+    "description": "对手的剩余HP越多，威力就会越大。\n威力为1～100。"
+  },
+  {
+    "id": "913",
+    "slug": "dragon-cheer",
+    "slugLoc": "long-sheng-gu-wu",
+    "name": "龙声鼓舞",
+    "description": "会让同伴变为易中要害状态。\n为龙属性时+2，\n为其他属性时+1。"
+  },
+  {
+    "id": "914",
+    "slug": "alluring-voice",
+    "slugLoc": "mei-you-zhi-sheng",
+    "name": "魅诱之声",
+    "description": "在使用的回合内，\n若对手的能力有所提高，\n则会让对手陷入混乱状态。"
+  },
+  {
+    "id": "915",
+    "slug": "temper-flare",
+    "slugLoc": "huo-chu-qu",
+    "name": "豁出去",
+    "description": "若上一回合自己无法行动、\n招式落空或失败，\n则威力会变为2倍。"
+  },
+  {
+    "id": "916",
+    "slug": "supercell-slam",
+    "slugLoc": "shan-dian-qiang-xi",
+    "name": "闪电强袭",
+    "description": "落空或失败时，会受到自己\n最大HP的1/2的伤害。\n对变小状态的对手的\n威力会变为2倍，且必定会命中。"
+  },
+  {
+    "id": "917",
+    "slug": "psychic-noise",
+    "slugLoc": "jing-shen-zao-yin",
+    "name": "精神噪音",
+    "description": "在2回合内，\n会让对手陷入回复封锁状态。"
+  },
+  {
+    "id": "918",
+    "slug": "upper-hand",
+    "slugLoc": "kuai-shou-huan-ji",
+    "name": "快手还击",
+    "description": "若对手没有使用先制招式，\n则会失败。会让对手畏缩。"
+  },
+  {
+    "id": "919",
+    "slug": "malignant-chain",
+    "slugLoc": "xie-du-suo-lian",
+    "name": "邪毒锁链",
+    "description": ""
+  },
+  {
+    "id": "920",
+    "slug": "nihil-light",
+    "slugLoc": "gui-wu-zhi-guang",
+    "name": "归无之光",
+    "description": ""
+  }
+]

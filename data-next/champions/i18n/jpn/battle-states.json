@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "slug": "harsh-sunlight",
+    "slugLoc": "nihonbarezhuang-tai",
+    "name": "にほんばれ状態",
+    "description": "ほのおタイプの技のダメージが\n１．５倍になる。みずタイプの\n技のダメージが半減する。"
+  },
+  {
+    "id": "2",
+    "slug": "rain",
+    "slugLoc": "amezhuang-tai",
+    "name": "あめ状態",
+    "description": "みずタイプの技のダメージが\n１．５倍になる。ほのおタイプの\n技のダメージが半減する。"
+  },
+  {
+    "id": "3",
+    "slug": "sandstorm",
+    "slugLoc": "sunaarasizhuang-tai",
+    "name": "すなあらし状態",
+    "description": "いわ　じめん　はがねタイプ以外は\nターン終わりに最大ＨＰの１／１６の\nダメージを受ける。\nいわタイプの特防が１．５倍になる。"
+  },
+  {
+    "id": "4",
+    "slug": "snow",
+    "slugLoc": "yukizhuang-tai",
+    "name": "ゆき状態",
+    "description": "こおりタイプの防御が１．５倍になる。"
+  },
+  {
+    "id": "5",
+    "slug": "electric-terrain",
+    "slugLoc": "erekihuirudozhuang-tai",
+    "name": "エレキフィールド状態",
+    "description": "でんきタイプの技の威力が\n１．３倍になる。\nねむり状態にならない。\n地面にいるポケモンのみが\n効果を受ける。"
+  },
+  {
+    "id": "6",
+    "slug": "grassy-terrain",
+    "slugLoc": "gurasuhuirudozhuang-tai",
+    "name": "グラスフィールド状態",
+    "description": "くさタイプの技の威力が\n１．３倍になる。\nターン終わりに最大ＨＰの１／１６回復する。\n地面にいるポケモンのみが\n効果を受ける。"
+  },
+  {
+    "id": "7",
+    "slug": "misty-terrain",
+    "slugLoc": "misutohuirudozhuang-tai",
+    "name": "ミストフィールド状態",
+    "description": "ドラゴンタイプの技の威力が\n半減する。状態異常\nこんらん状態にならない。\n地面にいるポケモンのみが\n効果を受ける。"
+  },
+  {
+    "id": "8",
+    "slug": "trick-room",
+    "slugLoc": "toritukurumuzhuang-tai",
+    "name": "トリックルーム状態",
+    "description": "素早さの低いポケモンから\n行動する。"
+  },
+  {
+    "id": "9",
+    "slug": "magic-room",
+    "slugLoc": "mazitukurumuzhuang-tai",
+    "name": "マジックルーム状態",
+    "description": "多くの持っている道具の\n効果がなくなる。"
+  },
+  {
+    "id": "10",
+    "slug": "wonder-room",
+    "slugLoc": "wandarumuzhuang-tai",
+    "name": "ワンダールーム状態",
+    "description": "防御　特防が入れ替わる。"
+  },
+  {
+    "id": "11",
+    "slug": "critical-hit-ratio-boost",
+    "slugLoc": "kiyuusiyoatupuzhuang-tai",
+    "name": "きゅうしょアップ状態",
+    "description": "自分の攻撃が\n急所に当たる確率が上がる。"
+  },
+  {
+    "id": "12",
+    "slug": "confused",
+    "slugLoc": "konranzhuang-tai",
+    "name": "こんらん状態",
+    "description": "１ー４ターンの間\n１／３の確率で自分を攻撃する。"
+  },
+  {
+    "id": "13",
+    "slug": "infatuated",
+    "slugLoc": "meromerozhuang-tai",
+    "name": "メロメロ状態",
+    "description": "メロメロ状態にした相手が場にいると\n５０％の確率で技が使えない。"
+  },
+  {
+    "id": "15",
+    "slug": "drowsy",
+    "slugLoc": "nemukezhuang-tai",
+    "name": "ねむけ状態",
+    "description": "技を受けた次のターン終わりに\nねむり状態になる。"
+  },
+  {
+    "id": "16",
+    "slug": "encore",
+    "slugLoc": "ankoruzhuang-tai",
+    "name": "アンコール状態",
+    "description": "{0}しか使えない。"
+  },
+  {
+    "id": "17",
+    "slug": "no-ability",
+    "slugLoc": "tokuseinasizhuang-tai",
+    "name": "とくせいなし状態",
+    "description": "特性の効果がなくなる。"
+  },
+  {
+    "id": "18",
+    "slug": "unable-to-repeat",
+    "slugLoc": "lian-sok-bu-ke-zhuang-tai",
+    "name": "連続不可状態",
+    "description": "同じ技が続けて出せない。"
+  },
+  {
+    "id": "19",
+    "slug": "tailwind",
+    "slugLoc": "oikazezhuang-tai",
+    "name": "おいかぜ状態",
+    "description": "素早さが２倍になる。"
+  },
+  {
+    "id": "24",
+    "slug": "move-disabled",
+    "slugLoc": "wazahuuzizhuang-tai",
+    "name": "わざふうじ状態",
+    "description": "{0}が使えない。"
+  },
+  {
+    "id": "25",
+    "slug": "cant-escape",
+    "slugLoc": "nigerarenaizhuang-tai",
+    "name": "にげられない状態",
+    "description": "交代ができない。"
+  },
+  {
+    "id": "26",
+    "slug": "locked-on",
+    "slugLoc": "rotukuonzhuang-tai",
+    "name": "ロックオン状態",
+    "description": "技を使った次のターン\nロックオンした相手に\n技が必ず当たる。"
+  },
+  {
+    "id": "28",
+    "slug": "electric-boost",
+    "slugLoc": "denkiwei-li-atupuzhuang-tai",
+    "name": "でんき威力アップ状態",
+    "description": "次に出す　でんきタイプの\n技の威力が２倍になる。"
+  },
+  {
+    "id": "29",
+    "slug": "gravity",
+    "slugLoc": "ziyuuriyokuzhuang-tai",
+    "name": "じゅうりょく状態",
+    "description": "技の命中率が１．６７倍になる。\nひこうタイプ　特性ふゆう等の\nポケモンは地面にいることになる。\n飛ぶ技が使えない。"
+  },
+  {
+    "id": "31",
+    "slug": "safeguard",
+    "slugLoc": "sinpinomamorizhuang-tai",
+    "name": "しんぴのまもり状態",
+    "description": "状態異常　こんらん状態にならない。"
+  },
+  {
+    "id": "32",
+    "slug": "stealth-rock",
+    "slugLoc": "suterusurotukuzhuang-tai",
+    "name": "ステルスロック状態",
+    "description": "入れ替わったポケモンに\n最大ＨＰの１／８のダメージを与える。\nいわタイプとの相性によって\nダメージが変わる。"
+  },
+  {
+    "id": "33",
+    "slug": "stockpiling",
+    "slugLoc": "takuwaeruzhuang-tai",
+    "name": "たくわえる状態",
+    "description": "１度たくわえる毎に\n防御　特防が１段階上がる。"
+  },
+  {
+    "id": "34",
+    "slug": "taunted",
+    "slugLoc": "tiyouhatuzhuang-tai",
+    "name": "ちょうはつ状態",
+    "description": "攻撃しか出せなくなる。"
+  },
+  {
+    "id": "36",
+    "slug": "magnet-rise",
+    "slugLoc": "denzihuyuuzhuang-tai",
+    "name": "でんじふゆう状態",
+    "description": "地面にいないことになり\nじめんタイプの技　まきびし　どくびし\nねばねばネット状態が効かない。"
+  },
+  {
+    "id": "37",
+    "slug": "toxic-spikes",
+    "slugLoc": "dokubisizhuang-tai",
+    "name": "どくびし状態",
+    "description": "入れ替わったポケモンを\nどく状態にする。\n２回使うと　もうどく状態にする。\nひこうタイプ　特性ふゆう等の\nポケモンには効かない。"
+  },
+  {
+    "id": "39",
+    "slug": "wish",
+    "slugLoc": "negaigotozhuang-tai",
+    "name": "ねがいごと状態",
+    "description": "技を使った次のターン終わりに\nその場所のポケモンは\n技を使ったポケモンの\n最大ＨＰの１／２回復する。"
+  },
+  {
+    "id": "40",
+    "slug": "sticky-web",
+    "slugLoc": "nebanebanetutozhuang-tai",
+    "name": "ねばねばネット状態",
+    "description": "入れ替わったポケモンの\n素早さを１段階下げる。\nひこうタイプ　特性ふゆう等の\nポケモンには効かない。"
+  },
+  {
+    "id": "41",
+    "slug": "ingrained",
+    "slugLoc": "newoharuzhuang-tai",
+    "name": "ねをはる状態",
+    "description": "ターン終わりに\n最大ＨＰの１／１６回復する。\n交代ができない。\n地面にいることになる。"
+  },
+  {
+    "id": "42",
+    "slug": "cursed",
+    "slugLoc": "noroizhuang-tai",
+    "name": "のろい状態",
+    "description": "ターン終わりに\n最大ＨＰの１／４減る。"
+  },
+  {
+    "id": "43",
+    "slug": "trick-or-treating",
+    "slugLoc": "harouinzhuang-tai",
+    "name": "ハロウィン状態",
+    "description": "ゴーストタイプが追加される。"
+  },
+  {
+    "id": "44",
+    "slug": "light-screen",
+    "slugLoc": "hikarinokabezhuang-tai",
+    "name": "ひかりのかべ状態",
+    "description": "特殊技で受けるダメージを半減する。\nダブルバトルだと２／３にする。"
+  },
+  {
+    "id": "45",
+    "slug": "reflect",
+    "slugLoc": "rihurekutazhuang-tai",
+    "name": "リフレクター状態",
+    "description": "物理技で受けるダメージを半減する。\nダブルバトルだと２／３にする。"
+  },
+  {
+    "id": "46",
+    "slug": "sealing-off",
+    "slugLoc": "huuinzhuang-tai",
+    "name": "ふういん状態",
+    "description": "ふういんをしたポケモンが\n覚えている技を　相手の\nポケモンは出せなくなる。"
+  },
+  {
+    "id": "47",
+    "slug": "perishing",
+    "slugLoc": "horobizhuang-tai",
+    "name": "ほろび状態",
+    "description": "ほろび状態になった３ターン後に\nひんしになる。"
+  },
+  {
+    "id": "48",
+    "slug": "spikes",
+    "slugLoc": "makibisizhuang-tai",
+    "name": "まきびし状態",
+    "description": "入れ替わったポケモンに\n最大ＨＰの１／８のダメージを与える。\n２ー３回使うとダメージが増える。\nひこうタイプ　特性ふゆう等の\nポケモンには効かない。"
+  },
+  {
+    "id": "50",
+    "slug": "destiny-bound",
+    "slugLoc": "mitidurezhuang-tai",
+    "name": "みちづれ状態",
+    "description": "自分をひんしにした相手を\nひんしにする。"
+  },
+  {
+    "id": "51",
+    "slug": "forest-cursed",
+    "slugLoc": "morinonoroizhuang-tai",
+    "name": "もりののろい状態",
+    "description": "くさタイプが追加される。"
+  },
+  {
+    "id": "52",
+    "slug": "leech-seeded",
+    "slugLoc": "yadoriginotanezhuang-tai",
+    "name": "やどりぎのタネ状態",
+    "description": "ターン終わりに\n最大ＨＰの１／８のダメージを受けて\nその分　技を使ったポケモンがいた\n場所にいる相手が回復する。"
+  },
+  {
+    "id": "54",
+    "slug": "bound",
+    "slugLoc": "baindozhuang-tai",
+    "name": "バインド状態",
+    "description": "４ー５ターンの間\nターン終わりに　最大ＨＰの\n１／８のダメージを受ける。\n交代ができない。"
+  },
+  {
+    "id": "57",
+    "slug": "rampaging",
+    "slugLoc": "abarezhuang-tai",
+    "name": "あばれ状態",
+    "description": "２ー３ターンの間　攻撃し続ける。\nその間　他の行動はできない。\nその後　こんらん状態になる。"
+  },
+  {
+    "id": "59",
+    "slug": "badly-poisoned",
+    "slugLoc": "moudokuzhuang-tai",
+    "name": "もうどく状態",
+    "description": "ターンが進むほど　最大ＨＰの１／１６\n２／１６　３／１６と　ターン終わりに\n受けるダメージが増えていく。\n交代した後に　また登場すると\n１／１６からになる。"
+  },
+  {
+    "id": "60",
+    "slug": "future-attack",
+    "slugLoc": "mirainikougekizhuang-tai",
+    "name": "みらいにこうげき状態",
+    "description": "技を使われた２ターン後に\nその場所のポケモンは\nダメージを受ける。"
+  },
+  {
+    "id": "61",
+    "slug": "uproar",
+    "slugLoc": "sawaguzhuang-tai",
+    "name": "さわぐ状態",
+    "description": "３ターンの間　攻撃し続ける。\nその間　他の行動はできない。\nその間　場にいるポケモンは\nねむり状態にならない。"
+  },
+  {
+    "id": "62",
+    "slug": "aqua-ring",
+    "slugLoc": "akuaringuzhuang-tai",
+    "name": "アクアリング状態",
+    "description": "ターン終わりに\n最大ＨＰの１／１６回復する。"
+  },
+  {
+    "id": "64",
+    "slug": "landed",
+    "slugLoc": "zhao-di-zhuang-tai",
+    "name": "着地状態",
+    "description": "地面にいることになり\nじめんタイプの技が効くようになる。"
+  },
+  {
+    "id": "65",
+    "slug": "fairy-locked",
+    "slugLoc": "huearirotukuzhuang-tai",
+    "name": "フェアリーロック状態",
+    "description": "技を使った次のターンが終わるまで\n場にいるポケモンは交代ができない。"
+  },
+  {
+    "id": "72",
+    "slug": "psychic-terrain",
+    "slugLoc": "saikohuirudozhuang-tai",
+    "name": "サイコフィールド状態",
+    "description": "エスパータイプの技の威力が\n１．３倍になる。\n先制技が効かない。\n地面にいるポケモンのみが\n効果を受ける。"
+  },
+  {
+    "id": "73",
+    "slug": "throat-chopped",
+    "slugLoc": "zigokudukizhuang-tai",
+    "name": "じごくづき状態",
+    "description": "２ターンの間\n音の技が出せない。"
+  },
+  {
+    "id": "74",
+    "slug": "aurora-veil",
+    "slugLoc": "ororaberuzhuang-tai",
+    "name": "オーロラベール状態",
+    "description": "物理技　特殊技で\n受けるダメージを半減する。\nダブルバトルだと２／３にする。"
+  },
+  {
+    "id": "106",
+    "slug": "salt-cured",
+    "slugLoc": "siodukezhuang-tai",
+    "name": "しおづけ状態",
+    "description": "ターン終わりに　最大ＨＰの\n１／１６のダメージを受ける。\nはがねタイプ　みずタイプの場合\n最大ＨＰの１／８のダメージを受ける。"
+  },
+  {
+    "id": "108",
+    "slug": "syrupy",
+    "slugLoc": "amemamirezhuang-tai",
+    "name": "あめまみれ状態",
+    "description": "ターン終わりに\n素早さが１段階下がる。"
+  },
+  {
+    "id": "111",
+    "slug": "healing-prevented",
+    "slugLoc": "kaihukuhuuzizhuang-tai",
+    "name": "かいふくふうじ状態",
+    "description": "技　特性　持っている道具によって\nＨＰを回復できない。"
+  },
+  {
+    "id": "113",
+    "slug": "recharging",
+    "slugLoc": "fan-dong-zhuang-tai",
+    "name": "反動状態",
+    "description": "１ターン行動できない。"
+  },
+  {
+    "id": "114",
+    "slug": "charging",
+    "slugLoc": "liu-mezhuang-tai",
+    "name": "溜め状態",
+    "description": "技を出すために\n１ターン溜める。"
+  },
+  {
+    "id": "115",
+    "slug": "sky-high",
+    "slugLoc": "kong-zhong-zhuang-tai",
+    "name": "空中状態",
+    "description": "多くの技が当たらないが\nかみなり　ぼうふう\nうちおとす等は当たる。\nフィールドの効果が効かない。"
+  },
+  {
+    "id": "116",
+    "slug": "submerged",
+    "slugLoc": "shui-zhong-zhuang-tai",
+    "name": "水中状態",
+    "description": "多くの技が当たらないが\nなみのり　うずしおは当たり\nダメージが２倍になる。\nフィールドの効果が効かない。"
+  },
+  {
+    "id": "117",
+    "slug": "underground",
+    "slugLoc": "di-zhong-zhuang-tai",
+    "name": "地中状態",
+    "description": "多くの技が当たらないが\nじしんは当たり　ダメージが２倍になる。\nフィールドの効果が効かない。"
+  },
+  {
+    "id": "118",
+    "slug": "concealed",
+    "slugLoc": "qian-fu-zhuang-tai",
+    "name": "潜伏状態",
+    "description": "技が当たらず\nフィールドの効果が効かない。"
+  },
+  {
+    "id": "119",
+    "slug": "minimized",
+    "slugLoc": "tiisakunaruzhuang-tai",
+    "name": "ちいさくなる状態",
+    "description": "サンダーダイブ　のしかかり\nドラゴンダイブ　フライングプレス\nヒートスタンプ　ヘビーボンバー等は\n必ず当たり　ダメージが２倍になる。"
+  },
+  {
+    "id": "120",
+    "slug": "atk-def-swapped",
+    "slugLoc": "gong-fang-fan-zhuan-zhuang-tai",
+    "name": "攻防反転状態",
+    "description": "攻撃　防御が入れ替わる。"
+  },
+  {
+    "id": "121",
+    "slug": "flash-fire",
+    "slugLoc": "moraibizhuang-tai",
+    "name": "もらいび状態",
+    "description": "ほのおタイプの技の威力が\n１．５倍になる。"
+  },
+  {
+    "id": "125",
+    "slug": "micle-berry",
+    "slugLoc": "mikurunomizhuang-tai",
+    "name": "ミクルのみ状態",
+    "description": "次に出す\n技の命中率が１．２倍になる。"
+  }
+]

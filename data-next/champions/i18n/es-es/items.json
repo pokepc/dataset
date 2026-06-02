@@ -1,0 +1,938 @@
+[
+  {
+    "id": "149",
+    "slug": "cheri-berry",
+    "slugLoc": "baya-zreza",
+    "name": "Baya Zreza",
+    "description": "Elimina la parálisis del portador. Puede usarse una vez\npor combate.",
+    "pluralName": "Bayas Zreza"
+  },
+  {
+    "id": "150",
+    "slug": "chesto-berry",
+    "slugLoc": "baya-atania",
+    "name": "Baya Atania",
+    "description": "Elimina el sueño del portador. Puede usarse una vez por\ncombate.",
+    "pluralName": "Bayas Atania"
+  },
+  {
+    "id": "151",
+    "slug": "pecha-berry",
+    "slugLoc": "baya-meloc",
+    "name": "Baya Meloc",
+    "description": "Elimina el envenenamiento y el envenenamiento grave\ndel portador. Puede usarse una vez por combate.",
+    "pluralName": "Bayas Meloc"
+  },
+  {
+    "id": "152",
+    "slug": "rawst-berry",
+    "slugLoc": "baya-safre",
+    "name": "Baya Safre",
+    "description": "Elimina las quemaduras del portador. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Safre"
+  },
+  {
+    "id": "153",
+    "slug": "aspear-berry",
+    "slugLoc": "baya-perasi",
+    "name": "Baya Perasi",
+    "description": "Elimina la congelación del portador. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Perasi"
+  },
+  {
+    "id": "154",
+    "slug": "leppa-berry",
+    "slugLoc": "baya-zanama",
+    "name": "Baya Zanama",
+    "description": "Restaura 10 PP de un movimiento del portador al que\nno le quedan PP. Puede usarse una vez por combate.",
+    "pluralName": "Bayas Zanama"
+  },
+  {
+    "id": "155",
+    "slug": "oran-berry",
+    "slugLoc": "baya-aranja",
+    "name": "Baya Aranja",
+    "description": "Restaura 10 PS del portador cuando sus PS máximos\nse ven reducidos a la mitad o menos. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Aranja"
+  },
+  {
+    "id": "156",
+    "slug": "persim-berry",
+    "slugLoc": "baya-caquic",
+    "name": "Baya Caquic",
+    "description": "Elimina la confusión del portador. Puede usarse una vez\npor combate.",
+    "pluralName": "Bayas Caquic"
+  },
+  {
+    "id": "157",
+    "slug": "lum-berry",
+    "slugLoc": "baya-ziuela",
+    "name": "Baya Ziuela",
+    "description": "Elimina todos los problemas de estado y la confusión\ndel portador. Puede usarse una vez por combate.",
+    "pluralName": "Bayas Ziuela"
+  },
+  {
+    "id": "158",
+    "slug": "sitrus-berry",
+    "slugLoc": "baya-zidra",
+    "name": "Baya Zidra",
+    "description": "Restaura 1/4 de los PS máximos del portador cuando\nse ven reducidos a la mitad o menos. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Zidra"
+  },
+  {
+    "id": "184",
+    "slug": "occa-berry",
+    "slugLoc": "baya-caoca",
+    "name": "Baya Caoca",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Fuego que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Caoca"
+  },
+  {
+    "id": "185",
+    "slug": "passho-berry",
+    "slugLoc": "baya-pasio",
+    "name": "Baya Pasio",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Agua que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Pasio"
+  },
+  {
+    "id": "186",
+    "slug": "wacan-berry",
+    "slugLoc": "baya-gualot",
+    "name": "Baya Gualot",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Eléctrico que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Gualot"
+  },
+  {
+    "id": "187",
+    "slug": "rindo-berry",
+    "slugLoc": "baya-tamar",
+    "name": "Baya Tamar",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Planta que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Tamar"
+  },
+  {
+    "id": "188",
+    "slug": "yache-berry",
+    "slugLoc": "baya-rimoya",
+    "name": "Baya Rimoya",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Hielo que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Rimoya"
+  },
+  {
+    "id": "189",
+    "slug": "chople-berry",
+    "slugLoc": "baya-pomaro",
+    "name": "Baya Pomaro",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Lucha que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Pomaro"
+  },
+  {
+    "id": "190",
+    "slug": "kebia-berry",
+    "slugLoc": "baya-kebia",
+    "name": "Baya Kebia",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Veneno que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Kebia"
+  },
+  {
+    "id": "191",
+    "slug": "shuca-berry",
+    "slugLoc": "baya-acardo",
+    "name": "Baya Acardo",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Tierra que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Acardo"
+  },
+  {
+    "id": "192",
+    "slug": "coba-berry",
+    "slugLoc": "baya-kouba",
+    "name": "Baya Kouba",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Volador que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Kouba"
+  },
+  {
+    "id": "193",
+    "slug": "payapa-berry",
+    "slugLoc": "baya-payapa",
+    "name": "Baya Payapa",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Psíquico que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Payapa"
+  },
+  {
+    "id": "194",
+    "slug": "tanga-berry",
+    "slugLoc": "baya-yecana",
+    "name": "Baya Yecana",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Bicho que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Yecana"
+  },
+  {
+    "id": "195",
+    "slug": "charti-berry",
+    "slugLoc": "baya-alcho",
+    "name": "Baya Alcho",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Roca que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Alcho"
+  },
+  {
+    "id": "196",
+    "slug": "kasib-berry",
+    "slugLoc": "baya-drasi",
+    "name": "Baya Drasi",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Fantasma que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Drasi"
+  },
+  {
+    "id": "197",
+    "slug": "haban-berry",
+    "slugLoc": "baya-anjiro",
+    "name": "Baya Anjiro",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Dragón que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Anjiro"
+  },
+  {
+    "id": "198",
+    "slug": "colbur-berry",
+    "slugLoc": "baya-dillo",
+    "name": "Baya Dillo",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Siniestro que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Dillo"
+  },
+  {
+    "id": "199",
+    "slug": "babiri-berry",
+    "slugLoc": "baya-bariba",
+    "name": "Baya Baribá",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Acero que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Baribá"
+  },
+  {
+    "id": "200",
+    "slug": "chilan-berry",
+    "slugLoc": "baya-chilan",
+    "name": "Baya Chilan",
+    "description": "Reduce a la mitad el daño de un ataque de tipo\nNormal que el portador reciba. Puede usarse una\nvez por combate.",
+    "pluralName": "Bayas Chilan"
+  },
+  {
+    "id": "213",
+    "slug": "bright-powder",
+    "slugLoc": "polvo-brillo",
+    "name": "Polvo Brillo",
+    "description": "Reduce un 10% la precisión de los movimientos\nque el rival usa contra el portador.",
+    "pluralName": "Polvos Brillo"
+  },
+  {
+    "id": "214",
+    "slug": "white-herb",
+    "slugLoc": "hierba-blanca",
+    "name": "Hierba Blanca",
+    "description": "Restaura las características del portador que se hayan\nvisto reducidas. Puede usarse una vez por combate.",
+    "pluralName": "Hierbas Blancas"
+  },
+  {
+    "id": "217",
+    "slug": "quick-claw",
+    "slugLoc": "garra-rapida",
+    "name": "Garra Rápida",
+    "description": "Hace que el portador tenga una probabilidad del 20%\nde actuar primero cuando su movimiento tiene la misma\nprioridad que otros.",
+    "pluralName": "Garras Rápidas"
+  },
+  {
+    "id": "219",
+    "slug": "mental-herb",
+    "slugLoc": "hierba-mental",
+    "name": "Hierba Mental",
+    "description": "Elimina los estados Enamorado, Mofa, Repetición\nanulada, Movimiento anulado, Cura anulada y Otra Vez\ndel portador. Puede usarse una vez por combate.",
+    "pluralName": "Hierbas Mentales"
+  },
+  {
+    "id": "221",
+    "slug": "kings-rock",
+    "slugLoc": "roca-del-rey",
+    "name": "Roca del Rey",
+    "description": "Hace que el portador tenga una probabilidad del 10%\nde amedrentar al objetivo al infligirle daño con un\nmovimiento.",
+    "pluralName": "Rocas del Rey"
+  },
+  {
+    "id": "222",
+    "slug": "silver-powder",
+    "slugLoc": "polvo-plata",
+    "name": "Polvo Plata",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nBicho del portador.",
+    "pluralName": "Polvos Plata"
+  },
+  {
+    "id": "230",
+    "slug": "focus-band",
+    "slugLoc": "cinta-aguante",
+    "name": "Cinta Aguante",
+    "description": "Hace que el portador tenga una probabilidad del 10%\nde aguantar con 1 PS un movimiento que lo debilitaría.",
+    "pluralName": "Cintas Aguante"
+  },
+  {
+    "id": "232",
+    "slug": "scope-lens",
+    "slugLoc": "periscopio",
+    "name": "Periscopio",
+    "description": "Aumenta un nivel la probabilidad de asestar golpes\ncríticos del portador.",
+    "pluralName": "Periscopios"
+  },
+  {
+    "id": "233",
+    "slug": "metal-coat",
+    "slugLoc": "revest-metalico",
+    "name": "Revest. Metálico",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nAcero del portador.",
+    "pluralName": "Revest. Metálicos"
+  },
+  {
+    "id": "234",
+    "slug": "leftovers",
+    "slugLoc": "restos",
+    "name": "Restos",
+    "description": "Restauran 1/16 de los PS máximos del portador al final\nde cada turno.",
+    "pluralName": "Restos"
+  },
+  {
+    "id": "236",
+    "slug": "light-ball",
+    "slugLoc": "bola-luminosa",
+    "name": "Bola Luminosa",
+    "description": "Si la lleva Pikachu, le duplica el Ataque\ny el Ataque Especial.",
+    "pluralName": "Bolas Luminosas"
+  },
+  {
+    "id": "237",
+    "slug": "soft-sand",
+    "slugLoc": "arena-fina",
+    "name": "Arena Fina",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nTierra del portador.",
+    "pluralName": "Arenas Finas"
+  },
+  {
+    "id": "238",
+    "slug": "hard-stone",
+    "slugLoc": "piedra-dura",
+    "name": "Piedra Dura",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nRoca del portador.",
+    "pluralName": "Piedras Duras"
+  },
+  {
+    "id": "239",
+    "slug": "miracle-seed",
+    "slugLoc": "semilla-milagro",
+    "name": "Semilla Milagro",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nPlanta del portador.",
+    "pluralName": "Semillas Milagro"
+  },
+  {
+    "id": "240",
+    "slug": "black-glasses",
+    "slugLoc": "gafas-de-sol",
+    "name": "Gafas de Sol",
+    "description": "Aumentan un 20% la potencia de los movimientos\nde tipo Siniestro del portador.",
+    "pluralName": "Gafas de Sol"
+  },
+  {
+    "id": "241",
+    "slug": "black-belt",
+    "slugLoc": "cinturon-negro",
+    "name": "Cinturón Negro",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nLucha del portador.",
+    "pluralName": "Cinturones Negros"
+  },
+  {
+    "id": "242",
+    "slug": "magnet",
+    "slugLoc": "iman",
+    "name": "Imán",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nEléctrico del portador.",
+    "pluralName": "Imanes"
+  },
+  {
+    "id": "243",
+    "slug": "mystic-water",
+    "slugLoc": "agua-mistica",
+    "name": "Agua Mística",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nAgua del portador.",
+    "pluralName": "Aguas Místicas"
+  },
+  {
+    "id": "244",
+    "slug": "sharp-beak",
+    "slugLoc": "pico-afilado",
+    "name": "Pico Afilado",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nVolador del portador.",
+    "pluralName": "Picos Afilados"
+  },
+  {
+    "id": "245",
+    "slug": "poison-barb",
+    "slugLoc": "flecha-venenosa",
+    "name": "Flecha Venenosa",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nVeneno del portador.",
+    "pluralName": "Flechas Venenosas"
+  },
+  {
+    "id": "246",
+    "slug": "never-melt-ice",
+    "slugLoc": "hielo-perpetuo",
+    "name": "Hielo Perpetuo",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nHielo del portador.",
+    "pluralName": "Hielos Perpetuos"
+  },
+  {
+    "id": "247",
+    "slug": "spell-tag",
+    "slugLoc": "hechizo",
+    "name": "Hechizo",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nFantasma del portador.",
+    "pluralName": "Hechizos"
+  },
+  {
+    "id": "248",
+    "slug": "twisted-spoon",
+    "slugLoc": "cuchara-torcida",
+    "name": "Cuchara Torcida",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nPsíquico del portador.",
+    "pluralName": "Cucharas Torcidas"
+  },
+  {
+    "id": "249",
+    "slug": "charcoal",
+    "slugLoc": "carbon",
+    "name": "Carbón",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nFuego del portador.",
+    "pluralName": "Carbones"
+  },
+  {
+    "id": "250",
+    "slug": "dragon-fang",
+    "slugLoc": "colmillo-de-dragon",
+    "name": "Colmillo de Dragón",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nDragón del portador.",
+    "pluralName": "Colmillos de Dragón"
+  },
+  {
+    "id": "251",
+    "slug": "silk-scarf",
+    "slugLoc": "panuelo-de-seda",
+    "name": "Pañuelo de Seda",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nNormal del portador.",
+    "pluralName": "Pañuelos de Seda"
+  },
+  {
+    "id": "253",
+    "slug": "shell-bell",
+    "slugLoc": "cascabel-concha",
+    "name": "Cascabel Concha",
+    "description": "Hace que el portador recupere una cantidad de\nPS equivalente a 1/8 del daño que inflija con un\nmovimiento.",
+    "pluralName": "Cascabeles Concha"
+  },
+  {
+    "id": "275",
+    "slug": "focus-sash",
+    "slugLoc": "banda-aguante",
+    "name": "Banda Aguante",
+    "description": "Si el portador tiene los PS al máximo, aguanta con\n1 PS un movimiento que lo debilitaría de un golpe.\nPuede usarse una vez por combate.",
+    "pluralName": "Bandas Aguante"
+  },
+  {
+    "id": "287",
+    "slug": "choice-scarf",
+    "slugLoc": "panuelo-eleccion",
+    "name": "Pañuelo Elección",
+    "description": "Aumenta un 50% la Velocidad del portador, pero,\nuna vez que haya utilizado un movimiento, solo podrá\nusar el mismo hasta que sea cambiado por otro\nPokémon.",
+    "pluralName": "Pañuelos Elección"
+  },
+  {
+    "id": "656",
+    "slug": "gengarite",
+    "slugLoc": "gengarita",
+    "name": "Gengarita",
+    "description": "Si la lleva Gengar, le permite megaevolucionar.",
+    "pluralName": "Gengaritas"
+  },
+  {
+    "id": "657",
+    "slug": "gardevoirite",
+    "slugLoc": "gardevoirita",
+    "name": "Gardevoirita",
+    "description": "Si la lleva Gardevoir, le permite megaevolucionar.",
+    "pluralName": "Gardevoiritas"
+  },
+  {
+    "id": "658",
+    "slug": "ampharosite",
+    "slugLoc": "ampharosita",
+    "name": "Ampharosita",
+    "description": "Si la lleva Ampharos, le permite megaevolucionar.",
+    "pluralName": "Ampharositas"
+  },
+  {
+    "id": "659",
+    "slug": "venusaurite",
+    "slugLoc": "venusaurita",
+    "name": "Venusaurita",
+    "description": "Si la lleva Venusaur, le permite megaevolucionar.",
+    "pluralName": "Venusauritas"
+  },
+  {
+    "id": "660",
+    "slug": "charizardite-x",
+    "slugLoc": "charizardita-x",
+    "name": "Charizardita X",
+    "description": "Si la lleva Charizard, le permite megaevolucionar\na Mega-Charizard X.",
+    "pluralName": "Charizarditas X"
+  },
+  {
+    "id": "661",
+    "slug": "blastoisinite",
+    "slugLoc": "blastoisita",
+    "name": "Blastoisita",
+    "description": "Si la lleva Blastoise, le permite megaevolucionar.",
+    "pluralName": "Blastoisitas"
+  },
+  {
+    "id": "665",
+    "slug": "medichamite",
+    "slugLoc": "medichamita",
+    "name": "Medichamita",
+    "description": "Si la lleva Medicham, le permite megaevolucionar.",
+    "pluralName": "Medichamitas"
+  },
+  {
+    "id": "666",
+    "slug": "houndoominite",
+    "slugLoc": "houndoomita",
+    "name": "Houndoomita",
+    "description": "Si la lleva Houndoom, le permite megaevolucionar.",
+    "pluralName": "Houndoomitas"
+  },
+  {
+    "id": "667",
+    "slug": "aggronite",
+    "slugLoc": "aggronita",
+    "name": "Aggronita",
+    "description": "Si la lleva Aggron, le permite megaevolucionar.",
+    "pluralName": "Aggronitas"
+  },
+  {
+    "id": "668",
+    "slug": "banettite",
+    "slugLoc": "banettita",
+    "name": "Banettita",
+    "description": "Si la lleva Banette, le permite megaevolucionar.",
+    "pluralName": "Banettitas"
+  },
+  {
+    "id": "669",
+    "slug": "tyranitarite",
+    "slugLoc": "tyranitarita",
+    "name": "Tyranitarita",
+    "description": "Si la lleva Tyranitar, le permite megaevolucionar.",
+    "pluralName": "Tyranitaritas"
+  },
+  {
+    "id": "670",
+    "slug": "scizorite",
+    "slugLoc": "scizorita",
+    "name": "Scizorita",
+    "description": "Si la lleva Scizor, le permite megaevolucionar.",
+    "pluralName": "Scizoritas"
+  },
+  {
+    "id": "671",
+    "slug": "pinsirite",
+    "slugLoc": "pinsirita",
+    "name": "Pinsirita",
+    "description": "Si la lleva Pinsir, le permite megaevolucionar.",
+    "pluralName": "Pinsiritas"
+  },
+  {
+    "id": "672",
+    "slug": "aerodactylite",
+    "slugLoc": "aerodactylita",
+    "name": "Aerodactylita",
+    "description": "Si la lleva Aerodactyl, le permite megaevolucionar.",
+    "pluralName": "Aerodactylitas"
+  },
+  {
+    "id": "673",
+    "slug": "lucarionite",
+    "slugLoc": "lucarita",
+    "name": "Lucarita",
+    "description": "Si la lleva Lucario, le permite megaevolucionar.",
+    "pluralName": "Lucaritas"
+  },
+  {
+    "id": "674",
+    "slug": "abomasite",
+    "slugLoc": "abomasnowita",
+    "name": "Abomasnowita",
+    "description": "Si la lleva Abomasnow, le permite megaevolucionar.",
+    "pluralName": "Abomasnowitas"
+  },
+  {
+    "id": "675",
+    "slug": "kangaskhanite",
+    "slugLoc": "kangaskhanita",
+    "name": "Kangaskhanita",
+    "description": "Si la lleva Kangaskhan, le permite megaevolucionar.",
+    "pluralName": "Kangaskhanitas"
+  },
+  {
+    "id": "676",
+    "slug": "gyaradosite",
+    "slugLoc": "gyaradosita",
+    "name": "Gyaradosita",
+    "description": "Si la lleva Gyarados, le permite megaevolucionar.",
+    "pluralName": "Gyaradositas"
+  },
+  {
+    "id": "677",
+    "slug": "absolite",
+    "slugLoc": "absolita",
+    "name": "Absolita",
+    "description": "Si la lleva Absol, le permite megaevolucionar.",
+    "pluralName": "Absolitas"
+  },
+  {
+    "id": "678",
+    "slug": "charizardite-y",
+    "slugLoc": "charizardita-y",
+    "name": "Charizardita Y",
+    "description": "Si la lleva Charizard, le permite megaevolucionar\na Mega-Charizard Y.",
+    "pluralName": "Charizarditas Y"
+  },
+  {
+    "id": "679",
+    "slug": "alakazite",
+    "slugLoc": "alakazamita",
+    "name": "Alakazamita",
+    "description": "Si la lleva Alakazam, le permite megaevolucionar.",
+    "pluralName": "Alakazamitas"
+  },
+  {
+    "id": "680",
+    "slug": "heracronite",
+    "slugLoc": "heracrossita",
+    "name": "Heracrossita",
+    "description": "Si la lleva Heracross, le permite megaevolucionar.",
+    "pluralName": "Heracrossitas"
+  },
+  {
+    "id": "682",
+    "slug": "manectite",
+    "slugLoc": "manectricita",
+    "name": "Manectricita",
+    "description": "Si la lleva Manectric, le permite megaevolucionar.",
+    "pluralName": "Manectricitas"
+  },
+  {
+    "id": "683",
+    "slug": "garchompite",
+    "slugLoc": "garchompita",
+    "name": "Garchompita",
+    "description": "Si la lleva Garchomp, le permite megaevolucionar.",
+    "pluralName": "Garchompitas"
+  },
+  {
+    "id": "686",
+    "slug": "roseli-berry",
+    "slugLoc": "baya-hibis",
+    "name": "Baya Hibis",
+    "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Hada que el portador reciba. Puede usarse\nuna vez por combate.",
+    "pluralName": "Bayas Hibis"
+  },
+  {
+    "id": "754",
+    "slug": "sablenite",
+    "slugLoc": "sableynita",
+    "name": "Sableynita",
+    "description": "Si la lleva Sableye, le permite megaevolucionar.",
+    "pluralName": "Sableynitas"
+  },
+  {
+    "id": "755",
+    "slug": "altarianite",
+    "slugLoc": "altarianita",
+    "name": "Altarianita",
+    "description": "Si la lleva Altaria, le permite megaevolucionar.",
+    "pluralName": "Altarianitas"
+  },
+  {
+    "id": "756",
+    "slug": "galladite",
+    "slugLoc": "galladita",
+    "name": "Galladita",
+    "description": "Si la lleva Gallade, le permite megaevolucionar.",
+    "pluralName": "Galladitas"
+  },
+  {
+    "id": "757",
+    "slug": "audinite",
+    "slugLoc": "audinita",
+    "name": "Audinita",
+    "description": "Si la lleva Audino, le permite megaevolucionar.",
+    "pluralName": "Audinitas"
+  },
+  {
+    "id": "759",
+    "slug": "sharpedonite",
+    "slugLoc": "sharpedonita",
+    "name": "Sharpedonita",
+    "description": "Si la lleva Sharpedo, le permite megaevolucionar.",
+    "pluralName": "Sharpedonitas"
+  },
+  {
+    "id": "760",
+    "slug": "slowbronite",
+    "slugLoc": "slowbronita",
+    "name": "Slowbronita",
+    "description": "Si la lleva Slowbro, le permite megaevolucionar.\nNo tiene efecto en el Slowbro de Galar.",
+    "pluralName": "Slowbronitas"
+  },
+  {
+    "id": "761",
+    "slug": "steelixite",
+    "slugLoc": "steelixita",
+    "name": "Steelixita",
+    "description": "Si la lleva Steelix, le permite megaevolucionar.",
+    "pluralName": "Steelixitas"
+  },
+  {
+    "id": "762",
+    "slug": "pidgeotite",
+    "slugLoc": "pidgeotita",
+    "name": "Pidgeotita",
+    "description": "Si la lleva Pidgeot, le permite megaevolucionar.",
+    "pluralName": "Pidgeotitas"
+  },
+  {
+    "id": "763",
+    "slug": "glalitite",
+    "slugLoc": "glalita",
+    "name": "Glalita",
+    "description": "Si la lleva Glalie, le permite megaevolucionar.",
+    "pluralName": "Glalitas"
+  },
+  {
+    "id": "767",
+    "slug": "cameruptite",
+    "slugLoc": "cameruptita",
+    "name": "Cameruptita",
+    "description": "Si la lleva Camerupt, le permite megaevolucionar.",
+    "pluralName": "Cameruptitas"
+  },
+  {
+    "id": "768",
+    "slug": "lopunnite",
+    "slugLoc": "lopunnita",
+    "name": "Lopunnita",
+    "description": "Si la lleva Lopunny, le permite megaevolucionar.",
+    "pluralName": "Lopunnitas"
+  },
+  {
+    "id": "770",
+    "slug": "beedrillite",
+    "slugLoc": "beedrillita",
+    "name": "Beedrillita",
+    "description": "Si la lleva Beedrill, le permite megaevolucionar.",
+    "pluralName": "Beedrillitas"
+  },
+  {
+    "id": "2401",
+    "slug": "fairy-feather",
+    "slugLoc": "pluma-feerica",
+    "name": "Pluma Feérica",
+    "description": "Aumenta un 20% la potencia de los movimientos de tipo\nHada del portador.",
+    "pluralName": "Plumas Feéricas"
+  },
+  {
+    "id": "2559",
+    "slug": "clefablite",
+    "slugLoc": "clefablita",
+    "name": "Clefablita",
+    "description": "Si la lleva Clefable, le permite megaevolucionar.",
+    "pluralName": "Clefablitas"
+  },
+  {
+    "id": "2560",
+    "slug": "victreebelite",
+    "slugLoc": "victreebelita",
+    "name": "Victreebelita",
+    "description": "Si la lleva Victreebel, le permite megaevolucionar.",
+    "pluralName": "Victreebelitas"
+  },
+  {
+    "id": "2561",
+    "slug": "starminite",
+    "slugLoc": "starmita",
+    "name": "Starmita",
+    "description": "Si la lleva Starmie, le permite megaevolucionar.",
+    "pluralName": "Starmitas"
+  },
+  {
+    "id": "2562",
+    "slug": "dragoninite",
+    "slugLoc": "dragonitita",
+    "name": "Dragonitita",
+    "description": "Si la lleva Dragonite, le permite megaevolucionar.",
+    "pluralName": "Dragonititas"
+  },
+  {
+    "id": "2563",
+    "slug": "meganiumite",
+    "slugLoc": "meganiumita",
+    "name": "Meganiumita",
+    "description": "Si la lleva Meganium, le permite megaevolucionar.",
+    "pluralName": "Meganiumitas"
+  },
+  {
+    "id": "2564",
+    "slug": "feraligite",
+    "slugLoc": "feraligatrita",
+    "name": "Feraligatrita",
+    "description": "Si la lleva Feraligatr, le permite megaevolucionar.",
+    "pluralName": "Feraligatritas"
+  },
+  {
+    "id": "2565",
+    "slug": "skarmorite",
+    "slugLoc": "skarmorita",
+    "name": "Skarmorita",
+    "description": "Si la lleva Skarmory, le permite megaevolucionar.",
+    "pluralName": "Skarmoritas"
+  },
+  {
+    "id": "2566",
+    "slug": "froslassite",
+    "slugLoc": "froslassita",
+    "name": "Froslassita",
+    "description": "Si la lleva Froslass, le permite megaevolucionar.",
+    "pluralName": "Froslassitas"
+  },
+  {
+    "id": "2569",
+    "slug": "emboarite",
+    "slugLoc": "emboarita",
+    "name": "Emboarita",
+    "description": "Si la lleva Emboar, le permite megaevolucionar.",
+    "pluralName": "Emboaritas"
+  },
+  {
+    "id": "2570",
+    "slug": "excadrite",
+    "slugLoc": "excadrillita",
+    "name": "Excadrillita",
+    "description": "Si la lleva Excadrill, le permite megaevolucionar.",
+    "pluralName": "Excadrillitas"
+  },
+  {
+    "id": "2574",
+    "slug": "chandelurite",
+    "slugLoc": "chandelurita",
+    "name": "Chandelurita",
+    "description": "Si la lleva Chandelure, le permite megaevolucionar.",
+    "pluralName": "Chandeluritas"
+  },
+  {
+    "id": "2575",
+    "slug": "chesnaughtite",
+    "slugLoc": "chesnaughtita",
+    "name": "Chesnaughtita",
+    "description": "Si la lleva Chesnaught, le permite megaevolucionar.",
+    "pluralName": "Chesnaughtitas"
+  },
+  {
+    "id": "2576",
+    "slug": "delphoxite",
+    "slugLoc": "delphoxita",
+    "name": "Delphoxita",
+    "description": "Si la lleva Delphox, le permite megaevolucionar.",
+    "pluralName": "Delphoxitas"
+  },
+  {
+    "id": "2577",
+    "slug": "greninjite",
+    "slugLoc": "greninjanita",
+    "name": "Greninjanita",
+    "description": "Si la lleva Greninja, le permite megaevolucionar.",
+    "pluralName": "Greninjanitas"
+  },
+  {
+    "id": "2579",
+    "slug": "floettite",
+    "slugLoc": "floettita",
+    "name": "Floettita",
+    "description": "Si la lleva Floette Flor Eterna, le permite\nmegaevolucionar.",
+    "pluralName": "Floettitas"
+  },
+  {
+    "id": "2583",
+    "slug": "hawluchanite",
+    "slugLoc": "hawluchanita",
+    "name": "Hawluchanita",
+    "description": "Si la lleva Hawlucha, le permite megaevolucionar.",
+    "pluralName": "Hawluchanitas"
+  },
+  {
+    "id": "2585",
+    "slug": "drampanite",
+    "slugLoc": "drampanita",
+    "name": "Drampanita",
+    "description": "Si la lleva Drampa, le permite megaevolucionar.",
+    "pluralName": "Drampanitas"
+  },
+  {
+    "id": "2637",
+    "slug": "chimechite",
+    "slugLoc": "chimechita",
+    "name": "Chimechita",
+    "description": "Si la lleva Chimecho, le permite megaevolucionar.",
+    "pluralName": "Chimechitas"
+  },
+  {
+    "id": "2642",
+    "slug": "golurkite",
+    "slugLoc": "golurkita",
+    "name": "Golurkita",
+    "description": "Si la lleva Golurk, le permite megaevolucionar.",
+    "pluralName": "Golurkitas"
+  },
+  {
+    "id": "2643",
+    "slug": "meowsticite",
+    "slugLoc": "meowsticita",
+    "name": "Meowsticita",
+    "description": "Si la lleva Meowstic, le permite megaevolucionar.",
+    "pluralName": "Meowsticitas"
+  },
+  {
+    "id": "2644",
+    "slug": "crabominite",
+    "slugLoc": "crabominablita",
+    "name": "Crabominablita",
+    "description": "Si la lleva Crabominable, le permite megaevolucionar.",
+    "pluralName": "Crabominablitas"
+  },
+  {
+    "id": "2647",
+    "slug": "scovillainite",
+    "slugLoc": "scovillainita",
+    "name": "Scovillainita",
+    "description": "Si la lleva Scovillain, le permite megaevolucionar.",
+    "pluralName": "Scovillainitas"
+  },
+  {
+    "id": "2650",
+    "slug": "glimmoranite",
+    "slugLoc": "glimmoranita",
+    "name": "Glimmoranita",
+    "description": "Si la lleva Glimmora, le permite megaevolucionar.",
+    "pluralName": "Glimmoranitas"
+  }
+]

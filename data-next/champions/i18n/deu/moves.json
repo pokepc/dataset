@@ -1,0 +1,5847 @@
+[
+  {
+    "id": "1",
+    "slug": "pound",
+    "slugLoc": "klaps",
+    "name": "Klaps",
+    "description": ""
+  },
+  {
+    "id": "2",
+    "slug": "karate-chop",
+    "slugLoc": "karateschlag",
+    "name": "Karateschlag",
+    "description": ""
+  },
+  {
+    "id": "3",
+    "slug": "double-slap",
+    "slugLoc": "duplexhieb",
+    "name": "Duplexhieb",
+    "description": ""
+  },
+  {
+    "id": "4",
+    "slug": "comet-punch",
+    "slugLoc": "kometenhieb",
+    "name": "Kometenhieb",
+    "description": ""
+  },
+  {
+    "id": "5",
+    "slug": "mega-punch",
+    "slugLoc": "megahieb",
+    "name": "Megahieb",
+    "description": ""
+  },
+  {
+    "id": "6",
+    "slug": "pay-day",
+    "slugLoc": "zahltag",
+    "name": "Zahltag",
+    "description": ""
+  },
+  {
+    "id": "7",
+    "slug": "fire-punch",
+    "slugLoc": "feuerschlag",
+    "name": "Feuerschlag",
+    "description": "Das Ziel erleidet mit 10%iger Wahrscheinlichkeit\nVerbrennungen."
+  },
+  {
+    "id": "8",
+    "slug": "ice-punch",
+    "slugLoc": "eishieb",
+    "name": "Eishieb",
+    "description": "Das Ziel wird mit 10%iger Wahrscheinlichkeit eingefroren."
+  },
+  {
+    "id": "9",
+    "slug": "thunder-punch",
+    "slugLoc": "donnerschlag",
+    "name": "Donnerschlag",
+    "description": "Das Ziel wird mit 10%iger Wahrscheinlichkeit paralysiert."
+  },
+  {
+    "id": "10",
+    "slug": "scratch",
+    "slugLoc": "kratzer",
+    "name": "Kratzer",
+    "description": ""
+  },
+  {
+    "id": "11",
+    "slug": "vise-grip",
+    "slugLoc": "klammer",
+    "name": "Klammer",
+    "description": ""
+  },
+  {
+    "id": "12",
+    "slug": "guillotine",
+    "slugLoc": "guillotine",
+    "name": "Guillotine",
+    "description": "Das Ziel wird kampfunfähig. Die Genauigkeit dieser Attacke ist\nauf 30 % festgesetzt."
+  },
+  {
+    "id": "13",
+    "slug": "razor-wind",
+    "slugLoc": "klingensturm",
+    "name": "Klingensturm",
+    "description": ""
+  },
+  {
+    "id": "14",
+    "slug": "swords-dance",
+    "slugLoc": "schwerttanz",
+    "name": "Schwerttanz",
+    "description": "Der Angriff des Anwenders wird um 2 Stufen erhöht."
+  },
+  {
+    "id": "15",
+    "slug": "cut",
+    "slugLoc": "zerschneider",
+    "name": "Zerschneider",
+    "description": ""
+  },
+  {
+    "id": "16",
+    "slug": "gust",
+    "slugLoc": "windstoss",
+    "name": "Windstoß",
+    "description": ""
+  },
+  {
+    "id": "17",
+    "slug": "wing-attack",
+    "slugLoc": "flugelschlag",
+    "name": "Flügelschlag",
+    "description": ""
+  },
+  {
+    "id": "18",
+    "slug": "whirlwind",
+    "slugLoc": "wirbelwind",
+    "name": "Wirbelwind",
+    "description": "Das Ziel wird mit einem zufälligen Team-Mitglied\nausgewechselt, insofern ein Team-Mitglied vorhanden ist."
+  },
+  {
+    "id": "19",
+    "slug": "fly",
+    "slugLoc": "fliegen",
+    "name": "Fliegen",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nAbgehoben versetzt und greift in der nächsten Runde an."
+  },
+  {
+    "id": "20",
+    "slug": "bind",
+    "slugLoc": "klammergriff",
+    "name": "Klammergriff",
+    "description": "Das Ziel wird in den Zustand Umschlingung versetzt."
+  },
+  {
+    "id": "21",
+    "slug": "slam",
+    "slugLoc": "slam",
+    "name": "Slam",
+    "description": ""
+  },
+  {
+    "id": "22",
+    "slug": "vine-whip",
+    "slugLoc": "rankenhieb",
+    "name": "Rankenhieb",
+    "description": ""
+  },
+  {
+    "id": "23",
+    "slug": "stomp",
+    "slugLoc": "stampfer",
+    "name": "Stampfer",
+    "description": ""
+  },
+  {
+    "id": "24",
+    "slug": "double-kick",
+    "slugLoc": "doppelkick",
+    "name": "Doppelkick",
+    "description": ""
+  },
+  {
+    "id": "25",
+    "slug": "mega-kick",
+    "slugLoc": "megakick",
+    "name": "Megakick",
+    "description": ""
+  },
+  {
+    "id": "26",
+    "slug": "jump-kick",
+    "slugLoc": "sprungkick",
+    "name": "Sprungkick",
+    "description": ""
+  },
+  {
+    "id": "27",
+    "slug": "rolling-kick",
+    "slugLoc": "fegekick",
+    "name": "Fegekick",
+    "description": ""
+  },
+  {
+    "id": "28",
+    "slug": "sand-attack",
+    "slugLoc": "sandwirbel",
+    "name": "Sandwirbel",
+    "description": ""
+  },
+  {
+    "id": "29",
+    "slug": "headbutt",
+    "slugLoc": "kopfnuss",
+    "name": "Kopfnuss",
+    "description": ""
+  },
+  {
+    "id": "30",
+    "slug": "horn-attack",
+    "slugLoc": "hornattacke",
+    "name": "Hornattacke",
+    "description": ""
+  },
+  {
+    "id": "31",
+    "slug": "fury-attack",
+    "slugLoc": "furienschlag",
+    "name": "Furienschlag",
+    "description": ""
+  },
+  {
+    "id": "32",
+    "slug": "horn-drill",
+    "slugLoc": "hornbohrer",
+    "name": "Hornbohrer",
+    "description": "Das Ziel wird kampfunfähig. Die Genauigkeit dieser Attacke ist\nauf 30 % festgesetzt."
+  },
+  {
+    "id": "33",
+    "slug": "tackle",
+    "slugLoc": "tackle",
+    "name": "Tackle",
+    "description": ""
+  },
+  {
+    "id": "34",
+    "slug": "body-slam",
+    "slugLoc": "bodyslam",
+    "name": "Bodyslam",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit paralysiert.\nBei Zielen im Zustand Komprimator wird die Stärke dieser\nAttacke verdoppelt und sie trifft garantiert."
+  },
+  {
+    "id": "35",
+    "slug": "wrap",
+    "slugLoc": "wickel",
+    "name": "Wickel",
+    "description": "Das Ziel wird in den Zustand Umschlingung versetzt."
+  },
+  {
+    "id": "36",
+    "slug": "take-down",
+    "slugLoc": "bodycheck",
+    "name": "Bodycheck",
+    "description": ""
+  },
+  {
+    "id": "37",
+    "slug": "thrash",
+    "slugLoc": "fuchtler",
+    "name": "Fuchtler",
+    "description": "Der Anwender wird in den Zustand Tobsucht versetzt."
+  },
+  {
+    "id": "38",
+    "slug": "double-edge",
+    "slugLoc": "risikotackle",
+    "name": "Risikotackle",
+    "description": "Der Anwender erleidet 1/3 des verursachten Schadens selbst."
+  },
+  {
+    "id": "39",
+    "slug": "tail-whip",
+    "slugLoc": "rutenschlag",
+    "name": "Rutenschlag",
+    "description": ""
+  },
+  {
+    "id": "40",
+    "slug": "poison-sting",
+    "slugLoc": "giftstachel",
+    "name": "Giftstachel",
+    "description": ""
+  },
+  {
+    "id": "41",
+    "slug": "twineedle",
+    "slugLoc": "duonadel",
+    "name": "Duonadel",
+    "description": ""
+  },
+  {
+    "id": "42",
+    "slug": "pin-missile",
+    "slugLoc": "nadelrakete",
+    "name": "Nadelrakete",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an."
+  },
+  {
+    "id": "43",
+    "slug": "leer",
+    "slugLoc": "silberblick",
+    "name": "Silberblick",
+    "description": ""
+  },
+  {
+    "id": "44",
+    "slug": "bite",
+    "slugLoc": "biss",
+    "name": "Biss",
+    "description": "Das Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "45",
+    "slug": "growl",
+    "slugLoc": "heuler",
+    "name": "Heuler",
+    "description": ""
+  },
+  {
+    "id": "46",
+    "slug": "roar",
+    "slugLoc": "bruller",
+    "name": "Brüller",
+    "description": "Das Ziel wird mit einem zufälligen Team-Mitglied\nausgewechselt, insofern ein Team-Mitglied vorhanden ist."
+  },
+  {
+    "id": "47",
+    "slug": "sing",
+    "slugLoc": "gesang",
+    "name": "Gesang",
+    "description": "Das Ziel wird in Schlaf versetzt."
+  },
+  {
+    "id": "48",
+    "slug": "supersonic",
+    "slugLoc": "superschall",
+    "name": "Superschall",
+    "description": ""
+  },
+  {
+    "id": "49",
+    "slug": "sonic-boom",
+    "slugLoc": "ultraschall",
+    "name": "Ultraschall",
+    "description": ""
+  },
+  {
+    "id": "50",
+    "slug": "disable",
+    "slugLoc": "aussetzer",
+    "name": "Aussetzer",
+    "description": "Das Ziel wird 4 Runden lang in den Zustand Attackenblockade\nversetzt."
+  },
+  {
+    "id": "51",
+    "slug": "acid",
+    "slugLoc": "saure",
+    "name": "Säure",
+    "description": ""
+  },
+  {
+    "id": "52",
+    "slug": "ember",
+    "slugLoc": "glut",
+    "name": "Glut",
+    "description": ""
+  },
+  {
+    "id": "53",
+    "slug": "flamethrower",
+    "slugLoc": "flammenwurf",
+    "name": "Flammenwurf",
+    "description": "Das Ziel erleidet mit 10%iger Wahrscheinlichkeit\nVerbrennungen."
+  },
+  {
+    "id": "54",
+    "slug": "mist",
+    "slugLoc": "weissnebel",
+    "name": "Weißnebel",
+    "description": ""
+  },
+  {
+    "id": "55",
+    "slug": "water-gun",
+    "slugLoc": "aquaknarre",
+    "name": "Aquaknarre",
+    "description": ""
+  },
+  {
+    "id": "56",
+    "slug": "hydro-pump",
+    "slugLoc": "hydropumpe",
+    "name": "Hydropumpe",
+    "description": ""
+  },
+  {
+    "id": "57",
+    "slug": "surf",
+    "slugLoc": "surfer",
+    "name": "Surfer",
+    "description": "Bei Zielen im Zustand Abgetaucht wird die Stärke\ndieser Attacke verdoppelt."
+  },
+  {
+    "id": "58",
+    "slug": "ice-beam",
+    "slugLoc": "eisstrahl",
+    "name": "Eisstrahl",
+    "description": "Das Ziel wird mit 10%iger Wahrscheinlichkeit eingefroren."
+  },
+  {
+    "id": "59",
+    "slug": "blizzard",
+    "slugLoc": "blizzard",
+    "name": "Blizzard",
+    "description": "Ziele werden mit 10%iger Wahrscheinlichkeit eingefroren.\nBei Schnee trifft diese Attacke garantiert."
+  },
+  {
+    "id": "60",
+    "slug": "psybeam",
+    "slugLoc": "psystrahl",
+    "name": "Psystrahl",
+    "description": ""
+  },
+  {
+    "id": "61",
+    "slug": "bubble-beam",
+    "slugLoc": "blubbstrahl",
+    "name": "Blubbstrahl",
+    "description": ""
+  },
+  {
+    "id": "62",
+    "slug": "aurora-beam",
+    "slugLoc": "aurorastrahl",
+    "name": "Aurorastrahl",
+    "description": ""
+  },
+  {
+    "id": "63",
+    "slug": "hyper-beam",
+    "slugLoc": "hyperstrahl",
+    "name": "Hyperstrahl",
+    "description": "In der Runde nach Einsatz ist der Anwender handlungsunfähig."
+  },
+  {
+    "id": "64",
+    "slug": "peck",
+    "slugLoc": "pikser",
+    "name": "Pikser",
+    "description": ""
+  },
+  {
+    "id": "65",
+    "slug": "drill-peck",
+    "slugLoc": "bohrschnabel",
+    "name": "Bohrschnabel",
+    "description": ""
+  },
+  {
+    "id": "66",
+    "slug": "submission",
+    "slugLoc": "uberroller",
+    "name": "Überroller",
+    "description": ""
+  },
+  {
+    "id": "67",
+    "slug": "low-kick",
+    "slugLoc": "fusskick",
+    "name": "Fußkick",
+    "description": "Je schwerer das Ziel, desto höher die Stärke dieser Attacke.\nDie Stärke kann zwischen 20 und 120 liegen."
+  },
+  {
+    "id": "68",
+    "slug": "counter",
+    "slugLoc": "konter",
+    "name": "Konter",
+    "description": "Wurde der Anwender in der Runde des Einsatzes von der\nphysischen Attacke eines Gegners getroffen, wird das Doppelte\ndes Schadens auf den Angreifer zurückgeworfen."
+  },
+  {
+    "id": "69",
+    "slug": "seismic-toss",
+    "slugLoc": "geowurf",
+    "name": "Geowurf",
+    "description": "Dem Ziel wird Schaden in Höhe von 50 KP zugefügt."
+  },
+  {
+    "id": "70",
+    "slug": "strength",
+    "slugLoc": "starke",
+    "name": "Stärke",
+    "description": ""
+  },
+  {
+    "id": "71",
+    "slug": "absorb",
+    "slugLoc": "absorber",
+    "name": "Absorber",
+    "description": ""
+  },
+  {
+    "id": "72",
+    "slug": "mega-drain",
+    "slugLoc": "megasauger",
+    "name": "Megasauger",
+    "description": ""
+  },
+  {
+    "id": "73",
+    "slug": "leech-seed",
+    "slugLoc": "egelsamen",
+    "name": "Egelsamen",
+    "description": "Das Ziel wird in den Zustand Egelsamen versetzt."
+  },
+  {
+    "id": "74",
+    "slug": "growth",
+    "slugLoc": "wachstum",
+    "name": "Wachstum",
+    "description": "Der Angriff und der Spezial-Angriff des Anwenders werden\num 1 Stufe erhöht. Bei Sonnenschein werden sie um 2 Stufen\nerhöht."
+  },
+  {
+    "id": "75",
+    "slug": "razor-leaf",
+    "slugLoc": "rasierblatt",
+    "name": "Rasierblatt",
+    "description": ""
+  },
+  {
+    "id": "76",
+    "slug": "solar-beam",
+    "slugLoc": "solarstrahl",
+    "name": "Solarstrahl",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nKraftsammeln versetzt und greift in der nächsten Runde an.\nBei Sonnenschein wird er nicht in den Zustand Kraftsammeln\nversetzt und greift stattdessen sofort an.\nBei allen anderen Wettereffekten wird die Stärke dieser\nAttacke halbiert."
+  },
+  {
+    "id": "77",
+    "slug": "poison-powder",
+    "slugLoc": "giftpuder",
+    "name": "Giftpuder",
+    "description": "Das Ziel wird vergiftet."
+  },
+  {
+    "id": "78",
+    "slug": "stun-spore",
+    "slugLoc": "stachelspore",
+    "name": "Stachelspore",
+    "description": "Das Ziel wird paralysiert."
+  },
+  {
+    "id": "79",
+    "slug": "sleep-powder",
+    "slugLoc": "schlafpuder",
+    "name": "Schlafpuder",
+    "description": "Das Ziel wird in Schlaf versetzt."
+  },
+  {
+    "id": "80",
+    "slug": "petal-dance",
+    "slugLoc": "blattertanz",
+    "name": "Blättertanz",
+    "description": "Der Anwender wird in den Zustand Tobsucht versetzt."
+  },
+  {
+    "id": "81",
+    "slug": "string-shot",
+    "slugLoc": "fadenschuss",
+    "name": "Fadenschuss",
+    "description": "Die Initiative der Ziele wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "82",
+    "slug": "dragon-rage",
+    "slugLoc": "drachenwut",
+    "name": "Drachenwut",
+    "description": ""
+  },
+  {
+    "id": "83",
+    "slug": "fire-spin",
+    "slugLoc": "feuerwirbel",
+    "name": "Feuerwirbel",
+    "description": "Das Ziel wird in den Zustand Umschlingung versetzt."
+  },
+  {
+    "id": "84",
+    "slug": "thunder-shock",
+    "slugLoc": "donnerschock",
+    "name": "Donnerschock",
+    "description": ""
+  },
+  {
+    "id": "85",
+    "slug": "thunderbolt",
+    "slugLoc": "donnerblitz",
+    "name": "Donnerblitz",
+    "description": "Das Ziel wird mit 10%iger Wahrscheinlichkeit paralysiert."
+  },
+  {
+    "id": "86",
+    "slug": "thunder-wave",
+    "slugLoc": "donnerwelle",
+    "name": "Donnerwelle",
+    "description": "Das Ziel wird paralysiert."
+  },
+  {
+    "id": "87",
+    "slug": "thunder",
+    "slugLoc": "donner",
+    "name": "Donner",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit paralysiert.\nDiese Attacke kann auch Ziele treffen, die sich im Zustand\nAbgehoben befinden.\nBei Regen trifft sie garantiert."
+  },
+  {
+    "id": "88",
+    "slug": "rock-throw",
+    "slugLoc": "steinwurf",
+    "name": "Steinwurf",
+    "description": ""
+  },
+  {
+    "id": "89",
+    "slug": "earthquake",
+    "slugLoc": "erdbeben",
+    "name": "Erdbeben",
+    "description": "Bei Zielen im Zustand Eingegraben wird die Stärke dieser\nAttacke verdoppelt.\nIst ein Grasfeld aktiv, wird die Stärke der Attacke halbiert."
+  },
+  {
+    "id": "90",
+    "slug": "fissure",
+    "slugLoc": "geofissur",
+    "name": "Geofissur",
+    "description": "Das Ziel wird kampfunfähig. Die Genauigkeit dieser Attacke ist\nauf 30 % festgesetzt."
+  },
+  {
+    "id": "91",
+    "slug": "dig",
+    "slugLoc": "schaufler",
+    "name": "Schaufler",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nEingegraben versetzt und greift in der nächsten Runde an."
+  },
+  {
+    "id": "92",
+    "slug": "toxic",
+    "slugLoc": "toxin",
+    "name": "Toxin",
+    "description": "Das Ziel wird schwer vergiftet.\nGehört der Anwender dem Typ Gift an, trifft diese Attacke\ngarantiert."
+  },
+  {
+    "id": "93",
+    "slug": "confusion",
+    "slugLoc": "konfusion",
+    "name": "Konfusion",
+    "description": ""
+  },
+  {
+    "id": "94",
+    "slug": "psychic",
+    "slugLoc": "psychokinese",
+    "name": "Psychokinese",
+    "description": "Die Spezial-Verteidigung des Ziels wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "95",
+    "slug": "hypnosis",
+    "slugLoc": "hypnose",
+    "name": "Hypnose",
+    "description": "Das Ziel wird in Schlaf versetzt."
+  },
+  {
+    "id": "96",
+    "slug": "meditate",
+    "slugLoc": "meditation",
+    "name": "Meditation",
+    "description": ""
+  },
+  {
+    "id": "97",
+    "slug": "agility",
+    "slugLoc": "agilitat",
+    "name": "Agilität",
+    "description": "Die Initiative des Anwenders wird um 2 Stufen erhöht."
+  },
+  {
+    "id": "98",
+    "slug": "quick-attack",
+    "slugLoc": "ruckzuckhieb",
+    "name": "Ruckzuckhieb",
+    "description": ""
+  },
+  {
+    "id": "99",
+    "slug": "rage",
+    "slugLoc": "raserei",
+    "name": "Raserei",
+    "description": ""
+  },
+  {
+    "id": "100",
+    "slug": "teleport",
+    "slugLoc": "teleport",
+    "name": "Teleport",
+    "description": ""
+  },
+  {
+    "id": "101",
+    "slug": "night-shade",
+    "slugLoc": "nachtnebel",
+    "name": "Nachtnebel",
+    "description": "Dem Ziel wird Schaden in Höhe von 50 KP zugefügt."
+  },
+  {
+    "id": "102",
+    "slug": "mimic",
+    "slugLoc": "mimikry",
+    "name": "Mimikry",
+    "description": ""
+  },
+  {
+    "id": "103",
+    "slug": "screech",
+    "slugLoc": "kreideschrei",
+    "name": "Kreideschrei",
+    "description": "Die Verteidigung des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "104",
+    "slug": "double-team",
+    "slugLoc": "doppelteam",
+    "name": "Doppelteam",
+    "description": "Der Ausweichwert des Anwenders wird um 1 Stufe erhöht."
+  },
+  {
+    "id": "105",
+    "slug": "recover",
+    "slugLoc": "genesung",
+    "name": "Genesung",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt."
+  },
+  {
+    "id": "106",
+    "slug": "harden",
+    "slugLoc": "hartner",
+    "name": "Härtner",
+    "description": ""
+  },
+  {
+    "id": "107",
+    "slug": "minimize",
+    "slugLoc": "komprimator",
+    "name": "Komprimator",
+    "description": "Der Anwender wird in den Zustand Komprimator versetzt und\nsein Ausweichwert um 2 Stufen erhöht."
+  },
+  {
+    "id": "108",
+    "slug": "smokescreen",
+    "slugLoc": "rauchwolke",
+    "name": "Rauchwolke",
+    "description": ""
+  },
+  {
+    "id": "109",
+    "slug": "confuse-ray",
+    "slugLoc": "konfusstrahl",
+    "name": "Konfusstrahl",
+    "description": "Das Ziel wird verwirrt."
+  },
+  {
+    "id": "110",
+    "slug": "withdraw",
+    "slugLoc": "panzerschutz",
+    "name": "Panzerschutz",
+    "description": ""
+  },
+  {
+    "id": "111",
+    "slug": "defense-curl",
+    "slugLoc": "einigler",
+    "name": "Einigler",
+    "description": ""
+  },
+  {
+    "id": "112",
+    "slug": "barrier",
+    "slugLoc": "barriere",
+    "name": "Barriere",
+    "description": ""
+  },
+  {
+    "id": "113",
+    "slug": "light-screen",
+    "slugLoc": "lichtschild",
+    "name": "Lichtschild",
+    "description": "Auf der Mitstreiterseite wird der Zustand Lichtschild erzeugt,\nder 5 Runden lang anhält."
+  },
+  {
+    "id": "114",
+    "slug": "haze",
+    "slugLoc": "dunkelnebel",
+    "name": "Dunkelnebel",
+    "description": "Die Statuswertänderungen aller Pokémon auf dem Kampffeld\nwerden zurückgesetzt."
+  },
+  {
+    "id": "115",
+    "slug": "reflect",
+    "slugLoc": "reflektor",
+    "name": "Reflektor",
+    "description": "Auf der Mitstreiterseite wird der Zustand Reflektor erzeugt,\nder 5 Runden lang anhält."
+  },
+  {
+    "id": "116",
+    "slug": "focus-energy",
+    "slugLoc": "energiefokus",
+    "name": "Energiefokus",
+    "description": "Der Anwender wird in den Zustand Erhöhte Volltrefferquote +2\nversetzt."
+  },
+  {
+    "id": "117",
+    "slug": "bide",
+    "slugLoc": "geduld",
+    "name": "Geduld",
+    "description": ""
+  },
+  {
+    "id": "118",
+    "slug": "metronome",
+    "slugLoc": "metronom",
+    "name": "Metronom",
+    "description": ""
+  },
+  {
+    "id": "119",
+    "slug": "mirror-move",
+    "slugLoc": "spiegeltrick",
+    "name": "Spiegeltrick",
+    "description": ""
+  },
+  {
+    "id": "120",
+    "slug": "self-destruct",
+    "slugLoc": "finale",
+    "name": "Finale",
+    "description": "Der Anwender wird bei Einsatz kampfunfähig."
+  },
+  {
+    "id": "121",
+    "slug": "egg-bomb",
+    "slugLoc": "eierbombe",
+    "name": "Eierbombe",
+    "description": ""
+  },
+  {
+    "id": "122",
+    "slug": "lick",
+    "slugLoc": "schlecker",
+    "name": "Schlecker",
+    "description": ""
+  },
+  {
+    "id": "123",
+    "slug": "smog",
+    "slugLoc": "smog",
+    "name": "Smog",
+    "description": ""
+  },
+  {
+    "id": "124",
+    "slug": "sludge",
+    "slugLoc": "schlammbad",
+    "name": "Schlammbad",
+    "description": ""
+  },
+  {
+    "id": "125",
+    "slug": "bone-club",
+    "slugLoc": "knochenkeule",
+    "name": "Knochenkeule",
+    "description": ""
+  },
+  {
+    "id": "126",
+    "slug": "fire-blast",
+    "slugLoc": "feuersturm",
+    "name": "Feuersturm",
+    "description": "Das Ziel erleidet mit 10%iger Wahrscheinlichkeit\nVerbrennungen."
+  },
+  {
+    "id": "127",
+    "slug": "waterfall",
+    "slugLoc": "kaskade",
+    "name": "Kaskade",
+    "description": "Das Ziel schreckt mit 20%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "128",
+    "slug": "clamp",
+    "slugLoc": "schnapper",
+    "name": "Schnapper",
+    "description": ""
+  },
+  {
+    "id": "129",
+    "slug": "swift",
+    "slugLoc": "sternschauer",
+    "name": "Sternschauer",
+    "description": ""
+  },
+  {
+    "id": "130",
+    "slug": "skull-bash",
+    "slugLoc": "schadelwumme",
+    "name": "Schädelwumme",
+    "description": ""
+  },
+  {
+    "id": "131",
+    "slug": "spike-cannon",
+    "slugLoc": "dornkanone",
+    "name": "Dornkanone",
+    "description": ""
+  },
+  {
+    "id": "132",
+    "slug": "constrict",
+    "slugLoc": "umklammerung",
+    "name": "Umklammerung",
+    "description": ""
+  },
+  {
+    "id": "133",
+    "slug": "amnesia",
+    "slugLoc": "amnesie",
+    "name": "Amnesie",
+    "description": "Die Spezial-Verteidigung des Anwenders wird um\n2 Stufen erhöht."
+  },
+  {
+    "id": "134",
+    "slug": "kinesis",
+    "slugLoc": "psykraft",
+    "name": "Psykraft",
+    "description": ""
+  },
+  {
+    "id": "135",
+    "slug": "soft-boiled",
+    "slugLoc": "weichei",
+    "name": "Weichei",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt."
+  },
+  {
+    "id": "136",
+    "slug": "high-jump-kick",
+    "slugLoc": "turmkick",
+    "name": "Turmkick",
+    "description": "Schlägt die Attacke fehl oder trifft nicht, erleidet der Anwender\nSchaden in Höhe der Hälfte seiner maximalen KP."
+  },
+  {
+    "id": "137",
+    "slug": "glare",
+    "slugLoc": "schlangenblick",
+    "name": "Schlangenblick",
+    "description": "Das Ziel wird paralysiert."
+  },
+  {
+    "id": "138",
+    "slug": "dream-eater",
+    "slugLoc": "traumfresser",
+    "name": "Traumfresser",
+    "description": ""
+  },
+  {
+    "id": "139",
+    "slug": "poison-gas",
+    "slugLoc": "giftwolke",
+    "name": "Giftwolke",
+    "description": ""
+  },
+  {
+    "id": "140",
+    "slug": "barrage",
+    "slugLoc": "stakkato",
+    "name": "Stakkato",
+    "description": ""
+  },
+  {
+    "id": "141",
+    "slug": "leech-life",
+    "slugLoc": "blutsauger",
+    "name": "Blutsauger",
+    "description": "Die KP des Anwenders werden um die Hälfte des verursachten\nSchadens aufgefüllt."
+  },
+  {
+    "id": "142",
+    "slug": "lovely-kiss",
+    "slugLoc": "todeskuss",
+    "name": "Todeskuss",
+    "description": ""
+  },
+  {
+    "id": "143",
+    "slug": "sky-attack",
+    "slugLoc": "himmelsfeger",
+    "name": "Himmelsfeger",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nKraftsammeln versetzt und greift in der nächsten Runde an.\nDas Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück.\nDer Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "144",
+    "slug": "transform",
+    "slugLoc": "wandler",
+    "name": "Wandler",
+    "description": "Der Anwender verwandelt sich in eine Kopie des Ziels.\nDabei übernimmt er auch dessen Statuswerte, mit Ausnahme\nder KP."
+  },
+  {
+    "id": "145",
+    "slug": "bubble",
+    "slugLoc": "blubber",
+    "name": "Blubber",
+    "description": ""
+  },
+  {
+    "id": "146",
+    "slug": "dizzy-punch",
+    "slugLoc": "irrschlag",
+    "name": "Irrschlag",
+    "description": ""
+  },
+  {
+    "id": "147",
+    "slug": "spore",
+    "slugLoc": "pilzspore",
+    "name": "Pilzspore",
+    "description": "Das Ziel wird in Schlaf versetzt."
+  },
+  {
+    "id": "148",
+    "slug": "flash",
+    "slugLoc": "blitz",
+    "name": "Blitz",
+    "description": ""
+  },
+  {
+    "id": "149",
+    "slug": "psywave",
+    "slugLoc": "psywelle",
+    "name": "Psywelle",
+    "description": ""
+  },
+  {
+    "id": "150",
+    "slug": "splash",
+    "slugLoc": "platscher",
+    "name": "Platscher",
+    "description": ""
+  },
+  {
+    "id": "151",
+    "slug": "acid-armor",
+    "slugLoc": "saurepanzer",
+    "name": "Säurepanzer",
+    "description": "Die Verteidigung des Anwenders wird um 2 Stufen erhöht."
+  },
+  {
+    "id": "152",
+    "slug": "crabhammer",
+    "slugLoc": "krabbhammer",
+    "name": "Krabbhammer",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "153",
+    "slug": "explosion",
+    "slugLoc": "explosion",
+    "name": "Explosion",
+    "description": "Der Anwender wird bei Einsatz kampfunfähig."
+  },
+  {
+    "id": "154",
+    "slug": "fury-swipes",
+    "slugLoc": "kratzfurie",
+    "name": "Kratzfurie",
+    "description": ""
+  },
+  {
+    "id": "155",
+    "slug": "bonemerang",
+    "slugLoc": "knochmerang",
+    "name": "Knochmerang",
+    "description": ""
+  },
+  {
+    "id": "156",
+    "slug": "rest",
+    "slugLoc": "erholung",
+    "name": "Erholung",
+    "description": "Der Anwender wird für 2 Runden in Schlaf versetzt.\nDafür werden seine KP vollständig aufgefüllt und alle\nseine Statusprobleme geheilt.\nBei vollen KP schlägt die Attacke fehl."
+  },
+  {
+    "id": "157",
+    "slug": "rock-slide",
+    "slugLoc": "steinhagel",
+    "name": "Steinhagel",
+    "description": "Ziele schrecken mit 30%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "158",
+    "slug": "hyper-fang",
+    "slugLoc": "hyperzahn",
+    "name": "Hyperzahn",
+    "description": ""
+  },
+  {
+    "id": "159",
+    "slug": "sharpen",
+    "slugLoc": "scharfer",
+    "name": "Schärfer",
+    "description": ""
+  },
+  {
+    "id": "160",
+    "slug": "conversion",
+    "slugLoc": "umwandlung",
+    "name": "Umwandlung",
+    "description": ""
+  },
+  {
+    "id": "161",
+    "slug": "tri-attack",
+    "slugLoc": "triplette",
+    "name": "Triplette",
+    "description": "Das Ziel wird mit 20%iger Wahrscheinlichkeit paralysiert,\neingefroren oder erleidet Verbrennungen."
+  },
+  {
+    "id": "162",
+    "slug": "super-fang",
+    "slugLoc": "superzahn",
+    "name": "Superzahn",
+    "description": "Die verbleibenden KP des Ziels werden halbiert.\nSollte es über genau 1 KP verfügen, erleidet es Schaden\nin Höhe von 1 KP."
+  },
+  {
+    "id": "163",
+    "slug": "slash",
+    "slugLoc": "schlitzer",
+    "name": "Schlitzer",
+    "description": ""
+  },
+  {
+    "id": "164",
+    "slug": "substitute",
+    "slugLoc": "delegator",
+    "name": "Delegator",
+    "description": "Der Anwender verliert 1/4 seiner maximalen KP und erzeugt\neinen Delegator.\nDer Delegator wird anstelle des Anwenders von Attacken\ngetroffen und verschwindet dann, wenn er Schaden in Höhe\nvon 1/4 der maximalen KP des Anwenders erlitten hat."
+  },
+  {
+    "id": "165",
+    "slug": "struggle",
+    "slugLoc": "verzweifler",
+    "name": "Verzweifler",
+    "description": ""
+  },
+  {
+    "id": "166",
+    "slug": "sketch",
+    "slugLoc": "nachahmer",
+    "name": "Nachahmer",
+    "description": ""
+  },
+  {
+    "id": "167",
+    "slug": "triple-kick",
+    "slugLoc": "dreifachkick",
+    "name": "Dreifachkick",
+    "description": ""
+  },
+  {
+    "id": "168",
+    "slug": "thief",
+    "slugLoc": "raub",
+    "name": "Raub",
+    "description": "Trägt der Anwender kein Item, stiehlt er das Item des Ziels."
+  },
+  {
+    "id": "169",
+    "slug": "spider-web",
+    "slugLoc": "spinnennetz",
+    "name": "Spinnennetz",
+    "description": ""
+  },
+  {
+    "id": "170",
+    "slug": "mind-reader",
+    "slugLoc": "willensleser",
+    "name": "Willensleser",
+    "description": ""
+  },
+  {
+    "id": "171",
+    "slug": "nightmare",
+    "slugLoc": "nachtmahr",
+    "name": "Nachtmahr",
+    "description": ""
+  },
+  {
+    "id": "172",
+    "slug": "flame-wheel",
+    "slugLoc": "flammenrad",
+    "name": "Flammenrad",
+    "description": ""
+  },
+  {
+    "id": "173",
+    "slug": "snore",
+    "slugLoc": "schnarcher",
+    "name": "Schnarcher",
+    "description": "Der Einsatz dieser Attacke ist nur möglich, wenn der Anwender\nschläft. Das Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "174",
+    "slug": "curse",
+    "slugLoc": "fluch",
+    "name": "Fluch",
+    "description": "Der Anwender verliert die Hälfte seiner maximalen KP und\nversetzt das Ziel in den Zustand Fluch."
+  },
+  {
+    "id": "175",
+    "slug": "flail",
+    "slugLoc": "dreschflegel",
+    "name": "Dreschflegel",
+    "description": "Je geringer die verbleibenden KP des Anwenders,\ndesto höher die Stärke dieser Attacke.\nDie Stärke kann zwischen 20 und 200 liegen."
+  },
+  {
+    "id": "176",
+    "slug": "conversion-2",
+    "slugLoc": "umwandlung-2",
+    "name": "Umwandlung 2",
+    "description": ""
+  },
+  {
+    "id": "177",
+    "slug": "aeroblast",
+    "slugLoc": "luftstoss",
+    "name": "Luftstoß",
+    "description": ""
+  },
+  {
+    "id": "178",
+    "slug": "cotton-spore",
+    "slugLoc": "baumwollsaat",
+    "name": "Baumwollsaat",
+    "description": "Die Initiative der Ziele wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "179",
+    "slug": "reversal",
+    "slugLoc": "gegenschlag",
+    "name": "Gegenschlag",
+    "description": "Je geringer die verbleibenden KP des Anwenders,\ndesto höher die Stärke dieser Attacke.\nDie Stärke kann zwischen 20 und 200 liegen."
+  },
+  {
+    "id": "180",
+    "slug": "spite",
+    "slugLoc": "groll",
+    "name": "Groll",
+    "description": "Die AP der zuletzt eingesetzten Attacke des Ziels werden\num 4 gesenkt."
+  },
+  {
+    "id": "181",
+    "slug": "powder-snow",
+    "slugLoc": "pulverschnee",
+    "name": "Pulverschnee",
+    "description": ""
+  },
+  {
+    "id": "182",
+    "slug": "protect",
+    "slugLoc": "schutzschild",
+    "name": "Schutzschild",
+    "description": "In der Runde des Einsatzes wird der Anwender vor Attacken\ngeschützt. Mit jedem aufeinanderfolgenden Einsatz wird die\nErfolgschance gedrittelt."
+  },
+  {
+    "id": "183",
+    "slug": "mach-punch",
+    "slugLoc": "tempohieb",
+    "name": "Tempohieb",
+    "description": ""
+  },
+  {
+    "id": "184",
+    "slug": "scary-face",
+    "slugLoc": "grimasse",
+    "name": "Grimasse",
+    "description": "Die Initiative des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "185",
+    "slug": "feint-attack",
+    "slugLoc": "finte",
+    "name": "Finte",
+    "description": ""
+  },
+  {
+    "id": "186",
+    "slug": "sweet-kiss",
+    "slugLoc": "bitterkuss",
+    "name": "Bitterkuss",
+    "description": "Das Ziel wird verwirrt."
+  },
+  {
+    "id": "187",
+    "slug": "belly-drum",
+    "slugLoc": "bauchtrommel",
+    "name": "Bauchtrommel",
+    "description": "Der Anwender verliert die Hälfte seiner maximalen KP und sein\nAngriff wird auf Stufe 6 erhöht. Verfügt er nicht über genügend\nverbleibende KP, schlägt die Attacke fehl."
+  },
+  {
+    "id": "188",
+    "slug": "sludge-bomb",
+    "slugLoc": "matschbombe",
+    "name": "Matschbombe",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit vergiftet."
+  },
+  {
+    "id": "189",
+    "slug": "mud-slap",
+    "slugLoc": "lehmschelle",
+    "name": "Lehmschelle",
+    "description": "Die Genauigkeit des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "190",
+    "slug": "octazooka",
+    "slugLoc": "octazooka",
+    "name": "Octazooka",
+    "description": ""
+  },
+  {
+    "id": "191",
+    "slug": "spikes",
+    "slugLoc": "stachler",
+    "name": "Stachler",
+    "description": "Auf der Gegnerseite wird der Zustand Stachler erzeugt."
+  },
+  {
+    "id": "192",
+    "slug": "zap-cannon",
+    "slugLoc": "blitzkanone",
+    "name": "Blitzkanone",
+    "description": "Das Ziel wird paralysiert."
+  },
+  {
+    "id": "193",
+    "slug": "foresight",
+    "slugLoc": "scharfblick",
+    "name": "Scharfblick",
+    "description": ""
+  },
+  {
+    "id": "194",
+    "slug": "destiny-bond",
+    "slugLoc": "abgangsbund",
+    "name": "Abgangsbund",
+    "description": "Der Anwender wird in den Zustand Abgangsbund versetzt.\nBei aufeinanderfolgenden Einsätzen schlägt die Attacke fehl."
+  },
+  {
+    "id": "195",
+    "slug": "perish-song",
+    "slugLoc": "abgesang",
+    "name": "Abgesang",
+    "description": "Alle am Kampf beteiligten Pokémon werden in den Zustand\nUntergang versetzt."
+  },
+  {
+    "id": "196",
+    "slug": "icy-wind",
+    "slugLoc": "eissturm",
+    "name": "Eissturm",
+    "description": "Die Initiative der Ziele wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "197",
+    "slug": "detect",
+    "slugLoc": "scanner",
+    "name": "Scanner",
+    "description": "In der Runde des Einsatzes wird der Anwender vor Attacken\ngeschützt. Mit jedem aufeinanderfolgenden Einsatz wird die\nErfolgschance gedrittelt."
+  },
+  {
+    "id": "198",
+    "slug": "bone-rush",
+    "slugLoc": "knochenhatz",
+    "name": "Knochenhatz",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an."
+  },
+  {
+    "id": "199",
+    "slug": "lock-on",
+    "slugLoc": "zielschuss",
+    "name": "Zielschuss",
+    "description": "Der Anwender wird in den Zustand Zielschuss versetzt."
+  },
+  {
+    "id": "200",
+    "slug": "outrage",
+    "slugLoc": "wutanfall",
+    "name": "Wutanfall",
+    "description": "Der Anwender wird in den Zustand Tobsucht versetzt."
+  },
+  {
+    "id": "201",
+    "slug": "sandstorm",
+    "slugLoc": "sandsturm",
+    "name": "Sandsturm",
+    "description": "Der Anwender erzeugt einen Sandsturm, der 5 Runden lang\nanhält."
+  },
+  {
+    "id": "202",
+    "slug": "giga-drain",
+    "slugLoc": "gigasauger",
+    "name": "Gigasauger",
+    "description": "Die KP des Anwenders werden um die Hälfte des verursachten\nSchadens aufgefüllt."
+  },
+  {
+    "id": "203",
+    "slug": "endure",
+    "slugLoc": "ausdauer",
+    "name": "Ausdauer",
+    "description": "Erleidet der Anwender in der Runde des Einsatzes Schaden\ndurch eine Attacke, die ihn kampfunfähig machen würde,\nübersteht er diese mit 1 KP.\nMit jedem aufeinanderfolgenden Einsatz wird die Erfolgschance\ngedrittelt."
+  },
+  {
+    "id": "204",
+    "slug": "charm",
+    "slugLoc": "charme",
+    "name": "Charme",
+    "description": "Der Angriff des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "205",
+    "slug": "rollout",
+    "slugLoc": "walzer",
+    "name": "Walzer",
+    "description": ""
+  },
+  {
+    "id": "206",
+    "slug": "false-swipe",
+    "slugLoc": "trugschlag",
+    "name": "Trugschlag",
+    "description": ""
+  },
+  {
+    "id": "207",
+    "slug": "swagger",
+    "slugLoc": "angeberei",
+    "name": "Angeberei",
+    "description": "Der Angriff des Ziels wird um 2 Stufen erhöht und es wird\nverwirrt."
+  },
+  {
+    "id": "208",
+    "slug": "milk-drink",
+    "slugLoc": "milchgetrank",
+    "name": "Milchgetränk",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt."
+  },
+  {
+    "id": "209",
+    "slug": "spark",
+    "slugLoc": "funkensprung",
+    "name": "Funkensprung",
+    "description": ""
+  },
+  {
+    "id": "210",
+    "slug": "fury-cutter",
+    "slugLoc": "zornklinge",
+    "name": "Zornklinge",
+    "description": ""
+  },
+  {
+    "id": "211",
+    "slug": "steel-wing",
+    "slugLoc": "stahlflugel",
+    "name": "Stahlflügel",
+    "description": "Die Verteidigung des Anwenders wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe erhöht."
+  },
+  {
+    "id": "212",
+    "slug": "mean-look",
+    "slugLoc": "horrorblick",
+    "name": "Horrorblick",
+    "description": "Das Ziel wird in den Zustand Wechselsperre versetzt."
+  },
+  {
+    "id": "213",
+    "slug": "attract",
+    "slugLoc": "anziehung",
+    "name": "Anziehung",
+    "description": "Das Ziel wird in den Zustand Anziehung versetzt.\nBei einem Ziel desselben oder unbekannten Geschlechts\nschlägt die Attacke fehl."
+  },
+  {
+    "id": "214",
+    "slug": "sleep-talk",
+    "slugLoc": "schlafrede",
+    "name": "Schlafrede",
+    "description": "Der Einsatz dieser Attacke ist nur möglich, wenn der Anwender\nschläft. Der Anwender setzt eine zufällig ausgewählte Attacke\naus seinem Repertoire ein."
+  },
+  {
+    "id": "215",
+    "slug": "heal-bell",
+    "slugLoc": "vitalglocke",
+    "name": "Vitalglocke",
+    "description": "Alle Pokémon im Team des Anwenders und seines Mitstreiters\nwerden von Statusproblemen befreit."
+  },
+  {
+    "id": "216",
+    "slug": "return",
+    "slugLoc": "ruckkehr",
+    "name": "Rückkehr",
+    "description": ""
+  },
+  {
+    "id": "217",
+    "slug": "present",
+    "slugLoc": "geschenk",
+    "name": "Geschenk",
+    "description": ""
+  },
+  {
+    "id": "218",
+    "slug": "frustration",
+    "slugLoc": "frustration",
+    "name": "Frustration",
+    "description": ""
+  },
+  {
+    "id": "219",
+    "slug": "safeguard",
+    "slugLoc": "bodyguard",
+    "name": "Bodyguard",
+    "description": "Auf der Mitstreiterseite wird der Zustand Bodyguard erzeugt,\nder 5 Runden lang anhält."
+  },
+  {
+    "id": "220",
+    "slug": "pain-split",
+    "slugLoc": "leidteiler",
+    "name": "Leidteiler",
+    "description": "Die verbleibenden KP von Anwender und Ziel werden addiert\nund gleichmäßig unter beiden aufgeteilt."
+  },
+  {
+    "id": "221",
+    "slug": "sacred-fire",
+    "slugLoc": "lauterfeuer",
+    "name": "Läuterfeuer",
+    "description": ""
+  },
+  {
+    "id": "222",
+    "slug": "magnitude",
+    "slugLoc": "intensitat",
+    "name": "Intensität",
+    "description": ""
+  },
+  {
+    "id": "223",
+    "slug": "dynamic-punch",
+    "slugLoc": "wuchtschlag",
+    "name": "Wuchtschlag",
+    "description": "Das Ziel wird verwirrt."
+  },
+  {
+    "id": "224",
+    "slug": "megahorn",
+    "slugLoc": "vielender",
+    "name": "Vielender",
+    "description": ""
+  },
+  {
+    "id": "225",
+    "slug": "dragon-breath",
+    "slugLoc": "feuerodem",
+    "name": "Feuerodem",
+    "description": ""
+  },
+  {
+    "id": "226",
+    "slug": "baton-pass",
+    "slugLoc": "stafette",
+    "name": "Stafette",
+    "description": "Der Anwender wird gegen ein anderes Pokémon seines Teams\nausgewechselt. Sämtliche Statuswertänderungen und Effekte\nwie Delegator werden auf dieses Pokémon übertragen."
+  },
+  {
+    "id": "227",
+    "slug": "encore",
+    "slugLoc": "zugabe",
+    "name": "Zugabe",
+    "description": "Das Ziel wird in den Zustand Zugabe versetzt."
+  },
+  {
+    "id": "228",
+    "slug": "pursuit",
+    "slugLoc": "verfolgung",
+    "name": "Verfolgung",
+    "description": ""
+  },
+  {
+    "id": "229",
+    "slug": "rapid-spin",
+    "slugLoc": "turbodreher",
+    "name": "Turbodreher",
+    "description": "Der Anwender wird von den Zuständen Umschlingung und\nEgelsamen, und die Mitstreiterseite von Stachler, Giftspitzen,\nKlebenetz und Tarnsteine befreit.\nDie Initiative des Anwenders wird um 1 Stufe erhöht."
+  },
+  {
+    "id": "230",
+    "slug": "sweet-scent",
+    "slugLoc": "lockduft",
+    "name": "Lockduft",
+    "description": "Der Ausweichwert der Ziele wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "231",
+    "slug": "iron-tail",
+    "slugLoc": "eisenschweif",
+    "name": "Eisenschweif",
+    "description": "Die Verteidigung des Ziels wird mit 30%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
+  },
+  {
+    "id": "232",
+    "slug": "metal-claw",
+    "slugLoc": "metallklaue",
+    "name": "Metallklaue",
+    "description": ""
+  },
+  {
+    "id": "233",
+    "slug": "vital-throw",
+    "slugLoc": "uberwurf",
+    "name": "Überwurf",
+    "description": ""
+  },
+  {
+    "id": "234",
+    "slug": "morning-sun",
+    "slugLoc": "morgengrauen",
+    "name": "Morgengrauen",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt.\nBei Sonnenschein werden sie um 2/3 des Maximalwerts\naufgefüllt, bei allen anderen Wettereffekten um 1/4 des\nMaximalwerts."
+  },
+  {
+    "id": "235",
+    "slug": "synthesis",
+    "slugLoc": "synthese",
+    "name": "Synthese",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt.\nBei Sonnenschein werden sie um 2/3 des Maximalwerts\naufgefüllt, bei allen anderen Wettereffekten um 1/4 des\nMaximalwerts."
+  },
+  {
+    "id": "236",
+    "slug": "moonlight",
+    "slugLoc": "mondschein",
+    "name": "Mondschein",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt.\nBei Sonnenschein werden sie um 2/3 des Maximalwerts\naufgefüllt, bei allen anderen Wettereffekten um 1/4 des\nMaximalwerts."
+  },
+  {
+    "id": "237",
+    "slug": "hidden-power",
+    "slugLoc": "kraftreserve",
+    "name": "Kraftreserve",
+    "description": ""
+  },
+  {
+    "id": "238",
+    "slug": "cross-chop",
+    "slugLoc": "kreuzhieb",
+    "name": "Kreuzhieb",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "239",
+    "slug": "twister",
+    "slugLoc": "windhose",
+    "name": "Windhose",
+    "description": ""
+  },
+  {
+    "id": "240",
+    "slug": "rain-dance",
+    "slugLoc": "regentanz",
+    "name": "Regentanz",
+    "description": "Der Anwender erzeugt Regen, der 5 Runden lang anhält."
+  },
+  {
+    "id": "241",
+    "slug": "sunny-day",
+    "slugLoc": "sonnentag",
+    "name": "Sonnentag",
+    "description": "Der Anwender erzeugt Sonnenschein, der 5 Runden lang anhält."
+  },
+  {
+    "id": "242",
+    "slug": "crunch",
+    "slugLoc": "knirscher",
+    "name": "Knirscher",
+    "description": "Die Verteidigung des Ziels wird mit 20%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
+  },
+  {
+    "id": "243",
+    "slug": "mirror-coat",
+    "slugLoc": "spiegelcape",
+    "name": "Spiegelcape",
+    "description": "Wurde der Anwender in der Runde des Einsatzes von der\nSpezial-Attacke eines Gegners getroffen, wird das Doppelte\ndes Schadens auf den Angreifer zurückgeworfen."
+  },
+  {
+    "id": "244",
+    "slug": "psych-up",
+    "slugLoc": "psycho-plus",
+    "name": "Psycho-Plus",
+    "description": "Der Anwender kopiert die Statuswertänderungen des Ziels."
+  },
+  {
+    "id": "245",
+    "slug": "extreme-speed",
+    "slugLoc": "turbotempo",
+    "name": "Turbotempo",
+    "description": ""
+  },
+  {
+    "id": "246",
+    "slug": "ancient-power",
+    "slugLoc": "antik-kraft",
+    "name": "Antik-Kraft",
+    "description": "Der Angriff, der Spezial-Angriff, die Verteidigung,\ndie Spezial-Verteidigung und die Initiative des Anwenders\nwerden mit 10%iger Wahrscheinlichkeit um 1 Stufe erhöht."
+  },
+  {
+    "id": "247",
+    "slug": "shadow-ball",
+    "slugLoc": "spukball",
+    "name": "Spukball",
+    "description": "Die Spezial-Verteidigung des Ziels wird mit 20%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "248",
+    "slug": "future-sight",
+    "slugLoc": "seher",
+    "name": "Seher",
+    "description": "Die Stelle, an der sich das Ziel befindet, wird in den Zustand\nZukunftsangriff versetzt."
+  },
+  {
+    "id": "249",
+    "slug": "rock-smash",
+    "slugLoc": "zertrummerer",
+    "name": "Zertrümmerer",
+    "description": ""
+  },
+  {
+    "id": "250",
+    "slug": "whirlpool",
+    "slugLoc": "whirlpool",
+    "name": "Whirlpool",
+    "description": "Das Ziel wird in den Zustand Umschlingung versetzt.\nBei Zielen im Zustand Abgetaucht wird die Stärke\ndieser Attacke verdoppelt."
+  },
+  {
+    "id": "251",
+    "slug": "beat-up",
+    "slugLoc": "prugler",
+    "name": "Prügler",
+    "description": "Die Anzahl der Angriffe entspricht der Anzahl der\nTeam-Mitglieder des Anwenders.\nKampfunfähige Team-Mitglieder oder Team-Mitglieder,\ndie unter Statusproblemen leiden, zählen nicht.\nDie Stärke der Attacke berechnet sich aus den Angriffs-Werten\nder Team-Mitglieder."
+  },
+  {
+    "id": "252",
+    "slug": "fake-out",
+    "slugLoc": "mogelhieb",
+    "name": "Mogelhieb",
+    "description": "Das Ziel schreckt zurück. Die Attacke wird nur erfolgreich\nausgeführt, wenn sie sofort nach Kampfantritt eingesetzt wird."
+  },
+  {
+    "id": "253",
+    "slug": "uproar",
+    "slugLoc": "aufruhr",
+    "name": "Aufruhr",
+    "description": "Der Anwender wird in den Zustand Aufruhr versetzt."
+  },
+  {
+    "id": "254",
+    "slug": "stockpile",
+    "slugLoc": "horter",
+    "name": "Horter",
+    "description": "Die Verteidigung und die Spezial-Verteidigung des Anwenders\nwerden um 1 Stufe erhöht. Der Zustand Horter nimmt um 1 zu,\nmit einem Maximalwert von 3."
+  },
+  {
+    "id": "255",
+    "slug": "spit-up",
+    "slugLoc": "entfessler",
+    "name": "Entfessler",
+    "description": "Je höher der Wert des Zustands Horter, desto höher die Stärke\nder Attacke. Die Stärke kann zwischen 100 und 300 liegen.\nBefindet sich der Anwender nicht im Zustand Horter, schlägt\ndie Attacke fehl."
+  },
+  {
+    "id": "256",
+    "slug": "swallow",
+    "slugLoc": "verzehrer",
+    "name": "Verzehrer",
+    "description": "KP des Anwenders werden abhängig vom Horter-Wert aufgefüllt.\nWert von 1: 25 % der maximalen KP.\nWert von 2: 50 % der maximalen KP.\nWert von 3: 100 % der maximalen KP.\nSchlägt fehl, wenn Anwender sich nicht im Zustand Horter befindet."
+  },
+  {
+    "id": "257",
+    "slug": "heat-wave",
+    "slugLoc": "hitzewelle",
+    "name": "Hitzewelle",
+    "description": "Ziele erleiden mit 10%iger Wahrscheinlichkeit\nVerbrennungen."
+  },
+  {
+    "id": "258",
+    "slug": "hail",
+    "slugLoc": "hagelsturm",
+    "name": "Hagelsturm",
+    "description": ""
+  },
+  {
+    "id": "259",
+    "slug": "torment",
+    "slugLoc": "folterknecht",
+    "name": "Folterknecht",
+    "description": "Das Ziel wird in den Zustand Folgensperre versetzt."
+  },
+  {
+    "id": "260",
+    "slug": "flatter",
+    "slugLoc": "schmeichler",
+    "name": "Schmeichler",
+    "description": "Der Spezial-Angriff des Ziels wird um 1 Stufe erhöht und\nes wird verwirrt."
+  },
+  {
+    "id": "261",
+    "slug": "will-o-wisp",
+    "slugLoc": "irrlicht",
+    "name": "Irrlicht",
+    "description": "Das Ziel erleidet Verbrennungen."
+  },
+  {
+    "id": "262",
+    "slug": "memento",
+    "slugLoc": "memento-mori",
+    "name": "Memento-Mori",
+    "description": "Der Anwender wird kampfunfähig.\nIm Gegenzug werden Angriff und Spezial-Angriff des Ziels\num 2 Stufen gesenkt."
+  },
+  {
+    "id": "263",
+    "slug": "facade",
+    "slugLoc": "fassade",
+    "name": "Fassade",
+    "description": "Die Stärke der Attacke wird verdoppelt, wenn der Anwender\nvergiftet, schwer vergiftet oder paralysiert ist oder unter\nVerbrennungen leidet.\nAußerdem wird der den Schaden von physischen Attacken\nhalbierende Effekt von Verbrennungen ignoriert."
+  },
+  {
+    "id": "264",
+    "slug": "focus-punch",
+    "slugLoc": "power-punch",
+    "name": "Power-Punch",
+    "description": "Diese Attacke schlägt fehl, wenn der Anwender in derselben\nRunde vor ihrem Einsatz von einer Attacke getroffen wird."
+  },
+  {
+    "id": "265",
+    "slug": "smelling-salts",
+    "slugLoc": "riechsalz",
+    "name": "Riechsalz",
+    "description": ""
+  },
+  {
+    "id": "266",
+    "slug": "follow-me",
+    "slugLoc": "spotlight",
+    "name": "Spotlight",
+    "description": "Alle gegnerischen Attacken werden auf den Anwender\numgeleitet. Wirkt nur bei Attacken, für die ein einzelnes Ziel\nausgewählt werden muss."
+  },
+  {
+    "id": "267",
+    "slug": "nature-power",
+    "slugLoc": "natur-kraft",
+    "name": "Natur-Kraft",
+    "description": ""
+  },
+  {
+    "id": "268",
+    "slug": "charge",
+    "slugLoc": "ladevorgang",
+    "name": "Ladevorgang",
+    "description": "Die Spezial-Verteidigung des Anwenders wird um 1 Stufe\nerhöht.\nDer Anwender wird in den Zustand Elektro-Boost versetzt."
+  },
+  {
+    "id": "269",
+    "slug": "taunt",
+    "slugLoc": "verhohner",
+    "name": "Verhöhner",
+    "description": "Das Ziel wird in den Zustand Verhöhner versetzt."
+  },
+  {
+    "id": "270",
+    "slug": "helping-hand",
+    "slugLoc": "rechte-hand",
+    "name": "Rechte Hand",
+    "description": "In der Runde des Einsatzes wird die Stärke der Attacke eines\nMitstreiters um 50 % erhöht."
+  },
+  {
+    "id": "271",
+    "slug": "trick",
+    "slugLoc": "trickbetrug",
+    "name": "Trickbetrug",
+    "description": "Die getragenen Items von Anwender und Ziel werden getauscht."
+  },
+  {
+    "id": "272",
+    "slug": "role-play",
+    "slugLoc": "rollenspiel",
+    "name": "Rollenspiel",
+    "description": "Der Anwender nimmt die Fähigkeit des Ziels an."
+  },
+  {
+    "id": "273",
+    "slug": "wish",
+    "slugLoc": "wunschtraum",
+    "name": "Wunschtraum",
+    "description": "An der Stelle, an der sich der Anwender befindet,\nwird der Zustand Wunschtraum erzeugt."
+  },
+  {
+    "id": "274",
+    "slug": "assist",
+    "slugLoc": "zuschuss",
+    "name": "Zuschuss",
+    "description": ""
+  },
+  {
+    "id": "275",
+    "slug": "ingrain",
+    "slugLoc": "verwurzler",
+    "name": "Verwurzler",
+    "description": "Der Anwender wird in den Zustand Verwurzler versetzt."
+  },
+  {
+    "id": "276",
+    "slug": "superpower",
+    "slugLoc": "kraftkoloss",
+    "name": "Kraftkoloss",
+    "description": "Der Angriff und die Verteidigung des Anwenders werden um\n1 Stufe gesenkt."
+  },
+  {
+    "id": "277",
+    "slug": "magic-coat",
+    "slugLoc": "magiemantel",
+    "name": "Magiemantel",
+    "description": ""
+  },
+  {
+    "id": "278",
+    "slug": "recycle",
+    "slugLoc": "aufbereitung",
+    "name": "Aufbereitung",
+    "description": "Der Anwender stellt sein zuletzt verbrauchtes Item wieder her\nund trägt es erneut."
+  },
+  {
+    "id": "279",
+    "slug": "revenge",
+    "slugLoc": "vergeltung",
+    "name": "Vergeltung",
+    "description": ""
+  },
+  {
+    "id": "280",
+    "slug": "brick-break",
+    "slugLoc": "durchbruch",
+    "name": "Durchbruch",
+    "description": "Beim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Gegnerseite aufgehoben."
+  },
+  {
+    "id": "281",
+    "slug": "yawn",
+    "slugLoc": "gahner",
+    "name": "Gähner",
+    "description": "Das Ziel wird schläfrig gemacht.\nDiese Attacke trifft garantiert."
+  },
+  {
+    "id": "282",
+    "slug": "knock-off",
+    "slugLoc": "abschlag",
+    "name": "Abschlag",
+    "description": "Trägt das Ziel ein Item, steigt die Stärke dieser Attacke um 50 %.\nDas Ziel verliert sein Item."
+  },
+  {
+    "id": "283",
+    "slug": "endeavor",
+    "slugLoc": "notsituation",
+    "name": "Notsituation",
+    "description": "Der Anwender verursacht Schaden, dessen Höhe den\nverbleibenden KP des Ziels minus denen des Anwenders\nentspricht.\nSind die KP des Ziels gleich oder geringer als die des\nAnwenders, schlägt die Attacke fehl."
+  },
+  {
+    "id": "284",
+    "slug": "eruption",
+    "slugLoc": "eruption",
+    "name": "Eruption",
+    "description": "Je geringer die verbleibenden KP des Anwenders,\ndesto niedriger die Stärke dieser Attacke.\nDie Stärke kann zwischen 1 und 150 liegen."
+  },
+  {
+    "id": "285",
+    "slug": "skill-swap",
+    "slugLoc": "fahigkeitstausch",
+    "name": "Fähigkeitstausch",
+    "description": "Die Fähigkeiten von Anwender und Ziel werden getauscht."
+  },
+  {
+    "id": "286",
+    "slug": "imprison",
+    "slugLoc": "begrenzer",
+    "name": "Begrenzer",
+    "description": "Der Anwender wird in den Zustand Begrenzer versetzt."
+  },
+  {
+    "id": "287",
+    "slug": "refresh",
+    "slugLoc": "heilung",
+    "name": "Heilung",
+    "description": ""
+  },
+  {
+    "id": "288",
+    "slug": "grudge",
+    "slugLoc": "nachspiel",
+    "name": "Nachspiel",
+    "description": ""
+  },
+  {
+    "id": "289",
+    "slug": "snatch",
+    "slugLoc": "ubernahme",
+    "name": "Übernahme",
+    "description": ""
+  },
+  {
+    "id": "290",
+    "slug": "secret-power",
+    "slugLoc": "geheimpower",
+    "name": "Geheimpower",
+    "description": ""
+  },
+  {
+    "id": "291",
+    "slug": "dive",
+    "slugLoc": "taucher",
+    "name": "Taucher",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nAbgetaucht versetzt und greift in der nächsten Runde an."
+  },
+  {
+    "id": "292",
+    "slug": "arm-thrust",
+    "slugLoc": "armstoss",
+    "name": "Armstoß",
+    "description": ""
+  },
+  {
+    "id": "293",
+    "slug": "camouflage",
+    "slugLoc": "tarnung",
+    "name": "Tarnung",
+    "description": ""
+  },
+  {
+    "id": "294",
+    "slug": "tail-glow",
+    "slugLoc": "schweifglanz",
+    "name": "Schweifglanz",
+    "description": ""
+  },
+  {
+    "id": "295",
+    "slug": "luster-purge",
+    "slugLoc": "scheinwerfer",
+    "name": "Scheinwerfer",
+    "description": ""
+  },
+  {
+    "id": "296",
+    "slug": "mist-ball",
+    "slugLoc": "nebelball",
+    "name": "Nebelball",
+    "description": ""
+  },
+  {
+    "id": "297",
+    "slug": "feather-dance",
+    "slugLoc": "daunenreigen",
+    "name": "Daunenreigen",
+    "description": "Der Angriff des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "298",
+    "slug": "teeter-dance",
+    "slugLoc": "taumeltanz",
+    "name": "Taumeltanz",
+    "description": "Alle am Kampf beteiligten Pokémon außer dem Anwender\nwerden verwirrt."
+  },
+  {
+    "id": "299",
+    "slug": "blaze-kick",
+    "slugLoc": "feuerfeger",
+    "name": "Feuerfeger",
+    "description": "Das Ziel erleidet mit 10%iger Wahrscheinlichkeit\nVerbrennungen.\nDer Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "300",
+    "slug": "mud-sport",
+    "slugLoc": "lehmsuhler",
+    "name": "Lehmsuhler",
+    "description": ""
+  },
+  {
+    "id": "301",
+    "slug": "ice-ball",
+    "slugLoc": "frostbeule",
+    "name": "Frostbeule",
+    "description": ""
+  },
+  {
+    "id": "302",
+    "slug": "needle-arm",
+    "slugLoc": "nietenranke",
+    "name": "Nietenranke",
+    "description": ""
+  },
+  {
+    "id": "303",
+    "slug": "slack-off",
+    "slugLoc": "tagedieb",
+    "name": "Tagedieb",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt."
+  },
+  {
+    "id": "304",
+    "slug": "hyper-voice",
+    "slugLoc": "schallwelle",
+    "name": "Schallwelle",
+    "description": ""
+  },
+  {
+    "id": "305",
+    "slug": "poison-fang",
+    "slugLoc": "giftzahn",
+    "name": "Giftzahn",
+    "description": "Das Ziel wird mit 50%iger Wahrscheinlichkeit schwer vergiftet."
+  },
+  {
+    "id": "306",
+    "slug": "crush-claw",
+    "slugLoc": "zermalmklaue",
+    "name": "Zermalmklaue",
+    "description": "Die Verteidigung des Ziels wird mit 50%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
+  },
+  {
+    "id": "307",
+    "slug": "blast-burn",
+    "slugLoc": "lohekanonade",
+    "name": "Lohekanonade",
+    "description": "In der Runde nach Einsatz ist der Anwender handlungsunfähig."
+  },
+  {
+    "id": "308",
+    "slug": "hydro-cannon",
+    "slugLoc": "aquahaubitze",
+    "name": "Aquahaubitze",
+    "description": "In der Runde nach Einsatz ist der Anwender handlungsunfähig."
+  },
+  {
+    "id": "309",
+    "slug": "meteor-mash",
+    "slugLoc": "sternenhieb",
+    "name": "Sternenhieb",
+    "description": "Der Angriff des Anwenders wird mit 20%iger Wahrscheinlichkeit\num 1 Stufe erhöht."
+  },
+  {
+    "id": "310",
+    "slug": "astonish",
+    "slugLoc": "erstauner",
+    "name": "Erstauner",
+    "description": ""
+  },
+  {
+    "id": "311",
+    "slug": "weather-ball",
+    "slugLoc": "meteorologe",
+    "name": "Meteorologe",
+    "description": "Ist ein Wettereffekt aktiv, wird die Stärke dieser Attacke\nverdoppelt und ihr Typ ändert sich.\nBei Sonnenschein nimmt sie den Typ Feuer an, bei Regen den\nTyp Wasser, bei Schnee den Typ Eis und bei einem Sandsturm\nden Typ Gestein."
+  },
+  {
+    "id": "312",
+    "slug": "aromatherapy",
+    "slugLoc": "aromakur",
+    "name": "Aromakur",
+    "description": ""
+  },
+  {
+    "id": "313",
+    "slug": "fake-tears",
+    "slugLoc": "trugtrane",
+    "name": "Trugträne",
+    "description": "Die Spezial-Verteidigung des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "314",
+    "slug": "air-cutter",
+    "slugLoc": "windschnitt",
+    "name": "Windschnitt",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "315",
+    "slug": "overheat",
+    "slugLoc": "hitzekoller",
+    "name": "Hitzekoller",
+    "description": "Der Spezial-Angriff des Anwenders wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "316",
+    "slug": "odor-sleuth",
+    "slugLoc": "schnuffler",
+    "name": "Schnüffler",
+    "description": ""
+  },
+  {
+    "id": "317",
+    "slug": "rock-tomb",
+    "slugLoc": "felsgrab",
+    "name": "Felsgrab",
+    "description": "Die Initiative des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "318",
+    "slug": "silver-wind",
+    "slugLoc": "silberhauch",
+    "name": "Silberhauch",
+    "description": ""
+  },
+  {
+    "id": "319",
+    "slug": "metal-sound",
+    "slugLoc": "metallsound",
+    "name": "Metallsound",
+    "description": "Die Spezial-Verteidigung des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "320",
+    "slug": "grass-whistle",
+    "slugLoc": "grasflote",
+    "name": "Grasflöte",
+    "description": ""
+  },
+  {
+    "id": "321",
+    "slug": "tickle",
+    "slugLoc": "spasskanone",
+    "name": "Spaßkanone",
+    "description": "Der Angriff und die Verteidigung des Ziels werden um\n1 Stufe gesenkt."
+  },
+  {
+    "id": "322",
+    "slug": "cosmic-power",
+    "slugLoc": "kosmik-kraft",
+    "name": "Kosmik-Kraft",
+    "description": "Die Verteidigung und die Spezial-Verteidigung des Anwenders\nwerden um 1 Stufe erhöht."
+  },
+  {
+    "id": "323",
+    "slug": "water-spout",
+    "slugLoc": "fontranen",
+    "name": "Fontränen",
+    "description": "Je geringer die verbleibenden KP des Anwenders,\ndesto niedriger die Stärke dieser Attacke.\nDie Stärke kann zwischen 1 und 150 liegen."
+  },
+  {
+    "id": "324",
+    "slug": "signal-beam",
+    "slugLoc": "ampelleuchte",
+    "name": "Ampelleuchte",
+    "description": ""
+  },
+  {
+    "id": "325",
+    "slug": "shadow-punch",
+    "slugLoc": "finsterfaust",
+    "name": "Finsterfaust",
+    "description": "Diese Attacke trifft garantiert."
+  },
+  {
+    "id": "326",
+    "slug": "extrasensory",
+    "slugLoc": "sondersensor",
+    "name": "Sondersensor",
+    "description": "Das Ziel schreckt mit 10%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "327",
+    "slug": "sky-uppercut",
+    "slugLoc": "himmelhieb",
+    "name": "Himmelhieb",
+    "description": ""
+  },
+  {
+    "id": "328",
+    "slug": "sand-tomb",
+    "slugLoc": "sandgrab",
+    "name": "Sandgrab",
+    "description": "Das Ziel wird in den Zustand Umschlingung versetzt."
+  },
+  {
+    "id": "329",
+    "slug": "sheer-cold",
+    "slugLoc": "eiseskalte",
+    "name": "Eiseskälte",
+    "description": "Das Ziel wird kampfunfähig. Die Genauigkeit dieser Attacke ist\nauf 30 % festgesetzt. Ziele vom Typ Eis werden nicht getroffen.\nGehört der Anwender nicht dem Typ Eis an, beträgt die\nGenauigkeit der Attacke 20 %."
+  },
+  {
+    "id": "330",
+    "slug": "muddy-water",
+    "slugLoc": "lehmbruhe",
+    "name": "Lehmbrühe",
+    "description": "Die Genauigkeit der Ziele wird mit 30%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
+  },
+  {
+    "id": "331",
+    "slug": "bullet-seed",
+    "slugLoc": "kugelsaat",
+    "name": "Kugelsaat",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an."
+  },
+  {
+    "id": "332",
+    "slug": "aerial-ace",
+    "slugLoc": "aero-ass",
+    "name": "Aero-Ass",
+    "description": "Diese Attacke trifft garantiert."
+  },
+  {
+    "id": "333",
+    "slug": "icicle-spear",
+    "slugLoc": "eisspeer",
+    "name": "Eisspeer",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an."
+  },
+  {
+    "id": "334",
+    "slug": "iron-defense",
+    "slugLoc": "eisenabwehr",
+    "name": "Eisenabwehr",
+    "description": "Die Verteidigung des Anwenders wird um 2 Stufen erhöht."
+  },
+  {
+    "id": "335",
+    "slug": "block",
+    "slugLoc": "ruckentzug",
+    "name": "Rückentzug",
+    "description": "Das Ziel wird in den Zustand Wechselsperre versetzt."
+  },
+  {
+    "id": "336",
+    "slug": "howl",
+    "slugLoc": "jauler",
+    "name": "Jauler",
+    "description": "Der Angriff des Anwenders und seiner Mitstreiter wird um\n1 Stufe erhöht."
+  },
+  {
+    "id": "337",
+    "slug": "dragon-claw",
+    "slugLoc": "drachenklaue",
+    "name": "Drachenklaue",
+    "description": ""
+  },
+  {
+    "id": "338",
+    "slug": "frenzy-plant",
+    "slugLoc": "flora-statue",
+    "name": "Flora-Statue",
+    "description": "In der Runde nach Einsatz ist der Anwender handlungsunfähig."
+  },
+  {
+    "id": "339",
+    "slug": "bulk-up",
+    "slugLoc": "protzer",
+    "name": "Protzer",
+    "description": "Der Angriff und die Verteidigung des Anwenders werden um\n1 Stufe erhöht."
+  },
+  {
+    "id": "340",
+    "slug": "bounce",
+    "slugLoc": "sprungfeder",
+    "name": "Sprungfeder",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nAbgehoben versetzt und greift in der nächsten Runde an.\nDas Ziel wird mit 30%iger Wahrscheinlichkeit paralysiert."
+  },
+  {
+    "id": "341",
+    "slug": "mud-shot",
+    "slugLoc": "lehmschuss",
+    "name": "Lehmschuss",
+    "description": "Die Initiative des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "342",
+    "slug": "poison-tail",
+    "slugLoc": "giftschweif",
+    "name": "Giftschweif",
+    "description": ""
+  },
+  {
+    "id": "343",
+    "slug": "covet",
+    "slugLoc": "bezirzer",
+    "name": "Bezirzer",
+    "description": "Trägt der Anwender kein Item, stiehlt er das Item des Ziels."
+  },
+  {
+    "id": "344",
+    "slug": "volt-tackle",
+    "slugLoc": "volttackle",
+    "name": "Volttackle",
+    "description": "Der Anwender erleidet 1/3 des verursachten Schadens selbst.\nDas Ziel wird mit 10%iger Wahrscheinlichkeit paralysiert."
+  },
+  {
+    "id": "345",
+    "slug": "magical-leaf",
+    "slugLoc": "zauberblatt",
+    "name": "Zauberblatt",
+    "description": ""
+  },
+  {
+    "id": "346",
+    "slug": "water-sport",
+    "slugLoc": "nassmacher",
+    "name": "Nassmacher",
+    "description": ""
+  },
+  {
+    "id": "347",
+    "slug": "calm-mind",
+    "slugLoc": "gedankengut",
+    "name": "Gedankengut",
+    "description": "Der Spezial-Angriff und die Spezial-Verteidigung des Anwenders\nwerden um 1 Stufe erhöht."
+  },
+  {
+    "id": "348",
+    "slug": "leaf-blade",
+    "slugLoc": "laubklinge",
+    "name": "Laubklinge",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "349",
+    "slug": "dragon-dance",
+    "slugLoc": "drachentanz",
+    "name": "Drachentanz",
+    "description": "Der Angriff und die Initiative des Anwenders werden um\n1 Stufe erhöht."
+  },
+  {
+    "id": "350",
+    "slug": "rock-blast",
+    "slugLoc": "felswurf",
+    "name": "Felswurf",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an."
+  },
+  {
+    "id": "351",
+    "slug": "shock-wave",
+    "slugLoc": "schockwelle",
+    "name": "Schockwelle",
+    "description": ""
+  },
+  {
+    "id": "352",
+    "slug": "water-pulse",
+    "slugLoc": "aquawelle",
+    "name": "Aquawelle",
+    "description": "Das Ziel wird mit 20%iger Wahrscheinlichkeit verwirrt."
+  },
+  {
+    "id": "353",
+    "slug": "doom-desire",
+    "slugLoc": "kismetwunsch",
+    "name": "Kismetwunsch",
+    "description": ""
+  },
+  {
+    "id": "354",
+    "slug": "psycho-boost",
+    "slugLoc": "psyschub",
+    "name": "Psyschub",
+    "description": ""
+  },
+  {
+    "id": "355",
+    "slug": "roost",
+    "slugLoc": "ruheort",
+    "name": "Ruheort",
+    "description": "Die KP des Anwenders werden um die Hälfte des\nMaximalwerts aufgefüllt.\nGehört der Anwender dem Typ Flug an, verliert er diesen\nTyp in der Runde des Einsatzes."
+  },
+  {
+    "id": "356",
+    "slug": "gravity",
+    "slugLoc": "erdanziehung",
+    "name": "Erdanziehung",
+    "description": "Auf dem gesamten Kampffeld wird der Zustand Erdanziehung\nerzeugt, der 5 Runden lang anhält."
+  },
+  {
+    "id": "357",
+    "slug": "miracle-eye",
+    "slugLoc": "wunderauge",
+    "name": "Wunderauge",
+    "description": ""
+  },
+  {
+    "id": "358",
+    "slug": "wake-up-slap",
+    "slugLoc": "weckruf",
+    "name": "Weckruf",
+    "description": ""
+  },
+  {
+    "id": "359",
+    "slug": "hammer-arm",
+    "slugLoc": "hammerarm",
+    "name": "Hammerarm",
+    "description": "Die Initiative des Anwenders wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "360",
+    "slug": "gyro-ball",
+    "slugLoc": "gyroball",
+    "name": "Gyroball",
+    "description": "Je niedriger die Initiative des Anwenders im Vergleich\nzu der des Ziels, desto höher die Stärke dieser Attacke.\nDie Stärke kann zwischen 1 und 150 liegen."
+  },
+  {
+    "id": "361",
+    "slug": "healing-wish",
+    "slugLoc": "heilopfer",
+    "name": "Heilopfer",
+    "description": "Der Anwender wird kampfunfähig.\nIm Gegenzug werden die KP des an seiner Stelle\neingewechselten Pokémon vollständig aufgefüllt und\nes wird von sämtlichen Statusproblemen befreit."
+  },
+  {
+    "id": "362",
+    "slug": "brine",
+    "slugLoc": "lake",
+    "name": "Lake",
+    "description": ""
+  },
+  {
+    "id": "363",
+    "slug": "natural-gift",
+    "slugLoc": "beerenkrafte",
+    "name": "Beerenkräfte",
+    "description": ""
+  },
+  {
+    "id": "364",
+    "slug": "feint",
+    "slugLoc": "offenlegung",
+    "name": "Offenlegung",
+    "description": "Durch den Angriff des Anwenders werden Effekte von Attacken\nwie Schutzschild und Scanner aufgehoben."
+  },
+  {
+    "id": "365",
+    "slug": "pluck",
+    "slugLoc": "pflucker",
+    "name": "Pflücker",
+    "description": "Trägt das Ziel eine Beere, isst der Anwender sie stattdessen und\nbeansprucht ihren Effekt für sich."
+  },
+  {
+    "id": "366",
+    "slug": "tailwind",
+    "slugLoc": "ruckenwind",
+    "name": "Rückenwind",
+    "description": "Auf der Mitstreiterseite wird der Zustand Rückenwind erzeugt,\nder 4 Runden lang anhält."
+  },
+  {
+    "id": "367",
+    "slug": "acupressure",
+    "slugLoc": "akupressur",
+    "name": "Akupressur",
+    "description": "Einer der folgenden Statuswerte des Anwenders oder eines\nMitstreiters wird um 2 Stufen erhöht:\nAngriff, Spezial-Angriff, Verteidigung, Spezial-Verteidigung,\nInitiative, Genauigkeit oder Ausweichwert."
+  },
+  {
+    "id": "368",
+    "slug": "metal-burst",
+    "slugLoc": "metallstoss",
+    "name": "Metallstoß",
+    "description": "Wurde der Anwender in der Runde des Einsatzes von der\nAttacke eines Gegners getroffen, werden 150 % des Schadens\nauf den Angreifer zurückgeworfen."
+  },
+  {
+    "id": "369",
+    "slug": "u-turn",
+    "slugLoc": "kehrtwende",
+    "name": "Kehrtwende",
+    "description": "Der Anwender wird nach dem Angriff gegen ein anderes\nPokémon seines Teams ausgewechselt."
+  },
+  {
+    "id": "370",
+    "slug": "close-combat",
+    "slugLoc": "nahkampf",
+    "name": "Nahkampf",
+    "description": "Die Verteidigung und die Spezial-Verteidigung des Anwenders\nwerden um 1 Stufe gesenkt."
+  },
+  {
+    "id": "371",
+    "slug": "payback",
+    "slugLoc": "gegenstoss",
+    "name": "Gegenstoß",
+    "description": "Greift der Anwender nach dem Ziel an, wird die Stärke dieser\nAttacke verdoppelt."
+  },
+  {
+    "id": "372",
+    "slug": "assurance",
+    "slugLoc": "gewissheit",
+    "name": "Gewissheit",
+    "description": "Hat das Ziel in der Runde des Einsatzes bereits Schaden\nerlitten, wird die Stärke dieser Attacke verdoppelt."
+  },
+  {
+    "id": "373",
+    "slug": "embargo",
+    "slugLoc": "itemsperre",
+    "name": "Itemsperre",
+    "description": ""
+  },
+  {
+    "id": "374",
+    "slug": "fling",
+    "slugLoc": "schleuder",
+    "name": "Schleuder",
+    "description": "Stärke und Effekt dieser Attacke hängen davon ab,\nwelches Item der Anwender trägt.\nBei Einsatz der Attacke wird das Item verbraucht."
+  },
+  {
+    "id": "375",
+    "slug": "psycho-shift",
+    "slugLoc": "psybann",
+    "name": "Psybann",
+    "description": ""
+  },
+  {
+    "id": "376",
+    "slug": "trump-card",
+    "slugLoc": "trumpfkarte",
+    "name": "Trumpfkarte",
+    "description": ""
+  },
+  {
+    "id": "377",
+    "slug": "heal-block",
+    "slugLoc": "heilblockade",
+    "name": "Heilblockade",
+    "description": ""
+  },
+  {
+    "id": "378",
+    "slug": "wring-out",
+    "slugLoc": "auswringen",
+    "name": "Auswringen",
+    "description": ""
+  },
+  {
+    "id": "379",
+    "slug": "power-trick",
+    "slugLoc": "krafttrick",
+    "name": "Krafttrick",
+    "description": "Der Anwender wird in den Zustand Ang.-Vert.-Tausch versetzt."
+  },
+  {
+    "id": "380",
+    "slug": "gastro-acid",
+    "slugLoc": "magensafte",
+    "name": "Magensäfte",
+    "description": "Das Ziel wird in den Zustand Keine Fähigkeit versetzt."
+  },
+  {
+    "id": "381",
+    "slug": "lucky-chant",
+    "slugLoc": "beschworung",
+    "name": "Beschwörung",
+    "description": ""
+  },
+  {
+    "id": "382",
+    "slug": "me-first",
+    "slugLoc": "egotrip",
+    "name": "Egotrip",
+    "description": ""
+  },
+  {
+    "id": "383",
+    "slug": "copycat",
+    "slugLoc": "imitator",
+    "name": "Imitator",
+    "description": "Der Anwender setzt die zuletzt verwendete Attacke ein.\nWurde zuvor keine andere Attacke eingesetzt, schlägt diese\nAttacke fehl."
+  },
+  {
+    "id": "384",
+    "slug": "power-swap",
+    "slugLoc": "krafttausch",
+    "name": "Krafttausch",
+    "description": "Die Änderungen am Angriffs- und Spezial-Angriffs-Wert des\nAnwenders werden mit denen des Ziels getauscht."
+  },
+  {
+    "id": "385",
+    "slug": "guard-swap",
+    "slugLoc": "schutztausch",
+    "name": "Schutztausch",
+    "description": "Die Änderungen am Verteidigungs- und Spezial-Verteidigungs-\nWert des Anwenders werden mit denen des Ziels getauscht."
+  },
+  {
+    "id": "386",
+    "slug": "punishment",
+    "slugLoc": "strafattacke",
+    "name": "Strafattacke",
+    "description": ""
+  },
+  {
+    "id": "387",
+    "slug": "last-resort",
+    "slugLoc": "zuflucht",
+    "name": "Zuflucht",
+    "description": "Diese Attacke gelingt nur, wenn der Anwender zuvor alle\nanderen erlernten Attacken eingesetzt hat."
+  },
+  {
+    "id": "388",
+    "slug": "worry-seed",
+    "slugLoc": "sorgensamen",
+    "name": "Sorgensamen",
+    "description": "Die Fähigkeit des Ziels wird durch die Fähigkeit Insomnia\nersetzt."
+  },
+  {
+    "id": "389",
+    "slug": "sucker-punch",
+    "slugLoc": "tiefschlag",
+    "name": "Tiefschlag",
+    "description": "Diese Attacke gelingt nur, wenn das Ziel in der Runde des\nEinsatzes einen Angriff ausgewählt, diesen aber noch\nnicht ausgeführt hat."
+  },
+  {
+    "id": "390",
+    "slug": "toxic-spikes",
+    "slugLoc": "giftspitzen",
+    "name": "Giftspitzen",
+    "description": "Auf der Gegnerseite wird der Zustand Giftspitzen erzeugt."
+  },
+  {
+    "id": "391",
+    "slug": "heart-swap",
+    "slugLoc": "statustausch",
+    "name": "Statustausch",
+    "description": ""
+  },
+  {
+    "id": "392",
+    "slug": "aqua-ring",
+    "slugLoc": "wasserring",
+    "name": "Wasserring",
+    "description": "Der Anwender wird in den Zustand Wasserring versetzt."
+  },
+  {
+    "id": "393",
+    "slug": "magnet-rise",
+    "slugLoc": "magnetflug",
+    "name": "Magnetflug",
+    "description": "Der Anwender wird in den Zustand Magnetflug versetzt."
+  },
+  {
+    "id": "394",
+    "slug": "flare-blitz",
+    "slugLoc": "flammenblitz",
+    "name": "Flammenblitz",
+    "description": "Der Anwender erleidet 1/3 des verursachten Schadens selbst.\nDas Ziel erleidet mit 10%iger Wahrscheinlichkeit\nVerbrennungen.\nBei Einsatz wird der Anwender aufgetaut."
+  },
+  {
+    "id": "395",
+    "slug": "force-palm",
+    "slugLoc": "kraftwelle",
+    "name": "Kraftwelle",
+    "description": ""
+  },
+  {
+    "id": "396",
+    "slug": "aura-sphere",
+    "slugLoc": "aurasphare",
+    "name": "Aurasphäre",
+    "description": "Diese Attacke trifft garantiert."
+  },
+  {
+    "id": "397",
+    "slug": "rock-polish",
+    "slugLoc": "steinpolitur",
+    "name": "Steinpolitur",
+    "description": "Die Initiative des Anwenders wird um 2 Stufen erhöht."
+  },
+  {
+    "id": "398",
+    "slug": "poison-jab",
+    "slugLoc": "gifthieb",
+    "name": "Gifthieb",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit vergiftet."
+  },
+  {
+    "id": "399",
+    "slug": "dark-pulse",
+    "slugLoc": "finsteraura",
+    "name": "Finsteraura",
+    "description": "Das Ziel schreckt mit 20%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "400",
+    "slug": "night-slash",
+    "slugLoc": "nachthieb",
+    "name": "Nachthieb",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "401",
+    "slug": "aqua-tail",
+    "slugLoc": "nassschweif",
+    "name": "Nassschweif",
+    "description": ""
+  },
+  {
+    "id": "402",
+    "slug": "seed-bomb",
+    "slugLoc": "samenbomben",
+    "name": "Samenbomben",
+    "description": ""
+  },
+  {
+    "id": "403",
+    "slug": "air-slash",
+    "slugLoc": "luftschnitt",
+    "name": "Luftschnitt",
+    "description": "Das Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "404",
+    "slug": "x-scissor",
+    "slugLoc": "kreuzschere",
+    "name": "Kreuzschere",
+    "description": ""
+  },
+  {
+    "id": "405",
+    "slug": "bug-buzz",
+    "slugLoc": "kafergebrumm",
+    "name": "Käfergebrumm",
+    "description": "Die Spezial-Verteidigung des Ziels wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "406",
+    "slug": "dragon-pulse",
+    "slugLoc": "drachenpuls",
+    "name": "Drachenpuls",
+    "description": ""
+  },
+  {
+    "id": "407",
+    "slug": "dragon-rush",
+    "slugLoc": "drachenstoss",
+    "name": "Drachenstoß",
+    "description": "Das Ziel schreckt mit 20%iger Wahrscheinlichkeit zurück.\nBei Zielen im Zustand Komprimator wird die Stärke dieser\nAttacke verdoppelt und sie trifft garantiert."
+  },
+  {
+    "id": "408",
+    "slug": "power-gem",
+    "slugLoc": "juwelenkraft",
+    "name": "Juwelenkraft",
+    "description": ""
+  },
+  {
+    "id": "409",
+    "slug": "drain-punch",
+    "slugLoc": "ableithieb",
+    "name": "Ableithieb",
+    "description": "Die KP des Anwenders werden um die Hälfte des verursachten\nSchadens aufgefüllt."
+  },
+  {
+    "id": "410",
+    "slug": "vacuum-wave",
+    "slugLoc": "vakuumwelle",
+    "name": "Vakuumwelle",
+    "description": ""
+  },
+  {
+    "id": "411",
+    "slug": "focus-blast",
+    "slugLoc": "fokusstoss",
+    "name": "Fokusstoß",
+    "description": "Die Spezial-Verteidigung des Ziels wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "412",
+    "slug": "energy-ball",
+    "slugLoc": "energieball",
+    "name": "Energieball",
+    "description": "Die Spezial-Verteidigung des Ziels wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "413",
+    "slug": "brave-bird",
+    "slugLoc": "sturzflug",
+    "name": "Sturzflug",
+    "description": "Der Anwender erleidet 1/3 des verursachten Schadens selbst."
+  },
+  {
+    "id": "414",
+    "slug": "earth-power",
+    "slugLoc": "erdkrafte",
+    "name": "Erdkräfte",
+    "description": "Die Spezial-Verteidigung des Ziels wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "415",
+    "slug": "switcheroo",
+    "slugLoc": "wechseldich",
+    "name": "Wechseldich",
+    "description": "Die getragenen Items von Anwender und Ziel werden getauscht."
+  },
+  {
+    "id": "416",
+    "slug": "giga-impact",
+    "slugLoc": "gigastoss",
+    "name": "Gigastoß",
+    "description": "In der Runde nach Einsatz ist der Anwender handlungsunfähig."
+  },
+  {
+    "id": "417",
+    "slug": "nasty-plot",
+    "slugLoc": "rankeschmied",
+    "name": "Ränkeschmied",
+    "description": "Der Spezial-Angriff des Anwenders wird um 2 Stufen erhöht."
+  },
+  {
+    "id": "418",
+    "slug": "bullet-punch",
+    "slugLoc": "patronenhieb",
+    "name": "Patronenhieb",
+    "description": ""
+  },
+  {
+    "id": "419",
+    "slug": "avalanche",
+    "slugLoc": "lawine",
+    "name": "Lawine",
+    "description": "Die Stärke dieser Attacke verdoppelt sich, wenn der Anwender\nin der Runde des Einsatzes Schaden durch eine Attacke des\nZiels erlitten hat."
+  },
+  {
+    "id": "420",
+    "slug": "ice-shard",
+    "slugLoc": "eissplitter",
+    "name": "Eissplitter",
+    "description": ""
+  },
+  {
+    "id": "421",
+    "slug": "shadow-claw",
+    "slugLoc": "dunkelklaue",
+    "name": "Dunkelklaue",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "422",
+    "slug": "thunder-fang",
+    "slugLoc": "donnerzahn",
+    "name": "Donnerzahn",
+    "description": "Das Ziel wird mit 10%iger Wahrscheinlichkeit paralysiert und\nschreckt mit 10%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "423",
+    "slug": "ice-fang",
+    "slugLoc": "eiszahn",
+    "name": "Eiszahn",
+    "description": "Das Ziel wird mit 10%iger Wahrscheinlichkeit eingefroren und\nschreckt mit 10%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "424",
+    "slug": "fire-fang",
+    "slugLoc": "feuerzahn",
+    "name": "Feuerzahn",
+    "description": "Das Ziel erleidet mit 10%iger Wahrscheinlichkeit Verbrennungen\nund schreckt mit 10%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "425",
+    "slug": "shadow-sneak",
+    "slugLoc": "schattenstoss",
+    "name": "Schattenstoß",
+    "description": ""
+  },
+  {
+    "id": "426",
+    "slug": "mud-bomb",
+    "slugLoc": "schlammbombe",
+    "name": "Schlammbombe",
+    "description": ""
+  },
+  {
+    "id": "427",
+    "slug": "psycho-cut",
+    "slugLoc": "psychoklinge",
+    "name": "Psychoklinge",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "428",
+    "slug": "zen-headbutt",
+    "slugLoc": "zen-kopfstoss",
+    "name": "Zen-Kopfstoß",
+    "description": "Das Ziel schreckt mit 20%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "429",
+    "slug": "mirror-shot",
+    "slugLoc": "spiegelsalve",
+    "name": "Spiegelsalve",
+    "description": ""
+  },
+  {
+    "id": "430",
+    "slug": "flash-cannon",
+    "slugLoc": "lichtkanone",
+    "name": "Lichtkanone",
+    "description": "Die Spezial-Verteidigung des Ziels wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "431",
+    "slug": "rock-climb",
+    "slugLoc": "kraxler",
+    "name": "Kraxler",
+    "description": ""
+  },
+  {
+    "id": "432",
+    "slug": "defog",
+    "slugLoc": "auflockern",
+    "name": "Auflockern",
+    "description": "Der Ausweichwert des Ziels wird um 1 Stufe gesenkt.\nZustände wie Reflektor, Stachler, Bodyguard oder Felder\nwerden aufgehoben."
+  },
+  {
+    "id": "433",
+    "slug": "trick-room",
+    "slugLoc": "bizarroraum",
+    "name": "Bizarroraum",
+    "description": "Auf dem gesamten Kampffeld wird der Zustand Bizarroraum\nerzeugt, der 5 Runden lang anhält."
+  },
+  {
+    "id": "434",
+    "slug": "draco-meteor",
+    "slugLoc": "draco-meteor",
+    "name": "Draco Meteor",
+    "description": "Der Spezial-Angriff des Anwenders wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "435",
+    "slug": "discharge",
+    "slugLoc": "ladungsstoss",
+    "name": "Ladungsstoß",
+    "description": "Ziele werden mit 30%iger Wahrscheinlichkeit paralysiert."
+  },
+  {
+    "id": "436",
+    "slug": "lava-plume",
+    "slugLoc": "flammensturm",
+    "name": "Flammensturm",
+    "description": "Ziele erleiden mit 30%iger Wahrscheinlichkeit Verbrennungen."
+  },
+  {
+    "id": "437",
+    "slug": "leaf-storm",
+    "slugLoc": "blattersturm",
+    "name": "Blättersturm",
+    "description": "Der Spezial-Angriff des Anwenders wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "438",
+    "slug": "power-whip",
+    "slugLoc": "blattgeissel",
+    "name": "Blattgeißel",
+    "description": ""
+  },
+  {
+    "id": "439",
+    "slug": "rock-wrecker",
+    "slugLoc": "felswerfer",
+    "name": "Felswerfer",
+    "description": "In der Runde nach Einsatz ist der Anwender handlungsunfähig."
+  },
+  {
+    "id": "440",
+    "slug": "cross-poison",
+    "slugLoc": "giftstreich",
+    "name": "Giftstreich",
+    "description": "Das Ziel wird mit 10%iger Wahrscheinlichkeit vergiftet.\nDer Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "441",
+    "slug": "gunk-shot",
+    "slugLoc": "mulltreffer",
+    "name": "Mülltreffer",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit vergiftet."
+  },
+  {
+    "id": "442",
+    "slug": "iron-head",
+    "slugLoc": "eisenschadel",
+    "name": "Eisenschädel",
+    "description": "Das Ziel schreckt mit 20%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "443",
+    "slug": "magnet-bomb",
+    "slugLoc": "magnetbombe",
+    "name": "Magnetbombe",
+    "description": ""
+  },
+  {
+    "id": "444",
+    "slug": "stone-edge",
+    "slugLoc": "steinkante",
+    "name": "Steinkante",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "445",
+    "slug": "captivate",
+    "slugLoc": "liebreiz",
+    "name": "Liebreiz",
+    "description": ""
+  },
+  {
+    "id": "446",
+    "slug": "stealth-rock",
+    "slugLoc": "tarnsteine",
+    "name": "Tarnsteine",
+    "description": "Auf der Gegnerseite wird der Zustand Tarnsteine erzeugt."
+  },
+  {
+    "id": "447",
+    "slug": "grass-knot",
+    "slugLoc": "strauchler",
+    "name": "Strauchler",
+    "description": "Je schwerer das Ziel, desto höher die Stärke dieser Attacke.\nDie Stärke kann zwischen 20 und 120 liegen."
+  },
+  {
+    "id": "448",
+    "slug": "chatter",
+    "slugLoc": "geschwatz",
+    "name": "Geschwätz",
+    "description": ""
+  },
+  {
+    "id": "449",
+    "slug": "judgment",
+    "slugLoc": "urteilskraft",
+    "name": "Urteilskraft",
+    "description": ""
+  },
+  {
+    "id": "450",
+    "slug": "bug-bite",
+    "slugLoc": "kaferbiss",
+    "name": "Käferbiss",
+    "description": "Trägt das Ziel eine Beere, isst der Anwender sie stattdessen\nund beansprucht ihren Effekt für sich."
+  },
+  {
+    "id": "451",
+    "slug": "charge-beam",
+    "slugLoc": "ladestrahl",
+    "name": "Ladestrahl",
+    "description": "Der Spezial-Angriff des Anwenders wird mit 70%iger\nWahrscheinlichkeit um 1 Stufe erhöht."
+  },
+  {
+    "id": "452",
+    "slug": "wood-hammer",
+    "slugLoc": "holzhammer",
+    "name": "Holzhammer",
+    "description": "Der Anwender erleidet 1/3 des verursachten Schadens selbst."
+  },
+  {
+    "id": "453",
+    "slug": "aqua-jet",
+    "slugLoc": "wasserduse",
+    "name": "Wasserdüse",
+    "description": ""
+  },
+  {
+    "id": "454",
+    "slug": "attack-order",
+    "slugLoc": "schlagbefehl",
+    "name": "Schlagbefehl",
+    "description": ""
+  },
+  {
+    "id": "455",
+    "slug": "defend-order",
+    "slugLoc": "blockbefehl",
+    "name": "Blockbefehl",
+    "description": ""
+  },
+  {
+    "id": "456",
+    "slug": "heal-order",
+    "slugLoc": "heilbefehl",
+    "name": "Heilbefehl",
+    "description": ""
+  },
+  {
+    "id": "457",
+    "slug": "head-smash",
+    "slugLoc": "kopfstoss",
+    "name": "Kopfstoß",
+    "description": "Der Anwender erleidet die Hälfte des verursachten\nSchadens selbst."
+  },
+  {
+    "id": "458",
+    "slug": "double-hit",
+    "slugLoc": "doppelschlag",
+    "name": "Doppelschlag",
+    "description": "Der Anwender greift 2-mal in Serie an."
+  },
+  {
+    "id": "459",
+    "slug": "roar-of-time",
+    "slugLoc": "zeitenlarm",
+    "name": "Zeitenlärm",
+    "description": ""
+  },
+  {
+    "id": "460",
+    "slug": "spacial-rend",
+    "slugLoc": "raumschlag",
+    "name": "Raumschlag",
+    "description": ""
+  },
+  {
+    "id": "461",
+    "slug": "lunar-dance",
+    "slugLoc": "lunartanz",
+    "name": "Lunartanz",
+    "description": ""
+  },
+  {
+    "id": "462",
+    "slug": "crush-grip",
+    "slugLoc": "quetschgriff",
+    "name": "Quetschgriff",
+    "description": ""
+  },
+  {
+    "id": "463",
+    "slug": "magma-storm",
+    "slugLoc": "lavasturm",
+    "name": "Lavasturm",
+    "description": ""
+  },
+  {
+    "id": "464",
+    "slug": "dark-void",
+    "slugLoc": "schlummerort",
+    "name": "Schlummerort",
+    "description": ""
+  },
+  {
+    "id": "465",
+    "slug": "seed-flare",
+    "slugLoc": "schocksamen",
+    "name": "Schocksamen",
+    "description": ""
+  },
+  {
+    "id": "466",
+    "slug": "ominous-wind",
+    "slugLoc": "unheilboen",
+    "name": "Unheilböen",
+    "description": ""
+  },
+  {
+    "id": "467",
+    "slug": "shadow-force",
+    "slugLoc": "schemenkraft",
+    "name": "Schemenkraft",
+    "description": ""
+  },
+  {
+    "id": "468",
+    "slug": "hone-claws",
+    "slugLoc": "klauenwetzer",
+    "name": "Klauenwetzer",
+    "description": ""
+  },
+  {
+    "id": "469",
+    "slug": "wide-guard",
+    "slugLoc": "rundumschutz",
+    "name": "Rundumschutz",
+    "description": "In der Runde des Einsatzes werden Anwender und Mitstreiter vor\nAttacken geschützt, die alle Pokémon auf der Mitstreiterseite\ntreffen würden."
+  },
+  {
+    "id": "470",
+    "slug": "guard-split",
+    "slugLoc": "schutzteiler",
+    "name": "Schutzteiler",
+    "description": "Die Verteidigungs- und Spezial-Verteidigungs-Werte von\nAnwender und Ziel werden jeweils addiert und gleichmäßig\nunter beiden aufgeteilt."
+  },
+  {
+    "id": "471",
+    "slug": "power-split",
+    "slugLoc": "kraftteiler",
+    "name": "Kraftteiler",
+    "description": "Die Angriffs- und Spezial-Angriffs-Werte von Anwender und\nZiel werden jeweils addiert und gleichmäßig unter beiden\naufgeteilt."
+  },
+  {
+    "id": "472",
+    "slug": "wonder-room",
+    "slugLoc": "wunderraum",
+    "name": "Wunderraum",
+    "description": "Auf dem gesamten Kampffeld wird der Zustand Wunderraum\nerzeugt, der 5 Runden lang anhält."
+  },
+  {
+    "id": "473",
+    "slug": "psyshock",
+    "slugLoc": "psychoschock",
+    "name": "Psychoschock",
+    "description": "Obwohl es sich um eine Spezial-Attacke handelt, wird der\nSchaden der Attacke mit dem Verteidigungs-Wert des Ziels\nerrechnet."
+  },
+  {
+    "id": "474",
+    "slug": "venoshock",
+    "slugLoc": "giftschock",
+    "name": "Giftschock",
+    "description": "Ist das Ziel vergiftet oder schwer vergiftet, wird die Stärke\ndieser Attacke verdoppelt."
+  },
+  {
+    "id": "475",
+    "slug": "autotomize",
+    "slugLoc": "autotomie",
+    "name": "Autotomie",
+    "description": ""
+  },
+  {
+    "id": "476",
+    "slug": "rage-powder",
+    "slugLoc": "wutpulver",
+    "name": "Wutpulver",
+    "description": "Alle gegnerischen Attacken werden auf den Anwender\numgeleitet. Wirkt nur bei Attacken, für die ein einzelnes Ziel\nausgewählt werden muss."
+  },
+  {
+    "id": "477",
+    "slug": "telekinesis",
+    "slugLoc": "telekinese",
+    "name": "Telekinese",
+    "description": ""
+  },
+  {
+    "id": "478",
+    "slug": "magic-room",
+    "slugLoc": "magieraum",
+    "name": "Magieraum",
+    "description": "Auf dem gesamten Kampffeld wird der Zustand Magieraum\nerzeugt, der 5 Runden lang anhält."
+  },
+  {
+    "id": "479",
+    "slug": "smack-down",
+    "slugLoc": "katapult",
+    "name": "Katapult",
+    "description": "Ziele, die sich nicht auf dem Boden befinden, werden in den\nZustand Herabgestürzt versetzt.\nDiese Attacke kann auch Ziele treffen, die sich im Zustand\nAbgehoben befinden."
+  },
+  {
+    "id": "480",
+    "slug": "storm-throw",
+    "slugLoc": "bergsturm",
+    "name": "Bergsturm",
+    "description": "Diese Attacke hat Volltreffergarantie."
+  },
+  {
+    "id": "481",
+    "slug": "flame-burst",
+    "slugLoc": "funkenflug",
+    "name": "Funkenflug",
+    "description": ""
+  },
+  {
+    "id": "482",
+    "slug": "sludge-wave",
+    "slugLoc": "schlammwoge",
+    "name": "Schlammwoge",
+    "description": "Ziele werden mit 10%iger Wahrscheinlichkeit vergiftet."
+  },
+  {
+    "id": "483",
+    "slug": "quiver-dance",
+    "slugLoc": "falterreigen",
+    "name": "Falterreigen",
+    "description": "Der Spezial-Angriff, die Spezial-Verteidigung und die Initiative\ndes Anwenders werden um 1 Stufe erhöht."
+  },
+  {
+    "id": "484",
+    "slug": "heavy-slam",
+    "slugLoc": "rammboss",
+    "name": "Rammboss",
+    "description": "Je schwerer der Anwender im Vergleich zum Ziel, desto höher\ndie Stärke dieser Attacke.\nDie Stärke kann zwischen 40 und 120 liegen.\nBei Zielen im Zustand Komprimator wird die Stärke der Attacke\nverdoppelt und sie trifft garantiert."
+  },
+  {
+    "id": "485",
+    "slug": "synchronoise",
+    "slugLoc": "synchrolarm",
+    "name": "Synchrolärm",
+    "description": ""
+  },
+  {
+    "id": "486",
+    "slug": "electro-ball",
+    "slugLoc": "elektroball",
+    "name": "Elektroball",
+    "description": "Je höher die Initiative des Anwenders im Vergleich zum Ziel,\ndesto höher die Stärke dieser Attacke.\nDie Stärke kann zwischen 40 und 150 liegen."
+  },
+  {
+    "id": "487",
+    "slug": "soak",
+    "slugLoc": "uberflutung",
+    "name": "Überflutung",
+    "description": "Der Typ des Ziels wird durch den Typ Wasser ersetzt."
+  },
+  {
+    "id": "488",
+    "slug": "flame-charge",
+    "slugLoc": "nitroladung",
+    "name": "Nitroladung",
+    "description": "Die Initiative des Anwenders wird um 1 Stufe erhöht."
+  },
+  {
+    "id": "489",
+    "slug": "coil",
+    "slugLoc": "einrollen",
+    "name": "Einrollen",
+    "description": "Der Angriff, die Verteidigung und die Genauigkeit des\nAnwenders werden um 1 Stufe erhöht."
+  },
+  {
+    "id": "490",
+    "slug": "low-sweep",
+    "slugLoc": "fusstritt",
+    "name": "Fußtritt",
+    "description": "Die Initiative des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "491",
+    "slug": "acid-spray",
+    "slugLoc": "saurespeier",
+    "name": "Säurespeier",
+    "description": "Die Spezial-Verteidigung des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "492",
+    "slug": "foul-play",
+    "slugLoc": "schmarotzer",
+    "name": "Schmarotzer",
+    "description": "Der Schaden der Attacke hängt nicht vom Angriffs-Wert des\nAnwenders, sondern von dem des Ziels ab."
+  },
+  {
+    "id": "493",
+    "slug": "simple-beam",
+    "slugLoc": "wankelstrahl",
+    "name": "Wankelstrahl",
+    "description": "Die Fähigkeit des Ziels wird durch die Fähigkeit Wankelmut\nersetzt."
+  },
+  {
+    "id": "494",
+    "slug": "entrainment",
+    "slugLoc": "zwango",
+    "name": "Zwango",
+    "description": "Die Fähigkeit des Ziels wird durch die Fähigkeit des Anwenders\nersetzt."
+  },
+  {
+    "id": "495",
+    "slug": "after-you",
+    "slugLoc": "galanterie",
+    "name": "Galanterie",
+    "description": "Der Anwender lässt das Ziel direkt nach ihm handeln."
+  },
+  {
+    "id": "496",
+    "slug": "round",
+    "slugLoc": "kanon",
+    "name": "Kanon",
+    "description": "Setzen mehrere Pokémon diese Attacke in derselben Runde ein,\nerfolgt der zweite Einsatz direkt nach dem ersten. Ab dem\nzweiten Einsatz wird die Stärke der Attacke verdoppelt."
+  },
+  {
+    "id": "497",
+    "slug": "echoed-voice",
+    "slugLoc": "widerhall",
+    "name": "Widerhall",
+    "description": ""
+  },
+  {
+    "id": "498",
+    "slug": "chip-away",
+    "slugLoc": "zermurben",
+    "name": "Zermürben",
+    "description": ""
+  },
+  {
+    "id": "499",
+    "slug": "clear-smog",
+    "slugLoc": "klarsmog",
+    "name": "Klärsmog",
+    "description": "Die Statuswertänderungen des Ziels werden zurückgesetzt.\nDiese Attacke trifft garantiert."
+  },
+  {
+    "id": "500",
+    "slug": "stored-power",
+    "slugLoc": "kraftvorrat",
+    "name": "Kraftvorrat",
+    "description": "Mit jeder Stufe, um die die Statuswerte des Anwenders erhöht\nwurden, steigt die Stärke dieser Attacke um 20."
+  },
+  {
+    "id": "501",
+    "slug": "quick-guard",
+    "slugLoc": "rapidschutz",
+    "name": "Rapidschutz",
+    "description": "In der Runde des Einsatzes werden der Anwender und seine\nMitstreiter vor Prioritätsattacken geschützt."
+  },
+  {
+    "id": "502",
+    "slug": "ally-switch",
+    "slugLoc": "seitentausch",
+    "name": "Seitentausch",
+    "description": "Der Anwender tauscht den Platz mit seinem Mitstreiter.\nMit jedem aufeinanderfolgenden Einsatz wird die Erfolgschance\ngedrittelt."
+  },
+  {
+    "id": "503",
+    "slug": "scald",
+    "slugLoc": "siedewasser",
+    "name": "Siedewasser",
+    "description": "Das Ziel erleidet mit 30%iger Wahrscheinlichkeit\nVerbrennungen.\nBei Einsatz werden der Anwender und das Ziel aufgetaut."
+  },
+  {
+    "id": "504",
+    "slug": "shell-smash",
+    "slugLoc": "hausbruch",
+    "name": "Hausbruch",
+    "description": "Die Verteidigung und die Spezial-Verteidigung des Anwenders\nwerden um 1 Stufe gesenkt, aber der Angriff, der Spezial-Angriff\nund die Initiative werden um 2 Stufen erhöht."
+  },
+  {
+    "id": "505",
+    "slug": "heal-pulse",
+    "slugLoc": "heilwoge",
+    "name": "Heilwoge",
+    "description": "Die KP des Ziels werden um die Hälfte des Maximalwerts\naufgefüllt."
+  },
+  {
+    "id": "506",
+    "slug": "hex",
+    "slugLoc": "burde",
+    "name": "Bürde",
+    "description": "Bei Zielen mit einem Statusproblem wird die Stärke dieser\nAttacke verdoppelt."
+  },
+  {
+    "id": "507",
+    "slug": "sky-drop",
+    "slugLoc": "freier-fall",
+    "name": "Freier Fall",
+    "description": ""
+  },
+  {
+    "id": "508",
+    "slug": "shift-gear",
+    "slugLoc": "gangwechsel",
+    "name": "Gangwechsel",
+    "description": ""
+  },
+  {
+    "id": "509",
+    "slug": "circle-throw",
+    "slugLoc": "uberkopfwurf",
+    "name": "Überkopfwurf",
+    "description": "Das Ziel wird mit einem zufälligen Team-Mitglied\nausgewechselt, insofern ein Team-Mitglied vorhanden ist."
+  },
+  {
+    "id": "510",
+    "slug": "incinerate",
+    "slugLoc": "einaschern",
+    "name": "Einäschern",
+    "description": ""
+  },
+  {
+    "id": "511",
+    "slug": "quash",
+    "slugLoc": "verzogerung",
+    "name": "Verzögerung",
+    "description": "Der Anwender lässt das Ziel in der Runde des Einsatzes zuletzt\nhandeln."
+  },
+  {
+    "id": "512",
+    "slug": "acrobatics",
+    "slugLoc": "akrobatik",
+    "name": "Akrobatik",
+    "description": "Trägt der Anwender kein Item, wird die Stärke dieser Attacke\nverdoppelt."
+  },
+  {
+    "id": "513",
+    "slug": "reflect-type",
+    "slugLoc": "typenspiegel",
+    "name": "Typenspiegel",
+    "description": "Der Typ des Anwenders wird mit dem Typ des Ziels ersetzt."
+  },
+  {
+    "id": "514",
+    "slug": "retaliate",
+    "slugLoc": "heimzahlung",
+    "name": "Heimzahlung",
+    "description": ""
+  },
+  {
+    "id": "515",
+    "slug": "final-gambit",
+    "slugLoc": "wagemut",
+    "name": "Wagemut",
+    "description": "Der Anwender verursacht Schaden in Höhe seiner\nverbleibenden KP und wird kampfunfähig."
+  },
+  {
+    "id": "516",
+    "slug": "bestow",
+    "slugLoc": "offerte",
+    "name": "Offerte",
+    "description": ""
+  },
+  {
+    "id": "517",
+    "slug": "inferno",
+    "slugLoc": "inferno",
+    "name": "Inferno",
+    "description": "Das Ziel erleidet Verbrennungen."
+  },
+  {
+    "id": "518",
+    "slug": "water-pledge",
+    "slugLoc": "wassersaulen",
+    "name": "Wassersäulen",
+    "description": ""
+  },
+  {
+    "id": "519",
+    "slug": "fire-pledge",
+    "slugLoc": "feuersaulen",
+    "name": "Feuersäulen",
+    "description": ""
+  },
+  {
+    "id": "520",
+    "slug": "grass-pledge",
+    "slugLoc": "pflanzensaulen",
+    "name": "Pflanzensäulen",
+    "description": ""
+  },
+  {
+    "id": "521",
+    "slug": "volt-switch",
+    "slugLoc": "voltwechsel",
+    "name": "Voltwechsel",
+    "description": "Der Anwender wird nach dem Angriff gegen ein anderes\nPokémon seines Teams ausgewechselt."
+  },
+  {
+    "id": "522",
+    "slug": "struggle-bug",
+    "slugLoc": "kafertrutz",
+    "name": "Käfertrutz",
+    "description": "Der Spezial-Angriff der Ziele wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "523",
+    "slug": "bulldoze",
+    "slugLoc": "dampfwalze",
+    "name": "Dampfwalze",
+    "description": "Die Initiative der Ziele wird um 1 Stufe gesenkt.\nIst ein Grasfeld aktiv, wird die Stärke der Attacke halbiert."
+  },
+  {
+    "id": "524",
+    "slug": "frost-breath",
+    "slugLoc": "eisesodem",
+    "name": "Eisesodem",
+    "description": "Diese Attacke hat Volltreffergarantie."
+  },
+  {
+    "id": "525",
+    "slug": "dragon-tail",
+    "slugLoc": "drachenrute",
+    "name": "Drachenrute",
+    "description": "Das Ziel wird mit einem zufälligen Team-Mitglied\nausgewechselt, insofern ein Team-Mitglied vorhanden ist."
+  },
+  {
+    "id": "526",
+    "slug": "work-up",
+    "slugLoc": "kraftschub",
+    "name": "Kraftschub",
+    "description": ""
+  },
+  {
+    "id": "527",
+    "slug": "electroweb",
+    "slugLoc": "elektronetz",
+    "name": "Elektronetz",
+    "description": "Die Initiative der Ziele wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "528",
+    "slug": "wild-charge",
+    "slugLoc": "stromstoss",
+    "name": "Stromstoß",
+    "description": "Der Anwender erleidet 1/4 des verursachten Schadens selbst."
+  },
+  {
+    "id": "529",
+    "slug": "drill-run",
+    "slugLoc": "schlagbohrer",
+    "name": "Schlagbohrer",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "530",
+    "slug": "dual-chop",
+    "slugLoc": "doppelhieb",
+    "name": "Doppelhieb",
+    "description": ""
+  },
+  {
+    "id": "531",
+    "slug": "heart-stamp",
+    "slugLoc": "herzstempel",
+    "name": "Herzstempel",
+    "description": ""
+  },
+  {
+    "id": "532",
+    "slug": "horn-leech",
+    "slugLoc": "holzgeweih",
+    "name": "Holzgeweih",
+    "description": "Die KP des Anwenders werden um die Hälfte des verursachten\nSchadens aufgefüllt."
+  },
+  {
+    "id": "533",
+    "slug": "sacred-sword",
+    "slugLoc": "sanctoklinge",
+    "name": "Sanctoklinge",
+    "description": "Der Anwender ignoriert beim Angriff sämtliche\nStatuswertänderungen des Ziels."
+  },
+  {
+    "id": "534",
+    "slug": "razor-shell",
+    "slugLoc": "kalkklinge",
+    "name": "Kalkklinge",
+    "description": "Die Verteidigung des Ziels wird mit 50%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
+  },
+  {
+    "id": "535",
+    "slug": "heat-crash",
+    "slugLoc": "brandstempel",
+    "name": "Brandstempel",
+    "description": "Je schwerer der Anwender im Vergleich zum Ziel, desto höher\ndie Stärke dieser Attacke.\nDie Stärke kann zwischen 40 und 120 liegen.\nBei Zielen im Zustand Komprimator wird die Stärke der Attacke\nverdoppelt und sie trifft garantiert."
+  },
+  {
+    "id": "536",
+    "slug": "leaf-tornado",
+    "slugLoc": "grasmixer",
+    "name": "Grasmixer",
+    "description": ""
+  },
+  {
+    "id": "537",
+    "slug": "steamroller",
+    "slugLoc": "quetschwalze",
+    "name": "Quetschwalze",
+    "description": ""
+  },
+  {
+    "id": "538",
+    "slug": "cotton-guard",
+    "slugLoc": "watteschild",
+    "name": "Watteschild",
+    "description": "Die Verteidigung des Anwenders wird um 3 Stufen erhöht."
+  },
+  {
+    "id": "539",
+    "slug": "night-daze",
+    "slugLoc": "nachtflut",
+    "name": "Nachtflut",
+    "description": "Die Genauigkeit des Ziels wird mit 40%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
+  },
+  {
+    "id": "540",
+    "slug": "psystrike",
+    "slugLoc": "psychostoss",
+    "name": "Psychostoß",
+    "description": ""
+  },
+  {
+    "id": "541",
+    "slug": "tail-slap",
+    "slugLoc": "kehrschelle",
+    "name": "Kehrschelle",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an."
+  },
+  {
+    "id": "542",
+    "slug": "hurricane",
+    "slugLoc": "orkan",
+    "name": "Orkan",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit verwirrt.\nDiese Attacke kann auch Ziele treffen, die sich im Zustand\nAbgehoben befinden.\nBei Regen trifft sie garantiert."
+  },
+  {
+    "id": "543",
+    "slug": "head-charge",
+    "slugLoc": "steinschadel",
+    "name": "Steinschädel",
+    "description": ""
+  },
+  {
+    "id": "544",
+    "slug": "gear-grind",
+    "slugLoc": "klikkdiskus",
+    "name": "Klikkdiskus",
+    "description": ""
+  },
+  {
+    "id": "545",
+    "slug": "searing-shot",
+    "slugLoc": "flammenball",
+    "name": "Flammenball",
+    "description": ""
+  },
+  {
+    "id": "546",
+    "slug": "techno-blast",
+    "slugLoc": "techblaster",
+    "name": "Techblaster",
+    "description": ""
+  },
+  {
+    "id": "547",
+    "slug": "relic-song",
+    "slugLoc": "urgesang",
+    "name": "Urgesang",
+    "description": ""
+  },
+  {
+    "id": "548",
+    "slug": "secret-sword",
+    "slugLoc": "mystoschwert",
+    "name": "Mystoschwert",
+    "description": ""
+  },
+  {
+    "id": "549",
+    "slug": "glaciate",
+    "slugLoc": "eiszeit",
+    "name": "Eiszeit",
+    "description": ""
+  },
+  {
+    "id": "550",
+    "slug": "bolt-strike",
+    "slugLoc": "blitzschlag",
+    "name": "Blitzschlag",
+    "description": ""
+  },
+  {
+    "id": "551",
+    "slug": "blue-flare",
+    "slugLoc": "blauflammen",
+    "name": "Blauflammen",
+    "description": ""
+  },
+  {
+    "id": "552",
+    "slug": "fiery-dance",
+    "slugLoc": "feuerreigen",
+    "name": "Feuerreigen",
+    "description": "Der Spezial-Angriff des Anwenders wird mit 50%iger\nWahrscheinlichkeit um 1 Stufe erhöht."
+  },
+  {
+    "id": "553",
+    "slug": "freeze-shock",
+    "slugLoc": "frostvolt",
+    "name": "Frostvolt",
+    "description": ""
+  },
+  {
+    "id": "554",
+    "slug": "ice-burn",
+    "slugLoc": "frosthauch",
+    "name": "Frosthauch",
+    "description": ""
+  },
+  {
+    "id": "555",
+    "slug": "snarl",
+    "slugLoc": "standpauke",
+    "name": "Standpauke",
+    "description": "Der Spezial-Angriff der Ziele wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "556",
+    "slug": "icicle-crash",
+    "slugLoc": "eiszapfhagel",
+    "name": "Eiszapfhagel",
+    "description": "Das Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "557",
+    "slug": "v-create",
+    "slugLoc": "v-generator",
+    "name": "V-Generator",
+    "description": ""
+  },
+  {
+    "id": "558",
+    "slug": "fusion-flare",
+    "slugLoc": "kreuzflamme",
+    "name": "Kreuzflamme",
+    "description": ""
+  },
+  {
+    "id": "559",
+    "slug": "fusion-bolt",
+    "slugLoc": "kreuzdonner",
+    "name": "Kreuzdonner",
+    "description": ""
+  },
+  {
+    "id": "560",
+    "slug": "flying-press",
+    "slugLoc": "flying-press",
+    "name": "Flying Press",
+    "description": "Der Schaden dieser Attacke ergibt sich, indem die\nWechselwirkungen ihres Typs und die des Typs Flug\nkombiniert werden.\nBei Zielen im Zustand Komprimator wird die Stärke der Attacke\nverdoppelt und sie trifft garantiert."
+  },
+  {
+    "id": "561",
+    "slug": "mat-block",
+    "slugLoc": "tatami-schild",
+    "name": "Tatami-Schild",
+    "description": ""
+  },
+  {
+    "id": "562",
+    "slug": "belch",
+    "slugLoc": "rulpser",
+    "name": "Rülpser",
+    "description": "Hat der Anwender während des Kampfs noch keine Beere\ngegessen, schlägt die Attacke fehl."
+  },
+  {
+    "id": "563",
+    "slug": "rototiller",
+    "slugLoc": "pfluger",
+    "name": "Pflüger",
+    "description": ""
+  },
+  {
+    "id": "564",
+    "slug": "sticky-web",
+    "slugLoc": "klebenetz",
+    "name": "Klebenetz",
+    "description": "Auf der Gegnerseite wird der Zustand Klebenetz erzeugt."
+  },
+  {
+    "id": "565",
+    "slug": "fell-stinger",
+    "slugLoc": "stachelfinale",
+    "name": "Stachelfinale",
+    "description": "Der Angriff des Anwenders wird um 3 Stufen erhöht,\nwenn er das Ziel mit dieser Attacke besiegt."
+  },
+  {
+    "id": "566",
+    "slug": "phantom-force",
+    "slugLoc": "phantomkraft",
+    "name": "Phantomkraft",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nVerborgen versetzt und greift in der nächsten Runde an.\nDurch den Angriff des Anwenders werden Effekte von Attacken\nwie Schutzschild und Scanner aufgehoben."
+  },
+  {
+    "id": "567",
+    "slug": "trick-or-treat",
+    "slugLoc": "halloween",
+    "name": "Halloween",
+    "description": "Das Ziel wird in den Zustand Halloween versetzt."
+  },
+  {
+    "id": "568",
+    "slug": "noble-roar",
+    "slugLoc": "kampfgebrull",
+    "name": "Kampfgebrüll",
+    "description": "Der Angriff und der Spezial-Angriff des Ziels werden um\n1 Stufe gesenkt."
+  },
+  {
+    "id": "569",
+    "slug": "ion-deluge",
+    "slugLoc": "plasmaschauer",
+    "name": "Plasmaschauer",
+    "description": ""
+  },
+  {
+    "id": "570",
+    "slug": "parabolic-charge",
+    "slugLoc": "parabolladung",
+    "name": "Parabolladung",
+    "description": "Die KP des Anwenders werden um die Hälfte des verursachten\nSchadens aufgefüllt."
+  },
+  {
+    "id": "571",
+    "slug": "forests-curse",
+    "slugLoc": "waldesfluch",
+    "name": "Waldesfluch",
+    "description": "Das Ziel wird in den Zustand Waldesfluch versetzt."
+  },
+  {
+    "id": "572",
+    "slug": "petal-blizzard",
+    "slugLoc": "blutenwirbel",
+    "name": "Blütenwirbel",
+    "description": ""
+  },
+  {
+    "id": "573",
+    "slug": "freeze-dry",
+    "slugLoc": "gefriertrockner",
+    "name": "Gefriertrockner",
+    "description": "Diese Attacke ist auch gegen Wasser-Pokémon sehr effektiv."
+  },
+  {
+    "id": "574",
+    "slug": "disarming-voice",
+    "slugLoc": "sauselstimme",
+    "name": "Säuselstimme",
+    "description": ""
+  },
+  {
+    "id": "575",
+    "slug": "parting-shot",
+    "slugLoc": "abgangstirade",
+    "name": "Abgangstirade",
+    "description": "Der Angriff und der Spezial-Angriff des Ziels werden um 1 Stufe\ngesenkt und der Anwender wird gegen ein anderes Pokémon\nseines Teams ausgewechselt."
+  },
+  {
+    "id": "576",
+    "slug": "topsy-turvy",
+    "slugLoc": "invertigo",
+    "name": "Invertigo",
+    "description": ""
+  },
+  {
+    "id": "577",
+    "slug": "draining-kiss",
+    "slugLoc": "diebeskuss",
+    "name": "Diebeskuss",
+    "description": "Die KP des Anwenders werden um 3/4 des verursachten\nSchadens aufgefüllt."
+  },
+  {
+    "id": "578",
+    "slug": "crafty-shield",
+    "slugLoc": "trickschutz",
+    "name": "Trickschutz",
+    "description": ""
+  },
+  {
+    "id": "579",
+    "slug": "flower-shield",
+    "slugLoc": "floraschutz",
+    "name": "Floraschutz",
+    "description": ""
+  },
+  {
+    "id": "580",
+    "slug": "grassy-terrain",
+    "slugLoc": "grasfeld",
+    "name": "Grasfeld",
+    "description": "Auf dem gesamten Kampffeld wird ein Grasfeld erzeugt,\ndas 5 Runden lang anhält."
+  },
+  {
+    "id": "581",
+    "slug": "misty-terrain",
+    "slugLoc": "nebelfeld",
+    "name": "Nebelfeld",
+    "description": "Auf dem gesamten Kampffeld wird ein Nebelfeld erzeugt,\ndas 5 Runden lang anhält."
+  },
+  {
+    "id": "582",
+    "slug": "electrify",
+    "slugLoc": "elektrifizierung",
+    "name": "Elektrifizierung",
+    "description": "Trifft diese Attacke das Ziel, bevor es selbst eine Attacke\nausgeführt hat, nimmt seine Attacke in dieser Runde den\nTyp Elektro an."
+  },
+  {
+    "id": "583",
+    "slug": "play-rough",
+    "slugLoc": "knuddler",
+    "name": "Knuddler",
+    "description": "Der Angriff des Ziels wird mit 10%iger Wahrscheinlichkeit um\n1 Stufe gesenkt."
+  },
+  {
+    "id": "584",
+    "slug": "fairy-wind",
+    "slugLoc": "feenbrise",
+    "name": "Feenbrise",
+    "description": ""
+  },
+  {
+    "id": "585",
+    "slug": "moonblast",
+    "slugLoc": "mondgewalt",
+    "name": "Mondgewalt",
+    "description": "Der Spezial-Angriff des Ziels wird mit 10%iger\nWahrscheinlichkeit um 1 Stufe gesenkt."
+  },
+  {
+    "id": "586",
+    "slug": "boomburst",
+    "slugLoc": "uberschallknall",
+    "name": "Überschallknall",
+    "description": ""
+  },
+  {
+    "id": "587",
+    "slug": "fairy-lock",
+    "slugLoc": "feenschloss",
+    "name": "Feenschloss",
+    "description": "Alle am Kampf beteiligten Pokémon werden in den Zustand\nFeenschloss versetzt."
+  },
+  {
+    "id": "588",
+    "slug": "kings-shield",
+    "slugLoc": "konigsschild",
+    "name": "Königsschild",
+    "description": "Der Anwender nimmt die Schildform an und wird in der Runde\ndes Einsatzes vor Angriffen geschützt.\nWird er dabei von einer Kontaktattacke getroffen, wird der\nAngriff des Angreifers um 1 Stufe gesenkt.\nMit jedem aufeinanderfolgenden Einsatz wird die Erfolgschance\ngedrittelt."
+  },
+  {
+    "id": "589",
+    "slug": "play-nice",
+    "slugLoc": "kameradschaft",
+    "name": "Kameradschaft",
+    "description": ""
+  },
+  {
+    "id": "590",
+    "slug": "confide",
+    "slugLoc": "vertrauenssache",
+    "name": "Vertrauenssache",
+    "description": ""
+  },
+  {
+    "id": "591",
+    "slug": "diamond-storm",
+    "slugLoc": "diamantsturm",
+    "name": "Diamantsturm",
+    "description": ""
+  },
+  {
+    "id": "592",
+    "slug": "steam-eruption",
+    "slugLoc": "dampfschwall",
+    "name": "Dampfschwall",
+    "description": ""
+  },
+  {
+    "id": "593",
+    "slug": "hyperspace-hole",
+    "slugLoc": "dimensionsloch",
+    "name": "Dimensionsloch",
+    "description": ""
+  },
+  {
+    "id": "594",
+    "slug": "water-shuriken",
+    "slugLoc": "wasser-shuriken",
+    "name": "Wasser-Shuriken",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an."
+  },
+  {
+    "id": "595",
+    "slug": "mystical-fire",
+    "slugLoc": "magieflamme",
+    "name": "Magieflamme",
+    "description": "Der Spezial-Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "596",
+    "slug": "spiky-shield",
+    "slugLoc": "schutzstacheln",
+    "name": "Schutzstacheln",
+    "description": "In der Runde des Einsatzes wird der Anwender vor Attacken\ngeschützt.\nWird er dabei von einer Kontaktattacke getroffen, erleidet der\nAngreifer Schaden in Höhe von 1/8 seiner maximalen KP.\nMit jedem aufeinanderfolgenden Einsatz wird die Erfolgschance\ngedrittelt."
+  },
+  {
+    "id": "597",
+    "slug": "aromatic-mist",
+    "slugLoc": "duftwolke",
+    "name": "Duftwolke",
+    "description": "Die Spezial-Verteidigung eines Mitstreiters wird um 1 Stufe\nerhöht."
+  },
+  {
+    "id": "598",
+    "slug": "eerie-impulse",
+    "slugLoc": "mystowellen",
+    "name": "Mystowellen",
+    "description": "Der Spezial-Angriff des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "599",
+    "slug": "venom-drench",
+    "slugLoc": "giftfalle",
+    "name": "Giftfalle",
+    "description": ""
+  },
+  {
+    "id": "600",
+    "slug": "powder",
+    "slugLoc": "pulverschleuder",
+    "name": "Pulverschleuder",
+    "description": ""
+  },
+  {
+    "id": "601",
+    "slug": "geomancy",
+    "slugLoc": "geokontrolle",
+    "name": "Geokontrolle",
+    "description": ""
+  },
+  {
+    "id": "602",
+    "slug": "magnetic-flux",
+    "slugLoc": "magnetregler",
+    "name": "Magnetregler",
+    "description": "Die Verteidigung und die Spezial-Verteidigung des Anwenders\nund seiner Mitstreiter werden um 1 Stufe erhöht, insofern sie\nüber die Fähigkeit Plus oder die Fähigkeit Minus verfügen."
+  },
+  {
+    "id": "603",
+    "slug": "happy-hour",
+    "slugLoc": "goldene-zeiten",
+    "name": "Goldene Zeiten",
+    "description": ""
+  },
+  {
+    "id": "604",
+    "slug": "electric-terrain",
+    "slugLoc": "elektrofeld",
+    "name": "Elektrofeld",
+    "description": "Auf dem gesamten Kampffeld wird ein Elektrofeld erzeugt,\ndas 5 Runden lang anhält."
+  },
+  {
+    "id": "605",
+    "slug": "dazzling-gleam",
+    "slugLoc": "zauberschein",
+    "name": "Zauberschein",
+    "description": ""
+  },
+  {
+    "id": "606",
+    "slug": "celebrate",
+    "slugLoc": "ehrentag",
+    "name": "Ehrentag",
+    "description": ""
+  },
+  {
+    "id": "607",
+    "slug": "hold-hands",
+    "slugLoc": "handchenhalten",
+    "name": "Händchenhalten",
+    "description": ""
+  },
+  {
+    "id": "608",
+    "slug": "baby-doll-eyes",
+    "slugLoc": "kulleraugen",
+    "name": "Kulleraugen",
+    "description": "Der Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "609",
+    "slug": "nuzzle",
+    "slugLoc": "wangenrubbler",
+    "name": "Wangenrubbler",
+    "description": "Das Ziel wird paralysiert."
+  },
+  {
+    "id": "610",
+    "slug": "hold-back",
+    "slugLoc": "zuruckhaltung",
+    "name": "Zurückhaltung",
+    "description": ""
+  },
+  {
+    "id": "611",
+    "slug": "infestation",
+    "slugLoc": "plage",
+    "name": "Plage",
+    "description": "Das Ziel wird in den Zustand Umschlingung versetzt."
+  },
+  {
+    "id": "612",
+    "slug": "power-up-punch",
+    "slugLoc": "steigerungshieb",
+    "name": "Steigerungshieb",
+    "description": ""
+  },
+  {
+    "id": "613",
+    "slug": "oblivion-wing",
+    "slugLoc": "unheilsschwingen",
+    "name": "Unheilsschwingen",
+    "description": ""
+  },
+  {
+    "id": "614",
+    "slug": "thousand-arrows",
+    "slugLoc": "tausend-pfeile",
+    "name": "Tausend Pfeile",
+    "description": ""
+  },
+  {
+    "id": "615",
+    "slug": "thousand-waves",
+    "slugLoc": "tausend-wellen",
+    "name": "Tausend Wellen",
+    "description": ""
+  },
+  {
+    "id": "616",
+    "slug": "lands-wrath",
+    "slugLoc": "bodengewalt",
+    "name": "Bodengewalt",
+    "description": ""
+  },
+  {
+    "id": "617",
+    "slug": "light-of-ruin",
+    "slugLoc": "lux-calamitatis",
+    "name": "Lux Calamitatis",
+    "description": "Der Anwender erleidet die Hälfte des verursachten Schadens\nselbst."
+  },
+  {
+    "id": "618",
+    "slug": "origin-pulse",
+    "slugLoc": "ursprungswoge",
+    "name": "Ursprungswoge",
+    "description": ""
+  },
+  {
+    "id": "619",
+    "slug": "precipice-blades",
+    "slugLoc": "abgrundsklinge",
+    "name": "Abgrundsklinge",
+    "description": ""
+  },
+  {
+    "id": "620",
+    "slug": "dragon-ascent",
+    "slugLoc": "zenitsturmer",
+    "name": "Zenitstürmer",
+    "description": ""
+  },
+  {
+    "id": "621",
+    "slug": "hyperspace-fury",
+    "slugLoc": "dimensionswahn",
+    "name": "Dimensionswahn",
+    "description": ""
+  },
+  {
+    "id": "659",
+    "slug": "shore-up",
+    "slugLoc": "sandsammler",
+    "name": "Sandsammler",
+    "description": ""
+  },
+  {
+    "id": "660",
+    "slug": "first-impression",
+    "slugLoc": "uberrumpler",
+    "name": "Überrumpler",
+    "description": "Die Attacke wird nur erfolgreich ausgeführt, wenn sie sofort\nnach Kampfantritt eingesetzt wird."
+  },
+  {
+    "id": "661",
+    "slug": "baneful-bunker",
+    "slugLoc": "bunker",
+    "name": "Bunker",
+    "description": "In der Runde des Einsatzes wird der Anwender vor Attacken\ngeschützt.\nWird er dabei von einer Kontaktattacke getroffen, wird der\nAngreifer vergiftet.\nMit jedem aufeinanderfolgenden Einsatz wird die Erfolgschance\ngedrittelt."
+  },
+  {
+    "id": "662",
+    "slug": "spirit-shackle",
+    "slugLoc": "schattenfessel",
+    "name": "Schattenfessel",
+    "description": "Das Ziel wird in den Zustand Wechselsperre versetzt."
+  },
+  {
+    "id": "663",
+    "slug": "darkest-lariat",
+    "slugLoc": "dark-lariat",
+    "name": "Dark Lariat",
+    "description": "Der Anwender ignoriert beim Angriff sämtliche\nStatuswertänderungen des Ziels."
+  },
+  {
+    "id": "664",
+    "slug": "sparkling-aria",
+    "slugLoc": "schaumserenade",
+    "name": "Schaumserenade",
+    "description": "Das Ziel wird von Verbrennungen geheilt."
+  },
+  {
+    "id": "665",
+    "slug": "ice-hammer",
+    "slugLoc": "eishammer",
+    "name": "Eishammer",
+    "description": "Die Initiative des Anwenders wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "666",
+    "slug": "floral-healing",
+    "slugLoc": "florakur",
+    "name": "Florakur",
+    "description": ""
+  },
+  {
+    "id": "667",
+    "slug": "high-horsepower",
+    "slugLoc": "pferdestarke",
+    "name": "Pferdestärke",
+    "description": ""
+  },
+  {
+    "id": "668",
+    "slug": "strength-sap",
+    "slugLoc": "kraftabsorber",
+    "name": "Kraftabsorber",
+    "description": "Die KP des Anwenders werden um die Höhe des Angriffs-Werts\ndes Ziels aufgefüllt.\nDer Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "669",
+    "slug": "solar-blade",
+    "slugLoc": "solarklinge",
+    "name": "Solarklinge",
+    "description": "Der Anwender wird in der Runde des Einsatzes in den Zustand\nKraftsammeln versetzt und greift in der nächsten Runde an.\nBei Sonnenschein wird er nicht in den Zustand Kraftsammeln\nversetzt und greift stattdessen sofort an.\nBei allen anderen Wettereffekten wird die Stärke dieser\nAttacke halbiert."
+  },
+  {
+    "id": "670",
+    "slug": "leafage",
+    "slugLoc": "blattwerk",
+    "name": "Blattwerk",
+    "description": ""
+  },
+  {
+    "id": "671",
+    "slug": "spotlight",
+    "slugLoc": "rampenlicht",
+    "name": "Rampenlicht",
+    "description": ""
+  },
+  {
+    "id": "672",
+    "slug": "toxic-thread",
+    "slugLoc": "giftfaden",
+    "name": "Giftfaden",
+    "description": "Die Initiative des Ziels wird um 2 Stufen gesenkt und es wird\nvergiftet."
+  },
+  {
+    "id": "673",
+    "slug": "laser-focus",
+    "slugLoc": "konzentration",
+    "name": "Konzentration",
+    "description": ""
+  },
+  {
+    "id": "674",
+    "slug": "gear-up",
+    "slugLoc": "hilfsmechanik",
+    "name": "Hilfsmechanik",
+    "description": ""
+  },
+  {
+    "id": "675",
+    "slug": "throat-chop",
+    "slugLoc": "neck-strike",
+    "name": "Neck Strike",
+    "description": "Das Ziel wird in den Zustand Neck Strike versetzt."
+  },
+  {
+    "id": "676",
+    "slug": "pollen-puff",
+    "slugLoc": "pollenknodel",
+    "name": "Pollenknödel",
+    "description": "Mitstreiter erleiden durch diese Attacke keinen Schaden,\nsondern ihre KP werden um die Hälfte des Maximalwerts\naufgefüllt."
+  },
+  {
+    "id": "677",
+    "slug": "anchor-shot",
+    "slugLoc": "ankerschuss",
+    "name": "Ankerschuss",
+    "description": ""
+  },
+  {
+    "id": "678",
+    "slug": "psychic-terrain",
+    "slugLoc": "psychofeld",
+    "name": "Psychofeld",
+    "description": "Auf dem gesamten Kampffeld wird ein Psychofeld erzeugt,\ndas 5 Runden lang anhält."
+  },
+  {
+    "id": "679",
+    "slug": "lunge",
+    "slugLoc": "anfallen",
+    "name": "Anfallen",
+    "description": "Der Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "680",
+    "slug": "fire-lash",
+    "slugLoc": "feuerpeitsche",
+    "name": "Feuerpeitsche",
+    "description": "Die Verteidigung des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "681",
+    "slug": "power-trip",
+    "slugLoc": "uberheblichkeit",
+    "name": "Überheblichkeit",
+    "description": "Mit jeder Stufe, um die die Statuswerte des Anwenders erhöht\nwurden, steigt die Stärke dieser Attacke um 20."
+  },
+  {
+    "id": "682",
+    "slug": "burn-up",
+    "slugLoc": "ausbrennen",
+    "name": "Ausbrennen",
+    "description": "Der Anwender verliert den Typ Feuer und wird aufgetaut.\nGehört der Anwender nicht dem Typ Feuer an, schlägt die\nAttacke fehl."
+  },
+  {
+    "id": "683",
+    "slug": "speed-swap",
+    "slugLoc": "initiativetausch",
+    "name": "Initiativetausch",
+    "description": "Die Initiative-Werte von Anwender und Ziel werden getauscht."
+  },
+  {
+    "id": "684",
+    "slug": "smart-strike",
+    "slugLoc": "schmalhorn",
+    "name": "Schmalhorn",
+    "description": "Diese Attacke trifft garantiert."
+  },
+  {
+    "id": "685",
+    "slug": "purify",
+    "slugLoc": "lauterung",
+    "name": "Läuterung",
+    "description": ""
+  },
+  {
+    "id": "686",
+    "slug": "revelation-dance",
+    "slugLoc": "wecktanz",
+    "name": "Wecktanz",
+    "description": ""
+  },
+  {
+    "id": "687",
+    "slug": "core-enforcer",
+    "slugLoc": "sanktionskern",
+    "name": "Sanktionskern",
+    "description": ""
+  },
+  {
+    "id": "688",
+    "slug": "trop-kick",
+    "slugLoc": "tropenkick",
+    "name": "Tropenkick",
+    "description": "Der Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "689",
+    "slug": "instruct",
+    "slugLoc": "kommando",
+    "name": "Kommando",
+    "description": "Das Ziel wird dazu gezwungen, die zuletzt eingesetzte Attacke\nerneut einzusetzen."
+  },
+  {
+    "id": "690",
+    "slug": "beak-blast",
+    "slugLoc": "schnabelkanone",
+    "name": "Schnabelkanone",
+    "description": "Wird der Anwender vor dem Einsatz dieser Attacke von einer\nKontaktattacke getroffen, erleidet der Angreifer Verbrennungen."
+  },
+  {
+    "id": "691",
+    "slug": "clanging-scales",
+    "slugLoc": "schuppenrasseln",
+    "name": "Schuppenrasseln",
+    "description": "Die Verteidigung des Anwenders wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "692",
+    "slug": "dragon-hammer",
+    "slugLoc": "drachenhammer",
+    "name": "Drachenhammer",
+    "description": ""
+  },
+  {
+    "id": "693",
+    "slug": "brutal-swing",
+    "slugLoc": "wirbler",
+    "name": "Wirbler",
+    "description": ""
+  },
+  {
+    "id": "694",
+    "slug": "aurora-veil",
+    "slugLoc": "auroraschleier",
+    "name": "Auroraschleier",
+    "description": "Auf der Mitstreiterseite wird der Zustand Auroraschleier erzeugt,\nder 5 Runden lang anhält.\nDiese Attacke kann nur bei Schnee eingesetzt werden."
+  },
+  {
+    "id": "704",
+    "slug": "shell-trap",
+    "slugLoc": "panzerfalle",
+    "name": "Panzerfalle",
+    "description": ""
+  },
+  {
+    "id": "705",
+    "slug": "fleur-cannon",
+    "slugLoc": "kanonenbouquet",
+    "name": "Kanonenbouquet",
+    "description": ""
+  },
+  {
+    "id": "706",
+    "slug": "psychic-fangs",
+    "slugLoc": "psychobeisser",
+    "name": "Psychobeißer",
+    "description": "Beim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Gegnerseite aufgehoben."
+  },
+  {
+    "id": "707",
+    "slug": "stomping-tantrum",
+    "slugLoc": "fruststampfer",
+    "name": "Fruststampfer",
+    "description": "Hat der Anwender in der vorherigen Runde nicht gehandelt,\nist seine Attacke fehlgeschlagen oder hat nicht getroffen,\nwird die Stärke dieser Attacke verdoppelt."
+  },
+  {
+    "id": "708",
+    "slug": "shadow-bone",
+    "slugLoc": "schattenknochen",
+    "name": "Schattenknochen",
+    "description": ""
+  },
+  {
+    "id": "709",
+    "slug": "accelerock",
+    "slugLoc": "turbofelsen",
+    "name": "Turbofelsen",
+    "description": ""
+  },
+  {
+    "id": "710",
+    "slug": "liquidation",
+    "slugLoc": "aquadurchstoss",
+    "name": "Aquadurchstoß",
+    "description": "Die Verteidigung des Ziels wird mit 20%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
+  },
+  {
+    "id": "711",
+    "slug": "prismatic-laser",
+    "slugLoc": "prisma-laser",
+    "name": "Prisma-Laser",
+    "description": ""
+  },
+  {
+    "id": "712",
+    "slug": "spectral-thief",
+    "slugLoc": "diebesschatten",
+    "name": "Diebesschatten",
+    "description": ""
+  },
+  {
+    "id": "713",
+    "slug": "sunsteel-strike",
+    "slugLoc": "stahlgestirn",
+    "name": "Stahlgestirn",
+    "description": ""
+  },
+  {
+    "id": "714",
+    "slug": "moongeist-beam",
+    "slugLoc": "schattenstrahl",
+    "name": "Schattenstrahl",
+    "description": ""
+  },
+  {
+    "id": "715",
+    "slug": "tearful-look",
+    "slugLoc": "tranendruse",
+    "name": "Tränendrüse",
+    "description": "Der Angriff und der Spezial-Angriff des Ziels werden um\n1 Stufe gesenkt. Diese Attacke trifft das Ziel unabhängig von\ndessen Ausweichwert und Effekten wie Schutzschild."
+  },
+  {
+    "id": "716",
+    "slug": "zing-zap",
+    "slugLoc": "elektropikser",
+    "name": "Elektropikser",
+    "description": ""
+  },
+  {
+    "id": "717",
+    "slug": "natures-madness",
+    "slugLoc": "naturzorn",
+    "name": "Naturzorn",
+    "description": ""
+  },
+  {
+    "id": "718",
+    "slug": "multi-attack",
+    "slugLoc": "multi-angriff",
+    "name": "Multi-Angriff",
+    "description": ""
+  },
+  {
+    "id": "720",
+    "slug": "mind-blown",
+    "slugLoc": "knallkopf",
+    "name": "Knallkopf",
+    "description": ""
+  },
+  {
+    "id": "721",
+    "slug": "plasma-fists",
+    "slugLoc": "plasmafauste",
+    "name": "Plasmafäuste",
+    "description": ""
+  },
+  {
+    "id": "722",
+    "slug": "photon-geyser",
+    "slugLoc": "photonen-geysir",
+    "name": "Photonen-Geysir",
+    "description": ""
+  },
+  {
+    "id": "742",
+    "slug": "double-iron-bash",
+    "slugLoc": "panzerfauste",
+    "name": "Panzerfäuste",
+    "description": ""
+  },
+  {
+    "id": "744",
+    "slug": "dynamax-cannon",
+    "slugLoc": "dynamax-kanone",
+    "name": "Dynamax-Kanone",
+    "description": ""
+  },
+  {
+    "id": "745",
+    "slug": "snipe-shot",
+    "slugLoc": "prazisionsschuss",
+    "name": "Präzisionsschuss",
+    "description": ""
+  },
+  {
+    "id": "746",
+    "slug": "jaw-lock",
+    "slugLoc": "fesselbiss",
+    "name": "Fesselbiss",
+    "description": ""
+  },
+  {
+    "id": "747",
+    "slug": "stuff-cheeks",
+    "slugLoc": "backenstopfer",
+    "name": "Backenstopfer",
+    "description": "Der Anwender isst die Beere, die er bei sich trägt.\nSeine Verteidigung wird um 2 Stufen erhöht. Trägt er keine\nBeere bei sich, kann die Attacke nicht eingesetzt werden."
+  },
+  {
+    "id": "748",
+    "slug": "no-retreat",
+    "slugLoc": "finalformation",
+    "name": "Finalformation",
+    "description": ""
+  },
+  {
+    "id": "749",
+    "slug": "tar-shot",
+    "slugLoc": "teerschuss",
+    "name": "Teerschuss",
+    "description": ""
+  },
+  {
+    "id": "750",
+    "slug": "magic-powder",
+    "slugLoc": "magiepuder",
+    "name": "Magiepuder",
+    "description": "Der Typ des Ziels wird durch den Typ Psycho ersetzt."
+  },
+  {
+    "id": "751",
+    "slug": "dragon-darts",
+    "slugLoc": "drachenpfeile",
+    "name": "Drachenpfeile",
+    "description": "Der Anwender greift 2-mal in Serie an. Befinden sich zwei\nPokémon auf der Gegnerseite, greift er jedes davon jeweils\nein Mal an."
+  },
+  {
+    "id": "752",
+    "slug": "teatime",
+    "slugLoc": "teatime",
+    "name": "Teatime",
+    "description": "Alle am Kampf beteiligten Pokémon werden dazu gezwungen,\ndie Beeren zu essen, die sie tragen."
+  },
+  {
+    "id": "753",
+    "slug": "octolock",
+    "slugLoc": "octoklammer",
+    "name": "Octoklammer",
+    "description": ""
+  },
+  {
+    "id": "754",
+    "slug": "bolt-beak",
+    "slugLoc": "schockschnabel",
+    "name": "Schockschnabel",
+    "description": ""
+  },
+  {
+    "id": "755",
+    "slug": "fishious-rend",
+    "slugLoc": "kiemenbiss",
+    "name": "Kiemenbiss",
+    "description": ""
+  },
+  {
+    "id": "756",
+    "slug": "court-change",
+    "slugLoc": "seitenwechsel",
+    "name": "Seitenwechsel",
+    "description": ""
+  },
+  {
+    "id": "775",
+    "slug": "clangorous-soul",
+    "slugLoc": "seelentanz",
+    "name": "Seelentanz",
+    "description": "Der Anwender verliert 1/3 seiner maximalen KP,\naber sein Angriff, sein Spezial-Angriff, seine Verteidigung,\nseine Spezial-Verteidigung und seine Initiative werden um\n1 Stufe erhöht.\nVerfügt er nicht über genügend verbleibende KP,\nschlägt die Attacke fehl."
+  },
+  {
+    "id": "776",
+    "slug": "body-press",
+    "slugLoc": "body-press",
+    "name": "Body Press",
+    "description": "Der Schaden dieser Attacke hängt nicht vom Angriffs-Wert des\nAnwenders, sondern von seinem Verteidigungs-Wert ab."
+  },
+  {
+    "id": "777",
+    "slug": "decorate",
+    "slugLoc": "verzierung",
+    "name": "Verzierung",
+    "description": "Der Angriff und der Spezial-Angriff des Ziels werden um\n2 Stufen erhöht."
+  },
+  {
+    "id": "778",
+    "slug": "drum-beating",
+    "slugLoc": "trommelschlage",
+    "name": "Trommelschläge",
+    "description": ""
+  },
+  {
+    "id": "779",
+    "slug": "snap-trap",
+    "slugLoc": "fangeisen",
+    "name": "Fangeisen",
+    "description": "Das Ziel wird in den Zustand Umschlingung versetzt."
+  },
+  {
+    "id": "780",
+    "slug": "pyro-ball",
+    "slugLoc": "feuerball",
+    "name": "Feuerball",
+    "description": ""
+  },
+  {
+    "id": "781",
+    "slug": "behemoth-blade",
+    "slugLoc": "gigantenhieb",
+    "name": "Gigantenhieb",
+    "description": ""
+  },
+  {
+    "id": "782",
+    "slug": "behemoth-bash",
+    "slugLoc": "gigantenstoss",
+    "name": "Gigantenstoß",
+    "description": ""
+  },
+  {
+    "id": "783",
+    "slug": "aura-wheel",
+    "slugLoc": "aura-rad",
+    "name": "Aura-Rad",
+    "description": "Die Initiative des Anwenders wird um 1 Stufe erhöht.\nDer Typ dieser Attacke hängt von Morpekos Form ab."
+  },
+  {
+    "id": "784",
+    "slug": "breaking-swipe",
+    "slugLoc": "breitseite",
+    "name": "Breitseite",
+    "description": "Der Angriff der Ziele wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "785",
+    "slug": "branch-poke",
+    "slugLoc": "zweigstoss",
+    "name": "Zweigstoß",
+    "description": ""
+  },
+  {
+    "id": "786",
+    "slug": "overdrive",
+    "slugLoc": "overdrive",
+    "name": "Overdrive",
+    "description": ""
+  },
+  {
+    "id": "787",
+    "slug": "apple-acid",
+    "slugLoc": "apfelsaure",
+    "name": "Apfelsäure",
+    "description": "Die Spezial-Verteidigung des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "788",
+    "slug": "grav-apple",
+    "slugLoc": "gravitation",
+    "name": "Gravitation",
+    "description": "Die Verteidigung des Ziels wird um 1 Stufe gesenkt.\nWenn der Zustand Erdanziehung aktiv ist, steigt die Stärke\ndieser Attacke um 50 %."
+  },
+  {
+    "id": "789",
+    "slug": "spirit-break",
+    "slugLoc": "seelenbruch",
+    "name": "Seelenbruch",
+    "description": ""
+  },
+  {
+    "id": "790",
+    "slug": "strange-steam",
+    "slugLoc": "wunderdampf",
+    "name": "Wunderdampf",
+    "description": ""
+  },
+  {
+    "id": "791",
+    "slug": "life-dew",
+    "slugLoc": "lebenstropfen",
+    "name": "Lebenstropfen",
+    "description": "Die KP des Anwenders und seiner Mitstreiter werden um 1/4\nihres jeweiligen Maximalwerts aufgefüllt."
+  },
+  {
+    "id": "792",
+    "slug": "obstruct",
+    "slugLoc": "abblocker",
+    "name": "Abblocker",
+    "description": ""
+  },
+  {
+    "id": "793",
+    "slug": "false-surrender",
+    "slugLoc": "kniefalltrick",
+    "name": "Kniefalltrick",
+    "description": ""
+  },
+  {
+    "id": "794",
+    "slug": "meteor-assault",
+    "slugLoc": "sternensturm",
+    "name": "Sternensturm",
+    "description": ""
+  },
+  {
+    "id": "795",
+    "slug": "eternabeam",
+    "slugLoc": "unendynastrahlen",
+    "name": "Unendynastrahlen",
+    "description": ""
+  },
+  {
+    "id": "796",
+    "slug": "steel-beam",
+    "slugLoc": "stahlstrahl",
+    "name": "Stahlstrahl",
+    "description": "Der Anwender erleidet nach dem Angriff Schaden in Höhe\nder Hälfte seiner maximalen KP."
+  },
+  {
+    "id": "797",
+    "slug": "expanding-force",
+    "slugLoc": "flachenmacht",
+    "name": "Flächenmacht",
+    "description": "Steht der Anwender unter dem Einfluss eines Psychofelds,\nwird die Stärke der Attacke um 50 % erhöht und es werden\nalle Gegner angegriffen."
+  },
+  {
+    "id": "798",
+    "slug": "steel-roller",
+    "slugLoc": "eisenwalze",
+    "name": "Eisenwalze",
+    "description": "Diese Attacke schlägt fehl, wenn kein Feld aktiv ist.\nDas aktive Feld wird aufgehoben."
+  },
+  {
+    "id": "799",
+    "slug": "scale-shot",
+    "slugLoc": "schuppenschuss",
+    "name": "Schuppenschuss",
+    "description": "Der Anwender greift 2- bis 5-mal in Serie an.\nDie Verteidigung des Anwenders wird um 1 Stufe gesenkt\nund seine Initiative um 1 Stufe erhöht."
+  },
+  {
+    "id": "800",
+    "slug": "meteor-beam",
+    "slugLoc": "meteorstrahl",
+    "name": "Meteorstrahl",
+    "description": "In der Runde des Einsatzes wird der Spezial-Angriff des\nAnwenders um 1 Stufe erhöht und er wird in den Zustand\nKraftsammeln versetzt. In der nächsten Runde greift er an."
+  },
+  {
+    "id": "801",
+    "slug": "shell-side-arm",
+    "slugLoc": "muschelwaffe",
+    "name": "Muschelwaffe",
+    "description": "Das Ziel wird mit 20%iger Wahrscheinlichkeit vergiftet.\nSollte die Attacke als physische Attacke mehr Schaden\nanrichten, wird sie zu einer physischen Attacke."
+  },
+  {
+    "id": "802",
+    "slug": "misty-explosion",
+    "slugLoc": "nebelexplosion",
+    "name": "Nebelexplosion",
+    "description": "Der Anwender wird bei Einsatz kampfunfähig.\nSteht er unter dem Einfluss eines Nebelfelds, steigt die Stärke\ndieser Attacke um 50 %."
+  },
+  {
+    "id": "803",
+    "slug": "grassy-glide",
+    "slugLoc": "grasrutsche",
+    "name": "Grasrutsche",
+    "description": "Steht der Anwender unter dem Einfluss eines Grasfelds,\nwird diese Attacke mit um 1 Stufe erhöhter Priorität eingesetzt."
+  },
+  {
+    "id": "804",
+    "slug": "rising-voltage",
+    "slugLoc": "hochspannung",
+    "name": "Hochspannung",
+    "description": "Steht das Ziel unter dem Einfluss eines Elektrofelds,\nwird die Stärke dieser Attacke verdoppelt."
+  },
+  {
+    "id": "805",
+    "slug": "terrain-pulse",
+    "slugLoc": "feldimpuls",
+    "name": "Feldimpuls",
+    "description": "Steht der Anwender unter dem Einfluss eines Felds,\nwird die Stärke dieser Attacke verdoppelt.\nDer Typ der Attacke ändert sich abhängig von der Art des Felds."
+  },
+  {
+    "id": "806",
+    "slug": "skitter-smack",
+    "slugLoc": "krabbelkracher",
+    "name": "Krabbelkracher",
+    "description": "Der Spezial-Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "807",
+    "slug": "burning-jealousy",
+    "slugLoc": "neidflammen",
+    "name": "Neidflammen",
+    "description": "Wurden die Statuswerte der Ziele in der Runde des Einsatzes\nerhöht, erleiden sie Verbrennungen."
+  },
+  {
+    "id": "808",
+    "slug": "lash-out",
+    "slugLoc": "frustventil",
+    "name": "Frustventil",
+    "description": "Wurden die Statuswerte des Anwenders in der Runde des\nEinsatzes gesenkt, wird die Stärke dieser Attacke verdoppelt."
+  },
+  {
+    "id": "809",
+    "slug": "poltergeist",
+    "slugLoc": "poltergeist",
+    "name": "Poltergeist",
+    "description": "Trägt das Ziel kein Item, schlägt diese Attacke fehl."
+  },
+  {
+    "id": "810",
+    "slug": "corrosive-gas",
+    "slugLoc": "korrosionsgas",
+    "name": "Korrosionsgas",
+    "description": "Alle Pokémon außer dem Anwender verlieren ihre\ngetragenen Items."
+  },
+  {
+    "id": "811",
+    "slug": "coaching",
+    "slugLoc": "coaching",
+    "name": "Coaching",
+    "description": "Der Angriff und die Verteidigung der Mitstreiter werden um\n1 Stufe erhöht."
+  },
+  {
+    "id": "812",
+    "slug": "flip-turn",
+    "slugLoc": "rollwende",
+    "name": "Rollwende",
+    "description": "Der Anwender wird nach dem Angriff gegen ein anderes\nPokémon seines Teams ausgewechselt."
+  },
+  {
+    "id": "813",
+    "slug": "triple-axel",
+    "slugLoc": "dreifach-axel",
+    "name": "Dreifach-Axel",
+    "description": "Der Anwender greift 3-mal in Serie an.\nBeim ersten Angriff beträgt die Stärke 20, beim zweiten 40 und\nbeim dritten 60.\nTrifft einer der Angriffe nicht, wird die Serie unterbrochen."
+  },
+  {
+    "id": "814",
+    "slug": "dual-wingbeat",
+    "slugLoc": "doppelflugel",
+    "name": "Doppelflügel",
+    "description": "Der Anwender greift 2-mal in Serie an."
+  },
+  {
+    "id": "815",
+    "slug": "scorching-sands",
+    "slugLoc": "brandsand",
+    "name": "Brandsand",
+    "description": "Das Ziel erleidet mit 30%iger Wahrscheinlichkeit\nVerbrennungen.\nBei Einsatz werden der Anwender und das Ziel aufgetaut."
+  },
+  {
+    "id": "816",
+    "slug": "jungle-healing",
+    "slugLoc": "dschungelheilung",
+    "name": "Dschungelheilung",
+    "description": ""
+  },
+  {
+    "id": "817",
+    "slug": "wicked-blow",
+    "slugLoc": "finstertreffer",
+    "name": "Finstertreffer",
+    "description": ""
+  },
+  {
+    "id": "818",
+    "slug": "surging-strikes",
+    "slugLoc": "trefferschwall",
+    "name": "Trefferschwall",
+    "description": ""
+  },
+  {
+    "id": "819",
+    "slug": "thunder-cage",
+    "slugLoc": "blitzgefangnis",
+    "name": "Blitzgefängnis",
+    "description": ""
+  },
+  {
+    "id": "820",
+    "slug": "dragon-energy",
+    "slugLoc": "drachenkrafte",
+    "name": "Drachenkräfte",
+    "description": ""
+  },
+  {
+    "id": "821",
+    "slug": "freezing-glare",
+    "slugLoc": "eisiger-blick",
+    "name": "Eisiger Blick",
+    "description": ""
+  },
+  {
+    "id": "822",
+    "slug": "fiery-wrath",
+    "slugLoc": "brennender-zorn",
+    "name": "Brennender Zorn",
+    "description": ""
+  },
+  {
+    "id": "823",
+    "slug": "thunderous-kick",
+    "slugLoc": "donnernder-tritt",
+    "name": "Donnernder Tritt",
+    "description": ""
+  },
+  {
+    "id": "824",
+    "slug": "glacial-lance",
+    "slugLoc": "blizzardlanze",
+    "name": "Blizzardlanze",
+    "description": ""
+  },
+  {
+    "id": "825",
+    "slug": "astral-barrage",
+    "slugLoc": "astralfragmente",
+    "name": "Astralfragmente",
+    "description": ""
+  },
+  {
+    "id": "826",
+    "slug": "eerie-spell",
+    "slugLoc": "schauderspruch",
+    "name": "Schauderspruch",
+    "description": "Die AP der zuletzt eingesetzten Attacke des Ziels werden\num 3 gesenkt."
+  },
+  {
+    "id": "827",
+    "slug": "dire-claw",
+    "slugLoc": "unheilsklauen",
+    "name": "Unheilsklauen",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit entweder\nvergiftet, paralysiert oder in Schlaf versetzt."
+  },
+  {
+    "id": "828",
+    "slug": "psyshield-bash",
+    "slugLoc": "barrierenstoss",
+    "name": "Barrierenstoß",
+    "description": "Die Verteidigung des Anwenders wird um 1 Stufe erhöht."
+  },
+  {
+    "id": "829",
+    "slug": "power-shift",
+    "slugLoc": "kraftwechsel",
+    "name": "Kraftwechsel",
+    "description": "Der Anwender wird in den Zustand Ang.-Vert.-Tausch versetzt."
+  },
+  {
+    "id": "830",
+    "slug": "stone-axe",
+    "slugLoc": "felsaxt",
+    "name": "Felsaxt",
+    "description": "Auf der Gegnerseite wird der Zustand Tarnsteine erzeugt."
+  },
+  {
+    "id": "831",
+    "slug": "springtide-storm",
+    "slugLoc": "fruhlingsorkan",
+    "name": "Frühlingsorkan",
+    "description": ""
+  },
+  {
+    "id": "832",
+    "slug": "mystical-power",
+    "slugLoc": "mythenkraft",
+    "name": "Mythenkraft",
+    "description": ""
+  },
+  {
+    "id": "833",
+    "slug": "raging-fury",
+    "slugLoc": "flammenwut",
+    "name": "Flammenwut",
+    "description": "Der Anwender wird in den Zustand Tobsucht versetzt."
+  },
+  {
+    "id": "834",
+    "slug": "wave-crash",
+    "slugLoc": "wellentackle",
+    "name": "Wellentackle",
+    "description": "Der Anwender erleidet 1/3 des verursachten Schadens selbst."
+  },
+  {
+    "id": "835",
+    "slug": "chloroblast",
+    "slugLoc": "chlorostrahl",
+    "name": "Chlorostrahl",
+    "description": ""
+  },
+  {
+    "id": "836",
+    "slug": "mountain-gale",
+    "slugLoc": "frostfallwind",
+    "name": "Frostfallwind",
+    "description": "Das Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück."
+  },
+  {
+    "id": "837",
+    "slug": "victory-dance",
+    "slugLoc": "siegestanz",
+    "name": "Siegestanz",
+    "description": ""
+  },
+  {
+    "id": "838",
+    "slug": "headlong-rush",
+    "slugLoc": "schmetterramme",
+    "name": "Schmetterramme",
+    "description": "Die Verteidigung und die Spezial-Verteidigung des Anwenders\nwerden um 1 Stufe gesenkt."
+  },
+  {
+    "id": "839",
+    "slug": "barb-barrage",
+    "slugLoc": "giftstachelregen",
+    "name": "Giftstachelregen",
+    "description": ""
+  },
+  {
+    "id": "840",
+    "slug": "esper-wing",
+    "slugLoc": "auraschwingen",
+    "name": "Auraschwingen",
+    "description": ""
+  },
+  {
+    "id": "841",
+    "slug": "bitter-malice",
+    "slugLoc": "niedertracht",
+    "name": "Niedertracht",
+    "description": "Der Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "842",
+    "slug": "shelter",
+    "slugLoc": "refugium",
+    "name": "Refugium",
+    "description": "Die Verteidigung des Anwenders wird um 2 Stufen erhöht."
+  },
+  {
+    "id": "843",
+    "slug": "triple-arrows",
+    "slugLoc": "drillingspfeile",
+    "name": "Drillingspfeile",
+    "description": "Die Verteidigung des Ziels wird mit 50%iger Wahrscheinlichkeit\num 1 Stufe gesenkt.\nDas Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück.\nDer Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "844",
+    "slug": "infernal-parade",
+    "slugLoc": "phantomparade",
+    "name": "Phantomparade",
+    "description": "Das Ziel erleidet mit 30%iger Wahrscheinlichkeit\nVerbrennungen.\nBei Zielen mit einem Statusproblem wird die Stärke dieser\nAttacke verdoppelt."
+  },
+  {
+    "id": "845",
+    "slug": "ceaseless-edge",
+    "slugLoc": "klingenschwall",
+    "name": "Klingenschwall",
+    "description": "Auf der Gegnerseite wird der Zustand Stachler erzeugt."
+  },
+  {
+    "id": "846",
+    "slug": "bleakwind-storm",
+    "slugLoc": "polarorkan",
+    "name": "Polarorkan",
+    "description": ""
+  },
+  {
+    "id": "847",
+    "slug": "wildbolt-storm",
+    "slugLoc": "donnerorkan",
+    "name": "Donnerorkan",
+    "description": ""
+  },
+  {
+    "id": "848",
+    "slug": "sandsear-storm",
+    "slugLoc": "wustenorkan",
+    "name": "Wüstenorkan",
+    "description": ""
+  },
+  {
+    "id": "849",
+    "slug": "lunar-blessing",
+    "slugLoc": "lunargebet",
+    "name": "Lunargebet",
+    "description": ""
+  },
+  {
+    "id": "850",
+    "slug": "take-heart",
+    "slugLoc": "mutschub",
+    "name": "Mutschub",
+    "description": ""
+  },
+  {
+    "id": "851",
+    "slug": "tera-blast",
+    "slugLoc": "tera-ausbruch",
+    "name": "Tera-Ausbruch",
+    "description": ""
+  },
+  {
+    "id": "852",
+    "slug": "silk-trap",
+    "slugLoc": "fadenfalle",
+    "name": "Fadenfalle",
+    "description": ""
+  },
+  {
+    "id": "853",
+    "slug": "axe-kick",
+    "slugLoc": "fersenkick",
+    "name": "Fersenkick",
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit verwirrt.\nSchlägt die Attacke fehl oder trifft nicht, erleidet der Anwender\nSchaden in Höhe der Hälfte seiner maximalen KP."
+  },
+  {
+    "id": "854",
+    "slug": "last-respects",
+    "slugLoc": "letzte-ehre",
+    "name": "Letzte Ehre",
+    "description": "Die Stärke dieser Attacke wird für jedes Mal, wenn ein Pokémon\nim Team des Anwenders kampfunfähig wird, um 50 erhöht."
+  },
+  {
+    "id": "855",
+    "slug": "lumina-crash",
+    "slugLoc": "lichteinschlag",
+    "name": "Lichteinschlag",
+    "description": "Die Spezial-Verteidigung des Ziels wird um 2 Stufen gesenkt."
+  },
+  {
+    "id": "856",
+    "slug": "order-up",
+    "slugLoc": "auftischen",
+    "name": "Auftischen",
+    "description": ""
+  },
+  {
+    "id": "857",
+    "slug": "jet-punch",
+    "slugLoc": "dusenhieb",
+    "name": "Düsenhieb",
+    "description": ""
+  },
+  {
+    "id": "858",
+    "slug": "spicy-extract",
+    "slugLoc": "chili-essenz",
+    "name": "Chili-Essenz",
+    "description": "Die Verteidigung des Ziels wird um 2 Stufen gesenkt und sein\nAngriff um 2 Stufen erhöht."
+  },
+  {
+    "id": "859",
+    "slug": "spin-out",
+    "slugLoc": "reifendrehung",
+    "name": "Reifendrehung",
+    "description": ""
+  },
+  {
+    "id": "860",
+    "slug": "population-bomb",
+    "slugLoc": "mauseplage",
+    "name": "Mäuseplage",
+    "description": "Der Anwender greift 1- bis 10-mal in Serie an.\nTrifft einer der Angriffe nicht, wird die Serie unterbrochen."
+  },
+  {
+    "id": "861",
+    "slug": "ice-spinner",
+    "slugLoc": "eiskreisel",
+    "name": "Eiskreisel",
+    "description": "Das aktive Feld wird aufgehoben."
+  },
+  {
+    "id": "862",
+    "slug": "glaive-rush",
+    "slugLoc": "grossklingenstoss",
+    "name": "Großklingenstoß",
+    "description": ""
+  },
+  {
+    "id": "863",
+    "slug": "revival-blessing",
+    "slugLoc": "vitalsegen",
+    "name": "Vitalsegen",
+    "description": "Ein kampfunfähiges Team-Mitglied wird wiederbelebt und\nseine KP werden um die Hälfte des Maximalwerts aufgefüllt."
+  },
+  {
+    "id": "864",
+    "slug": "salt-cure",
+    "slugLoc": "pokelsalz",
+    "name": "Pökelsalz",
+    "description": "Das Ziel wird in den Zustand Pökelsalz versetzt."
+  },
+  {
+    "id": "865",
+    "slug": "triple-dive",
+    "slugLoc": "tauchtriade",
+    "name": "Tauchtriade",
+    "description": ""
+  },
+  {
+    "id": "866",
+    "slug": "mortal-spin",
+    "slugLoc": "letalwirbler",
+    "name": "Letalwirbler",
+    "description": "Der Anwender wird von den Zuständen Umschlingung und\nEgelsamen, und die Mitstreiterseite von Stachler, Giftspitzen,\nKlebenetz und Tarnsteine befreit. Das Ziel wird vergiftet."
+  },
+  {
+    "id": "867",
+    "slug": "doodle",
+    "slugLoc": "abpausen",
+    "name": "Abpausen",
+    "description": ""
+  },
+  {
+    "id": "868",
+    "slug": "fillet-away",
+    "slugLoc": "abspaltung",
+    "name": "Abspaltung",
+    "description": ""
+  },
+  {
+    "id": "869",
+    "slug": "kowtow-cleave",
+    "slugLoc": "kniefallspalter",
+    "name": "Kniefallspalter",
+    "description": "Diese Attacke trifft garantiert."
+  },
+  {
+    "id": "870",
+    "slug": "flower-trick",
+    "slugLoc": "blumentrick",
+    "name": "Blumentrick",
+    "description": "Diese Attacke trifft garantiert und hat Volltreffergarantie."
+  },
+  {
+    "id": "871",
+    "slug": "torch-song",
+    "slugLoc": "loderlied",
+    "name": "Loderlied",
+    "description": "Der Spezial-Angriff des Anwenders wird um 1 Stufe erhöht."
+  },
+  {
+    "id": "872",
+    "slug": "aqua-step",
+    "slugLoc": "wogentanz",
+    "name": "Wogentanz",
+    "description": "Die Initiative des Anwenders wird um 1 Stufe erhöht."
+  },
+  {
+    "id": "873",
+    "slug": "raging-bull",
+    "slugLoc": "rasender-stier",
+    "name": "Rasender Stier",
+    "description": "Der Typ der Attacke hängt von der Form des Anwenders ab.\nBeim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Gegnerseite aufgehoben."
+  },
+  {
+    "id": "874",
+    "slug": "make-it-rain",
+    "slugLoc": "goldrausch",
+    "name": "Goldrausch",
+    "description": ""
+  },
+  {
+    "id": "875",
+    "slug": "psyblade",
+    "slugLoc": "psychoschneide",
+    "name": "Psychoschneide",
+    "description": ""
+  },
+  {
+    "id": "876",
+    "slug": "hydro-steam",
+    "slugLoc": "hydrodampf",
+    "name": "Hydrodampf",
+    "description": ""
+  },
+  {
+    "id": "877",
+    "slug": "ruination",
+    "slugLoc": "verderben",
+    "name": "Verderben",
+    "description": ""
+  },
+  {
+    "id": "878",
+    "slug": "collision-course",
+    "slugLoc": "kollisionskurs",
+    "name": "Kollisionskurs",
+    "description": ""
+  },
+  {
+    "id": "879",
+    "slug": "electro-drift",
+    "slugLoc": "blitztour",
+    "name": "Blitztour",
+    "description": ""
+  },
+  {
+    "id": "880",
+    "slug": "shed-tail",
+    "slugLoc": "schwanzabwurf",
+    "name": "Schwanzabwurf",
+    "description": "Der Anwender verliert die Hälfte seiner maximalen KP und\nerzeugt einen Delegator. Danach wird er gegen ein anderes\nPokémon seines Teams ausgewechselt.\nDer Delegator wird anstelle dieses Pokémon von Attacken\ngetroffen und verschwindet dann, wenn er Schaden in Höhe\nvon 1/4 der maximalen KP des Anwenders erlitten hat."
+  },
+  {
+    "id": "881",
+    "slug": "chilly-reception",
+    "slugLoc": "eisige-stimmung",
+    "name": "Eisige Stimmung",
+    "description": "Der Anwender erzeugt Schnee, der 5 Runden lang anhält.\nDanach wird er gegen ein anderes Pokémon seines Teams\nausgewechselt."
+  },
+  {
+    "id": "882",
+    "slug": "tidy-up",
+    "slugLoc": "aufraumen",
+    "name": "Aufräumen",
+    "description": "Die Zustände Stachler, Tarnsteine, Klebenetz, Giftspitzen und\nDelegator werden auf dem gesamten Kampffeld aufgehoben.\nDer Angriff und die Initiative des Anwenders werden um\n1 Stufe erhöht."
+  },
+  {
+    "id": "883",
+    "slug": "snowscape",
+    "slugLoc": "schneelandschaft",
+    "name": "Schneelandschaft",
+    "description": "Der Anwender erzeugt Schnee, der 5 Runden lang anhält."
+  },
+  {
+    "id": "884",
+    "slug": "pounce",
+    "slugLoc": "anspringen",
+    "name": "Anspringen",
+    "description": "Die Initiative des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "885",
+    "slug": "trailblaze",
+    "slugLoc": "wegbereiter",
+    "name": "Wegbereiter",
+    "description": "Die Initiative des Anwenders wird um 1 Stufe erhöht."
+  },
+  {
+    "id": "886",
+    "slug": "chilling-water",
+    "slugLoc": "kalte-dusche",
+    "name": "Kalte Dusche",
+    "description": "Der Angriff des Ziels wird um 1 Stufe gesenkt."
+  },
+  {
+    "id": "887",
+    "slug": "hyper-drill",
+    "slugLoc": "hyperbohrer",
+    "name": "Hyperbohrer",
+    "description": ""
+  },
+  {
+    "id": "888",
+    "slug": "twin-beam",
+    "slugLoc": "doppelstrahl",
+    "name": "Doppelstrahl",
+    "description": "Der Anwender greift 2-mal in Serie an."
+  },
+  {
+    "id": "889",
+    "slug": "rage-fist",
+    "slugLoc": "zornesfaust",
+    "name": "Zornesfaust",
+    "description": ""
+  },
+  {
+    "id": "890",
+    "slug": "armor-cannon",
+    "slugLoc": "rustungskanone",
+    "name": "Rüstungskanone",
+    "description": "Die Verteidigung und die Spezial-Verteidigung des Anwenders\nwerden um 1 Stufe gesenkt."
+  },
+  {
+    "id": "891",
+    "slug": "bitter-blade",
+    "slugLoc": "reueschwert",
+    "name": "Reueschwert",
+    "description": "Die KP des Anwenders werden um die Hälfte des verursachten\nSchadens aufgefüllt."
+  },
+  {
+    "id": "892",
+    "slug": "double-shock",
+    "slugLoc": "zweifachladung",
+    "name": "Zweifachladung",
+    "description": "Der Anwender verliert den Typ Elektro.\nGehört der Anwender nicht dem Typ Elektro an, schlägt die\nAttacke fehl."
+  },
+  {
+    "id": "893",
+    "slug": "gigaton-hammer",
+    "slugLoc": "riesenhammer",
+    "name": "Riesenhammer",
+    "description": "Diese Attacke kann nicht 2-mal in Folge eingesetzt werden."
+  },
+  {
+    "id": "894",
+    "slug": "comeuppance",
+    "slugLoc": "vendetta",
+    "name": "Vendetta",
+    "description": "Wurde der Anwender in der Runde des Einsatzes von der\nAttacke eines Gegners getroffen, werden 150 % des Schadens\nauf den Angreifer zurückgeworfen."
+  },
+  {
+    "id": "895",
+    "slug": "aqua-cutter",
+    "slugLoc": "aquaschnitt",
+    "name": "Aquaschnitt",
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
+  },
+  {
+    "id": "896",
+    "slug": "blazing-torque",
+    "slugLoc": "hitzeturbo",
+    "name": "Hitzeturbo",
+    "description": ""
+  },
+  {
+    "id": "897",
+    "slug": "wicked-torque",
+    "slugLoc": "finsterturbo",
+    "name": "Finsterturbo",
+    "description": ""
+  },
+  {
+    "id": "898",
+    "slug": "noxious-torque",
+    "slugLoc": "toxiturbo",
+    "name": "Toxiturbo",
+    "description": ""
+  },
+  {
+    "id": "899",
+    "slug": "combat-torque",
+    "slugLoc": "raufturbo",
+    "name": "Raufturbo",
+    "description": ""
+  },
+  {
+    "id": "900",
+    "slug": "magical-torque",
+    "slugLoc": "zauberturbo",
+    "name": "Zauberturbo",
+    "description": ""
+  },
+  {
+    "id": "901",
+    "slug": "blood-moon",
+    "slugLoc": "blutmond",
+    "name": "Blutmond",
+    "description": ""
+  },
+  {
+    "id": "902",
+    "slug": "matcha-gotcha",
+    "slugLoc": "quirlschuss",
+    "name": "Quirlschuss",
+    "description": "Die KP des Anwenders werden um die Hälfte des verursachten\nSchadens aufgefüllt.\nZiele erleiden mit 20%iger Wahrscheinlichkeit Verbrennungen."
+  },
+  {
+    "id": "903",
+    "slug": "syrup-bomb",
+    "slugLoc": "sirupbombe",
+    "name": "Sirupbombe",
+    "description": "Das Ziel wird 3 Runden lang in den Zustand Siruphülle versetzt."
+  },
+  {
+    "id": "904",
+    "slug": "ivy-cudgel",
+    "slugLoc": "rankenkeule",
+    "name": "Rankenkeule",
+    "description": ""
+  },
+  {
+    "id": "905",
+    "slug": "electro-shot",
+    "slugLoc": "stromstrahl",
+    "name": "Stromstrahl",
+    "description": "In der Runde des Einsatzes wird der Spezial-Angriff des\nAnwenders um 1 Stufe erhöht und er wird in den Zustand\nKraftsammeln versetzt. In der nächsten Runde greift er an.\nBei Regen wird der Anwender nicht in den Zustand\nKraftsammeln versetzt und greift stattdessen sofort an."
+  },
+  {
+    "id": "906",
+    "slug": "tera-starstorm",
+    "slugLoc": "tera-sternhagel",
+    "name": "Tera-Sternhagel",
+    "description": ""
+  },
+  {
+    "id": "907",
+    "slug": "fickle-beam",
+    "slugLoc": "launenlaser",
+    "name": "Launenlaser",
+    "description": "Die Stärke der Attacke wird mit 30%iger Wahrscheinlichkeit\nverdoppelt."
+  },
+  {
+    "id": "908",
+    "slug": "burning-bulwark",
+    "slugLoc": "flammenschild",
+    "name": "Flammenschild",
+    "description": ""
+  },
+  {
+    "id": "909",
+    "slug": "thunderclap",
+    "slugLoc": "sturmblitz",
+    "name": "Sturmblitz",
+    "description": ""
+  },
+  {
+    "id": "910",
+    "slug": "mighty-cleave",
+    "slugLoc": "wuchtklinge",
+    "name": "Wuchtklinge",
+    "description": ""
+  },
+  {
+    "id": "911",
+    "slug": "tachyon-cutter",
+    "slugLoc": "tachyon-schnitt",
+    "name": "Tachyon-Schnitt",
+    "description": ""
+  },
+  {
+    "id": "912",
+    "slug": "hard-press",
+    "slugLoc": "stahlpresse",
+    "name": "Stahlpresse",
+    "description": "Je höher die verbleibenden KP des Ziels, desto höher die\nStärke dieser Attacke.\nDie Stärke kann zwischen 1 und 100 liegen."
+  },
+  {
+    "id": "913",
+    "slug": "dragon-cheer",
+    "slugLoc": "drachenschrei",
+    "name": "Drachenschrei",
+    "description": "Mitstreiter werden in den Zustand Erhöhte Volltrefferquote\nversetzt.\nBei Mitstreitern vom Typ Drache wird die Volltrefferquote\num 2 Stufen erhöht.\nBei allen anderen Typen wird sie um 1 Stufe erhöht."
+  },
+  {
+    "id": "914",
+    "slug": "alluring-voice",
+    "slugLoc": "lockstimme",
+    "name": "Lockstimme",
+    "description": "Wurden die Statuswerte des Ziels in der Runde des Einsatzes\nerhöht, wird das Ziel verwirrt."
+  },
+  {
+    "id": "915",
+    "slug": "temper-flare",
+    "slugLoc": "frustflamme",
+    "name": "Frustflamme",
+    "description": "Hat der Anwender in der vorherigen Runde nicht gehandelt,\nist seine Attacke fehlgeschlagen oder hat nicht getroffen,\nwird die Stärke dieser Attacke verdoppelt."
+  },
+  {
+    "id": "916",
+    "slug": "supercell-slam",
+    "slugLoc": "donnerstoss",
+    "name": "Donnerstoß",
+    "description": "Schlägt die Attacke fehl oder trifft nicht, erleidet der Anwender\nSchaden in Höhe der Hälfte seiner maximalen KP.\nBei Zielen im Zustand Komprimator wird die Stärke der Attacke\nverdoppelt und sie trifft garantiert."
+  },
+  {
+    "id": "917",
+    "slug": "psychic-noise",
+    "slugLoc": "psycholarm",
+    "name": "Psycholärm",
+    "description": "Das Ziel wird 2 Runden lang in den Zustand Heilblockade\nversetzt."
+  },
+  {
+    "id": "918",
+    "slug": "upper-hand",
+    "slugLoc": "schnellkonter",
+    "name": "Schnellkonter",
+    "description": "Das Ziel schreckt zurück.\nSetzt das Ziel keine Prioritätsattacke ein, schlägt die\nAttacke fehl."
+  },
+  {
+    "id": "919",
+    "slug": "malignant-chain",
+    "slugLoc": "giftkettung",
+    "name": "Giftkettung",
+    "description": ""
+  },
+  {
+    "id": "920",
+    "slug": "nihil-light",
+    "slugLoc": "tilgungslicht",
+    "name": "Tilgungslicht",
+    "description": ""
+  }
+]

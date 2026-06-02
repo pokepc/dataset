@@ -1,0 +1,464 @@
+[
+  {
+    "id": "1",
+    "slug": "harsh-sunlight",
+    "slugLoc": "da-qing-tian-zhuang-tai",
+    "name": "大晴天状态",
+    "description": "火属性招式的伤害会变为1.5倍。\n水属性招式的伤害会减半。"
+  },
+  {
+    "id": "2",
+    "slug": "rain",
+    "slugLoc": "xia-yu-zhuang-tai",
+    "name": "下雨状态",
+    "description": "水属性招式的伤害会变为1.5倍。\n火属性招式的伤害会减半。"
+  },
+  {
+    "id": "3",
+    "slug": "sandstorm",
+    "slugLoc": "sha-bao-zhuang-tai",
+    "name": "沙暴状态",
+    "description": "岩石、地面、钢属性以外的宝可梦\n会在回合结束时受到\n最大HP的1/16的伤害。\n岩石属性宝可梦的特防会变为1.5倍。"
+  },
+  {
+    "id": "4",
+    "slug": "snow",
+    "slugLoc": "xia-xue-zhuang-tai",
+    "name": "下雪状态",
+    "description": "冰属性宝可梦的防御会变为1.5倍。"
+  },
+  {
+    "id": "5",
+    "slug": "electric-terrain",
+    "slugLoc": "dian-qi-chang-di-zhuang-tai",
+    "name": "电气场地状态",
+    "description": "电属性招式的威力会变为1.3倍。\n不会陷入睡眠状态。\n仅地面上的宝可梦\n会受到此效果影响。"
+  },
+  {
+    "id": "6",
+    "slug": "grassy-terrain",
+    "slugLoc": "qing-cao-chang-di-zhuang-tai",
+    "name": "青草场地状态",
+    "description": "草属性招式的威力会变为1.3倍。\n会在回合结束时回复最大HP的1/16。\n仅地面上的宝可梦\n会受到此效果影响。"
+  },
+  {
+    "id": "7",
+    "slug": "misty-terrain",
+    "slugLoc": "bo-wu-chang-di-zhuang-tai",
+    "name": "薄雾场地状态",
+    "description": "龙属性招式的威力会减半。\n不会陷入异常状态、混乱状态。\n仅地面上的宝可梦\n会受到此效果影响。"
+  },
+  {
+    "id": "8",
+    "slug": "trick-room",
+    "slugLoc": "xi-fa-kong-jian-zhuang-tai",
+    "name": "戏法空间状态",
+    "description": "会从速度较低的宝可梦开始行动。"
+  },
+  {
+    "id": "9",
+    "slug": "magic-room",
+    "slugLoc": "mo-fa-kong-jian-zhuang-tai",
+    "name": "魔法空间状态",
+    "description": "许多携带的道具的\n效果会消失。"
+  },
+  {
+    "id": "10",
+    "slug": "wonder-room",
+    "slugLoc": "qi-miao-kong-jian-zhuang-tai",
+    "name": "奇妙空间状态",
+    "description": "防御、特防会互换。"
+  },
+  {
+    "id": "11",
+    "slug": "critical-hit-ratio-boost",
+    "slugLoc": "yi-zhong-yao-hai-zhuang-tai",
+    "name": "易中要害状态",
+    "description": "自己的攻击击中要害的机率会提高。"
+  },
+  {
+    "id": "12",
+    "slug": "confused",
+    "slugLoc": "hun-luan-zhuang-tai",
+    "name": "混乱状态",
+    "description": "在1～4回合内，\n有1/3的机率会攻击自己。"
+  },
+  {
+    "id": "13",
+    "slug": "infatuated",
+    "slugLoc": "zhao-mi-zhuang-tai",
+    "name": "着迷状态",
+    "description": "让自己陷入着迷状态的对手在场上时，\n会有50％的机率无法使用招式。"
+  },
+  {
+    "id": "15",
+    "slug": "drowsy",
+    "slugLoc": "ke-shui-zhuang-tai",
+    "name": "瞌睡状态",
+    "description": "在受到招式影响的下一回合结束时，\n会陷入睡眠状态。"
+  },
+  {
+    "id": "16",
+    "slug": "encore",
+    "slugLoc": "zai-lai-yi-ci-zhuang-tai",
+    "name": "再来一次状态",
+    "description": "只能使用{0}。"
+  },
+  {
+    "id": "17",
+    "slug": "no-ability",
+    "slugLoc": "wu-te-xing-zhuang-tai",
+    "name": "无特性状态",
+    "description": "特性的效果会消失。"
+  },
+  {
+    "id": "18",
+    "slug": "unable-to-repeat",
+    "slugLoc": "wu-fa-lian-xu-zhuang-tai",
+    "name": "无法连续状态",
+    "description": "无法连续使出相同的招式。"
+  },
+  {
+    "id": "19",
+    "slug": "tailwind",
+    "slugLoc": "shun-feng-zhuang-tai",
+    "name": "顺风状态",
+    "description": "速度会变为2倍。"
+  },
+  {
+    "id": "24",
+    "slug": "move-disabled",
+    "slugLoc": "zhao-shi-feng-suo-zhuang-tai",
+    "name": "招式封锁状态",
+    "description": "无法使用{0}。"
+  },
+  {
+    "id": "25",
+    "slug": "cant-escape",
+    "slugLoc": "wu-fa-tao-zou-zhuang-tai",
+    "name": "无法逃走状态",
+    "description": "无法进行替换。"
+  },
+  {
+    "id": "26",
+    "slug": "locked-on",
+    "slugLoc": "suo-ding-zhuang-tai",
+    "name": "锁定状态",
+    "description": "在使用招式的下一回合，\n招式必定会击中锁定的对手。"
+  },
+  {
+    "id": "28",
+    "slug": "electric-boost",
+    "slugLoc": "dian-shu-xing-wei-li-ti-gao-zhuang-tai",
+    "name": "电属性威力提高状态",
+    "description": "下次使出的电属性招式的威力\n会变为2倍。"
+  },
+  {
+    "id": "29",
+    "slug": "gravity",
+    "slugLoc": "chong-li-zhuang-tai",
+    "name": "重力状态",
+    "description": "招式的命中率会变为1.67倍。\n飞行属性、飘浮特性等的宝可梦\n会变为在地面上。\n无法使用飞行类招式。"
+  },
+  {
+    "id": "31",
+    "slug": "safeguard",
+    "slugLoc": "shen-mi-shou-hu-zhuang-tai",
+    "name": "神秘守护状态",
+    "description": "不会陷入异常状态、混乱状态。"
+  },
+  {
+    "id": "32",
+    "slug": "stealth-rock",
+    "slugLoc": "yin-xing-yan-zhuang-tai",
+    "name": "隐形岩状态",
+    "description": "会给予替换出场的宝可梦\n其最大HP1/8的伤害。\n伤害会根据与岩石属性的\n相克关系而改变。"
+  },
+  {
+    "id": "33",
+    "slug": "stockpiling",
+    "slugLoc": "xu-li-zhuang-tai",
+    "name": "蓄力状态",
+    "description": "每蓄力1次，\n防御、特防就会提高1阶。"
+  },
+  {
+    "id": "34",
+    "slug": "taunted",
+    "slugLoc": "tiao-xin-zhuang-tai",
+    "name": "挑衅状态",
+    "description": "会变得只能使出攻击。"
+  },
+  {
+    "id": "36",
+    "slug": "magnet-rise",
+    "slugLoc": "dian-ci-piao-fu-zhuang-tai",
+    "name": "电磁飘浮状态",
+    "description": "会变为不在地面上，\n地面属性的招式、撒菱、毒菱、\n黏黏网状态将无效。"
+  },
+  {
+    "id": "37",
+    "slug": "toxic-spikes",
+    "slugLoc": "du-ling-zhuang-tai",
+    "name": "毒菱状态",
+    "description": "会让替换出场的宝可梦陷入中毒状态。\n使用2次后会让其陷入剧毒状态。\n对飞行属性、飘浮特性等的\n宝可梦将无效。"
+  },
+  {
+    "id": "39",
+    "slug": "wish",
+    "slugLoc": "qi-yuan-zhuang-tai",
+    "name": "祈愿状态",
+    "description": "在使用招式的下一回合结束时，\n在该位置的宝可梦会回复\n使用了该招式的宝可梦的\n最大HP的1/2。"
+  },
+  {
+    "id": "40",
+    "slug": "sticky-web",
+    "slugLoc": "nian-nian-wang-zhuang-tai",
+    "name": "黏黏网状态",
+    "description": "会让替换出场的宝可梦的\n速度降低1阶。\n对飞行属性、飘浮特性等的\n宝可梦将无效。"
+  },
+  {
+    "id": "41",
+    "slug": "ingrained",
+    "slugLoc": "zha-gen-zhuang-tai",
+    "name": "扎根状态",
+    "description": "回合结束时，\n会回复最大HP的1/16。\n无法进行替换。\n会变为在地面上。"
+  },
+  {
+    "id": "42",
+    "slug": "cursed",
+    "slugLoc": "zhou-shu-zhuang-tai",
+    "name": "咒术状态",
+    "description": "回合结束时，\n会减少最大HP的1/4。"
+  },
+  {
+    "id": "43",
+    "slug": "trick-or-treating",
+    "slugLoc": "wan-sheng-ye-zhuang-tai",
+    "name": "万圣夜状态",
+    "description": "会被追加幽灵属性。"
+  },
+  {
+    "id": "44",
+    "slug": "light-screen",
+    "slugLoc": "guang-qiang-zhuang-tai",
+    "name": "光墙状态",
+    "description": "因特殊招式而受到的伤害会减半。\n双打对战时会变为2/3。"
+  },
+  {
+    "id": "45",
+    "slug": "reflect",
+    "slugLoc": "fan-she-bi-zhuang-tai",
+    "name": "反射壁状态",
+    "description": "因物理招式而受到的伤害会减半。\n双打对战时会变为2/3。"
+  },
+  {
+    "id": "46",
+    "slug": "sealing-off",
+    "slugLoc": "feng-yin-zhuang-tai",
+    "name": "封印状态",
+    "description": "对手的宝可梦会变得无法使出\n使用封印的宝可梦所学会的招式。"
+  },
+  {
+    "id": "47",
+    "slug": "perishing",
+    "slugLoc": "zhong-yan-zhuang-tai",
+    "name": "终焉状态",
+    "description": "陷入终焉状态的3回合后\n会陷入昏厥。"
+  },
+  {
+    "id": "48",
+    "slug": "spikes",
+    "slugLoc": "sa-ling-zhuang-tai",
+    "name": "撒菱状态",
+    "description": "会给予替换出场的宝可梦\n其最大HP1/8的伤害。\n使用2～3次后伤害会增加。\n对飞行属性、飘浮特性等的\n宝可梦将无效。"
+  },
+  {
+    "id": "50",
+    "slug": "destiny-bound",
+    "slugLoc": "tong-ming-zhuang-tai",
+    "name": "同命状态",
+    "description": "让自己陷入昏厥的对手\n会陷入昏厥。"
+  },
+  {
+    "id": "51",
+    "slug": "forest-cursed",
+    "slugLoc": "sen-lin-zhou-shu-zhuang-tai",
+    "name": "森林咒术状态",
+    "description": "会被追加草属性。"
+  },
+  {
+    "id": "52",
+    "slug": "leech-seeded",
+    "slugLoc": "ji-sheng-zhong-zi-zhuang-tai",
+    "name": "寄生种子状态",
+    "description": "回合结束时，会受到最大HP1/8的伤害。\n在使用了该招式的宝可梦所在位置的对手\n会回复相当于伤害量的HP。"
+  },
+  {
+    "id": "54",
+    "slug": "bound",
+    "slugLoc": "shu-fu-zhuang-tai",
+    "name": "束缚状态",
+    "description": "在4～5回合内，回合结束时\n会受到最大HP的1/8的伤害。\n无法进行替换。"
+  },
+  {
+    "id": "57",
+    "slug": "rampaging",
+    "slugLoc": "da-nao-zhuang-tai",
+    "name": "大闹状态",
+    "description": "在2～3回合内会不断攻击。\n在该期间，无法做出其他行动。\n之后会陷入混乱状态。"
+  },
+  {
+    "id": "59",
+    "slug": "badly-poisoned",
+    "slugLoc": "ju-du-zhuang-tai",
+    "name": "剧毒状态",
+    "description": "随着回合的进行，\n在回合结束时受到的伤害会按照最大HP的\n1/16、2/16、3/16的规律逐渐增加。\n进行替换后再次出场时，\n会变为从1/16开始增加。"
+  },
+  {
+    "id": "60",
+    "slug": "future-attack",
+    "slugLoc": "wei-lai-gong-ji-zhuang-tai",
+    "name": "未来攻击状态",
+    "description": "被使用招式的2回合后，\n在该位置的宝可梦会受到伤害。"
+  },
+  {
+    "id": "61",
+    "slug": "uproar",
+    "slugLoc": "chao-nao-zhuang-tai",
+    "name": "吵闹状态",
+    "description": "在3回合内会不断攻击。\n在该期间，无法做出其他行动。\n在该期间，场上的宝可梦\n不会陷入睡眠状态。"
+  },
+  {
+    "id": "62",
+    "slug": "aqua-ring",
+    "slugLoc": "shui-liu-huan-zhuang-tai",
+    "name": "水流环状态",
+    "description": "回合结束时，\n会回复最大HP的1/16。"
+  },
+  {
+    "id": "64",
+    "slug": "landed",
+    "slugLoc": "luo-di-zhuang-tai",
+    "name": "落地状态",
+    "description": "会变为在地面上，\n地面属性的招式会生效。"
+  },
+  {
+    "id": "65",
+    "slug": "fairy-locked",
+    "slugLoc": "yao-jing-zhi-suo-zhuang-tai",
+    "name": "妖精之锁状态",
+    "description": "在使用招式的下一回合结束前，\n场上的宝可梦无法进行替换。"
+  },
+  {
+    "id": "72",
+    "slug": "psychic-terrain",
+    "slugLoc": "jing-shen-chang-di-zhuang-tai",
+    "name": "精神场地状态",
+    "description": "超能力属性招式的威力会变为1.3倍。\n先制招式将无效。\n仅地面上的宝可梦\n会受到此效果影响。"
+  },
+  {
+    "id": "73",
+    "slug": "throat-chopped",
+    "slugLoc": "shen-yuan-tu-ci-zhuang-tai",
+    "name": "深渊突刺状态",
+    "description": "在2回合内，\n无法使出声音类招式。"
+  },
+  {
+    "id": "74",
+    "slug": "aurora-veil",
+    "slugLoc": "ji-guang-mu-zhuang-tai",
+    "name": "极光幕状态",
+    "description": "因物理招式和特殊招式\n而受到的伤害会减半。\n双打对战时会变为2/3。"
+  },
+  {
+    "id": "106",
+    "slug": "salt-cured",
+    "slugLoc": "yan-an-zhuang-tai",
+    "name": "盐腌状态",
+    "description": "回合结束时，\n会受到最大HP1/16的伤害。\n若为钢属性、水属性，\n则会受到最大HP1/8的伤害。"
+  },
+  {
+    "id": "108",
+    "slug": "syrupy",
+    "slugLoc": "man-shen-tang-zhuang-tai",
+    "name": "满身糖状态",
+    "description": "回合结束时，\n速度会降低1阶。"
+  },
+  {
+    "id": "111",
+    "slug": "healing-prevented",
+    "slugLoc": "hui-fu-feng-suo-zhuang-tai",
+    "name": "回复封锁状态",
+    "description": "无法通过招式、特性、\n携带的道具回复HP。"
+  },
+  {
+    "id": "113",
+    "slug": "recharging",
+    "slugLoc": "fan-zuo-yong-li-zhuang-tai",
+    "name": "反作用力状态",
+    "description": "无法行动1回合。"
+  },
+  {
+    "id": "114",
+    "slug": "charging",
+    "slugLoc": "ji-xu-zhuang-tai",
+    "name": "积蓄状态",
+    "description": "为了使出招式，\n会积蓄1回合。"
+  },
+  {
+    "id": "115",
+    "slug": "sky-high",
+    "slugLoc": "kong-zhong-zhuang-tai",
+    "name": "空中状态",
+    "description": "不会被许多招式击中，\n但会被打雷、暴风、\n击落等击中。\n场地效果将无效。"
+  },
+  {
+    "id": "116",
+    "slug": "submerged",
+    "slugLoc": "shui-zhong-zhuang-tai",
+    "name": "水中状态",
+    "description": "不会被许多招式击中，\n但会被冲浪、潮旋击中，\n且伤害会变为2倍。\n场地的效果将无效。"
+  },
+  {
+    "id": "117",
+    "slug": "underground",
+    "slugLoc": "di-xia-zhuang-tai",
+    "name": "地下状态",
+    "description": "不会被许多招式击中，\n但会被地震击中，且伤害会变为2倍。\n场地的效果将无效。"
+  },
+  {
+    "id": "118",
+    "slug": "concealed",
+    "slugLoc": "qian-fu-zhuang-tai",
+    "name": "潜伏状态",
+    "description": "不会被招式击中，\n且场地的效果将无效。"
+  },
+  {
+    "id": "119",
+    "slug": "minimized",
+    "slugLoc": "bian-xiao-zhuang-tai",
+    "name": "变小状态",
+    "description": "闪电强袭、泰山压顶、\n龙之俯冲、飞身重压、\n高温重压、重磅冲撞等\n必定会击中，且伤害会变为2倍。"
+  },
+  {
+    "id": "120",
+    "slug": "atk-def-swapped",
+    "slugLoc": "gong-fang-zhuan-huan-zhuang-tai",
+    "name": "攻防转换状态",
+    "description": "攻击、防御会互换。"
+  },
+  {
+    "id": "121",
+    "slug": "flash-fire",
+    "slugLoc": "yin-huo-zhuang-tai",
+    "name": "引火状态",
+    "description": "火属性招式的威力会变为1.5倍。"
+  },
+  {
+    "id": "125",
+    "slug": "micle-berry",
+    "slugLoc": "qi-mi-guo-zhuang-tai",
+    "name": "奇秘果状态",
+    "description": "下次使出的招式的命中率\n会变为1.2倍。"
+  }
+]
