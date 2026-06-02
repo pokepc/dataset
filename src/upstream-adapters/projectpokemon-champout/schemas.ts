@@ -32,20 +32,16 @@ export const itemI18nSchema = i18nSchema.extend({
 export type ItemI18nRecord = z.infer<typeof itemI18nSchema>
 
 export const moveSchema = baseSchema.extend({
-  typeCode: z.number().int().min(0).max(17),
   type: z.enum(pokemonTypes),
-  categoryCode: z.number().int().min(0).max(2),
   category: z.enum(moveCategories),
   power: z.number().min(0).max(999),
   pp: z.number().min(0).max(99),
   accuracy: z.number().min(0).max(101),
   priority: z.number().min(-10).max(10),
-  targetCode: z.number().int().min(0).max(14),
   target: z.enum(moveTargets),
-  classificationCodes: z.array(z.number().int().min(1).max(12)).max(2),
   classification: z.array(z.enum(moveClasses)),
-  isDirect: z.boolean(), // if its a direct contact move or not
-  isUsable: z.boolean(), // if the game allows you to use it or not (e.g. legacy)
+  contact: z.boolean(), // if its a direct contact move or not
+  usable: z.boolean(), // if the game allows you to use it or not (e.g. legacy)
 })
 export type MoveRecord = z.infer<typeof moveSchema>
 
@@ -54,13 +50,37 @@ export type AbilityRecord = z.infer<typeof abilitySchema>
 
 export const itemSchema = baseSchema.extend({
   pluralName: z.string(),
-  categoryCodes: z.array(z.number().int().min(1).max(10)).max(3),
   categories: z.array(z.enum(itemCategories)),
 })
 export type ItemRecord = z.infer<typeof itemSchema>
 
 export const battleStateSchema = baseSchema.extend({
-  stateCode: z.number().int().positive(),
   state: z.enum(battleStates),
 })
 export type BattleStateRecord = z.infer<typeof battleStateSchema>
+
+export const pokemonMapSchema = z.object({
+  id: slugSchema,
+  championsId: z.string().regex(/^\d{7}$/),
+  name: z.string(),
+  formName: z.string(),
+})
+export type PokemonMapRecord = z.infer<typeof pokemonMapSchema>
+
+export const localChampionsMapRecordSchema = z.object({
+  id: slugSchema,
+  championsId: z.string(),
+  slug: slugSchema,
+})
+export type LocalChampionsMapRecord = z.infer<typeof localChampionsMapRecordSchema>
+
+export const localChampionsMapSchema = z.array(localChampionsMapRecordSchema)
+export type LocalChampionsMap = z.infer<typeof localChampionsMapSchema>
+
+export const pokemonMovesRecordSchema = z.object({
+  id: slugSchema,
+  moves: z.array(slugSchema),
+})
+export type PokemonMovesRecord = z.infer<typeof pokemonMovesRecordSchema>
+
+export const pokemonMovesSchema = z.array(pokemonMovesRecordSchema)

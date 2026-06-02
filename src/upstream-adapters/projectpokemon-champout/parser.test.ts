@@ -28,7 +28,10 @@ import {
   i18nSchema,
   itemI18nSchema,
   itemSchema,
+  localChampionsMapSchema,
   moveSchema,
+  pokemonMovesSchema,
+  pokemonMapSchema,
 } from './schemas'
 
 describe('parser helpers', () => {
@@ -125,6 +128,11 @@ describe('data generation', () => {
     expect(data.abilities).toHaveLength(194)
     expect(data.items).toHaveLength(117)
     expect(data.battleStates).toHaveLength(66)
+    expect(data.pokemonMap).toHaveLength(399)
+    expect(data.movesMap).toHaveLength(835)
+    expect(data.abilitiesMap).toHaveLength(194)
+    expect(data.itemsMap).toHaveLength(117)
+    expect(data.pokemonMoves).toHaveLength(214)
     expect(Object.keys(data.i18n).sort()).toEqual([...I18N_CODE].sort())
     expect(data.warnings).toEqual([])
     expect(warningCount.value).toBe(0)
@@ -137,7 +145,7 @@ describe('data generation', () => {
       type: 'normal',
       category: 'status',
       target: 'users_side',
-      isUsable: false,
+      usable: false,
     })
     expect(data.moves.find((move) => move.id === '892')).toMatchObject({
       name: 'Double Shock',
@@ -146,12 +154,18 @@ describe('data generation', () => {
       type: 'electric',
       category: 'physical',
       target: 'single_target',
-      isDirect: true,
-      isUsable: false,
+      contact: true,
+      usable: false,
     })
 
     for (const move of data.moves) {
       moveSchema.parse(move)
+      expect(move).not.toHaveProperty('typeCode')
+      expect(move).not.toHaveProperty('categoryCode')
+      expect(move).not.toHaveProperty('targetCode')
+      expect(move).not.toHaveProperty('classificationCodes')
+      expect(move).not.toHaveProperty('isDirect')
+      expect(move).not.toHaveProperty('isUsable')
     }
 
     for (const ability of data.abilities) {
@@ -160,11 +174,132 @@ describe('data generation', () => {
 
     for (const item of data.items) {
       itemSchema.parse(item)
+      expect(item).not.toHaveProperty('categoryCodes')
     }
 
     for (const battleState of data.battleStates) {
       battleStateSchema.parse(battleState)
+      expect(battleState).not.toHaveProperty('stateCode')
     }
+
+    for (const pokemonMapRecord of data.pokemonMap) {
+      pokemonMapSchema.parse(pokemonMapRecord)
+    }
+
+    localChampionsMapSchema.parse(data.movesMap)
+    localChampionsMapSchema.parse(data.abilitiesMap)
+    localChampionsMapSchema.parse(data.itemsMap)
+    pokemonMovesSchema.parse(data.pokemonMoves)
+
+    expect(data.movesMap.find((record) => record.id === 'pound')).toEqual({
+      id: 'pound',
+      championsId: '1',
+      slug: 'pound',
+    })
+    expect(data.movesMap.find((record) => record.id === 'karatechop')).toEqual({
+      id: 'karatechop',
+      championsId: '2',
+      slug: 'karate-chop',
+    })
+    expect(data.abilitiesMap.find((record) => record.id === 'speedboost')).toEqual({
+      id: 'speedboost',
+      championsId: '3',
+      slug: 'speed-boost',
+    })
+    expect(data.abilitiesMap.find((record) => record.id === 'voltabsorb')).toEqual({
+      id: 'voltabsorb',
+      championsId: '10',
+      slug: 'volt-absorb',
+    })
+    expect(data.itemsMap.find((record) => record.id === 'cheriberry')).toEqual({
+      id: 'cheriberry',
+      championsId: '149',
+      slug: 'cheri-berry',
+    })
+    expect(data.itemsMap.find((record) => record.id === 'charizarditex')).toEqual({
+      id: 'charizarditex',
+      championsId: '660',
+      slug: 'charizardite-x',
+    })
+
+    const venusaurMoves = data.pokemonMoves.find((record) => record.id === 'venusaur')
+    expect(venusaurMoves?.moves).toEqual([...(venusaurMoves?.moves ?? [])].sort())
+    expect(venusaurMoves?.moves).toContain('solarbeam')
+    expect(venusaurMoves?.moves).toContain('swordsdance')
+    expect(data.pokemonMoves.find((record) => record.id === 'venusaur-f')).toBeUndefined()
+    expect(
+      data.pokemonMoves.find((record) => record.id === 'alcremie-ruby-cream-berry'),
+    ).toBeUndefined()
+    expect(data.pokemonMoves.find((record) => record.id === 'venusaur-mega')).toBeUndefined()
+    expect(data.pokemonMoves.find((record) => record.id === 'blastoise-mega')).toBeUndefined()
+    expect(data.pokemonMoves.find((record) => record.id === 'meowstic-mega')).toBeUndefined()
+    expect(data.pokemonMoves.find((record) => record.id === 'meowstic-f')).toBeDefined()
+
+    const localPokemonIds = new Set<string>(
+      JSON.parse(readFileSync(join(process.cwd(), 'data/indices/pokemon.json'), 'utf8')),
+    )
+    const mappedLocalPokemonIds = data.pokemonMap.map((record) => record.id)
+    const learnsetMappedLocalPokemonIds = mappedLocalPokemonIds.filter((pokemonId) => {
+      const localPokemon = JSON.parse(
+        readFileSync(join(process.cwd(), 'data/pokemon', `${pokemonId}.json`), 'utf8'),
+      ) as { isCosmeticForm: boolean; isBattleOnlyForm: boolean }
+
+      return !localPokemon.isCosmeticForm && !localPokemon.isBattleOnlyForm
+    })
+    const mappedChampionsIds = new Set(data.pokemonMap.map((record) => record.championsId))
+    const pokemonMoveIds = data.pokemonMoves.map((record) => record.id)
+    const personalIds = JSON.parse(
+      readFileSync(join(DEFAULT_DATASET_ROOT, 'masterdata/personal.json'), 'utf8'),
+    ).map((record: { id: string }) => record.id)
+
+    expect(new Set(mappedLocalPokemonIds).size).toBe(mappedLocalPokemonIds.length)
+    expect(new Set(pokemonMoveIds).size).toBe(pokemonMoveIds.length)
+    expect([...pokemonMoveIds].sort()).toEqual([...learnsetMappedLocalPokemonIds].sort())
+    for (const pokemonMoves of data.pokemonMoves) {
+      expect(pokemonMoves.moves).toEqual([...pokemonMoves.moves].sort())
+    }
+    for (const pokemonId of mappedLocalPokemonIds) {
+      expect(localPokemonIds.has(pokemonId)).toBe(true)
+    }
+    for (const championsId of personalIds) {
+      expect(mappedChampionsIds.has(championsId)).toBe(championsId !== '0678003')
+    }
+
+    expect(data.pokemonMap.find((record) => record.id === 'blastoise-mega')).toMatchObject({
+      championsId: '0009001',
+      name: 'Blastoise',
+      formName: 'Mega Blastoise',
+    })
+    expect(data.pokemonMap.find((record) => record.id === 'venusaur')).toMatchObject({
+      championsId: '0003000',
+    })
+    expect(data.pokemonMap.find((record) => record.id === 'venusaur-f')).toMatchObject({
+      championsId: '0003000',
+    })
+    expect(
+      data.pokemonMap
+        .filter((record) => record.championsId === '0869001')
+        .map((record) => record.id)
+        .sort(),
+    ).toEqual([
+      'alcremie-ruby-cream-berry',
+      'alcremie-ruby-cream-clover',
+      'alcremie-ruby-cream-flower',
+      'alcremie-ruby-cream-love',
+      'alcremie-ruby-cream-ribbon',
+      'alcremie-ruby-cream-star',
+      'alcremie-ruby-cream-strawberry',
+    ])
+    expect(data.pokemonMap.find((record) => record.id === 'basculegion-f')).toMatchObject({
+      championsId: '0902001',
+    })
+    expect(data.pokemonMap.find((record) => record.id === 'maushold-three')).toMatchObject({
+      championsId: '0925000',
+    })
+    expect(data.pokemonMap.find((record) => record.id === 'maushold')).toMatchObject({
+      championsId: '0925001',
+    })
+    expect(data.pokemonMap.some((record) => record.championsId === '0678003')).toBe(false)
 
     for (const lang of I18N_CODE) {
       const langData = data.i18n[lang]
@@ -173,6 +308,7 @@ describe('data generation', () => {
       expect(langData.abilities).toHaveLength(data.abilities.length)
       expect(langData.items).toHaveLength(data.items.length)
       expect(langData.battleStates).toHaveLength(data.battleStates.length)
+      expect(langData.pokemonMap).toHaveLength(data.pokemonMap.length)
 
       for (const move of langData.moves) {
         expect(move.slugLoc).toBeTruthy()
@@ -193,7 +329,22 @@ describe('data generation', () => {
         expect(battleState.slugLoc).toBeTruthy()
         i18nSchema.parse(battleState)
       }
+
+      for (const pokemonMapRecord of langData.pokemonMap) {
+        pokemonMapSchema.parse(pokemonMapRecord)
+      }
+
+      expect('movesMap' in langData).toBe(false)
+      expect('abilitiesMap' in langData).toBe(false)
+      expect('itemsMap' in langData).toBe(false)
     }
+
+    expect(data.i18n.esp.pokemonMap.find((record) => record.id === 'blastoise-mega')).toMatchObject(
+      {
+        name: 'Blastoise',
+        formName: 'Mega-Blastoise',
+      },
+    )
   })
 
   it('writes every game locale for every i18n file', () => {
@@ -214,6 +365,15 @@ describe('data generation', () => {
           readFileSync(join(outputRoot, 'i18n', 'eng', fileName), 'utf8'),
         )
       }
+
+      expect(existsSync(join(outputRoot, 'moves-map.json'))).toBe(true)
+      expect(existsSync(join(outputRoot, 'abilities-map.json'))).toBe(true)
+      expect(existsSync(join(outputRoot, 'items-map.json'))).toBe(true)
+      expect(existsSync(join(outputRoot, 'pokemon-moves.json'))).toBe(true)
+      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'moves-map.json'))).toBe(false)
+      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'abilities-map.json'))).toBe(false)
+      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'items-map.json'))).toBe(false)
+      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'pokemon-moves.json'))).toBe(false)
     } finally {
       rmSync(outputRoot, { recursive: true, force: true })
     }
