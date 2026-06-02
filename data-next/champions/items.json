@@ -1,938 +1,1317 @@
 [
   {
-    "id": "149",
+    "id": "cheriberry",
+    "championsId": "149",
     "slug": "cheri-berry",
     "name": "Cheri Berry",
     "description": "Cures being paralyzed. Disappears for the duration of\nthe battle after a single use.",
     "pluralName": "Cheri Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "150",
+    "id": "chestoberry",
+    "championsId": "150",
     "slug": "chesto-berry",
     "name": "Chesto Berry",
     "description": "Cures being asleep. Disappears for the duration of the\nbattle after a single use.",
     "pluralName": "Chesto Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "151",
+    "id": "pechaberry",
+    "championsId": "151",
     "slug": "pecha-berry",
     "name": "Pecha Berry",
     "description": "Cures being poisoned or badly poisoned. Disappears for\nthe duration of the battle after a single use.",
     "pluralName": "Pecha Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "152",
+    "id": "rawstberry",
+    "championsId": "152",
     "slug": "rawst-berry",
     "name": "Rawst Berry",
     "description": "Cures being burned. Disappears for the duration of the\nbattle after a single use.",
     "pluralName": "Rawst Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "153",
+    "id": "aspearberry",
+    "championsId": "153",
     "slug": "aspear-berry",
     "name": "Aspear Berry",
     "description": "Cures being frozen. Disappears for the duration of the\nbattle after a single use.",
     "pluralName": "Aspear Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "154",
+    "id": "leppaberry",
+    "championsId": "154",
     "slug": "leppa-berry",
     "name": "Leppa Berry",
     "description": "Restores 10 PP to a move when its PP is fully depleted.\nDisappears for the duration of the battle after a single use.",
     "pluralName": "Leppa Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "155",
+    "id": "oranberry",
+    "championsId": "155",
     "slug": "oran-berry",
     "name": "Oran Berry",
     "description": "Restores 10 HP to the holder when its HP drops to 1/2\nor less of its max. Disappears for the duration of the\nbattle after a single use.",
     "pluralName": "Oran Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "156",
+    "id": "persimberry",
+    "championsId": "156",
     "slug": "persim-berry",
     "name": "Persim Berry",
     "description": "Cures being confused. Disappears for the duration of the\nbattle after a single use.",
     "pluralName": "Persim Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "157",
+    "id": "lumberry",
+    "championsId": "157",
     "slug": "lum-berry",
     "name": "Lum Berry",
     "description": "Cures any status condition or confusion. Disappears for\nthe duration of the battle after a single use.",
     "pluralName": "Lum Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "158",
+    "id": "sitrusberry",
+    "championsId": "158",
     "slug": "sitrus-berry",
     "name": "Sitrus Berry",
     "description": "Restores 1/4 of the holder's max HP when the holder's\nHP drops to 1/2 or less of its max. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Sitrus Berries",
-    "categories": ["berry", "recovery"]
+    "categories": [
+      "berry",
+      "recovery"
+    ]
   },
   {
-    "id": "184",
+    "id": "occaberry",
+    "championsId": "184",
     "slug": "occa-berry",
     "name": "Occa Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Fire-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Occa Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "185",
+    "id": "passhoberry",
+    "championsId": "185",
     "slug": "passho-berry",
     "name": "Passho Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Water-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Passho Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "186",
+    "id": "wacanberry",
+    "championsId": "186",
     "slug": "wacan-berry",
     "name": "Wacan Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Electric-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Wacan Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "187",
+    "id": "rindoberry",
+    "championsId": "187",
     "slug": "rindo-berry",
     "name": "Rindo Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Grass-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Rindo Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "188",
+    "id": "yacheberry",
+    "championsId": "188",
     "slug": "yache-berry",
     "name": "Yache Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Ice-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Yache Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "189",
+    "id": "chopleberry",
+    "championsId": "189",
     "slug": "chople-berry",
     "name": "Chople Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Fighting-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Chople Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "190",
+    "id": "kebiaberry",
+    "championsId": "190",
     "slug": "kebia-berry",
     "name": "Kebia Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Poison-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Kebia Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "191",
+    "id": "shucaberry",
+    "championsId": "191",
     "slug": "shuca-berry",
     "name": "Shuca Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Ground-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Shuca Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "192",
+    "id": "cobaberry",
+    "championsId": "192",
     "slug": "coba-berry",
     "name": "Coba Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Flying-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Coba Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "193",
+    "id": "payapaberry",
+    "championsId": "193",
     "slug": "payapa-berry",
     "name": "Payapa Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Psychic-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Payapa Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "194",
+    "id": "tangaberry",
+    "championsId": "194",
     "slug": "tanga-berry",
     "name": "Tanga Berry",
     "description": "Halves the damage taken when the holder is hit with\na supereffective Bug-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Tanga Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "195",
+    "id": "chartiberry",
+    "championsId": "195",
     "slug": "charti-berry",
     "name": "Charti Berry",
     "description": "Halves the damage taken when the holder is hit with\na supereffective Rock-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Charti Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "196",
+    "id": "kasibberry",
+    "championsId": "196",
     "slug": "kasib-berry",
     "name": "Kasib Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Ghost-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Kasib Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "197",
+    "id": "habanberry",
+    "championsId": "197",
     "slug": "haban-berry",
     "name": "Haban Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Dragon-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Haban Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "198",
+    "id": "colburberry",
+    "championsId": "198",
     "slug": "colbur-berry",
     "name": "Colbur Berry",
     "description": "Halves the damage taken when the holder is hit with\na supereffective Dark-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Colbur Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "199",
+    "id": "babiriberry",
+    "championsId": "199",
     "slug": "babiri-berry",
     "name": "Babiri Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Steel-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Babiri Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "200",
+    "id": "chilanberry",
+    "championsId": "200",
     "slug": "chilan-berry",
     "name": "Chilan Berry",
     "description": "Halves the damage taken when the holder is hit with a\nNormal-type move. Disappears for the duration of the\nbattle after a single use.",
     "pluralName": "Chilan Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "213",
+    "id": "brightpowder",
+    "championsId": "213",
     "slug": "bright-powder",
     "name": "Bright Powder",
     "description": "Lowers the accuracy of moves used by opponents\nagainst the holder by 10%.",
     "pluralName": "Bright Powders",
-    "categories": ["other"]
+    "categories": [
+      "other"
+    ]
   },
   {
-    "id": "214",
+    "id": "whiteherb",
+    "championsId": "214",
     "slug": "white-herb",
     "name": "White Herb",
     "description": "Restores the holder's stats to their usual value when they\nare lowered. Disappears for the duration of the battle\nafter a single use.",
     "pluralName": "White Herbs",
-    "categories": ["stat_boost"]
+    "categories": [
+      "stat_boost"
+    ]
   },
   {
-    "id": "217",
+    "id": "quickclaw",
+    "championsId": "217",
     "slug": "quick-claw",
     "name": "Quick Claw",
     "description": "Gives the holder's moves a 20% chance of going first\namong moves of the same priority.",
     "pluralName": "Quick Claws",
-    "categories": ["other"]
+    "categories": [
+      "other"
+    ]
   },
   {
-    "id": "219",
+    "id": "mentalherb",
+    "championsId": "219",
     "slug": "mental-herb",
     "name": "Mental Herb",
     "description": "Cures the holder of the Infatuated, Taunted, Unable to\nRepeat, Move Disabled, Healing Prevented, and Encore\nstatuses. Disappears for the duration of the battle after a\nsingle use.",
     "pluralName": "Mental Herbs",
-    "categories": ["recovery"]
+    "categories": [
+      "recovery"
+    ]
   },
   {
-    "id": "221",
+    "id": "kingsrock",
+    "championsId": "221",
     "slug": "kings-rock",
     "name": "King's Rock",
     "description": "When the holder deals damage with its moves, there is a\n10% chance that targets will flinch.",
     "pluralName": "King's Rocks",
-    "categories": ["other"]
+    "categories": [
+      "other"
+    ]
   },
   {
-    "id": "222",
+    "id": "silverpowder",
+    "championsId": "222",
     "slug": "silver-powder",
     "name": "Silver Powder",
     "description": "Boosts the power of the holder's Bug-type moves\nby 20%.",
     "pluralName": "Silver Powders",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "230",
+    "id": "focusband",
+    "championsId": "230",
     "slug": "focus-band",
     "name": "Focus Band",
     "description": "If the holder takes damage from a move that would\nknock it out, there's a 10% chance the holder will\nendure the hit with 1 HP.",
     "pluralName": "Focus Bands",
-    "categories": ["defense"]
+    "categories": [
+      "defense"
+    ]
   },
   {
-    "id": "232",
+    "id": "scopelens",
+    "championsId": "232",
     "slug": "scope-lens",
     "name": "Scope Lens",
     "description": "Gives the holder a 1-stage Critical-Hit Ratio Boost.",
     "pluralName": "Scope Lenses",
-    "categories": ["other"]
+    "categories": [
+      "other"
+    ]
   },
   {
-    "id": "233",
+    "id": "metalcoat",
+    "championsId": "233",
     "slug": "metal-coat",
     "name": "Metal Coat",
     "description": "Boosts the power of the holder's Steel-type moves\nby 20%.",
     "pluralName": "Metal Coats",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "234",
+    "id": "leftovers",
+    "championsId": "234",
     "slug": "leftovers",
     "name": "Leftovers",
     "description": "Restores 1/16 of the holder's max HP at the end of\nevery turn.",
     "pluralName": "Leftovers",
-    "categories": ["recovery"]
+    "categories": [
+      "recovery"
+    ]
   },
   {
-    "id": "236",
+    "id": "lightball",
+    "championsId": "236",
     "slug": "light-ball",
     "name": "Light Ball",
     "description": "When held by a Pikachu, doubles the holder's Attack\nand Sp. Atk.",
     "pluralName": "Light Balls",
-    "categories": ["stat_boost"]
+    "categories": [
+      "stat_boost"
+    ]
   },
   {
-    "id": "237",
+    "id": "softsand",
+    "championsId": "237",
     "slug": "soft-sand",
     "name": "Soft Sand",
     "description": "Boosts the power of the holder's Ground-type moves\nby 20%.",
     "pluralName": "Soft Sand",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "238",
+    "id": "hardstone",
+    "championsId": "238",
     "slug": "hard-stone",
     "name": "Hard Stone",
     "description": "Boosts the power of the holder's Rock-type moves\nby 20%.",
     "pluralName": "Hard Stones",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "239",
+    "id": "miracleseed",
+    "championsId": "239",
     "slug": "miracle-seed",
     "name": "Miracle Seed",
     "description": "Boosts the power of the holder's Grass-type moves\nby 20%.",
     "pluralName": "Miracle Seeds",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "240",
+    "id": "blackglasses",
+    "championsId": "240",
     "slug": "black-glasses",
     "name": "Black Glasses",
     "description": "Boosts the power of the holder's Dark-type moves\nby 20%.",
     "pluralName": "Black Glasses",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "241",
+    "id": "blackbelt",
+    "championsId": "241",
     "slug": "black-belt",
     "name": "Black Belt",
     "description": "Boosts the power of the holder's Fighting-type moves\nby 20%.",
     "pluralName": "Black Belts",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "242",
+    "id": "magnet",
+    "championsId": "242",
     "slug": "magnet",
     "name": "Magnet",
     "description": "Boosts the power of the holder's Electric-type moves\nby 20%.",
     "pluralName": "Magnets",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "243",
+    "id": "mysticwater",
+    "championsId": "243",
     "slug": "mystic-water",
     "name": "Mystic Water",
     "description": "Boosts the power of the holder's Water-type moves\nby 20%.",
     "pluralName": "Mystic Waters",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "244",
+    "id": "sharpbeak",
+    "championsId": "244",
     "slug": "sharp-beak",
     "name": "Sharp Beak",
     "description": "Boosts the power of the holder's Flying-type moves\nby 20%.",
     "pluralName": "Sharp Beaks",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "245",
+    "id": "poisonbarb",
+    "championsId": "245",
     "slug": "poison-barb",
     "name": "Poison Barb",
     "description": "Boosts the power of the holder's Poison-type moves\nby 20%.",
     "pluralName": "Poison Barbs",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "246",
+    "id": "nevermeltice",
+    "championsId": "246",
     "slug": "never-melt-ice",
     "name": "Never-Melt Ice",
     "description": "Boosts the power of the holder's Ice-type moves\nby 20%.",
     "pluralName": "Never-Melt Ices",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "247",
+    "id": "spelltag",
+    "championsId": "247",
     "slug": "spell-tag",
     "name": "Spell Tag",
     "description": "Boosts the power of the holder's Ghost-type moves\nby 20%.",
     "pluralName": "Spell Tags",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "248",
+    "id": "twistedspoon",
+    "championsId": "248",
     "slug": "twisted-spoon",
     "name": "Twisted Spoon",
     "description": "Boosts the power of the holder's Psychic-type moves\nby 20%.",
     "pluralName": "Twisted Spoons",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "249",
+    "id": "charcoal",
+    "championsId": "249",
     "slug": "charcoal",
     "name": "Charcoal",
     "description": "Boosts the power of the holder's Fire-type moves\nby 20%.",
     "pluralName": "Charcoals",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "250",
+    "id": "dragonfang",
+    "championsId": "250",
     "slug": "dragon-fang",
     "name": "Dragon Fang",
     "description": "Boosts the power of the holder's Dragon-type moves\nby 20%.",
     "pluralName": "Dragon Fangs",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "251",
+    "id": "silkscarf",
+    "championsId": "251",
     "slug": "silk-scarf",
     "name": "Silk Scarf",
     "description": "Boosts the power of the holder's Normal-type moves\nby 20%.",
     "pluralName": "Silk Scarves",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "253",
+    "id": "shellbell",
+    "championsId": "253",
     "slug": "shell-bell",
     "name": "Shell Bell",
     "description": "When the holder deals damage with its moves, its HP is\nrestored by 1/8 of the damage dealt.",
     "pluralName": "Shell Bells",
-    "categories": ["recovery"]
+    "categories": [
+      "recovery"
+    ]
   },
   {
-    "id": "275",
+    "id": "focussash",
+    "championsId": "275",
     "slug": "focus-sash",
     "name": "Focus Sash",
     "description": "If the holder has full HP and takes damage from a move\nthat would knock it out in one hit, it will endure the hit\nwith 1 HP. Disappears for the duration of the battle after\na single use.",
     "pluralName": "Focus Sashes",
-    "categories": ["defense"]
+    "categories": [
+      "defense"
+    ]
   },
   {
-    "id": "287",
+    "id": "choicescarf",
+    "championsId": "287",
     "slug": "choice-scarf",
     "name": "Choice Scarf",
     "description": "Boosts the holder's Speed stat by 50%. However, once\nthe holder uses a move, it becomes unable to use any\nother move but that one until it switches out of battle.",
     "pluralName": "Choice Scarves",
-    "categories": ["stat_boost"]
+    "categories": [
+      "stat_boost"
+    ]
   },
   {
-    "id": "656",
+    "id": "gengarite",
+    "championsId": "656",
     "slug": "gengarite",
     "name": "Gengarite",
     "description": "A held item that allows Gengar to Mega Evolve.",
     "pluralName": "Gengarites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "657",
+    "id": "gardevoirite",
+    "championsId": "657",
     "slug": "gardevoirite",
     "name": "Gardevoirite",
     "description": "A held item that allows Gardevoir to Mega Evolve.",
     "pluralName": "Gardevoirites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "658",
+    "id": "ampharosite",
+    "championsId": "658",
     "slug": "ampharosite",
     "name": "Ampharosite",
     "description": "A held item that allows Ampharos to Mega Evolve.",
     "pluralName": "Ampharosites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "659",
+    "id": "venusaurite",
+    "championsId": "659",
     "slug": "venusaurite",
     "name": "Venusaurite",
     "description": "A held item that allows Venusaur to Mega Evolve.",
     "pluralName": "Venusaurites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "660",
+    "id": "charizarditex",
+    "championsId": "660",
     "slug": "charizardite-x",
     "name": "Charizardite X",
     "description": "A held item that allows Charizard to Mega Evolve into\nMega Charizard X.",
     "pluralName": "Charizardite Xs",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "661",
+    "id": "blastoisinite",
+    "championsId": "661",
     "slug": "blastoisinite",
     "name": "Blastoisinite",
     "description": "A held item that allows Blastoise to Mega Evolve.",
     "pluralName": "Blastoisinites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "665",
+    "id": "medichamite",
+    "championsId": "665",
     "slug": "medichamite",
     "name": "Medichamite",
     "description": "A held item that allows Medicham to Mega Evolve.",
     "pluralName": "Medichamites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "666",
+    "id": "houndoominite",
+    "championsId": "666",
     "slug": "houndoominite",
     "name": "Houndoominite",
     "description": "A held item that allows Houndoom to Mega Evolve.",
     "pluralName": "Houndoominites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "667",
+    "id": "aggronite",
+    "championsId": "667",
     "slug": "aggronite",
     "name": "Aggronite",
     "description": "A held item that allows Aggron to Mega Evolve.",
     "pluralName": "Aggronites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "668",
+    "id": "banettite",
+    "championsId": "668",
     "slug": "banettite",
     "name": "Banettite",
     "description": "A held item that allows Banette to Mega Evolve.",
     "pluralName": "Banettites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "669",
+    "id": "tyranitarite",
+    "championsId": "669",
     "slug": "tyranitarite",
     "name": "Tyranitarite",
     "description": "A held item that allows Tyranitar to Mega Evolve.",
     "pluralName": "Tyranitarites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "670",
+    "id": "scizorite",
+    "championsId": "670",
     "slug": "scizorite",
     "name": "Scizorite",
     "description": "A held item that allows Scizor to Mega Evolve.",
     "pluralName": "Scizorites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "671",
+    "id": "pinsirite",
+    "championsId": "671",
     "slug": "pinsirite",
     "name": "Pinsirite",
     "description": "A held item that allows Pinsir to Mega Evolve.",
     "pluralName": "Pinsirites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "672",
+    "id": "aerodactylite",
+    "championsId": "672",
     "slug": "aerodactylite",
     "name": "Aerodactylite",
     "description": "A held item that allows Aerodactyl to Mega Evolve.",
     "pluralName": "Aerodactylites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "673",
+    "id": "lucarionite",
+    "championsId": "673",
     "slug": "lucarionite",
     "name": "Lucarionite",
     "description": "A held item that allows Lucario to Mega Evolve into\nMega Lucario.",
     "pluralName": "Lucarionites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "674",
+    "id": "abomasite",
+    "championsId": "674",
     "slug": "abomasite",
     "name": "Abomasite",
     "description": "A held item that allows Abomasnow to Mega Evolve.",
     "pluralName": "Abomasites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "675",
+    "id": "kangaskhanite",
+    "championsId": "675",
     "slug": "kangaskhanite",
     "name": "Kangaskhanite",
     "description": "A held item that allows Kangaskhan to Mega Evolve.",
     "pluralName": "Kangaskhanites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "676",
+    "id": "gyaradosite",
+    "championsId": "676",
     "slug": "gyaradosite",
     "name": "Gyaradosite",
     "description": "A held item that allows Gyarados to Mega Evolve.",
     "pluralName": "Gyaradosites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "677",
+    "id": "absolite",
+    "championsId": "677",
     "slug": "absolite",
     "name": "Absolite",
     "description": "A held item that allows Absol to Mega Evolve into\nMega Absol.",
     "pluralName": "Absolites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "678",
+    "id": "charizarditey",
+    "championsId": "678",
     "slug": "charizardite-y",
     "name": "Charizardite Y",
     "description": "A held item that allows Charizard to Mega Evolve into\nMega Charizard Y.",
     "pluralName": "Charizardite Ys",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "679",
+    "id": "alakazite",
+    "championsId": "679",
     "slug": "alakazite",
     "name": "Alakazite",
     "description": "A held item that allows Alakazam to Mega Evolve.",
     "pluralName": "Alakazites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "680",
+    "id": "heracronite",
+    "championsId": "680",
     "slug": "heracronite",
     "name": "Heracronite",
     "description": "A held item that allows Heracross to Mega Evolve.",
     "pluralName": "Heracronites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "682",
+    "id": "manectite",
+    "championsId": "682",
     "slug": "manectite",
     "name": "Manectite",
     "description": "A held item that allows Manectric to Mega Evolve.",
     "pluralName": "Manectites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "683",
+    "id": "garchompite",
+    "championsId": "683",
     "slug": "garchompite",
     "name": "Garchompite",
     "description": "A held item that allows Garchomp to Mega Evolve into\nMega Garchomp.",
     "pluralName": "Garchompites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "686",
+    "id": "roseliberry",
+    "championsId": "686",
     "slug": "roseli-berry",
     "name": "Roseli Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Fairy-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Roseli Berries",
-    "categories": ["berry", "defense"]
+    "categories": [
+      "berry",
+      "defense"
+    ]
   },
   {
-    "id": "754",
+    "id": "sablenite",
+    "championsId": "754",
     "slug": "sablenite",
     "name": "Sablenite",
     "description": "A held item that allows Sableye to Mega Evolve.",
     "pluralName": "Sablenites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "755",
+    "id": "altarianite",
+    "championsId": "755",
     "slug": "altarianite",
     "name": "Altarianite",
     "description": "A held item that allows Altaria to Mega Evolve.",
     "pluralName": "Altarianites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "756",
+    "id": "galladite",
+    "championsId": "756",
     "slug": "galladite",
     "name": "Galladite",
     "description": "A held item that allows Gallade to Mega Evolve.",
     "pluralName": "Galladites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "757",
+    "id": "audinite",
+    "championsId": "757",
     "slug": "audinite",
     "name": "Audinite",
     "description": "A held item that allows Audino to Mega Evolve.",
     "pluralName": "Audinites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "759",
+    "id": "sharpedonite",
+    "championsId": "759",
     "slug": "sharpedonite",
     "name": "Sharpedonite",
     "description": "A held item that allows Sharpedo to Mega Evolve.",
     "pluralName": "Sharpedonites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "760",
+    "id": "slowbronite",
+    "championsId": "760",
     "slug": "slowbronite",
     "name": "Slowbronite",
     "description": "A held item that allows Slowbro to Mega Evolve.\nIt has no effect on Galarian Slowbro.",
     "pluralName": "Slowbronites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "761",
+    "id": "steelixite",
+    "championsId": "761",
     "slug": "steelixite",
     "name": "Steelixite",
     "description": "A held item that allows Steelix to Mega Evolve.",
     "pluralName": "Steelixites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "762",
+    "id": "pidgeotite",
+    "championsId": "762",
     "slug": "pidgeotite",
     "name": "Pidgeotite",
     "description": "A held item that allows Pidgeot to Mega Evolve.",
     "pluralName": "Pidgeotites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "763",
+    "id": "glalitite",
+    "championsId": "763",
     "slug": "glalitite",
     "name": "Glalitite",
     "description": "A held item that allows Glalie to Mega Evolve.",
     "pluralName": "Glalitites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "767",
+    "id": "cameruptite",
+    "championsId": "767",
     "slug": "cameruptite",
     "name": "Cameruptite",
     "description": "A held item that allows Camerupt to Mega Evolve.",
     "pluralName": "Cameruptites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "768",
+    "id": "lopunnite",
+    "championsId": "768",
     "slug": "lopunnite",
     "name": "Lopunnite",
     "description": "A held item that allows Lopunny to Mega Evolve.",
     "pluralName": "Lopunnites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "770",
+    "id": "beedrillite",
+    "championsId": "770",
     "slug": "beedrillite",
     "name": "Beedrillite",
     "description": "A held item that allows Beedrill to Mega Evolve.",
     "pluralName": "Beedrillites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2401",
+    "id": "fairyfeather",
+    "championsId": "2401",
     "slug": "fairy-feather",
     "name": "Fairy Feather",
     "description": "Boosts the power of the holder's Fairy-type moves\nby 20%.",
     "pluralName": "Fairy Feathers",
-    "categories": ["power_boost"]
+    "categories": [
+      "power_boost"
+    ]
   },
   {
-    "id": "2559",
+    "id": "clefablite",
+    "championsId": "2559",
     "slug": "clefablite",
     "name": "Clefablite",
     "description": "A held item that allows Clefable to Mega Evolve.",
     "pluralName": "Clefablites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2560",
+    "id": "victreebelite",
+    "championsId": "2560",
     "slug": "victreebelite",
     "name": "Victreebelite",
     "description": "A held item that allows Victreebel to Mega Evolve.",
     "pluralName": "Victreebelites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2561",
+    "id": "starminite",
+    "championsId": "2561",
     "slug": "starminite",
     "name": "Starminite",
     "description": "A held item that allows Starmie to Mega Evolve.",
     "pluralName": "Starminites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2562",
+    "id": "dragoninite",
+    "championsId": "2562",
     "slug": "dragoninite",
     "name": "Dragoninite",
     "description": "A held item that allows Dragonite to Mega Evolve.",
     "pluralName": "Dragoninites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2563",
+    "id": "meganiumite",
+    "championsId": "2563",
     "slug": "meganiumite",
     "name": "Meganiumite",
     "description": "A held item that allows Meganium to Mega Evolve.",
     "pluralName": "Meganiumites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2564",
+    "id": "feraligite",
+    "championsId": "2564",
     "slug": "feraligite",
     "name": "Feraligite",
     "description": "A held item that allows Feraligatr to Mega Evolve.",
     "pluralName": "Feraligites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2565",
+    "id": "skarmorite",
+    "championsId": "2565",
     "slug": "skarmorite",
     "name": "Skarmorite",
     "description": "A held item that allows Skarmory to Mega Evolve.",
     "pluralName": "Skarmorites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2566",
+    "id": "froslassite",
+    "championsId": "2566",
     "slug": "froslassite",
     "name": "Froslassite",
     "description": "A held item that allows Froslass to Mega Evolve.",
     "pluralName": "Froslassites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2569",
+    "id": "emboarite",
+    "championsId": "2569",
     "slug": "emboarite",
     "name": "Emboarite",
     "description": "A held item that allows Emboar to Mega Evolve.",
     "pluralName": "Emboarites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2570",
+    "id": "excadrite",
+    "championsId": "2570",
     "slug": "excadrite",
     "name": "Excadrite",
     "description": "A held item that allows Excadrill to Mega Evolve.",
     "pluralName": "Excadrites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2574",
+    "id": "chandelurite",
+    "championsId": "2574",
     "slug": "chandelurite",
     "name": "Chandelurite",
     "description": "A held item that allows Chandelure to Mega Evolve.",
     "pluralName": "Chandelurites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2575",
+    "id": "chesnaughtite",
+    "championsId": "2575",
     "slug": "chesnaughtite",
     "name": "Chesnaughtite",
     "description": "A held item that allows Chesnaught to Mega Evolve.",
     "pluralName": "Chesnaughtites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2576",
+    "id": "delphoxite",
+    "championsId": "2576",
     "slug": "delphoxite",
     "name": "Delphoxite",
     "description": "A held item that allows Delphox to Mega Evolve.",
     "pluralName": "Delphoxites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2577",
+    "id": "greninjite",
+    "championsId": "2577",
     "slug": "greninjite",
     "name": "Greninjite",
     "description": "A held item that allows Greninja to Mega Evolve.",
     "pluralName": "Greninjites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2579",
+    "id": "floettite",
+    "championsId": "2579",
     "slug": "floettite",
     "name": "Floettite",
     "description": "A held item that allows Eternal Flower Floette to\nMega Evolve.",
     "pluralName": "Floettites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2583",
+    "id": "hawluchanite",
+    "championsId": "2583",
     "slug": "hawluchanite",
     "name": "Hawluchanite",
     "description": "A held item that allows Hawlucha to Mega Evolve.",
     "pluralName": "Hawluchanites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2585",
+    "id": "drampanite",
+    "championsId": "2585",
     "slug": "drampanite",
     "name": "Drampanite",
     "description": "A held item that allows Drampa to Mega Evolve.",
     "pluralName": "Drampanites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2637",
+    "id": "chimechite",
+    "championsId": "2637",
     "slug": "chimechite",
     "name": "Chimechite",
     "description": "A held item that allows Chimecho to Mega Evolve.",
     "pluralName": "Chimechites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2642",
+    "id": "golurkite",
+    "championsId": "2642",
     "slug": "golurkite",
     "name": "Golurkite",
     "description": "A held item that allows Golurk to Mega Evolve.",
     "pluralName": "Golurkites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2643",
+    "id": "meowsticite",
+    "championsId": "2643",
     "slug": "meowsticite",
     "name": "Meowsticite",
     "description": "A held item that allows Meowstic to Mega Evolve.",
     "pluralName": "Meowsticites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2644",
+    "id": "crabominite",
+    "championsId": "2644",
     "slug": "crabominite",
     "name": "Crabominite",
     "description": "A held item that allows Crabominable to Mega Evolve.",
     "pluralName": "Crabominites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2647",
+    "id": "scovillainite",
+    "championsId": "2647",
     "slug": "scovillainite",
     "name": "Scovillainite",
     "description": "A held item that allows Scovillain to Mega Evolve.",
     "pluralName": "Scovillainites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   },
   {
-    "id": "2650",
+    "id": "glimmoranite",
+    "championsId": "2650",
     "slug": "glimmoranite",
     "name": "Glimmoranite",
     "description": "A held item that allows Glimmora to Mega Evolve.",
     "pluralName": "Glimmoranites",
-    "categories": ["mega_stone"]
+    "categories": [
+      "mega_stone"
+    ]
   }
 ]

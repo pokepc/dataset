@@ -17,6 +17,14 @@ export const baseSchema = z.object({
   description: z.string(),
 })
 
+export const championsLinkedBaseSchema = z.object({
+  id: slugSchema,
+  championsId: z.string(),
+  slug: slugSchema,
+  name: z.string(),
+  description: z.string(),
+})
+
 export const i18nSchema = z.object({
   id: z.string(),
   slug: slugSchema,
@@ -31,7 +39,7 @@ export const itemI18nSchema = i18nSchema.extend({
 })
 export type ItemI18nRecord = z.infer<typeof itemI18nSchema>
 
-export const moveSchema = baseSchema.extend({
+export const moveSchema = championsLinkedBaseSchema.extend({
   type: z.enum(pokemonTypes),
   category: z.enum(moveCategories),
   power: z.number().min(0).max(999),
@@ -45,10 +53,10 @@ export const moveSchema = baseSchema.extend({
 })
 export type MoveRecord = z.infer<typeof moveSchema>
 
-export const abilitySchema = baseSchema.extend({})
+export const abilitySchema = championsLinkedBaseSchema.extend({})
 export type AbilityRecord = z.infer<typeof abilitySchema>
 
-export const itemSchema = baseSchema.extend({
+export const itemSchema = championsLinkedBaseSchema.extend({
   pluralName: z.string(),
   categories: z.array(z.enum(itemCategories)),
 })
@@ -59,23 +67,41 @@ export const battleStateSchema = baseSchema.extend({
 })
 export type BattleStateRecord = z.infer<typeof battleStateSchema>
 
-export const pokemonMapSchema = z.object({
+export const pokemonSchema = z.object({
+  id: slugSchema,
+  nid: slugSchema,
+  name: z.string(),
+  formName: z.string().optional(),
+  pokeApiId: z.number().int().positive(),
+  pokeApiFormId: z.number().int().positive().optional(),
+  showdownId: z.string(),
+  baseSpecies: slugSchema.optional(),
+  championsId: z.string().regex(/^\d{7}$/),
+  type1: z.enum(pokemonTypes),
+  type2: z.enum(pokemonTypes).nullable(),
+  abilities: z.array(slugSchema),
+  baseHp: z.number().int().min(1),
+  baseAtk: z.number().int().min(1),
+  baseDef: z.number().int().min(1),
+  baseSpAtk: z.number().int().min(1),
+  baseSpDef: z.number().int().min(1),
+  baseSpeed: z.number().int().min(1),
+  height: z.number().int().min(-1),
+  weight: z.number().int().min(-1),
+  isForm: z.boolean(),
+  isBattleOnly: z.boolean(),
+  isCosmetic: z.boolean(),
+  isFemale: z.boolean(),
+})
+export type PokemonRecord = z.infer<typeof pokemonSchema>
+
+export const pokemonI18nSchema = z.object({
   id: slugSchema,
   championsId: z.string().regex(/^\d{7}$/),
   name: z.string(),
-  formName: z.string(),
+  formName: z.string().optional(),
 })
-export type PokemonMapRecord = z.infer<typeof pokemonMapSchema>
-
-export const localChampionsMapRecordSchema = z.object({
-  id: slugSchema,
-  championsId: z.string(),
-  slug: slugSchema,
-})
-export type LocalChampionsMapRecord = z.infer<typeof localChampionsMapRecordSchema>
-
-export const localChampionsMapSchema = z.array(localChampionsMapRecordSchema)
-export type LocalChampionsMap = z.infer<typeof localChampionsMapSchema>
+export type PokemonI18nRecord = z.infer<typeof pokemonI18nSchema>
 
 export const pokemonMovesRecordSchema = z.object({
   id: slugSchema,

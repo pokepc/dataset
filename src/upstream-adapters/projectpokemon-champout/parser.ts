@@ -18,10 +18,10 @@ import {
   i18nSchema,
   itemI18nSchema,
   itemSchema,
-  localChampionsMapSchema,
   moveSchema,
   pokemonMovesRecordSchema,
-  pokemonMapSchema,
+  pokemonI18nSchema,
+  pokemonSchema,
 } from './schemas'
 import type {
   AbilityRecord,
@@ -29,10 +29,10 @@ import type {
   I18nRecord,
   ItemI18nRecord,
   ItemRecord,
-  LocalChampionsMap,
   MoveRecord,
   PokemonMovesRecord,
-  PokemonMapRecord,
+  PokemonI18nRecord,
+  PokemonRecord,
 } from './schemas'
 import {
   battleStates,
@@ -53,7 +53,7 @@ export const I18N_FILE_NAMES = [
   'abilities.json',
   'items.json',
   'battle-states.json',
-  'pokemon-map.json',
+  'pokemon.json',
 ] as const
 
 const missingLocales: GameLocale[] = ['PT-BR']
@@ -69,7 +69,7 @@ export type DomainI18nData = {
   abilities: I18nRecord[]
   items: ItemI18nRecord[]
   battleStates: I18nRecord[]
-  pokemonMap: PokemonMapRecord[]
+  pokemon: PokemonI18nRecord[]
 }
 
 export type OrphanTextLabel = {
@@ -96,10 +96,7 @@ export type BuiltData = {
   abilities: AbilityRecord[]
   items: ItemRecord[]
   battleStates: BattleStateRecord[]
-  pokemonMap: PokemonMapRecord[]
-  movesMap: LocalChampionsMap
-  abilitiesMap: LocalChampionsMap
-  itemsMap: LocalChampionsMap
+  pokemon: PokemonRecord[]
   pokemonMoves: PokemonMovesRecord[]
   i18n: Record<I18nCode, DomainI18nData>
   warnings: BuildWarning[]
@@ -158,15 +155,22 @@ type PokemonMoveLearnRecord = {
 
 type LocalPokemonRecord = {
   id: string
+  nid: string
   dexNum: number
+  pokeApiId: number | undefined
+  pokeApiFormId: number | undefined
+  showdownId: string
   type1: string
   type2: string | null
+  abilities: string[]
   baseHp: number
   baseAtk: number
   baseDef: number
   baseSpAtk: number
   baseSpDef: number
   baseSpeed: number
+  height: number
+  weight: number
   isDefault: boolean
   isForm: boolean
   isCosmeticForm: boolean
@@ -184,6 +188,14 @@ type LocalNamedRecord = {
   psName: string | undefined
 }
 
+type LocalChampionsMapRecord = {
+  id: string
+  championsId: string
+  slug: string
+}
+
+type LocalChampionsMap = LocalChampionsMapRecord[]
+
 type BattleStateText = {
   id: string
   stateCode: number
@@ -193,6 +205,26 @@ type BattleStateText = {
 
 type PokemonMapIndexRecord = {
   id: string
+  nid: string
+  pokeApiId: number
+  pokeApiFormId: number | undefined
+  showdownId: string
+  baseSpecies: string | undefined
+  type1: string
+  type2: string | null
+  abilities: string[]
+  baseHp: number
+  baseAtk: number
+  baseDef: number
+  baseSpAtk: number
+  baseSpDef: number
+  baseSpeed: number
+  height: number
+  weight: number
+  isForm: boolean
+  isBattleOnly: boolean
+  isCosmetic: boolean
+  isFemale: boolean
   championsId: string
   nameLabel: string
   formLabel: string
@@ -462,40 +494,38 @@ export function buildData(
     options.onWarning?.(warning)
   }
 
-  const moves = buildMoves(datasetRoot, DEFAULT_LANGUAGE)
-  const abilities = buildAbilities(datasetRoot, DEFAULT_LANGUAGE)
-  const items = buildItems(datasetRoot, DEFAULT_LANGUAGE)
+  const championsMoves = buildMoves(datasetRoot, DEFAULT_LANGUAGE)
+  const championsAbilities = buildAbilities(datasetRoot, DEFAULT_LANGUAGE)
+  const championsItems = buildItems(datasetRoot, DEFAULT_LANGUAGE)
   const battleStates = buildBattleStates(datasetRoot, DEFAULT_LANGUAGE)
   const pokemonMapIndex = buildPokemonMapIndex(datasetRoot, DEFAULT_LOCAL_DATA_ROOT)
-  const pokemonMap = localizePokemonMap(datasetRoot, DEFAULT_LANGUAGE, pokemonMapIndex)
+  const pokemon = localizePokemon(datasetRoot, DEFAULT_LANGUAGE, pokemonMapIndex)
   const movesMap = buildLocalChampionsMap(
     readLocalNamedRecords(DEFAULT_LOCAL_DATA_ROOT, 'moves'),
-    moves,
+    championsMoves,
   )
   const abilitiesMap = buildLocalChampionsMap(
     readLocalNamedRecords(DEFAULT_LOCAL_DATA_ROOT, 'abilities'),
-    abilities,
+    championsAbilities,
   )
   const itemsMap = buildLocalChampionsMap(
     readLocalNamedRecords(DEFAULT_LOCAL_DATA_ROOT, 'items'),
-    items,
+    championsItems,
   )
-  const pokemonMoves = buildPokemonMoves(datasetRoot, DEFAULT_LOCAL_DATA_ROOT, pokemonMap, movesMap)
-  const slugs = {
-    moves: createSlugMap(moves),
-    abilities: createSlugMap(abilities),
-    items: createSlugMap(items),
-    battleStates: createSlugMap(battleStates),
-  }
+  const moves = mergeLocalChampionsRecords(championsMoves, movesMap, moveSchema)
+  const abilities = mergeLocalChampionsRecords(championsAbilities, abilitiesMap, abilitySchema)
+  const items = mergeLocalChampionsRecords(championsItems, itemsMap, itemSchema)
+  const pokemonMoves = buildPokemonMoves(datasetRoot, DEFAULT_LOCAL_DATA_ROOT, pokemon, moves)
+  const battleStateSlugs = createSlugMap(battleStates)
   const i18n = {} as Record<I18nCode, DomainI18nData>
 
   for (const lang of I18N_CODE) {
     i18n[lang] = {
-      moves: buildMoveI18n(datasetRoot, lang, slugs.moves),
-      abilities: buildAbilityI18n(datasetRoot, lang, slugs.abilities),
-      items: buildItemI18n(datasetRoot, lang, slugs.items),
-      battleStates: buildBattleStateI18n(datasetRoot, lang, slugs.battleStates),
-      pokemonMap: localizePokemonMap(datasetRoot, lang, pokemonMapIndex),
+      moves: buildMoveI18n(datasetRoot, lang, movesMap),
+      abilities: buildAbilityI18n(datasetRoot, lang, abilitiesMap),
+      items: buildItemI18n(datasetRoot, lang, itemsMap),
+      battleStates: buildBattleStateI18n(datasetRoot, lang, battleStateSlugs),
+      pokemon: localizePokemonI18n(datasetRoot, lang, pokemonMapIndex),
     }
   }
 
@@ -504,10 +534,7 @@ export function buildData(
     abilities,
     items,
     battleStates,
-    pokemonMap,
-    movesMap,
-    abilitiesMap,
-    itemsMap,
+    pokemon,
     pokemonMoves,
     i18n,
     warnings,
@@ -538,6 +565,7 @@ export function buildMoves(
 
       return moveSchema.parse({
         id: record.id,
+        championsId: record.id,
         slug: slugify(name),
         name,
         description,
@@ -558,23 +586,24 @@ export function buildMoves(
 export function buildMoveI18n(
   datasetRoot: string,
   lang: I18nCode,
-  slugById: ReadonlyMap<string, string>,
+  localMap: LocalChampionsMap,
 ): I18nRecord[] {
   const names = readTextMap(datasetRoot, lang, 'wazaname')
   const descriptions = readTextMap(datasetRoot, lang, 'wazainfo_syn')
+  const localByChampionsId = createLocalRecordByChampionsId(localMap, 'move')
 
   return uniquifySlugLoc(
     readMoveMasterRecords(datasetRoot)
-      .filter((record) => slugById.has(record.id))
+      .filter((record) => localByChampionsId.has(record.id))
       .sort(compareNumericIds)
       .map((record) => {
-        const slug = requireSlug(slugById, record.id)
+        const localRecord = requireLocalChampionsRecord(localByChampionsId, record.id, 'move')
         const name = requireText(names, record.msLbl, `${lang} move names`)
 
         return i18nSchema.parse({
-          id: record.id,
-          slug,
-          slugLoc: slugifyLocalized(name, slug),
+          id: localRecord.id,
+          slug: localRecord.slug,
+          slugLoc: slugifyLocalized(name, localRecord.slug),
           name,
           description: optionalInfoText(descriptions, record.msNameInfo, record.msLblInfo),
         })
@@ -595,6 +624,7 @@ export function buildAbilities(
 
     return abilitySchema.parse({
       id: String(id),
+      championsId: String(id),
       slug: slugify(name),
       name,
       description: requireText(
@@ -609,21 +639,22 @@ export function buildAbilities(
 export function buildAbilityI18n(
   datasetRoot: string,
   lang: I18nCode,
-  slugById: ReadonlyMap<string, string>,
+  localMap: LocalChampionsMap,
 ): I18nRecord[] {
   const names = readTextMap(datasetRoot, lang, 'tokusei')
   const descriptions = readTextMap(datasetRoot, lang, 'tokuseiinfo_syn')
+  const localByChampionsId = createLocalRecordByChampionsId(localMap, 'ability')
 
   return uniquifySlugLoc(
-    [...slugById.keys()].sort(compareNumericStrings).map((id) => {
-      const slug = requireSlug(slugById, id)
+    [...localByChampionsId.keys()].sort(compareNumericStrings).map((id) => {
+      const localRecord = requireLocalChampionsRecord(localByChampionsId, id, 'ability')
       const paddedId = pad3(toNumber(id, 'ability id', `${lang} ability i18n`))
       const name = requireText(names, `TOKUSEI_${paddedId}`, `${lang} ability names`)
 
       return i18nSchema.parse({
-        id,
-        slug,
-        slugLoc: slugifyLocalized(name, slug),
+        id: localRecord.id,
+        slug: localRecord.slug,
+        slugLoc: slugifyLocalized(name, localRecord.slug),
         name,
         description: requireText(
           descriptions,
@@ -656,6 +687,7 @@ export function buildItems(
 
       return itemSchema.parse({
         id: record.id,
+        championsId: record.id,
         slug: slugify(name),
         name,
         pluralName: requireText(pluralNames, record.msLbl, `${lang} item plural names`),
@@ -668,24 +700,25 @@ export function buildItems(
 export function buildItemI18n(
   datasetRoot: string,
   lang: I18nCode,
-  slugById: ReadonlyMap<string, string>,
+  localMap: LocalChampionsMap,
 ): ItemI18nRecord[] {
   const names = readTextMap(datasetRoot, lang, 'itemname')
   const pluralNames = readTextMap(datasetRoot, lang, 'itemname_plural')
   const descriptions = readTextMap(datasetRoot, lang, 'iteminfo_syn')
+  const localByChampionsId = createLocalRecordByChampionsId(localMap, 'item')
 
   return uniquifySlugLoc(
     readItemMasterRecords(datasetRoot)
-      .filter((record) => slugById.has(record.id))
+      .filter((record) => localByChampionsId.has(record.id))
       .sort(compareNumericIds)
       .map((record) => {
-        const slug = requireSlug(slugById, record.id)
+        const localRecord = requireLocalChampionsRecord(localByChampionsId, record.id, 'item')
         const name = requireText(names, record.msLbl, `${lang} item names`)
 
         return itemI18nSchema.parse({
-          id: record.id,
-          slug,
-          slugLoc: slugifyLocalized(name, slug),
+          id: localRecord.id,
+          slug: localRecord.slug,
+          slugLoc: slugifyLocalized(name, localRecord.slug),
           name,
           pluralName: requireText(pluralNames, record.msLbl, `${lang} item plural names`),
           description: requireText(descriptions, record.msLblInfo, `${lang} item descriptions`),
@@ -747,8 +780,8 @@ export function buildPokemonMap(
   datasetRoot = DEFAULT_DATASET_ROOT,
   lang: I18nCode = DEFAULT_LANGUAGE,
   localDataRoot = DEFAULT_LOCAL_DATA_ROOT,
-): PokemonMapRecord[] {
-  return localizePokemonMap(datasetRoot, lang, buildPokemonMapIndex(datasetRoot, localDataRoot))
+): PokemonRecord[] {
+  return localizePokemon(datasetRoot, lang, buildPokemonMapIndex(datasetRoot, localDataRoot))
 }
 
 function buildPokemonMapIndex(datasetRoot: string, localDataRoot: string): PokemonMapIndexRecord[] {
@@ -771,7 +804,9 @@ function buildPokemonMapIndex(datasetRoot: string, localDataRoot: string): Pokem
     }
 
     for (const localId of localIds) {
-      if (!localById.has(localId)) {
+      const localPokemon = localById.get(localId)
+
+      if (localPokemon === undefined) {
         throw new Error(`Unknown local Pokemon id ${localId} for Champions ${personalRecord.id}`)
       }
 
@@ -782,6 +817,26 @@ function buildPokemonMapIndex(datasetRoot: string, localDataRoot: string): Pokem
       usedLocalIds.add(localId)
       rows.push({
         id: localId,
+        nid: localPokemon.nid,
+        pokeApiId: localPokemon.pokeApiId ?? localPokemon.dexNum,
+        pokeApiFormId: localPokemon.pokeApiFormId,
+        showdownId: localPokemon.showdownId,
+        baseSpecies: localPokemon.baseSpecies,
+        type1: localPokemon.type1,
+        type2: localPokemon.type2,
+        abilities: localPokemon.abilities,
+        baseHp: localPokemon.baseHp,
+        baseAtk: localPokemon.baseAtk,
+        baseDef: localPokemon.baseDef,
+        baseSpAtk: localPokemon.baseSpAtk,
+        baseSpDef: localPokemon.baseSpDef,
+        baseSpeed: localPokemon.baseSpeed,
+        height: localPokemon.height,
+        weight: localPokemon.weight,
+        isForm: localPokemon.isForm,
+        isBattleOnly: localPokemon.isBattleOnlyForm,
+        isCosmetic: localPokemon.isCosmeticForm,
+        isFemale: localPokemon.isFemaleForm,
         championsId: personalRecord.id,
         nameLabel: personalRecord.msNameLbl,
         formLabel: personalRecord.msFormLbl,
@@ -792,22 +847,64 @@ function buildPokemonMapIndex(datasetRoot: string, localDataRoot: string): Pokem
   return rows
 }
 
-function localizePokemonMap(
+function localizePokemon(
   datasetRoot: string,
   lang: I18nCode,
   rows: readonly PokemonMapIndexRecord[],
-): PokemonMapRecord[] {
+): PokemonRecord[] {
   const names = readTextMap(datasetRoot, lang, 'monsname_syn')
   const formNames = readTextMap(datasetRoot, lang, 'zkn_form_syn')
 
-  return rows.map((row) =>
-    pokemonMapSchema.parse({
+  return rows.map((row) => {
+    const formName = requireText(formNames, row.formLabel, `${lang} pokemon form names`)
+
+    return pokemonSchema.parse({
+      id: row.id,
+      nid: row.nid,
+      name: requireText(names, row.nameLabel, `${lang} pokemon names`),
+      ...(formName === '' ? {} : { formName }),
+      pokeApiId: row.pokeApiId,
+      ...(row.pokeApiFormId === undefined ? {} : { pokeApiFormId: row.pokeApiFormId }),
+      showdownId: row.showdownId,
+      ...(row.baseSpecies === undefined ? {} : { baseSpecies: row.baseSpecies }),
+      championsId: row.championsId,
+      type1: row.type1,
+      type2: row.type2,
+      abilities: row.abilities,
+      baseHp: row.baseHp,
+      baseAtk: row.baseAtk,
+      baseDef: row.baseDef,
+      baseSpAtk: row.baseSpAtk,
+      baseSpDef: row.baseSpDef,
+      baseSpeed: row.baseSpeed,
+      height: row.height,
+      weight: row.weight,
+      isForm: row.isForm,
+      isBattleOnly: row.isBattleOnly,
+      isCosmetic: row.isCosmetic,
+      isFemale: row.isFemale,
+    })
+  })
+}
+
+function localizePokemonI18n(
+  datasetRoot: string,
+  lang: I18nCode,
+  rows: readonly PokemonMapIndexRecord[],
+): PokemonI18nRecord[] {
+  const names = readTextMap(datasetRoot, lang, 'monsname_syn')
+  const formNames = readTextMap(datasetRoot, lang, 'zkn_form_syn')
+
+  return rows.map((row) => {
+    const formName = requireText(formNames, row.formLabel, `${lang} pokemon form names`)
+
+    return pokemonI18nSchema.parse({
       id: row.id,
       championsId: row.championsId,
       name: requireText(names, row.nameLabel, `${lang} pokemon names`),
-      formName: requireText(formNames, row.formLabel, `${lang} pokemon form names`),
-    }),
-  )
+      ...(formName === '' ? {} : { formName }),
+    })
+  })
 }
 
 function resolvePokemonMapLocalIds(
@@ -1034,7 +1131,61 @@ function buildLocalChampionsMap(
     )
   }
 
-  return localChampionsMapSchema.parse(map)
+  return map
+}
+
+function mergeLocalChampionsRecords<T extends { id: string; championsId: string; slug: string }>(
+  championsRecords: readonly T[],
+  localMap: LocalChampionsMap,
+  schema: { parse: (value: unknown) => T },
+): T[] {
+  const localByChampionsId = createLocalRecordByChampionsId(localMap, 'record')
+
+  return championsRecords.map((championsRecord) => {
+    const localRecord = requireLocalChampionsRecord(
+      localByChampionsId,
+      championsRecord.championsId,
+      'record',
+    )
+
+    return schema.parse({
+      ...championsRecord,
+      id: localRecord.id,
+      championsId: championsRecord.championsId,
+      slug: localRecord.slug,
+    })
+  })
+}
+
+function createLocalRecordByChampionsId(
+  records: readonly LocalChampionsMapRecord[],
+  source: string,
+): Map<string, LocalChampionsMapRecord> {
+  const byChampionsId = new Map<string, LocalChampionsMapRecord>()
+
+  for (const record of records) {
+    if (byChampionsId.has(record.championsId)) {
+      throw new Error(`Duplicate Champions ${source} id ${record.championsId}`)
+    }
+
+    byChampionsId.set(record.championsId, record)
+  }
+
+  return byChampionsId
+}
+
+function requireLocalChampionsRecord(
+  records: ReadonlyMap<string, LocalChampionsMapRecord>,
+  championsId: string,
+  source: string,
+): LocalChampionsMapRecord {
+  const record = records.get(championsId)
+
+  if (record === undefined) {
+    throw new Error(`Missing local ${source} map for Champions id ${championsId}`)
+  }
+
+  return record
 }
 
 function localRecordSlugCandidates(record: LocalNamedRecord): string[] {
@@ -1051,13 +1202,13 @@ function localRecordSlugCandidates(record: LocalNamedRecord): string[] {
 function buildPokemonMoves(
   datasetRoot: string,
   localDataRoot: string,
-  pokemonMap: readonly PokemonMapRecord[],
-  movesMap: LocalChampionsMap,
+  pokemon: readonly PokemonRecord[],
+  moves: readonly MoveRecord[],
 ): PokemonMovesRecord[] {
-  const learnsetPokemonMap = filterPokemonMapForLearnsets(pokemonMap, localDataRoot)
-  const mappedChampionsPokemonIds = new Set(pokemonMap.map((record) => record.championsId))
-  const localPokemonIdsByChampionsId = groupLocalIdsByChampionsId(learnsetPokemonMap)
-  const localMoveIdByChampionsId = createLocalIdByChampionsId(movesMap, 'move')
+  const learnsetPokemon = filterPokemonForLearnsets(pokemon, localDataRoot)
+  const mappedChampionsPokemonIds = new Set(pokemon.map((record) => record.championsId))
+  const localPokemonIdsByChampionsId = groupLocalIdsByChampionsId(learnsetPokemon)
+  const localMoveIdByChampionsId = createLocalIdByChampionsId(moves, 'move')
   const rows: PokemonMovesRecord[] = []
   const usedLocalPokemonIds = new Set<string>()
 
@@ -1092,28 +1243,28 @@ function buildPokemonMoves(
     }
   }
 
-  if (usedLocalPokemonIds.size !== learnsetPokemonMap.length) {
+  if (usedLocalPokemonIds.size !== learnsetPokemon.length) {
     throw new Error(
-      `Expected ${learnsetPokemonMap.length} Pokemon move rows, found ${usedLocalPokemonIds.size}`,
+      `Expected ${learnsetPokemon.length} Pokemon move rows, found ${usedLocalPokemonIds.size}`,
     )
   }
 
   return rows
 }
 
-function filterPokemonMapForLearnsets(
-  pokemonMap: readonly PokemonMapRecord[],
+function filterPokemonForLearnsets(
+  pokemon: readonly PokemonRecord[],
   localDataRoot: string,
-): PokemonMapRecord[] {
+): PokemonRecord[] {
   const localPokemonById = new Map(
     readLocalPokemonRecords(localDataRoot).map((record) => [record.id, record]),
   )
 
-  return pokemonMap.filter((pokemonMapRecord) => {
-    const localPokemon = localPokemonById.get(pokemonMapRecord.id)
+  return pokemon.filter((pokemonRecord) => {
+    const localPokemon = localPokemonById.get(pokemonRecord.id)
 
     if (localPokemon === undefined) {
-      throw new Error(`Missing local Pokemon data for ${pokemonMapRecord.id}`)
+      throw new Error(`Missing local Pokemon data for ${pokemonRecord.id}`)
     }
 
     return !localPokemon.isCosmeticForm && !localPokemon.isBattleOnlyForm
@@ -1177,10 +1328,7 @@ export function writeBuiltData(data: BuiltData, outputRoot = DEFAULT_OUTPUT_ROOT
   writeJsonFile(join(outputRoot, 'abilities.json'), data.abilities)
   writeJsonFile(join(outputRoot, 'items.json'), data.items)
   writeJsonFile(join(outputRoot, 'battle-states.json'), data.battleStates)
-  writeJsonFile(join(outputRoot, 'pokemon-map.json'), data.pokemonMap)
-  writeJsonFile(join(outputRoot, 'moves-map.json'), data.movesMap)
-  writeJsonFile(join(outputRoot, 'abilities-map.json'), data.abilitiesMap)
-  writeJsonFile(join(outputRoot, 'items-map.json'), data.itemsMap)
+  writeJsonFile(join(outputRoot, 'pokemon.json'), data.pokemon)
   writeJsonFile(join(outputRoot, 'pokemon-moves.json'), data.pokemonMoves)
 
   for (const lang of I18N_CODE) {
@@ -1192,7 +1340,7 @@ export function writeBuiltData(data: BuiltData, outputRoot = DEFAULT_OUTPUT_ROOT
     writeJsonFile(join(langRoot, 'abilities.json'), langData.abilities)
     writeJsonFile(join(langRoot, 'items.json'), langData.items)
     writeJsonFile(join(langRoot, 'battle-states.json'), langData.battleStates)
-    writeJsonFile(join(langRoot, 'pokemon-map.json'), langData.pokemonMap)
+    writeJsonFile(join(langRoot, 'pokemon.json'), langData.pokemon)
   }
 
   copyMissingLocales(outputRoot)
@@ -1316,18 +1464,26 @@ function readLocalPokemonRecords(localDataRoot: string): LocalPokemonRecord[] {
     const filePath = join(localDataRoot, 'pokemon', `${id}.json`)
     const context = `data/pokemon/${id}.json`
     const record = requireRecord(readJsonFile(filePath), context)
+    const refs = requireRecord(record.refs, `${context}.refs`)
 
     return {
       id: stringField(record, 'id', context),
+      nid: stringField(record, 'nid', context),
       dexNum: numberField(record, 'dexNum', context),
+      pokeApiId: optionalNumberField(refs, 'pkApiId', `${context}.refs`),
+      pokeApiFormId: optionalNumberField(refs, 'pkApiFormId', `${context}.refs`),
+      showdownId: stringField(refs, 'showdown', `${context}.refs`),
       type1: stringField(record, 'type1', context),
       type2: nullableStringField(record, 'type2', context),
+      abilities: localPokemonAbilities(record, context),
       baseHp: numberField(record, 'baseHp', context),
       baseAtk: numberField(record, 'baseAtk', context),
       baseDef: numberField(record, 'baseDef', context),
       baseSpAtk: numberField(record, 'baseSpAtk', context),
       baseSpDef: numberField(record, 'baseSpDef', context),
       baseSpeed: numberField(record, 'baseSpeed', context),
+      height: numberField(record, 'height', context),
+      weight: numberField(record, 'weight', context),
       isDefault: booleanField(record, 'isDefault', context),
       isForm: booleanField(record, 'isForm', context),
       isCosmeticForm: booleanField(record, 'isCosmeticForm', context),
@@ -1354,6 +1510,17 @@ function readLocalNamedRecords(
       psName: optionalStringField(record, 'psName', context),
     }
   })
+}
+
+function localPokemonAbilities(record: SourceRecord, context: string): string[] {
+  const abilities = [
+    stringField(record, 'ability1', context),
+    optionalStringField(record, 'ability2', context),
+    optionalStringField(record, 'abilityHidden', context),
+    optionalStringField(record, 'abilitySpecial', context),
+  ].filter((ability): ability is string => ability !== undefined)
+
+  return Array.from(new Set(abilities))
 }
 
 function groupLocalPokemonByDex(
@@ -1595,6 +1762,26 @@ function numberField(record: SourceRecord, field: string, context: string): numb
 
   if (typeof numberValue !== 'number' || !Number.isInteger(numberValue)) {
     throw new Error(`Expected integer field ${field} in ${context}`)
+  }
+
+  return numberValue
+}
+
+function optionalNumberField(
+  record: SourceRecord,
+  field: string,
+  context: string,
+): number | undefined {
+  const value = record[field]
+
+  if (value === undefined || value === null) {
+    return undefined
+  }
+
+  const numberValue = typeof value === 'string' ? Number(value) : value
+
+  if (typeof numberValue !== 'number' || !Number.isInteger(numberValue)) {
+    throw new Error(`Expected optional integer field ${field} in ${context}`)
   }
 
   return numberValue
