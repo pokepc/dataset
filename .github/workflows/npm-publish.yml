@@ -45,6 +45,7 @@ jobs:
           ref: ${{ steps.release.outputs.ref }}
           persist-credentials: false
           show-progress: false
+          submodules: recursive
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
