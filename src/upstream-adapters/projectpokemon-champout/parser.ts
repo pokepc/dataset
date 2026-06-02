@@ -19,10 +19,10 @@ import {
   itemI18nSchema,
   itemSchema,
   moveSchema,
-  pokemonMovesRecordSchema,
   pokemonI18nSchema,
+  pokemonMovesRecordSchema,
   pokemonSchema,
-} from './schemas'
+} from '../../lib-next/schemas'
 import type {
   AbilityRecord,
   BattleStateRecord,
@@ -30,10 +30,10 @@ import type {
   ItemI18nRecord,
   ItemRecord,
   MoveRecord,
-  PokemonMovesRecord,
   PokemonI18nRecord,
+  PokemonMovesRecord,
   PokemonRecord,
-} from './schemas'
+} from '../../lib-next/schemas'
 import {
   battleStates,
   type BattleState,

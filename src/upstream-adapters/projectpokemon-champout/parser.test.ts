@@ -29,10 +29,10 @@ import {
   itemI18nSchema,
   itemSchema,
   moveSchema,
-  pokemonMovesSchema,
   pokemonI18nSchema,
+  pokemonMovesSchema,
   pokemonSchema,
-} from './schemas'
+} from '../../lib-next/schemas'
 
 describe('parser helpers', () => {
   it('creates stable ascii slugs', () => {
@@ -384,12 +384,10 @@ describe('data generation', () => {
       expect('itemsMap' in langData).toBe(false)
     }
 
-    expect(data.i18n.esp.pokemon.find((record) => record.id === 'blastoise-mega')).toMatchObject(
-      {
-        name: 'Blastoise',
-        formName: 'Mega-Blastoise',
-      },
-    )
+    expect(data.i18n.esp.pokemon.find((record) => record.id === 'blastoise-mega')).toMatchObject({
+      name: 'Blastoise',
+      formName: 'Mega-Blastoise',
+    })
     expect(data.i18n.esp.pokemon.find((record) => record.id === 'venusaur')).not.toHaveProperty(
       'formName',
     )

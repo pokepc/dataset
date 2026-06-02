@@ -6,9 +6,9 @@ import {
   moveClasses,
   moveTargets,
   pokemonTypes,
-} from '../../lib-next/enums'
+} from './enums'
 
-const slugSchema = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)
+export const slugSchema = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)
 
 export const baseSchema = z.object({
   id: z.string(),
@@ -33,11 +33,15 @@ export const i18nSchema = z.object({
   description: z.string(), // description template, with placeholders like `{0}`
 })
 export type I18nRecord = z.infer<typeof i18nSchema>
+export const i18nRecordsSchema = z.array(i18nSchema)
+export type I18nRecords = z.infer<typeof i18nRecordsSchema>
 
 export const itemI18nSchema = i18nSchema.extend({
   pluralName: z.string(),
 })
 export type ItemI18nRecord = z.infer<typeof itemI18nSchema>
+export const itemI18nRecordsSchema = z.array(itemI18nSchema)
+export type ItemI18nRecords = z.infer<typeof itemI18nRecordsSchema>
 
 export const moveSchema = championsLinkedBaseSchema.extend({
   type: z.enum(pokemonTypes),
@@ -52,20 +56,28 @@ export const moveSchema = championsLinkedBaseSchema.extend({
   usable: z.boolean(), // if the game allows you to use it or not (e.g. legacy)
 })
 export type MoveRecord = z.infer<typeof moveSchema>
+export const movesSchema = z.array(moveSchema)
+export type MoveRecords = z.infer<typeof movesSchema>
 
 export const abilitySchema = championsLinkedBaseSchema.extend({})
 export type AbilityRecord = z.infer<typeof abilitySchema>
+export const abilitiesSchema = z.array(abilitySchema)
+export type AbilityRecords = z.infer<typeof abilitiesSchema>
 
 export const itemSchema = championsLinkedBaseSchema.extend({
   pluralName: z.string(),
   categories: z.array(z.enum(itemCategories)),
 })
 export type ItemRecord = z.infer<typeof itemSchema>
+export const itemsSchema = z.array(itemSchema)
+export type ItemRecords = z.infer<typeof itemsSchema>
 
 export const battleStateSchema = baseSchema.extend({
   state: z.enum(battleStates),
 })
 export type BattleStateRecord = z.infer<typeof battleStateSchema>
+export const battleStatesSchema = z.array(battleStateSchema)
+export type BattleStateRecords = z.infer<typeof battleStatesSchema>
 
 export const pokemonSchema = z.object({
   id: slugSchema,
@@ -94,6 +106,8 @@ export const pokemonSchema = z.object({
   isFemale: z.boolean(),
 })
 export type PokemonRecord = z.infer<typeof pokemonSchema>
+export const pokemonListSchema = z.array(pokemonSchema)
+export type PokemonRecords = z.infer<typeof pokemonListSchema>
 
 export const pokemonI18nSchema = z.object({
   id: slugSchema,
@@ -102,6 +116,8 @@ export const pokemonI18nSchema = z.object({
   formName: z.string().optional(),
 })
 export type PokemonI18nRecord = z.infer<typeof pokemonI18nSchema>
+export const pokemonI18nRecordsSchema = z.array(pokemonI18nSchema)
+export type PokemonI18nRecords = z.infer<typeof pokemonI18nRecordsSchema>
 
 export const pokemonMovesRecordSchema = z.object({
   id: slugSchema,
@@ -110,3 +126,4 @@ export const pokemonMovesRecordSchema = z.object({
 export type PokemonMovesRecord = z.infer<typeof pokemonMovesRecordSchema>
 
 export const pokemonMovesSchema = z.array(pokemonMovesRecordSchema)
+export type PokemonMovesRecords = z.infer<typeof pokemonMovesSchema>
