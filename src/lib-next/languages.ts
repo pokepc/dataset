@@ -32,7 +32,9 @@ export const gameLocales = [
 export type GameLocale = (typeof gameLocales)[number]
 export const DEFAULT_GAME_LOCALE: GameLocale = 'ENG'
 
-// These are 2-char codes commonly used in website URLs and domains
+// These are 2-char ISO3166-1 and/or ISO3166-2 codes
+// commonly used in website URLs and domains.
+//
 // Use them in URL paths, DB, etc. but not in HTML lang attributes (use locale instead)
 export const langSlugs = [
   'en',
@@ -43,8 +45,8 @@ export const langSlugs = [
   'fr',
   'kr',
   'jp',
-  'tw', // traditional chinese (taiwanese)
-  'cn', // simplified chinese (mainland)
+  'tw', // traditional chinese (taiwanese), zh-hant
+  'cn', // simplified chinese (mainland), zh-hans
   'br', // brazilian portuguese
 ] as const
 export type LangSlug = (typeof langSlugs)[number]
@@ -94,36 +96,38 @@ export const langSlugMap: Record<
   br: { gameLocale: 'PT-BR', browserLocale: 'pt-br' },
 }
 
-export const langMeta: Record<LangSlug, { name: string; engName: string; flag: string }> = {
-  en: { name: 'English', engName: 'English', flag: '🇺🇸' },
-  es: { name: 'Español', engName: 'Spanish', flag: '🇪🇸' },
-  mx: { name: 'Español (Latinoamérica)', engName: 'Spanish (Latin America)', flag: '🇲🇽' },
-  de: { name: 'Deutsch', engName: 'German', flag: '🇩🇪' },
-  it: { name: 'Italiano', engName: 'Italian', flag: '🇮🇹' },
-  fr: { name: 'Français', engName: 'French', flag: '🇫🇷' },
-  kr: { name: '한국어', engName: 'Korean', flag: '🇰🇷' },
-  jp: { name: '日本語', engName: 'Japanese', flag: '🇯🇵' },
-  tw: { name: '繁體中文', engName: 'Traditional Chinese', flag: '🇹🇼' },
-  cn: { name: '简体中文', engName: 'Simplified Chinese', flag: '🇨🇳' },
-  br: { name: 'Português (Brasil)', engName: 'Portuguese (Brazil)', flag: '🇧🇷' },
+export type LangMeta = { name: string; engName: string; flag: string; pokeApiId: number }
+
+export const langMeta: Record<LangSlug, LangMeta> = {
+  en: { name: 'English', engName: 'English', flag: '🇺🇸', pokeApiId: 9 },
+  es: { name: 'Español', engName: 'Spanish', flag: '🇪🇸', pokeApiId: 7 },
+  mx: {
+    name: 'Español (Latinoamérica)',
+    engName: 'Spanish (Latin America)',
+    flag: '🇲🇽',
+    pokeApiId: 14,
+  },
+  de: { name: 'Deutsch', engName: 'German', flag: '🇩🇪', pokeApiId: 6 },
+  it: { name: 'Italiano', engName: 'Italian', flag: '🇮🇹', pokeApiId: 8 },
+  fr: { name: 'Français', engName: 'French', flag: '🇫🇷', pokeApiId: 5 },
+  kr: { name: '한국어', engName: 'Korean', flag: '🇰🇷', pokeApiId: 3 },
+  jp: { name: '日本語', engName: 'Japanese', flag: '🇯🇵', pokeApiId: 1 }, // 1 or 11
+  tw: { name: '繁體中文', engName: 'Traditional Chinese', flag: '🇹🇼', pokeApiId: 4 },
+  cn: { name: '简体中文', engName: 'Simplified Chinese', flag: '🇨🇳', pokeApiId: 12 },
+  br: { name: 'Português (Brasil)', engName: 'Portuguese (Brazil)', flag: '🇧🇷', pokeApiId: 13 },
 }
 
-export type LangInfo = {
+export type LangInfo = LangMeta & {
   slug: LangSlug
   locale: BrowserLocale
   gameLocale: GameLocale
-  name: string
-  engName: string
-  flag: string
 }
 
 export const appLangs: LangInfo[] = browserLocales.map((locale) => ({
   slug: browserLocaleMap[locale].slug,
   locale,
   gameLocale: browserLocaleMap[locale].gameLocale,
-  name: langMeta[browserLocaleMap[locale].slug].name,
-  engName: langMeta[browserLocaleMap[locale].slug].engName,
-  flag: langMeta[browserLocaleMap[locale].slug].flag,
+  ...langMeta[browserLocaleMap[locale].slug],
 }))
 
 export const appLangsBySlug = Object.fromEntries(
