@@ -223,12 +223,11 @@ async function main() {
   console.log(`PokeAPI cache: ${pokeApiCacheLabel()}`)
   console.log(`Max generated description length: ${options.maxLength} characters`)
 
-  const generator =
-    options.dryRun && !hasOpenAiApiKey() ? undefined : await createTextGenerator(options.backend)
+  const generator = options.dryRun ? undefined : await createTextGenerator(options.backend)
 
   if (generator === undefined) {
     console.log(
-      'Dry run without OPENAI_API_KEY: fetching source prose and writing placeholder output.',
+      'Dry run: fetching source prose and printing placeholder output without generation.',
     )
   } else {
     console.log(`Generation backend: ${generator.backendName}; model: ${OPENAI_MODEL}`)
@@ -385,11 +384,11 @@ function helpText(): string {
     '  --backend=auto|ai-sdk|openai-sdk',
     `  --max-length=N         Max generated description characters. Default: ${DEFAULT_MAX_LENGTH_CHARS}; minimum: ${MIN_MAX_LENGTH_CHARS}.`,
     `  --lang=CODE            Game locale code, matching the output folder. Default: ${DEFAULT_LANG_CODE}. Valid: ${validLanguageCodes()}.`,
-    '  --dry-run              Print text instead of writing files.',
+    '  --dry-run              Print placeholder text instead of writing files or calling OpenAI.',
     '  --force                Overwrite existing text files.',
     '',
     'Environment:',
-    '  OPENAI_API_KEY                 Required unless dry-running without generation.',
+    '  OPENAI_API_KEY                 Required unless dry-running.',
     `  OPENAI_MODEL_ID                Default: ${DEFAULT_MODEL}.`,
     `  POKEAPI_BASE_URL               Default: ${DEFAULT_POKEAPI_BASE_URL}.`,
     `  POKEAPI_CACHE_DIR              Default: ${DEFAULT_POKEAPI_CACHE_DIR}.`,
@@ -713,7 +712,7 @@ function dryRunDescription(
   return [
     `DRY RUN (${languageName}): ${displayName(pokemon, lang)} has ${flavorCount} game prose entries`,
     `and ${proseEntries.length - flavorCount} form description entries available for synthesis.`,
-    'Set OPENAI_API_KEY to preview the generated paragraph.',
+    'Run without --dry-run to generate the description.',
   ].join(' ')
 }
 
