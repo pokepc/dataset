@@ -1,6 +1,7 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { slugify as transliterateSlugify } from 'transliteration'
+import { expandLocalSlugAliases } from './fixtures/aliases'
 import { transformInputData } from './fixtures'
 import {
   ITEM_CATEGORY_BY_CODE,
@@ -408,11 +409,19 @@ export function readTextDataset(
   lang: I18nCode,
   fileName: string,
 ): TextEntry[] {
-  return readTextDatasetFile(join(datasetRoot, 'rom-txt', lang, `${fileName}.json`))
+  const inputPath = `rom-txt/${lang}/${fileName}.json`
+
+  return readTextDatasetFile(join(datasetRoot, inputPath), inputPath)
 }
 
-export function readTextDatasetFile(filePath: string): TextEntry[] {
-  const json = readJsonFile(filePath)
+export function readTextDatasetFile(filePath: string, inputPath?: string): TextEntry[] {
+  const json =
+    inputPath === undefined
+      ? readJsonFile(filePath)
+      : transformInputData({
+          path: inputPath,
+          data: readJsonFile(filePath),
+        })
 
   if (!isRecord(json) || !Array.isArray(json.mSDataSet)) {
     throw new Error(`Expected ${filePath} to contain an mSDataSet array`)
@@ -1194,8 +1203,12 @@ function localRecordSlugCandidates(record: LocalNamedRecord): string[] {
     record.psName === undefined ? undefined : slugify(record.psName),
   ]
 
-  return Array.from(new Set(candidates).values()).filter(
-    (slug): slug is string => slug !== undefined,
+  return Array.from(
+    new Set(
+      candidates
+        .filter((slug): slug is string => slug !== undefined)
+        .flatMap((slug) => expandLocalSlugAliases(slug)),
+    ),
   )
 }
 

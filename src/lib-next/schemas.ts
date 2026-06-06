@@ -20,6 +20,7 @@ export const baseSchema = z.object({
 export const championsLinkedBaseSchema = z.object({
   id: slugSchema,
   championsId: z.string(),
+  pokeApiId: z.number().int().positive().optional(),
   slug: slugSchema,
   name: z.string(),
   description: z.string(),
