@@ -54,7 +54,8 @@ const OPENAI_MODEL = process.env.OPENAI_MODEL_ID ?? DEFAULT_MODEL
 const POKEAPI_BASE_URL = process.env.POKEAPI_BASE_URL ?? DEFAULT_POKEAPI_BASE_URL
 const FETCH_RETRIES = parseIntegerEnv('POKEMON_PROSE_FETCH_RETRIES', 3)
 const GENERATE_RETRIES = parseIntegerEnv('POKEMON_PROSE_GENERATE_RETRIES', 2)
-const DELAY_MS = parseIntegerEnv('POKEMON_PROSE_DELAY_MS', 0)
+const DELAY_MS = parseIntegerEnv('POKEMON_PROSE_DELAY_MS', 25)
+const DEFAULT_CONCURRENCY = 2
 const DEFAULT_LANG_CODE = appLangsBySlug[DEFAULT_LANG_SLUG].gameLocale.toLowerCase()
 
 type GenerationBackend = 'auto' | 'ai-sdk' | 'openai-sdk'
@@ -68,6 +69,7 @@ type CliOptions = {
   force: boolean
   backend: GenerationBackend
   maxLength: number
+  concurrency: number
   lang: LangInfo
   help: boolean
 }
@@ -196,6 +198,11 @@ type BatchFailure = {
   message: string
 }
 
+type PokemonProcessResult =
+  | { status: 'processed'; wrote: boolean }
+  | { status: 'skipped' }
+  | { status: 'failed'; failure: BatchFailure }
+
 async function main() {
   const options = parseArgs(process.argv.slice(2))
 
@@ -222,74 +229,44 @@ async function main() {
   console.log(`PokeAPI: ${POKEAPI_BASE_URL}`)
   console.log(`PokeAPI cache: ${pokeApiCacheLabel()}`)
   console.log(`Max generated description length: ${options.maxLength} characters`)
+  console.log(`Concurrency: ${options.concurrency}`)
 
-  const generator = options.dryRun ? undefined : await createTextGenerator(options.backend)
+  const hasWritableWork =
+    options.force ||
+    selectedIds.some((pokemonId) => !existsSync(outputPathForPokemon(options, pokemonId)))
+  const generator =
+    options.dryRun || !hasWritableWork ? undefined : await createTextGenerator(options.backend)
 
-  if (generator === undefined) {
+  if (options.dryRun) {
     console.log(
       'Dry run: fetching source prose and printing placeholder output without generation.',
     )
+  } else if (generator === undefined) {
+    console.log('No generation needed: selected output files already exist.')
   } else {
     console.log(`Generation backend: ${generator.backendName}; model: ${OPENAI_MODEL}`)
   }
 
   const speciesCache = new Map<string, PokeApiPokemonSpeciesDetail>()
-  const failures: BatchFailure[] = []
-  let processed = 0
-  let written = 0
-  let skipped = 0
-
-  for (const [indexInBatch, pokemonId] of selectedIds.entries()) {
-    const outputPath = outputPathForPokemon(options, pokemonId)
-
-    if (!options.force && existsSync(outputPath)) {
-      skipped += 1
-      console.log(`[${indexInBatch + 1}/${selectedIds.length}] ${pokemonId}: skipped existing file`)
-      continue
-    }
-
-    try {
-      const context = await loadPokemonContext(pokemonId, speciesCache)
-      const proseEntries = collectLocalizedProseEntries(context.speciesDetail, options.lang)
-
-      if (proseEntries.length === 0) {
-        throw new Error(`No ${formatLanguageName(options.lang)} PokeAPI prose entries found`)
-      }
-
-      const systemPrompt = buildSystemPrompt(options.lang)
-      const prompt = buildPrompt(proseEntries, options.maxLength, options.lang, context.pokemon)
-      const description =
-        generator === undefined
-          ? dryRunDescription(context.pokemon, proseEntries, options.lang)
-          : await generateWithRetries(
-              generator,
-              systemPrompt,
-              prompt,
-              options.maxLength,
-              options.lang,
-            )
-      const document = buildTextDocument(context, description, options.lang)
-
-      if (options.dryRun) {
-        console.log(document)
-      } else {
-        writeTextFile(outputPath, document)
-        written += 1
-      }
-
-      processed += 1
-      const sourceSummary = `${countFlavorEntries(proseEntries)} ${formatLanguageName(options.lang)} game prose entries`
-      console.log(
-        `[${indexInBatch + 1}/${selectedIds.length}] ${pokemonId}: ${options.dryRun ? 'previewed' : 'wrote'} ${sourceSummary}`,
-      )
-      await sleep(DELAY_MS)
-    } catch (error) {
-      failures.push({ id: pokemonId, message: errorMessage(error) })
-      console.error(
-        `[${indexInBatch + 1}/${selectedIds.length}] ${pokemonId}: failed: ${errorMessage(error)}`,
-      )
-    }
-  }
+  const results = await mapWithConcurrency(selectedIds, options.concurrency, (pokemonId, index) =>
+    processPokemon({
+      pokemonId,
+      indexInBatch: index,
+      selectedCount: selectedIds.length,
+      options,
+      generator,
+      speciesCache,
+    }),
+  )
+  const failures = results
+    .filter(
+      (result): result is Extract<PokemonProcessResult, { status: 'failed' }> =>
+        result.status === 'failed',
+    )
+    .map((result) => result.failure)
+  const processed = results.filter((result) => result.status === 'processed').length
+  const written = results.filter((result) => result.status === 'processed' && result.wrote).length
+  const skipped = results.filter((result) => result.status === 'skipped').length
 
   const summary = `Done. Processed ${processed}, wrote ${written}, skipped ${skipped}, failed ${failures.length}.`
 
@@ -308,6 +285,75 @@ async function main() {
   }
 }
 
+async function processPokemon({
+  pokemonId,
+  indexInBatch,
+  selectedCount,
+  options,
+  generator,
+  speciesCache,
+}: {
+  pokemonId: string
+  indexInBatch: number
+  selectedCount: number
+  options: CliOptions
+  generator: TextGenerator | undefined
+  speciesCache: Map<string, PokeApiPokemonSpeciesDetail>
+}): Promise<PokemonProcessResult> {
+  const outputPath = outputPathForPokemon(options, pokemonId)
+
+  if (!options.force && existsSync(outputPath)) {
+    console.log(`[${indexInBatch + 1}/${selectedCount}] ${pokemonId}: skipped existing file`)
+    return { status: 'skipped' }
+  }
+
+  try {
+    const context = await loadPokemonContext(pokemonId, speciesCache)
+    const proseEntries = collectLocalizedProseEntries(context.speciesDetail, options.lang)
+
+    if (proseEntries.length === 0) {
+      throw new Error(`No ${formatLanguageName(options.lang)} PokeAPI prose entries found`)
+    }
+
+    const systemPrompt = buildSystemPrompt(options.lang)
+    const prompt = buildPrompt(proseEntries, options.maxLength, options.lang, context.pokemon)
+
+    if (!options.dryRun && generator === undefined) {
+      throw new Error('Generation backend was not initialized for a writable output file')
+    }
+
+    const description =
+      generator === undefined
+        ? dryRunDescription(context.pokemon, proseEntries, options.lang)
+        : await generateWithRetries(
+            generator,
+            systemPrompt,
+            prompt,
+            options.maxLength,
+            options.lang,
+          )
+    const document = buildTextDocument(context, description, options.lang)
+
+    if (options.dryRun) {
+      console.log(document)
+    } else {
+      writeTextFile(outputPath, document)
+    }
+
+    const sourceSummary = `${countFlavorEntries(proseEntries)} ${formatLanguageName(options.lang)} game prose entries`
+    console.log(
+      `[${indexInBatch + 1}/${selectedCount}] ${pokemonId}: ${options.dryRun ? 'previewed' : 'wrote'} ${sourceSummary}`,
+    )
+    await sleep(DELAY_MS)
+
+    return { status: 'processed', wrote: !options.dryRun }
+  } catch (error) {
+    const failure = { id: pokemonId, message: errorMessage(error) }
+    console.error(`[${indexInBatch + 1}/${selectedCount}] ${pokemonId}: failed: ${failure.message}`)
+    return { status: 'failed', failure }
+  }
+}
+
 function parseArgs(argv: string[]): CliOptions {
   const ids: string[] = []
   let offset = 0
@@ -316,6 +362,7 @@ function parseArgs(argv: string[]): CliOptions {
   let dryRun = process.env.DRY_RUN === '1'
   let force = false
   let backend = parseBackend(process.env.POKEMON_PROSE_BACKEND ?? 'auto')
+  let concurrency = Math.max(1, parseIntegerEnv('POKEMON_PROSE_CONCURRENCY', DEFAULT_CONCURRENCY))
   let maxLength = parseMaxLength(
     process.env.POKEMON_PROSE_MAX_LENGTH ?? String(DEFAULT_MAX_LENGTH_CHARS),
     'POKEMON_PROSE_MAX_LENGTH',
@@ -343,6 +390,8 @@ function parseArgs(argv: string[]): CliOptions {
       outputRoot = arg.slice('--output-dir='.length)
     } else if (arg.startsWith('--backend=')) {
       backend = parseBackend(arg.slice('--backend='.length))
+    } else if (arg.startsWith('--concurrency=')) {
+      concurrency = parsePositiveInteger(arg.slice('--concurrency='.length), '--concurrency')
     } else if (arg.startsWith('--max-length=')) {
       maxLength = parseMaxLength(arg.slice('--max-length='.length), '--max-length')
     } else if (arg.startsWith('--lang=')) {
@@ -363,6 +412,7 @@ function parseArgs(argv: string[]): CliOptions {
     force,
     backend,
     maxLength,
+    concurrency,
     lang,
     help,
   }
@@ -382,6 +432,7 @@ function helpText(): string {
     '  --id=a,b               Process specific local Pokemon IDs. Can be repeated.',
     '  --output-dir=PATH      Default: data-next/pokemon-texts.',
     '  --backend=auto|ai-sdk|openai-sdk',
+    `  --concurrency=N        Number of Pokemon to process in parallel. Default: ${DEFAULT_CONCURRENCY}.`,
     `  --max-length=N         Max generated description characters. Default: ${DEFAULT_MAX_LENGTH_CHARS}; minimum: ${MIN_MAX_LENGTH_CHARS}.`,
     `  --lang=CODE            Game locale code, matching the output folder. Default: ${DEFAULT_LANG_CODE}. Valid: ${validLanguageCodes()}.`,
     '  --dry-run              Print placeholder text instead of writing files or calling OpenAI.',
@@ -396,9 +447,10 @@ function helpText(): string {
     '  POKEAPI_REFRESH_CACHE=1        Refetch PokeAPI requests and overwrite cached JSON.',
     '  POKEMON_PROSE_OUTPUT_DIR       Overrides --output-dir default.',
     '  POKEMON_PROSE_BACKEND          auto, ai-sdk, or openai-sdk.',
+    `  POKEMON_PROSE_CONCURRENCY      Number of Pokemon to process in parallel. Default: ${DEFAULT_CONCURRENCY}.`,
     `  POKEMON_PROSE_MAX_LENGTH       Max generated description characters. Default: ${DEFAULT_MAX_LENGTH_CHARS}; minimum: ${MIN_MAX_LENGTH_CHARS}.`,
     `  POKEMON_PROSE_LANG             Game locale code, matching the output folder. Default: ${DEFAULT_LANG_CODE}. Valid: ${validLanguageCodes()}.`,
-    '  POKEMON_PROSE_DELAY_MS         Optional delay after each processed Pokemon.',
+    '  POKEMON_PROSE_DELAY_MS         Optional delay after each successful Pokemon; usually keep this low or 0.',
   ].join('\n')
 }
 
@@ -406,6 +458,33 @@ function selectPokemonIds(index: string[], options: CliOptions): string[] {
   const selected = options.ids.length === 0 ? index : index.filter((id) => options.ids.includes(id))
   const end = options.limit === undefined ? undefined : options.offset + options.limit
   return selected.slice(options.offset, end)
+}
+
+async function mapWithConcurrency<T, R>(
+  items: T[],
+  concurrency: number,
+  worker: (item: T, index: number) => Promise<R>,
+): Promise<R[]> {
+  const results = new Array<R>(items.length)
+  let nextIndex = 0
+  const workerCount = Math.min(concurrency, items.length)
+
+  await Promise.all(
+    Array.from({ length: workerCount }, async () => {
+      while (true) {
+        const currentIndex = nextIndex
+        nextIndex += 1
+
+        if (currentIndex >= items.length) {
+          return
+        }
+
+        results[currentIndex] = await worker(items[currentIndex]!, currentIndex)
+      }
+    }),
+  )
+
+  return results
 }
 
 function outputPathForPokemon(options: CliOptions, pokemonId: string): string {
