@@ -96,25 +96,50 @@ export const langSlugMap: Record<
   br: { gameLocale: 'PT-BR', browserLocale: 'pt-br' },
 }
 
-export type LangMeta = { name: string; engName: string; flag: string; pokeApiId: number }
+export type LangMeta = {
+  name: string
+  engName: string
+  flag: string
+  pokeApiId: number
+  oldCode: string
+}
 
 export const langMeta: Record<LangSlug, LangMeta> = {
-  en: { name: 'English', engName: 'English', flag: '🇺🇸', pokeApiId: 9 },
-  es: { name: 'Español', engName: 'Spanish', flag: '🇪🇸', pokeApiId: 7 },
+  en: { name: 'English', engName: 'English', flag: '🇺🇸', pokeApiId: 9, oldCode: 'eng' },
+  es: { name: 'Español', engName: 'Spanish', flag: '🇪🇸', pokeApiId: 7, oldCode: 'esp' },
   mx: {
     name: 'Español (Latinoamérica)',
     engName: 'Spanish (Latin America)',
     flag: '🇲🇽',
     pokeApiId: 14,
+    oldCode: 'esla',
   },
-  de: { name: 'Deutsch', engName: 'German', flag: '🇩🇪', pokeApiId: 6 },
-  it: { name: 'Italiano', engName: 'Italian', flag: '🇮🇹', pokeApiId: 8 },
-  fr: { name: 'Français', engName: 'French', flag: '🇫🇷', pokeApiId: 5 },
-  kr: { name: '한국어', engName: 'Korean', flag: '🇰🇷', pokeApiId: 3 },
-  jp: { name: '日本語', engName: 'Japanese', flag: '🇯🇵', pokeApiId: 1 }, // 1 or 11
-  tw: { name: '繁體中文', engName: 'Traditional Chinese', flag: '🇹🇼', pokeApiId: 4 },
-  cn: { name: '简体中文', engName: 'Simplified Chinese', flag: '🇨🇳', pokeApiId: 12 },
-  br: { name: 'Português (Brasil)', engName: 'Portuguese (Brazil)', flag: '🇧🇷', pokeApiId: 13 },
+  de: { name: 'Deutsch', engName: 'German', flag: '🇩🇪', pokeApiId: 6, oldCode: 'deu' },
+  it: { name: 'Italiano', engName: 'Italian', flag: '🇮🇹', pokeApiId: 8, oldCode: 'ita' },
+  fr: { name: 'Français', engName: 'French', flag: '🇫🇷', pokeApiId: 5, oldCode: 'fra' },
+  kr: { name: '한국어', engName: 'Korean', flag: '🇰🇷', pokeApiId: 3, oldCode: 'kor' },
+  jp: { name: '日本語', engName: 'Japanese', flag: '🇯🇵', pokeApiId: 1, oldCode: 'jap' }, // 1 or 11
+  tw: {
+    name: '繁體中文',
+    engName: 'Traditional Chinese',
+    flag: '🇹🇼',
+    pokeApiId: 4,
+    oldCode: 'cht',
+  },
+  cn: {
+    name: '简体中文',
+    engName: 'Simplified Chinese',
+    flag: '🇨🇳',
+    pokeApiId: 12,
+    oldCode: 'chs',
+  },
+  br: {
+    name: 'Português (Brasil)',
+    engName: 'Portuguese (Brazil)',
+    flag: '🇧🇷',
+    pokeApiId: 13,
+    oldCode: 'por',
+  },
 }
 
 export type LangInfo = LangMeta & {

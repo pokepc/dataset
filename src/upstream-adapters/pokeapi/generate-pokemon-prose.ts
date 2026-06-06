@@ -19,7 +19,13 @@ import { dirname, join, resolve } from 'node:path'
 import OpenAI from 'openai'
 import { zodResponseFormat } from 'openai/helpers/zod'
 import { z } from 'zod'
-import { DEFAULT_POKEAPI_BASE_URL } from './client'
+import {
+  appLangs,
+  appLangsBySlug,
+  DEFAULT_LANG_SLUG,
+  type LangInfo,
+} from '../../lib-next/languages'
+import { DEFAULT_POKEAPI_BASE_URL, DEFAULT_POKEAPI_CACHE_DIR, fetchPokeApiJson } from './client'
 
 /**
  * RESEARCH DONE: Averages of PokeAPI english game prose lengths, calculated statically:
@@ -40,7 +46,7 @@ import { DEFAULT_POKEAPI_BASE_URL } from './client'
  */
 const POKEMON_INDEX_PATH = join(process.cwd(), 'data/indices/pokemon.json')
 const POKEMON_DATA_ROOT = join(process.cwd(), 'data/pokemon')
-const DEFAULT_OUTPUT_ROOT = join(process.cwd(), 'data-next/pokemon-prose')
+const DEFAULT_OUTPUT_ROOT = join(process.cwd(), 'data-next/pokemon-texts')
 const DEFAULT_MODEL = 'gpt-5.4-mini'
 const DEFAULT_MAX_LENGTH_CHARS = 512
 const MIN_MAX_LENGTH_CHARS = 50
@@ -49,6 +55,7 @@ const POKEAPI_BASE_URL = process.env.POKEAPI_BASE_URL ?? DEFAULT_POKEAPI_BASE_UR
 const FETCH_RETRIES = parseIntegerEnv('POKEMON_PROSE_FETCH_RETRIES', 3)
 const GENERATE_RETRIES = parseIntegerEnv('POKEMON_PROSE_GENERATE_RETRIES', 2)
 const DELAY_MS = parseIntegerEnv('POKEMON_PROSE_DELAY_MS', 0)
+const DEFAULT_LANG_CODE = appLangsBySlug[DEFAULT_LANG_SLUG].gameLocale.toLowerCase()
 
 type GenerationBackend = 'auto' | 'ai-sdk' | 'openai-sdk'
 
@@ -61,6 +68,7 @@ type CliOptions = {
   force: boolean
   backend: GenerationBackend
   maxLength: number
+  lang: LangInfo
   help: boolean
 }
 
@@ -160,7 +168,12 @@ type SpeciesVariety = {
 
 type TextGenerator = {
   backendName: string
-  generate: (prompt: string, maxLength: number) => Promise<string>
+  generate: (
+    systemPrompt: string,
+    prompt: string,
+    maxLength: number,
+    lang: LangInfo,
+  ) => Promise<string>
 }
 
 type DescriptionResponse = z.infer<ReturnType<typeof createDescriptionResponseSchema>>
@@ -183,20 +196,6 @@ type BatchFailure = {
   message: string
 }
 
-const SYSTEM_PROMPT = `You write original Pokemon descriptions for a structured dataset.
-
-Requirements:
-- Synthesize the supplied English PokeAPI prose into one cohesive description.
-- Use every source entry as evidence, but do not quote or paraphrase any one game entry too closely.
-- Include traits that recur across versions and gracefully merge compatible details from different games.
-- If the local Pokemon is a form and only species-level prose exists, write about the named local Pokemon while staying faithful to species-level evidence and supplied form metadata.
-- Do not invent mechanics, lore, habitats, powers, or behavior that are not supported by the supplied source text or metadata.
-- Put 1 to 3 plain English paragraphs in the description field, with no heading, markdown, bullets, citations, or labels.
-- Use 2 or 3 paragraphs when the description combines several distinct traits, behaviors, or observations.
-- Separate paragraphs with a blank line.
-- Use complete sentences, good punctuation, and natural paragraph flow.
-- Respect the maximum string length supplied by the user prompt.`
-
 async function main() {
   const options = parseArgs(process.argv.slice(2))
 
@@ -216,8 +215,12 @@ async function main() {
   console.log(
     `Selected ${selectedIds.length} Pokemon from ${index.length} local records (offset ${options.offset}, limit ${options.limit ?? 'all'}).`,
   )
-  console.log(`Output: ${options.outputRoot}`)
+  console.log(
+    `Language: ${formatLanguageName(options.lang)} (${outputLocaleForLanguage(options.lang)})`,
+  )
+  console.log(`Output: ${outputDirectoryForLanguage(options)}`)
   console.log(`PokeAPI: ${POKEAPI_BASE_URL}`)
+  console.log(`PokeAPI cache: ${pokeApiCacheLabel()}`)
   console.log(`Max generated description length: ${options.maxLength} characters`)
 
   const generator =
@@ -238,7 +241,7 @@ async function main() {
   let skipped = 0
 
   for (const [indexInBatch, pokemonId] of selectedIds.entries()) {
-    const outputPath = join(options.outputRoot, `${pokemonId}.md`)
+    const outputPath = outputPathForPokemon(options, pokemonId)
 
     if (!options.force && existsSync(outputPath)) {
       skipped += 1
@@ -248,18 +251,25 @@ async function main() {
 
     try {
       const context = await loadPokemonContext(pokemonId, speciesCache)
-      const proseEntries = collectEnglishProseEntries(context.speciesDetail)
+      const proseEntries = collectLocalizedProseEntries(context.speciesDetail, options.lang)
 
       if (proseEntries.length === 0) {
-        throw new Error('No English PokeAPI prose entries found')
+        throw new Error(`No ${formatLanguageName(options.lang)} PokeAPI prose entries found`)
       }
 
-      const prompt = buildPrompt(proseEntries, options.maxLength)
+      const systemPrompt = buildSystemPrompt(options.lang)
+      const prompt = buildPrompt(proseEntries, options.maxLength, options.lang, context.pokemon)
       const description =
         generator === undefined
-          ? dryRunDescription(context.pokemon, proseEntries)
-          : await generateWithRetries(generator, prompt, options.maxLength)
-      const document = buildTextDocument(context, description)
+          ? dryRunDescription(context.pokemon, proseEntries, options.lang)
+          : await generateWithRetries(
+              generator,
+              systemPrompt,
+              prompt,
+              options.maxLength,
+              options.lang,
+            )
+      const document = buildTextDocument(context, description, options.lang)
 
       if (options.dryRun) {
         console.log(document)
@@ -269,7 +279,7 @@ async function main() {
       }
 
       processed += 1
-      const sourceSummary = `${countFlavorEntries(proseEntries)} game prose entries`
+      const sourceSummary = `${countFlavorEntries(proseEntries)} ${formatLanguageName(options.lang)} game prose entries`
       console.log(
         `[${indexInBatch + 1}/${selectedIds.length}] ${pokemonId}: ${options.dryRun ? 'previewed' : 'wrote'} ${sourceSummary}`,
       )
@@ -311,6 +321,10 @@ function parseArgs(argv: string[]): CliOptions {
     process.env.POKEMON_PROSE_MAX_LENGTH ?? String(DEFAULT_MAX_LENGTH_CHARS),
     'POKEMON_PROSE_MAX_LENGTH',
   )
+  let lang = parseLanguage(
+    process.env.POKEMON_PROSE_LANG ?? DEFAULT_LANG_CODE,
+    'POKEMON_PROSE_LANG',
+  )
   let help = false
 
   for (const arg of argv) {
@@ -332,6 +346,8 @@ function parseArgs(argv: string[]): CliOptions {
       backend = parseBackend(arg.slice('--backend='.length))
     } else if (arg.startsWith('--max-length=')) {
       maxLength = parseMaxLength(arg.slice('--max-length='.length), '--max-length')
+    } else if (arg.startsWith('--lang=')) {
+      lang = parseLanguage(arg.slice('--lang='.length), '--lang')
     } else if (arg.startsWith('--')) {
       throw new Error(`Unknown argument: ${arg}`)
     } else {
@@ -348,25 +364,27 @@ function parseArgs(argv: string[]): CliOptions {
     force,
     backend,
     maxLength,
+    lang,
     help,
   }
 }
 
 function helpText(): string {
   return [
-    'Generate Pokemon prose text files from PokeAPI English flavor text.',
+    'Generate Pokemon text files from localized PokeAPI flavor text.',
     '',
     'Usage:',
     '  bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts --offset=0 --limit=100',
-    '  bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts --id=bulbasaur --dry-run --max-length=256',
+    '  bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts --id=bulbasaur --dry-run --lang=fra --max-length=256',
     '',
     'Options:',
     '  --offset=N             Start at this local Pokemon index after optional --id filtering.',
     '  --limit=N              Process at most N Pokemon.',
     '  --id=a,b               Process specific local Pokemon IDs. Can be repeated.',
-    '  --output-dir=PATH      Default: data-next/pokemon-prose.',
+    '  --output-dir=PATH      Default: data-next/pokemon-texts.',
     '  --backend=auto|ai-sdk|openai-sdk',
     `  --max-length=N         Max generated description characters. Default: ${DEFAULT_MAX_LENGTH_CHARS}; minimum: ${MIN_MAX_LENGTH_CHARS}.`,
+    `  --lang=CODE            Game locale code, matching the output folder. Default: ${DEFAULT_LANG_CODE}. Valid: ${validLanguageCodes()}.`,
     '  --dry-run              Print text instead of writing files.',
     '  --force                Overwrite existing text files.',
     '',
@@ -374,9 +392,13 @@ function helpText(): string {
     '  OPENAI_API_KEY                 Required unless dry-running without generation.',
     `  OPENAI_MODEL_ID                Default: ${DEFAULT_MODEL}.`,
     `  POKEAPI_BASE_URL               Default: ${DEFAULT_POKEAPI_BASE_URL}.`,
+    `  POKEAPI_CACHE_DIR              Default: ${DEFAULT_POKEAPI_CACHE_DIR}.`,
+    '  POKEAPI_CACHE=0                Disable PokeAPI disk cache.',
+    '  POKEAPI_REFRESH_CACHE=1        Refetch PokeAPI requests and overwrite cached JSON.',
     '  POKEMON_PROSE_OUTPUT_DIR       Overrides --output-dir default.',
     '  POKEMON_PROSE_BACKEND          auto, ai-sdk, or openai-sdk.',
     `  POKEMON_PROSE_MAX_LENGTH       Max generated description characters. Default: ${DEFAULT_MAX_LENGTH_CHARS}; minimum: ${MIN_MAX_LENGTH_CHARS}.`,
+    `  POKEMON_PROSE_LANG             Game locale code, matching the output folder. Default: ${DEFAULT_LANG_CODE}. Valid: ${validLanguageCodes()}.`,
     '  POKEMON_PROSE_DELAY_MS         Optional delay after each processed Pokemon.',
   ].join('\n')
 }
@@ -385,6 +407,28 @@ function selectPokemonIds(index: string[], options: CliOptions): string[] {
   const selected = options.ids.length === 0 ? index : index.filter((id) => options.ids.includes(id))
   const end = options.limit === undefined ? undefined : options.offset + options.limit
   return selected.slice(options.offset, end)
+}
+
+function outputPathForPokemon(options: CliOptions, pokemonId: string): string {
+  return join(outputDirectoryForLanguage(options), `${pokemonId}.md`)
+}
+
+function outputDirectoryForLanguage(options: CliOptions): string {
+  return join(options.outputRoot, outputLocaleForLanguage(options.lang))
+}
+
+function outputLocaleForLanguage(lang: LangInfo): string {
+  return lang.gameLocale.toLowerCase()
+}
+
+function pokeApiCacheLabel(): string {
+  if (process.env.POKEAPI_CACHE === '0') {
+    return 'disabled'
+  }
+
+  const cacheDir = resolve(process.env.POKEAPI_CACHE_DIR ?? DEFAULT_POKEAPI_CACHE_DIR)
+  const refreshLabel = process.env.POKEAPI_REFRESH_CACHE === '1' ? ' (refresh enabled)' : ''
+  return `${cacheDir}${refreshLabel}`
 }
 
 function readPokemonIndex(): string[] {
@@ -454,7 +498,7 @@ async function fetchOptionalPokemonDetail(
   }
 
   try {
-    const json = await fetchPokeApiJson(`pokemon/${pokeApiId}`)
+    const json = await fetchCachedPokeApiJson(`pokemon/${pokeApiId}`)
     return parsePokemonDetail(json, `pokemon/${pokeApiId}`)
   } catch (error) {
     warnings.push(
@@ -476,7 +520,7 @@ async function fetchOptionalFormDetail(
   }
 
   try {
-    const json = await fetchPokeApiJson(`pokemon-form/${formId}`)
+    const json = await fetchCachedPokeApiJson(`pokemon-form/${formId}`)
     return parsePokemonFormDetail(json, `pokemon-form/${formId}`)
   } catch (error) {
     warnings.push(`Could not fetch pokemon-form/${formId}: ${errorMessage(error)}`)
@@ -494,7 +538,7 @@ async function fetchSpeciesDetail(
     return cached
   }
 
-  const json = await fetchPokeApiJson(`pokemon-species/${lookup}`)
+  const json = await fetchCachedPokeApiJson(`pokemon-species/${lookup}`)
   const detail = parsePokemonSpeciesDetail(json, `pokemon-species/${lookup}`)
   speciesCache.set(lookup, detail)
   speciesCache.set(String(detail.id), detail)
@@ -503,39 +547,11 @@ async function fetchSpeciesDetail(
   return detail
 }
 
-async function fetchPokeApiJson(pathname: string): Promise<unknown> {
-  const base = POKEAPI_BASE_URL.replace(/\/+$/, '')
-  const url = new URL(`${base}/${pathname.replace(/^\/+/, '')}/`)
-  let lastError: unknown
-
-  for (let attempt = 1; attempt <= FETCH_RETRIES; attempt += 1) {
-    try {
-      const response = await fetch(url, {
-        headers: {
-          accept: 'application/json',
-        },
-      })
-
-      if (response.ok) {
-        return await response.json()
-      }
-
-      const body = await response.text()
-      lastError = new Error(
-        `${response.status} ${response.statusText}${body.length > 0 ? `: ${body.slice(0, 240)}` : ''}`,
-      )
-
-      if (response.status !== 429 && response.status < 500) {
-        break
-      }
-    } catch (error) {
-      lastError = error
-    }
-
-    await sleep(backoffMs(attempt))
-  }
-
-  throw lastError instanceof Error ? lastError : new Error(String(lastError))
+async function fetchCachedPokeApiJson(pathname: string): Promise<unknown> {
+  return fetchPokeApiJson(pathname, {
+    baseUrl: POKEAPI_BASE_URL,
+    retries: FETCH_RETRIES,
+  })
 }
 
 function parsePokemonDetail(value: unknown, context: string): PokeApiPokemonDetail {
@@ -581,9 +597,12 @@ function parsePokemonSpeciesDetail(value: unknown, context: string): PokeApiPoke
   }
 }
 
-function collectEnglishProseEntries(species: PokeApiPokemonSpeciesDetail): ProseEntry[] {
+function collectLocalizedProseEntries(
+  species: PokeApiPokemonSpeciesDetail,
+  lang: LangInfo,
+): ProseEntry[] {
   const flavorEntries = species.flavorTextEntries
-    .filter((entry) => entry.language.name === 'en')
+    .filter((entry) => isPokeApiLanguage(entry.language, lang))
     .map((entry) => ({
       source: 'species-flavor-text' as const,
       version: entry.version.name,
@@ -592,7 +611,7 @@ function collectEnglishProseEntries(species: PokeApiPokemonSpeciesDetail): Prose
     .filter((entry) => entry.text.length > 0)
 
   const formDescriptions = species.formDescriptions
-    .filter((entry) => entry.language.name === 'en')
+    .filter((entry) => isPokeApiLanguage(entry.language, lang))
     .map((entry) => ({
       source: 'species-form-description' as const,
       text: normalizePokeApiText(entry.description),
@@ -602,43 +621,119 @@ function collectEnglishProseEntries(species: PokeApiPokemonSpeciesDetail): Prose
   return uniqueProseEntries([...flavorEntries, ...formDescriptions])
 }
 
-function buildPrompt(proseEntries: ProseEntry[], maxLength: number): string {
+function buildSystemPrompt(lang: LangInfo): string {
+  const languageName = formatLanguageName(lang)
+
+  return `You write original Pokemon descriptions for a structured dataset.
+
+Requirements:
+- The supplied PokeAPI prose is written in ${languageName}.
+- Synthesize the supplied ${languageName} PokeAPI prose into one cohesive description.
+- The description field must be written in ${languageName}; do not write English unless the selected language is English.
+- Use the local Pokemon context only for the correct Pokemon name, species name, and form identity. Do not treat names as source prose.
+- Use every source entry as evidence, but do not quote or paraphrase any one game entry too closely.
+- Include traits that recur across versions and gracefully merge compatible details from different games.
+- If the local Pokemon is a form and only species-level prose exists, write about the named local Pokemon while staying faithful to species-level evidence and supplied form metadata.
+- Do not invent mechanics, lore, habitats, powers, or behavior that are not supported by the supplied source text or metadata.
+- Put 1 to 3 plain ${languageName} paragraphs in the description field, with no heading, markdown, bullets, citations, or labels.
+- Use 2 or 3 paragraphs when the description combines several distinct traits, behaviors, or observations.
+- Separate paragraphs with a blank line.
+- Use complete sentences, good punctuation, and natural paragraph flow.
+- Respect the maximum string length supplied by the user prompt.`
+}
+
+function buildPrompt(
+  proseEntries: ProseEntry[],
+  maxLength: number,
+  lang: LangInfo,
+  pokemon: LocalPokemon,
+): string {
+  const languageName = formatLanguageName(lang)
+  const localContext = buildLocalPokemonPromptContext(pokemon, lang)
+
   return [
     `Return a JSON object with exactly this shape: {"description":"..."}.`,
+    `The source prose entries below are written in ${languageName}.`,
+    `The description string must be written in ${languageName}.`,
     `The description string must be ${maxLength} characters or fewer.`,
     'Use 1 to 3 paragraphs. Prefer 2 or 3 paragraphs when the source prose contains several distinct traits or behaviors.',
     'Separate paragraphs with a blank line.',
+    lang.slug === DEFAULT_LANG_SLUG
+      ? 'Use English because the selected language is English.'
+      : 'Do not translate the final description into English.',
     '',
-    'Use only these English source prose entries:',
+    'Local Pokemon context for naming and form identity only:',
+    ...localContext,
+    '',
+    `Use only these ${languageName} source prose entries:`,
     ...proseEntries.map((entry) => entry.text),
     '',
     'Write the final description now.',
   ].join('\n')
 }
 
-function buildTextDocument(context: LocalPokemonContext, description: string): string {
+function buildLocalPokemonPromptContext(pokemon: LocalPokemon, lang: LangInfo): string[] {
+  const pokemonName = displayName(pokemon, lang)
+  const speciesName = localizedText(pokemon.speciesNames, lang) ?? pokemonName
+  const formName = localizedText(pokemon.formNames, lang)
+  const context = [
+    `- Local Pokemon ID: ${pokemon.id}`,
+    `- Local record kind: ${pokemon.isForm ? 'form' : 'base species'}`,
+    `- Pokemon name: ${pokemonName}`,
+    `- Species name: ${speciesName}`,
+  ]
+
+  if (formName !== undefined) {
+    context.push(`- Form name: ${formName}`)
+  }
+
+  return context
+}
+
+function buildTextDocument(
+  context: LocalPokemonContext,
+  description: string,
+  lang: LangInfo,
+): string {
   const { pokemon, speciesDetail } = context
-  const classification = englishText(pokemon.genus) ?? englishGenus(speciesDetail) ?? 'unknown'
+  const classification =
+    localizedText(pokemon.genus, lang) ?? localizedGenus(speciesDetail, lang) ?? 'unknown'
   const lines = [`${classification}`, '---', '', normalizeDescription(description)]
   return `${trimTrailingBlankLines(lines).join('\n')}\n`
 }
 
-function dryRunDescription(pokemon: LocalPokemon, proseEntries: ProseEntry[]): string {
+function dryRunDescription(
+  pokemon: LocalPokemon,
+  proseEntries: ProseEntry[],
+  lang: LangInfo,
+): string {
+  const languageName = formatLanguageName(lang)
+  const flavorCount = countFlavorEntries(proseEntries)
+
   return [
-    `DRY RUN: ${displayName(pokemon)} has ${countFlavorEntries(proseEntries)} English game prose entries`,
-    `and ${proseEntries.length - countFlavorEntries(proseEntries)} English form description entries available for synthesis.`,
+    `DRY RUN (${languageName}): ${displayName(pokemon, lang)} has ${flavorCount} game prose entries`,
+    `and ${proseEntries.length - flavorCount} form description entries available for synthesis.`,
     'Set OPENAI_API_KEY to preview the generated paragraph.',
   ].join(' ')
 }
 
-function createDescriptionResponseSchema(maxLength: number) {
+function createDescriptionResponseSchema(maxLength: number, lang?: LangInfo) {
+  const languageName = lang === undefined ? undefined : formatLanguageName(lang)
+
   return z.object({
     description: z
       .string()
       .min(1)
       .max(maxLength)
       .describe(
-        `Original synthesized Pokemon description, ${maxLength} characters or fewer, using 1 to 3 paragraphs separated by blank lines.`,
+        [
+          'Original synthesized Pokemon description',
+          languageName === undefined ? undefined : `written in ${languageName}`,
+          `${maxLength} characters or fewer`,
+          'using 1 to 3 paragraphs separated by blank lines',
+        ]
+          .filter(isString)
+          .join(', '),
       ),
   })
 }
@@ -668,12 +763,12 @@ async function createTextGenerator(backend: GenerationBackend): Promise<TextGene
 
   return {
     backendName: 'openai-sdk',
-    generate: async (prompt, maxLength) => {
-      const schema = createDescriptionResponseSchema(maxLength)
+    generate: async (systemPrompt, prompt, maxLength, lang) => {
+      const schema = createDescriptionResponseSchema(maxLength, lang)
       const completion = await client.chat.completions.parse({
         model: OPENAI_MODEL,
         messages: [
-          { role: 'system', content: SYSTEM_PROMPT },
+          { role: 'system', content: systemPrompt },
           { role: 'user', content: prompt },
         ],
         response_format: zodResponseFormat(schema, 'pokemon_description'),
@@ -703,11 +798,11 @@ async function tryCreateAiSdkGenerator(): Promise<TextGenerator | undefined> {
 
     return {
       backendName: 'ai-sdk',
-      generate: async (prompt, maxLength) => {
+      generate: async (systemPrompt, prompt, maxLength, lang) => {
         const { object } = await generateObject({
           model,
-          schema: createDescriptionResponseSchema(maxLength),
-          system: SYSTEM_PROMPT,
+          schema: createDescriptionResponseSchema(maxLength, lang),
+          system: systemPrompt,
           prompt,
         })
 
@@ -729,14 +824,16 @@ async function dynamicImport<T>(specifier: string): Promise<T> {
 
 async function generateWithRetries(
   generator: TextGenerator,
+  systemPrompt: string,
   prompt: string,
   maxLength: number,
+  lang: LangInfo,
 ): Promise<string> {
   let lastError: unknown
 
   for (let attempt = 1; attempt <= GENERATE_RETRIES; attempt += 1) {
     try {
-      return await generator.generate(prompt, maxLength)
+      return await generator.generate(systemPrompt, prompt, maxLength, lang)
     } catch (error) {
       lastError = error
       await sleep(backoffMs(attempt))
@@ -1098,16 +1195,43 @@ function uniqueStrings(values: Array<string | undefined>): string[] {
   return Array.from(new Set(values.filter(isString)))
 }
 
-function englishText(value: Record<string, string> | undefined): string | undefined {
-  return value?.eng
+function localizedText(
+  value: Record<string, string> | undefined,
+  lang: LangInfo,
+): string | undefined {
+  if (value === undefined) {
+    return undefined
+  }
+
+  for (const key of localLanguageKeys(lang)) {
+    const text = value[key]
+
+    if (isString(text)) {
+      return text
+    }
+  }
+
+  return isString(value.eng) ? value.eng : undefined
 }
 
-function englishGenus(species: PokeApiPokemonSpeciesDetail): string | undefined {
-  return species.genera.find((entry) => entry.language.name === 'en')?.genus
+function localLanguageKeys(lang: LangInfo): string[] {
+  return uniqueStrings([lang.oldCode, lang.slug === 'mx' ? 'esp' : undefined, 'eng'])
 }
 
-function displayName(pokemon: LocalPokemon): string {
-  return englishText(pokemon.names) ?? pokemon.id
+function localizedGenus(species: PokeApiPokemonSpeciesDetail, lang: LangInfo): string | undefined {
+  return species.genera.find((entry) => isPokeApiLanguage(entry.language, lang))?.genus
+}
+
+function isPokeApiLanguage(resource: NamedResource, lang: LangInfo): boolean {
+  return resourceLookupFromUrl(resource.url, 'language') === String(lang.pokeApiId)
+}
+
+function displayName(pokemon: LocalPokemon, lang: LangInfo): string {
+  return localizedText(pokemon.names, lang) ?? pokemon.id
+}
+
+function formatLanguageName(lang: LangInfo): string {
+  return `${lang.engName} (${lang.name})`
 }
 
 function countFlavorEntries(entries: ProseEntry[]): number {
@@ -1184,6 +1308,21 @@ function parseBackend(value: string): GenerationBackend {
   }
 
   throw new Error(`Invalid backend: ${value}`)
+}
+
+function parseLanguage(value: string, label: string): LangInfo {
+  const normalizedValue = value.trim().toLowerCase()
+  const lang = appLangs.find((candidate) => outputLocaleForLanguage(candidate) === normalizedValue)
+
+  if (lang !== undefined) {
+    return lang
+  }
+
+  throw new Error(`${label} must be one of: ${validLanguageCodes()}`)
+}
+
+function validLanguageCodes(): string {
+  return appLangs.map((lang) => outputLocaleForLanguage(lang)).join(', ')
 }
 
 function backoffMs(attempt: number): number {
