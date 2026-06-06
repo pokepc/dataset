@@ -38,6 +38,7 @@
     "build:openapi": "node src/openapi/build.ts",
     "build:pages": "node src/openapi/build.ts",
     "build:next": "bun src/lib-next/_build.ts",
+    "generate:pokemon-prose": "bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",
