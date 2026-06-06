@@ -34,9 +34,9 @@
   },
   "scripts": {
     "dev": "node src/openapi/dev.ts",
-    "build": "tsdown",
+    "build": "pnpm build:next && tsdown && pnpm format",
     "build:openapi": "node src/openapi/build.ts",
-    "build:pages": "node src/openapi/build.ts",
+    "build:pages": "pnpm build:next && node src/openapi/build.ts",
     "build:next": "bun src/lib-next/_build.ts",
     "generate:pokemon-prose": "bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts",
     "format": "oxfmt --write .",
