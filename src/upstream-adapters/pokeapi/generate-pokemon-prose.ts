@@ -191,7 +191,9 @@ Requirements:
 - Include traits that recur across versions and gracefully merge compatible details from different games.
 - If the local Pokemon is a form and only species-level prose exists, write about the named local Pokemon while staying faithful to species-level evidence and supplied form metadata.
 - Do not invent mechanics, lore, habitats, powers, or behavior that are not supported by the supplied source text or metadata.
-- Put one plain English paragraph in the description field, with no heading, markdown, bullets, citations, or labels.
+- Put 1 to 3 plain English paragraphs in the description field, with no heading, markdown, bullets, citations, or labels.
+- Use 2 or 3 paragraphs when the description combines several distinct traits, behaviors, or observations.
+- Separate paragraphs with a blank line.
 - Use complete sentences, good punctuation, and natural paragraph flow.
 - Respect the maximum string length supplied by the user prompt.`
 
@@ -207,26 +209,26 @@ async function main() {
   const selectedIds = selectPokemonIds(index, options)
 
   if (selectedIds.length === 0) {
-    console.error('No Pokemon selected.')
+    console.log('No Pokemon selected.')
     return
   }
 
-  console.error(
+  console.log(
     `Selected ${selectedIds.length} Pokemon from ${index.length} local records (offset ${options.offset}, limit ${options.limit ?? 'all'}).`,
   )
-  console.error(`Output: ${options.outputRoot}`)
-  console.error(`PokeAPI: ${POKEAPI_BASE_URL}`)
-  console.error(`Max generated description length: ${options.maxLength} characters`)
+  console.log(`Output: ${options.outputRoot}`)
+  console.log(`PokeAPI: ${POKEAPI_BASE_URL}`)
+  console.log(`Max generated description length: ${options.maxLength} characters`)
 
   const generator =
     options.dryRun && !hasOpenAiApiKey() ? undefined : await createTextGenerator(options.backend)
 
   if (generator === undefined) {
-    console.error(
+    console.log(
       'Dry run without OPENAI_API_KEY: fetching source prose and writing placeholder output.',
     )
   } else {
-    console.error(`Generation backend: ${generator.backendName}; model: ${OPENAI_MODEL}`)
+    console.log(`Generation backend: ${generator.backendName}; model: ${OPENAI_MODEL}`)
   }
 
   const speciesCache = new Map<string, PokeApiPokemonSpeciesDetail>()
@@ -240,9 +242,7 @@ async function main() {
 
     if (!options.force && existsSync(outputPath)) {
       skipped += 1
-      console.error(
-        `[${indexInBatch + 1}/${selectedIds.length}] ${pokemonId}: skipped existing file`,
-      )
+      console.log(`[${indexInBatch + 1}/${selectedIds.length}] ${pokemonId}: skipped existing file`)
       continue
     }
 
@@ -270,7 +270,7 @@ async function main() {
 
       processed += 1
       const sourceSummary = `${countFlavorEntries(proseEntries)} game prose entries`
-      console.error(
+      console.log(
         `[${indexInBatch + 1}/${selectedIds.length}] ${pokemonId}: ${options.dryRun ? 'previewed' : 'wrote'} ${sourceSummary}`,
       )
       await sleep(DELAY_MS)
@@ -282,9 +282,13 @@ async function main() {
     }
   }
 
-  console.error(
-    `Done. Processed ${processed}, wrote ${written}, skipped ${skipped}, failed ${failures.length}.`,
-  )
+  const summary = `Done. Processed ${processed}, wrote ${written}, skipped ${skipped}, failed ${failures.length}.`
+
+  if (failures.length > 0) {
+    console.error(summary)
+  } else {
+    console.log(summary)
+  }
 
   if (failures.length > 0) {
     console.error('Failures:')
@@ -602,6 +606,8 @@ function buildPrompt(proseEntries: ProseEntry[], maxLength: number): string {
   return [
     `Return a JSON object with exactly this shape: {"description":"..."}.`,
     `The description string must be ${maxLength} characters or fewer.`,
+    'Use 1 to 3 paragraphs. Prefer 2 or 3 paragraphs when the source prose contains several distinct traits or behaviors.',
+    'Separate paragraphs with a blank line.',
     '',
     'Use only these English source prose entries:',
     ...proseEntries.map((entry) => entry.text),
@@ -613,7 +619,7 @@ function buildPrompt(proseEntries: ProseEntry[], maxLength: number): string {
 function buildTextDocument(context: LocalPokemonContext, description: string): string {
   const { pokemon, speciesDetail } = context
   const classification = englishText(pokemon.genus) ?? englishGenus(speciesDetail) ?? 'unknown'
-  const lines = [`${classification}`, '', normalizeParagraphs(description)]
+  const lines = [`${classification}`, '---', '', normalizeDescription(description)]
   return `${trimTrailingBlankLines(lines).join('\n')}\n`
 }
 
@@ -631,7 +637,9 @@ function createDescriptionResponseSchema(maxLength: number) {
       .string()
       .min(1)
       .max(maxLength)
-      .describe(`Original synthesized Pokemon description, ${maxLength} characters or fewer.`),
+      .describe(
+        `Original synthesized Pokemon description, ${maxLength} characters or fewer, using 1 to 3 paragraphs separated by blank lines.`,
+      ),
   })
 }
 
@@ -676,7 +684,7 @@ async function createTextGenerator(backend: GenerationBackend): Promise<TextGene
         throw new Error(`No parsed response: ${message?.refusal ?? 'empty response'}`)
       }
 
-      return normalizeParagraphs(message.parsed.description)
+      return normalizeGeneratedDescription(message.parsed.description, maxLength)
     },
   }
 }
@@ -703,7 +711,7 @@ async function tryCreateAiSdkGenerator(): Promise<TextGenerator | undefined> {
           prompt,
         })
 
-        return normalizeParagraphs(object.description)
+        return normalizeGeneratedDescription(object.description, maxLength)
       },
     }
   } catch {
@@ -968,12 +976,96 @@ function normalizePokeApiText(value: string): string {
   return value.replace(/\f/g, ' ').replace(/\r?\n/g, ' ').replace(/\s+/g, ' ').trim()
 }
 
-function normalizeParagraphs(value: string): string {
+function normalizeGeneratedDescription(value: string, maxLength: number): string {
+  const description = normalizeDescription(value, maxLength)
+  return createDescriptionResponseSchema(maxLength).parse({ description }).description
+}
+
+function normalizeDescription(value: string, maxLength?: number): string {
+  const paragraphs = normalizedParagraphs(value)
+
+  if (paragraphs.length === 0) {
+    return ''
+  }
+
+  const nextParagraphs =
+    paragraphs.length === 1 ? splitLongParagraph(paragraphs[0]!, maxLength) : paragraphs
+  const clampedParagraphs = clampParagraphs(nextParagraphs, 3)
+
+  return clampedParagraphs.join('\n\n')
+}
+
+function normalizedParagraphs(value: string): string[] {
   return value
     .split(/\n{2,}/)
     .map((paragraph) => paragraph.replace(/\s+/g, ' ').trim())
     .filter((paragraph) => paragraph.length > 0)
-    .join('\n\n')
+}
+
+function splitLongParagraph(paragraph: string, maxLength: number | undefined): string[] {
+  const sentences = splitSentences(paragraph)
+
+  if (paragraph.length < 260 || sentences.length < 3) {
+    return [paragraph]
+  }
+
+  const paragraphCount = paragraph.length > 420 && sentences.length >= 5 ? 3 : 2
+  const splitParagraphs = splitSentencesIntoParagraphs(sentences, paragraphCount)
+
+  if (maxLength !== undefined && splitParagraphs.join('\n\n').length > maxLength) {
+    return [paragraph]
+  }
+
+  return splitParagraphs
+}
+
+function splitSentences(value: string): string[] {
+  return (
+    value.match(/[^.!?]+[.!?]+(?:["')\]]+)?|[^.!?]+$/g)?.map((sentence) => sentence.trim()) ?? [
+      value,
+    ]
+  ).filter((sentence) => sentence.length > 0)
+}
+
+function splitSentencesIntoParagraphs(sentences: string[], paragraphCount: number): string[] {
+  const totalLength = sentences.reduce((sum, sentence) => sum + sentence.length, 0)
+  const targetLength = totalLength / paragraphCount
+  const paragraphs: string[] = []
+  let current: string[] = []
+  let currentLength = 0
+
+  for (let index = 0; index < sentences.length; index += 1) {
+    const sentence = sentences[index]!
+    const remainingSentences = sentences.length - index
+    const remainingParagraphs = paragraphCount - paragraphs.length
+
+    current.push(sentence)
+    currentLength += sentence.length
+
+    if (
+      currentLength >= targetLength &&
+      paragraphs.length < paragraphCount - 1 &&
+      remainingSentences > remainingParagraphs
+    ) {
+      paragraphs.push(current.join(' '))
+      current = []
+      currentLength = 0
+    }
+  }
+
+  if (current.length > 0) {
+    paragraphs.push(current.join(' '))
+  }
+
+  return paragraphs
+}
+
+function clampParagraphs(paragraphs: string[], maxParagraphs: number): string[] {
+  if (paragraphs.length <= maxParagraphs) {
+    return paragraphs
+  }
+
+  return [...paragraphs.slice(0, maxParagraphs - 1), paragraphs.slice(maxParagraphs - 1).join(' ')]
 }
 
 function trimTrailingBlankLines(lines: string[]): string[] {
