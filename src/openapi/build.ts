@@ -4,8 +4,9 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const openApiDir = path.dirname(fileURLToPath(import.meta.url))
-export const projectRoot = path.resolve(openApiDir, '../..')
-export const dataDir = path.join(projectRoot, 'data')
+const projectRoot = path.resolve(openApiDir, '../..')
+const dataDir = path.join(projectRoot, 'data')
+const dataNextDir = path.join(projectRoot, 'data-next')
 export const outDir = path.join(projectRoot, 'dist-pages')
 
 registerHooks({
@@ -50,6 +51,7 @@ export async function buildPagesArtifact() {
   fs.rmSync(outDir, { recursive: true, force: true })
   fs.mkdirSync(outDir, { recursive: true })
   fs.cpSync(dataDir, path.join(outDir, 'data'), { recursive: true })
+  fs.cpSync(dataNextDir, path.join(outDir, 'data-next'), { recursive: true })
 
   const document = createStaticApiDocument({
     version: readPackageVersion(),
