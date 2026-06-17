@@ -147,7 +147,8 @@ function main(): void {
     const next = [...game.pokedexes, pokedexId]
     const inline = `[${next.map((s) => JSON.stringify(s)).join(', ')}]`
     const replaced = gameRaw.replace(/("pokedexes":\s*)\[[^\]]*\]/, `$1${inline}`)
-    if (replaced === gameRaw) throw new Error('Could not locate "pokedexes" array in champions.json')
+    if (replaced === gameRaw)
+      throw new Error('Could not locate "pokedexes" array in champions.json')
     fs.writeFileSync(CHAMPIONS_GAME, replaced)
     console.log(`[update] ${path.relative(process.cwd(), CHAMPIONS_GAME)}`)
   } else {
