@@ -5,5 +5,4 @@ can stretch that fire to seem larger when threatening attackers. It also uses ce
 spring into aerial attacks, with its fiery tail serving as only one of several weapons.
 
 Among its pack, a larger tail flame and deeper blue markings on its face signal a higher rank. The
-darker its blue facial pattern, the more powerful it is said to become as it leaps about and strikes
-with quick, forceful bl‌
+darker its blue facial pattern, the more powerful it is said to become.

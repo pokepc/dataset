@@ -6,4 +6,4 @@ der Zusammenhang ist ungeklärt. Es lebt vorwiegend in Kraftwerken.
 
 Es tarnt sich offenbar als Pokéball, um sich zu schützen. Dabei ist es äußerst empfindlich und kann
 schon bei der kleinsten Erschütterung oder äußeren Einwirkung explodieren oder sich selbst
-zerstören. Man munkelt, es sei aus einem Pokéball hervo​
+zerstören.

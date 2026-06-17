@@ -6,5 +6,4 @@ hilft.
 
 Es greift oft ohne Zögern an und schlägt mit großer Wucht um sich. In seinen Scheren speichert es
 kalte Luft, sodass es selbst dicke Eiswände zertrümmern kann. In Notfällen stößt es seine Scheren ab
-und schleudert sie wie Raketen; manche Berichte sagen sogar, dass es mit seinen schnellen Schlägen
-Lawin​
+und schleudert sie wie Raketen.

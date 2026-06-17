@@ -7,4 +7,4 @@ earthquake.
 
 It lives at the bottom of swamps, where it lies in wait for prey and eats anything alive. Because
 its vision is poor, it senses movement through vibrations in the water with its whiskers, then
-swallows prey whole, s‍
+swallows prey whole.
