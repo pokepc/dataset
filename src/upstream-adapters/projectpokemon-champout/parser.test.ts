@@ -125,11 +125,11 @@ describe('data generation', () => {
     })
 
     expect(data.moves).toHaveLength(835)
-    expect(data.abilities).toHaveLength(194)
-    expect(data.items).toHaveLength(117)
+    expect(data.abilities).toHaveLength(202)
+    expect(data.items).toHaveLength(148)
     expect(data.battleStates).toHaveLength(66)
-    expect(data.pokemon).toHaveLength(399)
-    expect(data.pokemonMoves).toHaveLength(214)
+    expect(data.pokemon).toHaveLength(441)
+    expect(data.pokemonMoves).toHaveLength(236)
     expect(Object.keys(data.i18n).sort()).toEqual([...I18N_CODE].sort())
     expect(data.warnings).toEqual([])
     expect(warningCount.value).toBe(0)
@@ -142,7 +142,7 @@ describe('data generation', () => {
         "Revives a Pok\u00e9mon in the user's party that has fainted and\nrestores 1/2 of that Pok\u00e9mon's max HP.",
       type: 'normal',
       category: 'status',
-      target: 'users_side',
+      target: 'opponents_side',
       usable: false,
     })
     expect(data.moves.find((move) => move.id === 'doubleshock')).toMatchObject({

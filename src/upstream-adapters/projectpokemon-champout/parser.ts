@@ -147,6 +147,9 @@ type PokemonPersonalRecord = {
   spatk: string
   spdef: string
   agi: string
+  toku0: string
+  toku1: string
+  toku2: string
 }
 
 type PokemonMoveLearnRecord = {
@@ -163,7 +166,6 @@ type LocalPokemonRecord = {
   showdownId: string
   type1: string
   type2: string | null
-  abilities: string[]
   baseHp: number
   baseAtk: number
   baseDef: number
@@ -507,15 +509,20 @@ export function buildData(
   const championsAbilities = buildAbilities(datasetRoot, DEFAULT_LANGUAGE)
   const championsItems = buildItems(datasetRoot, DEFAULT_LANGUAGE)
   const battleStates = buildBattleStates(datasetRoot, DEFAULT_LANGUAGE)
-  const pokemonMapIndex = buildPokemonMapIndex(datasetRoot, DEFAULT_LOCAL_DATA_ROOT)
+  const abilitiesMap = buildLocalChampionsMap(
+    readLocalNamedRecords(DEFAULT_LOCAL_DATA_ROOT, 'abilities'),
+    championsAbilities,
+  )
+  const tokuToLocalAbilityId = createTokuToLocalAbilityId(abilitiesMap)
+  const pokemonMapIndex = buildPokemonMapIndex(
+    datasetRoot,
+    DEFAULT_LOCAL_DATA_ROOT,
+    tokuToLocalAbilityId,
+  )
   const pokemon = localizePokemon(datasetRoot, DEFAULT_LANGUAGE, pokemonMapIndex)
   const movesMap = buildLocalChampionsMap(
     readLocalNamedRecords(DEFAULT_LOCAL_DATA_ROOT, 'moves'),
     championsMoves,
-  )
-  const abilitiesMap = buildLocalChampionsMap(
-    readLocalNamedRecords(DEFAULT_LOCAL_DATA_ROOT, 'abilities'),
-    championsAbilities,
   )
   const itemsMap = buildLocalChampionsMap(
     readLocalNamedRecords(DEFAULT_LOCAL_DATA_ROOT, 'items'),
@@ -790,10 +797,55 @@ export function buildPokemonMap(
   lang: I18nCode = DEFAULT_LANGUAGE,
   localDataRoot = DEFAULT_LOCAL_DATA_ROOT,
 ): PokemonRecord[] {
-  return localizePokemon(datasetRoot, lang, buildPokemonMapIndex(datasetRoot, localDataRoot))
+  const abilitiesMap = buildLocalChampionsMap(
+    readLocalNamedRecords(localDataRoot, 'abilities'),
+    buildAbilities(datasetRoot, DEFAULT_LANGUAGE),
+  )
+  const tokuToLocalAbilityId = createTokuToLocalAbilityId(abilitiesMap)
+
+  return localizePokemon(
+    datasetRoot,
+    lang,
+    buildPokemonMapIndex(datasetRoot, localDataRoot, tokuToLocalAbilityId),
+  )
 }
 
-function buildPokemonMapIndex(datasetRoot: string, localDataRoot: string): PokemonMapIndexRecord[] {
+function createTokuToLocalAbilityId(abilitiesMap: LocalChampionsMap): Map<string, string> {
+  return new Map(abilitiesMap.map((record) => [record.championsId, record.id]))
+}
+
+function pokemonAbilitiesFromToku(
+  record: PokemonPersonalRecord,
+  tokuToLocalAbilityId: ReadonlyMap<string, string>,
+): string[] {
+  const abilities: string[] = []
+
+  for (const tokuId of [record.toku0, record.toku1, record.toku2]) {
+    if (tokuId === '0') {
+      continue
+    }
+
+    const localAbilityId = tokuToLocalAbilityId.get(tokuId)
+
+    if (localAbilityId === undefined) {
+      throw new Error(
+        `Missing local ability map for Champions ability ${tokuId} (Pokemon ${record.id})`,
+      )
+    }
+
+    if (!abilities.includes(localAbilityId)) {
+      abilities.push(localAbilityId)
+    }
+  }
+
+  return abilities
+}
+
+function buildPokemonMapIndex(
+  datasetRoot: string,
+  localDataRoot: string,
+  tokuToLocalAbilityId: ReadonlyMap<string, string>,
+): PokemonMapIndexRecord[] {
   const formNames = readTextMap(datasetRoot, DEFAULT_LANGUAGE, 'zkn_form_syn')
   const localPokemon = readLocalPokemonRecords(localDataRoot)
   const localById = new Map(localPokemon.map((pokemon) => [pokemon.id, pokemon]))
@@ -811,6 +863,8 @@ function buildPokemonMapIndex(datasetRoot: string, localDataRoot: string): Pokem
     if (localIds.length === 0) {
       throw new Error(`Unable to map Champions Pokemon ${personalRecord.id}`)
     }
+
+    const abilities = pokemonAbilitiesFromToku(personalRecord, tokuToLocalAbilityId)
 
     for (const localId of localIds) {
       const localPokemon = localById.get(localId)
@@ -833,7 +887,7 @@ function buildPokemonMapIndex(datasetRoot: string, localDataRoot: string): Pokem
         baseSpecies: localPokemon.baseSpecies,
         type1: localPokemon.type1,
         type2: localPokemon.type2,
-        abilities: localPokemon.abilities,
+        abilities,
         baseHp: localPokemon.baseHp,
         baseAtk: localPokemon.baseAtk,
         baseDef: localPokemon.baseDef,
@@ -1453,6 +1507,9 @@ function readPokemonPersonalRecords(datasetRoot: string): PokemonPersonalRecord[
       spatk: stringField(record, 'spatk', context),
       spdef: stringField(record, 'spdef', context),
       agi: stringField(record, 'agi', context),
+      toku0: stringField(record, 'toku0', context),
+      toku1: stringField(record, 'toku1', context),
+      toku2: stringField(record, 'toku2', context),
     }
   })
 }
@@ -1488,7 +1545,6 @@ function readLocalPokemonRecords(localDataRoot: string): LocalPokemonRecord[] {
       showdownId: stringField(refs, 'showdown', `${context}.refs`),
       type1: stringField(record, 'type1', context),
       type2: nullableStringField(record, 'type2', context),
-      abilities: localPokemonAbilities(record, context),
       baseHp: numberField(record, 'baseHp', context),
       baseAtk: numberField(record, 'baseAtk', context),
       baseDef: numberField(record, 'baseDef', context),
@@ -1523,17 +1579,6 @@ function readLocalNamedRecords(
       psName: optionalStringField(record, 'psName', context),
     }
   })
-}
-
-function localPokemonAbilities(record: SourceRecord, context: string): string[] {
-  const abilities = [
-    stringField(record, 'ability1', context),
-    optionalStringField(record, 'ability2', context),
-    optionalStringField(record, 'abilityHidden', context),
-    optionalStringField(record, 'abilitySpecial', context),
-  ].filter((ability): ability is string => ability !== undefined)
-
-  return Array.from(new Set(abilities))
 }
 
 function groupLocalPokemonByDex(
