@@ -2839,5 +2839,24 @@
     "shortDesc": "When the Pokémon takes damage from a move, it burns the attacker.",
     "desc": "When the Pokémon takes damage from a move, it burns the attacker.",
     "tags": ["status-trigger"]
+  },
+  {
+    "id": "eelevate",
+    "name": "Eelevate",
+    "psName": "Eelevate",
+    "gen": 9,
+    "shortDesc": "Immune to Ground and hazards; KOing a target with an attack raises its highest stat by 1.",
+    "desc": "The Pokémon floats off the ground, making it immune to Ground-type moves, as well as the Spikes, Toxic Spikes, and Sticky Web statuses. When the Pokémon knocks out a target with an attack, its highest stat is boosted by 1 stage.",
+    "immunities": ["ground"],
+    "tags": ["defense", "stat-boost"]
+  },
+  {
+    "id": "firemane",
+    "name": "Fire Mane",
+    "psName": "Fire Mane",
+    "gen": 9,
+    "shortDesc": "Boosts the power of this Pokemon's Fire-type moves by 50%.",
+    "desc": "Boosts the power of the Pokémon's Fire-type moves by 50%.",
+    "tags": ["move-boost"]
   }
 ]

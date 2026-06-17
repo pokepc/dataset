@@ -168,6 +168,13 @@
     "description": "地面にいないことになり\nじめんタイプの技　まきびし　どくびし\nねばねばネット状態が効かない。"
   },
   {
+    "id": "effectspore",
+    "slug": "effect-spore",
+    "slugLoc": "housi",
+    "name": "ほうし",
+    "description": "接触技を受けると　３０％の確率で\n相手を　どく　まひ　ねむり状態の\nいずれかにする。"
+  },
+  {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "sinkuro",
@@ -656,6 +663,13 @@
     "slugLoc": "kikenyoti",
     "name": "きけんよち",
     "description": "登場した時　相手が自分への効果バツグンや\n一撃必殺の技を持っていると\nそのことを察知できる。"
+  },
+  {
+    "id": "forewarn",
+    "slug": "forewarn",
+    "slugLoc": "yotimu",
+    "name": "よちむ",
+    "description": "登場した時　相手の技の中から\n威力の高い技を　１つ読み取る。"
   },
   {
     "id": "unaware",
@@ -1162,11 +1176,32 @@
     "description": "ひんしになる技のダメージを受けると\n相手から受けたそのダメージを返す。"
   },
   {
+    "id": "fluffy",
+    "slug": "fluffy",
+    "slugLoc": "mohumohu",
+    "name": "もふもふ",
+    "description": "接触技で受けるダメージが半減する。\nほのおタイプの技で受けるダメージは\n２倍になる。"
+  },
+  {
+    "id": "tanglinghair",
+    "slug": "tangling-hair",
+    "slugLoc": "karihea",
+    "name": "カーリーヘアー",
+    "description": "接触技を受けると\n相手の素早さを１段階下げる。"
+  },
+  {
     "id": "receiver",
     "slug": "receiver",
     "slugLoc": "resiba",
     "name": "レシーバー",
     "description": "倒された味方の特性と同じ特性になる。"
+  },
+  {
+    "id": "electricsurge",
+    "slug": "electric-surge",
+    "slugLoc": "erekimeika",
+    "name": "エレキメイカー",
+    "description": "登場した時から\n５ターンの間　全体の場を\nエレキフィールド状態にする。"
   },
   {
     "id": "mirrorarmor",
@@ -1267,6 +1302,13 @@
     "description": "技のダメージを受けると\nでんき威力アップ状態になる。"
   },
   {
+    "id": "goodasgold",
+    "slug": "good-as-gold",
+    "slugLoc": "ougonnokarada",
+    "name": "おうごんのからだ",
+    "description": "相手からの変化技が効かない。"
+  },
+  {
     "id": "opportunist",
     "slug": "opportunist",
     "slugLoc": "binziyou",
@@ -1344,11 +1386,25 @@
     "description": "ノーマルタイプの技がドラゴンタイプになり\n威力が１．２倍になる。"
   },
   {
+    "id": "eelevate",
+    "slug": "eelevate",
+    "slugLoc": "unaginobori",
+    "name": "うなぎのぼり",
+    "description": "地面にいないことになり\nじめんタイプの技　まきびし　どくびし\nねばねばネット状態が効かない。\n攻撃で相手を倒すと\n自分の最も高い能力が１段階上がる。"
+  },
+  {
     "id": "megasol",
     "slug": "mega-sol",
     "slugLoc": "megasora",
     "name": "メガソーラー",
     "description": "天気が　にほんばれ状態でなくても\nにほんばれ状態として\n技を使うことができる。"
+  },
+  {
+    "id": "firemane",
+    "slug": "fire-mane",
+    "slugLoc": "honoonotategami",
+    "name": "ほのおのたてがみ",
+    "description": "ほのおタイプの技の威力が１．５倍になる。"
   },
   {
     "id": "spicyspray",

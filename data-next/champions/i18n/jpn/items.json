@@ -432,6 +432,54 @@
     "pluralName": "かいがらのすず"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "koukakurenzu",
+    "name": "こうかくレンズ",
+    "description": "技の命中率が\n１．１倍になる。",
+    "pluralName": "こうかくレンズ"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "tikaranohatimaki",
+    "name": "ちからのハチマキ",
+    "description": "物理技の威力が\n１．１倍になる。",
+    "pluralName": "ちからのハチマキ"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "monosirimegane",
+    "name": "ものしりメガネ",
+    "description": "特殊技の威力が\n１．１倍になる。",
+    "pluralName": "ものしりメガネ"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "tatuzinnoobi",
+    "name": "たつじんのおび",
+    "description": "使った技が効果バツグンの時\n威力が１．２倍になる。",
+    "pluralName": "たつじんのおび"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "hikarinonendo",
+    "name": "ひかりのねんど",
+    "description": "ひかりのかべ　リフレクター\nオーロラベール　を使った時\n継続時間が３ターン長くなる。\n（合計８ターン）",
+    "pluralName": "ひかりのねんど"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "inotinotama",
+    "name": "いのちのたま",
+    "description": "技の威力が１．３倍になるが\n攻撃が成功するたび\n最大ＨＰの１／１０減る。",
+    "pluralName": "いのちのたま"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "kiainotasuki",
@@ -440,12 +488,84 @@
     "pluralName": "きあいのタスキ"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "huokasurenzu",
+    "name": "フォーカスレンズ",
+    "description": "相手よりも　行動順が遅い時\n技の命中率が１．２倍になる。",
+    "pluralName": "フォーカスレンズ"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "metoronomu",
+    "name": "メトロノーム",
+    "description": "同じ技を連続で使った場合　威力が上がる。\n２回目で１．２倍　３回目で１．４倍と上がり\n最大で２倍まで上がる。やめると元に戻る。",
+    "pluralName": "メトロノーム"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "kuroitetukiyuu",
+    "name": "くろいてっきゅう",
+    "description": "素早さが１／２になる。地面にいないポケモンは\n地面にいることになり　じめんタイプの技\nまきびし　どくびし　ねばねばネット状態が\n効くようになる。",
+    "pluralName": "くろいてっきゅう"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "tumetaiiwa",
+    "name": "つめたいいわ",
+    "description": "技や特性で　ゆき状態にした時\n継続時間が３ターン長くなる。\n（合計８ターン）",
+    "pluralName": "つめたいいわ"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "sarasaraiwa",
+    "name": "さらさらいわ",
+    "description": "技や特性で　すなあらし状態にした時\n継続時間が３ターン長くなる。\n（合計８ターン）",
+    "pluralName": "さらさらいわ"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "atuiiwa",
+    "name": "あついいわ",
+    "description": "技や特性で　にほんばれ状態にした時\n継続時間が３ターン長くなる。\n（合計８ターン）",
+    "pluralName": "あついいわ"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "simetutaiwa",
+    "name": "しめったいわ",
+    "description": "技や特性で　あめ状態にした時\n継続時間が３ターン長くなる。\n（合計８ターン）",
+    "pluralName": "しめったいわ"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "kodawarisukahu",
     "name": "こだわりスカーフ",
     "description": "素早さが１．５倍になるが\n１度技を出すと　交代するまで\nその技しか出せなくなる。",
     "pluralName": "こだわりスカーフ"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "kireinanukegara",
+    "name": "きれいなぬけがら",
+    "description": "交代を邪魔する効果を無視して\n手持ちの他のポケモンと\n交代することができる。",
+    "pluralName": "きれいなぬけがら"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "ookinanetuko",
+    "name": "おおきなねっこ",
+    "description": "ＨＰを吸い取る技で回復する量が\n１．３倍になる。ねをはる\nちからをすいとる等も１．３倍になる。",
+    "pluralName": "おおきなねっこ"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "カメックスナイト",
     "description": "カメックスが\nメガシンカすることができる持ち物。",
     "pluralName": "カメックスナイト"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "basiyamonaito",
+    "name": "バシャーモナイト",
+    "description": "バシャーモが\nメガシンカすることができる持ち物。",
+    "pluralName": "バシャーモナイト"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "ヘラクロスナイト"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "kutitonaito",
+    "name": "クチートナイト",
+    "description": "クチートが\nメガシンカすることができる持ち物。",
+    "pluralName": "クチートナイト"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "raiborutonaito",
@@ -646,6 +782,22 @@
     "name": "ロゼルのみ",
     "description": "効果バツグンのフェアリータイプの\n技を受けた時　ダメージが半減する。\n１度使うと　その対戦中は　無くなる。",
     "pluralName": "ロゼルのみ"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "ragurazinaito",
+    "name": "ラグラージナイト",
+    "description": "ラグラージが\nメガシンカすることができる持ち物。",
+    "pluralName": "ラグラージナイト"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "ziyukainnaito",
+    "name": "ジュカインナイト",
+    "description": "ジュカインが\nメガシンカすることができる持ち物。",
+    "pluralName": "ジュカインナイト"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "タブンネナイト",
     "description": "タブンネが\nメガシンカすることができる持ち物。",
     "pluralName": "タブンネナイト"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "metagurosunaito",
+    "name": "メタグロスナイト",
+    "description": "メタグロスが\nメガシンカすることができる持ち物。",
+    "pluralName": "メタグロスナイト"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "ドリュウズナイト"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "pendoranaito",
+    "name": "ペンドラナイト",
+    "description": "ペンドラーが\nメガシンカすることができる持ち物。",
+    "pluralName": "ペンドラナイト"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "zuruzukinaito",
+    "name": "ズルズキナイト",
+    "description": "ズルズキンが\nメガシンカすることができる持ち物。",
+    "pluralName": "ズルズキナイト"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "sibirudonaito",
+    "name": "シビルドナイト",
+    "description": "シビルドンが\nメガシンカすることができる持ち物。",
+    "pluralName": "シビルドナイト"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "siyanderanaito",
@@ -864,12 +1048,44 @@
     "pluralName": "ゲッコウガナイト"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "kaenzisinaito",
+    "name": "カエンジシナイト",
+    "description": "カエンジシが\nメガシンカすることができる持ち物。",
+    "pluralName": "カエンジシナイト"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "huraetutenaito",
     "name": "フラエッテナイト",
     "description": "フラエッテ　えいえんのはな　が\nメガシンカすることができる持ち物。",
     "pluralName": "フラエッテナイト"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "karamanenaito",
+    "name": "カラマネナイト",
+    "description": "カラマネロが\nメガシンカすることができる持ち物。",
+    "pluralName": "カラマネナイト"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "gamenodesunaito",
+    "name": "ガメノデスナイト",
+    "description": "ガメノデスが\nメガシンカすることができる持ち物。",
+    "pluralName": "ガメノデスナイト"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "doramidonaito",
+    "name": "ドラミドナイト",
+    "description": "ドラミドロが\nメガシンカすることができる持ち物。",
+    "pluralName": "ドラミドナイト"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "ジジーロナイト"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "tairetunaito",
+    "name": "タイレーツナイト",
+    "description": "タイレーツが\nメガシンカすることができる持ち物。",
+    "pluralName": "タイレーツナイト"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "raitiyuunaitox",
+    "name": "ライチュウナイトＸ",
+    "description": "ライチュウが\nメガシンカすることができる持ち物。\nアローラのすがたには効果がない。\n（メガライチュウＸ）",
+    "pluralName": "ライチュウナイトＸ"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "raitiyuunaitoy",
+    "name": "ライチュウナイトＹ",
+    "description": "ライチュウが\nメガシンカすることができる持ち物。\nアローラのすがたには効果がない。\n（メガライチュウＹ）",
+    "pluralName": "ライチュウナイトＹ"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "tirinnaito",
     "name": "チリーンナイト",
     "description": "チリーンが\nメガシンカすることができる持ち物。",
     "pluralName": "チリーンナイト"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "mukuhokunaito",
+    "name": "ムクホークナイト",
+    "description": "ムクホークが\nメガシンカすることができる持ち物。",
+    "pluralName": "ムクホークナイト"
   },
   {
     "id": "golurkite",

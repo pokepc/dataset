@@ -432,6 +432,54 @@
     "pluralName": "Shell Bells"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "wide-lens",
+    "name": "Wide Lens",
+    "description": "Boosts the accuracy of the holder's moves by 10%.",
+    "pluralName": "Wide Lenses"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "muscle-band",
+    "name": "Muscle Band",
+    "description": "Boosts the power of the holder's physical moves by 10%.",
+    "pluralName": "Muscle Bands"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "wise-glasses",
+    "name": "Wise Glasses",
+    "description": "Boosts the power of the holder's special moves by 10%.",
+    "pluralName": "Wise Glasses"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "expert-belt",
+    "name": "Expert Belt",
+    "description": "Boosts the power of the holder's supereffective moves\nby 20%.",
+    "pluralName": "Expert Belts"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "light-clay",
+    "name": "Light Clay",
+    "description": "When the holder uses Light Screen, Reflect, or\nAurora Veil, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Light Clays"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "life-orb",
+    "name": "Life Orb",
+    "description": "Boosts the power of the holder's moves by 30%.\nHowever, the holder also loses 1/10 of its max HP\neach time it successfully lands an attack.",
+    "pluralName": "Life Orbs"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "focus-sash",
@@ -440,12 +488,84 @@
     "pluralName": "Focus Sashes"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "zoom-lens",
+    "name": "Zoom Lens",
+    "description": "Boosts the accuracy of the holder's moves by 20% when\nthe holder acts after the targets.",
+    "pluralName": "Zoom Lenses"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "metronome",
+    "name": "Metronome",
+    "description": "Boosts the power of a move that is used repeatedly.\nThis boost will be 20% on the second usage, 40% on\nthe third, and so on, up to a maximum boost of 100%.\nIf the streak is broken, the move's power returns to its\nusual value.",
+    "pluralName": "Metronomes"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "iron-ball",
+    "name": "Iron Ball",
+    "description": "Halves the holder's Speed stat. If the holder is off the\nground, it will be grounded, meaning it can be affected\nby Ground-type moves, as well as the Spikes, Toxic\nSpikes, and Sticky Web statuses.",
+    "pluralName": "Iron Balls"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "icy-rock",
+    "name": "Icy Rock",
+    "description": "When the holder summons snow with its moves or\nAbility, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Icy Rocks"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "smooth-rock",
+    "name": "Smooth Rock",
+    "description": "When the holder summons a sandstorm with its moves\nor Ability, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Smooth Rocks"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "heat-rock",
+    "name": "Heat Rock",
+    "description": "When the holder summons harsh sunlight with its moves\nor Ability, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Heat Rocks"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "damp-rock",
+    "name": "Damp Rock",
+    "description": "When the holder summons rain with its moves or\nAbility, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Damp Rocks"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "choice-scarf",
     "name": "Choice Scarf",
     "description": "Boosts the holder's Speed stat by 50%. However, once\nthe holder uses a move, it becomes unable to use any\nother move but that one until it switches out of battle.",
     "pluralName": "Choice Scarves"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "shed-shell",
+    "name": "Shed Shell",
+    "description": "Enables the holder to ignore any effects that would\nusually prevent it from switching out of battle and being\nreplaced by another party Pokémon.",
+    "pluralName": "Shed Shells"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "big-root",
+    "name": "Big Root",
+    "description": "Boosts the amount of HP restored through HP-absorbing\nmoves by 30%. HP restored by moves such as Ingrain\nand Strength Sap will also be boosted by 30%.",
+    "pluralName": "Big Roots"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "Blastoisinite",
     "description": "A held item that allows Blastoise to Mega Evolve.",
     "pluralName": "Blastoisinites"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "blazikenite",
+    "name": "Blazikenite",
+    "description": "A held item that allows Blaziken to Mega Evolve.",
+    "pluralName": "Blazikenites"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "Heracronites"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "mawilite",
+    "name": "Mawilite",
+    "description": "A held item that allows Mawile to Mega Evolve.",
+    "pluralName": "Mawilites"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "manectite",
@@ -646,6 +782,22 @@
     "name": "Roseli Berry",
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Fairy-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Roseli Berries"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "swampertite",
+    "name": "Swampertite",
+    "description": "A held item that allows Swampert to Mega Evolve.",
+    "pluralName": "Swampertites"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "sceptilite",
+    "name": "Sceptilite",
+    "description": "A held item that allows Sceptile to Mega Evolve.",
+    "pluralName": "Sceptilites"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "Audinite",
     "description": "A held item that allows Audino to Mega Evolve.",
     "pluralName": "Audinites"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "metagrossite",
+    "name": "Metagrossite",
+    "description": "A held item that allows Metagross to Mega Evolve.",
+    "pluralName": "Metagrossites"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "Excadrites"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "scolipite",
+    "name": "Scolipite",
+    "description": "A held item that allows Scolipede to Mega Evolve.",
+    "pluralName": "Scolipites"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "scraftinite",
+    "name": "Scraftinite",
+    "description": "A held item that allows Scrafty to Mega Evolve.",
+    "pluralName": "Scraftinites"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "eelektrossite",
+    "name": "Eelektrossite",
+    "description": "A held item that allows Eelektross to Mega Evolve.",
+    "pluralName": "Eelektrossites"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "chandelurite",
@@ -864,12 +1048,44 @@
     "pluralName": "Greninjites"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "pyroarite",
+    "name": "Pyroarite",
+    "description": "A held item that allows Pyroar to Mega Evolve.",
+    "pluralName": "Pyroarites"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "floettite",
     "name": "Floettite",
     "description": "A held item that allows Eternal Flower Floette to\nMega Evolve.",
     "pluralName": "Floettites"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "malamarite",
+    "name": "Malamarite",
+    "description": "A held item that allows Malamar to Mega Evolve.",
+    "pluralName": "Malamarites"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "barbaracite",
+    "name": "Barbaracite",
+    "description": "A held item that allows Barbaracle to Mega Evolve.",
+    "pluralName": "Barbaracites"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "dragalgite",
+    "name": "Dragalgite",
+    "description": "A held item that allows Dragalge to Mega Evolve.",
+    "pluralName": "Dragalgites"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "Drampanites"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "falinksite",
+    "name": "Falinksite",
+    "description": "A held item that allows Falinks to Mega Evolve.",
+    "pluralName": "Falinksites"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "raichunite-x",
+    "name": "Raichunite X",
+    "description": "A held item that allows Raichu to Mega Evolve into\nMega Raichu X. It has no effect on Alolan Raichu.",
+    "pluralName": "Raichunite Xs"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "raichunite-y",
+    "name": "Raichunite Y",
+    "description": "A held item that allows Raichu to Mega Evolve into\nMega Raichu Y. It has no effect on Alolan Raichu.",
+    "pluralName": "Raichunite Ys"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "chimechite",
     "name": "Chimechite",
     "description": "A held item that allows Chimecho to Mega Evolve.",
     "pluralName": "Chimechites"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "staraptite",
+    "name": "Staraptite",
+    "description": "A held item that allows Staraptor to Mega Evolve.",
+    "pluralName": "Staraptites"
   },
   {
     "id": "golurkite",

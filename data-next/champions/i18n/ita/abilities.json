@@ -168,6 +168,13 @@
     "description": "Fa sì che il Pokémon non sia più a contatto con il terreno,\nrendendolo così immune alle mosse di tipo Terra e agli stati\nPunte, Punte velenose e Rete vischiosa."
   },
   {
+    "id": "effectspore",
+    "slug": "effect-spore",
+    "slugLoc": "spargispora",
+    "name": "Spargispora",
+    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento, Paralisi o Sonno a chi gli infligge una mossa\nda contatto."
+  },
+  {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "sincronismo",
@@ -656,6 +663,13 @@
     "slugLoc": "presagio",
     "name": "Presagio",
     "description": "Rivela se gli avversari hanno mosse superefficaci o che causano\nKO immediato quando il Pokémon entra in campo."
+  },
+  {
+    "id": "forewarn",
+    "slug": "forewarn",
+    "slugLoc": "premonizione",
+    "name": "Premonizione",
+    "description": "Rivela una mossa con potenza alta tra quelle degli avversari\nquando il Pokémon entra in campo."
   },
   {
     "id": "unaware",
@@ -1162,11 +1176,32 @@
     "description": "Se il Pokémon subisce danni da una mossa che lo manda KO,\ninfligge a chi lo ha colpito gli stessi danni subiti."
   },
   {
+    "id": "fluffy",
+    "slug": "fluffy",
+    "slugLoc": "morbidone",
+    "name": "Morbidone",
+    "description": "Dimezza i danni subiti dalle mosse da contatto, ma raddoppia\nquelli subiti dalle mosse di tipo Fuoco."
+  },
+  {
+    "id": "tanglinghair",
+    "slug": "tangling-hair",
+    "slugLoc": "boccolidoro",
+    "name": "Boccolidoro",
+    "description": "Riduce di 1 grado la Velocità di chi colpisce il Pokémon\ncon una mossa da contatto."
+  },
+  {
     "id": "receiver",
     "slug": "receiver",
     "slugLoc": "ricezione",
     "name": "Ricezione",
     "description": "Cambia l'abilità del Pokémon in quella di un alleato andato KO."
+  },
+  {
+    "id": "electricsurge",
+    "slug": "electric-surge",
+    "slugLoc": "elettrogenesi",
+    "name": "Elettrogenesi",
+    "description": "Quando il Pokémon entra in campo, causa lo stato Campo\nElettrico sull'intero campo di lotta per 5 turni."
   },
   {
     "id": "mirrorarmor",
@@ -1267,6 +1302,13 @@
     "description": "Fa entrare il Pokémon nello stato Carica elettrica quando\nsubisce danni da una mossa."
   },
   {
+    "id": "goodasgold",
+    "slug": "good-as-gold",
+    "slugLoc": "corpo-aureo",
+    "name": "Corpo Aureo",
+    "description": "Rende il Pokémon immune alle mosse di stato sferrate da altri."
+  },
+  {
     "id": "opportunist",
     "slug": "opportunist",
     "slugLoc": "scrocco",
@@ -1344,11 +1386,25 @@
     "description": "Cambia le mosse di tipo Normale in tipo Drago e aumenta\nla loro potenza del 20%."
   },
   {
+    "id": "eelevate",
+    "slug": "eelevate",
+    "slugLoc": "rapidascesa",
+    "name": "Rapidascesa",
+    "description": "Fa sì che il Pokémon non sia più a contatto con il terreno,\nrendendolo così immune alle mosse di tipo Terra e agli stati\nPunte, Punte velenose e Rete vischiosa. Aumenta di 1 grado\nla sua statistica più alta quando causa un KO con un attacco."
+  },
+  {
     "id": "megasol",
     "slug": "mega-sol",
     "slugLoc": "megasolar",
     "name": "Megasolar",
     "description": "Permette di usare le mosse come se lo stato Sole intenso\nfosse attivo."
+  },
+  {
+    "id": "firemane",
+    "slug": "fire-mane",
+    "slugLoc": "pirocriniera",
+    "name": "Pirocriniera",
+    "description": "Aumenta del 50% la potenza delle mosse di tipo Fuoco."
   },
   {
     "id": "spicyspray",

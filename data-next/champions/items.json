@@ -540,6 +540,66 @@
     "categories": ["recovery"]
   },
   {
+    "id": "widelens",
+    "championsId": "265",
+    "pokeApiId": 242,
+    "slug": "wide-lens",
+    "name": "Wide Lens",
+    "description": "Boosts the accuracy of the holder's moves by 10%.",
+    "pluralName": "Wide Lenses",
+    "categories": ["other"]
+  },
+  {
+    "id": "muscleband",
+    "championsId": "266",
+    "pokeApiId": 243,
+    "slug": "muscle-band",
+    "name": "Muscle Band",
+    "description": "Boosts the power of the holder's physical moves by 10%.",
+    "pluralName": "Muscle Bands",
+    "categories": ["power_boost"]
+  },
+  {
+    "id": "wiseglasses",
+    "championsId": "267",
+    "pokeApiId": 244,
+    "slug": "wise-glasses",
+    "name": "Wise Glasses",
+    "description": "Boosts the power of the holder's special moves by 10%.",
+    "pluralName": "Wise Glasses",
+    "categories": ["power_boost"]
+  },
+  {
+    "id": "expertbelt",
+    "championsId": "268",
+    "pokeApiId": 245,
+    "slug": "expert-belt",
+    "name": "Expert Belt",
+    "description": "Boosts the power of the holder's supereffective moves\nby 20%.",
+    "pluralName": "Expert Belts",
+    "categories": ["power_boost"]
+  },
+  {
+    "id": "lightclay",
+    "championsId": "269",
+    "pokeApiId": 246,
+    "slug": "light-clay",
+    "name": "Light Clay",
+    "description": "When the holder uses Light Screen, Reflect, or\nAurora Veil, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Light Clays",
+    "categories": ["effect_extend"]
+  },
+  {
+    "id": "lifeorb",
+    "championsId": "270",
+    "pokeApiId": 247,
+    "slug": "life-orb",
+    "name": "Life Orb",
+    "description": "Boosts the power of the holder's moves by 30%.\nHowever, the holder also loses 1/10 of its max HP\neach time it successfully lands an attack.",
+    "pluralName": "Life Orbs",
+    "categories": ["power_boost"]
+  },
+  {
     "id": "focussash",
     "championsId": "275",
     "pokeApiId": 252,
@@ -550,6 +610,76 @@
     "categories": ["defense"]
   },
   {
+    "id": "zoomlens",
+    "championsId": "276",
+    "pokeApiId": 253,
+    "slug": "zoom-lens",
+    "name": "Zoom Lens",
+    "description": "Boosts the accuracy of the holder's moves by 20% when\nthe holder acts after the targets.",
+    "pluralName": "Zoom Lenses",
+    "categories": ["other"]
+  },
+  {
+    "id": "metronome",
+    "championsId": "277",
+    "pokeApiId": 254,
+    "slug": "metronome",
+    "name": "Metronome",
+    "description": "Boosts the power of a move that is used repeatedly.\nThis boost will be 20% on the second usage, 40% on\nthe third, and so on, up to a maximum boost of 100%.\nIf the streak is broken, the move's power returns to its\nusual value.",
+    "pluralName": "Metronomes",
+    "categories": ["power_boost"]
+  },
+  {
+    "id": "ironball",
+    "championsId": "278",
+    "pokeApiId": 255,
+    "slug": "iron-ball",
+    "name": "Iron Ball",
+    "description": "Halves the holder's Speed stat. If the holder is off the\nground, it will be grounded, meaning it can be affected\nby Ground-type moves, as well as the Spikes, Toxic\nSpikes, and Sticky Web statuses.",
+    "pluralName": "Iron Balls",
+    "categories": ["other"]
+  },
+  {
+    "id": "icyrock",
+    "championsId": "282",
+    "pokeApiId": 259,
+    "slug": "icy-rock",
+    "name": "Icy Rock",
+    "description": "When the holder summons snow with its moves or\nAbility, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Icy Rocks",
+    "categories": ["effect_extend"]
+  },
+  {
+    "id": "smoothrock",
+    "championsId": "283",
+    "pokeApiId": 260,
+    "slug": "smooth-rock",
+    "name": "Smooth Rock",
+    "description": "When the holder summons a sandstorm with its moves\nor Ability, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Smooth Rocks",
+    "categories": ["effect_extend"]
+  },
+  {
+    "id": "heatrock",
+    "championsId": "284",
+    "pokeApiId": 261,
+    "slug": "heat-rock",
+    "name": "Heat Rock",
+    "description": "When the holder summons harsh sunlight with its moves\nor Ability, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Heat Rocks",
+    "categories": ["effect_extend"]
+  },
+  {
+    "id": "damprock",
+    "championsId": "285",
+    "pokeApiId": 262,
+    "slug": "damp-rock",
+    "name": "Damp Rock",
+    "description": "When the holder summons rain with its moves or\nAbility, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Damp Rocks",
+    "categories": ["effect_extend"]
+  },
+  {
     "id": "choicescarf",
     "championsId": "287",
     "pokeApiId": 264,
@@ -558,6 +688,26 @@
     "description": "Boosts the holder's Speed stat by 50%. However, once\nthe holder uses a move, it becomes unable to use any\nother move but that one until it switches out of battle.",
     "pluralName": "Choice Scarves",
     "categories": ["stat_boost"]
+  },
+  {
+    "id": "shedshell",
+    "championsId": "295",
+    "pokeApiId": 272,
+    "slug": "shed-shell",
+    "name": "Shed Shell",
+    "description": "Enables the holder to ignore any effects that would\nusually prevent it from switching out of battle and being\nreplaced by another party Pokémon.",
+    "pluralName": "Shed Shells",
+    "categories": ["other"]
+  },
+  {
+    "id": "bigroot",
+    "championsId": "296",
+    "pokeApiId": 273,
+    "slug": "big-root",
+    "name": "Big Root",
+    "description": "Boosts the amount of HP restored through HP-absorbing\nmoves by 30%. HP restored by moves such as Ingrain\nand Strength Sap will also be boosted by 30%.",
+    "pluralName": "Big Roots",
+    "categories": ["recovery"]
   },
   {
     "id": "gengarite",
@@ -617,6 +767,16 @@
     "name": "Blastoisinite",
     "description": "A held item that allows Blastoise to Mega Evolve.",
     "pluralName": "Blastoisinites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "blazikenite",
+    "championsId": "664",
+    "pokeApiId": 703,
+    "slug": "blazikenite",
+    "name": "Blazikenite",
+    "description": "A held item that allows Blaziken to Mega Evolve.",
+    "pluralName": "Blazikenites",
     "categories": ["mega_stone"]
   },
   {
@@ -780,6 +940,16 @@
     "categories": ["mega_stone"]
   },
   {
+    "id": "mawilite",
+    "championsId": "681",
+    "pokeApiId": 720,
+    "slug": "mawilite",
+    "name": "Mawilite",
+    "description": "A held item that allows Mawile to Mega Evolve.",
+    "pluralName": "Mawilites",
+    "categories": ["mega_stone"]
+  },
+  {
     "id": "manectite",
     "championsId": "682",
     "pokeApiId": 721,
@@ -808,6 +978,26 @@
     "description": "Halves the damage taken when the holder is hit with a\nsupereffective Fairy-type move. Disappears for the\nduration of the battle after a single use.",
     "pluralName": "Roseli Berries",
     "categories": ["berry", "defense"]
+  },
+  {
+    "id": "swampertite",
+    "championsId": "752",
+    "pokeApiId": 793,
+    "slug": "swampertite",
+    "name": "Swampertite",
+    "description": "A held item that allows Swampert to Mega Evolve.",
+    "pluralName": "Swampertites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "sceptilite",
+    "championsId": "753",
+    "pokeApiId": 794,
+    "slug": "sceptilite",
+    "name": "Sceptilite",
+    "description": "A held item that allows Sceptile to Mega Evolve.",
+    "pluralName": "Sceptilites",
+    "categories": ["mega_stone"]
   },
   {
     "id": "sablenite",
@@ -847,6 +1037,16 @@
     "name": "Audinite",
     "description": "A held item that allows Audino to Mega Evolve.",
     "pluralName": "Audinites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "metagrossite",
+    "championsId": "758",
+    "pokeApiId": 799,
+    "slug": "metagrossite",
+    "name": "Metagrossite",
+    "description": "A held item that allows Metagross to Mega Evolve.",
+    "pluralName": "Metagrossites",
     "categories": ["mega_stone"]
   },
   {
@@ -1030,6 +1230,33 @@
     "categories": ["mega_stone"]
   },
   {
+    "id": "scolipite",
+    "championsId": "2571",
+    "slug": "scolipite",
+    "name": "Scolipite",
+    "description": "A held item that allows Scolipede to Mega Evolve.",
+    "pluralName": "Scolipites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "scraftinite",
+    "championsId": "2572",
+    "slug": "scraftinite",
+    "name": "Scraftinite",
+    "description": "A held item that allows Scrafty to Mega Evolve.",
+    "pluralName": "Scraftinites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "eelektrossite",
+    "championsId": "2573",
+    "slug": "eelektrossite",
+    "name": "Eelektrossite",
+    "description": "A held item that allows Eelektross to Mega Evolve.",
+    "pluralName": "Eelektrossites",
+    "categories": ["mega_stone"]
+  },
+  {
     "id": "chandelurite",
     "championsId": "2574",
     "slug": "chandelurite",
@@ -1066,12 +1293,48 @@
     "categories": ["mega_stone"]
   },
   {
+    "id": "pyroarite",
+    "championsId": "2578",
+    "slug": "pyroarite",
+    "name": "Pyroarite",
+    "description": "A held item that allows Pyroar to Mega Evolve.",
+    "pluralName": "Pyroarites",
+    "categories": ["mega_stone"]
+  },
+  {
     "id": "floettite",
     "championsId": "2579",
     "slug": "floettite",
     "name": "Floettite",
     "description": "A held item that allows Eternal Flower Floette to\nMega Evolve.",
     "pluralName": "Floettites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "malamarite",
+    "championsId": "2580",
+    "slug": "malamarite",
+    "name": "Malamarite",
+    "description": "A held item that allows Malamar to Mega Evolve.",
+    "pluralName": "Malamarites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "barbaracite",
+    "championsId": "2581",
+    "slug": "barbaracite",
+    "name": "Barbaracite",
+    "description": "A held item that allows Barbaracle to Mega Evolve.",
+    "pluralName": "Barbaracites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "dragalgite",
+    "championsId": "2582",
+    "slug": "dragalgite",
+    "name": "Dragalgite",
+    "description": "A held item that allows Dragalge to Mega Evolve.",
+    "pluralName": "Dragalgites",
     "categories": ["mega_stone"]
   },
   {
@@ -1093,12 +1356,48 @@
     "categories": ["mega_stone"]
   },
   {
+    "id": "falinksite",
+    "championsId": "2587",
+    "slug": "falinksite",
+    "name": "Falinksite",
+    "description": "A held item that allows Falinks to Mega Evolve.",
+    "pluralName": "Falinksites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "raichunitex",
+    "championsId": "2635",
+    "slug": "raichunite-x",
+    "name": "Raichunite X",
+    "description": "A held item that allows Raichu to Mega Evolve into\nMega Raichu X. It has no effect on Alolan Raichu.",
+    "pluralName": "Raichunite Xs",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "raichunitey",
+    "championsId": "2636",
+    "slug": "raichunite-y",
+    "name": "Raichunite Y",
+    "description": "A held item that allows Raichu to Mega Evolve into\nMega Raichu Y. It has no effect on Alolan Raichu.",
+    "pluralName": "Raichunite Ys",
+    "categories": ["mega_stone"]
+  },
+  {
     "id": "chimechite",
     "championsId": "2637",
     "slug": "chimechite",
     "name": "Chimechite",
     "description": "A held item that allows Chimecho to Mega Evolve.",
     "pluralName": "Chimechites",
+    "categories": ["mega_stone"]
+  },
+  {
+    "id": "staraptite",
+    "championsId": "2639",
+    "slug": "staraptite",
+    "name": "Staraptite",
+    "description": "A held item that allows Staraptor to Mega Evolve.",
+    "pluralName": "Staraptites",
     "categories": ["mega_stone"]
   },
   {

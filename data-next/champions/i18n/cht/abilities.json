@@ -168,6 +168,13 @@
     "description": "會變為不在地面上，\n地面屬性招式、撒菱、毒菱、\n黏黏網狀態無效。"
   },
   {
+    "id": "effectspore",
+    "slug": "effect-spore",
+    "slugLoc": "bao-zi",
+    "name": "孢子",
+    "description": "受到接觸類招式時，\n有30%的機率會讓對手變為\n中毒、麻痺、睡眠之中的一種狀態。"
+  },
+  {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "tong-bu",
@@ -656,6 +663,13 @@
     "slugLoc": "wei-xian-yu-zhi",
     "name": "危險預知",
     "description": "出場時，若對手擁有對自己\n效果絕佳或一擊必殺的招式，\n則能夠察覺。"
+  },
+  {
+    "id": "forewarn",
+    "slug": "forewarn",
+    "slugLoc": "yu-zhi-meng",
+    "name": "預知夢",
+    "description": "出場時，會從對手的招式中\n讀取1種威力高的招式。"
   },
   {
     "id": "unaware",
@@ -1162,11 +1176,32 @@
     "description": "受到會瀕死的招式傷害時，\n會將從對手受到的傷害還給對手。"
   },
   {
+    "id": "fluffy",
+    "slug": "fluffy",
+    "slugLoc": "mao-rong-rong",
+    "name": "毛茸茸",
+    "description": "因接觸類招式而受到的傷害會減半。\n因火屬性招式而受到的傷害會變為2倍。"
+  },
+  {
+    "id": "tanglinghair",
+    "slug": "tangling-hair",
+    "slugLoc": "juan-fa",
+    "name": "捲髮",
+    "description": "受到接觸類招式時，\n會讓對手的速度降低1階。"
+  },
+  {
     "id": "receiver",
     "slug": "receiver",
     "slugLoc": "jie-qiu-shou",
     "name": "接球手",
     "description": "會變為和被打倒的同伴相同的特性。"
+  },
+  {
+    "id": "electricsurge",
+    "slug": "electric-surge",
+    "slugLoc": "dian-qi-zhi-zao-zhe",
+    "name": "電氣製造者",
+    "description": "自出場起的5回合內，\n會讓整個場上變為電氣場地狀態。"
   },
   {
     "id": "mirrorarmor",
@@ -1267,6 +1302,13 @@
     "description": "受到招式傷害時，\n會變為電屬性威力提高狀態。"
   },
   {
+    "id": "goodasgold",
+    "slug": "good-as-gold",
+    "slugLoc": "huang-jin-zhi-qu",
+    "name": "黃金之軀",
+    "description": "來自對手的變化招式無效。"
+  },
+  {
     "id": "opportunist",
     "slug": "opportunist",
     "slugLoc": "gen-feng",
@@ -1344,11 +1386,25 @@
     "description": "一般屬性招式會變為龍屬性，\n威力會變為1.2倍。"
   },
   {
+    "id": "eelevate",
+    "slug": "eelevate",
+    "slugLoc": "man-man-gao-sheng",
+    "name": "鰻鰻高升",
+    "description": "會變為不在地面上，\n地面屬性招式、撒菱、\n毒菱、黏黏網狀態無效。\n用攻擊打倒對手時，\n自己最高的那項能力會提高1階。"
+  },
+  {
     "id": "megasol",
     "slug": "mega-sol",
     "slugLoc": "chao-ji-ri-guang",
     "name": "超級日光",
     "description": "就算天氣不是大晴天狀態，\n也能比照大晴天狀態使用招式。"
+  },
+  {
+    "id": "firemane",
+    "slug": "fire-mane",
+    "slugLoc": "huo-yan-zong-mao",
+    "name": "火焰鬃毛",
+    "description": "火屬性招式威力會變為1.5倍。"
   },
   {
     "id": "spicyspray",

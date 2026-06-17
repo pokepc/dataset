@@ -432,6 +432,54 @@
     "pluralName": "Muschelglocken"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "grosslinse",
+    "name": "Großlinse",
+    "description": "Erhöht die Genauigkeit von Attacken des Trägers\num 10 %.",
+    "pluralName": "Großlinsen"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "muskelband",
+    "name": "Muskelband",
+    "description": "Erhöht die Stärke von physischen Attacken des Trägers\num 10 %.",
+    "pluralName": "Muskelbänder"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "schlaubrille",
+    "name": "Schlaubrille",
+    "description": "Erhöht die Stärke von Spezial-Attacken des Trägers\num 10 %.",
+    "pluralName": "Schlaubrillen"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "expertengurt",
+    "name": "Expertengurt",
+    "description": "Erhöht die Stärke von sehr effektiven Attacken\ndes Trägers um 20 %.",
+    "pluralName": "Expertengurte"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "lichtlehm",
+    "name": "Lichtlehm",
+    "description": "Verlängert die Dauer von Lichtschild, Reflektor und\nAuroraschleier des Trägers um 3 Runden, sodass sie\ninsgesamt 8 Runden anhalten.",
+    "pluralName": "Lichtlehm"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "leben-orb",
+    "name": "Leben-Orb",
+    "description": "Erhöht die Stärke von Attacken des Trägers um 30 %,\naber mit jedem erfolgreichen Angriff verliert der Träger\n1/10 seiner maximalen KP.",
+    "pluralName": "Leben-Orbs"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "fokusgurt",
@@ -440,12 +488,84 @@
     "pluralName": "Fokusgurte"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "zoomlinse",
+    "name": "Zoomlinse",
+    "description": "Erhöht die Genauigkeit von Attacken des Trägers\num 20 %, wenn das Ziel vor ihm handelt.",
+    "pluralName": "Zoomlinsen"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "metronom",
+    "name": "Metronom",
+    "description": "Erhöht die Stärke einer Attacke, wenn sie mehrmals\nin Folge ausgeführt wird, mit jedem erneuten Einsatz\num jeweils 20 %, bis zu einer maximalen Erhöhung\nvon 100 %.\nDieser Effekt geht verloren, wenn die Folge\nunterbrochen wird.",
+    "pluralName": "Metronome"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "eisenkugel",
+    "name": "Eisenkugel",
+    "description": "Halbiert die Initiative des Trägers.\nBefindet der Träger sich nicht auf dem Boden,\ngilt er als auf dem Boden befindlich und kann von\nBoden-Attacken sowie Stachler, Giftspitzen und\nKlebenetz getroffen werden.",
+    "pluralName": "Eisenkugeln"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "eisbrocken",
+    "name": "Eisbrocken",
+    "description": "Verlängert die Dauer von Schnee, den der Träger\ndurch Attacken oder Fähigkeiten erzeugt hat,\num 3 Runden, sodass er insgesamt 8 Runden anhält.",
+    "pluralName": "Eisbrocken"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "glattbrocken",
+    "name": "Glattbrocken",
+    "description": "Verlängert die Dauer von Sandstürmen, die der Träger\ndurch Attacken oder Fähigkeiten erzeugt hat,\num 3 Runden, sodass sie insgesamt 8 Runden anhalten.",
+    "pluralName": "Glattbrocken"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "heissbrocken",
+    "name": "Heißbrocken",
+    "description": "Verlängert die Dauer von Sonnenschein, den der Träger\ndurch Attacken oder Fähigkeiten erzeugt hat,\num 3 Runden, sodass er insgesamt 8 Runden anhält.",
+    "pluralName": "Heißbrocken"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "nassbrocken",
+    "name": "Nassbrocken",
+    "description": "Verlängert die Dauer von Regen, den der Träger\ndurch Attacken oder Fähigkeiten erzeugt hat,\num 3 Runden, sodass er insgesamt 8 Runden anhält.",
+    "pluralName": "Nassbrocken"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "wahlschal",
     "name": "Wahlschal",
     "description": "Erhöht die Initiative des Trägers um 50 %, aber nach dem\nersten Einsatz einer Attacke ist nur noch diese einsetzbar,\nbis der Träger ausgewechselt wird.",
     "pluralName": "Wahlschals"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "wechselhulle",
+    "name": "Wechselhülle",
+    "description": "Der Träger ignoriert sämtliche Effekte, die verhindern\nwürden, dass er gegen ein anderes Pokémon seines\nTeams ausgewechselt wird.",
+    "pluralName": "Wechselhüllen"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "grosswurzel",
+    "name": "Großwurzel",
+    "description": "Der Träger regeneriert mit KP-stehlenden Attacken 30 %\nmehr KP als sonst.\nWirkt auch bei Verwurzler, Kraftabsorber etc.",
+    "pluralName": "Großwurzeln"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "Turtoknit",
     "description": "Ein getragenes Item, das es Turtok ermöglicht,\neine Mega-Entwicklung durchzuführen.",
     "pluralName": "Turtoknite"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "lohgocknit",
+    "name": "Lohgocknit",
+    "description": "Ein getragenes Item, das es Lohgock ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Lohgocknite"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "Skarabornite"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "flunkifernit",
+    "name": "Flunkifernit",
+    "description": "Ein getragenes Item, das es Flunkifer ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Flunkifernite"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "voltensonit",
@@ -646,6 +782,22 @@
     "name": "Hibisbeere",
     "description": "Halbiert den Schaden einer sehr effektiven\nFeen-Attacke, von der der Träger getroffen wird.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
     "pluralName": "Hibisbeeren"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "sumpexnit",
+    "name": "Sumpexnit",
+    "description": "Ein getragenes Item, das es Sumpex ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Sumpexnite"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "gewaldronit",
+    "name": "Gewaldronit",
+    "description": "Ein getragenes Item, das es Gewaldro ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Gewaldronite"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "Ohrdochnit",
     "description": "Ein getragenes Item, das es Ohrdoch ermöglicht,\neine Mega-Entwicklung durchzuführen.",
     "pluralName": "Ohrdochnite"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "metagrossnit",
+    "name": "Metagrossnit",
+    "description": "Ein getragenes Item, das es Metagross ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Metagrossnite"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "Stalobornite"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "cerapendranit",
+    "name": "Cerapendranit",
+    "description": "Ein getragenes Item, das es Cerapendra ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Cerapendranite"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "irokexonit",
+    "name": "Irokexonit",
+    "description": "Ein getragenes Item, das es Irokex ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Irokexonite"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "zapplarangonit",
+    "name": "Zapplarangonit",
+    "description": "Ein getragenes Item, das es Zapplarang ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Zapplarangonite"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "skelabranit",
@@ -864,12 +1048,44 @@
     "pluralName": "Quajutsunite"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "pyroleonit",
+    "name": "Pyroleonit",
+    "description": "Ein getragenes Item, das es Pyroleo ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Pyroleonite"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "floetteonit",
     "name": "Floetteonit",
     "description": "Ein getragenes Item, das es Floette (Ewigblütler)\nermöglicht, eine Mega-Entwicklung durchzuführen.",
     "pluralName": "Floetteonite"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "calamaneronit",
+    "name": "Calamaneronit",
+    "description": "Ein getragenes Item, das es Calamanero ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Calamaneronite"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "thanathoranit",
+    "name": "Thanathoranit",
+    "description": "Ein getragenes Item, das es Thanathora ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Thanathoranite"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "tandraknit",
+    "name": "Tandraknit",
+    "description": "Ein getragenes Item, das es Tandrak ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Tandraknite"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "Sen-Longnite"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "legiosnit",
+    "name": "Legiosnit",
+    "description": "Ein getragenes Item, das es Legios ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Legiosnite"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "raichunit-x",
+    "name": "Raichunit X",
+    "description": "Ein getragenes Item, das es Raichu ermöglicht,\neine Mega-Entwicklung zu Mega-Raichu X durchzuführen.\nEs hat keine Wirkung auf ein Raichu in der Alola-Form.",
+    "pluralName": "Raichunite X"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "raichunit-y",
+    "name": "Raichunit Y",
+    "description": "Ein getragenes Item, das es Raichu ermöglicht,\neine Mega-Entwicklung zu Mega-Raichu Y durchzuführen.\nEs hat keine Wirkung auf ein Raichu in der Alola-Form.",
+    "pluralName": "Raichunite Y"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "palimpalimonit",
     "name": "Palimpalimonit",
     "description": "Ein getragenes Item, das es Palimpalim ermöglicht,\neine Mega-Entwicklung durchzuführen.",
     "pluralName": "Palimpalimonite"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "staraptornit",
+    "name": "Staraptornit",
+    "description": "Ein getragenes Item, das es Staraptor ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Staraptornite"
   },
   {
     "id": "golurkite",

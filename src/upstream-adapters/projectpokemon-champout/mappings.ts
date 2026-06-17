@@ -80,6 +80,7 @@ export const ITEM_CATEGORY_BY_CODE = {
   2: 'power_boost',
   3: 'defense',
   4: 'recovery',
+  5: 'effect_extend',
   6: 'berry',
   8: 'mega_stone',
   10: 'other',

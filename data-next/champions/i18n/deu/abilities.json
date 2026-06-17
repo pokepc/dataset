@@ -168,6 +168,13 @@
     "description": "Das Pokémon gilt als nicht auf dem Boden befindlich und\nBoden-Attacken sowie die Zustände Stachler, Giftspitzen\nund Klebenetz haben keine Wirkung auf es."
   },
   {
+    "id": "effectspore",
+    "slug": "effect-spore",
+    "slugLoc": "sporenwirt",
+    "name": "Sporenwirt",
+    "description": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird der Angreifer mit 30%iger Wahrscheinlichkeit\nvergiftet, paralysiert oder in Schlaf versetzt."
+  },
+  {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "synchro",
@@ -656,6 +663,13 @@
     "slugLoc": "vorahnung",
     "name": "Vorahnung",
     "description": "Das Pokémon ahnt bei Kampfantritt, ob ein Gegner über\nK.O.-Attacken oder Attacken verfügt, die sehr effektiv\ngegen es sind."
+  },
+  {
+    "id": "forewarn",
+    "slug": "forewarn",
+    "slugLoc": "vorwarnung",
+    "name": "Vorwarnung",
+    "description": "Das Pokémon erkennt bei Kampfantritt eine der gegnerischen\nAttacken mit der höchsten Stärke."
   },
   {
     "id": "unaware",
@@ -1162,11 +1176,32 @@
     "description": "Erleidet das Pokémon Schaden durch eine Attacke und wird\ndadurch kampfunfähig, wird dem Angreifer Schaden in\nderselben Höhe zugefügt."
   },
   {
+    "id": "fluffy",
+    "slug": "fluffy",
+    "slugLoc": "flauschigkeit",
+    "name": "Flauschigkeit",
+    "description": "Der Schaden, den das Pokémon durch Kontaktattacken erleidet,\nwird halbiert. Dafür erleidet es doppelten Schaden durch\nFeuer-Attacken."
+  },
+  {
+    "id": "tanglinghair",
+    "slug": "tangling-hair",
+    "slugLoc": "lockenkopf",
+    "name": "Lockenkopf",
+    "description": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird die Initiative des Angreifers um 1 Stufe gesenkt."
+  },
+  {
     "id": "receiver",
     "slug": "receiver",
     "slugLoc": "receiver",
     "name": "Receiver",
     "description": "Das Pokémon erhält die Fähigkeit eines Mitstreiters,\nwenn dieser besiegt wird."
+  },
+  {
+    "id": "electricsurge",
+    "slug": "electric-surge",
+    "slugLoc": "elektro-erzeuger",
+    "name": "Elektro-Erzeuger",
+    "description": "Das Pokémon erzeugt bei Kampfantritt auf dem gesamten\nKampffeld ein Elektrofeld, das 5 Runden lang anhält."
   },
   {
     "id": "mirrorarmor",
@@ -1267,6 +1302,13 @@
     "description": "Erleidet das Pokémon Schaden durch eine Attacke,\nwird es in den Zustand Elektro-Boost versetzt."
   },
   {
+    "id": "goodasgold",
+    "slug": "good-as-gold",
+    "slugLoc": "goldkorper",
+    "name": "Goldkörper",
+    "description": "Status-Attacken anderer Pokémon haben keine Wirkung auf\ndas Pokémon."
+  },
+  {
     "id": "opportunist",
     "slug": "opportunist",
     "slugLoc": "profiteur",
@@ -1344,11 +1386,25 @@
     "description": "Normal-Attacken des Pokémon nehmen den Typ Drache an und\nihre Stärke wird um 20 % erhöht."
   },
   {
+    "id": "eelevate",
+    "slug": "eelevate",
+    "slugLoc": "emporwindung",
+    "name": "Emporwindung",
+    "description": "Das Pokémon gilt als nicht auf dem Boden befindlich und\nBoden-Attacken sowie die Zustände Stachler, Giftspitzen\nund Klebenetz haben keine Wirkung auf es.\nDer höchste Statuswert des Pokémon wird um 1 Stufe erhöht,\nwenn es ein anderes Pokémon mit einem Angriff besiegt."
+  },
+  {
     "id": "megasol",
     "slug": "mega-sol",
     "slugLoc": "mega-solarladung",
     "name": "Mega-Solarladung",
     "description": "Das Pokémon kann Attacken wie bei Sonnenschein einsetzen,\nauch wenn nicht das Wetter Sonnenschein herrscht."
+  },
+  {
+    "id": "firemane",
+    "slug": "fire-mane",
+    "slugLoc": "flammenmahne",
+    "name": "Flammenmähne",
+    "description": "Die Stärke von Feuer-Attacken des Pokémon wird\num 50 % erhöht."
   },
   {
     "id": "spicyspray",

@@ -432,6 +432,54 @@
     "pluralName": "조개껍질방울"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "gwanggagrenjeu",
+    "name": "광각렌즈",
+    "description": "기술의 명중률이 1.1배가 된다.",
+    "pluralName": "광각렌즈"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "himyimeoriddi",
+    "name": "힘의머리띠",
+    "description": "물리 기술의 위력이 1.1배가 된다.",
+    "pluralName": "힘의머리띠"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "bagsigangyeong",
+    "name": "박식안경",
+    "description": "특수 기술의 위력이 1.1배가 된다.",
+    "pluralName": "박식안경"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "dalinyiddi",
+    "name": "달인의띠",
+    "description": "사용한 기술이 효과가 굉장했을 때\n위력이 1.2배가 된다.",
+    "pluralName": "달인의띠"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "bicyijeomto",
+    "name": "빛의점토",
+    "description": "빛의장막, 리플렉터, 오로라베일을 사용했을 때\n지속 시간이 3턴 증가한다. (총 8턴)",
+    "pluralName": "빛의점토"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "saengmyeongyiguseul",
+    "name": "생명의구슬",
+    "description": "기술의 위력이 1.3배가 되지만\n공격이 성공할 때마다\n최대 HP의 1/10만큼 HP가 줄어든다.",
+    "pluralName": "생명의구슬"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "gihabyiddi",
@@ -440,12 +488,84 @@
     "pluralName": "기합의띠"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "pokeoseurenjeu",
+    "name": "포커스렌즈",
+    "description": "상대보다 행동 순서가 늦으면\n기술의 명중률이 1.2배가 된다.",
+    "pluralName": "포커스렌즈"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "meteuronom",
+    "name": "메트로놈",
+    "description": "같은 기술을 연속해서 사용하면 위력이 올라간다.\n2회 연속 시 1.2배, 3회 연속 시 1.4배가 올라가며\n최대 2배까지 올라간다. 멈추면 원래대로 돌아온다.",
+    "pluralName": "메트로놈"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "geomeunceolgu",
+    "name": "검은철구",
+    "description": "스피드가 1/2이 된다.\n땅 위에 있지 않은 포켓몬은 땅 위에 있게 되어\n땅타입 기술, 압정뿌리기, 독압정,\n끈적끈적네트 상태의 효과를 받게 된다.",
+    "pluralName": "검은철구"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "cagaunbawi",
+    "name": "차가운바위",
+    "description": "기술이나 특성으로 눈 상태로 만들었을 때\n지속 시간이 3턴 증가한다. (총 8턴)",
+    "pluralName": "차가운바위"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "bosongbosongbawi",
+    "name": "보송보송바위",
+    "description": "기술이나 특성으로 모래바람 상태로 만들었을 때\n지속 시간이 3턴 증가한다. (총 8턴)",
+    "pluralName": "보송보송바위"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "ddeugeounbawi",
+    "name": "뜨거운바위",
+    "description": "기술이나 특성으로 쾌청 상태로 만들었을 때\n지속 시간이 3턴 증가한다. (총 8턴)",
+    "pluralName": "뜨거운바위"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "cugcughanbawi",
+    "name": "축축한바위",
+    "description": "기술이나 특성으로 비 상태로 만들었을 때\n지속 시간이 3턴 증가한다. (총 8턴)",
+    "pluralName": "축축한바위"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "guaeseukapeu",
     "name": "구애스카프",
     "description": "스피드가 1.5배가 되지만\n한번 기술을 사용하면 교체하기 전까지\n그 기술만 사용할 수 있게 된다.",
     "pluralName": "구애스카프"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "areumdaunheomul",
+    "name": "아름다운허물",
+    "description": "교체를 방해하는 효과를 무시하고\n다른 지닌 포켓몬과 교체할 수 있게 된다.",
+    "pluralName": "아름다운허물"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "keunbburi",
+    "name": "큰뿌리",
+    "description": "HP를 흡수하는 기술의 회복량이 1.3배가 된다.\n뿌리박기, 힘흡수 등도 1.3배가 된다.",
+    "pluralName": "큰뿌리"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "거북왕나이트",
     "description": "거북왕이 메가진화할 수 있게 되는 도구.",
     "pluralName": "거북왕나이트"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "beoncikonaiteu",
+    "name": "번치코나이트",
+    "description": "번치코가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "번치코나이트"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "헤라크로스나이트"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "ibciteunaiteu",
+    "name": "입치트나이트",
+    "description": "입치트가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "입치트나이트"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "sseondeobolteunaiteu",
@@ -646,6 +782,22 @@
     "name": "로셀열매",
     "description": "효과가 굉장한 페어리타입 기술을 받으면\n데미지가 반감된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
     "pluralName": "로셀열매"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "daejjanginaiteu",
+    "name": "대짱이나이트",
+    "description": "대짱이가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "대짱이나이트"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "namukingnaiteu",
+    "name": "나무킹나이트",
+    "description": "나무킹이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "나무킹나이트"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "다부니나이트",
     "description": "다부니가 메가진화할 수 있게 되는 도구.",
     "pluralName": "다부니나이트"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "metageuroseunaiteu",
+    "name": "메타그로스나이트",
+    "description": "메타그로스가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "메타그로스나이트"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "몰드류나이트"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "pendeuranaiteu",
+    "name": "펜드라나이트",
+    "description": "펜드라가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "펜드라나이트"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "gonyulgeoninaiteu",
+    "name": "곤율거니나이트",
+    "description": "곤율거니가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "곤율거니나이트"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "jeorideopeunaiteu",
+    "name": "저리더프나이트",
+    "description": "저리더프가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "저리더프나이트"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "syangdelranaiteu",
@@ -864,12 +1048,44 @@
     "pluralName": "개굴닌자나이트"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "hwayeomreonaiteu",
+    "name": "화염레오나이트",
+    "description": "화염레오가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "화염레오나이트"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "peulraestenaiteu",
     "name": "플라엣테나이트",
     "description": "플라엣테(영원의 꽃)가 메가진화할 수 있게 되는 도구.",
     "pluralName": "플라엣테나이트"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "kalramaneronaiteu",
+    "name": "칼라마네로나이트",
+    "description": "칼라마네로가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "칼라마네로나이트"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "geobugsondeseunaiteu",
+    "name": "거북손데스나이트",
+    "description": "거북손데스가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "거북손데스나이트"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "deuraekamnaiteu",
+    "name": "드래캄나이트",
+    "description": "드래캄이 메가진화할 수 있게 되는 도구.",
+    "pluralName": "드래캄나이트"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "할비롱나이트"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "daeyeoreunaiteu",
+    "name": "대여르나이트",
+    "description": "대여르가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "대여르나이트"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "raicyunaiteux",
+    "name": "라이츄나이트X",
+    "description": "라이츄가 메가진화할 수 있게 되는 도구.\n알로라의 모습에게는 효과가 없다.\n(메가라이츄X)",
+    "pluralName": "라이츄나이트X"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "raicyunaiteuy",
+    "name": "라이츄나이트Y",
+    "description": "라이츄가 메가진화할 수 있게 되는 도구.\n알로라의 모습에게는 효과가 없다.\n(메가라이츄Y)",
+    "pluralName": "라이츄나이트Y"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "cireongnaiteu",
     "name": "치렁나이트",
     "description": "치렁이 메가진화할 수 있게 되는 도구.",
     "pluralName": "치렁나이트"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "jjireuhokeunaiteu",
+    "name": "찌르호크나이트",
+    "description": "찌르호크가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "찌르호크나이트"
   },
   {
     "id": "golurkite",

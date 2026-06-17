@@ -168,6 +168,13 @@
     "description": "会变为不在地面上，\n地面属性的招式、撒菱、毒菱、\n黏黏网状态将无效。"
   },
   {
+    "id": "effectspore",
+    "slug": "effect-spore",
+    "slugLoc": "bao-zi",
+    "name": "孢子",
+    "description": "受到接触类招式影响时，\n有30%的机率会让对手陷入\n中毒、麻痹、睡眠之中的一种状态。"
+  },
+  {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "tong-bu",
@@ -658,6 +665,13 @@
     "description": "出场时，若对手拥有对自己效果绝佳\n或一击必杀的招式，则可以察觉。"
   },
   {
+    "id": "forewarn",
+    "slug": "forewarn",
+    "slugLoc": "yu-zhi-meng",
+    "name": "预知梦",
+    "description": "出场时，会从对手的招式中\n读取1种威力高的招式。"
+  },
+  {
     "id": "unaware",
     "slug": "unaware",
     "slugLoc": "chun-po",
@@ -956,7 +970,7 @@
     "slug": "protean",
     "slugLoc": "bian-huan-zi-ru",
     "name": "变幻自如",
-    "description": "变为和自己使出的招式相同的属性。\n每次登场仅生效1次。"
+    "description": "每次出场时，\n会变为和自己使出的招式\n相同的属性仅1次。"
   },
   {
     "id": "furcoat",
@@ -1162,11 +1176,32 @@
     "description": "受到会导致昏厥的招式的伤害时，\n会将受到的来自对手的伤害反还给对手。"
   },
   {
+    "id": "fluffy",
+    "slug": "fluffy",
+    "slugLoc": "mao-rong-rong",
+    "name": "毛茸茸",
+    "description": "因接触类招式而受到的伤害会减半。\n因火属性招式而受到的伤害会变为2倍。"
+  },
+  {
+    "id": "tanglinghair",
+    "slug": "tangling-hair",
+    "slugLoc": "juan-fa",
+    "name": "卷发",
+    "description": "受到接触类招式影响时，\n会让对手的速度降低1阶。"
+  },
+  {
     "id": "receiver",
     "slug": "receiver",
     "slugLoc": "jie-qiu-shou",
     "name": "接球手",
     "description": "会变为和被打倒的同伴相同的特性。"
+  },
+  {
+    "id": "electricsurge",
+    "slug": "electric-surge",
+    "slugLoc": "dian-qi-zhi-zao-zhe",
+    "name": "电气制造者",
+    "description": "自出场时起，在5回合内\n会让整个场地变为电气场地状态。"
   },
   {
     "id": "mirrorarmor",
@@ -1267,6 +1302,13 @@
     "description": "受到招式的伤害时，\n会变为电属性威力提升状态。"
   },
   {
+    "id": "goodasgold",
+    "slug": "good-as-gold",
+    "slugLoc": "huang-jin-zhi-qu",
+    "name": "黄金之躯",
+    "description": "来自对手的变化招式将无效。"
+  },
+  {
     "id": "opportunist",
     "slug": "opportunist",
     "slugLoc": "gen-feng",
@@ -1344,11 +1386,25 @@
     "description": "一般属性的招式会变为龙属性，\n威力会变为1.2倍。"
   },
   {
+    "id": "eelevate",
+    "slug": "eelevate",
+    "slugLoc": "man-man-gao-sheng",
+    "name": "鳗鳗高升",
+    "description": "会变为不在地面上，\n地面属性的招式、撒菱、毒菱、\n黏黏网状态将无效。\n用攻击打倒对手时，\n自己最高的那项能力会提高1阶。"
+  },
+  {
     "id": "megasol",
     "slug": "mega-sol",
     "slugLoc": "chao-ji-ri-guang",
     "name": "超级日光",
     "description": "即使天气不是大晴天状态，\n也能以大晴天状态使用招式。"
+  },
+  {
+    "id": "firemane",
+    "slug": "fire-mane",
+    "slugLoc": "huo-yan-zong-mao",
+    "name": "火焰鬃毛",
+    "description": "火属性招式的威力会变为1.5倍。"
   },
   {
     "id": "spicyspray",

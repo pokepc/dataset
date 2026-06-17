@@ -2427,7 +2427,7 @@
     "target": "opponents_side",
     "classification": ["healing"],
     "contact": false,
-    "usable": true
+    "usable": false
   },
   {
     "id": "highjumpkick",
@@ -2643,7 +2643,7 @@
     "target": "single_target",
     "classification": ["powder"],
     "contact": false,
-    "usable": true
+    "usable": false
   },
   {
     "id": "flash",
@@ -3731,7 +3731,7 @@
     "pokeApiId": 208,
     "slug": "milk-drink",
     "name": "Milk Drink",
-    "description": "Restores 1/2 of the user's max HP.",
+    "description": "",
     "type": "normal",
     "category": "status",
     "power": 0,
@@ -3741,7 +3741,7 @@
     "target": "opponents_side",
     "classification": ["healing"],
     "contact": false,
-    "usable": true
+    "usable": false
   },
   {
     "id": "spark",
@@ -10355,7 +10355,7 @@
     "pokeApiId": 576,
     "slug": "topsy-turvy",
     "name": "Topsy-Turvy",
-    "description": "",
+    "description": "Inverts all stat changes affecting the target.",
     "type": "dark",
     "category": "status",
     "power": 0,
@@ -10365,7 +10365,7 @@
     "target": "single_target",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "drainingkiss",
@@ -12245,7 +12245,7 @@
     "pokeApiId": 748,
     "slug": "no-retreat",
     "name": "No Retreat",
-    "description": "",
+    "description": "Boosts the user's Attack, Defense, Sp. Atk, Sp. Def, and Speed\nstats by 1 stage. The user gains the Can't Escape status. This\nmove can only be used once per time the user enters battle—\notherwise it will fail.",
     "type": "fighting",
     "category": "status",
     "power": 0,
@@ -12255,7 +12255,7 @@
     "target": "opponents_side",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "tarshot",
@@ -12659,7 +12659,7 @@
     "pokeApiId": 789,
     "slug": "spirit-break",
     "name": "Spirit Break",
-    "description": "",
+    "description": "Lowers the target's Sp. Atk stat by 1 stage.",
     "type": "fairy",
     "category": "physical",
     "power": 75,
@@ -12669,7 +12669,7 @@
     "target": "single_target",
     "classification": [],
     "contact": true,
-    "usable": false
+    "usable": true
   },
   {
     "id": "strangesteam",
@@ -13389,7 +13389,7 @@
     "target": "opponents_side",
     "classification": [],
     "contact": false,
-    "usable": true
+    "usable": false
   },
   {
     "id": "stoneaxe",
@@ -13559,7 +13559,7 @@
     "pokeApiId": 839,
     "slug": "barb-barrage",
     "name": "Barb Barrage",
-    "description": "",
+    "description": "Has a 50% chance of poisoning the target. This move's power is\ndoubled if the target is poisoned or badly poisoned.",
     "type": "poison",
     "category": "physical",
     "power": 60,
@@ -13569,7 +13569,7 @@
     "target": "single_target",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "esperwing",
@@ -13998,7 +13998,7 @@
     "pp": 1,
     "accuracy": 101,
     "priority": 0,
-    "target": "users_side",
+    "target": "opponents_side",
     "classification": [],
     "contact": false,
     "usable": false
@@ -14189,7 +14189,7 @@
     "pokeApiId": 874,
     "slug": "make-it-rain",
     "name": "Make It Rain",
-    "description": "",
+    "description": "Lowers the user's Sp. Atk stat by 2 stages.",
     "type": "steel",
     "category": "special",
     "power": 120,
@@ -14199,7 +14199,7 @@
     "target": "all_opponents",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "psyblade",
@@ -14459,7 +14459,7 @@
     "pokeApiId": 889,
     "slug": "rage-fist",
     "name": "Rage Fist",
-    "description": "",
+    "description": "This move's power is increased by 50 each time the user takes\ndamage from a move, up to a maximum power of 350. If the\nuser switches out of battle, the move's power returns to its\nusual value.",
     "type": "ghost",
     "category": "physical",
     "power": 50,
@@ -14469,7 +14469,7 @@
     "target": "single_target",
     "classification": ["punching"],
     "contact": true,
-    "usable": false
+    "usable": true
   },
   {
     "id": "armorcannon",

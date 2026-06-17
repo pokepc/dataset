@@ -192,6 +192,14 @@
     "description": "The Pokémon floats off the ground, making it immune to\nGround-type moves, as well as the Spikes, Toxic Spikes,\nand Sticky Web statuses."
   },
   {
+    "id": "effectspore",
+    "championsId": "27",
+    "pokeApiId": 27,
+    "slug": "effect-spore",
+    "name": "Effect Spore",
+    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned, paralyzed, or put to sleep."
+  },
+  {
     "id": "synchronize",
     "championsId": "28",
     "pokeApiId": 28,
@@ -750,6 +758,14 @@
     "slug": "anticipation",
     "name": "Anticipation",
     "description": "When the Pokémon enters a battle, it senses whether the\nopponents know any one-hit KO moves or moves that are super\neffective against it."
+  },
+  {
+    "id": "forewarn",
+    "championsId": "108",
+    "pokeApiId": 108,
+    "slug": "forewarn",
+    "name": "Forewarn",
+    "description": "When the Pokémon enters a battle, it identifies the move with\nthe highest power among all the moves the opponents know."
   },
   {
     "id": "unaware",
@@ -1328,12 +1344,36 @@
     "description": "When the Pokémon takes damage from a move that knocks it\nout, it deals the same amount of damage to the attacker."
   },
   {
+    "id": "fluffy",
+    "championsId": "218",
+    "pokeApiId": 218,
+    "slug": "fluffy",
+    "name": "Fluffy",
+    "description": "Halves the damage the Pokémon takes from contact moves, but\ndoubles the damage taken from Fire-type moves."
+  },
+  {
+    "id": "tanglinghair",
+    "championsId": "221",
+    "pokeApiId": 221,
+    "slug": "tangling-hair",
+    "name": "Tangling Hair",
+    "description": "When the Pokémon is hit by a contact move, the attacker's\nSpeed stat is lowered by 1 stage."
+  },
+  {
     "id": "receiver",
     "championsId": "222",
     "pokeApiId": 222,
     "slug": "receiver",
     "name": "Receiver",
     "description": "The Pokémon changes its Ability to match that of a\ndefeated ally."
+  },
+  {
+    "id": "electricsurge",
+    "championsId": "226",
+    "pokeApiId": 226,
+    "slug": "electric-surge",
+    "name": "Electric Surge",
+    "description": "Turns the entire field into Electric Terrain for 5 turns when the\nPokémon enters a battle."
   },
   {
     "id": "mirrorarmor",
@@ -1448,6 +1488,14 @@
     "description": "When the Pokémon takes damage from a move, it gains the\nElectric Boost status."
   },
   {
+    "id": "goodasgold",
+    "championsId": "283",
+    "pokeApiId": 283,
+    "slug": "good-as-gold",
+    "name": "Good as Gold",
+    "description": "The Pokémon is immune to status moves used by other Pokémon."
+  },
+  {
     "id": "opportunist",
     "championsId": "290",
     "pokeApiId": 290,
@@ -1536,12 +1584,26 @@
     "description": "The Pokémon's Normal-type moves become Dragon-type moves\nand their power is boosted by 20%."
   },
   {
+    "id": "eelevate",
+    "championsId": "313",
+    "slug": "eelevate",
+    "name": "Eelevate",
+    "description": "The Pokémon floats off the ground, making it immune to\nGround-type moves, as well as the Spikes, Toxic Spikes,\nand Sticky Web statuses. When the Pokémon knocks out a\ntarget with an attack, its highest stat is boosted by 1 stage."
+  },
+  {
     "id": "megasol",
     "championsId": "315",
     "pokeApiId": 310,
     "slug": "mega-sol",
     "name": "Mega Sol",
     "description": "Even when the sunlight has not turned harsh, the Pokémon can\nuse its moves as if the weather were harsh sunlight."
+  },
+  {
+    "id": "firemane",
+    "championsId": "316",
+    "slug": "fire-mane",
+    "name": "Fire Mane",
+    "description": "Boosts the power of the Pokémon's Fire-type moves by 50%."
   },
   {
     "id": "spicyspray",

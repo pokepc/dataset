@@ -432,6 +432,54 @@
     "pluralName": "Grelots Coque"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "loupe",
+    "name": "Loupe",
+    "description": "Multiplie par 1,1 la Précision des capacités du Pokémon.",
+    "pluralName": "Loupes"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "bandeau-muscle",
+    "name": "Bandeau Muscle",
+    "description": "Multiplie par 1,1 la puissance des capacités physiques\ndu Pokémon.",
+    "pluralName": "Bandeaux Muscle"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "lunettes-sages",
+    "name": "Lunettes Sages",
+    "description": "Multiplie par 1,1 la puissance des capacités spéciales\ndu Pokémon.",
+    "pluralName": "Lunettes Sages"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "ceinture-pro",
+    "name": "Ceinture Pro",
+    "description": "Multiplie par 1,2 la puissance des capacités du Pokémon\nlorsqu'elles sont super efficaces.",
+    "pluralName": "Ceintures Pro"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "lumargile",
+    "name": "Lumargile",
+    "description": "Prolonge de 3 tours la durée des capacités Mur Lumière,\nProtection et Voile Aurore utilisées par le Pokémon\n(durée totale : 8 tours).",
+    "pluralName": "Lumargiles"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "orbe-vie",
+    "name": "Orbe Vie",
+    "description": "Multiplie par 1,3 la puissance des capacités du Pokémon,\nmais lui fait aussi perdre 1/10 de ses PV max à chaque\nfois qu'il utilise une attaque avec succès.",
+    "pluralName": "Orbes Vie"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "ceinture-force",
@@ -440,12 +488,84 @@
     "pluralName": "Ceintures Force"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "lentille-zoom",
+    "name": "Lentille Zoom",
+    "description": "Multiplie par 1,2 la Précision des capacités du Pokémon\ns'il agit après son adversaire.",
+    "pluralName": "Lentilles Zoom"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "metronome",
+    "name": "Métronome",
+    "description": "Augmente la puissance d'une capacité utilisée plusieurs\nfois d'affilée. La puissance est multipliée par 1,2\nà la deuxième utilisation, par 1,4 à la troisième\nutilisation et ainsi de suite jusqu'à ce qu'elle soit\nmultipliée par 2. Si le Pokémon utilise une autre\ncapacité, la puissance revient à la normale.",
+    "pluralName": "Métronomes"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "balle-fer",
+    "name": "Balle Fer",
+    "description": "Réduit de moitié la Vitesse du Pokémon et le cloue\nau sol s'il n'y était pas. Il devient alors sensible\naux capacités de type Sol et aux effets de Picots,\nPics Toxik et Toile Gluante.",
+    "pluralName": "Balles Fer"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "roche-glace",
+    "name": "Roche Glace",
+    "description": "Prolonge de 3 tours la neige invoquée par une capacité\nou un talent du Pokémon (durée totale : 8 tours).",
+    "pluralName": "Roches Glace"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "roche-lisse",
+    "name": "Roche Lisse",
+    "description": "Prolonge de 3 tours la tempête de sable invoquée\npar une capacité ou un talent du Pokémon\n(durée totale : 8 tours).",
+    "pluralName": "Roches Lisses"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "roche-chaude",
+    "name": "Roche Chaude",
+    "description": "Prolonge de 3 tours le soleil invoqué par une capacité\nou un talent du Pokémon (durée totale : 8 tours).",
+    "pluralName": "Roches Chaudes"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "roche-humide",
+    "name": "Roche Humide",
+    "description": "Prolonge de 3 tours la pluie invoquée par une capacité\nou un talent du Pokémon (durée totale : 8 tours).",
+    "pluralName": "Roches Humides"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "mouchoir-choix",
     "name": "Mouchoir Choix",
     "description": "Multiplie par 1,5 la Vitesse du Pokémon, mais après\navoir utilisé une capacité, il ne peut plus utiliser que\ncelle-ci jusqu'à ce qu'il quitte le terrain.",
     "pluralName": "Mouchoirs Choix"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "carapace-mue",
+    "name": "Carapace Mue",
+    "description": "Permet au Pokémon d'être remplacé par un autre\nPokémon de son équipe, même si des effets l'en\nempêchent.",
+    "pluralName": "Carapaces Mue"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "grosse-racine",
+    "name": "Grosse Racine",
+    "description": "Multiplie par 1,3 la quantité de PV que le Pokémon\nrécupère lorsqu'il utilise une capacité absorbant des PV.\nCet effet s'applique aussi aux capacités telles que\nRacines ou Vole-Force.",
+    "pluralName": "Grosses Racines"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "Tortankite",
     "description": "Objet à tenir permettant à Tortank de méga-évoluer.",
     "pluralName": "Tortankites"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "brasegalite",
+    "name": "Braségalite",
+    "description": "Objet à tenir permettant à Braségali de méga-évoluer.",
+    "pluralName": "Braségalites"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "Scarhinoïtes"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "mysdibulite",
+    "name": "Mysdibulite",
+    "description": "Objet à tenir permettant à Mysdibule de méga-évoluer.",
+    "pluralName": "Mysdibulites"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "elecsprintite",
@@ -646,6 +782,22 @@
     "name": "Baie Selro",
     "description": "Réduit de moitié les dégâts d'une capacité de\ntype Fée super efficace subis par le Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
     "pluralName": "Baies Selro"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "laggronite",
+    "name": "Laggronite",
+    "description": "Objet à tenir permettant à Laggron de méga-évoluer.",
+    "pluralName": "Laggronites"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "jungkite",
+    "name": "Jungkite",
+    "description": "Objet à tenir permettant à Jungko de méga-évoluer.",
+    "pluralName": "Jungkites"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "Nanméouïte",
     "description": "Objet à tenir permettant à Nanméouïe de méga-évoluer.",
     "pluralName": "Nanméouïtes"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "metalossite",
+    "name": "Métalossite",
+    "description": "Objet à tenir permettant à Métalosse de méga-évoluer.",
+    "pluralName": "Métalossites"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "Minotaupites"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "brutapodite",
+    "name": "Brutapodite",
+    "description": "Objet à tenir permettant à Brutapode de méga-évoluer.",
+    "pluralName": "Brutapodites"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "baggaidite",
+    "name": "Baggaïdite",
+    "description": "Objet à tenir permettant à Baggaïd de méga-évoluer.",
+    "pluralName": "Baggaïdites"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "ohmassacrite",
+    "name": "Ohmassacrite",
+    "description": "Objet à tenir permettant à Ohmassacre de méga-évoluer.",
+    "pluralName": "Ohmassacrites"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "lugulabrite",
@@ -864,12 +1048,44 @@
     "pluralName": "Amphinolites"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "nemeliosite",
+    "name": "Néméliosite",
+    "description": "Objet à tenir permettant à Némélios de méga-évoluer.",
+    "pluralName": "Néméliosites"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "floettite",
     "name": "Floettite",
     "description": "Objet à tenir permettant à Floette Éternelle\nde méga-évoluer.",
     "pluralName": "Floettites"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "sepiatrocite",
+    "name": "Sepiatrocite",
+    "description": "Objet à tenir permettant à Sepiatroce de méga-évoluer.",
+    "pluralName": "Sepiatrocites"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "golgopathite",
+    "name": "Golgopathite",
+    "description": "Objet à tenir permettant à Golgopathe de méga-évoluer.",
+    "pluralName": "Golgopathites"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "kravarekite",
+    "name": "Kravarekite",
+    "description": "Objet à tenir permettant à Kravarech de méga-évoluer.",
+    "pluralName": "Kravarekites"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "Draïeulites"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "hexadronite",
+    "name": "Hexadronite",
+    "description": "Objet à tenir permettant à Hexadron de méga-évoluer.",
+    "pluralName": "Hexadronites"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "raichuite-x",
+    "name": "Raichuïte X",
+    "description": "Objet à tenir permettant à Raichu de\nméga-évoluer en Méga-Raichu X.\nCet objet n'a pas d'effet sur Raichu d'Alola.",
+    "pluralName": "Raichuïtes X"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "raichuite-y",
+    "name": "Raichuïte Y",
+    "description": "Objet à tenir permettant à Raichu de\nméga-évoluer en Méga-Raichu Y.\nCet objet n'a pas d'effet sur Raichu d'Alola.",
+    "pluralName": "Raichuïtes Y"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "eokite",
     "name": "Éokite",
     "description": "Objet à tenir permettant à Éoko de méga-évoluer.",
     "pluralName": "Éokites"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "etouraptorite",
+    "name": "Étouraptorite",
+    "description": "Objet à tenir permettant à Étouraptor de méga-évoluer.",
+    "pluralName": "Étouraptorites"
   },
   {
     "id": "golurkite",

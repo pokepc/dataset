@@ -168,6 +168,13 @@
     "description": "Le Pokémon flotte au-dessus du sol, ce qui l'immunise contre\nles capacités de type Sol, ainsi que les effets de Picots,\nPics Toxik et Toile Gluante."
   },
   {
+    "id": "effectspore",
+    "slug": "effect-spore",
+    "slugLoc": "pose-spore",
+    "name": "Pose Spore",
+    "description": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances d'empoisonner, paralyser\nou endormir l'adversaire."
+  },
+  {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "synchro",
@@ -658,6 +665,13 @@
     "description": "Quand il arrive sur le terrain, le Pokémon devine\nsi les adversaires connaissent des capacités super efficaces\nsur lui, ou des capacités qui mettent toujours K.O. en un coup."
   },
   {
+    "id": "forewarn",
+    "slug": "forewarn",
+    "slugLoc": "prediction",
+    "name": "Prédiction",
+    "description": "Quand il arrive sur le terrain, le Pokémon détecte la capacité\nla plus puissante des adversaires."
+  },
+  {
     "id": "unaware",
     "slug": "unaware",
     "slugLoc": "inconscient",
@@ -1075,7 +1089,7 @@
     "slug": "fairy-aura",
     "slugLoc": "aura-feerique",
     "name": "Aura Féérique",
-    "description": "La puissance des capacités de type Fée de tous les Pokémon\nprésents sur le terrain est multipliée par 1,33."
+    "description": "La puissance des capacités de type Fée de tous les Pokémon\nest multipliée par 1,33."
   },
   {
     "id": "stamina",
@@ -1162,11 +1176,32 @@
     "description": "Quand le Pokémon subit des dégâts d'une capacité qui\nle met K.O., il renvoie la même quantité de dégâts\nà l'adversaire qui les lui a infligés."
   },
   {
+    "id": "fluffy",
+    "slug": "fluffy",
+    "slugLoc": "boule-de-poils",
+    "name": "Boule de Poils",
+    "description": "Les dégâts des capacités à contact subis par le Pokémon\nsont réduits de moitié, mais les dégâts des capacités\nde type Feu subis par le Pokémon sont multipliés par 2."
+  },
+  {
+    "id": "tanglinghair",
+    "slug": "tangling-hair",
+    "slugLoc": "meche-rebelle",
+    "name": "Mèche Rebelle",
+    "description": "Quand le Pokémon subit une capacité à contact,\nla Vitesse de l'adversaire baisse de 1 cran."
+  },
+  {
     "id": "receiver",
     "slug": "receiver",
     "slugLoc": "receveur",
     "name": "Receveur",
     "description": "Le Pokémon obtient le talent d'un allié mis K.O."
+  },
+  {
+    "id": "electricsurge",
+    "slug": "electric-surge",
+    "slugLoc": "crea-elec",
+    "name": "Créa-Élec",
+    "description": "Quand le Pokémon arrive sur le terrain, il crée un champ\nélectrifié sur tout le terrain pendant 5 tours."
   },
   {
     "id": "mirrorarmor",
@@ -1267,6 +1302,13 @@
     "description": "Quand le Pokémon subit des dégâts d'une capacité,\nil obtient un boost Électrik."
   },
   {
+    "id": "goodasgold",
+    "slug": "good-as-gold",
+    "slugLoc": "corps-en-or",
+    "name": "Corps en Or",
+    "description": "Le Pokémon est immunisé contre les capacités de statut\ndes autres Pokémon."
+  },
+  {
     "id": "opportunist",
     "slug": "opportunist",
     "slugLoc": "opportuniste",
@@ -1344,11 +1386,25 @@
     "description": "Les capacités de type Normal du Pokémon prennent\nle type Dragon et leur puissance est multipliée par 1,2."
   },
   {
+    "id": "eelevate",
+    "slug": "eelevate",
+    "slugLoc": "levitaboost",
+    "name": "Lévitaboost",
+    "description": "Le Pokémon flotte au-dessus du sol, ce qui l'immunise contre\nles capacités de type Sol, ainsi que les effets de Picots,\nPics Toxik et Toile Gluante.\nQuand il met un adversaire K.O. avec une attaque,\nsa stat la plus élevée augmente de 1 cran."
+  },
+  {
     "id": "megasol",
     "slug": "mega-sol",
     "slugLoc": "mega-soleil",
     "name": "Méga-Soleil",
     "description": "Le Pokémon peut utiliser ses capacités comme si\nle soleil brillait, même si ce n'est pas le cas."
+  },
+  {
+    "id": "firemane",
+    "slug": "fire-mane",
+    "slugLoc": "criniere-de-feu",
+    "name": "Crinière de Feu",
+    "description": "La puissance des capacités de type Feu du Pokémon\nest multipliée par 1,5."
   },
   {
     "id": "spicyspray",

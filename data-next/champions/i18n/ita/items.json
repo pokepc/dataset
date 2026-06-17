@@ -432,6 +432,54 @@
     "pluralName": "Conchinelle"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "grandelente",
+    "name": "Grandelente",
+    "description": "Aumenta del 10% la precisione delle mosse.",
+    "pluralName": "Grandilenti"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "muscolbanda",
+    "name": "Muscolbanda",
+    "description": "Aumenta del 10% la potenza delle mosse fisiche.",
+    "pluralName": "Muscolbande"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "saviocchiali",
+    "name": "Saviocchiali",
+    "description": "Aumenta del 10% la potenza delle mosse speciali.",
+    "pluralName": "Saviocchiali"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "abilcintura",
+    "name": "Abilcintura",
+    "description": "Aumenta del 20% la potenza delle mosse superefficaci.",
+    "pluralName": "Abilcinture"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "creta-luce",
+    "name": "Creta luce",
+    "description": "Aumenta di 3 turni la durata degli stati Schermo di luce,\nRiflesso e Velo dell'aurora provocati da questo\nPokémon, portandola a un totale di 8 turni.",
+    "pluralName": "Creta luce"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "assorbisfera",
+    "name": "Assorbisfera",
+    "description": "Aumenta del 30% la potenza delle mosse, ma fa perdere\n1/10 dei PS massimi ogni volta che un attacco va\na segno.",
+    "pluralName": "Assorbisfere"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "focalnastro",
@@ -440,12 +488,84 @@
     "pluralName": "Focalnastri"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "zoomlente",
+    "name": "Zoomlente",
+    "description": "Aumenta del 20% la precisione delle mosse\ndel Pokémon, se attacca dopo l'avversario.",
+    "pluralName": "Zoomlenti"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "plessimetro",
+    "name": "Plessimetro",
+    "description": "Aumenta la potenza delle mosse usate più volte di fila:\ndel 20% al secondo utilizzo, del 40% al terzo e così via,\nfino a raddoppiare. L'effetto svanisce al cambio\ndi mossa.",
+    "pluralName": "Plessimetri"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "ferropalla",
+    "name": "Ferropalla",
+    "description": "Dimezza la Velocità del Pokémon e lo costringe\nal contatto con il terreno, rendendolo così vulnerabile\na mosse di tipo Terra e agli stati Punte, Punte velenose\ne Rete vischiosa.",
+    "pluralName": "Ferropalle"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "rocciafredda",
+    "name": "Rocciafredda",
+    "description": "Aumenta di 3 turni la durata dello stato Neve provocato\nda mosse o abilità di questo Pokémon, portandola\na un totale di 8 turni.",
+    "pluralName": "Roccefredde"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "roccialiscia",
+    "name": "Roccialiscia",
+    "description": "Aumenta di 3 turni la durata dello stato Tempesta\ndi sabbia provocato da mosse o abilità di questo\nPokémon, portandola a un totale di 8 turni.",
+    "pluralName": "Roccelisce"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "rocciacalda",
+    "name": "Rocciacalda",
+    "description": "Aumenta di 3 turni la durata dello stato Sole intenso\nprovocato da mosse o abilità di questo Pokémon,\nportandola a un totale di 8 turni.",
+    "pluralName": "Roccecalde"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "rocciaumida",
+    "name": "Rocciaumida",
+    "description": "Aumenta di 3 turni la durata dello stato Pioggia\nprovocato da mosse o abilità di questo Pokémon,\nportandola a un totale di 8 turni.",
+    "pluralName": "Rocceumide"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "stolascelta",
     "name": "Stolascelta",
     "description": "Aumenta la Velocità del 50%, ma, una volta usata\nuna mossa, non permette di utilizzarne altre finché\nil Pokémon non viene sostituito.",
     "pluralName": "Stolescelta"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "disfoguscio",
+    "name": "Disfoguscio",
+    "description": "Permette al Pokémon di ignorare gli effetti che ne\nimpediscono la sostituzione.",
+    "pluralName": "Disfogusci"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "granradice",
+    "name": "Granradice",
+    "description": "Aumenta del 30% la quantità di PS recuperati\ndalle mosse che assorbono PS, come Radicamento\no Assorbiforza.",
+    "pluralName": "Granradici"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "Blastoisite",
     "description": "Permette a Blastoise di megaevolversi quando l'ha\ncon sé.",
     "pluralName": "Blastoisiti"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "blazikenite",
+    "name": "Blazikenite",
+    "description": "Permette a Blaziken di megaevolversi quando l'ha con sé.",
+    "pluralName": "Blazikeniti"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "Heracrossiti"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "mawilite",
+    "name": "Mawilite",
+    "description": "Permette a Mawile di megaevolversi quando l'ha con sé.",
+    "pluralName": "Mawiliti"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "manectricite",
@@ -646,6 +782,22 @@
     "name": "Baccarcadè",
     "description": "Dimezza i danni subiti da una mossa superefficace\ndi tipo Folletto. L'effetto si attiva una volta per lotta.",
     "pluralName": "Baccarcadè"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "swampertite",
+    "name": "Swampertite",
+    "description": "Permette a Swampert di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Swampertiti"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "sceptilite",
+    "name": "Sceptilite",
+    "description": "Permette a Sceptile di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Sceptiliti"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "Audinite",
     "description": "Permette ad Audino di megaevolversi quando l'ha\ncon sé.",
     "pluralName": "Audiniti"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "metagrossite",
+    "name": "Metagrossite",
+    "description": "Permette a Metagross di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Metagrossiti"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "Excadrilliti"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "scolipedite",
+    "name": "Scolipedite",
+    "description": "Permette a Scolipede di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Scolipediti"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "scraftite",
+    "name": "Scraftite",
+    "description": "Permette a Scrafty di megaevolversi quando l'ha con sé.",
+    "pluralName": "Scraftiti"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "eelektrossite",
+    "name": "Eelektrossite",
+    "description": "Permette a Eelektross di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Eelektrossiti"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "chandelurite",
@@ -864,12 +1048,44 @@
     "pluralName": "Greninjiti"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "pyroarite",
+    "name": "Pyroarite",
+    "description": "Permette a Pyroar di megaevolversi quando l'ha con sé.",
+    "pluralName": "Pyroariti"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "floettite",
     "name": "Floettite",
     "description": "Permette a Floette Fiore Eterno di megaevolversi\nquando l'ha con sé.",
     "pluralName": "Floettiti"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "malamarite",
+    "name": "Malamarite",
+    "description": "Permette a Malamar di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Malamariti"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "barbaraclite",
+    "name": "Barbaraclite",
+    "description": "Permette a Barbaracle di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Barbaracliti"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "dragalgite",
+    "name": "Dragalgite",
+    "description": "Permette a Dragalge di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Dragalgiti"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "Drampiti"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "falinksite",
+    "name": "Falinksite",
+    "description": "Permette a Falinks di megaevolversi quando l'ha con sé.",
+    "pluralName": "Falinksiti"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "raichuite-x",
+    "name": "Raichuite X",
+    "description": "Permette a Raichu di megaevolversi in MegaRaichu X\nquando l'ha con sé. Non ha effetto sulla Forma di Alola.",
+    "pluralName": "Raichuiti X"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "raichuite-y",
+    "name": "Raichuite Y",
+    "description": "Permette a Raichu di megaevolversi in MegaRaichu Y\nquando l'ha con sé. Non ha effetto sulla Forma di Alola.",
+    "pluralName": "Raichuiti Y"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "chimechite",
     "name": "Chimechite",
     "description": "Permette a Chimecho di megaevolversi quando l'ha\ncon sé.",
     "pluralName": "Chimechiti"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "staraptorite",
+    "name": "Staraptorite",
+    "description": "Permette a Staraptor di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Staraptoriti"
   },
   {
     "id": "golurkite",

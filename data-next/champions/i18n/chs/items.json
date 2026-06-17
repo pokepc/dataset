@@ -432,6 +432,54 @@
     "pluralName": "贝壳之铃"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "guang-jiao-jing",
+    "name": "广角镜",
+    "description": "招式的命中率会变为1.1倍。",
+    "pluralName": "广角镜"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "li-liang-tou-dai",
+    "name": "力量头带",
+    "description": "物理招式的威力会变为1.1倍。",
+    "pluralName": "力量头带"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "bo-shi-yan-jing",
+    "name": "博识眼镜",
+    "description": "特殊招式的威力会变为1.1倍。",
+    "pluralName": "博识眼镜"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "da-ren-dai",
+    "name": "达人带",
+    "description": "使出的招式为效果绝佳时，\n威力会变为1.2倍。",
+    "pluralName": "达人带"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "guang-zhi-nian-tu",
+    "name": "光之黏土",
+    "description": "使出光墙、反射壁、极光幕时，\n持续时间会延长3回合。\n（合计8回合）",
+    "pluralName": "光之黏土"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "sheng-ming-bao-zhu",
+    "name": "生命宝珠",
+    "description": "招式的威力会变为1.3倍，\n但每当成功使出攻击时，\n都会减少最大HP的1/10。",
+    "pluralName": "生命宝珠"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "qi-shi-pi-dai",
@@ -440,12 +488,84 @@
     "pluralName": "气势披带"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "dui-jiao-jing",
+    "name": "对焦镜",
+    "description": "行动顺序比对手更晚时，\n招式的命中率会变为1.2倍。",
+    "pluralName": "对焦镜"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "jie-pai-qi",
+    "name": "节拍器",
+    "description": "若连续使出相同招式，则威力会提高。\n第2次提高为1.2倍，第3次提高为1.4倍，\n最大会提高至2倍。停止后威力就会复原。",
+    "pluralName": "节拍器"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "hei-se-tie-qiu",
+    "name": "黑色铁球",
+    "description": "速度会变为1/2。不在地面上的\n宝可梦会变为在地面上，\n且地面属性的招式、撒菱、\n毒菱、黏黏网状态会生效。",
+    "pluralName": "黑色铁球"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "bing-leng-yan-shi",
+    "name": "冰冷岩石",
+    "description": "因招式或特性变为下雪状态时，\n持续时间会延长3回合。\n（合计8回合）",
+    "pluralName": "冰冷岩石"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "sha-sha-yan-shi",
+    "name": "沙沙岩石",
+    "description": "因招式或特性变为沙暴状态时，\n持续时间会延长3回合。\n（合计8回合）",
+    "pluralName": "沙沙岩石"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "chi-re-yan-shi",
+    "name": "炽热岩石",
+    "description": "因招式或特性变为大晴天状态时，\n持续时间会延长3回合。\n（合计8回合）",
+    "pluralName": "炽热岩石"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "chao-shi-yan-shi",
+    "name": "潮湿岩石",
+    "description": "因招式或特性变为下雨状态时，\n持续时间会延长3回合。\n（合计8回合）",
+    "pluralName": "潮湿岩石"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "jiang-jiu-wei-jin",
     "name": "讲究围巾",
     "description": "速度会变为1.5倍，\n但一旦使出招式，直到替换为止\n就会变得只能使出该招式。",
     "pluralName": "讲究围巾"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "mei-li-kong-ke",
+    "name": "美丽空壳",
+    "description": "能无视妨碍替换的效果，\n和同行队伍中的其他宝可梦进行替换。",
+    "pluralName": "美丽空壳"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "da-gen-jing",
+    "name": "大根茎",
+    "description": "吸取HP的招式的回复量\n会变为1.3倍。扎根、吸取力量等的\n回复量也会变为1.3倍。",
+    "pluralName": "大根茎"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "水箭龟进化石",
     "description": "能让水箭龟进行超级进化的持有物。",
     "pluralName": "水箭龟进化石"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "huo-yan-ji-jin-hua-shi",
+    "name": "火焰鸡进化石",
+    "description": "能让火焰鸡进行超级进化的持有物。",
+    "pluralName": "火焰鸡进化石"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "赫拉克罗斯进化石"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "da-zui-wa-jin-hua-shi",
+    "name": "大嘴娃进化石",
+    "description": "能让大嘴娃进行超级进化的持有物。",
+    "pluralName": "大嘴娃进化石"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "lei-dian-shou-jin-hua-shi",
@@ -646,6 +782,22 @@
     "name": "洛玫果",
     "description": "受到效果绝佳的妖精属性招式影响时，\n伤害会减半。\n使用1次后就会在该次对战中消失。",
     "pluralName": "洛玫果"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "ju-zhao-guai-jin-hua-shi",
+    "name": "巨沼怪进化石",
+    "description": "能让巨沼怪进行超级进化的持有物。",
+    "pluralName": "巨沼怪进化石"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "xi-yi-wang-jin-hua-shi",
+    "name": "蜥蜴王进化石",
+    "description": "能让蜥蜴王进行超级进化的持有物。",
+    "pluralName": "蜥蜴王进化石"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "差不多娃娃进化石",
     "description": "能让差不多娃娃进行超级进化的持有物。",
     "pluralName": "差不多娃娃进化石"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "ju-jin-guai-jin-hua-shi",
+    "name": "巨金怪进化石",
+    "description": "能让巨金怪进行超级进化的持有物。",
+    "pluralName": "巨金怪进化石"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "龙头地鼠进化石"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "wu-gong-wang-jin-hua-shi",
+    "name": "蜈蚣王进化石",
+    "description": "能让蜈蚣王进行超级进化的持有物。",
+    "pluralName": "蜈蚣王进化石"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "tou-jin-hun-hun-jin-hua-shi",
+    "name": "头巾混混进化石",
+    "description": "能让头巾混混进行超级进化的持有物。",
+    "pluralName": "头巾混混进化石"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "ma-ma-man-yu-wang-jin-hua-shi",
+    "name": "麻麻鳗鱼王进化石",
+    "description": "能让麻麻鳗鱼王进行超级进化的持有物。",
+    "pluralName": "麻麻鳗鱼王进化石"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "shui-jing-deng-huo-ling-jin-hua-shi",
@@ -864,12 +1048,44 @@
     "pluralName": "甲贺忍蛙进化石"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "huo-yan-shi-jin-hua-shi",
+    "name": "火炎狮进化石",
+    "description": "能让火炎狮进行超级进化的持有物。",
+    "pluralName": "火炎狮进化石"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "hua-ye-di-jin-hua-shi",
     "name": "花叶蒂进化石",
     "description": "能让花叶蒂（永恒之花）进行超级进化的持有物。",
     "pluralName": "花叶蒂进化石"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "wu-zei-wang-jin-hua-shi",
+    "name": "乌贼王进化石",
+    "description": "能让乌贼王进行超级进化的持有物。",
+    "pluralName": "乌贼王进化石"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "gui-zu-ju-kai-jin-hua-shi",
+    "name": "龟足巨铠进化石",
+    "description": "能让龟足巨铠进行超级进化的持有物。",
+    "pluralName": "龟足巨铠进化石"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "du-zao-long-jin-hua-shi",
+    "name": "毒藻龙进化石",
+    "description": "能让毒藻龙进行超级进化的持有物。",
+    "pluralName": "毒藻龙进化石"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "老翁龙进化石"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "lie-zhen-bing-jin-hua-shi",
+    "name": "列阵兵进化石",
+    "description": "能让列阵兵进行超级进化的持有物。",
+    "pluralName": "列阵兵进化石"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "lei-qiu-jin-hua-shi-x",
+    "name": "雷丘进化石Ｘ",
+    "description": "能让雷丘进行超级进化的持有物。\n对阿罗拉的样子没有效果。\n（超级雷丘Ｘ）",
+    "pluralName": "雷丘进化石Ｘ"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "lei-qiu-jin-hua-shi-y",
+    "name": "雷丘进化石Ｙ",
+    "description": "能让雷丘进行超级进化的持有物。\n对阿罗拉的样子没有效果。\n（超级雷丘Ｙ）",
+    "pluralName": "雷丘进化石Ｙ"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "feng-ling-ling-jin-hua-shi",
     "name": "风铃铃进化石",
     "description": "能让风铃铃进行超级进化的持有物。",
     "pluralName": "风铃铃进化石"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "mu-ke-ying-jin-hua-shi",
+    "name": "姆克鹰进化石",
+    "description": "能让姆克鹰进行超级进化的持有物。",
+    "pluralName": "姆克鹰进化石"
   },
   {
     "id": "golurkite",

@@ -168,6 +168,13 @@
     "description": "Hace que el Pokémon flote y deje de estar en contacto con\nel suelo, lo que impide que le afecten los movimientos de tipo\nTierra y los estados Púas, Púas tóxicas y Red Pegajosa."
   },
   {
+    "id": "effectspore",
+    "slug": "effect-spore",
+    "slugLoc": "efecto-espora",
+    "name": "Efecto Espora",
+    "description": "Tiene una probabilidad del 30% de envenenar, paralizar\no dormir al atacante si el Pokémon es alcanzado por un\nmovimiento de contacto."
+  },
+  {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "sincronia",
@@ -656,6 +663,13 @@
     "slugLoc": "anticipacion",
     "name": "Anticipación",
     "description": "Permite prever los movimientos del rival que sean fulminantes o\nsupereficaces contra el Pokémon cuando este entra en combate."
+  },
+  {
+    "id": "forewarn",
+    "slug": "forewarn",
+    "slugLoc": "alerta",
+    "name": "Alerta",
+    "description": "Permite identificar el movimiento más potente del rival cuando\nel Pokémon entra en combate."
   },
   {
     "id": "unaware",
@@ -1162,11 +1176,32 @@
     "description": "Si el Pokémon recibe daño de un movimiento y se debilita,\nle devuelve al atacante la misma cantidad de daño."
   },
   {
+    "id": "fluffy",
+    "slug": "fluffy",
+    "slugLoc": "mullido",
+    "name": "Mullido",
+    "description": "Reduce un 50% el daño recibido por los movimientos\nde contacto, pero duplica el que le causan los\nde tipo Fuego."
+  },
+  {
+    "id": "tanglinghair",
+    "slug": "tangling-hair",
+    "slugLoc": "rizos-rebeldes",
+    "name": "Rizos Rebeldes",
+    "description": "Reduce un nivel la Velocidad del atacante si el Pokémon\nes alcanzado por un movimiento de contacto."
+  },
+  {
     "id": "receiver",
     "slug": "receiver",
     "slugLoc": "receptor",
     "name": "Receptor",
     "description": "Hace que el Pokémon adquiera la habilidad de un\naliado debilitado."
+  },
+  {
+    "id": "electricsurge",
+    "slug": "electric-surge",
+    "slugLoc": "electrogenesis",
+    "name": "Electrogénesis",
+    "description": "Crea un campo eléctrico en el terreno de combate durante\ncinco turnos cuando el Pokémon entra en combate."
   },
   {
     "id": "mirrorarmor",
@@ -1267,6 +1302,13 @@
     "description": "El Pokémon adquiere el estado Cargado de electricidad\nsi recibe daño de un movimiento."
   },
   {
+    "id": "goodasgold",
+    "slug": "good-as-gold",
+    "slugLoc": "cuerpo-aureo",
+    "name": "Cuerpo Áureo",
+    "description": "Hace al Pokémon inmune a los movimientos de estado."
+  },
+  {
     "id": "opportunist",
     "slug": "opportunist",
     "slugLoc": "oportunista",
@@ -1344,11 +1386,25 @@
     "description": "Convierte los movimientos de tipo Normal del Pokémon en\nmovimientos de tipo Dragón y aumenta un 20% su potencia."
   },
   {
+    "id": "eelevate",
+    "slug": "eelevate",
+    "slugLoc": "impulso-anguila",
+    "name": "Impulso Anguila",
+    "description": "Hace que el Pokémon flote y deje de estar en contacto con\nel suelo, lo que impide que le afecten los movimientos de tipo\nTierra y los estados Púas, Púas tóxicas y Red Pegajosa.\nAumenta un nivel la característica más alta del Pokémon\ncuando debilita a un objetivo con un ataque."
+  },
+  {
     "id": "megasol",
     "slug": "mega-sol",
     "slugLoc": "megasolar",
     "name": "Megasolar",
     "description": "El Pokémon puede usar movimientos con los mismos resultados\nque cuando hace sol, aunque realmente ese no sea el tiempo\natmosférico actual."
+  },
+  {
+    "id": "firemane",
+    "slug": "fire-mane",
+    "slugLoc": "melena-de-fuego",
+    "name": "Melena de Fuego",
+    "description": "Aumenta un 50% la potencia de los movimientos de tipo Fuego\ndel Pokémon."
   },
   {
     "id": "spicyspray",

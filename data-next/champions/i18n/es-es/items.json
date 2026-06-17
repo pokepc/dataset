@@ -432,6 +432,54 @@
     "pluralName": "Cascabeles Concha"
   },
   {
+    "id": "widelens",
+    "slug": "wide-lens",
+    "slugLoc": "lupa",
+    "name": "Lupa",
+    "description": "Aumenta un 10% la precisión de los movimientos\ndel portador.",
+    "pluralName": "Lupas"
+  },
+  {
+    "id": "muscleband",
+    "slug": "muscle-band",
+    "slugLoc": "cinta-fuerte",
+    "name": "Cinta Fuerte",
+    "description": "Aumenta un 10% la potencia de los ataques físicos\ndel portador.",
+    "pluralName": "Cintas Fuertes"
+  },
+  {
+    "id": "wiseglasses",
+    "slug": "wise-glasses",
+    "slugLoc": "gafas-especiales",
+    "name": "Gafas Especiales",
+    "description": "Aumentan un 10% la potencia de los ataques especiales\ndel portador.",
+    "pluralName": "Gafas Especiales"
+  },
+  {
+    "id": "expertbelt",
+    "slug": "expert-belt",
+    "slugLoc": "cinturon-de-experto",
+    "name": "Cinturón de Experto",
+    "description": "Aumenta un 20% la potencia de los movimientos\nsupereficaces del portador.",
+    "pluralName": "Cinturones de Experto"
+  },
+  {
+    "id": "lightclay",
+    "slug": "light-clay",
+    "slugLoc": "refleluz",
+    "name": "Refleluz",
+    "description": "Prolonga tres turnos la duración de Pantalla de Luz,\nReflejo o Velo Aurora del portador, haciendo que duren\nocho turnos en total.",
+    "pluralName": "Refleluces"
+  },
+  {
+    "id": "lifeorb",
+    "slug": "life-orb",
+    "slugLoc": "vidasfera",
+    "name": "Vidasfera",
+    "description": "Aumenta un 30% la potencia de los movimientos del\nportador, pero hace que pierda 1/10 de sus PS máximos\ncada vez que un ataque alcanza a su objetivo.",
+    "pluralName": "Vidasferas"
+  },
+  {
     "id": "focussash",
     "slug": "focus-sash",
     "slugLoc": "banda-aguante",
@@ -440,12 +488,84 @@
     "pluralName": "Bandas Aguante"
   },
   {
+    "id": "zoomlens",
+    "slug": "zoom-lens",
+    "slugLoc": "telescopio",
+    "name": "Telescopio",
+    "description": "Aumenta un 20% la precisión de los movimientos\ndel portador si actúa después que el rival.",
+    "pluralName": "Telescopios"
+  },
+  {
+    "id": "metronome",
+    "slug": "metronome",
+    "slugLoc": "metronomo",
+    "name": "Metrónomo",
+    "description": "Potencia un movimiento que el portador use de forma\nconsecutiva. Aumenta un 20% adicional la potencia\noriginal del movimiento cada vez que se usa, hasta un\nmáximo de un 100%. El efecto se pierde si se usa otro\nmovimiento.",
+    "pluralName": "Metrónomos"
+  },
+  {
+    "id": "ironball",
+    "slug": "iron-ball",
+    "slugLoc": "bola-ferrea",
+    "name": "Bola Férrea",
+    "description": "Reduce a la mitad la Velocidad del portador. Si no está\nen contacto con el suelo, pasará a estarlo y le afectarán\nlos movimientos de tipo Tierra y los estados Púas, Púas\ntóxicas y Red Viscosa.",
+    "pluralName": "Bolas Férreas"
+  },
+  {
+    "id": "icyrock",
+    "slug": "icy-rock",
+    "slugLoc": "roca-helada",
+    "name": "Roca Helada",
+    "description": "Prolonga tres turnos la duración de las nevadas\nprovocadas por los movimientos o la habilidad del\nportador, haciendo que duren ocho turnos en total.",
+    "pluralName": "Rocas Heladas"
+  },
+  {
+    "id": "smoothrock",
+    "slug": "smooth-rock",
+    "slugLoc": "roca-suave",
+    "name": "Roca Suave",
+    "description": "Prolonga tres turnos la duración de las tormentas de\narena provocadas por los movimientos o la habilidad\ndel portador, haciendo que duren ocho turnos en total.",
+    "pluralName": "Rocas Suaves"
+  },
+  {
+    "id": "heatrock",
+    "slug": "heat-rock",
+    "slugLoc": "roca-calor",
+    "name": "Roca Calor",
+    "description": "Prolonga tres turnos la duración del tiempo soleado\nprovocado por los movimientos o la habilidad del\nportador, haciendo que dure ocho turnos en total.",
+    "pluralName": "Rocas Calor"
+  },
+  {
+    "id": "damprock",
+    "slug": "damp-rock",
+    "slugLoc": "roca-lluvia",
+    "name": "Roca Lluvia",
+    "description": "Prolonga tres turnos la duración de la lluvia provocada\npor los movimientos o la habilidad del portador,\nhaciendo que dure ocho turnos en total.",
+    "pluralName": "Rocas Lluvia"
+  },
+  {
     "id": "choicescarf",
     "slug": "choice-scarf",
     "slugLoc": "panuelo-eleccion",
     "name": "Pañuelo Elección",
     "description": "Aumenta un 50% la Velocidad del portador, pero,\nuna vez que haya utilizado un movimiento, solo podrá\nusar el mismo hasta que sea cambiado por otro\nPokémon.",
     "pluralName": "Pañuelos Elección"
+  },
+  {
+    "id": "shedshell",
+    "slug": "shed-shell",
+    "slugLoc": "muda-concha",
+    "name": "Muda Concha",
+    "description": "Permite que el portador pueda cambiarse por otro\nPokémon aunque haya efectos que lo impidan.",
+    "pluralName": "Mudas Concha"
+  },
+  {
+    "id": "bigroot",
+    "slug": "big-root",
+    "slugLoc": "raiz-grande",
+    "name": "Raíz Grande",
+    "description": "Hace que el portador recupere un 30% más de\nPS al usar movimientos que drenan PS, tales como\nAbsorbefuerza o Arraigo.",
+    "pluralName": "Raíces Grandes"
   },
   {
     "id": "gengarite",
@@ -494,6 +614,14 @@
     "name": "Blastoisita",
     "description": "Si la lleva Blastoise, le permite megaevolucionar.",
     "pluralName": "Blastoisitas"
+  },
+  {
+    "id": "blazikenite",
+    "slug": "blazikenite",
+    "slugLoc": "blazikenita",
+    "name": "Blazikenita",
+    "description": "Si la lleva Blaziken, le permite megaevolucionar.",
+    "pluralName": "Blazikenitas"
   },
   {
     "id": "medichamite",
@@ -624,6 +752,14 @@
     "pluralName": "Heracrossitas"
   },
   {
+    "id": "mawilite",
+    "slug": "mawilite",
+    "slugLoc": "mawilita",
+    "name": "Mawilita",
+    "description": "Si la lleva Mawile, le permite megaevolucionar.",
+    "pluralName": "Mawilitas"
+  },
+  {
     "id": "manectite",
     "slug": "manectite",
     "slugLoc": "manectricita",
@@ -646,6 +782,22 @@
     "name": "Baya Hibis",
     "description": "Reduce a la mitad el daño de un ataque supereficaz\nde tipo Hada que el portador reciba. Puede usarse\nuna vez por combate.",
     "pluralName": "Bayas Hibis"
+  },
+  {
+    "id": "swampertite",
+    "slug": "swampertite",
+    "slugLoc": "swampertita",
+    "name": "Swampertita",
+    "description": "Si la lleva Swampert, le permite megaevolucionar.",
+    "pluralName": "Swampertitas"
+  },
+  {
+    "id": "sceptilite",
+    "slug": "sceptilite",
+    "slugLoc": "sceptilita",
+    "name": "Sceptilita",
+    "description": "Si la lleva Sceptile, le permite megaevolucionar.",
+    "pluralName": "Sceptilitas"
   },
   {
     "id": "sablenite",
@@ -678,6 +830,14 @@
     "name": "Audinita",
     "description": "Si la lleva Audino, le permite megaevolucionar.",
     "pluralName": "Audinitas"
+  },
+  {
+    "id": "metagrossite",
+    "slug": "metagrossite",
+    "slugLoc": "metagrossita",
+    "name": "Metagrossita",
+    "description": "Si la lleva Metagross, le permite megaevolucionar.",
+    "pluralName": "Metagrossitas"
   },
   {
     "id": "sharpedonite",
@@ -832,6 +992,30 @@
     "pluralName": "Excadrillitas"
   },
   {
+    "id": "scolipite",
+    "slug": "scolipite",
+    "slugLoc": "scolipedita",
+    "name": "Scolipedita",
+    "description": "Si la lleva Scolipede, le permite megaevolucionar.",
+    "pluralName": "Scolipeditas"
+  },
+  {
+    "id": "scraftinite",
+    "slug": "scraftinite",
+    "slugLoc": "scraftita",
+    "name": "Scraftita",
+    "description": "Si la lleva Scrafty, le permite megaevolucionar.",
+    "pluralName": "Scraftitas"
+  },
+  {
+    "id": "eelektrossite",
+    "slug": "eelektrossite",
+    "slugLoc": "eelektrossita",
+    "name": "Eelektrossita",
+    "description": "Si la lleva Eelektross, le permite megaevolucionar.",
+    "pluralName": "Eelektrossitas"
+  },
+  {
     "id": "chandelurite",
     "slug": "chandelurite",
     "slugLoc": "chandelurita",
@@ -864,12 +1048,44 @@
     "pluralName": "Greninjanitas"
   },
   {
+    "id": "pyroarite",
+    "slug": "pyroarite",
+    "slugLoc": "pyroarita",
+    "name": "Pyroarita",
+    "description": "Si la lleva Pyroar, le permite megaevolucionar.",
+    "pluralName": "Pyroaritas"
+  },
+  {
     "id": "floettite",
     "slug": "floettite",
     "slugLoc": "floettita",
     "name": "Floettita",
     "description": "Si la lleva Floette Flor Eterna, le permite\nmegaevolucionar.",
     "pluralName": "Floettitas"
+  },
+  {
+    "id": "malamarite",
+    "slug": "malamarite",
+    "slugLoc": "malamarita",
+    "name": "Malamarita",
+    "description": "Si la lleva Malamar, le permite megaevolucionar.",
+    "pluralName": "Malamaritas"
+  },
+  {
+    "id": "barbaracite",
+    "slug": "barbaracite",
+    "slugLoc": "barbaraclita",
+    "name": "Barbaraclita",
+    "description": "Si la lleva Barbaracle, le permite megaevolucionar.",
+    "pluralName": "Barbaraclitas"
+  },
+  {
+    "id": "dragalgite",
+    "slug": "dragalgite",
+    "slugLoc": "dragalgita",
+    "name": "Dragalgita",
+    "description": "Si la lleva Dragalge, le permite megaevolucionar.",
+    "pluralName": "Dragalgitas"
   },
   {
     "id": "hawluchanite",
@@ -888,12 +1104,44 @@
     "pluralName": "Drampanitas"
   },
   {
+    "id": "falinksite",
+    "slug": "falinksite",
+    "slugLoc": "falinksita",
+    "name": "Falinksita",
+    "description": "Si la lleva Falinks, le permite megaevolucionar.",
+    "pluralName": "Falinksitas"
+  },
+  {
+    "id": "raichunitex",
+    "slug": "raichunite-x",
+    "slugLoc": "raichunita-x",
+    "name": "Raichunita X",
+    "description": "Si la lleva Raichu, le permite megaevolucionar\na Mega-Raichu X. No tiene efecto en el Raichu de Alola.",
+    "pluralName": "Raichunitas X"
+  },
+  {
+    "id": "raichunitey",
+    "slug": "raichunite-y",
+    "slugLoc": "raichunita-y",
+    "name": "Raichunita Y",
+    "description": "Si la lleva Raichu, le permite megaevolucionar\na Mega-Raichu Y. No tiene efecto en el Raichu de Alola.",
+    "pluralName": "Raichunitas Y"
+  },
+  {
     "id": "chimechite",
     "slug": "chimechite",
     "slugLoc": "chimechita",
     "name": "Chimechita",
     "description": "Si la lleva Chimecho, le permite megaevolucionar.",
     "pluralName": "Chimechitas"
+  },
+  {
+    "id": "staraptite",
+    "slug": "staraptite",
+    "slugLoc": "staraptorita",
+    "name": "Staraptorita",
+    "description": "Si la lleva Staraptor, le permite megaevolucionar.",
+    "pluralName": "Staraptoritas"
   },
   {
     "id": "golurkite",
