@@ -53,15 +53,15 @@
   },
   "devDependencies": {
     "@types/bun": "^1.3.14",
-    "@types/node": "^25.9.1",
+    "@types/node": "^25.9.3",
     "openai": "^6.42.0",
-    "oxfmt": "^0.53.0",
+    "oxfmt": "^0.55.0",
     "publint": "^0.3.21",
     "transliteration": "^2.6.1",
-    "tsdown": "^0.22.2",
+    "tsdown": "^0.22.3",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.8",
-    "zod-openapi": "^5.4.6"
+    "vitest": "^4.1.9",
+    "zod-openapi": "^6.0.0"
   },
-  "packageManager": "pnpm@11.5.0"
+  "packageManager": "pnpm@11.7.0"
 }
