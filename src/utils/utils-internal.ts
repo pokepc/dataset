@@ -6,6 +6,14 @@ export function arrayUnique<T>(array: T[]): T[] {
   return Array.from(new Set(array))
 }
 
+export function sortStringsInGivenOrder(strs: string[] | undefined, rightOrder: string[]) {
+  return [...(strs ?? [])].sort((a, b) => {
+    const aIndex = rightOrder.indexOf(a)
+    const bIndex = rightOrder.indexOf(b)
+    return aIndex - bIndex
+  })
+}
+
 export function sanitizeSearchQuery(query?: string | null) {
   if (query === undefined || query === null) {
     return ''
