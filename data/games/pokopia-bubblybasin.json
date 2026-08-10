@@ -1,17 +1,17 @@
 {
-  "id": "pokopia",
-  "name": "Pokopia",
+  "id": "pokopia-bubblybasin",
+  "name": "Bubbly Basin",
   "gen": 0,
-  "nameSlug": "pokopia",
+  "nameSlug": "bubbly-basin",
   "codename": null,
-  "type": "game",
+  "type": "dlc",
   "series": "spinoff",
-  "gameSet": null,
+  "gameSet": "pokopia",
   "gameSuperSet": null,
-  "releaseDate": "2026-03-05",
+  "releaseDate": "2026-08-05",
   "region": "kanto",
   "originMark": "none",
-  "pokedexes": ["pokopia", "pokopia-event", "pokopia-basin"],
+  "pokedexes": ["pokopia-basin"],
   "maxBoxes": 0,
   "maxBoxSize": 0,
   "platforms": ["switch2"],
@@ -38,13 +38,5 @@
     "mints": false,
     "sizes": false,
     "abilities": false
-  },
-  "onlineFeatures": {
-    "battles": false,
-    "battleStyles": [],
-    "trades": false,
-    "raids": false,
-    "raidStyles": [],
-    "coop": true
   }
 }
