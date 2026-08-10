@@ -89,7 +89,7 @@ export async function enrichChampionsDataWithPokeApiIds(
   )
 
   if (missingCount > 0) {
-    console.warn(formatMissingPokeApiResourcesError(result))
+    console.warn(formatMissingPokeApiResourcesWarning(result))
   }
 
   for (const preparedDomain of preparedDomains) {
@@ -239,8 +239,8 @@ function formatDomainSummary(
   return `${result.matched} ${domain} with PokeAPI IDs${missing}`
 }
 
-function formatMissingPokeApiResourcesError(result: EnrichChampionsDataResult): string {
-  const lines = ['Missing PokeAPI resources; no Champions JSON files were written.']
+function formatMissingPokeApiResourcesWarning(result: EnrichChampionsDataResult): string {
+  const lines = ['Missing PokeAPI resources; they were written without a pokeApiId.']
 
   for (const [domain, domainResult] of Object.entries(result)) {
     if (domainResult.missing.length === 0) {
