@@ -9,6 +9,10 @@ build/
 dist/
 dist-pages/
 
+# claude code local files (.claude/skills/ and .claude/agents/ are tracked)
+.claude/worktrees/
+.claude/settings.local.json
+
 # artifacts
 .eslintcache
 *~lock~
