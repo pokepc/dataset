@@ -61,9 +61,12 @@ async function fetchPokeApiResourceIndex(
     const id = parsePokeApiResourceId(resource.url, kind)
     const entry = { id, name: resource.name }
     const idKey = String(id)
+    const existingIdEntry = index.byId.get(idKey)
 
-    if (index.byId.has(idKey)) {
-      throw new Error(`Duplicate PokeAPI ${kind} resource id: ${idKey}`)
+    if (existingIdEntry !== undefined && existingIdEntry.name !== resource.name) {
+      throw new Error(
+        `Duplicate PokeAPI ${kind} resource id ${idKey}: ${existingIdEntry.name}, ${resource.name}`,
+      )
     }
 
     index.byId.set(idKey, entry)
@@ -71,13 +74,25 @@ async function fetchPokeApiResourceIndex(
     for (const nameKey of pokeApiResourceNameKeys(resource.name)) {
       const existingEntry = index.byName.get(nameKey)
 
-      if (existingEntry !== undefined && existingEntry.id !== id) {
+      if (existingEntry === undefined || existingEntry.id === id) {
+        index.byName.set(nameKey, entry)
+        continue
+      }
+
+      if (existingEntry.name !== resource.name) {
         throw new Error(
           `Duplicate PokeAPI ${kind} resource lookup key ${nameKey}: ${existingEntry.name}, ${resource.name}`,
         )
       }
 
-      index.byName.set(nameKey, entry)
+      // Upstream sometimes lists the same resource name under two ids; keep the lowest so
+      // lookups stay stable when a newer duplicate row appears.
+      const keptEntry = existingEntry.id < id ? existingEntry : entry
+
+      console.warn(
+        `Duplicate PokeAPI ${kind} resource name ${resource.name} (ids ${existingEntry.id}, ${id}); keeping id ${keptEntry.id} for lookup key ${nameKey}`,
+      )
+      index.byName.set(nameKey, keptEntry)
     }
   }
 
