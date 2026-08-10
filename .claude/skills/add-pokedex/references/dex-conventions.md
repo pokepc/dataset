@@ -26,9 +26,12 @@ paldea-kitakami     -> paldea
 paldea-blueberry    -> paldea
 hisui-*             -> hisui
 kalos-mega          -> kalos-lumiose
-pokopia-event       -> null      # breaks the convention; pokopia-basin follows it for consistency
-pokopia-basin       -> null
+pokopia-event       -> pokopia
+pokopia-basin       -> pokopia
 ```
+
+Every sub-dex points at its parent, without exception. Only top-level dexes (`national*`, each
+region's main dex, the champions rosters) use `null`.
 
 ### Naming precedents
 

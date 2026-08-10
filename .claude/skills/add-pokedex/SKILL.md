@@ -74,7 +74,7 @@ Only these need judgement. See `references/dex-conventions.md` for the precedent
 | `name`    | Follow the game's existing dexes. Pokopia prefixes the game (`Pokopia Basin Pokédex`); Galar and Paldea use the bare area name (`Isle of Armor Pokédex`) |
 | `gen`     | Match the parent game. Spinoffs use `0`                                                                                                                  |
 | `region`  | A slug from `data/regions.json` — nothing else validates, but a fabricated region is still wrong. New areas reuse the parent's region                    |
-| `baseDex` | Parent dex slug for sub-dexes. Match the game's existing sub-dexes rather than the global convention if they disagree                                    |
+| `baseDex` | Parent dex slug for any sub-dex, no exceptions. `null` only for a game's top-level dex                                                                   |
 | `pkApiId` | PokeAPI pokedex id as a **string**, or `null`. Always `null` for spinoffs and DLC PokeAPI does not carry                                                 |
 
 ### 3. Emit the dex file
@@ -83,6 +83,7 @@ Only these need judgement. See `references/dex-conventions.md` for the precedent
 bun .claude/skills/add-pokedex/scripts/parse-bulbapedia-dex.ts \
   --file /tmp/basin.wiki --emit \
   --id pokopia-basin --name "Pokopia Basin Pokédex" --region kanto --gen 0 \
+  --base-dex pokopia \
   > data/pokedexes/pokopia-basin.json
 ```
 
