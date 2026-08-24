@@ -1,0 +1,16 @@
+interface:
+  display_name: pokemon champions team builder
+  short_description: Build competitive Pokémon Champions teams for 1v1 Singles or
+    2v2 Doubles using the requested ruleset, or the latest active ruleset when none
+    is specified. Always verify the active ruleset, current usage statistics, tournament
+    results, legality, and metagame before constructing teams. Supports meta, top-tier,
+    anti-meta, counter-meta, and off-meta team building.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
