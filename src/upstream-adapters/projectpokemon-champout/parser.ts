@@ -2,6 +2,7 @@ import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { slugify as transliterateSlugify } from 'transliteration'
 import { expandLocalSlugAliases } from './fixtures/aliases'
+import { applyPreliminaryAbilities, applyPreliminaryAbilityI18n } from './fixtures/preliminary'
 import { transformInputData } from './fixtures'
 import {
   ITEM_CATEGORY_BY_CODE,
@@ -529,7 +530,9 @@ export function buildData(
     championsItems,
   )
   const moves = mergeLocalChampionsRecords(championsMoves, movesMap, moveSchema)
-  const abilities = mergeLocalChampionsRecords(championsAbilities, abilitiesMap, abilitySchema)
+  const abilities = applyPreliminaryAbilities(
+    mergeLocalChampionsRecords(championsAbilities, abilitiesMap, abilitySchema),
+  )
   const items = mergeLocalChampionsRecords(championsItems, itemsMap, itemSchema)
   const pokemonMoves = buildPokemonMoves(datasetRoot, DEFAULT_LOCAL_DATA_ROOT, pokemon, moves)
   const battleStateSlugs = createSlugMap(battleStates)
@@ -538,7 +541,10 @@ export function buildData(
   for (const lang of I18N_CODE) {
     i18n[lang] = {
       moves: buildMoveI18n(datasetRoot, lang, movesMap),
-      abilities: buildAbilityI18n(datasetRoot, lang, abilitiesMap),
+      abilities: applyPreliminaryAbilityI18n(
+        buildAbilityI18n(datasetRoot, lang, abilitiesMap),
+        lang,
+      ),
       items: buildItemI18n(datasetRoot, lang, itemsMap),
       battleStates: buildBattleStateI18n(datasetRoot, lang, battleStateSlugs),
       pokemon: localizePokemonI18n(datasetRoot, lang, pokemonMapIndex),
