@@ -209,7 +209,7 @@ describe('data generation', () => {
     // Announced but not in the dump yet, so it carries no Champions id.
     expect(data.abilities.find((record) => record.id === 'auraguard')).toMatchObject({
       id: 'auraguard',
-      championsId: '',
+      championsId: 'preliminary-auraguard',
       slug: 'aura-guard',
       name: 'Aura Guard',
     })

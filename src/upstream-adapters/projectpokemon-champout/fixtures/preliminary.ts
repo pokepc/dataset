@@ -56,9 +56,12 @@ export function applyPreliminaryAbilities(abilities: AbilityRecord[]): AbilityRe
     ...PRELIMINARY_ABILITIES.filter((ability) => !known.has(ability.id)).map((ability) =>
       abilitySchema.parse({
         id: ability.id,
-        // No dump record means no Champions id to carry. Left empty rather
-        // than guessed: TOKUSEI slots 314 and 317 are both free.
-        championsId: '',
+        // No dump record means no Champions id to carry, and it is not worth
+        // guessing: TOKUSEI slots 314 and 317 are both free. Real ids are
+        // numeric strings, so this cannot be mistaken for one or collide with
+        // one, and the PokeAPI enrichment simply finds nothing to key on -
+        // which it reports as unmatched rather than treating as an error.
+        championsId: `preliminary-${ability.id}`,
         slug: ability.slug,
         name: ability.name,
         description: ability.descriptions.usa,
