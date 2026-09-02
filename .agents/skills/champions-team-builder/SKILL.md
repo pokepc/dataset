@@ -1,6 +1,10 @@
 ---
 name: champions-team-builder
-description: Build competitive Pokémon Champions teams for 1v1 Singles or 2v2 Doubles using the requested ruleset, or the latest active ruleset when none is specified. Always verify the active ruleset, current usage statistics, tournament results, legality, and metagame before constructing teams. Supports meta, top-tier, anti-meta, counter-meta, and off-meta team building.
+description:
+  Build competitive Pokémon Champions teams for 1v1 Singles or 2v2 Doubles using the requested
+  ruleset, or the latest active ruleset when none is specified. Always verify the active ruleset,
+  current usage statistics, tournament results, legality, and metagame before constructing teams.
+  Supports meta, top-tier, anti-meta, counter-meta, and off-meta team building.
 ---
 
 # Pokémon Champions Team Builder
@@ -18,11 +22,13 @@ The skill supports:
 - **1v1 / Singles**
 - **2v2 / Doubles**
 
-Never assume that a previously known regulation, season, ruleset, legality list, mechanic, usage ranking, tournament result, or metagame is still current.
+Never assume that a previously known regulation, season, ruleset, legality list, mechanic, usage
+ranking, tournament result, or metagame is still current.
 
 The core invariant is:
 
-> **Rules are verified from official sources. The meta is verified from current databases. Teams are built only after both have been researched.**
+> **Rules are verified from official sources. The meta is verified from current databases. Teams are
+> built only after both have been researched.**
 
 ---
 
@@ -66,7 +72,8 @@ If the user does **not** specify a ruleset:
 
 Do not assume the latest ruleset from memory or from a previous conversation.
 
-If the user explicitly names a ruleset, use that ruleset even if it is no longer current, but still verify its rules and metagame data.
+If the user explicitly names a ruleset, use that ruleset even if it is no longer current, but still
+verify its rules and metagame data.
 
 ---
 
@@ -103,7 +110,8 @@ Example:
 
 > Using Regulation M-B, currently active for Pokémon Champions Doubles.
 
-If the current date falls near a regulation transition, verify which ruleset is active **on that date** rather than assuming the newest announced one has already started.
+If the current date falls near a regulation transition, verify which ruleset is active **on that
+date** rather than assuming the newest announced one has already started.
 
 ---
 
@@ -132,11 +140,14 @@ Useful current-data sources include:
 - **Pokémon Showdown usage statistics**
 - Official Pokémon / Pokémon Champions metagame articles
 
-Prefer actual Pokémon Champions Ranked/in-game-derived usage data over Showdown data when both are available.
+Prefer actual Pokémon Champions Ranked/in-game-derived usage data over Showdown data when both are
+available.
 
-Use Showdown data as supplementary evidence rather than automatically treating it as equivalent to Pokémon Champions Ranked Battle data.
+Use Showdown data as supplementary evidence rather than automatically treating it as equivalent to
+Pokémon Champions Ranked Battle data.
 
-Use ChampionsDex or similar tournament databases to validate whether high-usage Pokémon, cores, movesets, and archetypes are also succeeding in recent tournaments.
+Use ChampionsDex or similar tournament databases to validate whether high-usage Pokémon, cores,
+movesets, and archetypes are also succeeding in recent tournaments.
 
 Never:
 
@@ -146,7 +157,8 @@ Never:
 - assume a usage ranking from another regulation still applies,
 - silently mix Singles and Doubles data.
 
-If current data for the exact regulation is unavailable, use the closest available fallback and explicitly say so.
+If current data for the exact regulation is unavailable, use the closest available fallback and
+explicitly say so.
 
 Check, when available:
 
@@ -335,7 +347,8 @@ Possible archetypes include:
 - Counter-weather
 - Speed-control denial
 
-Whenever possible, use successful current tournament structures or established high-level builds as a foundation.
+Whenever possible, use successful current tournament structures or established high-level builds as
+a foundation.
 
 Do not fabricate tournament teams or statistics.
 
@@ -421,7 +434,8 @@ Never invent a benchmark.
 
 If a benchmark cannot be verified or calculated, describe the spread more generally.
 
-If a tournament team provides an optimized spread but the exact benchmark is not documented, it is acceptable to say:
+If a tournament team provides an optimized spread but the exact benchmark is not documented, it is
+acceptable to say:
 
 > Uses a proven tournament spread optimized for bulk/speed.
 
@@ -504,16 +518,16 @@ Do not imply that the player must always bring the same four Pokémon.
 
 Every team **MUST** be presented using exactly this table structure:
 
-| Pokémon | Item | Nature and Ability | Moves | SPs | Role and usage |
-|---|---|---|---|---|---|
-| Pokémon 1 | Item | Nature · Ability | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description |
-| Pokémon 2 | Item | Nature · Ability | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description |
-| Pokémon 3 | Item | Nature · Ability | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description |
-| Pokémon 4 | Item | Nature · Ability | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description |
-| Pokémon 5 | Item | Nature · Ability | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description |
-| Pokémon 6 | Item | Nature · Ability | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description |
-| **TOP COMMON** | — | — | — | — | Most common lead, selection, core, or general battle plan. |
-| **POTENTIAL THREATS** | — | — | — | — | Important opposing Pokémon, archetypes, mechanics, or matchups that threaten the team. |
+| Pokémon               | Item | Nature and Ability | Moves                             | SPs       | Role and usage                                                                         |
+| --------------------- | ---- | ------------------ | --------------------------------- | --------- | -------------------------------------------------------------------------------------- |
+| Pokémon 1             | Item | Nature · Ability   | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description                                                                      |
+| Pokémon 2             | Item | Nature · Ability   | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description                                                                      |
+| Pokémon 3             | Item | Nature · Ability   | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description                                                                      |
+| Pokémon 4             | Item | Nature · Ability   | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description                                                                      |
+| Pokémon 5             | Item | Nature · Ability   | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description                                                                      |
+| Pokémon 6             | Item | Nature · Ability   | Move 1 · Move 2 · Move 3 · Move 4 | SP spread | Short description                                                                      |
+| **TOP COMMON**        | —    | —                  | —                                 | —         | Most common lead, selection, core, or general battle plan.                             |
+| **POTENTIAL THREATS** | —    | —                  | —                                 | —         | Important opposing Pokémon, archetypes, mechanics, or matchups that threaten the team. |
 
 This exact six-column format is mandatory.
 
@@ -578,7 +592,7 @@ Always list exactly four moves.
 
 Separate them with:
 
-` · `
+`·`
 
 Example:
 
@@ -641,7 +655,8 @@ For Doubles, describe:
 
 Example:
 
-| **TOP COMMON** | — | — | — | — | Whimsicott + Charizard lead, usually with Garchomp + Kingambit in the back. |
+| **TOP COMMON** | — | — | — | — | Whimsicott + Charizard lead, usually with Garchomp + Kingambit in
+the back. |
 
 For Singles, describe:
 
@@ -675,7 +690,8 @@ Mention the most relevant:
 
 Example:
 
-| **POTENTIAL THREATS** | — | — | — | — | Rain, Trick Room, Mega Aerodactyl, Rock pressure, and opposing weather control. |
+| **POTENTIAL THREATS** | — | — | — | — | Rain, Trick Room, Mega Aerodactyl, Rock pressure, and
+opposing weather control. |
 
 Threats must be based on the **current researched metagame**.
 
@@ -703,7 +719,8 @@ Example:
 **Archetype:** Rain offense  
 **Difficulty:** ★★★☆☆
 
-Pelipper establishes rain while Mega Swampert and Basculegion apply immediate speed and offensive pressure.
+Pelipper establishes rain while Mega Swampert and Basculegion apply immediate speed and offensive
+pressure.
 
 Then immediately show the required team table.
 
@@ -714,7 +731,7 @@ Then immediately show the required team table.
 If the user requests multiple teams, finish with one short comparison table:
 
 | Team | Archetype | Difficulty | Best for | Main weakness |
-|---|---|---|---|---|
+| ---- | --------- | ---------- | -------- | ------------- |
 
 Do not repeat every Pokémon here.
 
@@ -777,7 +794,8 @@ Do not assume:
 - which Mega Evolutions are legal,
 - whether the mechanic works identically to older games.
 
-If the team contains multiple possible Mega Pokémon, explain their matchup roles briefly in the `Role and usage` column.
+If the team contains multiple possible Mega Pokémon, explain their matchup roles briefly in the
+`Role and usage` column.
 
 ---
 
@@ -818,7 +836,8 @@ Cite current sources used for:
 - Imported SP spreads
 - Current metagame claims
 
-For every current team-building request, include enough citations that the user can verify why the Pokémon/core is considered relevant.
+For every current team-building request, include enough citations that the user can verify why the
+Pokémon/core is considered relevant.
 
 Do not cite a database merely because it exists.
 
@@ -849,7 +868,8 @@ Follow this order:
 4. Search current Pokémon Champions usage statistics.
 5. Search recent tournament results and successful teams.
 6. Identify the important metagame threats and cores.
-7. Determine whether the user wants meta, anti-meta, counter-meta, off-meta, or another optimization mode.
+7. Determine whether the user wants meta, anti-meta, counter-meta, off-meta, or another optimization
+   mode.
 8. Build the requested number of distinct teams.
 9. Choose optimized Pokémon Champions SP spreads.
 10. Validate legality.
@@ -859,4 +879,5 @@ Follow this order:
 14. Add a short comparison table if multiple teams were requested.
 15. Cite the current rules, usage data, and tournament evidence used.
 
-Never assume that a ruleset, usage ranking, or tournament result mentioned in an earlier conversation is still current.
+Never assume that a ruleset, usage ranking, or tournament result mentioned in an earlier
+conversation is still current.
