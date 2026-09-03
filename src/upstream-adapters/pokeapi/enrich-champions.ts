@@ -189,11 +189,11 @@ function withPokeApiId(record: JsonRecord, pokeApiId: number | undefined): JsonR
   const { id, championsId, slug, ...rest } = record
   delete rest.pokeApiId
 
-  if (pokeApiId === undefined) {
-    return { id, championsId, slug, ...rest }
-  }
-
-  return { id, championsId, pokeApiId, slug, ...rest }
+  // Null rather than absent, so "PokeAPI has no id for this yet" is stated in
+  // the data instead of looking like a field nobody got round to filling in.
+  // Anything hand-written here is replaced: an id PokeAPI has not published is
+  // a guess, and a guess that outlives a build is worse than a null.
+  return { id, championsId, pokeApiId: pokeApiId ?? null, slug, ...rest }
 }
 
 function readJsonRecordArray(filePath: string): JsonRecord[] {
@@ -240,7 +240,7 @@ function formatDomainSummary(
 }
 
 function formatMissingPokeApiResourcesWarning(result: EnrichChampionsDataResult): string {
-  const lines = ['Missing PokeAPI resources; they were written without a pokeApiId.']
+  const lines = ['Missing PokeAPI resources; they were written with a null pokeApiId.']
 
   for (const [domain, domainResult] of Object.entries(result)) {
     if (domainResult.missing.length === 0) {

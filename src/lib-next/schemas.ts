@@ -20,7 +20,9 @@ export const baseSchema = z.object({
 export const championsLinkedBaseSchema = z.object({
   id: slugSchema,
   championsId: z.string(),
-  pokeApiId: z.number().int().positive().optional(),
+  // Null once enriched and PokeAPI has no such resource; absent before the
+  // enrichment step has run. Never a guessed id.
+  pokeApiId: z.number().int().positive().nullish(),
   slug: slugSchema,
   name: z.string(),
   description: z.string(),
