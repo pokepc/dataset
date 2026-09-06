@@ -40,16 +40,14 @@ export function searchPokemon(
 export function createSearchablePokemonList(
   pokemon: Array<Pkds.Pokemon>,
 ): Array<Pkds.TranslatedPokemon> {
-  return pokemon.map(
-    (pokemon: Pkds.Pokemon): Pkds.TranslatedPokemon => ({
-      ...pokemon,
-      speciesGen: dexNumToGen(pokemon.dexNum),
-      dexNum: formatDexNum(pokemon.dexNum),
-      name: pokemon.names['eng'] ?? '',
-      speciesName: pokemon.speciesNames?.['eng'],
-      formName: pokemon.formNames?.['eng'],
-      lang: 'eng',
-      searchableText: generatePokemonSearchableText(pokemon),
-    }),
-  )
+  return pokemon.map((pokemon: Pkds.Pokemon): Pkds.TranslatedPokemon => ({
+    ...pokemon,
+    speciesGen: dexNumToGen(pokemon.dexNum),
+    dexNum: formatDexNum(pokemon.dexNum),
+    name: pokemon.names['eng'] ?? '',
+    speciesName: pokemon.speciesNames?.['eng'],
+    formName: pokemon.formNames?.['eng'],
+    lang: 'eng',
+    searchableText: generatePokemonSearchableText(pokemon),
+  }))
 }
