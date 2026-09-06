@@ -125,7 +125,7 @@ describe('data generation', () => {
     })
 
     expect(data.moves).toHaveLength(835)
-    expect(data.abilities).toHaveLength(202)
+    expect(data.abilities).toHaveLength(203) // 202 from the dump + 1 preliminary
     expect(data.items).toHaveLength(148)
     expect(data.battleStates).toHaveLength(66)
     expect(data.pokemon).toHaveLength(441)
@@ -205,6 +205,13 @@ describe('data generation', () => {
       id: 'voltabsorb',
       championsId: '10',
       slug: 'volt-absorb',
+    })
+    // Announced but not in the dump yet, so it carries no Champions id.
+    expect(data.abilities.find((record) => record.id === 'auraguard')).toMatchObject({
+      id: 'auraguard',
+      championsId: 'preliminary-auraguard',
+      slug: 'aura-guard',
+      name: 'Aura Guard',
     })
     expect(data.items.find((record) => record.id === 'cheriberry')).toMatchObject({
       id: 'cheriberry',
@@ -397,6 +404,13 @@ describe('data generation', () => {
     expect(data.i18n.esp.moves.find((record) => record.id === '2')).toBeUndefined()
     expect(data.i18n.esp.abilities.find((record) => record.id === 'speedboost')).toMatchObject({
       slug: 'speed-boost',
+    })
+    // A preliminary ability reaches every language, keeping its English name.
+    expect(data.i18n.esp.abilities.find((record) => record.id === 'auraguard')).toMatchObject({
+      slug: 'aura-guard',
+      slugLoc: 'aura-guard',
+      name: 'Aura Guard',
+      description: 'Reduce a la mitad el daño recibido por los movimientos de contacto.',
     })
     expect(data.i18n.esp.items.find((record) => record.id === 'cheriberry')).toMatchObject({
       slug: 'cheri-berry',
