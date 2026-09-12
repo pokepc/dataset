@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "impulso",
     "name": "Impulso",
-    "description": "Aumenta un nivel la Velocidad del Pokémon al final de cada\nturno."
+    "description": "Aumenta un nivel la Velocidad del Pokémon al final de cada\nturno, exceptuando el turno en el que entra en combate para\nsustituir a otro."
   },
   {
     "id": "battlearmor",
@@ -53,7 +53,7 @@
     "slug": "sand-veil",
     "slugLoc": "velo-arena",
     "name": "Velo Arena",
-    "description": "Aumenta un 25% la Evasión del Pokémon durante las tormentas\nde arena."
+    "description": "Aumenta un 25% la Evasión del Pokémon durante las tormentas\nde arena y lo hace inmune al daño causado por estas."
   },
   {
     "id": "static",
@@ -172,7 +172,7 @@
     "slug": "effect-spore",
     "slugLoc": "efecto-espora",
     "name": "Efecto Espora",
-    "description": "Tiene una probabilidad del 30% de envenenar, paralizar\no dormir al atacante si el Pokémon es alcanzado por un\nmovimiento de contacto."
+    "description": "Tiene una probabilidad del 30% de envenenar, paralizar\no dormir al atacante si el Pokémon es alcanzado por un\nmovimiento de contacto. No afecta a los Pokémon de tipo\nPlanta."
   },
   {
     "id": "synchronize",
@@ -308,6 +308,13 @@
     "description": "Tiene una probabilidad del 30% de quemar al atacante\nsi el Pokémon es alcanzado por un movimiento de contacto."
   },
   {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "fuga",
+    "name": "Fuga",
+    "description": "Permite que el Pokémon pueda cambiarse por otro\naunque haya efectos que lo impidan."
+  },
+  {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "vista-lince",
@@ -390,6 +397,13 @@
     "slugLoc": "escama-especial",
     "name": "Escama Especial",
     "description": "Aumenta un 50% la Defensa del Pokémon si sufre un problema\nde estado."
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "viscosecrecion",
+    "name": "Viscosecreción",
+    "description": "Si el Pokémon recibe un movimiento que drena PS, el atacante\nrecibe una cantidad de daño equivalente a los PS que habría\nrecuperado."
   },
   {
     "id": "overgrow",
@@ -917,6 +931,13 @@
     "description": "Aumenta un nivel el Ataque del Pokémon si recibe daño de\nun movimiento de tipo Siniestro."
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "cobardia",
+    "name": "Cobardía",
+    "description": "Aumenta un nivel la Velocidad del Pokémon si se siente\nintimidado o si recibe daño de un movimiento de tipo\nSiniestro, Fantasma o Bicho."
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "espejo-magico",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "bromista",
     "name": "Bromista",
-    "description": "Aumenta un nivel la prioridad de los movimientos de estado\ndel Pokémon."
+    "description": "Aumenta un nivel la prioridad de los movimientos de estado\ndel Pokémon, pero los Pokémon de tipo Siniestro se vuelven\ninmunes a ellos."
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "Aumenta un 50% la potencia de los movimientos del Pokémon\nque usan pulsos."
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "manto-frondoso",
+    "name": "Manto Frondoso",
+    "description": "Aumenta un 50% la Defensa del Pokémon cuando hay un\ncampo de hierba activo en el terreno de combate."
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "simbiosis",
@@ -1099,11 +1127,25 @@
     "description": "Aumenta un nivel la Defensa del Pokémon si recibe daño de\nun movimiento."
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "retirada",
+    "name": "Retirada",
+    "description": "Hace que el Pokémon se retire del combate cuando sus PS\nmáximos se ven reducidos a la mitad o menos."
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "ensanamiento",
     "name": "Ensañamiento",
     "description": "Hace que el Pokémon siempre aseste un golpe crítico al atacar\nsi el objetivo está envenenado o gravemente envenenado."
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "vigilante",
+    "name": "Vigilante",
+    "description": "Duplica la potencia de los movimientos del Pokémon si\nel objetivo acaba de entrar en combate para sustituir a otro."
   },
   {
     "id": "waterbubble",
@@ -1180,7 +1222,7 @@
     "slug": "fluffy",
     "slugLoc": "peluche",
     "name": "Peluche",
-    "description": "Reduce a la mitad el daño recibido por los movimientos\nde contacto, pero duplica el que le infligen los de tipo\nFuego."
+    "description": "Reduce a la mitad el daño que el Pokémon recibe de\nmovimientos de contacto, pero duplica el que le infligen\nlos de tipo Fuego."
   },
   {
     "id": "tanglinghair",
@@ -1204,6 +1246,27 @@
     "description": "Crea un campo eléctrico en el terreno de combate durante\ncinco turnos cuando el Pokémon entra en combate."
   },
   {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "psicogenesis",
+    "name": "Psicogénesis",
+    "description": "Crea un campo psíquico en el terreno de combate durante\ncinco turnos cuando el Pokémon entra en combate."
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "herbogenesis",
+    "name": "Herbogénesis",
+    "description": "Crea un campo de hierba en el terreno de combate durante\ncinco turnos cuando el Pokémon entra en combate."
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "libero",
+    "name": "Líbero",
+    "description": "Cambia el tipo del Pokémon al del primer movimiento que va\na usar tras entrar en combate."
+  },
+  {
     "id": "mirrorarmor",
     "slug": "mirror-armor",
     "slugLoc": "coraza-reflejo",
@@ -1216,6 +1279,13 @@
     "slugLoc": "acerrimo",
     "name": "Acérrimo",
     "description": "Ignora los efectos de las habilidades o los movimientos que\npermiten a un Pokémon centrar la atención sobre sí."
+  },
+  {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "punk-rock",
+    "name": "Punk Rock",
+    "description": "Aumenta un 30% la potencia de los movimientos que usan\nsonido del Pokémon y reduce a la mitad el daño que recibe\nde dichos movimientos."
   },
   {
     "id": "sandspit",
@@ -1244,6 +1314,13 @@
     "slugLoc": "antibarrera",
     "name": "Antibarrera",
     "description": "Elimina los estados Pantalla de Luz, Reflejo y Velo Aurora\ncuando el Pokémon entra en combate."
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "alma-acerada",
+    "name": "Alma Acerada",
+    "description": "Aumenta un 50% la potencia de los movimientos de tipo Acero\ndel Pokémon y sus aliados."
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "Elimina los cambios en las características de los aliados cuando\nel Pokémon entra en combate."
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "disemillar",
+    "name": "Disemillar",
+    "description": "Crea un campo de hierba en el terreno de combate durante\ncinco turnos cuando el Pokémon recibe daño de un movimiento."
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "termoconversion",
+    "name": "Termoconversión",
+    "description": "Aumenta un nivel el Ataque del Pokémon si recibe daño de\nun movimiento de tipo Fuego. Además, evita que pueda ser\nquemado."
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "sal-purificadora",
     "name": "Sal Purificadora",
     "description": "Hace al Pokémon inmune a los problemas de estado y reduce a\nla mitad el daño que recibe de movimientos de tipo Fantasma."
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "perro-guardian",
+    "name": "Perro Guardián",
+    "description": "Aumenta un nivel el Ataque del Pokémon en vez de\nsentirse intimidado. Además, hace al Pokémon inmune\na los movimientos y objetos de otros Pokémon que fuerzan\nel cambio."
   },
   {
     "id": "zerotohero",
@@ -1416,8 +1514,8 @@
   {
     "id": "auraguard",
     "slug": "aura-guard",
-    "slugLoc": "aura-guard",
-    "name": "Aura Guard",
-    "description": "Reduce a la mitad el daño recibido por los movimientos de contacto."
+    "slugLoc": "aura-protectora",
+    "name": "Aura Protectora",
+    "description": "Reduce a la mitad el daño que el Pokémon recibe de\nmovimientos de contacto."
   }
 ]

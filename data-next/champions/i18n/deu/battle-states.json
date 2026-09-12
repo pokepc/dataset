@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "wechselsperre",
     "name": "Wechselsperre",
-    "description": "Das Pokémon kann nicht ausgewechselt werden."
+    "description": "Das Pokémon kann nicht ausgewechselt werden.\nPokémon vom Typ Geist können nicht von diesem\nZustand betroffen sein."
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "giftspitzen",
     "name": "Giftspitzen",
-    "description": "Eingewechselte Pokémon werden vergiftet.\nWenn der Zustand 2-mal erzeugt wird, werden\nsie schwer vergiftet. Pokémon vom Typ Flug,\nPokémon mit der Fähigkeit Schwebe etc. sind\nnicht davon betroffen."
+    "description": "Eingewechselte Pokémon werden vergiftet. Wird\nder Zustand 2-mal erzeugt, werden sie schwer\nvergiftet. Flug-Pokémon oder Pokémon mit der\nFähigkeit Schwebe etc. sind nicht betroffen. Wird\nbei Kampfantritt eines Gift-Pokémon aufgehoben."
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "egelsamen",
     "name": "Egelsamen",
-    "description": "Das Pokémon erleidet am Ende jeder Runde\nSchaden in Höhe von 1/8 seiner maximalen KP.\nAnschließend werden die KP des Pokémon,\ndas sich an der Stelle des Anwenders der Attacke\nbefindet, in dieser Höhe aufgefüllt."
+    "description": "Das Pokémon erleidet am Ende jeder Runde\nSchaden in Höhe von 1/8 seiner maximalen KP.\nDie KP des Pokémon an der Stelle des Anwenders\nder Attacke werden in dieser Höhe aufgefüllt.\nPflanzen-Pokémon können nicht betroffen sein."
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "Der Schaden, den das Pokémon durch physische\nAttacken und Spezial-Attacken erleidet,\nwird halbiert.\nIn Doppelkämpfen wird er um 1/3 reduziert."
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "octoklammer",
+    "name": "Octoklammer",
+    "description": "Am Ende jeder Runde werden Verteidigung und\nSpezial-Verteidigung des Pokémon um 1 Stufe\ngesenkt."
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "pokelsalz",
@@ -390,6 +397,13 @@
     "slugLoc": "heilblockade",
     "name": "Heilblockade",
     "description": "Das Pokémon kann keine KP durch Attacken,\nFähigkeiten oder getragene Items regenerieren."
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "schutzlos",
+    "name": "Schutzlos",
+    "description": "Gegnerische Attacken treffen das Pokémon\ngarantiert und verursachen doppelten Schaden."
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "feuerfanger",
     "name": "Feuerfänger",
     "description": "Die Stärke von Feuer-Attacken des Pokémon wird\num 50 % erhöht."
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "fesselbiss",
+    "name": "Fesselbiss",
+    "description": "Weder der Anwender noch das Ziel der Attacke\nkönnen ausgewechselt werden."
   },
   {
     "id": "125",

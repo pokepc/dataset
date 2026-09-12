@@ -136,7 +136,7 @@
     "id": "25",
     "slug": "cant-escape",
     "name": "Can't Escape",
-    "description": "The Pokémon cannot be switched out of battle.",
+    "description": "The Pokémon cannot be switched out of battle.\nGhost-type Pokémon are unaffected.",
     "state": "cant_escape"
   },
   {
@@ -199,7 +199,7 @@
     "id": "37",
     "slug": "toxic-spikes",
     "name": "Toxic Spikes",
-    "description": "Pokémon that switch into battle will be poisoned\nor, if 2 layers of Toxic Spikes are set, badly\npoisoned. Pokémon such as Flying types or ones\nwith the Levitate Ability are unaffected.",
+    "description": "Pokémon that switch into battle will be poisoned\nor, if 2 layers of Toxic Spikes are set, badly\npoisoned. Pokémon such as Flying types or ones\nwith the Levitate Ability are unaffected. This status\nis removed if a Poison-type Pokémon enters battle.",
     "state": "toxic_spikes"
   },
   {
@@ -290,7 +290,7 @@
     "id": "52",
     "slug": "leech-seeded",
     "name": "Leech Seeded",
-    "description": "The Pokémon takes damage equal to 1/8 of\nits max HP at the end of every turn. Whichever\nPokémon is in the spot of the Pokémon that\ncaused the Leech Seeded status has its HP\nrestored by the same amount.",
+    "description": "The Pokémon takes damage equal to 1/8 of its\nmax HP at the end of every turn. The Pokémon in\nthe spot of the Pokémon that caused the Leech\nSeeded status has its HP restored by the same\namount. Grass-type Pokémon are unaffected.",
     "state": "leech_seeded"
   },
   {
@@ -371,6 +371,13 @@
     "state": "aurora_veil"
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "name": "Octolocked",
+    "description": "The Pokémon's Defense and Sp. Def stats are\nlowered by 1 stage at the end of every turn.",
+    "state": "octolocked"
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "name": "Salt Cured",
@@ -390,6 +397,13 @@
     "name": "Healing Prevented",
     "description": "The Pokémon is unable to restore HP through\nmoves, Abilities, or held items.",
     "state": "healing_prevented"
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "name": "Wide Open",
+    "description": "Opponents' moves will not miss the Pokémon\nand will deal double damage.",
+    "state": "wide_open"
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "name": "Flash Fire",
     "description": "Boosts the power of the Pokémon's Fire-type\nmoves by 50%.",
     "state": "flash_fire"
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "name": "Jaw Locked",
+    "description": "Neither the Pokémon that caused the Jaw Locked\nstatus nor the Pokémon on the receiving end can\nbe switched out of battle.",
+    "state": "jaw_locked"
   },
   {
     "id": "125",

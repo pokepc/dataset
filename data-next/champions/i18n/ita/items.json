@@ -432,6 +432,14 @@
     "pluralName": "Conchinelle"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "porro",
+    "name": "Porro",
+    "description": "Causa lo stato Brutto colpo+2. Ha effetto solo\nsu Farfetch'd e Sirfetch'd.",
+    "pluralName": "Porri"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "grandelente",
@@ -492,7 +500,7 @@
     "slug": "zoom-lens",
     "slugLoc": "zoomlente",
     "name": "Zoomlente",
-    "description": "Aumenta del 20% la precisione delle mosse\ndel Pokémon, se attacca dopo l'avversario.",
+    "description": "Aumenta del 20% la precisione delle mosse\ndel Pokémon, se attacca dopo il bersaglio.",
     "pluralName": "Zoomlenti"
   },
   {
@@ -566,6 +574,54 @@
     "name": "Granradice",
     "description": "Aumenta del 30% la quantità di PS recuperati\ndalle mosse che assorbono PS, come Radicamento\no Assorbiforza.",
     "pluralName": "Granradici"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "bitorzolelmo",
+    "name": "Bitorzolelmo",
+    "description": "Permette al Pokémon di causare a chi lo colpisce con\nuna mossa da contatto danni pari a 1/6 dei PS massimi\ndi quest'ultimo.",
+    "pluralName": "Bitorzolelmi"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "palloncino",
+    "name": "Palloncino",
+    "description": "Fa sì che il Pokémon non sia più a contatto con\nil terreno, rendendolo così immune alle mosse di tipo\nTerra e agli stati Punte, Punte velenose e Rete vischiosa.\nSe il Pokémon subisce danni da una mossa, l'effetto\nsvanisce per la durata della lotta.",
+    "pluralName": "Palloncini"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "cartelrosso",
+    "name": "Cartelrosso",
+    "description": "Permette al Pokémon di costringere chi gli infligge\ndanni con una mossa a essere sostituito.\nL'effetto si attiva una volta per lotta.",
+    "pluralName": "Cartelrossi"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "legafascia",
+    "name": "Legafascia",
+    "description": "Aumenta i danni inflitti dallo stato Imprigionamento\nda 1/8 a 1/6 dei PS massimi del bersaglio.",
+    "pluralName": "Legafasce"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "pulsantefuga",
+    "name": "Pulsantefuga",
+    "description": "Fa sì che il Pokémon lasci subito il campo quando\nsubisce danni da una mossa. L'effetto si attiva una volta\nper lotta.",
+    "pluralName": "Pulsantifuga"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "bijounormale",
+    "name": "Bijounormale",
+    "description": "Aumenta del 30% la potenza di una mossa di tipo\nNormale. L'effetto si attiva una volta per lotta.",
+    "pluralName": "Bijounormale"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "Lopunniti"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "salamencite",
+    "name": "Salamencite",
+    "description": "Permette a Salamence di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Salamenciti"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "beedrillite",
     "name": "Beedrillite",
     "description": "Permette a Beedrill di megaevolversi quando l'ha con sé.",
     "pluralName": "Beedrilliti"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "fissacampo",
+    "name": "Fissacampo",
+    "description": "Aumenta di 3 turni la durata delle modifiche al campo\nprovocate da mosse o abilità di questo Pokémon,\nportandola a un totale di 8 turni.",
+    "pluralName": "Fissacampo"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "elettroseme",
+    "name": "Elettroseme",
+    "description": "Se lo stato Campo elettrico è attivo, aumenta la Difesa\ndi 1 grado. L'effetto si attiva una volta per lotta.",
+    "pluralName": "Elettrosemi"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "psicoseme",
+    "name": "Psicoseme",
+    "description": "Se lo stato Campo psichico è attivo, aumenta\nla Difesa Speciale di 1 grado. L'effetto si attiva\nuna volta per lotta.",
+    "pluralName": "Psicosemi"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "nebbiaseme",
+    "name": "Nebbiaseme",
+    "description": "Se lo stato Campo nebbioso è attivo, aumenta\nla Difesa Speciale di 1 grado. L'effetto si attiva\nuna volta per lotta.",
+    "pluralName": "Nebbiasemi"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "erbaseme",
+    "name": "Erbaseme",
+    "description": "Se lo stato Campo erboso è attivo, aumenta la Difesa\ndi 1 grado. L'effetto si attiva una volta per lotta.",
+    "pluralName": "Erbasemi"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "Chimechiti"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "absolite-z",
+    "name": "Absolite Z",
+    "description": "Permette ad Absol di megaevolversi in MegaAbsol Z\nquando l'ha con sé.",
+    "pluralName": "Absoliti Z"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "staraptorite",
     "name": "Staraptorite",
     "description": "Permette a Staraptor di megaevolversi quando l'ha\ncon sé.",
     "pluralName": "Staraptoriti"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "garchompite-z",
+    "name": "Garchompite Z",
+    "description": "Permette a Garchomp di megaevolversi\nin MegaGarchomp Z quando l'ha con sé.",
+    "pluralName": "Garchompiti Z"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "lucarite-z",
+    "name": "Lucarite Z",
+    "description": "Permette a Lucario di megaevolversi in MegaLucario Z\nquando l'ha con sé.",
+    "pluralName": "Lucariti Z"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "Crabominabliti"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "golisopodite",
+    "name": "Golisopodite",
+    "description": "Permette a Golisopod di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Golisopoditi"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "scovillainite",
     "name": "Scovillainite",
     "description": "Permette a Scovillain di megaevolversi quando l'ha\ncon sé.",
     "pluralName": "Scovillainiti"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "baxcaliburite",
+    "name": "Baxcaliburite",
+    "description": "Permette a Baxcalibur di megaevolversi quando l'ha\ncon sé.",
+    "pluralName": "Baxcaliburiti"
   },
   {
     "id": "glimmoranite",

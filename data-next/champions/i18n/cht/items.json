@@ -432,6 +432,14 @@
     "pluralName": "貝殼之鈴"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "da-cong",
+    "name": "大蔥",
+    "description": "大蔥鴨、蔥遊兵的\n易中要害+2。",
+    "pluralName": "大蔥"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "guang-jiao-jing",
@@ -566,6 +574,54 @@
     "name": "大根莖",
     "description": "吸取HP的招式帶來的回復量\n會變為1.3倍。扎根、吸取力量等的\n回復量也會變為1.3倍。",
     "pluralName": "大根莖"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "tu-tu-tou-kui",
+    "name": "凸凸頭盔",
+    "description": "受到接觸類招式時，\n會給予對手最大HP的1/6的傷害。",
+    "pluralName": "凸凸頭盔"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "qi-qiu",
+    "name": "氣球",
+    "description": "會變為不在地面上，\n地面屬性招式、撒菱、\n毒菱、黏黏網狀態無效。\n受到招式傷害後就會在該對戰中消失。",
+    "pluralName": "氣球"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "hong-pai",
+    "name": "紅牌",
+    "description": "會讓用招式對自己造成傷害的對手替換。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "紅牌"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "jin-bang-shu-dai",
+    "name": "緊綁束帶",
+    "description": "束縛狀態給予的傷害\n不會是對手最大HP的1/8，\n而是會變為對手最大HP的1/6。",
+    "pluralName": "緊綁束帶"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "tao-tuo-an-jian",
+    "name": "逃脫按鍵",
+    "description": "因招式而受到傷害時，會退回同行隊伍。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "逃脫按鍵"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "yi-ban-bao-shi",
+    "name": "一般寶石",
+    "description": "一般屬性招式威力會變為1.3倍。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "一般寶石"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "長耳兔進化石"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "bao-fei-long-jin-hua-shi",
+    "name": "暴飛龍進化石",
+    "description": "能讓暴飛龍超級進化的持有物。",
+    "pluralName": "暴飛龍進化石"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "da-zhen-feng-jin-hua-shi",
     "name": "大針蜂進化石",
     "description": "能讓大針蜂超級進化的持有物。",
     "pluralName": "大針蜂進化石"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "da-di-mo",
+    "name": "大地膜",
+    "description": "因招式或特性展開場地時，\n效果持續時間會延長3回合。\n（一共8回合）",
+    "pluralName": "大地膜"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "dian-qi-zhong-zi",
+    "name": "電氣種子",
+    "description": "電氣場地狀態時，\n防御會提高1階。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "電氣種子"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "jing-shen-zhong-zi",
+    "name": "精神種子",
+    "description": "精神場地狀態時，\n特防會提高1階。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "精神種子"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "bo-wu-zhong-zi",
+    "name": "薄霧種子",
+    "description": "薄霧場地狀態時，\n特防會提高1階。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "薄霧種子"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "qing-cao-zhong-zi",
+    "name": "青草種子",
+    "description": "青草場地狀態時，\n防御會提高1階。\n使用1次後就會在該對戰中消失。",
+    "pluralName": "青草種子"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "風鈴鈴進化石"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "a-bo-suo-lu-jin-hua-shi-z",
+    "name": "阿勃梭魯進化石Ｚ",
+    "description": "能讓阿勃梭魯超級進化的持有物。\n（超級阿勃梭魯Ｚ）",
+    "pluralName": "阿勃梭魯進化石Ｚ"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "mu-ke-ying-jin-hua-shi",
     "name": "姆克鷹進化石",
     "description": "能讓姆克鷹超級進化的持有物。",
     "pluralName": "姆克鷹進化石"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "lie-yao-lu-sha-jin-hua-shi-z",
+    "name": "烈咬陸鯊進化石Ｚ",
+    "description": "能讓烈咬陸鯊超級進化的持有物。\n（超級烈咬陸鯊Ｚ）",
+    "pluralName": "烈咬陸鯊進化石Ｚ"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "lu-qia-li-ou-jin-hua-shi-z",
+    "name": "路卡利歐進化石Ｚ",
+    "description": "能讓路卡利歐超級進化的持有物。\n（超級路卡利歐Ｚ）",
+    "pluralName": "路卡利歐進化石Ｚ"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "好勝毛蟹進化石"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "ju-jia-wu-zhe-jin-hua-shi",
+    "name": "具甲武者進化石",
+    "description": "能讓具甲武者超級進化的持有物。",
+    "pluralName": "具甲武者進化石"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "hen-la-jiao-jin-hua-shi",
     "name": "狠辣椒進化石",
     "description": "能讓狠辣椒超級進化的持有物。",
     "pluralName": "狠辣椒進化石"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "ji-ji-long-jin-hua-shi",
+    "name": "戟脊龍進化石",
+    "description": "能讓戟脊龍超級進化的持有物。",
+    "pluralName": "戟脊龍進化石"
   },
   {
     "id": "glimmoranite",

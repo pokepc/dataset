@@ -536,21 +536,21 @@
     "slug": "poison-powder",
     "slugLoc": "polvo-venenoso",
     "name": "Polvo Venenoso",
-    "description": "Envenena al objetivo."
+    "description": "Envenena al objetivo. No afecta a los Pokémon de tipo Planta."
   },
   {
     "id": "stunspore",
     "slug": "stun-spore",
     "slugLoc": "paralizador",
     "name": "Paralizador",
-    "description": "Paraliza al objetivo."
+    "description": "Paraliza al objetivo. No afecta a los Pokémon de tipo Planta."
   },
   {
     "id": "sleeppowder",
     "slug": "sleep-powder",
     "slugLoc": "somnifero",
     "name": "Somnífero",
-    "description": "Duerme al objetivo."
+    "description": "Duerme al objetivo. No afecta a los Pokémon de tipo Planta."
   },
   {
     "id": "petaldance",
@@ -599,14 +599,14 @@
     "slug": "thunder-wave",
     "slugLoc": "onda-trueno",
     "name": "Onda Trueno",
-    "description": "Paraliza al objetivo."
+    "description": "Paraliza al objetivo. No afecta a los Pokémon de tipo Tierra."
   },
   {
     "id": "thunder",
     "slug": "thunder",
     "slugLoc": "trueno",
     "name": "Trueno",
-    "description": "Tiene una probabilidad del 30% de paralizar al objetivo.\nNunca falla cuando llueve. Puede golpear a objetivos con\nel estado A gran altitud."
+    "description": "Tiene una probabilidad del 30% de paralizar al objetivo.\nNunca falla cuando llueve. Si hace sol, tiene una precisión del\n50%. Puede golpear a objetivos con el estado A gran altitud."
   },
   {
     "id": "rockthrow",
@@ -1026,7 +1026,7 @@
     "slug": "spore",
     "slugLoc": "esporas",
     "name": "Esporas",
-    "description": "Duerme al objetivo."
+    "description": "Duerme al objetivo. No afecta a los Pokémon de tipo Planta."
   },
   {
     "id": "flash",
@@ -1138,14 +1138,14 @@
     "slug": "slash",
     "slugLoc": "cuchillada",
     "name": "Cuchillada",
-    "description": ""
+    "description": "Aumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
   },
   {
     "id": "substitute",
     "slug": "substitute",
     "slugLoc": "sustituto",
     "name": "Sustituto",
-    "description": "El usuario sacrifica un 25% de sus PS máximos para crear un\nsustituto. El sustituto recibirá los movimientos dirigidos al\nusuario en su lugar y desaparecerá cuando haya recibido una\ncantidad de daño equivalente a un 25% de los PS máximos\ndel usuario."
+    "description": "El usuario sacrifica un 25% de sus PS máximos para crear un\nsustituto. El sustituto recibirá los movimientos dirigidos al\nusuario en su lugar y desaparecerá cuando haya recibido una\ncantidad de daño equivalente a un 25% de los PS máximos\ndel usuario. Los movimientos que usan sonido ignoran al\nsustituto y alcanza al Pokémon."
   },
   {
     "id": "struggle",
@@ -1243,7 +1243,7 @@
     "slug": "cotton-spore",
     "slugLoc": "esporagodon",
     "name": "Esporagodón",
-    "description": "Reduce dos niveles la Velocidad del objetivo."
+    "description": "Reduce dos niveles la Velocidad del objetivo. No afecta a\nlos Pokémon de tipo Planta."
   },
   {
     "id": "reversal",
@@ -1327,7 +1327,7 @@
     "slug": "octazooka",
     "slugLoc": "octazuca",
     "name": "Octazuca",
-    "description": ""
+    "description": "Tiene una probabilidad del 50% de reducir un nivel la Precisión\ndel objetivo."
   },
   {
     "id": "spikes",
@@ -1453,7 +1453,7 @@
     "slug": "milk-drink",
     "slugLoc": "licuado",
     "name": "Licuado",
-    "description": ""
+    "description": "Restaura un 50% de los PS máximos del usuario o un aliado."
   },
   {
     "id": "spark",
@@ -3329,7 +3329,7 @@
     "slug": "rage-powder",
     "slugLoc": "polvo-ira",
     "name": "Polvo Ira",
-    "description": "Concentra sobre el usuario todos los movimientos de los rivales.\nSolo tiene efecto con movimientos que permiten seleccionar\na un objetivo."
+    "description": "Concentra sobre el usuario todos los movimientos de los rivales.\nSolo tiene efecto con movimientos que permiten seleccionar\na un objetivo. No afecta a los Pokémon de tipo Planta."
   },
   {
     "id": "telekinesis",
@@ -3553,7 +3553,7 @@
     "slug": "shift-gear",
     "slugLoc": "cambio-de-marcha",
     "name": "Cambio de Marcha",
-    "description": ""
+    "description": "Aumenta un nivel el Ataque del usuario y dos niveles\nsu Velocidad."
   },
   {
     "id": "circlethrow",
@@ -3791,7 +3791,7 @@
     "slug": "hurricane",
     "slugLoc": "huracan",
     "name": "Huracán",
-    "description": "Tiene una probabilidad del 30% de confundir al objetivo.\nNunca falla cuando llueve. Puede golpear a objetivos con\nel estado A gran altitud."
+    "description": "Tiene una probabilidad del 30% de confundir al objetivo.\nNunca falla cuando llueve. Si hace sol, tiene una precisión del\n50%. Puede golpear a objetivos con el estado A gran altitud."
   },
   {
     "id": "headcharge",
@@ -3931,7 +3931,7 @@
     "slug": "belch",
     "slugLoc": "eructo",
     "name": "Eructo",
-    "description": "Falla si el usuario consumió una baya durante\nel combate."
+    "description": "Falla si el usuario no consumió una baya durante\nel combate."
   },
   {
     "id": "rototiller",
@@ -4687,7 +4687,7 @@
     "slug": "zing-zap",
     "slugLoc": "electropunzada",
     "name": "Electropunzada",
-    "description": ""
+    "description": "Tiene una probabilidad del 30% de atemorizar al objetivo."
   },
   {
     "id": "naturesmadness",
@@ -4743,14 +4743,14 @@
     "slug": "snipe-shot",
     "slugLoc": "disparo-certero",
     "name": "Disparo Certero",
-    "description": ""
+    "description": "Ignora los efectos de las habilidades o los movimientos que\nle permiten a un Pokémon centrar la atención sobre sí mismo.\nAumenta un nivel la probabilidad de lanzar golpes críticos\ndel usuario durante este ataque."
   },
   {
     "id": "jawlock",
     "slug": "jaw-lock",
     "slugLoc": "presa-maxilar",
     "name": "Presa Maxilar",
-    "description": ""
+    "description": "Provoca el estado Presa Maxilar en el usuario y el objetivo."
   },
   {
     "id": "stuffcheeks",
@@ -4778,7 +4778,7 @@
     "slug": "magic-powder",
     "slugLoc": "polvo-magia",
     "name": "Polvo Magia",
-    "description": "Cambia el tipo del objetivo al tipo Psíquico."
+    "description": "Cambia el tipo del objetivo al tipo Psíquico. No afecta a\nlos Pokémon de tipo Planta."
   },
   {
     "id": "dragondarts",
@@ -4799,7 +4799,7 @@
     "slug": "octolock",
     "slugLoc": "octopresa",
     "name": "Octopresa",
-    "description": ""
+    "description": "Provoca los estados Huida imposible y Octopresa\nen el objetivo."
   },
   {
     "id": "boltbeak",
@@ -4820,7 +4820,7 @@
     "slug": "court-change",
     "slugLoc": "cambio-de-cancha",
     "name": "Cambio de Cancha",
-    "description": ""
+    "description": "Intercambia los estados del lado del usuario y el lado rival."
   },
   {
     "id": "clangoroussoul",
@@ -4848,7 +4848,7 @@
     "slug": "drum-beating",
     "slugLoc": "bateria-asalto",
     "name": "Batería Asalto",
-    "description": ""
+    "description": "Reduce un nivel la Velocidad del objetivo."
   },
   {
     "id": "snaptrap",
@@ -4862,7 +4862,7 @@
     "slug": "pyro-ball",
     "slugLoc": "balon-igneo",
     "name": "Balón Ígneo",
-    "description": ""
+    "description": "Tiene una probabilidad del 10% de quemar al objetivo.\nElimina la congelación del usuario."
   },
   {
     "id": "behemothblade",
@@ -4960,7 +4960,7 @@
     "slug": "meteor-assault",
     "slugLoc": "asalto-estelar",
     "name": "Asalto Estelar",
-    "description": ""
+    "description": "El usuario adquiere el estado Descansando en el\nsiguiente turno."
   },
   {
     "id": "eternabeam",
@@ -5436,7 +5436,7 @@
     "slug": "glaive-rush",
     "slugLoc": "asalto-espadon",
     "name": "Asalto Espadón",
-    "description": ""
+    "description": "El usuario adquiere el estado Vulnerable hasta que vuelve a\nactuar."
   },
   {
     "id": "revivalblessing",
@@ -5828,7 +5828,7 @@
     "slug": "upper-hand",
     "slugLoc": "palma-rauda",
     "name": "Palma Rauda",
-    "description": "Atemoriza al objetivo. Falla si el objetivo no está preparando\nun movimiento de prioridad alta."
+    "description": "Atemoriza al objetivo. Falla si el objetivo no va a usar\nun ataque de prioridad alta."
   },
   {
     "id": "malignantchain",

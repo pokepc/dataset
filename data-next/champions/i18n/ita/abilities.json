@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "acceleratore",
     "name": "Acceleratore",
-    "description": "Aumenta di 1 grado la Velocità del Pokémon alla fine\ndi ogni turno."
+    "description": "Aumenta di 1 grado la Velocità del Pokémon alla fine\ndi ogni turno. Non ha effetto nel turno in cui il Pokémon\nentra in campo con una sostituzione."
   },
   {
     "id": "battlearmor",
@@ -53,14 +53,14 @@
     "slug": "sand-veil",
     "slugLoc": "sabbiavelo",
     "name": "Sabbiavelo",
-    "description": "Aumenta l'elusione del 25% se lo stato Tempesta di sabbia\nè attivo."
+    "description": "Aumenta l'elusione del 25% se lo stato Tempesta di sabbia\nè attivo, e rende il Pokémon immune ai danni causati\nda questo stato."
   },
   {
     "id": "static",
     "slug": "static",
     "slugLoc": "statico",
     "name": "Statico",
-    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nParalisi a chi gli infligge una mossa da contatto."
+    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nParalisi a chi lo colpisce con una mossa da contatto."
   },
   {
     "id": "voltabsorb",
@@ -137,7 +137,7 @@
     "slug": "suction-cups",
     "slugLoc": "ventose",
     "name": "Ventose",
-    "description": "Rende il Pokémon immune a strumenti e mosse dell'avversario\nche causano la sostituzione."
+    "description": "Rende il Pokémon immune a strumenti e mosse altrui\nche causano la sostituzione."
   },
   {
     "id": "intimidate",
@@ -158,7 +158,7 @@
     "slug": "rough-skin",
     "slugLoc": "cartavetro",
     "name": "Cartavetro",
-    "description": "Permette al Pokémon di causare a chi gli infligge una mossa\nda contatto danni pari a 1/8 dei PS massimi di quest'ultimo."
+    "description": "Permette al Pokémon di causare a chi lo colpisce con una mossa\nda contatto danni pari a 1/8 dei PS massimi di quest'ultimo."
   },
   {
     "id": "levitate",
@@ -172,14 +172,14 @@
     "slug": "effect-spore",
     "slugLoc": "spargispora",
     "name": "Spargispora",
-    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento, Paralisi o Sonno a chi gli infligge una mossa\nda contatto."
+    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento, Paralisi o Sonno a chi lo colpisce con una mossa\nda contatto. Non ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "synchronize",
     "slug": "synchronize",
     "slugLoc": "sincronismo",
     "name": "Sincronismo",
-    "description": "Fa sì che il Pokémon che subisce lo stato Avvelenamento,\nIperavvelenamento, Paralisi o Scottatura per effetto di\nuna mossa o di un'abilità di un avversario, infligga a\nquell'avversario lo stesso stato."
+    "description": "Fa sì che il Pokémon che subisce lo stato Avvelenamento,\nIperavvelenamento, Paralisi o Scottatura per effetto di\nuna mossa o di un'abilità di un altro Pokémon, causi a\nquel Pokémon lo stesso stato."
   },
   {
     "id": "clearbody",
@@ -221,7 +221,7 @@
     "slug": "illuminate",
     "slugLoc": "risplendi",
     "name": "Risplendi",
-    "description": "Impedisce la diminuzione della precisione del Pokémon\ne fa sì che le sue mosse ignorino le modifiche all'elusione\ndell'avversario."
+    "description": "Impedisce la diminuzione della precisione del Pokémon\ne fa sì che le sue mosse ignorino le modifiche all'elusione\ndel bersaglio."
   },
   {
     "id": "trace",
@@ -242,7 +242,7 @@
     "slug": "poison-point",
     "slugLoc": "velenopunte",
     "name": "Velenopunte",
-    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento a chi gli infligge una mossa da contatto."
+    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento a chi lo colpisce con una mossa da contatto."
   },
   {
     "id": "innerfocus",
@@ -305,14 +305,21 @@
     "slug": "flame-body",
     "slugLoc": "corpodifuoco",
     "name": "Corpodifuoco",
-    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nScottatura a chi gli infligge una mossa da contatto."
+    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nScottatura a chi lo colpisce con una mossa da contatto."
+  },
+  {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "fugafacile",
+    "name": "Fugafacile",
+    "description": "Permette al Pokémon di ignorare gli effetti che ne\nimpediscono la sostituzione."
   },
   {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "sguardofermo",
     "name": "Sguardofermo",
-    "description": "Impedisce la diminuzione della precisione del Pokémon\ne fa sì che le sue mosse ignorino le modifiche all'elusione\ndell'avversario."
+    "description": "Impedisce la diminuzione della precisione del Pokémon\ne fa sì che le sue mosse ignorino le modifiche all'elusione\ndel bersaglio."
   },
   {
     "id": "hypercutter",
@@ -340,7 +347,7 @@
     "slug": "cute-charm",
     "slugLoc": "incantevole",
     "name": "Incantevole",
-    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nInfatuazione a chi gli infligge una mossa da contatto, se è\ndel sesso opposto."
+    "description": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nInfatuazione a chi lo colpisce con una mossa da contatto, se è\ndel sesso opposto."
   },
   {
     "id": "plus",
@@ -390,6 +397,13 @@
     "slugLoc": "pelledura",
     "name": "Pelledura",
     "description": "Aumenta del 50% la Difesa del Pokémon se è affetto\nda un problema di stato."
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "melma",
+    "name": "Melma",
+    "description": "Fa sì che, quando il Pokémon subisce una mossa che assorbe PS,\nchi l'ha sferrata non recuperi PS, ma subisca invece danni pari\nai PS che avrebbe recuperato."
   },
   {
     "id": "overgrow",
@@ -606,7 +620,7 @@
     "slug": "no-guard",
     "slugLoc": "nullodifesa",
     "name": "Nullodifesa",
-    "description": "Fa sì che la precisione di tutte le mosse sferrate sia dal Pokémon\nche dagli avversari diventi pari al 100%."
+    "description": "Fa sì che la precisione di tutte le mosse sferrate da e contro\nquesto Pokémon diventi pari al 100%."
   },
   {
     "id": "stall",
@@ -917,6 +931,13 @@
     "description": "Aumenta di 1 grado l'Attacco del Pokémon quando subisce\ndanni da una mossa di tipo Buio."
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "paura",
+    "name": "Paura",
+    "description": "Aumenta di 1 grado la Velocità del Pokémon quando subisce\ndanni da una mossa di tipo Buio, Spettro o Coleottero,\ne quando subisce l'effetto di Prepotenza."
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "magispecchio",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "burla",
     "name": "Burla",
-    "description": "Aumenta di 1 grado la priorità delle mosse di stato\ndel Pokémon."
+    "description": "Aumenta di 1 grado la priorità delle mosse di stato\ndel Pokémon, ma queste non avranno più effetto sui\nPokémon di tipo Buio."
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "Potenzia del 50% le mosse della classe Pulsar."
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "peloderba",
+    "name": "Peloderba",
+    "description": "Aumenta la Difesa del 50% se lo stato Campo erboso è attivo."
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "simbiosi",
@@ -1099,11 +1127,25 @@
     "description": "Aumenta di 1 grado la Difesa del Pokémon quando subisce\ndanni da una mossa."
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "passoindietro",
+    "name": "Passoindietro",
+    "description": "Fa sì che il Pokémon lasci subito il campo quando\ni suoi PS scendono a metà o meno."
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "spietatezza",
     "name": "Spietatezza",
     "description": "Fa sì che gli attacchi sferrati su un bersaglio affetto dallo stato\nAvvelenamento o Iperavvelenamento risultino sempre\nin brutti colpi."
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "sorveglianza",
+    "name": "Sorveglianza",
+    "description": "Raddoppia la potenza delle mosse usate dal Pokémon contro\ni bersagli appena entrati in campo con una sostituzione."
   },
   {
     "id": "waterbubble",
@@ -1201,7 +1243,28 @@
     "slug": "electric-surge",
     "slugLoc": "elettrogenesi",
     "name": "Elettrogenesi",
-    "description": "Quando il Pokémon entra in campo, causa lo stato Campo\nElettrico sull'intero campo di lotta per 5 turni."
+    "description": "Quando il Pokémon entra in campo, causa lo stato Campo\nelettrico sull'intero campo di lotta per 5 turni."
+  },
+  {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "psicogenesi",
+    "name": "Psicogenesi",
+    "description": "Quando il Pokémon entra in campo, causa lo stato Campo\npsichico sull'intero campo di lotta per 5 turni."
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "erbogenesi",
+    "name": "Erbogenesi",
+    "description": "Quando il Pokémon entra in campo, causa lo stato Campo\nerboso sull'intero campo di lotta per 5 turni."
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "libero",
+    "name": "Libero",
+    "description": "Cambia il tipo del Pokémon in quello della prima mossa che\nusa ogni volta che entra in campo."
   },
   {
     "id": "mirrorarmor",
@@ -1218,11 +1281,18 @@
     "description": "Permette di ignorare gli effetti di mosse e abilità avversarie\nche attirano le mosse."
   },
   {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "punk-rock",
+    "name": "Punk Rock",
+    "description": "Aumenta del 30% la potenza delle mosse della classe Suono\ne dimezza i danni subiti dalle stesse."
+  },
+  {
     "id": "sandspit",
     "slug": "sand-spit",
     "slugLoc": "sputasabbia",
     "name": "Sputasabbia",
-    "description": "Causa lo stato Tempesta di sabbia per 5 turni quando\nil Pokémon subisce un attacco."
+    "description": "Causa lo stato Tempesta di sabbia per 5 turni quando\nil Pokémon subisce danni da una mossa."
   },
   {
     "id": "ripen",
@@ -1244,6 +1314,13 @@
     "slugLoc": "annullabarriere",
     "name": "Annullabarriere",
     "description": "Rimuove gli stati Schermo di luce, Riflesso e Velo dell'aurora\nquando il Pokémon entra in campo."
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "spiritoferreo",
+    "name": "Spiritoferreo",
+    "description": "Aumenta del 50% la potenza delle mosse di tipo Acciaio\nsferrate dal Pokémon e dai suoi alleati."
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "Annulla le modifiche alle statistiche degli alleati del Pokémon\nquando entra in campo."
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "spargisemi",
+    "name": "Spargisemi",
+    "description": "Causa lo stato Campo erboso sull'intero campo di lotta\nper 5 turni quando il Pokémon subisce danni da una mossa."
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "termoscambio",
+    "name": "Termoscambio",
+    "description": "Rende il Pokémon immune allo stato Scottatura. Se subisce\ndanni da una mossa di tipo Fuoco, aumenta il suo Attacco\ndi 1 grado."
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "sale-purificante",
     "name": "Sale Purificante",
     "description": "Rende il Pokémon immune ai problemi di stato e dimezza\ni danni subiti dalle mosse di tipo Spettro."
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "cane-da-guardia",
+    "name": "Cane da Guardia",
+    "description": "Rende il Pokémon immune al normale effetto di Prepotenza,\nfacendo sì che il suo Attacco aumenti invece di 1 grado.\nRende inoltre il Pokémon immune a strumenti e mosse altrui\nche ne causano la sostituzione."
   },
   {
     "id": "zerotohero",
@@ -1416,8 +1514,8 @@
   {
     "id": "auraguard",
     "slug": "aura-guard",
-    "slugLoc": "aura-guard",
-    "name": "Aura Guard",
+    "slugLoc": "ondascudo",
+    "name": "Ondascudo",
     "description": "Dimezza i danni subiti dalle mosse da contatto."
   }
 ]

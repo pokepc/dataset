@@ -536,21 +536,21 @@
     "slug": "poison-powder",
     "slugLoc": "poudre-toxik",
     "name": "Poudre Toxik",
-    "description": "Empoisonne l'adversaire."
+    "description": "Empoisonne l'adversaire.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "stunspore",
     "slug": "stun-spore",
     "slugLoc": "para-spore",
     "name": "Para-Spore",
-    "description": "Paralyse l'adversaire."
+    "description": "Paralyse l'adversaire.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "sleeppowder",
     "slug": "sleep-powder",
     "slugLoc": "poudre-dodo",
     "name": "Poudre Dodo",
-    "description": "Endort l'adversaire."
+    "description": "Endort l'adversaire.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "petaldance",
@@ -599,14 +599,14 @@
     "slug": "thunder-wave",
     "slugLoc": "cage-eclair",
     "name": "Cage Éclair",
-    "description": "Paralyse l'adversaire."
+    "description": "Paralyse l'adversaire.\nN'affecte pas les Pokémon de type Sol."
   },
   {
     "id": "thunder",
     "slug": "thunder",
     "slugLoc": "fatal-foudre",
     "name": "Fatal-Foudre",
-    "description": "A 30 % de chances de paralyser l'adversaire.\nPeut aussi toucher les adversaires dans le ciel.\nN'échoue jamais quand il pleut."
+    "description": "A 30 % de chances de paralyser l'adversaire.\nPeut aussi toucher les adversaires dans le ciel.\nN'échoue jamais quand il pleut.\nSi le soleil brille, la Précision de cette capacité passe à 50 %."
   },
   {
     "id": "rockthrow",
@@ -1026,7 +1026,7 @@
     "slug": "spore",
     "slugLoc": "spore",
     "name": "Spore",
-    "description": "Endort l'adversaire."
+    "description": "Endort l'adversaire.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "flash",
@@ -1138,14 +1138,14 @@
     "slug": "slash",
     "slugLoc": "tranche",
     "name": "Tranche",
-    "description": ""
+    "description": "Cette capacité a un taux de critiques augmenté de 1 cran."
   },
   {
     "id": "substitute",
     "slug": "substitute",
     "slugLoc": "clonage",
     "name": "Clonage",
-    "description": "Le lanceur perd 1/4 de ses PV max et crée un clone.\nLe clone subit les capacités à la place du lanceur et disparaît\naprès avoir subi des dégâts équivalents à 1/4 des PV max\ndu lanceur."
+    "description": "Le lanceur perd 1/4 de ses PV max et crée un clone.\nLe clone subit les capacités à la place du lanceur et disparaît\naprès avoir subi des dégâts équivalents à 1/4 des PV max\ndu lanceur.\nLes capacités de son touchent la cible en ignorant le clone."
   },
   {
     "id": "struggle",
@@ -1243,7 +1243,7 @@
     "slug": "cotton-spore",
     "slugLoc": "spore-coton",
     "name": "Spore Coton",
-    "description": "Baisse la Vitesse des adversaires de 2 crans."
+    "description": "Baisse la Vitesse des adversaires de 2 crans.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "reversal",
@@ -1327,7 +1327,7 @@
     "slug": "octazooka",
     "slugLoc": "octazooka",
     "name": "Octazooka",
-    "description": ""
+    "description": "A 50 % de chances de baisser la Précision de l'adversaire\nde 1 cran."
   },
   {
     "id": "spikes",
@@ -1453,7 +1453,7 @@
     "slug": "milk-drink",
     "slugLoc": "lait-a-boire",
     "name": "Lait à Boire",
-    "description": ""
+    "description": "Le lanceur ou un allié récupère la moitié de ses PV max."
   },
   {
     "id": "spark",
@@ -3329,7 +3329,7 @@
     "slug": "rage-powder",
     "slugLoc": "poudre-fureur",
     "name": "Poudre Fureur",
-    "description": "Redirige toutes les capacités adverses vers le lanceur.\nN'affecte que les capacités à cible unique."
+    "description": "Redirige toutes les capacités adverses vers le lanceur.\nN'affecte que les capacités à cible unique.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "telekinesis",
@@ -3553,7 +3553,7 @@
     "slug": "shift-gear",
     "slugLoc": "change-vitesse",
     "name": "Change-Vitesse",
-    "description": ""
+    "description": "Augmente l'Attaque du lanceur de 1 cran\net sa Vitesse de 2 crans."
   },
   {
     "id": "circlethrow",
@@ -3791,7 +3791,7 @@
     "slug": "hurricane",
     "slugLoc": "vent-violent",
     "name": "Vent Violent",
-    "description": "A 30 % de chances de rendre l'adversaire confus.\nPeut aussi toucher les adversaires dans le ciel.\nN'échoue jamais quand il pleut."
+    "description": "A 30 % de chances de rendre l'adversaire confus.\nPeut aussi toucher les adversaires dans le ciel.\nN'échoue jamais quand il pleut.\nSi le soleil brille, la Précision de cette capacité passe à 50 %."
   },
   {
     "id": "headcharge",
@@ -4687,7 +4687,7 @@
     "slug": "zing-zap",
     "slugLoc": "electrikipik",
     "name": "Électrikipik",
-    "description": ""
+    "description": "A 30 % de chances d'apeurer l'adversaire."
   },
   {
     "id": "naturesmadness",
@@ -4743,14 +4743,14 @@
     "slug": "snipe-shot",
     "slugLoc": "tir-de-precision",
     "name": "Tir de Précision",
-    "description": ""
+    "description": "Le lanceur peut utiliser cette capacité en ignorant les effets\ndes capacités ou des talents qui attirent les capacités.\nCette capacité a un taux de critiques augmenté de 1 cran."
   },
   {
     "id": "jawlock",
     "slug": "jaw-lock",
     "slugLoc": "croque-fort",
     "name": "Croque Fort",
-    "description": ""
+    "description": "Inflige l'état « Croque Fort » au lanceur et à l'adversaire."
   },
   {
     "id": "stuffcheeks",
@@ -4778,7 +4778,7 @@
     "slug": "magic-powder",
     "slugLoc": "poudre-magique",
     "name": "Poudre Magique",
-    "description": "Le ou les types de la cible sont remplacés par le type Psy."
+    "description": "Le ou les types de la cible sont remplacés par le type Psy.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "dragondarts",
@@ -4799,7 +4799,7 @@
     "slug": "octolock",
     "slugLoc": "octoprise",
     "name": "Octoprise",
-    "description": ""
+    "description": "Empêche l'adversaire de fuir et lui inflige l'état « Octoprise »."
   },
   {
     "id": "boltbeak",
@@ -4820,7 +4820,7 @@
     "slug": "court-change",
     "slugLoc": "change-cote",
     "name": "Change-Côté",
-    "description": ""
+    "description": "Échange les effets qui affectent le côté allié et le côté adverse."
   },
   {
     "id": "clangoroussoul",
@@ -4848,7 +4848,7 @@
     "slug": "drum-beating",
     "slugLoc": "tambour-battant",
     "name": "Tambour Battant",
-    "description": ""
+    "description": "Baisse la Vitesse de l'adversaire de 1 cran."
   },
   {
     "id": "snaptrap",
@@ -4862,7 +4862,7 @@
     "slug": "pyro-ball",
     "slugLoc": "ballon-brulant",
     "name": "Ballon Brûlant",
-    "description": ""
+    "description": "À l'utilisation, soigne le gel du lanceur.\nA 10 % de chances de brûler l'adversaire."
   },
   {
     "id": "behemothblade",
@@ -4960,7 +4960,7 @@
     "slug": "meteor-assault",
     "slugLoc": "joute-astrale",
     "name": "Joute Astrale",
-    "description": ""
+    "description": "Le lanceur sera épuisé au tour suivant l'utilisation de\ncette capacité."
   },
   {
     "id": "eternabeam",
@@ -5436,7 +5436,7 @@
     "slug": "glaive-rush",
     "slugLoc": "charge-glaive",
     "name": "Charge Glaive",
-    "description": ""
+    "description": "Le lanceur devient vulnérable jusqu'à ce qu'il agisse à nouveau."
   },
   {
     "id": "revivalblessing",
@@ -5828,7 +5828,7 @@
     "slug": "upper-hand",
     "slugLoc": "prio-parade",
     "name": "Prio-Parade",
-    "description": "Apeure l'adversaire.\nÉchoue si l'adversaire n'a pas utilisé une capacité prioritaire."
+    "description": "Apeure l'adversaire.\nÉchoue si l'adversaire n'est pas en train de préparer\nune attaque prioritaire."
   },
   {
     "id": "malignantchain",

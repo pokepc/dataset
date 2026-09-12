@@ -432,6 +432,14 @@
     "pluralName": "Muschelglocken"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "lauchstange",
+    "name": "Lauchstange",
+    "description": "Erhöht die Volltrefferquote von Porenta und Lauchzelot\num 2 Stufen.",
+    "pluralName": "Lauchstangen"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "grosslinse",
@@ -566,6 +574,54 @@
     "name": "Großwurzel",
     "description": "Der Träger regeneriert mit KP-stehlenden Attacken 30 %\nmehr KP als sonst.\nWirkt auch bei Verwurzler, Kraftabsorber etc.",
     "pluralName": "Großwurzeln"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "beulenhelm",
+    "name": "Beulenhelm",
+    "description": "Fügt dem Angreifer Schaden in Höhe von 1/6 seiner\nmaximalen KP zu, wenn der Träger von einer\nKontaktattacke getroffen wird.",
+    "pluralName": "Beulenhelme"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "luftballon",
+    "name": "Luftballon",
+    "description": "Der Träger gilt als nicht auf dem Boden befindlich und\nBoden-Attacken sowie die Zustände Stachler, Giftspitzen\nund Klebenetz haben keine Wirkung auf ihn.\nVerschwindet für die restliche Dauer des Kampfs,\nwenn der Träger Schaden durch eine Attacke erleidet.",
+    "pluralName": "Luftballons"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "rote-karte",
+    "name": "Rote Karte",
+    "description": "Zwingt den Angreifer zum Auswechseln, wenn der Träger\ndurch eine Attacke Schaden erleidet.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
+    "pluralName": "Rote Karten"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "klammerband",
+    "name": "Klammerband",
+    "description": "Erhöht den Schaden, den der Träger durch den Zustand\nUmschlingung verursacht, von 1/8 auf 1/6 der maximalen\nKP des Ziels.",
+    "pluralName": "Klammerbänder"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "fluchtknopf",
+    "name": "Fluchtknopf",
+    "description": "Wechselt den Träger aus, wenn er Schaden durch eine\nAttacke erleidet.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
+    "pluralName": "Fluchtknöpfe"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "normaljuwel",
+    "name": "Normaljuwel",
+    "description": "Erhöht die Stärke einer Normal-Attacke um 30 %.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
+    "pluralName": "Normaljuwelen"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "Schlapornite"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "brutalandanit",
+    "name": "Brutalandanit",
+    "description": "Ein getragenes Item, das es Brutalanda ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Brutalandanite"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "bibornit",
     "name": "Bibornit",
     "description": "Ein getragenes Item, das es Bibor ermöglicht,\neine Mega-Entwicklung durchzuführen.",
     "pluralName": "Bibornite"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "feldbeschichtung",
+    "name": "Feldbeschichtung",
+    "description": "Verlängert die Dauer von Feldern, die der Träger mit\nAttacken oder Fähigkeiten erzeugt, um 3 Runden,\nsodass sie insgesamt 8 Runden anhalten.",
+    "pluralName": "Feldbeschichtungen"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "elektro-samen",
+    "name": "Elektro-Samen",
+    "description": "Erhöht die Verteidigung des Trägers um 1 Stufe,\nwenn ein Elektrofeld aktiv ist.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
+    "pluralName": "Elektro-Samen"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "psycho-samen",
+    "name": "Psycho-Samen",
+    "description": "Erhöht die Spezial-Verteidigung des Trägers um 1 Stufe,\nwenn ein Psychofeld aktiv ist.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
+    "pluralName": "Psycho-Samen"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "nebel-samen",
+    "name": "Nebel-Samen",
+    "description": "Erhöht die Spezial-Verteidigung des Trägers um 1 Stufe,\nwenn ein Nebelfeld aktiv ist.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
+    "pluralName": "Nebel-Samen"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "gras-samen",
+    "name": "Gras-Samen",
+    "description": "Erhöht die Verteidigung des Trägers um 1 Stufe,\nwenn ein Grasfeld aktiv ist.\nVerschwindet nach Einsatz für die restliche Dauer\ndes Kampfs.",
+    "pluralName": "Gras-Samen"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "Palimpalimonite"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "absolnit-z",
+    "name": "Absolnit Z",
+    "description": "Ein getragenes Item, das es Absol ermöglicht,\neine Mega-Entwicklung zu Mega-Absol Z durchzuführen.",
+    "pluralName": "Absolnite Z"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "staraptornit",
     "name": "Staraptornit",
     "description": "Ein getragenes Item, das es Staraptor ermöglicht,\neine Mega-Entwicklung durchzuführen.",
     "pluralName": "Staraptornite"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "knakracknit-z",
+    "name": "Knakracknit Z",
+    "description": "Ein getragenes Item, das es Knakrack ermöglicht,\neine Mega-Entwicklung zu Mega-Knakrack Z\ndurchzuführen.",
+    "pluralName": "Knakracknite Z"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "lucarionit-z",
+    "name": "Lucarionit Z",
+    "description": "Ein getragenes Item, das es Lucario ermöglicht,\neine Mega-Entwicklung zu Mega-Lucario Z\ndurchzuführen.",
+    "pluralName": "Lucarionite Z"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "Krawellonite"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "tectassnit",
+    "name": "Tectassnit",
+    "description": "Ein getragenes Item, das es Tectass ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Tectassnite"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "halupenjonit",
     "name": "Halupenjonit",
     "description": "Ein getragenes Item, das es Halupenjo ermöglicht,\neine Mega-Entwicklung durchzuführen.",
     "pluralName": "Halupenjonite"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "espinodonit",
+    "name": "Espinodonit",
+    "description": "Ein getragenes Item, das es Espinodon ermöglicht,\neine Mega-Entwicklung durchzuführen.",
+    "pluralName": "Espinodonite"
   },
   {
     "id": "glimmoranite",

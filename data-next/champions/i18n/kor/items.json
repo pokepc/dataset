@@ -432,6 +432,14 @@
     "pluralName": "조개껍질방울"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "daepa",
+    "name": "대파",
+    "description": "파오리, 창파나이트가\n급소업+2가 된다.",
+    "pluralName": "대파"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "gwanggagrenjeu",
@@ -566,6 +574,54 @@
     "name": "큰뿌리",
     "description": "HP를 흡수하는 기술의 회복량이 1.3배가 된다.\n뿌리박기, 힘흡수 등도 1.3배가 된다.",
     "pluralName": "큰뿌리"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "ultungbultungmes",
+    "name": "울퉁불퉁멧",
+    "description": "접촉 기술을 받으면\n상대 최대 HP의 1/6만큼 데미지를 준다.",
+    "pluralName": "울퉁불퉁멧"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "pungseon",
+    "name": "풍선",
+    "description": "땅 위에 있지 않게 되어\n땅타입 기술, 압정뿌리기, 독압정,\n끈적끈적네트 상태의 효과를 받지 않는다.\n기술로 데미지를 입으면\n그 대전 중에는 사라진다.",
+    "pluralName": "풍선"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "redeukadeu",
+    "name": "레드카드",
+    "description": "자신에게 기술로 데미지를 준 상대를 교체시킨다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "레드카드"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "joimbaendeu",
+    "name": "조임밴드",
+    "description": "바인드 상태로 주는 데미지가\n상대 최대 HP의 1/8이 아니라 1/6이 된다.",
+    "pluralName": "조임밴드"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "talculbeoteun",
+    "name": "탈출버튼",
+    "description": "기술로 데미지를 입으면\n지닌 포켓몬으로 돌아간다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "탈출버튼"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "nomaljueol",
+    "name": "노말주얼",
+    "description": "노말타입 기술의 위력이 1.3배가 된다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "노말주얼"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "이어롭나이트"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "bomandanaiteu",
+    "name": "보만다나이트",
+    "description": "보만다가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "보만다나이트"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "dogcimbungnaiteu",
     "name": "독침붕나이트",
     "description": "독침붕이 메가진화할 수 있게 되는 도구.",
     "pluralName": "독침붕나이트"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "geuraundeukoteu",
+    "name": "그라운드코트",
+    "description": "기술이나 특성으로 필드를 전개했을 때\n지속 시간이 3턴 증가한다. (총 8턴)",
+    "pluralName": "그라운드코트"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "ilregteurigsideu",
+    "name": "일렉트릭시드",
+    "description": "일렉트릭필드 상태일 때\n방어가 1단계 올라간다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "일렉트릭시드"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "saikosideu",
+    "name": "사이코시드",
+    "description": "사이코필드 상태일 때\n특수방어가 1단계 올라간다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "사이코시드"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "miseuteusideu",
+    "name": "미스트시드",
+    "description": "미스트필드 상태일 때\n특수방어가 1단계 올라간다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "미스트시드"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "geuraeseusideu",
+    "name": "그래스시드",
+    "description": "그래스필드 상태일 때\n방어가 1단계 올라간다.\n한 번 사용하면 그 대전 중에는 사라진다.",
+    "pluralName": "그래스시드"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "치렁나이트"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "aebsolnaiteuz",
+    "name": "앱솔나이트Z",
+    "description": "앱솔이 메가진화할 수 있게 되는 도구.\n(메가앱솔Z)",
+    "pluralName": "앱솔나이트Z"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "jjireuhokeunaiteu",
     "name": "찌르호크나이트",
     "description": "찌르호크가 메가진화할 수 있게 되는 도구.",
     "pluralName": "찌르호크나이트"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "hankariaseunaiteuz",
+    "name": "한카리아스나이트Z",
+    "description": "한카리아스가 메가진화할 수 있게 되는 도구.\n(메가한카리아스Z)",
+    "pluralName": "한카리아스나이트Z"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "rukarionaiteuz",
+    "name": "루카리오나이트Z",
+    "description": "루카리오가 메가진화할 수 있게 되는 도구.\n(메가루카리오Z)",
+    "pluralName": "루카리오나이트Z"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "모단단게나이트"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "gabjumusanaiteu",
+    "name": "갑주무사나이트",
+    "description": "갑주무사가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "갑주무사나이트"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "seukobilreonnaiteu",
     "name": "스코빌런나이트",
     "description": "스코빌런이 메가진화할 수 있게 되는 도구.",
     "pluralName": "스코빌런나이트"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "deunilreibeunaiteu",
+    "name": "드닐레이브나이트",
+    "description": "드닐레이브가 메가진화할 수 있게 되는 도구.",
+    "pluralName": "드닐레이브나이트"
   },
   {
     "id": "glimmoranite",

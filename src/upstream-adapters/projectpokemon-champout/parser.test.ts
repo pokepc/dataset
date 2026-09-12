@@ -116,6 +116,39 @@ describe('parser helpers', () => {
 })
 
 describe('data generation', () => {
+  it('maps non-cosmetic female forms to their own Champions records and learnsets', () => {
+    const data = buildData(DEFAULT_DATASET_ROOT)
+
+    expect(data.pokemon.find((record) => record.id === 'indeedee')).toMatchObject({
+      championsId: '0876000',
+      formName: 'Male',
+      isFemale: false,
+      abilities: ['innerfocus', 'synchronize', 'psychicsurge'],
+    })
+    expect(data.pokemon.find((record) => record.id === 'indeedee-f')).toMatchObject({
+      championsId: '0876001',
+      pokeApiId: 10186,
+      baseSpecies: 'indeedee',
+      formName: 'Female',
+      isForm: true,
+      isFemale: true,
+      isCosmetic: false,
+      abilities: ['owntempo', 'synchronize', 'psychicsurge'],
+      baseHp: 70,
+      baseAtk: 55,
+      baseDef: 65,
+      baseSpAtk: 95,
+      baseSpDef: 105,
+      baseSpeed: 85,
+    })
+    expect(data.pokemonMoves.find((record) => record.id === 'indeedee-f')?.moves).toContain(
+      'followme',
+    )
+    expect(data.pokemonMoves.find((record) => record.id === 'indeedee')?.moves).not.toContain(
+      'followme',
+    )
+  })
+
   it('generates the expected canonical and i18n records', () => {
     const warningCount = { value: 0 }
     const data = buildData(DEFAULT_DATASET_ROOT, {
@@ -125,11 +158,11 @@ describe('data generation', () => {
     })
 
     expect(data.moves).toHaveLength(835)
-    expect(data.abilities).toHaveLength(203) // 202 from the dump + 1 preliminary
-    expect(data.items).toHaveLength(148)
-    expect(data.battleStates).toHaveLength(66)
-    expect(data.pokemon).toHaveLength(441)
-    expect(data.pokemonMoves).toHaveLength(236)
+    expect(data.abilities).toHaveLength(217)
+    expect(data.items).toHaveLength(166)
+    expect(data.battleStates).toHaveLength(69)
+    expect(data.pokemon).toHaveLength(477)
+    expect(data.pokemonMoves).toHaveLength(262)
     expect(Object.keys(data.i18n).sort()).toEqual([...I18N_CODE].sort())
     expect(data.warnings).toEqual([])
     expect(warningCount.value).toBe(0)
@@ -143,7 +176,7 @@ describe('data generation', () => {
       type: 'normal',
       category: 'status',
       target: 'opponents_side',
-      usable: false,
+      usable: true,
     })
     expect(data.moves.find((move) => move.id === 'doubleshock')).toMatchObject({
       championsId: '892',
@@ -154,7 +187,7 @@ describe('data generation', () => {
       category: 'physical',
       target: 'single_target',
       contact: true,
-      usable: false,
+      usable: true,
     })
 
     for (const move of data.moves) {
@@ -206,10 +239,9 @@ describe('data generation', () => {
       championsId: '10',
       slug: 'volt-absorb',
     })
-    // Announced but not in the dump yet, so it carries no Champions id.
     expect(data.abilities.find((record) => record.id === 'auraguard')).toMatchObject({
       id: 'auraguard',
-      championsId: 'preliminary-auraguard',
+      championsId: '319',
       slug: 'aura-guard',
       name: 'Aura Guard',
     })
@@ -405,12 +437,11 @@ describe('data generation', () => {
     expect(data.i18n.esp.abilities.find((record) => record.id === 'speedboost')).toMatchObject({
       slug: 'speed-boost',
     })
-    // A preliminary ability reaches every language, keeping its English name.
     expect(data.i18n.esp.abilities.find((record) => record.id === 'auraguard')).toMatchObject({
       slug: 'aura-guard',
-      slugLoc: 'aura-guard',
-      name: 'Aura Guard',
-      description: 'Reduce a la mitad el daño recibido por los movimientos de contacto.',
+      slugLoc: 'aura-protectora',
+      name: 'Aura Protectora',
+      description: 'Reduce a la mitad el daño que el Pokémon recibe de\nmovimientos de contacto.',
     })
     expect(data.i18n.esp.items.find((record) => record.id === 'cheriberry')).toMatchObject({
       slug: 'cheri-berry',

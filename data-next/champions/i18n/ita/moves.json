@@ -536,21 +536,21 @@
     "slug": "poison-powder",
     "slugLoc": "velenpolvere",
     "name": "Velenpolvere",
-    "description": "Il Pokémon causa lo stato Avvelenamento al bersaglio."
+    "description": "Il Pokémon causa lo stato Avvelenamento al bersaglio.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "stunspore",
     "slug": "stun-spore",
     "slugLoc": "paralizzante",
     "name": "Paralizzante",
-    "description": "Il Pokémon causa lo stato Paralisi al bersaglio."
+    "description": "Il Pokémon causa lo stato Paralisi al bersaglio.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "sleeppowder",
     "slug": "sleep-powder",
     "slugLoc": "sonnifero",
     "name": "Sonnifero",
-    "description": "Il Pokémon causa lo stato Sonno al bersaglio."
+    "description": "Il Pokémon causa lo stato Sonno al bersaglio.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "petaldance",
@@ -599,14 +599,14 @@
     "slug": "thunder-wave",
     "slugLoc": "tuononda",
     "name": "Tuononda",
-    "description": "Il Pokémon causa lo stato Paralisi al bersaglio."
+    "description": "Il Pokémon causa lo stato Paralisi al bersaglio.\nNon ha effetto sui Pokémon di tipo Terra."
   },
   {
     "id": "thunder",
     "slug": "thunder",
     "slugLoc": "tuono",
     "name": "Tuono",
-    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato Paralisi\nal bersaglio. Questa mossa può colpire anche se il bersaglio è\nnello stato In aria e, se lo stato Pioggia è attivo, va sempre\na segno."
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato Paralisi\nal bersaglio e può colpire anche bersagli nello stato In aria.\nCon lo stato Pioggia attivo, questa mossa va sempre a segno,\nmentre con lo stato Sole intenso attivo la sua precisione\nè del 50%."
   },
   {
     "id": "rockthrow",
@@ -1026,7 +1026,7 @@
     "slug": "spore",
     "slugLoc": "spora",
     "name": "Spora",
-    "description": "Il Pokémon causa lo stato Sonno al bersaglio."
+    "description": "Il Pokémon causa lo stato Sonno al bersaglio.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "flash",
@@ -1138,14 +1138,14 @@
     "slug": "slash",
     "slugLoc": "lacerazione",
     "name": "Lacerazione",
-    "description": ""
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1."
   },
   {
     "id": "substitute",
     "slug": "substitute",
     "slugLoc": "sostituto",
     "name": "Sostituto",
-    "description": "Il Pokémon perde 1/4 dei suoi PS massimi e crea un sostituto.\nIl sostituto viene colpito dalle mosse al posto del Pokémon\ne sparisce dopo aver subito danni pari a 1/4 dei PS massimi\ndel Pokémon che lo ha creato."
+    "description": "Il Pokémon perde 1/4 dei suoi PS massimi e crea un sostituto\nche viene colpito dalle mosse al posto del Pokémon e sparisce\ndopo aver subito danni pari a 1/4 dei PS massimi del Pokémon\nche lo ha creato. Le mosse della classe Suono possono colpire\nil Pokémon ignorando il sostituto."
   },
   {
     "id": "struggle",
@@ -1243,7 +1243,7 @@
     "slug": "cotton-spore",
     "slugLoc": "cotonspora",
     "name": "Cotonspora",
-    "description": "Il Pokémon riduce di 2 gradi la Velocità del bersaglio."
+    "description": "Il Pokémon riduce di 2 gradi la Velocità del bersaglio.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "reversal",
@@ -1327,7 +1327,7 @@
     "slug": "octazooka",
     "slugLoc": "octazooka",
     "name": "Octazooka",
-    "description": ""
+    "description": "Il Pokémon ha il 50% di probabilità di ridurre di 1 grado\nla precisione del bersaglio."
   },
   {
     "id": "spikes",
@@ -1453,7 +1453,7 @@
     "slug": "milk-drink",
     "slugLoc": "buonlatte",
     "name": "Buonlatte",
-    "description": ""
+    "description": "Il Pokémon e il suo alleato recuperano metà dei rispettivi\nPS massimi."
   },
   {
     "id": "spark",
@@ -1957,7 +1957,7 @@
     "slug": "brick-break",
     "slugLoc": "breccia",
     "name": "Breccia",
-    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta avversario."
+    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta del bersaglio."
   },
   {
     "id": "yawn",
@@ -3329,7 +3329,7 @@
     "slug": "rage-powder",
     "slugLoc": "polverabbia",
     "name": "Polverabbia",
-    "description": "Il Pokémon diventa il bersaglio di tutte le mosse avversarie\nche permettono di selezionarne uno."
+    "description": "Il Pokémon diventa il bersaglio di tutte le mosse\navversarie che permettono di selezionarne uno.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "telekinesis",
@@ -3553,7 +3553,7 @@
     "slug": "shift-gear",
     "slugLoc": "cambiomarcia",
     "name": "Cambiomarcia",
-    "description": ""
+    "description": "Il Pokémon aumenta di 1 grado il suo Attacco e di 2 gradi\nla sua Velocità."
   },
   {
     "id": "circlethrow",
@@ -3791,7 +3791,7 @@
     "slug": "hurricane",
     "slugLoc": "tifone",
     "name": "Tifone",
-    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nConfusione al bersaglio. Questa mossa può colpire anche\nse il bersaglio è nello stato In aria e, se lo stato Pioggia\nè attivo, va sempre a segno."
+    "description": "Il Pokémon ha il 30% di probabilità di causare lo stato\nConfusione al bersaglio e può colpire anche bersagli\nnello stato In aria. Con lo stato Pioggia attivo, questa\nmossa va sempre a segno, mentre con lo stato Sole intenso\nattivo la sua precisione è del 50%."
   },
   {
     "id": "headcharge",
@@ -4617,7 +4617,7 @@
     "slug": "psychic-fangs",
     "slugLoc": "psicozanna",
     "name": "Psicozanna",
-    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta avversario."
+    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta del bersaglio."
   },
   {
     "id": "stompingtantrum",
@@ -4687,7 +4687,7 @@
     "slug": "zing-zap",
     "slugLoc": "elettropizzico",
     "name": "Elettropizzico",
-    "description": ""
+    "description": "Il Pokémon ha il 30% di probabilità di far tentennare\nil bersaglio."
   },
   {
     "id": "naturesmadness",
@@ -4743,14 +4743,14 @@
     "slug": "snipe-shot",
     "slugLoc": "tiromirato",
     "name": "Tiromirato",
-    "description": ""
+    "description": "Il Pokémon attacca con lo stato Brutto colpo+1, e ignora\ngli effetti di mosse e abilità che attirano le mosse."
   },
   {
     "id": "jawlock",
     "slug": "jaw-lock",
     "slugLoc": "morsostretto",
     "name": "Morsostretto",
-    "description": ""
+    "description": "Il Pokémon e il bersaglio entrano nello stato Morsostretto."
   },
   {
     "id": "stuffcheeks",
@@ -4778,7 +4778,7 @@
     "slug": "magic-powder",
     "slugLoc": "magipolvere",
     "name": "Magipolvere",
-    "description": "Il Pokémon cambia il tipo del bersaglio in Psico."
+    "description": "Il Pokémon cambia il tipo del bersaglio in Psico.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "dragondarts",
@@ -4799,7 +4799,7 @@
     "slug": "octolock",
     "slugLoc": "tentacolock",
     "name": "Tentacolock",
-    "description": ""
+    "description": "Il Pokémon causa gli stati Antifuga e Blocco tentacolare\nal bersaglio."
   },
   {
     "id": "boltbeak",
@@ -4820,7 +4820,7 @@
     "slug": "court-change",
     "slugLoc": "cambiocampo",
     "name": "Cambiocampo",
-    "description": ""
+    "description": "Il Pokémon scambia lo stato del campo alleato con quello\ndel campo avversario."
   },
   {
     "id": "clangoroussoul",
@@ -4848,7 +4848,7 @@
     "slug": "drum-beating",
     "slugLoc": "tamburattacco",
     "name": "Tamburattacco",
-    "description": ""
+    "description": "Il Pokémon riduce di 1 grado la Velocità del bersaglio."
   },
   {
     "id": "snaptrap",
@@ -4862,7 +4862,7 @@
     "slug": "pyro-ball",
     "slugLoc": "palla-infuocata",
     "name": "Palla Infuocata",
-    "description": ""
+    "description": "Il Pokémon guarisce dallo stato Congelamento, e ha il 10%\ndi probabilità di causare lo stato Scottatura al bersaglio."
   },
   {
     "id": "behemothblade",
@@ -4960,7 +4960,7 @@
     "slug": "meteor-assault",
     "slugLoc": "sfolgorassalto",
     "name": "Sfolgorassalto",
-    "description": ""
+    "description": "Il turno dopo aver usato questa mossa, il Pokémon è affetto\ndallo stato Ricarica."
   },
   {
     "id": "eternabeam",
@@ -5436,7 +5436,7 @@
     "slug": "glaive-rush",
     "slugLoc": "spadoncarica",
     "name": "Spadoncarica",
-    "description": ""
+    "description": "Il Pokémon è affetto dallo stato Indifeso fino alla sua prossima\nazione."
   },
   {
     "id": "revivalblessing",
@@ -5513,7 +5513,7 @@
     "slug": "raging-bull",
     "slugLoc": "scatenatoro",
     "name": "Scatenatoro",
-    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta avversario.\nIl tipo di questa mossa cambia in base alla forma di chi la usa."
+    "description": "Il Pokémon attacca rimuovendo gli stati Schermo di luce,\nRiflesso e Velo dell'aurora dal campo di lotta del bersaglio.\nIl tipo di questa mossa cambia in base alla forma di chi la usa."
   },
   {
     "id": "makeitrain",
@@ -5828,7 +5828,7 @@
     "slug": "upper-hand",
     "slugLoc": "colpo-di-mano",
     "name": "Colpo di Mano",
-    "description": "Il Pokémon fa tentennare il bersaglio. Se quest'ultimo non\nha scelto di usare una mossa ad alta priorità, questa mossa\nfallisce."
+    "description": "Il Pokémon fa tentennare il bersaglio. Questa mossa fallisce\nse il bersaglio non ha scelto di usare un attacco ad alta priorità."
   },
   {
     "id": "malignantchain",

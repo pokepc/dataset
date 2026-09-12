@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "turbo",
     "name": "Turbo",
-    "description": "La Vitesse du Pokémon augmente de 1 cran\nà la fin de chaque tour."
+    "description": "La Vitesse du Pokémon augmente de 1 cran à la fin de chaque\ntour, sauf à la fin de celui où le Pokémon est arrivé sur le terrain\naprès un échange."
   },
   {
     "id": "battlearmor",
@@ -53,7 +53,7 @@
     "slug": "sand-veil",
     "slugLoc": "voile-sable",
     "name": "Voile Sable",
-    "description": "Lors des tempêtes de sable, l'Esquive du Pokémon\nest multipliée par 1,25."
+    "description": "Lors des tempêtes de sable, l'Esquive du Pokémon\nest multipliée par 1,25.\nLe Pokémon est immunisé contre les dégâts des tempêtes\nde sable."
   },
   {
     "id": "static",
@@ -172,7 +172,7 @@
     "slug": "effect-spore",
     "slugLoc": "pose-spore",
     "name": "Pose Spore",
-    "description": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances d'empoisonner, paralyser\nou endormir l'adversaire."
+    "description": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances d'empoisonner, paralyser\nou endormir l'adversaire.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "synchronize",
@@ -308,6 +308,13 @@
     "description": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances de brûler l'adversaire."
   },
   {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "fuite",
+    "name": "Fuite",
+    "description": "Le Pokémon peut être remplacé par un autre Pokémon\nde son équipe, même si des effets l'en empêchent."
+  },
+  {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "regard-vif",
@@ -390,6 +397,13 @@
     "slugLoc": "ecaille-speciale",
     "name": "Écaille Spéciale",
     "description": "Quand le Pokémon souffre d'une altération de statut,\nsa Défense est multipliée par 1,5."
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "suintement",
+    "name": "Suintement",
+    "description": "Quand le Pokémon subit une capacité absorbant des PV,\nil empêche l'adversaire de se soigner et lui inflige des dégâts\néquivalents à la quantité de PV qui aurait dû être absorbée."
   },
   {
     "id": "overgrow",
@@ -917,6 +931,13 @@
     "description": "Quand le Pokémon subit des dégâts d'une capacité\nde type Ténèbres, son Attaque augmente de 1 cran."
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "phobique",
+    "name": "Phobique",
+    "description": "Si le Pokémon est intimidé ou subit des dégâts d'une capacité\nde type Ténèbres, Spectre ou Insecte, sa Vitesse augmente\nde 1 cran."
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "miroir-magik",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "farceur",
     "name": "Farceur",
-    "description": "Le niveau de priorité des capacités de statut du Pokémon\naugmente de 1 cran."
+    "description": "Le niveau de priorité des capacités de statut du Pokémon\naugmente de 1 cran.\nEn contrepartie, les capacités de statut du Pokémon n'affectent\nplus les Pokémon de type Ténèbres."
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "La puissance des capacités du Pokémon qui projettent une aura\nest multipliée par 1,5."
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "toison-herbue",
+    "name": "Toison Herbue",
+    "description": "Quand un champ herbu est actif, la Défense du Pokémon\nest multipliée par 1,5."
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "symbiose",
@@ -1099,11 +1127,25 @@
     "description": "Quand le Pokémon subit des dégâts d'une capacité,\nsa Défense augmente de 1 cran."
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "repli-tactique",
+    "name": "Repli Tactique",
+    "description": "Quand les PV du Pokémon tombent à la moitié ou moins,\nil revient dans son équipe."
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "cruaute",
     "name": "Cruauté",
     "description": "Quand le Pokémon attaque un adversaire empoisonné\nou gravement empoisonné, il inflige systématiquement\nun coup critique."
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "filature",
+    "name": "Filature",
+    "description": "Quand le Pokémon attaque une cible qui vient d'arriver sur\nle terrain après un échange, la puissance de la capacité\nutilisée est multipliée par 2."
   },
   {
     "id": "waterbubble",
@@ -1204,6 +1246,27 @@
     "description": "Quand le Pokémon arrive sur le terrain, il crée un champ\nélectrifié sur tout le terrain pendant 5 tours."
   },
   {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "crea-psy",
+    "name": "Créa-Psy",
+    "description": "Quand le Pokémon arrive sur le terrain, il crée un champ\npsychique sur tout le terrain pendant 5 tours."
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "crea-herbe",
+    "name": "Créa-Herbe",
+    "description": "Quand le Pokémon arrive sur le terrain, il crée un champ herbu\nsur tout le terrain pendant 5 tours."
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "libero",
+    "name": "Libéro",
+    "description": "Le Pokémon prend le type de la capacité qu'il utilise.\nCe talent ne s'active qu'une fois par arrivée du Pokémon\nsur le terrain."
+  },
+  {
     "id": "mirrorarmor",
     "slug": "mirror-armor",
     "slugLoc": "armure-miroir",
@@ -1216,6 +1279,13 @@
     "slugLoc": "nerfs-d-acier",
     "name": "Nerfs d'Acier",
     "description": "Le Pokémon ignore les effets des capacités ou des talents\nqui attirent les capacités."
+  },
+  {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "punk-rock",
+    "name": "Punk Rock",
+    "description": "La puissance des capacités de son du Pokémon est multipliée\npar 1,3.\nLes dégâts des capacités de son subis par le Pokémon\nsont réduits de moitié."
   },
   {
     "id": "sandspit",
@@ -1244,6 +1314,13 @@
     "slugLoc": "brise-barriere",
     "name": "Brise-Barrière",
     "description": "Quand le Pokémon arrive sur le terrain, il annule les effets\nde Mur Lumière, Protection et Voile Aurore."
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "boost-acier",
+    "name": "Boost Acier",
+    "description": "La puissance des capacités de type Acier du Pokémon et\nde ses alliés est multipliée par 1,5."
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "Quand le Pokémon arrive sur le terrain, il annule\nles changements de stats de ses alliés."
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "semencier",
+    "name": "Semencier",
+    "description": "Quand le Pokémon subit des dégâts d'une capacité,\nil crée un champ herbu sur tout le terrain pendant 5 tours."
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "thermodynamique",
+    "name": "Thermodynamique",
+    "description": "Le Pokémon est immunisé contre la brûlure.\nQuand il subit des dégâts d'une capacité de\ntype Feu, son Attaque augmente de 1 cran."
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "sel-purificateur",
     "name": "Sel Purificateur",
     "description": "Le Pokémon est immunisé contre les altérations de statut.\nLes dégâts des capacités de type Spectre qu'il subit sont\nréduits de moitié."
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "chien-de-garde",
+    "name": "Chien de Garde",
+    "description": "Le Pokémon est immunisé contre les effets de l'intimidation.\nÀ la place, son Attaque augmente de 1 cran.\nDe plus, le Pokémon est immunisé contre les capacités ou\nles objets des adversaires qui forcent à changer de Pokémon."
   },
   {
     "id": "zerotohero",
@@ -1416,8 +1514,8 @@
   {
     "id": "auraguard",
     "slug": "aura-guard",
-    "slugLoc": "aura-guard",
-    "name": "Aura Guard",
-    "description": "Les dégâts des capacités à contact subis par le Pokémon sont réduits de moitié."
+    "slugLoc": "aura-protectrice",
+    "name": "Aura Protectrice",
+    "description": "Les dégâts des capacités à contact subis par le Pokémon\nsont réduits de moitié."
   }
 ]

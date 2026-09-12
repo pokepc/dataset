@@ -536,21 +536,21 @@
     "slug": "poison-powder",
     "slugLoc": "dokunokona",
     "name": "どくのこな",
-    "description": "相手をどく状態にする。"
+    "description": "相手をどく状態にする。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "stunspore",
     "slug": "stun-spore",
     "slugLoc": "sibiregona",
     "name": "しびれごな",
-    "description": "相手をまひ状態にする。"
+    "description": "相手をまひ状態にする。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "sleeppowder",
     "slug": "sleep-powder",
     "slugLoc": "nemurigona",
     "name": "ねむりごな",
-    "description": "相手をねむり状態にする。"
+    "description": "相手をねむり状態にする。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "petaldance",
@@ -599,14 +599,14 @@
     "slug": "thunder-wave",
     "slugLoc": "denziha",
     "name": "でんじは",
-    "description": "相手をまひ状態にする。"
+    "description": "相手をまひ状態にする。\nじめんタイプの　ポケモンには効かない。"
   },
   {
     "id": "thunder",
     "slug": "thunder",
     "slugLoc": "kaminari",
     "name": "かみなり",
-    "description": "３０％の確率で相手をまひ状態にする。\nあめ状態の場合　相手に必ず命中する。\n空中状態の相手にも当たる。"
+    "description": "３０％の確率で相手をまひ状態にする。\nあめ状態の場合　相手に必ず命中する。\nにほんばれ状態の場合　命中率は５０％になる。\n空中状態の相手にも当たる。"
   },
   {
     "id": "rockthrow",
@@ -1026,7 +1026,7 @@
     "slug": "spore",
     "slugLoc": "kinokonohousi",
     "name": "キノコのほうし",
-    "description": "相手をねむり状態にする。"
+    "description": "相手をねむり状態にする。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "flash",
@@ -1138,14 +1138,14 @@
     "slug": "slash",
     "slugLoc": "kirisaku",
     "name": "きりさく",
-    "description": ""
+    "description": "きゅうしょアップ＋１　で攻撃する。"
   },
   {
     "id": "substitute",
     "slug": "substitute",
     "slugLoc": "migawari",
     "name": "みがわり",
-    "description": "自分のＨＰを最大ＨＰの１／４減らし\nみがわりを出す。\nみがわりは　自分の代わりに技を受ける。\n最大ＨＰの１／４分のダメージを受けると消える。"
+    "description": "自分のＨＰを最大ＨＰの１／４減らし\nみがわりを出す。\nみがわりは　自分の代わりに技を受ける。\n最大ＨＰの１／４分のダメージを受けると消える。\n音の技は　みがわりを無視して受ける。"
   },
   {
     "id": "struggle",
@@ -1243,7 +1243,7 @@
     "slug": "cotton-spore",
     "slugLoc": "watahousi",
     "name": "わたほうし",
-    "description": "相手の素早さを２段階下げる。"
+    "description": "相手の素早さを２段階下げる。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "reversal",
@@ -1327,7 +1327,7 @@
     "slug": "octazooka",
     "slugLoc": "okutanhou",
     "name": "オクタンほう",
-    "description": ""
+    "description": "５０％の確率で　相手の命中率を１段階下げる。"
   },
   {
     "id": "spikes",
@@ -1453,7 +1453,7 @@
     "slug": "milk-drink",
     "slugLoc": "mirukunomi",
     "name": "ミルクのみ",
-    "description": ""
+    "description": "自分か味方の\nＨＰを最大ＨＰの１／２回復する。"
   },
   {
     "id": "spark",
@@ -3329,7 +3329,7 @@
     "slug": "rage-powder",
     "slugLoc": "ikarinokona",
     "name": "いかりのこな",
-    "description": "相手の技を全て自分が受ける。\n相手を選ぶ技にしか効果はない。"
+    "description": "相手の技を全て自分が受ける。\n相手を選ぶ技にしか効果はない。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "telekinesis",
@@ -3553,7 +3553,7 @@
     "slug": "shift-gear",
     "slugLoc": "giatienzi",
     "name": "ギアチェンジ",
-    "description": ""
+    "description": "自分の攻撃を１段階上げて\n素早さを２段階上げる。"
   },
   {
     "id": "circlethrow",
@@ -3791,7 +3791,7 @@
     "slug": "hurricane",
     "slugLoc": "bouhuu",
     "name": "ぼうふう",
-    "description": "３０％の確率で相手をこんらん状態にする。\nあめ状態の場合　相手に必ず命中する。\n空中状態の相手にも当たる。"
+    "description": "３０％の確率で相手をこんらん状態にする。\nあめ状態の場合　相手に必ず命中する。\nにほんばれ状態の場合　命中率は５０％になる。\n空中状態の相手にも当たる。"
   },
   {
     "id": "headcharge",
@@ -4687,7 +4687,7 @@
     "slug": "zing-zap",
     "slugLoc": "biribiritikutiku",
     "name": "びりびりちくちく",
-    "description": ""
+    "description": "３０％の確率で相手をひるませる。"
   },
   {
     "id": "naturesmadness",
@@ -4743,14 +4743,14 @@
     "slug": "snipe-shot",
     "slugLoc": "neraiuti",
     "name": "ねらいうち",
-    "description": ""
+    "description": "技を引き受ける特性や技の影響を無視する。\nきゅうしょアップ＋１　で攻撃する。"
   },
   {
     "id": "jawlock",
     "slug": "jaw-lock",
     "slugLoc": "kuraituku",
     "name": "くらいつく",
-    "description": ""
+    "description": "相手と自分を　くらいつく状態にする。"
   },
   {
     "id": "stuffcheeks",
@@ -4778,7 +4778,7 @@
     "slug": "magic-powder",
     "slugLoc": "mahounokona",
     "name": "まほうのこな",
-    "description": "相手のタイプをエスパータイプに変える。"
+    "description": "相手のタイプをエスパータイプに変える。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "dragondarts",
@@ -4799,7 +4799,7 @@
     "slug": "octolock",
     "slugLoc": "takogatame",
     "name": "たこがため",
-    "description": ""
+    "description": "相手を　にげられない状態と\nたこがため状態にする。"
   },
   {
     "id": "boltbeak",
@@ -4820,7 +4820,7 @@
     "slug": "court-change",
     "slugLoc": "kototienzi",
     "name": "コートチェンジ",
-    "description": ""
+    "description": "味方と相手の場の状態を入れ替える。"
   },
   {
     "id": "clangoroussoul",
@@ -4848,7 +4848,7 @@
     "slug": "drum-beating",
     "slugLoc": "doramuatatuku",
     "name": "ドラムアタック",
-    "description": ""
+    "description": "相手の素早さを１段階下げる。"
   },
   {
     "id": "snaptrap",
@@ -4862,7 +4862,7 @@
     "slug": "pyro-ball",
     "slugLoc": "kaenboru",
     "name": "かえんボール",
-    "description": ""
+    "description": "１０％の確率で相手をやけど状態にする。\n使うと自分のこおり状態をなおす。"
   },
   {
     "id": "behemothblade",
@@ -4960,7 +4960,7 @@
     "slug": "meteor-assault",
     "slugLoc": "sutaasaruto",
     "name": "スターアサルト",
-    "description": ""
+    "description": "使った次のターン\n自分は　反動状態になる。"
   },
   {
     "id": "eternabeam",
@@ -5436,7 +5436,7 @@
     "slug": "glaive-rush",
     "slugLoc": "kiyokentotugeki",
     "name": "きょけんとつげき",
-    "description": ""
+    "description": "次に自分が行動するまで\n自分は　無防備状態になる。"
   },
   {
     "id": "revivalblessing",
@@ -5828,7 +5828,7 @@
     "slug": "upper-hand",
     "slugLoc": "hayategaesi",
     "name": "はやてがえし",
-    "description": "相手が先制技を使っていない場合\n失敗する。相手をひるませる。"
+    "description": "相手が　先制できる攻撃を使っていない場合\n失敗する。相手をひるませる。"
   },
   {
     "id": "malignantchain",

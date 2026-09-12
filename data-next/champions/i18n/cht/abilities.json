@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "jia-su",
     "name": "加速",
-    "description": "在回合結束時，速度會提高1階。"
+    "description": "在回合結束時，速度會提高1階。\n在替換出場的回合速度不會提高。"
   },
   {
     "id": "battlearmor",
@@ -53,7 +53,7 @@
     "slug": "sand-veil",
     "slugLoc": "sha-yin",
     "name": "沙隱",
-    "description": "沙暴狀態時，\n閃避率會變為1.25倍。"
+    "description": "沙暴狀態時，\n閃避率會變為1.25倍。\n因沙暴狀態而受到的傷害無效。"
   },
   {
     "id": "static",
@@ -172,7 +172,7 @@
     "slug": "effect-spore",
     "slugLoc": "bao-zi",
     "name": "孢子",
-    "description": "受到接觸類招式時，\n有30%的機率會讓對手變為\n中毒、麻痺、睡眠之中的一種狀態。"
+    "description": "受到接觸類招式時，\n有30%的機率會讓對手變為\n中毒、麻痺、睡眠之中的一種狀態。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "synchronize",
@@ -308,6 +308,13 @@
     "description": "受到接觸類招式時，\n有30%的機率會讓對手變為灼傷狀態。"
   },
   {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "tao-pao",
+    "name": "逃跑",
+    "description": "可無視妨礙替換的效果，\n和同行隊伍中的其他寶可夢替換。"
+  },
+  {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "rui-li-mu-guang",
@@ -324,7 +331,7 @@
   {
     "id": "pickup",
     "slug": "pickup",
-    "slugLoc": "jian-shi",
+    "slugLoc": "jian-shi-pickup",
     "name": "撿拾",
     "description": "自己沒有攜帶道具時，\n會在回合結束時撿來\n自己以外的寶可夢消耗的道具。"
   },
@@ -390,6 +397,13 @@
     "slugLoc": "shen-qi-lin-pian",
     "name": "神奇鱗片",
     "description": "變為異常狀態時，\n防禦會變為1.5倍。"
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "wu-ni-jiang",
+    "name": "污泥漿",
+    "description": "受到吸取HP的招式時，\n不會讓對手回復，\n且會給予相當於回復量的傷害。"
   },
   {
     "id": "overgrow",
@@ -917,6 +931,13 @@
     "description": "受到惡屬性招式傷害時，\n攻擊會提高1階。"
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "dan-qie",
+    "name": "膽怯",
+    "description": "受到惡、幽靈、蟲屬性的招式傷害\n或受到威嚇時，速度會提高1階。"
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "mo-fa-jing",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "e-zuo-ju-zhi-xin",
     "name": "惡作劇之心",
-    "description": "變化招式的優先度提高1階。"
+    "description": "變化招式的優先度提高1階。\n但變化招式對惡屬性的寶可夢會失效。"
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "波動和波導類招式威力會變為1.5倍。"
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "cao-zhi-mao-pi",
+    "name": "草之毛皮",
+    "description": "青草場地狀態時，\n防禦會變為1.5倍。"
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "gong-sheng",
@@ -1099,11 +1127,25 @@
     "description": "受到招式傷害時，\n防禦會提高1階。"
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "wei-xian-hui-bi",
+    "name": "危險迴避",
+    "description": "HP降到1/2以下時，\n會退回同行隊伍。"
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "bu-ren-bu-yi",
     "name": "不仁不義",
     "description": "攻擊中毒、劇毒狀態的對手時，\n必定會擊中要害。"
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "jian-shi-stakeout",
+    "name": "監視",
+    "description": "攻擊替換出場的對手時，\n招式威力會變為2倍。"
   },
   {
     "id": "waterbubble",
@@ -1204,6 +1246,27 @@
     "description": "自出場起的5回合內，\n會讓整個場上變為電氣場地狀態。"
   },
   {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "jing-shen-zhi-zao-zhe",
+    "name": "精神製造者",
+    "description": "自出場起的5回合內，\n會讓整個場上變為精神場地狀態。"
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "qing-cao-zhi-zao-zhe",
+    "name": "青草製造者",
+    "description": "自出場起的5回合內，\n會讓整個場上變為青草場地狀態。"
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "zi-you-zhe",
+    "name": "自由者",
+    "description": "每次出場時，\n變為和自己使出的招式\n相同的屬性1次。"
+  },
+  {
     "id": "mirrorarmor",
     "slug": "mirror-armor",
     "slugLoc": "jing-jia",
@@ -1216,6 +1279,13 @@
     "slugLoc": "jian-yi",
     "name": "堅毅",
     "description": "會無視具有吸引招式效果的\n特性或招式的影響。"
+  },
+  {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "pang-ke-yao-gun",
+    "name": "龐克搖滾",
+    "description": "聲音類招式威力會變為1.3倍。\n因聲音類招式而受到的傷害會減半。"
   },
   {
     "id": "sandspit",
@@ -1244,6 +1314,13 @@
     "slugLoc": "chu-zhang",
     "name": "除障",
     "description": "出場時，會解除光牆、\n反射壁、極光幕狀態。"
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "gang-zhi-yi-zhi",
+    "name": "鋼之意志",
+    "description": "自己和同伴的鋼屬性招式\n威力會變為1.5倍。"
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "出場時，會讓同伴的能力變化復原。"
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "diao-chu-zhong-zi",
+    "name": "掉出種子",
+    "description": "自受到招式傷害起的5回合內，\n會讓整個場上變為青草場地狀態。"
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "re-jiao-huan",
+    "name": "熱交換",
+    "description": "受到火屬性招式傷害時，\n攻擊會提高1階。\n不會變為灼傷狀態。"
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "jie-jing-zhi-yan",
     "name": "潔淨之鹽",
     "description": "不會變為異常狀態。\n因幽靈屬性招式\n而受到的傷害會減半。"
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "kan-men-quan",
+    "name": "看門犬",
+    "description": "威嚇無效，反而會讓攻擊提高1階。\n對手迫使我方替換的招式或道具無效。"
   },
   {
     "id": "zerotohero",
@@ -1416,8 +1514,8 @@
   {
     "id": "auraguard",
     "slug": "aura-guard",
-    "slugLoc": "aura-guard",
-    "name": "Aura Guard",
+    "slugLoc": "bo-dao-fang-hu",
+    "name": "波導防護",
     "description": "因接觸類招式而受到的傷害會減半。"
   }
 ]

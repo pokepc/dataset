@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "kasoku",
     "name": "かそく",
-    "description": "ターン終わりに　素早さが１段階上がる。"
+    "description": "ターン終わりに　素早さが１段階上がる。\n交代で出てきたターンは　すばやさが上がらない。"
   },
   {
     "id": "battlearmor",
@@ -53,7 +53,7 @@
     "slug": "sand-veil",
     "slugLoc": "sunagakure",
     "name": "すながくれ",
-    "description": "すなあらし状態の時\n回避率が１．２５倍になる。"
+    "description": "すなあらし状態の時\n回避率が１．２５倍になる。\nすなあらし状態で受けるダメージが効かない。"
   },
   {
     "id": "static",
@@ -172,7 +172,7 @@
     "slug": "effect-spore",
     "slugLoc": "housi",
     "name": "ほうし",
-    "description": "接触技を受けると　３０％の確率で\n相手を　どく　まひ　ねむり状態の\nいずれかにする。"
+    "description": "接触技を受けると　３０％の確率で\n相手を　どく　まひ　ねむり状態の\nいずれかにする。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "synchronize",
@@ -308,6 +308,13 @@
     "description": "接触技を受けると　３０％の確率で\n相手をやけど状態にする。"
   },
   {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "nigeasi",
+    "name": "にげあし",
+    "description": "交代を邪魔する効果を無視して\n手持ちの他のポケモンと\n交代することができる。"
+  },
+  {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "surudoime",
@@ -390,6 +397,13 @@
     "slugLoc": "husiginauroko",
     "name": "ふしぎなうろこ",
     "description": "状態異常の時　防御が１．５倍になる。"
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "hedoroeki",
+    "name": "ヘドロえき",
+    "description": "ＨＰを吸い取る技を受けた時\n相手を回復させず　その分のダメージを与える。"
   },
   {
     "id": "overgrow",
@@ -917,6 +931,13 @@
     "description": "あくタイプの技のダメージを受けると\n攻撃が１段階上がる。"
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "bibiri",
+    "name": "びびり",
+    "description": "あく　ゴースト　むしタイプの技のダメージや\nいかくを受けた時　素早さが１段階上がる。"
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "mazitukumira",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "itazuragokoro",
     "name": "いたずらごころ",
-    "description": "変化技の優先度が１段階上がる。"
+    "description": "変化技の優先度が１段階上がる。\n代わりに　あくタイプの　ポケモンには\n変化技が効かなくなる。"
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "波動の技の威力が１．５倍になる。"
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "kusanokegawa",
+    "name": "くさのけがわ",
+    "description": "グラスフィールド状態の時\n防御が１．５倍になる。"
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "kiyousei",
@@ -1099,11 +1127,25 @@
     "description": "技のダメージを受けると\n防御が１段階上がる。"
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "kikikaihi",
+    "name": "ききかいひ",
+    "description": "ＨＰが１／２以下になると　手持ちに戻る。"
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "hitodenasi",
     "name": "ひとでなし",
     "description": "どく　もうどく状態の相手を攻撃すると\n必ず急所に当たる。"
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "harikomi",
+    "name": "はりこみ",
+    "description": "交代で出てきた相手に攻撃する時\n技の威力が２倍になる。"
   },
   {
     "id": "waterbubble",
@@ -1204,6 +1246,27 @@
     "description": "登場した時から\n５ターンの間　全体の場を\nエレキフィールド状態にする。"
   },
   {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "saikomeika",
+    "name": "サイコメイカー",
+    "description": "登場した時から\n５ターンの間　全体の場を\nサイコフィールド状態にする。"
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "gurasumeika",
+    "name": "グラスメイカー",
+    "description": "登場した時から\n５ターンの間　全体の場を\nグラスフィールド状態にする。"
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "ribero",
+    "name": "リベロ",
+    "description": "登場するたび　１回だけ\n自分が出す技と同じタイプに変化する。"
+  },
+  {
     "id": "mirrorarmor",
     "slug": "mirror-armor",
     "slugLoc": "miraama",
@@ -1216,6 +1279,13 @@
     "slugLoc": "suziganeiri",
     "name": "すじがねいり",
     "description": "技を引き受ける特性や技の影響を無視する。"
+  },
+  {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "pankurotuku",
+    "name": "パンクロック",
+    "description": "音の技の威力が１．３倍になり\n音の技で受けるダメージが半減する。"
   },
   {
     "id": "sandspit",
@@ -1244,6 +1314,13 @@
     "slugLoc": "bariahuri",
     "name": "バリアフリー",
     "description": "登場した時に　ひかりのかべ　リフレクター\nオーロラベール状態を解除する。"
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "haganenoseisin",
+    "name": "はがねのせいしん",
+    "description": "自分と味方の\nはがねタイプの技の威力が１．５倍になる。"
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "登場した時に　味方の能力変化を元に戻す。"
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "koboredane",
+    "name": "こぼれダネ",
+    "description": "技のダメージを受けた時から\n５ターンの間　全体の場を\nグラスフィールド状態にする。"
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "netukoukan",
+    "name": "ねつこうかん",
+    "description": "ほのおタイプの技のダメージを受けると\n攻撃が１段階上がる。やけど状態にならない。"
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "kiyomenosio",
     "name": "きよめのしお",
     "description": "状態異常にならない。\nゴーストタイプの技で\n受けるダメージが半減する。"
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "banken",
+    "name": "ばんけん",
+    "description": "いかくが効かず　攻撃が１段階上がる。\n相手の入れ替えさせる技や道具が効かない。"
   },
   {
     "id": "zerotohero",
@@ -1416,8 +1514,8 @@
   {
     "id": "auraguard",
     "slug": "aura-guard",
-    "slugLoc": "aura-guard",
-    "name": "Aura Guard",
+    "slugLoc": "hadounobougo",
+    "name": "はどうのぼうご",
     "description": "接触技で受けるダメージが半減する。"
   }
 ]

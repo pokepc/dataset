@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "speed-boost",
     "name": "Speed Boost",
-    "description": "Boosts the Pokémon's Speed stat by 1 stage at the end of\nevery turn."
+    "description": "Boosts the Pokémon's Speed stat by 1 stage at the end of\nevery turn. The Speed stat will not be boosted on the turn\nthat the Pokémon switches into battle."
   },
   {
     "id": "battlearmor",
@@ -53,7 +53,7 @@
     "slug": "sand-veil",
     "slugLoc": "sand-veil",
     "name": "Sand Veil",
-    "description": "Boosts the Pokémon's evasiveness by 25% in a sandstorm."
+    "description": "Boosts the Pokémon's evasiveness by 25% in a sandstorm.\nThe Pokémon takes no damage from sandstorms."
   },
   {
     "id": "static",
@@ -172,7 +172,7 @@
     "slug": "effect-spore",
     "slugLoc": "effect-spore",
     "name": "Effect Spore",
-    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned, paralyzed, or put to sleep."
+    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned, paralyzed, or put to sleep.\nGrass-type Pokémon are unaffected."
   },
   {
     "id": "synchronize",
@@ -308,6 +308,13 @@
     "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being burned."
   },
   {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "run-away",
+    "name": "Run Away",
+    "description": "Enables the Pokémon to ignore any effects that would usually\nprevent it from switching out of battle and being replaced by\nanother party Pokémon."
+  },
+  {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "keen-eye",
@@ -390,6 +397,13 @@
     "slugLoc": "marvel-scale",
     "name": "Marvel Scale",
     "description": "When the Pokémon has a status condition, its Defense stat is\nboosted by 50%."
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "liquid-ooze",
+    "name": "Liquid Ooze",
+    "description": "When the Pokémon is hit by an HP-absorbing move, the\nattacker does not restore HP but instead takes damage equal\nto the amount of HP it would have restored."
   },
   {
     "id": "overgrow",
@@ -917,6 +931,13 @@
     "description": "When the Pokémon takes damage from a Dark-type move, its\nAttack stat is boosted by 1 stage."
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "rattled",
+    "name": "Rattled",
+    "description": "When the Pokémon takes damage from a Dark-, Ghost-, or\nBug-type move or when it is on the receiving end of Intimidate,\nits Speed stat is boosted by 1 stage."
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "magic-bounce",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "prankster",
     "name": "Prankster",
-    "description": "Increases the priority of the Pokémon's status moves by 1 stage."
+    "description": "Increases the priority of the Pokémon's status moves by 1 stage.\nHowever, the Pokémon's status moves no longer work against\nDark-type Pokémon."
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "Boosts the power of the Pokémon's pulse moves by 50%."
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "grass-pelt",
+    "name": "Grass Pelt",
+    "description": "Boosts the Pokémon's Defense stat by 50% on Grassy Terrain."
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "symbiosis",
@@ -1099,11 +1127,25 @@
     "description": "When the Pokémon takes damage from a move, its Defense stat\nis boosted by 1 stage."
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "emergency-exit",
+    "name": "Emergency Exit",
+    "description": "The Pokémon switches out of battle when its HP drops to 1/2 or\nless of its max."
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "merciless",
     "name": "Merciless",
     "description": "The Pokémon's attacks become critical hits if the target is\npoisoned or badly poisoned."
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "stakeout",
+    "name": "Stakeout",
+    "description": "Doubles the power of the Pokémon's moves when it attacks\ntargets that have just switched into battle."
   },
   {
     "id": "waterbubble",
@@ -1204,6 +1246,27 @@
     "description": "Turns the entire field into Electric Terrain for 5 turns when the\nPokémon enters a battle."
   },
   {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "psychic-surge",
+    "name": "Psychic Surge",
+    "description": "Turns the entire field into Psychic Terrain for 5 turns when the\nPokémon enters a battle."
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "grassy-surge",
+    "name": "Grassy Surge",
+    "description": "Turns the entire field into Grassy Terrain for 5 turns when the\nPokémon enters a battle."
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "libero",
+    "name": "Libero",
+    "description": "Changes the Pokémon's type to the type of the move it's\nabout to use. This works only once per time the Pokémon\nenters battle."
+  },
+  {
     "id": "mirrorarmor",
     "slug": "mirror-armor",
     "slugLoc": "mirror-armor",
@@ -1216,6 +1279,13 @@
     "slugLoc": "stalwart",
     "name": "Stalwart",
     "description": "The Pokémon ignores the effects of Abilities and moves that\ndraw in moves."
+  },
+  {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "punk-rock",
+    "name": "Punk Rock",
+    "description": "Boosts the power of the Pokémon's sound-based moves\nby 30% and halves the damage the Pokémon takes from\nsound-based moves."
   },
   {
     "id": "sandspit",
@@ -1244,6 +1314,13 @@
     "slugLoc": "screen-cleaner",
     "name": "Screen Cleaner",
     "description": "When the Pokémon enters a battle, it removes the Light Screen,\nReflect, and Aurora Veil statuses."
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "steely-spirit",
+    "name": "Steely Spirit",
+    "description": "Boosts the power of the Steel-type moves of the Pokémon and\nits allies by 50%."
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "When the Pokémon enters a battle, it removes all stat changes\nfrom its allies."
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "seed-sower",
+    "name": "Seed Sower",
+    "description": "Turns the entire field into Grassy Terrain for 5 turns when the\nPokémon takes damage from moves."
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "thermal-exchange",
+    "name": "Thermal Exchange",
+    "description": "When the Pokémon takes damage from a Fire-type move, its\nAttack stat is boosted by 1 stage. The Pokémon cannot be\nburned."
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "purifying-salt",
     "name": "Purifying Salt",
     "description": "Halves the damage the Pokémon takes from Ghost-type moves.\nThe Pokémon is immune to status conditions."
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "guard-dog",
+    "name": "Guard Dog",
+    "description": "Intimidate does not work on the Pokémon. Instead, it boosts\nthe Pokémon's Attack stat by 1 stage. The Pokémon is also\nunaffected by the moves and held items of other Pokémon\nthat would force it to switch out of battle."
   },
   {
     "id": "zerotohero",

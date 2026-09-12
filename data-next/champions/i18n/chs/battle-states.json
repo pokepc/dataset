@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "wu-fa-tao-zou-zhuang-tai",
     "name": "无法逃走状态",
-    "description": "无法进行替换。"
+    "description": "无法进行替换。\n对幽灵属性的宝可梦将无效。"
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "du-ling-zhuang-tai",
     "name": "毒菱状态",
-    "description": "会让替换出场的宝可梦陷入中毒状态。\n使用2次后会让其陷入剧毒状态。\n对飞行属性、飘浮特性等的\n宝可梦将无效。"
+    "description": "会让替换出场的宝可梦陷入中毒状态。\n使用2次后会让其陷入剧毒状态。\n对飞行属性、飘浮特性等的宝可梦将无效。\n毒属性的宝可梦出场时会解除此状态。"
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "ji-sheng-zhong-zi-zhuang-tai",
     "name": "寄生种子状态",
-    "description": "回合结束时，会受到最大HP1/8的伤害。\n在使用了该招式的宝可梦所在位置的对手\n会回复相当于伤害量的HP。"
+    "description": "回合结束时，会受到最大HP1/8的伤害。\n在使用了该招式的宝可梦所在位置的对手\n会回复相当于伤害量的HP。\n对草属性的宝可梦将无效。"
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "因物理招式和特殊招式\n而受到的伤害会减半。\n双打对战时会变为2/3。"
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "shao-gu-zhuang-tai",
+    "name": "蛸固状态",
+    "description": "回合结束时，\n防御、特防会降低1阶。"
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "yan-an-zhuang-tai",
@@ -390,6 +397,13 @@
     "slugLoc": "hui-fu-feng-suo-zhuang-tai",
     "name": "回复封锁状态",
     "description": "无法通过招式、特性、\n携带的道具回复HP。"
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "wu-fang-bei-zhuang-tai",
+    "name": "无防备状态",
+    "description": "对手的招式必定会击中，\n且伤害会变为2倍。"
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "yin-huo-zhuang-tai",
     "name": "引火状态",
     "description": "火属性招式的威力会变为1.5倍。"
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "jin-yao-bu-fang-zhuang-tai",
+    "name": "紧咬不放状态",
+    "description": "使用招式和受到招式影响的\n宝可梦双方都无法进行替换。"
   },
   {
     "id": "125",

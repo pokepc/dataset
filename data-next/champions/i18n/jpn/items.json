@@ -432,6 +432,14 @@
     "pluralName": "かいがらのすず"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "naganegi",
+    "name": "ながねぎ",
+    "description": "カモネギ　ネギガナイトが\nきゅうしょアップ＋２　になる。",
+    "pluralName": "ながねぎ"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "koukakurenzu",
@@ -566,6 +574,54 @@
     "name": "おおきなねっこ",
     "description": "ＨＰを吸い取る技で回復する量が\n１．３倍になる。ねをはる\nちからをすいとる等も１．３倍になる。",
     "pluralName": "おおきなねっこ"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "gotugotumetuto",
+    "name": "ゴツゴツメット",
+    "description": "接触技を受けると\n相手の最大ＨＰの\n１／６のダメージを与える。",
+    "pluralName": "ゴツゴツメット"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "huusen",
+    "name": "ふうせん",
+    "description": "地面にいないことになり\nじめんタイプの技　まきびし　どくびし\nねばねばネット状態が効かない。\n技のダメージを受けると\nその対戦中は　無くなる。",
+    "pluralName": "ふうせん"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "retudokado",
+    "name": "レッドカード",
+    "description": "技でダメージを与えてきた相手を交代させる。\n１度使うと　その対戦中は　無くなる。",
+    "pluralName": "レッドカード"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "simetukebando",
+    "name": "しめつけバンド",
+    "description": "バインド状態で与えるダメージが\n相手の最大ＨＰの１／８ではなく\n１／６になる。",
+    "pluralName": "しめつけバンド"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "datusiyutubotan",
+    "name": "だっしゅつボタン",
+    "description": "技でダメージを受けた時　手持ちに戻る。\n１度使うと　その対戦中は　無くなる。",
+    "pluralName": "だっしゅつボタン"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "nomaruziyueru",
+    "name": "ノーマルジュエル",
+    "description": "ノーマルタイプの技の威力が１．３倍になる。\n１度使うと　その対戦中は　無くなる。",
+    "pluralName": "ノーマルジュエル"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "ミミロップナイト"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "bomandanaito",
+    "name": "ボーマンダナイト",
+    "description": "ボーマンダが\nメガシンカすることができる持ち物。",
+    "pluralName": "ボーマンダナイト"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "supianaito",
     "name": "スピアナイト",
     "description": "スピアーが\nメガシンカすることができる持ち物。",
     "pluralName": "スピアナイト"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "gurandokoto",
+    "name": "グランドコート",
+    "description": "技や特性でフィールドを張った時\n継続時間が３ターン長くなる。\n（合計８ターン）",
+    "pluralName": "グランドコート"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "erekisido",
+    "name": "エレキシード",
+    "description": "エレキフィールド状態の時に\n防御が１段階上がる。\n１度使うと　その対戦中は　無くなる。",
+    "pluralName": "エレキシード"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "saikosido",
+    "name": "サイコシード",
+    "description": "サイコフィールド状態の時に\n特防が１段階上がる。\n１度使うと　その対戦中は　無くなる。",
+    "pluralName": "サイコシード"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "misutosido",
+    "name": "ミストシード",
+    "description": "ミストフィールド状態の時に\n特防が１段階上がる。\n１度使うと　その対戦中は　無くなる。",
+    "pluralName": "ミストシード"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "gurasusido",
+    "name": "グラスシード",
+    "description": "グラスフィールド状態の時に\n防御が１段階上がる。\n１度使うと　その対戦中は　無くなる。",
+    "pluralName": "グラスシード"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "チリーンナイト"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "abusorunaitoz",
+    "name": "アブソルナイトＺ",
+    "description": "アブソルが\nメガシンカすることができる持ち物。\n（メガアブソルＺ）",
+    "pluralName": "アブソルナイトＺ"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "mukuhokunaito",
     "name": "ムクホークナイト",
     "description": "ムクホークが\nメガシンカすることができる持ち物。",
     "pluralName": "ムクホークナイト"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "gaburiasunaitoz",
+    "name": "ガブリアスナイトＺ",
+    "description": "ガブリアスが\nメガシンカすることができる持ち物。\n（メガガブリアスＺ）",
+    "pluralName": "ガブリアスナイトＺ"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "rukarionaitoz",
+    "name": "ルカリオナイトＺ",
+    "description": "ルカリオが\nメガシンカすることができる持ち物。\n（メガルカリオＺ）",
+    "pluralName": "ルカリオナイトＺ"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "ケケンカニナイト"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "gusokumusiyanaito",
+    "name": "グソクムシャナイト",
+    "description": "グソクムシャが\nメガシンカすることができる持ち物。",
+    "pluralName": "グソクムシャナイト"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "sukovuiranaito",
     "name": "スコヴィラナイト",
     "description": "スコヴィランが\nメガシンカすることができる持ち物。",
     "pluralName": "スコヴィラナイト"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "segureibunaito",
+    "name": "セグレイブナイト",
+    "description": "セグレイブが\nメガシンカすることができる持ち物。",
+    "pluralName": "セグレイブナイト"
   },
   {
     "id": "glimmoranite",

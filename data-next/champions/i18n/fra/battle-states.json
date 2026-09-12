@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "fuite-impossible",
     "name": "Fuite impossible",
-    "description": "Le Pokémon ne peut pas quitter le terrain."
+    "description": "Le Pokémon ne peut pas quitter le terrain.\nN'affecte pas les Pokémon de type Spectre."
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "pics-toxik",
     "name": "Pics Toxik",
-    "description": "Les Pokémon entrant sur le terrain sont\nempoisonnés. Si 2 effets de Pics Toxik sont actifs\nen même temps, ils sont gravement empoisonnés.\nCela n'affecte pas les Pokémon de type Vol\nou dotés du talent Lévitation, entre autres."
+    "description": "Empoisonne les Pokémon entrant sur le terrain.\nEmpoisonne gravement si 2 effets de Pics Toxik\nsont actifs. N'affecte pas les Pokémon Vol ou\ndotés du talent Lévitation, entre autres. Disparaît\nquand un Pokémon Poison entre sur le terrain."
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "vampigraine",
     "name": "Vampigraine",
-    "description": "À la fin de chaque tour, le Pokémon subit\ndes dégâts équivalents à 1/8 de ses PV max,\net l'adversaire qui se trouve à l'endroit depuis\nlequel la capacité Vampigraine a été lancée\nrécupère la même quantité de PV."
+    "description": "À la fin de chaque tour, le Pokémon subit des\ndégâts équivalents à 1/8 de ses PV max, et\nl'adversaire qui se trouve là d'où Vampigraine\na été lancée récupère la même quantité de PV.\nN'affecte pas les Pokémon de type Plante."
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "Les dégâts des capacités physiques et spéciales\nsubis par le Pokémon sont réduits de moitié.\nEn Combat Duo, ces capacités infligent 2/3\nde leurs dégâts à la place."
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "octoprise",
+    "name": "Octoprise",
+    "description": "La Défense et la Défense Spéciale du Pokémon\nbaissent de 1 cran à la fin de chaque tour."
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "salaison",
@@ -390,6 +397,13 @@
     "slugLoc": "soins-bloques",
     "name": "Soins bloqués",
     "description": "Le Pokémon ne peut pas récupérer de PV grâce\nà des capacités, talents ou objets tenus."
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "vulnerable",
+    "name": "Vulnérable",
+    "description": "Les capacités des adversaires n'échouent jamais\nsur le Pokémon et les dégâts subis par ce dernier\nsont multipliés par 2."
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "torche",
     "name": "Torche",
     "description": "La puissance des capacités de type Feu\ndu Pokémon est multipliée par 1,5."
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "croque-fort",
+    "name": "Croque Fort",
+    "description": "Le Pokémon ayant utilisé la capacité Croque Fort\net celui l'ayant subie ne peuvent pas quitter\nle terrain."
   },
   {
     "id": "125",

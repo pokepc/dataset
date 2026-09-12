@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "temposchub",
     "name": "Temposchub",
-    "description": "Die Initiative des Pokémon wird am Ende jeder Runde um\n1 Stufe erhöht."
+    "description": "Die Initiative des Pokémon wird am Ende jeder Runde um\n1 Stufe erhöht.\nDie Initiative wird nicht erhöht, wenn das Pokémon in\ndieser Runde eingewechselt wurde."
   },
   {
     "id": "battlearmor",
@@ -53,7 +53,7 @@
     "slug": "sand-veil",
     "slugLoc": "sandschleier",
     "name": "Sandschleier",
-    "description": "Bei einem Sandsturm wird der Ausweichwert des Pokémon\num 25 % erhöht."
+    "description": "Bei einem Sandsturm wird der Ausweichwert des Pokémon\num 25 % erhöht.\nAußerdem erleidet das Pokémon keinen Schaden durch\nSandstürme."
   },
   {
     "id": "static",
@@ -172,7 +172,7 @@
     "slug": "effect-spore",
     "slugLoc": "sporenwirt",
     "name": "Sporenwirt",
-    "description": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird der Angreifer mit 30%iger Wahrscheinlichkeit\nvergiftet, paralysiert oder in Schlaf versetzt."
+    "description": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird der Angreifer mit 30%iger Wahrscheinlichkeit\nvergiftet, paralysiert oder in Schlaf versetzt.\nDiese Fähigkeit hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "synchronize",
@@ -308,6 +308,13 @@
     "description": "Wird das Pokémon von einer Kontaktattacke getroffen,\nerleidet der Angreifer mit 30%iger Wahrscheinlichkeit\nVerbrennungen."
   },
   {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "angsthase",
+    "name": "Angsthase",
+    "description": "Das Pokémon ignoriert sämtliche Effekte, die verhindern\nwürden, dass es gegen ein anderes Pokémon seines Teams\nausgewechselt wird."
+  },
+  {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "adlerauge",
@@ -390,6 +397,13 @@
     "slugLoc": "notschutz",
     "name": "Notschutz",
     "description": "Die Verteidigung des Pokémon wird um 50 % erhöht,\nwenn es von einem Statusproblem betroffen ist."
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "kloakensosse",
+    "name": "Kloakensoße",
+    "description": "Wird das Pokémon von einer KP-stehlenden Attacke getroffen,\nregeneriert der Angreifer dadurch keine KP. Stattdessen erleidet\ner Schaden in Höhe der KP, die er regeneriert hätte."
   },
   {
     "id": "overgrow",
@@ -917,6 +931,13 @@
     "description": "Erleidet das Pokémon Schaden durch eine Unlicht-Attacke,\nwird sein Angriff um 1 Stufe erhöht."
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "hasenfuss",
+    "name": "Hasenfuß",
+    "description": "Erleidet das Pokémon Schaden durch eine Attacke vom Typ\nUnlicht, Geist oder Käfer oder wirkt Bedroher auf es,\nwird seine Initiative um 1 Stufe erhöht."
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "magiespiegel",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "strolch",
     "name": "Strolch",
-    "description": "Die Priorität von Status-Attacken des Pokémon wird\num 1 Stufe erhöht."
+    "description": "Die Priorität von Status-Attacken des Pokémon wird\num 1 Stufe erhöht.\nIm Gegenzug haben seine Status-Attacken keine Wirkung\nmehr auf Pokémon vom Typ Unlicht."
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "Die Stärke von Impulswellenattacken des Pokémon wird\num 50 % erhöht."
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "pflanzenpelz",
+    "name": "Pflanzenpelz",
+    "description": "Die Verteidigung des Pokémon wird um 50 % erhöht,\nwenn ein Grasfeld aktiv ist."
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "symbiose",
@@ -1099,11 +1127,25 @@
     "description": "Erleidet das Pokémon Schaden durch eine Attacke,\nwird seine Verteidigung um 1 Stufe erhöht."
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "ruckzug",
+    "name": "Rückzug",
+    "description": "Fallen die KP des Pokémon auf die Hälfte des Maximalwerts\noder weniger, wird es ausgewechselt."
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "qualerei",
     "name": "Quälerei",
     "description": "Bei Angriffen auf vergiftete oder schwer vergiftete Ziele hat das\nPokémon Volltreffergarantie."
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "beschattung",
+    "name": "Beschattung",
+    "description": "Beim Angriff auf neu eingewechselte Ziele wird die\nStärke der Attacken des Pokémon verdoppelt."
   },
   {
     "id": "waterbubble",
@@ -1204,6 +1246,27 @@
     "description": "Das Pokémon erzeugt bei Kampfantritt auf dem gesamten\nKampffeld ein Elektrofeld, das 5 Runden lang anhält."
   },
   {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "psycho-erzeuger",
+    "name": "Psycho-Erzeuger",
+    "description": "Das Pokémon erzeugt bei Kampfantritt auf dem gesamten\nKampffeld ein Psychofeld, das 5 Runden lang anhält."
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "gras-erzeuger",
+    "name": "Gras-Erzeuger",
+    "description": "Das Pokémon erzeugt bei Kampfantritt auf dem gesamten\nKampffeld ein Grasfeld, das 5 Runden lang anhält."
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "libero",
+    "name": "Libero",
+    "description": "Einmal pro Kampfantritt nimmt das Pokémon beim Einsatz einer\nAttacke deren Typ an."
+  },
+  {
     "id": "mirrorarmor",
     "slug": "mirror-armor",
     "slugLoc": "spiegelrustung",
@@ -1216,6 +1279,13 @@
     "slugLoc": "stahlruckgrat",
     "name": "Stahlrückgrat",
     "description": "Das Pokémon ignoriert die Effekte von Fähigkeiten und\nAttacken, die Attacken umleiten."
+  },
+  {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "punk-rock",
+    "name": "Punk Rock",
+    "description": "Die Stärke der Geräuschattacken des Pokémon wird\num 30 % erhöht.\nDer Schaden, den es selbst durch Geräuschattacken erleidet,\nwird halbiert."
   },
   {
     "id": "sandspit",
@@ -1244,6 +1314,13 @@
     "slugLoc": "hemmungslos",
     "name": "Hemmungslos",
     "description": "Das Pokémon hebt bei Kampfantritt die Zustände Lichtschild,\nReflektor und Auroraschleier auf."
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "stahlerner-wille",
+    "name": "Stählerner Wille",
+    "description": "Die Stärke von Stahl-Attacken des Pokémon und seiner\nMitstreiter wird um 50 % erhöht."
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "Das Pokémon hebt bei Kampfantritt alle Statuswertänderungen\nvon Mitstreitern auf."
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "streusaat",
+    "name": "Streusaat",
+    "description": "Erleidet das Pokémon Schaden durch eine Attacke,\nerzeugt es auf dem gesamten Kampffeld ein Grasfeld,\ndas 5 Runden lang anhält."
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "thermowandel",
+    "name": "Thermowandel",
+    "description": "Erleidet das Pokémon Schaden durch eine Feuer-Attacke,\nwird sein Angriff um 1 Stufe erhöht.\nAußerdem kann es keine Verbrennungen erleiden."
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "lautersalz",
     "name": "Läutersalz",
     "description": "Das Pokémon kann keine Statusprobleme erleiden und der\nSchaden, den es durch Geister-Attacken erleidet, wird halbiert."
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "wachhund",
+    "name": "Wachhund",
+    "description": "Bedroher hat keine Wirkung auf das Pokémon.\nStattdessen wird sein Angriff um 1 Stufe erhöht.\nAttacken und Items anderer Pokémon, durch die das Pokémon\nausgewechselt werden würde, haben ebenfalls keine Wirkung\nauf es."
   },
   {
     "id": "zerotohero",
@@ -1416,8 +1514,8 @@
   {
     "id": "auraguard",
     "slug": "aura-guard",
-    "slugLoc": "aura-guard",
-    "name": "Aura Guard",
-    "description": "Der Schaden, den das Pokémon durch Kontaktattacken erleidet, wird halbiert."
+    "slugLoc": "aura-abwehr",
+    "name": "Aura-Abwehr",
+    "description": "Der Schaden, den das Pokémon durch Kontaktattacken\nerleidet, wird halbiert."
   }
 ]

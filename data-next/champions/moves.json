@@ -1373,7 +1373,7 @@
     "pokeApiId": 77,
     "slug": "poison-powder",
     "name": "Poison Powder",
-    "description": "Poisons the target.",
+    "description": "Poisons the target. Grass-type Pokémon are unaffected.",
     "type": "poison",
     "category": "status",
     "power": 0,
@@ -1391,7 +1391,7 @@
     "pokeApiId": 78,
     "slug": "stun-spore",
     "name": "Stun Spore",
-    "description": "Paralyzes the target.",
+    "description": "Paralyzes the target. Grass-type Pokémon are unaffected.",
     "type": "grass",
     "category": "status",
     "power": 0,
@@ -1409,7 +1409,7 @@
     "pokeApiId": 79,
     "slug": "sleep-powder",
     "name": "Sleep Powder",
-    "description": "Puts the target to sleep.",
+    "description": "Puts the target to sleep. Grass-type Pokémon are unaffected.",
     "type": "grass",
     "category": "status",
     "power": 0,
@@ -1535,7 +1535,7 @@
     "pokeApiId": 86,
     "slug": "thunder-wave",
     "name": "Thunder Wave",
-    "description": "Paralyzes the target.",
+    "description": "Paralyzes the target. Ground-type Pokémon are unaffected.",
     "type": "electric",
     "category": "status",
     "power": 0,
@@ -1553,7 +1553,7 @@
     "pokeApiId": 87,
     "slug": "thunder",
     "name": "Thunder",
-    "description": "Has a 30% chance of paralyzing the target. This move never\nmisses in rain and can hit a target that has the Sky-High status.",
+    "description": "Has a 30% chance of paralyzing the target. In rain, this move\nnever misses. In harsh sunlight, this move's accuracy is 50%.\nThis move can hit a target that has the Sky-High status.",
     "type": "electric",
     "category": "special",
     "power": 110,
@@ -2533,7 +2533,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": [],
+    "classification": ["healing"],
     "contact": true,
     "usable": true
   },
@@ -2633,7 +2633,7 @@
     "pokeApiId": 147,
     "slug": "spore",
     "name": "Spore",
-    "description": "Puts the target to sleep.",
+    "description": "Puts the target to sleep. Grass-type Pokémon are unaffected.",
     "type": "grass",
     "category": "status",
     "power": 0,
@@ -2921,17 +2921,17 @@
     "pokeApiId": 163,
     "slug": "slash",
     "name": "Slash",
-    "description": "",
+    "description": "This move has a 1-stage Critical-Hit Ratio Boost.",
     "type": "normal",
     "category": "physical",
-    "power": 70,
+    "power": 80,
     "pp": 20,
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
     "classification": ["slicing"],
     "contact": true,
-    "usable": false
+    "usable": true
   },
   {
     "id": "substitute",
@@ -2939,7 +2939,7 @@
     "pokeApiId": 164,
     "slug": "substitute",
     "name": "Substitute",
-    "description": "The user loses 1/4 of its max HP to create a substitute. The\nsubstitute will be hit by moves instead of the user, and it will\nvanish when it takes damage equal to 1/4 of the user's max HP.",
+    "description": "The user loses 1/4 of its max HP to create a substitute. The\nsubstitute will be hit by moves instead of the user, and it will\nvanish when it takes damage equal to 1/4 of the user's max HP.\nSound-based moves will hit the user through the substitute.",
     "type": "normal",
     "category": "status",
     "power": 0,
@@ -3191,7 +3191,7 @@
     "pokeApiId": 178,
     "slug": "cotton-spore",
     "name": "Cotton Spore",
-    "description": "Lowers targets' Speed stats by 2 stages.",
+    "description": "Lowers targets' Speed stats by 2 stages. Grass-type Pokémon\nare unaffected.",
     "type": "grass",
     "category": "status",
     "power": 0,
@@ -3407,7 +3407,7 @@
     "pokeApiId": 190,
     "slug": "octazooka",
     "name": "Octazooka",
-    "description": "",
+    "description": "Has a 50% chance of lowering the target's accuracy by 1 stage.",
     "type": "water",
     "category": "special",
     "power": 65,
@@ -3631,7 +3631,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": [],
+    "classification": ["healing"],
     "contact": false,
     "usable": true
   },
@@ -3731,17 +3731,17 @@
     "pokeApiId": 208,
     "slug": "milk-drink",
     "name": "Milk Drink",
-    "description": "",
+    "description": "Restores 1/2 of the max HP of the user or an ally.",
     "type": "normal",
     "category": "status",
     "power": 0,
     "pp": 8,
     "accuracy": 101,
     "priority": 0,
-    "target": "opponents_side",
+    "target": "self",
     "classification": ["healing"],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "spark",
@@ -4905,7 +4905,7 @@
     "type": "normal",
     "category": "status",
     "power": 0,
-    "pp": 12,
+    "pp": 8,
     "accuracy": 101,
     "priority": 0,
     "target": "opponents_side",
@@ -6493,7 +6493,7 @@
     "accuracy": 101,
     "priority": 0,
     "target": "opponents_side",
-    "classification": [],
+    "classification": ["healing"],
     "contact": false,
     "usable": true
   },
@@ -7357,7 +7357,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": ["punching"],
+    "classification": ["punching", "healing"],
     "contact": true,
     "usable": true
   },
@@ -8555,7 +8555,7 @@
     "pokeApiId": 476,
     "slug": "rage-powder",
     "name": "Rage Powder",
-    "description": "The user redirects opponents' moves toward itself. This effect\nworks only on single-target moves.",
+    "description": "The user redirects opponents' moves toward itself. This effect\nworks only on single-target moves. Grass-type Pokémon are\nunaffected.",
     "type": "bug",
     "category": "status",
     "power": 0,
@@ -8563,7 +8563,7 @@
     "accuracy": 101,
     "priority": 2,
     "target": "opponents_side",
-    "classification": [],
+    "classification": ["powder"],
     "contact": false,
     "usable": true
   },
@@ -9085,7 +9085,7 @@
     "accuracy": 101,
     "priority": 0,
     "target": "single_target",
-    "classification": ["pulse"],
+    "classification": ["pulse", "healing"],
     "contact": false,
     "usable": true
   },
@@ -9131,7 +9131,7 @@
     "pokeApiId": 508,
     "slug": "shift-gear",
     "name": "Shift Gear",
-    "description": "",
+    "description": "Boosts the user's Attack stat by 1 stage and Speed stat by\n2 stages.",
     "type": "steel",
     "category": "status",
     "power": 0,
@@ -9141,7 +9141,7 @@
     "target": "opponents_side",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "circlethrow",
@@ -9535,7 +9535,7 @@
     "accuracy": 90,
     "priority": 0,
     "target": "single_target",
-    "classification": [],
+    "classification": ["slicing"],
     "contact": true,
     "usable": false
   },
@@ -9571,7 +9571,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": [],
+    "classification": ["healing"],
     "contact": true,
     "usable": true
   },
@@ -9743,7 +9743,7 @@
     "pokeApiId": 542,
     "slug": "hurricane",
     "name": "Hurricane",
-    "description": "Has a 30% chance of confusing the target. This move never\nmisses in rain and can hit a target that has the Sky-High status.",
+    "description": "Has a 30% chance of confusing the target. In rain, this move\nnever misses. In harsh sunlight, this move's accuracy is 50%.\nThis move can hit a target that has the Sky-High status.",
     "type": "flying",
     "category": "special",
     "power": 110,
@@ -10255,7 +10255,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "random_opponent",
-    "classification": [],
+    "classification": ["healing"],
     "contact": false,
     "usable": true
   },
@@ -10381,7 +10381,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": [],
+    "classification": ["healing"],
     "contact": true,
     "usable": true
   },
@@ -11349,11 +11349,11 @@
     "type": "grass",
     "category": "status",
     "power": 0,
-    "pp": 12,
+    "pp": 8,
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": [],
+    "classification": ["healing"],
     "contact": false,
     "usable": true
   },
@@ -11497,7 +11497,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": ["ball_bomb"],
+    "classification": ["ball_bomb", "healing"],
     "contact": false,
     "usable": true
   },
@@ -12047,7 +12047,7 @@
     "pokeApiId": 716,
     "slug": "zing-zap",
     "name": "Zing Zap",
-    "description": "",
+    "description": "Has a 30% chance of making the target flinch.",
     "type": "electric",
     "category": "physical",
     "power": 80,
@@ -12057,7 +12057,7 @@
     "target": "single_target",
     "classification": [],
     "contact": true,
-    "usable": false
+    "usable": true
   },
   {
     "id": "naturesmadness",
@@ -12191,7 +12191,7 @@
     "pokeApiId": 745,
     "slug": "snipe-shot",
     "name": "Snipe Shot",
-    "description": "",
+    "description": "This move ignores the effects of Abilities and moves that draw\nin moves. It has a 1-stage Critical-Hit Ratio Boost.",
     "type": "water",
     "category": "special",
     "power": 85,
@@ -12201,7 +12201,7 @@
     "target": "single_target",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "jawlock",
@@ -12209,7 +12209,7 @@
     "pokeApiId": 746,
     "slug": "jaw-lock",
     "name": "Jaw Lock",
-    "description": "",
+    "description": "The user and target gain the Jaw Locked status.",
     "type": "dark",
     "category": "physical",
     "power": 80,
@@ -12219,7 +12219,7 @@
     "target": "single_target",
     "classification": ["biting"],
     "contact": true,
-    "usable": false
+    "usable": true
   },
   {
     "id": "stuffcheeks",
@@ -12281,7 +12281,7 @@
     "pokeApiId": 750,
     "slug": "magic-powder",
     "name": "Magic Powder",
-    "description": "Changes the target's type to Psychic.",
+    "description": "Changes the target's type to Psychic. Grass-type Pokémon\nare unaffected.",
     "type": "psychic",
     "category": "status",
     "power": 0,
@@ -12335,7 +12335,7 @@
     "pokeApiId": 753,
     "slug": "octolock",
     "name": "Octolock",
-    "description": "",
+    "description": "Gives the target the Octolocked and Can't Escape statuses.",
     "type": "fighting",
     "category": "status",
     "power": 0,
@@ -12345,7 +12345,7 @@
     "target": "single_target",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "boltbeak",
@@ -12389,7 +12389,7 @@
     "pokeApiId": 756,
     "slug": "court-change",
     "name": "Court Change",
-    "description": "",
+    "description": "Swaps the statuses affecting the user's side of the field with the\nstatuses affecting the opponent's side of the field.",
     "type": "normal",
     "category": "status",
     "power": 0,
@@ -12399,7 +12399,7 @@
     "target": "varies",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "clangoroussoul",
@@ -12461,7 +12461,7 @@
     "pokeApiId": 778,
     "slug": "drum-beating",
     "name": "Drum Beating",
-    "description": "",
+    "description": "Lowers the target's Speed stat by 1 stage.",
     "type": "grass",
     "category": "physical",
     "power": 80,
@@ -12471,7 +12471,7 @@
     "target": "single_target",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "snaptrap",
@@ -12497,7 +12497,7 @@
     "pokeApiId": 780,
     "slug": "pyro-ball",
     "name": "Pyro Ball",
-    "description": "",
+    "description": "Has a 10% chance of burning the target. Cures the user of\nbeing frozen.",
     "type": "fire",
     "category": "physical",
     "power": 120,
@@ -12507,7 +12507,7 @@
     "target": "single_target",
     "classification": ["ball_bomb"],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "behemothblade",
@@ -12615,7 +12615,7 @@
     "target": "all_opponents",
     "classification": ["sound_based"],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "appleacid",
@@ -12749,17 +12749,17 @@
     "pokeApiId": 794,
     "slug": "meteor-assault",
     "name": "Meteor Assault",
-    "description": "",
+    "description": "The user gains the Recharging status on the turn after this move\nis used.",
     "type": "fighting",
     "category": "physical",
-    "power": 150,
+    "power": 170,
     "pp": 8,
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
     "classification": [],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "eternabeam",
@@ -13973,7 +13973,7 @@
     "pokeApiId": 862,
     "slug": "glaive-rush",
     "name": "Glaive Rush",
-    "description": "",
+    "description": "The user gains the Wide Open status until the next time it takes\nan action.",
     "type": "dragon",
     "category": "physical",
     "power": 120,
@@ -13983,7 +13983,7 @@
     "target": "single_target",
     "classification": [],
     "contact": true,
-    "usable": false
+    "usable": true
   },
   {
     "id": "revivalblessing",
@@ -13999,9 +13999,9 @@
     "accuracy": 101,
     "priority": 0,
     "target": "opponents_side",
-    "classification": [],
+    "classification": ["healing"],
     "contact": false,
-    "usable": false
+    "usable": true
   },
   {
     "id": "saltcure",
@@ -14503,7 +14503,7 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": ["slicing"],
+    "classification": ["slicing", "healing"],
     "contact": true,
     "usable": true
   },
@@ -14521,9 +14521,9 @@
     "accuracy": 100,
     "priority": 0,
     "target": "single_target",
-    "classification": [],
+    "classification": ["punching"],
     "contact": true,
-    "usable": false
+    "usable": true
   },
   {
     "id": "gigatonhammer",
@@ -14701,7 +14701,7 @@
     "accuracy": 90,
     "priority": 0,
     "target": "all_opponents",
-    "classification": [],
+    "classification": ["healing"],
     "contact": false,
     "usable": true
   },
@@ -14981,7 +14981,7 @@
     "pokeApiId": 918,
     "slug": "upper-hand",
     "name": "Upper Hand",
-    "description": "Makes the target flinch. This move fails if the target isn't about\nto use a priority move.",
+    "description": "Makes the target flinch. This move fails if the target isn't about\nto use a priority attack.",
     "type": "fighting",
     "category": "physical",
     "power": 65,

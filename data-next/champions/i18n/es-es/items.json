@@ -432,6 +432,14 @@
     "pluralName": "Cascabeles Concha"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "puerro",
+    "name": "Puerro",
+    "description": "Si lo lleva Farfetch'd o Sirfetch'd, le aumenta dos niveles\nla probabilidad de asestar golpes críticos.",
+    "pluralName": "Puerros"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "lupa",
@@ -492,7 +500,7 @@
     "slug": "zoom-lens",
     "slugLoc": "telescopio",
     "name": "Telescopio",
-    "description": "Aumenta un 20% la precisión de los movimientos\ndel portador si actúa después que el rival.",
+    "description": "Aumenta un 20% la precisión de los movimientos\ndel portador si actúa después que el objetivo.",
     "pluralName": "Telescopios"
   },
   {
@@ -566,6 +574,54 @@
     "name": "Raíz Grande",
     "description": "Hace que el portador recupere un 30% más de\nPS al usar movimientos que drenan PS, tales como\nAbsorbefuerza o Arraigo.",
     "pluralName": "Raíces Grandes"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "casco-dentado",
+    "name": "Casco Dentado",
+    "description": "Hace que el atacante pierda 1/6 de sus PS máximos\nsi el portador es alcanzado por un movimiento de\ncontacto.",
+    "pluralName": "Cascos Dentados"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "globo-helio",
+    "name": "Globo Helio",
+    "description": "Hace que el portador flote y deje de estar en\ncontacto con el suelo, lo que impide que le afecten\nlos movimientos de tipo Tierra y los estados Púas,\nPúas tóxicas y Red Viscosa. Si el portador recibe daño\nde un movimiento, el objeto se pierde durante ese\ncombate.",
+    "pluralName": "Globos Helio"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "tarjeta-roja",
+    "name": "Tarjeta Roja",
+    "description": "Obliga al Pokémon que inflija daño al portador con un\nmovimiento a cambiarse por otro. Puede usarse una vez\npor combate.",
+    "pluralName": "Tarjetas Rojas"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "banda-atadura",
+    "name": "Banda Atadura",
+    "description": "Aumenta el daño que el portador inflige al objetivo con\nel estado Apresado, que pasa de 1/8 a 1/6 de sus PS máximos.",
+    "pluralName": "Bandas Atadura"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "boton-escape",
+    "name": "Botón Escape",
+    "description": "Si el portador recibe daño de un movimiento, se retirará\ndel combate. Puede usarse una vez por combate.",
+    "pluralName": "Botones Escape"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "gema-normal",
+    "name": "Gema Normal",
+    "description": "Aumenta un 30% la potencia de un movimiento de tipo\nNormal del portador. Puede usarse una vez por combate.",
+    "pluralName": "Gemas Normal"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "Lopunnitas"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "salamencita",
+    "name": "Salamencita",
+    "description": "Si la lleva Salamence, le permite megaevolucionar.",
+    "pluralName": "Salamencitas"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "beedrillita",
     "name": "Beedrillita",
     "description": "Si la lleva Beedrill, le permite megaevolucionar.",
     "pluralName": "Beedrillitas"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "cubresuelos",
+    "name": "Cubresuelos",
+    "description": "Prolonga tres turnos la duración de los campos creados\nen el terreno de combate con los movimientos o la\nhabilidad del portador, haciendo que duren ocho turnos\nen total.",
+    "pluralName": "Cubresuelos"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "semilla-electro",
+    "name": "Semilla Electro",
+    "description": "Aumenta un nivel la Defensa del portador cuando hay\nun campo eléctrico activo en el terreno de combate.\nPuede usarse una vez por combate.",
+    "pluralName": "Semillas Electro"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "semilla-psique",
+    "name": "Semilla Psique",
+    "description": "Aumenta un nivel la Defensa Especial del portador\ncuando hay un campo psíquico activo en el terreno\nde combate. Puede usarse una vez por combate.",
+    "pluralName": "Semillas Psique"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "semilla-bruma",
+    "name": "Semilla Bruma",
+    "description": "Aumenta un nivel la Defensa Especial del portador\ncuando hay un campo de niebla activo en el terreno\nde combate. Puede usarse una vez por combate.",
+    "pluralName": "Semillas Bruma"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "semilla-hierba",
+    "name": "Semilla Hierba",
+    "description": "Aumenta un nivel la Defensa del portador cuando hay\nun campo de hierba activo en el terreno de combate.\nPuede usarse una vez por combate.",
+    "pluralName": "Semillas Hierba"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "Chimechitas"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "absolita-z",
+    "name": "Absolita Z",
+    "description": "Si la lleva Absol, le permite megaevolucionar\na Mega-Absol Z.",
+    "pluralName": "Absolitas Z"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "staraptorita",
     "name": "Staraptorita",
     "description": "Si la lleva Staraptor, le permite megaevolucionar.",
     "pluralName": "Staraptoritas"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "garchompita-z",
+    "name": "Garchompita Z",
+    "description": "Si la lleva Garchomp, le permite megaevolucionar a\nMega-Garchomp Z.",
+    "pluralName": "Garchompitas Z"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "lucarita-z",
+    "name": "Lucarita Z",
+    "description": "Si la lleva Lucario, le permite megaevolucionar a\nMega-Lucario Z.",
+    "pluralName": "Lucaritas Z"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "Crabominablitas"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "golisopodita",
+    "name": "Golisopodita",
+    "description": "Si la lleva Golisopod, le permite megaevolucionar.",
+    "pluralName": "Golisopoditas"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "scovillainita",
     "name": "Scovillainita",
     "description": "Si la lleva Scovillain, le permite megaevolucionar.",
     "pluralName": "Scovillainitas"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "baxcaliburita",
+    "name": "Baxcaliburita",
+    "description": "Si la lleva Baxcalibur, le permite megaevolucionar.",
+    "pluralName": "Baxcaliburitas"
   },
   {
     "id": "glimmoranite",

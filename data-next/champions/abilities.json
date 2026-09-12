@@ -21,7 +21,7 @@
     "pokeApiId": 3,
     "slug": "speed-boost",
     "name": "Speed Boost",
-    "description": "Boosts the Pokémon's Speed stat by 1 stage at the end of\nevery turn."
+    "description": "Boosts the Pokémon's Speed stat by 1 stage at the end of\nevery turn. The Speed stat will not be boosted on the turn\nthat the Pokémon switches into battle."
   },
   {
     "id": "battlearmor",
@@ -61,7 +61,7 @@
     "pokeApiId": 8,
     "slug": "sand-veil",
     "name": "Sand Veil",
-    "description": "Boosts the Pokémon's evasiveness by 25% in a sandstorm."
+    "description": "Boosts the Pokémon's evasiveness by 25% in a sandstorm.\nThe Pokémon takes no damage from sandstorms."
   },
   {
     "id": "static",
@@ -197,7 +197,7 @@
     "pokeApiId": 27,
     "slug": "effect-spore",
     "name": "Effect Spore",
-    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned, paralyzed, or put to sleep."
+    "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned, paralyzed, or put to sleep.\nGrass-type Pokémon are unaffected."
   },
   {
     "id": "synchronize",
@@ -352,6 +352,14 @@
     "description": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being burned."
   },
   {
+    "id": "runaway",
+    "championsId": "50",
+    "pokeApiId": 50,
+    "slug": "run-away",
+    "name": "Run Away",
+    "description": "Enables the Pokémon to ignore any effects that would usually\nprevent it from switching out of battle and being replaced by\nanother party Pokémon."
+  },
+  {
     "id": "keeneye",
     "championsId": "51",
     "pokeApiId": 51,
@@ -446,6 +454,14 @@
     "slug": "marvel-scale",
     "name": "Marvel Scale",
     "description": "When the Pokémon has a status condition, its Defense stat is\nboosted by 50%."
+  },
+  {
+    "id": "liquidooze",
+    "championsId": "64",
+    "pokeApiId": 64,
+    "slug": "liquid-ooze",
+    "name": "Liquid Ooze",
+    "description": "When the Pokémon is hit by an HP-absorbing move, the\nattacker does not restore HP but instead takes damage equal\nto the amount of HP it would have restored."
   },
   {
     "id": "overgrow",
@@ -1048,6 +1064,14 @@
     "description": "When the Pokémon takes damage from a Dark-type move, its\nAttack stat is boosted by 1 stage."
   },
   {
+    "id": "rattled",
+    "championsId": "155",
+    "pokeApiId": 155,
+    "slug": "rattled",
+    "name": "Rattled",
+    "description": "When the Pokémon takes damage from a Dark-, Ghost-, or\nBug-type move or when it is on the receiving end of Intimidate,\nits Speed stat is boosted by 1 stage."
+  },
+  {
     "id": "magicbounce",
     "championsId": "156",
     "pokeApiId": 156,
@@ -1069,7 +1093,7 @@
     "pokeApiId": 158,
     "slug": "prankster",
     "name": "Prankster",
-    "description": "Increases the priority of the Pokémon's status moves by 1 stage."
+    "description": "Increases the priority of the Pokémon's status moves by 1 stage.\nHowever, the Pokémon's status moves no longer work against\nDark-type Pokémon."
   },
   {
     "id": "sandforce",
@@ -1192,6 +1216,14 @@
     "description": "Boosts the power of the Pokémon's pulse moves by 50%."
   },
   {
+    "id": "grasspelt",
+    "championsId": "179",
+    "pokeApiId": 179,
+    "slug": "grass-pelt",
+    "name": "Grass Pelt",
+    "description": "Boosts the Pokémon's Defense stat by 50% on Grassy Terrain."
+  },
+  {
     "id": "symbiosis",
     "championsId": "180",
     "pokeApiId": 180,
@@ -1256,12 +1288,28 @@
     "description": "When the Pokémon takes damage from a move, its Defense stat\nis boosted by 1 stage."
   },
   {
+    "id": "emergencyexit",
+    "championsId": "194",
+    "pokeApiId": 194,
+    "slug": "emergency-exit",
+    "name": "Emergency Exit",
+    "description": "The Pokémon switches out of battle when its HP drops to 1/2 or\nless of its max."
+  },
+  {
     "id": "merciless",
     "championsId": "196",
     "pokeApiId": 196,
     "slug": "merciless",
     "name": "Merciless",
     "description": "The Pokémon's attacks become critical hits if the target is\npoisoned or badly poisoned."
+  },
+  {
+    "id": "stakeout",
+    "championsId": "198",
+    "pokeApiId": 198,
+    "slug": "stakeout",
+    "name": "Stakeout",
+    "description": "Doubles the power of the Pokémon's moves when it attacks\ntargets that have just switched into battle."
   },
   {
     "id": "waterbubble",
@@ -1376,6 +1424,30 @@
     "description": "Turns the entire field into Electric Terrain for 5 turns when the\nPokémon enters a battle."
   },
   {
+    "id": "psychicsurge",
+    "championsId": "227",
+    "pokeApiId": 227,
+    "slug": "psychic-surge",
+    "name": "Psychic Surge",
+    "description": "Turns the entire field into Psychic Terrain for 5 turns when the\nPokémon enters a battle."
+  },
+  {
+    "id": "grassysurge",
+    "championsId": "229",
+    "pokeApiId": 229,
+    "slug": "grassy-surge",
+    "name": "Grassy Surge",
+    "description": "Turns the entire field into Grassy Terrain for 5 turns when the\nPokémon enters a battle."
+  },
+  {
+    "id": "libero",
+    "championsId": "236",
+    "pokeApiId": 236,
+    "slug": "libero",
+    "name": "Libero",
+    "description": "Changes the Pokémon's type to the type of the move it's\nabout to use. This works only once per time the Pokémon\nenters battle."
+  },
+  {
     "id": "mirrorarmor",
     "championsId": "240",
     "pokeApiId": 240,
@@ -1390,6 +1462,14 @@
     "slug": "stalwart",
     "name": "Stalwart",
     "description": "The Pokémon ignores the effects of Abilities and moves that\ndraw in moves."
+  },
+  {
+    "id": "punkrock",
+    "championsId": "244",
+    "pokeApiId": 244,
+    "slug": "punk-rock",
+    "name": "Punk Rock",
+    "description": "Boosts the power of the Pokémon's sound-based moves\nby 30% and halves the damage the Pokémon takes from\nsound-based moves."
   },
   {
     "id": "sandspit",
@@ -1422,6 +1502,14 @@
     "slug": "screen-cleaner",
     "name": "Screen Cleaner",
     "description": "When the Pokémon enters a battle, it removes the Light Screen,\nReflect, and Aurora Veil statuses."
+  },
+  {
+    "id": "steelyspirit",
+    "championsId": "252",
+    "pokeApiId": 252,
+    "slug": "steely-spirit",
+    "name": "Steely Spirit",
+    "description": "Boosts the power of the Steel-type moves of the Pokémon and\nits allies by 50%."
   },
   {
     "id": "wanderingspirit",
@@ -1464,12 +1552,36 @@
     "description": "When the Pokémon enters a battle, it removes all stat changes\nfrom its allies."
   },
   {
+    "id": "seedsower",
+    "championsId": "269",
+    "pokeApiId": 269,
+    "slug": "seed-sower",
+    "name": "Seed Sower",
+    "description": "Turns the entire field into Grassy Terrain for 5 turns when the\nPokémon takes damage from moves."
+  },
+  {
+    "id": "thermalexchange",
+    "championsId": "270",
+    "pokeApiId": 270,
+    "slug": "thermal-exchange",
+    "name": "Thermal Exchange",
+    "description": "When the Pokémon takes damage from a Fire-type move, its\nAttack stat is boosted by 1 stage. The Pokémon cannot be\nburned."
+  },
+  {
     "id": "purifyingsalt",
     "championsId": "272",
     "pokeApiId": 272,
     "slug": "purifying-salt",
     "name": "Purifying Salt",
     "description": "Halves the damage the Pokémon takes from Ghost-type moves.\nThe Pokémon is immune to status conditions."
+  },
+  {
+    "id": "guarddog",
+    "championsId": "275",
+    "pokeApiId": 275,
+    "slug": "guard-dog",
+    "name": "Guard Dog",
+    "description": "Intimidate does not work on the Pokémon. Instead, it boosts\nthe Pokémon's Attack stat by 1 stage. The Pokémon is also\nunaffected by the moves and held items of other Pokémon\nthat would force it to switch out of battle."
   },
   {
     "id": "zerotohero",
@@ -1617,7 +1729,7 @@
   },
   {
     "id": "auraguard",
-    "championsId": "preliminary-auraguard",
+    "championsId": "319",
     "pokeApiId": null,
     "slug": "aura-guard",
     "name": "Aura Guard",

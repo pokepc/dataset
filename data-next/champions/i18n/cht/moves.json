@@ -536,21 +536,21 @@
     "slug": "poison-powder",
     "slugLoc": "du-fen",
     "name": "毒粉",
-    "description": "會讓對手變為中毒狀態。"
+    "description": "會讓對手變為中毒狀態。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "stunspore",
     "slug": "stun-spore",
     "slugLoc": "ma-bei-fen",
     "name": "麻痺粉",
-    "description": "會讓對手變為麻痺狀態。"
+    "description": "會讓對手變為麻痺狀態。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "sleeppowder",
     "slug": "sleep-powder",
     "slugLoc": "cui-mian-fen",
     "name": "催眠粉",
-    "description": "會讓對手變為睡眠狀態。"
+    "description": "會讓對手變為睡眠狀態。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "petaldance",
@@ -599,14 +599,14 @@
     "slug": "thunder-wave",
     "slugLoc": "dian-ci-bo",
     "name": "電磁波",
-    "description": "會讓對手變為麻痺狀態。"
+    "description": "會讓對手變為麻痺狀態。\n對地面屬性的寶可夢無效。"
   },
   {
     "id": "thunder",
     "slug": "thunder",
     "slugLoc": "da-lei",
     "name": "打雷",
-    "description": "有30%的機率會讓對手變為麻痺狀態。\n下雨狀態時，必定會命中對手。\n也會擊中空中狀態的對手。"
+    "description": "有30%的機率會讓對手變為麻痺狀態。\n下雨狀態時，必定會命中對手。\n大晴天狀態時，命中率會變為50%。\n也會擊中空中狀態的對手。"
   },
   {
     "id": "rockthrow",
@@ -1026,7 +1026,7 @@
     "slug": "spore",
     "slugLoc": "mo-gu-bao-zi",
     "name": "蘑菇孢子",
-    "description": "會讓對手變為睡眠狀態。"
+    "description": "會讓對手變為睡眠狀態。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "flash",
@@ -1138,14 +1138,14 @@
     "slug": "slash",
     "slugLoc": "pi-kai",
     "name": "劈開",
-    "description": ""
+    "description": "攻擊的易中要害+1。"
   },
   {
     "id": "substitute",
     "slug": "substitute",
     "slugLoc": "ti-shen",
     "name": "替身",
-    "description": "會減少自己最大HP的1/4製造替身。\n替身會代替自己受到招式。\n受到相當於最大HP的1/4的傷害時會消失。"
+    "description": "會減少自己最大HP的1/4製造替身。\n替身會代替自己受到招式影響。\n受到相當於最大HP的1/4的傷害時會消失。\n聲音類招式會無視替身，寶可夢會受到招式影響。"
   },
   {
     "id": "struggle",
@@ -1243,7 +1243,7 @@
     "slug": "cotton-spore",
     "slugLoc": "mian-bao-zi",
     "name": "棉孢子",
-    "description": "會讓對手的速度降低2階。"
+    "description": "會讓對手的速度降低2階。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "reversal",
@@ -1327,7 +1327,7 @@
     "slug": "octazooka",
     "slugLoc": "zhang-yu-tong-pao",
     "name": "章魚桶炮",
-    "description": ""
+    "description": "有50%的機率會讓對手的命中率降低1階。"
   },
   {
     "id": "spikes",
@@ -1453,7 +1453,7 @@
     "slug": "milk-drink",
     "slugLoc": "he-niu-nai",
     "name": "喝牛奶",
-    "description": ""
+    "description": "會回復自己或同伴\n最大HP的1/2。"
   },
   {
     "id": "spark",
@@ -3329,7 +3329,7 @@
     "slug": "rage-powder",
     "slugLoc": "fen-nu-fen",
     "name": "憤怒粉",
-    "description": "由自己承受對手的所有招式。\n只對需要選擇對手的招式有效。"
+    "description": "由自己承受對手的所有招式。\n只對需要選擇對手的招式有效。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "telekinesis",
@@ -3553,7 +3553,7 @@
     "slug": "shift-gear",
     "slugLoc": "huan-dang",
     "name": "換檔",
-    "description": ""
+    "description": "會讓自己的攻擊提高1階，\n速度提高2階。"
   },
   {
     "id": "circlethrow",
@@ -3791,7 +3791,7 @@
     "slug": "hurricane",
     "slugLoc": "bao-feng",
     "name": "暴風",
-    "description": "有30%的機率會讓對手變為混亂狀態。\n下雨狀態時，必定會命中對手。\n也會擊中空中狀態的對手。"
+    "description": "有30%的機率會讓對手變為混亂狀態。\n下雨狀態時，必定會命中對手。\n大晴天狀態時，命中率會變為50%。\n也會擊中空中狀態的對手。"
   },
   {
     "id": "headcharge",
@@ -4687,7 +4687,7 @@
     "slug": "zing-zap",
     "slugLoc": "ma-ma-ci-ci",
     "name": "麻麻刺刺",
-    "description": ""
+    "description": "有30%的機率會讓對手畏縮。"
   },
   {
     "id": "naturesmadness",
@@ -4743,14 +4743,14 @@
     "slug": "snipe-shot",
     "slugLoc": "ju-ji",
     "name": "狙擊",
-    "description": ""
+    "description": "會無視具有吸引招式效果的\n特性或招式的影響。\n攻擊的易中要害+1。"
   },
   {
     "id": "jawlock",
     "slug": "jaw-lock",
     "slugLoc": "jin-yao-bu-fang",
     "name": "緊咬不放",
-    "description": ""
+    "description": "會讓對手和自己變為緊咬不放狀態。"
   },
   {
     "id": "stuffcheeks",
@@ -4778,7 +4778,7 @@
     "slug": "magic-powder",
     "slugLoc": "mo-fa-fen",
     "name": "魔法粉",
-    "description": "會讓對手的屬性變為超能力屬性。"
+    "description": "會讓對手的屬性變為超能力屬性。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "dragondarts",
@@ -4799,7 +4799,7 @@
     "slug": "octolock",
     "slugLoc": "shao-gu",
     "name": "蛸固",
-    "description": ""
+    "description": "會讓對手變為\n無法逃走狀態和蛸固狀態。"
   },
   {
     "id": "boltbeak",
@@ -4820,7 +4820,7 @@
     "slug": "court-change",
     "slugLoc": "huan-chang",
     "name": "換場",
-    "description": ""
+    "description": "會讓我方和對手的場上的狀態互換。"
   },
   {
     "id": "clangoroussoul",
@@ -4848,7 +4848,7 @@
     "slug": "drum-beating",
     "slugLoc": "gu-ji",
     "name": "鼓擊",
-    "description": ""
+    "description": "會讓對手的速度降低1階。"
   },
   {
     "id": "snaptrap",
@@ -4862,7 +4862,7 @@
     "slug": "pyro-ball",
     "slugLoc": "huo-yan-qiu",
     "name": "火焰球",
-    "description": ""
+    "description": "有10%的機率會讓對手變為灼傷狀態。\n使用後會治癒自己的冰凍狀態。"
   },
   {
     "id": "behemothblade",
@@ -4960,7 +4960,7 @@
     "slug": "meteor-assault",
     "slugLoc": "liu-xing-tu-ji",
     "name": "流星突擊",
-    "description": ""
+    "description": "在使用後的下一回合，\n自己會變為反作用力狀態。"
   },
   {
     "id": "eternabeam",
@@ -5436,7 +5436,7 @@
     "slug": "glaive-rush",
     "slugLoc": "ju-jian-tu-ji",
     "name": "巨劍突擊",
-    "description": ""
+    "description": "直到自己下次行動為止，\n自己會變為無防備狀態。"
   },
   {
     "id": "revivalblessing",
@@ -5828,7 +5828,7 @@
     "slug": "upper-hand",
     "slugLoc": "kuai-shou-huan-ji",
     "name": "快手還擊",
-    "description": "對手沒有使出先制招式時會失敗。\n會讓對手畏縮。"
+    "description": "對手沒有使出能夠搶先攻擊的招式時會失敗。\n會讓對手畏縮。"
   },
   {
     "id": "malignantchain",

@@ -536,21 +536,21 @@
     "slug": "poison-powder",
     "slugLoc": "giftpuder",
     "name": "Giftpuder",
-    "description": "Das Ziel wird vergiftet."
+    "description": "Das Ziel wird vergiftet.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "stunspore",
     "slug": "stun-spore",
     "slugLoc": "stachelspore",
     "name": "Stachelspore",
-    "description": "Das Ziel wird paralysiert."
+    "description": "Das Ziel wird paralysiert.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "sleeppowder",
     "slug": "sleep-powder",
     "slugLoc": "schlafpuder",
     "name": "Schlafpuder",
-    "description": "Das Ziel wird in Schlaf versetzt."
+    "description": "Das Ziel wird in Schlaf versetzt.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "petaldance",
@@ -599,14 +599,14 @@
     "slug": "thunder-wave",
     "slugLoc": "donnerwelle",
     "name": "Donnerwelle",
-    "description": "Das Ziel wird paralysiert."
+    "description": "Das Ziel wird paralysiert.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Boden."
   },
   {
     "id": "thunder",
     "slug": "thunder",
     "slugLoc": "donner",
     "name": "Donner",
-    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit paralysiert.\nDiese Attacke kann auch Ziele treffen, die sich im Zustand\nAbgehoben befinden.\nBei Regen trifft sie garantiert."
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit paralysiert.\nDiese Attacke kann auch Ziele treffen, die sich im Zustand\nAbgehoben befinden.\nBei Sonnenschein beträgt die Genauigkeit 50 %.\nBei Regen trifft die Attacke garantiert."
   },
   {
     "id": "rockthrow",
@@ -1026,7 +1026,7 @@
     "slug": "spore",
     "slugLoc": "pilzspore",
     "name": "Pilzspore",
-    "description": "Das Ziel wird in Schlaf versetzt."
+    "description": "Das Ziel wird in Schlaf versetzt.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "flash",
@@ -1138,14 +1138,14 @@
     "slug": "slash",
     "slugLoc": "schlitzer",
     "name": "Schlitzer",
-    "description": ""
+    "description": "Der Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
   },
   {
     "id": "substitute",
     "slug": "substitute",
     "slugLoc": "delegator",
     "name": "Delegator",
-    "description": "Der Anwender verliert 1/4 seiner maximalen KP und erzeugt\neinen Delegator.\nDer Delegator wird anstelle des Anwenders von Attacken\ngetroffen und verschwindet dann, wenn er Schaden in Höhe\nvon 1/4 der maximalen KP des Anwenders erlitten hat."
+    "description": "Der Anwender verliert 1/4 seiner maximalen KP und erzeugt\neinen Delegator.\nDer Delegator wird anstelle des Anwenders von Attacken\ngetroffen und verschwindet dann, wenn er Schaden in Höhe\nvon 1/4 der maximalen KP des Anwenders erlitten hat.\nGeräuschattacken ignorieren die Wirkung von Delegator."
   },
   {
     "id": "struggle",
@@ -1243,7 +1243,7 @@
     "slug": "cotton-spore",
     "slugLoc": "baumwollsaat",
     "name": "Baumwollsaat",
-    "description": "Die Initiative der Ziele wird um 2 Stufen gesenkt."
+    "description": "Die Initiative der Ziele wird um 2 Stufen gesenkt.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "reversal",
@@ -1327,7 +1327,7 @@
     "slug": "octazooka",
     "slugLoc": "octazooka",
     "name": "Octazooka",
-    "description": ""
+    "description": "Die Genauigkeit des Ziels wird mit 50%iger Wahrscheinlichkeit\num 1 Stufe gesenkt."
   },
   {
     "id": "spikes",
@@ -1453,7 +1453,7 @@
     "slug": "milk-drink",
     "slugLoc": "milchgetrank",
     "name": "Milchgetränk",
-    "description": ""
+    "description": "Die KP des Anwenders oder eines Mitstreiters werden um\ndie Hälfte des Maximalwerts aufgefüllt."
   },
   {
     "id": "spark",
@@ -1957,7 +1957,7 @@
     "slug": "brick-break",
     "slugLoc": "durchbruch",
     "name": "Durchbruch",
-    "description": "Beim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Gegnerseite aufgehoben."
+    "description": "Beim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Seite des Ziels\naufgehoben."
   },
   {
     "id": "yawn",
@@ -3329,7 +3329,7 @@
     "slug": "rage-powder",
     "slugLoc": "wutpulver",
     "name": "Wutpulver",
-    "description": "Alle gegnerischen Attacken werden auf den Anwender\numgeleitet. Wirkt nur bei Attacken, für die ein einzelnes Ziel\nausgewählt werden muss."
+    "description": "Alle gegnerischen Attacken werden auf den Anwender\numgeleitet. Wirkt nur bei Attacken, für die ein einzelnes Ziel\nausgewählt werden muss.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "telekinesis",
@@ -3553,7 +3553,7 @@
     "slug": "shift-gear",
     "slugLoc": "gangwechsel",
     "name": "Gangwechsel",
-    "description": ""
+    "description": "Der Angriff des Anwenders wird um 1 Stufe und seine Initiative\num 2 Stufen erhöht."
   },
   {
     "id": "circlethrow",
@@ -3791,7 +3791,7 @@
     "slug": "hurricane",
     "slugLoc": "orkan",
     "name": "Orkan",
-    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit verwirrt.\nDiese Attacke kann auch Ziele treffen, die sich im Zustand\nAbgehoben befinden.\nBei Regen trifft sie garantiert."
+    "description": "Das Ziel wird mit 30%iger Wahrscheinlichkeit verwirrt.\nDiese Attacke kann auch Ziele treffen, die sich im Zustand\nAbgehoben befinden.\nBei Sonnenschein beträgt die Genauigkeit 50 %.\nBei Regen trifft die Attacke garantiert."
   },
   {
     "id": "headcharge",
@@ -4617,7 +4617,7 @@
     "slug": "psychic-fangs",
     "slugLoc": "psychobeisser",
     "name": "Psychobeißer",
-    "description": "Beim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Gegnerseite aufgehoben."
+    "description": "Beim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Seite des Ziels\naufgehoben."
   },
   {
     "id": "stompingtantrum",
@@ -4687,7 +4687,7 @@
     "slug": "zing-zap",
     "slugLoc": "elektropikser",
     "name": "Elektropikser",
-    "description": ""
+    "description": "Das Ziel schreckt mit 30%iger Wahrscheinlichkeit zurück."
   },
   {
     "id": "naturesmadness",
@@ -4743,14 +4743,14 @@
     "slug": "snipe-shot",
     "slugLoc": "prazisionsschuss",
     "name": "Präzisionsschuss",
-    "description": ""
+    "description": "Der Anwender ignoriert die Effekte von Fähigkeiten und\nAttacken, die Attacken umleiten.\nDer Angriff erfolgt mit um 1 Stufe erhöhter Volltrefferquote."
   },
   {
     "id": "jawlock",
     "slug": "jaw-lock",
     "slugLoc": "fesselbiss",
     "name": "Fesselbiss",
-    "description": ""
+    "description": "Das Ziel und der Anwender werden in den Zustand Fesselbiss\nversetzt."
   },
   {
     "id": "stuffcheeks",
@@ -4778,7 +4778,7 @@
     "slug": "magic-powder",
     "slugLoc": "magiepuder",
     "name": "Magiepuder",
-    "description": "Der Typ des Ziels wird durch den Typ Psycho ersetzt."
+    "description": "Der Typ des Ziels wird durch den Typ Psycho ersetzt.\nDiese Attacke hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
   },
   {
     "id": "dragondarts",
@@ -4799,7 +4799,7 @@
     "slug": "octolock",
     "slugLoc": "octoklammer",
     "name": "Octoklammer",
-    "description": ""
+    "description": "Das Ziel wird in die Zustände Wechselsperre und\nOctoklammer versetzt."
   },
   {
     "id": "boltbeak",
@@ -4820,7 +4820,7 @@
     "slug": "court-change",
     "slugLoc": "seitenwechsel",
     "name": "Seitenwechsel",
-    "description": ""
+    "description": "Die Zustände von Mitstreiterseite und Gegnerseite\nwerden getauscht."
   },
   {
     "id": "clangoroussoul",
@@ -4848,7 +4848,7 @@
     "slug": "drum-beating",
     "slugLoc": "trommelschlage",
     "name": "Trommelschläge",
-    "description": ""
+    "description": "Die Initiative des Ziels wird um 1 Stufe gesenkt."
   },
   {
     "id": "snaptrap",
@@ -4862,7 +4862,7 @@
     "slug": "pyro-ball",
     "slugLoc": "feuerball",
     "name": "Feuerball",
-    "description": ""
+    "description": "Das Ziel erleidet mit 10%iger Wahrscheinlichkeit\nVerbrennungen.\nBei Einsatz wird der Anwender aufgetaut."
   },
   {
     "id": "behemothblade",
@@ -4960,7 +4960,7 @@
     "slug": "meteor-assault",
     "slugLoc": "sternensturm",
     "name": "Sternensturm",
-    "description": ""
+    "description": "In der Runde nach Einsatz ist der Anwender handlungsunfähig."
   },
   {
     "id": "eternabeam",
@@ -5436,7 +5436,7 @@
     "slug": "glaive-rush",
     "slugLoc": "grossklingenstoss",
     "name": "Großklingenstoß",
-    "description": ""
+    "description": "Der Anwender wird bis zu seiner nächsten Handlung in den\nZustand Schutzlos versetzt."
   },
   {
     "id": "revivalblessing",
@@ -5513,7 +5513,7 @@
     "slug": "raging-bull",
     "slugLoc": "rasender-stier",
     "name": "Rasender Stier",
-    "description": "Der Typ der Attacke hängt von der Form des Anwenders ab.\nBeim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Gegnerseite aufgehoben."
+    "description": "Der Typ der Attacke hängt von der Form des Anwenders ab.\nBeim Angriff des Anwenders werden die Zustände Reflektor,\nLichtschild und Auroraschleier auf der Seite des Ziels\naufgehoben."
   },
   {
     "id": "makeitrain",
@@ -5828,7 +5828,7 @@
     "slug": "upper-hand",
     "slugLoc": "schnellkonter",
     "name": "Schnellkonter",
-    "description": "Das Ziel schreckt zurück.\nSetzt das Ziel keine Prioritätsattacke ein, schlägt die\nAttacke fehl."
+    "description": "Das Ziel schreckt zurück.\nSetzt das Ziel keinen Prioritätsangriff ein, schlägt die\nAttacke fehl."
   },
   {
     "id": "malignantchain",

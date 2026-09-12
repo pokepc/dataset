@@ -432,6 +432,14 @@
     "pluralName": "Shell Bells"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "leek",
+    "name": "Leek",
+    "description": "When held by a Farfetch'd or Sirfetch'd, gives the holder\na 2-stage Critical-Hit Ratio Boost.",
+    "pluralName": "Leeks"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "wide-lens",
@@ -566,6 +574,54 @@
     "name": "Big Root",
     "description": "Boosts the amount of HP restored through HP-absorbing\nmoves by 30%. HP restored by moves such as Ingrain\nand Strength Sap will also be boosted by 30%.",
     "pluralName": "Big Roots"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "rocky-helmet",
+    "name": "Rocky Helmet",
+    "description": "When the holder is hit by a contact move, the attacker\ntakes damage equal to 1/6 of its max HP.",
+    "pluralName": "Rocky Helmets"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "air-balloon",
+    "name": "Air Balloon",
+    "description": "Causes the holder to float off the ground, making it\nimmune to Ground-type moves, as well as the Spikes,\nToxic Spikes, and Sticky Web statuses. Disappears for\nthe duration of the battle if the holder takes damage\nfrom a move.",
+    "pluralName": "Air Balloons"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "red-card",
+    "name": "Red Card",
+    "description": "When the holder takes damage from a move, the\nattacker is forced to switch out of battle. Disappears\nfor the duration of the battle after a single use.",
+    "pluralName": "Red Cards"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "binding-band",
+    "name": "Binding Band",
+    "description": "Increases the damage dealt to targets that have the\nBound status. Targets will take damage equal to 1/6 of\ntheir max HP instead of 1/8 of their max HP.",
+    "pluralName": "Binding Bands"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "eject-button",
+    "name": "Eject Button",
+    "description": "Switches the holder out of battle when the holder takes\ndamage from a move. Disappears for the duration of the\nbattle after a single use.",
+    "pluralName": "Eject Buttons"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "normal-gem",
+    "name": "Normal Gem",
+    "description": "Boosts the power of the holder's Normal-type moves by\n30%. Disappears for the duration of the battle after a\nsingle use.",
+    "pluralName": "Normal Gems"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "Lopunnites"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "salamencite",
+    "name": "Salamencite",
+    "description": "A held item that allows Salamence to Mega Evolve.",
+    "pluralName": "Salamencites"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "beedrillite",
     "name": "Beedrillite",
     "description": "A held item that allows Beedrill to Mega Evolve.",
     "pluralName": "Beedrillites"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "terrain-extender",
+    "name": "Terrain Extender",
+    "description": "When the holder creates terrain with its moves or\nAbility, the duration is extended by 3 turns.\n(Total duration: 8 turns)",
+    "pluralName": "Terrain Extenders"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "electric-seed",
+    "name": "Electric Seed",
+    "description": "Boosts the holder's Defense stat by 1 stage on Electric\nTerrain. Disappears for the duration of the battle after a\nsingle use.",
+    "pluralName": "Electric Seeds"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "psychic-seed",
+    "name": "Psychic Seed",
+    "description": "Boosts the holder's Sp. Def stat by 1 stage on Psychic\nTerrain. Disappears for the duration of the battle after a\nsingle use.",
+    "pluralName": "Psychic Seeds"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "misty-seed",
+    "name": "Misty Seed",
+    "description": "Boosts the holder's Sp. Def stat by 1 stage on Misty\nTerrain. Disappears for the duration of the battle after a\nsingle use.",
+    "pluralName": "Misty Seeds"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "grassy-seed",
+    "name": "Grassy Seed",
+    "description": "Boosts the holder's Defense stat by 1 stage on Grassy\nTerrain. Disappears for the duration of the battle after a\nsingle use.",
+    "pluralName": "Grassy Seeds"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "Chimechites"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "absolite-z",
+    "name": "Absolite Z",
+    "description": "A held item that allows Absol to Mega Evolve into\nMega Absol Z.",
+    "pluralName": "Absolite Zs"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "staraptite",
     "name": "Staraptite",
     "description": "A held item that allows Staraptor to Mega Evolve.",
     "pluralName": "Staraptites"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "garchompite-z",
+    "name": "Garchompite Z",
+    "description": "A held item that allows Garchomp to Mega Evolve into\nMega Garchomp Z.",
+    "pluralName": "Garchompite Zs"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "lucarionite-z",
+    "name": "Lucarionite Z",
+    "description": "A held item that allows Lucario to Mega Evolve into\nMega Lucario Z.",
+    "pluralName": "Lucarionite Zs"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "Crabominites"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "golisopite",
+    "name": "Golisopite",
+    "description": "A held item that allows Golisopod to Mega Evolve.",
+    "pluralName": "Golisopites"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "scovillainite",
     "name": "Scovillainite",
     "description": "A held item that allows Scovillain to Mega Evolve.",
     "pluralName": "Scovillainites"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "baxcalibrite",
+    "name": "Baxcalibrite",
+    "description": "A held item that allows Baxcalibur to Mega Evolve.",
+    "pluralName": "Baxcalibrites"
   },
   {
     "id": "glimmoranite",

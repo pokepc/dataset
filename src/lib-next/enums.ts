@@ -175,7 +175,7 @@ export const battleStates = [
   'micle_berry',
   'octolocked',
   'wide_open',
-  'jaw_locked'
+  'jaw_locked',
 ]
 export type BattleState = (typeof battleStates)[number]
 

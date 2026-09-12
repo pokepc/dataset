@@ -1,30 +1,15 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { slugify as transliterateSlugify } from 'transliteration'
-import { expandLocalSlugAliases } from './fixtures/aliases'
-import { applyPreliminaryAbilities, applyPreliminaryAbilityI18n } from './fixtures/preliminary'
-import { transformInputData } from './fixtures'
 import {
-  ITEM_CATEGORY_BY_CODE,
-  I18N_CODE,
-  MOVE_CATEGORY_BY_CODE,
-  MOVE_CLASSIFICATION_BY_CODE,
-  MOVE_TARGET_BY_CODE,
-  POKEMON_TYPE_BY_CODE,
-  langMap,
-} from './mappings'
-import type { I18nCode } from './mappings'
-import {
-  abilitySchema,
-  battleStateSchema,
-  i18nSchema,
-  itemI18nSchema,
-  itemSchema,
-  moveSchema,
-  pokemonI18nSchema,
-  pokemonMovesRecordSchema,
-  pokemonSchema,
-} from '../../lib-next/schemas'
+  battleStates,
+  type BattleState,
+  type ItemCategory,
+  type MoveClass,
+  type MoveTarget,
+  type PokemonType,
+} from '../../lib-next/enums'
+import { DEFAULT_GAME_LOCALE, type GameLocale } from '../../lib-next/languages'
 import type {
   AbilityRecord,
   BattleStateRecord,
@@ -37,14 +22,29 @@ import type {
   PokemonRecord,
 } from '../../lib-next/schemas'
 import {
-  battleStates,
-  type BattleState,
-  type ItemCategory,
-  type MoveClass,
-  type MoveTarget,
-  type PokemonType,
-} from '../../lib-next/enums'
-import { DEFAULT_GAME_LOCALE, type GameLocale } from '../../lib-next/languages'
+  abilitySchema,
+  battleStateSchema,
+  i18nSchema,
+  itemI18nSchema,
+  itemSchema,
+  moveSchema,
+  pokemonI18nSchema,
+  pokemonMovesRecordSchema,
+  pokemonSchema,
+} from '../../lib-next/schemas'
+import { transformInputData } from './fixtures'
+import { expandLocalSlugAliases } from './fixtures/aliases'
+import { applyPreliminaryAbilities, applyPreliminaryAbilityI18n } from './fixtures/preliminary'
+import type { I18nCode } from './mappings'
+import {
+  I18N_CODE,
+  ITEM_CATEGORY_BY_CODE,
+  MOVE_CATEGORY_BY_CODE,
+  MOVE_CLASSIFICATION_BY_CODE,
+  MOVE_TARGET_BY_CODE,
+  POKEMON_TYPE_BY_CODE,
+  langMap,
+} from './mappings'
 
 export const DEFAULT_LANGUAGE: I18nCode = 'usa'
 export const DEFAULT_DATASET_ROOT = join(process.cwd(), 'src/upstreams/projectpokemon-champout')
@@ -1024,7 +1024,7 @@ function resolveFormPokemonLocalIds(
   const matches = localCandidates.filter(
     (pokemon) =>
       pokemon.isForm &&
-      !pokemon.isFemaleForm &&
+      !(pokemon.isFemaleForm && pokemon.isCosmeticForm) &&
       !pokemon.isGmax &&
       pokemonTypesMatch(record, pokemon) &&
       pokemonStatsMatch(record, pokemon) &&

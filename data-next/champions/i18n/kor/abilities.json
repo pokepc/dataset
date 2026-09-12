@@ -18,7 +18,7 @@
     "slug": "speed-boost",
     "slugLoc": "gasog",
     "name": "가속",
-    "description": "턴 종료 시 스피드가 1단계 올라간다."
+    "description": "턴 종료 시 스피드가 1단계 올라간다.\n교체로 나온 턴에는 스피드가 오르지 않는다."
   },
   {
     "id": "battlearmor",
@@ -53,7 +53,7 @@
     "slug": "sand-veil",
     "slugLoc": "moraesumgi",
     "name": "모래숨기",
-    "description": "모래바람 상태일 때\n회피율이 1.25배가 된다."
+    "description": "모래바람 상태일 때\n회피율이 1.25배가 된다.\n모래바람 상태의 데미지를 입지 않는다."
   },
   {
     "id": "static",
@@ -172,7 +172,7 @@
     "slug": "effect-spore",
     "slugLoc": "poja",
     "name": "포자",
-    "description": "접촉 기술을 받으면\n30% 확률로 상대를 독, 마비, 잠듦 중\n하나의 상태로 만든다."
+    "description": "접촉 기술을 받으면\n30% 확률로 상대를 독, 마비, 잠듦 중\n하나의 상태로 만든다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "synchronize",
@@ -308,6 +308,13 @@
     "description": "접촉 기술을 받으면\n30% 확률로 상대를 화상 상태로 만든다."
   },
   {
+    "id": "runaway",
+    "slug": "run-away",
+    "slugLoc": "doju",
+    "name": "도주",
+    "description": "교체를 방해하는 효과를 무시하고\n다른 지닌 포켓몬과 교체할 수 있게 된다."
+  },
+  {
     "id": "keeneye",
     "slug": "keen-eye",
     "slugLoc": "nalkarounnun",
@@ -390,6 +397,13 @@
     "slugLoc": "isanghanbineul",
     "name": "이상한비늘",
     "description": "상태 이상일 때 방어가 1.5배가 된다."
+  },
+  {
+    "id": "liquidooze",
+    "slug": "liquid-ooze",
+    "slugLoc": "haegamaeg",
+    "name": "해감액",
+    "description": "HP를 흡수하는 기술을 받으면\n상대를 회복시키는 대신 그만큼 데미지를 준다."
   },
   {
     "id": "overgrow",
@@ -917,6 +931,13 @@
     "description": "악타입 기술로 데미지를 입으면\n공격이 1단계 올라간다."
   },
   {
+    "id": "rattled",
+    "slug": "rattled",
+    "slugLoc": "junug",
+    "name": "주눅",
+    "description": "악, 고스트, 벌레타입 기술의 데미지를 입거나\n위협을 받으면 스피드가 1단계 올라간다."
+  },
+  {
     "id": "magicbounce",
     "slug": "magic-bounce",
     "slugLoc": "maejigmireo",
@@ -935,7 +956,7 @@
     "slug": "prankster",
     "slugLoc": "jisgujeunmaeum",
     "name": "짓궂은마음",
-    "description": "변화 기술의 우선도가 1단계 올라간다."
+    "description": "변화 기술의 우선도가 1단계 올라간다.\n대신 악타입 포켓몬에게는\n변화 기술이 효과가 없게 된다."
   },
   {
     "id": "sandforce",
@@ -1043,6 +1064,13 @@
     "description": "파동 기술의 위력이 1.5배가 된다."
   },
   {
+    "id": "grasspelt",
+    "slug": "grass-pelt",
+    "slugLoc": "pulmopi",
+    "name": "풀모피",
+    "description": "그래스필드 상태일 때 방어가 1.5배가 된다."
+  },
+  {
     "id": "symbiosis",
     "slug": "symbiosis",
     "slugLoc": "gongsaeng",
@@ -1099,11 +1127,25 @@
     "description": "기술로 데미지를 입으면\n방어가 1단계 올라간다."
   },
   {
+    "id": "emergencyexit",
+    "slug": "emergency-exit",
+    "slugLoc": "wigihoepi",
+    "name": "위기회피",
+    "description": "HP가 1/2 이하가 되면\n지닌 포켓몬으로 돌아간다."
+  },
+  {
     "id": "merciless",
     "slug": "merciless",
     "slugLoc": "mudohanhaengdong",
     "name": "무도한행동",
     "description": "독, 맹독 상태인 상대를 공격하면\n반드시 급소에 맞는다."
+  },
+  {
+    "id": "stakeout",
+    "slug": "stakeout",
+    "slugLoc": "jambog",
+    "name": "잠복",
+    "description": "교체로 나온 상대를 공격할 때\n기술의 위력이 2배가 된다."
   },
   {
     "id": "waterbubble",
@@ -1204,6 +1246,27 @@
     "description": "등장 시 5턴 동안 전체 필드를\n일렉트릭필드 상태로 만든다."
   },
   {
+    "id": "psychicsurge",
+    "slug": "psychic-surge",
+    "slugLoc": "saikomeikeo",
+    "name": "사이코메이커",
+    "description": "등장 시 5턴 동안 전체 필드를\n사이코필드 상태로 만든다."
+  },
+  {
+    "id": "grassysurge",
+    "slug": "grassy-surge",
+    "slugLoc": "geuraeseumeikeo",
+    "name": "그래스메이커",
+    "description": "등장 시 5턴 동안 전체 필드를\n그래스필드 상태로 만든다."
+  },
+  {
+    "id": "libero",
+    "slug": "libero",
+    "slugLoc": "ribero",
+    "name": "리베로",
+    "description": "등장할 때마다 단 한 번\n자신이 사용하는 기술과 같은 타입으로 변화한다."
+  },
+  {
     "id": "mirrorarmor",
     "slug": "mirror-armor",
     "slugLoc": "mireoameo",
@@ -1216,6 +1279,13 @@
     "slugLoc": "gudgeonhansinnyeom",
     "name": "굳건한신념",
     "description": "기술을 끌어모으는\n특성이나 기술의 영향을 무시한다."
+  },
+  {
+    "id": "punkrock",
+    "slug": "punk-rock",
+    "slugLoc": "peongkeurog",
+    "name": "펑크록",
+    "description": "소리 기술의 위력이 1.3배가 되며\n소리 기술로 입는 데미지는 반감된다."
   },
   {
     "id": "sandspit",
@@ -1244,6 +1314,13 @@
     "slugLoc": "baerieopeuri",
     "name": "배리어프리",
     "description": "등장 시 빛의장막, 리플렉터,\n오로라베일 상태를 해제한다."
+  },
+  {
+    "id": "steelyspirit",
+    "slug": "steely-spirit",
+    "slugLoc": "gangceoljeongsin",
+    "name": "강철정신",
+    "description": "자신과 같은 편의\n강철타입 기술의 위력이 1.5배가 된다."
   },
   {
     "id": "wanderingspirit",
@@ -1281,11 +1358,32 @@
     "description": "등장 시 같은 편의 능력 변화를 원래대로 되돌린다."
   },
   {
+    "id": "seedsower",
+    "slug": "seed-sower",
+    "slugLoc": "neomcineunssi",
+    "name": "넘치는씨",
+    "description": "기술로 데미지를 입으면\n5턴 동안 전체 필드를\n그래스필드 상태로 만든다."
+  },
+  {
+    "id": "thermalexchange",
+    "slug": "thermal-exchange",
+    "slugLoc": "yeolgyohwan",
+    "name": "열교환",
+    "description": "불꽃타입 기술로 데미지를 입으면\n공격이 1단계 올라간다.\n화상 상태가 되지 않는다."
+  },
+  {
     "id": "purifyingsalt",
     "slug": "purifying-salt",
     "slugLoc": "jeonghwayisogeum",
     "name": "정화의소금",
     "description": "상태 이상이 되지 않는다.\n고스트타입 기술로 입는 데미지가 반감된다."
+  },
+  {
+    "id": "guarddog",
+    "slug": "guard-dog",
+    "slugLoc": "pasugyeon",
+    "name": "파수견",
+    "description": "위협의 효과를 받지 않으며 공격이 1단계 올라간다.\n상대의 교체시키는\n기술이나 도구의 효과를 받지 않는다."
   },
   {
     "id": "zerotohero",
@@ -1416,8 +1514,8 @@
   {
     "id": "auraguard",
     "slug": "aura-guard",
-    "slugLoc": "aura-guard",
-    "name": "Aura Guard",
+    "slugLoc": "padongyibangho",
+    "name": "파동의방호",
     "description": "접촉 기술로 입는 데미지가 반감된다."
   }
 ]

@@ -536,21 +536,21 @@
     "slug": "poison-powder",
     "slugLoc": "doggaru",
     "name": "독가루",
-    "description": "상대를 독 상태로 만든다."
+    "description": "상대를 독 상태로 만든다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "stunspore",
     "slug": "stun-spore",
     "slugLoc": "jeorigaru",
     "name": "저리가루",
-    "description": "상대를 마비 상태로 만든다."
+    "description": "상대를 마비 상태로 만든다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "sleeppowder",
     "slug": "sleep-powder",
     "slugLoc": "sumyeongaru",
     "name": "수면가루",
-    "description": "상대를 잠듦 상태로 만든다."
+    "description": "상대를 잠듦 상태로 만든다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "petaldance",
@@ -599,14 +599,14 @@
     "slug": "thunder-wave",
     "slugLoc": "jeongijaseogpa",
     "name": "전기자석파",
-    "description": "상대를 마비 상태로 만든다."
+    "description": "상대를 마비 상태로 만든다.\n땅타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "thunder",
     "slug": "thunder",
     "slugLoc": "beongae",
     "name": "번개",
-    "description": "30% 확률로 상대를 마비 상태로 만든다.\n비 상태인 경우 상대에게 반드시 명중한다.\n공중 상태인 상대에게도 맞는다."
+    "description": "30% 확률로 상대를 마비 상태로 만든다.\n비 상태인 경우 상대에게 반드시 명중한다.\n쾌청 상태인 경우 명중률은 50%가 된다.\n공중 상태인 상대에게도 맞는다."
   },
   {
     "id": "rockthrow",
@@ -1026,7 +1026,7 @@
     "slug": "spore",
     "slugLoc": "beoseospoja",
     "name": "버섯포자",
-    "description": "상대를 잠듦 상태로 만든다."
+    "description": "상대를 잠듦 상태로 만든다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "flash",
@@ -1138,14 +1138,14 @@
     "slug": "slash",
     "slugLoc": "beeogareugi",
     "name": "베어가르기",
-    "description": ""
+    "description": "급소업+1로 공격한다."
   },
   {
     "id": "substitute",
     "slug": "substitute",
     "slugLoc": "daetaculdong",
     "name": "대타출동",
-    "description": "자신의 최대 HP의 1/4만큼 HP를 소비하여\n대타를 내보낸다.\n대타는 자신을 대신해 기술을 받는다.\n최대 HP의 1/4의 데미지를 입으면 사라진다."
+    "description": "자신의 최대 HP의 1/4만큼 HP를 소비하여\n대타를 내보낸다.\n대타는 자신을 대신해 기술을 받는다.\n최대 HP의 1/4의 데미지를 입으면 사라진다.\n소리 기술에는 대타가 무시된다."
   },
   {
     "id": "struggle",
@@ -1243,7 +1243,7 @@
     "slug": "cotton-spore",
     "slugLoc": "moghwapoja",
     "name": "목화포자",
-    "description": "상대의 스피드를 2단계 떨어뜨린다."
+    "description": "상대의 스피드를 2단계 떨어뜨린다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "reversal",
@@ -1327,7 +1327,7 @@
     "slug": "octazooka",
     "slugLoc": "daepomunopo",
     "name": "대포무노포",
-    "description": ""
+    "description": "50% 확률로 상대의 명중률을 1단계 떨어뜨린다."
   },
   {
     "id": "spikes",
@@ -1453,7 +1453,7 @@
     "slug": "milk-drink",
     "slugLoc": "uyumasigi",
     "name": "우유마시기",
-    "description": ""
+    "description": "자신 또는 같은 편의 HP를\n최대 HP의 1/2만큼 회복한다."
   },
   {
     "id": "spark",
@@ -3329,7 +3329,7 @@
     "slug": "rage-powder",
     "slugLoc": "bunnogaru",
     "name": "분노가루",
-    "description": "상대의 기술을 모두 자신이 받는다.\n상대를 선택하는 기술에만 효과가 있다."
+    "description": "상대의 기술을 모두 자신이 받는다.\n상대를 선택하는 기술에만 효과가 있다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "telekinesis",
@@ -3553,7 +3553,7 @@
     "slug": "shift-gear",
     "slugLoc": "gieoceinji",
     "name": "기어체인지",
-    "description": ""
+    "description": "자신의 공격을 1단계 올리고\n스피드를 2단계 올린다."
   },
   {
     "id": "circlethrow",
@@ -3791,7 +3791,7 @@
     "slug": "hurricane",
     "slugLoc": "pogpung",
     "name": "폭풍",
-    "description": "30% 확률로 상대를 혼란 상태로 만든다.\n비 상태인 경우 상대에게 반드시 명중한다.\n공중 상태인 상대에게도 맞는다."
+    "description": "30% 확률로 상대를 혼란 상태로 만든다.\n비 상태인 경우 상대에게 반드시 명중한다.\n쾌청 상태인 경우 명중률은 50%가 된다.\n공중 상태인 상대에게도 맞는다."
   },
   {
     "id": "headcharge",
@@ -4687,7 +4687,7 @@
     "slug": "zing-zap",
     "slugLoc": "jjiririddaggeumddaggeum",
     "name": "찌리리따끔따끔",
-    "description": ""
+    "description": "30% 확률로 상대를 풀죽게 한다."
   },
   {
     "id": "naturesmadness",
@@ -4743,14 +4743,14 @@
     "slug": "snipe-shot",
     "slugLoc": "noryeomajhigi",
     "name": "노려맞히기",
-    "description": ""
+    "description": "기술을 끌어모으는\n특성이나 기술의 영향을 무시한다.\n급소업+1로 공격한다."
   },
   {
     "id": "jawlock",
     "slug": "jaw-lock",
     "slugLoc": "mulgobeotigi",
     "name": "물고버티기",
-    "description": ""
+    "description": "상대와 자신을 물고버티기 상태로 만든다."
   },
   {
     "id": "stuffcheeks",
@@ -4778,7 +4778,7 @@
     "slug": "magic-powder",
     "slugLoc": "mabeobgaru",
     "name": "마법가루",
-    "description": "상대의 타입을 에스퍼타입으로 바꾼다."
+    "description": "상대의 타입을 에스퍼타입으로 바꾼다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "dragondarts",
@@ -4799,7 +4799,7 @@
     "slug": "octolock",
     "slugLoc": "muneogudhigi",
     "name": "문어굳히기",
-    "description": ""
+    "description": "상대를 교체 불가 상태,\n문어굳히기 상태로 만든다."
   },
   {
     "id": "boltbeak",
@@ -4820,7 +4820,7 @@
     "slug": "court-change",
     "slugLoc": "koteuceinji",
     "name": "코트체인지",
-    "description": ""
+    "description": "같은 편과 상대의 필드 상태를 교체한다."
   },
   {
     "id": "clangoroussoul",
@@ -4848,7 +4848,7 @@
     "slug": "drum-beating",
     "slugLoc": "deureomeotaeg",
     "name": "드럼어택",
-    "description": ""
+    "description": "상대의 스피드를 1단계 떨어뜨린다."
   },
   {
     "id": "snaptrap",
@@ -4862,7 +4862,7 @@
     "slug": "pyro-ball",
     "slugLoc": "hwayeombol",
     "name": "화염볼",
-    "description": ""
+    "description": "10% 확률로 상대를 화상 상태로 만든다.\n사용하면 자신의 얼음 상태를 회복한다."
   },
   {
     "id": "behemothblade",
@@ -4960,7 +4960,7 @@
     "slug": "meteor-assault",
     "slugLoc": "seutaeoseolteu",
     "name": "스타어설트",
-    "description": ""
+    "description": "사용한 다음 턴에\n자신은 반동 상태가 된다."
   },
   {
     "id": "eternabeam",
@@ -5436,7 +5436,7 @@
     "slug": "glaive-rush",
     "slugLoc": "daegeomdolgyeog",
     "name": "대검돌격",
-    "description": ""
+    "description": "다음에 자신이 행동할 때까지\n자신은 무방비 상태가 된다."
   },
   {
     "id": "revivalblessing",
@@ -5828,7 +5828,7 @@
     "slug": "upper-hand",
     "slugLoc": "giseonjeab",
     "name": "기선제압",
-    "description": "상대가 선제 기술을 사용하지 않은 경우 실패한다.\n상대를 풀죽게 한다."
+    "description": "상대가 선제 공격 기술을 사용하지 않은 경우 실패한다.\n상대를 풀죽게 한다."
   },
   {
     "id": "malignantchain",

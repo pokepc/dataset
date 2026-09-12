@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "huida-imposible",
     "name": "Huida imposible",
-    "description": "El Pokémon no puede ser cambiado por otro."
+    "description": "El Pokémon no puede ser cambiado por otro.\nNo afecta a los Pokémon de tipo Fantasma."
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "puas-toxicas",
     "name": "Púas tóxicas",
-    "description": "Envenena a los Pokémon que entran en combate,\no los envenena gravemente si el estado vuelve\na provocarse una vez activo. No afecta a algunos\nPokémon, como los de tipo Volador o a los que\ntienen la habilidad Levitación, entre otros."
+    "description": "Envenena a quien entra en combate, gravemente\nsi el estado vuelve a provocarse una vez activo.\nNo afecta a los Pokémon de tipo Volador o con\nla habilidad Levitación, entre otros. Se elimina si\nun Pokémon de tipo Veneno entra en combate."
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "drenadoras",
     "name": "Drenadoras",
-    "description": "El Pokémon pierde 12.5% de sus PS máximos\nal final de cada turno. Cualquier Pokémon que\nocupe la posición del usuario de Drenadoras\nrecupera esa misma cantidad de PS."
+    "description": "El Pokémon pierde 12.5% de sus PS máximos\nal final de cada turno. Cualquier Pokémon que\nocupe la posición del usuario de Drenadoras\nrecupera esa misma cantidad de PS.\nNo afecta a los Pokémon de tipo Planta."
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "Reduce un 50% el daño recibido de ataques\nfísicos y especiales. En los Combates Dobles,\nse reduce un 33.3%."
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "octopresa",
+    "name": "Octopresa",
+    "description": "Reduce un nivel la Defensa y la Defensa Especial\ndel Pokémon al final de cada turno."
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "salacion",
@@ -390,6 +397,13 @@
     "slugLoc": "curacion-anulada",
     "name": "Curación anulada",
     "description": "El Pokémon no puede recuperar PS usando\nmovimientos, habilidades o el objeto\nque lleve."
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "vulnerable",
+    "name": "Vulnerable",
+    "description": "Los movimientos que los rivales usen contra el\nPokémon acertarán seguro y causarán el doble\nde daño."
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "absorbefuego",
     "name": "Absorbefuego",
     "description": "Aumenta un 50% la potencia de los movimientos\nde tipo Fuego del Pokémon."
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "presa-maxilar",
+    "name": "Presa Maxilar",
+    "description": "Ni el usuario de Presa Maxilar ni el Pokémon que\nrecibió el movimiento pueden ser cambiados por\notros."
   },
   {
     "id": "125",

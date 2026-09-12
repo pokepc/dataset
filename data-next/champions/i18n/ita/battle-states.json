@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "antifuga",
     "name": "Antifuga",
-    "description": "Impedisce la sostituzione."
+    "description": "Impedisce la sostituzione. Non ha effetto\nsui Pokémon di tipo Spettro."
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "punte-velenose",
     "name": "Punte velenose",
-    "description": "Causa lo stato Avvelenamento ai Pokémon che\nentrano in campo, o Iperavvelenamento se\nlo stato Punte velenose viene applicato ancora.\nNon ha effetto su alcuni Pokémon, come quelli\ndi tipo Volante o che hanno l'abilità Levitazione."
+    "description": "Causa lo stato Avvelenamento a chi entra in campo,\no Iperavvelenamento se applicato di nuovo quando\ngià attivo. Non ha effetto sui Pokémon di tipo\nVolante, con l'abilità Levitazione o simili. Termina\nse un Pokémon di tipo Veleno entra in campo."
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "seme-parassita",
     "name": "Seme parassita",
-    "description": "Alla fine di ogni turno, infligge al Pokémon danni\npari a 1/8 dei suoi PS massimi e fa recuperare\nPS in quantità uguale a chi si trova nella\nposizione di chi ha causato lo stato."
+    "description": "Alla fine di ogni turno, infligge al Pokémon danni\npari a 1/8 dei suoi PS massimi e fa recuperare\nPS in quantità uguale a chi si trova nella\nposizione di chi ha causato lo stato.\nNon ha effetto sui Pokémon di tipo Erba."
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "Dimezza i danni subiti dalle mosse fisiche e dalle\nmosse speciali nelle Lotte in Singolo e li riduce\ndi 1/3 nelle Lotte in Doppio."
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "blocco-tentacolare",
+    "name": "Blocco tentacolare",
+    "description": "Alla fine di ogni turno, riduce la Difesa\ne la Difesa Speciale di 1 grado."
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "sotto-sale",
@@ -390,6 +397,13 @@
     "slugLoc": "cura-disabilitata",
     "name": "Cura disabilitata",
     "description": "Impedisce al Pokémon di recuperare PS\nper effetto di mosse, abilità o strumenti."
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "indifeso",
+    "name": "Indifeso",
+    "description": "Raddoppia i danni subiti a causa delle mosse\navversarie e fa sì che queste vadano sempre\na segno."
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "fuocardore",
     "name": "Fuocardore",
     "description": "Aumenta del 50% la potenza delle mosse\ndi tipo Fuoco."
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "morsostretto",
+    "name": "Morsostretto",
+    "description": "Impedisce la sostituzione sia del Pokémon che ha\ncausato lo stato che del bersaglio."
   },
   {
     "id": "125",

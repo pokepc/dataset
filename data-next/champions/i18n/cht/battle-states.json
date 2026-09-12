@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "wu-fa-tao-zou-zhuang-tai",
     "name": "無法逃走狀態",
-    "description": "無法替換。"
+    "description": "無法替換。\n對幽靈屬性的寶可夢無效。"
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "du-ling-zhuang-tai",
     "name": "毒菱狀態",
-    "description": "會讓替換出場的寶可夢變為中毒狀態。\n若使用2次，則會使其變為劇毒狀態。\n對飛行屬性、飄浮特性等的寶可夢無效。"
+    "description": "會讓替換出場的寶可夢變為中毒狀態。\n若使用2次，則會使其變為劇毒狀態。\n對飛行屬性、飄浮特性等的寶可夢無效。\n在毒屬性的寶可夢上場時會解除此狀態。"
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "ji-sheng-zhong-zi-zhuang-tai",
     "name": "寄生種子狀態",
-    "description": "在回合結束時，\n會受到最大HP的1/8的傷害，\n位在使用了該招式的寶可夢所在位置的對手\n會回復相當於傷害量的HP。"
+    "description": "在回合結束時，\n會受到最大HP的1/8的傷害，\n位在使用了該招式的寶可夢所在位置的對手\n會回復相當於傷害量的HP。\n對草屬性的寶可夢無效。"
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "會讓因物理招式和特殊招式\n而受到的傷害減半。\n雙打對戰時會變為2/3。"
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "shao-gu-zhuang-tai",
+    "name": "蛸固狀態",
+    "description": "在回合結束時，\n防禦、特防會降低1階。"
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "yan-yan-zhuang-tai",
@@ -390,6 +397,13 @@
     "slugLoc": "hui-fu-feng-suo-zhuang-tai",
     "name": "回復封鎖狀態",
     "description": "無法透過招式、特性\n或攜帶的道具回復HP。"
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "wu-fang-bei-zhuang-tai",
+    "name": "無防備狀態",
+    "description": "對手的招式必定會擊中，\n且傷害會變為2倍。"
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "yin-huo-zhuang-tai",
     "name": "引火狀態",
     "description": "火屬性招式威力\n會變為1.5倍。"
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "jin-yao-bu-fang-zhuang-tai",
+    "name": "緊咬不放狀態",
+    "description": "使用招式與受到招式的寶可夢\n雙方都無法替換。"
   },
   {
     "id": "125",

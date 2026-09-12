@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "gyoce-bulga-sangtae",
     "name": "교체 불가 상태",
-    "description": "교체할 수 없다."
+    "description": "교체할 수 없다.\n고스트타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "dogabjeong-sangtae",
     "name": "독압정 상태",
-    "description": "교체한 포켓몬을 독 상태로 만든다.\n2회 사용하면 맹독 상태로 만든다.\n비행타입, 특성 부유 등의 포켓몬은\n효과를 받지 않는다."
+    "description": "교체한 포켓몬을 독 상태로 만든다.\n2회 사용하면 맹독 상태로 만든다.\n비행타입, 특성 부유 등의 포켓몬은\n효과를 받지 않는다.\n독타입 포켓몬이 등장하면 해제된다."
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "ssibburigi-sangtae",
     "name": "씨뿌리기 상태",
-    "description": "턴 종료 시\n최대 HP의 1/8만큼 데미지를 입고\n그만큼 기술을 사용한 포켓몬이 있던\n자리에 있는 상대가 회복한다."
+    "description": "턴 종료 시\n최대 HP의 1/8만큼 데미지를 입고\n그만큼 기술을 사용한 포켓몬이 있던\n자리에 있는 상대가 회복한다.\n풀타입 포켓몬에게는 효과가 없다."
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "물리 기술과 특수 기술로\n입는 데미지가 반감된다.\n더블배틀일 때는 2/3가 된다."
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "muneogudhigi-sangtae",
+    "name": "문어굳히기 상태",
+    "description": "턴 종료 시\n방어, 특수방어가 1단계 떨어진다."
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "sogeumjeoli-sangtae",
@@ -390,6 +397,13 @@
     "slugLoc": "hoebogbongin-sangtae",
     "name": "회복봉인 상태",
     "description": "기술, 특성, 지니고 있는 도구로\nHP를 회복할 수 없다."
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "mubangbi-sangtae",
+    "name": "무방비 상태",
+    "description": "상대의 기술에 반드시 맞게 되며\n데미지를 2배로 입는다."
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "taoreuneunbulggoc-sangtae",
     "name": "타오르는불꽃 상태",
     "description": "불꽃타입 기술의 위력이 1.5배가 된다."
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "mulgobeotigi-sangtae",
+    "name": "물고버티기 상태",
+    "description": "기술을 사용한 쪽과 받은 쪽 모두\n교체할 수 없다."
   },
   {
     "id": "125",

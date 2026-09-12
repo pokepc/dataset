@@ -137,7 +137,7 @@
     "slug": "cant-escape",
     "slugLoc": "nigerarenaizhuang-tai",
     "name": "にげられない状態",
-    "description": "交代ができない。"
+    "description": "交代ができない。\nゴーストタイプの\nポケモンには効かない。"
   },
   {
     "id": "26",
@@ -200,7 +200,7 @@
     "slug": "toxic-spikes",
     "slugLoc": "dokubisizhuang-tai",
     "name": "どくびし状態",
-    "description": "入れ替わったポケモンを\nどく状態にする。\n２回使うと　もうどく状態にする。\nひこうタイプ　特性ふゆう等の\nポケモンには効かない。"
+    "description": "入れ替わったポケモンをどく状態にする。\n２回使うと　もうどく状態にする。\nひこうタイプ　特性ふゆう等の\nポケモンには効かない。どくタイプの\nポケモンが登場すると解除される。"
   },
   {
     "id": "39",
@@ -291,7 +291,7 @@
     "slug": "leech-seeded",
     "slugLoc": "yadoriginotanezhuang-tai",
     "name": "やどりぎのタネ状態",
-    "description": "ターン終わりに\n最大ＨＰの１／８のダメージを受けて\nその分　技を使ったポケモンがいた\n場所にいる相手が回復する。"
+    "description": "ターン終わりに\n最大ＨＰの１／８のダメージを受けて\nその分　技を使ったポケモンがいた\n場所にいる相手が回復する。\nくさタイプの　ポケモンには効かない。"
   },
   {
     "id": "54",
@@ -371,6 +371,13 @@
     "description": "物理技　特殊技で\n受けるダメージを半減する。\nダブルバトルだと２／３にする。"
   },
   {
+    "id": "77",
+    "slug": "octolocked",
+    "slugLoc": "takogatamezhuang-tai",
+    "name": "たこがため状態",
+    "description": "ターン終わりに\n防御　特防が１段階下がる。"
+  },
+  {
     "id": "106",
     "slug": "salt-cured",
     "slugLoc": "siodukezhuang-tai",
@@ -390,6 +397,13 @@
     "slugLoc": "kaihukuhuuzizhuang-tai",
     "name": "かいふくふうじ状態",
     "description": "技　特性　持っている道具によって\nＨＰを回復できない。"
+  },
+  {
+    "id": "112",
+    "slug": "wide-open",
+    "slugLoc": "wu-fang-bei-zhuang-tai",
+    "name": "無防備状態",
+    "description": "相手の技が必ず当たり\n２倍のダメージになる。"
   },
   {
     "id": "113",
@@ -453,6 +467,13 @@
     "slugLoc": "moraibizhuang-tai",
     "name": "もらいび状態",
     "description": "ほのおタイプの技の威力が\n１．５倍になる。"
+  },
+  {
+    "id": "124",
+    "slug": "jaw-locked",
+    "slugLoc": "kuraitukuzhuang-tai",
+    "name": "くらいつく状態",
+    "description": "技を使った側と受けた側\n両方とも交代ができない。"
   },
   {
     "id": "125",

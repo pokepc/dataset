@@ -432,6 +432,14 @@
     "pluralName": "Grelots Coque"
   },
   {
+    "id": "leek",
+    "slug": "leek",
+    "slugLoc": "poireau",
+    "name": "Poireau",
+    "description": "Augmente de 2 crans le taux de critiques\nde Canarticho et de Palarticho.",
+    "pluralName": "Poireaux"
+  },
+  {
     "id": "widelens",
     "slug": "wide-lens",
     "slugLoc": "loupe",
@@ -566,6 +574,54 @@
     "name": "Grosse Racine",
     "description": "Multiplie par 1,3 la quantité de PV que le Pokémon\nrécupère lorsqu'il utilise une capacité absorbant des PV.\nCet effet s'applique aussi aux capacités telles que\nRacines ou Vole-Force.",
     "pluralName": "Grosses Racines"
+  },
+  {
+    "id": "rockyhelmet",
+    "slug": "rocky-helmet",
+    "slugLoc": "casque-brut",
+    "name": "Casque Brut",
+    "description": "Inflige à l'adversaire des dégâts équivalents à 1/6\nde ses PV max quand le Pokémon subit une capacité\nà contact.",
+    "pluralName": "Casques Bruts"
+  },
+  {
+    "id": "airballoon",
+    "slug": "air-balloon",
+    "slugLoc": "ballon",
+    "name": "Ballon",
+    "description": "Permet au Pokémon de flotter au-dessus du sol, ce qui\nl'immunise contre les capacités de type Sol, ainsi que\ncontre les effets de Picots, Pics Toxik et Toile Gluante.\nDisparaît pour le reste du combat si le Pokémon subit\ndes dégâts d'une capacité.",
+    "pluralName": "Ballons"
+  },
+  {
+    "id": "redcard",
+    "slug": "red-card",
+    "slugLoc": "carton-rouge",
+    "name": "Carton Rouge",
+    "description": "Force l'adversaire à quitter le terrain quand il inflige\ndes dégâts au Pokémon à l'aide d'une capacité.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Cartons Rouges"
+  },
+  {
+    "id": "bindingband",
+    "slug": "binding-band",
+    "slugLoc": "bande-etreinte",
+    "name": "Bande Étreinte",
+    "description": "Augmente les dégâts infligés aux adversaires piégés,\nqui passent de 1/8 à 1/6 de leurs PV max.",
+    "pluralName": "Bandes Étreinte"
+  },
+  {
+    "id": "ejectbutton",
+    "slug": "eject-button",
+    "slugLoc": "bouton-fuite",
+    "name": "Bouton Fuite",
+    "description": "Quand le Pokémon subit des dégâts d'une capacité,\nil revient dans son équipe.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Boutons Fuite"
+  },
+  {
+    "id": "normalgem",
+    "slug": "normal-gem",
+    "slugLoc": "joyau-normal",
+    "name": "Joyau Normal",
+    "description": "Multiplie par 1,3 la puissance d'une capacité de type\nNormal du Pokémon.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Joyaux Normal"
   },
   {
     "id": "gengarite",
@@ -896,12 +952,60 @@
     "pluralName": "Lockpinites"
   },
   {
+    "id": "salamencite",
+    "slug": "salamencite",
+    "slugLoc": "drattakite",
+    "name": "Drattakite",
+    "description": "Objet à tenir permettant à Drattak de méga-évoluer.",
+    "pluralName": "Drattakites"
+  },
+  {
     "id": "beedrillite",
     "slug": "beedrillite",
     "slugLoc": "dardargnite",
     "name": "Dardargnite",
     "description": "Objet à tenir permettant à Dardargnan de méga-évoluer.",
     "pluralName": "Dardargnites"
+  },
+  {
+    "id": "terrainextender",
+    "slug": "terrain-extender",
+    "slugLoc": "champ-duit",
+    "name": "Champ'Duit",
+    "description": "Prolonge de 3 tours la durée des champs créés\npar une capacité ou un talent du Pokémon\n(durée totale : 8 tours).",
+    "pluralName": "Champ'Duits"
+  },
+  {
+    "id": "electricseed",
+    "slug": "electric-seed",
+    "slugLoc": "graine-electrik",
+    "name": "Graine Électrik",
+    "description": "Augmente la Défense du Pokémon de 1 cran\nlorsqu'un champ électrifié est actif.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Graines Électrik"
+  },
+  {
+    "id": "psychicseed",
+    "slug": "psychic-seed",
+    "slugLoc": "graine-psychique",
+    "name": "Graine Psychique",
+    "description": "Augmente la Défense Spéciale du Pokémon\nde 1 cran lorsqu'un champ psychique est actif.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Graines Psychiques"
+  },
+  {
+    "id": "mistyseed",
+    "slug": "misty-seed",
+    "slugLoc": "graine-brume",
+    "name": "Graine Brume",
+    "description": "Augmente la Défense Spéciale du Pokémon\nde 1 cran lorsqu'un champ brumeux est actif.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Graines Brume"
+  },
+  {
+    "id": "grassyseed",
+    "slug": "grassy-seed",
+    "slugLoc": "graine-herbe",
+    "name": "Graine Herbe",
+    "description": "Augmente la Défense du Pokémon de 1 cran\nlorsqu'un champ herbu est actif.\nDisparaît pour le reste du combat après une utilisation.",
+    "pluralName": "Graines Herbe"
   },
   {
     "id": "fairyfeather",
@@ -1136,12 +1240,36 @@
     "pluralName": "Éokites"
   },
   {
+    "id": "absolitez",
+    "slug": "absolite-z",
+    "slugLoc": "absolite-z",
+    "name": "Absolite Z",
+    "description": "Objet à tenir permettant à Absol de méga-évoluer\nen Méga-Absol Z.",
+    "pluralName": "Absolites Z"
+  },
+  {
     "id": "staraptite",
     "slug": "staraptite",
     "slugLoc": "etouraptorite",
     "name": "Étouraptorite",
     "description": "Objet à tenir permettant à Étouraptor de méga-évoluer.",
     "pluralName": "Étouraptorites"
+  },
+  {
+    "id": "garchompitez",
+    "slug": "garchompite-z",
+    "slugLoc": "carchacrokite-z",
+    "name": "Carchacrokite Z",
+    "description": "Objet à tenir permettant à Carchacrok de méga-évoluer\nen Méga-Carchacrok Z.",
+    "pluralName": "Carchacrokites Z"
+  },
+  {
+    "id": "lucarionitez",
+    "slug": "lucarionite-z",
+    "slugLoc": "lucarite-z",
+    "name": "Lucarite Z",
+    "description": "Objet à tenir permettant à Lucario de méga-évoluer\nen Méga-Lucario Z.",
+    "pluralName": "Lucarites Z"
   },
   {
     "id": "golurkite",
@@ -1168,12 +1296,28 @@
     "pluralName": "Crabominablites"
   },
   {
+    "id": "golisopite",
+    "slug": "golisopite",
+    "slugLoc": "sarmuraite",
+    "name": "Sarmuraïte",
+    "description": "Objet à tenir permettant à Sarmuraï de méga-évoluer.",
+    "pluralName": "Sarmuraïtes"
+  },
+  {
     "id": "scovillainite",
     "slug": "scovillainite",
     "slugLoc": "scovilainite",
     "name": "Scovilainite",
     "description": "Objet à tenir permettant à Scovilain de méga-évoluer.",
     "pluralName": "Scovilainites"
+  },
+  {
+    "id": "baxcalibrite",
+    "slug": "baxcalibrite",
+    "slugLoc": "glaivodite",
+    "name": "Glaivodite",
+    "description": "Objet à tenir permettant à Glaivodo de méga-évoluer.",
+    "pluralName": "Glaivodites"
   },
   {
     "id": "glimmoranite",
