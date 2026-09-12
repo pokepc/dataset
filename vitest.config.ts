@@ -7,7 +7,7 @@ export default defineConfig({
       {
         test: {
           name: 'node',
-          include: ['**/*.test.ts'],
+          include: ['src/**/*.test.ts', 'tests/**/*.test.ts'],
           // Agent worktrees under .claude/worktrees/ are full checkouts, so without this
           // the whole suite is collected twice and every count doubles.
           exclude: [...configDefaults.exclude, '.claude/**'],

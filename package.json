@@ -33,8 +33,8 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "node src/openapi/dev.ts",
-    "build": "pnpm build:next && tsdown && pnpm format",
+    "dev": "concurrently --kill-others --names editor,openapi \"pnpm dev:editor\" \"pnpm dev:openapi\"",
+    "build": "pnpm build:next && pnpm build:lib && pnpm format",
     "build:openapi": "node src/openapi/build.ts",
     "build:pages": "pnpm build:next && node src/openapi/build.ts",
     "build:next": "bun src/lib-next/_build.ts",
@@ -45,7 +45,14 @@
     "test": "vitest --run --bail 20",
     "test:e2e": "node tests/smoke-tests/pkg-smoke-test-run.ts",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "pnpm build",
+    "dev:openapi": "node src/openapi/dev.ts",
+    "dev:editor": "pnpm --filter @pokepc/editor dev",
+    "build:lib": "tsdown",
+    "build:editor": "pnpm --filter @pokepc/editor build",
+    "typecheck:editor": "pnpm --filter @pokepc/editor typecheck",
+    "test:editor": "pnpm --filter @pokepc/editor test",
+    "test:e2e:editor": "pnpm --filter @pokepc/editor test:e2e"
   },
   "dependencies": {
     "yolodb": "^1.2.0",
@@ -54,6 +61,7 @@
   "devDependencies": {
     "@types/bun": "^1.4.1",
     "@types/node": "^26.4.1",
+    "concurrently": "^10.0.5",
     "openai": "^7.10.0",
     "oxfmt": "^0.66.0",
     "publint": "^0.3.24",

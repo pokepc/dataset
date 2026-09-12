@@ -8,6 +8,10 @@ node_modules/
 build/
 dist/
 dist-pages/
+.local/
+coverage/
+playwright-report/
+test-results/
 
 # claude code local files (.claude/skills/ and .claude/agents/ are tracked)
 .claude/worktrees/
@@ -20,3 +24,5 @@ dist-pages/
 *.tar.gz
 *.gz
 *.min.json
+
+.pnpm-store/

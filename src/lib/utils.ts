@@ -1,6 +1,7 @@
 // ----- Dataset UTILS --------------------------------------------
 
 import { arrayUnique, capitalizeFirstLetter } from '../utils/utils-internal'
+export { sortStringsInGivenOrder } from '../utils/utils-internal'
 
 export function formatDexNum(num: number | string, positions: number = 4): string {
   return num.toString().padStart(positions, '0')

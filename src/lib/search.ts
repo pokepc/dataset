@@ -1,5 +1,6 @@
 import { dexNumToGen, formatDexNum, generatePokemonSearchableText } from './utils'
 import { matchesSearchQuery, sanitizeSearchQuery } from '../utils/utils-internal'
+export { matchesSearchQuery, sanitizeSearchQuery } from '../utils/utils-internal'
 
 const MIN_SEARCH_LENGTH = 2
 

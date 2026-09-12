@@ -78,7 +78,7 @@ pnpm build
 ```
 
 When changing data, run the tests before opening a PR. When changing the static API docs, run
-`pnpm build:pages` and check the local Swagger UI with `pnpm dev`.
+`pnpm build:pages` and check the local Swagger UI with `pnpm dev:openapi`.
 
 Build a GitHub Pages-ready artifact:
 
@@ -98,11 +98,23 @@ dist-pages/
 Preview the Swagger UI locally:
 
 ```bash
-pnpm dev
+pnpm dev:openapi
 ```
 
 The dev server runs at `http://localhost:4173/` by default. Override the port with
-`PORT=4174 pnpm dev` or `node src/openapi/dev.ts --port=4174`.
+`PORT=4174 pnpm dev:openapi` or `node src/openapi/dev.ts --port=4174`.
+
+## Dataset editor
+
+Edit this checkout's `data/` with the local maintainer app:
+
+```bash
+pnpm dev:editor
+```
+
+The editor runs on `http://127.0.0.1:3003` without external-directory configuration.
+`pnpm dev:openapi` starts only the OpenAPI preview, and `pnpm dev` runs both in parallel. See the
+[editor guide](docs/editor.md) for editing rules, builds and disposable browser tests.
 
 ## Credits
 

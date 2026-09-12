@@ -1,51 +1,11 @@
 import { MemoryCache } from '../utils/memory-cache'
+import { resolveDatasetDirectory } from '../utils/dataset-directory'
 import { arrayUnique } from '../utils/utils-internal'
 import fs from 'node:fs'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 import { yolodb } from 'yolodb'
 
-const DATASET_PACKAGE_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const MONOREPO_ROOT = path.resolve(DATASET_PACKAGE_ROOT, '..', '..')
-
-function uniquePaths(paths: string[]) {
-  return Array.from(new Set(paths))
-}
-
-function resolveDatasetDirCandidates(value: string | undefined) {
-  if (!value) {
-    return uniquePaths([
-      path.join(DATASET_PACKAGE_ROOT, 'data'),
-      path.join(process.cwd(), 'data'),
-      path.join(MONOREPO_ROOT, 'packages/dataset/data'),
-    ])
-  }
-
-  if (path.isAbsolute(value)) {
-    return [value]
-  }
-
-  return uniquePaths([
-    path.resolve(process.cwd(), value),
-    path.resolve(MONOREPO_ROOT, value),
-    path.resolve(DATASET_PACKAGE_ROOT, value),
-  ])
-}
-
-const DATASET_DIR_CANDIDATES = [...resolveDatasetDirCandidates(process.env.POKEPC_DATASET_DIR)]
-const RESOLVED_DATASET_DIR = DATASET_DIR_CANDIDATES.find((candidate) =>
-  fs.existsSync(path.join(candidate, 'types.json')),
-)
-
-if (!RESOLVED_DATASET_DIR) {
-  const errMsg =
-    'Could not find dataset directory. Set POKEPC_DATASET_DIR and try again. Tried: ' +
-    DATASET_DIR_CANDIDATES.join(', ')
-  console.error(errMsg)
-  throw new Error(errMsg)
-}
-
-const DATASET_DIR = RESOLVED_DATASET_DIR
+const DATASET_DIR = resolveDatasetDirectory(import.meta.url, process.env.POKEPC_DATASET_DIR)
 
 console.debug('Resolved POKEPC dataset directory:', DATASET_DIR)
 

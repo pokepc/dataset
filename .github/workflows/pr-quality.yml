@@ -52,3 +52,40 @@ jobs:
 
       - name: Test
         run: pnpm test
+
+  editor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'pnpm'
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Typecheck editor
+        run: pnpm typecheck:editor
+      - name: Test editor
+        run: pnpm test:editor
+      - name: Install Chromium
+        run: pnpm --filter @pokepc/editor exec playwright install --with-deps chromium
+      - name: Build and test editor in the browser
+        run: pnpm test:e2e:editor
+      - name: Upload editor evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: editor-browser-results
+          path: |
+            apps/editor/test-results
+            apps/editor/playwright-report
+          retention-days: 7

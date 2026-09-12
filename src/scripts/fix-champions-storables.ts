@@ -1,3 +1,4 @@
+import { resolveDatasetDirectory } from '../utils/dataset-directory'
 import fs from 'node:fs'
 import path from 'node:path'
 import { pokemonSchema } from '../lib/schemas'
@@ -7,23 +8,7 @@ const FILE_DIR = 'pokemon'
 const GAME_ID = 'champions'
 const DRY_RUN = process.env.DRY_RUN === '1'
 
-function findDatasetDir() {
-  const candidates = [
-    path.resolve(process.env.POKEPC_DATASET_DIR ?? 'data'),
-    path.join(process.cwd(), 'data'),
-  ].filter((candidate): candidate is string => typeof candidate === 'string')
-
-  const datasetDir = candidates.find((candidate) =>
-    fs.existsSync(path.resolve(candidate, 'indices/games.json')),
-  )
-  if (!datasetDir) {
-    throw new Error('Could not find dataset directory. Set POKEPC_DATASET_DIR and try again.')
-  }
-
-  return path.resolve(datasetDir)
-}
-
-const DATASET_DIR = findDatasetDir()
+const DATASET_DIR = resolveDatasetDirectory(import.meta.url, process.env.POKEPC_DATASET_DIR)
 
 function readDatasetFile<T>(filePath: string): T {
   return JSON.parse(fs.readFileSync(path.join(DATASET_DIR, filePath), 'utf8')) as T
