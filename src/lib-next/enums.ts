@@ -173,6 +173,9 @@ export const battleStates = [
   'atk_def_swapped',
   'flash_fire',
   'micle_berry',
+  'octolocked',
+  'wide_open',
+  'jaw_locked'
 ]
 export type BattleState = (typeof battleStates)[number]
 
