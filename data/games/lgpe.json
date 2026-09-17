@@ -14,9 +14,13 @@
   "pokedexes": ["kanto-lgpe"],
   "maxBoxes": 20,
   "maxBoxSize": 50,
+  "maxPartySize": 6,
+  "maxBattleTeams": 0,
   "platforms": ["switch"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": false,
     "pokedex": true,
     "training": true,
     "shiny": true,

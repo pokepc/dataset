@@ -46,6 +46,8 @@ function createGame(overrides: Partial<Pkds.Game> & Pick<Pkds.Game, 'id' | 'name
     pokedexes: overrides.pokedexes ?? [],
     maxBoxes: overrides.maxBoxes ?? 8,
     maxBoxSize: overrides.maxBoxSize ?? 30,
+    maxPartySize: overrides.maxPartySize ?? 6,
+    maxBattleTeams: overrides.maxBattleTeams ?? 0,
     platforms: overrides.platforms ?? ['gb'],
     features: overrides.features ?? ({} as Pkds.GameFeatures),
     onlineFeatures: overrides.onlineFeatures,

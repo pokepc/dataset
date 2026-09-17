@@ -14,9 +14,13 @@
   "pokedexes": ["unova-b2w2", "national-b2w2"],
   "maxBoxes": 24,
   "maxBoxSize": 30,
+  "maxPartySize": 6,
+  "maxBattleTeams": 1,
   "platforms": ["nds"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": true,
     "pokedex": true,
     "training": true,
     "shiny": true,

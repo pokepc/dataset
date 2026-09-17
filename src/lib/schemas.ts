@@ -84,6 +84,8 @@ export const colorSchema = base.entity.extend({
 })
 export const gameFeaturesSchema = z.object({
   storage: z.boolean(), // when true, the game has a storage system (boxes, etc)
+  party: z.boolean(), // when true, Pokemon are carried in a party (see maxPartySize)
+  battleTeams: z.boolean(), // when true, teams can be registered for battles (see maxBattleTeams)
   pokedex: z.boolean(), // when true, the game has at least one pokedex
   training: z.boolean(), // when true, the Pokemon are trainable with traditional methods (evs, ivs, hyper training, etc)
   shiny: z.boolean(),
@@ -128,6 +130,8 @@ export const gameSchema = base.entity.extend({
   pokedexes: z.array(common.slug),
   maxBoxes: common.int,
   maxBoxSize: common.int,
+  maxPartySize: common.int, // Pokemon carried at once, 0 when the game has no party
+  maxBattleTeams: common.int, // registrable battle teams, 0 when unsupported (the gen 5-6 Battle Box counts as 1)
   platforms: z.array(z.enum(gamePlatforms)).min(1),
   isUnreleased: z.coerce.boolean().optional(),
   features: gameFeaturesSchema,

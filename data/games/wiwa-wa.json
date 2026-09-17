@@ -14,9 +14,13 @@
   "pokedexes": [],
   "maxBoxes": 32,
   "maxBoxSize": 30,
+  "maxPartySize": 6,
+  "maxBattleTeams": 6,
   "platforms": ["switch2"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": true,
     "pokedex": true,
     "training": true,
     "shiny": true,

@@ -37,6 +37,20 @@ describe('Validate games.json data', () => {
     expect(ids.length).toBe(uniqueIds.size)
   })
 
+  it('should have the party feature in sync with maxPartySize', () => {
+    const mismatchedIds = recordList
+      .filter((record) => record.features.party !== record.maxPartySize > 0)
+      .map((record) => record.id)
+    expect(mismatchedIds).toEqual([])
+  })
+
+  it('should have the battleTeams feature in sync with maxBattleTeams', () => {
+    const mismatchedIds = recordList
+      .filter((record) => record.features.battleTeams !== record.maxBattleTeams > 0)
+      .map((record) => record.id)
+    expect(mismatchedIds).toEqual([])
+  })
+
   it('should have valid region IDs', () => {
     recordList.forEach((record) => {
       expect(record.region === null || pokemonRegionsMap[record.region]).not.toBeUndefined()

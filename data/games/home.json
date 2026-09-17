@@ -14,9 +14,13 @@
   "pokedexes": ["national"],
   "maxBoxes": 200,
   "maxBoxSize": 30,
+  "maxPartySize": 0,
+  "maxBattleTeams": 0,
   "platforms": ["mobile", "switch"],
   "features": {
     "storage": true,
+    "party": false,
+    "battleTeams": false,
     "pokedex": true,
     "training": true,
     "shiny": true,

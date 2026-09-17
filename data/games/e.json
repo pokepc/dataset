@@ -14,9 +14,13 @@
   "pokedexes": ["hoenn", "national-e"],
   "maxBoxes": 14,
   "maxBoxSize": 30,
+  "maxPartySize": 6,
+  "maxBattleTeams": 0,
   "platforms": ["gba"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": false,
     "pokedex": true,
     "training": true,
     "shiny": true,

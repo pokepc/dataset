@@ -14,9 +14,13 @@
   "pokedexes": ["sinnoh-pt", "national-pt"],
   "maxBoxes": 18,
   "maxBoxSize": 30,
+  "maxPartySize": 6,
+  "maxBattleTeams": 0,
   "platforms": ["nds"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": false,
     "pokedex": true,
     "training": true,
     "shiny": true,

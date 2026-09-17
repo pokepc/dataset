@@ -14,9 +14,13 @@
   "pokedexes": ["kalos-central", "kalos-coastal", "kalos-mountain", "national-xy"],
   "maxBoxes": 31,
   "maxBoxSize": 30,
+  "maxPartySize": 6,
+  "maxBattleTeams": 1,
   "platforms": ["3ds"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": true,
     "pokedex": true,
     "training": true,
     "shiny": true,

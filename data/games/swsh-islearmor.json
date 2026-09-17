@@ -14,9 +14,13 @@
   "pokedexes": ["galar-isle-armor"],
   "maxBoxes": 32,
   "maxBoxSize": 30,
+  "maxPartySize": 6,
+  "maxBattleTeams": 6,
   "platforms": ["switch"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": true,
     "pokedex": true,
     "training": true,
     "shiny": true,

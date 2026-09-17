@@ -14,9 +14,13 @@
   "pokedexes": ["johto", "national-gsc"],
   "maxBoxes": 14,
   "maxBoxSize": 20,
+  "maxPartySize": 6,
+  "maxBattleTeams": 0,
   "platforms": ["gbc"],
   "features": {
     "storage": true,
+    "party": true,
+    "battleTeams": false,
     "pokedex": true,
     "training": true,
     "shiny": true,
