@@ -66,6 +66,65 @@ afterEach(() => {
 })
 
 describe('interactive availability review', () => {
+  it('skips unchanged records and keeps AI and patch choices for the next changed candidate', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response(page())))
+    const verify = vi.spyOn(ai, 'verifyAvailabilityWithAi').mockResolvedValue(passed)
+    const review = session(['a', 'p'])
+    await withDataset(
+      async (directory, files, originals) => {
+        await reviewDataset(directory, review.io, review.signal, { skipUnchanged: true })
+        expect(readFileSync(files[0], 'utf8')).toBe(originals[0])
+        expect(JSON.parse(readFileSync(files[1], 'utf8')).obtainableIn).toEqual(['gs-g'])
+        expect(verify).toHaveBeenCalledOnce()
+        expect(verify.mock.calls[0][0].pokemon.id).toBe('pikachu-f')
+        expect(review.prompts()).toEqual([
+          'p) patch  s) skip  a) ai pass > ',
+          'p) patch  s) skip > ',
+        ])
+        expect(review.output()).toContain('Already up to date: pikachu (skipped automatically).')
+        expect(review.output()).toContain('Finished: 1 patched, 1 already up to date, 0 skipped.')
+      },
+      [{ ...records[0], obtainableIn: ['gs-g', 'rb-r'] }, records[1]],
+    )
+  })
+
+  it.each([false, true])('only skips unchanged records when enabled: %s', async (skipUnchanged) => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response(page())))
+    const verify = vi.spyOn(ai, 'verifyAvailabilityWithAi')
+    const review = session(['s', 's'])
+    await withDataset(
+      async (directory, files, originals) => {
+        await reviewDataset(directory, review.io, review.signal, { skipUnchanged })
+        expect(review.io.read).toHaveBeenCalledTimes(skipUnchanged ? 0 : 2)
+        expect(verify).not.toHaveBeenCalled()
+        expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
+        expect(review.output()).toContain(
+          skipUnchanged
+            ? 'Finished: 0 patched, 2 already up to date, 0 skipped.'
+            : 'Finished: 0 patched, 0 already up to date, 2 skipped.',
+        )
+      },
+      [
+        { ...records[0], obtainableIn: ['rb-r', 'gs-g'] },
+        { ...records[1], obtainableIn: ['gs-g'] },
+      ],
+    )
+  })
+
+  it('prompts for removal-only changes with --skip-unchanged', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response(page())))
+    const review = session(['s'])
+    await withDataset(
+      async (directory, files, originals) => {
+        await reviewDataset(directory, review.io, review.signal, { skipUnchanged: true })
+        expect(review.io.read).toHaveBeenCalledOnce()
+        expect(review.output()).toContain('obtainableIn:\n  Added: none\n  Removed: Red (rb-r)')
+        expect(readFileSync(files[0], 'utf8')).toBe(originals[0])
+      },
+      [{ ...records[1], obtainableIn: ['rb-r', 'gs-g'] }],
+    )
+  })
+
   it('previews before prompting, patches only on p, then skips forms in dataset order', async () => {
     const fetch = vi.fn().mockResolvedValue(new Response(page()))
     vi.stubGlobal('fetch', fetch)
@@ -145,24 +204,27 @@ describe('interactive availability review', () => {
     },
   )
 
-  it('offers skip on a lookup error and continues to the next Pokémon', async () => {
-    const fetch = vi
-      .fn()
-      .mockResolvedValueOnce(new Response('Blocked', { status: 403 }))
-      .mockResolvedValueOnce(new Response(page()))
-    vi.stubGlobal('fetch', fetch)
-    const review = session(['p', 's', 's'])
-    await withDataset(async (directory, files, originals) => {
-      await reviewDataset(directory, review.io, review.signal)
-      expect(review.output()).toContain('Lookup failed: Bulbapedia returned HTTP 403')
-      expect(review.prompts()).toEqual([
-        's) skip > ',
-        's) skip > ',
-        'p) patch  s) skip  a) ai pass > ',
-      ])
-      expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
-    })
-  })
+  it.each([false, true])(
+    'offers skip on a lookup error (skipUnchanged: %s)',
+    async (skipUnchanged) => {
+      const fetch = vi
+        .fn()
+        .mockResolvedValueOnce(new Response('Blocked', { status: 403 }))
+        .mockResolvedValueOnce(new Response(page()))
+      vi.stubGlobal('fetch', fetch)
+      const review = session(['p', 's', 's'])
+      await withDataset(async (directory, files, originals) => {
+        await reviewDataset(directory, review.io, review.signal, { skipUnchanged })
+        expect(review.output()).toContain('Lookup failed: Bulbapedia returned HTTP 403')
+        expect(review.prompts()).toEqual([
+          's) skip > ',
+          's) skip > ',
+          'p) patch  s) skip  a) ai pass > ',
+        ])
+        expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
+      })
+    },
+  )
 
   it('keeps patch failures on the current Pokémon and preserves concurrent changes', async () => {
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response(page())))
@@ -255,7 +317,7 @@ describe('interactive availability review', () => {
 const entry = fileURLToPath(new URL('./review-cli.ts', import.meta.url))
 const offlineProgram = `import { main } from ${JSON.stringify(entry)};
   globalThis.fetch = async () => new Response(${JSON.stringify(page())});
-  await main([], process.argv[1]);`
+  await main(process.argv.slice(2), process.argv[1]);`
 
 describe('review CLI input and interruption', () => {
   it('prints help without fetching any pages', () => {
@@ -263,6 +325,25 @@ describe('review CLI input and interruption', () => {
     expect(result.status).toBe(0)
     expect(result.stdout).toContain('pokemon:availability:all')
     expect(result.stdout).toContain('Ctrl+C')
+    expect(result.stdout).toContain('--skip-unchanged')
+  })
+
+  it('accepts --skip-unchanged and consumes input only for changed candidates', async () => {
+    await withDataset(
+      async (directory, files, originals) => {
+        const result = spawnSync(
+          process.execPath,
+          ['--input-type=module', '-e', offlineProgram, directory, '--skip-unchanged'],
+          { input: 's\n', encoding: 'utf8', cwd: directory, timeout: 5000 },
+        )
+        expect(result.stderr).toBe('')
+        expect(result.status).toBe(0)
+        expect(result.stdout.match(/p\) patch  s\) skip  a\) ai pass >/g)).toHaveLength(1)
+        expect(result.stdout).toContain('Finished: 0 patched, 1 already up to date, 1 skipped.')
+        expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
+      },
+      [{ ...records[0], obtainableIn: ['rb-r', 'gs-g'] }, records[1]],
+    )
   })
 
   it('preserves buffered input while loading the dataset', async () => {

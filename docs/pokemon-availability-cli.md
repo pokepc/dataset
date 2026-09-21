@@ -126,6 +126,7 @@ Model and response format references:
 
 ```bash
 pnpm pokemon:availability:all
+pnpm pokemon:availability:all --skip-unchanged
 ```
 
 The companion CLI visits every record in `data/indices/pokemon.json` order, including forms. It uses
@@ -142,6 +143,12 @@ leaves it unchanged and advances. `a` verifies the displayed candidate with GPT-
 the review and changes summary again, then offers only `p` or `s`. It never patches automatically.
 Failed, uncertain, or unsuccessful AI reviews block `p`; use `s` to continue. AI is optional and
 reuses the existing API key configuration.
+
+`--skip-unchanged` automatically advances past candidates with no added or removed games in any
+availability property. These count as already up to date; array ordering and file formatting alone
+do not trigger a prompt. Their progress and warnings remain visible, and no files are written or AI
+requests made for them. Changed candidates keep the usual patch/skip/AI prompt. Lookup failures
+still prompt for skip because their availability could not be checked.
 
 Lookup failures offer skip without creating a candidate. Patch failures stay on the current Pokémon.
 Invalid input does not advance. Consecutive forms sharing a species page reuse its HTML; only one

@@ -399,17 +399,25 @@ export function availabilityJson(
   return result
 }
 
-export function formatAvailabilityChanges(report: AvailabilityReport): string {
+export function availabilityChanges(report: AvailabilityReport) {
   const candidate = availabilityJson(report)
+  return [...availabilityFields, 'storableIn' as const].map((field) => {
+    const before = new Set(report.pokemon[field])
+    const after = new Set(candidate[field])
+    return {
+      field,
+      added: [...after].filter((id) => !before.has(id)),
+      removed: [...before].filter((id) => !after.has(id)),
+    }
+  })
+}
+
+export function formatAvailabilityChanges(report: AvailabilityReport): string {
   const games = new Map(report.rows.map((row) => [row.game.id, row.game.name]))
   const describe = (ids: string[]) =>
     ids.map((id) => (games.has(id) ? `${games.get(id)} (${id})` : id)).join(', ')
-  return [...availabilityFields, 'storableIn' as const]
-    .map((field) => {
-      const before = new Set(report.pokemon[field])
-      const after = new Set(candidate[field])
-      const added = [...after].filter((id) => !before.has(id))
-      const removed = [...before].filter((id) => !after.has(id))
+  return availabilityChanges(report)
+    .map(({ field, added, removed }) => {
       if (!added.length && !removed.length) return `${field}: unchanged`
       return `${field}:\n  Added: ${describe(added) || 'none'}\n  Removed: ${describe(removed) || 'none'}`
     })

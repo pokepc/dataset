@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url'
 import { parseArgs } from 'node:util'
 import { datasetRoot, fetchSpeciesPage, readCollection } from './cli.ts'
 import {
+  availabilityChanges,
   bulbapediaUrl,
   formatAvailabilityChanges,
   parseAvailability,
@@ -13,7 +14,7 @@ import {
 } from './availability.ts'
 import { patchPokemonFile } from './patch.ts'
 
-const help = `Usage: pnpm pokemon:availability:all
+const help = `Usage: pnpm pokemon:availability:all [--skip-unchanged]
 
 Review every Pokémon, including forms, in dataset index order.
 For each Pokémon, inspect the proposed availability changes, then type:
@@ -24,6 +25,8 @@ For each Pokémon, inspect the proposed availability changes, then type:
 AI runs only when requested and reuses OPENAI_API_KEY from the environment or
 repository .env. Failed or uncertain AI reviews block patching that Pokémon.
 Ctrl+C stops the review. Completed patches remain saved.
+--skip-unchanged  Automatically advance when no games are added or removed.
+                  Lookup failures still prompt for skip.
 --help, -h  Show this help.`
 
 type ReviewIO = {
@@ -36,6 +39,7 @@ export async function reviewDataset(
   dataDirectory: string,
   io: ReviewIO,
   signal: AbortSignal,
+  options: { skipUnchanged?: boolean } = {},
 ): Promise<void> {
   const [pokemon, games] = await Promise.all([
     readCollection<AvailabilityPokemon>(dataDirectory, 'pokemon'),
@@ -68,6 +72,14 @@ export async function reviewDataset(
         pokemon.filter((entry) => entry.dexNum === selected.dexNum),
       )
       for (const warning of report.warnings) io.write(`Warning: ${warning}`)
+      if (
+        options.skipUnchanged &&
+        availabilityChanges(report).every(({ added, removed }) => !added.length && !removed.length)
+      ) {
+        unchanged++
+        io.write(`Already up to date: ${selected.id} (skipped automatically).`)
+        continue nextPokemon
+      }
       io.write(`\n${formatAvailabilityChanges(report)}\n`)
     } catch (error) {
       if (signal.aborted) break
@@ -147,7 +159,10 @@ export async function main(
   const { values, positionals } = parseArgs({
     args: args.filter((arg, index) => !(index === 0 && arg === '--')),
     allowPositionals: true,
-    options: { help: { type: 'boolean', short: 'h' } },
+    options: {
+      help: { type: 'boolean', short: 'h' },
+      'skip-unchanged': { type: 'boolean' },
+    },
   })
   if (values.help) {
     console.log(help)
@@ -182,6 +197,7 @@ export async function main(
         },
       },
       controller.signal,
+      { skipUnchanged: values['skip-unchanged'] },
     )
   } finally {
     terminal.close()
