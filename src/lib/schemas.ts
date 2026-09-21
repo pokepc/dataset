@@ -119,6 +119,8 @@ export const onlineFeaturesSchema = z.object({
 export const gameSchema = base.entity.extend({
   gen: common.gen,
   nameSlug: common.slug,
+  pokeApiGameVersionId: z.number().int().positive().nullable(), // /version/{id}; null for grouped or unmapped records
+  pokeApiGameVersionGroupId: z.number().int().positive().nullable(), // /version-group/{id}; null when no exact group exists
   codename: common.name.nullable(),
   type: z.enum(gameType),
   series: z.enum(gameSeries),

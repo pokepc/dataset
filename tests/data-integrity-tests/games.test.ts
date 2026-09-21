@@ -37,6 +37,21 @@ describe('Validate games.json data', () => {
     expect(ids.length).toBe(uniqueIds.size)
   })
 
+  it('should have unique direct PokéAPI version IDs and a group for each mapped version', () => {
+    const mapped = recordList.filter((record) => record.pokeApiGameVersionId !== null)
+    const ids = mapped.map((record) => record.pokeApiGameVersionId)
+    expect(new Set(ids).size).toBe(ids.length)
+    expect(mapped.every((record) => record.pokeApiGameVersionGroupId !== null)).toBe(true)
+    expect(mapped.every((record) => record.type === 'game' || record.type === 'dlc')).toBe(true)
+  })
+
+  it('should not assign a single PokéAPI group or version to a superset', () => {
+    for (const game of recordList.filter((record) => record.type === 'superset')) {
+      expect(game.pokeApiGameVersionId).toBeNull()
+      expect(game.pokeApiGameVersionGroupId).toBeNull()
+    }
+  })
+
   it('should have the party feature in sync with maxPartySize', () => {
     const mismatchedIds = recordList
       .filter((record) => record.features.party !== record.maxPartySize > 0)

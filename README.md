@@ -118,6 +118,9 @@ The editor runs on `http://127.0.0.1:3003` without external-directory configurat
 
 ## Pokémon availability lookup
 
+Game records include PokéAPI version and version-group IDs. See the
+[game ID mapping guide](docs/pokeapi-game-ids.md) for the schema and one-off population script.
+
 Inspect Bulbapedia game locations using a dataset Pokémon ID or nid:
 
 ```bash
