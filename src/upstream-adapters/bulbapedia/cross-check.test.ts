@@ -3,6 +3,12 @@ import pikachu from '../../../data/pokemon/pikachu.json'
 import pikachuFemale from '../../../data/pokemon/pikachu-f.json'
 import pikachuGmax from '../../../data/pokemon/pikachu-gmax.json'
 import raichuAlola from '../../../data/pokemon/raichu-alola.json'
+import raichu from '../../../data/pokemon/raichu.json'
+import raichuFemale from '../../../data/pokemon/raichu-f.json'
+import dugtrio from '../../../data/pokemon/dugtrio.json'
+import dugtrioAlola from '../../../data/pokemon/dugtrio-alola.json'
+import graveler from '../../../data/pokemon/graveler.json'
+import gravelerAlola from '../../../data/pokemon/graveler-alola.json'
 import { fetchPokeApiJson } from '../pokeapi/client.ts'
 import { fetchSerebiiEvidence } from '../serebii/availability-evidence.ts'
 import {
@@ -214,8 +220,7 @@ describe('availability source cross-checks', () => {
     expect(output.crossChecks?.pokeApi).toMatchObject({
       url: 'https://pokeapi.co/api/v2/pokemon/25/encounters/',
       status: 'checked',
-      formSpecific: true,
-      encounters: [{ gameId: sword.id }],
+      encounters: [{ gameId: sword.id, formScope: 'selected-form' }],
     })
     expect(output.crossChecks?.conflicts).toEqual([])
     expect(availabilityJson(output)).toEqual(availabilityJson(input))
@@ -273,7 +278,7 @@ describe('availability source cross-checks', () => {
     vi.mocked(fetchPokeApiJson).mockResolvedValue(encounters(1, 'red'))
     const input = report([row(red, 'unavailable', { basis: 'rule' })], pokemon(pikachuFemale))
     const output = await createAvailabilityCrossChecker()(input, games, [input.pokemon, pikachu])
-    expect(output.crossChecks?.pokeApi.formSpecific).toBe(true)
+    expect(output.crossChecks?.pokeApi.encounters[0].formScope).toBe('selected-form')
     expect(output.crossChecks?.conflicts).toEqual([])
     expect(fetchSerebiiEvidence).not.toHaveBeenCalled()
   })
@@ -290,10 +295,10 @@ describe('availability source cross-checks', () => {
       games,
       [alternate, pikachu],
     )
-    expect(output.crossChecks?.pokeApi.formSpecific).toBe(false)
+    expect(output.crossChecks?.pokeApi.encounters[0].formScope).toBe('form-ambiguous')
     expect(output.crossChecks?.pokeApi.encounters).toHaveLength(1)
     expect(output.crossChecks?.conflicts).toEqual([])
-    expect(output.crossChecks?.warnings.join('\n')).toContain('shared with other forms')
+    expect(formatCrossChecks(output)).toContain('shared with other forms')
     expect(fetchSerebiiEvidence).not.toHaveBeenCalled()
   })
 
@@ -302,7 +307,7 @@ describe('availability source cross-checks', () => {
     const input = report([row(sword, 'transferOnlyIn')], pokemon(raichuAlola))
     const output = await createAvailabilityCrossChecker()(input, games, [input.pokemon, pikachu])
     expect(fetchPokeApiJson).toHaveBeenCalledWith('pokemon/10100/encounters', expect.any(Object))
-    expect(output.crossChecks?.pokeApi.formSpecific).toBe(true)
+    expect(output.crossChecks?.pokeApi.encounters[0].formScope).toBe('selected-form')
     expect(output.crossChecks?.conflicts).toHaveLength(1)
   })
 
@@ -310,8 +315,127 @@ describe('availability source cross-checks', () => {
     vi.mocked(fetchPokeApiJson).mockResolvedValue(encounters())
     const input = report([row(sword, 'unavailable')], pokemon(pikachuGmax))
     const output = await createAvailabilityCrossChecker()(input, games, [input.pokemon])
-    expect(output.crossChecks?.pokeApi.formSpecific).toBe(false)
+    expect(output.crossChecks?.pokeApi.encounters[0].formScope).toBe('form-ambiguous')
     expect(output.crossChecks?.conflicts).toEqual([])
+  })
+
+  it.each([
+    {
+      selected: dugtrio,
+      regional: dugtrioAlola,
+      gameId: 'usum-us',
+      versionId: 29,
+      version: 'ultra-sun',
+      location: 'lush-jungle-east-cave',
+      method: 'walk',
+    },
+    {
+      selected: dugtrio,
+      regional: dugtrioAlola,
+      gameId: 'usum-um',
+      versionId: 30,
+      version: 'ultra-moon',
+      location: 'lush-jungle-east-cave',
+      method: 'walk',
+    },
+    {
+      selected: graveler,
+      regional: gravelerAlola,
+      gameId: 'sm-s',
+      versionId: 27,
+      version: 'sun',
+      location: 'tapu-village-area',
+      method: 'npc-trade',
+    },
+    {
+      selected: graveler,
+      regional: gravelerAlola,
+      gameId: 'sm-m',
+      versionId: 28,
+      version: 'moon',
+      location: 'tapu-village-area',
+      method: 'npc-trade',
+    },
+    {
+      selected: raichuFemale,
+      regional: raichuAlola,
+      gameId: 'sm-s',
+      versionId: 27,
+      version: 'sun',
+      location: 'fixture-route',
+      method: 'walk',
+    },
+  ])(
+    'keeps $selected.id $version encounters as form-ambiguous context',
+    async ({ selected, regional, gameId, versionId, version, location, method }) => {
+      const destination = game(gameId, 7, versionId)
+      const raw = encounters(versionId, version)
+      raw[0].location_area.name = location
+      raw[0].version_details[0].encounter_details[0].method.name = method
+      vi.mocked(fetchPokeApiJson).mockResolvedValue(raw)
+      const entry = { ...pokemon(selected), transferOnlyIn: [gameId] }
+      const input = report([row(destination, 'transferOnlyIn')], entry)
+      const output = await createAvailabilityCrossChecker()(
+        input,
+        [...games, destination],
+        [entry, regional],
+      )
+      expect(output.crossChecks?.pokeApi.encounters).toEqual([
+        expect.objectContaining({
+          gameId,
+          location,
+          formScope: 'form-ambiguous',
+          formReason: expect.stringContaining(regional.id),
+        }),
+      ])
+      expect(output.crossChecks?.conflicts).toEqual([])
+      expect(output.crossChecks?.unresolvedConflictIds).toEqual([])
+      expect(availabilityJson(output)).toEqual(availabilityJson(input))
+      expect(availabilityJson(output).obtainableIn).not.toContain(gameId)
+      expect(formatCrossChecks(output)).toContain(`Limitation (${gameId})`)
+      expect(formatCrossChecks(output)).not.toContain('Uncertain (')
+    },
+  )
+
+  it('keeps genuine pre-regional encounters blocking in the same response as ambiguous later encounters', async () => {
+    const sun = game('sm-s', 7, 27)
+    vi.mocked(fetchPokeApiJson).mockResolvedValue([
+      ...encounters(1, 'red'),
+      ...encounters(27, 'sun'),
+    ])
+    const input = report(
+      [row(red, 'transferOnlyIn'), row(sun, 'transferOnlyIn')],
+      pokemon(graveler),
+    )
+    const output = await createAvailabilityCrossChecker()(
+      input,
+      [...games, sun],
+      [graveler, gravelerAlola],
+    )
+    expect(
+      output.crossChecks?.pokeApi.encounters.map(({ gameId, formScope }) => ({
+        gameId,
+        formScope,
+      })),
+    ).toEqual([
+      { gameId: red.id, formScope: 'selected-form' },
+      { gameId: sun.id, formScope: 'form-ambiguous' },
+    ])
+    expect(output.crossChecks?.unresolvedConflictIds).toEqual(['pokeapi:rb-r'])
+    expect(availabilityJson(output)).toEqual(availabilityJson(input))
+  })
+
+  it('keeps unique regional endpoints independent even with the base species present', async () => {
+    const sun = game('sm-s', 7, 27)
+    vi.mocked(fetchPokeApiJson).mockResolvedValue(encounters(27, 'sun'))
+    const input = report([row(sun, 'transferOnlyIn')], pokemon(raichuAlola))
+    const output = await createAvailabilityCrossChecker()(
+      input,
+      [...games, sun],
+      [raichu, raichuAlola],
+    )
+    expect(output.crossChecks?.pokeApi.encounters[0].formScope).toBe('selected-form')
+    expect(output.crossChecks?.unresolvedConflictIds).toEqual(['pokeapi:sm-s'])
   })
 
   it('targets unknown methods and restrictive changes, sharing one generation page', async () => {

@@ -112,16 +112,23 @@ during the lookup, the patch fails instead of overwriting that edit; rerun to us
 The PokéAPI pass uses `refs.pkApiId` and the game's `pokeApiGameVersionId`. It fetches
 [`pokemon/{id}/encounters`](https://pokeapi.co/docs/v2#pokemon-location-areas) once per distinct ID,
 covering every recorded version in one response. Paired DLC version names map to their individual
-parent game, never to both versions. Encounters for an ID shared with another alternate form are
-provided as context, without claiming they prove that form's availability. The female Gen 1 rule
-still applies.
+parent game, never to both versions. Every encounter includes a form scope and its reason.
+Base-endpoint encounters are **form-ambiguous** in generations where a regional sibling exists;
+shared alternate-form IDs and battle-only forms also provide context only. These appear as yellow
+**Limitations**, not blocking conflicts. Earlier generations and unique regional endpoints can still
+provide evidence for the selected form. This is conservative: a regional form's debut does not prove
+it exists in every later game. The female Gen 1 rule still applies.
 
 PokéAPI is positive evidence only. An empty response does not establish unavailability,
 transfer-only status, event exclusivity, or storage. It does not overwrite the Bulbapedia candidate
-automatically. An encounter contradicting that candidate produces an **uncertain source conflict**,
-shown in the table and diagnostics. Conflicts block `--patch` and interactive `p` until an AI pass
-resolves them; plain `--json` still prints the mechanical candidate with uncertainty diagnostics on
-stderr.
+automatically. An encounter identifying the selected form and contradicting that candidate produces
+an **uncertain source conflict**, shown in the table and diagnostics. Conflicts block `--patch` and
+interactive `p` until an AI pass resolves them; plain `--json` still prints the mechanical candidate
+with uncertainty diagnostics on stderr.
+
+AI receives all encounter scopes and reasons. Explicit form-specific HTML can support a passing
+review despite ambiguous optional encounters. If the selected form's route itself remains unclear,
+the review must remain uncertain; ambiguous encounters never add games automatically.
 
 Serebii pages are requested for conflicting games, unknown source methods, or changes that remove
 ordinary acquisition. Ambiguous species rows before the selected form's debut are excluded; actual
@@ -252,6 +259,10 @@ matches the existing dataset, it advances without another prompt and counts the 
 up to date. This compares against the dataset, not the mechanical candidate; an AI-confirmed patch
 still prompts. Failed or uncertain AI reviews and lookup failures still prompt for skip because
 their availability could not be verified.
+
+The review CLI separates **Proposed changes** from **AI verification**. A mechanically skipped
+record explicitly says AI verification was not run. “No changes” only compares the candidate to the
+dataset; it does not establish accuracy or turn an uncertain review into a pass.
 
 Lookup failures offer skip without creating a candidate. Patch failures stay on the current Pokémon.
 Invalid input does not advance. Consecutive forms sharing a species page reuse its HTML; only one

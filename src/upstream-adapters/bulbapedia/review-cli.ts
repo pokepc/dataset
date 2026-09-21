@@ -6,7 +6,7 @@ import { datasetRoot, fetchSpeciesPage, readCollection } from './cli.ts'
 import {
   availabilityChanges,
   bulbapediaUrl,
-  formatAvailabilityChanges,
+  formatAvailabilityProposal,
   parseAvailability,
   resolvePokemon,
   type AvailabilityGame,
@@ -113,16 +113,18 @@ export async function reviewDataset(
         io.write(formatCrossChecks(report))
       }
       for (const warning of report.warnings) io.write(styleText('yellow', `Warning: ${warning}`))
+      io.write('AI verification: not run. Unchanged values are not proof of accuracy.')
       if (
         options.skipUnchanged &&
         !report.crossChecks?.unresolvedConflictIds.length &&
         availabilityChanges(report).every(({ added, removed }) => !added.length && !removed.length)
       ) {
         unchanged++
+        io.write('Proposed changes: none.')
         io.write(`Already up to date: ${selected.id} (skipped automatically).`)
         continue nextPokemon
       }
-      io.write(`\nMechanical candidate:\n${formatAvailabilityChanges(report)}\n`)
+      io.write(`\nMechanical candidate:\n${formatAvailabilityProposal(report)}\n`)
     } catch (error) {
       if (signal.aborted) break
       report = undefined
@@ -213,7 +215,7 @@ export async function reviewDataset(
           )
         }
         io.write(
-          `\n${patchBlocked ? styleText('red', 'Mechanical candidate (AI review did not pass)') : 'AI candidate'}:\n${formatAvailabilityChanges(report)}\n`,
+          `\n${patchBlocked ? styleText('red', 'Mechanical candidate (AI review did not pass)') : 'AI candidate'}:\n${formatAvailabilityProposal(report)}\n`,
         )
         if (
           options.skipUnchanged &&

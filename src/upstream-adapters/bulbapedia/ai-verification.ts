@@ -97,7 +97,15 @@ additionalSources contains the cached PokéAPI encounter cross-check and targete
 Independently compare those sources, including exact forms, game versions, conditions, and DLC.
 PokéAPI provides POSITIVE encounter evidence only. Empty/missing encounters, failed requests, and
 missing pages NEVER establish unavailability, transfer-only status, storage, or event exclusivity.
-If pokeApi.formSpecific is false, those encounters do not prove the selected form exists there.
+Each PokéAPI encounter has formScope and formReason. A form-ambiguous encounter is context only:
+it neither proves nor contradicts acquisition of the selected form. Base endpoints may include
+regional-form encounters without a form qualifier; generation-based ambiguity is conservative,
+not evidence that a regional form is actually present in that game. A selected-form encounter
+can contradict the candidate. Independently inspect the supplied form-specific HTML either way.
+Explicit HTML distinguishing the selected form's route from a regional form's route can support
+an accurate check despite form-ambiguous PokéAPI data. Missing form detail in optional evidence
+alone is not grounds for uncertain, inaccurate, or an error. If the selected form's route itself
+remains unclear, use uncertain. Never infer accuracy from unchanged candidate membership.
 Serebii pages cover only their listed gameIds; preserve regional-form and DLC table context.
 Read Serebii evidence for additional contradictions even if no PokéAPI conflict was detected.
 Source disagreement cannot be resolved by majority vote or automatically preferring a website.
@@ -141,7 +149,8 @@ source-basis or rule-basis row retained: independently verify it or mark inaccur
 Every game whose membership you change from the mechanical candidate must have an accurate check
 with specific supplied source evidence. Do not change set/DLC IDs that have no concrete parsedGameRow.
 Findings must identify scope, field, gameId (or null for global identity issues), and concrete
-evidence. Use warnings for mechanical parser/input mistakes you corrected, and errors only for
+evidence. Successful identity/method checks are not warnings. Use warnings for actual limitations
+or mechanical parser/input mistakes you corrected, and errors only for
 unresolved problems with your final output. Keep explanations concise. The caller derives the
 overall verdict from your checks and findings, and will not patch on errors or uncertainty.`
 
@@ -444,6 +453,9 @@ export function formatAiReview(
     review.differenceReason
       ? `AI difference: ${review.differenceReason}`
       : 'AI candidate matches the mechanical candidate.',
+    ...(review.verdict !== 'pass'
+      ? ['Matching or unchanged values are not verified; patching remains blocked.']
+      : []),
     `${review.checks.length} games reviewed; ${retained} retained without independent source verification.`,
   ]
   for (const check of review.checks.filter((check) =>

@@ -411,6 +411,10 @@ describe('interactive availability review', () => {
         })
         expect(verify).toHaveBeenCalledOnce()
         expect(verify.mock.calls[0][0].pokemon.id).toBe('pikachu-f')
+        const skippedOutput = review.output().split('[2/2]')[0]
+        expect(skippedOutput).toContain('AI verification: not run.')
+        expect(skippedOutput).toContain('Proposed changes: none.')
+        expect(skippedOutput).not.toContain(': PASS')
         expect(review.prompts()).toEqual(['p) patch  s) skip > '])
         expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
         expect(review.output()).toContain('Finished: 0 patched, 1 already up to date, 1 skipped.')
@@ -496,7 +500,7 @@ describe('interactive availability review', () => {
       vi.mocked(crossChecks.createAvailabilityCrossChecker).mockReturnValue(async (report) => ({
         ...report,
         crossChecks: {
-          pokeApi: { url: null, status: 'unavailable', formSpecific: true, encounters: [] },
+          pokeApi: { url: null, status: 'unavailable', encounters: [] },
           serebii: [],
           conflicts: [
             { id: 'fixture', gameId: 'rb-r', message: 'Needs review', evidence: 'Fixture' },

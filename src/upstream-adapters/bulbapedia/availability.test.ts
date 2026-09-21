@@ -22,6 +22,12 @@ import mrMime from '../../../data/pokemon/mrmime.json'
 import galarianMrMime from '../../../data/pokemon/mrmime-galar.json'
 import mimeJr from '../../../data/pokemon/mimejr.json'
 import mrRime from '../../../data/pokemon/mrrime.json'
+import graveler from '../../../data/pokemon/graveler.json'
+import alolanGraveler from '../../../data/pokemon/graveler-alola.json'
+import tauros from '../../../data/pokemon/tauros.json'
+import combatTauros from '../../../data/pokemon/tauros-paldea.json'
+import blazeTauros from '../../../data/pokemon/tauros-paldea-fire.json'
+import aquaTauros from '../../../data/pokemon/tauros-paldea-water.json'
 import { pokemonSchema } from '../../lib/schemas'
 import {
   availabilityJson,
@@ -79,6 +85,65 @@ const location = '<a href="/wiki/Viridian_Forest">Viridian Forest</a>'
 const reportFor = (rows: string, pokemon: AvailabilityPokemon = pikachu) =>
   parseAvailability(page(rows, pokemon.refs.bulbapedia), pokemon, games, [pokemon])
 
+describe('form annotations across HTML method boundaries', () => {
+  it('keeps Graveler Legends: Arceus paragraphs separate from Alolan unavailability', () => {
+    const legends = game('la', 'Legends: Arceus', null, 'game', 8)
+    // Reduced from the cached species page: the divider and paragraph follow the
+    // Alolan annotation without a BR, and the Kantonian annotation belongs to the paragraph.
+    const html = page(
+      row(
+        ['Legends: Arceus'],
+        `
+      Unobtainable <small>(<b>Alolan Form</b>)</small>
+      <div style="border-bottom: 1px solid black;"></div>
+      <p><b>Obsidian Fieldlands:</b> <a href="/wiki/Oreburrow_Tunnel">Oreburrow Tunnel</a>,
+      <a href="/wiki/Ramanas_Island">Ramanas Island</a> <sup>Shaking ore deposits</sup>
+      <small>(<b>Kantonian Form</b>)</small></p>
+    `,
+      ),
+      'Graveler',
+    )
+    const siblings = [graveler, alolanGraveler]
+    const standard = parseAvailability(html, graveler, [legends], siblings)
+    expect(standard.rows[0].status).toBe('obtainableIn')
+    expect(standard.rows[0].methods).toEqual([
+      {
+        text: 'Obsidian Fieldlands: Oreburrow Tunnel, Ramanas Island Shaking ore deposits (Kantonian Form)',
+        status: 'obtainableIn',
+      },
+    ])
+    const regional = parseAvailability(html, alolanGraveler, [legends], siblings)
+    expect(regional.rows[0].status).toBe('unavailable')
+    expect(regional.rows[0].methods).toEqual([
+      { text: 'Unobtainable (Alolan Form)', status: 'unavailable' },
+    ])
+  })
+
+  it.each([
+    '<p>ALOLA</p><p>KANTO</p>',
+    '<div>ALOLA</div><div>KANTO</div>',
+    '<ul><li>ALOLA</li><li>KANTO</li></ul>',
+    '<table><tr><td>ALOLA</td><td>KANTO</td></tr></table>',
+  ])('preserves independent methods and inline form labels in %s', (layout) => {
+    const methods = layout
+      .replace('ALOLA', '<a href="/wiki/Route_17">Route 17</a> <small>(Alolan Form)</small>')
+      .replace(
+        'KANTO',
+        '<a href="/wiki/Pokemon_Bank">Pokémon Bank</a> <small>(Kantonian Form)</small>',
+      )
+    for (const selected of [graveler, alolanGraveler]) {
+      const report = parseAvailability(page(row(['Sun'], methods), 'Graveler'), selected, games, [
+        graveler,
+        alolanGraveler,
+      ])
+      const sun = report.rows.find((row) => row.game.id === 'sm-s')!
+      expect(sun.status).toBe(selected.isDefault ? 'transferOnlyIn' : 'obtainableIn')
+      expect(sun.methods).toHaveLength(1)
+      expect(sun.methods[0].text).not.toContain(selected.isDefault ? 'Alolan' : 'Kantonian')
+    }
+  })
+})
+
 describe('identity and game normalization', () => {
   it.each(['obtainableIn', 'transferOnlyIn', 'eventOnlyIn', 'storableIn'] as const)(
     'sorts %s by the complete game index while retaining unresolved IDs',
@@ -122,7 +187,11 @@ describe('identity and game normalization', () => {
     { pokemon: galarianMrMime, slug: 'Mr._Mime' },
     { pokemon: mimeJr, slug: 'Mime_Jr.' },
     { pokemon: mrRime, slug: 'Mr._Rime' },
-  ])('uses the actual punctuated species reference for $pokemon.id', ({ pokemon, slug }) => {
+    { pokemon: tauros, slug: 'Tauros' },
+    { pokemon: combatTauros, slug: 'Tauros' },
+    { pokemon: blazeTauros, slug: 'Tauros' },
+    { pokemon: aquaTauros, slug: 'Tauros' },
+  ])('uses the actual species page reference for $pokemon.id', ({ pokemon, slug }) => {
     expect(bulbapediaUrl(pokemon)).toBe(
       `https://bulbapedia.bulbagarden.net/wiki/${slug}_(Pok%C3%A9mon)`,
     )

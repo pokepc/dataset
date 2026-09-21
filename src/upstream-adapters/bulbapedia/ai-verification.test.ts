@@ -4,6 +4,10 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import OpenAI from 'openai'
 import pikachu from '../../../data/pokemon/pikachu.json'
+import graveler from '../../../data/pokemon/graveler.json'
+import gravelerAlola from '../../../data/pokemon/graveler-alola.json'
+import dugtrio from '../../../data/pokemon/dugtrio.json'
+import dugtrioAlola from '../../../data/pokemon/dugtrio-alola.json'
 import {
   availabilityJson,
   bulbapediaUrl,
@@ -94,6 +98,110 @@ function clientFor(result: unknown = review, overrides: Record<string, unknown> 
   return { client: new OpenAI({ apiKey: 'test-key', fetch: request, maxRetries: 0 }), request }
 }
 
+describe('form-ambiguous supplementary evidence', () => {
+  it.each([
+    {
+      selected: graveler,
+      regional: gravelerAlola,
+      gameId: 'sm-s',
+      gameName: 'Sun',
+      versionId: 27,
+      location: 'tapu-village-area',
+      method: 'npc-trade',
+    },
+    {
+      selected: dugtrio,
+      regional: dugtrioAlola,
+      gameId: 'usum-us',
+      gameName: 'Ultra Sun',
+      versionId: 29,
+      location: 'lush-jungle-east-cave',
+      method: 'walk',
+    },
+  ])(
+    'passes $selected.id with explicit form evidence and keeps unresolved checks blocked',
+    async ({ selected, regional, gameId, gameName, versionId, location, method }) => {
+      const current = {
+        ...selected,
+        obtainableIn: [],
+        transferOnlyIn: [gameId],
+        eventOnlyIn: [],
+        storableIn: [gameId],
+      }
+      const currentGames = [{ ...games[0], id: gameId, name: gameName, gen: 7 }]
+      const source = `<h1>${selected.names.eng} (Pokémon)</h1><h3 id="Game_locations">Game locations</h3>
+      <table><tr><th>${gameName}</th><td>
+        <a href="/wiki/Location">${location}</a> <small>(Alolan Form)</small><br>
+        <a href="/wiki/Pokemon_Bank">Pokémon Bank</a> <small>(Kantonian Form)</small>
+      </td></tr></table>`
+      const input: AvailabilityReport = {
+        ...parseAvailability(source, current, currentGames, [current, regional]),
+        crossChecks: {
+          pokeApi: {
+            url: `https://pokeapi.co/api/v2/pokemon/${selected.refs.pkApiId}/encounters/`,
+            status: 'checked',
+            encounters: [
+              {
+                gameId,
+                versionId,
+                version: gameName.toLowerCase(),
+                location,
+                methods: [{ name: method, conditions: [] }],
+                formScope: 'form-ambiguous',
+                formReason:
+                  'Base-endpoint encounter does not identify Kantonian versus Alolan form.',
+              },
+            ],
+          },
+          serebii: [],
+          conflicts: [],
+          unresolvedConflictIds: [],
+          warnings: [],
+        },
+      }
+      const candidateJson = availabilityJson(input)
+      expect(candidateJson.transferOnlyIn).toEqual([gameId])
+      const response = {
+        candidateJson,
+        differenceReason: null,
+        summary: 'Form-qualified HTML confirms the existing transfer route.',
+        checks: [
+          {
+            gameId,
+            result: 'accurate',
+            evidence: 'HTML assigns the ordinary route to Alolan Form and Bank to Kantonian Form.',
+          },
+        ],
+        findings: [],
+        conflictResolutions: [],
+      }
+      const { client, request } = clientFor(response)
+      const result = await verifyAvailabilityWithAi(input, source, currentGames, { client })
+      expect(result.verdict).toBe('pass')
+      expect(availabilityJson(applyAiReview(input, result))).toEqual(candidateJson)
+      const body = JSON.parse(String(request.mock.calls[0][1]?.body))
+      expect(JSON.parse(body.input[0].content).additionalSources).toEqual(input.crossChecks)
+      expect(body.instructions).toContain(
+        'it neither proves nor contradicts acquisition of the selected form',
+      )
+      const uncertain = validateAiReview(
+        {
+          ...response,
+          checks: [
+            { gameId, result: 'uncertain', evidence: 'The selected form route remains unclear.' },
+          ],
+        },
+        input,
+      )
+      expect(uncertain.verdict).toBe('uncertain')
+      expect(() => applyAiReview(input, uncertain)).toThrow('did not pass')
+      expect(formatAiReview(uncertain)).toContain(
+        'Matching or unchanged values are not verified; patching remains blocked.',
+      )
+    },
+  )
+})
+
 describe('source conflict review', () => {
   const source = html.replace('Viridian Forest</a>', 'Trade</a>')
   const conflictReport: AvailabilityReport = {
@@ -102,7 +210,6 @@ describe('source conflict review', () => {
       pokeApi: {
         url: 'https://pokeapi.co/api/v2/pokemon/25/encounters/',
         status: 'checked',
-        formSpecific: true,
         encounters: [
           {
             gameId: 'rb-r',
@@ -110,6 +217,8 @@ describe('source conflict review', () => {
             version: 'red',
             location: 'viridian-forest',
             methods: [{ name: 'walk', conditions: [] }],
+            formScope: 'selected-form',
+            formReason: 'No regional forms in this generation.',
           },
         ],
       },

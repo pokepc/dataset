@@ -31,18 +31,21 @@ const encounterSchema = z.array(
   }),
 )
 
-export type PokeApiEncounter = {
+type EncounterData = {
   gameId: string
   versionId: number
   version: string
   location: string
   methods: { name: string; conditions: string[] }[]
 }
+export type PokeApiEncounter = EncounterData & {
+  formScope: 'selected-form' | 'form-ambiguous'
+  formReason: string
+}
 export type AvailabilityCrossChecks = {
   pokeApi: {
     url: string | null
     status: 'checked' | 'unavailable' | 'unmapped'
-    formSpecific: boolean
     encounters: PokeApiEncounter[]
   }
   serebii: SerebiiEvidence[]
@@ -65,7 +68,7 @@ const dlcVersions: Record<string, { dlc: string; game: string }> = {
 }
 
 export function parsePokeApiEncounters(value: unknown, games: AvailabilityGame[]) {
-  const encounters: PokeApiEncounter[] = []
+  const encounters: EncounterData[] = []
   const unmapped = new Set<string>()
   for (const area of encounterSchema.parse(value)) {
     for (const version of area.version_details) {
@@ -107,6 +110,43 @@ export function parsePokeApiEncounters(value: unknown, games: AvailabilityGame[]
   return { encounters, unmapped: [...unmapped] }
 }
 
+function scopeEncounter(
+  encounter: EncounterData,
+  pokemon: AvailabilityPokemon,
+  siblings: AvailabilityPokemon[],
+  games: AvailabilityGame[],
+): PokeApiEncounter {
+  let reason: string | undefined
+  if (pokemon.isBattleOnlyForm) {
+    reason = 'Species encounters do not independently establish a battle-only form.'
+  } else if (
+    !pokemon.isDefault &&
+    !pokemon.isFemaleForm &&
+    siblings.some((other) => other.id !== pokemon.id && other.refs.pkApiId === pokemon.refs.pkApiId)
+  ) {
+    reason = 'PokéAPI ID is shared with other forms; the encounter does not identify this form.'
+  } else if (pokemon.isDefault || (pokemon.isFemaleForm && !pokemon.isRegional)) {
+    const game = games.find((entry) => entry.id === encounter.gameId)!
+    const regionalForms = siblings.filter(
+      (other) =>
+        other.dexNum === pokemon.dexNum &&
+        other.isRegional &&
+        !other.isBattleOnlyForm &&
+        other.gen <= game.gen,
+    )
+    if (regionalForms.length) {
+      reason = `Base-endpoint encounter has no form qualifier; regional forms existed by this game's generation (${regionalForms.map((form) => form.id).join(', ')}).`
+    }
+  }
+  return {
+    ...encounter,
+    formScope: reason ? 'form-ambiguous' : 'selected-form',
+    formReason:
+      reason ??
+      'The mapped endpoint identifies the selected form without known regional ambiguity in this generation.',
+  }
+}
+
 type CrossCheckOptions = {
   pokeApi?: PokeApiFetchOptions
   serebii?: { cacheDir?: string; forceRefresh?: boolean }
@@ -125,13 +165,8 @@ export function createAvailabilityCrossChecker(options: CrossCheckOptions = {}) 
     signal?.throwIfAborted()
     const pokemon = report.pokemon
     const pkApiId = pokemon.refs.pkApiId
-    const formSpecific =
-      !pokemon.isBattleOnlyForm &&
-      (pokemon.isDefault ||
-        pokemon.isFemaleForm ||
-        !siblings.some((other) => other.id !== pokemon.id && other.refs.pkApiId === pkApiId))
     const evidence: AvailabilityCrossChecks = {
-      pokeApi: { url: null, status: 'unmapped', formSpecific, encounters: [] },
+      pokeApi: { url: null, status: 'unmapped', encounters: [] },
       serebii: [],
       conflicts: [],
       unresolvedConflictIds: [],
@@ -155,7 +190,9 @@ export function createAvailabilityCrossChecker(options: CrossCheckOptions = {}) 
         signal?.throwIfAborted()
         const parsed = parsePokeApiEncounters(response, games)
         evidence.pokeApi.status = 'checked'
-        evidence.pokeApi.encounters = parsed.encounters
+        evidence.pokeApi.encounters = parsed.encounters.map((encounter) =>
+          scopeEncounter(encounter, pokemon, siblings, games),
+        )
         if (parsed.unmapped.length)
           evidence.warnings.push(
             `PokéAPI versions without dataset mapping: ${parsed.unmapped.join(', ')}.`,
@@ -168,14 +205,11 @@ export function createAvailabilityCrossChecker(options: CrossCheckOptions = {}) 
         )
       }
     } else evidence.warnings.push('No exact Pokémon PokéAPI ID; encounter cross-check skipped.')
-    if (!formSpecific)
-      evidence.warnings.push(
-        'PokéAPI ID is shared with other forms; encounters do not independently establish this form.',
-      )
-
     for (const row of report.rows) {
-      if (row.basis === 'rule' || !formSpecific || row.status === 'obtainableIn') continue
-      const encounters = evidence.pokeApi.encounters.filter((entry) => entry.gameId === row.game.id)
+      if (row.basis === 'rule' || row.status === 'obtainableIn') continue
+      const encounters = evidence.pokeApi.encounters.filter(
+        (entry) => entry.gameId === row.game.id && entry.formScope === 'selected-form',
+      )
       if (!encounters.length) continue
       evidence.conflicts.push({
         id: `pokeapi:${row.game.id}`,
@@ -252,8 +286,20 @@ export function formatCrossChecks(
 ): string {
   const checks = report.crossChecks
   if (!checks) return ''
+  const ambiguous = new Map(
+    checks.pokeApi.encounters
+      .filter((entry) => entry.formScope === 'form-ambiguous')
+      .map((entry) => [entry.gameId, entry.formReason]),
+  )
   return [
     `Cross-check: PokéAPI ${checks.pokeApi.status} (${checks.pokeApi.encounters.length} mapped encounter records); ${checks.serebii.length} targeted Serebii pages.`,
+    ...[...ambiguous].map(([gameId, reason]) =>
+      styleText(
+        'yellow',
+        `Limitation (${gameId}): ${reason} Context only; not a source conflict.`,
+        { stream },
+      ),
+    ),
     ...checks.conflicts
       .filter((conflict) => checks.unresolvedConflictIds.includes(conflict.id))
       .map((conflict) =>

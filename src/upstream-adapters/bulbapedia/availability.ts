@@ -21,6 +21,7 @@ export type AvailabilityPokemon = Pick<
   | 'isDefault'
   | 'isFemaleForm'
   | 'isBattleOnlyForm'
+  | 'isRegional'
   | 'region'
   | 'refs'
   | AvailabilityField
@@ -213,7 +214,9 @@ function readMethods(
 ): LocationMethod[] {
   const clone = cell.clone()
   clone.find('script, style, .reference, .mw-editsection').remove()
-  // Preserve BR boundaries, while ignoring formatting newlines from the HTML source.
+  // HTML blocks separate acquisition methods too. Otherwise an adjacent form's
+  // "Unobtainable" can swallow the next paragraph's encounter and form annotation.
+  clone.find('p, div, li, td, th').before('<!--method-break-->').after('<!--method-break-->')
   clone.find('br').replaceWith('<!--method-break-->')
   const aliases = formAliases(pokemon)
   const knownForms = new Set(siblings.flatMap((sibling) => [...formAliases(sibling)]))
@@ -453,6 +456,13 @@ export function formatAvailabilityChanges(report: AvailabilityReport): string {
       return `${label}\n  Added: ${describe(added) || 'none'}\n  Removed: ${describe(removed) || 'none'}`
     })
     .join('\n')
+}
+
+export function formatAvailabilityProposal(report: AvailabilityReport): string {
+  const changes = availabilityChanges(report)
+  const added = changes.reduce((count, change) => count + change.added.length, 0)
+  const removed = changes.reduce((count, change) => count + change.removed.length, 0)
+  return `Proposed changes: ${added || removed ? `${added} additions, ${removed} removals` : 'none'}\n${formatAvailabilityChanges(report)}`
 }
 
 function wrapCell(text: string, width: number): string[] {
