@@ -13,6 +13,7 @@ export default defineConfig({
           exclude: [...configDefaults.exclude, '.claude/**'],
           root: './',
           environment: 'node',
+          setupFiles: ['./tests/setup.ts'],
         },
       },
     ],

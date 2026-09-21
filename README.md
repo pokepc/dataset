@@ -80,6 +80,9 @@ pnpm build
 When changing data, run the tests before opening a PR. When changing the static API docs, run
 `pnpm build:pages` and check the local Swagger UI with `pnpm dev:openapi`.
 
+`pnpm test` blocks external network requests, including in Node CLI subprocesses. Upstream tests
+must use fixtures, mocked responses, or loopback test servers; they must not crawl live services.
+
 Build a GitHub Pages-ready artifact:
 
 ```bash
