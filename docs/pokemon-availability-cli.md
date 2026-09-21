@@ -7,6 +7,7 @@ pnpm pokemon:availability pikachu
 pnpm pokemon:availability 0026-alola
 pnpm --silent pokemon:availability 25 --json > /tmp/pikachu-availability.json
 pnpm pokemon:availability pikachu --patch
+pnpm pokemon:availability pikachu --with-ai --patch
 ```
 
 The argument accepts an existing Pokémon `id` or `nid`, including form suffixes. Numeric inputs are
@@ -18,8 +19,8 @@ columns when output is redirected, with a 60-column minimum and 160-column maxim
 logical row for every concrete dataset game (`type: "game"`), in dataset order. Paired versions are
 split into individual IDs. Set/superset records are not extra rows; DLC methods are attached to
 their parent games and labeled with the expansion name. Rows show the source methods and whether the
-acquisition classification comes from `source`, the existing `dataset`, or remains `unknown`.
-Missing evidence is not proof that a Pokémon is unavailable.
+acquisition classification comes from `source`, an explicit dataset `rule`, the existing `dataset`,
+or remains `unknown`. Missing evidence is not proof that a Pokémon is unavailable.
 
 ## JSON output
 
@@ -79,6 +80,78 @@ storableIn: unchanged
 If the file already matches the formatted result, it is left untouched. If availability is edited
 during the lookup, the patch fails instead of overwriting that edit; rerun to use the latest data.
 
+## AI verification
+
+```bash
+pnpm pokemon:availability raichu-alola --with-ai
+pnpm --silent pokemon:availability 0026-alola --with-ai --json
+pnpm pokemon:availability raichu-alola --with-ai --patch
+```
+
+`--with-ai` uses the OpenAI Responses API with **`gpt-5.6-terra`**, medium reasoning, and structured
+output. It reads `OPENAI_API_KEY` from the environment, falling back to this repository's `.env`. It
+does not print, change, or save the key. The flag makes a billable API request using that key. There
+is no model substitution or automatic retry.
+
+The verifier receives the full current Pokémon JSON, full dataset game records, the exact candidate
+JSON, parsed methods and their provenance, and the important article HTML. The HTML includes the
+introduction, biology/forms/evolution, game locations with event subsections, and Pokémon GO context
+where present. Scripts, navigation, presentation attributes, and unrelated stats/learnsets are
+removed; table structure, links, titles, row spans, and form annotations remain. Evidence over
+500,000 characters is rejected rather than silently truncated.
+
+Terra independently checks Pokémon/form identity, game IDs and versions, acquisition methods, DLC
+mapping, event/transfer precedence, preservation rules, and whether the candidate accurately
+represents the supplied source. It must return one check for every concrete dataset game, plus
+findings identifying input, parsing, or output issues with evidence. Local validation rejects
+missing/duplicate game checks, invented game IDs, and malformed reviews.
+
+The review and findings go to **stderr**, preserving JSON stdout and the patch-only summary. A
+passing review allows normal output or patching. An inaccurate or uncertain review, missing key,
+timeout, API error, refusal, or incomplete response exits nonzero before printing candidate output
+or writing the Pokémon file. Requests have a two-minute timeout. With `--patch`, successful
+verification is followed by the existing Oxfmt write and added/removed-games summary.
+
+The AI reviews the extraction; it never rewrites the candidate or applies suggested corrections. An
+unverified value deliberately retained from the dataset is labeled `retained`, not verified. Missing
+evidence alone is allowed for retained values; an evidenced contradiction is reported. A pass is a
+model assessment of the supplied evidence, not proof that all existing data are correct. The
+verifier has no browsing or other tools and does not follow linked pages.
+
+Model and response format references:
+[GPT-5.6 Terra](https://developers.openai.com/api/docs/models/gpt-5.6-terra) and
+[Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs).
+
+## Interactive full-dataset review
+
+```bash
+pnpm pokemon:availability:all
+```
+
+The companion CLI visits every record in `data/indices/pokemon.json` order, including forms. It uses
+the same parser, change summary, patcher, and AI verifier as the single-Pokémon tool. The current
+position, identity, source, warnings, and added/removed games for all four properties appear before
+each prompt:
+
+```text
+p) patch  s) skip  a) ai pass >
+```
+
+Type a letter and Enter. `p` patches and formats the current file with Oxfmt, then advances. `s`
+leaves it unchanged and advances. `a` verifies the displayed candidate with GPT-5.6 Terra, prints
+the review and changes summary again, then offers only `p` or `s`. It never patches automatically.
+Failed, uncertain, or unsuccessful AI reviews block `p`; use `s` to continue. AI is optional and
+reuses the existing API key configuration.
+
+Lookup failures offer skip without creating a candidate. Patch failures stay on the current Pokémon.
+Invalid input does not advance. Consecutive forms sharing a species page reuse its HTML; only one
+page is kept in memory. Pokémon files are written only after an explicit `p`.
+
+Ctrl+C stops the loop and cancels an active page fetch or AI request. A file replacement already
+started after `p` finishes safely. Completed patches remain saved. End of input also stops the
+review. The final line counts patched, unchanged, and skipped records. There is no persisted cursor;
+a new run starts at the beginning.
+
 ## Saved pages and failure handling
 
 To reproduce a result or work when the site blocks automated requests, save the species page's HTML
@@ -105,8 +178,11 @@ Form annotations are matched against names in the local dataset; unqualified spe
 applied to alternate forms. Battle-only forms, unfamiliar text, version-specific superscripts,
 accessory routes, and unmatched forms can require manual verification. Default/female records share
 unqualified species methods; this does not verify the gender of individual gifts or fixed
-encounters. Unknown methods retain the existing classification unless another parsed method
-establishes ordinary acquisition.
+encounters. Records with `isFemaleForm: true` are unavailable in Generation 1 games: those game IDs
+are excluded from all three acquisition arrays, even if the species page lists encounters. This rule
+uses each game's `gen`, applies in both deterministic and AI modes, and does not exclude female-only
+species such as Nidoran♀ (`isFemaleForm: false`). Storage remains preserved. Unknown methods retain
+the existing classification unless another parsed method establishes ordinary acquisition.
 
 This is a deterministic extraction aid, not a complete game-mechanics engine. It does not follow
 location pages, reconstruct transfer compatibility, check event schedules, or prove availability of
@@ -114,9 +190,8 @@ evolution/breeding prerequisites. Some games and services, including HOME or GO 
 pages, have no suitable location row and retain dataset values. Serebii is not fetched as a fallback
 in this version.
 
-No AI service or API key is required. An optional AI review could help interpret unresolved prose
-and linked sources, but it would still need evidence for storage and form mechanics. That review
-would be a separate step rather than a requirement for running this CLI.
+Without `--with-ai`, the CLI makes no AI requests and requires no API key. Both modes retain the
+same conservative storage and form rules; AI verification adds a review before output or patching.
 
 ## Development
 
@@ -126,5 +201,5 @@ pnpm typecheck
 ```
 
 Tests use small synthetic HTML fixtures modeled on the source's table structure, an offline CLI
-subprocess check, and disposable datasets for patching. They do not fetch the live site or patch the
-checkout's Pokémon records.
+subprocess check, mocked OpenAI responses, and disposable datasets for patching. They do not fetch
+the live site, make billable API requests, or patch the checkout's Pokémon records.

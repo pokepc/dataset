@@ -1,5 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import pikachu from '../../../data/pokemon/pikachu.json'
+import femalePikachu from '../../../data/pokemon/pikachu-f.json'
+import nidoranFemale from '../../../data/pokemon/nidoranf.json'
 import raichu from '../../../data/pokemon/raichu.json'
 import alolanRaichu from '../../../data/pokemon/raichu-alola.json'
 import megaCharizard from '../../../data/pokemon/charizard-mega-x.json'
@@ -22,10 +24,13 @@ const game = (
   name: string,
   gameSet: string | null = null,
   type: AvailabilityGame['type'] = 'game',
-): AvailabilityGame => ({ id, name, gameSet, gameSuperSet: null, type })
+  gen = 9,
+): AvailabilityGame => ({ id, name, gameSet, gameSuperSet: null, type, gen })
 const games = [
-  game('rb-r', 'Red', 'rb'),
-  game('rb-b', 'Blue', 'rb'),
+  game('rb-r', 'Red', 'rb', 'game', 1),
+  game('rb-b', 'Blue', 'rb', 'game', 1),
+  game('y', 'Yellow', null, 'game', 1),
+  game('gs-g', 'Gold', 'gs', 'game', 2),
   game('sm', 'Sun & Moon', null, 'set'),
   game('sm-s', 'Sun', 'sm'),
   game('sm-m', 'Moon', 'sm'),
@@ -103,6 +108,8 @@ describe('location parsing and classification', () => {
     ['Breed Raichu', 'obtainableIn'],
     ['<a href="/wiki/In-game_trade#Sun">Trade</a> in a city', 'obtainableIn'],
     ['<a href="/wiki/Trade">Trade</a>', 'transferOnlyIn'],
+    ['<a href="/wiki/Pal_Park">Pal Park</a>', 'transferOnlyIn'],
+    ['<a href="/wiki/Ramanas_Park">Ramanas Park</a>', 'obtainableIn'],
     ['Poké Transfer, <a href="#In_events">Event</a>', 'transferOnlyIn'],
     ['Pokémon HOME, <a href="/wiki/Poké_Portal_News">Poké Portal News</a>', 'transferOnlyIn'],
     [`${location}, <a href="#In_events">Event</a>`, 'obtainableIn'],
@@ -183,6 +190,44 @@ describe('location parsing and classification', () => {
 })
 
 describe('form boundaries', () => {
+  it.each([location, 'Trade', '<a href="#In_events">Event</a>'])(
+    'excludes Gen 1 acquisition for female forms regardless of species method: %s',
+    (method) => {
+      const report = reportFor(
+        row(['Red', 'Blue', 'Yellow'], method) + row(['Gold'], location),
+        femalePikachu,
+      )
+      const json = availabilityJson(report)
+      for (const id of ['rb-r', 'rb-b', 'y']) {
+        expect(report.rows.find((entry) => entry.game.id === id)).toMatchObject({
+          status: 'unavailable',
+          basis: 'rule',
+        })
+        for (const field of ['obtainableIn', 'transferOnlyIn', 'eventOnlyIn'] as const)
+          expect(json[field]).not.toContain(id)
+      }
+      expect(json.obtainableIn).toContain('gs-g')
+      expect(json.storableIn).toEqual(femalePikachu.storableIn)
+      expect(formatAvailabilityTable(report)).toContain('Female forms do not exist')
+    },
+  )
+  it('applies the female Gen 1 rule even with absent source rows or stale acquisition data', () => {
+    const pokemon = {
+      ...femalePikachu,
+      obtainableIn: ['rb-r'],
+      transferOnlyIn: ['rb-b'],
+      eventOnlyIn: ['y'],
+    }
+    const json = availabilityJson(reportFor(row(['Gold'], location), pokemon))
+    expect(json.obtainableIn).toEqual(['gs-g'])
+    expect(json.transferOnlyIn).toEqual([])
+    expect(json.eventOnlyIn).toEqual([])
+  })
+  it('allows female-only species such as Nidoran♀ in Gen 1', () => {
+    const report = reportFor(row(['Red'], location), nidoranFemale)
+    expect(report.rows[0]).toMatchObject({ status: 'obtainableIn', basis: 'source' })
+    expect(availabilityJson(report).obtainableIn).toContain('rb-r')
+  })
   const formRows = row(
     ['Sun', 'Moon'],
     'Trade <small>(<b>Kantonian Form</b>)</small><br>Evolve Pikachu <small>(<b>Alolan Form</b>)</small>',

@@ -124,14 +124,20 @@ Inspect Bulbapedia game locations using a dataset Pokémon ID or nid:
 pnpm pokemon:availability pikachu
 pnpm --silent pokemon:availability 0026-alola --json
 pnpm pokemon:availability pikachu --patch
+pnpm pokemon:availability pikachu --with-ai --patch
 ```
 
 The command prints a terminal table with one row per game or candidate Pokémon availability fields.
 It preserves existing values where the source is inconclusive, including `storableIn`, and reports
 warnings. With `--patch`, it updates and formats the selected Pokémon file and prints a summary of
-added and removed games instead of the table or JSON. It requires no AI service. See the
-[CLI guide](docs/pokemon-availability-cli.md) for saved HTML input, classification rules, and
-limitations.
+added and removed games instead of the table or JSON. Optional `--with-ai` uses GPT-5.6 Terra to
+verify the input, source HTML, and candidate output before proceeding, using `OPENAI_API_KEY` from
+the environment or repository `.env`. See the [CLI guide](docs/pokemon-availability-cli.md) for
+saved HTML input, classification rules, and limitations.
+
+Run `pnpm pokemon:availability:all` to review every Pokémon interactively. Each iteration shows the
+changes summary and accepts `p` to patch, `s` to skip, or `a` for AI verification followed by
+patch/skip. Press Ctrl+C to stop.
 
 ## Credits
 

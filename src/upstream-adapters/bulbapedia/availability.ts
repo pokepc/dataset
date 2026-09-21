@@ -22,7 +22,10 @@ export type AvailabilityPokemon = Pick<
   names: Partial<Pkds.Pokemon['names']>
   formNames: Partial<Pkds.Pokemon['formNames']>
 }
-export type AvailabilityGame = Pick<Pkds.Game, 'id' | 'name' | 'type' | 'gameSet' | 'gameSuperSet'>
+export type AvailabilityGame = Pick<
+  Pkds.Game,
+  'id' | 'name' | 'gen' | 'type' | 'gameSet' | 'gameSuperSet'
+>
 
 export type LocationMethod = {
   text: string
@@ -32,7 +35,7 @@ export type LocationMethod = {
 export type AvailabilityRow = {
   game: AvailabilityGame
   status: AvailabilityStatus
-  basis: 'source' | 'dataset' | 'unknown'
+  basis: 'source' | 'rule' | 'dataset' | 'unknown'
   methods: LocationMethod[]
   storable: boolean
 }
@@ -313,6 +316,18 @@ export function parseAvailability(
   const rows = games
     .filter((game) => game.type === 'game')
     .map((game): AvailabilityRow => {
+      // Species-level encounters cannot establish a female form before genders existed.
+      if (pokemon.isFemaleForm && game.gen === 1) {
+        return {
+          game,
+          status: 'unavailable',
+          basis: 'rule',
+          methods: [
+            { text: 'Female forms do not exist before Generation II.', status: 'unavailable' },
+          ],
+          storable: pokemon.storableIn.includes(game.id),
+        }
+      }
       const methods = [
         ...new Map(
           (methodsByGame.get(game.id) ?? []).map((method) => [method.text, method]),
@@ -334,7 +349,9 @@ export function parseAvailability(
   const warnings = [
     'storableIn is preserved from the dataset; location tables do not establish box compatibility or form reversion.',
   ]
-  const retained = rows.filter((row) => row.basis !== 'source').map((row) => row.game.id)
+  const retained = rows
+    .filter((row) => row.basis === 'dataset' || row.basis === 'unknown')
+    .map((row) => row.game.id)
   if (retained.length)
     warnings.push(
       `Acquisition not established by this page; existing values retained for: ${retained.join(', ')}.`,
@@ -367,7 +384,7 @@ export function availabilityJson(
     storableIn: [...pokemon.storableIn],
   }
   for (const row of rows) {
-    if (row.basis !== 'source') continue
+    if (row.basis !== 'source' && row.basis !== 'rule') continue
     for (const field of availabilityFields) {
       result[field] = result[field].filter((id) => id !== row.game.id)
       if (row.status === field) result[field].push(row.game.id)

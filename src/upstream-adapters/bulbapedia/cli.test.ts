@@ -9,6 +9,7 @@ import { patchPokemonFile } from './patch'
 import { parseAvailability } from './availability'
 import pikachu from '../../../data/pokemon/pikachu.json'
 import { format } from 'oxfmt'
+import * as aiVerification from './ai-verification'
 
 const cli = fileURLToPath(new URL('./cli.ts', import.meta.url))
 const html = `<h1>Pikachu (Pokémon)</h1><h3 id="Game_locations">Game locations</h3>
@@ -90,9 +91,9 @@ describe('availability CLI', () => {
 
 describe('patching availability', () => {
   const games = [
-    { id: 'rb-r', name: 'Red', type: 'game' as const, gameSet: 'rb', gameSuperSet: null },
-    { id: 'rb-b', name: 'Blue', type: 'game' as const, gameSet: 'rb', gameSuperSet: null },
-    { id: 'home', name: 'HOME', type: 'game' as const, gameSet: null, gameSuperSet: null },
+    { id: 'rb-r', name: 'Red', gen: 1, type: 'game' as const, gameSet: 'rb', gameSuperSet: null },
+    { id: 'rb-b', name: 'Blue', gen: 1, type: 'game' as const, gameSet: 'rb', gameSuperSet: null },
+    { id: 'home', name: 'HOME', gen: 8, type: 'game' as const, gameSet: null, gameSuperSet: null },
   ]
   const pokemon = {
     ...pikachu,
@@ -190,6 +191,67 @@ describe('patching availability', () => {
       const current = readFileSync(file, 'utf8')
       await expect(patchPokemonFile(file, report)).rejects.toThrow('changed during lookup')
       expect(readFileSync(file, 'utf8')).toBe(current)
+    })
+  })
+
+  it('verifies before patching and keeps AI diagnostics separate from the patch summary', async () => {
+    const output = vi.spyOn(console, 'log').mockImplementation(() => {})
+    const diagnostics = vi.spyOn(console, 'error').mockImplementation(() => {})
+    await withDataset(async (directory, file, sourceFile) => {
+      const original = readFileSync(file, 'utf8')
+      const verify = vi
+        .spyOn(aiVerification, 'verifyAvailabilityWithAi')
+        .mockImplementation(async (report, html, currentGames) => {
+          expect(readFileSync(file, 'utf8')).toBe(original)
+          expect(report.pokemon).toEqual(pokemon)
+          expect(html).toBe(source)
+          expect(currentGames).toEqual(games)
+          return { verdict: 'pass', summary: 'Reviewed', checks: [], findings: [] }
+        })
+      await main(['pikachu', '--with-ai', '--patch', '--json', '--html', sourceFile], directory)
+      expect(verify).toHaveBeenCalledOnce()
+      expect(JSON.parse(readFileSync(file, 'utf8')).obtainableIn).toEqual(['rb-r', 'home'])
+      expect(output.mock.calls.flat().join('\n')).toContain('Patched and formatted:')
+      expect(output.mock.calls.flat().join('\n')).not.toContain('AI verification')
+      expect(diagnostics.mock.calls.flat().join('\n')).toContain(
+        'AI verification (gpt-5.6-terra): PASS',
+      )
+    })
+  })
+
+  it.each(['fail', 'uncertain', 'api-error'] as const)(
+    'does not print or patch when AI verification returns %s',
+    async (verdict) => {
+      const output = vi.spyOn(console, 'log').mockImplementation(() => {})
+      vi.spyOn(console, 'error').mockImplementation(() => {})
+      const verify = vi.spyOn(aiVerification, 'verifyAvailabilityWithAi')
+      if (verdict === 'api-error') verify.mockRejectedValue(new Error('OpenAI unavailable'))
+      else verify.mockResolvedValue({ verdict, summary: 'Needs review', checks: [], findings: [] })
+      await withDataset(async (directory, file, sourceFile) => {
+        const original = readFileSync(file, 'utf8')
+        await expect(
+          main(['pikachu', '--with-ai', '--patch', '--json', '--html', sourceFile], directory),
+        ).rejects.toThrow()
+        expect(readFileSync(file, 'utf8')).toBe(original)
+        expect(output).not.toHaveBeenCalled()
+      })
+    },
+  )
+
+  it('keeps --with-ai --json output parseable and does not call AI without the flag', async () => {
+    const output = vi.spyOn(console, 'log').mockImplementation(() => {})
+    vi.spyOn(console, 'error').mockImplementation(() => {})
+    const verify = vi
+      .spyOn(aiVerification, 'verifyAvailabilityWithAi')
+      .mockResolvedValue({ verdict: 'pass', summary: 'Reviewed', checks: [], findings: [] })
+    await withDataset(async (directory, _file, sourceFile) => {
+      await main(['pikachu', '--json', '--html', sourceFile], directory)
+      expect(verify).not.toHaveBeenCalled()
+      output.mockClear()
+      await main(['pikachu', '--with-ai', '--json', '--html', sourceFile], directory)
+      expect(JSON.parse(String(output.mock.calls[0][0])).id).toBe('pikachu')
+      expect(output).toHaveBeenCalledOnce()
+      expect(verify).toHaveBeenCalledOnce()
     })
   })
 })

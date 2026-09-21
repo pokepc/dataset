@@ -13,36 +13,40 @@ import {
   type AvailabilityPokemon,
 } from './availability.ts'
 
-const datasetRoot = fileURLToPath(new URL('../../../data/', import.meta.url))
-const help = `Usage: pnpm pokemon:availability <id|nid> [--json] [--patch] [--html <file>]
+export const datasetRoot = fileURLToPath(new URL('../../../data/', import.meta.url))
+const help = `Usage: pnpm pokemon:availability <id|nid> [--json] [--patch] [--with-ai] [--html <file>]
 
 Examples:
   pnpm pokemon:availability pikachu
   pnpm pokemon:availability 0026-alola
   pnpm --silent pokemon:availability 25 --json
   pnpm pokemon:availability pikachu --patch
+  pnpm pokemon:availability pikachu --with-ai --patch
   pnpm pokemon:availability raichu --html /tmp/raichu.html
 
 Print one row per concrete dataset game, folding DLC into its parent games.
 --json         Print candidate id/nid and availability fields; diagnostics go to stderr.
 --patch        Update and format the Pokémon JSON; print added/removed games per field.
                Overrides --json and table output. Uses the repository's Oxfmt config.
+--with-ai      Verify input, source HTML, and output with GPT-5.6 Terra before proceeding.
+               Requires OPENAI_API_KEY (environment or repository .env); review goes to stderr.
 --html <file>  Parse a saved Bulbapedia species page instead of fetching it.
 --help, -h     Show this help.
 
 Existing values are retained where the source is inconclusive. storableIn is
-always preserved. Files are modified only with --patch. No AI or API key is required.`
+always preserved. Files are modified only with --patch. No AI or API key is required
+unless --with-ai is supplied. Failed or uncertain AI reviews prevent output and patching.`
 
 async function readJson<T>(path: string): Promise<T> {
   return JSON.parse(await readFile(path, 'utf8')) as T
 }
 
-async function readCollection<T>(root: string, collection: string): Promise<T[]> {
+export async function readCollection<T>(root: string, collection: string): Promise<T[]> {
   const ids = await readJson<string[]>(resolve(root, 'indices', `${collection}.json`))
   return Promise.all(ids.map((id) => readJson<T>(resolve(root, collection, `${id}.json`))))
 }
 
-export async function fetchSpeciesPage(url: string): Promise<string> {
+export async function fetchSpeciesPage(url: string, signal?: AbortSignal): Promise<string> {
   let response: Response
   try {
     response = await fetch(url, {
@@ -50,7 +54,9 @@ export async function fetchSpeciesPage(url: string): Promise<string> {
         'User-Agent': 'PokePC-Dataset-Availability/1.0 (+https://github.com/pokepc/dataset)',
         Accept: 'text/html',
       },
-      signal: AbortSignal.timeout(30_000),
+      signal: signal
+        ? AbortSignal.any([signal, AbortSignal.timeout(30_000)])
+        : AbortSignal.timeout(30_000),
     })
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error)
@@ -81,6 +87,7 @@ export async function main(
     options: {
       json: { type: 'boolean' },
       patch: { type: 'boolean' },
+      'with-ai': { type: 'boolean' },
       html: { type: 'string' },
       help: { type: 'boolean', short: 'h' },
     },
@@ -110,6 +117,15 @@ export async function main(
       `Source: ${url}#Game_locations${values.html ? ` (saved HTML: ${resolve(values.html)})` : ''}`,
     )
   for (const warning of report.warnings) console.error(`Warning: ${warning}`)
+  if (values['with-ai']) {
+    const { verifyAvailabilityWithAi, formatAiReview, VERIFICATION_MODEL } =
+      await import('./ai-verification.ts')
+    console.error(`Verifying input and candidate JSON with ${VERIFICATION_MODEL}…`)
+    const review = await verifyAvailabilityWithAi(report, html, games)
+    console.error(formatAiReview(review))
+    if (review.verdict !== 'pass')
+      throw new Error(`AI verification ${review.verdict}; no output or patch was applied.`)
+  }
   if (values.patch) {
     const { patchPokemonFile } = await import('./patch.ts')
     const file = resolve(dataDirectory, 'pokemon', `${selected.id}.json`)
