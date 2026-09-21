@@ -60,9 +60,9 @@
   },
   "devDependencies": {
     "@types/bun": "^1.4.2",
-    "@types/node": "^26.6.1",
+    "@types/node": "^26.6.2",
     "concurrently": "^10.0.5",
-    "openai": "^7.17.0",
+    "openai": "^7.20.0",
     "oxfmt": "^0.68.0",
     "publint": "^0.3.24",
     "transliteration": "^2.6.1",
@@ -71,5 +71,5 @@
     "vitest": "^5.0.1",
     "zod-openapi": "^6.0.2"
   },
-  "packageManager": "pnpm@11.25.0"
+  "packageManager": "pnpm@12.5.1"
 }
