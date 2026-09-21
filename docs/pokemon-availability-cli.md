@@ -218,6 +218,8 @@ pnpm pokemon:availability:all --skip-unchanged --with-ai
 pnpm pokemon:availability:all --from mrmime-galar --skip-unchanged --with-ai
 pnpm pokemon:availability:all --from 0122-galar
 pnpm pokemon:availability:all --from dugtrio --skip-unchanged --ai-harder
+pnpm pokemon:availability:all --patch-all
+pnpm pokemon:availability:all --from tauros-paldea --patch-all --skip-unchanged --with-ai
 ```
 
 The companion CLI visits every record in `data/indices/pokemon.json` order, including forms. It uses
@@ -235,20 +237,31 @@ suffixes. Earlier records receive no source lookups, cross-checks, AI calls, pro
 Progress retains the original full-dataset position; final totals count only this run's processed
 records. An unknown ID fails before any lookup. It combines with all other review options.
 
+`--patch-all` applies eligible patches and formats each file automatically, without prompts. It
+stops at the first lookup or patch error, unresolved source conflict, or failed/uncertain AI review,
+prints the blocked Pokémon and a `--from` hint, and exits with code 1. Earlier completed patches
+remain saved; later Pokémon are not processed. Warnings and form-ambiguous source limitations alone
+do not block patching. The normal preservation rules and file-concurrency checks still apply.
+
+Combine it with `--with-ai` or `--ai-harder` to review before each automatic patch: a passing AI
+candidate is used, including its corrections. AI may resolve a source conflict before patching;
+otherwise the run stops. AI is not enabled by `--patch-all` alone. `--skip-unchanged` retains its
+existing behavior, including skipping unchanged, conflict-free candidates before AI.
+
 Type a letter and Enter. `p` patches and formats the current file with Oxfmt, then advances. `s`
 leaves it unchanged and advances. `a` verifies the displayed candidate with GPT-5.6 Luna and low
 reasoning, prints the review and the final AI candidate's changes summary, then offers only `p` or
-`s`. After a passing review, `p` applies that AI candidate. It never patches automatically. Failed,
-uncertain, or unsuccessful AI reviews block `p`; use `s` to continue. AI is optional and reuses the
-existing API key configuration.
+`s`. After a passing review, `p` applies that AI candidate. Without `--patch-all`, it never patches
+automatically. Failed, uncertain, or unsuccessful AI reviews block `p`; use `s` to continue. AI is
+optional and reuses the existing API key configuration.
 
 `--with-ai` runs the same GPT-5.6 Luna verification automatically for each candidate before the
 first prompt. `--ai-harder` enables the same automatic flow using GPT-5.6 Terra with low reasoning.
-You then choose `p` or `s`; passing AI verification never patches automatically. Failed, uncertain,
-or unsuccessful reviews still block patching. Each review makes a billable API request using the
-existing key. Combine with `--skip-unchanged` to review candidates with added or removed games **or
-unresolved source conflicts**. Other unchanged candidates are skipped before AI; the source
-cross-check still runs.
+You then choose `p` or `s`, unless `--patch-all` applies the passing candidate automatically.
+Failed, uncertain, or unsuccessful reviews still block patching. Each review makes a billable API
+request using the existing key. Combine with `--skip-unchanged` to review candidates with added or
+removed games **or unresolved source conflicts**. Other unchanged candidates are skipped before AI;
+the source cross-check still runs.
 
 `--skip-unchanged` automatically advances past candidates with no added or removed games in any
 availability property and no unresolved source conflicts. These count as already up to date; array
@@ -266,12 +279,13 @@ dataset; it does not establish accuracy or turn an uncertain review into a pass.
 
 Lookup failures offer skip without creating a candidate. Patch failures stay on the current Pokémon.
 Invalid input does not advance. Consecutive forms sharing a species page reuse its HTML; only one
-page is kept in memory. Pokémon files are written only after an explicit `p`.
+page is kept in memory. Pokémon files are written after an explicit `p` or through `--patch-all`.
 
 Ctrl+C stops the loop and cancels an active page fetch or AI request. A file replacement already
-started after `p` finishes safely. Completed patches remain saved. End of input also stops the
-review. The final line counts patched, unchanged, and skipped records. There is no persisted cursor;
-a new run starts at the beginning unless `--from` is supplied.
+started finishes safely. Completed patches remain saved. End of input also stops the interactive
+review; `--patch-all` requires no input. The final line counts patched, unchanged, and skipped
+records. There is no persisted cursor; a new run starts at the beginning unless `--from` is
+supplied.
 
 ## Saved pages and failure handling
 

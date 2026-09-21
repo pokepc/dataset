@@ -15,6 +15,7 @@ import * as ai from './ai-verification'
 import * as crossChecks from './cross-check'
 import * as pokeApi from '../pokeapi/client'
 import * as serebii from '../serebii/availability-evidence'
+import * as patcher from './patch'
 import { bulbapediaUrl } from './availability'
 
 let cacheDir: string
@@ -84,6 +85,202 @@ afterEach(() => {
   vi.unstubAllGlobals()
   vi.unstubAllEnvs()
   rmSync(cacheDir, { recursive: true, force: true })
+})
+
+describe('automatic availability patching', () => {
+  it('patches and formats every candidate without reading input', async () => {
+    vi.stubGlobal(
+      'fetch',
+      vi.fn().mockImplementation(async () => new Response(page())),
+    )
+    const review = session([])
+    await withDataset(async (directory, files) => {
+      expect(await reviewDataset(directory, review.io, review.signal, { patchAll: true })).toEqual({
+        blocked: false,
+      })
+      expect(review.prompts()).toEqual([])
+      expect(JSON.parse(readFileSync(files[0], 'utf8')).obtainableIn).toEqual(['rb-r', 'gs-g'])
+      expect(JSON.parse(readFileSync(files[1], 'utf8')).obtainableIn).toEqual(['gs-g'])
+      for (const file of files) {
+        expect(readFileSync(file, 'utf8')).toMatch(/^\{\n  "id":/)
+        expect(JSON.parse(readFileSync(file, 'utf8')).unrelated).toBe('preserve me')
+      }
+      expect(review.output()).toContain('Finished: 2 patched, 0 already up to date, 0 skipped.')
+    })
+  })
+
+  it.each([false, true])(
+    'patches the AI-corrected candidate after review (harder: %s)',
+    async (aiHarder) => {
+      vi.stubGlobal(
+        'fetch',
+        vi.fn().mockImplementation(async () => new Response(page())),
+      )
+      vi.mocked(crossChecks.createAvailabilityCrossChecker).mockReturnValue(async (report) => ({
+        ...report,
+        crossChecks: {
+          pokeApi: { url: null, status: 'checked', encounters: [] },
+          serebii: [],
+          warnings: [],
+          conflicts: [
+            {
+              id: 'fixture:gs-g',
+              gameId: 'gs-g',
+              message: 'Fixture conflict',
+              evidence: 'Fixture evidence',
+            },
+          ],
+          unresolvedConflictIds: ['fixture:gs-g'],
+        },
+      }))
+      const verify = vi
+        .spyOn(ai, 'verifyAvailabilityWithAi')
+        .mockImplementation(async (report) => ({
+          ...passed(report),
+          checks: report.rows.map((row) => ({
+            gameId: row.game.id,
+            result: 'accurate' as const,
+            evidence: 'Fixture evidence confirms the corrected candidate.',
+          })),
+          conflictResolutions: [
+            {
+              conflictId: 'fixture:gs-g',
+              result: 'resolved' as const,
+              evidence: 'Fixture source conflict resolved.',
+              sourceUrls: [],
+            },
+          ],
+          candidateJson: { ...availabilityJson(report), obtainableIn: ['gs-g'] },
+          differenceReason: 'Fixture evidence excludes Red.',
+        }))
+      const review = session([])
+      await withDataset(async (directory, files) => {
+        await reviewDataset(directory, review.io, review.signal, {
+          patchAll: true,
+          withAi: !aiHarder,
+          aiHarder,
+        })
+        expect(verify).toHaveBeenCalledTimes(2)
+        expect(verify.mock.calls[0][0].crossChecks?.unresolvedConflictIds).toEqual(['fixture:gs-g'])
+        expect(verify.mock.calls[0][3]?.harder).toBe(aiHarder)
+        expect(review.prompts()).toEqual([])
+        expect(JSON.parse(readFileSync(files[0], 'utf8')).obtainableIn).toEqual(['gs-g'])
+        expect(review.output()).toContain('Finished: 2 patched')
+      })
+    },
+  )
+
+  it.each(['source conflict', 'AI fail', 'AI uncertain', 'AI error', 'patch error'])(
+    'stops at %s and preserves earlier patches without prompting',
+    async (blocker) => {
+      vi.stubGlobal(
+        'fetch',
+        vi.fn().mockImplementation(async () => new Response(page())),
+      )
+      if (blocker === 'source conflict') {
+        vi.mocked(crossChecks.createAvailabilityCrossChecker).mockReturnValue(async (report) =>
+          report.pokemon.id === 'pikachu'
+            ? report
+            : {
+                ...report,
+                crossChecks: {
+                  pokeApi: { url: null, status: 'checked', encounters: [] },
+                  serebii: [],
+                  warnings: [],
+                  conflicts: [
+                    {
+                      id: 'pokeapi:gs-g',
+                      gameId: 'gs-g',
+                      message: 'Fixture conflict',
+                      evidence: 'Fixture encounter',
+                    },
+                  ],
+                  unresolvedConflictIds: ['pokeapi:gs-g'],
+                },
+              },
+        )
+      }
+      if (blocker.startsWith('AI')) {
+        vi.spyOn(ai, 'verifyAvailabilityWithAi').mockImplementation(async (report) => {
+          if (report.pokemon.id === 'pikachu') return passed(report)
+          if (blocker === 'AI error') throw new Error('Fixture AI failure')
+          return { ...passed(report), verdict: blocker === 'AI fail' ? 'fail' : 'uncertain' }
+        })
+      }
+      if (blocker === 'patch error') {
+        const original = patcher.patchPokemonFile
+        vi.spyOn(patcher, 'patchPokemonFile').mockImplementation(async (file, report) => {
+          if (report.pokemon.id === 'pikachu-f') throw new Error('Fixture write failure')
+          return original(file, report)
+        })
+      }
+      const review = session([])
+      await withDataset(async (directory, files, originals) => {
+        const result = await reviewDataset(directory, review.io, review.signal, {
+          patchAll: true,
+          withAi: blocker.startsWith('AI'),
+        })
+        expect(result.blocked).toBe(true)
+        expect(review.prompts()).toEqual([])
+        expect(readFileSync(files[0], 'utf8')).not.toBe(originals[0])
+        expect(readFileSync(files[1], 'utf8')).toBe(originals[1])
+        expect(review.output()).toContain('Automatic patching stopped at pikachu-f:')
+        expect(review.output()).toContain('--from pikachu-f without --patch-all')
+        expect(review.output()).toContain('Stopped: 1 patched, 0 already up to date, 0 skipped.')
+      })
+    },
+  )
+
+  it('stops at a lookup failure before visiting later Pokémon', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response('', { status: 404 })))
+    const review = session([])
+    await withDataset(async (directory, files, originals) => {
+      expect(
+        (await reviewDataset(directory, review.io, review.signal, { patchAll: true })).blocked,
+      ).toBe(true)
+      expect(review.prompts()).toEqual([])
+      expect(review.output()).not.toContain('[2/2]')
+      expect(review.output()).toContain('lookup failed; no candidate is available.')
+      expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
+    })
+  })
+
+  it('combines --from and --skip-unchanged without rewriting skipped files or calling AI', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response(page())))
+    const verify = vi.spyOn(ai, 'verifyAvailabilityWithAi')
+    const review = session([])
+    await withDataset(
+      async (directory, files, originals) => {
+        await reviewDataset(directory, review.io, review.signal, {
+          patchAll: true,
+          from: 'pikachu-f',
+          skipUnchanged: true,
+          withAi: true,
+        })
+        expect(verify).not.toHaveBeenCalled()
+        expect(review.prompts()).toEqual([])
+        expect(review.output()).not.toContain('[1/2]')
+        expect(review.output()).toContain('Finished: 0 patched, 1 already up to date, 0 skipped.')
+        expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
+      },
+      [records[0], { ...records[1], obtainableIn: ['gs-g'] }],
+    )
+  })
+
+  it('honors cancellation after a completed patch', async () => {
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(new Response(page())))
+    const controller = new AbortController()
+    const review = session([], controller)
+    review.io.write.mockImplementation((message) => {
+      if (message.startsWith('Patched and formatted:')) controller.abort()
+    })
+    await withDataset(async (directory, files, originals) => {
+      await reviewDataset(directory, review.io, review.signal, { patchAll: true })
+      expect(review.prompts()).toEqual([])
+      expect(review.output()).toContain('Stopped: 1 patched')
+      expect(readFileSync(files[1], 'utf8')).toBe(originals[1])
+    })
+  })
 })
 
 describe('interactive availability review', () => {
@@ -838,6 +1035,40 @@ describe('review CLI input and interruption', () => {
     expect(result.stdout).toContain('--with-ai')
     expect(result.stdout).toContain('--ai-harder')
     expect(result.stdout).toContain('--from <id|nid>')
+    expect(result.stdout).toContain('--patch-all')
+  })
+
+  it('accepts --patch-all without stdin and exits successfully after patching', async () => {
+    await withDataset(async (directory, files) => {
+      const result = spawnSync(
+        process.execPath,
+        ['--input-type=module', '-e', offlineProgram, directory, '--patch-all'],
+        { encoding: 'utf8', cwd: directory, timeout: 5000 },
+      )
+      expect(result.status).toBe(0)
+      expect(result.stderr).toBe('')
+      expect(result.stdout).toContain('Finished: 2 patched')
+      expect(result.stdout).not.toContain('p) patch')
+      expect(JSON.parse(readFileSync(files[0], 'utf8')).obtainableIn).toEqual(['rb-r', 'gs-g'])
+    })
+  })
+
+  it('exits nonzero on the first automatic lookup blocker without prompts', async () => {
+    await withDataset(async (directory, files, originals) => {
+      const program = `import { main } from ${JSON.stringify(entry)};
+        globalThis.fetch = async () => new Response('', { status: 404 });
+        await main(['--patch-all', '--no-cross-check'], process.argv[1]);`
+      const result = spawnSync(
+        process.execPath,
+        ['--input-type=module', '-e', program, directory],
+        { encoding: 'utf8', cwd: directory, timeout: 5000 },
+      )
+      expect(result.status).toBe(1)
+      expect(result.stdout).toContain('Automatic patching stopped at pikachu:')
+      expect(result.stdout).not.toContain('s) skip >')
+      expect(result.stdout).not.toContain('[2/2]')
+      expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
+    })
   })
 
   it('accepts --from on the real CLI and preserves original progress numbering', async () => {

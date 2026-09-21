@@ -16,7 +16,7 @@ import {
 import { patchPokemonFile } from './patch.ts'
 import { createAvailabilityCrossChecker, formatCrossChecks } from './cross-check.ts'
 
-const help = `Usage: pnpm pokemon:availability:all [--from <id|nid>] [--skip-unchanged] [--with-ai] [--ai-harder]
+const help = `Usage: pnpm pokemon:availability:all [--from <id|nid>] [--patch-all] [--skip-unchanged] [--with-ai] [--ai-harder]
 
 Review every Pokémon, including forms, in dataset index order.
 For each Pokémon, inspect the proposed availability changes, then type:
@@ -28,6 +28,9 @@ AI runs with a, --with-ai, or --ai-harder and reuses OPENAI_API_KEY from the env
 repository .env. Failed or uncertain AI reviews block patching that Pokémon.
 AI corrections replace the mechanical candidate and include a reason of at most 25 words.
 Ctrl+C stops the review. Completed patches remain saved.
+--patch-all       Patch and format automatically; stop at the first blocker with exit code 1.
+                  Combines with AI flags; only passing AI candidates are patched.
+                  No prompts. Lookup/patch errors and unresolved conflicts stop the run.
 --from <id|nid>   Start at this Pokémon (inclusive), bypassing earlier records without lookups.
                   Example: --from mrmime-galar or --from 0122-galar.
 --skip-unchanged  Advance when no games change and there are no unresolved source conflicts.
@@ -52,13 +55,14 @@ export async function reviewDataset(
   signal: AbortSignal,
   options: {
     from?: string
+    patchAll?: boolean
     skipUnchanged?: boolean
     withAi?: boolean
     aiHarder?: boolean
     noCrossCheck?: boolean
     refreshSources?: boolean
   } = {},
-): Promise<void> {
+): Promise<{ blocked: boolean }> {
   const [pokemon, games] = await Promise.all([
     readCollection<AvailabilityPokemon>(dataDirectory, 'pokemon'),
     readCollection<AvailabilityGame>(dataDirectory, 'games'),
@@ -71,6 +75,13 @@ export async function reviewDataset(
   let unchanged = 0
   let skipped = 0
   let stopped = false
+  let blocked = false
+  const stopAtBlocker = (id: string, reason: string) => {
+    stopped = true
+    blocked = true
+    io.write(styleText('red', `Automatic patching stopped at ${id}: ${reason}`))
+    io.write(`Review this Pokémon with --from ${id} without --patch-all.`)
+  }
   // Forms are adjacent in the index. Keep only the last page, not hundreds of large articles.
   let page: { url: string; html: string } | undefined
   const crossCheck = createAvailabilityCrossChecker({
@@ -134,19 +145,30 @@ export async function reviewDataset(
           `Lookup failed: ${error instanceof Error ? error.message : String(error)}`,
         ),
       )
+      if (options.patchAll) {
+        stopAtBlocker(selected.id, 'lookup failed; no candidate is available.')
+        break nextPokemon
+      }
       io.write(styleText('yellow', 'No candidate is available. Skip this Pokémon to continue.'))
     }
 
     let aiReviewed = false
     let patchBlocked = !!report?.crossChecks?.unresolvedConflictIds.length
     while (!signal.aborted) {
+      const automaticAi = (options.withAi || options.aiHarder) && report && !aiReviewed
+      if (options.patchAll && patchBlocked && !automaticAi) {
+        stopAtBlocker(
+          selected.id,
+          aiReviewed ? 'AI verification did not pass.' : 'unresolved source conflicts.',
+        )
+        break nextPokemon
+      }
       const prompt = !report
         ? 's) skip > '
         : aiReviewed
           ? `p) patch${patchBlocked ? styleText('red', ' (blocked by AI review)') : ''}  s) skip > `
           : `p) patch${patchBlocked ? styleText('yellow', ' (blocked by source conflict)') : ''}  s) skip  a) ai pass > `
-      const input =
-        (options.withAi || options.aiHarder) && report && !aiReviewed ? 'a' : await io.read(prompt)
+      const input = automaticAi ? 'a' : options.patchAll ? 'p' : await io.read(prompt)
       if (signal.aborted || input === null) {
         stopped = true
         break nextPokemon
@@ -183,6 +205,10 @@ export async function reviewDataset(
               `Patch failed: ${error instanceof Error ? error.message : String(error)}`,
             ),
           )
+          if (options.patchAll) {
+            stopAtBlocker(selected.id, 'patch failed.')
+            break nextPokemon
+          }
           continue
         }
       }
@@ -237,6 +263,7 @@ export async function reviewDataset(
   io.write(
     `\n${signal.aborted || stopped ? 'Stopped' : 'Finished'}: ${patched} patched, ${unchanged} already up to date, ${skipped} skipped.`,
   )
+  return { blocked }
 }
 
 export async function main(
@@ -249,6 +276,7 @@ export async function main(
     options: {
       help: { type: 'boolean', short: 'h' },
       from: { type: 'string' },
+      'patch-all': { type: 'boolean' },
       'skip-unchanged': { type: 'boolean' },
       'with-ai': { type: 'boolean' },
       'ai-harder': { type: 'boolean' },
@@ -278,7 +306,7 @@ export async function main(
   terminal.on('SIGINT', stop)
   process.on('SIGINT', stop)
   try {
-    await reviewDataset(
+    const result = await reviewDataset(
       dataDirectory,
       {
         write: (message) => console.log(message),
@@ -291,6 +319,7 @@ export async function main(
       controller.signal,
       {
         from: values.from,
+        patchAll: values['patch-all'],
         skipUnchanged: values['skip-unchanged'],
         withAi: values['with-ai'],
         aiHarder: values['ai-harder'],
@@ -298,6 +327,7 @@ export async function main(
         refreshSources: values['refresh-sources'],
       },
     )
+    if (result.blocked) process.exitCode = 1
   } finally {
     terminal.close()
     process.off('SIGINT', stop)
