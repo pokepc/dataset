@@ -1,7 +1,9 @@
-import { readFile } from 'node:fs/promises'
+import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises'
+import { createHash, randomUUID } from 'node:crypto'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { resolve } from 'node:path'
 import { parseArgs } from 'node:util'
+import { createAvailabilityCrossChecker, formatCrossChecks } from './cross-check.ts'
 import {
   availabilityJson,
   bulbapediaUrl,
@@ -29,10 +31,15 @@ Print one row per concrete dataset game, folding DLC into its parent games.
 --patch        Update and format the Pokémon JSON; print added/removed games per field.
                Overrides --json and table output. Uses the repository's Oxfmt config.
 --with-ai      Verify input, source HTML, and output with GPT-5.6 Terra before proceeding.
+               Use its final candidate; explain differences from the parser in at most 25 words.
                Requires OPENAI_API_KEY (environment or repository .env); review goes to stderr.
 --html <file>  Parse a saved Bulbapedia species page instead of fetching it.
+--no-cross-check  Use Bulbapedia alone (also needed for fully offline --html runs).
+--refresh-sources Refresh cached Bulbapedia, PokéAPI, and targeted Serebii evidence.
 --help, -h     Show this help.
 
+Every lookup cross-checks cached PokéAPI encounters and collects targeted Serebii evidence.
+Unresolved source conflicts block patching until a successful AI review resolves them.
 Existing values are retained where the source is inconclusive. storableIn is
 always preserved. Files are modified only with --patch. No AI or API key is required
 unless --with-ai is supplied. Failed or uncertain AI reviews prevent output and patching.`
@@ -46,7 +53,39 @@ export async function readCollection<T>(root: string, collection: string): Promi
   return Promise.all(ids.map((id) => readJson<T>(resolve(root, collection, `${id}.json`))))
 }
 
-export async function fetchSpeciesPage(url: string, signal?: AbortSignal): Promise<string> {
+export async function fetchSpeciesPage(
+  url: string,
+  signal?: AbortSignal,
+  options: { cacheDir?: string; forceRefresh?: boolean } = {},
+): Promise<string> {
+  signal?.throwIfAborted()
+  const cacheDir =
+    options.cacheDir ??
+    process.env.BULBAPEDIA_CACHE_DIR ??
+    fileURLToPath(new URL('../../../.local/bulbapedia/', import.meta.url))
+  const key = createHash('sha256').update(url).digest('hex')
+  const cacheFile = resolve(cacheDir, `${key}.json`)
+  const hasLocations = (html: string) => /\bid=["']Game_locations["']/.test(html)
+  if (!options.forceRefresh) {
+    try {
+      const cached = JSON.parse(await readFile(cacheFile, 'utf8'))
+      signal?.throwIfAborted()
+      if (
+        cached?.version === 1 &&
+        cached.url === url &&
+        typeof cached.html === 'string' &&
+        hasLocations(cached.html)
+      )
+        return cached.html
+    } catch (error) {
+      signal?.throwIfAborted()
+      if ((error as NodeJS.ErrnoException).code !== 'ENOENT' && !(error instanceof SyntaxError))
+        throw error
+    }
+  }
+  const requestSignal = signal
+    ? AbortSignal.any([signal, AbortSignal.timeout(30_000)])
+    : AbortSignal.timeout(30_000)
   let response: Response
   try {
     response = await fetch(url, {
@@ -54,9 +93,7 @@ export async function fetchSpeciesPage(url: string, signal?: AbortSignal): Promi
         'User-Agent': 'PokePC-Dataset-Availability/1.0 (+https://github.com/pokepc/dataset)',
         Accept: 'text/html',
       },
-      signal: signal
-        ? AbortSignal.any([signal, AbortSignal.timeout(30_000)])
-        : AbortSignal.timeout(30_000),
+      signal: requestSignal,
     })
   } catch (error) {
     const reason = error instanceof Error ? error.message : String(error)
@@ -70,10 +107,20 @@ export async function fetchSpeciesPage(url: string, signal?: AbortSignal): Promi
       `Bulbapedia returned HTTP ${response.status}. Use --html with a saved species page if access is blocked.`,
     )
   const html = await response.text()
-  if (!/\bid=["']Game_locations["']/.test(html))
+  if (!hasLocations(html))
     throw new Error(
       'Bulbapedia did not return a species page with Game locations. Use --html with a saved species page.',
     )
+  requestSignal.throwIfAborted()
+  await mkdir(cacheDir, { recursive: true })
+  const temporary = `${cacheFile}.${randomUUID()}.tmp`
+  try {
+    await writeFile(temporary, JSON.stringify({ version: 1, url, html }), 'utf8')
+    requestSignal.throwIfAborted()
+    await rename(temporary, cacheFile)
+  } finally {
+    await rm(temporary, { force: true })
+  }
   return html
 }
 
@@ -89,6 +136,8 @@ export async function main(
       patch: { type: 'boolean' },
       'with-ai': { type: 'boolean' },
       html: { type: 'string' },
+      'no-cross-check': { type: 'boolean' },
+      'refresh-sources': { type: 'boolean' },
       help: { type: 'boolean', short: 'h' },
     },
   })
@@ -105,26 +154,40 @@ export async function main(
   const url = bulbapediaUrl(selected)
   const html = values.html
     ? await readFile(resolve(values.html), 'utf8')
-    : await fetchSpeciesPage(url)
-  const report = parseAvailability(
+    : await fetchSpeciesPage(url, undefined, { forceRefresh: values['refresh-sources'] })
+  let report = parseAvailability(
     html,
     selected,
     games,
     pokemon.filter((entry) => entry.dexNum === selected.dexNum),
   )
+  if (!values['no-cross-check']) {
+    console.error('Cross-checking cached PokéAPI encounters and targeted Serebii evidence…')
+    const crossCheck = createAvailabilityCrossChecker({
+      pokeApi: { forceRefresh: values['refresh-sources'] },
+      serebii: { forceRefresh: values['refresh-sources'] },
+    })
+    report = await crossCheck(
+      report,
+      games,
+      pokemon.filter((entry) => entry.dexNum === selected.dexNum),
+    )
+    console.error(formatCrossChecks(report))
+  }
   if (values.json && !values.patch)
     console.error(
       `Source: ${url}#Game_locations${values.html ? ` (saved HTML: ${resolve(values.html)})` : ''}`,
     )
   for (const warning of report.warnings) console.error(`Warning: ${warning}`)
   if (values['with-ai']) {
-    const { verifyAvailabilityWithAi, formatAiReview, VERIFICATION_MODEL } =
+    const { verifyAvailabilityWithAi, applyAiReview, formatAiReview, VERIFICATION_MODEL } =
       await import('./ai-verification.ts')
     console.error(`Verifying input and candidate JSON with ${VERIFICATION_MODEL}…`)
     const review = await verifyAvailabilityWithAi(report, html, games)
     console.error(formatAiReview(review))
     if (review.verdict !== 'pass')
       throw new Error(`AI verification ${review.verdict}; no output or patch was applied.`)
+    report = applyAiReview(report, review)
   }
   if (values.patch) {
     const { patchPokemonFile } = await import('./patch.ts')

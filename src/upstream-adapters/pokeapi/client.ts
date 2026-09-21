@@ -1,5 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
+import { setTimeout as delay } from 'node:timers/promises'
 
 export const DEFAULT_POKEAPI_BASE_URL = 'https://pokeapi.co/api/v2'
 export const DEFAULT_POKEAPI_CACHE_DIR = join(process.cwd(), '.local/pokeapi')
@@ -29,6 +30,9 @@ export type PokeApiFetchOptions = {
   cacheDir?: string
   forceRefresh?: boolean
   retries?: number
+  signal?: AbortSignal
+  timeoutMs?: number
+  minIntervalMs?: number
 }
 
 type PokeApiResourceListResponse = {
@@ -128,6 +132,7 @@ export async function fetchPokeApiJson(
   options: PokeApiFetchOptions = {},
 ): Promise<unknown> {
   const resolvedOptions = normalizePokeApiFetchOptions(options)
+  resolvedOptions.signal?.throwIfAborted()
   const url = resolvePokeApiUrl(pathnameOrUrl, resolvedOptions.baseUrl)
   const cacheEnabled = resolvedOptions.cache ?? process.env.POKEAPI_CACHE !== '0'
   const cachePath = pokeApiCachePath(url, resolvedOptions.cacheDir)
@@ -140,7 +145,7 @@ export async function fetchPokeApiJson(
     }
   }
 
-  const json = await fetchPokeApiJsonFromNetwork(url, resolvedOptions.retries)
+  const json = await fetchPokeApiJsonFromNetwork(url, resolvedOptions)
 
   if (cacheEnabled) {
     writeCachedPokeApiJson(cachePath, json)
@@ -151,7 +156,7 @@ export async function fetchPokeApiJson(
 
 function normalizePokeApiFetchOptions(
   options: string | PokeApiFetchOptions,
-): Required<PokeApiFetchOptions> {
+): Required<Omit<PokeApiFetchOptions, 'signal'>> & Pick<PokeApiFetchOptions, 'signal'> {
   const input = typeof options === 'string' ? { baseUrl: options } : options
 
   return {
@@ -160,6 +165,9 @@ function normalizePokeApiFetchOptions(
     cacheDir: input.cacheDir ?? process.env.POKEAPI_CACHE_DIR ?? DEFAULT_POKEAPI_CACHE_DIR,
     forceRefresh: input.forceRefresh ?? process.env.POKEAPI_REFRESH_CACHE === '1',
     retries: input.retries ?? 3,
+    signal: input.signal,
+    timeoutMs: input.timeoutMs ?? 30_000,
+    minIntervalMs: input.minIntervalMs ?? 0,
   }
 }
 
@@ -177,15 +185,27 @@ function resolvePokeApiUrl(pathnameOrUrl: string | URL, baseUrl: string): URL {
   return new URL(`${base}/${pathname}`)
 }
 
-async function fetchPokeApiJsonFromNetwork(url: URL, retries: number): Promise<unknown> {
+let lastRequestAt = 0
+
+async function fetchPokeApiJsonFromNetwork(
+  url: URL,
+  options: ReturnType<typeof normalizePokeApiFetchOptions>,
+): Promise<unknown> {
   let lastError: unknown
 
-  for (let attempt = 1; attempt <= retries; attempt += 1) {
+  for (let attempt = 1; attempt <= options.retries; attempt += 1) {
+    options.signal?.throwIfAborted()
+    await delay(Math.max(0, lastRequestAt + options.minIntervalMs - Date.now()), undefined, {
+      signal: options.signal,
+    })
+    lastRequestAt = Date.now()
     try {
+      const timeout = AbortSignal.timeout(options.timeoutMs)
       const response = await fetch(url, {
         headers: {
           accept: 'application/json',
         },
+        signal: options.signal ? AbortSignal.any([options.signal, timeout]) : timeout,
       })
 
       if (response.ok) {
@@ -201,10 +221,12 @@ async function fetchPokeApiJsonFromNetwork(url: URL, retries: number): Promise<u
         break
       }
     } catch (error) {
+      options.signal?.throwIfAborted()
       lastError = error
     }
 
-    await sleep(backoffMs(attempt))
+    if (attempt < options.retries)
+      await delay(backoffMs(attempt), undefined, { signal: options.signal })
   }
 
   throw lastError instanceof Error ? lastError : new Error(String(lastError))
@@ -254,14 +276,6 @@ function sanitizeCachePathSegment(value: string): string {
 
 function backoffMs(attempt: number): number {
   return Math.min(15_000, 750 * 2 ** Math.max(0, attempt - 1))
-}
-
-async function sleep(ms: number): Promise<void> {
-  if (ms <= 0) {
-    return
-  }
-
-  await new Promise((resolveSleep) => setTimeout(resolveSleep, ms))
 }
 
 function isPokeApiResourceListResponse(value: unknown): value is PokeApiResourceListResponse {

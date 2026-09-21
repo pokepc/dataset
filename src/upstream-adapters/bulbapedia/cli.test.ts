@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { execFileSync, spawnSync } from 'node:child_process'
 import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
@@ -6,10 +6,18 @@ import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { fetchSpeciesPage, main } from './cli'
 import { patchPokemonFile } from './patch'
-import { parseAvailability } from './availability'
+import { availabilityJson, parseAvailability } from './availability'
 import pikachu from '../../../data/pokemon/pikachu.json'
 import { format } from 'oxfmt'
 import * as aiVerification from './ai-verification'
+import * as crossChecks from './cross-check'
+
+let cacheDir: string
+beforeEach(() => {
+  cacheDir = mkdtempSync(join(tmpdir(), 'pokepc-bulbapedia-cache-'))
+  vi.stubEnv('BULBAPEDIA_CACHE_DIR', cacheDir)
+  vi.spyOn(crossChecks, 'createAvailabilityCrossChecker').mockReturnValue(async (report) => report)
+})
 
 const cli = fileURLToPath(new URL('./cli.ts', import.meta.url))
 const html = `<h1>Pikachu (Pokémon)</h1><h3 id="Game_locations">Game locations</h3>
@@ -17,7 +25,9 @@ const html = `<h1>Pikachu (Pokémon)</h1><h3 id="Game_locations">Game locations<
 
 afterEach(() => {
   vi.unstubAllGlobals()
+  vi.unstubAllEnvs()
   vi.restoreAllMocks()
+  rmSync(cacheDir, { recursive: true, force: true })
 })
 
 describe('availability CLI', () => {
@@ -26,10 +36,14 @@ describe('availability CLI', () => {
     try {
       const file = join(directory, 'page.html')
       writeFileSync(file, html)
-      const result = spawnSync(process.execPath, [cli, '25', '--json', '--html', file], {
-        cwd: directory,
-        encoding: 'utf8',
-      })
+      const result = spawnSync(
+        process.execPath,
+        [cli, '25', '--json', '--html', file, '--no-cross-check'],
+        {
+          cwd: directory,
+          encoding: 'utf8',
+        },
+      )
       expect(result.status).toBe(0)
       const json = JSON.parse(result.stdout)
       expect(json.id).toBe('pikachu')
@@ -105,6 +119,29 @@ describe('patching availability', () => {
   }
   const source = html.replace('</table>', '<tr><th>Blue</th><td>Unobtainable</td></tr></table>')
 
+  it('reuses and refreshes Bulbapedia pages through the CLI flags, while --html bypasses caching', async () => {
+    vi.spyOn(console, 'log').mockImplementation(() => {})
+    vi.spyOn(console, 'error').mockImplementation(() => {})
+    const fetch = vi.fn().mockImplementation(async () => new Response(source))
+    vi.stubGlobal('fetch', fetch)
+    await withDataset(async (directory, _file, sourceFile) => {
+      await main(['pikachu', '--json', '--no-cross-check'], directory)
+      await main(['pikachu', '--json', '--no-cross-check'], directory)
+      expect(fetch).toHaveBeenCalledOnce()
+      await main(['pikachu', '--json', '--no-cross-check', '--refresh-sources'], directory)
+      expect(fetch).toHaveBeenCalledTimes(2)
+      const files = readdirSync(cacheDir)
+      const cached = files.map((file) => readFileSync(join(cacheDir, file), 'utf8'))
+      await main(
+        ['pikachu', '--json', '--no-cross-check', '--refresh-sources', '--html', sourceFile],
+        directory,
+      )
+      expect(fetch).toHaveBeenCalledTimes(2)
+      expect(readdirSync(cacheDir)).toEqual(files)
+      expect(files.map((file) => readFileSync(join(cacheDir, file), 'utf8'))).toEqual(cached)
+    })
+  })
+
   async function withDataset(
     run: (directory: string, file: string, sourceFile: string) => Promise<void>,
   ) {
@@ -127,6 +164,50 @@ describe('patching availability', () => {
       rmSync(directory, { recursive: true, force: true })
     }
   }
+
+  it('runs cross-checks by default and blocks patching unresolved source conflicts', async () => {
+    const output = vi.spyOn(console, 'log').mockImplementation(() => {})
+    const diagnostics = vi.spyOn(console, 'error').mockImplementation(() => {})
+    const crossCheck = vi
+      .fn<ReturnType<typeof crossChecks.createAvailabilityCrossChecker>>()
+      .mockImplementation(async (report) => ({
+        ...report,
+        crossChecks: {
+          pokeApi: {
+            url: 'https://pokeapi.co/api/v2/pokemon/25/encounters/',
+            status: 'checked',
+            formSpecific: true,
+            encounters: [],
+          },
+          serebii: [],
+          warnings: [],
+          conflicts: [
+            {
+              id: 'pokeapi:rb-b',
+              gameId: 'rb-b',
+              message: 'PokéAPI encounter contradicts unavailable.',
+              evidence: 'Blue: Viridian Forest.',
+            },
+          ],
+          unresolvedConflictIds: ['pokeapi:rb-b'],
+        },
+      }))
+    vi.mocked(crossChecks.createAvailabilityCrossChecker).mockReturnValue(crossCheck)
+    await withDataset(async (directory, file, sourceFile) => {
+      const original = readFileSync(file, 'utf8')
+      await expect(main(['pikachu', '--patch', '--html', sourceFile], directory)).rejects.toThrow(
+        'Unresolved source conflicts',
+      )
+      expect(readFileSync(file, 'utf8')).toBe(original)
+      expect(output).not.toHaveBeenCalled()
+      expect(diagnostics.mock.calls.flat().join('\n')).toContain('Uncertain (rb-b)')
+      await main(['pikachu', '--json', '--html', sourceFile], directory)
+      expect(JSON.parse(String(output.mock.calls[0][0])).id).toBe('pikachu')
+      expect(crossCheck).toHaveBeenCalledTimes(2)
+      await main(['pikachu', '--json', '--html', sourceFile, '--no-cross-check'], directory)
+      expect(crossCheck).toHaveBeenCalledTimes(2)
+    })
+  })
 
   it.each([{ extra: [] }, { extra: ['--json'] }])(
     'patches and formats only the selected file and prints a summary (%j)',
@@ -173,6 +254,18 @@ describe('patching availability', () => {
     })
   })
 
+  it('sorts stored games by the dataset index when patching, without changing membership', async () => {
+    vi.spyOn(console, 'log').mockImplementation(() => {})
+    vi.spyOn(console, 'error').mockImplementation(() => {})
+    await withDataset(async (directory, file, sourceFile) => {
+      writeFileSync(file, JSON.stringify({ ...pokemon, storableIn: ['home', 'rb-b', 'rb-r'] }))
+      await main(['pikachu', '--patch', '--html', sourceFile], directory)
+      const patched = JSON.parse(readFileSync(file, 'utf8'))
+      expect(patched.storableIn).toEqual(['rb-r', 'rb-b', 'home'])
+      expect(patched.customField).toEqual(pokemon.customField)
+    })
+  })
+
   it('leaves the Pokémon untouched when the source is invalid', async () => {
     await withDataset(async (directory, file, sourceFile) => {
       const original = readFileSync(file, 'utf8')
@@ -206,7 +299,15 @@ describe('patching availability', () => {
           expect(report.pokemon).toEqual(pokemon)
           expect(html).toBe(source)
           expect(currentGames).toEqual(games)
-          return { verdict: 'pass', summary: 'Reviewed', checks: [], findings: [] }
+          return {
+            verdict: 'pass',
+            summary: 'Reviewed',
+            checks: [],
+            findings: [],
+            conflictResolutions: [],
+            candidateJson: availabilityJson(report),
+            differenceReason: null,
+          }
         })
       await main(['pikachu', '--with-ai', '--patch', '--json', '--html', sourceFile], directory)
       expect(verify).toHaveBeenCalledOnce()
@@ -226,7 +327,16 @@ describe('patching availability', () => {
       vi.spyOn(console, 'error').mockImplementation(() => {})
       const verify = vi.spyOn(aiVerification, 'verifyAvailabilityWithAi')
       if (verdict === 'api-error') verify.mockRejectedValue(new Error('OpenAI unavailable'))
-      else verify.mockResolvedValue({ verdict, summary: 'Needs review', checks: [], findings: [] })
+      else
+        verify.mockImplementation(async (report) => ({
+          verdict,
+          summary: 'Needs review',
+          checks: [],
+          findings: [],
+          conflictResolutions: [],
+          candidateJson: availabilityJson(report),
+          differenceReason: null,
+        }))
       await withDataset(async (directory, file, sourceFile) => {
         const original = readFileSync(file, 'utf8')
         await expect(
@@ -243,7 +353,15 @@ describe('patching availability', () => {
     vi.spyOn(console, 'error').mockImplementation(() => {})
     const verify = vi
       .spyOn(aiVerification, 'verifyAvailabilityWithAi')
-      .mockResolvedValue({ verdict: 'pass', summary: 'Reviewed', checks: [], findings: [] })
+      .mockImplementation(async (report) => ({
+        verdict: 'pass',
+        summary: 'Reviewed',
+        checks: [],
+        findings: [],
+        conflictResolutions: [],
+        candidateJson: availabilityJson(report),
+        differenceReason: null,
+      }))
     await withDataset(async (directory, _file, sourceFile) => {
       await main(['pikachu', '--json', '--html', sourceFile], directory)
       expect(verify).not.toHaveBeenCalled()
@@ -254,4 +372,48 @@ describe('patching availability', () => {
       expect(verify).toHaveBeenCalledOnce()
     })
   })
+
+  it.each([false, true])(
+    'uses the AI candidate for JSON and patch output (patch: %s)',
+    async (patch) => {
+      const output = vi.spyOn(console, 'log').mockImplementation(() => {})
+      const diagnostics = vi.spyOn(console, 'error').mockImplementation(() => {})
+      const reason = 'The encounter applies to another form; the selected form requires transfer.'
+      vi.spyOn(aiVerification, 'verifyAvailabilityWithAi').mockImplementation(async (report) =>
+        aiVerification.validateAiReview(
+          {
+            summary: 'Corrected form attribution.',
+            candidateJson: {
+              ...availabilityJson(report),
+              obtainableIn: ['home'],
+              transferOnlyIn: ['rb-r'],
+            },
+            differenceReason: reason,
+            checks: report.rows.map((row) => ({
+              gameId: row.game.id,
+              result: row.basis === 'dataset' ? 'retained' : 'accurate',
+              evidence: 'Fixture form annotation supports the final classification.',
+            })),
+            findings: [],
+            conflictResolutions: [],
+          },
+          report,
+        ),
+      )
+      await withDataset(async (directory, file, sourceFile) => {
+        const original = readFileSync(file, 'utf8')
+        await main(
+          ['pikachu', '--with-ai', '--json', '--html', sourceFile, ...(patch ? ['--patch'] : [])],
+          directory,
+        )
+        const result = JSON.parse(
+          patch ? readFileSync(file, 'utf8') : String(output.mock.calls[0][0]),
+        )
+        expect(result.obtainableIn).toEqual(['home'])
+        expect(result.transferOnlyIn).toEqual(['rb-r'])
+        expect(diagnostics.mock.calls.flat().join('\n')).toContain(`AI difference: ${reason}`)
+        if (!patch) expect(readFileSync(file, 'utf8')).toBe(original)
+      })
+    },
+  )
 })

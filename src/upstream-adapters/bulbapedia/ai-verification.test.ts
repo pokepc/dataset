@@ -4,9 +4,15 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import OpenAI from 'openai'
 import pikachu from '../../../data/pokemon/pikachu.json'
-import { availabilityJson, parseAvailability } from './availability'
+import {
+  availabilityJson,
+  bulbapediaUrl,
+  parseAvailability,
+  type AvailabilityReport,
+} from './availability'
 import {
   extractVerificationHtml,
+  applyAiReview,
   formatAiReview,
   readVerificationApiKey,
   validateAiReview,
@@ -26,7 +32,14 @@ const html = `<h1>Pikachu (Pokémon)</h1><div id="mw-content-text"><div class="m
   <h3 id="Stats">Stats</h3><p>Stat noise.</p><h3 id="Learnset">Learnset</h3><p>Move noise.</p>
   <h2>In side games</h2><h3>Pokémon GO</h3><p>GO context.</p>
   </div></div>`
-const pokemon = { ...pikachu, reviewContext: { fullRecord: true } }
+const pokemon = {
+  ...pikachu,
+  obtainableIn: ['home'],
+  transferOnlyIn: [],
+  eventOnlyIn: [],
+  storableIn: ['home', 'rb-r'],
+  reviewContext: { fullRecord: true },
+}
 const games = [
   {
     id: 'rb-r',
@@ -41,6 +54,8 @@ const games = [
 ]
 const report = parseAvailability(html, pokemon, games)
 const review = {
+  candidateJson: availabilityJson(report),
+  differenceReason: null,
   summary: 'The parsed route agrees with the supplied HTML; HOME is retained.',
   checks: [
     { gameId: 'rb-r', result: 'accurate', evidence: 'Red: Viridian Forest.' },
@@ -51,6 +66,7 @@ const review = {
     },
   ],
   findings: [],
+  conflictResolutions: [],
 }
 
 function clientFor(result: unknown = review, overrides: Record<string, unknown> = {}) {
@@ -77,6 +93,112 @@ function clientFor(result: unknown = review, overrides: Record<string, unknown> 
   )
   return { client: new OpenAI({ apiKey: 'test-key', fetch: request, maxRetries: 0 }), request }
 }
+
+describe('source conflict review', () => {
+  const source = html.replace('Viridian Forest</a>', 'Trade</a>')
+  const conflictReport: AvailabilityReport = {
+    ...parseAvailability(source, pokemon, games),
+    crossChecks: {
+      pokeApi: {
+        url: 'https://pokeapi.co/api/v2/pokemon/25/encounters/',
+        status: 'checked',
+        formSpecific: true,
+        encounters: [
+          {
+            gameId: 'rb-r',
+            versionId: 1,
+            version: 'red',
+            location: 'viridian-forest',
+            methods: [{ name: 'walk', conditions: [] }],
+          },
+        ],
+      },
+      serebii: [
+        {
+          url: 'https://www.serebii.net/pokedex/025.shtml',
+          gameIds: ['rb-r'],
+          html: '<table><tr><td>Red</td><td>Viridian Forest</td></tr></table>',
+        },
+      ],
+      conflicts: [
+        {
+          id: 'pokeapi:rb-r',
+          gameId: 'rb-r',
+          message: 'PokéAPI encounter contradicts transfer-only.',
+          evidence: 'Red: walk in Viridian Forest.',
+        },
+      ],
+      unresolvedConflictIds: ['pokeapi:rb-r'],
+      warnings: [],
+    },
+  }
+  const resolution = {
+    conflictId: 'pokeapi:rb-r',
+    result: 'resolved',
+    evidence:
+      'The supplied location anchor contradicts its Trade label; PokéAPI and Serebii identify a wild encounter in Red.',
+    sourceUrls: [
+      bulbapediaUrl(pokemon),
+      conflictReport.crossChecks!.pokeApi.url!,
+      conflictReport.crossChecks!.serebii[0].url,
+    ],
+  }
+  const corrected = {
+    ...review,
+    candidateJson: availabilityJson(report),
+    differenceReason:
+      'PokéAPI and Serebii confirm the wild encounter behind the mislabeled Bulbapedia location link.',
+    conflictResolutions: [resolution],
+  }
+
+  it('supplies all source evidence in one structured AI request and applies a resolved correction', async () => {
+    const { client, request } = clientFor(corrected)
+    const result = await verifyAvailabilityWithAi(conflictReport, source, games, client)
+    expect(result.verdict).toBe('pass')
+    const body = JSON.parse(String(request.mock.calls[0][1]?.body))
+    expect(JSON.parse(body.input[0].content).additionalSources).toEqual(conflictReport.crossChecks)
+    expect(body.text.format.schema.required).toContain('conflictResolutions')
+    expect(request).toHaveBeenCalledOnce()
+    const updated = applyAiReview(conflictReport, result)
+    expect(updated.crossChecks?.unresolvedConflictIds).toEqual([])
+    expect(availabilityJson(updated).obtainableIn).toContain('rb-r')
+    expect(conflictReport.crossChecks?.unresolvedConflictIds).toEqual(['pokeapi:rb-r'])
+    expect(formatAiReview(result)).toContain('pokeapi:rb-r: resolved')
+  })
+
+  it('derives uncertain from an unresolved conflict even when all game checks claim accuracy', () => {
+    const result = validateAiReview(
+      {
+        ...review,
+        candidateJson: availabilityJson(conflictReport),
+        conflictResolutions: [
+          {
+            ...resolution,
+            result: 'uncertain',
+            evidence: 'The conflicting source claims cannot be reconciled.',
+          },
+        ],
+      },
+      conflictReport,
+    )
+    expect(result.verdict).toBe('uncertain')
+    expect(() => applyAiReview(conflictReport, result)).toThrow('did not pass')
+  })
+
+  it.each([
+    [],
+    [resolution, resolution],
+    [{ ...resolution, conflictId: 'invented' }],
+    [{ ...resolution, evidence: ' ' }],
+    [{ ...resolution, sourceUrls: [] }],
+    [{ ...resolution, sourceUrls: [bulbapediaUrl(pokemon)] }],
+    [{ ...resolution, sourceUrls: [...resolution.sourceUrls, 'https://example.com/invented'] }],
+  ])('rejects incomplete or unsupported conflict resolutions: %j', (...entries) => {
+    expect(() =>
+      validateAiReview({ ...corrected, conflictResolutions: entries }, conflictReport),
+    ).toThrow()
+  })
+})
 
 describe('AI evidence', () => {
   it('retains important HTML independently of the parsed rows and removes unrelated sections', () => {
@@ -136,9 +258,122 @@ describe('AI evidence', () => {
 })
 
 describe('AI verdict validation', () => {
+  const correction = {
+    ...review,
+    candidateJson: { ...review.candidateJson, obtainableIn: ['home'], transferOnlyIn: ['rb-r'] },
+    differenceReason: 'The encounter belongs to another form; the selected form requires transfer.',
+    findings: [
+      {
+        scope: 'parsing',
+        severity: 'warning',
+        gameId: 'rb-r',
+        field: 'obtainableIn',
+        message: 'Corrected form attribution.',
+        evidence: 'The encounter annotation names another form.',
+      },
+    ],
+  }
+
+  it('accepts an evidenced correction and uses the AI candidate without changing the input record', async () => {
+    const { client, request } = clientFor(correction)
+    const result = await verifyAvailabilityWithAi(report, html, games, client)
+    expect(result.verdict).toBe('pass')
+    expect(result.candidateJson).toEqual(correction.candidateJson)
+    const updated = applyAiReview(report, result)
+    expect(availabilityJson(updated)).toEqual(correction.candidateJson)
+    expect(updated.pokemon).toBe(report.pokemon)
+    expect(updated.rows[0]).toMatchObject({ status: 'transferOnlyIn', basis: 'ai' })
+    expect(report.rows[0].status).toBe('obtainableIn')
+    expect(formatAiReview(result)).toContain(`AI difference: ${correction.differenceReason}`)
+    const body = JSON.parse(String(request.mock.calls[0][1]?.body))
+    expect(body.text.format.schema.required).toContain('candidateJson')
+    expect(body.text.format.schema.required).toContain('differenceReason')
+  })
+
+  it('allows 25 words but rejects longer, absent, empty, or unnecessary explanations', () => {
+    expect(
+      validateAiReview(
+        { ...correction, differenceReason: Array(25).fill('word').join(' ') },
+        report,
+      ).verdict,
+    ).toBe('pass')
+    for (const differenceReason of [null, '', ' ', Array(26).fill('word').join(' ')]) {
+      expect(() => validateAiReview({ ...correction, differenceReason }, report)).toThrow()
+    }
+    expect(() => validateAiReview({ ...review, differenceReason: 'No changes.' }, report)).toThrow(
+      'difference reason',
+    )
+  })
+
+  it('normalizes ordering without calling it an AI difference', () => {
+    const result = validateAiReview(
+      {
+        ...review,
+        candidateJson: {
+          ...review.candidateJson,
+          obtainableIn: [...review.candidateJson.obtainableIn].reverse(),
+          storableIn: [...review.candidateJson.storableIn].reverse(),
+        },
+      },
+      report,
+    )
+    expect(result.candidateJson).toEqual(review.candidateJson)
+    expect(result.differenceReason).toBeNull()
+  })
+
+  it.each([
+    { id: 'wrong-pokemon' },
+    { nid: 'wrong-nid' },
+    { obtainableIn: ['invented-game'] },
+    { obtainableIn: ['rb-r', 'rb-r'] },
+    { transferOnlyIn: ['rb-r'] },
+    { storableIn: ['rb-r'] },
+    { unexpectedProperty: true },
+  ])('rejects an invalid AI candidate: %j', (changes) => {
+    expect(() =>
+      validateAiReview(
+        { ...review, candidateJson: { ...review.candidateJson, ...changes } },
+        report,
+      ),
+    ).toThrow()
+  })
+
+  it('rejects female Gen 1 corrections and corrections without an accurate evidence check', () => {
+    const femaleReport = parseAvailability(html, { ...pokemon, isFemaleForm: true }, games)
+    expect(() => validateAiReview(review, femaleReport)).toThrow('Generation I')
+    for (const result of ['retained', 'uncertain', 'inaccurate']) {
+      expect(() =>
+        validateAiReview(
+          {
+            ...correction,
+            checks: [{ ...review.checks[0], result }, review.checks[1]],
+          },
+          report,
+        ),
+      ).toThrow()
+    }
+    expect(() =>
+      applyAiReview(report, { ...validateAiReview(review, report), verdict: 'fail' }),
+    ).toThrow('did not pass')
+  })
+
+  it('does not allow AI to invent changes to groups without a concrete game row', () => {
+    const groupReport = { ...report, gameOrder: ['rb', ...report.gameOrder] }
+    expect(() =>
+      validateAiReview(
+        {
+          ...correction,
+          candidateJson: { ...correction.candidateJson, obtainableIn: ['home', 'rb'] },
+        },
+        groupReport,
+      ),
+    ).toThrow('requires an accurate check')
+  })
+
   it('requires the AI to verify female Gen 1 exclusions against the explicit rule', async () => {
     const femaleReport = parseAvailability(html, { ...pokemon, isFemaleForm: true }, games)
-    const { client, request } = clientFor(review)
+    const femaleReview = { ...review, candidateJson: availabilityJson(femaleReport) }
+    const { client, request } = clientFor(femaleReview)
     expect((await verifyAvailabilityWithAi(femaleReport, html, games, client)).verdict).toBe('pass')
     const body = JSON.parse(String(request.mock.calls[0][1]?.body))
     expect(body.instructions).toContain('isFemaleForm=true')
@@ -148,7 +383,7 @@ describe('AI verdict validation', () => {
     expect(() =>
       validateAiReview(
         {
-          ...review,
+          ...femaleReview,
           checks: [{ ...review.checks[0], result: 'retained' }, review.checks[1]],
         },
         femaleReport,

@@ -3,10 +3,25 @@ import pikachu from '../../../data/pokemon/pikachu.json'
 import femalePikachu from '../../../data/pokemon/pikachu-f.json'
 import nidoranFemale from '../../../data/pokemon/nidoranf.json'
 import raichu from '../../../data/pokemon/raichu.json'
+import femaleRaichu from '../../../data/pokemon/raichu-f.json'
 import alolanRaichu from '../../../data/pokemon/raichu-alola.json'
+import sandshrew from '../../../data/pokemon/sandshrew.json'
+import alolanSandshrew from '../../../data/pokemon/sandshrew-alola.json'
 import megaCharizard from '../../../data/pokemon/charizard-mega-x.json'
 import magearna from '../../../data/pokemon/magearna.json'
 import originalMagearna from '../../../data/pokemon/magearna-original.json'
+import bulbasaur from '../../../data/pokemon/bulbasaur.json'
+import squirtle from '../../../data/pokemon/squirtle.json'
+import arcanine from '../../../data/pokemon/arcanine.json'
+import hisuianArcanine from '../../../data/pokemon/arcanine-hisui.json'
+import hisuianGrowlithe from '../../../data/pokemon/growlithe-hisui.json'
+import meowth from '../../../data/pokemon/meowth.json'
+import alolanMeowth from '../../../data/pokemon/meowth-alola.json'
+import galarianMeowth from '../../../data/pokemon/meowth-galar.json'
+import mrMime from '../../../data/pokemon/mrmime.json'
+import galarianMrMime from '../../../data/pokemon/mrmime-galar.json'
+import mimeJr from '../../../data/pokemon/mimejr.json'
+import mrRime from '../../../data/pokemon/mrrime.json'
 import { pokemonSchema } from '../../lib/schemas'
 import {
   availabilityJson,
@@ -34,6 +49,8 @@ const games = [
   game('sm', 'Sun & Moon', null, 'set'),
   game('sm-s', 'Sun', 'sm'),
   game('sm-m', 'Moon', 'sm'),
+  game('usum-us', 'Ultra Sun', 'usum'),
+  game('usum-um', 'Ultra Moon', 'usum'),
   game('swsh-sw', 'Sword', 'swsh'),
   game('swsh-sh', 'Shield', 'swsh'),
   game('swsh-islearmor', 'The Isle of Armor', 'swsh', 'dlc'),
@@ -63,6 +80,36 @@ const reportFor = (rows: string, pokemon: AvailabilityPokemon = pikachu) =>
   parseAvailability(page(rows, pokemon.refs.bulbapedia), pokemon, games, [pokemon])
 
 describe('identity and game normalization', () => {
+  it.each(['obtainableIn', 'transferOnlyIn', 'eventOnlyIn', 'storableIn'] as const)(
+    'sorts %s by the complete game index while retaining unresolved IDs',
+    (field) => {
+      const orderedGames = [
+        game('swsh-sw', 'Sword', 'swsh'),
+        game('swsh-islearmor', 'The Isle of Armor', 'swsh', 'dlc'),
+        game('home', 'HOME'),
+        game('rb-r', 'Red', 'rb', 'game', 1),
+      ]
+      const ids = ['unresolved-game', 'rb-r', 'home', 'swsh-islearmor', 'swsh-sw']
+      const pokemon = {
+        ...pikachu,
+        obtainableIn: [],
+        transferOnlyIn: [],
+        eventOnlyIn: [],
+        storableIn: [],
+        [field]: ids,
+      }
+      const report = parseAvailability(page(row(['Red'], 'Unknown method')), pokemon, orderedGames)
+      expect(availabilityJson(report)[field]).toEqual([
+        'swsh-sw',
+        'swsh-islearmor',
+        'home',
+        'rb-r',
+        'unresolved-game',
+      ])
+      expect(pokemon[field]).toEqual(ids)
+    },
+  )
+
   it.each(['pikachu', ' PIKACHU ', '0025', '25', '025'])('resolves %s', (input) => {
     expect(resolvePokemon(input, [pikachu, alolanRaichu]).id).toBe('pikachu')
   })
@@ -70,10 +117,15 @@ describe('identity and game normalization', () => {
     expect(resolvePokemon('26-alola', [raichu, alolanRaichu]).id).toBe('raichu-alola')
     expect(() => resolvePokemon('26-imaginary', [raichu, alolanRaichu])).toThrow('Unknown Pokémon')
   })
-  it('uses the stored reference, including punctuation', () => {
-    expect(
-      bulbapediaUrl({ ...pikachu, refs: { ...pikachu.refs, bulbapedia: 'Mr. Mime' } }),
-    ).toContain('/Mr._Mime_(Pok%C3%A9mon)')
+  it.each([
+    { pokemon: mrMime, slug: 'Mr._Mime' },
+    { pokemon: galarianMrMime, slug: 'Mr._Mime' },
+    { pokemon: mimeJr, slug: 'Mime_Jr.' },
+    { pokemon: mrRime, slug: 'Mr._Rime' },
+  ])('uses the actual punctuated species reference for $pokemon.id', ({ pokemon, slug }) => {
+    expect(bulbapediaUrl(pokemon)).toBe(
+      `https://bulbapedia.bulbagarden.net/wiki/${slug}_(Pok%C3%A9mon)`,
+    )
   })
   it('maps paired games and DLC to concrete IDs without confusing Japanese Blue', () => {
     const resolve = createGameResolver(games)
@@ -86,6 +138,36 @@ describe('identity and game normalization', () => {
 })
 
 describe('location parsing and classification', () => {
+  it.each([bulbasaur, squirtle])(
+    'includes the Isle of Armor gift for $id despite its Gigantamax Factor note',
+    (pokemon) => {
+      // Match the nested table and small-print attribute used in the species pages.
+      const gift = `<table><tbody><tr><td>
+        <a href="/wiki/Master_Dojo">Master Dojo</a>
+        (<a href="/wiki/List_of_in-game_event_Pokémon_in_Pokémon_Sword_and_Shield#${pokemon.names.eng}">Only one</a>;
+        <small><b><a href="/wiki/Gigantamax#Gigantamax_Factor">Gigantamax Factor</a></b></small>)
+        </td></tr></tbody></table>`
+      const report = reportFor(row(['Sword', 'Shield'], 'Trade') + row(['Expansion Pass'], gift), {
+        ...pokemon,
+        obtainableIn: [],
+        transferOnlyIn: ['swsh-sw', 'swsh-sh'],
+        eventOnlyIn: [],
+      })
+      const json = availabilityJson(report)
+      for (const id of ['swsh-sw', 'swsh-sh']) {
+        const entry = report.rows.find((entry) => entry.game.id === id)!
+        expect(entry).toMatchObject({ status: 'obtainableIn', basis: 'source' })
+        expect(entry.methods).toContainEqual({
+          text: '[Expansion Pass] Master Dojo (Only one; Gigantamax Factor)',
+          status: 'obtainableIn',
+        })
+        expect(json.obtainableIn).toContain(id)
+        expect(json.transferOnlyIn).not.toContain(id)
+        expect(json.eventOnlyIn).not.toContain(id)
+      }
+    },
+  )
+
   it('splits paired headers, folds DLC, deduplicates and ignores event history tables', () => {
     const report = reportFor(
       row(['Sword', 'Shield'], 'Trade') +
@@ -136,7 +218,7 @@ describe('location parsing and classification', () => {
     const report = reportFor(row(['Red'], 'Unobtainable'))
     const json = availabilityJson(report)
     expect(json.obtainableIn).not.toContain('rb-r')
-    expect(json.storableIn).toEqual(pikachu.storableIn)
+    expect([...json.storableIn].sort()).toEqual([...pikachu.storableIn].sort())
     expect(
       pokemonSchema
         .pick({
@@ -190,6 +272,151 @@ describe('location parsing and classification', () => {
 })
 
 describe('form boundaries', () => {
+  const nested = (methods: string) => `<table><tbody><tr><td>${methods}</td></tr></tbody></table>`
+  it.each([
+    'Kantonian/Hisuian Forms',
+    'Kantonian and Hisuian Forms',
+    'Kantonian, Hisuian Forms',
+    'Kantonian &amp; Hisuian Forms',
+  ])('recognizes the SV DLC evolution for both Arcanine forms labeled %s', (label) => {
+    const html = page(
+      row(['Scarlet', 'Violet'], nested('Pokémon HOME <small>(<b>Hisuian Form</b>)</small>')) +
+        row(
+          ['The Hidden Treasure of Area Zero'],
+          nested(
+            `<a href="/wiki/Evolution">Evolve</a> <a href="/wiki/Growlithe_(Pokémon)">Growlithe</a> <small>(<b>${label}</b>)</small>`,
+          ),
+        ),
+      'Arcanine',
+    )
+    for (const pokemon of [arcanine, hisuianArcanine]) {
+      const report = parseAvailability(
+        html,
+        { ...pokemon, obtainableIn: [], transferOnlyIn: ['sv-s', 'sv-v'], eventOnlyIn: [] },
+        games,
+        [arcanine, hisuianArcanine],
+      )
+      const json = availabilityJson(report)
+      expect(json.obtainableIn).toEqual(['sv-s', 'sv-v'])
+      expect(json.transferOnlyIn).toEqual([])
+      expect(json.eventOnlyIn).toEqual([])
+      expect([...json.storableIn].sort()).toEqual([...pokemon.storableIn].sort())
+      for (const id of ['sv-s', 'sv-v']) {
+        const entry = report.rows.find((entry) => entry.game.id === id)!
+        expect(entry).toMatchObject({ status: 'obtainableIn', basis: 'source' })
+        expect(entry.methods).toContainEqual({
+          text: `[The Hidden Treasure of Area Zero] Evolve Growlithe (${label.replace('&amp;', '&')})`,
+          status: 'obtainableIn',
+        })
+      }
+    }
+  })
+
+  it('recognizes Perrin’s Hisuian Growlithe gift as ordinary SV DLC acquisition', () => {
+    const report = reportFor(
+      row(['Scarlet', 'Violet'], 'Pokémon HOME <small>(<b>Hisuian Form</b>)</small>') +
+        row(
+          ['The Hidden Treasure of Area Zero'],
+          'Gift from <a href="/wiki/Perrin">Perrin</a> <small>(<b>Hisuian Form</b>)</small>',
+        ),
+      { ...hisuianGrowlithe, obtainableIn: [], transferOnlyIn: ['sv-s', 'sv-v'], eventOnlyIn: [] },
+    )
+    const json = availabilityJson(report)
+    expect(json.obtainableIn).toEqual(['sv-s', 'sv-v'])
+    expect(json.transferOnlyIn).toEqual([])
+    expect(json.eventOnlyIn).toEqual([])
+  })
+
+  it('applies grouped labels only to the named forms, not every regional form', () => {
+    const html = page(
+      row(['Scarlet', 'Violet'], 'Gift <small>(<b>Kantonian/Alolan Forms</b>)</small>'),
+      'Meowth',
+    )
+    for (const pokemon of [meowth, alolanMeowth, galarianMeowth]) {
+      const report = parseAvailability(
+        html,
+        { ...pokemon, obtainableIn: [], transferOnlyIn: ['sv-s', 'sv-v'], eventOnlyIn: [] },
+        games,
+        [meowth, alolanMeowth, galarianMeowth],
+      )
+      const included = pokemon !== galarianMeowth
+      expect(availabilityJson(report).obtainableIn).toEqual(included ? ['sv-s', 'sv-v'] : [])
+      for (const id of ['sv-s', 'sv-v']) {
+        expect(report.rows.find((entry) => entry.game.id === id)).toMatchObject({
+          status: included ? 'obtainableIn' : 'transferOnlyIn',
+          basis: included ? 'source' : 'dataset',
+        })
+      }
+    }
+  })
+
+  it.each([raichu, femaleRaichu])(
+    'keeps Kantonian $id transfer-only in SM while allowing its USUM Ultra Space evolution',
+    (pokemon) => {
+      const report = parseAvailability(
+        page(
+          row(
+            ['Sun', 'Moon'],
+            nested(
+              '<a href="/wiki/Trade">Trade</a> <small>(<b>Kantonian Form</b>)</small><br>' +
+                '<a href="/wiki/Evolution">Evolve</a> <a href="/wiki/Pikachu_(Pokémon)">Pikachu</a> <small>(<b>Alolan Form</b>)</small>',
+            ),
+          ) +
+            row(
+              ['Ultra Sun', 'Ultra Moon'],
+              nested(
+                'Evolve Pikachu in <a href="/wiki/Ultra_Space">Ultra Space</a> <small>(<b>Kantonian Form</b>)</small><br>' +
+                  'Evolve Pikachu <small>(<b>Alolan Form</b>)</small>',
+              ),
+            ),
+          'Raichu',
+        ),
+        { ...pokemon, obtainableIn: ['sm-s', 'sm-m'], transferOnlyIn: [], eventOnlyIn: [] },
+        games,
+        [raichu, femaleRaichu, alolanRaichu],
+      )
+      const json = availabilityJson(report)
+      expect(json.obtainableIn).toEqual(['usum-us', 'usum-um'])
+      expect(json.transferOnlyIn).toEqual(['sm-s', 'sm-m'])
+      for (const id of ['sm-s', 'sm-m']) {
+        expect(report.rows.find((row) => row.game.id === id)).toMatchObject({
+          status: 'transferOnlyIn',
+          basis: 'source',
+          methods: [{ text: 'Trade (Kantonian Form)', status: 'transferOnlyIn' }],
+        })
+      }
+    },
+  )
+
+  it('does not give Kantonian Sandshrew the Alolan encounter in Moon', () => {
+    const html = page(
+      row(['Sun'], nested('Trade, <a href="/wiki/Pokémon_Bank">Pokémon Bank</a>')) +
+        row(
+          ['Moon'],
+          nested(
+            '<a href="/wiki/Mount_Lanakila">Mount Lanakila</a>, <a href="/wiki/Tapu_Village">Tapu Village</a> <small>(<b>Alolan Form</b>)</small><br>' +
+              '<a href="/wiki/Pokémon_Bank">Pokémon Bank</a> <small>(<b>Kantonian Form</b>)</small>',
+          ),
+        ),
+      'Sandshrew',
+    )
+    const siblings = [sandshrew, alolanSandshrew]
+    const report = parseAvailability(
+      html,
+      { ...sandshrew, obtainableIn: ['sm-s', 'sm-m'], transferOnlyIn: [], eventOnlyIn: [] },
+      games,
+      siblings,
+    )
+    expect(availabilityJson(report).obtainableIn).toEqual([])
+    expect(availabilityJson(report).transferOnlyIn).toEqual(['sm-s', 'sm-m'])
+    const alola = parseAvailability(html, alolanSandshrew, games, siblings)
+    expect(alola.rows.find((row) => row.game.id === 'sm-m')).toMatchObject({
+      status: 'obtainableIn',
+      basis: 'source',
+      methods: [{ text: 'Mount Lanakila, Tapu Village (Alolan Form)', status: 'obtainableIn' }],
+    })
+  })
+
   it.each([location, 'Trade', '<a href="#In_events">Event</a>'])(
     'excludes Gen 1 acquisition for female forms regardless of species method: %s',
     (method) => {
@@ -207,7 +434,7 @@ describe('form boundaries', () => {
           expect(json[field]).not.toContain(id)
       }
       expect(json.obtainableIn).toContain('gs-g')
-      expect(json.storableIn).toEqual(femalePikachu.storableIn)
+      expect([...json.storableIn].sort()).toEqual([...femalePikachu.storableIn].sort())
       expect(formatAvailabilityTable(report)).toContain('Female forms do not exist')
     },
   )

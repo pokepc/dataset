@@ -1,9 +1,15 @@
 import { load, type CheerioAPI } from 'cheerio'
-import { stripVTControlCharacters } from 'node:util'
+import { stripVTControlCharacters, styleText } from 'node:util'
+import { sortStringsInGivenOrder } from '../../utils/utils-internal.ts'
+import type { AvailabilityCrossChecks } from './cross-check.ts'
 
 export const availabilityFields = ['obtainableIn', 'transferOnlyIn', 'eventOnlyIn'] as const
 type AvailabilityField = (typeof availabilityFields)[number]
 export type AvailabilityStatus = AvailabilityField | 'unavailable' | 'unknown'
+export type AvailabilityJson = Pick<
+  AvailabilityPokemon,
+  'id' | 'nid' | AvailabilityField | 'storableIn'
+>
 type Selection = ReturnType<CheerioAPI>
 
 export type AvailabilityPokemon = Pick<
@@ -11,6 +17,7 @@ export type AvailabilityPokemon = Pick<
   | 'id'
   | 'nid'
   | 'dexNum'
+  | 'gen'
   | 'isDefault'
   | 'isFemaleForm'
   | 'isBattleOnlyForm'
@@ -25,7 +32,8 @@ export type AvailabilityPokemon = Pick<
 export type AvailabilityGame = Pick<
   Pkds.Game,
   'id' | 'name' | 'gen' | 'type' | 'gameSet' | 'gameSuperSet'
->
+> &
+  Partial<Pick<Pkds.Game, 'pokeApiGameVersionId' | 'pokeApiGameVersionGroupId'>>
 
 export type LocationMethod = {
   text: string
@@ -35,14 +43,17 @@ export type LocationMethod = {
 export type AvailabilityRow = {
   game: AvailabilityGame
   status: AvailabilityStatus
-  basis: 'source' | 'rule' | 'dataset' | 'unknown'
+  basis: 'source' | 'rule' | 'dataset' | 'unknown' | 'ai'
   methods: LocationMethod[]
   storable: boolean
 }
 export type AvailabilityReport = {
   pokemon: AvailabilityPokemon
+  gameOrder: string[]
   rows: AvailabilityRow[]
   warnings: string[]
+  candidateJson?: AvailabilityJson
+  crossChecks?: AvailabilityCrossChecks
 }
 
 export function normalizeName(value: string): string {
@@ -137,6 +148,17 @@ function normalizeForm(value: string): string {
   return normalizeName(value.replace(/\bforme?s?\b/gi, ''))
 }
 
+function matchesFormLabel(label: string, aliases: Set<string>, knownForms: Set<string>): boolean {
+  if (aliases.has(normalizeForm(label))) return true
+  // Shared suffixes such as "Kantonian/Hisuian Forms" name several specific forms.
+  const forms = label.split(/\s*(?:\/|,|&|\band\b)\s*/i).map(normalizeForm)
+  return (
+    forms.length > 1 &&
+    forms.every((form) => knownForms.has(form)) &&
+    forms.some((form) => aliases.has(form))
+  )
+}
+
 function classifyMethod(fragment: Selection): AvailabilityStatus {
   const text = cleanText(fragment.text())
   const links = fragment
@@ -207,11 +229,13 @@ function readMethods(
       .map((node) => cleanText($(node).text()).replace(/^\(|\)$/g, ''))
       .filter(
         (label) =>
-          knownForms.has(normalizeForm(label)) ||
-          /\b(?:forms?|formes?|cap|cosplay|gigantamax|original color)\b/i.test(label),
+          // The Gigantamax Factor is a gift attribute, not the recipient's current form.
+          !/^gigantamax factor$/i.test(label) &&
+          (knownForms.has(normalizeForm(label)) ||
+            /\b(?:forms?|formes?|cap|cosplay|gigantamax|original color)\b/i.test(label)),
       )
     const allForms = labels.some((label) => /^(?:all|both) forms?$/i.test(label))
-    const matches = labels.some((label) => aliases.has(normalizeForm(label)))
+    const matches = labels.some((label) => matchesFormLabel(label, aliases, knownForms))
     if (labels.length && !allForms && !matches) return []
     // A species table is not evidence for every alternate/battle-only form.
     if (
@@ -367,34 +391,34 @@ export function parseAvailability(
     warnings.push(
       `Source-only game/service labels not in the dataset: ${[...unmapped].join(', ')}.`,
     )
-  return { pokemon, rows, warnings }
+  return { pokemon, gameOrder: games.map((game) => game.id), rows, warnings }
 }
 
 /** Candidate fields only; unresolved games and storage retain their existing values. */
-export function availabilityJson(
-  report: AvailabilityReport,
-): Pick<AvailabilityPokemon, 'id' | 'nid' | AvailabilityField | 'storableIn'> {
+export function availabilityJson(report: AvailabilityReport): AvailabilityJson {
   const { pokemon, rows } = report
+  const candidate = report.candidateJson ?? pokemon
   const result = {
-    id: pokemon.id,
-    nid: pokemon.nid,
-    obtainableIn: [...pokemon.obtainableIn],
-    transferOnlyIn: [...pokemon.transferOnlyIn],
-    eventOnlyIn: [...pokemon.eventOnlyIn],
-    storableIn: [...pokemon.storableIn],
+    id: candidate.id,
+    nid: candidate.nid,
+    obtainableIn: [...candidate.obtainableIn],
+    transferOnlyIn: [...candidate.transferOnlyIn],
+    eventOnlyIn: [...candidate.eventOnlyIn],
+    storableIn: [...candidate.storableIn],
   }
-  for (const row of rows) {
-    if (row.basis !== 'source' && row.basis !== 'rule') continue
-    for (const field of availabilityFields) {
-      result[field] = result[field].filter((id) => id !== row.game.id)
-      if (row.status === field) result[field].push(row.game.id)
+  if (!report.candidateJson) {
+    for (const row of rows) {
+      if (row.basis !== 'source' && row.basis !== 'rule') continue
+      for (const field of availabilityFields) {
+        result[field] = result[field].filter((id) => id !== row.game.id)
+        if (row.status === field) result[field].push(row.game.id)
+      }
     }
   }
-  const order = new Map(rows.map((row, index) => [row.game.id, index]))
-  for (const field of availabilityFields) {
-    result[field] = [...new Set(result[field])].sort(
-      (a, b) => (order.get(a) ?? Infinity) - (order.get(b) ?? Infinity),
-    )
+  for (const field of [...availabilityFields, 'storableIn'] as const) {
+    const ids = field === 'storableIn' ? result[field] : [...new Set(result[field])]
+    // Include sets/DLC from the full index, and retain unrecognized IDs at the end.
+    result[field] = sortStringsInGivenOrder(ids, [...report.gameOrder, ...ids])
   }
   return result
 }
@@ -413,13 +437,20 @@ export function availabilityChanges(report: AvailabilityReport) {
 }
 
 export function formatAvailabilityChanges(report: AvailabilityReport): string {
+  const colors = {
+    obtainableIn: 'green',
+    transferOnlyIn: 'cyan',
+    eventOnlyIn: 'magenta',
+    storableIn: 'yellow',
+  } as const
   const games = new Map(report.rows.map((row) => [row.game.id, row.game.name]))
   const describe = (ids: string[]) =>
     ids.map((id) => (games.has(id) ? `${games.get(id)} (${id})` : id)).join(', ')
   return availabilityChanges(report)
     .map(({ field, added, removed }) => {
-      if (!added.length && !removed.length) return `${field}: unchanged`
-      return `${field}:\n  Added: ${describe(added) || 'none'}\n  Removed: ${describe(removed) || 'none'}`
+      const label = styleText(['bold', colors[field]], `${field}:`)
+      if (!added.length && !removed.length) return `${label} unchanged`
+      return `${label}\n  Added: ${describe(added) || 'none'}\n  Removed: ${describe(removed) || 'none'}`
     })
     .join('\n')
 }
@@ -487,7 +518,13 @@ export function formatAvailabilityTable(
       border('├', '┼', '┤'),
       ...renderRow([
         `${row.game.name} (${row.game.id})`,
-        statuses[row.status],
+        report.crossChecks?.conflicts.some(
+          (conflict) =>
+            conflict.gameId === row.game.id &&
+            report.crossChecks!.unresolvedConflictIds.includes(conflict.id),
+        )
+          ? 'Uncertain'
+          : statuses[row.status],
         row.basis,
         methods || 'No matching source row; needs verification',
       ]),

@@ -8,25 +8,34 @@ import {
   bulbapediaUrl,
   formatAvailabilityChanges,
   parseAvailability,
+  resolvePokemon,
   type AvailabilityGame,
   type AvailabilityPokemon,
   type AvailabilityReport,
 } from './availability.ts'
 import { patchPokemonFile } from './patch.ts'
+import { createAvailabilityCrossChecker, formatCrossChecks } from './cross-check.ts'
 
-const help = `Usage: pnpm pokemon:availability:all [--skip-unchanged]
+const help = `Usage: pnpm pokemon:availability:all [--from <id|nid>] [--skip-unchanged] [--with-ai]
 
 Review every Pokémon, including forms, in dataset index order.
 For each Pokémon, inspect the proposed availability changes, then type:
   p  Patch and format the file, then advance.
   s  Skip without changes, then advance.
-  a  Run GPT-5.6 Terra verification, then choose p or s.
+  a  Run GPT-5.6 Terra review, then choose p or s for its final candidate.
 
-AI runs only when requested and reuses OPENAI_API_KEY from the environment or
+AI runs with a or --with-ai and reuses OPENAI_API_KEY from the environment or
 repository .env. Failed or uncertain AI reviews block patching that Pokémon.
+AI corrections replace the mechanical candidate and include a reason of at most 25 words.
 Ctrl+C stops the review. Completed patches remain saved.
---skip-unchanged  Automatically advance when no games are added or removed.
+--from <id|nid>   Start at this Pokémon (inclusive), bypassing earlier records without lookups.
+                  Example: --from mrmime-galar or --from 0122-galar.
+--skip-unchanged  Advance when no games change and there are no unresolved source conflicts.
                   Lookup failures still prompt for skip.
+--with-ai         Verify each candidate automatically before the patch/skip prompt.
+                  With --skip-unchanged, changed or conflicting candidates use AI.
+--no-cross-check  Use Bulbapedia alone; skip PokéAPI and targeted Serebii evidence.
+--refresh-sources Refresh cached Bulbapedia, PokéAPI, and targeted Serebii evidence.
 --help, -h  Show this help.`
 
 type ReviewIO = {
@@ -39,21 +48,36 @@ export async function reviewDataset(
   dataDirectory: string,
   io: ReviewIO,
   signal: AbortSignal,
-  options: { skipUnchanged?: boolean } = {},
+  options: {
+    from?: string
+    skipUnchanged?: boolean
+    withAi?: boolean
+    noCrossCheck?: boolean
+    refreshSources?: boolean
+  } = {},
 ): Promise<void> {
   const [pokemon, games] = await Promise.all([
     readCollection<AvailabilityPokemon>(dataDirectory, 'pokemon'),
     readCollection<AvailabilityGame>(dataDirectory, 'games'),
   ])
+  const startIndex =
+    options.from === undefined ? 0 : pokemon.indexOf(resolvePokemon(options.from, pokemon))
+  if (options.from !== undefined)
+    io.write(`Starting at ${pokemon[startIndex].id}; ${startIndex} earlier records bypassed.`)
   let patched = 0
   let unchanged = 0
   let skipped = 0
   let stopped = false
   // Forms are adjacent in the index. Keep only the last page, not hundreds of large articles.
   let page: { url: string; html: string } | undefined
+  const crossCheck = createAvailabilityCrossChecker({
+    pokeApi: { forceRefresh: options.refreshSources },
+    serebii: { forceRefresh: options.refreshSources },
+  })
 
-  nextPokemon: for (const [index, selected] of pokemon.entries()) {
+  nextPokemon: for (let index = startIndex; index < pokemon.length; index++) {
     if (signal.aborted) break
+    const selected = pokemon[index]
     io.write(
       `\n[${index + 1}/${pokemon.length}] ${selected.names.eng ?? selected.id} (${selected.id} / ${selected.nid})`,
     )
@@ -62,7 +86,11 @@ export async function reviewDataset(
     try {
       const url = bulbapediaUrl(selected)
       io.write(`Source: ${url}#Game_locations`)
-      if (page?.url !== url) page = { url, html: await fetchSpeciesPage(url, signal) }
+      if (page?.url !== url)
+        page = {
+          url,
+          html: await fetchSpeciesPage(url, signal, { forceRefresh: options.refreshSources }),
+        }
       if (signal.aborted) break
       html = page.html
       report = parseAvailability(
@@ -71,31 +99,43 @@ export async function reviewDataset(
         games,
         pokemon.filter((entry) => entry.dexNum === selected.dexNum),
       )
+      if (!options.noCrossCheck) {
+        io.write('Cross-checking cached PokéAPI encounters and targeted Serebii evidence…')
+        report = await crossCheck(
+          report,
+          games,
+          pokemon.filter((entry) => entry.dexNum === selected.dexNum),
+          signal,
+        )
+        io.write(formatCrossChecks(report))
+      }
       for (const warning of report.warnings) io.write(`Warning: ${warning}`)
       if (
         options.skipUnchanged &&
+        !report.crossChecks?.unresolvedConflictIds.length &&
         availabilityChanges(report).every(({ added, removed }) => !added.length && !removed.length)
       ) {
         unchanged++
         io.write(`Already up to date: ${selected.id} (skipped automatically).`)
         continue nextPokemon
       }
-      io.write(`\n${formatAvailabilityChanges(report)}\n`)
+      io.write(`\nMechanical candidate:\n${formatAvailabilityChanges(report)}\n`)
     } catch (error) {
       if (signal.aborted) break
+      report = undefined
       io.write(`Lookup failed: ${error instanceof Error ? error.message : String(error)}`)
       io.write('No candidate is available. Skip this Pokémon to continue.')
     }
 
     let aiReviewed = false
-    let patchBlocked = false
+    let patchBlocked = !!report?.crossChecks?.unresolvedConflictIds.length
     while (!signal.aborted) {
       const prompt = !report
         ? 's) skip > '
         : aiReviewed
           ? `p) patch${patchBlocked ? ' (blocked by AI review)' : ''}  s) skip > `
-          : 'p) patch  s) skip  a) ai pass > '
-      const input = await io.read(prompt)
+          : `p) patch${patchBlocked ? ' (blocked by source conflict)' : ''}  s) skip  a) ai pass > `
+      const input = options.withAi && report && !aiReviewed ? 'a' : await io.read(prompt)
       if (signal.aborted || input === null) {
         stopped = true
         break nextPokemon
@@ -108,7 +148,11 @@ export async function reviewDataset(
       }
       if (choice === 'p' && report) {
         if (patchBlocked) {
-          io.write('Patching is blocked because AI verification did not pass. Type s to skip.')
+          io.write(
+            aiReviewed
+              ? 'Patching is blocked because AI verification did not pass. Type s to skip.'
+              : 'Patching is blocked by unresolved source conflicts. Type a for AI review or s to skip.',
+          )
           continue
         }
         try {
@@ -127,7 +171,7 @@ export async function reviewDataset(
         aiReviewed = true
         patchBlocked = true
         try {
-          const { verifyAvailabilityWithAi, formatAiReview, VERIFICATION_MODEL } =
+          const { verifyAvailabilityWithAi, applyAiReview, formatAiReview, VERIFICATION_MODEL } =
             await import('./ai-verification.ts')
           if (signal.aborted) break
           io.write(`Verifying input and candidate JSON with ${VERIFICATION_MODEL}…`)
@@ -135,13 +179,16 @@ export async function reviewDataset(
           if (signal.aborted) break
           io.write(formatAiReview(review))
           patchBlocked = review.verdict !== 'pass'
+          if (!patchBlocked) report = applyAiReview(report, review)
         } catch (error) {
           if (signal.aborted) break
           io.write(
             `AI verification failed: ${error instanceof Error ? error.message : String(error)}`,
           )
         }
-        io.write(`\n${formatAvailabilityChanges(report)}\n`)
+        io.write(
+          `\n${patchBlocked ? 'Mechanical candidate (AI review did not pass)' : 'AI candidate'}:\n${formatAvailabilityChanges(report)}\n`,
+        )
         continue
       }
       io.write(`Type ${!report ? 's' : aiReviewed ? 'p or s' : 'p, s, or a'}, then Enter.`)
@@ -161,7 +208,11 @@ export async function main(
     allowPositionals: true,
     options: {
       help: { type: 'boolean', short: 'h' },
+      from: { type: 'string' },
       'skip-unchanged': { type: 'boolean' },
+      'with-ai': { type: 'boolean' },
+      'no-cross-check': { type: 'boolean' },
+      'refresh-sources': { type: 'boolean' },
     },
   })
   if (values.help) {
@@ -197,7 +248,13 @@ export async function main(
         },
       },
       controller.signal,
-      { skipUnchanged: values['skip-unchanged'] },
+      {
+        from: values.from,
+        skipUnchanged: values['skip-unchanged'],
+        withAi: values['with-ai'],
+        noCrossCheck: values['no-cross-check'],
+        refreshSources: values['refresh-sources'],
+      },
     )
   } finally {
     terminal.close()
