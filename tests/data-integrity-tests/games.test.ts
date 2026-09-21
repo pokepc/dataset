@@ -10,7 +10,7 @@ const originMarksById = Object.fromEntries(
   originMarksFs.all().map((originMark) => [originMark.id, originMark]),
 )
 
-describe('Validate games.json data', () => {
+describe('Validate games/*.json data', () => {
   const recordList = loadAllGames()
 
   it('should be valid', () => {
@@ -23,6 +23,16 @@ describe('Validate games.json data', () => {
 
     expect(validation.success).toBe(true)
     expect(validation.errors).toHaveLength(0)
+
+    // Empty lists remain advisory while some game records are incomplete.
+    const missingPokedexes = recordList
+      .filter(
+        (record) => record.type !== 'superset' && record.maxBoxes > 0 && !record.pokedexes.length,
+      )
+      .map((record) => record.id)
+    if (missingPokedexes.length) {
+      console.warn(`Games with storage but no pokedex references: ${missingPokedexes.join(', ')}`)
+    }
   })
 
   it('should have unique IDs', () => {
@@ -81,20 +91,13 @@ describe('Validate games.json data', () => {
   })
 })
 
-describe('Validate games.json pokedex references', () => {
+describe('Validate games/*.json references', () => {
   const recordList = loadAllGames()
   const gamesIndexById = Object.fromEntries(loadAllGames().map((game) => [game.id, game]))
 
   for (const record of recordList) {
     describe(`Game '${record.id}'`, () => {
       const dexIds = record.pokedexes
-
-      it('should have at least one pokedex if game type is other than "superset" and has storage', () => {
-        if (record.type !== 'superset' && record.maxBoxes > 0) {
-          // expect(record.pokedexes.length).toBeGreaterThan(0)
-          console.warn(`Game '${record.id}' has no pokedexes`)
-        }
-      })
 
       it('should not have any pokedexes if game type is "superset"', () => {
         if (record.type === 'superset') {
@@ -103,7 +106,9 @@ describe('Validate games.json pokedex references', () => {
       })
 
       it('should have valid pokedex IDs', () => {
-        expect(dexIds.every((id) => pokedexesById[id])).not.toBeUndefined()
+        for (const id of dexIds) {
+          expect(pokedexesById[id], `Unknown pokedex ID: ${id}`).toBeDefined()
+        }
       })
 
       it('should not have duplicate pokedex IDs', () => {
@@ -111,13 +116,21 @@ describe('Validate games.json pokedex references', () => {
       })
 
       it('should have valid gameset ID', () => {
-        expect(
-          record.gameSuperSet === null || gamesIndexById[record.gameSuperSet] !== undefined,
-        ).toBe(true)
+        if (record.gameSet !== null) {
+          expect(
+            gamesIndexById[record.gameSet],
+            `Unknown gameset ID: ${record.gameSet}`,
+          ).toBeDefined()
+        }
       })
 
       it('should have valid game superset ID', () => {
-        expect(record.gameSet === null || gamesIndexById[record.gameSet] !== undefined).toBe(true)
+        if (record.gameSuperSet !== null) {
+          expect(
+            gamesIndexById[record.gameSuperSet],
+            `Unknown game superset ID: ${record.gameSuperSet}`,
+          ).toBeDefined()
+        }
       })
 
       it('should have valid region ID', () => {

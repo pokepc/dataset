@@ -22,14 +22,8 @@ describe('Validate characters.json data', () => {
 
   it('should have no duplicate ids', () => {
     const ids = recordList.map((record) => record.id)
-    const uniqueIds: string[] = []
-    for (const id of ids) {
-      if (uniqueIds.includes(id)) {
-        console.error(`Duplicate character id: ${id}`)
-      }
-      uniqueIds.push(id)
-    }
-    expect(uniqueIds.length).toBe(ids.length)
+    const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index)
+    expect(duplicateIds, 'Duplicate character IDs').toEqual([])
   })
 
   it('should have valid names', () => {
