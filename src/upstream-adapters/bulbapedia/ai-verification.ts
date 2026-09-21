@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises'
-import { parseEnv } from 'node:util'
+import { parseEnv, styleText } from 'node:util'
 import { load } from 'cheerio'
 import OpenAI from 'openai'
 import { zodTextFormat } from 'openai/helpers/zod'
@@ -14,7 +14,10 @@ import {
   type AvailabilityReport,
 } from './availability.ts'
 
-export const VERIFICATION_MODEL = 'gpt-5.6-terra'
+export const VERIFICATION_MODEL = 'gpt-5.6-luna'
+export function verificationModel(harder = false) {
+  return harder ? 'gpt-5.6-terra' : VERIFICATION_MODEL
+}
 const MAX_HTML_CHARACTERS = 500_000
 const candidateSchema = z
   .object({
@@ -210,7 +213,7 @@ export async function readVerificationApiKey(
     if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error
   }
   throw new Error(
-    '--with-ai requires OPENAI_API_KEY in the environment or the repository .env file.',
+    'AI verification requires OPENAI_API_KEY in the environment or the repository .env file.',
   )
 }
 
@@ -368,9 +371,13 @@ export async function verifyAvailabilityWithAi(
   report: AvailabilityReport,
   html: string,
   games: AvailabilityGame[],
-  client?: OpenAI,
-  signal?: AbortSignal,
+  {
+    client,
+    signal,
+    harder = false,
+  }: { client?: OpenAI; signal?: AbortSignal; harder?: boolean } = {},
 ): Promise<AiReview> {
+  const model = verificationModel(harder)
   const input = {
     currentPokemon: report.pokemon,
     currentGames: games,
@@ -393,8 +400,8 @@ export async function verifyAvailabilityWithAi(
   try {
     response = await openai.responses.parse(
       {
-        model: VERIFICATION_MODEL,
-        reasoning: { effort: 'medium' },
+        model,
+        reasoning: { effort: 'low' },
         store: false,
         max_output_tokens: 12_000,
         instructions,
@@ -407,7 +414,7 @@ export async function verifyAvailabilityWithAi(
     // API error bodies can echo credentials. Retain the cause without printing its body.
     const detail = error instanceof OpenAI.APIError ? ` (HTTP ${error.status ?? 'unknown'})` : ''
     throw new Error(
-      `OpenAI verification request failed${detail}. Check connectivity, API credentials, quota, and access to ${VERIFICATION_MODEL}.`,
+      `OpenAI verification request failed${detail}. Check connectivity, API credentials, quota, and access to ${model}.`,
       { cause: error },
     )
   }
@@ -416,15 +423,23 @@ export async function verifyAvailabilityWithAi(
       `AI verification did not complete (${response.status}; ${response.incomplete_details?.reason ?? 'empty or refused response'}).`,
     )
   }
-  if (!response.model.startsWith(VERIFICATION_MODEL))
+  if (!response.model.startsWith(model))
     throw new Error(`AI verification used an unexpected model: ${response.model}.`)
   return validateAiReview(response.output_parsed, report)
 }
 
-export function formatAiReview(review: AiReview): string {
+export function formatAiReview(
+  review: AiReview,
+  harder = false,
+  stream: NodeJS.WritableStream = process.stdout,
+): string {
   const retained = review.checks.filter((check) => check.result === 'retained').length
   const lines = [
-    `AI verification (${VERIFICATION_MODEL}): ${review.verdict.toUpperCase()}`,
+    styleText(
+      ['bold', review.verdict === 'pass' ? 'green' : review.verdict === 'fail' ? 'red' : 'yellow'],
+      `AI verification (${verificationModel(harder)}): ${review.verdict.toUpperCase()}`,
+      { stream },
+    ),
     review.summary,
     review.differenceReason
       ? `AI difference: ${review.differenceReason}`
@@ -434,15 +449,31 @@ export function formatAiReview(review: AiReview): string {
   for (const check of review.checks.filter((check) =>
     ['inaccurate', 'uncertain'].includes(check.result),
   )) {
-    lines.push(`  ${check.gameId}: ${check.result} — ${check.evidence}`)
+    lines.push(
+      styleText(
+        check.result === 'inaccurate' ? 'red' : 'yellow',
+        `  ${check.gameId}: ${check.result} — ${check.evidence}`,
+        { stream },
+      ),
+    )
   }
   for (const finding of review.findings) {
     lines.push(
-      `  ${finding.severity.toUpperCase()} ${finding.scope}/${finding.field}${finding.gameId ? ` (${finding.gameId})` : ''}: ${finding.message}\n    Evidence: ${finding.evidence}`,
+      styleText(
+        finding.severity === 'error' ? 'red' : 'yellow',
+        `  ${finding.severity.toUpperCase()} ${finding.scope}/${finding.field}${finding.gameId ? ` (${finding.gameId})` : ''}: ${finding.message}\n    Evidence: ${finding.evidence}`,
+        { stream },
+      ),
     )
   }
   for (const resolution of review.conflictResolutions) {
-    lines.push(`  ${resolution.conflictId}: ${resolution.result} — ${resolution.evidence}`)
+    lines.push(
+      styleText(
+        resolution.result === 'resolved' ? 'green' : 'yellow',
+        `  ${resolution.conflictId}: ${resolution.result} — ${resolution.evidence}`,
+        { stream },
+      ),
+    )
   }
   return lines.join('\n')
 }

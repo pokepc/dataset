@@ -2,7 +2,7 @@ import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises'
 import { createHash, randomUUID } from 'node:crypto'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { resolve } from 'node:path'
-import { parseArgs } from 'node:util'
+import { parseArgs, styleText } from 'node:util'
 import { createAvailabilityCrossChecker, formatCrossChecks } from './cross-check.ts'
 import {
   availabilityJson,
@@ -16,7 +16,7 @@ import {
 } from './availability.ts'
 
 export const datasetRoot = fileURLToPath(new URL('../../../data/', import.meta.url))
-const help = `Usage: pnpm pokemon:availability <id|nid> [--json] [--patch] [--with-ai] [--html <file>]
+const help = `Usage: pnpm pokemon:availability <id|nid> [--json] [--patch] [--with-ai] [--ai-harder] [--html <file>]
 
 Examples:
   pnpm pokemon:availability pikachu
@@ -30,9 +30,10 @@ Print one row per concrete dataset game, folding DLC into its parent games.
 --json         Print candidate id/nid and availability fields; diagnostics go to stderr.
 --patch        Update and format the Pokémon JSON; print added/removed games per field.
                Overrides --json and table output. Uses the repository's Oxfmt config.
---with-ai      Verify input, source HTML, and output with GPT-5.6 Terra before proceeding.
+--with-ai      Verify input, source HTML, and output with GPT-5.6 Luna (low reasoning).
                Use its final candidate; explain differences from the parser in at most 25 words.
                Requires OPENAI_API_KEY (environment or repository .env); review goes to stderr.
+--ai-harder    Use GPT-5.6 Terra with low reasoning. Enables AI verification itself.
 --html <file>  Parse a saved Bulbapedia species page instead of fetching it.
 --no-cross-check  Use Bulbapedia alone (also needed for fully offline --html runs).
 --refresh-sources Refresh cached Bulbapedia, PokéAPI, and targeted Serebii evidence.
@@ -42,7 +43,7 @@ Every lookup cross-checks cached PokéAPI encounters and collects targeted Sereb
 Unresolved source conflicts block patching until a successful AI review resolves them.
 Existing values are retained where the source is inconclusive. storableIn is
 always preserved. Files are modified only with --patch. No AI or API key is required
-unless --with-ai is supplied. Failed or uncertain AI reviews prevent output and patching.`
+unless --with-ai or --ai-harder is supplied. Failed or uncertain AI reviews prevent output and patching.`
 
 async function readJson<T>(path: string): Promise<T> {
   return JSON.parse(await readFile(path, 'utf8')) as T
@@ -135,6 +136,7 @@ export async function main(
       json: { type: 'boolean' },
       patch: { type: 'boolean' },
       'with-ai': { type: 'boolean' },
+      'ai-harder': { type: 'boolean' },
       html: { type: 'string' },
       'no-cross-check': { type: 'boolean' },
       'refresh-sources': { type: 'boolean' },
@@ -172,19 +174,23 @@ export async function main(
       games,
       pokemon.filter((entry) => entry.dexNum === selected.dexNum),
     )
-    console.error(formatCrossChecks(report))
+    console.error(formatCrossChecks(report, process.stderr))
   }
   if (values.json && !values.patch)
     console.error(
       `Source: ${url}#Game_locations${values.html ? ` (saved HTML: ${resolve(values.html)})` : ''}`,
     )
-  for (const warning of report.warnings) console.error(`Warning: ${warning}`)
-  if (values['with-ai']) {
-    const { verifyAvailabilityWithAi, applyAiReview, formatAiReview, VERIFICATION_MODEL } =
+  for (const warning of report.warnings)
+    console.error(styleText('yellow', `Warning: ${warning}`, { stream: process.stderr }))
+  if (values['with-ai'] || values['ai-harder']) {
+    const { verifyAvailabilityWithAi, applyAiReview, formatAiReview, verificationModel } =
       await import('./ai-verification.ts')
-    console.error(`Verifying input and candidate JSON with ${VERIFICATION_MODEL}…`)
-    const review = await verifyAvailabilityWithAi(report, html, games)
-    console.error(formatAiReview(review))
+    const harder = !!values['ai-harder']
+    console.error(
+      `Verifying input and candidate JSON with ${verificationModel(harder)} (low reasoning)…`,
+    )
+    const review = await verifyAvailabilityWithAi(report, html, games, { harder })
+    console.error(formatAiReview(review, harder, process.stderr))
     if (review.verdict !== 'pass')
       throw new Error(`AI verification ${review.verdict}; no output or patch was applied.`)
     report = applyAiReview(report, review)
@@ -207,7 +213,11 @@ export async function main(
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   main().catch((error: unknown) => {
-    console.error(error instanceof Error ? error.message : String(error))
+    console.error(
+      styleText('red', error instanceof Error ? error.message : String(error), {
+        stream: process.stderr,
+      }),
+    )
     process.exitCode = 1
   })
 }

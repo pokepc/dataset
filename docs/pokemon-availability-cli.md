@@ -15,9 +15,9 @@ padded (`25` becomes `0025`); a form must be requested explicitly (`26-alola` be
 The script resolves the species page using `refs.bulbapedia`.
 
 Every lookup follows **Bulbapedia → cached PokéAPI cross-check → targeted Serebii evidence**. AI
-remains optional (`--with-ai` or interactive `a`). Use `--no-cross-check` for Bulbapedia alone,
-including fully offline runs against a saved HTML file. Both CLIs accept `--refresh-sources` to
-refresh all three source caches, including Bulbapedia.
+remains optional (`--with-ai`, `--ai-harder`, or interactive `a`). Use `--no-cross-check` for
+Bulbapedia alone, including fully offline runs against a saved HTML file. Both CLIs accept
+`--refresh-sources` to refresh all three source caches, including Bulbapedia.
 
 Successful Bulbapedia species pages are cached on disk in the repository's `.local/bulbapedia/`,
 shared by both commands and all forms using the same page URL. The full HTML is retained for parsing
@@ -78,6 +78,11 @@ unresolved values and `storableIn` as described above. Other Pokémon fields are
 updated file is formatted with Oxfmt using the repository's `.oxfmtrc.json` and replaced atomically.
 Formatting happens before replacement, so a formatting failure does not leave a partially written
 Pokémon file. The command does not stage or commit anything.
+
+In both CLIs, diagnostics use yellow for warnings and uncertainty, red for errors and failed AI
+reviews, and green for passed AI reviews and resolved conflicts. Error evidence uses the same color
+as its message. Color detection follows the actual output stream, so redirecting JSON on stdout does
+not disable diagnostic colors on a terminal stderr. JSON remains uncolored.
 
 Patch mode prints a summary instead of the table or JSON, even when combined with `--json`. For each
 availability property it lists added and removed games by name and ID, or says `unchanged`. Warnings
@@ -142,10 +147,14 @@ they never resolve an existing conflict. Tests use mocks and fixtures only.
 pnpm pokemon:availability raichu-alola --with-ai
 pnpm --silent pokemon:availability 0026-alola --with-ai --json
 pnpm pokemon:availability raichu-alola --with-ai --patch
+pnpm pokemon:availability dugtrio --ai-harder --json
 ```
 
-`--with-ai` uses the OpenAI Responses API with **`gpt-5.6-terra`**, medium reasoning, and structured
-output. It reads `OPENAI_API_KEY` from the environment, falling back to this repository's `.env`. It
+`--with-ai` uses the OpenAI Responses API with **`gpt-5.6-luna`**, reasoning effort `low`, and
+structured output. **`--ai-harder` selects `gpt-5.6-terra` with `low` reasoning** and enables AI
+verification itself; it can also be combined with `--with-ai`. It makes one Terra review instead of
+first calling Luna. Both modes use the same evidence, structured output, and validation rules. The
+verifier reads `OPENAI_API_KEY` from the environment, falling back to this repository's `.env`. It
 does not print, change, or save the key. The flag makes a billable API request using that key. There
 is no model substitution or automatic retry.
 
@@ -157,17 +166,18 @@ presentation attributes, and unrelated stats/learnsets are removed; table struct
 row spans, and form annotations remain. Evidence over 500,000 characters is rejected rather than
 silently truncated.
 
-Terra independently checks Pokémon/form identity, game IDs and versions, acquisition methods, DLC
-mapping, event/transfer precedence, preservation rules, and whether the candidate accurately
-represents the supplied source. Its Zod structured output includes the final `candidateJson`,
-`differenceReason`, one check for every concrete dataset game, `conflictResolutions`, and findings
-with evidence. It may correct parsing mistakes when the supplied evidence supports the correction.
-Every reported conflict needs an explicit resolution; resolved conflicts must cite both conflicting
-sources and have an accurate game check. Invented citations, omitted conflicts, and unresolved
-disagreements cannot pass. Sources are not resolved by majority vote. Checks describe the final AI
-candidate; corrected parser mistakes are warnings, while unresolved errors still block patching.
-Local validation rejects missing/duplicate game checks, invented game IDs, changed Pokémon identity,
-overlapping acquisition categories, changes to storage membership, and female Gen 1 routes.
+The selected model independently checks Pokémon/form identity, game IDs and versions, acquisition
+methods, DLC mapping, event/transfer precedence, preservation rules, and whether the candidate
+accurately represents the supplied source. Its Zod structured output includes the final
+`candidateJson`, `differenceReason`, one check for every concrete dataset game,
+`conflictResolutions`, and findings with evidence. It may correct parsing mistakes when the supplied
+evidence supports the correction. Every reported conflict needs an explicit resolution; resolved
+conflicts must cite both conflicting sources and have an accurate game check. Invented citations,
+omitted conflicts, and unresolved disagreements cannot pass. Sources are not resolved by majority
+vote. Checks describe the final AI candidate; corrected parser mistakes are warnings, while
+unresolved errors still block patching. Local validation rejects missing/duplicate game checks,
+invented game IDs, changed Pokémon identity, overlapping acquisition categories, changes to storage
+membership, and female Gen 1 routes.
 
 If the AI candidate differs from the mechanical candidate, `AI difference:` explains why in at most
 **25 words**, enforced locally by Zod. Reordering alone is not a difference. Each changed game must
@@ -188,7 +198,8 @@ of the supplied evidence, not proof that all existing data are correct. The veri
 or other tools and does not follow linked pages.
 
 Model and response format references:
-[GPT-5.6 Terra](https://developers.openai.com/api/docs/models/gpt-5.6-terra) and
+[GPT-5.6 Luna](https://developers.openai.com/api/docs/models/gpt-5.6-luna),
+[GPT-5.6 Terra](https://developers.openai.com/api/docs/models/gpt-5.6-terra), and
 [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs).
 
 ## Interactive full-dataset review
@@ -199,6 +210,7 @@ pnpm pokemon:availability:all --skip-unchanged
 pnpm pokemon:availability:all --skip-unchanged --with-ai
 pnpm pokemon:availability:all --from mrmime-galar --skip-unchanged --with-ai
 pnpm pokemon:availability:all --from 0122-galar
+pnpm pokemon:availability:all --from dugtrio --skip-unchanged --ai-harder
 ```
 
 The companion CLI visits every record in `data/indices/pokemon.json` order, including forms. It uses
@@ -217,25 +229,29 @@ Progress retains the original full-dataset position; final totals count only thi
 records. An unknown ID fails before any lookup. It combines with all other review options.
 
 Type a letter and Enter. `p` patches and formats the current file with Oxfmt, then advances. `s`
-leaves it unchanged and advances. `a` verifies the displayed candidate with GPT-5.6 Terra, prints
-the review and the final AI candidate's changes summary, then offers only `p` or `s`. After a
-passing review, `p` applies that AI candidate. It never patches automatically. Failed, uncertain, or
-unsuccessful AI reviews block `p`; use `s` to continue. AI is optional and reuses the existing API
-key configuration.
+leaves it unchanged and advances. `a` verifies the displayed candidate with GPT-5.6 Luna and low
+reasoning, prints the review and the final AI candidate's changes summary, then offers only `p` or
+`s`. After a passing review, `p` applies that AI candidate. It never patches automatically. Failed,
+uncertain, or unsuccessful AI reviews block `p`; use `s` to continue. AI is optional and reuses the
+existing API key configuration.
 
-`--with-ai` runs the same GPT-5.6 Terra verification automatically for each candidate before the
-first prompt. You then choose `p` or `s`; passing AI verification never patches automatically.
-Failed, uncertain, or unsuccessful reviews still block patching. Each review makes a billable API
-request using the existing key. Combine with `--skip-unchanged` to review candidates with added or
-removed games **or unresolved source conflicts**. Other unchanged candidates are skipped before AI;
-the source cross-check still runs.
+`--with-ai` runs the same GPT-5.6 Luna verification automatically for each candidate before the
+first prompt. `--ai-harder` enables the same automatic flow using GPT-5.6 Terra with low reasoning.
+You then choose `p` or `s`; passing AI verification never patches automatically. Failed, uncertain,
+or unsuccessful reviews still block patching. Each review makes a billable API request using the
+existing key. Combine with `--skip-unchanged` to review candidates with added or removed games **or
+unresolved source conflicts**. Other unchanged candidates are skipped before AI; the source
+cross-check still runs.
 
 `--skip-unchanged` automatically advances past candidates with no added or removed games in any
 availability property and no unresolved source conflicts. These count as already up to date; array
 ordering and file formatting alone do not trigger a prompt. Their progress and warnings remain
-visible, and no files are written or AI requests made for them. Changed candidates keep the usual
-patch/skip/AI prompt. Lookup failures still prompt for skip because their availability could not be
-checked.
+visible, and no files are written or AI requests made for them. After a successful AI review
+(`--with-ai`, `--ai-harder`, or manual `a`), the flag checks again: if the final AI candidate
+matches the existing dataset, it advances without another prompt and counts the Pokémon as already
+up to date. This compares against the dataset, not the mechanical candidate; an AI-confirmed patch
+still prompts. Failed or uncertain AI reviews and lookup failures still prompt for skip because
+their availability could not be verified.
 
 Lookup failures offer skip without creating a candidate. Patch failures stay on the current Pokémon.
 Invalid input does not advance. Consecutive forms sharing a species page reuse its HTML; only one
@@ -288,8 +304,9 @@ evolution/breeding prerequisites. Some games and services, including HOME or GO 
 pages, have no suitable location row and retain dataset values. Serebii cannot replace a missing or
 blocked primary Bulbapedia page in this version.
 
-Without `--with-ai`, the CLI makes no AI requests and requires no API key. Both modes retain the
-same conservative storage and form rules; AI verification adds a review before output or patching.
+Without `--with-ai`, `--ai-harder`, or interactive `a`, the CLI makes no AI requests and requires no
+API key. Both modes retain the same conservative storage and form rules; AI verification adds a
+review before output or patching.
 
 ## Development
 

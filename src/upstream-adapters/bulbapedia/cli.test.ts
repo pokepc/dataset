@@ -315,7 +315,7 @@ describe('patching availability', () => {
       expect(output.mock.calls.flat().join('\n')).toContain('Patched and formatted:')
       expect(output.mock.calls.flat().join('\n')).not.toContain('AI verification')
       expect(diagnostics.mock.calls.flat().join('\n')).toContain(
-        'AI verification (gpt-5.6-terra): PASS',
+        'AI verification (gpt-5.6-luna): PASS',
       )
     })
   })
@@ -347,6 +347,37 @@ describe('patching availability', () => {
       })
     },
   )
+
+  it.each([
+    { flags: ['--with-ai'], harder: false },
+    { flags: ['--ai-harder'], harder: true },
+    { flags: ['--with-ai', '--ai-harder'], harder: true },
+  ])('selects the AI model and enables verification for %j', async ({ flags, harder }) => {
+    const output = vi.spyOn(console, 'log').mockImplementation(() => {})
+    const diagnostics = vi.spyOn(console, 'error').mockImplementation(() => {})
+    const verify = vi
+      .spyOn(aiVerification, 'verifyAvailabilityWithAi')
+      .mockImplementation(async (report) => ({
+        verdict: 'pass',
+        summary: 'Verified',
+        checks: [],
+        findings: [],
+        conflictResolutions: [],
+        candidateJson: availabilityJson(report),
+        differenceReason: null,
+      }))
+    await withDataset(async (directory, file, sourceFile) => {
+      const original = readFileSync(file, 'utf8')
+      await main(['pikachu', '--json', '--html', sourceFile, ...flags], directory)
+      expect(verify).toHaveBeenCalledOnce()
+      expect(verify.mock.calls[0][3]).toEqual({ harder })
+      expect(diagnostics.mock.calls.flat().join('\n')).toContain(
+        `AI verification (gpt-5.6-${harder ? 'terra' : 'luna'}): PASS`,
+      )
+      expect(JSON.parse(String(output.mock.calls[0][0])).id).toBe('pikachu')
+      expect(readFileSync(file, 'utf8')).toBe(original)
+    })
+  })
 
   it('keeps --with-ai --json output parseable and does not call AI without the flag', async () => {
     const output = vi.spyOn(console, 'log').mockImplementation(() => {})

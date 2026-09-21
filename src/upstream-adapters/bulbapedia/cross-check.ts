@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { styleText } from 'node:util'
 import { fetchPokeApiJson, type PokeApiFetchOptions } from '../pokeapi/client.ts'
 import {
   fetchSerebiiEvidence,
@@ -245,16 +246,23 @@ export function createAvailabilityCrossChecker(options: CrossCheckOptions = {}) 
   }
 }
 
-export function formatCrossChecks(report: AvailabilityReport): string {
+export function formatCrossChecks(
+  report: AvailabilityReport,
+  stream: NodeJS.WritableStream = process.stdout,
+): string {
   const checks = report.crossChecks
   if (!checks) return ''
   return [
     `Cross-check: PokéAPI ${checks.pokeApi.status} (${checks.pokeApi.encounters.length} mapped encounter records); ${checks.serebii.length} targeted Serebii pages.`,
     ...checks.conflicts
       .filter((conflict) => checks.unresolvedConflictIds.includes(conflict.id))
-      .map(
-        (conflict) => `Uncertain (${conflict.gameId}): ${conflict.message} ${conflict.evidence}`,
+      .map((conflict) =>
+        styleText(
+          'yellow',
+          `Uncertain (${conflict.gameId}): ${conflict.message} ${conflict.evidence}`,
+          { stream },
+        ),
       ),
-    ...checks.warnings.map((warning) => `Warning: ${warning}`),
+    ...checks.warnings.map((warning) => styleText('yellow', `Warning: ${warning}`, { stream })),
   ].join('\n')
 }

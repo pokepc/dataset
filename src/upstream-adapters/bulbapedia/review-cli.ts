@@ -1,7 +1,7 @@
 import { resolve } from 'node:path'
 import { createInterface } from 'node:readline'
 import { pathToFileURL } from 'node:url'
-import { parseArgs } from 'node:util'
+import { parseArgs, styleText } from 'node:util'
 import { datasetRoot, fetchSpeciesPage, readCollection } from './cli.ts'
 import {
   availabilityChanges,
@@ -16,24 +16,26 @@ import {
 import { patchPokemonFile } from './patch.ts'
 import { createAvailabilityCrossChecker, formatCrossChecks } from './cross-check.ts'
 
-const help = `Usage: pnpm pokemon:availability:all [--from <id|nid>] [--skip-unchanged] [--with-ai]
+const help = `Usage: pnpm pokemon:availability:all [--from <id|nid>] [--skip-unchanged] [--with-ai] [--ai-harder]
 
 Review every Pokémon, including forms, in dataset index order.
 For each Pokémon, inspect the proposed availability changes, then type:
   p  Patch and format the file, then advance.
   s  Skip without changes, then advance.
-  a  Run GPT-5.6 Terra review, then choose p or s for its final candidate.
+  a  Run GPT-5.6 Luna review (low reasoning), then choose p or s for its final candidate.
 
-AI runs with a or --with-ai and reuses OPENAI_API_KEY from the environment or
+AI runs with a, --with-ai, or --ai-harder and reuses OPENAI_API_KEY from the environment or
 repository .env. Failed or uncertain AI reviews block patching that Pokémon.
 AI corrections replace the mechanical candidate and include a reason of at most 25 words.
 Ctrl+C stops the review. Completed patches remain saved.
 --from <id|nid>   Start at this Pokémon (inclusive), bypassing earlier records without lookups.
                   Example: --from mrmime-galar or --from 0122-galar.
 --skip-unchanged  Advance when no games change and there are no unresolved source conflicts.
+                  Also applies after a successful AI review.
                   Lookup failures still prompt for skip.
 --with-ai         Verify each candidate automatically before the patch/skip prompt.
                   With --skip-unchanged, changed or conflicting candidates use AI.
+--ai-harder       Use GPT-5.6 Terra with low reasoning. Enables automatic AI verification itself.
 --no-cross-check  Use Bulbapedia alone; skip PokéAPI and targeted Serebii evidence.
 --refresh-sources Refresh cached Bulbapedia, PokéAPI, and targeted Serebii evidence.
 --help, -h  Show this help.`
@@ -52,6 +54,7 @@ export async function reviewDataset(
     from?: string
     skipUnchanged?: boolean
     withAi?: boolean
+    aiHarder?: boolean
     noCrossCheck?: boolean
     refreshSources?: boolean
   } = {},
@@ -109,7 +112,7 @@ export async function reviewDataset(
         )
         io.write(formatCrossChecks(report))
       }
-      for (const warning of report.warnings) io.write(`Warning: ${warning}`)
+      for (const warning of report.warnings) io.write(styleText('yellow', `Warning: ${warning}`))
       if (
         options.skipUnchanged &&
         !report.crossChecks?.unresolvedConflictIds.length &&
@@ -123,8 +126,13 @@ export async function reviewDataset(
     } catch (error) {
       if (signal.aborted) break
       report = undefined
-      io.write(`Lookup failed: ${error instanceof Error ? error.message : String(error)}`)
-      io.write('No candidate is available. Skip this Pokémon to continue.')
+      io.write(
+        styleText(
+          'red',
+          `Lookup failed: ${error instanceof Error ? error.message : String(error)}`,
+        ),
+      )
+      io.write(styleText('yellow', 'No candidate is available. Skip this Pokémon to continue.'))
     }
 
     let aiReviewed = false
@@ -133,9 +141,10 @@ export async function reviewDataset(
       const prompt = !report
         ? 's) skip > '
         : aiReviewed
-          ? `p) patch${patchBlocked ? ' (blocked by AI review)' : ''}  s) skip > `
-          : `p) patch${patchBlocked ? ' (blocked by source conflict)' : ''}  s) skip  a) ai pass > `
-      const input = options.withAi && report && !aiReviewed ? 'a' : await io.read(prompt)
+          ? `p) patch${patchBlocked ? styleText('red', ' (blocked by AI review)') : ''}  s) skip > `
+          : `p) patch${patchBlocked ? styleText('yellow', ' (blocked by source conflict)') : ''}  s) skip  a) ai pass > `
+      const input =
+        (options.withAi || options.aiHarder) && report && !aiReviewed ? 'a' : await io.read(prompt)
       if (signal.aborted || input === null) {
         stopped = true
         break nextPokemon
@@ -149,9 +158,12 @@ export async function reviewDataset(
       if (choice === 'p' && report) {
         if (patchBlocked) {
           io.write(
-            aiReviewed
-              ? 'Patching is blocked because AI verification did not pass. Type s to skip.'
-              : 'Patching is blocked by unresolved source conflicts. Type a for AI review or s to skip.',
+            styleText(
+              'red',
+              aiReviewed
+                ? 'Patching is blocked because AI verification did not pass. Type s to skip.'
+                : 'Patching is blocked by unresolved source conflicts. Type a for AI review or s to skip.',
+            ),
           )
           continue
         }
@@ -163,7 +175,12 @@ export async function reviewDataset(
           io.write(changed ? `Patched and formatted: ${file}` : `Already up to date: ${file}`)
           continue nextPokemon
         } catch (error) {
-          io.write(`Patch failed: ${error instanceof Error ? error.message : String(error)}`)
+          io.write(
+            styleText(
+              'red',
+              `Patch failed: ${error instanceof Error ? error.message : String(error)}`,
+            ),
+          )
           continue
         }
       }
@@ -171,24 +188,45 @@ export async function reviewDataset(
         aiReviewed = true
         patchBlocked = true
         try {
-          const { verifyAvailabilityWithAi, applyAiReview, formatAiReview, VERIFICATION_MODEL } =
+          const { verifyAvailabilityWithAi, applyAiReview, formatAiReview, verificationModel } =
             await import('./ai-verification.ts')
           if (signal.aborted) break
-          io.write(`Verifying input and candidate JSON with ${VERIFICATION_MODEL}…`)
-          const review = await verifyAvailabilityWithAi(report, html, games, undefined, signal)
+          io.write(
+            `Verifying input and candidate JSON with ${verificationModel(options.aiHarder)} (low reasoning)…`,
+          )
+          const review = await verifyAvailabilityWithAi(report, html, games, {
+            signal,
+            harder: options.aiHarder,
+          })
           if (signal.aborted) break
-          io.write(formatAiReview(review))
+          io.write(formatAiReview(review, options.aiHarder))
           patchBlocked = review.verdict !== 'pass'
           if (!patchBlocked) report = applyAiReview(report, review)
         } catch (error) {
           if (signal.aborted) break
+          patchBlocked = true
           io.write(
-            `AI verification failed: ${error instanceof Error ? error.message : String(error)}`,
+            styleText(
+              'red',
+              `AI verification failed: ${error instanceof Error ? error.message : String(error)}`,
+            ),
           )
         }
         io.write(
-          `\n${patchBlocked ? 'Mechanical candidate (AI review did not pass)' : 'AI candidate'}:\n${formatAvailabilityChanges(report)}\n`,
+          `\n${patchBlocked ? styleText('red', 'Mechanical candidate (AI review did not pass)') : 'AI candidate'}:\n${formatAvailabilityChanges(report)}\n`,
         )
+        if (
+          options.skipUnchanged &&
+          !patchBlocked &&
+          !report.crossChecks?.unresolvedConflictIds.length &&
+          availabilityChanges(report).every(
+            ({ added, removed }) => !added.length && !removed.length,
+          )
+        ) {
+          unchanged++
+          io.write(`Already up to date: ${selected.id} (skipped automatically after AI review).`)
+          continue nextPokemon
+        }
         continue
       }
       io.write(`Type ${!report ? 's' : aiReviewed ? 'p or s' : 'p, s, or a'}, then Enter.`)
@@ -211,6 +249,7 @@ export async function main(
       from: { type: 'string' },
       'skip-unchanged': { type: 'boolean' },
       'with-ai': { type: 'boolean' },
+      'ai-harder': { type: 'boolean' },
       'no-cross-check': { type: 'boolean' },
       'refresh-sources': { type: 'boolean' },
     },
@@ -252,6 +291,7 @@ export async function main(
         from: values.from,
         skipUnchanged: values['skip-unchanged'],
         withAi: values['with-ai'],
+        aiHarder: values['ai-harder'],
         noCrossCheck: values['no-cross-check'],
         refreshSources: values['refresh-sources'],
       },
@@ -265,7 +305,11 @@ export async function main(
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   main().catch((error: unknown) => {
-    console.error(error instanceof Error ? error.message : String(error))
+    console.error(
+      styleText('red', error instanceof Error ? error.message : String(error), {
+        stream: process.stderr,
+      }),
+    )
     process.exitCode = 1
   })
 }

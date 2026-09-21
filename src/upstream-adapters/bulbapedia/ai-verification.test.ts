@@ -153,7 +153,7 @@ describe('source conflict review', () => {
 
   it('supplies all source evidence in one structured AI request and applies a resolved correction', async () => {
     const { client, request } = clientFor(corrected)
-    const result = await verifyAvailabilityWithAi(conflictReport, source, games, client)
+    const result = await verifyAvailabilityWithAi(conflictReport, source, games, { client })
     expect(result.verdict).toBe('pass')
     const body = JSON.parse(String(request.mock.calls[0][1]?.body))
     expect(JSON.parse(body.input[0].content).additionalSources).toEqual(conflictReport.crossChecks)
@@ -233,28 +233,33 @@ describe('AI evidence', () => {
       extractVerificationHtml(html.replace('Biology context.', 'a'.repeat(500_001))),
     ).toThrow('refusing to silently truncate')
   })
-  it('sends full records, important HTML, and the exact candidate using Terra structured outputs', async () => {
-    const { client, request } = clientFor()
-    const result = await verifyAvailabilityWithAi(report, html, games, client)
-    expect(result.verdict).toBe('pass')
-    const body = JSON.parse(String(request.mock.calls[0][1]?.body))
-    expect(body.model).toBe('gpt-5.6-terra')
-    expect(body.reasoning.effort).toBe('medium')
-    expect(body.store).toBe(false)
-    expect(body.tools).toBeUndefined()
-    expect(body.text.format).toMatchObject({ type: 'json_schema', strict: true })
-    expect(body.instructions).toContain('untrusted DATA')
-    const input = JSON.parse(body.input[0].content)
-    expect(input.currentPokemon).toEqual(pokemon)
-    expect(input.currentGames).toEqual(games)
-    expect(input.candidateJson).toEqual(availabilityJson(report))
-    expect(input.sourceHtml).toContain('revert on deposit')
-    expect(input.parsedGameRows.map((row: { gameId: string }) => row.gameId)).toEqual([
-      'rb-r',
-      'home',
-    ])
-    expect(formatAiReview(result)).toContain('1 retained without independent source verification')
-  })
+  it.each([false, true])(
+    'sends full context and structured output with low reasoning (harder: %s)',
+    async (harder) => {
+      const model = harder ? 'gpt-5.6-terra' : 'gpt-5.6-luna'
+      const { client, request } = clientFor(review, { model })
+      const result = await verifyAvailabilityWithAi(report, html, games, { client, harder })
+      expect(result.verdict).toBe('pass')
+      const body = JSON.parse(String(request.mock.calls[0][1]?.body))
+      expect(body.model).toBe(model)
+      expect(body.reasoning.effort).toBe('low')
+      expect(body.store).toBe(false)
+      expect(body.tools).toBeUndefined()
+      expect(body.text.format).toMatchObject({ type: 'json_schema', strict: true })
+      expect(body.instructions).toContain('untrusted DATA')
+      const input = JSON.parse(body.input[0].content)
+      expect(input.currentPokemon).toEqual(pokemon)
+      expect(input.currentGames).toEqual(games)
+      expect(input.candidateJson).toEqual(availabilityJson(report))
+      expect(input.sourceHtml).toContain('revert on deposit')
+      expect(input.parsedGameRows.map((row: { gameId: string }) => row.gameId)).toEqual([
+        'rb-r',
+        'home',
+      ])
+      expect(formatAiReview(result)).toContain('1 retained without independent source verification')
+      expect(formatAiReview(result, harder)).toContain(`AI verification (${model}): PASS`)
+    },
+  )
 })
 
 describe('AI verdict validation', () => {
@@ -276,7 +281,7 @@ describe('AI verdict validation', () => {
 
   it('accepts an evidenced correction and uses the AI candidate without changing the input record', async () => {
     const { client, request } = clientFor(correction)
-    const result = await verifyAvailabilityWithAi(report, html, games, client)
+    const result = await verifyAvailabilityWithAi(report, html, games, { client })
     expect(result.verdict).toBe('pass')
     expect(result.candidateJson).toEqual(correction.candidateJson)
     const updated = applyAiReview(report, result)
@@ -374,7 +379,9 @@ describe('AI verdict validation', () => {
     const femaleReport = parseAvailability(html, { ...pokemon, isFemaleForm: true }, games)
     const femaleReview = { ...review, candidateJson: availabilityJson(femaleReport) }
     const { client, request } = clientFor(femaleReview)
-    expect((await verifyAvailabilityWithAi(femaleReport, html, games, client)).verdict).toBe('pass')
+    expect((await verifyAvailabilityWithAi(femaleReport, html, games, { client })).verdict).toBe(
+      'pass',
+    )
     const body = JSON.parse(String(request.mock.calls[0][1]?.body))
     expect(body.instructions).toContain('isFemaleForm=true')
     const input = JSON.parse(body.input[0].content)
@@ -428,7 +435,9 @@ describe('AI verdict validation', () => {
     { model: 'some-other-model' },
   ])('rejects incomplete responses and model substitutions', async (overrides) => {
     await expect(
-      verifyAvailabilityWithAi(report, html, games, clientFor(review, overrides).client),
+      verifyAvailabilityWithAi(report, html, games, {
+        client: clientFor(review, overrides).client,
+      }),
     ).rejects.toThrow()
   })
   it('does not expose API error bodies or credentials on failure', async () => {
@@ -444,10 +453,20 @@ describe('AI verdict validation', () => {
         ),
       ),
     })
-    await expect(verifyAvailabilityWithAi(report, html, games, client)).rejects.toThrow('HTTP 401')
-    await expect(verifyAvailabilityWithAi(report, html, games, client)).rejects.not.toThrow(
+    await expect(verifyAvailabilityWithAi(report, html, games, { client })).rejects.toThrow(
+      'HTTP 401',
+    )
+    await expect(verifyAvailabilityWithAi(report, html, games, { client })).rejects.not.toThrow(
       'secret-value-should-not-appear',
     )
+  })
+  it('rejects a Luna response when Terra was requested', async () => {
+    await expect(
+      verifyAvailabilityWithAi(report, html, games, {
+        client: clientFor().client,
+        harder: true,
+      }),
+    ).rejects.toThrow('unexpected model: gpt-5.6-luna')
   })
 })
 
@@ -462,7 +481,7 @@ describe('existing API key lookup', () => {
       )
       expect(await readVerificationApiKey(file, {})).toBe('test-file-key')
       await expect(readVerificationApiKey(join(directory, 'missing'), {})).rejects.toThrow(
-        '--with-ai requires OPENAI_API_KEY',
+        'AI verification requires OPENAI_API_KEY',
       )
     } finally {
       await rm(directory, { recursive: true, force: true })
