@@ -39,6 +39,7 @@
     "build:pages": "pnpm build:next && node src/openapi/build.ts",
     "build:next": "bun src/lib-next/_build.ts",
     "generate:pokemon-prose": "bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts",
+    "pokemon:availability": "node src/upstream-adapters/bulbapedia/cli.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",
@@ -61,6 +62,7 @@
   "devDependencies": {
     "@types/bun": "^1.4.2",
     "@types/node": "^26.6.2",
+    "cheerio": "^1.2.0",
     "concurrently": "^10.0.5",
     "openai": "^7.20.0",
     "oxfmt": "^0.68.0",

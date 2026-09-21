@@ -81,6 +81,7 @@ describe('Validate pokemon/*.json data references', () => {
         ...(record.storableIn ?? []),
         ...(record.eventOnlyIn ?? []),
         ...(record.obtainableIn ?? []),
+        ...(record.transferOnlyIn ?? []),
       ]
       for (const ref of allRefs) {
         expect(gameMap.get(ref)).toBeDefined()

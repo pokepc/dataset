@@ -116,6 +116,23 @@ The editor runs on `http://127.0.0.1:3003` without external-directory configurat
 `pnpm dev:openapi` starts only the OpenAPI preview, and `pnpm dev` runs both in parallel. See the
 [editor guide](docs/editor.md) for editing rules, builds and disposable browser tests.
 
+## Pokémon availability lookup
+
+Inspect Bulbapedia game locations using a dataset Pokémon ID or nid:
+
+```bash
+pnpm pokemon:availability pikachu
+pnpm --silent pokemon:availability 0026-alola --json
+pnpm pokemon:availability pikachu --patch
+```
+
+The command prints a terminal table with one row per game or candidate Pokémon availability fields.
+It preserves existing values where the source is inconclusive, including `storableIn`, and reports
+warnings. With `--patch`, it updates and formats the selected Pokémon file and prints a summary of
+added and removed games instead of the table or JSON. It requires no AI service. See the
+[CLI guide](docs/pokemon-availability-cli.md) for saved HTML input, classification rules, and
+limitations.
+
 ## Credits
 
 This dataset uses public data from:
