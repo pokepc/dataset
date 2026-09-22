@@ -15,6 +15,71 @@ export function renderOpenApiIndexHtml() {
         background: #ffffff;
       }
 
+      #version-docs {
+        background: #172125;
+        border-bottom: 1px solid #354348;
+        color: #c2cdd2;
+        padding: 10px 24px;
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        font-size: 13px;
+      }
+
+      #version-docs:not([hidden]) {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .version-label {
+        margin-right: 8px;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      #version-docs a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 36px;
+        box-sizing: border-box;
+        padding: 7px 12px;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        color: #dce5e9;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      #version-docs a:hover {
+        background: #28383f;
+        color: #ffffff;
+      }
+
+      #version-docs a[aria-current="page"] {
+        background: #24474e;
+        border-color: #53858f;
+        color: #ffffff;
+      }
+
+      #version-docs a:focus-visible {
+        outline: 2px solid #92d5e4;
+        outline-offset: 2px;
+      }
+
+      .version-number {
+        color: #c2cdd2;
+        font-size: 11px;
+        font-variant-numeric: tabular-nums;
+      }
+
+      @media (max-width: 600px) {
+        #version-docs { padding: 12px 16px; gap: 6px; }
+        .version-label { flex-basis: 100%; margin: 0 0 2px; }
+      }
+
       .swagger-ui .topbar {
         background: #172125;
         border-bottom: 1px solid #263338;
@@ -81,7 +146,7 @@ export function renderOpenApiIndexHtml() {
     </style>
   </head>
   <body>
-    <nav id="version-docs" aria-label="Dataset version documentation" hidden style="padding: 12px 24px; font-family: sans-serif;"></nav>
+    <nav id="version-docs" aria-label="Dataset version documentation" hidden></nav>
     <div id="swagger-ui"></div>
     <script src="https://unpkg.com/swagger-ui-dist@${swaggerUiVersion}/swagger-ui-bundle.js" crossorigin></script>
     <script src="https://unpkg.com/swagger-ui-dist@${swaggerUiVersion}/swagger-ui-standalone-preset.js" crossorigin></script>
@@ -103,12 +168,29 @@ export function renderOpenApiIndexHtml() {
         if (spec.servers.length > 1) {
           const navigation = document.getElementById('version-docs');
           navigation.hidden = false;
-          navigation.append('Version documentation: ');
-          for (const server of spec.servers) {
+          const label = document.createElement('span');
+          label.className = 'version-label';
+          label.textContent = 'Dataset version';
+          navigation.append(label);
+          // The spec puts the current server first; navigation keeps a stable spatial order.
+          const rank = (server) => {
+            const segment = new URL(server.url).pathname.split('/').pop();
+            return segment === 'latest' ? 1 : /^v\\d+$/.test(segment) ? Number(segment.slice(1)) + 2 : 0;
+          };
+          const currentUrl = new URL('.', window.location.href).href;
+          for (const server of [...spec.servers].sort((a, b) => rank(a) - rank(b))) {
             const link = document.createElement('a');
             link.href = server.url + '/';
-            link.textContent = server.description || server.url;
-            link.style.marginRight = '16px';
+            link.title = server.description || server.url;
+            link.textContent = rank(server) === 0 ? 'Default branch' : rank(server) === 1 ? 'Latest stable' : new URL(server.url).pathname.split('/').pop();
+            if (link.href === currentUrl) link.setAttribute('aria-current', 'page');
+            const version = server.description?.match(/\\(([^)]+)\\)$/)?.[1];
+            if (version && rank(server) > 0) {
+              const badge = document.createElement('span');
+              badge.className = 'version-number';
+              badge.textContent = version;
+              link.append(badge);
+            }
             navigation.append(link);
           }
         }
