@@ -40,6 +40,44 @@ const games = [
 const tables = parseAvailabilityTables({ main: mainPage(), go: goPage() })
 const report = (id: string) => createAvailabilityReport(tables, pokemon(id), games)
 
+describe('HOME Pokédex-completion gifts', () => {
+  it.each(['meloetta', 'enamorus', 'manaphy', 'keldeo', 'meltan', 'magearna-original'])(
+    'classifies %s exclusively as a HOME event and preserves storage',
+    (id) => {
+      const saved = pokemon(id)
+      const stale = {
+        ...saved,
+        obtainableIn: [...saved.obtainableIn, 'home'],
+        transferOnlyIn: [...saved.transferOnlyIn, 'home'],
+      }
+      const result = createAvailabilityReport(tables, stale, games)
+      const row = result.rows.find((entry) => entry.game.id === 'home')!
+      expect(row).toMatchObject({ status: 'eventOnlyIn', basis: 'rule' })
+      expect(row.methods[0].text).toContain('Pokédex-completion Mystery Gift')
+      expect(row.methods[0].sourceUrl).toMatch(/^https:/)
+      const candidate = availabilityJson({ ...result, rows: [row], storageRule: undefined })
+      expect(candidate.eventOnlyIn).toContain('home')
+      expect(candidate.obtainableIn).not.toContain('home')
+      expect(candidate.transferOnlyIn).not.toContain('home')
+      expect(candidate.storableIn).toEqual(saved.storableIn)
+      expect(saved.eventOnlyIn).toContain('home')
+      expect(saved.obtainableIn).not.toContain('home')
+      expect(saved.transferOnlyIn).not.toContain('home')
+    },
+  )
+
+  it.each(['meloetta-pirouette', 'enamorus-therian', 'keldeo-resolute', 'magearna'])(
+    'does not grant the HOME reward to %s',
+    (id) => {
+      expect(report(id).rows.find((row) => row.game.id === 'home')?.status).not.toBe('eventOnlyIn')
+    },
+  )
+
+  it('preserves the ordinary base Rotom HOME gift', () => {
+    expect(availabilityJson(report('rotom')).obtainableIn).toContain('home')
+  })
+})
+
 describe('explicit transformation rules', () => {
   it.each([
     [
@@ -151,9 +189,14 @@ describe('explicit transformation rules', () => {
   it('keeps unrecognized introduction groups and games unresolved', () => {
     const selected = { ...pokemon('venusaur-mega'), debutIn: 'future', obtainableIn: ['champions'] }
     const result = createAvailabilityReport(tables, selected, games)
-    for (const id of ['xy-x', 'champions', 'wiwa-wi', 'home'])
+    for (const id of ['xy-x', 'champions', 'wiwa-wi'])
       expect(result.rows.find((row) => row.game.id === id)?.basis).toMatch(/dataset|unknown/)
-    expect(availabilityJson(result).obtainableIn).toContain('champions')
+    expect(result.rows.find((row) => row.game.id === 'home')).toMatchObject({
+      basis: 'rule',
+      status: 'unavailable',
+    })
+    expect(availabilityJson(result).obtainableIn).not.toContain('champions')
+    expect(availabilityJson(result).transferOnlyIn).not.toContain('champions')
   })
 
   it('applies Gigantamax rules to both Sword/Shield versions, with the Melmetal exception', () => {

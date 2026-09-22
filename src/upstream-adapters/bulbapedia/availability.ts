@@ -1,6 +1,12 @@
 import { stripVTControlCharacters, styleText } from 'node:util'
 import { sortStringsInGivenOrder } from '../../utils/utils-internal.ts'
 import { resolveFormAvailabilityRule } from './form-availability-rules.ts'
+import { curatedFormStorageRule } from './curated-form-availability.ts'
+import {
+  formAvailabilityInheritance,
+  formAvailabilityRestriction,
+  formStorageRule,
+} from './form-availability-inheritance.ts'
 import {
   parseMainAvailability,
   resolveMainAvailability,
@@ -65,12 +71,15 @@ export type AvailabilityRow = {
   basis: 'source' | 'rule' | 'dataset' | 'unknown'
   methods: LocationMethod[]
   storable: boolean
+  /** Saved base data copied outside the source tables; this is not upstream evidence. */
+  inheritedFrom?: string
 }
 export type AvailabilityReport = {
   pokemon: AvailabilityPokemon
   gameOrder: string[]
   rows: AvailabilityRow[]
   warnings: string[]
+  storageRule?: { gameIds: string[]; note: string }
 }
 export type AvailabilityTables = {
   main?: MainAvailability
@@ -113,18 +122,32 @@ export function createAvailabilityReport(
   const parent = cosmeticFemale
     ? siblings.find((entry) => entry.id === pokemon.id.replace(/-f$/, ''))
     : undefined
-  const main = tables.main && resolveMainAvailability(tables.main, parent ?? pokemon)
+  const inheritance = formAvailabilityInheritance(pokemon)
+  const base = inheritance && siblings.find((entry) => entry.id === inheritance.baseId)
+  const sourceBase = inheritance && siblings.find((entry) => entry.id === inheritance.sourceId)
+  const main = tables.main && resolveMainAvailability(tables.main, sourceBase ?? parent ?? pokemon)
+  const storageRule = tables.main
+    ? (curatedFormStorageRule(pokemon, games) ?? formStorageRule(pokemon, base, games))
+    : undefined
+  const storableIn = storageRule?.gameIds ?? pokemon.storableIn
   const warnings = [
-    'storableIn is preserved; these availability lists do not establish box compatibility or form reversion.',
+    storageRule?.note ??
+      'storableIn is preserved; these availability lists do not establish box compatibility or form reversion.',
     ...(tables.go?.warnings ?? []),
   ]
+  if (inheritance && (!base || !sourceBase))
+    warnings.push(
+      `Inheritance for ${pokemon.id} needs sibling records ${[...new Set([inheritance.baseId, inheritance.sourceId])].join(', ')}; missing base data is not inferred.`,
+    )
   const rows = games
     .filter((game) => game.type === 'game')
     .map((game): AvailabilityRow => {
       let method: LocationMethod | undefined
       let basis: AvailabilityRow['basis'] = 'source'
       const formRule =
-        tables.main && resolveFormAvailabilityRule(tables.main, pokemon, game.id, siblings)
+        tables.main &&
+        (formAvailabilityRestriction(pokemon, game) ??
+          resolveFormAvailabilityRule(tables.main, pokemon, game.id, siblings))
       if (formRule) {
         method = formRule
         basis = 'rule'
@@ -135,15 +158,32 @@ export function createAvailabilityReport(
             status: 'unavailable',
           }
           basis = 'rule'
-        } else if (game.id === 'go' && tables.go)
+        } else if (game.id === 'go' && tables.go) {
           method = resolveGoAvailability(tables.go, pokemon, siblings)
-        else {
+          if (!method && sourceBase) {
+            method = resolveGoAvailability(tables.go, sourceBase, siblings)
+            if (method) {
+              basis = 'rule'
+              method = {
+                ...method,
+                note: [method.note, `Form inherits ${sourceBase.id}; no exact GO form entry.`]
+                  .filter(Boolean)
+                  .join(' '),
+              }
+            }
+          }
+        } else {
           method = main?.methods.get(game.id)
-          if (parent && method) {
+          if ((sourceBase || parent) && method) {
             basis = 'rule'
             method = {
               ...method,
-              note: [method.note, `Cosmetic female form inherits ${parent.id}.`]
+              note: [
+                method.note,
+                sourceBase
+                  ? `Form inherits ${sourceBase.id}.`
+                  : `Cosmetic female form inherits ${parent!.id}.`,
+              ]
                 .filter(Boolean)
                 .join(' '),
             }
@@ -151,13 +191,32 @@ export function createAvailabilityReport(
         }
       }
       if (!method || method.status === 'unknown') {
+        // Copy the agreed base's saved classifications only outside the lists. A blank or
+        // missing source cell keeps the selected form's data and remains visibly unverified.
+        if (tables.main && base && !tables.gameIds.has(game.id) && game.id !== 'go') {
+          const current = availabilityFields.find((field) => base[field].includes(game.id))
+          return {
+            game,
+            status: current ?? 'unavailable',
+            basis: 'dataset',
+            inheritedFrom: base.id,
+            methods: [
+              {
+                text: `Saved availability inherited from ${base.id}; no upstream coverage.`,
+                status: current ?? 'unavailable',
+                sourceUrl: null,
+              },
+            ],
+            storable: storableIn.includes(game.id),
+          }
+        }
         const current = availabilityFields.find((field) => pokemon[field].includes(game.id))
         return {
           game,
           status: current ?? 'unknown',
           basis: current ? 'dataset' : 'unknown',
           methods: method ? [method] : [],
-          storable: pokemon.storableIn.includes(game.id),
+          storable: storableIn.includes(game.id),
         }
       }
       return {
@@ -165,7 +224,28 @@ export function createAvailabilityReport(
         status: method.status,
         basis,
         methods: [method],
-        storable: pokemon.storableIn.includes(game.id),
+        storable: storableIn.includes(game.id),
+      }
+    })
+    .map((row): AvailabilityRow => {
+      if (row.game.id !== 'champions' || row.status !== 'obtainableIn') return row
+      // Local recruits cannot leave Champions. Removing that route does not prove visitor
+      // eligibility; only a separately established transfer route can classify the Pokémon.
+      const text =
+        'Champions recruits cannot be exported, so obtainableIn is excluded. Visitor availability remains unverified.'
+      warnings.push(text)
+      return {
+        ...row,
+        status: 'unknown',
+        basis: 'unknown',
+        inheritedFrom: undefined,
+        methods: [
+          {
+            status: 'unknown',
+            text,
+            sourceUrl: 'https://champions.pokemon.com/en-gb/pokemon/',
+          },
+        ],
       }
     })
   const unresolved = rows.filter((row) => row.basis === 'dataset' || row.basis === 'unknown')
@@ -175,12 +255,18 @@ export function createAvailabilityReport(
     )
   if (unresolved.length)
     warnings.push(
-      `Acquisition unverified; existing values retained for: ${unresolved.map((row) => row.game.id).join(', ')}.`,
+      `Acquisition unverified; saved values ${base ? `inherited from ${base.id} outside source games, otherwise retained` : 'retained'} for: ${unresolved.map((row) => row.game.id).join(', ')}.`,
     )
-  return { pokemon, gameOrder: games.map((game) => game.id), rows, warnings }
+  return {
+    pokemon,
+    gameOrder: games.map((game) => game.id),
+    rows,
+    warnings,
+    ...(storageRule ? { storageRule } : {}),
+  }
 }
 
-/** Only established acquisition cells replace data. Storage keeps its original order. */
+/** Established cells and explicit inheritance replace data; retained values obey export restrictions. */
 export function availabilityJson(report: AvailabilityReport): AvailabilityJson {
   const { pokemon, rows } = report
   const result = {
@@ -189,15 +275,18 @@ export function availabilityJson(report: AvailabilityReport): AvailabilityJson {
     obtainableIn: [...pokemon.obtainableIn],
     transferOnlyIn: [...pokemon.transferOnlyIn],
     eventOnlyIn: [...pokemon.eventOnlyIn],
-    storableIn: [...pokemon.storableIn],
+    storableIn: [...(report.storageRule?.gameIds ?? pokemon.storableIn)],
   }
   for (const row of rows) {
-    if (row.basis !== 'source' && row.basis !== 'rule') continue
+    if (row.basis !== 'source' && row.basis !== 'rule' && !row.inheritedFrom) continue
     for (const field of availabilityFields) {
       result[field] = result[field].filter((id) => id !== row.game.id)
       if (row.status === field) result[field].push(row.game.id)
     }
   }
+  // Applies even to retained data or a report limited to other games. See
+  // docs/pokemon-availability.md: Champions is not an exportable acquisition source.
+  result.obtainableIn = result.obtainableIn.filter((id) => id !== 'champions')
   for (const field of availabilityFields) {
     const ids = [...new Set(result[field])]
     result[field] = sortStringsInGivenOrder(ids, [...report.gameOrder, ...ids])

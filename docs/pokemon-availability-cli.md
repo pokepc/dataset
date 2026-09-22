@@ -1,5 +1,8 @@
 # Pokémon availability CLI
 
+Read the [canonical field definitions](pokemon-availability.md) for acquisition, storage, shiny
+availability, and related form metadata. The rules below describe how the tools implement them.
+
 The availability tools parse two Bulbapedia pages:
 
 - [List of Pokémon by availability](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability)
@@ -24,11 +27,12 @@ stdout; source URLs and warnings go to stderr. `--patch` overrides table/JSON ou
 candidate, formats the file with the repository's Oxfmt configuration, and prints added/removed
 games.
 
-Only `obtainableIn`, `transferOnlyIn`, and `eventOnlyIn` can change. Storage membership, storage
-ordering, and unrelated Pokémon properties are preserved. Acquisition arrays use dataset game order.
-The patcher checks that availability has not changed since the record was loaded and that the file
-has not changed during formatting; a concurrent edit stops replacement. Writes use a temporary file
-and atomic rename.
+The three acquisition fields can change. The explicit inheritance rules below also copy `storableIn`
+from the base, with form-specific exceptions. Held-item forms exclude HOME; other records preserve
+storage membership and ordering. Unrelated Pokémon properties are preserved. Acquisition arrays use
+dataset game order. The patcher checks that availability has not changed since the record was loaded
+and that the file has not changed during formatting; a concurrent edit stops replacement. Writes use
+a temporary file and atomic rename.
 
 ## Bulk review
 
@@ -88,8 +92,9 @@ tests reject both overlaps. `storableIn` is independent and may overlap any acqu
 Pokéwalker is external to HeartGold/SoulSilver. The GO page determines GO availability
 independently. GO release tables establish historical availability (`obtainableIn`), not current
 spawns or exclusive events. Explicit unreleased entries and future/TBA releases are unavailable;
-unlisted forms remain unverified. Image filenames distinguish forms whose visible label contains
-only the species name. Contradictory released/unreleased entries retain existing data with warnings.
+unlisted forms remain unverified unless an explicit inheritance rule applies. Image filenames
+distinguish forms whose visible label contains only the species name. Contradictory
+released/unreleased entries retain existing data with warnings.
 
 The main source does not enumerate every nonregional alternate form. Unmatched forms retain the
 existing classification and emit warnings; a species row is not silently treated as proof for an
@@ -97,10 +102,87 @@ unlisted alternate form. Cosmetic female records inherit their corresponding par
 availability, except that Generation 1 is excluded from all three acquisition arrays because those
 games have no genders. Female-only species are not cosmetic female records.
 
-Games and services absent from the source tables retain their current values. Storage membership is
-never inferred from acquisition codes. The explicit HOME gift rule below is the only service
-exception. An empty source cell is inconclusive and retains that game with a warning. Unknown codes
-or malformed table structure fail parsing instead of producing an empty candidate.
+Games and services absent from the source tables retain saved values, copying the base's values for
+the explicitly inherited forms below. Those saved classifications never count as source evidence.
+Champions is an explicit exception: native recruits cannot be exported, so `obtainableIn` always
+excludes it, even for saved or inherited data. A verified visitor route can establish
+`transferOnlyIn`; otherwise visitor eligibility remains unknown. This policy does not alter storage.
+Storage membership is never inferred from acquisition codes. Explicit HOME and exclusive-game rules
+can establish additional cells. An empty source cell is inconclusive and retains that game with a
+warning. Unknown codes or malformed table structure fail parsing instead of producing an empty
+candidate.
+
+### Base-form inheritance
+
+The agreed families inherit their base's main-table availability and saved storage:
+
+- Pumpkaboo/Gourgeist sizes, Alcremie flavors/sweets, and Unown A–Z.
+- Arceus/Silvally types and Flabébé/Floette/Florges colors.
+- Furfrou trims, Minior cores, Rotom appliances, and Genesect drives.
+
+Exact GO entries take priority, including explicit unreleased or inconclusive entries. Only a
+missing GO form entry falls back to the base's GO entry. Inconclusive main cells retain the form's
+existing values; they do not borrow saved base data as evidence. Missing sibling records are
+reported instead of inventing a base. Outside the source tables, acquisition copies saved base
+values and remains marked as dataset data.
+
+Legendary Plate Arceus has acquisition and storage only in Legends: Arceus. Eternal Floette has
+acquisition only in Legends: Z-A and retains its existing storage. Rotom appliances exclude games
+before Platinum, including Diamond/Pearl, from acquisition and storage. Minior cores use the species
+source row but inherit storage from the red core, never the battle-only Meteor form.
+
+Rotom's five appliance forms are `transferOnlyIn` and `storableIn` in HOME. They do not require a
+held item to keep their forms, and they do not inherit base Rotom's HOME gift acquisition.
+
+Forms that require a held item cannot retain that form in HOME. This excludes HOME from all four
+availability fields for Arceus types, Silvally types, Genesect drives, the Origin forms of
+Dialga/Palkia/Giratina, Crowned Zacian/Zamazenta, Ogerpon's held masks, and held-item Mega/Primal
+forms. The HOME restriction applies even without a base record and overrides base-form acquisition
+inheritance. An item used to change or evolve a form does not by itself establish a held-item
+requirement.
+
+Furfrou trims copy base storage except XY/ORAS and Bank, where deposit removes the trim. Gen VII
+storage remains valid because reversion happens on withdrawal; GO, HOME and later saved storage are
+retained. This is an explicit
+[form-storage rule](<https://bulbapedia.bulbagarden.net/wiki/Furfrou_(Pok%C3%A9mon)#Form_data>), not
+an additional page fetched by the parser.
+
+Cap Pikachu and Unown ?/! do not inherit these ordinary base rules. Mega/Gigantamax transformations
+keep their separate rules below.
+
+### Researched remaining forms
+
+The [ordinary-form audit](audits/ordinary-form-availability.md) and
+[special-form audit](audits/special-form-availability.md) cover all 83 previously unresolved
+records. Their main-game rules live in `curated-form-availability.ts` and do not add GO species
+fallback.
+
+- Ability/move-driven battle forms follow the corresponding main-game base acquisition, including
+  explicit LZA mechanic exceptions. They never inherit base storage or native HOME gifts.
+- Persistent ordinary variants use researched current-game encounters/evolutions. Antique/Artisan
+  forms cannot be inferred from breeding alone. Introduction gates and item mechanics limit the
+  legendary forms, Primals, Unown punctuation, and Deoxys's Gen III version-specific forms.
+- Fusions evaluate both the host and its particular partner, preserving version differences. Fused
+  Pokémon cannot enter Bank/HOME. Ultra Necrozma is restricted to USUM.
+- Cap distributions and Dada Zarude use external routes; Partner Cap's USUM QR gift is event-only.
+  Ash-Greninja requires the external SM demo and transforms only in Gen VII. Eternamax is not a
+  playable obtainable main-game form. Hisuian Samurott is explicitly unavailable in LZA.
+- Storage retains existing values except researched temporary-state and deposit-reversion
+  exclusions, including Hoopa Unbound in ORAS, and adds the confirmed Gen III compatibility for
+  punctuation Unown. Shiny fields are unchanged.
+
+GO uses its exact release entries. Two researched shared identities are mapped narrowly: Active
+Xerneas is its automatic appearance, and both Toxtricity variants share Gigantamax. An exact form
+entry takes precedence over either alias, including explicit unavailability. These aliases never
+infer a Gigantamax release from an ordinary Toxtricity release.
+
+### Curated Vivillon patterns
+
+All 20 Vivillon patterns use a [curated game-by-pattern matrix](audits/vivillon-availability.md),
+including the unsuffixed Icy Snow record and the two special patterns. Positive species cells never
+establish a pattern’s availability. Scarlet/Violet postcard-dependent patterns are `transferOnlyIn`
+by user policy. GO is still parsed independently and storage is preserved. The research references
+are recorded alongside the rules; no additional pages are fetched at runtime.
 
 ### Mega and Gigantamax rules
 
@@ -122,16 +204,17 @@ introduction groups and inconclusive base cells remain unverified.
 
 Gigantamax forms are `obtainableIn` in Sword/Shield, except Gigantamax Melmetal: its HOME gift is
 `eventOnlyIn`, and Sword/Shield are `transferOnlyIn`. GO Mega, Primal, fusion, and Gigantamax
-availability always comes from the GO page's separate tables. Champions remains unresolved; future
-planned coverage is not treated as current availability.
+availability always comes from the GO page's separate tables. Champions Mega/Gigantamax coverage
+remains unresolved; future planned coverage is not treated as current availability.
 
 The 2026-09-22 source audit covered all 1,595 dataset records. The main page had 1,025 species,
-1,101 distinct rows, and 40 mapped games. Cosmetic female inheritance and the 130 Mega/Gigantamax
-rules leave 265 records without main-game coverage and one partially covered record (Hisuian
-Samurott's blank Legends: Z-A cell). GO resolves 1,580 records; 15 remain unlisted, including Low
-Key Gigantamax Toxtricity, which the source does not distinguish from its other Gigantamax form.
-There are 267 records with at least one gap and 14 with gaps in both lists. HOME is covered only for
-Gigantamax Melmetal; Pokopia, Champions, Winds, and Waves remain outside these rules.
+1,101 distinct rows, and 40 mapped games. Parsed rows plus researched rules now cover every record
+within those main-game columns. GO resolves 1,585 records; 10 exact identities remain absent from
+its source: the eight cap Pikachu, Dada Zarude, and Eternamax Eternatus. These GO gaps retain their
+saved values and warnings, not invented base-form releases. An explicit unavailable cell also counts
+as coverage. Games outside the lists have only explicitly researched rules; copied saved base values
+do not close source-coverage gaps. Storage and shiny fields are not certified by these coverage
+counts.
 
 The local coverage generator and report live together:
 

@@ -65,6 +65,9 @@ data/
 Root JSON files are collection files. `games/`, `pokedexes/`, and `pokemon/` contain one JSON file
 per entity. `indices/` controls the order of those per-entity files.
 
+The [Pokémon availability field reference](docs/pokemon-availability.md) defines acquisition,
+storage, shiny availability, and related form fields for both maintainers and agents.
+
 ## Contributing
 
 Requirements: Node.js 24 and pnpm 11.

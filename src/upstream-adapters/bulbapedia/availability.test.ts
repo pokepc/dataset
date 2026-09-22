@@ -158,24 +158,31 @@ describe('main table parsing', () => {
   it('does not give absent alternate forms their species availability', () => {
     for (const id of [
       'deoxys-attack',
-      'rotom-wash',
       'pikachu-original',
-      'minior-red',
       'poltchageist-artisan',
       'terapagos-terastal',
       'terapagos-stellar',
     ]) {
       expect(resolveMainAvailability(tables.main!, pokemon(id))).toBeUndefined()
-      expect(
-        report(id)
-          .rows.filter((entry) => entry.game.id !== 'go')
-          .every((entry) => entry.basis === 'dataset' || entry.basis === 'unknown'),
-      ).toBe(true)
     }
+    const future = {
+      ...pokemon('deoxys-attack'),
+      id: 'deoxys-future',
+      nid: '0386-future',
+      formId: 'future',
+      formNames: { eng: 'Future Forme' },
+    }
+    expect(
+      createAvailabilityReport(tables, future, games)
+        .rows.filter((entry) => entry.game.id !== 'go')
+        .every((entry) => entry.basis === 'dataset' || entry.basis === 'unknown'),
+    ).toBe(true)
   })
   it('retains blank cells and their existing values', () => {
-    const selected = pokemon('samurott-hisui')
-    const result = createAvailabilityReport(tables, selected, games)
+    const selected = pokemon('bulbasaur')
+    const main = parseMainAvailability(mainHtml)
+    main.rows.get(1)![0].methods.set('lza', { status: 'unknown', text: 'Empty source cell' })
+    const result = createAvailabilityReport({ main, gameIds: main.gameIds }, selected, games)
     const lza = result.rows.find((entry) => entry.game.id === 'lza')!
     expect(lza.methods[0]).toMatchObject({ status: 'unknown', text: 'Empty source cell' })
     expect(['dataset', 'unknown']).toContain(lza.basis)
@@ -213,6 +220,49 @@ describe('main table parsing', () => {
 })
 
 describe('shared reports', () => {
+  it('excludes Champions recruitment without inventing a visiting route or removing storage', () => {
+    const selected = {
+      ...pokemon('bulbasaur'),
+      obtainableIn: ['champions', 'home'],
+      transferOnlyIn: [],
+      eventOnlyIn: [],
+      storableIn: ['champions'],
+    }
+    // The policy applies to retained data, including when only the GO source is loaded.
+    for (const parsed of [tables, parseAvailabilityTables({ go: goPage() })]) {
+      const result = createAvailabilityReport(parsed, selected, games)
+      expect(result.rows.find((entry) => entry.game.id === 'champions')).toMatchObject({
+        status: 'unknown',
+        basis: 'unknown',
+        storable: true,
+        methods: [expect.objectContaining({ text: expect.stringContaining('cannot be exported') })],
+      })
+      const candidate = availabilityJson(result)
+      expect(candidate.obtainableIn).not.toContain('champions')
+      expect(candidate.obtainableIn).toContain('home')
+      expect(candidate.transferOnlyIn).not.toContain('champions')
+      expect(candidate.storableIn).toEqual(['champions'])
+      expect(result.warnings.join(' ')).toContain('champions')
+    }
+    const visiting = { ...selected, obtainableIn: [], transferOnlyIn: ['champions'] }
+    const result = createAvailabilityReport(tables, visiting, games)
+    expect(result.rows.find((entry) => entry.game.id === 'champions')?.status).toBe(
+      'transferOnlyIn',
+    )
+    expect(availabilityJson(result).transferOnlyIn).toContain('champions')
+  })
+
+  it('rejects Champions as an acquisition source even in positive source cells and partial reports', () => {
+    const selected = { ...pokemon('bulbasaur'), obtainableIn: ['champions'] }
+    const main = parseMainAvailability(mainHtml)
+    main.gameIds.add('champions')
+    main.rows.get(1)![0].methods.set('champions', { status: 'obtainableIn', text: 'C' })
+    const result = createAvailabilityReport({ main, gameIds: main.gameIds }, selected, games)
+    expect(result.rows.find((entry) => entry.game.id === 'champions')?.status).toBe('unknown')
+    expect(availabilityJson(result).obtainableIn).not.toContain('champions')
+    expect(availabilityJson({ ...result, rows: [] }).obtainableIn).not.toContain('champions')
+  })
+
   it('inherits cosmetic female source rows except Gen I', () => {
     const result = report('pikachu-f', [pokemon('pikachu'), pokemon('pikachu-f')])
     expect(result.rows.find((entry) => entry.game.id === 'rb-r')).toMatchObject({

@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
 import { loadAllAbilities, loadAllGames, loadAllPokemon } from '../../src/lib/fs'
 import { pokemonSchema } from '../../src/lib/schemas'
+import { requiresHeldItemForForm } from '../../src/upstream-adapters/bulbapedia/form-availability-inheritance'
 import { validate } from '../_utils'
 
 describe('Validate pokemon/*.json data', () => {
@@ -30,6 +31,26 @@ describe('Validate pokemon/*.json data', () => {
       }).toEqual({ obtainableIn: [], transferOnlyIn: [] })
     },
   )
+
+  it('should exclude HOME from all availability fields for forms requiring held items', () => {
+    expect(
+      recordList
+        .filter(requiresHeldItemForForm)
+        .flatMap((record) =>
+          (['obtainableIn', 'transferOnlyIn', 'eventOnlyIn', 'storableIn'] as const)
+            .filter((field) => record[field].includes('home'))
+            .map((field) => `${record.id}.${field}`),
+        ),
+    ).toEqual([])
+  })
+
+  it('should exclude Champions from obtainableIn while recruited Pokémon cannot be exported', () => {
+    expect(
+      recordList
+        .filter((record) => record.obtainableIn.includes('champions'))
+        .map((record) => record.id),
+    ).toEqual([])
+  })
 
   it.each(recordList.map((record) => [record.id, record]))(
     'should have names.eng in pokemon %s',

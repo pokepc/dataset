@@ -29,6 +29,26 @@ const resolve = (html: string, id: string, parent?: string) =>
   ])
 
 describe('GO availability lists', () => {
+  it('aliases only the researched shared GO identities, while exact entries take precedence', () => {
+    const parsed = parse(
+      page(release(image('GO0716.png', 'Xerneas') + image('GO0849L.png', 'Toxtricity'))),
+    )
+    expect(resolveGoAvailability(parsed, pokemon('xerneas-active'), [])).toMatchObject({
+      status: 'obtainableIn',
+      note: expect.stringContaining('shared GO form identity'),
+    })
+    expect(resolveGoAvailability(parsed, pokemon('toxtricity-low-key-gmax'), [])).toBeUndefined()
+    parsed.entries.push({
+      dexNum: 716,
+      sprite: 'exact.png',
+      form: 'active',
+      speciesWide: false,
+      status: 'unavailable',
+      text: 'GO: explicitly unreleased',
+    })
+    expect(resolveGoAvailability(parsed, pokemon('xerneas-active'), [])?.status).toBe('unavailable')
+  })
+
   it('uses historical releases, including event releases, and ignores other page tables', () => {
     const html = page(
       release(image('GO0001.png', 'Bulbasaur'), 'Jul 6, 2016', 'Event research reward.'),
@@ -110,7 +130,7 @@ describe('GO availability lists', () => {
     expect(resolve(html, 'necrozma-dusk-mane')?.status).toBe('obtainableIn')
     expect(resolve(html, 'calyrex-ice')?.status).toBe('unavailable')
     expect(resolve(html, 'toxtricity-gmax')?.status).toBe('obtainableIn')
-    expect(resolve(html, 'toxtricity-low-key-gmax')).toBeUndefined()
+    expect(resolve(html, 'toxtricity-low-key-gmax')?.status).toBe('obtainableIn')
   })
 
   it('uses linked species names when the page reuses an identical form image', () => {
@@ -256,7 +276,7 @@ describe('GO availability lists', () => {
     expect(resolve(html, 'toxtricity')?.status).toBe('obtainableIn')
     expect(resolve(html, 'toxtricity-low-key')?.status).toBe('obtainableIn')
     expect(resolve(html, 'toxtricity-gmax')?.status).toBe('obtainableIn')
-    expect(resolve(html, 'toxtricity-low-key-gmax')).toBeUndefined()
+    expect(resolve(html, 'toxtricity-low-key-gmax')?.status).toBe('obtainableIn')
     expect(resolve(html, 'urshifu')?.status).toBe('obtainableIn')
     expect(resolve(html, 'urshifu-rapid-strike')?.status).toBe('obtainableIn')
     expect(resolve(html, 'urshifu-gmax')?.status).toBe('unavailable')

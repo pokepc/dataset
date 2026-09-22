@@ -297,15 +297,15 @@ export const pokemonSchema = z.object({
   canGmax: z.coerce.boolean(),
   canDynamax: z.coerce.boolean(),
   canBeAlpha: z.coerce.boolean(),
-  // ---- Obtainability:
+  // ---- Availability: canonical definitions in docs/pokemon-availability.md.
   debutIn: common.slug, // the first game it appeared in
-  obtainableIn: z.array(common.slug), // if it can be obtained in-game any time, without temporary or online events
-  transferOnlyIn: z.array(common.slug), // if it can only be obtained by transferring from another games
-  storableIn: z.array(common.slug), // if it's storable in the game's boxes
+  obtainableIn: z.array(common.slug), // exportable ordinary acquisition; GO means historically released, even if not exportable; excludes Champions recruits
+  transferOnlyIn: z.array(common.slug), // external acquisition/dependency, including distributions and verified visitors
+  storableIn: z.array(common.slug), // exact form persists in storage; independent of acquisition/exportability
   eventOnlyIn: z.array(common.slug), // obtainable via in-game events; disjoint from obtainableIn and transferOnlyIn
-  shinyLockedIn: z.array(common.slug).optional(), // if it's shiny locked in that game.
-  shinyReleased: z.coerce.boolean(),
-  shinyBase: common.slug.optional(),
+  shinyLockedIn: z.array(common.slug).optional(), // native acquisition is shiny-locked; does not prohibit imported shinies
+  shinyReleased: z.coerce.boolean(), // a legal shiny of this form has been released somewhere
+  shinyBase: common.slug.optional(), // shared shiny appearance reference, not availability inheritance
   // -------------------
   baseHp: common.statValue,
   baseAtk: common.statValue,

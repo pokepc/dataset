@@ -337,7 +337,18 @@ export function resolveGoAvailability(
 ): GoMethod | undefined {
   const form = pokemon.nid.replace(/^\d+/, '').replace(/^-/, '')
   const speciesEntries = parsed.entries.filter((entry) => entryMatchesSpecies(entry, pokemon))
-  const matches = speciesEntries.filter((entry) => entry.speciesWide || entry.form === form)
+  let matches = speciesEntries.filter((entry) => entry.speciesWide || entry.form === form)
+  // Reviewed identities, not species-wide availability inheritance. Xerneas changes its
+  // appearance automatically; both Toxtricity variants share the GMax form. Exact form entries
+  // still win, including an explicit unreleased entry. See docs/audits/ordinary-form-availability.md.
+  const sharedForm = (
+    {
+      'xerneas-active': '',
+      'toxtricity-low-key-gmax': 'gmax',
+    } as Record<string, string>
+  )[pokemon.id]
+  const usesSharedForm = !matches.length && sharedForm !== undefined
+  if (usesSharedForm) matches = speciesEntries.filter((entry) => entry.form === sharedForm)
   if (!matches.length && pokemon.isFemaleForm && pokemon.isCosmeticForm) {
     const parent = siblings.find((entry) => entry.id === pokemon.baseSpecies && !entry.isFemaleForm)
     if (parent) {
@@ -363,5 +374,13 @@ export function resolveGoAvailability(
       note: 'The GO source lists this form as both released and unreleased.',
     }
   const result = released[0] ?? matches.find((entry) => entry.status === 'unknown') ?? matches[0]
-  return { status: result.status, text: result.text, ...(result.note ? { note: result.note } : {}) }
+  const note = [
+    result.note,
+    ...(usesSharedForm
+      ? [`Reviewed shared GO form identity for ${pokemon.id}; not base availability inheritance.`]
+      : []),
+  ]
+    .filter(Boolean)
+    .join(' ')
+  return { status: result.status, text: result.text, ...(note ? { note } : {}) }
 }
