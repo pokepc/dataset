@@ -1,4 +1,5 @@
 import { GameSelectorMultiSortable } from '@/components/game-selector-multi-sortable'
+import { AvailabilitySourceComparison } from '@/components/availability-source-comparison'
 import { GameSelectorSingle } from '@/components/game-selector-single'
 import { PokemonOptionCombobox, type PokemonOption } from '@/components/pokemon-option-combobox'
 import { type GameOption } from '@/components/types'
@@ -470,6 +471,13 @@ export default function PokemonPage({ loaderData }: Route.ComponentProps) {
           </CardHeader>
 
           <CardContent className="space-y-6">
+            <AvailabilitySourceComparison
+              key={selectedPokemon.id}
+              pokemonId={selectedPokemon.id}
+              pokemonName={selectedPokemon.name || selectedPokemon.id}
+              games={gameOptions}
+              draft={draft}
+            />
             <div className="grid gap-6 md:grid-cols-2">
               <div className="space-y-5">
                 <div className="space-y-2">

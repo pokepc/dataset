@@ -1,6 +1,7 @@
 import { spawn } from 'node:child_process'
 import { cpSync, mkdirSync, rmSync } from 'node:fs'
 import { resolve } from 'node:path'
+import { seedAvailabilityFixtures } from './availability-fixtures.mjs'
 
 const runtime = process.argv[2]
 if (!['development', 'production'].includes(runtime)) throw new Error('Invalid editor test runtime')
@@ -9,6 +10,8 @@ const fixture = resolve(root, '.local/editor-e2e', runtime)
 rmSync(fixture, { recursive: true, force: true })
 mkdirSync(fixture, { recursive: true })
 cpSync(resolve(root, 'data'), resolve(fixture, 'data'), { recursive: true })
+const sourceCache = resolve(fixture, 'sources')
+seedAvailabilityFixtures(sourceCache)
 
 const development = runtime === 'development'
 const port = development ? '3103' : '3104'
@@ -24,6 +27,7 @@ const child = spawn(
       ...process.env,
       POKEPC_DATASET_DIR: resolve(fixture, 'data'),
       POKEPC_DISABLE_MEMORY_CACHE: '1',
+      POKEPC_AVAILABILITY_CACHE_DIR: sourceCache,
       HOST: '127.0.0.1',
       PORT: port,
     },

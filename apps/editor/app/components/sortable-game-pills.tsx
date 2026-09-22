@@ -141,6 +141,8 @@ export function SortableGamePills({
                 'can-hover:group-hover/pill:opacity-100 can-hover:group-hover/pill:pointer-events-auto',
               )}
               disabled={disabled}
+              // Stop before the native drag listener can capture the button's pointer.
+              onPointerDownCapture={(event) => event.stopPropagation()}
               onClick={(event) => {
                 event.stopPropagation()
                 onChange(ids.filter((currentId) => currentId !== id))

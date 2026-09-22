@@ -89,6 +89,32 @@ before writing the Pokemon JSON file.
   `gamesets`.
 - Pokemon shown in the editor are currently filtered to dex numbers from `1` through `1386`.
 
+### Compare upstream availability
+
+Select a Pokemon and click **Load availability sources** to compare Bulbapedia, Serebii and PokéAPI
+beside the current availability draft. Rows follow the editor's concrete game list and order; use
+**Filter games** to narrow the table. Source text, form qualifiers, encounter conditions and source
+links remain visible. Expand **Source notes** for shared context and coverage details. Long
+encounter lists can be expanded within their cell.
+
+The **Verdict** column after **Game** summarizes loaded upstream evidence: ✅ obtainable, 🔀
+transfer only, 🎁 event only, or ❌ explicitly unavailable. It shows ⚠️ for conflicting source
+classifications and — when evidence needs review. Select the verdict to expand its source-based
+reasoning. It is independent of the current draft and never changes availability automatically.
+
+Sources load independently and can be reloaded individually. **Refresh sources** bypasses their
+local caches. A failed page, an unsupported game and a missing encounter entry are distinguished;
+none means the Pokemon is unavailable. PokéAPI encounter data is not a complete list of gifts,
+breeding, evolutions or transfers. Shared species pages can describe forms other than the selected
+form, so their labels matter. The comparison shows evidence without applying an AI verdict or
+changing the draft. Opening the comparison stores `sources=true` in the URL, so switching Pokemon
+(including **Next**/**Prev**) or reloading the page automatically loads the selected Pokemon's
+sources. **Hide comparison** clears that setting and stops automatic loading for later selections.
+Previous Pokemon evidence is cleared when switching selections.
+
+Source caches can be placed in a separate directory with `POKEPC_AVAILABILITY_CACHE_DIR`; browser
+tests use this to isolate their source fixtures as well as their disposable dataset copies.
+
 ## Game Availability Editing
 
 Game-perspective availability edits must compare draft and baseline availability, update only

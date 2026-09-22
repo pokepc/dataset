@@ -155,3 +155,80 @@ test('availability and maintenance routes render without runtime errors', async 
   }
   await page.screenshot({ path: info.outputPath('maintenance.png') })
 })
+
+test('Pokemon availability removals update the draft and persist without changing siblings', async ({
+  page,
+}, info) => {
+  const data = fixtureData(info)
+  const before = snapshot(data)
+  const file = resolve(data, 'pokemon/zygarde.json')
+  const original = readFileSync(file, 'utf8')
+  const record = JSON.parse(original)
+  const transfer = page.getByRole('heading', { name: /^Transfer-only In/ }).locator('..')
+  const obtainable = page.getByRole('heading', { name: /^Obtainable In/ }).locator('..')
+  const save = page.getByRole('button', { name: 'Save', exact: true })
+  try {
+    await visit(page, '/pokemon?selected=zygarde')
+    await expect(save).toBeDisabled()
+
+    const removeSword = transfer.getByRole('button', { name: 'Remove Sword', exact: true })
+    await removeSword.locator('..').hover()
+    await removeSword.click()
+    await expect(removeSword).toHaveCount(0)
+    await expect(save).toBeEnabled()
+
+    const removeY = obtainable.getByRole('button', { name: 'Remove Y', exact: true })
+    await removeY.locator('..').hover()
+    await removeY.click()
+    await expect(removeY).toHaveCount(0)
+    expect(readFileSync(file, 'utf8')).toBe(original)
+
+    await save.click()
+    await expect(page.getByText('Pokemon availability saved.', { exact: true })).toBeVisible()
+    await expect(save).toBeDisabled()
+    const saved = {
+      ...record,
+      obtainableIn: record.obtainableIn.filter((id: string) => id !== 'xy-y'),
+      transferOnlyIn: record.transferOnlyIn.filter((id: string) => id !== 'swsh-sw'),
+    }
+    expect(JSON.parse(readFileSync(file, 'utf8'))).toEqual(saved)
+
+    // A second edit must stay editable after receiving a previous save response.
+    const removeShield = transfer.getByRole('button', { name: 'Remove Shield', exact: true })
+    await removeShield.focus()
+    await page.keyboard.press('Enter')
+    await expect(removeShield).toHaveCount(0)
+    await expect(save).toBeEnabled()
+    await save.click()
+    await expect(save).toBeDisabled()
+    expect(JSON.parse(readFileSync(file, 'utf8'))).toEqual({
+      ...saved,
+      transferOnlyIn: saved.transferOnlyIn.filter((id: string) => id !== 'swsh-sh'),
+    })
+    await page.reload({ waitUntil: 'domcontentloaded' })
+    await expect(removeSword).toHaveCount(0)
+    await expect(removeShield).toHaveCount(0)
+    await expect(removeY).toHaveCount(0)
+    await expect(save).toBeDisabled()
+    const after = snapshot(data)
+    expect(Object.keys(after).filter((path) => before[path] !== after[path])).toEqual([
+      'pokemon/zygarde.json',
+    ])
+  } finally {
+    writeFileSync(file, original)
+  }
+  expect(snapshot(data)).toEqual(before)
+})
+
+test.describe('touch availability removal', () => {
+  test.use({ hasTouch: true, isMobile: true, viewport: { width: 390, height: 844 } })
+
+  test('tapping a game remove button updates the draft', async ({ page }) => {
+    await visit(page, '/pokemon?selected=zygarde')
+    const transfer = page.getByRole('heading', { name: /^Transfer-only In/ }).locator('..')
+    const remove = transfer.getByRole('button', { name: 'Remove Sword', exact: true })
+    await remove.tap()
+    await expect(remove).toHaveCount(0)
+    await expect(page.getByRole('button', { name: 'Save', exact: true })).toBeEnabled()
+  })
+})

@@ -323,7 +323,7 @@ function classifyMethod(
   return 'unknown'
 }
 
-function readMethods(
+export function readMethods(
   cell: Selection,
   pokemon: AvailabilityPokemon,
   siblings: AvailabilityPokemon[],
@@ -376,7 +376,7 @@ function readMethods(
   })
 }
 
-function sourceStatus(methods: LocationMethod[]): AvailabilityStatus {
+export function sourceStatus(methods: LocationMethod[]): AvailabilityStatus {
   for (const field of availabilityFields) {
     if (methods.some((method) => method.status === field)) {
       // An unknown method might add an ordinary route or change event exclusivity.
