@@ -281,6 +281,12 @@ export const pokemonSchema = z.object({
   ability2: common.slug.optional(),
   abilityHidden: common.slug.optional(),
   abilitySpecial: common.slug.optional(),
+  legacyAbilities: z
+    .array(common.slug)
+    .optional()
+    .describe(
+      'Previously obtainable ability IDs for this exact form, excluding its current abilities and any unused or unreleased assignments.',
+    ),
   isPrerelease: z.coerce.boolean(),
   isDefault: z.coerce.boolean(),
   isForm: z.coerce.boolean(),

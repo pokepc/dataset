@@ -52,6 +52,17 @@ describe('Validate pokemon/*.json data', () => {
     ).toEqual([])
   })
 
+  it.each(['meowth-alola', 'persian-alola'])(
+    'should retain Scarlet/Violet acquisition and storage for %s',
+    (id) => {
+      const record = recordList.find((pokemon) => pokemon.id === id)!
+      for (const game of ['sv-s', 'sv-v']) {
+        expect(record.obtainableIn).toContain(game)
+        expect(record.storableIn).toContain(game)
+      }
+    },
+  )
+
   it.each(recordList.map((record) => [record.id, record]))(
     'should have names.eng in pokemon %s',
     (recordId, record) => {
@@ -88,15 +99,17 @@ describe('Validate pokemon/*.json data references', () => {
   it.each(recordList.map((record) => [record.id, record]))(
     'should have valid abilities in pokemon %s',
     (_recordId, record) => {
-      if (record.ability1) {
-        expect(abilityMap.get(record.ability1)).toBeDefined()
-      }
-      if (record.ability2) {
-        expect(abilityMap.get(record.ability2)).toBeDefined()
-      }
-      if (record.abilityHidden) {
-        expect(abilityMap.get(record.abilityHidden)).toBeDefined()
-      }
+      const current = [
+        record.ability1,
+        record.ability2,
+        record.abilityHidden,
+        record.abilitySpecial,
+      ].filter((ability) => ability !== undefined)
+      const legacy = record.legacyAbilities ?? []
+      for (const ability of [...current, ...legacy])
+        expect(abilityMap.get(ability), `${record.id}: ${ability}`).toBeDefined()
+      expect(new Set(legacy).size).toBe(legacy.length)
+      expect(legacy.filter((ability) => current.includes(ability))).toEqual([])
     },
   )
 

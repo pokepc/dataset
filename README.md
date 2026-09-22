@@ -93,7 +93,9 @@ The [Pokémon availability field reference](docs/pokemon-availability.md) define
 storage, shiny availability, and related form fields for both maintainers and agents. The
 [evolution reference](docs/pokemon-evolutions.md) and
 [form-transition reference](docs/pokemon-forms.md) explain the method arrays, typed conditions, and
-translation-ready enum exports.
+translation-ready enum exports. The [ability-history audit](docs/audits/pokemon-ability-changes.md)
+defines `legacyAbilities` and lists released historical ability changes, with unreleased/unused
+assignments documented as exclusions.
 
 ## Contributing
 

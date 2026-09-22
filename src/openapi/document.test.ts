@@ -30,6 +30,13 @@ describe('static OpenAPI document', () => {
     expect(document.components?.schemas?.ErrorResponse).toBeDefined()
   })
 
+  it('exposes optional legacy ability IDs in the public Pokemon schema', () => {
+    const pokemon = document.components?.schemas?.Pokemon
+    expect(pokemon).toHaveProperty('properties.legacyAbilities.type', 'array')
+    expect(pokemon).toHaveProperty('properties.legacyAbilities.items.type', 'string')
+    expect(pokemon).toHaveProperty('required', expect.not.arrayContaining(['legacyAbilities']))
+  })
+
   it('exposes alternative evolution methods in the public Pokemon schema', () => {
     expect(document.components?.schemas?.Pokemon).toHaveProperty(
       'properties.evoMethods.type',
