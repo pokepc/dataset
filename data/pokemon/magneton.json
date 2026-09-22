@@ -141,8 +141,14 @@
     "serebii": "magneton",
     "bulbapedia": "Magneton"
   },
-  "evolvesFrom": "magnemite",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["magnemite"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Magneton",
     "fra": "Magnéton",

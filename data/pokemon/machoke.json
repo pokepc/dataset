@@ -135,8 +135,14 @@
     "serebii": "machoke",
     "bulbapedia": "Machoke"
   },
-  "evolvesFrom": "machop",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["machop"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Machoke",
     "fra": "Machopeur",

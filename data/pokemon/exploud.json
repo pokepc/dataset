@@ -108,8 +108,14 @@
     "serebii": "exploud",
     "bulbapedia": "Exploud"
   },
-  "evolvesFrom": "loudred",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["loudred"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Exploud",
     "fra": "Brouhabam",

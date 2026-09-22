@@ -127,8 +127,14 @@
     "serebii": "kingler",
     "bulbapedia": "Kingler"
   },
-  "evolvesFrom": "krabby",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["krabby"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kingler",
     "fra": "Krabboss",

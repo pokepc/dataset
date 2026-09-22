@@ -131,8 +131,14 @@
     "serebii": "graveler",
     "bulbapedia": "Graveler"
   },
-  "evolvesFrom": "geodude",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["geodude"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Graveler",
     "fra": "Gravalanch",

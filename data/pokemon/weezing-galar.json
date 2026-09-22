@@ -62,8 +62,15 @@
     "serebii": "weezing",
     "bulbapedia": "Weezing"
   },
-  "evolvesFrom": "koffing",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["koffing"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": [{ "key": "region", "region": "galar", "relation": "in" }]
+    }
+  ],
   "names": {
     "eng": "Weezing (Galarian Form)",
     "esp": "Weezing (Forma de Galar)",

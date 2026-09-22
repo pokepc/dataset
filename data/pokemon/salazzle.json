@@ -81,8 +81,14 @@
     "serebii": "salazzle",
     "bulbapedia": "Salazzle"
   },
-  "evolvesFrom": "salandit",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["salandit"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Salazzle",
     "fra": "Malamandre",

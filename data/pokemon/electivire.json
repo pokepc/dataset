@@ -108,8 +108,22 @@
     "serebii": "electivire",
     "bulbapedia": "Electivire"
   },
-  "evolvesFrom": "electabuzz",
-  "evoFromItem": "electirizer",
+  "evoMethods": [
+    {
+      "from": ["electabuzz"],
+      "trigger": "trade",
+      "item": { "id": "electirizer", "role": "held" },
+      "conditions": []
+    },
+    {
+      "from": ["electabuzz"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "electirizer", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Electivire",
     "fra": "Élekable",

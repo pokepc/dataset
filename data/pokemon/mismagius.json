@@ -98,8 +98,14 @@
     "serebii": "mismagius",
     "bulbapedia": "Mismagius"
   },
-  "evolvesFrom": "misdreavus",
-  "evoFromItem": "duskstone",
+  "evoMethods": [
+    {
+      "from": ["misdreavus"],
+      "trigger": "use_item",
+      "item": { "id": "duskstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Mismagius",
     "fra": "Magirêve",

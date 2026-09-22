@@ -59,8 +59,14 @@
     "serebii": "sandaconda",
     "bulbapedia": "Sandaconda"
   },
-  "evolvesFrom": "silicobra",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["silicobra"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sandaconda",
     "fra": "Dunaconda",

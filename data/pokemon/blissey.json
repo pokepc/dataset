@@ -127,7 +127,13 @@
     "serebii": "blissey",
     "bulbapedia": "Blissey"
   },
-  "evolvesFrom": "chansey",
+  "evoMethods": [
+    {
+      "from": ["chansey"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Blissey",
     "fra": "Leuphorie",

@@ -95,7 +95,13 @@
     "serebii": "conkeldurr",
     "bulbapedia": "Conkeldurr"
   },
-  "evolvesFrom": "gurdurr",
+  "evoMethods": [
+    {
+      "from": ["gurdurr"],
+      "trigger": "trade",
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Conkeldurr",
     "fra": "Bétochef",

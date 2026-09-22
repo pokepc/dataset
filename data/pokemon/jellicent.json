@@ -89,8 +89,14 @@
     "serebii": "jellicent",
     "bulbapedia": "Jellicent"
   },
-  "evolvesFrom": "frillish",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["frillish"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Jellicent",
     "fra": "Moyade",

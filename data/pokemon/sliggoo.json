@@ -87,8 +87,14 @@
     "serebii": "sliggoo",
     "bulbapedia": "Sliggoo"
   },
-  "evolvesFrom": "goomy",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["goomy"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Sliggoo",
     "fra": "Colimucus",

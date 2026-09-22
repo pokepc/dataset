@@ -112,8 +112,25 @@
     "serebii": "quilava",
     "bulbapedia": "Quilava"
   },
-  "evolvesFrom": "cyndaquil",
-  "evoFromLevel": 14,
+  "evoMethods": [
+    {
+      "from": ["cyndaquil"],
+      "trigger": "level_up",
+      "minLevel": 14,
+      "conditions": [],
+      "notes": {
+        "eng": "This level-14 route excludes Legends: Arceus, which requires level 17; the complete other-game scope is not yet enumerated."
+      }
+    },
+    {
+      "from": ["cyndaquil"],
+      "games": ["la"],
+      "trigger": "level_up",
+      "minLevel": 17,
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Quilava",
     "fra": "Feurisson",

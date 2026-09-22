@@ -93,7 +93,13 @@
     "serebii": "leavanny",
     "bulbapedia": "Leavanny"
   },
-  "evolvesFrom": "swadloon",
+  "evoMethods": [
+    {
+      "from": ["swadloon"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Leavanny",
     "fra": "Manternel",

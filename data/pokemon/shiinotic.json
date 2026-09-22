@@ -60,8 +60,14 @@
     "serebii": "shiinotic",
     "bulbapedia": "Shiinotic"
   },
-  "evolvesFrom": "morelull",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["morelull"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Shiinotic",
     "fra": "Lampignon",

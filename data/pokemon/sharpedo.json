@@ -118,8 +118,14 @@
     "serebii": "sharpedo",
     "bulbapedia": "Sharpedo"
   },
-  "evolvesFrom": "carvanha",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["carvanha"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sharpedo",
     "fra": "Sharpedo",

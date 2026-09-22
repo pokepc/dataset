@@ -114,8 +114,14 @@
     "serebii": "ludicolo",
     "bulbapedia": "Ludicolo"
   },
-  "evolvesFrom": "lombre",
-  "evoFromItem": "waterstone",
+  "evoMethods": [
+    {
+      "from": ["lombre"],
+      "trigger": "use_item",
+      "item": { "id": "waterstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ludicolo",
     "fra": "Ludicolo",

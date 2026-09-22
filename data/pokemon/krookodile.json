@@ -100,8 +100,14 @@
     "serebii": "krookodile",
     "bulbapedia": "Krookodile"
   },
-  "evolvesFrom": "krokorok",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["krokorok"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Krookodile",
     "fra": "Crocorible",

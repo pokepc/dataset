@@ -113,8 +113,14 @@
     "serebii": "breloom",
     "bulbapedia": "Breloom"
   },
-  "evolvesFrom": "shroomish",
-  "evoFromLevel": 23,
+  "evoMethods": [
+    {
+      "from": ["shroomish"],
+      "trigger": "level_up",
+      "minLevel": 23,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Breloom",
     "fra": "Chapignon",

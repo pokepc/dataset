@@ -62,8 +62,14 @@
     "serebii": "slowking",
     "bulbapedia": "Slowking"
   },
-  "evolvesFrom": "slowpoke-galar",
-  "evoFromItem": "galaricawreath",
+  "evoMethods": [
+    {
+      "from": ["slowpoke-galar"],
+      "trigger": "use_item",
+      "item": { "id": "galaricawreath", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Slowking (Galarian Form)",
     "esp": "Slowking (Forma de Galar)",

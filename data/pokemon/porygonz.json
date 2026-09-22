@@ -109,8 +109,22 @@
     "serebii": "porygonz",
     "bulbapedia": "Porygon-Z"
   },
-  "evolvesFrom": "porygon2",
-  "evoFromItem": "dubiousdisc",
+  "evoMethods": [
+    {
+      "from": ["porygon2"],
+      "trigger": "trade",
+      "item": { "id": "dubiousdisc", "role": "held" },
+      "conditions": []
+    },
+    {
+      "from": ["porygon2"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "dubiousdisc", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Porygon-Z",
     "fra": "Porygon-Z",

@@ -59,8 +59,14 @@
     "serebii": "perrserker",
     "bulbapedia": "Perrserker"
   },
-  "evolvesFrom": "meowth-galar",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["meowth-galar"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Perrserker",
     "fra": "Berserkatt",

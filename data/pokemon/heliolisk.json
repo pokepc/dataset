@@ -75,8 +75,14 @@
     "serebii": "heliolisk",
     "bulbapedia": "Heliolisk"
   },
-  "evolvesFrom": "helioptile",
-  "evoFromItem": "sunstone",
+  "evoMethods": [
+    {
+      "from": ["helioptile"],
+      "trigger": "use_item",
+      "item": { "id": "sunstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Heliolisk",
     "fra": "Iguolta",

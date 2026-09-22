@@ -96,8 +96,14 @@
     "serebii": "fraxure",
     "bulbapedia": "Fraxure"
   },
-  "evolvesFrom": "axew",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["axew"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Fraxure",
     "fra": "Incisache",

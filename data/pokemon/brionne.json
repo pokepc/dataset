@@ -79,8 +79,14 @@
     "serebii": "brionne",
     "bulbapedia": "Brionne"
   },
-  "evolvesFrom": "popplio",
-  "evoFromLevel": 17,
+  "evoMethods": [
+    {
+      "from": ["popplio"],
+      "trigger": "level_up",
+      "minLevel": 17,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Brionne",
     "fra": "Otarlette",

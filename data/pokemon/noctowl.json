@@ -122,8 +122,14 @@
     "serebii": "noctowl",
     "bulbapedia": "Noctowl"
   },
-  "evolvesFrom": "hoothoot",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["hoothoot"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Noctowl",
     "fra": "Noarfang",

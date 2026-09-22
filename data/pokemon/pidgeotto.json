@@ -126,8 +126,14 @@
     "serebii": "pidgeotto",
     "bulbapedia": "Pidgeotto"
   },
-  "evolvesFrom": "pidgey",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["pidgey"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Pidgeotto",
     "fra": "Roucoups",

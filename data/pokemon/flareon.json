@@ -138,8 +138,14 @@
     "serebii": "flareon",
     "bulbapedia": "Flareon"
   },
-  "evolvesFrom": "eevee",
-  "evoFromItem": "firestone",
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "trigger": "use_item",
+      "item": { "id": "firestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Flareon",
     "fra": "Pyroli",

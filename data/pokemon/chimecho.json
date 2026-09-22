@@ -113,8 +113,13 @@
     "serebii": "chimecho",
     "bulbapedia": "Chimecho"
   },
-  "evolvesFrom": "chingling",
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["chingling"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "night" }]
+    }
+  ],
   "names": {
     "eng": "Chimecho",
     "fra": "Éoko",

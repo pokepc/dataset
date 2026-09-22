@@ -60,8 +60,15 @@
     "serebii": "wyrdeer",
     "bulbapedia": "Wyrdeer"
   },
-  "evolvesFrom": "stantler",
-  "evoFromCondition": "Use Agile style Psyshield Bash 20 times",
+  "evoMethods": [
+    {
+      "from": ["stantler"],
+      "games": ["la"],
+      "trigger": "special",
+      "conditions": [{ "key": "use_move", "move": "psyshieldbash", "count": 20, "style": "agile" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Wyrdeer",
     "fra": "Cerbyllin",

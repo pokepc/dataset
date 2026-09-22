@@ -90,8 +90,14 @@
     "serebii": "klang",
     "bulbapedia": "Klang"
   },
-  "evolvesFrom": "klink",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["klink"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Klang",
     "fra": "Clic",

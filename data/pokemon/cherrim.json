@@ -100,8 +100,14 @@
     "serebii": "cherrim",
     "bulbapedia": "Cherrim"
   },
-  "evolvesFrom": "cherubi",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["cherubi"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cherrim",
     "fra": "Ceriflor",

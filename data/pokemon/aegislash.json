@@ -86,8 +86,14 @@
     "serebii": "aegislash",
     "bulbapedia": "Aegislash"
   },
-  "evolvesFrom": "doublade",
-  "evoFromItem": "duskstone",
+  "evoMethods": [
+    {
+      "from": ["doublade"],
+      "trigger": "use_item",
+      "item": { "id": "duskstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Aegislash",
     "fra": "Exagide",

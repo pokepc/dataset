@@ -75,8 +75,14 @@
     "serebii": "simisage",
     "bulbapedia": "Simisage"
   },
-  "evolvesFrom": "pansage",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["pansage"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Simisage",
     "fra": "Feuiloutan",

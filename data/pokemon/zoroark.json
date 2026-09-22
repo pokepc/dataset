@@ -91,8 +91,14 @@
     "serebii": "zoroark",
     "bulbapedia": "Zoroark"
   },
-  "evolvesFrom": "zorua",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["zorua"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Zoroark",
     "fra": "Zoroark",

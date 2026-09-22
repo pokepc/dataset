@@ -59,8 +59,14 @@
     "serebii": "dolliv",
     "bulbapedia": "Dolliv"
   },
-  "evolvesFrom": "smoliv",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["smoliv"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dolliv",
     "fra": "Olivado",

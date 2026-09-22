@@ -120,8 +120,17 @@
     "serebii": "roselia",
     "bulbapedia": "Roselia"
   },
-  "evolvesFrom": "budew",
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["budew"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "friendship" },
+        { "key": "time_of_day", "time": "day" },
+        { "key": "gender", "gender": "female" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Roselia (Female)",
     "fra": "Rosélia (Female)",

@@ -125,8 +125,14 @@
     "serebii": "beedrill",
     "bulbapedia": "Beedrill"
   },
-  "evolvesFrom": "kakuna",
-  "evoFromLevel": 10,
+  "evoMethods": [
+    {
+      "from": ["kakuna"],
+      "trigger": "level_up",
+      "minLevel": 10,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Beedrill",
     "fra": "Dardargnan",

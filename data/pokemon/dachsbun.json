@@ -58,8 +58,14 @@
     "serebii": "dachsbun",
     "bulbapedia": "Dachsbun"
   },
-  "evolvesFrom": "fidough",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["fidough"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dachsbun",
     "fra": "Briochien",

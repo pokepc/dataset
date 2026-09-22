@@ -103,8 +103,14 @@
     "serebii": "bastiodon",
     "bulbapedia": "Bastiodon"
   },
-  "evolvesFrom": "shieldon",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["shieldon"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bastiodon",
     "fra": "Bastiodon",

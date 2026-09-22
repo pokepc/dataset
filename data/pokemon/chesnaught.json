@@ -74,8 +74,14 @@
     "serebii": "chesnaught",
     "bulbapedia": "Chesnaught"
   },
-  "evolvesFrom": "quilladin",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["quilladin"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Chesnaught",
     "fra": "Blindépique",

@@ -79,8 +79,14 @@
     "serebii": "charjabug",
     "bulbapedia": "Charjabug"
   },
-  "evolvesFrom": "grubbin",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["grubbin"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Charjabug",
     "fra": "Chrysapile",

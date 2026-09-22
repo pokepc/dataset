@@ -105,8 +105,27 @@
     "serebii": "probopass",
     "bulbapedia": "Probopass"
   },
-  "evolvesFrom": "nosepass",
-  "evoFromCondition": "near a special magnetic field",
+  "evoMethods": [
+    {
+      "from": ["nosepass"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "location", "location": "magnetic_field" }]
+    },
+    {
+      "from": ["nosepass"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": []
+    },
+    {
+      "from": ["nosepass"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Probopass",
     "fra": "Tarinorme",

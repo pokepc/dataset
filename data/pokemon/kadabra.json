@@ -137,8 +137,14 @@
     "serebii": "kadabra",
     "bulbapedia": "Kadabra"
   },
-  "evolvesFrom": "abra",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["abra"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kadabra",
     "fra": "Kadabra",

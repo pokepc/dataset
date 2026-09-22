@@ -128,8 +128,14 @@
     "serebii": "dugtrio",
     "bulbapedia": "Dugtrio"
   },
-  "evolvesFrom": "diglett",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["diglett"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dugtrio",
     "fra": "Triopikeur",

@@ -92,8 +92,14 @@
     "serebii": "braviary",
     "bulbapedia": "Braviary"
   },
-  "evolvesFrom": "rufflet",
-  "evoFromLevel": 54,
+  "evoMethods": [
+    {
+      "from": ["rufflet"],
+      "trigger": "level_up",
+      "minLevel": 54,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Braviary",
     "fra": "Gueriaigle",

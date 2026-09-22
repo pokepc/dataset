@@ -106,8 +106,14 @@
     "serebii": "vespiquen",
     "bulbapedia": "Vespiquen"
   },
-  "evolvesFrom": "combee",
-  "evoFromLevel": 21,
+  "evoMethods": [
+    {
+      "from": ["combee"],
+      "trigger": "level_up",
+      "minLevel": 21,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Vespiquen",
     "fra": "Apireine",

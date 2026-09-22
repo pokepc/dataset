@@ -60,8 +60,14 @@
     "serebii": "coalossal",
     "bulbapedia": "Coalossal"
   },
-  "evolvesFrom": "carkol",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["carkol"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Coalossal",
     "fra": "Monthracite",

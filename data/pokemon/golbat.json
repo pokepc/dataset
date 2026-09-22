@@ -139,8 +139,14 @@
     "serebii": "golbat",
     "bulbapedia": "Golbat"
   },
-  "evolvesFrom": "zubat",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["zubat"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Golbat",
     "fra": "Nosferalto",

@@ -92,7 +92,13 @@
     "serebii": "gigalith",
     "bulbapedia": "Gigalith"
   },
-  "evolvesFrom": "boldore",
+  "evoMethods": [
+    {
+      "from": ["boldore"],
+      "trigger": "trade",
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gigalith",
     "fra": "Gigalithe",

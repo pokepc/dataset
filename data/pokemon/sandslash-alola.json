@@ -74,8 +74,14 @@
     "serebii": "sandslash",
     "bulbapedia": "Sandslash"
   },
-  "evolvesFrom": "sandshrew-alola",
-  "evoFromItem": "icestone",
+  "evoMethods": [
+    {
+      "from": ["sandshrew-alola"],
+      "trigger": "use_item",
+      "item": { "id": "icestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sandslash (Alolan Form)",
     "esp": "Sandslash (Forma de Alola)",

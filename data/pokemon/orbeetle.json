@@ -60,8 +60,14 @@
     "serebii": "orbeetle",
     "bulbapedia": "Orbeetle"
   },
-  "evolvesFrom": "dottler",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["dottler"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Orbeetle",
     "fra": "Astronelle",

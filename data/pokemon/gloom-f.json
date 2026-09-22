@@ -125,8 +125,14 @@
     "serebii": "gloom",
     "bulbapedia": "Gloom"
   },
-  "evolvesFrom": "oddish",
-  "evoFromLevel": 21,
+  "evoMethods": [
+    {
+      "from": ["oddish"],
+      "trigger": "level_up",
+      "minLevel": 21,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Gloom (Female)",
     "fra": "Ortide (Female)",

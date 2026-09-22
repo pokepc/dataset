@@ -61,8 +61,16 @@
     "serebii": "decidueye",
     "bulbapedia": "Decidueye"
   },
-  "evolvesFrom": "dartrix",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["dartrix"],
+      "games": ["la"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Decidueye (Hisuian Form)",
     "fra": "Archéduc (Forme de Hisui)",

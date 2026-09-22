@@ -69,8 +69,14 @@
     "serebii": "cosmoem",
     "bulbapedia": "Cosmoem"
   },
-  "evolvesFrom": "cosmog",
-  "evoFromLevel": 43,
+  "evoMethods": [
+    {
+      "from": ["cosmog"],
+      "trigger": "level_up",
+      "minLevel": 43,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cosmoem",
     "fra": "Cosmovum",

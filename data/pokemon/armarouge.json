@@ -59,8 +59,14 @@
     "serebii": "armarouge",
     "bulbapedia": "Armarouge"
   },
-  "evolvesFrom": "charcadet",
-  "evoFromItem": "auspiciousarmor",
+  "evoMethods": [
+    {
+      "from": ["charcadet"],
+      "trigger": "use_item",
+      "item": { "id": "auspiciousarmor", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Armarouge",
     "fra": "Carmadura",

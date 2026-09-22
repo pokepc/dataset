@@ -60,8 +60,14 @@
     "serebii": "dragapult",
     "bulbapedia": "Dragapult"
   },
-  "evolvesFrom": "drakloak",
-  "evoFromLevel": 60,
+  "evoMethods": [
+    {
+      "from": ["drakloak"],
+      "trigger": "level_up",
+      "minLevel": 60,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dragapult",
     "fra": "Lanssorien",

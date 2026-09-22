@@ -109,8 +109,14 @@
     "serebii": "toxicroak",
     "bulbapedia": "Toxicroak"
   },
-  "evolvesFrom": "croagunk",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["croagunk"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Toxicroak (Female)",
     "fra": "Coatox (Female)",

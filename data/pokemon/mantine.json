@@ -120,8 +120,13 @@
     "serebii": "mantine",
     "bulbapedia": "Mantine"
   },
-  "evolvesFrom": "mantyke",
-  "evoFromCondition": "with a Remoraid in party",
+  "evoMethods": [
+    {
+      "from": ["mantyke"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "party_pokemon", "pokemon": "remoraid" }]
+    }
+  ],
   "names": {
     "eng": "Mantine",
     "fra": "Démanta",

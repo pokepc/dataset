@@ -125,8 +125,14 @@
     "serebii": "jynx",
     "bulbapedia": "Jynx"
   },
-  "evolvesFrom": "smoochum",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["smoochum"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Jynx",
     "fra": "Lippoutou",

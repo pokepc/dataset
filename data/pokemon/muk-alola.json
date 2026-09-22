@@ -73,8 +73,14 @@
     "serebii": "muk",
     "bulbapedia": "Muk"
   },
-  "evolvesFrom": "grimer-alola",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["grimer-alola"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Muk (Alolan Form)",
     "esp": "Muk (Forma de Alola)",

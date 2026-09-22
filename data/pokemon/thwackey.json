@@ -58,8 +58,14 @@
     "serebii": "thwackey",
     "bulbapedia": "Thwackey"
   },
-  "evolvesFrom": "grookey",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["grookey"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Thwackey",
     "fra": "Badabouin",

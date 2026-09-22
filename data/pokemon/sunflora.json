@@ -117,8 +117,14 @@
     "serebii": "sunflora",
     "bulbapedia": "Sunflora"
   },
-  "evolvesFrom": "sunkern",
-  "evoFromItem": "sunstone",
+  "evoMethods": [
+    {
+      "from": ["sunkern"],
+      "trigger": "use_item",
+      "item": { "id": "sunstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sunflora",
     "fra": "Héliatronc",

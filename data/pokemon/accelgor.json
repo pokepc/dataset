@@ -86,8 +86,13 @@
     "serebii": "accelgor",
     "bulbapedia": "Accelgor"
   },
-  "evolvesFrom": "shelmet",
-  "evoFromCondition": "with a Karrablast",
+  "evoMethods": [
+    {
+      "from": ["shelmet"],
+      "trigger": "trade",
+      "conditions": [{ "key": "trade_partner", "pokemon": "karrablast" }]
+    }
+  ],
   "names": {
     "eng": "Accelgor",
     "fra": "Limaspeed",

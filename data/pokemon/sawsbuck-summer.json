@@ -79,8 +79,14 @@
     "serebii": "sawsbuck",
     "bulbapedia": "Sawsbuck"
   },
-  "evolvesFrom": "deerling",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["deerling-summer"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sawsbuck (Summer Form)",
     "esp": "Sawsbuck (Forma Verano)",

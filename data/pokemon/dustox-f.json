@@ -109,8 +109,14 @@
     "serebii": "dustox",
     "bulbapedia": "Dustox"
   },
-  "evolvesFrom": "cascoon",
-  "evoFromLevel": 10,
+  "evoMethods": [
+    {
+      "from": ["cascoon"],
+      "trigger": "level_up",
+      "minLevel": 10,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Dustox (Female)",
     "fra": "Papinox (Female)",

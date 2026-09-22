@@ -130,9 +130,14 @@
     "serebii": "hitmonchan",
     "bulbapedia": "Hitmonchan"
   },
-  "evolvesFrom": "tyrogue",
-  "evoFromLevel": 20,
-  "evoFromCondition": "with an Atk stat < its Def stat",
+  "evoMethods": [
+    {
+      "from": ["tyrogue"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "attack_defense_comparison", "comparison": "lt" }]
+    }
+  ],
   "names": {
     "eng": "Hitmonchan",
     "fra": "Tygnon",

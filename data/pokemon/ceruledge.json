@@ -59,8 +59,14 @@
     "serebii": "ceruledge",
     "bulbapedia": "Ceruledge"
   },
-  "evolvesFrom": "charcadet",
-  "evoFromItem": "maliciousarmor",
+  "evoMethods": [
+    {
+      "from": ["charcadet"],
+      "trigger": "use_item",
+      "item": { "id": "maliciousarmor", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ceruledge",
     "fra": "Malvalame",

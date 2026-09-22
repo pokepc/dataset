@@ -127,8 +127,14 @@
     "serebii": "pidgeot",
     "bulbapedia": "Pidgeot"
   },
-  "evolvesFrom": "pidgeotto",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["pidgeotto"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Pidgeot",
     "fra": "Roucarnage",

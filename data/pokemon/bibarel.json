@@ -99,8 +99,14 @@
     "serebii": "bibarel",
     "bulbapedia": "Bibarel"
   },
-  "evolvesFrom": "bidoof",
-  "evoFromLevel": 15,
+  "evoMethods": [
+    {
+      "from": ["bidoof"],
+      "trigger": "level_up",
+      "minLevel": 15,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bibarel",
     "fra": "Castorno",

@@ -60,8 +60,14 @@
     "serebii": "annihilape",
     "bulbapedia": "Annihilape"
   },
-  "evolvesFrom": "primeape",
-  "evoFromCondition": "Use Rage Fist 20 times and level-up",
+  "evoMethods": [
+    {
+      "from": ["primeape"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "use_move", "move": "ragefist", "count": 20 }]
+    }
+  ],
   "names": {
     "eng": "Annihilape",
     "fra": "Courrousinge",

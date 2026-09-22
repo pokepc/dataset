@@ -81,8 +81,14 @@
     "serebii": "primarina",
     "bulbapedia": "Primarina"
   },
-  "evolvesFrom": "brionne",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["brionne"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Primarina",
     "fra": "Oratoria",

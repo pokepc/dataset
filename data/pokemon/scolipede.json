@@ -92,8 +92,14 @@
     "serebii": "scolipede",
     "bulbapedia": "Scolipede"
   },
-  "evolvesFrom": "whirlipede",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["whirlipede"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Scolipede",
     "fra": "Brutapode",

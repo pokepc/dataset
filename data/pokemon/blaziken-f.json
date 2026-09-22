@@ -114,8 +114,14 @@
     "serebii": "blaziken",
     "bulbapedia": "Blaziken"
   },
-  "evolvesFrom": "combusken",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["combusken"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Blaziken (Female)",
     "fra": "Braségali (Female)",

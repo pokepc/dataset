@@ -88,9 +88,21 @@
     "serebii": "goodra",
     "bulbapedia": "Goodra"
   },
-  "evolvesFrom": "sliggoo",
-  "evoFromLevel": 50,
-  "evoFromCondition": "during rain",
+  "evoMethods": [
+    {
+      "from": ["sliggoo"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": [{ "key": "overworld_weather", "weather": ["rain"] }]
+    },
+    {
+      "from": ["sliggoo"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": [{ "key": "overworld_weather", "weather": ["rain", "fog"] }]
+    }
+  ],
   "names": {
     "eng": "Goodra",
     "fra": "Muplodocus",

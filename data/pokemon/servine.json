@@ -87,8 +87,14 @@
     "serebii": "servine",
     "bulbapedia": "Servine"
   },
-  "evolvesFrom": "snivy",
-  "evoFromLevel": 17,
+  "evoMethods": [
+    {
+      "from": ["snivy"],
+      "trigger": "level_up",
+      "minLevel": 17,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Servine",
     "fra": "Lianaja",

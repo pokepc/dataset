@@ -83,8 +83,14 @@
     "serebii": "graveler",
     "bulbapedia": "Graveler"
   },
-  "evolvesFrom": "geodude-alola",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["geodude-alola"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Graveler (Alolan Form)",
     "esp": "Graveler (Forma de Alola)",

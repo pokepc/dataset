@@ -60,8 +60,14 @@
     "serebii": "sinistcha",
     "bulbapedia": "Sinistcha"
   },
-  "evolvesFrom": "poltchageist",
-  "evoFromItem": "unremarkableteacup",
+  "evoMethods": [
+    {
+      "from": ["poltchageist"],
+      "trigger": "use_item",
+      "item": { "id": "unremarkableteacup", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sinistcha",
     "fra": "Théffroyable",

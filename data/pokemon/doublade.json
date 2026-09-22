@@ -83,8 +83,14 @@
     "serebii": "doublade",
     "bulbapedia": "Doublade"
   },
-  "evolvesFrom": "honedge",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["honedge"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Doublade",
     "fra": "Dimoclès",

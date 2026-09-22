@@ -73,8 +73,14 @@
     "serebii": "aromatisse",
     "bulbapedia": "Aromatisse"
   },
-  "evolvesFrom": "spritzee",
-  "evoFromItem": "sachet",
+  "evoMethods": [
+    {
+      "from": ["spritzee"],
+      "trigger": "trade",
+      "item": { "id": "sachet", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Aromatisse",
     "fra": "Cocotine",

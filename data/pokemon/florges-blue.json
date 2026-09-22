@@ -75,8 +75,14 @@
     "serebii": "florges",
     "bulbapedia": "Florges"
   },
-  "evolvesFrom": "floette-blue",
-  "evoFromItem": "shinystone",
+  "evoMethods": [
+    {
+      "from": ["floette-blue"],
+      "trigger": "use_item",
+      "item": { "id": "shinystone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Florges (Blue Flower)",
     "esp": "Florges (Flor Azul)",

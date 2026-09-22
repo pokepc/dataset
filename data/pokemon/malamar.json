@@ -88,9 +88,17 @@
     "serebii": "malamar",
     "bulbapedia": "Malamar"
   },
-  "evolvesFrom": "inkay",
-  "evoFromLevel": 30,
-  "evoFromCondition": "with the console turned upside-down",
+  "evoMethods": [
+    {
+      "from": ["inkay"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": [{ "key": "device_upside_down" }],
+      "notes": {
+        "eng": "On Switch, use handheld mode with attached Joy-Con and disconnect other controllers."
+      }
+    }
+  ],
   "names": {
     "eng": "Malamar",
     "fra": "Sepiatroce",

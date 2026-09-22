@@ -127,8 +127,14 @@
     "serebii": "lanturn",
     "bulbapedia": "Lanturn"
   },
-  "evolvesFrom": "chinchou",
-  "evoFromLevel": 27,
+  "evoMethods": [
+    {
+      "from": ["chinchou"],
+      "trigger": "level_up",
+      "minLevel": 27,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Lanturn",
     "fra": "Lanturn",

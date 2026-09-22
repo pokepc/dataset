@@ -129,8 +129,14 @@
     "serebii": "venomoth",
     "bulbapedia": "Venomoth"
   },
-  "evolvesFrom": "venonat",
-  "evoFromLevel": 31,
+  "evoMethods": [
+    {
+      "from": ["venonat"],
+      "trigger": "level_up",
+      "minLevel": 31,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Venomoth",
     "fra": "Aéromite",

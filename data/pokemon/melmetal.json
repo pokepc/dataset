@@ -58,6 +58,14 @@
     "serebii": "melmetal",
     "bulbapedia": "Melmetal"
   },
+  "evoMethods": [
+    {
+      "from": ["meltan"],
+      "games": ["go"],
+      "trigger": "special",
+      "conditions": [{ "key": "candy", "pokemon": "meltan", "count": 400 }]
+    }
+  ],
   "names": {
     "eng": "Melmetal",
     "fra": "Melmetal",

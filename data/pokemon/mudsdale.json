@@ -81,8 +81,14 @@
     "serebii": "mudsdale",
     "bulbapedia": "Mudsdale"
   },
-  "evolvesFrom": "mudbray",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["mudbray"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Mudsdale",
     "fra": "Bourrinos",

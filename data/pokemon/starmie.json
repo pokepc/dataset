@@ -137,8 +137,14 @@
     "serebii": "starmie",
     "bulbapedia": "Starmie"
   },
-  "evolvesFrom": "staryu",
-  "evoFromItem": "waterstone",
+  "evoMethods": [
+    {
+      "from": ["staryu"],
+      "trigger": "use_item",
+      "item": { "id": "waterstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Starmie",
     "fra": "Staross",

@@ -77,8 +77,14 @@
     "serebii": "darmanitan",
     "bulbapedia": "Darmanitan"
   },
-  "evolvesFrom": "darumaka",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["darumaka"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Darmanitan",
     "fra": "Darumacho",

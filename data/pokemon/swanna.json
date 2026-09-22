@@ -89,8 +89,14 @@
     "serebii": "swanna",
     "bulbapedia": "Swanna"
   },
-  "evolvesFrom": "ducklett",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["ducklett"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Swanna",
     "fra": "Lakmécygne",

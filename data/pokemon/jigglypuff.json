@@ -141,7 +141,13 @@
     "serebii": "jigglypuff",
     "bulbapedia": "Jigglypuff"
   },
-  "evolvesFrom": "igglybuff",
+  "evoMethods": [
+    {
+      "from": ["igglybuff"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Jigglypuff",
     "fra": "Rondoudou",

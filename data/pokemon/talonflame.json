@@ -89,8 +89,14 @@
     "serebii": "talonflame",
     "bulbapedia": "Talonflame"
   },
-  "evolvesFrom": "fletchinder",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["fletchinder"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Talonflame",
     "fra": "Flambusard",

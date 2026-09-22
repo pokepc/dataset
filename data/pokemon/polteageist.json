@@ -59,8 +59,14 @@
     "serebii": "polteageist",
     "bulbapedia": "Polteageist"
   },
-  "evolvesFrom": "sinistea",
-  "evoFromItem": "crackedpot",
+  "evoMethods": [
+    {
+      "from": ["sinistea"],
+      "trigger": "use_item",
+      "item": { "id": "crackedpot", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Polteageist",
     "fra": "Polthégeist",

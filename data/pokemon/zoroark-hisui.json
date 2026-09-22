@@ -60,8 +60,14 @@
     "serebii": "zoroark",
     "bulbapedia": "Zoroark"
   },
-  "evolvesFrom": "zorua-hisui",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["zorua-hisui"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Zoroark (Hisuian Form)",
     "fra": "Zoroark (Forme de Hisui)",

@@ -74,9 +74,14 @@
     "serebii": "tyrantrum",
     "bulbapedia": "Tyrantrum"
   },
-  "evolvesFrom": "tyrunt",
-  "evoFromLevel": 39,
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["tyrunt"],
+      "trigger": "level_up",
+      "minLevel": 39,
+      "conditions": [{ "key": "time_of_day", "time": "day" }]
+    }
+  ],
   "names": {
     "eng": "Tyrantrum",
     "fra": "Rexillius",

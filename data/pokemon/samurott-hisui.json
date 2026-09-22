@@ -61,8 +61,16 @@
     "serebii": "samurott",
     "bulbapedia": "Samurott"
   },
-  "evolvesFrom": "dewott",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["dewott"],
+      "games": ["la"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Samurott (Hisuian Form)",
     "fra": "Clamiral (Forme de Hisui)",

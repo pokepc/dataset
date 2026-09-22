@@ -134,7 +134,21 @@
     "serebii": "alakazam",
     "bulbapedia": "Alakazam"
   },
-  "evolvesFrom": "kadabra",
+  "evoMethods": [
+    {
+      "from": ["kadabra"],
+      "trigger": "trade",
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    },
+    {
+      "from": ["kadabra"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "linkingcord", "role": "used" },
+      "conditions": [{ "key": "gender", "gender": "female" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Alakazam (Female)",
     "fra": "Alakazam (Female)",

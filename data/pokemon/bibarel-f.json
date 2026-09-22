@@ -101,8 +101,14 @@
     "serebii": "bibarel",
     "bulbapedia": "Bibarel"
   },
-  "evolvesFrom": "bidoof",
-  "evoFromLevel": 15,
+  "evoMethods": [
+    {
+      "from": ["bidoof"],
+      "trigger": "level_up",
+      "minLevel": 15,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Bibarel (Female)",
     "fra": "Castorno (Female)",

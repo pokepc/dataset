@@ -62,8 +62,17 @@
     "serebii": "mrmime",
     "bulbapedia": "Mr. Mime"
   },
-  "evolvesFrom": "mimejr",
-  "evoFromMove": "mimic",
+  "evoMethods": [
+    {
+      "from": ["mimejr"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "known_move", "move": "mimic" },
+        { "key": "region", "region": "galar", "relation": "in" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mr. Mime (Galarian Form)",
     "esp": "Mr. Mime (Forma de Galar)",

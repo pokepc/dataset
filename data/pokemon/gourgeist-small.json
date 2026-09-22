@@ -77,7 +77,13 @@
     "serebii": "gourgeist",
     "bulbapedia": "Gourgeist"
   },
-  "evolvesFrom": "pumpkaboo-small",
+  "evoMethods": [
+    {
+      "from": ["pumpkaboo-small"],
+      "trigger": "trade",
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gourgeist (Small Size)",
     "esp": "Gourgeist (Tamaño Pequeño)",

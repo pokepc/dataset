@@ -61,8 +61,21 @@
     "serebii": "alcremie",
     "bulbapedia": "Alcremie"
   },
-  "evolvesFrom": "milcery",
-  "evoFromCondition": "spin while holding a Sweet",
+  "evoMethods": [
+    {
+      "from": ["milcery"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "special",
+      "item": { "id": "strawberrysweet", "role": "held" },
+      "conditions": [
+        { "key": "spin", "direction": "either", "seconds": 10, "comparison": "gt" },
+        { "key": "time_of_day", "time": "dusk" }
+      ],
+      "notes": {
+        "eng": "The evening window depends on the game; in Sword/Shield it is 19:00–19:59."
+      }
+    }
+  ],
   "names": {
     "eng": "Alcremie (Rainbow Swirl Strawberry Sweet)",
     "esp": "Alcremie (Tres Sabores)",

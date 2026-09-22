@@ -76,8 +76,14 @@
     "serebii": "watchog",
     "bulbapedia": "Watchog"
   },
-  "evolvesFrom": "patrat",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["patrat"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Watchog",
     "fra": "Miradar",

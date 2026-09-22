@@ -131,8 +131,14 @@
     "serebii": "electabuzz",
     "bulbapedia": "Electabuzz"
   },
-  "evolvesFrom": "elekid",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["elekid"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Electabuzz",
     "fra": "Élektek",

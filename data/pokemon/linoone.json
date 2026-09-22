@@ -108,8 +108,14 @@
     "serebii": "linoone",
     "bulbapedia": "Linoone"
   },
-  "evolvesFrom": "zigzagoon",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["zigzagoon"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Linoone",
     "fra": "Linéon",

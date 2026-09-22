@@ -81,8 +81,14 @@
     "serebii": "incineroar",
     "bulbapedia": "Incineroar"
   },
-  "evolvesFrom": "torracat",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["torracat"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Incineroar",
     "fra": "Félinferno",

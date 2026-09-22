@@ -125,8 +125,14 @@
     "serebii": "quagsire",
     "bulbapedia": "Quagsire"
   },
-  "evolvesFrom": "wooper",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["wooper"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Quagsire (Female)",
     "fra": "Maraiste (Female)",

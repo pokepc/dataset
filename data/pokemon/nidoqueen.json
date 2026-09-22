@@ -125,8 +125,14 @@
     "serebii": "nidoqueen",
     "bulbapedia": "Nidoqueen"
   },
-  "evolvesFrom": "nidorina",
-  "evoFromItem": "moonstone",
+  "evoMethods": [
+    {
+      "from": ["nidorina"],
+      "trigger": "use_item",
+      "item": { "id": "moonstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Nidoqueen",
     "fra": "Nidoqueen",

@@ -124,8 +124,14 @@
     "serebii": "charizard",
     "bulbapedia": "Charizard"
   },
-  "evolvesFrom": "charmeleon",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["charmeleon"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Charizard",
     "fra": "Dracaufeu",

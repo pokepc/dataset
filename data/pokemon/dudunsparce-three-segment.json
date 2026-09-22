@@ -61,8 +61,17 @@
     "serebii": "Dudunsparce",
     "bulbapedia": "Dudunsparce"
   },
-  "evolvesFrom": "dunsparce",
-  "evoFromMove": "hyperdrill",
+  "evoMethods": [
+    {
+      "from": ["dunsparce"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "known_move", "move": "hyperdrill" },
+        { "key": "hidden_value_branch", "percentage": 1 }
+      ]
+    }
+  ],
   "names": {
     "eng": "Dudunsparce (Three-Segment Form)",
     "fra": "Deusolourdo (Forme Triple)",

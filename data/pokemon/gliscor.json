@@ -102,9 +102,22 @@
     "serebii": "gliscor",
     "bulbapedia": "Gliscor"
   },
-  "evolvesFrom": "gligar",
-  "evoFromItem": "razorfang",
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["gligar"],
+      "trigger": "level_up",
+      "item": { "id": "razorfang", "role": "held" },
+      "conditions": [{ "key": "time_of_day", "time": "night" }]
+    },
+    {
+      "from": ["gligar"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "razorfang", "role": "used" },
+      "conditions": [{ "key": "time_of_day", "time": "night" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Gliscor",
     "fra": "Scorvol",

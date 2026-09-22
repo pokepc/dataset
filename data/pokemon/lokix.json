@@ -59,8 +59,14 @@
     "serebii": "lokix",
     "bulbapedia": "Lokix"
   },
-  "evolvesFrom": "nymble",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["nymble"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Lokix",
     "fra": "Gambex",

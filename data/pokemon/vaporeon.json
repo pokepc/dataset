@@ -138,8 +138,14 @@
     "serebii": "vaporeon",
     "bulbapedia": "Vaporeon"
   },
-  "evolvesFrom": "eevee",
-  "evoFromItem": "waterstone",
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "trigger": "use_item",
+      "item": { "id": "waterstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Vaporeon",
     "fra": "Aquali",

@@ -62,8 +62,14 @@
     "serebii": "linoone",
     "bulbapedia": "Linoone"
   },
-  "evolvesFrom": "zigzagoon-galar",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["zigzagoon-galar"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Linoone (Galarian Form)",
     "esp": "Linoone (Forma de Galar)",

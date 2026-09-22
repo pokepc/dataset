@@ -74,8 +74,14 @@
     "serebii": "clawitzer",
     "bulbapedia": "Clawitzer"
   },
-  "evolvesFrom": "clauncher",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["clauncher"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Clawitzer",
     "fra": "Gamblast",

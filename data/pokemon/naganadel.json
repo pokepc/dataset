@@ -59,8 +59,13 @@
     "serebii": "naganadel",
     "bulbapedia": "Naganadel"
   },
-  "evolvesFrom": "poipole",
-  "evoFromMove": "dragonpulse",
+  "evoMethods": [
+    {
+      "from": ["poipole"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "dragonpulse" }]
+    }
+  ],
   "names": {
     "eng": "Naganadel",
     "fra": "Mandrillon",

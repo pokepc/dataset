@@ -124,8 +124,14 @@
     "serebii": "metapod",
     "bulbapedia": "Metapod"
   },
-  "evolvesFrom": "caterpie",
-  "evoFromLevel": 7,
+  "evoMethods": [
+    {
+      "from": ["caterpie"],
+      "trigger": "level_up",
+      "minLevel": 7,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Metapod",
     "fra": "Chrysacier",

@@ -79,8 +79,19 @@
     "serebii": "vikavolt",
     "bulbapedia": "Vikavolt"
   },
-  "evolvesFrom": "charjabug",
-  "evoFromItem": "thunderstone",
+  "evoMethods": [
+    {
+      "from": ["charjabug"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "location", "location": "magnetic_field" }]
+    },
+    {
+      "from": ["charjabug"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Vikavolt",
     "fra": "Lucanon",

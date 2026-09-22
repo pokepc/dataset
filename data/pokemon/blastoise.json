@@ -123,8 +123,14 @@
     "serebii": "blastoise",
     "bulbapedia": "Blastoise"
   },
-  "evolvesFrom": "wartortle",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["wartortle"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Blastoise",
     "fra": "Tortank",

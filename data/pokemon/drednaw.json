@@ -60,8 +60,14 @@
     "serebii": "drednaw",
     "bulbapedia": "Drednaw"
   },
-  "evolvesFrom": "chewtle",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["chewtle"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Drednaw",
     "fra": "Torgamord",

@@ -119,8 +119,14 @@
     "serebii": "walrein",
     "bulbapedia": "Walrein"
   },
-  "evolvesFrom": "sealeo",
-  "evoFromLevel": 44,
+  "evoMethods": [
+    {
+      "from": ["sealeo"],
+      "trigger": "level_up",
+      "minLevel": 44,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Walrein",
     "fra": "Kaimorse",

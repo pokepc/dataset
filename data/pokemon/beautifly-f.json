@@ -109,8 +109,14 @@
     "serebii": "beautifly",
     "bulbapedia": "Beautifly"
   },
-  "evolvesFrom": "silcoon",
-  "evoFromLevel": 10,
+  "evoMethods": [
+    {
+      "from": ["silcoon"],
+      "trigger": "level_up",
+      "minLevel": 10,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Beautifly (Female)",
     "fra": "Charmillon (Female)",

@@ -123,8 +123,14 @@
     "serebii": "octillery",
     "bulbapedia": "Octillery"
   },
-  "evolvesFrom": "remoraid",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["remoraid"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Octillery (Female)",
     "fra": "Octillery (Female)",

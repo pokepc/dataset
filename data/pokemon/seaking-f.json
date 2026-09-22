@@ -130,8 +130,14 @@
     "serebii": "seaking",
     "bulbapedia": "Seaking"
   },
-  "evolvesFrom": "goldeen",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["goldeen"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": { "eng": "Seaking (Female)", "fra": "Poissoroy (Female)", "deu": "Golking (Female)" },
   "genus": {
     "eng": "Goldfish Pokémon",

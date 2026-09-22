@@ -104,8 +104,13 @@
     "serebii": "lickilicky",
     "bulbapedia": "Lickilicky"
   },
-  "evolvesFrom": "lickitung",
-  "evoFromMove": "rollout",
+  "evoMethods": [
+    {
+      "from": ["lickitung"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "rollout" }]
+    }
+  ],
   "names": {
     "eng": "Lickilicky",
     "fra": "Coudlangue",

@@ -150,7 +150,13 @@
     "serebii": "pikachu",
     "bulbapedia": "Pikachu"
   },
-  "evolvesFrom": "pichu",
+  "evoMethods": [
+    {
+      "from": ["pichu"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Pikachu",
     "fra": "Pikachu",

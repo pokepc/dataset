@@ -116,8 +116,14 @@
     "serebii": "hariyama",
     "bulbapedia": "Hariyama"
   },
-  "evolvesFrom": "makuhita",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["makuhita"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Hariyama",
     "fra": "Hariyama",

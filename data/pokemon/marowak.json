@@ -128,8 +128,14 @@
     "serebii": "marowak",
     "bulbapedia": "Marowak"
   },
-  "evolvesFrom": "cubone",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["cubone"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": [{ "key": "region", "region": "alola", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Marowak",
     "fra": "Ossatueur",

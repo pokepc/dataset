@@ -93,8 +93,14 @@
     "serebii": "vanilluxe",
     "bulbapedia": "Vanilluxe"
   },
-  "evolvesFrom": "vanillish",
-  "evoFromLevel": 47,
+  "evoMethods": [
+    {
+      "from": ["vanillish"],
+      "trigger": "level_up",
+      "minLevel": 47,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Vanilluxe",
     "fra": "Sorbouboul",

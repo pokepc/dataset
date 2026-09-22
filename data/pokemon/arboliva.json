@@ -59,8 +59,14 @@
     "serebii": "arboliva",
     "bulbapedia": "Arboliva"
   },
-  "evolvesFrom": "dolliv",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["dolliv"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Arboliva",
     "fra": "Arboliva",

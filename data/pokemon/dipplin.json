@@ -60,8 +60,14 @@
     "serebii": "dipplin",
     "bulbapedia": "Dipplin"
   },
-  "evolvesFrom": "applin",
-  "evoFromItem": "syrupyapple",
+  "evoMethods": [
+    {
+      "from": ["applin"],
+      "trigger": "use_item",
+      "item": { "id": "syrupyapple", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dipplin",
     "fra": "Pomdramour",

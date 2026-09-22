@@ -79,8 +79,14 @@
     "serebii": "torracat",
     "bulbapedia": "Torracat"
   },
-  "evolvesFrom": "litten",
-  "evoFromLevel": 17,
+  "evoMethods": [
+    {
+      "from": ["litten"],
+      "trigger": "level_up",
+      "minLevel": 17,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Torracat",
     "fra": "Matoufeu",

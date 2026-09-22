@@ -60,8 +60,13 @@
     "serebii": "hydrapple",
     "bulbapedia": "Hydrapple"
   },
-  "evolvesFrom": "dipplin",
-  "evoFromMove": "dragoncheer",
+  "evoMethods": [
+    {
+      "from": ["dipplin"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "dragoncheer" }]
+    }
+  ],
   "names": {
     "eng": "Hydrapple",
     "fra": "Pomdorochi",

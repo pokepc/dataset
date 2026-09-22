@@ -106,8 +106,14 @@
     "serebii": "lumineon",
     "bulbapedia": "Lumineon"
   },
-  "evolvesFrom": "finneon",
-  "evoFromLevel": 31,
+  "evoMethods": [
+    {
+      "from": ["finneon"],
+      "trigger": "level_up",
+      "minLevel": 31,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Lumineon (Female)",
     "fra": "Luminéon (Female)",

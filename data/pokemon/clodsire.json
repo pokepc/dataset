@@ -60,8 +60,14 @@
     "serebii": "clodsire",
     "bulbapedia": "Clodsire"
   },
-  "evolvesFrom": "wooper-paldea",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["wooper-paldea"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Clodsire",
     "fra": "Terraiste",

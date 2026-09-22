@@ -121,8 +121,22 @@
     "serebii": "milotic",
     "bulbapedia": "Milotic"
   },
-  "evolvesFrom": "feebas",
-  "evoFromItem": "prismscale",
+  "evoMethods": [
+    {
+      "from": ["feebas"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "beauty", "minValue": 170 },
+        { "key": "gender", "gender": "female" }
+      ]
+    },
+    {
+      "from": ["feebas"],
+      "trigger": "trade",
+      "item": { "id": "prismscale", "role": "held" },
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Milotic (Female)",
     "fra": "Milobellus (Female)",

@@ -138,7 +138,21 @@
     "serebii": "alakazam",
     "bulbapedia": "Alakazam"
   },
-  "evolvesFrom": "kadabra",
+  "evoMethods": [
+    {
+      "from": ["kadabra"],
+      "trigger": "trade",
+      "conditions": []
+    },
+    {
+      "from": ["kadabra"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "linkingcord", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Alakazam",
     "fra": "Alakazam",

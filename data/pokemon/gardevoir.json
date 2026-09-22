@@ -124,8 +124,14 @@
     "serebii": "gardevoir",
     "bulbapedia": "Gardevoir"
   },
-  "evolvesFrom": "kirlia",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["kirlia"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gardevoir",
     "fra": "Gardevoir",

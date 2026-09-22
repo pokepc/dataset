@@ -62,8 +62,33 @@
     "serebii": "toxtricity",
     "bulbapedia": "Toxtricity"
   },
-  "evolvesFrom": "toxel",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["toxel"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": [
+        {
+          "key": "nature",
+          "natures": [
+            "lonely",
+            "bold",
+            "relaxed",
+            "timid",
+            "serious",
+            "modest",
+            "mild",
+            "quiet",
+            "bashful",
+            "calm",
+            "gentle",
+            "careful"
+          ]
+        }
+      ]
+    }
+  ],
   "names": {
     "eng": "Toxtricity (Low Key Form)",
     "esp": "Toxtricity (Forma Grave)",

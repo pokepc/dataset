@@ -82,8 +82,14 @@
     "serebii": "palossand",
     "bulbapedia": "Palossand"
   },
-  "evolvesFrom": "sandygast",
-  "evoFromLevel": 42,
+  "evoMethods": [
+    {
+      "from": ["sandygast"],
+      "trigger": "level_up",
+      "minLevel": 42,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Palossand",
     "fra": "Trépassable",

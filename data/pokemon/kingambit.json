@@ -60,8 +60,21 @@
     "serebii": "kingambit",
     "bulbapedia": "Kingambit"
   },
-  "evolvesFrom": "bisharp",
-  "evoFromCondition": "Defeat 3 Bisharp leading Pawniard and level-up",
+  "evoMethods": [
+    {
+      "from": ["bisharp"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [
+        {
+          "key": "defeat_pokemon_holding_item",
+          "pokemon": "bisharp",
+          "item": "leaderscrest",
+          "count": 3
+        }
+      ]
+    }
+  ],
   "names": {
     "eng": "Kingambit",
     "fra": "Scalpereur",

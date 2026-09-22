@@ -58,8 +58,14 @@
     "serebii": "greedent",
     "bulbapedia": "Greedent"
   },
-  "evolvesFrom": "skwovet",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["skwovet"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Greedent",
     "fra": "Rongrigou",

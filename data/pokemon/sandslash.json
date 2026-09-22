@@ -130,8 +130,14 @@
     "serebii": "sandslash",
     "bulbapedia": "Sandslash"
   },
-  "evolvesFrom": "sandshrew",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["sandshrew"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sandslash",
     "fra": "Sablaireau",

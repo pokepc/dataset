@@ -112,8 +112,14 @@
     "serebii": "armaldo",
     "bulbapedia": "Armaldo"
   },
-  "evolvesFrom": "anorith",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["anorith"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Armaldo",
     "fra": "Armaldo",

@@ -61,8 +61,14 @@
     "serebii": "Oinkologne",
     "bulbapedia": "Oinkologne"
   },
-  "evolvesFrom": "lechonk",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["lechonk"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Oinkologne (Female)",
     "fra": "Fragroin (Femelle)",

@@ -119,8 +119,14 @@
     "serebii": "flygon",
     "bulbapedia": "Flygon"
   },
-  "evolvesFrom": "vibrava",
-  "evoFromLevel": 45,
+  "evoMethods": [
+    {
+      "from": ["vibrava"],
+      "trigger": "level_up",
+      "minLevel": 45,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Flygon",
     "fra": "Libégon",

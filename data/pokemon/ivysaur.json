@@ -123,8 +123,14 @@
     "serebii": "ivysaur",
     "bulbapedia": "Ivysaur"
   },
-  "evolvesFrom": "bulbasaur",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["bulbasaur"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ivysaur",
     "fra": "Herbizarre",

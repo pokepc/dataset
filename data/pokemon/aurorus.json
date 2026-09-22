@@ -74,9 +74,14 @@
     "serebii": "aurorus",
     "bulbapedia": "Aurorus"
   },
-  "evolvesFrom": "amaura",
-  "evoFromLevel": 39,
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["amaura"],
+      "trigger": "level_up",
+      "minLevel": 39,
+      "conditions": [{ "key": "time_of_day", "time": "night" }]
+    }
+  ],
   "names": {
     "eng": "Aurorus",
     "fra": "Dragmara",

@@ -116,8 +116,14 @@
     "serebii": "shiftry",
     "bulbapedia": "Shiftry"
   },
-  "evolvesFrom": "nuzleaf",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["nuzleaf"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Shiftry",
     "fra": "Tengalice",

@@ -90,8 +90,14 @@
     "serebii": "klinklang",
     "bulbapedia": "Klinklang"
   },
-  "evolvesFrom": "klang",
-  "evoFromLevel": 49,
+  "evoMethods": [
+    {
+      "from": ["klang"],
+      "trigger": "level_up",
+      "minLevel": 49,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Klinklang",
     "fra": "Cliticlic",

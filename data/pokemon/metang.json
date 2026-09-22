@@ -122,8 +122,14 @@
     "serebii": "metang",
     "bulbapedia": "Metang"
   },
-  "evolvesFrom": "beldum",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["beldum"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Metang",
     "fra": "Métang",

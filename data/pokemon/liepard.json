@@ -89,8 +89,14 @@
     "serebii": "liepard",
     "bulbapedia": "Liepard"
   },
-  "evolvesFrom": "purrloin",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["purrloin"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Liepard",
     "fra": "Léopardus",

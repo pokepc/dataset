@@ -62,8 +62,16 @@
     "serebii": "lilligant",
     "bulbapedia": "Lilligant"
   },
-  "evolvesFrom": "petilil",
-  "evoFromItem": "sunstone",
+  "evoMethods": [
+    {
+      "from": ["petilil"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "sunstone", "role": "used" },
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Lilligant (Hisuian Form)",
     "fra": "Fragilady (Forme de Hisui)",

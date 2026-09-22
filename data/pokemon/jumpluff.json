@@ -117,8 +117,14 @@
     "serebii": "jumpluff",
     "bulbapedia": "Jumpluff"
   },
-  "evolvesFrom": "skiploom",
-  "evoFromLevel": 27,
+  "evoMethods": [
+    {
+      "from": ["skiploom"],
+      "trigger": "level_up",
+      "minLevel": 27,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Jumpluff",
     "fra": "Cotovol",

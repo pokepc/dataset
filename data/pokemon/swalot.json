@@ -113,8 +113,14 @@
     "serebii": "swalot",
     "bulbapedia": "Swalot"
   },
-  "evolvesFrom": "gulpin",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["gulpin"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Swalot",
     "fra": "Avaltout",

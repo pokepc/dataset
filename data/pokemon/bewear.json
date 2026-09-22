@@ -60,8 +60,14 @@
     "serebii": "bewear",
     "bulbapedia": "Bewear"
   },
-  "evolvesFrom": "stufful",
-  "evoFromLevel": 27,
+  "evoMethods": [
+    {
+      "from": ["stufful"],
+      "trigger": "level_up",
+      "minLevel": 27,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bewear",
     "fra": "Chelours",

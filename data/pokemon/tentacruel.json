@@ -137,8 +137,14 @@
     "serebii": "tentacruel",
     "bulbapedia": "Tentacruel"
   },
-  "evolvesFrom": "tentacool",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["tentacool"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Tentacruel",
     "fra": "Tentacruel",

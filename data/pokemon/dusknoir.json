@@ -103,8 +103,22 @@
     "serebii": "dusknoir",
     "bulbapedia": "Dusknoir"
   },
-  "evolvesFrom": "dusclops",
-  "evoFromItem": "reapercloth",
+  "evoMethods": [
+    {
+      "from": ["dusclops"],
+      "trigger": "trade",
+      "item": { "id": "reapercloth", "role": "held" },
+      "conditions": []
+    },
+    {
+      "from": ["dusclops"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "reapercloth", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Dusknoir",
     "fra": "Noctunoir",

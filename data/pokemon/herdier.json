@@ -92,8 +92,14 @@
     "serebii": "herdier",
     "bulbapedia": "Herdier"
   },
-  "evolvesFrom": "lillipup",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["lillipup"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Herdier",
     "fra": "Ponchien",

@@ -102,8 +102,13 @@
     "serebii": "tangrowth",
     "bulbapedia": "Tangrowth"
   },
-  "evolvesFrom": "tangela",
-  "evoFromMove": "ancientpower",
+  "evoMethods": [
+    {
+      "from": ["tangela"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "ancientpower" }]
+    }
+  ],
   "names": {
     "eng": "Tangrowth",
     "fra": "Bouldeneu",

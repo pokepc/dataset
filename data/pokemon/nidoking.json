@@ -125,8 +125,14 @@
     "serebii": "nidoking",
     "bulbapedia": "Nidoking"
   },
-  "evolvesFrom": "nidorino",
-  "evoFromItem": "moonstone",
+  "evoMethods": [
+    {
+      "from": ["nidorino"],
+      "trigger": "use_item",
+      "item": { "id": "moonstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Nidoking",
     "fra": "Nidoking",

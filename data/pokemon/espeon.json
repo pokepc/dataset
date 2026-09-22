@@ -127,8 +127,13 @@
     "serebii": "espeon",
     "bulbapedia": "Espeon"
   },
-  "evolvesFrom": "eevee",
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "day" }]
+    }
+  ],
   "names": {
     "eng": "Espeon",
     "fra": "Mentali",

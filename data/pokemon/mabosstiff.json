@@ -59,8 +59,14 @@
     "serebii": "mabosstiff",
     "bulbapedia": "Mabosstiff"
   },
-  "evolvesFrom": "maschiff",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["maschiff"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Mabosstiff",
     "fra": "Dogrino",

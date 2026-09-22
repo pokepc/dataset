@@ -87,8 +87,14 @@
     "serebii": "cofagrigus",
     "bulbapedia": "Cofagrigus"
   },
-  "evolvesFrom": "yamask",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["yamask"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cofagrigus",
     "fra": "Tutankafer",

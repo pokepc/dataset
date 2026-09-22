@@ -110,8 +110,19 @@
     "serebii": "leafeon",
     "bulbapedia": "Leafeon"
   },
-  "evolvesFrom": "eevee",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "location", "location": "moss_rock" }]
+    },
+    {
+      "from": ["eevee"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Leafeon",
     "fra": "Phyllali",

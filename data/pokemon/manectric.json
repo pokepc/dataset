@@ -115,8 +115,14 @@
     "serebii": "manectric",
     "bulbapedia": "Manectric"
   },
-  "evolvesFrom": "electrike",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["electrike"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Manectric",
     "fra": "Élecsprint",

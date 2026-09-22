@@ -93,8 +93,14 @@
     "serebii": "galvantula",
     "bulbapedia": "Galvantula"
   },
-  "evolvesFrom": "joltik",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["joltik"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Galvantula",
     "fra": "Mygavolt",

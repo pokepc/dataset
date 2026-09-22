@@ -86,7 +86,13 @@
     "serebii": "persian",
     "bulbapedia": "Persian"
   },
-  "evolvesFrom": "meowth-alola",
+  "evoMethods": [
+    {
+      "from": ["meowth-alola"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Persian (Alolan Form)",
     "esp": "Persian (Forma de Alola)",

@@ -122,8 +122,14 @@
     "serebii": "wartortle",
     "bulbapedia": "Wartortle"
   },
-  "evolvesFrom": "squirtle",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["squirtle"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Wartortle",
     "fra": "Carabaffe",

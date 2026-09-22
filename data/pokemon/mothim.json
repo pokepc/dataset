@@ -94,8 +94,14 @@
     "serebii": "mothim",
     "bulbapedia": "Mothim"
   },
-  "evolvesFrom": "burmy",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["burmy", "burmy-sandy", "burmy-trash"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "gender", "gender": "male" }]
+    }
+  ],
   "names": {
     "eng": "Mothim",
     "fra": "Papilord",

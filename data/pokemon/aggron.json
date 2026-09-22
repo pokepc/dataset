@@ -116,8 +116,14 @@
     "serebii": "aggron",
     "bulbapedia": "Aggron"
   },
-  "evolvesFrom": "lairon",
-  "evoFromLevel": 42,
+  "evoMethods": [
+    {
+      "from": ["lairon"],
+      "trigger": "level_up",
+      "minLevel": 42,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Aggron",
     "fra": "Galeking",

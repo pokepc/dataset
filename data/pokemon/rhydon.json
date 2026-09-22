@@ -141,8 +141,14 @@
     "serebii": "rhydon",
     "bulbapedia": "Rhydon"
   },
-  "evolvesFrom": "rhyhorn",
-  "evoFromLevel": 42,
+  "evoMethods": [
+    {
+      "from": ["rhyhorn"],
+      "trigger": "level_up",
+      "minLevel": 42,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Rhydon",
     "fra": "Rhinoféros",

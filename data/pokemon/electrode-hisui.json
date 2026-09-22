@@ -62,8 +62,14 @@
     "serebii": "electrode",
     "bulbapedia": "Electrode"
   },
-  "evolvesFrom": "voltorb-hisui",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["voltorb-hisui"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Electrode (Hisuian Form)",
     "fra": "Électrode (Forme de Hisui)",

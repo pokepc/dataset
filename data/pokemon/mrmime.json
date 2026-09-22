@@ -131,8 +131,16 @@
     "serebii": "mrmime",
     "bulbapedia": "Mr. Mime"
   },
-  "evolvesFrom": "mimejr",
-  "evoFromMove": "mimic",
+  "evoMethods": [
+    {
+      "from": ["mimejr"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "known_move", "move": "mimic" },
+        { "key": "region", "region": "galar", "relation": "outside" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mr. Mime",
     "fra": "M. Mime",

@@ -58,8 +58,14 @@
     "serebii": "sirfetchd",
     "bulbapedia": "Sirfetch'd"
   },
-  "evolvesFrom": "farfetchd-galar",
-  "evoFromCondition": "Land 3 critical hits in 1 battle",
+  "evoMethods": [
+    {
+      "from": ["farfetchd-galar"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [{ "key": "critical_hits_in_one_battle", "count": 3 }]
+    }
+  ],
   "names": {
     "eng": "Sirfetch’d",
     "fra": "Palarticho",

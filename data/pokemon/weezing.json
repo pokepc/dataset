@@ -128,8 +128,14 @@
     "serebii": "weezing",
     "bulbapedia": "Weezing"
   },
-  "evolvesFrom": "koffing",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["koffing"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": [{ "key": "region", "region": "galar", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Weezing",
     "fra": "Smogogo",

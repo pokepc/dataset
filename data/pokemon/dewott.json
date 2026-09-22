@@ -89,8 +89,14 @@
     "serebii": "dewott",
     "bulbapedia": "Dewott"
   },
-  "evolvesFrom": "oshawott",
-  "evoFromLevel": 17,
+  "evoMethods": [
+    {
+      "from": ["oshawott"],
+      "trigger": "level_up",
+      "minLevel": 17,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dewott",
     "fra": "Mateloutre",

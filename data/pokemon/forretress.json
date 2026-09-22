@@ -121,8 +121,14 @@
     "serebii": "forretress",
     "bulbapedia": "Forretress"
   },
-  "evolvesFrom": "pineco",
-  "evoFromLevel": 31,
+  "evoMethods": [
+    {
+      "from": ["pineco"],
+      "trigger": "level_up",
+      "minLevel": 31,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Forretress",
     "fra": "Foretress",

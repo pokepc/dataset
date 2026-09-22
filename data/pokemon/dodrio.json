@@ -132,8 +132,14 @@
     "serebii": "dodrio",
     "bulbapedia": "Dodrio"
   },
-  "evolvesFrom": "doduo",
-  "evoFromLevel": 31,
+  "evoMethods": [
+    {
+      "from": ["doduo"],
+      "trigger": "level_up",
+      "minLevel": 31,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dodrio",
     "fra": "Dodrio",

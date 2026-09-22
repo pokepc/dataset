@@ -58,8 +58,14 @@
     "serebii": "quaxwell",
     "bulbapedia": "Quaxwell"
   },
-  "evolvesFrom": "quaxly",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["quaxly"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Quaxwell",
     "fra": "Canarbello",

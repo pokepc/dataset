@@ -129,7 +129,13 @@
     "serebii": "crobat",
     "bulbapedia": "Crobat"
   },
-  "evolvesFrom": "golbat",
+  "evoMethods": [
+    {
+      "from": ["golbat"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Crobat",
     "fra": "Nostenfer",

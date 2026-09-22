@@ -75,8 +75,14 @@
     "serebii": "diggersby",
     "bulbapedia": "Diggersby"
   },
-  "evolvesFrom": "bunnelby",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["bunnelby"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Diggersby",
     "fra": "Excavarenne",

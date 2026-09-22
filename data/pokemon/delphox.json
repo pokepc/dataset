@@ -74,8 +74,14 @@
     "serebii": "delphox",
     "bulbapedia": "Delphox"
   },
-  "evolvesFrom": "braixen",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["braixen"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Delphox",
     "fra": "Goupelin",

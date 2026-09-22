@@ -123,8 +123,14 @@
     "serebii": "altaria",
     "bulbapedia": "Altaria"
   },
-  "evolvesFrom": "swablu",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["swablu"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Altaria",
     "fra": "Altaria",

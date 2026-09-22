@@ -99,8 +99,14 @@
     "serebii": "krokorok",
     "bulbapedia": "Krokorok"
   },
-  "evolvesFrom": "sandile",
-  "evoFromLevel": 29,
+  "evoMethods": [
+    {
+      "from": ["sandile"],
+      "trigger": "level_up",
+      "minLevel": 29,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Krokorok",
     "fra": "Escroco",

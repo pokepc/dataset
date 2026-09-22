@@ -59,8 +59,13 @@
     "serebii": "frosmoth",
     "bulbapedia": "Frosmoth"
   },
-  "evolvesFrom": "snom",
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["snom"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "night" }]
+    }
+  ],
   "names": {
     "eng": "Frosmoth",
     "fra": "Beldeneige",

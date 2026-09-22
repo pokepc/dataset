@@ -112,8 +112,14 @@
     "serebii": "croconaw",
     "bulbapedia": "Croconaw"
   },
-  "evolvesFrom": "totodile",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["totodile"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Croconaw",
     "fra": "Crocrodil",

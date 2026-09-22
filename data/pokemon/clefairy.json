@@ -139,7 +139,13 @@
     "serebii": "clefairy",
     "bulbapedia": "Clefairy"
   },
-  "evolvesFrom": "cleffa",
+  "evoMethods": [
+    {
+      "from": ["cleffa"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Clefairy",
     "fra": "Mélofée",

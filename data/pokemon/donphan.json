@@ -116,8 +116,14 @@
     "serebii": "donphan",
     "bulbapedia": "Donphan"
   },
-  "evolvesFrom": "phanpy",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["phanpy"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Donphan",
     "fra": "Donphan",

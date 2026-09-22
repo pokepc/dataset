@@ -59,8 +59,14 @@
     "serebii": "corvisquire",
     "bulbapedia": "Corvisquire"
   },
-  "evolvesFrom": "rookidee",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["rookidee"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Corvisquire",
     "fra": "Bleuseille",

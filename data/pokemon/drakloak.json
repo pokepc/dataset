@@ -60,8 +60,14 @@
     "serebii": "drakloak",
     "bulbapedia": "Drakloak"
   },
-  "evolvesFrom": "dreepy",
-  "evoFromLevel": 50,
+  "evoMethods": [
+    {
+      "from": ["dreepy"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Drakloak",
     "fra": "Dispareptil",

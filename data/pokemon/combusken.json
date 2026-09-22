@@ -111,8 +111,14 @@
     "serebii": "combusken",
     "bulbapedia": "Combusken"
   },
-  "evolvesFrom": "torchic",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["torchic"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Combusken",
     "fra": "Galifeu",

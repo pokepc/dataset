@@ -104,8 +104,13 @@
     "serebii": "ambipom",
     "bulbapedia": "Ambipom"
   },
-  "evolvesFrom": "aipom",
-  "evoFromMove": "doublehit",
+  "evoMethods": [
+    {
+      "from": ["aipom"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "doublehit" }]
+    }
+  ],
   "names": {
     "eng": "Ambipom",
     "fra": "Capidextre",

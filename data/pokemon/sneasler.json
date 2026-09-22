@@ -60,9 +60,22 @@
     "serebii": "sneasler",
     "bulbapedia": "Sneasler"
   },
-  "evolvesFrom": "sneasel-hisui",
-  "evoFromItem": "razorclaw",
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["sneasel-hisui"],
+      "trigger": "level_up",
+      "item": { "id": "razorclaw", "role": "held" },
+      "conditions": [{ "key": "time_of_day", "time": "day" }]
+    },
+    {
+      "from": ["sneasel-hisui"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "razorclaw", "role": "used" },
+      "conditions": [{ "key": "time_of_day", "time": "day" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Sneasler",
     "fra": "Farfurex",

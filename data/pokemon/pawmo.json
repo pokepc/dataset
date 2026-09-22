@@ -60,8 +60,14 @@
     "serebii": "pawmo",
     "bulbapedia": "Pawmo"
   },
-  "evolvesFrom": "pawmi",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["pawmi"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Pawmo",
     "fra": "Pohmotte",

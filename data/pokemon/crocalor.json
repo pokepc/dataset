@@ -58,8 +58,14 @@
     "serebii": "crocalor",
     "bulbapedia": "Crocalor"
   },
-  "evolvesFrom": "fuecoco",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["fuecoco"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Crocalor",
     "fra": "Crocogril",

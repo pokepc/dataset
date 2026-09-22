@@ -113,8 +113,14 @@
     "serebii": "gallade",
     "bulbapedia": "Gallade"
   },
-  "evolvesFrom": "kirlia",
-  "evoFromItem": "dawnstone",
+  "evoMethods": [
+    {
+      "from": ["kirlia"],
+      "trigger": "use_item",
+      "item": { "id": "dawnstone", "role": "used" },
+      "conditions": [{ "key": "gender", "gender": "male" }]
+    }
+  ],
   "names": {
     "eng": "Gallade",
     "fra": "Gallame",

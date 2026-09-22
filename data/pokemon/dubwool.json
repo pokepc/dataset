@@ -59,8 +59,14 @@
     "serebii": "dubwool",
     "bulbapedia": "Dubwool"
   },
-  "evolvesFrom": "wooloo",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["wooloo"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dubwool",
     "fra": "Moumouflon",

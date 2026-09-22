@@ -59,9 +59,14 @@
     "serebii": "gumshoos",
     "bulbapedia": "Gumshoos"
   },
-  "evolvesFrom": "yungoos",
-  "evoFromLevel": 20,
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["yungoos"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "time_of_day", "time": "day" }]
+    }
+  ],
   "names": {
     "eng": "Gumshoos",
     "fra": "Argouste",

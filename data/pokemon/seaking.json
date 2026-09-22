@@ -134,8 +134,14 @@
     "serebii": "seaking",
     "bulbapedia": "Seaking"
   },
-  "evolvesFrom": "goldeen",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["goldeen"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Seaking",
     "fra": "Poissoroy",

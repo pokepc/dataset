@@ -58,8 +58,13 @@
     "serebii": "grapploct",
     "bulbapedia": "Grapploct"
   },
-  "evolvesFrom": "clobbopus",
-  "evoFromMove": "taunt",
+  "evoMethods": [
+    {
+      "from": ["clobbopus"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "taunt" }]
+    }
+  ],
   "names": {
     "eng": "Grapploct",
     "fra": "Krakos",

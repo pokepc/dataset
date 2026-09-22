@@ -123,8 +123,14 @@
     "serebii": "kabutops",
     "bulbapedia": "Kabutops"
   },
-  "evolvesFrom": "kabuto",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["kabuto"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kabutops",
     "fra": "Kabutops",

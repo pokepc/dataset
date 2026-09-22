@@ -92,8 +92,14 @@
     "serebii": "boldore",
     "bulbapedia": "Boldore"
   },
-  "evolvesFrom": "roggenrola",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["roggenrola"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Boldore",
     "fra": "Géolithe",

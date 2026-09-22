@@ -93,8 +93,14 @@
     "serebii": "hydreigon",
     "bulbapedia": "Hydreigon"
   },
-  "evolvesFrom": "zweilous",
-  "evoFromLevel": 64,
+  "evoMethods": [
+    {
+      "from": ["zweilous"],
+      "trigger": "level_up",
+      "minLevel": 64,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Hydreigon",
     "fra": "Trioxhydre",

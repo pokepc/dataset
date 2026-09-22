@@ -124,8 +124,14 @@
     "serebii": "venusaur",
     "bulbapedia": "Venusaur"
   },
-  "evolvesFrom": "ivysaur",
-  "evoFromLevel": 32,
+  "evoMethods": [
+    {
+      "from": ["ivysaur"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Venusaur",
     "fra": "Florizarre",

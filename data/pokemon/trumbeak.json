@@ -60,8 +60,14 @@
     "serebii": "trumbeak",
     "bulbapedia": "Trumbeak"
   },
-  "evolvesFrom": "pikipek",
-  "evoFromLevel": 14,
+  "evoMethods": [
+    {
+      "from": ["pikipek"],
+      "trigger": "level_up",
+      "minLevel": 14,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Trumbeak",
     "fra": "Piclairon",

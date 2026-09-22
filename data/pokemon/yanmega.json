@@ -105,8 +105,13 @@
     "serebii": "yanmega",
     "bulbapedia": "Yanmega"
   },
-  "evolvesFrom": "yanma",
-  "evoFromMove": "ancientpower",
+  "evoMethods": [
+    {
+      "from": ["yanma"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "ancientpower" }]
+    }
+  ],
   "names": {
     "eng": "Yanmega",
     "fra": "Yanmega",

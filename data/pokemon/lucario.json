@@ -114,8 +114,13 @@
     "serebii": "lucario",
     "bulbapedia": "Lucario"
   },
-  "evolvesFrom": "riolu",
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["riolu"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "day" }]
+    }
+  ],
   "names": {
     "eng": "Lucario",
     "fra": "Lucario",

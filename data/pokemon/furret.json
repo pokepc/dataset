@@ -116,8 +116,14 @@
     "serebii": "furret",
     "bulbapedia": "Furret"
   },
-  "evolvesFrom": "sentret",
-  "evoFromLevel": 15,
+  "evoMethods": [
+    {
+      "from": ["sentret"],
+      "trigger": "level_up",
+      "minLevel": 15,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Furret",
     "fra": "Fouinar",

@@ -124,8 +124,22 @@
     "serebii": "porygon2",
     "bulbapedia": "Porygon2"
   },
-  "evolvesFrom": "porygon",
-  "evoFromItem": "upgrade",
+  "evoMethods": [
+    {
+      "from": ["porygon"],
+      "trigger": "trade",
+      "item": { "id": "upgrade", "role": "held" },
+      "conditions": []
+    },
+    {
+      "from": ["porygon"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "upgrade", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Porygon2",
     "fra": "Porygon2",

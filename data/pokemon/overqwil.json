@@ -60,8 +60,31 @@
     "serebii": "overqwil",
     "bulbapedia": "Overqwil"
   },
-  "evolvesFrom": "qwilfish-hisui",
-  "evoFromCondition": "Use Strong style Barb Barrage 20 times",
+  "evoMethods": [
+    {
+      "from": ["qwilfish-hisui"],
+      "games": ["la"],
+      "trigger": "special",
+      "conditions": [{ "key": "use_move", "move": "barbbarrage", "count": 20, "style": "strong" }],
+      "activation": "manual"
+    },
+    {
+      "from": ["qwilfish-hisui"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "barbbarrage" }]
+    },
+    {
+      "from": ["qwilfish-hisui"],
+      "games": ["lza"],
+      "trigger": "special",
+      "conditions": [{ "key": "hit_with_move", "move": "barbbarrage", "count": 20 }],
+      "activation": "manual",
+      "notes": {
+        "eng": "Bulbapedia counts hits (including multiple targets); Serebii/PokéAPI summarize move uses. Exact counter semantics need verification."
+      }
+    }
+  ],
   "names": {
     "eng": "Overqwil",
     "fra": "Qwilpik",

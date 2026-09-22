@@ -62,8 +62,14 @@
     "serebii": "rapidash",
     "bulbapedia": "Rapidash"
   },
-  "evolvesFrom": "ponyta-galar",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["ponyta-galar"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Rapidash (Galarian Form)",
     "esp": "Rapidash (Forma de Galar)",

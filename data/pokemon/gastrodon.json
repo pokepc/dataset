@@ -106,8 +106,14 @@
     "serebii": "gastrodon",
     "bulbapedia": "Gastrodon"
   },
-  "evolvesFrom": "shellos",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["shellos"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gastrodon",
     "fra": "Tritosor",

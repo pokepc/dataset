@@ -132,8 +132,17 @@
     "serebii": "raichu",
     "bulbapedia": "Raichu"
   },
-  "evolvesFrom": "pikachu",
-  "evoFromItem": "thunderstone",
+  "evoMethods": [
+    {
+      "from": ["pikachu"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": [
+        { "key": "gender", "gender": "female" },
+        { "key": "region", "region": "alola", "relation": "outside" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Raichu (Female)",
     "fra": "Raichu (Female)",

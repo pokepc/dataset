@@ -59,8 +59,14 @@
     "serebii": "naclstack",
     "bulbapedia": "Naclstack"
   },
-  "evolvesFrom": "nacli",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["nacli"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Naclstack",
     "fra": "Amassel",

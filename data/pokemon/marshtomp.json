@@ -111,8 +111,14 @@
     "serebii": "marshtomp",
     "bulbapedia": "Marshtomp"
   },
-  "evolvesFrom": "mudkip",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["mudkip"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Marshtomp",
     "fra": "Flobio",

@@ -118,8 +118,14 @@
     "serebii": "shiftry",
     "bulbapedia": "Shiftry"
   },
-  "evolvesFrom": "nuzleaf",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["nuzleaf"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Shiftry (Female)",
     "fra": "Tengalice (Female)",

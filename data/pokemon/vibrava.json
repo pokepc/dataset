@@ -119,8 +119,14 @@
     "serebii": "vibrava",
     "bulbapedia": "Vibrava"
   },
-  "evolvesFrom": "trapinch",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["trapinch"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Vibrava",
     "fra": "Vibraninf",

@@ -120,8 +120,14 @@
     "serebii": "glalie",
     "bulbapedia": "Glalie"
   },
-  "evolvesFrom": "snorunt",
-  "evoFromLevel": 42,
+  "evoMethods": [
+    {
+      "from": ["snorunt"],
+      "trigger": "level_up",
+      "minLevel": 42,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Glalie",
     "fra": "Oniglali",

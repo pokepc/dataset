@@ -60,8 +60,14 @@
     "serebii": "tinkatuff",
     "bulbapedia": "Tinkatuff"
   },
-  "evolvesFrom": "tinkatink",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["tinkatink"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Tinkatuff",
     "fra": "Forgella",

@@ -81,8 +81,13 @@
     "serebii": "tsareena",
     "bulbapedia": "Tsareena"
   },
-  "evolvesFrom": "steenee",
-  "evoFromMove": "stomp",
+  "evoMethods": [
+    {
+      "from": ["steenee"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "stomp" }]
+    }
+  ],
   "names": {
     "eng": "Tsareena",
     "fra": "Sucreine",

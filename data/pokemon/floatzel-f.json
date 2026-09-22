@@ -105,8 +105,14 @@
     "serebii": "floatzel",
     "bulbapedia": "Floatzel"
   },
-  "evolvesFrom": "buizel",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["buizel"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Floatzel (Female)",
     "fra": "Mustéflott (Female)",

@@ -94,8 +94,14 @@
     "serebii": "lilligant",
     "bulbapedia": "Lilligant"
   },
-  "evolvesFrom": "petilil",
-  "evoFromItem": "sunstone",
+  "evoMethods": [
+    {
+      "from": ["petilil"],
+      "trigger": "use_item",
+      "item": { "id": "sunstone", "role": "used" },
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Lilligant",
     "fra": "Fragilady",

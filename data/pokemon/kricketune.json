@@ -99,8 +99,14 @@
     "serebii": "kricketune",
     "bulbapedia": "Kricketune"
   },
-  "evolvesFrom": "kricketot",
-  "evoFromLevel": 10,
+  "evoMethods": [
+    {
+      "from": ["kricketot"],
+      "trigger": "level_up",
+      "minLevel": 10,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kricketune",
     "fra": "Mélokrik",

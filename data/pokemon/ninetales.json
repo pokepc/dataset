@@ -130,8 +130,14 @@
     "serebii": "ninetales",
     "bulbapedia": "Ninetales"
   },
-  "evolvesFrom": "vulpix",
-  "evoFromItem": "firestone",
+  "evoMethods": [
+    {
+      "from": ["vulpix"],
+      "trigger": "use_item",
+      "item": { "id": "firestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ninetales",
     "fra": "Feunard",

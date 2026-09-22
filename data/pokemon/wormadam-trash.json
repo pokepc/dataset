@@ -96,8 +96,14 @@
     "serebii": "wormadam",
     "bulbapedia": "Wormadam"
   },
-  "evolvesFrom": "burmy",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["burmy-trash"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Wormadam (Trash Cloak)",
     "esp": "Wormadam (Tronco Basura)",

@@ -96,8 +96,14 @@
     "serebii": "haxorus",
     "bulbapedia": "Haxorus"
   },
-  "evolvesFrom": "fraxure",
-  "evoFromLevel": 48,
+  "evoMethods": [
+    {
+      "from": ["fraxure"],
+      "trigger": "level_up",
+      "minLevel": 48,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Haxorus",
     "fra": "Tranchodon",

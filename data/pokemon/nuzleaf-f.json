@@ -118,8 +118,14 @@
     "serebii": "nuzleaf",
     "bulbapedia": "Nuzleaf"
   },
-  "evolvesFrom": "seedot",
-  "evoFromLevel": 14,
+  "evoMethods": [
+    {
+      "from": ["seedot"],
+      "trigger": "level_up",
+      "minLevel": 14,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Nuzleaf (Female)",
     "fra": "Pifeuil (Female)",

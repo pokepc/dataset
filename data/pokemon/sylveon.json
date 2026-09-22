@@ -92,8 +92,23 @@
     "serebii": "sylveon",
     "bulbapedia": "Sylveon"
   },
-  "evolvesFrom": "eevee",
-  "evoFromCondition": "with a Fairy-type move and two levels of Affection",
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "affection", "minLevel": 2 },
+        { "key": "known_move_type", "type": "fairy" }
+      ]
+    },
+    {
+      "from": ["eevee"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v", "lza"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }, { "key": "known_move_type", "type": "fairy" }]
+    }
+  ],
   "names": {
     "eng": "Sylveon",
     "fra": "Nymphali",

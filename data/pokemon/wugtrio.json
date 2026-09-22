@@ -59,8 +59,14 @@
     "serebii": "wugtrio",
     "bulbapedia": "Wugtrio"
   },
-  "evolvesFrom": "wiglett",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["wiglett"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Wugtrio",
     "fra": "Triopikeau",

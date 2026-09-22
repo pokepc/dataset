@@ -69,8 +69,14 @@
     "serebii": "golisopod",
     "bulbapedia": "Golisopod"
   },
-  "evolvesFrom": "wimpod",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["wimpod"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Golisopod",
     "fra": "Sarmuraï",

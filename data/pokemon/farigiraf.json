@@ -60,8 +60,13 @@
     "serebii": "farigiraf",
     "bulbapedia": "Farigiraf"
   },
-  "evolvesFrom": "girafarig",
-  "evoFromMove": "twinbeam",
+  "evoMethods": [
+    {
+      "from": ["girafarig"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "twinbeam" }]
+    }
+  ],
   "names": {
     "eng": "Farigiraf",
     "fra": "Farigiraf",

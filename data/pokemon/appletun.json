@@ -60,8 +60,14 @@
     "serebii": "appletun",
     "bulbapedia": "Appletun"
   },
-  "evolvesFrom": "applin",
-  "evoFromItem": "sweetapple",
+  "evoMethods": [
+    {
+      "from": ["applin"],
+      "trigger": "use_item",
+      "item": { "id": "sweetapple", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Appletun",
     "fra": "Dratatin",

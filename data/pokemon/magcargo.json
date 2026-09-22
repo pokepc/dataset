@@ -121,8 +121,14 @@
     "serebii": "magcargo",
     "bulbapedia": "Magcargo"
   },
-  "evolvesFrom": "slugma",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["slugma"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Magcargo",
     "fra": "Volcaropod",

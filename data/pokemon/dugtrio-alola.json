@@ -87,8 +87,14 @@
     "serebii": "dugtrio",
     "bulbapedia": "Dugtrio"
   },
-  "evolvesFrom": "diglett-alola",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["diglett-alola"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dugtrio (Alolan Form)",
     "esp": "Dugtrio (Forma de Alola)",

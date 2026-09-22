@@ -117,8 +117,14 @@
     "serebii": "granbull",
     "bulbapedia": "Granbull"
   },
-  "evolvesFrom": "snubbull",
-  "evoFromLevel": 23,
+  "evoMethods": [
+    {
+      "from": ["snubbull"],
+      "trigger": "level_up",
+      "minLevel": 23,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Granbull",
     "fra": "Granbull",

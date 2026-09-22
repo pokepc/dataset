@@ -120,9 +120,14 @@
     "serebii": "hitmontop",
     "bulbapedia": "Hitmontop"
   },
-  "evolvesFrom": "tyrogue",
-  "evoFromLevel": 20,
-  "evoFromCondition": "with an Atk stat equal to its Def stat",
+  "evoMethods": [
+    {
+      "from": ["tyrogue"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "attack_defense_comparison", "comparison": "eq" }]
+    }
+  ],
   "names": {
     "eng": "Hitmontop",
     "fra": "Kapoera",

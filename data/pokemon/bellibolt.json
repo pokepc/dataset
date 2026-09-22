@@ -59,8 +59,14 @@
     "serebii": "bellibolt",
     "bulbapedia": "Bellibolt"
   },
-  "evolvesFrom": "tadbulb",
-  "evoFromItem": "thunderstone",
+  "evoMethods": [
+    {
+      "from": ["tadbulb"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bellibolt",
     "fra": "Ampibidou",

@@ -129,8 +129,14 @@
     "serebii": "kingdra",
     "bulbapedia": "Kingdra"
   },
-  "evolvesFrom": "seadra",
-  "evoFromItem": "dragonscale",
+  "evoMethods": [
+    {
+      "from": ["seadra"],
+      "trigger": "trade",
+      "item": { "id": "dragonscale", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kingdra",
     "fra": "Hyporoi",

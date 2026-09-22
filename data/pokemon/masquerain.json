@@ -116,8 +116,14 @@
     "serebii": "masquerain",
     "bulbapedia": "Masquerain"
   },
-  "evolvesFrom": "surskit",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["surskit"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Masquerain",
     "fra": "Maskadra",

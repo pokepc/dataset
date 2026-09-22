@@ -77,8 +77,14 @@
     "serebii": "vivillon",
     "bulbapedia": "Vivillon"
   },
-  "evolvesFrom": "spewpa",
-  "evoFromLevel": 12,
+  "evoMethods": [
+    {
+      "from": ["spewpa"],
+      "trigger": "level_up",
+      "minLevel": 12,
+      "conditions": [{ "key": "vivillon_pattern", "pattern": "garden" }]
+    }
+  ],
   "names": {
     "eng": "Vivillon (Garden Pattern)",
     "fra": "Prismillon (Motif Verdure)",

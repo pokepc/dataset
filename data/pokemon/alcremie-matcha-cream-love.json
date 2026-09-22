@@ -61,8 +61,18 @@
     "serebii": "alcremie",
     "bulbapedia": "Alcremie"
   },
-  "evolvesFrom": "milcery",
-  "evoFromCondition": "spin while holding a Sweet",
+  "evoMethods": [
+    {
+      "from": ["milcery"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "special",
+      "item": { "id": "lovesweet", "role": "held" },
+      "conditions": [
+        { "key": "spin", "direction": "clockwise", "seconds": 5, "comparison": "lt" },
+        { "key": "time_of_day", "time": "night" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Alcremie (Matcha Cream Love Sweet)",
     "fra": "Charmilly (Lait Matcha Cœur en Sucre)",

@@ -124,8 +124,14 @@
     "serebii": "metagross",
     "bulbapedia": "Metagross"
   },
-  "evolvesFrom": "metang",
-  "evoFromLevel": 45,
+  "evoMethods": [
+    {
+      "from": ["metang"],
+      "trigger": "level_up",
+      "minLevel": 45,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Metagross",
     "fra": "Métalosse",

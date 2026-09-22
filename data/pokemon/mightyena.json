@@ -109,8 +109,14 @@
     "serebii": "mightyena",
     "bulbapedia": "Mightyena"
   },
-  "evolvesFrom": "poochyena",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["poochyena"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Mightyena",
     "fra": "Grahyèna",

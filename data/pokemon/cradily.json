@@ -112,8 +112,14 @@
     "serebii": "cradily",
     "bulbapedia": "Cradily"
   },
-  "evolvesFrom": "lileep",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["lileep"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cradily",
     "fra": "Vacilys",

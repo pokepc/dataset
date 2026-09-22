@@ -60,8 +60,14 @@
     "serebii": "scovillain",
     "bulbapedia": "Scovillain"
   },
-  "evolvesFrom": "capsakid",
-  "evoFromItem": "firestone",
+  "evoMethods": [
+    {
+      "from": ["capsakid"],
+      "trigger": "use_item",
+      "item": { "id": "firestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Scovillain",
     "fra": "Scovilain",

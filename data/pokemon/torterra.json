@@ -99,8 +99,14 @@
     "serebii": "torterra",
     "bulbapedia": "Torterra"
   },
-  "evolvesFrom": "grotle",
-  "evoFromLevel": 32,
+  "evoMethods": [
+    {
+      "from": ["grotle"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Torterra",
     "fra": "Torterra",

@@ -122,8 +122,14 @@
     "serebii": "xatu",
     "bulbapedia": "Xatu"
   },
-  "evolvesFrom": "natu",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["natu"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Xatu",
     "fra": "Xatu",

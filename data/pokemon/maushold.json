@@ -60,8 +60,18 @@
     "serebii": "Maushold",
     "bulbapedia": "Maushold"
   },
-  "evolvesFrom": "tandemaus",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["tandemaus"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [
+        { "key": "hidden_value_branch", "percentage": 99 },
+        { "key": "battle_experience" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Maushold",
     "fra": "Famignol",

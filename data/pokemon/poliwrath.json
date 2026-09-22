@@ -135,8 +135,14 @@
     "serebii": "poliwrath",
     "bulbapedia": "Poliwrath"
   },
-  "evolvesFrom": "poliwhirl",
-  "evoFromItem": "waterstone",
+  "evoMethods": [
+    {
+      "from": ["poliwhirl"],
+      "trigger": "use_item",
+      "item": { "id": "waterstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Poliwrath",
     "fra": "Tartard",

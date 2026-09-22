@@ -74,8 +74,14 @@
     "serebii": "floette",
     "bulbapedia": "Floette"
   },
-  "evolvesFrom": "flabebe-blue",
-  "evoFromLevel": 19,
+  "evoMethods": [
+    {
+      "from": ["flabebe-blue"],
+      "trigger": "level_up",
+      "minLevel": 19,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Floette (Blue Flower)",
     "esp": "Floette (Flor Azul)",

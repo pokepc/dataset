@@ -61,8 +61,21 @@
     "serebii": "urshifu",
     "bulbapedia": "Urshifu"
   },
-  "evolvesFrom": "kubfu",
-  "evoFromCondition": "Defeat the Rapid Strike Tower",
+  "evoMethods": [
+    {
+      "from": ["kubfu"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [{ "key": "interact_with_scroll", "scroll": "waters" }]
+    },
+    {
+      "from": ["kubfu"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "scrollofwaters", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Urshifu (Rapid Strike Style)",
     "esp": "Urshifu (Estilo Fluido)",

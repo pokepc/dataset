@@ -77,8 +77,14 @@
     "serebii": "dragalge",
     "bulbapedia": "Dragalge"
   },
-  "evolvesFrom": "skrelp",
-  "evoFromLevel": 48,
+  "evoMethods": [
+    {
+      "from": ["skrelp"],
+      "trigger": "level_up",
+      "minLevel": 48,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dragalge",
     "fra": "Kravarech",

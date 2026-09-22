@@ -109,8 +109,14 @@
     "serebii": "bronzong",
     "bulbapedia": "Bronzong"
   },
-  "evolvesFrom": "bronzor",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["bronzor"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bronzong",
     "fra": "Archéodong",

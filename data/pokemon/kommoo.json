@@ -72,8 +72,14 @@
     "serebii": "kommoo",
     "bulbapedia": "Kommo-o"
   },
-  "evolvesFrom": "hakamoo",
-  "evoFromLevel": 45,
+  "evoMethods": [
+    {
+      "from": ["hakamoo"],
+      "trigger": "level_up",
+      "minLevel": 45,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kommo-o",
     "fra": "Ékaïser",

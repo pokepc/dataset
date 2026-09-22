@@ -90,8 +90,14 @@
     "serebii": "pignite",
     "bulbapedia": "Pignite"
   },
-  "evolvesFrom": "tepig",
-  "evoFromLevel": 17,
+  "evoMethods": [
+    {
+      "from": ["tepig"],
+      "trigger": "level_up",
+      "minLevel": 17,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Pignite",
     "fra": "Grotichon",

@@ -116,8 +116,14 @@
     "serebii": "camerupt",
     "bulbapedia": "Camerupt"
   },
-  "evolvesFrom": "numel",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["numel"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Camerupt (Female)",
     "fra": "Camérupt (Female)",

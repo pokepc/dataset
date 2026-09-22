@@ -62,9 +62,14 @@
     "serebii": "goodra",
     "bulbapedia": "Goodra"
   },
-  "evolvesFrom": "sliggoo-hisui",
-  "evoFromLevel": 50,
-  "evoFromCondition": "during rain",
+  "evoMethods": [
+    {
+      "from": ["sliggoo-hisui"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": [{ "key": "overworld_weather", "weather": ["rain"] }]
+    }
+  ],
   "names": {
     "eng": "Goodra (Hisuian Form)",
     "fra": "Muplodocus (Forme de Hisui)",

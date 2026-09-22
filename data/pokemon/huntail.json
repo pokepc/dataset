@@ -108,8 +108,14 @@
     "serebii": "huntail",
     "bulbapedia": "Huntail"
   },
-  "evolvesFrom": "clamperl",
-  "evoFromItem": "deepseatooth",
+  "evoMethods": [
+    {
+      "from": ["clamperl"],
+      "trigger": "trade",
+      "item": { "id": "deepseatooth", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Huntail",
     "fra": "Serpang",

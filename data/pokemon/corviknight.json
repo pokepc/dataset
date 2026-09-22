@@ -60,8 +60,14 @@
     "serebii": "corviknight",
     "bulbapedia": "Corviknight"
   },
-  "evolvesFrom": "corvisquire",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["corvisquire"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Corviknight",
     "fra": "Corvaillus",

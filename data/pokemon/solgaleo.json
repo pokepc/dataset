@@ -70,8 +70,15 @@
     "serebii": "solgaleo",
     "bulbapedia": "Solgaleo"
   },
-  "evolvesFrom": "cosmoem",
-  "evoFromLevel": 53,
+  "evoMethods": [
+    {
+      "from": ["cosmoem"],
+      "games": ["sm-s", "usum-us", "swsh-sw", "sv-s"],
+      "trigger": "level_up",
+      "minLevel": 53,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Solgaleo",
     "fra": "Solgaleo",

@@ -72,8 +72,14 @@
     "serebii": "frogadier",
     "bulbapedia": "Frogadier"
   },
-  "evolvesFrom": "froakie",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["froakie"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Frogadier",
     "fra": "Croâporal",

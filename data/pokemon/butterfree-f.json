@@ -123,8 +123,14 @@
     "serebii": "butterfree",
     "bulbapedia": "Butterfree"
   },
-  "evolvesFrom": "metapod",
-  "evoFromLevel": 10,
+  "evoMethods": [
+    {
+      "from": ["metapod"],
+      "trigger": "level_up",
+      "minLevel": 10,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Butterfree (Female)",
     "fra": "Papilusion (Female)",

@@ -59,8 +59,15 @@
     "serebii": "gholdengo",
     "bulbapedia": "Gholdengo"
   },
-  "evolvesFrom": "gimmighoul",
-  "evoFromCondition": "Level up with 999 Coins in the bag",
+  "evoMethods": [
+    {
+      "from": ["gimmighoul", "gimmighoul-roaming"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "item": { "id": "gimmighoulcoin", "role": "bag", "quantity": 999 },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gholdengo",
     "fra": "Gromago",

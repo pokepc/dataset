@@ -110,8 +110,19 @@
     "serebii": "magnezone",
     "bulbapedia": "Magnezone"
   },
-  "evolvesFrom": "magneton",
-  "evoFromItem": "thunderstone",
+  "evoMethods": [
+    {
+      "from": ["magneton"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "location", "location": "magnetic_field" }]
+    },
+    {
+      "from": ["magneton"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Magnezone",
     "fra": "Magnézone",

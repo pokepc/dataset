@@ -113,8 +113,14 @@
     "serebii": "ursaring",
     "bulbapedia": "Ursaring"
   },
-  "evolvesFrom": "teddiursa",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["teddiursa"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ursaring",
     "fra": "Ursaring",

@@ -108,8 +108,14 @@
     "serebii": "gorebyss",
     "bulbapedia": "Gorebyss"
   },
-  "evolvesFrom": "clamperl",
-  "evoFromItem": "deepseascale",
+  "evoMethods": [
+    {
+      "from": ["clamperl"],
+      "trigger": "trade",
+      "item": { "id": "deepseascale", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gorebyss",
     "fra": "Rosabyss",

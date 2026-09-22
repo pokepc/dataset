@@ -118,8 +118,14 @@
     "serebii": "banette",
     "bulbapedia": "Banette"
   },
-  "evolvesFrom": "shuppet",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["shuppet"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Banette",
     "fra": "Branette",

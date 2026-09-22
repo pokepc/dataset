@@ -133,8 +133,14 @@
     "serebii": "haunter",
     "bulbapedia": "Haunter"
   },
-  "evolvesFrom": "gastly",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["gastly"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Haunter",
     "fra": "Spectrum",

@@ -108,8 +108,14 @@
     "serebii": "loudred",
     "bulbapedia": "Loudred"
   },
-  "evolvesFrom": "whismur",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["whismur"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Loudred",
     "fra": "Ramboum",

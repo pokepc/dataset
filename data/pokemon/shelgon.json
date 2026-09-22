@@ -117,8 +117,14 @@
     "serebii": "shelgon",
     "bulbapedia": "Shelgon"
   },
-  "evolvesFrom": "bagon",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["bagon"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Shelgon",
     "fra": "Drackhaus",

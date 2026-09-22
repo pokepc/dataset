@@ -82,8 +82,14 @@
     "serebii": "toxapex",
     "bulbapedia": "Toxapex"
   },
-  "evolvesFrom": "mareanie",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["mareanie"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Toxapex",
     "fra": "Prédastérie",

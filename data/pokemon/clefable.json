@@ -140,8 +140,14 @@
     "serebii": "clefable",
     "bulbapedia": "Clefable"
   },
-  "evolvesFrom": "clefairy",
-  "evoFromItem": "moonstone",
+  "evoMethods": [
+    {
+      "from": ["clefairy"],
+      "trigger": "use_item",
+      "item": { "id": "moonstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Clefable",
     "fra": "Mélodelfe",

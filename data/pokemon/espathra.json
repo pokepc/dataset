@@ -59,8 +59,14 @@
     "serebii": "espathra",
     "bulbapedia": "Espathra"
   },
-  "evolvesFrom": "flittle",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["flittle"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Espathra",
     "fra": "Cléopsytra",

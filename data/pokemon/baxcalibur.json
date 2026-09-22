@@ -59,8 +59,14 @@
     "serebii": "baxcalibur",
     "bulbapedia": "Baxcalibur"
   },
-  "evolvesFrom": "arctibax",
-  "evoFromLevel": 54,
+  "evoMethods": [
+    {
+      "from": ["arctibax"],
+      "trigger": "level_up",
+      "minLevel": 54,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Baxcalibur",
     "fra": "Glaivodo",

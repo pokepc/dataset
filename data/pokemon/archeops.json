@@ -89,8 +89,14 @@
     "serebii": "archeops",
     "bulbapedia": "Archeops"
   },
-  "evolvesFrom": "archen",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["archen"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Archeops",
     "fra": "Aéroptéryx",

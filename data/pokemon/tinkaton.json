@@ -60,8 +60,14 @@
     "serebii": "tinkaton",
     "bulbapedia": "Tinkaton"
   },
-  "evolvesFrom": "tinkatuff",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["tinkatuff"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Tinkaton",
     "fra": "Forgelina",

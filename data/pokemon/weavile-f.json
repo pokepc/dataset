@@ -113,9 +113,28 @@
     "serebii": "weavile",
     "bulbapedia": "Weavile"
   },
-  "evolvesFrom": "sneasel",
-  "evoFromItem": "razorclaw",
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["sneasel"],
+      "trigger": "level_up",
+      "item": { "id": "razorclaw", "role": "held" },
+      "conditions": [
+        { "key": "time_of_day", "time": "night" },
+        { "key": "gender", "gender": "female" }
+      ]
+    },
+    {
+      "from": ["sneasel"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "razorclaw", "role": "used" },
+      "conditions": [
+        { "key": "time_of_day", "time": "night" },
+        { "key": "gender", "gender": "female" }
+      ],
+      "activation": "manual"
+    }
+  ],
   "names": { "eng": "Weavile (Female)", "fra": "Dimoret (Female)", "deu": "Snibunna (Female)" },
   "genus": {
     "eng": "Sharp Claw Pokémon",

@@ -125,8 +125,14 @@
     "serebii": "victreebel",
     "bulbapedia": "Victreebel"
   },
-  "evolvesFrom": "weepinbell",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["weepinbell"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Victreebel",
     "fra": "Empiflor",

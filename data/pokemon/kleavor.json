@@ -60,8 +60,16 @@
     "serebii": "kleavor",
     "bulbapedia": "Kleavor"
   },
-  "evolvesFrom": "scyther",
-  "evoFromCondition": "Black Augurite",
+  "evoMethods": [
+    {
+      "from": ["scyther"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "blackaugurite", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Kleavor",
     "fra": "Hachécateur",

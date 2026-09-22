@@ -97,8 +97,14 @@
     "serebii": "prinplup",
     "bulbapedia": "Prinplup"
   },
-  "evolvesFrom": "piplup",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["piplup"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Prinplup",
     "fra": "Prinplouf",

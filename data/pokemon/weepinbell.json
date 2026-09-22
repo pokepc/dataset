@@ -124,8 +124,14 @@
     "serebii": "weepinbell",
     "bulbapedia": "Weepinbell"
   },
-  "evolvesFrom": "bellsprout",
-  "evoFromLevel": 21,
+  "evoMethods": [
+    {
+      "from": ["bellsprout"],
+      "trigger": "level_up",
+      "minLevel": 21,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Weepinbell",
     "fra": "Boustiflor",

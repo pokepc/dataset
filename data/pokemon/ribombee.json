@@ -81,8 +81,14 @@
     "serebii": "ribombee",
     "bulbapedia": "Ribombee"
   },
-  "evolvesFrom": "cutiefly",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["cutiefly"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ribombee",
     "fra": "Rubombelle",

@@ -126,8 +126,14 @@
     "serebii": "slowking",
     "bulbapedia": "Slowking"
   },
-  "evolvesFrom": "slowpoke",
-  "evoFromItem": "kingsrock",
+  "evoMethods": [
+    {
+      "from": ["slowpoke"],
+      "trigger": "trade",
+      "item": { "id": "kingsrock", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Slowking",
     "fra": "Roigada",

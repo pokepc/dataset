@@ -125,8 +125,22 @@
     "serebii": "scizor",
     "bulbapedia": "Scizor"
   },
-  "evolvesFrom": "scyther",
-  "evoFromItem": "metalcoat",
+  "evoMethods": [
+    {
+      "from": ["scyther"],
+      "trigger": "trade",
+      "item": { "id": "metalcoat", "role": "held" },
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    },
+    {
+      "from": ["scyther"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "metalcoat", "role": "used" },
+      "conditions": [{ "key": "gender", "gender": "female" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Scizor (Female)",
     "fra": "Cizayox (Female)",

@@ -75,8 +75,14 @@
     "serebii": "simipour",
     "bulbapedia": "Simipour"
   },
-  "evolvesFrom": "panpour",
-  "evoFromItem": "waterstone",
+  "evoMethods": [
+    {
+      "from": ["panpour"],
+      "trigger": "use_item",
+      "item": { "id": "waterstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Simipour",
     "fra": "Flotoutan",

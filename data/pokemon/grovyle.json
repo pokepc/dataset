@@ -110,8 +110,14 @@
     "serebii": "grovyle",
     "bulbapedia": "Grovyle"
   },
-  "evolvesFrom": "treecko",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["treecko"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Grovyle",
     "fra": "Massko",

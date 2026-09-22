@@ -74,8 +74,14 @@
     "serebii": "floette",
     "bulbapedia": "Floette"
   },
-  "evolvesFrom": "flabebe-orange",
-  "evoFromLevel": 19,
+  "evoMethods": [
+    {
+      "from": ["flabebe-orange"],
+      "trigger": "level_up",
+      "minLevel": 19,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Floette (Orange Flower)",
     "esp": "Floette (Flor Naranja)",

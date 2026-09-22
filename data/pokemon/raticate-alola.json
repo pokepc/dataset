@@ -62,9 +62,14 @@
     "serebii": "raticate",
     "bulbapedia": "Raticate"
   },
-  "evolvesFrom": "rattata-alola",
-  "evoFromLevel": 20,
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["rattata-alola"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "time_of_day", "time": "night" }]
+    }
+  ],
   "names": {
     "eng": "Raticate (Alolan Form)",
     "esp": "Raticate (Forma de Alola)",

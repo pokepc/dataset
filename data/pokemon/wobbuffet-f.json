@@ -121,8 +121,14 @@
     "serebii": "wobbuffet",
     "bulbapedia": "Wobbuffet"
   },
-  "evolvesFrom": "wynaut",
-  "evoFromLevel": 15,
+  "evoMethods": [
+    {
+      "from": ["wynaut"],
+      "trigger": "level_up",
+      "minLevel": 15,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Wobbuffet (Female)",
     "fra": "Qulbutoké (Female)",

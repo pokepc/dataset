@@ -106,8 +106,14 @@
     "serebii": "togekiss",
     "bulbapedia": "Togekiss"
   },
-  "evolvesFrom": "togetic",
-  "evoFromItem": "shinystone",
+  "evoMethods": [
+    {
+      "from": ["togetic"],
+      "trigger": "use_item",
+      "item": { "id": "shinystone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Togekiss",
     "fra": "Togekiss",

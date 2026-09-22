@@ -128,8 +128,14 @@
     "serebii": "dodrio",
     "bulbapedia": "Dodrio"
   },
-  "evolvesFrom": "doduo",
-  "evoFromLevel": 31,
+  "evoMethods": [
+    {
+      "from": ["doduo"],
+      "trigger": "level_up",
+      "minLevel": 31,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Dodrio (Female)",
     "fra": "Dodrio (Female)",

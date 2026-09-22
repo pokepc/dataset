@@ -114,8 +114,14 @@
     "serebii": "wailord",
     "bulbapedia": "Wailord"
   },
-  "evolvesFrom": "wailmer",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["wailmer"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Wailord",
     "fra": "Wailord",

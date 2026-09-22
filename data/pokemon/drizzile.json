@@ -58,8 +58,14 @@
     "serebii": "drizzile",
     "bulbapedia": "Drizzile"
   },
-  "evolvesFrom": "sobble",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["sobble"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Drizzile",
     "fra": "Arrozard",

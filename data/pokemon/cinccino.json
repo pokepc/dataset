@@ -94,8 +94,14 @@
     "serebii": "cinccino",
     "bulbapedia": "Cinccino"
   },
-  "evolvesFrom": "minccino",
-  "evoFromItem": "shinystone",
+  "evoMethods": [
+    {
+      "from": ["minccino"],
+      "trigger": "use_item",
+      "item": { "id": "shinystone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cinccino",
     "fra": "Pashmilla",

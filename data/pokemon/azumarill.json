@@ -126,8 +126,14 @@
     "serebii": "azumarill",
     "bulbapedia": "Azumarill"
   },
-  "evolvesFrom": "marill",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["marill"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Azumarill",
     "fra": "Azumarill",

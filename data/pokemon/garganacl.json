@@ -59,8 +59,14 @@
     "serebii": "garganacl",
     "bulbapedia": "Garganacl"
   },
-  "evolvesFrom": "naclstack",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["naclstack"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Garganacl",
     "fra": "Gigansel",

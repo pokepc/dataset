@@ -119,8 +119,14 @@
     "serebii": "bellossom",
     "bulbapedia": "Bellossom"
   },
-  "evolvesFrom": "gloom",
-  "evoFromItem": "sunstone",
+  "evoMethods": [
+    {
+      "from": ["gloom"],
+      "trigger": "use_item",
+      "item": { "id": "sunstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bellossom",
     "fra": "Joliflor",

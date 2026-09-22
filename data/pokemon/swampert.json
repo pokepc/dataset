@@ -112,8 +112,14 @@
     "serebii": "swampert",
     "bulbapedia": "Swampert"
   },
-  "evolvesFrom": "marshtomp",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["marshtomp"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Swampert",
     "fra": "Laggron",

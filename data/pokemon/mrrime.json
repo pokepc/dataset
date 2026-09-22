@@ -60,8 +60,14 @@
     "serebii": "mrrime",
     "bulbapedia": "Mr. Rime"
   },
-  "evolvesFrom": "mrmime-galar",
-  "evoFromLevel": 42,
+  "evoMethods": [
+    {
+      "from": ["mrmime-galar"],
+      "trigger": "level_up",
+      "minLevel": 42,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Mr. Rime",
     "fra": "M. Glaquette",

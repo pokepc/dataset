@@ -93,8 +93,14 @@
     "serebii": "swadloon",
     "bulbapedia": "Swadloon"
   },
-  "evolvesFrom": "sewaddle",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["sewaddle"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Swadloon",
     "fra": "Couverdure",

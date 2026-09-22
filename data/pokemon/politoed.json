@@ -124,8 +124,14 @@
     "serebii": "politoed",
     "bulbapedia": "Politoed"
   },
-  "evolvesFrom": "poliwhirl",
-  "evoFromItem": "kingsrock",
+  "evoMethods": [
+    {
+      "from": ["poliwhirl"],
+      "trigger": "trade",
+      "item": { "id": "kingsrock", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Politoed",
     "fra": "Tarpaud",

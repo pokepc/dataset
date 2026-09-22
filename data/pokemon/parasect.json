@@ -128,8 +128,14 @@
     "serebii": "parasect",
     "bulbapedia": "Parasect"
   },
-  "evolvesFrom": "paras",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["paras"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Parasect",
     "fra": "Parasect",

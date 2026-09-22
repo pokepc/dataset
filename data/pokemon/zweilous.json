@@ -92,8 +92,14 @@
     "serebii": "zweilous",
     "bulbapedia": "Zweilous"
   },
-  "evolvesFrom": "deino",
-  "evoFromLevel": 50,
+  "evoMethods": [
+    {
+      "from": ["deino"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Zweilous",
     "fra": "Diamat",

@@ -74,8 +74,14 @@
     "serebii": "floette",
     "bulbapedia": "Floette"
   },
-  "evolvesFrom": "flabebe-yellow",
-  "evoFromLevel": 19,
+  "evoMethods": [
+    {
+      "from": ["flabebe-yellow"],
+      "trigger": "level_up",
+      "minLevel": 19,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Floette (Yellow Flower)",
     "esp": "Floette (Flor Amarilla)",

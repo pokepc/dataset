@@ -92,8 +92,14 @@
     "serebii": "mandibuzz",
     "bulbapedia": "Mandibuzz"
   },
-  "evolvesFrom": "vullaby",
-  "evoFromLevel": 54,
+  "evoMethods": [
+    {
+      "from": ["vullaby"],
+      "trigger": "level_up",
+      "minLevel": 54,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Mandibuzz",
     "fra": "Vaututrice",

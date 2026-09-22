@@ -118,8 +118,14 @@
     "serebii": "medicham",
     "bulbapedia": "Medicham"
   },
-  "evolvesFrom": "meditite",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["meditite"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Medicham (Female)",
     "fra": "Charmina (Female)",

@@ -123,8 +123,14 @@
     "serebii": "omastar",
     "bulbapedia": "Omastar"
   },
-  "evolvesFrom": "omanyte",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["omanyte"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Omastar",
     "fra": "Amonistar",

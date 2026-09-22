@@ -109,8 +109,14 @@
     "serebii": "slaking",
     "bulbapedia": "Slaking"
   },
-  "evolvesFrom": "vigoroth",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["vigoroth"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Slaking",
     "fra": "Monaflèmit",

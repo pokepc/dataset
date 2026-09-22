@@ -143,8 +143,14 @@
     "serebii": "gyarados",
     "bulbapedia": "Gyarados"
   },
-  "evolvesFrom": "magikarp",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["magikarp"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gyarados",
     "fra": "Léviator",

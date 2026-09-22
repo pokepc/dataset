@@ -75,8 +75,14 @@
     "serebii": "florges",
     "bulbapedia": "Florges"
   },
-  "evolvesFrom": "floette-white",
-  "evoFromItem": "shinystone",
+  "evoMethods": [
+    {
+      "from": ["floette-white"],
+      "trigger": "use_item",
+      "item": { "id": "shinystone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Florges (White Flower)",
     "esp": "Florges (Flor Blanca)",

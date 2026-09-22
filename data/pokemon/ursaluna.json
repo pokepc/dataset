@@ -60,8 +60,16 @@
     "serebii": "ursaluna",
     "bulbapedia": "Ursaluna"
   },
-  "evolvesFrom": "ursaring",
-  "evoFromCondition": "Peat Block when there's a full moon",
+  "evoMethods": [
+    {
+      "from": ["ursaring"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "peatblock", "role": "used" },
+      "conditions": [{ "key": "full_moon" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Ursaluna",
     "fra": "Ursaking",

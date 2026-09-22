@@ -112,8 +112,14 @@
     "serebii": "hippowdon",
     "bulbapedia": "Hippowdon"
   },
-  "evolvesFrom": "hippopotas",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["hippopotas"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Hippowdon (Female)",
     "fra": "Hippodocus (Female)",

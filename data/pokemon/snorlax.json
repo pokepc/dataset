@@ -137,7 +137,13 @@
     "serebii": "snorlax",
     "bulbapedia": "Snorlax"
   },
-  "evolvesFrom": "munchlax",
+  "evoMethods": [
+    {
+      "from": ["munchlax"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Snorlax",
     "fra": "Ronflex",

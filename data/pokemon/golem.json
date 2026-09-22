@@ -131,7 +131,21 @@
     "serebii": "golem",
     "bulbapedia": "Golem"
   },
-  "evolvesFrom": "graveler",
+  "evoMethods": [
+    {
+      "from": ["graveler"],
+      "trigger": "trade",
+      "conditions": []
+    },
+    {
+      "from": ["graveler"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "linkingcord", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Golem",
     "fra": "Grolem",

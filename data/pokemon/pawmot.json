@@ -60,8 +60,17 @@
     "serebii": "pawmot",
     "bulbapedia": "Pawmot"
   },
-  "evolvesFrom": "pawmo",
-  "evoFromCondition": "walk 1000 steps in Let's Go",
+  "evoMethods": [
+    {
+      "from": ["pawmo"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "walk_steps", "count": 1000, "mode": "lets_go" },
+        { "key": "outside_poke_ball" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Pawmot",
     "fra": "Pohmarmotte",

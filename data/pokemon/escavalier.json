@@ -87,8 +87,13 @@
     "serebii": "escavalier",
     "bulbapedia": "Escavalier"
   },
-  "evolvesFrom": "karrablast",
-  "evoFromCondition": "with a Shelmet",
+  "evoMethods": [
+    {
+      "from": ["karrablast"],
+      "trigger": "trade",
+      "conditions": [{ "key": "trade_partner", "pokemon": "shelmet" }]
+    }
+  ],
   "names": {
     "eng": "Escavalier",
     "fra": "Lançargot",

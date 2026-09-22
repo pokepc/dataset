@@ -82,8 +82,14 @@
     "serebii": "purugly",
     "bulbapedia": "Purugly"
   },
-  "evolvesFrom": "glameow",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["glameow"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Purugly",
     "fra": "Chaffreux",

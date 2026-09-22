@@ -129,8 +129,14 @@
     "serebii": "dewgong",
     "bulbapedia": "Dewgong"
   },
-  "evolvesFrom": "seel",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["seel"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dewgong",
     "fra": "Lamantine",

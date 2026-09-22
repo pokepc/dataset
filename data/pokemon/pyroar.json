@@ -75,8 +75,14 @@
     "serebii": "pyroar",
     "bulbapedia": "Pyroar"
   },
-  "evolvesFrom": "litleo",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["litleo"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Pyroar",
     "fra": "Némélios",

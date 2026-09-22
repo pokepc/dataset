@@ -62,8 +62,14 @@
     "serebii": "arcanine",
     "bulbapedia": "Arcanine"
   },
-  "evolvesFrom": "growlithe-hisui",
-  "evoFromItem": "firestone",
+  "evoMethods": [
+    {
+      "from": ["growlithe-hisui"],
+      "trigger": "use_item",
+      "item": { "id": "firestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Arcanine (Hisuian Form)",
     "fra": "Arcanin (Forme de Hisui)",

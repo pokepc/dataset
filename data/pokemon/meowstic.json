@@ -78,8 +78,14 @@
     "serebii": "meowstic",
     "bulbapedia": "Meowstic"
   },
-  "evolvesFrom": "espurr",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["espurr"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [{ "key": "gender", "gender": "male" }]
+    }
+  ],
   "names": {
     "eng": "Meowstic",
     "fra": "Mistigrix",

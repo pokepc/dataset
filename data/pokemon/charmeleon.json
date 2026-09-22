@@ -122,8 +122,14 @@
     "serebii": "charmeleon",
     "bulbapedia": "Charmeleon"
   },
-  "evolvesFrom": "charmander",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["charmander"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Charmeleon",
     "fra": "Reptincel",

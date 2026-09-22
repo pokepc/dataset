@@ -93,8 +93,14 @@
     "serebii": "bisharp",
     "bulbapedia": "Bisharp"
   },
-  "evolvesFrom": "pawniard",
-  "evoFromLevel": 52,
+  "evoMethods": [
+    {
+      "from": ["pawniard"],
+      "trigger": "level_up",
+      "minLevel": 52,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bisharp",
     "fra": "Scalproie",

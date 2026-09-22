@@ -72,8 +72,14 @@
     "serebii": "quilladin",
     "bulbapedia": "Quilladin"
   },
-  "evolvesFrom": "chespin",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["chespin"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Quilladin",
     "fra": "Boguérisse",

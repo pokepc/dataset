@@ -96,8 +96,14 @@
     "serebii": "excadrill",
     "bulbapedia": "Excadrill"
   },
-  "evolvesFrom": "drilbur",
-  "evoFromLevel": 31,
+  "evoMethods": [
+    {
+      "from": ["drilbur"],
+      "trigger": "level_up",
+      "minLevel": 31,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Excadrill",
     "fra": "Minotaupe",

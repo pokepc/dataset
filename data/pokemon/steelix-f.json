@@ -127,8 +127,22 @@
     "serebii": "steelix",
     "bulbapedia": "Steelix"
   },
-  "evolvesFrom": "onix",
-  "evoFromItem": "metalcoat",
+  "evoMethods": [
+    {
+      "from": ["onix"],
+      "trigger": "trade",
+      "item": { "id": "metalcoat", "role": "held" },
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    },
+    {
+      "from": ["onix"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "metalcoat", "role": "used" },
+      "conditions": [{ "key": "gender", "gender": "female" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Steelix (Female)",
     "fra": "Steelix (Female)",

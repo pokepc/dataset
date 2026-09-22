@@ -100,8 +100,14 @@
     "serebii": "skuntank",
     "bulbapedia": "Skuntank"
   },
-  "evolvesFrom": "stunky",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["stunky"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Skuntank",
     "fra": "Moufflair",

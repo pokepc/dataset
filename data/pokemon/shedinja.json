@@ -107,8 +107,21 @@
     "serebii": "shedinja",
     "bulbapedia": "Shedinja"
   },
-  "evolvesFrom": "nincada",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["nincada"],
+      "trigger": "special",
+      "minLevel": 20,
+      "conditions": [
+        { "key": "evolve_other", "pokemon": "ninjask" },
+        { "key": "spare_party_slot" }
+      ],
+      "additionalResult": true,
+      "notes": {
+        "eng": "From Generation IV onward, also requires a regular Poké Ball in the Bag. Generation III does not require the spare Poké Ball."
+      }
+    }
+  ],
   "names": {
     "eng": "Shedinja",
     "fra": "Munja",

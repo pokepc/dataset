@@ -142,3 +142,64 @@ export const ivJudgeValues = ['nogood', 'decent', 'good', 'verygood', 'fantastic
 
 export const battleStyles = ['singles', 'doubles', 'triples', 'rotation', 'royale'] as const
 export const raidStyles = ['dynamax', 'tera'] as const
+
+/** Evolution vocabulary, also used by the evolution schemas. */
+export const evoTriggers = ['level_up', 'trade', 'use_item', 'special'] as const
+export const evoItemRoles = ['held', 'used', 'bag'] as const
+export const evoActivations = ['automatic', 'manual'] as const
+export const evoConditionKeys = [
+  'friendship',
+  'affection',
+  'beauty',
+  'gender',
+  'time_of_day',
+  'known_move',
+  'known_move_type',
+  'ability',
+  'party_pokemon',
+  'party_type',
+  'trade_partner',
+  'attack_defense_comparison',
+  'overworld_weather',
+  'location',
+  'region',
+  'device_upside_down',
+  'union_circle',
+  'walk_steps',
+  'outside_poke_ball',
+  'battle_experience',
+  'use_move',
+  'hit_with_move',
+  'recoil_damage_without_fainting',
+  'damage_without_fainting',
+  'critical_hits_in_one_battle',
+  'defeat_pokemon_holding_item',
+  'spin',
+  'hidden_value_branch',
+  'nature',
+  'spare_party_slot',
+  'spare_poke_ball',
+  'evolve_other',
+  'full_moon',
+  'interact_with_scroll',
+  'vivillon_pattern',
+  'candy',
+] as const
+export const evoGenders = ['male', 'female', 'genderless'] as const
+export const evoTimesOfDay = ['day', 'night', 'dusk'] as const
+export const evoStatComparisons = ['lt', 'eq', 'gt'] as const
+export const evoWeather = ['rain', 'fog'] as const
+export const evoLocations = [
+  'magnetic_field',
+  'moss_rock',
+  'ice_rock',
+  'mount_lanakila',
+  'dusty_bowl_arch',
+  'coulant_waterway_bridge',
+] as const
+export const evoRegionRelations = ['in', 'outside'] as const
+export const evoWalkModes = ['lets_go'] as const
+export const evoMoveStyles = ['agile', 'strong'] as const
+export const evoSpinDirections = ['clockwise', 'counterclockwise', 'either'] as const
+export const evoSpinComparisons = ['lt', 'gt'] as const
+export const evoScrolls = ['darkness', 'waters'] as const

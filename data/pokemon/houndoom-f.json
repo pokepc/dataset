@@ -118,8 +118,14 @@
     "serebii": "houndoom",
     "bulbapedia": "Houndoom"
   },
-  "evolvesFrom": "houndour",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["houndour"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Houndoom (Female)",
     "fra": "Démolosse (Female)",

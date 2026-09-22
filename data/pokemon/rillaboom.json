@@ -58,8 +58,14 @@
     "serebii": "rillaboom",
     "bulbapedia": "Rillaboom"
   },
-  "evolvesFrom": "thwackey",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["thwackey"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Rillaboom",
     "fra": "Gorythmic",

@@ -60,8 +60,14 @@
     "serebii": "archaludon",
     "bulbapedia": "Archaludon"
   },
-  "evolvesFrom": "duraludon",
-  "evoFromItem": "metalalloy",
+  "evoMethods": [
+    {
+      "from": ["duraludon"],
+      "trigger": "use_item",
+      "item": { "id": "metalalloy", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Archaludon",
     "fra": "Pondralugon",

@@ -79,8 +79,14 @@
     "serebii": "sawsbuck",
     "bulbapedia": "Sawsbuck"
   },
-  "evolvesFrom": "deerling",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["deerling-autumn"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sawsbuck (Autumn Form)",
     "esp": "Sawsbuck (Forma Otoño)",

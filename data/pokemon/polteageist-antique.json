@@ -60,8 +60,14 @@
     "serebii": "polteageist",
     "bulbapedia": "Polteageist"
   },
-  "evolvesFrom": "sinistea-antique",
-  "evoFromItem": "chippedpot",
+  "evoMethods": [
+    {
+      "from": ["sinistea-antique"],
+      "trigger": "use_item",
+      "item": { "id": "chippedpot", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Polteageist (Antique Form)",
     "fra": "Polthégeist (Forme Authentique)",

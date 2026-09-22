@@ -115,8 +115,22 @@
     "serebii": "rhyperior",
     "bulbapedia": "Rhyperior"
   },
-  "evolvesFrom": "rhydon",
-  "evoFromItem": "protector",
+  "evoMethods": [
+    {
+      "from": ["rhydon"],
+      "trigger": "trade",
+      "item": { "id": "protector", "role": "held" },
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    },
+    {
+      "from": ["rhydon"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "protector", "role": "used" },
+      "conditions": [{ "key": "gender", "gender": "female" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Rhyperior (Female)",
     "fra": "Rhinastoc (Female)",

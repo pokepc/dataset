@@ -58,8 +58,33 @@
     "serebii": "runerigus",
     "bulbapedia": "Runerigus"
   },
-  "evolvesFrom": "yamask-galar",
-  "evoFromCondition": "Have 49+ HP lost and walk under stone sculpture in Dusty Bowl",
+  "evoMethods": [
+    {
+      "from": ["yamask-galar"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "damage_without_fainting", "amount": 49 },
+        { "key": "location", "location": "dusty_bowl_arch" }
+      ],
+      "notes": {
+        "eng": "Sources disagree on accumulated damage versus currently missing HP and the precise threshold. Do not treat this as an executable counter until verified."
+      }
+    },
+    {
+      "from": ["yamask-galar"],
+      "games": ["lza"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "damage_without_fainting", "amount": 49 },
+        { "key": "location", "location": "coulant_waterway_bridge" }
+      ],
+      "activation": "manual",
+      "notes": {
+        "eng": "Sources disagree on accumulated damage versus currently missing HP and the precise threshold. Do not treat this as an executable counter until verified."
+      }
+    }
+  ],
   "names": {
     "eng": "Runerigus",
     "fra": "Tutétékri",

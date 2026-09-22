@@ -60,8 +60,14 @@
     "serebii": "grimmsnarl",
     "bulbapedia": "Grimmsnarl"
   },
-  "evolvesFrom": "morgrem",
-  "evoFromLevel": 42,
+  "evoMethods": [
+    {
+      "from": ["morgrem"],
+      "trigger": "level_up",
+      "minLevel": 42,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Grimmsnarl",
     "fra": "Angoliath",

@@ -59,8 +59,14 @@
     "serebii": "arctibax",
     "bulbapedia": "Arctibax"
   },
-  "evolvesFrom": "frigibax",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["frigibax"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Arctibax",
     "fra": "Cryodo",

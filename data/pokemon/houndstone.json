@@ -58,9 +58,14 @@
     "serebii": "houndstone",
     "bulbapedia": "Houndstone"
   },
-  "evolvesFrom": "greavard",
-  "evoFromLevel": 30,
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["greavard"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": [{ "key": "time_of_day", "time": "night" }]
+    }
+  ],
   "names": {
     "eng": "Houndstone",
     "fra": "Tomberro",

@@ -114,8 +114,14 @@
     "serebii": "camerupt",
     "bulbapedia": "Camerupt"
   },
-  "evolvesFrom": "numel",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["numel"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Camerupt",
     "fra": "Camérupt",

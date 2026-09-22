@@ -95,8 +95,14 @@
     "serebii": "golurk",
     "bulbapedia": "Golurk"
   },
-  "evolvesFrom": "golett",
-  "evoFromLevel": 43,
+  "evoMethods": [
+    {
+      "from": ["golett"],
+      "trigger": "level_up",
+      "minLevel": 43,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Golurk",
     "fra": "Golemastoc",

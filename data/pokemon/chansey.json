@@ -137,9 +137,22 @@
     "serebii": "chansey",
     "bulbapedia": "Chansey"
   },
-  "evolvesFrom": "happiny",
-  "evoFromItem": "ovalstone",
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["happiny"],
+      "trigger": "level_up",
+      "item": { "id": "ovalstone", "role": "held" },
+      "conditions": [{ "key": "time_of_day", "time": "day" }]
+    },
+    {
+      "from": ["happiny"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "ovalstone", "role": "used" },
+      "conditions": [{ "key": "time_of_day", "time": "day" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Chansey",
     "fra": "Leveinard",

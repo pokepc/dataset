@@ -111,8 +111,14 @@
     "serebii": "drifblim",
     "bulbapedia": "Drifblim"
   },
-  "evolvesFrom": "drifloon",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["drifloon"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Drifblim",
     "fra": "Grodrive",

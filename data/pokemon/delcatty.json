@@ -104,8 +104,14 @@
     "serebii": "delcatty",
     "bulbapedia": "Delcatty"
   },
-  "evolvesFrom": "skitty",
-  "evoFromItem": "moonstone",
+  "evoMethods": [
+    {
+      "from": ["skitty"],
+      "trigger": "use_item",
+      "item": { "id": "moonstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Delcatty",
     "fra": "Delcatty",

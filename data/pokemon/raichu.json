@@ -135,8 +135,14 @@
     "serebii": "raichu",
     "bulbapedia": "Raichu"
   },
-  "evolvesFrom": "pikachu",
-  "evoFromItem": "thunderstone",
+  "evoMethods": [
+    {
+      "from": ["pikachu"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": [{ "key": "region", "region": "alola", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Raichu",
     "fra": "Raichu",

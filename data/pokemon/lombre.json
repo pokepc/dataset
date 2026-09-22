@@ -114,8 +114,14 @@
     "serebii": "lombre",
     "bulbapedia": "Lombre"
   },
-  "evolvesFrom": "lotad",
-  "evoFromLevel": 14,
+  "evoMethods": [
+    {
+      "from": ["lotad"],
+      "trigger": "level_up",
+      "minLevel": 14,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Lombre",
     "fra": "Lombre",

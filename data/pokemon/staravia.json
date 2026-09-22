@@ -103,8 +103,14 @@
     "serebii": "staravia",
     "bulbapedia": "Staravia"
   },
-  "evolvesFrom": "starly",
-  "evoFromLevel": 14,
+  "evoMethods": [
+    {
+      "from": ["starly"],
+      "trigger": "level_up",
+      "minLevel": 14,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Staravia",
     "fra": "Étourvol",

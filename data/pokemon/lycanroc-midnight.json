@@ -83,9 +83,34 @@
     "serebii": "lycanroc",
     "bulbapedia": "Lycanroc"
   },
-  "evolvesFrom": "rockruff",
-  "evoFromLevel": 25,
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["rockruff"],
+      "games": ["sm-m", "usum-um"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [
+        { "key": "time_of_day", "time": "night" },
+        { "key": "ability", "abilities": ["keeneye", "vitalspirit", "steadfast"] }
+      ],
+      "notes": {
+        "eng": "Own Tempo identifies a distinct Rockruff variant, not an Ability Capsule/Patch change. Dusk hours depend on the game."
+      }
+    },
+    {
+      "from": ["rockruff"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [
+        { "key": "time_of_day", "time": "night" },
+        { "key": "ability", "abilities": ["keeneye", "vitalspirit", "steadfast"] }
+      ],
+      "notes": {
+        "eng": "Own Tempo identifies a distinct Rockruff variant, not an Ability Capsule/Patch change. Dusk hours depend on the game."
+      }
+    }
+  ],
   "names": {
     "eng": "Lycanroc (Midnight Form)",
     "esp": "Lycanroc (Forma Nocturna)",

@@ -58,8 +58,14 @@
     "serebii": "barraskewda",
     "bulbapedia": "Barraskewda"
   },
-  "evolvesFrom": "arrokuda",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["arrokuda"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Barraskewda",
     "fra": "Hastacuda",

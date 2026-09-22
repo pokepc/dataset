@@ -130,8 +130,14 @@
     "serebii": "exeggutor",
     "bulbapedia": "Exeggutor"
   },
-  "evolvesFrom": "exeggcute",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["exeggcute"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": [{ "key": "region", "region": "alola", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Exeggutor",
     "fra": "Noadkoko",

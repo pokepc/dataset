@@ -138,8 +138,14 @@
     "serebii": "seadra",
     "bulbapedia": "Seadra"
   },
-  "evolvesFrom": "horsea",
-  "evoFromLevel": 32,
+  "evoMethods": [
+    {
+      "from": ["horsea"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Seadra",
     "fra": "Hypocéan",

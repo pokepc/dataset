@@ -59,8 +59,14 @@
     "serebii": "glimmora",
     "bulbapedia": "Glimmora"
   },
-  "evolvesFrom": "glimmet",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["glimmet"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Glimmora",
     "fra": "Floréclat",

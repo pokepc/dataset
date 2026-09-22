@@ -86,8 +86,14 @@
     "serebii": "barbaracle",
     "bulbapedia": "Barbaracle"
   },
-  "evolvesFrom": "binacle",
-  "evoFromLevel": 39,
+  "evoMethods": [
+    {
+      "from": ["binacle"],
+      "trigger": "level_up",
+      "minLevel": 39,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Barbaracle",
     "fra": "Golgopathe",

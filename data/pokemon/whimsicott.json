@@ -94,8 +94,14 @@
     "serebii": "whimsicott",
     "bulbapedia": "Whimsicott"
   },
-  "evolvesFrom": "cottonee",
-  "evoFromItem": "sunstone",
+  "evoMethods": [
+    {
+      "from": ["cottonee"],
+      "trigger": "use_item",
+      "item": { "id": "sunstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Whimsicott",
     "fra": "Farfaduvet",

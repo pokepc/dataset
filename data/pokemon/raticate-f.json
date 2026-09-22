@@ -118,8 +118,14 @@
     "serebii": "raticate",
     "bulbapedia": "Raticate"
   },
-  "evolvesFrom": "rattata",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["rattata"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Raticate (Female)",
     "fra": "Rattatac (Female)",

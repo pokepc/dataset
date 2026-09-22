@@ -93,8 +93,14 @@
     "serebii": "beartic",
     "bulbapedia": "Beartic"
   },
-  "evolvesFrom": "cubchoo",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["cubchoo"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Beartic",
     "fra": "Polagriffe",

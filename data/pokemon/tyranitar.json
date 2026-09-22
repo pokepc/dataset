@@ -123,8 +123,14 @@
     "serebii": "tyranitar",
     "bulbapedia": "Tyranitar"
   },
-  "evolvesFrom": "pupitar",
-  "evoFromLevel": 55,
+  "evoMethods": [
+    {
+      "from": ["pupitar"],
+      "trigger": "level_up",
+      "minLevel": 55,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Tyranitar",
     "fra": "Tyranocif",

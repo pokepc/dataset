@@ -122,8 +122,14 @@
     "serebii": "arbok",
     "bulbapedia": "Arbok"
   },
-  "evolvesFrom": "ekans",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["ekans"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Arbok",
     "fra": "Arbok",

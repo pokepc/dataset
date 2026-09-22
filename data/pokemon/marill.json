@@ -125,7 +125,13 @@
     "serebii": "marill",
     "bulbapedia": "Marill"
   },
-  "evolvesFrom": "azurill",
+  "evoMethods": [
+    {
+      "from": ["azurill"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Marill",
     "fra": "Marill",

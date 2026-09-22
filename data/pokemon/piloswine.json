@@ -128,8 +128,14 @@
     "serebii": "piloswine",
     "bulbapedia": "Piloswine"
   },
-  "evolvesFrom": "swinub",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["swinub"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Piloswine",
     "fra": "Cochignon",

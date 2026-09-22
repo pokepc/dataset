@@ -95,8 +95,14 @@
     "serebii": "volcarona",
     "bulbapedia": "Volcarona"
   },
-  "evolvesFrom": "larvesta",
-  "evoFromLevel": 59,
+  "evoMethods": [
+    {
+      "from": ["larvesta"],
+      "trigger": "level_up",
+      "minLevel": 59,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Volcarona",
     "fra": "Pyrax",

@@ -59,8 +59,14 @@
     "serebii": "eldegoss",
     "bulbapedia": "Eldegoss"
   },
-  "evolvesFrom": "gossifleur",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["gossifleur"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Eldegoss",
     "fra": "Blancoton",

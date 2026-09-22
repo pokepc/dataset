@@ -59,8 +59,14 @@
     "serebii": "cetitan",
     "bulbapedia": "Cetitan"
   },
-  "evolvesFrom": "cetoddle",
-  "evoFromItem": "icestone",
+  "evoMethods": [
+    {
+      "from": ["cetoddle"],
+      "trigger": "use_item",
+      "item": { "id": "icestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cetitan",
     "fra": "Balbalèze",

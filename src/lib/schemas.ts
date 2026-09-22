@@ -1,12 +1,13 @@
 import { z } from 'zod'
 import { POKEPC_LATEST_GENERATION } from './constants'
+import { evolutionMethodSchema } from './evolution-schemas'
+export { evolutionConditionSchema, evolutionMethodSchema } from './evolution-schemas'
 import {
   abilityTagIds,
   battleStyles,
   gamePlatforms,
   gameSeries,
   gameType,
-  genders,
   itemCategory,
   languageAlpha3Codes,
   languageIds,
@@ -323,16 +324,8 @@ export const pokemonSchema = z.object({
   formsDesc: z.string().optional(),
   family: common.slug.optional(),
   refs: pokemonRefsSchema,
-  // evolution:
-  evolvesFrom: common.slug.optional(),
-  evoFromLevel: common.level.optional(),
-  evoFromItem: common.slug.optional(),
-  evoFromMove: common.slug.optional(),
-  evoFromAbility: common.slug.optional(), // not provided by showdown (e.g. needed for rockruff (own tempo))
-  evoFromGender: z.enum(genders).optional(),
-  evoFromTrading: z.coerce.boolean().optional(),
-  evoFromFriendship: z.coerce.boolean().optional(),
-  evoFromCondition: z.string().optional(),
+  // Evolution methods are alternatives. Missing game scope is unknown, not universal support.
+  evoMethods: z.array(evolutionMethodSchema).min(1).optional(),
   // translations:
   names: i18nTextSchema,
   genus: i18nTextSchema,

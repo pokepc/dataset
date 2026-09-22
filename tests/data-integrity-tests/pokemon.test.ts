@@ -97,9 +97,6 @@ describe('Validate pokemon/*.json data references', () => {
       if (record.abilityHidden) {
         expect(abilityMap.get(record.abilityHidden)).toBeDefined()
       }
-      if (record.evoFromAbility) {
-        expect(abilityMap.get(record.evoFromAbility)).toBeDefined()
-      }
     },
   )
 
@@ -110,7 +107,7 @@ describe('Validate pokemon/*.json data references', () => {
         ...(record.forms ?? []),
         ...(record.baseSpecies ? [record.baseSpecies] : []),
         ...(record.shinyBase ? [record.shinyBase] : []),
-        ...(record.evolvesFrom ? [record.evolvesFrom] : []),
+        ...(record.evoMethods?.flatMap((method) => method.from) ?? []),
         ...(record.baseForms ?? []),
         ...(record.paradoxSpecies ?? []),
         ...(record.convergentSpecies ?? []),

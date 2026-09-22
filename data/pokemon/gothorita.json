@@ -91,8 +91,14 @@
     "serebii": "gothorita",
     "bulbapedia": "Gothorita"
   },
-  "evolvesFrom": "gothita",
-  "evoFromLevel": 32,
+  "evoMethods": [
+    {
+      "from": ["gothita"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gothorita",
     "fra": "Mesmérella",

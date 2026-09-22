@@ -113,8 +113,14 @@
     "serebii": "garchomp",
     "bulbapedia": "Garchomp"
   },
-  "evolvesFrom": "gabite",
-  "evoFromLevel": 48,
+  "evoMethods": [
+    {
+      "from": ["gabite"],
+      "trigger": "level_up",
+      "minLevel": 48,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Garchomp (Female)",
     "fra": "Carchacrok (Female)",

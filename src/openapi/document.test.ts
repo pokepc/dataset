@@ -29,6 +29,19 @@ describe('static OpenAPI document', () => {
     expect(document.components?.schemas?.ModernBoxPreset).toBeDefined()
     expect(document.components?.schemas?.ErrorResponse).toBeDefined()
   })
+
+  it('exposes alternative evolution methods in the public Pokemon schema', () => {
+    expect(document.components?.schemas?.Pokemon).toHaveProperty(
+      'properties.evoMethods.type',
+      'array',
+    )
+    expect(document.components?.schemas?.Pokemon).toHaveProperty(
+      'properties.evoMethods.items.properties.trigger.enum',
+      ['level_up', 'trade', 'use_item', 'special'],
+    )
+    for (const field of ['evolutionMethods', 'evolvesFrom', 'evoFromLevel', 'evoFromCondition'])
+      expect(document.components?.schemas?.Pokemon).not.toHaveProperty(`properties.${field}`)
+  })
 })
 
 describe('OpenAPI index HTML', () => {

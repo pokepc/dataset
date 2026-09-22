@@ -131,8 +131,14 @@
     "serebii": "magmar",
     "bulbapedia": "Magmar"
   },
-  "evolvesFrom": "magby",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["magby"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Magmar",
     "fra": "Magmar",

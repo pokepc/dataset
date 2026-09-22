@@ -58,8 +58,14 @@
     "serebii": "copperajah",
     "bulbapedia": "Copperajah"
   },
-  "evolvesFrom": "cufant",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["cufant"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Copperajah",
     "fra": "Pachyradjah",

@@ -58,8 +58,14 @@
     "serebii": "spidops",
     "bulbapedia": "Spidops"
   },
-  "evolvesFrom": "tarountula",
-  "evoFromLevel": 15,
+  "evoMethods": [
+    {
+      "from": ["tarountula"],
+      "trigger": "level_up",
+      "minLevel": 15,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Spidops",
     "fra": "Filentrappe",

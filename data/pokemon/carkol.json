@@ -60,8 +60,14 @@
     "serebii": "carkol",
     "bulbapedia": "Carkol"
   },
-  "evolvesFrom": "rolycoly",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["rolycoly"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Carkol",
     "fra": "Wagomine",

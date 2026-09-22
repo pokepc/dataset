@@ -130,8 +130,14 @@
     "serebii": "hypno",
     "bulbapedia": "Hypno"
   },
-  "evolvesFrom": "drowzee",
-  "evoFromLevel": 26,
+  "evoMethods": [
+    {
+      "from": ["drowzee"],
+      "trigger": "level_up",
+      "minLevel": 26,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Hypno",
     "fra": "Hypnomade",

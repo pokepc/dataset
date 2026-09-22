@@ -60,8 +60,14 @@
     "serebii": "darmanitan",
     "bulbapedia": "Darmanitan"
   },
-  "evolvesFrom": "darumaka-galar",
-  "evoFromItem": "icestone",
+  "evoMethods": [
+    {
+      "from": ["darumaka-galar"],
+      "trigger": "use_item",
+      "item": { "id": "icestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Darmanitan (Galarian Form)",
     "esp": "Darmanitan (Forma de Galar)",

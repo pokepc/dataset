@@ -60,8 +60,14 @@
     "serebii": "grafaiai",
     "bulbapedia": "Grafaiai"
   },
-  "evolvesFrom": "shroodle",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["shroodle"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Grafaiai",
     "fra": "Tag-Tag",

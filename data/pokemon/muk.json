@@ -128,8 +128,14 @@
     "serebii": "muk",
     "bulbapedia": "Muk"
   },
-  "evolvesFrom": "grimer",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["grimer"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Muk",
     "fra": "Grotadmorv",

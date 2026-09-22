@@ -60,8 +60,14 @@
     "serebii": "morgrem",
     "bulbapedia": "Morgrem"
   },
-  "evolvesFrom": "impidimp",
-  "evoFromLevel": 32,
+  "evoMethods": [
+    {
+      "from": ["impidimp"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Morgrem",
     "fra": "Fourbelin",

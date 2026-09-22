@@ -123,8 +123,14 @@
     "serebii": "kirlia",
     "bulbapedia": "Kirlia"
   },
-  "evolvesFrom": "ralts",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["ralts"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kirlia",
     "fra": "Kirlia",

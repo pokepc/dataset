@@ -92,8 +92,14 @@
     "serebii": "mienshao",
     "bulbapedia": "Mienshao"
   },
-  "evolvesFrom": "mienfoo",
-  "evoFromLevel": 50,
+  "evoMethods": [
+    {
+      "from": ["mienfoo"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Mienshao",
     "fra": "Shaofouine",

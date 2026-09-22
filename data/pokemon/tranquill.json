@@ -89,8 +89,14 @@
     "serebii": "tranquill",
     "bulbapedia": "Tranquill"
   },
-  "evolvesFrom": "pidove",
-  "evoFromLevel": 21,
+  "evoMethods": [
+    {
+      "from": ["pidove"],
+      "trigger": "level_up",
+      "minLevel": 21,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Tranquill",
     "fra": "Colombeau",

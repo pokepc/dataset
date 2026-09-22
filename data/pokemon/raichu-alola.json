@@ -86,8 +86,18 @@
     "serebii": "raichu",
     "bulbapedia": "Raichu"
   },
-  "evolvesFrom": "pikachu",
-  "evoFromItem": "thunderstone",
+  "evoMethods": [
+    {
+      "from": ["pikachu"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": [{ "key": "region", "region": "alola", "relation": "in" }],
+      "notes": {
+        "eng": "Evolve in Alola; Ultra Space in Ultra Sun/Ultra Moon produces the ordinary form instead."
+      }
+    }
+  ],
   "names": {
     "eng": "Raichu (Alolan Form)",
     "esp": "Raichu (Forma de Alola)",

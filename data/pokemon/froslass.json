@@ -109,8 +109,14 @@
     "serebii": "froslass",
     "bulbapedia": "Froslass"
   },
-  "evolvesFrom": "snorunt",
-  "evoFromItem": "dawnstone",
+  "evoMethods": [
+    {
+      "from": ["snorunt"],
+      "trigger": "use_item",
+      "item": { "id": "dawnstone", "role": "used" },
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Froslass",
     "fra": "Momartik",

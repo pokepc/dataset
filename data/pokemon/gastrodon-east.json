@@ -108,8 +108,14 @@
     "serebii": "gastrodon",
     "bulbapedia": "Gastrodon"
   },
-  "evolvesFrom": "shellos",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["shellos-east"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gastrodon (East Sea)",
     "esp": "Gastrodon (Mar Este)",

@@ -105,8 +105,14 @@
     "serebii": "drapion",
     "bulbapedia": "Drapion"
   },
-  "evolvesFrom": "skorupi",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["skorupi"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Drapion",
     "fra": "Drascore",

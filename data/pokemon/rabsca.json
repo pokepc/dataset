@@ -59,8 +59,17 @@
     "serebii": "rabsca",
     "bulbapedia": "Rabsca"
   },
-  "evolvesFrom": "rellor",
-  "evoFromCondition": "walk 1000 steps in Let's Go",
+  "evoMethods": [
+    {
+      "from": ["rellor"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "walk_steps", "count": 1000, "mode": "lets_go" },
+        { "key": "outside_poke_ball" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Rabsca",
     "fra": "Bérasca",

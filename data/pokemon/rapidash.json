@@ -127,8 +127,14 @@
     "serebii": "rapidash",
     "bulbapedia": "Rapidash"
   },
-  "evolvesFrom": "ponyta",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["ponyta"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Rapidash",
     "fra": "Galopa",

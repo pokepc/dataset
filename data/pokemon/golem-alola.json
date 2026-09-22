@@ -83,7 +83,13 @@
     "serebii": "golem",
     "bulbapedia": "Golem"
   },
-  "evolvesFrom": "graveler-alola",
+  "evoMethods": [
+    {
+      "from": ["graveler-alola"],
+      "trigger": "trade",
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Golem (Alolan Form)",
     "esp": "Golem (Forma de Alola)",

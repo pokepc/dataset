@@ -138,8 +138,14 @@
     "serebii": "jolteon",
     "bulbapedia": "Jolteon"
   },
-  "evolvesFrom": "eevee",
-  "evoFromItem": "thunderstone",
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "trigger": "use_item",
+      "item": { "id": "thunderstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Jolteon",
     "fra": "Voltali",

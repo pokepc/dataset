@@ -60,8 +60,14 @@
     "serebii": "dottler",
     "bulbapedia": "Dottler"
   },
-  "evolvesFrom": "blipbug",
-  "evoFromLevel": 10,
+  "evoMethods": [
+    {
+      "from": ["blipbug"],
+      "trigger": "level_up",
+      "minLevel": 10,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dottler",
     "fra": "Coléodôme",

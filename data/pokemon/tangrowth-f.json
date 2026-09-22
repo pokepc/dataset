@@ -104,8 +104,16 @@
     "serebii": "tangrowth",
     "bulbapedia": "Tangrowth"
   },
-  "evolvesFrom": "tangela",
-  "evoFromMove": "ancientpower",
+  "evoMethods": [
+    {
+      "from": ["tangela"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "known_move", "move": "ancientpower" },
+        { "key": "gender", "gender": "female" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Tangrowth (Female)",
     "fra": "Bouldeneu (Female)",

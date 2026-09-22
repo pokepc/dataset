@@ -110,8 +110,14 @@
     "serebii": "luxray",
     "bulbapedia": "Luxray"
   },
-  "evolvesFrom": "luxio",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["luxio"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Luxray (Female)",
     "fra": "Luxray (Female)",

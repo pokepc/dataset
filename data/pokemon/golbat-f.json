@@ -135,8 +135,14 @@
     "serebii": "golbat",
     "bulbapedia": "Golbat"
   },
-  "evolvesFrom": "zubat",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["zubat"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": { "eng": "Golbat (Female)", "fra": "Nosferalto (Female)", "deu": "Golbat (Female)" },
   "genus": {
     "eng": "Bat Pokémon",

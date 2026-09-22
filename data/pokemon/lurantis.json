@@ -79,9 +79,14 @@
     "serebii": "lurantis",
     "bulbapedia": "Lurantis"
   },
-  "evolvesFrom": "fomantis",
-  "evoFromLevel": 34,
-  "evoFromCondition": "during the day",
+  "evoMethods": [
+    {
+      "from": ["fomantis"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": [{ "key": "time_of_day", "time": "day" }]
+    }
+  ],
   "names": {
     "eng": "Lurantis",
     "fra": "Floramantis",

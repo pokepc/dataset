@@ -58,8 +58,14 @@
     "serebii": "toedscruel",
     "bulbapedia": "Toedscruel"
   },
-  "evolvesFrom": "toedscool",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["toedscool"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Toedscruel",
     "fra": "Terracruel",

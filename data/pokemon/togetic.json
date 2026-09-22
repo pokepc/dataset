@@ -123,7 +123,13 @@
     "serebii": "togetic",
     "bulbapedia": "Togetic"
   },
-  "evolvesFrom": "togepi",
+  "evoMethods": [
+    {
+      "from": ["togepi"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Togetic",
     "fra": "Togetic",

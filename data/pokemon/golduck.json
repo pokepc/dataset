@@ -140,8 +140,14 @@
     "serebii": "golduck",
     "bulbapedia": "Golduck"
   },
-  "evolvesFrom": "psyduck",
-  "evoFromLevel": 33,
+  "evoMethods": [
+    {
+      "from": ["psyduck"],
+      "trigger": "level_up",
+      "minLevel": 33,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Golduck",
     "fra": "Akwakwak",

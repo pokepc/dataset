@@ -73,8 +73,14 @@
     "serebii": "slurpuff",
     "bulbapedia": "Slurpuff"
   },
-  "evolvesFrom": "swirlix",
-  "evoFromItem": "whippeddream",
+  "evoMethods": [
+    {
+      "from": ["swirlix"],
+      "trigger": "trade",
+      "item": { "id": "whippeddream", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Slurpuff",
     "fra": "Cupcanaille",

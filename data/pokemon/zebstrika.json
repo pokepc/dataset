@@ -88,8 +88,14 @@
     "serebii": "zebstrika",
     "bulbapedia": "Zebstrika"
   },
-  "evolvesFrom": "blitzle",
-  "evoFromLevel": 27,
+  "evoMethods": [
+    {
+      "from": ["blitzle"],
+      "trigger": "level_up",
+      "minLevel": 27,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Zebstrika",
     "fra": "Zéblitz",

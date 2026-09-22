@@ -61,8 +61,34 @@
     "serebii": "toxtricity",
     "bulbapedia": "Toxtricity"
   },
-  "evolvesFrom": "toxel",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["toxel"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": [
+        {
+          "key": "nature",
+          "natures": [
+            "hardy",
+            "brave",
+            "adamant",
+            "naughty",
+            "docile",
+            "impish",
+            "lax",
+            "hasty",
+            "jolly",
+            "naive",
+            "rash",
+            "sassy",
+            "quirky"
+          ]
+        }
+      ]
+    }
+  ],
   "names": {
     "eng": "Toxtricity",
     "fra": "Salarsen",

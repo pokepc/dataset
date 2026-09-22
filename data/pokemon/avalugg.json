@@ -76,8 +76,14 @@
     "serebii": "avalugg",
     "bulbapedia": "Avalugg"
   },
-  "evolvesFrom": "bergmite",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["bergmite"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Avalugg",
     "fra": "Séracrawl",

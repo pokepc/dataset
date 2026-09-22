@@ -125,8 +125,14 @@
     "serebii": "ariados",
     "bulbapedia": "Ariados"
   },
-  "evolvesFrom": "spinarak",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["spinarak"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ariados",
     "fra": "Migalos",

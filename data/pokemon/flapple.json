@@ -60,8 +60,14 @@
     "serebii": "flapple",
     "bulbapedia": "Flapple"
   },
-  "evolvesFrom": "applin",
-  "evoFromItem": "tartapple",
+  "evoMethods": [
+    {
+      "from": ["applin"],
+      "trigger": "use_item",
+      "item": { "id": "tartapple", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Flapple",
     "fra": "Pomdrapi",

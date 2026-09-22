@@ -86,9 +86,14 @@
     "serebii": "pangoro",
     "bulbapedia": "Pangoro"
   },
-  "evolvesFrom": "pancham",
-  "evoFromLevel": 32,
-  "evoFromCondition": "with a Dark-type in the party",
+  "evoMethods": [
+    {
+      "from": ["pancham"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": [{ "key": "party_type", "type": "dark" }]
+    }
+  ],
   "names": {
     "eng": "Pangoro",
     "fra": "Pandarbare",

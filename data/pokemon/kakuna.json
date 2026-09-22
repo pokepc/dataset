@@ -122,8 +122,14 @@
     "serebii": "kakuna",
     "bulbapedia": "Kakuna"
   },
-  "evolvesFrom": "weedle",
-  "evoFromLevel": 7,
+  "evoMethods": [
+    {
+      "from": ["weedle"],
+      "trigger": "level_up",
+      "minLevel": 7,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kakuna",
     "fra": "Coconfort",

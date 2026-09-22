@@ -86,8 +86,14 @@
     "serebii": "ferrothorn",
     "bulbapedia": "Ferrothorn"
   },
-  "evolvesFrom": "ferroseed",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["ferroseed"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ferrothorn",
     "fra": "Noacier",

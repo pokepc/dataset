@@ -133,8 +133,14 @@
     "serebii": "poliwhirl",
     "bulbapedia": "Poliwhirl"
   },
-  "evolvesFrom": "poliwag",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["poliwag"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Poliwhirl",
     "fra": "Têtarte",

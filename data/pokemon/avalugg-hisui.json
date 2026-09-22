@@ -62,8 +62,16 @@
     "serebii": "avalugg",
     "bulbapedia": "Avalugg"
   },
-  "evolvesFrom": "bergmite",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["bergmite"],
+      "games": ["la"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Avalugg (Hisuian Form)",
     "fra": "Séracrawl (Forme de Hisui)",

@@ -120,8 +120,14 @@
     "serebii": "pupitar",
     "bulbapedia": "Pupitar"
   },
-  "evolvesFrom": "larvitar",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["larvitar"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Pupitar",
     "fra": "Ymphect",

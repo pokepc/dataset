@@ -117,8 +117,14 @@
     "serebii": "skiploom",
     "bulbapedia": "Skiploom"
   },
-  "evolvesFrom": "hoppip",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["hoppip"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Skiploom",
     "fra": "Floravol",

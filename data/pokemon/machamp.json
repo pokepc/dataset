@@ -136,7 +136,21 @@
     "serebii": "machamp",
     "bulbapedia": "Machamp"
   },
-  "evolvesFrom": "machoke",
+  "evoMethods": [
+    {
+      "from": ["machoke"],
+      "trigger": "trade",
+      "conditions": []
+    },
+    {
+      "from": ["machoke"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "linkingcord", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Machamp",
     "fra": "Mackogneur",

@@ -58,8 +58,15 @@
     "serebii": "palafin",
     "bulbapedia": "Palafin"
   },
-  "evolvesFrom": "finizen",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["finizen"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": [{ "key": "union_circle" }]
+    }
+  ],
   "names": {
     "eng": "Palafin",
     "fra": "Superdofin",

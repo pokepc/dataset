@@ -89,8 +89,14 @@
     "serebii": "palpitoad",
     "bulbapedia": "Palpitoad"
   },
-  "evolvesFrom": "tympole",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["tympole"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Palpitoad",
     "fra": "Batracné",

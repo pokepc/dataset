@@ -108,8 +108,22 @@
     "serebii": "magmortar",
     "bulbapedia": "Magmortar"
   },
-  "evolvesFrom": "magmar",
-  "evoFromItem": "magmarizer",
+  "evoMethods": [
+    {
+      "from": ["magmar"],
+      "trigger": "trade",
+      "item": { "id": "magmarizer", "role": "held" },
+      "conditions": []
+    },
+    {
+      "from": ["magmar"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "magmarizer", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Magmortar",
     "fra": "Maganon",

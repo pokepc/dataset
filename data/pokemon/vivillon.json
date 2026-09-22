@@ -97,8 +97,14 @@
     "serebii": "vivillon",
     "bulbapedia": "Vivillon"
   },
-  "evolvesFrom": "spewpa",
-  "evoFromLevel": 12,
+  "evoMethods": [
+    {
+      "from": ["spewpa"],
+      "trigger": "level_up",
+      "minLevel": 12,
+      "conditions": [{ "key": "vivillon_pattern", "pattern": "icy-snow" }]
+    }
+  ],
   "names": {
     "eng": "Vivillon (Icy Snow Pattern)",
     "fra": "Prismillon (Motif Blizzard)",

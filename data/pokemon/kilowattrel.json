@@ -60,8 +60,14 @@
     "serebii": "kilowattrel",
     "bulbapedia": "Kilowattrel"
   },
-  "evolvesFrom": "wattrel",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["wattrel"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Kilowattrel",
     "fra": "Fulgulairo",

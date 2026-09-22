@@ -88,8 +88,14 @@
     "serebii": "noivern",
     "bulbapedia": "Noivern"
   },
-  "evolvesFrom": "noibat",
-  "evoFromLevel": 48,
+  "evoMethods": [
+    {
+      "from": ["noibat"],
+      "trigger": "level_up",
+      "minLevel": 48,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Noivern",
     "fra": "Bruyverne",

@@ -142,8 +142,14 @@
     "serebii": "wigglytuff",
     "bulbapedia": "Wigglytuff"
   },
-  "evolvesFrom": "jigglypuff",
-  "evoFromItem": "moonstone",
+  "evoMethods": [
+    {
+      "from": ["jigglypuff"],
+      "trigger": "use_item",
+      "item": { "id": "moonstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Wigglytuff",
     "fra": "Grodoudou",

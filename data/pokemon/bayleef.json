@@ -112,8 +112,14 @@
     "serebii": "bayleef",
     "bulbapedia": "Bayleef"
   },
-  "evolvesFrom": "chikorita",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["chikorita"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Bayleef",
     "fra": "Macronium",

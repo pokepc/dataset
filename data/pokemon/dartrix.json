@@ -82,8 +82,14 @@
     "serebii": "dartrix",
     "bulbapedia": "Dartrix"
   },
-  "evolvesFrom": "rowlet",
-  "evoFromLevel": 17,
+  "evoMethods": [
+    {
+      "from": ["rowlet"],
+      "trigger": "level_up",
+      "minLevel": 17,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dartrix",
     "fra": "Efflèche",

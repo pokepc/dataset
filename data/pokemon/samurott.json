@@ -88,8 +88,14 @@
     "serebii": "samurott",
     "bulbapedia": "Samurott"
   },
-  "evolvesFrom": "dewott",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["dewott"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Samurott",
     "fra": "Clamiral",

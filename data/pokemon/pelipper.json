@@ -122,8 +122,14 @@
     "serebii": "pelipper",
     "bulbapedia": "Pelipper"
   },
-  "evolvesFrom": "wingull",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["wingull"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Pelipper",
     "fra": "Bekipan",

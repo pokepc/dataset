@@ -97,8 +97,14 @@
     "serebii": "grotle",
     "bulbapedia": "Grotle"
   },
-  "evolvesFrom": "turtwig",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["turtwig"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Grotle",
     "fra": "Boskara",

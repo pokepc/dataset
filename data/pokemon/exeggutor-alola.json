@@ -86,8 +86,18 @@
     "serebii": "exeggutor",
     "bulbapedia": "Exeggutor"
   },
-  "evolvesFrom": "exeggcute",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["exeggcute"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": [{ "key": "region", "region": "alola", "relation": "in" }],
+      "notes": {
+        "eng": "Evolve in Alola; Ultra Space in Ultra Sun/Ultra Moon produces the ordinary form instead."
+      }
+    }
+  ],
   "names": {
     "eng": "Exeggutor (Alolan Form)",
     "esp": "Exeggutor (Forma de Alola)",

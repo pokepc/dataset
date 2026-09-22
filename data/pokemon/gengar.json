@@ -134,7 +134,21 @@
     "serebii": "gengar",
     "bulbapedia": "Gengar"
   },
-  "evolvesFrom": "haunter",
+  "evoMethods": [
+    {
+      "from": ["haunter"],
+      "trigger": "trade",
+      "conditions": []
+    },
+    {
+      "from": ["haunter"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "linkingcord", "role": "used" },
+      "conditions": [],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Gengar",
     "fra": "Ectoplasma",

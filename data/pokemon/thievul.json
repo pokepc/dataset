@@ -59,8 +59,14 @@
     "serebii": "thievul",
     "bulbapedia": "Thievul"
   },
-  "evolvesFrom": "nickit",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["nickit"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Thievul",
     "fra": "Roublenard",

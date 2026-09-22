@@ -75,8 +75,14 @@
     "serebii": "simisear",
     "bulbapedia": "Simisear"
   },
-  "evolvesFrom": "pansear",
-  "evoFromItem": "firestone",
+  "evoMethods": [
+    {
+      "from": ["pansear"],
+      "trigger": "use_item",
+      "item": { "id": "firestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Simisear",
     "fra": "Flamoutan",

@@ -85,9 +85,21 @@
     "serebii": "marowak",
     "bulbapedia": "Marowak"
   },
-  "evolvesFrom": "cubone",
-  "evoFromLevel": 28,
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["cubone"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": [
+        { "key": "time_of_day", "time": "night" },
+        { "key": "region", "region": "alola", "relation": "in" }
+      ],
+      "notes": {
+        "eng": "Evolve in Alola; Ultra Space in Ultra Sun/Ultra Moon produces the ordinary form instead."
+      }
+    }
+  ],
   "names": {
     "eng": "Marowak (Alolan Form)",
     "esp": "Marowak (Forma de Alola)",

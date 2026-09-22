@@ -116,8 +116,14 @@
     "serebii": "ledian",
     "bulbapedia": "Ledian"
   },
-  "evolvesFrom": "ledyba",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["ledyba"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ledian",
     "fra": "Coxyclaque",

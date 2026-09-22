@@ -112,8 +112,13 @@
     "serebii": "mamoswine",
     "bulbapedia": "Mamoswine"
   },
-  "evolvesFrom": "piloswine",
-  "evoFromMove": "ancientpower",
+  "evoMethods": [
+    {
+      "from": ["piloswine"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "known_move", "move": "ancientpower" }]
+    }
+  ],
   "names": {
     "eng": "Mamoswine",
     "fra": "Mammochon",

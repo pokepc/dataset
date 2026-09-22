@@ -114,8 +114,14 @@
     "serebii": "dusclops",
     "bulbapedia": "Dusclops"
   },
-  "evolvesFrom": "duskull",
-  "evoFromLevel": 37,
+  "evoMethods": [
+    {
+      "from": ["duskull"],
+      "trigger": "level_up",
+      "minLevel": 37,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dusclops",
     "fra": "Téraclope",

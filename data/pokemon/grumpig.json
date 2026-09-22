@@ -113,8 +113,14 @@
     "serebii": "grumpig",
     "bulbapedia": "Grumpig"
   },
-  "evolvesFrom": "spoink",
-  "evoFromLevel": 32,
+  "evoMethods": [
+    {
+      "from": ["spoink"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Grumpig",
     "fra": "Groret",

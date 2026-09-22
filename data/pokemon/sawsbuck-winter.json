@@ -79,8 +79,14 @@
     "serebii": "sawsbuck",
     "bulbapedia": "Sawsbuck"
   },
-  "evolvesFrom": "deerling",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["deerling-winter"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sawsbuck (Winter Form)",
     "esp": "Sawsbuck (Forma Invierno)",

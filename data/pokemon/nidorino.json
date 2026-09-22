@@ -124,8 +124,14 @@
     "serebii": "nidorino",
     "bulbapedia": "Nidorino"
   },
-  "evolvesFrom": "nidoranm",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["nidoranm"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Nidorino",
     "fra": "Nidorino",

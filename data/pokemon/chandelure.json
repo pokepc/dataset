@@ -98,8 +98,14 @@
     "serebii": "chandelure",
     "bulbapedia": "Chandelure"
   },
-  "evolvesFrom": "lampent",
-  "evoFromItem": "duskstone",
+  "evoMethods": [
+    {
+      "from": ["lampent"],
+      "trigger": "use_item",
+      "item": { "id": "duskstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Chandelure",
     "fra": "Lugulabre",

@@ -139,8 +139,14 @@
     "serebii": "gyarados",
     "bulbapedia": "Gyarados"
   },
-  "evolvesFrom": "magikarp",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["magikarp"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": { "eng": "Gyarados (Female)", "fra": "Léviator (Female)", "deu": "Garados (Female)" },
   "genus": {
     "eng": "Atrocious Pokémon",

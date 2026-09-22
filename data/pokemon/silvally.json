@@ -76,7 +76,13 @@
     "serebii": "silvally",
     "bulbapedia": "Silvally"
   },
-  "evolvesFrom": "typenull",
+  "evoMethods": [
+    {
+      "from": ["typenull"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Silvally",
     "fra": "Silvallié",

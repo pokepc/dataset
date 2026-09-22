@@ -90,8 +90,14 @@
     "serebii": "eelektrik",
     "bulbapedia": "Eelektrik"
   },
-  "evolvesFrom": "tynamo",
-  "evoFromLevel": 39,
+  "evoMethods": [
+    {
+      "from": ["tynamo"],
+      "trigger": "level_up",
+      "minLevel": 39,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Eelektrik",
     "fra": "Lampéroie",

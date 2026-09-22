@@ -89,8 +89,14 @@
     "serebii": "seismitoad",
     "bulbapedia": "Seismitoad"
   },
-  "evolvesFrom": "palpitoad",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["palpitoad"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Seismitoad",
     "fra": "Crapustule",

@@ -104,7 +104,13 @@
     "serebii": "lopunny",
     "bulbapedia": "Lopunny"
   },
-  "evolvesFrom": "buneary",
+  "evoMethods": [
+    {
+      "from": ["buneary"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Lopunny",
     "fra": "Lockpin",

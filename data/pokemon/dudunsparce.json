@@ -60,8 +60,17 @@
     "serebii": "dudunsparce",
     "bulbapedia": "Dudunsparce"
   },
-  "evolvesFrom": "dunsparce",
-  "evoFromMove": "hyperdrill",
+  "evoMethods": [
+    {
+      "from": ["dunsparce"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "known_move", "move": "hyperdrill" },
+        { "key": "hidden_value_branch", "percentage": 99 }
+      ]
+    }
+  ],
   "names": {
     "eng": "Dudunsparce",
     "fra": "Deusolourdo",

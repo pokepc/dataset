@@ -97,8 +97,14 @@
     "serebii": "lampent",
     "bulbapedia": "Lampent"
   },
-  "evolvesFrom": "litwick",
-  "evoFromLevel": 41,
+  "evoMethods": [
+    {
+      "from": ["litwick"],
+      "trigger": "level_up",
+      "minLevel": 41,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Lampent",
     "fra": "Mélancolux",

@@ -62,8 +62,16 @@
     "serebii": "braviary",
     "bulbapedia": "Braviary"
   },
-  "evolvesFrom": "rufflet",
-  "evoFromLevel": 54,
+  "evoMethods": [
+    {
+      "from": ["rufflet"],
+      "games": ["la"],
+      "trigger": "level_up",
+      "minLevel": 54,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "activation": "manual"
+    }
+  ],
   "names": {
     "eng": "Braviary (Hisuian Form)",
     "fra": "Gueriaigle (Forme de Hisui)",

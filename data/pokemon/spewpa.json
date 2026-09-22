@@ -72,8 +72,14 @@
     "serebii": "spewpa",
     "bulbapedia": "Spewpa"
   },
-  "evolvesFrom": "scatterbug",
-  "evoFromLevel": 9,
+  "evoMethods": [
+    {
+      "from": ["scatterbug"],
+      "trigger": "level_up",
+      "minLevel": 9,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Spewpa",
     "fra": "Pérégrain",

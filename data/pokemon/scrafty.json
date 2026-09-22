@@ -97,8 +97,14 @@
     "serebii": "scrafty",
     "bulbapedia": "Scrafty"
   },
-  "evolvesFrom": "scraggy",
-  "evoFromLevel": 39,
+  "evoMethods": [
+    {
+      "from": ["scraggy"],
+      "trigger": "level_up",
+      "minLevel": 39,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Scrafty",
     "fra": "Baggaïd",

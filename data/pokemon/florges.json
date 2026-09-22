@@ -75,8 +75,14 @@
     "serebii": "florges",
     "bulbapedia": "Florges"
   },
-  "evolvesFrom": "floette",
-  "evoFromItem": "shinystone",
+  "evoMethods": [
+    {
+      "from": ["floette"],
+      "trigger": "use_item",
+      "item": { "id": "shinystone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Florges",
     "fra": "Florges",

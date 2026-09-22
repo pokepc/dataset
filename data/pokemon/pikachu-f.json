@@ -134,7 +134,13 @@
     "serebii": "pikachu",
     "bulbapedia": "Pikachu"
   },
-  "evolvesFrom": "pichu",
+  "evoMethods": [
+    {
+      "from": ["pichu"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }, { "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": { "eng": "Pikachu (Female)", "fra": "Pikachu (Female)", "deu": "Pikachu (Female)" },
   "genus": {
     "eng": "Mouse Pokémon",

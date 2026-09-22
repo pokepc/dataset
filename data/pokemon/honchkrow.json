@@ -105,8 +105,14 @@
     "serebii": "honchkrow",
     "bulbapedia": "Honchkrow"
   },
-  "evolvesFrom": "murkrow",
-  "evoFromItem": "duskstone",
+  "evoMethods": [
+    {
+      "from": ["murkrow"],
+      "trigger": "use_item",
+      "item": { "id": "duskstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Honchkrow",
     "fra": "Corboss",

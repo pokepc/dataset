@@ -72,8 +72,14 @@
     "serebii": "braixen",
     "bulbapedia": "Braixen"
   },
-  "evolvesFrom": "fennekin",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["fennekin"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Braixen",
     "fra": "Roussil",

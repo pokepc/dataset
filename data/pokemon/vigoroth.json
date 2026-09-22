@@ -109,8 +109,14 @@
     "serebii": "vigoroth",
     "bulbapedia": "Vigoroth"
   },
-  "evolvesFrom": "slakoth",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["slakoth"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Vigoroth",
     "fra": "Vigoroth",

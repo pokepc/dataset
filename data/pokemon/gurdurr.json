@@ -94,8 +94,14 @@
     "serebii": "gurdurr",
     "bulbapedia": "Gurdurr"
   },
-  "evolvesFrom": "timburr",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["timburr"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gurdurr",
     "fra": "Ouvrifier",

@@ -60,8 +60,14 @@
     "serebii": "toucannon",
     "bulbapedia": "Toucannon"
   },
-  "evolvesFrom": "trumbeak",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["trumbeak"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Toucannon",
     "fra": "Bazoucan",

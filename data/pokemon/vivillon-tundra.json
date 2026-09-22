@@ -77,8 +77,14 @@
     "serebii": "vivillon",
     "bulbapedia": "Vivillon"
   },
-  "evolvesFrom": "spewpa",
-  "evoFromLevel": 12,
+  "evoMethods": [
+    {
+      "from": ["spewpa"],
+      "trigger": "level_up",
+      "minLevel": 12,
+      "conditions": [{ "key": "vivillon_pattern", "pattern": "tundra" }]
+    }
+  ],
   "names": {
     "eng": "Vivillon (Tundra Pattern)",
     "fra": "Prismillon (Motif Glace)",

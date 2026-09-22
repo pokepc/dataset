@@ -129,8 +129,14 @@
     "serebii": "vileplume",
     "bulbapedia": "Vileplume"
   },
-  "evolvesFrom": "gloom",
-  "evoFromItem": "leafstone",
+  "evoMethods": [
+    {
+      "from": ["gloom"],
+      "trigger": "use_item",
+      "item": { "id": "leafstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Vileplume",
     "fra": "Rafflesia",

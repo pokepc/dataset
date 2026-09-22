@@ -60,9 +60,14 @@
     "serebii": "obstagoon",
     "bulbapedia": "Obstagoon"
   },
-  "evolvesFrom": "linoone-galar",
-  "evoFromLevel": 35,
-  "evoFromCondition": "at night",
+  "evoMethods": [
+    {
+      "from": ["linoone-galar"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": [{ "key": "time_of_day", "time": "night" }]
+    }
+  ],
   "names": {
     "eng": "Obstagoon",
     "fra": "Ixon",

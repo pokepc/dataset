@@ -80,8 +80,14 @@
     "serebii": "steenee",
     "bulbapedia": "Steenee"
   },
-  "evolvesFrom": "bounsweet",
-  "evoFromLevel": 18,
+  "evoMethods": [
+    {
+      "from": ["bounsweet"],
+      "trigger": "level_up",
+      "minLevel": 18,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Steenee",
     "fra": "Candine",

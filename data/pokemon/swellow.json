@@ -111,8 +111,14 @@
     "serebii": "swellow",
     "bulbapedia": "Swellow"
   },
-  "evolvesFrom": "taillow",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["taillow"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Swellow",
     "fra": "Hélédelle",

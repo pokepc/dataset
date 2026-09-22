@@ -60,8 +60,14 @@
     "serebii": "centiskorch",
     "bulbapedia": "Centiskorch"
   },
-  "evolvesFrom": "sizzlipede",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["sizzlipede"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Centiskorch",
     "fra": "Scolocendre",

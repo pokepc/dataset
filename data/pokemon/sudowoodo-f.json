@@ -124,8 +124,16 @@
     "serebii": "sudowoodo",
     "bulbapedia": "Sudowoodo"
   },
-  "evolvesFrom": "bonsly",
-  "evoFromMove": "mimic",
+  "evoMethods": [
+    {
+      "from": ["bonsly"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "known_move", "move": "mimic" },
+        { "key": "gender", "gender": "female" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Sudowoodo (Female)",
     "fra": "Simularbre (Female)",

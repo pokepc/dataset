@@ -81,8 +81,14 @@
     "serebii": "decidueye",
     "bulbapedia": "Decidueye"
   },
-  "evolvesFrom": "dartrix",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["dartrix"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+    }
+  ],
   "names": {
     "eng": "Decidueye",
     "fra": "Archéduc",

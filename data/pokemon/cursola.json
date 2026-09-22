@@ -58,8 +58,14 @@
     "serebii": "cursola",
     "bulbapedia": "Cursola"
   },
-  "evolvesFrom": "corsola-galar",
-  "evoFromLevel": 38,
+  "evoMethods": [
+    {
+      "from": ["corsola-galar"],
+      "trigger": "level_up",
+      "minLevel": 38,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cursola",
     "fra": "Corayôme",

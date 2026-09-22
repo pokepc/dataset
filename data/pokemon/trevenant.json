@@ -92,7 +92,13 @@
     "serebii": "trevenant",
     "bulbapedia": "Trevenant"
   },
-  "evolvesFrom": "phantump",
+  "evoMethods": [
+    {
+      "from": ["phantump"],
+      "trigger": "trade",
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Trevenant",
     "fra": "Desséliande",

@@ -87,7 +87,13 @@
     "serebii": "swoobat",
     "bulbapedia": "Swoobat"
   },
-  "evolvesFrom": "woobat",
+  "evoMethods": [
+    {
+      "from": ["woobat"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "friendship" }]
+    }
+  ],
   "names": {
     "eng": "Swoobat",
     "fra": "Rhinolove",

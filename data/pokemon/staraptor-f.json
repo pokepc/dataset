@@ -106,8 +106,14 @@
     "serebii": "staraptor",
     "bulbapedia": "Staraptor"
   },
-  "evolvesFrom": "staravia",
-  "evoFromLevel": 34,
+  "evoMethods": [
+    {
+      "from": ["staravia"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Staraptor (Female)",
     "fra": "Étouraptor (Female)",

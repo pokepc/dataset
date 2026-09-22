@@ -62,8 +62,27 @@
     "serebii": "basculegion",
     "bulbapedia": "Basculegion"
   },
-  "evolvesFrom": "basculin-white-striped",
-  "evoFromCondition": "Receive 294+ recoil without fainting",
+  "evoMethods": [
+    {
+      "from": ["basculin-white-striped"],
+      "games": ["la"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "recoil_damage_without_fainting", "amount": 294 },
+        { "key": "gender", "gender": "female" }
+      ],
+      "activation": "manual"
+    },
+    {
+      "from": ["basculin-white-striped"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [
+        { "key": "recoil_damage_without_fainting", "amount": 294 },
+        { "key": "gender", "gender": "female" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Basculegion (Female)",
     "fra": "Paragruel (Femelle)",

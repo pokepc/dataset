@@ -134,8 +134,14 @@
     "serebii": "cloyster",
     "bulbapedia": "Cloyster"
   },
-  "evolvesFrom": "shellder",
-  "evoFromItem": "waterstone",
+  "evoMethods": [
+    {
+      "from": ["shellder"],
+      "trigger": "use_item",
+      "item": { "id": "waterstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cloyster",
     "fra": "Crustabri",

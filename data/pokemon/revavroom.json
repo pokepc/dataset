@@ -59,8 +59,14 @@
     "serebii": "revavroom",
     "bulbapedia": "Revavroom"
   },
-  "evolvesFrom": "varoom",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["varoom"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Revavroom",
     "fra": "Vrombotor",

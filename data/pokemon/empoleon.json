@@ -99,8 +99,14 @@
     "serebii": "empoleon",
     "bulbapedia": "Empoleon"
   },
-  "evolvesFrom": "prinplup",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["prinplup"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Empoleon",
     "fra": "Pingoléon",

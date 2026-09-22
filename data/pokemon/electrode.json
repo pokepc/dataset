@@ -129,8 +129,14 @@
     "serebii": "electrode",
     "bulbapedia": "Electrode"
   },
-  "evolvesFrom": "voltorb",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["voltorb"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Electrode",
     "fra": "Électrode",

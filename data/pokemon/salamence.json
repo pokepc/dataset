@@ -120,8 +120,14 @@
     "serebii": "salamence",
     "bulbapedia": "Salamence"
   },
-  "evolvesFrom": "shelgon",
-  "evoFromLevel": 50,
+  "evoMethods": [
+    {
+      "from": ["shelgon"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Salamence",
     "fra": "Drattak",

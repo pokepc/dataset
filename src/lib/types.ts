@@ -1,4 +1,5 @@
 import type z from 'zod'
+import type { evolutionConditionSchema, evolutionMethodSchema } from './evolution-schemas'
 import type {
   abilityTagIds,
   battleStyles,
@@ -75,6 +76,8 @@ declare global {
     export type ModernBoxPresetBox = z.infer<typeof modernBoxPresetBoxSchema>
     export type ModernBoxPresetSlot = z.infer<typeof modernBoxPresetSlotSchema>
     // Schema-based Types
+    export type EvolutionCondition = z.infer<typeof evolutionConditionSchema>
+    export type EvolutionMethod = z.infer<typeof evolutionMethodSchema>
     export type Ability = z.infer<typeof abilitySchema>
     export type AbilityTagId = (typeof abilityTagIds)[number]
     export type Personality = z.infer<typeof personalitySchema>

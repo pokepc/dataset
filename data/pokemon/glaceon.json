@@ -110,8 +110,19 @@
     "serebii": "glaceon",
     "bulbapedia": "Glaceon"
   },
-  "evolvesFrom": "eevee",
-  "evoFromItem": "icestone",
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "location", "location": "ice_rock" }]
+    },
+    {
+      "from": ["eevee"],
+      "trigger": "use_item",
+      "item": { "id": "icestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Glaceon",
     "fra": "Givrali",

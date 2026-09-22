@@ -126,8 +126,14 @@
     "serebii": "fearow",
     "bulbapedia": "Fearow"
   },
-  "evolvesFrom": "spearow",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["spearow"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Fearow",
     "fra": "Rapasdepic",

@@ -77,8 +77,14 @@
     "serebii": "ninetales",
     "bulbapedia": "Ninetales"
   },
-  "evolvesFrom": "vulpix-alola",
-  "evoFromItem": "icestone",
+  "evoMethods": [
+    {
+      "from": ["vulpix-alola"],
+      "trigger": "use_item",
+      "item": { "id": "icestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ninetales (Alolan Form)",
     "esp": "Ninetales (Forma de Alola)",

@@ -99,8 +99,14 @@
     "serebii": "infernape",
     "bulbapedia": "Infernape"
   },
-  "evolvesFrom": "monferno",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["monferno"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Infernape",
     "fra": "Simiabraz",

@@ -59,8 +59,14 @@
     "serebii": "skeledirge",
     "bulbapedia": "Skeledirge"
   },
-  "evolvesFrom": "crocalor",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["crocalor"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Skeledirge",
     "fra": "Flâmigator",

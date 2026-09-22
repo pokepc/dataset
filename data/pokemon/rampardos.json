@@ -102,8 +102,14 @@
     "serebii": "rampardos",
     "bulbapedia": "Rampardos"
   },
-  "evolvesFrom": "cranidos",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["cranidos"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Rampardos",
     "fra": "Charkos",

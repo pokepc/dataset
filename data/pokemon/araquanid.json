@@ -81,8 +81,14 @@
     "serebii": "araquanid",
     "bulbapedia": "Araquanid"
   },
-  "evolvesFrom": "dewpider",
-  "evoFromLevel": 22,
+  "evoMethods": [
+    {
+      "from": ["dewpider"],
+      "trigger": "level_up",
+      "minLevel": 22,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Araquanid",
     "fra": "Tarenbulle",

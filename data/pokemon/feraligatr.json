@@ -113,8 +113,14 @@
     "serebii": "feraligatr",
     "bulbapedia": "Feraligatr"
   },
-  "evolvesFrom": "croconaw",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["croconaw"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Feraligatr",
     "fra": "Aligatueur",

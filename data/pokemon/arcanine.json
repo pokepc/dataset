@@ -130,8 +130,14 @@
     "serebii": "arcanine",
     "bulbapedia": "Arcanine"
   },
-  "evolvesFrom": "growlithe",
-  "evoFromItem": "firestone",
+  "evoMethods": [
+    {
+      "from": ["growlithe"],
+      "trigger": "use_item",
+      "item": { "id": "firestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Arcanine",
     "fra": "Arcanin",

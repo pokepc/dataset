@@ -98,8 +98,14 @@
     "serebii": "monferno",
     "bulbapedia": "Monferno"
   },
-  "evolvesFrom": "chimchar",
-  "evoFromLevel": 14,
+  "evoMethods": [
+    {
+      "from": ["chimchar"],
+      "trigger": "level_up",
+      "minLevel": 14,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Monferno",
     "fra": "Chimpenfeu",

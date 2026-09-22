@@ -113,8 +113,14 @@
     "serebii": "combusken",
     "bulbapedia": "Combusken"
   },
-  "evolvesFrom": "torchic",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["torchic"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": {
     "eng": "Combusken (Female)",
     "fra": "Galifeu (Female)",

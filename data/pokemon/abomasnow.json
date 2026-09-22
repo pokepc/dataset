@@ -105,8 +105,14 @@
     "serebii": "abomasnow",
     "bulbapedia": "Abomasnow"
   },
-  "evolvesFrom": "snover",
-  "evoFromLevel": 40,
+  "evoMethods": [
+    {
+      "from": ["snover"],
+      "trigger": "level_up",
+      "minLevel": 40,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Abomasnow",
     "fra": "Blizzaroi",

@@ -118,8 +118,14 @@
     "serebii": "ampharos",
     "bulbapedia": "Ampharos"
   },
-  "evolvesFrom": "flaaffy",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["flaaffy"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ampharos",
     "fra": "Pharamp",

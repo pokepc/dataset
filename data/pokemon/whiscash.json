@@ -123,8 +123,14 @@
     "serebii": "whiscash",
     "bulbapedia": "Whiscash"
   },
-  "evolvesFrom": "barboach",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["barboach"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Whiscash",
     "fra": "Barbicha",

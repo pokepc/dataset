@@ -58,8 +58,14 @@
     "serebii": "boltund",
     "bulbapedia": "Boltund"
   },
-  "evolvesFrom": "yamper",
-  "evoFromLevel": 25,
+  "evoMethods": [
+    {
+      "from": ["yamper"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Boltund",
     "fra": "Fulgudog",

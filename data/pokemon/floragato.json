@@ -58,8 +58,14 @@
     "serebii": "floragato",
     "bulbapedia": "Floragato"
   },
-  "evolvesFrom": "sprigatito",
-  "evoFromLevel": 16,
+  "evoMethods": [
+    {
+      "from": ["sprigatito"],
+      "trigger": "level_up",
+      "minLevel": 16,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Floragato",
     "fra": "Matourgeon",

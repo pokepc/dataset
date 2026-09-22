@@ -92,8 +92,14 @@
     "serebii": "amoonguss",
     "bulbapedia": "Amoonguss"
   },
-  "evolvesFrom": "foongus",
-  "evoFromLevel": 39,
+  "evoMethods": [
+    {
+      "from": ["foongus"],
+      "trigger": "level_up",
+      "minLevel": 39,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Amoonguss",
     "fra": "Gaulet",

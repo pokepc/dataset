@@ -58,8 +58,14 @@
     "serebii": "cinderace",
     "bulbapedia": "Cinderace"
   },
-  "evolvesFrom": "raboot",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["raboot"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Cinderace",
     "fra": "Pyrobut",

@@ -122,8 +122,14 @@
     "serebii": "raticate",
     "bulbapedia": "Raticate"
   },
-  "evolvesFrom": "rattata",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["rattata"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Raticate",
     "fra": "Rattatac",

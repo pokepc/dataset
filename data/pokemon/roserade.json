@@ -109,8 +109,14 @@
     "serebii": "roserade",
     "bulbapedia": "Roserade"
   },
-  "evolvesFrom": "roselia",
-  "evoFromItem": "shinystone",
+  "evoMethods": [
+    {
+      "from": ["roselia"],
+      "trigger": "use_item",
+      "item": { "id": "shinystone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Roserade",
     "fra": "Roserade",

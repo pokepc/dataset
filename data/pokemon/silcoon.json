@@ -105,8 +105,14 @@
     "serebii": "silcoon",
     "bulbapedia": "Silcoon"
   },
-  "evolvesFrom": "wurmple",
-  "evoFromLevel": 7,
+  "evoMethods": [
+    {
+      "from": ["wurmple"],
+      "trigger": "level_up",
+      "minLevel": 7,
+      "conditions": [{ "key": "hidden_value_branch", "percentage": 50 }]
+    }
+  ],
   "names": {
     "eng": "Silcoon",
     "fra": "Armulys",

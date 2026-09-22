@@ -90,8 +90,14 @@
     "serebii": "reuniclus",
     "bulbapedia": "Reuniclus"
   },
-  "evolvesFrom": "duosion",
-  "evoFromLevel": 41,
+  "evoMethods": [
+    {
+      "from": ["duosion"],
+      "trigger": "level_up",
+      "minLevel": 41,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Reuniclus",
     "fra": "Symbios",

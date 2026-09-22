@@ -59,8 +59,14 @@
     "serebii": "hattrem",
     "bulbapedia": "Hattrem"
   },
-  "evolvesFrom": "hatenna",
-  "evoFromLevel": 32,
+  "evoMethods": [
+    {
+      "from": ["hatenna"],
+      "trigger": "level_up",
+      "minLevel": 32,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Hattrem",
     "fra": "Chapotus",

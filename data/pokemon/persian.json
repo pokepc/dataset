@@ -128,8 +128,14 @@
     "serebii": "persian",
     "bulbapedia": "Persian"
   },
-  "evolvesFrom": "meowth",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["meowth"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Persian",
     "fra": "Persian",

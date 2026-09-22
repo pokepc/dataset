@@ -71,8 +71,14 @@
     "serebii": "hakamoo",
     "bulbapedia": "Hakamo-o"
   },
-  "evolvesFrom": "jangmoo",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["jangmoo"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Hakamo-o",
     "fra": "Écaïd",

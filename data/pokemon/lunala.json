@@ -70,8 +70,15 @@
     "serebii": "lunala",
     "bulbapedia": "Lunala"
   },
-  "evolvesFrom": "cosmoem",
-  "evoFromLevel": 53,
+  "evoMethods": [
+    {
+      "from": ["cosmoem"],
+      "games": ["sm-m", "usum-um", "swsh-sh", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 53,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Lunala",
     "fra": "Lunala",

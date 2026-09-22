@@ -134,8 +134,14 @@
     "serebii": "dragonair",
     "bulbapedia": "Dragonair"
   },
-  "evolvesFrom": "dratini",
-  "evoFromLevel": 30,
+  "evoMethods": [
+    {
+      "from": ["dratini"],
+      "trigger": "level_up",
+      "minLevel": 30,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dragonair",
     "fra": "Draco",

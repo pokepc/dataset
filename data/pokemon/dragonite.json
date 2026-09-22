@@ -137,8 +137,14 @@
     "serebii": "dragonite",
     "bulbapedia": "Dragonite"
   },
-  "evolvesFrom": "dragonair",
-  "evoFromLevel": 55,
+  "evoMethods": [
+    {
+      "from": ["dragonair"],
+      "trigger": "level_up",
+      "minLevel": 55,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dragonite",
     "fra": "Dracolosse",

@@ -108,8 +108,14 @@
     "serebii": "ninjask",
     "bulbapedia": "Ninjask"
   },
-  "evolvesFrom": "nincada",
-  "evoFromLevel": 20,
+  "evoMethods": [
+    {
+      "from": ["nincada"],
+      "trigger": "level_up",
+      "minLevel": 20,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ninjask",
     "fra": "Ninjask",

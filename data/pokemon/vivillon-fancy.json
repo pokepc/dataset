@@ -76,8 +76,14 @@
     "serebii": "vivillon",
     "bulbapedia": "Vivillon"
   },
-  "evolvesFrom": "spewpa",
-  "evoFromLevel": 12,
+  "evoMethods": [
+    {
+      "from": ["spewpa"],
+      "trigger": "level_up",
+      "minLevel": 12,
+      "conditions": [{ "key": "vivillon_pattern", "pattern": "fancy" }]
+    }
+  ],
   "names": {
     "eng": "Vivillon (Fancy Pattern)",
     "fra": "Prismillon (Motif Fantaisie)",

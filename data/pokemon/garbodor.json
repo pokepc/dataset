@@ -95,8 +95,14 @@
     "serebii": "garbodor",
     "bulbapedia": "Garbodor"
   },
-  "evolvesFrom": "trubbish",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["trubbish"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Garbodor",
     "fra": "Miasmax",

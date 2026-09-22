@@ -110,8 +110,14 @@
     "serebii": "claydol",
     "bulbapedia": "Claydol"
   },
-  "evolvesFrom": "baltoy",
-  "evoFromLevel": 36,
+  "evoMethods": [
+    {
+      "from": ["baltoy"],
+      "trigger": "level_up",
+      "minLevel": 36,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Claydol",
     "fra": "Kaorine",

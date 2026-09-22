@@ -110,8 +110,14 @@
     "serebii": "gabite",
     "bulbapedia": "Gabite"
   },
-  "evolvesFrom": "gible",
-  "evoFromLevel": 24,
+  "evoMethods": [
+    {
+      "from": ["gible"],
+      "trigger": "level_up",
+      "minLevel": 24,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Gabite",
     "fra": "Carmache",

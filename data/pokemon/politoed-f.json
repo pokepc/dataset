@@ -126,8 +126,14 @@
     "serebii": "politoed",
     "bulbapedia": "Politoed"
   },
-  "evolvesFrom": "poliwhirl",
-  "evoFromItem": "kingsrock",
+  "evoMethods": [
+    {
+      "from": ["poliwhirl"],
+      "trigger": "trade",
+      "item": { "id": "kingsrock", "role": "held" },
+      "conditions": [{ "key": "gender", "gender": "female" }]
+    }
+  ],
   "names": { "eng": "Politoed (Female)", "fra": "Tarpaud (Female)", "deu": "Quaxo (Female)" },
   "genus": {
     "eng": "Frog Pokémon",

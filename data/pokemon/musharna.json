@@ -91,8 +91,14 @@
     "serebii": "musharna",
     "bulbapedia": "Musharna"
   },
-  "evolvesFrom": "munna",
-  "evoFromItem": "moonstone",
+  "evoMethods": [
+    {
+      "from": ["munna"],
+      "trigger": "use_item",
+      "item": { "id": "moonstone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Musharna",
     "fra": "Mushana",

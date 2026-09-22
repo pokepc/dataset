@@ -129,8 +129,14 @@
     "serebii": "primeape",
     "bulbapedia": "Primeape"
   },
-  "evolvesFrom": "mankey",
-  "evoFromLevel": 28,
+  "evoMethods": [
+    {
+      "from": ["mankey"],
+      "trigger": "level_up",
+      "minLevel": 28,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Primeape",
     "fra": "Colossinge",

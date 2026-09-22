@@ -58,8 +58,14 @@
     "serebii": "inteleon",
     "bulbapedia": "Inteleon"
   },
-  "evolvesFrom": "drizzile",
-  "evoFromLevel": 35,
+  "evoMethods": [
+    {
+      "from": ["drizzile"],
+      "trigger": "level_up",
+      "minLevel": 35,
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Inteleon",
     "fra": "Lézargus",

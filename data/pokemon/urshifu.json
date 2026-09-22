@@ -60,8 +60,21 @@
     "serebii": "urshifu",
     "bulbapedia": "Urshifu"
   },
-  "evolvesFrom": "kubfu",
-  "evoFromCondition": "Defeat the Single Strike Tower",
+  "evoMethods": [
+    {
+      "from": ["kubfu"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [{ "key": "interact_with_scroll", "scroll": "darkness" }]
+    },
+    {
+      "from": ["kubfu"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "scrollofdarkness", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Urshifu",
     "fra": "Shifours",

@@ -75,8 +75,14 @@
     "serebii": "florges",
     "bulbapedia": "Florges"
   },
-  "evolvesFrom": "floette-orange",
-  "evoFromItem": "shinystone",
+  "evoMethods": [
+    {
+      "from": ["floette-orange"],
+      "trigger": "use_item",
+      "item": { "id": "shinystone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Florges (Orange Flower)",
     "esp": "Florges (Flor Naranja)",

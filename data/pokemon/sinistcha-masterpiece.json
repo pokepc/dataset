@@ -61,8 +61,14 @@
     "serebii": "sinistcha",
     "bulbapedia": "Sinistcha"
   },
-  "evolvesFrom": "poltchageist-artisan",
-  "evoFromItem": "masterpieceteacup",
+  "evoMethods": [
+    {
+      "from": ["poltchageist-artisan"],
+      "trigger": "use_item",
+      "item": { "id": "masterpieceteacup", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Sinistcha (Masterpiece Form)",
     "esp": "Sinistcha (Forma Exquisita)",

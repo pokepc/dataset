@@ -71,8 +71,19 @@
     "serebii": "crabominable",
     "bulbapedia": "Crabominable"
   },
-  "evolvesFrom": "crabrawler",
-  "evoFromItem": "icestone",
+  "evoMethods": [
+    {
+      "from": ["crabrawler"],
+      "trigger": "level_up",
+      "conditions": [{ "key": "location", "location": "mount_lanakila" }]
+    },
+    {
+      "from": ["crabrawler"],
+      "trigger": "use_item",
+      "item": { "id": "icestone", "role": "used" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Crabominable",
     "fra": "Crabominable",
