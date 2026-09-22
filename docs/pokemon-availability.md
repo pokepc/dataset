@@ -93,8 +93,8 @@ form, or transformation exists in another.
 Fairy Arceus cannot inherit acquisition or storage before Gen VI, when the Pixie Plate was
 introduced. Normal Deoxys has no acquisition route in FireRed, LeafGreen or Emerald: capture
 immediately yields Attack, Defense or Speed Forme, respectively. Those routes belong to the exact
-resulting form. Released ordinary GO Pokémon such as Cramorant and Zeraora can be stored in GO;
-this does not grant storage to their temporary transformations.
+resulting form. Released ordinary GO Pokémon such as Cramorant and Zeraora can be stored in GO; this
+does not grant storage to their temporary transformations.
 
 Battle transformations such as Mega Evolution and Gigantamax retain their explicit acquisition
 rules: a supported in-game transformation can be listed even though the temporary transformed state
