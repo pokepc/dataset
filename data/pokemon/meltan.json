@@ -31,8 +31,8 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "go",
-  "obtainableIn": ["go", "home", "lza"],
-  "eventOnlyIn": [],
+  "obtainableIn": ["go", "lza"],
+  "eventOnlyIn": ["home"],
   "storableIn": ["go", "lgpe-lgp", "lgpe-lge", "swsh-sw", "swsh-sh", "home", "lza"],
   "shinyReleased": true,
   "shinyLockedIn": ["lza"],
@@ -80,5 +80,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": []
+  "transferOnlyIn": ["lgpe-lgp", "lgpe-lge", "swsh-sw", "swsh-sh"]
 }

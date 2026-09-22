@@ -42,7 +42,6 @@
     "pt",
     "hgss-hg",
     "hgss-ss",
-    "bw-b",
     "bw-w",
     "b2w2-b2",
     "b2w2-w2",
@@ -50,9 +49,9 @@
     "xy-y",
     "oras-as",
     "go",
-    "swsh-sw",
+    "usum-us",
+    "usum-um",
     "swsh-sh",
-    "bdsp-bd",
     "bdsp-sp",
     "sv-s",
     "sv-v"
@@ -150,5 +149,18 @@
     "chs": "雄性",
     "cht": "雄性"
   },
-  "transferOnlyIn": ["rs-r", "col", "frlg-fr", "frlg-lg", "xd", "oras-or", "home"]
+  "transferOnlyIn": [
+    "rs-r",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "xd",
+    "bw-b",
+    "oras-or",
+    "sm-s",
+    "sm-m",
+    "swsh-sw",
+    "home",
+    "bdsp-bd"
+  ]
 }

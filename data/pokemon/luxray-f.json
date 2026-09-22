@@ -40,13 +40,14 @@
     "pt",
     "hgss-hg",
     "hgss-ss",
-    "bw-b",
     "bw-w",
     "xy-x",
     "xy-y",
     "oras-or",
     "oras-as",
     "go",
+    "sm-s",
+    "sm-m",
     "swsh-sw",
     "swsh-sh",
     "bdsp-bd",
@@ -111,7 +112,11 @@
   },
   "evolvesFrom": "luxio",
   "evoFromLevel": 30,
-  "names": { "eng": "Luxray (Female)", "fra": "Luxray (Female)", "deu": "Luxtra (Female)" },
+  "names": {
+    "eng": "Luxray (Female)",
+    "fra": "Luxray (Female)",
+    "deu": "Luxtra (Female)"
+  },
   "genus": {
     "eng": "Gleam Eyes Pokémon",
     "esp": "Pokémon Chispa Ojos",
@@ -144,5 +149,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["b2w2-b2", "b2w2-w2", "home"]
+  "transferOnlyIn": ["bw-b", "b2w2-b2", "b2w2-w2", "usum-us", "usum-um", "home"]
 }

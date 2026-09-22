@@ -34,20 +34,8 @@
   "canBeAlpha": false,
   "debutIn": "oras",
   "obtainableIn": ["go", "lza"],
-  "eventOnlyIn": ["oras-or", "oras-as"],
-  "storableIn": [
-    "oras-or",
-    "oras-as",
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "home",
-    "sv-s",
-    "sv-v",
-    "lza"
-  ],
+  "eventOnlyIn": [],
+  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "sv-s", "sv-v", "lza"],
   "shinyReleased": false,
   "shinyLockedIn": ["lza"],
   "baseHp": 80,
@@ -115,5 +103,15 @@
     "chs": "解放胡帕",
     "cht": "解放胡帕"
   },
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": [
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "sv-s",
+    "sv-v"
+  ]
 }

@@ -32,8 +32,6 @@
   "canBeAlpha": false,
   "debutIn": "bw",
   "obtainableIn": [
-    "bw-b",
-    "bw-w",
     "b2w2-b2",
     "b2w2-w2",
     "xy-x",
@@ -48,7 +46,7 @@
     "sv-s",
     "sv-v"
   ],
-  "eventOnlyIn": [],
+  "eventOnlyIn": ["bw-b", "bw-w"],
   "storableIn": [
     "bw-b",
     "bw-w",
@@ -117,5 +115,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["sm-s", "sm-m", "home"]
 }

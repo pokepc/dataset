@@ -33,8 +33,8 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "bw",
-  "obtainableIn": ["home", "sv-s", "sv-v", "lza"],
-  "eventOnlyIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "oras-or", "oras-as"],
+  "obtainableIn": ["sv-s", "sv-v", "lza"],
+  "eventOnlyIn": [],
   "storableIn": [],
   "shinyReleased": true,
   "shinyLockedIn": ["sv-s", "sv-v", "lza"],
@@ -103,5 +103,18 @@
     "chs": "舞步形态",
     "cht": "舞步形態"
   },
-  "transferOnlyIn": ["xy-x", "xy-y"]
+  "transferOnlyIn": [
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um"
+  ]
 }

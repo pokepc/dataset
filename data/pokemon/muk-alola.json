@@ -35,17 +35,7 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "sm",
-  "obtainableIn": [
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "lgpe-lgp",
-    "lgpe-lge",
-    "sv-s",
-    "sv-v"
-  ],
+  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "lgpe-lgp", "sv-s", "sv-v"],
   "eventOnlyIn": [],
   "storableIn": [
     "go",
@@ -127,5 +117,5 @@
     "chs": "阿罗拉的样子",
     "cht": "阿羅拉的樣子"
   },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["lgpe-lge", "home"]
 }

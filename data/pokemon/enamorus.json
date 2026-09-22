@@ -34,8 +34,8 @@
   "canDynamax": false,
   "canBeAlpha": false,
   "debutIn": "la",
-  "obtainableIn": ["go", "home", "la"],
-  "eventOnlyIn": [],
+  "obtainableIn": ["go", "la"],
+  "eventOnlyIn": ["home"],
   "storableIn": ["go", "home", "la", "sv-s", "sv-v"],
   "shinyReleased": true,
   "shinyLockedIn": ["la"],
@@ -81,6 +81,8 @@
     "cht": "愛憎寶可夢"
   },
   "speciesNames": {},
-  "formNames": { "eng": "Incarnate Forme" },
+  "formNames": {
+    "eng": "Incarnate Forme"
+  },
   "transferOnlyIn": ["sv-s", "sv-v"]
 }

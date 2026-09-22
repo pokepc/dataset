@@ -40,6 +40,7 @@
     "gs-s",
     "c",
     "frlg-fr",
+    "xd",
     "dp-d",
     "pt",
     "hgss-hg",
@@ -54,13 +55,12 @@
     "swsh-sw",
     "swsh-sh",
     "bdsp-bd",
-    "bdsp-sp",
     "la",
     "sv-s",
     "sv-v",
     "lza"
   ],
-  "eventOnlyIn": [],
+  "eventOnlyIn": ["col"],
   "storableIn": [
     "gs-g",
     "gs-s",
@@ -127,7 +127,11 @@
   },
   "evolvesFrom": "scyther",
   "evoFromItem": "metalcoat",
-  "names": { "eng": "Scizor (Female)", "fra": "Cizayox (Female)", "deu": "Scherox (Female)" },
+  "names": {
+    "eng": "Scizor (Female)",
+    "fra": "Cizayox (Female)",
+    "deu": "Scherox (Female)"
+  },
   "genus": {
     "eng": "Pincer Pokémon",
     "esp": "Pokémon Tenaza",
@@ -163,10 +167,8 @@
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
-    "col",
     "frlg-lg",
     "e",
-    "xd",
     "dp-p",
     "bw-b",
     "bw-w",
@@ -174,6 +176,7 @@
     "b2w2-w2",
     "oras-or",
     "oras-as",
-    "home"
+    "home",
+    "bdsp-sp"
   ]
 }

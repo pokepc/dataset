@@ -35,7 +35,7 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "xy",
-  "obtainableIn": ["xy-x", "xy-y", "go", "sv-s", "sv-v"],
+  "obtainableIn": ["xy-x", "xy-y", "go", "usum-us", "usum-um"],
   "eventOnlyIn": [],
   "storableIn": [
     "xy-x",
@@ -85,7 +85,11 @@
     "deu": "Vivillon (Sandmuster)"
   },
   "genus": {},
-  "speciesNames": { "eng": "Vivillon", "fra": "Prismillon", "deu": "Vivillon" },
+  "speciesNames": {
+    "eng": "Vivillon",
+    "fra": "Prismillon",
+    "deu": "Vivillon"
+  },
   "formNames": {
     "eng": "Sandstorm Pattern",
     "esp": "Motivo Desierto",
@@ -95,5 +99,15 @@
     "jap": "さじんのもよう",
     "kor": "사진의 모양"
   },
-  "transferOnlyIn": ["oras-or", "oras-as", "home", "lza"]
+  "transferOnlyIn": [
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "home",
+    "sv-s",
+    "sv-v",
+    "lza",
+    "champions"
+  ]
 }

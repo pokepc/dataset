@@ -34,18 +34,8 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "sm",
-  "obtainableIn": [
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "swsh-sw",
-    "swsh-sh",
-    "sv-s",
-    "sv-v"
-  ],
-  "eventOnlyIn": [],
+  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "sv-s", "sv-v"],
+  "eventOnlyIn": ["swsh-sh"],
   "storableIn": [
     "go",
     "sm-s",

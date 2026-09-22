@@ -38,11 +38,11 @@
     "dp-d",
     "dp-p",
     "pt",
-    "hgss-hg",
-    "hgss-ss",
     "xy-x",
     "xy-y",
     "go",
+    "usum-us",
+    "usum-um",
     "swsh-sw",
     "swsh-sh",
     "bdsp-bd",
@@ -106,7 +106,11 @@
     "serebii": "snover",
     "bulbapedia": "Snover"
   },
-  "names": { "eng": "Snover (Female)", "fra": "Blizzi (Female)", "deu": "Shnebedeck (Female)" },
+  "names": {
+    "eng": "Snover (Female)",
+    "fra": "Blizzi (Female)",
+    "deu": "Shnebedeck (Female)"
+  },
   "genus": {
     "eng": "Frost Tree Pokémon",
     "esp": "Pokémon Árbol Nieve",
@@ -139,5 +143,17 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": [
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "home"
+  ]
 }

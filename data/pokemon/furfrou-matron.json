@@ -34,20 +34,7 @@
   "debutIn": "xy",
   "obtainableIn": ["xy-x", "xy-y", "go", "usum-us", "usum-um", "lza"],
   "eventOnlyIn": [],
-  "storableIn": [
-    "xy-x",
-    "xy-y",
-    "oras-or",
-    "oras-as",
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "home",
-    "lza",
-    "champions"
-  ],
+  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "home", "lza", "champions"],
   "shinyReleased": true,
   "baseHp": 75,
   "baseAtk": 80,
@@ -110,5 +97,5 @@
     "jap": "マダムカット",
     "kor": "마담컷"
   },
-  "transferOnlyIn": ["oras-or", "oras-as", "home"]
+  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m", "home"]
 }

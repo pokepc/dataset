@@ -35,7 +35,7 @@
   "canBeAlpha": false,
   "debutIn": "bw",
   "obtainableIn": ["go", "lza"],
-  "eventOnlyIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+  "eventOnlyIn": [],
   "storableIn": [
     "bw-b",
     "bw-w",
@@ -117,5 +117,20 @@
     "jap": "イナズマカセット",
     "kor": "번개카세트"
   },
-  "transferOnlyIn": ["xy-x", "xy-y", "oras-or", "oras-as"]
+  "transferOnlyIn": [
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh"
+  ]
 }

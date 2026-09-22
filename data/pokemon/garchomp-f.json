@@ -50,7 +50,6 @@
     "sm-m",
     "usum-us",
     "usum-um",
-    "swsh-sw",
     "swsh-sh",
     "bdsp-bd",
     "bdsp-sp",
@@ -116,7 +115,11 @@
   },
   "evolvesFrom": "gabite",
   "evoFromLevel": 48,
-  "names": { "eng": "Garchomp (Female)", "fra": "Carchacrok (Female)", "deu": "Knakrack (Female)" },
+  "names": {
+    "eng": "Garchomp (Female)",
+    "fra": "Carchacrok (Female)",
+    "deu": "Knakrack (Female)"
+  },
   "genus": {
     "eng": "Mach Pokémon",
     "esp": "Pokémon Mach",
@@ -149,5 +152,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["bw-b", "bw-w", "b2w2-w2", "home"]
+  "transferOnlyIn": ["bw-b", "bw-w", "b2w2-w2", "swsh-sw", "home"]
 }

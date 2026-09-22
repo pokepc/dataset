@@ -34,7 +34,7 @@
   "canBeAlpha": false,
   "debutIn": "b2w2",
   "obtainableIn": ["go", "swsh-sw", "swsh-sh", "lza"],
-  "eventOnlyIn": ["b2w2-b2", "b2w2-w2", "oras-or", "oras-as"],
+  "eventOnlyIn": [],
   "storableIn": [
     "b2w2-b2",
     "b2w2-w2",
@@ -121,5 +121,19 @@
     "chs": "觉悟的样子",
     "cht": "覺悟的樣子"
   },
-  "transferOnlyIn": ["xy-x", "xy-y", "home", "sv-s", "sv-v"]
+  "transferOnlyIn": [
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "sv-s",
+    "sv-v"
+  ]
 }

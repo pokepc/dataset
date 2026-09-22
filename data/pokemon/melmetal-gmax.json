@@ -32,8 +32,8 @@
   "canDynamax": false,
   "canBeAlpha": false,
   "debutIn": "home",
-  "obtainableIn": ["home"],
-  "eventOnlyIn": [],
+  "obtainableIn": [],
+  "eventOnlyIn": ["home"],
   "storableIn": [],
   "shinyReleased": false,
   "baseHp": 135,
@@ -84,6 +84,10 @@
     "chs": "美录梅塔",
     "cht": "美錄梅塔"
   },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
-  "transferOnlyIn": []
+  "formNames": {
+    "eng": "Gigantamax Form",
+    "fra": "Forme Gigamax",
+    "deu": "Gigadynamax-Form"
+  },
+  "transferOnlyIn": ["swsh-sw", "swsh-sh"]
 }

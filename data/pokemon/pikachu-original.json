@@ -34,7 +34,7 @@
   "canBeAlpha": false,
   "debutIn": "sm",
   "obtainableIn": ["go"],
-  "eventOnlyIn": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
   "storableIn": [
     "go",
     "sm-s",
@@ -113,5 +113,15 @@
     "chs": "初始帽子",
     "cht": "初始帽子"
   },
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": [
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "sv-s",
+    "sv-v"
+  ]
 }

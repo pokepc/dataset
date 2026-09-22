@@ -34,8 +34,21 @@
   "canDynamax": false,
   "canBeAlpha": false,
   "debutIn": "xy",
-  "obtainableIn": ["xy-x", "oras-or", "oras-as", "go", "lza"],
-  "eventOnlyIn": ["xy-y"],
+  "obtainableIn": [
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "lgpe-lgp",
+    "lgpe-lge",
+    "lza"
+  ],
+  "eventOnlyIn": [],
   "storableIn": [],
   "shinyReleased": true,
   "baseHp": 65,
@@ -101,5 +114,5 @@
     "chs": "超级",
     "cht": "超級"
   },
-  "transferOnlyIn": ["xy-y"]
+  "transferOnlyIn": []
 }

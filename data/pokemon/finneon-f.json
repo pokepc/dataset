@@ -38,8 +38,6 @@
     "dp-d",
     "dp-p",
     "pt",
-    "hgss-hg",
-    "hgss-ss",
     "bw-b",
     "bw-w",
     "b2w2-b2",
@@ -108,7 +106,11 @@
     "serebii": "finneon",
     "bulbapedia": "Finneon"
   },
-  "names": { "eng": "Finneon (Female)", "fra": "Écayon (Female)", "deu": "Finneon (Female)" },
+  "names": {
+    "eng": "Finneon (Female)",
+    "fra": "Écayon (Female)",
+    "deu": "Finneon (Female)"
+  },
   "genus": {
     "eng": "Wing Fish Pokémon",
     "esp": "Pokémon Pez Ala",
@@ -141,5 +143,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["xy-x", "xy-y", "home"]
+  "transferOnlyIn": ["hgss-hg", "hgss-ss", "xy-x", "xy-y", "home"]
 }
