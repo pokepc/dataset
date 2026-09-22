@@ -124,26 +124,25 @@ The editor runs on `http://127.0.0.1:3003` without external-directory configurat
 Game records include PokéAPI version and version-group IDs. See the
 [game ID mapping guide](docs/pokeapi-game-ids.md) for the schema and one-off population script.
 
-Inspect Bulbapedia game locations using a dataset Pokémon ID or nid:
+Inspect the two Bulbapedia availability lists using a dataset Pokémon ID or nid:
 
 ```bash
 pnpm pokemon:availability pikachu
 pnpm --silent pokemon:availability 0026-alola --json
 pnpm pokemon:availability pikachu --patch
-pnpm pokemon:availability pikachu --with-ai --patch
+pnpm pokemon:availability:all --dry-run
 ```
 
 The command prints a terminal table with one row per game or candidate Pokémon availability fields.
 It preserves existing values where the source is inconclusive, including `storableIn`, and reports
 warnings. With `--patch`, it updates and formats the selected Pokémon file and prints a summary of
-added and removed games instead of the table or JSON. Optional `--with-ai` uses GPT-5.6 Terra to
-verify the input, source HTML, and candidate output before proceeding, using `OPENAI_API_KEY` from
-the environment or repository `.env`. See the [CLI guide](docs/pokemon-availability-cli.md) for
-saved HTML input, classification rules, and limitations.
+added and removed games instead of the table or JSON. The CLI and editor share deterministic parsers
+for the main and GO availability lists; no AI or API key is required. See the
+[CLI guide](docs/pokemon-availability-cli.md) for saved HTML input, classification rules, and
+limitations.
 
 Run `pnpm pokemon:availability:all` to review every Pokémon interactively. Each iteration shows the
-changes summary and accepts `p` to patch, `s` to skip, or `a` for AI verification followed by
-patch/skip. Press Ctrl+C to stop.
+changes summary and accepts `p` to patch or `s` to skip. Press Ctrl+C to stop.
 
 ## Credits
 

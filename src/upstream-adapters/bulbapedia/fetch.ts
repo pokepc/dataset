@@ -2,30 +2,39 @@ import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises'
 import { createHash, randomUUID } from 'node:crypto'
 import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
+import { availabilityUrls, parseAvailabilityTables } from './availability.ts'
 
-/** Fetch-only entry point shared by the CLI and the editor; never loads AI tooling. */
-export async function fetchSpeciesPage(
-  url: string,
+/** Only the two complete availability lists are accepted as upstream sources. */
+export async function fetchAvailabilityPage(
+  source: 'main' | 'go',
   signal?: AbortSignal,
   options: { cacheDir?: string; forceRefresh?: boolean } = {},
 ): Promise<string> {
   signal?.throwIfAborted()
+  const url = availabilityUrls[source]
   const cacheDir =
     options.cacheDir ??
     process.env.BULBAPEDIA_CACHE_DIR ??
     fileURLToPath(new URL('../../../.local/bulbapedia/', import.meta.url))
   const key = createHash('sha256').update(url).digest('hex')
   const cacheFile = resolve(cacheDir, `${key}.json`)
-  const hasLocations = (html: string) => /\bid=["']Game_locations["']/.test(html)
+  const isValidPage = (html: string) => {
+    try {
+      parseAvailabilityTables({ [source]: html })
+      return true
+    } catch {
+      return false
+    }
+  }
   if (!options.forceRefresh) {
     try {
       const cached = JSON.parse(await readFile(cacheFile, 'utf8'))
       signal?.throwIfAborted()
       if (
-        cached?.version === 1 &&
+        cached?.version === 2 &&
         cached.url === url &&
         typeof cached.html === 'string' &&
-        hasLocations(cached.html)
+        isValidPage(cached.html)
       )
         return cached.html
     } catch (error) {
@@ -41,32 +50,37 @@ export async function fetchSpeciesPage(
   try {
     response = await fetch(url, {
       headers: {
-        'User-Agent': 'PokePC-Dataset-Availability/1.0 (+https://github.com/pokepc/dataset)',
+        'User-Agent': 'PokePC-Dataset-Availability/2.0 (+https://github.com/pokepc/dataset)',
         Accept: 'text/html',
       },
       signal: requestSignal,
     })
   } catch (error) {
+    signal?.throwIfAborted()
     const reason = error instanceof Error ? error.message : String(error)
     throw new Error(
-      `Could not fetch Bulbapedia: ${reason}. Check the network, or use --html with a saved species page.`,
+      `Could not fetch Bulbapedia ${source} availability: ${reason}. Check the network, or use --html and --go-html with both saved pages.`,
       { cause: error },
     )
   }
   if (!response.ok)
     throw new Error(
-      `Bulbapedia returned HTTP ${response.status}. Use --html with a saved species page if access is blocked.`,
+      `Bulbapedia ${source} availability returned HTTP ${response.status}. Use --html and --go-html with both saved pages if access is blocked.`,
     )
   const html = await response.text()
-  if (!hasLocations(html))
-    throw new Error(
-      'Bulbapedia did not return a species page with Game locations. Use --html with a saved species page.',
-    )
   requestSignal.throwIfAborted()
+  try {
+    parseAvailabilityTables({ [source]: html })
+  } catch (error) {
+    throw new Error(
+      `Invalid Bulbapedia ${source} availability page: ${error instanceof Error ? error.message : String(error)}`,
+      { cause: error },
+    )
+  }
   await mkdir(cacheDir, { recursive: true })
   const temporary = `${cacheFile}.${randomUUID()}.tmp`
   try {
-    await writeFile(temporary, JSON.stringify({ version: 1, url, html }), 'utf8')
+    await writeFile(temporary, JSON.stringify({ version: 2, url, html }), 'utf8')
     requestSignal.throwIfAborted()
     await rename(temporary, cacheFile)
   } finally {

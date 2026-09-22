@@ -91,26 +91,30 @@ before writing the Pokemon JSON file.
 
 ### Compare upstream availability
 
-Select a Pokemon and click **Load availability sources** to compare Bulbapedia, Serebii and PokéAPI
-beside the current availability draft. Rows follow the editor's concrete game list and order; use
-**Filter games** to narrow the table. Source text, form qualifiers, encounter conditions and source
-links remain visible. Expand **Source notes** for shared context and coverage details. Long
-encounter lists can be expanded within their cell.
+Select a Pokemon and click **Load availability sources** to compare Bulbapedia's
+[availability table](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability)
+and
+[GO table](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability_in_Pok%C3%A9mon_GO)
+beside the current availability draft. These are the only fetched sources; explicit Mega and
+Gigantamax rules supplement missing transformation rows. Rows follow the editor's concrete game list
+and order; use **Filter games** to narrow the table. Table labels, their legend meanings and source
+links remain visible. Expand **Source notes** for coverage details and parser warnings.
 
-The **Verdict** column after **Game** summarizes loaded upstream evidence: ✅ obtainable, 🔀
-transfer only, 🎁 event only, or ❌ explicitly unavailable. It shows ⚠️ for conflicting source
-classifications and — when evidence needs review. Select the verdict to expand its source-based
-reasoning. It is independent of the current draft and never changes availability automatically.
+The **Availability** column after **Game** displays the relevant table's classification directly: ✅
+obtainable, 🔀 transfer only, 🎁 event only, ❌ explicitly unavailable, or — not established. GO
+uses the GO table; other games use the main availability table and the
+[transformation rules](pokemon-availability-cli.md#mega-and-gigantamax-rules). Select a status to
+expand its table label or rule and mapping. No AI verdict or source consensus is involved, and
+loading tables never changes the draft. Cosmetic female forms inherit their parent's rows except in
+Generation I, where genders do not exist. Other unmatched forms remain unverified.
 
-Sources load independently and can be reloaded individually. **Refresh sources** bypasses their
-local caches. A failed page, an unsupported game and a missing encounter entry are distinguished;
-none means the Pokemon is unavailable. PokéAPI encounter data is not a complete list of gifts,
-breeding, evolutions or transfers. Shared species pages can describe forms other than the selected
-form, so their labels matter. The comparison shows evidence without applying an AI verdict or
-changing the draft. Opening the comparison stores `sources=true` in the URL, so switching Pokemon
-(including **Next**/**Prev**) or reloading the page automatically loads the selected Pokemon's
-sources. **Hide comparison** clears that setting and stops automatic loading for later selections.
-Previous Pokemon evidence is cleared when switching selections.
+The two pages load independently and can be reloaded individually. **Refresh sources** bypasses
+their local caches. Failed pages, unsupported games and missing form rows are distinguished; none
+means the Pokemon is unavailable. Current dataset classifications are never presented as upstream
+evidence. Opening the comparison stores `sources=true` in the URL, so switching Pokemon (including
+**Next**/**Prev**) or reloading the page automatically loads the selected Pokemon's sources. **Hide
+comparison** clears that setting and stops automatic loading for later selections. Previous Pokemon
+evidence is cleared when switching selections.
 
 Source caches can be placed in a separate directory with `POKEPC_AVAILABILITY_CACHE_DIR`; browser
 tests use this to isolate their source fixtures as well as their disposable dataset copies.

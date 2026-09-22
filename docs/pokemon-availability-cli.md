@@ -1,363 +1,176 @@
 # Pokémon availability CLI
 
-Run from this checkout after `pnpm install`, using Node.js 24 or newer:
+The availability tools parse two Bulbapedia pages:
+
+- [List of Pokémon by availability](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability)
+- [List of Pokémon by availability in Pokémon GO](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_availability_in_Pok%C3%A9mon_GO)
+
+Each command loads both complete lists once. Bulk review shares the parsed tables across all
+records. Species articles, PokéAPI encounters, Serebii pages, and AI verdicts are no longer part of
+this workflow. No API key is required.
+
+## Single Pokémon
 
 ```bash
 pnpm pokemon:availability pikachu
 pnpm pokemon:availability 0026-alola
-pnpm --silent pokemon:availability 25 --json > /tmp/pikachu-availability.json
+pnpm --silent pokemon:availability 25 --json
 pnpm pokemon:availability pikachu --patch
-pnpm pokemon:availability pikachu --with-ai --patch
 ```
 
-The argument accepts an existing Pokémon `id` or `nid`, including form suffixes. Numeric inputs are
-padded (`25` becomes `0025`); a form must be requested explicitly (`26-alola` becomes `0026-alola`).
-The script resolves the species page using `refs.bulbapedia`.
+IDs, NIDs, and numeric shorthand are accepted, including form suffixes. Default output shows one row
+per concrete dataset game. `--json` prints only the identity and four availability properties to
+stdout; source URLs and warnings go to stderr. `--patch` overrides table/JSON output, applies the
+candidate, formats the file with the repository's Oxfmt configuration, and prints added/removed
+games.
 
-Routes importing Pokémon from games outside the dataset are `transferOnlyIn`; unmatched location and
-DLC labels do not establish an external-game route.
+Only `obtainableIn`, `transferOnlyIn`, and `eventOnlyIn` can change. Storage membership, storage
+ordering, and unrelated Pokémon properties are preserved. Acquisition arrays use dataset game order.
+The patcher checks that availability has not changed since the record was loaded and that the file
+has not changed during formatting; a concurrent edit stops replacement. Writes use a temporary file
+and atomic rename.
 
-Union Circle catches and joining another player's regular raids count as `obtainableIn`, including
-catches hosted from the other version. Temporary event-only raids remain event routes.
-
-Celebi and Jirachi Bonus Disc gifts are classified as `transferOnlyIn`, including their PokéAPI
-encounter methods. This is dataset policy, not an upstream-data error.
-
-Every lookup follows **Bulbapedia → cached PokéAPI cross-check → targeted Serebii evidence**. AI
-remains optional (`--with-ai`, `--ai-harder`, or interactive `a`). Use `--no-cross-check` for
-Bulbapedia alone, including fully offline runs against a saved HTML file. Both CLIs accept
-`--refresh-sources` to refresh all three source caches, including Bulbapedia.
-
-Successful Bulbapedia species pages are cached on disk in the repository's `.local/bulbapedia/`,
-shared by both commands and all forms using the same page URL. The full HTML is retained for parsing
-and AI review. Cached pages are reused across runs until `--refresh-sources` is supplied or their
-cache files are removed; there is no automatic expiry. Set `BULBAPEDIA_CACHE_DIR` to override the
-cache directory. HTTP errors, challenge pages without Game locations, and aborted requests are not
-cached. Invalid cache entries are fetched again; a failed refresh reports the error and leaves the
-previous cache intact. `--html` uses the supplied file directly without reading or writing the
-Bulbapedia cache.
-
-The terminal table uses aligned borders and wraps long descriptions to the terminal width (120
-columns when output is redirected, with a 60-column minimum and 160-column maximum). It includes one
-logical row for every concrete dataset game (`type: "game"`), in dataset order. Paired versions are
-split into individual IDs. Set/superset records are not extra rows; DLC methods are attached to
-their parent games and labeled with the expansion name. Rows show the source methods and whether the
-acquisition classification comes from `source`, an explicit dataset `rule`, the existing `dataset`,
-an AI correction (`ai`), or remains `unknown`. Missing evidence is not proof that a Pokémon is
-unavailable.
-
-## JSON output
-
-`--json` writes only a JSON object to stdout. Use `pnpm --silent` to suppress pnpm's own script
-banner. Source information and warnings are written to stderr. `--patch` overrides this output mode.
-
-The object contains `id`, `nid`, `obtainableIn`, `transferOnlyIn`, `eventOnlyIn`, and `storableIn`,
-using the same field names and game IDs as Pokémon records. It is a candidate patch, not a complete
-Pokémon record. The command edits the dataset only when `--patch` is supplied.
-
-All four game lists follow `data/indices/games.json` order, using the shared
-`sortStringsInGivenOrder` helper. This also applies when patching: `storableIn` keeps its existing
-game membership but is sorted, and retained IDs absent from the game index stay at the end.
-
-For game rows supported by the parsed methods, acquisition fields are updated with this precedence:
-
-1. Ordinary in-game acquisition, including evolution, breeding, permanent gifts, and NPC trades.
-2. Transfers or player trades, when there is no ordinary in-game route.
-3. Events, when there is no known ordinary or transfer route.
-
-An explicit `Unobtainable` row removes that game from the three acquisition fields. An event-only
-summary does not replace a transfer route already recorded in the dataset. Unknown or absent
-acquisition evidence retains existing values, with a warning. `storableIn` is always preserved:
-encounter tables cannot establish box compatibility or whether a form reverts on deposit. Other
-fields, such as `shinyLockedIn`, are not inferred.
-
-Review the warnings and table before using the JSON as a patch. Retained values have not been
-independently verified by this command, and an event listing describes historical availability, not
-necessarily an event active today.
-
-## Patching a Pokémon record
-
-```bash
-pnpm pokemon:availability pikachu --patch
-pnpm pokemon:availability 0026-alola --html /tmp/raichu.html --patch
-```
-
-`--patch` applies the candidate availability fields to `data/pokemon/<id>.json`, retaining
-unresolved values and `storableIn` as described above. Other Pokémon fields are preserved. The
-updated file is formatted with Oxfmt using the repository's `.oxfmtrc.json` and replaced atomically.
-Formatting happens before replacement, so a formatting failure does not leave a partially written
-Pokémon file. The command does not stage or commit anything.
-
-In both CLIs, diagnostics use yellow for warnings and uncertainty, red for errors and failed AI
-reviews, and green for passed AI reviews and resolved conflicts. Error evidence uses the same color
-as its message. Color detection follows the actual output stream, so redirecting JSON on stdout does
-not disable diagnostic colors on a terminal stderr. JSON remains uncolored.
-
-Patch mode prints a summary instead of the table or JSON, even when combined with `--json`. For each
-availability property it lists added and removed games by name and ID, or says `unchanged`. Warnings
-still go to stderr. In a color-capable terminal, property headings use green for `obtainableIn`,
-cyan for `transferOnlyIn`, magenta for `eventOnlyIn`, and yellow for `storableIn`. The same colors
-appear in interactive review summaries. Redirected output stays plain by default; Node's `NO_COLOR`,
-`NODE_DISABLE_COLORS`, and `FORCE_COLOR` settings are respected. For example:
-
-```text
-Patched and formatted: /path/to/data/pokemon/pikachu.json
-
-obtainableIn:
-  Added: Red (rb-r)
-  Removed: Blue (rb-b)
-transferOnlyIn:
-  Added: none
-  Removed: Red (rb-r)
-eventOnlyIn: unchanged
-storableIn: unchanged
-```
-
-If the file already matches the formatted result, it is left untouched. If availability is edited
-during the lookup, the patch fails instead of overwriting that edit; rerun to use the latest data.
-
-## Additional source checks
-
-Confirmed PokéAPI errors are listed in `src/upstream-adapters/bulbapedia/encounter-exceptions.ts`.
-Exceptions match an exact Pokémon endpoint, game/version, location, and method with no conditions.
-Currently this covers Voltorb and Electrode static encounters incorrectly assigned to Sun at New
-Mauville, and the eight documented unreleased species in FireRed/LeafGreen's Altering Cave (Mareep,
-Aipom, Pineco, Shuckle, Teddiursa, Houndour, Stantler, and Smeargle). Exact slots are matched; Zubat
-encounters are not excluded. Matching methods remain in AI context with the reason and supporting
-URLs, and appear as yellow **Known upstream error** diagnostics, but cannot create conflicts or
-change availability. Other methods and encounters remain eligible to block patching. Exceptions have
-offline regression coverage and do not require extra lookups.
-
-The PokéAPI pass uses `refs.pkApiId` and the game's `pokeApiGameVersionId`. It fetches
-[`pokemon/{id}/encounters`](https://pokeapi.co/docs/v2#pokemon-location-areas) once per distinct ID,
-covering every recorded version in one response. Paired DLC version names map to their individual
-parent game, never to both versions. Every encounter includes a form scope and its reason.
-Base-endpoint encounters are **form-ambiguous** in generations where a regional sibling exists;
-shared alternate-form IDs and battle-only forms also provide context only. These appear as yellow
-**Limitations**, not blocking conflicts. Earlier generations and unique regional endpoints can still
-provide evidence for the selected form. This is conservative: a regional form's debut does not prove
-it exists in every later game. The female Gen 1 rule still applies.
-
-PokéAPI is positive evidence only. An empty response does not establish unavailability,
-transfer-only status, event exclusivity, or storage. It does not overwrite the Bulbapedia candidate
-automatically. An encounter identifying the selected form and contradicting that candidate produces
-an **uncertain source conflict**, shown in the table and diagnostics. Conflicts block `--patch` and
-interactive `p` until an AI pass resolves them; plain `--json` still prints the mechanical candidate
-with uncertainty diagnostics on stderr.
-
-AI receives all encounter scopes and reasons. Explicit form-specific HTML can support a passing
-review despite ambiguous optional encounters. If the selected form's route itself remains unclear,
-the review must remain uncertain; ambiguous encounters never add games automatically.
-
-Serebii pages are requested for conflicting games, unknown source methods, or changes that remove
-ordinary acquisition. Ambiguous species rows before the selected form's debut are excluded; actual
-encounter contradictions still receive attention. URLs are grouped by generation and species; at
-most three relevant pages are requested per Pokémon, prioritizing conflicts. Unsupported games and
-targets beyond this limit are reported. Coverage includes the main games from Generations 1–7,
-Sword/Shield, BDSP, Legends: Arceus, and Scarlet/Violet; LGPE, Legends: Z-A, future games, and side
-games currently have no Serebii adapter. Only locations, evolution, and form context is sent to AI,
-with table structure and annotations preserved. This is supplementary evidence for AI to interpret,
-not another automatic availability parser. The CLI does not crawl links or make one request per
-game.
-
-PokéAPI reuses the existing `.local/pokeapi` disk cache and its `POKEAPI_CACHE_DIR`,
-`POKEAPI_CACHE`, and `POKEAPI_REFRESH_CACHE` settings. Serebii uses `.local/serebii`. Supplementary
-requests run sequentially, with at least 500 ms between requests to the same provider, a 30-second
-timeout, at most two PokéAPI attempts, and one Serebii attempt. Repeated URLs, including failures,
-are reused during an `:all` run. Request failures are visible warnings, not empty verified results;
-they never resolve an existing conflict. Tests use mocks and fixtures only.
-
-## AI verification
-
-```bash
-pnpm pokemon:availability raichu-alola --with-ai
-pnpm --silent pokemon:availability 0026-alola --with-ai --json
-pnpm pokemon:availability raichu-alola --with-ai --patch
-pnpm pokemon:availability dugtrio --ai-harder --json
-```
-
-`--with-ai` uses the OpenAI Responses API with **`gpt-5.6-luna`**, reasoning effort `low`, and
-structured output. **`--ai-harder` selects `gpt-5.6-terra` with `low` reasoning** and enables AI
-verification itself; it can also be combined with `--with-ai`. It makes one Terra review instead of
-first calling Luna. Both modes use the same evidence, structured output, and validation rules. The
-verifier reads `OPENAI_API_KEY` from the environment, falling back to this repository's `.env`. It
-does not print, change, or save the key. The flag makes a billable API request using that key. There
-is no model substitution or automatic retry.
-
-The verifier receives the full current Pokémon JSON, full dataset game records, the exact candidate
-JSON, parsed methods and their provenance, the supplementary source evidence and conflicts, and the
-important Bulbapedia article HTML. The HTML includes the introduction, biology/forms/evolution, game
-locations with event subsections, and Pokémon GO context where present. Scripts, navigation,
-presentation attributes, and unrelated stats/learnsets are removed; table structure, links, titles,
-row spans, and form annotations remain. Evidence over 500,000 characters is rejected rather than
-silently truncated.
-
-The selected model independently checks Pokémon/form identity, game IDs and versions, acquisition
-methods, DLC mapping, event/transfer precedence, preservation rules, and whether the candidate
-accurately represents the supplied source. Its Zod structured output includes a `candidateJson` with
-identity and the three acquisition arrays, `differenceReason`, one check for every concrete dataset
-game, `conflictResolutions`, and findings with evidence. It may correct parsing mistakes when the
-supplied evidence supports the correction. Every reported conflict needs an explicit resolution;
-resolved conflicts must cite both conflicting sources and have an accurate game check. Invented
-citations, omitted conflicts, and unresolved disagreements cannot pass. Sources are not resolved by
-majority vote. Checks describe the final AI candidate; corrected parser mistakes are warnings, while
-unresolved errors still block patching. Local validation rejects missing/duplicate game checks,
-invented game IDs, changed Pokémon identity, overlapping acquisition categories, changes to storage
-membership, and female Gen 1 routes. `storableIn` is read-only input: the AI cannot return it, and
-the verifier carries it into the final candidate directly from the mechanical candidate. The AI can
-still report evidenced storage contradictions as findings, which remain subject to validation. After
-a failed review, the CLI displays the original mechanical proposal; rejected AI changes have not
-been applied to that proposal or written to the dataset.
-
-The response schema always requires a nonempty `differenceReason` of at most **25 words**: either an
-explanation of the AI's corrections or confirmation of the mechanical candidate. Local validation
-compares game membership and exposes the reason as `AI difference:` only for actual corrections. For
-matching candidates, it normalizes the reason to null and the CLI says the candidates match.
-Reordering alone and confirming the parser's changes from the existing record are not AI
-corrections. Each changed game must still have an accurate check with source evidence. All accepted
-lists retain the dataset's game order.
-
-The review and findings go to **stderr**, preserving JSON stdout and the patch-only summary. A
-passing review uses the AI candidate for the table, JSON, summary, and patch. An inaccurate or
-uncertain review, missing key, timeout, API error, refusal, or incomplete response exits nonzero
-before printing candidate output or writing the Pokémon file. Requests have a two-minute timeout.
-With `--patch`, successful verification is followed by the existing Oxfmt write and
-added/removed-games summary.
-
-The AI only proposes availability fields, never other Pokémon properties. An unverified value
-deliberately retained from the dataset is labeled `retained`, not verified. Missing evidence alone
-is allowed for retained values; an evidenced contradiction is reported. A pass is a model assessment
-of the supplied evidence, not proof that all existing data are correct. The verifier has no browsing
-or other tools and does not follow linked pages.
-
-Model and response format references:
-[GPT-5.6 Luna](https://developers.openai.com/api/docs/models/gpt-5.6-luna),
-[GPT-5.6 Terra](https://developers.openai.com/api/docs/models/gpt-5.6-terra), and
-[Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs).
-
-## Interactive full-dataset review
+## Bulk review
 
 ```bash
 pnpm pokemon:availability:all
 pnpm pokemon:availability:all --skip-unchanged
-pnpm pokemon:availability:all --skip-unchanged --with-ai
-pnpm pokemon:availability:all --from mrmime-galar --skip-unchanged --with-ai
 pnpm pokemon:availability:all --from 0122-galar
-pnpm pokemon:availability:all --from dugtrio --skip-unchanged --ai-harder
-pnpm pokemon:availability:all --patch-all
-pnpm pokemon:availability:all --from tauros-paldea --patch-all --skip-unchanged --with-ai
+pnpm pokemon:availability:all --dry-run
+pnpm pokemon:availability:all --from tauros-paldea --patch-all --skip-unchanged
 ```
 
-The companion CLI visits every record in `data/indices/pokemon.json` order, including forms. It uses
-the same parser, change summary, patcher, and AI verifier as the single-Pokémon tool. The current
-position, identity, source, warnings, and added/removed games for all four properties appear before
-each prompt:
+Records are visited in `data/indices/pokemon.json` order, including forms. The shared source pages
+are validated before any Pokémon file is patched. Each record shows its identity, warnings, and
+proposed changes, followed by:
 
 ```text
-p) patch  s) skip  a) ai pass >
+p) patch  s) skip >
 ```
 
-`--from <id|nid>` starts at that exact record, **inclusive**, then continues in dataset index order.
-It accepts the same IDs, NIDs, and numeric shorthand as the single-Pokémon command, including form
-suffixes. Earlier records receive no source lookups, cross-checks, AI calls, prompts, or writes.
-Progress retains the original full-dataset position; final totals count only this run's processed
-records. An unknown ID fails before any lookup. It combines with all other review options.
+- `p` patches and formats the current file, then advances. A patch failure stays on the current
+  record.
+- `s` skips without writing.
+- `--from <id|nid>` starts at that record, inclusive. Earlier records receive no reports or writes.
+  An unknown ID fails before source loading.
+- `--skip-unchanged` skips the prompt when no availability membership changes. It keeps warnings
+  visible; unchanged values may have been retained because the source lacks the selected form.
+- `--patch-all` patches automatically without stdin or prompts. It stops at the first report or
+  patch error, prints a `--from` recovery hint, and exits nonzero. Earlier completed patches remain
+  saved.
+- `--dry-run` visits the range without stdin, prompts, or writes. It prints proposals and warnings,
+  then totals for reviewed, changed, unchanged, warning-bearing, and failed records. Individual
+  report failures are counted and the remaining records are reviewed; any failure exits nonzero. It
+  cannot be combined with `--patch-all`.
 
-`--patch-all` applies eligible patches and formats each file automatically, without prompts. It
-stops at the first lookup or patch error, unresolved source conflict, or failed/uncertain AI review,
-prints the blocked Pokémon and a `--from` hint, and exits with code 1. Earlier completed patches
-remain saved; later Pokémon are not processed. Warnings and form-ambiguous source limitations alone
-do not block patching. The normal preservation rules and file-concurrency checks still apply.
+Ctrl+C cancels active source requests and stops the loop. A file replacement already started
+finishes safely, and completed patches remain saved. Interactive end of input also stops the run.
+There is no persisted cursor; use `--from` to resume.
 
-Combine it with `--with-ai` or `--ai-harder` to review before each automatic patch: a passing AI
-candidate is used, including its corrections. AI may resolve a source conflict before patching;
-otherwise the run stops. AI is not enabled by `--patch-all` alone. `--skip-unchanged` retains its
-existing behavior, including skipping unchanged, conflict-free candidates before AI.
+## Source rules and limits
 
-Type a letter and Enter. `p` patches and formats the current file with Oxfmt, then advances. `s`
-leaves it unchanged and advances. `a` verifies the displayed candidate with GPT-5.6 Luna and low
-reasoning, prints the review and the final AI candidate's changes summary, then offers only `p` or
-`s`. After a passing review, `p` applies that AI candidate. Without `--patch-all`, it never patches
-automatically. Failed, uncertain, or unsuccessful AI reviews block `p`; use `s` to continue. AI is
-optional and reuses the existing API key configuration.
+The main parser follows the page's legend, game columns, and stated version order instead of
+interpreting prose from species articles. Codes for ordinary in-game acquisition, evolution,
+breeding, and related routes map to `obtainableIn`. Transfer and trade routes map to
+`transferOnlyIn`. Event codes are case-sensitive.
 
-`--with-ai` runs the same GPT-5.6 Luna verification automatically for each candidate before the
-first prompt. `--ai-harder` enables the same automatic flow using GPT-5.6 Terra with low reasoning.
-You then choose `p` or `s`, unless `--patch-all` applies the passing candidate automatically.
-Failed, uncertain, or unsuccessful reviews still block patching. Each review makes a billable API
-request using the existing key. Combine with `--skip-unchanged` to review candidates with added or
-removed games **or unresolved source conflicts**. Other unchanged candidates are skipped before AI;
-the source cross-check still runs.
+`eventOnlyIn` means obtainable through an in-game event route, including an event-unlocked catch. It
+does not mean a distributed Pokémon or a guarantee that trading is impossible. A game in
+`eventOnlyIn` must not also appear in `obtainableIn` or `transferOnlyIn`; the dataset integrity
+tests reject both overlaps. `storableIn` is independent and may overlap any acquisition field.
 
-`--skip-unchanged` automatically advances past candidates with no added or removed games in any
-availability property and no unresolved source conflicts. These count as already up to date; array
-ordering and file formatting alone do not trigger a prompt. Their progress and warnings remain
-visible, and no files are written or AI requests made for them. After a successful AI review
-(`--with-ai`, `--ai-harder`, or manual `a`), the flag checks again: if the final AI candidate
-matches the existing dataset, it advances without another prompt and counts the Pokémon as already
-up to date. This compares against the dataset, not the mechanical candidate; an AI-confirmed patch
-still prompts. Failed or uncertain AI reviews and lookup failures still prompt for skip because
-their availability could not be verified.
+| Main-table labels          | Dataset classification |
+| -------------------------- | ---------------------- |
+| `EV`, `EVE`, `EVD`, `CCEV` | `eventOnlyIn`          |
+| `Ev`, `EvB`, `EvE`, `EvET` | `transferOnlyIn`       |
+| `PW`, `PWE`                | `transferOnlyIn`       |
 
-The review CLI separates **Proposed changes** from **AI verification**. A mechanically skipped
-record explicitly says AI verification was not run. “No changes” only compares the candidate to the
-dataset; it does not establish accuracy or turn an uncertain review into a pass.
+Pokéwalker is external to HeartGold/SoulSilver. The GO page determines GO availability
+independently. GO release tables establish historical availability (`obtainableIn`), not current
+spawns or exclusive events. Explicit unreleased entries and future/TBA releases are unavailable;
+unlisted forms remain unverified. Image filenames distinguish forms whose visible label contains
+only the species name. Contradictory released/unreleased entries retain existing data with warnings.
 
-Lookup failures offer skip without creating a candidate. Patch failures stay on the current Pokémon.
-Invalid input does not advance. Consecutive forms sharing a species page reuse its HTML; only one
-page is kept in memory. Pokémon files are written after an explicit `p` or through `--patch-all`.
+The main source does not enumerate every nonregional alternate form. Unmatched forms retain the
+existing classification and emit warnings; a species row is not silently treated as proof for an
+unlisted alternate form. Cosmetic female records inherit their corresponding parent form's source
+availability, except that Generation 1 is excluded from all three acquisition arrays because those
+games have no genders. Female-only species are not cosmetic female records.
 
-Ctrl+C stops the loop and cancels an active page fetch or AI request. A file replacement already
-started finishes safely. Completed patches remain saved. End of input also stops the interactive
-review; `--patch-all` requires no input. The final line counts patched, unchanged, and skipped
-records. There is no persisted cursor; a new run starts at the beginning unless `--from` is
-supplied.
+Games and services absent from the source tables retain their current values. Storage membership is
+never inferred from acquisition codes. The explicit HOME gift rule below is the only service
+exception. An empty source cell is inconclusive and retains that game with a warning. Unknown codes
+or malformed table structure fail parsing instead of producing an empty candidate.
 
-## Saved pages and failure handling
+### Mega and Gigantamax rules
 
-To reproduce a result or work when the site blocks automated requests, save the species page's HTML
-and run:
+Explicit rules supplement the main list for transformations. The dataset's `debutIn` selects the
+Mega group; the [Mega Evolution reference](https://bulbapedia.bulbagarden.net/wiki/Mega_Evolution)
+is not fetched or parsed at runtime.
+
+| Mega group   | Supported games                                        |
+| ------------ | ------------------------------------------------------ |
+| XY           | XY, ORAS, Sun/Moon, Ultra Sun/Ultra Moon, Legends: Z-A |
+| ORAS         | ORAS, Sun/Moon, Ultra Sun/Ultra Moon, Legends: Z-A     |
+| Legends: Z-A | Legends: Z-A                                           |
+
+Older Kanto Megas also work in Let's Go. Mega Latias/Latios are a documented exception to their ORAS
+debut: XY supports them with Mega Stones traded from ORAS, mapped to `transferOnlyIn`. Supported
+transformations are otherwise `obtainableIn`, with `eventOnlyIn` inherited from the base form's
+main-table in-game event gate. Exact base forms take precedence over species rows. Unrecognized
+introduction groups and inconclusive base cells remain unverified.
+
+Gigantamax forms are `obtainableIn` in Sword/Shield, except Gigantamax Melmetal: its HOME gift is
+`eventOnlyIn`, and Sword/Shield are `transferOnlyIn`. GO Mega, Primal, fusion, and Gigantamax
+availability always comes from the GO page's separate tables. Champions remains unresolved; future
+planned coverage is not treated as current availability.
+
+The 2026-09-22 source audit covered all 1,595 dataset records. The main page had 1,025 species,
+1,101 distinct rows, and 40 mapped games. Cosmetic female inheritance and the 130 Mega/Gigantamax
+rules leave 265 records without main-game coverage and one partially covered record (Hisuian
+Samurott's blank Legends: Z-A cell). GO resolves 1,580 records; 15 remain unlisted, including Low
+Key Gigantamax Toxtricity, which the source does not distinguish from its other Gigantamax form.
+There are 267 records with at least one gap and 14 with gaps in both lists. HOME is covered only for
+Gigantamax Melmetal; Pokopia, Champions, Winds, and Waves remain outside these rules.
+
+The local coverage generator and report live together:
 
 ```bash
-pnpm pokemon:availability raichu-alola --html /tmp/raichu.html --no-cross-check
+node .local/generate-uncovered.ts
+node .local/generate-uncovered.ts --as-of 2026-09-22
 ```
 
-The live request has a 30-second timeout. HTTP errors, challenge pages, mismatched species titles,
-and pages without recognizable location rows fail with a nonzero exit status. They do not produce an
-empty JSON result that could erase existing data. Requests are made only for the selected species
-and its targeted supplementary pages; the CLI does not crawl linked pages.
+The generator uses saved `.local/availability/main.html` and `go.html` snapshots without network
+requests. It accepts `--main-html`, `--go-html`, `--output`, and `--as-of`. The JSON includes source
+hashes, rule coverage, record IDs and form names, unresolved games, and evidence for inconclusive
+cells. Explicit unavailability counts as coverage; saved dataset values do not. Neither command
+patches dataset records. These local artifacts are ignored by Git.
 
-## Parsing approach and limits
+## Cache and saved HTML
 
-The parser uses Cheerio to read Bulbapedia's **Game locations** and **In side games** HTML tables.
-It keeps cell boundaries, links, line breaks, and form annotations. For example, an NPC trade link
-differs from a player trade, even if both display the word “Trade”. Converting the page to Markdown
-first would discard useful structure and is unnecessary.
+Live pages are cached under `.local/bulbapedia` using URL-based SHA-256 filenames and cache
+version 2. `BULBAPEDIA_CACHE_DIR` overrides that directory. Complete source HTML is validated before
+it is cached or reused. There is no automatic expiry; `--refresh-sources` explicitly refreshes both
+lists. A failed refresh reports an error and leaves the old cache file intact.
 
-Rules handle common locations, evolution, breeding, gifts, trades, transfers, and event markers.
-Gift attributes such as **Gigantamax Factor** are not form restrictions: the Master Dojo gifts for
-Bulbasaur and Squirtle count as ordinary acquisition in Sword and Shield through the Expansion Pass.
-Form annotations are matched against names in the local dataset, including grouped labels such as
-**Kantonian/Hisuian Forms**. This recognizes Hisuian Arcanine's Scarlet/Violet DLC evolution row
-without applying it to unrelated forms. Unqualified species methods are not applied to alternate
-forms. Battle-only forms, unfamiliar text, version-specific superscripts, accessory routes, and
-unmatched forms can require manual verification. Default/female records share unqualified species
-methods; this does not verify the gender of individual gifts or fixed encounters. Records with
-`isFemaleForm: true` are unavailable in Generation 1 games: those game IDs are excluded from all
-three acquisition arrays, even if the species page lists encounters. This rule uses each game's
-`gen`, applies in both deterministic and AI modes, and does not exclude female-only species such as
-Nidoran♀ (`isFemaleForm: false`). Storage remains preserved. Unknown methods retain the existing
-classification unless another parsed method establishes ordinary acquisition.
+For a reproducible, fully offline run, save both complete pages and provide both paths:
 
-This is a deterministic extraction aid, not a complete game-mechanics engine. It does not follow
-location pages, reconstruct transfer compatibility, check event schedules, or prove availability of
-evolution/breeding prerequisites. Some games and services, including HOME or GO on many species
-pages, have no suitable location row and retain dataset values. Serebii cannot replace a missing or
-blocked primary Bulbapedia page in this version.
+```bash
+pnpm pokemon:availability raichu-alola \
+  --html /tmp/availability.html --go-html /tmp/go-availability.html
 
-Without `--with-ai`, `--ai-harder`, or interactive `a`, the CLI makes no AI requests and requires no
-API key. Both modes retain the same conservative storage and form rules; AI verification adds a
-review before output or patching.
+pnpm pokemon:availability:all --dry-run \
+  --html /tmp/availability.html --go-html /tmp/go-availability.html
+```
+
+`--html` and `--go-html` must be supplied together. They bypass network access and caching,
+including when `--refresh-sources` is supplied. Do not pass species pages to these options.
+
+Requests have a 30-second timeout. HTTP errors, challenge pages, missing legends, and invalid tables
+fail before output or patching. The CLI fetches only these two URLs and does not crawl linked pages.
+
+The old `--with-ai`, `--ai-harder`, and `--no-cross-check` flags and interactive AI action have been
+removed. Unknown options fail explicitly.
 
 ## Development
 
@@ -366,6 +179,5 @@ pnpm exec vitest run src/upstream-adapters/bulbapedia
 pnpm typecheck
 ```
 
-Tests use small synthetic HTML fixtures modeled on the source's table structure, an offline CLI
-subprocess check, mocked OpenAI responses, and disposable datasets for patching. They do not fetch
-the live site, make billable API requests, or patch the checkout's Pokémon records.
+Tests use source-shaped HTML fixtures, mocked requests, offline CLI subprocesses, and disposable
+datasets. They do not fetch live pages or patch checkout data.

@@ -2,7 +2,7 @@ import type { GameOption } from '@/components/types'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import type { AvailabilitySourceResponse } from '@/lib/availability-sources.server'
-import { summarizeAvailabilitySources } from '@/lib/availability-verdict'
+import { selectAvailabilitySource } from '@/lib/availability-source-selection'
 import type { AvailabilityState } from '@/lib/pokemon-logic'
 import { gameSpriteUrl } from '@/lib/utils'
 import type {
@@ -15,11 +15,18 @@ import { useEffect, useId, useState } from 'react'
 import { useFetcher } from 'react-router'
 
 const sourceLabels: Record<AvailabilitySourceId, string> = {
-  bulbapedia: 'Bulbapedia',
-  serebii: 'Serebii',
-  pokeapi: 'PokéAPI',
+  bulbapedia: 'Bulbapedia availability',
+  'bulbapedia-go': 'Bulbapedia GO',
 }
 const sourceIds = Object.keys(sourceLabels) as AvailabilitySourceId[]
+const statusLabels = {
+  obtainable: { symbol: '✅', label: 'Obtainable' },
+  'transfer-only': { symbol: '🔀', label: 'Transfer only' },
+  'event-only': { symbol: '🎁', label: 'Event only' },
+  unavailable: { symbol: '❌', label: 'Not obtainable' },
+  unknown: { symbol: '—', label: 'Not established' },
+  loading: { symbol: '…', label: 'Loading' },
+} as const
 
 function sourceUrl(pokemonId: string, source: AvailabilitySourceId, refresh = false) {
   const params = new URLSearchParams({ pokemonId, source })
@@ -113,9 +120,8 @@ export function AvailabilitySourceComparison({
   draft: AvailabilityState
 }) {
   const bulbapedia = useFetcher<AvailabilitySourceResponse>()
-  const serebii = useFetcher<AvailabilitySourceResponse>()
-  const pokeapi = useFetcher<AvailabilitySourceResponse>()
-  const fetchers = { bulbapedia, serebii, pokeapi }
+  const bulbapediaGo = useFetcher<AvailabilitySourceResponse>()
+  const fetchers = { bulbapedia, 'bulbapedia-go': bulbapediaGo }
   const [opened, setOpened] = useQueryState(
     'sources',
     parseAsBoolean.withDefault(false).withOptions({ history: 'replace', shallow: true }),
@@ -125,8 +131,7 @@ export function AvailabilitySourceComparison({
   const pending = sourceIds.some((id) => fetchers[id].state !== 'idle')
   const requested = pending || sourceIds.some((id) => fetchers[id].data !== undefined)
   const { load: loadBulbapedia } = bulbapedia
-  const { load: loadSerebii } = serebii
-  const { load: loadPokeapi } = pokeapi
+  const { load: loadBulbapediaGo } = bulbapediaGo
 
   useEffect(() => {
     if (!opened || requested) return
@@ -135,13 +140,12 @@ export function AvailabilitySourceComparison({
     queueMicrotask(() => {
       if (cancelled) return
       void loadBulbapedia(sourceUrl(pokemonId, 'bulbapedia'))
-      void loadSerebii(sourceUrl(pokemonId, 'serebii'))
-      void loadPokeapi(sourceUrl(pokemonId, 'pokeapi'))
+      void loadBulbapediaGo(sourceUrl(pokemonId, 'bulbapedia-go'))
     })
     return () => {
       cancelled = true
     }
-  }, [opened, requested, pokemonId, loadBulbapedia, loadSerebii, loadPokeapi])
+  }, [opened, requested, pokemonId, loadBulbapedia, loadBulbapediaGo])
 
   const columns = sourceIds.map((id) => {
     const fetcher = fetchers[id]
@@ -218,15 +222,14 @@ export function AvailabilitySourceComparison({
       {opened ? (
         <div id={panelId} className="space-y-3">
           <p className="text-muted-foreground text-xs">
-            Source text is shown as published. Check form labels and event requirements; missing
-            evidence does not mean unavailable. Your draft stays editable below.
+            Availability comes from Bulbapedia’s table labels, legends, and explicit form rules.
+            Missing rows do not mean unavailable. Your draft stays editable below.
           </p>
           <p className="text-muted-foreground text-xs">
-            Verdict summarizes upstream evidence: ✅ obtainable · 🔀 transfer only · 🎁 event only ·
-            ❌ not obtainable · ⚠️ sources disagree · — needs review. Select a verdict for its
-            reasoning.
+            ✅ obtainable · 🔀 transfer only · 🎁 event only · ❌ not obtainable · — not
+            established. Select a status to see its table label or rule and mapping.
           </p>
-          <div className="grid gap-2 md:grid-cols-3">
+          <div className="grid gap-2 md:grid-cols-2">
             {columns.map((column) => (
               <div
                 key={column.id}
@@ -288,7 +291,7 @@ export function AvailabilitySourceComparison({
             role="region"
             aria-label="Availability comparison table"
           >
-            <table className="w-full min-w-[1000px] table-fixed text-left text-xs leading-relaxed">
+            <table className="w-full min-w-[760px] table-fixed text-left text-xs leading-relaxed">
               <caption className="sr-only">
                 Availability evidence for {pokemonName}; rows follow dataset game order.
               </caption>
@@ -298,16 +301,14 @@ export function AvailabilitySourceComparison({
                     Game
                   </th>
                   <th scope="col" className="w-28 p-3 text-center">
-                    Verdict
+                    Availability
                   </th>
                   <th scope="col" className="w-32 p-3">
                     Current draft
                   </th>
-                  {sourceIds.map((id) => (
-                    <th scope="col" key={id} className="p-3">
-                      {sourceLabels[id]}
-                    </th>
-                  ))}
+                  <th scope="col" className="p-3">
+                    Bulbapedia / GO
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -315,14 +316,18 @@ export function AvailabilitySourceComparison({
                   const acquisition = draftFields
                     .filter(([field]) => draft[field].includes(game.id))
                     .map(([, label]) => label)
-                  const verdict = summarizeAvailabilitySources(
-                    columns.map((column) => ({
-                      name: sourceLabels[column.id],
-                      row: column.rows.get(game.id),
-                      pending: column.pending,
-                      error: column.error,
-                    })),
-                  )
+                  const source = selectAvailabilitySource(game.id, columns)!
+                  const sourceRow = source.rows.get(game.id)
+                  const status = source.pending
+                    ? 'loading'
+                    : (sourceRow?.verdict?.status ?? 'unknown')
+                  const classification = statusLabels[status]
+                  const reason = source.pending
+                    ? 'Loading availability table…'
+                    : (sourceRow?.verdict?.reason ??
+                      sourceRow?.message ??
+                      source.error ??
+                      'No source entry.')
                   return (
                     <tr
                       key={game.id}
@@ -341,20 +346,22 @@ export function AvailabilitySourceComparison({
                         {game.label}
                         <span className="text-muted-foreground block font-normal">{game.id}</span>
                       </th>
-                      <td className="p-3" data-verdict={verdict.status}>
+                      <td className="p-3" data-availability-status={status}>
                         <details>
                           <summary
                             className="cursor-pointer list-none text-center [&::-webkit-details-marker]:hidden"
-                            title={verdict.reason}
-                            aria-label={`${verdict.label}. Show verdict explanation`}
+                            title={reason}
+                            aria-label={`${classification.label}. Show availability explanation`}
                           >
                             <span aria-hidden="true" className="text-xl">
-                              {verdict.symbol}
+                              {classification.symbol}
                             </span>
-                            <span className="text-muted-foreground block">{verdict.label}</span>
+                            <span className="text-muted-foreground block">
+                              {classification.label}
+                            </span>
                           </summary>
                           <p className="text-muted-foreground mt-2 wrap-break-word whitespace-pre-line">
-                            {verdict.reason}
+                            {reason}
                           </p>
                         </details>
                       </td>
@@ -364,15 +371,13 @@ export function AvailabilitySourceComparison({
                           <p className="text-muted-foreground">Storable</p>
                         ) : null}
                       </td>
-                      {columns.map((column) => (
-                        <td key={column.id} className="p-3 wrap-break-word" data-source={column.id}>
-                          <EvidenceCell
-                            row={column.rows.get(game.id)}
-                            pending={column.pending}
-                            error={column.error}
-                          />
-                        </td>
-                      ))}
+                      <td className="p-3 wrap-break-word" data-source={source.id}>
+                        <EvidenceCell
+                          row={sourceRow}
+                          pending={source.pending}
+                          error={source.error}
+                        />
+                      </td>
                     </tr>
                   )
                 })}

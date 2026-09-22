@@ -2,49 +2,43 @@ import { readFile } from 'node:fs/promises'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { resolve } from 'node:path'
 import { parseArgs, styleText } from 'node:util'
-import { createAvailabilityCrossChecker, formatCrossChecks } from './cross-check.ts'
-import { fetchSpeciesPage } from './fetch.ts'
-export { fetchSpeciesPage } from './fetch.ts'
+import { fetchAvailabilityPage } from './fetch.ts'
 import {
   availabilityJson,
-  bulbapediaUrl,
+  availabilityUrls,
+  createAvailabilityReport,
   formatAvailabilityChanges,
   formatAvailabilityTable,
-  parseAvailability,
+  parseAvailabilityTables,
   resolvePokemon,
   type AvailabilityGame,
   type AvailabilityPokemon,
+  type AvailabilityTables,
 } from './availability.ts'
 
 export const datasetRoot = fileURLToPath(new URL('../../../data/', import.meta.url))
-const help = `Usage: pnpm pokemon:availability <id|nid> [--json] [--patch] [--with-ai] [--ai-harder] [--html <file>]
+const help = `Usage: pnpm pokemon:availability <id|nid> [--json] [--patch] [--html <file> --go-html <file>]
 
 Examples:
   pnpm pokemon:availability pikachu
   pnpm pokemon:availability 0026-alola
   pnpm --silent pokemon:availability 25 --json
   pnpm pokemon:availability pikachu --patch
-  pnpm pokemon:availability pikachu --with-ai --patch
-  pnpm pokemon:availability raichu --html /tmp/raichu.html
+  pnpm pokemon:availability raichu --html /tmp/availability.html --go-html /tmp/go.html
 
-Print one row per concrete dataset game, folding DLC into its parent games.
---json         Print candidate id/nid and availability fields; diagnostics go to stderr.
---patch        Update and format the Pokémon JSON; print added/removed games per field.
-               Overrides --json and table output. Uses the repository's Oxfmt config.
---with-ai      Verify input, source HTML, and output with GPT-5.6 Luna (low reasoning).
-               Use its final candidate; explain differences from the parser in at most 25 words.
-               Requires OPENAI_API_KEY (environment or repository .env); review goes to stderr.
---ai-harder    Use GPT-5.6 Terra with low reasoning. Enables AI verification itself.
---html <file>  Parse a saved Bulbapedia species page instead of fetching it.
---no-cross-check  Use Bulbapedia alone (also needed for fully offline --html runs).
---refresh-sources Refresh cached Bulbapedia, PokéAPI, and targeted Serebii evidence.
---help, -h     Show this help.
+Read Bulbapedia's complete main-game and Pokémon GO availability tables.
+--json             Print id/nid and availability fields; diagnostics go to stderr.
+--patch            Update and format the Pokémon JSON; print added/removed games per field.
+                   Overrides --json and table output. Uses the repository's Oxfmt config.
+--html <file>      Read the saved main availability table page.
+--go-html <file>   Read the saved Pokémon GO availability page. Requires --html and vice versa.
+                   Together these options run fully offline and bypass the cache.
+--refresh-sources  Refresh both cached Bulbapedia table pages.
+--help, -h         Show this help.
 
-Every lookup cross-checks cached PokéAPI encounters and collects targeted Serebii evidence.
-Unresolved source conflicts block patching until a successful AI review resolves them.
-Existing values are retained where the source is inconclusive. storableIn is
-always preserved. Files are modified only with --patch. No AI or API key is required
-unless --with-ai or --ai-harder is supplied. Failed or uncertain AI reviews prevent output and patching.`
+Only these two Bulbapedia sources are used. No AI or API key is required.
+Unmatched forms and games outside the tables retain their existing values with diagnostics.
+storableIn membership is always preserved. Files are modified only with --patch.`
 
 async function readJson<T>(path: string): Promise<T> {
   return JSON.parse(await readFile(path, 'utf8')) as T
@@ -53,6 +47,42 @@ async function readJson<T>(path: string): Promise<T> {
 export async function readCollection<T>(root: string, collection: string): Promise<T[]> {
   const ids = await readJson<string[]>(resolve(root, 'indices', `${collection}.json`))
   return Promise.all(ids.map((id) => readJson<T>(resolve(root, collection, `${id}.json`))))
+}
+
+export type SourceOptions = {
+  html?: string
+  goHtml?: string
+  refreshSources?: boolean
+}
+
+export function validateSourceOptions(options: SourceOptions): void {
+  if ((options.html === undefined) !== (options.goHtml === undefined))
+    throw new Error('--html and --go-html must be supplied together for a fully offline run.')
+}
+
+/** Load each full-list page once; a bulk run shares the resulting parsed tables. */
+export async function loadAvailabilityTables(
+  options: SourceOptions = {},
+  signal?: AbortSignal,
+): Promise<AvailabilityTables> {
+  validateSourceOptions(options)
+  signal?.throwIfAborted()
+  const [main, go] =
+    options.html !== undefined && options.goHtml !== undefined
+      ? await Promise.all([
+          readFile(resolve(options.html), { encoding: 'utf8', signal }),
+          readFile(resolve(options.goHtml), { encoding: 'utf8', signal }),
+        ])
+      : await Promise.all([
+          fetchAvailabilityPage('main', signal, { forceRefresh: options.refreshSources }),
+          fetchAvailabilityPage('go', signal, { forceRefresh: options.refreshSources }),
+        ])
+  signal?.throwIfAborted()
+  return parseAvailabilityTables({ main, go })
+}
+
+export function formatAvailabilitySources(options: SourceOptions = {}): string {
+  return `Sources:\n  ${availabilityUrls.main}${options.html !== undefined ? ` (saved HTML: ${resolve(options.html)})` : ''}\n  ${availabilityUrls.go}${options.goHtml !== undefined ? ` (saved HTML: ${resolve(options.goHtml)})` : ''}`
 }
 
 export async function main(
@@ -65,10 +95,8 @@ export async function main(
     options: {
       json: { type: 'boolean' },
       patch: { type: 'boolean' },
-      'with-ai': { type: 'boolean' },
-      'ai-harder': { type: 'boolean' },
       html: { type: 'string' },
-      'no-cross-check': { type: 'boolean' },
+      'go-html': { type: 'string' },
       'refresh-sources': { type: 'boolean' },
       help: { type: 'boolean', short: 'h' },
     },
@@ -78,53 +106,27 @@ export async function main(
     return
   }
   if (positionals.length !== 1) throw new Error(`Expected one Pokémon id or nid.\n\n${help}`)
+  const sourceOptions = {
+    html: values.html,
+    goHtml: values['go-html'],
+    refreshSources: values['refresh-sources'],
+  }
+  validateSourceOptions(sourceOptions)
   const [pokemon, games] = await Promise.all([
     readCollection<AvailabilityPokemon>(dataDirectory, 'pokemon'),
     readCollection<AvailabilityGame>(dataDirectory, 'games'),
   ])
   const selected = resolvePokemon(positionals[0], pokemon)
-  const url = bulbapediaUrl(selected)
-  const html = values.html
-    ? await readFile(resolve(values.html), 'utf8')
-    : await fetchSpeciesPage(url, undefined, { forceRefresh: values['refresh-sources'] })
-  let report = parseAvailability(
-    html,
+  const tables = await loadAvailabilityTables(sourceOptions)
+  const report = createAvailabilityReport(
+    tables,
     selected,
     games,
     pokemon.filter((entry) => entry.dexNum === selected.dexNum),
   )
-  if (!values['no-cross-check']) {
-    console.error('Cross-checking cached PokéAPI encounters and targeted Serebii evidence…')
-    const crossCheck = createAvailabilityCrossChecker({
-      pokeApi: { forceRefresh: values['refresh-sources'] },
-      serebii: { forceRefresh: values['refresh-sources'] },
-    })
-    report = await crossCheck(
-      report,
-      games,
-      pokemon.filter((entry) => entry.dexNum === selected.dexNum),
-    )
-    console.error(formatCrossChecks(report, process.stderr))
-  }
-  if (values.json && !values.patch)
-    console.error(
-      `Source: ${url}#Game_locations${values.html ? ` (saved HTML: ${resolve(values.html)})` : ''}`,
-    )
+  if (values.json && !values.patch) console.error(formatAvailabilitySources(sourceOptions))
   for (const warning of report.warnings)
     console.error(styleText('yellow', `Warning: ${warning}`, { stream: process.stderr }))
-  if (values['with-ai'] || values['ai-harder']) {
-    const { verifyAvailabilityWithAi, applyAiReview, formatAiReview, verificationModel } =
-      await import('./ai-verification.ts')
-    const harder = !!values['ai-harder']
-    console.error(
-      `Verifying input and candidate JSON with ${verificationModel(harder)} (low reasoning)…`,
-    )
-    const review = await verifyAvailabilityWithAi(report, html, games, { harder })
-    console.error(formatAiReview(review, harder, process.stderr))
-    if (review.verdict !== 'pass')
-      throw new Error(`AI verification ${review.verdict}; no output or patch was applied.`)
-    report = applyAiReview(report, review)
-  }
   if (values.patch) {
     const { patchPokemonFile } = await import('./patch.ts')
     const file = resolve(dataDirectory, 'pokemon', `${selected.id}.json`)
@@ -137,7 +139,7 @@ export async function main(
   if (values.json) console.log(JSON.stringify(availabilityJson(report), null, 2))
   else
     console.log(
-      `${selected.names.eng ?? selected.id} (${selected.id} / ${selected.nid})\nSource: ${url}#Game_locations\n\n${formatAvailabilityTable(report)}`,
+      `${selected.names.eng ?? selected.id} (${selected.id} / ${selected.nid})\n${formatAvailabilitySources(sourceOptions)}\n\n${formatAvailabilityTable(report)}`,
     )
 }
 

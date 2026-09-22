@@ -32,7 +32,9 @@ describe('availability source requests', () => {
     for (const query of [
       'source=unknown&pokemonId=pikachu',
       'source=bulbapedia&pokemonId=../../secrets',
-      'source=pokeapi',
+      'source=serebii&pokemonId=pikachu',
+      'source=pokeapi&pokemonId=pikachu',
+      'source=bulbapedia-go',
     ]) {
       expect(
         await loadPokemonAvailabilitySource(
@@ -63,21 +65,21 @@ describe('availability source requests', () => {
   })
 
   it('returns a recoverable source error without losing its cause', async () => {
-    mocks.loadAvailabilitySource.mockRejectedValue(new Error('Serebii returned HTTP 503'))
+    mocks.loadAvailabilitySource.mockRejectedValue(new Error('Bulbapedia returned HTTP 503'))
     expect(
       await loadPokemonAvailabilitySource(
-        new Request('http://localhost/availability-sources?source=serebii&pokemonId=pikachu'),
+        new Request('http://localhost/availability-sources?source=bulbapedia-go&pokemonId=pikachu'),
       ),
     ).toEqual({
       ok: false,
-      error: 'Serebii returned HTTP 503',
+      error: 'Bulbapedia returned HTTP 503',
     })
   })
 
   it('does not turn cancellation into a source failure', async () => {
     const controller = new AbortController()
     const request = new Request(
-      'http://localhost/availability-sources?source=pokeapi&pokemonId=pikachu',
+      'http://localhost/availability-sources?source=bulbapedia-go&pokemonId=pikachu',
       { signal: controller.signal },
     )
     mocks.loadAvailabilitySource.mockImplementation(() => {

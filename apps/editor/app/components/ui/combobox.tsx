@@ -89,7 +89,8 @@ function ComboboxContent({
     'side' | 'align' | 'sideOffset' | 'alignOffset' | 'anchor'
   >) {
   return (
-    <ComboboxPrimitive.Portal>
+    // The global relative-position rule must not make the portal a popup positioning container.
+    <ComboboxPrimitive.Portal className="static">
       <ComboboxPrimitive.Positioner
         side={side}
         sideOffset={sideOffset}

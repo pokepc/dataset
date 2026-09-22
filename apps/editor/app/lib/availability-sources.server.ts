@@ -10,7 +10,7 @@ export type AvailabilitySourceResponse =
   | { ok: true; result: AvailabilitySourceResult }
   | { ok: false; error: string }
 
-const sources = new Set<AvailabilitySourceId>(['bulbapedia', 'serebii', 'pokeapi'])
+const sources = new Set<AvailabilitySourceId>(['bulbapedia', 'bulbapedia-go'])
 
 export async function loadPokemonAvailabilitySource(
   request: Request,

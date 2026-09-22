@@ -4,10 +4,6 @@ import { format } from 'oxfmt'
 import { availabilityFields, availabilityJson, type AvailabilityReport } from './availability.ts'
 
 export async function patchPokemonFile(file: string, report: AvailabilityReport): Promise<boolean> {
-  if (report.crossChecks?.unresolvedConflictIds.length)
-    throw new Error(
-      'Unresolved source conflicts; run an AI pass or skip this Pokémon before patching.',
-    )
   const original = await readFile(file, 'utf8')
   const current = JSON.parse(original) as Record<string, unknown>
   if (current.id !== report.pokemon.id || current.nid !== report.pokemon.nid) {

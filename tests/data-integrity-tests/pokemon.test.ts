@@ -20,6 +20,18 @@ describe('Validate pokemon/*.json data', () => {
   })
 
   it.each(recordList.map((record) => [record.id, record]))(
+    'should keep eventOnlyIn disjoint from other acquisition fields in pokemon %s',
+    (_recordId, record) => {
+      expect({
+        obtainableIn: record.eventOnlyIn.filter((gameId) => record.obtainableIn.includes(gameId)),
+        transferOnlyIn: record.eventOnlyIn.filter((gameId) =>
+          record.transferOnlyIn.includes(gameId),
+        ),
+      }).toEqual({ obtainableIn: [], transferOnlyIn: [] })
+    },
+  )
+
+  it.each(recordList.map((record) => [record.id, record]))(
     'should have names.eng in pokemon %s',
     (recordId, record) => {
       if (!record.names?.eng) {

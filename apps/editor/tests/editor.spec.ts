@@ -171,10 +171,10 @@ test('Pokemon availability removals update the draft and persist without changin
     await visit(page, '/pokemon?selected=zygarde')
     await expect(save).toBeDisabled()
 
-    const removeSword = transfer.getByRole('button', { name: 'Remove Sword', exact: true })
-    await removeSword.locator('..').hover()
-    await removeSword.click()
-    await expect(removeSword).toHaveCount(0)
+    const removeHome = transfer.getByRole('button', { name: 'Remove HOME', exact: true })
+    await removeHome.locator('..').hover()
+    await removeHome.click()
+    await expect(removeHome).toHaveCount(0)
     await expect(save).toBeEnabled()
 
     const removeY = obtainable.getByRole('button', { name: 'Remove Y', exact: true })
@@ -189,25 +189,25 @@ test('Pokemon availability removals update the draft and persist without changin
     const saved = {
       ...record,
       obtainableIn: record.obtainableIn.filter((id: string) => id !== 'xy-y'),
-      transferOnlyIn: record.transferOnlyIn.filter((id: string) => id !== 'swsh-sw'),
+      transferOnlyIn: record.transferOnlyIn.filter((id: string) => id !== 'home'),
     }
     expect(JSON.parse(readFileSync(file, 'utf8'))).toEqual(saved)
 
     // A second edit must stay editable after receiving a previous save response.
-    const removeShield = transfer.getByRole('button', { name: 'Remove Shield', exact: true })
-    await removeShield.focus()
+    const removeX = obtainable.getByRole('button', { name: 'Remove X', exact: true })
+    await removeX.focus()
     await page.keyboard.press('Enter')
-    await expect(removeShield).toHaveCount(0)
+    await expect(removeX).toHaveCount(0)
     await expect(save).toBeEnabled()
     await save.click()
     await expect(save).toBeDisabled()
     expect(JSON.parse(readFileSync(file, 'utf8'))).toEqual({
       ...saved,
-      transferOnlyIn: saved.transferOnlyIn.filter((id: string) => id !== 'swsh-sh'),
+      obtainableIn: saved.obtainableIn.filter((id: string) => id !== 'xy-x'),
     })
     await page.reload({ waitUntil: 'domcontentloaded' })
-    await expect(removeSword).toHaveCount(0)
-    await expect(removeShield).toHaveCount(0)
+    await expect(removeHome).toHaveCount(0)
+    await expect(removeX).toHaveCount(0)
     await expect(removeY).toHaveCount(0)
     await expect(save).toBeDisabled()
     const after = snapshot(data)
@@ -225,8 +225,8 @@ test.describe('touch availability removal', () => {
 
   test('tapping a game remove button updates the draft', async ({ page }) => {
     await visit(page, '/pokemon?selected=zygarde')
-    const transfer = page.getByRole('heading', { name: /^Transfer-only In/ }).locator('..')
-    const remove = transfer.getByRole('button', { name: 'Remove Sword', exact: true })
+    const obtainable = page.getByRole('heading', { name: /^Obtainable In/ }).locator('..')
+    const remove = obtainable.getByRole('button', { name: 'Remove Sword', exact: true })
     await remove.tap()
     await expect(remove).toHaveCount(0)
     await expect(page.getByRole('button', { name: 'Save', exact: true })).toBeEnabled()

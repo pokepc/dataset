@@ -41,9 +41,9 @@ test('comparison loads real source fixtures independently and preserves the draf
   const errors: string[] = []
   page.on('pageerror', (error) => errors.push(error.message))
   const requests: string[] = []
-  let releaseSerebii: () => void = () => {}
+  let releaseGo: () => void = () => {}
   const slowSource = new Promise<void>((resolve) => {
-    releaseSerebii = resolve
+    releaseGo = resolve
   })
   const responses = new Map<string, APIResponse>()
   await page.route(/\/availability-sources(?:\.data)?\?/, async (route) => {
@@ -52,7 +52,7 @@ test('comparison loads real source fixtures independently and preserves the draf
     requests.push(source)
     const response = responses.get(source) ?? (await route.fetch())
     responses.set(source, response)
-    if (source === 'serebii' && !url.searchParams.has('refresh')) await slowSource
+    if (source === 'bulbapedia-go' && !url.searchParams.has('refresh')) await slowSource
     await route.fulfill({ response })
   })
   await visit(page)
@@ -61,30 +61,61 @@ test('comparison loads real source fixtures independently and preserves the draf
   await expect(page).toHaveURL(/sources=true(?:&|$)/)
   const panel = comparison(page)
   const sword = panel.locator('[data-game-id="swsh-sw"]')
-  await expect(sword.locator('[data-source="bulbapedia"]')).toContainText('Dynamax Adventures')
-  await expect(sword.locator('[data-source="pokeapi"]')).toContainText('max-lair')
-  await expect(panel.getByTestId('source-status-serebii')).toContainText('Loading…')
-  await expect(sword.locator('[data-verdict]')).toHaveAttribute('data-verdict', 'loading')
-  releaseSerebii()
-  await expect(sword.locator('[data-source="serebii"]')).toContainText('Dynamax Adventures')
-  await expect(panel.getByRole('columnheader').nth(1)).toHaveText('Verdict')
-  await expect(sword.locator('[data-verdict="obtainable"]')).toContainText('✅')
+  await expect(sword.locator('[data-source="bulbapedia"]')).toContainText('DA')
+  await expect(panel.getByTestId('source-status-bulbapedia-go')).toContainText('Loading…')
+  await expect(sword.locator('[data-availability-status="obtainable"]')).toContainText('✅')
+  await expect(panel.locator('[data-game-id="go"] [data-availability-status]')).toHaveAttribute(
+    'data-availability-status',
+    'loading',
+  )
+  releaseGo()
   await expect(
-    panel.locator('[data-game-id="oras-as"] [data-verdict="transfer-only"]'),
+    panel.locator('[data-game-id="go"] [data-availability-status="obtainable"]'),
+  ).toContainText('✅')
+  await expect(panel.getByRole('columnheader').nth(1)).toHaveText('Availability')
+  await expect(panel.getByRole('columnheader')).toHaveText([
+    'Game',
+    'Availability',
+    'Current draft',
+    'Bulbapedia / GO',
+  ])
+  await expect(sword.locator('[data-source]')).toHaveCount(1)
+  await expect(panel.locator('[data-game-id="go"] [data-source]')).toHaveCount(1)
+  await expect(panel.locator('[data-game-id="go"] [data-source]')).toHaveAttribute(
+    'data-source',
+    'bulbapedia-go',
+  )
+  await expect(panel.locator('[data-game-id="go"] [data-source] a').first()).toHaveAttribute(
+    'href',
+    /availability_in_Pok%C3%A9mon_GO/,
+  )
+  await expect(
+    panel.locator('[data-game-id="oras-as"] [data-availability-status="transfer-only"]'),
   ).toContainText('🔀')
-  await expect(panel.locator('[data-game-id="usum-um"] [data-verdict="event-only"]')).toContainText(
-    '🎁',
+  await expect(
+    panel.locator('[data-game-id="usum-um"] [data-availability-status="event-only"]'),
+  ).toContainText('🎁')
+  await expect(
+    panel.locator('[data-game-id="sv-s"] [data-availability-status="unavailable"]'),
+  ).toContainText('❌')
+  await expect(
+    panel.locator('[data-game-id="home"] [data-availability-status="unknown"]'),
+  ).toContainText('—')
+  await sword.locator('[data-availability-status] summary').click()
+  await expect(sword.locator('[data-availability-status] details')).toHaveAttribute('open', '')
+  await expect(sword.locator('[data-availability-status] p')).toContainText('DA')
+  await sword.locator('[data-availability-status] summary').click()
+  const baseline = JSON.parse(before) as Record<string, string[]>
+  const draftLabels = [
+    ['obtainableIn', 'Obtainable'],
+    ['transferOnlyIn', 'Transfer only'],
+    ['eventOnlyIn', 'Event only'],
+  ]
+    .filter(([field]) => baseline[field]?.includes('swsh-sw'))
+    .map(([, label]) => label)
+  await expect(sword.getByRole('cell').nth(1)).toContainText(
+    draftLabels.join(' / ') || 'Not classified',
   )
-  await expect(panel.locator('[data-game-id="sv-s"] [data-verdict="unavailable"]')).toContainText(
-    '❌',
-  )
-  await expect(panel.locator('[data-game-id="rb-r"] [data-verdict="unknown"]')).toContainText('—')
-  await sword.locator('[data-verdict] summary').click()
-  await expect(sword.locator('[data-verdict] details')).toHaveAttribute('open', '')
-  await expect(sword.locator('[data-verdict] p')).toContainText('Bulbapedia:')
-  await sword.locator('[data-verdict] summary').click()
-  await expect(sword).toContainText('Transfer only')
-  await expect(sword.locator('[data-source="bulbapedia"]')).toContainText('50% Forme')
   await expect(sword.locator('[data-source="bulbapedia"] a').first()).toHaveAttribute(
     'href',
     /^https:\/\/bulbapedia\.bulbagarden\.net\//,
@@ -107,7 +138,7 @@ test('comparison loads real source fixtures independently and preserves the draf
   await expect(panel.locator('tbody tr')).toHaveCount(2)
   await panel.getByRole('button', { name: 'Refresh sources', exact: true }).click()
   await expect(panel.getByRole('button', { name: 'Refresh sources', exact: true })).toBeEnabled()
-  expect(requests).toHaveLength(6)
+  expect(requests).toHaveLength(4)
   await expect(page.getByRole('button', { name: 'Save', exact: true })).toBeDisabled()
   expect(readFileSync(record(info), 'utf8')).toBe(before)
   await panel.screenshot({ path: info.outputPath('availability-comparison.png') })
@@ -122,7 +153,7 @@ test('comparison loads real source fixtures independently and preserves the draf
 test('source errors can be retried and late responses do not follow Pokemon navigation', async ({
   page,
 }) => {
-  let failSerebii = true
+  let failGo = true
   let releaseLate: () => void = () => {}
   const lateResponse = new Promise<void>((resolve) => {
     releaseLate = resolve
@@ -132,8 +163,8 @@ test('source errors can be retried and late responses do not follow Pokemon navi
   await page.route(/\/availability-sources(?:\.data)?\?/, async (route) => {
     const url = new URL(route.request().url())
     const source = url.searchParams.get('source')!
-    if (source === 'serebii' && failSerebii) {
-      failSerebii = false
+    if (source === 'bulbapedia-go' && failGo) {
+      failGo = false
       url.searchParams.set('source', 'invalid-fixture-source')
       await route.fulfill({ response: await route.fetch({ url: url.toString() }) })
       return
@@ -150,27 +181,29 @@ test('source errors can be retried and late responses do not follow Pokemon navi
   await visit(page)
   await page.getByRole('button', { name: 'Load availability sources', exact: true }).click()
   const panel = comparison(page)
-  await expect(panel.getByTestId('source-status-serebii')).toContainText(
+  await expect(panel.getByTestId('source-status-bulbapedia-go')).toContainText(
     'Unknown availability source.',
   )
   await expect(panel.locator('[data-game-id="swsh-sw"] [data-source="bulbapedia"]')).toContainText(
-    'Dynamax Adventures',
+    'DA',
   )
-  await panel.getByRole('button', { name: 'Reload Serebii', exact: true }).click()
-  await expect(panel.locator('[data-game-id="swsh-sw"] [data-source="serebii"]')).toContainText(
-    'Dynamax Adventures',
-  )
+  await panel.getByRole('button', { name: 'Reload Bulbapedia GO', exact: true }).click()
+  await expect(
+    panel.locator('[data-game-id="go"] [data-availability-status="obtainable"]'),
+  ).toContainText('✅')
   holdRefresh = true
-  await panel.getByRole('button', { name: 'Reload Bulbapedia', exact: true }).click()
+  await panel.getByRole('button', { name: 'Reload Bulbapedia availability', exact: true }).click()
   await expect(panel.getByTestId('source-status-bulbapedia')).toContainText('Loading…')
   await page.getByRole('button', { name: 'Next', exact: true }).click()
   await expect(page).toHaveURL(/selected=zygarde-10(?:&|$)/)
   await expect(page).toHaveURL(/sources=true(?:&|$)/)
-  await expect(panel.getByTestId('source-status-pokeapi')).toContainText('Loaded')
+  await expect(panel.getByTestId('source-status-bulbapedia-go')).toContainText('Loaded')
   releaseLate()
   await page.waitForLoadState('networkidle')
   await expect(panel.getByRole('button', { name: 'Refresh sources', exact: true })).toBeEnabled()
-  await expect(panel.locator('[data-source="pokeapi"]')).not.toContainText(['max-lair'])
+  await expect(
+    panel.locator('[data-game-id="swsh-sw"] [data-availability-status="unknown"]'),
+  ).toContainText('—')
   await expect(
     page.getByRole('region', { name: 'Availability comparison table', exact: true }),
   ).toBeVisible()
@@ -190,8 +223,8 @@ test('open comparison follows Next, Prev and reload; hiding stops automatic load
   async function expectLoaded(pokemonId: string, count: number) {
     await expect(panel.getByRole('button', { name: 'Refresh sources', exact: true })).toBeEnabled()
     expect(requests).toHaveLength(count)
-    expect(requests.slice(-3).sort()).toEqual(
-      ['bulbapedia', 'pokeapi', 'serebii'].map((source) => `${pokemonId}:${source}`),
+    expect(requests.slice(-2).sort()).toEqual(
+      ['bulbapedia', 'bulbapedia-go'].map((source) => `${pokemonId}:${source}`),
     )
     await expect(page.getByRole('button', { name: 'Save', exact: true })).toBeDisabled()
   }
@@ -199,18 +232,18 @@ test('open comparison follows Next, Prev and reload; hiding stops automatic load
   await visit(page)
   await page.getByRole('button', { name: 'Load availability sources', exact: true }).click()
   await expect(page).toHaveURL(/sources=true(?:&|$)/)
-  await expectLoaded('zygarde', 3)
+  await expectLoaded('zygarde', 2)
 
   await page.getByRole('button', { name: 'Next', exact: true }).click()
   await expect(page).toHaveURL(/selected=zygarde-10(?:&|$)/)
-  await expectLoaded('zygarde-10', 6)
+  await expectLoaded('zygarde-10', 4)
 
   await page.reload({ waitUntil: 'domcontentloaded' })
-  await expectLoaded('zygarde-10', 9)
+  await expectLoaded('zygarde-10', 6)
 
   await page.getByRole('button', { name: 'Prev', exact: true }).click()
   await expect(page).toHaveURL(/selected=zygarde(?:&|$)/)
-  await expectLoaded('zygarde', 12)
+  await expectLoaded('zygarde', 8)
 
   await panel.getByRole('button', { name: 'Hide comparison', exact: true }).click()
   await expect(page).not.toHaveURL(/sources=/)
@@ -218,7 +251,7 @@ test('open comparison follows Next, Prev and reload; hiding stops automatic load
   await panel.getByRole('button', { name: 'Show comparison', exact: true }).click()
   await expect(page).toHaveURL(/sources=true(?:&|$)/)
   await expect(panel.getByRole('table')).toBeVisible()
-  expect(requests).toHaveLength(12)
+  expect(requests).toHaveLength(8)
 
   await panel.getByRole('button', { name: 'Hide comparison', exact: true }).click()
   await expect(page).not.toHaveURL(/sources=/)
@@ -228,5 +261,5 @@ test('open comparison follows Next, Prev and reload; hiding stops automatic load
     panel.getByRole('button', { name: 'Load availability sources', exact: true }),
   ).toBeVisible()
   await expect(panel.getByRole('table')).toHaveCount(0)
-  expect(requests).toHaveLength(12)
+  expect(requests).toHaveLength(8)
 })

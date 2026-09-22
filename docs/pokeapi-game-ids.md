@@ -48,6 +48,6 @@ Unrelated fields are preserved. Conflicting existing non-null references stop th
 manual review. Repeating it against the same metadata produces no further changes.
 
 The shared game schema also provides the `Pkds.Game` TypeScript type and public OpenAPI game schema;
-both include these fields. The [availability CLI](pokemon-availability-cli.md) uses these mappings
-for its cached PokéAPI encounter cross-check. The migration itself does not change Pokémon
-availability.
+both include these fields. These mappings remain available for other PokéAPI integrations; the
+[availability CLI](pokemon-availability-cli.md) now uses only Bulbapedia's availability lists. The
+migration itself does not change Pokémon availability.
