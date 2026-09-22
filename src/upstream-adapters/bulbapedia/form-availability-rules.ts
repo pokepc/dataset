@@ -96,7 +96,7 @@ export function resolveFormAvailabilityRule(
   if (!supported) return method
 
   // Exact base forms matter (e.g. Original Color Magearna). If the table omits a battle form,
-  // its species row can still establish an event gate; the group rule establishes Mega support.
+  // its species row can still establish acquisition; the group rule only establishes Mega support.
   const bases = (pokemon.baseForms ?? [pokemon.baseSpecies]).flatMap((id) => {
     const base = siblings.find((entry) => entry.id === id)
     const row = base && resolveMainAvailability(main, base)
@@ -109,9 +109,18 @@ export function resolveFormAvailabilityRule(
   if (bases.length && bases.every((base) => base.method?.status === 'eventOnlyIn')) {
     method.status = 'eventOnlyIn'
     method.note = `Base-form in-game event gate from the main availability table: ${bases.map((base) => `${base.id} (${base.method!.text})`).join(', ')}.`
+  } else if (
+    bases.length &&
+    bases.every((base) =>
+      ['transferOnlyIn', 'eventOnlyIn', 'unavailable'].includes(base.method?.status ?? ''),
+    ) &&
+    bases.some((base) => base.method?.status === 'transferOnlyIn')
+  ) {
+    method.status = 'transferOnlyIn'
+    method.note = `Mega Evolution requires an external base Pokémon: ${bases.map((base) => `${base.id} (${base.method!.text})`).join(', ')}.`
   } else if (bases.some((base) => !base.method || base.method.status === 'unknown')) {
     method.status = 'unknown'
-    method.note = 'The base-form source cell is inconclusive; its event gate cannot be determined.'
+    method.note = 'The base-form source cell is inconclusive; its acquisition cannot be determined.'
   }
   return method
 }

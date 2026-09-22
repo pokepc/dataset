@@ -198,9 +198,10 @@ is not fetched or parsed at runtime.
 
 Older Kanto Megas also work in Let's Go. Mega Latias/Latios are a documented exception to their ORAS
 debut: XY supports them with Mega Stones traded from ORAS, mapped to `transferOnlyIn`. Supported
-transformations are otherwise `obtainableIn`, with `eventOnlyIn` inherited from the base form's
-main-table in-game event gate. Exact base forms take precedence over species rows. Unrecognized
-introduction groups and inconclusive base cells remain unverified.
+transformations require a qualifying base Pokémon: a transfer-only base makes the Mega
+`transferOnlyIn`, while an ordinary native base route permits `obtainableIn`. `eventOnlyIn` is
+inherited from the base form's main-table in-game event gate. Exact base forms take precedence over
+species rows. Unrecognized introduction groups and inconclusive base cells remain unverified.
 
 Gigantamax forms are `obtainableIn` in Sword/Shield, except Gigantamax Melmetal: its HOME gift is
 `eventOnlyIn`, and Sword/Shield are `transferOnlyIn`. GO Mega, Primal, fusion, and Gigantamax

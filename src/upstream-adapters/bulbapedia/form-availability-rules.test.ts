@@ -105,9 +105,11 @@ describe('explicit transformation rules', () => {
     ['garchomp-mega-z', ['lza']],
   ])('maps %s to its supported games', (id, supported) => {
     const rows = report(id).rows.filter((row) => tables.main!.gameIds.has(row.game.id))
-    expect(rows.filter((row) => row.status === 'obtainableIn').map((row) => row.game.id)).toEqual(
-      supported,
-    )
+    expect(
+      rows
+        .filter((row) => ['obtainableIn', 'transferOnlyIn'].includes(row.status))
+        .map((row) => row.game.id),
+    ).toEqual(supported)
     expect(rows.every((row) => row.basis === 'rule')).toBe(true)
     expect(
       rows
@@ -116,6 +118,57 @@ describe('explicit transformation rules', () => {
     ).toBe(true)
     expect(rows[0].methods[0].sourceUrl).toBe(megaEvolutionUrl)
     expect(report(id).warnings.join(' ')).not.toContain('No exact main-series')
+  })
+
+  it.each(['charizard-mega-x', 'charizard-mega-y'])(
+    'requires an external base for %s in ORAS and replaces stale native acquisition',
+    (id) => {
+      const selected = pokemon(id)
+      const main = {
+        gameIds: new Set(['oras-or', 'oras-as', 'xy-x']),
+        rows: new Map([
+          [
+            6,
+            [
+              {
+                form: '',
+                methods: new Map([
+                  ['oras-or', { text: 'T', status: 'transferOnlyIn' as const }],
+                  ['oras-as', { text: 'T', status: 'transferOnlyIn' as const }],
+                  ['xy-x', { text: 'E', status: 'obtainableIn' as const }],
+                ]),
+              },
+            ],
+          ],
+        ]),
+      }
+      const stale = { ...selected, obtainableIn: ['oras-or', 'oras-as', 'xy-x'] }
+      const report = createAvailabilityReport({ main, gameIds: main.gameIds }, stale, games, [
+        pokemon('charizard'),
+        selected,
+      ])
+      const candidate = availabilityJson(report)
+      for (const game of ['oras-or', 'oras-as']) {
+        expect(report.rows.find((row) => row.game.id === game)).toMatchObject({
+          status: 'transferOnlyIn',
+          basis: 'rule',
+        })
+        expect(candidate.transferOnlyIn).toContain(game)
+        expect(candidate.obtainableIn).not.toContain(game)
+        expect(selected.transferOnlyIn).toContain(game)
+        expect(selected.obtainableIn).not.toContain(game)
+      }
+      expect(candidate.obtainableIn).toContain('xy-x')
+      expect(candidate.storableIn).toEqual(selected.storableIn)
+    },
+  )
+
+  it('inherits transfer-only base acquisition from the species source row without siblings', () => {
+    for (const game of ['oras-or', 'oras-as', 'sm-s', 'sm-m'])
+      expect(report('venusaur-mega').rows.find((row) => row.game.id === game)).toMatchObject({
+        status: 'transferOnlyIn',
+        basis: 'rule',
+      })
   })
 
   it.each(['latias-mega', 'latios-mega'])(

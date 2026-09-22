@@ -100,6 +100,9 @@ Battle transformations such as Mega Evolution and Gigantamax retain their explic
 rules: a supported in-game transformation can be listed even though the temporary transformed state
 cannot itself be boxed or transferred. Exportable acquisition concerns the underlying Pokémon;
 `obtainableIn` never promises that a temporary state or held-item form survives transfer.
+Transformation support alone does not establish native acquisition. A Mega Evolution whose base
+Pokémon is transfer-only in that game is also `transferOnlyIn` (for example, Mega Charizard in Omega
+Ruby/Alpha Sapphire). This does not override independent native encounters for other forms.
 
 - Forms requiring a **held item** cannot retain that form in HOME: exclude HOME from all three
   acquisition fields and `storableIn`. An item used once to change/evolve a Pokémon is not

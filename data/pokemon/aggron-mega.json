@@ -33,18 +33,7 @@
   "canDynamax": false,
   "canBeAlpha": false,
   "debutIn": "xy",
-  "obtainableIn": [
-    "xy-x",
-    "xy-y",
-    "oras-or",
-    "oras-as",
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "lza"
-  ],
+  "obtainableIn": ["xy-x", "oras-or", "oras-as", "go", "usum-us", "usum-um", "lza"],
   "eventOnlyIn": [],
   "storableIn": [],
   "shinyReleased": true,
@@ -111,5 +100,5 @@
     "chs": "超级",
     "cht": "超級"
   },
-  "transferOnlyIn": []
+  "transferOnlyIn": ["xy-y", "sm-s", "sm-m"]
 }

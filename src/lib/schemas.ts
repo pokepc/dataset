@@ -300,7 +300,7 @@ export const pokemonSchema = z.object({
   canBeAlpha: z.coerce.boolean(),
   // ---- Availability: canonical definitions in docs/pokemon-availability.md.
   debutIn: common.slug, // the first game it appeared in
-  obtainableIn: z.array(common.slug), // exportable ordinary acquisition; GO means historically released, even if not exportable; excludes Champions recruits
+  obtainableIn: z.array(common.slug), // exportable ordinary acquisition; Megas require a native base route; GO means historically released, even if not exportable; excludes Champions recruits
   transferOnlyIn: z.array(common.slug), // external acquisition/dependency, including distributions and verified visitors
   storableIn: z.array(common.slug), // exact form persists in storage; independent of acquisition/exportability
   eventOnlyIn: z.array(common.slug), // obtainable via in-game events; disjoint from obtainableIn and transferOnlyIn
