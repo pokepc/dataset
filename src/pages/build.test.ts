@@ -2,11 +2,16 @@ import { execFileSync } from 'node:child_process'
 import fs from 'node:fs'
 import os from 'node:os'
 import path from 'node:path'
-import { afterEach, describe, expect, it } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { buildVersionedPages } from './build.ts'
 
 const temporaryRoots: string[] = []
+beforeEach(() => {
+  // Fixture deployments must not append fake release entries to the real Actions summary.
+  vi.stubEnv('GITHUB_STEP_SUMMARY', '')
+})
 afterEach(() => {
+  vi.unstubAllEnvs()
   for (const root of temporaryRoots.splice(0)) fs.rmSync(root, { recursive: true, force: true })
 })
 
