@@ -28,6 +28,24 @@ import tauros from '../../../data/pokemon/tauros.json'
 import combatTauros from '../../../data/pokemon/tauros-paldea.json'
 import blazeTauros from '../../../data/pokemon/tauros-paldea-fire.json'
 import aquaTauros from '../../../data/pokemon/tauros-paldea-water.json'
+import xatu from '../../../data/pokemon/xatu.json'
+import paldeanWooper from '../../../data/pokemon/wooper-paldea.json'
+import shellos from '../../../data/pokemon/shellos.json'
+import shellosEast from '../../../data/pokemon/shellos-east.json'
+import gastrodon from '../../../data/pokemon/gastrodon.json'
+import gastrodonEast from '../../../data/pokemon/gastrodon-east.json'
+import basculin from '../../../data/pokemon/basculin.json'
+import basculinBlue from '../../../data/pokemon/basculin-blue-striped.json'
+import basculinWhite from '../../../data/pokemon/basculin-white-striped.json'
+import meltan from '../../../data/pokemon/meltan.json'
+import melmetal from '../../../data/pokemon/melmetal.json'
+import zeraora from '../../../data/pokemon/zeraora.json'
+import pecharunt from '../../../data/pokemon/pecharunt.json'
+import diancie from '../../../data/pokemon/diancie.json'
+import megaDiancie from '../../../data/pokemon/diancie-mega.json'
+import mewtwo from '../../../data/pokemon/mewtwo.json'
+import megaMewtwoX from '../../../data/pokemon/mewtwo-mega-x.json'
+import megaMewtwoY from '../../../data/pokemon/mewtwo-mega-y.json'
 import { pokemonSchema } from '../../lib/schemas'
 import {
   availabilityJson,
@@ -71,7 +89,7 @@ const games = [
 // Synthetic, reduced fixtures retain the nested tables and annotations used by
 // Bulbapedia's Game locations templates, without depending on network or snapshots.
 function row(labels: string[], method: string): string {
-  return `<tr>${labels.map((label) => `<th><a href="/wiki/Game">${label}</a></th>`).join('')}
+  return `<tr>${labels.map((label) => `<th><a href="${label === 'Expansion Pass' ? '/wiki/Pok%C3%A9mon_Sword_and_Shield_Expansion_Pass' : '/wiki/Game'}">${label}</a></th>`).join('')}
     <td><table><tr><td>${method}</td></tr></table></td></tr>`
 }
 function page(rows: string, species = 'Pikachu'): string {
@@ -191,6 +209,7 @@ describe('identity and game normalization', () => {
     { pokemon: combatTauros, slug: 'Tauros' },
     { pokemon: blazeTauros, slug: 'Tauros' },
     { pokemon: aquaTauros, slug: 'Tauros' },
+    { pokemon: paldeanWooper, slug: 'Wooper' },
   ])('uses the actual species page reference for $pokemon.id', ({ pokemon, slug }) => {
     expect(bulbapediaUrl(pokemon)).toBe(
       `https://bulbapedia.bulbagarden.net/wiki/${slug}_(Pok%C3%A9mon)`,
@@ -199,7 +218,9 @@ describe('identity and game normalization', () => {
   it('maps paired games and DLC to concrete IDs without confusing Japanese Blue', () => {
     const resolve = createGameResolver(games)
     expect(resolve('Pokémon Sun and Moon')).toEqual(['sm-s', 'sm-m'])
-    expect(resolve('Expansion Pass')).toEqual(['swsh-sw', 'swsh-sh'])
+    expect(resolve('Expansion Pass')).toEqual([])
+    expect(resolve('Sword Expansion Pass')).toEqual(['swsh-sw'])
+    expect(resolve('Shield Expansion Pass')).toEqual(['swsh-sh'])
     expect(resolve('The Isle of Armor')).toEqual(['swsh-sw', 'swsh-sh'])
     expect(resolve('Mega Dimension')).toEqual(['lza'])
     expect(resolve('Blue (Japan)')).toEqual([])
@@ -207,6 +228,160 @@ describe('identity and game normalization', () => {
 })
 
 describe('location parsing and classification', () => {
+  it.each(['to', 'with'])('recognizes a linked NPC %s Duking in Pyrite Town', (preposition) => {
+    const report = reportFor(
+      row(
+        ['Red'],
+        `<a href="/wiki/Trade">Trade</a> <a href="/wiki/Surskit_(Pok%C3%A9mon)">Surskit</a> ${preposition} <a href="/wiki/Duking">Duking</a> in <a href="/wiki/Pyrite_Town">Pyrite Town</a>`,
+      ),
+    )
+    expect(report.rows.find((row) => row.game.id === 'rb-r')?.status).toBe('obtainableIn')
+  })
+  it('does not treat a linked player as an NPC trade', () => {
+    const report = reportFor(
+      row(
+        ['Red'],
+        '<a href="/wiki/Trade">Trade</a> <a href="/wiki/Surskit_(Pok%C3%A9mon)">Surskit</a> to <a href="/wiki/Player">another player</a> in <a href="/wiki/Pyrite_Town">Pyrite Town</a>',
+      ),
+    )
+    expect(report.rows.find((row) => row.game.id === 'rb-r')?.status).toBe('transferOnlyIn')
+  })
+  it.each(['Yancy', 'Curtis'])('recognizes a trade with %s without a requested species', (npc) => {
+    const result = reportFor(
+      row(
+        ['Red'],
+        `<a href="/wiki/Trade">Trade</a> with <a href="/wiki/${npc}">${npc}</a> in <a href="/wiki/Nimbasa_City">Nimbasa City</a>`,
+      ),
+    )
+    expect(result.rows[0].status).toBe('obtainableIn')
+  })
+  it.each([
+    [shellos, shellosEast],
+    [gastrodon, gastrodonEast],
+  ])('excludes West Sea methods when parsing %s East Sea', (west, east) => {
+    const html = row(
+      ['Red'],
+      '<a href="/wiki/Pokéwalker">Pokéwalker</a> <small>(West Sea)</small><br><a href="/wiki/Trade">Trade</a> <small>(East Sea)</small>',
+    )
+    const result = parseAvailability(
+      page(html, east.refs.bulbapedia),
+      { ...east, obtainableIn: ['rb-r'], transferOnlyIn: [] },
+      games,
+      [west, east],
+    )
+    expect(result.rows[0].status).toBe('transferOnlyIn')
+    expect(result.rows[0].basis).toBe('source')
+    expect(result.rows[0].methods).toHaveLength(1)
+    expect(result.rows[0].methods[0].text).toContain('East Sea')
+  })
+  it.each([
+    ['Scarlet', 'sv-s', 'sv-v'],
+    ['Violet', 'sv-v', 'sv-s'],
+  ])('keeps Hidden Treasure DLC rows scoped to %s', (version, included, excluded) => {
+    const report = reportFor(
+      row(['Scarlet', 'Violet'], 'Trade') +
+        row([`The Hidden Treasure of Area Zero (${version})`], location),
+    )
+    expect(report.rows.find((row) => row.game.id === included)?.status).toBe('obtainableIn')
+    expect(report.rows.find((row) => row.game.id === excluded)?.status).toBe('transferOnlyIn')
+  })
+  it('ignores excluded upstream headers while keeping Pal Park transfer methods', () => {
+    const report = reportFor(
+      row(['Red'], '<a href="/wiki/Pal_Park">Pal Park</a>') +
+        row(['Green (Japan)'], location) +
+        row(['Blue (Japan)'], location) +
+        row(['Pal Park'], location) +
+        row(['Unknown Game'], location),
+    )
+    expect(report.rows.find((row) => row.game.id === 'rb-r')?.status).toBe('transferOnlyIn')
+    expect(report.warnings.find((warning) => warning.startsWith('Source-only'))).toBe(
+      'Source-only game/service labels not in the dataset: Unknown Game.',
+    )
+  })
+  it.each([
+    '/wiki/Unknown_Expansion_Pass',
+    '/wiki/Game',
+    '/wiki/%invalid',
+    'https://example.com/Expansion_Pass',
+  ])('does not guess the games for a generic Expansion Pass linked to %s', (href) => {
+    const expansion = row(['Expansion Pass'], location).replace(
+      '/wiki/Pok%C3%A9mon_Sword_and_Shield_Expansion_Pass',
+      href,
+    )
+    const report = reportFor(row(['Sword', 'Shield'], 'Trade') + expansion)
+    for (const id of ['swsh-sw', 'swsh-sh'])
+      expect(report.rows.find((row) => row.game.id === id)?.status).toBe('transferOnlyIn')
+    expect(report.warnings.join(' ')).toContain('Expansion Pass')
+  })
+
+  it('keeps a version-specific DLC label scoped even when it links to the paired article', () => {
+    const expansion = row(['Sword Expansion Pass'], location).replace(
+      '/wiki/Game',
+      '/wiki/Pok%C3%A9mon_Sword_and_Shield_Expansion_Pass',
+    )
+    const report = reportFor(row(['Sword', 'Shield'], 'Trade') + expansion)
+    expect(report.rows.find((row) => row.game.id === 'swsh-sw')?.status).toBe('obtainableIn')
+    expect(report.rows.find((row) => row.game.id === 'swsh-sh')?.status).toBe('transferOnlyIn')
+  })
+  it.each([
+    ['Sword', 'swsh-sw', 'swsh-sh'],
+    ['Shield', 'swsh-sh', 'swsh-sw'],
+  ])('folds the %s Expansion Pass into only its own version', (version, included, excluded) => {
+    const report = reportFor(
+      row(['Sword', 'Shield'], '<a href="/wiki/Trade">Trade</a><sup>Version 1.2.0+</sup>') +
+        row(
+          [`${version} Expansion Pass`],
+          '<a href="/wiki/Training_Lowlands">Training Lowlands</a>',
+        ),
+    )
+    expect(report.rows.find((row) => row.game.id === included)?.status).toBe('obtainableIn')
+    const other = report.rows.find((row) => row.game.id === excluded)!
+    expect(other.status).toBe('transferOnlyIn')
+    expect(other.methods.some((method) => method.text.includes('Training Lowlands'))).toBe(false)
+    expect(report.warnings.join(' ')).not.toContain(`${version} Expansion Pass`)
+  })
+  it.each(['Abra', 'Clefairy'])(
+    'recognizes an NPC route trade for %s even with a generic Trade link',
+    (species) => {
+      const methods = `<a href="/wiki/Trade">Trade</a> <a href="/wiki/${species}_(Pok%C3%A9mon)">${species}</a> on <a href="/wiki/Kanto_Route_2">Route 2</a>`
+      const report = reportFor(row(['Red'], methods), mrMime)
+      expect(report.rows.find((row) => row.game.id === 'rb-r')?.status).toBe('obtainableIn')
+    },
+  )
+  it.each([
+    '<a href="/wiki/Trade">Trade</a>',
+    '<a href="/wiki/Trade">Trade</a> <a href="/wiki/Haunter_(Pok%C3%A9mon)">Haunter</a> in <a href="/wiki/Pok%C3%A9mon_Crystal">Pokémon Crystal</a>',
+    '<a href="/wiki/Trade">Trade</a> from <a href="/wiki/Pokemon_Red">Red</a>',
+    '<a href="/wiki/Trade">Trade</a> <a href="/wiki/Abra_(Pok%C3%A9mon)">Abra</a> from <a href="/wiki/Kanto_Route_2">Route 2</a>',
+  ])('does not infer an NPC trade without its specific route-trade wording: %s', (methods) => {
+    expect(
+      reportFor(row(['Red'], methods), mrMime).rows.find((row) => row.game.id === 'rb-r')?.status,
+    ).toBe('transferOnlyIn')
+  })
+  it('recognizes Xatu NPC trades in Crystal, HeartGold and SoulSilver', () => {
+    const tradeGames = [
+      game('c', 'Crystal'),
+      game('hgss-hg', 'HeartGold'),
+      game('hgss-ss', 'SoulSilver'),
+    ]
+    const methods =
+      '<a href="/wiki/Trade">Trade</a> <a href="/wiki/Haunter_(Pok%C3%A9mon)">Haunter</a> in <a href="/wiki/Pewter_City">Pewter City</a>'
+    const report = parseAvailability(
+      page(row(['Crystal'], methods) + row(['HeartGold', 'SoulSilver'], methods), 'Xatu'),
+      xatu,
+      tradeGames,
+    )
+    expect(report.rows.map((row) => row.status)).toEqual([
+      'obtainableIn',
+      'obtainableIn',
+      'obtainableIn',
+    ])
+    const candidate = availabilityJson(report)
+    for (const game of tradeGames) {
+      expect(candidate.obtainableIn).toContain(game.id)
+      expect(candidate.transferOnlyIn).not.toContain(game.id)
+    }
+  })
   it.each([bulbasaur, squirtle])(
     'includes the Isle of Armor gift for $id despite its Gigantamax Factor note',
     (pokemon) => {
@@ -258,15 +433,36 @@ describe('location parsing and classification', () => {
     ['Evolve Pikachu', 'obtainableIn'],
     ['Breed Raichu', 'obtainableIn'],
     ['<a href="/wiki/In-game_trade#Sun">Trade</a> in a city', 'obtainableIn'],
+    [
+      '<a href="/wiki/Trade">Trade</a> <a href="/wiki/Granbull_(Pok%C3%A9mon)">Granbull</a> in <a href="/wiki/Seafolk_Village">Seafolk Village</a>',
+      'obtainableIn',
+    ],
     ['<a href="/wiki/Trade">Trade</a>', 'transferOnlyIn'],
     ['<a href="/wiki/Pal_Park">Pal Park</a>', 'transferOnlyIn'],
     ['<a href="/wiki/Ramanas_Park">Ramanas Park</a>', 'obtainableIn'],
+    ['<a href="/wiki/Pokémon_Dream_Radar">Pokémon Dream Radar</a>', 'transferOnlyIn'],
+    ['<a href="/wiki/My_Pokémon_Ranch">My Pokémon Ranch</a>', 'transferOnlyIn'],
+    ['<a href="/wiki/Floccesy_Ranch">Floccesy Ranch</a>', 'obtainableIn'],
+    ['<a href="/wiki/Pokéwalker">Pokéwalker</a>', 'transferOnlyIn'],
     ['Poké Transfer, <a href="#In_events">Event</a>', 'transferOnlyIn'],
+    [
+      '<a href="/wiki/Poké_Transporter">Poké Transporter</a>, <a href="#In_events">Event</a>',
+      'transferOnlyIn',
+    ],
     ['Pokémon HOME, <a href="/wiki/Poké_Portal_News">Poké Portal News</a>', 'transferOnlyIn'],
     [`${location}, <a href="#In_events">Event</a>`, 'obtainableIn'],
     [`${location} (<a href="#In_events">Event</a>)`, 'eventOnlyIn'],
+    [`${location} (requires <a href="/wiki/MysticTicket">MysticTicket</a>)`, 'eventOnlyIn'],
+    [
+      `${location} (requires <a href="/wiki/MysticTicket">MysticTicket</a>)<span class="explain" title="distributed through an event in the original release; available without an event in the Nintendo Switch release">*</span>`,
+      'obtainableIn',
+    ],
     ['<a href="#In_events">Event</a>', 'eventOnlyIn'],
     ['Unobtainable', 'unavailable'],
+    ['Union Circle', 'obtainableIn'],
+    ['Tera Raid Battle Search (4★)', 'obtainableIn'],
+    ['Tera Raid Battles (4★)', 'obtainableIn'],
+    ['Tera Raid Battle Search (event only)', 'eventOnlyIn'],
   ])('classifies %s as %s', (method, expected) => {
     expect(reportFor(row(['Red'], method)).rows[0].status).toBe(expected)
   })
@@ -275,6 +471,109 @@ describe('location parsing and classification', () => {
     const report = reportFor(row(['Red'], '<a href="#In_events">Event</a>'), pokemon)
     expect(report.rows[0]).toMatchObject({ status: 'transferOnlyIn', basis: 'dataset' })
     expect(availabilityJson(report).eventOnlyIn).not.toContain('rb-r')
+  })
+  it.each([diancie, megaDiancie, mewtwo, megaMewtwoX, megaMewtwoY])(
+    'preserves the confirmed LZA event-only rule for %s',
+    (selected) => {
+      const result = reportFor(row(['Legends: Z-A'], 'Trade'), {
+        ...selected,
+        obtainableIn: ['lza'],
+        eventOnlyIn: [],
+        transferOnlyIn: [],
+      })
+      const json = availabilityJson(result)
+      expect(json.eventOnlyIn).toContain('lza')
+      expect(json.obtainableIn).not.toContain('lza')
+      expect(json.transferOnlyIn).not.toContain('lza')
+      expect(new Set(json.storableIn)).toEqual(new Set(selected.storableIn))
+    },
+  )
+  it('keeps Pecharunt’s Mystery Gift item encounter event-only over the base Trade row', () => {
+    const html =
+      row(['Scarlet', 'Violet'], 'Trade Version 3.0.0+') +
+      row(
+        ['The Hidden Treasure of Area Zero'],
+        `${location} (requires Mythical Pecha Berry) (Only one)`,
+      )
+    const result = reportFor(html, pecharunt)
+    for (const id of ['sv-s', 'sv-v'])
+      expect(result.rows.find((r) => r.game.id === id)).toMatchObject({
+        status: 'eventOnlyIn',
+        basis: 'rule',
+      })
+  })
+  it('distinguishes unlocking the Mystery Box from importing Meltan', () => {
+    const method =
+      '<a href="/wiki/Mystery_Box">Mystery Box</a> (Unlocked after transferring a Pokémon to GO Park or via GO Transporter)'
+    const result = reportFor(row(['GO'], method), {
+      ...meltan,
+      obtainableIn: [],
+      transferOnlyIn: ['go'],
+    })
+    expect(result.rows.find((r) => r.game.id === 'go')?.status).toBe('obtainableIn')
+    const evolved = reportFor(row(['GO'], 'Evolve Meltan'), melmetal)
+    expect(evolved.rows.find((r) => r.game.id === 'go')?.status).toBe('obtainableIn')
+    const imported = reportFor(row(['GO'], 'Transfer via Pokémon HOME'), meltan)
+    expect(imported.rows.find((r) => r.game.id === 'go')?.status).toBe('transferOnlyIn')
+  })
+  it('keeps the confirmed Zeraora LZA Mystery Gift route event-only over a generic Trade placeholder', () => {
+    const html =
+      row(['Legends: Z-A'], 'Trade Version 2.0.0+') +
+      row(['Mega Dimension'], `${location} (requires Mystery Gift activation) (Only one)`)
+    const result = reportFor(html, {
+      ...zeraora,
+      obtainableIn: [],
+      eventOnlyIn: [],
+      transferOnlyIn: ['lza'],
+    })
+    expect(result.rows.find((r) => r.game.id === 'lza')).toMatchObject({
+      status: 'eventOnlyIn',
+      basis: 'rule',
+    })
+  })
+  it('recognizes a form ID when the English form label is absent', () => {
+    const selected = { ...pikachu, formId: 'altered', formNames: {} }
+    const result = reportFor(row(['Red'], `${location} <small>(Altered Forme)</small>`), selected)
+    expect(result.rows[0].status).toBe('obtainableIn')
+    const other = reportFor(row(['Red'], `${location} <small>(Origin Forme)</small>`), selected)
+    expect(other.rows[0].basis).not.toBe('source')
+  })
+  it.each([basculin, basculinBlue, basculinWhite])(
+    'scopes Red/Blue-Striped Forms to the named Basculin forms: %s',
+    (selected) => {
+      const html = page(
+        row(['Red'], `${location} <small>(Red/Blue-Striped Forms)</small>`),
+        selected.refs.bulbapedia,
+      )
+      const result = parseAvailability(
+        html,
+        { ...selected, obtainableIn: [], transferOnlyIn: ['rb-r'] },
+        games,
+        [basculin, basculinBlue, basculinWhite],
+      )
+      expect(result.rows[0].status).toBe(
+        selected === basculinWhite ? 'transferOnlyIn' : 'obtainableIn',
+      )
+    },
+  )
+  it.each([251, 385])('classifies Bonus Disc routes as transfer-only for #%s', (dexNum) => {
+    const selected = { ...pikachu, dexNum, obtainableIn: [], transferOnlyIn: [] }
+    const result = reportFor(
+      row(['Red'], '<a href="/wiki/Pokémon_Colosseum_Bonus_Disc">Bonus Disc</a>'),
+      selected,
+    )
+    expect(result.rows[0].status).toBe('transferOnlyIn')
+  })
+  it('classifies both Jirachi external gift routes as transfer-only', () => {
+    const selected = { ...pikachu, dexNum: 385, obtainableIn: [], transferOnlyIn: [] }
+    const result = reportFor(
+      row(
+        ['Red'],
+        '<a href="/wiki/Pokémon_Colosseum_Bonus_Disc">Bonus Disc</a> (US)<br><a href="/wiki/Pokémon_Channel">Pokémon Channel</a> (EU)',
+      ),
+      selected,
+    )
+    expect(result.rows[0].status).toBe('transferOnlyIn')
   })
   it('does not treat unfamiliar prose as an encounter or erase unresolved games', () => {
     const pokemon = { ...pikachu, obtainableIn: [], transferOnlyIn: ['rb-r', 'home'] }

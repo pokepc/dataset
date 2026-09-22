@@ -1,5 +1,6 @@
 import { z } from 'zod'
 import { styleText } from 'node:util'
+import { findEncounterException, type EncounterException } from './encounter-exceptions.ts'
 import { fetchPokeApiJson, type PokeApiFetchOptions } from '../pokeapi/client.ts'
 import {
   fetchSerebiiEvidence,
@@ -8,6 +9,7 @@ import {
 } from '../serebii/availability-evidence.ts'
 import {
   availabilityFields,
+  isIgnoredUpstreamGame,
   type AvailabilityGame,
   type AvailabilityPokemon,
   type AvailabilityReport,
@@ -36,7 +38,13 @@ type EncounterData = {
   versionId: number
   version: string
   location: string
-  methods: { name: string; conditions: string[] }[]
+  methods: {
+    name: string
+    conditions: string[]
+    knownUpstreamError?: EncounterException
+    availability?: 'transferOnlyIn' | 'eventOnlyIn'
+    availabilityReason?: string
+  }[]
 }
 export type PokeApiEncounter = EncounterData & {
   formScope: 'selected-form' | 'form-ambiguous'
@@ -72,6 +80,7 @@ export function parsePokeApiEncounters(value: unknown, games: AvailabilityGame[]
   const unmapped = new Set<string>()
   for (const area of encounterSchema.parse(value)) {
     for (const version of area.version_details) {
+      if (isIgnoredUpstreamGame(version.version.name)) continue
       const url = new URL(version.version.url)
       const match =
         url.origin === 'https://pokeapi.co' && /^\/api\/v2\/version\/(\d+)\/$/.exec(url.pathname)
@@ -119,6 +128,11 @@ function scopeEncounter(
   let reason: string | undefined
   if (pokemon.isBattleOnlyForm) {
     reason = 'Species encounters do not independently establish a battle-only form.'
+  } else if (['422', '423'].includes(pokemon.refs.pkApiId ?? '')) {
+    reason =
+      'Shellos and Gastrodon share their PokéAPI endpoint across sea forms; the encounter does not identify this form.'
+    if (['swsh-sw', 'swsh-sh'].includes(encounter.gameId))
+      reason += ' Sword/Shield encounters are East Sea; West Sea requires HOME transfer.'
   } else if (
     !pokemon.isDefault &&
     !pokemon.isFemaleForm &&
@@ -190,9 +204,47 @@ export function createAvailabilityCrossChecker(options: CrossCheckOptions = {}) 
         signal?.throwIfAborted()
         const parsed = parsePokeApiEncounters(response, games)
         evidence.pokeApi.status = 'checked'
-        evidence.pokeApi.encounters = parsed.encounters.map((encounter) =>
-          scopeEncounter(encounter, pokemon, siblings, games),
-        )
+        evidence.pokeApi.encounters = parsed.encounters.map((encounter) => ({
+          ...scopeEncounter(encounter, pokemon, siblings, games),
+          methods: encounter.methods.map((method) => {
+            if (
+              method.name === 'pokemon-ranger' &&
+              !games.some((game) => /^(?:Pok[eé]mon )?Ranger$/i.test(game.name))
+            )
+              return {
+                ...method,
+                availability: 'transferOnlyIn' as const,
+                availabilityReason: 'Pokémon Ranger is an external game outside this dataset.',
+              }
+            if (method.conditions.includes('other-event-arceus-in-party'))
+              return {
+                ...method,
+                availability: 'eventOnlyIn' as const,
+                availabilityReason:
+                  'The encounter explicitly requires an event Arceus in the party.',
+              }
+            if (
+              ['249', '250'].includes(pkApiId) &&
+              encounter.gameId === 'e' &&
+              encounter.location === 'navel-rock-area' &&
+              method.name === 'static'
+            )
+              return {
+                ...method,
+                availability: 'eventOnlyIn' as const,
+                availabilityReason:
+                  'Emerald Navel Rock requires the event-distributed MysticTicket; an existing transfer route takes precedence.',
+              }
+            if (
+              (pkApiId === '251' && method.name === 'colosseum-bonus-disc-jpn') ||
+              (pkApiId === '385' &&
+                ['colosseum-bonus-disc-us', 'pokemon-channel-pal'].includes(method.name))
+            )
+              return { ...method, availability: 'transferOnlyIn' as const }
+            const knownUpstreamError = findEncounterException(pkApiId, encounter, method)
+            return knownUpstreamError ? { ...method, knownUpstreamError } : method
+          }),
+        }))
         if (parsed.unmapped.length)
           evidence.warnings.push(
             `PokéAPI versions without dataset mapping: ${parsed.unmapped.join(', ')}.`,
@@ -207,9 +259,18 @@ export function createAvailabilityCrossChecker(options: CrossCheckOptions = {}) 
     } else evidence.warnings.push('No exact Pokémon PokéAPI ID; encounter cross-check skipped.')
     for (const row of report.rows) {
       if (row.basis === 'rule' || row.status === 'obtainableIn') continue
-      const encounters = evidence.pokeApi.encounters.filter(
-        (entry) => entry.gameId === row.game.id && entry.formScope === 'selected-form',
-      )
+      const encounters = evidence.pokeApi.encounters
+        .filter((entry) => entry.gameId === row.game.id && entry.formScope === 'selected-form')
+        .map((entry) => ({
+          ...entry,
+          methods: entry.methods.filter(
+            (method) =>
+              !method.knownUpstreamError &&
+              method.availability !== row.status &&
+              !(method.availability === 'eventOnlyIn' && row.status === 'transferOnlyIn'),
+          ),
+        }))
+        .filter((entry) => entry.methods.length)
       if (!encounters.length) continue
       evidence.conflicts.push({
         id: `pokeapi:${row.game.id}`,
@@ -286,6 +347,15 @@ export function formatCrossChecks(
 ): string {
   const checks = report.crossChecks
   if (!checks) return ''
+  const upstreamErrors = new Map(
+    checks.pokeApi.encounters.flatMap((entry) =>
+      entry.methods.flatMap((method) =>
+        method.knownUpstreamError
+          ? [[method.knownUpstreamError.id, method.knownUpstreamError] as const]
+          : [],
+      ),
+    ),
+  )
   const ambiguous = new Map(
     checks.pokeApi.encounters
       .filter((entry) => entry.formScope === 'form-ambiguous')
@@ -293,6 +363,13 @@ export function formatCrossChecks(
   )
   return [
     `Cross-check: PokéAPI ${checks.pokeApi.status} (${checks.pokeApi.encounters.length} mapped encounter records); ${checks.serebii.length} targeted Serebii pages.`,
+    ...[...upstreamErrors.values()].map((error) =>
+      styleText(
+        'yellow',
+        `Known upstream error (${error.gameId}): PokéAPI ${error.pokemonId}, ${error.location}, ${error.method}. ${error.reason} Excluded from conflict detection. Evidence: ${error.evidenceUrls.join(', ')}`,
+        { stream },
+      ),
+    ),
     ...[...ambiguous].map(([gameId, reason]) =>
       styleText(
         'yellow',

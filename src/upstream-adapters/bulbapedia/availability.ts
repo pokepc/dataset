@@ -27,6 +27,7 @@ export type AvailabilityPokemon = Pick<
   | AvailabilityField
   | 'storableIn'
 > & {
+  formId?: Pkds.Pokemon['formId']
   names: Partial<Pkds.Pokemon['names']>
   formNames: Partial<Pkds.Pokemon['formNames']>
 }
@@ -65,6 +66,12 @@ export function normalizeName(value: string): string {
     .replace(/\bpokemon\b/g, '')
     .replace(/&/g, 'and')
     .replace(/[^a-z0-9]/g, '')
+}
+
+const ignoredUpstreamGames = new Set(['greenjapan', 'bluejapan', 'palpark'])
+
+export function isIgnoredUpstreamGame(label: string): boolean {
+  return ignoredUpstreamGames.has(normalizeName(label))
 }
 
 export function resolvePokemon(input: string, pokemon: AvailabilityPokemon[]): AvailabilityPokemon {
@@ -106,9 +113,12 @@ export function createGameResolver(games: AvailabilityGame[]): (label: string) =
   }
   const special: Record<string, string[]> = {
     XD: ['xd'],
-    'Expansion Pass': ['swsh-sw', 'swsh-sh'],
     'Sword and Shield Expansion Pass': ['swsh-sw', 'swsh-sh'],
+    'Sword Expansion Pass': ['swsh-sw'],
+    'Shield Expansion Pass': ['swsh-sh'],
     'The Hidden Treasure of Area Zero': ['sv-s', 'sv-v'],
+    'The Hidden Treasure of Area Zero (Scarlet)': ['sv-s'],
+    'The Hidden Treasure of Area Zero (Violet)': ['sv-v'],
     'Mega Dimension': ['lza'],
   }
   for (const [label, ids] of Object.entries(special)) {
@@ -117,7 +127,7 @@ export function createGameResolver(games: AvailabilityGame[]): (label: string) =
       ids.filter((id) => games.some((game) => game.id === id)),
     )
   }
-  return (label) => aliases.get(normalizeName(label)) ?? []
+  return (label) => (isIgnoredUpstreamGame(label) ? [] : (aliases.get(normalizeName(label)) ?? []))
 }
 
 function cleanText(value: string): string {
@@ -125,7 +135,12 @@ function cleanText(value: string): string {
 }
 
 function formAliases(pokemon: AvailabilityPokemon): Set<string> {
-  const labels = [pokemon.names.eng, pokemon.formNames.eng]
+  const labels = [pokemon.names.eng, pokemon.formNames.eng, pokemon.formId]
+  if (
+    [422, 423].includes(Number(pokemon.dexNum)) &&
+    ['west', 'east'].includes(pokemon.formId ?? '')
+  )
+    labels.push(`${pokemon.formId} Sea`)
   if (pokemon.isDefault || pokemon.isFemaleForm) {
     labels.push('regular form', 'normal form', 'standard form', pokemon.refs.bulbapedia)
     const regional: Record<string, string> = {
@@ -152,7 +167,19 @@ function normalizeForm(value: string): string {
 function matchesFormLabel(label: string, aliases: Set<string>, knownForms: Set<string>): boolean {
   if (aliases.has(normalizeForm(label))) return true
   // Shared suffixes such as "Kantonian/Hisuian Forms" name several specific forms.
-  const forms = label.split(/\s*(?:\/|,|&|\band\b)\s*/i).map(normalizeForm)
+  const parts = label.split(/\s*(?:\/|,|&|\band\b)\s*/i)
+  const suffix = parts
+    .at(-1)
+    ?.replace(/\bforme?s?\b/gi, '')
+    .trim()
+    .match(/^[^-\s]+([-\s].+)$/)?.[1]
+  const forms = parts.map((part) => {
+    const normalized = normalizeForm(part)
+    // Abbreviated shared suffixes: "Red/Blue-Striped Forms", "West/East Sea".
+    if (!knownForms.has(normalized) && suffix && knownForms.has(normalizeForm(part + suffix)))
+      return normalizeForm(part + suffix)
+    return normalized
+  })
   return (
     forms.length > 1 &&
     forms.every((form) => knownForms.has(form)) &&
@@ -160,7 +187,11 @@ function matchesFormLabel(label: string, aliases: Set<string>, knownForms: Set<s
   )
 }
 
-function classifyMethod(fragment: Selection): AvailabilityStatus {
+function classifyMethod(
+  fragment: Selection,
+  dexNum?: number,
+  resolveGame: (label: string) => string[] = () => [],
+): AvailabilityStatus {
   const text = cleanText(fragment.text())
   const links = fragment
     .find('a')
@@ -172,8 +203,74 @@ function classifyMethod(fragment: Selection): AvailabilityStatus {
     return 'unavailable'
   const inGameTrade = /In.game.trade/i.test(links)
   if (inGameTrade) return 'obtainableIn'
+  // Some NPC-trade rows link to generic Trade (e.g. "Trade Abra on Route 2").
+  // Require a requested species or named trading partner and a linked route/city/town.
+  const locationTrade = fragment
+    .find('a')
+    .toArray()
+    .some((node) => {
+      const href = node.attribs.href ?? ''
+      const requestedSpecies = /\/wiki\/[^/]+_\(Pok(?:%C3%A9|é)mon\)/i.test(href)
+      if (
+        !requestedSpecies &&
+        (!href.startsWith('/wiki/') || /\/Player(?:$|#)|\/Trade(?:$|#)/i.test(href))
+      )
+        return false
+      const species = cleanText(
+        fragment
+          .find('a')
+          .filter((_, anchor) => anchor === node)
+          .text(),
+      )
+      if (!requestedSpecies && !text.startsWith(`Trade with ${species} `)) return false
+      return fragment
+        .find('a')
+        .toArray()
+        .some((place) => {
+          if (
+            !/^\/wiki\/(?:[A-Za-z]+_)?Route_\d+(?:$|#)|^\/wiki\/[^/]+_(?:City|Town|Village)(?:$|#)/.test(
+              place.attribs.href ?? '',
+            )
+          )
+            return false
+          const name = cleanText(
+            fragment
+              .find('a')
+              .filter((_, anchor) => anchor === place)
+              .text(),
+          )
+          const prefixes = [requestedSpecies ? `Trade ${species}` : `Trade with ${species}`]
+          // Named NPCs can appear between the requested species and the town.
+          fragment.find('a').each((_, npc) => {
+            const href = npc.attribs.href ?? ''
+            if (
+              npc === node ||
+              npc === place ||
+              !href.startsWith('/wiki/') ||
+              /Pok(?:%C3%A9|é)mon|\/Trade(?:$|#)|\/Player(?:$|#)/i.test(href)
+            )
+              return
+            const npcName = cleanText(
+              fragment
+                .find('a')
+                .filter((_, anchor) => anchor === npc)
+                .text(),
+            )
+            prefixes.push(`Trade ${species} to ${npcName}`, `Trade ${species} with ${npcName}`)
+          })
+          return prefixes.some((prefix) =>
+            ['on', 'in', 'at'].some((preposition) =>
+              text.startsWith(`${prefix} ${preposition} ${name}`),
+            ),
+          )
+        })
+    })
+  if (locationTrade) return 'obtainableIn'
+  // The transfer unlocks the box; the selected Meltan is subsequently caught in GO.
+  if (dexNum === 808 && /^Mystery Box\b/i.test(text) && /Mystery_Box/.test(links))
+    return 'obtainableIn'
   const externalTransfer =
-    /Pok[eé] Transfer|Pok[eé]mon (?:HOME|Bank)|Pal Park|Time Capsule|GO Park|transfe[rn]|migrate/i.test(
+    /Pok[eé] (?:Transfer|Transporter)|Pok[eé]mon (?:HOME|Bank)|Pal Park|Time Capsule|GO Park|transfe[rn]|migrate/i.test(
       text,
     )
   // A trailing event is an additional route, not a restriction on the preceding route.
@@ -186,15 +283,34 @@ function classifyMethod(fragment: Selection): AvailabilityStatus {
       if (/^(?:Event|Pok[eé] Portal News|Wild Area News)$/i.test(cleanText(anchor.text())))
         anchor.remove()
     })
-    if (cleanText(ordinary.text()) !== text) return classifyMethod(ordinary)
+    if (cleanText(ordinary.text()) !== text) return classifyMethod(ordinary, dexNum, resolveGame)
   }
   if (externalTransfer || /^Trade\b/i.test(text)) return 'transferOnlyIn'
+  if ((dexNum === 251 || dexNum === 385) && /Bonus Disc/i.test(text)) return 'transferOnlyIn'
+  if (dexNum === 385 && /Pok[eé]mon Channel/i.test(text)) return 'transferOnlyIn'
+  // Navel Rock rows name the required item without spelling out its event restriction.
+  // FRLG also documents an ordinary route in its Switch release in a tooltip.
+  if (/requires\s+MysticTicket/i.test(text) && /\/MysticTicket\b/.test(links)) {
+    const ordinaryRelease = fragment
+      .find('.explain[title]')
+      .toArray()
+      .some((node) => /available without an event/i.test(node.attribs.title ?? ''))
+    return ordinaryRelease ? 'obtainableIn' : 'eventOnlyIn'
+  }
   if (
     /\bevent\b|Pok[eé] Portal News|Wild Area News|Mystery Gift|distribution/i.test(text) ||
+    /requires\s+Mythical Pecha Berry/i.test(text) ||
     /#In_events\b/.test(links)
   )
     return 'eventOnlyIn'
-  if (/Bonus Disc|Dream World|Dream Radar|Pok[eé]walker|Ranch|Channel/i.test(text)) return 'unknown'
+  // Ordinary multiplayer catches count even when the host owns the other version.
+  if (/\bUnion Circle\b|\bTera Raid (?:Battles?|Battle Search)\b/i.test(text)) return 'obtainableIn'
+  // These recognizable game/service routes import the Pokémon into the destination.
+  // Do not infer an external game from arbitrary unmatched location or DLC links.
+  const externalGame = text.match(
+    /(?:Pok[eé]mon\s+)?(?:Colosseum Bonus Disc|Bonus Disc|Dream World|Dream Radar)|Pok[eé]walker|My Pok[eé]mon Ranch|Pok[eé]mon Channel/i,
+  )?.[0]
+  if (externalGame) return resolveGame(externalGame).length ? 'unknown' : 'transferOnlyIn'
   if (
     /\b(?:evolve|breed|hatch|gift|received|receive|reward|starter|first pok[eé]mon|revive|revival|catch|capture|defeat|befriend)\b/i.test(
       text,
@@ -211,6 +327,7 @@ function readMethods(
   cell: Selection,
   pokemon: AvailabilityPokemon,
   siblings: AvailabilityPokemon[],
+  resolveGame: (label: string) => string[],
 ): LocationMethod[] {
   const clone = cell.clone()
   clone.find('script, style, .reference, .mw-editsection').remove()
@@ -255,7 +372,7 @@ function readMethods(
       .some((node) => /Pok[eé]mon.*(?:and|Version)/i.test($(node).attr('title') ?? ''))
     if (versionQualifier)
       return [{ text, status: 'unknown', note: 'Version-qualified method needs verification' }]
-    return [{ text, status: classifyMethod(fragment) }]
+    return [{ text, status: classifyMethod(fragment, Number(pokemon.dexNum), resolveGame) }]
   })
 }
 
@@ -311,14 +428,43 @@ export function parseAvailability(
       const cells = row.children('td')
       if (!headers.length || !cells.length) return
       const labels = headers.toArray().map((node) => cleanText($(node).text()))
-      const ids = [...new Set(labels.flatMap(resolveGame))]
+      const ids = [
+        ...new Set(
+          headers.toArray().flatMap((node) => {
+            const header = $(node)
+            const label = cleanText(header.text())
+            if (normalizeName(label) !== 'expansionpass') return resolveGame(label)
+            // The generic label alone has no game identity. Resolve its article link;
+            // version-specific visible labels above remain authoritative over a paired link.
+            return header
+              .find('a')
+              .toArray()
+              .flatMap((anchor) => {
+                if (normalizeName($(anchor).text()) !== 'expansionpass') return []
+                const href = $(anchor).attr('href') ?? ''
+                if (!href.startsWith('/wiki/')) return []
+                try {
+                  return resolveGame(
+                    decodeURIComponent(href.slice(6).split('#')[0]).replaceAll('_', ' '),
+                  )
+                } catch {
+                  return []
+                }
+              })
+          }),
+        ),
+      ]
       if (!ids.length) {
         if (section === heading && headers.find('a').length)
-          labels.forEach((label) => unmapped.add(label))
+          labels
+            .filter((label) => !isIgnoredUpstreamGame(label))
+            .forEach((label) => unmapped.add(label))
         return
       }
       matchedRows++
-      const methods = cells.toArray().flatMap((cell) => readMethods($(cell), pokemon, siblings))
+      const methods = cells
+        .toArray()
+        .flatMap((cell) => readMethods($(cell), pokemon, siblings, resolveGame))
       const isExpansion = labels.some((label) =>
         /expansion|treasure|dimension|teal mask|indigo disk|isle of armor|crown tundra/i.test(
           label,
@@ -361,6 +507,36 @@ export function parseAvailability(
         ).values(),
       ]
       const parsed = sourceStatus(methods)
+      const confirmedLzaEvent =
+        game.id === 'lza' &&
+        ['diancie', 'diancie-mega', 'mewtwo', 'mewtwo-mega-x', 'mewtwo-mega-y'].includes(pokemon.id)
+      // Confirmed dataset policy: this Mystery Gift unlock is event-only. The base
+      // game's generic Trade placeholder must not override the DLC acquisition.
+      if (
+        confirmedLzaEvent ||
+        (((pokemon.id === 'zeraora' && game.id === 'lza') ||
+          (pokemon.id === 'pecharunt' && ['sv-s', 'sv-v'].includes(game.id))) &&
+          methods.some(
+            (method) =>
+              method.status === 'eventOnlyIn' &&
+              /Mystery Gift|Mythical Pecha Berry/i.test(method.text),
+          ))
+      )
+        return {
+          game,
+          status: 'eventOnlyIn',
+          basis: 'rule',
+          methods: confirmedLzaEvent
+            ? [
+                ...methods,
+                {
+                  text: 'Confirmed dataset rule: this Pokémon and its Mega forms require event acquisition in Legends: Z-A.',
+                  status: 'eventOnlyIn',
+                },
+              ]
+            : methods,
+          storable: pokemon.storableIn.includes(game.id),
+        }
       const current = datasetStatus(pokemon, game.id)
       // Event history is not proof of exclusivity when a transfer route is already known.
       const preserveTransfer = parsed === 'eventOnlyIn' && current === 'transferOnlyIn'

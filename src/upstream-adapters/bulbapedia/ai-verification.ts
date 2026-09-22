@@ -97,6 +97,11 @@ additionalSources contains the cached PokéAPI encounter cross-check and targete
 Independently compare those sources, including exact forms, game versions, conditions, and DLC.
 PokéAPI provides POSITIVE encounter evidence only. Empty/missing encounters, failed requests, and
 missing pages NEVER establish unavailability, transfer-only status, storage, or event exclusivity.
+Some individual PokéAPI methods carry knownUpstreamError, an exact documented upstream exception
+with its reason and evidence URLs. These rejected methods are retained for transparency, not valid
+acquisition evidence or unresolved conflicts. Do not use them to add games or demand conflict
+resolution. Other methods in the same encounter remain evidence. Independently verify the final
+candidate against the supplied HTML; an exception alone never establishes availability or absence.
 Each PokéAPI encounter has formScope and formReason. A form-ambiguous encounter is context only:
 it neither proves nor contradicts acquisition of the selected form. Base endpoints may include
 regional-form encounters without a form qualifier; generation-based ambiguity is conservative,
@@ -119,10 +124,30 @@ Check for omitted or misread methods, game/version mismatches, form contaminatio
 ordinary acquisition versus event/transfer confusion, and unsupported candidate changes.
 
 Dataset policy:
+- Ignore source-only game/service labels green-japan, blue-japan, and palpark (including
+  Green (Japan), Blue (Japan), and Pal Park). They are not destination games to add or flag.
+  Pal Park mentioned as an acquisition method in a recognized game still means transfer.
 - obtainableIn: ordinary in-game acquisition available without a temporary/online event,
   including evolution, breeding, permanent gifts, and NPC trades.
+  Union Circle catches and joining another player's regular raids count as obtainableIn,
+  including version-exclusive Pokémon caught through another version's host. Temporary
+  event-only raids still require event classification; multiplayer alone is not an event.
 - transferOnlyIn: import/player trade when no ordinary acquisition exists. NPC trades differ.
+  Confirmed form rule: West Sea Shellos and Gastrodon are transfer-only via HOME in Sword/Shield.
+  Their shared PokéAPI endpoints also contain East Sea encounters; these do not contradict that rule.
+  Confirmed version split: wild Red-Striped Basculin is in Ultra Sun; Blue-Striped is in Ultra Moon.
+  PokéAPI endpoint 550 incorrectly includes Ultra Moon fishing encounters for the other stripe.
+  Acquisition imported from a game outside currentGames is transfer-only. This does not apply
+  to an unmatched location or DLC label; establish that the source is an external game first.
+  Explicit dataset policy: Celebi and Jirachi Bonus Disc gifts count as transfer-only routes,
+  including PokéAPI colosseum-bonus-disc-jpn and colosseum-bonus-disc-us methods.
 - eventOnlyIn: exclusive event acquisition, only without an ordinary or known transfer route.
+  Explicit dataset exception: Zeraora in Legends: Z-A is eventOnlyIn via its Mystery Gift
+  activation; the base-game generic Trade placeholder does not override this DLC route.
+  Diancie, Mega Diancie, Mewtwo, Mega Mewtwo X, and Mega Mewtwo Y are also explicitly
+  eventOnlyIn for Legends: Z-A. Preserve this confirmed rule even for battle-only forms.
+  The same applies to Pecharunt in Scarlet/Violet: the Mythical Pecha Berry requires Mystery Gift,
+  so its DLC encounter is eventOnlyIn despite the base-game generic Trade placeholder.
   A historical event does not override a known transfer route. Transfer takes precedence.
 - storableIn: box compatibility, separate from acquisition; forms may revert on deposit.
   The parser deliberately PRESERVES its game membership, sorting it into dataset game order.

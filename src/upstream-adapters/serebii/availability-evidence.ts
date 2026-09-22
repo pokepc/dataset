@@ -19,6 +19,7 @@ const pages = [
   { path: 'pokedex-bw', maxDex: 649, games: ['bw-b', 'bw-w', 'b2w2-b2', 'b2w2-w2'] },
   { path: 'pokedex-xy', maxDex: 721, games: ['xy-x', 'xy-y', 'oras-or', 'oras-as'] },
   { path: 'pokedex-sm', maxDex: 807, games: ['sm-s', 'sm-m', 'usum-us', 'usum-um'] },
+  { path: 'pokedex-sm', maxDex: 809, games: ['lgpe-lgp', 'lgpe-lge'] },
   {
     path: 'pokedex-swsh',
     maxDex: 905,
@@ -50,6 +51,8 @@ function pageUrl(pokemon: AvailabilityPokemon, gameId: string): string | undefin
   const page = pages.find((entry) => entry.games.includes(gameId))
   const dexNum = Number(pokemon.dexNum)
   if (!page || !Number.isInteger(dexNum) || dexNum < 1 || dexNum > page.maxDex) return undefined
+  // The shared Gen VII directory covers Let's Go's Kanto species plus Meltan/Melmetal.
+  if (gameId.startsWith('lgpe-') && dexNum > 151 && dexNum < 808) return undefined
   const modern = page.path === 'pokedex-swsh' || page.path === 'pokedex-sv'
   const reference = pokemon.refs.serebii.trim().toLowerCase()
   if (modern && !/^[a-z0-9-]+$/.test(reference)) {

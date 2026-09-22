@@ -14,6 +14,15 @@ The argument accepts an existing Pokémon `id` or `nid`, including form suffixes
 padded (`25` becomes `0025`); a form must be requested explicitly (`26-alola` becomes `0026-alola`).
 The script resolves the species page using `refs.bulbapedia`.
 
+Routes importing Pokémon from games outside the dataset are `transferOnlyIn`; unmatched location and
+DLC labels do not establish an external-game route.
+
+Union Circle catches and joining another player's regular raids count as `obtainableIn`, including
+catches hosted from the other version. Temporary event-only raids remain event routes.
+
+Celebi and Jirachi Bonus Disc gifts are classified as `transferOnlyIn`, including their PokéAPI
+encounter methods. This is dataset policy, not an upstream-data error.
+
 Every lookup follows **Bulbapedia → cached PokéAPI cross-check → targeted Serebii evidence**. AI
 remains optional (`--with-ai`, `--ai-harder`, or interactive `a`). Use `--no-cross-check` for
 Bulbapedia alone, including fully offline runs against a saved HTML file. Both CLIs accept
@@ -108,6 +117,16 @@ If the file already matches the formatted result, it is left untouched. If avail
 during the lookup, the patch fails instead of overwriting that edit; rerun to use the latest data.
 
 ## Additional source checks
+
+Confirmed PokéAPI errors are listed in `src/upstream-adapters/bulbapedia/encounter-exceptions.ts`.
+Exceptions match an exact Pokémon endpoint, game/version, location, and method with no conditions.
+Currently this covers Voltorb and Electrode static encounters incorrectly assigned to Sun at New
+Mauville, and the eight documented unreleased species in FireRed/LeafGreen's Altering Cave (Mareep,
+Aipom, Pineco, Shuckle, Teddiursa, Houndour, Stantler, and Smeargle). Exact slots are matched; Zubat
+encounters are not excluded. Matching methods remain in AI context with the reason and supporting
+URLs, and appear as yellow **Known upstream error** diagnostics, but cannot create conflicts or
+change availability. Other methods and encounters remain eligible to block patching. Exceptions have
+offline regression coverage and do not require extra lookups.
 
 The PokéAPI pass uses `refs.pkApiId` and the game's `pokeApiGameVersionId`. It fetches
 [`pokemon/{id}/encounters`](https://pokeapi.co/docs/v2#pokemon-location-areas) once per distinct ID,

@@ -1,5 +1,13 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import pikachu from '../../../data/pokemon/pikachu.json'
+import voltorb from '../../../data/pokemon/voltorb.json'
+import electrode from '../../../data/pokemon/electrode.json'
+import celebi from '../../../data/pokemon/celebi.json'
+import jirachi from '../../../data/pokemon/jirachi.json'
+import shellos from '../../../data/pokemon/shellos.json'
+import gastrodon from '../../../data/pokemon/gastrodon.json'
+import lugia from '../../../data/pokemon/lugia.json'
+import hooh from '../../../data/pokemon/hooh.json'
 import pikachuFemale from '../../../data/pokemon/pikachu-f.json'
 import pikachuGmax from '../../../data/pokemon/pikachu-gmax.json'
 import raichuAlola from '../../../data/pokemon/raichu-alola.json'
@@ -122,6 +130,20 @@ beforeEach(() => {
 })
 
 describe('PokéAPI encounter normalization', () => {
+  it.each(['green-japan', 'blue-japan', 'palpark'])(
+    'ignores the upstream game %s without producing encounters or warnings',
+    (name) => {
+      expect(parsePokeApiEncounters(encounters(999, name), games)).toEqual({
+        encounters: [],
+        unmapped: [],
+      })
+    },
+  )
+  it('continues reporting other unmapped versions', () => {
+    expect(parsePokeApiEncounters(encounters(999, 'red-japan'), games).unmapped).toEqual([
+      'red-japan',
+    ])
+  })
   it('uses exact version IDs and preserves methods, locations, and conditions', () => {
     const grouped = { ...sword, id: 'swsh', type: 'set' as const }
     expect(parsePokeApiEncounters(encounters(), [...games, grouped])).toEqual({
@@ -213,6 +235,166 @@ describe('PokéAPI encounter normalization', () => {
 })
 
 describe('availability source cross-checks', () => {
+  it.each([voltorb, electrode])(
+    'retains $id erroneous Sun static encounters as documented context only',
+    async (selected) => {
+      const sun = game('sm-s', 7, 27)
+      const raw = encounters(27, 'sun')
+      raw[0].location_area.name = 'new-mauville-area'
+      const detail = raw[0].version_details[0].encounter_details[0]
+      detail.method.name = 'static'
+      detail.condition_values = []
+      vi.mocked(fetchPokeApiJson).mockResolvedValue(raw)
+      const input = report([row(sun, 'transferOnlyIn')], {
+        ...pokemon(selected),
+        transferOnlyIn: [sun.id],
+      })
+      const output = await createAvailabilityCrossChecker()(input, [...games, sun], [selected])
+      expect(output.crossChecks?.unresolvedConflictIds).toEqual([])
+      expect(output.crossChecks?.conflicts).toEqual([])
+      expect(output.crossChecks?.pokeApi.encounters[0].methods[0]).toMatchObject({
+        name: 'static',
+        knownUpstreamError: {
+          pokemonId: selected.refs.pkApiId,
+          evidenceUrls: expect.arrayContaining([
+            'https://bulbapedia.bulbagarden.net/wiki/New_Mauville',
+          ]),
+        },
+      })
+      expect(formatCrossChecks(output)).toContain('Known upstream error (sm-s)')
+      expect(formatCrossChecks(output)).not.toContain('Uncertain (sm-s)')
+      expect(availabilityJson(output)).toEqual(availabilityJson(input))
+      expect(fetchSerebiiEvidence).not.toHaveBeenCalled()
+      expect(raw[0].version_details[0].encounter_details[0]).not.toHaveProperty(
+        'knownUpstreamError',
+      )
+    },
+  )
+
+  it.each(['pokemon', 'version', 'location', 'method', 'condition', 'mixed methods'])(
+    'does not suppress a conflict when %s falls outside an exception',
+    async (difference) => {
+      const destination = difference === 'version' ? game('sm-m', 7, 28) : game('sm-s', 7, 27)
+      const raw = encounters(
+        destination.pokeApiGameVersionId!,
+        difference === 'version' ? 'moon' : 'sun',
+      )
+      raw[0].location_area.name = difference === 'location' ? 'other-area' : 'new-mauville-area'
+      const detail = raw[0].version_details[0].encounter_details[0]
+      detail.method.name = difference === 'method' ? 'walk' : 'static'
+      if (difference !== 'condition') detail.condition_values = []
+      if (difference === 'mixed methods')
+        raw[0].version_details[0].encounter_details.push({
+          ...detail,
+          method: { ...detail.method, name: 'walk' },
+        })
+      vi.mocked(fetchPokeApiJson).mockResolvedValue(raw)
+      const selected = difference === 'pokemon' ? pikachu : voltorb
+      const input = report([row(destination, 'transferOnlyIn')], pokemon(selected))
+      const output = await createAvailabilityCrossChecker()(
+        input,
+        [...games, destination],
+        [selected],
+      )
+      expect(output.crossChecks?.unresolvedConflictIds).toEqual([`pokeapi:${destination.id}`])
+      if (difference === 'mixed methods') {
+        expect(output.crossChecks?.conflicts[0].evidence).toContain('walk')
+        expect(output.crossChecks?.conflicts[0].evidence).not.toContain('static')
+        expect(output.crossChecks?.pokeApi.encounters[0].methods).toHaveLength(2)
+      }
+    },
+  )
+
+  it.each([
+    [celebi, 'colosseum-bonus-disc-jpn'],
+    [jirachi, 'colosseum-bonus-disc-us'],
+    [jirachi, 'pokemon-channel-pal'],
+  ] as const)('keeps %s Bonus Disc evidence as a transfer route', async (selected, method) => {
+    const data = encounters(7, 'ruby')
+    data[0].version_details[0].encounter_details[0].method.name = method
+    vi.mocked(fetchPokeApiJson).mockResolvedValue(data)
+    const input = report([row(ruby, 'transferOnlyIn')], pokemon(selected))
+    const output = await createAvailabilityCrossChecker()(input, games, [input.pokemon])
+    expect(output.crossChecks?.unresolvedConflictIds).toEqual([])
+    expect(output.crossChecks?.pokeApi.encounters[0].methods[0]).toMatchObject({
+      name: method,
+      availability: 'transferOnlyIn',
+    })
+    const unavailable = report([row(ruby, 'unavailable')], pokemon(selected))
+    const conflict = await createAvailabilityCrossChecker()(unavailable, games, [
+      unavailable.pokemon,
+    ])
+    expect(conflict.crossChecks?.unresolvedConflictIds).toContain('pokeapi:rs-r')
+  })
+
+  it.each([shellos, gastrodon])(
+    'does not attribute East Sea Sword/Shield encounters to %s',
+    async (selected) => {
+      for (const version of [sword, shield]) {
+        vi.mocked(fetchPokeApiJson).mockResolvedValue(
+          encounters(version.pokeApiGameVersionId!, version === sword ? 'sword' : 'shield'),
+        )
+        const input = report([row(version, 'transferOnlyIn')], pokemon(selected))
+        const output = await createAvailabilityCrossChecker()(input, games, [input.pokemon])
+        expect(output.crossChecks?.unresolvedConflictIds).toEqual([])
+        expect(output.crossChecks?.pokeApi.encounters[0]).toMatchObject({
+          formScope: 'form-ambiguous',
+        })
+        expect(availabilityJson(output).transferOnlyIn).toContain(version.id)
+      }
+    },
+  )
+
+  it.each([lugia, hooh])(
+    'retains MysticTicket event evidence without overriding a transfer route for %s',
+    async (selected) => {
+      const emerald = game('e', 3, 9)
+      const data = encounters(9, 'emerald')
+      data[0].location_area.name = 'navel-rock-area'
+      data[0].version_details[0].encounter_details[0].method.name = 'static'
+      vi.mocked(fetchPokeApiJson).mockResolvedValue(data)
+      const input = report([row(emerald, 'transferOnlyIn')], pokemon(selected))
+      const output = await createAvailabilityCrossChecker()(
+        input,
+        [...games, emerald],
+        [input.pokemon],
+      )
+      expect(output.crossChecks?.unresolvedConflictIds).toEqual([])
+      expect(output.crossChecks?.pokeApi.encounters[0].methods[0].availability).toBe('eventOnlyIn')
+      data[0].location_area.name = 'another-location'
+      const other = await createAvailabilityCrossChecker()(
+        input,
+        [...games, emerald],
+        [input.pokemon],
+      )
+      expect(other.crossChecks?.unresolvedConflictIds).toContain('pokeapi:e')
+    },
+  )
+
+  it('retains explicit event conditions in PokéAPI evidence', async () => {
+    const data = encounters()
+    data[0].version_details[0].encounter_details[0].condition_values[0].name =
+      'other-event-arceus-in-party'
+    vi.mocked(fetchPokeApiJson).mockResolvedValue(data)
+    const input = report([row(sword, 'eventOnlyIn')])
+    const output = await createAvailabilityCrossChecker()(input, games, [input.pokemon])
+    expect(output.crossChecks?.unresolvedConflictIds).toEqual([])
+    expect(output.crossChecks?.pokeApi.encounters[0].methods[0].availability).toBe('eventOnlyIn')
+    vi.mocked(fetchPokeApiJson).mockResolvedValue(encounters())
+    const ordinary = await createAvailabilityCrossChecker()(input, games, [input.pokemon])
+    expect(ordinary.crossChecks?.unresolvedConflictIds).toContain('pokeapi:swsh-sw')
+  })
+
+  it('classifies Pokémon Ranger as an external-game transfer', async () => {
+    const data = encounters(12, 'diamond')
+    data[0].version_details[0].encounter_details[0].method.name = 'pokemon-ranger'
+    vi.mocked(fetchPokeApiJson).mockResolvedValue(data)
+    const input = report([row(diamond, 'transferOnlyIn')])
+    const output = await createAvailabilityCrossChecker()(input, games, [input.pokemon])
+    expect(output.crossChecks?.unresolvedConflictIds).toEqual([])
+    expect(output.crossChecks?.pokeApi.encounters[0].methods[0].availability).toBe('transferOnlyIn')
+  })
+
   it('collects supporting encounters without changing a mechanical candidate or fetching Serebii', async () => {
     vi.mocked(fetchPokeApiJson).mockResolvedValue(encounters())
     const input = report()

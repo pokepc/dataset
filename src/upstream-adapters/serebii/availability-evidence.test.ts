@@ -81,6 +81,7 @@ describe('targeted Serebii coverage', () => {
       target.url,
     ])
     expect(result[0].gameIds).toEqual(['rb-r', 'rb-b'])
+    expect(result[6].gameIds).toEqual(['usum-us', 'lgpe-lgp'])
     expect(result[7].gameIds).toEqual(['swsh-sw', 'bdsp-bd', 'la'])
     expect(result[8].gameIds).toEqual(['sv-s', 'sv-v'])
     expect(serebiiTargets(arcanine, [game('sv-s'), game('sv-v')], ['sv-v'])).toEqual([
@@ -92,6 +93,24 @@ describe('targeted Serebii coverage', () => {
     const later = { ...arcanine, dexNum: 906 }
     expect(serebiiTargets(later, [game('rb-r'), game('swsh-sw')], ['rb-r', 'swsh-sw'])).toEqual([])
     expect(serebiiTargets(arcanine, [game('sv-s', 'set')], ['sv-s'])).toEqual([])
+  })
+  it.each([25, 151, 808, 809])('maps Let’s Go species #%s to its shared Gen VII page', (dexNum) => {
+    const ids = ['lgpe-lgp', 'lgpe-lge']
+    expect(
+      serebiiTargets(
+        { ...arcanine, dexNum },
+        ids.map((id) => game(id)),
+        ids,
+      ),
+    ).toEqual([
+      {
+        url: `https://www.serebii.net/pokedex-sm/${String(dexNum).padStart(3, '0')}.shtml`,
+        gameIds: ids,
+      },
+    ])
+  })
+  it.each([152, 807, 810])('does not claim Let’s Go coverage for species #%s', (dexNum) => {
+    expect(serebiiTargets({ ...arcanine, dexNum }, [game('lgpe-lgp')], ['lgpe-lgp'])).toEqual([])
   })
 
   it('shares pages across forms and restores known Serebii slug punctuation', () => {
