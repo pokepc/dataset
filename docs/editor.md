@@ -98,11 +98,13 @@ and
 beside the current availability draft. These are the only fetched sources; explicit Mega and
 Gigantamax rules supplement missing transformation rows. Rows follow the editor's concrete game list
 and order; use **Filter games** to narrow the table. Table labels, their legend meanings and source
-links remain visible. Expand **Source notes** for coverage details and parser warnings.
+links remain visible in the single **Bulbapedia / GO** evidence column. Expand **Source notes** for
+coverage details and parser warnings.
 
 The **Availability** column after **Game** displays the relevant table's classification directly: ✅
 obtainable, 🔀 transfer only, 🎁 event only, ❌ explicitly unavailable, or — not established. GO
-uses the GO table; other games use the main availability table and the
+uses a loaded entry from the GO table when available, falling back to main-table GO evidence; other
+games use the main availability table and the
 [transformation rules](pokemon-availability-cli.md#mega-and-gigantamax-rules). Select a status to
 expand its table label or rule and mapping. No AI verdict or source consensus is involved, and
 loading tables never changes the draft. Cosmetic female forms inherit their parent's rows except in

@@ -41,6 +41,7 @@
     "generate:pokemon-prose": "bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts",
     "pokemon:availability": "node src/upstream-adapters/bulbapedia/cli.ts",
     "pokemon:availability:all": "node src/upstream-adapters/bulbapedia/review-cli.ts",
+    "locations:import": "bun src/upstream-adapters/locations/cli.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",

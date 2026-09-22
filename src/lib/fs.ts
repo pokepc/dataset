@@ -90,6 +90,10 @@ export const regionsFs = yolodb<Pkds.Region>(absDatasetFile('regions.json'), 'id
   superjsonEnabled: false,
 })
 
+export const locationsFs = yolodb<Pkds.Location>(absDatasetFile('locations.json'), 'id', [], {
+  superjsonEnabled: false,
+})
+
 export const colorsFs = yolodb<Pkds.Color>(absDatasetFile('colors.json'), 'id', [], {
   superjsonEnabled: false,
 })
@@ -269,6 +273,10 @@ export function loadAllPersonalities(): Pkds.Personality[] {
 
 export function loadAllRegions(): Pkds.Region[] {
   return regionsFs.all()
+}
+
+export function loadAllLocations(): Pkds.Location[] {
+  return locationsFs.all()
 }
 
 export function loadAllColors(): Pkds.Color[] {

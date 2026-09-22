@@ -33,6 +33,7 @@ import type {
   i18nTextSchema,
   itemSchema,
   languageSchema,
+  locationSchema,
   markSchema,
   modernBoxPresetBoxSchema,
   modernBoxPresetIndexSchema,
@@ -108,6 +109,7 @@ declare global {
     export type RibbonCategory = (typeof ribbonCategory)[number]
     export type OriginMark = z.infer<typeof originMarkSchema>
     export type Region = z.infer<typeof regionSchema>
+    export type Location = z.infer<typeof locationSchema>
     export type Type = z.infer<typeof typeSchema>
     export type TypeId = (typeof typeIds)[number]
     export type Nature = z.infer<typeof natureSchema>

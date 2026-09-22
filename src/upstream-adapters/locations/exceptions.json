@@ -1,0 +1,894 @@
+[
+  {
+    "id": "distant-land",
+    "name": "Distant Land",
+    "decision": "general",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Distant_land",
+    "pageTitle": "Distant land",
+    "reason": "In-game met-location placeholder, explicitly retained as a general location with null games and region. PokéAPI location 260."
+  },
+  {
+    "id": "johto-mt-silver-cave",
+    "name": "Mt. Silver Cave",
+    "decision": "include",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Mt._Silver_Cave",
+    "pageTitle": "Mt. Silver Cave",
+    "reason": "Standalone location article covers the mountain cave system separately from Mt. Silver, with explicit Gold/Silver/Crystal and HeartGold/SoulSilver sections."
+  },
+  {
+    "id": "johto-pokewalker",
+    "name": "Pokéwalker",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9walker",
+    "pageTitle": "Pokéwalker",
+    "reason": "Standalone article describes a physical pedometer accessory for HeartGold/SoulSilver, not a place inside those games."
+  },
+  {
+    "id": "hoenn-",
+    "name": "Inside of Truck",
+    "decision": "include",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Inside_of_Truck",
+    "pageTitle": "Inside of Truck",
+    "reason": "Own location article explicitly identifies the playable opening truck interior in Ruby, Sapphire, Emerald, Omega Ruby and Alpha Sapphire. The source placeholder ??? is its remake map name; use the article's English title and a meaningful canonical ID.",
+    "canonicalId": "hoenn-inside-of-truck"
+  },
+  {
+    "id": "hoenn-secret-base",
+    "name": "Secret Base",
+    "decision": "include",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Secret_Base",
+    "pageTitle": "Secret Base",
+    "reason": "Own article identifies Secret Bases as physical player-created areas. Generation III describes Ruby/Sapphire/Emerald bases; Generation VI explicitly confirms their return as Super-Secret Bases in Omega Ruby/Alpha Sapphire. Limit this Hoenn record to those five games; the article's Sinnoh bases are outside this region."
+  },
+  {
+    "id": "hoenn-underwater",
+    "name": "Underwater",
+    "decision": "include",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Underwater",
+    "pageTitle": "Underwater",
+    "reason": "Own location article with Hoenn infobox. Describes traversable underwater areas in Ruby, Sapphire, Emerald, Omega Ruby and Alpha Sapphire; Generation III uses the shared name Underwater, while the remakes use the names of the areas above them."
+  },
+  {
+    "id": "sinnoh-acuity-cavern",
+    "name": "Acuity Cavern",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Lake_Acuity",
+    "pageTitle": "Lake Acuity",
+    "reason": "Acuity Cavern resolves to the Lake Acuity article; the cavern is described within that parent lake and has no dedicated location article. Bulbapedia revision 4598639."
+  },
+  {
+    "id": "sinnoh-battle-arcade",
+    "name": "Battle Arcade",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Battle_Arcade",
+    "pageTitle": "Battle Arcade",
+    "reason": "This is a dedicated facility article linked to Battle Frontier (Generation IV), whose article explicitly locates the Sinnoh frontier in Platinum. HeartGold/SoulSilver copies are in Johto. Bulbapedia revision 4595583."
+  },
+  {
+    "id": "sinnoh-battle-castle",
+    "name": "Battle Castle",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Battle_Castle",
+    "pageTitle": "Battle Castle",
+    "reason": "This is a dedicated facility article linked to Battle Frontier (Generation IV), whose article explicitly locates the Sinnoh frontier in Platinum. HeartGold/SoulSilver copies are in Johto. Bulbapedia revision 4595586."
+  },
+  {
+    "id": "sinnoh-battle-factory",
+    "name": "Battle Factory",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Battle_Factory_(Generation_IV)",
+    "pageTitle": "Battle Factory (Generation IV)",
+    "reason": "The Sinnoh title resolves to the dedicated Battle Factory (Generation IV) article; its Pt/HGSS facility layouts and Battle Frontier (Generation IV) context identify Platinum as the Sinnoh version. Johto counterparts are separate regional records. Bulbapedia revision 4605617."
+  },
+  {
+    "id": "sinnoh-battle-hall",
+    "name": "Battle Hall",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Battle_Hall",
+    "pageTitle": "Battle Hall",
+    "reason": "The named facility has its own article with Platinum versus HeartGold/SoulSilver NPC tables; its Battle Frontier context places the Sinnoh copy in Platinum. Bulbapedia revision 4595584."
+  },
+  {
+    "id": "sinnoh-battle-tower",
+    "name": "Battle Tower",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Battle_Tower_(Sinnoh)",
+    "pageTitle": "Battle Tower (Sinnoh)",
+    "reason": "The dedicated facility article places this tower in Sinnoh Battle Park in Diamond/Pearl and their remakes and in Sinnoh Battle Frontier in Platinum. Johto copies are separate regional locations. Bulbapedia revision 4620355."
+  },
+  {
+    "id": "sinnoh-battleground",
+    "name": "Battleground",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Battleground",
+    "pageTitle": "Battleground",
+    "reason": "The dedicated Survival Area venue article explicitly says it appears only in Pokémon Platinum, replacing an ordinary NPC house from Diamond/Pearl. Bulbapedia revision 4613784."
+  },
+  {
+    "id": "sinnoh-cafe",
+    "name": "Café Cabin",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Caf%C3%A9_Cabin",
+    "pageTitle": "Café Cabin",
+    "reason": "The article explicitly identifies Café Cabin, also labelled Cafe/Café in D/P/Pt, as the Route 210 café and documents D/P/Pt plus the BDSP remakes. Bulbapedia revision 4604663."
+  },
+  {
+    "id": "sinnoh-canalave-library",
+    "name": "Canalave Library",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Canalave_Library",
+    "pageTitle": "Canalave Library",
+    "reason": "The article opening explicitly identifies this library as a location in Diamond, Pearl, Platinum, Brilliant Diamond and Shining Pearl. Bulbapedia revision 4596951."
+  },
+  {
+    "id": "sinnoh-contest-hall",
+    "name": "Contest Hall",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Contest_Hall",
+    "pageTitle": "Contest Hall",
+    "reason": "The dedicated physical-facility article has distinct Sinnoh sections for Diamond/Pearl/Platinum and Brilliant Diamond/Shining Pearl, including Hearthome building layouts. Bulbapedia revision 4584979."
+  },
+  {
+    "id": "sinnoh-cycle-shop",
+    "name": "Rad Rickshaw's Cycle Shop",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Rad_Rickshaw%27s_Cycle_Shop",
+    "pageTitle": "Rad Rickshaw's Cycle Shop",
+    "reason": "The named Eterna City bicycle shop has its own article and Bike reward row marked D/P/Pt/BD/SP. The bare Cycle Shop URL is missing, but the canonical named facility article exists. Bulbapedia revision 4619630."
+  },
+  {
+    "id": "sinnoh-flower-shop",
+    "name": "Pick a Peck of Colors Flower Shop",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pick_a_Peck_of_Colors_Flower_Shop",
+    "pageTitle": "Pick a Peck of Colors Flower Shop",
+    "reason": "The Sinnoh flower shop resolves through the flower-shop disambiguation to this dedicated Floaroma building article; its layouts and rewards explicitly cover D/P/Pt/BD/SP. Bulbapedia revision 4367901."
+  },
+  {
+    "id": "sinnoh-footstep-house",
+    "name": "Footstep House",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Dr._Footstep",
+    "pageTitle": "Dr. Footstep",
+    "reason": "Footstep House resolves to Dr. Footstep, an article about the character; the house does not have its own location article. Bulbapedia revision 4631465."
+  },
+  {
+    "id": "sinnoh-foreign-building",
+    "name": "Foreign Building",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Hearthome_City#Foreign_Building",
+    "pageTitle": "Hearthome City",
+    "reason": "The title redirects to Hearthome City#Foreign Building; it is a subsection of the city article rather than an article about the building itself. Bulbapedia revision 4536010."
+  },
+  {
+    "id": "sinnoh-game-corner",
+    "name": "Veilstone Game Corner",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Veilstone_Game_Corner",
+    "pageTitle": "Veilstone Game Corner",
+    "reason": "The dedicated Veilstone facility article documents Diamond, Pearl and Platinum and explicitly states that BDSP replaces it with the Metronome Style Shop. Bulbapedia revision 4379549."
+  },
+  {
+    "id": "sinnoh-global-terminal",
+    "name": "Global Terminal",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Global_Terminal",
+    "pageTitle": "Global Terminal",
+    "reason": "The dedicated article covers the Jubilife City Global Trade Station in Diamond/Pearl and Global Terminal in Platinum; it explicitly states BDSP replaces it with the Global Wonder Station. Bulbapedia revision 4566200."
+  },
+  {
+    "id": "sinnoh-iceberg-ruins",
+    "name": "Iceberg Ruins",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Iceberg_Ruins_(Sinnoh)",
+    "pageTitle": "Iceberg Ruins (Sinnoh)",
+    "reason": "The disambiguation resolves to a dedicated Sinnoh article whose opening identifies this Mount Coronet room in Pokémon Platinum. Bulbapedia revision 4382564."
+  },
+  {
+    "id": "sinnoh-iron-ruins",
+    "name": "Iron Ruins",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Iron_Ruins_(Sinnoh)",
+    "pageTitle": "Iron Ruins (Sinnoh)",
+    "reason": "The disambiguation resolves to a dedicated Sinnoh article whose opening identifies this Iron Island room in Pokémon Platinum. Bulbapedia revision 4493698."
+  },
+  {
+    "id": "sinnoh-jubilife-tv",
+    "name": "Jubilife TV",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Jubilife_TV",
+    "pageTitle": "Jubilife TV",
+    "reason": "The station has its own building article, with Diamond/Pearl and Brilliant Diamond/Shining Pearl trainers and a separate Platinum account of its interior and producer. Bulbapedia revision 4538438."
+  },
+  {
+    "id": "sinnoh-mining-museum",
+    "name": "Oreburgh Mining Museum",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Oreburgh_Mining_Museum",
+    "pageTitle": "Oreburgh Mining Museum",
+    "reason": "The full canonical building name is Oreburgh Mining Museum; its dedicated article includes exterior layouts labelled Diamond, Pearl, Platinum, Brilliant Diamond and Shining Pearl. Bulbapedia revision 4275971."
+  },
+  {
+    "id": "sinnoh-poffin-house",
+    "name": "Poffin House",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Poffin_House",
+    "pageTitle": "Poffin House",
+    "reason": "The Hearthome cooking facility has its own article; the games section and interior layout table explicitly include D/P/Pt/BD/SP. Bulbapedia revision 4226330."
+  },
+  {
+    "id": "sinnoh-pokemon-day-care",
+    "name": "Pokémon Day Care",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Day_Care",
+    "pageTitle": "Pokémon Day Care",
+    "reason": "The exact named physical facility has its own article; its Locations table explicitly identifies Solaceon Town, Sinnoh, for D/P/Pt. BDSP uses the separately named Pokémon Nursery, so it is not included here. Bulbapedia revision 4387268."
+  },
+  {
+    "id": "sinnoh-poketch-co",
+    "name": "Pokétch Company",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9tch_Company",
+    "pageTitle": "Pokétch Company",
+    "reason": "The dedicated article describes the headquarters in Jubilife City; its application rewards table explicitly lists D/P/Pt/BD/SP. Pokétch Co. is the same company and building. Bulbapedia revision 4615093."
+  },
+  {
+    "id": "sinnoh-restaurant",
+    "name": "Seven Stars Restaurant",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Seven_Stars_Restaurant",
+    "pageTitle": "Seven Stars Restaurant",
+    "reason": "The dedicated Valor Lakefront restaurant article has trainer sections for Diamond/Pearl, Platinum and Brilliant Diamond/Shining Pearl. Bulbapedia revision 4471810."
+  },
+  {
+    "id": "sinnoh-rock-peak-ruins",
+    "name": "Rock Peak Ruins",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Rock_Peak_Ruins_(Sinnoh)",
+    "pageTitle": "Rock Peak Ruins (Sinnoh)",
+    "reason": "The disambiguation resolves to a dedicated Sinnoh article whose opening identifies this Route 228 cave in Pokémon Platinum. Bulbapedia revision 4382563."
+  },
+  {
+    "id": "sinnoh-rotoms-room",
+    "name": "Rotom's Room",
+    "decision": "include",
+    "games": ["pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Rotom%27s_Room",
+    "pageTitle": "Rotom's Room",
+    "reason": "The dedicated room article explicitly locates the Sinnoh room inside the Team Galactic Eterna Building in Platinum, Brilliant Diamond and Shining Pearl; the HGSS room is in Kanto. Bulbapedia revision 4630230."
+  },
+  {
+    "id": "sinnoh-spring-path",
+    "name": "Spring Path",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Spring_Path",
+    "pageTitle": "Spring Path",
+    "reason": "The dedicated route article explicitly documents the path in Diamond, Pearl, Platinum, Brilliant Diamond and Shining Pearl; Hisui is a separate regional record. Bulbapedia revision 4591833."
+  },
+  {
+    "id": "sinnoh-sunyshore-market",
+    "name": "Sunyshore Market",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Sunyshore_Market",
+    "pageTitle": "Sunyshore Market",
+    "reason": "The dedicated market-building article explicitly compares the shop in Diamond/Pearl/Platinum and Brilliant Diamond/Shining Pearl. Bulbapedia revision 4521467."
+  },
+  {
+    "id": "sinnoh-valor-cavern",
+    "name": "Valor Cavern",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Lake_Valor",
+    "pageTitle": "Lake Valor",
+    "reason": "Valor Cavern resolves to the Lake Valor article; the cavern is described within that parent lake and has no dedicated location article. Bulbapedia revision 4556743."
+  },
+  {
+    "id": "sinnoh-veilstone-store",
+    "name": "Veilstone Department Store",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Veilstone_Department_Store",
+    "pageTitle": "Veilstone Department Store",
+    "reason": "The canonical named department store has its own article with exterior layouts for all five Sinnoh games; only the basement is restricted to Platinum. Bulbapedia revision 4626431."
+  },
+  {
+    "id": "sinnoh-verity-cavern",
+    "name": "Verity Cavern",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Lake_Verity",
+    "pageTitle": "Lake Verity",
+    "reason": "Verity Cavern resolves to the Lake Verity article; the cavern is described within that parent lake and has no dedicated location article. Bulbapedia revision 4556699."
+  },
+  {
+    "id": "sinnoh-villa",
+    "name": "Villa",
+    "decision": "include",
+    "games": ["pt"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Villa",
+    "pageTitle": "Villa",
+    "reason": "The dedicated Resort Area home article explicitly says the player can own this villa exclusively in Pokémon Platinum. Bulbapedia revision 4420690."
+  },
+  {
+    "id": "sinnoh-vista-lighthouse",
+    "name": "Vista Lighthouse",
+    "decision": "include",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Vista_Lighthouse",
+    "pageTitle": "Vista Lighthouse",
+    "reason": "The dedicated lighthouse article gives D/P/Pt layouts and explicitly discusses its BDSP appearance. BDSP treats it as part of Sunyshore City internally, but the physical named lighthouse still exists. Bulbapedia revision 4553710."
+  },
+  {
+    "id": "unova-accumula-gate",
+    "name": "Accumula Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Accumula Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-aspertia-gate",
+    "name": "Aspertia Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Aspertia Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-battle-subway",
+    "name": "Battle Subway",
+    "decision": "include",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Battle_Subway",
+    "pageTitle": "Battle Subway",
+    "reason": "Standalone article explicitly identifies a battle facility in Black, White, Black 2 and White 2; boarding its trains leaves the separate Gear Station location."
+  },
+  {
+    "id": "unova-black-gate",
+    "name": "Black Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Black Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-black-tower",
+    "name": "Black Tower",
+    "decision": "include",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Black_Tower",
+    "pageTitle": "Black Tower",
+    "reason": "Standalone Black City facility article: available initially in Black 2 and accessible in White 2 after receiving the Tower Key."
+  },
+  {
+    "id": "unova-bridge-gate",
+    "name": "Bridge Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Bridge Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-castelia-gate",
+    "name": "Castelia Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Castelia Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-entree-forest",
+    "name": "Entree Forest",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Entralink#Entree_Forest",
+    "pageTitle": "Entralink",
+    "reason": "Redirects to the Entree Forest section of parent Entralink; no standalone location page."
+  },
+  {
+    "id": "unova-hidden-grotto",
+    "name": "Hidden Grotto",
+    "decision": "include",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Hidden_Grotto",
+    "pageTitle": "Hidden Grotto",
+    "reason": "Standalone location article describes twenty enterable Hidden Grottoes in Black 2/White 2 and confirms their shared Hidden Grotto met-location label."
+  },
+  {
+    "id": "unova-medal-secretariat",
+    "name": "Medal Secretariat",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Castelia_City#Medal_Office",
+    "pageTitle": "Castelia City",
+    "reason": "Medal Secretariat has no article (HTTP 404); the canonical English name Medal Office redirects to Castelia City#Medal_Office, rather than a standalone location page."
+  },
+  {
+    "id": "unova-musical-theater",
+    "name": "Musical Theater",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Musical#Musical_Theater",
+    "pageTitle": "Pokémon Musical",
+    "reason": "Redirects to the Musical Theater section of Pokémon Musical, an activity article; the theater has no standalone location page."
+  },
+  {
+    "id": "unova-nacrene-gate",
+    "name": "Nacrene Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Nacrene Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-nimbasa-gate",
+    "name": "Nimbasa Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Nimbasa Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-opelucid-gate",
+    "name": "Opelucid Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Opelucid Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-pledge-grove",
+    "name": "Pledge Grove",
+    "decision": "include",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pledge_Grove",
+    "pageTitle": "Pledge Grove",
+    "reason": "Standalone location article identifies the grove north of Floccesy Town and categorizes it as a Black 2/White 2 location."
+  },
+  {
+    "id": "unova-poke-transfer-lab",
+    "name": "Poké Transfer Lab",
+    "decision": "include",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Transfer_Lab",
+    "pageTitle": "Poké Transfer Lab",
+    "reason": "Standalone location article identifies the Route 15 transfer factory and lists both Black/White and Black 2/White 2 location categories."
+  },
+  {
+    "id": "unova-route-gate",
+    "name": "Route Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Route Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-royal-unova",
+    "name": "Royal Unova",
+    "decision": "include",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Royal_Unova",
+    "pageTitle": "Royal Unova",
+    "reason": "Standalone location article describes the rideable Castelia cruise ship and explicitly distinguishes boarding requirements in Black/White and Black 2/White 2."
+  },
+  {
+    "id": "unova-rumination-field",
+    "name": "Rumination Field",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pinwheel_Forest",
+    "pageTitle": "Pinwheel Forest",
+    "reason": "Redirects to parent Pinwheel Forest article, which describes Rumination Field as a secluded area within the forest; no standalone page."
+  },
+  {
+    "id": "unova-shopping-mall",
+    "name": "Shopping Mall Nine",
+    "decision": "include",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Shopping_Mall_Nine",
+    "pageTitle": "Shopping Mall Nine",
+    "reason": "Shopping Mall redirects to Shopping Mall Nine, the same named Route 9 shopping center; its own location article covers Black/White and Black 2/White 2."
+  },
+  {
+    "id": "unova-undella-gate",
+    "name": "Undella Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Undella Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-virbank-gate",
+    "name": "Virbank Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "Virbank Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-white-gate",
+    "name": "White Gate",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate",
+    "pageTitle": "Gate",
+    "reason": "White Gate redirects to the generic Gate article; no standalone page for this named gate."
+  },
+  {
+    "id": "unova-white-treehollow",
+    "name": "White Treehollow",
+    "decision": "include",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/White_Treehollow",
+    "pageTitle": "White Treehollow",
+    "reason": "Standalone White Forest facility article: available initially in White 2 and accessible in Black 2 after receiving the Treehollow Key."
+  },
+  {
+    "id": "kalos-ambrette-aquarium",
+    "name": "Ambrette Aquarium",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Ambrette_Town#Ambrette_Aquarium",
+    "pageTitle": "Ambrette Town",
+    "reason": "Ambrette Aquarium redirects to the aquarium section of Ambrette Town, so it has no dedicated article."
+  },
+  {
+    "id": "kalos-ambrette-gate",
+    "name": "Ambrette Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Ambrette Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-anistar-gate",
+    "name": "Anistar Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Anistar Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-blazing-chamber",
+    "name": "Blazing Chamber",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_League_(Kalos)#Blazing_Chamber",
+    "pageTitle": "Pokémon League (Kalos)",
+    "reason": "Blazing Chamber redirects to its named section within Pokémon League (Kalos), rather than having a dedicated location article."
+  },
+  {
+    "id": "kalos-coumarine-gate",
+    "name": "Coumarine Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Coumarine Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-couriway-gate",
+    "name": "Couriway Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Couriway Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-dendemille-gate",
+    "name": "Dendemille Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Dendemille Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-dragonmark-chamber",
+    "name": "Dragonmark Chamber",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_League_(Kalos)#Dragonmark_Chamber",
+    "pageTitle": "Pokémon League (Kalos)",
+    "reason": "Dragonmark Chamber redirects to its named section within Pokémon League (Kalos), rather than having a dedicated location article."
+  },
+  {
+    "id": "kalos-flood-chamber",
+    "name": "Flood Chamber",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_League_(Kalos)#Flood_Chamber",
+    "pageTitle": "Pokémon League (Kalos)",
+    "reason": "Flood Chamber redirects to its named section within Pokémon League (Kalos), rather than having a dedicated location article."
+  },
+  {
+    "id": "kalos-ironworks-chamber",
+    "name": "Ironworks Chamber",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_League_(Kalos)#Ironworks_Chamber",
+    "pageTitle": "Pokémon League (Kalos)",
+    "reason": "Ironworks Chamber redirects to its named section within Pokémon League (Kalos), rather than having a dedicated location article."
+  },
+  {
+    "id": "kalos-kiloude-station",
+    "name": "Kiloude Station",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Kiloude_City#Kiloude_Station",
+    "pageTitle": "Kiloude City",
+    "reason": "Exact-title article returns HTTP 404. The Generation VI location index links Kiloude Station to Kiloude City#Kiloude_Station, and the city article documents the TMV station and its X/Y item reward. No dedicated location article."
+  },
+  {
+    "id": "kalos-laverre-gate",
+    "name": "Laverre Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Laverre Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-lumiose-gate",
+    "name": "Lumiose Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Lumiose Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-lumiose-station",
+    "name": "Lumiose Station",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/North_Boulevard#Lumiose_Station",
+    "pageTitle": "North Boulevard",
+    "reason": "Lumiose Station redirects to the Lumiose Station section of North Boulevard, so it has no dedicated article."
+  },
+  {
+    "id": "kalos-pokemon-league-gate",
+    "name": "Pokémon League Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Pokémon League Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-prism-tower",
+    "name": "Prism Tower",
+    "decision": "include",
+    "games": ["xy-x", "xy-y", "lza"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Prism_Tower",
+    "pageTitle": "Prism Tower",
+    "reason": "Own location article explicitly describes the accessible Lumiose City Gym in X/Y and the tower's role and physical remains in Legends: Z-A. Mega Dimension is DLC for lza, not an additional individual game."
+  },
+  {
+    "id": "kalos-radiant-chamber",
+    "name": "Radiant Chamber",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_League_(Kalos)#Radiant_Chamber",
+    "pageTitle": "Pokémon League (Kalos)",
+    "reason": "Radiant Chamber redirects to its named section within Pokémon League (Kalos), rather than having a dedicated location article."
+  },
+  {
+    "id": "kalos-shabboneau-castle",
+    "name": "Shabboneau Castle",
+    "decision": "include",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Shabboneau_Castle",
+    "pageTitle": "Shabboneau Castle",
+    "reason": "Own location article describes the player's castle visit and lists Escape Rope and Mawilite items for both X and Y."
+  },
+  {
+    "id": "kalos-shalour-gate",
+    "name": "Shalour Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Shalour Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "kalos-snowbelle-gate",
+    "name": "Snowbelle Gate",
+    "decision": "exclude",
+    "games": ["xy-x", "xy-y"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Gate#Kalos",
+    "pageTitle": "Gate",
+    "reason": "The exact Snowbelle Gate article returns HTTP 404. The Generation VI location index links this named gate to the general Gate article, whose Kalos table documents it. It is an in-game location but has no dedicated article."
+  },
+  {
+    "id": "alola-akala-meadow",
+    "name": "Akala Meadow",
+    "decision": "exclude",
+    "games": [],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Akala_Island#Trivia",
+    "pageTitle": "Akala Island",
+    "reason": "Akala Island's Trivia explicitly says Akala Meadow is not in the game, although its location header and concept art exist. The exact-title page also returns HTTP 404. Exclude unused game data rather than infer a playable location."
+  },
+  {
+    "id": "alola-brooklet-hill-totems-den",
+    "name": "Brooklet Hill (Totem’s Den)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Brooklet_Hill#Totem's_Den",
+    "pageTitle": "Brooklet Hill",
+    "reason": "The Sun/Moon/Ultra Sun/Ultra Moon location index links this Totem's Den directly to a section of Brooklet Hill. That parent article documents the den and trial in the games; no dedicated article exists for the named den."
+  },
+  {
+    "id": "alola-hauoli-city-beachfront",
+    "name": "Hau’oli City (Beachfront)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Hau%27oli_City#Beachfront",
+    "pageTitle": "Hau'oli City",
+    "reason": "Both Beachfront and Hau'oli City Beachfront exact-title pages return HTTP 404. The Sun/Moon/Ultra Sun/Ultra Moon location index links the area to Hau'oli City#Beachfront, and that city article documents it as a subarea. No dedicated article."
+  },
+  {
+    "id": "alola-hauoli-city-marina",
+    "name": "Hau’oli City (Marina)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Hau%27oli_City#Marina",
+    "pageTitle": "Hau'oli City",
+    "reason": "Hau'oli City Marina redirects to the Marina section of Hau'oli City. The location index also links it there; no dedicated article."
+  },
+  {
+    "id": "alola-hauoli-city-shopping-district",
+    "name": "Hau’oli City (Shopping District)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Hau%27oli_City#Shopping_District",
+    "pageTitle": "Hau'oli City",
+    "reason": "Hau'oli City Shopping District redirects to the Shopping District section of Hau'oli City. The location index also links it there; no dedicated article."
+  },
+  {
+    "id": "alola-mahalo-trail-plank-bridge",
+    "name": "Mahalo Trail (Plank Bridge)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Mahalo_Trail#Plank_Bridge",
+    "pageTitle": "Mahalo Trail",
+    "reason": "Plank Bridge redirects to Mahalo Trail. The Sun/Moon/Ultra Sun/Ultra Moon location index links it to Mahalo Trail#Plank_Bridge; it has no dedicated article."
+  },
+  {
+    "id": "alola-malie-city-outer-cape",
+    "name": "Malie City (Outer Cape)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Malie_City#Outer_Cape",
+    "pageTitle": "Malie City",
+    "reason": "Outer Cape redirects to Malie City's Outer Cape section. The location index links the named subarea there as well; no dedicated article."
+  },
+  {
+    "id": "alola-route-1-hauoli-outskirts",
+    "name": "Route 1 (Hau’oli Outskirts)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Alola_Route_1",
+    "pageTitle": "Alola Route 1",
+    "reason": "Hau'oli Outskirts redirects to Alola Route 1. The route article distinguishes this subarea in its map description, but it does not have a dedicated article; it is not an alternate name for the entire route."
+  },
+  {
+    "id": "alola-ten-carat-hill-farthest-hollow",
+    "name": "Ten Carat Hill (Farthest Hollow)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Ten_Carat_Hill#Farthest_Hollow",
+    "pageTitle": "Ten Carat Hill",
+    "reason": "Farthest Hollow exact-title page returns HTTP 404. The game location index links it to Ten Carat Hill#Farthest_Hollow, whose geography and encounter sections describe the subarea in all four Alola games; no dedicated article."
+  },
+  {
+    "id": "alola-verdant-cavern-totems-den",
+    "name": "Verdant Cavern (Totem’s Den)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Verdant_Cavern#Totem's_Den",
+    "pageTitle": "Verdant Cavern",
+    "reason": "The Sun/Moon/Ultra Sun/Ultra Moon location index links this Totem's Den directly to a section of Verdant Cavern. That parent article documents the den and trial in the games; no dedicated article exists for the named den."
+  },
+  {
+    "id": "alola-wela-volcano-park-totems-den",
+    "name": "Wela Volcano Park (Totem’s Den)",
+    "decision": "exclude",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Wela_Volcano_Park#Totem's_Den",
+    "pageTitle": "Wela Volcano Park",
+    "reason": "The Sun/Moon/Ultra Sun/Ultra Moon location index links this Totem's Den directly to a section of Wela Volcano Park. That parent article documents the den and trial in the games; no dedicated article exists for the named den."
+  },
+  {
+    "id": "paldea-colonnade-hollow",
+    "name": "Colonnade Hollow",
+    "decision": "include",
+    "games": ["sv-s", "sv-v"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Colonnade_Hollow",
+    "pageTitle": "Colonnade Hollow",
+    "reason": "Own location article describes the landmark in West Province (Area Two) and contains a Pokémon encounter table for Scarlet and Violet."
+  },
+  {
+    "id": "paldea-firescourge-shrine",
+    "name": "Firescourge Shrine",
+    "decision": "include",
+    "games": ["sv-s", "sv-v"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Firescourge_Shrine",
+    "pageTitle": "Firescourge Shrine",
+    "reason": "Own location article describes the cave in North Province (Area Two), its Chi-Yu encounter, and a music table labeled for both Scarlet and Violet."
+  },
+  {
+    "id": "paldea-grasswither-shrine",
+    "name": "Grasswither Shrine",
+    "decision": "include",
+    "games": ["sv-s", "sv-v"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Grasswither_Shrine",
+    "pageTitle": "Grasswither Shrine",
+    "reason": "Own location article describes the cave in South Province (Area One), its Wo-Chien encounter, and a music table labeled for both Scarlet and Violet."
+  },
+  {
+    "id": "paldea-groundblight-shrine",
+    "name": "Groundblight Shrine",
+    "decision": "include",
+    "games": ["sv-s", "sv-v"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Groundblight_Shrine",
+    "pageTitle": "Groundblight Shrine",
+    "reason": "Own location article describes the cave in Socarrat Trail, its Ting-Lu encounter, and a music table labeled for both Scarlet and Violet."
+  },
+  {
+    "id": "paldea-icerend-shrine",
+    "name": "Icerend Shrine",
+    "decision": "include",
+    "games": ["sv-s", "sv-v"],
+    "url": "https://bulbapedia.bulbagarden.net/wiki/Icerend_Shrine",
+    "pageTitle": "Icerend Shrine",
+    "reason": "Own location article describes the cave in West Province (Area One), its Chien-Pao encounter, and a music table labeled for both Scarlet and Violet."
+  }
+]

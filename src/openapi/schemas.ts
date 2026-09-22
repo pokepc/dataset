@@ -8,6 +8,7 @@ import {
   generationSchema,
   itemSchema,
   languageSchema,
+  locationSchema,
   markSchema,
   modernBoxPresetIndexSchema,
   modernBoxPresetSchema,
@@ -77,14 +78,7 @@ export const StringIndexSchema = z.array(slugSchema).meta({
   description: 'Ordered list of dataset entity IDs.',
 })
 
-export const LocationSchema = z
-  .object({
-    id: slugSchema,
-    name: z.string().max(120),
-    gameIds: z.literal('*').or(z.array(slugSchema)),
-  })
-  .strict()
-  .meta({ id: 'Location' })
+export const LocationSchema = locationSchema.meta({ id: 'Location' })
 
 export const LocationListSchema = z.array(LocationSchema).meta({ id: 'LocationList' })
 

@@ -1,4 +1,8074 @@
 [
-  { "id": "mystery-zone", "name": "Mystery Zone", "gameIds": "*" },
-  { "id": "faraway-place", "name": "Faraway Place", "gameIds": "*" }
+  {
+    "id": "distant-land",
+    "name": "Distant Land",
+    "games": null,
+    "region": null,
+    "pokeApiId": 260
+  },
+  {
+    "id": "faraway-place",
+    "name": "Faraway Place",
+    "games": null,
+    "region": null,
+    "pokeApiId": 267
+  },
+  {
+    "id": "fateful-encounter",
+    "name": "Fateful Encounter",
+    "games": null,
+    "region": null,
+    "pokeApiId": null
+  },
+  {
+    "id": "mystery-zone",
+    "name": "Mystery Zone",
+    "games": null,
+    "region": null,
+    "pokeApiId": 264
+  },
+  {
+    "id": "kanto-altering-cave",
+    "name": "Altering Cave",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 529
+  },
+  {
+    "id": "kanto-berry-forest",
+    "name": "Berry Forest",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 501
+  },
+  {
+    "id": "kanto-birth-island",
+    "name": "Birth Island",
+    "games": ["frlg-fr", "frlg-lg", "e"],
+    "region": "kanto",
+    "pokeApiId": 810
+  },
+  {
+    "id": "kanto-bond-bridge",
+    "name": "Bond Bridge",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 508
+  },
+  {
+    "id": "kanto-canyon-entrance",
+    "name": "Canyon Entrance",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 519
+  },
+  {
+    "id": "kanto-cape-brink",
+    "name": "Cape Brink",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 507
+  },
+  {
+    "id": "kanto-celadon-city",
+    "name": "Celadon City",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 67
+  },
+  {
+    "id": "kanto-cerulean-cave",
+    "name": "Cerulean Cave",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 147
+  },
+  {
+    "id": "kanto-cerulean-city",
+    "name": "Cerulean City",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 68
+  },
+  {
+    "id": "kanto-cinnabar-island",
+    "name": "Cinnabar Island",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 71
+  },
+  {
+    "id": "kanto-digletts-cave",
+    "name": "Diglett's Cave",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 73
+  },
+  {
+    "id": "kanto-dilford-chamber",
+    "name": "Dilford Chamber",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 494
+  },
+  {
+    "id": "kanto-dotted-hole",
+    "name": "Dotted Hole",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": null
+  },
+  {
+    "id": "kanto-five-island",
+    "name": "Five Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 528
+  },
+  {
+    "id": "kanto-five-isle-meadow",
+    "name": "Five Isle Meadow",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 512
+  },
+  {
+    "id": "kanto-four-island",
+    "name": "Four Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 527
+  },
+  {
+    "id": "kanto-fuchsia-city",
+    "name": "Fuchsia City",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 76
+  },
+  {
+    "id": "kanto-green-path",
+    "name": "Green Path",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 515
+  },
+  {
+    "id": "kanto-icefall-cave",
+    "name": "Icefall Cave",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 502
+  },
+  {
+    "id": "kanto-indigo-plateau",
+    "name": "Indigo Plateau",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 233
+  },
+  {
+    "id": "kanto-kindle-road",
+    "name": "Kindle Road",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 505
+  },
+  {
+    "id": "kanto-lavender-town",
+    "name": "Lavender Town",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 232
+  },
+  {
+    "id": "kanto-liptoo-chamber",
+    "name": "Liptoo Chamber",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 492
+  },
+  {
+    "id": "kanto-lost-cave",
+    "name": "Lost Cave",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 504
+  },
+  {
+    "id": "kanto-memorial-pillar",
+    "name": "Memorial Pillar",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 513
+  },
+  {
+    "id": "kanto-monean-chamber",
+    "name": "Monean Chamber",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 491
+  },
+  {
+    "id": "kanto-mt-ember",
+    "name": "Mt. Ember",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 500
+  },
+  {
+    "id": "kanto-mt-moon",
+    "name": "Mt. Moon",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 80
+  },
+  {
+    "id": "kanto-navel-rock",
+    "name": "Navel Rock",
+    "games": ["frlg-fr", "frlg-lg", "e"],
+    "region": "kanto",
+    "pokeApiId": 811
+  },
+  {
+    "id": "kanto-one-island",
+    "name": "One Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 526
+  },
+  {
+    "id": "kanto-outcast-island",
+    "name": "Outcast Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 514
+  },
+  {
+    "id": "kanto-pallet-town",
+    "name": "Pallet Town",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 86
+  },
+  {
+    "id": "kanto-pattern-bush",
+    "name": "Pattern Bush",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 503
+  },
+  {
+    "id": "kanto-pewter-city",
+    "name": "Pewter City",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 231
+  },
+  {
+    "id": "kanto-pokemon-mansion",
+    "name": "Pokémon Mansion",
+    "games": ["rb-r", "rb-b", "y", "frlg-fr", "frlg-lg", "lgpe-lgp", "lgpe-lge"],
+    "region": "kanto",
+    "pokeApiId": 161
+  },
+  {
+    "id": "kanto-pokemon-tower",
+    "name": "Pokémon Tower",
+    "games": ["rb-r", "rb-b", "y", "frlg-fr", "frlg-lg", "lgpe-lgp", "lgpe-lge"],
+    "region": "kanto",
+    "pokeApiId": 160
+  },
+  {
+    "id": "kanto-power-plant",
+    "name": "Power Plant",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 158
+  },
+  {
+    "id": "kanto-reception-gate",
+    "name": "Reception Gate",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "kanto",
+    "pokeApiId": null
+  },
+  {
+    "id": "kanto-resort-gorgeous",
+    "name": "Resort Gorgeous",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 510
+  },
+  {
+    "id": "kanto-rixy-chamber",
+    "name": "Rixy Chamber",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 496
+  },
+  {
+    "id": "kanto-rock-tunnel",
+    "name": "Rock Tunnel",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 87
+  },
+  {
+    "id": "kanto-rocket-hideout",
+    "name": "Rocket Hideout",
+    "games": ["rb-r", "rb-b", "y", "frlg-fr", "frlg-lg", "lgpe-lgp", "lgpe-lge"],
+    "region": "kanto",
+    "pokeApiId": null
+  },
+  {
+    "id": "kanto-rocket-warehouse",
+    "name": "Rocket Warehouse",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": null
+  },
+  {
+    "id": "kanto-route-1",
+    "name": "Route 1",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 88
+  },
+  {
+    "id": "kanto-route-10",
+    "name": "Route 10",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 89
+  },
+  {
+    "id": "kanto-route-11",
+    "name": "Route 11",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 90
+  },
+  {
+    "id": "kanto-route-12",
+    "name": "Route 12",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 91
+  },
+  {
+    "id": "kanto-route-13",
+    "name": "Route 13",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 92
+  },
+  {
+    "id": "kanto-route-14",
+    "name": "Route 14",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 93
+  },
+  {
+    "id": "kanto-route-15",
+    "name": "Route 15",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 94
+  },
+  {
+    "id": "kanto-route-16",
+    "name": "Route 16",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 95
+  },
+  {
+    "id": "kanto-route-17",
+    "name": "Route 17",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 96
+  },
+  {
+    "id": "kanto-route-18",
+    "name": "Route 18",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 97
+  },
+  {
+    "id": "kanto-route-19",
+    "name": "Route 19",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 98
+  },
+  {
+    "id": "kanto-route-2",
+    "name": "Route 2",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 99
+  },
+  {
+    "id": "kanto-route-20",
+    "name": "Route 20",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 100
+  },
+  {
+    "id": "kanto-route-21",
+    "name": "Route 21",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 101
+  },
+  {
+    "id": "kanto-route-22",
+    "name": "Route 22",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 102
+  },
+  {
+    "id": "kanto-route-23",
+    "name": "Route 23",
+    "games": ["rb-r", "rb-b", "y", "frlg-fr", "frlg-lg", "lgpe-lgp", "lgpe-lge"],
+    "region": "kanto",
+    "pokeApiId": 157
+  },
+  {
+    "id": "kanto-route-24",
+    "name": "Route 24",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 103
+  },
+  {
+    "id": "kanto-route-25",
+    "name": "Route 25",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 104
+  },
+  {
+    "id": "kanto-route-26",
+    "name": "Route 26",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "kanto",
+    "pokeApiId": 105
+  },
+  {
+    "id": "kanto-route-27",
+    "name": "Route 27",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "kanto",
+    "pokeApiId": 106
+  },
+  {
+    "id": "kanto-route-28",
+    "name": "Route 28",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "kanto",
+    "pokeApiId": 107
+  },
+  {
+    "id": "kanto-route-3",
+    "name": "Route 3",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 109
+  },
+  {
+    "id": "kanto-route-4",
+    "name": "Route 4",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 120
+  },
+  {
+    "id": "kanto-route-5",
+    "name": "Route 5",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 130
+  },
+  {
+    "id": "kanto-route-6",
+    "name": "Route 6",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 131
+  },
+  {
+    "id": "kanto-route-7",
+    "name": "Route 7",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 132
+  },
+  {
+    "id": "kanto-route-8",
+    "name": "Route 8",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 133
+  },
+  {
+    "id": "kanto-route-9",
+    "name": "Route 9",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 134
+  },
+  {
+    "id": "kanto-ruin-valley",
+    "name": "Ruin Valley",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 517
+  },
+  {
+    "id": "kanto-s-s-anne",
+    "name": "S.S. Anne",
+    "games": ["rb-r", "rb-b", "y", "frlg-fr", "frlg-lg", "lgpe-lgp", "lgpe-lge"],
+    "region": "kanto",
+    "pokeApiId": 498
+  },
+  {
+    "id": "kanto-safari-zone",
+    "name": "Safari Zone",
+    "games": ["rb-r", "rb-b", "y", "frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 162
+  },
+  {
+    "id": "kanto-saffron-city",
+    "name": "Saffron City",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 234
+  },
+  {
+    "id": "kanto-scufib-chamber",
+    "name": "Scufib Chamber",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 495
+  },
+  {
+    "id": "kanto-seafoam-islands",
+    "name": "Seafoam Islands",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 136
+  },
+  {
+    "id": "kanto-sevault-canyon",
+    "name": "Sevault Canyon",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 520
+  },
+  {
+    "id": "kanto-seven-island",
+    "name": "Seven Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 809
+  },
+  {
+    "id": "kanto-silph-co",
+    "name": "Silph Co.",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": null
+  },
+  {
+    "id": "kanto-six-island",
+    "name": "Six Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 808
+  },
+  {
+    "id": "kanto-tanoby-ruins",
+    "name": "Tanoby Ruins",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 521
+  },
+  {
+    "id": "kanto-three-island",
+    "name": "Three Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 806
+  },
+  {
+    "id": "kanto-three-isle-path",
+    "name": "Three Isle Path",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 807
+  },
+  {
+    "id": "kanto-three-isle-port",
+    "name": "Three Isle Port",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 509
+  },
+  {
+    "id": "kanto-tohjo-falls",
+    "name": "Tohjo Falls",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "kanto",
+    "pokeApiId": 140
+  },
+  {
+    "id": "kanto-trainer-tower",
+    "name": "Trainer Tower",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 518
+  },
+  {
+    "id": "kanto-treasure-beach",
+    "name": "Treasure Beach",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 506
+  },
+  {
+    "id": "kanto-two-island",
+    "name": "Two Island",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 805
+  },
+  {
+    "id": "kanto-underground-path-5-6",
+    "name": "Underground Path 5-6",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": null
+  },
+  {
+    "id": "kanto-underground-path-7-8",
+    "name": "Underground Path 7-8",
+    "games": ["rb-r", "rb-b", "y", "frlg-fr", "frlg-lg", "lgpe-lgp", "lgpe-lge"],
+    "region": "kanto",
+    "pokeApiId": null
+  },
+  {
+    "id": "kanto-vermilion-city",
+    "name": "Vermilion City",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 151
+  },
+  {
+    "id": "kanto-viapos-chamber",
+    "name": "Viapos Chamber",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 497
+  },
+  {
+    "id": "kanto-victory-road",
+    "name": "Victory Road",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 152
+  },
+  {
+    "id": "kanto-viridian-city",
+    "name": "Viridian City",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "gs-g",
+      "gs-s",
+      "c",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 154
+  },
+  {
+    "id": "kanto-viridian-forest",
+    "name": "Viridian Forest",
+    "games": [
+      "rb-r",
+      "rb-b",
+      "y",
+      "frlg-fr",
+      "frlg-lg",
+      "hgss-hg",
+      "hgss-ss",
+      "lgpe-lgp",
+      "lgpe-lge"
+    ],
+    "region": "kanto",
+    "pokeApiId": 155
+  },
+  {
+    "id": "kanto-water-labyrinth",
+    "name": "Water Labyrinth",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 511
+  },
+  {
+    "id": "kanto-water-path",
+    "name": "Water Path",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 516
+  },
+  {
+    "id": "kanto-weepth-chamber",
+    "name": "Weepth Chamber",
+    "games": ["frlg-fr", "frlg-lg"],
+    "region": "kanto",
+    "pokeApiId": 493
+  },
+  {
+    "id": "johto-azalea-town",
+    "name": "Azalea Town",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 228
+  },
+  {
+    "id": "johto-battle-frontier",
+    "name": "Battle Frontier",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": null
+  },
+  {
+    "id": "johto-battle-tower",
+    "name": "Battle Tower",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": null
+  },
+  {
+    "id": "johto-bell-tower",
+    "name": "Bell Tower",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 139
+  },
+  {
+    "id": "johto-bellchime-trail",
+    "name": "Bellchime Trail",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 246
+  },
+  {
+    "id": "johto-blackthorn-city",
+    "name": "Blackthorn City",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 65
+  },
+  {
+    "id": "johto-burned-tower",
+    "name": "Burned Tower",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 66
+  },
+  {
+    "id": "johto-cherrygrove-city",
+    "name": "Cherrygrove City",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 69
+  },
+  {
+    "id": "johto-cianwood-city",
+    "name": "Cianwood City",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 70
+  },
+  {
+    "id": "johto-cliff-cave",
+    "name": "Cliff Cave",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 244
+  },
+  {
+    "id": "johto-cliff-edge-gate",
+    "name": "Cliff Edge Gate",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 250
+  },
+  {
+    "id": "johto-dark-cave",
+    "name": "Dark Cave",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 72
+  },
+  {
+    "id": "johto-dragons-den",
+    "name": "Dragon's Den",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 74
+  },
+  {
+    "id": "johto-ecruteak-city",
+    "name": "Ecruteak City",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 75
+  },
+  {
+    "id": "johto-embedded-tower",
+    "name": "Embedded Tower",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 248
+  },
+  {
+    "id": "johto-frontier-access",
+    "name": "Frontier Access",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 245
+  },
+  {
+    "id": "johto-glitter-lighthouse",
+    "name": "Glitter Lighthouse",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 236
+  },
+  {
+    "id": "johto-goldenrod-city",
+    "name": "Goldenrod City",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 229
+  },
+  {
+    "id": "johto-goldenrod-underground",
+    "name": "Goldenrod Underground",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 238
+  },
+  {
+    "id": "johto-ice-path",
+    "name": "Ice Path",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 77
+  },
+  {
+    "id": "johto-ilex-forest",
+    "name": "Ilex Forest",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 78
+  },
+  {
+    "id": "johto-lake-of-rage",
+    "name": "Lake of Rage",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 79
+  },
+  {
+    "id": "johto-mahogany-town",
+    "name": "Mahogany Town",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 230
+  },
+  {
+    "id": "johto-mt-mortar",
+    "name": "Mt. Mortar",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 81
+  },
+  {
+    "id": "johto-mt-silver",
+    "name": "Mt. Silver",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 82
+  },
+  {
+    "id": "johto-mt-silver-cave",
+    "name": "Mt. Silver Cave",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 239
+  },
+  {
+    "id": "johto-national-park",
+    "name": "National Park",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 83
+  },
+  {
+    "id": "johto-new-bark-town",
+    "name": "New Bark Town",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 84
+  },
+  {
+    "id": "johto-olivine-city",
+    "name": "Olivine City",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 85
+  },
+  {
+    "id": "johto-pokeathlon-dome",
+    "name": "Pokéathlon Dome",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 241
+  },
+  {
+    "id": "johto-radio-tower",
+    "name": "Radio Tower",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 252
+  },
+  {
+    "id": "johto-route-29",
+    "name": "Route 29",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 108
+  },
+  {
+    "id": "johto-route-30",
+    "name": "Route 30",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 110
+  },
+  {
+    "id": "johto-route-31",
+    "name": "Route 31",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 111
+  },
+  {
+    "id": "johto-route-32",
+    "name": "Route 32",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 112
+  },
+  {
+    "id": "johto-route-33",
+    "name": "Route 33",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 113
+  },
+  {
+    "id": "johto-route-34",
+    "name": "Route 34",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 114
+  },
+  {
+    "id": "johto-route-35",
+    "name": "Route 35",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 115
+  },
+  {
+    "id": "johto-route-36",
+    "name": "Route 36",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 116
+  },
+  {
+    "id": "johto-route-37",
+    "name": "Route 37",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 117
+  },
+  {
+    "id": "johto-route-38",
+    "name": "Route 38",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 118
+  },
+  {
+    "id": "johto-route-39",
+    "name": "Route 39",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 119
+  },
+  {
+    "id": "johto-route-40",
+    "name": "Route 40",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 121
+  },
+  {
+    "id": "johto-route-41",
+    "name": "Route 41",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 122
+  },
+  {
+    "id": "johto-route-42",
+    "name": "Route 42",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 123
+  },
+  {
+    "id": "johto-route-43",
+    "name": "Route 43",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 124
+  },
+  {
+    "id": "johto-route-44",
+    "name": "Route 44",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 125
+  },
+  {
+    "id": "johto-route-45",
+    "name": "Route 45",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 126
+  },
+  {
+    "id": "johto-route-46",
+    "name": "Route 46",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 127
+  },
+  {
+    "id": "johto-route-47",
+    "name": "Route 47",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 128
+  },
+  {
+    "id": "johto-route-48",
+    "name": "Route 48",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 129
+  },
+  {
+    "id": "johto-ruins-of-alph",
+    "name": "Ruins of Alph",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 135
+  },
+  {
+    "id": "johto-s-s-aqua",
+    "name": "S.S. Aqua",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 242
+  },
+  {
+    "id": "johto-safari-zone",
+    "name": "Safari Zone",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 814
+  },
+  {
+    "id": "johto-safari-zone-gate",
+    "name": "Safari Zone Gate",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 243
+  },
+  {
+    "id": "johto-sinjoh-ruins",
+    "name": "Sinjoh Ruins",
+    "games": ["hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 247
+  },
+  {
+    "id": "johto-slowpoke-well",
+    "name": "Slowpoke Well",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 137
+  },
+  {
+    "id": "johto-sprout-tower",
+    "name": "Sprout Tower",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 138
+  },
+  {
+    "id": "johto-team-rocket-hq",
+    "name": "Team Rocket HQ",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 237
+  },
+  {
+    "id": "johto-union-cave",
+    "name": "Union Cave",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 141
+  },
+  {
+    "id": "johto-violet-city",
+    "name": "Violet City",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 153
+  },
+  {
+    "id": "johto-whirl-islands",
+    "name": "Whirl Islands",
+    "games": ["gs-g", "gs-s", "c", "hgss-hg", "hgss-ss"],
+    "region": "johto",
+    "pokeApiId": 156
+  },
+  {
+    "id": "hoenn-abandoned-ship",
+    "name": "Abandoned Ship",
+    "games": ["rs-r", "rs-s", "e"],
+    "region": "hoenn",
+    "pokeApiId": 447
+  },
+  {
+    "id": "hoenn-altering-cave",
+    "name": "Altering Cave",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 490
+  },
+  {
+    "id": "hoenn-ancient-tomb",
+    "name": "Ancient Tomb",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 583
+  },
+  {
+    "id": "hoenn-artisan-cave",
+    "name": "Artisan Cave",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 489
+  },
+  {
+    "id": "hoenn-battle-frontier",
+    "name": "Battle Frontier",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 813
+  },
+  {
+    "id": "hoenn-battle-resort",
+    "name": "Battle Resort",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 695
+  },
+  {
+    "id": "hoenn-battle-tower",
+    "name": "Battle Tower",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 586
+  },
+  {
+    "id": "hoenn-cave-of-origin",
+    "name": "Cave of Origin",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 443
+  },
+  {
+    "id": "hoenn-crescent-isle",
+    "name": "Crescent Isle",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 705
+  },
+  {
+    "id": "hoenn-desert-ruins",
+    "name": "Desert Ruins",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 582
+  },
+  {
+    "id": "hoenn-desert-underpass",
+    "name": "Desert Underpass",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 488
+  },
+  {
+    "id": "hoenn-dewford-town",
+    "name": "Dewford Town",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 484
+  },
+  {
+    "id": "hoenn-ever-grande-city",
+    "name": "Ever Grande City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 434
+  },
+  {
+    "id": "hoenn-fabled-cave",
+    "name": "Fabled Cave",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 703
+  },
+  {
+    "id": "hoenn-fallarbor-town",
+    "name": "Fallarbor Town",
+    "games": ["e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 570
+  },
+  {
+    "id": "hoenn-faraway-island",
+    "name": "Faraway Island",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 812
+  },
+  {
+    "id": "hoenn-fiery-path",
+    "name": "Fiery Path",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 440
+  },
+  {
+    "id": "hoenn-fortree-city",
+    "name": "Fortree City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 574
+  },
+  {
+    "id": "hoenn-gnarled-den",
+    "name": "Gnarled Den",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 704
+  },
+  {
+    "id": "hoenn-granite-cave",
+    "name": "Granite Cave",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 437
+  },
+  {
+    "id": "hoenn-inside-of-truck",
+    "name": "Inside of Truck",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 584
+  },
+  {
+    "id": "hoenn-island-cave",
+    "name": "Island Cave",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 581
+  },
+  {
+    "id": "hoenn-jagged-pass",
+    "name": "Jagged Pass",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 439
+  },
+  {
+    "id": "hoenn-lavaridge-town",
+    "name": "Lavaridge Town",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 569
+  },
+  {
+    "id": "hoenn-lilycove-city",
+    "name": "Lilycove City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 431
+  },
+  {
+    "id": "hoenn-littleroot-town",
+    "name": "Littleroot Town",
+    "games": ["e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 567
+  },
+  {
+    "id": "hoenn-magma-hideout",
+    "name": "Magma Hideout",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 486
+  },
+  {
+    "id": "hoenn-marine-cave",
+    "name": "Marine Cave",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 804
+  },
+  {
+    "id": "hoenn-mauville-city",
+    "name": "Mauville City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 572
+  },
+  {
+    "id": "hoenn-meteor-falls",
+    "name": "Meteor Falls",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 435
+  },
+  {
+    "id": "hoenn-mirage-cave",
+    "name": "Mirage Cave",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 698
+  },
+  {
+    "id": "hoenn-mirage-forest",
+    "name": "Mirage Forest",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 697
+  },
+  {
+    "id": "hoenn-mirage-island-oras",
+    "name": "Mirage Island",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 577
+  },
+  {
+    "id": "hoenn-mirage-island-rse",
+    "name": "Mirage Island",
+    "games": ["rs-r", "rs-s", "e"],
+    "region": "hoenn",
+    "pokeApiId": 1094
+  },
+  {
+    "id": "hoenn-mirage-mountain",
+    "name": "Mirage Mountain",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 699
+  },
+  {
+    "id": "hoenn-mirage-spots",
+    "name": "Mirage Spots",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": null
+  },
+  {
+    "id": "hoenn-mirage-tower",
+    "name": "Mirage Tower",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 487
+  },
+  {
+    "id": "hoenn-mossdeep-city",
+    "name": "Mossdeep City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 432
+  },
+  {
+    "id": "hoenn-mossdeep-space-center",
+    "name": "Mossdeep Space Center",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 1055
+  },
+  {
+    "id": "hoenn-mt-chimney",
+    "name": "Mt. Chimney",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 576
+  },
+  {
+    "id": "hoenn-mt-pyre",
+    "name": "Mt. Pyre",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 441
+  },
+  {
+    "id": "hoenn-nameless-cavern",
+    "name": "Nameless Cavern",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 702
+  },
+  {
+    "id": "hoenn-new-mauville",
+    "name": "New Mauville",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as", "sm-s"],
+    "region": "hoenn",
+    "pokeApiId": 446
+  },
+  {
+    "id": "hoenn-oldale-town",
+    "name": "Oldale Town",
+    "games": ["e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 568
+  },
+  {
+    "id": "hoenn-pacifidlog-town",
+    "name": "Pacifidlog Town",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 485
+  },
+  {
+    "id": "hoenn-pathless-plain",
+    "name": "Pathless Plain",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 701
+  },
+  {
+    "id": "hoenn-petalburg-city",
+    "name": "Petalburg City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 429
+  },
+  {
+    "id": "hoenn-petalburg-woods",
+    "name": "Petalburg Woods",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 438
+  },
+  {
+    "id": "hoenn-pokemon-league",
+    "name": "Pokémon League",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 691
+  },
+  {
+    "id": "hoenn-route-101",
+    "name": "Route 101",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 449
+  },
+  {
+    "id": "hoenn-route-102",
+    "name": "Route 102",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 450
+  },
+  {
+    "id": "hoenn-route-103",
+    "name": "Route 103",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 451
+  },
+  {
+    "id": "hoenn-route-104",
+    "name": "Route 104",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 452
+  },
+  {
+    "id": "hoenn-route-105",
+    "name": "Route 105",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 453
+  },
+  {
+    "id": "hoenn-route-106",
+    "name": "Route 106",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 454
+  },
+  {
+    "id": "hoenn-route-107",
+    "name": "Route 107",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 455
+  },
+  {
+    "id": "hoenn-route-108",
+    "name": "Route 108",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 456
+  },
+  {
+    "id": "hoenn-route-109",
+    "name": "Route 109",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 457
+  },
+  {
+    "id": "hoenn-route-110",
+    "name": "Route 110",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 458
+  },
+  {
+    "id": "hoenn-route-111",
+    "name": "Route 111",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 459
+  },
+  {
+    "id": "hoenn-route-112",
+    "name": "Route 112",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 460
+  },
+  {
+    "id": "hoenn-route-113",
+    "name": "Route 113",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 461
+  },
+  {
+    "id": "hoenn-route-114",
+    "name": "Route 114",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 462
+  },
+  {
+    "id": "hoenn-route-115",
+    "name": "Route 115",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 463
+  },
+  {
+    "id": "hoenn-route-116",
+    "name": "Route 116",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 464
+  },
+  {
+    "id": "hoenn-route-117",
+    "name": "Route 117",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 465
+  },
+  {
+    "id": "hoenn-route-118",
+    "name": "Route 118",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 466
+  },
+  {
+    "id": "hoenn-route-119",
+    "name": "Route 119",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 467
+  },
+  {
+    "id": "hoenn-route-120",
+    "name": "Route 120",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 468
+  },
+  {
+    "id": "hoenn-route-121",
+    "name": "Route 121",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 469
+  },
+  {
+    "id": "hoenn-route-122",
+    "name": "Route 122",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 470
+  },
+  {
+    "id": "hoenn-route-123",
+    "name": "Route 123",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 471
+  },
+  {
+    "id": "hoenn-route-124",
+    "name": "Route 124",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 472
+  },
+  {
+    "id": "hoenn-route-125",
+    "name": "Route 125",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 473
+  },
+  {
+    "id": "hoenn-route-126",
+    "name": "Route 126",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 474
+  },
+  {
+    "id": "hoenn-route-127",
+    "name": "Route 127",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 475
+  },
+  {
+    "id": "hoenn-route-128",
+    "name": "Route 128",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 476
+  },
+  {
+    "id": "hoenn-route-129",
+    "name": "Route 129",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 477
+  },
+  {
+    "id": "hoenn-route-130",
+    "name": "Route 130",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 478
+  },
+  {
+    "id": "hoenn-route-131",
+    "name": "Route 131",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 479
+  },
+  {
+    "id": "hoenn-route-132",
+    "name": "Route 132",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 480
+  },
+  {
+    "id": "hoenn-route-133",
+    "name": "Route 133",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 481
+  },
+  {
+    "id": "hoenn-route-134",
+    "name": "Route 134",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 482
+  },
+  {
+    "id": "hoenn-rustboro-city",
+    "name": "Rustboro City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 573
+  },
+  {
+    "id": "hoenn-rusturf-tunnel",
+    "name": "Rusturf Tunnel",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 436
+  },
+  {
+    "id": "hoenn-s-s-tidal",
+    "name": "S.S. Tidal",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 696
+  },
+  {
+    "id": "hoenn-safari-zone",
+    "name": "Safari Zone",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 483
+  },
+  {
+    "id": "hoenn-scorched-slab",
+    "name": "Scorched Slab",
+    "games": ["e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 580
+  },
+  {
+    "id": "hoenn-sea-mauville",
+    "name": "Sea Mauville",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 693
+  },
+  {
+    "id": "hoenn-seafloor-cavern",
+    "name": "Seafloor Cavern",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 442
+  },
+  {
+    "id": "hoenn-sealed-chamber",
+    "name": "Sealed Chamber",
+    "games": ["e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 579
+  },
+  {
+    "id": "hoenn-secret-base",
+    "name": "Secret Base",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 585
+  },
+  {
+    "id": "hoenn-secret-islet",
+    "name": "Secret Islet",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 706
+  },
+  {
+    "id": "hoenn-secret-meadow",
+    "name": "Secret Meadow",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 709
+  },
+  {
+    "id": "hoenn-secret-shore",
+    "name": "Secret Shore",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 708
+  },
+  {
+    "id": "hoenn-shoal-cave",
+    "name": "Shoal Cave",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 445
+  },
+  {
+    "id": "hoenn-sky-pillar",
+    "name": "Sky Pillar",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 448
+  },
+  {
+    "id": "hoenn-slateport-city",
+    "name": "Slateport City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 430
+  },
+  {
+    "id": "hoenn-soaring-in-the-sky",
+    "name": "Soaring in the sky",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 707
+  },
+  {
+    "id": "hoenn-sootopolis-city",
+    "name": "Sootopolis City",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 433
+  },
+  {
+    "id": "hoenn-southern-island",
+    "name": "Southern Island",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 578
+  },
+  {
+    "id": "hoenn-team-aqua-magma-hideout",
+    "name": "Team Aqua/Magma Hideout",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 692
+  },
+  {
+    "id": "hoenn-terra-cave",
+    "name": "Terra Cave",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": 803
+  },
+  {
+    "id": "hoenn-trackless-forest",
+    "name": "Trackless Forest",
+    "games": ["oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 700
+  },
+  {
+    "id": "hoenn-trainer-hill",
+    "name": "Trainer Hill",
+    "games": ["e"],
+    "region": "hoenn",
+    "pokeApiId": null
+  },
+  {
+    "id": "hoenn-underwater",
+    "name": "Underwater",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 575
+  },
+  {
+    "id": "hoenn-verdanturf-town",
+    "name": "Verdanturf Town",
+    "games": ["e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 571
+  },
+  {
+    "id": "hoenn-victory-road",
+    "name": "Victory Road",
+    "games": ["rs-r", "rs-s", "e", "oras-or", "oras-as"],
+    "region": "hoenn",
+    "pokeApiId": 444
+  },
+  {
+    "id": "orre-agate-village",
+    "name": "Agate Village",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1103
+  },
+  {
+    "id": "orre-cave-pokespot",
+    "name": "Cave Poké Spot",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-cipher-key-lair",
+    "name": "Cipher Key Lair",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": 1111
+  },
+  {
+    "id": "orre-cipher-lab",
+    "name": "Cipher Lab",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1108
+  },
+  {
+    "id": "orre-citadark-isle",
+    "name": "Citadark Isle",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": 1112
+  },
+  {
+    "id": "orre-deep-colosseum",
+    "name": "Deep Colosseum",
+    "games": ["col"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-gateon-port",
+    "name": "Gateon Port",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": 1107
+  },
+  {
+    "id": "orre-kaminkos-house",
+    "name": "Kaminko's House",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-mt-battle",
+    "name": "Mt. Battle",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1105
+  },
+  {
+    "id": "orre-oasis-pokespot",
+    "name": "Oasis Poké Spot",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-onbs",
+    "name": "ONBS",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": 1110
+  },
+  {
+    "id": "orre-orre-colosseum",
+    "name": "Orre Colosseum",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-outskirt-stand",
+    "name": "Outskirt Stand",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1095
+  },
+  {
+    "id": "orre-phenac-city",
+    "name": "Phenac City",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1096
+  },
+  {
+    "id": "orre-phenac-stadium",
+    "name": "Phenac Stadium",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-pokemon-hq-lab",
+    "name": "Pokemon Hq Lab",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": 1106
+  },
+  {
+    "id": "orre-pokespot",
+    "name": "Pokespot",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": 1109
+  },
+  {
+    "id": "orre-pre-gym",
+    "name": "Pre Gym",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-pyrite-building",
+    "name": "Pyrite Building",
+    "games": ["col"],
+    "region": "orre",
+    "pokeApiId": 1100
+  },
+  {
+    "id": "orre-pyrite-cave",
+    "name": "Pyrite Cave",
+    "games": ["col"],
+    "region": "orre",
+    "pokeApiId": 1101
+  },
+  {
+    "id": "orre-pyrite-colosseum",
+    "name": "Pyrite Colosseum",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-pyrite-town",
+    "name": "Pyrite Town",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1099
+  },
+  {
+    "id": "orre-realgam-tower",
+    "name": "Realgam Tower",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1102
+  },
+  {
+    "id": "orre-relic-cave",
+    "name": "Relic Cave",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-relic-stone",
+    "name": "Relic Stone",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-rock-pokespot",
+    "name": "Rock Poké Spot",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-s-s-libra",
+    "name": "S.S. Libra",
+    "games": ["xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-shadow-pokemon-lab",
+    "name": "Shadow Pokémon Lab",
+    "games": ["col"],
+    "region": "orre",
+    "pokeApiId": 1098
+  },
+  {
+    "id": "orre-snagem-hideout",
+    "name": "Snagem Hideout",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": 1097
+  },
+  {
+    "id": "orre-the-under",
+    "name": "The Under",
+    "games": ["col"],
+    "region": "orre",
+    "pokeApiId": 1104
+  },
+  {
+    "id": "orre-the-under-subway",
+    "name": "The Under Subway",
+    "games": ["col"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-tower-colosseum",
+    "name": "Tower Colosseum",
+    "games": ["col", "xd"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "orre-under-colosseum",
+    "name": "Under Colosseum",
+    "games": ["col"],
+    "region": "orre",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-acuity-lakefront",
+    "name": "Acuity Lakefront",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 30
+  },
+  {
+    "id": "sinnoh-amity-square",
+    "name": "Amity Square",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 174
+  },
+  {
+    "id": "sinnoh-battle-arcade",
+    "name": "Battle Arcade",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 217
+  },
+  {
+    "id": "sinnoh-battle-castle",
+    "name": "Battle Castle",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 216
+  },
+  {
+    "id": "sinnoh-battle-factory",
+    "name": "Battle Factory",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 215
+  },
+  {
+    "id": "sinnoh-battle-frontier",
+    "name": "Battle Frontier",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 214
+  },
+  {
+    "id": "sinnoh-battle-hall",
+    "name": "Battle Hall",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 218
+  },
+  {
+    "id": "sinnoh-battle-park",
+    "name": "Battle Park",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 213
+  },
+  {
+    "id": "sinnoh-battle-tower",
+    "name": "Battle Tower",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 184
+  },
+  {
+    "id": "sinnoh-battleground",
+    "name": "Battleground",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 222
+  },
+  {
+    "id": "sinnoh-big-bluff-cavern",
+    "name": "Big Bluff Cavern",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-bogsunk-cavern",
+    "name": "Bogsunk Cavern",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-cafe",
+    "name": "Café Cabin",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 210
+  },
+  {
+    "id": "sinnoh-canalave-city",
+    "name": "Canalave City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 1
+  },
+  {
+    "id": "sinnoh-canalave-library",
+    "name": "Canalave Library",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 206
+  },
+  {
+    "id": "sinnoh-celestic-town",
+    "name": "Celestic Town",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 59
+  },
+  {
+    "id": "sinnoh-contest-hall",
+    "name": "Contest Hall",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 200
+  },
+  {
+    "id": "sinnoh-cycle-shop",
+    "name": "Rad Rickshaw's Cycle Shop",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 199
+  },
+  {
+    "id": "sinnoh-dazzling-cave",
+    "name": "Dazzling Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-distortion-world",
+    "name": "Distortion World",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 219
+  },
+  {
+    "id": "sinnoh-eterna-city",
+    "name": "Eterna City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 2
+  },
+  {
+    "id": "sinnoh-eterna-forest",
+    "name": "Eterna Forest",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 8
+  },
+  {
+    "id": "sinnoh-eterna-galactic-building",
+    "name": "Eterna Galactic Building",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 224
+  },
+  {
+    "id": "sinnoh-fight-area",
+    "name": "Fight Area",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 185
+  },
+  {
+    "id": "sinnoh-floaroma-meadow",
+    "name": "Floaroma Meadow",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 175
+  },
+  {
+    "id": "sinnoh-floaroma-town",
+    "name": "Floaroma Town",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 164
+  },
+  {
+    "id": "sinnoh-flower-paradise",
+    "name": "Flower Paradise",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 179
+  },
+  {
+    "id": "sinnoh-flower-shop",
+    "name": "Pick a Peck of Colors Flower Shop",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 198
+  },
+  {
+    "id": "sinnoh-fountainspring-cave",
+    "name": "Fountainspring Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-fuego-ironworks",
+    "name": "Fuego Ironworks",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 9
+  },
+  {
+    "id": "sinnoh-fullmoon-island",
+    "name": "Fullmoon Island",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 177
+  },
+  {
+    "id": "sinnoh-galactic-hq",
+    "name": "Galactic HQ",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 181
+  },
+  {
+    "id": "sinnoh-galactic-warehouse",
+    "name": "Galactic Warehouse",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-game-corner",
+    "name": "Veilstone Game Corner",
+    "games": ["dp-d", "dp-p", "pt"],
+    "region": "sinnoh",
+    "pokeApiId": 205
+  },
+  {
+    "id": "sinnoh-glacial-cavern",
+    "name": "Glacial Cavern",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-global-terminal",
+    "name": "Global Terminal",
+    "games": ["dp-d", "dp-p", "pt"],
+    "region": "sinnoh",
+    "pokeApiId": 220
+  },
+  {
+    "id": "sinnoh-grand-lake-hotel",
+    "name": "Grand Lake Hotel",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 211
+  },
+  {
+    "id": "sinnoh-grand-underground",
+    "name": "Grand Underground",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-grassland-cave",
+    "name": "Grassland Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-great-marsh",
+    "name": "Great Marsh",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 11
+  },
+  {
+    "id": "sinnoh-hall-of-origin",
+    "name": "Hall of Origin",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 188
+  },
+  {
+    "id": "sinnoh-hearthome-city",
+    "name": "Hearthome City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 169
+  },
+  {
+    "id": "sinnoh-iceberg-ruins",
+    "name": "Iceberg Ruins",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 226
+  },
+  {
+    "id": "sinnoh-icy-cave",
+    "name": "Icy Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-iron-island",
+    "name": "Iron Island",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 24
+  },
+  {
+    "id": "sinnoh-iron-ruins",
+    "name": "Iron Ruins",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 225
+  },
+  {
+    "id": "sinnoh-jubilife-city",
+    "name": "Jubilife City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 167
+  },
+  {
+    "id": "sinnoh-jubilife-tv",
+    "name": "Jubilife TV",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 193
+  },
+  {
+    "id": "sinnoh-lake-acuity",
+    "name": "Lake Acuity",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 28
+  },
+  {
+    "id": "sinnoh-lake-valor",
+    "name": "Lake Valor",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 27
+  },
+  {
+    "id": "sinnoh-lake-verity",
+    "name": "Lake Verity",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 26
+  },
+  {
+    "id": "sinnoh-lost-tower",
+    "name": "Lost Tower",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 40
+  },
+  {
+    "id": "sinnoh-maniac-tunnel",
+    "name": "Maniac Tunnel",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 180
+  },
+  {
+    "id": "sinnoh-mining-museum",
+    "name": "Oreburgh Mining Museum",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 197
+  },
+  {
+    "id": "sinnoh-mt-coronet",
+    "name": "Mt. Coronet",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 10
+  },
+  {
+    "id": "sinnoh-newmoon-island",
+    "name": "Newmoon Island",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 183
+  },
+  {
+    "id": "sinnoh-old-chateau",
+    "name": "Old Chateau",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 25
+  },
+  {
+    "id": "sinnoh-oreburgh-city",
+    "name": "Oreburgh City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 168
+  },
+  {
+    "id": "sinnoh-oreburgh-gate",
+    "name": "Oreburgh Gate",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 15
+  },
+  {
+    "id": "sinnoh-oreburgh-mine",
+    "name": "Oreburgh Mine",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 6
+  },
+  {
+    "id": "sinnoh-pal-park",
+    "name": "Pal Park",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 173
+  },
+  {
+    "id": "sinnoh-pastoria-city",
+    "name": "Pastoria City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 3
+  },
+  {
+    "id": "sinnoh-poffin-house",
+    "name": "Poffin House",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 201
+  },
+  {
+    "id": "sinnoh-pokemon-day-care",
+    "name": "Pokémon Day Care",
+    "games": ["dp-d", "dp-p", "pt"],
+    "region": "sinnoh",
+    "pokeApiId": 203
+  },
+  {
+    "id": "sinnoh-pokemon-league",
+    "name": "Pokémon League",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 5
+  },
+  {
+    "id": "sinnoh-pokemon-mansion",
+    "name": "Pokémon Mansion",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-poketch-co",
+    "name": "Pokétch Company",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 194
+  },
+  {
+    "id": "sinnoh-ramanas-park",
+    "name": "Ramanas Park",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-ravaged-path",
+    "name": "Ravaged Path",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 14
+  },
+  {
+    "id": "sinnoh-resort-area",
+    "name": "Resort Area",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 60
+  },
+  {
+    "id": "sinnoh-restaurant",
+    "name": "Seven Stars Restaurant",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 212
+  },
+  {
+    "id": "sinnoh-riverbank-cave",
+    "name": "Riverbank Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-rock-peak-ruins",
+    "name": "Rock Peak Ruins",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 227
+  },
+  {
+    "id": "sinnoh-rocky-cave",
+    "name": "Rocky Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-rotoms-room",
+    "name": "Rotom's Room",
+    "games": ["pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 223
+  },
+  {
+    "id": "sinnoh-route-201",
+    "name": "Route 201",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 31
+  },
+  {
+    "id": "sinnoh-route-202",
+    "name": "Route 202",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 32
+  },
+  {
+    "id": "sinnoh-route-203",
+    "name": "Route 203",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 33
+  },
+  {
+    "id": "sinnoh-route-204",
+    "name": "Route 204",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 34
+  },
+  {
+    "id": "sinnoh-route-205",
+    "name": "Route 205",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 35
+  },
+  {
+    "id": "sinnoh-route-206",
+    "name": "Route 206",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 36
+  },
+  {
+    "id": "sinnoh-route-207",
+    "name": "Route 207",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 37
+  },
+  {
+    "id": "sinnoh-route-208",
+    "name": "Route 208",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 38
+  },
+  {
+    "id": "sinnoh-route-209",
+    "name": "Route 209",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 39
+  },
+  {
+    "id": "sinnoh-route-210",
+    "name": "Route 210",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 41
+  },
+  {
+    "id": "sinnoh-route-211",
+    "name": "Route 211",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 42
+  },
+  {
+    "id": "sinnoh-route-212",
+    "name": "Route 212",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 43
+  },
+  {
+    "id": "sinnoh-route-213",
+    "name": "Route 213",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 44
+  },
+  {
+    "id": "sinnoh-route-214",
+    "name": "Route 214",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 45
+  },
+  {
+    "id": "sinnoh-route-215",
+    "name": "Route 215",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 46
+  },
+  {
+    "id": "sinnoh-route-216",
+    "name": "Route 216",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 47
+  },
+  {
+    "id": "sinnoh-route-217",
+    "name": "Route 217",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 48
+  },
+  {
+    "id": "sinnoh-route-218",
+    "name": "Route 218",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 49
+  },
+  {
+    "id": "sinnoh-route-219",
+    "name": "Route 219",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 50
+  },
+  {
+    "id": "sinnoh-route-220",
+    "name": "Route 220",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 61
+  },
+  {
+    "id": "sinnoh-route-221",
+    "name": "Route 221",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 51
+  },
+  {
+    "id": "sinnoh-route-222",
+    "name": "Route 222",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 52
+  },
+  {
+    "id": "sinnoh-route-223",
+    "name": "Route 223",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 62
+  },
+  {
+    "id": "sinnoh-route-224",
+    "name": "Route 224",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 53
+  },
+  {
+    "id": "sinnoh-route-225",
+    "name": "Route 225",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 54
+  },
+  {
+    "id": "sinnoh-route-226",
+    "name": "Route 226",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 63
+  },
+  {
+    "id": "sinnoh-route-227",
+    "name": "Route 227",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 55
+  },
+  {
+    "id": "sinnoh-route-228",
+    "name": "Route 228",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 56
+  },
+  {
+    "id": "sinnoh-route-229",
+    "name": "Route 229",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 57
+  },
+  {
+    "id": "sinnoh-route-230",
+    "name": "Route 230",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 64
+  },
+  {
+    "id": "sinnoh-ruin-maniac-cave",
+    "name": "Ruin Maniac Cave",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 22
+  },
+  {
+    "id": "sinnoh-sandgem-town",
+    "name": "Sandgem Town",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 163
+  },
+  {
+    "id": "sinnoh-sandsear-cave",
+    "name": "Sandsear Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-seabreak-path",
+    "name": "Seabreak Path",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 187
+  },
+  {
+    "id": "sinnoh-sendoff-spring",
+    "name": "Sendoff Spring",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 178
+  },
+  {
+    "id": "sinnoh-snowpoint-city",
+    "name": "Snowpoint City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 171
+  },
+  {
+    "id": "sinnoh-snowpoint-temple",
+    "name": "Snowpoint Temple",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 19
+  },
+  {
+    "id": "sinnoh-solaceon-ruins",
+    "name": "Solaceon Ruins",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 12
+  },
+  {
+    "id": "sinnoh-solaceon-town",
+    "name": "Solaceon Town",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 165
+  },
+  {
+    "id": "sinnoh-spacious-cave",
+    "name": "Spacious Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-spear-pillar",
+    "name": "Spear Pillar",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 172
+  },
+  {
+    "id": "sinnoh-spring-path",
+    "name": "Spring Path",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 17
+  },
+  {
+    "id": "sinnoh-stargleam-cavern",
+    "name": "Stargleam Cavern",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-stark-mountain",
+    "name": "Stark Mountain",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 16
+  },
+  {
+    "id": "sinnoh-still-water-cavern",
+    "name": "Still-Water Cavern",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-sunlit-cavern",
+    "name": "Sunlit Cavern",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-sunyshore-city",
+    "name": "Sunyshore City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 4
+  },
+  {
+    "id": "sinnoh-sunyshore-market",
+    "name": "Sunyshore Market",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 208
+  },
+  {
+    "id": "sinnoh-survival-area",
+    "name": "Survival Area",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 186
+  },
+  {
+    "id": "sinnoh-swampy-cave",
+    "name": "Swampy Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-trainers-school",
+    "name": "Trainers’ School",
+    "games": ["usum-us", "usum-um"],
+    "region": "sinnoh",
+    "pokeApiId": 196
+  },
+  {
+    "id": "sinnoh-trophy-garden",
+    "name": "Trophy Garden",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 23
+  },
+  {
+    "id": "sinnoh-turnback-cave",
+    "name": "Turnback Cave",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 18
+  },
+  {
+    "id": "sinnoh-twinleaf-town",
+    "name": "Twinleaf Town",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 58
+  },
+  {
+    "id": "sinnoh-typhlo-cavern",
+    "name": "Typhlo Cavern",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-valley-windworks",
+    "name": "Valley Windworks",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 7
+  },
+  {
+    "id": "sinnoh-valor-lakefront",
+    "name": "Valor Lakefront",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 29
+  },
+  {
+    "id": "sinnoh-veilstone-city",
+    "name": "Veilstone City",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 170
+  },
+  {
+    "id": "sinnoh-veilstone-store",
+    "name": "Veilstone Department Store",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 204
+  },
+  {
+    "id": "sinnoh-verity-lakefront",
+    "name": "Verity Lakefront",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 182
+  },
+  {
+    "id": "sinnoh-victory-road",
+    "name": "Victory Road",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 13
+  },
+  {
+    "id": "sinnoh-villa",
+    "name": "Villa",
+    "games": ["pt"],
+    "region": "sinnoh",
+    "pokeApiId": 221
+  },
+  {
+    "id": "sinnoh-vista-lighthouse",
+    "name": "Vista Lighthouse",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 207
+  },
+  {
+    "id": "sinnoh-volcanic-cave",
+    "name": "Volcanic Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "sinnoh-wayward-cave",
+    "name": "Wayward Cave",
+    "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": 20
+  },
+  {
+    "id": "sinnoh-whiteout-cave",
+    "name": "Whiteout Cave",
+    "games": ["bdsp-bd", "bdsp-sp"],
+    "region": "sinnoh",
+    "pokeApiId": null
+  },
+  {
+    "id": "unova-abundant-shrine",
+    "name": "Abundant Shrine",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 412
+  },
+  {
+    "id": "unova-abyssal-ruins",
+    "name": "Abyssal Ruins",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 428
+  },
+  {
+    "id": "unova-accumula-town",
+    "name": "Accumula Town",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 347
+  },
+  {
+    "id": "unova-anville-town",
+    "name": "Anville Town",
+    "games": ["bw-b", "bw-w"],
+    "region": "unova",
+    "pokeApiId": 385
+  },
+  {
+    "id": "unova-aspertia-city",
+    "name": "Aspertia City",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 531
+  },
+  {
+    "id": "unova-battle-subway",
+    "name": "Battle Subway",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 390
+  },
+  {
+    "id": "unova-black-city",
+    "name": "Black City",
+    "games": ["bw-b", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 392
+  },
+  {
+    "id": "unova-black-tower",
+    "name": "Black Tower",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 553
+  },
+  {
+    "id": "unova-blueberry-academy",
+    "name": "Blueberry Academy",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": null
+  },
+  {
+    "id": "unova-canyon-biome",
+    "name": "Canyon Biome",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1076
+  },
+  {
+    "id": "unova-canyon-plaza",
+    "name": "Canyon Plaza",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1077
+  },
+  {
+    "id": "unova-castelia-city",
+    "name": "Castelia City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 350
+  },
+  {
+    "id": "unova-castelia-sewers",
+    "name": "Castelia Sewers",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 543
+  },
+  {
+    "id": "unova-cave-of-being",
+    "name": "Cave of Being",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 555
+  },
+  {
+    "id": "unova-celestial-tower",
+    "name": "Celestial Tower",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 398
+  },
+  {
+    "id": "unova-central-plaza",
+    "name": "Central Plaza",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1078
+  },
+  {
+    "id": "unova-challengers-cave",
+    "name": "Challenger's Cave",
+    "games": ["bw-b", "bw-w"],
+    "region": "unova",
+    "pokeApiId": 401
+  },
+  {
+    "id": "unova-chargestone-cave",
+    "name": "Chargestone Cave",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 379
+  },
+  {
+    "id": "unova-chargestone-cavern",
+    "name": "Chargestone Cavern",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1079
+  },
+  {
+    "id": "unova-clay-tunnel",
+    "name": "Clay Tunnel",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 551
+  },
+  {
+    "id": "unova-coastal-biome",
+    "name": "Coastal Biome",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1080
+  },
+  {
+    "id": "unova-coastal-plaza",
+    "name": "Coastal Plaza",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1081
+  },
+  {
+    "id": "unova-cold-storage",
+    "name": "Cold Storage",
+    "games": ["bw-b", "bw-w"],
+    "region": "unova",
+    "pokeApiId": 378
+  },
+  {
+    "id": "unova-desert-resort",
+    "name": "Desert Resort",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 376
+  },
+  {
+    "id": "unova-dragonspiral-tower",
+    "name": "Dragonspiral Tower",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 381
+  },
+  {
+    "id": "unova-dreamyard",
+    "name": "Dreamyard",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 374
+  },
+  {
+    "id": "unova-driftveil-city",
+    "name": "Driftveil City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 352
+  },
+  {
+    "id": "unova-driftveil-drawbridge",
+    "name": "Driftveil Drawbridge",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 407
+  },
+  {
+    "id": "unova-entralink",
+    "name": "Entralink",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 411
+  },
+  {
+    "id": "unova-floccesy-ranch",
+    "name": "Floccesy Ranch",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 544
+  },
+  {
+    "id": "unova-floccesy-town",
+    "name": "Floccesy Town",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 536
+  },
+  {
+    "id": "unova-gear-station",
+    "name": "Gear Station",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 389
+  },
+  {
+    "id": "unova-giant-chasm",
+    "name": "Giant Chasm",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 403
+  },
+  {
+    "id": "unova-glacier-room",
+    "name": "Glacier Room",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 564
+  },
+  {
+    "id": "unova-guidance-chamber",
+    "name": "Guidance Chamber",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 416
+  },
+  {
+    "id": "unova-hidden-grotto",
+    "name": "Hidden Grotto",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 556
+  },
+  {
+    "id": "unova-humilau-city",
+    "name": "Humilau City",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 533
+  },
+  {
+    "id": "unova-icirrus-city",
+    "name": "Icirrus City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 354
+  },
+  {
+    "id": "unova-iron-room",
+    "name": "Iron Room",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 565
+  },
+  {
+    "id": "unova-join-avenue",
+    "name": "Join Avenue",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 535
+  },
+  {
+    "id": "unova-lacunosa-town",
+    "name": "Lacunosa Town",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 383
+  },
+  {
+    "id": "unova-league-club-room",
+    "name": "League Club Room",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1082
+  },
+  {
+    "id": "unova-lentimas-town",
+    "name": "Lentimas Town",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 537
+  },
+  {
+    "id": "unova-liberty-garden",
+    "name": "Liberty Garden",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 404
+  },
+  {
+    "id": "unova-lostlorn-forest",
+    "name": "Lostlorn Forest",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 414
+  },
+  {
+    "id": "unova-marine-tube",
+    "name": "Marine Tube",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 557
+  },
+  {
+    "id": "unova-marvelous-bridge",
+    "name": "Marvelous Bridge",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 410
+  },
+  {
+    "id": "unova-mistralton-cave",
+    "name": "Mistralton Cave",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 396
+  },
+  {
+    "id": "unova-mistralton-city",
+    "name": "Mistralton City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 353
+  },
+  {
+    "id": "unova-moor-of-icirrus",
+    "name": "Moor of Icirrus",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 399
+  },
+  {
+    "id": "unova-nacrene-city",
+    "name": "Nacrene City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 349
+  },
+  {
+    "id": "unova-nature-preserve",
+    "name": "Nature Preserve",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": null
+  },
+  {
+    "id": "unova-nature-sanctuary",
+    "name": "Nature Sanctuary",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 560
+  },
+  {
+    "id": "unova-nimbasa-city",
+    "name": "Nimbasa City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 351
+  },
+  {
+    "id": "unova-ns-castle",
+    "name": "N's Castle",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 387
+  },
+  {
+    "id": "unova-nuvema-town",
+    "name": "Nuvema Town",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 346
+  },
+  {
+    "id": "unova-opelucid-city",
+    "name": "Opelucid City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 355
+  },
+  {
+    "id": "unova-p2-laboratory",
+    "name": "P2 Laboratory",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 405
+  },
+  {
+    "id": "unova-pinwheel-forest",
+    "name": "Pinwheel Forest",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 375
+  },
+  {
+    "id": "unova-plasma-frigate",
+    "name": "Plasma Frigate",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 549
+  },
+  {
+    "id": "unova-pledge-grove",
+    "name": "Pledge Grove",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 566
+  },
+  {
+    "id": "unova-poke-transfer-lab",
+    "name": "Poké Transfer Lab",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 402
+  },
+  {
+    "id": "unova-pokemon-league",
+    "name": "Pokémon League",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 386
+  },
+  {
+    "id": "unova-pokemon-world-tournament",
+    "name": "Pokémon World Tournament",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": null
+  },
+  {
+    "id": "unova-pokestar-studios",
+    "name": "PokéStar Studios",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 534
+  },
+  {
+    "id": "unova-polar-biome",
+    "name": "Polar Biome",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1083
+  },
+  {
+    "id": "unova-polar-plaza",
+    "name": "Polar Plaza",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1084
+  },
+  {
+    "id": "unova-relic-castle",
+    "name": "Relic Castle",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 377
+  },
+  {
+    "id": "unova-relic-passage",
+    "name": "Relic Passage",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 550
+  },
+  {
+    "id": "unova-reversal-mountain",
+    "name": "Reversal Mountain",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 546
+  },
+  {
+    "id": "unova-rocky-mountain-room",
+    "name": "Rocky Mountain Room",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 563
+  },
+  {
+    "id": "unova-route-1",
+    "name": "Route 1",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 356
+  },
+  {
+    "id": "unova-route-10",
+    "name": "Route 10",
+    "games": ["bw-b", "bw-w"],
+    "region": "unova",
+    "pokeApiId": 365
+  },
+  {
+    "id": "unova-route-11",
+    "name": "Route 11",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 366
+  },
+  {
+    "id": "unova-route-12",
+    "name": "Route 12",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 367
+  },
+  {
+    "id": "unova-route-13",
+    "name": "Route 13",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 368
+  },
+  {
+    "id": "unova-route-14",
+    "name": "Route 14",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 369
+  },
+  {
+    "id": "unova-route-15",
+    "name": "Route 15",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 370
+  },
+  {
+    "id": "unova-route-16",
+    "name": "Route 16",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 371
+  },
+  {
+    "id": "unova-route-17",
+    "name": "Route 17",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 372
+  },
+  {
+    "id": "unova-route-18",
+    "name": "Route 18",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 373
+  },
+  {
+    "id": "unova-route-19",
+    "name": "Route 19",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 538
+  },
+  {
+    "id": "unova-route-2",
+    "name": "Route 2",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 357
+  },
+  {
+    "id": "unova-route-20",
+    "name": "Route 20",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 539
+  },
+  {
+    "id": "unova-route-21",
+    "name": "Route 21",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 540
+  },
+  {
+    "id": "unova-route-22",
+    "name": "Route 22",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 541
+  },
+  {
+    "id": "unova-route-23",
+    "name": "Route 23",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 542
+  },
+  {
+    "id": "unova-route-3",
+    "name": "Route 3",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 358
+  },
+  {
+    "id": "unova-route-4",
+    "name": "Route 4",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 359
+  },
+  {
+    "id": "unova-route-5",
+    "name": "Route 5",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 360
+  },
+  {
+    "id": "unova-route-6",
+    "name": "Route 6",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 361
+  },
+  {
+    "id": "unova-route-7",
+    "name": "Route 7",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 362
+  },
+  {
+    "id": "unova-route-8",
+    "name": "Route 8",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 363
+  },
+  {
+    "id": "unova-route-9",
+    "name": "Route 9",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 364
+  },
+  {
+    "id": "unova-royal-unova",
+    "name": "Royal Unova",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 388
+  },
+  {
+    "id": "unova-savanna-biome",
+    "name": "Savanna Biome",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1085
+  },
+  {
+    "id": "unova-savanna-plaza",
+    "name": "Savanna Plaza",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1086
+  },
+  {
+    "id": "unova-seaside-cave",
+    "name": "Seaside Cave",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 554
+  },
+  {
+    "id": "unova-shopping-mall",
+    "name": "Shopping Mall Nine",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 400
+  },
+  {
+    "id": "unova-skyarrow-bridge",
+    "name": "Skyarrow Bridge",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 406
+  },
+  {
+    "id": "unova-strange-house",
+    "name": "Strange House",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 547
+  },
+  {
+    "id": "unova-striaton-city",
+    "name": "Striaton City",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 348
+  },
+  {
+    "id": "unova-torchlit-labyrinth",
+    "name": "Torchlit Labyrinth",
+    "games": ["sv-s", "sv-v"],
+    "region": "unova",
+    "pokeApiId": 1087
+  },
+  {
+    "id": "unova-trial-chamber",
+    "name": "Trial Chamber",
+    "games": ["bw-b", "bw-w"],
+    "region": "unova",
+    "pokeApiId": 415
+  },
+  {
+    "id": "unova-tubeline-bridge",
+    "name": "Tubeline Bridge",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 408
+  },
+  {
+    "id": "unova-twist-mountain",
+    "name": "Twist Mountain",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 380
+  },
+  {
+    "id": "unova-undella-bay",
+    "name": "Undella Bay",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 413
+  },
+  {
+    "id": "unova-undella-town",
+    "name": "Undella Town",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 384
+  },
+  {
+    "id": "unova-underground-ruins",
+    "name": "Underground Ruins",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 562
+  },
+  {
+    "id": "unova-unity-tower",
+    "name": "Unity Tower",
+    "games": ["bw-b", "bw-w"],
+    "region": "unova",
+    "pokeApiId": 394
+  },
+  {
+    "id": "unova-victory-road-b2w2",
+    "name": "Victory Road",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 548
+  },
+  {
+    "id": "unova-victory-road-bw",
+    "name": "Victory Road",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 382
+  },
+  {
+    "id": "unova-village-bridge",
+    "name": "Village Bridge",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 409
+  },
+  {
+    "id": "unova-virbank-city",
+    "name": "Virbank City",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 532
+  },
+  {
+    "id": "unova-virbank-complex",
+    "name": "Virbank Complex",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 545
+  },
+  {
+    "id": "unova-wellspring-cave",
+    "name": "Wellspring Cave",
+    "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 395
+  },
+  {
+    "id": "unova-white-forest",
+    "name": "White Forest",
+    "games": ["bw-w", "b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 393
+  },
+  {
+    "id": "unova-white-treehollow",
+    "name": "White Treehollow",
+    "games": ["b2w2-b2", "b2w2-w2"],
+    "region": "unova",
+    "pokeApiId": 552
+  },
+  {
+    "id": "kalos-ambrette-town",
+    "name": "Ambrette Town",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 614
+  },
+  {
+    "id": "kalos-anistar-city",
+    "name": "Anistar City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 643
+  },
+  {
+    "id": "kalos-aquacorde-town",
+    "name": "Aquacorde Town",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 590
+  },
+  {
+    "id": "kalos-autumnal-avenue",
+    "name": "Autumnal Avenue",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-azure-bay",
+    "name": "Azure Bay",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 661
+  },
+  {
+    "id": "kalos-battle-chateau",
+    "name": "Battle Chateau",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 617
+  },
+  {
+    "id": "kalos-battle-maison",
+    "name": "Battle Maison",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 660
+  },
+  {
+    "id": "kalos-battle-zone",
+    "name": "Battle Zone",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-berry-fields",
+    "name": "Berry Fields",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 1121
+  },
+  {
+    "id": "kalos-bleu-district",
+    "name": "Bleu District",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-camphrier-town",
+    "name": "Camphrier Town",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 604
+  },
+  {
+    "id": "kalos-centrico-plaza",
+    "name": "Centrico Plaza",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-chamber-of-emptiness",
+    "name": "Chamber of Emptiness",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 678
+  },
+  {
+    "id": "kalos-connecting-cave",
+    "name": "Connecting Cave",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 672
+  },
+  {
+    "id": "kalos-coumarine-city",
+    "name": "Coumarine City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 628
+  },
+  {
+    "id": "kalos-couriway-town",
+    "name": "Couriway Town",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 646
+  },
+  {
+    "id": "kalos-cyllage-city",
+    "name": "Cyllage City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 611
+  },
+  {
+    "id": "kalos-dendemille-town",
+    "name": "Dendemille Town",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 637
+  },
+  {
+    "id": "kalos-estival-avenue",
+    "name": "Estival Avenue",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-flare-cafe",
+    "name": "Flare Cafe",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-friend-safari",
+    "name": "Friend Safari",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 680
+  },
+  {
+    "id": "kalos-frost-cavern",
+    "name": "Frost Cavern",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 640
+  },
+  {
+    "id": "kalos-geosenge-town",
+    "name": "Geosenge Town",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 620
+  },
+  {
+    "id": "kalos-glittering-cave",
+    "name": "Glittering Cave",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 671
+  },
+  {
+    "id": "kalos-hibernal-avenue",
+    "name": "Hibernal Avenue",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hotel-richissime",
+    "name": "Hotel Richissime",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hotel-z",
+    "name": "Hotel Z",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-desolate-land",
+    "name": "Hyperspace Desolate Land",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-disaster-arena",
+    "name": "Hyperspace Disaster Arena",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-hunting-grounds",
+    "name": "Hyperspace Hunting Grounds",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-infernal-arena",
+    "name": "Hyperspace Infernal Arena",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-lumiose",
+    "name": "Hyperspace Lumiose",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-newmoon-nightmare",
+    "name": "Hyperspace Newmoon Nightmare",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-primordial-sea",
+    "name": "Hyperspace Primordial Sea",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-second-sight-arena",
+    "name": "Hyperspace Second-Sight Arena",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-sky-pillar",
+    "name": "Hyperspace Sky Pillar",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-hyperspace-sushi-paradise",
+    "name": "Hyperspace Sushi Paradise",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-jaune-district",
+    "name": "Jaune District",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-kalos-power-plant",
+    "name": "Kalos Power Plant",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 674
+  },
+  {
+    "id": "kalos-kiloude-city",
+    "name": "Kiloude City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 659
+  },
+  {
+    "id": "kalos-laverre-city",
+    "name": "Laverre City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 633
+  },
+  {
+    "id": "kalos-looker-bureau",
+    "name": "Looker Bureau",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-lost-hotel",
+    "name": "Lost Hotel",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 677
+  },
+  {
+    "id": "kalos-lumiose-city",
+    "name": "Lumiose City",
+    "games": ["xy-x", "xy-y", "lza"],
+    "region": "kalos",
+    "pokeApiId": 599
+  },
+  {
+    "id": "kalos-lysandre-labs",
+    "name": "Lysandre Labs",
+    "games": ["xy-x", "xy-y", "lza"],
+    "region": "kalos",
+    "pokeApiId": 601
+  },
+  {
+    "id": "kalos-magenta-district",
+    "name": "Magenta District",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-north-boulevard",
+    "name": "North Boulevard",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-old-house",
+    "name": "Old House",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-parfum-palace",
+    "name": "Parfum Palace",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 608
+  },
+  {
+    "id": "kalos-poke-ball-factory",
+    "name": "Poké Ball Factory",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 634
+  },
+  {
+    "id": "kalos-pokemon-league",
+    "name": "Pokémon League",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 658
+  },
+  {
+    "id": "kalos-pokemon-research-lab",
+    "name": "Pokemon Research Lab",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-pokemon-village",
+    "name": "Pokémon Village",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 652
+  },
+  {
+    "id": "kalos-prism-tower",
+    "name": "Prism Tower",
+    "games": ["xy-x", "xy-y", "lza"],
+    "region": "kalos",
+    "pokeApiId": 600
+  },
+  {
+    "id": "kalos-quasartico-inc",
+    "name": "Quasartico Inc.",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-racine-construction",
+    "name": "Racine Construction",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-reflection-cave",
+    "name": "Reflection Cave",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 623
+  },
+  {
+    "id": "kalos-restaurant-le-nah",
+    "name": "Restaurant Le Nah",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-restaurant-le-wow",
+    "name": "Restaurant Le Wow",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-restaurant-le-yeah",
+    "name": "Restaurant Le Yeah",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-rouge-district",
+    "name": "Rouge District",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-route-1",
+    "name": "Route 1",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 588
+  },
+  {
+    "id": "kalos-route-10",
+    "name": "Route 10",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 618
+  },
+  {
+    "id": "kalos-route-11",
+    "name": "Route 11",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 621
+  },
+  {
+    "id": "kalos-route-12",
+    "name": "Route 12",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 626
+  },
+  {
+    "id": "kalos-route-13",
+    "name": "Route 13",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 629
+  },
+  {
+    "id": "kalos-route-14",
+    "name": "Route 14",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 631
+  },
+  {
+    "id": "kalos-route-15",
+    "name": "Route 15",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 635
+  },
+  {
+    "id": "kalos-route-16",
+    "name": "Route 16",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 638
+  },
+  {
+    "id": "kalos-route-17",
+    "name": "Route 17",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 641
+  },
+  {
+    "id": "kalos-route-18",
+    "name": "Route 18",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 644
+  },
+  {
+    "id": "kalos-route-19",
+    "name": "Route 19",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 647
+  },
+  {
+    "id": "kalos-route-2",
+    "name": "Route 2",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 591
+  },
+  {
+    "id": "kalos-route-20",
+    "name": "Route 20",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 650
+  },
+  {
+    "id": "kalos-route-21",
+    "name": "Route 21",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 653
+  },
+  {
+    "id": "kalos-route-22",
+    "name": "Route 22",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 655
+  },
+  {
+    "id": "kalos-route-3",
+    "name": "Route 3",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 594
+  },
+  {
+    "id": "kalos-route-4",
+    "name": "Route 4",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 597
+  },
+  {
+    "id": "kalos-route-5",
+    "name": "Route 5",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 602
+  },
+  {
+    "id": "kalos-route-6",
+    "name": "Route 6",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 606
+  },
+  {
+    "id": "kalos-route-7",
+    "name": "Route 7",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 609
+  },
+  {
+    "id": "kalos-route-8",
+    "name": "Route 8",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 612
+  },
+  {
+    "id": "kalos-route-9",
+    "name": "Route 9",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 615
+  },
+  {
+    "id": "kalos-rust-syndicate-office",
+    "name": "Rust Syndicate Office",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-santalune-city",
+    "name": "Santalune City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 596
+  },
+  {
+    "id": "kalos-santalune-forest",
+    "name": "Santalune Forest",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 593
+  },
+  {
+    "id": "kalos-sea-spirits-den",
+    "name": "Sea Spirit’s Den",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 679
+  },
+  {
+    "id": "kalos-shabboneau-castle",
+    "name": "Shabboneau Castle",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 605
+  },
+  {
+    "id": "kalos-shalour-city",
+    "name": "Shalour City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 624
+  },
+  {
+    "id": "kalos-snowbelle-city",
+    "name": "Snowbelle City",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 649
+  },
+  {
+    "id": "kalos-south-boulevard",
+    "name": "South Boulevard",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-sushi-high-roller",
+    "name": "Sushi High Roller",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-team-flare-secret-hq",
+    "name": "Team Flare Secret HQ",
+    "games": ["bw-b", "bw-w", "xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 675
+  },
+  {
+    "id": "kalos-terminus-cave",
+    "name": "Terminus Cave",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 676
+  },
+  {
+    "id": "kalos-the-sewers-canal-access",
+    "name": "The Sewers - Canal Access",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-the-sewers-main-access",
+    "name": "The Sewers - Main Access",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-tower-of-mastery",
+    "name": "Tower of Mastery",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 625
+  },
+  {
+    "id": "kalos-unknown-dungeon",
+    "name": "Unknown Dungeon",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 690
+  },
+  {
+    "id": "kalos-vaniville-town",
+    "name": "Vaniville Town",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 587
+  },
+  {
+    "id": "kalos-vernal-avenue",
+    "name": "Vernal Avenue",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-vert-district",
+    "name": "Vert District",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-victory-road",
+    "name": "Victory Road",
+    "games": ["xy-x", "xy-y"],
+    "region": "kalos",
+    "pokeApiId": 657
+  },
+  {
+    "id": "kalos-wild-zone-1",
+    "name": "Wild Zone 1",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-10",
+    "name": "Wild Zone 10",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-11",
+    "name": "Wild Zone 11",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-12",
+    "name": "Wild Zone 12",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-13",
+    "name": "Wild Zone 13",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-14",
+    "name": "Wild Zone 14",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-15",
+    "name": "Wild Zone 15",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-16",
+    "name": "Wild Zone 16",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-17",
+    "name": "Wild Zone 17",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-18",
+    "name": "Wild Zone 18",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-19",
+    "name": "Wild Zone 19",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-2",
+    "name": "Wild Zone 2",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-20",
+    "name": "Wild Zone 20",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-3",
+    "name": "Wild Zone 3",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-4",
+    "name": "Wild Zone 4",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-5",
+    "name": "Wild Zone 5",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-6",
+    "name": "Wild Zone 6",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-7",
+    "name": "Wild Zone 7",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-8",
+    "name": "Wild Zone 8",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "kalos-wild-zone-9",
+    "name": "Wild Zone 9",
+    "games": ["lza"],
+    "region": "kalos",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-aether-house",
+    "name": "Aether House",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-aether-paradise",
+    "name": "Aether Paradise",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 796
+  },
+  {
+    "id": "alola-akala-outskirts",
+    "name": "Akala Outskirts",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 752
+  },
+  {
+    "id": "alola-altar-of-the-moone",
+    "name": "Altar of the Moone",
+    "games": ["sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 791
+  },
+  {
+    "id": "alola-altar-of-the-sunne",
+    "name": "Altar of the Sunne",
+    "games": ["sm-s", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 790
+  },
+  {
+    "id": "alola-ancient-poni-path",
+    "name": "Ancient Poni Path",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 782
+  },
+  {
+    "id": "alola-battle-royal-dome",
+    "name": "Battle Royal Dome",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 754
+  },
+  {
+    "id": "alola-battle-tree",
+    "name": "Battle Tree",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 795
+  },
+  {
+    "id": "alola-berry-fields",
+    "name": "Berry Fields",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 728
+  },
+  {
+    "id": "alola-big-wave-beach",
+    "name": "Big Wave Beach",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-blush-mountain",
+    "name": "Blush Mountain",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 771
+  },
+  {
+    "id": "alola-brooklet-hill",
+    "name": "Brooklet Hill",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 748
+  },
+  {
+    "id": "alola-digletts-tunnel",
+    "name": "Diglett’s Tunnel",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 753
+  },
+  {
+    "id": "alola-dividing-peak-tunnel",
+    "name": "Dividing Peak Tunnel",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1046
+  },
+  {
+    "id": "alola-exeggutor-island",
+    "name": "Exeggutor Island",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 794
+  },
+  {
+    "id": "alola-haina-desert",
+    "name": "Haina Desert",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 764
+  },
+  {
+    "id": "alola-hano-beach",
+    "name": "Hano Beach",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 738
+  },
+  {
+    "id": "alola-hano-grand-resort",
+    "name": "Hano Grand Resort",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 737
+  },
+  {
+    "id": "alola-hauoli-cemetery",
+    "name": "Hau’oli Cemetery",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 725
+  },
+  {
+    "id": "alola-hauoli-city",
+    "name": "Hau'oli City",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1042
+  },
+  {
+    "id": "alola-heahea-beach",
+    "name": "Heahea Beach",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1047
+  },
+  {
+    "id": "alola-heahea-city",
+    "name": "Heahea City",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 741
+  },
+  {
+    "id": "alola-hokulani-observatory",
+    "name": "Hokulani Observatory",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 778
+  },
+  {
+    "id": "alola-iki-town",
+    "name": "Iki Town",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 719
+  },
+  {
+    "id": "alola-kalae-bay",
+    "name": "Kala’e Bay",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 714
+  },
+  {
+    "id": "alola-konikoni-city",
+    "name": "Konikoni City",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 742
+  },
+  {
+    "id": "alola-lake-of-the-moone",
+    "name": "Lake of the Moone",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 774
+  },
+  {
+    "id": "alola-lake-of-the-sunne",
+    "name": "Lake of the Sunne",
+    "games": ["sm-s", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 773
+  },
+  {
+    "id": "alola-lush-jungle",
+    "name": "Lush Jungle",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 750
+  },
+  {
+    "id": "alola-mahalo-trail",
+    "name": "Mahalo Trail",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 720
+  },
+  {
+    "id": "alola-malie-city",
+    "name": "Malie City",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1045
+  },
+  {
+    "id": "alola-malie-garden",
+    "name": "Malie Garden",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 769
+  },
+  {
+    "id": "alola-megalo-tower",
+    "name": "Megalo Tower",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-melemele-meadow",
+    "name": "Melemele Meadow",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 726
+  },
+  {
+    "id": "alola-melemele-sea",
+    "name": "Melemele Sea",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 715
+  },
+  {
+    "id": "alola-memorial-hill",
+    "name": "Memorial Hill",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 744
+  },
+  {
+    "id": "alola-mount-hokulani",
+    "name": "Mount Hokulani",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 770
+  },
+  {
+    "id": "alola-mount-lanakila",
+    "name": "Mount Lanakila",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 775
+  },
+  {
+    "id": "alola-paniola-ranch",
+    "name": "Paniola Ranch",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 745
+  },
+  {
+    "id": "alola-paniola-town",
+    "name": "Paniola Town",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 740
+  },
+  {
+    "id": "alola-pikachu-valley",
+    "name": "Pikachu Valley",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-plains-grotto",
+    "name": "Plains Grotto",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-po-town",
+    "name": "Po Town",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 767
+  },
+  {
+    "id": "alola-poke-pelago",
+    "name": "Poké Pelago",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1052
+  },
+  {
+    "id": "alola-pokemon-league",
+    "name": "Pokémon League",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 779
+  },
+  {
+    "id": "alola-poni-beach",
+    "name": "Poni Beach",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-poni-breaker-coast",
+    "name": "Poni Breaker Coast",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 783
+  },
+  {
+    "id": "alola-poni-coast",
+    "name": "Poni Coast",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 786
+  },
+  {
+    "id": "alola-poni-gauntlet",
+    "name": "Poni Gauntlet",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 787
+  },
+  {
+    "id": "alola-poni-grove",
+    "name": "Poni Grove",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 784
+  },
+  {
+    "id": "alola-poni-meadow",
+    "name": "Poni Meadow",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 780
+  },
+  {
+    "id": "alola-poni-plains",
+    "name": "Poni Plains",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 785
+  },
+  {
+    "id": "alola-poni-wilds",
+    "name": "Poni Wilds",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 781
+  },
+  {
+    "id": "alola-resolution-cave",
+    "name": "Resolution Cave",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 793
+  },
+  {
+    "id": "alola-route-1",
+    "name": "Route 1",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 711
+  },
+  {
+    "id": "alola-route-10",
+    "name": "Route 10",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 755
+  },
+  {
+    "id": "alola-route-11",
+    "name": "Route 11",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 756
+  },
+  {
+    "id": "alola-route-12",
+    "name": "Route 12",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 763
+  },
+  {
+    "id": "alola-route-13",
+    "name": "Route 13",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 758
+  },
+  {
+    "id": "alola-route-14",
+    "name": "Route 14",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 765
+  },
+  {
+    "id": "alola-route-15",
+    "name": "Route 15",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 760
+  },
+  {
+    "id": "alola-route-16",
+    "name": "Route 16",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 761
+  },
+  {
+    "id": "alola-route-17",
+    "name": "Route 17",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 762
+  },
+  {
+    "id": "alola-route-2",
+    "name": "Route 2",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 713
+  },
+  {
+    "id": "alola-route-3",
+    "name": "Route 3",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 712
+  },
+  {
+    "id": "alola-route-4",
+    "name": "Route 4",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 731
+  },
+  {
+    "id": "alola-route-5",
+    "name": "Route 5",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 732
+  },
+  {
+    "id": "alola-route-6",
+    "name": "Route 6",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 733
+  },
+  {
+    "id": "alola-route-7",
+    "name": "Route 7",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 734
+  },
+  {
+    "id": "alola-route-8",
+    "name": "Route 8",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 735
+  },
+  {
+    "id": "alola-route-9",
+    "name": "Route 9",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 736
+  },
+  {
+    "id": "alola-royal-avenue",
+    "name": "Royal Avenue",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 743
+  },
+  {
+    "id": "alola-ruins-of-abundance",
+    "name": "Ruins of Abundance",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 772
+  },
+  {
+    "id": "alola-ruins-of-conflict",
+    "name": "Ruins of Conflict",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 722
+  },
+  {
+    "id": "alola-ruins-of-hope",
+    "name": "Ruins of Hope",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 792
+  },
+  {
+    "id": "alola-ruins-of-life",
+    "name": "Ruins of Life",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 751
+  },
+  {
+    "id": "alola-sandy-cave",
+    "name": "Sandy Cave",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1048
+  },
+  {
+    "id": "alola-seafolk-village",
+    "name": "Seafolk Village",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 788
+  },
+  {
+    "id": "alola-seaward-cave",
+    "name": "Seaward Cave",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 727
+  },
+  {
+    "id": "alola-secluded-shore",
+    "name": "Secluded Shore",
+    "games": ["sm-s", "sm-m"],
+    "region": "alola",
+    "pokeApiId": 757
+  },
+  {
+    "id": "alola-shady-house",
+    "name": "Shady House",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 776
+  },
+  {
+    "id": "alola-tapu-village",
+    "name": "Tapu Village",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 759
+  },
+  {
+    "id": "alola-team-rockets-castle",
+    "name": "Team Rocket's Castle",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1053
+  },
+  {
+    "id": "alola-ten-carat-hill",
+    "name": "Ten Carat Hill",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 723
+  },
+  {
+    "id": "alola-thrifty-megamart-abandoned-site",
+    "name": "Thrifty Megamart (Abandoned Site)",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1044
+  },
+  {
+    "id": "alola-ulaula-beach",
+    "name": "Ula'ula Beach",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1049
+  },
+  {
+    "id": "alola-ulaula-meadow",
+    "name": "Ula’ula Meadow",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 766
+  },
+  {
+    "id": "alola-ultra-crater",
+    "name": "Ultra Crater",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-ultra-deep-sea",
+    "name": "Ultra Deep Sea",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-ultra-desert",
+    "name": "Ultra Desert",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-ultra-forest",
+    "name": "Ultra Forest",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-ultra-jungle",
+    "name": "Ultra Jungle",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-ultra-megalopolis",
+    "name": "Ultra Megalopolis",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1050
+  },
+  {
+    "id": "alola-ultra-plant",
+    "name": "Ultra Plant",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-ultra-ruin",
+    "name": "Ultra Ruin",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": null
+  },
+  {
+    "id": "alola-ultra-space",
+    "name": "Ultra Space",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 797
+  },
+  {
+    "id": "alola-ultra-space-wilds",
+    "name": "Ultra Space Wilds",
+    "games": ["usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1051
+  },
+  {
+    "id": "alola-vast-poni-canyon",
+    "name": "Vast Poni Canyon",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 789
+  },
+  {
+    "id": "alola-verdant-cavern",
+    "name": "Verdant Cavern",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 1043
+  },
+  {
+    "id": "alola-verdant-cavern-trial-site",
+    "name": "Verdant Cavern (Trial Site)",
+    "games": ["sm-m"],
+    "region": "alola",
+    "pokeApiId": 729
+  },
+  {
+    "id": "alola-wela-volcano-park",
+    "name": "Wela Volcano Park",
+    "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+    "region": "alola",
+    "pokeApiId": 746
+  },
+  {
+    "id": "galar-axews-eye",
+    "name": "Axew's Eye",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 878
+  },
+  {
+    "id": "galar-ballimere-lake",
+    "name": "Ballimere Lake",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 879
+  },
+  {
+    "id": "galar-ballonlea",
+    "name": "Ballonlea",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 880
+  },
+  {
+    "id": "galar-battle-tower",
+    "name": "Battle Tower",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 881
+  },
+  {
+    "id": "galar-brawlers-cave",
+    "name": "Brawlers' Cave",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 882
+  },
+  {
+    "id": "galar-bridge-field",
+    "name": "Bridge Field",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 883
+  },
+  {
+    "id": "galar-challenge-beach",
+    "name": "Challenge Beach",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 884
+  },
+  {
+    "id": "galar-challenge-road",
+    "name": "Challenge Road",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 885
+  },
+  {
+    "id": "galar-circhester",
+    "name": "Circhester",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 886
+  },
+  {
+    "id": "galar-courageous-cavern",
+    "name": "Courageous Cavern",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 887
+  },
+  {
+    "id": "galar-crown-shrine",
+    "name": "Crown Shrine",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 888
+  },
+  {
+    "id": "galar-dappled-grove",
+    "name": "Dappled Grove",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 889
+  },
+  {
+    "id": "galar-dusty-bowl",
+    "name": "Dusty Bowl",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 890
+  },
+  {
+    "id": "galar-dyna-tree-hill",
+    "name": "Dyna Tree Hill",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 891
+  },
+  {
+    "id": "galar-east-lake-axewell",
+    "name": "East Lake Axewell",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 892
+  },
+  {
+    "id": "galar-energy-plant",
+    "name": "Energy Plant",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 1114
+  },
+  {
+    "id": "galar-fields-of-honor",
+    "name": "Fields of Honor",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 893
+  },
+  {
+    "id": "galar-forest-of-focus",
+    "name": "Forest of Focus",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 894
+  },
+  {
+    "id": "galar-freezington",
+    "name": "Freezington",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 895
+  },
+  {
+    "id": "galar-frigid-sea",
+    "name": "Frigid Sea",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 896
+  },
+  {
+    "id": "galar-frostpoint-field",
+    "name": "Frostpoint Field",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 897
+  },
+  {
+    "id": "galar-galar-mine",
+    "name": "Galar Mine",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 898
+  },
+  {
+    "id": "galar-galar-mine-no-2",
+    "name": "Galar Mine No. 2",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 899
+  },
+  {
+    "id": "galar-giants-bed",
+    "name": "Giant's Bed",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 900
+  },
+  {
+    "id": "galar-giants-cap",
+    "name": "Giant's Cap",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 1041
+  },
+  {
+    "id": "galar-giants-foot",
+    "name": "Giant's Foot",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 901
+  },
+  {
+    "id": "galar-giants-mirror",
+    "name": "Giant's Mirror",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 902
+  },
+  {
+    "id": "galar-giants-seat",
+    "name": "Giant's Seat",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 903
+  },
+  {
+    "id": "galar-glimwood-tangle",
+    "name": "Glimwood Tangle",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 904
+  },
+  {
+    "id": "galar-hammerlocke",
+    "name": "Hammerlocke",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 905
+  },
+  {
+    "id": "galar-hammerlocke-hills",
+    "name": "Hammerlocke Hills",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 906
+  },
+  {
+    "id": "galar-honeycalm-island",
+    "name": "Honeycalm Island",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 907
+  },
+  {
+    "id": "galar-honeycalm-sea",
+    "name": "Honeycalm Sea",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 908
+  },
+  {
+    "id": "galar-hulbury",
+    "name": "Hulbury",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 909
+  },
+  {
+    "id": "galar-iceberg-ruins",
+    "name": "Iceberg Ruins",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 910
+  },
+  {
+    "id": "galar-insular-sea",
+    "name": "Insular Sea",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 911
+  },
+  {
+    "id": "galar-iron-ruins",
+    "name": "Iron Ruins",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 912
+  },
+  {
+    "id": "galar-lake-of-outrage",
+    "name": "Lake of Outrage",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 913
+  },
+  {
+    "id": "galar-lakeside-cave",
+    "name": "Lakeside Cave",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 914
+  },
+  {
+    "id": "galar-loop-lagoon",
+    "name": "Loop Lagoon",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 915
+  },
+  {
+    "id": "galar-master-dojo",
+    "name": "Master Dojo",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 916
+  },
+  {
+    "id": "galar-max-lair",
+    "name": "Max Lair",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 917
+  },
+  {
+    "id": "galar-meetup-spot",
+    "name": "Meetup Spot",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 1115
+  },
+  {
+    "id": "galar-motostoke",
+    "name": "Motostoke",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 918
+  },
+  {
+    "id": "galar-motostoke-outskirts",
+    "name": "Motostoke Outskirts",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 919
+  },
+  {
+    "id": "galar-motostoke-riverbank",
+    "name": "Motostoke Riverbank",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 920
+  },
+  {
+    "id": "galar-north-lake-miloch",
+    "name": "North Lake Miloch",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 921
+  },
+  {
+    "id": "galar-old-cemetery",
+    "name": "Old Cemetery",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 922
+  },
+  {
+    "id": "galar-path-to-the-peak",
+    "name": "Path to the Peak",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 923
+  },
+  {
+    "id": "galar-postwick",
+    "name": "Postwick",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 924
+  },
+  {
+    "id": "galar-potbottom-desert",
+    "name": "Potbottom Desert",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 925
+  },
+  {
+    "id": "galar-roaring-sea-caves",
+    "name": "Roaring-Sea Caves",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 926
+  },
+  {
+    "id": "galar-rock-peak-ruins",
+    "name": "Rock Peak Ruins",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 927
+  },
+  {
+    "id": "galar-rolling-fields",
+    "name": "Rolling Fields",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 928
+  },
+  {
+    "id": "galar-rose-tower",
+    "name": "Rose Tower",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": null
+  },
+  {
+    "id": "galar-route-1",
+    "name": "Route 1",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 868
+  },
+  {
+    "id": "galar-route-10",
+    "name": "Route 10",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 877
+  },
+  {
+    "id": "galar-route-2",
+    "name": "Route 2",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 869
+  },
+  {
+    "id": "galar-route-3",
+    "name": "Route 3",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 870
+  },
+  {
+    "id": "galar-route-4",
+    "name": "Route 4",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 871
+  },
+  {
+    "id": "galar-route-5",
+    "name": "Route 5",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 872
+  },
+  {
+    "id": "galar-route-6",
+    "name": "Route 6",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 873
+  },
+  {
+    "id": "galar-route-7",
+    "name": "Route 7",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 874
+  },
+  {
+    "id": "galar-route-8",
+    "name": "Route 8",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 875
+  },
+  {
+    "id": "galar-route-9",
+    "name": "Route 9",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 876
+  },
+  {
+    "id": "galar-route-9-tunnel",
+    "name": "Route 9 Tunnel",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": null
+  },
+  {
+    "id": "galar-slippery-slope",
+    "name": "Slippery Slope",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 929
+  },
+  {
+    "id": "galar-slumbering-weald",
+    "name": "Slumbering Weald",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 930
+  },
+  {
+    "id": "galar-snowslide-slope",
+    "name": "Snowslide Slope",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 931
+  },
+  {
+    "id": "galar-soothing-wetlands",
+    "name": "Soothing Wetlands",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 932
+  },
+  {
+    "id": "galar-south-lake-miloch",
+    "name": "South Lake Miloch",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 933
+  },
+  {
+    "id": "galar-spikemuth",
+    "name": "Spikemuth",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 934
+  },
+  {
+    "id": "galar-split-decision-ruins",
+    "name": "Split-Decision Ruins",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 935
+  },
+  {
+    "id": "galar-steamdrift-way",
+    "name": "Steamdrift Way",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 936
+  },
+  {
+    "id": "galar-stepping-stone-sea",
+    "name": "Stepping-Stone Sea",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 937
+  },
+  {
+    "id": "galar-stony-wilderness",
+    "name": "Stony Wilderness",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 938
+  },
+  {
+    "id": "galar-stow-on-side",
+    "name": "Stow-on-Side",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 939
+  },
+  {
+    "id": "galar-three-point-pass",
+    "name": "Three-Point Pass",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 940
+  },
+  {
+    "id": "galar-tower-of-darkness",
+    "name": "Tower of Darkness",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 941
+  },
+  {
+    "id": "galar-tower-of-waters",
+    "name": "Tower of Waters",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 942
+  },
+  {
+    "id": "galar-training-lowlands",
+    "name": "Training Lowlands",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 943
+  },
+  {
+    "id": "galar-tunnel-to-the-top",
+    "name": "Tunnel to the Top",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 944
+  },
+  {
+    "id": "galar-turffield",
+    "name": "Turffield",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 945
+  },
+  {
+    "id": "galar-warm-up-tunnel",
+    "name": "Warm-Up Tunnel",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 946
+  },
+  {
+    "id": "galar-watchtower-ruins",
+    "name": "Watchtower Ruins",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 947
+  },
+  {
+    "id": "galar-wedgehurst",
+    "name": "Wedgehurst",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 948
+  },
+  {
+    "id": "galar-west-lake-axewell",
+    "name": "West Lake Axewell",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 949
+  },
+  {
+    "id": "galar-workout-sea",
+    "name": "Workout Sea",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 950
+  },
+  {
+    "id": "galar-wyndon",
+    "name": "Wyndon",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": 951
+  },
+  {
+    "id": "galar-wyndon-stadium",
+    "name": "Wyndon Stadium",
+    "games": ["swsh-sw", "swsh-sh"],
+    "region": "galar",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-aipom-hill",
+    "name": "Aipom Hill",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 952
+  },
+  {
+    "id": "hisui-alabaster-icelands",
+    "name": "Alabaster Icelands",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-ancient-quarry",
+    "name": "Ancient Quarry",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 953
+  },
+  {
+    "id": "hisui-ancient-retreat",
+    "name": "Ancient Retreat",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-arenas-approach",
+    "name": "Arena's Approach",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 954
+  },
+  {
+    "id": "hisui-aspiration-hill",
+    "name": "Aspiration Hill",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 955
+  },
+  {
+    "id": "hisui-avalanche-slopes",
+    "name": "Avalanche Slopes",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 956
+  },
+  {
+    "id": "hisui-avaluggs-legacy",
+    "name": "Avalugg's Legacy",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 957
+  },
+  {
+    "id": "hisui-bathers-lagoon",
+    "name": "Bathers' Lagoon",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 958
+  },
+  {
+    "id": "hisui-beachside-camp",
+    "name": "Beachside Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-bogbound-camp",
+    "name": "Bogbound Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-bolderoll-ravine",
+    "name": "Bolderoll Ravine",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 959
+  },
+  {
+    "id": "hisui-bolderoll-slope",
+    "name": "Bolderoll Slope",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 960
+  },
+  {
+    "id": "hisui-bonechill-wastes",
+    "name": "Bonechill Wastes",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 961
+  },
+  {
+    "id": "hisui-brava-arena",
+    "name": "Brava Arena",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 962
+  },
+  {
+    "id": "hisui-castaway-shore",
+    "name": "Castaway Shore",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 963
+  },
+  {
+    "id": "hisui-celestica-ruins",
+    "name": "Celestica Ruins",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 964
+  },
+  {
+    "id": "hisui-celestica-trail",
+    "name": "Celestica Trail",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 965
+  },
+  {
+    "id": "hisui-clamberclaw-cliffs",
+    "name": "Clamberclaw Cliffs",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 966
+  },
+  {
+    "id": "hisui-cloudcap-pass",
+    "name": "Cloudcap Pass",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 967
+  },
+  {
+    "id": "hisui-cloudpool-ridge",
+    "name": "Cloudpool Ridge",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 968
+  },
+  {
+    "id": "hisui-coastlands-camp",
+    "name": "Coastlands Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 969
+  },
+  {
+    "id": "hisui-cobalt-coastlands",
+    "name": "Cobalt Coastlands",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-coronet-highlands",
+    "name": "Coronet Highlands",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-cottonsedge-prairie",
+    "name": "Cottonsedge Prairie",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 970
+  },
+  {
+    "id": "hisui-crevasse-passage",
+    "name": "Crevasse Passage",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-crimson-mirelands",
+    "name": "Crimson Mirelands",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-crossing-slope",
+    "name": "Crossing Slope",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 971
+  },
+  {
+    "id": "hisui-deadwood-haunt",
+    "name": "Deadwood Haunt",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 972
+  },
+  {
+    "id": "hisui-deertrack-heights",
+    "name": "Deertrack Heights",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 973
+  },
+  {
+    "id": "hisui-deertrack-path",
+    "name": "Deertrack Path",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 974
+  },
+  {
+    "id": "hisui-diamond-heath",
+    "name": "Diamond Heath",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 975
+  },
+  {
+    "id": "hisui-diamond-settlement",
+    "name": "Diamond Settlement",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 976
+  },
+  {
+    "id": "hisui-droning-meadow",
+    "name": "Droning Meadow",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 977
+  },
+  {
+    "id": "hisui-fabled-spring",
+    "name": "Fabled Spring",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 978
+  },
+  {
+    "id": "hisui-fieldlands-camp",
+    "name": "Fieldlands Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-firespit-island",
+    "name": "Firespit Island",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 979
+  },
+  {
+    "id": "hisui-floaro-gardens",
+    "name": "Floaro Gardens",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 980
+  },
+  {
+    "id": "hisui-gapejaw-bog",
+    "name": "Gapejaw Bog",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 981
+  },
+  {
+    "id": "hisui-ginkgo-landing",
+    "name": "Ginkgo Landing",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 982
+  },
+  {
+    "id": "hisui-glacier-terrace",
+    "name": "Glacier Terrace",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 983
+  },
+  {
+    "id": "hisui-golden-lowlands",
+    "name": "Golden Lowlands",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 984
+  },
+  {
+    "id": "hisui-grandtree-arena",
+    "name": "Grandtree Arena",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 985
+  },
+  {
+    "id": "hisui-grueling-grove",
+    "name": "Grueling Grove",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 986
+  },
+  {
+    "id": "hisui-hearts-crag",
+    "name": "Heart's Crag",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 987
+  },
+  {
+    "id": "hisui-heavenward-lookout",
+    "name": "Heavenward Lookout",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 988
+  },
+  {
+    "id": "hisui-heights-camp",
+    "name": "Heights Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 989
+  },
+  {
+    "id": "hisui-hibernal-cave",
+    "name": "Hibernal Cave",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-hideaway-bay",
+    "name": "Hideaway Bay",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 990
+  },
+  {
+    "id": "hisui-highlands-camp",
+    "name": "Highlands Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-holm-of-trials",
+    "name": "Holm of Trials",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 991
+  },
+  {
+    "id": "hisui-horseshoe-plains",
+    "name": "Horseshoe Plains",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 992
+  },
+  {
+    "id": "hisui-ice-column-chamber",
+    "name": "Ice Column Chamber",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 993
+  },
+  {
+    "id": "hisui-ice-rock",
+    "name": "Ice Rock",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-icebound-falls",
+    "name": "Icebound Falls",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 994
+  },
+  {
+    "id": "hisui-icepeak-arena",
+    "name": "Icepeak Arena",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 995
+  },
+  {
+    "id": "hisui-icepeak-camp",
+    "name": "Icepeak Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-icepeak-cavern",
+    "name": "Icepeak Cavern",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 996
+  },
+  {
+    "id": "hisui-islespy-shore",
+    "name": "Islespy Shore",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 997
+  },
+  {
+    "id": "hisui-jubilife-village",
+    "name": "Jubilife Village",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 998
+  },
+  {
+    "id": "hisui-lake-acuity",
+    "name": "Lake Acuity",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 999
+  },
+  {
+    "id": "hisui-lake-valor",
+    "name": "Lake Valor",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1000
+  },
+  {
+    "id": "hisui-lake-verity",
+    "name": "Lake Verity",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1001
+  },
+  {
+    "id": "hisui-lava-dome-sanctum",
+    "name": "Lava Dome Sanctum",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-lonely-spring",
+    "name": "Lonely Spring",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1002
+  },
+  {
+    "id": "hisui-lunkers-lair",
+    "name": "Lunker's Lair",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1003
+  },
+  {
+    "id": "hisui-mirelands-camp",
+    "name": "Mirelands Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-molten-arena",
+    "name": "Molten Arena",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1004
+  },
+  {
+    "id": "hisui-moonview-arena",
+    "name": "Moonview Arena",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1005
+  },
+  {
+    "id": "hisui-moss-rock",
+    "name": "Moss Rock",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-mountain-camp",
+    "name": "Mountain Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-natures-pantry",
+    "name": "Nature's Pantry",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1006
+  },
+  {
+    "id": "hisui-obsidian-falls",
+    "name": "Obsidian Falls",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1007
+  },
+  {
+    "id": "hisui-obsidian-fieldlands",
+    "name": "Obsidian Fieldlands",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-oreburrow-tunnel",
+    "name": "Oreburrow Tunnel",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1008
+  },
+  {
+    "id": "hisui-pearl-settlement",
+    "name": "Pearl Settlement",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1009
+  },
+  {
+    "id": "hisui-prelude-beach",
+    "name": "Prelude Beach",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-primeval-grotto",
+    "name": "Primeval Grotto",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1010
+  },
+  {
+    "id": "hisui-ramanas-island",
+    "name": "Ramanas Island",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1011
+  },
+  {
+    "id": "hisui-sacred-plaza",
+    "name": "Sacred Plaza",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1012
+  },
+  {
+    "id": "hisui-sandgem-flats",
+    "name": "Sandgem Flats",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1014
+  },
+  {
+    "id": "hisui-sands-reach",
+    "name": "Sand's Reach",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1013
+  },
+  {
+    "id": "hisui-scarlet-bog",
+    "name": "Scarlet Bog",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1015
+  },
+  {
+    "id": "hisui-seagrass-haven",
+    "name": "Seagrass Haven",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1016
+  },
+  {
+    "id": "hisui-seaside-hollow",
+    "name": "Seaside Hollow",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1017
+  },
+  {
+    "id": "hisui-secret-hollow",
+    "name": "Secret Hollow",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-shrouded-ruins",
+    "name": "Shrouded Ruins",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1018
+  },
+  {
+    "id": "hisui-sludge-mound",
+    "name": "Sludge Mound",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1019
+  },
+  {
+    "id": "hisui-snowfall-hot-spring",
+    "name": "Snowfall Hot Spring",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1020
+  },
+  {
+    "id": "hisui-snowfields-camp",
+    "name": "Snowfields Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-snowpoint-temple",
+    "name": "Snowpoint Temple",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1021
+  },
+  {
+    "id": "hisui-solaceon-ruins",
+    "name": "Solaceon Ruins",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1022
+  },
+  {
+    "id": "hisui-sonorous-path",
+    "name": "Sonorous Path",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1023
+  },
+  {
+    "id": "hisui-space-time-distortion",
+    "name": "Space-time distortion",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1024
+  },
+  {
+    "id": "hisui-spear-pillar",
+    "name": "Spear Pillar",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-spring-path",
+    "name": "Spring Path",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1025
+  },
+  {
+    "id": "hisui-stone-portal",
+    "name": "Stone Portal",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-stonetooth-rows",
+    "name": "Stonetooth Rows",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1026
+  },
+  {
+    "id": "hisui-summit-camp",
+    "name": "Summit Camp",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-temple-of-sinnoh",
+    "name": "Temple of Sinnoh",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1027
+  },
+  {
+    "id": "hisui-the-heartwood",
+    "name": "The Heartwood",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1028
+  },
+  {
+    "id": "hisui-tidal-passage",
+    "name": "Tidal Passage",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": null
+  },
+  {
+    "id": "hisui-tidewater-dam",
+    "name": "Tidewater Dam",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1029
+  },
+  {
+    "id": "hisui-tombolo-walk",
+    "name": "Tombolo Walk",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1030
+  },
+  {
+    "id": "hisui-tranquility-cove",
+    "name": "Tranquility Cove",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1031
+  },
+  {
+    "id": "hisui-turnback-cave",
+    "name": "Turnback Cave",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1032
+  },
+  {
+    "id": "hisui-ursas-ring",
+    "name": "Ursa's Ring",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1033
+  },
+  {
+    "id": "hisui-veilstone-cape",
+    "name": "Veilstone Cape",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1034
+  },
+  {
+    "id": "hisui-wayward-cave",
+    "name": "Wayward Cave",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1035
+  },
+  {
+    "id": "hisui-wayward-wood",
+    "name": "Wayward Wood",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1036
+  },
+  {
+    "id": "hisui-whiteout-valley",
+    "name": "Whiteout Valley",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1037
+  },
+  {
+    "id": "hisui-windbreak-stand",
+    "name": "Windbreak Stand",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1038
+  },
+  {
+    "id": "hisui-windswept-run",
+    "name": "Windswept Run",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1039
+  },
+  {
+    "id": "hisui-worn-bridge",
+    "name": "Worn Bridge",
+    "games": ["la"],
+    "region": "hisui",
+    "pokeApiId": 1040
+  },
+  {
+    "id": "paldea-alfornada",
+    "name": "Alfornada",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 819
+  },
+  {
+    "id": "paldea-alfornada-cavern",
+    "name": "Alfornada Cavern",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 838
+  },
+  {
+    "id": "paldea-area-zero",
+    "name": "Area Zero",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 866
+  },
+  {
+    "id": "paldea-artazon",
+    "name": "Artazon",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 821
+  },
+  {
+    "id": "paldea-asado-desert",
+    "name": "Asado Desert",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 850
+  },
+  {
+    "id": "paldea-cabo-poco",
+    "name": "Cabo Poco",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 815
+  },
+  {
+    "id": "paldea-caph-squads-base",
+    "name": "Caph Squad's Base",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 865
+  },
+  {
+    "id": "paldea-cascarrafa",
+    "name": "Cascarrafa",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 824
+  },
+  {
+    "id": "paldea-casseroya-lake",
+    "name": "Casseroya Lake",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 857
+  },
+  {
+    "id": "paldea-colonnade-hollow",
+    "name": "Colonnade Hollow",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": null
+  },
+  {
+    "id": "paldea-cortondo",
+    "name": "Cortondo",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 818
+  },
+  {
+    "id": "paldea-dalizapa-passage",
+    "name": "Dalizapa Passage",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 858
+  },
+  {
+    "id": "paldea-east-paldean-sea",
+    "name": "East Paldean Sea",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 843
+  },
+  {
+    "id": "paldea-east-province-area-one",
+    "name": "East Province (Area One)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 840
+  },
+  {
+    "id": "paldea-east-province-area-three",
+    "name": "East Province (Area Three)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 842
+  },
+  {
+    "id": "paldea-east-province-area-two",
+    "name": "East Province (Area Two)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 841
+  },
+  {
+    "id": "paldea-firescourge-shrine",
+    "name": "Firescourge Shrine",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 862
+  },
+  {
+    "id": "paldea-glaseado-mountain",
+    "name": "Glaseado Mountain",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 859
+  },
+  {
+    "id": "paldea-grasswither-shrine",
+    "name": "Grasswither Shrine",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 839
+  },
+  {
+    "id": "paldea-groundblight-shrine",
+    "name": "Groundblight Shrine",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 861
+  },
+  {
+    "id": "paldea-icerend-shrine",
+    "name": "Icerend Shrine",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 853
+  },
+  {
+    "id": "paldea-inlet-grotto",
+    "name": "Inlet Grotto",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 836
+  },
+  {
+    "id": "paldea-levincia",
+    "name": "Levincia",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 822
+  },
+  {
+    "id": "paldea-los-platos",
+    "name": "Los Platos",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 816
+  },
+  {
+    "id": "paldea-medali",
+    "name": "Medali",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 826
+  },
+  {
+    "id": "paldea-mesagoza",
+    "name": "Mesagoza",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 817
+  },
+  {
+    "id": "paldea-montenevera",
+    "name": "Montenevera",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 827
+  },
+  {
+    "id": "paldea-naranja-academy",
+    "name": "Naranja Academy",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 837
+  },
+  {
+    "id": "paldea-navi-squads-base",
+    "name": "Navi Squad's Base",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 846
+  },
+  {
+    "id": "paldea-north-paldean-sea",
+    "name": "North Paldean Sea",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 863
+  },
+  {
+    "id": "paldea-north-province-area-one",
+    "name": "North Province (Area One)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 854
+  },
+  {
+    "id": "paldea-north-province-area-three",
+    "name": "North Province (Area Three)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 856
+  },
+  {
+    "id": "paldea-north-province-area-two",
+    "name": "North Province (Area Two)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 855
+  },
+  {
+    "id": "paldea-poco-path",
+    "name": "Poco Path",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 835
+  },
+  {
+    "id": "paldea-pokemon-league",
+    "name": "Pokémon League",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 820
+  },
+  {
+    "id": "paldea-porto-marinada",
+    "name": "Porto Marinada",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 825
+  },
+  {
+    "id": "paldea-research-station-no-1",
+    "name": "Research Station No. 1",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": null
+  },
+  {
+    "id": "paldea-research-station-no-2",
+    "name": "Research Station No. 2",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": null
+  },
+  {
+    "id": "paldea-research-station-no-3",
+    "name": "Research Station No. 3",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": null
+  },
+  {
+    "id": "paldea-research-station-no-4",
+    "name": "Research Station No. 4",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": null
+  },
+  {
+    "id": "paldea-ruchbah-squads-base",
+    "name": "Ruchbah Squad's Base",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 864
+  },
+  {
+    "id": "paldea-schedar-squads-base",
+    "name": "Schedar Squad's Base",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 845
+  },
+  {
+    "id": "paldea-segin-squads-base",
+    "name": "Segin Squad's Base",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 852
+  },
+  {
+    "id": "paldea-socarrat-trail",
+    "name": "Socarrat Trail",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 860
+  },
+  {
+    "id": "paldea-south-paldean-sea",
+    "name": "South Paldean Sea",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 834
+  },
+  {
+    "id": "paldea-south-province-area-five",
+    "name": "South Province (Area Five)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 832
+  },
+  {
+    "id": "paldea-south-province-area-four",
+    "name": "South Province (Area Four)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 831
+  },
+  {
+    "id": "paldea-south-province-area-one",
+    "name": "South Province (Area One)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 828
+  },
+  {
+    "id": "paldea-south-province-area-six",
+    "name": "South Province (Area Six)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 833
+  },
+  {
+    "id": "paldea-south-province-area-three",
+    "name": "South Province (Area Three)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 830
+  },
+  {
+    "id": "paldea-south-province-area-two",
+    "name": "South Province (Area Two)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 829
+  },
+  {
+    "id": "paldea-tagtree-thicket",
+    "name": "Tagtree Thicket",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 844
+  },
+  {
+    "id": "paldea-the-great-crater-of-paldea",
+    "name": "The Great Crater of Paldea",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": null
+  },
+  {
+    "id": "paldea-uva-academy",
+    "name": "Uva Academy",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 1057
+  },
+  {
+    "id": "paldea-west-paldean-sea",
+    "name": "West Paldean Sea",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 851
+  },
+  {
+    "id": "paldea-west-province-area-one",
+    "name": "West Province (Area One)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 847
+  },
+  {
+    "id": "paldea-west-province-area-three",
+    "name": "West Province (Area Three)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 849
+  },
+  {
+    "id": "paldea-west-province-area-two",
+    "name": "West Province (Area Two)",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 848
+  },
+  {
+    "id": "paldea-zapapico",
+    "name": "Zapapico",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 823
+  },
+  {
+    "id": "paldea-zero-gate",
+    "name": "Zero Gate",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": null
+  },
+  {
+    "id": "paldea-zero-lab",
+    "name": "Zero Lab",
+    "games": ["sv-s", "sv-v"],
+    "region": "paldea",
+    "pokeApiId": 867
+  },
+  {
+    "id": "kitakami-apple-hills",
+    "name": "Apple Hills",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1058
+  },
+  {
+    "id": "kitakami-chilling-waterhead",
+    "name": "Chilling Waterhead",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1059
+  },
+  {
+    "id": "kitakami-crystal-pool",
+    "name": "Crystal Pool",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1060
+  },
+  {
+    "id": "kitakami-dreaded-den",
+    "name": "Dreaded Den",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1061
+  },
+  {
+    "id": "kitakami-fellhorn-gorge",
+    "name": "Fellhorn Gorge",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1062
+  },
+  {
+    "id": "kitakami-infernal-pass",
+    "name": "Infernal Pass",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1063
+  },
+  {
+    "id": "kitakami-kitakami-hall",
+    "name": "Kitakami Hall",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1064
+  },
+  {
+    "id": "kitakami-kitakami-road",
+    "name": "Kitakami Road",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1065
+  },
+  {
+    "id": "kitakami-kitakami-wilds",
+    "name": "Kitakami Wilds",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1066
+  },
+  {
+    "id": "kitakami-loyalty-plaza",
+    "name": "Loyalty Plaza",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1067
+  },
+  {
+    "id": "kitakami-mossfell-confluence",
+    "name": "Mossfell Confluence",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1068
+  },
+  {
+    "id": "kitakami-mossui-town",
+    "name": "Mossui Town",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1069
+  },
+  {
+    "id": "kitakami-oni-mountain",
+    "name": "Oni Mountain",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1070
+  },
+  {
+    "id": "kitakami-oni-mountain-summit",
+    "name": "Oni Mountain Summit",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": null
+  },
+  {
+    "id": "kitakami-onis-maw",
+    "name": "Oni's Maw",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1071
+  },
+  {
+    "id": "kitakami-paradise-barrens",
+    "name": "Paradise Barrens",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1072
+  },
+  {
+    "id": "kitakami-revelers-road",
+    "name": "Reveler's Road",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1073
+  },
+  {
+    "id": "kitakami-timeless-woods",
+    "name": "Timeless Woods",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1074
+  },
+  {
+    "id": "kitakami-wistful-fields",
+    "name": "Wistful Fields",
+    "games": ["sv-s", "sv-v"],
+    "region": "kitakami",
+    "pokeApiId": 1075
+  }
 ]

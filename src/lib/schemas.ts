@@ -179,6 +179,15 @@ export const ribbonSchema = base.entityWithGenAndDescs.extend({
 })
 export const originMarkSchema = base.entity
 export const regionSchema = base.entity
+export const locationSchema = z
+  .object({
+    id: common.slug,
+    name: z.string().min(1).max(120),
+    games: z.array(common.slug).min(1).nullable(),
+    region: common.slug.nullable(),
+    pokeApiId: z.number().int().positive().nullable(),
+  })
+  .strict()
 export const typeSchema = base.entity.extend({
   color: common.colorHex,
   isCanonical: z.boolean(),
