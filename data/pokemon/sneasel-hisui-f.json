@@ -35,34 +35,7 @@
   "canDynamax": false,
   "canBeAlpha": true,
   "debutIn": "la",
-  "obtainableIn": [
-    "gs-g",
-    "gs-s",
-    "c",
-    "col",
-    "frlg-lg",
-    "dp-d",
-    "dp-p",
-    "pt",
-    "hgss-hg",
-    "hgss-ss",
-    "bw-b",
-    "bw-w",
-    "b2w2-b2",
-    "b2w2-w2",
-    "xy-x",
-    "xy-y",
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "swsh-sw",
-    "swsh-sh",
-    "bdsp-bd",
-    "bdsp-sp",
-    "la"
-  ],
+  "obtainableIn": ["go", "la"],
   "eventOnlyIn": [],
   "storableIn": ["go", "home", "la", "sv-s", "sv-v"],
   "shinyReleased": true,
@@ -127,16 +100,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": [
-    "rs-r",
-    "rs-s",
-    "frlg-fr",
-    "e",
-    "xd",
-    "oras-or",
-    "oras-as",
-    "home",
-    "sv-s",
-    "sv-v"
-  ]
+  "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

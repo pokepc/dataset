@@ -40,14 +40,13 @@
     "pt",
     "hgss-hg",
     "hgss-ss",
+    "bw-b",
     "bw-w",
     "xy-x",
     "xy-y",
     "oras-or",
     "oras-as",
     "go",
-    "sm-s",
-    "sm-m",
     "swsh-sw",
     "swsh-sh",
     "bdsp-bd",
@@ -111,11 +110,7 @@
   },
   "evolvesFrom": "shinx",
   "evoFromLevel": 15,
-  "names": {
-    "eng": "Luxio (Female)",
-    "fra": "Luxio (Female)",
-    "deu": "Luxio (Female)"
-  },
+  "names": { "eng": "Luxio (Female)", "fra": "Luxio (Female)", "deu": "Luxio (Female)" },
   "genus": {
     "eng": "Spark Pokémon",
     "esp": "Pokémon Chispa",
@@ -148,5 +143,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["bw-b", "b2w2-b2", "b2w2-w2", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["b2w2-b2", "b2w2-w2", "home"]
 }

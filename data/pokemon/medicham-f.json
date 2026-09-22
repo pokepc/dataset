@@ -38,7 +38,6 @@
     "rs-r",
     "rs-s",
     "col",
-    "xd",
     "dp-d",
     "dp-p",
     "pt",
@@ -51,8 +50,6 @@
     "oras-or",
     "oras-as",
     "go",
-    "usum-us",
-    "usum-um",
     "bdsp-bd",
     "bdsp-sp",
     "sv-s",
@@ -120,11 +117,7 @@
   },
   "evolvesFrom": "meditite",
   "evoFromLevel": 37,
-  "names": {
-    "eng": "Medicham (Female)",
-    "fra": "Charmina (Female)",
-    "deu": "Meditalis (Female)"
-  },
+  "names": { "eng": "Medicham (Female)", "fra": "Charmina (Female)", "deu": "Meditalis (Female)" },
   "genus": {
     "eng": "Meditate Pokémon",
     "esp": "Pokémon Meditador",
@@ -157,5 +150,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["frlg-fr", "frlg-lg", "e", "bw-b", "bw-w", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["frlg-fr", "frlg-lg", "e", "xd", "bw-b", "bw-w", "home"]
 }

@@ -39,7 +39,8 @@
     "gs-s",
     "c",
     "col",
-    "e",
+    "frlg-fr",
+    "frlg-lg",
     "dp-d",
     "dp-p",
     "pt",
@@ -57,7 +58,6 @@
     "bdsp-bd",
     "bdsp-sp",
     "la",
-    "sv-s",
     "sv-v"
   ],
   "eventOnlyIn": [],
@@ -121,11 +121,7 @@
     "serebii": "aipom",
     "bulbapedia": "Aipom"
   },
-  "names": {
-    "eng": "Aipom (Female)",
-    "fra": "Capumain (Female)",
-    "deu": "Griffel (Female)"
-  },
+  "names": { "eng": "Aipom (Female)", "fra": "Capumain (Female)", "deu": "Griffel (Female)" },
   "genus": {
     "eng": "Long Tail Pokémon",
     "esp": "Pokémon Cola Larga",
@@ -158,16 +154,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": [
-    "rs-r",
-    "rs-s",
-    "frlg-fr",
-    "frlg-lg",
-    "xd",
-    "bw-b",
-    "bw-w",
-    "sm-s",
-    "sm-m",
-    "home"
-  ]
+  "transferOnlyIn": ["rs-r", "rs-s", "e", "xd", "bw-b", "bw-w", "home", "sv-s"]
 }

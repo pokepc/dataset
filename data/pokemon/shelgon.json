@@ -40,6 +40,7 @@
     "pt",
     "hgss-hg",
     "hgss-ss",
+    "bw-b",
     "bw-w",
     "b2w2-b2",
     "b2w2-w2",
@@ -53,8 +54,9 @@
     "usum-us",
     "usum-um",
     "swsh-sw",
+    "swsh-sh",
+    "bdsp-bd",
     "bdsp-sp",
-    "sv-s",
     "sv-v",
     "lza"
   ],
@@ -141,15 +143,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": [
-    "col",
-    "frlg-fr",
-    "frlg-lg",
-    "xd",
-    "dp-d",
-    "bw-b",
-    "swsh-sh",
-    "home",
-    "bdsp-bd"
-  ]
+  "transferOnlyIn": ["col", "frlg-fr", "frlg-lg", "xd", "dp-d", "home", "sv-s"]
 }

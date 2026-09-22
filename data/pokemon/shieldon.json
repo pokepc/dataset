@@ -34,11 +34,8 @@
   "canBeAlpha": true,
   "debutIn": "dp",
   "obtainableIn": [
-    "dp-d",
     "dp-p",
     "pt",
-    "hgss-hg",
-    "hgss-ss",
     "bw-b",
     "bw-w",
     "b2w2-b2",
@@ -46,7 +43,6 @@
     "xy-x",
     "xy-y",
     "oras-or",
-    "oras-as",
     "go",
     "sm-s",
     "sm-m",
@@ -55,7 +51,6 @@
     "bdsp-bd",
     "bdsp-sp",
     "la",
-    "sv-s",
     "sv-v"
   ],
   "eventOnlyIn": [],
@@ -130,5 +125,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["dp-d", "hgss-hg", "hgss-ss", "oras-as", "home", "sv-s"]
 }

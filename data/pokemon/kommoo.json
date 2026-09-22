@@ -34,7 +34,17 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "sm",
-  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "sv-s", "sv-v"],
+  "obtainableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "sv-s",
+    "sv-v"
+  ],
   "eventOnlyIn": [],
   "storableIn": [
     "go",
@@ -96,5 +106,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["swsh-sh", "home"]
+  "transferOnlyIn": ["home"]
 }
