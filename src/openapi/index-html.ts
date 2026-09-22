@@ -182,7 +182,7 @@ export function renderOpenApiIndexHtml() {
             const link = document.createElement('a');
             link.href = server.url + '/';
             link.title = server.description || server.url;
-            link.textContent = rank(server) === 0 ? 'Default branch' : rank(server) === 1 ? 'Latest stable' : new URL(server.url).pathname.split('/').pop();
+            link.textContent = rank(server) === 0 ? 'dev' : rank(server) === 1 ? 'latest' : new URL(server.url).pathname.split('/').pop();
             if (link.href === currentUrl) link.setAttribute('aria-current', 'page');
             const version = server.description?.match(/\\(([^)]+)\\)$/)?.[1];
             if (version && rank(server) > 0) {
