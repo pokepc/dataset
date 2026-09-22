@@ -37,6 +37,21 @@ describe('Validate pokemon/*.json data references', () => {
   const pokemonMap = new Map(recordList.map((record) => [record.id, record]))
   const abilityMap = new Map(loadAllAbilities().map((ability) => [ability.id, ability]))
   const gameMap = new Map(loadAllGames().map((game) => [game.id, game]))
+
+  it('should use the canonical Bulbapedia species title for every Pokémon and form', () => {
+    const speciesMap = new Map(
+      recordList.filter((record) => record.isDefault).map((record) => [record.dexNum, record]),
+    )
+    for (const record of recordList) {
+      const name = speciesMap.get(record.dexNum)?.names.eng
+      if (!name) throw new Error(`Missing English species name for ${record.id}`)
+      // Cached Bulbapedia titles match English species names, with straight apostrophes.
+      // Some default forms include a parenthesized form name that is not part of the title.
+      const title = name.split(' (')[0].normalize('NFC').replaceAll('’', "'")
+      expect(record.refs.bulbapedia, record.id).toBe(title)
+    }
+  })
+
   it.each(recordList.map((record) => [record.id, record]))(
     'should have valid abilities in pokemon %s',
     (_recordId, record) => {

@@ -2,6 +2,14 @@ import { describe, expect, it } from 'vitest'
 import pikachu from '../../../data/pokemon/pikachu.json'
 import femalePikachu from '../../../data/pokemon/pikachu-f.json'
 import nidoranFemale from '../../../data/pokemon/nidoranf.json'
+import nidoranMale from '../../../data/pokemon/nidoranm.json'
+import farfetchd from '../../../data/pokemon/farfetchd.json'
+import galarianFarfetchd from '../../../data/pokemon/farfetchd-galar.json'
+import sirfetchd from '../../../data/pokemon/sirfetchd.json'
+import flabebe from '../../../data/pokemon/flabebe.json'
+import typeNull from '../../../data/pokemon/typenull.json'
+import greatTusk from '../../../data/pokemon/greattusk.json'
+import woChien from '../../../data/pokemon/wochien.json'
 import raichu from '../../../data/pokemon/raichu.json'
 import femaleRaichu from '../../../data/pokemon/raichu-f.json'
 import alolanRaichu from '../../../data/pokemon/raichu-alola.json'
@@ -210,6 +218,15 @@ describe('identity and game normalization', () => {
     { pokemon: blazeTauros, slug: 'Tauros' },
     { pokemon: aquaTauros, slug: 'Tauros' },
     { pokemon: paldeanWooper, slug: 'Wooper' },
+    { pokemon: nidoranFemale, slug: 'Nidoran%E2%99%80' },
+    { pokemon: nidoranMale, slug: 'Nidoran%E2%99%82' },
+    { pokemon: farfetchd, slug: "Farfetch'd" },
+    { pokemon: galarianFarfetchd, slug: "Farfetch'd" },
+    { pokemon: sirfetchd, slug: "Sirfetch'd" },
+    { pokemon: flabebe, slug: 'Flab%C3%A9b%C3%A9' },
+    { pokemon: typeNull, slug: 'Type%3A_Null' },
+    { pokemon: greatTusk, slug: 'Great_Tusk' },
+    { pokemon: woChien, slug: 'Wo-Chien' },
   ])('uses the actual species page reference for $pokemon.id', ({ pokemon, slug }) => {
     expect(bulbapediaUrl(pokemon)).toBe(
       `https://bulbapedia.bulbagarden.net/wiki/${slug}_(Pok%C3%A9mon)`,
