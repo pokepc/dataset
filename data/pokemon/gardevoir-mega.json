@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "gardevoirite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,25 @@
     "serebii": "gardevoir",
     "bulbapedia": "Gardevoir"
   },
+  "formMethods": [
+    {
+      "from": ["gardevoir"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "gardevoirite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["gardevoir"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "gardevoirite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Gardevoir",
     "fra": "MégaGardevoir",

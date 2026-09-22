@@ -61,6 +61,22 @@
     "serebii": "groudon",
     "bulbapedia": "Groudon"
   },
+  "formMethods": [
+    {
+      "from": ["groudon"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "lza"],
+      "trigger": "automatic",
+      "item": { "id": "redorb", "role": "held" },
+      "conditions": [{ "key": "battle_event", "events": ["switch_in"] }]
+    },
+    {
+      "from": ["groudon"],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "item": { "id": "redorb", "role": "held" },
+      "conditions": [{ "key": "interaction", "interaction": "enter_contest_spectacular" }]
+    }
+  ],
   "names": {
     "eng": "Groudon (Primal Reversion)",
     "esp": "Groudon (Regresión Primigenia)",

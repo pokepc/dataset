@@ -62,6 +62,17 @@
     "serebii": "coalossal",
     "bulbapedia": "Coalossal"
   },
+  "formMethods": [
+    {
+      "from": ["coalossal"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Coalossal (Gigantamax Form)",
     "fra": "Monthracite (Forme Gigamax)",

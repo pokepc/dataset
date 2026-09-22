@@ -147,6 +147,35 @@
       "conditions": [{ "key": "gender", "gender": "female" }]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["gyarados-mega"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end", "faint"] },
+        { "key": "original_form", "forms": ["gyarados-f"] }
+      ]
+    },
+    {
+      "from": ["gyarados-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_condition", "condition": "mega_power_depleted" },
+        { "key": "original_form", "forms": ["gyarados-f"] }
+      ]
+    },
+    {
+      "from": ["gyarados-mega"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end", "faint"] },
+        { "key": "original_form", "forms": ["gyarados-f"] }
+      ]
+    }
+  ],
   "names": { "eng": "Gyarados (Female)", "fra": "Léviator (Female)", "deu": "Garados (Female)" },
   "genus": {
     "eng": "Atrocious Pokémon",

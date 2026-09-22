@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "legendplate",
   "isLegendary": false,
   "isMythical": true,
   "isBaby": false,
@@ -61,6 +60,61 @@
     "serebii": "arceus",
     "bulbapedia": "Arceus"
   },
+  "formMethods": [
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-ground",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-fairy",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "legendplate", "role": "used", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-ground",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-fairy",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end"] },
+        { "key": "mechanic", "mechanic": "legend_plate" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Arceus (Normal Type)",
     "esp": "Arceus (Tipo Normal)",

@@ -93,6 +93,54 @@
     "serebii": "kyurem",
     "bulbapedia": "Kyurem"
   },
+  "formMethods": [
+    {
+      "from": ["kyurem-white"],
+      "games": [
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "sv-s",
+        "sv-v"
+      ],
+      "trigger": "separate",
+      "item": { "id": "dnasplicers", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": { "eng": "The fused partner returns to the party." }
+    },
+    {
+      "from": ["kyurem-black"],
+      "games": [
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "sv-s",
+        "sv-v"
+      ],
+      "trigger": "separate",
+      "item": { "id": "dnasplicers", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": { "eng": "The fused partner returns to the party." }
+    }
+  ],
   "names": {
     "eng": "Kyurem",
     "fra": "Kyurem",

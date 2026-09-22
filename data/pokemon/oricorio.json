@@ -59,6 +59,15 @@
     "serebii": "oricorio",
     "bulbapedia": "Oricorio"
   },
+  "formMethods": [
+    {
+      "from": ["oricorio-pau", "oricorio-pom-pom", "oricorio-sensu"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "rednectar", "role": "used", "consumed": true },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Oricorio",
     "fra": "Plumeline",

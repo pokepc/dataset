@@ -79,6 +79,62 @@
     "serebii": "keldeo",
     "bulbapedia": "Keldeo"
   },
+  "formMethods": [
+    {
+      "from": ["keldeo"],
+      "games": [
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "sv-s",
+        "sv-v",
+        "lza"
+      ],
+      "trigger": "learn_move",
+      "conditions": [{ "key": "known_move", "move": "secretsword" }],
+      "notes": { "eng": "Teach Secret Sword to change to Resolute Form." }
+    },
+    {
+      "from": ["keldeo"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "known_move", "move": "secretsword" },
+        { "key": "battle_event", "events": ["battle_end"] },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": {
+        "eng": "Also corrects an Ordinary Form imported from Black/White while knowing Secret Sword."
+      }
+    },
+    {
+      "from": ["keldeo"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "learn_move",
+      "conditions": [
+        { "key": "known_move", "move": "secretsword" },
+        { "key": "mechanic", "mechanic": "change_a_move_other_than_secret_sword" }
+      ]
+    },
+    {
+      "from": ["keldeo"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "forget_move",
+      "conditions": [
+        { "key": "known_move", "move": "secretsword" },
+        { "key": "mechanic", "mechanic": "change_a_move_other_than_secret_sword" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Keldeo (Resolute Form)",
     "esp": "Keldeo (Forma Brío)",

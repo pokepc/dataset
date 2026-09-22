@@ -68,6 +68,20 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["appletun-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "turns" }]
+    },
+    {
+      "from": ["appletun-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] }]
+    }
+  ],
   "names": {
     "eng": "Appletun",
     "fra": "Dratatin",

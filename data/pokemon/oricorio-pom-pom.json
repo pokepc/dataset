@@ -60,6 +60,15 @@
     "serebii": "oricorio",
     "bulbapedia": "Oricorio"
   },
+  "formMethods": [
+    {
+      "from": ["oricorio-pau", "oricorio-sensu", "oricorio"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "yellownectar", "role": "used", "consumed": true },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Oricorio (Pom-Pom Style)",
     "esp": "Oricorio (Estilo Animado)",

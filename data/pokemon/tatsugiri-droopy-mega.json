@@ -13,7 +13,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "tatsugirinite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -62,6 +61,18 @@
     "serebii": "Tatsugiri",
     "bulbapedia": "Tatsugiri"
   },
+  "formMethods": [
+    {
+      "from": ["tatsugiri-droopy"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "tatsugirinite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Tatsugiri (Droopy Form)",
     "esp": "Mega Tatsugiri (Droopy Form)",

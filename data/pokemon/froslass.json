@@ -117,6 +117,14 @@
       "conditions": [{ "key": "gender", "gender": "female" }]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["froslass-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    }
+  ],
   "names": {
     "eng": "Froslass",
     "fra": "Momartik",

@@ -1,0 +1,709 @@
+{
+  "reviewDate": "2026-09-22",
+  "scope": "Persistent and manual form changes for the assigned 20 species. Core-series methods only; Necrozma Ultra Burst is delegated separately.",
+  "methodCount": 266,
+  "destinationCount": 64,
+  "species": {
+    "Deoxys": {
+      "status": "curated_with_gaps",
+      "destinations": ["deoxys-attack", "deoxys-defense", "deoxys-speed", "deoxys"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/f0d9ea8b99a717c3b5586ae21470b72d20e900ad4ea94b001bdbbf79e50a0f40.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-dp/386.shtml",
+          "file": ".local/serebii/87673dda7049525f53c8c36cb8efe2cdfee433419307ec7fafa48030dfe38b54.json",
+          "claims": "Gen IV meteorite locations."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-bw/386.shtml",
+          "file": ".local/serebii/6a1ae16eea08883ab34cea96a37005dbd2db7c5a0c67dfe4f5c0d9eed7b1e567.json",
+          "claims": "Nacrene meteorite."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sm/386.shtml",
+          "file": ".local/serebii/d2526c9ba741ac9bbc13440898057deb6700ec3c1724d74b2c13f6e902e31ec9.json",
+          "claims": "Hokulani meteorite."
+        }
+      ],
+      "gaps": [
+        "Meteorite locations are explicit; repeated-interaction methods express a route to the target and do not claim every meteorite is a single-step toggle."
+      ],
+      "methodCount": 35
+    },
+    "Burmy": {
+      "status": "curated",
+      "destinations": ["burmy-sandy", "burmy-trash", "burmy"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Burmy_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/4ad1b0b3bb29a50e049c632d08f4f6d8d2360658fabee6a2b247662c09878550.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-xy/412.shtml",
+          "file": ".local/serebii/2d11ff43ad67fccfb2d1aa28ead00cd99e4f750db8db051249ad518372257e71.json",
+          "claims": "Battle environment changes cloak after battle."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 13
+    },
+    "Rotom": {
+      "status": "curated_with_gaps",
+      "destinations": [
+        "rotom-fan",
+        "rotom-frost",
+        "rotom-heat",
+        "rotom-mow",
+        "rotom-wash",
+        "rotom"
+      ],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/462e5c550d77217122c74d91064b0cb4b0d33781ef1a2feef9dd3814fbc10482.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-dp/479.shtml",
+          "file": ".local/serebii/0688291566ec0385a0465ab1df6f3ba195fb860468625fec47bbaef418d37ace.json",
+          "claims": "Gen IV appliance rooms."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-xy/479.shtml",
+          "file": ".local/serebii/04ac7994a3bba47ad5cff6572f15c2ccabad5cec8f25c9d6a5f307e2d6fbe821.json",
+          "claims": "Kalos/Hoenn appliance locations."
+        }
+      ],
+      "gaps": [
+        "Move replacement and the Generation IV one-appliance-per-form limit are explanatory game rules, not a complete legality model. Forgetting an appliance move is deliberately not a reverse method."
+      ],
+      "methodCount": 63
+    },
+    "Giratina": {
+      "status": "curated",
+      "destinations": ["giratina-origin", "giratina"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/acf157c5b541a39dfeca052a24f4fbdb6a40615ac4829ac0b46e14f7202bd230.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-swsh/giratina/",
+          "file": ".local/serebii/f67fae4031f29aa73b24cdf5929b392707394eba46f24874cfbae124c2b047b7.json",
+          "claims": "Griseous Orb is a held-form item."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 9
+    },
+    "Dialga": {
+      "status": "curated",
+      "destinations": ["dialga-origin", "dialga"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Dialga_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/239f981f365cd32faa7afab3e0735de5c9bae571a72ebb142c22c12b7fa6640c.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sv/dialga/",
+          "file": ".local/serebii/d7e05f2a6d4f2a2870ff412f9f431e39f755511539f16308b00ede58e3f74644.json",
+          "claims": "Origin Forme depends on holding Adamant Crystal."
+        },
+        {
+          "url": "https://www.serebii.net/legendsarceus/items.shtml",
+          "claims": "Adamant Crystal is used on Dialga in Arceus."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 5
+    },
+    "Palkia": {
+      "status": "curated",
+      "destinations": ["palkia-origin", "palkia"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Palkia_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/7ada4c24e68a9130849d297d419369888a685ae8b1d3c2aeeac067dce91221a9.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sv/palkia/",
+          "file": ".local/serebii/4731fa7c0c8afc25ebabd25b393350a00be7525a7e9a675c227b4ff5281608e1.json",
+          "claims": "Origin Forme depends on holding Lustrous Globe."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-swsh/palkia/",
+          "file": ".local/serebii/7a143cb9d7f6062f44b628a5f5f6fccca96686bd50473382bd5a8e943aaf40c7.json",
+          "claims": "Arceus Origin Forme uses an item."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 5
+    },
+    "Shaymin": {
+      "status": "curated_with_gaps",
+      "destinations": ["shaymin-sky", "shaymin"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/d240771dda5cd710ce84466d506d54677cd6cf535b8381a48b5f55d8ba9ecf8b.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-bw/492.shtml",
+          "file": ".local/serebii/0c7a6588c82c87ae6a242b94fbaff72ade49d92908235166a943246609e77cd2.json",
+          "claims": "Daylight Gracidea and frozen restriction."
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Gracidea",
+          "claims": "Item effect and supported acquisition games."
+        }
+      ],
+      "gaps": [
+        "The Serebii SM page carries stale deposit-in-box wording; the explicit Bulbapedia generation distinction is used for Gen VII withdrawal. Legends: Arceus pasture withdrawal and exact dawn/dusk boundaries remain unmodeled."
+      ],
+      "methodCount": 13
+    },
+    "Tornadus": {
+      "status": "curated",
+      "destinations": ["tornadus-therian", "tornadus"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Tornadus_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/caa2f40e649d0c0b9d10426821d69e6bae1a374d51beb2b7e0711753373659af.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Reveal_Glass",
+          "claims": "Item effect and concrete acquisition games."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 2
+    },
+    "Thundurus": {
+      "status": "curated",
+      "destinations": ["thundurus-therian", "thundurus"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Thundurus_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/72c0eeb424a593834a8ca6b58eb2e046d23b010f2ceeba3af01d380680767072.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-swsh/thundurus/",
+          "file": ".local/serebii/1dc471b6366edb87761677a093d214eb3b923f9c6f0c8402cc683a1eb5962002.json",
+          "claims": "Reveal Glass switches forms."
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Reveal_Glass",
+          "claims": "Item availability bounds the concrete supported-game list."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 2
+    },
+    "Landorus": {
+      "status": "curated",
+      "destinations": ["landorus-therian", "landorus"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Landorus_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/d37b35e7c7912e586f899c45cbdc214be2c5878c40d7d4f227efb9400d4d4d8f.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-swsh/landorus/",
+          "file": ".local/serebii/7f05dbe01bbfd897932e675cb48213d6566d37c058ec81548a308259297764d4.json",
+          "claims": "Reveal Glass switches forms."
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Reveal_Glass",
+          "claims": "Item availability bounds the concrete supported-game list."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 2
+    },
+    "Enamorus": {
+      "status": "curated",
+      "destinations": ["enamorus-therian", "enamorus"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Enamorus_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/865b3cfdde038027e5bb17139a92f6b2fc12dc29adcff15b1c12176f06661ec8.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sv/enamorus/",
+          "file": ".local/serebii/825b48051c9c22ab02bda02b44c51dbc9d810659dd3319124398471870b31434.json",
+          "claims": "Reveal Glass switches forms."
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Reveal_Glass",
+          "claims": "Item availability bounds the concrete supported-game list."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 2
+    },
+    "Kyurem": {
+      "status": "curated",
+      "destinations": ["kyurem-black", "kyurem-white", "kyurem"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Kyurem_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/3885031e9b370f5316e328f9fab2a3396b125e747f967838ad5589bc2c0ba320.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/itemdex/dnasplicers.shtml",
+          "claims": "Fusion device and supported acquisition games."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sm/646.shtml",
+          "file": ".local/serebii/2b7b2f38e82252d67b833eb630329de8671e7b3624014b7ceb4ecca6255074fe.json",
+          "claims": "Partners, reversal, single fusion limit."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 4
+    },
+    "Keldeo": {
+      "status": "curated",
+      "destinations": ["keldeo-resolute", "keldeo"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Keldeo_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/8b574e73057670012d073d68c23c1f9a27b69d1f986ea67be60e088c0fc1b72f.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-bw/647.shtml",
+          "file": ".local/serebii/0b2d2cee74d934aed0aca0b720b6cb67f9cbffe89aeb914185e0de2b11bf22ef.json",
+          "claims": "Resolute introduced specifically in B2W2 and uses Secret Sword."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sv/keldeo/",
+          "claims": "Gen IX Resolute uses Secret Sword."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 5
+    },
+    "Furfrou": {
+      "status": "curated_with_gaps",
+      "destinations": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star",
+        "furfrou"
+      ],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Furfrou_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/d5c9ff0b023aa22c5f1d77d65a1bc9efebf7decdfcccbd26ef56882a3856ff6e.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-xy/676.shtml",
+          "file": ".local/serebii/c9aacbe2e033862a1a4b8529425fc92419bcd087a170a9166371255379ad21d3.json",
+          "claims": "Grooming and five-day timer."
+        },
+        {
+          "url": "https://www.serebii.net/legendsz-a/forms.shtml",
+          "claims": "Z-A trim quest unlocks."
+        }
+      ],
+      "gaps": [
+        "Five-day expiry is established for Gen VI/VII. Generic species pages repeat it without a Z-A qualifier; no Z-A expiry or storage reversion is asserted. Pokémon GO regional/event/cost trim rules are not covered by this core-series manifest."
+      ],
+      "methodCount": 56
+    },
+    "Hoopa": {
+      "status": "curated_with_gaps",
+      "destinations": ["hoopa-unbound", "hoopa"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/252c29116b4946896909fd6d3650c42b34d78b177487c0b4418b6596fe1e2d4b.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-xy/720.shtml",
+          "file": ".local/serebii/4e7fa5c9abc1d0a3a2971de1bda6ba8e5d5e1b051c41ada4c14cf525a96cb60b.json",
+          "claims": "ORAS bottle and deposit reversion."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sm/720.shtml",
+          "file": ".local/serebii/7293e953d84b487e6a258db6a6e7b8d85b24fcb1652e2c1a22ae923b4614465e.json",
+          "claims": "Gen VII three-day and withdrawal reversion."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sv/hoopa/",
+          "claims": "Modern bottle form changes."
+        },
+        {
+          "url": "https://www.serebii.net/legendsz-a/sidemissions/thedjinnunbound.shtml",
+          "claims": "Z-A bottle unlock and freely changing owned Hoopa."
+        }
+      ],
+      "gaps": [
+        "General Prison Bottle/species articles claim three-day expiry without game scope; the Serebii Gen IX page omits it. Gen IX automatic expiry is intentionally unresolved. The item article asserts Bank reversion, while the species Form data section does not; no Bank reversion is asserted without resolving the discrepancy."
+      ],
+      "methodCount": 8
+    },
+    "Oricorio": {
+      "status": "curated",
+      "destinations": ["oricorio-pau", "oricorio-pom-pom", "oricorio-sensu", "oricorio"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Oricorio_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/392b9c5978e386cc332e6fa5d0f2c4c52a8f58075061f878d30106b1712b464e.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sm/741.shtml",
+          "file": ".local/serebii/4ab840b7317c7145853a9b5ee98c34ace8cbf3aa598d84955d08130c3a557546.json",
+          "claims": "Each nectar is consumed for its corresponding form."
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Nectar",
+          "claims": "Consumable nectar category."
+        },
+        {
+          "url": "https://www.serebii.net/itemdex/purplenectar.shtml",
+          "claims": "Gen VII and SV nectar acquisition."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 4
+    },
+    "Calyrex": {
+      "status": "curated",
+      "destinations": ["calyrex-ice", "calyrex-shadow", "calyrex"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Calyrex_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/6db050aa209c0693ebbebf11230de0ce2ab472470e89856adb49dc8aed8bcfe1.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/itemdex/reinsofunity.shtml",
+          "claims": "Partners, fusion/separation and supported games."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 4
+    },
+    "Necrozma": {
+      "status": "curated",
+      "destinations": ["necrozma-dawn-wings", "necrozma-dusk-mane", "necrozma"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Necrozma_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/4563f64b751d3d31b0e0ff65bdb1838ef2fe38eb69161b52cf8462a0fd4ad2b7.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/itemdex/n-solarizer.shtml",
+          "claims": "Solgaleo fusion/separation and supported games."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-sv/necrozma/",
+          "file": ".local/serebii/19efafe69b33661db46b096281c7e8b628b3556fec9befb2ef13f2a3b56dc33b.json",
+          "claims": "Both fusion items and partners."
+        }
+      ],
+      "gaps": [],
+      "methodCount": 4
+    },
+    "Deerling": {
+      "status": "curated_with_gaps",
+      "destinations": ["deerling-autumn", "deerling-summer", "deerling-winter", "deerling"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Deerling_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/8fcf8c14974211afc3e6a3b578ad92edce477ae3b7563cd7e268689eb82f4bc2.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-bw/585.shtml",
+          "file": ".local/serebii/48931ecf9db7a9af75c28d8e745aebf86941f66fdb902858f71444a7077db23e.json",
+          "claims": "Gen V automatic seasonal changes."
+        }
+      ],
+      "gaps": [
+        "No changes are asserted in Generations VI–VIII. Area Zero and the Terarium do not change the form; Kitakami form-change behavior is still marked incomplete by the source."
+      ],
+      "methodCount": 15
+    },
+    "Sawsbuck": {
+      "status": "curated_with_gaps",
+      "destinations": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck-winter", "sawsbuck"],
+      "sources": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Sawsbuck_(Pok%C3%A9mon)#Form_data",
+          "file": ".local/bulbapedia/b50ea7663effbe8ff1b572ee2dc82bf5f9ab836a1e90ab1cb4f7818bee864bdc.json",
+          "claims": "Species form transformations, reversions and exceptions."
+        },
+        {
+          "url": "https://www.serebii.net/pokedex-bw/586.shtml",
+          "file": ".local/serebii/2980e9b9285bf4ee688d9361ee5614963e1a841d6ca2058f89eb5f5cd2bc6ec2.json",
+          "claims": "Gen V automatic seasonal changes."
+        }
+      ],
+      "gaps": [
+        "No changes are asserted in Generations VI–VIII. Area Zero and the Terarium do not change the form; Kitakami form-change behavior is still marked incomplete by the source."
+      ],
+      "methodCount": 15
+    }
+  },
+  "proposedMissingItems": [
+    {
+      "id": "meteorite",
+      "name": "Meteorite",
+      "psName": "Meteorite",
+      "gen": 3,
+      "shortDesc": "Cycles Deoxys between its forms in Scarlet and Violet.",
+      "desc": "Cycles Deoxys between its forms in Scarlet and Violet.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "rotomcatalog",
+      "name": "Rotom Catalog",
+      "psName": "Rotom Catalog",
+      "gen": 8,
+      "shortDesc": "A reusable catalog for changing Rotom between its appliance forms.",
+      "desc": "A reusable catalog for changing Rotom between its appliance forms.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "gracidea",
+      "name": "Gracidea",
+      "psName": "Gracidea",
+      "gen": 4,
+      "shortDesc": "A reusable flower that changes Land Forme Shaymin to Sky Forme during daylight.",
+      "desc": "A reusable flower that changes Land Forme Shaymin to Sky Forme during daylight.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "revealglass",
+      "name": "Reveal Glass",
+      "psName": "Reveal Glass",
+      "gen": 5,
+      "shortDesc": "Switches the forces of nature between Incarnate and Therian Formes.",
+      "desc": "Switches the forces of nature between Incarnate and Therian Formes.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "dnasplicers",
+      "name": "DNA Splicers",
+      "psName": "DNA Splicers",
+      "gen": 5,
+      "shortDesc": "Fuses Kyurem with Reshiram or Zekrom, or separates the fusion.",
+      "desc": "Fuses Kyurem with Reshiram or Zekrom, or separates the fusion.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "reinsofunity",
+      "name": "Reins of Unity",
+      "psName": "Reins of Unity",
+      "gen": 8,
+      "shortDesc": "Fuses Calyrex with Glastrier or Spectrier, or separates the fusion.",
+      "desc": "Fuses Calyrex with Glastrier or Spectrier, or separates the fusion.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "nsolarizer",
+      "name": "N-Solarizer",
+      "psName": "N-Solarizer",
+      "gen": 7,
+      "shortDesc": "Fuses Necrozma with Solgaleo, or separates Dusk Mane Necrozma.",
+      "desc": "Fuses Necrozma with Solgaleo, or separates Dusk Mane Necrozma.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "nlunarizer",
+      "name": "N-Lunarizer",
+      "psName": "N-Lunarizer",
+      "gen": 7,
+      "shortDesc": "Fuses Necrozma with Lunala, or separates Dawn Wings Necrozma.",
+      "desc": "Fuses Necrozma with Lunala, or separates Dawn Wings Necrozma.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "prisonbottle",
+      "name": "Prison Bottle",
+      "psName": "Prison Bottle",
+      "gen": 6,
+      "shortDesc": "Changes Hoopa between its Confined and Unbound forms in supported games.",
+      "desc": "Changes Hoopa between its Confined and Unbound forms in supported games.",
+      "category": "other",
+      "unholdable": true
+    },
+    {
+      "id": "rednectar",
+      "name": "Red Nectar",
+      "psName": "Red Nectar",
+      "gen": 7,
+      "shortDesc": "A consumable nectar that changes Oricorio to Baile Style.",
+      "desc": "A consumable nectar that changes Oricorio to Baile Style.",
+      "category": "other",
+      "unholdable": false
+    },
+    {
+      "id": "yellownectar",
+      "name": "Yellow Nectar",
+      "psName": "Yellow Nectar",
+      "gen": 7,
+      "shortDesc": "A consumable nectar that changes Oricorio to Pom-Pom Style.",
+      "desc": "A consumable nectar that changes Oricorio to Pom-Pom Style.",
+      "category": "other",
+      "unholdable": false
+    },
+    {
+      "id": "pinknectar",
+      "name": "Pink Nectar",
+      "psName": "Pink Nectar",
+      "gen": 7,
+      "shortDesc": "A consumable nectar that changes Oricorio to Pa’u Style.",
+      "desc": "A consumable nectar that changes Oricorio to Pa’u Style.",
+      "category": "other",
+      "unholdable": false
+    },
+    {
+      "id": "purplenectar",
+      "name": "Purple Nectar",
+      "psName": "Purple Nectar",
+      "gen": 7,
+      "shortDesc": "A consumable nectar that changes Oricorio to Sensu Style.",
+      "desc": "A consumable nectar that changes Oricorio to Sensu Style.",
+      "category": "other",
+      "unholdable": false
+    }
+  ],
+  "proposedSchemaExtensions": [
+    {
+      "key": "status",
+      "change": "Add frostbite to allowed status values.",
+      "reason": "Shaymin reverts under frostbite in Legends: Arceus."
+    },
+    {
+      "key": "known_move",
+      "change": "Optional relation: knows | does_not_know, with knows as the default.",
+      "reason": "Keldeo Ordinary Form requires Secret Sword to be removed; the forget_move trigger must identify that move without asserting it remains known."
+    }
+  ],
+  "caveats": [
+    "No availability arrays were used to infer form-change game scope.",
+    "All games arrays use concrete base-game IDs. Legends: Z-A Mega Dimension mechanics use lza with DLC context in notes.",
+    "Pokémon GO form changes/fusions, their costs and unlocks are outside this core-series slice and remain to be audited.",
+    "Cosmetic born-in forms, evolution, captures, cloning, battle disguise and Transform are not transition routes here.",
+    "Methods describe known actions and conditions, not a complete legality simulator. They do not model every item unlock, fusion-device occupied state, or all move replacement side effects.",
+    "The generic species sources are cached snapshots. Narrow modern gaps were checked against live Serebii/Bulbapedia pages on the review date.",
+    "Storage service values pc, day_care, nursery and bank are semantic service keys; bank is not an existing data/games identifier.",
+    "The reviewed item/form sections establish separation but do not document party-space requirements for each game; no spare-party-slot constraint is asserted by this manifest."
+  ],
+  "validation": {
+    "pokemonReferences": "all resolved",
+    "gameReferences": "all resolved",
+    "itemReferences": "all resolved or explicitly proposed",
+    "selfTransitions": 0
+  },
+  "conditionEnums": {
+    "interaction": [
+      "deoxys_meteorite",
+      "electric_fan",
+      "enter_union_room",
+      "enter_wifi_club",
+      "furfrou_groom",
+      "furfrou_restore_natural",
+      "lawn_mower",
+      "leave_distortion_world",
+      "light_bulb",
+      "load_game",
+      "microwave_oven",
+      "refrigerator",
+      "return_appliance",
+      "washing_machine"
+    ],
+    "location": [
+      "alabaster_icelands",
+      "ambrette_fossil_lab_meteorites",
+      "bell_tower",
+      "burned_tower",
+      "cobalt_coastlands",
+      "coronet_highlands",
+      "crimson_mirelands",
+      "dalizapa_passage",
+      "distortion_world",
+      "east_province_area_one",
+      "east_province_area_two",
+      "friseur_furfrou",
+      "glaseado_mountain",
+      "hauoli_city_salon",
+      "hokulani_observatory_meteorite",
+      "jaune_sector_6",
+      "jubilife_village",
+      "jubilife_village_player_quarters",
+      "kanto_route_3_meteorites",
+      "malie_city_salon",
+      "nacrene_museum_meteorite",
+      "north_province_area_one",
+      "obsidian_fieldlands",
+      "professor_birchs_lab",
+      "professor_cozmos_house_meteorite",
+      "professor_kukuis_lab",
+      "shopping_mall_nine_basement",
+      "silph_co_rotom_room",
+      "slateport_pokemon_fan_club",
+      "socarrat_trail",
+      "south_province_area_five",
+      "south_province_area_four",
+      "south_province_area_one",
+      "sprout_tower",
+      "sycamore_pokemon_lab",
+      "team_galactic_eterna_building_rotom_room",
+      "veilstone_city_meteorites",
+      "west_province_area_three",
+      "west_province_area_two"
+    ],
+    "mechanic": [
+      "change_a_move_other_than_secret_sword",
+      "in_party",
+      "not_holding_griseous_orb",
+      "participated_in_battle"
+    ],
+    "environment": [
+      "building",
+      "cave_or_beach",
+      "outdoors_or_tall_grass",
+      "outside_distortion_world",
+      "snowstorm"
+    ],
+    "battle_condition": [],
+    "storage_service": ["bank", "day_care", "home", "nursery", "pc"]
+  }
+}

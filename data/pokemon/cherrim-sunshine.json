@@ -75,6 +75,69 @@
     "serebii": "cherrim",
     "bulbapedia": "Cherrim"
   },
+  "formMethods": [
+    {
+      "from": ["cherrim"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["flowergift"] },
+        { "key": "weather", "weather": ["sun"], "relation": "in" },
+        { "key": "battle_condition", "condition": "weather_effects_active" }
+      ],
+      "notes": {
+        "eng": "Flower Gift controls this transformation from Generation V onward in games with Abilities."
+      }
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "weather", "weather": ["sun"], "relation": "in" },
+        { "key": "battle_condition", "condition": "weather_effects_active" }
+      ],
+      "notes": { "eng": "In Generation IV, form changes do not depend on Flower Gift." }
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "weather", "weather": ["sun"], "relation": "in" },
+        { "key": "time_of_day", "time": "morning" },
+        { "key": "battle_condition", "condition": "in_battle" }
+      ],
+      "notes": {
+        "eng": "In Legends: Arceus, sunny or harsh-sunlight overworld weather and a daylight time period are both required; Abilities are absent."
+      }
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "weather", "weather": ["sun"], "relation": "in" },
+        { "key": "time_of_day", "time": "day" },
+        { "key": "battle_condition", "condition": "in_battle" }
+      ],
+      "notes": {
+        "eng": "In Legends: Arceus, sunny or harsh-sunlight overworld weather and a daylight time period are both required; Abilities are absent."
+      }
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "weather", "weather": ["sun"], "relation": "in" },
+        { "key": "time_of_day", "time": "evening" },
+        { "key": "battle_condition", "condition": "in_battle" }
+      ],
+      "notes": {
+        "eng": "In Legends: Arceus, sunny or harsh-sunlight overworld weather and a daylight time period are both required; Abilities are absent."
+      }
+    }
+  ],
   "names": {
     "eng": "Cherrim (Sunshine Form)",
     "esp": "Cherrim (Forma Soleado)",

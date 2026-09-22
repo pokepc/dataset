@@ -61,6 +61,17 @@
     "serebii": "eevee",
     "bulbapedia": "Eevee"
   },
+  "formMethods": [
+    {
+      "from": ["eevee", "eevee-f"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Eevee (Gigantamax Form)",
     "fra": "Évoli (Forme Gigamax)",

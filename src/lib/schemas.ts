@@ -2,6 +2,8 @@ import { z } from 'zod'
 import { POKEPC_LATEST_GENERATION } from './constants'
 import { evolutionMethodSchema } from './evolution-schemas'
 export { evolutionConditionSchema, evolutionMethodSchema } from './evolution-schemas'
+import { formMethodSchema } from './form-schemas'
+export { formConditionSchema, formMethodSchema } from './form-schemas'
 import {
   abilityTagIds,
   battleStyles,
@@ -277,7 +279,6 @@ export const pokemonSchema = z.object({
   isPrerelease: z.coerce.boolean(),
   isDefault: z.coerce.boolean(),
   isForm: z.coerce.boolean(),
-  formItem: common.slug.optional(),
   isLegendary: z.coerce.boolean(),
   isMythical: z.coerce.boolean(),
   isBaby: z.coerce.boolean(),
@@ -326,6 +327,8 @@ export const pokemonSchema = z.object({
   refs: pokemonRefsSchema,
   // Evolution methods are alternatives. Missing game scope is unknown, not universal support.
   evoMethods: z.array(evolutionMethodSchema).min(1).optional(),
+  // Incoming form transitions, including separately described reverse transitions.
+  formMethods: z.array(formMethodSchema).min(1).optional(),
   // translations:
   names: i18nTextSchema,
   genus: i18nTextSchema,

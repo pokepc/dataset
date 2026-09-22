@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "magearnite",
   "isLegendary": false,
   "isMythical": true,
   "isBaby": false,
@@ -62,6 +61,18 @@
     "serebii": "magearna",
     "bulbapedia": "Magearna"
   },
+  "formMethods": [
+    {
+      "from": ["magearna"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "magearnite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Magearna",
     "esp": "Mega Magearna",

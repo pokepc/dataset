@@ -60,6 +60,15 @@
     "serebii": "oricorio",
     "bulbapedia": "Oricorio"
   },
+  "formMethods": [
+    {
+      "from": ["oricorio-pau", "oricorio-pom-pom", "oricorio"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "purplenectar", "role": "used", "consumed": true },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Oricorio (Sensu Style)",
     "esp": "Oricorio (Estilo Refinado)",

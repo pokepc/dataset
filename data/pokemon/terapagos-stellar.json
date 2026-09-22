@@ -60,6 +60,14 @@
     "serebii": "terapagos",
     "bulbapedia": "Terapagos"
   },
+  "formMethods": [
+    {
+      "from": ["terapagos-terastal"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "special",
+      "conditions": [{ "key": "mechanic", "mechanic": "terastallization" }]
+    }
+  ],
   "names": {
     "eng": "Terapagos (Stellar Form)",
     "esp": "Terapagos (Forma astral)",

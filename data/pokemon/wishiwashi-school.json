@@ -59,6 +59,18 @@
     "serebii": "wishiwashi",
     "bulbapedia": "Wishiwashi"
   },
+  "formMethods": [
+    {
+      "from": ["wishiwashi"],
+      "trigger": "automatic",
+      "minLevel": 20,
+      "conditions": [
+        { "key": "ability", "abilities": ["schooling"] },
+        { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
+        { "key": "hp", "comparison": "gt", "percent": 25 }
+      ]
+    }
+  ],
   "names": {
     "eng": "Wishiwashi (School Form)",
     "esp": "Wishiwashi (Forma Banco)",

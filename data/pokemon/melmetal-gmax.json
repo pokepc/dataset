@@ -59,6 +59,17 @@
     "serebii": "melmetal",
     "bulbapedia": "Melmetal"
   },
+  "formMethods": [
+    {
+      "from": ["melmetal"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Melmetal (Gigantamax Form)",
     "fra": "Melmetal (Forme Gigamax)",

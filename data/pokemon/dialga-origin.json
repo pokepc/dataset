@@ -13,7 +13,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "adamantcrystal",
   "isLegendary": true,
   "isMythical": false,
   "isBaby": false,
@@ -63,6 +62,22 @@
     "serebii": "dialga",
     "bulbapedia": "Dialga"
   },
+  "formMethods": [
+    {
+      "from": ["dialga"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "adamantcrystal", "role": "used", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["dialga"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "equip_item",
+      "item": { "id": "adamantcrystal", "role": "held", "consumed": false },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Dialga (Origin Forme)",
     "fra": "Dialga (Forme Originelle)",

@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "feraligite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "feraligatr",
     "bulbapedia": "Feraligatr"
   },
+  "formMethods": [
+    {
+      "from": ["feraligatr"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "feraligite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Feraligatr",
     "fra": "MégaAligatueur",

@@ -60,6 +60,16 @@
     "serebii": "xerneas",
     "bulbapedia": "Xerneas"
   },
+  "formMethods": [
+    {
+      "from": ["xerneas"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_start", "switch_in"] }],
+      "notes": {
+        "eng": "Neutral and Active Modes are appearance changes. This rule covers games representing distinct forms; GO and Legends: Z-A instead animate the appearance."
+      }
+    }
+  ],
   "names": {
     "eng": "Xerneas (Active Mode)",
     "fra": "Xerneas (Mode Déchaîné)",

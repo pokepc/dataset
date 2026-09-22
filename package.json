@@ -43,6 +43,7 @@
     "pokemon:availability": "node src/upstream-adapters/bulbapedia/cli.ts",
     "pokemon:availability:all": "node src/upstream-adapters/bulbapedia/review-cli.ts",
     "locations:import": "bun src/upstream-adapters/locations/cli.ts",
+    "pokemon:forms:migrate": "bun src/scripts/migrate-pokemon-forms.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",

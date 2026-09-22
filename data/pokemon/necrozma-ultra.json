@@ -61,6 +61,18 @@
     "serebii": "necrozma",
     "bulbapedia": "Necrozma"
   },
+  "formMethods": [
+    {
+      "from": ["necrozma-dawn-wings", "necrozma-dusk-mane"],
+      "games": ["usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "ultranecroziumz", "role": "held", "consumed": false },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "ultra_burst" },
+        { "key": "battle_condition", "condition": "ultra_burst_unused_by_trainer" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Ultra Necrozma",
     "esp": "Ultra-Necrozma",

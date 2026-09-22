@@ -61,6 +61,17 @@
     "serebii": "meowth",
     "bulbapedia": "Meowth"
   },
+  "formMethods": [
+    {
+      "from": ["meowth"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Meowth (Gigantamax Form)",
     "fra": "Miaouss (Forme Gigamax)",

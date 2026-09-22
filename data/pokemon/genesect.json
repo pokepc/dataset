@@ -78,6 +78,35 @@
     "serebii": "genesect",
     "bulbapedia": "Genesect"
   },
+  "formMethods": [
+    {
+      "from": ["genesect-douse", "genesect-burn", "genesect-chill", "genesect-shock"],
+      "games": [
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "lza"
+      ],
+      "trigger": "remove_item",
+      "conditions": [
+        {
+          "key": "held_item_absent",
+          "items": ["dousedrive", "burndrive", "chilldrive", "shockdrive"]
+        }
+      ]
+    }
+  ],
   "names": {
     "eng": "Genesect",
     "fra": "Genesect",

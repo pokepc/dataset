@@ -60,6 +60,33 @@
     "serebii": "cramorant",
     "bulbapedia": "Cramorant"
   },
+  "formMethods": [
+    {
+      "from": ["cramorant"],
+      "trigger": "use_move",
+      "conditions": [
+        { "key": "ability", "abilities": ["gulpmissile"] },
+        { "key": "move_used", "move": "surf" },
+        { "key": "hp", "comparison": "lte", "percent": 50 },
+        { "key": "battle_condition", "condition": "move_deals_damage" },
+        { "key": "battle_condition", "condition": "not_dynamaxed" }
+      ],
+      "notes": { "eng": "Surf must deal damage to trigger Gulp Missile." }
+    },
+    {
+      "from": ["cramorant"],
+      "trigger": "use_move",
+      "conditions": [
+        { "key": "ability", "abilities": ["gulpmissile"] },
+        { "key": "move_used", "move": "dive" },
+        { "key": "hp", "comparison": "lte", "percent": 50 },
+        { "key": "battle_condition", "condition": "not_dynamaxed" }
+      ],
+      "notes": {
+        "eng": "Dive triggers Gulp Missile during its diving turn, even without dealing damage."
+      }
+    }
+  ],
   "names": {
     "eng": "Cramorant (Gorging Form)",
     "esp": "Cramorant (Forma Engulletodo)",

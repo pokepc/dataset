@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "garchompite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -72,6 +71,25 @@
     "serebii": "garchomp",
     "bulbapedia": "Garchomp"
   },
+  "formMethods": [
+    {
+      "from": ["garchomp", "garchomp-f"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "garchompite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["garchomp", "garchomp-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "garchompite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Garchomp",
     "fra": "MégaCarchacrok",

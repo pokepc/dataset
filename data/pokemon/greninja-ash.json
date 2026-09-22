@@ -60,6 +60,22 @@
     "serebii": "greninja",
     "bulbapedia": "Greninja"
   },
+  "formMethods": [
+    {
+      "from": ["greninja"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["battlebond"] },
+        { "key": "battle_condition", "condition": "directly_knock_out_opponent" },
+        { "key": "battle_condition", "condition": "battle_continues" },
+        { "key": "battle_condition", "condition": "battle_bond_not_previously_used" }
+      ],
+      "notes": {
+        "eng": "Only Battle Bond Greninja can transform; its source record is collapsed with ordinary Greninja in this dataset. These individuals are male. Scarlet/Violet Battle Bond no longer transforms Greninja."
+      }
+    }
+  ],
   "names": {
     "eng": "Ash-Greninja",
     "esp": "Greninja (Forma Ash)",

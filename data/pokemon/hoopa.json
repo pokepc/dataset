@@ -74,6 +74,46 @@
     "serebii": "hoopa",
     "bulbapedia": "Hoopa"
   },
+  "formMethods": [
+    {
+      "from": ["hoopa-unbound"],
+      "games": ["sv-s", "sv-v", "lza"],
+      "trigger": "use_item",
+      "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["hoopa-unbound"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "days" }],
+      "notes": { "eng": "The timer starts when the Prison Bottle is used." }
+    },
+    {
+      "from": ["hoopa-unbound"],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+    },
+    {
+      "from": ["hoopa-unbound"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+    },
+    {
+      "from": ["hoopa-unbound"],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+    },
+    {
+      "from": ["hoopa-unbound"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+    }
+  ],
   "names": {
     "eng": "Hoopa",
     "fra": "Hoopa",

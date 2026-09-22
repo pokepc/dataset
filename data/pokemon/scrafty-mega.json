@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "scraftinite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "scrafty",
     "bulbapedia": "Scrafty"
   },
+  "formMethods": [
+    {
+      "from": ["scrafty"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "scraftinite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Scrafty",
     "fra": "MégaBaggaïd",

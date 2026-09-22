@@ -60,6 +60,17 @@
     "serebii": "rillaboom",
     "bulbapedia": "Rillaboom"
   },
+  "formMethods": [
+    {
+      "from": ["rillaboom"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Rillaboom (Gigantamax Form)",
     "fra": "Gorythmic (Forme Gigamax)",

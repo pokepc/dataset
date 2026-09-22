@@ -76,6 +76,20 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["urshifu-rapid-strike-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "turns" }]
+    },
+    {
+      "from": ["urshifu-rapid-strike-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] }]
+    }
+  ],
   "names": {
     "eng": "Urshifu (Rapid Strike Style)",
     "esp": "Urshifu (Estilo Fluido)",

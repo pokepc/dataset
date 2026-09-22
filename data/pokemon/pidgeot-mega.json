@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "pidgeotite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,32 @@
     "serebii": "pidgeot",
     "bulbapedia": "Pidgeot"
   },
+  "formMethods": [
+    {
+      "from": ["pidgeot"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "pidgeotite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["pidgeot"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "pidgeotite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    },
+    {
+      "from": ["pidgeot"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": { "id": "pidgeotite", "role": "bag" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    }
+  ],
   "names": {
     "eng": "Mega Pidgeot",
     "fra": "MégaRoucarnage",

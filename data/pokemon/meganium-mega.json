@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "meganiumite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "meganium",
     "bulbapedia": "Meganium"
   },
+  "formMethods": [
+    {
+      "from": ["meganium", "meganium-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "meganiumite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Meganium",
     "fra": "MégaMéganium",

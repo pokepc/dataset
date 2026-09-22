@@ -83,6 +83,23 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["greninja-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    },
+    {
+      "from": ["greninja-ash"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
+      "notes": {
+        "eng": "After fainting, Battle Bond cannot transform Greninja again during that battle."
+      }
+    }
+  ],
   "names": {
     "eng": "Greninja",
     "fra": "Amphinobi",

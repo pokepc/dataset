@@ -79,6 +79,31 @@
     "serebii": "thundurus",
     "bulbapedia": "Thundurus"
   },
+  "formMethods": [
+    {
+      "from": ["thundurus"],
+      "games": [
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "la",
+        "sv-s",
+        "sv-v"
+      ],
+      "trigger": "use_item",
+      "item": { "id": "revealglass", "role": "used", "consumed": false },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Thundurus (Therian Forme)",
     "esp": "Thundurus (Forma Tótem)",

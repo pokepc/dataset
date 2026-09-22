@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "glalitite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -60,6 +59,25 @@
     "serebii": "glalie",
     "bulbapedia": "Glalie"
   },
+  "formMethods": [
+    {
+      "from": ["glalie"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "glalitite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["glalie"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "glalitite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Glalie",
     "fra": "MégaOniglali",

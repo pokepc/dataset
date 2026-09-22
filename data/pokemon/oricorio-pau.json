@@ -60,6 +60,15 @@
     "serebii": "oricorio",
     "bulbapedia": "Oricorio"
   },
+  "formMethods": [
+    {
+      "from": ["oricorio-pom-pom", "oricorio-sensu", "oricorio"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "pinknectar", "role": "used", "consumed": true },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Oricorio (Pa’u Style)",
     "esp": "Oricorio (Estilo Plácido)",

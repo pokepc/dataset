@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "glimmoranite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "glimmora",
     "bulbapedia": "Glimmora"
   },
+  "formMethods": [
+    {
+      "from": ["glimmora"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "glimmoranite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Glimmora",
     "esp": "Mega Glimmora",

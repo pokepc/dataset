@@ -61,6 +61,18 @@
     "serebii": "heatran",
     "bulbapedia": "Heatran"
   },
+  "formMethods": [
+    {
+      "from": ["heatran"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "heatranite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Heatran",
     "esp": "Mega Heatran",

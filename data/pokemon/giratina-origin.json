@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "griseouscore",
   "isLegendary": true,
   "isMythical": false,
   "isBaby": false,
@@ -98,6 +97,55 @@
     "serebii": "giratina",
     "bulbapedia": "Giratina"
   },
+  "formMethods": [
+    {
+      "from": ["giratina"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "griseouscore", "role": "used", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["giratina"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "equip_item",
+      "item": { "id": "griseouscore", "role": "held", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["giratina"],
+      "games": [
+        "pt",
+        "hgss-hg",
+        "hgss-ss",
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "bdsp-bd",
+        "bdsp-sp"
+      ],
+      "trigger": "equip_item",
+      "item": { "id": "griseousorb", "role": "held", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["giratina"],
+      "games": ["pt"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "location", "location": "distortion_world" }]
+    }
+  ],
   "names": {
     "eng": "Giratina (Origin Forme)",
     "esp": "Giratina (Forma Origen)",

@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "rockmemory",
   "isLegendary": true,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,33 @@
     "serebii": "silvally",
     "bulbapedia": "Silvally"
   },
+  "formMethods": [
+    {
+      "from": [
+        "silvally-fairy",
+        "silvally-dark",
+        "silvally-fighting",
+        "silvally-ghost",
+        "silvally-ice",
+        "silvally-ground",
+        "silvally-dragon",
+        "silvally-water",
+        "silvally-poison",
+        "silvally-electric",
+        "silvally-psychic",
+        "silvally-bug",
+        "silvally-flying",
+        "silvally-steel",
+        "silvally-grass",
+        "silvally-fire",
+        "silvally"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+      "trigger": "equip_item",
+      "item": { "id": "rockmemory", "role": "held" },
+      "conditions": [{ "key": "ability", "abilities": ["rkssystem"] }]
+    }
+  ],
   "names": {
     "eng": "Silvally (Type: Rock)",
     "esp": "Silvally (Tipo: Roca)",

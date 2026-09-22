@@ -61,6 +61,25 @@
     "serebii": "hoopa",
     "bulbapedia": "Hoopa"
   },
+  "formMethods": [
+    {
+      "from": ["hoopa"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["hoopa"],
+      "games": ["lza"],
+      "trigger": "use_item",
+      "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": {
+        "eng": "Obtain the Prison Bottle in Mega Dimension side mission 196, The Djinn Unbound."
+      }
+    }
+  ],
   "names": {
     "eng": "Hoopa Unbound",
     "esp": "Hoopa Desatado",

@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "manectite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -60,6 +59,25 @@
     "serebii": "manectric",
     "bulbapedia": "Manectric"
   },
+  "formMethods": [
+    {
+      "from": ["manectric"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "manectite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["manectric"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "manectite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Manectric",
     "fra": "MégaÉlecsprint",

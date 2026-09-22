@@ -120,6 +120,44 @@
     "serebii": "mewtwo",
     "bulbapedia": "Mewtwo"
   },
+  "formMethods": [
+    {
+      "from": ["mewtwo-mega-y"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    },
+    {
+      "from": ["mewtwo-mega-y"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    },
+    {
+      "from": ["mewtwo-mega-y"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    },
+    {
+      "from": ["mewtwo-mega-x"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    },
+    {
+      "from": ["mewtwo-mega-x"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    },
+    {
+      "from": ["mewtwo-mega-x"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    }
+  ],
   "names": {
     "eng": "Mewtwo",
     "fra": "Mewtwo",

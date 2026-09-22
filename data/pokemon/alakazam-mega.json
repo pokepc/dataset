@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "alakazite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -73,6 +72,32 @@
     "serebii": "alakazam",
     "bulbapedia": "Alakazam"
   },
+  "formMethods": [
+    {
+      "from": ["alakazam", "alakazam-f"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "alakazite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["alakazam", "alakazam-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "alakazite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    },
+    {
+      "from": ["alakazam", "alakazam-f"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": { "id": "alakazite", "role": "bag" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    }
+  ],
   "names": {
     "eng": "Mega Alakazam",
     "fra": "MégaAlakazam",

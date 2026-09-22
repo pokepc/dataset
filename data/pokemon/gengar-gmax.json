@@ -60,6 +60,17 @@
     "serebii": "gengar",
     "bulbapedia": "Gengar"
   },
+  "formMethods": [
+    {
+      "from": ["gengar"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Gengar (Gigantamax Form)",
     "fra": "Ectoplasma (Forme Gigamax)",

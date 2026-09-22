@@ -61,6 +61,17 @@
     "serebii": "butterfree",
     "bulbapedia": "Butterfree"
   },
+  "formMethods": [
+    {
+      "from": ["butterfree", "butterfree-f"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Butterfree (Gigantamax Form)",
     "fra": "Papilusion (Forme Gigamax)",

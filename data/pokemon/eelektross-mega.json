@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "eelektrossite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -60,6 +59,18 @@
     "serebii": "eelektross",
     "bulbapedia": "Eelektross"
   },
+  "formMethods": [
+    {
+      "from": ["eelektross"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "eelektrossite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Eelektross",
     "fra": "MégaOhmassacre",

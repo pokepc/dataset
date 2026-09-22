@@ -108,6 +108,46 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["cherrim-sunshine"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["flowergift"] },
+        { "key": "weather", "weather": ["sun"], "relation": "outside" }
+      ]
+    },
+    {
+      "from": ["cherrim-sunshine"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_condition", "condition": "sunlight_effect_or_flower_gift_inactive" }
+      ],
+      "notes": { "eng": "Sunshine Form ends when effective sunlight or Flower Gift is lost." }
+    },
+    {
+      "from": ["cherrim-sunshine"],
+      "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "weather", "weather": ["sun"], "relation": "outside" }]
+    },
+    {
+      "from": ["cherrim-sunshine"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_condition", "condition": "legends_arceus_sunshine_conditions_ended" }
+      ],
+      "notes": {
+        "eng": "Returns to Overcast outside battle, at night, or when sunny/harsh-sunlight overworld weather ends."
+      }
+    },
+    {
+      "from": ["cherrim-sunshine"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+    }
+  ],
   "names": {
     "eng": "Cherrim",
     "fra": "Ceriflor",

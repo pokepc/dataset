@@ -62,6 +62,17 @@
     "serebii": "centiskorch",
     "bulbapedia": "Centiskorch"
   },
+  "formMethods": [
+    {
+      "from": ["centiskorch"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Centiskorch (Gigantamax Form)",
     "fra": "Scolocendre (Forme Gigamax)",

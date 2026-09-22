@@ -60,6 +60,17 @@
     "serebii": "pikachu",
     "bulbapedia": "Pikachu"
   },
+  "formMethods": [
+    {
+      "from": ["pikachu", "pikachu-f"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Pikachu (Gigantamax Form)",
     "fra": "Pikachu (Forme Gigamax)",

@@ -61,6 +61,15 @@
     "serebii": "enamorus",
     "bulbapedia": "Enamorus"
   },
+  "formMethods": [
+    {
+      "from": ["enamorus-therian"],
+      "games": ["la", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "revealglass", "role": "used", "consumed": false },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Enamorus",
     "fra": "Amovénus",

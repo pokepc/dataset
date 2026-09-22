@@ -79,6 +79,24 @@
     "serebii": "necrozma",
     "bulbapedia": "Necrozma"
   },
+  "formMethods": [
+    {
+      "from": ["necrozma-dusk-mane"],
+      "games": ["usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "separate",
+      "item": { "id": "nsolarizer", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": { "eng": "The fused partner returns to the party." }
+    },
+    {
+      "from": ["necrozma-dawn-wings"],
+      "games": ["usum-us", "usum-um", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "separate",
+      "item": { "id": "nlunarizer", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": { "eng": "The fused partner returns to the party." }
+    }
+  ],
   "names": {
     "eng": "Necrozma",
     "fra": "Necrozma",

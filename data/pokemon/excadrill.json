@@ -104,6 +104,14 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["excadrill-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    }
+  ],
   "names": {
     "eng": "Excadrill",
     "fra": "Minotaupe",

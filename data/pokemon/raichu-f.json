@@ -143,6 +143,26 @@
       ]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["raichu-mega-x"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_condition", "condition": "mega_power_depleted" },
+        { "key": "original_form", "forms": ["raichu-f"] }
+      ]
+    },
+    {
+      "from": ["raichu-mega-y"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_condition", "condition": "mega_power_depleted" },
+        { "key": "original_form", "forms": ["raichu-f"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Raichu (Female)",
     "fra": "Raichu (Female)",

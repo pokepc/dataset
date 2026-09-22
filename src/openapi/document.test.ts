@@ -42,6 +42,18 @@ describe('static OpenAPI document', () => {
     for (const field of ['evolutionMethods', 'evolvesFrom', 'evoFromLevel', 'evoFromCondition'])
       expect(document.components?.schemas?.Pokemon).not.toHaveProperty(`properties.${field}`)
   })
+
+  it('exposes form transitions separately from evolution without the legacy item field', () => {
+    expect(document.components?.schemas?.Pokemon).toHaveProperty(
+      'properties.formMethods.type',
+      'array',
+    )
+    expect(document.components?.schemas?.Pokemon).toHaveProperty(
+      'properties.formMethods.items.properties.from.type',
+      'array',
+    )
+    expect(document.components?.schemas?.Pokemon).not.toHaveProperty('properties.formItem')
+  })
 })
 
 describe('OpenAPI index HTML', () => {

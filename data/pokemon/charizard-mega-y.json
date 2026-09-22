@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "charizarditey",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,32 @@
     "serebii": "charizard",
     "bulbapedia": "Charizard"
   },
+  "formMethods": [
+    {
+      "from": ["charizard"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "charizarditey", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["charizard"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "charizarditey", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    },
+    {
+      "from": ["charizard"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": { "id": "charizarditey", "role": "bag" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    }
+  ],
   "names": {
     "eng": "Mega Charizard Y",
     "fra": "MégaDracaufeu Y",

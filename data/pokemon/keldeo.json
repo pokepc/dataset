@@ -81,6 +81,31 @@
     "serebii": "keldeo",
     "bulbapedia": "Keldeo"
   },
+  "formMethods": [
+    {
+      "from": ["keldeo-resolute"],
+      "games": [
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "sv-s",
+        "sv-v",
+        "lza"
+      ],
+      "trigger": "forget_move",
+      "conditions": [{ "key": "known_move", "move": "secretsword", "relation": "does_not_know" }],
+      "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+    }
+  ],
   "names": {
     "eng": "Keldeo",
     "fra": "Keldeo",

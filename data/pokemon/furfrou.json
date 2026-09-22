@@ -82,6 +82,202 @@
     "serebii": "furfrou",
     "bulbapedia": "Furfrou"
   },
+  "formMethods": [
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["xy-x", "xy-y"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "friseur_furfrou" },
+        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+      ],
+      "notes": { "eng": "Request the Natural Form." }
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "slateport_pokemon_fan_club" },
+        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "malie_city_salon" },
+        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "hauoli_city_salon" },
+        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["lza"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "jaune_sector_6" },
+        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+      ],
+      "notes": { "eng": "Ask Mirte to restore the Natural Form." }
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
+      "notes": { "eng": "The timer starts when Furfrou is groomed." }
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+    }
+  ],
   "names": {
     "eng": "Furfrou",
     "fra": "Couafarel",

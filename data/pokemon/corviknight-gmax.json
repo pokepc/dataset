@@ -62,6 +62,17 @@
     "serebii": "corviknight",
     "bulbapedia": "Corviknight"
   },
+  "formMethods": [
+    {
+      "from": ["corviknight"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Corviknight (Gigantamax Form)",
     "fra": "Corvaillus (Forme Gigamax)",

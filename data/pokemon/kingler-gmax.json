@@ -61,6 +61,17 @@
     "serebii": "kingler",
     "bulbapedia": "Kingler"
   },
+  "formMethods": [
+    {
+      "from": ["kingler"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Kingler (Gigantamax Form)",
     "fra": "Krabboss (Forme Gigamax)",

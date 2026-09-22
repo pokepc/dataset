@@ -87,6 +87,53 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck"],
+      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "season", "season": "winter" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": {
+        "eng": "The form updates when the game updates the current season while this Pokémon is in the party."
+      }
+    },
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "location", "location": "north_province_area_one" },
+        { "key": "interaction", "interaction": "load_game" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+    },
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "location", "location": "dalizapa_passage" },
+        { "key": "interaction", "interaction": "load_game" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+    },
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "location", "location": "glaseado_mountain" },
+        { "key": "interaction", "interaction": "load_game" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+    }
+  ],
   "names": {
     "eng": "Sawsbuck (Winter Form)",
     "esp": "Sawsbuck (Forma Invierno)",

@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "rustedshield",
   "isLegendary": true,
   "isMythical": false,
   "isBaby": false,
@@ -62,6 +61,16 @@
     "serebii": "zamazenta",
     "bulbapedia": "Zamazenta"
   },
+  "formMethods": [
+    {
+      "from": ["zamazenta"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "automatic",
+      "item": { "id": "rustedshield", "role": "held", "consumed": false },
+      "conditions": [{ "key": "battle_event", "events": ["battle_start", "switch_in"] }],
+      "notes": { "eng": "Holding the matching rusted item activates the Crowned form in battle." }
+    }
+  ],
   "names": {
     "eng": "Zamazenta (Crowned Shield)",
     "esp": "Zamazenta (Escudo Supremo)",

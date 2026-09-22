@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "pyroarite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "pyroar",
     "bulbapedia": "Pyroar"
   },
+  "formMethods": [
+    {
+      "from": ["pyroar", "pyroar-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "pyroarite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Pyroar",
     "fra": "MégaNémélios",

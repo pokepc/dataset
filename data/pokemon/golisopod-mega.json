@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "golisopite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "golisopod",
     "bulbapedia": "Golisopod"
   },
+  "formMethods": [
+    {
+      "from": ["golisopod"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "golisopite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Golisopod",
     "esp": "Mega Golisopod",

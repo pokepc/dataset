@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "beedrillite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,32 @@
     "serebii": "beedrill",
     "bulbapedia": "Beedrill"
   },
+  "formMethods": [
+    {
+      "from": ["beedrill"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "beedrillite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["beedrill"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "beedrillite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    },
+    {
+      "from": ["beedrill"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": { "id": "beedrillite", "role": "bag" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    }
+  ],
   "names": {
     "eng": "Mega Beedrill",
     "fra": "MégaDardargnan",

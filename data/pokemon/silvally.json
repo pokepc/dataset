@@ -83,6 +83,56 @@
       "conditions": [{ "key": "friendship" }]
     }
   ],
+  "formMethods": [
+    {
+      "from": [
+        "silvally-fairy",
+        "silvally-dark",
+        "silvally-fighting",
+        "silvally-ghost",
+        "silvally-ice",
+        "silvally-ground",
+        "silvally-dragon",
+        "silvally-water",
+        "silvally-poison",
+        "silvally-electric",
+        "silvally-rock",
+        "silvally-psychic",
+        "silvally-bug",
+        "silvally-flying",
+        "silvally-steel",
+        "silvally-grass",
+        "silvally-fire"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+      "trigger": "remove_item",
+      "conditions": [
+        { "key": "ability", "abilities": ["rkssystem"] },
+        {
+          "key": "held_item_absent",
+          "items": [
+            "fairymemory",
+            "darkmemory",
+            "fightingmemory",
+            "ghostmemory",
+            "icememory",
+            "groundmemory",
+            "dragonmemory",
+            "watermemory",
+            "poisonmemory",
+            "electricmemory",
+            "rockmemory",
+            "psychicmemory",
+            "bugmemory",
+            "flyingmemory",
+            "steelmemory",
+            "grassmemory",
+            "firememory"
+          ]
+        }
+      ]
+    }
+  ],
   "names": {
     "eng": "Silvally",
     "fra": "Silvallié",

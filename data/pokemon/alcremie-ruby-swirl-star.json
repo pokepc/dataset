@@ -73,6 +73,26 @@
       ]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["alcremie-ruby-swirl-star"] }
+      ]
+    },
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["alcremie-ruby-swirl-star"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Alcremie (Ruby Swirl Star Sweet)",
     "fra": "Charmilly (Mélange Ruby Étoile en Sucre)",

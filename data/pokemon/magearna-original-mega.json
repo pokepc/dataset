@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "magearnite",
   "isLegendary": false,
   "isMythical": true,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "magearna",
     "bulbapedia": "Magearna"
   },
+  "formMethods": [
+    {
+      "from": ["magearna-original"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "magearnite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Magearna (Original Color)",
     "esp": "Mega Magearna (Color Vetusto)",

@@ -72,6 +72,26 @@
       ]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["alcremie-vanilla-cream-ribbon"] }
+      ]
+    },
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["alcremie-vanilla-cream-ribbon"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Alcremie (Vanilla Cream Ribbon Sweet)",
     "fra": "Charmilly (Lait Vanille Ruban en Sucre)",

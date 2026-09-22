@@ -129,6 +129,26 @@
     "serebii": "eevee",
     "bulbapedia": "Eevee"
   },
+  "formMethods": [
+    {
+      "from": ["eevee-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["eevee-f"] }
+      ]
+    },
+    {
+      "from": ["eevee-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["eevee-f"] }
+      ]
+    }
+  ],
   "names": { "eng": "Eevee (Female)", "fra": "Évoli (Female)", "deu": "Evoli (Female)" },
   "genus": {
     "eng": "Evolution Pokémon",

@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "garchompitez",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -60,6 +59,18 @@
     "serebii": "garchomp",
     "bulbapedia": "Garchomp"
   },
+  "formMethods": [
+    {
+      "from": ["garchomp", "garchomp-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "garchompitez", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Garchomp Z",
     "esp": "Mega Garchomp Z",

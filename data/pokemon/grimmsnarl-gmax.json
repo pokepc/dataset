@@ -62,6 +62,17 @@
     "serebii": "grimmsnarl",
     "bulbapedia": "Grimmsnarl"
   },
+  "formMethods": [
+    {
+      "from": ["grimmsnarl"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Grimmsnarl (Gigantamax Form)",
     "fra": "Angoliath (Forme Gigamax)",

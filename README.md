@@ -90,7 +90,10 @@ Root JSON files are collection files. `games/`, `pokedexes/`, and `pokemon/` con
 per entity. `indices/` controls the order of those per-entity files.
 
 The [Pokémon availability field reference](docs/pokemon-availability.md) defines acquisition,
-storage, shiny availability, and related form fields for both maintainers and agents.
+storage, shiny availability, and related form fields for both maintainers and agents. The
+[evolution reference](docs/pokemon-evolutions.md) and
+[form-transition reference](docs/pokemon-forms.md) explain the method arrays, typed conditions, and
+translation-ready enum exports.
 
 ## Contributing
 

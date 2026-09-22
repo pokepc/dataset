@@ -61,6 +61,17 @@
     "serebii": "machamp",
     "bulbapedia": "Machamp"
   },
+  "formMethods": [
+    {
+      "from": ["machamp"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Machamp (Gigantamax Form)",
     "fra": "Mackogneur (Forme Gigamax)",

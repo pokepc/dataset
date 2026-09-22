@@ -60,6 +60,18 @@
     "serebii": "staraptor",
     "bulbapedia": "Staraptor"
   },
+  "formMethods": [
+    {
+      "from": ["staraptor", "staraptor-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "staraptite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Staraptor",
     "esp": "Mega Staraptor",

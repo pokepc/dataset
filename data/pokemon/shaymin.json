@@ -85,6 +85,145 @@
     "serebii": "shaymin",
     "bulbapedia": "Shaymin"
   },
+  "formMethods": [
+    {
+      "from": ["shaymin-sky"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "gracidea", "role": "used", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": [
+        "pt",
+        "hgss-hg",
+        "hgss-ss",
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "bdsp-bd",
+        "bdsp-sp"
+      ],
+      "trigger": "automatic",
+      "conditions": [{ "key": "time_of_day", "time": "night" }]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "time_of_day", "time": "night" },
+        { "key": "battle_event", "events": ["battle_start"] }
+      ]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "time_of_day", "time": "night" },
+        { "key": "battle_event", "events": ["battle_end"] }
+      ]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": [
+        "pt",
+        "hgss-hg",
+        "hgss-ss",
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "bdsp-bd",
+        "bdsp-sp",
+        "sv-s",
+        "sv-v"
+      ],
+      "trigger": "automatic",
+      "conditions": [{ "key": "status", "status": "frozen", "relation": "is" }]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "status", "status": "frostbite", "relation": "is" }]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": [
+        "pt",
+        "hgss-hg",
+        "hgss-ss",
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as"
+      ],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "bdsp-bd", "bdsp-sp", "sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": [
+        "pt",
+        "hgss-hg",
+        "hgss-ss",
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "bdsp-bd",
+        "bdsp-sp"
+      ],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+    },
+    {
+      "from": ["shaymin-sky"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+    }
+  ],
   "names": {
     "eng": "Shaymin",
     "fra": "Shaymin",

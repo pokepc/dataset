@@ -140,6 +140,8 @@ function writeSmokeProject() {
 import { createSearchablePokemonList, searchPokemon } from '@pokepc/dataset/lib/search'
 import { dexNumToGen, formatDexNum } from '@pokepc/dataset/lib/utils'
 import { gameSchema, modernBoxPresetSchema, pokemonSchema } from '@pokepc/dataset/lib/schemas'
+import { formConditionKeys, formTriggers } from '@pokepc/dataset/lib/enums'
+import { formMethodSchema } from '@pokepc/dataset/lib/form-schemas'
 import type {} from '@pokepc/dataset/lib/types'
 import pikachuData from '@pokepc/dataset/data/pokemon/pikachu' with { type: 'json' }
 import bulbasaurData from '@pokepc/dataset/data/pokemon/bulbasaur' with { type: 'json' }
@@ -150,6 +152,10 @@ const pikachu: Pkds.Pokemon = pokemonSchema.parse(pikachuData)
 const bulbasaur: Pkds.Pokemon = pokemonSchema.parse(bulbasaurData)
 const swordShield: Pkds.Game = gameSchema.parse(swordShieldData)
 const swordShieldPreset: Pkds.ModernBoxPreset = modernBoxPresetSchema.parse(swordShieldPresetData)
+const formMethod: Pkds.FormMethod = formMethodSchema.parse(pikachu.formMethods?.[0])
+if (!formTriggers.includes(formMethod.trigger) || !formConditionKeys.includes('original_form')) {
+  throw new Error('Expected iterable form vocabulary and public form types')
+}
 
 const searchablePokemon = createSearchablePokemonList([pikachu, bulbasaur])
 const electricSearch = searchPokemon(searchablePokemon, { q: 'pika', type: 'electric' }, false)

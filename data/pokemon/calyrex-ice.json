@@ -61,6 +61,16 @@
     "serebii": "calyrex",
     "bulbapedia": "Calyrex"
   },
+  "formMethods": [
+    {
+      "from": ["calyrex"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "fuse",
+      "item": { "id": "reinsofunity", "role": "used", "consumed": false },
+      "conditions": [{ "key": "fusion_partner", "pokemon": "glastrier" }],
+      "notes": { "eng": "Only one Calyrex can be fused at a time." }
+    }
+  ],
   "names": {
     "eng": "Calyrex (Ice Rider)",
     "esp": "Calyrex (Jinete Glacial)",

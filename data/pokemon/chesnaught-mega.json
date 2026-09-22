@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "chesnaughtite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "chesnaught",
     "bulbapedia": "Chesnaught"
   },
+  "formMethods": [
+    {
+      "from": ["chesnaught"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "chesnaughtite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Chesnaught",
     "fra": "MégaBlindépique",

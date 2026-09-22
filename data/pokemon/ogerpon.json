@@ -59,6 +59,19 @@
     "serebii": "ogerpon",
     "bulbapedia": "Ogerpon"
   },
+  "formMethods": [
+    {
+      "from": ["ogerpon-hearthflame", "ogerpon-cornerstone", "ogerpon-wellspring"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "remove_item",
+      "conditions": [
+        {
+          "key": "held_item_absent",
+          "items": ["hearthflamemask", "cornerstonemask", "wellspringmask"]
+        }
+      ]
+    }
+  ],
   "names": {
     "eng": "Ogerpon",
     "fra": "Ogerpon",

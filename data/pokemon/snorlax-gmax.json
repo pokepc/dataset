@@ -61,6 +61,17 @@
     "serebii": "snorlax",
     "bulbapedia": "Snorlax"
   },
+  "formMethods": [
+    {
+      "from": ["snorlax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Snorlax (Gigantamax Form)",
     "fra": "Ronflex (Forme Gigamax)",

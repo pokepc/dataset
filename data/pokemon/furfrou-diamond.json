@@ -59,6 +59,105 @@
     "serebii": "furfrou",
     "bulbapedia": "Furfrou"
   },
+  "formMethods": [
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star",
+        "furfrou"
+      ],
+      "games": ["xy-x", "xy-y"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "friseur_furfrou" },
+        { "key": "interaction", "interaction": "furfrou_groom" }
+      ],
+      "notes": { "eng": "This trim is available without a style-point unlock." }
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star",
+        "furfrou"
+      ],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "slateport_pokemon_fan_club" },
+        { "key": "interaction", "interaction": "furfrou_groom" }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star",
+        "furfrou"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "malie_city_salon" },
+        { "key": "interaction", "interaction": "furfrou_groom" }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star",
+        "furfrou"
+      ],
+      "games": ["usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "hauoli_city_salon" },
+        { "key": "interaction", "interaction": "furfrou_groom" }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star",
+        "furfrou"
+      ],
+      "games": ["lza"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "jaune_sector_6" },
+        { "key": "interaction", "interaction": "furfrou_groom" }
+      ],
+      "notes": { "eng": "Complete Becoming a Furfrou Trimmer to unlock grooming." }
+    }
+  ],
   "names": {
     "eng": "Furfrou (Diamond Trim)",
     "esp": "Furfrou (Corte Rombo)",

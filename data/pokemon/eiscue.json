@@ -58,6 +58,33 @@
     "serebii": "eiscue",
     "bulbapedia": "Eiscue"
   },
+  "formMethods": [
+    {
+      "from": ["eiscue-noice"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["iceface"] },
+        { "key": "weather", "weather": ["hail", "snow"], "relation": "in" },
+        { "key": "battle_event", "events": ["switch_in"] }
+      ]
+    },
+    {
+      "from": ["eiscue-noice"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["iceface"] },
+        { "key": "battle_condition", "condition": "hail_or_snow_begins" }
+      ],
+      "notes": {
+        "eng": "Existing hail/snow does not instantly restore ice after it breaks; the weather must begin anew, or Eiscue must switch into it."
+      }
+    },
+    {
+      "from": ["eiscue-noice"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+    }
+  ],
   "names": {
     "eng": "Eiscue",
     "fra": "Bekaglaçon",

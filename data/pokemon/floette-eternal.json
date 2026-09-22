@@ -61,6 +61,14 @@
     "serebii": "floette",
     "bulbapedia": "Floette"
   },
+  "formMethods": [
+    {
+      "from": ["floette-eternal-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    }
+  ],
   "names": {
     "eng": "Floette",
     "fra": "Floette",

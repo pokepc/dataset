@@ -120,6 +120,14 @@
       "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "night" }]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["chimecho-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    }
+  ],
   "names": {
     "eng": "Chimecho",
     "fra": "Éoko",

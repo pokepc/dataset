@@ -61,6 +61,17 @@
     "serebii": "urshifu",
     "bulbapedia": "Urshifu"
   },
+  "formMethods": [
+    {
+      "from": ["urshifu-rapid-strike"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Urshifu (Gigantamax Form)",
     "fra": "Shifours (Forme Gigamax)",

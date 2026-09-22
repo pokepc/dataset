@@ -77,6 +77,20 @@
     "serebii": "castform",
     "bulbapedia": "Castform"
   },
+  "formMethods": [
+    {
+      "from": ["castform", "castform-rainy", "castform-snowy"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["forecast"] },
+        { "key": "weather", "weather": ["sun"], "relation": "in" },
+        { "key": "battle_condition", "condition": "weather_effects_active" }
+      ],
+      "notes": {
+        "eng": "Forecast changes form while the matching weather has an active effect in battle."
+      }
+    }
+  ],
   "names": {
     "eng": "Castform (Sunny Form)",
     "esp": "Castform (Forma Sol)",

@@ -106,6 +106,100 @@
     "serebii": "rotom",
     "bulbapedia": "Rotom"
   },
+  "formMethods": [
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["pt", "bdsp-bd", "bdsp-sp"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "team_galactic_eterna_building_rotom_room" },
+        { "key": "interaction", "interaction": "washing_machine" }
+      ],
+      "notes": { "eng": "Access the appliance room using the Secret Key." }
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["hgss-hg", "hgss-ss"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "silph_co_rotom_room" },
+        { "key": "interaction", "interaction": "washing_machine" }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "shopping_mall_nine_basement" },
+        { "key": "interaction", "interaction": "washing_machine" }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["xy-x", "xy-y"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "sycamore_pokemon_lab" },
+        { "key": "interaction", "interaction": "washing_machine" }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "professor_birchs_lab" },
+        { "key": "interaction", "interaction": "washing_machine" }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "professor_kukuis_lab" },
+        { "key": "interaction", "interaction": "washing_machine" }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["la"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "jubilife_village_player_quarters" },
+        { "key": "interaction", "interaction": "washing_machine" }
+      ],
+      "notes": { "eng": "Purchase the corresponding appliance from Ginter first." }
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
+      "conditions": [{ "key": "interaction", "interaction": "washing_machine" }]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["bdsp-bd", "bdsp-sp"],
+      "trigger": "use_item",
+      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
+      "conditions": [{ "key": "interaction", "interaction": "washing_machine" }],
+      "notes": {
+        "eng": "An appliance form must first be used in Rotom’s Room to unlock that choice in the catalog."
+      }
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["lza"],
+      "trigger": "use_item",
+      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
+      "conditions": [{ "key": "interaction", "interaction": "washing_machine" }],
+      "notes": {
+        "eng": "Obtain the Rotom Catalog in Mega Dimension side mission 170, Rotom Showcase!"
+      }
+    }
+  ],
   "names": {
     "eng": "Wash Rotom",
     "esp": "Rotom Lavado",

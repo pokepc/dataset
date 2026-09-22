@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "gyaradosite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -74,6 +73,32 @@
     "serebii": "gyarados",
     "bulbapedia": "Gyarados"
   },
+  "formMethods": [
+    {
+      "from": ["gyarados", "gyarados-f"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "gyaradosite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["gyarados", "gyarados-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "gyaradosite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    },
+    {
+      "from": ["gyarados", "gyarados-f"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": { "id": "gyaradosite", "role": "bag" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    }
+  ],
   "names": {
     "eng": "Mega Gyarados",
     "fra": "MégaLéviator",

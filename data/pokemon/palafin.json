@@ -67,6 +67,14 @@
       "conditions": [{ "key": "union_circle" }]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["palafin-hero"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+    }
+  ],
   "names": {
     "eng": "Palafin",
     "fra": "Superdofin",

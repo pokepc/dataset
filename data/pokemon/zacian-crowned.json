@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "rustedsword",
   "isLegendary": true,
   "isMythical": false,
   "isBaby": false,
@@ -62,6 +61,16 @@
     "serebii": "zacian",
     "bulbapedia": "Zacian"
   },
+  "formMethods": [
+    {
+      "from": ["zacian"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "automatic",
+      "item": { "id": "rustedsword", "role": "held", "consumed": false },
+      "conditions": [{ "key": "battle_event", "events": ["battle_start", "switch_in"] }],
+      "notes": { "eng": "Holding the matching rusted item activates the Crowned form in battle." }
+    }
+  ],
   "names": {
     "eng": "Zacian (Crowned Sword)",
     "esp": "Zacian (Espada Suprema)",

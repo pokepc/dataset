@@ -135,6 +135,20 @@
     "serebii": "lapras",
     "bulbapedia": "Lapras"
   },
+  "formMethods": [
+    {
+      "from": ["lapras-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "turns" }]
+    },
+    {
+      "from": ["lapras-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] }]
+    }
+  ],
   "names": {
     "eng": "Lapras",
     "fra": "Lokhlass",

@@ -85,6 +85,96 @@
     "serebii": "deoxys",
     "bulbapedia": "Deoxys"
   },
+  "formMethods": [
+    {
+      "from": ["deoxys-attack", "deoxys-defense", "deoxys"],
+      "games": ["e"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "transfer", "destination": "e" }],
+      "notes": {
+        "eng": "In Generation III, a traded Deoxys adopts the form fixed by the receiving game."
+      }
+    },
+    {
+      "from": ["deoxys-attack", "deoxys-defense", "deoxys"],
+      "games": ["dp-d", "dp-p", "pt", "bdsp-bd", "bdsp-sp"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "veilstone_city_meteorites" },
+        { "key": "interaction", "interaction": "deoxys_meteorite" }
+      ],
+      "notes": {
+        "eng": "Keep Deoxys in the party. At a cycling meteorite, repeat the interaction until the desired form is reached."
+      }
+    },
+    {
+      "from": ["deoxys-attack", "deoxys-defense", "deoxys"],
+      "games": ["hgss-hg", "hgss-ss"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "kanto_route_3_meteorites" },
+        { "key": "interaction", "interaction": "deoxys_meteorite" }
+      ],
+      "notes": {
+        "eng": "Keep Deoxys in the party. At a cycling meteorite, repeat the interaction until the desired form is reached."
+      }
+    },
+    {
+      "from": ["deoxys-attack", "deoxys-defense", "deoxys"],
+      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "nacrene_museum_meteorite" },
+        { "key": "interaction", "interaction": "deoxys_meteorite" }
+      ],
+      "notes": {
+        "eng": "Keep Deoxys in the party. At a cycling meteorite, repeat the interaction until the desired form is reached."
+      }
+    },
+    {
+      "from": ["deoxys-attack", "deoxys-defense", "deoxys"],
+      "games": ["xy-x", "xy-y"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "ambrette_fossil_lab_meteorites" },
+        { "key": "interaction", "interaction": "deoxys_meteorite" }
+      ],
+      "notes": {
+        "eng": "Keep Deoxys in the party. At a cycling meteorite, repeat the interaction until the desired form is reached."
+      }
+    },
+    {
+      "from": ["deoxys-attack", "deoxys-defense", "deoxys"],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "professor_cozmos_house_meteorite" },
+        { "key": "interaction", "interaction": "deoxys_meteorite" }
+      ],
+      "notes": {
+        "eng": "Keep Deoxys in the party. At a cycling meteorite, repeat the interaction until the desired form is reached."
+      }
+    },
+    {
+      "from": ["deoxys-attack", "deoxys-defense", "deoxys"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        { "key": "location", "location": "hokulani_observatory_meteorite" },
+        { "key": "interaction", "interaction": "deoxys_meteorite" }
+      ],
+      "notes": {
+        "eng": "Keep Deoxys in the party. At a cycling meteorite, repeat the interaction until the desired form is reached."
+      }
+    },
+    {
+      "from": ["deoxys-defense"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": { "id": "meteorite", "role": "used", "consumed": false },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Deoxys (Speed Forme)",
     "esp": "Deoxys (Forma Velocidad)",

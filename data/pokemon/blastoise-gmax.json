@@ -60,6 +60,17 @@
     "serebii": "blastoise",
     "bulbapedia": "Blastoise"
   },
+  "formMethods": [
+    {
+      "from": ["blastoise"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Blastoise (Gigantamax Form)",
     "fra": "Tortank (Forme Gigamax)",

@@ -59,6 +59,18 @@
     "serebii": "darkrai",
     "bulbapedia": "Darkrai"
   },
+  "formMethods": [
+    {
+      "from": ["darkrai"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "darkranite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Darkrai",
     "esp": "Mega Darkrai",

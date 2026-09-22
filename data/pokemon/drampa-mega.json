@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "drampanite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "drampa",
     "bulbapedia": "Drampa"
   },
+  "formMethods": [
+    {
+      "from": ["drampa"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "drampanite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Drampa",
     "fra": "MégaDraïeul",

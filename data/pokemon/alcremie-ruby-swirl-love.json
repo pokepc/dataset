@@ -73,6 +73,26 @@
       ]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["alcremie-ruby-swirl-love"] }
+      ]
+    },
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["alcremie-ruby-swirl-love"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Alcremie (Ruby Swirl Love Sweet)",
     "fra": "Charmilly (Mélange Ruby Cœur en Sucre)",

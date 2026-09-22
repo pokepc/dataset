@@ -71,6 +71,37 @@
     "serebii": "mimikyu",
     "bulbapedia": "Mimikyu"
   },
+  "formMethods": [
+    {
+      "from": ["mimikyu"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["disguise"] },
+        { "key": "battle_event", "events": ["damaging_hit"] },
+        { "key": "battle_condition", "condition": "disguise_not_bypassed" }
+      ],
+      "notes": {
+        "eng": "Ability-ignoring attacks and attackers can damage Mimikyu without breaking its disguise."
+      }
+    },
+    {
+      "from": ["mimikyu"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["disguise"] },
+        { "key": "battle_condition", "condition": "confusion_self_hit" }
+      ]
+    },
+    {
+      "from": ["mimikyu"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["damaging_hit"] }],
+      "notes": {
+        "eng": "Legends: Z-A retains the disguise-breaking transformation without Abilities."
+      }
+    }
+  ],
   "names": {
     "eng": "Mimikyu (Busted Form)",
     "esp": "Mimikyu (Forma Descubierta)",

@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "hearthflamemask",
   "isLegendary": true,
   "isMythical": false,
   "isBaby": false,
@@ -62,6 +61,15 @@
     "serebii": "ogerpon",
     "bulbapedia": "Ogerpon"
   },
+  "formMethods": [
+    {
+      "from": ["ogerpon-cornerstone", "ogerpon-wellspring", "ogerpon"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "equip_item",
+      "item": { "id": "hearthflamemask", "role": "held" },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Ogerpon (Hearthflame Mask)",
     "esp": "Ogerpon (Máscara Horno)",

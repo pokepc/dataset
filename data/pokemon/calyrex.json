@@ -59,6 +59,24 @@
     "serebii": "calyrex",
     "bulbapedia": "Calyrex"
   },
+  "formMethods": [
+    {
+      "from": ["calyrex-ice"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "separate",
+      "item": { "id": "reinsofunity", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": { "eng": "The fused partner returns to the party." }
+    },
+    {
+      "from": ["calyrex-shadow"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "separate",
+      "item": { "id": "reinsofunity", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": { "eng": "The fused partner returns to the party." }
+    }
+  ],
   "names": {
     "eng": "Calyrex",
     "fra": "Sylveroy",

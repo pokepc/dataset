@@ -13,7 +13,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "lustrousglobe",
   "isLegendary": true,
   "isMythical": false,
   "isBaby": false,
@@ -63,6 +62,22 @@
     "serebii": "palkia",
     "bulbapedia": "Palkia"
   },
+  "formMethods": [
+    {
+      "from": ["palkia"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": { "id": "lustrousglobe", "role": "used", "consumed": false },
+      "conditions": []
+    },
+    {
+      "from": ["palkia"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "equip_item",
+      "item": { "id": "lustrousglobe", "role": "held", "consumed": false },
+      "conditions": []
+    }
+  ],
   "names": {
     "eng": "Palkia (Origin Forme)",
     "fra": "Palkia (Forme Originelle)",

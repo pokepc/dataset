@@ -60,6 +60,17 @@
     "serebii": "inteleon",
     "bulbapedia": "Inteleon"
   },
+  "formMethods": [
+    {
+      "from": ["inteleon"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Inteleon (Gigantamax Form)",
     "fra": "Lézargus (Forme Gigamax)",

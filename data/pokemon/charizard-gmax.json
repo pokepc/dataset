@@ -61,6 +61,17 @@
     "serebii": "charizard",
     "bulbapedia": "Charizard"
   },
+  "formMethods": [
+    {
+      "from": ["charizard"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Charizard (Gigantamax Form)",
     "fra": "Dracaufeu (Forme Gigamax)",

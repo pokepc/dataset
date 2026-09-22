@@ -99,6 +99,53 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck-winter"],
+      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "season", "season": "spring" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": {
+        "eng": "The form updates when the game updates the current season while this Pokémon is in the party."
+      }
+    },
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck-winter"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "location", "location": "south_province_area_one" },
+        { "key": "interaction", "interaction": "load_game" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+    },
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck-winter"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "location", "location": "south_province_area_four" },
+        { "key": "interaction", "interaction": "load_game" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+    },
+    {
+      "from": ["sawsbuck-autumn", "sawsbuck-summer", "sawsbuck-winter"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "location", "location": "south_province_area_five" },
+        { "key": "interaction", "interaction": "load_game" },
+        { "key": "mechanic", "mechanic": "in_party" }
+      ],
+      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+    }
+  ],
   "names": {
     "eng": "Sawsbuck",
     "fra": "Haydaim",

@@ -68,6 +68,20 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["orbeetle-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "turns" }]
+    },
+    {
+      "from": ["orbeetle-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] }]
+    }
+  ],
   "names": {
     "eng": "Orbeetle",
     "fra": "Astronelle",

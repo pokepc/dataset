@@ -59,6 +59,21 @@
     "serebii": "Palafin",
     "bulbapedia": "Palafin"
   },
+  "formMethods": [
+    {
+      "from": ["palafin"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["zerotohero"] },
+        { "key": "battle_event", "events": ["switch_out"] },
+        { "key": "hp", "comparison": "gt", "percent": 0 }
+      ],
+      "notes": {
+        "eng": "Switch out without fainting; Hero Form then lasts for the rest of the battle."
+      }
+    }
+  ],
   "names": {
     "eng": "Palafin (Hero Form)",
     "fra": "Superdofin (Forme Super)",

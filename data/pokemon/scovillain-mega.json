@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "scovillainite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "scovillain",
     "bulbapedia": "Scovillain"
   },
+  "formMethods": [
+    {
+      "from": ["scovillain"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "scovillainite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Scovillain",
     "esp": "Mega Scovillain",

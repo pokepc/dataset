@@ -62,6 +62,43 @@
     "serebii": "zygarde",
     "bulbapedia": "Zygarde"
   },
+  "formMethods": [
+    {
+      "from": ["zygarde"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "use_item",
+      "item": { "id": "zygardecube", "role": "used", "consumed": false },
+      "conditions": [{ "key": "ability", "abilities": ["powerconstruct"] }]
+    },
+    {
+      "from": ["zygarde"],
+      "games": ["swsh-sw", "swsh-sh", "lza"],
+      "trigger": "use_item",
+      "item": { "id": "zygardecube", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": {
+        "eng": "Choose Change form; Sword/Shield permits either Ability and Legends: Z-A has no Abilities."
+      }
+    },
+    {
+      "from": ["zygarde-complete"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "original_form", "forms": ["zygarde-10"] },
+        { "key": "battle_event", "events": ["battle_end"] }
+      ]
+    },
+    {
+      "from": ["zygarde-complete"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "original_form", "forms": ["zygarde-10"] },
+        { "key": "interaction", "interaction": "recall_outside_battle" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Zygarde (10% Forme)",
     "esp": "Zygarde (Forma 10%)",

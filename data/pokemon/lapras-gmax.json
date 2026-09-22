@@ -62,6 +62,17 @@
     "serebii": "lapras",
     "bulbapedia": "Lapras"
   },
+  "formMethods": [
+    {
+      "from": ["lapras"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Lapras (Gigantamax Form)",
     "fra": "Lokhlass (Forme Gigamax)",

@@ -76,6 +76,26 @@
       }
     }
   ],
+  "formMethods": [
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["alcremie-rainbow-swirl-strawberry"] }
+      ]
+    },
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["alcremie-rainbow-swirl-strawberry"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Alcremie (Rainbow Swirl Strawberry Sweet)",
     "esp": "Alcremie (Tres Sabores)",

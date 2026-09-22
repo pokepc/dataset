@@ -71,6 +71,14 @@
     "serebii": "drampa",
     "bulbapedia": "Drampa"
   },
+  "formMethods": [
+    {
+      "from": ["drampa-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    }
+  ],
   "names": {
     "eng": "Drampa",
     "fra": "Draïeul",

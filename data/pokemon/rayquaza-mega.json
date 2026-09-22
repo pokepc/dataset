@@ -61,6 +61,28 @@
     "serebii": "rayquaza",
     "bulbapedia": "Rayquaza"
   },
+  "formMethods": [
+    {
+      "from": ["rayquaza"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "known_move", "move": "dragonascent" },
+        { "key": "battle_condition", "condition": "rayquaza_mega_eligible" }
+      ]
+    },
+    {
+      "from": ["rayquaza"],
+      "games": ["lza"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" },
+        { "key": "known_move", "move": "dragonascent" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Rayquaza",
     "fra": "MégaRayquaza",

@@ -11,7 +11,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "floettite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "floette",
     "bulbapedia": "Floette"
   },
+  "formMethods": [
+    {
+      "from": ["floette-eternal"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "floettite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Floette",
     "fra": "MégaFloette",

@@ -132,6 +132,53 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["venusaur-mega"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end", "faint"] },
+        { "key": "original_form", "forms": ["venusaur"] }
+      ]
+    },
+    {
+      "from": ["venusaur-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_condition", "condition": "mega_power_depleted" },
+        { "key": "original_form", "forms": ["venusaur"] }
+      ]
+    },
+    {
+      "from": ["venusaur-mega"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end", "faint"] },
+        { "key": "original_form", "forms": ["venusaur"] }
+      ]
+    },
+    {
+      "from": ["venusaur-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["venusaur"] }
+      ]
+    },
+    {
+      "from": ["venusaur-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["venusaur"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Venusaur",
     "fra": "Florizarre",

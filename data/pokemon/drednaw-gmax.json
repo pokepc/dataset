@@ -62,6 +62,17 @@
     "serebii": "drednaw",
     "bulbapedia": "Drednaw"
   },
+  "formMethods": [
+    {
+      "from": ["drednaw"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Drednaw (Gigantamax Form)",
     "fra": "Torgamord (Forme Gigamax)",

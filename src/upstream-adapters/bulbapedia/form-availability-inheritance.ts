@@ -43,7 +43,7 @@ const inheritedForms: [RegExp, string][] = [
 
 export type FormInheritance = { baseId: string; sourceId: string }
 
-/** formItem alone is insufficient: an item used to change/evolve a form need not remain held. */
+/** Storage rules remain game-specific; using a form-change item does not imply it remains held. */
 export function requiresHeldItemForForm(
   pokemon: Pick<AvailabilityPokemon, 'id' | 'isMega'>,
 ): boolean {

@@ -1,0 +1,573 @@
+{
+  "scope": {
+    "species": [
+      "Castform",
+      "Cherrim",
+      "Darmanitan",
+      "Meloetta",
+      "Aegislash",
+      "Xerneas",
+      "Zygarde",
+      "Wishiwashi",
+      "Minior",
+      "Mimikyu",
+      "Cramorant",
+      "Eiscue",
+      "Morpeko",
+      "Palafin",
+      "Terapagos",
+      "Greninja",
+      "Necrozma",
+      "Zacian",
+      "Zamazenta"
+    ],
+    "description": "Bounded audit of main-series automatic and battle form transitions, with existing-Zygarde reassembly. Generic Mega/Gigantamax/Primal, Necrozma fusion, GO-specific mechanics, Contests and other spin-offs are outside this manifest.",
+    "gameCoverage": "Explicit games identify researched subsets or version-dependent rules. Missing games mean unknown; this is not an exhaustive title matrix.",
+    "conditionSemantics": "Conditions within a method are AND. Entries in method.from, battle_event.events, weather.weather and other listed alternatives are OR. original_form is the individual form before a temporary transformation; intrinsic_form is persistent identity such as Minior core color."
+  },
+  "generatedOn": "2026-09-22",
+  "species": {
+    "Castform": {
+      "status": "bounded",
+      "coveredDestinations": ["castform-rainy", "castform-snowy", "castform-sunny", "castform"],
+      "methodCount": 7,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Castform_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/4b403eeeb57791113deb9404d811323df7e0b7efa0eb446c36e7940408f7d6f9.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Three weather forms allow transitions from every other Castform form. Forecast and effective weather are both required.",
+        "Generation V onward ability-loss reversion is separate from the Generations III/IV retained-form behavior."
+      ],
+      "gaps": [
+        "Contests are described by the source but not modeled by this battle-focused manifest.",
+        "Complete supported-game enumeration is not established; omitted games are unknown.",
+        "Snow is an upstream mechanic description; no unsupported game or GO transformation route is inferred."
+      ]
+    },
+    "Cherrim": {
+      "status": "bounded",
+      "coveredDestinations": ["cherrim-sunshine", "cherrim"],
+      "methodCount": 10,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Cherrim_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/65c9641f31105b1e2c37d46e8cc9cfbb501ebea6fea7709e622fc16befc7cb70.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Generation IV form changes are independent of Flower Gift; later ability-driven behavior is separate.",
+        "Legends: Arceus requires battle, daylight, and sunny/harsh-sunlight overworld weather."
+      ],
+      "gaps": [
+        "Contest transformations are outside scope.",
+        "Complete per-game coverage and Flower Gift suppression edge cases beyond the documented general rule remain unaudited."
+      ]
+    },
+    "Darmanitan": {
+      "status": "bounded",
+      "coveredDestinations": [
+        "darmanitan-galar-zen",
+        "darmanitan-galar",
+        "darmanitan-zen",
+        "darmanitan"
+      ],
+      "methodCount": 7,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/2018e04a7f55c17a0f15f9345fd05032de09cc699de30e937d77e1d18c21e41c.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Zen_Mode_(Ability)",
+          "support": "End-of-turn thresholds, switch-out reversion, and Generation V/VI suppression.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Unovan and Galarian transitions are independent pairs with no cross-regional edges.",
+        "Both directions use end-of-turn HP checks; switch-out restores each regional Standard Mode."
+      ],
+      "gaps": [
+        "GO mechanics and complete title coverage are outside this bounded main-series audit."
+      ]
+    },
+    "Meloetta": {
+      "status": "bounded",
+      "coveredDestinations": ["meloetta-pirouette", "meloetta"],
+      "methodCount": 3,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/14b487d4ddb6cfd24fdf6a963470e0e200be5e9bcb9f1a4943c5deb8e9786732.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Relic_Song_(move)",
+          "support": "Relic Song needs to affect a target; Sheer Force removes the transformation effect.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Relic Song toggles both directions only when it affects a target and its additional effects have not been removed by Sheer Force.",
+        "Withdraw/battle end restores Aria."
+      ],
+      "gaps": [
+        "Contest Spectaculars and Mystery Dungeon form selection are excluded.",
+        "Per-game coverage omitted rather than inferred from distribution or availability."
+      ]
+    },
+    "Aegislash": {
+      "status": "bounded",
+      "coveredDestinations": ["aegislash-blade", "aegislash"],
+      "methodCount": 5,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Aegislash_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/86733804c7d054547b5a487ddec80d758e782f808502b92e4241f4a8ec221e64.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Blade/Shield move transitions happen before moves; Legends: Z-A rules are separately scoped and omit Ability requirements."
+      ],
+      "gaps": [
+        "GO battle-only form mechanics are not researched here.",
+        "Exact Legends: Z-A animation timing is explanatory text, not a simulation clock."
+      ]
+    },
+    "Xerneas": {
+      "status": "bounded",
+      "coveredDestinations": ["xerneas-active", "xerneas"],
+      "methodCount": 2,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Xerneas_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/04a65f295af1a477715249e67fdc155d02f22aad6d4c97f2d58652bb7300e7bb.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Neutral/Active is cosmetic battle presentation.",
+        "Cached source explicitly says GO and Legends: Z-A have no distinct programmed forms; do not infer those routes from generic methods."
+      ],
+      "gaps": [
+        "Contests and mobile HOME summary presentation excluded.",
+        "Generic methods intentionally omit games; this does not assert GO or Legends: Z-A support."
+      ]
+    },
+    "Zygarde": {
+      "status": "bounded",
+      "coveredDestinations": ["zygarde-10", "zygarde-complete", "zygarde"],
+      "methodCount": 11,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Zygarde_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/7d8c620a4b96c29a555e37122b44378d381389f504c7ffadea45aa7528d17c88.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Power_Construct_(Ability)",
+          "support": "Dedicated Ability effect establishes <=50% end-of-turn trigger and original-form reversion, including Legends: Z-A differences.",
+          "accessedOn": "2026-09-22"
+        },
+        {
+          "url": "https://www.serebii.net/abilitydex/powerconstruct.shtml",
+          "support": "Independent AbilityDex game text corroborates half HP or less.",
+          "accessedOn": "2026-09-22"
+        },
+        {
+          "url": "https://www.serebii.net/sunmoon/zygarde.shtml",
+          "support": "Independent check of 10/50/100-cell assembly and destructive separation.",
+          "accessedOn": "2026-09-22"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Zygarde_Cube",
+          "support": "Generation VII Power Construct restriction, Generation VIII form switching, Legends: Z-A item presence.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [
+        {
+          "id": "zygardecube",
+          "name": "Zygarde Cube",
+          "kind": "key item",
+          "roles": ["used", "bag"],
+          "consumed": false
+        }
+      ],
+      "notes": [
+        "Power Construct uses <=50% HP. The cached species prose and Serebii general forms page say below half; dedicated Bulbapedia Ability effect and Serebii AbilityDex game text say half or less. The dedicated mechanic references take precedence.",
+        "Original-form guard prevents Complete from reverting to the wrong 10%/50% identity.",
+        "Generation VII Cube switching requires Power Construct; Sword/Shield switching does not.",
+        "Reassembly Unit route models upgrading an existing 10% individual; collecting Cells from scratch is acquisition, not a transition from an existing Pokémon form."
+      ],
+      "gaps": [
+        "Cells/Cores are not dataset Pokémon records, so creating a new 10%/50% Zygarde solely from Cells cannot be represented by from/sources Pokémon IDs.",
+        "Separating an Aura Break Zygarde destroys that individual; later recreation is not encoded as a direct reversible form edge.",
+        "Power Construct ability-only changes on unchanged 50% form are not form transitions.",
+        "GO Cell-based form changes are outside this main-series scope.",
+        "Mega Zygarde is delegated outside this manifest."
+      ]
+    },
+    "Wishiwashi": {
+      "status": "bounded",
+      "coveredDestinations": ["wishiwashi-school", "wishiwashi"],
+      "methodCount": 3,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Wishiwashi_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/3c4b349599076c7e03d8427aa7ef0987190cffbc7e7fda2ed90febb58bbd0095.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "School Form requires level 20 and HP >25%; the reversion threshold includes exactly 25%.",
+        "Entry and end-of-turn checks are distinct from switch-out/battle-end reset."
+      ],
+      "gaps": ["Game enumeration is unknown rather than inherited from saved availability."]
+    },
+    "Minior": {
+      "status": "bounded",
+      "coveredDestinations": [
+        "minior-blue",
+        "minior-green",
+        "minior-indigo",
+        "minior-orange",
+        "minior-red",
+        "minior-violet",
+        "minior-yellow",
+        "minior"
+      ],
+      "methodCount": 15,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/69e428489d01c6824dd8a8ceffb473ce38e192689f2587df468041b8654cfc07.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Shields_Down_(Ability)",
+          "support": "Exact <=50% core and >50% meteor thresholds and entry/end-of-turn timing.",
+          "accessedOn": "2026-09-22"
+        },
+        {
+          "url": "https://www.serebii.net/games/forms.shtml",
+          "support": "Independent confirmation that core colors are fixed and cannot be changed.",
+          "accessedOn": "2026-09-22"
+        },
+        {
+          "url": "https://www.serebii.net/abilitydex/shieldsdown.shtml",
+          "support": "Dedicated AbilityDex used as secondary threshold reference.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "All seven cores use intrinsic_form, preserving fixed core color through the single collapsed Meteor record.",
+        "The dedicated Shields Down page resolves exact-half wording: core at <=50%, Meteor above 50%.",
+        "Caught Minior return to their own core outside battle; wild overworld Meteor presentation is not a player-selectable color transition."
+      ],
+      "gaps": [
+        "SV internally distinguishes Meteor colors, while the dataset has one Meteor record; intrinsic_form carries that lost identity.",
+        "GO and complete title enumeration are outside scope."
+      ]
+    },
+    "Mimikyu": {
+      "status": "bounded",
+      "coveredDestinations": ["mimikyu-busted", "mimikyu"],
+      "methodCount": 4,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Mimikyu_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/275946507239941559fc635831b6c6053cbcc5ac01f597ad6a87fef4e553daaf.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://www.serebii.net/abilitydex/disguise.shtml",
+          "support": "Secondary AbilityDex reference for disguise breaking.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Damaging hit and confusion self-hit routes are separate. Ability-ignoring attacks do not break Disguise.",
+        "Faint/battle-end restores Disguised; merely switching does not.",
+        "Legends: Z-A preserves the transformation without Abilities."
+      ],
+      "gaps": [
+        "HP damage differences before/after Generation VIII are not a form condition.",
+        "GO form mechanics and move-by-move Ability bypass enumeration are excluded."
+      ]
+    },
+    "Cramorant": {
+      "status": "bounded",
+      "coveredDestinations": ["cramorant-gorging", "cramorant-gulping", "cramorant"],
+      "methodCount": 7,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Cramorant_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/404ee7ded1acda052fe836380d528ea7e81517cb3adcbbc568b717338728ca90.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Gulp_Missile_(Ability)",
+          "support": "Surf must deal damage, Dive does not; switch-out and Dynamax resets; losing the Ability freezes the caught-prey form.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Surf and Dive are separate alternatives; Surf must deal damage.",
+        "Gulping uses >50% HP; Gorging includes exactly 50%.",
+        "Prey is discarded on recall/battle end or Dynamax. Getting hit requires Gulp Missile still be present."
+      ],
+      "gaps": [
+        "GO Gulp Missile added in 2026 has different mechanics and was not included in this main-series audit.",
+        "Version-specific Ability-copy restrictions are not modeled; the active-Ability requirement preserves the current form rule."
+      ]
+    },
+    "Eiscue": {
+      "status": "bounded",
+      "coveredDestinations": ["eiscue-noice", "eiscue"],
+      "methodCount": 4,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Eiscue_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/6d4e683f148183b6e3372d0a87e4b528b598973bcc455c4c047c3368f96224e1.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Ice_Face_(Ability)",
+          "support": "Ice restoration requires hail/snow beginning or switch-in; Noice survives switch-out.",
+          "accessedOn": "2026-09-22"
+        },
+        {
+          "url": "https://www.serebii.net/abilitydex/iceface.shtml",
+          "support": "Secondary AbilityDex reference for physical-hit and weather mechanic.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Noice remains through switch-out.",
+        "Restoration requires entering hail/snow or that weather newly beginning; continuing weather alone is insufficient."
+      ],
+      "gaps": [
+        "Exact per-title weather lists are not enumerated; hail/snow are alternative documented mechanics.",
+        "Move-by-move Ice Face bypass and confusion interactions are not exhaustively encoded."
+      ]
+    },
+    "Morpeko": {
+      "status": "bounded",
+      "coveredDestinations": ["morpeko-hangry", "morpeko"],
+      "methodCount": 6,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Morpeko_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/f333224bfafb8fc17d50d04c6e538ed6071ddc1884ee75271da4efdea2caa22d.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Hunger_Switch_(Ability)",
+          "support": "Terastallization prevents form switching; Legends: Z-A uses Aura Wheel.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Hunger Switch toggles after turns and is prevented by Terastallization.",
+        "Legends: Z-A toggles after Aura Wheel without an Ability.",
+        "Terastallized Hangry does not reset merely from switching."
+      ],
+      "gaps": [
+        "GO Charged Attack switching is excluded from this bounded main-series manifest.",
+        "Detailed Ability replacement/suppression exceptions remain outside form-transition scope."
+      ]
+    },
+    "Palafin": {
+      "status": "bounded",
+      "coveredDestinations": ["palafin-hero", "palafin"],
+      "methodCount": 2,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Palafin_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/1b0538a962fcce19bfee6070a483903f3e1791f7a7b0a408c092ce82de8fb44a.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://www.serebii.net/scarletviolet/formchange.shtml",
+          "support": "Independent confirmation of switch-out transformation.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Must switch out alive; Hero then remains until battle end.",
+        "Only Scarlet/Violet scope is asserted."
+      ],
+      "gaps": []
+    },
+    "Terapagos": {
+      "status": "bounded",
+      "coveredDestinations": ["terapagos-stellar", "terapagos-terastal", "terapagos"],
+      "methodCount": 3,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Terapagos_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/414ae9ef74ac4294e2a62e3fab00b03e86f3287c3df6e5a94b53cc69232226da.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        },
+        {
+          "url": "https://www.serebii.net/scarletviolet/formchange.shtml",
+          "support": "Independent confirmation of Normal/Terastal/Stellar sequence.",
+          "accessedOn": "2026-09-22"
+        },
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Tera_Shift_(Ability)",
+          "support": "Terastal lasts until battle end and also appears in auto battles.",
+          "accessedOn": "2026-09-22"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Entry activates Tera Shift; Terastallization changes Terastal to Stellar.",
+        "Battle-end reset covers both transformed states, with no incorrect Normal reversion on switch/faint."
+      ],
+      "gaps": [
+        "Stellar-to-Terastal behavior if Terastallization ends on fainting is not asserted without specific evidence.",
+        "Auto Battle animation transitions are documented upstream but excluded from ordinary battle-event modeling."
+      ]
+    },
+    "Greninja": {
+      "status": "bounded",
+      "coveredDestinations": ["greninja-ash", "greninja"],
+      "methodCount": 2,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Greninja_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/2dc412e49fd62efb817fd347f351512be657cb16a905987747f70fd442db527d.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Generation VII Battle Bond alone enables Ash-Greninja; Scarlet/Violet uses a different Ability effect.",
+        "The source must directly defeat an opponent while battle continues; reversion on faint prevents retriggering that battle.",
+        "The ordinary Greninja record collapses the nonbreeding male Battle Bond identity; Ability condition and note retain this distinction."
+      ],
+      "gaps": [
+        "No separate Battle Bond base record exists.",
+        "Mega Greninja is handled outside this manifest."
+      ]
+    },
+    "Necrozma": {
+      "status": "bounded",
+      "coveredDestinations": ["necrozma-dawn-wings", "necrozma-dusk-mane", "necrozma-ultra"],
+      "methodCount": 3,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Necrozma_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/4563f64b751d3d31b0e0ff65bdb1838ef2fe38eb69161b52cf8462a0fd4ad2b7.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Only fused Dusk Mane/Dawn Wings can Ultra Burst while holding Ultranecrozium Z.",
+        "Original-form guard restores the same fusion on faint or battle end; no invented unfused Necrozma edge."
+      ],
+      "gaps": ["Fusion/separation into Dusk Mane/Dawn Wings is handled outside this manifest."]
+    },
+    "Zacian": {
+      "status": "bounded",
+      "coveredDestinations": ["zacian-crowned", "zacian"],
+      "methodCount": 2,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/9f194aa645b6b0f898f8583eb0db706e03ea0195a872b1986e7e0feff5b7af92.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Crowned activates in battle while holding Rusted Sword; the item is reusable.",
+        "Return outside battle does not consume or require using the item."
+      ],
+      "gaps": ["GO Crowned form-change currency mechanics are outside this main-series audit."]
+    },
+    "Zamazenta": {
+      "status": "bounded",
+      "coveredDestinations": ["zamazenta-crowned", "zamazenta"],
+      "methodCount": 2,
+      "citations": [
+        {
+          "url": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
+          "cacheFile": ".local/bulbapedia/ab6d435b379a6f90e8f9444d2345b9cb01d398e469abf370ad31074e34ef755c.json",
+          "section": "Form data and introductory form description",
+          "role": "primary cached species evidence"
+        }
+      ],
+      "missingItems": [],
+      "notes": [
+        "Crowned activates in battle while holding Rusted Shield; the item is reusable.",
+        "Return outside battle does not consume or require using the item."
+      ],
+      "gaps": ["GO Crowned form-change currency mechanics are outside this main-series audit."]
+    }
+  },
+  "rareConditionDefinitions": {
+    "weather_effects_active": "The present weather has not been negated by an active weather-negating Ability.",
+    "weather_effects_negated": "Current weather is negated by Cloud Nine, Air Lock, or the corresponding weather-negating mechanic.",
+    "forecast_suppressed_or_replaced": "Forecast is suppressed or has been replaced by another Ability.",
+    "sunlight_effect_or_flower_gift_inactive": "The effective sunlight or active Flower Gift required for Sunshine Form has ceased.",
+    "in_battle": "The individual is currently participating in a battle.",
+    "legends_arceus_sunshine_conditions_ended": "Outside battle, at night, or overworld weather is neither sunny nor harsh sunlight.",
+    "zen_mode_suppressed_or_replaced": "Zen Mode is suppressed or replaced in Generations V/VI.",
+    "move_affects_at_least_one_target": "The specified move succeeds in affecting at least one target.",
+    "ability_is_not_sheer_force": "Meloetta does not currently have Sheer Force removing Relic Song's additional effect.",
+    "at_least_40_additional_zygarde_cells": "The Cube contains at least 40 Cells/Cores in addition to those in the source 10% Zygarde.",
+    "disguise_not_bypassed": "The incoming attack does not ignore Disguise through its move effect or the attacker's Ability.",
+    "confusion_self_hit": "Mimikyu damages itself while confused.",
+    "move_deals_damage": "The specified move successfully deals damage.",
+    "not_dynamaxed": "Cramorant is not currently Dynamaxed.",
+    "ice_face_not_bypassed": "The incoming physical move does not bypass Ice Face.",
+    "hail_or_snow_begins": "Hail or snow newly begins while Eiscue is on the field.",
+    "not_terastallized": "Morpeko is not currently Terastallized.",
+    "directly_knock_out_opponent": "Greninja directly causes an opposing Pokemon to faint through its attack.",
+    "battle_continues": "The knockout does not end the battle.",
+    "battle_bond_not_previously_used": "Battle Bond has not already activated for this individual during this battle.",
+    "ultra_burst_unused_by_trainer": "The trainer has not already used Ultra Burst in this battle."
+  }
+}

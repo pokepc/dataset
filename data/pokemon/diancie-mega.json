@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "diancite",
   "isLegendary": false,
   "isMythical": true,
   "isBaby": false,
@@ -62,6 +61,25 @@
     "serebii": "diancie",
     "bulbapedia": "Diancie"
   },
+  "formMethods": [
+    {
+      "from": ["diancie"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "diancite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["diancie"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "diancite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Diancie",
     "fra": "MégaDiancie",

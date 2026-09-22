@@ -61,6 +61,17 @@
     "serebii": "venusaur",
     "bulbapedia": "Venusaur"
   },
+  "formMethods": [
+    {
+      "from": ["venusaur", "venusaur-f"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Venusaur (Gigantamax Form)",
     "fra": "Florizarre (Forme Gigamax)",

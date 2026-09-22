@@ -73,6 +73,26 @@
       ]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["alcremie-matcha-cream-flower"] }
+      ]
+    },
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["alcremie-matcha-cream-flower"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Alcremie (Matcha Cream Flower Sweet)",
     "fra": "Charmilly (Lait Matcha Fleur en Sucre)",

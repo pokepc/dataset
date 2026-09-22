@@ -60,6 +60,22 @@
     "serebii": "kyogre",
     "bulbapedia": "Kyogre"
   },
+  "formMethods": [
+    {
+      "from": ["kyogre"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "lza"],
+      "trigger": "automatic",
+      "item": { "id": "blueorb", "role": "held" },
+      "conditions": [{ "key": "battle_event", "events": ["switch_in"] }]
+    },
+    {
+      "from": ["kyogre"],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "item": { "id": "blueorb", "role": "held" },
+      "conditions": [{ "key": "interaction", "interaction": "enter_contest_spectacular" }]
+    }
+  ],
   "names": {
     "eng": "Kyogre (Primal Reversion)",
     "esp": "Kyogre (Regresión Primigenia)",

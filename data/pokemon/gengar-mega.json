@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "gengarite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -72,6 +71,32 @@
     "serebii": "gengar",
     "bulbapedia": "Gengar"
   },
+  "formMethods": [
+    {
+      "from": ["gengar"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": { "id": "gengarite", "role": "held" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    },
+    {
+      "from": ["gengar"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "gengarite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    },
+    {
+      "from": ["gengar"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": { "id": "gengarite", "role": "bag" },
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+    }
+  ],
   "names": {
     "eng": "Mega Gengar",
     "fra": "MégaEctoplasma",

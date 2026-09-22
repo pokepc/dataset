@@ -62,6 +62,17 @@
     "serebii": "hatterene",
     "bulbapedia": "Hatterene"
   },
+  "formMethods": [
+    {
+      "from": ["hatterene"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Hatterene (Gigantamax Form)",
     "fra": "Sorcilence (Forme Gigamax)",

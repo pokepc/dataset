@@ -61,6 +61,17 @@
     "serebii": "sandaconda",
     "bulbapedia": "Sandaconda"
   },
+  "formMethods": [
+    {
+      "from": ["sandaconda"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Sandaconda (Gigantamax Form)",
     "fra": "Dunaconda (Forme Gigamax)",

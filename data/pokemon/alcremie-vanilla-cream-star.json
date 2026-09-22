@@ -72,6 +72,26 @@
       ]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
+        { "key": "original_form", "forms": ["alcremie-vanilla-cream-star"] }
+      ]
+    },
+    {
+      "from": ["alcremie-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
+        { "key": "original_form", "forms": ["alcremie-vanilla-cream-star"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Alcremie (Vanilla Cream Star Sweet)",
     "fra": "Charmilly (Lait Vanille Étoile en Sucre)",

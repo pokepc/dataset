@@ -77,6 +77,31 @@
     "serebii": "kyurem",
     "bulbapedia": "Kyurem"
   },
+  "formMethods": [
+    {
+      "from": ["kyurem"],
+      "games": [
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "sv-s",
+        "sv-v"
+      ],
+      "trigger": "fuse",
+      "item": { "id": "dnasplicers", "role": "used", "consumed": false },
+      "conditions": [{ "key": "fusion_partner", "pokemon": "zekrom" }],
+      "notes": { "eng": "Only one Kyurem can be fused with the DNA Splicers at a time." }
+    }
+  ],
   "names": {
     "eng": "Black Kyurem",
     "esp": "Kyurem Negro",

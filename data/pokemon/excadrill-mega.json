@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "excadrite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "excadrill",
     "bulbapedia": "Excadrill"
   },
+  "formMethods": [
+    {
+      "from": ["excadrill"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "excadrite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Excadrill",
     "fra": "MégaMinotaupe",

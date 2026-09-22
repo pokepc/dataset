@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "barbaracite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "barbaracle",
     "bulbapedia": "Barbaracle"
   },
+  "formMethods": [
+    {
+      "from": ["barbaracle"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "barbaracite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Barbaracle",
     "fra": "MégaGolgopathe",

@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "baxcalibrite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "baxcalibur",
     "bulbapedia": "Baxcalibur"
   },
+  "formMethods": [
+    {
+      "from": ["baxcalibur"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "baxcalibrite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Baxcalibur",
     "esp": "Mega Baxcalibur",

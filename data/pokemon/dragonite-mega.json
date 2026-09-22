@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "dragoninite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "dragonite",
     "bulbapedia": "Dragonite"
   },
+  "formMethods": [
+    {
+      "from": ["dragonite"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "dragoninite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Dragonite",
     "fra": "MégaDracolosse",

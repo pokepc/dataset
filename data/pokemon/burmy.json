@@ -95,6 +95,58 @@
     "serebii": "burmy",
     "bulbapedia": "Burmy"
   },
+  "formMethods": [
+    {
+      "from": ["burmy-sandy", "burmy-trash"],
+      "games": [
+        "dp-d",
+        "dp-p",
+        "pt",
+        "hgss-hg",
+        "hgss-ss",
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "bdsp-bd",
+        "bdsp-sp"
+      ],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end"] },
+        { "key": "environment", "environment": "outdoors_or_tall_grass" },
+        { "key": "mechanic", "mechanic": "participated_in_battle" }
+      ]
+    },
+    {
+      "from": ["burmy-sandy", "burmy-trash"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end"] },
+        { "key": "location", "location": "jubilife_village" },
+        { "key": "mechanic", "mechanic": "participated_in_battle" }
+      ]
+    },
+    {
+      "from": ["burmy-sandy", "burmy-trash"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_event", "events": ["battle_end"] },
+        { "key": "location", "location": "obsidian_fieldlands" },
+        { "key": "mechanic", "mechanic": "participated_in_battle" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Burmy",
     "fra": "Cheniti",

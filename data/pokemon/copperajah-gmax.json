@@ -60,6 +60,17 @@
     "serebii": "copperajah",
     "bulbapedia": "Copperajah"
   },
+  "formMethods": [
+    {
+      "from": ["copperajah"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Copperajah (Gigantamax Form)",
     "fra": "Pachyradjah (Forme Gigamax)",

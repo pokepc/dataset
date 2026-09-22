@@ -60,6 +60,27 @@
     "serebii": "morpeko",
     "bulbapedia": "Morpeko"
   },
+  "formMethods": [
+    {
+      "from": ["morpeko"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["hungerswitch"] },
+        { "key": "battle_event", "events": ["end_of_turn"] },
+        { "key": "battle_condition", "condition": "not_terastallized" }
+      ]
+    },
+    {
+      "from": ["morpeko"],
+      "games": ["lza"],
+      "trigger": "use_move",
+      "conditions": [
+        { "key": "move_used", "move": "aurawheel" },
+        { "key": "battle_event", "events": ["after_move"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Morpeko (Hangry Mode)",
     "esp": "Morpeko (Forma Voraz)",

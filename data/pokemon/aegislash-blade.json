@@ -71,6 +71,29 @@
     "serebii": "aegislash",
     "bulbapedia": "Aegislash"
   },
+  "formMethods": [
+    {
+      "from": ["aegislash"],
+      "trigger": "use_move",
+      "conditions": [
+        { "key": "ability", "abilities": ["stancechange"] },
+        { "key": "move_category", "categories": ["physical", "special"] },
+        { "key": "battle_event", "events": ["before_move"] }
+      ]
+    },
+    {
+      "from": ["aegislash"],
+      "games": ["lza"],
+      "trigger": "use_move",
+      "conditions": [
+        { "key": "move_category", "categories": ["physical", "special"] },
+        { "key": "battle_event", "events": ["before_move"] }
+      ],
+      "notes": {
+        "eng": "Legends: Z-A preserves the move-based transformation without Abilities; the change completes when its animation finishes."
+      }
+    }
+  ],
   "names": {
     "eng": "Aegislash (Blade Forme)",
     "esp": "Aegislash (Forma Filo)",

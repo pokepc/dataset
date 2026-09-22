@@ -12,7 +12,6 @@
   "isPrerelease": false,
   "isDefault": false,
   "isForm": true,
-  "formItem": "golurkite",
   "isLegendary": false,
   "isMythical": false,
   "isBaby": false,
@@ -61,6 +60,18 @@
     "serebii": "golurk",
     "bulbapedia": "Golurk"
   },
+  "formMethods": [
+    {
+      "from": ["golurk"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": { "id": "golurkite", "role": "held" },
+      "conditions": [
+        { "key": "mechanic", "mechanic": "mega_evolution" },
+        { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Mega Golurk",
     "esp": "Mega Golurk",

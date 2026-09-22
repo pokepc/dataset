@@ -85,6 +85,17 @@
       "conditions": [{ "key": "gender", "gender": "female" }]
     }
   ],
+  "formMethods": [
+    {
+      "from": ["pyroar-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "battle_condition", "condition": "mega_power_depleted" },
+        { "key": "original_form", "forms": ["pyroar-f"] }
+      ]
+    }
+  ],
   "names": {
     "eng": "Pyroar (Female)",
     "fra": "Némélios (Female)",

@@ -62,6 +62,17 @@
     "serebii": "toxtricity",
     "bulbapedia": "Toxtricity"
   },
+  "formMethods": [
+    {
+      "from": ["toxtricity-low-key"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Toxtricity (Gigantamax Form)",
     "fra": "Salarsen (Gigantamax Form)",

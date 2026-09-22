@@ -62,6 +62,17 @@
     "serebii": "appletun",
     "bulbapedia": "Appletun"
   },
+  "formMethods": [
+    {
+      "from": ["appletun"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Appletun (Gigantamax Form)",
     "fra": "Dratatin (Forme Gigamax)",

@@ -61,6 +61,33 @@
     "serebii": "minior",
     "bulbapedia": "Minior"
   },
+  "formMethods": [
+    {
+      "from": ["minior"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["shieldsdown"] },
+        { "key": "intrinsic_form", "forms": ["minior-yellow"] },
+        { "key": "battle_event", "events": ["end_of_turn"] },
+        { "key": "hp", "comparison": "lte", "percent": 50 },
+        { "key": "hp", "comparison": "gt", "percent": 0 }
+      ],
+      "notes": {
+        "eng": "The exposed core retains this Minior's fixed color; Meteor Form does not permit choosing a different color."
+      }
+    },
+    {
+      "from": ["minior"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "intrinsic_form", "forms": ["minior-yellow"] },
+        { "key": "battle_event", "events": ["switch_out", "battle_end"] }
+      ],
+      "notes": {
+        "eng": "A caught Minior exposes its own core outside battle. Wild overworld Minior may display Meteor Form."
+      }
+    }
+  ],
   "names": {
     "eng": "Minior (Yellow Core)",
     "esp": "Minior (Núcleo Amarillo)",

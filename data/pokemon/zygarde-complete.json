@@ -61,6 +61,41 @@
     "serebii": "zygarde",
     "bulbapedia": "Zygarde"
   },
+  "formMethods": [
+    {
+      "from": ["zygarde-complete-mega"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    },
+    {
+      "from": ["zygarde-10", "zygarde"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["powerconstruct"] },
+        { "key": "battle_event", "events": ["end_of_turn"] },
+        { "key": "hp", "comparison": "lte", "percent": 50 },
+        { "key": "hp", "comparison": "gt", "percent": 0 }
+      ],
+      "notes": {
+        "eng": "Complete Forme persists through healing and switching until the battle ends."
+      }
+    },
+    {
+      "from": ["zygarde-10", "zygarde"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "hp", "comparison": "lte", "percent": 50 },
+        { "key": "hp", "comparison": "gt", "percent": 0 },
+        { "key": "battle_condition", "condition": "in_battle" }
+      ],
+      "notes": {
+        "eng": "No Ability is required in Legends: Z-A. If the threshold is crossed while using a move, transformation waits until that move finishes."
+      }
+    }
+  ],
   "names": {
     "eng": "Zygarde (Complete Forme)",
     "esp": "Zygarde (Forma Completa)",

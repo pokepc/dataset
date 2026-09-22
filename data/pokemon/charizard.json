@@ -132,6 +132,56 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["charizard-mega-x"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    },
+    {
+      "from": ["charizard-mega-x"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    },
+    {
+      "from": ["charizard-mega-x"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    },
+    {
+      "from": ["charizard-mega-y"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    },
+    {
+      "from": ["charizard-mega-y"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+    },
+    {
+      "from": ["charizard-mega-y"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
+    },
+    {
+      "from": ["charizard-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "turns" }]
+    },
+    {
+      "from": ["charizard-gmax"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] }]
+    }
+  ],
   "names": {
     "eng": "Charizard",
     "fra": "Dracaufeu",

@@ -59,6 +59,17 @@
     "serebii": "eiscue",
     "bulbapedia": "Eiscue"
   },
+  "formMethods": [
+    {
+      "from": ["eiscue"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "ability", "abilities": ["iceface"] },
+        { "key": "battle_event", "events": ["physical_hit"] },
+        { "key": "battle_condition", "condition": "ice_face_not_bypassed" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Eiscue (Noice Face)",
     "esp": "Eiscue (Cara Deshielo)",

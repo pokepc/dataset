@@ -94,6 +94,31 @@
       "conditions": []
     }
   ],
+  "formMethods": [
+    {
+      "from": ["aegislash-blade"],
+      "trigger": "use_move",
+      "conditions": [
+        { "key": "ability", "abilities": ["stancechange"] },
+        { "key": "move_used", "move": "kingsshield" },
+        { "key": "battle_event", "events": ["before_move"] }
+      ]
+    },
+    {
+      "from": ["aegislash-blade"],
+      "games": ["lza"],
+      "trigger": "use_move",
+      "conditions": [
+        { "key": "move_used", "move": "kingsshield" },
+        { "key": "battle_event", "events": ["before_move"] }
+      ]
+    },
+    {
+      "from": ["aegislash-blade"],
+      "trigger": "automatic",
+      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+    }
+  ],
   "names": {
     "eng": "Aegislash",
     "fra": "Exagide",

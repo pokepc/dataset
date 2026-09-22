@@ -62,6 +62,17 @@
     "serebii": "duraludon",
     "bulbapedia": "Duraludon"
   },
+  "formMethods": [
+    {
+      "from": ["duraludon"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        { "key": "mechanic", "mechanic": "gigantamax" },
+        { "key": "battle_condition", "condition": "gigantamax_factor" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Duraludon (Gigantamax Form)",
     "fra": "Duralugon (Forme Gigamax)",

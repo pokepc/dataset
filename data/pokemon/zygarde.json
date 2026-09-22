@@ -86,6 +86,57 @@
     "serebii": "zygarde",
     "bulbapedia": "Zygarde"
   },
+  "formMethods": [
+    {
+      "from": ["zygarde-10"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "use_item",
+      "item": { "id": "zygardecube", "role": "used", "consumed": false },
+      "conditions": [{ "key": "ability", "abilities": ["powerconstruct"] }]
+    },
+    {
+      "from": ["zygarde-10"],
+      "games": ["swsh-sw", "swsh-sh", "lza"],
+      "trigger": "use_item",
+      "item": { "id": "zygardecube", "role": "used", "consumed": false },
+      "conditions": [],
+      "notes": {
+        "eng": "Choose Change form; Sword/Shield permits either Ability and Legends: Z-A has no Abilities."
+      }
+    },
+    {
+      "from": ["zygarde-10"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "interact",
+      "item": { "id": "zygardecube", "role": "bag", "consumed": false },
+      "conditions": [
+        { "key": "ability", "abilities": ["aurabreak"] },
+        { "key": "interaction", "interaction": "reassembly_unit" },
+        { "key": "battle_condition", "condition": "at_least_40_additional_zygarde_cells" }
+      ],
+      "notes": {
+        "eng": "Assemble an existing 10% Zygarde with at least 40 additional Cells/Cores at the Route 16 Reassembly Unit to obtain 50% Forme. Assembly using all 100 total Cells/Cores gives Power Construct."
+      }
+    },
+    {
+      "from": ["zygarde-complete"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "original_form", "forms": ["zygarde"] },
+        { "key": "battle_event", "events": ["battle_end"] }
+      ]
+    },
+    {
+      "from": ["zygarde-complete"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        { "key": "original_form", "forms": ["zygarde"] },
+        { "key": "interaction", "interaction": "recall_outside_battle" }
+      ]
+    }
+  ],
   "names": {
     "eng": "Zygarde",
     "fra": "Zygarde",
