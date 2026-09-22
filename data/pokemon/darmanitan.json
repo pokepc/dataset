@@ -85,28 +85,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["darmanitan-zen"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "ability", "abilities": ["zenmode"] },
-        { "key": "battle_event", "events": ["end_of_turn"] },
-        { "key": "hp", "comparison": "gt", "percent": 50 }
-      ]
-    },
-    {
-      "from": ["darmanitan-zen"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
-    },
-    {
-      "from": ["darmanitan-zen"],
-      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "oras-or", "oras-as"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "zen_mode_suppressed_or_replaced" }]
-    }
-  ],
   "names": {
     "eng": "Darmanitan",
     "fra": "Darumacho",

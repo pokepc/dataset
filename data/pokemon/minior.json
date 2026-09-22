@@ -69,28 +69,6 @@
     "serebii": "minior",
     "bulbapedia": "Minior"
   },
-  "formMethods": [
-    {
-      "from": [
-        "minior-red",
-        "minior-orange",
-        "minior-yellow",
-        "minior-green",
-        "minior-blue",
-        "minior-indigo",
-        "minior-violet"
-      ],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "ability", "abilities": ["shieldsdown"] },
-        { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
-        { "key": "hp", "comparison": "gt", "percent": 50 }
-      ],
-      "notes": {
-        "eng": "Shields Down restores Meteor Form above half HP while preserving the individual's fixed core color."
-      }
-    }
-  ],
   "names": {
     "eng": "Minior (Meteor Form)",
     "esp": "Minior (Forma Meteorito)",

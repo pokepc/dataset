@@ -68,7 +68,15 @@
       "trigger": "fuse",
       "item": { "id": "reinsofunity", "role": "used", "consumed": false },
       "conditions": [{ "key": "fusion_partner", "pokemon": "spectrier" }],
-      "notes": { "eng": "Only one Calyrex can be fused at a time." }
+      "notes": { "eng": "Only one Calyrex can be fused at a time." },
+      "revert": [
+        {
+          "trigger": "separate",
+          "item": { "id": "reinsofunity", "role": "used", "consumed": false },
+          "conditions": [],
+          "notes": { "eng": "The fused partner returns to the party." }
+        }
+      ]
     }
   ],
   "names": {

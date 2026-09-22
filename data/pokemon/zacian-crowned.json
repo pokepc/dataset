@@ -68,7 +68,16 @@
       "trigger": "automatic",
       "item": { "id": "rustedsword", "role": "held", "consumed": false },
       "conditions": [{ "key": "battle_event", "events": ["battle_start", "switch_in"] }],
-      "notes": { "eng": "Holding the matching rusted item activates the Crowned form in battle." }
+      "notes": { "eng": "Holding the matching rusted item activates the Crowned form in battle." },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["battle_end"] }],
+          "notes": {
+            "eng": "Returns to Hero of Many Battles outside battle; the item is not consumed."
+          }
+        }
+      ]
     }
   ],
   "names": {

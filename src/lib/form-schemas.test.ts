@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { formConditionSchema, formMethodSchema } from './form-schemas'
-import { formConditionKeys } from './enums'
+import { formConditionSchema, formMethodSchema, formRevertSchema } from './form-schemas'
+import { formConditionKeys, formRevertEvents } from './enums'
 import { pokemonSchema } from './schemas'
 
 const fusion = {
@@ -39,6 +39,36 @@ describe('form method contract', () => {
     expect(formMethodSchema.parse(input)).toEqual(input)
   })
 
+  it('accepts every exported reversion event and strict parameterized rules', () => {
+    for (const event of formRevertEvents) expect(formRevertSchema.parse(event)).toBe(event)
+    const revert = [
+      'battle_end',
+      'faint',
+      { afterTurns: 3 },
+      {
+        to: 'kyurem',
+        games: ['home'],
+        trigger: 'separate',
+        item: { id: 'dnasplicers', role: 'used', consumed: false },
+        conditions: [],
+      },
+    ]
+    expect(formMethodSchema.parse({ ...fusion, revert }).revert).toEqual(revert)
+  })
+
+  it.each([
+    'invented_event',
+    { afterTurns: 0 },
+    { afterTurns: 1.5 },
+    { afterTurns: 3, sources: ['https://example.com'] },
+    { trigger: 'use_item', conditions: [] },
+    { to: 'invalid_id', trigger: 'automatic', conditions: [] },
+    { games: [], trigger: 'automatic', conditions: [] },
+    { trigger: 'automatic', conditions: [], revert: ['battle_end'] },
+  ])('rejects invalid or recursive revert rules: %j', (input) => {
+    expect(formRevertSchema.safeParse(input).success).toBe(false)
+  })
+
   it.each([
     { ...fusion, from: [] },
     { ...fusion, from: ['kyurem', 'kyurem'] },
@@ -51,6 +81,7 @@ describe('form method contract', () => {
     { ...fusion, sources: ['https://example.com'] },
     { ...fusion, verification: 'verified' },
     { ...fusion, reversible: true },
+    { ...fusion, revert: [] },
     { ...fusion, conditions: [{ key: 'hp', comparison: 'gt', percent: 101 }] },
     { ...fusion, conditions: [{ key: 'interaction', interaction: 'invented_action' }] },
   ])('rejects invalid requirements and bundled audit metadata: %j', (input) => {

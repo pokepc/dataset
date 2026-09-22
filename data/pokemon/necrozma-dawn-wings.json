@@ -68,19 +68,15 @@
       "trigger": "fuse",
       "item": { "id": "nlunarizer", "role": "used", "consumed": false },
       "conditions": [{ "key": "fusion_partner", "pokemon": "lunala" }],
-      "notes": { "eng": "Each fusion device can maintain one fusion at a time." }
-    },
-    {
-      "from": ["necrozma-ultra"],
-      "games": ["usum-us", "usum-um"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "original_form", "forms": ["necrozma-dawn-wings"] },
-        { "key": "battle_event", "events": ["faint", "battle_end"] }
-      ],
-      "notes": {
-        "eng": "Returns to the fusion used for Ultra Burst; this is not a fusion or separation action."
-      }
+      "notes": { "eng": "Each fusion device can maintain one fusion at a time." },
+      "revert": [
+        {
+          "trigger": "separate",
+          "item": { "id": "nlunarizer", "role": "used", "consumed": false },
+          "conditions": [],
+          "notes": { "eng": "The fused partner returns to the party." }
+        }
+      ]
     }
   ],
   "names": {

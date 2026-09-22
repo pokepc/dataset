@@ -332,6 +332,8 @@ export const formBattleEvents = [
   'physical_hit',
   'faint',
 ] as const
+/** Event shorthand accepted by formMethods[].revert. */
+export const formRevertEvents = formBattleEvents
 export const formMechanics = [
   'change_a_move_other_than_secret_sword',
   'dynamax',

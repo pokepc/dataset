@@ -65,7 +65,14 @@
       "from": ["terapagos-terastal"],
       "games": ["sv-s", "sv-v"],
       "trigger": "special",
-      "conditions": [{ "key": "mechanic", "mechanic": "terastallization" }]
+      "conditions": [{ "key": "mechanic", "mechanic": "terastallization" }],
+      "revert": [
+        {
+          "to": "terapagos",
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+        }
+      ]
     }
   ],
   "names": {

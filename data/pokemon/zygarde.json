@@ -117,24 +117,6 @@
       "notes": {
         "eng": "Assemble an existing 10% Zygarde with at least 40 additional Cells/Cores at the Route 16 Reassembly Unit to obtain 50% Forme. Assembly using all 100 total Cells/Cores gives Power Construct."
       }
-    },
-    {
-      "from": ["zygarde-complete"],
-      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "original_form", "forms": ["zygarde"] },
-        { "key": "battle_event", "events": ["battle_end"] }
-      ]
-    },
-    {
-      "from": ["zygarde-complete"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "original_form", "forms": ["zygarde"] },
-        { "key": "interaction", "interaction": "recall_outside_battle" }
-      ]
     }
   ],
   "names": {

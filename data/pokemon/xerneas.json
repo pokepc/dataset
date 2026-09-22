@@ -74,13 +74,6 @@
     "serebii": "xerneas",
     "bulbapedia": "Xerneas"
   },
-  "formMethods": [
-    {
-      "from": ["xerneas-active"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
-    }
-  ],
   "names": {
     "eng": "Xerneas (Neutral Mode)",
     "fra": "Xerneas (Mode Paisible)",

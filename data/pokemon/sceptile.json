@@ -119,20 +119,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["sceptile-mega"],
-      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["battle_end", "faint"] }]
-    },
-    {
-      "from": ["sceptile-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
-    }
-  ],
   "names": {
     "eng": "Sceptile",
     "fra": "Jungko",

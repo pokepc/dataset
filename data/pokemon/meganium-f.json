@@ -123,17 +123,6 @@
       "conditions": [{ "key": "gender", "gender": "female" }]
     }
   ],
-  "formMethods": [
-    {
-      "from": ["meganium-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["meganium-f"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Meganium (Female)",
     "fra": "Méganium (Female)",

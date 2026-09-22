@@ -103,14 +103,38 @@
       "games": ["la"],
       "trigger": "use_item",
       "item": { "id": "griseouscore", "role": "used", "consumed": false },
-      "conditions": []
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "use_item",
+          "item": { "id": "griseouscore", "role": "used", "consumed": false },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+        }
+      ]
     },
     {
       "from": ["giratina"],
       "games": ["sv-s", "sv-v"],
       "trigger": "equip_item",
       "item": { "id": "griseouscore", "role": "held", "consumed": false },
-      "conditions": []
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "remove_item",
+          "item": { "id": "griseouscore", "role": "held", "consumed": false },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+        }
+      ]
     },
     {
       "from": ["giratina"],
@@ -137,13 +161,58 @@
       ],
       "trigger": "equip_item",
       "item": { "id": "griseousorb", "role": "held", "consumed": false },
-      "conditions": []
+      "conditions": [],
+      "revert": [
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+        },
+        {
+          "trigger": "remove_item",
+          "item": { "id": "griseousorb", "role": "held", "consumed": false },
+          "conditions": [{ "key": "environment", "environment": "outside_distortion_world" }],
+          "notes": {
+            "eng": "In Platinum, Giratina remains in Origin Forme inside the Distortion World."
+          }
+        },
+        {
+          "games": ["pt"],
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "interaction", "interaction": "leave_distortion_world" },
+            { "key": "mechanic", "mechanic": "not_holding_griseous_orb" }
+          ]
+        }
+      ]
     },
     {
       "from": ["giratina"],
       "games": ["pt"],
       "trigger": "automatic",
-      "conditions": [{ "key": "location", "location": "distortion_world" }]
+      "conditions": [{ "key": "location", "location": "distortion_world" }],
+      "revert": [
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+        },
+        {
+          "trigger": "remove_item",
+          "item": { "id": "griseousorb", "role": "held", "consumed": false },
+          "conditions": [{ "key": "environment", "environment": "outside_distortion_world" }],
+          "notes": {
+            "eng": "In Platinum, Giratina remains in Origin Forme inside the Distortion World."
+          }
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "interaction", "interaction": "leave_distortion_world" },
+            { "key": "mechanic", "mechanic": "not_holding_griseous_orb" }
+          ]
+        }
+      ]
     }
   ],
   "names": {

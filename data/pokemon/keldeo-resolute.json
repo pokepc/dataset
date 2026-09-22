@@ -101,7 +101,16 @@
       ],
       "trigger": "learn_move",
       "conditions": [{ "key": "known_move", "move": "secretsword" }],
-      "notes": { "eng": "Teach Secret Sword to change to Resolute Form." }
+      "notes": { "eng": "Teach Secret Sword to change to Resolute Form." },
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
+          ],
+          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+        }
+      ]
     },
     {
       "from": ["keldeo"],
@@ -114,7 +123,16 @@
       ],
       "notes": {
         "eng": "Also corrects an Ordinary Form imported from Black/White while knowing Secret Sword."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
+          ],
+          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+        }
+      ]
     },
     {
       "from": ["keldeo"],
@@ -123,6 +141,15 @@
       "conditions": [
         { "key": "known_move", "move": "secretsword" },
         { "key": "mechanic", "mechanic": "change_a_move_other_than_secret_sword" }
+      ],
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
+          ],
+          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+        }
       ]
     },
     {
@@ -132,6 +159,15 @@
       "conditions": [
         { "key": "known_move", "move": "secretsword" },
         { "key": "mechanic", "mechanic": "change_a_move_other_than_secret_sword" }
+      ],
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
+          ],
+          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+        }
       ]
     }
   ],

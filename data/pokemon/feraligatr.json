@@ -121,14 +121,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["feraligatr-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
-    }
-  ],
   "names": {
     "eng": "Feraligatr",
     "fra": "Aligatueur",

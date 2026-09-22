@@ -58,29 +58,6 @@
     "serebii": "cramorant",
     "bulbapedia": "Cramorant"
   },
-  "formMethods": [
-    {
-      "from": ["cramorant-gulping", "cramorant-gorging"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "ability", "abilities": ["gulpmissile"] },
-        { "key": "battle_event", "events": ["damaging_hit"] }
-      ],
-      "notes": { "eng": "Spits out the caught prey when hit; Gulp Missile must still be present." }
-    },
-    {
-      "from": ["cramorant-gulping", "cramorant-gorging"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
-    },
-    {
-      "from": ["cramorant-gulping", "cramorant-gorging"],
-      "games": ["swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "mechanic", "mechanic": "dynamax" }],
-      "notes": { "eng": "Dynamax discards the catch without launching it." }
-    }
-  ],
   "names": {
     "eng": "Cramorant",
     "fra": "Nigosier",

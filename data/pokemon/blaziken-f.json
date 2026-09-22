@@ -122,26 +122,6 @@
       "conditions": [{ "key": "gender", "gender": "female" }]
     }
   ],
-  "formMethods": [
-    {
-      "from": ["blaziken-mega"],
-      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_event", "events": ["battle_end", "faint"] },
-        { "key": "original_form", "forms": ["blaziken-f"] }
-      ]
-    },
-    {
-      "from": ["blaziken-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["blaziken-f"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Blaziken (Female)",
     "fra": "Braségali (Female)",

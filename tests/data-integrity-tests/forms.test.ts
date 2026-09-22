@@ -8,6 +8,9 @@ import {
 } from '../../src/lib/fs'
 import { pokemonSchema } from '../../src/lib/schemas'
 import { formMethods } from '../../src/scripts/migrate-pokemon-forms'
+import { expandFormMethods } from '../../src/lib/form-methods'
+import { transitionDigest } from '../../src/scripts/form-data/transition-audit'
+import compactAudit from '../../docs/audits/form-methods/compact-reverts.json'
 
 const pokemon = loadAllPokemon()
 const byId = new Map(pokemon.map((p) => [p.id, p]))
@@ -19,6 +22,7 @@ const games = new Set(
 const items = new Set(loadAllItems().map((i) => i.id))
 const moves = new Set(loadAllMoves().map((m) => m.id))
 const abilities = new Set(loadAllAbilities().map((a) => a.id))
+const expanded = expandFormMethods(pokemon)
 
 describe('form transition data', () => {
   it('matches the reviewed manifest without legacy fields or cross-species transformations', () => {
@@ -26,7 +30,7 @@ describe('form transition data', () => {
       expect(p, p.id).not.toHaveProperty('formItem')
       expect(pokemonSchema.parse(p).formMethods, p.id).toEqual(p.formMethods)
       expect(p.formMethods, p.id).toEqual(formMethods[p.id])
-      for (const method of p.formMethods ?? []) {
+      for (const method of expanded[p.id] ?? []) {
         expect(method.from, p.id).not.toContain(p.id)
         for (const from of method.from)
           expect(byId.get(from)?.dexNum, `${from} -> ${p.id}`).toBe(p.dexNum)
@@ -46,14 +50,26 @@ describe('form transition data', () => {
     }
   })
 
+  it('preserves every audited directed transition including game scope, conditions and notes', () => {
+    expect(transitionDigest(expanded)).toEqual(compactAudit.expandedTransitions)
+  })
+
   it('preserves exact forms through collapsed battle states', () => {
     const alcremie = pokemon.filter((p) => p.dexNum === 869 && !p.isGmax)
     expect(byId.get('alcremie-gmax')!.formMethods![0].from.sort()).toEqual(
       alcremie.map((p) => p.id).sort(),
     )
-    for (const p of alcremie)
-      for (const m of p.formMethods!)
+    for (const p of alcremie) {
+      expect(p.formMethods, p.id).toBeUndefined()
+      for (const m of expanded[p.id])
         expect(m.conditions).toContainEqual({ key: 'original_form', forms: [p.id] })
+    }
+    expect(byId.get('alcremie-gmax')!.formMethods![0].revert).toEqual([
+      { afterTurns: 3 },
+      'switch_out',
+      'battle_end',
+      'faint',
+    ])
     expect(byId.get('zygarde-complete-mega')!.formMethods![0].from).toEqual(['zygarde-complete'])
     expect(byId.get('magearna-original-mega')!.formMethods![0].from).toEqual(['magearna-original'])
     expect(byId.get('tatsugiri-droopy-mega')!.formMethods![0].from).toEqual(['tatsugiri-droopy'])
@@ -61,9 +77,7 @@ describe('form transition data', () => {
       from: ['kyurem'],
       conditions: expect.arrayContaining([{ key: 'fusion_partner', pokemon: 'zekrom' }]),
     })
-    for (const m of byId
-      .get('necrozma-dusk-mane')!
-      .formMethods!.filter((m) => m.from.includes('necrozma-ultra')))
+    for (const m of expanded['necrozma-dusk-mane'].filter((m) => m.from.includes('necrozma-ultra')))
       expect(m.conditions).toContainEqual({ key: 'original_form', forms: ['necrozma-dusk-mane'] })
   })
 

@@ -68,14 +68,38 @@
       "games": ["la"],
       "trigger": "use_item",
       "item": { "id": "lustrousglobe", "role": "used", "consumed": false },
-      "conditions": []
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "use_item",
+          "item": { "id": "lustrousglobe", "role": "used", "consumed": false },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+        }
+      ]
     },
     {
       "from": ["palkia"],
       "games": ["sv-s", "sv-v"],
       "trigger": "equip_item",
       "item": { "id": "lustrousglobe", "role": "held", "consumed": false },
-      "conditions": []
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "remove_item",
+          "item": { "id": "lustrousglobe", "role": "held", "consumed": false },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+        }
+      ]
     }
   ],
   "names": {

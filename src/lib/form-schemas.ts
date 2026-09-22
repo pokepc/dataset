@@ -10,6 +10,7 @@ import {
   formLocations,
   formMechanics,
   formMoveRelations,
+  formRevertEvents,
   formSeasons,
   formStatusRelations,
   formStatuses,
@@ -92,56 +93,82 @@ export const formConditionSchema = z.discriminatedUnion('key', [
   z.strictObject({ key: z.literal(key.battle_condition), condition: z.enum(formBattleConditions) }),
 ])
 
+const actionShape = {
+  trigger: z.enum(formTriggers),
+  minLevel: z.number().int().min(1).max(100).optional(),
+  item: z
+    .strictObject({ id, role: z.enum(formItemRoles), consumed: z.boolean().optional() })
+    .optional(),
+  conditions: z.array(formConditionSchema),
+  notes: z
+    .partialRecord(z.enum(languageAlpha3Codes), z.string().min(1))
+    .refine((text) => Object.values(text).some(Boolean), 'Provide at least one translation')
+    .optional(),
+}
+
+function validateAction(method: z.infer<typeof formActionSchema>, ctx: z.RefinementCtx) {
+  const requiredRole =
+    method.trigger === 'use_item' ? 'used' : method.trigger === 'equip_item' ? 'held' : undefined
+  if (requiredRole && method.item?.role !== requiredRole) {
+    ctx.addIssue({
+      code: 'custom',
+      path: ['item'],
+      message: `${method.trigger} requires a ${requiredRole} item`,
+    })
+  }
+  if (method.item?.consumed && method.item.role !== 'used') {
+    ctx.addIssue({
+      code: 'custom',
+      path: ['item', 'consumed'],
+      message: 'Only used items can be consumed',
+    })
+  }
+  if (
+    method.trigger === 'fuse' &&
+    !method.conditions.some((condition) => condition.key === 'fusion_partner')
+  ) {
+    ctx.addIssue({ code: 'custom', path: ['conditions'], message: 'Fusion requires a partner' })
+  }
+  if (method.trigger === 'special' && method.conditions.length === 0 && !method.notes) {
+    ctx.addIssue({
+      code: 'custom',
+      path: ['conditions'],
+      message: 'Special methods require a condition or explanatory note',
+    })
+  }
+  const conditions = method.conditions.map((condition) => JSON.stringify(condition))
+  if (new Set(conditions).size !== conditions.length) {
+    ctx.addIssue({ code: 'custom', path: ['conditions'], message: 'Duplicate condition' })
+  }
+}
+
+const formActionSchema = z.strictObject(actionShape)
+
+/** Missing games inherits the forward method; null explicitly retains unknown scope. */
+export const formRevertDetailSchema = z
+  .strictObject({
+    to: id.optional(),
+    games: ids.nullable().optional(),
+    ...actionShape,
+  })
+  .superRefine(validateAction)
+
+export const formRevertSchema = z.union([
+  z.enum(formRevertEvents),
+  z.strictObject({ afterTurns: z.number().int().positive() }),
+  formRevertDetailSchema,
+])
+
 export const formMethodSchema = z
   .strictObject({
     from: ids,
     games: ids.optional(),
-    trigger: z.enum(formTriggers),
-    minLevel: z.number().int().min(1).max(100).optional(),
-    item: z
-      .strictObject({ id, role: z.enum(formItemRoles), consumed: z.boolean().optional() })
-      .optional(),
-    conditions: z.array(formConditionSchema),
-    notes: z
-      .partialRecord(z.enum(languageAlpha3Codes), z.string().min(1))
-      .refine((text) => Object.values(text).some(Boolean), 'Provide at least one translation')
-      .optional(),
+    ...actionShape,
+    revert: z.array(formRevertSchema).min(1).optional(),
   })
-  .superRefine((method, ctx) => {
-    const requiredRole =
-      method.trigger === 'use_item' ? 'used' : method.trigger === 'equip_item' ? 'held' : undefined
-    if (requiredRole && method.item?.role !== requiredRole) {
-      ctx.addIssue({
-        code: 'custom',
-        path: ['item'],
-        message: `${method.trigger} requires a ${requiredRole} item`,
-      })
-    }
-    if (method.item?.consumed && method.item.role !== 'used') {
-      ctx.addIssue({
-        code: 'custom',
-        path: ['item', 'consumed'],
-        message: 'Only used items can be consumed',
-      })
-    }
-    if (
-      method.trigger === 'fuse' &&
-      !method.conditions.some((condition) => condition.key === 'fusion_partner')
-    ) {
-      ctx.addIssue({ code: 'custom', path: ['conditions'], message: 'Fusion requires a partner' })
-    }
-    if (method.trigger === 'special' && method.conditions.length === 0 && !method.notes) {
-      ctx.addIssue({
-        code: 'custom',
-        path: ['conditions'],
-        message: 'Special methods require a condition or explanatory note',
-      })
-    }
-    const conditions = method.conditions.map((condition) => JSON.stringify(condition))
-    if (new Set(conditions).size !== conditions.length) {
-      ctx.addIssue({ code: 'custom', path: ['conditions'], message: 'Duplicate condition' })
-    }
-  })
+  .superRefine(validateAction)
 
 export type FormCondition = z.infer<typeof formConditionSchema>
+export type FormRevertDetail = z.infer<typeof formRevertDetailSchema>
+export type FormRevert = z.infer<typeof formRevertSchema>
 export type FormMethod = z.infer<typeof formMethodSchema>

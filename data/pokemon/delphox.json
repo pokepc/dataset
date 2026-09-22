@@ -82,14 +82,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["delphox-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
-    }
-  ],
   "names": {
     "eng": "Delphox",
     "fra": "Goupelin",

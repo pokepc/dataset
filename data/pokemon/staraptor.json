@@ -112,17 +112,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["staraptor-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["staraptor"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Staraptor",
     "fra": "Étouraptor",

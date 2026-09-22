@@ -68,22 +68,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["darmanitan-galar-zen"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "ability", "abilities": ["zenmode"] },
-        { "key": "battle_event", "events": ["end_of_turn"] },
-        { "key": "hp", "comparison": "gt", "percent": 50 }
-      ]
-    },
-    {
-      "from": ["darmanitan-galar-zen"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
-    }
-  ],
   "names": {
     "eng": "Darmanitan (Galarian Form)",
     "esp": "Darmanitan (Forma de Galar)",

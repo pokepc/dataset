@@ -59,17 +59,6 @@
     "serebii": "zacian",
     "bulbapedia": "Zacian"
   },
-  "formMethods": [
-    {
-      "from": ["zacian-crowned"],
-      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["battle_end"] }],
-      "notes": {
-        "eng": "Returns to Hero of Many Battles outside battle; the item is not consumed."
-      }
-    }
-  ],
   "names": {
     "eng": "Zacian",
     "fra": "Zacian",

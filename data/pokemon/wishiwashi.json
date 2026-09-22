@@ -58,22 +58,6 @@
     "serebii": "wishiwashi",
     "bulbapedia": "Wishiwashi"
   },
-  "formMethods": [
-    {
-      "from": ["wishiwashi-school"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "ability", "abilities": ["schooling"] },
-        { "key": "battle_event", "events": ["end_of_turn"] },
-        { "key": "hp", "comparison": "lte", "percent": 25 }
-      ]
-    },
-    {
-      "from": ["wishiwashi-school"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
-    }
-  ],
   "names": {
     "eng": "Wishiwashi",
     "fra": "Froussardine",

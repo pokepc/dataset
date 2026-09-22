@@ -103,67 +103,6 @@
     "serebii": "giratina",
     "bulbapedia": "Giratina"
   },
-  "formMethods": [
-    {
-      "from": ["giratina-origin"],
-      "games": ["la"],
-      "trigger": "use_item",
-      "item": { "id": "griseouscore", "role": "used", "consumed": false },
-      "conditions": []
-    },
-    {
-      "from": ["giratina-origin"],
-      "games": ["sv-s", "sv-v"],
-      "trigger": "remove_item",
-      "item": { "id": "griseouscore", "role": "held", "consumed": false },
-      "conditions": []
-    },
-    {
-      "from": ["giratina-origin"],
-      "games": ["home"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
-    },
-    {
-      "from": ["giratina-origin"],
-      "games": [
-        "pt",
-        "hgss-hg",
-        "hgss-ss",
-        "bw-b",
-        "bw-w",
-        "b2w2-b2",
-        "b2w2-w2",
-        "xy-x",
-        "xy-y",
-        "oras-or",
-        "oras-as",
-        "sm-s",
-        "sm-m",
-        "usum-us",
-        "usum-um",
-        "swsh-sw",
-        "swsh-sh",
-        "bdsp-bd",
-        "bdsp-sp"
-      ],
-      "trigger": "remove_item",
-      "item": { "id": "griseousorb", "role": "held", "consumed": false },
-      "conditions": [{ "key": "environment", "environment": "outside_distortion_world" }],
-      "notes": {
-        "eng": "In Platinum, Giratina remains in Origin Forme inside the Distortion World."
-      }
-    },
-    {
-      "from": ["giratina-origin"],
-      "games": ["pt"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "interaction", "interaction": "leave_distortion_world" },
-        { "key": "mechanic", "mechanic": "not_holding_griseous_orb" }
-      ]
-    }
-  ],
   "names": {
     "eng": "Giratina",
     "fra": "Giratina",

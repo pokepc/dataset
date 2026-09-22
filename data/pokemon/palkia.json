@@ -87,28 +87,6 @@
     "serebii": "palkia",
     "bulbapedia": "Palkia"
   },
-  "formMethods": [
-    {
-      "from": ["palkia-origin"],
-      "games": ["la"],
-      "trigger": "use_item",
-      "item": { "id": "lustrousglobe", "role": "used", "consumed": false },
-      "conditions": []
-    },
-    {
-      "from": ["palkia-origin"],
-      "games": ["sv-s", "sv-v"],
-      "trigger": "remove_item",
-      "item": { "id": "lustrousglobe", "role": "held", "consumed": false },
-      "conditions": []
-    },
-    {
-      "from": ["palkia-origin"],
-      "games": ["home"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
-    }
-  ],
   "names": {
     "eng": "Palkia",
     "fra": "Palkia",

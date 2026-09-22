@@ -68,20 +68,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["drednaw-gmax"],
-      "games": ["swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "turns" }]
-    },
-    {
-      "from": ["drednaw-gmax"],
-      "games": ["swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] }]
-    }
-  ],
   "names": {
     "eng": "Drednaw",
     "fra": "Torgamord",

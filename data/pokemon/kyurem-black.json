@@ -99,7 +99,15 @@
       "trigger": "fuse",
       "item": { "id": "dnasplicers", "role": "used", "consumed": false },
       "conditions": [{ "key": "fusion_partner", "pokemon": "zekrom" }],
-      "notes": { "eng": "Only one Kyurem can be fused with the DNA Splicers at a time." }
+      "notes": { "eng": "Only one Kyurem can be fused with the DNA Splicers at a time." },
+      "revert": [
+        {
+          "trigger": "separate",
+          "item": { "id": "dnasplicers", "role": "used", "consumed": false },
+          "conditions": [],
+          "notes": { "eng": "The fused partner returns to the party." }
+        }
+      ]
     }
   ],
   "names": {

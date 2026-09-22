@@ -128,14 +128,6 @@
     "serebii": "skarmory",
     "bulbapedia": "Skarmory"
   },
-  "formMethods": [
-    {
-      "from": ["skarmory-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
-    }
-  ],
   "names": {
     "eng": "Skarmory",
     "fra": "Airmure",

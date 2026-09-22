@@ -83,14 +83,6 @@
     "serebii": "mimikyu",
     "bulbapedia": "Mimikyu"
   },
-  "formMethods": [
-    {
-      "from": ["mimikyu-busted"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
-      "notes": { "eng": "Switching out alone does not repair the disguise." }
-    }
-  ],
   "names": {
     "eng": "Mimikyu",
     "fra": "Mimiqui",

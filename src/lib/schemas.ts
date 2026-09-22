@@ -3,7 +3,12 @@ import { POKEPC_LATEST_GENERATION } from './constants'
 import { evolutionMethodSchema } from './evolution-schemas'
 export { evolutionConditionSchema, evolutionMethodSchema } from './evolution-schemas'
 import { formMethodSchema } from './form-schemas'
-export { formConditionSchema, formMethodSchema } from './form-schemas'
+export {
+  formConditionSchema,
+  formMethodSchema,
+  formRevertSchema,
+  formRevertDetailSchema,
+} from './form-schemas'
 import {
   abilityTagIds,
   battleStyles,

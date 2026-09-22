@@ -115,26 +115,6 @@
       "conditions": [{ "key": "gender", "gender": "female" }]
     }
   ],
-  "formMethods": [
-    {
-      "from": ["abomasnow-mega"],
-      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_event", "events": ["battle_end", "faint"] },
-        { "key": "original_form", "forms": ["abomasnow-f"] }
-      ]
-    },
-    {
-      "from": ["abomasnow-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["abomasnow-f"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Abomasnow (Female)",
     "fra": "Blizzaroi (Female)",

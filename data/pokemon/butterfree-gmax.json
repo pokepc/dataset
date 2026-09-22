@@ -69,7 +69,8 @@
       "conditions": [
         { "key": "mechanic", "mechanic": "gigantamax" },
         { "key": "battle_condition", "condition": "gigantamax_factor" }
-      ]
+      ],
+      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
     }
   ],
   "names": {

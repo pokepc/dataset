@@ -53,6 +53,10 @@ describe('static OpenAPI document', () => {
       'array',
     )
     expect(document.components?.schemas?.Pokemon).not.toHaveProperty('properties.formItem')
+    expect(document.components?.schemas?.Pokemon).toHaveProperty(
+      'properties.formMethods.items.properties.revert.type',
+      'array',
+    )
   })
 })
 

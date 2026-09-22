@@ -5,9 +5,12 @@ import { pathToFileURL } from 'node:url'
 import { isDeepStrictEqual } from 'node:util'
 import { format } from 'oxfmt'
 import { formMethodSchema, type FormMethod } from '../lib/form-schemas.ts'
+import { expandFormMethods } from '../lib/form-methods.ts'
 import { itemSchema } from '../lib/schemas.ts'
 import manifest from './form-data/methods.json' with { type: 'json' }
 import additions from './form-data/items.json' with { type: 'json' }
+import previousHashes from './form-data/previous-method-hashes.json' with { type: 'json' }
+import { methodHash } from './form-data/transition-audit.ts'
 
 export const formMethods = Object.fromEntries(
   Object.entries(manifest).map(([id, methods]) => [
@@ -19,10 +22,11 @@ export const formItems = additions.map((item) => itemSchema.parse(item))
 
 export async function migrateFormRecord(original: string, methods: FormMethod[]): Promise<string> {
   const pokemon = JSON.parse(original)
-  if (!methods.length) throw new Error('Form methods must not be empty')
   methods.forEach((method) => formMethodSchema.parse(method))
   if (pokemon.formMethods && !isDeepStrictEqual(pokemon.formMethods, methods)) {
-    throw new Error(`Refusing to overwrite existing form methods: ${pokemon.id}`)
+    const expectedHash = (previousHashes as Record<string, string>)[pokemon.id]
+    if (!expectedHash || methodHash(pokemon.formMethods) !== expectedHash)
+      throw new Error(`Refusing to overwrite existing form methods: ${pokemon.id}`)
   }
   // The legacy item was incorrectly attached to ordinary Mawile as well as Mega Mawile.
   const misplacedMawilite = pokemon.id === 'mawile' && pokemon.formItem === 'mawilite'
@@ -34,20 +38,27 @@ export async function migrateFormRecord(original: string, methods: FormMethod[])
     throw new Error(`Unmigrated formItem: ${pokemon.id}`)
   }
   let updated = original
-  if (!pokemon.formMethods) {
+  const changed = !isDeepStrictEqual(pokemon.formMethods ?? [], methods)
+  if (changed && pokemon.formMethods) {
+    updated = updated.replace(/^  "formMethods": [\s\S]*?(?=^  "[^"\n]+":|^})/gm, '')
+  }
+  if (changed && methods.length) {
     const formatted = await format('form-methods.json', JSON.stringify({ formMethods: methods }))
     if (formatted.errors.length) throw new Error('Could not format form methods')
     const field = formatted.code.slice(
       formatted.code.indexOf('\n') + 1,
       formatted.code.lastIndexOf('\n}'),
     )
-    const offset = original.indexOf('  "names":')
+    const offset = updated.indexOf('  "names":')
     if (offset < 0) throw new Error('Missing form-method insertion point')
-    updated = original.slice(0, offset) + field + ',\n' + original.slice(offset)
+    updated = updated.slice(0, offset) + field + ',\n' + updated.slice(offset)
   }
   updated = updated.replace(/^  "formItem": [^\n]*\n/m, '')
-  const expected = { ...pokemon, formMethods: methods }
+  updated = updated.replace(/,\n}(\s*)$/, '\n}$1')
+  const expected = { ...pokemon }
   delete expected.formItem
+  if (methods.length) expected.formMethods = methods
+  else delete expected.formMethods
   if (!isDeepStrictEqual(JSON.parse(updated), expected))
     throw new Error('Migration changed unexpected fields')
   return updated
@@ -69,7 +80,10 @@ async function main() {
       }
     })
   const byId = new Map(records.map(({ pokemon }) => [pokemon.id, pokemon]))
-  for (const [id, methods] of Object.entries(formMethods)) {
+  const expanded = expandFormMethods(
+    Object.entries(formMethods).map(([id, methods]) => ({ id, formMethods: methods })),
+  )
+  for (const [id, methods] of Object.entries(expanded)) {
     const target = byId.get(id)
     if (!target) throw new Error(`Unknown destination: ${id}`)
     for (const method of methods)
@@ -84,7 +98,7 @@ async function main() {
     (item) => !items.some((existing) => existing.id === item.id),
   )
   const knownItems = new Set([...items, ...missingItems].map((item) => item.id))
-  for (const methods of Object.values(formMethods))
+  for (const methods of Object.values(expanded))
     for (const method of methods) {
       if (method.item && !knownItems.has(method.item.id))
         throw new Error(`Unknown item: ${method.item.id}`)
@@ -93,11 +107,8 @@ async function main() {
   const changes: { path: string; original: string; code: string }[] = []
   for (const { path, original, pokemon } of records) {
     const methods = formMethods[pokemon.id]
-    if (!methods) {
-      if (pokemon.formItem) throw new Error(`Uncovered formItem: ${pokemon.id}`)
-      continue
-    }
-    const code = await migrateFormRecord(original, methods)
+    if (!methods && !pokemon.formMethods && !pokemon.formItem) continue
+    const code = await migrateFormRecord(original, methods ?? [])
     if (code !== original) changes.push({ path, original, code })
   }
   if (missingItems.length) {

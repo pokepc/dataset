@@ -67,7 +67,8 @@
       "conditions": [{ "key": "battle_event", "events": ["battle_start", "switch_in"] }],
       "notes": {
         "eng": "Neutral and Active Modes are appearance changes. This rule covers games representing distinct forms; GO and Legends: Z-A instead animate the appearance."
-      }
+      },
+      "revert": ["switch_out", "battle_end"]
     }
   ],
   "names": {

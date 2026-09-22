@@ -79,25 +79,6 @@
     "serebii": "meloetta",
     "bulbapedia": "Meloetta"
   },
-  "formMethods": [
-    {
-      "from": ["meloetta-pirouette"],
-      "trigger": "use_move",
-      "conditions": [
-        { "key": "move_used", "move": "relicsong" },
-        { "key": "battle_condition", "condition": "move_affects_at_least_one_target" },
-        { "key": "battle_condition", "condition": "ability_is_not_sheer_force" }
-      ],
-      "notes": {
-        "eng": "Relic Song must successfully affect at least one target. Sheer Force removes its form-changing effect."
-      }
-    },
-    {
-      "from": ["meloetta-pirouette"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
-    }
-  ],
   "names": {
     "eng": "Meloetta",
     "fra": "Meloetta",

@@ -69,6 +69,18 @@
         { "key": "battle_event", "events": ["end_of_turn"] },
         { "key": "hp", "comparison": "lte", "percent": 50 },
         { "key": "hp", "comparison": "gt", "percent": 0 }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["zenmode"] },
+            { "key": "battle_event", "events": ["end_of_turn"] },
+            { "key": "hp", "comparison": "gt", "percent": 50 }
+          ]
+        },
+        "switch_out",
+        "battle_end"
       ]
     }
   ],

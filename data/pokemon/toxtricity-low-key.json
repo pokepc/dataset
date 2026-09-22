@@ -89,38 +89,6 @@
       ]
     }
   ],
-  "formMethods": [
-    {
-      "from": ["toxtricity-low-key-gmax"],
-      "games": ["swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "turns" }]
-    },
-    {
-      "from": ["toxtricity-low-key-gmax"],
-      "games": ["swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] }]
-    },
-    {
-      "from": ["toxtricity-gmax"],
-      "games": ["swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "elapsed_time", "amount": 3, "unit": "turns" },
-        { "key": "original_form", "forms": ["toxtricity-low-key"] }
-      ]
-    },
-    {
-      "from": ["toxtricity-gmax"],
-      "games": ["swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_event", "events": ["switch_out", "battle_end", "faint"] },
-        { "key": "original_form", "forms": ["toxtricity-low-key"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Toxtricity (Low Key Form)",
     "esp": "Toxtricity (Forma Grave)",

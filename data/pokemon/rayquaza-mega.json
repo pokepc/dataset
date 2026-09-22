@@ -70,7 +70,8 @@
         { "key": "mechanic", "mechanic": "mega_evolution" },
         { "key": "known_move", "move": "dragonascent" },
         { "key": "battle_condition", "condition": "rayquaza_mega_eligible" }
-      ]
+      ],
+      "revert": ["battle_end", "faint"]
     },
     {
       "from": ["rayquaza"],
@@ -80,6 +81,12 @@
         { "key": "mechanic", "mechanic": "mega_evolution" },
         { "key": "battle_condition", "condition": "mega_gauge_full" },
         { "key": "known_move", "move": "dragonascent" }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+        }
       ]
     }
   ],

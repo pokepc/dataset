@@ -67,7 +67,41 @@
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
       "trigger": "use_item",
       "item": { "id": "prisonbottle", "role": "used", "consumed": false },
-      "conditions": []
+      "conditions": [],
+      "revert": [
+        {
+          "games": ["sv-s", "sv-v"],
+          "trigger": "use_item",
+          "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+          "conditions": []
+        },
+        {
+          "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "days" }],
+          "notes": { "eng": "The timer starts when the Prison Bottle is used." }
+        },
+        {
+          "games": ["oras-or", "oras-as"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+        },
+        {
+          "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+        },
+        {
+          "games": ["oras-or", "oras-as"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+        },
+        {
+          "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+        }
+      ]
     },
     {
       "from": ["hoopa"],
@@ -77,7 +111,14 @@
       "conditions": [],
       "notes": {
         "eng": "Obtain the Prison Bottle in Mega Dimension side mission 196, The Djinn Unbound."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "use_item",
+          "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+          "conditions": []
+        }
+      ]
     }
   ],
   "names": {

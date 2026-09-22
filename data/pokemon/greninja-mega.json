@@ -69,6 +69,12 @@
       "conditions": [
         { "key": "mechanic", "mechanic": "mega_evolution" },
         { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+        }
       ]
     }
   ],

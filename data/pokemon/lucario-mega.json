@@ -66,7 +66,8 @@
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
       "item": { "id": "lucarionite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }]
+      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "revert": ["battle_end", "faint"]
     },
     {
       "from": ["lucario"],
@@ -76,6 +77,12 @@
       "conditions": [
         { "key": "mechanic", "mechanic": "mega_evolution" },
         { "key": "battle_condition", "condition": "mega_gauge_full" }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+        }
       ]
     }
   ],

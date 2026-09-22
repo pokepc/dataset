@@ -121,17 +121,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["meganium-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["meganium"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Meganium",
     "fra": "Méganium",

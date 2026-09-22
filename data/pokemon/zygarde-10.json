@@ -79,24 +79,6 @@
       "notes": {
         "eng": "Choose Change form; Sword/Shield permits either Ability and Legends: Z-A has no Abilities."
       }
-    },
-    {
-      "from": ["zygarde-complete"],
-      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "original_form", "forms": ["zygarde-10"] },
-        { "key": "battle_event", "events": ["battle_end"] }
-      ]
-    },
-    {
-      "from": ["zygarde-complete"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "original_form", "forms": ["zygarde-10"] },
-        { "key": "interaction", "interaction": "recall_outside_battle" }
-      ]
     }
   ],
   "names": {

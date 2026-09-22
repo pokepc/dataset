@@ -71,7 +71,27 @@
         { "key": "battle_condition", "condition": "move_deals_damage" },
         { "key": "battle_condition", "condition": "not_dynamaxed" }
       ],
-      "notes": { "eng": "Surf must deal damage to trigger Gulp Missile." }
+      "notes": { "eng": "Surf must deal damage to trigger Gulp Missile." },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["gulpmissile"] },
+            { "key": "battle_event", "events": ["damaging_hit"] }
+          ],
+          "notes": {
+            "eng": "Spits out the caught prey when hit; Gulp Missile must still be present."
+          }
+        },
+        "switch_out",
+        "battle_end",
+        {
+          "games": ["swsh-sw", "swsh-sh"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "mechanic", "mechanic": "dynamax" }],
+          "notes": { "eng": "Dynamax discards the catch without launching it." }
+        }
+      ]
     },
     {
       "from": ["cramorant"],
@@ -84,7 +104,27 @@
       ],
       "notes": {
         "eng": "Dive triggers Gulp Missile during its diving turn, even without dealing damage."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["gulpmissile"] },
+            { "key": "battle_event", "events": ["damaging_hit"] }
+          ],
+          "notes": {
+            "eng": "Spits out the caught prey when hit; Gulp Missile must still be present."
+          }
+        },
+        "switch_out",
+        "battle_end",
+        {
+          "games": ["swsh-sw", "swsh-sh"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "mechanic", "mechanic": "dynamax" }],
+          "notes": { "eng": "Dynamax discards the catch without launching it." }
+        }
+      ]
     }
   ],
   "names": {

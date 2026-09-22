@@ -106,14 +106,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["chandelure-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
-    }
-  ],
   "names": {
     "eng": "Chandelure",
     "fra": "Lugulabre",

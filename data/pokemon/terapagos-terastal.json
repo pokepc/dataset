@@ -71,7 +71,8 @@
       ],
       "notes": {
         "eng": "Transforms on first entering battle; switching out or fainting does not restore Normal Form."
-      }
+      },
+      "revert": ["battle_end"]
     }
   ],
   "names": {

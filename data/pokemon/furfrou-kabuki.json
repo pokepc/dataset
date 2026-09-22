@@ -78,7 +78,30 @@
         { "key": "location", "location": "friseur_furfrou" },
         { "key": "interaction", "interaction": "furfrou_groom" }
       ],
-      "notes": { "eng": "This trim requires at least 10 Lumiose style points." }
+      "notes": { "eng": "This trim requires at least 10 Lumiose style points." },
+      "revert": [
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
+          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+        }
+      ]
     },
     {
       "from": [
@@ -97,6 +120,29 @@
       "conditions": [
         { "key": "location", "location": "slateport_pokemon_fan_club" },
         { "key": "interaction", "interaction": "furfrou_groom" }
+      ],
+      "revert": [
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
+          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+        }
       ]
     },
     {
@@ -116,6 +162,29 @@
       "conditions": [
         { "key": "location", "location": "malie_city_salon" },
         { "key": "interaction", "interaction": "furfrou_groom" }
+      ],
+      "revert": [
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
+          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+        }
       ]
     },
     {
@@ -135,6 +204,29 @@
       "conditions": [
         { "key": "location", "location": "hauoli_city_salon" },
         { "key": "interaction", "interaction": "furfrou_groom" }
+      ],
+      "revert": [
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
+          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+        },
+        {
+          "to": "furfrou",
+          "trigger": "automatic",
+          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+        }
       ]
     },
     {

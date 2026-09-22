@@ -70,6 +70,15 @@
       "conditions": [
         { "key": "mechanic", "mechanic": "ultra_burst" },
         { "key": "battle_condition", "condition": "ultra_burst_unused_by_trainer" }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
+          "notes": {
+            "eng": "Returns to the fusion used for Ultra Burst; this is not a fusion or separation action."
+          }
+        }
       ]
     }
   ],

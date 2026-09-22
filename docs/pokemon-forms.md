@@ -13,14 +13,21 @@ sources. Evolution continues to use `evoMethods`.
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "fuse",
       "item": { "id": "dnasplicers", "role": "used", "consumed": false },
-      "conditions": [{ "key": "fusion_partner", "pokemon": "zekrom" }]
+      "conditions": [{ "key": "fusion_partner", "pokemon": "zekrom" }],
+      "revert": [
+        {
+          "trigger": "separate",
+          "item": { "id": "dnasplicers", "role": "used", "consumed": false },
+          "conditions": []
+        }
+      ]
     }
   ]
 }
 ```
 
-This example belongs on `kyurem-black`. Separation is a different method on `kyurem`, with
-`from: ["kyurem-black"]`. There is no inferred `reversible` flag.
+This example belongs on `kyurem-black`. Its `revert` rule describes separation back to the source
+Kyurem. There is no duplicated incoming separation method on `kyurem`.
 
 ## Contract
 
@@ -33,6 +40,7 @@ This example belongs on `kyurem-black`. Separation is a different method on `kyu
 | `item?`      | Item ID, `held` / `used` / `bag` role, optional `consumed` boolean                                   |
 | `conditions` | Conjunction of typed conditions; `[]` means no additional requirements are recorded                  |
 | `notes?`     | Localized explanatory text keyed by language alpha-3 code                                            |
+| `revert?`    | Alternative rules for returning from this transformation; absent means unrecorded                    |
 
 Optional values are unknown or unrecorded, not an assertion that no restriction exists. Explicit
 `games` arrays are researched subsets, not an exhaustive list of supported titles. They never
@@ -48,12 +56,36 @@ repeated keys with different parameters (for example, HP greater than zero AND a
 Identical duplicate conditions are rejected. `known_move.relation` defaults semantically to `knows`;
 `does_not_know` supports forgetting Secret Sword.
 
-`original_form` identifies the form the individual had before the relevant temporary transformation.
-It is required when a shared state could otherwise allow the wrong return route: Gigantamax Alcremie
-retains its cream/sweet combination; Ultra Necrozma retains its fusion partner. Nested
-transformations track each relevant origin independently: Mega Zygarde returns to Complete, then
-Complete returns to that individual's original 10% or 50% Forme. `intrinsic_form` instead describes
-a persistent identity, such as Minior's core color hidden by Meteor Form.
+## Compact reversion
+
+Each `revert` entry is an alternative (OR). Common automatic rules use shorthand:
+
+```json
+"revert": ["battle_end", "faint", "switch_out", { "afterTurns": 3 }]
+```
+
+Event strings are values of `formRevertEvents`. `afterTurns` is a positive integer. Each shorthand
+implies an automatic change with that single event or elapsed-turn condition.
+
+The default destination is the **exact source form used by this individual**, not every value of
+`from`. Game scope is inherited from the forward method. Items, levels, conditions and notes are
+**not inherited**: meeting the entry requirements again is not required to revert.
+
+Detailed rules use `trigger`, `conditions` and optional `item`, `minLevel`, `notes`, `to`, and
+`games`. An explicit `to` returns to that fixed record instead of the original source (for example,
+Stellar Terapagos returns to Normal rather than its immediate Terastal predecessor). Explicit
+`games` overrides the inherited scope; `games: null` preserves an unknown scope when the forward
+method's scope is known. Reversions cannot recursively contain `revert`.
+
+Origin tracking preserves all 63 Alcremie cream/sweet combinations and Necrozma's fusion partner.
+Nested transformations track each relevant origin independently: Mega Zygarde returns to Complete,
+then Complete returns to that individual's original 10% or 50% Forme. `original_form` remains
+available for explicit exceptional constraints and derived reverse lookups. `intrinsic_form`
+describes persistent identity, such as Minior's core color hidden by Meteor Form.
+
+Independent peer changes, such as Rotom appliances, Arceus types, and seasonal forms, remain
+ordinary `formMethods`. Shared reset actions that do not depend on the original source can also
+remain a single incoming method instead of being copied to every peer.
 
 These are requirements for display and filtering, not an executable battle simulator. Mechanic keys
 include their ordinary eligibility rules: `mega_evolution` requires an unlocked Key Stone mechanic,
@@ -68,11 +100,17 @@ coverage reports remain outside the published `data` and `build` directories.
 ## Public exports and translation
 
 ```ts
-import { formTriggers, formConditionKeys } from '@pokepc/dataset/lib/enums'
-import { formMethodSchema } from '@pokepc/dataset/lib/form-schemas'
-import type { FormMethod, FormCondition } from '@pokepc/dataset/lib/form-schemas'
+import { formTriggers, formConditionKeys, formRevertEvents } from '@pokepc/dataset/lib/enums'
+import { formMethodSchema, formRevertSchema } from '@pokepc/dataset/lib/form-schemas'
+import { expandFormMethods, resolveFormRevert } from '@pokepc/dataset/lib/form-methods'
+import type {
+  FormMethod,
+  FormCondition,
+  FormRevert,
+  FormRevertDetail,
+} from '@pokepc/dataset/lib/form-schemas'
 import type {} from '@pokepc/dataset/lib/types'
-// Pkds.FormMethod and Pkds.FormCondition are also available.
+// Pkds.FormMethod, Pkds.FormCondition, Pkds.FormRevert and Pkds.FormRevertDetail are also available.
 ```
 
 All fixed vocabularies are readonly arrays, and the schemas consume those same arrays:
@@ -80,13 +118,19 @@ All fixed vocabularies are readonly arrays, and the schemas consume those same a
 - `formTriggers`, `formItemRoles`, `formConditionKeys`
 - `formMoveRelations`, `formTimesOfDay`, `formStatuses`, `formStatusRelations`
 - `formInteractions`, `formLocations`, `formEnvironments`, `formSeasons`
-- `formTimeUnits`, `formStorageEvents`, `formStorageServices`, `formBattleEvents`
+- `formTimeUnits`, `formStorageEvents`, `formStorageServices`, `formBattleEvents`,
+  `formRevertEvents`
 - `formMechanics`, `formComparisons`, `formWeather`, `formWeatherRelations`, `formBattleConditions`
 
 Move categories reuse `moveCategory`. Pokémon, move, item, Ability and game IDs use their existing
 catalogs. Locations and interactions are semantic translation keys, not location-catalog IDs. Render
 the key using a translation template, interpolating localized catalog names and typed parameters.
 Rare condition definitions are in [the vocabulary audit](audits/form-methods/vocabulary.json).
+
+`resolveFormRevert(rule, method)` expands a shorthand and resolves inherited game scope.
+`expandFormMethods(records)` derives an incoming-method map, including reversion edges with explicit
+origin guards where needed. It returns copies without modifying the input. Pass the full dataset to
+build a full lookup, or a subset for just those transitions; imported raw JSON stays compact.
 
 ## Migration
 
@@ -108,5 +152,8 @@ pnpm pokemon:forms:migrate --write
 
 The first command previews changes. The migrator validates and prepares all records before writing,
 checks for concurrent edits, preserves unrelated record text/values, and refuses to overwrite
-different existing methods or discard unmatched legacy requirements. Re-running is idempotent. The
-exceptional legacy Mawilite on ordinary Mawile is removed; the actual requirement is on Mega Mawile.
+different existing methods or discard unmatched legacy requirements. The compact migration only
+upgrades previous methods matching the reviewed per-record hashes; edited records still fail safely.
+Records containing only moved return rules lose their now-empty `formMethods` field. Re-running is
+idempotent. The exceptional legacy Mawilite on ordinary Mawile is removed; the actual requirement is
+on Mega Mawile.

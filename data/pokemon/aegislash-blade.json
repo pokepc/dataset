@@ -79,6 +79,26 @@
         { "key": "ability", "abilities": ["stancechange"] },
         { "key": "move_category", "categories": ["physical", "special"] },
         { "key": "battle_event", "events": ["before_move"] }
+      ],
+      "revert": [
+        {
+          "trigger": "use_move",
+          "conditions": [
+            { "key": "ability", "abilities": ["stancechange"] },
+            { "key": "move_used", "move": "kingsshield" },
+            { "key": "battle_event", "events": ["before_move"] }
+          ]
+        },
+        {
+          "games": ["lza"],
+          "trigger": "use_move",
+          "conditions": [
+            { "key": "move_used", "move": "kingsshield" },
+            { "key": "battle_event", "events": ["before_move"] }
+          ]
+        },
+        "switch_out",
+        "battle_end"
       ]
     },
     {
@@ -91,7 +111,30 @@
       ],
       "notes": {
         "eng": "Legends: Z-A preserves the move-based transformation without Abilities; the change completes when its animation finishes."
-      }
+      },
+      "revert": [
+        {
+          "games": null,
+          "trigger": "use_move",
+          "conditions": [
+            { "key": "ability", "abilities": ["stancechange"] },
+            { "key": "move_used", "move": "kingsshield" },
+            { "key": "battle_event", "events": ["before_move"] }
+          ]
+        },
+        {
+          "trigger": "use_move",
+          "conditions": [
+            { "key": "move_used", "move": "kingsshield" },
+            { "key": "battle_event", "events": ["before_move"] }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+        }
+      ]
     }
   ],
   "names": {

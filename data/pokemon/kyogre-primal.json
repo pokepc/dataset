@@ -66,14 +66,38 @@
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "lza"],
       "trigger": "automatic",
       "item": { "id": "blueorb", "role": "held" },
-      "conditions": [{ "key": "battle_event", "events": ["switch_in"] }]
+      "conditions": [{ "key": "battle_event", "events": ["switch_in"] }],
+      "revert": [
+        {
+          "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+        },
+        {
+          "games": ["lza"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "interaction", "interaction": "recall_outside_battle" }]
+        },
+        {
+          "games": ["oras-or", "oras-as"],
+          "trigger": "automatic",
+          "conditions": [{ "key": "interaction", "interaction": "contest_spectacular_ends" }]
+        }
+      ]
     },
     {
       "from": ["kyogre"],
       "games": ["oras-or", "oras-as"],
       "trigger": "interact",
       "item": { "id": "blueorb", "role": "held" },
-      "conditions": [{ "key": "interaction", "interaction": "enter_contest_spectacular" }]
+      "conditions": [{ "key": "interaction", "interaction": "enter_contest_spectacular" }],
+      "revert": [
+        "battle_end",
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "interaction", "interaction": "contest_spectacular_ends" }]
+        }
+      ]
     }
   ],
   "names": {

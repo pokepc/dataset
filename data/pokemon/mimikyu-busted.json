@@ -82,7 +82,14 @@
       ],
       "notes": {
         "eng": "Ability-ignoring attacks and attackers can damage Mimikyu without breaking its disguise."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
+          "notes": { "eng": "Switching out alone does not repair the disguise." }
+        }
+      ]
     },
     {
       "from": ["mimikyu"],
@@ -90,6 +97,13 @@
       "conditions": [
         { "key": "ability", "abilities": ["disguise"] },
         { "key": "battle_condition", "condition": "confusion_self_hit" }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
+          "notes": { "eng": "Switching out alone does not repair the disguise." }
+        }
       ]
     },
     {
@@ -99,7 +113,15 @@
       "conditions": [{ "key": "battle_event", "events": ["damaging_hit"] }],
       "notes": {
         "eng": "Legends: Z-A retains the disguise-breaking transformation without Abilities."
-      }
+      },
+      "revert": [
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
+          "notes": { "eng": "Switching out alone does not repair the disguise." }
+        }
+      ]
     }
   ],
   "names": {

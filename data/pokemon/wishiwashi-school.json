@@ -68,6 +68,18 @@
         { "key": "ability", "abilities": ["schooling"] },
         { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
         { "key": "hp", "comparison": "gt", "percent": 25 }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["schooling"] },
+            { "key": "battle_event", "events": ["end_of_turn"] },
+            { "key": "hp", "comparison": "lte", "percent": 25 }
+          ]
+        },
+        "switch_out",
+        "battle_end"
       ]
     }
   ],

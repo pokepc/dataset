@@ -140,10 +140,12 @@ function writeSmokeProject() {
 import { createSearchablePokemonList, searchPokemon } from '@pokepc/dataset/lib/search'
 import { dexNumToGen, formatDexNum } from '@pokepc/dataset/lib/utils'
 import { gameSchema, modernBoxPresetSchema, pokemonSchema } from '@pokepc/dataset/lib/schemas'
-import { formConditionKeys, formTriggers } from '@pokepc/dataset/lib/enums'
-import { formMethodSchema } from '@pokepc/dataset/lib/form-schemas'
+import { formConditionKeys, formTriggers, formRevertEvents } from '@pokepc/dataset/lib/enums'
+import { formMethodSchema, formRevertSchema } from '@pokepc/dataset/lib/form-schemas'
+import { expandFormMethods } from '@pokepc/dataset/lib/form-methods'
 import type {} from '@pokepc/dataset/lib/types'
 import pikachuData from '@pokepc/dataset/data/pokemon/pikachu' with { type: 'json' }
+import pikachuGmaxData from '@pokepc/dataset/data/pokemon/pikachu-gmax' with { type: 'json' }
 import bulbasaurData from '@pokepc/dataset/data/pokemon/bulbasaur' with { type: 'json' }
 import swordShieldData from '@pokepc/dataset/data/games/swsh' with { type: 'json' }
 import swordShieldPresetData from '@pokepc/dataset/data/boxpresets/modern/swsh/fully-sorted' with { type: 'json' }
@@ -152,7 +154,12 @@ const pikachu: Pkds.Pokemon = pokemonSchema.parse(pikachuData)
 const bulbasaur: Pkds.Pokemon = pokemonSchema.parse(bulbasaurData)
 const swordShield: Pkds.Game = gameSchema.parse(swordShieldData)
 const swordShieldPreset: Pkds.ModernBoxPreset = modernBoxPresetSchema.parse(swordShieldPresetData)
-const formMethod: Pkds.FormMethod = formMethodSchema.parse(pikachu.formMethods?.[0])
+const pikachuGmax: Pkds.Pokemon = pokemonSchema.parse(pikachuGmaxData)
+const formMethod: Pkds.FormMethod = formMethodSchema.parse(pikachuGmax.formMethods?.[0])
+const formRevert: Pkds.FormRevert = formRevertSchema.parse('battle_end')
+if (typeof formRevert !== 'string' || !formRevertEvents.includes(formRevert) || !expandFormMethods([pikachuGmax]).pikachu?.length) {
+  throw new Error('Expected compact reversion enums and derived incoming transitions')
+}
 if (!formTriggers.includes(formMethod.trigger) || !formConditionKeys.includes('original_form')) {
   throw new Error('Expected iterable form vocabulary and public form types')
 }

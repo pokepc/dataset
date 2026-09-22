@@ -87,28 +87,6 @@
     "serebii": "dialga",
     "bulbapedia": "Dialga"
   },
-  "formMethods": [
-    {
-      "from": ["dialga-origin"],
-      "games": ["la"],
-      "trigger": "use_item",
-      "item": { "id": "adamantcrystal", "role": "used", "consumed": false },
-      "conditions": []
-    },
-    {
-      "from": ["dialga-origin"],
-      "games": ["sv-s", "sv-v"],
-      "trigger": "remove_item",
-      "item": { "id": "adamantcrystal", "role": "held", "consumed": false },
-      "conditions": []
-    },
-    {
-      "from": ["dialga-origin"],
-      "games": ["home"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
-    }
-  ],
   "names": {
     "eng": "Dialga",
     "fra": "Dialga",

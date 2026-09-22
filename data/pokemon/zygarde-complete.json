@@ -63,12 +63,6 @@
   },
   "formMethods": [
     {
-      "from": ["zygarde-complete-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
-    },
-    {
       "from": ["zygarde-10", "zygarde"],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
       "trigger": "automatic",
@@ -80,7 +74,8 @@
       ],
       "notes": {
         "eng": "Complete Forme persists through healing and switching until the battle ends."
-      }
+      },
+      "revert": ["battle_end"]
     },
     {
       "from": ["zygarde-10", "zygarde"],
@@ -93,7 +88,13 @@
       ],
       "notes": {
         "eng": "No Ability is required in Legends: Z-A. If the threshold is crossed while using a move, transformation waits until that move finishes."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "interaction", "interaction": "recall_outside_battle" }]
+        }
+      ]
     }
   ],
   "names": {

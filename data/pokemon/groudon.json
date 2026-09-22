@@ -106,26 +106,6 @@
     "serebii": "groudon",
     "bulbapedia": "Groudon"
   },
-  "formMethods": [
-    {
-      "from": ["groudon-primal"],
-      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
-    },
-    {
-      "from": ["groudon-primal"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "interaction", "interaction": "recall_outside_battle" }]
-    },
-    {
-      "from": ["groudon-primal"],
-      "games": ["oras-or", "oras-as"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "interaction", "interaction": "contest_spectacular_ends" }]
-    }
-  ],
   "names": {
     "eng": "Groudon",
     "fra": "Groudon",

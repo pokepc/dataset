@@ -67,6 +67,27 @@
         { "key": "ability", "abilities": ["iceface"] },
         { "key": "battle_event", "events": ["physical_hit"] },
         { "key": "battle_condition", "condition": "ice_face_not_bypassed" }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["iceface"] },
+            { "key": "weather", "weather": ["hail", "snow"], "relation": "in" },
+            { "key": "battle_event", "events": ["switch_in"] }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["iceface"] },
+            { "key": "battle_condition", "condition": "hail_or_snow_begins" }
+          ],
+          "notes": {
+            "eng": "Existing hail/snow does not instantly restore ice after it breaks; the weather must begin anew, or Eiscue must switch into it."
+          }
+        },
+        "battle_end"
       ]
     }
   ],

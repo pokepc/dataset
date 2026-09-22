@@ -100,7 +100,14 @@
       ],
       "trigger": "use_item",
       "item": { "id": "revealglass", "role": "used", "consumed": false },
-      "conditions": []
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "use_item",
+          "item": { "id": "revealglass", "role": "used", "consumed": false },
+          "conditions": []
+        }
+      ]
     }
   ],
   "names": {

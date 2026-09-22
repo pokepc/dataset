@@ -6,6 +6,17 @@ reverse transitions, and removes **140 legacy `formItem` fields**. This is a res
 baseline; it is not a claim of exhaustive game-by-game coverage. **56 methods have unknown game
 scope**. Even explicit game lists can be incomplete.
 
+The subsequent compact migration stores **591 forward/independent methods on 261 records**. It moves
+491 standalone returns into nested `revert` rules. Expansion exactly preserves all **16,445 distinct
+directed form/game/condition combinations**, including item roles and localized notes. The
+[comparison artifact](form-methods/compact-reverts.json) records the baseline commit, normalized
+transition digest, and byte sizes. The initial flat-method counts above remain historical.
+
+With records sorted identically, the form-method payload falls from **296,584 to 252,673 bytes
+minified** (14.8%) and **17,797 to 15,049 bytes gzipped** (15.4%). These sizes measure method data
+and record IDs, not the full Pokémon bundle. Gzip size depends on record order. Alcremie's 126
+incoming return objects become one `revert` array on its Gigantamax method.
+
 ## Acquisition of evidence
 
 The species cache supplied all 307 candidate pages without individual new requests. The audit read
@@ -18,7 +29,8 @@ generate transitions or as a coverage gate. See
 The reviewed species manifests are [persistent/manual changes](form-methods/persistent.json) and
 [battle/automatic changes](form-methods/battle.json). They record citations and remaining gaps per
 species. The [record coverage table](form-methods/coverage.csv) classifies every dataset record; a
-fixed-form classification is not an assertion about all future games. The
+fixed-form classification is not an assertion about all future games. Its method counts describe the
+initial flat representation, before compact reversions. The
 [cached source index](form-methods/sources.csv) records the candidate page URLs and content hashes.
 
 Generic rules use [Mega Evolution](https://bulbapedia.bulbagarden.net/wiki/Mega_Evolution),
@@ -80,6 +92,8 @@ inside the bundled Pokémon methods or item records.
 
 ## Validation
 
+Initial form-data migration:
+
 - Root and editor typechecks passed.
 - Root suite: 46 files / 9,072 tests passed. Editor suite: 11 files / 129 tests passed.
 - Data and library builds, editor production build, package consumer smoke test, and `publint`
@@ -91,3 +105,16 @@ inside the bundled Pokémon methods or item records.
   was needed.
 - A second migration run reports zero changes. Comparison with the original records confirms that
   only `formItem` removal and `formMethods` addition changed Pokémon values.
+
+Compact-reversion migration (2026-09-23):
+
+- Root suite: 47 files / 9,088 tests passed. After the helper review fix, the focused helper and
+  form-integrity suites passed all 8 tests, including a new regression for separate entry methods
+  sharing a destination. Root and editor typechecks passed.
+- Editor suite: 11 files / 129 tests passed. Library build, editor production build, package
+  consumer smoke test and `publint` passed, with the existing repository-URL suggestion.
+- Expanding compact data reproduces the baseline's 16,445 normalized transitions and digest. All
+  1,595 records preserve every value outside `formMethods`; no items were added or changed.
+- The migration is idempotent. Formatting and `git diff --check` passed. Installed binaries and the
+  already-built package were used as described above; the unrelated `data-next` build was not
+  repeated.

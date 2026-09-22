@@ -69,6 +69,28 @@
         { "key": "ability", "abilities": ["hungerswitch"] },
         { "key": "battle_event", "events": ["end_of_turn"] },
         { "key": "battle_condition", "condition": "not_terastallized" }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["hungerswitch"] },
+            { "key": "battle_event", "events": ["end_of_turn"] },
+            { "key": "battle_condition", "condition": "not_terastallized" }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "battle_event", "events": ["switch_out"] },
+            { "key": "battle_condition", "condition": "not_terastallized" }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+        }
       ]
     },
     {
@@ -78,6 +100,20 @@
       "conditions": [
         { "key": "move_used", "move": "aurawheel" },
         { "key": "battle_event", "events": ["after_move"] }
+      ],
+      "revert": [
+        {
+          "trigger": "use_move",
+          "conditions": [
+            { "key": "move_used", "move": "aurawheel" },
+            { "key": "battle_event", "events": ["after_move"] }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+        }
       ]
     }
   ],

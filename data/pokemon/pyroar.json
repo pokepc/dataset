@@ -83,17 +83,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["pyroar-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["pyroar"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Pyroar",
     "fra": "Némélios",

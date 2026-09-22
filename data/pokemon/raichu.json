@@ -143,26 +143,6 @@
       "conditions": [{ "key": "region", "region": "alola", "relation": "outside" }]
     }
   ],
-  "formMethods": [
-    {
-      "from": ["raichu-mega-x"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["raichu"] }
-      ]
-    },
-    {
-      "from": ["raichu-mega-y"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_condition", "condition": "mega_power_depleted" },
-        { "key": "original_form", "forms": ["raichu"] }
-      ]
-    }
-  ],
   "names": {
     "eng": "Raichu",
     "fra": "Raichu",

@@ -73,7 +73,16 @@
       ],
       "notes": {
         "eng": "Only Battle Bond Greninja can transform; its source record is collapsed with ordinary Greninja in this dataset. These individuals are male. Scarlet/Violet Battle Bond no longer transforms Greninja."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
+          "notes": {
+            "eng": "After fainting, Battle Bond cannot transform Greninja again during that battle."
+          }
+        }
+      ]
     }
   ],
   "names": {

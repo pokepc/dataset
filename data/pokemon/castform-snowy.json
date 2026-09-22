@@ -88,7 +88,57 @@
       ],
       "notes": {
         "eng": "Forecast changes form while the matching weather has an active effect in battle."
-      }
+      },
+      "revert": [
+        {
+          "to": "castform",
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["forecast"] },
+            { "key": "weather", "weather": ["sun", "rain", "hail", "snow"], "relation": "outside" }
+          ]
+        },
+        {
+          "to": "castform",
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["forecast"] },
+            { "key": "battle_condition", "condition": "weather_effects_negated" }
+          ],
+          "notes": { "eng": "For example, Cloud Nine or Air Lock negates the weather." }
+        },
+        {
+          "to": "castform",
+          "trigger": "automatic",
+          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+        },
+        {
+          "to": "castform",
+          "games": [
+            "bw-b",
+            "bw-w",
+            "b2w2-b2",
+            "b2w2-w2",
+            "xy-x",
+            "xy-y",
+            "oras-or",
+            "oras-as",
+            "sm-s",
+            "sm-m",
+            "usum-us",
+            "usum-um",
+            "bdsp-bd",
+            "bdsp-sp"
+          ],
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "battle_condition", "condition": "forecast_suppressed_or_replaced" }
+          ],
+          "notes": {
+            "eng": "From Generation V onward, losing or suppressing Forecast restores Normal form. Generations III and IV retain the current form."
+          }
+        }
+      ]
     }
   ],
   "names": {

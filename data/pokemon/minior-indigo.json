@@ -74,7 +74,20 @@
       ],
       "notes": {
         "eng": "The exposed core retains this Minior's fixed color; Meteor Form does not permit choosing a different color."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["shieldsdown"] },
+            { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
+            { "key": "hp", "comparison": "gt", "percent": 50 }
+          ],
+          "notes": {
+            "eng": "Shields Down restores Meteor Form above half HP while preserving the individual's fixed core color."
+          }
+        }
+      ]
     },
     {
       "from": ["minior"],
@@ -85,7 +98,20 @@
       ],
       "notes": {
         "eng": "A caught Minior exposes its own core outside battle. Wild overworld Minior may display Meteor Form."
-      }
+      },
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            { "key": "ability", "abilities": ["shieldsdown"] },
+            { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
+            { "key": "hp", "comparison": "gt", "percent": 50 }
+          ],
+          "notes": {
+            "eng": "Shields Down restores Meteor Form above half HP while preserving the individual's fixed core color."
+          }
+        }
+      ]
     }
   ],
   "names": {

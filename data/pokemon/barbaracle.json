@@ -94,14 +94,6 @@
       "conditions": []
     }
   ],
-  "formMethods": [
-    {
-      "from": ["barbaracle-mega"],
-      "games": ["lza"],
-      "trigger": "automatic",
-      "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
-    }
-  ],
   "names": {
     "eng": "Barbaracle",
     "fra": "Golgopathe",
