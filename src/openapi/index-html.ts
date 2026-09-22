@@ -81,6 +81,7 @@ export function renderOpenApiIndexHtml() {
     </style>
   </head>
   <body>
+    <nav id="version-docs" aria-label="Dataset version documentation" hidden style="padding: 12px 24px; font-family: sans-serif;"></nav>
     <div id="swagger-ui"></div>
     <script src="https://unpkg.com/swagger-ui-dist@${swaggerUiVersion}/swagger-ui-bundle.js" crossorigin></script>
     <script src="https://unpkg.com/swagger-ui-dist@${swaggerUiVersion}/swagger-ui-standalone-preset.js" crossorigin></script>
@@ -93,13 +94,24 @@ export function renderOpenApiIndexHtml() {
         }
 
         const spec = await response.json();
-        const currentBaseUrl = new URL('.', window.location.href).href.replace(/\\/$/, '');
-        spec.servers = [
-          {
-            url: currentBaseUrl || window.location.origin,
-            description: 'Current static host',
-          },
-        ];
+        // Resolve the single-checkout builder's relative server without replacing versioned servers.
+        spec.servers = (spec.servers || [{ url: '.' }]).map((server) => ({
+          ...server,
+          url: new URL(server.url, window.location.href).href.replace(/\\/$/, ''),
+        }));
+
+        if (spec.servers.length > 1) {
+          const navigation = document.getElementById('version-docs');
+          navigation.hidden = false;
+          navigation.append('Version documentation: ');
+          for (const server of spec.servers) {
+            const link = document.createElement('a');
+            link.href = server.url + '/';
+            link.textContent = server.description || server.url;
+            link.style.marginRight = '16px';
+            navigation.append(link);
+          }
+        }
 
         window.ui = SwaggerUIBundle({
           spec,

@@ -8,10 +8,22 @@ on:
     paths:
       - 'data/**'
       - 'data-next/**'
-      - 'src/openapi/**'
+      - 'src/**'
+      - 'pages-versions.json'
+      - 'package.json'
+      - 'pnpm*.yaml'
+      - '.gitmodules'
+      - 'tsconfig.json'
+      - 'tsdown.config.ts'
+      - '.github/workflows/gh-pages.yml'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+
+  # Run the current default-branch workflow even for releases from older maintenance branches.
+  workflow_run:
+    workflows: ['Publish npm Packages']
+    types: [completed]
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
@@ -19,22 +31,23 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
-concurrency:
-  group: 'pages'
-  cancel-in-progress: true
-
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    # Skipped release events must not cancel a healthy deployment.
+    concurrency:
+      group: 'pages'
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v6
         with:
+          ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false
           show-progress: false
           submodules: recursive
@@ -64,7 +77,7 @@ jobs:
         run: pnpm typecheck
 
       - name: Build Pages artifact
-        run: pnpm build:pages
+        run: pnpm build:pages:versions --root-sha="$(git rev-parse HEAD)"
 
       - name: Test
         run: pnpm test

@@ -30,6 +30,30 @@ The OpenAPI docs and static JSON API are hosted on GitHub Pages:
 - API client (Swagger UI) https://pokepc.github.io/dataset/
 - OpenAPI spec: https://pokepc.github.io/dataset/openapi.json
 
+| URL path           | Dataset source                            |
+| ------------------ | ----------------------------------------- |
+| `/dataset/`        | Latest default-branch build (development) |
+| `/dataset/latest/` | Latest stable SemVer tag                  |
+| `/dataset/v6/`     | Latest stable v6 tag                      |
+| `/dataset/v7/`     | Latest stable v7 tag                      |
+
+Each path serves its own `openapi.json`, `data/`, and `data-next/`. Every spec lists all deployed
+servers, with its own server selected first in Swagger UI. The documentation links open each
+version's matching schema; changing the server dropdown only changes the request destination.
+[`versions.json`](https://pokepc.github.io/dataset/versions.json) records the deployed refs and
+commits.
+
+Retained major paths are configured in [`pages-versions.json`](pages-versions.json). Add a major
+after its first stable tag exists to expose `/vN/`; removing one removes that path on the next
+deployment. Root and `/latest/` are always included. Tags may use `6.9.1` or `v6.9.1` spelling;
+prereleases are excluded and versions are compared numerically. Conflicting equal-precedence tags,
+missing configured releases, or tag/package version mismatches fail the build.
+
+Pages rebuilds for default-branch source/configuration changes and after a successful **Publish npm
+Packages** workflow. To refresh independently of npm, run **Deploy to GitHub Pages** manually from
+Actions. Every deployment replaces the site with one complete artifact, preserving all configured
+major paths. Historical builds use their own code and frozen dependency lockfiles.
+
 ### Use Cases of the `openapi.json` spec
 
 Apart from being able to use it in your code with validators or generators, when combined with AI
@@ -99,7 +123,34 @@ dist-pages/
   index.html
   openapi.json
   data/
+  data-next/
 ```
+
+Build all published versions from the remote default branch and tags (requires Git, Node.js 24+,
+Bun, pnpm, and network access). This uses the current checkout's deployment configuration and
+Swagger shell while leaving its source files and index unchanged:
+
+```bash
+pnpm build:pages:versions
+```
+
+The aggregate output adds `latest/`, configured `vN/` directories, and `versions.json` to
+`dist-pages/`. Sources pointing to the same commit are built once. All sources must build
+successfully before the output is replaced. CI pins the root source to its tested checkout with
+`--root-sha=<full-commit-sha>` so a concurrent push cannot mix the checked configuration with a
+newer default-branch build.
+
+To build and preview the aggregate site locally under the same project prefix:
+
+```bash
+pnpm build:pages:versions --base-url=http://localhost:4173/dataset/
+pnpm dev:pages:versions
+```
+
+Open `http://localhost:4173/dataset/`. This preview serves the assembled files without rebuilding
+them; every server option targets the local preview. Keep the build URL's port aligned with the
+preview's `PORT` or `--port` setting. A deployment build uses the public `package.json` homepage as
+its base URL by default.
 
 Preview the Swagger UI locally:
 
