@@ -52,6 +52,7 @@
     "go",
     "bdsp-bd",
     "bdsp-sp",
+    "sv-s",
     "sv-v",
     "lza"
   ],
@@ -113,7 +114,11 @@
     "serebii": "gulpin",
     "bulbapedia": "Gulpin"
   },
-  "names": { "eng": "Gulpin (Female)", "fra": "Gloupti (Female)", "deu": "Schluppuck (Female)" },
+  "names": {
+    "eng": "Gulpin (Female)",
+    "fra": "Gloupti (Female)",
+    "deu": "Schluppuck (Female)"
+  },
   "genus": {
     "eng": "Stomach Pokémon",
     "esp": "Pokémon Estómago",
@@ -146,5 +151,17 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["col", "frlg-fr", "frlg-lg", "hgss-hg", "bw-b", "bw-w", "home", "sv-s"]
+  "transferOnlyIn": [
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "hgss-hg",
+    "bw-b",
+    "bw-w",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home"
+  ]
 }

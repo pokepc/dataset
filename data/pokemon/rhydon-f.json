@@ -50,7 +50,6 @@
     "pt",
     "hgss-hg",
     "hgss-ss",
-    "bw-b",
     "bw-w",
     "b2w2-b2",
     "b2w2-w2",
@@ -59,6 +58,10 @@
     "oras-or",
     "oras-as",
     "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
     "lgpe-lgp",
     "lgpe-lge",
     "swsh-sw",
@@ -136,7 +139,11 @@
   },
   "evolvesFrom": "rhyhorn",
   "evoFromLevel": 42,
-  "names": { "eng": "Rhydon (Female)", "fra": "Rhinoféros (Female)", "deu": "Rizeros (Female)" },
+  "names": {
+    "eng": "Rhydon (Female)",
+    "fra": "Rhinoféros (Female)",
+    "deu": "Rizeros (Female)"
+  },
   "genus": {
     "eng": "Drill Pokémon",
     "esp": "Pokémon Taladro",
@@ -169,5 +176,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["col", "home"]
+  "transferOnlyIn": ["col", "bw-b", "home"]
 }

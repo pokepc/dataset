@@ -40,11 +40,12 @@
     "pt",
     "hgss-hg",
     "hgss-ss",
-    "bw-b",
     "bw-w",
     "xy-x",
     "xy-y",
     "go",
+    "sm-s",
+    "sm-m",
     "bdsp-bd",
     "bdsp-sp",
     "la",
@@ -106,7 +107,11 @@
   },
   "evolvesFrom": "starly",
   "evoFromLevel": 14,
-  "names": { "eng": "Staravia (Female)", "fra": "Étourvol (Female)", "deu": "Staravia (Female)" },
+  "names": {
+    "eng": "Staravia (Female)",
+    "fra": "Étourvol (Female)",
+    "deu": "Staravia (Female)"
+  },
   "genus": {
     "eng": "Starling Pokémon",
     "esp": "Pokémon Estornino",
@@ -139,5 +144,14 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["b2w2-b2", "b2w2-w2", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": [
+    "bw-b",
+    "b2w2-b2",
+    "b2w2-w2",
+    "oras-or",
+    "oras-as",
+    "usum-us",
+    "usum-um",
+    "home"
+  ]
 }

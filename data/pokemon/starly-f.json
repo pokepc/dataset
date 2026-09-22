@@ -40,11 +40,12 @@
     "pt",
     "hgss-hg",
     "hgss-ss",
-    "bw-b",
     "bw-w",
     "xy-x",
     "xy-y",
     "go",
+    "sm-s",
+    "sm-m",
     "bdsp-bd",
     "bdsp-sp",
     "la",
@@ -104,7 +105,11 @@
     "serebii": "starly",
     "bulbapedia": "Starly"
   },
-  "names": { "eng": "Starly (Female)", "fra": "Étourmi (Female)", "deu": "Staralili (Female)" },
+  "names": {
+    "eng": "Starly (Female)",
+    "fra": "Étourmi (Female)",
+    "deu": "Staralili (Female)"
+  },
   "genus": {
     "eng": "Starling Pokémon",
     "esp": "Pokémon Estornino",
@@ -137,5 +142,14 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["b2w2-b2", "b2w2-w2", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": [
+    "bw-b",
+    "b2w2-b2",
+    "b2w2-w2",
+    "oras-or",
+    "oras-as",
+    "usum-us",
+    "usum-um",
+    "home"
+  ]
 }

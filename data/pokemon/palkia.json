@@ -33,20 +33,8 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "dp",
-  "obtainableIn": [
-    "dp-p",
-    "pt",
-    "hgss-hg",
-    "hgss-ss",
-    "oras-or",
-    "go",
-    "swsh-sw",
-    "swsh-sh",
-    "bdsp-bd",
-    "bdsp-sp",
-    "la"
-  ],
-  "eventOnlyIn": [],
+  "obtainableIn": ["dp-p", "pt", "oras-or", "go", "usum-um", "swsh-sh", "bdsp-sp", "la"],
+  "eventOnlyIn": ["hgss-hg", "hgss-ss"],
   "storableIn": [
     "dp-d",
     "dp-p",
@@ -130,7 +118,12 @@
     "xy-x",
     "xy-y",
     "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "swsh-sw",
     "home",
+    "bdsp-bd",
     "sv-s",
     "sv-v"
   ]

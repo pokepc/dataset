@@ -34,19 +34,8 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "xy",
-  "obtainableIn": [
-    "xy-x",
-    "xy-y",
-    "go",
-    "sm-s",
-    "sm-m",
-    "usum-us",
-    "usum-um",
-    "swsh-sw",
-    "swsh-sh",
-    "lza"
-  ],
-  "eventOnlyIn": ["oras-or", "oras-as"],
+  "obtainableIn": ["xy-x", "xy-y", "go", "sm-s", "sm-m", "usum-us", "usum-um", "lza"],
+  "eventOnlyIn": [],
   "storableIn": [
     "xy-x",
     "xy-y",
@@ -108,5 +97,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["oras-or", "oras-as", "swsh-sw", "swsh-sh", "home"]
 }

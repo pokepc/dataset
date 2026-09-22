@@ -749,6 +749,9 @@ describe('interactive availability review', () => {
             'p) patch (blocked by AI review)  s) skip > ',
           ])
           expect(review.output()).toContain('Patching is blocked')
+          expect(review.output()).toContain(
+            'The proposal below is the original mechanical candidate; rejected AI changes have not been applied.',
+          )
           expect(files.map((file) => readFileSync(file, 'utf8'))).toEqual(originals)
         },
         [records[0]],

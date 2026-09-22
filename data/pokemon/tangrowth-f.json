@@ -35,8 +35,6 @@
   "canBeAlpha": true,
   "debutIn": "dp",
   "obtainableIn": [
-    "dp-d",
-    "dp-p",
     "pt",
     "hgss-hg",
     "hgss-ss",
@@ -53,7 +51,8 @@
     "swsh-sh",
     "bdsp-bd",
     "bdsp-sp",
-    "la"
+    "la",
+    "pokopia"
   ],
   "eventOnlyIn": [],
   "storableIn": [
@@ -145,5 +144,5 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["dp-d", "dp-p", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

@@ -31,20 +31,18 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "rb",
-  "obtainableIn": ["go", "bdsp-bd", "bdsp-sp"],
-  "eventOnlyIn": [
-    "rb-r",
-    "rb-b",
-    "y",
-    "gs-g",
-    "gs-s",
-    "c",
+  "obtainableIn": [
     "e",
-    "xy-x",
-    "xy-y",
+    "go",
     "lgpe-lgp",
-    "lgpe-lge"
+    "lgpe-lge",
+    "swsh-sw",
+    "swsh-sh",
+    "bdsp-bd",
+    "bdsp-sp",
+    "pokopia"
   ],
+  "eventOnlyIn": ["rb-r", "rb-b", "y", "gs-g", "gs-s", "c", "xy-x", "xy-y", "sm-s", "sm-m"],
   "storableIn": [
     "rb-r",
     "rb-b",
@@ -151,6 +149,8 @@
     "b2w2-w2",
     "oras-or",
     "oras-as",
+    "usum-us",
+    "usum-um",
     "home",
     "sv-s",
     "sv-v"

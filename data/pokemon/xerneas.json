@@ -32,8 +32,8 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "xy",
-  "obtainableIn": ["xy-x", "go", "swsh-sw", "swsh-sh", "lza"],
-  "eventOnlyIn": ["oras-or", "oras-as"],
+  "obtainableIn": ["xy-x", "go", "usum-us", "swsh-sw", "lza"],
+  "eventOnlyIn": [],
   "storableIn": [
     "xy-x",
     "xy-y",
@@ -80,7 +80,15 @@
     "deu": "Xerneas (Ruhe-Modus)"
   },
   "genus": {},
-  "speciesNames": { "eng": "Xerneas", "fra": "Xerneas", "deu": "Xerneas" },
-  "formNames": { "eng": "Neutral Mode", "fra": "Mode Paisible", "deu": "Ruhe-Modus" },
-  "transferOnlyIn": ["xy-y", "home"]
+  "speciesNames": {
+    "eng": "Xerneas",
+    "fra": "Xerneas",
+    "deu": "Xerneas"
+  },
+  "formNames": {
+    "eng": "Neutral Mode",
+    "fra": "Mode Paisible",
+    "deu": "Ruhe-Modus"
+  },
+  "transferOnlyIn": ["xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-um", "swsh-sh", "home"]
 }

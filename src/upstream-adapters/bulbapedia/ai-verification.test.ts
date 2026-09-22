@@ -12,6 +12,7 @@ import {
   availabilityJson,
   bulbapediaUrl,
   parseAvailability,
+  type AvailabilityJson,
   type AvailabilityReport,
 } from './availability'
 import {
@@ -59,7 +60,7 @@ const games = [
 const report = parseAvailability(html, pokemon, games)
 const review = {
   candidateJson: availabilityJson(report),
-  differenceReason: null,
+  differenceReason: 'The mechanical candidate is confirmed.',
   summary: 'The parsed route agrees with the supplied HTML; HOME is retained.',
   checks: [
     { gameId: 'rb-r', result: 'accurate', evidence: 'Red: Viridian Forest.' },
@@ -73,7 +74,12 @@ const review = {
   conflictResolutions: [],
 }
 
-function clientFor(result: unknown = review, overrides: Record<string, unknown> = {}) {
+function clientFor(
+  result: { candidateJson: AvailabilityJson; [field: string]: unknown } = review,
+  overrides: Record<string, unknown> = {},
+) {
+  // Model responses omit storage; normalized reviews used elsewhere include it.
+  const { storableIn: _storage, ...candidateJson } = result.candidateJson
   const request = vi.fn<typeof globalThis.fetch>().mockResolvedValue(
     new Response(
       JSON.stringify({
@@ -87,7 +93,13 @@ function clientFor(result: unknown = review, overrides: Record<string, unknown> 
             role: 'assistant',
             id: 'msg_test',
             status: 'completed',
-            content: [{ type: 'output_text', text: JSON.stringify(result), annotations: [] }],
+            content: [
+              {
+                type: 'output_text',
+                text: JSON.stringify({ ...result, candidateJson }),
+                annotations: [],
+              },
+            ],
           },
         ],
         ...overrides,
@@ -163,7 +175,7 @@ describe('form-ambiguous supplementary evidence', () => {
       expect(candidateJson.transferOnlyIn).toEqual([gameId])
       const response = {
         candidateJson,
-        differenceReason: null,
+        differenceReason: 'Form-qualified HTML confirms the mechanical transfer route.',
         summary: 'Form-qualified HTML confirms the existing transfer route.',
         checks: [
           {
@@ -355,11 +367,19 @@ describe('AI evidence', () => {
       expect(body.store).toBe(false)
       expect(body.tools).toBeUndefined()
       expect(body.text.format).toMatchObject({ type: 'json_schema', strict: true })
+      expect(body.text.format.schema.properties.differenceReason).toEqual({
+        type: 'string',
+        pattern: '^\\S+(?:\\s+\\S+){0,24}$',
+      })
+      const candidateSchema = body.text.format.schema.properties.candidateJson
+      expect(candidateSchema.properties).not.toHaveProperty('storableIn')
+      expect(candidateSchema.additionalProperties).toBe(false)
       expect(body.instructions).toContain('untrusted DATA')
       const input = JSON.parse(body.input[0].content)
       expect(input.currentPokemon).toEqual(pokemon)
       expect(input.currentGames).toEqual(games)
       expect(input.candidateJson).toEqual(availabilityJson(report))
+      expect(result.candidateJson.storableIn).toEqual(input.candidateJson.storableIn)
       expect(input.sourceHtml).toContain('revert on deposit')
       expect(input.parsedGameRows.map((row: { gameId: string }) => row.gameId)).toEqual([
         'rb-r',
@@ -404,36 +424,65 @@ describe('AI verdict validation', () => {
     expect(body.text.format.schema.required).toContain('differenceReason')
   })
 
-  it('allows 25 words but rejects longer, absent, empty, or unnecessary explanations', () => {
+  it('allows 25 words but rejects longer, absent, or empty correction explanations', () => {
     expect(
       validateAiReview(
         { ...correction, differenceReason: Array(25).fill('word').join(' ') },
         report,
       ).verdict,
     ).toBe('pass')
-    for (const differenceReason of [null, '', ' ', Array(26).fill('word').join(' ')]) {
+    for (const differenceReason of [undefined, null, '', ' ', Array(26).fill('word').join(' ')]) {
       expect(() => validateAiReview({ ...correction, differenceReason }, report)).toThrow()
     }
-    expect(() => validateAiReview({ ...review, differenceReason: 'No changes.' }, report)).toThrow(
-      'difference reason',
-    )
   })
 
-  it('normalizes ordering without calling it an AI difference', () => {
-    const result = validateAiReview(
-      {
+  it.each(['No changes.', 'Red is obtainable in Viridian Forest; HOME remains unchanged.'])(
+    'accepts a matching candidate with a redundant reason: %s',
+    async (differenceReason) => {
+      const { client, request } = clientFor({ ...review, differenceReason })
+      const result = await verifyAvailabilityWithAi(report, html, games, { client })
+      expect(result.verdict).toBe('pass')
+      expect(result.candidateJson).toEqual(availabilityJson(report))
+      expect(result.differenceReason).toBeNull()
+      expect(formatAiReview(result)).toContain('AI candidate matches the mechanical candidate.')
+      expect(formatAiReview(result)).not.toContain('AI difference:')
+      expect(request).toHaveBeenCalledTimes(1)
+    },
+  )
+
+  it.each(['inaccurate', 'uncertain'])(
+    'still blocks a matching candidate with a redundant reason and an %s check',
+    (result) => {
+      const value = {
         ...review,
-        candidateJson: {
-          ...review.candidateJson,
-          obtainableIn: [...review.candidateJson.obtainableIn].reverse(),
-          storableIn: [...review.candidateJson.storableIn].reverse(),
+        differenceReason: 'No changes.',
+        checks: [{ ...review.checks[0], result }, review.checks[1]],
+      }
+      expect(validateAiReview(value, report).verdict).toBe(
+        result === 'inaccurate' ? 'fail' : 'uncertain',
+      )
+    },
+  )
+
+  it.each(['The mechanical candidate is confirmed.', 'Reordered the lists.'])(
+    'normalizes ordering without calling it an AI difference (reason: %s)',
+    (differenceReason) => {
+      const result = validateAiReview(
+        {
+          ...review,
+          differenceReason,
+          candidateJson: {
+            ...review.candidateJson,
+            obtainableIn: [...review.candidateJson.obtainableIn].reverse(),
+            storableIn: [...review.candidateJson.storableIn].reverse(),
+          },
         },
-      },
-      report,
-    )
-    expect(result.candidateJson).toEqual(review.candidateJson)
-    expect(result.differenceReason).toBeNull()
-  })
+        report,
+      )
+      expect(result.candidateJson).toEqual(review.candidateJson)
+      expect(result.differenceReason).toBeNull()
+    },
+  )
 
   it.each([
     { id: 'wrong-pokemon' },
@@ -450,6 +499,36 @@ describe('AI verdict validation', () => {
         report,
       ),
     ).toThrow()
+  })
+
+  it('identifies added and removed storage games if a full candidate violates preservation', () => {
+    expect(() =>
+      validateAiReview(
+        { ...review, candidateJson: { ...review.candidateJson, storableIn: ['rb-r', 'gs-g'] } },
+        { ...report, gameOrder: [...report.gameOrder, 'gs-g'] },
+      ),
+    ).toThrow('storableIn membership (added: gs-g; removed: home)')
+  })
+
+  it('preserves storage while still blocking evidenced storage errors', async () => {
+    const { client } = clientFor({
+      ...review,
+      findings: [
+        {
+          scope: 'output',
+          severity: 'error',
+          gameId: 'rb-r',
+          field: 'storableIn',
+          message: 'Storage contradicts the supplied form rule.',
+          evidence: 'The supplied HTML says this form reverts on deposit.',
+        },
+      ],
+    })
+    const result = await verifyAvailabilityWithAi(report, html, games, { client })
+    expect(result.candidateJson.storableIn).toEqual(review.candidateJson.storableIn)
+    expect(result.verdict).toBe('fail')
+    expect(result.findings[0].field).toBe('storableIn')
+    expect(() => applyAiReview(report, result)).toThrow('did not pass')
   })
 
   it('rejects female Gen 1 corrections and corrections without an accurate evidence check', () => {

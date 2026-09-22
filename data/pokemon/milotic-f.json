@@ -41,8 +41,6 @@
     "dp-d",
     "dp-p",
     "pt",
-    "hgss-hg",
-    "hgss-ss",
     "bw-b",
     "bw-w",
     "b2w2-b2",
@@ -125,7 +123,11 @@
   },
   "evolvesFrom": "feebas",
   "evoFromItem": "prismscale",
-  "names": { "eng": "Milotic (Female)", "fra": "Milobellus (Female)", "deu": "Milotic (Female)" },
+  "names": {
+    "eng": "Milotic (Female)",
+    "fra": "Milobellus (Female)",
+    "deu": "Milotic (Female)"
+  },
   "genus": {
     "eng": "Tender Pokémon",
     "esp": "Pokémon Tierno",
@@ -158,5 +160,15 @@
     "chs": "雌性",
     "cht": "雌性"
   },
-  "transferOnlyIn": ["col", "frlg-fr", "frlg-lg", "xd", "xy-x", "xy-y", "home"]
+  "transferOnlyIn": [
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "xd",
+    "hgss-hg",
+    "hgss-ss",
+    "xy-x",
+    "xy-y",
+    "home"
+  ]
 }

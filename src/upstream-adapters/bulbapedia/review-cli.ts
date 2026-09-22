@@ -240,6 +240,10 @@ export async function reviewDataset(
             ),
           )
         }
+        if (patchBlocked)
+          io.write(
+            'The proposal below is the original mechanical candidate; rejected AI changes have not been applied.',
+          )
         io.write(
           `\n${patchBlocked ? styleText('red', 'Mechanical candidate (AI review did not pass)') : 'AI candidate'}:\n${formatAvailabilityProposal(report)}\n`,
         )

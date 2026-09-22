@@ -194,21 +194,28 @@ silently truncated.
 
 The selected model independently checks Pokémon/form identity, game IDs and versions, acquisition
 methods, DLC mapping, event/transfer precedence, preservation rules, and whether the candidate
-accurately represents the supplied source. Its Zod structured output includes the final
-`candidateJson`, `differenceReason`, one check for every concrete dataset game,
-`conflictResolutions`, and findings with evidence. It may correct parsing mistakes when the supplied
-evidence supports the correction. Every reported conflict needs an explicit resolution; resolved
-conflicts must cite both conflicting sources and have an accurate game check. Invented citations,
-omitted conflicts, and unresolved disagreements cannot pass. Sources are not resolved by majority
-vote. Checks describe the final AI candidate; corrected parser mistakes are warnings, while
+accurately represents the supplied source. Its Zod structured output includes a `candidateJson` with
+identity and the three acquisition arrays, `differenceReason`, one check for every concrete dataset
+game, `conflictResolutions`, and findings with evidence. It may correct parsing mistakes when the
+supplied evidence supports the correction. Every reported conflict needs an explicit resolution;
+resolved conflicts must cite both conflicting sources and have an accurate game check. Invented
+citations, omitted conflicts, and unresolved disagreements cannot pass. Sources are not resolved by
+majority vote. Checks describe the final AI candidate; corrected parser mistakes are warnings, while
 unresolved errors still block patching. Local validation rejects missing/duplicate game checks,
 invented game IDs, changed Pokémon identity, overlapping acquisition categories, changes to storage
-membership, and female Gen 1 routes.
+membership, and female Gen 1 routes. `storableIn` is read-only input: the AI cannot return it, and
+the verifier carries it into the final candidate directly from the mechanical candidate. The AI can
+still report evidenced storage contradictions as findings, which remain subject to validation. After
+a failed review, the CLI displays the original mechanical proposal; rejected AI changes have not
+been applied to that proposal or written to the dataset.
 
-If the AI candidate differs from the mechanical candidate, `AI difference:` explains why in at most
-**25 words**, enforced locally by Zod. Reordering alone is not a difference. Each changed game must
-have an accurate check with source evidence. Otherwise the reason is null and the CLI says the
-candidates match. All accepted lists retain the dataset's game order.
+The response schema always requires a nonempty `differenceReason` of at most **25 words**: either an
+explanation of the AI's corrections or confirmation of the mechanical candidate. Local validation
+compares game membership and exposes the reason as `AI difference:` only for actual corrections. For
+matching candidates, it normalizes the reason to null and the CLI says the candidates match.
+Reordering alone and confirming the parser's changes from the existing record are not AI
+corrections. Each changed game must still have an accurate check with source evidence. All accepted
+lists retain the dataset's game order.
 
 The review and findings go to **stderr**, preserving JSON stdout and the patch-only summary. A
 passing review uses the AI candidate for the table, JSON, summary, and patch. An inaccurate or

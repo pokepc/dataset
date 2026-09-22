@@ -35,19 +35,7 @@
   "canDynamax": true,
   "canBeAlpha": false,
   "debutIn": "bw",
-  "obtainableIn": [
-    "bw-b",
-    "bw-w",
-    "b2w2-b2",
-    "b2w2-w2",
-    "xy-x",
-    "xy-y",
-    "oras-or",
-    "oras-as",
-    "go",
-    "sv-s",
-    "sv-v"
-  ],
+  "obtainableIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "go", "sv-s", "sv-v"],
   "eventOnlyIn": [],
   "storableIn": [
     "bw-b",
@@ -129,5 +117,5 @@
     "jap": "ふゆのすがた",
     "kor": "겨울의 모습"
   },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["xy-x", "xy-y", "oras-or", "oras-as", "home"]
 }
