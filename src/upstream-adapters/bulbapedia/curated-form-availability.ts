@@ -449,7 +449,7 @@ export function resolveCuratedFormAvailability(
       'unavailable',
       'This temporary battle state or fusion cannot be deposited in Bank or HOME.',
     )
-  if (gameId === 'bank' && ['giratina-origin', 'shaymin-sky', 'hoopa-unbound'].includes(pokemon.id))
+  if (gameId === 'bank' && ['giratina-origin', 'shaymin-sky'].includes(pokemon.id))
     return method('unavailable', 'This form reverts when deposited in Pokémon Bank.')
   if (!main.gameIds.has(gameId)) return undefined
   const override = rule.overrides?.[gameId]
@@ -530,7 +530,7 @@ export function curatedFormStorageRule(
     }
   const rule = curatedFormRule(pokemon)
   const storageExclusions: Record<string, string[]> = {
-    'hoopa-unbound': [...oras, 'bank'],
+    'hoopa-unbound': oras,
     'shaymin-sky': [...gen3, ...gen4, ...gen5, ...gen6, 'bank'],
     'giratina-origin': ['home', 'bank'],
   }

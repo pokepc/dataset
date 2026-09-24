@@ -37,7 +37,17 @@
   "debutIn": "sm",
   "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "lgpe-lgp", "lgpe-lge"],
   "eventOnlyIn": [],
-  "storableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "lgpe-lgp", "lgpe-lge", "home"],
+  "storableIn": [
+    "bank",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "lgpe-lgp",
+    "lgpe-lge",
+    "home"
+  ],
   "shinyReleased": true,
   "baseHp": 30,
   "baseAtk": 56,

@@ -176,7 +176,7 @@ describe('researched main-game forms', () => {
     expect(method('deoxys-attack', 'frlg-fr', main)?.note).toContain('Nintendo Switch re-release')
     const selected = {
       ...pokemon('hoopa-unbound'),
-      storableIn: ['oras-or', 'oras-as', 'sm-s', 'home', 'go'],
+      storableIn: ['oras-or', 'oras-as', 'sm-s', 'bank', 'home', 'go'],
     }
     const result = createAvailabilityReport(
       { main, gameIds: main.gameIds },
@@ -184,7 +184,11 @@ describe('researched main-game forms', () => {
       games,
       species,
     )
-    expect(availabilityJson(result).storableIn).toEqual(['sm-s', 'home', 'go'])
+    expect(availabilityJson(result).storableIn).toEqual(['sm-s', 'bank', 'home', 'go'])
+    expect(result.rows.find((row) => row.game.id === 'bank')).toMatchObject({
+      status: 'unknown',
+      storable: true,
+    })
     expect(result.rows.find((row) => row.game.id === 'oras-or')).toMatchObject({
       status: 'obtainableIn',
       storable: false,

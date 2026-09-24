@@ -32,17 +32,20 @@ describe('Validate pokemon/*.json data', () => {
     },
   )
 
-  it('should exclude HOME from all availability fields for forms requiring held items', () => {
-    expect(
-      recordList
-        .filter(requiresHeldItemForForm)
-        .flatMap((record) =>
-          (['obtainableIn', 'transferOnlyIn', 'eventOnlyIn', 'storableIn'] as const)
-            .filter((field) => record[field].includes('home'))
-            .map((field) => `${record.id}.${field}`),
-        ),
-    ).toEqual([])
-  })
+  it.each(['bank', 'home'])(
+    'should exclude %s from all availability fields for forms requiring held items',
+    (game) => {
+      expect(
+        recordList
+          .filter(requiresHeldItemForForm)
+          .flatMap((record) =>
+            (['obtainableIn', 'transferOnlyIn', 'eventOnlyIn', 'storableIn'] as const)
+              .filter((field) => record[field].includes(game))
+              .map((field) => `${record.id}.${field}`),
+          ),
+      ).toEqual([])
+    },
+  )
 
   it('should exclude Champions from obtainableIn while recruited Pokémon cannot be exported', () => {
     expect(

@@ -76,6 +76,15 @@ policy only when export behavior changes, with updated evidence and tests.
 
 ### Forms and storage
 
+Pokémon Bank (`bank`) stores compatible Gen I–VII records reachable through the 3DS games or Poké
+Transporter. Exclude battle-only forms, fusions, held-item forms, Furfrou trims and Sky Shaymin.
+Hoopa Unbound can retain its form when deposited from Gen VII. Meltan, Melmetal, Original Color
+Magearna and later-generation forms have no legitimate route into Bank; HOME transfers are one-way.
+See
+[Bank's compatibility and restrictions](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Bank)
+and
+[Hoopa's form behavior](<https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)#Form_data>).
+
 Eternamax Eternatus has no acquisition or storage membership anywhere, including GO. Its boss
 appearance and move animation do not establish an obtainable form. Dada Zarude is transfer-only in
 Sword/Shield, Scarlet/Violet and HOME, originating from its historical Sword/Shield distribution; it
@@ -104,8 +113,8 @@ Transformation support alone does not establish native acquisition. A Mega Evolu
 Pokémon is transfer-only in that game is also `transferOnlyIn` (for example, Mega Charizard in Omega
 Ruby/Alpha Sapphire). This does not override independent native encounters for other forms.
 
-- Forms requiring a **held item** cannot retain that form in HOME: exclude HOME from all three
-  acquisition fields and `storableIn`. An item used once to change/evolve a Pokémon is not
+- Forms requiring a **held item** cannot retain that form in Bank or HOME: exclude both from all
+  three acquisition fields and `storableIn`. An item used once to change/evolve a Pokémon is not
   necessarily a held-item requirement; `formItem` alone does not establish one.
 - Rotom appliances keep their form without a held item. They are `transferOnlyIn` and `storableIn`
   in HOME; they do not inherit base Rotom's native HOME gift.

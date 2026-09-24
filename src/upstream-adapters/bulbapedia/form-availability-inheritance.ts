@@ -75,9 +75,9 @@ export function formAvailabilityRestriction(
       status: 'unavailable',
       sourceUrl: 'https://bulbapedia.bulbagarden.net/wiki/Pixie_Plate',
     }
-  if (game.id === 'home' && requiresHeldItemForForm(pokemon))
+  if (['home', 'bank'].includes(game.id) && requiresHeldItemForForm(pokemon))
     return {
-      text: 'HOME cannot retain a form that requires a held item; it reverts to its base form.',
+      text: 'Bank and HOME cannot retain a form that requires a held item; it reverts to its base form.',
       status: 'unavailable',
       sourceUrl: null,
     }
@@ -123,7 +123,7 @@ export function formStorageRule(
   let gameIds = [...(base ?? pokemon).storableIn]
   let note = base
     ? `storableIn inherits ${base.id}.`
-    : 'Existing storage is retained except for HOME.'
+    : 'Existing storage is retained except for Bank and HOME.'
   if (pokemon.id === 'arceus-fairy') {
     const excluded = new Set(
       games.filter((game) => game.gen > 0 && game.gen < 6).map((game) => game.id),
@@ -132,8 +132,8 @@ export function formStorageRule(
     note += ' Fairy Arceus did not exist before Generation VI.'
   }
   if (heldItem) {
-    gameIds = gameIds.filter((id) => id !== 'home')
-    note += ' HOME cannot retain a form that requires a held item.'
+    gameIds = gameIds.filter((id) => !['home', 'bank'].includes(id))
+    note += ' Bank and HOME cannot retain a form that requires a held item.'
   }
   if (base?.id === 'furfrou') {
     // Gen VII reverts on withdrawal, so depositing a trimmed Furfrou there is still supported.

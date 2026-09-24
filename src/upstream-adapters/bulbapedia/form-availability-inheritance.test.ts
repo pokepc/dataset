@@ -121,7 +121,7 @@ describe('explicit base-form inheritance', () => {
       obtainableIn: ['champions'],
       eventOnlyIn: [],
       transferOnlyIn: ['home'],
-      storableIn: ['home', 'xy-x', 'champions'],
+      storableIn: ['home', 'bank', 'xy-x', 'champions'],
     }
     const main = source(base)
     const report = createAvailabilityReport({ main, gameIds: main.gameIds }, selected, games, [
@@ -203,12 +203,13 @@ describe('explicit base-form inheritance', () => {
     ).toEqual([])
   })
 
-  it('retains Furfrou Gen VII storage, excluding Gen VI deposit reversion', () => {
+  it('retains Furfrou Gen VII storage, excluding Gen VI and Bank deposit reversion', () => {
     const base = {
       ...pokemon('furfrou'),
       storableIn: [
         'xy-x',
         'xy-y',
+        'bank',
         'oras-or',
         'oras-as',
         'sm-s',
@@ -354,26 +355,28 @@ describe('explicit base-form inheritance', () => {
     'kyogre-primal',
     'groudon-primal',
   ])(
-    'removes HOME from all availability fields for held-item form %s without its base record',
+    'removes Bank and HOME from all availability fields for held-item form %s without its base record',
     (id) => {
       const selected = {
         ...pokemon(id),
-        storableIn: ['home', 'go', 'sv-s'],
-        obtainableIn: ['home'],
-        eventOnlyIn: ['home'],
-        transferOnlyIn: ['home'],
+        storableIn: ['bank', 'home', 'go', 'sv-s'],
+        obtainableIn: ['bank', 'home'],
+        eventOnlyIn: ['bank', 'home'],
+        transferOnlyIn: ['bank', 'home'],
       }
       const main = source(selected)
       const report = createAvailabilityReport({ main, gameIds: main.gameIds }, selected, games)
       const candidate = availabilityJson(report)
       const primal = ['kyogre-primal', 'groudon-primal'].includes(id)
       expect(candidate.storableIn).toEqual(primal ? ['go'] : ['go', 'sv-s'])
-      for (const field of fields) expect(candidate[field]).not.toContain('home')
-      expect(report.rows.find((row) => row.game.id === 'home')).toMatchObject({
-        basis: 'rule',
-        status: 'unavailable',
-        storable: false,
-      })
+      for (const game of ['bank', 'home']) {
+        for (const field of fields) expect(candidate[field]).not.toContain(game)
+        expect(report.rows.find((row) => row.game.id === game)).toMatchObject({
+          basis: 'rule',
+          status: 'unavailable',
+          storable: false,
+        })
+      }
       expect(report.warnings.join(' ')).toContain(
         primal
           ? 'Temporary battle forms do not inherit base storage'

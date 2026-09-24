@@ -28,11 +28,11 @@ candidate, formats the file with the repository's Oxfmt configuration, and print
 games.
 
 The three acquisition fields can change. The explicit inheritance rules below also copy `storableIn`
-from the base, with form-specific exceptions. Held-item forms exclude HOME; other records preserve
-storage membership and ordering. Unrelated Pokémon properties are preserved. Acquisition arrays use
-dataset game order. The patcher checks that availability has not changed since the record was loaded
-and that the file has not changed during formatting; a concurrent edit stops replacement. Writes use
-a temporary file and atomic rename.
+from the base, with form-specific exceptions. Held-item forms exclude Bank and HOME; other records
+preserve storage membership and ordering. Unrelated Pokémon properties are preserved. Acquisition
+arrays use dataset game order. The patcher checks that availability has not changed since the record
+was loaded and that the file has not changed during formatting; a concurrent edit stops replacement.
+Writes use a temporary file and atomic rename.
 
 ## Bulk review
 
@@ -139,12 +139,12 @@ source row but inherit storage from the red core, never the battle-only Meteor f
 Rotom's five appliance forms are `transferOnlyIn` and `storableIn` in HOME. They do not require a
 held item to keep their forms, and they do not inherit base Rotom's HOME gift acquisition.
 
-Forms that require a held item cannot retain that form in HOME. This excludes HOME from all four
-availability fields for Arceus types, Silvally types, Genesect drives, the Origin forms of
+Forms that require a held item cannot retain that form in Bank or HOME. This excludes both from all
+four availability fields for Arceus types, Silvally types, Genesect drives, the Origin forms of
 Dialga/Palkia/Giratina, Crowned Zacian/Zamazenta, Ogerpon's held masks, and held-item Mega/Primal
-forms. The HOME restriction applies even without a base record and overrides base-form acquisition
-inheritance. An item used to change or evolve a form does not by itself establish a held-item
-requirement.
+forms. The service restriction applies even without a base record and overrides base-form
+acquisition inheritance. An item used to change or evolve a form does not by itself establish a
+held-item requirement.
 
 Furfrou trims copy base storage except XY/ORAS and Bank, where deposit removes the trim. Gen VII
 storage remains valid because reversion happens on withdrawal; GO, HOME and later saved storage are
@@ -173,8 +173,8 @@ fallback.
   Ash-Greninja requires the external SM demo and transforms only in Gen VII. Eternamax is not a
   playable obtainable main-game form. Hisuian Samurott is explicitly unavailable in LZA.
 - Storage retains existing values except researched temporary-state and deposit-reversion
-  exclusions, including Hoopa Unbound in ORAS, and adds the confirmed Gen III compatibility for
-  punctuation Unown. Shiny fields are unchanged.
+  exclusions, including Hoopa Unbound in ORAS (Bank retains it from Gen VII), and adds the confirmed
+  Gen III compatibility for punctuation Unown. Shiny fields are unchanged.
 
 GO uses its exact release entries. Two researched shared identities are mapped narrowly: Active
 Xerneas is its automatic appearance, and both Toxtricity variants share Gigantamax. An exact form
