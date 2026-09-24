@@ -160,6 +160,7 @@ export function createAvailabilityReport(
           basis = 'rule'
         } else if (game.id === 'go' && tables.go) {
           method = resolveGoAvailability(tables.go, pokemon, siblings)
+          if (method?.sourceUrl) basis = 'rule'
           if (!method && sourceBase) {
             method = resolveGoAvailability(tables.go, sourceBase, siblings)
             if (method) {

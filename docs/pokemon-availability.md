@@ -2,7 +2,7 @@
 
 This is the canonical field reference for humans and agents editing `data/pokemon/*.json`, the
 schemas, the editor, and the availability tools. It supersedes older audit terminology. Last policy
-review: **2026-09-22**. Implementation and source details are in the
+review: **2026-09-24**. Implementation and source details are in the
 [availability CLI guide](pokemon-availability-cli.md).
 
 ## Scope
@@ -16,7 +16,7 @@ Acquisition records established routes, including historical releases and events
 spawn calendar, a guarantee that an old event is active, or a claim that every save, region, DLC
 configuration, or destination supports the route. Exportability is part of the acquisition model: an
 isolated local recruit that cannot leave its game is not an `obtainableIn` source, except in GO,
-where `obtainableIn` simply records that the exact Pokémon/form was released at some point.
+where released forms need not be exportable and researched event-exclusive routes use `eventOnlyIn`.
 
 ## Acquisition and storage
 
@@ -167,14 +167,29 @@ runtime. The main table's labels map as follows:
 | `PW`, `PWE`                                           | `transferOnlyIn`: Pokéwalker is external to HG/SS |
 | Transfer/trade and other external-route labels        | `transferOnlyIn`                                  |
 
-**GO exception:** `obtainableIn` means the exact Pokémon/form has been released in GO at some point,
-regardless of whether it can be exported. This includes released costumes and historical events;
-exportability does not move a GO release to `transferOnlyIn` or `eventOnlyIn`. This simplification
-does not apply to Champions or other games. Storage remains independent.
+**GO exception:** released forms need not be exportable, including costumes. Exportability alone
+does not move a GO release to `transferOnlyIn` or `eventOnlyIn`. The release table establishes that
+an exact form exists, but researched event-exclusive acquisition overrides its default
+`obtainableIn` classification. This exception does not apply to Champions or other games. Storage
+remains independent.
 
-GO release tables track historical release, not today's spawns, and do not distinguish ordinary
-availability from every timed event. S/V's GO-postcard-dependent Vivillon patterns are deliberately
-simplified to `transferOnlyIn`; Fancy is native, while Poké Ball must be imported.
+For the [GO legendary and mythical audit](audits/go-legendary-mythical-availability.md):
+
+- Permanent, freely unlockable Special Research is ordinary acquisition, even if it is one-time or
+  follows prerequisite research. A previous GO Fest debut does not override that later route.
+- Recurring public raids, including Raid Days, and ordinary wild encounters remain `obtainableIn`. A
+  rotation being inactive today does not make it event-only.
+- Limited-claim event/season research or GO Pass rewards without an independent ordinary route are
+  `eventOnlyIn`. Research that never expires **after claiming** can still be event-gated.
+- Evolution or transformation from an event-only Pokémon retains that gate unless the exact
+  resulting form has an independent ordinary route. Do not copy one species/form's rule to its
+  entire family. Shiny-only events do not change the classification of an ordinary non-shiny route.
+
+GO release tables cannot establish these distinctions alone. Curated exact-record rules supplement
+confirmed releases; they do not override unreleased, future, contradictory or missing evidence.
+Non-legendary/non-mythical event exclusivity is outside this audit and retains the existing release
+table behavior. S/V's GO-postcard-dependent Vivillon patterns remain deliberately simplified to
+`transferOnlyIn`; Fancy is native, while Poké Ball must be imported.
 
 Missing or blank source cells are **unknown**, not proof of unavailability. Preserve existing values
 and report the gap unless a specific rule establishes a correction, such as Champions' export

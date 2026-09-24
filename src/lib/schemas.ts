@@ -312,10 +312,10 @@ export const pokemonSchema = z.object({
   canBeAlpha: z.coerce.boolean(),
   // ---- Availability: canonical definitions in docs/pokemon-availability.md.
   debutIn: common.slug, // the first game it appeared in
-  obtainableIn: z.array(common.slug), // exportable ordinary acquisition; Megas require a native base route; GO means historically released, even if not exportable; excludes Champions recruits
+  obtainableIn: z.array(common.slug), // exportable ordinary acquisition; Megas require a native base route; GO allows non-exportable releases but excludes researched event-only routes; excludes Champions recruits
   transferOnlyIn: z.array(common.slug), // external acquisition/dependency, including distributions and verified visitors
   storableIn: z.array(common.slug), // exact form persists in storage; independent of acquisition/exportability
-  eventOnlyIn: z.array(common.slug), // obtainable via in-game events; disjoint from obtainableIn and transferOnlyIn
+  eventOnlyIn: z.array(common.slug), // obtainable via in-game events, including GO event-gated research/pass rewards; disjoint from obtainableIn and transferOnlyIn
   shinyLockedIn: z.array(common.slug).optional(), // native acquisition is shiny-locked; does not prohibit imported shinies
   shinyReleased: z.coerce.boolean(), // a legal shiny of this form has been released somewhere
   shinyBase: common.slug.optional(), // shared shiny appearance reference, not availability inheritance

@@ -1,8 +1,9 @@
 import { load, type CheerioAPI } from 'cheerio'
 import type { AvailabilityPokemon, AvailabilityStatus } from './availability.ts'
+import { goEventAvailabilityRules } from './go-event-availability.ts'
 
 type Selection = ReturnType<CheerioAPI>
-type GoMethod = { status: AvailabilityStatus; text: string; note?: string }
+type GoMethod = { status: AvailabilityStatus; text: string; note?: string; sourceUrl?: string }
 
 export type GoAvailabilityEntry = GoMethod & {
   sprite: string
@@ -374,13 +375,22 @@ export function resolveGoAvailability(
       note: 'The GO source lists this form as both released and unreleased.',
     }
   const result = released[0] ?? matches.find((entry) => entry.status === 'unknown') ?? matches[0]
+  // A release date proves existence, not an ordinary acquisition route. Never let an
+  // event rule establish release, override a contradiction, or leak into sibling forms.
+  const eventRule = result.status === 'obtainableIn' && goEventAvailabilityRules[pokemon.id]
   const note = [
     result.note,
+    ...(eventRule ? [eventRule.note] : []),
     ...(usesSharedForm
       ? [`Reviewed shared GO form identity for ${pokemon.id}; not base availability inheritance.`]
       : []),
   ]
     .filter(Boolean)
     .join(' ')
-  return { status: result.status, text: result.text, ...(note ? { note } : {}) }
+  return {
+    status: eventRule ? 'eventOnlyIn' : result.status,
+    text: result.text,
+    ...(note ? { note } : {}),
+    ...(eventRule ? { sourceUrl: eventRule.sourceUrl } : {}),
+  }
 }

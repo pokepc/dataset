@@ -1,6 +1,11 @@
 import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import type { AvailabilityPokemon } from './availability.ts'
+import {
+  availabilityJson,
+  createAvailabilityReport,
+  type AvailabilityGame,
+  type AvailabilityPokemon,
+} from './availability.ts'
 import { parseGoAvailability, resolveGoAvailability } from './go-availability.ts'
 
 const pokemon = (id: string): AvailabilityPokemon =>
@@ -29,6 +34,110 @@ const resolve = (html: string, id: string, parent?: string) =>
   ])
 
 describe('GO availability lists', () => {
+  it.each([
+    ['cosmog', 'GO0789.png'],
+    ['cosmoem', 'GO0790.png'],
+    ['kubfu', 'GO0891.png'],
+    ['urshifu', 'GO0892.png'],
+    ['urshifu-rapid-strike', 'GO0892R.png'],
+    ['eternatus', 'GO0890.png'],
+    ['zarude', 'GO0893.png'],
+    ['zeraora', 'GO0807.png'],
+  ])(
+    'retains the researched event gate for released %s in reports and patch candidates',
+    (id, sprite) => {
+      const saved = pokemon(id)
+      const go: AvailabilityGame = JSON.parse(
+        readFileSync(new URL('../../../data/games/go.json', import.meta.url), 'utf8'),
+      )
+      const parsed = parse(page(release(image(sprite), 'Jul 11, 2026', 'Event debut.')))
+      // Simulate the old parser's ordinary classification to prove the candidate corrects it.
+      const input = {
+        ...saved,
+        obtainableIn: [...saved.obtainableIn.filter((game) => game !== 'go'), 'go'],
+        eventOnlyIn: saved.eventOnlyIn.filter((game) => game !== 'go'),
+      }
+      const report = createAvailabilityReport({ go: parsed, gameIds: new Set(['go']) }, input, [go])
+      expect(report.rows[0]).toMatchObject({
+        status: 'eventOnlyIn',
+        basis: 'rule',
+        methods: [{ sourceUrl: expect.stringMatching(/^https:/), note: expect.any(String) }],
+      })
+      const candidate = availabilityJson(report)
+      expect(candidate.obtainableIn).toEqual(saved.obtainableIn)
+      expect(candidate.eventOnlyIn).toEqual(expect.arrayContaining(saved.eventOnlyIn))
+      expect(candidate.eventOnlyIn).toContain('go')
+      expect(candidate.transferOnlyIn).toEqual(saved.transferOnlyIn)
+      expect(candidate.storableIn).toEqual(saved.storableIn)
+      expect(saved.eventOnlyIn).toContain('go')
+      expect(saved.obtainableIn).not.toContain('go')
+    },
+  )
+
+  it('does not let an event rule establish release or override uncertain source evidence', () => {
+    const released = release(image('GO0807.png'), 'May 29, 2026')
+    expect(
+      resolveGoAvailability(
+        parseGoAvailability(page(released), '2026-05-28'),
+        pokemon('zeraora'),
+        [],
+      )?.status,
+    ).toBe('unavailable')
+    expect(resolve(page(release(image('GO0807.png'), 'TBA 2026')), 'zeraora')?.status).toBe(
+      'unavailable',
+    )
+    expect(resolve(page(release(image('GO0807.png'), 'Unknown date')), 'zeraora')?.status).toBe(
+      'unknown',
+    )
+    expect(resolve(page(release(image('GO0001.png'))), 'zeraora')).toBeUndefined()
+    const explicitlyUnreleased = `<h3>Unreleased Pokémon</h3><p>The following species have yet to become available:</p>${unreleasedTable(image('Menu_HOME_0807.png'))}`
+    expect(
+      resolve(page(release(image('GO0001.png')), explicitlyUnreleased), 'zeraora')?.status,
+    ).toBe('unavailable')
+    expect(resolve(page(released, explicitlyUnreleased), 'zeraora')?.status).toBe('unknown')
+    expect(resolve(page(released), 'zeraora-mega')).toBeUndefined()
+    expect(resolve(page(release(image('GO0893.png'))), 'zarude-dada')).toBeUndefined()
+  })
+
+  it.each([
+    ['mew', 'GO0151.png'],
+    ['celebi', 'GO0251.png'],
+    ['jirachi', 'GO0385.png'],
+    ['shaymin', 'GO0492.png'],
+    ['shaymin-sky', 'GO0492S.png'],
+    ['victini', 'GO0494.png'],
+    ['keldeo', 'GO0647.png'],
+    ['keldeo-resolute', 'GO0647R.png'],
+    ['meloetta', 'GO0648.png'],
+    ['diancie', 'GO0719.png'],
+    ['diancie-mega', 'GO0719M.png'],
+    ['hoopa', 'GO0720.png'],
+    ['hoopa-unbound', 'GO0720U.png'],
+    ['volcanion', 'GO0721.png'],
+    ['marshadow', 'GO0802.png'],
+    ['solgaleo', 'GO0791.png'],
+    ['lunala', 'GO0792.png'],
+    ['necrozma-dusk-mane', 'GO0800DM.png'],
+    ['necrozma-dawn-wings', 'GO0800DW.png'],
+    ['kyurem-black', 'GO0646B.png'],
+    ['kyurem-white', 'GO0646W.png'],
+    ['zacian-crowned', 'GO0888C.png'],
+    ['zamazenta-crowned', 'GO0889C.png'],
+    ['enamorus-therian', 'GO0905T.png'],
+    ['mewtwo-mega-x', 'GO0150MX.png'],
+    ['mewtwo-mega-y', 'GO0150MY.png'],
+    ['rayquaza-mega', 'GO0384M.png'],
+    ['zygarde-10', 'GO0718T.png'],
+    ['zygarde', 'GO0718.png'],
+    ['zygarde-complete', 'GO0718C.png'],
+  ])('keeps %s ordinary despite an event debut or an event-only relative', (id, sprite) => {
+    expect(
+      resolve(page(release(image(sprite), 'Jul 11, 2026', 'GO Fest event debut.')), id)?.status,
+    ).toBe('obtainableIn')
+    expect(pokemon(id).obtainableIn).toContain('go')
+    expect(pokemon(id).eventOnlyIn).not.toContain('go')
+  })
+
   it('aliases only the researched shared GO identities, while exact entries take precedence', () => {
     const parsed = parse(
       page(release(image('GO0716.png', 'Xerneas') + image('GO0849L.png', 'Toxtricity'))),
@@ -277,8 +386,8 @@ describe('GO availability lists', () => {
     expect(resolve(html, 'toxtricity-low-key')?.status).toBe('obtainableIn')
     expect(resolve(html, 'toxtricity-gmax')?.status).toBe('obtainableIn')
     expect(resolve(html, 'toxtricity-low-key-gmax')?.status).toBe('obtainableIn')
-    expect(resolve(html, 'urshifu')?.status).toBe('obtainableIn')
-    expect(resolve(html, 'urshifu-rapid-strike')?.status).toBe('obtainableIn')
+    expect(resolve(html, 'urshifu')?.status).toBe('eventOnlyIn')
+    expect(resolve(html, 'urshifu-rapid-strike')?.status).toBe('eventOnlyIn')
     expect(resolve(html, 'urshifu-gmax')?.status).toBe('unavailable')
     expect(resolve(html, 'urshifu-rapid-strike-gmax')?.status).toBe('unavailable')
   })

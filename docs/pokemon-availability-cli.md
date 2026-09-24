@@ -90,11 +90,16 @@ tests reject both overlaps. `storableIn` is independent and may overlap any acqu
 | `PW`, `PWE`                | `transferOnlyIn`       |
 
 Pokéwalker is external to HeartGold/SoulSilver. The GO page determines GO availability
-independently. GO release tables establish historical availability (`obtainableIn`), not current
-spawns or exclusive events. Explicit unreleased entries and future/TBA releases are unavailable;
-unlisted forms remain unverified unless an explicit inheritance rule applies. Image filenames
-distinguish forms whose visible label contains only the species name. Contradictory
-released/unreleased entries retain existing data with warnings.
+independently. GO release tables establish historical release, not current spawns or event
+exclusivity. Released entries default to `obtainableIn`; researched exact-record exceptions in
+`go-event-availability.ts` use `eventOnlyIn` for limited-claim research/pass routes and their
+dependent evolutions. See the
+[GO legendary/mythical audit](audits/go-legendary-mythical-availability.md) for sources and retained
+permanent-research/recurring-raid routes. These rules add no runtime fetches, appear with a rule
+basis and their own source link, and cannot establish release by themselves. Explicit unreleased
+entries and future/TBA releases are unavailable; unlisted forms remain unverified unless an explicit
+inheritance rule applies. Image filenames distinguish forms whose visible label contains only the
+species name. Contradictory released/unreleased entries retain existing data with warnings.
 
 The main source does not enumerate every nonregional alternate form. Unmatched forms retain the
 existing classification and emit warnings; a species row is not silently treated as proof for an
