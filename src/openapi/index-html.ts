@@ -81,72 +81,102 @@ export function renderOpenApiIndexHtml() {
       }
 
       .swagger-ui .topbar {
-        background: #172125;
-        border-bottom: 1px solid #263338;
-        padding: 12px 0;
-      }
-
-      .swagger-ui .topbar .wrapper {
-        padding: 0 24px;
-      }
-
-      .swagger-ui .topbar .topbar-wrapper {
-        align-items: center;
-        display: flex;
-        max-width: none;
-      }
-
-      .swagger-ui .topbar .download-url-wrapper {
         display: none;
       }
 
-      .swagger-ui .topbar .topbar-wrapper .link {
+      .docs-header {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px 24px;
+        background: #172125;
+        border-bottom: 1px solid #263338;
+        padding: 12px 24px;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .docs-brand {
         align-items: center;
         display: inline-flex;
         gap: 12px;
-        max-width: none;
+        color: #f6fbf8;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-decoration: none;
       }
 
-      .swagger-ui .topbar .topbar-wrapper .link svg,
-      .swagger-ui .topbar .topbar-wrapper .link span {
-        display: none;
-      }
-
-      .swagger-ui .topbar .topbar-wrapper .link::before {
-        background-image: url("https://avatars.githubusercontent.com/u/186428333?s=200&v=4");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: "";
-        display: block;
+      .docs-brand img {
         flex: 0 0 auto;
         height: 42px;
         width: 42px;
       }
 
-      .swagger-ui .topbar .topbar-wrapper .link::after {
-        color: #f6fbf8;
-        content: "${brandName}";
-        display: block;
-        font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 1.1;
-        white-space: pre;
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-left: auto;
       }
 
-      .swagger-ui .topbar .topbar-wrapper .link::first-line {
-        font-size: 20px;
+      .project-links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-height: 36px;
+        box-sizing: border-box;
+        padding: 7px 12px;
+        border-radius: 8px;
+        color: #dce5e9;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
       }
 
-      .swagger-ui .topbar .topbar-wrapper .link::after {
-        text-transform: none;
+      .project-links a:hover {
+        background: #28383f;
+        color: #ffffff;
+      }
+
+      .docs-header a:focus-visible {
+        outline: 2px solid #92d5e4;
+        outline-offset: 2px;
+      }
+
+      .project-links svg {
+        flex: 0 0 auto;
+        fill: currentColor;
+      }
+
+      @media (max-width: 600px) {
+        .docs-header { padding: 12px 16px; }
+        .project-links { margin-left: 0; }
       }
     </style>
   </head>
   <body>
     <nav id="version-docs" aria-label="Dataset version documentation" hidden></nav>
+    <header class="docs-header">
+      <a class="docs-brand" href="./">
+        <img src="https://avatars.githubusercontent.com/u/186428333?s=200&v=4" alt="" width="42" height="42" />
+        <span>${brandName}</span>
+      </a>
+      <nav class="project-links" aria-label="Project links">
+        <a href="https://www.npmjs.com/package/@pokepc/dataset">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="14" viewBox="0 0 18 7" aria-hidden="true" focusable="false">
+            <path d="M0 0h18v6H9v1H5V6H0V0zm1 1v4h2V2h1v3h1V1H1zm5 0v5h2V5h2V1H6zm2 1h1v2H8V2zm3-1v4h2V2h1v3h1V2h1v3h1V1h-6z" fill-rule="evenodd" />
+          </svg>
+          <span>@pokepc/dataset</span>
+        </a>
+        <a href="https://github.com/pokepc/dataset">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 .297C5.37.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.043-1.61-4.043-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.776.418-1.305.762-1.605-2.665-.3-5.467-1.334-5.467-5.931 0-1.31.467-2.381 1.235-3.221-.135-.303-.54-1.524.105-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3.003-.404c1.02.005 2.047.138 3.003.404 2.28-1.552 3.285-1.23 3.285-1.23.645 1.652.24 2.873.12 3.176.765.84 1.23 1.911 1.23 3.221 0 4.609-2.805 5.625-5.475 5.921.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </nav>
+    </header>
     <div id="swagger-ui"></div>
     <script src="https://unpkg.com/swagger-ui-dist@${swaggerUiVersion}/swagger-ui-bundle.js" crossorigin></script>
     <script src="https://unpkg.com/swagger-ui-dist@${swaggerUiVersion}/swagger-ui-standalone-preset.js" crossorigin></script>
