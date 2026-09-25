@@ -1,4 +1,4 @@
-# Pokémon Box RS and My Pokémon Ranch
+# Pokémon Box RS, My Pokémon Ranch and Pokémon Bank
 
 Reviewed 2026-09-25. IDs are `boxrs` and `ranch`, both `series: storage`, following Bank/HOME. The
 game index uses their first release dates: 2003-05-30 and 2008-03-25 respectively.
@@ -54,6 +54,28 @@ The
 confirms exact forms/genders, notably East Sea Shellos and female Combee, Pachirisu and Finneon. The
 five guest rewards are female Octillery, Flygon, Meowth, Slaking and Metagross. Hayley's untradeable
 residents do not count as ordinary acquisition.
+
+## Bank acquisition completeness
+
+Bank's original integration populated `storableIn` without any acquisition fields, leaving consumers
+that use `obtainableIn` / `transferOnlyIn` / `eventOnlyIn` unable to classify its supported Pokémon.
+
+[Bank's compatibility and restrictions](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Bank#Restrictions)
+establish transfers from the compatible Gen VI/VII games and Poké Transporter. The CLI now models
+that route independently of saved arrays, with an explicit whitelist of persistent alternate forms.
+It excludes held-item forms, battle transformations, fusions, Furfrou trims, Sky Shaymin, and forms
+without a 3DS route. Hoopa Unbound from Gen VII remains supported. Meltan/Melmetal and Original
+Color Magearna are excluded despite their species-generation metadata. The `eevee-f` tail appearance
+also postdates Bank's games; its old Bank storage entry was removed without changing other games.
+
+Of the 1,032 supported exact records, 1,019 use `transferOnlyIn`. The other 13 use `eventOnlyIn` for
+[Bank's historical gift distributions](https://www.serebii.net/bank/events.shtml): Celebi; Meganium
+(male and female records), Typhlosion and Feraligatr; Regirock, Regice and Registeel; Decidueye,
+Incineroar and Primarina; Oranguru and Passimian. These time-limited Bank rewards are delivered into
+the connected games through Pokémon Link or Mystery Gift. They are historical service-origin events,
+not ordinary native encounters; their availability is retained after the distribution windows close.
+The female Meganium record is included because the gift's gender is random. No Hisuian form or
+pre-evolution inherits one of these rewards. The Mewnium Z distribution supplies an item, not Mew.
 
 ## Maintenance and artwork
 

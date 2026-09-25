@@ -100,7 +100,15 @@ Pokémon Bank (`bank`) stores compatible Gen I–VII records reachable through t
 Transporter. Exclude battle-only forms, fusions, held-item forms, Furfrou trims and Sky Shaymin.
 Hoopa Unbound can retain its form when deposited from Gen VII. Meltan, Melmetal, Original Color
 Magearna and later-generation forms have no legitimate route into Bank; HOME transfers are one-way.
-See
+Compatible records are `transferOnlyIn`, except Bank's historical gift distributions, which use
+`eventOnlyIn`: Celebi, Meganium (both gender records), Typhlosion, Feraligatr, Regirock, Regice,
+Registeel, Decidueye, Incineroar, Primarina, Oranguru and Passimian. These gifts originate in Bank
+and are delivered through Pokémon Link or Mystery Gift in a connected game. Their expired
+distribution windows do not erase historical availability. Bank has no ordinary native acquisition
+route. The later female Eevee tail appearance is excluded; female Eevee can be deposited under the
+ordinary Eevee appearance. The CLI establishes Bank compatibility independently of saved
+acquisition/storage fields and keeps unsupported forms unavailable. See the
+[storage-game audit](audits/storage-games.md). See
 [Bank's compatibility and restrictions](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Bank)
 and
 [Hoopa's form behavior](<https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)#Form_data>).

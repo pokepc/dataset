@@ -144,10 +144,11 @@ describe('explicit base-form inheritance', () => {
     const heldItem = ['arceus', 'silvally', 'genesect'].includes(baseId)
     expect(candidate.transferOnlyIn.includes('home')).toBe(!heldItem)
     expect(candidate.obtainableIn).not.toContain('home')
-    const storage = heldItem ? ['xy-x', 'champions'] : base.storableIn
+    const storage = heldItem ? ['xy-x', 'champions'] : base.storableIn.filter((id) => id !== 'bank')
+    const bankStorage = !heldItem && baseId !== 'alcremie' ? ['bank'] : []
     const serviceStorage =
       id === 'unown-z' ? ['boxrs', 'ranch'] : id === 'arceus-fire' ? ['ranch'] : []
-    expect(candidate.storableIn).toEqual([...serviceStorage, ...storage])
+    expect(candidate.storableIn).toEqual([...serviceStorage, ...bankStorage, ...storage])
     expect(report.rows.find((row) => row.game.id === 'xy-x')).toMatchObject({
       basis: 'rule',
       storable: true,
@@ -192,7 +193,7 @@ describe('explicit base-form inheritance', () => {
         meteor,
         selected,
       ])
-      expect(availabilityJson(report).storableIn).toEqual(core.storableIn)
+      expect(availabilityJson(report).storableIn).toEqual(['bank', ...core.storableIn])
       expect(report.rows.find((row) => row.game.id === 'sm-s')).toMatchObject({
         basis: 'rule',
         status: 'transferOnlyIn',
@@ -260,7 +261,7 @@ describe('explicit base-form inheritance', () => {
       expect(candidate[field].filter((game) => ['rs-r', 'dp-d', 'dp-p'].includes(game))).toEqual([])
     expect(candidate.obtainableIn).toContain('pt')
     expect(candidate.transferOnlyIn).toContain('hgss-hg')
-    expect(candidate.storableIn).toEqual(['ranch', 'pt', 'hgss-hg', 'home'])
+    expect(candidate.storableIn).toEqual(['ranch', 'pt', 'hgss-hg', 'bank', 'home'])
   })
 
   it.each(['rotom-heat', 'rotom-wash', 'rotom-frost', 'rotom-fan', 'rotom-mow'])(
@@ -405,10 +406,13 @@ describe('explicit base-form inheritance', () => {
     const selected = { ...pokemon(id), storableIn: ['home'] }
     const main = source(selected)
     const serviceStorage = id === 'mawile' ? ['boxrs', 'ranch'] : id === 'arceus' ? ['ranch'] : []
+    const bankStorage = ['arceus', 'silvally', 'genesect', 'mawile', 'hoopa-unbound'].includes(id)
+      ? ['bank']
+      : []
     expect(
       availabilityJson(createAvailabilityReport({ main, gameIds: main.gameIds }, selected, games))
         .storableIn,
-    ).toEqual([...serviceStorage, 'home'])
+    ).toEqual([...serviceStorage, ...bankStorage, 'home'])
   })
 
   it('does not invent evidence from missing base records or blank source cells', () => {

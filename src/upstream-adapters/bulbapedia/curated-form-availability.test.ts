@@ -184,9 +184,10 @@ describe('researched main-game forms', () => {
       games,
       species,
     )
-    expect(availabilityJson(result).storableIn).toEqual(['sm-s', 'bank', 'home', 'go'])
+    expect(availabilityJson(result).storableIn).toEqual(['bank', 'sm-s', 'home', 'go'])
     expect(result.rows.find((row) => row.game.id === 'bank')).toMatchObject({
-      status: 'unknown',
+      status: 'transferOnlyIn',
+      basis: 'rule',
       storable: true,
     })
     expect(result.rows.find((row) => row.game.id === 'oras-or')).toMatchObject({
@@ -214,6 +215,7 @@ describe('researched main-game forms', () => {
       'e',
       'xd',
       'ranch',
+      'bank',
       'home',
       'go',
     ])

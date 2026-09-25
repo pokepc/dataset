@@ -1,6 +1,6 @@
 import type { AvailabilityGame, AvailabilityPokemon, LocationMethod } from './availability.ts'
 
-export const storageGameIds = ['boxrs', 'ranch'] as const
+export const storageGameIds = ['boxrs', 'ranch', 'bank'] as const
 export type StorageGameId = (typeof storageGameIds)[number]
 
 const sources = {
@@ -8,9 +8,52 @@ const sources = {
   ranch: 'https://bulbapedia.bulbagarden.net/wiki/My_Pokémon_Ranch',
   trades: 'https://bulbapedia.bulbagarden.net/wiki/Hayley%27s_trades',
   platinum: 'https://www.serebii.net/ranch/platinum.shtml',
+  bank: 'https://bulbapedia.bulbagarden.net/wiki/Pokémon_Bank',
+  bankGifts: 'https://www.serebii.net/bank/events.shtml',
 }
 
 const boxEggs = new Set(['swablu', 'zigzagoon', 'skitty', 'pichu'])
+
+// Time-limited distributions originating in Bank, received through Pokémon Link/Mystery Gift.
+// Meganium's gift can be either gender; the other rewards have no separate female record.
+const bankEventGifts = new Set([
+  'celebi',
+  'meganium',
+  'meganium-f',
+  'typhlosion',
+  'feraligatr',
+  'regirock',
+  'regice',
+  'registeel',
+  'decidueye',
+  'incineroar',
+  'primarina',
+  'oranguru',
+  'passimian',
+])
+
+// Exact persistent forms reachable through the 3DS games, rather than every Gen VII dex entry.
+const bankForms = [
+  /^(burmy|wormadam)-(sandy|trash)$/,
+  /^deoxys-(attack|defense|speed)$/,
+  /^(shellos|gastrodon)-east$/,
+  /^rotom-(heat|wash|frost|fan|mow)$/,
+  /^(tornadus|thundurus|landorus)-therian$/,
+  /^basculin-blue-striped$/,
+  /^(deerling|sawsbuck)-(summer|autumn|winter)$/,
+  /^keldeo-resolute$/,
+  /^meowstic-f$/,
+  /^(flabebe|floette|florges)-(blue|orange|white|yellow)$/,
+  /^vivillon-(archipelago|continental|elegant|fancy|garden|high-plains|jungle|marine|meadow|modern|monsoon|ocean|pokeball|polar|river|sandstorm|savanna|sun|tundra)$/,
+  /^(pumpkaboo|gourgeist)-(small|large|super)$/,
+  /^zygarde-10$/,
+  /^hoopa-unbound$/,
+  /^(rattata|raticate|raichu|sandshrew|sandslash|vulpix|ninetales|diglett|dugtrio|meowth|persian|geodude|graveler|golem|grimer|muk|exeggutor|marowak)-alola$/,
+  /^pikachu-(original|hoenn|sinnoh|unova|kalos|alola|partner)$/,
+  /^oricorio-(pom-pom|pau|sensu)$/,
+  /^lycanroc-(midnight|dusk)$/,
+  /^minior-(orange|yellow|green|blue|indigo|violet)$/,
+]
 
 // Exact rewards, including the fixed gender where the dataset has separate records.
 export const ranchTrades = new Set([
@@ -78,11 +121,16 @@ const ranchForms = new Set([
 
 /** Supported exact records, including transformations that can occur during a Ranch visit. */
 export function supportsStorageGame(pokemon: AvailabilityPokemon, gameId: StorageGameId): boolean {
-  if (pokemon.gen > (gameId === 'boxrs' ? 3 : 4) || pokemon.id === 'eevee-f') return false
+  const maxGen = gameId === 'boxrs' ? 3 : gameId === 'ranch' ? 4 : 7
+  if (pokemon.gen < 1 || pokemon.gen > maxGen || pokemon.id === 'eevee-f') return false
+  // Meltan/Melmetal are Gen VII species, but have no route into the 3DS games or Bank.
+  if (gameId === 'bank' && Number(pokemon.dexNum) > 807) return false
   if (pokemon.isDefault || (pokemon.isFemaleForm && pokemon.isCosmeticForm))
     return !pokemon.isBattleOnlyForm
   if (/^unown-(?:[b-z]|exclamation|question)$/.test(pokemon.id)) return true
   // Explicit forms avoid granting support to future forms through old species metadata.
+  if (gameId === 'bank')
+    return !pokemon.isBattleOnlyForm && bankForms.some((form) => form.test(pokemon.id))
   return gameId === 'ranch' && ranchForms.has(pokemon.id)
 }
 
@@ -100,12 +148,20 @@ export function storageGameAvailabilityRule(
   pokemon: AvailabilityPokemon,
   gameId: string,
 ): LocationMethod | undefined {
-  if (gameId !== 'boxrs' && gameId !== 'ranch') return undefined
+  if (gameId !== 'boxrs' && gameId !== 'ranch' && gameId !== 'bank') return undefined
   if (!supportsStorageGame(pokemon, gameId))
     return {
       status: 'unavailable',
       text: 'This exact form is not supported by this storage service.',
       sourceUrl: sources[gameId],
+    }
+  if (gameId === 'bank')
+    return {
+      status: bankEventGifts.has(pokemon.id) ? 'eventOnlyIn' : 'transferOnlyIn',
+      text: bankEventGifts.has(pokemon.id)
+        ? 'Historical Pokémon Bank gift distribution, received in a connected game through Pokémon Link or Mystery Gift.'
+        : 'Deposit from compatible Generation VI/VII games, or import earlier Pokémon through Poké Transporter.',
+      sourceUrl: bankEventGifts.has(pokemon.id) ? sources.bankGifts : sources.bank,
     }
   if (gameId === 'boxrs')
     return {
@@ -134,7 +190,7 @@ export function storageGameAvailabilityRule(
   }
 }
 
-/** Apply only the two researched services after any existing form inheritance/reversion rules. */
+/** Apply the researched services after any existing form inheritance/reversion rules. */
 export function storageGameStorageRule(
   pokemon: AvailabilityPokemon,
   games: AvailabilityGame[],
@@ -157,7 +213,7 @@ export function storageGameStorageRule(
     gameIds,
     note: [
       previous?.note,
-      'Box RS and Ranch use researched compatibility rules; temporary visit-only forms are not persistent storage. Other storage memberships are preserved.',
+      'Box RS, Ranch and Bank use researched compatibility rules; temporary or reverting forms are not persistent storage. Other storage memberships are preserved.',
     ]
       .filter(Boolean)
       .join(' '),

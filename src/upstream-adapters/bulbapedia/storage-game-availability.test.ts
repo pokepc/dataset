@@ -6,6 +6,7 @@ import {
   parseAvailabilityTables,
 } from './availability.ts'
 import { mainPage, goPage } from './test-fixtures.ts'
+import { storageGameIds } from './storage-game-availability.ts'
 
 const games = loadAllGames()
 const pokemon = loadAllPokemon()
@@ -79,6 +80,40 @@ describe('exact storage-service availability', () => {
     ['eevee-f', 'ranch', 'unavailable', false],
     ['victini', 'ranch', 'unavailable', false],
     ['pikachu-original', 'ranch', 'unavailable', false],
+    ['bulbasaur', 'bank', 'transferOnlyIn', true],
+    ['celebi', 'bank', 'eventOnlyIn', true],
+    ['meganium', 'bank', 'eventOnlyIn', true],
+    ['meganium-f', 'bank', 'eventOnlyIn', true],
+    ['regice', 'bank', 'eventOnlyIn', true],
+    ['primarina', 'bank', 'eventOnlyIn', true],
+    ['oranguru', 'bank', 'eventOnlyIn', true],
+    ['meowstic-f', 'bank', 'transferOnlyIn', true],
+    ['typhlosion-hisui', 'bank', 'unavailable', false],
+    ['decidueye-hisui', 'bank', 'unavailable', false],
+    ['pikachu-partner', 'bank', 'transferOnlyIn', true],
+    ['pikachu-world', 'bank', 'unavailable', false],
+    ['unown-question', 'bank', 'transferOnlyIn', true],
+    ['deoxys-attack', 'bank', 'transferOnlyIn', true],
+    ['raichu-alola', 'bank', 'transferOnlyIn', true],
+    ['rotom-wash', 'bank', 'transferOnlyIn', true],
+    ['vivillon-pokeball', 'bank', 'transferOnlyIn', true],
+    ['hoopa-unbound', 'bank', 'transferOnlyIn', true],
+    ['lycanroc-dusk', 'bank', 'transferOnlyIn', true],
+    ['minior-violet', 'bank', 'transferOnlyIn', true],
+    ['zeraora', 'bank', 'transferOnlyIn', true],
+    ['meltan', 'bank', 'unavailable', false],
+    ['melmetal', 'bank', 'unavailable', false],
+    ['magearna-original', 'bank', 'unavailable', false],
+    ['eevee-f', 'bank', 'unavailable', false],
+    ['arceus-fire', 'bank', 'unavailable', false],
+    ['giratina-origin', 'bank', 'unavailable', false],
+    ['silvally-fire', 'bank', 'unavailable', false],
+    ['genesect-burn', 'bank', 'unavailable', false],
+    ['shaymin-sky', 'bank', 'unavailable', false],
+    ['furfrou-heart', 'bank', 'unavailable', false],
+    ['kyurem-black', 'bank', 'unavailable', false],
+    ['necrozma-dusk-mane', 'bank', 'unavailable', false],
+    ['rayquaza-mega', 'bank', 'unavailable', false],
   ] as const)('%s in %s is %s, storable=%s', (id, gameId, status, storable) => {
     expect(report(id).rows.find((row) => row.game.id === gameId)).toMatchObject({
       status,
@@ -91,14 +126,44 @@ describe('exact storage-service availability', () => {
       expect(saved[field].includes(gameId)).toBe(status === field)
   })
 
-  it('preserves every saved Box/Ranch classification on a full offline review', () => {
+  it('preserves every saved storage-service classification on a full offline review', () => {
     for (const p of pokemon) {
       const candidate = availabilityJson(createAvailabilityReport(tables, p, games, pokemon))
       for (const field of ['obtainableIn', 'transferOnlyIn', 'eventOnlyIn', 'storableIn'] as const)
         expect(
-          candidate[field].filter((id) => ['boxrs', 'ranch'].includes(id)),
+          candidate[field].filter((id) => storageGameIds.some((game) => game === id)),
           `${p.id}.${field}`,
-        ).toEqual(p[field].filter((id) => ['boxrs', 'ranch'].includes(id)))
+        ).toEqual(p[field].filter((id) => storageGameIds.some((game) => game === id)))
+    }
+  })
+
+  it('resolves Bank from compatibility even when saved acquisition and storage are missing', () => {
+    const p = {
+      ...getPokemon('bulbasaur'),
+      obtainableIn: [],
+      transferOnlyIn: [],
+      eventOnlyIn: [],
+      storableIn: [],
+    }
+    const result = createAvailabilityReport(tables, p, games, pokemon)
+    expect(result.rows.find((row) => row.game.id === 'bank')).toMatchObject({
+      status: 'transferOnlyIn',
+      storable: true,
+      basis: 'rule',
+    })
+    expect(availabilityJson(result).transferOnlyIn).toContain('bank')
+  })
+
+  it('gives every Bank-compatible record one acquisition classification', () => {
+    const stored = pokemon.filter((p) => p.storableIn.includes('bank'))
+    expect(stored).toHaveLength(1032)
+    expect(stored.filter((p) => p.transferOnlyIn.includes('bank'))).toHaveLength(1019)
+    expect(stored.filter((p) => p.eventOnlyIn.includes('bank'))).toHaveLength(13)
+    for (const p of pokemon) {
+      expect(p.obtainableIn, p.id).not.toContain('bank')
+      expect(p.transferOnlyIn.includes('bank') || p.eventOnlyIn.includes('bank'), p.id).toBe(
+        p.storableIn.includes('bank'),
+      )
     }
   })
 
@@ -109,6 +174,7 @@ describe('exact storage-service availability', () => {
     )
     expect(candidate.storableIn).toEqual(['home'])
     expect(candidate.transferOnlyIn).not.toContain('ranch')
+    expect(candidate.transferOnlyIn).not.toContain('bank')
   })
 
   it('locks only Ranch native rewards, without restricting imported shinies or Box Eggs', () => {

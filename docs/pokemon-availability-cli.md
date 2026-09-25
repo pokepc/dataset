@@ -107,10 +107,12 @@ unlisted alternate form. Cosmetic female records inherit their corresponding par
 availability, except that Generation 1 is excluded from all three acquisition arrays because those
 games have no genders. Female-only species are not cosmetic female records.
 
-Box RS and Ranch have explicit acquisition and storage rules in `storage-game-availability.ts`,
-including permanent rewards, Ranch's historical event trades, and form restrictions. Main-source
-reviews apply these after storage inheritance; GO-only reviews leave them unchanged. See the
-[storage-game audit](audits/storage-games.md). Shiny locks remain outside the CLI patch fields.
+Box RS, Ranch and Bank have explicit acquisition and storage rules in
+`storage-game-availability.ts`, including permanent rewards, historical event rewards, and
+exact-form restrictions. Bank's compatible records are transfer-only except its historical gift
+distributions, which are event-only. Main-source reviews apply these after storage inheritance;
+GO-only reviews leave them unchanged. See the [storage-game audit](audits/storage-games.md). Shiny
+locks remain outside the CLI patch fields.
 
 Other games and services absent from the source tables retain saved values, copying the base's
 values for the explicitly inherited forms below. Those saved classifications never count as source
