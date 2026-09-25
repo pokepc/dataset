@@ -41,6 +41,53 @@ describe('Validate games/*.json data', () => {
     expect(ids.length).toBe(uniqueIds.size)
   })
 
+  it('supports optional lifecycle dates without dropping them during schema parsing', () => {
+    const bank = recordList.find((game) => game.id === 'bank')!
+    expect(gameSchema.parse(bank)).toMatchObject({
+      delistedDate: '2023-03-28',
+      serviceEndDate: '2027-02-26',
+    })
+    const { delistedDate, serviceEndDate, ...legacy } = bank
+    expect(gameSchema.safeParse(legacy).success).toBe(true)
+    expect(
+      gameSchema.safeParse({ ...bank, delistedDate: null, serviceEndDate: null }).success,
+    ).toBe(true)
+  })
+
+  it.each(['delistedDate', 'serviceEndDate'] as const)(
+    'validates %s as a calendar date',
+    (field) => {
+      const bank = recordList.find((game) => game.id === 'bank')!
+      for (const invalid of ['2027-02-30', '2027-13-01', '2027-2-26', '2027-02-26T03:00:00Z'])
+        expect(gameSchema.safeParse({ ...bank, [field]: invalid }).success, invalid).toBe(false)
+    },
+  )
+
+  it('keeps lifecycle dates after releaseDate and does not confuse delisting with service shutdown', () => {
+    expect(recordList.find((game) => game.id === 'ranch')).toMatchObject({
+      delistedDate: '2019-01-31',
+      serviceEndDate: null,
+    })
+    for (const id of ['home', 'boxrs'])
+      expect(recordList.find((game) => game.id === id)).toMatchObject({
+        delistedDate: null,
+        serviceEndDate: null,
+      })
+    for (const game of recordList) {
+      const keys = Object.keys(game)
+      const lifecycleKeys = ['delistedDate', 'serviceEndDate'].filter((key) => key in game)
+      if (lifecycleKeys.length)
+        expect(
+          keys.slice(
+            keys.indexOf('releaseDate') + 1,
+            keys.indexOf('releaseDate') + 1 + lifecycleKeys.length,
+          ),
+        ).toEqual(lifecycleKeys)
+      for (const field of ['delistedDate', 'serviceEndDate'] as const)
+        if (game[field]) expect(game[field]! >= game.releaseDate, `${game.id}.${field}`).toBe(true)
+    }
+  })
+
   it('should have unique nameSlugs', () => {
     const ids = recordList.map((record) => record.nameSlug)
     const uniqueIds = new Set(ids)

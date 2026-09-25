@@ -207,11 +207,13 @@ describe('researched main-game forms', () => {
     expect(availabilityJson(result).storableIn).toEqual([
       'rs-r',
       'rs-s',
+      'boxrs',
       'col',
       'frlg-fr',
       'frlg-lg',
       'e',
       'xd',
+      'ranch',
       'home',
       'go',
     ])

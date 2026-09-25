@@ -2,6 +2,7 @@ import { stripVTControlCharacters, styleText } from 'node:util'
 import { sortStringsInGivenOrder } from '../../utils/utils-internal.ts'
 import { resolveFormAvailabilityRule } from './form-availability-rules.ts'
 import { curatedFormStorageRule } from './curated-form-availability.ts'
+import { storageGameAvailabilityRule, storageGameStorageRule } from './storage-game-availability.ts'
 import {
   formAvailabilityInheritance,
   formAvailabilityRestriction,
@@ -127,7 +128,11 @@ export function createAvailabilityReport(
   const sourceBase = inheritance && siblings.find((entry) => entry.id === inheritance.sourceId)
   const main = tables.main && resolveMainAvailability(tables.main, sourceBase ?? parent ?? pokemon)
   const storageRule = tables.main
-    ? (curatedFormStorageRule(pokemon, games) ?? formStorageRule(pokemon, base, games))
+    ? storageGameStorageRule(
+        pokemon,
+        games,
+        curatedFormStorageRule(pokemon, games) ?? formStorageRule(pokemon, base, games),
+      )
     : undefined
   const storableIn = storageRule?.gameIds ?? pokemon.storableIn
   const warnings = [
@@ -146,7 +151,8 @@ export function createAvailabilityReport(
       let basis: AvailabilityRow['basis'] = 'source'
       const formRule =
         tables.main &&
-        (formAvailabilityRestriction(pokemon, game) ??
+        (storageGameAvailabilityRule(pokemon, game.id) ??
+          formAvailabilityRestriction(pokemon, game) ??
           resolveFormAvailabilityRule(tables.main, pokemon, game.id, siblings))
       if (formRule) {
         method = formRule

@@ -40,6 +40,7 @@
     "e",
     "dp-d",
     "dp-p",
+    "ranch",
     "pt",
     "hgss-hg",
     "hgss-ss",
@@ -61,6 +62,7 @@
   "storableIn": [
     "rs-r",
     "rs-s",
+    "boxrs",
     "col",
     "frlg-fr",
     "frlg-lg",
@@ -68,6 +70,7 @@
     "xd",
     "dp-d",
     "dp-p",
+    "ranch",
     "pt",
     "hgss-hg",
     "hgss-ss",
@@ -136,5 +139,6 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["col", "xd", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["boxrs", "col", "xd", "sm-s", "sm-m", "usum-us", "usum-um", "home"],
+  "shinyLockedIn": ["ranch"]
 }

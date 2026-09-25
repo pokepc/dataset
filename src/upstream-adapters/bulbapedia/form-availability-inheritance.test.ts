@@ -145,7 +145,9 @@ describe('explicit base-form inheritance', () => {
     expect(candidate.transferOnlyIn.includes('home')).toBe(!heldItem)
     expect(candidate.obtainableIn).not.toContain('home')
     const storage = heldItem ? ['xy-x', 'champions'] : base.storableIn
-    expect(candidate.storableIn).toEqual(storage)
+    const serviceStorage =
+      id === 'unown-z' ? ['boxrs', 'ranch'] : id === 'arceus-fire' ? ['ranch'] : []
+    expect(candidate.storableIn).toEqual([...serviceStorage, ...storage])
     expect(report.rows.find((row) => row.game.id === 'xy-x')).toMatchObject({
       basis: 'rule',
       storable: true,
@@ -258,7 +260,7 @@ describe('explicit base-form inheritance', () => {
       expect(candidate[field].filter((game) => ['rs-r', 'dp-d', 'dp-p'].includes(game))).toEqual([])
     expect(candidate.obtainableIn).toContain('pt')
     expect(candidate.transferOnlyIn).toContain('hgss-hg')
-    expect(candidate.storableIn).toEqual(['pt', 'hgss-hg', 'home'])
+    expect(candidate.storableIn).toEqual(['ranch', 'pt', 'hgss-hg', 'home'])
   })
 
   it.each(['rotom-heat', 'rotom-wash', 'rotom-frost', 'rotom-fan', 'rotom-mow'])(
@@ -368,7 +370,11 @@ describe('explicit base-form inheritance', () => {
       const report = createAvailabilityReport({ main, gameIds: main.gameIds }, selected, games)
       const candidate = availabilityJson(report)
       const primal = ['kyogre-primal', 'groudon-primal'].includes(id)
-      expect(candidate.storableIn).toEqual(primal ? ['go'] : ['go', 'sv-s'])
+      const serviceStorage = ['arceus-fire', 'giratina-origin'].includes(id) ? ['ranch'] : []
+      expect(candidate.storableIn).toEqual([
+        ...serviceStorage,
+        ...(primal ? ['go'] : ['go', 'sv-s']),
+      ])
       for (const game of ['bank', 'home']) {
         for (const field of fields) expect(candidate[field]).not.toContain(game)
         expect(report.rows.find((row) => row.game.id === game)).toMatchObject({
@@ -398,10 +404,11 @@ describe('explicit base-form inheritance', () => {
   ])('does not remove HOME storage from %s based on a form item or form name alone', (id) => {
     const selected = { ...pokemon(id), storableIn: ['home'] }
     const main = source(selected)
+    const serviceStorage = id === 'mawile' ? ['boxrs', 'ranch'] : id === 'arceus' ? ['ranch'] : []
     expect(
       availabilityJson(createAvailabilityReport({ main, gameIds: main.gameIds }, selected, games))
         .storableIn,
-    ).toEqual(['home'])
+    ).toEqual([...serviceStorage, 'home'])
   })
 
   it('does not invent evidence from missing base records or blank source cells', () => {

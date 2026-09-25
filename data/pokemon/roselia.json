@@ -64,6 +64,7 @@
   "storableIn": [
     "rs-r",
     "rs-s",
+    "boxrs",
     "col",
     "frlg-fr",
     "frlg-lg",
@@ -71,6 +72,7 @@
     "xd",
     "dp-d",
     "dp-p",
+    "ranch",
     "pt",
     "hgss-hg",
     "hgss-ss",
@@ -159,5 +161,16 @@
     "chs": "雄性",
     "cht": "雄性"
   },
-  "transferOnlyIn": ["col", "frlg-fr", "frlg-lg", "e", "bw-b", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": [
+    "boxrs",
+    "col",
+    "frlg-fr",
+    "frlg-lg",
+    "e",
+    "ranch",
+    "bw-b",
+    "usum-us",
+    "usum-um",
+    "home"
+  ]
 }

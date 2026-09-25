@@ -89,6 +89,9 @@ data/
 Root JSON files are collection files. `games/`, `pokedexes/`, and `pokemon/` contain one JSON file
 per entity. `indices/` controls the order of those per-entity files.
 
+The [game lifecycle reference](docs/game-lifecycle.md) defines release, digital delisting and
+required-service shutdown dates, including announced future closures.
+
 The [Pokémon availability field reference](docs/pokemon-availability.md) defines acquisition,
 storage, shiny availability, and related form fields for both maintainers and agents. The
 [evolution reference](docs/pokemon-evolutions.md) and

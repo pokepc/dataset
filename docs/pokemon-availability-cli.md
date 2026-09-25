@@ -107,10 +107,15 @@ unlisted alternate form. Cosmetic female records inherit their corresponding par
 availability, except that Generation 1 is excluded from all three acquisition arrays because those
 games have no genders. Female-only species are not cosmetic female records.
 
-Games and services absent from the source tables retain saved values, copying the base's values for
-the explicitly inherited forms below. Those saved classifications never count as source evidence.
-Champions is an explicit exception: native recruits cannot be exported, so `obtainableIn` always
-excludes it, even for saved or inherited data. A verified visitor route can establish
+Box RS and Ranch have explicit acquisition and storage rules in `storage-game-availability.ts`,
+including permanent rewards, Ranch's historical event trades, and form restrictions. Main-source
+reviews apply these after storage inheritance; GO-only reviews leave them unchanged. See the
+[storage-game audit](audits/storage-games.md). Shiny locks remain outside the CLI patch fields.
+
+Other games and services absent from the source tables retain saved values, copying the base's
+values for the explicitly inherited forms below. Those saved classifications never count as source
+evidence. Champions is an explicit exception: native recruits cannot be exported, so `obtainableIn`
+always excludes it, even for saved or inherited data. A verified visitor route can establish
 `transferOnlyIn`; otherwise visitor eligibility remains unknown. This policy does not alter storage.
 Storage membership is never inferred from acquisition codes. Explicit HOME and exclusive-game rules
 can establish additional cells. An empty source cell is inconclusive and retains that game with a

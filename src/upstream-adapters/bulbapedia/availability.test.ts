@@ -174,8 +174,13 @@ describe('main table parsing', () => {
     }
     expect(
       createAvailabilityReport(tables, future, games)
-        .rows.filter((entry) => entry.game.id !== 'go')
+        .rows.filter((entry) => !['go', 'boxrs', 'ranch'].includes(entry.game.id))
         .every((entry) => entry.basis === 'dataset' || entry.basis === 'unknown'),
+    ).toBe(true)
+    expect(
+      createAvailabilityReport(tables, future, games)
+        .rows.filter((entry) => ['boxrs', 'ranch'].includes(entry.game.id))
+        .every((entry) => entry.status === 'unavailable' && !entry.storable),
     ).toBe(true)
   })
   it('retains blank cells and their existing values', () => {
@@ -241,7 +246,9 @@ describe('shared reports', () => {
       expect(candidate.obtainableIn).not.toContain('champions')
       expect(candidate.obtainableIn).toContain('home')
       expect(candidate.transferOnlyIn).not.toContain('champions')
-      expect(candidate.storableIn).toEqual(['champions'])
+      expect(candidate.storableIn).toEqual(
+        parsed.main ? ['boxrs', 'ranch', 'champions'] : ['champions'],
+      )
       expect(result.warnings.join(' ')).toContain('champions')
     }
     const visiting = { ...selected, obtainableIn: [], transferOnlyIn: ['champions'] }
@@ -281,7 +288,7 @@ describe('shared reports', () => {
     selected.obtainableIn = ['home', 'gs-g']
     selected.eventOnlyIn = ['gs-g']
     const result = availabilityJson(createAvailabilityReport(tables, selected, games))
-    expect(result.storableIn).toEqual(['home', 'rb-r'])
+    expect(result.storableIn).toEqual(['boxrs', 'ranch', 'home', 'rb-r'])
     expect(result.obtainableIn).toContain('home')
     expect(result.obtainableIn).not.toContain('gs-g')
     expect(result.eventOnlyIn).not.toContain('gs-g')

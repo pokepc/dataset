@@ -30,6 +30,18 @@ describe('static OpenAPI document', () => {
     expect(document.components?.schemas?.ErrorResponse).toBeDefined()
   })
 
+  it('exposes lifecycle dates as optional Game metadata', () => {
+    const game = document.components?.schemas?.Game
+    for (const field of ['delistedDate', 'serviceEndDate']) {
+      expect(game).toHaveProperty(`properties.${field}`)
+      expect(game).toHaveProperty(
+        `properties.${field}.description`,
+        expect.stringContaining('Announced'),
+      )
+      expect(game).toHaveProperty('required', expect.not.arrayContaining([field]))
+    }
+  })
+
   it('exposes optional legacy ability IDs in the public Pokemon schema', () => {
     const pokemon = document.components?.schemas?.Pokemon
     expect(pokemon).toHaveProperty('properties.legacyAbilities.type', 'array')

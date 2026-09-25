@@ -135,6 +135,18 @@ export const gameSchema = base.entity.extend({
   gameSet: common.slug.nullable(),
   gameSuperSet: common.slug.nullable(),
   releaseDate: common.dateDay,
+  delistedDate: z.iso
+    .date()
+    .nullish()
+    .describe(
+      'Announced end of new digital purchases/downloads (YYYY-MM-DD, UTC when a cutoff time is known). Does not end redownloads or offline play. Null/omitted means no applicable date recorded.',
+    ),
+  serviceEndDate: z.iso
+    .date()
+    .nullish()
+    .describe(
+      'Announced shutdown of the online service required to use the game (YYYY-MM-DD, UTC when a cutoff time is known). May be in the future. Excludes storefront closure and optional online features. Null/omitted means no applicable date recorded.',
+    ),
   region: common.slug.nullable(),
   originMark: common.slug.nullable(),
   pokedexes: z.array(common.slug),

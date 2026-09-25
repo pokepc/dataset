@@ -76,6 +76,26 @@ policy only when export behavior changes, with updated evidence and tests.
 
 ### Forms and storage
 
+Pokémon Box Ruby & Sapphire (`boxrs`) stores Gen I–III Pokémon from R/S/E/FR/LG in 25 boxes of 60.
+All 28 Unown forms are supported; only Normal Deoxys persists in its Gen III storage format. Its
+four permanent bonus Eggs are ordinary acquisition sources. The embedded R/S player uses the
+connected cartridge and does not make all R/S encounters native Box acquisitions.
+
+My Pokémon Ranch (`ranch`) represents its latest released support: the **Japan-only Platinum
+update**, with 1,500 places (modeled as one continuous storage area). International versions have
+1,000 places and connect only to Diamond/Pearl. Deposits can only return to their original save;
+Ranch is not a trade bridge. The update retains Rotom appliances and held-item Origin Giratina. Sky
+Shaymin lasts only for the current visit after touching the Gracidea toy, and Sunshine Cherrim is a
+time-dependent display: both have transfer-dependent form availability, not persistent `storableIn`.
+Castform's weather forms are unsupported. Later forms, including Fairy Arceus and the later female
+Eevee tail appearance, are excluded.
+
+Hayley's 22 permanent trades use exact form/gender records in `obtainableIn`, with `ranch` in
+`shinyLockedIn`. Her other residents cannot be exported and do not establish ordinary acquisition.
+The five historical guest-Mii trades are `eventOnlyIn`. Other compatible records are
+`transferOnlyIn`. See the [Box/Ranch audit](audits/storage-games.md) for sources and the distinction
+between their collection checklists and persistent storage.
+
 Pokémon Bank (`bank`) stores compatible Gen I–VII records reachable through the 3DS games or Poké
 Transporter. Exclude battle-only forms, fusions, held-item forms, Furfrou trims and Sky Shaymin.
 Hoopa Unbound can retain its form when deposited from Gen VII. Meltan, Melmetal, Original Color

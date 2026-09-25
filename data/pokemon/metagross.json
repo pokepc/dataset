@@ -64,10 +64,11 @@
     "sv-v",
     "lza"
   ],
-  "eventOnlyIn": [],
+  "eventOnlyIn": ["ranch"],
   "storableIn": [
     "rs-r",
     "rs-s",
+    "boxrs",
     "col",
     "frlg-fr",
     "frlg-lg",
@@ -75,6 +76,7 @@
     "xd",
     "dp-d",
     "dp-p",
+    "ranch",
     "pt",
     "hgss-hg",
     "hgss-ss",
@@ -155,5 +157,5 @@
   },
   "speciesNames": {},
   "formNames": {},
-  "transferOnlyIn": ["frlg-fr", "frlg-lg", "xd", "home"]
+  "transferOnlyIn": ["boxrs", "frlg-fr", "frlg-lg", "xd", "home"]
 }
