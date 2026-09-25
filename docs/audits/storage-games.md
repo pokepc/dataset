@@ -64,7 +64,7 @@ focused regression suite checks exact forms, rewards, chronological registration
 service classifications against an offline CLI review.
 
 Square tiles, 128 × 128 PNG icons, original images and source/prompt manifests are collected in the
-ignored local directory `.local/imgs/`. The Box tile and both icons use AI-generated/refined artwork;
-the Ranch tile remains the sourced original because its AI refinement was rejected by the image tool.
-They are not published by the dataset package. The CDN targets are
+ignored local directory `.local/imgs/`. The Box tile and both icons use AI-generated/refined
+artwork; the Ranch tile remains the sourced original because its AI refinement was rejected by the
+image tool. They are not published by the dataset package. The CDN targets are
 `images/games/gametiles/{boxrs,ranch}.webp` and `images/games/icons/{boxrs,ranch}.png`.
