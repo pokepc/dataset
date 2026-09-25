@@ -103,7 +103,7 @@ export const gameFeaturesSchema = z.object({
   nature: z.boolean(),
   ribbons: z.boolean(), // Since gen 3
   marks: z.boolean(), // Since gen 8
-  markings: z.boolean(), // Since gen 3 (circle, triangle, square, heart, star, diamond)
+  markings: z.boolean(), // Per-Pokemon categorization: markings in core games, tags in GO
   shadow: z.boolean(), // Colosseum, XD and GO
   ball: z.boolean(), // Caught balls, since gen 4
   mega: z.boolean(),
@@ -113,7 +113,7 @@ export const gameFeaturesSchema = z.object({
   tera: z.boolean(),
   plusmvs: z.boolean(), // mastered moves, LA and LZA only
   mints: z.boolean(),
-  sizes: z.boolean(), // For some games like Let's GO, Legends, etc.
+  sizes: z.boolean(), // Individual Pokemon sizes, as in GO and Legends: Z-A
   abilities: z.boolean(), // gen 1-2 and Legends games have no abilities
 })
 export const onlineFeaturesSchema = z.object({

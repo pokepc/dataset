@@ -270,7 +270,7 @@ declare global {
     shiny?: boolean | null
     origMark?: string | null
     origGame?: string | null
-    size?: 'xs' | 's' | 'm' | 'l' | 'xl' | null
+    size?: Pkds.PokemonSize | null
     [key: string]: any
   }
 
