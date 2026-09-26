@@ -127,7 +127,7 @@ export const statIds = ['hp', 'atk', 'def', 'spa', 'spd', 'spe', 'acc', 'eva'] a
 export const moveCategory = ['physical', 'special', 'status'] as const
 export const genders = ['m', 'f'] as const // m: male, f: female, null/undefined: genderless
 export const titleTypes = ['ribbon', 'mark', 'custom'] as const
-export const pokemonSizes = ['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl'] as const
+export const pokemonSizes = ['xxxs', 'xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'] as const
 
 /*
 In most core series games:

@@ -219,7 +219,7 @@ export type StatId = (typeof statIds)[number]
 export const titleTypes = ['ribbon', 'mark', 'custom'] as const
 export type TitleType = (typeof titleTypes)[number]
 
-export const pokemonSizes = ['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl'] as const
+export const pokemonSizes = ['xxxs', 'xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'] as const
 export type PokemonSize = (typeof pokemonSizes)[number]
 
 export const genders = ['m', 'f'] as const // m: male, f: female, null/undefined: genderless
