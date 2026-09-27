@@ -150,7 +150,7 @@ export const gameSchema = base.entity.extend({
   region: common.slug.nullable(),
   originMark: common.slug.nullable(),
   pokedexes: z.array(common.slug),
-  maxBoxes: common.int,
+  maxBoxes: common.int, // PC boxes, plus extra boxes rounding up any side storage (XD: 8 + 2 for the 45-slot Purify Chamber)
   maxBoxSize: common.int,
   maxPartySize: common.int, // Pokemon carried at once, 0 when the game has no party
   maxBattleTeams: common.int, // registrable battle teams, 0 when unsupported (the gen 5-6 Battle Box counts as 1)
