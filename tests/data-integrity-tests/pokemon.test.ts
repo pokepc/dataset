@@ -99,6 +99,16 @@ describe('Validate pokemon/*.json data references', () => {
     }
   })
 
+  it('should include the form name in the full name of every named form', () => {
+    for (const record of recordList.filter((record) => record.isForm)) {
+      for (const lang of Object.keys(record.names) as Array<keyof typeof record.names>) {
+        const speciesName = record.speciesNames[lang]
+        if (!record.formNames[lang] || !speciesName) continue
+        expect(record.names[lang], `${record.id}: ${lang}`).not.toBe(speciesName)
+      }
+    }
+  })
+
   it.each(recordList.map((record) => [record.id, record]))(
     'should have valid abilities in pokemon %s',
     (_recordId, record) => {
