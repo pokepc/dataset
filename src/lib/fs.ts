@@ -1,3 +1,4 @@
+import type { CodeMapKind } from './codes'
 import { MemoryCache } from '../utils/memory-cache'
 import { resolveDatasetDirectory } from '../utils/dataset-directory'
 import { arrayUnique } from '../utils/utils-internal'
@@ -289,4 +290,18 @@ export function loadAllLanguages(): Pkds.Language[] {
 
 export function loadAllGenerations(): Pkds.Generation[] {
   return generationsFs.all()
+}
+
+/** The code map of a kind, or an empty map when it has not been created yet. */
+export function loadCodeMap(kind: CodeMapKind): Pkds.CodeMapEntry[] {
+  const file = `codes/${kind}.json`
+  return fs.existsSync(absDatasetFile(file)) ? readDatasetFile<Pkds.CodeMapEntry[]>(file) : []
+}
+
+/** The ids a code map must cover, in the order new codes are assigned. */
+export function loadCodeMapLiveIds(kind: CodeMapKind): string[] {
+  if (kind === 'pokemon') {
+    return readDatasetFile<string[]>('indices/pokemon.json')
+  }
+  return readDatasetFile<Array<{ id: string }>>(`${kind}.json`).map((record) => record.id)
 }

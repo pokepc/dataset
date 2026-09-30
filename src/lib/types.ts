@@ -33,6 +33,7 @@ import type {
   boxPresetBoxSchema,
   boxPresetSchema,
   characterSchema,
+  codeMapEntrySchema,
   colorSchema,
   gameFeaturesSchema,
   gameSchema,
@@ -118,6 +119,7 @@ declare global {
      */
     export type LanguageInGameCode = (typeof languageInGameCodes)[number]
     export type Mark = z.infer<typeof markSchema>
+    export type CodeMapEntry = z.infer<typeof codeMapEntrySchema>
     export type Ribbon = z.infer<typeof ribbonSchema>
     export type RibbonCategory = (typeof ribbonCategory)[number]
     export type OriginMark = z.infer<typeof originMarkSchema>

@@ -197,6 +197,22 @@ export const ribbonSchema = base.entityWithGenAndDescs.extend({
   category: z.enum(ribbonCategory),
   // sprite: z.string(),
 })
+/**
+ * One entry of an append-only code map (data/codes). A code is a stable small integer that
+ * consumers may store instead of the id, so a released code never changes meaning.
+ */
+export const codeMapEntrySchema = z
+  .object({
+    id: common.slug,
+    // Fits a PostgreSQL smallint and doubles as a bit position in registration bitmaps.
+    code: z.number().int().min(0).max(32767),
+    // The id no longer exists in the dataset; its code stays reserved forever.
+    retired: z.literal(true).optional(),
+    // The live id that replaces a retired one, when there is one.
+    replacedBy: common.slug.optional(),
+  })
+  .strict()
+export const codeMapSchema = z.array(codeMapEntrySchema)
 export const originMarkSchema = base.entity
 export const regionSchema = base.entity
 export const locationSchema = z

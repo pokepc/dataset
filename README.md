@@ -76,6 +76,7 @@ agents, it unlocks many extras:
 ```text
 data/
   abilities.json
+  codes/
   games/
   indices/
   metadata/
@@ -87,7 +88,9 @@ data/
 ```
 
 Root JSON files are collection files. `games/`, `pokedexes/`, and `pokemon/` contain one JSON file
-per entity. `indices/` controls the order of those per-entity files.
+per entity. `indices/` controls the order of those per-entity files. `codes/` holds append-only
+numeric codes for Pokémon, ribbons, marks and moves; read the [code map rules](docs/codes.md) before
+adding, renaming or removing any of them.
 
 The [game lifecycle reference](docs/game-lifecycle.md) defines release, digital delisting and
 required-service shutdown dates, including announced future closures.
