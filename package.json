@@ -34,6 +34,9 @@
   },
   "scripts": {
     "dev": "concurrently --kill-others --names editor,openapi \"pnpm dev:editor\" \"pnpm dev:openapi\"",
+    "backlog": "backlog",
+    "backlog:browser": "backlog browser --no-open",
+    "backlog:ready": "backlog task list --status \"To Do\" --unassigned --ready --plain",
     "build": "pnpm build:next && pnpm build:lib && pnpm format",
     "build:openapi": "node src/openapi/build.ts",
     "build:pages": "pnpm build:next && node src/openapi/build.ts",
