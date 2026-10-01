@@ -40,16 +40,16 @@ bun .claude/skills/add-pokedex/scripts/parse-bulbapedia-dex.ts \
 Read the report before going further. It gives entry count, local-number count, gaps in numbering
 and every form slot, plus four things that need your attention:
 
-- **UNRESOLVED** — a row whose form label matched no `formNames.eng` for that national number, or
-  matched more than one. The script lists the candidates and exits non-zero. It never guesses.
-  Usually a genuinely new form, a label wording change on the wiki, or a real ambiguity: Urshifu
-  carries `"Gigantamax Form"` on both `urshifu-gmax` and `urshifu-rapid-strike-gmax`, which no label
-  alone can separate.
+- **UNRESOLVED** — a row whose form label matched no English `formName`
+  (`data/i18n/eng/pokemon.json`) for that national number, or matched more than one. The script
+  lists the candidates and exits non-zero. It never guesses. Usually a genuinely new form, a label
+  wording change on the wiki, or a real ambiguity: Urshifu carries `"Gigantamax Form"` on both
+  `urshifu-gmax` and `urshifu-rapid-strike-gmax`, which no label alone can separate.
 - **NEEDS HUMAN INPUT** — a game-exclusive form (a game-scoped sprite template such as
   `MSP/Pokopia`; `MSP/8` is just generation-scoped and ordinary). These have no pid of their own and
   become `meta` entries. The dex page gives only the form label ("Mossy"), not the in-game name
-  ("Mosslax"), so you must fill `meta.names.eng` and `meta.imgNid` from the game or the species' own
-  article. The script emits a `TODO` scaffold.
+  ("Mosslax"), so you must fill `meta.id`, `meta.imgNid` and the entry's text (step 3) from the game
+  or the species' own article. The script emits `TODO` scaffolds.
 - **REVIEW: cosmetic forms** — pids the wiki's table never lists as rows. Bulbapedia omits cosmetic
   gender forms, but main-series dexes here include them: `galar-isle-armor` carries `shinx-f`,
   `kadabra-f`, `magikarp-f` and 23 more. Whether a dex should include them is a per-dex policy call.
@@ -68,24 +68,29 @@ strong first draft, not a finished file.
 
 Only these need judgement. See `references/dex-conventions.md` for the precedents.
 
-| Field     | How to decide                                                                                                                                            |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `id`      | `<parent>-<area>`, e.g. `pokopia-basin`, `galar-isle-armor`, `paldea-kitakami`                                                                           |
-| `name`    | Follow the game's existing dexes. Pokopia prefixes the game (`Pokopia Basin Pokédex`); Galar and Paldea use the bare area name (`Isle of Armor Pokédex`) |
-| `gen`     | Match the parent game. Spinoffs use `0`                                                                                                                  |
-| `region`  | A slug from `data/regions.json` — nothing else validates, but a fabricated region is still wrong. New areas reuse the parent's region                    |
-| `baseDex` | Parent dex slug for any sub-dex, no exceptions. `null` only for a game's top-level dex                                                                   |
-| `pkApiId` | PokeAPI pokedex id as a **string**, or `null`. Always `null` for spinoffs and DLC PokeAPI does not carry                                                 |
+| Field     | How to decide                                                                                                                                                                               |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `id`      | `<parent>-<area>`, e.g. `pokopia-basin`, `galar-isle-armor`, `paldea-kitakami`                                                                                                              |
+| `name`    | English text, not in the dex file. Follow the game's existing dexes. Pokopia prefixes the game (`Pokopia Basin Pokédex`); Galar and Paldea use the bare area name (`Isle of Armor Pokédex`) |
+| `gen`     | Match the parent game. Spinoffs use `0`                                                                                                                                                     |
+| `region`  | A slug from `data/regions.json` — nothing else validates, but a fabricated region is still wrong. New areas reuse the parent's region                                                       |
+| `baseDex` | Parent dex slug for any sub-dex, no exceptions. `null` only for a game's top-level dex                                                                                                      |
+| `pkApiId` | PokeAPI pokedex id as a **string**, or `null`. Always `null` for spinoffs and DLC PokeAPI does not carry                                                                                    |
 
 ### 3. Emit the dex file
 
 ```bash
 bun .claude/skills/add-pokedex/scripts/parse-bulbapedia-dex.ts \
   --file /tmp/basin.wiki --emit \
-  --id pokopia-basin --name "Pokopia Basin Pokédex" --region kanto --gen 0 \
-  --base-dex pokopia \
+  --id pokopia-basin --region kanto --gen 0 --base-dex pokopia \
   > data/pokedexes/pokopia-basin.json
+bun .claude/skills/add-pokedex/scripts/parse-bulbapedia-dex.ts \
+  --file /tmp/basin.wiki --emit-text --id pokopia-basin --name "Pokopia Basin Pokédex"
 ```
+
+Records hold no text. `--emit-text` prints the dex's entry for `data/i18n/eng/pokedexes.json` (name,
+plus a `TODO` entry per game-exclusive form); add it to that file in index order and replace the
+placeholders, using the same slug for the entry key and `meta.id`.
 
 `--emit` refuses to run while anything is unresolved. Output is pre-formatted to survive `oxfmt`
 unchanged — one entry per line, no newline after `{`.
@@ -101,9 +106,11 @@ unregistered dex is invisible to every loader **and** skipped by the integrity t
 doing nothing at all.
 
 - [ ] `data/pokedexes/<id>.json` written
+- [ ] `data/i18n/eng/pokedexes.json` — the dex name (and `meta` entry text)
 - [ ] `data/indices/pokedexes.json` — append the id near its game's other dexes
 - [ ] `data/games/<game>.json` — add the id to `pokedexes`
-- [ ] If the dex ships with DLC: new `data/games/<game>-<part>.json` + `data/indices/games.json`
+- [ ] If the dex ships with DLC: new `data/games/<game>-<part>.json` + `data/indices/games.json` +
+      its English name in `data/i18n/eng/games.json`
 
 ### 5. DLC game records
 
@@ -114,7 +121,8 @@ wrong; `pokopia-bubblybasin` is right.
 Copy the shape from `data/games/swsh-islearmor.json` and inherit scalars from the parent game
 (`gen`, `series`, `region`, `originMark`, `maxBoxes`, `maxBoxSize`, `platforms`, `features`). Set
 `type: "dlc"` and `gameSet: "<parent>"`. Omit `onlineFeatures` — every existing DLC record does. The
-parent game lists the DLC's dex too, so both files change.
+record has no `name`: add it to `data/i18n/eng/games.json`. The parent game lists the DLC's dex too,
+so both files change.
 
 Get `releaseDate` from the Bulbapedia article for the DLC, not the dex list page. It is usually
 stated per part ("Released with Patch 2.0.0 on August 5, 2026"). Never invent one; if it is

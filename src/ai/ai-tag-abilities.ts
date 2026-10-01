@@ -25,7 +25,8 @@ const BATCH_SIZE = Math.max(1, Number(process.env.BATCH_SIZE ?? 8) || 8)
 const DRY_RUN = process.env.DRY_RUN === '1' || process.argv.includes('--dry-run')
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const ABILITIES_PATH = path.resolve(__dirname, '../data/abilities.json')
+const ABILITIES_PATH = path.resolve(__dirname, '../../data/abilities.json')
+const ABILITY_TEXT_PATH = path.resolve(__dirname, '../../data/i18n/eng/abilities.json')
 
 const tagEnum = z.enum(abilityTagIds)
 const typeEnum = z.enum(typeIds)
@@ -191,19 +192,28 @@ async function main() {
     process.exit(1)
   }
 
-  type AbilityRow = {
+  type AbilityRecord = {
     id: string
-    name: string
     psName: string
     gen: number
-    shortDesc: string
-    desc: string
     tags?: string[]
     immunities?: string[]
     weaknesses?: string[]
   }
+  type AbilityRow = AbilityRecord & { name: string; shortDesc: string; desc: string }
 
-  const raw = JSON.parse(fs.readFileSync(ABILITIES_PATH, 'utf8')) as AbilityRow[]
+  const records = JSON.parse(fs.readFileSync(ABILITIES_PATH, 'utf8')) as AbilityRecord[]
+  const text = JSON.parse(fs.readFileSync(ABILITY_TEXT_PATH, 'utf8')) as Record<
+    string,
+    { name?: string; shortDesc?: string; desc?: string }
+  >
+  // The model reads English text; records stay text-free when written back.
+  const raw: AbilityRow[] = records.map((record) => ({
+    ...record,
+    name: text[record.id]?.name ?? record.psName,
+    shortDesc: text[record.id]?.shortDesc ?? '',
+    desc: text[record.id]?.desc ?? '',
+  }))
   const slice = limit != null ? raw.slice(0, limit) : raw
   const batches = chunk(slice, BATCH_SIZE)
 
@@ -248,11 +258,11 @@ async function main() {
   }
 
   const idToMeta = merged
-  const next = raw.map((row) => {
-    const meta = idToMeta.get(row.id)
-    if (!meta) return row
-    const updated: AbilityRow = {
-      ...row,
+  const next = records.map((record) => {
+    const meta = idToMeta.get(record.id)
+    if (!meta) return record
+    const updated: AbilityRecord = {
+      ...record,
       tags: meta.tags,
     }
     if (meta.immunities?.length) updated.immunities = meta.immunities

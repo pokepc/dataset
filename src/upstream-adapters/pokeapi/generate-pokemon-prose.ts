@@ -19,7 +19,13 @@ import { dirname, join, resolve } from 'node:path'
 import OpenAI from 'openai'
 import { zodResponseFormat } from 'openai/helpers/zod'
 import { z } from 'zod'
-import { appLangs, appLangsBySlug, DEFAULT_LANG_SLUG, type LangInfo } from '../../lib/languages'
+import {
+  appLangs,
+  appLangsBySlug,
+  DEFAULT_LANG_SLUG,
+  localeCodeByV7Key,
+  type LangInfo,
+} from '../../lib/languages'
 import { DEFAULT_POKEAPI_BASE_URL, DEFAULT_POKEAPI_CACHE_DIR, fetchPokeApiJson } from './client'
 
 /**
@@ -41,7 +47,8 @@ import { DEFAULT_POKEAPI_BASE_URL, DEFAULT_POKEAPI_CACHE_DIR, fetchPokeApiJson }
  */
 const POKEMON_INDEX_PATH = join(process.cwd(), 'data/indices/pokemon.json')
 const POKEMON_DATA_ROOT = join(process.cwd(), 'data/pokemon')
-const DEFAULT_OUTPUT_ROOT = join(process.cwd(), 'data/i18n')
+const LOCAL_TEXT_ROOT = join(process.cwd(), 'data/i18n')
+const DEFAULT_OUTPUT_ROOT = LOCAL_TEXT_ROOT
 const DEFAULT_MODEL = 'gpt-5.4-mini'
 const DEFAULT_MAX_LENGTH_CHARS = 512
 const MIN_MAX_LENGTH_CHARS = 50
@@ -514,6 +521,22 @@ function readPokemonIndex(): string[] {
   return parsed
 }
 
+const localTextFiles = new Map<string, Record<string, Record<string, unknown>>>()
+
+/** One Pokémon text field across locales, keyed by v7 translation key (eng, jap, esp…). */
+function localTextMap(pokemonId: string, field: string): Record<string, string> | undefined {
+  const map: Record<string, string> = {}
+  for (const [v7Key, locale] of Object.entries(localeCodeByV7Key)) {
+    if (!localTextFiles.has(locale)) {
+      const path = join(LOCAL_TEXT_ROOT, locale, 'pokemon.json')
+      localTextFiles.set(locale, existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : {})
+    }
+    const value = localTextFiles.get(locale)![pokemonId]?.[field]
+    if (typeof value === 'string' && isString(value)) map[v7Key] = value
+  }
+  return Object.keys(map).length > 0 ? map : undefined
+}
+
 function readLocalPokemon(pokemonId: string): LocalPokemon {
   const filePath = join(POKEMON_DATA_ROOT, `${pokemonId}.json`)
   const parsed: unknown = JSON.parse(readFileSync(filePath, 'utf8'))
@@ -528,10 +551,10 @@ function readLocalPokemon(pokemonId: string): LocalPokemon {
     type1: optionalString(record, 'type1'),
     type2: optionalString(record, 'type2'),
     isForm: optionalBoolean(record, 'isForm'),
-    names: optionalStringRecord(record, 'names'),
-    genus: optionalStringRecord(record, 'genus'),
-    speciesNames: optionalStringRecord(record, 'speciesNames'),
-    formNames: optionalStringRecord(record, 'formNames'),
+    names: localTextMap(id, 'name'),
+    genus: localTextMap(id, 'genus'),
+    speciesNames: localTextMap(id, 'speciesName'),
+    formNames: localTextMap(id, 'formName'),
     refs: parseRefs(record),
   }
 }
@@ -1112,22 +1135,6 @@ function requiredBoolean(record: Record<string, unknown>, key: string, context: 
 function optionalBoolean(record: Record<string, unknown>, key: string): boolean | undefined {
   const value = record[key]
   return typeof value === 'boolean' ? value : undefined
-}
-
-function optionalStringRecord(
-  record: Record<string, unknown>,
-  key: string,
-): Record<string, string> | undefined {
-  const value = record[key]
-
-  if (!isRecord(value)) {
-    return undefined
-  }
-
-  const entries = Object.entries(value).filter(
-    (entry): entry is [string, string] => typeof entry[1] === 'string',
-  )
-  return Object.fromEntries(entries)
 }
 
 function isRecord(value: unknown): value is Record<string, unknown> {

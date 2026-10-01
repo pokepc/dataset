@@ -8,13 +8,13 @@ Reference for `.claude/skills/add-pokedex`. Schema lives in `src/lib/schemas.ts`
 | Field                | Notes                                                                                                                                     |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `id`                 | Must match the filename stem. Nothing asserts this, but every file follows it                                                             |
-| `name`               | Single English string. There is **no** i18n for dex names                                                                                 |
+| `name`               | Not in the dex file: English text goes in `data/i18n/eng/pokedexes.json` (`name`, plus `shortDesc`/`desc` when used)                      |
 | `gen`                | `0` for spinoffs (both Pokopia dexes, both champions rosters), otherwise the real generation                                              |
 | `region`             | Slug from `data/regions.json`, or `null` (`national`, champions rosters). Not cross-validated by any test — a wrong value passes silently |
 | `isNational`         | `false` in every file including `national.json`. Effectively unused                                                                       |
 | `baseDex`            | Parent dex for sub-dexes, else `null`                                                                                                     |
 | `pkApiId`            | PokeAPI pokedex id as a **string** (`kanto` is `"2"`), `null` when PokeAPI has no equivalent                                              |
-| `shortDesc` / `desc` | Optional. Only the two champions rosters use them                                                                                         |
+| `shortDesc` / `desc` | Text, so in `data/i18n/eng/pokedexes.json`. Only the two champions rosters use them                                                       |
 | `entries`            | `.strict()` per entry — unknown keys are a hard failure. `[]` is valid                                                                    |
 
 ### baseDex precedents
@@ -81,10 +81,10 @@ Not a form field: `slowpoke-galar`, `shellos-east`, `toxtricity-low-key`, `tatsu
 
 ## pid resolution
 
-`data/pokemon/*.json` carries `dexNum` and `formNames.eng`, and Bulbapedia's form labels line up
-with that field almost exactly:
+`data/pokemon/*.json` carries `dexNum` and `data/i18n/eng/pokemon.json` the English `formName`, and
+Bulbapedia's form labels line up with that field almost exactly:
 
-| Bulbapedia label | `formNames.eng`   | pid                   |
+| Bulbapedia label | `formName`        | pid                   |
 | ---------------- | ----------------- | --------------------- |
 | Female           | `"Female"`        | `frillish-f`          |
 | Male             | `"Male"`          | `frillish` (default)  |
@@ -96,9 +96,9 @@ with that field almost exactly:
 | Low Key Form     | `"Low Key Form"`  | `toxtricity-low-key`  |
 | Paldean Form     | `"Paldean Form"`  | `wooper-paldea`       |
 
-Note the `formNames` key — there is no `formName` field. The default form sometimes leaves it `null`
-even where Bulbapedia labels it (Shellos "West Sea", Urshifu "Single Strike Style"), which is why
-the script falls back to the default for the first row of a block.
+The default form sometimes has no `formName` even where Bulbapedia labels it (Shellos "West Sea",
+Urshifu "Single Strike Style"), which is why the script falls back to the default for the first row
+of a block.
 
 The wiki and the dataset disagree on the `" Form"` suffix in places — Bulbapedia writes "Gigantamax"
 where the dataset has `"Gigantamax Form"` — so the resolver tries the label both ways.
@@ -109,9 +109,9 @@ Two things the wiki table cannot tell you:
   them. `galar-isle-armor` has 26 (`shinx-f`, `kadabra-f`, `magikarp-f`, …) that appear nowhere in
   the page's markup. The Pokopia dexes include only what the wiki lists. Compare against another dex
   for the same game before deciding.
-- **A label can be ambiguous.** Both `urshifu-gmax` and `urshifu-rapid-strike-gmax` have
-  `formNames.eng: "Gigantamax Form"`, so the two Gigantamax rows under Isle of Armor #101 cannot be
-  told apart by label alone. Resolve those by hand.
+- **A label can be ambiguous.** Both `urshifu-gmax` and `urshifu-rapid-strike-gmax` have the English
+  `formName` "Gigantamax Form", so the two Gigantamax rows under Isle of Armor #101 cannot be told
+  apart by label alone. Resolve those by hand.
 
 ## Game-exclusive forms (`meta`)
 
@@ -119,21 +119,25 @@ Pokopia's exclusives have no `data/pokemon` record. They reuse the canonical pid
 block, and the meta entry takes the `isForm: false` slot:
 
 ```jsonc
-{ "pid": "snorlax", "dexNum": 108, "isForm": false, "meta": {
-    "names":        { "eng": "Mosslax" },
-    "speciesNames": { "eng": "Snorlax" },
-    "formNames":    { "eng": "Mossy" },
-    "imgNid": "0000-mosslax" } },
+{ "pid": "snorlax", "dexNum": 108, "isForm": false, "meta": { "id": "mosslax", "imgNid": "0000-mosslax" } },
 { "pid": "snorlax", "dexNum": 108, "isForm": true },
+```
+
+Its text lives in `data/i18n/eng/pokedexes.json`, keyed by `meta.id` (required whenever `meta` is
+present):
+
+```jsonc
+"pokopia": { "name": "Pokopia Pokédex", "entries": {
+  "mosslax": { "name": "Mosslax", "speciesName": "Snorlax", "formName": "Mossy" } } }
 ```
 
 In the wikitext these use a game-scoped sprite template — `{{MSP/Pokopia|0143|Snorlax|form=-Mossy}}`
 rather than plain `{{MSP|...}}` — which is how the script detects them.
 
-`meta.names.eng` is the **in-game name**, which the dex list page does not contain. The label there
+The entry `name` is the **in-game name**, which the dex list page does not contain. The label there
 is only `Mossy`; the name `Mosslax` has to come from the game or the species article. `imgNid`
-follows `0000-<slug>`. `meta.canonicalPid`, `meta.attributes` and `meta.tags` are supported but
-unused.
+follows `0000-<slug>`, and `meta.id` is that slug. `meta.canonicalPid`, `meta.attributes` and
+`meta.tags` are supported but unused.
 
 Some exclusives have no paired plain entry (`smeargle`, `rotom`, `greedent`, `tinkaton`) because the
 wiki lists only the special form for that number. That is correct and the duplicate-pid test allows

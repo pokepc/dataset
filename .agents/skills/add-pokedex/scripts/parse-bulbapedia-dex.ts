@@ -14,9 +14,10 @@
  *   --page <title|url>  Bulbapedia page title or full URL (fetched as raw wikitext)
  *   --file <path>       Parse a local wikitext file instead of fetching
  *   --save-wiki <path>  Write the fetched wikitext to disk (cache it before iterating)
- *   --emit              Print the dex JSON to stdout instead of the report
+ *   --emit              Print the dex JSON (no text) to stdout instead of the report
+ *   --emit-text         Print the dex's entry for data/i18n/eng/pokedexes.json instead
  *   --id <dex-id>       Dex id for --emit (default: placeholder)
- *   --name <name>       Dex name for --emit
+ *   --name <name>       English dex name for --emit-text
  *   --region <slug>     Dex region for --emit (default: null)
  *   --gen <n>           Dex gen for --emit (default: 0)
  *   --base-dex <slug>   Dex baseDex for --emit (default: null)
@@ -231,13 +232,17 @@ function parseRows(wikitext: string): ParsedRow[] {
 
 function buildPokemonIndex(dataDir: string): Map<number, PokemonRef[]> {
   const index: string[] = JSON.parse(readFileSync(join(dataDir, 'indices/pokemon.json'), 'utf8'))
+  // Records hold no text; English form names live in the locale file.
+  const englishText: Record<string, { formName?: string }> = JSON.parse(
+    readFileSync(join(dataDir, 'i18n/eng/pokemon.json'), 'utf8'),
+  )
   const byDexNum = new Map<number, PokemonRef[]>()
 
   for (const id of index) {
     const raw = JSON.parse(readFileSync(join(dataDir, 'pokemon', `${id}.json`), 'utf8'))
     const ref: PokemonRef = {
       id: raw.id,
-      formNameEng: raw.formNames?.eng ?? null,
+      formNameEng: englishText[raw.id]?.formName ?? null,
       isDefault: raw.isDefault === true,
       isCosmeticForm: raw.isCosmeticForm === true,
     }
@@ -407,7 +412,6 @@ function resolveAll(
 function serializeDex(
   header: {
     id: string
-    name: string
     gen: number
     region: string | null
     baseDex: string | null
@@ -418,7 +422,6 @@ function serializeDex(
   const lines = [
     '{',
     `  "id": ${JSON.stringify(header.id)},`,
-    `  "name": ${JSON.stringify(header.name)},`,
     `  "gen": ${header.gen},`,
     `  "region": ${JSON.stringify(header.region)},`,
     '  "isNational": false,',
@@ -429,9 +432,7 @@ function serializeDex(
 
   entries.forEach((entry, idx) => {
     const comma = idx === entries.length - 1 ? '' : ','
-    const meta = entry.needsMeta
-      ? `, "meta": { "names": { "eng": "TODO ${entry.row.formLabel ?? ''} ${entry.row.speciesName}" }, "speciesNames": { "eng": ${JSON.stringify(entry.row.speciesName)} }, "formNames": { "eng": ${JSON.stringify(entry.row.formLabel ?? '')} }, "imgNid": "TODO" }`
-      : ''
+    const meta = entry.needsMeta ? `, "meta": { "id": "TODO", "imgNid": "TODO" }` : ''
     lines.push(
       `    { "pid": ${JSON.stringify(entry.pid)}, "dexNum": ${entry.dexNum}, "isForm": ${entry.isForm}${meta} }${comma}`,
     )
@@ -528,6 +529,29 @@ async function main() {
     }
   }
 
+  if (args['emit-text']) {
+    // English text: the dex name and, per game-exclusive form, its in-game names keyed by meta.id.
+    const metaEntries = Object.fromEntries(
+      entries
+        .filter((entry) => entry.needsMeta)
+        .map((entry) => [
+          `TODO-${entry.pid}`,
+          {
+            name: `TODO ${entry.row.formLabel ?? ''} ${entry.row.speciesName}`,
+            speciesName: entry.row.speciesName,
+            formName: entry.row.formLabel ?? '',
+          },
+        ]),
+    )
+    const id = typeof args.id === 'string' ? args.id : 'TODO-dex-id'
+    const text = {
+      name: typeof args.name === 'string' ? args.name : 'TODO Pokédex',
+      ...(Object.keys(metaEntries).length > 0 ? { entries: metaEntries } : {}),
+    }
+    process.stdout.write(`${JSON.stringify({ [id]: text }, null, 2)}\n`)
+    return
+  }
+
   if (args.emit) {
     if (unresolved.length > 0) {
       console.error(`Refusing to emit: ${unresolved.length} unresolved row(s). Run without --emit.`)
@@ -542,7 +566,6 @@ async function main() {
       serializeDex(
         {
           id: typeof args.id === 'string' ? args.id : 'TODO-dex-id',
-          name: typeof args.name === 'string' ? args.name : 'TODO Pokédex',
           gen: typeof args.gen === 'string' ? Number(args.gen) : 0,
           region: typeof args.region === 'string' ? args.region : null,
           baseDex: typeof args['base-dex'] === 'string' ? args['base-dex'] : null,
@@ -572,7 +595,9 @@ async function main() {
     console.log(`\nNEEDS HUMAN INPUT — ${needsMeta.length} game-exclusive form(s):`)
     console.log('  These have no pid of their own and need a meta block. The dex list page')
     console.log('  gives only the form label, not the in-game name (e.g. "Mossy" -> "Mosslax"),')
-    console.log('  so meta.names.eng and meta.imgNid must be filled in from the game or the')
+    console.log(
+      '  so meta.id, meta.imgNid and the entry text (--emit-text) must be filled in from the game or the',
+    )
     console.log("  species' own Bulbapedia article.")
     for (const e of needsMeta) {
       console.log(
