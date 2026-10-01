@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 04:44'
+updated_date: '2026-10-01 04:52'
 ---
 Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
 and its consequences are in
@@ -102,7 +102,8 @@ Merge semantics, applied per record:
 1. Start from a copy of the base record.
 2. Every property present in the override replaces the base property entirely. Arrays are replaced,
    never concatenated or merged by element; nested objects (e.g. `refs`) are replaced as a whole.
-   `null` is an ordinary value (e.g. `type2: null` makes a Pokémon single-typed).
+   `null` is an ordinary value for nullable properties (e.g. a game's `region`); optional
+   properties are removed with `$unset` (e.g. `"$unset": ["type2"]` makes a Pokémon single-typed).
 3. `$unset` (optional array of property names) removes those properties from the result, for
    example `"$unset": ["ability2"]`. A property cannot be both set and unset.
 4. `id` cannot be overridden.
@@ -169,7 +170,7 @@ Text fields per kind (v7 record fields move here, keeping their names in singula
 
 | Kind                                  | Text fields                                                    |
 | ------------------------------------- | -------------------------------------------------------------- |
-| `pokemon`                             | `name`, `speciesName`, `formName`, `genus`, `formsDesc`         |
+| `pokemon`                             | `name`, `speciesName`, `formName`, `genus`, `formsDesc`, `evoNotes`, `formNotes` |
 | `moves`, `abilities`, `pokeballs`     | `name`, `shortDesc`, `desc`                                    |
 | `items`                               | `name`, `pluralName`, `shortDesc`, `desc`                      |
 | `battle-states`                       | `name`, `desc`                                                 |
@@ -181,6 +182,10 @@ Text fields per kind (v7 record fields move here, keeping their names in singula
 
 - Pokémon `names`, `speciesNames`, `formNames` and `genus` maps become per-locale `name`,
   `speciesName`, `formName` and `genus`. Empty strings mean "officially empty" and are kept.
+- Evolution and form method `notes` move out of `evoMethods`/`formMethods` into `evoNotes`
+  (keyed by evolution method index, e.g. `"0"`) and `formNotes` (keyed by form method index, or
+  `<method>.revert.<revert>` for a revert detail, e.g. `"1.revert.0"`). Reordering methods must move
+  their notes. A special method without conditions needs an English note.
 - Pokédex entries with non-canonical `meta` text (e.g. Pokopia's Mosslax) get a `meta.id` slug;
   their text is `entries.<meta.id>` with `name`, `speciesName` and `formName`.
 - Box preset text (`name`, `description`, box titles/names) lives in
@@ -198,6 +203,13 @@ in the set, for moddable kinds and roster ids only. Merging replaces base text f
 `$unset` removes base fields that the set does not have. Text that a set adds but base lacks for a
 locale (e.g. official Champions move names in Portuguese) belongs in base when it is
 game-independent (names), and in the mod when it is the set's own wording (descriptions).
+
+## Schemas
+
+`src/lib-next/schemas.ts` (`lib/schemas` after the cut-over) defines every base record, override,
+roster and locale file schema; `types.ts` exports the inferred types as named exports, and
+`languages.ts` the locale codes. Record schemas are strict, so a leftover v7 text field fails
+validation. Box presets use `schemaVersion: 2` for the text-free modern preset shape.
 
 ## Merged data
 

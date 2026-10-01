@@ -1,9 +1,4 @@
-import {
-  abilitySchema,
-  i18nSchema,
-  type AbilityRecord,
-  type I18nRecord,
-} from '../../../lib-next/schemas'
+import { abilitySchema, i18nSchema, type AbilityRecord, type I18nRecord } from '../schemas'
 import type { I18nCode } from '../mappings'
 
 /**

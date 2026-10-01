@@ -4,7 +4,7 @@ import { slugify as transliterateSlugify } from 'transliteration'
 import {
   battleStates,
   type BattleState,
-  type ItemCategory,
+  type BattleItemCategory,
   type MoveClass,
   type MoveTarget,
   type PokemonType,
@@ -20,7 +20,7 @@ import type {
   PokemonI18nRecord,
   PokemonMovesRecord,
   PokemonRecord,
-} from '../../lib-next/schemas'
+} from './schemas'
 import {
   abilitySchema,
   battleStateSchema,
@@ -31,7 +31,7 @@ import {
   pokemonI18nSchema,
   pokemonMovesRecordSchema,
   pokemonSchema,
-} from '../../lib-next/schemas'
+} from './schemas'
 import { transformInputData } from './fixtures'
 import { expandLocalSlugAliases } from './fixtures/aliases'
 import { applyPreliminaryAbilities, applyPreliminaryAbilityI18n } from './fixtures/preliminary'
@@ -391,7 +391,7 @@ export function mapMoveClassificationCodes(codes: readonly number[]): MoveClass[
     .map((code) => lookupCode(MOVE_CLASSIFICATION_BY_CODE, code, 'move classification'))
 }
 
-export function mapItemCategoryCodes(codes: readonly number[]): ItemCategory[] {
+export function mapItemCategoryCodes(codes: readonly number[]): BattleItemCategory[] {
   return codes
     .filter((code) => code !== 0)
     .map((code) => lookupCode(ITEM_CATEGORY_BY_CODE, code, 'item category'))

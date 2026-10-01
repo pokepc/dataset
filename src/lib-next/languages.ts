@@ -32,6 +32,46 @@ export const gameLocales = [
 export type GameLocale = (typeof gameLocales)[number]
 export const DEFAULT_GAME_LOCALE: GameLocale = 'ENG'
 
+/**
+ * v8 locale codes: the lowercase in-game codes. They name every `i18n/<locale>/` directory
+ * (decision-4).
+ */
+export const localeCodes = [
+  'eng',
+  'es-es',
+  'es-la',
+  'fra',
+  'deu',
+  'ita',
+  'jpn',
+  'kor',
+  'chs',
+  'cht',
+  'pt-br',
+] as const satisfies ReadonlyArray<Lowercase<GameLocale>>
+export type LocaleCode = (typeof localeCodes)[number]
+export const DEFAULT_LOCALE_CODE: LocaleCode = 'eng'
+
+/** v7 translation keys (`names.jap`, …) to v8 locale codes. */
+export const localeCodeByV7Key = {
+  eng: 'eng',
+  esp: 'es-es',
+  esla: 'es-la',
+  fra: 'fra',
+  deu: 'deu',
+  ita: 'ita',
+  jap: 'jpn',
+  kor: 'kor',
+  chs: 'chs',
+  cht: 'cht',
+  por: 'pt-br',
+} as const satisfies Record<string, LocaleCode>
+export type V7LocaleKey = keyof typeof localeCodeByV7Key
+
+export function toLocaleCode(gameLocale: GameLocale): LocaleCode {
+  return gameLocale.toLowerCase() as LocaleCode
+}
+
 // These are 2-char ISO3166-1 and/or ISO3166-2 codes
 // commonly used in website URLs and domains.
 //

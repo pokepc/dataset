@@ -32,7 +32,7 @@ import {
   pokemonI18nSchema,
   pokemonMovesSchema,
   pokemonSchema,
-} from '../../lib-next/schemas'
+} from './schemas'
 
 describe('parser helpers', () => {
   it('creates stable ascii slugs', () => {

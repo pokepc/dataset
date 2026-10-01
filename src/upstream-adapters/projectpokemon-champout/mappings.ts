@@ -1,5 +1,5 @@
 import type {
-  ItemCategory,
+  BattleItemCategory,
   MoveCategory,
   MoveClass,
   MoveTarget,
@@ -84,7 +84,7 @@ export const ITEM_CATEGORY_BY_CODE = {
   6: 'berry',
   8: 'mega_stone',
   10: 'other',
-} as const satisfies Readonly<Partial<Record<number, ItemCategory>>>
+} as const satisfies Readonly<Partial<Record<number, BattleItemCategory>>>
 
 export const POKEMON_TYPE_BY_CODE = {
   0: 'normal',
