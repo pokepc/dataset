@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 04:52'
+updated_date: '2026-10-01 04:55'
 ---
 Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
 and its consequences are in
@@ -215,7 +215,19 @@ validation. Box presets use `schemaVersion: 2` for the text-free modern preset s
 
 Merging a game set produces, for each moddable kind: the roster's base records with overrides
 applied, and per locale the roster's base text with mod text applied. The library exports the merge
-function (task-3); the static API build uses the same function:
+function; the static API build uses the same function:
+
+- `mergeGameSet(source, { validate })` (`lib-next/merge`, `lib/merge` after the cut-over) is pure and
+  filesystem-free. `source` holds base records per moddable kind, base text per locale and the set's
+  mods (roster, overrides, text). It returns `{ records, text }`: merged records per kind in base
+  order and merged text per locale, with empty locales and kinds omitted. It throws
+  `GameSetMergeError` for roster ids missing from base, overrides or text outside the set, duplicate
+  overrides, unknown locales, and (unless `validate: false`) merged records that fail their schema.
+- `loadGameSetSource(set, { dataDir, kinds, locales })` (`lib-next/fs`, Node only) reads those files
+  from a data directory; `listModdedGameSets(dataDir)` lists the sets with mods. A set without mods
+  merges to its base data.
+
+Published paths:
 
 | Static API path                        | Contents                                 |
 | -------------------------------------- | ---------------------------------------- |
