@@ -1,5 +1,10 @@
-# Pokémon evolution methods
-
+---
+id: doc-8
+title: Pokémon evolution methods
+type: specification
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 `evoMethods` on a resulting Pokémon/form contains alternative ways to evolve into that record. Meet
 **one method**, and **all conditions within that method**. `from` lists alternative eligible
 predecessor records; it is not a list of party members that must all be present. Each method owns
@@ -15,7 +20,7 @@ same requirements can share one method.
   and keep unreviewed game scope unspecified.
 - Validate references and representative special cases, exported schemas, and the public build.
 
-The [audit](audits/pokemon-evolution.md) records source evidence and remaining coverage limitations.
+The [audit](../audits/doc-16%20-%20Pok%C3%A9mon-evolution-audit.md) records source evidence and remaining coverage limitations.
 It is a historical snapshot, not a list of corrections still outstanding after migration. Keep
 source URLs and verification status in audit documents, outside the bundled data JSON.
 
@@ -104,7 +109,7 @@ node src/scripts/migrate-pokemon-evolutions.ts --write
 
 To repeat it in a fresh checkout, place the `pokemon_evolution`, `pokemon_species`,
 `evolution_triggers`, `items`, `moves`, and `types` CSVs there, using the source URLs/hashes in the
-[audit manifest](audits/evolution-findings.json). The first command previews changes. Existing
+[audit manifest](../audits/evolution-findings.json). The first command previews changes. Existing
 method contents are never overwritten by rerunning the migration. Renaming existing methods and
 removing redundant fields does not require the CSV cache.
 

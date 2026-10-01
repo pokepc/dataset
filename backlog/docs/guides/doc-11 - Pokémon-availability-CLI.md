@@ -1,6 +1,11 @@
-# Pokémon availability CLI
-
-Read the [canonical field definitions](pokemon-availability.md) for acquisition, storage, shiny
+---
+id: doc-11
+title: Pokémon availability CLI
+type: guide
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
+Read the [canonical field definitions](../reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md) for acquisition, storage, shiny
 availability, and related form metadata. The rules below describe how the tools implement them.
 
 The availability tools parse two Bulbapedia pages:
@@ -94,7 +99,7 @@ independently. GO release tables establish historical release, not current spawn
 exclusivity. Released entries default to `obtainableIn`; researched exact-record exceptions in
 `go-event-availability.ts` use `eventOnlyIn` for limited-claim research/pass routes and their
 dependent evolutions. See the
-[GO legendary/mythical audit](audits/go-legendary-mythical-availability.md) for sources and retained
+[GO legendary/mythical audit](../audits/doc-13%20-%20GO-legendary-and-mythical-acquisition-audit.md) for sources and retained
 permanent-research/recurring-raid routes. These rules add no runtime fetches, appear with a rule
 basis and their own source link, and cannot establish release by themselves. Explicit unreleased
 entries and future/TBA releases are unavailable; unlisted forms remain unverified unless an explicit
@@ -111,7 +116,7 @@ Box RS, Ranch and Bank have explicit acquisition and storage rules in
 `storage-game-availability.ts`, including permanent rewards, historical event rewards, and
 exact-form restrictions. Bank's compatible records are transfer-only except its historical gift
 distributions, which are event-only. Main-source reviews apply these after storage inheritance;
-GO-only reviews leave them unchanged. See the [storage-game audit](audits/storage-games.md). Shiny
+GO-only reviews leave them unchanged. See the [storage-game audit](../audits/doc-19%20-%20Pok%C3%A9mon-Box-RS-My-Pok%C3%A9mon-Ranch-and-Pok%C3%A9mon-Bank.md). Shiny
 locks remain outside the CLI patch fields.
 
 Other games and services absent from the source tables retain saved values, copying the base's
@@ -164,8 +169,8 @@ keep their separate rules below.
 
 ### Researched remaining forms
 
-The [ordinary-form audit](audits/ordinary-form-availability.md) and
-[special-form audit](audits/special-form-availability.md) cover all 83 previously unresolved
+The [ordinary-form audit](../audits/doc-14%20-%20Ordinary-and-battle-form-availability-audit.md) and
+[special-form audit](../audits/doc-18%20-%20Special-form-availability-research.md) cover all 83 previously unresolved
 records. Their main-game rules live in `curated-form-availability.ts` and do not add GO species
 fallback.
 
@@ -190,7 +195,7 @@ infer a Gigantamax release from an ordinary Toxtricity release.
 
 ### Curated Vivillon patterns
 
-All 20 Vivillon patterns use a [curated game-by-pattern matrix](audits/vivillon-availability.md),
+All 20 Vivillon patterns use a [curated game-by-pattern matrix](../audits/doc-20%20-%20Vivillon-availability-audit.md),
 including the unsuffixed Icy Snow record and the two special patterns. Positive species cells never
 establish a pattern’s availability. Scarlet/Violet postcard-dependent patterns are `transferOnlyIn`
 by user policy. GO is still parsed independently and storage is preserved. The research references

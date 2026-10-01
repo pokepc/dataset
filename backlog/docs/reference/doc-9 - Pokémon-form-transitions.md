@@ -1,5 +1,10 @@
-# Pokémon form transitions
-
+---
+id: doc-9
+title: Pokémon form transitions
+type: specification
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 `formMethods` on the **destination record** describes alternative ways an individual Pokémon can
 change into that form. One method must match; its conditions must all hold. Each method owns its
 `from` array of alternative source record IDs. Fusion partners are requirements, not alternative
@@ -92,7 +97,7 @@ include their ordinary eligibility rules: `mega_evolution` requires an unlocked 
 `gigantamax` requires access to Dynamax with a Dynamax Band in an eligible battle, `ultra_burst`
 requires its unlocked Z-Ring mechanic, and `terastallization` requires an available Tera Orb.
 Specific resources/unlocks and exceptional timing can be recorded in conditions or localized notes.
-The [audit](audits/pokemon-forms.md) documents the current limits.
+The [audit](../audits/doc-17%20-%20Form-change-audit-%E2%80%94-2026-09-22.md) documents the current limits.
 
 No URL, source, or verification field is accepted in a method. The schema is strict. Evidence and
 coverage reports remain outside the published `data` and `build` directories.
@@ -125,7 +130,7 @@ All fixed vocabularies are readonly arrays, and the schemas consume those same a
 Move categories reuse `moveCategory`. Pokémon, move, item, Ability and game IDs use their existing
 catalogs. Locations and interactions are semantic translation keys, not location-catalog IDs. Render
 the key using a translation template, interpolating localized catalog names and typed parameters.
-Rare condition definitions are in [the vocabulary audit](audits/form-methods/vocabulary.json).
+Rare condition definitions are in [the vocabulary audit](../audits/form-methods/vocabulary.json).
 
 `resolveFormRevert(rule, method)` expands a shorthand and resolves inherited game scope.
 `expandFormMethods(records)` derives an incoming-method map, including reversion edges with explicit

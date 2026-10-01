@@ -1,5 +1,10 @@
-# Game lifecycle dates
-
+---
+id: doc-4
+title: Game lifecycle dates
+type: specification
+created_date: '2026-09-30 23:59'
+updated_date: '2026-09-30 23:59'
+---
 Game records support these fields in order, immediately before `region`:
 
 | Field            | Meaning                                                                                                                                                                                  |

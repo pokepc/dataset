@@ -1,5 +1,10 @@
-# Pokémon ability history
-
+---
+id: doc-15
+title: Pokémon ability history
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 Reviewed 2026-09-23 against the current `data/pokemon` records. This audit covers ability access
 between core-series games and versions, including assignments in game data that were never usable.
 It does not track changes to an ability's effects or abilities temporarily copied during battle.

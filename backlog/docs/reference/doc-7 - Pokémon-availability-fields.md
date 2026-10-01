@@ -1,9 +1,14 @@
-# Pokémon availability fields
-
+---
+id: doc-7
+title: Pokémon availability fields
+type: specification
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 This is the canonical field reference for humans and agents editing `data/pokemon/*.json`, the
 schemas, the editor, and the availability tools. It supersedes older audit terminology. Last policy
 review: **2026-09-24**. Implementation and source details are in the
-[availability CLI guide](pokemon-availability-cli.md).
+[availability CLI guide](../guides/doc-11%20-%20Pok%C3%A9mon-availability-CLI.md).
 
 ## Scope
 
@@ -93,7 +98,7 @@ Eevee tail appearance, are excluded.
 Hayley's 22 permanent trades use exact form/gender records in `obtainableIn`, with `ranch` in
 `shinyLockedIn`. Her other residents cannot be exported and do not establish ordinary acquisition.
 The five historical guest-Mii trades are `eventOnlyIn`. Other compatible records are
-`transferOnlyIn`. See the [Box/Ranch audit](audits/storage-games.md) for sources and the distinction
+`transferOnlyIn`. See the [Box/Ranch audit](../audits/doc-19%20-%20Pok%C3%A9mon-Box-RS-My-Pok%C3%A9mon-Ranch-and-Pok%C3%A9mon-Bank.md) for sources and the distinction
 between their collection checklists and persistent storage.
 
 Pokémon Bank (`bank`) stores compatible Gen I–VII records reachable through the 3DS games or Poké
@@ -108,7 +113,7 @@ distribution windows do not erase historical availability. Bank has no ordinary 
 route. The later female Eevee tail appearance is excluded; female Eevee can be deposited under the
 ordinary Eevee appearance. The CLI establishes Bank compatibility independently of saved
 acquisition/storage fields and keeps unsupported forms unavailable. See the
-[storage-game audit](audits/storage-games.md). See
+[storage-game audit](../audits/doc-19%20-%20Pok%C3%A9mon-Box-RS-My-Pok%C3%A9mon-Ranch-and-Pok%C3%A9mon-Bank.md). See
 [Bank's compatibility and restrictions](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Bank)
 and
 [Hoopa's form behavior](<https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)#Form_data>).
@@ -121,7 +126,7 @@ merely the fact that its distribution has expired.
 
 Original Cap and World Cap Pikachu are released GO costumes. Include GO in both `obtainableIn` and
 `storableIn`, even though these costumes cannot leave GO. Their main-series acquisition remains
-independent; see the [cap release evidence](audits/special-form-availability.md).
+independent; see the [cap release evidence](../audits/doc-18%20-%20Special-form-availability-research.md).
 
 Do not copy positive species availability to every form. Use an exact form entry or an explicit,
 reviewed inheritance rule. Availability in one game does not prove that a pattern, size, regional
@@ -152,9 +157,9 @@ Ruby/Alpha Sapphire). This does not override independent native encounters for o
   excluded because it has no genders. This does not apply to female-only species.
 
 See the CLI guide for the complete inherited families, exclusive forms, and Mega/Gigantamax rules,
-and the [Vivillon audit](audits/vivillon-availability.md) for its complete pattern matrix. The
-[ordinary-form](audits/ordinary-form-availability.md) and
-[special-form](audits/special-form-availability.md) audits document the remaining form decisions.
+and the [Vivillon audit](../audits/doc-20%20-%20Vivillon-availability-audit.md) for its complete pattern matrix. The
+[ordinary-form](../audits/doc-14%20-%20Ordinary-and-battle-form-availability-audit.md) and
+[special-form](../audits/doc-18%20-%20Special-form-availability-research.md) audits document the remaining form decisions.
 Ability-driven main-game acquisition never implies a shared GO release or shared storage. Fusion
 acquisition must account for both components; a transfer-only fusion means an imported component is
 needed, not that the fused result can cross games.
@@ -182,9 +187,9 @@ two availability parsers do not currently determine shiny release/lock fields.
 | `isDefault`, `isForm`, `formId`, `baseSpecies`, `baseForms`, `forms`   | Identify a species/form and its relationships. A default or unsuffixed record may represent one specific form, not all forms. These links do not authorize automatic availability inheritance.                                               |
 | `isCosmeticForm`, `isFemaleForm`, `hasGenderDifferences`, `isRegional` | Describe the variant. Cosmetic appearance does not guarantee identical per-game availability.                                                                                                                                                |
 | `isBattleOnlyForm`, `isMega`, `isPrimal`, `isGmax`, `isFusion`         | Describe a transformation or form mechanic. They require game-specific acquisition/storage rules, not blanket exclusion or blanket base inheritance.                                                                                         |
-| `formMethods`                                                          | Form-change requirements and compact `revert` rules; see [form transitions](pokemon-forms.md). Item roles distinguish held items from consumables and reusable items. They do not by themselves establish storage or transfer compatibility. |
+| `formMethods`                                                          | Form-change requirements and compact `revert` rules; see [form transitions](doc-9%20-%20Pok%C3%A9mon-form-transitions.md). Item roles distinguish held items from consumables and reusable items. They do not by themselves establish storage or transfer compatibility. |
 | `canGmax`, `canDynamax`, `canBeAlpha`                                  | Capability flags, not per-game availability lists. They do not establish a legal encounter, stored form, or current battle-roster eligibility.                                                                                               |
-| `evoMethods`                                                           | Alternative evolution methods, each with its eligible predecessors. See [evolution methods](pokemon-evolutions.md). An evolution link alone does not prove native acquisition; omitted game scope is unknown.                                |
+| `evoMethods`                                                           | Alternative evolution methods, each with its eligible predecessors. See [evolution methods](doc-8%20-%20Pok%C3%A9mon-evolution-methods.md). An evolution link alone does not prove native acquisition; omitted game scope is unknown.                                |
 
 Pokédex membership and a game's feature flags are also separate from acquisition. A Pokémon can be
 supported without appearing in that game's regional Pokédex. The `transferOnly` property of a
@@ -210,7 +215,7 @@ an exact form exists, but researched event-exclusive acquisition overrides its d
 `obtainableIn` classification. This exception does not apply to Champions or other games. Storage
 remains independent.
 
-For the [GO legendary and mythical audit](audits/go-legendary-mythical-availability.md):
+For the [GO legendary and mythical audit](../audits/doc-13%20-%20GO-legendary-and-mythical-acquisition-audit.md):
 
 - Permanent, freely unlockable Special Research is ordinary acquisition, even if it is one-time or
   follows prerequisite research. A previous GO Fest debut does not override that later route.

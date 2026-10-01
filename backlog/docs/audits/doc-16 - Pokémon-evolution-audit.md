@@ -1,7 +1,12 @@
-# Pokémon evolution audit
-
+---
+id: doc-16
+title: Pokémon evolution audit
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 Audit date: **2026-09-22**. This preserves the pre-migration findings. The accepted representation
-and subsequent implementation are documented in [evolution methods](../pokemon-evolutions.md).
+and subsequent implementation are documented in [evolution methods](../reference/doc-8%20-%20Pok%C3%A9mon-evolution-methods.md).
 Counts and old field values below describe the audit snapshot, not the migrated dataset.
 
 ## Result and coverage

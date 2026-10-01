@@ -292,7 +292,7 @@ export function availabilityJson(report: AvailabilityReport): AvailabilityJson {
     }
   }
   // Applies even to retained data or a report limited to other games. See
-  // docs/pokemon-availability.md: Champions is not an exportable acquisition source.
+  // Backlog doc-7 (availability fields): Champions is not an exportable acquisition source.
   result.obtainableIn = result.obtainableIn.filter((id) => id !== 'champions')
   for (const field of availabilityFields) {
     const ids = [...new Set(result[field])]

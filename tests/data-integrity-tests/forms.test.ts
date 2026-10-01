@@ -10,7 +10,7 @@ import { pokemonSchema } from '../../src/lib/schemas'
 import { formMethods } from '../../src/scripts/migrate-pokemon-forms'
 import { expandFormMethods } from '../../src/lib/form-methods'
 import { transitionDigest } from '../../src/scripts/form-data/transition-audit'
-import compactAudit from '../../docs/audits/form-methods/compact-reverts.json'
+import compactAudit from '../../backlog/docs/audits/form-methods/compact-reverts.json'
 
 const pokemon = loadAllPokemon()
 const byId = new Map(pokemon.map((p) => [p.id, p]))

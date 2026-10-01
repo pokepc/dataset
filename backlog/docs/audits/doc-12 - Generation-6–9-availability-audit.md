@@ -1,5 +1,10 @@
-# Generation 6–9 availability audit
-
+---
+id: doc-12
+title: Generation 6–9 availability audit
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 Audited on 2026-09-19 following
 [the availability feedback](https://pokepc.net/feedback/fbp-03yjpo7usb15f#comment-fbc-04ky2kc3s4e87).
 

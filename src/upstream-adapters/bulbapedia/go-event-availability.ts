@@ -2,7 +2,7 @@ type GoEventRule = { note: string; sourceUrl: string }
 
 // Reviewed 2026-09-24. Exact records only; applied after the GO table proves release.
 // Permanent research and recurring raids take precedence over an event debut.
-// Sources, retained forms and review criteria: docs/audits/go-legendary-mythical-availability.md.
+// Sources, retained forms and review criteria: Backlog doc-13 (GO legendary audit).
 export const goEventAvailabilityRules: Partial<Record<string, GoEventRule>> = {
   cosmog: {
     note: 'Cosmog requires Special Research claimed during a limited event or season.',

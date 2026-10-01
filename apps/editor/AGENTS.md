@@ -1,7 +1,8 @@
 # Dataset editor
 
-Read [the editor guide](../../docs/editor.md) before changing behavior. This is trusted local
-maintainer tooling for the repository's `data/`; use disposable copies for write verification.
+Read [the editor guide](../../backlog/docs/guides/doc-10%20-%20Dataset-editor.md) before changing
+behavior. This is trusted local maintainer tooling for the repository's `data/`; use disposable
+copies for write verification.
 
 - This repository is public. Keep documentation self-contained, use public links, and avoid private
   tracker references, nonpublic repositories, and developer-specific paths.

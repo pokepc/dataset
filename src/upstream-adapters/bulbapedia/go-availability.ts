@@ -341,7 +341,7 @@ export function resolveGoAvailability(
   let matches = speciesEntries.filter((entry) => entry.speciesWide || entry.form === form)
   // Reviewed identities, not species-wide availability inheritance. Xerneas changes its
   // appearance automatically; both Toxtricity variants share the GMax form. Exact form entries
-  // still win, including an explicit unreleased entry. See docs/audits/ordinary-form-availability.md.
+  // still win, including an explicit unreleased entry. See Backlog doc-14.
   const sharedForm = (
     {
       'xerneas-active': '',

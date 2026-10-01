@@ -1,5 +1,10 @@
-# Vivillon availability audit
-
+---
+id: doc-20
+title: Vivillon availability audit
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 Reviewed 2026-09-22. Covers all 20 dataset records, including `vivillon` = Icy Snow. The shared CLI
 and editor use `vivillon-availability-rules.ts`; blanket base inheritance is removed.
 
@@ -46,7 +51,7 @@ Marine in Z-A comes from evolving the
 The permanent side quest counts as ordinary acquisition. The
 [Champions roster](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_in_Pok%C3%A9mon_Champions)
 lists High Plains as recruitable and the other patterns as transfer-only. Under the
-[dataset field definitions](../pokemon-availability.md), all 20 patterns are T in Champions: High
+[dataset field definitions](../reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md), all 20 patterns are T in Champions: High
 Plains can also visit from HOME, but local recruits cannot be exported, as documented in the
 [official connectivity rules](https://champions.pokemon.com/en-gb/pokemon/). This is a current
 snapshot, not an assumption about eventual roster expansion.

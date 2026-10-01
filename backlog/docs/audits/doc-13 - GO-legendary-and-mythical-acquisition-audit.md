@@ -1,7 +1,12 @@
-# GO legendary and mythical acquisition audit
-
+---
+id: doc-13
+title: GO legendary and mythical acquisition audit
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 Reviewed **2026-09-24** against the
-[canonical availability definitions](../pokemon-availability.md). Scope: all 188 dataset records
+[canonical availability definitions](../reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md). Scope: all 188 dataset records
 marked `isLegendary` or `isMythical`, including their exact forms (128 legendary, 60 mythical). Of
 these, 111 have a released GO acquisition route. The resulting classification is 103 ordinary and
 eight event-only records; the other 77 retain no GO acquisition. Ultra Beasts without either flag,

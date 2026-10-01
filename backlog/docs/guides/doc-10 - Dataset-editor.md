@@ -1,5 +1,10 @@
-# Dataset editor
-
+---
+id: doc-10
+title: Dataset editor
+type: guide
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 The trusted-maintainer editor lives in `apps/editor` and edits this repository's `data/` files. It
 uses the local `@pokepc/dataset` workspace package for schemas, types and filesystem access.
 Existing Pokemon and game images load from `https://static.pokepc.net`.
@@ -105,7 +110,7 @@ The **Availability** column after **Game** displays the relevant table's classif
 obtainable, 🔀 transfer only, 🎁 event only, ❌ explicitly unavailable, or — not established. GO
 uses a loaded entry from the GO table when available, falling back to main-table GO evidence; other
 games use the main availability table and the
-[transformation rules](pokemon-availability-cli.md#mega-and-gigantamax-rules). Select a status to
+[transformation rules](doc-11%20-%20Pok%C3%A9mon-availability-CLI.md#mega-and-gigantamax-rules). Select a status to
 expand its table label or rule and mapping. No AI verdict or source consensus is involved, and
 loading tables never changes the draft. Cosmetic female forms inherit their parent's rows except in
 Generation I, where genders do not exist. Other unmatched forms remain unverified.
@@ -244,7 +249,7 @@ classic or modern dataset box preset schema before writing.
 
 ## Implementation and remaining verification
 
-Reusable editor behavior belongs in [`apps/editor/app/lib`](../apps/editor/app/lib), with filesystem
+Reusable editor behavior belongs in [`apps/editor/app/lib`](../../../apps/editor/app/lib), with filesystem
 operations in sibling `*.server.ts` modules. Keep routes slim, preserve sibling files and index
 entries, and validate writes against the dataset schemas. Pure logic and filesystem modules remain
 separate. Tests belong beside the lib modules.

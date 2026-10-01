@@ -1,5 +1,10 @@
-# Form-change audit — 2026-09-22
-
+---
+id: doc-17
+title: Form-change audit — 2026-09-22
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 The initial dataset pass covers the inventory of **1,595 records / 1,025 species**, including all
 **307 species with multiple records**. It adds **1,082 incoming methods to 494 records**, including
 reverse transitions, and removes **140 legacy `formItem` fields**. This is a researched core-series

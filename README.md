@@ -89,19 +89,23 @@ data/
 
 Root JSON files are collection files. `games/`, `pokedexes/`, and `pokemon/` contain one JSON file
 per entity. `indices/` controls the order of those per-entity files. `codes/` holds append-only
-numeric codes for Pokémon, ribbons, marks and moves; read the [code map rules](docs/codes.md) before
-adding, renaming or removing any of them.
+numeric codes for Pokémon, ribbons, marks and moves; read the
+[code map rules](backlog/docs/reference/doc-3%20-%20Code-maps.md) before adding, renaming or
+removing any of them.
 
-The [game lifecycle reference](docs/game-lifecycle.md) defines release, digital delisting and
-required-service shutdown dates, including announced future closures.
+The [game lifecycle reference](backlog/docs/reference/doc-4%20-%20Game-lifecycle-dates.md) defines
+release, digital delisting and required-service shutdown dates, including announced future closures.
 
-The [Pokémon availability field reference](docs/pokemon-availability.md) defines acquisition,
-storage, shiny availability, and related form fields for both maintainers and agents. The
-[evolution reference](docs/pokemon-evolutions.md) and
-[form-transition reference](docs/pokemon-forms.md) explain the method arrays, typed conditions, and
-translation-ready enum exports. The [ability-history audit](docs/audits/pokemon-ability-changes.md)
-defines `legacyAbilities` and lists released historical ability changes, with unreleased/unused
-assignments documented as exclusions.
+The
+[Pokémon availability field reference](backlog/docs/reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md)
+defines acquisition, storage, shiny availability, and related form fields for both maintainers and
+agents. The
+[evolution reference](backlog/docs/reference/doc-8%20-%20Pok%C3%A9mon-evolution-methods.md) and
+[form-transition reference](backlog/docs/reference/doc-9%20-%20Pok%C3%A9mon-form-transitions.md)
+explain the method arrays, typed conditions, and translation-ready enum exports. The
+[ability-history audit](backlog/docs/audits/doc-15%20-%20Pok%C3%A9mon-ability-history.md) defines
+`legacyAbilities` and lists released historical ability changes, with unreleased/unused assignments
+documented as exclusions.
 
 ## Contributing
 
@@ -182,12 +186,14 @@ pnpm dev:editor
 
 The editor runs on `http://127.0.0.1:3003` without external-directory configuration.
 `pnpm dev:openapi` starts only the OpenAPI preview, and `pnpm dev` runs both in parallel. See the
-[editor guide](docs/editor.md) for editing rules, builds and disposable browser tests.
+[editor guide](backlog/docs/guides/doc-10%20-%20Dataset-editor.md) for editing rules, builds and
+disposable browser tests.
 
 ## Pokémon availability lookup
 
 Game records include PokéAPI version and version-group IDs. See the
-[game ID mapping guide](docs/pokeapi-game-ids.md) for the schema and one-off population script.
+[game ID mapping guide](backlog/docs/reference/doc-6%20-%20Pok%C3%A9API-game-IDs.md) for the schema
+and one-off population script.
 
 Inspect the two Bulbapedia availability lists using a dataset Pokémon ID or nid:
 
@@ -203,8 +209,8 @@ It preserves existing values where the source is inconclusive, including `storab
 warnings. With `--patch`, it updates and formats the selected Pokémon file and prints a summary of
 added and removed games instead of the table or JSON. The CLI and editor share deterministic parsers
 for the main and GO availability lists; no AI or API key is required. See the
-[CLI guide](docs/pokemon-availability-cli.md) for saved HTML input, classification rules, and
-limitations.
+[CLI guide](backlog/docs/guides/doc-11%20-%20Pok%C3%A9mon-availability-CLI.md) for saved HTML input,
+classification rules, and limitations.
 
 Run `pnpm pokemon:availability:all` to review every Pokémon interactively. Each iteration shows the
 changes summary and accepts `p` to patch or `s` to skip. Press Ctrl+C to stop.

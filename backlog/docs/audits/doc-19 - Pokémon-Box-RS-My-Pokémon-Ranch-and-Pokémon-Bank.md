@@ -1,10 +1,15 @@
-# Pokémon Box RS, My Pokémon Ranch and Pokémon Bank
-
+---
+id: doc-19
+title: 'Pokémon Box RS, My Pokémon Ranch and Pokémon Bank'
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 Reviewed 2026-09-25. IDs are `boxrs` and `ranch`, both `series: storage`, following Bank/HOME. The
 game index uses their first release dates: 2003-05-30 and 2008-03-25 respectively.
 
 Store delisting and required-service shutdown are separate metadata; see
-[game lifecycle dates](../game-lifecycle.md) for the verified Bank and Ranch cutoffs.
+[game lifecycle dates](../reference/doc-4%20-%20Game-lifecycle-dates.md) for the verified Bank and Ranch cutoffs.
 
 ## Box RS
 

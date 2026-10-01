@@ -1,5 +1,10 @@
-# Location catalog
-
+---
+id: doc-5
+title: Location catalog
+type: specification
+created_date: '2026-09-30 23:59'
+updated_date: '2026-09-30 23:59'
+---
 `data/locations.json` combines the named places listed by
 [PokémonDB](https://pokemondb.net/location),
 [PokéAPI](https://pokeapi.co/docs/v2#locations-section), and
@@ -82,7 +87,7 @@ The adapters and reviewed mappings live in `src/upstream-adapters/locations/`:
    source corrections, aliases, primary API IDs, canonical names, and additional game evidence with
    source URLs and reasons. No fuzzy name matching or region-wide game expansion is used.
 5. **Bulbapedia exceptions:** the versioned
-   [exception registry](../src/upstream-adapters/locations/exceptions.json) records the review of
+   [exception registry](../../../src/upstream-adapters/locations/exceptions.json) records the review of
    distinct candidates left unresolved after merging duplicates and aliases from the first three
    sources. Merged names belong in the normal alias mappings, not in this exception list. Include an
    actual in-game location only if it has its own article; a redirect to a parent location's section

@@ -1,5 +1,10 @@
-# PokéAPI game IDs
-
+---
+id: doc-6
+title: PokéAPI game IDs
+type: specification
+created_date: '2026-09-30 23:59'
+updated_date: '2026-09-30 23:59'
+---
 Every `data/games/*.json` record has two nullable positive integer references:
 
 - `pokeApiGameVersionId`: the ID of the exact PokéAPI `/version/{id}` resource.
@@ -49,5 +54,5 @@ manual review. Repeating it against the same metadata produces no further change
 
 The shared game schema also provides the `Pkds.Game` TypeScript type and public OpenAPI game schema;
 both include these fields. These mappings remain available for other PokéAPI integrations; the
-[availability CLI](pokemon-availability-cli.md) now uses only Bulbapedia's availability lists. The
+[availability CLI](../guides/doc-11%20-%20Pok%C3%A9mon-availability-CLI.md) now uses only Bulbapedia's availability lists. The
 migration itself does not change Pokémon availability.

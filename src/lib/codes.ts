@@ -1,7 +1,7 @@
 /**
  * Append-only code maps (data/codes). Consumers store these small integers instead of ids, so a
  * released code must never change meaning: codes are dense, never renumbered and never reused, and
- * an id that leaves the dataset keeps its code as a retired entry. See docs/codes.md.
+ * an id that leaves the dataset keeps its code as a retired entry. See Backlog doc-3 (Code maps).
  */
 
 export const codeMapKinds = ['pokemon', 'ribbons', 'marks', 'moves'] as const

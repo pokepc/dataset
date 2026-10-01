@@ -14,4 +14,5 @@ The editor runs on `http://127.0.0.1:3003`. From the repository root, use `pnpm 
 this app. Workspace startup commands are documented in the
 [root README](../../README.md#dataset-editor).
 
-Read the [editor guide](../../docs/editor.md) for file-safety rules, checks and disposable fixtures.
+Read the [editor guide](../../backlog/docs/guides/doc-10%20-%20Dataset-editor.md) for file-safety
+rules, checks and disposable fixtures.

@@ -1,5 +1,10 @@
-# Code maps
-
+---
+id: doc-3
+title: Code maps
+type: specification
+created_date: '2026-09-30 23:58'
+updated_date: '2026-09-30 23:59'
+---
 `data/codes/` assigns each Pokémon, ribbon, mark and move a small integer code:
 
 | File                 | Covers                                        | Initial order          |

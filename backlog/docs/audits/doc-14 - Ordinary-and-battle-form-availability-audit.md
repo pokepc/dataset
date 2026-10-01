@@ -1,6 +1,11 @@
-# Ordinary and battle form availability audit
-
-Reviewed **2026-09-22**. Apply the [canonical field definitions](../pokemon-availability.md). These
+---
+id: doc-14
+title: Ordinary and battle form availability audit
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
+Reviewed **2026-09-22**. Apply the [canonical field definitions](../reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md). These
 are researched acquisition decisions for the current main-series games, not permission to copy every
 field from a species to all of its forms. GO remains independently parsed from its exact
 form/release rows. Future games and Champions roster support require separate evidence.

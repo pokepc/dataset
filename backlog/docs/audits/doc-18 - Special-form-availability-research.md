@@ -1,8 +1,13 @@
-# Special-form availability research
-
+---
+id: doc-18
+title: Special-form availability research
+type: other
+created_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 00:00'
+---
 Reviewed **2026-09-22** against Bulbapedia species `Form_data` and `Game_locations` sections
 (including the existing local HTML cache), with current item/distribution pages checked where
-needed. Apply the [canonical field definitions](../pokemon-availability.md), not the everyday
+needed. Apply the [canonical field definitions](../reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md), not the everyday
 meaning of "event Pokémon". O = `obtainableIn`, T = `transferOnlyIn`, E = `eventOnlyIn`.
 
 This is an implementation decision reference. It does not itself certify that every proposed storage

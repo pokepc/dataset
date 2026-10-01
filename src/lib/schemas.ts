@@ -338,7 +338,7 @@ export const pokemonSchema = z.object({
   canGmax: z.coerce.boolean(),
   canDynamax: z.coerce.boolean(),
   canBeAlpha: z.coerce.boolean(),
-  // ---- Availability: canonical definitions in docs/pokemon-availability.md.
+  // ---- Availability: canonical definitions in Backlog doc-7.
   debutIn: common.slug, // the first game it appeared in
   obtainableIn: z.array(common.slug), // exportable ordinary acquisition; Megas require a native base route; GO allows non-exportable releases but excludes researched event-only routes; excludes Champions recruits
   transferOnlyIn: z.array(common.slug), // external acquisition/dependency, including distributions and verified visitors

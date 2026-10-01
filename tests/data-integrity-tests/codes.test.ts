@@ -9,7 +9,7 @@ const require = createRequire(import.meta.url)
 
 /**
  * The code map of the last published release, installed as the `@pokepc/dataset-released` npm
- * alias (see docs/codes.md). Null until a release that contains code maps is pinned there.
+ * alias (see Backlog doc-3). Null until a release that contains code maps is pinned there.
  */
 function loadReleasedCodeMap(kind: string): Pkds.CodeMapEntry[] | null {
   try {
