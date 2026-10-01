@@ -3,7 +3,7 @@ id: doc-9
 title: Pokémon form transitions
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 00:00'
+updated_date: '2026-10-01 06:06'
 ---
 `formMethods` on the **destination record** describes alternative ways an individual Pokémon can
 change into that form. One method must match; its conditions must all hold. Each method owns its
@@ -44,7 +44,7 @@ Kyurem. There is no duplicated incoming separation method on `kyurem`.
 | `minLevel?`  | Minimum level when relevant, such as Schooling                                                       |
 | `item?`      | Item ID, `held` / `used` / `bag` role, optional `consumed` boolean                                   |
 | `conditions` | Conjunction of typed conditions; `[]` means no additional requirements are recorded                  |
-| `notes?`     | Localized explanatory text keyed by language alpha-3 code                                            |
+| (notes)      | Not part of the method: `data/i18n/<locale>/pokemon.json` holds `formNotes`, keyed by method index or `<method>.revert.<revert>` |
 | `revert?`    | Alternative rules for returning from this transformation; absent means unrecorded                    |
 
 Optional values are unknown or unrecorded, not an assertion that no restriction exists. Explicit
@@ -147,18 +147,8 @@ Classification flags, `baseSpecies`, `baseForms`, `forms`, evolution and availab
 unchanged. Do not infer switching between regional forms, genders, fixed cosmetic forms, or
 different evolution outcomes. Missing `formMethods` alone is not proof that no change exists.
 
-The reviewed manifest and item additions are under `src/scripts/form-data/`. Applying them requires
-no network or local source cache:
-
-```sh
-pnpm pokemon:forms:migrate
-pnpm pokemon:forms:migrate --write
-```
-
-The first command previews changes. The migrator validates and prepares all records before writing,
-checks for concurrent edits, preserves unrelated record text/values, and refuses to overwrite
-different existing methods or discard unmatched legacy requirements. The compact migration only
-upgrades previous methods matching the reviewed per-record hashes; edited records still fail safely.
-Records containing only moved return rules lose their now-empty `formMethods` field. Re-running is
-idempotent. The exceptional legacy Mawilite on ordinary Mawile is removed; the actual requirement is
-on Mega Mawile.
+The reviewed manifest and its migrator (`pnpm pokemon:forms:migrate`) were applied in v7 and
+removed in v8; see Git history. Form methods are now maintained in `data/pokemon/<id>.json` and
+their notes in `data/i18n/<locale>/pokemon.json`; `tests/data-integrity-tests/forms.test.ts` still
+checks the audited transition digest, with notes re-attached from `formNotes`. The exceptional legacy
+Mawilite on ordinary Mawile is removed; the actual requirement is on Mega Mawile.

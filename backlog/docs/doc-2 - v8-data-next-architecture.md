@@ -3,9 +3,10 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 06:00'
+updated_date: '2026-10-01 06:07'
 ---
-Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
+Specification of the v8 data model that replaced the v7 `data/` layout and `src/lib`, as shipped on
+`main` for 8.0.0 (milestone `m-0`). The decision
 and its consequences are in
 [decision-2](../decisions/decision-2%20-%20v8-version-data-per-game-set-with-full-translations-data-next.md);
 locale codes are fixed by

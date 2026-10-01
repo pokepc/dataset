@@ -3,7 +3,7 @@ id: doc-5
 title: Location catalog
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 06:06'
 ---
 `data/locations.json` combines the named places listed by
 [PokémonDB](https://pokemondb.net/location),
@@ -14,7 +14,6 @@ updated_date: '2026-09-30 23:59'
 ```json
 {
   "id": "kitakami-apple-hills",
-  "name": "Apple Hills",
   "games": ["sv-s", "sv-v"],
   "region": "kitakami",
   "pokeApiId": 1058
@@ -24,7 +23,7 @@ updated_date: '2026-09-30 23:59'
 - `id` is a stable lowercase slug, normally prefixed with its geographic region. Explicit aliases
   merge spelling differences and renamed places. Different places with the same name retain separate
   IDs, such as the two Unova Victory Roads.
-- `name` is the English display name. PokéAPI names are preferred, with reviewed corrections and
+- The English display name lives in `data/i18n/eng/locations.json` (`{ "kitakami-apple-hills": { "name": "Apple Hills" } }`); records hold no text. PokéAPI names are preferred, with reviewed corrections and
   canonical names for aliases. Meaningful named sublocations are retained.
 - `games` contains **individual** IDs from `data/games`, ordered by `data/indices/games.json`.
   Membership means the place exists in that version; it does not promise a wild encounter. DLC

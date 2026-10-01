@@ -2,7 +2,7 @@
 id: decision-2
 title: 'v8: version data per game set with full translations (data-next)'
 date: '2026-10-01 00:01'
-status: accepted
+status: implemented
 ---
 ## Context
 
@@ -36,9 +36,12 @@ The next major release (v8) replaces `data/` and the `src/lib` schemas and types
 - **Hard cut**: v8 drops `data/` and `lib/` with no deprecated copy. The editor moves to the v8
   model as part of the release.
 
-Status: accepted, implementation in progress. `data-next/` and `lib-next/*` already ship in the
-v7 package as a preview with no stability guarantee. Design and progress:
-[v8 data-next architecture](../docs/doc-2%20-%20v8-data-next-architecture.md).
+Status: implemented for 8.0.0 (milestone `m-0`). The preview's `data-next/` and `lib-next` became
+the package's `data/` and `lib/`; paths above read accordingly (`data/pokemon/<id>.json`,
+`data/mods/<set>/pokemon/<id>.json`, `lib/merge`; prose is in `data/i18n/<locale>/pokemon-prose/`).
+Shipped model:
+[v8 architecture](../docs/doc-2%20-%20v8-data-next-architecture.md); consumer migration:
+[`docs/migrating-to-v8.md`](../../docs/migrating-to-v8.md).
 
 ## Consequences
 

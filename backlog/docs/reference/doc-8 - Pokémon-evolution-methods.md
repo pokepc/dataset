@@ -3,7 +3,7 @@ id: doc-8
 title: Pokémon evolution methods
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 00:00'
+updated_date: '2026-10-01 06:06'
 ---
 `evoMethods` on a resulting Pokémon/form contains alternative ways to evolve into that record. Meet
 **one method**, and **all conditions within that method**. `from` lists alternative eligible
@@ -36,7 +36,7 @@ source URLs and verification status in audit documents, outside the bundled data
 | `conditions`       | Typed semantic keys and their parameters; all must be met                                                 |
 | `additionalResult` | Shedinja-style extra result, rather than replacing the source instead of its usual evolution              |
 | `activation`       | Optional `manual`/`automatic`; PLA requires the Evolve menu action                                        |
-| `notes`            | Optional localized explanatory text using existing language IDs, e.g. `eng`                               |
+| (notes)            | Explanatory text is not part of the method: `data/i18n/<locale>/pokemon.json` holds it as `evoNotes`, keyed by method index (`{ "0": "…" }`). A `special` method without conditions needs an English note |
 
 Methods describe known requirements, not an exhaustive eligibility predicate. Unresolved source
 conflicts are explained in notes. Neither source introduction games nor acquisition/storage lists
@@ -98,20 +98,10 @@ Melmetal route. It corrects the six confirmed non-cosmetic predecessor links and
 evolution resources to the item catalog. Existing unrelated fields and record formatting are
 preserved. All 63 Alcremie recipes now have distinct item/condition combinations.
 
-The offline, idempotent migration reads the audit CSV snapshot from
-`.local/evolution-audit/pokeapi/`. It performs no network calls, upgrades the previous
-`evolutionMethods` spelling, removes legacy fields, and leaves canonical records unchanged:
-
-```sh
-node src/scripts/migrate-pokemon-evolutions.ts
-node src/scripts/migrate-pokemon-evolutions.ts --write
-```
-
-To repeat it in a fresh checkout, place the `pokemon_evolution`, `pokemon_species`,
-`evolution_triggers`, `items`, `moves`, and `types` CSVs there, using the source URLs/hashes in the
-[audit manifest](../audits/evolution-findings.json). The first command previews changes. Existing
-method contents are never overwritten by rerunning the migration. Renaming existing methods and
-removing redundant fields does not require the CSV cache.
+The offline migration (`src/scripts/migrate-pokemon-evolutions.ts`, read from the audit CSV snapshot
+listed in the [audit manifest](../audits/evolution-findings.json)) was applied in v7 and removed in
+v8; see Git history. Evolution data is now maintained in `data/pokemon/<id>.json` and its notes in
+`data/i18n/<locale>/pokemon.json`.
 
 Most ordinary methods retain partial game scope rather than inventing a complete game matrix. The
 existing cosmetic-female predecessor convention remains unchanged, with explicit female conditions

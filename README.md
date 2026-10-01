@@ -17,11 +17,26 @@ pnpm add @pokepc/dataset
 Example imports:
 
 ```ts
-import bulbasaur from '@pokepc/dataset/data/pokemon/bulbasaur'
+import bulbasaur from '@pokepc/dataset/data/pokemon/bulbasaur' with { type: 'json' }
+import pokemonText from '@pokepc/dataset/data/i18n/eng/pokemon' with { type: 'json' }
 import { pokemonSchema } from '@pokepc/dataset/lib/schemas'
 
-const pokemon = pokemonSchema.parse(bulbasaur)
+const pokemon = pokemonSchema.parse(bulbasaur) // base record, no text
+const name = pokemonText.bulbasaur?.name // text lives in per-locale files
 ```
+
+Node helpers read the installed data directly:
+
+```ts
+import { loadAllPokemon, loadGameSet, loadText } from '@pokepc/dataset/lib/fs'
+
+const japanese = loadText('pokemon', 'jpn') // missing translations stay missing
+const champions = loadGameSet('champions') // base + Champions mods, merged
+```
+
+Exports: `@pokepc/dataset/data/*` (JSON files, and `data/i18n/<locale>/pokemon-prose/<id>.md`) and
+`@pokepc/dataset/lib/*` (`schemas`, `types`, `fs`, `merge`, `languages`, `enums`, `search`, `utils`,
+`codes`, `evolution-schemas`, `form-schemas`, `form-methods`, `constants`, `availability-sources`).
 
 JSON imports depend on your runtime or bundler configuration. In this repository, the raw files are
 always available under `data/`.
@@ -39,10 +54,14 @@ The OpenAPI docs and static JSON API are hosted on GitHub Pages:
 | `/dataset/latest/` | Latest stable SemVer tag                  |
 | `/dataset/v6/`     | Latest stable v6 tag                      |
 | `/dataset/v7/`     | Latest stable v7 tag                      |
+| `/dataset/v8/`     | Latest stable v8 tag (after 8.0.0)        |
 
-Each path serves its own `openapi.json`, `data/`, and `data-next/`. Every spec lists all deployed
-servers, with its own server selected first in Swagger UI. The documentation links open each
-version's matching schema; changing the server dropdown only changes the request destination.
+Each path serves its own `openapi.json` and data. v8 builds serve base data at their root
+(`/pokemon/{id}.json`, `/moves.json`, …), text under `/i18n/{locale}/`, mods under `/mods/{set}/`
+and merged data of game sets with mods under `/games/{set}/` (8.0.0: `/games/champions/`); v6 and v7
+builds keep their `data/` (and v7 `data-next/`) layout. Every spec lists all deployed servers, with
+its own server selected first in Swagger UI. The documentation links open each version's matching
+schema; changing the server dropdown only changes the request destination.
 [`versions.json`](https://pokepc.github.io/dataset/versions.json) records the deployed refs and
 commits.
 
@@ -78,17 +97,22 @@ agents, it unlocks many extras:
 
 ```text
 data/
-  abilities.json
-  codes/
-  games/
-  indices/
-  metadata/
-  pokedexes/
-  pokemon/
-  boxpresets/
-    classic/
-    modern/
+  abilities.json, moves.json, …   collection files (base records)
+  pokemon/ games/ pokedexes/      one file per entity
+  indices/                        order of the per-entity files
+  boxpresets/{classic,modern}/
+  codes/ metadata/
+  i18n/<locale>/<kind>.json       text per locale (eng, jpn, es-es, …)
+  i18n/<locale>/pokemon-prose/    species prose (Markdown)
+  mods/<set>/                     game set roster, overrides and text (8.0.0: champions)
 ```
+
+Records are **base** data: game-independent and without text. Names, descriptions and other text
+live in `i18n/<locale>/`; missing translations are omitted, never filled from another language.
+**Mods** hold what a game set changes; `mergeGameSet` (`lib/merge`) or `loadGameSet` (`lib/fs`)
+combine base, mods and text into that set's data. The model is specified in the
+[v8 architecture](backlog/docs/doc-2%20-%20v8-data-next-architecture.md); upgrading from v7 is
+covered by the [migration guide](docs/migrating-to-v8.md).
 
 Root JSON files are collection files. `games/`, `pokedexes/`, and `pokemon/` contain one JSON file
 per entity. `indices/` controls the order of those per-entity files. `codes/` holds append-only
@@ -122,8 +146,11 @@ pnpm test
 pnpm build
 ```
 
-When changing data, run the tests before opening a PR. When changing the static API docs, run
-`pnpm build:pages` and check the local Swagger UI with `pnpm dev:openapi`.
+When changing data, run the tests before opening a PR. Champions data is maintained with
+`pnpm champions:update` after updating its upstream submodule (see
+[the adapter README](src/upstream-adapters/projectpokemon-champout/README.md)); it is not part of
+`pnpm build`. When changing the static API docs, run `pnpm build:pages` and check the local Swagger
+UI with `pnpm dev:openapi`.
 
 `pnpm test` blocks external network requests, including in Node CLI subprocesses. Upstream tests
 must use fixtures, mocked responses, or loopback test servers; they must not crawl live services.
@@ -140,8 +167,8 @@ This writes:
 dist-pages/
   index.html
   openapi.json
-  data/
-  data-next/
+  pokemon/ moves.json … i18n/ mods/   the data/ directory, at the root
+  games/<set>/                        merged data of game sets with mods
 ```
 
 Build all published versions from the remote default branch and tags (requires Git, Node.js 24+,
@@ -196,7 +223,7 @@ disposable browser tests.
 
 Game records include PokéAPI version and version-group IDs. See the
 [game ID mapping guide](backlog/docs/reference/doc-6%20-%20Pok%C3%A9API-game-IDs.md) for the schema
-and one-off population script.
+and mapping rules.
 
 Inspect the two Bulbapedia availability lists using a dataset Pokémon ID or nid:
 

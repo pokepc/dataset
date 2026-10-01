@@ -3,10 +3,12 @@ id: doc-7
 title: Pokémon availability fields
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 00:00'
+updated_date: '2026-10-01 06:06'
 ---
 This is the canonical field reference for humans and agents editing `data/pokemon/*.json`, the
-schemas, the editor, and the availability tools. It supersedes older audit terminology. Last policy
+schemas, the editor, and the availability tools. These fields are game-independent base data; they
+are never overridden by game set mods. Records hold no text: names and form names are in
+`data/i18n/<locale>/pokemon.json`. It supersedes older audit terminology. Last policy
 review: **2026-09-24**. Implementation and source details are in the
 [availability CLI guide](../guides/doc-11%20-%20Pok%C3%A9mon-availability-CLI.md).
 

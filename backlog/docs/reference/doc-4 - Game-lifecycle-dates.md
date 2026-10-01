@@ -3,9 +3,10 @@ id: doc-4
 title: Game lifecycle dates
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 06:06'
 ---
-Game records support these fields in order, immediately before `region`:
+Game records (`data/games/<id>.json`, served at `/games/{id}.json`) support these fields in order,
+immediately before `region`. Game names are text, in `data/i18n/<locale>/games.json`:
 
 | Field            | Meaning                                                                                                                                                                                  |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

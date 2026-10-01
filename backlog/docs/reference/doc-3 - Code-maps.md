@@ -3,7 +3,7 @@ id: doc-3
 title: Code maps
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-09-30 23:59'
+updated_date: '2026-10-01 06:06'
 ---
 `data/codes/` assigns each Pokémon, ribbon, mark and move a small integer code:
 
@@ -28,7 +28,9 @@ leaves the dataset. The schema is `codeMapEntrySchema` in `src/lib/schemas.ts`.
 - An id that leaves the dataset stays in its map with `"retired": true`. Set `"replacedBy"` when a
   live id replaces it, such as a removed ability form replaced by its base form. A retired entry
   never becomes live again; a returning id gets a new code.
-- Every id in the dataset has a code.
+- Every id in the dataset has a code. In v8 the maps cover base ids; game set mods
+  (`data/mods/<set>/`) only override existing ids, so they never need codes. The v8 cut-over kept
+  every map byte-identical to 7.5.0.
 
 ## Changing data
 
