@@ -29,7 +29,7 @@ v7 stays available, but unversioned entry points switch to v8.
 | ------------------------------------------ | ------------------------------------------------------------- | -------------------------------------- |
 | npm `@pokepc/dataset`                      | `^7` stays on v7; `latest`, `*` or `>=7` install v8           | `"@pokepc/dataset": "^7"`              |
 | `https://pokepc.github.io/dataset/`        | Follows the default branch, which is already the v8 workspace | `https://pokepc.github.io/dataset/v7/` |
-| `https://pokepc.github.io/dataset/latest/` | Switches to v8 when 8.0.0 is released                         | `https://pokepc.github.io/dataset/v7/` |
+| `https://pokepc.github.io/dataset/latest/` | Serves v8 since 8.0.0                                         | `https://pokepc.github.io/dataset/v7/` |
 
 v7 fixes are released from the `7.x` branch as 7.x versions.
 
@@ -89,8 +89,8 @@ Every locale directory and key uses the lowercase in-game language code:
 ### Static API URLs
 
 v7 served each version's files under `data/` and `data-next/`. v8 drops both prefixes. With `<v8>` =
-`https://pokepc.github.io/dataset/v8` (or `/latest` once 8.0.0 is the latest release, or the root
-for the development build):
+`https://pokepc.github.io/dataset/v8` (or `/latest` while v8 is the latest major, or the root for
+the development build):
 
 | v7 URL                                                                | v8 URL                                                                                                    |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |

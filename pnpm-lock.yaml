@@ -176,8 +176,8 @@ importers:
         version: 4.6.5
     devDependencies:
       '@pokepc/dataset-released':
-        specifier: npm:@pokepc/dataset@7.5.0
-        version: '@pokepc/dataset@7.5.0'
+        specifier: npm:@pokepc/dataset@8.0.0
+        version: '@pokepc/dataset@8.0.0'
       '@types/bun':
         specifier: ^1.4.2
         version: 1.4.2
@@ -580,8 +580,8 @@ packages:
     engines: {node: '>=20'}
     hasBin: true
 
-  '@pokepc/dataset@7.5.0':
-    resolution: {integrity: sha512-LA2FVA3sjSC8tFJ4ruEfYRRXHOXSLo7NDp56Zl4tpBPizf3elZpFO4dop3Rq4A0VKde2e1SsDfEiW3oNYywCJA==}
+  '@pokepc/dataset@8.0.0':
+    resolution: {integrity: sha512-HBP65Y06+zSZy3W+wKfrzKXftMSNhG0IZdPzKJQzWX+/+NAxwfkOs0qhdkgU5XRt5WUxpvYJryfgPEW8WdCg2A==}
 
   '@publint/pack@0.1.7':
     resolution: {integrity: sha512-4EDEmvxWtgsCnnVeBvtFIFZtUhPPt1+bA9JrSwU4Sa//6oKtzCSlGGXYJr44OD9aGISymbieJ4mCKHUygUDU+g==}
@@ -1172,10 +1172,6 @@ packages:
   cookie@0.7.2:
     resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
-
-  copy-anything@4.1.4:
-    resolution: {integrity: sha512-/LLeW0CtsoSybVkEpYjifB2Pis8DUSuwY7QD9FiR98fWkdbdrACw3ilckfnAHMecQ+RFEdZlRt6eCXhYHJbl/g==}
-    engines: {node: '>=18'}
 
   css-select@5.2.2:
     resolution: {integrity: sha512-TizTzUddG/xYLA3NXodFM0fSbNizXjOKhqiQQwvhlspadZokn1KDy0NZFS0wuEubIYAV5/c1/lAr0TaaFXEXzw==}
@@ -2013,10 +2009,6 @@ packages:
     resolution: {integrity: sha512-yDPMNjp4WyfYBkHnjIRLfca1i6KMyGCtsVgoKe/z1+6vukgaENdgGBZt+ZmKPc4gavvEZ5OgHfHdrazhgNyG7w==}
     engines: {node: '>=12'}
 
-  superjson@2.2.6:
-    resolution: {integrity: sha512-H+ue8Zo4vJmV2nRjpx86P35lzwDT3nItnIsocgumgr0hHMQ+ZGq5vrERg9kJBo5AWGmxZDhzDo+WVIJqkB0cGA==}
-    engines: {node: '>=16'}
-
   supports-color@10.2.2:
     resolution: {integrity: sha512-SS+jx45GF1QjgEXQx4NJZV9ImqmO2NPz5FNsIHrsDjh2YsHnawpan7SNQ1o8NuhrbHZy9AZhIoCUiCeaW/C80g==}
     engines: {node: '>=18'}
@@ -2274,9 +2266,6 @@ packages:
     resolution: {integrity: sha512-4UEqdc2RYGHZc7Doyqkrqiln3p9X2DZVxaGbwhn2pi7MrRagKaOcIKe8L3OxYcbhXLgLFUS3zAYuQjKBQgmuNg==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=23}
 
-  yolodb@1.2.0:
-    resolution: {integrity: sha512-UdyPAX+Bf1mto2imSziqmhoq83SDeFit43I+oAfticVjCh/PR6li7kRJBIJ4yQ5vovG9zDsehyiBKb0Nb/ptIA==}
-
   yuku-ast@0.10.2:
     resolution: {integrity: sha512-UnG9mA6giglCvSErft2/40TVFX750Sj1xgwddPLpG7J7rlr/P1wPADg9G2RK+d/1tNLtRVoLdMMOMVBB9561TQ==}
 
@@ -2525,9 +2514,8 @@ snapshots:
     dependencies:
       playwright: 1.63.0
 
-  '@pokepc/dataset@7.5.0':
+  '@pokepc/dataset@8.0.0':
     dependencies:
-      yolodb: 1.2.0
       zod: 4.6.5
 
   '@publint/pack@0.1.7':
@@ -3012,8 +3000,6 @@ snapshots:
   cookie-signature@1.2.2: {}
 
   cookie@0.7.2: {}
-
-  copy-anything@4.1.4: {}
 
   css-select@5.2.2:
     dependencies:
@@ -3737,10 +3723,6 @@ snapshots:
     dependencies:
       ansi-regex: 6.4.0
 
-  superjson@2.2.6:
-    dependencies:
-      copy-anything: 4.1.4
-
   supports-color@10.2.2: {}
 
   tailwind-merge@3.7.0: {}
@@ -3899,10 +3881,6 @@ snapshots:
       string-width: 7.2.0
       y18n: 5.0.8
       yargs-parser: 22.0.0
-
-  yolodb@1.2.0:
-    dependencies:
-      superjson: 2.2.6
 
   yuku-ast@0.10.2:
     dependencies:

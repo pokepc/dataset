@@ -62,7 +62,7 @@ The OpenAPI docs and static JSON API are hosted on GitHub Pages:
 | `/dataset/latest/` | Latest stable SemVer tag                  |
 | `/dataset/v6/`     | Latest stable v6 tag                      |
 | `/dataset/v7/`     | Latest stable v7 tag                      |
-| `/dataset/v8/`     | Latest stable v8 tag (after 8.0.0)        |
+| `/dataset/v8/`     | Latest stable v8 tag                      |
 
 Each path serves its own `openapi.json` and data. v8 builds serve base data at their root
 (`/pokemon/{id}.json`, `/moves.json`, …), text under `/i18n/{locale}/`, mods under `/mods/{set}/`

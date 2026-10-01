@@ -3,7 +3,7 @@ id: doc-1
 title: Project overview
 type: readme
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 06:08'
+updated_date: '2026-10-01 17:17'
 ---
 `@pokepc/dataset` is the public Pokémon dataset behind [PokéPC](https://pokepc.net): static JSON
 data for Pokémon, games, Pokédexes, box presets and related metadata, plus TypeScript helpers, Zod
@@ -13,13 +13,13 @@ current state and shape of the project and indexes the maintained docs and decis
 
 ## State (October 2026)
 
-- Stable line: **v7** (7.5.0), maintained on the `7.x` branch.
-- `main`: **v8** (8.0.0 prepared, not yet tagged). `data/` and `src/lib` are the per-game-set,
+- Stable line: **v8** (8.0.0, released 2026-10-01 on npm and `/v8/`, `/latest/`). `data/` and `src/lib` are the per-game-set,
   fully translated model of
   [decision-2](../decisions/decision-2%20-%20v8-version-data-per-game-set-with-full-translations-data-next.md):
   base records without text, per-locale text and game set mods (Champions). Specification:
   [v8 architecture](doc-2%20-%20v8-data-next-architecture.md); consumer migration:
   [`docs/migrating-to-v8.md`](../../docs/migrating-to-v8.md). Milestone `m-0`.
+- Previous line: **v7** (7.5.0), maintained on the `7.x` branch; still on npm `^7` and `/v7/`.
 - Recent: append-only numeric code maps for storage-efficient consumers
   ([decision-1](../decisions/decision-1%20-%20Append-only-numeric-code-maps-for-stored-ids.md)),
   versioned Pages deployment
