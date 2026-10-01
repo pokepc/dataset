@@ -219,8 +219,8 @@ export const moveSchema = z.strictObject({
   contact: z.boolean().optional(), // direct contact move
   championsId: championsId.optional(),
   pokeApiId: pokeApiId.optional(),
-  /** Set by mods only: whether the game set lets Pokémon use the move. */
-  usable: z.boolean().optional(),
+  /** Set by mods only: the game set has the move but does not let Pokémon use it. */
+  usable: z.literal(false).optional(),
 })
 
 export const natureSchema = z.strictObject({

@@ -1,0 +1,278 @@
+{
+  "harsh-sunlight": {
+    "name": "Sonnenschein",
+    "desc": "Der Schaden von Feuer-Attacken wird um 50 %\nerhöht und der Schaden von Wasser-Attacken\nhalbiert."
+  },
+  "rain": {
+    "name": "Regen",
+    "desc": "Der Schaden von Wasser-Attacken wird um 50 %\nerhöht und der Schaden von Feuer-Attacken\nhalbiert."
+  },
+  "sandstorm": {
+    "name": "Sandsturm",
+    "desc": "Alle Pokémon, die nicht dem Typ Gestein, Boden\noder Stahl angehören, erleiden am Ende jeder\nRunde Schaden in Höhe von 1/16 ihrer\nmaximalen KP. Die Spezial-Verteidigung von\nGesteins-Pokémon wird um 50 % erhöht."
+  },
+  "snow": {
+    "name": "Schnee",
+    "desc": "Die Verteidigung von Eis-Pokémon wird\num 50 % erhöht."
+  },
+  "electric-terrain": {
+    "name": "Elektrofeld",
+    "desc": "Die Stärke von Elektro-Attacken wird um 30 %\nerhöht.\nPokémon können nicht in Schlaf versetzt werden.\nDiese Effekte wirken nur auf Pokémon,\ndie sich auf dem Boden befinden."
+  },
+  "grassy-terrain": {
+    "name": "Grasfeld",
+    "desc": "Die Stärke von Pflanzen-Attacken wird um 30 %\nerhöht. Pokémon regenerieren am Ende jeder\nRunde 1/16 ihrer maximalen KP.\nDiese Effekte wirken nur auf Pokémon,\ndie sich auf dem Boden befinden."
+  },
+  "misty-terrain": {
+    "name": "Nebelfeld",
+    "desc": "Der erlittene Schaden durch Drachen-Attacken\nwird halbiert. Pokémon können weder\nStatusprobleme erleiden noch verwirrt werden.\nDiese Effekte wirken nur auf Pokémon,\ndie sich auf dem Boden befinden."
+  },
+  "trick-room": {
+    "name": "Bizarroraum",
+    "desc": "Pokémon mit niedrigerer Initiative handeln zuerst."
+  },
+  "magic-room": {
+    "name": "Magieraum",
+    "desc": "Die meisten getragenen Items verlieren ihre\nWirkung."
+  },
+  "wonder-room": {
+    "name": "Wunderraum",
+    "desc": "Verteidigung und Spezial-Verteidigung werden\ngetauscht."
+  },
+  "critical-hit-ratio-boost": {
+    "name": "Erhöhte Volltrefferquote",
+    "desc": "Die Wahrscheinlichkeit, dass das Pokémon mit\nseinen Angriffen einen Volltreffer landet,\nwird erhöht."
+  },
+  "confused": {
+    "name": "Verwirrung",
+    "desc": "1 bis 4 Runden lang greift das Pokémon mit\neiner Wahrscheinlichkeit von 1 zu 3 sich\nselbst an."
+  },
+  "infatuated": {
+    "name": "Anziehung",
+    "desc": "Das Pokémon kann mit 50%iger\nWahrscheinlichkeit keine Attacken einsetzen,\nwenn sich das Pokémon auf dem Kampffeld\nbefindet, von dem es in den Zustand Anziehung\nversetzt wurde."
+  },
+  "drowsy": {
+    "name": "Schläfrig",
+    "desc": "Am Ende der nächsten Runde, nachdem die\nentsprechende Attacke eingesetzt wurde,\nwird das Pokémon in Schlaf versetzt."
+  },
+  "encore": {
+    "name": "Zugabe",
+    "desc": "Das Pokémon kann nur die Attacke\n{0} einsetzen."
+  },
+  "no-ability": {
+    "name": "Keine Fähigkeit",
+    "desc": "Die Fähigkeit des Pokémon verliert ihre Wirkung."
+  },
+  "unable-to-repeat": {
+    "name": "Folgensperre",
+    "desc": "Das Pokémon kann dieselbe Attacke nicht\n2-mal in Folge einsetzen."
+  },
+  "tailwind": {
+    "name": "Rückenwind",
+    "desc": "Die Initiative des Pokémon wird verdoppelt."
+  },
+  "move-disabled": {
+    "name": "Attackenblockade",
+    "desc": "Das Pokémon kann die Attacke\n{0} nicht einsetzen."
+  },
+  "cant-escape": {
+    "name": "Wechselsperre",
+    "desc": "Das Pokémon kann nicht ausgewechselt werden.\nPokémon vom Typ Geist können nicht von diesem\nZustand betroffen sein."
+  },
+  "locked-on": {
+    "name": "Zielschuss",
+    "desc": "In der nächsten Runde, nachdem die Zustand\nverursachende Attacke eingesetzt wurde,\ntrifft die Attacke dieses Pokémon garantiert\ndas Pokémon, auf das gezielt wurde."
+  },
+  "electric-boost": {
+    "name": "Elektro-Boost",
+    "desc": "Die Stärke der nächsten Elektro-Attacke,\ndie das Pokémon einsetzt, wird verdoppelt."
+  },
+  "gravity": {
+    "name": "Erdanziehung",
+    "desc": "Die Genauigkeit von Attacken wird um 67 %\nerhöht. Pokémon vom Typ Flug und mit der\nFähigkeit Schwebe o. Ä. gelten als auf dem\nBoden befindlich. Pokémon können keine Attacken\neinsetzen, bei denen sie springen oder fliegen."
+  },
+  "safeguard": {
+    "name": "Bodyguard",
+    "desc": "Das Pokémon kann weder Statusprobleme\nerleiden noch verwirrt werden."
+  },
+  "stealth-rock": {
+    "name": "Tarnsteine",
+    "desc": "Eingewechselte Pokémon erleiden Schaden in\nHöhe von 1/8 ihrer maximalen KP.\nDer Schaden ändert sich in Abhängigkeit der\nStärken oder Schwächen des jeweiligen Pokémon\ngegenüber dem Typ Gestein."
+  },
+  "stockpiling": {
+    "name": "Horter",
+    "desc": "Jedes Mal, wenn das Pokémon die Attacke\nHorter einsetzt, werden seine Verteidigung\nund Spezial-Verteidigung um 1 Stufe erhöht."
+  },
+  "taunted": {
+    "name": "Verhöhner",
+    "desc": "Das Pokémon kann nur noch Angriffe einsetzen."
+  },
+  "magnet-rise": {
+    "name": "Magnetflug",
+    "desc": "Das Pokémon gilt als nicht auf dem Boden\nbefindlich und Boden-Attacken sowie die\nZustände Stachler, Giftspitzen und Klebenetz\nhaben keine Wirkung auf es."
+  },
+  "toxic-spikes": {
+    "name": "Giftspitzen",
+    "desc": "Eingewechselte Pokémon werden vergiftet. Wird\nder Zustand 2-mal erzeugt, werden sie schwer\nvergiftet. Flug-Pokémon oder Pokémon mit der\nFähigkeit Schwebe etc. sind nicht betroffen. Wird\nbei Kampfantritt eines Gift-Pokémon aufgehoben."
+  },
+  "wish": {
+    "name": "Wunschtraum",
+    "desc": "Am Ende der nächsten Runde, nachdem die\nentsprechende Attacke eingesetzt wurde,\nregeneriert das Pokémon an dieser Stelle\ndie Hälfte der maximalen KP des Pokémon,\ndas die Attacke eingesetzt hat."
+  },
+  "sticky-web": {
+    "name": "Klebenetz",
+    "desc": "Die Initiative von eingewechselten Pokémon wird\num 1 Stufe gesenkt.\nPokémon vom Typ Flug, Pokémon mit der\nFähigkeit Schwebe etc. sind nicht davon\nbetroffen."
+  },
+  "ingrained": {
+    "name": "Verwurzler",
+    "desc": "Das Pokémon regeneriert am Ende jeder Runde\n1/16 seiner maximalen KP.\nEs kann nicht ausgewechselt werden und gilt als\nauf dem Boden befindlich."
+  },
+  "cursed": {
+    "name": "Fluch",
+    "desc": "Das Pokémon verliert am Ende jeder Runde\n1/4 seiner maximalen KP."
+  },
+  "trick-or-treating": {
+    "name": "Halloween",
+    "desc": "Das Pokémon nimmt zusätzlich den Typ Geist an."
+  },
+  "light-screen": {
+    "name": "Lichtschild",
+    "desc": "Der Schaden, den das Pokémon durch\nSpezial-Attacken erleidet, wird halbiert.\nIn Doppelkämpfen wird er um 1/3 reduziert."
+  },
+  "reflect": {
+    "name": "Reflektor",
+    "desc": "Der Schaden, den das Pokémon durch\nphysische Attacken erleidet, wird halbiert.\nIn Doppelkämpfen wird er um 1/3 reduziert."
+  },
+  "sealing-off": {
+    "name": "Begrenzer",
+    "desc": "Der Anwender von Begrenzer hindert seine\nGegner daran, Attacken einzusetzen,\ndie er ebenfalls beherrscht."
+  },
+  "perishing": {
+    "name": "Untergang",
+    "desc": "Das Pokémon wird drei Runden, nachdem es in\ndiesen Zustand versetzt wurde, kampfunfähig."
+  },
+  "spikes": {
+    "name": "Stachler",
+    "desc": "Eingewechselte Pokémon erleiden Schaden in Höhe\nvon 1/8 ihrer maximalen KP. Der Schaden steigt\njeweils, wenn der Zustand 2- oder 3-mal erzeugt\nwird. Pokémon vom Typ Flug, Pokémon mit der\nFähigkeit Schwebe etc. sind nicht davon betroffen."
+  },
+  "destiny-bound": {
+    "name": "Abgangsbund",
+    "desc": "Wird das Pokémon durch einen Gegner besiegt,\nwird auch dieser kampfunfähig."
+  },
+  "forest-cursed": {
+    "name": "Waldesfluch",
+    "desc": "Das Pokémon nimmt zusätzlich den Typ Pflanze an."
+  },
+  "leech-seeded": {
+    "name": "Egelsamen",
+    "desc": "Das Pokémon erleidet am Ende jeder Runde\nSchaden in Höhe von 1/8 seiner maximalen KP.\nDie KP des Pokémon an der Stelle des Anwenders\nder Attacke werden in dieser Höhe aufgefüllt.\nPflanzen-Pokémon können nicht betroffen sein."
+  },
+  "bound": {
+    "name": "Umschlingung",
+    "desc": "Das Pokémon erleidet 4 bis 5 Runden lang am\nEnde jeder Runde Schaden in Höhe von 1/8\nseiner maximalen KP und kann nicht\nausgewechselt werden."
+  },
+  "rampaging": {
+    "name": "Tobsucht",
+    "desc": "Das Pokémon greift 2 bis 3 Runden lang an.\nWährenddessen kann es nichts anderes tun.\nDanach ist es verwirrt."
+  },
+  "badly-poisoned": {
+    "name": "Schwere Vergiftung",
+    "desc": "Das Pokémon erleidet am Ende jeder Runde\nSchaden, der mit jedem Mal zunimmt: Erst 1/16\nseiner maximalen KP, dann 2/16, 3/16 usw.\nWenn es aus- und wieder eingewechselt wird,\nbeginnt der erlittene Schaden wieder bei 1/16."
+  },
+  "future-attack": {
+    "name": "Zukunftsangriff",
+    "desc": "Zwei Runden, nachdem die entsprechende\nAttacke eingesetzt wurde, erleidet das Pokémon,\ndas sich an dieser Stelle befindet, Schaden."
+  },
+  "uproar": {
+    "name": "Aufruhr",
+    "desc": "Das Pokémon greift 3 Runden lang an.\nWährenddessen kann es nichts anderes tun und\nkein Pokémon auf dem Kampffeld kann in Schlaf\nversetzt werden."
+  },
+  "aqua-ring": {
+    "name": "Wasserring",
+    "desc": "Das Pokémon regeneriert am Ende jeder Runde\n1/16 seiner maximalen KP."
+  },
+  "landed": {
+    "name": "Herabgestürzt",
+    "desc": "Das Pokémon gilt als auf dem Boden befindlich\nund Boden-Attacken haben nun Wirkung auf es."
+  },
+  "fairy-locked": {
+    "name": "Feenschloss",
+    "desc": "Bis zum Ende der nächsten Runde, nachdem die\nentsprechende Attacke eingesetzt wurde,\nkann kein Pokémon auf dem Kampffeld\nausgewechselt werden."
+  },
+  "psychic-terrain": {
+    "name": "Psychofeld",
+    "desc": "Die Stärke von Psycho-Attacken wird um 30 %\nerhöht.\nPrioritätsattacken haben keine Wirkung.\nDiese Effekte wirken nur auf Pokémon,\ndie sich auf dem Boden befinden."
+  },
+  "throat-chopped": {
+    "name": "Neck Strike",
+    "desc": "Das Pokémon kann 2 Runden lang keine\nGeräuschattacken einsetzen."
+  },
+  "aurora-veil": {
+    "name": "Auroraschleier",
+    "desc": "Der Schaden, den das Pokémon durch physische\nAttacken und Spezial-Attacken erleidet,\nwird halbiert.\nIn Doppelkämpfen wird er um 1/3 reduziert."
+  },
+  "octolocked": {
+    "name": "Octoklammer",
+    "desc": "Am Ende jeder Runde werden Verteidigung und\nSpezial-Verteidigung des Pokémon um 1 Stufe\ngesenkt."
+  },
+  "salt-cured": {
+    "name": "Pökelsalz",
+    "desc": "Das Pokémon erleidet am Ende jeder Runde\nSchaden in Höhe von 1/16 seiner maximalen KP.\nStahl- und Wasser-Pokémon erleiden Schaden in\nHöhe von 1/8 ihrer maximalen KP."
+  },
+  "syrupy": {
+    "name": "Siruphülle",
+    "desc": "Am Ende jeder Runde wird die Initiative des\nPokémon um 1 Stufe gesenkt."
+  },
+  "healing-prevented": {
+    "name": "Heilblockade",
+    "desc": "Das Pokémon kann keine KP durch Attacken,\nFähigkeiten oder getragene Items regenerieren."
+  },
+  "wide-open": {
+    "name": "Schutzlos",
+    "desc": "Gegnerische Attacken treffen das Pokémon\ngarantiert und verursachen doppelten Schaden."
+  },
+  "recharging": {
+    "name": "Handlungsunfähig",
+    "desc": "Das Pokémon kann 1 Runde lang nicht handeln."
+  },
+  "charging": {
+    "name": "Kraftsammeln",
+    "desc": "Das Pokémon sammelt 1 Runde lang Kraft,\num eine Attacke einzusetzen."
+  },
+  "sky-high": {
+    "name": "Abgehoben",
+    "desc": "Das Pokémon kann nicht von Attacken getroffen\nwerden, mit Ausnahme von Donner, Orkan,\nKatapult etc.\nFelder haben keine Wirkung auf es."
+  },
+  "submerged": {
+    "name": "Abgetaucht",
+    "desc": "Das Pokémon kann nicht von Attacken getroffen\nwerden, mit Ausnahme von Surfer und Whirlpool,\ndie doppelten Schaden bei ihm verursachen.\nFelder haben keine Wirkung auf es."
+  },
+  "underground": {
+    "name": "Eingegraben",
+    "desc": "Das Pokémon kann nicht von Attacken getroffen\nwerden, mit Ausnahme der Attacke Erdbeben,\ndie doppelten Schaden bei ihm verursacht.\nFelder haben keine Wirkung auf es."
+  },
+  "concealed": {
+    "name": "Verborgen",
+    "desc": "Das Pokémon kann nicht von Attacken getroffen\nwerden und Felder haben keine Wirkung auf es."
+  },
+  "minimized": {
+    "name": "Komprimator",
+    "desc": "Attacken wie Donnerstoß, Bodyslam,\nDrachenstoß, Flying Press, Brandstempel\nund Rammboss treffen das Pokémon garantiert\nund verursachen doppelten Schaden."
+  },
+  "atk-def-swapped": {
+    "name": "Ang.-Vert.-Tausch",
+    "desc": "Angriff und Verteidigung des Pokémon werden\ngetauscht."
+  },
+  "flash-fire": {
+    "name": "Feuerfänger",
+    "desc": "Die Stärke von Feuer-Attacken des Pokémon wird\num 50 % erhöht."
+  },
+  "jaw-locked": {
+    "name": "Fesselbiss",
+    "desc": "Weder der Anwender noch das Ziel der Attacke\nkönnen ausgewechselt werden."
+  },
+  "micle-berry": {
+    "name": "Wunfrubeere",
+    "desc": "Die Genauigkeit der nächsten Attacke, die das\nPokémon einsetzt, wird um 20 % erhöht."
+  }
+}

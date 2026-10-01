@@ -1,0 +1,653 @@
+{
+  "stench": {
+    "desc": "Quand le Pokémon inflige des dégâts à l'aide d'une capacité,\nil a 10 % de chances d'apeurer la cible."
+  },
+  "drizzle": {
+    "desc": "Quand le Pokémon arrive sur le terrain,\nil invoque la pluie pendant 5 tours."
+  },
+  "speedboost": {
+    "desc": "La Vitesse du Pokémon augmente de 1 cran à la fin de chaque\ntour, sauf à la fin de celui où le Pokémon est arrivé sur le terrain\naprès un échange."
+  },
+  "battlearmor": {
+    "desc": "Le Pokémon est immunisé contre les coups critiques."
+  },
+  "sturdy": {
+    "desc": "Si les PV du Pokémon sont au maximum et qu'il subit des dégâts\nd'une capacité qui devrait le mettre K.O. en un coup,\nil résiste avec 1 PV.\nLes capacités qui mettent toujours K.O. en un coup sont\ninefficaces sur le Pokémon."
+  },
+  "damp": {
+    "desc": "Le Pokémon empêche l'utilisation des capacités explosives\net l'activation des talents explosifs."
+  },
+  "limber": {
+    "desc": "Le Pokémon est immunisé contre la paralysie."
+  },
+  "sandveil": {
+    "desc": "Lors des tempêtes de sable, l'Esquive du Pokémon\nest multipliée par 1,25.\nLe Pokémon est immunisé contre les dégâts des tempêtes\nde sable."
+  },
+  "static": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances de paralyser l'adversaire."
+  },
+  "voltabsorb": {
+    "desc": "Les capacités de type Électrik sont inefficaces sur le Pokémon\net lui rendent 1/4 de ses PV max."
+  },
+  "waterabsorb": {
+    "desc": "Les capacités de type Eau sont inefficaces sur le Pokémon\net lui rendent 1/4 de ses PV max."
+  },
+  "oblivious": {
+    "desc": "Le Pokémon est immunisé contre l'état « Attraction »,\nla provocation ou l'intimidation."
+  },
+  "cloudnine": {
+    "desc": "Le Pokémon annule tous les effets liés à la météo."
+  },
+  "compoundeyes": {
+    "desc": "La Précision des capacités du Pokémon est multipliée par 1,3."
+  },
+  "insomnia": {
+    "desc": "Le Pokémon est immunisé contre le sommeil et\nla somnolence."
+  },
+  "immunity": {
+    "desc": "Le Pokémon est immunisé contre le poison et le poison grave."
+  },
+  "flashfire": {
+    "desc": "Les capacités de type Feu sont inefficaces sur ce Pokémon\net le font entrer dans l'état « Torche »."
+  },
+  "shielddust": {
+    "desc": "Le Pokémon est immunisé contre les effets additionnels\ndes attaques."
+  },
+  "owntempo": {
+    "desc": "Le Pokémon est immunisé contre la confusion et l'intimidation."
+  },
+  "suctioncups": {
+    "desc": "Le Pokémon est immunisé contre les capacités ou les objets\ndes adversaires qui forcent à changer de Pokémon."
+  },
+  "intimidate": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il baisse l'Attaque\ndes adversaires de 1 cran."
+  },
+  "shadowtag": {
+    "desc": "Le Pokémon empêche les adversaires de quitter le terrain."
+  },
+  "roughskin": {
+    "desc": "Quand le Pokémon subit une capacité à contact, il inflige à\nl'adversaire des dégâts équivalents à 1/8 des PV max\nde celui-ci."
+  },
+  "levitate": {
+    "desc": "Le Pokémon flotte au-dessus du sol, ce qui l'immunise contre\nles capacités de type Sol, ainsi que les effets de Picots,\nPics Toxik et Toile Gluante."
+  },
+  "effectspore": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances d'empoisonner, paralyser\nou endormir l'adversaire.\nN'affecte pas les Pokémon de type Plante."
+  },
+  "synchronize": {
+    "desc": "Si le Pokémon est empoisonné, gravement empoisonné,\nparalysé ou brûlé par une capacité ou un talent d'un autre\nPokémon, ce dernier subit la même altération de statut."
+  },
+  "clearbody": {
+    "desc": "Les stats du Pokémon ne peuvent pas baisser à cause\ndes capacités ou du talent des adversaires."
+  },
+  "naturalcure": {
+    "desc": "Quand le Pokémon revient dans son équipe,\nil soigne ses altérations de statut."
+  },
+  "lightningrod": {
+    "desc": "Le Pokémon attire les capacités de type Électrik.\nElles sont inefficaces sur lui et augmentent\nson Attaque Spéciale de 1 cran."
+  },
+  "swiftswim": {
+    "desc": "Quand il pleut, la Vitesse du Pokémon est multipliée par 2."
+  },
+  "chlorophyll": {
+    "desc": "Quand le soleil brille, la Vitesse du Pokémon est\nmultipliée par 2."
+  },
+  "illuminate": {
+    "desc": "Le Pokémon ignore les changements d'Esquive des adversaires,\net sa Précision ne peut pas baisser."
+  },
+  "trace": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il adopte\nle même talent que l'adversaire."
+  },
+  "hugepower": {
+    "desc": "La puissance des capacités physiques du Pokémon est multipliée\npar 2."
+  },
+  "poisonpoint": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances d'empoisonner l'adversaire."
+  },
+  "innerfocus": {
+    "desc": "Le Pokémon ne peut pas être apeuré par les attaques\ndes adversaires, et il est immunisé contre l'intimidation."
+  },
+  "magmaarmor": {
+    "desc": "Le Pokémon est immunisé contre le gel."
+  },
+  "soundproof": {
+    "desc": "Le Pokémon est immunisé contre les capacités de son."
+  },
+  "raindish": {
+    "desc": "Quand il pleut, le Pokémon récupère 1/16 de ses PV max\nà la fin de chaque tour."
+  },
+  "sandstream": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il invoque\nune tempête de sable pendant 5 tours."
+  },
+  "pressure": {
+    "desc": "Les adversaires doivent dépenser 1 PP supplémentaire\npour viser ce Pokémon avec leurs capacités."
+  },
+  "thickfat": {
+    "desc": "Les dégâts des capacités de types Feu et Glace subis par\nle Pokémon sont réduits de moitié."
+  },
+  "earlybird": {
+    "desc": "Le Pokémon se réveille deux fois plus vite\nde l'endormissement."
+  },
+  "flamebody": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nil a 30 % de chances de brûler l'adversaire."
+  },
+  "runaway": {
+    "desc": "Le Pokémon peut être remplacé par un autre Pokémon\nde son équipe, même si des effets l'en empêchent."
+  },
+  "keeneye": {
+    "desc": "Le Pokémon ignore les changements d'Esquive des adversaires,\net sa Précision ne peut pas baisser."
+  },
+  "hypercutter": {
+    "desc": "L'Attaque du Pokémon ne peut pas baisser à cause\ndes capacités ou du talent des adversaires."
+  },
+  "pickup": {
+    "desc": "Quand le Pokémon ne tient pas d'objet, à la fin du tour,\nil ramasse celui qu'un autre Pokémon a consommé."
+  },
+  "hustle": {
+    "desc": "Quand le Pokémon utilise une capacité physique,\nson Attaque est multipliée par 1,5,\ntandis que sa Précision est multipliée par 0,8."
+  },
+  "cutecharm": {
+    "desc": "Quand le Pokémon subit une capacité à contact d'un adversaire\ndu sexe opposé, il a 30 % de chances de lui infliger\nl'état « Attraction »."
+  },
+  "plus": {
+    "desc": "L'Attaque Spéciale du Pokémon est multipliée par 1,5\nsi un allié présent sur le terrain a le talent Plus ou\nle talent Moins."
+  },
+  "minus": {
+    "desc": "L'Attaque Spéciale du Pokémon est multipliée par 1,5\nsi un allié présent sur le terrain a le talent Plus ou\nle talent Moins."
+  },
+  "forecast": {
+    "desc": "Le Pokémon prend le type Eau, Feu ou Glace\nen fonction de la météo."
+  },
+  "stickyhold": {
+    "desc": "Le Pokémon ne peut pas perdre l'objet qu'il tient.\nLes adversaires ne peuvent pas le dérober."
+  },
+  "shedskin": {
+    "desc": "Le Pokémon a 30 % de chances de soigner ses altérations\nde statut à la fin de chaque tour."
+  },
+  "guts": {
+    "desc": "Quand le Pokémon souffre d'une altération de statut,\nson Attaque est multipliée par 1,5.\nDe plus, lorsque le Pokémon est brûlé, les dégâts qu'il inflige\navec ses capacités physiques ne sont pas réduits de moitié."
+  },
+  "marvelscale": {
+    "desc": "Quand le Pokémon souffre d'une altération de statut,\nsa Défense est multipliée par 1,5."
+  },
+  "liquidooze": {
+    "desc": "Quand le Pokémon subit une capacité absorbant des PV,\nil empêche l'adversaire de se soigner et lui inflige des dégâts\néquivalents à la quantité de PV qui aurait dû être absorbée."
+  },
+  "overgrow": {
+    "desc": "Quand les PV du Pokémon sont inférieurs ou égaux à 1/3\nde ses PV max, la puissance de ses capacités de type Plante\nest multipliée par 1,5."
+  },
+  "blaze": {
+    "desc": "Quand les PV du Pokémon sont inférieurs ou égaux à 1/3\nde ses PV max, la puissance de ses capacités de type Feu\nest multipliée par 1,5."
+  },
+  "torrent": {
+    "desc": "Quand les PV du Pokémon sont inférieurs ou égaux à 1/3\nde ses PV max, la puissance de ses capacités de type Eau\nest multipliée par 1,5."
+  },
+  "swarm": {
+    "desc": "Quand les PV du Pokémon sont inférieurs ou égaux à 1/3\nde ses PV max, la puissance de ses capacités de type Insecte\nest multipliée par 1,5."
+  },
+  "rockhead": {
+    "desc": "Le Pokémon peut utiliser des capacités qui devraient\nnormalement aussi lui infliger des dégâts sans perdre de PV."
+  },
+  "drought": {
+    "desc": "Quand le Pokémon arrive sur le terrain,\nil invoque le soleil pendant 5 tours."
+  },
+  "vitalspirit": {
+    "desc": "Le Pokémon est immunisé contre le sommeil et la somnolence."
+  },
+  "whitesmoke": {
+    "desc": "Les stats du Pokémon ne peuvent pas baisser à cause\ndes capacités ou du talent des adversaires."
+  },
+  "purepower": {
+    "desc": "La puissance des capacités physiques du Pokémon est multipliée\npar 2."
+  },
+  "shellarmor": {
+    "desc": "Le Pokémon est immunisé contre les coups critiques."
+  },
+  "tangledfeet": {
+    "desc": "Quand le Pokémon est confus, son Esquive est multipliée par 2."
+  },
+  "motordrive": {
+    "desc": "Les capacités de type Électrik sont inefficaces sur le Pokémon\net augmentent sa Vitesse de 1 cran."
+  },
+  "rivalry": {
+    "desc": "La puissance des capacités du Pokémon est multipliée\npar 1,25 si l'adversaire est du même sexe,\net par 0,75 s'il est du sexe opposé.\nSi l'un ou l'autre Pokémon est de sexe inconnu,\nles capacités conservent leur puissance d'origine."
+  },
+  "steadfast": {
+    "desc": "Quand le Pokémon est apeuré, sa Vitesse augmente de 1 cran."
+  },
+  "snowcloak": {
+    "desc": "Quand il neige, l'Esquive du Pokémon est multipliée par 1,25."
+  },
+  "gluttony": {
+    "desc": "Le Pokémon n'attend pas qu'il lui reste 1/4 de ses PV\nou moins pour manger la Baie qu'il tient, il la mange\nquand ses PV sont réduits de moitié ou moins."
+  },
+  "angerpoint": {
+    "desc": "Quand le Pokémon subit un coup critique, son Attaque\naugmente et atteint le 6 cran."
+  },
+  "unburden": {
+    "desc": "La Vitesse du Pokémon est multipliée par 2 si l'objet\nqu'il tient disparaît."
+  },
+  "heatproof": {
+    "desc": "Les dégâts des capacités de type Feu et de brûlure subis par\nle Pokémon sont réduits de moitié."
+  },
+  "simple": {
+    "desc": "Les changements de stats du Pokémon sont multipliés par 2."
+  },
+  "dryskin": {
+    "desc": "Les capacités de type Eau sont inefficaces sur le Pokémon\net lui rendent 1/4 de ses PV max, mais les dégâts qu'il subit\nprovenant de capacités de type Feu sont multipliés par 1,25.\nQuand il pleut, le Pokémon récupère 1/8 de ses PV max\nà la fin de chaque tour, mais quand le soleil brille,\nil perd 1/8 de ses PV max à la fin de chaque tour."
+  },
+  "ironfist": {
+    "desc": "La puissance des capacités de coups de poing du Pokémon\nest multipliée par 1,2."
+  },
+  "poisonheal": {
+    "desc": "Quand le Pokémon est empoisonné ou gravement empoisonné,\nil récupère 1/8 de ses PV max à la fin de chaque tour au lieu\nd'en perdre."
+  },
+  "adaptability": {
+    "desc": "La puissance des capacités du même type que\nle Pokémon est multipliée par 2 au lieu de 1,5."
+  },
+  "skilllink": {
+    "desc": "Les capacités du Pokémon pouvant frapper plusieurs fois\nfrappent toujours le maximum de fois possible."
+  },
+  "hydration": {
+    "desc": "Quand il pleut, le Pokémon soigne ses altérations de statut\nà la fin de chaque tour."
+  },
+  "solarpower": {
+    "desc": "Quand le soleil brille, l'Attaque Spéciale du Pokémon\nest multipliée par 1,5, mais il perd 1/8 de ses PV max\nà la fin de chaque tour."
+  },
+  "quickfeet": {
+    "desc": "Quand le Pokémon souffre d'une altération de statut,\nsa Vitesse est multipliée par 1,5.\nDe plus, sa Vitesse ne baisse pas lorsqu'il est paralysé."
+  },
+  "sniper": {
+    "desc": "Le multiplicateur de puissance appliqué lorsque ce Pokémon\ninflige un coup critique est de 2,25 au lieu de 1,5."
+  },
+  "magicguard": {
+    "desc": "Seules les attaques peuvent infliger des dégâts au Pokémon."
+  },
+  "noguard": {
+    "desc": "La Précision des capacités du Pokémon et des capacités\nqui ciblent le Pokémon passe à 100 %."
+  },
+  "stall": {
+    "desc": "Quand des capacités ont le même niveau de priorité,\nle Pokémon agit en dernier."
+  },
+  "technician": {
+    "desc": "Quand la puissance des capacités du Pokémon est inférieure\nou égale à 60, elle est multipliée par 1,5."
+  },
+  "leafguard": {
+    "desc": "Quand le soleil brille, le Pokémon est immunisé contre\nles altérations de statut."
+  },
+  "klutz": {
+    "desc": "L'objet que tient le Pokémon n'a pas d'effet."
+  },
+  "moldbreaker": {
+    "desc": "Le Pokémon peut utiliser ses capacités en ignorant le talent\ndes adversaires. Certains talents ne peuvent pas être ignorés."
+  },
+  "superluck": {
+    "desc": "Le taux de critiques du Pokémon augmente de 1 cran."
+  },
+  "aftermath": {
+    "desc": "Quand le Pokémon est mis K.O. par une capacité à contact,\nil inflige à l'adversaire des dégâts équivalents à 1/4 des PV max\nde celui-ci."
+  },
+  "anticipation": {
+    "desc": "Quand il arrive sur le terrain, le Pokémon devine\nsi les adversaires connaissent des capacités super efficaces\nsur lui, ou des capacités qui mettent toujours K.O. en un coup."
+  },
+  "forewarn": {
+    "desc": "Quand il arrive sur le terrain, le Pokémon détecte la capacité\nla plus puissante des adversaires."
+  },
+  "unaware": {
+    "desc": "Quand le Pokémon attaque ou est attaqué, il ignore\nles changements de stats des adversaires, sauf\nles changements de Vitesse."
+  },
+  "filter": {
+    "desc": "Le Pokémon ne subit que 3/4 des dégâts des capacités\nsuper efficaces."
+  },
+  "scrappy": {
+    "desc": "Le Pokémon peut toucher les Pokémon de type Spectre avec\ndes capacités de type Normal ou Combat. Il est aussi\nimmunisé contre l'intimidation."
+  },
+  "icebody": {
+    "desc": "Quand il neige, le Pokémon récupère 1/16 de ses PV max\nà la fin de chaque tour."
+  },
+  "solidrock": {
+    "desc": "Le Pokémon ne subit que 3/4 des dégâts des capacités\nsuper efficaces."
+  },
+  "snowwarning": {
+    "desc": "Quand le Pokémon arrive sur le terrain,\nil invoque la neige pendant 5 tours."
+  },
+  "frisk": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il peut identifier l'objet\nque tient l'adversaire."
+  },
+  "reckless": {
+    "desc": "La puissance des capacités infligeant aussi des dégâts\nau Pokémon est multipliée par 1,2."
+  },
+  "pickpocket": {
+    "desc": "Quand le Pokémon ne tient pas d'objet et qu'il subit\nune capacité à contact, il vole celui de l'adversaire."
+  },
+  "sheerforce": {
+    "desc": "Les attaques du Pokémon perdent leurs effets additionnels,\nmais la puissance de ses capacités est multipliée par 1,3."
+  },
+  "contrary": {
+    "desc": "Les changements de stats du Pokémon sont inversés :\nles augmentations de stats se transforment en baisses,\net les baisses de stats se transforment en augmentations."
+  },
+  "unnerve": {
+    "desc": "Le Pokémon empêche les adversaires de manger des Baies."
+  },
+  "defiant": {
+    "desc": "Quand un adversaire baisse au moins une des stats du Pokémon,\nl'Attaque de ce dernier augmente de 2 crans."
+  },
+  "cursedbody": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité,\nil a 30 % de chances d'infliger l'état « Capacité bloquée »\nà l'adversaire pendant 4 tours."
+  },
+  "healer": {
+    "desc": "Le Pokémon a 50 % de chances de soigner les altérations\nde statut d'un allié à la fin de chaque tour."
+  },
+  "friendguard": {
+    "desc": "Les alliés du Pokémon ne subissent que 3/4 des dégâts\nqui leur sont infligés."
+  },
+  "weakarmor": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité physique,\nsa Défense baisse de 1 cran, mais sa Vitesse augmente\nde 2 crans."
+  },
+  "heavymetal": {
+    "desc": "Le poids du Pokémon est multiplié par 2."
+  },
+  "lightmetal": {
+    "desc": "Le poids du Pokémon est divisé par 2."
+  },
+  "multiscale": {
+    "desc": "Quand les PV du Pokémon sont au maximum,\nles dégâts qu'il subit sont réduits de moitié."
+  },
+  "harvest": {
+    "desc": "Si le Pokémon utilise une Baie, il a 50 % de chances\nd'en récolter une identique à la fin de chaque tour.\nQuand le soleil brille, il récolte une Baie à coup sûr."
+  },
+  "telepathy": {
+    "desc": "Le Pokémon évite les attaques de ses alliés."
+  },
+  "moody": {
+    "desc": "À la fin de chaque tour, une stat du Pokémon augmente\nde 2 crans et une autre stat baisse de 1 cran."
+  },
+  "overcoat": {
+    "desc": "Le Pokémon est immunisé contre les dégâts des tempêtes\nde sable, et contre les capacités et les talents qui libèrent\nde la poudre."
+  },
+  "poisontouch": {
+    "desc": "Quand le Pokémon inflige une capacité à contact à l'adversaire,\nil a 30 % de chances de l'empoisonner."
+  },
+  "regenerator": {
+    "desc": "Quand le Pokémon revient dans son équipe,\nil récupère 1/3 de ses PV max."
+  },
+  "bigpecks": {
+    "desc": "La Défense du Pokémon ne peut pas baisser à cause\ndes capacités ou du talent des adversaires."
+  },
+  "sandrush": {
+    "desc": "Pendant les tempêtes de sable, la Vitesse du Pokémon\nest multipliée par 2."
+  },
+  "analytic": {
+    "desc": "Quand le Pokémon agit en dernier, la puissance de ses capacités\nest multipliée par 1,3."
+  },
+  "illusion": {
+    "desc": "Le Pokémon apparaît sous les traits du dernier membre\nde l'équipe. L'effet se dissipe s'il subit les dégâts\nd'une capacité."
+  },
+  "imposter": {
+    "desc": "Le Pokémon prend l'apparence du Pokémon en face de lui.\nToutes les caractéristiques de ce dernier, à l'exception\nde ses PV, sont également dupliquées."
+  },
+  "infiltrator": {
+    "desc": "Le Pokémon peut utiliser ses capacités en ignorant les effets\ndes capacités suivantes des adversaires : Mur Lumière,\nProtection, Voile Aurore, Rune Protect et Clonage."
+  },
+  "mummy": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nle talent de l'adversaire est remplacé par Momie."
+  },
+  "moxie": {
+    "desc": "Quand le Pokémon met un adversaire K.O. avec\nune attaque, son Attaque augmente de 1 cran."
+  },
+  "justified": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité\nde type Ténèbres, son Attaque augmente de 1 cran."
+  },
+  "rattled": {
+    "desc": "Si le Pokémon est intimidé ou subit des dégâts d'une capacité\nde type Ténèbres, Spectre ou Insecte, sa Vitesse augmente\nde 1 cran."
+  },
+  "magicbounce": {
+    "desc": "Le Pokémon est immunisé contre les capacités de statut\net les renvoie vers l'adversaire."
+  },
+  "sapsipper": {
+    "desc": "Les capacités de type Plante sont inefficaces sur le Pokémon\net augmentent son Attaque de 1 cran."
+  },
+  "prankster": {
+    "desc": "Le niveau de priorité des capacités de statut du Pokémon\naugmente de 1 cran.\nEn contrepartie, les capacités de statut du Pokémon n'affectent\nplus les Pokémon de type Ténèbres."
+  },
+  "sandforce": {
+    "desc": "La puissance des capacités de types Roche, Sol et Acier\ndu Pokémon est multipliée par 1,3 pendant les tempêtes\nde sable."
+  },
+  "aromaveil": {
+    "desc": "Le Pokémon et ses alliés sont immunisés contre la provocation,\nl'impossibilité de répétition des capacités, le blocage\nde capacités, le blocage de soins, ainsi que les états\n « Attraction » et « Encore »."
+  },
+  "flowerveil": {
+    "desc": "Le Pokémon empêche ses alliés de type Plante de subir\ndes baisses de stats et des altérations de statut."
+  },
+  "cheekpouch": {
+    "desc": "Quand le Pokémon mange une Baie, il bénéficie de\nses effets et en plus, il récupère 1/3 de ses PV max."
+  },
+  "protean": {
+    "desc": "Le Pokémon prend le type de la capacité qu'il utilise.\nCe talent ne s'active qu'une fois par arrivée du Pokémon\nsur le terrain."
+  },
+  "furcoat": {
+    "desc": "Les dégâts des capacités physiques subis par le Pokémon\nsont réduits de moitié."
+  },
+  "magician": {
+    "desc": "Quand le Pokémon ne tient pas d'objet, il vole celui de\nl'adversaire auquel il inflige des dégâts à l'aide d'une capacité."
+  },
+  "bulletproof": {
+    "desc": "Le Pokémon est immunisé contre les capacités lançant\ndes projectiles."
+  },
+  "competitive": {
+    "desc": "Quand un adversaire baisse au moins une des stats du Pokémon,\nl'Attaque Spéciale de ce dernier augmente de 2 crans."
+  },
+  "strongjaw": {
+    "desc": "La puissance des capacités de morsure du Pokémon\nest multipliée par 1,5."
+  },
+  "refrigerate": {
+    "desc": "Les capacités de type Normal du Pokémon prennent\nle type Glace et leur puissance est multipliée par 1,2."
+  },
+  "sweetveil": {
+    "desc": "Le Pokémon et ses alliés sont immunisés contre\nle sommeil et la somnolence."
+  },
+  "stancechange": {
+    "desc": "Le Pokémon prend sa Forme Assaut lorsqu'il utilise\nune attaque, et sa Forme Parade lorsqu'il utilise\nla capacité Bouclier Royal."
+  },
+  "galewings": {
+    "desc": "Quand les PV du Pokémon sont au maximum, le niveau de\npriorité de ses capacités de type Vol augmente de 1 cran."
+  },
+  "megalauncher": {
+    "desc": "La puissance des capacités du Pokémon qui projettent une aura\nest multipliée par 1,5."
+  },
+  "grasspelt": {
+    "desc": "Quand un champ herbu est actif, la Défense du Pokémon\nest multipliée par 1,5."
+  },
+  "symbiosis": {
+    "desc": "Quand un allié consomme son objet, le Pokémon lui\ndonne celui qu'il tient."
+  },
+  "toughclaws": {
+    "desc": "La puissance des capacités à contact du Pokémon est multipliée\npar 1,3."
+  },
+  "pixilate": {
+    "desc": "Les capacités de type Normal du Pokémon prennent le type Fée\net leur puissance est multipliée par 1,2."
+  },
+  "gooey": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nla Vitesse de l'adversaire baisse de 1 cran."
+  },
+  "aerilate": {
+    "desc": "Les capacités de type Normal du Pokémon prennent le type Vol\net leur puissance est multipliée par 1,2."
+  },
+  "parentalbond": {
+    "desc": "La mère et son petit peuvent attaquer 2 fois d'affilée.\nLa puissance des attaques du petit est égale à 1/4\nde celle des attaques de la mère."
+  },
+  "fairyaura": {
+    "desc": "La puissance des capacités de type Fée de tous les Pokémon\nest multipliée par 1,33."
+  },
+  "stamina": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité,\nsa Défense augmente de 1 cran."
+  },
+  "emergencyexit": {
+    "desc": "Quand les PV du Pokémon tombent à la moitié ou moins,\nil revient dans son équipe."
+  },
+  "merciless": {
+    "desc": "Quand le Pokémon attaque un adversaire empoisonné\nou gravement empoisonné, il inflige systématiquement\nun coup critique."
+  },
+  "stakeout": {
+    "desc": "Quand le Pokémon attaque une cible qui vient d'arriver sur\nle terrain après un échange, la puissance de la capacité\nutilisée est multipliée par 2."
+  },
+  "waterbubble": {
+    "desc": "Le Pokémon est immunisé contre la brûlure. Les dégâts\ndes capacités de type Feu qu'il subit sont réduits de moitié.\nLa puissance de ses capacités de type Eau est multipliée par 2."
+  },
+  "berserk": {
+    "desc": "L'Attaque Spéciale du Pokémon augmente de 1 cran\nquand ses PV tombent à la moitié ou moins à cause\nd'une attaque de l'adversaire."
+  },
+  "slushrush": {
+    "desc": "Quand il neige, la Vitesse du Pokémon est multipliée par 2."
+  },
+  "longreach": {
+    "desc": "Les capacités que le Pokémon utilise ne sont pas considérées\ncomme des capacités à contact."
+  },
+  "liquidvoice": {
+    "desc": "Les capacités de son utilisées par le Pokémon prennent\nle type Eau."
+  },
+  "surgesurfer": {
+    "desc": "Quand un champ électrifié est actif, la Vitesse du Pokémon\nest multipliée par 2."
+  },
+  "disguise": {
+    "desc": "Si le Pokémon devait subir des dégâts d'une capacité sous\nsa Forme Déguisée, il perd 1/8 de ses PV max à la place,\npuis prend sa Forme Démasquée."
+  },
+  "corrosion": {
+    "desc": "Le Pokémon est capable d'empoisonner ou de gravement\nempoisonner les Pokémon de type Acier ou Poison."
+  },
+  "queenlymajesty": {
+    "desc": "Les adversaires ne peuvent pas utiliser de capacités\nprioritaires sur le Pokémon et ses alliés."
+  },
+  "innardsout": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité qui\nle met K.O., il renvoie la même quantité de dégâts\nà l'adversaire qui les lui a infligés."
+  },
+  "fluffy": {
+    "desc": "Les dégâts des capacités à contact subis par le Pokémon\nsont réduits de moitié, mais les dégâts des capacités\nde type Feu subis par le Pokémon sont multipliés par 2."
+  },
+  "tanglinghair": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nla Vitesse de l'adversaire baisse de 1 cran."
+  },
+  "receiver": {
+    "desc": "Le Pokémon obtient le talent d'un allié mis K.O."
+  },
+  "electricsurge": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il crée un champ\nélectrifié sur tout le terrain pendant 5 tours."
+  },
+  "psychicsurge": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il crée un champ\npsychique sur tout le terrain pendant 5 tours."
+  },
+  "grassysurge": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il crée un champ herbu\nsur tout le terrain pendant 5 tours."
+  },
+  "libero": {
+    "desc": "Le Pokémon prend le type de la capacité qu'il utilise.\nCe talent ne s'active qu'une fois par arrivée du Pokémon\nsur le terrain."
+  },
+  "mirrorarmor": {
+    "desc": "Au lieu d'être affecté par les baisses de stats, le Pokémon\nles renvoie au Pokémon qui a tenté de les lui infliger."
+  },
+  "stalwart": {
+    "desc": "Le Pokémon ignore les effets des capacités ou des talents\nqui attirent les capacités."
+  },
+  "punkrock": {
+    "desc": "La puissance des capacités de son du Pokémon est multipliée\npar 1,3.\nLes dégâts des capacités de son subis par le Pokémon\nsont réduits de moitié."
+  },
+  "sandspit": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité,\nil invoque une tempête de sable pendant 5 tours."
+  },
+  "ripen": {
+    "desc": "Les effets des Baies mangées par le Pokémon sont multipliés\npar 2."
+  },
+  "mimicry": {
+    "desc": "Le Pokémon prend le type du champ actif."
+  },
+  "screencleaner": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il annule les effets\nde Mur Lumière, Protection et Voile Aurore."
+  },
+  "steelyspirit": {
+    "desc": "La puissance des capacités de type Acier du Pokémon et\nde ses alliés est multipliée par 1,5."
+  },
+  "wanderingspirit": {
+    "desc": "Quand le Pokémon subit une capacité à contact,\nil échange son talent contre celui de l'adversaire."
+  },
+  "hungerswitch": {
+    "desc": "À la fin de chaque tour, le Pokémon alterne entre\nson Mode Rassasié et son Mode Affamé."
+  },
+  "quickdraw": {
+    "desc": "Le Pokémon a 30 % de chances d'agir en premier,\nmême si les autres capacités lancées ont le même\nniveau de priorité que la sienne."
+  },
+  "unseenfist": {
+    "desc": "Quand le Pokémon utilise une capacité à contact, il ignore\nles effets de protection des adversaires et inflige 1/4\ndes dégâts que la capacité aurait normalement infligés.\nLes autres effets des adversaires se déclenchent toujours."
+  },
+  "curiousmedicine": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il annule\nles changements de stats de ses alliés."
+  },
+  "seedsower": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité,\nil crée un champ herbu sur tout le terrain pendant 5 tours."
+  },
+  "thermalexchange": {
+    "desc": "Le Pokémon est immunisé contre la brûlure.\nQuand il subit des dégâts d'une capacité de\ntype Feu, son Attaque augmente de 1 cran."
+  },
+  "purifyingsalt": {
+    "desc": "Le Pokémon est immunisé contre les altérations de statut.\nLes dégâts des capacités de type Spectre qu'il subit sont\nréduits de moitié."
+  },
+  "guarddog": {
+    "desc": "Le Pokémon est immunisé contre les effets de l'intimidation.\nÀ la place, son Attaque augmente de 1 cran.\nDe plus, le Pokémon est immunisé contre les capacités ou\nles objets des adversaires qui forcent à changer de Pokémon."
+  },
+  "zerotohero": {
+    "desc": "Quand le Pokémon revient dans son équipe,\nil prend sa Forme Super."
+  },
+  "electromorphosis": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité,\nil obtient un boost Électrik."
+  },
+  "goodasgold": {
+    "desc": "Le Pokémon est immunisé contre les capacités de statut\ndes autres Pokémon."
+  },
+  "opportunist": {
+    "desc": "Quand les stats de l'adversaire augmentent, les stats du\nPokémon augmentent de la même manière."
+  },
+  "cudchew": {
+    "desc": "Quand le Pokémon mange une Baie, à la fin du tour\nsuivant, il mange la même Baie une fois de plus."
+  },
+  "sharpness": {
+    "desc": "La puissance des capacités du Pokémon qui infligent\ndes entailles est multipliée par 1,5."
+  },
+  "supremeoverlord": {
+    "desc": "Quand le Pokémon arrive sur le terrain, la puissance de\nses capacités augmente de 10 % pour chaque Pokémon\nde son équipe mis K.O. pendant le combat.\nElle peut augmenter de 50 % au maximum."
+  },
+  "toxicdebris": {
+    "desc": "Quand le Pokémon subit les dégâts d'une capacité physique,\nil répand des pics toxiques sur le côté adverse."
+  },
+  "armortail": {
+    "desc": "Les adversaires ne peuvent pas utiliser de capacités\nprioritaires sur le Pokémon et ses alliés."
+  },
+  "eartheater": {
+    "desc": "Les capacités de type Sol sont inefficaces sur le Pokémon\net lui rendent 1/4 de ses PV max."
+  },
+  "hospitality": {
+    "desc": "Quand le Pokémon arrive sur le terrain,\nil restaure 1/4 des PV max de son allié."
+  },
+  "supersweetsyrup": {
+    "desc": "Quand le Pokémon arrive sur le terrain, il baisse l'Esquive\ndes adversaires de 1 cran. Ce talent ne s'active qu'une\nseule fois par combat."
+  },
+  "piercingdrill": {
+    "desc": "Quand le Pokémon utilise une capacité à contact, il ignore\nles effets de protection des adversaires et inflige 1/4\ndes dégâts que la capacité aurait normalement infligés.\nLes autres effets des adversaires se déclenchent toujours."
+  },
+  "dragonize": {
+    "desc": "Les capacités de type Normal du Pokémon prennent\nle type Dragon et leur puissance est multipliée par 1,2."
+  },
+  "megasol": {
+    "desc": "Le Pokémon peut utiliser ses capacités comme si\nle soleil brillait, même si ce n'est pas le cas."
+  },
+  "spicyspray": {
+    "desc": "Quand le Pokémon subit des dégâts d'une capacité,\nil brûle l'adversaire."
+  },
+  "eelevate": {
+    "desc": "Le Pokémon flotte au-dessus du sol, ce qui l'immunise contre\nles capacités de type Sol, ainsi que les effets de Picots,\nPics Toxik et Toile Gluante.\nQuand il met un adversaire K.O. avec une attaque,\nsa stat la plus élevée augmente de 1 cran."
+  },
+  "firemane": {
+    "desc": "La puissance des capacités de type Feu du Pokémon\nest multipliée par 1,5."
+  },
+  "auraguard": {
+    "desc": "Les dégâts des capacités à contact subis par le Pokémon\nsont réduits de moitié."
+  }
+}

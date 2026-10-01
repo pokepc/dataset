@@ -1,0 +1,653 @@
+{
+  "stench": {
+    "desc": "Conferisce al Pokémon il 10% di probabilità di far tentennare\nil bersaglio quando gli infligge danni con una mossa."
+  },
+  "drizzle": {
+    "desc": "Causa lo stato Pioggia per 5 turni quando il Pokémon\nentra in campo."
+  },
+  "speedboost": {
+    "desc": "Aumenta di 1 grado la Velocità del Pokémon alla fine\ndi ogni turno. Non ha effetto nel turno in cui il Pokémon\nentra in campo con una sostituzione."
+  },
+  "battlearmor": {
+    "desc": "Protegge dai brutti colpi."
+  },
+  "sturdy": {
+    "desc": "Quando il Pokémon ha tutti i PS, gli permette di resistere a\nuna mossa che lo manderebbe KO in un solo colpo e rimanere\ninvece con 1 PS. Inoltre, rende il Pokémon immune alle mosse\nche causano KO immediato."
+  },
+  "damp": {
+    "desc": "Impedisce a tutti i Pokémon l'uso di mosse e abilità\ndella classe Esplosivo."
+  },
+  "limber": {
+    "desc": "Rende il Pokémon immune allo stato Paralisi."
+  },
+  "sandveil": {
+    "desc": "Aumenta l'elusione del 25% se lo stato Tempesta di sabbia\nè attivo, e rende il Pokémon immune ai danni causati\nda questo stato."
+  },
+  "static": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nParalisi a chi lo colpisce con una mossa da contatto."
+  },
+  "voltabsorb": {
+    "desc": "Rende il Pokémon immune alle mosse di tipo Elettro e\ngli permette di recuperare 1/4 dei suoi PS massimi se\nne subisce una."
+  },
+  "waterabsorb": {
+    "desc": "Rende il Pokémon immune alle mosse di tipo Acqua e\ngli permette di recuperare 1/4 dei suoi PS massimi se\nne subisce una."
+  },
+  "oblivious": {
+    "desc": "Rende il Pokémon immune agli stati Infatuazione, Provocazione,\ne all'effetto di Prepotenza."
+  },
+  "cloudnine": {
+    "desc": "Neutralizza gli effetti di tutte le condizioni atmosferiche."
+  },
+  "compoundeyes": {
+    "desc": "Aumenta del 30% la precisione delle mosse."
+  },
+  "insomnia": {
+    "desc": "Rende il Pokémon immune agli stati Sonno e Sonnolenza."
+  },
+  "immunity": {
+    "desc": "Rende il Pokémon immune agli stati Avvelenamento\ne Iperavvelenamento."
+  },
+  "flashfire": {
+    "desc": "Rende il Pokémon immune alle mosse di tipo Fuoco e fa sì che\nentri nello stato Fuocardore se ne subisce una."
+  },
+  "shielddust": {
+    "desc": "Rende il Pokémon immune agli effetti aggiuntivi degli attacchi."
+  },
+  "owntempo": {
+    "desc": "Rende il Pokémon immune allo stato Confusione e all'effetto\ndi Prepotenza."
+  },
+  "suctioncups": {
+    "desc": "Rende il Pokémon immune a strumenti e mosse altrui\nche causano la sostituzione."
+  },
+  "intimidate": {
+    "desc": "Diminuisce l'Attacco degli avversari di 1 grado quando\nil Pokémon entra in campo."
+  },
+  "shadowtag": {
+    "desc": "Impedisce la sostituzione agli avversari."
+  },
+  "roughskin": {
+    "desc": "Permette al Pokémon di causare a chi lo colpisce con una mossa\nda contatto danni pari a 1/8 dei PS massimi di quest'ultimo."
+  },
+  "levitate": {
+    "desc": "Fa sì che il Pokémon non sia più a contatto con il terreno,\nrendendolo così immune alle mosse di tipo Terra e agli stati\nPunte, Punte velenose e Rete vischiosa."
+  },
+  "effectspore": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento, Paralisi o Sonno a chi lo colpisce con una mossa\nda contatto. Non ha effetto sui Pokémon di tipo Erba."
+  },
+  "synchronize": {
+    "desc": "Fa sì che il Pokémon che subisce lo stato Avvelenamento,\nIperavvelenamento, Paralisi o Scottatura per effetto di\nuna mossa o di un'abilità di un altro Pokémon, causi a\nquel Pokémon lo stesso stato."
+  },
+  "clearbody": {
+    "desc": "Impedisce la diminuzione delle statistiche causata da abilità\no mosse di altri Pokémon."
+  },
+  "naturalcure": {
+    "desc": "Cura il Pokémon dai problemi di stato quando questo\nlascia il campo."
+  },
+  "lightningrod": {
+    "desc": "Attira verso il Pokémon le mosse di tipo Elettro e le neutralizza,\naumentando invece l'Attacco Speciale di 1 grado."
+  },
+  "swiftswim": {
+    "desc": "Raddoppia la Velocità se lo stato Pioggia è attivo."
+  },
+  "chlorophyll": {
+    "desc": "Raddoppia la Velocità se lo stato Sole intenso è attivo."
+  },
+  "illuminate": {
+    "desc": "Impedisce la diminuzione della precisione del Pokémon\ne fa sì che le sue mosse ignorino le modifiche all'elusione\ndel bersaglio."
+  },
+  "trace": {
+    "desc": "Permette al Pokémon di copiare l'abilità di un avversario\nquando entra in campo."
+  },
+  "hugepower": {
+    "desc": "Raddoppia la potenza delle mosse fisiche."
+  },
+  "poisonpoint": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento a chi lo colpisce con una mossa da contatto."
+  },
+  "innerfocus": {
+    "desc": "Rende il Pokémon immune al tentennamento causato da\nun attacco altrui e all'effetto di Prepotenza."
+  },
+  "magmaarmor": {
+    "desc": "Rende il Pokémon immune allo stato Congelamento."
+  },
+  "soundproof": {
+    "desc": "Rende il Pokémon immune alle mosse della classe Suono."
+  },
+  "raindish": {
+    "desc": "Restituisce 1/16 dei PS massimi alla fine di ogni turno in cui\nlo stato Pioggia è attivo."
+  },
+  "sandstream": {
+    "desc": "Causa lo stato Tempesta di sabbia per 5 turni quando\nil Pokémon entra in campo."
+  },
+  "pressure": {
+    "desc": "Fa sì che le mosse degli avversari che hanno come bersaglio\nquesto Pokémon consumino 1 PP in più."
+  },
+  "thickfat": {
+    "desc": "Dimezza i danni subiti dalle mosse di tipo Fuoco e Ghiaccio."
+  },
+  "earlybird": {
+    "desc": "Rende due volte più veloce il risveglio quando il Pokémon è\naffetto dallo stato Sonno."
+  },
+  "flamebody": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nScottatura a chi lo colpisce con una mossa da contatto."
+  },
+  "runaway": {
+    "desc": "Permette al Pokémon di ignorare gli effetti che ne\nimpediscono la sostituzione."
+  },
+  "keeneye": {
+    "desc": "Impedisce la diminuzione della precisione del Pokémon\ne fa sì che le sue mosse ignorino le modifiche all'elusione\ndel bersaglio."
+  },
+  "hypercutter": {
+    "desc": "Impedisce la diminuzione dell'Attacco causata da abilità\no mosse di altri Pokémon."
+  },
+  "pickup": {
+    "desc": "Permette, alla fine del turno, di raccogliere lo strumento usato\nda altri se il Pokémon non ha con sé uno strumento."
+  },
+  "hustle": {
+    "desc": "Aumenta del 50% l'Attacco del Pokémon quando utilizza\nuna mossa fisica, ma ne diminuisce la precisione del 20%."
+  },
+  "cutecharm": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nInfatuazione a chi lo colpisce con una mossa da contatto, se è\ndel sesso opposto."
+  },
+  "plus": {
+    "desc": "Aumenta del 50% l'Attacco Speciale del Pokémon se ci sono\nin campo alleati con l'abilità Più o l'abilità Meno."
+  },
+  "minus": {
+    "desc": "Aumenta del 50% l'Attacco Speciale del Pokémon se ci sono\nin campo alleati con l'abilità Più o l'abilità Meno."
+  },
+  "forecast": {
+    "desc": "Cambia il tipo del Pokémon in Acqua, Fuoco o Ghiaccio\nin base alle condizioni atmosferiche."
+  },
+  "stickyhold": {
+    "desc": "Fa sì che lo strumento che il Pokémon ha con sé non possa\nessere rubato né rimosso."
+  },
+  "shedskin": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di guarire\ndai problemi di stato alla fine di ogni turno."
+  },
+  "guts": {
+    "desc": "Aumenta del 50% l'Attacco del Pokémon se è affetto da un\nproblema di stato, ignorando anche il dimezzamento dei danni\ndelle mosse fisiche dovuto allo stato Scottatura."
+  },
+  "marvelscale": {
+    "desc": "Aumenta del 50% la Difesa del Pokémon se è affetto\nda un problema di stato."
+  },
+  "liquidooze": {
+    "desc": "Fa sì che, quando il Pokémon subisce una mossa che assorbe PS,\nchi l'ha sferrata non recuperi PS, ma subisca invece danni pari\nai PS che avrebbe recuperato."
+  },
+  "overgrow": {
+    "desc": "Potenzia le mosse di tipo Erba del 50% quando i PS\ndel Pokémon scendono a 1/3 o meno."
+  },
+  "blaze": {
+    "desc": "Potenzia le mosse di tipo Fuoco del 50% quando i PS\ndel Pokémon scendono a 1/3 o meno."
+  },
+  "torrent": {
+    "desc": "Potenzia le mosse di tipo Acqua del 50% quando i PS\ndel Pokémon scendono a 1/3 o meno."
+  },
+  "swarm": {
+    "desc": "Potenzia le mosse di tipo Coleottero del 50% quando i PS\ndel Pokémon scendono a 1/3 o meno."
+  },
+  "rockhead": {
+    "desc": "Previene la perdita di PS quando il Pokémon usa delle mosse\nche infliggono danni a chi le usa."
+  },
+  "drought": {
+    "desc": "Causa lo stato Sole intenso per 5 turni quando il Pokémon\nentra in campo."
+  },
+  "vitalspirit": {
+    "desc": "Rende il Pokémon immune agli stati Sonno e Sonnolenza."
+  },
+  "whitesmoke": {
+    "desc": "Impedisce la diminuzione delle statistiche causata da abilità\no mosse di altri Pokémon."
+  },
+  "purepower": {
+    "desc": "Raddoppia la potenza delle mosse fisiche."
+  },
+  "shellarmor": {
+    "desc": "Protegge dai brutti colpi."
+  },
+  "tangledfeet": {
+    "desc": "Raddoppia l'elusione del Pokémon se è affetto dallo stato\nConfusione."
+  },
+  "motordrive": {
+    "desc": "Rende il Pokémon immune alle mosse di tipo Elettro e\naumenta di 1 grado la sua Velocità se ne subisce una."
+  },
+  "rivalry": {
+    "desc": "Aumenta del 25% la potenza delle mosse dirette a bersagli\ndello stesso sesso del Pokémon e diminuisce del 25% quella\ndelle mosse dirette a bersagli di sesso opposto.\nNel caso di Pokémon di sesso sconosciuto, le mosse hanno\npotenza normale."
+  },
+  "steadfast": {
+    "desc": "Aumenta di 1 grado la Velocità quando il Pokémon tentenna."
+  },
+  "snowcloak": {
+    "desc": "Aumenta l'elusione del 25% se lo stato Neve è attivo."
+  },
+  "gluttony": {
+    "desc": "Permette al Pokémon di mangiare la sua bacca quando i suoi\nPS scendono a metà o meno, senza attendere che siano 1/4\no meno."
+  },
+  "angerpoint": {
+    "desc": "Aumenta l'Attacco fino al 6º grado se il Pokémon subisce\nun brutto colpo."
+  },
+  "unburden": {
+    "desc": "Raddoppia la Velocità del Pokémon se usa o perde\nuno strumento."
+  },
+  "heatproof": {
+    "desc": "Dimezza i danni subiti dalle mosse di tipo Fuoco e\ndallo stato Scottatura."
+  },
+  "simple": {
+    "desc": "Raddoppia le modifiche alle statistiche."
+  },
+  "dryskin": {
+    "desc": "Rende il Pokémon immune alle mosse di tipo Acqua e gli\npermette di recuperare 1/4 dei suoi PS massimi se ne subisce\nuna. Tuttavia, fa sì che le mosse di tipo Fuoco gli infliggano\nil 25% dei danni in più.\nPermette anche di recuperare 1/8 dei PS massimi alla fine\ndi ogni turno se lo stato Pioggia è attivo, ma ne fa perdere\n1/8 se lo stato attivo è Sole intenso."
+  },
+  "ironfist": {
+    "desc": "Aumenta del 20% la potenza delle mosse della classe Pugno."
+  },
+  "poisonheal": {
+    "desc": "Permette al Pokémon di recuperare, piuttosto che perdere,\n1/8 dei PS massimi alla fine di ogni turno in cui è affetto\ndallo stato Avvelenamento o Iperavvelenamento."
+  },
+  "adaptability": {
+    "desc": "Raddoppia la potenza delle mosse dello stesso tipo\ndel Pokémon anziché aumentarla del 50%."
+  },
+  "skilllink": {
+    "desc": "Fa sì che le mosse multicolpo mandino sempre a segno\nil massimo dei colpi possibili."
+  },
+  "hydration": {
+    "desc": "Cura il Pokémon dai problemi di stato alla fine di ogni turno\nin cui lo stato Pioggia è attivo."
+  },
+  "solarpower": {
+    "desc": "Aumenta del 50% l'Attacco Speciale del Pokémon se lo stato\nSole intenso è attivo, ma gli fa perdere 1/8 dei suoi PS massimi\nalla fine di ogni turno."
+  },
+  "quickfeet": {
+    "desc": "Aumenta del 50% la Velocità del Pokémon se è affetto\nda un problema di stato, ignorando anche la diminuzione\ndella Velocità dovuta allo stato Paralisi."
+  },
+  "sniper": {
+    "desc": "Aumenta del 125% la potenza dei brutti colpi, invece\ndel normale 50%."
+  },
+  "magicguard": {
+    "desc": "Permette al Pokémon di subire danni solo dagli attacchi."
+  },
+  "noguard": {
+    "desc": "Fa sì che la precisione di tutte le mosse sferrate da e contro\nquesto Pokémon diventi pari al 100%."
+  },
+  "stall": {
+    "desc": "Permette di usare le mosse dopo le altre con la stessa priorità."
+  },
+  "technician": {
+    "desc": "Potenzia del 50% le mosse con potenza pari o inferiore a 60."
+  },
+  "leafguard": {
+    "desc": "Rende il Pokémon immune ai problemi di stato se lo stato\nattivo è Sole intenso."
+  },
+  "klutz": {
+    "desc": "Annulla gli effetti degli strumenti che il Pokémon ha con sé."
+  },
+  "moldbreaker": {
+    "desc": "Fa sì che le mosse del Pokémon ignorino l'abilità altrui,\ncon l'eccezione di alcune abilità."
+  },
+  "superluck": {
+    "desc": "Causa lo stato Brutto colpo+1."
+  },
+  "aftermath": {
+    "desc": "Permette al Pokémon, quando va KO per effetto di una mossa\nda contatto, di causare a chi gliel'ha inferta danni pari a 1/4\ndei PS massimi di quest'ultimo."
+  },
+  "anticipation": {
+    "desc": "Rivela se gli avversari hanno mosse superefficaci o che causano\nKO immediato quando il Pokémon entra in campo."
+  },
+  "forewarn": {
+    "desc": "Rivela una mossa con potenza alta tra quelle degli avversari\nquando il Pokémon entra in campo."
+  },
+  "unaware": {
+    "desc": "Permette al Pokémon di attaccare e subire attacchi ignorando\nle modifiche alle statistiche dell'altro Pokémon, tranne quelle\nalla Velocità."
+  },
+  "filter": {
+    "desc": "Riduce del 25% i danni subiti dalle mosse superefficaci."
+  },
+  "scrappy": {
+    "desc": "Permette di colpire Pokémon di tipo Spettro con mosse\ndi tipo Normale e Lotta. Inoltre, rende il Pokémon immune\nall'effetto di Prepotenza."
+  },
+  "icebody": {
+    "desc": "Restituisce 1/16 dei PS massimi alla fine di ogni turno in cui\nlo stato Neve è attivo."
+  },
+  "solidrock": {
+    "desc": "Riduce del 25% i danni subiti dalle mosse superefficaci."
+  },
+  "snowwarning": {
+    "desc": "Causa lo stato Neve per 5 turni quando il Pokémon entra\nin campo."
+  },
+  "frisk": {
+    "desc": "Rivela lo strumento che un avversario ha con sé quando\nil Pokémon entra in campo."
+  },
+  "reckless": {
+    "desc": "Potenzia del 20% le mosse che infliggono danni a chi le usa."
+  },
+  "pickpocket": {
+    "desc": "Permette al Pokémon di rubare uno strumento, se non ne ha\ngià uno, a chi lo colpisce con un mossa da contatto."
+  },
+  "sheerforce": {
+    "desc": "Potenzia le mosse del 30%, ma annulla gli effetti aggiuntivi\ndegli attacchi."
+  },
+  "contrary": {
+    "desc": "Inverte l'effetto delle modifiche alle statistiche, che quindi\naumentano quando dovrebbero diminuire e viceversa."
+  },
+  "unnerve": {
+    "desc": "Impedisce agli avversari di mangiare le bacche."
+  },
+  "defiant": {
+    "desc": "Aumenta di 2 gradi l'Attacco del Pokémon quando\nle sue statistiche vengono ridotte da un avversario."
+  },
+  "cursedbody": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nMossa bloccata per 4 turni a chi lo attacca."
+  },
+  "healer": {
+    "desc": "Conferisce agli alleati il 50% di probabilità di guarire\ndai problemi di stato alla fine di ogni turno."
+  },
+  "friendguard": {
+    "desc": "Riduce del 25% i danni inflitti agli alleati."
+  },
+  "weakarmor": {
+    "desc": "Riduce di 1 grado la Difesa del Pokémon e aumenta di 2 gradi\nla sua Velocità se subisce danni da una mossa fisica."
+  },
+  "heavymetal": {
+    "desc": "Raddoppia il peso del Pokémon."
+  },
+  "lightmetal": {
+    "desc": "Dimezza il peso del Pokémon."
+  },
+  "multiscale": {
+    "desc": "Dimezza i danni subiti dal Pokémon quando ha tutti i PS."
+  },
+  "harvest": {
+    "desc": "Conferisce al Pokémon il 50% di probabilità di rigenerare\nla bacca utilizzata alla fine di ogni turno. La percentuale sale\nal 100% se lo stato Sole intenso è attivo."
+  },
+  "telepathy": {
+    "desc": "Permette al Pokémon di evitare gli attacchi degli alleati."
+  },
+  "moody": {
+    "desc": "Alla fine di ogni turno, aumenta di 2 gradi una statistica\ne riduce di 1 grado un'altra."
+  },
+  "overcoat": {
+    "desc": "Rende il Pokémon immune ai danni causati dallo stato\nTempesta di sabbia, e da mosse e abilità della classe Polvere."
+  },
+  "poisontouch": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di causare lo stato\nAvvelenamento al bersaglio quando lo colpisce con una mossa\nda contatto."
+  },
+  "regenerator": {
+    "desc": "Permette al Pokémon di recuperare 1/3 dei suoi PS massimi\nquando lascia il campo."
+  },
+  "bigpecks": {
+    "desc": "Impedisce la diminuzione della Difesa causata da abilità\no mosse di altri Pokémon."
+  },
+  "sandrush": {
+    "desc": "Raddoppia la Velocità se lo stato Tempesta di sabbia è attivo."
+  },
+  "analytic": {
+    "desc": "Aumenta la potenza della mossa del 30% se il Pokémon agisce\nper ultimo."
+  },
+  "illusion": {
+    "desc": "Fa sì che il Pokémon assuma le sembianze dell'ultimo Pokémon\ndella propria squadra quando entra in campo. Se subisce danni\nda una mossa, torna al suo aspetto normale."
+  },
+  "imposter": {
+    "desc": "Trasforma il Pokémon in chi ha davanti, copiandone anche\ntutte le statistiche eccetto i PS."
+  },
+  "infiltrator": {
+    "desc": "Fa sì che le mosse del Pokémon ignorino gli effetti degli stati\nSchermo di luce, Riflesso, Velo dell'aurora, Salvaguardia\ne Sostituto."
+  },
+  "mummy": {
+    "desc": "Trasforma in Mummia l'abilità di chi colpisce il Pokémon\ncon una mossa da contatto."
+  },
+  "moxie": {
+    "desc": "Aumenta di 1 grado l'Attacco quando il Pokémon causa un KO\ncon un attacco."
+  },
+  "justified": {
+    "desc": "Aumenta di 1 grado l'Attacco del Pokémon quando subisce\ndanni da una mossa di tipo Buio."
+  },
+  "rattled": {
+    "desc": "Aumenta di 1 grado la Velocità del Pokémon quando subisce\ndanni da una mossa di tipo Buio, Spettro o Coleottero,\ne quando subisce l'effetto di Prepotenza."
+  },
+  "magicbounce": {
+    "desc": "Permette al Pokémon di rimandare al mittente le mosse di stato,\nsenza subirne gli effetti."
+  },
+  "sapsipper": {
+    "desc": "Rende il Pokémon immune alle mosse di tipo Erba e\naumenta di 1 grado il suo Attacco se ne subisce una."
+  },
+  "prankster": {
+    "desc": "Aumenta di 1 grado la priorità delle mosse di stato\ndel Pokémon, ma queste non avranno più effetto sui\nPokémon di tipo Buio."
+  },
+  "sandforce": {
+    "desc": "Potenzia del 30% le mosse di tipo Roccia, Terra e Acciaio\nse lo stato Tempesta di sabbia è attivo."
+  },
+  "aromaveil": {
+    "desc": "Rende il Pokémon e i suoi alleati immuni agli stati Infatuazione,\nProvocazione, Ripetizione bloccata, Mossa bloccata, Cura\ndisabilitata e Ripetizione."
+  },
+  "flowerveil": {
+    "desc": "Rende gli alleati di tipo Erba immuni alla diminuzione\ndelle statistiche e ai problemi di stato."
+  },
+  "cheekpouch": {
+    "desc": "Fa sì che oltre a ricevere l'effetto della bacca mangiata,\nil Pokémon recuperi anche 1/3 dei suoi PS massimi."
+  },
+  "protean": {
+    "desc": "Cambia il tipo del Pokémon in quello della prima mossa che\nusa ogni volta che entra in campo."
+  },
+  "furcoat": {
+    "desc": "Dimezza i danni subiti dalle mosse fisiche."
+  },
+  "magician": {
+    "desc": "Permette al Pokémon, se non ha con sé uno strumento,\ndi rubarlo al bersaglio quando gli infligge danni con una mossa."
+  },
+  "bulletproof": {
+    "desc": "Rende il Pokémon immune alle mosse della classe Proiettile."
+  },
+  "competitive": {
+    "desc": "Aumenta di 2 gradi l'Attacco Speciale quando le statistiche\ndiminuiscono a causa di un avversario."
+  },
+  "strongjaw": {
+    "desc": "Potenzia del 50% le mosse della classe Denti."
+  },
+  "refrigerate": {
+    "desc": "Cambia le mosse di tipo Normale in tipo Ghiaccio e aumenta\nla loro potenza del 20%."
+  },
+  "sweetveil": {
+    "desc": "Rende il Pokémon e i suoi alleati immuni agli stati Sonno\ne Sonnolenza."
+  },
+  "stancechange": {
+    "desc": "Permette al Pokémon di assumere la Forma Spada se usa\nun attacco e la Forma Scudo se usa Scudo Reale."
+  },
+  "galewings": {
+    "desc": "Aumenta di 1 grado la priorità delle mosse di tipo Volante\ndel Pokémon quando ha tutti i PS."
+  },
+  "megalauncher": {
+    "desc": "Potenzia del 50% le mosse della classe Pulsar."
+  },
+  "grasspelt": {
+    "desc": "Aumenta la Difesa del 50% se lo stato Campo erboso è attivo."
+  },
+  "symbiosis": {
+    "desc": "Permette al Pokémon di passare lo strumento a un alleato\nquando questo consuma il proprio."
+  },
+  "toughclaws": {
+    "desc": "Potenzia del 30% le mosse da contatto."
+  },
+  "pixilate": {
+    "desc": "Cambia le mosse di tipo Normale in tipo Folletto e aumenta\nla loro potenza del 20%."
+  },
+  "gooey": {
+    "desc": "Riduce di 1 grado la Velocità di chi colpisce il Pokémon\ncon una mossa da contatto."
+  },
+  "aerilate": {
+    "desc": "Rende le mosse di tipo Normale di tipo Volante\ne aumenta la loro potenza del 20%."
+  },
+  "parentalbond": {
+    "desc": "Permette al Pokémon e al suo piccolo di attaccare due volte.\nIl piccolo attacca con una potenza pari al 25% di quella\ndel Pokémon."
+  },
+  "fairyaura": {
+    "desc": "Aumenta del 33% la potenza delle mosse di tipo Folletto\ndi tutti i Pokémon."
+  },
+  "stamina": {
+    "desc": "Aumenta di 1 grado la Difesa del Pokémon quando subisce\ndanni da una mossa."
+  },
+  "emergencyexit": {
+    "desc": "Fa sì che il Pokémon lasci subito il campo quando\ni suoi PS scendono a metà o meno."
+  },
+  "merciless": {
+    "desc": "Fa sì che gli attacchi sferrati su un bersaglio affetto dallo stato\nAvvelenamento o Iperavvelenamento risultino sempre\nin brutti colpi."
+  },
+  "stakeout": {
+    "desc": "Raddoppia la potenza delle mosse usate dal Pokémon contro\ni bersagli appena entrati in campo con una sostituzione."
+  },
+  "waterbubble": {
+    "desc": "Raddoppia la potenza delle mosse di tipo Acqua del Pokémon\ne dimezza i danni che subisce da quelle di tipo Fuoco. Inoltre,\nlo rende immune allo stato Scottatura."
+  },
+  "berserk": {
+    "desc": "Aumenta di 1 grado l'Attacco Speciale del Pokémon se i suoi PS\nscendono a metà o meno a causa di un attacco."
+  },
+  "slushrush": {
+    "desc": "Raddoppia la Velocità se lo stato Neve è attivo."
+  },
+  "longreach": {
+    "desc": "Fa sì che le mosse usate dal Pokémon non siano considerate\ncome mosse da contatto."
+  },
+  "liquidvoice": {
+    "desc": "Rende tutte le mosse di classe Suono del Pokémon\ndi tipo Acqua."
+  },
+  "surgesurfer": {
+    "desc": "Raddoppia la Velocità se lo stato Campo elettrico è attivo."
+  },
+  "disguise": {
+    "desc": "Fa sì che il Pokémon, anziché subire danni normali quando viene\nattaccato in Forma Mascherata, perda 1/8 dei suoi PS massimi\ne assuma la Forma Smascherata."
+  },
+  "corrosion": {
+    "desc": "Permette al Pokémon di causare gli stati Avvelenamento e\nIperavvelenamento anche a bersagli di tipo Acciaio o Veleno."
+  },
+  "queenlymajesty": {
+    "desc": "Impedisce agli avversari di usare mosse che hanno priorità alta\ncontro il Pokémon o i suoi alleati."
+  },
+  "innardsout": {
+    "desc": "Se il Pokémon subisce danni da una mossa che lo manda KO,\ninfligge a chi lo ha colpito gli stessi danni subiti."
+  },
+  "fluffy": {
+    "desc": "Dimezza i danni subiti dalle mosse da contatto, ma raddoppia\nquelli subiti dalle mosse di tipo Fuoco."
+  },
+  "tanglinghair": {
+    "desc": "Riduce di 1 grado la Velocità di chi colpisce il Pokémon\ncon una mossa da contatto."
+  },
+  "receiver": {
+    "desc": "Cambia l'abilità del Pokémon in quella di un alleato andato KO."
+  },
+  "electricsurge": {
+    "desc": "Quando il Pokémon entra in campo, causa lo stato Campo\nelettrico sull'intero campo di lotta per 5 turni."
+  },
+  "psychicsurge": {
+    "desc": "Quando il Pokémon entra in campo, causa lo stato Campo\npsichico sull'intero campo di lotta per 5 turni."
+  },
+  "grassysurge": {
+    "desc": "Quando il Pokémon entra in campo, causa lo stato Campo\nerboso sull'intero campo di lotta per 5 turni."
+  },
+  "libero": {
+    "desc": "Cambia il tipo del Pokémon in quello della prima mossa che\nusa ogni volta che entra in campo."
+  },
+  "mirrorarmor": {
+    "desc": "Permette al Pokémon di rimandare al mittente le diminuzioni\nalle statistiche, senza subirne gli effetti."
+  },
+  "stalwart": {
+    "desc": "Permette di ignorare gli effetti di mosse e abilità avversarie\nche attirano le mosse."
+  },
+  "punkrock": {
+    "desc": "Aumenta del 30% la potenza delle mosse della classe Suono\ne dimezza i danni subiti dalle stesse."
+  },
+  "sandspit": {
+    "desc": "Causa lo stato Tempesta di sabbia per 5 turni quando\nil Pokémon subisce danni da una mossa."
+  },
+  "ripen": {
+    "desc": "Raddoppia gli effetti delle bacche mangiate."
+  },
+  "mimicry": {
+    "desc": "Cambia il tipo del Pokémon a seconda dello stato\nCampo attivo."
+  },
+  "screencleaner": {
+    "desc": "Rimuove gli stati Schermo di luce, Riflesso e Velo dell'aurora\nquando il Pokémon entra in campo."
+  },
+  "steelyspirit": {
+    "desc": "Aumenta del 50% la potenza delle mosse di tipo Acciaio\nsferrate dal Pokémon e dai suoi alleati."
+  },
+  "wanderingspirit": {
+    "desc": "Scambia l'abilità del Pokémon con l'abilità di chi lo colpisce\ncon una mossa da contatto."
+  },
+  "hungerswitch": {
+    "desc": "Cambia la forma del Pokémon alla fine di ogni turno,\nalternando tra Motivo Panciapiena e Motivo Panciavuota."
+  },
+  "quickdraw": {
+    "desc": "Conferisce al Pokémon il 30% di probabilità di sferrare le mosse\nprima di altre con la stessa priorità."
+  },
+  "unseenfist": {
+    "desc": "Ignora gli effetti protettivi del bersaglio quando il Pokémon\nutilizza una mossa da contatto e infligge 1/4 dei danni originari.\nPermette comunque di attivare eventuali altri effetti applicabili\nal bersaglio."
+  },
+  "curiousmedicine": {
+    "desc": "Annulla le modifiche alle statistiche degli alleati del Pokémon\nquando entra in campo."
+  },
+  "seedsower": {
+    "desc": "Causa lo stato Campo erboso sull'intero campo di lotta\nper 5 turni quando il Pokémon subisce danni da una mossa."
+  },
+  "thermalexchange": {
+    "desc": "Rende il Pokémon immune allo stato Scottatura. Se subisce\ndanni da una mossa di tipo Fuoco, aumenta il suo Attacco\ndi 1 grado."
+  },
+  "purifyingsalt": {
+    "desc": "Rende il Pokémon immune ai problemi di stato e dimezza\ni danni subiti dalle mosse di tipo Spettro."
+  },
+  "guarddog": {
+    "desc": "Rende il Pokémon immune al normale effetto di Prepotenza,\nfacendo sì che il suo Attacco aumenti invece di 1 grado.\nRende inoltre il Pokémon immune a strumenti e mosse altrui\nche ne causano la sostituzione."
+  },
+  "zerotohero": {
+    "desc": "Permette al Pokémon di assumere la Forma Possente quando\nlascia il campo."
+  },
+  "electromorphosis": {
+    "desc": "Fa entrare il Pokémon nello stato Carica elettrica quando\nsubisce danni da una mossa."
+  },
+  "goodasgold": {
+    "desc": "Rende il Pokémon immune alle mosse di stato sferrate da altri."
+  },
+  "opportunist": {
+    "desc": "Permette al Pokémon, quando un avversario aumenta\nuna statistica, di aumentare anche la propria."
+  },
+  "cudchew": {
+    "desc": "Permette al Pokémon, alla fine del turno successivo a quello\nin cui ha usato una bacca, di usarla una seconda volta."
+  },
+  "sharpness": {
+    "desc": "Potenzia del 50% le mosse della classe Tagliente."
+  },
+  "supremeoverlord": {
+    "desc": "Aumenta la potenza delle mosse del Pokémon del 10% per\nciascun alleato andato KO durante la lotta, fino a un massimo\ndi 50%. L'effetto si attiva quando il Pokémon entra in campo."
+  },
+  "toxicdebris": {
+    "desc": "Causa lo stato Punte velenose nel campo avversario quando\nil Pokémon subisce danni da una mossa fisica."
+  },
+  "armortail": {
+    "desc": "Impedisce agli avversari di usare mosse che hanno priorità alta\ncontro il Pokémon o i suoi alleati."
+  },
+  "eartheater": {
+    "desc": "Rende il Pokémon immune alle mosse di tipo Terra e\ngli permette di recuperare 1/4 dei suoi PS massimi se\nne subisce una."
+  },
+  "hospitality": {
+    "desc": "Restituisce 1/4 dei PS massimi a un alleato del Pokémon\nquando quest'ultimo entra in campo."
+  },
+  "supersweetsyrup": {
+    "desc": "Riduce di 1 grado l'elusione degli avversari quando il Pokémon\nentra in campo. L'effetto si attiva una volta per lotta."
+  },
+  "piercingdrill": {
+    "desc": "Ignora gli effetti protettivi del bersaglio quando il Pokémon\nutilizza una mossa da contatto e infligge 1/4 dei danni originari.\nPermette comunque di attivare eventuali altri effetti applicabili\nal bersaglio."
+  },
+  "dragonize": {
+    "desc": "Cambia le mosse di tipo Normale in tipo Drago e aumenta\nla loro potenza del 20%."
+  },
+  "megasol": {
+    "desc": "Permette di usare le mosse come se lo stato Sole intenso\nfosse attivo."
+  },
+  "spicyspray": {
+    "desc": "Causa lo stato Scottatura a chi sferra una mossa che infligge\ndanni contro il Pokémon."
+  },
+  "eelevate": {
+    "desc": "Fa sì che il Pokémon non sia più a contatto con il terreno,\nrendendolo così immune alle mosse di tipo Terra e agli stati\nPunte, Punte velenose e Rete vischiosa. Aumenta di 1 grado\nla sua statistica più alta quando causa un KO con un attacco."
+  },
+  "firemane": {
+    "desc": "Aumenta del 50% la potenza delle mosse di tipo Fuoco."
+  },
+  "auraguard": {
+    "desc": "Dimezza i danni subiti dalle mosse da contatto."
+  }
+}

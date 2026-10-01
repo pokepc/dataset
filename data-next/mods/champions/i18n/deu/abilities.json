@@ -1,0 +1,653 @@
+{
+  "stench": {
+    "desc": "Verursacht das Pokémon mit einer Attacke Schaden,\nschreckt das Ziel mit 10%iger Wahrscheinlichkeit zurück."
+  },
+  "drizzle": {
+    "desc": "Das Pokémon erzeugt bei Kampfantritt Regen, der 5 Runden\nlang anhält."
+  },
+  "speedboost": {
+    "desc": "Die Initiative des Pokémon wird am Ende jeder Runde um\n1 Stufe erhöht.\nDie Initiative wird nicht erhöht, wenn das Pokémon in\ndieser Runde eingewechselt wurde."
+  },
+  "battlearmor": {
+    "desc": "Das Pokémon kann keine Volltreffer erleiden."
+  },
+  "sturdy": {
+    "desc": "Erleidet das Pokémon bei vollen KP Schaden durch eine Attacke,\ndie es mit einem Treffer kampfunfähig machen würde, übersteht\nes diese mit 1 KP.\nAußerdem haben K.O.-Attacken keine Wirkung auf es."
+  },
+  "damp": {
+    "desc": "Das Pokémon verhindert den Einsatz von Explosionsattacken.\nAuch Fähigkeiten, die Explosionen auslösen, werden nicht\naktiviert."
+  },
+  "limber": {
+    "desc": "Das Pokémon kann nicht paralysiert werden."
+  },
+  "sandveil": {
+    "desc": "Bei einem Sandsturm wird der Ausweichwert des Pokémon\num 25 % erhöht.\nAußerdem erleidet das Pokémon keinen Schaden durch\nSandstürme."
+  },
+  "static": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird der Angreifer mit 30%iger Wahrscheinlichkeit paralysiert."
+  },
+  "voltabsorb": {
+    "desc": "Elektro-Attacken haben keine Wirkung auf das Pokémon.\nStattdessen füllen sie seine KP um 1/4 des Maximalwerts auf."
+  },
+  "waterabsorb": {
+    "desc": "Wasser-Attacken haben keine Wirkung auf das Pokémon.\nStattdessen füllen sie seine KP um 1/4 des Maximalwerts auf."
+  },
+  "oblivious": {
+    "desc": "Das Pokémon kann nicht in die Zustände Anziehung oder\nVerhöhner versetzt werden. Auch Bedroher wirkt bei ihm nicht."
+  },
+  "cloudnine": {
+    "desc": "Das Pokémon hebt jegliche Wettereffekte auf."
+  },
+  "compoundeyes": {
+    "desc": "Die Genauigkeit der Attacken des Pokémon wird um 30 %\nerhöht."
+  },
+  "insomnia": {
+    "desc": "Das Pokémon kann nicht in Schlaf versetzt oder schläfrig\ngemacht werden."
+  },
+  "immunity": {
+    "desc": "Das Pokémon kann nicht vergiftet oder schwer vergiftet werden."
+  },
+  "flashfire": {
+    "desc": "Feuer-Attacken haben keine Wirkung auf das Pokémon.\nStattdessen versetzen sie es in den Zustand Feuerfänger."
+  },
+  "shielddust": {
+    "desc": "Zusatzeffekte von Angriffen haben keine Wirkung auf\ndas Pokémon."
+  },
+  "owntempo": {
+    "desc": "Das Pokémon kann nicht verwirrt werden.\nAuch Bedroher wirkt bei ihm nicht."
+  },
+  "suctioncups": {
+    "desc": "Attacken und Items anderer Pokémon, durch die das Pokémon\nausgewechselt werden würde, haben keine Wirkung auf es."
+  },
+  "intimidate": {
+    "desc": "Das Pokémon senkt bei Kampfantritt den Angriff von Gegnern\num 1 Stufe."
+  },
+  "shadowtag": {
+    "desc": "Das Pokémon hindert Gegner am Auswechseln."
+  },
+  "roughskin": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nfügt es dem Angreifer Schaden in Höhe von 1/8 von\ndessen maximalen KP zu."
+  },
+  "levitate": {
+    "desc": "Das Pokémon gilt als nicht auf dem Boden befindlich und\nBoden-Attacken sowie die Zustände Stachler, Giftspitzen\nund Klebenetz haben keine Wirkung auf es."
+  },
+  "effectspore": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird der Angreifer mit 30%iger Wahrscheinlichkeit\nvergiftet, paralysiert oder in Schlaf versetzt.\nDiese Fähigkeit hat keine Wirkung auf Pokémon vom\nTyp Pflanze."
+  },
+  "synchronize": {
+    "desc": "Wird das Pokémon durch eine Attacke oder Fähigkeit vergiftet,\nschwer vergiftet, paralysiert oder erleidet Verbrennungen,\nereilt das jeweilige Statusproblem auch den Verursacher."
+  },
+  "clearbody": {
+    "desc": "Die Statuswerte des Pokémon können nicht durch Attacken oder\nFähigkeiten anderer Pokémon gesenkt werden."
+  },
+  "naturalcure": {
+    "desc": "Wird das Pokémon ausgewechselt, werden seine\nStatusprobleme geheilt."
+  },
+  "lightningrod": {
+    "desc": "Das Pokémon zieht Elektro-Attacken an, die aber keine\nWirkung auf es haben. Stattdessen erhöhen sie seinen\nSpezial-Angriff um 1 Stufe."
+  },
+  "swiftswim": {
+    "desc": "Bei Regen wird die Initiative des Pokémon verdoppelt."
+  },
+  "chlorophyll": {
+    "desc": "Bei Sonnenschein wird die Initiative des Pokémon verdoppelt."
+  },
+  "illuminate": {
+    "desc": "Die Genauigkeit des Pokémon kann nicht gesenkt werden.\nAußerdem ignoriert es beim Einsatz von Attacken\nAusweichwert-Veränderungen von Zielen."
+  },
+  "trace": {
+    "desc": "Das Pokémon kopiert bei Kampfantritt die Fähigkeit eines\nGegners."
+  },
+  "hugepower": {
+    "desc": "Die Stärke von physischen Attacken des Pokémon\nwird verdoppelt."
+  },
+  "poisonpoint": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird der Angreifer mit 30%iger Wahrscheinlichkeit vergiftet."
+  },
+  "innerfocus": {
+    "desc": "Das Pokémon schreckt durch Angriffe anderer Pokémon nicht\nzurück. Auch Bedroher wirkt bei ihm nicht."
+  },
+  "magmaarmor": {
+    "desc": "Das Pokémon kann nicht eingefroren werden."
+  },
+  "soundproof": {
+    "desc": "Geräuschattacken haben keine Wirkung auf das Pokémon."
+  },
+  "raindish": {
+    "desc": "Bei Regen regeneriert das Pokémon am Ende jeder Runde\n1/16 seiner maximalen KP."
+  },
+  "sandstream": {
+    "desc": "Das Pokémon erzeugt bei Kampfantritt einen Sandsturm,\nder 5 Runden lang anhält."
+  },
+  "pressure": {
+    "desc": "Gegner verbrauchen beim Einsatz von Attacken,\ndie sich gegen das Pokémon richten, 1 AP mehr."
+  },
+  "thickfat": {
+    "desc": "Der Schaden, den das Pokémon durch Feuer- und Eis-Attacken\nerleidet, wird halbiert."
+  },
+  "earlybird": {
+    "desc": "Wenn es in Schlaf versetzt wurde, wacht das Pokémon doppelt\nso schnell wieder auf wie andere Pokémon."
+  },
+  "flamebody": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nerleidet der Angreifer mit 30%iger Wahrscheinlichkeit\nVerbrennungen."
+  },
+  "runaway": {
+    "desc": "Das Pokémon ignoriert sämtliche Effekte, die verhindern\nwürden, dass es gegen ein anderes Pokémon seines Teams\nausgewechselt wird."
+  },
+  "keeneye": {
+    "desc": "Die Genauigkeit des Pokémon kann nicht gesenkt werden.\nAußerdem ignoriert es beim Einsatz von Attacken\nAusweichwert-Veränderungen von Zielen."
+  },
+  "hypercutter": {
+    "desc": "Der Angriff des Pokémon kann nicht durch Attacken oder\nFähigkeiten anderer Pokémon gesenkt werden."
+  },
+  "pickup": {
+    "desc": "Trägt das Pokémon kein Item, nimmt es am Ende der Runde\nein von einem anderen Pokémon benutztes Item auf."
+  },
+  "hustle": {
+    "desc": "Setzt das Pokémon eine physische Attacke ein, wird sein\nAngriff um 50 % erhöht, aber seine Genauigkeit um 20 %\ngesenkt."
+  },
+  "cutecharm": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke eines Pokémon\nvom anderen Geschlecht getroffen, wird der Angreifer mit\n30%iger Wahrscheinlichkeit in den Zustand Anziehung versetzt."
+  },
+  "plus": {
+    "desc": "Der Spezial-Angriff des Pokémon wird um 50 % erhöht,\nwenn sich ein Mitstreiter mit der Fähigkeit Plus oder der\nFähigkeit Minus auf dem Kampffeld befindet."
+  },
+  "minus": {
+    "desc": "Der Spezial-Angriff des Pokémon wird um 50 % erhöht,\nwenn sich ein Mitstreiter mit der Fähigkeit Plus oder der\nFähigkeit Minus auf dem Kampffeld befindet."
+  },
+  "forecast": {
+    "desc": "Das Pokémon nimmt je nach Wetter entweder den Typ Wasser,\nFeuer oder Eis an."
+  },
+  "stickyhold": {
+    "desc": "Das getragene Item des Pokémon kann nicht gestohlen werden\noder verloren gehen."
+  },
+  "shedskin": {
+    "desc": "Das Pokémon befreit sich am Ende jeder Runde mit 30%iger\nWahrscheinlichkeit von Statusproblemen."
+  },
+  "guts": {
+    "desc": "Der Angriff des Pokémon wird um 50 % erhöht, wenn es von\neinem Statusproblem betroffen ist. Außerdem wird der den\nSchaden von physischen Attacken halbierende Effekt von\nVerbrennungen ignoriert."
+  },
+  "marvelscale": {
+    "desc": "Die Verteidigung des Pokémon wird um 50 % erhöht,\nwenn es von einem Statusproblem betroffen ist."
+  },
+  "liquidooze": {
+    "desc": "Wird das Pokémon von einer KP-stehlenden Attacke getroffen,\nregeneriert der Angreifer dadurch keine KP. Stattdessen erleidet\ner Schaden in Höhe der KP, die er regeneriert hätte."
+  },
+  "overgrow": {
+    "desc": "Fallen die KP des Pokémon auf 1/3 des Maximalwerts\noder weniger, wird die Stärke seiner Pflanzen-Attacken\num 50 % erhöht."
+  },
+  "blaze": {
+    "desc": "Fallen die KP des Pokémon auf 1/3 des Maximalwerts\noder weniger, wird die Stärke seiner Feuer-Attacken\num 50 % erhöht."
+  },
+  "torrent": {
+    "desc": "Fallen die KP des Pokémon auf 1/3 des Maximalwerts\noder weniger, wird die Stärke seiner Wasser-Attacken\num 50 % erhöht."
+  },
+  "swarm": {
+    "desc": "Fallen die KP des Pokémon auf 1/3 des Maximalwerts\noder weniger, wird die Stärke seiner Käfer-Attacken\num 50 % erhöht."
+  },
+  "rockhead": {
+    "desc": "Das Pokémon verliert keine KP, wenn es Attacken einsetzt,\ndurch die es selbst Schaden erleiden würde."
+  },
+  "drought": {
+    "desc": "Das Pokémon erzeugt bei Kampfantritt Sonnenschein,\nder 5 Runden lang anhält."
+  },
+  "vitalspirit": {
+    "desc": "Das Pokémon kann nicht in Schlaf versetzt oder schläfrig\ngemacht werden."
+  },
+  "whitesmoke": {
+    "desc": "Die Statuswerte des Pokémon können nicht durch Attacken oder\nFähigkeiten anderer Pokémon gesenkt werden."
+  },
+  "purepower": {
+    "desc": "Die Stärke von physischen Attacken des Pokémon\nwird verdoppelt."
+  },
+  "shellarmor": {
+    "desc": "Das Pokémon kann keine Volltreffer erleiden."
+  },
+  "tangledfeet": {
+    "desc": "Ist das Pokémon verwirrt, wird sein Ausweichwert verdoppelt."
+  },
+  "motordrive": {
+    "desc": "Elektro-Attacken haben keine Wirkung auf das Pokémon.\nStattdessen erhöhen sie seine Initiative um 1 Stufe."
+  },
+  "rivalry": {
+    "desc": "Greift das Pokémon ein Ziel desselben Geschlechts an,\nwird die Stärke seiner Attacken um 25 % erhöht.\nBei einem Ziel des anderen Geschlechts wird sie um 25 %\ngesenkt. Ist das Geschlecht des Pokémon oder des Ziels\nunbekannt, verändert sich die Stärke nicht."
+  },
+  "steadfast": {
+    "desc": "Schreckt das Pokémon zurück, wird seine Initiative um 1 Stufe\nerhöht."
+  },
+  "snowcloak": {
+    "desc": "Bei Schnee wird der Ausweichwert des Pokémon um 25 %\nerhöht."
+  },
+  "gluttony": {
+    "desc": "Beeren, die das Pokémon normalerweise erst dann isst,\nwenn seine KP auf 1/4 des Maximalwerts oder weniger\nfallen, isst es bereits dann, wenn sie auf die Hälfte oder\nweniger fallen."
+  },
+  "angerpoint": {
+    "desc": "Erleidet das Pokémon einen Volltreffer, wird sein Angriff auf\ndie 6. Stufe erhöht."
+  },
+  "unburden": {
+    "desc": "Wird das von ihm getragene Item verwendet oder geht\nverloren, wird die Initiative des Pokémon verdoppelt."
+  },
+  "heatproof": {
+    "desc": "Der Schaden, den das Pokémon durch Feuer-Attacken und\nVerbrennungen erleidet, wird halbiert."
+  },
+  "simple": {
+    "desc": "Statuswertänderungen des Pokémon werden verdoppelt."
+  },
+  "dryskin": {
+    "desc": "Wasser-Attacken haben keine Wirkung auf das Pokémon.\nStattdessen füllen sie seine KP um 1/4 des Maximalwerts auf.\nDer Schaden, den es durch Feuer-Attacken erleidet,\nwird jedoch um 25 % erhöht.\nBei Regen regeneriert das Pokémon am Ende jeder Runde\n1/8 seiner maximalen KP. Bei Sonnenschein hingegen verliert\nes am Ende jeder Runde 1/8 seiner maximalen KP."
+  },
+  "ironfist": {
+    "desc": "Die Stärke von Hiebattacken des Pokémon wird um 20 %\nerhöht."
+  },
+  "poisonheal": {
+    "desc": "Ist das Pokémon vergiftet oder schwer vergiftet, erleidet es\nkeinen Schaden, sondern regeneriert am Ende jeder Runde\n1/8 seiner maximalen KP."
+  },
+  "adaptability": {
+    "desc": "Die Stärke von Attacken des Pokémon, die seinem Typ\nentsprechen, wird nicht um 50 % erhöht, sondern um 100 %."
+  },
+  "skilllink": {
+    "desc": "Das Pokémon landet mit Serienattacken die maximale Anzahl\nan Treffern."
+  },
+  "hydration": {
+    "desc": "Bei Regen werden am Ende jeder Runde Statusprobleme\ndes Pokémon geheilt."
+  },
+  "solarpower": {
+    "desc": "Bei Sonnenschein wird der Spezial-Angriff des Pokémon\num 50 % erhöht, aber dafür verliert es am Ende jeder Runde\n1/8 seiner maximalen KP."
+  },
+  "quickfeet": {
+    "desc": "Die Initiative des Pokémon wird um 50 % erhöht, wenn es von\neinem Statusproblem betroffen ist. Außerdem wird der Initiative\nreduzierende Effekt von Paralyse ignoriert."
+  },
+  "sniper": {
+    "desc": "Landet das Pokémon einen Volltreffer, wird die Stärke\nnicht um 50 % erhöht, sondern um 125 %."
+  },
+  "magicguard": {
+    "desc": "Das Pokémon erleidet nur durch Angriffe Schaden."
+  },
+  "noguard": {
+    "desc": "Die Genauigkeit aller Attacken, die von dem Pokémon\neingesetzt werden oder das Pokémon als Ziel haben,\nbeträgt 100 %."
+  },
+  "stall": {
+    "desc": "Bei Attacken mit gleicher Priorität handelt das Pokémon\nals Letztes."
+  },
+  "technician": {
+    "desc": "Die Stärke von Attacken des Pokémon, die über eine Stärke\nvon 60 oder weniger verfügen, wird um 50 % erhöht."
+  },
+  "leafguard": {
+    "desc": "Bei Sonnenschein kann das Pokémon keine Statusprobleme\nerleiden."
+  },
+  "klutz": {
+    "desc": "Getragene Items des Pokémon haben keine Wirkung."
+  },
+  "moldbreaker": {
+    "desc": "Das Pokémon kann Attacken ungeachtet der Fähigkeit von\nZielen einsetzen.\nManche Fähigkeiten sind davon jedoch nicht betroffen."
+  },
+  "superluck": {
+    "desc": "Die Volltrefferquote des Pokémon wird um 1 Stufe erhöht."
+  },
+  "aftermath": {
+    "desc": "Wird das Pokémon durch eine Kontaktattacke besiegt,\nerleidet der Angreifer Schaden in Höhe von 1/4 der eigenen\nmaximalen KP."
+  },
+  "anticipation": {
+    "desc": "Das Pokémon ahnt bei Kampfantritt, ob ein Gegner über\nK.O.-Attacken oder Attacken verfügt, die sehr effektiv\ngegen es sind."
+  },
+  "forewarn": {
+    "desc": "Das Pokémon erkennt bei Kampfantritt eine der gegnerischen\nAttacken mit der höchsten Stärke."
+  },
+  "unaware": {
+    "desc": "Das Pokémon ignoriert beim Angriff sämtliche\nStatuswertänderungen von Zielen sowie sämtliche\nStatuswertänderungen von Angreifern, wenn es selbst\nZiel einer Attacke ist.\nÄnderungen an der Initiative können jedoch nicht\nignoriert werden."
+  },
+  "filter": {
+    "desc": "Der Schaden, den das Pokémon durch sehr effektive Attacken\nerleidet, wird um 25 % gesenkt."
+  },
+  "scrappy": {
+    "desc": "Normal- und Kampf-Attacken des Pokémon treffen auch\nPokémon vom Typ Geist. Außerdem wirkt Bedroher bei\nihm nicht."
+  },
+  "icebody": {
+    "desc": "Bei Schnee regeneriert das Pokémon am Ende jeder Runde\n1/16 seiner maximalen KP."
+  },
+  "solidrock": {
+    "desc": "Der Schaden, den das Pokémon durch sehr effektive Attacken\nerleidet, wird um 25 % gesenkt."
+  },
+  "snowwarning": {
+    "desc": "Das Pokémon erzeugt bei Kampfantritt Schnee, der 5 Runden\nlang anhält."
+  },
+  "frisk": {
+    "desc": "Bei Kampfantritt erkennt das Pokémon die getragenen Items\nvon Gegnern."
+  },
+  "reckless": {
+    "desc": "Die Stärke von Attacken des Pokémon, durch die es selbst\nSchaden erleidet, wird um 20 % erhöht."
+  },
+  "pickpocket": {
+    "desc": "Trägt das Pokémon kein Item und wird von einer Kontaktattacke\ngetroffen, stiehlt es das Item des Angreifers."
+  },
+  "sheerforce": {
+    "desc": "Die Angriffe des Pokémon verlieren ihre Zusatzeffekte,\naber die Stärke dieser Attacken wird um 30 % erhöht."
+  },
+  "contrary": {
+    "desc": "Statuswertänderungen des Pokémon werden umgekehrt:\nStatuswerte, die eigentlich erhöht werden sollten, sinken und\nStatuswerte, die eigentlich sinken sollten, werden erhöht."
+  },
+  "unnerve": {
+    "desc": "Das Pokémon hindert Gegner daran, Beeren zu essen."
+  },
+  "defiant": {
+    "desc": "Der Angriff des Pokémon wird um 2 Stufen erhöht, wenn einer\nseiner Statuswerte durch einen Gegner gesenkt wird."
+  },
+  "cursedbody": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Attacke,\nwird der Angreifer mit 30%iger Wahrscheinlichkeit\n4 Runden lang in den Zustand Attackenblockade versetzt."
+  },
+  "healer": {
+    "desc": "Das Pokémon befreit am Ende jeder Runde mit 50%iger\nWahrscheinlichkeit Mitstreiter von Statusproblemen."
+  },
+  "friendguard": {
+    "desc": "Der Schaden, den Mitstreiter des Pokémon erleiden, wird um\n25 % gesenkt."
+  },
+  "weakarmor": {
+    "desc": "Erleidet das Pokémon Schaden durch eine physische Attacke,\nwird seine Verteidigung um 1 Stufe gesenkt, aber seine Initiative\ndafür um 2 Stufen erhöht."
+  },
+  "heavymetal": {
+    "desc": "Das Gewicht des Pokémon wird verdoppelt."
+  },
+  "lightmetal": {
+    "desc": "Das Gewicht des Pokémon wird halbiert."
+  },
+  "multiscale": {
+    "desc": "Bei vollen KP wird der erlittene Schaden des Pokémon halbiert."
+  },
+  "harvest": {
+    "desc": "Hat das Pokémon eine Beere gegessen, kann es diese am Ende\njeder Runde mit 50%iger Wahrscheinlichkeit erneut erzeugen.\nBei Sonnenschein gelingt dies garantiert."
+  },
+  "telepathy": {
+    "desc": "Das Pokémon weicht Angriffen von Mitstreitern aus."
+  },
+  "moody": {
+    "desc": "Am Ende jeder Runde wird ein Statuswert des Pokémon um\n2 Stufen erhöht und ein anderer um 1 Stufe gesenkt."
+  },
+  "overcoat": {
+    "desc": "Das Pokémon erleidet keinen Schaden durch Sandstürme.\nAußerdem haben Pulverattacken und -fähigkeiten keine\nWirkung auf es."
+  },
+  "poisontouch": {
+    "desc": "Trifft das Pokémon ein Ziel mit einer Kontaktattacke,\nwird das Ziel mit 30%iger Wahrscheinlichkeit vergiftet."
+  },
+  "regenerator": {
+    "desc": "Wird das Pokémon ausgewechselt, regeneriert es 1/3 seiner\nmaximalen KP."
+  },
+  "bigpecks": {
+    "desc": "Die Verteidigung des Pokémon kann nicht durch Attacken oder\nFähigkeiten anderer Pokémon gesenkt werden."
+  },
+  "sandrush": {
+    "desc": "Bei einem Sandsturm wird die Initiative des Pokémon\nverdoppelt."
+  },
+  "analytic": {
+    "desc": "Setzt das Pokémon in einer Runde als Letztes eine Attacke ein,\nwird deren Stärke um 30 % erhöht."
+  },
+  "illusion": {
+    "desc": "Das Pokémon nimmt die Gestalt des Pokémon an der letzten\nStelle im Team an.\nWenn es Schaden durch eine Attacke erleidet,\nverwandelt es sich zurück."
+  },
+  "imposter": {
+    "desc": "Das Pokémon verwandelt sich in eine Kopie seines Gegenübers.\nDabei übernimmt es auch dessen Statuswerte, mit Ausnahme\nder KP."
+  },
+  "infiltrator": {
+    "desc": "Das Pokémon ignoriert beim Einsatz von Attacken die Effekte\nvon Lichtschild, Reflektor, Auroraschleier, Bodyguard und\nDelegator von Zielen."
+  },
+  "mummy": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird die Fähigkeit des Angreifers durch die Fähigkeit Mumie\nersetzt."
+  },
+  "moxie": {
+    "desc": "Der Angriff des Pokémon wird um 1 Stufe erhöht, wenn es ein\nanderes Pokémon mit einem Angriff besiegt."
+  },
+  "justified": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Unlicht-Attacke,\nwird sein Angriff um 1 Stufe erhöht."
+  },
+  "rattled": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Attacke vom Typ\nUnlicht, Geist oder Käfer oder wirkt Bedroher auf es,\nwird seine Initiative um 1 Stufe erhöht."
+  },
+  "magicbounce": {
+    "desc": "Das Pokémon wirft Status-Attacken auf Angreifer zurück,\nohne selbst davon getroffen zu werden."
+  },
+  "sapsipper": {
+    "desc": "Pflanzen-Attacken haben keine Wirkung auf das Pokémon.\nStattdessen erhöhen sie seinen Angriff um 1 Stufe."
+  },
+  "prankster": {
+    "desc": "Die Priorität von Status-Attacken des Pokémon wird\num 1 Stufe erhöht.\nIm Gegenzug haben seine Status-Attacken keine Wirkung\nmehr auf Pokémon vom Typ Unlicht."
+  },
+  "sandforce": {
+    "desc": "Bei einem Sandsturm wird die Stärke von Gesteins-, Boden-\nund Stahl-Attacken des Pokémon um 30 % erhöht."
+  },
+  "aromaveil": {
+    "desc": "Das Pokémon und seine Mitstreiter sind vor den Zuständen\nAnziehung, Verhöhner, Folgensperre, Attackenblockade,\nHeilblockade und Zugabe geschützt."
+  },
+  "flowerveil": {
+    "desc": "Mitstreiter des Pokémon, die dem Typ Pflanze angehören,\nsind vor Statuswertsenkungen sowie vor Statusproblemen\ngeschützt."
+  },
+  "cheekpouch": {
+    "desc": "Isst das Pokémon eine Beere, regeneriert es zusätzlich\nzum Effekt der Beere noch 1/3 seiner maximalen KP."
+  },
+  "protean": {
+    "desc": "Einmal pro Kampfantritt nimmt das Pokémon beim Einsatz einer\nAttacke deren Typ an."
+  },
+  "furcoat": {
+    "desc": "Der Schaden, den das Pokémon durch physische Attacken\nerleidet, wird halbiert."
+  },
+  "magician": {
+    "desc": "Trägt das Pokémon kein Item und fügt einem anderen Pokémon\nSchaden mit einer Attacke zu, stiehlt es dem Ziel dabei\nsein Item."
+  },
+  "bulletproof": {
+    "desc": "Kugelgeschossattacken haben keine Wirkung auf das Pokémon."
+  },
+  "competitive": {
+    "desc": "Der Spezial-Angriff des Pokémon wird um 2 Stufen erhöht,\nwenn einer seiner Statuswerte durch einen Gegner gesenkt wird."
+  },
+  "strongjaw": {
+    "desc": "Die Stärke von Bissattacken des Pokémon wird\num 50 % erhöht."
+  },
+  "refrigerate": {
+    "desc": "Normal-Attacken des Pokémon nehmen den Typ Eis an und ihre\nStärke wird um 20 % erhöht."
+  },
+  "sweetveil": {
+    "desc": "Das Pokémon und seine Mitstreiter können nicht in Schlaf\nversetzt oder schläfrig gemacht werden."
+  },
+  "stancechange": {
+    "desc": "Führt das Pokémon einen Angriff aus, nimmt es die Klingenform\nan. Setzt es danach die Attacke Königsschild ein, nimmt es die\nSchildform an."
+  },
+  "galewings": {
+    "desc": "Bei vollen KP wird die Priorität von Flug-Attacken des\nPokémon um 1 Stufe erhöht."
+  },
+  "megalauncher": {
+    "desc": "Die Stärke von Impulswellenattacken des Pokémon wird\num 50 % erhöht."
+  },
+  "grasspelt": {
+    "desc": "Die Verteidigung des Pokémon wird um 50 % erhöht,\nwenn ein Grasfeld aktiv ist."
+  },
+  "symbiosis": {
+    "desc": "Das Pokémon gibt Mitstreitern, die ihr Item aufgebraucht haben,\nsein eigenes Item."
+  },
+  "toughclaws": {
+    "desc": "Die Stärke von Kontaktattacken des Pokémon wird\num 30 % erhöht."
+  },
+  "pixilate": {
+    "desc": "Normal-Attacken des Pokémon nehmen den Typ Fee an und ihre\nStärke wird um 20 % erhöht."
+  },
+  "gooey": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird die Initiative des Angreifers um 1 Stufe gesenkt."
+  },
+  "aerilate": {
+    "desc": "Normal-Attacken des Pokémon nehmen den Typ Flug an und\nihre Stärke wird um 20 % erhöht."
+  },
+  "parentalbond": {
+    "desc": "Das Pokémon und sein Junges greifen beide jeweils ein Mal an.\nDie Stärke des Angriffs des Jungen beträgt dabei 25 % der des\nElternteils."
+  },
+  "fairyaura": {
+    "desc": "Die Stärke von Feen-Attacken aller Pokémon wird\num 33 % erhöht."
+  },
+  "stamina": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Attacke,\nwird seine Verteidigung um 1 Stufe erhöht."
+  },
+  "emergencyexit": {
+    "desc": "Fallen die KP des Pokémon auf die Hälfte des Maximalwerts\noder weniger, wird es ausgewechselt."
+  },
+  "merciless": {
+    "desc": "Bei Angriffen auf vergiftete oder schwer vergiftete Ziele hat das\nPokémon Volltreffergarantie."
+  },
+  "stakeout": {
+    "desc": "Beim Angriff auf neu eingewechselte Ziele wird die\nStärke der Attacken des Pokémon verdoppelt."
+  },
+  "waterbubble": {
+    "desc": "Der Schaden, den das Pokémon durch Feuer-Attacken erleidet,\nwird halbiert. Außerdem wird die Stärke seiner Wasser-Attacken\nverdoppelt und es kann keine Verbrennungen erleiden."
+  },
+  "berserk": {
+    "desc": "Fallen die KP des Pokémon durch einen Angriff auf die Hälfte\ndes Maximalwerts oder weniger, wird sein Spezial-Angriff\num 1 Stufe erhöht."
+  },
+  "slushrush": {
+    "desc": "Bei Schnee wird die Initiative des Pokémon verdoppelt."
+  },
+  "longreach": {
+    "desc": "Die Attacken des Pokémon zählen nie als Kontaktattacken."
+  },
+  "liquidvoice": {
+    "desc": "Geräuschattacken des Pokémon nehmen den Typ Wasser an."
+  },
+  "surgesurfer": {
+    "desc": "Die Initiative des Pokémon wird verdoppelt,\nwenn ein Elektrofeld aktiv ist."
+  },
+  "disguise": {
+    "desc": "Befindet sich das Pokémon in der Verkleideten Form und würde\neigentlich durch eine Attacke Schaden erleiden, verbraucht es\nstattdessen 1/8 seiner maximalen KP und wechselt in die\nEntlarvte Form."
+  },
+  "corrosion": {
+    "desc": "Das Pokémon kann selbst Pokémon vom Typ Gift oder Stahl\nvergiften oder schwer vergiften."
+  },
+  "queenlymajesty": {
+    "desc": "Gegner können keine Prioritätsattacken gegen das Pokémon\nund seine Mitstreiter einsetzen."
+  },
+  "innardsout": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Attacke und wird\ndadurch kampfunfähig, wird dem Angreifer Schaden in\nderselben Höhe zugefügt."
+  },
+  "fluffy": {
+    "desc": "Der Schaden, den das Pokémon durch Kontaktattacken erleidet,\nwird halbiert. Dafür erleidet es doppelten Schaden durch\nFeuer-Attacken."
+  },
+  "tanglinghair": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\nwird die Initiative des Angreifers um 1 Stufe gesenkt."
+  },
+  "receiver": {
+    "desc": "Das Pokémon erhält die Fähigkeit eines Mitstreiters,\nwenn dieser besiegt wird."
+  },
+  "electricsurge": {
+    "desc": "Das Pokémon erzeugt bei Kampfantritt auf dem gesamten\nKampffeld ein Elektrofeld, das 5 Runden lang anhält."
+  },
+  "psychicsurge": {
+    "desc": "Das Pokémon erzeugt bei Kampfantritt auf dem gesamten\nKampffeld ein Psychofeld, das 5 Runden lang anhält."
+  },
+  "grassysurge": {
+    "desc": "Das Pokémon erzeugt bei Kampfantritt auf dem gesamten\nKampffeld ein Grasfeld, das 5 Runden lang anhält."
+  },
+  "libero": {
+    "desc": "Einmal pro Kampfantritt nimmt das Pokémon beim Einsatz einer\nAttacke deren Typ an."
+  },
+  "mirrorarmor": {
+    "desc": "Das Pokémon wirft Effekte, die seine Statuswerte senken\nwürden, auf den Verursacher zurück."
+  },
+  "stalwart": {
+    "desc": "Das Pokémon ignoriert die Effekte von Fähigkeiten und\nAttacken, die Attacken umleiten."
+  },
+  "punkrock": {
+    "desc": "Die Stärke der Geräuschattacken des Pokémon wird\num 30 % erhöht.\nDer Schaden, den es selbst durch Geräuschattacken erleidet,\nwird halbiert."
+  },
+  "sandspit": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Attacke,\nerzeugt es einen Sandsturm, der 5 Runden lang anhält."
+  },
+  "ripen": {
+    "desc": "Der Effekt von Beeren, die das Pokémon isst, wird verdoppelt."
+  },
+  "mimicry": {
+    "desc": "Der Typ des Pokémon ändert sich in Abhängigkeit vom\naktiven Feld."
+  },
+  "screencleaner": {
+    "desc": "Das Pokémon hebt bei Kampfantritt die Zustände Lichtschild,\nReflektor und Auroraschleier auf."
+  },
+  "steelyspirit": {
+    "desc": "Die Stärke von Stahl-Attacken des Pokémon und seiner\nMitstreiter wird um 50 % erhöht."
+  },
+  "wanderingspirit": {
+    "desc": "Wird das Pokémon von einer Kontaktattacke getroffen,\ntauscht es Fähigkeiten mit dem Angreifer."
+  },
+  "hungerswitch": {
+    "desc": "Das Pokémon ändert am Ende jeder Runde seine Form\nund wechselt somit zwischen dem Pappsatt- und dem\nKohldampfmuster."
+  },
+  "quickdraw": {
+    "desc": "Das Pokémon handelt bei Attacken mit gleicher Priorität\nmit 30%iger Wahrscheinlichkeit zuerst."
+  },
+  "unseenfist": {
+    "desc": "Setzt das Pokémon eine Kontaktattacke ein, trifft sie auch\nZiele, die sich selbst schützen, und fügt ihnen 1/4 des\neigentlichen Schadens zu.\nAlle anderen Effekte werden trotzdem ausgelöst."
+  },
+  "curiousmedicine": {
+    "desc": "Das Pokémon hebt bei Kampfantritt alle Statuswertänderungen\nvon Mitstreitern auf."
+  },
+  "seedsower": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Attacke,\nerzeugt es auf dem gesamten Kampffeld ein Grasfeld,\ndas 5 Runden lang anhält."
+  },
+  "thermalexchange": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Feuer-Attacke,\nwird sein Angriff um 1 Stufe erhöht.\nAußerdem kann es keine Verbrennungen erleiden."
+  },
+  "purifyingsalt": {
+    "desc": "Das Pokémon kann keine Statusprobleme erleiden und der\nSchaden, den es durch Geister-Attacken erleidet, wird halbiert."
+  },
+  "guarddog": {
+    "desc": "Bedroher hat keine Wirkung auf das Pokémon.\nStattdessen wird sein Angriff um 1 Stufe erhöht.\nAttacken und Items anderer Pokémon, durch die das Pokémon\nausgewechselt werden würde, haben ebenfalls keine Wirkung\nauf es."
+  },
+  "zerotohero": {
+    "desc": "Wird das Pokémon ausgewechselt, nimmt es die Heldenform an."
+  },
+  "electromorphosis": {
+    "desc": "Erleidet das Pokémon Schaden durch eine Attacke,\nwird es in den Zustand Elektro-Boost versetzt."
+  },
+  "goodasgold": {
+    "desc": "Status-Attacken anderer Pokémon haben keine Wirkung auf\ndas Pokémon."
+  },
+  "opportunist": {
+    "desc": "Wird ein Statuswert eines Gegners erhöht, steigt der gleiche\nStatuswert des Pokémon in gleichem Maße."
+  },
+  "cudchew": {
+    "desc": "Isst das Pokémon eine Beere, wird es sie einmalig\nam Ende der nächsten Runde erneut essen."
+  },
+  "sharpness": {
+    "desc": "Die Stärke von Schnittattacken des Pokémon wird\num 50 % erhöht."
+  },
+  "supremeoverlord": {
+    "desc": "Bei Kampfantritt wird die Stärke der Attacken des Pokémon\nfür jedes bisher besiegte Team-Mitglied um 10 % erhöht,\nbis zu einem Maximalwert von 50 %."
+  },
+  "toxicdebris": {
+    "desc": "Erleidet das Pokémon Schaden durch eine physische Attacke,\nerzeugt es den Zustand Giftspitzen auf der Gegnerseite."
+  },
+  "armortail": {
+    "desc": "Gegner können keine Prioritätsattacken gegen das Pokémon\nund seine Mitstreiter einsetzen."
+  },
+  "eartheater": {
+    "desc": "Boden-Attacken haben keine Wirkung auf das Pokémon.\nStattdessen füllen sie seine KP um 1/4 des Maximalwerts auf."
+  },
+  "hospitality": {
+    "desc": "Bei Kampfantritt füllt das Pokémon die KP seines Mitstreiters\num 1/4 des Maximalwerts auf."
+  },
+  "supersweetsyrup": {
+    "desc": "Das Pokémon senkt bei Kampfantritt den Ausweichwert von\nGegnern um 1 Stufe. Dieser Effekt wird pro Kampf nur\nein Mal ausgelöst."
+  },
+  "piercingdrill": {
+    "desc": "Setzt das Pokémon eine Kontaktattacke ein, trifft sie auch\nZiele, die sich selbst schützen, und fügt ihnen 1/4 des\neigentlichen Schadens zu.\nAlle anderen Effekte werden trotzdem ausgelöst."
+  },
+  "dragonize": {
+    "desc": "Normal-Attacken des Pokémon nehmen den Typ Drache an und\nihre Stärke wird um 20 % erhöht."
+  },
+  "megasol": {
+    "desc": "Das Pokémon kann Attacken wie bei Sonnenschein einsetzen,\nauch wenn nicht das Wetter Sonnenschein herrscht."
+  },
+  "spicyspray": {
+    "desc": "Erleidet das Pokémon durch eine Attacke Schaden,\nerleidet der Angreifer Verbrennungen."
+  },
+  "eelevate": {
+    "desc": "Das Pokémon gilt als nicht auf dem Boden befindlich und\nBoden-Attacken sowie die Zustände Stachler, Giftspitzen\nund Klebenetz haben keine Wirkung auf es.\nDer höchste Statuswert des Pokémon wird um 1 Stufe erhöht,\nwenn es ein anderes Pokémon mit einem Angriff besiegt."
+  },
+  "firemane": {
+    "desc": "Die Stärke von Feuer-Attacken des Pokémon wird\num 50 % erhöht."
+  },
+  "auraguard": {
+    "desc": "Der Schaden, den das Pokémon durch Kontaktattacken\nerleidet, wird halbiert."
+  }
+}

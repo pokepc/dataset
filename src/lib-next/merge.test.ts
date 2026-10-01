@@ -69,12 +69,12 @@ describe('mergeGameSet', () => {
       ...source(),
       mods: {
         overrides: {
-          moves: [{ id: 'pound', pp: 20, usable: true }],
+          moves: [{ id: 'pound', pp: 20, usable: false }],
           pokemon: [{ id: 'pikachu', learnset: ['pound'], $unset: ['abilityHidden'] }],
         },
       },
     })
-    expect(merged.records.moves?.[0]).toMatchObject({ id: 'pound', pp: 20, usable: true })
+    expect(merged.records.moves?.[0]).toMatchObject({ id: 'pound', pp: 20, usable: false })
     expect(merged.records.moves?.[1]).toBe(growth)
     expect(merged.records.pokemon?.[0]?.learnset).toEqual(['pound'])
     expect(merged.records.pokemon?.[0]).not.toHaveProperty('abilityHidden')

@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 05:01'
+updated_date: '2026-10-01 05:07'
 ---
 Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
 and its consequences are in
@@ -251,10 +251,34 @@ base ids are appended by `pnpm codes:sync`. Mods never introduce ids, so they ne
 ## Champions
 
 Champions is the first and, in 8.0.0, only set with mods. Its upstream adapter (Project Pokémon
-`champout` dump, enriched with PokéAPI ids) is run manually by a maintainer and writes
-`mods/champions/` plus Champions text; the maintainer reviews the diff before committing. It is not
-part of `pnpm build`. Its learnsets (`pokemon-moves.json` in the preview) become Pokémon `learnset`
-overrides, and its in-game descriptions become `mods/champions/i18n/<locale>/` text.
+`champout` dump, enriched with PokéAPI ids) is run manually by a maintainer and rewrites
+`mods/champions/` plus the base facts it owns; the maintainer reviews the diff before committing. It
+is not part of `pnpm build`. The conversion (`src/upstream-adapters/projectpokemon-champout/to-v8.ts`)
+follows these rules:
+
+- **Roster**: every Pokémon, move, ability and item in the dump. Battle states are not listed (all
+  of them are Champions-only).
+- **Base** gains only game-independent facts it lacks: `championsId` (Pokémon, moves, abilities,
+  items), `pokeApiId` (moves, abilities, items), move `target`, `classification` and `contact`,
+  battle states (`battle-states.json`, keyed by slug, with their names and descriptions), and names
+  or plural names in locales where base has none. A dump entity missing from base is an error: add
+  the curated base record first.
+- **Overrides** hold what differs: stats, types, flags, abilities (Champions lists abilities without
+  slots, so missing slots become `$unset`, e.g. Greninja's Battle Bond), Pokémon `learnset` (only
+  for Pokémon the dump gives a learnset), move `type`, `category`, `power`, `pp`, `accuracy`,
+  `priority`, `usable: false` for moves Pokémon cannot use, and item `battleCategories`.
+- **Mod text**: in-game descriptions (`desc` of moves, abilities and items), Champions form labels
+  (`formName`, e.g. "Mega Venusaur") and names that differ from base. Champions names forms by
+  species, so its Pokémon name maps to `name` for default forms and `speciesName` for forms.
+
+Intentional differences from the full-record preview (`data-next/champions/` before task-5):
+
+- Champions stores power 1 for variable or fixed-damage moves; base keeps 0, so no override.
+- Pokémon `pokeApiId`, `pokeApiFormId` and `showdownId` are the existing `refs` values.
+- Battle state ids are slugs (`harsh-sunlight`); the preview's numeric id is `championsId`.
+- Records lose `name`, `description` and `slug`; text loses `slug` and `slugLoc` (derivable).
+- Learnsets move from `pokemon-moves.json` to Pokémon `learnset` overrides.
+- The preview's `pt-br` text was a copy of English, not official text, so it is dropped.
 
 ## Migration status (until task-7)
 
@@ -262,8 +286,8 @@ overrides, and its in-game descriptions become `mods/champions/i18n/<locale>/` t
 `bun src/scripts/migrate-v7-to-v8.ts` (then `pnpm format`). The script validates every file against
 the v8 schemas, rebuilds every v7 record from its v8 record and text to prove nothing was lost, and
 checks that code maps are byte-identical. Until the cut-over, v7 `data/` stays the maintained source:
-re-run the script after changing it. `data-next/champions/` still holds the full-record Champions
-preview until task-5 splits it into base and `mods/champions/`.
+re-run the script after changing it. `bun src/scripts/split-champions-preview.ts` then split the
+Champions preview into base and `mods/champions/` (task-5).
 
 ## Resolved
 

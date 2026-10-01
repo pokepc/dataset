@@ -1,0 +1,650 @@
+{
+  "stench": {
+    "desc": "When the Pokémon deals damage with its moves, there is a\n10% chance that targets will flinch."
+  },
+  "drizzle": {
+    "desc": "Summons rain for 5 turns when the Pokémon enters a battle."
+  },
+  "speedboost": {
+    "desc": "Boosts the Pokémon's Speed stat by 1 stage at the end of\nevery turn. The Speed stat will not be boosted on the turn\nthat the Pokémon switches into battle."
+  },
+  "battlearmor": {
+    "desc": "Attacks landed on the Pokémon will never be critical hits."
+  },
+  "sturdy": {
+    "desc": "If the Pokémon has full HP and takes damage from a move that\nwould knock it out in one hit, it will endure the hit with 1 HP.\nThe Pokémon is also immune to one-hit KO moves."
+  },
+  "damp": {
+    "desc": "All Pokémon become unable to use explosive moves.\nExplosive Abilities also fail to trigger."
+  },
+  "limber": {
+    "desc": "The Pokémon cannot be paralyzed."
+  },
+  "sandveil": {
+    "desc": "Boosts the Pokémon's evasiveness by 25% in a sandstorm.\nThe Pokémon takes no damage from sandstorms."
+  },
+  "static": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being paralyzed."
+  },
+  "voltabsorb": {
+    "desc": "Electric-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP."
+  },
+  "waterabsorb": {
+    "desc": "Water-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP."
+  },
+  "oblivious": {
+    "desc": "The Pokémon cannot gain the Infatuated or Taunted statuses\nand is unaffected by Intimidate."
+  },
+  "cloudnine": {
+    "desc": "Eliminates the effects of weather."
+  },
+  "compoundeyes": {
+    "desc": "Boosts the accuracy of the Pokémon's moves by 30%."
+  },
+  "insomnia": {
+    "desc": "The Pokémon cannot become drowsy or be put to sleep."
+  },
+  "immunity": {
+    "desc": "The Pokémon cannot be poisoned or badly poisoned."
+  },
+  "flashfire": {
+    "desc": "Fire-type moves do not work on the Pokémon. Instead, they\ngive the Pokémon the Flash Fire status."
+  },
+  "shielddust": {
+    "desc": "The Pokémon is immune to additional effects from attacks."
+  },
+  "owntempo": {
+    "desc": "The Pokémon cannot become confused and is unaffected by\nIntimidate."
+  },
+  "suctioncups": {
+    "desc": "The Pokémon is unaffected by the moves and held items of\nother Pokémon that would force it to switch out of battle."
+  },
+  "intimidate": {
+    "desc": "When the Pokémon enters a battle, it lowers the Attack stats of\nopponents by 1 stage."
+  },
+  "shadowtag": {
+    "desc": "Opponents cannot be switched out of battle."
+  },
+  "roughskin": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker takes\ndamage equal to 1/8 of its max HP."
+  },
+  "levitate": {
+    "desc": "The Pokémon floats off the ground, making it immune to\nGround-type moves, as well as the Spikes, Toxic Spikes,\nand Sticky Web statuses."
+  },
+  "effectspore": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned, paralyzed, or put to sleep.\nGrass-type Pokémon are unaffected."
+  },
+  "synchronize": {
+    "desc": "If the Pokémon is burned, paralyzed, poisoned, or badly\npoisoned by another Pokémon's move or Ability, that Pokémon\nwill also be inflicted with the same status condition."
+  },
+  "clearbody": {
+    "desc": "The Pokémon's stats cannot be lowered by other Pokémon's\nmoves or Abilities."
+  },
+  "naturalcure": {
+    "desc": "The Pokémon's status conditions are cured when it switches out\nof battle."
+  },
+  "lightningrod": {
+    "desc": "The Pokémon draws in all Electric-type moves. These moves do\nnot work on the Pokémon. Instead, they boost its Sp. Atk stat by\n1 stage."
+  },
+  "swiftswim": {
+    "desc": "Doubles the Pokémon's Speed stat in rain."
+  },
+  "chlorophyll": {
+    "desc": "Doubles the Pokémon's Speed stat in harsh sunlight."
+  },
+  "illuminate": {
+    "desc": "The Pokémon ignores changes to targets' evasiveness and its\naccuracy cannot be lowered."
+  },
+  "trace": {
+    "desc": "When the Pokémon enters a battle, it changes its Ability to\nmatch that of an opponent."
+  },
+  "hugepower": {
+    "desc": "Doubles the power of the Pokémon's physical moves."
+  },
+  "poisonpoint": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being poisoned."
+  },
+  "innerfocus": {
+    "desc": "The Pokémon never flinches when attacked and is unaffected\nby Intimidate."
+  },
+  "magmaarmor": {
+    "desc": "The Pokémon cannot be frozen."
+  },
+  "soundproof": {
+    "desc": "The Pokémon is immune to sound-based moves."
+  },
+  "raindish": {
+    "desc": "The Pokémon has 1/16 of its max HP restored at the end of\nevery turn in rain."
+  },
+  "sandstream": {
+    "desc": "Summons a sandstorm for 5 turns when the Pokémon enters\na battle."
+  },
+  "pressure": {
+    "desc": "Causes opponents to expend 1 more PP when using moves\nagainst the Pokémon."
+  },
+  "thickfat": {
+    "desc": "Halves the damage the Pokémon takes from Fire- and Ice-type\nmoves."
+  },
+  "earlybird": {
+    "desc": "The Pokémon awakens from sleep twice as fast as other\nPokémon."
+  },
+  "flamebody": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker has a\n30% chance of being burned."
+  },
+  "runaway": {
+    "desc": "Enables the Pokémon to ignore any effects that would usually\nprevent it from switching out of battle and being replaced by\nanother party Pokémon."
+  },
+  "keeneye": {
+    "desc": "The Pokémon ignores changes to targets' evasiveness and its\naccuracy cannot be lowered."
+  },
+  "hypercutter": {
+    "desc": "The Pokémon's Attack stat cannot be lowered by other\nPokémon's moves or Abilities."
+  },
+  "pickup": {
+    "desc": "If the Pokémon is not already holding an item, at the end of\nthe turn it will pick up an item that was consumed by another\nPokémon."
+  },
+  "hustle": {
+    "desc": "When the Pokémon uses physical moves, its Attack stat is\nboosted by 50%, but its accuracy is lowered by 20%."
+  },
+  "cutecharm": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker has\na 30% chance of gaining the Infatuated status if the attacker\nand the Pokémon are of opposite genders."
+  },
+  "plus": {
+    "desc": "Boosts the Pokémon's Sp. Atk stat by 50% if an ally with the\nPlus or Minus Ability is also in battle."
+  },
+  "minus": {
+    "desc": "Boosts the Pokémon's Sp. Atk stat by 50% if an ally with the\nPlus or Minus Ability is also in battle."
+  },
+  "forecast": {
+    "desc": "The Pokémon transforms with the weather to change its type to\nWater, Fire, or Ice."
+  },
+  "stickyhold": {
+    "desc": "The Pokémon's held item cannot be stolen or removed by other\nPokémon."
+  },
+  "shedskin": {
+    "desc": "The Pokémon has a 30% chance of curing its own status\nconditions at the end of every turn."
+  },
+  "guts": {
+    "desc": "When the Pokémon has a status condition, its Attack stat is\nboosted by 50%. Being burned does not halve the damage\ndealt by the Pokémon's physical moves."
+  },
+  "marvelscale": {
+    "desc": "When the Pokémon has a status condition, its Defense stat is\nboosted by 50%."
+  },
+  "liquidooze": {
+    "desc": "When the Pokémon is hit by an HP-absorbing move, the\nattacker does not restore HP but instead takes damage equal\nto the amount of HP it would have restored."
+  },
+  "overgrow": {
+    "desc": "Boosts the power of the Pokémon's Grass-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  "blaze": {
+    "desc": "Boosts the power of the Pokémon's Fire-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  "torrent": {
+    "desc": "Boosts the power of the Pokémon's Water-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  "swarm": {
+    "desc": "Boosts the power of the Pokémon's Bug-type moves by 50%\nwhen its HP drops to 1/3 or less of its max."
+  },
+  "rockhead": {
+    "desc": "The Pokémon will not lose HP due to recoil damage from\nits moves."
+  },
+  "drought": {
+    "desc": "Summons harsh sunlight for 5 turns when the Pokémon enters\na battle."
+  },
+  "vitalspirit": {
+    "desc": "The Pokémon cannot become drowsy or be put to sleep."
+  },
+  "whitesmoke": {
+    "desc": "The Pokémon's stats cannot be lowered by other Pokémon's\nmoves or Abilities."
+  },
+  "purepower": {
+    "desc": "Doubles the power of the Pokémon's physical moves."
+  },
+  "shellarmor": {
+    "desc": "Attacks landed on the Pokémon will never be critical hits."
+  },
+  "tangledfeet": {
+    "desc": "Doubles the Pokémon's evasiveness if it is confused."
+  },
+  "motordrive": {
+    "desc": "Electric-type moves do not work on the Pokémon. Instead, they\nboost its Speed stat by 1 stage."
+  },
+  "rivalry": {
+    "desc": "Boosts the power of the Pokémon's moves by 25% against\ntargets of the same gender, and lowers it by 25% against targets\nof the opposite gender. The power remains the same as usual if\neither Pokémon's gender is unknown."
+  },
+  "steadfast": {
+    "desc": "When the Pokémon flinches, its Speed stat is boosted by\n1 stage."
+  },
+  "snowcloak": {
+    "desc": "Boosts the Pokémon's evasiveness by 25% in snow."
+  },
+  "gluttony": {
+    "desc": "If the Pokémon is holding a Berry to be eaten when its HP drops\nto 1/4 or less of its max, it will instead eat the Berry when its HP\ndrops to 1/2 or less of its max."
+  },
+  "angerpoint": {
+    "desc": "Boosts the Pokémon's Attack stat to its sixth stage when the\nPokémon takes a critical hit."
+  },
+  "unburden": {
+    "desc": "Doubles the Pokémon's Speed stat when its held item is\nconsumed or lost."
+  },
+  "heatproof": {
+    "desc": "Halves the damage the Pokémon takes from Fire-type moves\nand from being burned."
+  },
+  "simple": {
+    "desc": "Doubles the Pokémon's stat changes."
+  },
+  "dryskin": {
+    "desc": "Water-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP. However, the Pokémon takes 25%\nmore damage from Fire-type moves. The Pokémon has 1/8 of\nits max HP restored at the end of every turn in rain, but it loses\n1/8 of its max HP at the end of every turn in harsh sunlight."
+  },
+  "ironfist": {
+    "desc": "Boosts the power of the Pokémon's punching moves by 20%."
+  },
+  "poisonheal": {
+    "desc": "If poisoned or badly poisoned, the Pokémon has 1/8 of its max\nHP restored at the end of every turn instead of losing HP."
+  },
+  "adaptability": {
+    "desc": "Boosts the power of moves of the same type as the Pokémon by\n100% instead of 50%."
+  },
+  "skilllink": {
+    "desc": "The Pokémon's multistrike moves always hit the maximum\nnumber of times."
+  },
+  "hydration": {
+    "desc": "Cures the Pokémon's status conditions at the end of every\nturn in rain."
+  },
+  "solarpower": {
+    "desc": "In harsh sunlight, the Pokémon's Sp. Atk stat is boosted by 50%,\nbut it loses 1/8 of its max HP at the end of every turn."
+  },
+  "quickfeet": {
+    "desc": "When the Pokémon has a status condition, its Speed stat is\nboosted by 50%. Being paralyzed does not lower the\nPokémon's Speed stat."
+  },
+  "sniper": {
+    "desc": "Boosts the power of the Pokémon's critical hits by 125%\ninstead of 50%."
+  },
+  "magicguard": {
+    "desc": "The Pokémon takes damage only from attacks."
+  },
+  "noguard": {
+    "desc": "The accuracy of moves used both by and against the Pokémon\nbecomes 100%."
+  },
+  "stall": {
+    "desc": "The Pokémon's moves go last among moves of the same priority."
+  },
+  "technician": {
+    "desc": "Boosts the power of the Pokémon's moves by 50% if their\npower is 60 or less."
+  },
+  "leafguard": {
+    "desc": "The Pokémon is immune to status conditions in harsh sunlight."
+  },
+  "klutz": {
+    "desc": "Items do not work when held by the Pokémon."
+  },
+  "moldbreaker": {
+    "desc": "The Pokémon's moves are unaffected by the Ability of the\ntarget (with certain exceptions)."
+  },
+  "superluck": {
+    "desc": "The Pokémon has a 1-stage Critical-Hit Ratio Boost."
+  },
+  "aftermath": {
+    "desc": "Attackers that knock out the Pokémon with a contact move take\ndamage equal to 1/4 of their max HP."
+  },
+  "anticipation": {
+    "desc": "When the Pokémon enters a battle, it senses whether the\nopponents know any one-hit KO moves or moves that are super\neffective against it."
+  },
+  "forewarn": {
+    "desc": "When the Pokémon enters a battle, it identifies the move with\nthe highest power among all the moves the opponents know."
+  },
+  "unaware": {
+    "desc": "The Pokémon ignores the target's stat changes when attacking,\nand ignores the attacker's stat changes when being attacked.\nIt cannot ignore changes to the Speed stat, however."
+  },
+  "filter": {
+    "desc": "Reduces the damage the Pokémon takes from supereffective\nmoves by 25%."
+  },
+  "scrappy": {
+    "desc": "The Pokémon can hit Ghost types with Normal- and\nFighting-type moves. It is also unaffected by Intimidate."
+  },
+  "icebody": {
+    "desc": "The Pokémon has 1/16 of its max HP restored at the end of\nevery turn in snow."
+  },
+  "solidrock": {
+    "desc": "Reduces the damage the Pokémon takes from supereffective\nmoves by 25%."
+  },
+  "snowwarning": {
+    "desc": "Summons snow for 5 turns when the Pokémon enters a battle."
+  },
+  "frisk": {
+    "desc": "When the Pokémon enters a battle, it identifies opponents'\nheld items."
+  },
+  "reckless": {
+    "desc": "Boosts the power of the Pokémon's moves by 20% if they have\nrecoil or crash damage."
+  },
+  "pickpocket": {
+    "desc": "When the Pokémon is hit by a contact move, it will steal the\nheld item of the attacker if it is not already holding an item."
+  },
+  "sheerforce": {
+    "desc": "The Pokémon's moves lose their additional effects, but the\npower of those moves will be boosted by 30%."
+  },
+  "contrary": {
+    "desc": "Reverses any stat changes affecting the Pokémon so that\nattempts to boost its stats instead lower them—and attempts\nto lower its stats will boost them."
+  },
+  "unnerve": {
+    "desc": "Makes opponents unable to eat Berries."
+  },
+  "defiant": {
+    "desc": "When the Pokémon has any of its stats lowered by an opponent,\nits Attack stat is boosted by 2 stages."
+  },
+  "cursedbody": {
+    "desc": "When the Pokémon takes damage from a move, the attacker has\na 30% chance of gaining the Move Disabled status for 4 turns."
+  },
+  "healer": {
+    "desc": "The Pokémon has a 50% chance of curing the status conditions\nof its allies at the end of every turn."
+  },
+  "friendguard": {
+    "desc": "Reduces the damage allies take by 25%."
+  },
+  "weakarmor": {
+    "desc": "When the Pokémon takes damage from a physical move, its\nDefense stat is lowered by 1 stage, but its Speed stat is boosted\nby 2 stages."
+  },
+  "heavymetal": {
+    "desc": "Doubles the Pokémon's weight."
+  },
+  "lightmetal": {
+    "desc": "Halves the Pokémon's weight."
+  },
+  "multiscale": {
+    "desc": "Halves the damage the Pokémon takes while its HP is full."
+  },
+  "harvest": {
+    "desc": "If the Pokémon has used a Berry, it has a 50% chance of creating\nanother one at the end of every turn. In harsh sunlight, the\nPokémon will definitely create a Berry."
+  },
+  "telepathy": {
+    "desc": "The Pokémon dodges attacks from its allies."
+  },
+  "moody": {
+    "desc": "At the end of every turn, one of the Pokémon's stats will be\nboosted by 2 stages, but another will be lowered by 1 stage."
+  },
+  "overcoat": {
+    "desc": "The Pokémon takes no damage from sandstorms and is immune\nto moves and Abilities involving powder."
+  },
+  "poisontouch": {
+    "desc": "When the Pokémon hits a target with a contact move, the target\nhas a 30% chance of being poisoned."
+  },
+  "regenerator": {
+    "desc": "The Pokémon has 1/3 of its max HP restored when it switches\nout of battle."
+  },
+  "bigpecks": {
+    "desc": "The Pokémon's Defense stat cannot be lowered by other\nPokémon's moves or Abilities."
+  },
+  "sandrush": {
+    "desc": "Doubles the Pokémon's Speed stat in a sandstorm."
+  },
+  "analytic": {
+    "desc": "Boosts the power of the Pokémon's moves by 30% when the\nPokémon is the last to move that turn."
+  },
+  "illusion": {
+    "desc": "The Pokémon enters battle disguised as the last Pokémon in its\nparty. It reverts to its usual appearance when it takes damage\nfrom a move."
+  },
+  "imposter": {
+    "desc": "The Pokémon transforms into the Pokémon in front of it. It also\ncopies all of that Pokémon's stats apart from its HP."
+  },
+  "infiltrator": {
+    "desc": "When using its moves, the Pokémon ignores the effects of\ntargets' Light Screen, Reflect, Aurora Veil, Safeguard, and\nsubstitutes."
+  },
+  "mummy": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker has its\nAbility changed to Mummy."
+  },
+  "moxie": {
+    "desc": "When the Pokémon knocks out a target with an attack, its\nAttack stat is boosted by 1 stage."
+  },
+  "justified": {
+    "desc": "When the Pokémon takes damage from a Dark-type move, its\nAttack stat is boosted by 1 stage."
+  },
+  "rattled": {
+    "desc": "When the Pokémon takes damage from a Dark-, Ghost-, or\nBug-type move or when it is on the receiving end of Intimidate,\nits Speed stat is boosted by 1 stage."
+  },
+  "magicbounce": {
+    "desc": "Instead of being affected by other Pokémon's status moves,\nthe Pokémon bounces them back at the user."
+  },
+  "sapsipper": {
+    "desc": "Grass-type moves do not work on the Pokémon. Instead, they\nboost its Attack stat by 1 stage."
+  },
+  "prankster": {
+    "desc": "Increases the priority of the Pokémon's status moves by 1 stage.\nHowever, the Pokémon's status moves no longer work against\nDark-type Pokémon."
+  },
+  "sandforce": {
+    "desc": "Boosts the power of the Pokémon's Rock-, Ground-, and\nSteel-type moves by 30% in a sandstorm."
+  },
+  "aromaveil": {
+    "desc": "The Pokémon and its allies cannot gain the Infatuated, Taunted,\nUnable to Repeat, Move Disabled, Healing Prevented, or\nEncore statuses."
+  },
+  "flowerveil": {
+    "desc": "Grass-type allies are immune to status conditions and cannot\nhave their stats lowered."
+  },
+  "cheekpouch": {
+    "desc": "The Pokémon has 1/3 of its max HP restored when it eats a\nBerry, in addition to the Berry's usual effect."
+  },
+  "protean": {
+    "desc": "Changes the Pokémon's type to the type of the move it's\nabout to use. This works only once per time the Pokémon\nenters battle."
+  },
+  "furcoat": {
+    "desc": "Halves the damage the Pokémon takes from physical moves."
+  },
+  "magician": {
+    "desc": "If the Pokémon is not already holding an item, it will steal the\nheld item from targets it deals damage to with its moves."
+  },
+  "bulletproof": {
+    "desc": "The Pokémon is immune to ball and bomb moves."
+  },
+  "competitive": {
+    "desc": "When the Pokémon has any of its stats lowered by an opponent,\nits Sp. Atk stat is boosted by 2 stages."
+  },
+  "strongjaw": {
+    "desc": "Boosts the power of the Pokémon's biting moves by 50%."
+  },
+  "refrigerate": {
+    "desc": "The Pokémon's Normal-type moves become Ice-type moves\nand their power is boosted by 20%."
+  },
+  "sweetveil": {
+    "desc": "The Pokémon and its allies cannot become drowsy or be\nput to sleep."
+  },
+  "stancechange": {
+    "desc": "The Pokémon changes into its Blade Forme when it attacks\nand changes into its Shield Forme when it uses the move\nKing's Shield."
+  },
+  "galewings": {
+    "desc": "Increases the priority of the Pokémon's Flying-type moves by\n1 stage while its HP is full."
+  },
+  "megalauncher": {
+    "desc": "Boosts the power of the Pokémon's pulse moves by 50%."
+  },
+  "grasspelt": {
+    "desc": "Boosts the Pokémon's Defense stat by 50% on Grassy Terrain."
+  },
+  "symbiosis": {
+    "desc": "When an ally consumes an item, the Pokémon gives its own held\nitem to that ally."
+  },
+  "toughclaws": {
+    "desc": "Boosts the power of the Pokémon's contact moves by 30%."
+  },
+  "pixilate": {
+    "desc": "The Pokémon's Normal-type moves become Fairy-type moves\nand their power is boosted by 20%."
+  },
+  "gooey": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker's\nSpeed stat is lowered by 1 stage."
+  },
+  "aerilate": {
+    "desc": "The Pokémon's Normal-type moves become Flying-type moves\nand their power is boosted by 20%."
+  },
+  "parentalbond": {
+    "desc": "The parent and child attack one after the other. The power of\nthe child's attacks is 1/4 of those of the parent."
+  },
+  "fairyaura": {
+    "desc": "Boosts the power of the Fairy-type moves of all Pokémon on the\nfield by 33%."
+  },
+  "stamina": {
+    "desc": "When the Pokémon takes damage from a move, its Defense stat\nis boosted by 1 stage."
+  },
+  "emergencyexit": {
+    "desc": "The Pokémon switches out of battle when its HP drops to 1/2 or\nless of its max."
+  },
+  "merciless": {
+    "desc": "The Pokémon's attacks become critical hits if the target is\npoisoned or badly poisoned."
+  },
+  "stakeout": {
+    "desc": "Doubles the power of the Pokémon's moves when it attacks\ntargets that have just switched into battle."
+  },
+  "waterbubble": {
+    "desc": "Halves the damage the Pokémon takes from Fire-type moves\nand doubles the power of its Water-type moves. The Pokémon\ncannot be burned."
+  },
+  "berserk": {
+    "desc": "Boosts the Pokémon's Sp. Atk stat by 1 stage when an attack\ncauses its HP to drop to 1/2 or less of its max."
+  },
+  "slushrush": {
+    "desc": "Doubles the Pokémon's Speed stat in snow."
+  },
+  "longreach": {
+    "desc": "None of the moves used by the Pokémon are considered\ncontact moves."
+  },
+  "liquidvoice": {
+    "desc": "The Pokémon's sound-based moves become Water-type moves."
+  },
+  "surgesurfer": {
+    "desc": "Doubles the Pokémon's Speed stat on Electric Terrain."
+  },
+  "disguise": {
+    "desc": "When the Pokémon is in its Disguised Form and would take\ndamage from a move, it loses 1/8 of its max HP instead of\ntaking the damage, then changes into its Busted Form."
+  },
+  "corrosion": {
+    "desc": "The Pokémon can poison or badly poison targets even if they're\nSteel or Poison types."
+  },
+  "queenlymajesty": {
+    "desc": "Opponents are unable to use priority moves against the\nPokémon or its allies."
+  },
+  "innardsout": {
+    "desc": "When the Pokémon takes damage from a move that knocks it\nout, it deals the same amount of damage to the attacker."
+  },
+  "fluffy": {
+    "desc": "Halves the damage the Pokémon takes from contact moves, but\ndoubles the damage taken from Fire-type moves."
+  },
+  "tanglinghair": {
+    "desc": "When the Pokémon is hit by a contact move, the attacker's\nSpeed stat is lowered by 1 stage."
+  },
+  "receiver": {
+    "desc": "The Pokémon changes its Ability to match that of a\ndefeated ally."
+  },
+  "electricsurge": {
+    "desc": "Turns the entire field into Electric Terrain for 5 turns when the\nPokémon enters a battle."
+  },
+  "psychicsurge": {
+    "desc": "Turns the entire field into Psychic Terrain for 5 turns when the\nPokémon enters a battle."
+  },
+  "grassysurge": {
+    "desc": "Turns the entire field into Grassy Terrain for 5 turns when the\nPokémon enters a battle."
+  },
+  "libero": {
+    "desc": "Changes the Pokémon's type to the type of the move it's\nabout to use. This works only once per time the Pokémon\nenters battle."
+  },
+  "mirrorarmor": {
+    "desc": "Instead of being affected by stat-lowering effects, the Pokémon\nbounces them back at whichever Pokémon caused them."
+  },
+  "stalwart": {
+    "desc": "The Pokémon ignores the effects of Abilities and moves that\ndraw in moves."
+  },
+  "punkrock": {
+    "desc": "Boosts the power of the Pokémon's sound-based moves\nby 30% and halves the damage the Pokémon takes from\nsound-based moves."
+  },
+  "sandspit": {
+    "desc": "Summons a sandstorm for 5 turns when the Pokémon takes\ndamage from moves."
+  },
+  "ripen": {
+    "desc": "Doubles the effects of Berries eaten by the Pokémon."
+  },
+  "mimicry": {
+    "desc": "The Pokémon's type changes depending on the terrain."
+  },
+  "screencleaner": {
+    "desc": "When the Pokémon enters a battle, it removes the Light Screen,\nReflect, and Aurora Veil statuses."
+  },
+  "steelyspirit": {
+    "desc": "Boosts the power of the Steel-type moves of the Pokémon and\nits allies by 50%."
+  },
+  "wanderingspirit": {
+    "desc": "When the Pokémon is hit by a contact move, it swaps Abilities\nwith the attacker."
+  },
+  "hungerswitch": {
+    "desc": "The Pokémon changes its form, alternating between its Full Belly\nMode and Hangry Mode at the end of every turn."
+  },
+  "quickdraw": {
+    "desc": "The Pokémon's moves have a 30% chance of going first among\nmoves of the same priority."
+  },
+  "unseenfist": {
+    "desc": "When the Pokémon uses contact moves, it can hit even targets\nthat are protecting themselves, dealing 1/4 of the damage that\nthe move would otherwise deal. Everything aside from the\ntarget's protective effects is still triggered."
+  },
+  "curiousmedicine": {
+    "desc": "When the Pokémon enters a battle, it removes all stat changes\nfrom its allies."
+  },
+  "seedsower": {
+    "desc": "Turns the entire field into Grassy Terrain for 5 turns when the\nPokémon takes damage from moves."
+  },
+  "thermalexchange": {
+    "desc": "When the Pokémon takes damage from a Fire-type move, its\nAttack stat is boosted by 1 stage. The Pokémon cannot be\nburned."
+  },
+  "purifyingsalt": {
+    "desc": "Halves the damage the Pokémon takes from Ghost-type moves.\nThe Pokémon is immune to status conditions."
+  },
+  "guarddog": {
+    "desc": "Intimidate does not work on the Pokémon. Instead, it boosts\nthe Pokémon's Attack stat by 1 stage. The Pokémon is also\nunaffected by the moves and held items of other Pokémon\nthat would force it to switch out of battle."
+  },
+  "zerotohero": {
+    "desc": "The Pokémon changes into its Hero Form when it switches out\nof battle."
+  },
+  "electromorphosis": {
+    "desc": "When the Pokémon takes damage from a move, it gains the\nElectric Boost status."
+  },
+  "goodasgold": {
+    "desc": "The Pokémon is immune to status moves used by other Pokémon."
+  },
+  "opportunist": {
+    "desc": "When an opponent's stats are boosted, the Pokémon boosts its\nown stats in the exact same way."
+  },
+  "cudchew": {
+    "desc": "If the Pokémon eats a Berry, it will eat that same Berry once\nmore at the end of the next turn."
+  },
+  "sharpness": {
+    "desc": "Boosts the power of the Pokémon's slicing moves by 50%."
+  },
+  "supremeoverlord": {
+    "desc": "When the Pokémon enters a battle, the power of its moves is\nboosted by 10% for each Pokémon in its party that has been\ndefeated in the battle already. The maximum boost is 50%."
+  },
+  "toxicdebris": {
+    "desc": "When the Pokémon takes damage from a physical move, it\ngives the opponent's side the Toxic Spikes status."
+  },
+  "armortail": {
+    "desc": "Opponents are unable to use priority moves against the\nPokémon or its allies."
+  },
+  "eartheater": {
+    "desc": "Ground-type moves do not work on the Pokémon. Instead, they\nrestore 1/4 of its max HP."
+  },
+  "hospitality": {
+    "desc": "When the Pokémon enters a battle, it restores 1/4 of its ally's\nmax HP."
+  },
+  "supersweetsyrup": {
+    "desc": "When the Pokémon enters a battle, opponents' evasiveness is\nlowered by 1 stage. This Ability is triggered only once per battle."
+  },
+  "piercingdrill": {
+    "desc": "When the Pokémon uses contact moves, it can hit even targets\nthat are protecting themselves, dealing 1/4 of the damage that\nthe move would otherwise deal. Everything aside from the\ntarget's protective effects is still triggered."
+  },
+  "dragonize": {
+    "desc": "The Pokémon's Normal-type moves become Dragon-type moves\nand their power is boosted by 20%."
+  },
+  "megasol": {
+    "desc": "Even when the sunlight has not turned harsh, the Pokémon can\nuse its moves as if the weather were harsh sunlight."
+  },
+  "spicyspray": {
+    "desc": "When the Pokémon takes damage from a move, it burns\nthe attacker."
+  },
+  "eelevate": {
+    "desc": "The Pokémon floats off the ground, making it immune to\nGround-type moves, as well as the Spikes, Toxic Spikes,\nand Sticky Web statuses. When the Pokémon knocks out a\ntarget with an attack, its highest stat is boosted by 1 stage."
+  },
+  "auraguard": {
+    "desc": "Halves the damage the Pokémon takes from contact moves."
+  }
+}
