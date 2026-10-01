@@ -51,3 +51,10 @@ v7 package as a preview with no stability guarantee. Design and progress:
   (availability, evolutions, forms, lifecycle) must be carried into the new model, not lost.
 - Code maps ([decision-1](decision-1%20-%20Append-only-numeric-code-maps-for-stored-ids.md)) must
   survive the migration with unchanged meanings; new v8 ids get appended codes.
+
+## Follow-up decisions
+
+- [decision-4](decision-4%20-%20v8-locale-codes-and-language-records.md): v8 locale codes and
+  language records.
+- [decision-5](decision-5%20-%20Merged-static-API-output-only-for-game-sets-with-mods.md): merged
+  static API output only for game sets with mods.
