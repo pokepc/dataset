@@ -1,0 +1,81 @@
+{
+  "id": "maushold",
+  "nid": "0925",
+  "dexNum": 925,
+  "formId": "four",
+  "region": "paldea",
+  "gen": 9,
+  "type1": "normal",
+  "color": "white",
+  "ability1": "friendguard",
+  "ability2": "cheekpouch",
+  "abilityHidden": "technician",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "sv",
+  "obtainableIn": ["go", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": ["go", "home", "sv-s", "sv-v", "champions"],
+  "shinyReleased": true,
+  "baseHp": 74,
+  "baseAtk": 75,
+  "baseDef": 70,
+  "baseSpAtk": 65,
+  "baseSpDef": 75,
+  "baseSpeed": 111,
+  "height": 30,
+  "weight": 280,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseForms": [],
+  "forms": ["maushold-three"],
+  "refs": {
+    "pkApiId": "925",
+    "pkApiFormId": "925",
+    "pkApiFormSlug": "maushold-family-of-four",
+    "smogon": "maushold-four",
+    "showdown": "mausholdfour",
+    "showdownName": "Maushold-Four",
+    "serebii": "Maushold",
+    "bulbapedia": "Maushold"
+  },
+  "evoMethods": [
+    {
+      "from": ["tandemaus"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [
+        {
+          "key": "hidden_value_branch",
+          "percentage": 99
+        },
+        {
+          "key": "battle_experience"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["home"]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "latios-mega",
+  "nid": "0381-mega",
+  "dexNum": 381,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "dragon",
+  "type2": "psychic",
+  "color": "purple",
+  "ability1": "levitate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "oras",
+  "obtainableIn": ["oras-or", "go", "usum-us", "lza"],
+  "eventOnlyIn": ["oras-as"],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 80,
+  "baseAtk": 130,
+  "baseDef": 100,
+  "baseSpAtk": 160,
+  "baseSpDef": 120,
+  "baseSpeed": 110,
+  "height": 230,
+  "weight": 7000,
+  "maleRate": 100,
+  "femaleRate": 0,
+  "baseSpecies": "latios",
+  "baseForms": ["latios"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10063",
+    "pkApiFormId": "10165",
+    "pkApiFormSlug": "latios-mega",
+    "smogon": "latios-mega",
+    "showdown": "latiosmega",
+    "showdownName": "Latios-Mega",
+    "serebii": "latios",
+    "bulbapedia": "Latios"
+  },
+  "formMethods": [
+    {
+      "from": ["latios"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "latiosite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["latios"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "latiosite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["xy-x", "xy-y", "sm-s", "sm-m", "usum-um"]
+}

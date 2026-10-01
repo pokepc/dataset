@@ -1,0 +1,242 @@
+{
+  "id": "arceus-fairy",
+  "nid": "0493-fairy",
+  "dexNum": 493,
+  "formId": "fairy",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "fairy",
+  "color": "white",
+  "ability1": "multitype",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": true,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "xy",
+  "obtainableIn": ["bdsp-bd", "bdsp-sp", "la"],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
+  "shinyReleased": true,
+  "shinyLockedIn": ["la"],
+  "baseHp": 120,
+  "baseAtk": 120,
+  "baseDef": 120,
+  "baseSpAtk": 120,
+  "baseSpDef": 120,
+  "baseSpeed": 120,
+  "height": 320,
+  "weight": 32000,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "arceus",
+  "baseForms": ["arceus"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "493",
+    "pkApiFormId": "10085",
+    "pkApiFormSlug": "arceus-fairy",
+    "smogon": "arceus-fairy",
+    "showdown": "arceusfairy",
+    "showdownName": "Arceus-Fairy",
+    "serebii": "arceus",
+    "bulbapedia": "Arceus"
+  },
+  "formMethods": [
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-ground",
+        "arceus-legendary",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": {
+        "id": "pixieplate",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": []
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-ground",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": [
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "bdsp-bd",
+        "bdsp-sp",
+        "sv-s",
+        "sv-v"
+      ],
+      "trigger": "equip_item",
+      "item": {
+        "id": "pixieplate",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-ground",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "equip_item",
+      "item": {
+        "id": "fairiumz",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-ground",
+        "arceus-legendary",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["la"],
+      "trigger": "use_move",
+      "conditions": [
+        {
+          "key": "move_used",
+          "move": "judgment"
+        },
+        {
+          "key": "battle_event",
+          "events": ["before_move"]
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "legend_plate"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "judgment_type_match"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "sv-s",
+    "sv-v"
+  ]
+}

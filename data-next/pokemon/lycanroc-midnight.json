@@ -1,0 +1,122 @@
+{
+  "id": "lycanroc-midnight",
+  "nid": "0745-midnight",
+  "dexNum": 745,
+  "formId": "midnight",
+  "region": "alola",
+  "gen": 7,
+  "type1": "rock",
+  "color": "red",
+  "ability1": "keeneye",
+  "ability2": "vitalspirit",
+  "abilityHidden": "noguard",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "sm",
+  "obtainableIn": [
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "sv-s",
+    "sv-v"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "bank",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "sv-s",
+    "sv-v",
+    "champions"
+  ],
+  "shinyReleased": true,
+  "baseHp": 85,
+  "baseAtk": 115,
+  "baseDef": 75,
+  "baseSpAtk": 55,
+  "baseSpDef": 75,
+  "baseSpeed": 82,
+  "height": 110,
+  "weight": 2500,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "lycanroc",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10126",
+    "pkApiFormId": "10228",
+    "pkApiFormSlug": "lycanroc-midnight",
+    "smogon": "lycanroc-midnight",
+    "showdown": "lycanrocmidnight",
+    "showdownName": "Lycanroc-Midnight",
+    "serebii": "lycanroc",
+    "bulbapedia": "Lycanroc"
+  },
+  "evoMethods": [
+    {
+      "from": ["rockruff"],
+      "games": ["sm-m", "usum-um"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        },
+        {
+          "key": "ability",
+          "abilities": ["keeneye", "vitalspirit", "steadfast"]
+        }
+      ]
+    },
+    {
+      "from": ["rockruff"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "level_up",
+      "minLevel": 25,
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        },
+        {
+          "key": "ability",
+          "abilities": ["keeneye", "vitalspirit", "steadfast"]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["bank", "home"]
+}

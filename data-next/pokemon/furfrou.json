@@ -1,0 +1,213 @@
+{
+  "id": "furfrou",
+  "nid": "0676",
+  "dexNum": 676,
+  "formId": "natural",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "normal",
+  "color": "white",
+  "ability1": "furcoat",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "xy",
+  "obtainableIn": ["xy-x", "xy-y", "go", "usum-us", "usum-um", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "lza",
+    "champions"
+  ],
+  "shinyReleased": true,
+  "baseHp": 75,
+  "baseAtk": 80,
+  "baseDef": 60,
+  "baseSpAtk": 65,
+  "baseSpDef": 90,
+  "baseSpeed": 102,
+  "height": 120,
+  "weight": 2800,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseForms": [],
+  "forms": [
+    "furfrou-heart",
+    "furfrou-star",
+    "furfrou-diamond",
+    "furfrou-debutante",
+    "furfrou-matron",
+    "furfrou-dandy",
+    "furfrou-la-reine",
+    "furfrou-kabuki",
+    "furfrou-pharaoh"
+  ],
+  "refs": {
+    "pkApiId": "676",
+    "pkApiFormId": "676",
+    "pkApiFormSlug": "furfrou-natural",
+    "smogon": "furfrou",
+    "showdown": "furfrou",
+    "showdownName": "Furfrou",
+    "serebii": "furfrou",
+    "bulbapedia": "Furfrou"
+  },
+  "formMethods": [
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["xy-x", "xy-y"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "friseur_furfrou"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "slateport_pokemon_fan_club"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "malie_city_salon"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "hauoli_city_salon"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
+      ]
+    },
+    {
+      "from": [
+        "furfrou-dandy",
+        "furfrou-debutante",
+        "furfrou-diamond",
+        "furfrou-heart",
+        "furfrou-kabuki",
+        "furfrou-la-reine",
+        "furfrou-matron",
+        "furfrou-pharaoh",
+        "furfrou-star"
+      ],
+      "games": ["lza"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "jaune_sector_6"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+}

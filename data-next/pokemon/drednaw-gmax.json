@@ -1,0 +1,91 @@
+{
+  "id": "drednaw-gmax",
+  "nid": "0834-gmax",
+  "dexNum": 834,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "water",
+  "type2": "rock",
+  "color": "green",
+  "ability1": "strongjaw",
+  "ability2": "shellarmor",
+  "abilityHidden": "swiftswim",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 90,
+  "baseAtk": 115,
+  "baseDef": 90,
+  "baseSpAtk": 48,
+  "baseSpDef": 68,
+  "baseSpeed": 74,
+  "height": 2400,
+  "weight": 0,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "drednaw",
+  "baseForms": ["drednaw"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10214",
+    "pkApiFormId": "10383",
+    "pkApiFormSlug": "drednaw-gmax",
+    "smogon": "drednaw-gmax",
+    "showdown": "drednawgmax",
+    "showdownName": "Drednaw-Gmax",
+    "serebii": "drednaw",
+    "bulbapedia": "Drednaw"
+  },
+  "formMethods": [
+    {
+      "from": ["drednaw"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

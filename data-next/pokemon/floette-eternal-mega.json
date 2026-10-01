@@ -1,0 +1,96 @@
+{
+  "id": "floette-eternal-mega",
+  "nid": "0670-eternal-mega",
+  "dexNum": 670,
+  "formId": "eternal-mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "fairy",
+  "color": "white",
+  "ability1": "fairyaura",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": false,
+  "shinyLockedIn": ["lza"],
+  "baseHp": 74,
+  "baseAtk": 85,
+  "baseDef": 87,
+  "baseSpAtk": 155,
+  "baseSpDef": 148,
+  "baseSpeed": 102,
+  "height": 20,
+  "weight": 10080,
+  "maleRate": 0,
+  "femaleRate": 100,
+  "baseSpecies": "floette-eternal",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "670",
+    "pkApiFormId": "670",
+    "pkApiFormSlug": "floette-mega",
+    "smogon": "floette-mega",
+    "showdown": "floettemega",
+    "showdownName": "Floette-Mega",
+    "serebii": "floette",
+    "bulbapedia": "Floette"
+  },
+  "formMethods": [
+    {
+      "from": ["floette-eternal"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "floettite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

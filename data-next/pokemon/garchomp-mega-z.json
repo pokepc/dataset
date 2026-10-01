@@ -1,0 +1,95 @@
+{
+  "id": "garchomp-mega-z",
+  "nid": "0445-mega-z",
+  "dexNum": 445,
+  "formId": "mega-z",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "dragon",
+  "color": "blue",
+  "ability1": "levitate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 108,
+  "baseAtk": 130,
+  "baseDef": 85,
+  "baseSpAtk": 141,
+  "baseSpDef": 85,
+  "baseSpeed": 151,
+  "height": 190,
+  "weight": 9900,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "garchomp",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "445",
+    "pkApiFormId": "445",
+    "pkApiFormSlug": "garchomp-mega-z",
+    "smogon": "garchomp-mega-z",
+    "showdown": "garchompmegaz",
+    "showdownName": "Garchomp-Mega-Z",
+    "serebii": "garchomp",
+    "bulbapedia": "Garchomp"
+  },
+  "formMethods": [
+    {
+      "from": ["garchomp", "garchomp-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "garchompitez",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

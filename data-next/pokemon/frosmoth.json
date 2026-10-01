@@ -1,0 +1,78 @@
+{
+  "id": "frosmoth",
+  "nid": "0873",
+  "dexNum": 873,
+  "region": "galar",
+  "gen": 8,
+  "type1": "ice",
+  "type2": "bug",
+  "color": "white",
+  "ability1": "shielddust",
+  "abilityHidden": "icescales",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": ["go", "swsh-sw", "swsh-sh", "home", "sv-s", "sv-v"],
+  "shinyReleased": true,
+  "baseHp": 70,
+  "baseAtk": 65,
+  "baseDef": 60,
+  "baseSpAtk": 125,
+  "baseSpDef": 90,
+  "baseSpeed": 65,
+  "height": 130,
+  "weight": 4200,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "873",
+    "pkApiFormId": "873",
+    "pkApiFormSlug": "frosmoth",
+    "smogon": "frosmoth",
+    "showdown": "frosmoth",
+    "showdownName": "Frosmoth",
+    "serebii": "frosmoth",
+    "bulbapedia": "Frosmoth"
+  },
+  "evoMethods": [
+    {
+      "from": ["snom"],
+      "trigger": "level_up",
+      "conditions": [
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["home"]
+}

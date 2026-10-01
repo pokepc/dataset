@@ -1,0 +1,155 @@
+{
+  "id": "minior-red",
+  "nid": "0774-red",
+  "dexNum": 774,
+  "formId": "red",
+  "region": "alola",
+  "gen": 7,
+  "type1": "rock",
+  "type2": "flying",
+  "color": "red",
+  "ability1": "shieldsdown",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "sm",
+  "obtainableIn": ["sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": ["bank", "sm-s", "sm-m", "usum-us", "usum-um", "home", "sv-s", "sv-v"],
+  "shinyReleased": true,
+  "baseHp": 60,
+  "baseAtk": 100,
+  "baseDef": 60,
+  "baseSpAtk": 100,
+  "baseSpDef": 60,
+  "baseSpeed": 120,
+  "height": 30,
+  "weight": 30,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseForms": [],
+  "forms": [
+    "minior-orange",
+    "minior-yellow",
+    "minior-green",
+    "minior-blue",
+    "minior-indigo",
+    "minior-violet",
+    "minior"
+  ],
+  "refs": {
+    "pkApiId": "10136",
+    "pkApiFormId": "10255",
+    "pkApiFormSlug": "minior-red",
+    "smogon": "minior-red",
+    "showdown": "minior",
+    "showdownName": "Minior",
+    "serebii": "minior",
+    "bulbapedia": "Minior"
+  },
+  "formMethods": [
+    {
+      "from": ["minior"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["shieldsdown"]
+        },
+        {
+          "key": "intrinsic_form",
+          "forms": ["minior-red"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["end_of_turn"]
+        },
+        {
+          "key": "hp",
+          "comparison": "lte",
+          "percent": 50
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["shieldsdown"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["switch_in", "end_of_turn"]
+            },
+            {
+              "key": "hp",
+              "comparison": "gt",
+              "percent": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["minior"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "intrinsic_form",
+          "forms": ["minior-red"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["switch_out", "battle_end"]
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["shieldsdown"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["switch_in", "end_of_turn"]
+            },
+            {
+              "key": "hp",
+              "comparison": "gt",
+              "percent": 50
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["bank", "home"]
+}

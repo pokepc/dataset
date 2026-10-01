@@ -1,0 +1,90 @@
+{
+  "id": "urshifu-gmax",
+  "nid": "0892-gmax",
+  "dexNum": 892,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "fighting",
+  "type2": "dark",
+  "color": "gray",
+  "ability1": "unseenfist",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": false,
+  "shinyLockedIn": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "baseHp": 100,
+  "baseAtk": 130,
+  "baseDef": 100,
+  "baseSpAtk": 63,
+  "baseSpDef": 60,
+  "baseSpeed": 97,
+  "height": 300,
+  "weight": 0,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "urshifu",
+  "baseForms": ["urshifu"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10226",
+    "pkApiFormId": "10395",
+    "pkApiFormSlug": "urshifu-single-strike-gmax",
+    "smogon": "urshifu-gmax",
+    "showdown": "urshifugmax",
+    "showdownName": "Urshifu-Gmax",
+    "serebii": "urshifu",
+    "bulbapedia": "Urshifu"
+  },
+  "formMethods": [
+    {
+      "from": ["urshifu"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

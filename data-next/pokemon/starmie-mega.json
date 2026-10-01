@@ -1,0 +1,96 @@
+{
+  "id": "starmie-mega",
+  "nid": "0121-mega",
+  "dexNum": 121,
+  "formId": "mega",
+  "region": "kanto",
+  "gen": 9,
+  "type1": "water",
+  "type2": "psychic",
+  "color": "purple",
+  "ability1": "hugepower",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["go", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 60,
+  "baseAtk": 140,
+  "baseDef": 105,
+  "baseSpAtk": 130,
+  "baseSpDef": 105,
+  "baseSpeed": 120,
+  "height": 230,
+  "weight": 8000,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "starmie",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "121",
+    "pkApiFormId": "121",
+    "pkApiFormSlug": "starmie-mega",
+    "smogon": "starmie-mega",
+    "showdown": "starmiemega",
+    "showdownName": "Starmie-Mega",
+    "serebii": "starmie",
+    "bulbapedia": "Starmie"
+  },
+  "formMethods": [
+    {
+      "from": ["starmie"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "starminite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

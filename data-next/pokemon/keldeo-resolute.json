@@ -1,0 +1,225 @@
+{
+  "id": "keldeo-resolute",
+  "nid": "0647-resolute",
+  "dexNum": 647,
+  "formId": "resolute",
+  "region": "unova",
+  "gen": 5,
+  "type1": "water",
+  "type2": "fighting",
+  "color": "yellow",
+  "ability1": "justified",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": true,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": true,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "b2w2",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "sv-s",
+    "sv-v",
+    "lza"
+  ],
+  "shinyReleased": true,
+  "shinyLockedIn": ["swsh-sw", "swsh-sh", "lza"],
+  "baseHp": 91,
+  "baseAtk": 72,
+  "baseDef": 90,
+  "baseSpAtk": 129,
+  "baseSpDef": 90,
+  "baseSpeed": 108,
+  "height": 140,
+  "weight": 4850,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "keldeo",
+  "baseForms": ["keldeo"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10024",
+    "pkApiFormId": "10084",
+    "pkApiFormSlug": "keldeo-resolute",
+    "smogon": "keldeo-resolute",
+    "showdown": "keldeoresolute",
+    "showdownName": "Keldeo-Resolute",
+    "serebii": "keldeo",
+    "bulbapedia": "Keldeo"
+  },
+  "formMethods": [
+    {
+      "from": ["keldeo"],
+      "games": [
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "sv-s",
+        "sv-v",
+        "lza"
+      ],
+      "trigger": "learn_move",
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["keldeo"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        },
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["keldeo"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "learn_move",
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "change_a_move_other_than_secret_sword"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["keldeo"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "forget_move",
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "change_a_move_other_than_secret_sword"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "forget_move",
+          "conditions": [
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "sv-s",
+    "sv-v"
+  ]
+}

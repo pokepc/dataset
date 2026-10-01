@@ -1,0 +1,141 @@
+{
+  "id": "aerodactyl-mega",
+  "nid": "0142-mega",
+  "dexNum": 142,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "rock",
+  "type2": "flying",
+  "color": "purple",
+  "ability1": "toughclaws",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "xy",
+  "obtainableIn": [
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "lgpe-lgp",
+    "lgpe-lge",
+    "lza"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 80,
+  "baseAtk": 135,
+  "baseDef": 85,
+  "baseSpAtk": 70,
+  "baseSpDef": 95,
+  "baseSpeed": 150,
+  "height": 210,
+  "weight": 7900,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "aerodactyl",
+  "baseForms": ["aerodactyl"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10042",
+    "pkApiFormId": "10142",
+    "pkApiFormSlug": "aerodactyl-mega",
+    "smogon": "aerodactyl-mega",
+    "showdown": "aerodactylmega",
+    "showdownName": "Aerodactyl-Mega",
+    "serebii": "aerodactyl",
+    "bulbapedia": "Aerodactyl"
+  },
+  "formMethods": [
+    {
+      "from": ["aerodactyl"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "aerodactylite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["aerodactyl"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "aerodactylite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["aerodactyl"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": {
+        "id": "aerodactylite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    }
+  ],
+  "transferOnlyIn": []
+}

@@ -1,0 +1,96 @@
+{
+  "id": "feraligatr-mega",
+  "nid": "0160-mega",
+  "dexNum": 160,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "water",
+  "type2": "dragon",
+  "color": "blue",
+  "ability1": "dragonize",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 85,
+  "baseAtk": 160,
+  "baseDef": 125,
+  "baseSpAtk": 89,
+  "baseSpDef": 93,
+  "baseSpeed": 78,
+  "height": 230,
+  "weight": 10880,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "feraligatr",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "160",
+    "pkApiFormId": "160",
+    "pkApiFormSlug": "feraligatr-mega",
+    "smogon": "feraligatr-mega",
+    "showdown": "feraligatrmega",
+    "showdownName": "Feraligatr-Mega",
+    "serebii": "feraligatr",
+    "bulbapedia": "Feraligatr"
+  },
+  "formMethods": [
+    {
+      "from": ["feraligatr"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "feraligite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

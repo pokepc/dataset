@@ -1,0 +1,294 @@
+{
+  "id": "arceus-ground",
+  "nid": "0493-ground",
+  "dexNum": 493,
+  "formId": "ground",
+  "region": "sinnoh",
+  "gen": 4,
+  "type1": "ground",
+  "color": "white",
+  "ability1": "multitype",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": true,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "dp",
+  "obtainableIn": ["bdsp-bd", "bdsp-sp", "la"],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "dp-d",
+    "dp-p",
+    "ranch",
+    "pt",
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
+  "shinyReleased": true,
+  "shinyLockedIn": ["la"],
+  "baseHp": 120,
+  "baseAtk": 120,
+  "baseDef": 120,
+  "baseSpAtk": 120,
+  "baseSpDef": 120,
+  "baseSpeed": 120,
+  "height": 320,
+  "weight": 32000,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "arceus",
+  "baseForms": ["arceus"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "493",
+    "pkApiFormId": "10050",
+    "pkApiFormSlug": "arceus-ground",
+    "smogon": "arceus-ground",
+    "showdown": "arceusground",
+    "showdownName": "Arceus-Ground",
+    "serebii": "arceus",
+    "bulbapedia": "Arceus"
+  },
+  "formMethods": [
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-legendary",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-fairy",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": {
+        "id": "earthplate",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": []
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "equip_item",
+      "item": {
+        "id": "earthplate",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-fairy",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": [
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "bdsp-bd",
+        "bdsp-sp",
+        "sv-s",
+        "sv-v"
+      ],
+      "trigger": "equip_item",
+      "item": {
+        "id": "earthplate",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-fairy",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "equip_item",
+      "item": {
+        "id": "groundiumz",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
+    },
+    {
+      "from": [
+        "arceus-rock",
+        "arceus-bug",
+        "arceus-water",
+        "arceus-dragon",
+        "arceus-legendary",
+        "arceus-fire",
+        "arceus-grass",
+        "arceus",
+        "arceus-steel",
+        "arceus-fighting",
+        "arceus-flying",
+        "arceus-ghost",
+        "arceus-fairy",
+        "arceus-psychic",
+        "arceus-dark",
+        "arceus-ice",
+        "arceus-poison",
+        "arceus-electric"
+      ],
+      "games": ["la"],
+      "trigger": "use_move",
+      "conditions": [
+        {
+          "key": "move_used",
+          "move": "judgment"
+        },
+        {
+          "key": "battle_event",
+          "events": ["before_move"]
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "legend_plate"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "judgment_type_match"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "dp-d",
+    "dp-p",
+    "ranch",
+    "pt",
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "sv-s",
+    "sv-v"
+  ]
+}

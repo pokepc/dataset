@@ -1,0 +1,1920 @@
+[
+  {
+    "id": "stench",
+    "psName": "Stench",
+    "gen": 3,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "drizzle",
+    "psName": "Drizzle",
+    "gen": 3,
+    "tags": ["weather"]
+  },
+  {
+    "id": "speedboost",
+    "psName": "Speed Boost",
+    "gen": 3,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "battlearmor",
+    "psName": "Battle Armor",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "sturdy",
+    "psName": "Sturdy",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "damp",
+    "psName": "Damp",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "limber",
+    "psName": "Limber",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "sandveil",
+    "psName": "Sand Veil",
+    "gen": 3,
+    "tags": ["defense", "weather"]
+  },
+  {
+    "id": "static",
+    "psName": "Static",
+    "gen": 3,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "voltabsorb",
+    "psName": "Volt Absorb",
+    "gen": 3,
+    "immunities": ["electric"],
+    "tags": ["heal"]
+  },
+  {
+    "id": "waterabsorb",
+    "psName": "Water Absorb",
+    "gen": 3,
+    "immunities": ["water"],
+    "tags": ["heal"]
+  },
+  {
+    "id": "oblivious",
+    "psName": "Oblivious",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "cloudnine",
+    "psName": "Cloud Nine",
+    "gen": 3,
+    "tags": ["weather"]
+  },
+  {
+    "id": "compoundeyes",
+    "psName": "Compound Eyes",
+    "gen": 3,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "insomnia",
+    "psName": "Insomnia",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "colorchange",
+    "psName": "Color Change",
+    "gen": 3,
+    "tags": ["type-change"]
+  },
+  {
+    "id": "immunity",
+    "psName": "Immunity",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "flashfire",
+    "psName": "Flash Fire",
+    "gen": 3,
+    "immunities": ["fire"],
+    "tags": ["heal", "move-boost"]
+  },
+  {
+    "id": "shielddust",
+    "psName": "Shield Dust",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "owntempo",
+    "psName": "Own Tempo",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "suctioncups",
+    "psName": "Suction Cups",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "intimidate",
+    "psName": "Intimidate",
+    "gen": 3,
+    "tags": ["target-weaken", "defense"]
+  },
+  {
+    "id": "shadowtag",
+    "psName": "Shadow Tag",
+    "gen": 3,
+    "tags": ["trap"]
+  },
+  {
+    "id": "roughskin",
+    "psName": "Rough Skin",
+    "gen": 3,
+    "tags": ["damage"]
+  },
+  {
+    "id": "wonderguard",
+    "psName": "Wonder Guard",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "levitate",
+    "psName": "Levitate",
+    "gen": 3,
+    "immunities": ["ground"],
+    "tags": ["defense"]
+  },
+  {
+    "id": "effectspore",
+    "psName": "Effect Spore",
+    "gen": 3,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "synchronize",
+    "psName": "Synchronize",
+    "gen": 3,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "clearbody",
+    "psName": "Clear Body",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "naturalcure",
+    "psName": "Natural Cure",
+    "gen": 3,
+    "tags": ["status-immunity", "heal"]
+  },
+  {
+    "id": "lightningrod",
+    "psName": "Lightning Rod",
+    "gen": 3,
+    "immunities": ["electric"],
+    "tags": ["ally-helper", "stat-boost"]
+  },
+  {
+    "id": "serenegrace",
+    "psName": "Serene Grace",
+    "gen": 3,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "swiftswim",
+    "psName": "Swift Swim",
+    "gen": 3,
+    "tags": ["stat-boost", "weather"]
+  },
+  {
+    "id": "chlorophyll",
+    "psName": "Chlorophyll",
+    "gen": 3,
+    "tags": ["stat-boost", "weather"]
+  },
+  {
+    "id": "illuminate",
+    "psName": "Illuminate",
+    "gen": 3,
+    "tags": ["bypass", "defense"]
+  },
+  {
+    "id": "trace",
+    "psName": "Trace",
+    "gen": 3,
+    "tags": ["ability-change"]
+  },
+  {
+    "id": "hugepower",
+    "psName": "Huge Power",
+    "gen": 3,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "poisonpoint",
+    "psName": "Poison Point",
+    "gen": 3,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "innerfocus",
+    "psName": "Inner Focus",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "magmaarmor",
+    "psName": "Magma Armor",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "waterveil",
+    "psName": "Water Veil",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "magnetpull",
+    "psName": "Magnet Pull",
+    "gen": 3,
+    "tags": ["trap"]
+  },
+  {
+    "id": "soundproof",
+    "psName": "Soundproof",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "raindish",
+    "psName": "Rain Dish",
+    "gen": 3,
+    "tags": ["heal", "weather"]
+  },
+  {
+    "id": "sandstream",
+    "psName": "Sand Stream",
+    "gen": 3,
+    "tags": ["weather"]
+  },
+  {
+    "id": "pressure",
+    "psName": "Pressure",
+    "gen": 3,
+    "tags": ["other"]
+  },
+  {
+    "id": "thickfat",
+    "psName": "Thick Fat",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "earlybird",
+    "psName": "Early Bird",
+    "gen": 3,
+    "tags": ["heal", "status-immunity"]
+  },
+  {
+    "id": "flamebody",
+    "psName": "Flame Body",
+    "gen": 3,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "runaway",
+    "psName": "Run Away",
+    "gen": 3,
+    "tags": ["handicap"]
+  },
+  {
+    "id": "keeneye",
+    "psName": "Keen Eye",
+    "gen": 3,
+    "tags": ["bypass", "defense"]
+  },
+  {
+    "id": "hypercutter",
+    "psName": "Hyper Cutter",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "pickup",
+    "psName": "Pickup",
+    "gen": 3,
+    "tags": ["items"]
+  },
+  {
+    "id": "truant",
+    "psName": "Truant",
+    "gen": 3,
+    "tags": ["handicap"]
+  },
+  {
+    "id": "hustle",
+    "psName": "Hustle",
+    "gen": 3,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "cutecharm",
+    "psName": "Cute Charm",
+    "gen": 3,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "plus",
+    "psName": "Plus",
+    "gen": 3,
+    "tags": ["ally-helper", "stat-boost"]
+  },
+  {
+    "id": "minus",
+    "psName": "Minus",
+    "gen": 3,
+    "tags": ["ally-helper", "stat-boost"]
+  },
+  {
+    "id": "forecast",
+    "psName": "Forecast",
+    "gen": 3,
+    "tags": ["species-specific", "type-change", "weather"]
+  },
+  {
+    "id": "stickyhold",
+    "psName": "Sticky Hold",
+    "gen": 3,
+    "tags": ["defense", "items"]
+  },
+  {
+    "id": "shedskin",
+    "psName": "Shed Skin",
+    "gen": 3,
+    "tags": ["status-immunity", "heal"]
+  },
+  {
+    "id": "guts",
+    "psName": "Guts",
+    "gen": 3,
+    "tags": ["move-boost", "stat-boost"]
+  },
+  {
+    "id": "marvelscale",
+    "psName": "Marvel Scale",
+    "gen": 3,
+    "tags": ["defense", "stat-boost"]
+  },
+  {
+    "id": "liquidooze",
+    "psName": "Liquid Ooze",
+    "gen": 3,
+    "tags": ["damage", "defense"]
+  },
+  {
+    "id": "overgrow",
+    "psName": "Overgrow",
+    "gen": 3,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "blaze",
+    "psName": "Blaze",
+    "gen": 3,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "torrent",
+    "psName": "Torrent",
+    "gen": 3,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "swarm",
+    "psName": "Swarm",
+    "gen": 3,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "rockhead",
+    "psName": "Rock Head",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "drought",
+    "psName": "Drought",
+    "gen": 3,
+    "tags": ["weather"]
+  },
+  {
+    "id": "arenatrap",
+    "psName": "Arena Trap",
+    "gen": 3,
+    "tags": ["trap"]
+  },
+  {
+    "id": "vitalspirit",
+    "psName": "Vital Spirit",
+    "gen": 3,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "whitesmoke",
+    "psName": "White Smoke",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "purepower",
+    "psName": "Pure Power",
+    "gen": 3,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "shellarmor",
+    "psName": "Shell Armor",
+    "gen": 3,
+    "tags": ["defense"]
+  },
+  {
+    "id": "airlock",
+    "psName": "Air Lock",
+    "gen": 3,
+    "tags": ["weather"]
+  },
+  {
+    "id": "tangledfeet",
+    "psName": "Tangled Feet",
+    "gen": 4,
+    "tags": ["defense", "stat-boost"]
+  },
+  {
+    "id": "motordrive",
+    "psName": "Motor Drive",
+    "gen": 4,
+    "immunities": ["electric"],
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "rivalry",
+    "psName": "Rivalry",
+    "gen": 4,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "steadfast",
+    "psName": "Steadfast",
+    "gen": 4,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "snowcloak",
+    "psName": "Snow Cloak",
+    "gen": 4,
+    "tags": ["defense", "weather"]
+  },
+  {
+    "id": "gluttony",
+    "psName": "Gluttony",
+    "gen": 4,
+    "tags": ["items"]
+  },
+  {
+    "id": "angerpoint",
+    "psName": "Anger Point",
+    "gen": 4,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "unburden",
+    "psName": "Unburden",
+    "gen": 4,
+    "tags": ["items", "stat-boost"]
+  },
+  {
+    "id": "heatproof",
+    "psName": "Heatproof",
+    "gen": 4,
+    "tags": ["defense", "status-immunity"]
+  },
+  {
+    "id": "simple",
+    "psName": "Simple",
+    "gen": 4,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "dryskin",
+    "psName": "Dry Skin",
+    "immunities": ["water"],
+    "weaknesses": ["fire"],
+    "tags": ["heal", "weather"],
+    "gen": 4
+  },
+  {
+    "id": "download",
+    "psName": "Download",
+    "tags": ["stat-boost"],
+    "gen": 4
+  },
+  {
+    "id": "ironfist",
+    "psName": "Iron Fist",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "poisonheal",
+    "psName": "Poison Heal",
+    "tags": ["heal"],
+    "gen": 4
+  },
+  {
+    "id": "adaptability",
+    "psName": "Adaptability",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "skilllink",
+    "psName": "Skill Link",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "hydration",
+    "psName": "Hydration",
+    "tags": ["status-immunity", "weather"],
+    "gen": 4
+  },
+  {
+    "id": "solarpower",
+    "psName": "Solar Power",
+    "tags": ["move-boost", "weather"],
+    "gen": 4
+  },
+  {
+    "id": "quickfeet",
+    "psName": "Quick Feet",
+    "tags": ["stat-boost"],
+    "gen": 4
+  },
+  {
+    "id": "normalize",
+    "psName": "Normalize",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "sniper",
+    "psName": "Sniper",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "magicguard",
+    "psName": "Magic Guard",
+    "tags": ["defense"],
+    "gen": 4
+  },
+  {
+    "id": "noguard",
+    "psName": "No Guard",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "stall",
+    "psName": "Stall",
+    "tags": ["handicap", "priority-control"],
+    "gen": 4
+  },
+  {
+    "id": "technician",
+    "psName": "Technician",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "leafguard",
+    "psName": "Leaf Guard",
+    "tags": ["status-immunity", "weather"],
+    "gen": 4
+  },
+  {
+    "id": "klutz",
+    "psName": "Klutz",
+    "tags": ["handicap", "items"],
+    "gen": 4
+  },
+  {
+    "id": "moldbreaker",
+    "psName": "Mold Breaker",
+    "tags": ["bypass"],
+    "gen": 4
+  },
+  {
+    "id": "superluck",
+    "psName": "Super Luck",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "aftermath",
+    "psName": "Aftermath",
+    "tags": ["damage"],
+    "gen": 4
+  },
+  {
+    "id": "anticipation",
+    "psName": "Anticipation",
+    "tags": ["alert"],
+    "gen": 4
+  },
+  {
+    "id": "forewarn",
+    "psName": "Forewarn",
+    "tags": ["alert"],
+    "gen": 4
+  },
+  {
+    "id": "unaware",
+    "psName": "Unaware",
+    "tags": ["bypass"],
+    "gen": 4
+  },
+  {
+    "id": "tintedlens",
+    "psName": "Tinted Lens",
+    "tags": ["bypass"],
+    "gen": 4
+  },
+  {
+    "id": "filter",
+    "psName": "Filter",
+    "tags": ["defense"],
+    "gen": 4
+  },
+  {
+    "id": "slowstart",
+    "psName": "Slow Start",
+    "tags": ["handicap"],
+    "gen": 4
+  },
+  {
+    "id": "scrappy",
+    "psName": "Scrappy",
+    "tags": ["bypass"],
+    "gen": 4
+  },
+  {
+    "id": "stormdrain",
+    "psName": "Storm Drain",
+    "immunities": ["water"],
+    "tags": ["ally-helper", "heal", "stat-boost"],
+    "gen": 4
+  },
+  {
+    "id": "icebody",
+    "psName": "Ice Body",
+    "tags": ["heal", "weather"],
+    "gen": 4
+  },
+  {
+    "id": "solidrock",
+    "psName": "Solid Rock",
+    "tags": ["defense"],
+    "gen": 4
+  },
+  {
+    "id": "snowwarning",
+    "psName": "Snow Warning",
+    "tags": ["weather"],
+    "gen": 4
+  },
+  {
+    "id": "honeygather",
+    "psName": "Honey Gather",
+    "tags": ["handicap"],
+    "gen": 4
+  },
+  {
+    "id": "frisk",
+    "psName": "Frisk",
+    "tags": ["alert", "items"],
+    "gen": 4
+  },
+  {
+    "id": "reckless",
+    "psName": "Reckless",
+    "tags": ["move-boost"],
+    "gen": 4
+  },
+  {
+    "id": "multitype",
+    "psName": "Multitype",
+    "tags": ["species-specific", "type-change"],
+    "gen": 4
+  },
+  {
+    "id": "flowergift",
+    "psName": "Flower Gift",
+    "tags": ["ally-helper", "species-specific", "weather"],
+    "gen": 4
+  },
+  {
+    "id": "baddreams",
+    "psName": "Bad Dreams",
+    "tags": ["damage"],
+    "gen": 4
+  },
+  {
+    "id": "pickpocket",
+    "psName": "Pickpocket",
+    "tags": ["items", "steal"],
+    "gen": 5
+  },
+  {
+    "id": "sheerforce",
+    "psName": "Sheer Force",
+    "tags": ["move-boost"],
+    "gen": 5
+  },
+  {
+    "id": "contrary",
+    "psName": "Contrary",
+    "tags": ["stat-boost"],
+    "gen": 5
+  },
+  {
+    "id": "unnerve",
+    "psName": "Unnerve",
+    "tags": ["items"],
+    "gen": 5
+  },
+  {
+    "id": "defiant",
+    "psName": "Defiant",
+    "tags": ["stat-boost"],
+    "gen": 5
+  },
+  {
+    "id": "defeatist",
+    "psName": "Defeatist",
+    "gen": 5,
+    "tags": ["handicap"]
+  },
+  {
+    "id": "cursedbody",
+    "psName": "Cursed Body",
+    "gen": 5,
+    "tags": ["defense"]
+  },
+  {
+    "id": "healer",
+    "psName": "Healer",
+    "gen": 5,
+    "tags": ["ally-helper"]
+  },
+  {
+    "id": "friendguard",
+    "psName": "Friend Guard",
+    "gen": 5,
+    "tags": ["ally-helper", "defense"]
+  },
+  {
+    "id": "weakarmor",
+    "psName": "Weak Armor",
+    "gen": 5,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "heavymetal",
+    "psName": "Heavy Metal",
+    "gen": 5,
+    "tags": ["other"]
+  },
+  {
+    "id": "lightmetal",
+    "psName": "Light Metal",
+    "gen": 5,
+    "tags": ["other"]
+  },
+  {
+    "id": "multiscale",
+    "psName": "Multiscale",
+    "gen": 5,
+    "tags": ["defense"]
+  },
+  {
+    "id": "toxicboost",
+    "psName": "Toxic Boost",
+    "gen": 5,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "flareboost",
+    "psName": "Flare Boost",
+    "gen": 5,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "harvest",
+    "psName": "Harvest",
+    "gen": 5,
+    "tags": ["items", "weather"]
+  },
+  {
+    "id": "telepathy",
+    "psName": "Telepathy",
+    "gen": 5,
+    "tags": ["defense"]
+  },
+  {
+    "id": "moody",
+    "psName": "Moody",
+    "gen": 5,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "overcoat",
+    "psName": "Overcoat",
+    "gen": 5,
+    "tags": ["defense", "status-immunity"]
+  },
+  {
+    "id": "poisontouch",
+    "psName": "Poison Touch",
+    "gen": 5,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "regenerator",
+    "psName": "Regenerator",
+    "gen": 5,
+    "tags": ["heal"]
+  },
+  {
+    "id": "bigpecks",
+    "psName": "Big Pecks",
+    "gen": 5,
+    "tags": ["defense"]
+  },
+  {
+    "id": "sandrush",
+    "psName": "Sand Rush",
+    "gen": 5,
+    "tags": ["stat-boost", "weather"]
+  },
+  {
+    "id": "wonderskin",
+    "psName": "Wonder Skin",
+    "gen": 5,
+    "tags": ["defense"]
+  },
+  {
+    "id": "analytic",
+    "psName": "Analytic",
+    "gen": 5,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "illusion",
+    "psName": "Illusion",
+    "gen": 5,
+    "tags": ["other"]
+  },
+  {
+    "id": "imposter",
+    "psName": "Imposter",
+    "gen": 5,
+    "tags": ["type-change"]
+  },
+  {
+    "id": "infiltrator",
+    "psName": "Infiltrator",
+    "gen": 5,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "mummy",
+    "psName": "Mummy",
+    "gen": 5,
+    "tags": ["ability-change"]
+  },
+  {
+    "id": "moxie",
+    "psName": "Moxie",
+    "gen": 5,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "justified",
+    "psName": "Justified",
+    "gen": 5,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "rattled",
+    "psName": "Rattled",
+    "gen": 5,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "magicbounce",
+    "psName": "Magic Bounce",
+    "gen": 5,
+    "tags": ["defense"]
+  },
+  {
+    "id": "sapsipper",
+    "psName": "Sap Sipper",
+    "gen": 5,
+    "immunities": ["grass"],
+    "tags": ["heal", "stat-boost"]
+  },
+  {
+    "id": "prankster",
+    "psName": "Prankster",
+    "gen": 5,
+    "tags": ["priority-control"]
+  },
+  {
+    "id": "sandforce",
+    "psName": "Sand Force",
+    "gen": 5,
+    "tags": ["move-boost", "weather"]
+  },
+  {
+    "id": "ironbarbs",
+    "psName": "Iron Barbs",
+    "gen": 5,
+    "tags": ["damage"]
+  },
+  {
+    "id": "zenmode",
+    "psName": "Zen Mode",
+    "gen": 5,
+    "tags": ["species-specific"]
+  },
+  {
+    "id": "victorystar",
+    "psName": "Victory Star",
+    "gen": 5,
+    "tags": ["ally-helper", "move-boost"]
+  },
+  {
+    "id": "turboblaze",
+    "psName": "Turboblaze",
+    "gen": 5,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "teravolt",
+    "psName": "Teravolt",
+    "gen": 5,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "aromaveil",
+    "psName": "Aroma Veil",
+    "gen": 6,
+    "tags": ["ally-helper", "defense"]
+  },
+  {
+    "id": "flowerveil",
+    "psName": "Flower Veil",
+    "gen": 6,
+    "tags": ["ally-helper", "defense", "status-immunity"]
+  },
+  {
+    "id": "cheekpouch",
+    "psName": "Cheek Pouch",
+    "gen": 6,
+    "tags": ["heal", "items"]
+  },
+  {
+    "id": "protean",
+    "psName": "Protean",
+    "gen": 6,
+    "tags": ["type-change"]
+  },
+  {
+    "id": "furcoat",
+    "psName": "Fur Coat",
+    "gen": 6,
+    "tags": ["defense"]
+  },
+  {
+    "id": "magician",
+    "psName": "Magician",
+    "gen": 6,
+    "tags": ["items", "steal"]
+  },
+  {
+    "id": "bulletproof",
+    "psName": "Bulletproof",
+    "gen": 6,
+    "tags": ["defense"]
+  },
+  {
+    "id": "competitive",
+    "psName": "Competitive",
+    "gen": 6,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "strongjaw",
+    "psName": "Strong Jaw",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "refrigerate",
+    "psName": "Refrigerate",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "sweetveil",
+    "psName": "Sweet Veil",
+    "gen": 6,
+    "tags": ["ally-helper", "status-immunity"]
+  },
+  {
+    "id": "stancechange",
+    "psName": "Stance Change",
+    "gen": 6,
+    "tags": ["species-specific"]
+  },
+  {
+    "id": "galewings",
+    "psName": "Gale Wings",
+    "gen": 6,
+    "tags": ["move-boost", "priority-control"]
+  },
+  {
+    "id": "megalauncher",
+    "psName": "Mega Launcher",
+    "gen": 6,
+    "tags": ["ally-helper", "move-boost"]
+  },
+  {
+    "id": "grasspelt",
+    "psName": "Grass Pelt",
+    "gen": 6,
+    "tags": ["stat-boost", "terrain"]
+  },
+  {
+    "id": "symbiosis",
+    "psName": "Symbiosis",
+    "gen": 6,
+    "tags": ["ally-helper", "items"]
+  },
+  {
+    "id": "toughclaws",
+    "psName": "Tough Claws",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "pixilate",
+    "psName": "Pixilate",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "gooey",
+    "psName": "Gooey",
+    "gen": 6,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "aerilate",
+    "psName": "Aerilate",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "parentalbond",
+    "psName": "Parental Bond",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "darkaura",
+    "psName": "Dark Aura",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "fairyaura",
+    "psName": "Fairy Aura",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "aurabreak",
+    "psName": "Aura Break",
+    "gen": 6,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "primordialsea",
+    "psName": "Primordial Sea",
+    "gen": 6,
+    "tags": ["defense", "weather"],
+    "immunities": ["fire"]
+  },
+  {
+    "id": "desolateland",
+    "psName": "Desolate Land",
+    "gen": 6,
+    "tags": ["defense", "weather"],
+    "immunities": ["water"]
+  },
+  {
+    "id": "deltastream",
+    "psName": "Delta Stream",
+    "gen": 6,
+    "tags": ["defense", "weather"]
+  },
+  {
+    "id": "stamina",
+    "psName": "Stamina",
+    "gen": 7,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "wimpout",
+    "psName": "Wimp Out",
+    "gen": 7,
+    "tags": ["handicap"]
+  },
+  {
+    "id": "emergencyexit",
+    "psName": "Emergency Exit",
+    "gen": 7,
+    "tags": ["handicap"]
+  },
+  {
+    "id": "watercompaction",
+    "psName": "Water Compaction",
+    "gen": 7,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "merciless",
+    "psName": "Merciless",
+    "gen": 7,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "shieldsdown",
+    "psName": "Shields Down",
+    "gen": 7,
+    "tags": ["species-specific", "status-immunity"]
+  },
+  {
+    "id": "stakeout",
+    "psName": "Stakeout",
+    "gen": 7,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "waterbubble",
+    "psName": "Water Bubble",
+    "gen": 7,
+    "tags": ["defense", "move-boost", "status-immunity"]
+  },
+  {
+    "id": "steelworker",
+    "psName": "Steelworker",
+    "gen": 7,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "berserk",
+    "psName": "Berserk",
+    "gen": 7,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "slushrush",
+    "psName": "Slush Rush",
+    "gen": 7,
+    "tags": ["stat-boost", "weather"]
+  },
+  {
+    "id": "longreach",
+    "psName": "Long Reach",
+    "gen": 7,
+    "tags": ["defense"]
+  },
+  {
+    "id": "liquidvoice",
+    "psName": "Liquid Voice",
+    "gen": 7,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "triage",
+    "psName": "Triage",
+    "gen": 7,
+    "tags": ["heal", "priority-control"]
+  },
+  {
+    "id": "galvanize",
+    "psName": "Galvanize",
+    "gen": 7,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "surgesurfer",
+    "psName": "Surge Surfer",
+    "gen": 7,
+    "tags": ["stat-boost", "terrain"]
+  },
+  {
+    "id": "schooling",
+    "psName": "Schooling",
+    "gen": 7,
+    "tags": ["species-specific"]
+  },
+  {
+    "id": "disguise",
+    "psName": "Disguise",
+    "gen": 7,
+    "tags": ["defense", "species-specific"]
+  },
+  {
+    "id": "battlebond",
+    "psName": "Battle Bond",
+    "gen": 7,
+    "tags": ["species-specific", "stat-boost"]
+  },
+  {
+    "id": "powerconstruct",
+    "psName": "Power Construct",
+    "gen": 7,
+    "tags": ["species-specific"]
+  },
+  {
+    "id": "corrosion",
+    "psName": "Corrosion",
+    "gen": 7,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "comatose",
+    "psName": "Comatose",
+    "gen": 7,
+    "tags": ["status-immunity"]
+  },
+  {
+    "id": "queenlymajesty",
+    "psName": "Queenly Majesty",
+    "gen": 7,
+    "tags": ["ally-helper", "defense"]
+  },
+  {
+    "id": "innardsout",
+    "psName": "Innards Out",
+    "gen": 7,
+    "tags": ["damage"]
+  },
+  {
+    "id": "dancer",
+    "psName": "Dancer",
+    "gen": 7,
+    "tags": ["other"]
+  },
+  {
+    "id": "battery",
+    "psName": "Battery",
+    "gen": 7,
+    "tags": ["ally-helper", "move-boost"]
+  },
+  {
+    "id": "fluffy",
+    "psName": "Fluffy",
+    "gen": 7,
+    "weaknesses": ["fire"],
+    "tags": ["defense"]
+  },
+  {
+    "id": "dazzling",
+    "psName": "Dazzling",
+    "gen": 7,
+    "tags": ["defense"]
+  },
+  {
+    "id": "soulheart",
+    "psName": "Soul-Heart",
+    "gen": 7,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "tanglinghair",
+    "psName": "Tangling Hair",
+    "gen": 7,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "receiver",
+    "psName": "Receiver",
+    "gen": 7,
+    "tags": ["ability-change", "ally-helper"]
+  },
+  {
+    "id": "powerofalchemy",
+    "psName": "Power of Alchemy",
+    "gen": 7,
+    "tags": ["ability-change", "ally-helper"]
+  },
+  {
+    "id": "beastboost",
+    "psName": "Beast Boost",
+    "gen": 7,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "rkssystem",
+    "psName": "RKS System",
+    "gen": 7,
+    "tags": ["items", "species-specific", "type-change"]
+  },
+  {
+    "id": "electricsurge",
+    "psName": "Electric Surge",
+    "gen": 7,
+    "tags": ["terrain"]
+  },
+  {
+    "id": "psychicsurge",
+    "psName": "Psychic Surge",
+    "gen": 7,
+    "tags": ["terrain"]
+  },
+  {
+    "id": "mistysurge",
+    "psName": "Misty Surge",
+    "gen": 7,
+    "tags": ["terrain"]
+  },
+  {
+    "id": "grassysurge",
+    "psName": "Grassy Surge",
+    "gen": 7,
+    "tags": ["terrain"]
+  },
+  {
+    "id": "fullmetalbody",
+    "psName": "Full Metal Body",
+    "gen": 7,
+    "tags": ["defense"]
+  },
+  {
+    "id": "shadowshield",
+    "psName": "Shadow Shield",
+    "gen": 7,
+    "tags": ["defense"]
+  },
+  {
+    "id": "prismarmor",
+    "psName": "Prism Armor",
+    "gen": 7,
+    "tags": ["defense"]
+  },
+  {
+    "id": "neuroforce",
+    "psName": "Neuroforce",
+    "gen": 7,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "intrepidsword",
+    "psName": "Intrepid Sword",
+    "gen": 8,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "dauntlessshield",
+    "psName": "Dauntless Shield",
+    "gen": 8,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "libero",
+    "psName": "Libero",
+    "gen": 8,
+    "tags": ["type-change"]
+  },
+  {
+    "id": "ballfetch",
+    "psName": "Ball Fetch",
+    "gen": 8,
+    "tags": ["handicap"]
+  },
+  {
+    "id": "cottondown",
+    "psName": "Cotton Down",
+    "gen": 8,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "propellertail",
+    "psName": "Propeller Tail",
+    "gen": 8,
+    "tags": ["defense"]
+  },
+  {
+    "id": "mirrorarmor",
+    "psName": "Mirror Armor",
+    "gen": 8,
+    "tags": ["defense", "target-weaken"]
+  },
+  {
+    "id": "gulpmissile",
+    "psName": "Gulp Missile",
+    "gen": 8,
+    "tags": ["damage", "species-specific", "status-trigger", "target-weaken"]
+  },
+  {
+    "id": "stalwart",
+    "psName": "Stalwart",
+    "gen": 8,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "steamengine",
+    "psName": "Steam Engine",
+    "gen": 8,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "punkrock",
+    "psName": "Punk Rock",
+    "gen": 8,
+    "tags": ["defense", "move-boost"]
+  },
+  {
+    "id": "sandspit",
+    "psName": "Sand Spit",
+    "gen": 8,
+    "tags": ["weather"]
+  },
+  {
+    "id": "icescales",
+    "psName": "Ice Scales",
+    "gen": 8,
+    "tags": ["defense"]
+  },
+  {
+    "id": "ripen",
+    "psName": "Ripen",
+    "gen": 8,
+    "tags": ["items"]
+  },
+  {
+    "id": "iceface",
+    "psName": "Ice Face",
+    "gen": 8,
+    "tags": ["defense", "species-specific", "weather"]
+  },
+  {
+    "id": "powerspot",
+    "psName": "Power Spot",
+    "gen": 8,
+    "tags": ["ally-helper", "move-boost"]
+  },
+  {
+    "id": "mimicry",
+    "psName": "Mimicry",
+    "gen": 8,
+    "tags": ["terrain", "type-change"]
+  },
+  {
+    "id": "screencleaner",
+    "psName": "Screen Cleaner",
+    "gen": 8,
+    "tags": ["defense"]
+  },
+  {
+    "id": "steelyspirit",
+    "psName": "Steely Spirit",
+    "gen": 8,
+    "tags": ["ally-helper", "move-boost"]
+  },
+  {
+    "id": "perishbody",
+    "psName": "Perish Body",
+    "gen": 8,
+    "tags": ["damage"]
+  },
+  {
+    "id": "wanderingspirit",
+    "psName": "Wandering Spirit",
+    "gen": 8,
+    "tags": ["ability-change"]
+  },
+  {
+    "id": "gorillatactics",
+    "psName": "Gorilla Tactics",
+    "gen": 8,
+    "tags": ["handicap", "move-boost"]
+  },
+  {
+    "id": "neutralizinggas",
+    "psName": "Neutralizing Gas",
+    "gen": 8,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "pastelveil",
+    "psName": "Pastel Veil",
+    "gen": 8,
+    "tags": ["ally-helper", "status-immunity"]
+  },
+  {
+    "id": "hungerswitch",
+    "psName": "Hunger Switch",
+    "gen": 8,
+    "tags": ["species-specific"]
+  },
+  {
+    "id": "quickdraw",
+    "psName": "Quick Draw",
+    "gen": 8,
+    "tags": ["priority-control"]
+  },
+  {
+    "id": "unseenfist",
+    "psName": "Unseen Fist",
+    "gen": 8,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "curiousmedicine",
+    "psName": "Curious Medicine",
+    "gen": 8,
+    "tags": ["ally-helper"]
+  },
+  {
+    "id": "transistor",
+    "psName": "Transistor",
+    "gen": 8,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "dragonsmaw",
+    "psName": "Dragon's Maw",
+    "gen": 8,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "chillingneigh",
+    "psName": "Chilling Neigh",
+    "gen": 8,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "grimneigh",
+    "psName": "Grim Neigh",
+    "gen": 8,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "asoneglastrier",
+    "psName": "As One (Glastrier)",
+    "gen": 8,
+    "tags": ["items", "species-specific", "stat-boost"]
+  },
+  {
+    "id": "asonespectrier",
+    "psName": "As One (Spectrier)",
+    "gen": 8,
+    "tags": ["items", "species-specific", "stat-boost"]
+  },
+  {
+    "id": "lingeringaroma",
+    "psName": "Lingering Aroma",
+    "gen": 9,
+    "tags": ["ability-change"]
+  },
+  {
+    "id": "seedsower",
+    "psName": "Seed Sower",
+    "gen": 9,
+    "tags": ["terrain"]
+  },
+  {
+    "id": "thermalexchange",
+    "psName": "Thermal Exchange",
+    "gen": 9,
+    "tags": ["stat-boost", "status-immunity"]
+  },
+  {
+    "id": "angershell",
+    "psName": "Anger Shell",
+    "gen": 9,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "purifyingsalt",
+    "psName": "Purifying Salt",
+    "gen": 9,
+    "tags": ["defense", "status-immunity"]
+  },
+  {
+    "id": "wellbakedbody",
+    "psName": "Well-Baked Body",
+    "gen": 9,
+    "immunities": ["fire"],
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "windrider",
+    "psName": "Wind Rider",
+    "gen": 9,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "guarddog",
+    "psName": "Guard Dog",
+    "gen": 9,
+    "tags": ["defense", "stat-boost"]
+  },
+  {
+    "id": "rockypayload",
+    "psName": "Rocky Payload",
+    "gen": 9,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "windpower",
+    "psName": "Wind Power",
+    "gen": 9,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "zerotohero",
+    "psName": "Zero to Hero",
+    "gen": 9,
+    "tags": ["other", "species-specific"]
+  },
+  {
+    "id": "commander",
+    "psName": "Commander",
+    "gen": 9,
+    "tags": ["ally-helper", "species-specific", "stat-boost"]
+  },
+  {
+    "id": "electromorphosis",
+    "psName": "Electromorphosis",
+    "gen": 9,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "protosynthesis",
+    "psName": "Protosynthesis",
+    "gen": 9,
+    "tags": ["items", "stat-boost", "weather"]
+  },
+  {
+    "id": "quarkdrive",
+    "psName": "Quark Drive",
+    "gen": 9,
+    "tags": ["items", "stat-boost", "terrain"]
+  },
+  {
+    "id": "goodasgold",
+    "psName": "Good as Gold",
+    "gen": 9,
+    "tags": ["defense"]
+  },
+  {
+    "id": "beadsofruin",
+    "psName": "Beads of Ruin",
+    "gen": 9,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "tabletsofruin",
+    "psName": "Tablets of Ruin",
+    "gen": 9,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "vesselofruin",
+    "psName": "Vessel of Ruin",
+    "gen": 9,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "swordofruin",
+    "psName": "Sword of Ruin",
+    "gen": 9,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "orichalcumpulse",
+    "psName": "Orichalcum Pulse",
+    "gen": 9,
+    "tags": ["stat-boost", "weather"]
+  },
+  {
+    "id": "hadronengine",
+    "psName": "Hadron Engine",
+    "gen": 9,
+    "tags": ["stat-boost", "terrain"]
+  },
+  {
+    "id": "opportunist",
+    "psName": "Opportunist",
+    "gen": 9,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "cudchew",
+    "psName": "Cud Chew",
+    "gen": 9,
+    "tags": ["items"]
+  },
+  {
+    "id": "sharpness",
+    "psName": "Sharpness",
+    "gen": 9,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "supremeoverlord",
+    "psName": "Supreme Overlord",
+    "gen": 9,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "costar",
+    "psName": "Costar",
+    "gen": 9,
+    "tags": ["ally-helper", "stat-boost"]
+  },
+  {
+    "id": "toxicdebris",
+    "psName": "Toxic Debris",
+    "gen": 9,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "armortail",
+    "psName": "Armor Tail",
+    "gen": 9,
+    "tags": ["ally-helper", "defense", "priority-control"]
+  },
+  {
+    "id": "eartheater",
+    "psName": "Earth Eater",
+    "gen": 9,
+    "immunities": ["ground"],
+    "tags": ["heal"]
+  },
+  {
+    "id": "myceliummight",
+    "psName": "Mycelium Might",
+    "gen": 9,
+    "tags": ["bypass", "priority-control"]
+  },
+  {
+    "id": "hospitality",
+    "psName": "Hospitality",
+    "gen": 9,
+    "tags": ["ally-helper", "heal"]
+  },
+  {
+    "id": "mindseye",
+    "psName": "Mind's Eye",
+    "gen": 9,
+    "tags": ["bypass", "defense"]
+  },
+  {
+    "id": "embodyaspectteal",
+    "psName": "Embody Aspect (Teal)",
+    "gen": 9,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "embodyaspectwellspring",
+    "psName": "Embody Aspect (Wellspring)",
+    "gen": 9,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "embodyaspecthearthflame",
+    "psName": "Embody Aspect (Hearthflame)",
+    "gen": 9,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "embodyaspectcornerstone",
+    "psName": "Embody Aspect (Cornerstone)",
+    "gen": 9,
+    "tags": ["stat-boost"]
+  },
+  {
+    "id": "toxicchain",
+    "psName": "Toxic Chain",
+    "gen": 9,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "supersweetsyrup",
+    "psName": "Supersweet Syrup",
+    "gen": 9,
+    "tags": ["target-weaken"]
+  },
+  {
+    "id": "terashift",
+    "psName": "Tera Shift",
+    "gen": 9,
+    "tags": ["species-specific"]
+  },
+  {
+    "id": "terashell",
+    "psName": "Tera Shell",
+    "gen": 9,
+    "tags": ["defense", "species-specific"]
+  },
+  {
+    "id": "teraformzero",
+    "psName": "Teraform Zero",
+    "gen": 9,
+    "tags": ["species-specific", "terrain", "weather"]
+  },
+  {
+    "id": "poisonpuppeteer",
+    "psName": "Poison Puppeteer",
+    "gen": 9,
+    "tags": ["species-specific", "status-trigger"]
+  },
+  {
+    "id": "piercingdrill",
+    "psName": "Piercing Drill",
+    "gen": 9,
+    "tags": ["bypass"]
+  },
+  {
+    "id": "dragonize",
+    "psName": "Dragonize",
+    "gen": 9,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "megasol",
+    "psName": "Mega Sol",
+    "gen": 9,
+    "tags": ["weather"]
+  },
+  {
+    "id": "spicyspray",
+    "psName": "Spicy Spray",
+    "gen": 9,
+    "tags": ["status-trigger"]
+  },
+  {
+    "id": "eelevate",
+    "psName": "Eelevate",
+    "gen": 9,
+    "immunities": ["ground"],
+    "tags": ["defense", "stat-boost"]
+  },
+  {
+    "id": "firemane",
+    "psName": "Fire Mane",
+    "gen": 9,
+    "tags": ["move-boost"]
+  },
+  {
+    "id": "auraguard",
+    "psName": "Aura Guard",
+    "gen": 9,
+    "tags": ["defense"]
+  }
+]

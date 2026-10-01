@@ -1,0 +1,140 @@
+{
+  "id": "pinsir-mega",
+  "nid": "0127-mega",
+  "dexNum": 127,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "bug",
+  "type2": "flying",
+  "color": "brown",
+  "ability1": "aerilate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "xy",
+  "obtainableIn": [
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "lgpe-lge",
+    "lza"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 65,
+  "baseAtk": 155,
+  "baseDef": 120,
+  "baseSpAtk": 65,
+  "baseSpDef": 90,
+  "baseSpeed": 105,
+  "height": 170,
+  "weight": 5900,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "pinsir",
+  "baseForms": ["pinsir"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10040",
+    "pkApiFormId": "10140",
+    "pkApiFormSlug": "pinsir-mega",
+    "smogon": "pinsir-mega",
+    "showdown": "pinsirmega",
+    "showdownName": "Pinsir-Mega",
+    "serebii": "pinsir",
+    "bulbapedia": "Pinsir"
+  },
+  "formMethods": [
+    {
+      "from": ["pinsir"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "pinsirite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["pinsir"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "pinsirite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["pinsir"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": {
+        "id": "pinsirite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    }
+  ],
+  "transferOnlyIn": ["lgpe-lgp"]
+}

@@ -1,112 +1,123 @@
 [
   {
-    "slug": "en",
-    "locale": "en",
-    "gameLocale": "ENG",
+    "id": "en",
     "name": "English",
-    "engName": "English",
+    "nameEng": "English",
+    "alpha3": "eng",
+    "inGameCode": "ENG",
+    "locale": "en-US",
     "flag": "🇺🇸",
-    "pokeApiId": 9,
-    "oldCode": "eng"
+    "pkApiId": 9,
+    "code": "eng"
   },
   {
-    "slug": "es",
-    "locale": "es",
-    "gameLocale": "ES-ES",
-    "name": "Español",
-    "engName": "Spanish",
-    "flag": "🇪🇸",
-    "pokeApiId": 7,
-    "oldCode": "esp"
-  },
-  {
-    "slug": "mx",
-    "locale": "es-419",
-    "gameLocale": "ES-LA",
-    "name": "Español (Latinoamérica)",
-    "engName": "Spanish (Latin America)",
-    "flag": "🇲🇽",
-    "pokeApiId": 14,
-    "oldCode": "esla"
-  },
-  {
-    "slug": "de",
-    "locale": "de",
-    "gameLocale": "DEU",
-    "name": "Deutsch",
-    "engName": "German",
-    "flag": "🇩🇪",
-    "pokeApiId": 6,
-    "oldCode": "deu"
-  },
-  {
-    "slug": "it",
-    "locale": "it",
-    "gameLocale": "ITA",
-    "name": "Italiano",
-    "engName": "Italian",
-    "flag": "🇮🇹",
-    "pokeApiId": 8,
-    "oldCode": "ita"
-  },
-  {
-    "slug": "fr",
-    "locale": "fr",
-    "gameLocale": "FRA",
+    "id": "fr",
     "name": "Français",
-    "engName": "French",
+    "nameEng": "French",
+    "alpha3": "fra",
+    "inGameCode": "FRA",
+    "locale": "fr",
     "flag": "🇫🇷",
-    "pokeApiId": 5,
-    "oldCode": "fra"
+    "pkApiId": 5,
+    "code": "fra"
   },
   {
-    "slug": "kr",
-    "locale": "ko",
-    "gameLocale": "KOR",
-    "name": "한국어",
-    "engName": "Korean",
-    "flag": "🇰🇷",
-    "pokeApiId": 3,
-    "oldCode": "kor"
+    "id": "de",
+    "name": "Deutsch",
+    "nameEng": "German",
+    "alpha3": "deu",
+    "inGameCode": "DEU",
+    "locale": "de",
+    "flag": "🇩🇪",
+    "pkApiId": 6,
+    "code": "deu"
   },
   {
-    "slug": "jp",
-    "locale": "ja",
-    "gameLocale": "JPN",
+    "id": "es",
+    "name": "Español",
+    "nameEng": "Spanish",
+    "alpha3": "esp",
+    "inGameCode": "ES-ES",
+    "locale": "es-ES",
+    "flag": "🇪🇸",
+    "pkApiId": 7,
+    "code": "es-es"
+  },
+  {
+    "id": "esla",
+    "name": "Español (LATAM)",
+    "nameEng": "Spanish (LATAM)",
+    "alpha3": "esla",
+    "inGameCode": "ES-LA",
+    "locale": "es-LA",
+    "flag": "🇪🇨",
+    "pkApiId": null,
+    "code": "es-la"
+  },
+  {
+    "id": "it",
+    "name": "Italiano",
+    "nameEng": "Italian",
+    "alpha3": "ita",
+    "inGameCode": "ITA",
+    "locale": "it",
+    "flag": "🇮🇹",
+    "pkApiId": 8,
+    "code": "ita"
+  },
+  {
+    "id": "ja",
     "name": "日本語",
-    "engName": "Japanese",
+    "nameEng": "Japanese",
+    "alpha3": "jap",
+    "inGameCode": "JPN",
+    "locale": "ja",
     "flag": "🇯🇵",
-    "pokeApiId": 1,
-    "oldCode": "jap"
+    "pkApiId": 11,
+    "code": "jpn"
   },
   {
-    "slug": "tw",
-    "locale": "zh-tw",
-    "gameLocale": "CHT",
-    "name": "繁體中文",
-    "engName": "Traditional Chinese",
-    "flag": "🇹🇼",
-    "pokeApiId": 4,
-    "oldCode": "cht"
-  },
-  {
-    "slug": "cn",
-    "locale": "zh-cn",
-    "gameLocale": "CHS",
+    "id": "chs",
     "name": "简体中文",
-    "engName": "Simplified Chinese",
+    "nameEng": "Chinese (Simplified)",
+    "alpha3": "chs",
+    "inGameCode": "CHS",
+    "locale": "zh-CN",
     "flag": "🇨🇳",
-    "pokeApiId": 12,
-    "oldCode": "chs"
+    "pkApiId": 12,
+    "code": "chs"
   },
   {
-    "slug": "br",
-    "locale": "pt-br",
-    "gameLocale": "PT-BR",
-    "name": "Português (Brasil)",
-    "engName": "Portuguese (Brazil)",
+    "id": "cht",
+    "name": "繁體中文",
+    "nameEng": "Chinese (Traditional)",
+    "alpha3": "cht",
+    "inGameCode": "CHT",
+    "locale": "zh-TW",
+    "flag": "🇹🇼",
+    "pkApiId": 4,
+    "code": "cht"
+  },
+  {
+    "id": "ko",
+    "name": "한국어",
+    "nameEng": "Korean",
+    "alpha3": "kor",
+    "inGameCode": "KOR",
+    "locale": "ko",
+    "flag": "🇰🇷",
+    "pkApiId": 3,
+    "code": "kor"
+  },
+  {
+    "id": "pt",
+    "name": "Português (Brazil)",
+    "nameEng": "Portuguese (Brazil)",
+    "alpha3": "por",
+    "inGameCode": "PT-BR",
+    "locale": "pt-BR",
     "flag": "🇧🇷",
-    "pokeApiId": 13,
-    "oldCode": "por"
+    "pkApiId": 13,
+    "code": "pt-br"
   }
 ]

@@ -1,0 +1,88 @@
+{
+  "id": "alcremie-caramel-swirl-strawberry",
+  "nid": "0869-caramel-swirl-strawberry",
+  "dexNum": 869,
+  "formId": "caramel-swirl-strawberry",
+  "region": "galar",
+  "gen": 8,
+  "type1": "fairy",
+  "color": "white",
+  "ability1": "sweetveil",
+  "abilityHidden": "aromaveil",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": true,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": ["swsh-sw", "swsh-sh", "home", "sv-s", "sv-v", "champions"],
+  "shinyReleased": true,
+  "shinyBase": "alcremie",
+  "baseHp": 65,
+  "baseAtk": 60,
+  "baseDef": 75,
+  "baseSpAtk": 110,
+  "baseSpDef": 121,
+  "baseSpeed": 64,
+  "height": 30,
+  "weight": 50,
+  "maleRate": 0,
+  "femaleRate": 100,
+  "baseSpecies": "alcremie",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "869",
+    "pkApiFormId": "10352",
+    "pkApiFormSlug": "alcremie-caramel-swirl-strawberry-sweet",
+    "smogon": "alcremie-caramel-swirl-strawberry",
+    "showdown": "alcremiecaramelswirl",
+    "showdownName": "Alcremie-Caramel-Swirl",
+    "serebii": "alcremie",
+    "bulbapedia": "Alcremie"
+  },
+  "evoMethods": [
+    {
+      "from": ["milcery"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "special",
+      "item": {
+        "id": "strawberrysweet",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "spin",
+          "direction": "clockwise",
+          "seconds": 5,
+          "comparison": "gt"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["home"]
+}

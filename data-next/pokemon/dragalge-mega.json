@@ -1,0 +1,96 @@
+{
+  "id": "dragalge-mega",
+  "nid": "0691-mega",
+  "dexNum": 691,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "poison",
+  "type2": "dragon",
+  "color": "brown",
+  "ability1": "regenerator",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 65,
+  "baseAtk": 85,
+  "baseDef": 105,
+  "baseSpAtk": 132,
+  "baseSpDef": 163,
+  "baseSpeed": 44,
+  "height": 210,
+  "weight": 10030,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "dragalge",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "691",
+    "pkApiFormId": "691",
+    "pkApiFormSlug": "dragalge-mega",
+    "smogon": "dragalge-mega",
+    "showdown": "dragalgemega",
+    "showdownName": "Dragalge-Mega",
+    "serebii": "dragalge",
+    "bulbapedia": "Dragalge"
+  },
+  "formMethods": [
+    {
+      "from": ["dragalge"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "dragalgite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

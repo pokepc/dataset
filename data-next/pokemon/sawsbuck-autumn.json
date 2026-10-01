@@ -1,0 +1,177 @@
+{
+  "id": "sawsbuck-autumn",
+  "nid": "0586-autumn",
+  "dexNum": 586,
+  "formId": "autumn",
+  "region": "unova",
+  "gen": 5,
+  "type1": "normal",
+  "type2": "grass",
+  "color": "brown",
+  "ability1": "chlorophyll",
+  "ability2": "sapsipper",
+  "abilityHidden": "serenegrace",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": true,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "bw",
+  "obtainableIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "go", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "sv-s",
+    "sv-v"
+  ],
+  "shinyReleased": true,
+  "baseHp": 80,
+  "baseAtk": 100,
+  "baseDef": 70,
+  "baseSpAtk": 60,
+  "baseSpDef": 70,
+  "baseSpeed": 95,
+  "height": 190,
+  "weight": 9250,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "sawsbuck",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "586",
+    "pkApiFormId": "10072",
+    "pkApiFormSlug": "sawsbuck-autumn",
+    "smogon": "sawsbuck-autumn",
+    "showdown": "sawsbuck",
+    "showdownName": "Sawsbuck",
+    "serebii": "sawsbuck",
+    "bulbapedia": "Sawsbuck"
+  },
+  "evoMethods": [
+    {
+      "from": ["deerling-autumn"],
+      "trigger": "level_up",
+      "minLevel": 34,
+      "conditions": []
+    }
+  ],
+  "formMethods": [
+    {
+      "from": ["sawsbuck-summer", "sawsbuck-winter", "sawsbuck"],
+      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "season",
+          "season": "autumn"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
+    },
+    {
+      "from": ["sawsbuck-summer", "sawsbuck-winter", "sawsbuck"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "west_province_area_two"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
+    },
+    {
+      "from": ["sawsbuck-summer", "sawsbuck-winter", "sawsbuck"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "west_province_area_three"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
+    },
+    {
+      "from": ["sawsbuck-summer", "sawsbuck-winter", "sawsbuck"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "socarrat_trail"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home"
+  ]
+}

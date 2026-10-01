@@ -1,0 +1,112 @@
+{
+  "id": "steelix-mega",
+  "nid": "0208-mega",
+  "dexNum": 208,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "steel",
+  "type2": "ground",
+  "color": "gray",
+  "ability1": "sandforce",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "oras",
+  "obtainableIn": ["oras-or", "oras-as", "go", "usum-us", "usum-um", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 75,
+  "baseAtk": 125,
+  "baseDef": 230,
+  "baseSpAtk": 55,
+  "baseSpDef": 95,
+  "baseSpeed": 30,
+  "height": 1050,
+  "weight": 74000,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "steelix",
+  "baseForms": ["steelix"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10072",
+    "pkApiFormId": "10174",
+    "pkApiFormSlug": "steelix-mega",
+    "smogon": "steelix-mega",
+    "showdown": "steelixmega",
+    "showdownName": "Steelix-Mega",
+    "serebii": "steelix",
+    "bulbapedia": "Steelix"
+  },
+  "formMethods": [
+    {
+      "from": ["steelix", "steelix-f"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "steelixite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["steelix", "steelix-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "steelixite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["sm-s", "sm-m"]
+}

@@ -1,0 +1,305 @@
+{
+  "id": "giratina-origin",
+  "nid": "0487-origin",
+  "dexNum": 487,
+  "formId": "origin",
+  "region": "sinnoh",
+  "gen": 4,
+  "type1": "ghost",
+  "type2": "dragon",
+  "color": "black",
+  "ability1": "levitate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "pt",
+  "obtainableIn": [
+    "pt",
+    "oras-or",
+    "oras-as",
+    "go",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la"
+  ],
+  "eventOnlyIn": ["hgss-hg", "hgss-ss"],
+  "storableIn": [
+    "ranch",
+    "pt",
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v"
+  ],
+  "shinyReleased": true,
+  "shinyLockedIn": ["la"],
+  "baseHp": 150,
+  "baseAtk": 120,
+  "baseDef": 100,
+  "baseSpAtk": 120,
+  "baseSpDef": 100,
+  "baseSpeed": 90,
+  "height": 690,
+  "weight": 65000,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "giratina",
+  "baseForms": ["giratina"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10007",
+    "pkApiFormId": "10063",
+    "pkApiFormSlug": "giratina-origin",
+    "smogon": "giratina-origin",
+    "showdown": "giratinaorigin",
+    "showdownName": "Giratina-Origin",
+    "serebii": "giratina",
+    "bulbapedia": "Giratina"
+  },
+  "formMethods": [
+    {
+      "from": ["giratina"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": {
+        "id": "griseouscore",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "use_item",
+          "item": {
+            "id": "griseouscore",
+            "role": "used",
+            "consumed": false
+          },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["giratina"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "equip_item",
+      "item": {
+        "id": "griseouscore",
+        "role": "held",
+        "consumed": false
+      },
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "remove_item",
+          "item": {
+            "id": "griseouscore",
+            "role": "held",
+            "consumed": false
+          },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["giratina"],
+      "games": [
+        "pt",
+        "hgss-hg",
+        "hgss-ss",
+        "bw-b",
+        "bw-w",
+        "b2w2-b2",
+        "b2w2-w2",
+        "xy-x",
+        "xy-y",
+        "oras-or",
+        "oras-as",
+        "sm-s",
+        "sm-m",
+        "usum-us",
+        "usum-um",
+        "swsh-sw",
+        "swsh-sh",
+        "bdsp-bd",
+        "bdsp-sp"
+      ],
+      "trigger": "equip_item",
+      "item": {
+        "id": "griseousorb",
+        "role": "held",
+        "consumed": false
+      },
+      "conditions": [],
+      "revert": [
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
+        },
+        {
+          "trigger": "remove_item",
+          "item": {
+            "id": "griseousorb",
+            "role": "held",
+            "consumed": false
+          },
+          "conditions": [
+            {
+              "key": "environment",
+              "environment": "outside_distortion_world"
+            }
+          ]
+        },
+        {
+          "games": ["pt"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "leave_distortion_world"
+            },
+            {
+              "key": "mechanic",
+              "mechanic": "not_holding_griseous_orb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["giratina"],
+      "games": ["pt"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "distortion_world"
+        }
+      ],
+      "revert": [
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
+        },
+        {
+          "trigger": "remove_item",
+          "item": {
+            "id": "griseousorb",
+            "role": "held",
+            "consumed": false
+          },
+          "conditions": [
+            {
+              "key": "environment",
+              "environment": "outside_distortion_world"
+            }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "leave_distortion_world"
+            },
+            {
+              "key": "mechanic",
+              "mechanic": "not_holding_griseous_orb"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "ranch",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "sm-s",
+    "sm-m",
+    "sv-s",
+    "sv-v"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "goodra",
+  "nid": "0706",
+  "dexNum": 706,
+  "region": "kalos",
+  "gen": 6,
+  "type1": "dragon",
+  "color": "purple",
+  "ability1": "sapsipper",
+  "ability2": "hydration",
+  "abilityHidden": "gooey",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "xy",
+  "obtainableIn": [
+    "xy-x",
+    "xy-y",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sh",
+    "sv-s",
+    "sv-v",
+    "lza"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "sv-s",
+    "sv-v",
+    "lza",
+    "champions"
+  ],
+  "shinyReleased": true,
+  "baseHp": 90,
+  "baseAtk": 100,
+  "baseDef": 70,
+  "baseSpAtk": 110,
+  "baseSpDef": 150,
+  "baseSpeed": 80,
+  "height": 200,
+  "weight": 15050,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseForms": [],
+  "forms": ["goodra-hisui"],
+  "refs": {
+    "pkApiId": "706",
+    "pkApiFormId": "706",
+    "pkApiFormSlug": "goodra",
+    "smogon": "goodra",
+    "showdown": "goodra",
+    "showdownName": "Goodra",
+    "serebii": "goodra",
+    "bulbapedia": "Goodra"
+  },
+  "evoMethods": [
+    {
+      "from": ["sliggoo"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": [
+        {
+          "key": "overworld_weather",
+          "weather": ["rain"]
+        }
+      ]
+    },
+    {
+      "from": ["sliggoo"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "level_up",
+      "minLevel": 50,
+      "conditions": [
+        {
+          "key": "overworld_weather",
+          "weather": ["rain", "fog"]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "swsh-sw", "home"]
+}

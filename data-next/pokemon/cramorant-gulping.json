@@ -1,0 +1,170 @@
+{
+  "id": "cramorant-gulping",
+  "nid": "0845-gulping",
+  "dexNum": 845,
+  "formId": "gulping",
+  "region": "galar",
+  "gen": 8,
+  "type1": "flying",
+  "type2": "water",
+  "color": "blue",
+  "ability1": "gulpmissile",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 70,
+  "baseAtk": 85,
+  "baseDef": 55,
+  "baseSpAtk": 85,
+  "baseSpDef": 95,
+  "baseSpeed": 85,
+  "height": 80,
+  "weight": 1800,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "cramorant",
+  "baseForms": ["cramorant"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10182",
+    "pkApiFormId": "10341",
+    "pkApiFormSlug": "cramorant-gulping",
+    "smogon": "cramorant-gulping",
+    "showdown": "cramorantgulping",
+    "showdownName": "Cramorant-Gulping",
+    "serebii": "cramorant",
+    "bulbapedia": "Cramorant"
+  },
+  "formMethods": [
+    {
+      "from": ["cramorant"],
+      "trigger": "use_move",
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["gulpmissile"]
+        },
+        {
+          "key": "move_used",
+          "move": "surf"
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 50
+        },
+        {
+          "key": "battle_condition",
+          "condition": "move_deals_damage"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "not_dynamaxed"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["gulpmissile"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["damaging_hit"]
+            }
+          ]
+        },
+        "switch_out",
+        "battle_end",
+        {
+          "games": ["swsh-sw", "swsh-sh"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "mechanic",
+              "mechanic": "dynamax"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["cramorant"],
+      "trigger": "use_move",
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["gulpmissile"]
+        },
+        {
+          "key": "move_used",
+          "move": "dive"
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 50
+        },
+        {
+          "key": "battle_condition",
+          "condition": "not_dynamaxed"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["gulpmissile"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["damaging_hit"]
+            }
+          ]
+        },
+        "switch_out",
+        "battle_end",
+        {
+          "games": ["swsh-sw", "swsh-sh"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "mechanic",
+              "mechanic": "dynamax"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

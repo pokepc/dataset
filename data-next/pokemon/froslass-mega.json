@@ -1,0 +1,96 @@
+{
+  "id": "froslass-mega",
+  "nid": "0478-mega",
+  "dexNum": 478,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "ice",
+  "type2": "ghost",
+  "color": "white",
+  "ability1": "snowwarning",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 70,
+  "baseAtk": 80,
+  "baseDef": 70,
+  "baseSpAtk": 140,
+  "baseSpDef": 100,
+  "baseSpeed": 120,
+  "height": 260,
+  "weight": 2960,
+  "maleRate": 0,
+  "femaleRate": 100,
+  "baseSpecies": "froslass",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "478",
+    "pkApiFormId": "478",
+    "pkApiFormSlug": "froslass-mega",
+    "smogon": "froslass-mega",
+    "showdown": "froslassmega",
+    "showdownName": "Froslass-Mega",
+    "serebii": "froslass",
+    "bulbapedia": "Froslass"
+  },
+  "formMethods": [
+    {
+      "from": ["froslass"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "froslassite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

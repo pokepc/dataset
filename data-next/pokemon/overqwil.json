@@ -1,0 +1,104 @@
+{
+  "id": "overqwil",
+  "nid": "0904",
+  "dexNum": 904,
+  "region": "hisui",
+  "gen": 8,
+  "type1": "dark",
+  "type2": "poison",
+  "color": "gray",
+  "ability1": "poisonpoint",
+  "ability2": "swiftswim",
+  "abilityHidden": "intimidate",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": true,
+  "debutIn": "la",
+  "obtainableIn": ["go", "la", "sv-s", "sv-v", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": ["go", "home", "la", "sv-s", "sv-v", "lza", "champions"],
+  "shinyReleased": true,
+  "baseHp": 85,
+  "baseAtk": 115,
+  "baseDef": 95,
+  "baseSpAtk": 65,
+  "baseSpDef": 65,
+  "baseSpeed": 85,
+  "height": 50,
+  "weight": 6050,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "904",
+    "pkApiFormId": "904",
+    "pkApiFormSlug": "overqwil",
+    "smogon": "overqwil",
+    "showdown": "overqwil",
+    "showdownName": "Overqwil",
+    "serebii": "overqwil",
+    "bulbapedia": "Overqwil"
+  },
+  "evoMethods": [
+    {
+      "from": ["qwilfish-hisui"],
+      "games": ["la"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "use_move",
+          "move": "barbbarrage",
+          "count": 20,
+          "style": "strong"
+        }
+      ],
+      "activation": "manual"
+    },
+    {
+      "from": ["qwilfish-hisui"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "level_up",
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "barbbarrage"
+        }
+      ]
+    },
+    {
+      "from": ["qwilfish-hisui"],
+      "games": ["lza"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "hit_with_move",
+          "move": "barbbarrage",
+          "count": 20
+        }
+      ],
+      "activation": "manual"
+    }
+  ],
+  "transferOnlyIn": ["home"]
+}

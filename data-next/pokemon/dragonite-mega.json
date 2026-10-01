@@ -1,0 +1,96 @@
+{
+  "id": "dragonite-mega",
+  "nid": "0149-mega",
+  "dexNum": 149,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "dragon",
+  "type2": "flying",
+  "color": "brown",
+  "ability1": "multiscale",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["go", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 91,
+  "baseAtk": 124,
+  "baseDef": 115,
+  "baseSpAtk": 145,
+  "baseSpDef": 125,
+  "baseSpeed": 100,
+  "height": 220,
+  "weight": 29000,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "dragonite",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "149",
+    "pkApiFormId": "149",
+    "pkApiFormSlug": "dragonite-mega",
+    "smogon": "dragonite-mega",
+    "showdown": "dragonitemega",
+    "showdownName": "Dragonite-Mega",
+    "serebii": "dragonite",
+    "bulbapedia": "Dragonite"
+  },
+  "formMethods": [
+    {
+      "from": ["dragonite"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "dragoninite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

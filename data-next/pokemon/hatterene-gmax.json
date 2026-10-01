@@ -1,0 +1,91 @@
+{
+  "id": "hatterene-gmax",
+  "nid": "0858-gmax",
+  "dexNum": 858,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "psychic",
+  "type2": "fairy",
+  "color": "pink",
+  "ability1": "healer",
+  "ability2": "anticipation",
+  "abilityHidden": "magicbounce",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 57,
+  "baseAtk": 90,
+  "baseDef": 95,
+  "baseSpAtk": 136,
+  "baseSpDef": 103,
+  "baseSpeed": 29,
+  "height": 2600,
+  "weight": 0,
+  "maleRate": 0,
+  "femaleRate": 100,
+  "baseSpecies": "hatterene",
+  "baseForms": ["hatterene"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10221",
+    "pkApiFormId": "10390",
+    "pkApiFormSlug": "hatterene-gmax",
+    "smogon": "hatterene-gmax",
+    "showdown": "hatterenegmax",
+    "showdownName": "Hatterene-Gmax",
+    "serebii": "hatterene",
+    "bulbapedia": "Hatterene"
+  },
+  "formMethods": [
+    {
+      "from": ["hatterene"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

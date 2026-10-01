@@ -1,0 +1,144 @@
+{
+  "id": "silvally",
+  "nid": "0773",
+  "dexNum": 773,
+  "region": "alola",
+  "gen": 7,
+  "type1": "normal",
+  "color": "gray",
+  "ability1": "rkssystem",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "sm",
+  "obtainableIn": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": ["bank", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "home"],
+  "shinyReleased": true,
+  "shinyLockedIn": ["swsh-sw", "swsh-sh"],
+  "baseHp": 95,
+  "baseAtk": 95,
+  "baseDef": 95,
+  "baseSpAtk": 95,
+  "baseSpDef": 95,
+  "baseSpeed": 95,
+  "height": 230,
+  "weight": 10050,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseForms": [],
+  "forms": [
+    "silvally-fighting",
+    "silvally-flying",
+    "silvally-poison",
+    "silvally-ground",
+    "silvally-rock",
+    "silvally-bug",
+    "silvally-ghost",
+    "silvally-steel",
+    "silvally-fire",
+    "silvally-water",
+    "silvally-grass",
+    "silvally-electric",
+    "silvally-psychic",
+    "silvally-ice",
+    "silvally-dragon",
+    "silvally-dark",
+    "silvally-fairy"
+  ],
+  "refs": {
+    "pkApiId": "773",
+    "pkApiFormId": "773",
+    "pkApiFormSlug": "silvally-normal",
+    "smogon": "silvally",
+    "showdown": "silvally",
+    "showdownName": "Silvally",
+    "serebii": "silvally",
+    "bulbapedia": "Silvally"
+  },
+  "evoMethods": [
+    {
+      "from": ["typenull"],
+      "trigger": "level_up",
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
+    }
+  ],
+  "formMethods": [
+    {
+      "from": [
+        "silvally-fairy",
+        "silvally-dark",
+        "silvally-fighting",
+        "silvally-ghost",
+        "silvally-ice",
+        "silvally-ground",
+        "silvally-dragon",
+        "silvally-water",
+        "silvally-poison",
+        "silvally-electric",
+        "silvally-rock",
+        "silvally-psychic",
+        "silvally-bug",
+        "silvally-flying",
+        "silvally-steel",
+        "silvally-grass",
+        "silvally-fire"
+      ],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+      "trigger": "remove_item",
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["rkssystem"]
+        },
+        {
+          "key": "held_item_absent",
+          "items": [
+            "fairymemory",
+            "darkmemory",
+            "fightingmemory",
+            "ghostmemory",
+            "icememory",
+            "groundmemory",
+            "dragonmemory",
+            "watermemory",
+            "poisonmemory",
+            "electricmemory",
+            "rockmemory",
+            "psychicmemory",
+            "bugmemory",
+            "flyingmemory",
+            "steelmemory",
+            "grassmemory",
+            "firememory"
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["bank", "home"]
+}

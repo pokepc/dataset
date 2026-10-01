@@ -1,0 +1,117 @@
+{
+  "id": "eiscue-noice",
+  "nid": "0875-noice",
+  "dexNum": 875,
+  "formId": "noice",
+  "region": "galar",
+  "gen": 8,
+  "type1": "ice",
+  "color": "blue",
+  "ability1": "iceface",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sh", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 75,
+  "baseAtk": 80,
+  "baseDef": 70,
+  "baseSpAtk": 65,
+  "baseSpDef": 50,
+  "baseSpeed": 130,
+  "height": 140,
+  "weight": 8900,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "eiscue",
+  "baseForms": ["eiscue"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10185",
+    "pkApiFormId": "10354",
+    "pkApiFormSlug": "eiscue-noice",
+    "smogon": "eiscue-noice",
+    "showdown": "eiscuenoice",
+    "showdownName": "Eiscue-Noice",
+    "serebii": "eiscue",
+    "bulbapedia": "Eiscue"
+  },
+  "formMethods": [
+    {
+      "from": ["eiscue"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["iceface"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["physical_hit"]
+        },
+        {
+          "key": "battle_condition",
+          "condition": "ice_face_not_bypassed"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["iceface"]
+            },
+            {
+              "key": "weather",
+              "weather": ["hail", "snow"],
+              "relation": "in"
+            },
+            {
+              "key": "battle_event",
+              "events": ["switch_in"]
+            }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["iceface"]
+            },
+            {
+              "key": "battle_condition",
+              "condition": "hail_or_snow_begins"
+            }
+          ]
+        },
+        "battle_end"
+      ]
+    }
+  ],
+  "transferOnlyIn": ["swsh-sw"]
+}

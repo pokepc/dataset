@@ -1,0 +1,96 @@
+{
+  "id": "emboar-mega",
+  "nid": "0500-mega",
+  "dexNum": 500,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "fire",
+  "type2": "fighting",
+  "color": "red",
+  "ability1": "moldbreaker",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 110,
+  "baseAtk": 148,
+  "baseDef": 75,
+  "baseSpAtk": 110,
+  "baseSpDef": 110,
+  "baseSpeed": 75,
+  "height": 180,
+  "weight": 18030,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "emboar",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "500",
+    "pkApiFormId": "500",
+    "pkApiFormSlug": "emboar-mega",
+    "smogon": "emboar-mega",
+    "showdown": "emboarmega",
+    "showdownName": "Emboar-Mega",
+    "serebii": "emboar",
+    "bulbapedia": "Emboar"
+  },
+  "formMethods": [
+    {
+      "from": ["emboar"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "emboarite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

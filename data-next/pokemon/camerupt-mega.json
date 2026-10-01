@@ -1,0 +1,112 @@
+{
+  "id": "camerupt-mega",
+  "nid": "0323-mega",
+  "dexNum": 323,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "fire",
+  "type2": "ground",
+  "color": "red",
+  "ability1": "sheerforce",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "oras",
+  "obtainableIn": ["oras-or", "oras-as", "go", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 70,
+  "baseAtk": 120,
+  "baseDef": 100,
+  "baseSpAtk": 145,
+  "baseSpDef": 105,
+  "baseSpeed": 20,
+  "height": 250,
+  "weight": 32050,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "camerupt",
+  "baseForms": ["camerupt"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10087",
+    "pkApiFormId": "10189",
+    "pkApiFormSlug": "camerupt-mega",
+    "smogon": "camerupt-mega",
+    "showdown": "cameruptmega",
+    "showdownName": "Camerupt-Mega",
+    "serebii": "camerupt",
+    "bulbapedia": "Camerupt"
+  },
+  "formMethods": [
+    {
+      "from": ["camerupt", "camerupt-f"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "cameruptite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["camerupt", "camerupt-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "cameruptite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["sm-s", "sm-m", "usum-us", "usum-um"]
+}

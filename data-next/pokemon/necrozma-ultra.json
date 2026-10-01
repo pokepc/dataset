@@ -1,0 +1,98 @@
+{
+  "id": "necrozma-ultra",
+  "nid": "0800-ultra",
+  "dexNum": 800,
+  "formId": "ultra",
+  "region": "alola",
+  "gen": 7,
+  "type1": "psychic",
+  "type2": "dragon",
+  "color": "yellow",
+  "ability1": "neuroforce",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": true,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "usum",
+  "obtainableIn": ["usum-us", "usum-um"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "shinyLockedIn": ["usum-us", "usum-um"],
+  "baseHp": 97,
+  "baseAtk": 167,
+  "baseDef": 97,
+  "baseSpAtk": 167,
+  "baseSpDef": 97,
+  "baseSpeed": 129,
+  "height": 750,
+  "weight": 23000,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "necrozma",
+  "baseForms": ["necrozma-dusk-mane", "necrozma-dawn-wings"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10157",
+    "pkApiFormId": "10316",
+    "pkApiFormSlug": "necrozma-ultra",
+    "smogon": "necrozma-ultra",
+    "showdown": "necrozmaultra",
+    "showdownName": "Necrozma-Ultra",
+    "serebii": "necrozma",
+    "bulbapedia": "Necrozma"
+  },
+  "formMethods": [
+    {
+      "from": ["necrozma-dawn-wings", "necrozma-dusk-mane"],
+      "games": ["usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "ultranecroziumz",
+        "role": "held",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "ultra_burst"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "ultra_burst_unused_by_trainer"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["faint", "battle_end"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

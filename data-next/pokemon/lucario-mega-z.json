@@ -1,0 +1,96 @@
+{
+  "id": "lucario-mega-z",
+  "nid": "0448-mega-z",
+  "dexNum": 448,
+  "formId": "mega-z",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "fighting",
+  "type2": "steel",
+  "color": "blue",
+  "ability1": "auraguard",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 70,
+  "baseAtk": 100,
+  "baseDef": 70,
+  "baseSpAtk": 164,
+  "baseSpDef": 70,
+  "baseSpeed": 151,
+  "height": 130,
+  "weight": 4940,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "lucario",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "448",
+    "pkApiFormId": "448",
+    "pkApiFormSlug": "lucario-mega-z",
+    "smogon": "lucario-mega-z",
+    "showdown": "lucariomegaz",
+    "showdownName": "Lucario-Mega-Z",
+    "serebii": "lucario",
+    "bulbapedia": "Lucario"
+  },
+  "formMethods": [
+    {
+      "from": ["lucario"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "lucarionitez",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

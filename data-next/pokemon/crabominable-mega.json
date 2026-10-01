@@ -1,0 +1,96 @@
+{
+  "id": "crabominable-mega",
+  "nid": "0740-mega",
+  "dexNum": 740,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "fighting",
+  "type2": "ice",
+  "color": "white",
+  "ability1": "ironfist",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 97,
+  "baseAtk": 157,
+  "baseDef": 122,
+  "baseSpAtk": 62,
+  "baseSpDef": 107,
+  "baseSpeed": 33,
+  "height": 260,
+  "weight": 25280,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "crabominable",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "740",
+    "pkApiFormId": "740",
+    "pkApiFormSlug": "crabominable-mega",
+    "smogon": "crabominable-mega",
+    "showdown": "crabominablemega",
+    "showdownName": "Crabominable-Mega",
+    "serebii": "crabominable",
+    "bulbapedia": "Crabominable"
+  },
+  "formMethods": [
+    {
+      "from": ["crabominable"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "crabominite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

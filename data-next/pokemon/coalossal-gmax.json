@@ -1,0 +1,91 @@
+{
+  "id": "coalossal-gmax",
+  "nid": "0839-gmax",
+  "dexNum": 839,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "rock",
+  "type2": "fire",
+  "color": "black",
+  "ability1": "steamengine",
+  "ability2": "flamebody",
+  "abilityHidden": "flashfire",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 110,
+  "baseAtk": 80,
+  "baseDef": 120,
+  "baseSpAtk": 80,
+  "baseSpDef": 90,
+  "baseSpeed": 30,
+  "height": 4200,
+  "weight": 0,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "coalossal",
+  "baseForms": ["coalossal"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10215",
+    "pkApiFormId": "10384",
+    "pkApiFormSlug": "coalossal-gmax",
+    "smogon": "coalossal-gmax",
+    "showdown": "coalossalgmax",
+    "showdownName": "Coalossal-Gmax",
+    "serebii": "coalossal",
+    "bulbapedia": "Coalossal"
+  },
+  "formMethods": [
+    {
+      "from": ["coalossal"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

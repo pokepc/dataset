@@ -1,0 +1,96 @@
+{
+  "id": "delphox-mega",
+  "nid": "0655-mega",
+  "dexNum": 655,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "fire",
+  "type2": "psychic",
+  "color": "red",
+  "ability1": "levitate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["go", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 75,
+  "baseAtk": 69,
+  "baseDef": 72,
+  "baseSpAtk": 159,
+  "baseSpDef": 125,
+  "baseSpeed": 134,
+  "height": 150,
+  "weight": 3900,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "delphox",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "655",
+    "pkApiFormId": "655",
+    "pkApiFormSlug": "delphox-mega",
+    "smogon": "delphox-mega",
+    "showdown": "delphoxmega",
+    "showdownName": "Delphox-Mega",
+    "serebii": "delphox",
+    "bulbapedia": "Delphox"
+  },
+  "formMethods": [
+    {
+      "from": ["delphox"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "delphoxite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

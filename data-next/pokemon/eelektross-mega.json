@@ -1,0 +1,95 @@
+{
+  "id": "eelektross-mega",
+  "nid": "0604-mega",
+  "dexNum": 604,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "electric",
+  "color": "blue",
+  "ability1": "eelevate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 85,
+  "baseAtk": 145,
+  "baseDef": 80,
+  "baseSpAtk": 135,
+  "baseSpDef": 90,
+  "baseSpeed": 80,
+  "height": 300,
+  "weight": 18000,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "eelektross",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "604",
+    "pkApiFormId": "604",
+    "pkApiFormSlug": "eelektross-mega",
+    "smogon": "eelektross-mega",
+    "showdown": "eelektrossmega",
+    "showdownName": "Eelektross-Mega",
+    "serebii": "eelektross",
+    "bulbapedia": "Eelektross"
+  },
+  "formMethods": [
+    {
+      "from": ["eelektross"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "eelektrossite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

@@ -1,0 +1,96 @@
+{
+  "id": "magearna-original-mega",
+  "nid": "0801-original-mega",
+  "dexNum": 801,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "steel",
+  "type2": "fairy",
+  "color": "red",
+  "ability1": "soulheart",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": true,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": [],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": false,
+  "baseHp": 80,
+  "baseAtk": 125,
+  "baseDef": 115,
+  "baseSpAtk": 170,
+  "baseSpDef": 115,
+  "baseSpeed": 95,
+  "height": 130,
+  "weight": 24810,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "magearna",
+  "baseForms": ["magearna-original"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10147",
+    "pkApiFormId": "10266",
+    "pkApiFormSlug": "magearna-original-mega",
+    "smogon": "magearna-original-mega",
+    "showdown": "magearnaoriginalmega",
+    "showdownName": "Magearna-Original-Mega",
+    "serebii": "magearna",
+    "bulbapedia": "Magearna"
+  },
+  "formMethods": [
+    {
+      "from": ["magearna-original"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "magearnite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["lza"]
+}

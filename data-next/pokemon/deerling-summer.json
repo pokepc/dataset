@@ -1,0 +1,150 @@
+{
+  "id": "deerling-summer",
+  "nid": "0585-summer",
+  "dexNum": 585,
+  "formId": "summer",
+  "region": "unova",
+  "gen": 5,
+  "type1": "normal",
+  "type2": "grass",
+  "color": "pink",
+  "ability1": "chlorophyll",
+  "ability2": "sapsipper",
+  "abilityHidden": "serenegrace",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": true,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "bw",
+  "obtainableIn": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "go", "sv-s", "sv-v"],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home",
+    "sv-s",
+    "sv-v"
+  ],
+  "shinyReleased": true,
+  "baseHp": 60,
+  "baseAtk": 60,
+  "baseDef": 50,
+  "baseSpAtk": 40,
+  "baseSpDef": 50,
+  "baseSpeed": 75,
+  "height": 60,
+  "weight": 1950,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "deerling",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "585",
+    "pkApiFormId": "10068",
+    "pkApiFormSlug": "deerling-summer",
+    "smogon": "deerling-summer",
+    "showdown": "deerlingsummer",
+    "showdownName": "Deerling-Summer",
+    "serebii": "deerling",
+    "bulbapedia": "Deerling"
+  },
+  "formMethods": [
+    {
+      "from": ["deerling-autumn", "deerling-winter", "deerling"],
+      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "season",
+          "season": "summer"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
+    },
+    {
+      "from": ["deerling-autumn", "deerling-winter", "deerling"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "east_province_area_one"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
+    },
+    {
+      "from": ["deerling-autumn", "deerling-winter", "deerling"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "east_province_area_two"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "home"
+  ]
+}

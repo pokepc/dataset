@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 04:55'
+updated_date: '2026-10-01 05:01'
 ---
 Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
 and its consequences are in
@@ -256,13 +256,14 @@ Champions is the first and, in 8.0.0, only set with mods. Its upstream adapter (
 part of `pnpm build`. Its learnsets (`pokemon-moves.json` in the preview) become Pokémon `learnset`
 overrides, and its in-game descriptions become `mods/champions/i18n/<locale>/` text.
 
-## Preview layout (until task-7)
+## Migration status (until task-7)
 
-`data-next/` currently holds the generated preview: `champions/` (full records, learnsets and
-per-locale text), `pokemon-texts/<locale>/` prose and `languages.json`. `pnpm build:next`
-(`src/lib-next/_build.ts`) regenerates it. The tasks of milestone `m-0` migrate v7 `data/` and this
-preview into the layout above and then rename `data-next/` and `src/lib-next/` to `data/` and
-`src/lib/`.
+`data-next/` holds the v8 base layout, generated from v7 `data/` by
+`bun src/scripts/migrate-v7-to-v8.ts` (then `pnpm format`). The script validates every file against
+the v8 schemas, rebuilds every v7 record from its v8 record and text to prove nothing was lost, and
+checks that code maps are byte-identical. Until the cut-over, v7 `data/` stays the maintained source:
+re-run the script after changing it. `data-next/champions/` still holds the full-record Champions
+preview until task-5 splits it into base and `mods/champions/`.
 
 ## Resolved
 

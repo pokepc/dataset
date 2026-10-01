@@ -1,0 +1,96 @@
+{
+  "id": "scrafty-mega",
+  "nid": "0560-mega",
+  "dexNum": 560,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "dark",
+  "type2": "fighting",
+  "color": "red",
+  "ability1": "intimidate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 65,
+  "baseAtk": 130,
+  "baseDef": 135,
+  "baseSpAtk": 55,
+  "baseSpDef": 135,
+  "baseSpeed": 68,
+  "height": 110,
+  "weight": 3100,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "scrafty",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "560",
+    "pkApiFormId": "560",
+    "pkApiFormSlug": "scrafty-mega",
+    "smogon": "scrafty-mega",
+    "showdown": "scraftymega",
+    "showdownName": "Scrafty-Mega",
+    "serebii": "scrafty",
+    "bulbapedia": "Scrafty"
+  },
+  "formMethods": [
+    {
+      "from": ["scrafty"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "scraftinite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

@@ -1,0 +1,96 @@
+{
+  "id": "glimmora-mega",
+  "nid": "0970-mega",
+  "dexNum": 970,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "rock",
+  "type2": "poison",
+  "color": "blue",
+  "ability1": "adaptability",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 83,
+  "baseAtk": 90,
+  "baseDef": 105,
+  "baseSpAtk": 150,
+  "baseSpDef": 96,
+  "baseSpeed": 101,
+  "height": 280,
+  "weight": 7700,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "glimmora",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "970",
+    "pkApiFormId": "970",
+    "pkApiFormSlug": "glimmora-mega",
+    "smogon": "glimmora-mega",
+    "showdown": "glimmoramega",
+    "showdownName": "Glimmora-Mega",
+    "serebii": "glimmora",
+    "bulbapedia": "Glimmora"
+  },
+  "formMethods": [
+    {
+      "from": ["glimmora"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "glimmoranite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

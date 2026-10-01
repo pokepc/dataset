@@ -1,0 +1,128 @@
+{
+  "id": "venusaur-mega",
+  "nid": "0003-mega",
+  "dexNum": 3,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "grass",
+  "type2": "poison",
+  "color": "green",
+  "ability1": "thickfat",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "xy",
+  "obtainableIn": ["xy-x", "xy-y", "go", "usum-us", "usum-um", "lgpe-lgp", "lgpe-lge", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 80,
+  "baseAtk": 100,
+  "baseDef": 123,
+  "baseSpAtk": 122,
+  "baseSpDef": 120,
+  "baseSpeed": 80,
+  "height": 240,
+  "weight": 15550,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "venusaur",
+  "baseForms": ["venusaur", "venusaur-f"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10033",
+    "pkApiFormId": "10133",
+    "pkApiFormSlug": "venusaur-mega",
+    "smogon": "venusaur-mega",
+    "showdown": "venusaurmega",
+    "showdownName": "Venusaur-Mega",
+    "serebii": "venusaur",
+    "bulbapedia": "Venusaur"
+  },
+  "formMethods": [
+    {
+      "from": ["venusaur", "venusaur-f"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "venusaurite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["venusaur", "venusaur-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "venusaurite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["venusaur", "venusaur-f"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": {
+        "id": "venusaurite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    }
+  ],
+  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"]
+}

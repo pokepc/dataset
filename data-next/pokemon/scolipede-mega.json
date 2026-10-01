@@ -1,0 +1,96 @@
+{
+  "id": "scolipede-mega",
+  "nid": "0545-mega",
+  "dexNum": 545,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "bug",
+  "type2": "poison",
+  "color": "red",
+  "ability1": "shellarmor",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 60,
+  "baseAtk": 140,
+  "baseDef": 149,
+  "baseSpAtk": 75,
+  "baseSpDef": 99,
+  "baseSpeed": 62,
+  "height": 320,
+  "weight": 23050,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "scolipede",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "545",
+    "pkApiFormId": "545",
+    "pkApiFormSlug": "scolipede-mega",
+    "smogon": "scolipede-mega",
+    "showdown": "scolipedemega",
+    "showdownName": "Scolipede-Mega",
+    "serebii": "scolipede",
+    "bulbapedia": "Scolipede"
+  },
+  "formMethods": [
+    {
+      "from": ["scolipede"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "scolipite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

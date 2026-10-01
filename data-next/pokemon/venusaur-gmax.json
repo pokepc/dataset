@@ -1,0 +1,90 @@
+{
+  "id": "venusaur-gmax",
+  "nid": "0003-gmax",
+  "dexNum": 3,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "grass",
+  "type2": "poison",
+  "color": "green",
+  "ability1": "overgrow",
+  "abilityHidden": "chlorophyll",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 80,
+  "baseAtk": 82,
+  "baseDef": 83,
+  "baseSpAtk": 100,
+  "baseSpDef": 100,
+  "baseSpeed": 80,
+  "height": 200,
+  "weight": 0,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "venusaur",
+  "baseForms": ["venusaur", "venusaur-f"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10195",
+    "pkApiFormId": "10364",
+    "pkApiFormSlug": "venusaur-gmax",
+    "smogon": "venusaur-gmax",
+    "showdown": "venusaurgmax",
+    "showdownName": "Venusaur-Gmax",
+    "serebii": "venusaur",
+    "bulbapedia": "Venusaur"
+  },
+  "formMethods": [
+    {
+      "from": ["venusaur", "venusaur-f"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

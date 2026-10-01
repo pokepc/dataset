@@ -1,0 +1,94 @@
+{
+  "id": "calyrex-ice",
+  "nid": "0898-ice",
+  "dexNum": 898,
+  "formId": "ice",
+  "region": "galar",
+  "gen": 8,
+  "type1": "psychic",
+  "type2": "ice",
+  "color": "white",
+  "ability1": "asoneglastrier",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": true,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+  "shinyReleased": false,
+  "shinyLockedIn": ["swsh-sw", "swsh-sh"],
+  "baseHp": 100,
+  "baseAtk": 165,
+  "baseDef": 150,
+  "baseSpAtk": 85,
+  "baseSpDef": 130,
+  "baseSpeed": 50,
+  "height": 240,
+  "weight": 80910,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "calyrex",
+  "baseForms": ["calyrex"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10193",
+    "pkApiFormId": "10362",
+    "pkApiFormSlug": "calyrex-ice",
+    "smogon": "calyrex-ice",
+    "showdown": "calyrexice",
+    "showdownName": "Calyrex-Ice",
+    "serebii": "calyrex",
+    "bulbapedia": "Calyrex"
+  },
+  "formMethods": [
+    {
+      "from": ["calyrex"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "fuse",
+      "item": {
+        "id": "reinsofunity",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "fusion_partner",
+          "pokemon": "glastrier"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "separate",
+          "item": {
+            "id": "reinsofunity",
+            "role": "used",
+            "consumed": false
+          },
+          "conditions": []
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["sv-s", "sv-v"]
+}

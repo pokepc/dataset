@@ -1,0 +1,89 @@
+{
+  "id": "blastoise-gmax",
+  "nid": "0009-gmax",
+  "dexNum": 9,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "water",
+  "color": "blue",
+  "ability1": "torrent",
+  "abilityHidden": "raindish",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 79,
+  "baseAtk": 83,
+  "baseDef": 100,
+  "baseSpAtk": 85,
+  "baseSpDef": 105,
+  "baseSpeed": 78,
+  "height": 160,
+  "weight": 0,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "blastoise",
+  "baseForms": ["blastoise"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10197",
+    "pkApiFormId": "10366",
+    "pkApiFormSlug": "blastoise-gmax",
+    "smogon": "blastoise-gmax",
+    "showdown": "blastoisegmax",
+    "showdownName": "Blastoise-Gmax",
+    "serebii": "blastoise",
+    "bulbapedia": "Blastoise"
+  },
+  "formMethods": [
+    {
+      "from": ["blastoise"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

@@ -1,0 +1,134 @@
+{
+  "id": "palkia-origin",
+  "nid": "0484-origin",
+  "dexNum": 484,
+  "formId": "origin",
+  "region": "hisui",
+  "gen": 8,
+  "type1": "water",
+  "type2": "dragon",
+  "color": "purple",
+  "ability1": "pressure",
+  "abilityHidden": "telepathy",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "la",
+  "obtainableIn": ["go", "la"],
+  "eventOnlyIn": [],
+  "storableIn": ["go", "la", "sv-s", "sv-v"],
+  "shinyReleased": true,
+  "shinyLockedIn": ["la"],
+  "baseHp": 90,
+  "baseAtk": 100,
+  "baseDef": 100,
+  "baseSpAtk": 150,
+  "baseSpDef": 120,
+  "baseSpeed": 120,
+  "height": 630,
+  "weight": 66000,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "palkia",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10246",
+    "pkApiFormId": "10415",
+    "pkApiFormSlug": "palkia-origin",
+    "smogon": "palkia-origin",
+    "showdown": "palkiaorigin",
+    "showdownName": "Palkia-Origin",
+    "serebii": "palkia",
+    "bulbapedia": "Palkia"
+  },
+  "formMethods": [
+    {
+      "from": ["palkia"],
+      "games": ["la"],
+      "trigger": "use_item",
+      "item": {
+        "id": "lustrousglobe",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "use_item",
+          "item": {
+            "id": "lustrousglobe",
+            "role": "used",
+            "consumed": false
+          },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["palkia"],
+      "games": ["sv-s", "sv-v"],
+      "trigger": "equip_item",
+      "item": {
+        "id": "lustrousglobe",
+        "role": "held",
+        "consumed": false
+      },
+      "conditions": [],
+      "revert": [
+        {
+          "trigger": "remove_item",
+          "item": {
+            "id": "lustrousglobe",
+            "role": "held",
+            "consumed": false
+          },
+          "conditions": []
+        },
+        {
+          "games": ["home"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["sv-s", "sv-v"]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "scovillain-mega",
+  "nid": "0952-mega",
+  "dexNum": 952,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "grass",
+  "type2": "fire",
+  "color": "green",
+  "ability1": "spicyspray",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 65,
+  "baseAtk": 138,
+  "baseDef": 85,
+  "baseSpAtk": 138,
+  "baseSpDef": 85,
+  "baseSpeed": 75,
+  "height": 120,
+  "weight": 2200,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "scovillain",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "952",
+    "pkApiFormId": "952",
+    "pkApiFormSlug": "scovillain-mega",
+    "smogon": "scovillain-mega",
+    "showdown": "scovillainmega",
+    "showdownName": "Scovillain-Mega",
+    "serebii": "scovillain",
+    "bulbapedia": "Scovillain"
+  },
+  "formMethods": [
+    {
+      "from": ["scovillain"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "scovillainite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

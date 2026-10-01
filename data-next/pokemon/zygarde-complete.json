@@ -1,0 +1,125 @@
+{
+  "id": "zygarde-complete",
+  "nid": "0718-complete",
+  "dexNum": 718,
+  "formId": "complete",
+  "region": "alola",
+  "gen": 7,
+  "type1": "dragon",
+  "type2": "ground",
+  "color": "black",
+  "ability1": "powerconstruct",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": true,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "sm",
+  "obtainableIn": ["go", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": ["go"],
+  "shinyReleased": true,
+  "shinyLockedIn": ["usum-us", "usum-um", "lza"],
+  "baseHp": 216,
+  "baseAtk": 100,
+  "baseDef": 121,
+  "baseSpAtk": 91,
+  "baseSpDef": 95,
+  "baseSpeed": 85,
+  "height": 450,
+  "weight": 61000,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "zygarde",
+  "baseForms": ["zygarde", "zygarde-10"],
+  "forms": ["zygarde-complete-mega"],
+  "refs": {
+    "pkApiId": "10120",
+    "pkApiFormId": "10222",
+    "pkApiFormSlug": "zygarde-complete",
+    "smogon": "zygarde-complete",
+    "showdown": "zygardecomplete",
+    "showdownName": "Zygarde-Complete",
+    "serebii": "zygarde",
+    "bulbapedia": "Zygarde"
+  },
+  "formMethods": [
+    {
+      "from": ["zygarde-10", "zygarde"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["powerconstruct"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["end_of_turn"]
+        },
+        {
+          "key": "hp",
+          "comparison": "lte",
+          "percent": 50
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        }
+      ],
+      "revert": ["battle_end"]
+    },
+    {
+      "from": ["zygarde-10", "zygarde"],
+      "games": ["lza"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "hp",
+          "comparison": "lte",
+          "percent": 50
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "recall_outside_battle"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

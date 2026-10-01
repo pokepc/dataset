@@ -1,0 +1,90 @@
+{
+  "id": "kingler-gmax",
+  "nid": "0099-gmax",
+  "dexNum": 99,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "water",
+  "color": "red",
+  "ability1": "hypercutter",
+  "ability2": "shellarmor",
+  "abilityHidden": "sheerforce",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 55,
+  "baseAtk": 130,
+  "baseDef": 115,
+  "baseSpAtk": 50,
+  "baseSpDef": 50,
+  "baseSpeed": 75,
+  "height": 1900,
+  "weight": 0,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "kingler",
+  "baseForms": ["kingler"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10203",
+    "pkApiFormId": "10372",
+    "pkApiFormSlug": "kingler-gmax",
+    "smogon": "kingler-gmax",
+    "showdown": "kinglergmax",
+    "showdownName": "Kingler-Gmax",
+    "serebii": "kingler",
+    "bulbapedia": "Kingler"
+  },
+  "formMethods": [
+    {
+      "from": ["kingler"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

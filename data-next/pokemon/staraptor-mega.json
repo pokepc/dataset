@@ -1,0 +1,96 @@
+{
+  "id": "staraptor-mega",
+  "nid": "0398-mega",
+  "dexNum": 398,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "fighting",
+  "type2": "flying",
+  "color": "brown",
+  "ability1": "contrary",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["go", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 85,
+  "baseAtk": 140,
+  "baseDef": 100,
+  "baseSpAtk": 60,
+  "baseSpDef": 90,
+  "baseSpeed": 110,
+  "height": 190,
+  "weight": 5000,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "staraptor",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "398",
+    "pkApiFormId": "398",
+    "pkApiFormSlug": "staraptor-mega",
+    "smogon": "staraptor-mega",
+    "showdown": "staraptormega",
+    "showdownName": "Staraptor-Mega",
+    "serebii": "staraptor",
+    "bulbapedia": "Staraptor"
+  },
+  "formMethods": [
+    {
+      "from": ["staraptor", "staraptor-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "staraptite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

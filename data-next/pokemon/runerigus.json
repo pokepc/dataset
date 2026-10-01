@@ -1,0 +1,95 @@
+{
+  "id": "runerigus",
+  "nid": "0867",
+  "dexNum": 867,
+  "region": "galar",
+  "gen": 8,
+  "type1": "ground",
+  "type2": "ghost",
+  "color": "gray",
+  "ability1": "wanderingspirit",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": ["go", "swsh-sw", "swsh-sh", "home", "lza", "champions"],
+  "shinyReleased": true,
+  "baseHp": 58,
+  "baseAtk": 95,
+  "baseDef": 145,
+  "baseSpAtk": 50,
+  "baseSpDef": 105,
+  "baseSpeed": 30,
+  "height": 160,
+  "weight": 6660,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "867",
+    "pkApiFormId": "867",
+    "pkApiFormSlug": "runerigus",
+    "smogon": "runerigus",
+    "showdown": "runerigus",
+    "showdownName": "Runerigus",
+    "serebii": "runerigus",
+    "bulbapedia": "Runerigus"
+  },
+  "evoMethods": [
+    {
+      "from": ["yamask-galar"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "damage_without_fainting",
+          "amount": 49
+        },
+        {
+          "key": "location",
+          "location": "dusty_bowl_arch"
+        }
+      ]
+    },
+    {
+      "from": ["yamask-galar"],
+      "games": ["lza"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "damage_without_fainting",
+          "amount": 49
+        },
+        {
+          "key": "location",
+          "location": "coulant_waterway_bridge"
+        }
+      ],
+      "activation": "manual"
+    }
+  ],
+  "transferOnlyIn": ["home"]
+}

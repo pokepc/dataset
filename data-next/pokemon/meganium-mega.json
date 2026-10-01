@@ -1,0 +1,96 @@
+{
+  "id": "meganium-mega",
+  "nid": "0154-mega",
+  "dexNum": 154,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "grass",
+  "type2": "fairy",
+  "color": "green",
+  "ability1": "megasol",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 80,
+  "baseAtk": 92,
+  "baseDef": 115,
+  "baseSpAtk": 143,
+  "baseSpDef": 115,
+  "baseSpeed": 80,
+  "height": 240,
+  "weight": 20100,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "meganium",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "154",
+    "pkApiFormId": "154",
+    "pkApiFormSlug": "meganium-mega",
+    "smogon": "meganium-mega",
+    "showdown": "meganiummega",
+    "showdownName": "Meganium-Mega",
+    "serebii": "meganium",
+    "bulbapedia": "Meganium"
+  },
+  "formMethods": [
+    {
+      "from": ["meganium", "meganium-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "meganiumite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

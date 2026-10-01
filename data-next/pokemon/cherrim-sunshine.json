@@ -1,0 +1,419 @@
+{
+  "id": "cherrim-sunshine",
+  "nid": "0421-sunshine",
+  "dexNum": 421,
+  "formId": "sunshine",
+  "region": "sinnoh",
+  "gen": 4,
+  "type1": "grass",
+  "color": "pink",
+  "ability1": "flowergift",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": true,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": true,
+  "debutIn": "dp",
+  "obtainableIn": [
+    "dp-d",
+    "dp-p",
+    "pt",
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "oras-or",
+    "oras-as",
+    "go",
+    "swsh-sw",
+    "swsh-sh",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": ["go"],
+  "shinyReleased": true,
+  "baseHp": 70,
+  "baseAtk": 60,
+  "baseDef": 70,
+  "baseSpAtk": 87,
+  "baseSpDef": 78,
+  "baseSpeed": 85,
+  "height": 50,
+  "weight": 930,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "cherrim",
+  "baseForms": ["cherrim"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "421",
+    "pkApiFormId": "10038",
+    "pkApiFormSlug": "cherrim-sunshine",
+    "smogon": "cherrim-sunshine",
+    "showdown": "cherrimsunshine",
+    "showdownName": "Cherrim-Sunshine",
+    "serebii": "cherrim",
+    "bulbapedia": "Cherrim"
+  },
+  "formMethods": [
+    {
+      "from": ["cherrim"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["flowergift"]
+        },
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "weather_effects_active"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
+        },
+        {
+          "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
+        },
+        {
+          "games": ["la"],
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
+        },
+        "switch_out",
+        "battle_end"
+      ]
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "weather_effects_active"
+        }
+      ],
+      "revert": [
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "time_of_day",
+          "time": "morning"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
+      ],
+      "revert": [
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
+      ],
+      "revert": [
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["cherrim"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "time_of_day",
+          "time": "evening"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
+      ],
+      "revert": [
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
+        },
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
+        },
+        {
+          "games": null,
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "ranch",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "clefable-mega",
+  "nid": "0036-mega",
+  "dexNum": 36,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "fairy",
+  "type2": "flying",
+  "color": "pink",
+  "ability1": "magicbounce",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 95,
+  "baseAtk": 80,
+  "baseDef": 93,
+  "baseSpAtk": 135,
+  "baseSpDef": 110,
+  "baseSpeed": 70,
+  "height": 170,
+  "weight": 4230,
+  "maleRate": 25,
+  "femaleRate": 75,
+  "baseSpecies": "clefable",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "36",
+    "pkApiFormId": "36",
+    "pkApiFormSlug": "clefable-mega",
+    "smogon": "clefable-mega",
+    "showdown": "clefablemega",
+    "showdownName": "Clefable-Mega",
+    "serebii": "clefable",
+    "bulbapedia": "Clefable"
+  },
+  "formMethods": [
+    {
+      "from": ["clefable"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "clefablite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

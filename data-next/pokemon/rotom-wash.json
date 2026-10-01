@@ -1,0 +1,277 @@
+{
+  "id": "rotom-wash",
+  "nid": "0479-wash",
+  "dexNum": 479,
+  "formId": "wash",
+  "region": "sinnoh",
+  "gen": 4,
+  "type1": "electric",
+  "type2": "water",
+  "color": "red",
+  "ability1": "levitate",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": true,
+  "debutIn": "pt",
+  "obtainableIn": [
+    "pt",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "go",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v",
+    "lza"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "ranch",
+    "pt",
+    "hgss-hg",
+    "hgss-ss",
+    "bw-b",
+    "bw-w",
+    "b2w2-b2",
+    "b2w2-w2",
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "bdsp-bd",
+    "bdsp-sp",
+    "la",
+    "sv-s",
+    "sv-v",
+    "lza",
+    "champions"
+  ],
+  "shinyReleased": true,
+  "baseHp": 50,
+  "baseAtk": 65,
+  "baseDef": 107,
+  "baseSpAtk": 105,
+  "baseSpDef": 107,
+  "baseSpeed": 86,
+  "height": 30,
+  "weight": 30,
+  "maleRate": 0,
+  "femaleRate": 0,
+  "baseSpecies": "rotom",
+  "baseForms": ["rotom"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10009",
+    "pkApiFormId": "10059",
+    "pkApiFormSlug": "rotom-wash",
+    "smogon": "rotom-wash",
+    "showdown": "rotomwash",
+    "showdownName": "Rotom-Wash",
+    "serebii": "rotom",
+    "bulbapedia": "Rotom"
+  },
+  "formMethods": [
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["pt", "bdsp-bd", "bdsp-sp"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "team_galactic_eterna_building_rotom_room"
+        },
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["hgss-hg", "hgss-ss"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "silph_co_rotom_room"
+        },
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "shopping_mall_nine_basement"
+        },
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["xy-x", "xy-y"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "sycamore_pokemon_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["oras-or", "oras-as"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "professor_birchs_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "professor_kukuis_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["la"],
+      "trigger": "interact",
+      "conditions": [
+        {
+          "key": "location",
+          "location": "jubilife_village_player_quarters"
+        },
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
+      "trigger": "use_item",
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["bdsp-bd", "bdsp-sp"],
+      "trigger": "use_item",
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    },
+    {
+      "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom"],
+      "games": ["lza"],
+      "trigger": "use_item",
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "washing_machine"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": [
+    "ranch",
+    "hgss-hg",
+    "hgss-ss",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "sm-s",
+    "sm-m",
+    "home"
+  ]
+}

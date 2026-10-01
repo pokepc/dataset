@@ -1,0 +1,91 @@
+{
+  "id": "corviknight-gmax",
+  "nid": "0823-gmax",
+  "dexNum": 823,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "flying",
+  "type2": "steel",
+  "color": "purple",
+  "ability1": "pressure",
+  "ability2": "unnerve",
+  "abilityHidden": "mirrorarmor",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 98,
+  "baseAtk": 87,
+  "baseDef": 105,
+  "baseSpAtk": 53,
+  "baseSpDef": 85,
+  "baseSpeed": 67,
+  "height": 1400,
+  "weight": 0,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "corviknight",
+  "baseForms": ["corviknight"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10212",
+    "pkApiFormId": "10381",
+    "pkApiFormSlug": "corviknight-gmax",
+    "smogon": "corviknight-gmax",
+    "showdown": "corviknightgmax",
+    "showdownName": "Corviknight-Gmax",
+    "serebii": "corviknight",
+    "bulbapedia": "Corviknight"
+  },
+  "formMethods": [
+    {
+      "from": ["corviknight"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

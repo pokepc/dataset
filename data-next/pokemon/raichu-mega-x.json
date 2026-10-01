@@ -1,0 +1,95 @@
+{
+  "id": "raichu-mega-x",
+  "nid": "0026-mega-x",
+  "dexNum": 26,
+  "formId": "mega-x",
+  "region": "kalos",
+  "gen": 9,
+  "type1": "electric",
+  "color": "yellow",
+  "ability1": "electricsurge",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "lza",
+  "obtainableIn": ["go", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 60,
+  "baseAtk": 135,
+  "baseDef": 95,
+  "baseSpAtk": 90,
+  "baseSpDef": 95,
+  "baseSpeed": 110,
+  "height": 120,
+  "weight": 3800,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "raichu",
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "26",
+    "pkApiFormId": "26",
+    "pkApiFormSlug": "raichu-mega-x",
+    "smogon": "raichu-mega-x",
+    "showdown": "raichumegax",
+    "showdownName": "Raichu-Mega-X",
+    "serebii": "raichu",
+    "bulbapedia": "Raichu"
+  },
+  "formMethods": [
+    {
+      "from": ["raichu", "raichu-f"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "raichunitex",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

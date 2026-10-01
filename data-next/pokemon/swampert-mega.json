@@ -1,0 +1,112 @@
+{
+  "id": "swampert-mega",
+  "nid": "0260-mega",
+  "dexNum": 260,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "water",
+  "type2": "ground",
+  "color": "blue",
+  "ability1": "swiftswim",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "oras",
+  "obtainableIn": ["oras-or", "oras-as", "go", "usum-us", "usum-um", "lza"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 100,
+  "baseAtk": 150,
+  "baseDef": 110,
+  "baseSpAtk": 95,
+  "baseSpDef": 110,
+  "baseSpeed": 70,
+  "height": 190,
+  "weight": 10200,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "swampert",
+  "baseForms": ["swampert"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10064",
+    "pkApiFormId": "10166",
+    "pkApiFormSlug": "swampert-mega",
+    "smogon": "swampert-mega",
+    "showdown": "swampertmega",
+    "showdownName": "Swampert-Mega",
+    "serebii": "swampert",
+    "bulbapedia": "Swampert"
+  },
+  "formMethods": [
+    {
+      "from": ["swampert"],
+      "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "swampertite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["swampert"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "swampertite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["sm-s", "sm-m"]
+}

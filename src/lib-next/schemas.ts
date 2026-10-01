@@ -420,6 +420,7 @@ export const classicBoxPresetBoxSchema = z.strictObject({
 
 export const classicBoxPresetSchema = z.strictObject({
   id: slugSchema,
+  fullId: slugSchema.optional(), // `<set>-<id>`
   legacyId: slugSchema.optional(),
   version: z.number().int().min(0),
   gameSet: slugSchema.nullable(),

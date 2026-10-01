@@ -1,0 +1,89 @@
+{
+  "id": "rillaboom-gmax",
+  "nid": "0812-gmax",
+  "dexNum": 812,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "grass",
+  "color": "green",
+  "ability1": "overgrow",
+  "abilityHidden": "grassysurge",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 100,
+  "baseAtk": 125,
+  "baseDef": 90,
+  "baseSpAtk": 60,
+  "baseSpDef": 70,
+  "baseSpeed": 85,
+  "height": 300,
+  "weight": 0,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseSpecies": "rillaboom",
+  "baseForms": ["rillaboom"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10209",
+    "pkApiFormId": "10378",
+    "pkApiFormSlug": "rillaboom-gmax",
+    "smogon": "rillaboom-gmax",
+    "showdown": "rillaboomgmax",
+    "showdownName": "Rillaboom-Gmax",
+    "serebii": "rillaboom",
+    "bulbapedia": "Rillaboom"
+  },
+  "formMethods": [
+    {
+      "from": ["rillaboom"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

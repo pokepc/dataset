@@ -1,0 +1,128 @@
+{
+  "id": "sylveon",
+  "nid": "0700",
+  "dexNum": 700,
+  "region": "kalos",
+  "gen": 6,
+  "type1": "fairy",
+  "color": "pink",
+  "ability1": "cutecharm",
+  "abilityHidden": "pixilate",
+  "isPrerelease": false,
+  "isDefault": true,
+  "isForm": false,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": false,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": true,
+  "canBeAlpha": true,
+  "debutIn": "xy",
+  "obtainableIn": [
+    "xy-x",
+    "xy-y",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "la",
+    "sv-s",
+    "sv-v",
+    "lza"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": [
+    "xy-x",
+    "xy-y",
+    "bank",
+    "oras-or",
+    "oras-as",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "swsh-sw",
+    "swsh-sh",
+    "home",
+    "la",
+    "sv-s",
+    "sv-v",
+    "lza",
+    "champions"
+  ],
+  "shinyReleased": true,
+  "baseHp": 95,
+  "baseAtk": 65,
+  "baseDef": 65,
+  "baseSpAtk": 110,
+  "baseSpDef": 130,
+  "baseSpeed": 60,
+  "height": 100,
+  "weight": 2350,
+  "maleRate": 87.5,
+  "femaleRate": 12.5,
+  "baseForms": [],
+  "forms": [],
+  "refs": {
+    "pkApiId": "700",
+    "pkApiFormId": "700",
+    "pkApiFormSlug": "sylveon",
+    "smogon": "sylveon",
+    "showdown": "sylveon",
+    "showdownName": "Sylveon",
+    "serebii": "sylveon",
+    "bulbapedia": "Sylveon"
+  },
+  "evoMethods": [
+    {
+      "from": ["eevee"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "level_up",
+      "conditions": [
+        {
+          "key": "affection",
+          "minLevel": 2
+        },
+        {
+          "key": "known_move_type",
+          "type": "fairy"
+        }
+      ]
+    },
+    {
+      "from": ["eevee"],
+      "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v", "lza"],
+      "trigger": "level_up",
+      "conditions": [
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "known_move_type",
+          "type": "fairy"
+        }
+      ]
+    }
+  ],
+  "transferOnlyIn": ["bank", "home"]
+}

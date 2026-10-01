@@ -1,0 +1,90 @@
+{
+  "id": "butterfree-gmax",
+  "nid": "0012-gmax",
+  "dexNum": 12,
+  "formId": "gmax",
+  "region": "galar",
+  "gen": 8,
+  "type1": "bug",
+  "type2": "flying",
+  "color": "white",
+  "ability1": "compoundeyes",
+  "abilityHidden": "tintedlens",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": false,
+  "isPrimal": false,
+  "isGmax": true,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "swsh",
+  "obtainableIn": ["go", "swsh-sw", "swsh-sh"],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 60,
+  "baseAtk": 45,
+  "baseDef": 50,
+  "baseSpAtk": 90,
+  "baseSpDef": 80,
+  "baseSpeed": 70,
+  "height": 1700,
+  "weight": 0,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "butterfree",
+  "baseForms": ["butterfree", "butterfree-f"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10198",
+    "pkApiFormId": "10367",
+    "pkApiFormSlug": "butterfree-gmax",
+    "smogon": "butterfree-gmax",
+    "showdown": "butterfreegmax",
+    "showdownName": "Butterfree-Gmax",
+    "serebii": "butterfree",
+    "bulbapedia": "Butterfree"
+  },
+  "formMethods": [
+    {
+      "from": ["butterfree", "butterfree-f"],
+      "games": ["swsh-sw", "swsh-sh"],
+      "trigger": "special",
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
+      ],
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
+    }
+  ],
+  "transferOnlyIn": []
+}

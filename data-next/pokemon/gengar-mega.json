@@ -1,0 +1,139 @@
+{
+  "id": "gengar-mega",
+  "nid": "0094-mega",
+  "dexNum": 94,
+  "formId": "mega",
+  "region": "kalos",
+  "gen": 6,
+  "type1": "ghost",
+  "type2": "poison",
+  "color": "purple",
+  "ability1": "shadowtag",
+  "isPrerelease": false,
+  "isDefault": false,
+  "isForm": true,
+  "isLegendary": false,
+  "isMythical": false,
+  "isBaby": false,
+  "isUltraBeast": false,
+  "isParadox": false,
+  "paradoxSpecies": [],
+  "isConvergent": false,
+  "convergentSpecies": [],
+  "isCosmeticForm": false,
+  "isFemaleForm": false,
+  "hasGenderDifferences": false,
+  "isBattleOnlyForm": true,
+  "isFusion": false,
+  "isMega": true,
+  "isPrimal": false,
+  "isGmax": false,
+  "isRegional": false,
+  "canGmax": false,
+  "canDynamax": false,
+  "canBeAlpha": false,
+  "debutIn": "xy",
+  "obtainableIn": [
+    "xy-x",
+    "xy-y",
+    "go",
+    "sm-s",
+    "sm-m",
+    "usum-us",
+    "usum-um",
+    "lgpe-lgp",
+    "lgpe-lge",
+    "lza"
+  ],
+  "eventOnlyIn": [],
+  "storableIn": [],
+  "shinyReleased": true,
+  "baseHp": 60,
+  "baseAtk": 65,
+  "baseDef": 80,
+  "baseSpAtk": 170,
+  "baseSpDef": 95,
+  "baseSpeed": 130,
+  "height": 140,
+  "weight": 4050,
+  "maleRate": 50,
+  "femaleRate": 50,
+  "baseSpecies": "gengar",
+  "baseForms": ["gengar"],
+  "forms": [],
+  "refs": {
+    "pkApiId": "10038",
+    "pkApiFormId": "10138",
+    "pkApiFormSlug": "gengar-mega",
+    "smogon": "gengar-mega",
+    "showdown": "gengarmega",
+    "showdownName": "Gengar-Mega",
+    "serebii": "gengar",
+    "bulbapedia": "Gengar"
+  },
+  "formMethods": [
+    {
+      "from": ["gengar"],
+      "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
+      "trigger": "special",
+      "item": {
+        "id": "gengarite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    },
+    {
+      "from": ["gengar"],
+      "games": ["lza"],
+      "trigger": "special",
+      "item": {
+        "id": "gengarite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
+      ],
+      "revert": [
+        {
+          "trigger": "automatic",
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "from": ["gengar"],
+      "games": ["lgpe-lgp", "lgpe-lge"],
+      "trigger": "special",
+      "item": {
+        "id": "gengarite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
+      "revert": ["battle_end", "faint"]
+    }
+  ],
+  "transferOnlyIn": ["oras-or", "oras-as"]
+}

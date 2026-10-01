@@ -46,7 +46,7 @@ import { DEFAULT_POKEAPI_BASE_URL, DEFAULT_POKEAPI_CACHE_DIR, fetchPokeApiJson }
  */
 const POKEMON_INDEX_PATH = join(process.cwd(), 'data/indices/pokemon.json')
 const POKEMON_DATA_ROOT = join(process.cwd(), 'data/pokemon')
-const DEFAULT_OUTPUT_ROOT = join(process.cwd(), 'data-next/pokemon-texts')
+const DEFAULT_OUTPUT_ROOT = join(process.cwd(), 'data-next/i18n')
 const DEFAULT_MODEL = 'gpt-5.4-mini'
 const DEFAULT_MAX_LENGTH_CHARS = 512
 const MIN_MAX_LENGTH_CHARS = 50
@@ -430,7 +430,7 @@ function helpText(): string {
     '  --offset=N             Start at this local Pokemon index after optional --id filtering.',
     '  --limit=N              Process at most N Pokemon.',
     '  --id=a,b               Process specific local Pokemon IDs. Can be repeated.',
-    '  --output-dir=PATH      Default: data-next/pokemon-texts.',
+    '  --output-dir=PATH      Locale root. Default: data-next/i18n.',
     '  --backend=auto|ai-sdk|openai-sdk',
     `  --concurrency=N        Number of Pokemon to process in parallel. Default: ${DEFAULT_CONCURRENCY}.`,
     `  --max-length=N         Max generated description characters. Default: ${DEFAULT_MAX_LENGTH_CHARS}; minimum: ${MIN_MAX_LENGTH_CHARS}.`,
@@ -492,7 +492,7 @@ function outputPathForPokemon(options: CliOptions, pokemonId: string): string {
 }
 
 function outputDirectoryForLanguage(options: CliOptions): string {
-  return join(options.outputRoot, outputLocaleForLanguage(options.lang))
+  return join(options.outputRoot, outputLocaleForLanguage(options.lang), 'pokemon-prose')
 }
 
 function outputLocaleForLanguage(lang: LangInfo): string {
