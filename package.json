@@ -30,7 +30,8 @@
     }
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "tag": "latest-v7"
   },
   "scripts": {
     "dev": "concurrently --kill-others --names editor,openapi \"pnpm dev:editor\" \"pnpm dev:openapi\"",
