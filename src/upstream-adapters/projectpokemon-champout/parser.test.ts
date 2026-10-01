@@ -1,8 +1,7 @@
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
+import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'
 import { tmpdir } from 'node:os'
 import { dirname, join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { gameLocales } from '../../lib-next/languages'
 import { I18N_CODE } from './mappings'
 import {
   buildData,
@@ -10,7 +9,6 @@ import {
   collectBuildWarnings,
   createLabelMap,
   DEFAULT_DATASET_ROOT,
-  I18N_FILE_NAMES,
   mapItemCategoryCodes,
   mapMoveClassificationCodes,
   mapMoveTargetCode,
@@ -19,7 +17,6 @@ import {
   slugify,
   slugifyLocalized,
   uniquifySlugLoc,
-  writeBuiltData,
 } from './parser'
 import type { TextEntry } from './parser'
 import {
@@ -446,41 +443,6 @@ describe('data generation', () => {
     expect(data.i18n.esp.items.find((record) => record.id === 'cheriberry')).toMatchObject({
       slug: 'cheri-berry',
     })
-  })
-
-  it('writes every game locale for every i18n file', () => {
-    const outputRoot = mkdtempSync(join(tmpdir(), 'champscript-output-'))
-
-    try {
-      writeBuiltData(buildData(DEFAULT_DATASET_ROOT), outputRoot)
-      const expectedLocales = gameLocales.map((locale) => locale.toLowerCase())
-
-      for (const locale of expectedLocales) {
-        for (const fileName of I18N_FILE_NAMES) {
-          expect(existsSync(join(outputRoot, 'i18n', locale, fileName))).toBe(true)
-        }
-      }
-
-      for (const fileName of I18N_FILE_NAMES) {
-        expect(readFileSync(join(outputRoot, 'i18n', 'pt-br', fileName), 'utf8')).toBe(
-          readFileSync(join(outputRoot, 'i18n', 'eng', fileName), 'utf8'),
-        )
-      }
-
-      expect(existsSync(join(outputRoot, 'pokemon.json'))).toBe(true)
-      expect(existsSync(join(outputRoot, 'pokemon-moves.json'))).toBe(true)
-      expect(existsSync(join(outputRoot, 'pokemon-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'moves-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'abilities-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'items-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'moves-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'abilities-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'items-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'pokemon-map.json'))).toBe(false)
-      expect(existsSync(join(outputRoot, 'i18n', 'eng', 'pokemon-moves.json'))).toBe(false)
-    } finally {
-      rmSync(outputRoot, { recursive: true, force: true })
-    }
   })
 
   it('fails when required item names are missing', () => {

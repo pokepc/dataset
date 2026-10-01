@@ -135,9 +135,6 @@ node -e 'const d=require("./data/pokedexes/pokopia-basin.json");const n=new Set(
 Cross-check the entry count and the highest local number against the wiki page's own prose, which
 often states the total.
 
-`pnpm build` also runs `build:next`, which fetches live from PokeAPI. That is unrelated to dex work
-and can fail on upstream data problems.
-
 ## Gotchas
 
 - `entries` is `.strict()` — an unknown key on an entry is a hard validation failure.

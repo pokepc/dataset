@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 05:07'
+updated_date: '2026-10-01 05:11'
 ---
 Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
 and its consequences are in
@@ -251,9 +251,10 @@ base ids are appended by `pnpm codes:sync`. Mods never introduce ids, so they ne
 ## Champions
 
 Champions is the first and, in 8.0.0, only set with mods. Its upstream adapter (Project Pokémon
-`champout` dump, enriched with PokéAPI ids) is run manually by a maintainer and rewrites
-`mods/champions/` plus the base facts it owns; the maintainer reviews the diff before committing. It
-is not part of `pnpm build`. The conversion (`src/upstream-adapters/projectpokemon-champout/to-v8.ts`)
+`champout` dump, enriched with PokéAPI ids) runs as `pnpm champions:update`, manually: it rewrites
+`mods/champions/` plus the base facts it owns, then checks that the merged set reproduces the dump;
+the maintainer reviews the diff before committing. It is not part of `pnpm build`. Workflow:
+`src/upstream-adapters/projectpokemon-champout/README.md`. The conversion (`src/upstream-adapters/projectpokemon-champout/to-v8.ts`)
 follows these rules:
 
 - **Roster**: every Pokémon, move, ability and item in the dump. Battle states are not listed (all

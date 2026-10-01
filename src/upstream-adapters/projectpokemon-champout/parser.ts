@@ -1,5 +1,5 @@
-import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
-import { dirname, join } from 'node:path'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import { slugify as transliterateSlugify } from 'transliteration'
 import {
   battleStates,
@@ -9,7 +9,6 @@ import {
   type MoveTarget,
   type PokemonType,
 } from '../../lib-next/enums'
-import { DEFAULT_GAME_LOCALE, type GameLocale } from '../../lib-next/languages'
 import type {
   AbilityRecord,
   BattleStateRecord,
@@ -43,23 +42,11 @@ import {
   MOVE_CLASSIFICATION_BY_CODE,
   MOVE_TARGET_BY_CODE,
   POKEMON_TYPE_BY_CODE,
-  langMap,
 } from './mappings'
 
 export const DEFAULT_LANGUAGE: I18nCode = 'usa'
 export const DEFAULT_DATASET_ROOT = join(process.cwd(), 'src/upstreams/projectpokemon-champout')
 export const DEFAULT_LOCAL_DATA_ROOT = join(process.cwd(), 'data')
-export const DEFAULT_OUTPUT_ROOT = join(process.cwd(), 'data-next/champions')
-export const I18N_FILE_NAMES = [
-  'moves.json',
-  'abilities.json',
-  'items.json',
-  'battle-states.json',
-  'pokemon.json',
-] as const
-
-const missingLocales: GameLocale[] = ['PT-BR']
-
 export type TextEntry = {
   Index: number
   LabelName: string
@@ -1396,29 +1383,6 @@ function localMoveIdsForLearnRecord(
   return Array.from(new Set(localMoveIds)).sort(compareStrings)
 }
 
-export function writeBuiltData(data: BuiltData, outputRoot = DEFAULT_OUTPUT_ROOT): void {
-  writeJsonFile(join(outputRoot, 'moves.json'), data.moves)
-  writeJsonFile(join(outputRoot, 'abilities.json'), data.abilities)
-  writeJsonFile(join(outputRoot, 'items.json'), data.items)
-  writeJsonFile(join(outputRoot, 'battle-states.json'), data.battleStates)
-  writeJsonFile(join(outputRoot, 'pokemon.json'), data.pokemon)
-  writeJsonFile(join(outputRoot, 'pokemon-moves.json'), data.pokemonMoves)
-
-  for (const lang of I18N_CODE) {
-    const normalizedLang = langMap[lang].gameLocale.toLowerCase()
-    const langRoot = join(outputRoot, 'i18n', normalizedLang)
-    const langData = data.i18n[lang]
-
-    writeJsonFile(join(langRoot, 'moves.json'), langData.moves)
-    writeJsonFile(join(langRoot, 'abilities.json'), langData.abilities)
-    writeJsonFile(join(langRoot, 'items.json'), langData.items)
-    writeJsonFile(join(langRoot, 'battle-states.json'), langData.battleStates)
-    writeJsonFile(join(langRoot, 'pokemon.json'), langData.pokemon)
-  }
-
-  copyMissingLocales(outputRoot)
-}
-
 export function collectBuildWarnings(datasetRoot = DEFAULT_DATASET_ROOT): BuildWarning[] {
   const moveMasterLabels = new Set(readMoveMasterRecords(datasetRoot).map((record) => record.msLbl))
 
@@ -1715,25 +1679,6 @@ function requiredNumber(value: number | undefined, source: string): number {
   }
 
   return value
-}
-
-function writeJsonFile(filePath: string, data: unknown): void {
-  mkdirSync(dirname(filePath), { recursive: true })
-  writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`)
-}
-
-function copyMissingLocales(outputRoot: string): void {
-  const sourceRoot = join(outputRoot, 'i18n', DEFAULT_GAME_LOCALE.toLowerCase())
-
-  for (const locale of missingLocales) {
-    const targetRoot = join(outputRoot, 'i18n', locale.toLowerCase())
-
-    mkdirSync(targetRoot, { recursive: true })
-
-    for (const fileName of I18N_FILE_NAMES) {
-      copyFileSync(join(sourceRoot, fileName), join(targetRoot, fileName))
-    }
-  }
 }
 
 function readJsonRecordArray(filePath: string, inputPath?: string): SourceRecord[] {

@@ -1,5 +1,3 @@
-import { readFileSync, writeFileSync } from 'node:fs'
-import { join } from 'node:path'
 import { champoutPokeApiResourceNameAliases } from '../projectpokemon-champout/fixtures/pokeapi'
 import {
   DEFAULT_POKEAPI_BASE_URL,
@@ -10,15 +8,11 @@ import {
   type PokeApiResourceKind,
 } from './client'
 
-export const DEFAULT_CHAMPIONS_DATA_ROOT = join(process.cwd(), 'data-next/champions')
-
 export type EnrichChampionsDataOptions = {
-  championsDataRoot?: string
   pokeApiBaseUrl?: string
 }
 
 export type EnrichedChampionsDomainResult = {
-  filePath: string
   matched: number
   missing: MissingPokeApiResource[]
 }
@@ -37,66 +31,47 @@ export type MissingPokeApiResource = {
   championsIdMatchedResource?: PokeApiResourceIndexEntry
 }
 
-type ChampionsDomain = {
-  key: keyof EnrichChampionsDataResult
-  kind: PokeApiResourceKind
-  fileName: string
+/** A Champions record that links to a PokéAPI resource. */
+export type ChampionsLinkedRecord = {
+  id: string
+  championsId: string
+  slug: string
+  name: string
+  pokeApiId?: number | null
 }
 
-type JsonRecord = Record<string, unknown>
-
-type PreparedChampionsDomain = EnrichedChampionsDomainResult & {
-  records: JsonRecord[]
-}
+export type ChampionsLinkedRecords<T extends ChampionsLinkedRecord = ChampionsLinkedRecord> =
+  Record<keyof EnrichChampionsDataResult, T[]>
 
 const championsDomains = [
-  { key: 'abilities', kind: 'ability', fileName: 'abilities.json' },
-  { key: 'items', kind: 'item', fileName: 'items.json' },
-  { key: 'moves', kind: 'move', fileName: 'moves.json' },
-] as const satisfies readonly ChampionsDomain[]
+  { key: 'abilities', kind: 'ability' },
+  { key: 'items', kind: 'item' },
+  { key: 'moves', kind: 'move' },
+] as const satisfies readonly { key: keyof EnrichChampionsDataResult; kind: PokeApiResourceKind }[]
 
-export async function enrichChampionsDataWithPokeApiIds(
+/**
+ * Sets `pokeApiId` on Champions abilities, items and moves from the PokéAPI resource indexes:
+ * the matching id, or null when PokéAPI has no such resource. Returns enriched copies.
+ */
+export async function enrichChampionsRecordsWithPokeApiIds<R extends ChampionsLinkedRecords>(
+  records: R,
   options: EnrichChampionsDataOptions = {},
-): Promise<EnrichChampionsDataResult> {
-  const championsDataRoot = options.championsDataRoot ?? DEFAULT_CHAMPIONS_DATA_ROOT
-  const pokeApiBaseUrl = options.pokeApiBaseUrl ?? DEFAULT_POKEAPI_BASE_URL
-  const resourceIndexes = await fetchPokeApiResourceIndexes(pokeApiBaseUrl)
-  const preparedDomains = championsDomains.map((domain) =>
-    prepareChampionsDomainWithPokeApiIds(
-      domain.kind,
-      join(championsDataRoot, domain.fileName),
-      resourceIndexes[domain.kind],
-    ),
+): Promise<{ records: R; result: EnrichChampionsDataResult }> {
+  const resourceIndexes = await fetchPokeApiResourceIndexes(
+    options.pokeApiBaseUrl ?? DEFAULT_POKEAPI_BASE_URL,
   )
-  const result = Object.fromEntries(
-    championsDomains.map((domain, index) => {
-      const preparedDomain = preparedDomains[index]
+  const enriched = { ...records }
+  const result = {} as EnrichChampionsDataResult
+  for (const domain of championsDomains) {
+    const prepared = enrichDomain(domain.kind, records[domain.key], resourceIndexes[domain.kind])
+    enriched[domain.key] = prepared.records as R[typeof domain.key]
+    result[domain.key] = { matched: prepared.matched, missing: prepared.missing }
+  }
 
-      return [
-        domain.key,
-        {
-          filePath: preparedDomain.filePath,
-          matched: preparedDomain.matched,
-          missing: preparedDomain.missing,
-        },
-      ]
-    }),
-  ) as EnrichChampionsDataResult
-
-  const missingCount = Object.values(result).reduce(
-    (count, domainResult) => count + domainResult.missing.length,
-    0,
-  )
-
-  if (missingCount > 0) {
+  if (Object.values(result).some((domainResult) => domainResult.missing.length > 0)) {
     console.warn(formatMissingPokeApiResourcesWarning(result))
   }
-
-  for (const preparedDomain of preparedDomains) {
-    writeJsonFile(preparedDomain.filePath, preparedDomain.records)
-  }
-
-  return result
+  return { records: enriched, result }
 }
 
 export function formatEnrichChampionsDataSummary(result: EnrichChampionsDataResult): string {
@@ -107,33 +82,22 @@ export function formatEnrichChampionsDataSummary(result: EnrichChampionsDataResu
   ].join(', ')
 }
 
-function prepareChampionsDomainWithPokeApiIds(
+function enrichDomain<T extends ChampionsLinkedRecord>(
   kind: PokeApiResourceKind,
-  filePath: string,
+  records: readonly T[],
   resourceIndex: PokeApiResourceIndex,
-): PreparedChampionsDomain {
-  const records = readJsonRecordArray(filePath)
+): EnrichedChampionsDomainResult & { records: T[] } {
   const missing: MissingPokeApiResource[] = []
   let matched = 0
 
-  const enrichedRecords = records.map((record, index) => {
-    const id = requiredString(record, 'id', filePath, index)
-    const championsId = requiredString(record, 'championsId', filePath, index)
-    const slug = requiredString(record, 'slug', filePath, index)
-    const name = requiredString(record, 'name', filePath, index)
+  const enrichedRecords = records.map((record) => {
+    const { id, championsId, slug, name } = record
     const triedIdCandidates = pokeApiIdCandidates(kind, id)
     const championsIdMatchedResource = resourceIndex.byId.get(championsId)
     const pokeApiId = findPokeApiId(resourceIndex, championsId, triedIdCandidates)
 
     if (pokeApiId === undefined) {
-      missing.push({
-        id,
-        championsId,
-        slug,
-        name,
-        triedIdCandidates,
-        championsIdMatchedResource,
-      })
+      missing.push({ id, championsId, slug, name, triedIdCandidates, championsIdMatchedResource })
     } else {
       matched += 1
     }
@@ -141,7 +105,7 @@ function prepareChampionsDomainWithPokeApiIds(
     return withPokeApiId(record, pokeApiId)
   })
 
-  return { filePath, matched, missing, records: enrichedRecords }
+  return { matched, missing, records: enrichedRecords }
 }
 
 function findPokeApiId(
@@ -185,7 +149,10 @@ function pokeApiIdCandidates(kind: PokeApiResourceKind, id: string): string[] {
   return uniqueStrings([id, ...(champoutPokeApiResourceNameAliases[kind]?.[id] ?? [])])
 }
 
-function withPokeApiId(record: JsonRecord, pokeApiId: number | undefined): JsonRecord {
+function withPokeApiId<T extends ChampionsLinkedRecord>(
+  record: T,
+  pokeApiId: number | undefined,
+): T {
   const { id, championsId, slug, ...rest } = record
   delete rest.pokeApiId
 
@@ -193,37 +160,7 @@ function withPokeApiId(record: JsonRecord, pokeApiId: number | undefined): JsonR
   // the data instead of looking like a field nobody got round to filling in.
   // Anything hand-written here is replaced: an id PokeAPI has not published is
   // a guess, and a guess that outlives a build is worse than a null.
-  return { id, championsId, pokeApiId: pokeApiId ?? null, slug, ...rest }
-}
-
-function readJsonRecordArray(filePath: string): JsonRecord[] {
-  const json: unknown = JSON.parse(readFileSync(filePath, 'utf8'))
-
-  if (!Array.isArray(json)) {
-    throw new Error(`Expected ${filePath} to contain an array`)
-  }
-
-  return json.map((record, index) => {
-    if (typeof record !== 'object' || record === null || Array.isArray(record)) {
-      throw new Error(`Expected ${filePath}[${index}] to contain an object`)
-    }
-
-    return record as JsonRecord
-  })
-}
-
-function writeJsonFile(filePath: string, data: unknown): void {
-  writeFileSync(filePath, `${JSON.stringify(data, null, 2)}\n`)
-}
-
-function requiredString(record: JsonRecord, key: string, filePath: string, index: number): string {
-  const value = record[key]
-
-  if (typeof value !== 'string' || value.length === 0) {
-    throw new Error(`Expected ${filePath}[${index}].${key} to be a non-empty string`)
-  }
-
-  return value
+  return { id, championsId, pokeApiId: pokeApiId ?? null, slug, ...rest } as unknown as T
 }
 
 function uniqueStrings(values: readonly unknown[]): string[] {

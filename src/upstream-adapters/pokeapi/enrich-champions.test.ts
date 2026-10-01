@@ -1,10 +1,7 @@
-import { mkdtempSync, readFileSync, writeFileSync } from 'node:fs'
 import { createServer, type Server } from 'node:http'
-import { tmpdir } from 'node:os'
-import { join } from 'node:path'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { pokeApiResourceKinds, type PokeApiResourceKind } from './client'
-import { enrichChampionsDataWithPokeApiIds } from './enrich-champions'
+import { enrichChampionsRecordsWithPokeApiIds } from './enrich-champions'
 
 type StubResource = {
   id: number
@@ -34,7 +31,7 @@ const overgrow: ChampionsRecord = {
   name: 'Overgrow',
 }
 
-describe('enrichChampionsDataWithPokeApiIds', () => {
+describe('enrichChampionsRecordsWithPokeApiIds', () => {
   beforeEach(() => {
     // Otherwise the stub server's responses land in the real PokeAPI cache.
     vi.stubEnv('POKEAPI_CACHE', '0')
@@ -87,14 +84,14 @@ describe('enrichChampionsDataWithPokeApiIds', () => {
   })
 
   it('is idempotent across runs', async () => {
-    const championsDataRoot = writeChampionsData({ abilities: [eelevate, overgrow] })
     const upstream: StubResources = { ability: [{ id: 65, name: 'overgrow' }] }
+    const first = await enrichStubbedChampionsData({ abilities: [eelevate, overgrow], upstream })
+    const second = await enrichStubbedChampionsData({
+      abilities: Object.values(first.abilities),
+      upstream,
+    })
 
-    await enrichStubbedChampionsData({ championsDataRoot, upstream })
-    const firstRun = readFileSync(join(championsDataRoot, 'abilities.json'), 'utf8')
-    await enrichStubbedChampionsData({ championsDataRoot, upstream })
-
-    expect(readFileSync(join(championsDataRoot, 'abilities.json'), 'utf8')).toBe(firstRun)
+    expect(second.abilities).toEqual(first.abilities)
   })
 
   it('keeps pokeApiId in the same position whether it is null or a number', async () => {
@@ -114,39 +111,21 @@ describe('enrichChampionsDataWithPokeApiIds', () => {
   })
 })
 
-function writeChampionsData(records: { abilities?: ChampionsRecord[] }): string {
-  const championsDataRoot = mkdtempSync(join(tmpdir(), 'champions-enrich-'))
-
-  // All three domains are read on every run, so all three files must exist.
-  writeFileSync(join(championsDataRoot, 'abilities.json'), JSON.stringify(records.abilities ?? []))
-  writeFileSync(join(championsDataRoot, 'items.json'), '[]')
-  writeFileSync(join(championsDataRoot, 'moves.json'), '[]')
-
-  return championsDataRoot
-}
-
 async function enrichStubbedChampionsData(options: {
-  abilities?: ChampionsRecord[]
-  championsDataRoot?: string
+  abilities: ChampionsRecord[]
   upstream: StubResources
 }) {
-  const championsDataRoot =
-    options.championsDataRoot ?? writeChampionsData({ abilities: options.abilities })
   const { baseUrl, server } = await startStubPokeApiServer(options.upstream)
 
   try {
-    const result = await enrichChampionsDataWithPokeApiIds({
-      championsDataRoot,
-      pokeApiBaseUrl: baseUrl,
-    })
-    const written = JSON.parse(
-      readFileSync(join(championsDataRoot, 'abilities.json'), 'utf8'),
-    ) as ChampionsRecord[]
+    const { records, result } = await enrichChampionsRecordsWithPokeApiIds(
+      { abilities: options.abilities, items: [], moves: [] },
+      { pokeApiBaseUrl: baseUrl },
+    )
 
     return {
       result,
-      championsDataRoot,
-      abilities: Object.fromEntries(written.map((record) => [record.id, record])),
+      abilities: Object.fromEntries(records.abilities.map((record) => [record.id, record])),
     }
   } finally {
     await closeServer(server)
