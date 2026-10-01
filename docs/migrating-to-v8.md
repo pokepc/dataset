@@ -5,6 +5,9 @@ This guide is for consumers of `@pokepc/dataset` on npm and of the static JSON A
 has a before/after mapping, and the [agent playbook](#agent-playbook) lists exact search patterns
 and verification steps. It ships in the npm package as `docs/migrating-to-v8.md`.
 
+For everyday recipes on the v8 layout (names, languages, prose, game sets), see
+[usage.md](usage.md).
+
 ## Summary
 
 - v8 stores every entity once as a **base** record, plus **mods**: per-game-set overrides holding

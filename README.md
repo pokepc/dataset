@@ -5,8 +5,16 @@ Static JSON data for Pokémon, games, Pokédexes, box presets, and related Poké
 The package also includes TypeScript helpers, Zod schemas, and an OpenAPI description for serving
 the dataset as a static JSON API.
 
-> **Upgrading from v7?** Follow the [v7 to v8 migration guide](docs/migrating-to-v8.md), also
-> shipped in the package as `docs/migrating-to-v8.md`.
+## Documentation
+
+Consumer docs ship in the npm package under `docs/`:
+
+- [Using the dataset](docs/usage.md): how the data is organized and recipes for names, other
+  languages, search, Pokémon prose, games and game sets, merged Champions data, Pokédexes, box
+  presets, code maps and validation, for npm and the static API.
+- [Migrating from v7 to v8](docs/migrating-to-v8.md): every changed path, field and export, with an
+  agent playbook.
+- Static API reference: each version's `openapi.json` (see [Static API](#static-api)).
 
 ## Install
 
