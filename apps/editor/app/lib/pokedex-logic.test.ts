@@ -26,6 +26,8 @@ import {
   TRI_STATE_UNSET,
   validateBatchAddDraft,
   validatePokedexDraft,
+  joinPokedexText,
+  splitPokedexText,
 } from './pokedex-logic'
 
 describe('pokedex-logic', () => {
@@ -48,10 +50,10 @@ describe('pokedex-logic', () => {
           transferOnly: true,
           isNonCanonical: undefined,
           originDex: 'kanto',
-          meta: { names: { eng: 'Pikachu' } },
+          meta: { id: 'pikachuplush' },
         },
       ],
-    } as Pkds.Pokedex)
+    })
 
     expect(draft.shortDesc).toBe('')
     expect(draft.desc).toBe('')
@@ -495,7 +497,7 @@ describe('pokedex-logic', () => {
           transferOnly: TRI_STATE_UNSET,
           isNonCanonical: TRI_STATE_FALSE,
           originDex: 'kanto',
-          meta: { names: { eng: 'Pikachu' } } as Pkds.PokedexEntry['meta'],
+          meta: { id: 'pikachuplush' } as Pkds.PokedexEntry['meta'],
         },
       ],
     })
@@ -518,7 +520,7 @@ describe('pokedex-logic', () => {
           transferOnly: undefined,
           isNonCanonical: false,
           originDex: 'kanto',
-          meta: { names: { eng: 'Pikachu' } },
+          meta: { id: 'pikachuplush' },
         },
       ],
     })
@@ -563,5 +565,35 @@ describe('pokedex-logic', () => {
       dexNum: 'Dex number must be an integer between 0 and 99999.',
     })
     expect(hasPokedexDraftValidationErrors(validation)).toBe(true)
+  })
+})
+
+describe('pokedex text join and split', () => {
+  const record = {
+    id: 'pokopia',
+    gen: 0,
+    region: null,
+    isNational: false,
+    baseDex: null,
+    pkApiId: null,
+    entries: [{ pid: 'snorlax', dexNum: 108, isForm: false, meta: { id: 'mosslax' } }],
+  }
+
+  it('joins the English name and descriptions, defaulting to the id', () => {
+    expect(joinPokedexText(record, { name: 'Pokopia Pokédex', shortDesc: 'Short' })).toMatchObject({
+      name: 'Pokopia Pokédex',
+      shortDesc: 'Short',
+      desc: null,
+    })
+    expect(joinPokedexText(record).name).toBe('pokopia')
+  })
+
+  it('splits edits into the record and text, keeping entry text and dropping empty fields', () => {
+    const previous = { name: 'Old', entries: { mosslax: { name: 'Mosslax' } } }
+    const edited = { ...joinPokedexText(record, previous), name: 'Pokopia Pokédex', shortDesc: '' }
+    expect(splitPokedexText(edited, previous)).toEqual({
+      record,
+      text: { name: 'Pokopia Pokédex', entries: { mosslax: { name: 'Mosslax' } } },
+    })
   })
 })

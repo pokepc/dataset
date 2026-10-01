@@ -201,9 +201,10 @@ test('source errors can be retried and late responses do not follow Pokemon navi
   releaseLate()
   await page.waitForLoadState('networkidle')
   await expect(panel.getByRole('button', { name: 'Refresh sources', exact: true })).toBeEnabled()
+  // Zygarde-10's own data: Sword is obtainable through the curated 10% Forme rule.
   await expect(
-    panel.locator('[data-game-id="swsh-sw"] [data-availability-status="unknown"]'),
-  ).toContainText('—')
+    panel.locator('[data-game-id="swsh-sw"] [data-availability-status="obtainable"]'),
+  ).toContainText('✅')
   await expect(
     page.getByRole('region', { name: 'Availability comparison table', exact: true }),
   ).toBeVisible()

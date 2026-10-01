@@ -1,7 +1,11 @@
 import type { PokemonOption } from '@/components/pokemon-option-combobox'
+import { englishName, loadSearchablePokemon, updateTextFile } from '@/lib/dataset-text.server'
 import {
+  type EditorPokedex,
+  joinPokedexText,
   normalizePokedexDraft,
   type PokedexDraft,
+  splitPokedexText,
   toPokedexDraft,
   validatePokedexDraft,
 } from '@/lib/pokedex-logic'
@@ -10,11 +14,14 @@ import {
   loadAllPokedexes,
   loadAllPokemon,
   loadAllRegions,
+  loadText,
   readDatasetFile,
   writeDatasetFile,
 } from '@pokepc/dataset/lib/fs'
-import { pokedexSchema } from '@pokepc/dataset/lib/schemas'
-import { createSearchablePokemonList } from '@pokepc/dataset/lib/search'
+import { pokedexSchema, textSchemas } from '@pokepc/dataset/lib/schemas'
+import type { Text } from '@pokepc/dataset/lib/types'
+
+const POKEDEX_TEXT_FILE = 'i18n/eng/pokedexes.json'
 
 export type PokedexIndexItem = {
   id: string
@@ -31,7 +38,7 @@ type SimpleOption = {
 export function loadPokedexesIndexData() {
   const pokedexes: PokedexIndexItem[] = loadAllPokedexes().map((pokedex) => ({
     id: pokedex.id,
-    label: pokedex.name,
+    label: englishName('pokedexes', pokedex.id),
     gen: pokedex.gen,
     entryCount: pokedex.entries.length,
   }))
@@ -45,10 +52,11 @@ export function loadPokedexEditorData(pokedexId: string | undefined) {
   }
 
   const allPokedexes = loadAllPokedexes()
-  const selectedPokedex = allPokedexes.find((pokedex) => pokedex.id === pokedexId)
-  if (!selectedPokedex) {
+  const selectedRecord = allPokedexes.find((pokedex) => pokedex.id === pokedexId)
+  if (!selectedRecord) {
     throw new Response('Pokedex not found.', { status: 404 })
   }
+  const selectedPokedex = joinPokedexText(selectedRecord, loadText('pokedexes', 'eng')[pokedexId])
 
   const allPokemon = loadAllPokemon()
   const nationalDexNumByPokemonId = Object.fromEntries(
@@ -60,7 +68,7 @@ export function loadPokedexEditorData(pokedexId: string | undefined) {
   const formsByPokemonId = Object.fromEntries(
     allPokemon.map((pokemon) => [pokemon.id, pokemon.forms ?? []]),
   )
-  const searchablePokemon = createSearchablePokemonList(allPokemon)
+  const searchablePokemon = loadSearchablePokemon(allPokemon)
   const pokemonOptions: PokemonOption[] = searchablePokemon.map((pokemon) => ({
     id: pokemon.id,
     label: pokemon.name || pokemon.id,
@@ -71,14 +79,14 @@ export function loadPokedexEditorData(pokedexId: string | undefined) {
 
   const regionOptions: SimpleOption[] = loadAllRegions().map((region) => ({
     id: region.id,
-    label: region.name,
+    label: englishName('regions', region.id),
   }))
 
   const baseDexOptions: SimpleOption[] = allPokedexes
     .filter((pokedex) => pokedex.id !== selectedPokedex.id)
     .map((pokedex) => ({
       id: pokedex.id,
-      label: pokedex.name,
+      label: englishName('pokedexes', pokedex.id),
     }))
 
   return {
@@ -95,7 +103,7 @@ export function loadPokedexEditorData(pokedexId: string | undefined) {
 
 export type SavePokedexResult =
   | { success: false; error: string }
-  | { success: true; pokedex: Pkds.Pokedex }
+  | { success: true; pokedex: EditorPokedex }
 
 export async function savePokedexFromForm(
   request: Request,
@@ -161,20 +169,32 @@ export async function savePokedexFromForm(
     }
   }
 
-  let parsedPokedex: Pkds.Pokedex
-  try {
-    parsedPokedex = pokedexSchema.parse({
-      ...readDatasetFile<Pkds.Pokedex>(`pokedexes/${pokedexId}.json`),
+  // Records hold no text: the name and descriptions go to the English locale file.
+  const previousText = loadText('pokedexes', 'eng')[pokedexId]
+  const { record, text } = splitPokedexText(
+    {
+      ...joinPokedexText(
+        readDatasetFile<Pkds.Pokedex>(`pokedexes/${pokedexId}.json`),
+        previousText,
+      ),
       ...normalizedDraft,
-    })
+    },
+    previousText,
+  )
+  let parsedPokedex: Pkds.Pokedex
+  let parsedText: Text<'pokedexes'>
+  try {
+    parsedPokedex = pokedexSchema.parse(record)
+    parsedText = textSchemas.pokedexes.parse(text)
   } catch {
     return { success: false, error: 'Pokedex data does not match the schema.' }
   }
 
   writeDatasetFile(parsedPokedex, `pokedexes/${pokedexId}.json`, false)
+  updateTextFile(POKEDEX_TEXT_FILE, pokedexId, parsedText)
 
   return {
     success: true,
-    pokedex: parsedPokedex,
+    pokedex: joinPokedexText(parsedPokedex, parsedText),
   }
 }

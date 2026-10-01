@@ -9,6 +9,10 @@ vi.mock('@pokepc/dataset/lib/fs', () => ({
   absDatasetFile: () => '/tmp/editor-fixture/data',
   loadAllPokemon: mocks.loadAllPokemon,
   loadAllGames: mocks.loadAllGames,
+  loadText: () => ({
+    'sneasel-hisui-f': { name: 'Sneasel', formName: 'Hisuian Form (Female)' },
+    'sneasel-hisui': { name: 'Sneasel', formName: 'Hisuian Form' },
+  }),
 }))
 vi.mock('@pokepc/dataset/lib/availability-sources', () => ({
   loadAvailabilitySource: mocks.loadAvailabilitySource,
@@ -19,6 +23,9 @@ import { loadPokemonAvailabilitySource } from './availability-sources.server'
 const female = { id: 'sneasel-hisui-f', dexNum: 215 }
 const male = { id: 'sneasel-hisui', dexNum: 215 }
 const other = { id: 'pikachu', dexNum: 25 }
+// Form matching needs English names, so the loader attaches them from the locale file.
+const femaleWithText = { ...female, name: 'Sneasel', formName: 'Hisuian Form (Female)' }
+const maleWithText = { ...male, name: 'Sneasel', formName: 'Hisuian Form' }
 const games = [{ id: 'la', type: 'game' }]
 
 describe('availability source requests', () => {
@@ -54,12 +61,12 @@ describe('availability source requests', () => {
     expect(await loadPokemonAvailabilitySource(request)).toEqual({ ok: true, result })
     expect(mocks.loadAvailabilitySource).toHaveBeenCalledWith(
       'bulbapedia',
-      female,
+      femaleWithText,
       games,
       expect.objectContaining({
         signal: request.signal,
         refresh: true,
-        siblings: [female, male],
+        siblings: [femaleWithText, maleWithText],
       }),
     )
   })

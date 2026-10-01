@@ -6,10 +6,11 @@ const mocks = vi.hoisted(() => ({
   loadAllPokemon: vi.fn(),
   readDatasetFile: vi.fn(),
   writeDatasetFile: vi.fn(),
-  createSearchablePokemonList: vi.fn(),
+  updateTextFile: vi.fn(),
 }))
 
 vi.mock('@pokepc/dataset/lib/fs', () => ({
+  absDatasetFile: (path: string) => `/dataset/${path}`,
   loadAllGames: mocks.loadAllGames,
   loadAllGameSets: mocks.loadAllGameSets,
   loadAllPokemon: mocks.loadAllPokemon,
@@ -17,11 +18,21 @@ vi.mock('@pokepc/dataset/lib/fs', () => ({
   writeDatasetFile: mocks.writeDatasetFile,
 }))
 
-vi.mock('@pokepc/dataset/lib/search', () => ({
-  createSearchablePokemonList: mocks.createSearchablePokemonList,
+const gameNames: Record<string, string> = { rb: 'Red / Blue', home: 'HOME' }
+
+vi.mock('@/lib/dataset-text.server', () => ({
+  englishName: (_kind: string, id: string) => gameNames[id] ?? id,
+  loadSearchablePokemon: (pokemon: Pkds.Pokemon[]) =>
+    pokemon.map((item) => ({ ...item, name: item.id, searchableText: `${item.id} search` })),
+  updateTextFile: mocks.updateTextFile,
 }))
 
-import { boxPresetToDraft, type BoxPresetDraft } from './box-presets'
+import {
+  boxPresetToDraft,
+  joinClassicBoxPreset,
+  joinModernBoxPreset,
+  type BoxPresetDraft,
+} from './box-presets'
 import {
   loadAvailableStorablePokemonForGameSet,
   loadBoxPresetEditorData,
@@ -29,10 +40,15 @@ import {
   saveBoxPresetFromForm,
 } from './box-presets.server'
 
-function createGame(overrides: Partial<Pkds.Game> & Pick<Pkds.Game, 'id' | 'name'>): Pkds.Game {
+const CLASSIC_RB = 'boxpresets/classic/rb.json'
+const CLASSIC_RB_TEXT = 'i18n/eng/boxpresets/classic/rb.json'
+const MODERN_HOME_INDEX = 'boxpresets/modern/home.json'
+const MODERN_HOME_PRESET = 'boxpresets/modern/home/modern.json'
+const MODERN_HOME_TEXT = 'i18n/eng/boxpresets/modern/home.json'
+
+function createGame(overrides: Partial<Pkds.Game> & Pick<Pkds.Game, 'id'>): Pkds.Game {
   return {
     id: overrides.id,
-    name: overrides.name,
     nameSlug: overrides.nameSlug ?? overrides.id,
     codename: overrides.codename ?? null,
     gen: overrides.gen ?? 1,
@@ -60,41 +76,46 @@ function createPokemon(overrides: Partial<Pkds.Pokemon> & Pick<Pkds.Pokemon, 'id
     nid: overrides.nid ?? overrides.id,
     imgNid: overrides.imgNid,
     dexNum: overrides.dexNum ?? 1,
-    names: overrides.names ?? { eng: overrides.id },
     storableIn: overrides.storableIn ?? [],
   } as Pkds.Pokemon
 }
 
 function createClassicPreset(
-  overrides: Partial<Pkds.LegacyBoxPreset> &
-    Pick<Pkds.LegacyBoxPreset, 'id' | 'name'> & { fullId?: string },
-): Pkds.LegacyBoxPreset {
+  overrides: Partial<Pkds.ClassicBoxPreset> & Pick<Pkds.ClassicBoxPreset, 'id'>,
+): Pkds.ClassicBoxPreset {
   return {
     id: overrides.id,
     fullId: overrides.fullId,
-    name: overrides.name,
     version: overrides.version ?? 1,
     gameSet: overrides.gameSet ?? 'rb',
-    description: overrides.description ?? 'Preset description',
     boxes: overrides.boxes ?? [{ pokemon: ['bulbasaur', null] }],
     legacyId: overrides.legacyId,
     isHidden: overrides.isHidden,
-  } as Pkds.LegacyBoxPreset
+  }
 }
 
 function createModernPreset(
-  overrides: Partial<Pkds.ModernBoxPreset> & Pick<Pkds.ModernBoxPreset, 'id' | 'name'>,
+  overrides: Partial<Pkds.ModernBoxPreset> & Pick<Pkds.ModernBoxPreset, 'id'>,
 ): Pkds.ModernBoxPreset {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     id: overrides.id,
-    name: overrides.name,
     gameSet: overrides.gameSet ?? 'home',
-    description: overrides.description ?? 'Modern description',
     source: overrides.source,
     tags: overrides.tags,
-    boxes: overrides.boxes ?? [{ name: 'Modern Box', slots: ['mew', null] }],
+    boxes: overrides.boxes ?? [{ slots: ['mew', null] }],
   }
+}
+
+const classicText = (name: string) => ({ name, description: 'Preset description' })
+const modernText = { name: 'Modern', description: 'Modern description', boxes: ['Modern Box'] }
+
+/** Serves fixture files by path, like the dataset directory would. */
+function serveFiles(files: Record<string, unknown>) {
+  mocks.readDatasetFile.mockImplementation((path: string) => {
+    if (path in files) return structuredClone(files[path])
+    throw new Error(`missing ${path}`)
+  })
 }
 
 function requestWithDraft(draft: BoxPresetDraft) {
@@ -110,57 +131,45 @@ function requestWithDraft(draft: BoxPresetDraft) {
 describe('box-presets.server', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    mocks.loadAllGameSets.mockReturnValue([
-      createGame({ id: 'rb', name: 'Red / Blue' }),
-      createGame({ id: 'home', name: 'HOME' }),
-    ])
+    mocks.loadAllGameSets.mockReturnValue([createGame({ id: 'rb' }), createGame({ id: 'home' })])
     mocks.loadAllGames.mockReturnValue([
-      createGame({ id: 'rb', name: 'Red / Blue' }),
-      createGame({ id: 'red', name: 'Red', type: 'game', gameSet: 'rb' }),
-      createGame({ id: 'blue', name: 'Blue', type: 'game', gameSet: 'rb' }),
-      createGame({ id: 'home', name: 'HOME' }),
+      createGame({ id: 'rb' }),
+      createGame({ id: 'red', type: 'game', gameSet: 'rb' }),
+      createGame({ id: 'blue', type: 'game', gameSet: 'rb' }),
+      createGame({ id: 'home' }),
     ])
     mocks.loadAllPokemon.mockReturnValue([
       createPokemon({ id: 'bulbasaur', nid: '1', dexNum: 1, storableIn: ['rb'] }),
       createPokemon({ id: 'ivysaur', nid: '2', dexNum: 2, storableIn: ['red'] }),
       createPokemon({ id: 'mew', nid: '151', dexNum: 151, storableIn: ['home'] }),
     ])
-    mocks.createSearchablePokemonList.mockImplementation((pokemon: Pkds.Pokemon[]) =>
-      pokemon.map((item) => ({
-        ...item,
-        name: item.names.eng ?? item.id,
-        searchableText: `${item.id} search`,
-      })),
-    )
   })
 
-  it('discovers both classic and modern variant categories', () => {
-    mocks.readDatasetFile.mockImplementation((path: string) => {
-      if (path === 'boxpresets/classic/rb.json') {
-        return {
-          sample: createClassicPreset({ id: 'sample', name: 'Sample' }),
-        }
-      }
-      if (path === 'boxpresets/modern/home.json') {
-        return ['modern']
-      }
-      if (path === 'boxpresets/modern/home/modern.json') {
-        return createModernPreset({ id: 'modern', name: 'Modern' })
-      }
-      throw new Error('missing')
+  it('discovers both classic and modern variant categories with English labels', () => {
+    serveFiles({
+      [CLASSIC_RB]: { sample: createClassicPreset({ id: 'sample' }) },
+      [CLASSIC_RB_TEXT]: { sample: classicText('Sample') },
+      [MODERN_HOME_INDEX]: ['modern'],
+      [MODERN_HOME_PRESET]: createModernPreset({ id: 'modern' }),
+      [MODERN_HOME_TEXT]: { modern: modernText },
     })
 
     const result = loadBoxPresetIndexData()
 
     expect(result.variants.map((variant) => variant.id)).toEqual(['classic', 'modern'])
     expect(result.variants[0]?.presetCount).toBe(1)
-    expect(result.variants[1]?.presetCount).toBe(1)
+    expect(result.variants[0]?.gameSets[0]?.label).toBe('Red / Blue')
+    expect(result.variants[0]?.gameSets[0]?.presets[0]?.label).toBe('Sample')
+    expect(result.variants[1]?.gameSets[1]?.presets[0]?.label).toBe('Modern')
   })
 
-  it('loads selected classic preset editor data', () => {
-    mocks.readDatasetFile.mockReturnValue({
-      sample: createClassicPreset({ id: 'sample', name: 'Sample' }),
-      sibling: createClassicPreset({ id: 'sibling', name: 'Sibling' }),
+  it('loads selected classic preset editor data joined with its text', () => {
+    serveFiles({
+      [CLASSIC_RB]: {
+        sample: createClassicPreset({ id: 'sample' }),
+        sibling: createClassicPreset({ id: 'sibling' }),
+      },
+      [CLASSIC_RB_TEXT]: { sample: { ...classicText('Sample'), boxes: ['Starters'] } },
     })
 
     const result = loadBoxPresetEditorData({
@@ -170,24 +179,26 @@ describe('box-presets.server', () => {
     })
 
     expect(result.variant).toBe('classic')
-    expect(result.preset.id).toBe('sample')
+    expect(result.preset).toMatchObject({ id: 'sample', name: 'Sample' })
+    expect(result.initialDraft.boxes[0]?.name).toBe('Starters')
     expect(result.initialDraft.boxes[0]?.cells).toHaveLength(30)
     expect(result.initialDraft.boxes[0]?.cells.slice(0, 3)).toEqual(['bulbasaur', null, null])
-    expect(result.siblingPresets.map((preset) => preset.id)).toEqual(['sample', 'sibling'])
+    // A preset without text falls back to its id rather than failing.
+    expect(result.siblingPresets.map((preset) => [preset.id, preset.label])).toEqual([
+      ['sample', 'Sample'],
+      ['sibling', 'sibling'],
+    ])
     expect(result.availablePokemon.map((pokemon) => pokemon.id)).toEqual(['bulbasaur', 'ivysaur'])
   })
 
   it('loads selected modern preset editor data from the modern preset path', () => {
-    mocks.readDatasetFile.mockImplementation((path: string) => {
-      if (path === 'boxpresets/modern/home.json') return ['modern']
-      if (path === 'boxpresets/modern/home/modern.json') {
-        return createModernPreset({
-          id: 'modern',
-          name: 'Modern',
-          boxes: [{ name: 'Modern Box', slots: ['mew', { pokemon: 'mew', shiny: true }] }],
-        })
-      }
-      throw new Error('missing')
+    serveFiles({
+      [MODERN_HOME_INDEX]: ['modern'],
+      [MODERN_HOME_PRESET]: createModernPreset({
+        id: 'modern',
+        boxes: [{ slots: ['mew', { pokemon: 'mew', shiny: true }] }],
+      }),
+      [MODERN_HOME_TEXT]: { modern: modernText },
     })
 
     const result = loadBoxPresetEditorData({
@@ -197,8 +208,8 @@ describe('box-presets.server', () => {
     })
 
     expect(result.variant).toBe('modern')
-    expect(result.preset.id).toBe('modern')
-    expect(result.initialDraft.boxes[0]?.cells).toHaveLength(30)
+    expect(result.preset).toMatchObject({ id: 'modern', name: 'Modern' })
+    expect(result.initialDraft.boxes[0]?.name).toBe('Modern Box')
     expect(result.initialDraft.boxes[0]?.cells.slice(0, 3)).toEqual([
       'mew',
       { pokemonId: 'mew', shiny: true },
@@ -207,24 +218,22 @@ describe('box-presets.server', () => {
     expect(result.availablePokemon.map((pokemon) => pokemon.id)).toEqual(['mew'])
   })
 
-  it('saves selected classic preset without dropping siblings', async () => {
-    const existing = {
-      sample: createClassicPreset({
-        id: 'sample',
-        fullId: 'rb-sample',
-        name: 'Sample',
-      }),
-      sibling: createClassicPreset({ id: 'sibling', name: 'Sibling' }),
-    }
+  it('saves the classic record and its text without dropping siblings', async () => {
+    const sibling = createClassicPreset({ id: 'sibling' })
+    serveFiles({
+      [CLASSIC_RB]: {
+        sample: createClassicPreset({ id: 'sample', fullId: 'rb-sample' }),
+        sibling,
+      },
+      [CLASSIC_RB_TEXT]: { sample: classicText('Sample'), sibling: classicText('Sibling') },
+    })
     const draft = boxPresetToDraft(
       'classic',
-      createClassicPreset({
-        id: 'sample',
-        name: 'Sample',
-        boxes: [{ pokemon: ['ivysaur', null] }],
-      }),
+      joinClassicBoxPreset(
+        createClassicPreset({ id: 'sample', boxes: [{ pokemon: ['ivysaur', null] }] }),
+        { name: 'Renamed', description: 'Preset description' },
+      ),
     )
-    mocks.readDatasetFile.mockReturnValue(existing)
 
     const result = await saveBoxPresetFromForm(requestWithDraft(draft), {
       variant: 'classic',
@@ -233,44 +242,37 @@ describe('box-presets.server', () => {
     })
 
     expect(result.success).toBe(true)
-    expect(mocks.writeDatasetFile).toHaveBeenCalledWith(
-      {
-        sample: {
-          id: 'sample',
-          fullId: 'rb-sample',
-          legacyId: undefined,
-          name: 'Sample',
-          version: 1,
-          gameSet: 'rb',
-          description: 'Preset description',
-          boxes: [{ title: undefined, pokemon: ['ivysaur'] }],
-          isHidden: undefined,
-        },
-        sibling: existing.sibling,
+    expect(mocks.writeDatasetFile).toHaveBeenCalledTimes(1)
+    const [records, path] = mocks.writeDatasetFile.mock.calls[0]!
+    expect(path).toBe(CLASSIC_RB)
+    expect(JSON.parse(JSON.stringify(records))).toEqual({
+      sample: {
+        id: 'sample',
+        fullId: 'rb-sample',
+        version: 1,
+        gameSet: 'rb',
+        boxes: [{ pokemon: ['ivysaur'] }],
       },
-      'boxpresets/classic/rb.json',
-      false,
-    )
+      sibling: JSON.parse(JSON.stringify(sibling)),
+    })
+    expect(mocks.updateTextFile).toHaveBeenCalledWith(CLASSIC_RB_TEXT, 'sample', {
+      name: 'Renamed',
+      description: 'Preset description',
+    })
+    expect(result.success && result.preset).toMatchObject({ id: 'sample', name: 'Renamed' })
     expect(result.success && result.draft.boxes[0]?.cells).toHaveLength(30)
   })
 
-  it('saves selected modern preset through the modern preset path', async () => {
+  it('saves the modern record and its text through the modern preset paths', async () => {
+    serveFiles({
+      [MODERN_HOME_INDEX]: ['modern'],
+      [MODERN_HOME_PRESET]: createModernPreset({ id: 'modern' }),
+      [MODERN_HOME_TEXT]: { modern: modernText },
+    })
     const draft = boxPresetToDraft(
       'modern',
-      createModernPreset({
-        id: 'modern',
-        name: 'Modern',
-        gameSet: 'home',
-        boxes: [{ name: 'Modern Box', slots: ['mew', null] }],
-      }),
+      joinModernBoxPreset(createModernPreset({ id: 'modern' }), modernText),
     )
-    mocks.readDatasetFile.mockImplementation((path: string) => {
-      if (path === 'boxpresets/modern/home.json') return ['modern']
-      if (path === 'boxpresets/modern/home/modern.json') {
-        return createModernPreset({ id: 'modern', name: 'Modern' })
-      }
-      throw new Error('missing')
-    })
 
     const result = await saveBoxPresetFromForm(requestWithDraft(draft), {
       variant: 'modern',
@@ -279,25 +281,22 @@ describe('box-presets.server', () => {
     })
 
     expect(result.success).toBe(true)
-    expect(mocks.writeDatasetFile).toHaveBeenCalledWith(
-      {
-        schemaVersion: 1,
-        id: 'modern',
-        gameSet: 'home',
-        name: 'Modern',
-        description: 'Modern description',
-        source: undefined,
-        tags: undefined,
-        boxes: [{ name: 'Modern Box', slots: ['mew'] }],
-      },
-      'boxpresets/modern/home/modern.json',
-      false,
-    )
-    expect(result.success && result.draft.boxes[0]?.cells).toHaveLength(30)
+    const [record, path] = mocks.writeDatasetFile.mock.calls[0]!
+    expect(path).toBe(MODERN_HOME_PRESET)
+    expect(JSON.parse(JSON.stringify(record))).toEqual({
+      schemaVersion: 2,
+      id: 'modern',
+      gameSet: 'home',
+      boxes: [{ slots: ['mew'] }],
+    })
+    expect(mocks.updateTextFile).toHaveBeenCalledWith(MODERN_HOME_TEXT, 'modern', modernText)
   })
 
   it('rejects invalid variant, game set, and preset ids', async () => {
-    const draft = boxPresetToDraft('classic', createClassicPreset({ id: 'sample', name: 'Sample' }))
+    const draft = boxPresetToDraft(
+      'classic',
+      joinClassicBoxPreset(createClassicPreset({ id: 'sample' }), classicText('Sample')),
+    )
 
     await expect(
       saveBoxPresetFromForm(requestWithDraft(draft), {
@@ -316,14 +315,15 @@ describe('box-presets.server', () => {
     ).resolves.toEqual({ success: false, error: 'Game set not found.' })
   })
 
-  it('rejects schema-invalid drafts', async () => {
+  it('rejects schema-invalid drafts without writing anything', async () => {
     const invalidDraft = boxPresetToDraft(
       'classic',
-      createClassicPreset({ id: 'sample', name: 'Sample' }),
+      joinClassicBoxPreset(createClassicPreset({ id: 'sample' }), classicText('Sample')),
     )
     invalidDraft.boxes = [{ cells: [{ pokemonId: 'Invalid ID' }] }]
-    mocks.readDatasetFile.mockReturnValue({
-      sample: createClassicPreset({ id: 'sample', name: 'Sample' }),
+    serveFiles({
+      [CLASSIC_RB]: { sample: createClassicPreset({ id: 'sample' }) },
+      [CLASSIC_RB_TEXT]: { sample: classicText('Sample') },
     })
 
     const result = await saveBoxPresetFromForm(requestWithDraft(invalidDraft), {
@@ -336,6 +336,8 @@ describe('box-presets.server', () => {
       success: false,
       error: 'Box preset data does not match the schema.',
     })
+    expect(mocks.writeDatasetFile).not.toHaveBeenCalled()
+    expect(mocks.updateTextFile).not.toHaveBeenCalled()
   })
 
   it('derives available storable Pokemon from game set and member games', () => {
@@ -343,11 +345,13 @@ describe('box-presets.server', () => {
       'rb',
       boxPresetToDraft(
         'classic',
-        createClassicPreset({
-          id: 'sample',
-          name: 'Sample',
-          boxes: [{ pokemon: ['bulbasaur', 'bulbasaur', null] }],
-        }),
+        joinClassicBoxPreset(
+          createClassicPreset({
+            id: 'sample',
+            boxes: [{ pokemon: ['bulbasaur', 'bulbasaur', null] }],
+          }),
+          classicText('Sample'),
+        ),
       ),
     )
 

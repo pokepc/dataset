@@ -11,7 +11,7 @@ import {
   writeDatasetFile,
 } from '@pokepc/dataset/lib/fs'
 import { pokemonSchema } from '@pokepc/dataset/lib/schemas'
-import { createSearchablePokemonList } from '@pokepc/dataset/lib/search'
+import { englishName, loadSearchablePokemon } from '@/lib/dataset-text.server'
 
 const MIN_DEX_NUM = 1
 const MAX_DEX_NUM = 1386
@@ -35,7 +35,7 @@ function buildPokemonPageGameOptions(allGames: Pkds.Game[]) {
       if (modes.length === 0) return null
       return {
         id: game.id,
-        label: game.name ?? game.id,
+        label: englishName('games', game.id),
         image: gameSpriteUrl(game.id),
         modes,
       }
@@ -54,7 +54,7 @@ export function loadPokemonEditorData() {
   const gameOptions = buildPokemonPageGameOptions(allGames)
 
   return {
-    pokemon: createSearchablePokemonList(
+    pokemon: loadSearchablePokemon(
       loadAllPokemon().filter(
         (pokemon) => Number(pokemon.dexNum) >= MIN_DEX_NUM && Number(pokemon.dexNum) <= MAX_DEX_NUM,
       ),

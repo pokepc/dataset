@@ -3,7 +3,7 @@ import {
   type AvailabilitySourceId,
   type AvailabilitySourceResult,
 } from '@pokepc/dataset/lib/availability-sources'
-import { absDatasetFile, loadAllGames, loadAllPokemon } from '@pokepc/dataset/lib/fs'
+import { absDatasetFile, loadAllGames, loadAllPokemon, loadText } from '@pokepc/dataset/lib/fs'
 import { resolve } from 'node:path'
 
 export type AvailabilitySourceResponse =
@@ -20,7 +20,13 @@ export async function loadPokemonAvailabilitySource(
   if (!sources.has(source)) return { ok: false, error: 'Unknown availability source.' }
 
   const pokemonId = params.get('pokemonId')
-  const allPokemon = loadAllPokemon()
+  // Form matching uses English names and form names, which live in the locale file.
+  const text = loadText('pokemon', 'eng')
+  const allPokemon = loadAllPokemon().map((entry) => ({
+    ...entry,
+    name: text[entry.id]?.name,
+    formName: text[entry.id]?.formName,
+  }))
   const pokemon = allPokemon.find((entry) => entry.id === pokemonId)
   if (!pokemon) return { ok: false, error: 'Unknown Pokemon.' }
 

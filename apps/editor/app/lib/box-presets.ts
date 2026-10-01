@@ -1,3 +1,11 @@
+import type {
+  BoxPresetText,
+  ClassicBoxPreset,
+  ClassicBoxPresetBoxPokemon,
+  ModernBoxPreset,
+  ModernBoxPresetSlot,
+} from '@pokepc/dataset/lib/types'
+
 export const BOX_PRESET_DND_KIND = 'BOX_CELL'
 export const BOX_PRESET_VARIANTS = ['classic', 'modern'] as const
 export const BOX_PRESET_BOX_TITLE_MAX_LENGTH = 16
@@ -42,13 +50,91 @@ export type BoxPresetDraft =
       boxes: BoxPresetBoxDraft[]
       metadata: {
         kind: 'modern'
-        schemaVersion: 1
-        source?: Pkds.ModernBoxPreset['source']
+        schemaVersion: 2
+        source?: ModernBoxPreset['source']
         tags?: Pkds.ModernBoxPresetTag[]
       }
     }
 
-export type BoxPresetPersisted = Pkds.LegacyBoxPreset | Pkds.ModernBoxPreset
+/**
+ * Presets as the editor edits them: the v8 record joined with its English text from
+ * `i18n/eng/boxpresets/<variant>/<set>.json` (name, description and box titles).
+ */
+export type EditorClassicBoxPreset = Omit<ClassicBoxPreset, 'boxes'> & {
+  name: string
+  description: string
+  boxes: Array<{ title?: string; pokemon: ClassicBoxPresetBoxPokemon[] }>
+}
+export type EditorModernBoxPreset = Omit<ModernBoxPreset, 'boxes'> & {
+  name: string
+  description?: string
+  boxes: Array<{ name?: string; slots: ModernBoxPresetSlot[] }>
+}
+export type BoxPresetPersisted = EditorClassicBoxPreset | EditorModernBoxPreset
+
+function boxTitles(titles: Array<string | undefined>): Array<string | null> | undefined {
+  return titles.some((title) => title !== undefined)
+    ? titles.map((title) => title ?? null)
+    : undefined
+}
+
+export function joinClassicBoxPreset(
+  preset: ClassicBoxPreset,
+  text: BoxPresetText = {},
+): EditorClassicBoxPreset {
+  return {
+    ...preset,
+    name: text.name ?? preset.id,
+    description: text.description ?? '',
+    boxes: preset.boxes.map((box, index) => {
+      const title = text.boxes?.[index]
+      return title === null || title === undefined ? box : { title, ...box }
+    }),
+  }
+}
+
+export function splitClassicBoxPreset(preset: EditorClassicBoxPreset): {
+  record: ClassicBoxPreset
+  text: BoxPresetText
+} {
+  const { name, description, boxes, ...rest } = preset
+  const titles = boxTitles(boxes.map((box) => box.title))
+  return {
+    record: { ...rest, boxes: boxes.map(({ title: _, ...box }) => box) },
+    text: { name, description, ...(titles ? { boxes: titles } : {}) },
+  }
+}
+
+export function joinModernBoxPreset(
+  preset: ModernBoxPreset,
+  text: BoxPresetText = {},
+): EditorModernBoxPreset {
+  return {
+    ...preset,
+    name: text.name ?? preset.id,
+    ...(text.description !== undefined ? { description: text.description } : {}),
+    boxes: preset.boxes.map((box, index) => {
+      const name = text.boxes?.[index]
+      return name === null || name === undefined ? box : { name, ...box }
+    }),
+  }
+}
+
+export function splitModernBoxPreset(preset: EditorModernBoxPreset): {
+  record: ModernBoxPreset
+  text: BoxPresetText
+} {
+  const { name, description, boxes, ...rest } = preset
+  const titles = boxTitles(boxes.map((box) => box.name))
+  return {
+    record: { ...rest, boxes: boxes.map(({ name: _, ...box }) => box) },
+    text: {
+      name,
+      ...(description !== undefined ? { description } : {}),
+      ...(titles ? { boxes: titles } : {}),
+    },
+  }
+}
 
 export type ReferenceCellPosition = {
   box: number
@@ -117,14 +203,14 @@ export function parseBoxPresetVariant(value: string | undefined): BoxPresetVaria
   return isBoxPresetVariant(value) ? value : null
 }
 
-export function boxPresetToDraft(variant: 'classic', preset: Pkds.LegacyBoxPreset): BoxPresetDraft
-export function boxPresetToDraft(variant: 'modern', preset: Pkds.ModernBoxPreset): BoxPresetDraft
+export function boxPresetToDraft(variant: 'classic', preset: EditorClassicBoxPreset): BoxPresetDraft
+export function boxPresetToDraft(variant: 'modern', preset: EditorModernBoxPreset): BoxPresetDraft
 export function boxPresetToDraft(
   variant: BoxPresetVariant,
   preset: BoxPresetPersisted,
 ): BoxPresetDraft {
   if (variant === 'classic') {
-    const classicPreset = preset as Pkds.LegacyBoxPreset
+    const classicPreset = preset as EditorClassicBoxPreset
 
     return normalizeBoxPresetDraft({
       variant,
@@ -145,7 +231,7 @@ export function boxPresetToDraft(
     })
   }
 
-  const modernPreset = preset as Pkds.ModernBoxPreset
+  const modernPreset = preset as EditorModernBoxPreset
   return normalizeBoxPresetDraft({
     variant,
     id: modernPreset.id,
@@ -185,7 +271,7 @@ export function boxPresetDraftToPersisted(draft: BoxPresetDraft): BoxPresetPersi
   }
 
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     id: normalizedDraft.id,
     gameSet: normalizedDraft.gameSet,
     name: normalizedDraft.name,
@@ -274,7 +360,7 @@ export function createBoxPresetDraft(input: CreateBoxPresetDraftInput): BoxPrese
     variant: 'modern',
     metadata: {
       kind: 'modern',
-      schemaVersion: 1,
+      schemaVersion: 2,
       tags: ['recommended'],
     },
   })
@@ -669,7 +755,7 @@ export function applyBoxPresetDrop(
   }
 }
 
-function classicCellToDraftCell(value: Pkds.LegacyBoxPresetBoxPokemon): BoxPresetCellValue {
+function classicCellToDraftCell(value: ClassicBoxPresetBoxPokemon): BoxPresetCellValue {
   if (!value) return null
   if (typeof value === 'string') return value
   return {
@@ -680,7 +766,7 @@ function classicCellToDraftCell(value: Pkds.LegacyBoxPresetBoxPokemon): BoxPrese
   }
 }
 
-function modernSlotToDraftCell(value: Pkds.ModernBoxPresetSlot): BoxPresetCellValue {
+function modernSlotToDraftCell(value: ModernBoxPresetSlot): BoxPresetCellValue {
   if (!value) return null
   if (typeof value === 'string') return value
   return {
@@ -691,7 +777,7 @@ function modernSlotToDraftCell(value: Pkds.ModernBoxPresetSlot): BoxPresetCellVa
   }
 }
 
-function draftCellToClassicCell(value: BoxPresetCellValue): Pkds.LegacyBoxPresetBoxPokemon {
+function draftCellToClassicCell(value: BoxPresetCellValue): ClassicBoxPresetBoxPokemon {
   if (!value) return null
   if (typeof value === 'string') return value
   return {
@@ -702,7 +788,7 @@ function draftCellToClassicCell(value: BoxPresetCellValue): Pkds.LegacyBoxPreset
   }
 }
 
-function draftCellToModernSlot(value: BoxPresetCellValue): Pkds.ModernBoxPresetSlot {
+function draftCellToModernSlot(value: BoxPresetCellValue): ModernBoxPresetSlot {
   if (!value) return null
   if (typeof value === 'string') return value
   return {

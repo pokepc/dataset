@@ -1,4 +1,4 @@
-import { sortStringsInGivenOrder } from '@pokepc/dataset/lib/utils'
+import { sortStringsInGivenOrder, type TranslatedPokemon } from '@pokepc/dataset/lib/utils'
 
 export type AvailabilityState = {
   debutIn: string
@@ -9,9 +9,7 @@ export type AvailabilityState = {
   shinyLockedIn: string[]
 }
 
-export function toAvailabilityState(
-  pokemon: Pkds.Pokemon | Pkds.TranslatedPokemon,
-): AvailabilityState {
+export function toAvailabilityState(pokemon: Pkds.Pokemon | TranslatedPokemon): AvailabilityState {
   const safeArray = (value: unknown) =>
     Array.isArray(value) ? value.filter((item) => typeof item === 'string') : []
 

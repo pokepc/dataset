@@ -6,6 +6,7 @@ const mocks = vi.hoisted(() => ({
   readDatasetFile: vi.fn(),
   writeDatasetFile: vi.fn(),
   createSearchablePokemonList: vi.fn(),
+  gameNames: {} as Record<string, string>,
   parseAvailability: vi.fn(),
 }))
 
@@ -16,8 +17,9 @@ vi.mock('@pokepc/dataset/lib/fs', () => ({
   writeDatasetFile: mocks.writeDatasetFile,
 }))
 
-vi.mock('@pokepc/dataset/lib/search', () => ({
-  createSearchablePokemonList: mocks.createSearchablePokemonList,
+vi.mock('@/lib/dataset-text.server', () => ({
+  englishName: (_kind: string, id: string) => mocks.gameNames[id] ?? id,
+  loadSearchablePokemon: (pokemon: Pkds.Pokemon[]) => mocks.createSearchablePokemonList(pokemon),
 }))
 
 vi.mock('@pokepc/dataset/lib/schemas', () => ({
@@ -34,10 +36,13 @@ import {
   saveGameAvailabilityFromForm,
 } from './games-logic.server'
 
-function createGame(overrides: Partial<Pkds.Game> & Pick<Pkds.Game, 'id'>): Pkds.Game {
+function createGame(
+  overrides: Partial<Pkds.Game> & Pick<Pkds.Game, 'id'> & { name?: string },
+): Pkds.Game {
+  // Names live in i18n/eng/games.json; the text helper mock serves them.
+  mocks.gameNames[overrides.id] = overrides.name ?? overrides.id
   return {
     id: overrides.id,
-    name: overrides.name ?? overrides.id,
     gen: overrides.gen ?? 1,
     type: overrides.type ?? 'game',
     gameSet: overrides.gameSet,
@@ -52,9 +57,6 @@ function createPokemon(
     nid: overrides.nid ?? overrides.id,
     dexNum: overrides.dexNum ?? 1,
     gen: overrides.gen ?? 1,
-    names: overrides.names ?? { eng: overrides.id },
-    speciesNames: overrides.speciesNames ?? {},
-    formNames: overrides.formNames ?? {},
     debutIn: overrides.debutIn,
     obtainableIn: overrides.obtainableIn ?? [],
     storableIn: overrides.storableIn ?? [],
@@ -76,7 +78,7 @@ describe('games-logic.server', () => {
     mocks.createSearchablePokemonList.mockImplementation((pokemon: Pkds.Pokemon[]) =>
       pokemon.map((item) => ({
         ...item,
-        name: item.names.eng ?? item.id,
+        name: item.id,
         searchableText: `${item.id} search`,
       })),
     )

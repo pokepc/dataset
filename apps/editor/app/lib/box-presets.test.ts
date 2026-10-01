@@ -16,10 +16,14 @@ import {
   hasUnsupportedBoxPokemonId,
   insertEmptyBoxSlotAfter,
   insertEmptyBoxSlotAfterAcrossBoxes,
+  joinClassicBoxPreset,
+  joinModernBoxPreset,
   moveBoxPresetBox,
   moveBoxPresetBoxCell,
   normalizeBoxPresetDraft,
   removeBoxPresetBoxCell,
+  splitClassicBoxPreset,
+  splitModernBoxPreset,
   summarizeBoxPresetDraft,
   updateBoxPresetBoxName,
   updateBoxPresetMetadata,
@@ -121,7 +125,7 @@ describe('box-presets', () => {
 
   it('converts modern presets to the shared editor draft shape', () => {
     const draft = boxPresetToDraft('modern', {
-      schemaVersion: 1,
+      schemaVersion: 2,
       id: 'modern',
       gameSet: 'home',
       name: 'Modern',
@@ -137,7 +141,7 @@ describe('box-presets', () => {
       boxes: [{ name: 'Modern Box', cells: ['mew', { pokemonId: 'pikachu', shiny: true }] }],
       metadata: {
         kind: 'modern',
-        schemaVersion: 1,
+        schemaVersion: 2,
         source: { kind: 'classic', gameSet: 'rb', presetId: 'sample', version: 1 },
         tags: ['recommended', 'forms'],
       },
@@ -428,13 +432,13 @@ describe('box-presets', () => {
       gameSet: 'home',
       metadata: {
         kind: 'modern',
-        schemaVersion: 1,
+        schemaVersion: 2,
         tags: ['recommended'],
       },
     })
 
     expect(boxPresetDraftToPersisted(draft)).toMatchObject({
-      schemaVersion: 1,
+      schemaVersion: 2,
       id: 'modern',
       gameSet: 'home',
       boxes: [
@@ -619,5 +623,45 @@ describe('box-presets', () => {
     expect(hasUnsupportedBoxPokemonId({ pokemonId: 'rockruff--own-tempo' })).toBe(true)
     expect(hasUnsupportedBoxPokemonId('zygarde-10')).toBe(false)
     expect(hasUnsupportedBoxPokemonId(null)).toBe(false)
+  })
+})
+
+describe('box preset text join and split', () => {
+  const classic = {
+    id: 'sample',
+    fullId: 'rb-sample',
+    version: 1,
+    gameSet: 'rb',
+    boxes: [{ pokemon: ['bulbasaur'] }, { pokemon: ['ivysaur'] }],
+  }
+
+  it('joins classic records with their text and splits them back unchanged', () => {
+    const text = { name: 'Sample', description: '', boxes: [null, 'Box 2'] }
+    const joined = joinClassicBoxPreset(classic, text)
+    expect(joined).toMatchObject({ name: 'Sample', description: '' })
+    expect(joined.boxes).toEqual([
+      { pokemon: ['bulbasaur'] },
+      { title: 'Box 2', pokemon: ['ivysaur'] },
+    ])
+    expect(splitClassicBoxPreset(joined)).toEqual({ record: classic, text })
+  })
+
+  it('omits box titles when no box has one', () => {
+    const { text } = splitClassicBoxPreset(joinClassicBoxPreset(classic, { name: 'Sample' }))
+    expect(text).toEqual({ name: 'Sample', description: '' })
+  })
+
+  it('joins modern records with their text and splits them back unchanged', () => {
+    const modern = {
+      schemaVersion: 2 as const,
+      id: 'modern',
+      gameSet: 'home',
+      boxes: [{ slots: ['mew'] }],
+    }
+    const text = { name: 'Modern', boxes: ['Legendaries'] }
+    const joined = joinModernBoxPreset(modern, text)
+    expect(joined.boxes).toEqual([{ name: 'Legendaries', slots: ['mew'] }])
+    expect(joined).not.toHaveProperty('description')
+    expect(splitModernBoxPreset(joined)).toEqual({ record: modern, text })
   })
 })

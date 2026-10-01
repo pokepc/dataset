@@ -1,4 +1,37 @@
 import { POKEPC_LATEST_GENERATION } from '@pokepc/dataset/lib/constants'
+import type { Pokedex, Text } from '@pokepc/dataset/lib/types'
+
+/** A Pokédex joined with its English text (`i18n/eng/pokedexes.json`), as the editor edits it. */
+export type EditorPokedex = Pokedex & { name: string; shortDesc?: string; desc?: string | null }
+
+export function joinPokedexText(pokedex: Pokedex, text: Text<'pokedexes'> = {}): EditorPokedex {
+  return {
+    ...pokedex,
+    name: text.name ?? pokedex.id,
+    ...(text.shortDesc !== undefined ? { shortDesc: text.shortDesc } : {}),
+    desc: text.desc ?? null,
+  }
+}
+
+/**
+ * Splits an edited Pokédex into its text-free record and English text. Text of `meta` entries is
+ * not edited here, so it is carried over from `previousText`.
+ */
+export function splitPokedexText(
+  pokedex: EditorPokedex,
+  previousText: Text<'pokedexes'> = {},
+): { record: Pokedex; text: Text<'pokedexes'> } {
+  const { name, shortDesc, desc, ...record } = pokedex
+  return {
+    record,
+    text: {
+      name,
+      ...(shortDesc ? { shortDesc } : {}),
+      ...(desc ? { desc } : {}),
+      ...(previousText.entries ? { entries: previousText.entries } : {}),
+    },
+  }
+}
 
 export const TRI_STATE_UNSET = 'unset'
 export const TRI_STATE_TRUE = 'true'
@@ -115,7 +148,7 @@ export function createPokedexEntryDraft(
   }
 }
 
-export function toPokedexDraft(pokedex: Pkds.Pokedex): PokedexDraft {
+export function toPokedexDraft(pokedex: EditorPokedex): PokedexDraft {
   return {
     id: pokedex.id,
     name: pokedex.name,
@@ -404,7 +437,7 @@ function normalizeTextToNullable(value: string): string | null {
   return trimmed.length > 0 ? trimmed : null
 }
 
-export function normalizePokedexDraft(draft: PokedexDraft): Pkds.Pokedex {
+export function normalizePokedexDraft(draft: PokedexDraft): EditorPokedex {
   return {
     id: draft.id,
     name: draft.name.trim(),

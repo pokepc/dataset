@@ -6,19 +6,25 @@ const mocks = vi.hoisted(() => ({
   loadAllRegions: vi.fn(),
   readDatasetFile: vi.fn(),
   writeDatasetFile: vi.fn(),
-  createSearchablePokemonList: vi.fn(),
+  updateTextFile: vi.fn(),
+  /** English text per kind, as in i18n/eng/<kind>.json. */
+  text: {} as Record<string, Record<string, Record<string, unknown>>>,
 }))
 
 vi.mock('@pokepc/dataset/lib/fs', () => ({
   loadAllPokedexes: mocks.loadAllPokedexes,
   loadAllPokemon: mocks.loadAllPokemon,
   loadAllRegions: mocks.loadAllRegions,
+  loadText: (kind: string) => mocks.text[kind] ?? {},
   readDatasetFile: mocks.readDatasetFile,
   writeDatasetFile: mocks.writeDatasetFile,
 }))
 
-vi.mock('@pokepc/dataset/lib/search', () => ({
-  createSearchablePokemonList: mocks.createSearchablePokemonList,
+vi.mock('@/lib/dataset-text.server', () => ({
+  englishName: (kind: string, id: string) => (mocks.text[kind]?.[id]?.name as string) ?? id,
+  loadSearchablePokemon: (pokemon: Pkds.Pokemon[]) =>
+    pokemon.map((item) => ({ ...item, name: item.id, searchableText: `${item.id} search` })),
+  updateTextFile: mocks.updateTextFile,
 }))
 
 import {
@@ -28,20 +34,17 @@ import {
 } from './pokedex-logic.server'
 
 function createPokedex(
-  overrides: Partial<Pkds.Pokedex> & Pick<Pkds.Pokedex, 'id' | 'name' | 'gen'>,
+  overrides: Partial<Pkds.Pokedex> & Pick<Pkds.Pokedex, 'id' | 'gen'>,
 ): Pkds.Pokedex {
   return {
     id: overrides.id,
-    name: overrides.name,
     gen: overrides.gen,
-    shortDesc: overrides.shortDesc,
-    desc: overrides.desc ?? null,
     region: overrides.region ?? null,
     isNational: overrides.isNational ?? false,
     baseDex: overrides.baseDex ?? null,
     pkApiId: overrides.pkApiId ?? null,
     entries: overrides.entries ?? [],
-  } as Pkds.Pokedex
+  }
 }
 
 function createPokemon(
@@ -52,9 +55,6 @@ function createPokemon(
     nid: overrides.nid ?? overrides.id,
     dexNum: overrides.dexNum ?? 1,
     gen: overrides.gen ?? 1,
-    names: overrides.names ?? { eng: overrides.id },
-    speciesNames: overrides.speciesNames ?? {},
-    formNames: overrides.formNames ?? {},
     debutIn: overrides.debutIn,
     obtainableIn: overrides.obtainableIn ?? [],
     storableIn: overrides.storableIn ?? [],
@@ -69,95 +69,78 @@ function createPokemon(
   } as Pkds.Pokemon
 }
 
+function saveRequest(draft: Record<string, unknown>) {
+  const formData = new FormData()
+  formData.set('intent', 'save-pokedex')
+  formData.set('pokedexId', 'kanto')
+  formData.set('draft', JSON.stringify(draft))
+  return new Request('http://localhost/pokedexes/kanto', { method: 'POST', body: formData })
+}
+
+const draftHeader = {
+  id: 'kanto',
+  name: 'Kanto Dex',
+  shortDesc: '',
+  desc: '',
+  gen: '1',
+  region: 'kanto',
+  isNational: false,
+  baseDex: '',
+  pkApiId: '',
+}
+
 describe('pokedex-logic.server', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    mocks.createSearchablePokemonList.mockImplementation((pokemon: Pkds.Pokemon[]) =>
-      pokemon.map((item) => ({
-        ...item,
-        name: item.names.eng ?? item.id,
-        searchableText: `${item.id} search`,
-      })),
-    )
+    mocks.text = {
+      pokedexes: { kanto: { name: 'Kanto Dex' }, national: { name: 'National Dex' } },
+      regions: { kanto: { name: 'Kanto' } },
+    }
+    mocks.loadAllRegions.mockReturnValue([{ id: 'kanto' }])
   })
 
-  it('loadPokedexesIndexData maps pokedexes into list cards', () => {
+  it('loadPokedexesIndexData maps pokedexes into list cards with English names', () => {
     mocks.loadAllPokedexes.mockReturnValue([
-      createPokedex({
-        id: 'kanto',
-        name: 'Kanto Dex',
-        gen: 1,
-        entries: [{ pid: 'pikachu' }] as any,
-      }),
-      createPokedex({ id: 'national', name: 'National Dex', gen: 9, entries: [] }),
+      createPokedex({ id: 'kanto', gen: 1, entries: [{ pid: 'pikachu' }] as any }),
+      createPokedex({ id: 'national', gen: 9, entries: [] }),
     ])
 
-    expect(loadPokedexesIndexData()).toEqual({
-      pokedexes: [
-        { id: 'kanto', label: 'Kanto Dex', gen: 1, entryCount: 1 },
-        { id: 'national', label: 'National Dex', gen: 9, entryCount: 0 },
-      ],
-    })
+    expect(loadPokedexesIndexData().pokedexes).toEqual([
+      { id: 'kanto', label: 'Kanto Dex', gen: 1, entryCount: 1 },
+      { id: 'national', label: 'National Dex', gen: 9, entryCount: 0 },
+    ])
   })
 
-  it('loadPokedexEditorData returns dex data and selector options', () => {
+  it('loadPokedexEditorData joins the Pokédex with its text and builds options', () => {
+    mocks.text.pokedexes!.kanto = { name: 'Kanto Dex', desc: 'Original 151.' }
     mocks.loadAllPokedexes.mockReturnValue([
-      createPokedex({
-        id: 'kanto',
-        name: 'Kanto Dex',
-        gen: 1,
-        region: 'kanto',
-        entries: [{ pid: 'pikachu', dexNum: 25, isForm: false }] as any,
-      }),
-      createPokedex({ id: 'national', name: 'National Dex', gen: 9 }),
+      createPokedex({ id: 'kanto', gen: 1, region: 'kanto' }),
+      createPokedex({ id: 'national', gen: 9 }),
     ])
-    mocks.loadAllPokemon.mockReturnValue([
-      createPokemon({ id: 'pikachu', nid: '25', dexNum: 25, debutIn: 'red' }),
-    ])
-    mocks.loadAllRegions.mockReturnValue([{ id: 'kanto', name: 'Kanto' }])
+    mocks.loadAllPokemon.mockReturnValue([createPokemon({ id: 'pikachu', debutIn: 'red' })])
 
     const result = loadPokedexEditorData('kanto')
 
-    expect(result.initialDraft.id).toBe('kanto')
-    expect(result.pokemonOptions).toEqual([
-      {
-        id: 'pikachu',
-        label: 'pikachu',
-        image: 'https://static.pokepc.net/images/pokemon/home3d-icon/regular/25.webp',
-        dexNum: 25,
-        searchableText: 'pikachu search',
-      },
-    ])
+    expect(result.pokedex).toMatchObject({ id: 'kanto', name: 'Kanto Dex', desc: 'Original 151.' })
+    expect(result.initialDraft).toMatchObject({ name: 'Kanto Dex', desc: 'Original 151.' })
+    expect(result.pokemonOptions.map((option) => option.id)).toEqual(['pikachu'])
     expect(result.regionOptions).toEqual([{ id: 'kanto', label: 'Kanto' }])
     expect(result.baseDexOptions).toEqual([{ id: 'national', label: 'National Dex' }])
   })
 
   it('savePokedexFromForm rejects unknown pokemon ids', async () => {
-    const existing = createPokedex({
-      id: 'kanto',
-      name: 'Kanto Dex',
-      gen: 1,
-      entries: [{ pid: 'pikachu', dexNum: 25, isForm: false }] as any,
-    })
-    mocks.loadAllPokedexes.mockReturnValue([existing])
-    mocks.loadAllPokemon.mockReturnValue([createPokemon({ id: 'pikachu', debutIn: 'red' })])
-    mocks.loadAllRegions.mockReturnValue([{ id: 'kanto', name: 'Kanto' }])
-
-    const formData = new FormData()
-    formData.set('intent', 'save-pokedex')
-    formData.set('pokedexId', 'kanto')
-    formData.set(
-      'draft',
-      JSON.stringify({
+    mocks.loadAllPokedexes.mockReturnValue([
+      createPokedex({
         id: 'kanto',
-        name: 'Kanto Dex',
-        shortDesc: '',
-        desc: '',
-        gen: '1',
-        region: 'kanto',
-        isNational: false,
-        baseDex: '',
-        pkApiId: '',
+        gen: 1,
+        entries: [{ pid: 'pikachu', dexNum: 25, isForm: false }],
+      }),
+    ])
+    mocks.loadAllPokemon.mockReturnValue([createPokemon({ id: 'pikachu', debutIn: 'red' })])
+
+    const result = await savePokedexFromForm(
+      saveRequest({
+        ...draftHeader,
         entries: [
           {
             clientId: 'row-1',
@@ -169,10 +152,6 @@ describe('pokedex-logic.server', () => {
           },
         ],
       }),
-    )
-
-    const result = await savePokedexFromForm(
-      new Request('http://localhost/pokedexes/kanto', { method: 'POST', body: formData }),
       { id: 'kanto' },
     )
 
@@ -180,12 +159,15 @@ describe('pokedex-logic.server', () => {
       success: false,
       error: 'Pokedex data is invalid. Please fix the highlighted fields.',
     })
+    expect(mocks.writeDatasetFile).not.toHaveBeenCalled()
+    expect(mocks.updateTextFile).not.toHaveBeenCalled()
   })
 
-  it('savePokedexFromForm preserves order and hidden entry fields when saving', async () => {
+  it('savePokedexFromForm writes the record and its text, preserving order and entry text', async () => {
+    const entryText = { pikachuplush: { name: 'Pikachu Plush' } }
+    mocks.text.pokedexes!.kanto = { name: 'Kanto Dex', entries: entryText }
     const existing = createPokedex({
       id: 'kanto',
-      name: 'Kanto Dex',
       gen: 1,
       region: 'kanto',
       entries: [
@@ -194,41 +176,23 @@ describe('pokedex-logic.server', () => {
           dexNum: 25,
           isForm: false,
           originDex: 'national',
-          meta: { names: { eng: 'Pikachu' } },
+          meta: { id: 'pikachuplush' },
         },
-        {
-          pid: 'raichu',
-          dexNum: 26,
-          isForm: false,
-        },
-      ] as any,
+        { pid: 'raichu', dexNum: 26, isForm: false },
+      ],
     })
-    mocks.loadAllPokedexes.mockReturnValue([
-      existing,
-      createPokedex({ id: 'national', name: 'National Dex', gen: 9 }),
-    ])
+    mocks.loadAllPokedexes.mockReturnValue([existing, createPokedex({ id: 'national', gen: 9 })])
     mocks.loadAllPokemon.mockReturnValue([
       createPokemon({ id: 'pikachu', debutIn: 'red' }),
       createPokemon({ id: 'raichu', debutIn: 'red' }),
     ])
-    mocks.loadAllRegions.mockReturnValue([{ id: 'kanto', name: 'Kanto' }])
-    mocks.readDatasetFile.mockReturnValue(existing)
+    mocks.readDatasetFile.mockReturnValue(structuredClone(existing))
 
-    const formData = new FormData()
-    formData.set('intent', 'save-pokedex')
-    formData.set('pokedexId', 'kanto')
-    formData.set(
-      'draft',
-      JSON.stringify({
-        id: 'kanto',
-        name: 'Kanto Dex',
-        shortDesc: '',
-        desc: '',
-        gen: '1',
-        region: 'kanto',
-        isNational: false,
-        baseDex: '',
-        pkApiId: '',
+    const result = await savePokedexFromForm(
+      saveRequest({
+        ...draftHeader,
+        name: 'Kanto Pokédex',
+        desc: 'Original 151.',
         entries: [
           {
             clientId: 'row-2',
@@ -246,73 +210,40 @@ describe('pokedex-logic.server', () => {
             transferOnly: 'true',
             isNonCanonical: 'unset',
             originDex: 'national',
-            meta: { names: { eng: 'Pikachu' } },
+            meta: { id: 'pikachuplush' },
           },
         ],
       }),
-    )
-
-    const result = await savePokedexFromForm(
-      new Request('http://localhost/pokedexes/kanto', { method: 'POST', body: formData }),
       { id: 'kanto' },
     )
 
-    expect(result).toEqual({
-      success: true,
-      pokedex: {
-        ...existing,
-        shortDesc: undefined,
-        desc: null,
-        entries: [
-          {
-            pid: 'raichu',
-            dexNum: 26,
-            isForm: false,
-            transferOnly: undefined,
-            isNonCanonical: undefined,
-            originDex: undefined,
-            meta: undefined,
-          },
-          {
-            pid: 'pikachu',
-            dexNum: 25,
-            isForm: false,
-            transferOnly: true,
-            isNonCanonical: undefined,
-            originDex: 'national',
-            meta: { names: { eng: 'Pikachu' } },
-          },
-        ],
-      },
+    const expectedRecord = {
+      ...existing,
+      entries: [
+        { pid: 'raichu', dexNum: 26, isForm: false },
+        {
+          pid: 'pikachu',
+          dexNum: 25,
+          isForm: false,
+          transferOnly: true,
+          originDex: 'national',
+          meta: { id: 'pikachuplush' },
+        },
+      ],
+    }
+    expect(result.success).toBe(true)
+    expect(result.success && result.pokedex).toMatchObject({
+      ...expectedRecord,
+      name: 'Kanto Pokédex',
+      desc: 'Original 151.',
     })
-    expect(mocks.writeDatasetFile).toHaveBeenCalledWith(
-      {
-        ...existing,
-        shortDesc: undefined,
-        desc: null,
-        entries: [
-          {
-            pid: 'raichu',
-            dexNum: 26,
-            isForm: false,
-            transferOnly: undefined,
-            isNonCanonical: undefined,
-            originDex: undefined,
-            meta: undefined,
-          },
-          {
-            pid: 'pikachu',
-            dexNum: 25,
-            isForm: false,
-            transferOnly: true,
-            isNonCanonical: undefined,
-            originDex: 'national',
-            meta: { names: { eng: 'Pikachu' } },
-          },
-        ],
-      },
-      'pokedexes/kanto.json',
-      false,
-    )
+    const [record, path] = mocks.writeDatasetFile.mock.calls[0]!
+    expect(path).toBe('pokedexes/kanto.json')
+    expect(JSON.parse(JSON.stringify(record))).toEqual(expectedRecord)
+    expect(mocks.updateTextFile).toHaveBeenCalledWith('i18n/eng/pokedexes.json', 'kanto', {
+      name: 'Kanto Pokédex',
+      desc: 'Original 151.',
+      entries: entryText,
+    })
   })
 })

@@ -2,7 +2,7 @@ import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { pokemonSpriteUrl } from '@/lib/utils'
-import { loadAllPokemon } from '@pokepc/dataset/lib/fs'
+import { loadAllPokemon, loadText } from '@pokepc/dataset/lib/fs'
 import { ArrowRightIcon, SparklesIcon } from 'lucide-react'
 import { Link } from 'react-router'
 import type { Route } from './+types/index'
@@ -16,10 +16,11 @@ export function meta({}: Route.MetaArgs) {
 
 export async function loader() {
   const pokemon = loadAllPokemon()
+  const text = loadText('pokemon', 'eng')
   return {
     pokemon: pokemon.map((pokemon: Pkds.Pokemon) => ({
       id: pokemon.id,
-      name: pokemon.names.eng,
+      name: text[pokemon.id]?.name ?? pokemon.id,
       image: pokemonSpriteUrl(pokemon.nid),
     })),
   }

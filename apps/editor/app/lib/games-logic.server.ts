@@ -13,7 +13,7 @@ import {
   writeDatasetFile,
 } from '@pokepc/dataset/lib/fs'
 import { pokemonSchema } from '@pokepc/dataset/lib/schemas'
-import { createSearchablePokemonList } from '@pokepc/dataset/lib/search'
+import { englishName, loadSearchablePokemon } from '@/lib/dataset-text.server'
 import { sortStringsInGivenOrder } from '@pokepc/dataset/lib/utils'
 
 const gameAvailabilitySchema = pokemonSchema.pick({
@@ -161,7 +161,7 @@ export function loadGamesIndexData() {
   const games = loadAllGames().map((game) => ({
     id: game.id,
     gen: game.gen,
-    label: game.name ?? game.id,
+    label: englishName('games', game.id),
     image: gameSpriteUrl(game.id),
   }))
   return { games }
@@ -179,7 +179,7 @@ export function loadGameAvailabilityEditorData(gameId: string | undefined) {
   }
 
   const allPokemon = loadAllPokemon()
-  const searchablePokemon = createSearchablePokemonList(allPokemon)
+  const searchablePokemon = loadSearchablePokemon(allPokemon)
   const pokemonOrder = allPokemon.map((pokemon) => pokemon.id)
   const validPokemonIds = new Set(pokemonOrder)
   const shouldCapPokemonByGen = selectedGame.gen > 0
@@ -201,7 +201,7 @@ export function loadGameAvailabilityEditorData(gameId: string | undefined) {
   )
   const gameOptions: GameOption[] = allGames.map((game) => ({
     id: game.id,
-    label: game.name ?? game.id,
+    label: englishName('games', game.id),
     image: gameSpriteUrl(game.id),
     modes: ['games'],
   }))
@@ -223,7 +223,7 @@ export function loadGameAvailabilityEditorData(gameId: string | undefined) {
   return {
     game: {
       id: selectedGame.id,
-      label: selectedGame.name ?? selectedGame.id,
+      label: englishName('games', selectedGame.id),
       image: gameSpriteUrl(selectedGame.id),
       gen: selectedGame.gen,
     },

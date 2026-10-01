@@ -8,7 +8,13 @@ import {
   normalizeBoxPresetDraft,
   parseBoxPresetVariant,
   summarizeBoxPresetDraft,
+  joinClassicBoxPreset,
+  joinModernBoxPreset,
+  splitClassicBoxPreset,
+  splitModernBoxPreset,
   type BoxPresetDraft,
+  type EditorClassicBoxPreset,
+  type EditorModernBoxPreset,
   type BoxPresetPersisted,
   type BoxPresetVariant,
 } from '@/lib/box-presets'
@@ -21,12 +27,15 @@ import {
   readDatasetFile,
   writeDatasetFile,
 } from '@pokepc/dataset/lib/fs'
-import { createSearchablePokemonList } from '@pokepc/dataset/lib/search'
+import { englishName, loadSearchablePokemon, updateTextFile } from '@/lib/dataset-text.server'
 import {
-  boxPresetSchema,
+  boxPresetTextSchema,
+  classicBoxPresetSchema,
   modernBoxPresetIndexSchema,
   modernBoxPresetSchema,
 } from '@pokepc/dataset/lib/schemas'
+import type { BoxPresetText, ClassicBoxPreset, ModernBoxPreset } from '@pokepc/dataset/lib/types'
+import type { TranslatedPokemon } from '@pokepc/dataset/lib/utils'
 import fs from 'node:fs'
 
 export type BoxPresetIndexPreset = {
@@ -77,11 +86,7 @@ export type BoxPresetEditorData = {
   maxBoxCount: number
 }
 
-type ClassicBoxPresetWithStableFields = Pkds.LegacyBoxPreset & {
-  fullId?: string
-  [key: string]: unknown
-}
-type ClassicBoxPresetMap = Record<string, ClassicBoxPresetWithStableFields>
+type ClassicBoxPresetMap = Record<string, EditorClassicBoxPreset>
 
 export function loadBoxPresetIndexData() {
   const gameSets = loadAllGameSets()
@@ -95,7 +100,7 @@ export function loadBoxPresetIndexData() {
 
       return {
         id: gameSet.id,
-        label: gameSet.name,
+        label: englishName('games', gameSet.id),
         image: gameSpriteUrl(gameSet.id),
         boxCellCount: getGameSetBoxCellCount(gameSet),
         maxBoxCount: getGameSetMaxBoxCount(gameSet),
@@ -133,8 +138,8 @@ export function loadBoxPresetEditorData(params: {
   const maxBoxCount = getGameSetMaxBoxCount(gameSet)
   const initialDraft = fillBoxPresetDraftCells(
     variant === 'classic'
-      ? boxPresetToDraft('classic', preset as Pkds.LegacyBoxPreset)
-      : boxPresetToDraft('modern', preset as Pkds.ModernBoxPreset),
+      ? boxPresetToDraft('classic', preset as EditorClassicBoxPreset)
+      : boxPresetToDraft('modern', preset as EditorModernBoxPreset),
     boxCellCount,
   )
   const siblingPresets =
@@ -147,7 +152,7 @@ export function loadBoxPresetEditorData(params: {
     variantLabel: variantLabel(variant),
     gameSet: {
       id: gameSet.id,
-      label: gameSet.name,
+      label: englishName('games', gameSet.id),
       image: gameSpriteUrl(gameSet.id),
       boxCellCount,
       maxBoxCount,
@@ -186,16 +191,16 @@ export function loadAvailableStorablePokemonForGameSet(
       }, {})
     : {}
 
-  return createSearchablePokemonList(loadAllPokemon())
+  return loadSearchablePokemon(loadAllPokemon())
     .filter((pokemon) => pokemon.storableIn.some((gameId) => memberGameIds.has(gameId)))
     .map((pokemon) => ({
       id: pokemon.id,
-      label: pokemon.name || pokemon.names.eng || pokemon.id,
+      label: pokemon.name || pokemon.id,
       image: pokemonSpriteUrl(pokemon.imgNid ?? pokemon.nid),
       dexNum: pokemon.dexNum,
       searchableText: pokemon.searchableText,
       placedCount: placedCountById[pokemon.id] ?? 0,
-      isFemale: Boolean((pokemon as Pkds.TranslatedPokemon & { isFemale?: boolean }).isFemale),
+      isFemale: Boolean((pokemon as TranslatedPokemon & { isFemale?: boolean }).isFemale),
       isFemaleForm: Boolean(pokemon.isFemaleForm),
     }))
 }
@@ -294,28 +299,26 @@ export async function createBoxPresetFromForm(request: Request): Promise<CreateB
   if (variant === 'classic') {
     const currentMap = readClassicBoxPresetMapIfPresent(gameSetId) ?? {}
     if (currentMap[presetId]) return { success: false, error: 'Box preset already exists.' }
-    const preset = withClassicPresetStableFields(
-      boxPresetSchema.parse(boxPresetDraftToPersisted(draft)),
-      undefined,
-      gameSetId,
-      presetId,
+    const stored = parseClassicBoxPreset(
+      withClassicPresetStableFields(
+        boxPresetDraftToPersisted(draft) as EditorClassicBoxPreset,
+        undefined,
+        gameSetId,
+        presetId,
+      ),
     )
-    writeDatasetFile(
-      { ...currentMap, [presetId]: preset },
-      classicBoxPresetFilePath(gameSetId),
-      false,
-    )
-    return { success: true, location, preset }
+    writeClassicBoxPreset(gameSetId, presetId, stored)
+    return { success: true, location, preset: joinClassicBoxPreset(stored.record, stored.text) }
   }
 
   const currentIndex = readModernPresetIndexIfPresent(gameSetId) ?? []
   if (currentIndex.includes(presetId) || readModernBoxPresetIfPresent(gameSetId, presetId)) {
     return { success: false, error: 'Box preset already exists.' }
   }
-  const preset = modernBoxPresetSchema.parse(boxPresetDraftToPersisted(draft))
+  const stored = parseModernBoxPreset(boxPresetDraftToPersisted(draft) as EditorModernBoxPreset)
   writeDatasetFile([...currentIndex, presetId], modernBoxPresetIndexFilePath(gameSetId), false)
-  writeDatasetFile(preset, modernBoxPresetFilePath(gameSetId, presetId), false)
-  return { success: true, location, preset }
+  writeModernBoxPreset(gameSetId, presetId, stored)
+  return { success: true, location, preset: joinModernBoxPreset(stored.record, stored.text) }
 }
 
 export type DeleteBoxPresetResult =
@@ -343,9 +346,7 @@ export async function deleteBoxPresetFromForm(
   if (variant === 'classic') {
     const currentMap = readClassicBoxPresetMapIfPresent(gameSetId)
     if (!currentMap?.[presetId]) return { success: false, error: 'Box preset not found.' }
-    const nextMap = { ...currentMap }
-    delete nextMap[presetId]
-    writeDatasetFile(nextMap, classicBoxPresetFilePath(gameSetId), false)
+    writeClassicBoxPreset(gameSetId, presetId, undefined)
     return { success: true, location }
   }
 
@@ -357,6 +358,7 @@ export async function deleteBoxPresetFromForm(
     false,
   )
   deleteDatasetFileIfPresent(modernBoxPresetFilePath(gameSetId, presetId))
+  updateTextFile(modernBoxPresetTextFilePath(gameSetId), presetId, undefined)
   return { success: true, location }
 }
 
@@ -382,24 +384,22 @@ function saveClassicBoxPreset(
     return { success: false, error: 'Box preset not found.' }
   }
 
-  let parsedPreset: ClassicBoxPresetWithStableFields
+  let stored: StoredBoxPreset<ClassicBoxPreset>
   try {
-    parsedPreset = withClassicPresetStableFields(
-      boxPresetSchema.parse(boxPresetDraftToPersisted(draft)),
-      currentMap[presetId],
-      gameSetId,
-      presetId,
+    stored = parseClassicBoxPreset(
+      withClassicPresetStableFields(
+        boxPresetDraftToPersisted(draft) as EditorClassicBoxPreset,
+        currentMap[presetId],
+        gameSetId,
+        presetId,
+      ),
     )
   } catch {
     return { success: false, error: 'Box preset data does not match the schema.' }
   }
 
-  const nextMap = {
-    ...currentMap,
-    [presetId]: parsedPreset,
-  }
-
-  writeDatasetFile(nextMap, classicBoxPresetFilePath(gameSetId), false)
+  writeClassicBoxPreset(gameSetId, presetId, stored)
+  const parsedPreset = joinClassicBoxPreset(stored.record, stored.text)
 
   return {
     success: true,
@@ -414,7 +414,7 @@ function saveModernBoxPreset(
   presetId: string,
   draft: BoxPresetDraft,
 ): SaveBoxPresetResult {
-  let presetIndex: Pkds.ModernBoxPresetIndex
+  let presetIndex: string[]
   try {
     presetIndex = readRequiredModernPresetIndex(gameSetId)
   } catch (error) {
@@ -435,14 +435,15 @@ function saveModernBoxPreset(
     return { success: false, error: 'Box preset not found.' }
   }
 
-  let parsedPreset: Pkds.ModernBoxPreset
+  let stored: StoredBoxPreset<ModernBoxPreset>
   try {
-    parsedPreset = modernBoxPresetSchema.parse(boxPresetDraftToPersisted(draft))
+    stored = parseModernBoxPreset(boxPresetDraftToPersisted(draft) as EditorModernBoxPreset)
   } catch {
     return { success: false, error: 'Box preset data does not match the schema.' }
   }
 
-  writeDatasetFile(parsedPreset, modernBoxPresetFilePath(gameSetId, presetId), false)
+  writeModernBoxPreset(gameSetId, presetId, stored)
+  const parsedPreset = joinModernBoxPreset(stored.record, stored.text)
 
   return {
     success: true,
@@ -481,12 +482,12 @@ function getGameSetMaxBoxCount(gameSet: Pkds.Game): number {
 
 function savedPresetToFilledDraft(
   variant: 'classic',
-  preset: Pkds.LegacyBoxPreset,
+  preset: EditorClassicBoxPreset,
   gameSetId: string,
 ): BoxPresetDraft
 function savedPresetToFilledDraft(
   variant: 'modern',
-  preset: Pkds.ModernBoxPreset,
+  preset: EditorModernBoxPreset,
   gameSetId: string,
 ): BoxPresetDraft
 function savedPresetToFilledDraft(
@@ -498,8 +499,8 @@ function savedPresetToFilledDraft(
   const boxCellCount = gameSet ? getGameSetBoxCellCount(gameSet) : 30
   const draft =
     variant === 'classic'
-      ? boxPresetToDraft('classic', preset as Pkds.LegacyBoxPreset)
-      : boxPresetToDraft('modern', preset as Pkds.ModernBoxPreset)
+      ? boxPresetToDraft('classic', preset as EditorClassicBoxPreset)
+      : boxPresetToDraft('modern', preset as EditorModernBoxPreset)
   return fillBoxPresetDraftCells(draft, boxCellCount)
 }
 
@@ -522,12 +523,75 @@ function modernBoxPresetFilePath(gameSet: string, presetId: string): string {
   return `boxpresets/modern/${gameSet}/${presetId}.json`
 }
 
-function readClassicBoxPresetMapIfPresent(gameSet: string): ClassicBoxPresetMap | null {
+function classicBoxPresetTextFilePath(gameSet: string): string {
+  return `i18n/eng/boxpresets/classic/${gameSet}.json`
+}
+
+function modernBoxPresetTextFilePath(gameSet: string): string {
+  return `i18n/eng/boxpresets/modern/${gameSet}.json`
+}
+
+function readPresetText(filePath: string): Record<string, BoxPresetText> {
   try {
-    return readDatasetFile<ClassicBoxPresetMap>(classicBoxPresetFilePath(gameSet))
+    return readDatasetFile<Record<string, BoxPresetText>>(filePath)
+  } catch {
+    return {}
+  }
+}
+
+type StoredBoxPreset<T> = { record: T; text: BoxPresetText }
+
+/** Validates an edited preset as stored: the text-free record and its English text. */
+function parseClassicBoxPreset(preset: EditorClassicBoxPreset): StoredBoxPreset<ClassicBoxPreset> {
+  const { record, text } = splitClassicBoxPreset(preset)
+  return { record: classicBoxPresetSchema.parse(record), text: boxPresetTextSchema.parse(text) }
+}
+
+function parseModernBoxPreset(preset: EditorModernBoxPreset): StoredBoxPreset<ModernBoxPreset> {
+  const { record, text } = splitModernBoxPreset(preset)
+  return { record: modernBoxPresetSchema.parse(record), text: boxPresetTextSchema.parse(text) }
+}
+
+/** Writes (or, without `stored`, removes) one classic preset, keeping its siblings untouched. */
+function writeClassicBoxPreset(
+  gameSet: string,
+  presetId: string,
+  stored: StoredBoxPreset<ClassicBoxPreset> | undefined,
+) {
+  const filePath = classicBoxPresetFilePath(gameSet)
+  const records = readDatasetFileIfPresent<Record<string, ClassicBoxPreset>>(filePath) ?? {}
+  if (stored) records[presetId] = stored.record
+  else delete records[presetId]
+  writeDatasetFile(records, filePath, false)
+  updateTextFile(classicBoxPresetTextFilePath(gameSet), presetId, stored?.text)
+}
+
+function writeModernBoxPreset(
+  gameSet: string,
+  presetId: string,
+  stored: StoredBoxPreset<ModernBoxPreset>,
+) {
+  writeDatasetFile(stored.record, modernBoxPresetFilePath(gameSet, presetId), false)
+  updateTextFile(modernBoxPresetTextFilePath(gameSet), presetId, stored.text)
+}
+
+function readDatasetFileIfPresent<T>(filePath: string): T | null {
+  try {
+    return readDatasetFile<T>(filePath)
   } catch {
     return null
   }
+}
+
+function readClassicBoxPresetMapIfPresent(gameSet: string): ClassicBoxPresetMap | null {
+  const records = readDatasetFileIfPresent<Record<string, ClassicBoxPreset>>(
+    classicBoxPresetFilePath(gameSet),
+  )
+  if (!records) return null
+  const text = readPresetText(classicBoxPresetTextFilePath(gameSet))
+  return Object.fromEntries(
+    Object.entries(records).map(([id, record]) => [id, joinClassicBoxPreset(record, text[id])]),
+  )
 }
 
 function readRequiredClassicBoxPresetMap(gameSet: string): ClassicBoxPresetMap {
@@ -538,17 +602,17 @@ function readRequiredClassicBoxPresetMap(gameSet: string): ClassicBoxPresetMap {
   return map
 }
 
-function readModernPresetIndexIfPresent(gameSet: string): Pkds.ModernBoxPresetIndex | null {
+function readModernPresetIndexIfPresent(gameSet: string): string[] | null {
   try {
     return modernBoxPresetIndexSchema.parse(
-      readDatasetFile<Pkds.ModernBoxPresetIndex>(modernBoxPresetIndexFilePath(gameSet)),
+      readDatasetFile<string[]>(modernBoxPresetIndexFilePath(gameSet)),
     )
   } catch {
     return null
   }
 }
 
-function readRequiredModernPresetIndex(gameSet: string): Pkds.ModernBoxPresetIndex {
+function readRequiredModernPresetIndex(gameSet: string): string[] {
   const index = readModernPresetIndexIfPresent(gameSet)
   if (!index) {
     throw new Response('Box preset file not found.', { status: 404 })
@@ -559,10 +623,14 @@ function readRequiredModernPresetIndex(gameSet: string): Pkds.ModernBoxPresetInd
 function readModernBoxPresetIfPresent(
   gameSet: string,
   presetId: string,
-): Pkds.ModernBoxPreset | null {
+): EditorModernBoxPreset | null {
   try {
-    return modernBoxPresetSchema.parse(
-      readDatasetFile<Pkds.ModernBoxPreset>(modernBoxPresetFilePath(gameSet, presetId)),
+    const record = modernBoxPresetSchema.parse(
+      readDatasetFile<ModernBoxPreset>(modernBoxPresetFilePath(gameSet, presetId)),
+    )
+    return joinModernBoxPreset(
+      record,
+      readPresetText(modernBoxPresetTextFilePath(gameSet))[presetId],
     )
   } catch {
     return null
@@ -621,11 +689,11 @@ function mapClassicPresetOptions(presetMap: ClassicBoxPresetMap): BoxPresetIndex
 }
 
 function withClassicPresetStableFields(
-  preset: Pkds.LegacyBoxPreset,
-  existing: ClassicBoxPresetWithStableFields | undefined,
+  preset: EditorClassicBoxPreset,
+  existing: EditorClassicBoxPreset | undefined,
   gameSetId: string,
   presetId: string,
-): ClassicBoxPresetWithStableFields {
+): EditorClassicBoxPreset {
   return {
     ...existing,
     ...preset,
@@ -633,7 +701,7 @@ function withClassicPresetStableFields(
   }
 }
 
-function mapModernPresetOption(preset: Pkds.ModernBoxPreset): BoxPresetIndexPreset {
+function mapModernPresetOption(preset: EditorModernBoxPreset): BoxPresetIndexPreset {
   return {
     id: preset.id,
     label: preset.name,

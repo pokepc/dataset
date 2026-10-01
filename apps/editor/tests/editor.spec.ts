@@ -60,8 +60,10 @@ test('dataset loader and persisted Pokedex edit preserve sibling files', async (
   const data = fixtureData(info)
   const before = snapshot(data)
   const file = resolve(data, 'pokedexes/kanto.json')
+  const textFile = resolve(data, 'i18n/eng/pokedexes.json')
   const original = readFileSync(file, 'utf8')
-  const record = JSON.parse(original)
+  const originalText = readFileSync(textFile, 'utf8')
+  const text = JSON.parse(originalText)
   try {
     await visit(page, '/')
     await expect(page.getByText('Total Pokemon:', { exact: false })).toBeVisible()
@@ -72,21 +74,25 @@ test('dataset loader and persisted Pokedex edit preserve sibling files', async (
     await expect(page.getByText('Pokedex saved.', { exact: true })).toBeVisible()
     await page.reload({ waitUntil: 'domcontentloaded' })
     await expect(name).toHaveValue('Kanto QA')
-    expect(JSON.parse(readFileSync(file, 'utf8'))).toEqual({
-      ...record,
-      desc: record.desc ?? null,
-      name: 'Kanto QA',
+    // Records hold no text: the name lands in the English locale file.
+    expect(JSON.parse(readFileSync(file, 'utf8'))).toEqual(JSON.parse(original))
+    expect(JSON.parse(readFileSync(textFile, 'utf8'))).toEqual({
+      ...text,
+      kanto: { ...text.kanto, name: 'Kanto QA' },
     })
     const after = snapshot(data)
-    expect(Object.keys(after).filter((path) => before[path] !== after[path])).toEqual([
-      'pokedexes/kanto.json',
-    ])
+    expect(
+      Object.keys(after)
+        .filter((path) => before[path] !== after[path])
+        .sort(),
+    ).toEqual(['i18n/eng/pokedexes.json', 'pokedexes/kanto.json'])
     await page.screenshot({ path: info.outputPath('pokedex.png') })
-    await name.fill(record.name)
+    await name.fill(text.kanto.name)
     await page.getByRole('button', { name: 'Save', exact: true }).click()
     await expect(page.getByText('Pokedex saved.', { exact: true })).toBeVisible()
   } finally {
     writeFileSync(file, original)
+    writeFileSync(textFile, originalText)
   }
   expect(snapshot(data)).toEqual(before)
 })
@@ -98,7 +104,9 @@ for (const variant of ['classic', 'modern']) {
     const data = fixtureData(info)
     const before = snapshot(data)
     const indexFile = resolve(data, `boxpresets/${variant}/home.json`)
+    const textFile = resolve(data, `i18n/eng/boxpresets/${variant}/home.json`)
     const originalIndex = readFileSync(indexFile, 'utf8')
+    const originalText = readFileSync(textFile, 'utf8')
     const presetId = 'editor-migration-qa'
     await visit(page, `/box-presets?variant=${variant}&gameSet=home`)
     await page.getByPlaceholder('my-new-preset').fill(presetId)
@@ -119,7 +127,8 @@ for (const variant of ['classic', 'modern']) {
         'utf8',
       ),
     )
-    expect((variant === 'modern' ? saved : saved[presetId]).name).toBe('Migration QA saved')
+    expect(saved).not.toHaveProperty(variant === 'modern' ? 'name' : `${presetId}.name`)
+    expect(JSON.parse(readFileSync(textFile, 'utf8'))[presetId].name).toBe('Migration QA saved')
     if (variant === 'classic') {
       delete saved[presetId]
       expect(saved).toEqual(JSON.parse(originalIndex))
@@ -129,7 +138,10 @@ for (const variant of ['classic', 'modern']) {
       ).toEqual(JSON.parse(originalIndex))
     }
     const after = snapshot(data)
-    const expectedChanges = [`boxpresets/${variant}/home.json`]
+    const expectedChanges = [
+      `boxpresets/${variant}/home.json`,
+      `i18n/eng/boxpresets/${variant}/home.json`,
+    ]
     if (variant === 'modern') expectedChanges.push(`boxpresets/modern/home/${presetId}.json`)
     expect(
       Object.keys(after)
@@ -141,7 +153,9 @@ for (const variant of ['classic', 'modern']) {
     await page.getByRole('button', { name: 'Delete preset', exact: true }).click()
     await expect(page).toHaveURL(/\/box-presets\?/)
     expect(JSON.parse(readFileSync(indexFile, 'utf8'))).toEqual(JSON.parse(originalIndex))
+    expect(JSON.parse(readFileSync(textFile, 'utf8'))).toEqual(JSON.parse(originalText))
     writeFileSync(indexFile, originalIndex)
+    writeFileSync(textFile, originalText)
     expect(snapshot(data)).toEqual(before)
   })
 }
