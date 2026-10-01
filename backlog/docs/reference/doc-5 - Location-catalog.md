@@ -3,7 +3,7 @@ id: doc-5
 title: Location catalog
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 06:06'
+updated_date: '2026-10-01 22:31'
 ---
 `data/locations.json` combines the named places listed by
 [PokémonDB](https://pokemondb.net/location),
@@ -70,7 +70,7 @@ The adapters and reviewed mappings live in `src/upstream-adapters/locations/`:
 
 1. **PokéAPI:** read its official CSV tables at the revision pinned in `fetch.ts`. The current
    snapshot is
-   [`575291cdb197a7e3a320297be276c9de4ef8401a`](https://github.com/PokeAPI/pokeapi/tree/575291cdb197a7e3a320297be276c9de4ef8401a/data/v2/csv).
+   [`bc92d3b6029ef1abe9e7ad424c400b338f3c11fe`](https://github.com/PokeAPI/pokeapi/tree/bc92d3b6029ef1abe9e7ad424c400b338f3c11fe/data/v2/csv).
    Join locations, English names, regions, location areas, encounters, and versions. This is the
    data behind the API, without thousands of individual REST requests. Positive encounter version
    IDs establish game membership; generation-specific `game_indices` do not. Refreshing web

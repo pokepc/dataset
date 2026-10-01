@@ -5,7 +5,7 @@ import { parseSerebiiCatalog, parseSerebiiPage } from './serebii.ts'
 import type { Candidate, Game } from './types.ts'
 import { gameEvidence } from './overrides.ts'
 
-export const pokeApiRevision = '575291cdb197a7e3a320297be276c9de4ef8401a'
+export const pokeApiRevision = 'bc92d3b6029ef1abe9e7ad424c400b338f3c11fe'
 export const csvFiles = [
   'locations',
   'location_names',
