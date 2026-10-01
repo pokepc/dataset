@@ -90,6 +90,7 @@ export const characterSchema = base.entity.extend({
 export const colorSchema = base.entity.extend({
   color: common.colorHex,
 })
+// For storage-only apps (Box, Ranch, Bank, HOME), a mechanic flag means its data is preserved.
 export const gameFeaturesSchema = z.object({
   storage: z.boolean(), // when true, the game has a storage system (boxes, etc)
   party: z.boolean(), // when true, Pokemon are carried in a party (see maxPartySize)
@@ -105,7 +106,7 @@ export const gameFeaturesSchema = z.object({
   marks: z.boolean(), // Since gen 8
   markings: z.boolean(), // Per-Pokemon categorization: markings in core games, tags in GO
   shadow: z.boolean(), // Colosseum, XD and GO
-  ball: z.boolean(), // Caught balls, since gen 4
+  ball: z.boolean(), // Caught balls, since gen 3
   mega: z.boolean(),
   zmove: z.boolean(),
   gmax: z.boolean(),
