@@ -3,7 +3,7 @@ id: doc-1
 title: Project overview
 type: readme
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 00:02'
+updated_date: '2026-10-01 03:12'
 ---
 `@pokepc/dataset` is the public Pokémon dataset behind [PokéPC](https://pokepc.net): static JSON
 data for Pokémon, games, Pokédexes, box presets and related metadata, plus TypeScript helpers, Zod
@@ -13,11 +13,14 @@ current state and shape of the project and indexes the maintained docs and decis
 
 ## State (October 2026)
 
-- Stable line: **v7** (7.5.0). `data/` is the maintained source of truth.
+- Stable line: **v7** (7.5.0, maintained on `7.x`). `data/` is still the source of truth until the
+  v8 cut-over.
 - Next major: **v8** replaces `data/`, `src/lib` schemas and types with the per-game-set,
   fully translated `data-next/` model. Accepted and in progress; see
   [decision-2](../decisions/decision-2%20-%20v8-version-data-per-game-set-with-full-translations-data-next.md)
   and the [v8 data-next architecture](doc-2%20-%20v8-data-next-architecture.md).
+  Tracked by milestone `m-0` (v8 game-set data model). `main` is the v8 workspace; v7 fixes go to
+  the `7.x` branch.
 - Recent: append-only numeric code maps for storage-efficient consumers
   ([decision-1](../decisions/decision-1%20-%20Append-only-numeric-code-maps-for-stored-ids.md)),
   versioned Pages deployment
@@ -69,6 +72,8 @@ Guides:
 
 - [Dataset editor](guides/doc-10%20-%20Dataset-editor.md)
 - [Pokémon availability CLI](guides/doc-11%20-%20Pok%C3%A9mon-availability-CLI.md)
+- [v7 to v8 migration guide](guides/doc-21%20-%20v7-to-v8-migration-guide.md) — draft, for npm and API
+  consumers
 
 Audits (dated research snapshots; reference docs win on conflicts). Supporting JSON/CSV artifacts
 live beside them in `audits/`:
