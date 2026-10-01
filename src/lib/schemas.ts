@@ -180,7 +180,7 @@ export const languageSchema = z.strictObject({
   id: z.enum(languageIds),
   name: z.string(), // endonym, e.g. "Deutsch"
   nameEng: z.string(),
-  alpha3: z.enum(languageAlpha3Codes), // v7 translation key
+  alpha3: z.enum(languageAlpha3Codes), // three-letter translation key (v7: esla, por → esl, pbr)
   inGameCode: z.enum(languageInGameCodes),
   locale: z.string(),
   flag: z.string(),

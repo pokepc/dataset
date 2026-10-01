@@ -44,7 +44,7 @@ export const languageIds = [
 export const languageAlpha3Codes = [
   'eng',
   'esp',
-  'esla',
+  'esl',
   'fra',
   'deu',
   'ita',
@@ -52,7 +52,7 @@ export const languageAlpha3Codes = [
   'kor',
   'chs',
   'cht',
-  'por',
+  'pbr',
 ] as const
 
 export const languageInGameCodes = [

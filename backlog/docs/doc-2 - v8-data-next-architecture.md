@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 06:07'
+updated_date: '2026-10-01 19:56'
 ---
 Specification of the v8 data model that replaced the v7 `data/` layout and `src/lib`, as shipped on
 `main` for 8.0.0 (milestone `m-0`). The decision
@@ -138,13 +138,14 @@ their own fallback.
 ### Locales
 
 One locale code set is used for every directory and key: the lowercase in-game language codes.
-v7 translation keys map as follows (decision-4):
+Three-letter translation keys map as follows (decision-4, decision-6; v7 spelled `esl` and
+`pbr` as `esla` and `por`):
 
-| v8 locale | v7 key | Language                |
+| v8 locale | Key    | Language                |
 | --------- | ------ | ----------------------- |
 | `eng`     | `eng`  | English                 |
 | `es-es`   | `esp`  | Spanish (Spain)         |
-| `es-la`   | `esla` | Spanish (Latin America) |
+| `es-la`   | `esl`  | Spanish (Latin America) |
 | `fra`     | `fra`  | French                  |
 | `deu`     | `deu`  | German                  |
 | `ita`     | `ita`  | Italian                 |
@@ -152,7 +153,7 @@ v7 translation keys map as follows (decision-4):
 | `kor`     | `kor`  | Korean                  |
 | `chs`     | `chs`  | Chinese (Simplified)    |
 | `cht`     | `cht`  | Chinese (Traditional)   |
-| `pt-br`   | `por`  | Portuguese (Brazil)     |
+| `pt-br`   | `pbr`  | Portuguese (Brazil)     |
 
 `languages.json` keeps the v7 language records (ids `en`, `es`, `esla`, …) and adds `code`, the v8
 locale code of that language.

@@ -89,7 +89,8 @@ console.log(pokemonName('pikachu', 'jpn'))
 
 The same applies to every kind: `loadText('moves', 'deu')`, `loadText('games', 'fra')`, … Moves,
 abilities and items have `name`, `shortDesc` and `desc`; see `textSchemas` in `lib/schemas` for each
-kind's fields. To map a stored v7 language key (`jap`, `esp`, …) use `localeCodeByV7Key`.
+kind's fields. To map a stored three-letter language key (`jap`, `esp`, …) use `localeCodeByV7Key`;
+v7's `esla` and `por` are `esl` and `pbr` there.
 
 ## Search Pokémon
 

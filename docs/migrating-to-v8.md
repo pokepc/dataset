@@ -49,22 +49,24 @@ Choose your own fallback for missing text (for example, English).
 
 Every locale directory and key uses the lowercase in-game language code:
 
-| v8 locale | v7 translation key | v7 language id | Language                |
-| --------- | ------------------ | -------------- | ----------------------- |
-| `eng`     | `eng`              | `en`           | English                 |
-| `es-es`   | `esp`              | `es`           | Spanish (Spain)         |
-| `es-la`   | `esla`             | `esla`         | Spanish (Latin America) |
-| `fra`     | `fra`              | `fr`           | French                  |
-| `deu`     | `deu`              | `de`           | German                  |
-| `ita`     | `ita`              | `it`           | Italian                 |
-| `jpn`     | `jap`              | `ja`           | Japanese                |
-| `kor`     | `kor`              | `ko`           | Korean                  |
-| `chs`     | `chs`              | `chs`          | Chinese (Simplified)    |
-| `cht`     | `cht`              | `cht`          | Chinese (Traditional)   |
-| `pt-br`   | `por`              | `pt`           | Portuguese (Brazil)     |
+| v8 locale | Translation key | v7 language id | Language                |
+| --------- | --------------- | -------------- | ----------------------- |
+| `eng`     | `eng`           | `en`           | English                 |
+| `es-es`   | `esp`           | `es`           | Spanish (Spain)         |
+| `es-la`   | `esl`           | `esla`         | Spanish (Latin America) |
+| `fra`     | `fra`           | `fr`           | French                  |
+| `deu`     | `deu`           | `de`           | German                  |
+| `ita`     | `ita`           | `it`           | Italian                 |
+| `jpn`     | `jap`           | `ja`           | Japanese                |
+| `kor`     | `kor`           | `ko`           | Korean                  |
+| `chs`     | `chs`           | `chs`          | Chinese (Simplified)    |
+| `cht`     | `cht`           | `cht`          | Chinese (Traditional)   |
+| `pt-br`   | `pbr`           | `pt`           | Portuguese (Brazil)     |
 
-`data/languages.json` keeps the v7 records and ids and adds `code`, the v8 locale code. In code,
-`localeCodes` and `localeCodeByV7Key` from `@pokepc/dataset/lib/languages` hold these tables.
+Translation keys are three letters: v7 spelled `esl` as `esla` and `pbr` as `por`, so rename those
+two stored keys before mapping them. `data/languages.json` keeps the v7 records and ids, holds the
+translation key in `alpha3` and adds `code`, the v8 locale code. In code, `localeCodes` and
+`localeCodeByV7Key` from `@pokepc/dataset/lib/languages` hold these tables.
 
 ## Data files (npm `@pokepc/dataset/data/*` and static API)
 
@@ -327,7 +329,7 @@ v8 package (`lib/schemas`, `lib/types`) or the v8 `openapi.json`.
    records without text; modern presets need `schemaVersion: 2`, Pokédex `meta` entries need `id`.
 7. **Keep stored values.** Ids, `nid` and code-map codes are unchanged; no database migration is
    needed for them. Stored v7 locale keys (`jap`, `esp`, `esla`, `por`) need mapping with
-   `localeCodeByV7Key`.
+   `localeCodeByV7Key`, after renaming `esla` to `esl` and `por` to `pbr`.
 8. **Verify.**
    - Re-run every search in step 2; remaining hits must be intentional (non-dataset `.name` etc.).
    - Type-check against the v8 package (`tsc --noEmit`): removed fields and modules fail to compile.

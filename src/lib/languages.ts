@@ -52,11 +52,14 @@ export const localeCodes = [
 export type LocaleCode = (typeof localeCodes)[number]
 export const DEFAULT_LOCALE_CODE: LocaleCode = 'eng'
 
-/** v7 translation keys (`names.jap`, …) to v8 locale codes. */
+/**
+ * Three-letter translation keys (`names.jap`, …) to v8 locale codes. v7 spelled `esl` and `pbr` as
+ * `esla` and `por`.
+ */
 export const localeCodeByV7Key = {
   eng: 'eng',
   esp: 'es-es',
-  esla: 'es-la',
+  esl: 'es-la',
   fra: 'fra',
   deu: 'deu',
   ita: 'ita',
@@ -64,7 +67,7 @@ export const localeCodeByV7Key = {
   kor: 'kor',
   chs: 'chs',
   cht: 'cht',
-  por: 'pt-br',
+  pbr: 'pt-br',
 } as const satisfies Record<string, LocaleCode>
 export type V7LocaleKey = keyof typeof localeCodeByV7Key
 
@@ -152,7 +155,7 @@ export const langMeta: Record<LangSlug, LangMeta> = {
     engName: 'Spanish (Latin America)',
     flag: '🇲🇽',
     pokeApiId: 14,
-    oldCode: 'esla',
+    oldCode: 'esl',
   },
   de: { name: 'Deutsch', engName: 'German', flag: '🇩🇪', pokeApiId: 6, oldCode: 'deu' },
   it: { name: 'Italiano', engName: 'Italian', flag: '🇮🇹', pokeApiId: 8, oldCode: 'ita' },
@@ -178,7 +181,7 @@ export const langMeta: Record<LangSlug, LangMeta> = {
     engName: 'Portuguese (Brazil)',
     flag: '🇧🇷',
     pokeApiId: 13,
-    oldCode: 'por',
+    oldCode: 'pbr',
   },
 }
 
