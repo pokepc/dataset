@@ -66,51 +66,13 @@
     {
       "from": ["slowpoke-galar"],
       "trigger": "use_item",
-      "item": { "id": "galaricacuff", "role": "used" },
+      "item": {
+        "id": "galaricacuff",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Slowbro (Galarian Form)",
-    "esp": "Slowbro (Forma de Galar)",
-    "fra": "Flagadoss (Forme de Galar)",
-    "deu": "Lahmus (Galar-Form)",
-    "ita": "Slowbro (Forma di Galar)",
-    "jap": "ヤドラン (ガラルのすがた)",
-    "kor": "야도란 (가라르의 모습)",
-    "chs": "呆壳兽 (伽勒尔的样子)",
-    "cht": "呆殼獸 (伽勒爾的樣子)"
-  },
-  "genus": {
-    "eng": "Hermit Crab Pokémon",
-    "esp": "Pokémon Ermitaño",
-    "fra": "Pokémon Symbiose",
-    "deu": "Symbiose-Pokémon",
-    "ita": "Pokémon Paguro",
-    "jap": "やどかりポケモン",
-    "kor": "기생포켓몬",
-    "chs": "寄居蟹宝可梦",
-    "cht": "寄居蟹寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Slowbro",
-    "fra": "Flagadoss",
-    "deu": "Lahmus",
-    "jap": "ヤドラン",
-    "kor": "야도란",
-    "chs": "呆壳兽",
-    "cht": "呆殼獸"
-  },
-  "formNames": {
-    "eng": "Galarian Form",
-    "esp": "Forma de Galar",
-    "fra": "Forme de Galar",
-    "deu": "Galar-Form",
-    "ita": "Forma di Galar",
-    "jap": "ガラルのすがた",
-    "kor": "가라르의 모습",
-    "chs": "伽勒尔的样子",
-    "cht": "伽勒爾的樣子"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0080002"
 }

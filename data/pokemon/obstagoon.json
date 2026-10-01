@@ -65,30 +65,13 @@
       "from": ["linoone-galar"],
       "trigger": "level_up",
       "minLevel": 35,
-      "conditions": [{ "key": "time_of_day", "time": "night" }]
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Obstagoon",
-    "fra": "Ixon",
-    "deu": "Barrikadax",
-    "jap": "タチフサグマ",
-    "kor": "가로막구리",
-    "chs": "堵拦熊",
-    "cht": "堵攔熊"
-  },
-  "genus": {
-    "eng": "Blocking Pokémon",
-    "esp": "Pokémon Bloqueador",
-    "fra": "Pokémon Barrage",
-    "deu": "Barrikaden-Pokémon",
-    "ita": "Pokémon Bloccaggio",
-    "jap": "ていしポケモン",
-    "kor": "정지포켓몬",
-    "chs": "停止宝可梦",
-    "cht": "停止寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["home"]
 }

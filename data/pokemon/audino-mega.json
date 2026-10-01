@@ -65,66 +65,49 @@
       "from": ["audino"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "audinite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "audinite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["audino"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "audinite", "role": "held" },
+      "item": {
+        "id": "audinite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Audino",
-    "fra": "MégaNanméouïe",
-    "deu": "Mega-Ohrdoch",
-    "jap": "メガタブンネ",
-    "kor": "메가다부니",
-    "chs": "超级差不多娃娃",
-    "cht": "超級差不多娃娃"
-  },
-  "genus": {
-    "eng": "Hearing Pokémon",
-    "esp": "Pokémon Escucha",
-    "fra": "Pokémon Audition",
-    "deu": "Gehör-Pokémon",
-    "ita": "Pokémon Ascolto",
-    "jap": "ヒヤリングポケモン",
-    "kor": "히어링포켓몬",
-    "chs": "听力宝可梦",
-    "cht": "聽力寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Audino",
-    "fra": "Nanméouïe",
-    "deu": "Ohrdoch",
-    "jap": "タブンネ",
-    "kor": "다부니",
-    "chs": "差不多娃娃",
-    "cht": "差不多娃娃"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0531001"
 }

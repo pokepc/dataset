@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "jungle" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "jungle"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Jungle Pattern)",
-    "fra": "Prismillon (Motif Jungle)",
-    "deu": "Vivillon (Dschungelmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Jungle Pattern",
-    "esp": "Motivo Jungla",
-    "fra": "Motif Jungle",
-    "deu": "Dschungelmuster",
-    "ita": "Motivo Giungla",
-    "jap": "ジャングルのもよう",
-    "kor": "정글의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666017"
 }

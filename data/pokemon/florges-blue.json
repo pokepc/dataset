@@ -80,47 +80,13 @@
     {
       "from": ["floette-blue"],
       "trigger": "use_item",
-      "item": { "id": "shinystone", "role": "used" },
+      "item": {
+        "id": "shinystone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Florges (Blue Flower)",
-    "esp": "Florges (Flor Azul)",
-    "fra": "Florges (Fleur Bleue)",
-    "deu": "Florges (Blaublütler)",
-    "ita": "Florges (Fiore Blu)",
-    "jap": "フラージェス (あおいはな)",
-    "kor": "플라제스 (파란 꽃)"
-  },
-  "genus": {
-    "eng": "Garden Pokémon",
-    "esp": "Pokémon Jardín",
-    "fra": "Pokémon Jardin",
-    "deu": "Garten",
-    "ita": "Pokémon Giardino",
-    "jap": "ガーデンポケモン",
-    "kor": "가든포켓몬",
-    "chs": "花园宝可梦",
-    "cht": "花園寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Florges",
-    "fra": "Florges",
-    "deu": "Florges",
-    "jap": "フラージェス",
-    "kor": "플라제스",
-    "chs": "花洁夫人",
-    "cht": "花潔夫人"
-  },
-  "formNames": {
-    "eng": "Blue Flower",
-    "esp": "Flor Azul",
-    "fra": "Fleur Bleue",
-    "deu": "Blaublütler",
-    "ita": "Fiore Blu",
-    "jap": "あおいはな",
-    "kor": "파란 꽃"
-  },
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0671003"
 }

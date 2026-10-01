@@ -147,31 +147,13 @@
     {
       "from": ["clefairy"],
       "trigger": "use_item",
-      "item": { "id": "moonstone", "role": "used" },
+      "item": {
+        "id": "moonstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Clefable",
-    "fra": "Mélodelfe",
-    "deu": "Pixi",
-    "jap": "ピクシー",
-    "kor": "픽시",
-    "chs": "皮可西",
-    "cht": "皮可西"
-  },
-  "genus": {
-    "eng": "Fairy Pokémon",
-    "esp": "Pokémon Hada",
-    "fra": "Pokémon Fée",
-    "deu": "Feen-Pokémon",
-    "ita": "Pokémon Fata",
-    "jap": "ようせいポケモン",
-    "kor": "요정포켓몬",
-    "chs": "妖精宝可梦",
-    "cht": "妖精寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "xd", "ranch", "bank", "home"]
+  "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "xd", "ranch", "bank", "home"],
+  "championsId": "0036000"
 }

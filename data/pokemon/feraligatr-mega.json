@@ -65,58 +65,33 @@
       "from": ["feraligatr"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "feraligite", "role": "held" },
+      "item": {
+        "id": "feraligite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Feraligatr",
-    "fra": "MégaAligatueur",
-    "deu": "Mega-Impergator",
-    "jap": "メガオーダイル",
-    "kor": "메가장크로다일",
-    "chs": "超级大力鳄",
-    "cht": "超級大力鱷"
-  },
-  "genus": {
-    "eng": "Big Jaw Pokémon",
-    "esp": "Pokémon Fauces",
-    "fra": "Pokémon Mâchoire",
-    "deu": "Großmaul",
-    "ita": "Pokémon Mascellone",
-    "jap": "おおあごポケモン",
-    "kor": "큰턱포켓몬",
-    "chs": "大颚宝可梦",
-    "cht": "大顎寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Feraligatr",
-    "fra": "Aligatueur",
-    "deu": "Impergator",
-    "jap": "オーダイル",
-    "kor": "장크로다일",
-    "chs": "大力鳄",
-    "cht": "大力鱷"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0160001"
 }

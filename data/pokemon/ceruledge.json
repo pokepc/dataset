@@ -63,29 +63,13 @@
     {
       "from": ["charcadet"],
       "trigger": "use_item",
-      "item": { "id": "maliciousarmor", "role": "used" },
+      "item": {
+        "id": "maliciousarmor",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Ceruledge",
-    "fra": "Malvalame",
-    "deu": "Azugladis",
-    "jap": "ソウブレイズ",
-    "kor": "파라블레이즈",
-    "chs": "苍炎刃鬼",
-    "cht": "蒼炎刃鬼"
-  },
-  "genus": {
-    "eng": "Fire Blades Pokémon",
-    "fra": "Feu Bretteur",
-    "deu": "Feuerklingen",
-    "jap": "ひのけんしポケモン",
-    "kor": "불의검사포켓몬",
-    "chs": "火剑士宝可梦",
-    "cht": "火劍士寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0937000"
 }

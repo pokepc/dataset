@@ -78,32 +78,13 @@
     {
       "from": ["spritzee"],
       "trigger": "trade",
-      "item": { "id": "sachet", "role": "held" },
+      "item": {
+        "id": "sachet",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Aromatisse",
-    "fra": "Cocotine",
-    "deu": "Parfinesse",
-    "jap": "フレフワン",
-    "kor": "프레프티르",
-    "chs": "芳香精",
-    "cht": "芳香精"
-  },
-  "genus": {
-    "eng": "Fragrance Pokémon",
-    "esp": "Pokémon Fragancia",
-    "fra": "Pokémon Parfum",
-    "deu": "Duft-Pokémon",
-    "ita": "Pokémon Fragranza",
-    "jap": "ほうこうポケモン",
-    "kor": "방향포켓몬",
-    "chs": "芳香宝可梦",
-    "cht": "芳香寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -114,5 +95,6 @@
     "usum-um",
     "swsh-sw",
     "home"
-  ]
+  ],
+  "championsId": "0683000"
 }

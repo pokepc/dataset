@@ -65,23 +65,46 @@
       "from": ["kyogre"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "lza"],
       "trigger": "automatic",
-      "item": { "id": "blueorb", "role": "held" },
-      "conditions": [{ "key": "battle_event", "events": ["switch_in"] }],
+      "item": {
+        "id": "blueorb",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "battle_event",
+          "events": ["switch_in"]
+        }
+      ],
       "revert": [
         {
           "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["battle_end"]
+            }
+          ]
         },
         {
           "games": ["lza"],
           "trigger": "automatic",
-          "conditions": [{ "key": "interaction", "interaction": "recall_outside_battle" }]
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "recall_outside_battle"
+            }
+          ]
         },
         {
           "games": ["oras-or", "oras-as"],
           "trigger": "automatic",
-          "conditions": [{ "key": "interaction", "interaction": "contest_spectacular_ends" }]
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "contest_spectacular_ends"
+            }
+          ]
         }
       ]
     },
@@ -89,58 +112,29 @@
       "from": ["kyogre"],
       "games": ["oras-or", "oras-as"],
       "trigger": "interact",
-      "item": { "id": "blueorb", "role": "held" },
-      "conditions": [{ "key": "interaction", "interaction": "enter_contest_spectacular" }],
+      "item": {
+        "id": "blueorb",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "enter_contest_spectacular"
+        }
+      ],
       "revert": [
         "battle_end",
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "interaction", "interaction": "contest_spectacular_ends" }]
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "contest_spectacular_ends"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Kyogre (Primal Reversion)",
-    "esp": "Kyogre (Regresión Primigenia)",
-    "fra": "Kyogre (Primo-Résurgence)",
-    "deu": "Kyogre (Protomorphose)",
-    "ita": "Kyogre (Archeorisveglio)",
-    "jap": "カイオーガ (ゲンシカイキのすがた)",
-    "kor": "가이오가 (원시회귀의 모습)",
-    "chs": "盖欧卡 (原始回归的样子)",
-    "cht": "蓋歐卡 (原始回歸的樣子)"
-  },
-  "genus": {
-    "eng": "Sea Basin Pokémon",
-    "esp": "Pokémon Cuenca Mar",
-    "fra": "Pokémon Bassinmarin",
-    "deu": "Seegründler-Pokémon",
-    "ita": "Pokémon Oceano",
-    "jap": "かいていポケモン",
-    "kor": "해저포켓몬",
-    "chs": "海底宝可梦",
-    "cht": "海底寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Kyogre",
-    "fra": "Kyogre",
-    "deu": "Kyogre",
-    "jap": "カイオーガ",
-    "kor": "가이오가",
-    "chs": "盖欧卡",
-    "cht": "蓋歐卡"
-  },
-  "formNames": {
-    "eng": "Primal Reversion",
-    "esp": "Regresión Primigenia",
-    "fra": "Primo-Résurgence",
-    "deu": "Protomorphose",
-    "ita": "Archeorisveglio",
-    "jap": "ゲンシカイキのすがた",
-    "kor": "원시회귀의 모습",
-    "chs": "原始回归的样子",
-    "cht": "原始回歸的樣子"
-  },
   "transferOnlyIn": ["oras-or", "sm-s", "sm-m", "usum-us"]
 }

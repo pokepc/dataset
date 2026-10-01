@@ -115,32 +115,18 @@
     {
       "from": ["snorunt"],
       "trigger": "use_item",
-      "item": { "id": "dawnstone", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "dawnstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Froslass",
-    "fra": "Momartik",
-    "deu": "Frosdedje",
-    "jap": "ユキメノコ",
-    "kor": "눈여아",
-    "chs": "雪妖女",
-    "cht": "雪妖女"
-  },
-  "genus": {
-    "eng": "Snow Land Pokémon",
-    "esp": "Pokémon Tierra Fría",
-    "fra": "Pokémon Enneigement",
-    "deu": "Schneegebiets-Pokémon",
-    "ita": "Pokémon Suolnevoso",
-    "jap": "ゆきぐにポケモン",
-    "kor": "설국포켓몬",
-    "chs": "雪国宝可梦",
-    "cht": "雪國寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "hgss-hg",
@@ -151,5 +137,6 @@
     "b2w2-w2",
     "bank",
     "home"
-  ]
+  ],
+  "championsId": "0478000"
 }

@@ -64,41 +64,13 @@
     {
       "from": ["sinistea-antique"],
       "trigger": "use_item",
-      "item": { "id": "chippedpot", "role": "used" },
+      "item": {
+        "id": "chippedpot",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Polteageist (Antique Form)",
-    "fra": "Polthégeist (Forme Authentique)",
-    "deu": "Mortipot (Originalform)",
-    "jap": "ポットデス (しんさくフォルム)"
-  },
-  "genus": {
-    "eng": "Black Tea Pokémon",
-    "esp": "Pokémon Té",
-    "fra": "Pokémon Thé Noir",
-    "deu": "Schwarztee-Pokémon",
-    "ita": "Pokémon Tè",
-    "jap": "こうちゃポケモン",
-    "kor": "홍차포켓몬",
-    "chs": "红茶宝可梦",
-    "cht": "紅茶寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Polteageist",
-    "fra": "Polthégeist",
-    "deu": "Mortipot",
-    "jap": "ポットデス",
-    "kor": "포트데스",
-    "chs": "怖思壶",
-    "cht": "怖思壺"
-  },
-  "formNames": {
-    "eng": "Antique Form",
-    "fra": "Forme Authentique",
-    "deu": "Originalform",
-    "jap": "しんさくフォルム"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0855001"
 }

@@ -64,62 +64,32 @@
       "from": ["darkrai"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "darkranite", "role": "held" },
+      "item": {
+        "id": "darkranite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Darkrai",
-    "esp": "Mega Darkrai",
-    "esla": "Mega Darkrai",
-    "fra": "MégaDarkrai",
-    "deu": "Mega-Darkrai",
-    "ita": "Mega Darkrai",
-    "jap": "メガダークライ",
-    "kor": "메가다크라이",
-    "chs": "超级达克莱伊",
-    "cht": "超級達克萊伊"
-  },
-  "genus": {
-    "eng": "Pitch-Black Pokémon",
-    "esp": "Pokémon Oscuridad",
-    "fra": "Pokémon Noirtotal",
-    "deu": "Dunkelnacht",
-    "ita": "Pokémon Neropesto",
-    "jap": "あんこくポケモン",
-    "kor": "암흑포켓몬",
-    "chs": "暗黑宝可梦",
-    "cht": "暗黑寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Darkrai",
-    "fra": "Darkrai",
-    "deu": "Darkrai",
-    "jap": "ダークライ",
-    "kor": "다크라이",
-    "chs": "达克莱伊",
-    "cht": "達克萊伊"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
   "transferOnlyIn": []
 }

@@ -300,7 +300,7 @@ export function resolveMainAvailability(parsed: MainAvailability, pokemon: Avail
   // Unqualified species rows cannot distinguish non-default alternate forms.
   if (/^\d{4}$/.test(pokemon.nid) && rows.some((row) => !row.form))
     return rows.find((row) => !row.form)
-  const aliases = [pokemon.formNames.eng ?? '', pokemon.formId ?? ''].map(formKey).filter(Boolean)
+  const aliases = [pokemon.formName ?? '', pokemon.formId ?? ''].map(formKey).filter(Boolean)
   const regional = {
     alola: 'alolan',
     galar: 'galarian',

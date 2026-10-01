@@ -65,66 +65,49 @@
       "from": ["camerupt", "camerupt-f"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "cameruptite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "cameruptite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["camerupt", "camerupt-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "cameruptite", "role": "held" },
+      "item": {
+        "id": "cameruptite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Camerupt",
-    "fra": "MégaCamérupt",
-    "deu": "Mega-Camerupt",
-    "jap": "メガバクーダ",
-    "kor": "메가폭타",
-    "chs": "超级喷火驼",
-    "cht": "超級噴火駝"
-  },
-  "genus": {
-    "eng": "Eruption Pokémon",
-    "esp": "Pokémon Erupción",
-    "fra": "Pokémon Éruption",
-    "deu": "Ausbruch",
-    "ita": "Pokémon Eruzione",
-    "jap": "ふんかポケモン",
-    "kor": "분화포켓몬",
-    "chs": "喷火宝可梦",
-    "cht": "噴火寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Camerupt",
-    "fra": "Camérupt",
-    "deu": "Camerupt",
-    "jap": "バクーダ",
-    "kor": "폭타",
-    "chs": "喷火驼",
-    "cht": "噴火駝"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m", "usum-us", "usum-um"]
+  "transferOnlyIn": ["sm-s", "sm-m", "usum-us", "usum-um"],
+  "championsId": "0323001"
 }

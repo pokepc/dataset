@@ -66,59 +66,32 @@
       "from": ["tatsugiri-droopy"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "tatsugirinite", "role": "held" },
+      "item": {
+        "id": "tatsugirinite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Tatsugiri (Droopy Form)",
-    "esp": "Mega Tatsugiri (Droopy Form)",
-    "esla": "Mega Tatsugiri (Droopy Form)",
-    "fra": "MégaNigirigon (Forme Affalée)",
-    "deu": "Mega-Nigiragi (Droopy Form)",
-    "ita": "Mega Tatsugiri (Droopy Form)",
-    "jap": "メガシャリタツ (たれたすがた)",
-    "kor": "메가Tatsugiri (Droopy Form)",
-    "chs": "超级Tatsugiri (Droopy Form)",
-    "cht": "超級Tatsugiri (Droopy Form)"
-  },
-  "genus": {
-    "eng": "Mimicry Pokémon",
-    "fra": "Mimétisme",
-    "deu": "Mimesen",
-    "jap": "ぎたいポケモン",
-    "kor": "의태포켓몬",
-    "chs": "拟态宝可梦",
-    "cht": "擬態寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Tatsugiri",
-    "fra": "Nigirigon",
-    "deu": "Nigiragi",
-    "jap": "シャリタツ",
-    "kor": "싸리용",
-    "chs": "米立龙",
-    "cht": "米立龍"
-  },
-  "formNames": {
-    "eng": "Droopy Mega Form",
-    "esp": "Forma Droopy Mega",
-    "fra": "Affalée Méga-Forme",
-    "deu": "Droopy Mega-Form",
-    "ita": "Forma Droopy Mega",
-    "jap": "たれたすがた メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
   "transferOnlyIn": []
 }

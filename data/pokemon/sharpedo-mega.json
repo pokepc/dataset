@@ -65,66 +65,49 @@
       "from": ["sharpedo"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "sharpedonite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "sharpedonite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["sharpedo"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "sharpedonite", "role": "held" },
+      "item": {
+        "id": "sharpedonite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Sharpedo",
-    "fra": "MégaSharpedo",
-    "deu": "Mega-Tohaido",
-    "jap": "メガサメハダー",
-    "kor": "메가샤크니아",
-    "chs": "超级巨牙鲨",
-    "cht": "超級巨牙鯊"
-  },
-  "genus": {
-    "eng": "Brutal Pokémon",
-    "esp": "Pokémon Voraz",
-    "fra": "Pokémon Brutal",
-    "deu": "Brutal-Pokémon",
-    "ita": "Pokémon Brutale",
-    "jap": "きょうぼうポケモン",
-    "kor": "난폭포켓몬",
-    "chs": "凶暴宝可梦",
-    "cht": "凶暴寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Sharpedo",
-    "fra": "Sharpedo",
-    "deu": "Tohaido",
-    "jap": "サメハダー",
-    "kor": "샤크니아",
-    "chs": "巨牙鲨",
-    "cht": "巨牙鯊"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0319001"
 }

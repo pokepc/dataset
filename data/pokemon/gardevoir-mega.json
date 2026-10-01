@@ -65,66 +65,49 @@
       "from": ["gardevoir"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "gardevoirite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "gardevoirite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["gardevoir"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "gardevoirite", "role": "held" },
+      "item": {
+        "id": "gardevoirite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Gardevoir",
-    "fra": "MégaGardevoir",
-    "deu": "Mega-Guardevoir",
-    "jap": "メガサーナイト",
-    "kor": "메가가디안",
-    "chs": "超级沙奈朵",
-    "cht": "超級沙奈朵"
-  },
-  "genus": {
-    "eng": "Embrace Pokémon",
-    "esp": "Pokémon Envolvente",
-    "fra": "Pokémon Étreinte",
-    "deu": "Umarmungs-Pokémon",
-    "ita": "Pokémon Abbraccio",
-    "jap": "ほうようポケモン",
-    "kor": "포용포켓몬",
-    "chs": "包容宝可梦",
-    "cht": "包容寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Gardevoir",
-    "fra": "Gardevoir",
-    "deu": "Guardevoir",
-    "jap": "サーナイト",
-    "kor": "가디안",
-    "chs": "沙奈朵",
-    "cht": "沙奈朵"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0282001"
 }

@@ -65,60 +65,33 @@
       "from": ["scovillain"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "scovillainite", "role": "held" },
+      "item": {
+        "id": "scovillainite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Scovillain",
-    "esp": "Mega Scovillain",
-    "esla": "Mega Scovillain",
-    "fra": "MégaScovilain",
-    "deu": "Mega-Halupenjo",
-    "ita": "Mega Scovillain",
-    "jap": "メガスコヴィラン",
-    "kor": "메가스코빌런",
-    "chs": "超级狠辣椒",
-    "cht": "超級狠辣椒"
-  },
-  "genus": {
-    "eng": "Spicy Pepper Pokémon",
-    "fra": "Habanero",
-    "deu": "Habanero",
-    "jap": "ハバネロポケモン",
-    "kor": "하바네로포켓몬",
-    "chs": "热辣宝可梦",
-    "cht": "熱辣寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Scovillain",
-    "fra": "Scovilain",
-    "deu": "Halupenjo",
-    "jap": "スコヴィラン",
-    "kor": "스코빌런",
-    "chs": "狠辣椒",
-    "cht": "狠辣椒"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0952001"
 }

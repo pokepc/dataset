@@ -113,47 +113,16 @@
       "from": ["aipom"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "known_move", "move": "doublehit" },
-        { "key": "gender", "gender": "female" }
+        {
+          "key": "known_move",
+          "move": "doublehit"
+        },
+        {
+          "key": "gender",
+          "gender": "female"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Ambipom (Female)",
-    "fra": "Capidextre (Female)",
-    "deu": "Ambidiffel (Female)"
-  },
-  "genus": {
-    "eng": "Long Tail Pokémon",
-    "esp": "Pokémon Cola Larga",
-    "fra": "Pokémon Longqueue",
-    "deu": "Langschweif",
-    "ita": "Pokémon Lungacoda",
-    "jap": "おながポケモン",
-    "kor": "긴꼬리포켓몬",
-    "chs": "长尾宝可梦",
-    "cht": "長尾寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Ambipom",
-    "fra": "Capidextre",
-    "deu": "Ambidiffel",
-    "jap": "エテボース",
-    "kor": "겟핸보숭",
-    "chs": "双尾怪手",
-    "cht": "雙尾怪手"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["ranch", "bw-b", "bw-w", "bank", "sm-s", "sm-m", "home"]
 }

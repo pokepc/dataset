@@ -90,12 +90,15 @@
       "trigger": "level_up",
       "minLevel": 25,
       "conditions": [
-        { "key": "time_of_day", "time": "day" },
-        { "key": "ability", "abilities": ["keeneye", "vitalspirit", "steadfast"] }
-      ],
-      "notes": {
-        "eng": "Own Tempo identifies a distinct Rockruff variant, not an Ability Capsule/Patch change. Dusk hours depend on the game."
-      }
+        {
+          "key": "time_of_day",
+          "time": "day"
+        },
+        {
+          "key": "ability",
+          "abilities": ["keeneye", "vitalspirit", "steadfast"]
+        }
+      ]
     },
     {
       "from": ["rockruff"],
@@ -103,35 +106,17 @@
       "trigger": "level_up",
       "minLevel": 25,
       "conditions": [
-        { "key": "time_of_day", "time": "day" },
-        { "key": "ability", "abilities": ["keeneye", "vitalspirit", "steadfast"] }
-      ],
-      "notes": {
-        "eng": "Own Tempo identifies a distinct Rockruff variant, not an Ability Capsule/Patch change. Dusk hours depend on the game."
-      }
+        {
+          "key": "time_of_day",
+          "time": "day"
+        },
+        {
+          "key": "ability",
+          "abilities": ["keeneye", "vitalspirit", "steadfast"]
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Lycanroc",
-    "fra": "Lougaroc",
-    "deu": "Wolwerock",
-    "jap": "ルガルガン",
-    "kor": "루가루암",
-    "chs": "鬃岩狼人",
-    "cht": "鬃岩狼人"
-  },
-  "genus": {
-    "eng": "Wolf Pokémon",
-    "esp": "Pokémon Lobo",
-    "fra": "Pokémon Loup",
-    "deu": "Wolfs-Pokémon",
-    "ita": "Pokémon Lupo",
-    "jap": "オオカミポケモン",
-    "kor": "늑대포켓몬",
-    "chs": "狼宝可梦",
-    "cht": "狼寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "home"]
+  "transferOnlyIn": ["bank", "home"],
+  "championsId": "0745000"
 }

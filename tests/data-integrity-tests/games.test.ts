@@ -1,13 +1,18 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllGames, loadAllPokedexes, originMarksFs, regionsFs } from '../../src/lib/fs'
+import {
+  loadAllGames,
+  loadAllOriginMarks,
+  loadAllPokedexes,
+  loadAllRegions,
+} from '../../src/lib/fs'
 import { gameSchema } from '../../src/lib/schemas'
 import { validate } from '../_utils'
 
-const pokemonRegionsMap = Object.fromEntries(regionsFs.all().map((region) => [region.id, region]))
+const pokemonRegionsMap = Object.fromEntries(loadAllRegions().map((region) => [region.id, region]))
 const pokedexesById = Object.fromEntries(loadAllPokedexes().map((pokedex) => [pokedex.id, pokedex]))
 const originMarksById = Object.fromEntries(
-  originMarksFs.all().map((originMark) => [originMark.id, originMark]),
+  loadAllOriginMarks().map((originMark) => [originMark.id, originMark]),
 )
 
 describe('Validate games/*.json data', () => {

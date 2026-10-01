@@ -66,37 +66,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Pikachu (Gigantamax Form)",
-    "fra": "Pikachu (Forme Gigamax)",
-    "deu": "Pikachu (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus-Pokémon",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Pikachu",
-    "fra": "Pikachu",
-    "deu": "Pikachu",
-    "jap": "ピカチュウ",
-    "kor": "피카츄",
-    "chs": "皮卡丘",
-    "cht": "皮卡丘"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

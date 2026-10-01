@@ -136,45 +136,13 @@
       "from": ["doduo"],
       "trigger": "level_up",
       "minLevel": 31,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Dodrio (Female)",
-    "fra": "Dodrio (Female)",
-    "deu": "Dodri (Female)"
-  },
-  "genus": {
-    "eng": "Triple Bird Pokémon",
-    "esp": "Pokémon Ave Triple",
-    "fra": "Pokémon Trioiseau",
-    "deu": "Trivogel",
-    "ita": "Pokémon Triuccello",
-    "jap": "みつごどりポケモン",
-    "kor": "세쌍둥이새포켓몬",
-    "chs": "三头鸟宝可梦",
-    "cht": "三頭鳥寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Dodrio",
-    "fra": "Dodrio",
-    "deu": "Dodri",
-    "jap": "ドードリオ",
-    "kor": "두트리오",
-    "chs": "嘟嘟利",
-    "cht": "嘟嘟利"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["boxrs", "col", "ranch", "bank", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

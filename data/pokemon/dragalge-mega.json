@@ -65,58 +65,33 @@
       "from": ["dragalge"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "dragalgite", "role": "held" },
+      "item": {
+        "id": "dragalgite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Dragalge",
-    "fra": "MégaKravarech",
-    "deu": "Mega-Tandrak",
-    "jap": "メガドラミドロ",
-    "kor": "메가드래캄",
-    "chs": "超级毒藻龙",
-    "cht": "超級毒藻龍"
-  },
-  "genus": {
-    "eng": "Mock Kelp Pokémon",
-    "esp": "Pokémon Pseudoalga",
-    "fra": "Pokémon Simulalgue",
-    "deu": "Tangmimikry-Pokémon",
-    "ita": "Pokémon Similalga",
-    "jap": "クサモドキポケモン",
-    "kor": "풀모방포켓몬",
-    "chs": "似草宝可梦",
-    "cht": "似草寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Dragalge",
-    "fra": "Kravarech",
-    "deu": "Tandrak",
-    "jap": "ドラミドロ",
-    "kor": "드래캄",
-    "chs": "毒藻龙",
-    "cht": "毒藻龍"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0691001"
 }

@@ -149,31 +149,13 @@
     {
       "from": ["jigglypuff"],
       "trigger": "use_item",
-      "item": { "id": "moonstone", "role": "used" },
+      "item": {
+        "id": "moonstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Wigglytuff",
-    "fra": "Grodoudou",
-    "deu": "Knuddeluff",
-    "jap": "プクリン",
-    "kor": "푸크린",
-    "chs": "胖可丁",
-    "cht": "胖可丁"
-  },
-  "genus": {
-    "eng": "Balloon Pokémon",
-    "esp": "Pokémon Globo",
-    "fra": "Pokémon Bouboule",
-    "deu": "Ballon-Pokémon",
-    "ita": "Pokémon Pallone",
-    "jap": "ふうせんポケモン",
-    "kor": "풍선포켓몬",
-    "chs": "气球宝可梦",
-    "cht": "氣球寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["boxrs", "col", "xd", "ranch", "bank", "home"]
+  "transferOnlyIn": ["boxrs", "col", "xd", "ranch", "bank", "home"],
+  "championsId": "0040000"
 }

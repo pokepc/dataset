@@ -145,31 +145,13 @@
     {
       "from": ["eevee"],
       "trigger": "use_item",
-      "item": { "id": "thunderstone", "role": "used" },
+      "item": {
+        "id": "thunderstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Jolteon",
-    "fra": "Voltali",
-    "deu": "Blitza",
-    "jap": "サンダース",
-    "kor": "쥬피썬더",
-    "chs": "雷伊布",
-    "cht": "雷伊布"
-  },
-  "genus": {
-    "eng": "Lightning Pokémon",
-    "esp": "Pokémon Relámpago",
-    "fra": "Pokémon Orage",
-    "deu": "Blitz-Pokémon",
-    "ita": "Pokémon Luminoso",
-    "jap": "かみなりポケモン",
-    "kor": "번개포켓몬",
-    "chs": "雷宝可梦",
-    "cht": "雷寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "ranch", "bw-b", "bw-w", "bank", "home"]
+  "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "ranch", "bw-b", "bw-w", "bank", "home"],
+  "championsId": "0135000"
 }

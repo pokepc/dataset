@@ -65,60 +65,33 @@
       "from": ["glimmora"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "glimmoranite", "role": "held" },
+      "item": {
+        "id": "glimmoranite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Glimmora",
-    "esp": "Mega Glimmora",
-    "esla": "Mega Glimmora",
-    "fra": "MégaFloréclat",
-    "deu": "Mega-Lumiflora",
-    "ita": "Mega Glimmora",
-    "jap": "メガキラフロル",
-    "kor": "메가킬라플로르",
-    "chs": "超级晶光花",
-    "cht": "超級晶光花"
-  },
-  "genus": {
-    "eng": "Ore Pokémon",
-    "fra": "Minerai",
-    "deu": "Erz",
-    "jap": "こうせきポケモン",
-    "kor": "광석포켓몬",
-    "chs": "矿石宝可梦",
-    "cht": "礦石寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Glimmora",
-    "fra": "Floréclat",
-    "deu": "Lumiflora",
-    "jap": "キラフロル",
-    "kor": "킬라플로르",
-    "chs": "晶光花",
-    "cht": "晶光花"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0970001"
 }

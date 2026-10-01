@@ -130,31 +130,13 @@
     {
       "from": ["togepi"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Togetic",
-    "fra": "Togetic",
-    "deu": "Togetic",
-    "jap": "トゲチック",
-    "kor": "토게틱",
-    "chs": "波克基古",
-    "cht": "波克基古"
-  },
-  "genus": {
-    "eng": "Happiness Pokémon",
-    "esp": "Pokémon Felicidad",
-    "fra": "Pokémon Bonheur",
-    "deu": "Freuden-Pokémon",
-    "ita": "Pokémon Felicità",
-    "jap": "しあわせポケモン",
-    "kor": "행복포켓몬",
-    "chs": "幸福宝可梦",
-    "cht": "幸福寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

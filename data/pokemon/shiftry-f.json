@@ -126,47 +126,18 @@
     {
       "from": ["nuzleaf"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Shiftry (Female)",
-    "fra": "Tengalice (Female)",
-    "deu": "Tengulist (Female)"
-  },
-  "genus": {
-    "eng": "Wicked Pokémon",
-    "esp": "Pokémon Malvado",
-    "fra": "Pokémon Malveillant",
-    "deu": "Verschlagen-Pokémon",
-    "ita": "Pokémon Burbero",
-    "jap": "よこしまポケモン",
-    "kor": "부정하기포켓몬",
-    "chs": "邪恶宝可梦",
-    "cht": "邪惡寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Shiftry",
-    "fra": "Tengalice",
-    "deu": "Tengulist",
-    "jap": "ダーテング",
-    "kor": "다탱구",
-    "chs": "狡猾天狗",
-    "cht": "狡猾天狗"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",

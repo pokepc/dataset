@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "modern" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "modern"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Modern Pattern)",
-    "fra": "Prismillon (Motif Métropole)",
-    "deu": "Vivillon (Innovationsmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Modern Pattern",
-    "esp": "Motivo Moderno",
-    "fra": "Motif Métropole",
-    "deu": "Innovationsmuster",
-    "ita": "Motivo Trendy",
-    "jap": "モダンなもよう",
-    "kor": "모던한 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666007"
 }

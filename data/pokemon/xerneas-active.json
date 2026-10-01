@@ -64,34 +64,14 @@
     {
       "from": ["xerneas"],
       "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["battle_start", "switch_in"] }],
-      "notes": {
-        "eng": "Neutral and Active Modes are appearance changes. This rule covers games representing distinct forms; GO and Legends: Z-A instead animate the appearance."
-      },
+      "conditions": [
+        {
+          "key": "battle_event",
+          "events": ["battle_start", "switch_in"]
+        }
+      ],
       "revert": ["switch_out", "battle_end"]
     }
   ],
-  "names": {
-    "eng": "Xerneas (Active Mode)",
-    "fra": "Xerneas (Mode Déchaîné)",
-    "deu": "Xerneas (Aktiv-Modus)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Xerneas",
-    "fra": "Xerneas",
-    "deu": "Xerneas"
-  },
-  "formNames": {
-    "eng": "Active Mode",
-    "esp": "Modo Activo",
-    "fra": "Mode Déchaîné",
-    "deu": "Aktiv-Modus",
-    "ita": "Modo Attivo",
-    "jap": "アクティブモード",
-    "kor": "액티브모드",
-    "chs": "活跃模式",
-    "cht": "活躍模式"
-  },
   "transferOnlyIn": ["xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-um"]
 }

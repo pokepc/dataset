@@ -103,51 +103,14 @@
       "from": ["burmy-trash"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Wormadam (Trash Cloak)",
-    "esp": "Wormadam (Tronco Basura)",
-    "fra": "Cheniselle (Cape Déchet)",
-    "deu": "Burmadame (Lumpenumhang)",
-    "ita": "Wormadam (Manto Scarti)",
-    "jap": "ミノマダム (ゴミのミノ)",
-    "kor": "도롱마담 (슈레도롱)",
-    "chs": "结草贵妇 (垃圾蓑衣)",
-    "cht": "結草貴婦 (垃圾蓑衣)"
-  },
-  "genus": {
-    "eng": "Bagworm Pokémon",
-    "esp": "Pokémon Larva",
-    "fra": "Pokémon Ver Caché",
-    "deu": "Beutelwurm",
-    "ita": "Pokémon Larva",
-    "jap": "みのむしポケモン",
-    "kor": "도롱이벌레포켓몬",
-    "chs": "蓑衣虫宝可梦",
-    "cht": "蓑衣蟲寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Wormadam",
-    "fra": "Cheniselle",
-    "deu": "Burmadame",
-    "jap": "ミノマダム",
-    "kor": "도롱마담",
-    "chs": "结草贵妇",
-    "cht": "結草貴婦"
-  },
-  "formNames": {
-    "eng": "Trash Cloak",
-    "esp": "Tronco Basura",
-    "fra": "Cape Déchet",
-    "deu": "Lumpenumhang",
-    "ita": "Manto Scarti",
-    "jap": "ゴミのミノ",
-    "kor": "슈레도롱",
-    "chs": "垃圾蓑衣",
-    "cht": "垃圾蓑衣"
-  },
   "transferOnlyIn": [
     "ranch",
     "bw-b",

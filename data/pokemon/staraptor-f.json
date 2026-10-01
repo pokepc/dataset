@@ -113,46 +113,14 @@
       "from": ["staravia"],
       "trigger": "level_up",
       "minLevel": 34,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Staraptor (Female)",
-    "fra": "Étouraptor (Female)",
-    "deu": "Staraptor (Female)"
-  },
-  "genus": {
-    "eng": "Predator Pokémon",
-    "esp": "Pokémon Depredador",
-    "fra": "Pokémon Rapace",
-    "deu": "Raubtier",
-    "ita": "Pokémon Rapace",
-    "jap": "もうきんポケモン",
-    "kor": "맹금포켓몬",
-    "chs": "猛禽宝可梦",
-    "cht": "猛禽寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Staraptor",
-    "fra": "Étouraptor",
-    "deu": "Staraptor",
-    "jap": "ムクホーク",
-    "kor": "찌르호크",
-    "chs": "姆克鹰",
-    "cht": "姆克鷹"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "ranch",
     "bw-b",
@@ -164,5 +132,6 @@
     "usum-us",
     "usum-um",
     "home"
-  ]
+  ],
+  "championsId": "0398000"
 }

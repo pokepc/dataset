@@ -65,58 +65,33 @@
       "from": ["chesnaught"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "chesnaughtite", "role": "held" },
+      "item": {
+        "id": "chesnaughtite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Chesnaught",
-    "fra": "MégaBlindépique",
-    "deu": "Mega-Brigaron",
-    "jap": "メガブリガロン",
-    "kor": "메가브리가론",
-    "chs": "超级布里卡隆",
-    "cht": "超級布里卡隆"
-  },
-  "genus": {
-    "eng": "Spiny Armor Pokémon",
-    "esp": "Pokémon Corazaespín",
-    "fra": "Pokémon Épinarmure",
-    "deu": "Spitzpanzer",
-    "ita": "Pokémon Spincorazza",
-    "jap": "とげよろいポケモン",
-    "kor": "가시갑옷포켓몬",
-    "chs": "刺铠宝可梦",
-    "cht": "刺鎧寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Chesnaught",
-    "fra": "Blindépique",
-    "deu": "Brigaron",
-    "jap": "ブリガロン",
-    "kor": "브리가론",
-    "chs": "布里卡隆",
-    "cht": "布里卡隆"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0652001"
 }

@@ -137,32 +137,19 @@
     {
       "from": ["exeggcute"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
-      "conditions": [{ "key": "region", "region": "alola", "relation": "outside" }]
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "region",
+          "region": "alola",
+          "relation": "outside"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Exeggutor",
-    "fra": "Noadkoko",
-    "deu": "Kokowei",
-    "jap": "ナッシー",
-    "kor": "나시",
-    "chs": "椰蛋树",
-    "cht": "椰蛋樹"
-  },
-  "genus": {
-    "eng": "Coconut Pokémon",
-    "esp": "Pokémon Coco",
-    "fra": "Pokémon Fruitpalme",
-    "deu": "Palmfrucht-Pokémon",
-    "ita": "Pokémon Nocecocco",
-    "jap": "やしのみポケモン",
-    "kor": "야자열매포켓몬",
-    "chs": "椰子宝可梦",
-    "cht": "椰子寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

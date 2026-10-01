@@ -101,59 +101,25 @@
         "sv-v"
       ],
       "trigger": "use_item",
-      "item": { "id": "revealglass", "role": "used", "consumed": false },
+      "item": {
+        "id": "revealglass",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "revealglass", "role": "used", "consumed": false },
+          "item": {
+            "id": "revealglass",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Landorus (Therian Forme)",
-    "esp": "Landorus (Forma Tótem)",
-    "fra": "Démétéros (Forme Totémique)",
-    "deu": "Demeteros (Tiergeistform)",
-    "ita": "Landorus (Forma Totem)",
-    "jap": "ランドロス (れいじゅうフォルム)",
-    "kor": "랜드로스 (영물폼)",
-    "chs": "土地云 (灵兽形态)",
-    "cht": "土地雲 (靈獸形態)"
-  },
-  "genus": {
-    "eng": "Abundance Pokémon",
-    "esp": "Pokémon Fertilidad",
-    "fra": "Pokémon Fertilité",
-    "deu": "Reichtums-Pokémon",
-    "ita": "Pokémon Fertilità",
-    "jap": "ほうじょうポケモン",
-    "kor": "풍요포켓몬",
-    "chs": "丰饶宝可梦",
-    "cht": "豐饒寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Landorus",
-    "fra": "Démétéros",
-    "deu": "Demeteros",
-    "jap": "ランドロス",
-    "kor": "랜드로스",
-    "chs": "土地云",
-    "cht": "土地雲"
-  },
-  "formNames": {
-    "eng": "Therian Forme",
-    "esp": "Forma Tótem",
-    "fra": "Forme Totémique",
-    "deu": "Tiergeistform",
-    "ita": "Forma Totem",
-    "jap": "れいじゅうフォルム",
-    "kor": "영물폼",
-    "chs": "灵兽形态",
-    "cht": "靈獸形態"
-  },
   "transferOnlyIn": [
     "b2w2-b2",
     "b2w2-w2",

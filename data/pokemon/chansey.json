@@ -144,39 +144,33 @@
     {
       "from": ["happiny"],
       "trigger": "level_up",
-      "item": { "id": "ovalstone", "role": "held" },
-      "conditions": [{ "key": "time_of_day", "time": "day" }]
+      "item": {
+        "id": "ovalstone",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
     },
     {
       "from": ["happiny"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "ovalstone", "role": "used" },
-      "conditions": [{ "key": "time_of_day", "time": "day" }],
+      "item": {
+        "id": "ovalstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Chansey",
-    "fra": "Leveinard",
-    "deu": "Chaneira",
-    "jap": "ラッキー",
-    "kor": "럭키",
-    "chs": "吉利蛋",
-    "cht": "吉利蛋"
-  },
-  "genus": {
-    "eng": "Egg Pokémon",
-    "esp": "Pokémon Huevo",
-    "fra": "Pokémon Œuf",
-    "deu": "Ei-Pokémon",
-    "ita": "Pokémon Uovo",
-    "jap": "たまごポケモン",
-    "kor": "알포켓몬",
-    "chs": "蛋宝可梦",
-    "cht": "蛋寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "ranch", "bw-b", "bank", "home"]
 }

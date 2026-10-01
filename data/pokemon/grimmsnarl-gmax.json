@@ -68,37 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Grimmsnarl (Gigantamax Form)",
-    "fra": "Angoliath (Forme Gigamax)",
-    "deu": "Olangaar (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Bulk Up Pokémon",
-    "esp": "Pokémon Voluminoso",
-    "fra": "Pokémon Gonflette",
-    "deu": "Muskelaufbau-Pokémon",
-    "ita": "Pokémon Granfisico",
-    "jap": "ビルドアップポケモン",
-    "kor": "벌크업포켓몬",
-    "chs": "健美宝可梦",
-    "cht": "健美寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Grimmsnarl",
-    "fra": "Angoliath",
-    "deu": "Olangaar",
-    "jap": "オーロンゲ",
-    "kor": "오롱털",
-    "chs": "长毛巨魔",
-    "cht": "長毛巨魔"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

@@ -111,44 +111,33 @@
     {
       "from": ["nosepass"],
       "trigger": "level_up",
-      "conditions": [{ "key": "location", "location": "magnetic_field" }]
+      "conditions": [
+        {
+          "key": "location",
+          "location": "magnetic_field"
+        }
+      ]
     },
     {
       "from": ["nosepass"],
       "trigger": "use_item",
-      "item": { "id": "thunderstone", "role": "used" },
+      "item": {
+        "id": "thunderstone",
+        "role": "used"
+      },
       "conditions": []
     },
     {
       "from": ["nosepass"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "thunderstone", "role": "used" },
+      "item": {
+        "id": "thunderstone",
+        "role": "used"
+      },
       "conditions": [],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Probopass",
-    "fra": "Tarinorme",
-    "deu": "Voluminas",
-    "jap": "ダイノーズ",
-    "kor": "대코파스",
-    "chs": "大朝北鼻",
-    "cht": "大朝北鼻"
-  },
-  "genus": {
-    "eng": "Compass Pokémon",
-    "esp": "Pokémon Brújula",
-    "fra": "Pokémon Boussole",
-    "deu": "Kompass",
-    "ita": "Pokémon Bussola",
-    "jap": "コンパスポケモン",
-    "kor": "콤파스포켓몬",
-    "chs": "罗盘宝可梦",
-    "cht": "羅盤寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "bank", "home"]
 }

@@ -10,23 +10,17 @@
   "files": [
     "build",
     "data",
-    "data-next",
     "LICENSE",
     "README.md"
   ],
   "type": "module",
   "exports": {
+    "./data/*.md": "./data/*.md",
     "./data/*": "./data/*.json",
-    "./data-next/*": "./data-next/*.json",
     "./lib/*": {
       "types": "./build/lib/*.d.mts",
       "import": "./build/lib/*.mjs",
       "default": "./build/lib/*.mjs"
-    },
-    "./lib-next/*": {
-      "types": "./build/lib-next/*.d.mts",
-      "import": "./build/lib-next/*.mjs",
-      "default": "./build/lib-next/*.mjs"
     }
   },
   "publishConfig": {
@@ -45,7 +39,6 @@
     "pokemon:availability": "node src/upstream-adapters/bulbapedia/cli.ts",
     "pokemon:availability:all": "node src/upstream-adapters/bulbapedia/review-cli.ts",
     "locations:import": "bun src/upstream-adapters/locations/cli.ts",
-    "pokemon:forms:migrate": "bun src/scripts/migrate-pokemon-forms.ts",
     "codes:sync": "bun src/scripts/sync-codes.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
@@ -65,7 +58,6 @@
     "champions:update": "bun src/upstream-adapters/projectpokemon-champout/update.ts"
   },
   "dependencies": {
-    "yolodb": "^1.2.0",
     "zod": "^4.6.5"
   },
   "devDependencies": {

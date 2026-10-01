@@ -67,37 +67,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Kingler (Gigantamax Form)",
-    "fra": "Krabboss (Forme Gigamax)",
-    "deu": "Kingler (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Pincer Pokémon",
-    "esp": "Pokémon Tenaza",
-    "fra": "Pokémon Pince",
-    "deu": "Kneifer-Pokémon",
-    "ita": "Pokémon Chela",
-    "jap": "はさみポケモン",
-    "kor": "집게포켓몬",
-    "chs": "钳子宝可梦",
-    "cht": "鉗子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Kingler",
-    "fra": "Krabboss",
-    "deu": "Kingler",
-    "jap": "キングラー",
-    "kor": "킹크랩",
-    "chs": "巨钳蟹",
-    "cht": "巨鉗蟹"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

@@ -80,31 +80,13 @@
     {
       "from": ["pansage"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Simisage",
-    "fra": "Feuiloutan",
-    "deu": "Vegichita",
-    "jap": "ヤナッキー",
-    "kor": "야나키",
-    "chs": "花椰猿",
-    "cht": "花椰猿"
-  },
-  "genus": {
-    "eng": "Thorn Monkey Pokémon",
-    "esp": "Pokémon Mono Pincho",
-    "fra": "Pokémon Singépine",
-    "deu": "Stachelaffe",
-    "ita": "Pokémon Spinpanzé",
-    "jap": "とげざるポケモン",
-    "kor": "가시원숭이포켓몬",
-    "chs": "刺猴宝可梦",
-    "cht": "刺猴寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"],
+  "championsId": "0512000"
 }

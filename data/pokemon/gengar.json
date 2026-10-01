@@ -148,33 +148,14 @@
       "from": ["haunter"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "linkingcord", "role": "used" },
+      "item": {
+        "id": "linkingcord",
+        "role": "used"
+      },
       "conditions": [],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Gengar",
-    "fra": "Ectoplasma",
-    "deu": "Gengar",
-    "jap": "ゲンガー",
-    "kor": "팬텀",
-    "chs": "耿鬼",
-    "cht": "耿鬼"
-  },
-  "genus": {
-    "eng": "Shadow Pokémon",
-    "esp": "Pokémon Sombra",
-    "fra": "Pokémon Ombre",
-    "deu": "Schatten-Pokémon",
-    "ita": "Pokémon Ombra",
-    "jap": "シャドーポケモン",
-    "kor": "그림자포켓몬",
-    "chs": "影子宝可梦",
-    "cht": "影子寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -190,5 +171,6 @@
     "oras-or",
     "oras-as",
     "home"
-  ]
+  ],
+  "championsId": "0094000"
 }

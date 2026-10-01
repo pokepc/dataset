@@ -134,30 +134,12 @@
     {
       "from": ["chansey"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Blissey",
-    "fra": "Leuphorie",
-    "deu": "Heiteira",
-    "jap": "ハピナス",
-    "kor": "해피너스",
-    "chs": "幸福蛋",
-    "cht": "幸福蛋"
-  },
-  "genus": {
-    "eng": "Happiness Pokémon",
-    "esp": "Pokémon Felicidad",
-    "fra": "Pokémon Bonheur",
-    "deu": "Freuden-Pokémon",
-    "ita": "Pokémon Felicità",
-    "jap": "しあわせポケモン",
-    "kor": "행복포켓몬",
-    "chs": "幸福宝可梦",
-    "cht": "幸福寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "ranch", "bw-b", "bank", "home"]
 }

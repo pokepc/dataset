@@ -65,66 +65,49 @@
       "from": ["medicham", "medicham-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "medichamite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "medichamite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["medicham", "medicham-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "medichamite", "role": "held" },
+      "item": {
+        "id": "medichamite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Medicham",
-    "fra": "MégaCharmina",
-    "deu": "Mega-Meditalis",
-    "jap": "メガチャーレム",
-    "kor": "메가요가램",
-    "chs": "超级恰雷姆",
-    "cht": "超級恰雷姆"
-  },
-  "genus": {
-    "eng": "Meditate Pokémon",
-    "esp": "Pokémon Meditador",
-    "fra": "Pokémon Méditation",
-    "deu": "Meditation",
-    "ita": "Pokémon Meditazione",
-    "jap": "めいそうポケモン",
-    "kor": "명상포켓몬",
-    "chs": "冥想宝可梦",
-    "cht": "冥想寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Medicham",
-    "fra": "Charmina",
-    "deu": "Meditalis",
-    "jap": "チャーレム",
-    "kor": "요가램",
-    "chs": "恰雷姆",
-    "cht": "恰雷姆"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0308001"
 }

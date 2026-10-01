@@ -65,66 +65,49 @@
       "from": ["houndoom", "houndoom-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "houndoominite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "houndoominite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["houndoom", "houndoom-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "houndoominite", "role": "held" },
+      "item": {
+        "id": "houndoominite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Houndoom",
-    "fra": "MégaDémolosse",
-    "deu": "Mega-Hundemon",
-    "jap": "メガヘルガー",
-    "kor": "메가헬가",
-    "chs": "超级黑鲁加",
-    "cht": "超級黑魯加"
-  },
-  "genus": {
-    "eng": "Dark Pokémon",
-    "esp": "Pokémon Siniestro",
-    "fra": "Pokémon Sombre",
-    "deu": "Hades",
-    "ita": "Pokémon Buio",
-    "jap": "ダークポケモン",
-    "kor": "다크포켓몬",
-    "chs": "阴暗宝可梦",
-    "cht": "陰暗寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Houndoom",
-    "fra": "Démolosse",
-    "deu": "Hundemon",
-    "jap": "ヘルガー",
-    "kor": "헬가",
-    "chs": "黑鲁加",
-    "cht": "黑魯加"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-um"]
+  "transferOnlyIn": ["xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-um"],
+  "championsId": "0229001"
 }

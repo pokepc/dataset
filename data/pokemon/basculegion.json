@@ -66,8 +66,14 @@
       "games": ["la"],
       "trigger": "special",
       "conditions": [
-        { "key": "gender", "gender": "male" },
-        { "key": "recoil_damage_without_fainting", "amount": 294 }
+        {
+          "key": "gender",
+          "gender": "male"
+        },
+        {
+          "key": "recoil_damage_without_fainting",
+          "amount": 294
+        }
       ],
       "activation": "manual"
     },
@@ -76,42 +82,17 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "gender", "gender": "male" },
-        { "key": "recoil_damage_without_fainting", "amount": 294 }
+        {
+          "key": "gender",
+          "gender": "male"
+        },
+        {
+          "key": "recoil_damage_without_fainting",
+          "amount": 294
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Basculegion",
-    "fra": "Paragruel",
-    "deu": "Salmagnis",
-    "jap": "イダイトウ",
-    "kor": "대쓰여너",
-    "chs": "幽尾玄鱼",
-    "cht": "幽尾玄魚"
-  },
-  "genus": {
-    "eng": "Big Fish Pokémon",
-    "fra": "Pokémon Poissigrand",
-    "deu": "Großfisch-Pokémon",
-    "ita": "Pokémon Pescegrosso",
-    "jap": "おおうおポケモン",
-    "kor": "큰물고기포켓몬",
-    "chs": "大鱼宝可梦",
-    "cht": "大魚寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0902000"
 }

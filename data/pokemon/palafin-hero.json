@@ -65,45 +65,23 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["zerotohero"] },
-        { "key": "battle_event", "events": ["switch_out"] },
-        { "key": "hp", "comparison": "gt", "percent": 0 }
+        {
+          "key": "ability",
+          "abilities": ["zerotohero"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["switch_out"]
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        }
       ],
-      "notes": {
-        "eng": "Switch out without fainting; Hero Form then lasts for the rest of the battle."
-      },
       "revert": ["battle_end"]
     }
   ],
-  "names": {
-    "eng": "Palafin (Hero Form)",
-    "fra": "Superdofin (Forme Super)",
-    "deu": "Delfinator (Hero Form)",
-    "jap": "イルカマン (マイティフォルム)"
-  },
-  "genus": {
-    "eng": "Dolphin Pokémon",
-    "fra": "Dauphin/Super Héros",
-    "deu": "Delfin",
-    "jap": "イルカポケモン",
-    "kor": "돌고래포켓몬",
-    "chs": "海豚宝可梦",
-    "cht": "海豚寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Palafin",
-    "fra": "Superdofin",
-    "deu": "Delfinator",
-    "jap": "イルカマン",
-    "kor": "돌핀맨",
-    "chs": "海豚侠",
-    "cht": "海豚俠"
-  },
-  "formNames": {
-    "eng": "Hero Form",
-    "fra": "Forme Super",
-    "deu": "Hero Form",
-    "jap": "マイティフォルム"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0964001"
 }

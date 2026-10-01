@@ -64,38 +64,34 @@
     {
       "from": ["sneasel-hisui"],
       "trigger": "level_up",
-      "item": { "id": "razorclaw", "role": "held" },
-      "conditions": [{ "key": "time_of_day", "time": "day" }]
+      "item": {
+        "id": "razorclaw",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
     },
     {
       "from": ["sneasel-hisui"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "razorclaw", "role": "used" },
-      "conditions": [{ "key": "time_of_day", "time": "day" }],
+      "item": {
+        "id": "razorclaw",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Sneasler",
-    "fra": "Farfurex",
-    "deu": "Snieboss",
-    "jap": "オオニューラ",
-    "kor": "포푸니크",
-    "chs": "大狃拉",
-    "cht": "大狃拉"
-  },
-  "genus": {
-    "eng": "Free Climb Pokémon",
-    "fra": "Pokémon Grimpeur",
-    "deu": "Kletterei-Pokémon",
-    "ita": "Pokémon Scalata",
-    "jap": "クライミングポケモン",
-    "kor": "클라이밍포켓몬",
-    "chs": "攀崖宝可梦",
-    "cht": "攀崖寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": ["home", "sv-s", "sv-v"],
+  "championsId": "0903000"
 }

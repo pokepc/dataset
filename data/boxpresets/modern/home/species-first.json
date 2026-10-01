@@ -1,9 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "species-first",
   "gameSet": "home",
-  "name": "Sorted species, then Form Groups",
-  "description": "Organizes species boxes first without gaps, followed by form boxes grouped by generation and form category. Base forms are repeated in form sections when it makes sense visually, so related forms can be viewed together.",
   "source": {
     "kind": "classic",
     "gameSet": "home",
@@ -13,7 +11,6 @@
   "tags": ["sorted", "forms"],
   "boxes": [
     {
-      "name": "Species 1",
       "slots": [
         "bulbasaur",
         "ivysaur",
@@ -48,7 +45,6 @@
       ]
     },
     {
-      "name": "Species 2",
       "slots": [
         "nidoqueen",
         "nidoranm",
@@ -83,7 +79,6 @@
       ]
     },
     {
-      "name": "Species 3",
       "slots": [
         "poliwhirl",
         "poliwrath",
@@ -118,7 +113,6 @@
       ]
     },
     {
-      "name": "Species 4",
       "slots": [
         "cloyster",
         "gastly",
@@ -153,7 +147,6 @@
       ]
     },
     {
-      "name": "Species 5",
       "slots": [
         "starmie",
         "mrmime",
@@ -188,7 +181,6 @@
       ]
     },
     {
-      "name": "Species 6",
       "slots": [
         "mew",
         "chikorita",
@@ -223,7 +215,6 @@
       ]
     },
     {
-      "name": "Species 7",
       "slots": [
         "ampharos",
         "bellossom",
@@ -258,7 +249,6 @@
       ]
     },
     {
-      "name": "Species 8",
       "slots": [
         "qwilfish",
         "scizor",
@@ -293,7 +283,6 @@
       ]
     },
     {
-      "name": "Species 9",
       "slots": [
         "miltank",
         "blissey",
@@ -328,7 +317,6 @@
       ]
     },
     {
-      "name": "Species 10",
       "slots": [
         "lombre",
         "ludicolo",
@@ -363,7 +351,6 @@
       ]
     },
     {
-      "name": "Species 11",
       "slots": [
         "delcatty",
         "sableye",
@@ -398,7 +385,6 @@
       ]
     },
     {
-      "name": "Species 12",
       "slots": [
         "cacnea",
         "cacturne",
@@ -433,7 +419,6 @@
       ]
     },
     {
-      "name": "Species 13",
       "slots": [
         "snorunt",
         "glalie",
@@ -468,7 +453,6 @@
       ]
     },
     {
-      "name": "Species 14",
       "slots": [
         "monferno",
         "infernape",
@@ -503,7 +487,6 @@
       ]
     },
     {
-      "name": "Species 15",
       "slots": [
         "cherrim",
         "shellos",
@@ -538,7 +521,6 @@
       ]
     },
     {
-      "name": "Species 16",
       "slots": [
         "skorupi",
         "drapion",
@@ -573,7 +555,6 @@
       ]
     },
     {
-      "name": "Species 17",
       "slots": [
         "mesprit",
         "azelf",
@@ -608,7 +589,6 @@
       ]
     },
     {
-      "name": "Species 18",
       "slots": [
         "pansage",
         "simisage",
@@ -643,7 +623,6 @@
       ]
     },
     {
-      "name": "Species 19",
       "slots": [
         "swadloon",
         "leavanny",
@@ -678,7 +657,6 @@
       ]
     },
     {
-      "name": "Species 20",
       "slots": [
         "zoroark",
         "minccino",
@@ -713,7 +691,6 @@
       ]
     },
     {
-      "name": "Species 21",
       "slots": [
         "klinklang",
         "tynamo",
@@ -748,7 +725,6 @@
       ]
     },
     {
-      "name": "Species 22",
       "slots": [
         "heatmor",
         "durant",
@@ -783,7 +759,6 @@
       ]
     },
     {
-      "name": "Species 23",
       "slots": [
         "fletchling",
         "fletchinder",
@@ -818,7 +793,6 @@
       ]
     },
     {
-      "name": "Species 24",
       "slots": [
         "dragalge",
         "clauncher",
@@ -853,7 +827,6 @@
       ]
     },
     {
-      "name": "Species 25",
       "slots": [
         "volcanion",
         "rowlet",
@@ -888,7 +861,6 @@
       ]
     },
     {
-      "name": "Species 26",
       "slots": [
         "dewpider",
         "araquanid",
@@ -923,7 +895,6 @@
       ]
     },
     {
-      "name": "Species 27",
       "slots": [
         "dhelmise",
         "jangmoo",
@@ -958,7 +929,6 @@
       ]
     },
     {
-      "name": "Species 28",
       "slots": [
         "thwackey",
         "rillaboom",
@@ -993,7 +963,6 @@
       ]
     },
     {
-      "name": "Species 29",
       "slots": [
         "flapple",
         "appletun",
@@ -1028,7 +997,6 @@
       ]
     },
     {
-      "name": "Species 30",
       "slots": [
         "pincurchin",
         "snom",
@@ -1063,7 +1031,6 @@
       ]
     },
     {
-      "name": "Species 31",
       "slots": [
         "ursaluna",
         "basculegion",
@@ -1098,7 +1065,6 @@
       ]
     },
     {
-      "name": "Species 32",
       "slots": [
         "squawkabilly",
         "nacli",
@@ -1133,7 +1099,6 @@
       ]
     },
     {
-      "name": "Species 33",
       "slots": [
         "wugtrio",
         "bombirdier",
@@ -1168,7 +1133,6 @@
       ]
     },
     {
-      "name": "Species 34",
       "slots": [
         "ironbundle",
         "ironhands",
@@ -1203,11 +1167,9 @@
       ]
     },
     {
-      "name": "Species 35",
       "slots": ["ragingbolt", "ironboulder", "ironcrown", "terapagos", "pecharunt"]
     },
     {
-      "name": "Females (1)",
       "slots": [
         "venusaur-f",
         "butterfree-f",
@@ -1242,7 +1204,6 @@
       ]
     },
     {
-      "name": "Females (2)",
       "slots": [
         "wooper-f",
         "quagsire-f",
@@ -1277,7 +1238,6 @@
       ]
     },
     {
-      "name": "Females (3)",
       "slots": [
         "camerupt-f",
         "cacturne-f",
@@ -1312,7 +1272,6 @@
       ]
     },
     {
-      "name": "Females (4)",
       "slots": [
         "abomasnow-f",
         "weavile-f",
@@ -1330,7 +1289,6 @@
       ]
     },
     {
-      "name": "Cap Pikachu",
       "slots": [
         "pikachu-original",
         "pikachu-hoenn",
@@ -1343,7 +1301,6 @@
       ]
     },
     {
-      "name": "UnownDex",
       "slots": [
         "unown",
         "unown-b",
@@ -1376,7 +1333,6 @@
       ]
     },
     {
-      "name": "Gen 3 & 4 Forms",
       "slots": [
         "deoxys",
         "deoxys-attack",
@@ -1407,7 +1363,6 @@
       ]
     },
     {
-      "name": "Gen 5 Forms",
       "slots": [
         "deerling",
         "deerling-summer",
@@ -1438,7 +1393,6 @@
       ]
     },
     {
-      "name": "Gen 6 Forms (1)",
       "slots": [
         "pumpkaboo",
         "pumpkaboo-small",
@@ -1466,7 +1420,6 @@
       ]
     },
     {
-      "name": "Gen 6 Forms (2)",
       "slots": [
         "flabebe",
         "flabebe-yellow",
@@ -1492,7 +1445,6 @@
       ]
     },
     {
-      "name": "Vivillon Forms",
       "slots": [
         "vivillon",
         "vivillon-polar",
@@ -1517,7 +1469,6 @@
       ]
     },
     {
-      "name": "Gen 7 Forms",
       "slots": [
         "oricorio",
         "oricorio-pom-pom",
@@ -1543,7 +1494,6 @@
       ]
     },
     {
-      "name": "Gen 8 Forms",
       "slots": [
         "toxtricity",
         "toxtricity-low-key",
@@ -1574,7 +1524,6 @@
       ]
     },
     {
-      "name": "Alcremie (1)",
       "slots": [
         "alcremie",
         "alcremie-vanilla-cream-berry",
@@ -1607,7 +1556,6 @@
       ]
     },
     {
-      "name": "Alcremie (2)",
       "slots": [
         "alcremie-lemon-cream-strawberry",
         "alcremie-lemon-cream-berry",
@@ -1640,7 +1588,6 @@
       ]
     },
     {
-      "name": "Alcremie (3)",
       "slots": [
         "alcremie-rainbow-swirl-strawberry",
         "alcremie-rainbow-swirl-berry",
@@ -1652,7 +1599,6 @@
       ]
     },
     {
-      "name": "Gigantamax 1",
       "slots": [
         {
           "pokemon": "venusaur",
@@ -1778,7 +1724,6 @@
       ]
     },
     {
-      "name": "Gigantamax 2",
       "slots": [
         {
           "pokemon": "centiskorch",
@@ -1815,11 +1760,9 @@
       ]
     },
     {
-      "name": "Gen 9 Forms",
       "slots": []
     },
     {
-      "name": "Alolan Forms",
       "slots": [
         "rattata-alola",
         "raticate-alola",
@@ -1842,7 +1785,6 @@
       ]
     },
     {
-      "name": "Galarian Forms",
       "slots": [
         "meowth-galar",
         "ponyta-galar",
@@ -1866,7 +1808,6 @@
       ]
     },
     {
-      "name": "Hisuian Forms",
       "slots": [
         "growlithe-hisui",
         "arcanine-hisui",
@@ -1888,7 +1829,6 @@
       ]
     },
     {
-      "name": "Paldea Alternate",
       "slots": [
         "maushold-three",
         "squawkabilly-blue",
@@ -1903,7 +1843,6 @@
       ]
     },
     {
-      "name": "Paldean Forms",
       "slots": [
         "tauros-paldea",
         "tauros-paldea-fire",

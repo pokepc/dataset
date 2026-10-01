@@ -67,18 +67,32 @@
       "from": ["palkia"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "lustrousglobe", "role": "used", "consumed": false },
+      "item": {
+        "id": "lustrousglobe",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "lustrousglobe", "role": "used", "consumed": false },
+          "item": {
+            "id": "lustrousglobe",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         }
       ]
     },
@@ -86,53 +100,35 @@
       "from": ["palkia"],
       "games": ["sv-s", "sv-v"],
       "trigger": "equip_item",
-      "item": { "id": "lustrousglobe", "role": "held", "consumed": false },
+      "item": {
+        "id": "lustrousglobe",
+        "role": "held",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "remove_item",
-          "item": { "id": "lustrousglobe", "role": "held", "consumed": false },
+          "item": {
+            "id": "lustrousglobe",
+            "role": "held",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Palkia (Origin Forme)",
-    "fra": "Palkia (Forme Originelle)",
-    "deu": "Palkia (Urform)",
-    "jap": "パルキア (オリジンフォルム)"
-  },
-  "genus": {
-    "eng": "Spatial Pokémon",
-    "esp": "Pokémon Espacial",
-    "fra": "Pokémon Espace",
-    "deu": "Räumlich-Pokémon",
-    "ita": "Pokémon Spazio",
-    "jap": "くうかんポケモン",
-    "kor": "공간포켓몬",
-    "chs": "空间宝可梦",
-    "cht": "空間寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Palkia",
-    "fra": "Palkia",
-    "deu": "Palkia",
-    "jap": "パルキア",
-    "kor": "펄기아",
-    "chs": "帕路奇亚",
-    "cht": "帕路奇亞"
-  },
-  "formNames": {
-    "eng": "Origin Forme",
-    "fra": "Forme Originelle",
-    "deu": "Urform",
-    "jap": "オリジンフォルム"
-  },
   "transferOnlyIn": ["sv-s", "sv-v"]
 }

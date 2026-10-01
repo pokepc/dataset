@@ -98,30 +98,12 @@
     {
       "from": ["swadloon"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Leavanny",
-    "fra": "Manternel",
-    "deu": "Matrifol",
-    "jap": "ハハコモリ",
-    "kor": "모아머",
-    "chs": "保姆虫",
-    "cht": "保母蟲"
-  },
-  "genus": {
-    "eng": "Nurturing Pokémon",
-    "esp": "Pokémon Cuidador",
-    "fra": "Pokémon Précepteur",
-    "deu": "Kinderpflege",
-    "ita": "Pokémon Balia",
-    "jap": "こそだてポケモン",
-    "kor": "육아포켓몬",
-    "chs": "育儿宝可梦",
-    "cht": "育兒寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "home"]
 }

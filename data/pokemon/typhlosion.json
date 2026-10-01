@@ -119,31 +119,15 @@
       "from": ["quilava"],
       "trigger": "level_up",
       "minLevel": 36,
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "outside"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Typhlosion",
-    "fra": "Typhlosion",
-    "deu": "Tornupto",
-    "jap": "バクフーン",
-    "kor": "블레이범",
-    "chs": "火暴兽",
-    "cht": "火爆獸"
-  },
-  "genus": {
-    "eng": "Volcano Pokémon",
-    "esp": "Pokémon Volcán",
-    "fra": "Pokémon Volcan",
-    "deu": "Vulkan",
-    "ita": "Pokémon Vulcano",
-    "jap": "かざんポケモン",
-    "kor": "화산포켓몬",
-    "chs": "火山宝可梦",
-    "cht": "火山寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -163,5 +147,6 @@
     "usum-us",
     "usum-um",
     "home"
-  ]
+  ],
+  "championsId": "0157000"
 }

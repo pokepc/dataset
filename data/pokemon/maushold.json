@@ -67,30 +67,16 @@
       "trigger": "level_up",
       "minLevel": 25,
       "conditions": [
-        { "key": "hidden_value_branch", "percentage": 99 },
-        { "key": "battle_experience" }
+        {
+          "key": "hidden_value_branch",
+          "percentage": 99
+        },
+        {
+          "key": "battle_experience"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Maushold",
-    "fra": "Famignol",
-    "deu": "Famieps",
-    "jap": "イッカネズミ",
-    "kor": "파밀리쥐",
-    "chs": "一家鼠",
-    "cht": "一家鼠"
-  },
-  "genus": {
-    "eng": "Family Pokémon",
-    "fra": "Famille",
-    "deu": "Familie",
-    "jap": "ファミリーポケモン",
-    "kor": "패밀리포켓몬",
-    "chs": "家族宝可梦",
-    "cht": "家族寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": { "eng": "Family of Four" },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0925001"
 }

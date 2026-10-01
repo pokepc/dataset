@@ -65,58 +65,33 @@
       "from": ["pyroar", "pyroar-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "pyroarite", "role": "held" },
+      "item": {
+        "id": "pyroarite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Pyroar",
-    "fra": "MégaNémélios",
-    "deu": "Mega-Pyroleo",
-    "jap": "メガカエンジシ",
-    "kor": "메가화염레오",
-    "chs": "超级火炎狮",
-    "cht": "超級火炎獅"
-  },
-  "genus": {
-    "eng": "Royal Pokémon",
-    "esp": "Pokémon Regio",
-    "fra": "Pokémon Royal",
-    "deu": "Monarch",
-    "ita": "Pokémon Reale",
-    "jap": "おうじゃポケモン",
-    "kor": "임금포켓몬",
-    "chs": "王者宝可梦",
-    "cht": "王者寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Pyroar",
-    "fra": "Némélios",
-    "deu": "Pyroleo",
-    "jap": "カエンジシ",
-    "kor": "화염레오",
-    "chs": "火炎狮",
-    "cht": "火炎獅"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0668001"
 }

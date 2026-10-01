@@ -67,37 +67,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Snorlax (Gigantamax Form)",
-    "fra": "Ronflex (Forme Gigamax)",
-    "deu": "Relaxo (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Sleeping Pokémon",
-    "esp": "Pokémon Dormir",
-    "fra": "Pokémon Pionceur",
-    "deu": "Tagträumer-Pokémon",
-    "ita": "Pokémon Sonno",
-    "jap": "いねむりポケモン",
-    "kor": "졸음포켓몬",
-    "chs": "瞌睡宝可梦",
-    "cht": "瞌睡寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Snorlax",
-    "fra": "Ronflex",
-    "deu": "Relaxo",
-    "jap": "カビゴン",
-    "kor": "잠만보",
-    "chs": "卡比兽",
-    "cht": "卡比獸"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

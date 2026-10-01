@@ -65,58 +65,33 @@
       "from": ["froslass"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "froslassite", "role": "held" },
+      "item": {
+        "id": "froslassite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Froslass",
-    "fra": "MégaMomartik",
-    "deu": "Mega-Frosdedje",
-    "jap": "メガユキメノコ",
-    "kor": "메가눈여아",
-    "chs": "超级雪妖女",
-    "cht": "超級雪妖女"
-  },
-  "genus": {
-    "eng": "Snow Land Pokémon",
-    "esp": "Pokémon Tierra Fría",
-    "fra": "Pokémon Enneigement",
-    "deu": "Schneegebiets-Pokémon",
-    "ita": "Pokémon Suolnevoso",
-    "jap": "ゆきぐにポケモン",
-    "kor": "설국포켓몬",
-    "chs": "雪国宝可梦",
-    "cht": "雪國寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Froslass",
-    "fra": "Momartik",
-    "deu": "Frosdedje",
-    "jap": "ユキメノコ",
-    "kor": "눈여아",
-    "chs": "雪妖女",
-    "cht": "雪妖女"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0478001"
 }

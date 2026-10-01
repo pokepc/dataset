@@ -66,23 +66,46 @@
       "from": ["groudon"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "lza"],
       "trigger": "automatic",
-      "item": { "id": "redorb", "role": "held" },
-      "conditions": [{ "key": "battle_event", "events": ["switch_in"] }],
+      "item": {
+        "id": "redorb",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "battle_event",
+          "events": ["switch_in"]
+        }
+      ],
       "revert": [
         {
           "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["battle_end"]
+            }
+          ]
         },
         {
           "games": ["lza"],
           "trigger": "automatic",
-          "conditions": [{ "key": "interaction", "interaction": "recall_outside_battle" }]
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "recall_outside_battle"
+            }
+          ]
         },
         {
           "games": ["oras-or", "oras-as"],
           "trigger": "automatic",
-          "conditions": [{ "key": "interaction", "interaction": "contest_spectacular_ends" }]
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "contest_spectacular_ends"
+            }
+          ]
         }
       ]
     },
@@ -90,58 +113,29 @@
       "from": ["groudon"],
       "games": ["oras-or", "oras-as"],
       "trigger": "interact",
-      "item": { "id": "redorb", "role": "held" },
-      "conditions": [{ "key": "interaction", "interaction": "enter_contest_spectacular" }],
+      "item": {
+        "id": "redorb",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "enter_contest_spectacular"
+        }
+      ],
       "revert": [
         "battle_end",
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "interaction", "interaction": "contest_spectacular_ends" }]
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "contest_spectacular_ends"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Groudon (Primal Reversion)",
-    "esp": "Groudon (Regresión Primigenia)",
-    "fra": "Groudon (Primo-Résurgence)",
-    "deu": "Groudon (Protomorphose)",
-    "ita": "Groudon (Archeorisveglio)",
-    "jap": "グラードン (ゲンシカイキのすがた)",
-    "kor": "그란돈 (원시회귀의 모습)",
-    "chs": "固拉多 (原始回归的样子)",
-    "cht": "固拉多 (原始回歸的樣子)"
-  },
-  "genus": {
-    "eng": "Continent Pokémon",
-    "esp": "Pokémon Continente",
-    "fra": "Pokémon Continent",
-    "deu": "Kontinent-Pokémon",
-    "ita": "Pokémon Continente",
-    "jap": "たいりくポケモン",
-    "kor": "대륙포켓몬",
-    "chs": "大陆宝可梦",
-    "cht": "大陸寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Groudon",
-    "fra": "Groudon",
-    "deu": "Groudon",
-    "jap": "グラードン",
-    "kor": "그란돈",
-    "chs": "固拉多",
-    "cht": "固拉多"
-  },
-  "formNames": {
-    "eng": "Primal Reversion",
-    "esp": "Regresión Primigenia",
-    "fra": "Primo-Résurgence",
-    "deu": "Protomorphose",
-    "ita": "Archeorisveglio",
-    "jap": "ゲンシカイキのすがた",
-    "kor": "원시회귀의 모습",
-    "chs": "原始回归的样子",
-    "cht": "原始回歸的樣子"
-  },
   "transferOnlyIn": ["oras-as", "sm-s", "sm-m", "usum-um"]
 }

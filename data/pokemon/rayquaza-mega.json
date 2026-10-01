@@ -67,9 +67,18 @@
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "known_move", "move": "dragonascent" },
-        { "key": "battle_condition", "condition": "rayquaza_mega_eligible" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "known_move",
+          "move": "dragonascent"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "rayquaza_mega_eligible"
+        }
       ],
       "revert": ["battle_end", "faint"]
     },
@@ -78,57 +87,31 @@
       "games": ["lza"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" },
-        { "key": "known_move", "move": "dragonascent" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        },
+        {
+          "key": "known_move",
+          "move": "dragonascent"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Rayquaza",
-    "fra": "MégaRayquaza",
-    "deu": "Mega-Rayquaza",
-    "jap": "メガレックウザ",
-    "kor": "메가레쿠쟈",
-    "chs": "超级烈空坐",
-    "cht": "超級烈空坐"
-  },
-  "genus": {
-    "eng": "Sky High Pokémon",
-    "esp": "Pokémon Cielo",
-    "fra": "Pokémon Cieux",
-    "deu": "Himmelhoch-Pokémon",
-    "ita": "Pokémon Stratosfera",
-    "jap": "てんくうポケモン",
-    "kor": "천공포켓몬",
-    "chs": "天空宝可梦",
-    "cht": "天空寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Rayquaza",
-    "fra": "Rayquaza",
-    "deu": "Rayquaza",
-    "jap": "レックウザ",
-    "kor": "레쿠쟈",
-    "chs": "烈空坐",
-    "cht": "烈空坐"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
   "transferOnlyIn": ["sm-s", "sm-m"]
 }

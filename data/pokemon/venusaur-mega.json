@@ -65,23 +65,45 @@
       "from": ["venusaur", "venusaur-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "venusaurite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "venusaurite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["venusaur", "venusaur-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "venusaurite", "role": "held" },
+      "item": {
+        "id": "venusaurite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -89,50 +111,19 @@
       "from": ["venusaur", "venusaur-f"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "venusaurite", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "venusaurite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Venusaur",
-    "fra": "MégaFlorizarre",
-    "deu": "Mega-Bisaflor",
-    "jap": "メガフシギバナ",
-    "kor": "메가이상해꽃",
-    "chs": "超级妙蛙花",
-    "cht": "超級妙蛙花"
-  },
-  "genus": {
-    "eng": "Seed Pokémon",
-    "esp": "Pokémon Semilla",
-    "fra": "Pokémon Graine",
-    "deu": "Samen-Pokémon",
-    "ita": "Pokémon Seme",
-    "jap": "たねポケモン",
-    "kor": "씨앗포켓몬",
-    "chs": "种子宝可梦",
-    "cht": "種子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Venusaur",
-    "fra": "Florizarre",
-    "deu": "Bisaflor",
-    "jap": "フシギバナ",
-    "kor": "이상해꽃",
-    "chs": "妙蛙花",
-    "cht": "妙蛙花"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"]
+  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"],
+  "championsId": "0003001"
 }

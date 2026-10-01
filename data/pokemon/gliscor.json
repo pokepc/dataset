@@ -108,40 +108,34 @@
     {
       "from": ["gligar"],
       "trigger": "level_up",
-      "item": { "id": "razorfang", "role": "held" },
-      "conditions": [{ "key": "time_of_day", "time": "night" }]
+      "item": {
+        "id": "razorfang",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     },
     {
       "from": ["gligar"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "razorfang", "role": "used" },
-      "conditions": [{ "key": "time_of_day", "time": "night" }],
+      "item": {
+        "id": "razorfang",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Gliscor",
-    "fra": "Scorvol",
-    "deu": "Skorgro",
-    "jap": "グライオン",
-    "kor": "글라이온",
-    "chs": "天蝎王",
-    "cht": "天蠍王"
-  },
-  "genus": {
-    "eng": "Fang Scorpion Pokémon",
-    "esp": "Pokémon Colmicorpio",
-    "fra": "Pokémon Scorpicroc",
-    "deu": "Zahnskorpi",
-    "ita": "Pokémon Scorpidente",
-    "jap": "キバさそりポケモン",
-    "kor": "송곳니전갈포켓몬",
-    "chs": "牙蝎宝可梦",
-    "cht": "牙蠍寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "hgss-ss",
@@ -154,5 +148,6 @@
     "usum-um",
     "home",
     "bdsp-sp"
-  ]
+  ],
+  "championsId": "0472000"
 }

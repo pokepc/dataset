@@ -121,54 +121,34 @@
     {
       "from": ["rhydon"],
       "trigger": "trade",
-      "item": { "id": "protector", "role": "held" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "protector",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     },
     {
       "from": ["rhydon"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "protector", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }],
+      "item": {
+        "id": "protector",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Rhyperior (Female)",
-    "fra": "Rhinastoc (Female)",
-    "deu": "Rihornior (Female)"
-  },
-  "genus": {
-    "eng": "Drill Pokémon",
-    "esp": "Pokémon Taladro",
-    "fra": "Pokémon Perceur",
-    "deu": "Bohrer-Pokémon",
-    "ita": "Pokémon Trapano",
-    "jap": "ドリルポケモン",
-    "kor": "드릴포켓몬",
-    "chs": "钻锥宝可梦",
-    "cht": "鑽錐寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Rhyperior",
-    "fra": "Rhinastoc",
-    "deu": "Rihornior",
-    "jap": "ドサイドン",
-    "kor": "거대코뿌리",
-    "chs": "超甲狂犀",
-    "cht": "超甲狂犀"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
-  "transferOnlyIn": ["ranch", "bw-b", "bank", "home"]
+  "transferOnlyIn": ["ranch", "bw-b", "bank", "home"],
+  "championsId": "0464000"
 }

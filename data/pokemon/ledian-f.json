@@ -126,46 +126,14 @@
       "from": ["ledyba"],
       "trigger": "level_up",
       "minLevel": 18,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Ledian (Female)",
-    "fra": "Coxyclaque (Female)",
-    "deu": "Ledian (Female)"
-  },
-  "genus": {
-    "eng": "Five Star Pokémon",
-    "esp": "Pokémon 5 Estrellas",
-    "fra": "Pokémon 5 Étoiles",
-    "deu": "Fünf-Punkt",
-    "ita": "Pokémon Pentastra",
-    "jap": "いつつぼしポケモン",
-    "kor": "별다섯포켓몬",
-    "chs": "五星宝可梦",
-    "cht": "五星寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Ledian",
-    "fra": "Coxyclaque",
-    "deu": "Ledian",
-    "jap": "レディアン",
-    "kor": "레디안",
-    "chs": "安瓢虫",
-    "cht": "安瓢蟲"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "gs-g",
     "rs-r",

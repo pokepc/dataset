@@ -65,30 +65,16 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "walk_steps", "count": 1000, "mode": "lets_go" },
-        { "key": "outside_poke_ball" }
+        {
+          "key": "walk_steps",
+          "count": 1000,
+          "mode": "lets_go"
+        },
+        {
+          "key": "outside_poke_ball"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Rabsca",
-    "fra": "Bérasca",
-    "deu": "Skarabaks",
-    "jap": "ベラカス",
-    "kor": "베라카스",
-    "chs": "虫甲圣",
-    "cht": "蟲甲聖"
-  },
-  "genus": {
-    "eng": "Rolling Pokémon",
-    "fra": "Rouleur",
-    "deu": "Wälz",
-    "jap": "ころがしポケモン",
-    "kor": "굴리기포켓몬",
-    "chs": "滚动宝可梦",
-    "cht": "滾動寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["home"]
 }

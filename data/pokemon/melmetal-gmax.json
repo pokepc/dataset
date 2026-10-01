@@ -65,41 +65,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Melmetal (Gigantamax Form)",
-    "fra": "Melmetal (Forme Gigamax)",
-    "deu": "Melmetal (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Hex Nut Pokémon",
-    "esp": "Pokémon Tuerca",
-    "fra": "Pokémon Écrou",
-    "deu": "Mutter-Pokémon",
-    "ita": "Pokémon Bullone",
-    "jap": "ナットポケモン",
-    "kor": "너트포켓몬",
-    "chs": "螺帽宝可梦",
-    "cht": "螺帽寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Melmetal",
-    "fra": "Melmetal",
-    "deu": "Melmetal",
-    "jap": "メルメタル",
-    "kor": "멜메탈",
-    "chs": "美录梅塔",
-    "cht": "美錄梅塔"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": ["swsh-sw", "swsh-sh"]
 }

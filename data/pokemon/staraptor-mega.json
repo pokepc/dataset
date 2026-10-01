@@ -65,62 +65,33 @@
       "from": ["staraptor", "staraptor-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "staraptite", "role": "held" },
+      "item": {
+        "id": "staraptite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Staraptor",
-    "esp": "Mega Staraptor",
-    "esla": "Mega Staraptor",
-    "fra": "MégaÉtouraptor",
-    "deu": "Mega-Staraptor",
-    "ita": "Mega Staraptor",
-    "jap": "メガムクホーク",
-    "kor": "메가찌르호크",
-    "chs": "超级姆克鹰",
-    "cht": "超級姆克鷹"
-  },
-  "genus": {
-    "eng": "Predator Pokémon",
-    "esp": "Pokémon Depredador",
-    "fra": "Pokémon Rapace",
-    "deu": "Raubtier",
-    "ita": "Pokémon Rapace",
-    "jap": "もうきんポケモン",
-    "kor": "맹금포켓몬",
-    "chs": "猛禽宝可梦",
-    "cht": "猛禽寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Staraptor",
-    "fra": "Étouraptor",
-    "deu": "Staraptor",
-    "jap": "ムクホーク",
-    "kor": "찌르호크",
-    "chs": "姆克鹰",
-    "cht": "姆克鷹"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0398001"
 }

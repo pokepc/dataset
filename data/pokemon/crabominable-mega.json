@@ -65,62 +65,33 @@
       "from": ["crabominable"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "crabominite", "role": "held" },
+      "item": {
+        "id": "crabominite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Crabominable",
-    "esp": "Mega Crabominable",
-    "esla": "Mega Crabominable",
-    "fra": "MégaCrabominable",
-    "deu": "Mega-Krawell",
-    "ita": "Mega Crabominable",
-    "jap": "メガケケンカニ",
-    "kor": "메가모단단게",
-    "chs": "超级好胜毛蟹",
-    "cht": "超級好勝毛蟹"
-  },
-  "genus": {
-    "eng": "Woolly Crab Pokémon",
-    "esp": "Pokémon Cangrejopelo",
-    "fra": "Pokémon Crabe Velu",
-    "deu": "Fellkrabbe",
-    "ita": "Pokémon Peligranchio",
-    "jap": "けがにポケモン",
-    "kor": "털게포켓몬",
-    "chs": "毛蟹宝可梦",
-    "cht": "毛蟹寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Crabominable",
-    "fra": "Crabominable",
-    "deu": "Krawell",
-    "jap": "ケケンカニ",
-    "kor": "모단단게",
-    "chs": "好胜毛蟹",
-    "cht": "好勝毛蟹"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0740001"
 }

@@ -65,66 +65,49 @@
       "from": ["mawile"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "mawilite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "mawilite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["mawile"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "mawilite", "role": "held" },
+      "item": {
+        "id": "mawilite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Mawile",
-    "fra": "MégaMysdibule",
-    "deu": "Mega-Flunkifer",
-    "jap": "メガクチート",
-    "kor": "메가입치트",
-    "chs": "超级大嘴娃",
-    "cht": "超級大嘴娃"
-  },
-  "genus": {
-    "eng": "Deceiver Pokémon",
-    "esp": "Pokémon Tramposo",
-    "fra": "Pokémon Trompeur",
-    "deu": "Schwindler-Pokémon",
-    "ita": "Pokémon Inganno",
-    "jap": "あざむきポケモン",
-    "kor": "배반포켓몬",
-    "chs": "欺骗宝可梦",
-    "cht": "欺騙寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Mawile",
-    "fra": "Mysdibule",
-    "deu": "Flunkifer",
-    "jap": "クチート",
-    "kor": "입치트",
-    "chs": "大嘴娃",
-    "cht": "大嘴娃"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["oras-as", "sm-s", "sm-m"]
+  "transferOnlyIn": ["oras-as", "sm-s", "sm-m"],
+  "championsId": "0303001"
 }

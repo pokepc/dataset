@@ -68,41 +68,16 @@
       "games": ["la"],
       "trigger": "level_up",
       "minLevel": 37,
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "in"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Avalugg (Hisuian Form)",
-    "fra": "Séracrawl (Forme de Hisui)",
-    "deu": "Arktilas (Hisui-Form)",
-    "jap": "クレベース (ヒスイのすがた)"
-  },
-  "genus": {
-    "eng": "Iceberg Pokémon",
-    "esp": "Pokémon Iceberg",
-    "fra": "Pokémon Iceberg",
-    "deu": "Eisberg-Pokémon",
-    "ita": "Pokémon Iceberg",
-    "jap": "ひょうざんポケモン",
-    "kor": "빙산포켓몬",
-    "chs": "冰山宝可梦",
-    "cht": "冰山寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Avalugg",
-    "fra": "Séracrawl",
-    "deu": "Arktilas",
-    "jap": "クレベース",
-    "kor": "크레베이스",
-    "chs": "冰岩怪",
-    "cht": "冰岩怪"
-  },
-  "formNames": {
-    "eng": "Hisuian Form",
-    "fra": "Forme de Hisui",
-    "deu": "Hisui-Form",
-    "jap": "ヒスイのすがた"
-  },
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": ["home", "sv-s", "sv-v"],
+  "championsId": "0713001"
 }

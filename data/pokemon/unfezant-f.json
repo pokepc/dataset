@@ -97,45 +97,13 @@
       "from": ["tranquill"],
       "trigger": "level_up",
       "minLevel": 32,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Unfezant (Female)",
-    "fra": "Déflaisan (Female)",
-    "deu": "Fasasnob (Female)"
-  },
-  "genus": {
-    "eng": "Proud Pokémon",
-    "esp": "Pokémon Altanero",
-    "fra": "Pokémon Fier",
-    "deu": "Stolz-Pokémon",
-    "ita": "Pokémon Orgoglio",
-    "jap": "プライドポケモン",
-    "kor": "프라이드포켓몬",
-    "chs": "自尊心宝可梦",
-    "cht": "自尊心寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Unfezant",
-    "fra": "Déflaisan",
-    "deu": "Fasasnob",
-    "jap": "ケンホロウ",
-    "kor": "켄호로우",
-    "chs": "高傲雉鸡",
-    "cht": "高傲雉雞"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["bank", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

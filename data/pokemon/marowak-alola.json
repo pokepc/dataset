@@ -93,55 +93,17 @@
       "trigger": "level_up",
       "minLevel": 28,
       "conditions": [
-        { "key": "time_of_day", "time": "night" },
-        { "key": "region", "region": "alola", "relation": "in" }
-      ],
-      "notes": {
-        "eng": "Evolve in Alola; Ultra Space in Ultra Sun/Ultra Moon produces the ordinary form instead."
-      }
+        {
+          "key": "time_of_day",
+          "time": "night"
+        },
+        {
+          "key": "region",
+          "region": "alola",
+          "relation": "in"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Marowak (Alolan Form)",
-    "esp": "Marowak (Forma de Alola)",
-    "fra": "Ossatueur (Forme d'Alola)",
-    "deu": "Knogga (Alola-Form)",
-    "ita": "Marowak (Forma di Alola)",
-    "jap": "ガラガラ (アローラのすがた)",
-    "kor": "텅구리 (알로라의 모습)",
-    "chs": "嘎啦嘎啦 (阿罗拉的样子)",
-    "cht": "嘎啦嘎啦 (阿羅拉的樣子)"
-  },
-  "genus": {
-    "eng": "Bone Keeper Pokémon",
-    "esp": "Pokémon Apilahueso",
-    "fra": "Pokémon Gard’Os",
-    "deu": "Knochenfan-Pokémon",
-    "ita": "Pokémon Guardaossi",
-    "jap": "ほねずきポケモン",
-    "kor": "뼈다귀포켓몬",
-    "chs": "爱骨宝可梦",
-    "cht": "愛骨寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Marowak",
-    "fra": "Ossatueur",
-    "deu": "Knogga",
-    "jap": "ガラガラ",
-    "kor": "텅구리",
-    "chs": "嘎啦嘎啦",
-    "cht": "嘎啦嘎啦"
-  },
-  "formNames": {
-    "eng": "Alolan Form",
-    "esp": "Forma de Alola",
-    "fra": "Forme d'Alola",
-    "deu": "Alola-Form",
-    "ita": "Forma di Alola",
-    "jap": "アローラのすがた",
-    "kor": "알로라의 모습",
-    "chs": "阿罗拉的样子",
-    "cht": "阿羅拉的樣子"
-  },
   "transferOnlyIn": ["bank", "home"]
 }

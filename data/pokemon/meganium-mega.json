@@ -65,58 +65,33 @@
       "from": ["meganium", "meganium-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "meganiumite", "role": "held" },
+      "item": {
+        "id": "meganiumite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Meganium",
-    "fra": "MégaMéganium",
-    "deu": "Mega-Meganie",
-    "jap": "メガメガニウム",
-    "kor": "메가메가니움",
-    "chs": "超级大竺葵",
-    "cht": "超級大竺葵"
-  },
-  "genus": {
-    "eng": "Herb Pokémon",
-    "esp": "Pokémon Hierba",
-    "fra": "Pokémon Herbe",
-    "deu": "Kräuter",
-    "ita": "Pokémon Erbe",
-    "jap": "ハーブポケモン",
-    "kor": "허브포켓몬",
-    "chs": "芳草宝可梦",
-    "cht": "芳草寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Meganium",
-    "fra": "Méganium",
-    "deu": "Meganie",
-    "jap": "メガニウム",
-    "kor": "메가니움",
-    "chs": "大竺葵",
-    "cht": "大竺葵"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0154001"
 }

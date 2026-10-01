@@ -1,9 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "fully-sorted-no-forms",
   "gameSet": "lza",
-  "name": "Regional: Sorted by Species (No Forms)",
-  "description": "Pokémon Boxes are sorted by Species only (no forms), following the game's Pokédex order.",
   "source": {
     "kind": "classic",
     "gameSet": "lza",
@@ -14,7 +12,6 @@
   "tags": ["grouped", "sorted", "forms"],
   "boxes": [
     {
-      "name": "Box 1",
       "slots": [
         "chikorita",
         "bayleef",
@@ -49,7 +46,6 @@
       ]
     },
     {
-      "name": "Box 2",
       "slots": [
         "roserade",
         "magikarp",
@@ -84,7 +80,6 @@
       ]
     },
     {
-      "name": "Box 3",
       "slots": [
         "arbok",
         "abra",
@@ -119,7 +114,6 @@
       ]
     },
     {
-      "name": "Box 4",
       "slots": [
         "houndour",
         "houndoom",
@@ -154,7 +148,6 @@
       ]
     },
     {
-      "name": "Box 5",
       "slots": [
         "excadrill",
         "sandile",
@@ -189,7 +182,6 @@
       ]
     },
     {
-      "name": "Box 6",
       "slots": [
         "charmander",
         "charmeleon",
@@ -224,7 +216,6 @@
       ]
     },
     {
-      "name": "Box 7",
       "slots": [
         "hawlucha",
         "phantump",
@@ -259,7 +250,6 @@
       ]
     },
     {
-      "name": "Box 8",
       "slots": [
         "greninja",
         "falinks",
@@ -294,7 +284,6 @@
       ]
     },
     {
-      "name": "Box 9",
       "slots": [
         "cubone",
         "marowak",
@@ -329,7 +318,6 @@
       ]
     },
     {
-      "name": "Box 10",
       "slots": [
         "treecko",
         "grovyle",
@@ -364,7 +352,6 @@
       ]
     },
     {
-      "name": "Box 11",
       "slots": [
         "kleavor",
         "morpeko",
@@ -399,7 +386,6 @@
       ]
     },
     {
-      "name": "Box 12",
       "slots": [
         "ceruledge",
         "maschiff",
@@ -434,7 +420,6 @@
       ]
     },
     {
-      "name": "Box 13",
       "slots": ["groudon", "rayquaza", "magearna", "zeraora"]
     }
   ]

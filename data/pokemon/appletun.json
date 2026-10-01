@@ -64,31 +64,13 @@
     {
       "from": ["applin"],
       "trigger": "use_item",
-      "item": { "id": "sweetapple", "role": "used" },
+      "item": {
+        "id": "sweetapple",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Appletun",
-    "fra": "Dratatin",
-    "deu": "Schlapfel",
-    "jap": "タルップル",
-    "kor": "단지래플",
-    "chs": "丰蜜龙",
-    "cht": "豐蜜龍"
-  },
-  "genus": {
-    "eng": "Apple Nectar Pokémon",
-    "esp": "Pokémon Manzanéctar",
-    "fra": "Pokémon Jus Pomme",
-    "deu": "Apfelnektar-Pokémon",
-    "ita": "Pokémon Pomisucco",
-    "jap": "りんごじるポケモン",
-    "kor": "사과즙포켓몬",
-    "chs": "苹果汁宝可梦",
-    "cht": "蘋果汁寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["swsh-sw", "home"]
+  "transferOnlyIn": ["swsh-sw", "home"],
+  "championsId": "0842000"
 }

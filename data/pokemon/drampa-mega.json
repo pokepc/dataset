@@ -65,58 +65,33 @@
       "from": ["drampa"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "drampanite", "role": "held" },
+      "item": {
+        "id": "drampanite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Drampa",
-    "fra": "MégaDraïeul",
-    "deu": "Mega-Sen-Long",
-    "jap": "メガジジーロン",
-    "kor": "메가할비롱",
-    "chs": "超级老翁龙",
-    "cht": "超級老翁龍"
-  },
-  "genus": {
-    "eng": "Placid Pokémon",
-    "esp": "Pokémon Sosiego",
-    "fra": "Pokémon Nonchalant",
-    "deu": "Gelassenheits-Pokémon",
-    "ita": "Pokémon Tuttacalma",
-    "jap": "ゆうゆうポケモン",
-    "kor": "느긋누긋포켓몬",
-    "chs": "悠游宝可梦",
-    "cht": "悠遊寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Drampa",
-    "fra": "Draïeul",
-    "deu": "Sen-Long",
-    "jap": "ジジーロン",
-    "kor": "할비롱",
-    "chs": "老翁龙",
-    "cht": "老翁龍"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0780001"
 }

@@ -65,66 +65,49 @@
       "from": ["blaziken", "blaziken-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "blazikenite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "blazikenite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["blaziken", "blaziken-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "blazikenite", "role": "held" },
+      "item": {
+        "id": "blazikenite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Blaziken",
-    "fra": "MégaBraségali",
-    "deu": "Mega-Lohgock",
-    "jap": "メガバシャーモ",
-    "kor": "메가번치코",
-    "chs": "超级火焰鸡",
-    "cht": "超級火焰雞"
-  },
-  "genus": {
-    "eng": "Blaze Pokémon",
-    "esp": "Pokémon Llameante",
-    "fra": "Pokémon Ardent",
-    "deu": "Großbrand-Pokémon",
-    "ita": "Pokémon Vampe",
-    "jap": "もうかポケモン",
-    "kor": "맹화포켓몬",
-    "chs": "猛火宝可梦",
-    "cht": "猛火寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Blaziken",
-    "fra": "Braségali",
-    "deu": "Lohgock",
-    "jap": "バシャーモ",
-    "kor": "번치코",
-    "chs": "火焰鸡",
-    "cht": "火焰雞"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["xy-x", "xy-y", "sm-s", "sm-m"]
+  "transferOnlyIn": ["xy-x", "xy-y", "sm-s", "sm-m"],
+  "championsId": "0257001"
 }

@@ -80,31 +80,13 @@
     {
       "from": ["helioptile"],
       "trigger": "use_item",
-      "item": { "id": "sunstone", "role": "used" },
+      "item": {
+        "id": "sunstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Heliolisk",
-    "fra": "Iguolta",
-    "deu": "Elezard",
-    "jap": "エレザード",
-    "kor": "일레도리자드",
-    "chs": "光电伞蜥",
-    "cht": "光電傘蜥"
-  },
-  "genus": {
-    "eng": "Generator Pokémon",
-    "esp": "Pokémon Generador",
-    "fra": "Pokémon Générateur",
-    "deu": "Generatoren-Pokémon",
-    "ita": "Pokémon Generatore",
-    "jap": "はつでんポケモン",
-    "kor": "발전포켓몬",
-    "chs": "发电宝可梦",
-    "cht": "發電寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0695000"
 }

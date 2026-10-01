@@ -66,37 +66,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Rillaboom (Gigantamax Form)",
-    "fra": "Gorythmic (Forme Gigamax)",
-    "deu": "Gortrom (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Drummer Pokémon",
-    "esp": "Pokémon Percusión",
-    "fra": "Pokémon Batteur",
-    "deu": "Drummer-Pokémon",
-    "ita": "Pokémon Percussione",
-    "jap": "ドラマーポケモン",
-    "kor": "드러머포켓몬",
-    "chs": "鼓手宝可梦",
-    "cht": "鼓手寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Rillaboom",
-    "fra": "Gorythmic",
-    "deu": "Gortrom",
-    "jap": "ゴリランダー",
-    "kor": "고릴타",
-    "chs": "轰擂金刚猩",
-    "cht": "轟擂金剛猩"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

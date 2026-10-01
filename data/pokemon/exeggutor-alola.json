@@ -92,54 +92,18 @@
       "from": ["exeggcute"],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
-      "conditions": [{ "key": "region", "region": "alola", "relation": "in" }],
-      "notes": {
-        "eng": "Evolve in Alola; Ultra Space in Ultra Sun/Ultra Moon produces the ordinary form instead."
-      }
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "region",
+          "region": "alola",
+          "relation": "in"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Exeggutor (Alolan Form)",
-    "esp": "Exeggutor (Forma de Alola)",
-    "fra": "Noadkoko (Forme d'Alola)",
-    "deu": "Kokowei (Alola-Form)",
-    "ita": "Exeggutor (Forma di Alola)",
-    "jap": "ナッシー (アローラのすがた)",
-    "kor": "나시 (알로라의 모습)",
-    "chs": "椰蛋树 (阿罗拉的样子)",
-    "cht": "椰蛋樹 (阿羅拉的樣子)"
-  },
-  "genus": {
-    "eng": "Coconut Pokémon",
-    "esp": "Pokémon Coco",
-    "fra": "Pokémon Fruitpalme",
-    "deu": "Palmfrucht-Pokémon",
-    "ita": "Pokémon Nocecocco",
-    "jap": "やしのみポケモン",
-    "kor": "야자열매포켓몬",
-    "chs": "椰子宝可梦",
-    "cht": "椰子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Exeggutor",
-    "fra": "Noadkoko",
-    "deu": "Kokowei",
-    "jap": "ナッシー",
-    "kor": "나시",
-    "chs": "椰蛋树",
-    "cht": "椰蛋樹"
-  },
-  "formNames": {
-    "eng": "Alolan Form",
-    "esp": "Forma de Alola",
-    "fra": "Forme d'Alola",
-    "deu": "Alola-Form",
-    "ita": "Forma di Alola",
-    "jap": "アローラのすがた",
-    "kor": "알로라의 모습",
-    "chs": "阿罗拉的样子",
-    "cht": "阿羅拉的樣子"
-  },
   "transferOnlyIn": ["bank", "home"]
 }

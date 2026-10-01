@@ -101,7 +101,6 @@
   "femaleRate": 0,
   "baseForms": [],
   "forms": ["rotom-heat", "rotom-wash", "rotom-frost", "rotom-fan", "rotom-mow"],
-  "formsDesc": "Forms have different signature moves and types, and the appliance forms' stats are different from the normal form's.  In Generation IV, all forms are Electric/Ghost type.\n\nWhen switching forms, the old signature move (if any) is removed and the new one must be learned, overwriting another move if need be, or the switch will be cancelled; however, it can be forgotten while in the new form.  If Rotom only knows its signature move upon reverting to its default form, it learns thunder shock to avoid having no moves.\n\nAppliances for switching Rotom's form can be found in the following locations, depending on the game:\n\n* Platinum: In the Team Galactic Eterna Building.  Requires a secret key.\n* HeartGold and SoulSilver: In the Silph Co. Office Building.  Enter the building when walking with Rotom and enter the broken elevator.\n* Black and White 1 & 2: In Shopping Mall Nine.  Found in boxes in a storage room on the first floor on the far right.",
   "refs": {
     "pkApiId": "479",
     "pkApiFormId": "479",
@@ -118,18 +117,29 @@
       "games": ["pt", "bdsp-bd", "bdsp-sp"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "team_galactic_eterna_building_rotom_room" },
-        { "key": "interaction", "interaction": "return_appliance" }
-      ],
-      "notes": { "eng": "Access the appliance room using the Secret Key." }
+        {
+          "key": "location",
+          "location": "team_galactic_eterna_building_rotom_room"
+        },
+        {
+          "key": "interaction",
+          "interaction": "return_appliance"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom-wash"],
       "games": ["hgss-hg", "hgss-ss"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "silph_co_rotom_room" },
-        { "key": "interaction", "interaction": "return_appliance" }
+        {
+          "key": "location",
+          "location": "silph_co_rotom_room"
+        },
+        {
+          "key": "interaction",
+          "interaction": "return_appliance"
+        }
       ]
     },
     {
@@ -137,8 +147,14 @@
       "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "shopping_mall_nine_basement" },
-        { "key": "interaction", "interaction": "return_appliance" }
+        {
+          "key": "location",
+          "location": "shopping_mall_nine_basement"
+        },
+        {
+          "key": "interaction",
+          "interaction": "return_appliance"
+        }
       ]
     },
     {
@@ -146,8 +162,14 @@
       "games": ["xy-x", "xy-y"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "sycamore_pokemon_lab" },
-        { "key": "interaction", "interaction": "return_appliance" }
+        {
+          "key": "location",
+          "location": "sycamore_pokemon_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "return_appliance"
+        }
       ]
     },
     {
@@ -155,8 +177,14 @@
       "games": ["oras-or", "oras-as"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "professor_birchs_lab" },
-        { "key": "interaction", "interaction": "return_appliance" }
+        {
+          "key": "location",
+          "location": "professor_birchs_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "return_appliance"
+        }
       ]
     },
     {
@@ -164,8 +192,14 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "professor_kukuis_lab" },
-        { "key": "interaction", "interaction": "return_appliance" }
+        {
+          "key": "location",
+          "location": "professor_kukuis_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "return_appliance"
+        }
       ]
     },
     {
@@ -173,78 +207,99 @@
       "games": ["la"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "jubilife_village_player_quarters" },
-        { "key": "interaction", "interaction": "return_appliance" }
-      ],
-      "notes": { "eng": "Purchase the corresponding appliance from Ginter first." }
+        {
+          "key": "location",
+          "location": "jubilife_village_player_quarters"
+        },
+        {
+          "key": "interaction",
+          "interaction": "return_appliance"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom-wash"],
       "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
       "trigger": "use_item",
-      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
-      "conditions": [{ "key": "interaction", "interaction": "light_bulb" }]
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "light_bulb"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom-wash"],
       "games": ["bdsp-bd", "bdsp-sp"],
       "trigger": "use_item",
-      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
-      "conditions": [{ "key": "interaction", "interaction": "light_bulb" }],
-      "notes": {
-        "eng": "An appliance form must first be used in Rotom’s Room to unlock that choice in the catalog."
-      }
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "light_bulb"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom-wash"],
       "games": ["lza"],
       "trigger": "use_item",
-      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
-      "conditions": [{ "key": "interaction", "interaction": "light_bulb" }],
-      "notes": {
-        "eng": "Obtain the Rotom Catalog in Mega Dimension side mission 170, Rotom Showcase!"
-      }
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "light_bulb"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom-wash"],
       "games": ["pt", "hgss-hg", "hgss-ss"],
       "trigger": "automatic",
-      "conditions": [{ "key": "interaction", "interaction": "enter_union_room" }]
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "enter_union_room"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom-wash"],
       "games": ["pt", "hgss-hg", "hgss-ss"],
       "trigger": "automatic",
-      "conditions": [{ "key": "interaction", "interaction": "enter_wifi_club" }]
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "enter_wifi_club"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-heat", "rotom-mow", "rotom-wash"],
       "games": ["pt", "hgss-hg", "hgss-ss"],
       "trigger": "automatic",
-      "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+      "conditions": [
+        {
+          "key": "storage_event",
+          "event": "deposit",
+          "service": "day_care"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Rotom",
-    "fra": "Motisma",
-    "deu": "Rotom",
-    "jap": "ロトム",
-    "kor": "로토무",
-    "chs": "洛托姆",
-    "cht": "洛托姆"
-  },
-  "genus": {
-    "eng": "Plasma Pokémon",
-    "esp": "Pokémon Plasma",
-    "fra": "Pokémon Plasma",
-    "deu": "Plasma-Pokémon",
-    "ita": "Pokémon Plasma",
-    "jap": "プラズマポケモン",
-    "kor": "플라스마포켓몬",
-    "chs": "等离子宝可梦",
-    "cht": "等離子寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bank", "oras-or", "oras-as", "sm-s", "sm-m"]
+  "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bank", "oras-or", "oras-as", "sm-s", "sm-m"],
+  "championsId": "0479000"
 }

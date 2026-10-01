@@ -68,41 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Corviknight (Gigantamax Form)",
-    "fra": "Corvaillus (Forme Gigamax)",
-    "deu": "Krarmor (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Raven Pokémon",
-    "esp": "Pokémon Cuervo",
-    "fra": "Pokémon Corbeau",
-    "deu": "Krähen-Pokémon",
-    "ita": "Pokémon Corvo",
-    "jap": "カラスポケモン",
-    "kor": "까마귀포켓몬",
-    "chs": "乌鸦宝可梦",
-    "cht": "烏鴉寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Corviknight",
-    "fra": "Corvaillus",
-    "deu": "Krarmor",
-    "jap": "アーマーガア",
-    "kor": "아머까오",
-    "chs": "钢铠鸦",
-    "cht": "鋼鎧鴉"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

@@ -142,32 +142,13 @@
     {
       "from": ["poliwhirl"],
       "trigger": "use_item",
-      "item": { "id": "waterstone", "role": "used" },
+      "item": {
+        "id": "waterstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Poliwrath",
-    "fra": "Tartard",
-    "deu": "Quappo",
-    "jap": "ニョロボン",
-    "kor": "강챙이",
-    "chs": "蚊香泳士",
-    "cht": "蚊香泳士"
-  },
-  "genus": {
-    "eng": "Tadpole Pokémon",
-    "esp": "Pokémon Renacuajo",
-    "fra": "Pokémon Têtard",
-    "deu": "Kaulquappen-Pokémon",
-    "ita": "Pokémon Girino",
-    "jap": "おたまポケモン",
-    "kor": "올챙이포켓몬",
-    "chs": "蝌蚪宝可梦",
-    "cht": "蝌蚪寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

@@ -136,43 +136,13 @@
     {
       "from": ["gloom"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Vileplume",
-    "fra": "Rafflesia",
-    "deu": "Giflor",
-    "jap": "ラフレシア",
-    "kor": "라플레시아",
-    "chs": "霸王花",
-    "cht": "霸王花"
-  },
-  "genus": {
-    "eng": "Flower Pokémon",
-    "esp": "Pokémon Flor",
-    "fra": "Pokémon Fleur",
-    "deu": "Blumen-Pokémon",
-    "ita": "Pokémon Fiore",
-    "jap": "フラワーポケモン",
-    "kor": "꽃포켓몬",
-    "chs": "花宝可梦",
-    "cht": "花寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": [
     "rb-b",
     "boxrs",
@@ -190,5 +160,6 @@
     "usum-um",
     "lgpe-lge",
     "home"
-  ]
+  ],
+  "championsId": "0045000"
 }

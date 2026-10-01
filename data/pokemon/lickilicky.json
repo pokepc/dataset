@@ -110,30 +110,13 @@
     {
       "from": ["lickitung"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "rollout" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "rollout"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Lickilicky",
-    "fra": "Coudlangue",
-    "deu": "Schlurplek",
-    "jap": "ベロベルト",
-    "kor": "내룸벨트",
-    "chs": "大舌舔",
-    "cht": "大舌舔"
-  },
-  "genus": {
-    "eng": "Licking Pokémon",
-    "esp": "Pokémon Lametazo",
-    "fra": "Pokémon Lécheur",
-    "deu": "Schlecker-Pokémon",
-    "ita": "Pokémon Linguaccia",
-    "jap": "なめまわしポケモン",
-    "kor": "핥기포켓몬",
-    "chs": "舔舔宝可梦",
-    "cht": "舔舔寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["ranch", "bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
 }

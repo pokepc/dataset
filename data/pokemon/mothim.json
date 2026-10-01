@@ -101,31 +101,14 @@
       "from": ["burmy", "burmy-sandy", "burmy-trash"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "gender", "gender": "male" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "male"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Mothim",
-    "fra": "Papilord",
-    "deu": "Moterpel",
-    "jap": "ガーメイル",
-    "kor": "나메일",
-    "chs": "绅士蛾",
-    "cht": "紳士蛾"
-  },
-  "genus": {
-    "eng": "Moth Pokémon",
-    "esp": "Pokémon Polilla",
-    "fra": "Pokémon Phalène",
-    "deu": "Motte",
-    "ita": "Pokémon Falena",
-    "jap": "ミノガポケモン",
-    "kor": "나방포켓몬",
-    "chs": "蓑衣蛾宝可梦",
-    "cht": "蓑衣蛾寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "bw-b",

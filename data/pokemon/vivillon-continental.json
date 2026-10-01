@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "continental" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "continental"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Continental Pattern)",
-    "fra": "Prismillon (Motif Continent)",
-    "deu": "Vivillon (Kontinentalmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Continental Pattern",
-    "esp": "Motivo Continental",
-    "fra": "Motif Continent",
-    "deu": "Kontinentalmuster",
-    "ita": "Motivo Continentale",
-    "jap": "たいりくのもよう",
-    "kor": "대륙의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666003"
 }

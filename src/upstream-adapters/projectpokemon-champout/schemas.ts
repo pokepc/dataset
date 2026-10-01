@@ -7,7 +7,7 @@ import {
   moveClasses,
   moveTargets,
   pokemonTypes,
-} from '../../lib-next/enums'
+} from '../../lib/enums'
 
 export const slugSchema = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/)
 

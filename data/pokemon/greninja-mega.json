@@ -65,58 +65,33 @@
       "from": ["greninja"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "greninjite", "role": "held" },
+      "item": {
+        "id": "greninjite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Greninja",
-    "fra": "MégaAmphinobi",
-    "deu": "Mega-Quajutsu",
-    "jap": "メガゲッコウガ",
-    "kor": "메가개굴닌자",
-    "chs": "超级甲贺忍蛙",
-    "cht": "超級甲賀忍蛙"
-  },
-  "genus": {
-    "eng": "Ninja Pokémon",
-    "esp": "Pokémon Ninja",
-    "fra": "Pokémon Ninja",
-    "deu": "Ninja",
-    "ita": "Pokémon Ninja",
-    "jap": "しのびポケモン",
-    "kor": "시노비포켓몬",
-    "chs": "忍者宝可梦",
-    "cht": "忍者寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Greninja",
-    "fra": "Amphinobi",
-    "deu": "Quajutsu",
-    "jap": "ゲッコウガ",
-    "kor": "개굴닌자",
-    "chs": "甲贺忍蛙",
-    "cht": "甲賀忍蛙"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0658003"
 }

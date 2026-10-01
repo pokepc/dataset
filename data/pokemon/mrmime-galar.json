@@ -68,52 +68,17 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "known_move", "move": "mimic" },
-        { "key": "region", "region": "galar", "relation": "in" }
+        {
+          "key": "known_move",
+          "move": "mimic"
+        },
+        {
+          "key": "region",
+          "region": "galar",
+          "relation": "in"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Mr. Mime (Galarian Form)",
-    "esp": "Mr. Mime (Forma de Galar)",
-    "fra": "M. Mime (Forme de Galar)",
-    "deu": "Pantimos (Galar-Form)",
-    "ita": "Mr. Mime (Forma di Galar)",
-    "jap": "バリヤード (ガラルのすがた)",
-    "kor": "마임맨 (가라르의 모습)",
-    "chs": "魔墙人偶 (伽勒尔的样子)",
-    "cht": "魔牆人偶 (伽勒爾的樣子)"
-  },
-  "genus": {
-    "eng": "Barrier Pokémon",
-    "esp": "Pokémon Barrera",
-    "fra": "Pokémon Bloqueur",
-    "deu": "Sperren-Pokémon",
-    "ita": "Pokémon Barriera",
-    "jap": "バリアーポケモン",
-    "kor": "배리어포켓몬",
-    "chs": "屏障宝可梦",
-    "cht": "屏障寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Mr. Mime",
-    "fra": "M. Mime",
-    "deu": "Pantimos",
-    "jap": "バリヤード",
-    "kor": "마임맨",
-    "chs": "魔墙人偶",
-    "cht": "魔牆人偶"
-  },
-  "formNames": {
-    "eng": "Galarian Form",
-    "esp": "Forma de Galar",
-    "fra": "Forme de Galar",
-    "deu": "Galar-Form",
-    "ita": "Forma di Galar",
-    "jap": "ガラルのすがた",
-    "kor": "가라르의 모습",
-    "chs": "伽勒尔的样子",
-    "cht": "伽勒爾的樣子"
-  },
   "transferOnlyIn": ["home"]
 }

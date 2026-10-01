@@ -67,18 +67,32 @@
       "from": ["dialga"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "adamantcrystal", "role": "used", "consumed": false },
+      "item": {
+        "id": "adamantcrystal",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "adamantcrystal", "role": "used", "consumed": false },
+          "item": {
+            "id": "adamantcrystal",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         }
       ]
     },
@@ -86,53 +100,35 @@
       "from": ["dialga"],
       "games": ["sv-s", "sv-v"],
       "trigger": "equip_item",
-      "item": { "id": "adamantcrystal", "role": "held", "consumed": false },
+      "item": {
+        "id": "adamantcrystal",
+        "role": "held",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "remove_item",
-          "item": { "id": "adamantcrystal", "role": "held", "consumed": false },
+          "item": {
+            "id": "adamantcrystal",
+            "role": "held",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Dialga (Origin Forme)",
-    "fra": "Dialga (Forme Originelle)",
-    "deu": "Dialga (Urform)",
-    "jap": "ディアルガ (オリジンフォルム)"
-  },
-  "genus": {
-    "eng": "Temporal Pokémon",
-    "esp": "Pokémon Temporal",
-    "fra": "Pokémon Temps",
-    "deu": "Zeitweilig-Pokémon",
-    "ita": "Pokémon Tempo",
-    "jap": "じかんポケモン",
-    "kor": "시간포켓몬",
-    "chs": "时间宝可梦",
-    "cht": "時間寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Dialga",
-    "fra": "Dialga",
-    "deu": "Dialga",
-    "jap": "ディアルガ",
-    "kor": "디아루가",
-    "chs": "帝牙卢卡",
-    "cht": "帝牙盧卡"
-  },
-  "formNames": {
-    "eng": "Origin Forme",
-    "fra": "Forme Originelle",
-    "deu": "Urform",
-    "jap": "オリジンフォルム"
-  },
   "transferOnlyIn": ["sv-s", "sv-v"]
 }

@@ -65,18 +65,42 @@
       "from": ["darmanitan"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["zenmode"] },
-        { "key": "battle_event", "events": ["end_of_turn"] },
-        { "key": "hp", "comparison": "lte", "percent": 50 },
-        { "key": "hp", "comparison": "gt", "percent": 0 }
+        {
+          "key": "ability",
+          "abilities": ["zenmode"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["end_of_turn"]
+        },
+        {
+          "key": "hp",
+          "comparison": "lte",
+          "percent": 50
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["zenmode"] },
-            { "key": "battle_event", "events": ["end_of_turn"] },
-            { "key": "hp", "comparison": "gt", "percent": 50 }
+            {
+              "key": "ability",
+              "abilities": ["zenmode"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["end_of_turn"]
+            },
+            {
+              "key": "hp",
+              "comparison": "gt",
+              "percent": 50
+            }
           ]
         },
         "switch_out",
@@ -85,53 +109,14 @@
           "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "oras-or", "oras-as"],
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "zen_mode_suppressed_or_replaced" }
+            {
+              "key": "battle_condition",
+              "condition": "zen_mode_suppressed_or_replaced"
+            }
           ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Darmanitan (Zen Mode)",
-    "esp": "Darmanitan (Modo Daruma)",
-    "fra": "Darumacho (Mode Transe)",
-    "deu": "Flampivian (Trance-Modus)",
-    "ita": "Darmanitan (Stato Zen)",
-    "jap": "ヒヒダルマ (ダルマモード)",
-    "kor": "불비달마 (달마모드)",
-    "chs": "达摩狒狒 (达摩模式)",
-    "cht": "達摩狒狒 (達摩模式)"
-  },
-  "genus": {
-    "eng": "Blazing Pokémon",
-    "esp": "Pokémon Candente",
-    "fra": "Pokémon Enflammé",
-    "deu": "Lichterloh-Pokémon",
-    "ita": "Pokémon Altefiamme",
-    "jap": "えんじょうポケモン",
-    "kor": "염상포켓몬",
-    "chs": "爆燃宝可梦",
-    "cht": "爆燃寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Darmanitan",
-    "fra": "Darumacho",
-    "deu": "Flampivian",
-    "jap": "ヒヒダルマ",
-    "kor": "불비달마",
-    "chs": "达摩狒狒",
-    "cht": "達摩狒狒"
-  },
-  "formNames": {
-    "eng": "Zen Mode",
-    "esp": "Modo Daruma",
-    "fra": "Mode Transe",
-    "deu": "Trance-Modus",
-    "ita": "Stato Zen",
-    "jap": "ダルマモード",
-    "kor": "달마모드",
-    "chs": "达摩模式",
-    "cht": "達摩模式"
-  },
   "transferOnlyIn": ["xy-x", "xy-y", "sm-s", "sm-m", "usum-us", "usum-um", "swsh-sh"]
 }

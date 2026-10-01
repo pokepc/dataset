@@ -78,23 +78,45 @@
       "from": ["gyarados", "gyarados-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "gyaradosite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "gyaradosite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["gyarados", "gyarados-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "gyaradosite", "role": "held" },
+      "item": {
+        "id": "gyaradosite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -102,50 +124,19 @@
       "from": ["gyarados", "gyarados-f"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "gyaradosite", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "gyaradosite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Gyarados",
-    "fra": "MégaLéviator",
-    "deu": "Mega-Garados",
-    "jap": "メガギャラドス",
-    "kor": "메가갸라도스",
-    "chs": "超级暴鲤龙",
-    "cht": "超級暴鯉龍"
-  },
-  "genus": {
-    "eng": "Atrocious Pokémon",
-    "esp": "Pokémon Atrocidad",
-    "fra": "Pokémon Terrifiant",
-    "deu": "Grausam-Pokémon",
-    "ita": "Pokémon Atroce",
-    "jap": "きょうあくポケモン",
-    "kor": "흉악포켓몬",
-    "chs": "凶恶宝可梦",
-    "cht": "凶惡寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Gyarados",
-    "fra": "Léviator",
-    "deu": "Garados",
-    "jap": "ギャラドス",
-    "kor": "갸라도스",
-    "chs": "暴鲤龙",
-    "cht": "暴鯉龍"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0130001"
 }

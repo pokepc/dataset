@@ -98,7 +98,11 @@
       ],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "pixieplate", "role": "used", "consumed": false },
+      "item": {
+        "id": "pixieplate",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": []
     },
     {
@@ -136,8 +140,16 @@
         "sv-v"
       ],
       "trigger": "equip_item",
-      "item": { "id": "pixieplate", "role": "held" },
-      "conditions": [{ "key": "ability", "abilities": ["multitype"] }]
+      "item": {
+        "id": "pixieplate",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
     },
     {
       "from": [
@@ -161,8 +173,16 @@
       ],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "equip_item",
-      "item": { "id": "fairiumz", "role": "held" },
-      "conditions": [{ "key": "ability", "abilities": ["multitype"] }]
+      "item": {
+        "id": "fairiumz",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
     },
     {
       "from": [
@@ -188,49 +208,25 @@
       "games": ["la"],
       "trigger": "use_move",
       "conditions": [
-        { "key": "move_used", "move": "judgment" },
-        { "key": "battle_event", "events": ["before_move"] },
-        { "key": "mechanic", "mechanic": "legend_plate" },
-        { "key": "battle_condition", "condition": "judgment_type_match" }
+        {
+          "key": "move_used",
+          "move": "judgment"
+        },
+        {
+          "key": "battle_event",
+          "events": ["before_move"]
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "legend_plate"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "judgment_type_match"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Arceus (Fairy Type)",
-    "esp": "Arceus (Tipo Hada)",
-    "fra": "Arceus (Fée)",
-    "deu": "Arceus (Fee)",
-    "ita": "Arceus (Tipo Folletto)",
-    "jap": "アルセウス (フェアリータイプ)"
-  },
-  "genus": {
-    "eng": "Alpha Pokémon",
-    "esp": "Pokémon Alfa",
-    "fra": "Pokémon Alpha",
-    "deu": "Alpha",
-    "ita": "Pokémon Primevo",
-    "jap": "そうぞうポケモン",
-    "kor": "창조포켓몬",
-    "chs": "创造宝可梦",
-    "cht": "創造寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Arceus",
-    "fra": "Arceus",
-    "deu": "Arceus",
-    "jap": "アルセウス",
-    "kor": "아르세우스",
-    "chs": "阿尔宙斯",
-    "cht": "阿爾宙斯"
-  },
-  "formNames": {
-    "eng": "Fairy Type",
-    "esp": "Tipo Hada",
-    "fra": "Fée",
-    "deu": "Fee",
-    "ita": "Tipo Folletto",
-    "jap": "フェアリータイプ"
-  },
   "transferOnlyIn": [
     "xy-x",
     "xy-y",

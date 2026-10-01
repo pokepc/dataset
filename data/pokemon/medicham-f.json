@@ -126,46 +126,14 @@
       "from": ["meditite"],
       "trigger": "level_up",
       "minLevel": 37,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Medicham (Female)",
-    "fra": "Charmina (Female)",
-    "deu": "Meditalis (Female)"
-  },
-  "genus": {
-    "eng": "Meditate Pokémon",
-    "esp": "Pokémon Meditador",
-    "fra": "Pokémon Méditation",
-    "deu": "Meditation",
-    "ita": "Pokémon Meditazione",
-    "jap": "めいそうポケモン",
-    "kor": "명상포켓몬",
-    "chs": "冥想宝可梦",
-    "cht": "冥想寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Medicham",
-    "fra": "Charmina",
-    "deu": "Meditalis",
-    "jap": "チャーレム",
-    "kor": "요가램",
-    "chs": "恰雷姆",
-    "cht": "恰雷姆"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "frlg-fr",
@@ -178,5 +146,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0308000"
 }

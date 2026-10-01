@@ -66,26 +66,47 @@
       "from": ["minior"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["shieldsdown"] },
-        { "key": "intrinsic_form", "forms": ["minior-orange"] },
-        { "key": "battle_event", "events": ["end_of_turn"] },
-        { "key": "hp", "comparison": "lte", "percent": 50 },
-        { "key": "hp", "comparison": "gt", "percent": 0 }
+        {
+          "key": "ability",
+          "abilities": ["shieldsdown"]
+        },
+        {
+          "key": "intrinsic_form",
+          "forms": ["minior-orange"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["end_of_turn"]
+        },
+        {
+          "key": "hp",
+          "comparison": "lte",
+          "percent": 50
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        }
       ],
-      "notes": {
-        "eng": "The exposed core retains this Minior's fixed color; Meteor Form does not permit choosing a different color."
-      },
       "revert": [
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["shieldsdown"] },
-            { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
-            { "key": "hp", "comparison": "gt", "percent": 50 }
-          ],
-          "notes": {
-            "eng": "Shields Down restores Meteor Form above half HP while preserving the individual's fixed core color."
-          }
+            {
+              "key": "ability",
+              "abilities": ["shieldsdown"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["switch_in", "end_of_turn"]
+            },
+            {
+              "key": "hp",
+              "comparison": "gt",
+              "percent": 50
+            }
+          ]
         }
       ]
     },
@@ -93,68 +114,36 @@
       "from": ["minior"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "intrinsic_form", "forms": ["minior-orange"] },
-        { "key": "battle_event", "events": ["switch_out", "battle_end"] }
+        {
+          "key": "intrinsic_form",
+          "forms": ["minior-orange"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["switch_out", "battle_end"]
+        }
       ],
-      "notes": {
-        "eng": "A caught Minior exposes its own core outside battle. Wild overworld Minior may display Meteor Form."
-      },
       "revert": [
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["shieldsdown"] },
-            { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
-            { "key": "hp", "comparison": "gt", "percent": 50 }
-          ],
-          "notes": {
-            "eng": "Shields Down restores Meteor Form above half HP while preserving the individual's fixed core color."
-          }
+            {
+              "key": "ability",
+              "abilities": ["shieldsdown"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["switch_in", "end_of_turn"]
+            },
+            {
+              "key": "hp",
+              "comparison": "gt",
+              "percent": 50
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Minior (Orange Core)",
-    "esp": "Minior (Núcleo Naranja)",
-    "fra": "Météno (Noyau Orange)",
-    "deu": "Meteno (Oranger Kern)",
-    "ita": "Minior (Nucleo Arancione)",
-    "jap": "メテノ (だいだいいろのコア)",
-    "kor": "메테노 (주황색 코어)",
-    "chs": "小陨星 (橙色核心)",
-    "cht": "小隕星 (橙色核心)"
-  },
-  "genus": {
-    "eng": "Meteor Pokémon",
-    "esp": "Pokémon Meteoro",
-    "fra": "Pokémon Météore",
-    "deu": "Meteor",
-    "ita": "Pokémon Meteora",
-    "jap": "ながれぼしポケモン",
-    "kor": "유성포켓몬",
-    "chs": "流星宝可梦",
-    "cht": "流星寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Minior",
-    "fra": "Météno",
-    "deu": "Meteno",
-    "jap": "メテノ",
-    "kor": "메테노",
-    "chs": "小陨星",
-    "cht": "小隕星"
-  },
-  "formNames": {
-    "eng": "Orange Core",
-    "esp": "Núcleo Naranja",
-    "fra": "Noyau Orange",
-    "deu": "Oranger Kern",
-    "ita": "Nucleo Arancione",
-    "jap": "だいだいいろのコア",
-    "kor": "주황색 코어",
-    "chs": "橙色核心",
-    "cht": "橙色核心"
-  },
   "transferOnlyIn": ["bank", "home"]
 }

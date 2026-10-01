@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "high-plains" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "high-plains"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (High Plains Pattern)",
-    "fra": "Prismillon (Motif Sécheresse)",
-    "deu": "Vivillon (Dürremuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "High Plains Pattern",
-    "esp": "Motivo Estepa",
-    "fra": "Motif Sécheresse",
-    "deu": "Dürremuster",
-    "ita": "Motivo Deserto",
-    "jap": "こうやのもよう",
-    "kor": "황야의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666010"
 }

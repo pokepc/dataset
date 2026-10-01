@@ -126,48 +126,23 @@
     {
       "from": ["feebas"],
       "trigger": "level_up",
-      "conditions": [{ "key": "beauty", "minValue": 170 }]
+      "conditions": [
+        {
+          "key": "beauty",
+          "minValue": 170
+        }
+      ]
     },
     {
       "from": ["feebas"],
       "trigger": "trade",
-      "item": { "id": "prismscale", "role": "held" },
+      "item": {
+        "id": "prismscale",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Milotic",
-    "fra": "Milobellus",
-    "deu": "Milotic",
-    "jap": "ミロカロス",
-    "kor": "밀로틱",
-    "chs": "美纳斯",
-    "cht": "美納斯"
-  },
-  "genus": {
-    "eng": "Tender Pokémon",
-    "esp": "Pokémon Tierno",
-    "fra": "Pokémon Tendre",
-    "deu": "Zartheits-Pokémon",
-    "ita": "Pokémon Tenerezza",
-    "jap": "いつくしみポケモン",
-    "kor": "사랑포켓몬",
-    "chs": "慈爱宝可梦",
-    "cht": "慈愛寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -181,5 +156,6 @@
     "xy-y",
     "bank",
     "home"
-  ]
+  ],
+  "championsId": "0350000"
 }

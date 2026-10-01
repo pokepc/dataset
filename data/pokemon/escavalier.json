@@ -92,30 +92,13 @@
     {
       "from": ["karrablast"],
       "trigger": "trade",
-      "conditions": [{ "key": "trade_partner", "pokemon": "shelmet" }]
+      "conditions": [
+        {
+          "key": "trade_partner",
+          "pokemon": "shelmet"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Escavalier",
-    "fra": "Lançargot",
-    "deu": "Cavalanzas",
-    "jap": "シュバルゴ",
-    "kor": "슈바르고",
-    "chs": "骑士蜗牛",
-    "cht": "騎士蝸牛"
-  },
-  "genus": {
-    "eng": "Cavalry Pokémon",
-    "esp": "Pokémon Soldado",
-    "fra": "Pokémon Chevalier",
-    "deu": "Kavallerie-Pokémon",
-    "ita": "Pokémon Cavaliere",
-    "jap": "きへいポケモン",
-    "kor": "기병포켓몬",
-    "chs": "骑兵宝可梦",
-    "cht": "騎兵寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

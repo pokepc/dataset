@@ -123,46 +123,14 @@
       "from": ["gulpin"],
       "trigger": "level_up",
       "minLevel": 26,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Swalot (Female)",
-    "fra": "Avaltout (Female)",
-    "deu": "Schlukwech (Female)"
-  },
-  "genus": {
-    "eng": "Poison Bag Pokémon",
-    "esp": "Pokémon Bolsa Veneno",
-    "fra": "Pokémon Sac Poison",
-    "deu": "Giftbeutel",
-    "ita": "Pokémon Velenosacco",
-    "jap": "どくぶくろポケモン",
-    "kor": "독봉지포켓몬",
-    "chs": "毒袋宝可梦",
-    "cht": "毒袋寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Swalot",
-    "fra": "Avaltout",
-    "deu": "Schlukwech",
-    "jap": "マルノーム",
-    "kor": "꿀꺽몬",
-    "chs": "吞食兽",
-    "cht": "吞食獸"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -178,5 +146,6 @@
     "usum-us",
     "usum-um",
     "home"
-  ]
+  ],
+  "championsId": "0317000"
 }

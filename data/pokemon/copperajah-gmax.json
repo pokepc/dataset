@@ -66,37 +66,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Copperajah (Gigantamax Form)",
-    "fra": "Pachyradjah (Forme Gigamax)",
-    "deu": "Patinaraja (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Copperderm Pokémon",
-    "esp": "Pokémon Broncefante",
-    "fra": "Pokémon Pachycuivre",
-    "deu": "Kupferfant-Pokémon",
-    "ita": "Pokémon Bronzofante",
-    "jap": "どうぞうポケモン",
-    "kor": "동상포켓몬",
-    "chs": "像铜宝可梦",
-    "cht": "像銅寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Copperajah",
-    "fra": "Pachyradjah",
-    "deu": "Patinaraja",
-    "jap": "ダイオウドウ",
-    "kor": "대왕끼리동",
-    "chs": "大王铜象",
-    "cht": "大王銅象"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

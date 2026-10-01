@@ -144,31 +144,13 @@
     {
       "from": ["staryu"],
       "trigger": "use_item",
-      "item": { "id": "waterstone", "role": "used" },
+      "item": {
+        "id": "waterstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Starmie",
-    "fra": "Staross",
-    "deu": "Starmie",
-    "jap": "スターミー",
-    "kor": "아쿠스타",
-    "chs": "宝石海星",
-    "cht": "寶石海星"
-  },
-  "genus": {
-    "eng": "Mysterious Pokémon",
-    "esp": "Pokémon Misterioso",
-    "fra": "Pokémon Mystérieux",
-    "deu": "Mysteriös-Pokémon",
-    "ita": "Pokémon Misterioso",
-    "jap": "なぞのポケモン",
-    "kor": "수수께끼포켓몬",
-    "chs": "谜宝可梦",
-    "cht": "謎寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["boxrs", "col", "frlg-fr", "ranch", "xy-y", "bank", "home"]
+  "transferOnlyIn": ["boxrs", "col", "frlg-fr", "ranch", "xy-y", "bank", "home"],
+  "championsId": "0121000"
 }

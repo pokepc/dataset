@@ -77,50 +77,13 @@
       "from": ["rattata-alola"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "time_of_day", "time": "night" }]
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Raticate (Alolan Form)",
-    "esp": "Raticate (Forma de Alola)",
-    "fra": "Rattatac (Forme d'Alola)",
-    "deu": "Rattikarl (Alola-Form)",
-    "ita": "Raticate (Forma di Alola)",
-    "jap": "ラッタ (アローラのすがた)",
-    "kor": "레트라 (알로라의 모습)",
-    "chs": "拉达 (阿罗拉的样子)",
-    "cht": "拉達 (阿羅拉的樣子)"
-  },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Raticate",
-    "fra": "Rattatac",
-    "deu": "Rattikarl",
-    "jap": "ラッタ",
-    "kor": "레트라",
-    "chs": "拉达",
-    "cht": "拉達"
-  },
-  "formNames": {
-    "eng": "Alolan Form",
-    "esp": "Forma de Alola",
-    "fra": "Forme d'Alola",
-    "deu": "Alola-Form",
-    "ita": "Forma di Alola",
-    "jap": "アローラのすがた",
-    "kor": "알로라의 모습",
-    "chs": "阿罗拉的样子",
-    "cht": "阿羅拉的樣子"
-  },
   "transferOnlyIn": ["bank", "home"]
 }

@@ -65,58 +65,33 @@
       "from": ["barbaracle"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "barbaracite", "role": "held" },
+      "item": {
+        "id": "barbaracite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Barbaracle",
-    "fra": "MégaGolgopathe",
-    "deu": "Mega-Thanathora",
-    "jap": "メガガメノデス",
-    "kor": "메가거북손데스",
-    "chs": "超级龟足巨铠",
-    "cht": "超級龜足巨鎧"
-  },
-  "genus": {
-    "eng": "Collective Pokémon",
-    "esp": "Pokémon Combinación",
-    "fra": "Pokémon Assemblage",
-    "deu": "Ballungs-Pokémon",
-    "ita": "Pokémon Aggregato",
-    "jap": "しゅうごうポケモン",
-    "kor": "집합포켓몬",
-    "chs": "集合宝可梦",
-    "cht": "集合寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Barbaracle",
-    "fra": "Golgopathe",
-    "deu": "Thanathora",
-    "jap": "ガメノデス",
-    "kor": "거북손데스",
-    "chs": "龟足巨铠",
-    "cht": "龜足巨鎧"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0689001"
 }

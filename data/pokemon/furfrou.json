@@ -72,7 +72,6 @@
     "furfrou-kabuki",
     "furfrou-pharaoh"
   ],
-  "formsDesc": "Forms only differ in appearance.  Furfrou's trim can be changed at any time in Friseur Furfrou in Lumiose City.  It reverts to its Natural Form after five days unless trimmed again, or if it is deposited in the PC.",
   "refs": {
     "pkApiId": "676",
     "pkApiFormId": "676",
@@ -99,10 +98,15 @@
       "games": ["xy-x", "xy-y"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "friseur_furfrou" },
-        { "key": "interaction", "interaction": "furfrou_restore_natural" }
-      ],
-      "notes": { "eng": "Request the Natural Form." }
+        {
+          "key": "location",
+          "location": "friseur_furfrou"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
+      ]
     },
     {
       "from": [
@@ -119,8 +123,14 @@
       "games": ["oras-or", "oras-as"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "slateport_pokemon_fan_club" },
-        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+        {
+          "key": "location",
+          "location": "slateport_pokemon_fan_club"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
       ]
     },
     {
@@ -138,8 +148,14 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "malie_city_salon" },
-        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+        {
+          "key": "location",
+          "location": "malie_city_salon"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
       ]
     },
     {
@@ -157,8 +173,14 @@
       "games": ["usum-us", "usum-um"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "hauoli_city_salon" },
-        { "key": "interaction", "interaction": "furfrou_restore_natural" }
+        {
+          "key": "location",
+          "location": "hauoli_city_salon"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
       ]
     },
     {
@@ -176,33 +198,17 @@
       "games": ["lza"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "jaune_sector_6" },
-        { "key": "interaction", "interaction": "furfrou_restore_natural" }
-      ],
-      "notes": { "eng": "Ask Mirte to restore the Natural Form." }
+        {
+          "key": "location",
+          "location": "jaune_sector_6"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_restore_natural"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Furfrou",
-    "fra": "Couafarel",
-    "deu": "Coiffwaff",
-    "jap": "トリミアン",
-    "kor": "트리미앙",
-    "chs": "多丽米亚",
-    "cht": "多麗米亞"
-  },
-  "genus": {
-    "eng": "Poodle Pokémon",
-    "esp": "Pokémon Caniche",
-    "fra": "Pokémon Caniche",
-    "deu": "Pudel",
-    "ita": "Pokémon Barboncino",
-    "jap": "プードルポケモン",
-    "kor": "푸들포켓몬",
-    "chs": "贵宾犬宝可梦",
-    "cht": "貴賓犬寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0676000"
 }

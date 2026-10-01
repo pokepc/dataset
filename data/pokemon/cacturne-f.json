@@ -120,46 +120,14 @@
       "from": ["cacnea"],
       "trigger": "level_up",
       "minLevel": 32,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Cacturne (Female)",
-    "fra": "Cacturne (Female)",
-    "deu": "Noktuska (Female)"
-  },
-  "genus": {
-    "eng": "Scarecrow Pokémon",
-    "esp": "Pokémon Espantajo",
-    "fra": "Pokémon Épouvantail",
-    "deu": "Vogelschock",
-    "ita": "Pokémon Spavento",
-    "jap": "カカシぐさポケモン",
-    "kor": "허수아비포켓몬",
-    "chs": "稻草人宝可梦",
-    "cht": "稻草人寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Cacturne",
-    "fra": "Cacturne",
-    "deu": "Noktuska",
-    "jap": "ノクタス",
-    "kor": "밤선인",
-    "chs": "梦歌仙人掌",
-    "cht": "夢歌仙人掌"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",

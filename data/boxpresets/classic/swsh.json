@@ -1,10 +1,8 @@
 {
   "fully-sorted-regional": {
     "id": "fully-sorted-regional",
-    "name": "Regional: Sorted by Forms",
     "version": 1,
     "gameSet": "swsh",
-    "description": "Pokémon Boxes are sorted by Species and Forms together. Pokémon are sorted following each different Galar Pokedexes keeping only non-duplicates entries from DLCs.",
     "boxes": [
       {
         "pokemon": [
@@ -1019,10 +1017,8 @@
   },
   "sorted-regional": {
     "id": "sorted-regional",
-    "name": "Regional: Sorted by Species",
     "version": 1,
     "gameSet": "swsh",
-    "description": "Pokémon Boxes are sorted following each different Galar Pokedexes keeping only non-duplicates entries, separating Species and Forms. First you will find all the species, then all the forms starting in a new box (leaving a gap with the species). Forms are then sorted in the following order: Regional forms, Female forms and cosmetic forms",
     "boxes": [
       {
         "pokemon": [
@@ -2051,10 +2047,8 @@
   },
   "sorted-species": {
     "id": "sorted-species",
-    "name": "National: Sorted by Species",
     "version": 1,
     "gameSet": "swsh",
-    "description": "(Recommended) Pokémon Boxes are sorted following HOME's National Dex order, separating Species and Forms. First you will find all the species, then all the forms starting in a new box (leaving a gap with the species).",
     "boxes": [
       {
         "pokemon": [
@@ -2804,7 +2798,9 @@
           "regieleki"
         ]
       },
-      { "pokemon": ["regidrago", "glastrier", "spectrier", "calyrex"] },
+      {
+        "pokemon": ["regidrago", "glastrier", "spectrier", "calyrex"]
+      },
       {
         "pokemon": [
           "venusaur-f",
@@ -3041,10 +3037,8 @@
   },
   "sorted-species-minimal": {
     "id": "sorted-species-minimal",
-    "name": "National: Sorted by Species (Minimal)",
     "version": 1,
     "gameSet": "swsh",
-    "description": "Pokémon Boxes are sorted following HOME's National Dex order separating Species and Forms, but Legendary or Mythical Pokémon forms (like Magearna Original Color, etc) will be excluded. First you will find all the species, then all the forms starting in a new box (leaving a gap with the species).",
     "boxes": [
       {
         "pokemon": [
@@ -3794,7 +3788,9 @@
           "regieleki"
         ]
       },
-      { "pokemon": ["regidrago", "glastrier", "spectrier", "calyrex"] },
+      {
+        "pokemon": ["regidrago", "glastrier", "spectrier", "calyrex"]
+      },
       {
         "pokemon": [
           "venusaur-f",
@@ -4003,10 +3999,8 @@
   },
   "fully-sorted": {
     "id": "fully-sorted",
-    "name": "National: Sorted by Forms",
     "version": 1,
     "gameSet": "swsh",
-    "description": "Pokémon Boxes are sorted following HOME's National Dex order, mixing Species and Forms together.",
     "boxes": [
       {
         "pokemon": [
@@ -4996,10 +4990,8 @@
   },
   "fully-sorted-minimal": {
     "id": "fully-sorted-minimal",
-    "name": "National: Sorted by Forms (Minimal)",
     "version": 1,
     "gameSet": "swsh",
-    "description": "Pokémon Boxes are sorted following HOME's National Dex order mixing Species and Forms, but Legendary or Mythical Pokémon forms (like Hoopa Unbound, etc) will be excluded.",
     "boxes": [
       {
         "pokemon": [
@@ -5953,7 +5945,9 @@
           "regidrago"
         ]
       },
-      { "pokemon": ["glastrier", "spectrier", "calyrex"] }
+      {
+        "pokemon": ["glastrier", "spectrier", "calyrex"]
+      }
     ],
     "fullId": "swsh-fully-sorted-minimal"
   }

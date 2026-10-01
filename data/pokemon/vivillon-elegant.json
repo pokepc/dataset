@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "elegant" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "elegant"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Elegant Pattern)",
-    "fra": "Prismillon (Motif Monarchie)",
-    "deu": "Vivillon (Prunkmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Elegant Pattern",
-    "esp": "Motivo Oriental",
-    "fra": "Motif Monarchie",
-    "deu": "Prunkmuster",
-    "ita": "Motivo Eleganza",
-    "jap": "みやびなもよう",
-    "kor": "우아한 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666005"
 }

@@ -64,28 +64,13 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
       "minLevel": 38,
-      "conditions": [{ "key": "union_circle" }]
+      "conditions": [
+        {
+          "key": "union_circle"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Palafin",
-    "fra": "Superdofin",
-    "deu": "Delfinator",
-    "jap": "イルカマン",
-    "kor": "돌핀맨",
-    "chs": "海豚侠",
-    "cht": "海豚俠"
-  },
-  "genus": {
-    "eng": "Dolphin Pokémon",
-    "fra": "Dauphin/Super Héros",
-    "deu": "Delfin",
-    "jap": "イルカポケモン",
-    "kor": "돌고래포켓몬",
-    "chs": "海豚宝可梦",
-    "cht": "海豚寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": { "eng": "Zero Form" },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0964000"
 }

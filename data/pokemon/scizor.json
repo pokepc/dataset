@@ -130,51 +130,24 @@
     {
       "from": ["scyther"],
       "trigger": "trade",
-      "item": { "id": "metalcoat", "role": "held" },
+      "item": {
+        "id": "metalcoat",
+        "role": "held"
+      },
       "conditions": []
     },
     {
       "from": ["scyther"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "metalcoat", "role": "used" },
+      "item": {
+        "id": "metalcoat",
+        "role": "used"
+      },
       "conditions": [],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Scizor",
-    "fra": "Cizayox",
-    "deu": "Scherox",
-    "jap": "ハッサム",
-    "kor": "핫삼",
-    "chs": "巨钳螳螂",
-    "cht": "巨鉗螳螂"
-  },
-  "genus": {
-    "eng": "Pincer Pokémon",
-    "esp": "Pokémon Tenaza",
-    "fra": "Pokémon Pince",
-    "deu": "Kneifer-Pokémon",
-    "ita": "Pokémon Chela",
-    "jap": "はさみポケモン",
-    "kor": "집게포켓몬",
-    "chs": "钳子宝可梦",
-    "cht": "鉗子寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -192,5 +165,6 @@
     "oras-as",
     "home",
     "bdsp-sp"
-  ]
+  ],
+  "championsId": "0212000"
 }

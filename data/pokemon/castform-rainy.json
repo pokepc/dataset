@@ -82,35 +82,59 @@
       "from": ["castform", "castform-sunny", "castform-snowy"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["forecast"] },
-        { "key": "weather", "weather": ["rain"], "relation": "in" },
-        { "key": "battle_condition", "condition": "weather_effects_active" }
+        {
+          "key": "ability",
+          "abilities": ["forecast"]
+        },
+        {
+          "key": "weather",
+          "weather": ["rain"],
+          "relation": "in"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "weather_effects_active"
+        }
       ],
-      "notes": {
-        "eng": "Forecast changes form while the matching weather has an active effect in battle."
-      },
       "revert": [
         {
           "to": "castform",
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["forecast"] },
-            { "key": "weather", "weather": ["sun", "rain", "hail", "snow"], "relation": "outside" }
+            {
+              "key": "ability",
+              "abilities": ["forecast"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun", "rain", "hail", "snow"],
+              "relation": "outside"
+            }
           ]
         },
         {
           "to": "castform",
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["forecast"] },
-            { "key": "battle_condition", "condition": "weather_effects_negated" }
-          ],
-          "notes": { "eng": "For example, Cloud Nine or Air Lock negates the weather." }
+            {
+              "key": "ability",
+              "abilities": ["forecast"]
+            },
+            {
+              "key": "battle_condition",
+              "condition": "weather_effects_negated"
+            }
+          ]
         },
         {
           "to": "castform",
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
         },
         {
           "to": "castform",
@@ -132,57 +156,15 @@
           ],
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "forecast_suppressed_or_replaced" }
-          ],
-          "notes": {
-            "eng": "From Generation V onward, losing or suppressing Forecast restores Normal form. Generations III and IV retain the current form."
-          }
+            {
+              "key": "battle_condition",
+              "condition": "forecast_suppressed_or_replaced"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Castform (Rainy Form)",
-    "esp": "Castform (Forma Lluvia)",
-    "fra": "Morphéo (Forme Eau de Pluie)",
-    "deu": "Formeo (Regenform)",
-    "ita": "Castform (Forma Pioggia)",
-    "jap": "ポワルン (あまみずのすがた)",
-    "kor": "캐스퐁 (빗방울의 모습)",
-    "chs": "飘浮泡泡 (雨水的样子)",
-    "cht": "飄浮泡泡 (雨水的樣子)"
-  },
-  "genus": {
-    "eng": "Weather Pokémon",
-    "esp": "Pokémon Clima",
-    "fra": "Pokémon Climat",
-    "deu": "Wetter",
-    "ita": "Pokémon Meteo",
-    "jap": "てんきポケモン",
-    "kor": "날씨포켓몬",
-    "chs": "天气宝可梦",
-    "cht": "天氣寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Castform",
-    "fra": "Morphéo",
-    "deu": "Formeo",
-    "jap": "ポワルン",
-    "kor": "캐스퐁",
-    "chs": "飘浮泡泡",
-    "cht": "飄浮泡泡"
-  },
-  "formNames": {
-    "eng": "Rainy Form",
-    "esp": "Forma Lluvia",
-    "fra": "Forme Eau de Pluie",
-    "deu": "Regenform",
-    "ita": "Forma Pioggia",
-    "jap": "あまみずのすがた",
-    "kor": "빗방울의 모습",
-    "chs": "雨水的样子",
-    "cht": "雨水的樣子"
-  },
   "transferOnlyIn": [
     "col",
     "frlg-fr",
@@ -194,5 +176,6 @@
     "bw-w",
     "xy-x",
     "xy-y"
-  ]
+  ],
+  "championsId": "0351002"
 }

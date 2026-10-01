@@ -116,37 +116,17 @@
       "trigger": "special",
       "minLevel": 20,
       "conditions": [
-        { "key": "evolve_other", "pokemon": "ninjask" },
-        { "key": "spare_party_slot" }
+        {
+          "key": "evolve_other",
+          "pokemon": "ninjask"
+        },
+        {
+          "key": "spare_party_slot"
+        }
       ],
-      "additionalResult": true,
-      "notes": {
-        "eng": "From Generation IV onward, also requires a regular Poké Ball in the Bag. Generation III does not require the spare Poké Ball."
-      }
+      "additionalResult": true
     }
   ],
-  "names": {
-    "eng": "Shedinja",
-    "fra": "Munja",
-    "deu": "Ninjatom",
-    "jap": "ヌケニン",
-    "kor": "껍질몬",
-    "chs": "脱壳忍者",
-    "cht": "脫殼忍者"
-  },
-  "genus": {
-    "eng": "Shed Pokémon",
-    "esp": "Pokémon Muda",
-    "fra": "Pokémon Exuvie",
-    "deu": "Häutungs-Pokémon",
-    "ita": "Pokémon Cambiapelle",
-    "jap": "ぬけがらポケモン",
-    "kor": "허물포켓몬",
-    "chs": "空壳宝可梦",
-    "cht": "空殼寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",

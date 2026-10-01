@@ -120,31 +120,17 @@
     {
       "from": ["chingling"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "night" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Chimecho",
-    "fra": "Éoko",
-    "deu": "Palimpalim",
-    "jap": "チリーン",
-    "kor": "치렁",
-    "chs": "风铃铃",
-    "cht": "風鈴鈴"
-  },
-  "genus": {
-    "eng": "Wind Chime Pokémon",
-    "esp": "Pokémon Sonido Aire",
-    "fra": "Pokémon Carillon",
-    "deu": "Windspiel",
-    "ita": "Pokémon Vencampana",
-    "jap": "ふうりんポケモン",
-    "kor": "풍경포켓몬",
-    "chs": "风铃宝可梦",
-    "cht": "風鈴寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -160,5 +146,6 @@
     "usum-us",
     "usum-um",
     "home"
-  ]
+  ],
+  "championsId": "0358000"
 }

@@ -109,40 +109,24 @@
     {
       "from": ["dusclops"],
       "trigger": "trade",
-      "item": { "id": "reapercloth", "role": "held" },
+      "item": {
+        "id": "reapercloth",
+        "role": "held"
+      },
       "conditions": []
     },
     {
       "from": ["dusclops"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "reapercloth", "role": "used" },
+      "item": {
+        "id": "reapercloth",
+        "role": "used"
+      },
       "conditions": [],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Dusknoir",
-    "fra": "Noctunoir",
-    "deu": "Zwirrfinst",
-    "jap": "ヨノワール",
-    "kor": "야느와르몽",
-    "chs": "黑夜魔灵",
-    "cht": "黑夜魔靈"
-  },
-  "genus": {
-    "eng": "Gripper Pokémon",
-    "esp": "Pokémon Grilletes",
-    "fra": "Pokémon Mainpince",
-    "deu": "Greifer-Pokémon",
-    "ita": "Pokémon Pinza",
-    "jap": "てづかみポケモン",
-    "kor": "움켜쥠포켓몬",
-    "chs": "抓握宝可梦",
-    "cht": "抓握寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "bw-b",

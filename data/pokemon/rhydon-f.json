@@ -145,45 +145,13 @@
       "from": ["rhyhorn"],
       "trigger": "level_up",
       "minLevel": 42,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Rhydon (Female)",
-    "fra": "Rhinoféros (Female)",
-    "deu": "Rizeros (Female)"
-  },
-  "genus": {
-    "eng": "Drill Pokémon",
-    "esp": "Pokémon Taladro",
-    "fra": "Pokémon Perceur",
-    "deu": "Bohrer-Pokémon",
-    "ita": "Pokémon Trapano",
-    "jap": "ドリルポケモン",
-    "kor": "드릴포켓몬",
-    "chs": "钻锥宝可梦",
-    "cht": "鑽錐寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Rhydon",
-    "fra": "Rhinoféros",
-    "deu": "Rizeros",
-    "jap": "サイドン",
-    "kor": "코뿌리",
-    "chs": "钻角犀兽",
-    "cht": "鑽角犀獸"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["boxrs", "col", "ranch", "bw-b", "bank", "home"]
 }

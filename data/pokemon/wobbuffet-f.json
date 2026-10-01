@@ -129,46 +129,14 @@
       "from": ["wynaut"],
       "trigger": "level_up",
       "minLevel": 15,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Wobbuffet (Female)",
-    "fra": "Qulbutoké (Female)",
-    "deu": "Woingenau (Female)"
-  },
-  "genus": {
-    "eng": "Patient Pokémon",
-    "esp": "Pokémon Paciente",
-    "fra": "Pokémon Patient",
-    "deu": "Gedulds-Pokémon",
-    "ita": "Pokémon Pazienza",
-    "jap": "がまんポケモン",
-    "kor": "참기포켓몬",
-    "chs": "忍耐宝可梦",
-    "cht": "忍耐寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Wobbuffet",
-    "fra": "Qulbutoké",
-    "deu": "Woingenau",
-    "jap": "ソーナンス",
-    "kor": "마자용",
-    "chs": "果然翁",
-    "cht": "果然翁"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",

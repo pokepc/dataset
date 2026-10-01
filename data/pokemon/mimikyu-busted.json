@@ -76,18 +76,28 @@
       "from": ["mimikyu"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["disguise"] },
-        { "key": "battle_event", "events": ["damaging_hit"] },
-        { "key": "battle_condition", "condition": "disguise_not_bypassed" }
+        {
+          "key": "ability",
+          "abilities": ["disguise"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["damaging_hit"]
+        },
+        {
+          "key": "battle_condition",
+          "condition": "disguise_not_bypassed"
+        }
       ],
-      "notes": {
-        "eng": "Ability-ignoring attacks and attackers can damage Mimikyu without breaking its disguise."
-      },
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
-          "notes": { "eng": "Switching out alone does not repair the disguise." }
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["faint", "battle_end"]
+            }
+          ]
         }
       ]
     },
@@ -95,14 +105,24 @@
       "from": ["mimikyu"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["disguise"] },
-        { "key": "battle_condition", "condition": "confusion_self_hit" }
+        {
+          "key": "ability",
+          "abilities": ["disguise"]
+        },
+        {
+          "key": "battle_condition",
+          "condition": "confusion_self_hit"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
-          "notes": { "eng": "Switching out alone does not repair the disguise." }
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["faint", "battle_end"]
+            }
+          ]
         }
       ]
     },
@@ -110,61 +130,26 @@
       "from": ["mimikyu"],
       "games": ["lza"],
       "trigger": "automatic",
-      "conditions": [{ "key": "battle_event", "events": ["damaging_hit"] }],
-      "notes": {
-        "eng": "Legends: Z-A retains the disguise-breaking transformation without Abilities."
-      },
+      "conditions": [
+        {
+          "key": "battle_event",
+          "events": ["damaging_hit"]
+        }
+      ],
       "revert": [
         {
           "games": null,
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
-          "notes": { "eng": "Switching out alone does not repair the disguise." }
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["faint", "battle_end"]
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mimikyu (Busted Form)",
-    "esp": "Mimikyu (Forma Descubierta)",
-    "fra": "Mimiqui (Forme Démasquée)",
-    "deu": "Mimigma (Entlarvte Form)",
-    "ita": "Mimikyu (Forma Smascherata)",
-    "jap": "ミミッキュ (ばれたすがた)",
-    "kor": "따라큐 (들킨 모습)",
-    "chs": "谜拟丘 (现形的样子)",
-    "cht": "謎擬Ｑ (現形的樣子)"
-  },
-  "genus": {
-    "eng": "Disguise Pokémon",
-    "esp": "Pokémon Disfraz",
-    "fra": "Pokémon Fantômasque",
-    "deu": "Kostümspuk-Pokémon",
-    "ita": "Pokémon Fantasmanto",
-    "jap": "ばけのかわポケモン",
-    "kor": "탈포켓몬",
-    "chs": "画皮宝可梦",
-    "cht": "畫皮寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Mimikyu",
-    "fra": "Mimiqui",
-    "deu": "Mimigma",
-    "jap": "ミミッキュ",
-    "kor": "따라큐",
-    "chs": "谜拟丘",
-    "cht": "謎擬Ｑ"
-  },
-  "formNames": {
-    "eng": "Busted Form",
-    "esp": "Forma Descubierta",
-    "fra": "Forme Démasquée",
-    "deu": "Entlarvte Form",
-    "ita": "Forma Smascherata",
-    "jap": "ばれたすがた",
-    "kor": "들킨 모습",
-    "chs": "现形的样子",
-    "cht": "現形的樣子"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0778001"
 }

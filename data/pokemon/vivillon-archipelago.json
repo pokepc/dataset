@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "archipelago" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "archipelago"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Archipelago Pattern)",
-    "fra": "Prismillon (Motif Archipel)",
-    "deu": "Vivillon (Archipelmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Archipelago Pattern",
-    "esp": "Motivo Isleño",
-    "fra": "Motif Archipel",
-    "deu": "Archipelmuster",
-    "ita": "Motivo Arcipelago",
-    "jap": "ぐんとうのもよう",
-    "kor": "군도의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666009"
 }

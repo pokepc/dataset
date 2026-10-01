@@ -92,30 +92,12 @@
     {
       "from": ["woobat"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Swoobat",
-    "fra": "Rhinolove",
-    "deu": "Fletiamo",
-    "jap": "ココロモリ",
-    "kor": "맘박쥐",
-    "chs": "心蝙蝠",
-    "cht": "心蝙蝠"
-  },
-  "genus": {
-    "eng": "Courting Pokémon",
-    "esp": "Pokémon Galante",
-    "fra": "Pokémon Cupidon",
-    "deu": "Balz-Pokémon",
-    "ita": "Pokémon Cercamore",
-    "jap": "きゅうあいポケモン",
-    "kor": "구애포켓몬",
-    "chs": "求爱宝可梦",
-    "cht": "求愛寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

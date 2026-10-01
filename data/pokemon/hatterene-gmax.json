@@ -68,41 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Hatterene (Gigantamax Form)",
-    "fra": "Sorcilence (Forme Gigamax)",
-    "deu": "Silembrim (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Silent Pokémon",
-    "esp": "Pokémon Silencio",
-    "fra": "Pokémon Silencieux",
-    "deu": "Stille-Pokémon",
-    "ita": "Pokémon Silenzio",
-    "jap": "せいじゃくポケモン",
-    "kor": "정적포켓몬",
-    "chs": "寂静宝可梦",
-    "cht": "寂靜寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Hatterene",
-    "fra": "Sorcilence",
-    "deu": "Silembrim",
-    "jap": "ブリムオン",
-    "kor": "브리무음",
-    "chs": "布莉姆温",
-    "cht": "布莉姆溫"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

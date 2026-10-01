@@ -134,41 +134,13 @@
       "from": ["drowzee"],
       "trigger": "level_up",
       "minLevel": 26,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": { "eng": "Hypno (Female)", "fra": "Hypnomade (Female)", "deu": "Hypno (Female)" },
-  "genus": {
-    "eng": "Hypnosis Pokémon",
-    "esp": "Pokémon Hipnosis",
-    "fra": "Pokémon Hypnose",
-    "deu": "Hypnose",
-    "ita": "Pokémon Ipnosi",
-    "jap": "さいみんポケモン",
-    "kor": "최면포켓몬",
-    "chs": "催眠宝可梦",
-    "cht": "催眠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Hypno",
-    "fra": "Hypnomade",
-    "deu": "Hypno",
-    "jap": "スリーパー",
-    "kor": "슬리퍼",
-    "chs": "引梦貘人",
-    "cht": "引夢貘人"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "ranch", "bw-b", "bw-w", "bank", "home"]
 }

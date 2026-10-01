@@ -62,30 +62,14 @@
     {
       "from": ["clobbopus"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "taunt" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "taunt"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Grapploct",
-    "fra": "Krakos",
-    "deu": "Kaocto",
-    "jap": "オトスパス",
-    "kor": "케오퍼스",
-    "chs": "八爪武师",
-    "cht": "八爪武師"
-  },
-  "genus": {
-    "eng": "Jujitsu Pokémon",
-    "esp": "Pokémon Jiu-Jitsu",
-    "fra": "Pokémon Jujitsu",
-    "deu": "Jiu-Jitsu-Pokémon",
-    "ita": "Pokémon Jujitsu",
-    "jap": "じゅうじゅつポケモン",
-    "kor": "유술포켓몬",
-    "chs": "柔术宝可梦",
-    "cht": "柔術寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0853000"
 }

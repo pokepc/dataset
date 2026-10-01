@@ -86,7 +86,6 @@
   "femaleRate": 50,
   "baseForms": [],
   "forms": ["burmy-sandy", "burmy-trash"],
-  "formsDesc": "Forms only affect appearance, although they become permanent upon evolution.  Wild and newly-hatched Burmy are always in a Plant Cloak.  Burmy's cloak changes to match the terrain after a battle it participated in: Plant Cloak by default; Sandy Cloak in sandy or rocky areas, such as beaches, caves, and trails; and Trash Cloak in buildings.",
   "refs": {
     "pkApiId": "412",
     "pkApiFormId": "412",
@@ -123,9 +122,18 @@
       ],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "environment", "environment": "outdoors_or_tall_grass" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "environment",
+          "environment": "outdoors_or_tall_grass"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     },
     {
@@ -133,9 +141,18 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "jubilife_village" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "jubilife_village"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     },
     {
@@ -143,34 +160,21 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "obsidian_fieldlands" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "obsidian_fieldlands"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Burmy",
-    "fra": "Cheniti",
-    "deu": "Burmy",
-    "jap": "ミノムッチ",
-    "kor": "도롱충이",
-    "chs": "结草儿",
-    "cht": "結草兒"
-  },
-  "genus": {
-    "eng": "Bagworm Pokémon",
-    "esp": "Pokémon Larva",
-    "fra": "Pokémon Ver Caché",
-    "deu": "Beutelwurm",
-    "ita": "Pokémon Larva",
-    "jap": "みのむしポケモン",
-    "kor": "도롱이벌레포켓몬",
-    "chs": "蓑衣虫宝可梦",
-    "cht": "蓑衣蟲寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "bw-b",

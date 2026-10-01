@@ -65,51 +65,13 @@
       "from": ["oricorio-pom-pom", "oricorio-sensu", "oricorio"],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
       "trigger": "use_item",
-      "item": { "id": "pinknectar", "role": "used", "consumed": true },
+      "item": {
+        "id": "pinknectar",
+        "role": "used",
+        "consumed": true
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Oricorio (Pa’u Style)",
-    "esp": "Oricorio (Estilo Plácido)",
-    "fra": "Plumeline (Style Hula)",
-    "deu": "Choreogel (Hula-Stil)",
-    "ita": "Oricorio (Stile Hula)",
-    "jap": "オドリドリ (ふらふらスタイル)",
-    "kor": "춤추새 (훌라훌라스타일)",
-    "chs": "花舞鸟 (呼拉呼拉风格)",
-    "cht": "花舞鳥 (呼拉呼拉風格)"
-  },
-  "genus": {
-    "eng": "Dancing Pokémon",
-    "esp": "Pokémon Danza",
-    "fra": "Pokémon Danse",
-    "deu": "Tanz",
-    "ita": "Pokémon Danza",
-    "jap": "ダンスポケモン",
-    "kor": "댄스포켓몬",
-    "chs": "舞蹈宝可梦",
-    "cht": "舞蹈寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Oricorio",
-    "fra": "Plumeline",
-    "deu": "Choreogel",
-    "jap": "オドリドリ",
-    "kor": "춤추새",
-    "chs": "花舞鸟",
-    "cht": "花舞鳥"
-  },
-  "formNames": {
-    "eng": "Pa’u Style",
-    "esp": "Estilo Plácido",
-    "fra": "Style Hula",
-    "deu": "Hula-Stil",
-    "ita": "Stile Hula",
-    "jap": "ふらふらスタイル",
-    "kor": "훌라훌라스타일",
-    "chs": "呼拉呼拉风格",
-    "cht": "呼拉呼拉風格"
-  },
   "transferOnlyIn": ["bank", "home"]
 }

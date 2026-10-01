@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "ocean" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "ocean"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Ocean Pattern)",
-    "fra": "Prismillon (Motif Soleil Levant)",
-    "deu": "Vivillon (Ozeanmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Ocean Pattern",
-    "esp": "Motivo Océano",
-    "fra": "Motif Soleil Levant",
-    "deu": "Ozeanmuster",
-    "ita": "Motivo Oceanico",
-    "jap": "オーシャンのもよう",
-    "kor": "오션의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666016"
 }

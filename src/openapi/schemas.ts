@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import {
   abilitySchema,
-  boxPresetSchema,
+  classicBoxPresetSchema,
   characterSchema,
   colorSchema,
   gameSchema,
@@ -63,7 +63,7 @@ export const RibbonListSchema = z.array(RibbonSchema).meta({ id: 'RibbonList' })
 export const TypeSchema = typeSchema.meta({ id: 'Type' })
 export const TypeListSchema = z.array(TypeSchema).meta({ id: 'TypeList' })
 
-export const ClassicBoxPresetSchema = boxPresetSchema.meta({ id: 'ClassicBoxPreset' })
+export const ClassicBoxPresetSchema = classicBoxPresetSchema.meta({ id: 'ClassicBoxPreset' })
 export const ClassicBoxPresetMapSchema = z
   .record(slugSchema, ClassicBoxPresetSchema)
   .meta({ id: 'ClassicBoxPresetMap' })

@@ -138,45 +138,13 @@
       "from": ["swinub"],
       "trigger": "level_up",
       "minLevel": 33,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Piloswine (Female)",
-    "fra": "Cochignon (Female)",
-    "deu": "Keifel (Female)"
-  },
-  "genus": {
-    "eng": "Swine Pokémon",
-    "esp": "Pokémon Puerco",
-    "fra": "Pokémon Porc",
-    "deu": "Schwein-Pokémon",
-    "ita": "Pokémon Suino",
-    "jap": "いのししポケモン",
-    "kor": "멧돼지포켓몬",
-    "chs": "野猪宝可梦",
-    "cht": "野豬寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Piloswine",
-    "fra": "Cochignon",
-    "deu": "Keifel",
-    "jap": "イノムー",
-    "kor": "메꾸리",
-    "chs": "长毛猪",
-    "cht": "長毛豬"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "e", "ranch", "bank", "oras-or", "oras-as", "home"]
 }

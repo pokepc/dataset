@@ -65,62 +65,33 @@
       "from": ["chimecho"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "chimechite", "role": "held" },
+      "item": {
+        "id": "chimechite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Chimecho",
-    "esp": "Mega Chimecho",
-    "esla": "Mega Chimecho",
-    "fra": "MégaÉoko",
-    "deu": "Mega-Palimpalim",
-    "ita": "Mega Chimecho",
-    "jap": "メガチリーン",
-    "kor": "메가치렁",
-    "chs": "超级风铃铃",
-    "cht": "超級風鈴鈴"
-  },
-  "genus": {
-    "eng": "Wind Chime Pokémon",
-    "esp": "Pokémon Sonido Aire",
-    "fra": "Pokémon Carillon",
-    "deu": "Windspiel",
-    "ita": "Pokémon Vencampana",
-    "jap": "ふうりんポケモン",
-    "kor": "풍경포켓몬",
-    "chs": "风铃宝可梦",
-    "cht": "風鈴寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Chimecho",
-    "fra": "Éoko",
-    "deu": "Palimpalim",
-    "jap": "チリーン",
-    "kor": "치렁",
-    "chs": "风铃铃",
-    "cht": "風鈴鈴"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0358001"
 }

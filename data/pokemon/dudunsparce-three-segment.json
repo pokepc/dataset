@@ -67,40 +67,16 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "known_move", "move": "hyperdrill" },
-        { "key": "hidden_value_branch", "percentage": 1 }
+        {
+          "key": "known_move",
+          "move": "hyperdrill"
+        },
+        {
+          "key": "hidden_value_branch",
+          "percentage": 1
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Dudunsparce (Three-Segment Form)",
-    "fra": "Deusolourdo (Forme Triple)",
-    "deu": "Dummimisel (Three-Segment Form)",
-    "jap": "ノココッチ (みつふしフォルム)"
-  },
-  "genus": {
-    "eng": "Land Snake Pokémon",
-    "fra": "Serpent",
-    "deu": "Erdschlange",
-    "jap": "つちへびポケモン",
-    "kor": "땅뱀포켓몬",
-    "chs": "地蛇宝可梦",
-    "cht": "地蛇寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Dudunsparce",
-    "fra": "Deusolourdo",
-    "deu": "Dummimisel",
-    "jap": "ノココッチ",
-    "kor": "노고고치",
-    "chs": "土龙节节",
-    "cht": "土龍節節"
-  },
-  "formNames": {
-    "eng": "Three-Segment Form",
-    "fra": "Forme Triple",
-    "deu": "Three-Segment Form",
-    "jap": "みつふしフォルム"
-  },
   "transferOnlyIn": ["home"]
 }

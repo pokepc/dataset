@@ -1,11 +1,4 @@
-import type z from 'zod'
-import type { evolutionConditionSchema, evolutionMethodSchema } from './evolution-schemas'
-import type {
-  formConditionSchema,
-  formMethodSchema,
-  formRevertSchema,
-  formRevertDetailSchema,
-} from './form-schemas'
+import type { z } from 'zod'
 import type {
   abilityTagIds,
   battleStyles,
@@ -18,7 +11,6 @@ import type {
   languageAlpha3Codes,
   languageIds,
   languageInGameCodes,
-  moveCategory,
   pokeballCategory,
   pokemonSizes,
   raidStyles,
@@ -28,26 +20,36 @@ import type {
   typeIds,
 } from './enums'
 import type {
+  evolutionConditionSchema,
+  evolutionMethodSchema,
+  formConditionSchema,
+  formMethodSchema,
+  formRevertDetailSchema,
+  formRevertSchema,
   abilitySchema,
-  boxPresetBoxPokemonSchema,
-  boxPresetBoxSchema,
-  boxPresetSchema,
+  battleStateSchema,
+  boxPresetTextSchema,
   characterSchema,
+  classicBoxPresetBoxPokemonSchema,
+  classicBoxPresetBoxSchema,
+  classicBoxPresetFileSchema,
+  classicBoxPresetSchema,
   codeMapEntrySchema,
   colorSchema,
   gameFeaturesSchema,
   gameSchema,
   generationSchema,
-  i18nTextSchema,
   itemSchema,
   languageSchema,
   locationSchema,
   markSchema,
   modernBoxPresetBoxSchema,
-  modernBoxPresetIndexSchema,
   modernBoxPresetSchema,
   modernBoxPresetSlotSchema,
   modernBoxPresetTags,
+  moddableRecordSchemas,
+  moddableOverrideSchemas,
+  moddableTextOverrideSchemas,
   moveSchema,
   natureSchema,
   onlineFeaturesSchema,
@@ -56,235 +58,229 @@ import type {
   pokeballSchema,
   pokedexEntrySchema,
   pokedexSchema,
+  pokemonMugshotsSchema,
   pokemonRefsSchema,
   pokemonSchema,
-  pokemonSearchFilterSchema,
   regionSchema,
   ribbonSchema,
+  rosterSchema,
+  textSchemas,
   typeSchema,
+  ModdableKind,
+  TextKind,
 } from './schemas'
 
-// These types are declared globally, so you don't need to import them in your code.
-// Use them with the `Pkds.` prefix. e.g. `Pkds.Pokemon`
+export type { CollectionKind, EntityKind, ModdableKind, TextKind } from './schemas'
+export type { LocaleCode } from './languages'
+export type {
+  BattleItemCategory,
+  BattleState as BattleStateId,
+  MoveCategory,
+  MoveClass,
+  MoveTarget,
+  PokemonType,
+  StatusCondition,
+} from './enums'
+
+// ---- Base records (no text; see the *Text types)
+
+export type Ability = z.infer<typeof abilitySchema>
+export type BattleState = z.infer<typeof battleStateSchema>
+export type Character = z.infer<typeof characterSchema>
+export type CodeMapEntry = z.infer<typeof codeMapEntrySchema>
+export type Color = z.infer<typeof colorSchema>
+export type EvolutionCondition = z.infer<typeof evolutionConditionSchema>
+export type EvolutionMethod = z.infer<typeof evolutionMethodSchema>
+export type FormCondition = z.infer<typeof formConditionSchema>
+export type FormMethod = z.infer<typeof formMethodSchema>
+export type FormRevert = z.infer<typeof formRevertSchema>
+export type FormRevertDetail = z.infer<typeof formRevertDetailSchema>
+export type Game = z.infer<typeof gameSchema>
+export type GameFeatures = z.infer<typeof gameFeaturesSchema>
+export type GameOnlineFeatures = z.infer<typeof onlineFeaturesSchema>
+export type Generation = z.infer<typeof generationSchema>
+export type Item = z.infer<typeof itemSchema>
+export type Language = z.infer<typeof languageSchema>
+export type Location = z.infer<typeof locationSchema>
+export type Mark = z.infer<typeof markSchema>
+export type Move = z.infer<typeof moveSchema>
+export type Nature = z.infer<typeof natureSchema>
+export type OriginMark = z.infer<typeof originMarkSchema>
+export type Personality = z.infer<typeof personalitySchema>
+export type Pokeball = z.infer<typeof pokeballSchema>
+export type Pokedex = z.infer<typeof pokedexSchema>
+export type PokedexEntry = z.infer<typeof pokedexEntrySchema>
+export type Pokemon = z.infer<typeof pokemonSchema>
+export type PokemonMugshots = z.infer<typeof pokemonMugshotsSchema>
+export type PokemonRefs = z.infer<typeof pokemonRefsSchema>
+export type Region = z.infer<typeof regionSchema>
+export type Ribbon = z.infer<typeof ribbonSchema>
+export type Type = z.infer<typeof typeSchema>
+
+export type ClassicBoxPreset = z.infer<typeof classicBoxPresetSchema>
+export type ClassicBoxPresetBox = z.infer<typeof classicBoxPresetBoxSchema>
+export type ClassicBoxPresetBoxPokemon = z.infer<typeof classicBoxPresetBoxPokemonSchema>
+export type ClassicBoxPresetFile = z.infer<typeof classicBoxPresetFileSchema>
+export type ModernBoxPreset = z.infer<typeof modernBoxPresetSchema>
+export type ModernBoxPresetBox = z.infer<typeof modernBoxPresetBoxSchema>
+export type ModernBoxPresetSlot = z.infer<typeof modernBoxPresetSlotSchema>
+export type ModernBoxPresetTag = (typeof modernBoxPresetTags)[number]
+
+// ---- Enums
+
+export type AbilityTagId = (typeof abilityTagIds)[number]
+export type GameBattleStyle = (typeof battleStyles)[number]
+export type GamePlatform = (typeof gamePlatforms)[number]
+export type GameRaidStyle = (typeof raidStyles)[number]
+export type GameSeries = (typeof gameSeries)[number]
+export type GameType = (typeof gameType)[number]
+export type Gender = (typeof genders)[number] | null
+export type ItemCategory = (typeof itemCategory)[number]
+export type IvJudgeValue = (typeof ivJudgeValues)[number]
+export type LanguageId = (typeof languageIds)[number]
+export type LanguageV7Key = (typeof languageAlpha3Codes)[number]
+export type LanguageInGameCode = (typeof languageInGameCodes)[number]
+export type PokeballCategory = (typeof pokeballCategory)[number]
+export type PokemonSize = (typeof pokemonSizes)[number]
+export type RibbonCategory = (typeof ribbonCategory)[number]
+export type StatId = (typeof statIds)[number]
+export type TitleType = (typeof titleTypes)[number]
+export type TypeId = (typeof typeIds)[number]
+
+// ---- Mods
+
+/** Merged (or base) record of a moddable kind. */
+export type ModdableRecord<K extends ModdableKind = ModdableKind> = z.infer<
+  (typeof moddableRecordSchemas)[K]
+>
+export type RecordOverride<K extends ModdableKind = ModdableKind> = z.infer<
+  (typeof moddableOverrideSchemas)[K]
+>
+export type Roster = z.infer<typeof rosterSchema>
+
+// ---- Text
+
+export type Text<K extends TextKind = TextKind> = z.infer<(typeof textSchemas)[K]>
+/** Contents of `i18n/<locale>/<kind>.json`: text keyed by entity id. */
+export type TextFile<K extends TextKind = TextKind> = Record<string, Text<K>>
+export type TextOverride<K extends ModdableKind = ModdableKind> = z.infer<
+  (typeof moddableTextOverrideSchemas)[K]
+>
+export type PokemonText = Text<'pokemon'>
+export type BoxPresetText = z.infer<typeof boxPresetTextSchema>
+
+// ---- Global aliases
+//
+// v7 declared the record types globally under `Pkds` (e.g. `Pkds.Pokemon`). v8 keeps those names
+// as aliases of the named exports above; the record shapes are the v8 ones, without text.
+type V8Ability = Ability
+type V8BattleState = BattleState
+type V8Character = Character
+type V8CodeMapEntry = CodeMapEntry
+type V8Color = Color
+type V8EvolutionCondition = EvolutionCondition
+type V8EvolutionMethod = EvolutionMethod
+type V8FormCondition = FormCondition
+type V8FormMethod = FormMethod
+type V8FormRevert = FormRevert
+type V8FormRevertDetail = FormRevertDetail
+type V8Game = Game
+type V8GameFeatures = GameFeatures
+type V8GameOnlineFeatures = GameOnlineFeatures
+type V8Generation = Generation
+type V8Item = Item
+type V8Language = Language
+type V8Location = Location
+type V8Mark = Mark
+type V8Move = Move
+type V8Nature = Nature
+type V8OriginMark = OriginMark
+type V8Personality = Personality
+type V8Pokeball = Pokeball
+type V8Pokedex = Pokedex
+type V8PokedexEntry = PokedexEntry
+type V8Pokemon = Pokemon
+type V8PokemonRefs = PokemonRefs
+type V8Region = Region
+type V8Ribbon = Ribbon
+type V8Type = Type
+type V8ClassicBoxPreset = ClassicBoxPreset
+type V8ModernBoxPreset = ModernBoxPreset
+type V8ModernBoxPresetBox = ModernBoxPresetBox
+type V8ModernBoxPresetSlot = ModernBoxPresetSlot
+type V8ModernBoxPresetTag = ModernBoxPresetTag
+type V8AbilityTagId = AbilityTagId
+type V8GameType = GameType
+type V8GamePlatform = GamePlatform
+type V8GameSeries = GameSeries
+type V8Gender = Gender
+type V8ItemCategory = ItemCategory
+type V8PokeballCategory = PokeballCategory
+type V8RibbonCategory = RibbonCategory
+type V8StatId = StatId
+type V8TypeId = TypeId
+type V8PokemonSize = PokemonSize
+type V8TitleType = TitleType
+type V8IvJudgeValue = IvJudgeValue
+type V8GameBattleStyle = GameBattleStyle
+type V8GameRaidStyle = GameRaidStyle
+type V8PokemonText = PokemonText
+
 declare global {
   // PokéPC Dataset namespace (Pkds)
   namespace Pkds {
-    // Classic PokéPC Types
-    export type LegacyBoxPreset = z.infer<typeof boxPresetSchema>
-    export type LegacyBoxPresetByGameset = {
-      gameset: string
-      presets: LegacyBoxPreset[]
-    }
-    export type LegacyBoxPresetBox = z.infer<typeof boxPresetBoxSchema>
-    export type LegacyBoxPresetBoxPokemon = z.infer<typeof boxPresetBoxPokemonSchema>
-    export type ModernBoxPresetTag = (typeof modernBoxPresetTags)[number]
-    export type ModernBoxPresetIndex = z.infer<typeof modernBoxPresetIndexSchema>
-    export type ModernBoxPreset = z.infer<typeof modernBoxPresetSchema>
-    export type ModernBoxPresetBox = z.infer<typeof modernBoxPresetBoxSchema>
-    export type ModernBoxPresetSlot = z.infer<typeof modernBoxPresetSlotSchema>
-    // Schema-based Types
-    export type EvolutionCondition = z.infer<typeof evolutionConditionSchema>
-    export type EvolutionMethod = z.infer<typeof evolutionMethodSchema>
-    export type FormCondition = z.infer<typeof formConditionSchema>
-    export type FormMethod = z.infer<typeof formMethodSchema>
-    export type FormRevert = z.infer<typeof formRevertSchema>
-    export type FormRevertDetail = z.infer<typeof formRevertDetailSchema>
-    export type Ability = z.infer<typeof abilitySchema>
-    export type AbilityTagId = (typeof abilityTagIds)[number]
-    export type Personality = z.infer<typeof personalitySchema>
-    export type Character = z.infer<typeof characterSchema>
-    export type Color = z.infer<typeof colorSchema>
-    export type Game = z.infer<typeof gameSchema>
-    export type GameFeatures = z.infer<typeof gameFeaturesSchema>
-    export type GameOnlineFeatures = z.infer<typeof onlineFeaturesSchema>
-    export type GameType = (typeof gameType)[number]
-    export type GamePlatform = (typeof gamePlatforms)[number]
-    export type GameSeries = (typeof gameSeries)[number]
-    export type Generation = z.infer<typeof generationSchema>
-    export type Item = z.infer<typeof itemSchema>
-    export type ItemCategory = (typeof itemCategory)[number]
-    export type Pokeball = z.infer<typeof pokeballSchema>
-    export type PokeballCategory = (typeof pokeballCategory)[number]
-    export type Language = z.infer<typeof languageSchema>
-    /**
-     * Used as language IDs
-     */
-    export type LanguageAlpha2 = (typeof languageIds)[number]
-    /**
-     * Used as translation keys
-     */
-    export type LanguageAlpha3 = (typeof languageAlpha3Codes)[number]
-    /**
-     * Used as language codes in-game
-     */
-    export type LanguageInGameCode = (typeof languageInGameCodes)[number]
-    export type Mark = z.infer<typeof markSchema>
-    export type CodeMapEntry = z.infer<typeof codeMapEntrySchema>
-    export type Ribbon = z.infer<typeof ribbonSchema>
-    export type RibbonCategory = (typeof ribbonCategory)[number]
-    export type OriginMark = z.infer<typeof originMarkSchema>
-    export type Region = z.infer<typeof regionSchema>
-    export type Location = z.infer<typeof locationSchema>
-    export type Type = z.infer<typeof typeSchema>
-    export type TypeId = (typeof typeIds)[number]
-    export type Nature = z.infer<typeof natureSchema>
-    export type StatId = (typeof statIds)[number]
-    export type Move = z.infer<typeof moveSchema>
-    export type MoveCategory = (typeof moveCategory)[number]
-    export type Pokedex = z.infer<typeof pokedexSchema>
-    export type PokedexEntry = z.infer<typeof pokedexEntrySchema>
-    export type I18nText = z.infer<typeof i18nTextSchema>
-    export type PokemonRefs = z.infer<typeof pokemonRefsSchema>
-    export type Pokemon = z.infer<typeof pokemonSchema>
-    export type Gender = (typeof genders)[number] | null
-    export type TitleType = (typeof titleTypes)[number]
-    export type PokemonSize = (typeof pokemonSizes)[number]
-    export type IvJudgeValue = (typeof ivJudgeValues)[number]
-    export type GameBattleStyle = (typeof battleStyles)[number]
-    export type GameRaidStyle = (typeof raidStyles)[number]
-
-    // Computed Types -------------------------------------------------------------
-
-    export type PokemonBase = Pick<Pkds.Pokemon, 'id' | 'nid' | 'isForm'>
-
-    export type PokemonText = {
-      lang: Pkds.LanguageAlpha3
-      name: string
-      genusText?: string
-      speciesName?: string
-      formName?: string
-    }
-
-    export type TranslatedPokemon = Pkds.Pokemon &
-      PokemonText & {
-        speciesGen: number
-        searchableText: string
-      }
-
-    export type GamesByKey = Record<string, Game | undefined>
-    export type PokedexesByKey = Record<string, Pokedex | undefined>
-    export type PokemonByKey = Record<string, Pokemon | undefined>
-    export type TranslatedPokemonByKey = Record<string, TranslatedPokemon | undefined>
-    export type CharactersByKey = Record<string, Character | undefined>
-    export type TypesByKey = Record<string, Type | undefined>
-    export type AbilitiesByKey = Record<string, Ability | undefined>
-    export type MovesByKey = Record<string, Move | undefined>
-    export type ItemsByKey = Record<string, Item | undefined>
-
-    export type BaseStats = {
-      hp: number
-      atk: number
-      def: number
-      spAtk: number
-      spDef: number
-      speed: number
-    }
-
-    export type PokemonNameInfo = {
-      displayName: string
-      displayFormName?: string
-      fullName: string
-      speciesName?: string
-      formName?: string
-      isNicknamed: boolean
-      lang: Pkds.LanguageAlpha3
-    }
-
-    // Search types
-    export type PokemonSearchFilter = Partial<z.infer<typeof pokemonSearchFilterSchema>>
-    export type PokemonSearchResults = {
-      pokemon: Array<Pkds.TranslatedPokemon>
-      meta: {
-        total: number
-        skipped: boolean
-      }
-    }
+    export type Ability = V8Ability
+    export type BattleState = V8BattleState
+    export type Character = V8Character
+    export type CodeMapEntry = V8CodeMapEntry
+    export type Color = V8Color
+    export type EvolutionCondition = V8EvolutionCondition
+    export type EvolutionMethod = V8EvolutionMethod
+    export type FormCondition = V8FormCondition
+    export type FormMethod = V8FormMethod
+    export type FormRevert = V8FormRevert
+    export type FormRevertDetail = V8FormRevertDetail
+    export type Game = V8Game
+    export type GameFeatures = V8GameFeatures
+    export type GameOnlineFeatures = V8GameOnlineFeatures
+    export type Generation = V8Generation
+    export type Item = V8Item
+    export type Language = V8Language
+    export type Location = V8Location
+    export type Mark = V8Mark
+    export type Move = V8Move
+    export type Nature = V8Nature
+    export type OriginMark = V8OriginMark
+    export type Personality = V8Personality
+    export type Pokeball = V8Pokeball
+    export type Pokedex = V8Pokedex
+    export type PokedexEntry = V8PokedexEntry
+    export type Pokemon = V8Pokemon
+    export type PokemonRefs = V8PokemonRefs
+    export type PokemonText = V8PokemonText
+    export type Region = V8Region
+    export type Ribbon = V8Ribbon
+    export type Type = V8Type
+    export type ClassicBoxPreset = V8ClassicBoxPreset
+    export type ModernBoxPreset = V8ModernBoxPreset
+    export type ModernBoxPresetBox = V8ModernBoxPresetBox
+    export type ModernBoxPresetSlot = V8ModernBoxPresetSlot
+    export type ModernBoxPresetTag = V8ModernBoxPresetTag
+    export type AbilityTagId = V8AbilityTagId
+    export type GameType = V8GameType
+    export type GamePlatform = V8GamePlatform
+    export type GameSeries = V8GameSeries
+    export type Gender = V8Gender
+    export type ItemCategory = V8ItemCategory
+    export type PokeballCategory = V8PokeballCategory
+    export type RibbonCategory = V8RibbonCategory
+    export type StatId = V8StatId
+    export type TypeId = V8TypeId
+    export type PokemonSize = V8PokemonSize
+    export type TitleType = V8TitleType
+    export type IvJudgeValue = V8IvJudgeValue
+    export type GameBattleStyle = V8GameBattleStyle
+    export type GameRaidStyle = V8GameRaidStyle
+    export type PokemonBase = Pick<V8Pokemon, 'id' | 'nid' | 'isForm'>
   }
 }
-
-declare global {
-  namespace Pkds {
-    export type Sortable<T> = T & { sortIndex: number }
-
-    export type PokedexesWithStats = {
-      dexes: Pokedex[]
-      totalPokemon: number
-      totalSpecies: number
-      totalForms: number
-      allPokemon: PokedexEntry[]
-    }
-
-    export type CdnDataBundle = {
-      pokemon: Pkds.Pokemon[]
-      games: Pkds.Game[]
-      pokedexes: Pkds.Pokedex[]
-      abilities: Pkds.Ability[]
-      moves: Pkds.Move[]
-      items: Pkds.Item[]
-      pokeballs: Pkds.Pokeball[]
-      characters: Pkds.Character[]
-      personalities: Pkds.Personality[]
-      ribbons: Pkds.Ribbon[]
-      marks: Pkds.Mark[]
-      originMarks: Pkds.OriginMark[]
-      types: Pkds.Type[]
-      natures: Pkds.Nature[]
-      regions: Pkds.Region[]
-    }
-
-    export type CdnDataBundleComputed = {
-      supportedGames: Pkds.Game[]
-      supportedGamesById: Record<string, Pkds.Game | undefined>
-      supportedGamesBySlug: Record<string, Pkds.Game | undefined>
-      pokedexesById: Record<string, Pkds.Pokedex | undefined>
-      pokemonByNid: Record<string, Pkds.Pokemon | undefined>
-      pokemonById: Record<string, Pkds.Pokemon | undefined>
-      searchablePokemon: Pkds.TranslatedPokemon[]
-      searchablePokemonByNid: Pkds.TranslatedPokemonByKey
-      searchablePokemonById: Pkds.TranslatedPokemonByKey
-      charactersById: Record<string, Pkds.Character | undefined>
-      typesById: Record<string, Pkds.Type | undefined>
-      abilitiesById: Record<string, Pkds.Ability | undefined>
-      gamesById: Record<string, Pkds.Game | undefined>
-      movesById: Record<string, Pkds.Move | undefined>
-      itemsById: Record<string, Pkds.Item | undefined>
-      pokeballsById: Record<string, Pkds.Pokeball | undefined>
-      originMarksById: Record<string, Pkds.OriginMark | undefined>
-      marksById: Record<string, Pkds.Mark | undefined>
-      ribbonsById: Record<string, Pkds.Ribbon | undefined>
-      naturesById: Record<string, Pkds.Nature | undefined>
-      regionsById: Record<string, Pkds.Region | undefined>
-      personalitiesById: Record<string, Pkds.Personality | undefined>
-    }
-
-    export type FullCdnDataBundle = CdnDataBundle & CdnDataBundleComputed
-    export type FullCdnDataBundleLoad = Readonly<FullCdnDataBundle> & {
-      loaded: boolean
-    }
-  }
-
-  var __pokepcData: Pkds.FullCdnDataBundleLoad
-
-  export type CatalogBoxCellPokemonData = {
-    nid: string
-    box?: number
-    cell?: number
-    shiny?: boolean | null
-    origMark?: string | null
-    origGame?: string | null
-    size?: Pkds.PokemonSize | null
-    [key: string]: any
-  }
-
-  export type CatalogBoxCellData = CatalogBoxCellPokemonData | null
-
-  export type CatalogBoxData = {
-    id?: string
-    name?: string | null
-    pokemon: CatalogBoxCellData[]
-    sortIndex?: number
-    [key: string]: unknown
-  }
-}
-
-export {}

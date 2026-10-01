@@ -124,43 +124,13 @@
     {
       "from": ["nuzleaf"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Shiftry",
-    "fra": "Tengalice",
-    "deu": "Tengulist",
-    "jap": "ダーテング",
-    "kor": "다탱구",
-    "chs": "狡猾天狗",
-    "cht": "狡猾天狗"
-  },
-  "genus": {
-    "eng": "Wicked Pokémon",
-    "esp": "Pokémon Malvado",
-    "fra": "Pokémon Malveillant",
-    "deu": "Verschlagen-Pokémon",
-    "ita": "Pokémon Burbero",
-    "jap": "よこしまポケモン",
-    "kor": "부정하기포켓몬",
-    "chs": "邪恶宝可梦",
-    "cht": "邪惡寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",

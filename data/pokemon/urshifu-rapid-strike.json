@@ -66,57 +66,23 @@
       "from": ["kubfu"],
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
-      "conditions": [{ "key": "interact_with_scroll", "scroll": "waters" }]
+      "conditions": [
+        {
+          "key": "interact_with_scroll",
+          "scroll": "waters"
+        }
+      ]
     },
     {
       "from": ["kubfu"],
       "games": ["sv-s", "sv-v"],
       "trigger": "use_item",
-      "item": { "id": "scrollofwaters", "role": "used" },
+      "item": {
+        "id": "scrollofwaters",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Urshifu (Rapid Strike Style)",
-    "esp": "Urshifu (Estilo Fluido)",
-    "fra": "Shifours (Style Mille Poings)",
-    "deu": "Wulaosu (Fließender Stil)",
-    "ita": "Urshifu (Stile Pluricolpo)",
-    "jap": "ウーラオス (れんげきのかた)",
-    "kor": "우라오스 (연격의 태세)",
-    "chs": "武道熊师 (连击流)",
-    "cht": "武道熊師 (連擊流)"
-  },
-  "genus": {
-    "eng": "Wushu Pokémon",
-    "esp": "Pokémon Kung-fu",
-    "fra": "Pokémon Kung-fu",
-    "deu": "Kung-Fu-Pokémon",
-    "ita": "Pokémon Kung Fu",
-    "jap": "けんぽうポケモン",
-    "kor": "권법포켓몬",
-    "chs": "拳法宝可梦",
-    "cht": "拳法寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Urshifu",
-    "fra": "Shifours",
-    "deu": "Wulaosu",
-    "jap": "ウーラオス",
-    "kor": "우라오스",
-    "chs": "武道熊师",
-    "cht": "武道熊師"
-  },
-  "formNames": {
-    "eng": "Rapid Strike Style",
-    "esp": "Estilo Fluido",
-    "fra": "Style Mille Poings",
-    "deu": "Fließender Stil",
-    "ita": "Stile Pluricolpo",
-    "jap": "れんげきのかた",
-    "kor": "연격의 태세",
-    "chs": "连击流",
-    "cht": "連擊流"
-  },
   "transferOnlyIn": ["home"]
 }

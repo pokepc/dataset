@@ -64,66 +64,49 @@
       "from": ["glalie"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "glalitite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "glalitite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["glalie"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "glalitite", "role": "held" },
+      "item": {
+        "id": "glalitite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Glalie",
-    "fra": "MégaOniglali",
-    "deu": "Mega-Firnontor",
-    "jap": "メガオニゴーリ",
-    "kor": "메가얼음귀신",
-    "chs": "超级冰鬼护",
-    "cht": "超級冰鬼護"
-  },
-  "genus": {
-    "eng": "Face Pokémon",
-    "esp": "Pokémon Cara",
-    "fra": "Pokémon Face",
-    "deu": "Antlitz-Pokémon",
-    "ita": "Pokémon Tuttomuso",
-    "jap": "がんめんポケモン",
-    "kor": "얼굴포켓몬",
-    "chs": "脸面宝可梦",
-    "cht": "臉面寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Glalie",
-    "fra": "Oniglali",
-    "deu": "Firnontor",
-    "jap": "オニゴーリ",
-    "kor": "얼음귀신",
-    "chs": "冰鬼护",
-    "cht": "冰鬼護"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0362001"
 }

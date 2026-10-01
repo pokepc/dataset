@@ -65,31 +65,17 @@
       "from": ["ursaring"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "peatblock", "role": "used" },
-      "conditions": [{ "key": "full_moon" }],
+      "item": {
+        "id": "peatblock",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "full_moon"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Ursaluna",
-    "fra": "Ursaking",
-    "deu": "Ursaluna",
-    "jap": "ガチグマ",
-    "kor": "다투곰",
-    "chs": "月月熊",
-    "cht": "月月熊"
-  },
-  "genus": {
-    "eng": "Peat Pokémon",
-    "fra": "Pokémon Tourbe",
-    "deu": "Torf-Pokémon",
-    "ita": "Pokémon Torba",
-    "jap": "でいたんポケモン",
-    "kor": "이탄포켓몬",
-    "chs": "泥炭宝可梦",
-    "cht": "泥炭寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

@@ -65,58 +65,33 @@
       "from": ["starmie"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "starminite", "role": "held" },
+      "item": {
+        "id": "starminite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Starmie",
-    "fra": "MégaStaross",
-    "deu": "Mega-Starmie",
-    "jap": "メガスターミー",
-    "kor": "메가아쿠스타",
-    "chs": "超级宝石海星",
-    "cht": "超級寶石海星"
-  },
-  "genus": {
-    "eng": "Mysterious Pokémon",
-    "esp": "Pokémon Misterioso",
-    "fra": "Pokémon Mystérieux",
-    "deu": "Mysteriös-Pokémon",
-    "ita": "Pokémon Misterioso",
-    "jap": "なぞのポケモン",
-    "kor": "수수께끼포켓몬",
-    "chs": "谜宝可梦",
-    "cht": "謎寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Starmie",
-    "fra": "Staross",
-    "deu": "Starmie",
-    "jap": "スターミー",
-    "kor": "아쿠스타",
-    "chs": "宝石海星",
-    "cht": "寶石海星"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0121001"
 }

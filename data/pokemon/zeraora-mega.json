@@ -65,62 +65,32 @@
       "from": ["zeraora"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "zeraorite", "role": "held" },
+      "item": {
+        "id": "zeraorite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Zeraora",
-    "esp": "Mega Zeraora",
-    "esla": "Mega Zeraora",
-    "fra": "MégaZeraora",
-    "deu": "Mega-Zeraora",
-    "ita": "Mega Zeraora",
-    "jap": "メガゼラオラ",
-    "kor": "메가제라오라",
-    "chs": "超级捷拉奥拉",
-    "cht": "超級捷拉奧拉"
-  },
-  "genus": {
-    "eng": "Thunderclap Pokémon",
-    "esp": "Pokémon Fulgor",
-    "fra": "Pokémon Vif Éclair",
-    "deu": "Blitzsturm-Pokémon",
-    "ita": "Pokémon Fulmirapido",
-    "jap": "じんらいポケモン",
-    "kor": "신뢰포켓몬",
-    "chs": "奔雷宝可梦",
-    "cht": "奔雷寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Zeraora",
-    "fra": "Zeraora",
-    "deu": "Zeraora",
-    "jap": "ゼラオラ",
-    "kor": "제라오라",
-    "chs": "捷拉奥拉",
-    "cht": "捷拉奧拉"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
   "transferOnlyIn": []
 }

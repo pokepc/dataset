@@ -4,8 +4,8 @@ import type {
   MoveClass,
   MoveTarget,
   PokemonType,
-} from '../../lib-next/enums'
-import { appLangsBySlug, type LangInfo } from '../../lib-next/languages'
+} from '../../lib/enums'
+import { appLangsBySlug, type LangInfo } from '../../lib/languages'
 
 export const I18N_CODE = [
   'deu',

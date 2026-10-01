@@ -65,66 +65,49 @@
       "from": ["metagross"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "metagrossite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "metagrossite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["metagross"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "metagrossite", "role": "held" },
+      "item": {
+        "id": "metagrossite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Metagross",
-    "fra": "MégaMétalosse",
-    "deu": "Mega-Metagross",
-    "jap": "メガメタグロス",
-    "kor": "메가메타그로스",
-    "chs": "超级巨金怪",
-    "cht": "超級巨金怪"
-  },
-  "genus": {
-    "eng": "Iron Leg Pokémon",
-    "esp": "Pokémon Pata Hierro",
-    "fra": "Pokémon Pattefer",
-    "deu": "Eisenfuß-Pokémon",
-    "ita": "Pokémon Ferrarto",
-    "jap": "てつあしポケモン",
-    "kor": "무쇠다리포켓몬",
-    "chs": "铁足宝可梦",
-    "cht": "鐵足寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Metagross",
-    "fra": "Métalosse",
-    "deu": "Metagross",
-    "jap": "メタグロス",
-    "kor": "메타그로스",
-    "chs": "巨金怪",
-    "cht": "巨金怪"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0376001"
 }

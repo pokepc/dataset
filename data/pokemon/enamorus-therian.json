@@ -66,47 +66,24 @@
       "from": ["enamorus"],
       "games": ["la", "sv-s", "sv-v"],
       "trigger": "use_item",
-      "item": { "id": "revealglass", "role": "used", "consumed": false },
+      "item": {
+        "id": "revealglass",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "revealglass", "role": "used", "consumed": false },
+          "item": {
+            "id": "revealglass",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Enamorus (Therian Forme)",
-    "fra": "Amovénus (Forme Totémique)",
-    "deu": "Cupidos (Tiergeistform)",
-    "jap": "ラブトロス (れいじゅうフォルム)"
-  },
-  "genus": {
-    "eng": "Love-Hate Pokémon",
-    "fra": "Pokémon Hainamour",
-    "deu": "Hassliebe-Pokémon",
-    "ita": "Pokémon Amoreodio",
-    "jap": "あいぞうポケモン",
-    "kor": "애증포켓몬",
-    "chs": "爱憎宝可梦",
-    "cht": "愛憎寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Enamorus",
-    "fra": "Amovénus",
-    "deu": "Cupidos",
-    "jap": "ラブトロス",
-    "kor": "러브로스",
-    "chs": "眷恋云",
-    "cht": "眷戀雲"
-  },
-  "formNames": {
-    "eng": "Therian Forme",
-    "fra": "Forme Totémique",
-    "deu": "Tiergeistform",
-    "jap": "れいじゅうフォルム"
-  },
   "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

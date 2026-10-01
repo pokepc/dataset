@@ -123,9 +123,18 @@
       ],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "environment", "environment": "building" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "environment",
+          "environment": "building"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     },
     {
@@ -133,9 +142,18 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "cobalt_coastlands" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "cobalt_coastlands"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     },
     {
@@ -143,50 +161,21 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "alabaster_icelands" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "alabaster_icelands"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Burmy (Trash Cloak)",
-    "esp": "Burmy (Tronco Basura)",
-    "fra": "Cheniti (Cape Déchet)",
-    "deu": "Burmy (Lumpenumhang)",
-    "ita": "Burmy (Manto Scarti)",
-    "jap": "ミノムッチ (ゴミのミノ)",
-    "kor": "도롱충이 (슈레도롱)"
-  },
-  "genus": {
-    "eng": "Bagworm Pokémon",
-    "esp": "Pokémon Larva",
-    "fra": "Pokémon Ver Caché",
-    "deu": "Beutelwurm",
-    "ita": "Pokémon Larva",
-    "jap": "みのむしポケモン",
-    "kor": "도롱이벌레포켓몬",
-    "chs": "蓑衣虫宝可梦",
-    "cht": "蓑衣蟲寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Burmy",
-    "fra": "Cheniti",
-    "deu": "Burmy",
-    "jap": "ミノムッチ",
-    "kor": "도롱충이",
-    "chs": "结草儿",
-    "cht": "結草兒"
-  },
-  "formNames": {
-    "eng": "Trash Cloak",
-    "esp": "Tronco Basura",
-    "fra": "Cape Déchet",
-    "deu": "Lumpenumhang",
-    "ita": "Manto Scarti",
-    "jap": "ゴミのミノ",
-    "kor": "슈레도롱"
-  },
   "transferOnlyIn": [
     "ranch",
     "bw-b",

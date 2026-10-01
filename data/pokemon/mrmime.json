@@ -139,33 +139,18 @@
       "from": ["mimejr"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "known_move", "move": "mimic" },
-        { "key": "region", "region": "galar", "relation": "outside" }
+        {
+          "key": "known_move",
+          "move": "mimic"
+        },
+        {
+          "key": "region",
+          "region": "galar",
+          "relation": "outside"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Mr. Mime",
-    "fra": "M. Mime",
-    "deu": "Pantimos",
-    "jap": "バリヤード",
-    "kor": "마임맨",
-    "chs": "魔墙人偶",
-    "cht": "魔牆人偶"
-  },
-  "genus": {
-    "eng": "Barrier Pokémon",
-    "esp": "Pokémon Barrera",
-    "fra": "Pokémon Bloqueur",
-    "deu": "Sperren-Pokémon",
-    "ita": "Pokémon Barriera",
-    "jap": "バリアーポケモン",
-    "kor": "배리어포켓몬",
-    "chs": "屏障宝可梦",
-    "cht": "屏障寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -182,5 +167,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0122000"
 }

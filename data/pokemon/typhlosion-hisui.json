@@ -67,41 +67,16 @@
       "games": ["la"],
       "trigger": "level_up",
       "minLevel": 36,
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "in"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Typhlosion (Hisuian Form)",
-    "fra": "Typhlosion (Forme de Hisui)",
-    "deu": "Tornupto (Hisui-Form)",
-    "jap": "バクフーン (ヒスイのすがた)"
-  },
-  "genus": {
-    "eng": "Volcano Pokémon",
-    "esp": "Pokémon Volcán",
-    "fra": "Pokémon Volcan",
-    "deu": "Vulkan",
-    "ita": "Pokémon Vulcano",
-    "jap": "かざんポケモン",
-    "kor": "화산포켓몬",
-    "chs": "火山宝可梦",
-    "cht": "火山寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Typhlosion",
-    "fra": "Typhlosion",
-    "deu": "Tornupto",
-    "jap": "バクフーン",
-    "kor": "블레이범",
-    "chs": "火暴兽",
-    "cht": "火爆獸"
-  },
-  "formNames": {
-    "eng": "Hisuian Form",
-    "fra": "Forme de Hisui",
-    "deu": "Hisui-Form",
-    "jap": "ヒスイのすがた"
-  },
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": ["home", "sv-s", "sv-v"],
+  "championsId": "0157001"
 }

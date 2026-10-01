@@ -1,3 +1,4 @@
+import { existsSync } from 'node:fs'
 import { readFile } from 'node:fs/promises'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { resolve } from 'node:path'
@@ -44,9 +45,24 @@ async function readJson<T>(path: string): Promise<T> {
   return JSON.parse(await readFile(path, 'utf8')) as T
 }
 
+/** Records of a per-entity kind in index order, with their English `name` and `formName`. */
 export async function readCollection<T>(root: string, collection: string): Promise<T[]> {
   const ids = await readJson<string[]>(resolve(root, 'indices', `${collection}.json`))
-  return Promise.all(ids.map((id) => readJson<T>(resolve(root, collection, `${id}.json`))))
+  const textPath = resolve(root, 'i18n', 'eng', `${collection}.json`)
+  const text = existsSync(textPath)
+    ? await readJson<Record<string, { name?: string; formName?: string }>>(textPath)
+    : {}
+  return Promise.all(
+    ids.map(async (id) => {
+      const record = await readJson<T>(resolve(root, collection, `${id}.json`))
+      const { name, formName } = text[id] ?? {}
+      return {
+        ...record,
+        ...(name !== undefined ? { name } : {}),
+        ...(formName !== undefined ? { formName } : {}),
+      }
+    }),
+  )
 }
 
 export type SourceOptions = {
@@ -139,7 +155,7 @@ export async function main(
   if (values.json) console.log(JSON.stringify(availabilityJson(report), null, 2))
   else
     console.log(
-      `${selected.names.eng ?? selected.id} (${selected.id} / ${selected.nid})\n${formatAvailabilitySources(sourceOptions)}\n\n${formatAvailabilityTable(report)}`,
+      `${selected.name ?? selected.id} (${selected.id} / ${selected.nid})\n${formatAvailabilitySources(sourceOptions)}\n\n${formatAvailabilityTable(report)}`,
     )
 }
 

@@ -101,15 +101,22 @@
         "lza"
       ],
       "trigger": "learn_move",
-      "conditions": [{ "key": "known_move", "move": "secretsword" }],
-      "notes": { "eng": "Teach Secret Sword to change to Resolute Form." },
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        }
+      ],
       "revert": [
         {
           "trigger": "forget_move",
           "conditions": [
-            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
-          ],
-          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
         }
       ]
     },
@@ -118,20 +125,29 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "known_move", "move": "secretsword" },
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "mechanic", "mechanic": "in_party" }
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        },
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
       ],
-      "notes": {
-        "eng": "Also corrects an Ordinary Form imported from Black/White while knowing Secret Sword."
-      },
       "revert": [
         {
           "trigger": "forget_move",
           "conditions": [
-            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
-          ],
-          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
         }
       ]
     },
@@ -140,16 +156,25 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "learn_move",
       "conditions": [
-        { "key": "known_move", "move": "secretsword" },
-        { "key": "mechanic", "mechanic": "change_a_move_other_than_secret_sword" }
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "change_a_move_other_than_secret_sword"
+        }
       ],
       "revert": [
         {
           "trigger": "forget_move",
           "conditions": [
-            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
-          ],
-          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
         }
       ]
     },
@@ -158,62 +183,29 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "forget_move",
       "conditions": [
-        { "key": "known_move", "move": "secretsword" },
-        { "key": "mechanic", "mechanic": "change_a_move_other_than_secret_sword" }
+        {
+          "key": "known_move",
+          "move": "secretsword"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "change_a_move_other_than_secret_sword"
+        }
       ],
       "revert": [
         {
           "trigger": "forget_move",
           "conditions": [
-            { "key": "known_move", "move": "secretsword", "relation": "does_not_know" }
-          ],
-          "notes": { "eng": "Remove Secret Sword from the moveset to return to Ordinary Form." }
+            {
+              "key": "known_move",
+              "move": "secretsword",
+              "relation": "does_not_know"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Keldeo (Resolute Form)",
-    "esp": "Keldeo (Forma Brío)",
-    "fra": "Keldeo (Aspect Décidé)",
-    "deu": "Keldeo (Resolutform)",
-    "ita": "Keldeo (Forma Risoluta)",
-    "jap": "ケルディオ (かくごのすがた)",
-    "kor": "케르디오 (각오의 모습)",
-    "chs": "凯路迪欧 (觉悟的样子)",
-    "cht": "凱路迪歐 (覺悟的樣子)"
-  },
-  "genus": {
-    "eng": "Colt Pokémon",
-    "esp": "Pokémon Potro",
-    "fra": "Pokémon Poulain",
-    "deu": "Fohlen-Pokémon",
-    "ita": "Pokémon Puledro",
-    "jap": "わかごまポケモン",
-    "kor": "망아지포켓몬",
-    "chs": "幼马宝可梦",
-    "cht": "幼馬寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Keldeo",
-    "fra": "Keldeo",
-    "deu": "Keldeo",
-    "jap": "ケルディオ",
-    "kor": "케르디오",
-    "chs": "凯路迪欧",
-    "cht": "凱路迪歐"
-  },
-  "formNames": {
-    "eng": "Resolute Form",
-    "esp": "Forma Brío",
-    "fra": "Aspect Décidé",
-    "deu": "Resolutform",
-    "ita": "Forma Risoluta",
-    "jap": "かくごのすがた",
-    "kor": "각오의 모습",
-    "chs": "觉悟的样子",
-    "cht": "覺悟的樣子"
-  },
   "transferOnlyIn": [
     "b2w2-b2",
     "b2w2-w2",

@@ -94,7 +94,6 @@
     "arceus-fairy",
     "arceus-legendary"
   ],
-  "formsDesc": "Form changes along with type to match a held Plate, due to multitype.",
   "refs": {
     "pkApiId": "493",
     "pkApiFormId": "493",
@@ -129,7 +128,11 @@
       ],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "blankplate", "role": "used", "consumed": false },
+      "item": {
+        "id": "blankplate",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": []
     },
     {
@@ -154,8 +157,16 @@
       ],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "equip_item",
-      "item": { "id": "normaliumz", "role": "held" },
-      "conditions": [{ "key": "ability", "abilities": ["multitype"] }]
+      "item": {
+        "id": "normaliumz",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        }
+      ]
     },
     {
       "from": [
@@ -179,7 +190,10 @@
       "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
       "trigger": "remove_item",
       "conditions": [
-        { "key": "ability", "abilities": ["multitype"] },
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        },
         {
           "key": "held_item_absent",
           "items": [
@@ -227,7 +241,10 @@
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "bdsp-bd", "bdsp-sp", "sv-s", "sv-v"],
       "trigger": "remove_item",
       "conditions": [
-        { "key": "ability", "abilities": ["multitype"] },
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        },
         {
           "key": "held_item_absent",
           "items": [
@@ -275,7 +292,10 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "remove_item",
       "conditions": [
-        { "key": "ability", "abilities": ["multitype"] },
+        {
+          "key": "ability",
+          "abilities": ["multitype"]
+        },
         {
           "key": "held_item_absent",
           "items": [
@@ -341,7 +361,12 @@
       ],
       "games": ["la"],
       "trigger": "automatic",
-      "conditions": [{ "key": "transfer", "destination": "home" }]
+      "conditions": [
+        {
+          "key": "transfer",
+          "destination": "home"
+        }
+      ]
     },
     {
       "from": [
@@ -365,31 +390,14 @@
       ],
       "games": ["sv-s", "sv-v", "bdsp-bd", "bdsp-sp"],
       "trigger": "automatic",
-      "conditions": [{ "key": "transfer", "destination": "home" }]
+      "conditions": [
+        {
+          "key": "transfer",
+          "destination": "home"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Arceus",
-    "fra": "Arceus",
-    "deu": "Arceus",
-    "jap": "アルセウス",
-    "kor": "아르세우스",
-    "chs": "阿尔宙斯",
-    "cht": "阿爾宙斯"
-  },
-  "genus": {
-    "eng": "Alpha Pokémon",
-    "esp": "Pokémon Alfa",
-    "fra": "Pokémon Alpha",
-    "deu": "Alpha",
-    "ita": "Pokémon Primevo",
-    "jap": "そうぞうポケモン",
-    "kor": "창조포켓몬",
-    "chs": "创造宝可梦",
-    "cht": "創造寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "dp-d",
     "dp-p",

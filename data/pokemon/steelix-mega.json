@@ -65,66 +65,49 @@
       "from": ["steelix", "steelix-f"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "steelixite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "steelixite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["steelix", "steelix-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "steelixite", "role": "held" },
+      "item": {
+        "id": "steelixite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Steelix",
-    "fra": "MégaSteelix",
-    "deu": "Mega-Stahlos",
-    "jap": "メガハガネール",
-    "kor": "메가강철톤",
-    "chs": "超级大钢蛇",
-    "cht": "超級大鋼蛇"
-  },
-  "genus": {
-    "eng": "Iron Snake Pokémon",
-    "esp": "Pokémon Serpiente Férrea",
-    "fra": "Pokémon Serpenfer",
-    "deu": "Stahlboa-Pokémon",
-    "ita": "Pokémon Ferroserpe",
-    "jap": "てつへびポケモン",
-    "kor": "철뱀포켓몬",
-    "chs": "铁蛇宝可梦",
-    "cht": "鐵蛇寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Steelix",
-    "fra": "Steelix",
-    "deu": "Stahlos",
-    "jap": "ハガネール",
-    "kor": "강철톤",
-    "chs": "大钢蛇",
-    "cht": "大鋼蛇"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0208001"
 }

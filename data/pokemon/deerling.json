@@ -81,7 +81,6 @@
   "femaleRate": 50,
   "baseForms": [],
   "forms": ["deerling-summer", "deerling-autumn", "deerling-winter"],
-  "formsDesc": "Forms only affect appearance.  Deerling switches forms to match the season if it is in the party upon loading the game.\n\nIf the season has changed since the game was saved, and the game was saved indoors, the previous save's season will be displayed upon loading the game, and Deerling will change according to that season.  Upon stepping outdoors, the change of season is displayed and Deerling will change again.",
   "refs": {
     "pkApiId": "585",
     "pkApiFormId": "585",
@@ -98,68 +97,73 @@
       "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "season", "season": "spring" },
-        { "key": "mechanic", "mechanic": "in_party" }
-      ],
-      "notes": {
-        "eng": "The form updates when the game updates the current season while this Pokémon is in the party."
-      }
+        {
+          "key": "season",
+          "season": "spring"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
     },
     {
       "from": ["deerling-autumn", "deerling-summer", "deerling-winter"],
       "games": ["sv-s", "sv-v"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "location", "location": "south_province_area_one" },
-        { "key": "interaction", "interaction": "load_game" },
-        { "key": "mechanic", "mechanic": "in_party" }
-      ],
-      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+        {
+          "key": "location",
+          "location": "south_province_area_one"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
     },
     {
       "from": ["deerling-autumn", "deerling-summer", "deerling-winter"],
       "games": ["sv-s", "sv-v"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "location", "location": "south_province_area_four" },
-        { "key": "interaction", "interaction": "load_game" },
-        { "key": "mechanic", "mechanic": "in_party" }
-      ],
-      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+        {
+          "key": "location",
+          "location": "south_province_area_four"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
     },
     {
       "from": ["deerling-autumn", "deerling-summer", "deerling-winter"],
       "games": ["sv-s", "sv-v"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "location", "location": "south_province_area_five" },
-        { "key": "interaction", "interaction": "load_game" },
-        { "key": "mechanic", "mechanic": "in_party" }
-      ],
-      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+        {
+          "key": "location",
+          "location": "south_province_area_five"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Deerling",
-    "fra": "Vivaldaim",
-    "deu": "Sesokitz",
-    "jap": "シキジカ",
-    "kor": "사철록",
-    "chs": "四季鹿",
-    "cht": "四季鹿"
-  },
-  "genus": {
-    "eng": "Season Pokémon",
-    "esp": "Pokémon Estacional",
-    "fra": "Pokémon Saison",
-    "deu": "Jahreszeit",
-    "ita": "Pokémon Stagione",
-    "jap": "きせつポケモン",
-    "kor": "계절포켓몬",
-    "chs": "季节宝可梦",
-    "cht": "季節寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

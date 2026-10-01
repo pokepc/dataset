@@ -76,7 +76,6 @@
   "femaleRate": 50,
   "baseForms": [],
   "forms": ["aegislash-blade"],
-  "formsDesc": "Forms have different stats.  If Aegislash's ability is stance change, it changes to Blade Forme before using a damaging move, and reverts to Shield Forme before using King's Shield or upon leaving the field.",
   "refs": {
     "pkApiId": "681",
     "pkApiFormId": "681",
@@ -91,31 +90,13 @@
     {
       "from": ["doublade"],
       "trigger": "use_item",
-      "item": { "id": "duskstone", "role": "used" },
+      "item": {
+        "id": "duskstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Aegislash",
-    "fra": "Exagide",
-    "deu": "Durengard",
-    "jap": "ギルガルド",
-    "kor": "킬가르도",
-    "chs": "坚盾剑怪",
-    "cht": "堅盾劍怪"
-  },
-  "genus": {
-    "eng": "Royal Sword Pokémon",
-    "esp": "Pokémon Espada Real",
-    "fra": "Pokémon Noble Lame",
-    "deu": "Königsklingen-Pokémon",
-    "ita": "Pokémon Spadareale",
-    "jap": "おうけんポケモン",
-    "kor": "왕검포켓몬",
-    "chs": "王剑宝可梦",
-    "cht": "王劍寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "home"],
+  "championsId": "0681000"
 }

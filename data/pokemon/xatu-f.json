@@ -132,45 +132,13 @@
       "from": ["natu"],
       "trigger": "level_up",
       "minLevel": 25,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Xatu (Female)",
-    "fra": "Xatu (Female)",
-    "deu": "Xatu (Female)"
-  },
-  "genus": {
-    "eng": "Mystic Pokémon",
-    "esp": "Pokémon Místico",
-    "fra": "Pokémon Mystique",
-    "deu": "Mystik-Pokémon",
-    "ita": "Pokémon Magico",
-    "jap": "せいれいポケモン",
-    "kor": "정령포켓몬",
-    "chs": "神秘宝可梦",
-    "cht": "神秘寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Xatu",
-    "fra": "Xatu",
-    "deu": "Xatu",
-    "jap": "ネイティオ",
-    "kor": "네이티오",
-    "chs": "天然鸟",
-    "cht": "天然鳥"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["boxrs", "col", "ranch", "bw-b", "bw-w", "bank", "sm-s", "sm-m", "home"]
 }

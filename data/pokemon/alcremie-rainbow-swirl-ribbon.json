@@ -66,45 +66,24 @@
       "from": ["milcery"],
       "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
       "trigger": "special",
-      "item": { "id": "ribbonsweet", "role": "held" },
+      "item": {
+        "id": "ribbonsweet",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "spin", "direction": "either", "seconds": 10, "comparison": "gt" },
-        { "key": "time_of_day", "time": "dusk" }
-      ],
-      "notes": {
-        "eng": "The evening window depends on the game; in Sword/Shield it is 19:00–19:59."
-      }
+        {
+          "key": "spin",
+          "direction": "either",
+          "seconds": 10,
+          "comparison": "gt"
+        },
+        {
+          "key": "time_of_day",
+          "time": "dusk"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Alcremie (Rainbow Swirl Ribbon Sweet)",
-    "fra": "Charmilly (Mélange Tricolore Ruban en Sucre)",
-    "deu": "Pokusan (Rainbow Swirl Ribbon Sweet)"
-  },
-  "genus": {
-    "eng": "Cream Pokémon",
-    "esp": "Pokémon Nata",
-    "fra": "Pokémon Crème",
-    "deu": "Sahne-Pokémon",
-    "ita": "Pokémon Pannafresca",
-    "jap": "クリームポケモン",
-    "kor": "크림포켓몬",
-    "chs": "鲜奶油宝可梦",
-    "cht": "鮮奶油寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Alcremie",
-    "fra": "Charmilly",
-    "deu": "Pokusan",
-    "jap": "マホイップ",
-    "kor": "마휘핑",
-    "chs": "霜奶仙",
-    "cht": "霜奶仙"
-  },
-  "formNames": {
-    "eng": "Rainbow Swirl Ribbon Sweet",
-    "fra": "Mélange Tricolore Ruban en Sucre",
-    "deu": "Rainbow Swirl Ribbon Sweet"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0869008"
 }

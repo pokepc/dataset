@@ -3,12 +3,12 @@
  * adds PokéAPI ids, and rewrites `mods/champions/` plus the base facts Champions owns. Run it
  * manually after updating the submodule and review the diff; it is not part of `pnpm build`.
  *
- * Usage: bun src/upstream-adapters/projectpokemon-champout/update.ts [--data-dir=data-next]
+ * Usage: bun src/upstream-adapters/projectpokemon-champout/update.ts [--data-dir=data]
  */
 import { resolve } from 'node:path'
-import { DATA_NEXT_ROOT, loadGameSetSource } from '../../lib-next/fs'
-import { toLocaleCode } from '../../lib-next/languages'
-import { mergeGameSet } from '../../lib-next/merge'
+import { DATASET_DIR, loadGameSetSource } from '../../lib/fs'
+import { toLocaleCode } from '../../lib/languages'
+import { mergeGameSet } from '../../lib/merge'
 import {
   enrichChampionsRecordsWithPokeApiIds,
   formatEnrichChampionsDataSummary,
@@ -35,7 +35,7 @@ export function toChampionsDump(data: BuiltData): ChampionsDump {
 
 if (import.meta.main) {
   const dataArg = process.argv.find((arg) => arg.startsWith('--data-dir='))
-  const dataDir = dataArg ? resolve(dataArg.slice('--data-dir='.length)) : DATA_NEXT_ROOT
+  const dataDir = dataArg ? resolve(dataArg.slice('--data-dir='.length)) : DATASET_DIR
 
   const data = buildData(DEFAULT_DATASET_ROOT, {
     onWarning: (warning) => console.warn(formatBuildWarning(warning)),

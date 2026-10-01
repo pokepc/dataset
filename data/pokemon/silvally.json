@@ -80,7 +80,11 @@
     {
       "from": ["typenull"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
   "formMethods": [
@@ -107,7 +111,10 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
       "trigger": "remove_item",
       "conditions": [
-        { "key": "ability", "abilities": ["rkssystem"] },
+        {
+          "key": "ability",
+          "abilities": ["rkssystem"]
+        },
         {
           "key": "held_item_absent",
           "items": [
@@ -133,27 +140,5 @@
       ]
     }
   ],
-  "names": {
-    "eng": "Silvally",
-    "fra": "Silvallié",
-    "deu": "Amigento",
-    "jap": "シルヴァディ",
-    "kor": "실버디",
-    "chs": "银伴战兽",
-    "cht": "銀伴戰獸"
-  },
-  "genus": {
-    "eng": "Synthetic Pokémon",
-    "esp": "Pokémon Multigénico",
-    "fra": "Pokémon Multigénome",
-    "deu": "Modifikations-Pokémon",
-    "ita": "Pokémon Multigene",
-    "jap": "じんこうポケモン",
-    "kor": "인공포켓몬",
-    "chs": "人工宝可梦",
-    "cht": "人工寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "home"]
 }

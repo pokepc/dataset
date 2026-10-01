@@ -91,30 +91,13 @@
     {
       "from": ["shelmet"],
       "trigger": "trade",
-      "conditions": [{ "key": "trade_partner", "pokemon": "karrablast" }]
+      "conditions": [
+        {
+          "key": "trade_partner",
+          "pokemon": "karrablast"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Accelgor",
-    "fra": "Limaspeed",
-    "deu": "Hydragil",
-    "jap": "アギルダー",
-    "kor": "어지리더",
-    "chs": "敏捷虫",
-    "cht": "敏捷蟲"
-  },
-  "genus": {
-    "eng": "Shell Out Pokémon",
-    "esp": "Pokémon Sincaparazón",
-    "fra": "Pokémon Exuviateur",
-    "deu": "Entschalungs-Pokémon",
-    "ita": "Pokémon Sgusciato",
-    "jap": "からぬけポケモン",
-    "kor": "탈껍질포켓몬",
-    "chs": "脱壳宝可梦",
-    "cht": "脫殼寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

@@ -76,36 +76,23 @@
     {
       "from": ["crabrawler"],
       "trigger": "level_up",
-      "conditions": [{ "key": "location", "location": "mount_lanakila" }]
+      "conditions": [
+        {
+          "key": "location",
+          "location": "mount_lanakila"
+        }
+      ]
     },
     {
       "from": ["crabrawler"],
       "trigger": "use_item",
-      "item": { "id": "icestone", "role": "used" },
+      "item": {
+        "id": "icestone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Crabominable",
-    "fra": "Crabominable",
-    "deu": "Krawell",
-    "jap": "ケケンカニ",
-    "kor": "모단단게",
-    "chs": "好胜毛蟹",
-    "cht": "好勝毛蟹"
-  },
-  "genus": {
-    "eng": "Woolly Crab Pokémon",
-    "esp": "Pokémon Cangrejopelo",
-    "fra": "Pokémon Crabe Velu",
-    "deu": "Fellkrabbe",
-    "ita": "Pokémon Peligranchio",
-    "jap": "けがにポケモン",
-    "kor": "털게포켓몬",
-    "chs": "毛蟹宝可梦",
-    "cht": "毛蟹寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "home"]
+  "transferOnlyIn": ["bank", "home"],
+  "championsId": "0740000"
 }

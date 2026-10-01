@@ -78,32 +78,13 @@
     {
       "from": ["swirlix"],
       "trigger": "trade",
-      "item": { "id": "whippeddream", "role": "held" },
+      "item": {
+        "id": "whippeddream",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Slurpuff",
-    "fra": "Cupcanaille",
-    "deu": "Sabbaione",
-    "jap": "ペロリーム",
-    "kor": "나루림",
-    "chs": "胖甜妮",
-    "cht": "胖甜妮"
-  },
-  "genus": {
-    "eng": "Meringue Pokémon",
-    "esp": "Pokémon Nata",
-    "fra": "Pokémon Mousseline",
-    "deu": "Schlagsahne-Pokémon",
-    "ita": "Pokémon Panna",
-    "jap": "ホイップポケモン",
-    "kor": "휩포켓몬",
-    "chs": "泡沫奶油宝可梦",
-    "cht": "泡沫奶油寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -114,5 +95,6 @@
     "usum-um",
     "swsh-sh",
     "home"
-  ]
+  ],
+  "championsId": "0685000"
 }

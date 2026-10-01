@@ -115,32 +115,13 @@
     {
       "from": ["clamperl"],
       "trigger": "trade",
-      "item": { "id": "deepseascale", "role": "held" },
+      "item": {
+        "id": "deepseascale",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Gorebyss",
-    "fra": "Rosabyss",
-    "deu": "Saganabyss",
-    "jap": "サクラビス",
-    "kor": "분홍장이",
-    "chs": "樱花鱼",
-    "cht": "櫻花魚"
-  },
-  "genus": {
-    "eng": "South Sea Pokémon",
-    "esp": "Pokémon Mar del Sur",
-    "fra": "Pokémon Mer du Sud",
-    "deu": "Südsee",
-    "ita": "Pokémon Sudmarino",
-    "jap": "なんかいポケモン",
-    "kor": "남해포켓몬",
-    "chs": "南海宝可梦",
-    "cht": "南海寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",

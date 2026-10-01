@@ -108,41 +108,13 @@
     {
       "from": ["tangela"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "ancientpower" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "ancientpower"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Tangrowth",
-    "fra": "Bouldeneu",
-    "deu": "Tangoloss",
-    "jap": "モジャンボ",
-    "kor": "덩쿠림보",
-    "chs": "巨蔓藤",
-    "cht": "巨蔓藤"
-  },
-  "genus": {
-    "eng": "Vine Pokémon",
-    "esp": "Pokémon Enredadera",
-    "fra": "Pokémon Vigne",
-    "deu": "Ranken-Pokémon",
-    "ita": "Pokémon Liana",
-    "jap": "ツルじょうポケモン",
-    "kor": "넝쿨포켓몬",
-    "chs": "藤蔓状宝可梦",
-    "cht": "藤蔓狀寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": ["dp-d", "dp-p", "ranch", "bank", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
 }

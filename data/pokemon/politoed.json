@@ -131,43 +131,13 @@
     {
       "from": ["poliwhirl"],
       "trigger": "trade",
-      "item": { "id": "kingsrock", "role": "held" },
+      "item": {
+        "id": "kingsrock",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Politoed",
-    "fra": "Tarpaud",
-    "deu": "Quaxo",
-    "jap": "ニョロトノ",
-    "kor": "왕구리",
-    "chs": "蚊香蛙皇",
-    "cht": "蚊香蛙皇"
-  },
-  "genus": {
-    "eng": "Frog Pokémon",
-    "esp": "Pokémon Rana",
-    "fra": "Pokémon Grenouille",
-    "deu": "Frosch-Pokémon",
-    "ita": "Pokémon Rana",
-    "jap": "かえるポケモン",
-    "kor": "개구리포켓몬",
-    "chs": "蛙宝可梦",
-    "cht": "蛙寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -180,5 +150,6 @@
     "oras-or",
     "oras-as",
     "home"
-  ]
+  ],
+  "championsId": "0186000"
 }

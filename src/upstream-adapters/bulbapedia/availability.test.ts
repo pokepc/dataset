@@ -25,7 +25,15 @@ const gameIds = JSON.parse(
   readFileSync(new URL('../../../data/indices/games.json', import.meta.url), 'utf8'),
 ) as string[]
 const games = gameIds.map((id) => read<AvailabilityGame>('games', id))
-const pokemon = (id: string) => read<AvailabilityPokemon>('pokemon', id)
+const englishText = JSON.parse(
+  readFileSync(new URL('../../../data/i18n/eng/pokemon.json', import.meta.url), 'utf8'),
+) as Record<string, { name?: string; formName?: string }>
+// Like readCollection, records carry their English name and form name.
+const pokemon = (id: string): AvailabilityPokemon => ({
+  ...read<AvailabilityPokemon>('pokemon', id),
+  name: englishText[id]?.name,
+  formName: englishText[id]?.formName,
+})
 const mainHtml = mainPage()
 const tables = parseAvailabilityTables({ main: mainHtml, go: goPage() })
 const report = (id: string, siblings: AvailabilityPokemon[] = [pokemon(id)]) =>

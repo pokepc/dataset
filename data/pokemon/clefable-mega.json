@@ -65,58 +65,33 @@
       "from": ["clefable"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "clefablite", "role": "held" },
+      "item": {
+        "id": "clefablite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Clefable",
-    "fra": "MégaMélodelfe",
-    "deu": "Mega-Pixi",
-    "jap": "メガピクシー",
-    "kor": "메가픽시",
-    "chs": "超级皮可西",
-    "cht": "超級皮可西"
-  },
-  "genus": {
-    "eng": "Fairy Pokémon",
-    "esp": "Pokémon Hada",
-    "fra": "Pokémon Fée",
-    "deu": "Feen-Pokémon",
-    "ita": "Pokémon Fata",
-    "jap": "ようせいポケモン",
-    "kor": "요정포켓몬",
-    "chs": "妖精宝可梦",
-    "cht": "妖精寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Clefable",
-    "fra": "Mélodelfe",
-    "deu": "Pixi",
-    "jap": "ピクシー",
-    "kor": "픽시",
-    "chs": "皮可西",
-    "cht": "皮可西"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0036001"
 }

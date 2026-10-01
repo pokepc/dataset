@@ -82,29 +82,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "fancy" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "fancy"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Fancy Pattern)",
-    "fra": "Prismillon (Motif Fantaisie)",
-    "deu": "Vivillon (Fantasiemuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Fancy Pattern",
-    "esp": "Motivo Fantasía",
-    "fra": "Motif Fantaisie",
-    "deu": "Fantasiemuster",
-    "ita": "Motivo Sbarazzino",
-    "jap": "ファンシーなもよう",
-    "kor": "팬시한 모양"
-  },
   "transferOnlyIn": [
     "xy-x",
     "xy-y",
@@ -118,5 +103,6 @@
     "home",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666018"
 }

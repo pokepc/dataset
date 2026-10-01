@@ -67,40 +67,14 @@
       "from": ["sliggoo-hisui"],
       "trigger": "level_up",
       "minLevel": 50,
-      "conditions": [{ "key": "overworld_weather", "weather": ["rain"] }]
+      "conditions": [
+        {
+          "key": "overworld_weather",
+          "weather": ["rain"]
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Goodra (Hisuian Form)",
-    "fra": "Muplodocus (Forme de Hisui)",
-    "deu": "Viscogon (Hisui-Form)",
-    "jap": "ヌメルゴン (ヒスイのすがた)"
-  },
-  "genus": {
-    "eng": "Dragon Pokémon",
-    "esp": "Pokémon Dragón",
-    "fra": "Pokémon Dragon",
-    "deu": "Drachen-Pokémon",
-    "ita": "Pokémon Drago",
-    "jap": "ドラゴンポケモン",
-    "kor": "드래곤포켓몬",
-    "chs": "龙宝可梦",
-    "cht": "龍寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Goodra",
-    "fra": "Muplodocus",
-    "deu": "Viscogon",
-    "jap": "ヌメルゴン",
-    "kor": "미끄래곤",
-    "chs": "黏美龙",
-    "cht": "黏美龍"
-  },
-  "formNames": {
-    "eng": "Hisuian Form",
-    "fra": "Forme de Hisui",
-    "deu": "Hisui-Form",
-    "jap": "ヒスイのすがた"
-  },
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": ["home", "sv-s", "sv-v"],
+  "championsId": "0706001"
 }

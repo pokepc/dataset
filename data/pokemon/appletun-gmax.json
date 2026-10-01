@@ -68,41 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Appletun (Gigantamax Form)",
-    "fra": "Dratatin (Forme Gigamax)",
-    "deu": "Schlapfel (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Apple Nectar Pokémon",
-    "esp": "Pokémon Manzanéctar",
-    "fra": "Pokémon Jus Pomme",
-    "deu": "Apfelnektar-Pokémon",
-    "ita": "Pokémon Pomisucco",
-    "jap": "りんごじるポケモン",
-    "kor": "사과즙포켓몬",
-    "chs": "苹果汁宝可梦",
-    "cht": "蘋果汁寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Appletun",
-    "fra": "Dratatin",
-    "deu": "Schlapfel",
-    "jap": "タルップル",
-    "kor": "단지래플",
-    "chs": "丰蜜龙",
-    "cht": "豐蜜龍"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

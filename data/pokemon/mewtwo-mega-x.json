@@ -66,23 +66,45 @@
       "from": ["mewtwo"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "mewtwonitex", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "mewtwonitex",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["mewtwo"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "mewtwonitex", "role": "held" },
+      "item": {
+        "id": "mewtwonitex",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -90,50 +112,18 @@
       "from": ["mewtwo"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "mewtwonitex", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "mewtwonitex",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Mewtwo X",
-    "fra": "MégaMewtwo X",
-    "deu": "Mega-Mewtu X",
-    "jap": "メガミュウツーX",
-    "kor": "메가뮤츠X",
-    "chs": "超级超梦X",
-    "cht": "超級超夢X"
-  },
-  "genus": {
-    "eng": "Genetic Pokémon",
-    "esp": "Pokémon Genético",
-    "fra": "Pokémon Génétique",
-    "deu": "Genmutanten-Pokémon",
-    "ita": "Pokémon Genetico",
-    "jap": "いでんしポケモン",
-    "kor": "유전포켓몬",
-    "chs": "基因宝可梦",
-    "cht": "基因寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Mewtwo",
-    "fra": "Mewtwo",
-    "deu": "Mewtu",
-    "jap": "ミュウツー",
-    "kor": "뮤츠",
-    "chs": "超梦",
-    "cht": "超夢"
-  },
-  "formNames": {
-    "eng": "Mega Form X",
-    "esp": "Forma Mega X",
-    "fra": "Méga-Forme X",
-    "deu": "Mega-Form X",
-    "ita": "Forma Mega X",
-    "jap": "メガX",
-    "kor": "메가X",
-    "chs": "超级X",
-    "cht": "超級X"
-  },
   "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"]
 }

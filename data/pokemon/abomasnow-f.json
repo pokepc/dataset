@@ -114,50 +114,14 @@
       "from": ["snover"],
       "trigger": "level_up",
       "minLevel": 40,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Abomasnow (Female)",
-    "fra": "Blizzaroi (Female)",
-    "deu": "Rexblisar (Female)",
-    "jap": "ユキノオー (Female)",
-    "kor": "눈설왕 (Female)",
-    "chs": "暴雪王 (Female)",
-    "cht": "暴雪王 (Female)"
-  },
-  "genus": {
-    "eng": "Frost Tree Pokémon",
-    "esp": "Pokémon Árbol Nieve",
-    "fra": "Pokémon Arbregelé",
-    "deu": "Frostbaum-Pokémon",
-    "ita": "Pokémon Albergelo",
-    "jap": "じゅひょうポケモン",
-    "kor": "얼음나무포켓몬",
-    "chs": "树冰宝可梦",
-    "cht": "樹冰寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Abomasnow",
-    "fra": "Blizzaroi",
-    "deu": "Rexblisar",
-    "jap": "ユキノオー",
-    "kor": "눈설왕",
-    "chs": "暴雪王",
-    "cht": "暴雪王"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "ranch",
     "hgss-hg",
@@ -172,5 +136,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0460000"
 }

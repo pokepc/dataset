@@ -116,46 +116,14 @@
       "from": ["croagunk"],
       "trigger": "level_up",
       "minLevel": 37,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Toxicroak (Female)",
-    "fra": "Coatox (Female)",
-    "deu": "Toxiquak (Female)"
-  },
-  "genus": {
-    "eng": "Toxic Mouth Pokémon",
-    "esp": "Pokémon Boca Tóxica",
-    "fra": "Pokémon Toxique",
-    "deu": "Giftmund-Pokémon",
-    "ita": "Pokémon Inveieleno",
-    "jap": "どくづきポケモン",
-    "kor": "독설포켓몬",
-    "chs": "毒击宝可梦",
-    "cht": "毒擊寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Toxicroak",
-    "fra": "Coatox",
-    "deu": "Toxiquak",
-    "jap": "ドクロッグ",
-    "kor": "독개굴",
-    "chs": "毒骷蛙",
-    "cht": "毒骷蛙"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "ranch",
     "bank",
@@ -167,5 +135,6 @@
     "usum-um",
     "swsh-sw",
     "home"
-  ]
+  ],
+  "championsId": "0454000"
 }

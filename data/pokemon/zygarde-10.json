@@ -78,61 +78,29 @@
       "from": ["zygarde"],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "use_item",
-      "item": { "id": "zygardecube", "role": "used", "consumed": false },
-      "conditions": [{ "key": "ability", "abilities": ["powerconstruct"] }]
+      "item": {
+        "id": "zygardecube",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["powerconstruct"]
+        }
+      ]
     },
     {
       "from": ["zygarde"],
       "games": ["swsh-sw", "swsh-sh", "lza"],
       "trigger": "use_item",
-      "item": { "id": "zygardecube", "role": "used", "consumed": false },
-      "conditions": [],
-      "notes": {
-        "eng": "Choose Change form; Sword/Shield permits either Ability and Legends: Z-A has no Abilities."
-      }
+      "item": {
+        "id": "zygardecube",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": []
     }
   ],
-  "names": {
-    "eng": "Zygarde (10% Forme)",
-    "esp": "Zygarde (Forma 10%)",
-    "fra": "Zygarde (Forme 10 %)",
-    "deu": "Zygarde (10%-Form)",
-    "ita": "Zygarde (Forma 10%)",
-    "jap": "ジガルデ (１０％フォルム)",
-    "kor": "지가르데 (10%폼)",
-    "chs": "基格尔德 (１０％形态)",
-    "cht": "基格爾德 (１０％形態)"
-  },
-  "genus": {
-    "eng": "Order Pokémon",
-    "esp": "Pokémon Equilibrio",
-    "fra": "Pokémon Équilibre",
-    "deu": "Ordnungs-Pokémon",
-    "ita": "Pokémon Equilibrio",
-    "jap": "ちつじょポケモン",
-    "kor": "질서포켓몬",
-    "chs": "秩序宝可梦",
-    "cht": "秩序寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Zygarde",
-    "fra": "Zygarde",
-    "deu": "Zygarde",
-    "jap": "ジガルデ",
-    "kor": "지가르데",
-    "chs": "基格尔德",
-    "cht": "基格爾德"
-  },
-  "formNames": {
-    "eng": "10% Forme",
-    "esp": "Forma 10%",
-    "fra": "Forme 10 %",
-    "deu": "10%-Form",
-    "ita": "Forma 10%",
-    "jap": "１０％フォルム",
-    "kor": "10%폼",
-    "chs": "１０％形态",
-    "cht": "１０％形態"
-  },
   "transferOnlyIn": ["bank", "home"]
 }

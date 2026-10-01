@@ -64,29 +64,13 @@
     {
       "from": ["capsakid"],
       "trigger": "use_item",
-      "item": { "id": "firestone", "role": "used" },
+      "item": {
+        "id": "firestone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Scovillain",
-    "fra": "Scovilain",
-    "deu": "Halupenjo",
-    "jap": "スコヴィラン",
-    "kor": "스코빌런",
-    "chs": "狠辣椒",
-    "cht": "狠辣椒"
-  },
-  "genus": {
-    "eng": "Spicy Pepper Pokémon",
-    "fra": "Habanero",
-    "deu": "Habanero",
-    "jap": "ハバネロポケモン",
-    "kor": "하바네로포켓몬",
-    "chs": "热辣宝可梦",
-    "cht": "熱辣寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0952000"
 }

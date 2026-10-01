@@ -131,40 +131,24 @@
     {
       "from": ["porygon"],
       "trigger": "trade",
-      "item": { "id": "upgrade", "role": "held" },
+      "item": {
+        "id": "upgrade",
+        "role": "held"
+      },
       "conditions": []
     },
     {
       "from": ["porygon"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "upgrade", "role": "used" },
+      "item": {
+        "id": "upgrade",
+        "role": "used"
+      },
       "conditions": [],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Porygon2",
-    "fra": "Porygon2",
-    "deu": "Porygon2",
-    "jap": "ポリゴン２",
-    "kor": "폴리곤2",
-    "chs": "多边兽２型",
-    "cht": "多邊獸Ⅱ"
-  },
-  "genus": {
-    "eng": "Virtual Pokémon",
-    "esp": "Pokémon Virtual",
-    "fra": "Pokémon Virtuel",
-    "deu": "Virtuell-Pokémon",
-    "ita": "Pokémon Virtuale",
-    "jap": "バーチャルポケモン",
-    "kor": "가상포켓몬",
-    "chs": "虚拟宝可梦",
-    "cht": "虛擬寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

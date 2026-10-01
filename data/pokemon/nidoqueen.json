@@ -132,32 +132,13 @@
     {
       "from": ["nidorina"],
       "trigger": "use_item",
-      "item": { "id": "moonstone", "role": "used" },
+      "item": {
+        "id": "moonstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Nidoqueen",
-    "fra": "Nidoqueen",
-    "deu": "Nidoqueen",
-    "jap": "ニドクイン",
-    "kor": "니드퀸",
-    "chs": "尼多后",
-    "cht": "尼多后"
-  },
-  "genus": {
-    "eng": "Drill Pokémon",
-    "esp": "Pokémon Taladro",
-    "fra": "Pokémon Perceur",
-    "deu": "Bohrer-Pokémon",
-    "ita": "Pokémon Trapano",
-    "jap": "ドリルポケモン",
-    "kor": "드릴포켓몬",
-    "chs": "钻锥宝可梦",
-    "cht": "鑽錐寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

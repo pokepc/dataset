@@ -19,7 +19,7 @@ describe('evolution methods', () => {
     expect(new Set(evoConditionKeys).size).toBe(evoConditionKeys.length)
   })
 
-  it('preserves typed conditions, localized notes, and alternative methods', () => {
+  it('preserves typed conditions and alternative methods, without inline notes', () => {
     const trade = {
       ...malamar,
       from: ['haunter'],
@@ -33,11 +33,14 @@ describe('evolution methods', () => {
       trigger: 'use_item',
       item: { id: 'linkingcord', role: 'used' },
       activation: 'manual',
-      notes: { eng: 'Choose Evolve.', esp: 'Elige evolucionar.' },
     }
     const input = { evoMethods: [trade, item] }
     expect(pokemonSchema.pick({ evoMethods: true }).parse(input)).toEqual(input)
     expect(evolutionMethodSchema.parse(malamar)).toEqual(malamar)
+    // Notes moved to the Pokémon locale files (evoNotes).
+    expect(
+      evolutionMethodSchema.safeParse({ ...item, notes: { eng: 'Choose Evolve.' } }).success,
+    ).toBe(false)
     expect(
       evolutionMethodSchema.safeParse({ ...malamar, sources: ['https://example.com'] }).success,
     ).toBe(false)

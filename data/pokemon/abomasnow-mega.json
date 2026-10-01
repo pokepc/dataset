@@ -65,66 +65,49 @@
       "from": ["abomasnow", "abomasnow-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "abomasite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "abomasite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["abomasnow", "abomasnow-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "abomasite", "role": "held" },
+      "item": {
+        "id": "abomasite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Abomasnow",
-    "fra": "MégaBlizzaroi",
-    "deu": "Mega-Rexblisar",
-    "jap": "メガユキノオー",
-    "kor": "메가눈설왕",
-    "chs": "超级暴雪王",
-    "cht": "超級暴雪王"
-  },
-  "genus": {
-    "eng": "Frost Tree Pokémon",
-    "esp": "Pokémon Árbol Nieve",
-    "fra": "Pokémon Arbregelé",
-    "deu": "Frostbaum-Pokémon",
-    "ita": "Pokémon Albergelo",
-    "jap": "じゅひょうポケモン",
-    "kor": "얼음나무포켓몬",
-    "chs": "树冰宝可梦",
-    "cht": "樹冰寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Abomasnow",
-    "fra": "Blizzaroi",
-    "deu": "Rexblisar",
-    "jap": "ユキノオー",
-    "kor": "눈설왕",
-    "chs": "暴雪王",
-    "cht": "暴雪王"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"]
+  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"],
+  "championsId": "0460001"
 }

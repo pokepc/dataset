@@ -65,28 +65,15 @@
       "from": ["primeape"],
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
-      "conditions": [{ "key": "use_move", "move": "ragefist", "count": 20 }]
+      "conditions": [
+        {
+          "key": "use_move",
+          "move": "ragefist",
+          "count": 20
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Annihilape",
-    "fra": "Courrousinge",
-    "deu": "Epitaff",
-    "jap": "コノヨザル",
-    "kor": "저승갓숭",
-    "chs": "弃世猴",
-    "cht": "棄世猴"
-  },
-  "genus": {
-    "eng": "Rage Monkey Pokémon",
-    "fra": "Singe Furax",
-    "deu": "Zornaffe",
-    "jap": "ふんどざるポケモン",
-    "kor": "분노숭이포켓몬",
-    "chs": "愤怒猴宝可梦",
-    "cht": "憤怒猴寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0979000"
 }

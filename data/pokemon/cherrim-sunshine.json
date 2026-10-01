@@ -80,42 +80,64 @@
       "from": ["cherrim"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["flowergift"] },
-        { "key": "weather", "weather": ["sun"], "relation": "in" },
-        { "key": "battle_condition", "condition": "weather_effects_active" }
+        {
+          "key": "ability",
+          "abilities": ["flowergift"]
+        },
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "weather_effects_active"
+        }
       ],
-      "notes": {
-        "eng": "Flower Gift controls this transformation from Generation V onward in games with Abilities."
-      },
       "revert": [
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["flowergift"] },
-            { "key": "weather", "weather": ["sun"], "relation": "outside" }
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
           ]
         },
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "sunlight_effect_or_flower_gift_inactive" }
-          ],
-          "notes": { "eng": "Sunshine Form ends when effective sunlight or Flower Gift is lost." }
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
         },
         {
           "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss"],
           "trigger": "automatic",
-          "conditions": [{ "key": "weather", "weather": ["sun"], "relation": "outside" }]
+          "conditions": [
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
         },
         {
           "games": ["la"],
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "legends_arceus_sunshine_conditions_ended" }
-          ],
-          "notes": {
-            "eng": "Returns to Overcast outside battle, at night, or when sunny/harsh-sunlight overworld weather ends."
-          }
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
         },
         "switch_out",
         "battle_end"
@@ -126,35 +148,61 @@
       "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "weather", "weather": ["sun"], "relation": "in" },
-        { "key": "battle_condition", "condition": "weather_effects_active" }
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "weather_effects_active"
+        }
       ],
-      "notes": { "eng": "In Generation IV, form changes do not depend on Flower Gift." },
       "revert": [
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["flowergift"] },
-            { "key": "weather", "weather": ["sun"], "relation": "outside" }
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
           ]
         },
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "sunlight_effect_or_flower_gift_inactive" }
-          ],
-          "notes": { "eng": "Sunshine Form ends when effective sunlight or Flower Gift is lost." }
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
         },
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "weather", "weather": ["sun"], "relation": "outside" }]
+          "conditions": [
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
+          ]
         },
         {
           "games": null,
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
         }
       ]
     },
@@ -163,43 +211,64 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "weather", "weather": ["sun"], "relation": "in" },
-        { "key": "time_of_day", "time": "morning" },
-        { "key": "battle_condition", "condition": "in_battle" }
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "time_of_day",
+          "time": "morning"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
       ],
-      "notes": {
-        "eng": "In Legends: Arceus, sunny or harsh-sunlight overworld weather and a daylight time period are both required; Abilities are absent."
-      },
       "revert": [
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["flowergift"] },
-            { "key": "weather", "weather": ["sun"], "relation": "outside" }
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
           ]
         },
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "sunlight_effect_or_flower_gift_inactive" }
-          ],
-          "notes": { "eng": "Sunshine Form ends when effective sunlight or Flower Gift is lost." }
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
         },
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "legends_arceus_sunshine_conditions_ended" }
-          ],
-          "notes": {
-            "eng": "Returns to Overcast outside battle, at night, or when sunny/harsh-sunlight overworld weather ends."
-          }
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
         },
         {
           "games": null,
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
         }
       ]
     },
@@ -208,43 +277,64 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "weather", "weather": ["sun"], "relation": "in" },
-        { "key": "time_of_day", "time": "day" },
-        { "key": "battle_condition", "condition": "in_battle" }
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
       ],
-      "notes": {
-        "eng": "In Legends: Arceus, sunny or harsh-sunlight overworld weather and a daylight time period are both required; Abilities are absent."
-      },
       "revert": [
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["flowergift"] },
-            { "key": "weather", "weather": ["sun"], "relation": "outside" }
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
           ]
         },
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "sunlight_effect_or_flower_gift_inactive" }
-          ],
-          "notes": { "eng": "Sunshine Form ends when effective sunlight or Flower Gift is lost." }
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
         },
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "legends_arceus_sunshine_conditions_ended" }
-          ],
-          "notes": {
-            "eng": "Returns to Overcast outside battle, at night, or when sunny/harsh-sunlight overworld weather ends."
-          }
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
         },
         {
           "games": null,
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
         }
       ]
     },
@@ -253,89 +343,68 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "weather", "weather": ["sun"], "relation": "in" },
-        { "key": "time_of_day", "time": "evening" },
-        { "key": "battle_condition", "condition": "in_battle" }
+        {
+          "key": "weather",
+          "weather": ["sun"],
+          "relation": "in"
+        },
+        {
+          "key": "time_of_day",
+          "time": "evening"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
       ],
-      "notes": {
-        "eng": "In Legends: Arceus, sunny or harsh-sunlight overworld weather and a daylight time period are both required; Abilities are absent."
-      },
       "revert": [
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["flowergift"] },
-            { "key": "weather", "weather": ["sun"], "relation": "outside" }
+            {
+              "key": "ability",
+              "abilities": ["flowergift"]
+            },
+            {
+              "key": "weather",
+              "weather": ["sun"],
+              "relation": "outside"
+            }
           ]
         },
         {
           "games": null,
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "sunlight_effect_or_flower_gift_inactive" }
-          ],
-          "notes": { "eng": "Sunshine Form ends when effective sunlight or Flower Gift is lost." }
+            {
+              "key": "battle_condition",
+              "condition": "sunlight_effect_or_flower_gift_inactive"
+            }
+          ]
         },
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "battle_condition", "condition": "legends_arceus_sunshine_conditions_ended" }
-          ],
-          "notes": {
-            "eng": "Returns to Overcast outside battle, at night, or when sunny/harsh-sunlight overworld weather ends."
-          }
+            {
+              "key": "battle_condition",
+              "condition": "legends_arceus_sunshine_conditions_ended"
+            }
+          ]
         },
         {
           "games": null,
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Cherrim (Sunshine Form)",
-    "esp": "Cherrim (Forma Soleado)",
-    "fra": "Ceriflor (Temps Ensoleillé)",
-    "deu": "Kinoso (Sonnenform)",
-    "ita": "Cherrim (Forma Splendore)",
-    "jap": "チェリム (ポジフォルム)",
-    "kor": "체리꼬 (포지폼)",
-    "chs": "樱花儿 (晴天形态)",
-    "cht": "櫻花兒 (晴天形態)"
-  },
-  "genus": {
-    "eng": "Blossom Pokémon",
-    "esp": "Pokémon Floración",
-    "fra": "Pokémon Floraison",
-    "deu": "Blüten-Pokémon",
-    "ita": "Pokémon Bocciolo",
-    "jap": "サクラポケモン",
-    "kor": "벚꽃포켓몬",
-    "chs": "樱花宝可梦",
-    "cht": "櫻花寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Cherrim",
-    "fra": "Ceriflor",
-    "deu": "Kinoso",
-    "jap": "チェリム",
-    "kor": "체리꼬",
-    "chs": "樱花儿",
-    "cht": "櫻花兒"
-  },
-  "formNames": {
-    "eng": "Sunshine Form",
-    "esp": "Forma Soleado",
-    "fra": "Temps Ensoleillé",
-    "deu": "Sonnenform",
-    "ita": "Forma Splendore",
-    "jap": "ポジフォルム",
-    "kor": "포지폼",
-    "chs": "晴天形态",
-    "cht": "晴天形態"
-  },
   "transferOnlyIn": [
     "ranch",
     "b2w2-b2",

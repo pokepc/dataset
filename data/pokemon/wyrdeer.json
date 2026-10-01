@@ -65,30 +65,17 @@
       "from": ["stantler"],
       "games": ["la"],
       "trigger": "special",
-      "conditions": [{ "key": "use_move", "move": "psyshieldbash", "count": 20, "style": "agile" }],
+      "conditions": [
+        {
+          "key": "use_move",
+          "move": "psyshieldbash",
+          "count": 20,
+          "style": "agile"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Wyrdeer",
-    "fra": "Cerbyllin",
-    "deu": "Damythir",
-    "jap": "アヤシシ",
-    "kor": "신비록",
-    "chs": "诡角鹿",
-    "cht": "詭角鹿"
-  },
-  "genus": {
-    "eng": "Big Horn Pokémon",
-    "fra": "Pokémon Maxi Corne",
-    "deu": "Vielender-Pokémon",
-    "ita": "Pokémon Grancorno",
-    "jap": "おおツノポケモン",
-    "kor": "큰뿔포켓몬",
-    "chs": "大角宝可梦",
-    "cht": "大角寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": ["home", "sv-s", "sv-v"],
+  "championsId": "0899000"
 }

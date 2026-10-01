@@ -65,42 +65,24 @@
       "from": ["milcery"],
       "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
       "trigger": "special",
-      "item": { "id": "cloversweet", "role": "held" },
+      "item": {
+        "id": "cloversweet",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "spin", "direction": "clockwise", "seconds": 5, "comparison": "lt" },
-        { "key": "time_of_day", "time": "day" }
+        {
+          "key": "spin",
+          "direction": "clockwise",
+          "seconds": 5,
+          "comparison": "lt"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Alcremie (Vanilla Cream Clover Sweet)",
-    "fra": "Charmilly (Lait Vanille Trèfle en Sucre)",
-    "deu": "Pokusan (Vanilla Cream Clover Sweet)"
-  },
-  "genus": {
-    "eng": "Cream Pokémon",
-    "esp": "Pokémon Nata",
-    "fra": "Pokémon Crème",
-    "deu": "Sahne-Pokémon",
-    "ita": "Pokémon Pannafresca",
-    "jap": "クリームポケモン",
-    "kor": "크림포켓몬",
-    "chs": "鲜奶油宝可梦",
-    "cht": "鮮奶油寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Alcremie",
-    "fra": "Charmilly",
-    "deu": "Pokusan",
-    "jap": "マホイップ",
-    "kor": "마휘핑",
-    "chs": "霜奶仙",
-    "cht": "霜奶仙"
-  },
-  "formNames": {
-    "eng": "Vanilla Cream Clover Sweet",
-    "fra": "Lait Vanille Trèfle en Sucre",
-    "deu": "Vanilla Cream Clover Sweet"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0869000"
 }

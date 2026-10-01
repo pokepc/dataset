@@ -137,32 +137,13 @@
     {
       "from": ["growlithe"],
       "trigger": "use_item",
-      "item": { "id": "firestone", "role": "used" },
+      "item": {
+        "id": "firestone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Arcanine",
-    "fra": "Arcanin",
-    "deu": "Arkani",
-    "jap": "ウインディ",
-    "kor": "윈디",
-    "chs": "风速狗",
-    "cht": "風速狗"
-  },
-  "genus": {
-    "eng": "Legendary Pokémon",
-    "esp": "Pokémon Leyenda",
-    "fra": "Pokémon Légendaire",
-    "deu": "Legendär-Pokémon",
-    "ita": "Pokémon Leggenda",
-    "jap": "でんせつポケモン",
-    "kor": "전설포켓몬",
-    "chs": "传说宝可梦",
-    "cht": "傳說寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rb-b",
     "gs-s",
@@ -179,5 +160,6 @@
     "bank",
     "home",
     "bdsp-sp"
-  ]
+  ],
+  "championsId": "0059000"
 }

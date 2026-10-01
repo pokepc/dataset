@@ -99,31 +99,13 @@
     {
       "from": ["cottonee"],
       "trigger": "use_item",
-      "item": { "id": "sunstone", "role": "used" },
+      "item": {
+        "id": "sunstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Whimsicott",
-    "fra": "Farfaduvet",
-    "deu": "Elfun",
-    "jap": "エルフーン",
-    "kor": "엘풍",
-    "chs": "风妖精",
-    "cht": "風妖精"
-  },
-  "genus": {
-    "eng": "Windveiled Pokémon",
-    "esp": "Pokémon Vuelalviento",
-    "fra": "Pokémon Vole Vent",
-    "deu": "Windschatten-Pokémon",
-    "ita": "Pokémon Spiffero",
-    "jap": "かぜかくれポケモン",
-    "kor": "바람숨기포켓몬",
-    "chs": "风隐宝可梦",
-    "cht": "風隱寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["xy-x", "xy-y", "bank", "sm-m", "usum-um", "home"]
+  "transferOnlyIn": ["xy-x", "xy-y", "bank", "sm-m", "usum-um", "home"],
+  "championsId": "0547000"
 }

@@ -127,31 +127,14 @@
     {
       "from": ["mantyke"],
       "trigger": "level_up",
-      "conditions": [{ "key": "party_pokemon", "pokemon": "remoraid" }]
+      "conditions": [
+        {
+          "key": "party_pokemon",
+          "pokemon": "remoraid"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Mantine",
-    "fra": "Démanta",
-    "deu": "Mantax",
-    "jap": "マンタイン",
-    "kor": "만타인",
-    "chs": "巨翅飞鱼",
-    "cht": "巨翅飛魚"
-  },
-  "genus": {
-    "eng": "Kite Pokémon",
-    "esp": "Pokémon Milano",
-    "fra": "Pokémon Cervolant",
-    "deu": "Flugrochen-Pokémon",
-    "ita": "Pokémon Aquilone",
-    "jap": "カイトポケモン",
-    "kor": "연포켓몬",
-    "chs": "风筝宝可梦",
-    "cht": "風箏寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "gs-s",
     "rs-r",

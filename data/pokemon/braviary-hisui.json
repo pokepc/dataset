@@ -68,41 +68,15 @@
       "games": ["la"],
       "trigger": "level_up",
       "minLevel": 54,
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "in"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Braviary (Hisuian Form)",
-    "fra": "Gueriaigle (Forme de Hisui)",
-    "deu": "Washakwil (Hisui-Form)",
-    "jap": "ウォーグル (ヒスイのすがた)"
-  },
-  "genus": {
-    "eng": "Valiant Pokémon",
-    "esp": "Pokémon Aguerrido",
-    "fra": "Pokémon Vaillant",
-    "deu": "Kühnheits-Pokémon",
-    "ita": "Pokémon Baldanza",
-    "jap": "ゆうもうポケモン",
-    "kor": "용맹포켓몬",
-    "chs": "勇猛宝可梦",
-    "cht": "勇猛寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Braviary",
-    "fra": "Gueriaigle",
-    "deu": "Washakwil",
-    "jap": "ウォーグル",
-    "kor": "워글",
-    "chs": "勇士雄鹰",
-    "cht": "勇士雄鷹"
-  },
-  "formNames": {
-    "eng": "Hisuian Form",
-    "fra": "Forme de Hisui",
-    "deu": "Hisui-Form",
-    "jap": "ヒスイのすがた"
-  },
   "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

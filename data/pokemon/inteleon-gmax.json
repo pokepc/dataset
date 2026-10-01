@@ -66,37 +66,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Inteleon (Gigantamax Form)",
-    "fra": "Lézargus (Forme Gigamax)",
-    "deu": "Intelleon (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Secret Agent Pokémon",
-    "esp": "Pokémon Agente",
-    "fra": "Pokémon Agent Secret",
-    "deu": "Geheimagenten-Pokémon",
-    "ita": "Pokémon Agente",
-    "jap": "エージェントポケモン",
-    "kor": "에이전트포켓몬",
-    "chs": "特工宝可梦",
-    "cht": "特工寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Inteleon",
-    "fra": "Lézargus",
-    "deu": "Intelleon",
-    "jap": "インテレオン",
-    "kor": "인텔리레온",
-    "chs": "千面避役",
-    "cht": "千面避役"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

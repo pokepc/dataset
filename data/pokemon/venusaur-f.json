@@ -128,42 +128,14 @@
       "from": ["ivysaur"],
       "trigger": "level_up",
       "minLevel": 32,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": { "eng": "Venusaur (Female)", "fra": "Florizarre (Female)", "deu": "Bisaflor (Female)" },
-  "genus": {
-    "eng": "Seed Pokémon",
-    "esp": "Pokémon Semilla",
-    "fra": "Pokémon Graine",
-    "deu": "Samen-Pokémon",
-    "ita": "Pokémon Seme",
-    "jap": "たねポケモン",
-    "kor": "씨앗포켓몬",
-    "chs": "种子宝可梦",
-    "cht": "種子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Venusaur",
-    "fra": "Florizarre",
-    "deu": "Bisaflor",
-    "jap": "フシギバナ",
-    "kor": "이상해꽃",
-    "chs": "妙蛙花",
-    "cht": "妙蛙花"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "gs-g",
     "gs-s",
@@ -188,5 +160,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0003000"
 }

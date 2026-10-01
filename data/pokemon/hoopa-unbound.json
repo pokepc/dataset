@@ -66,40 +66,77 @@
       "from": ["hoopa"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "sv-s", "sv-v"],
       "trigger": "use_item",
-      "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+      "item": {
+        "id": "prisonbottle",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "games": ["sv-s", "sv-v"],
           "trigger": "use_item",
-          "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+          "item": {
+            "id": "prisonbottle",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
           "trigger": "automatic",
-          "conditions": [{ "key": "elapsed_time", "amount": 3, "unit": "days" }],
-          "notes": { "eng": "The timer starts when the Prison Bottle is used." }
+          "conditions": [
+            {
+              "key": "elapsed_time",
+              "amount": 3,
+              "unit": "days"
+            }
+          ]
         },
         {
           "games": ["oras-or", "oras-as"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "pc"
+            }
+          ]
         },
         {
           "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "withdrawal",
+              "service": "pc"
+            }
+          ]
         },
         {
           "games": ["oras-or", "oras-as"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "day_care"
+            }
+          ]
         },
         {
           "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "nursery"
+            }
+          ]
         }
       ]
     },
@@ -107,62 +144,25 @@
       "from": ["hoopa"],
       "games": ["lza"],
       "trigger": "use_item",
-      "item": { "id": "prisonbottle", "role": "used", "consumed": false },
-      "conditions": [],
-      "notes": {
-        "eng": "Obtain the Prison Bottle in Mega Dimension side mission 196, The Djinn Unbound."
+      "item": {
+        "id": "prisonbottle",
+        "role": "used",
+        "consumed": false
       },
+      "conditions": [],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "prisonbottle", "role": "used", "consumed": false },
+          "item": {
+            "id": "prisonbottle",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Hoopa Unbound",
-    "esp": "Hoopa Desatado",
-    "fra": "Hoopa Déchaîné",
-    "deu": "Entfesseltes Hoopa",
-    "ita": "Hoopa Libero",
-    "jap": "ときはなたれしフーパ",
-    "kor": "굴레를 벗어난 후파",
-    "chs": "解放胡帕",
-    "cht": "解放胡帕"
-  },
-  "genus": {
-    "eng": "Mischief Pokémon",
-    "esp": "Pokémon Travesura",
-    "fra": "Pokémon Chenapan",
-    "deu": "Schabernack",
-    "ita": "Pokémon Birba",
-    "jap": "いたずらポケモン",
-    "kor": "장난포켓몬",
-    "chs": "顽童宝可梦",
-    "cht": "頑童寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Hoopa",
-    "fra": "Hoopa",
-    "deu": "Hoopa",
-    "jap": "フーパ",
-    "kor": "후파",
-    "chs": "胡帕",
-    "cht": "胡帕"
-  },
-  "formNames": {
-    "eng": "Hoopa Unbound",
-    "esp": "Hoopa Desatado",
-    "fra": "Hoopa Déchaîné",
-    "deu": "Entfesseltes Hoopa",
-    "ita": "Hoopa Libero",
-    "jap": "ときはなたれしフーパ",
-    "kor": "굴레를 벗어난 후파",
-    "chs": "解放胡帕",
-    "cht": "解放胡帕"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",

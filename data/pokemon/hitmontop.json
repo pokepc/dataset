@@ -128,31 +128,14 @@
       "from": ["tyrogue"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "attack_defense_comparison", "comparison": "eq" }]
+      "conditions": [
+        {
+          "key": "attack_defense_comparison",
+          "comparison": "eq"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Hitmontop",
-    "fra": "Kapoera",
-    "deu": "Kapoera",
-    "jap": "カポエラー",
-    "kor": "카포에라",
-    "chs": "战舞郎",
-    "cht": "戰舞郎"
-  },
-  "genus": {
-    "eng": "Handstand Pokémon",
-    "esp": "Pokémon Boca Abajo",
-    "fra": "Pokémon Poirier",
-    "deu": "Kopfstand-Pokémon",
-    "ita": "Pokémon Verticale",
-    "jap": "さかだちポケモン",
-    "kor": "물구나무포켓몬",
-    "chs": "倒立宝可梦",
-    "cht": "倒立寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

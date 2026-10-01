@@ -115,42 +115,13 @@
     {
       "from": ["roselia"],
       "trigger": "use_item",
-      "item": { "id": "shinystone", "role": "used" },
+      "item": {
+        "id": "shinystone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Roserade",
-    "fra": "Roserade",
-    "deu": "Roserade",
-    "jap": "ロズレイド",
-    "kor": "로즈레이드",
-    "chs": "罗丝雷朵",
-    "cht": "羅絲雷朵"
-  },
-  "genus": {
-    "eng": "Bouquet Pokémon",
-    "esp": "Pokémon Ramillete",
-    "fra": "Pokémon Bouquet",
-    "deu": "Blumenstrauß-Pokémon",
-    "ita": "Pokémon Floreale",
-    "jap": "ブーケポケモン",
-    "kor": "부케포켓몬",
-    "chs": "花束宝可梦",
-    "cht": "花束寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
-  "transferOnlyIn": ["ranch", "bw-b", "bank", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["ranch", "bw-b", "bank", "usum-us", "usum-um", "home"],
+  "championsId": "0407000"
 }

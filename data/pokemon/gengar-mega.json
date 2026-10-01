@@ -76,23 +76,45 @@
       "from": ["gengar"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "gengarite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "gengarite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["gengar"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "gengarite", "role": "held" },
+      "item": {
+        "id": "gengarite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -100,50 +122,19 @@
       "from": ["gengar"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "gengarite", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "gengarite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Gengar",
-    "fra": "MégaEctoplasma",
-    "deu": "Mega-Gengar",
-    "jap": "メガゲンガー",
-    "kor": "메가팬텀",
-    "chs": "超级耿鬼",
-    "cht": "超級耿鬼"
-  },
-  "genus": {
-    "eng": "Shadow Pokémon",
-    "esp": "Pokémon Sombra",
-    "fra": "Pokémon Ombre",
-    "deu": "Schatten-Pokémon",
-    "ita": "Pokémon Ombra",
-    "jap": "シャドーポケモン",
-    "kor": "그림자포켓몬",
-    "chs": "影子宝可梦",
-    "cht": "影子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Gengar",
-    "fra": "Ectoplasma",
-    "deu": "Gengar",
-    "jap": "ゲンガー",
-    "kor": "팬텀",
-    "chs": "耿鬼",
-    "cht": "耿鬼"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as"]
+  "transferOnlyIn": ["oras-or", "oras-as"],
+  "championsId": "0094001"
 }

@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "monsoon" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "monsoon"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Monsoon Pattern)",
-    "fra": "Prismillon (Motif Cyclone)",
-    "deu": "Vivillon (Monsunmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Monsoon Pattern",
-    "esp": "Motivo Monzón",
-    "fra": "Motif Cyclone",
-    "deu": "Monsunmuster",
-    "ita": "Motivo Pluviale",
-    "jap": "スコールのもよう",
-    "kor": "스콜의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666013"
 }

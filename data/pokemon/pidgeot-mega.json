@@ -65,23 +65,45 @@
       "from": ["pidgeot"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "pidgeotite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "pidgeotite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["pidgeot"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "pidgeotite", "role": "held" },
+      "item": {
+        "id": "pidgeotite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -89,50 +111,19 @@
       "from": ["pidgeot"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "pidgeotite", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "pidgeotite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Pidgeot",
-    "fra": "MégaRoucarnage",
-    "deu": "Mega-Tauboss",
-    "jap": "メガピジョット",
-    "kor": "메가피죤투",
-    "chs": "超级大比鸟",
-    "cht": "超級大比鳥"
-  },
-  "genus": {
-    "eng": "Bird Pokémon",
-    "esp": "Pokémon Pájaro",
-    "fra": "Pokémon Oiseau",
-    "deu": "Vogel",
-    "ita": "Pokémon Uccello",
-    "jap": "とりポケモン",
-    "kor": "새포켓몬",
-    "chs": "鸟宝可梦",
-    "cht": "鳥寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Pidgeot",
-    "fra": "Roucarnage",
-    "deu": "Tauboss",
-    "jap": "ピジョット",
-    "kor": "피죤투",
-    "chs": "大比鸟",
-    "cht": "大比鳥"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0018001"
 }

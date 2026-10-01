@@ -63,30 +63,13 @@
     {
       "from": ["poipole"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "dragonpulse" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "dragonpulse"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Naganadel",
-    "fra": "Mandrillon",
-    "deu": "Agoyon",
-    "jap": "アーゴヨン",
-    "kor": "아고용",
-    "chs": "四颚针龙",
-    "cht": "四顎針龍"
-  },
-  "genus": {
-    "eng": "Poison Pin Pokémon",
-    "esp": "Pokémon Pin Veneno",
-    "fra": "Pokémon Vénépic",
-    "deu": "Giftdorn-Pokémon",
-    "ita": "Pokémon Velenago",
-    "jap": "どくばりポケモン",
-    "kor": "독침포켓몬",
-    "chs": "毒针宝可梦",
-    "cht": "毒針寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "home"]
 }

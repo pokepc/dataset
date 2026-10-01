@@ -66,37 +66,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Cinderace (Gigantamax Form)",
-    "fra": "Pyrobut (Forme Gigamax)",
-    "deu": "Liberlo (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Striker Pokémon",
-    "esp": "Pokémon Delantero",
-    "fra": "Pokémon Buteur",
-    "deu": "Torschützen-Pokémon",
-    "ita": "Pokémon Cannoniere",
-    "jap": "ストライカーポケモン",
-    "kor": "스트라이커포켓몬",
-    "chs": "前锋宝可梦",
-    "cht": "前鋒寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Cinderace",
-    "fra": "Pyrobut",
-    "deu": "Liberlo",
-    "jap": "エースバーン",
-    "kor": "에이스번",
-    "chs": "闪焰王牌",
-    "cht": "閃焰王牌"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

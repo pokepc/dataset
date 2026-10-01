@@ -64,58 +64,33 @@
       "from": ["raichu", "raichu-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "raichunitex", "role": "held" },
+      "item": {
+        "id": "raichunitex",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Raichu X",
-    "fra": "MégaRaichu X",
-    "deu": "Mega-Raichu X",
-    "jap": "メガライチュウX",
-    "kor": "메가라이츄X",
-    "chs": "超级雷丘X",
-    "cht": "超級雷丘X"
-  },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus-Pokémon",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Raichu",
-    "fra": "Raichu",
-    "deu": "Raichu",
-    "jap": "ライチュウ",
-    "kor": "라이츄",
-    "chs": "雷丘",
-    "cht": "雷丘"
-  },
-  "formNames": {
-    "eng": "Mega Form X",
-    "esp": "Forma Mega X",
-    "fra": "Méga-Forme X",
-    "deu": "Mega-Form X",
-    "ita": "Forma Mega X",
-    "jap": "メガX",
-    "kor": "메가X",
-    "chs": "超级X",
-    "cht": "超級X"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0026002"
 }

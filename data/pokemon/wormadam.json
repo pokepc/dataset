@@ -87,7 +87,6 @@
   "femaleRate": 100,
   "baseForms": [],
   "forms": ["wormadam-sandy", "wormadam-trash"],
-  "formsDesc": "Forms have different stats and movepools.  During evolution, Burmy's current cloak becomes Wormadam's form, and can no longer be changed.",
   "refs": {
     "pkApiId": "413",
     "pkApiFormId": "413",
@@ -103,31 +102,14 @@
       "from": ["burmy"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Wormadam",
-    "fra": "Cheniselle",
-    "deu": "Burmadame",
-    "jap": "ミノマダム",
-    "kor": "도롱마담",
-    "chs": "结草贵妇",
-    "cht": "結草貴婦"
-  },
-  "genus": {
-    "eng": "Bagworm Pokémon",
-    "esp": "Pokémon Larva",
-    "fra": "Pokémon Ver Caché",
-    "deu": "Beutelwurm",
-    "ita": "Pokémon Larva",
-    "jap": "みのむしポケモン",
-    "kor": "도롱이벌레포켓몬",
-    "chs": "蓑衣虫宝可梦",
-    "cht": "蓑衣蟲寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "bw-b",

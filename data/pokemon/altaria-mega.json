@@ -65,66 +65,49 @@
       "from": ["altaria"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "altarianite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "altarianite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["altaria"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "altarianite", "role": "held" },
+      "item": {
+        "id": "altarianite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Altaria",
-    "fra": "MégaAltaria",
-    "deu": "Mega-Altaria",
-    "jap": "メガチルタリス",
-    "kor": "메가파비코리",
-    "chs": "超级七夕青鸟",
-    "cht": "超級七夕青鳥"
-  },
-  "genus": {
-    "eng": "Humming Pokémon",
-    "esp": "Pokémon Cantor",
-    "fra": "Pokémon Virevolteur",
-    "deu": "Summsel-Pokémon",
-    "ita": "Pokémon Canterino",
-    "jap": "ハミングポケモン",
-    "kor": "허밍포켓몬",
-    "chs": "哼唱宝可梦",
-    "cht": "哼唱寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Altaria",
-    "fra": "Altaria",
-    "deu": "Altaria",
-    "jap": "チルタリス",
-    "kor": "파비코리",
-    "chs": "七夕青鸟",
-    "cht": "七夕青鳥"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0334001"
 }

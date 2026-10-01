@@ -67,41 +67,16 @@
       "games": ["la"],
       "trigger": "level_up",
       "minLevel": 36,
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "in"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Samurott (Hisuian Form)",
-    "fra": "Clamiral (Forme de Hisui)",
-    "deu": "Admurai (Hisui-Form)",
-    "jap": "ダイケンキ (ヒスイのすがた)"
-  },
-  "genus": {
-    "eng": "Formidable Pokémon",
-    "esp": "Pokémon Majestuoso",
-    "fra": "Pokémon Dignitaire",
-    "deu": "Würde",
-    "ita": "Pokémon Dignità",
-    "jap": "かんろくポケモン",
-    "kor": "관록포켓몬",
-    "chs": "威严宝可梦",
-    "cht": "威嚴寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Samurott",
-    "fra": "Clamiral",
-    "deu": "Admurai",
-    "jap": "ダイケンキ",
-    "kor": "대검귀",
-    "chs": "大剑鬼",
-    "cht": "大劍鬼"
-  },
-  "formNames": {
-    "eng": "Hisuian Form",
-    "fra": "Forme de Hisui",
-    "deu": "Hisui-Form",
-    "jap": "ヒスイのすがた"
-  },
-  "transferOnlyIn": ["home", "sv-s", "sv-v"]
+  "transferOnlyIn": ["home", "sv-s", "sv-v"],
+  "championsId": "0503001"
 }

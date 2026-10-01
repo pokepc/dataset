@@ -7,6 +7,7 @@ import {
   loadAllNatures,
   loadAllPokemon,
   loadAllRegions,
+  loadText,
 } from '../../src/lib/fs'
 import { pokemonSchema } from '../../src/lib/schemas'
 
@@ -116,13 +117,19 @@ describe('evolution method data', () => {
         ),
       ).size,
     ).toBe(63)
-    expect(
-      byId.get('overqwil')!.evoMethods!.find((method) => method.games?.includes('lza'))?.notes?.eng,
-    ).toContain('Exact counter semantics need verification')
+    const notes = loadText('pokemon', 'eng')
+    const overqwilLza = byId
+      .get('overqwil')!
+      .evoMethods!.findIndex((method) => method.games?.includes('lza'))
+    expect(notes.overqwil?.evoNotes?.[overqwilLza]).toContain(
+      'Exact counter semantics need verification',
+    )
     expect(
       byId
         .get('runerigus')!
-        .evoMethods!.every((method) => method.notes?.eng?.includes('Sources disagree')),
+        .evoMethods!.every((_, index) =>
+          notes.runerigus?.evoNotes?.[index]?.includes('Sources disagree'),
+        ),
     ).toBe(true)
   })
 })

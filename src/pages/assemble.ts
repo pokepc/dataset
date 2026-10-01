@@ -15,7 +15,7 @@ export function assemblePages(
   for (const version of versions) {
     const artifact = artifacts.get(version.sha)
     if (!artifact) throw new Error(`Missing build for ${version.ref} (${version.sha}).`)
-    for (const file of ['index.html', 'openapi.json', 'data', 'data-next']) {
+    for (const file of ['index.html', 'openapi.json', 'data']) {
       if (!fs.existsSync(path.join(artifact, file)))
         throw new Error(`Missing ${file} in ${version.ref} build.`)
     }

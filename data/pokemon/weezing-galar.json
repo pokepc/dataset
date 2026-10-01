@@ -68,50 +68,14 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "level_up",
       "minLevel": 35,
-      "conditions": [{ "key": "region", "region": "galar", "relation": "in" }]
+      "conditions": [
+        {
+          "key": "region",
+          "region": "galar",
+          "relation": "in"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Weezing (Galarian Form)",
-    "esp": "Weezing (Forma de Galar)",
-    "fra": "Smogogo (Forme de Galar)",
-    "deu": "Smogmog (Galar-Form)",
-    "ita": "Weezing (Forma di Galar)",
-    "jap": "マタドガス (ガラルのすがた)",
-    "kor": "또도가스 (가라르의 모습)",
-    "chs": "双弹瓦斯 (伽勒尔的样子)",
-    "cht": "雙彈瓦斯 (伽勒爾的樣子)"
-  },
-  "genus": {
-    "eng": "Poison Gas Pokémon",
-    "esp": "Pokémon Gas Venenoso",
-    "fra": "Pokémon Gaz Mortel",
-    "deu": "Giftwolken-Pokémon",
-    "ita": "Pokémon Velenuvola",
-    "jap": "どくガスポケモン",
-    "kor": "독가스포켓몬",
-    "chs": "毒气宝可梦",
-    "cht": "毒氣寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Weezing",
-    "fra": "Smogogo",
-    "deu": "Smogmog",
-    "jap": "マタドガス",
-    "kor": "또도가스",
-    "chs": "双弹瓦斯",
-    "cht": "雙彈瓦斯"
-  },
-  "formNames": {
-    "eng": "Galarian Form",
-    "esp": "Forma de Galar",
-    "fra": "Forme de Galar",
-    "deu": "Galar-Form",
-    "ita": "Forma di Galar",
-    "jap": "ガラルのすがた",
-    "kor": "가라르의 모습",
-    "chs": "伽勒尔的样子",
-    "cht": "伽勒爾的樣子"
-  },
   "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

@@ -75,31 +75,59 @@
       "games": ["xy-x", "xy-y"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "friseur_furfrou" },
-        { "key": "interaction", "interaction": "furfrou_groom" }
+        {
+          "key": "location",
+          "location": "friseur_furfrou"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_groom"
+        }
       ],
-      "notes": { "eng": "This trim requires at least 50 Lumiose style points." },
       "revert": [
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
-          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+          "conditions": [
+            {
+              "key": "elapsed_time",
+              "amount": 5,
+              "unit": "days"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "pc"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "bank"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "day_care"
+            }
+          ]
         }
       ]
     },
@@ -118,30 +146,59 @@
       "games": ["oras-or", "oras-as"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "slateport_pokemon_fan_club" },
-        { "key": "interaction", "interaction": "furfrou_groom" }
+        {
+          "key": "location",
+          "location": "slateport_pokemon_fan_club"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_groom"
+        }
       ],
       "revert": [
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
-          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+          "conditions": [
+            {
+              "key": "elapsed_time",
+              "amount": 5,
+              "unit": "days"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "pc"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "bank"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "day_care"
+            }
+          ]
         }
       ]
     },
@@ -160,30 +217,59 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "malie_city_salon" },
-        { "key": "interaction", "interaction": "furfrou_groom" }
+        {
+          "key": "location",
+          "location": "malie_city_salon"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_groom"
+        }
       ],
       "revert": [
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
-          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+          "conditions": [
+            {
+              "key": "elapsed_time",
+              "amount": 5,
+              "unit": "days"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "withdrawal",
+              "service": "pc"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "bank"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "nursery"
+            }
+          ]
         }
       ]
     },
@@ -202,30 +288,59 @@
       "games": ["usum-us", "usum-um"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "hauoli_city_salon" },
-        { "key": "interaction", "interaction": "furfrou_groom" }
+        {
+          "key": "location",
+          "location": "hauoli_city_salon"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_groom"
+        }
       ],
       "revert": [
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "elapsed_time", "amount": 5, "unit": "days" }],
-          "notes": { "eng": "The timer starts when Furfrou is groomed." }
+          "conditions": [
+            {
+              "key": "elapsed_time",
+              "amount": 5,
+              "unit": "days"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "withdrawal",
+              "service": "pc"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "bank"
+            }
+          ]
         },
         {
           "to": "furfrou",
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "nursery"
+            }
+          ]
         }
       ]
     },
@@ -244,49 +359,17 @@
       "games": ["lza"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "jaune_sector_6" },
-        { "key": "interaction", "interaction": "furfrou_groom" }
-      ],
-      "notes": { "eng": "Complete Becoming a Pro Furfrou Trimmer to unlock this trim." }
+        {
+          "key": "location",
+          "location": "jaune_sector_6"
+        },
+        {
+          "key": "interaction",
+          "interaction": "furfrou_groom"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Furfrou (Matron Trim)",
-    "esp": "Furfrou (Corte Dama)",
-    "fra": "Couafarel (Coupe Madame)",
-    "deu": "Coiffwaff (Damenschnitt)",
-    "ita": "Furfrou (Taglio Gentildonna)",
-    "jap": "トリミアン (マダムカット)",
-    "kor": "트리미앙 (마담컷)"
-  },
-  "genus": {
-    "eng": "Poodle Pokémon",
-    "esp": "Pokémon Caniche",
-    "fra": "Pokémon Caniche",
-    "deu": "Pudel",
-    "ita": "Pokémon Barboncino",
-    "jap": "プードルポケモン",
-    "kor": "푸들포켓몬",
-    "chs": "贵宾犬宝可梦",
-    "cht": "貴賓犬寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Furfrou",
-    "fra": "Couafarel",
-    "deu": "Coiffwaff",
-    "jap": "トリミアン",
-    "kor": "트리미앙",
-    "chs": "多丽米亚",
-    "cht": "多麗米亞"
-  },
-  "formNames": {
-    "eng": "Matron Trim",
-    "esp": "Corte Dama",
-    "fra": "Coupe Madame",
-    "deu": "Damenschnitt",
-    "ita": "Taglio Gentildonna",
-    "jap": "マダムカット",
-    "kor": "마담컷"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0676005"
 }

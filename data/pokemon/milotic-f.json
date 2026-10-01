@@ -129,54 +129,31 @@
       "from": ["feebas"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "beauty", "minValue": 170 },
-        { "key": "gender", "gender": "female" }
+        {
+          "key": "beauty",
+          "minValue": 170
+        },
+        {
+          "key": "gender",
+          "gender": "female"
+        }
       ]
     },
     {
       "from": ["feebas"],
       "trigger": "trade",
-      "item": { "id": "prismscale", "role": "held" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "prismscale",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Milotic (Female)",
-    "fra": "Milobellus (Female)",
-    "deu": "Milotic (Female)"
-  },
-  "genus": {
-    "eng": "Tender Pokémon",
-    "esp": "Pokémon Tierno",
-    "fra": "Pokémon Tendre",
-    "deu": "Zartheits-Pokémon",
-    "ita": "Pokémon Tenerezza",
-    "jap": "いつくしみポケモン",
-    "kor": "사랑포켓몬",
-    "chs": "慈爱宝可梦",
-    "cht": "慈愛寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Milotic",
-    "fra": "Milobellus",
-    "deu": "Milotic",
-    "jap": "ミロカロス",
-    "kor": "밀로틱",
-    "chs": "美纳斯",
-    "cht": "美納斯"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -190,5 +167,6 @@
     "xy-y",
     "bank",
     "home"
-  ]
+  ],
+  "championsId": "0350000"
 }

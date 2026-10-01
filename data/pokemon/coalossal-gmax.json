@@ -68,41 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Coalossal (Gigantamax Form)",
-    "fra": "Monthracite (Forme Gigamax)",
-    "deu": "Montecarbo (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Coal Pokémon",
-    "esp": "Pokémon Carbón",
-    "fra": "Pokémon Charbon",
-    "deu": "Kohle-Pokémon",
-    "ita": "Pokémon Carbone",
-    "jap": "せきたんポケモン",
-    "kor": "석탄포켓몬",
-    "chs": "煤炭宝可梦",
-    "cht": "煤炭寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Coalossal",
-    "fra": "Monthracite",
-    "deu": "Montecarbo",
-    "jap": "セキタンザン",
-    "kor": "석탄산",
-    "chs": "巨炭山",
-    "cht": "巨炭山"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

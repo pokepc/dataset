@@ -111,30 +111,13 @@
     {
       "from": ["yanma"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "ancientpower" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "ancientpower"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Yanmega",
-    "fra": "Yanmega",
-    "deu": "Yanmega",
-    "jap": "メガヤンマ",
-    "kor": "메가자리",
-    "chs": "远古巨蜓",
-    "cht": "遠古巨蜓"
-  },
-  "genus": {
-    "eng": "Ogre Darner Pokémon",
-    "esp": "Pokémon Libélula",
-    "fra": "Pokémon Libellogre",
-    "deu": "Agrion",
-    "ita": "Pokémon Libellorco",
-    "jap": "オニトンボポケモン",
-    "kor": "깨비잠자리포켓몬",
-    "chs": "勾蜓宝可梦",
-    "cht": "勾蜓寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["ranch", "bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
 }

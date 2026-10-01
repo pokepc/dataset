@@ -114,18 +114,29 @@
       "games": ["pt", "bdsp-bd", "bdsp-sp"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "team_galactic_eterna_building_rotom_room" },
-        { "key": "interaction", "interaction": "microwave_oven" }
-      ],
-      "notes": { "eng": "Access the appliance room using the Secret Key." }
+        {
+          "key": "location",
+          "location": "team_galactic_eterna_building_rotom_room"
+        },
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-mow", "rotom-wash", "rotom"],
       "games": ["hgss-hg", "hgss-ss"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "silph_co_rotom_room" },
-        { "key": "interaction", "interaction": "microwave_oven" }
+        {
+          "key": "location",
+          "location": "silph_co_rotom_room"
+        },
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
       ]
     },
     {
@@ -133,8 +144,14 @@
       "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "shopping_mall_nine_basement" },
-        { "key": "interaction", "interaction": "microwave_oven" }
+        {
+          "key": "location",
+          "location": "shopping_mall_nine_basement"
+        },
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
       ]
     },
     {
@@ -142,8 +159,14 @@
       "games": ["xy-x", "xy-y"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "sycamore_pokemon_lab" },
-        { "key": "interaction", "interaction": "microwave_oven" }
+        {
+          "key": "location",
+          "location": "sycamore_pokemon_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
       ]
     },
     {
@@ -151,8 +174,14 @@
       "games": ["oras-or", "oras-as"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "professor_birchs_lab" },
-        { "key": "interaction", "interaction": "microwave_oven" }
+        {
+          "key": "location",
+          "location": "professor_birchs_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
       ]
     },
     {
@@ -160,8 +189,14 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "professor_kukuis_lab" },
-        { "key": "interaction", "interaction": "microwave_oven" }
+        {
+          "key": "location",
+          "location": "professor_kukuis_lab"
+        },
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
       ]
     },
     {
@@ -169,81 +204,65 @@
       "games": ["la"],
       "trigger": "interact",
       "conditions": [
-        { "key": "location", "location": "jubilife_village_player_quarters" },
-        { "key": "interaction", "interaction": "microwave_oven" }
-      ],
-      "notes": { "eng": "Purchase the corresponding appliance from Ginter first." }
+        {
+          "key": "location",
+          "location": "jubilife_village_player_quarters"
+        },
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-mow", "rotom-wash", "rotom"],
       "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
       "trigger": "use_item",
-      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
-      "conditions": [{ "key": "interaction", "interaction": "microwave_oven" }]
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-mow", "rotom-wash", "rotom"],
       "games": ["bdsp-bd", "bdsp-sp"],
       "trigger": "use_item",
-      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
-      "conditions": [{ "key": "interaction", "interaction": "microwave_oven" }],
-      "notes": {
-        "eng": "An appliance form must first be used in Rotom’s Room to unlock that choice in the catalog."
-      }
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
+      ]
     },
     {
       "from": ["rotom-fan", "rotom-frost", "rotom-mow", "rotom-wash", "rotom"],
       "games": ["lza"],
       "trigger": "use_item",
-      "item": { "id": "rotomcatalog", "role": "used", "consumed": false },
-      "conditions": [{ "key": "interaction", "interaction": "microwave_oven" }],
-      "notes": {
-        "eng": "Obtain the Rotom Catalog in Mega Dimension side mission 170, Rotom Showcase!"
-      }
+      "item": {
+        "id": "rotomcatalog",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "interaction",
+          "interaction": "microwave_oven"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Heat Rotom",
-    "esp": "Rotom Calor",
-    "fra": "Motisma Chaleur",
-    "deu": "Hitze-Rotom",
-    "ita": "Rotom Calore",
-    "jap": "ヒートロトム",
-    "kor": "히트로토무",
-    "chs": "加热洛托姆",
-    "cht": "加熱洛托姆"
-  },
-  "genus": {
-    "eng": "Plasma Pokémon",
-    "esp": "Pokémon Plasma",
-    "fra": "Pokémon Plasma",
-    "deu": "Plasma-Pokémon",
-    "ita": "Pokémon Plasma",
-    "jap": "プラズマポケモン",
-    "kor": "플라스마포켓몬",
-    "chs": "等离子宝可梦",
-    "cht": "等離子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Rotom",
-    "fra": "Motisma",
-    "deu": "Rotom",
-    "jap": "ロトム",
-    "kor": "로토무",
-    "chs": "洛托姆",
-    "cht": "洛托姆"
-  },
-  "formNames": {
-    "eng": "Heat Rotom",
-    "esp": "Rotom Calor",
-    "fra": "Motisma Chaleur",
-    "deu": "Hitze-Rotom",
-    "ita": "Rotom Calore",
-    "jap": "ヒートロトム",
-    "kor": "히트로토무",
-    "chs": "加热洛托姆",
-    "cht": "加熱洛托姆"
-  },
   "transferOnlyIn": [
     "ranch",
     "hgss-hg",
@@ -254,5 +273,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0479001"
 }

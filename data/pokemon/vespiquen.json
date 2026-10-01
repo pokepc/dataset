@@ -113,31 +113,14 @@
       "from": ["combee"],
       "trigger": "level_up",
       "minLevel": 21,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vespiquen",
-    "fra": "Apireine",
-    "deu": "Honweisel",
-    "jap": "ビークイン",
-    "kor": "비퀸",
-    "chs": "蜂女王",
-    "cht": "蜂女王"
-  },
-  "genus": {
-    "eng": "Beehive Pokémon",
-    "esp": "Pokémon Colmena",
-    "fra": "Pokémon Ruche",
-    "deu": "Bienenstock-Pokémon",
-    "ita": "Pokémon Alveare",
-    "jap": "はちのすポケモン",
-    "kor": "벌집포켓몬",
-    "chs": "蜂巢宝可梦",
-    "cht": "蜂巢寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "bank",

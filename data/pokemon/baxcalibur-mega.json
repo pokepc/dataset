@@ -65,60 +65,33 @@
       "from": ["baxcalibur"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "baxcalibrite", "role": "held" },
+      "item": {
+        "id": "baxcalibrite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Baxcalibur",
-    "esp": "Mega Baxcalibur",
-    "esla": "Mega Baxcalibur",
-    "fra": "MégaGlaivodo",
-    "deu": "Mega-Espinodon",
-    "ita": "Mega Baxcalibur",
-    "jap": "メガセグレイブ",
-    "kor": "메가드닐레이브",
-    "chs": "超级戟脊龙",
-    "cht": "超級戟脊龍"
-  },
-  "genus": {
-    "eng": "Ice Dragon Pokémon",
-    "fra": "Dragon Glace",
-    "deu": "Eisdrache",
-    "jap": "ひょうりゅうポケモン",
-    "kor": "빙룡포켓몬",
-    "chs": "冰龙宝可梦",
-    "cht": "冰龍寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Baxcalibur",
-    "fra": "Glaivodo",
-    "deu": "Espinodon",
-    "jap": "セグレイブ",
-    "kor": "드닐레이브",
-    "chs": "戟脊龙",
-    "cht": "戟脊龍"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0998001"
 }

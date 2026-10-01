@@ -64,62 +64,33 @@
       "from": ["garchomp", "garchomp-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "garchompitez", "role": "held" },
+      "item": {
+        "id": "garchompitez",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Garchomp Z",
-    "esp": "Mega Garchomp Z",
-    "esla": "Mega Garchomp Z",
-    "fra": "MégaCarchacrok Z",
-    "deu": "Mega-Knakrack Z",
-    "ita": "Mega Garchomp Z",
-    "jap": "メガガブリアスZ",
-    "kor": "메가한카리아스Z",
-    "chs": "超级烈咬陆鲨Z",
-    "cht": "超級烈咬陸鯊Z"
-  },
-  "genus": {
-    "eng": "Mach Pokémon",
-    "esp": "Pokémon Mach",
-    "fra": "Pokémon Supersonic",
-    "deu": "Rasanz-Pokémon",
-    "ita": "Pokémon Mach",
-    "jap": "マッハポケモン",
-    "kor": "마하포켓몬",
-    "chs": "音速宝可梦",
-    "cht": "音速寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Garchomp",
-    "fra": "Carchacrok",
-    "deu": "Knakrack",
-    "jap": "ガブリアス",
-    "kor": "한카리아스",
-    "chs": "烈咬陆鲨",
-    "cht": "烈咬陸鯊"
-  },
-  "formNames": {
-    "eng": "Mega Form Z",
-    "esp": "Forma Mega Z",
-    "esla": "Forma Mega Z",
-    "fra": "Méga-Forme Z",
-    "deu": "Mega-Form Z",
-    "ita": "Forma Mega Z",
-    "jap": "メガZ",
-    "kor": "메가Z",
-    "chs": "超级Z",
-    "cht": "超級Z"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0445002"
 }

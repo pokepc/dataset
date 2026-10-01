@@ -128,49 +128,20 @@
       "from": ["budew"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "friendship" },
-        { "key": "time_of_day", "time": "day" },
-        { "key": "gender", "gender": "female" }
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        },
+        {
+          "key": "gender",
+          "gender": "female"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Roselia (Female)",
-    "fra": "Rosélia (Female)",
-    "deu": "Roselia (Female)"
-  },
-  "genus": {
-    "eng": "Thorn Pokémon",
-    "esp": "Pokémon Espina",
-    "fra": "Pokémon Épine",
-    "deu": "Dorn-Pokémon",
-    "ita": "Pokémon Spina",
-    "jap": "いばらポケモン",
-    "kor": "가시포켓몬",
-    "chs": "荆棘宝可梦",
-    "cht": "荊棘寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Roselia",
-    "fra": "Rosélia",
-    "deu": "Roselia",
-    "jap": "ロゼリア",
-    "kor": "로젤리아",
-    "chs": "毒蔷薇",
-    "cht": "毒薔薇"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",

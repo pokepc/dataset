@@ -113,45 +113,13 @@
       "from": ["finneon"],
       "trigger": "level_up",
       "minLevel": 31,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Lumineon (Female)",
-    "fra": "Luminéon (Female)",
-    "deu": "Lumineon (Female)"
-  },
-  "genus": {
-    "eng": "Neon Pokémon",
-    "esp": "Pokémon Neón",
-    "fra": "Pokémon Néon",
-    "deu": "Neon",
-    "ita": "Pokémon Neon",
-    "jap": "ネオンポケモン",
-    "kor": "네온포켓몬",
-    "chs": "霓虹宝可梦",
-    "cht": "霓虹寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Lumineon",
-    "fra": "Luminéon",
-    "deu": "Lumineon",
-    "jap": "ネオラント",
-    "kor": "네오라이트",
-    "chs": "霓虹鱼",
-    "cht": "霓虹魚"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "xy-x", "xy-y", "bank", "home"]
 }

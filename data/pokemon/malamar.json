@@ -94,33 +94,13 @@
       "from": ["inkay"],
       "trigger": "level_up",
       "minLevel": 30,
-      "conditions": [{ "key": "device_upside_down" }],
-      "notes": {
-        "eng": "On Switch, use handheld mode with attached Joy-Con and disconnect other controllers."
-      }
+      "conditions": [
+        {
+          "key": "device_upside_down"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Malamar",
-    "fra": "Sepiatroce",
-    "deu": "Calamanero",
-    "jap": "カラマネロ",
-    "kor": "칼라마네로",
-    "chs": "乌贼王",
-    "cht": "烏賊王"
-  },
-  "genus": {
-    "eng": "Overturning Pokémon",
-    "esp": "Pokémon Revolución",
-    "fra": "Pokémon Révolution",
-    "deu": "Inversions-Pokémon",
-    "ita": "Pokémon Giravolta",
-    "jap": "ぎゃくてんポケモン",
-    "kor": "역전포켓몬",
-    "chs": "倒转宝可梦",
-    "cht": "倒轉寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0687000"
 }

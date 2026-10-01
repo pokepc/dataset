@@ -65,62 +65,33 @@
       "from": ["golisopod"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "golisopite", "role": "held" },
+      "item": {
+        "id": "golisopite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Golisopod",
-    "esp": "Mega Golisopod",
-    "esla": "Mega Golisopod",
-    "fra": "MégaSarmuraï",
-    "deu": "Mega-Tectass",
-    "ita": "Mega Golisopod",
-    "jap": "メガグソクムシャ",
-    "kor": "메가갑주무사",
-    "chs": "超级具甲武者",
-    "cht": "超級具甲武者"
-  },
-  "genus": {
-    "eng": "Hard Scale Pokémon",
-    "esp": "Pokémon Blindaje",
-    "fra": "Pokémon Blindé",
-    "deu": "Rüstungs-Pokémon",
-    "ita": "Pokémon Blindato",
-    "jap": "そうこうポケモン",
-    "kor": "장갑포켓몬",
-    "chs": "装甲宝可梦",
-    "cht": "裝甲寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Golisopod",
-    "fra": "Sarmuraï",
-    "deu": "Tectass",
-    "jap": "グソクムシャ",
-    "kor": "갑주무사",
-    "chs": "具甲武者",
-    "cht": "具甲武者"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0768001"
 }

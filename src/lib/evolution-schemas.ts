@@ -15,7 +15,6 @@ import {
   evoTriggers,
   evoWalkModes,
   evoWeather,
-  languageAlpha3Codes,
   typeIds,
 } from './enums.ts'
 
@@ -29,9 +28,6 @@ const ids = z
   .min(1)
   .refine((values) => new Set(values).size === values.length, 'Duplicate IDs')
 const count = z.number().int().positive()
-const localizedText = z
-  .partialRecord(z.enum(languageAlpha3Codes), z.string().min(1))
-  .refine((text) => Object.values(text).some(Boolean), 'Provide at least one translation')
 const conditionKey = z.enum(evoConditionKeys).enum
 
 /** Stable translation keys with validated parameters, not an executable expression language. */
@@ -123,7 +119,7 @@ export const evolutionMethodSchema = z
     additionalResult: z.boolean().optional(),
     // PLA exposes an Evolve action instead of automatically evolving when requirements are met.
     activation: z.enum(evoActivations).optional(),
-    notes: localizedText.optional(),
+    // Notes live in the Pokémon's locale files (`evoNotes`, keyed by method index).
   })
   .superRefine((method, ctx) => {
     if (method.trigger === 'use_item' && method.item?.role !== 'used') {
@@ -140,13 +136,8 @@ export const evolutionMethodSchema = z
         message: 'Used items require the use_item trigger',
       })
     }
-    if (method.trigger === 'special' && method.conditions.length === 0 && !method.notes) {
-      ctx.addIssue({
-        code: 'custom',
-        path: ['conditions'],
-        message: 'Special methods require a condition or explanatory note',
-      })
-    }
+    // A special method without conditions needs an explanatory English note; the data-integrity
+    // tests check that across the record and its locale file.
     const keys = method.conditions.map((condition) => condition.key)
     if (new Set(keys).size !== keys.length) {
       ctx.addIssue({

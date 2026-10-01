@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllAbilities, loadAllGames, loadAllPokemon } from '../../src/lib/fs'
+import { loadAllAbilities, loadAllGames, loadAllPokemon, loadText } from '../../src/lib/fs'
+import { localeCodes } from '../../src/lib/languages'
 import { pokemonSchema } from '../../src/lib/schemas'
 import { requiresHeldItemForForm } from '../../src/upstream-adapters/bulbapedia/form-availability-inheritance'
 import { validate } from '../_utils'
@@ -66,14 +67,10 @@ describe('Validate pokemon/*.json data', () => {
     },
   )
 
-  it.each(recordList.map((record) => [record.id, record]))(
-    'should have names.eng in pokemon %s',
-    (recordId, record) => {
-      if (!record.names?.eng) {
-        console.warn(`Pokemon "${recordId}" has no names.eng or is empty`)
-      }
-      expect(record.names?.eng).toBeDefined()
-      expect(record.names?.eng).not.toBe('')
+  it.each(recordList.map((record) => [record.id]))(
+    'should have an English name for %s',
+    (recordId) => {
+      expect(loadText('pokemon', 'eng')[recordId]?.name).toBeTruthy()
     },
   )
 })
@@ -84,13 +81,14 @@ describe('Validate pokemon/*.json data references', () => {
   const pokemonMap = new Map(recordList.map((record) => [record.id, record]))
   const abilityMap = new Map(loadAllAbilities().map((ability) => [ability.id, ability]))
   const gameMap = new Map(loadAllGames().map((game) => [game.id, game]))
+  const englishText = loadText('pokemon', 'eng')
 
   it('should use the canonical Bulbapedia species title for every Pokémon and form', () => {
     const speciesMap = new Map(
       recordList.filter((record) => record.isDefault).map((record) => [record.dexNum, record]),
     )
     for (const record of recordList) {
-      const name = speciesMap.get(record.dexNum)?.names.eng
+      const name = englishText[speciesMap.get(record.dexNum)?.id ?? '']?.name
       if (!name) throw new Error(`Missing English species name for ${record.id}`)
       // Cached Bulbapedia titles match English species names, with straight apostrophes.
       // Some default forms include a parenthesized form name that is not part of the title.
@@ -100,11 +98,12 @@ describe('Validate pokemon/*.json data references', () => {
   })
 
   it('should include the form name in the full name of every named form', () => {
-    for (const record of recordList.filter((record) => record.isForm)) {
-      for (const lang of Object.keys(record.names) as Array<keyof typeof record.names>) {
-        const speciesName = record.speciesNames[lang]
-        if (!record.formNames[lang] || !speciesName) continue
-        expect(record.names[lang], `${record.id}: ${lang}`).not.toBe(speciesName)
+    for (const locale of localeCodes) {
+      const text = loadText('pokemon', locale)
+      for (const record of recordList.filter((record) => record.isForm)) {
+        const { name, speciesName, formName } = text[record.id] ?? {}
+        if (!formName || !speciesName) continue
+        expect(name, `${record.id}: ${locale}`).not.toBe(speciesName)
       }
     }
   })

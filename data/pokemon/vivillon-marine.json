@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "marine" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "marine"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Marine Pattern)",
-    "fra": "Prismillon (Motif Rivage)",
-    "deu": "Vivillon (Aquamarinmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Marine Pattern",
-    "esp": "Motivo Marino",
-    "fra": "Motif Rivage",
-    "deu": "Aquamarinmuster",
-    "ita": "Motivo Marino",
-    "jap": "マリンのもよう",
-    "kor": "마린의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -116,5 +101,6 @@
     "sv-s",
     "sv-v",
     "champions"
-  ]
+  ],
+  "championsId": "0666008"
 }

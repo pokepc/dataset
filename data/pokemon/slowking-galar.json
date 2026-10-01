@@ -66,51 +66,13 @@
     {
       "from": ["slowpoke-galar"],
       "trigger": "use_item",
-      "item": { "id": "galaricawreath", "role": "used" },
+      "item": {
+        "id": "galaricawreath",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Slowking (Galarian Form)",
-    "esp": "Slowking (Forma de Galar)",
-    "fra": "Roigada (Forme de Galar)",
-    "deu": "Laschoking (Galar-Form)",
-    "ita": "Slowking (Forma di Galar)",
-    "jap": "ヤドキング (ガラルのすがた)",
-    "kor": "야도킹 (가라르의 모습)",
-    "chs": "呆呆王 (伽勒尔的样子)",
-    "cht": "呆呆王 (伽勒爾的樣子)"
-  },
-  "genus": {
-    "eng": "Royal Pokémon",
-    "esp": "Pokémon Regio",
-    "fra": "Pokémon Royal",
-    "deu": "Monarchen-Pokémon",
-    "ita": "Pokémon Reale",
-    "jap": "おうじゃポケモン",
-    "kor": "임금포켓몬",
-    "chs": "王者宝可梦",
-    "cht": "王者寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Slowking",
-    "fra": "Roigada",
-    "deu": "Laschoking",
-    "jap": "ヤドキング",
-    "kor": "야도킹",
-    "chs": "呆呆王",
-    "cht": "呆呆王"
-  },
-  "formNames": {
-    "eng": "Galarian Form",
-    "esp": "Forma de Galar",
-    "fra": "Forme de Galar",
-    "deu": "Galar-Form",
-    "ita": "Forma di Galar",
-    "jap": "ガラルのすがた",
-    "kor": "가라르의 모습",
-    "chs": "伽勒尔的样子",
-    "cht": "伽勒爾的樣子"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0199001"
 }

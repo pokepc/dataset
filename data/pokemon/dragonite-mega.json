@@ -65,58 +65,33 @@
       "from": ["dragonite"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "dragoninite", "role": "held" },
+      "item": {
+        "id": "dragoninite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Dragonite",
-    "fra": "MégaDracolosse",
-    "deu": "Mega-Dragoran",
-    "jap": "メガカイリュー",
-    "kor": "메가망나뇽",
-    "chs": "超级快龙",
-    "cht": "超級快龍"
-  },
-  "genus": {
-    "eng": "Dragon Pokémon",
-    "esp": "Pokémon Dragón",
-    "fra": "Pokémon Dragon",
-    "deu": "Drachen-Pokémon",
-    "ita": "Pokémon Drago",
-    "jap": "ドラゴンポケモン",
-    "kor": "드래곤포켓몬",
-    "chs": "龙宝可梦",
-    "cht": "龍寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Dragonite",
-    "fra": "Dracolosse",
-    "deu": "Dragoran",
-    "jap": "カイリュー",
-    "kor": "망나뇽",
-    "chs": "快龙",
-    "cht": "快龍"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0149001"
 }

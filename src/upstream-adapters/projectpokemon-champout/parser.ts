@@ -8,7 +8,7 @@ import {
   type MoveClass,
   type MoveTarget,
   type PokemonType,
-} from '../../lib-next/enums'
+} from '../../lib/enums'
 import type {
   AbilityRecord,
   BattleStateRecord,
@@ -1497,8 +1497,18 @@ function readPokemonMoveLearnRecords(datasetRoot: string): PokemonMoveLearnRecor
   )
 }
 
+/** English text of a base kind (`i18n/eng/<kind>.json`), keyed by id. */
+function readLocalEnglishText(localDataRoot: string, kind: string): Record<string, SourceRecord> {
+  const context = `data/i18n/eng/${kind}.json`
+  return requireRecord(
+    readJsonFile(join(localDataRoot, 'i18n', 'eng', `${kind}.json`)),
+    context,
+  ) as Record<string, SourceRecord>
+}
+
 function readLocalPokemonRecords(localDataRoot: string): LocalPokemonRecord[] {
   const index = readStringArrayFile(join(localDataRoot, 'indices/pokemon.json'))
+  const text = readLocalEnglishText(localDataRoot, 'pokemon')
 
   return index.map((id) => {
     const filePath = join(localDataRoot, 'pokemon', `${id}.json`)
@@ -1530,8 +1540,12 @@ function readLocalPokemonRecords(localDataRoot: string): LocalPokemonRecord[] {
       isFemaleForm: booleanField(record, 'isFemaleForm', context),
       isGmax: booleanField(record, 'isGmax', context),
       baseSpecies: optionalStringField(record, 'baseSpecies', context),
-      names: stringMapField(record, 'names', context),
-      formNames: stringMapField(record, 'formNames', context),
+      names: {
+        eng: optionalStringField(text[id] ?? {}, 'name', `data/i18n/eng/pokemon.json ${id}`),
+      },
+      formNames: {
+        eng: optionalStringField(text[id] ?? {}, 'formName', `data/i18n/eng/pokemon.json ${id}`),
+      },
     }
   })
 }
@@ -1540,12 +1554,14 @@ function readLocalNamedRecords(
   localDataRoot: string,
   fileName: 'moves' | 'abilities' | 'items',
 ): LocalNamedRecord[] {
+  const text = readLocalEnglishText(localDataRoot, fileName)
   return readJsonRecordArray(join(localDataRoot, `${fileName}.json`)).map((record, index) => {
     const context = `data/${fileName}.json[${index}]`
+    const id = stringField(record, 'id', context)
 
     return {
-      id: stringField(record, 'id', context),
-      name: stringField(record, 'name', context),
+      id,
+      name: stringField(text[id] ?? {}, 'name', `data/i18n/eng/${fileName}.json ${id}`),
       psName: optionalStringField(record, 'psName', context),
     }
   })
@@ -1804,26 +1820,4 @@ function booleanField(record: SourceRecord, field: string, context: string): boo
   }
 
   return value
-}
-
-function stringMapField(
-  record: SourceRecord,
-  field: string,
-  context: string,
-): Record<string, string | undefined> {
-  const value = record[field]
-
-  if (!isRecord(value)) {
-    throw new Error(`Expected string map field ${field} in ${context}`)
-  }
-
-  return Object.fromEntries(
-    Object.entries(value).map(([key, entry]) => {
-      if (typeof entry !== 'string') {
-        throw new Error(`Expected string value ${field}.${key} in ${context}`)
-      }
-
-      return [key, entry]
-    }),
-  )
 }

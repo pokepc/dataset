@@ -65,66 +65,48 @@
       "from": ["latios"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "latiosite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "latiosite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["latios"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "latiosite", "role": "held" },
+      "item": {
+        "id": "latiosite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Latios",
-    "fra": "MégaLatios",
-    "deu": "Mega-Latios",
-    "jap": "メガラティオス",
-    "kor": "메가라티오스",
-    "chs": "超级拉帝欧斯",
-    "cht": "超級拉帝歐斯"
-  },
-  "genus": {
-    "eng": "Eon Pokémon",
-    "esp": "Pokémon Eón",
-    "fra": "Pokémon Éon",
-    "deu": "Äon-Pokémon",
-    "ita": "Pokémon Eone",
-    "jap": "むげんポケモン",
-    "kor": "무한포켓몬",
-    "chs": "无限宝可梦",
-    "cht": "無限寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Latios",
-    "fra": "Latios",
-    "deu": "Latios",
-    "jap": "ラティオス",
-    "kor": "라티오스",
-    "chs": "拉帝欧斯",
-    "cht": "拉帝歐斯"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
   "transferOnlyIn": ["xy-x", "xy-y", "sm-s", "sm-m", "usum-um"]
 }

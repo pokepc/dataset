@@ -1,6 +1,8 @@
 // ----- Dataset UTILS --------------------------------------------
 
 import { arrayUnique, capitalizeFirstLetter } from '../utils/utils-internal'
+import type { LocaleCode } from './languages'
+import type { Game, Gender, Pokemon, PokemonText, TextFile } from './types'
 export { sortStringsInGivenOrder } from '../utils/utils-internal'
 
 export function formatDexNum(num: number | string, positions: number = 4): string {
@@ -25,7 +27,7 @@ export function dexNumToGen(nationalDexNum: number | string): number {
   return 9
 }
 
-export function randomPokemonList<T extends Pkds.PokemonBase>(
+export function randomPokemonList<T extends Pick<Pokemon, 'id' | 'nid' | 'isForm'>>(
   pokemonList: Array<T>,
   quantity = 16,
   withForms = true,
@@ -45,7 +47,7 @@ export function randomPokemonList<T extends Pkds.PokemonBase>(
     .filter(Boolean)
 }
 
-export function getPossiblePokemonGenders(meta: Pkds.Pokemon): Pkds.Gender[] {
+export function getPossiblePokemonGenders(meta: Pokemon): Gender[] {
   if (meta.hasGenderDifferences && meta.isFemaleForm) {
     return ['f']
   }
@@ -66,9 +68,9 @@ export function getPossiblePokemonGenders(meta: Pkds.Pokemon): Pkds.Gender[] {
 
 export function getPokemonGender(
   inputGender: string | null | undefined,
-  meta: Pkds.Pokemon,
+  meta: Pokemon,
   options?: { allowEmpty?: boolean },
-): Pkds.Gender {
+): Gender {
   const possibleGenders = getPossiblePokemonGenders(meta)
   if (possibleGenders.length === 1) {
     return possibleGenders[0]
@@ -96,100 +98,86 @@ export function getPokemonGender(
   return 'f'
 }
 
-// ----- Dataset Text and Translation UTILS --------------------------------------------
+// ----- Text and translation
 
-export function translatePokemonText(
-  pkm: Pkds.Pokemon,
-  lang3Char: Pkds.LanguageAlpha3,
-): Pkds.PokemonText {
-  const fallback = lang3Char === 'eng' ? undefined : translatePokemon(pkm, 'eng')
-  const pkmName = pkm.names[lang3Char] ?? fallback?.name ?? pkm.id
-
-  const texts: Pkds.PokemonText = {
-    lang: lang3Char,
-    genusText: pkm.genus[lang3Char] ?? fallback?.genusText,
-    name: pkmName,
-    speciesName: pkm.speciesNames[lang3Char] ?? pkmName ?? fallback?.speciesName ?? pkmName,
-    formName: pkm.formNames[lang3Char] ?? fallback?.formName,
-  }
-
-  return texts
+/** A Pokémon joined with its text in one locale, ready for display and search. */
+export type TranslatedPokemon = Pokemon & {
+  locale: LocaleCode
+  /** Full name; the id when the locale has no name for it. */
+  name: string
+  speciesName?: string
+  formName?: string
+  genus?: string
+  speciesGen: number
+  searchableText: string
 }
 
-export function translatePokemon(
-  pokemon: Pkds.Pokemon | Pkds.TranslatedPokemon,
-  lang: Pkds.LanguageAlpha3,
-  dexNumPositions?: number,
-): Pkds.TranslatedPokemon {
-  if (!('name' in pokemon)) {
-    return {
-      ...pokemon,
-      ...translatePokemonText(pokemon, lang),
-      speciesGen: dexNumToGen(pokemon.dexNum),
-      dexNum: formatDexNum(
-        pokemon.dexNum,
-        dexNumPositions ?? Math.max(3, String(pokemon.dexNum).length),
-      ),
-      searchableText: generatePokemonSearchableText(pokemon),
-    }
-  }
+export type PokemonNameInfo = {
+  displayName: string
+  displayFormName?: string
+  fullName: string
+  speciesName?: string
+  formName?: string
+  isNicknamed: boolean
+  locale: LocaleCode
+}
 
+export type TranslatePokemonOptions = {
+  /** Text in every locale that search should match (defaults to the given text). */
+  searchTexts?: Array<PokemonText | undefined>
+  dexNumPositions?: number
+}
+
+/**
+ * Joins a Pokémon with its text in one locale. Missing text is not filled from another locale;
+ * pass fallback text yourself when you want one.
+ */
+export function translatePokemon(
+  pokemon: Pokemon,
+  text: PokemonText | undefined,
+  locale: LocaleCode,
+  options: TranslatePokemonOptions = {},
+): TranslatedPokemon {
+  const name = text?.name ?? pokemon.id
   return {
     ...pokemon,
-    ...translatePokemonText(pokemon, lang),
+    locale,
+    name,
+    speciesName: text?.speciesName ?? name,
+    formName: text?.formName,
+    genus: text?.genus,
+    speciesGen: dexNumToGen(pokemon.dexNum),
+    dexNum: formatDexNum(
+      pokemon.dexNum,
+      options.dexNumPositions ?? Math.max(3, String(pokemon.dexNum).length),
+    ),
+    searchableText: generatePokemonSearchableText(pokemon, options.searchTexts ?? [text]),
   }
 }
 
+/** Translates a list with one locale file, e.g. `loadText('pokemon', 'eng')`. */
 export function translatePokemonList(
-  pokemonList: Array<Pkds.Pokemon | Pkds.TranslatedPokemon>,
-  lang: Pkds.LanguageAlpha3,
-): Array<Pkds.TranslatedPokemon> {
-  return pokemonList.map((pokemon) => translatePokemon(pokemon, lang))
-}
-
-export function translatePokemonById(
-  pokemonList: Array<Pkds.Pokemon | Pkds.TranslatedPokemon>,
-  lang: Pkds.LanguageAlpha3,
-): Record<string, Pkds.TranslatedPokemon> {
-  return Object.fromEntries(
-    pokemonList.map((pokemon) => [pokemon.id, translatePokemon(pokemon, lang)]),
+  pokemonList: Pokemon[],
+  textFile: TextFile<'pokemon'>,
+  locale: LocaleCode,
+  searchTextFiles: Array<TextFile<'pokemon'>> = [textFile],
+): TranslatedPokemon[] {
+  return pokemonList.map((pokemon) =>
+    translatePokemon(pokemon, textFile[pokemon.id], locale, {
+      searchTexts: searchTextFiles.map((file) => file[pokemon.id]),
+    }),
   )
 }
 
-export function translatePokemonByNid(
-  pokemonList: Array<Pkds.Pokemon | Pkds.TranslatedPokemon>,
-  lang: Pkds.LanguageAlpha3,
-): Record<string, Pkds.TranslatedPokemon> {
-  return Object.fromEntries(
-    pokemonList.map((pokemon) => [pokemon.nid, translatePokemon(pokemon, lang)]),
-  )
-}
-
-export function generatePokemonDescription(
-  pokemon: Pkds.TranslatedPokemon,
-  lang3Char: Pkds.LanguageAlpha3,
-) {
+export function generatePokemonDescription(pokemon: TranslatedPokemon) {
   const parts = []
   const features = []
-  const text = translatePokemonText(pokemon, lang3Char)
 
-  // Basic description
-  parts.push(`${text.genusText}`)
+  if (pokemon.genus) parts.push(pokemon.genus)
+  if (pokemon.isForm && pokemon.formName) parts.push(`Form: ${pokemon.formName}`)
+  if (pokemon.isMythical) features.push('Mythical')
+  if (pokemon.isLegendary) features.push('Legendary')
 
-  // Form information
-  if (pokemon.isForm) {
-    parts.push(`Form: ${pokemon.formName}`)
-  }
-
-  // Pokemon category
-  if (pokemon.isMythical) {
-    features.push('Mythical')
-  }
-  if (pokemon.isLegendary) {
-    features.push('Legendary')
-  }
-
-  // Type and generation information
   const types = [pokemon.type1]
   if (pokemon.type2) types.push(pokemon.type2)
   parts.push(`${types.map(capitalizeFirstLetter).join('/')} type`)
@@ -202,12 +190,16 @@ export function generatePokemonDescription(
   return parts.join('. ') + '.'
 }
 
-export function generatePokemonSearchableText(poke: Pkds.Pokemon) {
-  const pokeName = arrayUnique(Object.values(poke.names ?? {})).join(' ')
-  const pokeFormName = arrayUnique(Object.values(poke.formNames ?? {})).join(' ')
+/** Lowercase search text: names from the given locale texts plus ids, types and flags. */
+export function generatePokemonSearchableText(
+  poke: Pokemon,
+  texts: Array<PokemonText | undefined> = [],
+) {
+  const pokeName = arrayUnique(texts.map((text) => text?.name).filter(Boolean)).join(' ')
+  const pokeFormName = arrayUnique(texts.map((text) => text?.formName).filter(Boolean)).join(' ')
   const speciesGen = dexNumToGen(poke.dexNum)
 
-  const fullText = [
+  return [
     pokeName,
     pokeFormName,
     poke.dexNum,
@@ -236,11 +228,9 @@ export function generatePokemonSearchableText(poke: Pkds.Pokemon) {
     .filter(Boolean)
     .join(' ')
     .toLowerCase()
-
-  return fullText
 }
 
-export function getGameCategoryLabel(game: Pkds.Game): string {
+export function getGameCategoryLabel(game: Game): string {
   switch (game.series) {
     case 'main':
       return 'Main-series'
@@ -253,28 +243,16 @@ export function getGameCategoryLabel(game: Pkds.Game): string {
   }
 }
 
-export function generateGameDescription(game: Pkds.Game, gameCatText: string) {
+/** English summary of a game; `gameName` comes from the games locale file. */
+export function generateGameDescription(game: Game, gameName: string, gameCatText: string) {
   const platforms = game.platforms.map((platform: string) => platform.toUpperCase()).join(' / ')
-  const features = []
   const parts = []
   const genPart = game.gen > 0 ? ` from Generation ${game.gen} ` : ''
   const releaseText = game.isUnreleased ? 'that will be released for' : 'released for'
 
   parts.push(
-    `Pokémon ${game.name} is a ${gameCatText} ${game.type} ${genPart}${releaseText} ${platforms}`,
+    `Pokémon ${gameName} is a ${gameCatText} ${game.type} ${genPart}${releaseText} ${platforms}`,
   )
-
-  // if (game.gen > 0) {
-  //   parts.push(`It's a Generation ${game.gen} game`)
-  // }
-
-  if (game.features.gmax) features.push('Gigantamax')
-  if (game.features.tera) features.push('Terastallization')
-  if (game.features.alpha) features.push('Alpha Pokémon')
-
-  if (features.length > 0) {
-    // parts.push(`It features ${features.join(', ')}`)
-  }
 
   if (game.region && game.region !== 'unknown') {
     const capitalizedRegion = game.region.charAt(0).toUpperCase() + game.region.slice(1)
@@ -284,36 +262,22 @@ export function generateGameDescription(game: Pkds.Game, gameCatText: string) {
   return parts.join('. ') + '.'
 }
 
-export function resolvePokemonName(
-  meta: Pkds.TranslatedPokemon,
-  nickname?: string,
-  lang3Char?: Pkds.LanguageAlpha3,
-): Pkds.PokemonNameInfo {
-  const txt: Pkds.PokemonText = lang3Char
-    ? translatePokemonText(meta, lang3Char)
-    : {
-        lang: meta.lang,
-        name: meta.name,
-        speciesName: meta.speciesName,
-        formName: meta.formName,
-        genusText: meta.genusText,
-      }
-
-  const nameObj: Pkds.PokemonNameInfo = {
-    displayName: txt.speciesName ?? txt.name,
-    displayFormName: txt.formName,
-    fullName: txt.name,
-    speciesName: txt.speciesName ?? txt.name,
-    formName: txt.formName,
+export function resolvePokemonName(meta: TranslatedPokemon, nickname?: string): PokemonNameInfo {
+  const nameObj: PokemonNameInfo = {
+    displayName: meta.speciesName ?? meta.name,
+    displayFormName: meta.formName,
+    fullName: meta.name,
+    speciesName: meta.speciesName ?? meta.name,
+    formName: meta.formName,
     isNicknamed: !!nickname,
-    lang: txt.lang,
+    locale: meta.locale,
   }
 
   if (meta.isForm) {
     if (meta.isMega || meta.isPrimal || meta.isGmax) {
       nameObj.displayName = nameObj.fullName
-    } else if (txt.formName) {
-      nameObj.displayName = `${nameObj.speciesName} (${txt.formName})`
+    } else if (meta.formName) {
+      nameObj.displayName = `${nameObj.speciesName} (${meta.formName})`
     }
   }
   if (nickname) {

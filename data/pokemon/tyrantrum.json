@@ -80,30 +80,14 @@
       "from": ["tyrunt"],
       "trigger": "level_up",
       "minLevel": 39,
-      "conditions": [{ "key": "time_of_day", "time": "day" }]
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Tyrantrum",
-    "fra": "Rexillius",
-    "deu": "Monargoras",
-    "jap": "ガチゴラス",
-    "kor": "견고라스",
-    "chs": "怪颚龙",
-    "cht": "怪顎龍"
-  },
-  "genus": {
-    "eng": "Despot Pokémon",
-    "esp": "Pokémon Tirano",
-    "fra": "Pokémon Tyran",
-    "deu": "Tyrannen-Pokémon",
-    "ita": "Pokémon Tiranno",
-    "jap": "ぼうくんポケモン",
-    "kor": "폭군포켓몬",
-    "chs": "暴君宝可梦",
-    "cht": "暴君寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0697000"
 }

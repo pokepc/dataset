@@ -67,14 +67,25 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["powerconstruct"] },
-        { "key": "battle_event", "events": ["end_of_turn"] },
-        { "key": "hp", "comparison": "lte", "percent": 50 },
-        { "key": "hp", "comparison": "gt", "percent": 0 }
+        {
+          "key": "ability",
+          "abilities": ["powerconstruct"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["end_of_turn"]
+        },
+        {
+          "key": "hp",
+          "comparison": "lte",
+          "percent": 50
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        }
       ],
-      "notes": {
-        "eng": "Complete Forme persists through healing and switching until the battle ends."
-      },
       "revert": ["battle_end"]
     },
     {
@@ -82,62 +93,33 @@
       "games": ["lza"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "hp", "comparison": "lte", "percent": 50 },
-        { "key": "hp", "comparison": "gt", "percent": 0 },
-        { "key": "battle_condition", "condition": "in_battle" }
+        {
+          "key": "hp",
+          "comparison": "lte",
+          "percent": 50
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 0
+        },
+        {
+          "key": "battle_condition",
+          "condition": "in_battle"
+        }
       ],
-      "notes": {
-        "eng": "No Ability is required in Legends: Z-A. If the threshold is crossed while using a move, transformation waits until that move finishes."
-      },
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "interaction", "interaction": "recall_outside_battle" }]
+          "conditions": [
+            {
+              "key": "interaction",
+              "interaction": "recall_outside_battle"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Zygarde (Complete Forme)",
-    "esp": "Zygarde (Forma Completa)",
-    "fra": "Zygarde (Forme Parfaite)",
-    "deu": "Zygarde (Optimumform)",
-    "ita": "Zygarde (Forma Perfetta)",
-    "jap": "ジガルデ (パーフェクトフォルム)",
-    "kor": "지가르데 (퍼펙트폼)",
-    "chs": "基格尔德 (完全体形态)",
-    "cht": "基格爾德 (完全體形態)"
-  },
-  "genus": {
-    "eng": "Order Pokémon",
-    "esp": "Pokémon Equilibrio",
-    "fra": "Pokémon Équilibre",
-    "deu": "Ordnungs-Pokémon",
-    "ita": "Pokémon Equilibrio",
-    "jap": "ちつじょポケモン",
-    "kor": "질서포켓몬",
-    "chs": "秩序宝可梦",
-    "cht": "秩序寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Zygarde",
-    "fra": "Zygarde",
-    "deu": "Zygarde",
-    "jap": "ジガルデ",
-    "kor": "지가르데",
-    "chs": "基格尔德",
-    "cht": "基格爾德"
-  },
-  "formNames": {
-    "eng": "Complete Forme",
-    "esp": "Forma Completa",
-    "fra": "Forme Parfaite",
-    "deu": "Optimumform",
-    "ita": "Forma Perfetta",
-    "jap": "パーフェクトフォルム",
-    "kor": "퍼펙트폼",
-    "chs": "完全体形态",
-    "cht": "完全體形態"
-  },
   "transferOnlyIn": []
 }

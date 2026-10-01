@@ -48,13 +48,17 @@ export type AvailabilityPokemon = Pick<
   isMega?: boolean
   isGmax?: boolean
   isCosmeticForm?: boolean
-  names: Partial<Pkds.Pokemon['names']>
-  formNames: Partial<Pkds.Pokemon['formNames']>
+  /** English text from `i18n/eng/pokemon.json`. */
+  name?: string
+  formName?: string
 }
 export type AvailabilityGame = Pick<
   Pkds.Game,
-  'id' | 'name' | 'gen' | 'type' | 'gameSet' | 'gameSuperSet'
->
+  'id' | 'gen' | 'type' | 'gameSet' | 'gameSuperSet'
+> & {
+  /** English name from `i18n/eng/games.json`; tables fall back to the id. */
+  name?: string
+}
 export type AvailabilityJson = Pick<
   AvailabilityPokemon,
   'id' | 'nid' | AvailabilityField | 'storableIn'
@@ -321,7 +325,7 @@ export function formatAvailabilityChanges(report: AvailabilityReport): string {
     eventOnlyIn: 'magenta',
     storableIn: 'yellow',
   } as const
-  const games = new Map(report.rows.map((row) => [row.game.id, row.game.name]))
+  const games = new Map(report.rows.map((row) => [row.game.id, row.game.name ?? row.game.id]))
   const describe = (ids: string[]) =>
     ids.map((id) => (games.has(id) ? `${games.get(id)} (${id})` : id)).join(', ')
   return availabilityChanges(report)
@@ -403,7 +407,7 @@ export function formatAvailabilityTable(
     lines.push(
       border('├', '┼', '┤'),
       ...renderRow([
-        `${row.game.name} (${row.game.id})`,
+        `${row.game.name ?? row.game.id} (${row.game.id})`,
         statuses[row.status],
         row.basis,
         methods || 'No matching source row; unverified',

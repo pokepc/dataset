@@ -83,51 +83,17 @@
       ],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
       "trigger": "equip_item",
-      "item": { "id": "firememory", "role": "held" },
-      "conditions": [{ "key": "ability", "abilities": ["rkssystem"] }]
+      "item": {
+        "id": "firememory",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["rkssystem"]
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Silvally (Type: Fire)",
-    "esp": "Silvally (Tipo: Fuego)",
-    "fra": "Silvallié (Type : Feu)",
-    "deu": "Amigento (Typ:Feuer)",
-    "ita": "Silvally (Tipo Fuoco)",
-    "jap": "シルヴァディ (タイプ：ファイヤー)",
-    "kor": "실버디 (타입:파이어)",
-    "chs": "银伴战兽 (属性：火焰)",
-    "cht": "銀伴戰獸 (屬性：火焰)"
-  },
-  "genus": {
-    "eng": "Synthetic Pokémon",
-    "esp": "Pokémon Multigénico",
-    "fra": "Pokémon Multigénome",
-    "deu": "Modifikations-Pokémon",
-    "ita": "Pokémon Multigene",
-    "jap": "じんこうポケモン",
-    "kor": "인공포켓몬",
-    "chs": "人工宝可梦",
-    "cht": "人工寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Silvally",
-    "fra": "Silvallié",
-    "deu": "Amigento",
-    "jap": "シルヴァディ",
-    "kor": "실버디",
-    "chs": "银伴战兽",
-    "cht": "銀伴戰獸"
-  },
-  "formNames": {
-    "eng": "Type: Fire",
-    "esp": "Tipo: Fuego",
-    "fra": "Type : Feu",
-    "deu": "Typ:Feuer",
-    "ita": "Tipo Fuoco",
-    "jap": "タイプ：ファイヤー",
-    "kor": "타입:파이어",
-    "chs": "属性：火焰",
-    "cht": "屬性：火焰"
-  },
   "transferOnlyIn": []
 }

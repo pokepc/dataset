@@ -110,7 +110,7 @@ export async function reviewDataset(
     if (signal.aborted) break
     const selected = pokemon[index]
     io.write(
-      `\n[${index + 1}/${pokemon.length}] ${selected.names.eng ?? selected.id} (${selected.id} / ${selected.nid})`,
+      `\n[${index + 1}/${pokemon.length}] ${selected.name ?? selected.id} (${selected.id} / ${selected.nid})`,
     )
     let report: AvailabilityReport | undefined
     try {

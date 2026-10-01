@@ -122,46 +122,14 @@
       "from": ["combusken"],
       "trigger": "level_up",
       "minLevel": 36,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Blaziken (Female)",
-    "fra": "Braségali (Female)",
-    "deu": "Lohgock (Female)"
-  },
-  "genus": {
-    "eng": "Blaze Pokémon",
-    "esp": "Pokémon Llameante",
-    "fra": "Pokémon Ardent",
-    "deu": "Großbrand-Pokémon",
-    "ita": "Pokémon Vampe",
-    "jap": "もうかポケモン",
-    "kor": "맹화포켓몬",
-    "chs": "猛火宝可梦",
-    "cht": "猛火寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Blaziken",
-    "fra": "Braségali",
-    "deu": "Lohgock",
-    "jap": "バシャーモ",
-    "kor": "번치코",
-    "chs": "火焰鸡",
-    "cht": "火焰雞"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -182,5 +150,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0257000"
 }

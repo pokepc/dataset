@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "garden" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "garden"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Garden Pattern)",
-    "fra": "Prismillon (Motif Verdure)",
-    "deu": "Vivillon (Ziergartenmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Garden Pattern",
-    "esp": "Motivo Vergel",
-    "fra": "Motif Verdure",
-    "deu": "Ziergartenmuster",
-    "ita": "Motivo Prato",
-    "jap": "ていえんのもよう",
-    "kor": "정원의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -116,5 +101,6 @@
     "sv-s",
     "sv-v",
     "champions"
-  ]
+  ],
+  "championsId": "0666004"
 }

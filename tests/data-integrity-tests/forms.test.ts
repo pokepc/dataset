@@ -5,9 +5,10 @@ import {
   loadAllItems,
   loadAllMoves,
   loadAllPokemon,
+  loadText,
 } from '../../src/lib/fs'
+import type { Pokemon } from '../../src/lib/types'
 import { pokemonSchema } from '../../src/lib/schemas'
-import { formMethods } from '../../src/scripts/migrate-pokemon-forms'
 import { expandFormMethods } from '../../src/lib/form-methods'
 import { transitionDigest } from '../../src/scripts/form-data/transition-audit'
 import compactAudit from '../../backlog/docs/audits/form-methods/compact-reverts.json'
@@ -25,11 +26,10 @@ const abilities = new Set(loadAllAbilities().map((a) => a.id))
 const expanded = expandFormMethods(pokemon)
 
 describe('form transition data', () => {
-  it('matches the reviewed manifest without legacy fields or cross-species transformations', () => {
+  it('has no legacy fields or cross-species transformations', () => {
     for (const p of pokemon) {
       expect(p, p.id).not.toHaveProperty('formItem')
       expect(pokemonSchema.parse(p).formMethods, p.id).toEqual(p.formMethods)
-      expect(p.formMethods, p.id).toEqual(formMethods[p.id])
       for (const method of expanded[p.id] ?? []) {
         expect(method.from, p.id).not.toContain(p.id)
         for (const from of method.from)
@@ -51,7 +51,25 @@ describe('form transition data', () => {
   })
 
   it('preserves every audited directed transition including game scope, conditions and notes', () => {
-    expect(transitionDigest(expanded)).toEqual(compactAudit.expandedTransitions)
+    // The audit hashed methods with inline English notes; v8 keeps them in `formNotes`.
+    const text = loadText('pokemon', 'eng')
+    const withNotes = pokemon.map((p) => {
+      const notes = text[p.id]?.formNotes ?? {}
+      const note = (key: string) => (notes[key] ? { notes: { eng: notes[key] } } : {})
+      return {
+        ...p,
+        formMethods: p.formMethods?.map((method, index) => ({
+          ...method,
+          ...note(String(index)),
+          revert: method.revert?.map((revert, revertIndex) =>
+            typeof revert === 'object' && !('afterTurns' in revert)
+              ? { ...revert, ...note(`${index}.revert.${revertIndex}`) }
+              : revert,
+          ),
+        })),
+      } as Pokemon
+    })
+    expect(transitionDigest(expandFormMethods(withNotes))).toEqual(compactAudit.expandedTransitions)
   })
 
   it('preserves exact forms through collapsed battle states', () => {

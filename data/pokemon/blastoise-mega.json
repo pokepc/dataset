@@ -64,23 +64,45 @@
       "from": ["blastoise"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "blastoisinite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "blastoisinite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["blastoise"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "blastoisinite", "role": "held" },
+      "item": {
+        "id": "blastoisinite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -88,50 +110,19 @@
       "from": ["blastoise"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "blastoisinite", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "blastoisinite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Blastoise",
-    "fra": "MégaTortank",
-    "deu": "Mega-Turtok",
-    "jap": "メガカメックス",
-    "kor": "메가거북왕",
-    "chs": "超级水箭龟",
-    "cht": "超級水箭龜"
-  },
-  "genus": {
-    "eng": "Shellfish Pokémon",
-    "esp": "Pokémon Armazón",
-    "fra": "Pokémon Carapace",
-    "deu": "Panzertier-Pokémon",
-    "ita": "Pokémon Crostaceo",
-    "jap": "こうらポケモン",
-    "kor": "껍질포켓몬",
-    "chs": "甲壳宝可梦",
-    "cht": "甲殼寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Blastoise",
-    "fra": "Tortank",
-    "deu": "Turtok",
-    "jap": "カメックス",
-    "kor": "거북왕",
-    "chs": "水箭龟",
-    "cht": "水箭龜"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"]
+  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"],
+  "championsId": "0009001"
 }

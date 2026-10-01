@@ -131,46 +131,14 @@
       "from": ["metapod"],
       "trigger": "level_up",
       "minLevel": 10,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Butterfree (Female)",
-    "fra": "Papilusion (Female)",
-    "deu": "Smettbo (Female)"
-  },
-  "genus": {
-    "eng": "Butterfly Pokémon",
-    "esp": "Pokémon Mariposa",
-    "fra": "Pokémon Papillon",
-    "deu": "Falter-Pokémon",
-    "ita": "Pokémon Farfalla",
-    "jap": "ちょうちょポケモン",
-    "kor": "나비포켓몬",
-    "chs": "蝴蝶宝可梦",
-    "cht": "蝴蝶寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Butterfree",
-    "fra": "Papilusion",
-    "deu": "Smettbo",
-    "jap": "バタフリー",
-    "kor": "버터플",
-    "chs": "巴大蝶",
-    "cht": "巴大蝶"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

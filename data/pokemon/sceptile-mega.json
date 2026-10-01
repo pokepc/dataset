@@ -65,66 +65,49 @@
       "from": ["sceptile"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "sceptilite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "sceptilite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["sceptile"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "sceptilite", "role": "held" },
+      "item": {
+        "id": "sceptilite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Sceptile",
-    "fra": "MégaJungko",
-    "deu": "Mega-Gewaldro",
-    "jap": "メガジュカイン",
-    "kor": "메가나무킹",
-    "chs": "超级蜥蜴王",
-    "cht": "超級蜥蜴王"
-  },
-  "genus": {
-    "eng": "Forest Pokémon",
-    "esp": "Pokémon Monte",
-    "fra": "Pokémon Forêt",
-    "deu": "Dschungel-Pokémon",
-    "ita": "Pokémon Foresta",
-    "jap": "みつりんポケモン",
-    "kor": "밀림포켓몬",
-    "chs": "密林宝可梦",
-    "cht": "密林寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Sceptile",
-    "fra": "Jungko",
-    "deu": "Gewaldro",
-    "jap": "ジュカイン",
-    "kor": "나무킹",
-    "chs": "蜥蜴王",
-    "cht": "蜥蜴王"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0254001"
 }

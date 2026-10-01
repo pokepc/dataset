@@ -67,42 +67,19 @@
       "from": ["petilil"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "sunstone", "role": "used" },
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "in" }],
+      "item": {
+        "id": "sunstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "in"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Lilligant (Hisuian Form)",
-    "fra": "Fragilady (Forme de Hisui)",
-    "deu": "Dressella (Hisui-Form)",
-    "jap": "ドレディア (ヒスイのすがた)"
-  },
-  "genus": {
-    "eng": "Flowering Pokémon",
-    "esp": "Pokémon Adornofloral",
-    "fra": "Pokémon Chef-Fleur",
-    "deu": "Blumenzier-Pokémon",
-    "ita": "Pokémon Fiorfronzolo",
-    "jap": "はなかざりポケモン",
-    "kor": "꽃장식포켓몬",
-    "chs": "花饰宝可梦",
-    "cht": "花飾寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Lilligant",
-    "fra": "Fragilady",
-    "deu": "Dressella",
-    "jap": "ドレディア",
-    "kor": "드레디어",
-    "chs": "裙儿小姐",
-    "cht": "裙兒小姐"
-  },
-  "formNames": {
-    "eng": "Hisuian Form",
-    "fra": "Forme de Hisui",
-    "deu": "Hisui-Form",
-    "jap": "ヒスイのすがた"
-  },
   "transferOnlyIn": ["home", "sv-s", "sv-v"]
 }

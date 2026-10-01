@@ -136,30 +136,12 @@
     {
       "from": ["golbat"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Crobat",
-    "fra": "Nostenfer",
-    "deu": "Iksbat",
-    "jap": "クロバット",
-    "kor": "크로뱃",
-    "chs": "叉字蝠",
-    "cht": "叉字蝠"
-  },
-  "genus": {
-    "eng": "Bat Pokémon",
-    "esp": "Pokémon Murciélago",
-    "fra": "Pokémon Chovsouris",
-    "deu": "Fledermaus-Pokémon",
-    "ita": "Pokémon Pipistrello",
-    "jap": "こうもりポケモン",
-    "kor": "박쥐포켓몬",
-    "chs": "蝙蝠宝可梦",
-    "cht": "蝙蝠寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["boxrs", "col", "ranch", "bank", "home"]
 }

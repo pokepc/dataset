@@ -1,197 +1,200 @@
-export type SupportedPokeLang2Char = Exclude<Pkds.LanguageAlpha2, 'esla'>
-export type SupportedPokeLang3Char = Exclude<Pkds.LanguageAlpha3, 'esla'>
-export type SupportedPokeLang = SupportedPokeLang2Char | SupportedPokeLang3Char
-
-export type PokeLangData = {
-  flag: string
-  code2Char: Pkds.LanguageAlpha2
-  code3Char: Pkds.LanguageAlpha3
-  locale: string
-  title: string
-  fullTitle: string
-  synonyms: string[]
-}
-
-export const pokeLangData: Record<`${SupportedPokeLang2Char}`, PokeLangData> = {
-  en: {
-    flag: '🇺🇸',
-    code2Char: 'en',
-    code3Char: 'eng',
-    locale: 'en-US',
-    title: 'English',
-    fullTitle: 'English',
-    synonyms: ['en', 'eng', 'en-US', 'en-gb'],
-  },
-  de: {
-    flag: '🇩🇪',
-    code2Char: 'de',
-    code3Char: 'deu',
-    locale: 'de',
-    title: 'Deutsch',
-    fullTitle: 'Deutsch (German)',
-    synonyms: ['de', 'deu', 'de-DE'],
-  },
-  fr: {
-    flag: '🇫🇷',
-    code2Char: 'fr',
-    code3Char: 'fra',
-    locale: 'fr',
-    title: 'Français',
-    fullTitle: 'Français (French)',
-    synonyms: ['fr', 'fra', 'fr-FR'],
-  },
-  es: {
-    flag: '🇪🇸',
-    code2Char: 'es',
-    code3Char: 'esp',
-    locale: 'es-ES',
-    title: 'Español',
-    fullTitle: 'Español (Spanish)',
-    synonyms: ['es', 'esp', 'es-ES'],
-  },
-  it: {
-    flag: '🇮🇹',
-    code2Char: 'it',
-    code3Char: 'ita',
-    locale: 'it',
-    title: 'Italiano',
-    fullTitle: 'Italiano',
-    synonyms: ['it', 'ita', 'it-IT'],
-  },
-  ja: {
-    flag: '🇯🇵',
-    code2Char: 'ja',
-    code3Char: 'jap',
-    locale: 'ja',
-    title: '日本語',
-    fullTitle: '日本語 (Japanese)',
-    synonyms: ['ja', 'jap', 'jpn', 'ja-JP', 'jp-JP'],
-  },
-  ko: {
-    flag: '🇰🇷',
-    code2Char: 'ko',
-    code3Char: 'kor',
-    locale: 'ko',
-    title: '한국어',
-    fullTitle: '한국어 (Korean)',
-    synonyms: ['ko', 'kor', 'ko-KR'],
-  },
-  cht: {
-    flag: '🇹🇼',
-    code2Char: 'cht',
-    code3Char: 'cht',
-    locale: 'zh-TW',
-    title: '繁體中文',
-    fullTitle: '繁體中文 (Traditional Chinese)',
-    synonyms: ['cht', 'cht-TW', 'zh-Hant', 'zh-TW'],
-  },
-  chs: {
-    flag: '🇨🇳',
-    code2Char: 'chs',
-    code3Char: 'chs',
-    locale: 'zh-CN',
-    title: '简体中文',
-    fullTitle: '简体中文 (Simplified Chinese)',
-    synonyms: ['chs', 'chs-CN', 'zh-Hans', 'zh-CN'],
-  },
-  pt: {
-    flag: '🇧🇷',
-    code2Char: 'pt',
-    code3Char: 'por',
-    locale: 'pt-BR',
-    title: 'Português',
-    fullTitle: 'Português (Brazil)',
-    synonyms: ['pt', 'por', 'pt-BR', 'pt-br', 'pt_BR'],
-  },
-}
-
-export type PokemonGameLocaleData = {
-  id: Pkds.LanguageInGameCode
-  name: string
-}
-
-export const pokemonGameLocales: Array<PokemonGameLocaleData> = [
-  { id: 'ENG', name: 'English' },
-  { id: 'ES-ES', name: 'Spanish (Spain)' },
-  { id: 'ES-LA', name: 'Spanish (Latin America)' },
-  { id: 'DEU', name: 'German' },
-  { id: 'FRA', name: 'French' },
-  { id: 'ITA', name: 'Italian' },
-  { id: 'JPN', name: 'Japanese' },
-  { id: 'KOR', name: 'Korean' },
-  { id: 'CHT', name: 'Chinese (Traditional)' },
-  { id: 'CHS', name: 'Chinese (Simplified)' },
-  { id: 'PT-BR', name: 'Portuguese (Brazil)' },
-]
-
-export const pokemonLangToGameLocale: Record<
-  Pkds.LanguageAlpha2 | Pkds.LanguageAlpha3,
-  Pkds.LanguageInGameCode
-> = {
-  en: 'ENG',
-  eng: 'ENG',
-  de: 'DEU',
-  deu: 'DEU',
-  fr: 'FRA',
-  fra: 'FRA',
-  es: 'ES-ES',
-  esp: 'ES-ES',
-  esla: 'ES-LA',
-  it: 'ITA',
-  ita: 'ITA',
-  ko: 'KOR',
-  kor: 'KOR',
-  cht: 'CHT',
-  chs: 'CHS',
-  ja: 'JPN',
-  jap: 'JPN',
-  pt: 'PT-BR',
-  por: 'PT-BR',
-}
-
-export const supportedPokeLangs: Record<SupportedPokeLang, PokeLangData> = {
-  en: pokeLangData.en,
-  eng: pokeLangData.en,
-  de: pokeLangData.de,
-  deu: pokeLangData.de,
-  fr: pokeLangData.fr,
-  fra: pokeLangData.fr,
-  es: pokeLangData.es,
-  esp: pokeLangData.es,
-  it: pokeLangData.it,
-  ita: pokeLangData.it,
-  ko: pokeLangData.ko,
-  kor: pokeLangData.ko,
-  cht: pokeLangData.cht,
-  chs: pokeLangData.chs,
-  ja: pokeLangData.ja,
-  jap: pokeLangData.ja,
-  pt: pokeLangData.pt,
-  por: pokeLangData.pt,
-}
-
-export const supportedPokeLangIds2Char: SupportedPokeLang2Char[] = [
+// Browser-compatible locales
+export const browserLocales = [
   'en',
-  'de',
-  'fr',
   'es',
+  'es-419', // official code for ES-LATAM
+  'de',
   'it',
+  'fr',
   'ko',
-  'cht',
-  'chs',
   'ja',
-  'pt',
-]
+  'zh-tw',
+  'zh-cn',
+  'pt-br',
+] as const
+export type BrowserLocale = (typeof browserLocales)[number]
+export const DEFAULT_LOCALE: BrowserLocale = 'en'
 
-export const supportedPokeLangIds3Char: SupportedPokeLang3Char[] = [
+// In-game locale codes (in their lang)
+export const gameLocales = [
+  'ENG',
+  'ES-ES',
+  'ES-LA',
+  'FRA',
+  'DEU',
+  'ITA',
+  'JPN',
+  'KOR',
+  'CHT',
+  'CHS',
+  'PT-BR',
+] as const
+export type GameLocale = (typeof gameLocales)[number]
+export const DEFAULT_GAME_LOCALE: GameLocale = 'ENG'
+
+/**
+ * v8 locale codes: the lowercase in-game codes. They name every `i18n/<locale>/` directory
+ * (decision-4).
+ */
+export const localeCodes = [
   'eng',
-  'deu',
+  'es-es',
+  'es-la',
   'fra',
-  'esp',
+  'deu',
   'ita',
+  'jpn',
   'kor',
-  'cht',
   'chs',
-  'jap',
-  'por',
-]
+  'cht',
+  'pt-br',
+] as const satisfies ReadonlyArray<Lowercase<GameLocale>>
+export type LocaleCode = (typeof localeCodes)[number]
+export const DEFAULT_LOCALE_CODE: LocaleCode = 'eng'
+
+/** v7 translation keys (`names.jap`, …) to v8 locale codes. */
+export const localeCodeByV7Key = {
+  eng: 'eng',
+  esp: 'es-es',
+  esla: 'es-la',
+  fra: 'fra',
+  deu: 'deu',
+  ita: 'ita',
+  jap: 'jpn',
+  kor: 'kor',
+  chs: 'chs',
+  cht: 'cht',
+  por: 'pt-br',
+} as const satisfies Record<string, LocaleCode>
+export type V7LocaleKey = keyof typeof localeCodeByV7Key
+
+export function toLocaleCode(gameLocale: GameLocale): LocaleCode {
+  return gameLocale.toLowerCase() as LocaleCode
+}
+
+// These are 2-char ISO3166-1 and/or ISO3166-2 codes
+// commonly used in website URLs and domains.
+//
+// Use them in URL paths, DB, etc. but not in HTML lang attributes (use locale instead)
+export const langSlugs = [
+  'en',
+  'es',
+  'mx', // latam spanish (mexican spanish is the standard basis for es-419/ES-LA)
+  'de',
+  'it',
+  'fr',
+  'kr',
+  'jp',
+  'tw', // traditional chinese (taiwanese), zh-hant
+  'cn', // simplified chinese (mainland), zh-hans
+  'br', // brazilian portuguese
+] as const
+export type LangSlug = (typeof langSlugs)[number]
+export const DEFAULT_LANG_SLUG: LangSlug = 'en'
+
+export const browserLocaleMap: Record<BrowserLocale, { slug: LangSlug; gameLocale: GameLocale }> = {
+  en: { slug: 'en', gameLocale: 'ENG' },
+  es: { slug: 'es', gameLocale: 'ES-ES' },
+  'es-419': { slug: 'mx', gameLocale: 'ES-LA' },
+  de: { slug: 'de', gameLocale: 'DEU' },
+  it: { slug: 'it', gameLocale: 'ITA' },
+  fr: { slug: 'fr', gameLocale: 'FRA' },
+  ko: { slug: 'kr', gameLocale: 'KOR' },
+  ja: { slug: 'jp', gameLocale: 'JPN' },
+  'zh-tw': { slug: 'tw', gameLocale: 'CHT' },
+  'zh-cn': { slug: 'cn', gameLocale: 'CHS' },
+  'pt-br': { slug: 'br', gameLocale: 'PT-BR' },
+}
+export const gameLocaleMap: Record<GameLocale, { slug: LangSlug; browserLocale: BrowserLocale }> = {
+  ENG: { slug: 'en', browserLocale: 'en' },
+  'ES-ES': { slug: 'es', browserLocale: 'es' },
+  'ES-LA': { slug: 'mx', browserLocale: 'es-419' },
+  DEU: { slug: 'de', browserLocale: 'de' },
+  ITA: { slug: 'it', browserLocale: 'it' },
+  FRA: { slug: 'fr', browserLocale: 'fr' },
+  KOR: { slug: 'kr', browserLocale: 'ko' },
+  JPN: { slug: 'jp', browserLocale: 'ja' },
+  CHT: { slug: 'tw', browserLocale: 'zh-tw' },
+  CHS: { slug: 'cn', browserLocale: 'zh-cn' },
+  'PT-BR': { slug: 'br', browserLocale: 'pt-br' },
+}
+
+export const langSlugMap: Record<
+  LangSlug,
+  { gameLocale: GameLocale; browserLocale: BrowserLocale }
+> = {
+  en: { gameLocale: 'ENG', browserLocale: 'en' },
+  es: { gameLocale: 'ES-ES', browserLocale: 'es' },
+  mx: { gameLocale: 'ES-LA', browserLocale: 'es-419' },
+  de: { gameLocale: 'DEU', browserLocale: 'de' },
+  it: { gameLocale: 'ITA', browserLocale: 'it' },
+  fr: { gameLocale: 'FRA', browserLocale: 'fr' },
+  kr: { gameLocale: 'KOR', browserLocale: 'ko' },
+  jp: { gameLocale: 'JPN', browserLocale: 'ja' },
+  tw: { gameLocale: 'CHT', browserLocale: 'zh-tw' },
+  cn: { gameLocale: 'CHS', browserLocale: 'zh-cn' },
+  br: { gameLocale: 'PT-BR', browserLocale: 'pt-br' },
+}
+
+export type LangMeta = {
+  name: string
+  engName: string
+  flag: string
+  pokeApiId: number
+  oldCode: string
+}
+
+export const langMeta: Record<LangSlug, LangMeta> = {
+  en: { name: 'English', engName: 'English', flag: '🇺🇸', pokeApiId: 9, oldCode: 'eng' },
+  es: { name: 'Español', engName: 'Spanish', flag: '🇪🇸', pokeApiId: 7, oldCode: 'esp' },
+  mx: {
+    name: 'Español (Latinoamérica)',
+    engName: 'Spanish (Latin America)',
+    flag: '🇲🇽',
+    pokeApiId: 14,
+    oldCode: 'esla',
+  },
+  de: { name: 'Deutsch', engName: 'German', flag: '🇩🇪', pokeApiId: 6, oldCode: 'deu' },
+  it: { name: 'Italiano', engName: 'Italian', flag: '🇮🇹', pokeApiId: 8, oldCode: 'ita' },
+  fr: { name: 'Français', engName: 'French', flag: '🇫🇷', pokeApiId: 5, oldCode: 'fra' },
+  kr: { name: '한국어', engName: 'Korean', flag: '🇰🇷', pokeApiId: 3, oldCode: 'kor' },
+  jp: { name: '日本語', engName: 'Japanese', flag: '🇯🇵', pokeApiId: 1, oldCode: 'jap' }, // 1 or 11
+  tw: {
+    name: '繁體中文',
+    engName: 'Traditional Chinese',
+    flag: '🇹🇼',
+    pokeApiId: 4,
+    oldCode: 'cht',
+  },
+  cn: {
+    name: '简体中文',
+    engName: 'Simplified Chinese',
+    flag: '🇨🇳',
+    pokeApiId: 12,
+    oldCode: 'chs',
+  },
+  br: {
+    name: 'Português (Brasil)',
+    engName: 'Portuguese (Brazil)',
+    flag: '🇧🇷',
+    pokeApiId: 13,
+    oldCode: 'por',
+  },
+}
+
+export type LangInfo = LangMeta & {
+  slug: LangSlug
+  locale: BrowserLocale
+  gameLocale: GameLocale
+}
+
+export const appLangs: LangInfo[] = browserLocales.map((locale) => ({
+  slug: browserLocaleMap[locale].slug,
+  locale,
+  gameLocale: browserLocaleMap[locale].gameLocale,
+  ...langMeta[browserLocaleMap[locale].slug],
+}))
+
+export const appLangsBySlug = Object.fromEntries(
+  Object.values(appLangs).map((info) => [info.slug, info]),
+) as Record<LangSlug, LangInfo>

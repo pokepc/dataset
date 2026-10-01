@@ -5,9 +5,9 @@
  * differs in Champions becomes an override or mod text.
  */
 import { isDeepStrictEqual } from 'node:util'
-import type { LocaleCode } from '../../lib-next/languages'
-import type { MergedGameSet, ModdableTextOverrides, RecordOverrides } from '../../lib-next/merge'
-import { moddableKinds, type ModdableKind } from '../../lib-next/schemas'
+import type { LocaleCode } from '../../lib/languages'
+import type { MergedGameSet, ModdableTextOverrides, RecordOverrides } from '../../lib/merge'
+import { moddableKinds, type ModdableKind } from '../../lib/schemas'
 import type {
   Ability,
   BattleState,
@@ -17,7 +17,7 @@ import type {
   RecordOverride,
   Roster,
   TextFile,
-} from '../../lib-next/types'
+} from '../../lib/types'
 import type {
   AbilityRecord,
   BattleStateRecord,

@@ -65,58 +65,33 @@
       "from": ["malamar"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "malamarite", "role": "held" },
+      "item": {
+        "id": "malamarite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Malamar",
-    "fra": "MégaSepiatroce",
-    "deu": "Mega-Calamanero",
-    "jap": "メガカラマネロ",
-    "kor": "메가칼라마네로",
-    "chs": "超级乌贼王",
-    "cht": "超級烏賊王"
-  },
-  "genus": {
-    "eng": "Overturning Pokémon",
-    "esp": "Pokémon Revolución",
-    "fra": "Pokémon Révolution",
-    "deu": "Inversions-Pokémon",
-    "ita": "Pokémon Giravolta",
-    "jap": "ぎゃくてんポケモン",
-    "kor": "역전포켓몬",
-    "chs": "倒转宝可梦",
-    "cht": "倒轉寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Malamar",
-    "fra": "Sepiatroce",
-    "deu": "Calamanero",
-    "jap": "カラマネロ",
-    "kor": "칼라마네로",
-    "chs": "乌贼王",
-    "cht": "烏賊王"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0687001"
 }

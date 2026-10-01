@@ -85,30 +85,13 @@
       "from": ["fomantis"],
       "trigger": "level_up",
       "minLevel": 34,
-      "conditions": [{ "key": "time_of_day", "time": "day" }]
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Lurantis",
-    "fra": "Floramantis",
-    "deu": "Mantidea",
-    "jap": "ラランテス",
-    "kor": "라란티스",
-    "chs": "兰螳花",
-    "cht": "蘭螳花"
-  },
-  "genus": {
-    "eng": "Bloom Sickle Pokémon",
-    "esp": "Pokémon Filo Flor",
-    "fra": "Pokémon Fauch’Fleur",
-    "deu": "Blumensichel-Pokémon",
-    "ita": "Pokémon Mantifiore",
-    "jap": "はなかまポケモン",
-    "kor": "꽃사마귀포켓몬",
-    "chs": "花镰宝可梦",
-    "cht": "花鐮寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "home"]
 }

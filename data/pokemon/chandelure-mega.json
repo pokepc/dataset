@@ -65,58 +65,33 @@
       "from": ["chandelure"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "chandelurite", "role": "held" },
+      "item": {
+        "id": "chandelurite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Chandelure",
-    "fra": "MégaLugulabre",
-    "deu": "Mega-Skelabra",
-    "jap": "メガシャンデラ",
-    "kor": "메가샹델라",
-    "chs": "超级水晶灯火灵",
-    "cht": "超級水晶燈火靈"
-  },
-  "genus": {
-    "eng": "Luring Pokémon",
-    "esp": "Pokémon Señuelo",
-    "fra": "Pokémon Invitation",
-    "deu": "Geleit-Pokémon",
-    "ita": "Pokémon Attiranime",
-    "jap": "いざないポケモン",
-    "kor": "권유포켓몬",
-    "chs": "引诱宝可梦",
-    "cht": "引誘寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Chandelure",
-    "fra": "Lugulabre",
-    "deu": "Skelabra",
-    "jap": "シャンデラ",
-    "kor": "샹델라",
-    "chs": "水晶灯火灵",
-    "cht": "水晶燈火靈"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0609001"
 }

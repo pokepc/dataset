@@ -117,46 +117,18 @@
     {
       "from": ["roselia"],
       "trigger": "use_item",
-      "item": { "id": "shinystone", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "shinystone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Roserade (Female)",
-    "fra": "Roserade (Female)",
-    "deu": "Roserade (Female)"
-  },
-  "genus": {
-    "eng": "Bouquet Pokémon",
-    "esp": "Pokémon Ramillete",
-    "fra": "Pokémon Bouquet",
-    "deu": "Blumenstrauß-Pokémon",
-    "ita": "Pokémon Floreale",
-    "jap": "ブーケポケモン",
-    "kor": "부케포켓몬",
-    "chs": "花束宝可梦",
-    "cht": "花束寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Roserade",
-    "fra": "Roserade",
-    "deu": "Roserade",
-    "jap": "ロズレイド",
-    "kor": "로즈레이드",
-    "chs": "罗丝雷朵",
-    "cht": "羅絲雷朵"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
-  "transferOnlyIn": ["ranch", "bw-b", "bank", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["ranch", "bw-b", "bank", "usum-us", "usum-um", "home"],
+  "championsId": "0407000"
 }

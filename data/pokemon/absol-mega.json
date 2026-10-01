@@ -75,66 +75,49 @@
       "from": ["absol"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "absolite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "absolite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["absol"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "absolite", "role": "held" },
+      "item": {
+        "id": "absolite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Absol",
-    "fra": "MégaAbsol",
-    "deu": "Mega-Absol",
-    "jap": "メガアブソル",
-    "kor": "메가앱솔",
-    "chs": "超级阿勃梭鲁",
-    "cht": "超級阿勃梭魯"
-  },
-  "genus": {
-    "eng": "Disaster Pokémon",
-    "esp": "Pokémon Catástrofe",
-    "fra": "Pokémon Désastre",
-    "deu": "Desaster-Pokémon",
-    "ita": "Pokémon Catastrofe",
-    "jap": "わざわいポケモン",
-    "kor": "재난포켓몬",
-    "chs": "灾祸宝可梦",
-    "cht": "災禍寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Absol",
-    "fra": "Absol",
-    "deu": "Absol",
-    "jap": "アブソル",
-    "kor": "앱솔",
-    "chs": "阿勃梭鲁",
-    "cht": "阿勃梭魯"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0359001"
 }

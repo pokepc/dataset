@@ -92,30 +92,14 @@
       "from": ["pancham"],
       "trigger": "level_up",
       "minLevel": 32,
-      "conditions": [{ "key": "party_type", "type": "dark" }]
+      "conditions": [
+        {
+          "key": "party_type",
+          "type": "dark"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Pangoro",
-    "fra": "Pandarbare",
-    "deu": "Pandagro",
-    "jap": "ゴロンダ",
-    "kor": "부란다",
-    "chs": "霸道熊猫",
-    "cht": "流氓熊貓"
-  },
-  "genus": {
-    "eng": "Daunting Pokémon",
-    "esp": "Pokémon Rostro Fiero",
-    "fra": "Pokémon Patibulaire",
-    "deu": "Gaunerblick-Pokémon",
-    "ita": "Pokémon Occhiotruce",
-    "jap": "こわもてポケモン",
-    "kor": "무서운얼굴포켓몬",
-    "chs": "恶颜宝可梦",
-    "cht": "惡顏寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "home"],
+  "championsId": "0675000"
 }

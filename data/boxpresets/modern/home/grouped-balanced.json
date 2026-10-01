@@ -1,9 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "grouped-balanced",
   "gameSet": "home",
-  "name": "Grouped by Regions (Optimized)",
-  "description": "A more efficient version of 'Grouped by Regions (Classic)' that requires much less space. Organizes each generation together, placing alternate forms (that are unlikely to change) beside their species when that saves space. Regional forms stay with the generation where they were introduced, at the end of the box, making this a compact HOME Living Dex layout without separating every form into dedicated boxes. Gigantamax boxes are omitted. ",
   "source": {
     "kind": "classic",
     "gameSet": "home",
@@ -13,7 +11,6 @@
   "tags": ["grouped"],
   "boxes": [
     {
-      "name": "Kanto 1",
       "slots": [
         "bulbasaur",
         "ivysaur",
@@ -48,7 +45,6 @@
       ]
     },
     {
-      "name": "Kanto 2",
       "slots": [
         "raichu",
         "raichu-f",
@@ -83,7 +79,6 @@
       ]
     },
     {
-      "name": "Kanto 3",
       "slots": [
         "dugtrio",
         "meowth",
@@ -118,7 +113,6 @@
       ]
     },
     {
-      "name": "Kanto 4",
       "slots": [
         "slowpoke",
         "slowbro",
@@ -153,7 +147,6 @@
       ]
     },
     {
-      "name": "Kanto 5",
       "slots": [
         "hitmonlee",
         "hitmonchan",
@@ -188,7 +181,6 @@
       ]
     },
     {
-      "name": "Kanto 6",
       "slots": [
         "gyarados",
         "gyarados-f",
@@ -217,7 +209,6 @@
       ]
     },
     {
-      "name": "Cap Pikachu",
       "slots": [
         "pikachu-original",
         "pikachu-hoenn",
@@ -230,7 +221,6 @@
       ]
     },
     {
-      "name": "Johto 1",
       "slots": [
         "chikorita",
         "bayleef",
@@ -265,7 +255,6 @@
       ]
     },
     {
-      "name": "Johto 2",
       "slots": [
         "xatu-f",
         "mareep",
@@ -300,7 +289,6 @@
       ]
     },
     {
-      "name": "Johto 3",
       "slots": [
         "wobbuffet",
         "wobbuffet-f",
@@ -335,7 +323,6 @@
       ]
     },
     {
-      "name": "Johto 4",
       "slots": [
         "remoraid",
         "octillery",
@@ -370,11 +357,9 @@
       ]
     },
     {
-      "name": "Johto 5",
       "slots": ["hooh", "celebi"]
     },
     {
-      "name": "Unown Dex",
       "slots": [
         "unown",
         "unown-b",
@@ -407,7 +392,6 @@
       ]
     },
     {
-      "name": "Hoenn 1",
       "slots": [
         "treecko",
         "grovyle",
@@ -442,7 +426,6 @@
       ]
     },
     {
-      "name": "Hoenn 2",
       "slots": [
         "shiftry",
         "shiftry-f",
@@ -477,7 +460,6 @@
       ]
     },
     {
-      "name": "Hoenn 3",
       "slots": [
         "aron",
         "lairon",
@@ -512,7 +494,6 @@
       ]
     },
     {
-      "name": "Hoenn 4",
       "slots": [
         "spinda",
         "trapinch",
@@ -547,7 +528,6 @@
       ]
     },
     {
-      "name": "Hoenn 5",
       "slots": [
         "duskull",
         "dusclops",
@@ -582,11 +562,9 @@
       ]
     },
     {
-      "name": "Hoenn 6",
       "slots": ["rayquaza", "jirachi", "deoxys", "deoxys-attack", "deoxys-defense", "deoxys-speed"]
     },
     {
-      "name": "Sinnoh 1",
       "slots": [
         "turtwig",
         "grotle",
@@ -621,7 +599,6 @@
       ]
     },
     {
-      "name": "Sinnoh 2",
       "slots": [
         "roserade",
         "roserade-f",
@@ -656,7 +633,6 @@
       ]
     },
     {
-      "name": "Sinnoh 3",
       "slots": [
         "drifloon",
         "drifblim",
@@ -691,7 +667,6 @@
       ]
     },
     {
-      "name": "Sinnoh 4",
       "slots": [
         "hippowdon-f",
         "skorupi",
@@ -726,7 +701,6 @@
       ]
     },
     {
-      "name": "Sinnoh 5",
       "slots": [
         "glaceon",
         "gliscor",
@@ -761,7 +735,6 @@
       ]
     },
     {
-      "name": "Unova 1",
       "slots": [
         "victini",
         "snivy",
@@ -796,7 +769,6 @@
       ]
     },
     {
-      "name": "Unova 2",
       "slots": [
         "zebstrika",
         "roggenrola",
@@ -831,7 +803,6 @@
       ]
     },
     {
-      "name": "Unova 3",
       "slots": [
         "krokorok",
         "krookodile",
@@ -866,7 +837,6 @@
       ]
     },
     {
-      "name": "Unova 4",
       "slots": [
         "vanillite",
         "vanillish",
@@ -901,7 +871,6 @@
       ]
     },
     {
-      "name": "Unova 5",
       "slots": [
         "eelektross",
         "elgyem",
@@ -936,7 +905,6 @@
       ]
     },
     {
-      "name": "Unova 6",
       "slots": [
         "zweilous",
         "hydreigon",
@@ -961,7 +929,6 @@
       ]
     },
     {
-      "name": "Kalos 1",
       "slots": [
         "chespin",
         "quilladin",
@@ -996,7 +963,6 @@
       ]
     },
     {
-      "name": "Kalos 2",
       "slots": [
         "meowstic-f",
         "honedge",
@@ -1031,7 +997,6 @@
       ]
     },
     {
-      "name": "Kalos 3",
       "slots": [
         "phantump",
         "trevenant",
@@ -1058,7 +1023,6 @@
       ]
     },
     {
-      "name": "Trims & Flowers",
       "slots": [
         "furfrou",
         "furfrou-heart",
@@ -1092,7 +1056,6 @@
       ]
     },
     {
-      "name": "Vivillon Patt.",
       "slots": [
         "vivillon",
         "vivillon-polar",
@@ -1117,7 +1080,6 @@
       ]
     },
     {
-      "name": "Alola 1",
       "slots": [
         "rowlet",
         "dartrix",
@@ -1152,7 +1114,6 @@
       ]
     },
     {
-      "name": "Alola 2",
       "slots": [
         "mareanie",
         "toxapex",
@@ -1187,7 +1148,6 @@
       ]
     },
     {
-      "name": "Alola 3",
       "slots": [
         "minior-green",
         "minior-blue",
@@ -1222,7 +1182,6 @@
       ]
     },
     {
-      "name": "Alola 4 & Other",
       "slots": [
         "magearna",
         "magearna-original",
@@ -1257,7 +1216,6 @@
       ]
     },
     {
-      "name": "Galar 1",
       "slots": [
         "grookey",
         "thwackey",
@@ -1292,7 +1250,6 @@
       ]
     },
     {
-      "name": "Galar 2",
       "slots": [
         "applin",
         "flapple",
@@ -1327,7 +1284,6 @@
       ]
     },
     {
-      "name": "Galar 3",
       "slots": [
         "runerigus",
         "milcery",
@@ -1362,7 +1318,6 @@
       ]
     },
     {
-      "name": "Galar 4",
       "slots": [
         "regieleki",
         "regidrago",
@@ -1392,7 +1347,6 @@
       ]
     },
     {
-      "name": "Alcremie 1",
       "slots": [
         "alcremie",
         "alcremie-vanilla-cream-berry",
@@ -1425,7 +1379,6 @@
       ]
     },
     {
-      "name": "Alcremie 2",
       "slots": [
         "alcremie-lemon-cream-strawberry",
         "alcremie-lemon-cream-berry",
@@ -1458,7 +1411,6 @@
       ]
     },
     {
-      "name": "Alcremie 3",
       "slots": [
         "alcremie-rainbow-swirl-strawberry",
         "alcremie-rainbow-swirl-berry",
@@ -1470,7 +1422,6 @@
       ]
     },
     {
-      "name": "Hisui",
       "slots": [
         "wyrdeer",
         "kleavor",
@@ -1505,7 +1456,6 @@
       ]
     },
     {
-      "name": "Paldea 1",
       "slots": [
         "sprigatito",
         "floragato",
@@ -1540,7 +1490,6 @@
       ]
     },
     {
-      "name": "Paldea 2",
       "slots": [
         "squawkabilly-white",
         "nacli",
@@ -1575,7 +1524,6 @@
       ]
     },
     {
-      "name": "Paldea 3",
       "slots": [
         "wugtrio",
         "bombirdier",
@@ -1610,7 +1558,6 @@
       ]
     },
     {
-      "name": "Paldea 4",
       "slots": [
         "slitherwing",
         "sandyshocks",
@@ -1645,7 +1592,6 @@
       ]
     },
     {
-      "name": "Paldea 5",
       "slots": [
         "munkidori",
         "fezandipiti",

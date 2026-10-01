@@ -84,7 +84,11 @@
       ],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "legendplate", "role": "used", "consumed": false },
+      "item": {
+        "id": "legendplate",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": []
     },
     {
@@ -110,46 +114,16 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "mechanic", "mechanic": "legend_plate" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "legend_plate"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Arceus (Normal Type - Legend Plate)",
-    "esp": "Arceus (Tipo Normal - Tabla Legendaria)",
-    "fra": "Arceus (Normal - Plaque Légende)",
-    "deu": "Arceus (Normalform - Legendentafel)",
-    "ita": "Arceus (Tipo Normale - Lastraleggenda)",
-    "jap": "アルセウス (ノーマルタイプ - レジェンドプレート)"
-  },
-  "genus": {
-    "eng": "Alpha Pokémon",
-    "esp": "Pokémon Alfa",
-    "fra": "Pokémon Alpha",
-    "deu": "Alpha",
-    "ita": "Pokémon Primevo",
-    "jap": "そうぞうポケモン",
-    "kor": "창조포켓몬",
-    "chs": "创造宝可梦",
-    "cht": "創造寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Arceus",
-    "fra": "Arceus",
-    "deu": "Arceus",
-    "jap": "アルセウス",
-    "kor": "아르세우스",
-    "chs": "阿尔宙斯",
-    "cht": "阿爾宙斯"
-  },
-  "formNames": {
-    "eng": "Normal Type - Legend Plate",
-    "esp": "Tipo Normal - Tabla Legendaria",
-    "fra": "Normal - Plaque Légende",
-    "deu": "Normalform - Legendentafel",
-    "ita": "Tipo Normale - Lastraleggenda",
-    "jap": "ノーマルタイプ - レジェンドプレート"
-  },
   "transferOnlyIn": []
 }

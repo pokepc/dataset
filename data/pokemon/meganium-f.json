@@ -123,46 +123,14 @@
       "from": ["bayleef"],
       "trigger": "level_up",
       "minLevel": 32,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Meganium (Female)",
-    "fra": "Méganium (Female)",
-    "deu": "Meganie (Female)"
-  },
-  "genus": {
-    "eng": "Herb Pokémon",
-    "esp": "Pokémon Hierba",
-    "fra": "Pokémon Herbe",
-    "deu": "Kräuter",
-    "ita": "Pokémon Erbe",
-    "jap": "ハーブポケモン",
-    "kor": "허브포켓몬",
-    "chs": "芳草宝可梦",
-    "cht": "芳草寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Meganium",
-    "fra": "Méganium",
-    "deu": "Meganie",
-    "jap": "メガニウム",
-    "kor": "메가니움",
-    "chs": "大竺葵",
-    "cht": "大竺葵"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -182,5 +150,6 @@
     "usum-us",
     "usum-um",
     "home"
-  ]
+  ],
+  "championsId": "0154000"
 }

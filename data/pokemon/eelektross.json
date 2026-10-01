@@ -96,31 +96,13 @@
     {
       "from": ["eelektrik"],
       "trigger": "use_item",
-      "item": { "id": "thunderstone", "role": "used" },
+      "item": {
+        "id": "thunderstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Eelektross",
-    "fra": "Ohmassacre",
-    "deu": "Zapplarang",
-    "jap": "シビルドン",
-    "kor": "저리더프",
-    "chs": "麻麻鳗鱼王",
-    "cht": "麻麻鰻魚王"
-  },
-  "genus": {
-    "eng": "EleFish Pokémon",
-    "esp": "Pokémon Electropez",
-    "fra": "Pokémon Électrophore",
-    "deu": "Stromfisch",
-    "ita": "Pokémon Elettropesce",
-    "jap": "でんきうおポケモン",
-    "kor": "전기물고기포켓몬",
-    "chs": "电鱼宝可梦",
-    "cht": "電魚寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["xy-x", "xy-y", "bank", "home"]
+  "transferOnlyIn": ["xy-x", "xy-y", "bank", "home"],
+  "championsId": "0604000"
 }

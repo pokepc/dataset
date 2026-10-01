@@ -115,39 +115,23 @@
     {
       "from": ["porygon2"],
       "trigger": "trade",
-      "item": { "id": "dubiousdisc", "role": "held" },
+      "item": {
+        "id": "dubiousdisc",
+        "role": "held"
+      },
       "conditions": []
     },
     {
       "from": ["porygon2"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "dubiousdisc", "role": "used" },
+      "item": {
+        "id": "dubiousdisc",
+        "role": "used"
+      },
       "conditions": [],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Porygon-Z",
-    "fra": "Porygon-Z",
-    "deu": "Porygon-Z",
-    "jap": "ポリゴンＺ",
-    "kor": "폴리곤Z",
-    "chs": "多边兽乙型",
-    "cht": "多邊獸Ｚ"
-  },
-  "genus": {
-    "eng": "Virtual Pokémon",
-    "esp": "Pokémon Virtual",
-    "fra": "Pokémon Virtuel",
-    "deu": "Virtuell-Pokémon",
-    "ita": "Pokémon Virtuale",
-    "jap": "バーチャルポケモン",
-    "kor": "가상포켓몬",
-    "chs": "虚拟宝可梦",
-    "cht": "虛擬寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["ranch", "bw-b", "b2w2-b2", "b2w2-w2", "xy-x", "xy-y", "bank", "home"]
 }

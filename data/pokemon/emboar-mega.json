@@ -65,58 +65,33 @@
       "from": ["emboar"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "emboarite", "role": "held" },
+      "item": {
+        "id": "emboarite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Emboar",
-    "fra": "MégaRoitiflam",
-    "deu": "Mega-Flambirex",
-    "jap": "メガエンブオー",
-    "kor": "메가염무왕",
-    "chs": "超级炎武王",
-    "cht": "超級炎武王"
-  },
-  "genus": {
-    "eng": "Mega Fire Pig Pokémon",
-    "esp": "Pokémon Cerdo Ígneo",
-    "fra": "Pokémon Grochon Feu",
-    "deu": "Feuerschwein",
-    "ita": "Pokémon Suincendio",
-    "jap": "おおひぶたポケモン",
-    "kor": "큰불돼지포켓몬",
-    "chs": "大火猪宝可梦",
-    "cht": "大火豬寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Emboar",
-    "fra": "Roitiflam",
-    "deu": "Flambirex",
-    "jap": "エンブオー",
-    "kor": "염무왕",
-    "chs": "炎武王",
-    "cht": "炎武王"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0500001"
 }

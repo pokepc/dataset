@@ -134,55 +134,34 @@
     {
       "from": ["onix"],
       "trigger": "trade",
-      "item": { "id": "metalcoat", "role": "held" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "metalcoat",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     },
     {
       "from": ["onix"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "metalcoat", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }],
+      "item": {
+        "id": "metalcoat",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Steelix (Female)",
-    "fra": "Steelix (Female)",
-    "deu": "Stahlos (Female)"
-  },
-  "genus": {
-    "eng": "Iron Snake Pokémon",
-    "esp": "Pokémon Serpiente Férrea",
-    "fra": "Pokémon Serpenfer",
-    "deu": "Stahlboa-Pokémon",
-    "ita": "Pokémon Ferroserpe",
-    "jap": "てつへびポケモン",
-    "kor": "철뱀포켓몬",
-    "chs": "铁蛇宝可梦",
-    "cht": "鐵蛇寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Steelix",
-    "fra": "Steelix",
-    "deu": "Stahlos",
-    "jap": "ハガネール",
-    "kor": "강철톤",
-    "chs": "大钢蛇",
-    "cht": "大鋼蛇"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -195,5 +174,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0208000"
 }

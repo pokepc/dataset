@@ -119,45 +119,13 @@
       "from": ["gible"],
       "trigger": "level_up",
       "minLevel": 24,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Gabite (Female)",
-    "fra": "Carmache (Female)",
-    "deu": "Knarksel (Female)"
-  },
-  "genus": {
-    "eng": "Cave Pokémon",
-    "esp": "Pokémon Cueva",
-    "fra": "Pokémon Caverne",
-    "deu": "Höhlen-Pokémon",
-    "ita": "Pokémon Grotta",
-    "jap": "ほらあなポケモン",
-    "kor": "동굴포켓몬",
-    "chs": "洞穴宝可梦",
-    "cht": "洞穴寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Gabite",
-    "fra": "Carmache",
-    "deu": "Knarksel",
-    "jap": "ガバイト",
-    "kor": "한바이트",
-    "chs": "尖牙陆鲨",
-    "cht": "尖牙陸鯊"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["ranch", "bw-b", "bw-w", "b2w2-w2", "bank", "swsh-sw", "home"]
 }

@@ -64,29 +64,14 @@
       "from": ["gimmighoul", "gimmighoul-roaming"],
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
-      "item": { "id": "gimmighoulcoin", "role": "bag", "quantity": 999 },
+      "item": {
+        "id": "gimmighoulcoin",
+        "role": "bag",
+        "quantity": 999
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Gholdengo",
-    "fra": "Gromago",
-    "deu": "Monetigo",
-    "jap": "サーフゴー",
-    "kor": "타부자고",
-    "chs": "赛富豪",
-    "cht": "賽富豪"
-  },
-  "genus": {
-    "eng": "Coin Entity Pokémon",
-    "fra": "Trésor Animé",
-    "deu": "Schatzwesen",
-    "jap": "たからものポケモン",
-    "kor": "보물생명체포켓몬",
-    "chs": "宝者宝可梦",
-    "cht": "寶者寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "1000000"
 }

@@ -87,7 +87,6 @@
     "vivillon-fancy",
     "vivillon-pokeball"
   ],
-  "formsDesc": "Forms only differ in appearance.  Vivillon's pattern depends on the real-world geographical region set in its original trainer's 3DS, and cannot be changed.\n\nTrading a Scatterbug, Spewpa, or egg does not affect the pattern it will have as a Vivillon.  Changing the 3DS's region setting will not affect the game's Vivillon pattern until the player starts a new game.\n\nThe Fancy and Poké Ball Patterns do not correspond to any region and are only available through distributions.",
   "refs": {
     "pkApiId": "666",
     "pkApiFormId": "10086",
@@ -103,25 +102,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "icy-snow" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "icy-snow"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Icy Snow Pattern)",
-    "fra": "Prismillon (Motif Blizzard)",
-    "deu": "Vivillon (Frostmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Icy Snow Pattern",
-    "fra": "Motif Blizzard",
-    "deu": "Frostmuster"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -133,5 +121,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666000"
 }

@@ -158,42 +158,14 @@
     {
       "from": ["pichu"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Pikachu",
-    "fra": "Pikachu",
-    "deu": "Pikachu",
-    "jap": "ピカチュウ",
-    "kor": "피카츄",
-    "chs": "皮卡丘",
-    "cht": "皮卡丘"
-  },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus-Pokémon",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": ["boxrs", "col", "xd", "bw-b", "bw-w", "b2w2-b2", "b2w2-w2", "bank"],
-  "shinyLockedIn": ["ranch"]
+  "shinyLockedIn": ["ranch"],
+  "championsId": "0025000"
 }

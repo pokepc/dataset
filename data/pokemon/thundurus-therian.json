@@ -101,59 +101,25 @@
         "sv-v"
       ],
       "trigger": "use_item",
-      "item": { "id": "revealglass", "role": "used", "consumed": false },
+      "item": {
+        "id": "revealglass",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "revealglass", "role": "used", "consumed": false },
+          "item": {
+            "id": "revealglass",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Thundurus (Therian Forme)",
-    "esp": "Thundurus (Forma Tótem)",
-    "fra": "Fulguris (Forme Totémique)",
-    "deu": "Voltolos (Tiergeistform)",
-    "ita": "Thundurus (Forma Totem)",
-    "jap": "ボルトロス (れいじゅうフォルム)",
-    "kor": "볼트로스 (영물폼)",
-    "chs": "雷电云 (灵兽形态)",
-    "cht": "雷電雲 (靈獸形態)"
-  },
-  "genus": {
-    "eng": "Bolt Strike Pokémon",
-    "esp": "Pokémon Centella",
-    "fra": "Pokémon Foudroyeur",
-    "deu": "Torpedo-Pokémon",
-    "ita": "Pokémon Fulminante",
-    "jap": "らいげきポケモン",
-    "kor": "뇌격포켓몬",
-    "chs": "雷击宝可梦",
-    "cht": "雷擊寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Thundurus",
-    "fra": "Fulguris",
-    "deu": "Voltolos",
-    "jap": "ボルトロス",
-    "kor": "볼트로스",
-    "chs": "雷电云",
-    "cht": "雷電雲"
-  },
-  "formNames": {
-    "eng": "Therian Forme",
-    "esp": "Forma Tótem",
-    "fra": "Forme Totémique",
-    "deu": "Tiergeistform",
-    "ita": "Forma Totem",
-    "jap": "れいじゅうフォルム",
-    "kor": "영물폼",
-    "chs": "灵兽形态",
-    "cht": "靈獸形態"
-  },
   "transferOnlyIn": [
     "b2w2-b2",
     "b2w2-w2",

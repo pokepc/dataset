@@ -1,7 +1,7 @@
 /**
  * Generate a Champions "Regular Roster" pokedex for a given Regulation Set.
  *
- * Reads every Pokémon available in `data-next/champions/pokemon.json`, orders
+ * Reads every Pokémon in the Champions roster (`data/mods/champions/roster.json`), orders
  * them by `data/indices/pokemon.json`, and writes a pokedex file shaped like
  * `data/pokedexes/champions-regular-roster-m-a.json`. It also registers the new
  * pokedex id in `data/indices/pokedexes.json` and in the `pokedexes` array of
@@ -40,9 +40,7 @@ interface PokedexEntry {
 }
 
 const DATA_DIR = path.resolve(process.env.POKEPC_DATASET_DIR ?? 'data')
-const DATA_NEXT_DIR = path.resolve('data-next')
-
-const CHAMPIONS_POKEMON = path.join(DATA_NEXT_DIR, 'champions', 'pokemon.json')
+const CHAMPIONS_ROSTER = path.join(DATA_DIR, 'mods', 'champions', 'roster.json')
 const POKEMON_INDEX = path.join(DATA_DIR, 'indices', 'pokemon.json')
 const POKEDEXES_INDEX = path.join(DATA_DIR, 'indices', 'pokedexes.json')
 const CHAMPIONS_GAME = path.join(DATA_DIR, 'games', 'champions.json')
@@ -197,7 +195,9 @@ function main(): void {
     entries = readBaseEntries(options.baseSetId)
     console.log(`[base]  ${pokedexIdForSet(options.baseSetId)} (${entries.length} entries)`)
   } else {
-    const champions = readJson<ChampionsPokemon[]>(CHAMPIONS_POKEMON)
+    const champions = readJson<{ pokemon: string[] }>(CHAMPIONS_ROSTER).pokemon.map((id) =>
+      readJson<ChampionsPokemon>(path.join(POKEMON_DIR, `${id}.json`)),
+    )
     const missing: string[] = []
     const sorted = [...champions].sort((a, b) => {
       const ai = orderMap.get(a.id)

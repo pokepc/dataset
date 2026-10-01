@@ -70,13 +70,16 @@ describe('locations import write safety', () => {
     const written = await readFile(output, 'utf8')
     expect(JSON.parse(written).at(-1)).toEqual({
       id: 'kanto-route-1',
-      name: 'Route 1',
       region: 'kanto',
       games: ['rb-r'],
       pokeApiId: 285,
     })
+    const textPath = join(directory, 'i18n/eng/locations.json')
+    const writtenText = await readFile(textPath, 'utf8')
+    expect(JSON.parse(writtenText)['kanto-route-1']).toEqual({ name: 'Route 1' })
     await main(['--offline', '--write'])
     expect(await readFile(output, 'utf8')).toBe(written)
+    expect(await readFile(textPath, 'utf8')).toBe(writtenText)
   })
 
   it('refuses to write after a source page failure but keeps the report', async () => {

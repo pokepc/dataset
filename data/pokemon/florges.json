@@ -65,7 +65,6 @@
   "femaleRate": 100,
   "baseForms": [],
   "forms": ["florges-yellow", "florges-orange", "florges-blue", "florges-white"],
-  "formsDesc": "Forms only differ in appearance.  Florges's flower is set as a Flabébé or Floette, and cannot be changed.",
   "refs": {
     "pkApiId": "671",
     "pkApiFormId": "671",
@@ -80,41 +79,13 @@
     {
       "from": ["floette"],
       "trigger": "use_item",
-      "item": { "id": "shinystone", "role": "used" },
+      "item": {
+        "id": "shinystone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Florges",
-    "fra": "Florges",
-    "deu": "Florges",
-    "jap": "フラージェス",
-    "kor": "플라제스",
-    "chs": "花洁夫人",
-    "cht": "花潔夫人"
-  },
-  "genus": {
-    "eng": "Garden Pokémon",
-    "esp": "Pokémon Jardín",
-    "fra": "Pokémon Jardin",
-    "deu": "Garten",
-    "ita": "Pokémon Giardino",
-    "jap": "ガーデンポケモン",
-    "kor": "가든포켓몬",
-    "chs": "花园宝可梦",
-    "cht": "花園寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Red Flower",
-    "esp": "Flor Roja",
-    "fra": "Fleur Rouge",
-    "deu": "Rotblütler",
-    "ita": "Fiore Rosso",
-    "jap": "あかいはな",
-    "kor": "빨간 꽃",
-    "chs": "紅花",
-    "cht": "紅花"
-  },
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0671000"
 }

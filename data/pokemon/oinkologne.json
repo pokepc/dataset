@@ -64,39 +64,13 @@
       "from": ["lechonk"],
       "trigger": "level_up",
       "minLevel": 18,
-      "conditions": [{ "key": "gender", "gender": "male" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "male"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Oinkologne",
-    "fra": "Fragroin",
-    "deu": "Fragrunz",
-    "jap": "パフュートン",
-    "kor": "퍼퓨돈",
-    "chs": "飘香豚",
-    "cht": "飄香豚"
-  },
-  "genus": {
-    "eng": "Hog Pokémon",
-    "fra": "Pourceau",
-    "deu": "Schwein",
-    "jap": "ぶたポケモン",
-    "kor": "돼지포켓몬",
-    "chs": "猪宝可梦",
-    "cht": "豬寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": ["home"]
 }

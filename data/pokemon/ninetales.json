@@ -137,32 +137,13 @@
     {
       "from": ["vulpix"],
       "trigger": "use_item",
-      "item": { "id": "firestone", "role": "used" },
+      "item": {
+        "id": "firestone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Ninetales",
-    "fra": "Feunard",
-    "deu": "Vulnona",
-    "jap": "キュウコン",
-    "kor": "나인테일",
-    "chs": "九尾",
-    "cht": "九尾"
-  },
-  "genus": {
-    "eng": "Fox Pokémon",
-    "esp": "Pokémon Zorro",
-    "fra": "Pokémon Renard",
-    "deu": "Fuchs-Pokémon",
-    "ita": "Pokémon Volpe",
-    "jap": "きつねポケモン",
-    "kor": "여우포켓몬",
-    "chs": "狐狸宝可梦",
-    "cht": "狐狸寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rb-r",
     "gs-g",
@@ -180,5 +161,6 @@
     "lgpe-lgp",
     "home",
     "bdsp-bd"
-  ]
+  ],
+  "championsId": "0038000"
 }

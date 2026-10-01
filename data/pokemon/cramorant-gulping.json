@@ -65,31 +65,53 @@
       "from": ["cramorant"],
       "trigger": "use_move",
       "conditions": [
-        { "key": "ability", "abilities": ["gulpmissile"] },
-        { "key": "move_used", "move": "surf" },
-        { "key": "hp", "comparison": "gt", "percent": 50 },
-        { "key": "battle_condition", "condition": "move_deals_damage" },
-        { "key": "battle_condition", "condition": "not_dynamaxed" }
+        {
+          "key": "ability",
+          "abilities": ["gulpmissile"]
+        },
+        {
+          "key": "move_used",
+          "move": "surf"
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 50
+        },
+        {
+          "key": "battle_condition",
+          "condition": "move_deals_damage"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "not_dynamaxed"
+        }
       ],
-      "notes": { "eng": "Surf must deal damage to trigger Gulp Missile." },
       "revert": [
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["gulpmissile"] },
-            { "key": "battle_event", "events": ["damaging_hit"] }
-          ],
-          "notes": {
-            "eng": "Spits out the caught prey when hit; Gulp Missile must still be present."
-          }
+            {
+              "key": "ability",
+              "abilities": ["gulpmissile"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["damaging_hit"]
+            }
+          ]
         },
         "switch_out",
         "battle_end",
         {
           "games": ["swsh-sw", "swsh-sh"],
           "trigger": "automatic",
-          "conditions": [{ "key": "mechanic", "mechanic": "dynamax" }],
-          "notes": { "eng": "Dynamax discards the catch without launching it." }
+          "conditions": [
+            {
+              "key": "mechanic",
+              "mechanic": "dynamax"
+            }
+          ]
         }
       ]
     },
@@ -97,77 +119,52 @@
       "from": ["cramorant"],
       "trigger": "use_move",
       "conditions": [
-        { "key": "ability", "abilities": ["gulpmissile"] },
-        { "key": "move_used", "move": "dive" },
-        { "key": "hp", "comparison": "gt", "percent": 50 },
-        { "key": "battle_condition", "condition": "not_dynamaxed" }
+        {
+          "key": "ability",
+          "abilities": ["gulpmissile"]
+        },
+        {
+          "key": "move_used",
+          "move": "dive"
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 50
+        },
+        {
+          "key": "battle_condition",
+          "condition": "not_dynamaxed"
+        }
       ],
-      "notes": {
-        "eng": "Dive triggers Gulp Missile during its diving turn, even without dealing damage."
-      },
       "revert": [
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["gulpmissile"] },
-            { "key": "battle_event", "events": ["damaging_hit"] }
-          ],
-          "notes": {
-            "eng": "Spits out the caught prey when hit; Gulp Missile must still be present."
-          }
+            {
+              "key": "ability",
+              "abilities": ["gulpmissile"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["damaging_hit"]
+            }
+          ]
         },
         "switch_out",
         "battle_end",
         {
           "games": ["swsh-sw", "swsh-sh"],
           "trigger": "automatic",
-          "conditions": [{ "key": "mechanic", "mechanic": "dynamax" }],
-          "notes": { "eng": "Dynamax discards the catch without launching it." }
+          "conditions": [
+            {
+              "key": "mechanic",
+              "mechanic": "dynamax"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Cramorant (Gulping Form)",
-    "esp": "Cramorant (Forma Tragatodo)",
-    "fra": "Nigosier (Forme Gobe-Tout)",
-    "deu": "Urgl (Schlingform)",
-    "ita": "Cramorant (Forma Inghiottitutto)",
-    "jap": "ウッウ (うのみのすがた)",
-    "kor": "윽우지 (그대로 삼킨 모습)",
-    "chs": "古月鸟 (一口吞的样子)",
-    "cht": "古月鳥 (一口吞的樣子)"
-  },
-  "genus": {
-    "eng": "Gulp Pokémon",
-    "esp": "Pokémon Tragón",
-    "fra": "Pokémon Avaltouron",
-    "deu": "Schling-Pokémon",
-    "ita": "Pokémon Inghiottone",
-    "jap": "うのみポケモン",
-    "kor": "그대로삼키기포켓몬",
-    "chs": "一口吞宝可梦",
-    "cht": "一口吞寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Cramorant",
-    "fra": "Nigosier",
-    "deu": "Urgl",
-    "jap": "ウッウ",
-    "kor": "윽우지",
-    "chs": "古月鸟",
-    "cht": "古月鳥"
-  },
-  "formNames": {
-    "eng": "Gulping Form",
-    "esp": "Forma Tragatodo",
-    "fra": "Forme Gobe-Tout",
-    "deu": "Schlingform",
-    "ita": "Forma Inghiottitutto",
-    "jap": "うのみのすがた",
-    "kor": "그대로 삼킨 모습",
-    "chs": "一口吞的样子",
-    "cht": "一口吞的樣子"
-  },
   "transferOnlyIn": []
 }

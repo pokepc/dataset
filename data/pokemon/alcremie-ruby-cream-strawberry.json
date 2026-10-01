@@ -66,54 +66,24 @@
       "from": ["milcery"],
       "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
       "trigger": "special",
-      "item": { "id": "strawberrysweet", "role": "held" },
+      "item": {
+        "id": "strawberrysweet",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "spin", "direction": "counterclockwise", "seconds": 5, "comparison": "lt" },
-        { "key": "time_of_day", "time": "day" }
+        {
+          "key": "spin",
+          "direction": "counterclockwise",
+          "seconds": 5,
+          "comparison": "lt"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Alcremie (Ruby Cream Strawberry Sweet)",
-    "esp": "Alcremie (Crema Rosa)",
-    "fra": "Charmilly (Lait Ruby Fraise en Sucre)",
-    "deu": "Pokusan (Ruby-Creme)",
-    "ita": "Alcremie (Latterosa)",
-    "jap": "マホイップ (ミルキィルビー)",
-    "kor": "마휘핑 (밀키루비)",
-    "chs": "霜奶仙 (奶香红钻)",
-    "cht": "霜奶仙 (奶香紅鑽)"
-  },
-  "genus": {
-    "eng": "Cream Pokémon",
-    "esp": "Pokémon Nata",
-    "fra": "Pokémon Crème",
-    "deu": "Sahne-Pokémon",
-    "ita": "Pokémon Pannafresca",
-    "jap": "クリームポケモン",
-    "kor": "크림포켓몬",
-    "chs": "鲜奶油宝可梦",
-    "cht": "鮮奶油寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Alcremie",
-    "fra": "Charmilly",
-    "deu": "Pokusan",
-    "jap": "マホイップ",
-    "kor": "마휘핑",
-    "chs": "霜奶仙",
-    "cht": "霜奶仙"
-  },
-  "formNames": {
-    "eng": "Ruby Cream Strawberry Sweet",
-    "esp": "Crema Rosa",
-    "fra": "Lait Ruby Fraise en Sucre",
-    "deu": "Ruby-Creme",
-    "ita": "Latterosa",
-    "jap": "ミルキィルビー",
-    "kor": "밀키루비",
-    "chs": "奶香红钻",
-    "cht": "奶香紅鑽"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0869001"
 }

@@ -123,46 +123,14 @@
       "from": ["teddiursa"],
       "trigger": "level_up",
       "minLevel": 30,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Ursaring (Female)",
-    "fra": "Ursaring (Female)",
-    "deu": "Ursaring (Female)"
-  },
-  "genus": {
-    "eng": "Hibernator Pokémon",
-    "esp": "Pokémon Hibernante",
-    "fra": "Pokémon Hibernant",
-    "deu": "Schläfer",
-    "ita": "Pokémon Letargo",
-    "jap": "とうみんポケモン",
-    "kor": "동면포켓몬",
-    "chs": "冬眠宝可梦",
-    "cht": "冬眠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Ursaring",
-    "fra": "Ursaring",
-    "deu": "Ursaring",
-    "jap": "リングマ",
-    "kor": "링곰",
-    "chs": "圈圈熊",
-    "cht": "圈圈熊"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "gs-s",
     "rs-r",

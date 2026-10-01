@@ -194,37 +194,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Alcremie (Gigantamax Form)",
-    "fra": "Charmilly (Forme Gigamax)",
-    "deu": "Pokusan (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Cream Pokémon",
-    "esp": "Pokémon Nata",
-    "fra": "Pokémon Crème",
-    "deu": "Sahne-Pokémon",
-    "ita": "Pokémon Pannafresca",
-    "jap": "クリームポケモン",
-    "kor": "크림포켓몬",
-    "chs": "鲜奶油宝可梦",
-    "cht": "鮮奶油寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Alcremie",
-    "fra": "Charmilly",
-    "deu": "Pokusan",
-    "jap": "マホイップ",
-    "kor": "마휘핑",
-    "chs": "霜奶仙",
-    "cht": "霜奶仙"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

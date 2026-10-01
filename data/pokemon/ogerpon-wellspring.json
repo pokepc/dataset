@@ -66,41 +66,12 @@
       "from": ["ogerpon-hearthflame", "ogerpon-cornerstone", "ogerpon"],
       "games": ["sv-s", "sv-v"],
       "trigger": "equip_item",
-      "item": { "id": "wellspringmask", "role": "held" },
+      "item": {
+        "id": "wellspringmask",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Ogerpon (Wellspring Mask)",
-    "esp": "Ogerpon (Máscara Fuente)",
-    "fra": "Ogerpon (Masque du Puits)",
-    "deu": "Ogerpon (Brunnenmaske)",
-    "ita": "Ogerpon (Maschera Pozzo)",
-    "jap": "オーガポン (いどのめん)",
-    "kor": "오거폰 (우물의가면)",
-    "chs": "厄诡椪 (水井面具)",
-    "cht": "厄鬼椪 (水井面具)"
-  },
-  "genus": { "eng": "Mask Pokémon", "fra": "Masque", "deu": "Mask Pokémon", "kor": "가면포켓몬" },
-  "speciesNames": {
-    "eng": "Ogerpon",
-    "fra": "Ogerpon",
-    "deu": "Ogerpon",
-    "jap": "オーガポン",
-    "kor": "오거폰",
-    "chs": "厄诡椪",
-    "cht": "厄鬼椪"
-  },
-  "formNames": {
-    "eng": "Wellspring Mask",
-    "esp": "Máscara Fuente",
-    "fra": "Masque du Puits",
-    "deu": "Brunnenmaske",
-    "ita": "Maschera Pozzo",
-    "jap": "いどのめん",
-    "kor": "우물의가면",
-    "chs": "水井面具",
-    "cht": "水井面具"
-  },
   "transferOnlyIn": []
 }

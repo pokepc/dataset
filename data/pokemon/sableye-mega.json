@@ -65,66 +65,49 @@
       "from": ["sableye"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "sablenite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "sablenite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["sableye"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "sablenite", "role": "held" },
+      "item": {
+        "id": "sablenite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Sableye",
-    "fra": "MégaTénéfix",
-    "deu": "Mega-Zobiris",
-    "jap": "メガヤミラミ",
-    "kor": "메가깜까미",
-    "chs": "超级勾魂眼",
-    "cht": "超級勾魂眼"
-  },
-  "genus": {
-    "eng": "Darkness Pokémon",
-    "esp": "Pokémon Oscuridad",
-    "fra": "Pokémon Obscurité",
-    "deu": "Finsternis-Pokémon",
-    "ita": "Pokémon Oscurità",
-    "jap": "くらやみポケモン",
-    "kor": "어둠포켓몬",
-    "chs": "黑暗宝可梦",
-    "cht": "黑暗寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Sableye",
-    "fra": "Ténéfix",
-    "deu": "Zobiris",
-    "jap": "ヤミラミ",
-    "kor": "깜까미",
-    "chs": "勾魂眼",
-    "cht": "勾魂眼"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["oras-or"]
+  "transferOnlyIn": ["oras-or"],
+  "championsId": "0302001"
 }

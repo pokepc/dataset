@@ -121,46 +121,14 @@
       "from": ["torchic"],
       "trigger": "level_up",
       "minLevel": 16,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Combusken (Female)",
-    "fra": "Galifeu (Female)",
-    "deu": "Jungglut (Female)"
-  },
-  "genus": {
-    "eng": "Young Fowl Pokémon",
-    "esp": "Pokémon Ave Corral",
-    "fra": "Pokémon Poulet",
-    "deu": "Kleinhahn-Pokémon",
-    "ita": "Pokémon Rampollo",
-    "jap": "わかどりポケモン",
-    "kor": "꼬마닭포켓몬",
-    "chs": "幼鸡宝可梦",
-    "cht": "幼雞寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Combusken",
-    "fra": "Galifeu",
-    "deu": "Jungglut",
-    "jap": "ワカシャモ",
-    "kor": "영치코",
-    "chs": "力壮鸡",
-    "cht": "力壯雞"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",

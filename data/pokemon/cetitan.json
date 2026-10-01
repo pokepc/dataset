@@ -63,29 +63,12 @@
     {
       "from": ["cetoddle"],
       "trigger": "use_item",
-      "item": { "id": "icestone", "role": "used" },
+      "item": {
+        "id": "icestone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Cetitan",
-    "fra": "Balbalèze",
-    "deu": "Kolowal",
-    "jap": "ハルクジラ",
-    "kor": "우락고래",
-    "chs": "浩大鲸",
-    "cht": "浩大鯨"
-  },
-  "genus": {
-    "eng": "Terra Whale Pokémon",
-    "fra": "Baleinapied",
-    "deu": "Landwal",
-    "jap": "りくくじらポケモン",
-    "kor": "육지고래포켓몬",
-    "chs": "陆鲸宝可梦",
-    "cht": "陸鯨寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["home"]
 }

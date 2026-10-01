@@ -143,41 +143,13 @@
       "from": ["zubat"],
       "trigger": "level_up",
       "minLevel": 22,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": { "eng": "Golbat (Female)", "fra": "Nosferalto (Female)", "deu": "Golbat (Female)" },
-  "genus": {
-    "eng": "Bat Pokémon",
-    "esp": "Pokémon Murciélago",
-    "fra": "Pokémon Chovsouris",
-    "deu": "Fledermaus-Pokémon",
-    "ita": "Pokémon Pipistrello",
-    "jap": "こうもりポケモン",
-    "kor": "박쥐포켓몬",
-    "chs": "蝙蝠宝可梦",
-    "cht": "蝙蝠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Golbat",
-    "fra": "Nosferalto",
-    "deu": "Golbat",
-    "jap": "ゴルバット",
-    "kor": "골뱃",
-    "chs": "大嘴蝠",
-    "cht": "大嘴蝠"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": ["boxrs", "col", "ranch", "bank", "home"]
 }

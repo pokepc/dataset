@@ -134,31 +134,17 @@
     {
       "from": ["eevee"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "day" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Espeon",
-    "fra": "Mentali",
-    "deu": "Psiana",
-    "jap": "エーフィ",
-    "kor": "에브이",
-    "chs": "太阳伊布",
-    "cht": "太陽伊布"
-  },
-  "genus": {
-    "eng": "Sun Pokémon",
-    "esp": "Pokémon Sol",
-    "fra": "Pokémon Soleil",
-    "deu": "Sonnen-Pokémon",
-    "ita": "Pokémon Sole",
-    "jap": "たいようポケモン",
-    "kor": "태양포켓몬",
-    "chs": "太阳宝可梦",
-    "cht": "太陽寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -171,5 +157,6 @@
     "bw-w",
     "bank",
     "home"
-  ]
+  ],
+  "championsId": "0196000"
 }

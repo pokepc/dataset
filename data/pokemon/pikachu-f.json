@@ -141,42 +141,17 @@
     {
       "from": ["pichu"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }, { "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": { "eng": "Pikachu (Female)", "fra": "Pikachu (Female)", "deu": "Pikachu (Female)" },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus-Pokémon",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Pikachu",
-    "fra": "Pikachu",
-    "deu": "Pikachu",
-    "jap": "ピカチュウ",
-    "kor": "피카츄",
-    "chs": "皮卡丘",
-    "cht": "皮卡丘"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -188,5 +163,6 @@
     "b2w2-w2",
     "bank",
     "home"
-  ]
+  ],
+  "championsId": "0025000"
 }

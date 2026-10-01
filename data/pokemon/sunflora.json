@@ -124,32 +124,13 @@
     {
       "from": ["sunkern"],
       "trigger": "use_item",
-      "item": { "id": "sunstone", "role": "used" },
+      "item": {
+        "id": "sunstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Sunflora",
-    "fra": "Héliatronc",
-    "deu": "Sonnflora",
-    "jap": "キマワリ",
-    "kor": "해루미",
-    "chs": "向日花怪",
-    "cht": "向日花怪"
-  },
-  "genus": {
-    "eng": "Sun Pokémon",
-    "esp": "Pokémon Sol",
-    "fra": "Pokémon Soleil",
-    "deu": "Sonne",
-    "ita": "Pokémon Sole",
-    "jap": "たいようポケモン",
-    "kor": "태양포켓몬",
-    "chs": "太阳宝可梦",
-    "cht": "太陽寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

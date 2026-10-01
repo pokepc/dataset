@@ -110,41 +110,13 @@
     {
       "from": ["aipom"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "doublehit" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "doublehit"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Ambipom",
-    "fra": "Capidextre",
-    "deu": "Ambidiffel",
-    "jap": "エテボース",
-    "kor": "겟핸보숭",
-    "chs": "双尾怪手",
-    "cht": "雙尾怪手"
-  },
-  "genus": {
-    "eng": "Long Tail Pokémon",
-    "esp": "Pokémon Cola Larga",
-    "fra": "Pokémon Longqueue",
-    "deu": "Langschweif",
-    "ita": "Pokémon Lungacoda",
-    "jap": "おながポケモン",
-    "kor": "긴꼬리포켓몬",
-    "chs": "长尾宝可梦",
-    "cht": "長尾寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
   "transferOnlyIn": ["ranch", "bw-b", "bw-w", "bank", "sm-s", "sm-m", "home"]
 }

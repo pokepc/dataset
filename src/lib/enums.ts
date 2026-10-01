@@ -55,9 +55,6 @@ export const languageAlpha3Codes = [
   'por',
 ] as const
 
-/**
- * @deprecated use gameLocales from lib-next/languages
- */
 export const languageInGameCodes = [
   'ENG',
   'ES-ES',
@@ -377,3 +374,176 @@ export const formBattleConditions = [
   'weather_effects_negated',
   'zen_mode_suppressed_or_replaced',
 ] as const
+
+// ---- Game mechanics (first sourced from Pokémon Champions)
+
+export const pokemonTypes = [
+  'normal',
+  'fire',
+  'water',
+  'electric',
+  'grass',
+  'ice',
+  'fighting',
+  'poison',
+  'ground',
+  'flying',
+  'psychic',
+  'bug',
+  'rock',
+  'ghost',
+  'dragon',
+  'dark',
+  'steel',
+  'fairy',
+] as const
+export type PokemonType = (typeof pokemonTypes)[number]
+
+export const pokemonTypesInternalOrder: PokemonType[] = [
+  'normal',
+  'fighting',
+  'flying',
+  'poison',
+  'ground',
+  'rock',
+  'bug',
+  'ghost',
+  'steel',
+  'fire',
+  'water',
+  'grass',
+  'electric',
+  'psychic',
+  'ice',
+  'dragon',
+  'dark',
+  'fairy',
+]
+
+export type MoveCategory = (typeof moveCategory)[number]
+
+export const moveClasses = [
+  'punching',
+  'sound_based',
+  'dance',
+  'slicing',
+  'wind',
+  'powder',
+  'ball_bomb',
+  'pulse',
+  'biting',
+  'explosive',
+  'mental',
+  'healing',
+] as const
+export type MoveClass = (typeof moveClasses)[number]
+
+export const moveTargets = [
+  'single_target',
+  'self',
+  'single_ally',
+  'all_allies',
+  'random_opponent',
+  'all_opponents',
+  'entire_field',
+  'opponents_side',
+  'users_side',
+  'all_pokemon',
+  'varies',
+] as const
+export type MoveTarget = (typeof moveTargets)[number]
+
+export const statusConditions = [
+  'paralyzed',
+  'frozen',
+  'poisoned',
+  'badly_poisoned',
+  'burned',
+  'asleep',
+] as const
+export type StatusCondition = (typeof statusConditions)[number]
+
+export const battleStates = [
+  'harsh_sunlight',
+  'rain',
+  'sandstorm',
+  'snow',
+  'electric_terrain',
+  'grassy_terrain',
+  'misty_terrain',
+  'trick_room',
+  'magic_room',
+  'wonder_room',
+  'critical_hit_ratio_boost',
+  'confused',
+  'infatuated',
+  'drowsy',
+  'encore',
+  'no_ability',
+  'unable_to_repeat',
+  'tailwind',
+  'move_disabled',
+  'cant_escape',
+  'locked_on',
+  'electric_boost',
+  'gravity',
+  'safeguard',
+  'stealth_rock',
+  'stockpiling',
+  'taunted',
+  'magnet_rise',
+  'toxic_spikes',
+  'wish',
+  'sticky_web',
+  'ingrained',
+  'cursed',
+  'trick_or_treating',
+  'light_screen',
+  'reflect',
+  'sealing_off',
+  'perishing',
+  'spikes',
+  'destiny_bound',
+  'forest_cursed',
+  'leech_seeded',
+  'bound',
+  'rampaging',
+  'badly_poisoned',
+  'future_attack',
+  'uproar',
+  'aqua_ring',
+  'landed',
+  'fairy_locked',
+  'psychic_terrain',
+  'throat_chopped',
+  'aurora_veil',
+  'salt_cured',
+  'syrupy',
+  'healing_prevented',
+  'recharging',
+  'charging',
+  'sky_high',
+  'submerged',
+  'underground',
+  'concealed',
+  'minimized',
+  'atk_def_swapped',
+  'flash_fire',
+  'micle_berry',
+  'octolocked',
+  'wide_open',
+  'jaw_locked',
+] as const
+export type BattleState = (typeof battleStates)[number]
+
+export const battleItemCategories = [
+  'power_boost',
+  'recovery',
+  'defense',
+  'stat_boost',
+  'effect_extend',
+  'berry',
+  'other',
+  'mega_stone',
+] as const
+export type BattleItemCategory = (typeof battleItemCategories)[number]

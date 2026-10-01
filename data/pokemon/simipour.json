@@ -80,31 +80,13 @@
     {
       "from": ["panpour"],
       "trigger": "use_item",
-      "item": { "id": "waterstone", "role": "used" },
+      "item": {
+        "id": "waterstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Simipour",
-    "fra": "Flotoutan",
-    "deu": "Sodachita",
-    "jap": "ヒヤッキー",
-    "kor": "앗차키",
-    "chs": "冷水猿",
-    "cht": "冷水猿"
-  },
-  "genus": {
-    "eng": "Geyser Pokémon",
-    "esp": "Pokémon Drenaje",
-    "fra": "Pokémon Drainage",
-    "deu": "Drainage",
-    "ita": "Pokémon Spruzzacqua",
-    "jap": "ほうすいポケモン",
-    "kor": "방수포켓몬",
-    "chs": "放水宝可梦",
-    "cht": "放水寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"],
+  "championsId": "0516000"
 }

@@ -66,37 +66,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Blastoise (Gigantamax Form)",
-    "fra": "Tortank (Forme Gigamax)",
-    "deu": "Turtok (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Shellfish Pokémon",
-    "esp": "Pokémon Armazón",
-    "fra": "Pokémon Carapace",
-    "deu": "Panzertier-Pokémon",
-    "ita": "Pokémon Crostaceo",
-    "jap": "こうらポケモン",
-    "kor": "껍질포켓몬",
-    "chs": "甲壳宝可梦",
-    "cht": "甲殼寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Blastoise",
-    "fra": "Tortank",
-    "deu": "Turtok",
-    "jap": "カメックス",
-    "kor": "거북왕",
-    "chs": "水箭龟",
-    "cht": "水箭龜"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

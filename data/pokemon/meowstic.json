@@ -68,7 +68,6 @@
   "femaleRate": 50,
   "baseForms": [],
   "forms": ["meowstic-f", "meowstic-mega"],
-  "formsDesc": "Male and female Meowstic have different level-up moves and hidden abilities.  While gender differences are not usually considered to be separate forms, Meowstic's are treated as such for practical purposes.",
   "refs": {
     "pkApiId": "678",
     "pkApiFormId": "678",
@@ -84,41 +83,14 @@
       "from": ["espurr"],
       "trigger": "level_up",
       "minLevel": 25,
-      "conditions": [{ "key": "gender", "gender": "male" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "male"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Meowstic",
-    "fra": "Mistigrix",
-    "deu": "Psiaugon",
-    "jap": "ニャオニクス",
-    "kor": "냐오닉스",
-    "chs": "超能妙喵",
-    "cht": "超能妙喵"
-  },
-  "genus": {
-    "eng": "Constraint Pokémon",
-    "esp": "Pokémon Autocontrol",
-    "fra": "Pokémon SelfContrôle",
-    "deu": "Fassungs-Pokémon",
-    "ita": "Pokémon Temperanza",
-    "jap": "よくせいポケモン",
-    "kor": "억제포켓몬",
-    "chs": "抑制宝可梦",
-    "cht": "抑制寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"],
+  "championsId": "0678000"
 }

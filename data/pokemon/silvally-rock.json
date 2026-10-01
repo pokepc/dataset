@@ -83,51 +83,17 @@
       ],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
       "trigger": "equip_item",
-      "item": { "id": "rockmemory", "role": "held" },
-      "conditions": [{ "key": "ability", "abilities": ["rkssystem"] }]
+      "item": {
+        "id": "rockmemory",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["rkssystem"]
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Silvally (Type: Rock)",
-    "esp": "Silvally (Tipo: Roca)",
-    "fra": "Silvallié (Type : Roche)",
-    "deu": "Amigento (Typ:Gestein)",
-    "ita": "Silvally (Tipo Roccia)",
-    "jap": "シルヴァディ (タイプ：ロック)",
-    "kor": "실버디 (타입:락)",
-    "chs": "银伴战兽 (属性：岩石)",
-    "cht": "銀伴戰獸 (屬性：岩石)"
-  },
-  "genus": {
-    "eng": "Synthetic Pokémon",
-    "esp": "Pokémon Multigénico",
-    "fra": "Pokémon Multigénome",
-    "deu": "Modifikations-Pokémon",
-    "ita": "Pokémon Multigene",
-    "jap": "じんこうポケモン",
-    "kor": "인공포켓몬",
-    "chs": "人工宝可梦",
-    "cht": "人工寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Silvally",
-    "fra": "Silvallié",
-    "deu": "Amigento",
-    "jap": "シルヴァディ",
-    "kor": "실버디",
-    "chs": "银伴战兽",
-    "cht": "銀伴戰獸"
-  },
-  "formNames": {
-    "eng": "Type: Rock",
-    "esp": "Tipo: Roca",
-    "fra": "Type : Roche",
-    "deu": "Typ:Gestein",
-    "ita": "Tipo Roccia",
-    "jap": "タイプ：ロック",
-    "kor": "타입:락",
-    "chs": "属性：岩石",
-    "cht": "屬性：岩石"
-  },
   "transferOnlyIn": []
 }

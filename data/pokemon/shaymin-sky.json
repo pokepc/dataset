@@ -98,14 +98,22 @@
         "sv-v"
       ],
       "trigger": "use_item",
-      "item": { "id": "gracidea", "role": "used", "consumed": false },
-      "conditions": [
-        { "key": "time_of_day", "time": "day" },
-        { "key": "status", "status": "frozen", "relation": "not" }
-      ],
-      "notes": {
-        "eng": "Day includes the daylight hours during which the game permits Gracidea use."
+      "item": {
+        "id": "gracidea",
+        "role": "used",
+        "consumed": false
       },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        },
+        {
+          "key": "status",
+          "status": "frozen",
+          "relation": "not"
+        }
+      ],
       "revert": [
         {
           "games": [
@@ -128,19 +136,36 @@
             "bdsp-sp"
           ],
           "trigger": "automatic",
-          "conditions": [{ "key": "time_of_day", "time": "night" }]
+          "conditions": [
+            {
+              "key": "time_of_day",
+              "time": "night"
+            }
+          ]
         },
         {
           "games": ["sv-s", "sv-v"],
           "trigger": "automatic",
           "conditions": [
-            { "key": "time_of_day", "time": "night" },
-            { "key": "battle_event", "events": ["battle_end"] }
+            {
+              "key": "time_of_day",
+              "time": "night"
+            },
+            {
+              "key": "battle_event",
+              "events": ["battle_end"]
+            }
           ]
         },
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "status", "status": "frozen", "relation": "is" }]
+          "conditions": [
+            {
+              "key": "status",
+              "status": "frozen",
+              "relation": "is"
+            }
+          ]
         },
         {
           "games": [
@@ -157,17 +182,35 @@
             "oras-as"
           ],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "pc"
+            }
+          ]
         },
         {
           "games": ["sm-s", "sm-m", "usum-us", "usum-um", "bdsp-bd", "bdsp-sp", "sv-s", "sv-v"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "withdrawal", "service": "pc" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "withdrawal",
+              "service": "pc"
+            }
+          ]
         },
         {
           "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "bank" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "bank"
+            }
+          ]
         },
         {
           "games": [
@@ -186,12 +229,24 @@
             "bdsp-sp"
           ],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "day_care" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "day_care"
+            }
+          ]
         },
         {
           "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "nursery" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "nursery"
+            }
+          ]
         }
       ]
     },
@@ -199,73 +254,58 @@
       "from": ["shaymin"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "gracidea", "role": "used", "consumed": false },
+      "item": {
+        "id": "gracidea",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [
-        { "key": "time_of_day", "time": "day" },
-        { "key": "status", "status": "frostbite", "relation": "not" }
+        {
+          "key": "time_of_day",
+          "time": "day"
+        },
+        {
+          "key": "status",
+          "status": "frostbite",
+          "relation": "not"
+        }
       ],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "gracidea", "role": "used", "consumed": false },
+          "item": {
+            "id": "gracidea",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "time_of_day", "time": "night" },
-            { "key": "battle_event", "events": ["battle_start"] }
+            {
+              "key": "time_of_day",
+              "time": "night"
+            },
+            {
+              "key": "battle_event",
+              "events": ["battle_start"]
+            }
           ]
         },
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "status", "status": "frostbite", "relation": "is" }]
+          "conditions": [
+            {
+              "key": "status",
+              "status": "frostbite",
+              "relation": "is"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Shaymin (Sky Forme)",
-    "esp": "Shaymin (Forma Cielo)",
-    "fra": "Shaymin (Forme Céleste)",
-    "deu": "Shaymin (Zenitform)",
-    "ita": "Shaymin (Forma Cielo)",
-    "jap": "シェイミ (スカイフォルム)",
-    "kor": "쉐이미 (스카이폼)",
-    "chs": "谢米 (天空形态)",
-    "cht": "謝米 (天空形態)"
-  },
-  "genus": {
-    "eng": "Gratitude Pokémon",
-    "esp": "Pokémon Gratitud",
-    "fra": "Pokémon Gratitude",
-    "deu": "Dankbarkeit",
-    "ita": "Pokémon Gratitudine",
-    "jap": "かんしゃポケモン",
-    "kor": "감사포켓몬",
-    "chs": "感谢宝可梦",
-    "cht": "感謝寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Shaymin",
-    "fra": "Shaymin",
-    "deu": "Shaymin",
-    "jap": "シェイミ",
-    "kor": "쉐이미",
-    "chs": "谢米",
-    "cht": "謝米"
-  },
-  "formNames": {
-    "eng": "Sky Forme",
-    "esp": "Forma Cielo",
-    "fra": "Forme Céleste",
-    "deu": "Zenitform",
-    "ita": "Forma Cielo",
-    "jap": "スカイフォルム",
-    "kor": "스카이폼",
-    "chs": "天空形态",
-    "cht": "天空形態"
-  },
   "transferOnlyIn": [
     "ranch",
     "hgss-hg",

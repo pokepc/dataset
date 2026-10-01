@@ -68,8 +68,14 @@
       "games": ["la"],
       "trigger": "special",
       "conditions": [
-        { "key": "recoil_damage_without_fainting", "amount": 294 },
-        { "key": "gender", "gender": "female" }
+        {
+          "key": "recoil_damage_without_fainting",
+          "amount": 294
+        },
+        {
+          "key": "gender",
+          "gender": "female"
+        }
       ],
       "activation": "manual"
     },
@@ -78,47 +84,17 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "recoil_damage_without_fainting", "amount": 294 },
-        { "key": "gender", "gender": "female" }
+        {
+          "key": "recoil_damage_without_fainting",
+          "amount": 294
+        },
+        {
+          "key": "gender",
+          "gender": "female"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Basculegion (Female)",
-    "fra": "Paragruel (Femelle)",
-    "deu": "Salmagnis (Weiblich)",
-    "jap": "イダイトウ (メスのすがた)"
-  },
-  "genus": {
-    "eng": "Big Fish Pokémon",
-    "fra": "Pokémon Poissigrand",
-    "deu": "Großfisch-Pokémon",
-    "ita": "Pokémon Pescegrosso",
-    "jap": "おおうおポケモン",
-    "kor": "큰물고기포켓몬",
-    "chs": "大鱼宝可梦",
-    "cht": "大魚寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Basculegion",
-    "fra": "Paragruel",
-    "deu": "Salmagnis",
-    "jap": "イダイトウ",
-    "kor": "대쓰여너",
-    "chs": "幽尾玄鱼",
-    "cht": "幽尾玄魚"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0902001"
 }

@@ -67,41 +67,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Eevee (Gigantamax Form)",
-    "fra": "Évoli (Forme Gigamax)",
-    "deu": "Evoli (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Evolution Pokémon",
-    "esp": "Pokémon Evolución",
-    "fra": "Pokémon Évolutif",
-    "deu": "Evolutions-Pokémon",
-    "ita": "Pokémon Evoluzione",
-    "jap": "しんかポケモン",
-    "kor": "진화포켓몬",
-    "chs": "进化宝可梦",
-    "cht": "進化寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Eevee",
-    "fra": "Évoli",
-    "deu": "Evoli",
-    "jap": "イーブイ",
-    "kor": "이브이",
-    "chs": "伊布",
-    "cht": "伊布"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

@@ -123,9 +123,18 @@
       ],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "environment", "environment": "cave_or_beach" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "environment",
+          "environment": "cave_or_beach"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     },
     {
@@ -133,9 +142,18 @@
       "games": ["dp-d", "dp-p", "pt", "hgss-hg", "hgss-ss"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "environment", "environment": "snowstorm" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "environment",
+          "environment": "snowstorm"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     },
     {
@@ -143,42 +161,56 @@
       "games": ["hgss-hg", "hgss-ss"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "bell_tower" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
-      ],
-      "notes": { "eng": "These towers use the cave battle environment." }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "bell_tower"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
+      ]
     },
     {
       "from": ["burmy", "burmy-trash"],
       "games": ["hgss-hg", "hgss-ss"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "burned_tower" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
-      ],
-      "notes": { "eng": "These towers use the cave battle environment." }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "burned_tower"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
+      ]
     },
     {
       "from": ["burmy", "burmy-trash"],
       "games": ["hgss-hg", "hgss-ss"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "sprout_tower" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
-      ],
-      "notes": { "eng": "These towers use the cave battle environment." }
-    },
-    {
-      "from": ["burmy-trash", "burmy"],
-      "games": ["la"],
-      "trigger": "automatic",
-      "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "crimson_mirelands" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "sprout_tower"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     },
     {
@@ -186,50 +218,40 @@
       "games": ["la"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "battle_event", "events": ["battle_end"] },
-        { "key": "location", "location": "coronet_highlands" },
-        { "key": "mechanic", "mechanic": "participated_in_battle" }
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "crimson_mirelands"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
+      ]
+    },
+    {
+      "from": ["burmy-trash", "burmy"],
+      "games": ["la"],
+      "trigger": "automatic",
+      "conditions": [
+        {
+          "key": "battle_event",
+          "events": ["battle_end"]
+        },
+        {
+          "key": "location",
+          "location": "coronet_highlands"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "participated_in_battle"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Burmy (Sandy Cloak)",
-    "esp": "Burmy (Tronco Arena)",
-    "fra": "Cheniti (Cape Sable)",
-    "deu": "Burmy (Sandumhang)",
-    "ita": "Burmy (Manto Sabbia)",
-    "jap": "ミノムッチ (すなちのミノ)",
-    "kor": "도롱충이 (모래땅도롱)"
-  },
-  "genus": {
-    "eng": "Bagworm Pokémon",
-    "esp": "Pokémon Larva",
-    "fra": "Pokémon Ver Caché",
-    "deu": "Beutelwurm",
-    "ita": "Pokémon Larva",
-    "jap": "みのむしポケモン",
-    "kor": "도롱이벌레포켓몬",
-    "chs": "蓑衣虫宝可梦",
-    "cht": "蓑衣蟲寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Burmy",
-    "fra": "Cheniti",
-    "deu": "Burmy",
-    "jap": "ミノムッチ",
-    "kor": "도롱충이",
-    "chs": "结草儿",
-    "cht": "結草兒"
-  },
-  "formNames": {
-    "eng": "Sandy Cloak",
-    "esp": "Tronco Arena",
-    "fra": "Cape Sable",
-    "deu": "Sandumhang",
-    "ita": "Manto Sabbia",
-    "jap": "すなちのミノ",
-    "kor": "모래땅도롱"
-  },
   "transferOnlyIn": [
     "ranch",
     "bw-b",

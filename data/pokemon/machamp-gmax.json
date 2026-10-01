@@ -67,37 +67,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Machamp (Gigantamax Form)",
-    "fra": "Mackogneur (Forme Gigamax)",
-    "deu": "Machomei (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Superpower Pokémon",
-    "esp": "Pokémon Superpoder",
-    "fra": "Pokémon Colosse",
-    "deu": "Kraftprotz-Pokémon",
-    "ita": "Pokémon Megaforza",
-    "jap": "かいりきポケモン",
-    "kor": "괴력포켓몬",
-    "chs": "怪力宝可梦",
-    "cht": "怪力寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Machamp",
-    "fra": "Mackogneur",
-    "deu": "Machomei",
-    "jap": "カイリキー",
-    "kor": "괴력몬",
-    "chs": "怪力",
-    "cht": "怪力"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

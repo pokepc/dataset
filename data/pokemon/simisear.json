@@ -80,31 +80,13 @@
     {
       "from": ["pansear"],
       "trigger": "use_item",
-      "item": { "id": "firestone", "role": "used" },
+      "item": {
+        "id": "firestone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Simisear",
-    "fra": "Flamoutan",
-    "deu": "Grillchita",
-    "jap": "バオッキー",
-    "kor": "바오키",
-    "chs": "爆香猿",
-    "cht": "爆香猿"
-  },
-  "genus": {
-    "eng": "Ember Pokémon",
-    "esp": "Pokémon Lumbre",
-    "fra": "Pokémon Braise",
-    "deu": "Funkenregen",
-    "ita": "Pokémon Sfavillante",
-    "jap": "ひのこポケモン",
-    "kor": "불티포켓몬",
-    "chs": "火花宝可梦",
-    "cht": "火花寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"],
+  "championsId": "0514000"
 }

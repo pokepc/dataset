@@ -87,30 +87,15 @@
       "from": ["dartrix"],
       "trigger": "level_up",
       "minLevel": 34,
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "outside"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Decidueye",
-    "fra": "Archéduc",
-    "deu": "Silvarro",
-    "jap": "ジュナイパー",
-    "kor": "모크나이퍼",
-    "chs": "狙射树枭",
-    "cht": "狙射樹梟"
-  },
-  "genus": {
-    "eng": "Arrow Quill Pokémon",
-    "esp": "Pokémon Pluma Flecha",
-    "fra": "Pokémon Plumeflèche",
-    "deu": "Pfeilflügel-Pokémon",
-    "ita": "Pokémon Alifreccia",
-    "jap": "やばねポケモン",
-    "kor": "화살깃포켓몬",
-    "chs": "箭羽宝可梦",
-    "cht": "箭羽寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0724000"
 }

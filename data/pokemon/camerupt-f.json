@@ -124,46 +124,14 @@
       "from": ["numel"],
       "trigger": "level_up",
       "minLevel": 33,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Camerupt (Female)",
-    "fra": "Camérupt (Female)",
-    "deu": "Camerupt (Female)"
-  },
-  "genus": {
-    "eng": "Eruption Pokémon",
-    "esp": "Pokémon Erupción",
-    "fra": "Pokémon Éruption",
-    "deu": "Ausbruch",
-    "ita": "Pokémon Eruzione",
-    "jap": "ふんかポケモン",
-    "kor": "분화포켓몬",
-    "chs": "喷火宝可梦",
-    "cht": "噴火寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Camerupt",
-    "fra": "Camérupt",
-    "deu": "Camerupt",
-    "jap": "バクーダ",
-    "kor": "폭타",
-    "chs": "喷火驼",
-    "cht": "噴火駝"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -179,5 +147,6 @@
     "usum-us",
     "usum-um",
     "home"
-  ]
+  ],
+  "championsId": "0323000"
 }

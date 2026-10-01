@@ -1,13 +1,10 @@
 {
   "fully-sorted-minimal": {
     "id": "fully-sorted-minimal",
-    "name": "Regional: Sorted by Forms, Minimal",
     "version": 1,
     "gameSet": "la",
-    "description": "Pokémon Boxes are sorted by Species and Forms together (except legendary forms), following original Legends: Arceus Pokédex order.",
     "boxes": [
       {
-        "title": "Pasture 1",
         "pokemon": [
           "rowlet",
           "dartrix",
@@ -42,7 +39,6 @@
         ]
       },
       {
-        "title": "Pasture 2",
         "pokemon": [
           "dustox",
           "dustox-f",
@@ -77,7 +73,6 @@
         ]
       },
       {
-        "title": "Pasture 3",
         "pokemon": [
           "burmy-sandy",
           "burmy-trash",
@@ -112,7 +107,6 @@
         ]
       },
       {
-        "title": "Pasture 4",
         "pokemon": [
           "cherubi",
           "cherrim",
@@ -147,7 +141,6 @@
         ]
       },
       {
-        "title": "Pasture 5",
         "pokemon": [
           "happiny",
           "chansey",
@@ -182,7 +175,6 @@
         ]
       },
       {
-        "title": "Pasture 6",
         "pokemon": [
           "pachirisu",
           "pachirisu-f",
@@ -217,7 +209,6 @@
         ]
       },
       {
-        "title": "Pasture 7",
         "pokemon": [
           "torterra",
           "porygon",
@@ -252,7 +243,6 @@
         ]
       },
       {
-        "title": "Pasture 8",
         "pokemon": [
           "unown-t",
           "unown-u",
@@ -287,7 +277,6 @@
         ]
       },
       {
-        "title": "Pasture 9",
         "pokemon": [
           "empoleon",
           "mantyke",
@@ -322,7 +311,6 @@
         ]
       },
       {
-        "title": "Pasture 10",
         "pokemon": [
           "gible",
           "gible-f",
@@ -357,7 +345,6 @@
         ]
       },
       {
-        "title": "Pasture 11",
         "pokemon": [
           "snorunt",
           "glalie",
@@ -392,7 +379,6 @@
         ]
       },
       {
-        "title": "Pasture 12",
         "pokemon": [
           "tornadus",
           "thundurus",
@@ -413,10 +399,8 @@
   },
   "sorted-species": {
     "id": "sorted-species",
-    "name": "Regional: Sorted by Species, then forms",
     "version": 1,
     "gameSet": "la",
-    "description": "Pokémon Boxes are grouped separating Species and Forms. First you will find all the species, then all the forms (leaving a gap with the species).",
     "boxes": [
       {
         "pokemon": [
@@ -690,7 +674,9 @@
           "manaphy"
         ]
       },
-      { "pokemon": ["shaymin", "darkrai"] },
+      {
+        "pokemon": ["shaymin", "darkrai"]
+      },
       {
         "pokemon": [
           "bidoof-f",
@@ -842,10 +828,8 @@
   },
   "grouped": {
     "id": "grouped",
-    "name": "Regional: Sorted by Species, then form groups",
     "version": 1,
     "gameSet": "la",
-    "description": "Pokémon Boxes are grouped separating Species and Forms. First you will find all the species, then all the forms by groups (leaving gaps among different form categories).",
     "boxes": [
       {
         "pokemon": [
@@ -1119,7 +1103,9 @@
           "manaphy"
         ]
       },
-      { "pokemon": ["shaymin", "darkrai"] },
+      {
+        "pokemon": ["shaymin", "darkrai"]
+      },
       {
         "pokemon": [
           "bidoof-f",
@@ -1271,10 +1257,8 @@
   },
   "fully-sorted": {
     "id": "fully-sorted",
-    "name": "Regional: Sorted by Forms",
     "version": 1,
     "gameSet": "la",
-    "description": "(Recommended) Pokémon Boxes are sorted by Species and Forms together, following original Legends: Arceus Pokédex order.",
     "boxes": [
       {
         "pokemon": [
@@ -1679,10 +1663,8 @@
   },
   "fully-sorted-hisui": {
     "id": "fully-sorted-hisui",
-    "name": "Regional: Sorted by Forms",
     "version": 1,
     "gameSet": "la",
-    "description": "(Recommended) Pokémon Boxes are sorted by Species and Forms together, following regional Pokédex order. This also includes Pokémon that are only available via HOME transfer.",
     "boxes": [
       {
         "pokemon": [
@@ -2087,10 +2069,8 @@
   },
   "minimal-hisui": {
     "id": "minimal-hisui",
-    "name": "Regional: Sorted by Forms (Minimal)",
     "version": 1,
     "gameSet": "la",
-    "description": "Pokémon Boxes are sorted by Species and Forms together, following regional Pokédex order. Cosmetic forms and HOME transfer-only Pokémon are excluded.",
     "boxes": [
       {
         "pokemon": [

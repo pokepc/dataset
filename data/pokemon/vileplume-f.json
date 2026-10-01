@@ -133,47 +133,18 @@
     {
       "from": ["gloom"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vileplume (Female)",
-    "fra": "Rafflesia (Female)",
-    "deu": "Giflor (Female)"
-  },
-  "genus": {
-    "eng": "Flower Pokémon",
-    "esp": "Pokémon Flor",
-    "fra": "Pokémon Fleur",
-    "deu": "Blumen-Pokémon",
-    "ita": "Pokémon Fiore",
-    "jap": "フラワーポケモン",
-    "kor": "꽃포켓몬",
-    "chs": "花宝可梦",
-    "cht": "花寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Vileplume",
-    "fra": "Rafflesia",
-    "deu": "Giflor",
-    "jap": "ラフレシア",
-    "kor": "라플레시아",
-    "chs": "霸王花",
-    "cht": "霸王花"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -190,5 +161,6 @@
     "usum-um",
     "lgpe-lge",
     "home"
-  ]
+  ],
+  "championsId": "0045000"
 }

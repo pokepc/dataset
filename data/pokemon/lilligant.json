@@ -99,31 +99,18 @@
     {
       "from": ["petilil"],
       "trigger": "use_item",
-      "item": { "id": "sunstone", "role": "used" },
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+      "item": {
+        "id": "sunstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "outside"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Lilligant",
-    "fra": "Fragilady",
-    "deu": "Dressella",
-    "jap": "ドレディア",
-    "kor": "드레디어",
-    "chs": "裙儿小姐",
-    "cht": "裙兒小姐"
-  },
-  "genus": {
-    "eng": "Flowering Pokémon",
-    "esp": "Pokémon Adornofloral",
-    "fra": "Pokémon Chef-Fleur",
-    "deu": "Blumenzier-Pokémon",
-    "ita": "Pokémon Fiorfronzolo",
-    "jap": "はなかざりポケモン",
-    "kor": "꽃장식포켓몬",
-    "chs": "花饰宝可梦",
-    "cht": "花飾寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "sm-s", "usum-us", "home"]
 }

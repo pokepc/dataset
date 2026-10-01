@@ -98,7 +98,6 @@
   "femaleRate": 50,
   "baseForms": [],
   "forms": ["castform-sunny", "castform-rainy", "castform-snowy"],
-  "formsDesc": "Form changes along with type to match the weather in battle, due to forecast.  Castform is always in its normal form outside of battle, regardless of weather.",
   "refs": {
     "pkApiId": "351",
     "pkApiFormId": "351",
@@ -109,28 +108,6 @@
     "serebii": "castform",
     "bulbapedia": "Castform"
   },
-  "names": {
-    "eng": "Castform",
-    "fra": "Morphéo",
-    "deu": "Formeo",
-    "jap": "ポワルン",
-    "kor": "캐스퐁",
-    "chs": "飘浮泡泡",
-    "cht": "飄浮泡泡"
-  },
-  "genus": {
-    "eng": "Weather Pokémon",
-    "esp": "Pokémon Clima",
-    "fra": "Pokémon Climat",
-    "deu": "Wetter",
-    "ita": "Pokémon Meteo",
-    "jap": "てんきポケモン",
-    "kor": "날씨포켓몬",
-    "chs": "天气宝可梦",
-    "cht": "天氣寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -146,5 +123,6 @@
     "xy-y",
     "bank",
     "home"
-  ]
+  ],
+  "championsId": "0351000"
 }

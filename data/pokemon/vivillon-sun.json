@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "sun" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "sun"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Sun Pattern)",
-    "fra": "Prismillon (Motif Zénith)",
-    "deu": "Vivillon (Sonnenmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Sun Pattern",
-    "esp": "Motivo Solar",
-    "fra": "Motif Zénith",
-    "deu": "Sonnenmuster",
-    "ita": "Motivo Solare",
-    "jap": "たいようのもよう",
-    "kor": "태양의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666015"
 }

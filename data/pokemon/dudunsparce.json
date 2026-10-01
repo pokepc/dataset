@@ -66,30 +66,16 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "known_move", "move": "hyperdrill" },
-        { "key": "hidden_value_branch", "percentage": 99 }
+        {
+          "key": "known_move",
+          "move": "hyperdrill"
+        },
+        {
+          "key": "hidden_value_branch",
+          "percentage": 99
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Dudunsparce",
-    "fra": "Deusolourdo",
-    "deu": "Dummimisel",
-    "jap": "ノココッチ",
-    "kor": "노고고치",
-    "chs": "土龙节节",
-    "cht": "土龍節節"
-  },
-  "genus": {
-    "eng": "Land Snake Pokémon",
-    "fra": "Serpent",
-    "deu": "Erdschlange",
-    "jap": "つちへびポケモン",
-    "kor": "땅뱀포켓몬",
-    "chs": "地蛇宝可梦",
-    "cht": "地蛇寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": { "eng": "Two-Segment Form" },
   "transferOnlyIn": ["home"]
 }

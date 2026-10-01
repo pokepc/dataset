@@ -108,46 +108,14 @@
       "from": ["kricketot"],
       "trigger": "level_up",
       "minLevel": 10,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Kricketune (Female)",
-    "fra": "Mélokrik (Female)",
-    "deu": "Zirpeise (Female)"
-  },
-  "genus": {
-    "eng": "Cricket Pokémon",
-    "esp": "Pokémon Grillo",
-    "fra": "Pokémon Criquet",
-    "deu": "Zirper",
-    "ita": "Pokémon Grillo",
-    "jap": "こおろぎポケモン",
-    "kor": "귀뚜라미포켓몬",
-    "chs": "蟋蟀宝可梦",
-    "cht": "蟋蟀寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Kricketune",
-    "fra": "Mélokrik",
-    "deu": "Zirpeise",
-    "jap": "コロトック",
-    "kor": "귀뚤톡크",
-    "chs": "音箱蟀",
-    "cht": "音箱蟀"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "ranch",
     "b2w2-b2",

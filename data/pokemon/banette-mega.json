@@ -64,66 +64,49 @@
       "from": ["banette"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "banettite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "banettite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["banette"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "banettite", "role": "held" },
+      "item": {
+        "id": "banettite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Banette",
-    "fra": "MégaBranette",
-    "deu": "Mega-Banette",
-    "jap": "メガジュペッタ",
-    "kor": "메가다크펫",
-    "chs": "超级诅咒娃娃",
-    "cht": "超級詛咒娃娃"
-  },
-  "genus": {
-    "eng": "Marionette Pokémon",
-    "esp": "Pokémon Marioneta",
-    "fra": "Pokémon Marionnette",
-    "deu": "Marionette",
-    "ita": "Pokémon Marionetta",
-    "jap": "ぬいぐるみポケモン",
-    "kor": "봉제인형포켓몬",
-    "chs": "布偶宝可梦",
-    "cht": "布偶寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Banette",
-    "fra": "Branette",
-    "deu": "Banette",
-    "jap": "ジュペッタ",
-    "kor": "다크펫",
-    "chs": "诅咒娃娃",
-    "cht": "詛咒娃娃"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0354001"
 }

@@ -65,66 +65,49 @@
       "from": ["gallade"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "galladite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "galladite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["gallade"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "galladite", "role": "held" },
+      "item": {
+        "id": "galladite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Gallade",
-    "fra": "MégaGallame",
-    "deu": "Mega-Galagladi",
-    "jap": "メガエルレイド",
-    "kor": "메가엘레이드",
-    "chs": "超级艾路雷朵",
-    "cht": "超級艾路雷朵"
-  },
-  "genus": {
-    "eng": "Blade Pokémon",
-    "esp": "Pokémon Cuchilla",
-    "fra": "Pokémon Lame",
-    "deu": "Klingen-Pokémon",
-    "ita": "Pokémon Lama",
-    "jap": "やいばポケモン",
-    "kor": "검포켓몬",
-    "chs": "利刃宝可梦",
-    "cht": "利刃寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Gallade",
-    "fra": "Gallame",
-    "deu": "Galagladi",
-    "jap": "エルレイド",
-    "kor": "엘레이드",
-    "chs": "艾路雷朵",
-    "cht": "艾路雷朵"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0475001"
 }

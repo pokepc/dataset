@@ -63,30 +63,14 @@
       "from": ["farfetchd-galar"],
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
-      "conditions": [{ "key": "critical_hits_in_one_battle", "count": 3 }]
+      "conditions": [
+        {
+          "key": "critical_hits_in_one_battle",
+          "count": 3
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Sirfetch’d",
-    "fra": "Palarticho",
-    "deu": "Lauchzelot",
-    "jap": "ネギガナイト",
-    "kor": "창파나이트",
-    "chs": "葱游兵",
-    "cht": "蔥遊兵"
-  },
-  "genus": {
-    "eng": "Wild Duck Pokémon",
-    "esp": "Pokémon Pato Salvaje",
-    "fra": "Pokémon Canard Fou",
-    "deu": "Wildenten-Pokémon",
-    "ita": "Pokémon Selvanatra",
-    "jap": "かるがもポケモン",
-    "kor": "청둥오리포켓몬",
-    "chs": "黄嘴鸭宝可梦",
-    "cht": "黃嘴鴨寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["swsh-sh", "home"]
+  "transferOnlyIn": ["swsh-sh", "home"],
+  "championsId": "0865000"
 }

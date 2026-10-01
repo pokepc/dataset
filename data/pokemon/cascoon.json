@@ -113,31 +113,14 @@
       "from": ["wurmple"],
       "trigger": "level_up",
       "minLevel": 7,
-      "conditions": [{ "key": "hidden_value_branch", "percentage": 50 }]
+      "conditions": [
+        {
+          "key": "hidden_value_branch",
+          "percentage": 50
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Cascoon",
-    "fra": "Blindalys",
-    "deu": "Panekon",
-    "jap": "マユルド",
-    "kor": "카스쿤",
-    "chs": "盾甲茧",
-    "cht": "盾甲繭"
-  },
-  "genus": {
-    "eng": "Cocoon Pokémon",
-    "esp": "Pokémon Capullo",
-    "fra": "Pokémon Cocon",
-    "deu": "Kokon",
-    "ita": "Pokémon Bozzolo",
-    "jap": "さなぎポケモン",
-    "kor": "번데기포켓몬",
-    "chs": "蛹宝可梦",
-    "cht": "蛹寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",

@@ -116,36 +116,22 @@
     {
       "from": ["magneton"],
       "trigger": "level_up",
-      "conditions": [{ "key": "location", "location": "magnetic_field" }]
+      "conditions": [
+        {
+          "key": "location",
+          "location": "magnetic_field"
+        }
+      ]
     },
     {
       "from": ["magneton"],
       "trigger": "use_item",
-      "item": { "id": "thunderstone", "role": "used" },
+      "item": {
+        "id": "thunderstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Magnezone",
-    "fra": "Magnézone",
-    "deu": "Magnezone",
-    "jap": "ジバコイル",
-    "kor": "자포코일",
-    "chs": "自爆磁怪",
-    "cht": "自爆磁怪"
-  },
-  "genus": {
-    "eng": "Magnet Area Pokémon",
-    "esp": "Pokémon Magnético",
-    "fra": "Pokémon Aimant",
-    "deu": "Magnetgebiets-Pokémon",
-    "ita": "Pokémon Magnetico",
-    "jap": "じばポケモン",
-    "kor": "자기장포켓몬",
-    "chs": "磁场宝可梦",
-    "cht": "磁場寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bw-b", "bank", "home"]
 }

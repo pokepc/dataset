@@ -116,36 +116,23 @@
     {
       "from": ["eevee"],
       "trigger": "level_up",
-      "conditions": [{ "key": "location", "location": "ice_rock" }]
+      "conditions": [
+        {
+          "key": "location",
+          "location": "ice_rock"
+        }
+      ]
     },
     {
       "from": ["eevee"],
       "trigger": "use_item",
-      "item": { "id": "icestone", "role": "used" },
+      "item": {
+        "id": "icestone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Glaceon",
-    "fra": "Givrali",
-    "deu": "Glaziola",
-    "jap": "グレイシア",
-    "kor": "글레이시아",
-    "chs": "冰伊布",
-    "cht": "冰伊布"
-  },
-  "genus": {
-    "eng": "Fresh Snow Pokémon",
-    "esp": "Pokémon Nieve Fresca",
-    "fra": "Pokémon Poudreuse",
-    "deu": "Neuschnee-Pokémon",
-    "ita": "Pokémon Nevefresca",
-    "jap": "しんせつポケモン",
-    "kor": "신설포켓몬",
-    "chs": "新雪宝可梦",
-    "cht": "新雪寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "bank", "home"]
+  "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "bank", "home"],
+  "championsId": "0471000"
 }

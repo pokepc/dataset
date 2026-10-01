@@ -97,60 +97,29 @@
         "sv-v"
       ],
       "trigger": "fuse",
-      "item": { "id": "dnasplicers", "role": "used", "consumed": false },
-      "conditions": [{ "key": "fusion_partner", "pokemon": "zekrom" }],
-      "notes": { "eng": "Only one Kyurem can be fused with the DNA Splicers at a time." },
+      "item": {
+        "id": "dnasplicers",
+        "role": "used",
+        "consumed": false
+      },
+      "conditions": [
+        {
+          "key": "fusion_partner",
+          "pokemon": "zekrom"
+        }
+      ],
       "revert": [
         {
           "trigger": "separate",
-          "item": { "id": "dnasplicers", "role": "used", "consumed": false },
-          "conditions": [],
-          "notes": { "eng": "The fused partner returns to the party." }
+          "item": {
+            "id": "dnasplicers",
+            "role": "used",
+            "consumed": false
+          },
+          "conditions": []
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Black Kyurem",
-    "esp": "Kyurem Negro",
-    "fra": "Kyurem Noir",
-    "deu": "Schwarzes Kyurem",
-    "ita": "Kyurem Nero",
-    "jap": "ブラックキュレム",
-    "kor": "블랙큐레무",
-    "chs": "暗黑酋雷姆",
-    "cht": "闇黑酋雷姆"
-  },
-  "genus": {
-    "eng": "Boundary Pokémon",
-    "esp": "Pokémon Frontera",
-    "fra": "Pokémon Frontière",
-    "deu": "Schwellen-Pokémon",
-    "ita": "Pokémon Confine",
-    "jap": "きょうかいポケモン",
-    "kor": "경계포켓몬",
-    "chs": "境界宝可梦",
-    "cht": "境界寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Kyurem",
-    "fra": "Kyurem",
-    "deu": "Kyurem",
-    "jap": "キュレム",
-    "kor": "큐레무",
-    "chs": "酋雷姆",
-    "cht": "酋雷姆"
-  },
-  "formNames": {
-    "eng": "Black Kyurem",
-    "esp": "Kyurem Negro",
-    "fra": "Kyurem Noir",
-    "deu": "Schwarzes Kyurem",
-    "ita": "Kyurem Nero",
-    "jap": "ブラックキュレム",
-    "kor": "블랙큐레무",
-    "chs": "暗黑酋雷姆",
-    "cht": "闇黑酋雷姆"
-  },
   "transferOnlyIn": ["b2w2-w2", "xy-x", "xy-y", "oras-or", "sm-s", "sm-m", "usum-us"]
 }

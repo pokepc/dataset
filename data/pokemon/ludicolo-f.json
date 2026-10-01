@@ -123,47 +123,18 @@
     {
       "from": ["lombre"],
       "trigger": "use_item",
-      "item": { "id": "waterstone", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "waterstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Ludicolo (Female)",
-    "fra": "Ludicolo (Female)",
-    "deu": "Kappalores (Female)"
-  },
-  "genus": {
-    "eng": "Carefree Pokémon",
-    "esp": "Pokémon Optimista",
-    "fra": "Pokémon Insouciant",
-    "deu": "Sorglos-Pokémon",
-    "ita": "Pokémon Spensierato",
-    "jap": "のうてんきポケモン",
-    "kor": "행복하기포켓몬",
-    "chs": "乐天宝可梦",
-    "cht": "樂天寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Ludicolo",
-    "fra": "Ludicolo",
-    "deu": "Kappalores",
-    "jap": "ルンパッパ",
-    "kor": "로파파",
-    "chs": "乐天河童",
-    "cht": "樂天河童"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "boxrs",

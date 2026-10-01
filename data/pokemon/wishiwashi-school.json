@@ -65,17 +65,37 @@
       "trigger": "automatic",
       "minLevel": 20,
       "conditions": [
-        { "key": "ability", "abilities": ["schooling"] },
-        { "key": "battle_event", "events": ["switch_in", "end_of_turn"] },
-        { "key": "hp", "comparison": "gt", "percent": 25 }
+        {
+          "key": "ability",
+          "abilities": ["schooling"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["switch_in", "end_of_turn"]
+        },
+        {
+          "key": "hp",
+          "comparison": "gt",
+          "percent": 25
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "ability", "abilities": ["schooling"] },
-            { "key": "battle_event", "events": ["end_of_turn"] },
-            { "key": "hp", "comparison": "lte", "percent": 25 }
+            {
+              "key": "ability",
+              "abilities": ["schooling"]
+            },
+            {
+              "key": "battle_event",
+              "events": ["end_of_turn"]
+            },
+            {
+              "key": "hp",
+              "comparison": "lte",
+              "percent": 25
+            }
           ]
         },
         "switch_out",
@@ -83,47 +103,5 @@
       ]
     }
   ],
-  "names": {
-    "eng": "Wishiwashi (School Form)",
-    "esp": "Wishiwashi (Forma Banco)",
-    "fra": "Froussardine (Forme Banc)",
-    "deu": "Lusardin (Schwarmform)",
-    "ita": "Wishiwashi (Forma Banco)",
-    "jap": "ヨワシ (むれたすがた)",
-    "kor": "약어리 (군집의 모습)",
-    "chs": "弱丁鱼 (鱼群的样子)",
-    "cht": "弱丁魚 (魚群的樣子)"
-  },
-  "genus": {
-    "eng": "Small Fry Pokémon",
-    "esp": "Pokémon Pececillo",
-    "fra": "Pokémon Minipoisson",
-    "deu": "Kleinfisch-Pokémon",
-    "ita": "Pokémon Pesciolino",
-    "jap": "こざかなポケモン",
-    "kor": "잔물고기포켓몬",
-    "chs": "小鱼宝可梦",
-    "cht": "小魚寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Wishiwashi",
-    "fra": "Froussardine",
-    "deu": "Lusardin",
-    "jap": "ヨワシ",
-    "kor": "약어리",
-    "chs": "弱丁鱼",
-    "cht": "弱丁魚"
-  },
-  "formNames": {
-    "eng": "School Form",
-    "esp": "Forma Banco",
-    "fra": "Forme Banc",
-    "deu": "Schwarmform",
-    "ita": "Forma Banco",
-    "jap": "むれたすがた",
-    "kor": "군집의 모습",
-    "chs": "鱼群的样子",
-    "cht": "魚群的樣子"
-  },
   "transferOnlyIn": []
 }

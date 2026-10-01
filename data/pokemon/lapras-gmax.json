@@ -68,37 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Lapras (Gigantamax Form)",
-    "fra": "Lokhlass (Forme Gigamax)",
-    "deu": "Lapras (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Transport Pokémon",
-    "esp": "Pokémon Transporte",
-    "fra": "Pokémon Transport",
-    "deu": "Transport-Pokémon",
-    "ita": "Pokémon Trasporto",
-    "jap": "のりものポケモン",
-    "kor": "탈것포켓몬",
-    "chs": "乘载宝可梦",
-    "cht": "乘載寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Lapras",
-    "fra": "Lokhlass",
-    "deu": "Lapras",
-    "jap": "ラプラス",
-    "kor": "라프라스",
-    "chs": "拉普拉斯",
-    "cht": "拉普拉斯"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

@@ -65,66 +65,49 @@
       "from": ["lopunny"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "lopunnite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "lopunnite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["lopunny"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "lopunnite", "role": "held" },
+      "item": {
+        "id": "lopunnite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Lopunny",
-    "fra": "MégaLockpin",
-    "deu": "Mega-Schlapor",
-    "jap": "メガミミロップ",
-    "kor": "메가이어롭",
-    "chs": "超级长耳兔",
-    "cht": "超級長耳兔"
-  },
-  "genus": {
-    "eng": "Rabbit Pokémon",
-    "esp": "Pokémon Conejo",
-    "fra": "Pokémon Lapin",
-    "deu": "Hasen-Pokémon",
-    "ita": "Pokémon Coniglio",
-    "jap": "うさぎポケモン",
-    "kor": "토끼포켓몬",
-    "chs": "兔子宝可梦",
-    "cht": "兔子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Lopunny",
-    "fra": "Lockpin",
-    "deu": "Schlapor",
-    "jap": "ミミロップ",
-    "kor": "이어롭",
-    "chs": "长耳兔",
-    "cht": "長耳兔"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0428001"
 }

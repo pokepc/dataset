@@ -119,31 +119,18 @@
     {
       "from": ["kirlia"],
       "trigger": "use_item",
-      "item": { "id": "dawnstone", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "male" }]
+      "item": {
+        "id": "dawnstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "male"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Gallade",
-    "fra": "Gallame",
-    "deu": "Galagladi",
-    "jap": "エルレイド",
-    "kor": "엘레이드",
-    "chs": "艾路雷朵",
-    "cht": "艾路雷朵"
-  },
-  "genus": {
-    "eng": "Blade Pokémon",
-    "esp": "Pokémon Cuchilla",
-    "fra": "Pokémon Lame",
-    "deu": "Klingen-Pokémon",
-    "ita": "Pokémon Lama",
-    "jap": "やいばポケモン",
-    "kor": "검포켓몬",
-    "chs": "利刃宝可梦",
-    "cht": "利刃寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["ranch", "bw-b", "bank", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["ranch", "bw-b", "bank", "sm-s", "sm-m", "home"],
+  "championsId": "0475000"
 }

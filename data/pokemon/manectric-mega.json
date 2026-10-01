@@ -64,66 +64,49 @@
       "from": ["manectric"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "manectite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "manectite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["manectric"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "manectite", "role": "held" },
+      "item": {
+        "id": "manectite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Manectric",
-    "fra": "MégaÉlecsprint",
-    "deu": "Mega-Voltenso",
-    "jap": "メガライボルト",
-    "kor": "메가썬더볼트",
-    "chs": "超级雷电兽",
-    "cht": "超級雷電獸"
-  },
-  "genus": {
-    "eng": "Discharge Pokémon",
-    "esp": "Pokémon Descarga",
-    "fra": "Pokémon Décharge",
-    "deu": "Entladungs-Pokémon",
-    "ita": "Pokémon Scossa",
-    "jap": "ほうでんポケモン",
-    "kor": "방전포켓몬",
-    "chs": "放电宝可梦",
-    "cht": "放電寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Manectric",
-    "fra": "Élecsprint",
-    "deu": "Voltenso",
-    "jap": "ライボルト",
-    "kor": "썬더볼트",
-    "chs": "雷电兽",
-    "cht": "雷電獸"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m", "usum-us"]
+  "transferOnlyIn": ["sm-s", "sm-m", "usum-us"],
+  "championsId": "0310001"
 }

@@ -1,9 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "id": "grouped-region",
   "gameSet": "lza",
-  "name": "Regional: Grouped by Species, then Forms",
-  "description": "Pokémon Boxes are sorted by Species only, following the game's Pokédex order. Forms are grouped at the end by category.",
   "source": {
     "kind": "classic",
     "gameSet": "lza",
@@ -14,7 +12,6 @@
   "tags": ["grouped", "forms"],
   "boxes": [
     {
-      "name": "Box 1",
       "slots": [
         "chikorita",
         "bayleef",
@@ -49,7 +46,6 @@
       ]
     },
     {
-      "name": "Box 2",
       "slots": [
         "roserade",
         "magikarp",
@@ -84,7 +80,6 @@
       ]
     },
     {
-      "name": "Box 3",
       "slots": [
         "arbok",
         "abra",
@@ -119,7 +114,6 @@
       ]
     },
     {
-      "name": "Box 4",
       "slots": [
         "houndour",
         "houndoom",
@@ -154,7 +148,6 @@
       ]
     },
     {
-      "name": "Box 5",
       "slots": [
         "excadrill",
         "sandile",
@@ -189,7 +182,6 @@
       ]
     },
     {
-      "name": "Box 6",
       "slots": [
         "charmander",
         "charmeleon",
@@ -224,7 +216,6 @@
       ]
     },
     {
-      "name": "Box 7",
       "slots": [
         "hawlucha",
         "phantump",
@@ -259,7 +250,6 @@
       ]
     },
     {
-      "name": "Box 8",
       "slots": [
         "greninja",
         "falinks",
@@ -286,7 +276,6 @@
       ]
     },
     {
-      "name": "DLC 1",
       "slots": [
         "mankey",
         "primeape",
@@ -321,7 +310,6 @@
       ]
     },
     {
-      "name": "DLC 2",
       "slots": [
         "tatsugiri",
         "frigibax",
@@ -356,7 +344,6 @@
       ]
     },
     {
-      "name": "DLC 3",
       "slots": [
         "runerigus",
         "wimpod",
@@ -391,7 +378,6 @@
       ]
     },
     {
-      "name": "DLC 4",
       "slots": [
         "garganacl",
         "gulpin",
@@ -426,7 +412,6 @@
       ]
     },
     {
-      "name": "DLC 5",
       "slots": [
         "hoopa",
         "marshadow",
@@ -443,7 +428,6 @@
       ]
     },
     {
-      "name": "Females 1",
       "slots": [
         "meganium-f",
         "roselia-f",
@@ -478,7 +462,6 @@
       ]
     },
     {
-      "name": "Females 2",
       "slots": [
         "combusken-f",
         "blaziken-f",
@@ -494,7 +477,6 @@
       ]
     },
     {
-      "name": "Regional Forms",
       "slots": [
         "raichu-alola",
         "slowpoke-galar",
@@ -515,11 +497,9 @@
       ]
     },
     {
-      "name": "Vivillon Patterns",
       "slots": ["vivillon-garden", "vivillon-marine"]
     },
     {
-      "name": "Alternative",
       "slots": [
         "flabebe-blue",
         "flabebe-orange",
@@ -553,7 +533,6 @@
       ]
     },
     {
-      "name": "DLC Forms",
       "slots": [
         "rotom-heat",
         "rotom-wash",

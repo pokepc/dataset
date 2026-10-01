@@ -64,27 +64,13 @@
     {
       "from": ["duraludon"],
       "trigger": "use_item",
-      "item": { "id": "metalalloy", "role": "used" },
+      "item": {
+        "id": "metalalloy",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Archaludon",
-    "fra": "Pondralugon",
-    "deu": "Briduradon",
-    "jap": "ブリジュラス",
-    "kor": "브리두라스",
-    "chs": "铝钢桥龙",
-    "cht": "鋁鋼橋龍"
-  },
-  "genus": {
-    "eng": "Alloy Pokémon",
-    "fra": "Alliage",
-    "deu": "Alloy Pokémon",
-    "jap": "ごうきんポケモン",
-    "kor": "합금포켓몬"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "1018000"
 }

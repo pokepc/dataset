@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "sandstorm" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "sandstorm"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Sandstorm Pattern)",
-    "fra": "Prismillon (Motif Sable)",
-    "deu": "Vivillon (Sandmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Sandstorm Pattern",
-    "esp": "Motivo Desierto",
-    "fra": "Motif Sable",
-    "deu": "Sandmuster",
-    "ita": "Motivo Sabbia",
-    "jap": "さじんのもよう",
-    "kor": "사진의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666011"
 }

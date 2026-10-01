@@ -1,12 +1,13 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { charactersFs } from '../../src/lib/fs'
+import { loadAllCharacters, loadText } from '../../src/lib/fs'
 import { characterSchema } from '../../src/lib/schemas'
 import { validate } from '../_utils'
 
 describe('Validate characters.json data', () => {
   // Read the characters data directly from the file
-  const recordList = charactersFs.all()
+  const recordList = loadAllCharacters()
+  const text = loadText('characters', 'eng')
 
   it('should be valid', () => {
     const listSchema = z.array(characterSchema)
@@ -26,11 +27,12 @@ describe('Validate characters.json data', () => {
     expect(duplicateIds, 'Duplicate character IDs').toEqual([])
   })
 
-  it('should have valid names', () => {
+  it('should have valid English names', () => {
     for (const record of recordList) {
-      expect(record.name).toBeDefined()
-      expect(record.name.trim()).toBe(record.name)
-      expect(record.name.length).toBeGreaterThan(0)
+      const name = text[record.id]?.name
+      expect(name, record.id).toBeDefined()
+      expect(name!.trim()).toBe(name)
+      expect(name!.length).toBeGreaterThan(0)
     }
   })
 })

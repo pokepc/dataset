@@ -8,7 +8,8 @@ export type Candidate = {
   pokeApiId: number | null
 }
 
-export type Location = Pkds.Location
+/** A location record with its English name, split into `locations.json` and `i18n/eng/locations.json` on write. */
+export type Location = Pkds.Location & { name: string }
 
 export type CatalogEntry = Candidate & { pages: string[] }
 

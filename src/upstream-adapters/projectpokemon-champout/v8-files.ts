@@ -2,9 +2,9 @@
 import { existsSync, readdirSync, rmSync } from 'node:fs'
 import { isDeepStrictEqual } from 'node:util'
 import { join, relative } from 'node:path'
-import { readJsonFile, writeJsonFile } from '../../lib-next/fs'
-import { localeCodes } from '../../lib-next/languages'
-import { moddableKinds, moddableRecordSchemas, type ModdableKind } from '../../lib-next/schemas'
+import { readJsonFile, writeJsonFile } from '../../lib/fs'
+import { localeCodes } from '../../lib/languages'
+import { moddableKinds, moddableRecordSchemas, type ModdableKind } from '../../lib/schemas'
 import { CHAMPIONS_SET, type ChampionsV8, type ModdableBase } from './to-v8'
 
 type Json = Record<string, unknown>

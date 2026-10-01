@@ -65,66 +65,49 @@
       "from": ["heracross", "heracross-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "heracronite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "heracronite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["heracross", "heracross-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "heracronite", "role": "held" },
+      "item": {
+        "id": "heracronite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Heracross",
-    "fra": "MégaScarhino",
-    "deu": "Mega-Skaraborn",
-    "jap": "メガヘラクロス",
-    "kor": "메가헤라크로스",
-    "chs": "超级赫拉克罗斯",
-    "cht": "超級赫拉克羅斯"
-  },
-  "genus": {
-    "eng": "Single Horn Pokémon",
-    "esp": "Pokémon Cuerno",
-    "fra": "Pokémon Unicorne",
-    "deu": "Einzelhorn-Pokémon",
-    "ita": "Pokémon Monocorno",
-    "jap": "１ぽんヅノポケモン",
-    "kor": "외뿔포켓몬",
-    "chs": "独角宝可梦",
-    "cht": "獨角寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Heracross",
-    "fra": "Scarhino",
-    "deu": "Skaraborn",
-    "jap": "ヘラクロス",
-    "kor": "헤라크로스",
-    "chs": "赫拉克罗斯",
-    "cht": "赫拉克羅斯"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0214001"
 }

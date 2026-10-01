@@ -110,31 +110,13 @@
     {
       "from": ["buneary"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Lopunny",
-    "fra": "Lockpin",
-    "deu": "Schlapor",
-    "jap": "ミミロップ",
-    "kor": "이어롭",
-    "chs": "长耳兔",
-    "cht": "長耳兔"
-  },
-  "genus": {
-    "eng": "Rabbit Pokémon",
-    "esp": "Pokémon Conejo",
-    "fra": "Pokémon Lapin",
-    "deu": "Hasen-Pokémon",
-    "ita": "Pokémon Coniglio",
-    "jap": "うさぎポケモン",
-    "kor": "토끼포켓몬",
-    "chs": "兔子宝可梦",
-    "cht": "兔子寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "ranch",
     "bw-b",
@@ -146,5 +128,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0428000"
 }

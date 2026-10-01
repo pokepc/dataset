@@ -134,31 +134,17 @@
     {
       "from": ["eevee"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "night" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Umbreon",
-    "fra": "Noctali",
-    "deu": "Nachtara",
-    "jap": "ブラッキー",
-    "kor": "블래키",
-    "chs": "月亮伊布",
-    "cht": "月亮伊布"
-  },
-  "genus": {
-    "eng": "Moonlight Pokémon",
-    "esp": "Pokémon Luz Lunar",
-    "fra": "Pokémon Lune",
-    "deu": "Mondschein-Pokémon",
-    "ita": "Pokémon Lucelunare",
-    "jap": "げっこうポケモン",
-    "kor": "달빛포켓몬",
-    "chs": "月光宝可梦",
-    "cht": "月光寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -171,5 +157,6 @@
     "bw-w",
     "bank",
     "home"
-  ]
+  ],
+  "championsId": "0197000"
 }

@@ -126,46 +126,14 @@
       "from": ["rattata"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Raticate (Female)",
-    "fra": "Rattatac (Female)",
-    "deu": "Rattikarl (Female)"
-  },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Raticate",
-    "fra": "Rattatac",
-    "deu": "Rattikarl",
-    "jap": "ラッタ",
-    "kor": "레트라",
-    "chs": "拉达",
-    "cht": "拉達"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

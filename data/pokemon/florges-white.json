@@ -80,47 +80,13 @@
     {
       "from": ["floette-white"],
       "trigger": "use_item",
-      "item": { "id": "shinystone", "role": "used" },
+      "item": {
+        "id": "shinystone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Florges (White Flower)",
-    "esp": "Florges (Flor Blanca)",
-    "fra": "Florges (Fleur Blanche)",
-    "deu": "Florges (Weißblütler)",
-    "ita": "Florges (Fiore Bianco)",
-    "jap": "フラージェス (しろいはな)",
-    "kor": "플라제스 (하얀 꽃)"
-  },
-  "genus": {
-    "eng": "Garden Pokémon",
-    "esp": "Pokémon Jardín",
-    "fra": "Pokémon Jardin",
-    "deu": "Garten",
-    "ita": "Pokémon Giardino",
-    "jap": "ガーデンポケモン",
-    "kor": "가든포켓몬",
-    "chs": "花园宝可梦",
-    "cht": "花園寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Florges",
-    "fra": "Florges",
-    "deu": "Florges",
-    "jap": "フラージェス",
-    "kor": "플라제스",
-    "chs": "花洁夫人",
-    "cht": "花潔夫人"
-  },
-  "formNames": {
-    "eng": "White Flower",
-    "esp": "Flor Blanca",
-    "fra": "Fleur Blanche",
-    "deu": "Weißblütler",
-    "ita": "Fiore Bianco",
-    "jap": "しろいはな",
-    "kor": "하얀 꽃"
-  },
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0671004"
 }

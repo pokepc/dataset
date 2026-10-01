@@ -96,31 +96,13 @@
     {
       "from": ["munna"],
       "trigger": "use_item",
-      "item": { "id": "moonstone", "role": "used" },
+      "item": {
+        "id": "moonstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Musharna",
-    "fra": "Mushana",
-    "deu": "Somnivora",
-    "jap": "ムシャーナ",
-    "kor": "몽얌나",
-    "chs": "梦梦蚀",
-    "cht": "夢夢蝕"
-  },
-  "genus": {
-    "eng": "Drowsing Pokémon",
-    "esp": "Pokémon Duermevela",
-    "fra": "Pokémon Rêveur",
-    "deu": "Halbschlaf-Pokémon",
-    "ita": "Pokémon Dormiveglia",
-    "jap": "ゆめうつつポケモン",
-    "kor": "꿈결포켓몬",
-    "chs": "半梦半醒宝可梦",
-    "cht": "半夢半醒寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["bank", "sm-s", "sm-m", "usum-us", "usum-um", "home"],
+  "championsId": "0518000"
 }

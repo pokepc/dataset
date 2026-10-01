@@ -66,66 +66,35 @@
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "ability", "abilities": ["battlebond"] },
-        { "key": "battle_condition", "condition": "directly_knock_out_opponent" },
-        { "key": "battle_condition", "condition": "battle_continues" },
-        { "key": "battle_condition", "condition": "battle_bond_not_previously_used" }
+        {
+          "key": "ability",
+          "abilities": ["battlebond"]
+        },
+        {
+          "key": "battle_condition",
+          "condition": "directly_knock_out_opponent"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "battle_continues"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "battle_bond_not_previously_used"
+        }
       ],
-      "notes": {
-        "eng": "Only Battle Bond Greninja can transform; its source record is collapsed with ordinary Greninja in this dataset. These individuals are male. Scarlet/Violet Battle Bond no longer transforms Greninja."
-      },
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["faint", "battle_end"] }],
-          "notes": {
-            "eng": "After fainting, Battle Bond cannot transform Greninja again during that battle."
-          }
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["faint", "battle_end"]
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Ash-Greninja",
-    "esp": "Greninja (Forma Ash)",
-    "fra": "Amphinobi (Forme Sacha)",
-    "deu": "Quajutsu (Ash-Form)",
-    "ita": "Greninja (Forma Ash)",
-    "jap": "サトシゲッコウガ",
-    "kor": "지우개굴닌자",
-    "chs": "小智版甲贺忍蛙",
-    "cht": "小智版甲賀忍蛙"
-  },
-  "genus": {
-    "eng": "Ninja Pokémon",
-    "esp": "Pokémon Ninja",
-    "fra": "Pokémon Ninja",
-    "deu": "Ninja",
-    "ita": "Pokémon Ninja",
-    "jap": "しのびポケモン",
-    "kor": "시노비포켓몬",
-    "chs": "忍者宝可梦",
-    "cht": "忍者寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Greninja",
-    "fra": "Amphinobi",
-    "deu": "Quajutsu",
-    "jap": "ゲッコウガ",
-    "kor": "개굴닌자",
-    "chs": "甲贺忍蛙",
-    "cht": "甲賀忍蛙"
-  },
-  "formNames": {
-    "eng": "Ash-Greninja",
-    "esp": "Forma Ash",
-    "fra": "Forme Sacha",
-    "deu": "Ash-Form",
-    "ita": "Forma Ash",
-    "jap": "サトシゲッコウガ",
-    "kor": "지우개굴닌자",
-    "chs": "小智版甲贺忍蛙",
-    "cht": "小智版甲賀忍蛙"
-  },
   "transferOnlyIn": ["sm-s", "sm-m", "usum-us", "usum-um"]
 }

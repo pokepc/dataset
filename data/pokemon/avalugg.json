@@ -82,30 +82,15 @@
       "from": ["bergmite"],
       "trigger": "level_up",
       "minLevel": 37,
-      "conditions": [{ "key": "region", "region": "hisui", "relation": "outside" }]
+      "conditions": [
+        {
+          "key": "region",
+          "region": "hisui",
+          "relation": "outside"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Avalugg",
-    "fra": "Séracrawl",
-    "deu": "Arktilas",
-    "jap": "クレベース",
-    "kor": "크레베이스",
-    "chs": "冰岩怪",
-    "cht": "冰岩怪"
-  },
-  "genus": {
-    "eng": "Iceberg Pokémon",
-    "esp": "Pokémon Iceberg",
-    "fra": "Pokémon Iceberg",
-    "deu": "Eisberg-Pokémon",
-    "ita": "Pokémon Iceberg",
-    "jap": "ひょうざんポケモン",
-    "kor": "빙산포켓몬",
-    "chs": "冰山宝可梦",
-    "cht": "冰山寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um", "home"],
+  "championsId": "0713000"
 }

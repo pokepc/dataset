@@ -68,41 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Duraludon (Gigantamax Form)",
-    "fra": "Duralugon (Forme Gigamax)",
-    "deu": "Duraludon (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Alloy Pokémon",
-    "esp": "Pokémon Aleación",
-    "fra": "Pokémon Alliage",
-    "deu": "Legierungs-Pokémon",
-    "ita": "Pokémon Metallolega",
-    "jap": "ごうきんポケモン",
-    "kor": "합금포켓몬",
-    "chs": "合金宝可梦",
-    "cht": "合金寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Duraludon",
-    "fra": "Duralugon",
-    "deu": "Duraludon",
-    "jap": "ジュラルドン",
-    "kor": "두랄루돈",
-    "chs": "铝钢龙",
-    "cht": "鋁鋼龍"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

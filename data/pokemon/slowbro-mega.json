@@ -76,23 +76,45 @@
       "from": ["slowbro"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "slowbronite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "slowbronite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["slowbro"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "slowbronite", "role": "held" },
+      "item": {
+        "id": "slowbronite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -100,50 +122,19 @@
       "from": ["slowbro"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "slowbronite", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "slowbronite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Slowbro",
-    "fra": "MégaFlagadoss",
-    "deu": "Mega-Lahmus",
-    "jap": "メガヤドラン",
-    "kor": "메가야도란",
-    "chs": "超级呆壳兽",
-    "cht": "超級呆殼獸"
-  },
-  "genus": {
-    "eng": "Hermit Crab Pokémon",
-    "esp": "Pokémon Ermitaño",
-    "fra": "Pokémon Symbiose",
-    "deu": "Symbiose-Pokémon",
-    "ita": "Pokémon Paguro",
-    "jap": "やどかりポケモン",
-    "kor": "기생포켓몬",
-    "chs": "寄居蟹宝可梦",
-    "cht": "寄居蟹寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Slowbro",
-    "fra": "Flagadoss",
-    "deu": "Lahmus",
-    "jap": "ヤドラン",
-    "kor": "야도란",
-    "chs": "呆壳兽",
-    "cht": "呆殼獸"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0080001"
 }

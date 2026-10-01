@@ -136,31 +136,15 @@
       "from": ["koffing"],
       "trigger": "level_up",
       "minLevel": 35,
-      "conditions": [{ "key": "region", "region": "galar", "relation": "outside" }]
+      "conditions": [
+        {
+          "key": "region",
+          "region": "galar",
+          "relation": "outside"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Weezing",
-    "fra": "Smogogo",
-    "deu": "Smogmog",
-    "jap": "マタドガス",
-    "kor": "또도가스",
-    "chs": "双弹瓦斯",
-    "cht": "雙彈瓦斯"
-  },
-  "genus": {
-    "eng": "Poison Gas Pokémon",
-    "esp": "Pokémon Gas Venenoso",
-    "fra": "Pokémon Gaz Mortel",
-    "deu": "Giftwolken-Pokémon",
-    "ita": "Pokémon Velenuvola",
-    "jap": "どくガスポケモン",
-    "kor": "독가스포켓몬",
-    "chs": "毒气宝可梦",
-    "cht": "毒氣寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "y",
     "boxrs",

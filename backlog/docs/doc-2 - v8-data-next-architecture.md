@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 05:11'
+updated_date: '2026-10-01 05:24'
 ---
 Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
 and its consequences are in
@@ -12,7 +12,7 @@ locale codes are fixed by
 [decision-4](../decisions/decision-4%20-%20v8-locale-codes-and-language-records.md) and merged
 static output by
 [decision-5](../decisions/decision-5%20-%20Merged-static-API-output-only-for-game-sets-with-mods.md).
-Paths below are relative to the v8 `data/` directory (`data-next/` until the cut-over, task-7).
+Paths below are relative to the package's `data/` directory; the library is `src/lib` (`@pokepc/dataset/lib/*`).
 
 ## Goals
 
@@ -206,7 +206,7 @@ game-independent (names), and in the mod when it is the set's own wording (descr
 
 ## Schemas
 
-`src/lib-next/schemas.ts` (`lib/schemas` after the cut-over) defines every base record, override,
+`src/lib/schemas.ts` defines every base record, override,
 roster and locale file schema; `types.ts` exports the inferred types as named exports, and
 `languages.ts` the locale codes. Record schemas are strict, so a leftover v7 text field fails
 validation. Box presets use `schemaVersion: 2` for the text-free modern preset shape.
@@ -217,13 +217,13 @@ Merging a game set produces, for each moddable kind: the roster's base records w
 applied, and per locale the roster's base text with mod text applied. The library exports the merge
 function; the static API build uses the same function:
 
-- `mergeGameSet(source, { validate })` (`lib-next/merge`, `lib/merge` after the cut-over) is pure and
+- `mergeGameSet(source, { validate })` (`lib/merge`) is pure and
   filesystem-free. `source` holds base records per moddable kind, base text per locale and the set's
   mods (roster, overrides, text). It returns `{ records, text }`: merged records per kind in base
   order and merged text per locale, with empty locales and kinds omitted. It throws
   `GameSetMergeError` for roster ids missing from base, overrides or text outside the set, duplicate
   overrides, unknown locales, and (unless `validate: false`) merged records that fail their schema.
-- `loadGameSetSource(set, { dataDir, kinds, locales })` (`lib-next/fs`, Node only) reads those files
+- `loadGameSetSource(set, { dataDir, kinds, locales })` (`lib/fs`, Node only; `loadGameSet` merges in one call) reads those files
   from a data directory; `listModdedGameSets(dataDir)` lists the sets with mods. A set without mods
   merges to its base data.
 
@@ -281,14 +281,14 @@ Intentional differences from the full-record preview (`data-next/champions/` bef
 - Learnsets move from `pokemon-moves.json` to Pokémon `learnset` overrides.
 - The preview's `pt-br` text was a copy of English, not official text, so it is dropped.
 
-## Migration status (until task-7)
+## Migration from v7
 
-`data-next/` holds the v8 base layout, generated from v7 `data/` by
-`bun src/scripts/migrate-v7-to-v8.ts` (then `pnpm format`). The script validates every file against
-the v8 schemas, rebuilds every v7 record from its v8 record and text to prove nothing was lost, and
-checks that code maps are byte-identical. Until the cut-over, v7 `data/` stays the maintained source:
-re-run the script after changing it. `bun src/scripts/split-champions-preview.ts` then split the
-Champions preview into base and `mods/champions/` (task-5).
+Done in milestone `m-0` by one-time scripts, removed once applied (see Git history): v7 `data/` was
+converted into the base layout with a lossless round-trip check (task-4), the Champions preview was
+split into base and `mods/champions/` (task-5), and `data-next/` and `src/lib-next/` replaced v7
+`data/` and `src/lib/` (task-7). v7-only modules (text-in-record helpers, the classic-to-modern box
+preset transform) and completed one-offs (form and evolution migrations, PokéAPI game ids) went with
+them. The library keeps the v7 `Pkds` global type names as aliases of the v8 named types.
 
 ## Resolved
 

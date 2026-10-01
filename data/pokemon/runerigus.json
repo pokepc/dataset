@@ -64,48 +64,33 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "damage_without_fainting", "amount": 49 },
-        { "key": "location", "location": "dusty_bowl_arch" }
-      ],
-      "notes": {
-        "eng": "Sources disagree on accumulated damage versus currently missing HP and the precise threshold. Do not treat this as an executable counter until verified."
-      }
+        {
+          "key": "damage_without_fainting",
+          "amount": 49
+        },
+        {
+          "key": "location",
+          "location": "dusty_bowl_arch"
+        }
+      ]
     },
     {
       "from": ["yamask-galar"],
       "games": ["lza"],
       "trigger": "special",
       "conditions": [
-        { "key": "damage_without_fainting", "amount": 49 },
-        { "key": "location", "location": "coulant_waterway_bridge" }
+        {
+          "key": "damage_without_fainting",
+          "amount": 49
+        },
+        {
+          "key": "location",
+          "location": "coulant_waterway_bridge"
+        }
       ],
-      "activation": "manual",
-      "notes": {
-        "eng": "Sources disagree on accumulated damage versus currently missing HP and the precise threshold. Do not treat this as an executable counter until verified."
-      }
+      "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Runerigus",
-    "fra": "Tutétékri",
-    "deu": "Oghnatoll",
-    "jap": "デスバーン",
-    "kor": "데스판",
-    "chs": "迭失板",
-    "cht": "死神板"
-  },
-  "genus": {
-    "eng": "Grudge Pokémon",
-    "esp": "Pokémon Resquemor",
-    "fra": "Pokémon Rancune",
-    "deu": "Gram-Pokémon",
-    "ita": "Pokémon Rancore",
-    "jap": "おんねんポケモン",
-    "kor": "원념포켓몬",
-    "chs": "怨念宝可梦",
-    "cht": "怨念寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0867000"
 }

@@ -64,26 +64,14 @@
     {
       "from": ["dipplin"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "dragoncheer" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "dragoncheer"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Hydrapple",
-    "fra": "Pomdorochi",
-    "deu": "Hydrapfel",
-    "jap": "カミツオロチ",
-    "kor": "과미드라",
-    "chs": "蜜集大蛇",
-    "cht": "蜜集大蛇"
-  },
-  "genus": {
-    "eng": "Apple Hydra Pokémon",
-    "fra": "Hydre Pomme",
-    "deu": "Apple Hydra Pokémon",
-    "jap": "りんごオロチポケモン",
-    "kor": "사과이무기포켓몬"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "1019000"
 }

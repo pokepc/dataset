@@ -116,36 +116,23 @@
     {
       "from": ["eevee"],
       "trigger": "level_up",
-      "conditions": [{ "key": "location", "location": "moss_rock" }]
+      "conditions": [
+        {
+          "key": "location",
+          "location": "moss_rock"
+        }
+      ]
     },
     {
       "from": ["eevee"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Leafeon",
-    "fra": "Phyllali",
-    "deu": "Folipurba",
-    "jap": "リーフィア",
-    "kor": "리피아",
-    "chs": "叶伊布",
-    "cht": "葉伊布"
-  },
-  "genus": {
-    "eng": "Verdant Pokémon",
-    "esp": "Pokémon Verdor",
-    "fra": "Pokémon Verdoyant",
-    "deu": "Unreif-Pokémon",
-    "ita": "Pokémon Rigoglioso",
-    "jap": "しんりょくポケモン",
-    "kor": "심록포켓몬",
-    "chs": "新绿宝可梦",
-    "cht": "新綠寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "bank", "home"]
+  "transferOnlyIn": ["ranch", "hgss-hg", "hgss-ss", "bw-b", "bw-w", "bank", "home"],
+  "championsId": "0470000"
 }

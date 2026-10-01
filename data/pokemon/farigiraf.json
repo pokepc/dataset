@@ -64,28 +64,14 @@
     {
       "from": ["girafarig"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "twinbeam" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "twinbeam"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Farigiraf",
-    "fra": "Farigiraf",
-    "deu": "Farigiraf",
-    "jap": "リキキリン",
-    "kor": "키키링",
-    "chs": "奇麒麟",
-    "cht": "奇麒麟"
-  },
-  "genus": {
-    "eng": "Long Neck Pokémon",
-    "fra": "Long-Cou",
-    "deu": "Langhals",
-    "jap": "くびながポケモン",
-    "kor": "긴목포켓몬",
-    "chs": "长颈宝可梦",
-    "cht": "長頸寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0981000"
 }

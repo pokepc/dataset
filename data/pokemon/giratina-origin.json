@@ -103,18 +103,32 @@
       "from": ["giratina"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "griseouscore", "role": "used", "consumed": false },
+      "item": {
+        "id": "griseouscore",
+        "role": "used",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "use_item",
-          "item": { "id": "griseouscore", "role": "used", "consumed": false },
+          "item": {
+            "id": "griseouscore",
+            "role": "used",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         }
       ]
     },
@@ -122,18 +136,32 @@
       "from": ["giratina"],
       "games": ["sv-s", "sv-v"],
       "trigger": "equip_item",
-      "item": { "id": "griseouscore", "role": "held", "consumed": false },
+      "item": {
+        "id": "griseouscore",
+        "role": "held",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "trigger": "remove_item",
-          "item": { "id": "griseouscore", "role": "held", "consumed": false },
+          "item": {
+            "id": "griseouscore",
+            "role": "held",
+            "consumed": false
+          },
           "conditions": []
         },
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         }
       ]
     },
@@ -161,28 +189,50 @@
         "bdsp-sp"
       ],
       "trigger": "equip_item",
-      "item": { "id": "griseousorb", "role": "held", "consumed": false },
+      "item": {
+        "id": "griseousorb",
+        "role": "held",
+        "consumed": false
+      },
       "conditions": [],
       "revert": [
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         },
         {
           "trigger": "remove_item",
-          "item": { "id": "griseousorb", "role": "held", "consumed": false },
-          "conditions": [{ "key": "environment", "environment": "outside_distortion_world" }],
-          "notes": {
-            "eng": "In Platinum, Giratina remains in Origin Forme inside the Distortion World."
-          }
+          "item": {
+            "id": "griseousorb",
+            "role": "held",
+            "consumed": false
+          },
+          "conditions": [
+            {
+              "key": "environment",
+              "environment": "outside_distortion_world"
+            }
+          ]
         },
         {
           "games": ["pt"],
           "trigger": "automatic",
           "conditions": [
-            { "key": "interaction", "interaction": "leave_distortion_world" },
-            { "key": "mechanic", "mechanic": "not_holding_griseous_orb" }
+            {
+              "key": "interaction",
+              "interaction": "leave_distortion_world"
+            },
+            {
+              "key": "mechanic",
+              "mechanic": "not_holding_griseous_orb"
+            }
           ]
         }
       ]
@@ -191,73 +241,54 @@
       "from": ["giratina"],
       "games": ["pt"],
       "trigger": "automatic",
-      "conditions": [{ "key": "location", "location": "distortion_world" }],
+      "conditions": [
+        {
+          "key": "location",
+          "location": "distortion_world"
+        }
+      ],
       "revert": [
         {
           "games": ["home"],
           "trigger": "automatic",
-          "conditions": [{ "key": "storage_event", "event": "deposit", "service": "home" }]
+          "conditions": [
+            {
+              "key": "storage_event",
+              "event": "deposit",
+              "service": "home"
+            }
+          ]
         },
         {
           "trigger": "remove_item",
-          "item": { "id": "griseousorb", "role": "held", "consumed": false },
-          "conditions": [{ "key": "environment", "environment": "outside_distortion_world" }],
-          "notes": {
-            "eng": "In Platinum, Giratina remains in Origin Forme inside the Distortion World."
-          }
+          "item": {
+            "id": "griseousorb",
+            "role": "held",
+            "consumed": false
+          },
+          "conditions": [
+            {
+              "key": "environment",
+              "environment": "outside_distortion_world"
+            }
+          ]
         },
         {
           "trigger": "automatic",
           "conditions": [
-            { "key": "interaction", "interaction": "leave_distortion_world" },
-            { "key": "mechanic", "mechanic": "not_holding_griseous_orb" }
+            {
+              "key": "interaction",
+              "interaction": "leave_distortion_world"
+            },
+            {
+              "key": "mechanic",
+              "mechanic": "not_holding_griseous_orb"
+            }
           ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Giratina (Origin Forme)",
-    "esp": "Giratina (Forma Origen)",
-    "fra": "Giratina (Forme Originelle)",
-    "deu": "Giratina (Urform)",
-    "ita": "Giratina (Forma Originale)",
-    "jap": "ギラティナ (オリジンフォルム)",
-    "kor": "기라티나 (오리진폼)",
-    "chs": "骑拉帝纳 (起源形态)",
-    "cht": "騎拉帝納 (起源形態)"
-  },
-  "genus": {
-    "eng": "Renegade Pokémon",
-    "esp": "Pokémon Renegado",
-    "fra": "Pokémon Renégat",
-    "deu": "Rebellen-Pokémon",
-    "ita": "Pokémon Ribelle",
-    "jap": "はんこつポケモン",
-    "kor": "반골포켓몬",
-    "chs": "反抗宝可梦",
-    "cht": "反抗寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Giratina",
-    "fra": "Giratina",
-    "deu": "Giratina",
-    "jap": "ギラティナ",
-    "kor": "기라티나",
-    "chs": "骑拉帝纳",
-    "cht": "騎拉帝納"
-  },
-  "formNames": {
-    "eng": "Origin Forme",
-    "esp": "Forma Origen",
-    "fra": "Forme Originelle",
-    "deu": "Urform",
-    "ita": "Forma Originale",
-    "jap": "オリジンフォルム",
-    "kor": "오리진폼",
-    "chs": "起源形态",
-    "cht": "起源形態"
-  },
   "transferOnlyIn": [
     "ranch",
     "bw-b",

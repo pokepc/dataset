@@ -146,30 +146,12 @@
     {
       "from": ["cleffa"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Clefairy",
-    "fra": "Mélofée",
-    "deu": "Piepi",
-    "jap": "ピッピ",
-    "kor": "삐삐",
-    "chs": "皮皮",
-    "cht": "皮皮"
-  },
-  "genus": {
-    "eng": "Fairy Pokémon",
-    "esp": "Pokémon Hada",
-    "fra": "Pokémon Fée",
-    "deu": "Feen-Pokémon",
-    "ita": "Pokémon Fata",
-    "jap": "ようせいポケモン",
-    "kor": "요정포켓몬",
-    "chs": "妖精宝可梦",
-    "cht": "妖精寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "xd", "ranch", "bank", "home"]
 }

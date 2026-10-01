@@ -120,30 +120,17 @@
     {
       "from": ["riolu"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }, { "key": "time_of_day", "time": "day" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        },
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Lucario",
-    "fra": "Lucario",
-    "deu": "Lucario",
-    "jap": "ルカリオ",
-    "kor": "루카리오",
-    "chs": "路卡利欧",
-    "cht": "路卡利歐"
-  },
-  "genus": {
-    "eng": "Aura Pokémon",
-    "esp": "Pokémon Aura",
-    "fra": "Pokémon Aura",
-    "deu": "Aura-Pokémon",
-    "ita": "Pokémon Aura",
-    "jap": "はどうポケモン",
-    "kor": "파동포켓몬",
-    "chs": "波导宝可梦",
-    "cht": "波導寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["ranch", "bank", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": ["ranch", "bank", "oras-or", "oras-as", "home"],
+  "championsId": "0448000"
 }

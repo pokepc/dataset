@@ -66,54 +66,24 @@
       "from": ["milcery"],
       "games": ["swsh-sw", "swsh-sh", "sv-s", "sv-v"],
       "trigger": "special",
-      "item": { "id": "strawberrysweet", "role": "held" },
+      "item": {
+        "id": "strawberrysweet",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "spin", "direction": "counterclockwise", "seconds": 5, "comparison": "lt" },
-        { "key": "time_of_day", "time": "night" }
+        {
+          "key": "spin",
+          "direction": "counterclockwise",
+          "seconds": 5,
+          "comparison": "lt"
+        },
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Alcremie (Salted Cream Strawberry Sweet)",
-    "esp": "Alcremie (Crema Salada)",
-    "fra": "Charmilly (Lait Salé Fraise en Sucre)",
-    "deu": "Pokusan (Salz-Creme)",
-    "ita": "Alcremie (Lattesale)",
-    "jap": "マホイップ (ミルキィソルト)",
-    "kor": "마휘핑 (밀키솔트)",
-    "chs": "霜奶仙 (奶香雪盐)",
-    "cht": "霜奶仙 (奶香雪鹽)"
-  },
-  "genus": {
-    "eng": "Cream Pokémon",
-    "esp": "Pokémon Nata",
-    "fra": "Pokémon Crème",
-    "deu": "Sahne-Pokémon",
-    "ita": "Pokémon Pannafresca",
-    "jap": "クリームポケモン",
-    "kor": "크림포켓몬",
-    "chs": "鲜奶油宝可梦",
-    "cht": "鮮奶油寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Alcremie",
-    "fra": "Charmilly",
-    "deu": "Pokusan",
-    "jap": "マホイップ",
-    "kor": "마휘핑",
-    "chs": "霜奶仙",
-    "cht": "霜奶仙"
-  },
-  "formNames": {
-    "eng": "Salted Cream Strawberry Sweet",
-    "esp": "Crema Salada",
-    "fra": "Lait Salé Fraise en Sucre",
-    "deu": "Salz-Creme",
-    "ita": "Lattesale",
-    "jap": "ミルキィソルト",
-    "kor": "밀키솔트",
-    "chs": "奶香雪盐",
-    "cht": "奶香雪鹽"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0869005"
 }

@@ -66,30 +66,17 @@
       "games": ["sv-s", "sv-v"],
       "trigger": "level_up",
       "conditions": [
-        { "key": "walk_steps", "count": 1000, "mode": "lets_go" },
-        { "key": "outside_poke_ball" }
+        {
+          "key": "walk_steps",
+          "count": 1000,
+          "mode": "lets_go"
+        },
+        {
+          "key": "outside_poke_ball"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Pawmot",
-    "fra": "Pohmarmotte",
-    "deu": "Pamomamo",
-    "jap": "パーモット",
-    "kor": "빠르모트",
-    "chs": "巴布土拨",
-    "cht": "巴布土撥"
-  },
-  "genus": {
-    "eng": "Hands-On Pokémon",
-    "fra": "Pose Paume",
-    "deu": "Behandlung",
-    "jap": "てあてポケモン",
-    "kor": "손길포켓몬",
-    "chs": "押掌宝可梦",
-    "cht": "押掌寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0923000"
 }

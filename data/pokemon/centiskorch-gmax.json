@@ -68,41 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Centiskorch (Gigantamax Form)",
-    "fra": "Scolocendre (Forme Gigamax)",
-    "deu": "Infernopod (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Radiator Pokémon",
-    "esp": "Pokémon Radiador",
-    "fra": "Pokémon Calorifère",
-    "deu": "Exotherm-Pokémon",
-    "ita": "Pokémon Termogeno",
-    "jap": "はつねつポケモン",
-    "kor": "발열포켓몬",
-    "chs": "发热宝可梦",
-    "cht": "發熱寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Centiskorch",
-    "fra": "Scolocendre",
-    "deu": "Infernopod",
-    "jap": "マルヤクデ",
-    "kor": "다태우지네",
-    "chs": "焚焰蚣",
-    "cht": "焚焰蚣"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

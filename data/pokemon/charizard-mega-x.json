@@ -65,23 +65,45 @@
       "from": ["charizard"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "charizarditex", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "charizarditex",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["charizard"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "charizarditex", "role": "held" },
+      "item": {
+        "id": "charizarditex",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -89,50 +111,19 @@
       "from": ["charizard"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "charizarditex", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "charizarditex",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Charizard X",
-    "fra": "MégaDracaufeu X",
-    "deu": "Mega-Glurak X",
-    "jap": "メガリザードンX",
-    "kor": "메가리자몽X",
-    "chs": "超级喷火龙X",
-    "cht": "超級噴火龍X"
-  },
-  "genus": {
-    "eng": "Flame Pokémon",
-    "esp": "Pokémon Llama",
-    "fra": "Pokémon Flamme",
-    "deu": "Flammen-Pokémon",
-    "ita": "Pokémon Fiamma",
-    "jap": "かえんポケモン",
-    "kor": "화염포켓몬",
-    "chs": "火焰宝可梦",
-    "cht": "火焰寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Charizard",
-    "fra": "Dracaufeu",
-    "deu": "Glurak",
-    "jap": "リザードン",
-    "kor": "리자몽",
-    "chs": "喷火龙",
-    "cht": "噴火龍"
-  },
-  "formNames": {
-    "eng": "Mega Form X",
-    "esp": "Forma Mega X",
-    "fra": "Méga-Forme X",
-    "deu": "Mega-Form X",
-    "ita": "Forma Mega X",
-    "jap": "メガX",
-    "kor": "메가X",
-    "chs": "超级X",
-    "cht": "超級X"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"]
+  "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m"],
+  "championsId": "0006001"
 }

@@ -111,32 +111,13 @@
     {
       "from": ["skitty"],
       "trigger": "use_item",
-      "item": { "id": "moonstone", "role": "used" },
+      "item": {
+        "id": "moonstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Delcatty",
-    "fra": "Delcatty",
-    "deu": "Enekoro",
-    "jap": "エネコロロ",
-    "kor": "델케티",
-    "chs": "优雅猫",
-    "cht": "優雅貓"
-  },
-  "genus": {
-    "eng": "Prim Pokémon",
-    "esp": "Pokémon Cursi",
-    "fra": "Pokémon Guindé",
-    "deu": "Eingebildet",
-    "ita": "Pokémon Finezza",
-    "jap": "おすましポケモン",
-    "kor": "새침떼기포켓몬",
-    "chs": "清高宝可梦",
-    "cht": "清高寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",

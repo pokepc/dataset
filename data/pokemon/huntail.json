@@ -115,32 +115,13 @@
     {
       "from": ["clamperl"],
       "trigger": "trade",
-      "item": { "id": "deepseatooth", "role": "held" },
+      "item": {
+        "id": "deepseatooth",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Huntail",
-    "fra": "Serpang",
-    "deu": "Aalabyss",
-    "jap": "ハンテール",
-    "kor": "헌테일",
-    "chs": "猎斑鱼",
-    "cht": "獵斑魚"
-  },
-  "genus": {
-    "eng": "Deep Sea Pokémon",
-    "esp": "Pokémon Abisal",
-    "fra": "Pokémon Abysse",
-    "deu": "Tiefsee",
-    "ita": "Pokémon Abissi",
-    "jap": "しんかいポケモン",
-    "kor": "깊은바다포켓몬",
-    "chs": "深海宝可梦",
-    "cht": "深海寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",

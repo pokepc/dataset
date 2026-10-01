@@ -83,51 +83,17 @@
       ],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um", "swsh-sw", "swsh-sh"],
       "trigger": "equip_item",
-      "item": { "id": "dragonmemory", "role": "held" },
-      "conditions": [{ "key": "ability", "abilities": ["rkssystem"] }]
+      "item": {
+        "id": "dragonmemory",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "ability",
+          "abilities": ["rkssystem"]
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Silvally (Type: Dragon)",
-    "esp": "Silvally (Tipo: Dragón)",
-    "fra": "Silvallié (Type : Dragon)",
-    "deu": "Amigento (Typ:Drache)",
-    "ita": "Silvally (Tipo Drago)",
-    "jap": "シルヴァディ (タイプ：ドラゴン)",
-    "kor": "실버디 (타입:드래곤)",
-    "chs": "银伴战兽 (属性：龙)",
-    "cht": "銀伴戰獸 (屬性：龍)"
-  },
-  "genus": {
-    "eng": "Synthetic Pokémon",
-    "esp": "Pokémon Multigénico",
-    "fra": "Pokémon Multigénome",
-    "deu": "Modifikations-Pokémon",
-    "ita": "Pokémon Multigene",
-    "jap": "じんこうポケモン",
-    "kor": "인공포켓몬",
-    "chs": "人工宝可梦",
-    "cht": "人工寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Silvally",
-    "fra": "Silvallié",
-    "deu": "Amigento",
-    "jap": "シルヴァディ",
-    "kor": "실버디",
-    "chs": "银伴战兽",
-    "cht": "銀伴戰獸"
-  },
-  "formNames": {
-    "eng": "Type: Dragon",
-    "esp": "Tipo: Dragón",
-    "fra": "Type : Dragon",
-    "deu": "Typ:Drache",
-    "ita": "Tipo Drago",
-    "jap": "タイプ：ドラゴン",
-    "kor": "타입:드래곤",
-    "chs": "属性：龙",
-    "cht": "屬性：龍"
-  },
   "transferOnlyIn": []
 }

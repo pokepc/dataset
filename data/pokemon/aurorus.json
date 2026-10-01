@@ -80,30 +80,14 @@
       "from": ["amaura"],
       "trigger": "level_up",
       "minLevel": 39,
-      "conditions": [{ "key": "time_of_day", "time": "night" }]
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Aurorus",
-    "fra": "Dragmara",
-    "deu": "Amagarga",
-    "jap": "アマルルガ",
-    "kor": "아마루르가",
-    "chs": "冰雪巨龙",
-    "cht": "冰雪巨龍"
-  },
-  "genus": {
-    "eng": "Tundra Pokémon",
-    "esp": "Pokémon Tundra",
-    "fra": "Pokémon Toundra",
-    "deu": "Tundra-Pokémon",
-    "ita": "Pokémon Tundra",
-    "jap": "ツンドラポケモン",
-    "kor": "툰드라포켓몬",
-    "chs": "冻原宝可梦",
-    "cht": "凍原寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "sm-s", "sm-m", "home"],
+  "championsId": "0699000"
 }

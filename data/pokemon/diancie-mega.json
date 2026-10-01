@@ -66,66 +66,48 @@
       "from": ["diancie"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "diancite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "diancite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["diancie"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "diancite", "role": "held" },
+      "item": {
+        "id": "diancite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Diancie",
-    "fra": "MégaDiancie",
-    "deu": "Mega-Diancie",
-    "jap": "メガディアンシー",
-    "kor": "메가디안시",
-    "chs": "超级蒂安希",
-    "cht": "超級蒂安希"
-  },
-  "genus": {
-    "eng": "Jewel Pokémon",
-    "esp": "Pokémon Joya",
-    "fra": "Pokémon Joyau",
-    "deu": "Edelstein-Pokémon",
-    "ita": "Pokémon Gemma",
-    "jap": "ほうせきポケモン",
-    "kor": "보석포켓몬",
-    "chs": "宝石宝可梦",
-    "cht": "寶石寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Diancie",
-    "fra": "Diancie",
-    "deu": "Diancie",
-    "jap": "ディアンシー",
-    "kor": "디안시",
-    "chs": "蒂安希",
-    "cht": "蒂安希"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
   "transferOnlyIn": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"]
 }

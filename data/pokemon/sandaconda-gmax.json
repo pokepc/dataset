@@ -67,41 +67,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Sandaconda (Gigantamax Form)",
-    "fra": "Dunaconda (Forme Gigamax)",
-    "deu": "Sanaconda (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Sand Snake Pokémon",
-    "esp": "Pokémon Serp. Arena",
-    "fra": "Pokémon Serpensable",
-    "deu": "Sandschlangen-Pokémon",
-    "ita": "Pokémon Sabbiaserpe",
-    "jap": "すなへびポケモン",
-    "kor": "모래뱀포켓몬",
-    "chs": "沙蛇宝可梦",
-    "cht": "沙蛇寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Sandaconda",
-    "fra": "Dunaconda",
-    "deu": "Sanaconda",
-    "jap": "サダイジャ",
-    "kor": "사다이사",
-    "chs": "沙螺蟒",
-    "cht": "沙螺蟒"
-  },
-  "formNames": {
-    "eng": "Gigantamax Form",
-    "fra": "Forme Gigamax",
-    "deu": "Gigadynamax-Form"
-  },
   "transferOnlyIn": []
 }

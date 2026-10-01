@@ -65,46 +65,13 @@
     {
       "from": ["poltchageist-artisan"],
       "trigger": "use_item",
-      "item": { "id": "masterpieceteacup", "role": "used" },
+      "item": {
+        "id": "masterpieceteacup",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Sinistcha (Masterpiece Form)",
-    "esp": "Sinistcha (Forma Exquisita)",
-    "fra": "Théffroyable (Forme Exceptionnelle)",
-    "deu": "Fatalitcha (Edle Form)",
-    "ita": "Sinistcha (Forma Eccezionale)",
-    "jap": "ヤバソチャ (ケッサクのすがた)",
-    "kor": "그우린차 (걸작의 모습)",
-    "chs": "来悲粗茶 (杰作的样子)",
-    "cht": "來悲粗茶 (傑作的樣子)"
-  },
-  "genus": {
-    "eng": "Matcha Pokémon",
-    "fra": "Matcha",
-    "deu": "Matcha Pokémon",
-    "kor": "말차포켓몬"
-  },
-  "speciesNames": {
-    "eng": "Sinistcha",
-    "fra": "Théffroyable",
-    "deu": "Fatalitcha",
-    "jap": "ヤバソチャ",
-    "kor": "그우린차",
-    "chs": "来悲粗茶",
-    "cht": "來悲粗茶"
-  },
-  "formNames": {
-    "eng": "Masterpiece Form",
-    "esp": "Forma Exquisita",
-    "fra": "Forme Exceptionnelle",
-    "deu": "Edle Form",
-    "ita": "Forma Eccezionale",
-    "jap": "ケッサクのすがた",
-    "kor": "걸작의 모습",
-    "chs": "杰作的样子",
-    "cht": "傑作的樣子"
-  },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "1013001"
 }

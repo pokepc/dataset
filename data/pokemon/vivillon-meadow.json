@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "meadow" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "meadow"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Meadow Pattern)",
-    "fra": "Prismillon (Motif Floraison)",
-    "deu": "Vivillon (Blumenmeermuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Meadow Pattern",
-    "esp": "Motivo Floral",
-    "fra": "Motif Floraison",
-    "deu": "Blumenmeermuster",
-    "ita": "Motivo Giardinfiore",
-    "jap": "はなぞののもよう",
-    "kor": "화원의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -116,5 +101,6 @@
     "sv-s",
     "sv-v",
     "champions"
-  ]
+  ],
+  "championsId": "0666006"
 }

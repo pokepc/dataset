@@ -132,55 +132,34 @@
     {
       "from": ["scyther"],
       "trigger": "trade",
-      "item": { "id": "metalcoat", "role": "held" },
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "item": {
+        "id": "metalcoat",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     },
     {
       "from": ["scyther"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "metalcoat", "role": "used" },
-      "conditions": [{ "key": "gender", "gender": "female" }],
+      "item": {
+        "id": "metalcoat",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Scizor (Female)",
-    "fra": "Cizayox (Female)",
-    "deu": "Scherox (Female)"
-  },
-  "genus": {
-    "eng": "Pincer Pokémon",
-    "esp": "Pokémon Tenaza",
-    "fra": "Pokémon Pince",
-    "deu": "Kneifer-Pokémon",
-    "ita": "Pokémon Chela",
-    "jap": "はさみポケモン",
-    "kor": "집게포켓몬",
-    "chs": "钳子宝可梦",
-    "cht": "鉗子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Scizor",
-    "fra": "Cizayox",
-    "deu": "Scherox",
-    "jap": "ハッサム",
-    "kor": "핫삼",
-    "chs": "巨钳螳螂",
-    "cht": "巨鉗螳螂"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -198,5 +177,6 @@
     "oras-as",
     "home",
     "bdsp-sp"
-  ]
+  ],
+  "championsId": "0212000"
 }

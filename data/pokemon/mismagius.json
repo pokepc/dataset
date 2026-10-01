@@ -104,32 +104,13 @@
     {
       "from": ["misdreavus"],
       "trigger": "use_item",
-      "item": { "id": "duskstone", "role": "used" },
+      "item": {
+        "id": "duskstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Mismagius",
-    "fra": "Magirêve",
-    "deu": "Traunmagil",
-    "jap": "ムウマージ",
-    "kor": "무우마직",
-    "chs": "梦妖魔",
-    "cht": "夢妖魔"
-  },
-  "genus": {
-    "eng": "Magical Pokémon",
-    "esp": "Pokémon Mágico",
-    "fra": "Pokémon Magique",
-    "deu": "Magisch",
-    "ita": "Pokémon Stregone",
-    "jap": "マジカルポケモン",
-    "kor": "매지컬포켓몬",
-    "chs": "魔法宝可梦",
-    "cht": "魔法寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "dp-d",
     "ranch",

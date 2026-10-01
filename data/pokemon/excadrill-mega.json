@@ -65,58 +65,33 @@
       "from": ["excadrill"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "excadrite", "role": "held" },
+      "item": {
+        "id": "excadrite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Excadrill",
-    "fra": "MégaMinotaupe",
-    "deu": "Mega-Stalobor",
-    "jap": "メガドリュウズ",
-    "kor": "메가몰드류",
-    "chs": "超级龙头地鼠",
-    "cht": "超級龍頭地鼠"
-  },
-  "genus": {
-    "eng": "Subterrene Pokémon",
-    "esp": "Pokémon Subterráneo",
-    "fra": "Pokémon Souterrain",
-    "deu": "Untergrund-Pokémon",
-    "ita": "Pokémon Sottoterra",
-    "jap": "ちていポケモン",
-    "kor": "땅밑포켓몬",
-    "chs": "地底宝可梦",
-    "cht": "地底寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Excadrill",
-    "fra": "Minotaupe",
-    "deu": "Stalobor",
-    "jap": "ドリュウズ",
-    "kor": "몰드류",
-    "chs": "龙头地鼠",
-    "cht": "龍頭地鼠"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0530001"
 }

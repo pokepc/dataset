@@ -67,37 +67,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Butterfree (Gigantamax Form)",
-    "fra": "Papilusion (Forme Gigamax)",
-    "deu": "Smettbo (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Butterfly Pokémon",
-    "esp": "Pokémon Mariposa",
-    "fra": "Pokémon Papillon",
-    "deu": "Falter-Pokémon",
-    "ita": "Pokémon Farfalla",
-    "jap": "ちょうちょポケモン",
-    "kor": "나비포켓몬",
-    "chs": "蝴蝶宝可梦",
-    "cht": "蝴蝶寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Butterfree",
-    "fra": "Papilusion",
-    "deu": "Smettbo",
-    "jap": "バタフリー",
-    "kor": "버터플",
-    "chs": "巴大蝶",
-    "cht": "巴大蝶"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Forme Gigamax", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

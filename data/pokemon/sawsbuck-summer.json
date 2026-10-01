@@ -94,74 +94,55 @@
       "games": ["bw-b", "bw-w", "b2w2-b2", "b2w2-w2"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "season", "season": "summer" },
-        { "key": "mechanic", "mechanic": "in_party" }
-      ],
-      "notes": {
-        "eng": "The form updates when the game updates the current season while this Pokémon is in the party."
-      }
+        {
+          "key": "season",
+          "season": "summer"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
     },
     {
       "from": ["sawsbuck-autumn", "sawsbuck-winter", "sawsbuck"],
       "games": ["sv-s", "sv-v"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "location", "location": "east_province_area_one" },
-        { "key": "interaction", "interaction": "load_game" },
-        { "key": "mechanic", "mechanic": "in_party" }
-      ],
-      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+        {
+          "key": "location",
+          "location": "east_province_area_one"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
     },
     {
       "from": ["sawsbuck-autumn", "sawsbuck-winter", "sawsbuck"],
       "games": ["sv-s", "sv-v"],
       "trigger": "automatic",
       "conditions": [
-        { "key": "location", "location": "east_province_area_two" },
-        { "key": "interaction", "interaction": "load_game" },
-        { "key": "mechanic", "mechanic": "in_party" }
-      ],
-      "notes": { "eng": "Load the saved game in this area while this Pokémon is in the party." }
+        {
+          "key": "location",
+          "location": "east_province_area_two"
+        },
+        {
+          "key": "interaction",
+          "interaction": "load_game"
+        },
+        {
+          "key": "mechanic",
+          "mechanic": "in_party"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Sawsbuck (Summer Form)",
-    "esp": "Sawsbuck (Forma Verano)",
-    "fra": "Haydaim (Forme Été)",
-    "deu": "Kronjuwild (Sommerform)",
-    "ita": "Sawsbuck (Forma Estate)",
-    "jap": "メブキジカ (なつのすがた)",
-    "kor": "바라철록 (여름의 모습)"
-  },
-  "genus": {
-    "eng": "Season Pokémon",
-    "esp": "Pokémon Estacional",
-    "fra": "Pokémon Saison",
-    "deu": "Jahreszeit",
-    "ita": "Pokémon Stagione",
-    "jap": "きせつポケモン",
-    "kor": "계절포켓몬",
-    "chs": "季节宝可梦",
-    "cht": "季節寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Sawsbuck",
-    "fra": "Haydaim",
-    "deu": "Kronjuwild",
-    "jap": "メブキジカ",
-    "kor": "바라철록",
-    "chs": "萌芽鹿",
-    "cht": "萌芽鹿"
-  },
-  "formNames": {
-    "eng": "Summer Form",
-    "esp": "Forma Verano",
-    "fra": "Forme Été",
-    "deu": "Sommerform",
-    "ita": "Forma Estate",
-    "jap": "なつのすがた",
-    "kor": "여름의 모습"
-  },
   "transferOnlyIn": [
     "xy-x",
     "xy-y",

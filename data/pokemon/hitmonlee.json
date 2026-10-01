@@ -138,31 +138,14 @@
       "from": ["tyrogue"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "attack_defense_comparison", "comparison": "gt" }]
+      "conditions": [
+        {
+          "key": "attack_defense_comparison",
+          "comparison": "gt"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Hitmonlee",
-    "fra": "Kicklee",
-    "deu": "Kicklee",
-    "jap": "サワムラー",
-    "kor": "시라소몬",
-    "chs": "飞腿郎",
-    "cht": "飛腿郎"
-  },
-  "genus": {
-    "eng": "Kicking Pokémon",
-    "esp": "Pokémon Patada",
-    "fra": "Pokémon Latteur",
-    "deu": "Kicker-Pokémon",
-    "ita": "Pokémon Tiracalci",
-    "jap": "キックポケモン",
-    "kor": "킥포켓몬",
-    "chs": "踢腿宝可梦",
-    "cht": "踢腿寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

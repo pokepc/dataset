@@ -99,31 +99,12 @@
     {
       "from": ["minccino"],
       "trigger": "use_item",
-      "item": { "id": "shinystone", "role": "used" },
+      "item": {
+        "id": "shinystone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Cinccino",
-    "fra": "Pashmilla",
-    "deu": "Chillabell",
-    "jap": "チラチーノ",
-    "kor": "치라치노",
-    "chs": "奇诺栗鼠",
-    "cht": "奇諾栗鼠"
-  },
-  "genus": {
-    "eng": "Scarf Pokémon",
-    "esp": "Pokémon Estola",
-    "fra": "Pokémon Écharpe",
-    "deu": "Schal-Pokémon",
-    "ita": "Pokémon Sciarpa",
-    "jap": "スカーフポケモン",
-    "kor": "스카프포켓몬",
-    "chs": "围巾宝可梦",
-    "cht": "圍巾寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "sm-s", "sm-m", "home"]
 }

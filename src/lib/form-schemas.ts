@@ -21,7 +21,6 @@ import {
   formTriggers,
   formWeather,
   formWeatherRelations,
-  languageAlpha3Codes,
   moveCategory,
 } from './enums.ts'
 
@@ -100,10 +99,7 @@ const actionShape = {
     .strictObject({ id, role: z.enum(formItemRoles), consumed: z.boolean().optional() })
     .optional(),
   conditions: z.array(formConditionSchema),
-  notes: z
-    .partialRecord(z.enum(languageAlpha3Codes), z.string().min(1))
-    .refine((text) => Object.values(text).some(Boolean), 'Provide at least one translation')
-    .optional(),
+  // Notes live in the Pokémon's locale files (`formNotes`, keyed by method and revert index).
 }
 
 function validateAction(method: z.infer<typeof formActionSchema>, ctx: z.RefinementCtx) {
@@ -129,13 +125,8 @@ function validateAction(method: z.infer<typeof formActionSchema>, ctx: z.Refinem
   ) {
     ctx.addIssue({ code: 'custom', path: ['conditions'], message: 'Fusion requires a partner' })
   }
-  if (method.trigger === 'special' && method.conditions.length === 0 && !method.notes) {
-    ctx.addIssue({
-      code: 'custom',
-      path: ['conditions'],
-      message: 'Special methods require a condition or explanatory note',
-    })
-  }
+  // A special method without conditions needs an explanatory English note; the data-integrity
+  // tests check that across the record and its locale file.
   const conditions = method.conditions.map((condition) => JSON.stringify(condition))
   if (new Set(conditions).size !== conditions.length) {
     ctx.addIssue({ code: 'custom', path: ['conditions'], message: 'Duplicate condition' })

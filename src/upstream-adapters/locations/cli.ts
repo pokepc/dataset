@@ -1,6 +1,6 @@
 import { readFile, writeFile, mkdir, rename, rm } from 'node:fs/promises'
 import { randomUUID } from 'node:crypto'
-import { resolve } from 'node:path'
+import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { parseArgs } from 'node:util'
 import { format } from 'oxfmt'
@@ -40,7 +40,11 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
     throw new Error('--offline and --refresh cannot be combined')
   const data = resolveDatasetDirectory(import.meta.url, process.env.POKEPC_DATASET_DIR)
   const outputPath = resolve(data, 'locations.json')
+  const textPath = resolve(data, 'i18n/eng/locations.json')
   const original = await readFile(outputPath, 'utf8')
+  // Absent before the first import of a fresh dataset.
+  const readText = () => readFile(textPath, 'utf8').catch(() => '')
+  const originalText = await readText()
   const gameIds: string[] = JSON.parse(await readFile(resolve(data, 'indices/games.json'), 'utf8'))
   const games: Game[] = await Promise.all(
     gameIds.map(async (id) =>
@@ -54,7 +58,9 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
   const cache = new SourceCache(directory, values.offline, values.refresh)
   const fetched = await fetchCandidates(cache, games)
   const result = normalizeLocations(fetched.candidates, games, regions)
-  z.array(locationSchema).min(1).parse(result.locations)
+  const records = result.locations.map(({ name: _, ...location }) => location)
+  const names = Object.fromEntries(result.locations.map(({ id, name }) => [id, { name }]))
+  z.array(locationSchema).min(1).parse(records)
   const seenIds = new Set<string>()
   const seenPokeApiIds = new Set<number>()
   for (const location of result.locations) {
@@ -110,13 +116,12 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
   const formatConfig = JSON.parse(
     await readFile(new URL('../../../.oxfmtrc.json', import.meta.url), 'utf8'),
   )
-  const formatted = await format(
-    outputPath,
-    JSON.stringify(result.locations, null, 2),
-    formatConfig,
-  )
-  if (formatted.errors.length)
-    throw new Error(`Location formatting failed: ${JSON.stringify(formatted.errors)}`)
+  const formatted = await format(outputPath, JSON.stringify(records, null, 2), formatConfig)
+  const formattedText = await format(textPath, JSON.stringify(names, null, 2), formatConfig)
+  if (formatted.errors.length || formattedText.errors.length)
+    throw new Error(
+      `Location formatting failed: ${JSON.stringify([...formatted.errors, ...formattedText.errors])}`,
+    )
   await writeFile(resolve(directory, 'candidate.json'), formatted.code)
   console.log(JSON.stringify(summary, null, 2))
   console.log(`Review report: ${resolve(directory, 'report.json')}`)
@@ -125,17 +130,23 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
       throw new Error('Source failures prevent writing; inspect the report.')
     if (removed.length)
       throw new Error(`Unreviewed removals prevent writing: ${removed.join(', ')}`)
-    if ((await readFile(outputPath, 'utf8')) !== original)
+    if ((await readFile(outputPath, 'utf8')) !== original || (await readText()) !== originalText)
       throw new Error('locations.json changed during import; rerun before writing.')
-    if (original !== formatted.code) {
-      const temporary = `${outputPath}.${randomUUID()}.tmp`
-      try {
-        await writeFile(temporary, formatted.code)
-        await rename(temporary, outputPath)
-      } finally {
-        await rm(temporary, { force: true })
+    if (original !== formatted.code || originalText !== formattedText.code) {
+      for (const [path, code] of [
+        [outputPath, formatted.code],
+        [textPath, formattedText.code],
+      ] as const) {
+        const temporary = `${path}.${randomUUID()}.tmp`
+        await mkdir(dirname(path), { recursive: true })
+        try {
+          await writeFile(temporary, code)
+          await rename(temporary, path)
+        } finally {
+          await rm(temporary, { force: true })
+        }
       }
-      console.log(`Wrote ${result.locations.length} locations.`)
+      console.log(`Wrote ${result.locations.length} locations and their English names.`)
     } else console.log('locations.json is unchanged.')
   } else console.log('Preview only; pass --write to update locations.json.')
 }

@@ -212,7 +212,7 @@ mkdirSync(smokeNodeModules, { recursive: true })
 run('pnpm', ['run', 'build'], repoRoot)
 copyDatasetPackage()
 
-for (const packageName of ['typescript', 'zod', 'yolodb']) {
+for (const packageName of ['typescript', 'zod']) {
   copyInstalledPackage(packageName)
 }
 

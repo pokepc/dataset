@@ -112,46 +112,14 @@
       "from": ["starly"],
       "trigger": "level_up",
       "minLevel": 14,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Staravia (Female)",
-    "fra": "Étourvol (Female)",
-    "deu": "Staravia (Female)"
-  },
-  "genus": {
-    "eng": "Starling Pokémon",
-    "esp": "Pokémon Estornino",
-    "fra": "Pokémon Étourneau",
-    "deu": "Star",
-    "ita": "Pokémon Storno",
-    "jap": "むくどりポケモン",
-    "kor": "찌르레기포켓몬",
-    "chs": "椋鸟宝可梦",
-    "cht": "椋鳥寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Staravia",
-    "fra": "Étourvol",
-    "deu": "Staravia",
-    "jap": "ムクバード",
-    "kor": "찌르버드",
-    "chs": "姆克鸟",
-    "cht": "姆克鳥"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "ranch",
     "bw-b",

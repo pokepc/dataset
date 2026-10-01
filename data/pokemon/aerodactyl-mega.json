@@ -78,23 +78,45 @@
       "from": ["aerodactyl"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "aerodactylite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "aerodactylite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["aerodactyl"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "aerodactylite", "role": "held" },
+      "item": {
+        "id": "aerodactylite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     },
@@ -102,50 +124,19 @@
       "from": ["aerodactyl"],
       "games": ["lgpe-lgp", "lgpe-lge"],
       "trigger": "special",
-      "item": { "id": "aerodactylite", "role": "bag" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "aerodactylite",
+        "role": "bag"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     }
   ],
-  "names": {
-    "eng": "Mega Aerodactyl",
-    "fra": "MégaPtéra",
-    "deu": "Mega-Aerodactyl",
-    "jap": "メガプテラ",
-    "kor": "메가프테라",
-    "chs": "超级化石翼龙",
-    "cht": "超級化石翼龍"
-  },
-  "genus": {
-    "eng": "Fossil Pokémon",
-    "esp": "Pokémon Fósil",
-    "fra": "Pokémon Fossile",
-    "deu": "Fossil-Pokémon",
-    "ita": "Pokémon Fossile",
-    "jap": "かせきポケモン",
-    "kor": "화석포켓몬",
-    "chs": "化石宝可梦",
-    "cht": "化石寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Aerodactyl",
-    "fra": "Ptéra",
-    "deu": "Aerodactyl",
-    "jap": "プテラ",
-    "kor": "프테라",
-    "chs": "化石翼龙",
-    "cht": "化石翼龍"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0142001"
 }

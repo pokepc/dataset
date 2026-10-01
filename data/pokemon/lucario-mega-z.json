@@ -65,62 +65,33 @@
       "from": ["lucario"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "lucarionitez", "role": "held" },
+      "item": {
+        "id": "lucarionitez",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Lucario Z",
-    "esp": "Mega Lucario Z",
-    "esla": "Mega Lucario Z",
-    "fra": "MégaLucario Z",
-    "deu": "Mega-Lucario Z",
-    "ita": "Mega Lucario Z",
-    "jap": "メガルカリオZ",
-    "kor": "메가루카리오Z",
-    "chs": "超级路卡利欧Z",
-    "cht": "超級路卡利歐Z"
-  },
-  "genus": {
-    "eng": "Aura Pokémon",
-    "esp": "Pokémon Aura",
-    "fra": "Pokémon Aura",
-    "deu": "Aura-Pokémon",
-    "ita": "Pokémon Aura",
-    "jap": "はどうポケモン",
-    "kor": "파동포켓몬",
-    "chs": "波导宝可梦",
-    "cht": "波導寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Lucario",
-    "fra": "Lucario",
-    "deu": "Lucario",
-    "jap": "ルカリオ",
-    "kor": "루카리오",
-    "chs": "路卡利欧",
-    "cht": "路卡利歐"
-  },
-  "formNames": {
-    "eng": "Mega Form Z",
-    "esp": "Forma Mega Z",
-    "esla": "Forma Mega Z",
-    "fra": "Méga-Forme Z",
-    "deu": "Mega-Form Z",
-    "ita": "Forma Mega Z",
-    "jap": "メガZ",
-    "kor": "메가Z",
-    "chs": "超级Z",
-    "cht": "超級Z"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0448002"
 }

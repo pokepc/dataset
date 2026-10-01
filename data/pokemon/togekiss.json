@@ -112,31 +112,12 @@
     {
       "from": ["togetic"],
       "trigger": "use_item",
-      "item": { "id": "shinystone", "role": "used" },
+      "item": {
+        "id": "shinystone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Togekiss",
-    "fra": "Togekiss",
-    "deu": "Togekiss",
-    "jap": "トゲキッス",
-    "kor": "토게키스",
-    "chs": "波克基斯",
-    "cht": "波克基斯"
-  },
-  "genus": {
-    "eng": "Jubilee Pokémon",
-    "esp": "Pokémon Festejo",
-    "fra": "Pokémon Célébration",
-    "deu": "Jubilierer-Pokémon",
-    "ita": "Pokémon Festa",
-    "jap": "しゅくふくポケモン",
-    "kor": "축복포켓몬",
-    "chs": "祝福宝可梦",
-    "cht": "祝福寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["ranch", "bw-b", "bank", "usum-us", "usum-um", "home"]
 }

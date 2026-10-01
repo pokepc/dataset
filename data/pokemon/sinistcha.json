@@ -64,26 +64,13 @@
     {
       "from": ["poltchageist"],
       "trigger": "use_item",
-      "item": { "id": "unremarkableteacup", "role": "used" },
+      "item": {
+        "id": "unremarkableteacup",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Sinistcha",
-    "fra": "Théffroyable",
-    "deu": "Fatalitcha",
-    "jap": "ヤバソチャ",
-    "kor": "그우린차",
-    "chs": "来悲粗茶",
-    "cht": "來悲粗茶"
-  },
-  "genus": {
-    "eng": "Matcha Pokémon",
-    "fra": "Matcha",
-    "deu": "Matcha Pokémon",
-    "kor": "말차포켓몬"
-  },
-  "speciesNames": {},
-  "formNames": { "eng": "Unremarkable Form" },
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "1013000"
 }

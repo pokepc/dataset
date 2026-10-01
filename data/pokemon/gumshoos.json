@@ -64,30 +64,13 @@
       "from": ["yungoos"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "time_of_day", "time": "day" }]
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "day"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Gumshoos",
-    "fra": "Argouste",
-    "deu": "Manguspektor",
-    "jap": "デカグース",
-    "kor": "형사구스",
-    "chs": "猫鼬探长",
-    "cht": "貓鼬探長"
-  },
-  "genus": {
-    "eng": "Stakeout Pokémon",
-    "esp": "Pokémon Vigilante",
-    "fra": "Pokémon Filature",
-    "deu": "Beschattung",
-    "ita": "Pokémon Sorveglianza",
-    "jap": "はりこみポケモン",
-    "kor": "잠복포켓몬",
-    "chs": "蹲守宝可梦",
-    "cht": "監視寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": ["bank", "home"]
 }

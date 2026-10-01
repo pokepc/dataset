@@ -66,41 +66,12 @@
     {
       "from": ["voltorb-hisui"],
       "trigger": "use_item",
-      "item": { "id": "leafstone", "role": "used" },
+      "item": {
+        "id": "leafstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Electrode (Hisuian Form)",
-    "fra": "Électrode (Forme de Hisui)",
-    "deu": "Lektrobal (Hisui-Form)",
-    "jap": "マルマイン (ヒスイのすがた)"
-  },
-  "genus": {
-    "eng": "Ball Pokémon",
-    "esp": "Pokémon Bola",
-    "fra": "Pokémon Balle",
-    "deu": "Ball",
-    "ita": "Pokémon Ball",
-    "jap": "ボールポケモン",
-    "kor": "볼포켓몬",
-    "chs": "球宝可梦",
-    "cht": "球寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Electrode",
-    "fra": "Électrode",
-    "deu": "Lektrobal",
-    "jap": "マルマイン",
-    "kor": "붐볼",
-    "chs": "顽皮雷弹",
-    "cht": "頑皮雷彈"
-  },
-  "formNames": {
-    "eng": "Hisuian Form",
-    "fra": "Forme de Hisui",
-    "deu": "Hisui-Form",
-    "jap": "ヒスイのすがた"
-  },
   "transferOnlyIn": ["home"]
 }

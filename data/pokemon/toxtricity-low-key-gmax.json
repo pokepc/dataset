@@ -68,37 +68,24 @@
       "games": ["swsh-sw", "swsh-sh"],
       "trigger": "special",
       "conditions": [
-        { "key": "mechanic", "mechanic": "gigantamax" },
-        { "key": "battle_condition", "condition": "gigantamax_factor" }
+        {
+          "key": "mechanic",
+          "mechanic": "gigantamax"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "gigantamax_factor"
+        }
       ],
-      "revert": [{ "afterTurns": 3 }, "switch_out", "battle_end", "faint"]
+      "revert": [
+        {
+          "afterTurns": 3
+        },
+        "switch_out",
+        "battle_end",
+        "faint"
+      ]
     }
   ],
-  "names": {
-    "eng": "Toxtricity (Gigantamax Form)",
-    "fra": "Salarsen (Gigantamax Form)",
-    "deu": "Riffex (Gigadynamax-Form)"
-  },
-  "genus": {
-    "eng": "Punk Pokémon",
-    "esp": "Pokémon Punki",
-    "fra": "Pokémon Punk",
-    "deu": "Punk-Pokémon",
-    "ita": "Pokémon Punk",
-    "jap": "パンクポケモン",
-    "kor": "펑크포켓몬",
-    "chs": "庞克宝可梦",
-    "cht": "龐克寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Toxtricity",
-    "fra": "Salarsen",
-    "deu": "Riffex",
-    "jap": "ストリンダー",
-    "kor": "스트린더",
-    "chs": "颤弦蝾螈",
-    "cht": "顫弦蠑螈"
-  },
-  "formNames": { "eng": "Gigantamax Form", "fra": "Gigantamax Form", "deu": "Gigadynamax-Form" },
   "transferOnlyIn": []
 }

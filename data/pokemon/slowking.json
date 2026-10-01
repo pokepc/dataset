@@ -133,32 +133,13 @@
     {
       "from": ["slowpoke"],
       "trigger": "trade",
-      "item": { "id": "kingsrock", "role": "held" },
+      "item": {
+        "id": "kingsrock",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Slowking",
-    "fra": "Roigada",
-    "deu": "Laschoking",
-    "jap": "ヤドキング",
-    "kor": "야도킹",
-    "chs": "呆呆王",
-    "cht": "呆呆王"
-  },
-  "genus": {
-    "eng": "Royal Pokémon",
-    "esp": "Pokémon Regio",
-    "fra": "Pokémon Royal",
-    "deu": "Monarchen-Pokémon",
-    "ita": "Pokémon Reale",
-    "jap": "おうじゃポケモン",
-    "kor": "임금포켓몬",
-    "chs": "王者宝可梦",
-    "cht": "王者寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",
@@ -172,5 +153,6 @@
     "bank",
     "home",
     "bdsp-bd"
-  ]
+  ],
+  "championsId": "0199000"
 }

@@ -86,30 +86,14 @@
     {
       "from": ["steenee"],
       "trigger": "level_up",
-      "conditions": [{ "key": "known_move", "move": "stomp" }]
+      "conditions": [
+        {
+          "key": "known_move",
+          "move": "stomp"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Tsareena",
-    "fra": "Sucreine",
-    "deu": "Fruyal",
-    "jap": "アマージョ",
-    "kor": "달코퀸",
-    "chs": "甜冷美后",
-    "cht": "甜冷美后"
-  },
-  "genus": {
-    "eng": "Fruit Pokémon",
-    "esp": "Pokémon Fruto",
-    "fra": "Pokémon Fruit",
-    "deu": "Obst-Pokémon",
-    "ita": "Pokémon Frutto",
-    "jap": "フルーツポケモン",
-    "kor": "후르츠포켓몬",
-    "chs": "水果宝可梦",
-    "cht": "水果寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "home"]
+  "transferOnlyIn": ["bank", "home"],
+  "championsId": "0763000"
 }

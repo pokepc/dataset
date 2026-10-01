@@ -64,62 +64,33 @@
       "from": ["meowstic", "meowstic-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "meowsticite", "role": "held" },
+      "item": {
+        "id": "meowsticite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Meowstic",
-    "esp": "Mega Meowstic",
-    "esla": "Mega Meowstic",
-    "fra": "MégaMistigrix",
-    "deu": "Mega-Psiaugon",
-    "ita": "Mega Meowstic",
-    "jap": "メガニャオニクス",
-    "kor": "메가냐오닉스",
-    "chs": "超级超能妙喵",
-    "cht": "超級超能妙喵"
-  },
-  "genus": {
-    "eng": "Constraint Pokémon",
-    "esp": "Pokémon Autocontrol",
-    "fra": "Pokémon SelfContrôle",
-    "deu": "Fassungs-Pokémon",
-    "ita": "Pokémon Temperanza",
-    "jap": "よくせいポケモン",
-    "kor": "억제포켓몬",
-    "chs": "抑制宝可梦",
-    "cht": "抑制寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Meowstic",
-    "fra": "Mistigrix",
-    "deu": "Psiaugon",
-    "jap": "ニャオニクス",
-    "kor": "냐오닉스",
-    "chs": "超能妙喵",
-    "cht": "超能妙喵"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "esla": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0678002"
 }

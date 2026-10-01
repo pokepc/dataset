@@ -92,54 +92,19 @@
       "from": ["pikachu"],
       "games": ["sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "use_item",
-      "item": { "id": "thunderstone", "role": "used" },
-      "conditions": [{ "key": "region", "region": "alola", "relation": "in" }],
-      "notes": {
-        "eng": "Evolve in Alola; Ultra Space in Ultra Sun/Ultra Moon produces the ordinary form instead."
-      }
+      "item": {
+        "id": "thunderstone",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "region",
+          "region": "alola",
+          "relation": "in"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Raichu (Alolan Form)",
-    "esp": "Raichu (Forma de Alola)",
-    "fra": "Raichu (Forme d'Alola)",
-    "deu": "Raichu (Alola-Form)",
-    "ita": "Raichu (Forma di Alola)",
-    "jap": "ライチュウ (アローラのすがた)",
-    "kor": "라이츄 (알로라의 모습)",
-    "chs": "雷丘 (阿罗拉的样子)",
-    "cht": "雷丘 (阿羅拉的樣子)"
-  },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus-Pokémon",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Raichu",
-    "fra": "Raichu",
-    "deu": "Raichu",
-    "jap": "ライチュウ",
-    "kor": "라이츄",
-    "chs": "雷丘",
-    "cht": "雷丘"
-  },
-  "formNames": {
-    "eng": "Alolan Form",
-    "esp": "Forma de Alola",
-    "fra": "Forme d'Alola",
-    "deu": "Alola-Form",
-    "ita": "Forma di Alola",
-    "jap": "アローラのすがた",
-    "kor": "알로라의 모습",
-    "chs": "阿罗拉的样子",
-    "cht": "阿羅拉的樣子"
-  },
-  "transferOnlyIn": ["bank", "home"]
+  "transferOnlyIn": ["bank", "home"],
+  "championsId": "0026001"
 }

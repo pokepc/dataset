@@ -65,66 +65,49 @@
       "from": ["swampert"],
       "games": ["oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "swampertite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "swampertite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["swampert"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "swampertite", "role": "held" },
+      "item": {
+        "id": "swampertite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Swampert",
-    "fra": "MégaLaggron",
-    "deu": "Mega-Sumpex",
-    "jap": "メガラグラージ",
-    "kor": "메가대짱이",
-    "chs": "超级巨沼怪",
-    "cht": "超級巨沼怪"
-  },
-  "genus": {
-    "eng": "Mud Fish Pokémon",
-    "esp": "Pokémon Pez Lodo",
-    "fra": "Pokémon Poissonboue",
-    "deu": "Lehmhüpfer-Pokémon",
-    "ita": "Pokémon Fango Pesce",
-    "jap": "ぬまうおポケモン",
-    "kor": "늪물고기포켓몬",
-    "chs": "沼鱼宝可梦",
-    "cht": "沼魚寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Swampert",
-    "fra": "Laggron",
-    "deu": "Sumpex",
-    "jap": "ラグラージ",
-    "kor": "대짱이",
-    "chs": "巨沼怪",
-    "cht": "巨沼怪"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["sm-s", "sm-m"]
+  "transferOnlyIn": ["sm-s", "sm-m"],
+  "championsId": "0260001"
 }

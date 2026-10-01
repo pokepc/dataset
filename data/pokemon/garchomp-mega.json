@@ -76,66 +76,49 @@
       "from": ["garchomp", "garchomp-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "garchompite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "garchompite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["garchomp", "garchomp-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "garchompite", "role": "held" },
+      "item": {
+        "id": "garchompite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Garchomp",
-    "fra": "MégaCarchacrok",
-    "deu": "Mega-Knakrack",
-    "jap": "メガガブリアス",
-    "kor": "메가한카리아스",
-    "chs": "超级烈咬陆鲨",
-    "cht": "超級烈咬陸鯊"
-  },
-  "genus": {
-    "eng": "Mach Pokémon",
-    "esp": "Pokémon Mach",
-    "fra": "Pokémon Supersonic",
-    "deu": "Rasanz-Pokémon",
-    "ita": "Pokémon Mach",
-    "jap": "マッハポケモン",
-    "kor": "마하포켓몬",
-    "chs": "音速宝可梦",
-    "cht": "音速寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Garchomp",
-    "fra": "Carchacrok",
-    "deu": "Knakrack",
-    "jap": "ガブリアス",
-    "kor": "한카리아스",
-    "chs": "烈咬陆鲨",
-    "cht": "烈咬陸鯊"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": []
+  "transferOnlyIn": [],
+  "championsId": "0445001"
 }

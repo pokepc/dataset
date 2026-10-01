@@ -117,50 +117,34 @@
     {
       "from": ["sneasel"],
       "trigger": "level_up",
-      "item": { "id": "razorclaw", "role": "held" },
-      "conditions": [{ "key": "time_of_day", "time": "night" }]
+      "item": {
+        "id": "razorclaw",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     },
     {
       "from": ["sneasel"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "razorclaw", "role": "used" },
-      "conditions": [{ "key": "time_of_day", "time": "night" }],
+      "item": {
+        "id": "razorclaw",
+        "role": "used"
+      },
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Weavile",
-    "fra": "Dimoret",
-    "deu": "Snibunna",
-    "jap": "マニューラ",
-    "kor": "포푸니라",
-    "chs": "玛狃拉",
-    "cht": "瑪狃拉"
-  },
-  "genus": {
-    "eng": "Sharp Claw Pokémon",
-    "esp": "Pokémon Garra Filo",
-    "fra": "Pokémon Grifacérée",
-    "deu": "Stichklauen-Pokémon",
-    "ita": "Pokémon Lamartigli",
-    "jap": "かぎづめポケモン",
-    "kor": "갈고리손톱포켓몬",
-    "chs": "钩爪宝可梦",
-    "cht": "鉤爪寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {
-    "eng": "Male",
-    "esp": "Macho",
-    "esla": "Macho",
-    "fra": "Mâle",
-    "deu": "Männlich",
-    "ita": "Maschio",
-    "jap": "オス",
-    "kor": "수컷",
-    "chs": "雄性",
-    "cht": "雄性"
-  },
-  "transferOnlyIn": ["ranch", "bank", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": ["ranch", "bank", "oras-or", "oras-as", "home"],
+  "championsId": "0461000"
 }

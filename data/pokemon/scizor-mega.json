@@ -65,66 +65,49 @@
       "from": ["scizor", "scizor-f"],
       "games": ["xy-x", "xy-y", "oras-or", "oras-as", "sm-s", "sm-m", "usum-us", "usum-um"],
       "trigger": "special",
-      "item": { "id": "scizorite", "role": "held" },
-      "conditions": [{ "key": "mechanic", "mechanic": "mega_evolution" }],
+      "item": {
+        "id": "scizorite",
+        "role": "held"
+      },
+      "conditions": [
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        }
+      ],
       "revert": ["battle_end", "faint"]
     },
     {
       "from": ["scizor", "scizor-f"],
       "games": ["lza"],
       "trigger": "special",
-      "item": { "id": "scizorite", "role": "held" },
+      "item": {
+        "id": "scizorite",
+        "role": "held"
+      },
       "conditions": [
-        { "key": "mechanic", "mechanic": "mega_evolution" },
-        { "key": "battle_condition", "condition": "mega_gauge_full" }
+        {
+          "key": "mechanic",
+          "mechanic": "mega_evolution"
+        },
+        {
+          "key": "battle_condition",
+          "condition": "mega_gauge_full"
+        }
       ],
       "revert": [
         {
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_condition", "condition": "mega_power_depleted" }]
+          "conditions": [
+            {
+              "key": "battle_condition",
+              "condition": "mega_power_depleted"
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Mega Scizor",
-    "fra": "MégaCizayox",
-    "deu": "Mega-Scherox",
-    "jap": "メガハッサム",
-    "kor": "메가핫삼",
-    "chs": "超级巨钳螳螂",
-    "cht": "超級巨鉗螳螂"
-  },
-  "genus": {
-    "eng": "Pincer Pokémon",
-    "esp": "Pokémon Tenaza",
-    "fra": "Pokémon Pince",
-    "deu": "Kneifer-Pokémon",
-    "ita": "Pokémon Chela",
-    "jap": "はさみポケモン",
-    "kor": "집게포켓몬",
-    "chs": "钳子宝可梦",
-    "cht": "鉗子寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Scizor",
-    "fra": "Cizayox",
-    "deu": "Scherox",
-    "jap": "ハッサム",
-    "kor": "핫삼",
-    "chs": "巨钳螳螂",
-    "cht": "巨鉗螳螂"
-  },
-  "formNames": {
-    "eng": "Mega Form",
-    "esp": "Forma Mega",
-    "fra": "Méga-Forme",
-    "deu": "Mega-Form",
-    "ita": "Forma Mega",
-    "jap": "メガ",
-    "kor": "메가",
-    "chs": "超级",
-    "cht": "超級"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as"]
+  "transferOnlyIn": ["oras-or", "oras-as"],
+  "championsId": "0212001"
 }

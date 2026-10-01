@@ -26,7 +26,7 @@ describe('form method contract', () => {
     expect(formMethodSchema.parse({ ...fusion, games: undefined }).games).toBeUndefined()
   })
 
-  it('supports conjunctions of distinct bounds and translated notes', () => {
+  it('supports conjunctions of distinct bounds, without inline notes', () => {
     const input = {
       from: ['zygarde', 'zygarde-10'],
       trigger: 'automatic',
@@ -34,9 +34,12 @@ describe('form method contract', () => {
         { key: 'hp', comparison: 'gt', percent: 0 },
         { key: 'hp', comparison: 'lte', percent: 50 },
       ],
-      notes: { eng: 'At the end of the turn.', esp: 'Al final del turno.' },
     }
     expect(formMethodSchema.parse(input)).toEqual(input)
+    // Notes moved to the Pokémon locale files (formNotes).
+    expect(
+      formMethodSchema.safeParse({ ...input, notes: { eng: 'At the end of the turn.' } }).success,
+    ).toBe(false)
   })
 
   it('accepts every exported reversion event and strict parameterized rules', () => {

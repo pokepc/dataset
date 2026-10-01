@@ -66,41 +66,12 @@
       "from": ["ogerpon-cornerstone", "ogerpon-wellspring", "ogerpon"],
       "games": ["sv-s", "sv-v"],
       "trigger": "equip_item",
-      "item": { "id": "hearthflamemask", "role": "held" },
+      "item": {
+        "id": "hearthflamemask",
+        "role": "held"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Ogerpon (Hearthflame Mask)",
-    "esp": "Ogerpon (Máscara Horno)",
-    "fra": "Ogerpon (Masque du Fourneau)",
-    "deu": "Ogerpon (Ofenmaske)",
-    "ita": "Ogerpon (Maschera Focolare)",
-    "jap": "オーガポン (かまどのめん)",
-    "kor": "오거폰 (화덕의가면)",
-    "chs": "厄诡椪 (火灶面具)",
-    "cht": "厄鬼椪 (火灶面具)"
-  },
-  "genus": { "eng": "Mask Pokémon", "fra": "Masque", "deu": "Mask Pokémon", "kor": "가면포켓몬" },
-  "speciesNames": {
-    "eng": "Ogerpon",
-    "fra": "Ogerpon",
-    "deu": "Ogerpon",
-    "jap": "オーガポン",
-    "kor": "오거폰",
-    "chs": "厄诡椪",
-    "cht": "厄鬼椪"
-  },
-  "formNames": {
-    "eng": "Hearthflame Mask",
-    "esp": "Máscara Horno",
-    "fra": "Masque du Fourneau",
-    "deu": "Ofenmaske",
-    "ita": "Maschera Focolare",
-    "jap": "かまどのめん",
-    "kor": "화덕의가면",
-    "chs": "火灶面具",
-    "cht": "火灶面具"
-  },
   "transferOnlyIn": []
 }

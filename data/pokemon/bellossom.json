@@ -126,32 +126,13 @@
     {
       "from": ["gloom"],
       "trigger": "use_item",
-      "item": { "id": "sunstone", "role": "used" },
+      "item": {
+        "id": "sunstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Bellossom",
-    "fra": "Joliflor",
-    "deu": "Blubella",
-    "jap": "キレイハナ",
-    "kor": "아르코",
-    "chs": "美丽花",
-    "cht": "美麗花"
-  },
-  "genus": {
-    "eng": "Flower Pokémon",
-    "esp": "Pokémon Flor",
-    "fra": "Pokémon Fleur",
-    "deu": "Blumen-Pokémon",
-    "ita": "Pokémon Fiore",
-    "jap": "フラワーポケモン",
-    "kor": "꽃포켓몬",
-    "chs": "花宝可梦",
-    "cht": "花寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "boxrs",
     "col",

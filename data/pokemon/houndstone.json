@@ -63,28 +63,14 @@
       "from": ["greavard"],
       "trigger": "level_up",
       "minLevel": 30,
-      "conditions": [{ "key": "time_of_day", "time": "night" }]
+      "conditions": [
+        {
+          "key": "time_of_day",
+          "time": "night"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Houndstone",
-    "fra": "Tomberro",
-    "deu": "Friedwuff",
-    "jap": "ハカドッグ",
-    "kor": "묘두기",
-    "chs": "墓扬犬",
-    "cht": "墓揚犬"
-  },
-  "genus": {
-    "eng": "Ghost Dog Pokémon",
-    "fra": "Fantôchien",
-    "deu": "Geisterhund",
-    "jap": "おばけいぬポケモン",
-    "kor": "유령개포켓몬",
-    "chs": "鬼犬宝可梦",
-    "cht": "鬼犬寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0972000"
 }

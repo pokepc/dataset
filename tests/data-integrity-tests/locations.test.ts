@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { z } from 'zod'
-import { loadAllGames, loadAllLocations, loadAllRegions } from '../../src/lib/fs'
+import { loadAllGames, loadAllLocations, loadAllRegions, loadText } from '../../src/lib/fs'
 import { locationSchema } from '../../src/lib/schemas'
 import { validate } from '../_utils'
 
@@ -30,10 +30,13 @@ describe('Validate locations.json data', () => {
     expect(pokeApiIds).toHaveLength(new Set(pokeApiIds).size)
   })
 
-  it('should have nonempty names without surrounding whitespace', () => {
+  it('should have nonempty English names without surrounding whitespace', () => {
+    const text = loadText('locations', 'eng')
+    expect(Object.keys(text)).toEqual(recordList.map((record) => record.id))
     for (const record of recordList) {
-      expect(record.name, record.id).toBe(record.name.trim())
-      expect(record.name.length, record.id).toBeGreaterThan(0)
+      const name = text[record.id]?.name ?? ''
+      expect(name, record.id).toBe(name.trim())
+      expect(name.length, record.id).toBeGreaterThan(0)
     }
   })
 
@@ -80,7 +83,6 @@ describe('Validate locations.json data', () => {
 describe('Location schema', () => {
   const location = {
     id: 'kitakami-apple-hills',
-    name: 'Apple Hills',
     games: ['sv-s', 'sv-v'],
     region: 'kitakami',
     pokeApiId: 1058,
@@ -93,7 +95,6 @@ describe('Location schema', () => {
     expect(
       locationSchema.safeParse({
         id: 'fateful-encounter',
-        name: 'Fateful Encounter',
         games: null,
         region: null,
         pokeApiId: null,
@@ -115,6 +116,8 @@ describe('Location schema', () => {
       expect(locationSchema.safeParse(incomplete).success, key).toBe(false)
     }
     expect(locationSchema.safeParse({ ...location, gameIds: '*' }).success).toBe(false)
+    // Names live in i18n/<locale>/locations.json.
+    expect(locationSchema.safeParse({ ...location, name: 'Apple Hills' }).success).toBe(false)
     expect(locationSchema.safeParse({ ...location, games: [] }).success).toBe(false)
   })
 })

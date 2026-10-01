@@ -93,50 +93,13 @@
     {
       "from": ["meowth-alola"],
       "trigger": "level_up",
-      "conditions": [{ "key": "friendship" }]
+      "conditions": [
+        {
+          "key": "friendship"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Persian (Alolan Form)",
-    "esp": "Persian (Forma de Alola)",
-    "fra": "Persian (Forme d’Alola)",
-    "deu": "Snobilikat (Alola-Form)",
-    "ita": "Persian (Forma di Alola)",
-    "jap": "ペルシアン (アローラのすがた)",
-    "kor": "페르시온 (알로라의 모습)",
-    "chs": "猫老大 (阿罗拉的样子)",
-    "cht": "貓老大 (阿羅拉的樣子)"
-  },
-  "genus": {
-    "eng": "Classy Cat Pokémon",
-    "esp": "Pokémon Gato Fino",
-    "fra": "Pokémon Chadeville",
-    "deu": "Rassekatzen-Pokémon",
-    "ita": "Pokémon Nobilgatto",
-    "jap": "シャムネコポケモン",
-    "kor": "샴고양이포켓몬",
-    "chs": "暹罗猫宝可梦",
-    "cht": "暹羅貓寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Persian",
-    "fra": "Persian",
-    "deu": "Snobilikat",
-    "jap": "ペルシアン",
-    "kor": "페르시온",
-    "chs": "猫老大",
-    "cht": "貓老大"
-  },
-  "formNames": {
-    "eng": "Alolan Form",
-    "esp": "Forma de Alola",
-    "fra": "Forme d’Alola",
-    "deu": "Alola-Form",
-    "ita": "Forma di Alola",
-    "jap": "アローラのすがた",
-    "kor": "알로라의 모습",
-    "chs": "阿罗拉的样子",
-    "cht": "阿羅拉的樣子"
-  },
-  "transferOnlyIn": ["bank", "lgpe-lgp", "home"]
+  "transferOnlyIn": ["bank", "lgpe-lgp", "home"],
+  "championsId": "0053001"
 }

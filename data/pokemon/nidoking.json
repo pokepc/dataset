@@ -132,32 +132,13 @@
     {
       "from": ["nidorino"],
       "trigger": "use_item",
-      "item": { "id": "moonstone", "role": "used" },
+      "item": {
+        "id": "moonstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Nidoking",
-    "fra": "Nidoking",
-    "deu": "Nidoking",
-    "jap": "ニドキング",
-    "kor": "니드킹",
-    "chs": "尼多王",
-    "cht": "尼多王"
-  },
-  "genus": {
-    "eng": "Drill Pokémon",
-    "esp": "Pokémon Taladro",
-    "fra": "Pokémon Perceur",
-    "deu": "Bohrer-Pokémon",
-    "ita": "Pokémon Trapano",
-    "jap": "ドリルポケモン",
-    "kor": "드릴포켓몬",
-    "chs": "钻锥宝可梦",
-    "cht": "鑽錐寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

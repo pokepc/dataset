@@ -145,31 +145,13 @@
     {
       "from": ["eevee"],
       "trigger": "use_item",
-      "item": { "id": "waterstone", "role": "used" },
+      "item": {
+        "id": "waterstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Vaporeon",
-    "fra": "Aquali",
-    "deu": "Aquana",
-    "jap": "シャワーズ",
-    "kor": "샤미드",
-    "chs": "水伊布",
-    "cht": "水伊布"
-  },
-  "genus": {
-    "eng": "Bubble Jet Pokémon",
-    "esp": "Pokémon Burbuja",
-    "fra": "Pokémon Bulleur",
-    "deu": "Blubbblasen-Pokémon",
-    "ita": "Pokémon Bollajet",
-    "jap": "あわはきポケモン",
-    "kor": "거품뿜기포켓몬",
-    "chs": "吐泡宝可梦",
-    "cht": "吐泡寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "ranch", "bw-b", "bw-w", "bank", "home"]
+  "transferOnlyIn": ["rs-r", "rs-s", "boxrs", "col", "e", "ranch", "bw-b", "bw-w", "bank", "home"],
+  "championsId": "0134000"
 }

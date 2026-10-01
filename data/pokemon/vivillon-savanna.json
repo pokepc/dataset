@@ -83,29 +83,14 @@
       "from": ["spewpa"],
       "trigger": "level_up",
       "minLevel": 12,
-      "conditions": [{ "key": "vivillon_pattern", "pattern": "savanna" }]
+      "conditions": [
+        {
+          "key": "vivillon_pattern",
+          "pattern": "savanna"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Vivillon (Savanna Pattern)",
-    "fra": "Prismillon (Motif Mangrove)",
-    "deu": "Vivillon (Savannenmuster)"
-  },
-  "genus": {},
-  "speciesNames": {
-    "eng": "Vivillon",
-    "fra": "Prismillon",
-    "deu": "Vivillon"
-  },
-  "formNames": {
-    "eng": "Savanna Pattern",
-    "esp": "Motivo Pantano",
-    "fra": "Motif Mangrove",
-    "deu": "Savannenmuster",
-    "ita": "Motivo Savana",
-    "jap": "サバンナのもよう",
-    "kor": "사바나의 모양"
-  },
   "transferOnlyIn": [
     "bank",
     "oras-or",
@@ -117,5 +102,6 @@
     "sv-v",
     "lza",
     "champions"
-  ]
+  ],
+  "championsId": "0666014"
 }

@@ -103,31 +103,13 @@
     {
       "from": ["lampent"],
       "trigger": "use_item",
-      "item": { "id": "duskstone", "role": "used" },
+      "item": {
+        "id": "duskstone",
+        "role": "used"
+      },
       "conditions": []
     }
   ],
-  "names": {
-    "eng": "Chandelure",
-    "fra": "Lugulabre",
-    "deu": "Skelabra",
-    "jap": "シャンデラ",
-    "kor": "샹델라",
-    "chs": "水晶灯火灵",
-    "cht": "水晶燈火靈"
-  },
-  "genus": {
-    "eng": "Luring Pokémon",
-    "esp": "Pokémon Señuelo",
-    "fra": "Pokémon Invitation",
-    "deu": "Geleit-Pokémon",
-    "ita": "Pokémon Attiranime",
-    "jap": "いざないポケモン",
-    "kor": "권유포켓몬",
-    "chs": "引诱宝可梦",
-    "cht": "引誘寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["bank", "oras-or", "oras-as", "home"]
+  "transferOnlyIn": ["bank", "oras-or", "oras-as", "home"],
+  "championsId": "0609000"
 }

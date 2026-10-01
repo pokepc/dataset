@@ -76,25 +76,49 @@
       "from": ["aegislash"],
       "trigger": "use_move",
       "conditions": [
-        { "key": "ability", "abilities": ["stancechange"] },
-        { "key": "move_category", "categories": ["physical", "special"] },
-        { "key": "battle_event", "events": ["before_move"] }
+        {
+          "key": "ability",
+          "abilities": ["stancechange"]
+        },
+        {
+          "key": "move_category",
+          "categories": ["physical", "special"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["before_move"]
+        }
       ],
       "revert": [
         {
           "trigger": "use_move",
           "conditions": [
-            { "key": "ability", "abilities": ["stancechange"] },
-            { "key": "move_used", "move": "kingsshield" },
-            { "key": "battle_event", "events": ["before_move"] }
+            {
+              "key": "ability",
+              "abilities": ["stancechange"]
+            },
+            {
+              "key": "move_used",
+              "move": "kingsshield"
+            },
+            {
+              "key": "battle_event",
+              "events": ["before_move"]
+            }
           ]
         },
         {
           "games": ["lza"],
           "trigger": "use_move",
           "conditions": [
-            { "key": "move_used", "move": "kingsshield" },
-            { "key": "battle_event", "events": ["before_move"] }
+            {
+              "key": "move_used",
+              "move": "kingsshield"
+            },
+            {
+              "key": "battle_event",
+              "events": ["before_move"]
+            }
           ]
         },
         "switch_out",
@@ -106,78 +130,60 @@
       "games": ["lza"],
       "trigger": "use_move",
       "conditions": [
-        { "key": "move_category", "categories": ["physical", "special"] },
-        { "key": "battle_event", "events": ["before_move"] }
+        {
+          "key": "move_category",
+          "categories": ["physical", "special"]
+        },
+        {
+          "key": "battle_event",
+          "events": ["before_move"]
+        }
       ],
-      "notes": {
-        "eng": "Legends: Z-A preserves the move-based transformation without Abilities; the change completes when its animation finishes."
-      },
       "revert": [
         {
           "games": null,
           "trigger": "use_move",
           "conditions": [
-            { "key": "ability", "abilities": ["stancechange"] },
-            { "key": "move_used", "move": "kingsshield" },
-            { "key": "battle_event", "events": ["before_move"] }
+            {
+              "key": "ability",
+              "abilities": ["stancechange"]
+            },
+            {
+              "key": "move_used",
+              "move": "kingsshield"
+            },
+            {
+              "key": "battle_event",
+              "events": ["before_move"]
+            }
           ]
         },
         {
           "trigger": "use_move",
           "conditions": [
-            { "key": "move_used", "move": "kingsshield" },
-            { "key": "battle_event", "events": ["before_move"] }
+            {
+              "key": "move_used",
+              "move": "kingsshield"
+            },
+            {
+              "key": "battle_event",
+              "events": ["before_move"]
+            }
           ]
         },
         {
           "games": null,
           "trigger": "automatic",
-          "conditions": [{ "key": "battle_event", "events": ["switch_out", "battle_end"] }]
+          "conditions": [
+            {
+              "key": "battle_event",
+              "events": ["switch_out", "battle_end"]
+            }
+          ]
         }
       ]
     }
   ],
-  "names": {
-    "eng": "Aegislash (Blade Forme)",
-    "esp": "Aegislash (Forma Filo)",
-    "fra": "Exagide (Forme Assaut)",
-    "deu": "Durengard (Klingenform)",
-    "ita": "Aegislash (Forma Spada)",
-    "jap": "ギルガルド (ブレードフォルム)",
-    "kor": "킬가르도 (블레이드폼)",
-    "chs": "坚盾剑怪 (刀剑形态)",
-    "cht": "堅盾劍怪 (刀劍形態)"
-  },
-  "genus": {
-    "eng": "Royal Sword Pokémon",
-    "esp": "Pokémon Espada Real",
-    "fra": "Pokémon Noble Lame",
-    "deu": "Königsklingen-Pokémon",
-    "ita": "Pokémon Spadareale",
-    "jap": "おうけんポケモン",
-    "kor": "왕검포켓몬",
-    "chs": "王剑宝可梦",
-    "cht": "王劍寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Aegislash",
-    "fra": "Exagide",
-    "deu": "Durengard",
-    "jap": "ギルガルド",
-    "kor": "킬가르도",
-    "chs": "坚盾剑怪",
-    "cht": "堅盾劍怪"
-  },
-  "formNames": {
-    "eng": "Blade Forme",
-    "esp": "Forma Filo",
-    "fra": "Forme Assaut",
-    "deu": "Klingenform",
-    "ita": "Forma Spada",
-    "jap": "ブレードフォルム",
-    "kor": "블레이드폼",
-    "chs": "刀剑形态",
-    "cht": "刀劍形態"
-  },
-  "transferOnlyIn": ["oras-or", "oras-as"]
+  "transferOnlyIn": ["oras-or", "oras-as"],
+  "championsId": "0681001"
 }

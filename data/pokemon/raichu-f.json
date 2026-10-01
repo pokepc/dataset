@@ -139,50 +139,23 @@
     {
       "from": ["pikachu"],
       "trigger": "use_item",
-      "item": { "id": "thunderstone", "role": "used" },
+      "item": {
+        "id": "thunderstone",
+        "role": "used"
+      },
       "conditions": [
-        { "key": "gender", "gender": "female" },
-        { "key": "region", "region": "alola", "relation": "outside" }
+        {
+          "key": "gender",
+          "gender": "female"
+        },
+        {
+          "key": "region",
+          "region": "alola",
+          "relation": "outside"
+        }
       ]
     }
   ],
-  "names": {
-    "eng": "Raichu (Female)",
-    "fra": "Raichu (Female)",
-    "deu": "Raichu (Female)"
-  },
-  "genus": {
-    "eng": "Mouse Pokémon",
-    "esp": "Pokémon Ratón",
-    "fra": "Pokémon Souris",
-    "deu": "Maus-Pokémon",
-    "ita": "Pokémon Topo",
-    "jap": "ねずみポケモン",
-    "kor": "쥐포켓몬",
-    "chs": "鼠宝可梦",
-    "cht": "鼠寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Raichu",
-    "fra": "Raichu",
-    "deu": "Raichu",
-    "jap": "ライチュウ",
-    "kor": "라이츄",
-    "chs": "雷丘",
-    "cht": "雷丘"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "boxrs",
     "col",
@@ -196,5 +169,6 @@
     "sm-s",
     "sm-m",
     "home"
-  ]
+  ],
+  "championsId": "0026000"
 }

@@ -133,46 +133,14 @@
       "from": ["wooper"],
       "trigger": "level_up",
       "minLevel": 20,
-      "conditions": [{ "key": "gender", "gender": "female" }]
+      "conditions": [
+        {
+          "key": "gender",
+          "gender": "female"
+        }
+      ]
     }
   ],
-  "names": {
-    "eng": "Quagsire (Female)",
-    "fra": "Maraiste (Female)",
-    "deu": "Morlord (Female)"
-  },
-  "genus": {
-    "eng": "Water Fish Pokémon",
-    "esp": "Pokémon Pez Agua",
-    "fra": "Pokémon Poisson",
-    "deu": "Fisch-Pokémon",
-    "ita": "Pokémon Acquapesce",
-    "jap": "みずうおポケモン",
-    "kor": "수어포켓몬",
-    "chs": "水鱼宝可梦",
-    "cht": "水魚寶可夢"
-  },
-  "speciesNames": {
-    "eng": "Quagsire",
-    "fra": "Maraiste",
-    "deu": "Morlord",
-    "jap": "ヌオー",
-    "kor": "누오",
-    "chs": "沼王",
-    "cht": "沼王"
-  },
-  "formNames": {
-    "eng": "Female",
-    "esp": "Hembra",
-    "esla": "Hembra",
-    "fra": "Femelle",
-    "deu": "Weiblich",
-    "ita": "Femmina",
-    "jap": "メス",
-    "kor": "암컷",
-    "chs": "雌性",
-    "cht": "雌性"
-  },
   "transferOnlyIn": [
     "rs-r",
     "rs-s",

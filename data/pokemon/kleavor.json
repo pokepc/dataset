@@ -65,31 +65,14 @@
       "from": ["scyther"],
       "games": ["la"],
       "trigger": "use_item",
-      "item": { "id": "blackaugurite", "role": "used" },
+      "item": {
+        "id": "blackaugurite",
+        "role": "used"
+      },
       "conditions": [],
       "activation": "manual"
     }
   ],
-  "names": {
-    "eng": "Kleavor",
-    "fra": "Hachécateur",
-    "deu": "Axantor",
-    "jap": "バサギリ",
-    "kor": "사마자르",
-    "chs": "劈斧螳螂",
-    "cht": "劈斧螳螂"
-  },
-  "genus": {
-    "eng": "Axe Pokémon",
-    "fra": "Pokémon Hache",
-    "deu": "Axt-Pokémon",
-    "ita": "Pokémon Scure",
-    "jap": "まさかりポケモン",
-    "kor": "큰도끼포켓몬",
-    "chs": "斧钺宝可梦",
-    "cht": "斧鉞寶可夢"
-  },
-  "speciesNames": {},
-  "formNames": {},
-  "transferOnlyIn": ["home"]
+  "transferOnlyIn": ["home"],
+  "championsId": "0900000"
 }
