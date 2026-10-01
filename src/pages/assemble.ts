@@ -15,10 +15,13 @@ export function assemblePages(
   for (const version of versions) {
     const artifact = artifacts.get(version.sha)
     if (!artifact) throw new Error(`Missing build for ${version.ref} (${version.sha}).`)
-    for (const file of ['index.html', 'openapi.json', 'data']) {
+    for (const file of ['index.html', 'openapi.json']) {
       if (!fs.existsSync(path.join(artifact, file)))
         throw new Error(`Missing ${file} in ${version.ref} build.`)
     }
+    // v6/v7 builds serve data under `data/`; v8 builds serve base data at their root.
+    if (!['data', 'pokemon'].some((dir) => fs.existsSync(path.join(artifact, dir))))
+      throw new Error(`Missing data in ${version.ref} build.`)
     const spec = JSON.parse(fs.readFileSync(path.join(artifact, 'openapi.json'), 'utf8'))
     if (spec.info?.version !== version.version)
       throw new Error(`OpenAPI version mismatch for ${version.ref}.`)

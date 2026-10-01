@@ -1,6 +1,7 @@
 import type { ZodType } from 'zod'
 import {
   AbilityListSchema,
+  BattleStateListSchema,
   CharacterListSchema,
   ColorListSchema,
   GenerationListSchema,
@@ -30,7 +31,7 @@ export type StaticDataRoute = {
 
 export const rootArrayRoutes: StaticDataRoute[] = [
   {
-    path: '/data/abilities.json',
+    path: '/abilities.json',
     sourcePath: 'abilities.json',
     operationId: 'getAbilities',
     summary: 'List abilities',
@@ -39,7 +40,17 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: AbilityListSchema,
   },
   {
-    path: '/data/items.json',
+    path: '/battle-states.json',
+    sourcePath: 'battle-states.json',
+    operationId: 'getBattleStates',
+    summary: 'List battle states',
+    description:
+      'Static list of battle states (weather, terrain, statuses), first sourced from Pokémon Champions.',
+    tags: ['Root data'],
+    schema: BattleStateListSchema,
+  },
+  {
+    path: '/items.json',
     sourcePath: 'items.json',
     operationId: 'getItems',
     summary: 'List items',
@@ -48,7 +59,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: ItemListSchema,
   },
   {
-    path: '/data/moves.json',
+    path: '/moves.json',
     sourcePath: 'moves.json',
     operationId: 'getMoves',
     summary: 'List moves',
@@ -57,7 +68,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: MoveListSchema,
   },
   {
-    path: '/data/pokeballs.json',
+    path: '/pokeballs.json',
     sourcePath: 'pokeballs.json',
     operationId: 'getPokeballs',
     summary: 'List Poke Balls',
@@ -66,7 +77,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: PokeballListSchema,
   },
   {
-    path: '/data/languages.json',
+    path: '/languages.json',
     sourcePath: 'languages.json',
     operationId: 'getLanguages',
     summary: 'List languages',
@@ -75,7 +86,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: LanguageListSchema,
   },
   {
-    path: '/data/marks.json',
+    path: '/marks.json',
     sourcePath: 'marks.json',
     operationId: 'getMarks',
     summary: 'List marks',
@@ -84,7 +95,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: MarkListSchema,
   },
   {
-    path: '/data/ribbons.json',
+    path: '/ribbons.json',
     sourcePath: 'ribbons.json',
     operationId: 'getRibbons',
     summary: 'List ribbons',
@@ -93,7 +104,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: RibbonListSchema,
   },
   {
-    path: '/data/types.json',
+    path: '/types.json',
     sourcePath: 'types.json',
     operationId: 'getTypes',
     summary: 'List types',
@@ -102,7 +113,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: TypeListSchema,
   },
   {
-    path: '/data/natures.json',
+    path: '/natures.json',
     sourcePath: 'natures.json',
     operationId: 'getNatures',
     summary: 'List natures',
@@ -111,7 +122,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: NatureListSchema,
   },
   {
-    path: '/data/characters.json',
+    path: '/characters.json',
     sourcePath: 'characters.json',
     operationId: 'getCharacters',
     summary: 'List characters',
@@ -120,7 +131,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: CharacterListSchema,
   },
   {
-    path: '/data/colors.json',
+    path: '/colors.json',
     sourcePath: 'colors.json',
     operationId: 'getColors',
     summary: 'List colors',
@@ -129,7 +140,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: ColorListSchema,
   },
   {
-    path: '/data/generations.json',
+    path: '/generations.json',
     sourcePath: 'generations.json',
     operationId: 'getGenerations',
     summary: 'List generations',
@@ -138,7 +149,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: GenerationListSchema,
   },
   {
-    path: '/data/originmarks.json',
+    path: '/originmarks.json',
     sourcePath: 'originmarks.json',
     operationId: 'getOriginMarks',
     summary: 'List origin marks',
@@ -147,7 +158,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: OriginMarkListSchema,
   },
   {
-    path: '/data/personalities.json',
+    path: '/personalities.json',
     sourcePath: 'personalities.json',
     operationId: 'getPersonalities',
     summary: 'List personalities',
@@ -156,7 +167,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: PersonalityListSchema,
   },
   {
-    path: '/data/regions.json',
+    path: '/regions.json',
     sourcePath: 'regions.json',
     operationId: 'getRegions',
     summary: 'List regions',
@@ -165,7 +176,7 @@ export const rootArrayRoutes: StaticDataRoute[] = [
     schema: RegionListSchema,
   },
   {
-    path: '/data/locations.json',
+    path: '/locations.json',
     sourcePath: 'locations.json',
     operationId: 'getLocations',
     summary: 'List locations',
@@ -186,4 +197,6 @@ export const requiredDataPaths = [
   'boxpresets/classic',
   'boxpresets/modern',
   'metadata/pokemon-mugshots.json',
+  'codes',
+  'i18n/eng',
 ]

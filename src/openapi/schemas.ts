@@ -1,8 +1,12 @@
 import { z } from 'zod'
+import { localeCodes } from '../lib/languages.ts'
 import {
   abilitySchema,
-  classicBoxPresetSchema,
+  battleStateSchema,
+  boxPresetTextFileSchema,
   characterSchema,
+  classicBoxPresetSchema,
+  codeMapSchema,
   colorSchema,
   gameSchema,
   generationSchema,
@@ -10,6 +14,8 @@ import {
   languageSchema,
   locationSchema,
   markSchema,
+  moddableOverrideSchemas,
+  moddableTextOverrideFileSchemas,
   modernBoxPresetIndexSchema,
   modernBoxPresetSchema,
   moveSchema,
@@ -18,10 +24,15 @@ import {
   personalitySchema,
   pokeballSchema,
   pokedexSchema,
+  pokemonMugshotsSchema,
   pokemonSchema,
   regionSchema,
   ribbonSchema,
+  rosterSchema,
+  textFileSchemas,
   typeSchema,
+  type ModdableKind,
+  type TextKind,
 } from '../lib/schemas.ts'
 
 export const slugSchema = z
@@ -29,8 +40,16 @@ export const slugSchema = z
   .max(50)
   .regex(/^[a-z0-9-]+$/)
 
+const pascal = (kind: string) =>
+  kind
+    .split('-')
+    .map((part) => part[0]!.toUpperCase() + part.slice(1))
+    .join('')
+
 export const AbilitySchema = abilitySchema.meta({ id: 'Ability' })
 export const AbilityListSchema = z.array(AbilitySchema).meta({ id: 'AbilityList' })
+export const BattleStateSchema = battleStateSchema.meta({ id: 'BattleState' })
+export const BattleStateListSchema = z.array(BattleStateSchema).meta({ id: 'BattleStateList' })
 export const CharacterSchema = characterSchema.meta({ id: 'Character' })
 export const CharacterListSchema = z.array(CharacterSchema).meta({ id: 'CharacterList' })
 export const ColorSchema = colorSchema.meta({ id: 'Color' })
@@ -62,6 +81,10 @@ export const RibbonSchema = ribbonSchema.meta({ id: 'Ribbon' })
 export const RibbonListSchema = z.array(RibbonSchema).meta({ id: 'RibbonList' })
 export const TypeSchema = typeSchema.meta({ id: 'Type' })
 export const TypeListSchema = z.array(TypeSchema).meta({ id: 'TypeList' })
+export const CodeMapSchema = codeMapSchema.meta({
+  id: 'CodeMap',
+  description: 'Append-only map of dataset ids to stable integer codes.',
+})
 
 export const ClassicBoxPresetSchema = classicBoxPresetSchema.meta({ id: 'ClassicBoxPreset' })
 export const ClassicBoxPresetMapSchema = z
@@ -79,23 +102,47 @@ export const StringIndexSchema = z.array(slugSchema).meta({
 })
 
 export const LocationSchema = locationSchema.meta({ id: 'Location' })
-
 export const LocationListSchema = z.array(LocationSchema).meta({ id: 'LocationList' })
 
-export const PokemonMugshotSchema = z
-  .object({
-    x: z.number().int().optional(),
-    y: z.number().int().optional(),
-    scale: z.number().int().optional(),
-    flipped: z.boolean().optional(),
-    pokeId: slugSchema.optional(),
-  })
-  .strict()
-  .meta({ id: 'PokemonMugshot' })
+export const PokemonMugshotMetadataSchema = pokemonMugshotsSchema.meta({
+  id: 'PokemonMugshotMetadata',
+})
 
-export const PokemonMugshotMetadataSchema = z
-  .record(slugSchema, PokemonMugshotSchema)
-  .meta({ id: 'PokemonMugshotMetadata' })
+// ---- Text
+
+/** Text file schema per kind: entity id → text fields. Missing text is omitted, never filled in. */
+export const TextFileSchemas = Object.fromEntries(
+  Object.entries(textFileSchemas).map(([kind, schema]) => [
+    kind,
+    schema.meta({ id: `${pascal(kind)}Text`, description: `Text of ${kind} keyed by id.` }),
+  ]),
+) as { [K in TextKind]: (typeof textFileSchemas)[K] }
+
+export const BoxPresetTextSchema = boxPresetTextFileSchema.meta({
+  id: 'BoxPresetText',
+  description: 'Box preset text keyed by preset id; `boxes` holds titles aligned with boxes.',
+})
+
+// ---- Mods and merged game sets
+
+export const RosterSchema = rosterSchema.meta({
+  id: 'GameSetRoster',
+  description: 'Ids each listed kind has in the game set; unlisted kinds keep every base record.',
+})
+
+export const OverrideSchemas = Object.fromEntries(
+  Object.entries(moddableOverrideSchemas).map(([kind, schema]) => [
+    kind,
+    schema.meta({ id: `${pascal(kind)}Override` }),
+  ]),
+) as { [K in ModdableKind]: (typeof moddableOverrideSchemas)[K] }
+
+export const TextOverrideFileSchemas = Object.fromEntries(
+  Object.entries(moddableTextOverrideFileSchemas).map(([kind, schema]) => [
+    kind,
+    schema.meta({ id: `${pascal(kind)}TextOverride` }),
+  ]),
+) as { [K in ModdableKind]: (typeof moddableTextOverrideFileSchemas)[K] }
 
 export const ErrorResponseSchema = z
   .object({
@@ -118,9 +165,20 @@ export const GameSetParamSchema = slugSchema.meta({
   example: 'swsh',
 })
 
+export const ModdedGameSetParamSchema = slugSchema.meta({
+  description:
+    'ID of a game set with mods; only those have merged data (8.0.0: champions). Other sets use base data.',
+  example: 'champions',
+})
+
 export const GameIdParamSchema = slugSchema.meta({
   description: 'Game ID.',
   example: 'swsh',
+})
+
+export const LocaleParamSchema = z.enum(localeCodes).meta({
+  description: 'v8 locale code.',
+  example: 'eng',
 })
 
 export const PokedexIdParamSchema = slugSchema.meta({
@@ -136,4 +194,9 @@ export const PokemonIdParamSchema = slugSchema.meta({
 export const PresetIdParamSchema = slugSchema.meta({
   description: 'Box preset ID.',
   example: 'fully-sorted',
+})
+
+export const CodeMapKindParamSchema = z.enum(['pokemon', 'ribbons', 'marks', 'moves']).meta({
+  description: 'Code map kind.',
+  example: 'pokemon',
 })

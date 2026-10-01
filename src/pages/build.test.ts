@@ -69,12 +69,17 @@ function writeArtifact(checkout: string) {
     version: string
   }
   const out = path.join(checkout, 'dist-pages')
-  for (const directory of ['data', 'data-next']) {
+  for (const directory of dataDirectories(version)) {
     fs.mkdirSync(path.join(out, directory), { recursive: true })
     fs.writeFileSync(path.join(out, directory, 'version.json'), JSON.stringify({ version }))
   }
   fs.writeFileSync(path.join(out, 'openapi.json'), JSON.stringify(sourceSpec(version)))
   fs.writeFileSync(path.join(out, 'index.html'), 'historical shell that overrides servers')
+}
+
+/** v6/v7 builds serve data under data/ (and the data-next preview); v8 builds at their root. */
+function dataDirectories(version: string) {
+  return /^[67]\./.test(version) && !version.includes('-dev') ? ['data', 'data-next'] : ['pokemon']
 }
 
 function readJson(root: string, name: string) {
@@ -112,7 +117,7 @@ describe('aggregate Pages build', () => {
       expect(spec.servers).toHaveLength(4)
       expect(spec.servers[0].description).toBe(entry.description)
       expect({ ...spec, servers: [{ url: '.' }] }).toEqual(sourceSpec(entry.version))
-      for (const directory of ['data', 'data-next'])
+      for (const directory of dataDirectories(entry.version))
         expect(readJson(root, `${entry.path}${directory}/version.json`)).toEqual({
           version: entry.version,
         })

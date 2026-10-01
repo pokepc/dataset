@@ -3,7 +3,7 @@ id: doc-2
 title: v8 data-next architecture
 type: specification
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 05:24'
+updated_date: '2026-10-01 06:00'
 ---
 Specification of the v8 data model that replaces the v7 `data/` layout and `src/lib`. The decision
 and its consequences are in
@@ -229,14 +229,22 @@ function; the static API build uses the same function:
 
 Published paths:
 
-| Static API path                        | Contents                                 |
-| -------------------------------------- | ---------------------------------------- |
-| `/pokemon/{id}.json`, `/moves.json`, … | Base records, at the root (no `/base/`)  |
-| `/i18n/{locale}/{kind}.json`           | Base text                                |
-| `/games/{id}.json`                     | Game record, unchanged                   |
-| `/games/{set}/pokemon/{id}.json`       | Merged Pokémon of a set with mods        |
-| `/games/{set}/{kind}.json`             | Merged collection kinds of that set      |
-| `/games/{set}/i18n/{locale}/{kind}.json` | Merged text of that set                |
+| Static API path                                   | Contents                                       |
+| ------------------------------------------------- | ---------------------------------------------- |
+| `/pokemon/{id}.json`, `/moves.json`, …            | Base records, at the root (no `/data/` prefix) |
+| `/indices/…`, `/codes/{kind}.json`, `/metadata/…` | Indices, code maps, metadata                   |
+| `/i18n/{locale}/{kind}.json`                        | Base text                                      |
+| `/i18n/{locale}/boxpresets/{variant}/{set}.json`    | Box preset text                                |
+| `/i18n/{locale}/pokemon-prose/{id}.md`              | Species prose (Markdown)                       |
+| `/mods/{set}/…`                                     | Mods as stored (roster, overrides, mod text)   |
+| `/games/{id}.json`                                  | Game record, unchanged                         |
+| `/games/{set}/pokemon/{id}.json`                    | Merged Pokémon of a set with mods              |
+| `/games/{set}/{kind}.json`                          | Merged moves, abilities, items, battle states  |
+| `/games/{set}/i18n/{locale}/{kind}.json`            | Merged text of that set                        |
+
+`pnpm build:pages` (`src/openapi/build.ts`) copies `data/` to the artifact root and writes the merged
+folders with `mergeGameSet`; the OpenAPI document (`src/openapi/document.ts`) lists every path and
+schema. v6 and v7 builds keep their own `/data/` layout under `/v6/` and `/v7/`.
 
 URLs say `games` because users know games better than game sets; `{set}` is a game set id. Only set
 ids with mods get folders: `/games/champions/` exists, `/games/swsh-sw/` never does, and clients map
