@@ -5,6 +5,9 @@ Static JSON data for Pokémon, games, Pokédexes, box presets, and related Poké
 The package also includes TypeScript helpers, Zod schemas, and an OpenAPI description for serving
 the dataset as a static JSON API.
 
+> **Upgrading from v7?** Follow the [v7 to v8 migration guide](docs/migrating-to-v8.md), also
+> shipped in the package as `docs/migrating-to-v8.md`.
+
 ## Install
 
 ```bash
