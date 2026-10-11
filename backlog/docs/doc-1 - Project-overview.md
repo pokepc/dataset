@@ -3,7 +3,7 @@ id: doc-1
 title: Project overview
 type: readme
 created_date: '2026-09-30 23:58'
-updated_date: '2026-10-01 17:17'
+updated_date: '2026-10-11 02:33'
 ---
 `@pokepc/dataset` is the public Pokémon dataset behind [PokéPC](https://pokepc.net): static JSON
 data for Pokémon, games, Pokédexes, box presets and related metadata, plus TypeScript helpers, Zod
@@ -62,6 +62,7 @@ current state and shape of the project and indexes the maintained docs and decis
 Reference (data contract):
 
 - [Code maps](reference/doc-3%20-%20Code-maps.md)
+- [Game feature flags](reference/doc-22%20-%20Game-feature-flags.md)
 - [Game lifecycle dates](reference/doc-4%20-%20Game-lifecycle-dates.md)
 - [Location catalog](reference/doc-5%20-%20Location-catalog.md)
 - [PokéAPI game IDs](reference/doc-6%20-%20Pok%C3%A9API-game-IDs.md)

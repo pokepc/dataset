@@ -141,6 +141,7 @@ describe('v8 base record schemas', () => {
           'shiny',
           'items',
           'gender',
+          'eggs',
           'pokerus',
           'nature',
           'ribbons',
