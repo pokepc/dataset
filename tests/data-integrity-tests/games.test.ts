@@ -123,6 +123,24 @@ describe('Validate games/*.json data', () => {
     expect(mismatchedIds).toEqual([])
   })
 
+  it('should only allow Eggs in games that have a party or storage', () => {
+    const mismatchedIds = recordList
+      .filter(
+        (record) => record.features.eggs && !record.features.party && !record.features.storage,
+      )
+      .map((record) => record.id)
+    expect(mismatchedIds).toEqual([])
+  })
+
+  it('should have the eggs feature in sync with the game set', () => {
+    const eggsBySetId = new Map(recordList.map((record) => [record.id, record.features.eggs]))
+    const mismatchedIds = recordList
+      .filter((record) => record.gameSet !== null && record.gameSet !== record.id)
+      .filter((record) => record.features.eggs !== eggsBySetId.get(record.gameSet!))
+      .map((record) => record.id)
+    expect(mismatchedIds).toEqual([])
+  })
+
   it('should have valid region IDs', () => {
     recordList.forEach((record) => {
       expect(record.region === null || pokemonRegionsMap[record.region]).not.toBeUndefined()

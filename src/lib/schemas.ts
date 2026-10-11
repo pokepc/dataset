@@ -100,6 +100,7 @@ export const gameFeaturesSchema = z.object({
   shiny: z.boolean(),
   items: z.boolean(),
   gender: z.boolean(),
+  eggs: z.boolean(), // when true, the game can hold Eggs in party or storage (see docs/game-feature-flags.md)
   pokerus: z.boolean(), // All except Gen 1, GO and from S/V onwards
   nature: z.boolean(),
   ribbons: z.boolean(), // Since gen 3

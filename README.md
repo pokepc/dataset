@@ -93,7 +93,9 @@ numeric codes for Pokémon, ribbons, marks and moves; read the [code map rules](
 adding, renaming or removing any of them.
 
 The [game lifecycle reference](docs/game-lifecycle.md) defines release, digital delisting and
-required-service shutdown dates, including announced future closures.
+required-service shutdown dates, including announced future closures. The
+[game feature flags reference](docs/game-feature-flags.md) defines curated mechanic flags such as
+`features.eggs`.
 
 The [Pokémon availability field reference](docs/pokemon-availability.md) defines acquisition,
 storage, shiny availability, and related form fields for both maintainers and agents. The
