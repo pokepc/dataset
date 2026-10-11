@@ -554,6 +554,19 @@ export default function PokemonPage({ loaderData }: Route.ComponentProps) {
                     mode="games"
                   />
                 </div>
+
+                <div className="space-y-2">
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    {availabilityTitle('Shiny Unavailable In', draft.shinyUnavailableIn.length)}
+                  </h3>
+                  <GameSelectorMultiSortable
+                    value={draft.shinyUnavailableIn}
+                    onChange={(value) => updateAvailabilityField('shinyUnavailableIn', value)}
+                    options={gameOptions}
+                    mode="games"
+                    allowedIds={draft.storableIn}
+                  />
+                </div>
               </div>
             </div>
 

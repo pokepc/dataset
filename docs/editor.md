@@ -80,7 +80,9 @@ before writing the Pokemon JSON file.
 ### Examples
 
 - Unknown game ids are removed from availability arrays.
-- Empty `shinyLockedIn` saves as omitted/undefined in the JSON file.
+- Empty `shinyLockedIn` and `shinyUnavailableIn` save as omitted/undefined in the JSON file.
+- `shinyUnavailableIn` keeps only games that are also in `storableIn`; the game page removes a game
+  from it when it removes that game from `storableIn`.
 - If the draft has no valid debut game, the current Pokemon debut is used as fallback when possible.
 
 ### Edge Cases
@@ -229,10 +231,10 @@ classic or modern dataset box preset schema before writing.
 - Creating a classic preset appends a new key in `boxpresets/classic/GAME_SET.json`.
 - Creating a modern preset appends the id to `boxpresets/modern/GAME_SET.json` and writes
   `boxpresets/modern/GAME_SET/PRESET_ID.json`.
-- Modern presets show an Origin select under the description: a game set with an origin mark, or
-  No origin. Saving writes `origin: { game, originMark }` to the preset record or drops it. The
-  HOME gift checklists (`gift-lgpe`, `gift-swsh`, `gift-bdsp`, `gift-la`, `gift-sv`, `gift-lza`)
-  use it; `pnpm presets:home-gifts` regenerates them from the Pokédex data.
+- Modern presets show an Origin select under the description: a game set with an origin mark, or No
+  origin. Saving writes `origin: { game, originMark }` to the preset record or drops it. The HOME
+  gift checklists (`gift-lgpe`, `gift-swsh`, `gift-bdsp`, `gift-la`, `gift-sv`, `gift-lza`) use it;
+  `pnpm presets:home-gifts` regenerates them from the Pokédex data.
 - Deleting a modern preset removes it from the index and removes its per-preset file when present.
 
 ### Edge Cases

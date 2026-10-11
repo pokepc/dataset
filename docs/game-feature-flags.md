@@ -11,10 +11,10 @@ mean the game can breed or hatch them: My Pokémon Ranch and Pokémon Box keep E
 them. Games, DLC and the sets and supersets that group them share the value, and an Egg needs a
 party or storage, which `tests/data-integrity-tests/games.test.ts` checks.
 
-| Value | Games                                                                                                                       |
-| ----- | --------------------------------------------------------------------------------------------------------------------------- |
+| Value | Games                                                                                                                      |
+| ----- | -------------------------------------------------------------------------------------------------------------------------- |
 | true  | GSC, RSE, FRLG, Pokémon Box RS, DPPt, HGSS, My Pokémon Ranch, BW, B2W2, XY, ORAS, SM, USUM, SwSh and DLC, BDSP, SV and DLC |
-| false | RBY, Colosseum, XD, Pokémon Bank, LGPE, GO, HOME, Legends: Arceus, Legends: Z-A and DLC, Champions, Pokopia, Winds/Waves    |
+| false | RBY, Colosseum, XD, Pokémon Bank, LGPE, GO, HOME, Legends: Arceus, Legends: Z-A and DLC, Champions, Pokopia, Winds/Waves   |
 
 Verification (2026-10-11):
 
@@ -28,8 +28,8 @@ Verification (2026-10-11):
   maximum level (Bulbapedia, My Pokémon Ranch and Pokémon Egg; Serebii forums report depositing an
   Egg).
 - **Pokémon Box RS** stores PK3 slots, which carry the Egg flag
-  ([PKHeX SAV3RSBox](https://github.com/kwsch/PKHeX/blob/master/PKHeX.Core/Saves/SAV3RSBox.cs)),
-  and its bonus Eggs (Swablu, Zigzagoon, Skitty, Pichu) are kept in Box and moved to a cartridge to
+  ([PKHeX SAV3RSBox](https://github.com/kwsch/PKHeX/blob/master/PKHeX.Core/Saves/SAV3RSBox.cs)), and
+  its bonus Eggs (Swablu, Zigzagoon, Skitty, Pichu) are kept in Box and moved to a cartridge to
   hatch (Bulbapedia, Pokémon Box Ruby & Sapphire).
 - **Colosseum and XD** cannot receive Eggs from the GBA games; Colosseum's trade help says Eggs
   "cannot be accepted" (Bulbapedia, Trade; Serebii's XD FAQ).

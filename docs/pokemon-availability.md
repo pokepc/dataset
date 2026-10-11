@@ -161,17 +161,46 @@ needed, not that the fused result can cross games.
 
 ## Shiny fields
 
-| Field           | Meaning                                                                                                                                                                                                                                                                                                            |
-| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `shinyLockedIn` | Games where the native acquisition of this Pokémon/form is prevented from being shiny. This describes acquisition, not a ban on importing or storing a legal shiny from elsewhere. If an ordinary native route can produce a shiny, do not mark the entire game locked merely because another encounter is locked. |
-| `shinyReleased` | Whether a legal shiny of this exact Pokémon/form has been released in at least one game or service. This is global, not proof that it is shiny-obtainable in every listed game. A shiny sprite or programmed shiny coloration alone is not a release.                                                              |
-| `shinyBase`     | Optional Pokémon ID used as the shared shiny appearance reference, such as Alcremie flavors sharing a shiny appearance. It is not acquisition evidence and does not implicitly copy any availability fields.                                                                                                       |
+| Field                | Meaning                                                                                                                                                                                                                                                                                                                                                     |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `shinyLockedIn`      | Games where the native acquisition of this Pokémon/form is prevented from being shiny. This describes acquisition, not a ban on importing or storing a legal shiny from elsewhere. If an ordinary native route can produce a shiny, do not mark the entire game locked merely because another encounter is locked.                                          |
+| `shinyUnavailableIn` | Curated games, all in `storableIn`, where no legal shiny of this exact Pokémon/form can exist in a save by any route: native acquisition, transfer, trade or distribution. Unlike `shinyLockedIn`, it accounts for imports, so it answers whether a shiny of this form belongs on that game's checklist. Only set it on records with `shinyReleased: true`. |
+| `shinyReleased`      | Whether a legal shiny of this exact Pokémon/form has been released in at least one game or service. This is global, not proof that it is shiny-obtainable in every listed game. A shiny sprite or programmed shiny coloration alone is not a release.                                                                                                       |
+| `shinyBase`          | Optional Pokémon ID used as the shared shiny appearance reference, such as Alcremie flavors sharing a shiny appearance. It is not acquisition evidence and does not implicitly copy any availability fields.                                                                                                                                                |
 
 `shinyLockedIn` is optional; absent and empty both mean **no locks recorded**, not proof that every
 game permits shiny acquisition. `shinyReleased: false` records no established legal shiny release;
 do not synthesize a list of shiny locks from it. A global shiny release can coexist with locks in
 particular games. Shiny fields are independent of the mutually exclusive acquisition categories. The
 two availability parsers do not currently determine shiny release/lock fields.
+
+### Legal shiny availability per game
+
+A legal shiny of a record can exist in a save of game `G` when `shinyReleased` is `true`, `G` is in
+`storableIn`, and `G` is not in `shinyUnavailableIn`. Consumers derive the answer from those three
+fields; `shinyLockedIn` alone never decides it, because a locked game can still receive a legal
+shiny by transfer or distribution.
+
+- `shinyUnavailableIn` is optional and omitted when empty. Absent means **no game recorded**, not
+  proof that a shiny can reach every storable game. Curation is in progress (pokepc TASK-266), so
+  consumers must not promise completeness.
+- Records with `shinyReleased: false` leave the field out: the global flag already rules out every
+  game.
+- Add a game only with evidence that every route is closed: no unlocked native route, no legal shiny
+  elsewhere that can be moved there, and no shiny distribution into it. Record the evidence below.
+- The integrity tests keep the field a non-empty, duplicate-free subset of `storableIn` and absent
+  on unreleased records. The editor only offers storable games, and removing a game from
+  `storableIn` on the game page also removes it here.
+- The field follows the `<condition>In` naming of the other per-game arrays, as does
+  `linkRequiredIn` (planned in pokepc TASK-271).
+
+| Record             | Games                      | Evidence                                                                                                                                                                             |
+| ------------------ | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `pikachu-original` | every storable game but GO | GO released the shiny costume, which cannot leave GO; the core-series distributions were never shiny ([Pikachu in a cap](https://bulbapedia.bulbagarden.net/wiki/Pikachu_in_a_cap)). |
+| `pikachu-world`    | every storable game but GO | Same as Original Cap.                                                                                                                                                                |
+
+`shinyReleased` corrections from pokepc TASK-266 (2026-10-12): Volcanion (HOME released the shiny on
+2026-04-27) and the Original and World Cap Pikachu GO costumes are now `true`.
 
 ## Related Pokémon fields
 

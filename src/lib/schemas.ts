@@ -347,6 +347,7 @@ export const pokemonSchema = z.object({
   storableIn: z.array(common.slug), // exact form persists in storage; independent of acquisition/exportability
   eventOnlyIn: z.array(common.slug), // obtainable via in-game events, including GO event-gated research/pass rewards; disjoint from obtainableIn and transferOnlyIn
   shinyLockedIn: z.array(common.slug).optional(), // native acquisition is shiny-locked; does not prohibit imported shinies
+  shinyUnavailableIn: z.array(common.slug).optional(), // storable games where no legal shiny of this form can exist by any route; subset of storableIn
   shinyReleased: z.coerce.boolean(), // a legal shiny of this form has been released somewhere
   shinyBase: common.slug.optional(), // shared shiny appearance reference, not availability inheritance
   // -------------------
