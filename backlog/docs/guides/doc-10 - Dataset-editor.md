@@ -3,7 +3,7 @@ id: doc-10
 title: Dataset editor
 type: guide
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 05:51'
+updated_date: '2026-10-11 03:58'
 ---
 The trusted-maintainer editor lives in `apps/editor` and edits this repository's `data/` files (the v8
 layout, Backlog doc-2). It uses the local `@pokepc/dataset` workspace package for schemas, types and
@@ -256,6 +256,8 @@ writing.
   `i18n/eng/boxpresets/classic/GAME_SET.json`.
 - Creating a modern preset appends the id to `boxpresets/modern/GAME_SET.json` and writes
   `boxpresets/modern/GAME_SET/PRESET_ID.json`, plus its text in `i18n/eng/boxpresets/modern/GAME_SET.json`.
+- Modern presets show an Origin select under the description: a game set with an origin mark, or
+  No origin. Saving writes `origin: { game, originMark }` to the preset record or drops it.
 - Deleting a preset also removes its text entry; deleting a modern preset removes it from the index
   and removes its per-preset file when present.
 

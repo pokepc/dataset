@@ -27,6 +27,7 @@ import {
   summarizeBoxPresetDraft,
   updateBoxPresetBoxName,
   updateBoxPresetMetadata,
+  updateBoxPresetOrigin,
   type BoxPresetCellValue,
   type BoxPresetDragItem,
   type BoxPresetDraft,
@@ -450,6 +451,26 @@ describe('box-presets', () => {
       ],
       tags: ['recommended'],
     })
+  })
+
+  it('keeps, sets and clears a modern preset origin', () => {
+    const draft = createDraft({
+      variant: 'modern',
+      id: 'modern',
+      gameSet: 'home',
+      metadata: { kind: 'modern', schemaVersion: 2, origin: { game: 'la', originMark: 'hisui' } },
+    })
+    expect(boxPresetDraftToPersisted(draft).origin).toEqual({ game: 'la', originMark: 'hisui' })
+
+    const changed = updateBoxPresetOrigin(draft, { game: 'sv', originMark: 'paldea' })
+    expect(hasBoxPresetDraftChanges(draft, changed)).toBe(true)
+    expect(boxPresetDraftToPersisted(changed).origin).toEqual({ game: 'sv', originMark: 'paldea' })
+
+    const cleared = updateBoxPresetOrigin(draft, undefined)
+    expect(boxPresetDraftToPersisted(cleared).origin).toBeUndefined()
+    expect(
+      updateBoxPresetOrigin(createDraft(), { game: 'la', originMark: 'hisui' }).metadata,
+    ).not.toHaveProperty('origin')
   })
 
   it('swaps occupied cells', () => {

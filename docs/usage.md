@@ -189,6 +189,13 @@ in `data/boxpresets/modern/<set>.json` with one file each. Names, descriptions a
 `data/i18n/<locale>/boxpresets/<variant>/<set>.json`, keyed by preset id; `boxes` is aligned with
 the preset's boxes (`null` for untitled boxes).
 
+A modern preset may declare an `origin`: `{ game, originMark }`, the game set its Pokémon are meant
+to come from and that game's origin mark. The HOME gift checklists (`gift-lgpe`, `gift-swsh`,
+`gift-bdsp`, `gift-la`, `gift-sv`, `gift-lza`) use it: each lists the main entries of the Pokédexes
+whose completion HOME rewards with a gift, one box group per Pokédex, without forms, Gigantamax or
+Mega entries. They are checklists, not a guarantee of the gift, because HOME checks the Pokédexes
+rather than storage. `pnpm presets:home-gifts` regenerates them from the Pokédex data.
+
 ```ts
 import { loadBoxPresetText, loadModernBoxPresets } from '@pokepc/dataset/lib/fs'
 
