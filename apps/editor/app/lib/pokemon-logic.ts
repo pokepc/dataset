@@ -7,6 +7,7 @@ export type AvailabilityState = {
   transferOnlyIn: string[]
   eventOnlyIn: string[]
   shinyLockedIn: string[]
+  shinyUnavailableIn: string[]
 }
 
 export function toAvailabilityState(pokemon: Pkds.Pokemon | TranslatedPokemon): AvailabilityState {
@@ -20,6 +21,7 @@ export function toAvailabilityState(pokemon: Pkds.Pokemon | TranslatedPokemon): 
     transferOnlyIn: safeArray(pokemon.transferOnlyIn),
     eventOnlyIn: safeArray(pokemon.eventOnlyIn),
     shinyLockedIn: safeArray(pokemon.shinyLockedIn),
+    shinyUnavailableIn: safeArray(pokemon.shinyUnavailableIn),
   }
 }
 
@@ -41,6 +43,10 @@ export function sanitizeAvailabilityState(
   const transferOnlyIn = normalizeArray(input.transferOnlyIn)
   const eventOnlyIn = normalizeArray(input.eventOnlyIn)
   const shinyLockedIn = normalizeArray(input.shinyLockedIn)
+  // A game where the form cannot be stored needs no shiny verdict.
+  const shinyUnavailableIn = normalizeArray(input.shinyUnavailableIn).filter((id) =>
+    storableIn.includes(id),
+  )
 
   const rawDebutIn = typeof input.debutIn === 'string' ? input.debutIn : ''
   const debutCandidates = [
@@ -63,5 +69,6 @@ export function sanitizeAvailabilityState(
     transferOnlyIn,
     eventOnlyIn,
     shinyLockedIn,
+    shinyUnavailableIn,
   }
 }

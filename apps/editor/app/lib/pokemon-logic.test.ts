@@ -23,6 +23,7 @@ describe('pokemon-logic', () => {
       transferOnlyIn: [],
       eventOnlyIn: ['crystal'],
       shinyLockedIn: [],
+      shinyUnavailableIn: [],
     })
   })
 
@@ -40,6 +41,7 @@ describe('pokemon-logic', () => {
         transferOnlyIn: ['blue', 'red', false as unknown as string],
         eventOnlyIn: ['gold', 'gold'],
         shinyLockedIn: ['blue', 'unknown'],
+        shinyUnavailableIn: ['gold', 'blue', 'unknown', 'gold'],
       },
       gameIdOrder,
       validGameIds,
@@ -53,7 +55,9 @@ describe('pokemon-logic', () => {
       storableIn: ['red', 'gold'],
       transferOnlyIn: ['red', 'blue'],
       eventOnlyIn: ['gold'],
+      // blue is dropped because the form is not storable there
       shinyLockedIn: ['blue'],
+      shinyUnavailableIn: ['gold'],
     })
   })
 
@@ -71,6 +75,7 @@ describe('pokemon-logic', () => {
         transferOnlyIn: [],
         eventOnlyIn: [],
         shinyLockedIn: [],
+        shinyUnavailableIn: [],
       },
       gameIdOrder,
       validGameIds,
@@ -88,6 +93,7 @@ describe('pokemon-logic', () => {
         transferOnlyIn: [],
         eventOnlyIn: [],
         shinyLockedIn: [],
+        shinyUnavailableIn: [],
       },
       gameIdOrder,
       validGameIds,

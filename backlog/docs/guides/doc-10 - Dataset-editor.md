@@ -3,7 +3,7 @@ id: doc-10
 title: Dataset editor
 type: guide
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-11 03:58'
+updated_date: '2026-10-11 22:16'
 ---
 The trusted-maintainer editor lives in `apps/editor` and edits this repository's `data/` files (the v8
 layout, Backlog doc-2). It uses the local `@pokepc/dataset` workspace package for schemas, types and
@@ -103,7 +103,9 @@ before writing the Pokemon JSON file.
 ### Examples
 
 - Unknown game ids are removed from availability arrays.
-- Empty `shinyLockedIn` saves as omitted/undefined in the JSON file.
+- Empty `shinyLockedIn` and `shinyUnavailableIn` save as omitted/undefined in the JSON file.
+- `shinyUnavailableIn` keeps only games that are also in `storableIn`; the game page removes a game
+  from it when it removes that game from `storableIn`.
 - If the draft has no valid debut game, the current Pokemon debut is used as fallback when possible.
 
 ### Edge Cases

@@ -365,6 +365,14 @@ export async function saveGameAvailabilityFromForm(
     if (JSON.stringify(nextStorable) !== JSON.stringify(currentPokemon.storableIn)) {
       currentPokemon.storableIn = nextStorable
       didChange = true
+      // shinyUnavailableIn only covers games where the form can be stored.
+      if (currentPokemon.shinyUnavailableIn) {
+        const nextShinyUnavailable = currentPokemon.shinyUnavailableIn.filter((id) =>
+          nextStorable.includes(id),
+        )
+        currentPokemon.shinyUnavailableIn =
+          nextShinyUnavailable.length > 0 ? nextShinyUnavailable : undefined
+      }
     }
 
     const nextTransferOnly = normalizeGameMembership(

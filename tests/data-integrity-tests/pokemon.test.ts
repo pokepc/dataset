@@ -48,6 +48,41 @@ describe('Validate pokemon/*.json data', () => {
     },
   )
 
+  it('should keep shinyUnavailableIn a non-empty, duplicate-free subset of storableIn', () => {
+    expect(
+      recordList.flatMap((record) => {
+        const games = record.shinyUnavailableIn
+        if (games === undefined) return []
+        if (games.length === 0) return [`${record.id}: empty`]
+        return [
+          ...games
+            .filter((gameId) => !record.storableIn.includes(gameId))
+            .map((gameId) => `${record.id}: ${gameId} is not in storableIn`),
+          ...(new Set(games).size === games.length ? [] : [`${record.id}: duplicates`]),
+        ]
+      }),
+    ).toEqual([])
+  })
+
+  it('should leave shinyUnavailableIn to shinyReleased for records with no released shiny', () => {
+    expect(
+      recordList
+        .filter((record) => !record.shinyReleased && record.shinyUnavailableIn !== undefined)
+        .map((record) => record.id),
+    ).toEqual([])
+  })
+
+  it.each(['pikachu-original', 'pikachu-world'])(
+    'should allow a legal shiny of %s only in GO',
+    (id) => {
+      const record = recordList.find((pokemon) => pokemon.id === id)!
+      expect(record.shinyReleased).toBe(true)
+      expect(record.shinyUnavailableIn).toEqual(
+        record.storableIn.filter((gameId) => gameId !== 'go'),
+      )
+    },
+  )
+
   it('should exclude Champions from obtainableIn while recruited Pokémon cannot be exported', () => {
     expect(
       recordList
@@ -152,6 +187,8 @@ describe('Validate pokemon/*.json data references', () => {
         ...(record.eventOnlyIn ?? []),
         ...(record.obtainableIn ?? []),
         ...(record.transferOnlyIn ?? []),
+        ...(record.shinyLockedIn ?? []),
+        ...(record.shinyUnavailableIn ?? []),
       ]
       for (const ref of allRefs) {
         expect(gameMap.get(ref)).toBeDefined()
