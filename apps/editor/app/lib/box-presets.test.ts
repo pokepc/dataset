@@ -456,14 +456,19 @@ describe('box-presets', () => {
       gameSet: 'home',
       metadata: { kind: 'modern', schemaVersion: 1, origin: { game: 'la', originMark: 'hisui' } },
     })
-    expect(boxPresetDraftToPersisted(draft).origin).toEqual({ game: 'la', originMark: 'hisui' })
+    // Only modern presets carry an origin, so narrow the persisted union before reading it.
+    const persistedOrigin = (value: typeof draft) => {
+      const persisted = boxPresetDraftToPersisted(value)
+      return 'origin' in persisted ? persisted.origin : undefined
+    }
+    expect(persistedOrigin(draft)).toEqual({ game: 'la', originMark: 'hisui' })
 
     const changed = updateBoxPresetOrigin(draft, { game: 'sv', originMark: 'paldea' })
     expect(hasBoxPresetDraftChanges(draft, changed)).toBe(true)
-    expect(boxPresetDraftToPersisted(changed).origin).toEqual({ game: 'sv', originMark: 'paldea' })
+    expect(persistedOrigin(changed)).toEqual({ game: 'sv', originMark: 'paldea' })
 
     const cleared = updateBoxPresetOrigin(draft, undefined)
-    expect(boxPresetDraftToPersisted(cleared).origin).toBeUndefined()
+    expect(persistedOrigin(cleared)).toBeUndefined()
     expect(
       updateBoxPresetOrigin(createDraft(), { game: 'la', originMark: 'hisui' }).metadata,
     ).not.toHaveProperty('origin')
