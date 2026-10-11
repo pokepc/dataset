@@ -56,3 +56,44 @@ describe('prepared box preset capacity', () => {
     },
   )
 })
+
+const originMarkIds = new Set(
+  (
+    JSON.parse(
+      fs.readFileSync(path.resolve(presetsDir, '../../originmarks.json'), 'utf8'),
+    ) as Array<{
+      id: string
+    }>
+  ).map((mark) => mark.id),
+)
+const presetsWithOrigin = presets.filter(({ preset }) => preset.origin)
+
+describe('prepared box preset origin', () => {
+  it.each(presetsWithOrigin)('$key names an existing game and its origin mark', ({ preset }) => {
+    const origin = preset.origin!
+    const game = gamesById.get(origin.game)
+    expect(game, `game ${origin.game}`).toBeDefined()
+    expect(originMarkIds.has(origin.originMark)).toBe(true)
+    expect(origin.originMark).toBe(game?.originMark)
+  })
+})
+
+const homeGiftPresets = presets.filter(
+  ({ gameSet, preset }) => gameSet === 'home' && preset.id.startsWith('gift-'),
+)
+
+describe('HOME gift checklist presets', () => {
+  it('offers one per gift game', () => {
+    expect(homeGiftPresets.map(({ preset }) => preset.origin?.game).sort()).toEqual(
+      ['bdsp', 'la', 'lgpe', 'lza', 'sv', 'swsh'].sort(),
+    )
+  })
+
+  it.each(homeGiftPresets)('$key fits the Free plan and reads as a checklist', ({ preset }) => {
+    const ids = preset.boxes.flatMap((box) => box.slots).filter((slot) => slot !== null)
+    expect(ids.length).toBeLessThanOrEqual(2000)
+    expect(new Set(ids).size).toBe(ids.length)
+    expect(preset.description).toMatch(/does not guarantee/)
+    expect(preset.boxes.every((box) => box.name)).toBe(true)
+  })
+})

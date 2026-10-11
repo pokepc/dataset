@@ -464,6 +464,15 @@ export const modernBoxPresetSchema = z
       .strict()
       .optional(),
     tags: z.array(z.enum(modernBoxPresetTags)).optional(),
+    // Where the preset's Pokémon are meant to come from, such as a HOME checklist of one game's
+    // Pokédex: `game` is a game set id and `originMark` the origin mark of that game.
+    origin: z
+      .object({
+        game: common.slug,
+        originMark: common.slug,
+      })
+      .strict()
+      .optional(),
     boxes: z.array(modernBoxPresetBoxSchema),
   })
   .strict()

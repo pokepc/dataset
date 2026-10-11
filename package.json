@@ -46,6 +46,7 @@
     "locations:import": "bun src/upstream-adapters/locations/cli.ts",
     "pokemon:forms:migrate": "bun src/scripts/migrate-pokemon-forms.ts",
     "codes:sync": "bun src/scripts/sync-codes.ts",
+    "presets:home-gifts": "bun src/scripts/generate-home-gift-presets.ts",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check",
     "lint": "publint && pnpm typecheck",

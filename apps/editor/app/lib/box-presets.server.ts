@@ -65,6 +65,8 @@ export type AvailableBoxPresetPokemon = {
   isFemaleForm?: boolean
 }
 
+export type BoxPresetOriginGame = { id: string; label: string; originMark: string }
+
 export type BoxPresetEditorData = {
   variant: BoxPresetVariant
   variantLabel: string
@@ -72,6 +74,8 @@ export type BoxPresetEditorData = {
   preset: BoxPresetPersisted
   initialDraft: BoxPresetDraft
   siblingPresets: BoxPresetIndexPreset[]
+  // Game sets a modern preset can name as its origin: the ones with an origin mark.
+  originGames: BoxPresetOriginGame[]
   availablePokemon: AvailableBoxPresetPokemon[]
   boxCellCount: number
   maxBoxCount: number
@@ -157,6 +161,11 @@ export function loadBoxPresetEditorData(params: {
     preset,
     initialDraft,
     siblingPresets,
+    originGames: loadAllGameSets().flatMap((game) =>
+      game.originMark && game.originMark !== 'none'
+        ? [{ id: game.id, label: game.name, originMark: game.originMark }]
+        : [],
+    ),
     availablePokemon: loadAvailableStorablePokemonForGameSet(gameSetId, initialDraft),
     boxCellCount,
     maxBoxCount,

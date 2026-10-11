@@ -28,6 +28,7 @@ import {
   hasBoxPresetDraftChanges,
   normalizeBoxPresetDraft,
   updateBoxPresetMetadata,
+  updateBoxPresetOrigin,
   type BoxPresetDraft,
   type BoxPresetDropResult,
 } from '@/lib/box-presets'
@@ -39,6 +40,8 @@ import {
 import { ArrowLeftIcon, RotateCcwIcon, SaveIcon, Trash2Icon } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { Link, redirect, useFetcher, useNavigate } from 'react-router'
+
+const NO_ORIGIN = '__none__'
 
 export function meta() {
   return [
@@ -143,6 +146,11 @@ export default function BoxPresetEditorPage({
 
   const selectedSiblingLabel =
     loaderData.siblingPresets.find((preset) => preset.id === draft.id)?.label ?? draft.name
+  const draftOrigin = draft.metadata.kind === 'modern' ? draft.metadata.origin : undefined
+  const selectedOrigin = loaderData.originGames.find((game) => game.id === draftOrigin?.game)
+  const selectedOriginLabel = selectedOrigin
+    ? `${selectedOrigin.label} (${selectedOrigin.originMark} mark)`
+    : 'No origin'
   const DeletePresetForm = deleteFetcher.Form
 
   return (
@@ -281,6 +289,41 @@ export default function BoxPresetEditorPage({
               rows={3}
             />
           </div>
+
+          {draft.metadata.kind === 'modern' ? (
+            <div className="space-y-1.5 md:max-w-sm">
+              <label className="text-muted-foreground text-xs font-medium">Origin</label>
+              <Select
+                value={draftOrigin?.game ?? NO_ORIGIN}
+                onValueChange={(game) => {
+                  const origin = loaderData.originGames.find((option) => option.id === game)
+                  handleDraftEdit(
+                    updateBoxPresetOrigin(
+                      draft,
+                      origin ? { game: origin.id, originMark: origin.originMark } : undefined,
+                    ),
+                    undefined,
+                  )
+                }}
+                disabled={isSubmitting}
+              >
+                <SelectTrigger className="w-full">
+                  <SelectValue>{selectedOriginLabel}</SelectValue>
+                </SelectTrigger>
+                <SelectContent className="max-h-96">
+                  <SelectItem value={NO_ORIGIN}>No origin</SelectItem>
+                  {loaderData.originGames.map((game) => (
+                    <SelectItem key={game.id} value={game.id}>
+                      {game.label} ({game.originMark} mark)
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+              <p className="text-muted-foreground text-xs">
+                The game, and its origin mark, the preset's Pokémon are meant to come from.
+              </p>
+            </div>
+          ) : null}
 
           <div className="min-h-5 text-xs">
             {dropMessage ? <p className="text-muted-foreground">{dropMessage}</p> : null}

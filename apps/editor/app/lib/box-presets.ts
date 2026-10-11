@@ -45,6 +45,7 @@ export type BoxPresetDraft =
         schemaVersion: 1
         source?: Pkds.ModernBoxPreset['source']
         tags?: Pkds.ModernBoxPresetTag[]
+        origin?: Pkds.ModernBoxPreset['origin']
       }
     }
 
@@ -161,6 +162,7 @@ export function boxPresetToDraft(
       schemaVersion: modernPreset.schemaVersion,
       source: modernPreset.source,
       tags: modernPreset.tags ? [...modernPreset.tags] : undefined,
+      origin: modernPreset.origin ? { ...modernPreset.origin } : undefined,
     },
   })
 }
@@ -192,6 +194,7 @@ export function boxPresetDraftToPersisted(draft: BoxPresetDraft): BoxPresetPersi
     description: normalizedDraft.description || undefined,
     source: normalizedDraft.metadata.source,
     tags: normalizedDraft.metadata.tags ? [...normalizedDraft.metadata.tags] : undefined,
+    origin: normalizedDraft.metadata.origin ? { ...normalizedDraft.metadata.origin } : undefined,
     boxes: normalizedDraft.boxes.map((box) => ({
       name: box.name,
       slots: trimTrailingEmptyBoxCells(box.cells).map(draftCellToModernSlot),
@@ -212,6 +215,7 @@ export function normalizeBoxPresetDraft(preset: BoxPresetDraft): BoxPresetDraft 
         ? {
             ...preset.metadata,
             tags: preset.metadata.tags ? [...preset.metadata.tags] : undefined,
+            origin: preset.metadata.origin ? { ...preset.metadata.origin } : undefined,
           }
         : { ...preset.metadata },
   } as BoxPresetDraft
@@ -289,6 +293,17 @@ export function updateBoxPresetMetadata(
     name: updates.name ?? draft.name,
     description: updates.description ?? draft.description,
   })
+}
+
+/** Sets or clears where a modern preset's Pokémon come from; classic presets have no origin. */
+export function updateBoxPresetOrigin(
+  draft: BoxPresetDraft,
+  origin: Pkds.ModernBoxPreset['origin'],
+): BoxPresetDraft {
+  const nextDraft = normalizeBoxPresetDraft(draft)
+  if (nextDraft.metadata.kind !== 'modern') return nextDraft
+  nextDraft.metadata.origin = origin ? { ...origin } : undefined
+  return nextDraft
 }
 
 export function updateBoxPresetBoxName(
