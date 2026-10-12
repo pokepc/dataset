@@ -229,6 +229,36 @@ Locks reviewed that stay available, because a legal shiny can still arrive:
 - Xerneas and Yveltal in X and Y: shiny Level 100 distributions for X, Y, Omega Ruby and Alpha
   Sapphire ran in 2015 and 2016 ([Serebii 716](https://www.serebii.net/events/dex/716.shtml),
   [717](https://www.serebii.net/events/dex/717.shtml)).
+- Every Sun, Moon, Ultra Sun and Ultra Moon lock (Tapu Koko, Lele, Bulu and Fini, Solgaleo,
+  Lunala, Necrozma and its Dusk Mane and Dawn Wings fusions, Zygarde in both storable Formes, and
+  the seven Sun and Moon Ultra Beasts): the four games trade with each other, so one legal shiny
+  covers them all. Shiny Tapu Koko went to Sun and Moon in 2017, shiny Tapu Lele, Bulu and Fini
+  were Ultra Sun and Ultra Moon competition entry gifts in 2018 and 2019, shiny Solgaleo, Lunala
+  and Necrozma were distributed in 2019, and the 2018 shiny 50% Zygarde reaches its 10% Forme once
+  given Power Construct ([Serebii 785](https://www.serebii.net/events/dex/785.shtml),
+  [786](https://www.serebii.net/events/dex/786.shtml),
+  [787](https://www.serebii.net/events/dex/787.shtml),
+  [788](https://www.serebii.net/events/dex/788.shtml),
+  [791](https://www.serebii.net/events/dex/791.shtml),
+  [792](https://www.serebii.net/events/dex/792.shtml),
+  [800](https://www.serebii.net/events/dex/800.shtml),
+  [718](https://www.serebii.net/events/dex/718.shtml),
+  [Project Pokémon](https://projectpokemon.org/home/files/file/2825-2018-legends-shiny-zygarde/)).
+  The Ultra Beasts appear in Ultra Sun and Ultra Moon's Ultra Wormholes, where shininess is rolled
+  on landing, and trade into Sun and Moon; a shiny Necrozma fuses into a shiny Dusk Mane or Dawn
+  Wings.
+- Every Sword and Shield lock (Galarian Articuno, Zapdos and Moltres, Eternatus, Keldeo in both
+  Formes, Solgaleo, Lunala, Poipole, Naganadel, Type: Null, Silvally in every type, Zacian and
+  Zamazenta): HOME moves any species in Sword and Shield's Pokédex into them. The legal shinies come
+  from GO (Galarian birds and Zamazenta from 2024, Keldeo from 2025, which learns Secret Sword in
+  Sword and Shield), a 2022 Sword and Shield shiny Eternatus distribution
+  ([Serebii 890](https://www.serebii.net/events/dex/890.shtml)), 2021 shiny Zacian and Zamazenta
+  distributions ([Serebii 888](https://www.serebii.net/events/dex/888.shtml)), the 2019 Generation 7 Solgaleo and Lunala above through Bank, and the Generation
+  7 Type: Null and Poipole gifts, which PKHeX does not shiny-lock
+  ([PKHeX Gen 7 tables](https://github.com/kwsch/PKHeX/tree/master/PKHeX.Core/Legality/Encounters/Data/Gen7))
+  and which also had shiny Poipole distributions in 2018
+  ([Serebii 803](https://www.serebii.net/events/dex/803.shtml)). They evolve into Silvally and
+  Naganadel, and Silvally changes type with Memories.
 - Mega and Primal records are battle states with no `storableIn`, so their locks need no review.
 
 `shinyReleased` corrections from pokepc TASK-266 (2026-10-12): Volcanion (HOME released the shiny
