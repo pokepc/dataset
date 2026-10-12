@@ -207,10 +207,29 @@ shiny by transfer or distribution.
 | `pikachu-original` | every storable game but GO  | GO released the shiny costume, which cannot leave GO; the core-series distributions were never shiny ([Pikachu in a cap](https://bulbapedia.bulbagarden.net/wiki/Pikachu_in_a_cap)).            |
 | `pikachu-world`    | every storable game but GO  | Same as Original Cap.                                                                                                                                                                           |
 | `reshiram`, `zekrom` | `bw-b`, `bw-w`, `b2w2-b2`, `b2w2-w2` | Every native encounter is `Shiny.Never` ([PKHeX Gen 5 tables](https://github.com/kwsch/PKHeX/tree/master/PKHeX.Core/Legality/Encounters/Data/Gen5)), Dream Radar does not offer them, every Gen 5 distribution was non-shiny ([Serebii 643](https://www.serebii.net/events/dex/643.shtml), [644](https://www.serebii.net/events/dex/644.shtml)), and Gen 5 receives transfers only from Gen 4, which lacks both species. |
+| `zygarde` (50% Forme) | `xy-x`, `xy-y`, `oras-or`, `oras-as` | The Terminus Cave encounter in X and Y is shiny-locked, every Generation 6 distribution was non-shiny and the only shiny ones (2018) were for Generation 7 ([Serebii 718](https://www.serebii.net/events/dex/718.shtml)), Omega Ruby and Alpha Sapphire receive Zygarde only from X and Y or Bank, and Generation 7 cannot send back to Generation 6. |
 
-Locks reviewed that stay available, because a legal shiny can still arrive: Mew and Jirachi in
-`bdsp-bd` and `bdsp-sp` (the save-data gifts are locked, but HOME moves any species in BDSP's
-Pokédex into it, including shiny GO and earlier-generation Mythicals once the gift registers it).
+Locks reviewed that stay available, because a legal shiny can still arrive:
+
+- Mew and Jirachi in `bdsp-bd` and `bdsp-sp`: the save-data gifts are locked, but HOME moves any
+  species in BDSP's Pokédex into it, including shiny GO and earlier-generation Mythicals once the
+  gift registers it.
+- All 22 `ranch` locks (Hayley's trades and the Ranch Mew and Phione): Ranch stores whatever
+  Diamond and Pearl deposit, and every one of these forms has a legal shiny in Diamond and Pearl
+  through a wild encounter, breeding, a fossil or Pal Park. Phione breeds from Manaphy, and the
+  wild Faraway Island Mew of Japanese Emerald is not shiny-locked and reaches Generation 4 through
+  Pal Park ([Serebii](https://x.com/serebiinet/status/1089849028060286977),
+  [Project Pokémon](https://projectpokemon.org/home/files/file/2801-faraway-island-mew/)).
+- The X, Y, Omega Ruby and Alpha Sapphire locks on Articuno, Zapdos, Moltres, Mewtwo, Groudon,
+  Kyogre, Rayquaza and Deoxys (every Forme): Generation 6 receives Pokémon Bank transfers from
+  Generation 5, which reach back through Generation 4 to Generation 3, where FireRed, LeafGreen,
+  Ruby, Sapphire and Emerald encounters of all of them, Birth Island Deoxys included, are not
+  shiny-locked ([Project Pokémon](https://projectpokemon.org/home/files/file/1943-birth-island-deoxys/)).
+  Omega Ruby and Alpha Sapphire change Deoxys Formes with the Meteorite.
+- Xerneas and Yveltal in X and Y: shiny Level 100 distributions for X, Y, Omega Ruby and Alpha
+  Sapphire ran in 2015 and 2016 ([Serebii 716](https://www.serebii.net/events/dex/716.shtml),
+  [717](https://www.serebii.net/events/dex/717.shtml)).
+- Mega and Primal records are battle states with no `storableIn`, so their locks need no review.
 
 `shinyReleased` corrections from pokepc TASK-266 (2026-10-12): Volcanion (HOME released the shiny
 on 2026-04-27) and the Original and World Cap Pikachu GO costumes are now `true`.
