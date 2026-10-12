@@ -259,6 +259,31 @@ Locks reviewed that stay available, because a legal shiny can still arrive:
   and which also had shiny Poipole distributions in 2018
   ([Serebii 803](https://www.serebii.net/events/dex/803.shtml)). They evolve into Silvally and
   Naganadel, and Silvally changes type with Memories.
+- Every Scarlet and Violet lock (35 storable forms per version): HOME moves any species in Scarlet
+  and Violet's Pokédex into them, so a shiny from any HOME-connected game covers the lock. The
+  returning legends (Articuno, Zapdos, Moltres, Raikou, Entei, Suicune, Lugia, Ho-Oh, Groudon,
+  Kyogre, Rayquaza, Latias, Latios, Cobalion, Terrakion, Virizion, Reshiram, Zekrom, Kyurem,
+  Solgaleo, Lunala and Necrozma) all have shiny releases in GO, most also roll shininess in Sword
+  and Shield's Dynamax Adventures, and Latias, Latios and the Swords of Justice are `Shiny.Random`
+  in Legends: Z-A's special Hyperspace zones
+  ([Serebii](https://www.serebii.net/legendsz-a/shinypokemon.shtml),
+  [PKHeX Gen 9a tables](https://github.com/kwsch/PKHeX/blob/master/PKHeX.Core/Legality/Encounters/Data/Gen9/Encounters9a.cs)).
+  Black and White Kyurem and Dusk Mane and Dawn Wings Necrozma fuse in Scarlet and Violet from a
+  shiny Kyurem or Necrozma. Scarlet and Violet themselves received shiny Wo-Chien, Chien-Pao,
+  Ting-Lu and Chi-Yu (Level 75) and shiny Koraidon and Miraidon (Level 100) in 2025
+  ([Serebii 1001](https://www.serebii.net/events/dex/1001.shtml),
+  [1002](https://www.serebii.net/events/dex/1002.shtml),
+  [1003](https://www.serebii.net/events/dex/1003.shtml),
+  [1004](https://www.serebii.net/events/dex/1004.shtml),
+  [1007](https://www.serebii.net/events/dex/1007.shtml),
+  [1008](https://www.serebii.net/events/dex/1008.shtml)), and HOME gave a shiny Meloetta in 2024
+  ([Serebii 648](https://www.serebii.net/events/dex/648.shtml)). Chest Form Gimmighoul is
+  `Shiny.Never` in Scarlet and Violet
+  ([PKHeX Gen 9 tables](https://github.com/kwsch/PKHeX/blob/master/PKHeX.Core/Legality/Encounters/Data/Gen9/Encounters9.cs)),
+  but it spawns in Legends: Z-A Mega Dimension's 5-star Ghost Hyperspace zones
+  ([Serebii](https://www.serebii.net/pokedex-sv/gimmighoul/)), whose wild Pokémon can be shiny, and
+  Legends: Z-A moves to HOME; Gholdengo evolves from a shiny Gimmighoul of either Form, including the
+  GO Roaming Form.
 - Mega and Primal records are battle states with no `storableIn`, so their locks need no review.
 
 `shinyReleased` corrections from pokepc TASK-266 (2026-10-12): Volcanion (HOME released the shiny
