@@ -1,14 +1,15 @@
 import { describe, expect, it } from 'vitest'
+import { pokeApiLocationAliases } from './overrides.ts'
 import { parsePokeApiEncounters } from './pokeapi.ts'
 
 const csv = {
   versions: 'id,identifier\n1,red\n2,blue\n44,red-japan\n35,the-isle-of-armor-sword\n33,sword',
-  location_areas: 'id,location_id\n10,100\n11,100\n12,159\n13,799\n14,555\n15,300',
+  location_areas: 'id,location_id\n10,100\n11,100\n12,159\n13,799\n14,555\n15,300\n16,152',
   encounter_slots: 'id,encounter_method_id\n1,1\n2,2',
   encounter_methods: 'id,identifier,order\n1,walk,1\n2,surf,14',
   encounter_condition_values: 'id,identifier\n3,time-morning\n5,time-night',
   encounter_condition_value_map: 'encounter_id,encounter_condition_value_id\n4,5\n4,3',
-  pokemon: 'id,identifier\n25,pikachu\n201,unown\n999,mystery',
+  pokemon: 'id,identifier\n25,pikachu\n201,unown\n999,mystery\n10094,pikachu-original-cap',
   encounters: [
     'id,version_id,location_area_id,encounter_slot_id,pokemon_id,min_level,max_level',
     '1,1,10,1,25,3,5', // two areas of one place merge into one level range
@@ -22,7 +23,26 @@ const csv = {
     '9,1,10,1,201,5,5', // shared PokéAPI id resolves to the default record
     '10,1,10,1,999,5,5', // unknown Pokémon
     '11,35,15,1,25,20,22', // DLC version maps to its base game
+    '12,1,16,1,201,9,9', // reviewed place moves the default record to its form
+    '13,2,16,1,201,9,9', // the same place in another game keeps the default record
+    '14,1,10,1,10094,6,6', // reviewed Pokémon alias
   ].join('\n'),
+}
+
+const overrides = {
+  pokeApiLocationAliases: { '159': pokeApiLocationAliases['159'] },
+  excludedPokeApiLocations: { '799': 'roaming-kanto' },
+  pokeApiPokemonAliases: { 'pikachu-original-cap': { pokemon: 'pikachu', note: 'test' } },
+  placeFormOverrides: [
+    {
+      pokemon: 'unown',
+      form: 'unown-b',
+      games: ['rb-r'],
+      locations: ['kanto-victory-road'],
+      source: 'test',
+      note: 'test',
+    },
+  ],
 }
 
 const data = {
@@ -45,7 +65,7 @@ const data = {
 }
 
 describe('parsePokeApiEncounters', () => {
-  const result = parsePokeApiEncounters(csv, data)
+  const result = parsePokeApiEncounters(csv, data, overrides)
 
   it('aggregates rows per game, place, method and condition set', () => {
     const base = { game: 'rb-r', location: 'kanto-viridian-forest', source: 'pokeapi' }
@@ -80,12 +100,46 @@ describe('parsePokeApiEncounters', () => {
   })
 
   it('attaches a shared PokéAPI id to the default record', () => {
-    expect(result.encounters.get('unown')).toHaveLength(1)
-    expect(result.encounters.has('unown-b')).toBe(false)
+    expect(result.encounters.get('unown')?.map((e) => [e.game, e.location])).toEqual([
+      ['rb-r', 'kanto-viridian-forest'],
+      ['rb-b', 'kanto-victory-road'],
+    ])
+  })
+
+  it('moves an encounter to the form a reviewed place decides', () => {
+    expect(result.encounters.get('unown-b')?.map((e) => [e.game, e.location])).toEqual([
+      ['rb-r', 'kanto-victory-road'],
+    ])
+  })
+
+  it('maps a reviewed PokéAPI alias to its dataset record', () => {
+    expect(result.unresolved.some((entry) => entry.key === 'pikachu-original-cap')).toBe(false)
+  })
+
+  it('rejects overrides that point at unknown records or places', () => {
+    const [form] = overrides.placeFormOverrides
+    expect(() =>
+      parsePokeApiEncounters(csv, data, {
+        ...overrides,
+        placeFormOverrides: [{ ...form, form: 'pikachu' }],
+      }),
+    ).toThrow('must share a PokéAPI id')
+    expect(() =>
+      parsePokeApiEncounters(csv, data, {
+        ...overrides,
+        placeFormOverrides: [{ ...form, locations: ['nowhere'] }],
+      }),
+    ).toThrow('unknown location nowhere')
+    expect(() =>
+      parsePokeApiEncounters(csv, data, {
+        ...overrides,
+        pokeApiPokemonAliases: { x: { pokemon: 'missingno', note: '' } },
+      }),
+    ).toThrow('unknown record missingno')
   })
 
   it('reports unmapped and excluded rows instead of guessing', () => {
-    expect(result).toMatchObject({ rows: 11, importedRows: 7, excludedRows: 1 })
+    expect(result).toMatchObject({ rows: 14, importedRows: 10, excludedRows: 1 })
     expect(result.unresolved).toEqual(
       expect.arrayContaining([
         { reason: 'unmapped-version', key: 'red-japan', rows: 1 },
@@ -97,6 +151,6 @@ describe('parsePokeApiEncounters', () => {
 
   it('rejects encounters with no method', () => {
     const broken = { ...csv, encounter_slots: 'id,encounter_method_id\n1,9' }
-    expect(() => parsePokeApiEncounters(broken, data)).toThrow('no encounter method')
+    expect(() => parsePokeApiEncounters(broken, data, overrides)).toThrow('no encounter method')
   })
 })

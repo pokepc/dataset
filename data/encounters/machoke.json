@@ -19,6 +19,15 @@
   },
   {
     "game": "y",
+    "location": "kanto-underground-path-5-6",
+    "method": "npc-trade",
+    "minLevel": 16,
+    "maxLevel": 100,
+    "conditions": ["trade-cubone"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
     "location": "kanto-victory-road",
     "method": "walk",
     "minLevel": 39,

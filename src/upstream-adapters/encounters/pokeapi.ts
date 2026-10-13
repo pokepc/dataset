@@ -1,6 +1,6 @@
 import type { Encounter } from '../../lib/types.ts'
 import { dlcBaseVersions, parseCsv } from '../locations/pokeapi.ts'
-import { excludedPokeApiLocations, pokeApiLocationAliases } from './overrides.ts'
+import * as reviewedOverrides from './overrides.ts'
 
 type CsvRow = Record<string, string>
 export type EncounterGame = { id: string; type: string; pokeApiGameVersionId: number | null }
@@ -23,6 +23,14 @@ export type Unresolved = {
   key: string
   rows: number
 }
+
+export type EncounterOverrides = Pick<
+  typeof reviewedOverrides,
+  | 'pokeApiLocationAliases'
+  | 'excludedPokeApiLocations'
+  | 'pokeApiPokemonAliases'
+  | 'placeFormOverrides'
+>
 
 export type EncounterImport = {
   /** Encounters per dataset Pokémon id, sorted for stable output. */
@@ -50,12 +58,20 @@ function byId(rows: CsvRow[]): Map<string, CsvRow> {
  * keeping the widest level range. Location areas fold into their parent location.
  *
  * A PokéAPI Pokémon id shared by several dataset records (gender forms, Megas, cosmetic forms)
- * attaches to the default record: PokéAPI does not tell those forms apart in encounters.
+ * attaches to the default record: PokéAPI does not tell those forms apart in encounters. Reviewed
+ * overrides move place-decided forms (East Sea Shellos) and map ability variants to a record.
  */
 export function parsePokeApiEncounters(
   csv: Record<string, string>,
   data: { games: EncounterGame[]; locations: EncounterLocation[]; pokemon: EncounterPokemon[] },
+  overrides: EncounterOverrides = reviewedOverrides,
 ): EncounterImport {
+  const {
+    pokeApiLocationAliases,
+    excludedPokeApiLocations,
+    pokeApiPokemonAliases,
+    placeFormOverrides,
+  } = overrides
   const versions = byId(table(csv, 'versions', ['id', 'identifier']))
   const areas = byId(table(csv, 'location_areas', ['id', 'location_id']))
   const slots = byId(table(csv, 'encounter_slots', ['id', 'encounter_method_id']))
@@ -104,9 +120,32 @@ export function parsePokeApiEncounters(
     if (!apiId) continue
     recordsByApiId.set(apiId, [...(recordsByApiId.get(apiId) ?? []), record])
   }
-  const resolvePokemon = (apiId: string): EncounterPokemon[] => {
+  const recordById = new Map(data.pokemon.map((record) => [record.id, record]))
+  for (const [apiName, alias] of Object.entries(pokeApiPokemonAliases)) {
+    if (!recordById.has(alias.pokemon))
+      throw new Error(`Pokémon alias ${apiName} targets unknown record ${alias.pokemon}`)
+  }
+  const resolvePokemon = (apiId: string, apiName: string): EncounterPokemon[] => {
+    const alias = pokeApiPokemonAliases[apiName]
+    if (alias) return [recordById.get(alias.pokemon)!]
     const records = recordsByApiId.get(apiId) ?? []
     return records.length > 1 ? records.filter((record) => record.isDefault) : records
+  }
+
+  const formByPlace = new Map<string, string>()
+  for (const override of placeFormOverrides) {
+    const base = recordById.get(override.pokemon)
+    const form = recordById.get(override.form)
+    if (!base || !form || base.refs?.pkApiId !== form.refs?.pkApiId)
+      throw new Error(
+        `Form override ${override.form} must share a PokéAPI id with ${override.pokemon}`,
+      )
+    for (const location of override.locations) {
+      if (!data.locations.some((entry) => entry.id === location))
+        throw new Error(`Form override ${override.form} targets unknown location ${location}`)
+      for (const game of override.games)
+        formByPlace.set([override.pokemon, game, location].join('|'), override.form)
+    }
   }
 
   const unresolved = new Map<string, Unresolved>()
@@ -147,8 +186,8 @@ export function parsePokeApiEncounters(
       miss('unmapped-location', area.location_id)
       continue
     }
-    const records = resolvePokemon(row.pokemon_id)
     const apiName = apiPokemon.get(row.pokemon_id)?.identifier ?? row.pokemon_id
+    const records = resolvePokemon(row.pokemon_id, apiName)
     if (records.length !== 1) {
       miss(records.length ? 'ambiguous-pokemon' : 'unknown-pokemon', apiName)
       continue
@@ -159,7 +198,7 @@ export function parsePokeApiEncounters(
     const conditions = [...new Set(conditionsByEncounter.get(row.id) ?? [])].sort()
     const minLevel = Number(row.min_level)
     const maxLevel = Number(row.max_level)
-    const pokemon = records[0].id
+    const pokemon = formByPlace.get([records[0].id, game, location].join('|')) ?? records[0].id
     const key = [pokemon, game, location, method.identifier, conditions.join('+')].join('|')
     const existing = merged.get(key)
     if (existing) {

@@ -7,7 +7,12 @@ import { encountersSchema } from '../../lib/schemas.ts'
 import { resolveDatasetDirectory } from '../../utils/dataset-directory.ts'
 import { SourceCache } from '../locations/cache.ts'
 import { pokeApiRevision } from '../locations/fetch.ts'
-import { excludedPokeApiLocations, pokeApiLocationAliases } from './overrides.ts'
+import {
+  excludedPokeApiLocations,
+  placeFormOverrides,
+  pokeApiLocationAliases,
+  pokeApiPokemonAliases,
+} from './overrides.ts'
 import {
   encounterCsvFiles,
   parsePokeApiEncounters,
@@ -75,7 +80,12 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
         summary,
         pokeApiRevision,
         sourceHashes: Object.fromEntries([...cache.hashes].sort()),
-        decisions: { pokeApiLocationAliases, excludedPokeApiLocations },
+        decisions: {
+          pokeApiLocationAliases,
+          excludedPokeApiLocations,
+          pokeApiPokemonAliases,
+          placeFormOverrides,
+        },
         unresolved: result.unresolved,
       },
       null,

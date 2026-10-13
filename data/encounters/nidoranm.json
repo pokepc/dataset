@@ -288,6 +288,15 @@
     "source": "pokeapi"
   },
   {
+    "game": "frlg-lg",
+    "location": "kanto-underground-path-5-6",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-nidoran-f"],
+    "source": "pokeapi"
+  },
+  {
     "game": "dp-d",
     "location": "sinnoh-route-201",
     "method": "walk",

@@ -3,7 +3,7 @@ id: doc-23
 title: Encounter data
 type: specification
 created_date: '2026-10-13 06:15'
-updated_date: '2026-10-13 06:15'
+updated_date: '2026-10-13 08:15'
 ---
 `data/encounters/<pokemonId>.json` lists where a Pokémon record can be met in each game. A record
 with no file has no imported encounters; that does not mean it is unobtainable.
@@ -49,23 +49,32 @@ the place catalog come from the same snapshot. A repeat offline import produces 
 
 ## Mapping rules
 
+Reviewed decisions with their sources live in `src/upstream-adapters/encounters/overrides.ts`; the
+report records them under `decisions`.
+
 - Pokémon: a PokéAPI Pokémon id maps to the record whose `refs.pkApiId` matches. When several
   records share the id (gender forms, Megas, cosmetic forms such as Unown or Vivillon), the
   encounter attaches to the default record, because PokéAPI does not tell those forms apart.
-  Form-specific encounters (Shellos East Sea, Burmy cloaks) need reviewed overrides.
-- Places: a PokéAPI location maps through `locations[].pokeApiId`. Reviewed aliases and
-  exclusions with their sources live in `src/upstream-adapters/encounters/overrides.ts`: alternate
-  PokéAPI records of a catalog place (Kanto Victory Road, the Hoenn team hideout) are aliased, and
-  pseudo-locations with no single place (roaming, `unknown-all-*`) are excluded.
-- Rows that cannot be mapped are left out and listed in the report with their row counts: the
-  Japanese Red, Green and Blue versions (no dataset game), Max Raid dens and Poké Center or Mart
-  records (no single catalog place), the Kanto Underground Path (two catalog places) and PokéAPI
-  Pokémon with no dataset record (Own Tempo Rockruff, Power Construct Zygarde).
+- Place-decided forms: `placeFormOverrides` moves an encounter to a form when the game and place
+  decide it. East Sea Shellos and Gastrodon in Diamond, Pearl and Platinum (Routes 212, 213, 222,
+  224 and 230 and Pastoria City, east of Mt. Coronet) are the reviewed cases. Forms decided by
+  season, flower colour, battle terrain or the player's region (Deerling, Sawsbuck, Flabébé, Burmy,
+  Vivillon, Unown) stay on the default record as species-level encounters, and so do Shellos and
+  Gastrodon outside Sinnoh until their forms per place are reviewed.
+- Ability variants: `pokeApiPokemonAliases` maps PokéAPI Pokémon the dataset keeps as one record
+  (Own Tempo Rockruff to `rockruff`, Power Construct Zygarde to `zygarde`).
+- Places: a PokéAPI location maps through `locations[].pokeApiId`. Alternate PokéAPI records of a
+  catalog place are aliased (Kanto Victory Road, the Hoenn team hideout, the Kanto Underground Path
+  trades at the Routes 5-6 entrance). Locations with no single place are excluded with a reason:
+  roaming Pokémon, `unknown-all-*` placeholders, event distributions picked up at a Poké Center or
+  Mart, Max Raid dens spread over the Wild Area, and the unnamed Isle of Armor cave trades.
+- Rows that still cannot be mapped are left out and listed in the report with their row counts.
+  Today only the Japanese Red, Green and Blue versions remain (no dataset game).
 
 ## Coverage
 
-At revision `bc92d3b6`: 117,127 PokéAPI rows, 115,039 imported, 200 excluded and 1,888 unresolved,
-giving 70,309 entries for 920 records. PokéAPI covers Generation 1 to Sword/Shield with its DLCs and
+At revision `bc92d3b6`: 117,127 PokéAPI rows, 115,054 imported, 303 excluded and 1,770 unresolved,
+giving 70,316 entries for 922 records. PokéAPI covers Generation 1 to Sword/Shield with its DLCs and
 Let's Go; it has no rows for BDSP, Legends: Arceus, Scarlet/Violet, Legends: Z-A or Champions, and
 upstream issues report missing gift, trade and legendary encounters in covered games. PokéAPI data
 is BSD-3-Clause.

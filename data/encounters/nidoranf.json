@@ -18,6 +18,15 @@
     "source": "pokeapi"
   },
   {
+    "game": "rb-r",
+    "location": "kanto-underground-path-5-6",
+    "method": "npc-trade",
+    "minLevel": 2,
+    "maxLevel": 100,
+    "conditions": ["trade-nidoran-m"],
+    "source": "pokeapi"
+  },
+  {
     "game": "rb-b",
     "location": "kanto-route-22",
     "method": "walk",
@@ -33,6 +42,15 @@
     "minLevel": 22,
     "maxLevel": 25,
     "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-underground-path-5-6",
+    "method": "npc-trade",
+    "minLevel": 2,
+    "maxLevel": 100,
+    "conditions": ["trade-nidoran-m"],
     "source": "pokeapi"
   },
   {
@@ -267,6 +285,15 @@
     "minLevel": 24,
     "maxLevel": 30,
     "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-underground-path-5-6",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-nidoran-m"],
     "source": "pokeapi"
   },
   {

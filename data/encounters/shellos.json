@@ -73,42 +73,6 @@
   },
   {
     "game": "dp-d",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 20,
-    "maxLevel": 20,
-    "conditions": ["swarm-no"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-d",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 20,
-    "maxLevel": 20,
-    "conditions": ["time-night"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-d",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 21,
-    "maxLevel": 22,
-    "conditions": ["radar-off"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-d",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 22,
-    "maxLevel": 22,
-    "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-d",
     "location": "sinnoh-route-218",
     "method": "walk",
     "minLevel": 28,
@@ -123,15 +87,6 @@
     "minLevel": 28,
     "maxLevel": 28,
     "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-d",
-    "location": "sinnoh-route-224",
-    "method": "walk",
-    "minLevel": 23,
-    "maxLevel": 23,
-    "conditions": ["radar-off"],
     "source": "pokeapi"
   },
   {
@@ -271,42 +226,6 @@
   },
   {
     "game": "dp-p",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 20,
-    "maxLevel": 20,
-    "conditions": ["swarm-no"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-p",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 20,
-    "maxLevel": 20,
-    "conditions": ["time-night"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-p",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 21,
-    "maxLevel": 22,
-    "conditions": ["radar-off"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-p",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 22,
-    "maxLevel": 22,
-    "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-p",
     "location": "sinnoh-route-218",
     "method": "walk",
     "minLevel": 28,
@@ -321,15 +240,6 @@
     "minLevel": 28,
     "maxLevel": 28,
     "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "dp-p",
-    "location": "sinnoh-route-224",
-    "method": "walk",
-    "minLevel": 23,
-    "maxLevel": 23,
-    "conditions": ["radar-off"],
     "source": "pokeapi"
   },
   {
@@ -415,15 +325,6 @@
   },
   {
     "game": "pt",
-    "location": "sinnoh-pastoria-city",
-    "method": "surf",
-    "minLevel": 20,
-    "maxLevel": 30,
-    "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
     "location": "sinnoh-route-205",
     "method": "walk",
     "minLevel": 9,
@@ -443,105 +344,6 @@
   {
     "game": "pt",
     "location": "sinnoh-route-205",
-    "method": "surf",
-    "minLevel": 20,
-    "maxLevel": 30,
-    "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-212",
-    "method": "walk",
-    "minLevel": 23,
-    "maxLevel": 24,
-    "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-212",
-    "method": "walk",
-    "minLevel": 25,
-    "maxLevel": 26,
-    "conditions": ["radar-off"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-212",
-    "method": "walk",
-    "minLevel": 26,
-    "maxLevel": 26,
-    "conditions": ["slot2-emerald"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-212",
-    "method": "walk",
-    "minLevel": 26,
-    "maxLevel": 26,
-    "conditions": ["slot2-leafgreen"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-212",
-    "method": "walk",
-    "minLevel": 26,
-    "maxLevel": 26,
-    "conditions": ["slot2-none"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-212",
-    "method": "walk",
-    "minLevel": 26,
-    "maxLevel": 26,
-    "conditions": ["slot2-ruby"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-212",
-    "method": "surf",
-    "minLevel": 20,
-    "maxLevel": 30,
-    "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 23,
-    "maxLevel": 23,
-    "conditions": ["time-night"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 24,
-    "maxLevel": 26,
-    "conditions": [],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-213",
-    "method": "walk",
-    "minLevel": 25,
-    "maxLevel": 26,
-    "conditions": ["radar-off"],
-    "source": "pokeapi"
-  },
-  {
-    "game": "pt",
-    "location": "sinnoh-route-213",
     "method": "surf",
     "minLevel": 20,
     "maxLevel": 30,
