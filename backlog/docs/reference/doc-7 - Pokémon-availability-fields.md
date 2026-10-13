@@ -3,7 +3,7 @@ id: doc-7
 title: Pokémon availability fields
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-11 22:16'
+updated_date: '2026-10-13 00:30'
 ---
 This is the canonical field reference for humans and agents editing `data/pokemon/*.json`, the
 schemas, the editor, and the availability tools. These fields are game-independent base data; they
@@ -189,8 +189,10 @@ fields; `shinyLockedIn` alone never decides it, because a locked game can still 
 shiny by transfer or distribution.
 
 - `shinyUnavailableIn` is optional and omitted when empty. Absent means **no game recorded**, not
-  proof that a shiny can reach every storable game. Curation is in progress (pokepc TASK-266), so
-  consumers must not promise completeness.
+  proof that a shiny can reach every storable game. Every `shinyLockedIn` game of a released record
+  was reviewed on 2026-10-13 (pokepc TASK-266, listed below), but `shinyLockedIn` itself is
+  incomplete, so consumers must not promise completeness. Review a newly recorded lock the same
+  way.
 - Records with `shinyReleased: false` leave the field out: the global flag already rules out every
   game.
 - Add a game only with evidence that every route is closed: no unlocked native route, no legal
@@ -284,6 +286,27 @@ Locks reviewed that stay available, because a legal shiny can still arrive:
   ([Serebii](https://www.serebii.net/pokedex-sv/gimmighoul/)), whose wild Pokémon can be shiny, and
   Legends: Z-A moves to HOME; Gholdengo evolves from a shiny Gimmighoul of either Form, including the
   GO Roaming Form.
+- Every Legends: Arceus lock (46 storable forms): HOME moves any species that appears in Legends:
+  Arceus into it, blocking only Pikachu and Gigantamax Eevee
+  ([Serebii](https://www.serebii.net/pokemonhome/transfer.shtml)). Shiny Arceus was a 2015 Japanese
+  Generation 6 distribution ([Serebii 493](https://www.serebii.net/events/dex/493.shtml)), shiny
+  Enamorus a 2025 HOME gift for completing the Legends: Arceus HOME Pokédexes
+  ([Serebii 905](https://www.serebii.net/events/dex/905.shtml)), Manaphy hatches shiny from the
+  Generation 4 Ranger egg and Phione breeds from it, and GO has released the shiny Lake trio,
+  Dialga and Palkia in both Formes, Giratina in both Formes, Heatran, Regigigas, Cresselia,
+  Darkrai, Shaymin, Tornadus, Thundurus and Landorus in both Formes and Alolan Vulpix and Ninetales
+  ([Serebii GO shinies](https://www.serebii.net/pokemongo/shiny.shtml)). PKHeX treats every Forme
+  of Arceus (its 17 types and the Legend Plate), Dialga, Palkia, Giratina, Shaymin, the Forces of
+  Nature and Enamorus as freely changeable
+  ([PKHeX FormInfo](https://github.com/kwsch/PKHeX/blob/master/PKHeX.Core/Legality/Tables/FormInfo.cs)),
+  so one legal shiny of the species covers each Forme.
+- Every Legends: Z-A lock (22 storable forms): since HOME 4.0.0 (April 2026) HOME moves any species
+  in the Lumiose or Hyperspace Pokédex into Legends: Z-A, one way. GO has released shiny Groudon,
+  Kyogre, Rayquaza, Heatran, Darkrai, Keldeo, Meloetta, Genesect in every Drive, Xerneas, Yveltal,
+  Diancie, Meltan and Melmetal; shiny Zygarde came to Generation 7 in 2018 and changes Forme
+  freely once it leaves Generation 7 (PKHeX FormInfo), shiny Zeraora was a 2020 HOME gift
+  ([Serebii 807](https://www.serebii.net/events/dex/807.shtml)), and shiny Volcanion a 2026 HOME
+  release. Keldeo's Resolute Form and Genesect's Drives are free Forme changes.
 - Mega and Primal records are battle states with no `storableIn`, so their locks need no review.
 
 `shinyReleased` corrections from pokepc TASK-266 (2026-10-12): Volcanion (HOME released the shiny
