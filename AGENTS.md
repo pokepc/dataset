@@ -15,24 +15,10 @@ and `src/lib` follow the v8 model in the
 
 Create and update Backlog records with the `backlog` CLI rather than editing their files.
 
-## Backport data changes to 7.x
+## The 7.x line
 
-The PokéPC app still depends on v7, and v8 breaks it, so data changes it consumes (new or corrected
-records and fields, presets, flags, schema additions, editor support) are backported to the `7.x`
-branch in the same session. Breaking v8-only work (layout, i18n split, mods) is not.
-
-- Work in a separate worktree (`git worktree add ../<dir> 7.x`) so this checkout stays on `main`,
-  and cherry-pick with `-x`, one commit per `main` commit, in order.
-- Translate rather than copy where the layouts differ: v7 keeps text inline in records (no
-  `data/i18n/`), modern presets use `schemaVersion: 1` with `name`, `description` and box `name`,
-  docs live in `docs/*.md` without Backlog frontmatter, and editor code uses `Pkds.*` types and
-  `game.name` instead of `englishName()`.
-- Run `pnpm typecheck && pnpm test` there and in `apps/editor`. A fresh worktree needs
-  `git -c protocol.file.allow=always submodule update --init --reference <this checkout>/src/upstreams/projectpokemon-champout`,
-  or the Champions parser tests fail on a missing `masterdata/` file. The submodule then blocks a
-  plain `git worktree remove`; once `git status` there is clean, use `--force`.
-- `7.x` releases publish under the `latest-v7` npm dist-tag. Never push, tag or publish without
-  being asked.
+The `7.x` branch receives no more backports (2026-10-13). PokéPC moves to v8 after its PC v7
+release, and until then the dataset takes no further changes unless the user asks for one.
 
 Before editing Pokémon availability data, schemas, parsers, or editor behavior, read the
 [canonical availability field definitions](backlog/docs/reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md).
