@@ -3,7 +3,7 @@ id: doc-7
 title: Pokémon availability fields
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-13 00:30'
+updated_date: '2026-10-13 04:14'
 ---
 This is the canonical field reference for humans and agents editing `data/pokemon/*.json`, the
 schemas, the editor, and the availability tools. These fields are game-independent base data; they
@@ -202,7 +202,7 @@ shiny by transfer or distribution.
   on unreleased records. The editor only offers storable games, and removing a game from
   `storableIn` on the game page also removes it here.
 - The field follows the `<condition>In` naming of the other per-game arrays, as does
-  `linkRequiredIn` (planned in pokepc TASK-271).
+  `linkRequiredIn`.
 
 | Record             | Games                       | Evidence                                                                                                                                                                                        |
 | ------------------ | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -311,6 +311,38 @@ Locks reviewed that stay available, because a legal shiny can still arrive:
 
 `shinyReleased` corrections from pokepc TASK-266 (2026-10-12): Volcanion (HOME released the shiny
 on 2026-04-27) and the Original and World Cap Pikachu GO costumes are now `true`.
+
+## Link-required routes
+
+| Field            | Meaning                                                                                                                                                                                                                                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `linkRequiredIn` | Games in `obtainableIn` where every ordinary route needs communication with another player or core-series game: a Union Circle encounter hosted in the other version, a raid or Dynamax Adventure hosted by the other version, or a bonus unlocked by another game's save data or Pokémon. It never covers trades. |
+
+`obtainableIn` deliberately counts ordinary multiplayer encounters, so Bagon looks native in
+Scarlet even though Scarlet players can only meet it in a Violet player's Union Circle. Consumers
+that tell a trainer what needs another player read `linkRequiredIn` for these routes and the
+`games` scope of `trade` evolution methods (see
+[evolution methods](doc-8%20-%20Pok%C3%A9mon-evolution-methods.md)) for trade evolutions.
+
+- The field is optional and omitted when empty. The integrity tests keep it a non-empty,
+  duplicate-free subset of `obtainableIn`. The editor only offers obtainable games, and removing a
+  game from `obtainableIn` on the game page also removes it here.
+- Source: every game cell of the Bulbapedia main availability table whose label carries the `CC`
+  prefix ("requires some form of communication with another core series game"), intersected with
+  `obtainableIn`. The first pass (pokepc TASK-271, 2026-10-13, table snapshot of 2026-09-22) set
+  it on 114 records: the Scarlet and Violet version exclusives and their families, both
+  versions' Paradox Pokémon, the Snacksworth legends of the other version, Sword and Shield Dynamax
+  Adventure legends of the other version, and older communication routes such as the Emerald Johto
+  first partners, Generation 4 Regigigas and Spiritomb, the Black 2 and White 2 Memory Link
+  encounters, the Legends: Arceus Darkrai and Shaymin save-data bonuses, and the Brilliant Diamond
+  and Shining Pearl Mew, Jirachi and Arceus save-data bonuses. Spot checks against Serebii's
+  Scarlet and Violet locations agree (Bagon, Great Tusk and Drifloon are trade-only in the other
+  version).
+- Palafin stays out: Union Circle evolves Finizen, but Palafin is also caught in 5-star Tera Raid
+  Battles in both versions ([Serebii](https://www.serebii.net/pokedex-sv/palafin/)). Event-only
+  `CCEV` cells (Walking Wake, Iron Leaves) are `eventOnlyIn` routes and stay out too.
+- Refresh it with the same rule when the source table changes; a cell the table leaves blank is
+  unknown, not proof that no link is needed.
 
 ## Related Pokémon fields
 

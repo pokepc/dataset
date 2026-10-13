@@ -151,6 +151,7 @@ describe('pokemon-logic.server', () => {
         eventOnlyIn: [],
         shinyLockedIn: [],
         shinyUnavailableIn: ['gold', 'unknown'],
+        linkRequiredIn: [],
       }),
     )
 
@@ -167,6 +168,7 @@ describe('pokemon-logic.server', () => {
         eventOnlyIn: [],
         shinyLockedIn: [],
         shinyUnavailableIn: ['gold'],
+        linkRequiredIn: [],
       },
     })
     expect(mocks.writeDatasetFile).toHaveBeenCalledWith(
@@ -179,6 +181,7 @@ describe('pokemon-logic.server', () => {
         eventOnlyIn: [],
         shinyLockedIn: undefined,
         shinyUnavailableIn: ['gold'],
+        linkRequiredIn: undefined,
       }),
       'pokemon/pikachu.json',
       false,

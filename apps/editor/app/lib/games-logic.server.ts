@@ -352,6 +352,13 @@ export async function saveGameAvailabilityFromForm(
     if (JSON.stringify(nextObtainable) !== JSON.stringify(currentPokemon.obtainableIn)) {
       currentPokemon.obtainableIn = nextObtainable
       didChange = true
+      // linkRequiredIn only covers games with a native route.
+      if (currentPokemon.linkRequiredIn) {
+        const nextLinkRequired = currentPokemon.linkRequiredIn.filter((id) =>
+          nextObtainable.includes(id),
+        )
+        currentPokemon.linkRequiredIn = nextLinkRequired.length > 0 ? nextLinkRequired : undefined
+      }
     }
 
     const nextStorable = normalizeGameMembership(

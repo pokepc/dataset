@@ -567,6 +567,19 @@ export default function PokemonPage({ loaderData }: Route.ComponentProps) {
                     allowedIds={draft.storableIn}
                   />
                 </div>
+
+                <div className="space-y-2">
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    {availabilityTitle('Link Required In', draft.linkRequiredIn.length)}
+                  </h3>
+                  <GameSelectorMultiSortable
+                    value={draft.linkRequiredIn}
+                    onChange={(value) => updateAvailabilityField('linkRequiredIn', value)}
+                    options={gameOptions}
+                    mode="games"
+                    allowedIds={draft.obtainableIn}
+                  />
+                </div>
               </div>
             </div>
 

@@ -64,6 +64,32 @@ describe('Validate pokemon/*.json data', () => {
     ).toEqual([])
   })
 
+  it('should keep linkRequiredIn a non-empty, duplicate-free subset of obtainableIn', () => {
+    expect(
+      recordList.flatMap((record) => {
+        const games = record.linkRequiredIn
+        if (games === undefined) return []
+        if (games.length === 0) return [`${record.id}: empty`]
+        return [
+          ...games
+            .filter((gameId) => !record.obtainableIn.includes(gameId))
+            .map((gameId) => `${record.id}: ${gameId} is not in obtainableIn`),
+          ...(new Set(games).size === games.length ? [] : [`${record.id}: duplicates`]),
+        ]
+      }),
+    ).toEqual([])
+  })
+
+  it.each([
+    ['bagon', ['sv-s']],
+    ['larvitar', ['sv-v']],
+    ['shaymin', ['la']],
+    // Union Circle evolves Finizen, but Palafin is also caught in solo 5-star Tera Raids.
+    ['palafin', undefined],
+  ])('should record the Scarlet and Violet link-required routes of %s', (id, games) => {
+    expect(recordList.find((pokemon) => pokemon.id === id)!.linkRequiredIn).toEqual(games)
+  })
+
   it('should leave shinyUnavailableIn to shinyReleased for records with no released shiny', () => {
     expect(
       recordList
@@ -189,6 +215,7 @@ describe('Validate pokemon/*.json data references', () => {
         ...(record.transferOnlyIn ?? []),
         ...(record.shinyLockedIn ?? []),
         ...(record.shinyUnavailableIn ?? []),
+        ...(record.linkRequiredIn ?? []),
       ]
       for (const ref of allRefs) {
         expect(gameMap.get(ref)).toBeDefined()

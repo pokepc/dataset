@@ -336,6 +336,7 @@ export const pokemonSchema = z.strictObject({
   eventOnlyIn: z.array(slugSchema), // obtainable via in-game events, including GO event-gated research/pass rewards; disjoint from obtainableIn and transferOnlyIn
   shinyLockedIn: z.array(slugSchema).optional(), // native acquisition is shiny-locked; does not prohibit imported shinies
   shinyUnavailableIn: z.array(slugSchema).optional(), // storable games where no legal shiny of this form can exist by any route; subset of storableIn
+  linkRequiredIn: z.array(slugSchema).optional(), // obtainable games where every native route needs another player or game (Union Circle, other-version raids, save data); subset of obtainableIn
   shinyReleased: z.boolean(), // a legal shiny of this form has been released somewhere
   shinyBase: slugSchema.optional(), // shared shiny appearance reference, not availability inheritance
   // -------------------

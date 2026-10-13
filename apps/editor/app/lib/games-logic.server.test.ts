@@ -63,6 +63,7 @@ function createPokemon(
     transferOnlyIn: overrides.transferOnlyIn ?? [],
     eventOnlyIn: overrides.eventOnlyIn ?? [],
     shinyLockedIn: overrides.shinyLockedIn,
+    linkRequiredIn: overrides.linkRequiredIn,
     forms: overrides.forms,
     baseSpecies: overrides.baseSpecies,
     hasGenderDifferences: overrides.hasGenderDifferences ?? false,
@@ -269,6 +270,7 @@ describe('games-logic.server', () => {
         obtainableIn: ['gen1'],
         storableIn: ['gen1'],
         shinyLockedIn: ['gen1'],
+        linkRequiredIn: ['gen1'],
       }),
       beta: createPokemon({
         id: 'beta',
@@ -332,6 +334,7 @@ describe('games-logic.server', () => {
         obtainableIn: [],
         storableIn: [],
         shinyLockedIn: undefined,
+        linkRequiredIn: undefined,
       }),
     })
     expect(writes).toContainEqual({

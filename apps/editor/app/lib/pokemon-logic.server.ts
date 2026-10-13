@@ -24,6 +24,7 @@ const availabilitySchema = pokemonSchema.pick({
   eventOnlyIn: true,
   shinyLockedIn: true,
   shinyUnavailableIn: true,
+  linkRequiredIn: true,
 })
 
 function buildPokemonPageGameOptions(allGames: Pkds.Game[]) {
@@ -78,6 +79,7 @@ export type SavePokemonAvailabilityResult =
         eventOnlyIn: string[]
         shinyLockedIn: string[]
         shinyUnavailableIn: string[]
+        linkRequiredIn: string[]
       }
     }
 
@@ -149,6 +151,9 @@ export function savePokemonAvailabilityFromForm(formData: FormData): SavePokemon
   if ((normalizedAvailability.shinyUnavailableIn?.length ?? 0) === 0) {
     normalizedAvailability.shinyUnavailableIn = undefined
   }
+  if ((normalizedAvailability.linkRequiredIn?.length ?? 0) === 0) {
+    normalizedAvailability.linkRequiredIn = undefined
+  }
 
   const updatedPokemon: Pkds.Pokemon = {
     ...currentPokemon,
@@ -164,6 +169,7 @@ export function savePokemonAvailabilityFromForm(formData: FormData): SavePokemon
       ...normalizedAvailability,
       shinyLockedIn: normalizedAvailability.shinyLockedIn ?? [],
       shinyUnavailableIn: normalizedAvailability.shinyUnavailableIn ?? [],
+      linkRequiredIn: normalizedAvailability.linkRequiredIn ?? [],
     },
   }
 }

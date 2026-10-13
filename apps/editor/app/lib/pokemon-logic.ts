@@ -8,6 +8,7 @@ export type AvailabilityState = {
   eventOnlyIn: string[]
   shinyLockedIn: string[]
   shinyUnavailableIn: string[]
+  linkRequiredIn: string[]
 }
 
 export function toAvailabilityState(pokemon: Pkds.Pokemon | TranslatedPokemon): AvailabilityState {
@@ -22,6 +23,7 @@ export function toAvailabilityState(pokemon: Pkds.Pokemon | TranslatedPokemon): 
     eventOnlyIn: safeArray(pokemon.eventOnlyIn),
     shinyLockedIn: safeArray(pokemon.shinyLockedIn),
     shinyUnavailableIn: safeArray(pokemon.shinyUnavailableIn),
+    linkRequiredIn: safeArray(pokemon.linkRequiredIn),
   }
 }
 
@@ -47,6 +49,10 @@ export function sanitizeAvailabilityState(
   const shinyUnavailableIn = normalizeArray(input.shinyUnavailableIn).filter((id) =>
     storableIn.includes(id),
   )
+  // Only a game with a native route can need another player for it.
+  const linkRequiredIn = normalizeArray(input.linkRequiredIn).filter((id) =>
+    obtainableIn.includes(id),
+  )
 
   const rawDebutIn = typeof input.debutIn === 'string' ? input.debutIn : ''
   const debutCandidates = [
@@ -70,5 +76,6 @@ export function sanitizeAvailabilityState(
     eventOnlyIn,
     shinyLockedIn,
     shinyUnavailableIn,
+    linkRequiredIn,
   }
 }
