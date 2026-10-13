@@ -1,0 +1,524 @@
+[
+  {
+    "game": "bw-b",
+    "location": "unova-dreamyard",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 10,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-dreamyard",
+    "method": "dark-grass",
+    "minLevel": 48,
+    "maxLevel": 49,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-dreamyard",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 10,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-dreamyard",
+    "method": "dark-grass",
+    "minLevel": 48,
+    "maxLevel": 49,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-dreamyard",
+    "method": "walk",
+    "minLevel": 57,
+    "maxLevel": 58,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-dreamyard",
+    "method": "dark-grass",
+    "minLevel": 65,
+    "maxLevel": 66,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-dreamyard",
+    "method": "walk",
+    "minLevel": 57,
+    "maxLevel": 58,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-dreamyard",
+    "method": "dark-grass",
+    "minLevel": 65,
+    "maxLevel": 66,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-1"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-1"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-mirage-island-oras",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-mirage-mountain",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-mirage-island-oras",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-mirage-mountain",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-axews-eye",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-axews-eye",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-bridge-field",
+    "method": "overworld",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-bridge-field",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 12,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 10,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-seat",
+    "method": "overworld",
+    "minLevel": 33,
+    "maxLevel": 38,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-seat",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 9,
+    "conditions": ["max-den-rarity-special", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slumbering-weald",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slumbering-weald",
+    "method": "overworld",
+    "minLevel": 45,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "overworld",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-watchtower-ruins",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-axews-eye",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-axews-eye",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-bridge-field",
+    "method": "overworld",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-bridge-field",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 12,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 10,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-seat",
+    "method": "overworld",
+    "minLevel": 33,
+    "maxLevel": 38,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-seat",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 10,
+    "conditions": ["max-den-rarity-special", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slumbering-weald",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slumbering-weald",
+    "method": "overworld",
+    "minLevel": 45,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "overworld",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-watchtower-ruins",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  }
+]

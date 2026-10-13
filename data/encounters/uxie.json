@@ -1,0 +1,119 @@
+[
+  {
+    "game": "dp-d",
+    "location": "sinnoh-lake-acuity",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-lake-acuity",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-lake-acuity",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-nacrene-city",
+    "method": "static",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": ["story-progress-juniper-cave-of-being"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-nacrene-city",
+    "method": "static",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": ["story-progress-juniper-cave-of-being"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-nameless-cavern",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["time-04-00-to-19-59"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-nameless-cavern",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["time-04-00-to-19-59"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

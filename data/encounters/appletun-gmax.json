@@ -1,0 +1,20 @@
+[
+  {
+    "game": "swsh-sh",
+    "location": "galar-dappled-grove",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-loop-lagoon",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  }
+]

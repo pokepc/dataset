@@ -1,0 +1,92 @@
+[
+  {
+    "game": "col",
+    "location": "orre-realgam-tower",
+    "method": "snag",
+    "minLevel": 48,
+    "maxLevel": 48,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 24,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-215",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 22,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": ["johto-safari-blocks-peak-min-10", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": ["johto-safari-blocks-peak-min-10", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 44,
+    "maxLevel": 44,
+    "conditions": ["johto-safari-blocks-peak-min-10", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": ["johto-safari-blocks-peak-min-10", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": ["johto-safari-blocks-peak-min-10", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 44,
+    "maxLevel": 44,
+    "conditions": ["johto-safari-blocks-peak-min-10", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-12",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

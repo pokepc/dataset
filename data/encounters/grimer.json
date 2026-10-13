@@ -1,0 +1,830 @@
+[
+  {
+    "game": "rb-r",
+    "location": "kanto-pokemon-mansion",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-pokemon-mansion",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-pokemon-mansion",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-power-plant",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 37,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-celadon-city",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 24,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-celadon-city",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 24,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 29,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-celadon-city",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 24,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 33,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 33,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 29,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-r",
+    "location": "hoenn-fiery-path",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-fiery-path",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-celadon-city",
+    "method": "super-rod",
+    "minLevel": 30,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-pokemon-mansion",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-celadon-city",
+    "method": "super-rod",
+    "minLevel": 30,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-pokemon-mansion",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-fiery-path",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-phenac-city",
+    "method": "snag",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-212",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 20,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-212",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 20,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-212",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 26,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-celadon-city",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["radio-off", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 28,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-celadon-city",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["radio-off", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 28,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-17",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-castelia-sewers",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-castelia-sewers",
+    "method": "super-rod",
+    "minLevel": 40,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-castelia-sewers",
+    "method": "super-rod-spots",
+    "minLevel": 40,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-castelia-sewers",
+    "method": "surf",
+    "minLevel": 5,
+    "maxLevel": 15,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-castelia-sewers",
+    "method": "surf-spots",
+    "minLevel": 5,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-castelia-sewers",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-castelia-sewers",
+    "method": "super-rod",
+    "minLevel": 40,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-castelia-sewers",
+    "method": "super-rod-spots",
+    "minLevel": 40,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-castelia-sewers",
+    "method": "surf",
+    "minLevel": 5,
+    "maxLevel": 15,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-castelia-sewers",
+    "method": "surf-spots",
+    "minLevel": 5,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-fiery-path",
+    "method": "horde",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-pokemon-mansion",
+    "method": "overworld",
+    "minLevel": 39,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-power-plant",
+    "method": "overworld",
+    "minLevel": 37,
+    "maxLevel": 42,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

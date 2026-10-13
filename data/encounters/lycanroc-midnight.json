@@ -1,0 +1,245 @@
+[
+  {
+    "game": "sm-s",
+    "location": "alola-vast-poni-canyon",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-vast-poni-canyon",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-vast-poni-canyon",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-vast-poni-canyon",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-challenge-road",
+    "method": "wanderer",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-challenge-road",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "wanderer",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-fields-of-honor",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-fields-of-honor",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-fields-of-honor",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  }
+]

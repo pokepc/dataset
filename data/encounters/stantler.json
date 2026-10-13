@@ -1,0 +1,344 @@
+[
+  {
+    "game": "gs-g",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 16,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-snagem-hideout",
+    "method": "snag-rematch",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-the-under",
+    "method": "snag",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-altering-cave",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-altering-cave",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-safari-zone",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 39,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-207",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 7,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-207",
+    "method": "walk",
+    "minLevel": 5,
+    "maxLevel": 7,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["johto-safari-blocks-plains-min-3", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": ["johto-safari-blocks-forest-min-3", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-36",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-37",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["johto-safari-blocks-plains-min-3", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": ["johto-safari-blocks-forest-min-3", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-abundant-shrine",
+    "method": "walk",
+    "minLevel": 48,
+    "maxLevel": 48,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-abundant-shrine",
+    "method": "dark-grass",
+    "minLevel": 58,
+    "maxLevel": 58,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-abundant-shrine",
+    "method": "walk",
+    "minLevel": 48,
+    "maxLevel": 48,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-abundant-shrine",
+    "method": "dark-grass",
+    "minLevel": 58,
+    "maxLevel": 58,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-mirage-mountain",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-mirage-mountain",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

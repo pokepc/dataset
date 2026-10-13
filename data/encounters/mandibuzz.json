@@ -1,0 +1,623 @@
+[
+  {
+    "game": "bw-b",
+    "location": "unova-route-11",
+    "method": "dark-grass",
+    "minLevel": 58,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-village-bridge",
+    "method": "dark-grass",
+    "minLevel": 58,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-route-4",
+    "method": "static",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-poni-plains",
+    "method": "bubbling-spots",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-poni-plains",
+    "method": "bubbling-spots",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-bridge-field",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-bridge-field",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-bridge-field",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-bridge-field",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "wanderer",
+    "minLevel": 26,
+    "maxLevel": 26,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-challenge-road",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld-flying",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-lake-of-outrage",
+    "method": "overworld",
+    "minLevel": 55,
+    "maxLevel": 58,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-lake-of-outrage",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-loop-lagoon",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-loop-lagoon",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-loop-lagoon",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-potbottom-desert",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stepping-stone-sea",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stepping-stone-sea",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stepping-stone-sea",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-west-lake-axewell",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-west-lake-axewell",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-workout-sea",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-workout-sea",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-workout-sea",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  }
+]

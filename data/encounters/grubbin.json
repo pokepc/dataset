@@ -1,0 +1,524 @@
+[
+  {
+    "game": "sm-s",
+    "location": "alola-route-1",
+    "method": "walk",
+    "minLevel": 3,
+    "maxLevel": 5,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-route-4",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 14,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-route-5",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-route-1",
+    "method": "walk",
+    "minLevel": 3,
+    "maxLevel": 5,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-route-4",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 14,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-route-5",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-blush-mountain",
+    "method": "sos",
+    "minLevel": 29,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-1",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 3,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-4",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 14,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-5",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-blush-mountain",
+    "method": "sos",
+    "minLevel": 29,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-1",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 3,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-4",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 14,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-5",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-bridge-field",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dappled-grove",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 12,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 10,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 16,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 16,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-route-1",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 5,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slumbering-weald",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 3,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slumbering-weald",
+    "method": "overworld",
+    "minLevel": 2,
+    "maxLevel": 3,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-watchtower-ruins",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 14,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-watchtower-ruins",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-bridge-field",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dappled-grove",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dappled-grove",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 12,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 10,
+    "maxLevel": 15,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 16,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 16,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-route-1",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 5,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slumbering-weald",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 3,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slumbering-weald",
+    "method": "overworld",
+    "minLevel": 2,
+    "maxLevel": 3,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-watchtower-ruins",
+    "method": "walk",
+    "minLevel": 11,
+    "maxLevel": 14,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-watchtower-ruins",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  }
+]

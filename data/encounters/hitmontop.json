@@ -1,0 +1,254 @@
+[
+  {
+    "game": "col",
+    "location": "orre-agate-village",
+    "method": "snag",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-shadow-pokemon-lab",
+    "method": "snag-rematch",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-snagem-hideout",
+    "method": "snag-rematch",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-ballimere-lake",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-frigid-sea",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-frostpoint-field",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-bed",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-lake-of-outrage",
+    "method": "overworld",
+    "minLevel": 55,
+    "maxLevel": 58,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-lake-of-outrage",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-snowslide-slope",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-south-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-ballimere-lake",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-frigid-sea",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-frostpoint-field",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-bed",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-lake-of-outrage",
+    "method": "overworld",
+    "minLevel": 55,
+    "maxLevel": 58,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-lake-of-outrage",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-snowslide-slope",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-south-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-south-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  }
+]

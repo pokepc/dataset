@@ -1,0 +1,386 @@
+[
+  {
+    "game": "dp-d",
+    "location": "sinnoh-iron-island",
+    "method": "gift-egg",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "conditions": ["story-progress-beat-team-galactic-iron-island"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-iron-island",
+    "method": "gift-egg",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "conditions": ["story-progress-beat-team-galactic-iron-island"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-iron-island",
+    "method": "gift-egg",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "conditions": ["story-progress-beat-team-galactic-iron-island"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": [
+      "johto-safari-blocks-forest-min-28",
+      "johto-safari-blocks-peak-min-42",
+      "time-morning"
+    ],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": [
+      "johto-safari-blocks-forest-min-28",
+      "johto-safari-blocks-peak-min-42",
+      "time-night"
+    ],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": [
+      "johto-safari-blocks-forest-min-28",
+      "johto-safari-blocks-peak-min-42",
+      "time-day"
+    ],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": [
+      "johto-safari-blocks-forest-min-28",
+      "johto-safari-blocks-peak-min-42",
+      "time-morning"
+    ],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": [
+      "johto-safari-blocks-forest-min-28",
+      "johto-safari-blocks-peak-min-42",
+      "time-night"
+    ],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": [
+      "johto-safari-blocks-forest-min-28",
+      "johto-safari-blocks-peak-min-42",
+      "time-day"
+    ],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-challengers-cave",
+    "method": "walk",
+    "minLevel": 49,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-challengers-cave",
+    "method": "walk",
+    "minLevel": 49,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-floccesy-ranch",
+    "method": "walk",
+    "minLevel": 5,
+    "maxLevel": 7,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-floccesy-ranch",
+    "method": "walk",
+    "minLevel": 5,
+    "maxLevel": 7,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-22",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 7,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-22",
+    "method": "yellow-flowers",
+    "minLevel": 25,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-22",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 7,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-22",
+    "method": "yellow-flowers",
+    "minLevel": 25,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-poni-grove",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-poni-grove",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-poni-grove",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-poni-grove",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "overworld",
+    "minLevel": 28,
+    "maxLevel": 32,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-seat",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-roaring-sea-caves",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "overworld",
+    "minLevel": 28,
+    "maxLevel": 32,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-seat",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-roaring-sea-caves",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  }
+]

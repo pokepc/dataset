@@ -91,7 +91,7 @@ function indexed(rows: CsvRow[], table: string): Map<number, CsvRow> {
 }
 
 // A DLC version is specific to one base version, including paired expansions.
-const dlcBaseVersions: Record<string, string> = {
+export const dlcBaseVersions: Record<string, string> = {
   'the-isle-of-armor-sword': 'sword',
   'the-isle-of-armor-shield': 'shield',
   'the-crown-tundra-sword': 'sword',

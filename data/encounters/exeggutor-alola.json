@@ -1,0 +1,92 @@
+[
+  {
+    "game": "sm-s",
+    "location": "alola-exeggutor-island",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-exeggutor-island",
+    "method": "static",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-exeggutor-island",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-exeggutor-island",
+    "method": "static",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-exeggutor-island",
+    "method": "walk",
+    "minLevel": 42,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-exeggutor-island",
+    "method": "walk",
+    "minLevel": 42,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-indigo-plateau",
+    "method": "npc-trade",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-indigo-plateau",
+    "method": "npc-trade",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-fields-of-honor",
+    "method": "gift",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["alolan-diglett-found-75"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-fields-of-honor",
+    "method": "gift",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["alolan-diglett-found-75"],
+    "source": "pokeapi"
+  }
+]

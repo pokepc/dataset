@@ -1,0 +1,461 @@
+[
+  {
+    "game": "rs-r",
+    "location": "hoenn-granite-cave",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 11,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-r",
+    "location": "hoenn-rustboro-city",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-slakoth"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-r",
+    "location": "hoenn-victory-road",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-granite-cave",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 11,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-rustboro-city",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-slakoth"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-victory-road",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-phenac-city",
+    "method": "snag",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-granite-cave",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 11,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-victory-road",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-onbs",
+    "method": "snag",
+    "minLevel": 18,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-225",
+    "method": "walk",
+    "minLevel": 50,
+    "maxLevel": 51,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-225",
+    "method": "walk",
+    "minLevel": 50,
+    "maxLevel": 51,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-225",
+    "method": "walk",
+    "minLevel": 48,
+    "maxLevel": 49,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 25,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 23,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 31,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 50,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-47",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 20,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-slowpoke-well",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 19,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-union-cave",
+    "method": "walk",
+    "minLevel": 5,
+    "maxLevel": 22,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 25,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 45,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-digletts-cave",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 19,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-mt-moon",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-rock-tunnel",
+    "method": "walk",
+    "minLevel": 12,
+    "maxLevel": 16,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 38,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-tohjo-falls",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 33,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 25,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 23,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 31,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 50,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-47",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 20,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-slowpoke-well",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 19,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-union-cave",
+    "method": "walk",
+    "minLevel": 5,
+    "maxLevel": 22,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 25,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 45,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-digletts-cave",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 19,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-mt-moon",
+    "method": "walk",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-rock-tunnel",
+    "method": "walk",
+    "minLevel": 12,
+    "maxLevel": 16,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 38,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-tohjo-falls",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 33,
+    "conditions": ["radio-hoenn"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-granite-cave",
+    "method": "horde",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-granite-cave",
+    "method": "horde",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-route-2",
+    "method": "bubbling-spots",
+    "minLevel": 9,
+    "maxLevel": 10,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-route-2",
+    "method": "bubbling-spots",
+    "minLevel": 9,
+    "maxLevel": 10,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-2",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 10,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-2",
+    "method": "bubbling-spots",
+    "minLevel": 7,
+    "maxLevel": 11,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-2",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 10,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-2",
+    "method": "bubbling-spots",
+    "minLevel": 7,
+    "maxLevel": 11,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

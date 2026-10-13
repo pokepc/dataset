@@ -1,0 +1,146 @@
+[
+  {
+    "game": "rs-r",
+    "location": "hoenn-fortree-city",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-pikachu"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-r",
+    "location": "hoenn-route-116",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-fortree-city",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-pikachu"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-route-116",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-route-116",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 40,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-castelia-city",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-castelia-city",
+    "method": "dark-grass",
+    "minLevel": 16,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-4",
+    "method": "yellow-flowers",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-4",
+    "method": "red-flowers",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-4",
+    "method": "yellow-flowers",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-4",
+    "method": "red-flowers",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-route-116",
+    "method": "horde",
+    "minLevel": 4,
+    "maxLevel": 4,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-route-116",
+    "method": "horde",
+    "minLevel": 4,
+    "maxLevel": 4,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

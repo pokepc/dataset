@@ -1,0 +1,56 @@
+[
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "wanderer",
+    "minLevel": 56,
+    "maxLevel": 56,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-watchtower-ruins",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "wanderer",
+    "minLevel": 56,
+    "maxLevel": 56,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-watchtower-ruins",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  }
+]

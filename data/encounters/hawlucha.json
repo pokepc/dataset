@@ -1,0 +1,839 @@
+[
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-10",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-10",
+    "method": "yellow-flowers",
+    "minLevel": 21,
+    "maxLevel": 21,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-10",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-10",
+    "method": "yellow-flowers",
+    "minLevel": 21,
+    "maxLevel": 21,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-2",
+    "method": "npc-trade",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-3",
+    "method": "walk",
+    "minLevel": 9,
+    "maxLevel": 12,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-2",
+    "method": "npc-trade",
+    "minLevel": 8,
+    "maxLevel": 8,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-3",
+    "method": "walk",
+    "minLevel": 9,
+    "maxLevel": 12,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-east-lake-axewell",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-cap",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-route-6",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-east-lake-axewell",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-cap",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-raining"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-sandstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-thunderstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-common", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-north-lake-miloch",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "max-raid",
+    "minLevel": 55,
+    "maxLevel": 60,
+    "conditions": ["max-den-rarity-rare", "max-den-rating-5-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-route-6",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

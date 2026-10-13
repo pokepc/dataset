@@ -1,0 +1,479 @@
+[
+  {
+    "game": "rb-r",
+    "location": "kanto-cinnabar-island",
+    "method": "npc-trade",
+    "minLevel": 28,
+    "maxLevel": 100,
+    "conditions": ["trade-ponyta"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-r",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-cinnabar-island",
+    "method": "npc-trade",
+    "minLevel": 28,
+    "maxLevel": 100,
+    "conditions": ["trade-ponyta"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 26,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 27,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 27,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-cinnabar-island",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-ponyta"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-icefall-cave",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-icefall-cave",
+    "method": "surf",
+    "minLevel": 5,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 34,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-seafoam-islands",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-cinnabar-island",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-ponyta"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-icefall-cave",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-icefall-cave",
+    "method": "surf",
+    "minLevel": 5,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 34,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-seafoam-islands",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-phenac-city",
+    "method": "snag",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-226",
+    "method": "surf",
+    "minLevel": 35,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-230",
+    "method": "surf",
+    "minLevel": 35,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-47",
+    "method": "surf",
+    "minLevel": 10,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 35,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-seafoam-islands",
+    "method": "surf",
+    "minLevel": 30,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-47",
+    "method": "surf",
+    "minLevel": 10,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-whirl-islands",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-seafoam-islands",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 35,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-seafoam-islands",
+    "method": "surf",
+    "minLevel": 30,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-giant-chasm",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-giant-chasm",
+    "method": "surf-spots",
+    "minLevel": 25,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-giant-chasm",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-giant-chasm",
+    "method": "surf-spots",
+    "minLevel": 25,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-giant-chasm",
+    "method": "surf",
+    "minLevel": 35,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-giant-chasm",
+    "method": "surf-spots",
+    "minLevel": 35,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-seaside-cave",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-seaside-cave",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-seaside-cave",
+    "method": "surf-spots",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-giant-chasm",
+    "method": "surf",
+    "minLevel": 35,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-giant-chasm",
+    "method": "surf-spots",
+    "minLevel": 35,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-seaside-cave",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-seaside-cave",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-seaside-cave",
+    "method": "surf-spots",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-seaward-cave",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-seaward-cave",
+    "method": "surf",
+    "minLevel": 15,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-seafoam-islands",
+    "method": "overworld",
+    "minLevel": 39,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-seafoam-islands",
+    "method": "overworld",
+    "minLevel": 39,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

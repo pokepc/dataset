@@ -1,0 +1,110 @@
+[
+  {
+    "game": "pt",
+    "location": "sinnoh-distortion-world",
+    "method": "static",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-turnback-cave",
+    "method": "static",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": ["other-giratina-not-caught-in-distortion-world"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-sinjoh-ruins",
+    "method": "static",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "conditions": ["other-event-arceus-in-party"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-sinjoh-ruins",
+    "method": "static",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "conditions": ["other-event-arceus-in-party"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-soaring-in-the-sky",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["other-dialga-or-palkia-in-party", "weekday-sunday"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-soaring-in-the-sky",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["other-dialga-or-palkia-in-party", "weekday-sunday"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["other-dialga-palkia-in-party"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["other-dialga-palkia-in-party"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

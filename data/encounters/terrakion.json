@@ -1,0 +1,146 @@
+[
+  {
+    "game": "bw-b",
+    "location": "unova-victory-road-bw",
+    "method": "static",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-victory-road-bw",
+    "method": "static",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-route-22",
+    "method": "static",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-route-22",
+    "method": "static",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": ["special-encounter-couldnt-capture-before"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-route-22",
+    "method": "static",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-route-22",
+    "method": "static",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": ["special-encounter-couldnt-capture-before"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-pathless-plain",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["weekday-saturday"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-pathless-plain",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["weekday-tuesday"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-pathless-plain",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["weekday-saturday"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-pathless-plain",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["weekday-tuesday"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-lakeside-cave",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": ["other-find-50-cavern-footprints"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-lakeside-cave",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": ["other-find-50-cavern-footprints"],
+    "source": "pokeapi"
+  }
+]

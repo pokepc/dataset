@@ -197,6 +197,22 @@ export const locationSchema = z.strictObject({
   pokeApiId: z.number().int().positive().nullable(),
 })
 
+/** One aggregated way to meet a Pokémon in one game, from `data/encounters/<pokemonId>.json`. */
+export const encounterSchema = z
+  .strictObject({
+    game: slugSchema, // individual game id; DLC encounters use their base game
+    location: slugSchema, // data/locations.json id
+    method: slugSchema, // PokéAPI encounter method identifier, such as walk, surf or gift
+    minLevel: z.number().int().min(1).max(100),
+    maxLevel: z.number().int().min(1).max(100),
+    // PokéAPI condition values, such as time-night; empty when unconditional. Some exceed slug length.
+    conditions: z.array(z.string().regex(/^[a-z0-9-]+$/)),
+    source: z.enum(['pokeapi']),
+  })
+  .refine((encounter) => encounter.minLevel <= encounter.maxLevel, {
+    message: 'minLevel must not exceed maxLevel',
+  })
+
 export const markSchema = z.strictObject({
   id: slugSchema,
   gen,
@@ -497,6 +513,7 @@ export const generationsSchema = z.array(generationSchema)
 export const itemsSchema = z.array(itemSchema)
 export const languagesSchema = z.array(languageSchema)
 export const locationsSchema = z.array(locationSchema)
+export const encountersSchema = z.array(encounterSchema)
 export const marksSchema = z.array(markSchema)
 export const movesSchema = z.array(moveSchema)
 export const naturesSchema = z.array(natureSchema)

@@ -1,0 +1,56 @@
+[
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-saffron-city",
+    "method": "npc-trade",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-saffron-city",
+    "method": "npc-trade",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-fields-of-honor",
+    "method": "gift",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["alolan-diglett-found-40"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-fields-of-honor",
+    "method": "gift",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["alolan-diglett-found-40"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

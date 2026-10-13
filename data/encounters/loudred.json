@@ -1,0 +1,299 @@
+[
+  {
+    "game": "rs-r",
+    "location": "hoenn-victory-road",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-victory-road",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-desert-underpass",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-victory-road",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-mt-coronet",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 40,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-mt-coronet",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 40,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-mt-coronet",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 40,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-2"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-2"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-victory-road",
+    "method": "horde",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-victory-road",
+    "method": "horde",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-brawlers-cave",
+    "method": "wanderer",
+    "minLevel": 26,
+    "maxLevel": 26,
+    "conditions": ["story-progress-before-hall-of-fame"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-brawlers-cave",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-courageous-cavern",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-courageous-cavern",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-courageous-cavern",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-soothing-wetlands",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-soothing-wetlands",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-soothing-wetlands",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-brawlers-cave",
+    "method": "wanderer",
+    "minLevel": 26,
+    "maxLevel": 26,
+    "conditions": ["story-progress-before-hall-of-fame"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-brawlers-cave",
+    "method": "wanderer",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-courageous-cavern",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-courageous-cavern",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-courageous-cavern",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-soothing-wetlands",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-soothing-wetlands",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-soothing-wetlands",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 35,
+    "maxLevel": 40,
+    "conditions": ["max-den-rarity-common", "max-den-rating-3-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-training-lowlands",
+    "method": "max-raid",
+    "minLevel": 45,
+    "maxLevel": 50,
+    "conditions": ["max-den-rarity-common", "max-den-rating-4-star"],
+    "source": "pokeapi"
+  }
+]

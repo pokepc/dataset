@@ -1,0 +1,119 @@
+[
+  {
+    "game": "gs-g",
+    "location": "johto-bell-tower",
+    "method": "static",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-bell-tower",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-bell-tower",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-mt-battle",
+    "method": "gift",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": ["other-complete-mt-battle", "story-progress-catch-all-shadow-pokemon"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-navel-rock",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-navel-rock",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "kanto-navel-rock",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-bell-tower",
+    "method": "static",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-bell-tower",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-sea-mauville",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["item-clear-bell"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

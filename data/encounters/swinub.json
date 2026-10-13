@@ -1,0 +1,749 @@
+[
+  {
+    "game": "gs-g",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 25,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 25,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 25,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 25,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 25,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 25,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 26,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 26,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-icefall-cave",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-icefall-cave",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-phenac-city",
+    "method": "snag",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-217",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 34,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-217",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 34,
+    "conditions": ["swarm-yes"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-acuity-lakefront",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 34,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-217",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-217",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 33,
+    "conditions": ["swarm-no"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-217",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 34,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 22,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 24,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 22,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-ice-path",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 24,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-tapu-village",
+    "method": "island-scan",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-tapu-village",
+    "method": "island-scan",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-tapu-village",
+    "method": "island-scan",
+    "minLevel": 33,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-tapu-village",
+    "method": "island-scan",
+    "minLevel": 33,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 35,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 35,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 9,
+    "conditions": ["max-den-rarity-special", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 9,
+    "conditions": ["max-den-rarity-special", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld",
+    "minLevel": 42,
+    "maxLevel": 47,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-dusty-bowl",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-frigid-sea",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-frigid-sea",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-bed",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-bed",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "overworld",
+    "minLevel": 42,
+    "maxLevel": 47,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-mirror",
+    "method": "overworld",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 35,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 35,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-giants-seat",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["story-progress-before-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-hammerlocke-hills",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 10,
+    "conditions": ["max-den-rarity-special", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 7,
+    "maxLevel": 10,
+    "conditions": ["max-den-rarity-special", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-rolling-fields",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["story-progress-hall-of-fame", "weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-fog"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-intense-sun"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-normal"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-overcast"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-snowing"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "walk",
+    "minLevel": 60,
+    "maxLevel": 65,
+    "conditions": ["weather-snowstorm"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-slippery-slope",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-snowslide-slope",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-snowslide-slope",
+    "method": "max-raid",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": ["max-den-rarity-common", "max-den-rating-2-star"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-stony-wilderness",
+    "method": "max-raid",
+    "minLevel": 15,
+    "maxLevel": 20,
+    "conditions": ["max-den-rarity-common", "max-den-rating-1-star"],
+    "source": "pokeapi"
+  }
+]

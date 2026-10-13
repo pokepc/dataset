@@ -1,0 +1,785 @@
+[
+  {
+    "game": "rb-b",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 10,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 10,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["swarm-no", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["swarm-no", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["swarm-no", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-35",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["swarm-no", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 18,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-11",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-bond-bridge",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-canyon-entrance",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-cape-brink",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-five-isle-meadow",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-kindle-road",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 10,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 10,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-ruin-valley",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-sevault-canyon",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-treasure-beach",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-water-path",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-bond-bridge",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-canyon-entrance",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-cape-brink",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-five-isle-meadow",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-kindle-road",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 10,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 10,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-ruin-valley",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-sevault-canyon",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-treasure-beach",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-water-path",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-battle-frontier",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-skitty"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-phenac-city",
+    "method": "snag",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-trophy-garden",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 18,
+    "conditions": ["backlot-mentioned", "story-progress-national-dex"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-trophy-garden",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 18,
+    "conditions": ["backlot-mentioned", "story-progress-national-dex"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-trophy-garden",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": ["backlot-mentioned", "story-progress-national-dex"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["radio-off", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["swarm-no"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-38",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["radio-off", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-39",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["radio-off", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-5",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["radio-off", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 13,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["radio-off", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-6",
+    "method": "walk",
+    "minLevel": 14,
+    "maxLevel": 14,
+    "conditions": ["radio-off", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-8",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-route-24",
+    "method": "overworld",
+    "minLevel": 7,
+    "maxLevel": 12,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-route-25",
+    "method": "overworld",
+    "minLevel": 9,
+    "maxLevel": 14,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-turffield",
+    "method": "npc-trade",
+    "minLevel": 18,
+    "maxLevel": 18,
+    "conditions": ["trade-meowth-galar"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-turffield",
+    "method": "npc-trade",
+    "minLevel": 18,
+    "maxLevel": 18,
+    "conditions": ["trade-meowth-galar"],
+    "source": "pokeapi"
+  }
+]

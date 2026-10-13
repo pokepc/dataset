@@ -1,0 +1,236 @@
+[
+  {
+    "game": "rb-r",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 64,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-r",
+    "location": "kanto-safari-zone",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 64,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-safari-zone",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-route-18",
+    "method": "npc-trade",
+    "minLevel": 22,
+    "maxLevel": 100,
+    "conditions": ["trade-tangela"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-safari-zone",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 46,
+    "maxLevel": 48,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 46,
+    "maxLevel": 48,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 46,
+    "maxLevel": 48,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 49,
+    "maxLevel": 64,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-safari-zone",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 49,
+    "maxLevel": 64,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-safari-zone",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": ["johto-safari-blocks-plains-min-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 41,
+    "conditions": ["johto-safari-blocks-plains-min-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-11",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 29,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-route-11",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 29,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

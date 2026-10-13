@@ -1,0 +1,218 @@
+[
+  {
+    "game": "rb-r",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-11",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-11",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-11",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-berry-forest",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-berry-forest",
+    "method": "static",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-berry-forest",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-berry-forest",
+    "method": "static",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-cipher-key-lair",
+    "method": "snag",
+    "minLevel": 34,
+    "maxLevel": 34,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-forest-min-5", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-11",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-forest-min-5", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-11",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 16,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-poni-plains",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-poni-plains",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-hauoli-city",
+    "method": "static",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-hauoli-city",
+    "method": "static",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["story-progress-beat-olivias-trial"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-poni-plains",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-hauoli-city",
+    "method": "static",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-hauoli-city",
+    "method": "static",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["story-progress-beat-olivias-trial"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-poni-plains",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

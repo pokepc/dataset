@@ -1,0 +1,83 @@
+[
+  {
+    "game": "e",
+    "location": "hoenn-route-120",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-route-121",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-route-123",
+    "method": "walk",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 24,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-215",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 22,
+    "conditions": ["radar-on"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-1"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-15",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 36,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-15",
+    "method": "red-flowers",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-1"],
+    "source": "pokeapi"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "game": "c",
+    "location": "johto-bell-tower",
+    "method": "static",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-realgam-tower",
+    "method": "snag-rematch",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-the-under",
+    "method": "snag",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-the-under",
+    "method": "snag-rematch",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-25",
+    "method": "static",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-25",
+    "method": "static",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-trackless-forest",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["time-minute-40-to-59"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-trackless-forest",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["time-minute-40-to-59"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["other-raikou-entei-in-party"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": ["other-raikou-entei-in-party"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

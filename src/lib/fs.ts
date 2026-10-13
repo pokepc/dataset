@@ -19,6 +19,7 @@ import type {
   ClassicBoxPresetFile,
   CodeMapEntry,
   Color,
+  Encounter,
   Game,
   Generation,
   Item,
@@ -101,6 +102,12 @@ export function loadAllPokemon(): Pokemon[] {
 
 export function loadAllGames(): Game[] {
   return cached('allGames', () => joinEntityFiles<Game>('games', readIndexFile('games')))
+}
+
+/** Encounters of one Pokémon record, or an empty list when the dataset has none. */
+export function loadEncounters(pokemonId: string): Encounter[] {
+  const path = absDatasetFile(`encounters/${pokemonId}.json`)
+  return existsSync(path) ? readJsonFile<Encounter[]>(path) : []
 }
 
 export function loadAllPokedexes(): Pokedex[] {

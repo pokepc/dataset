@@ -1,0 +1,65 @@
+[
+  {
+    "game": "bw-b",
+    "location": "unova-dragonspiral-tower",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["special-encounter-couldnt-capture-before"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-ns-castle",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-dragonspiral-tower",
+    "method": "static",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": ["item-light-stone"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-fabled-cave",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["other-level-100-pokemon-in-party"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-space-wilds",
+    "method": "static",
+    "minLevel": 60,
+    "maxLevel": 60,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 70,
+    "maxLevel": 70,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

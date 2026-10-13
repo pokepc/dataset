@@ -1,0 +1,407 @@
+[
+  {
+    "game": "rb-r",
+    "location": "kanto-route-2",
+    "method": "npc-trade",
+    "minLevel": 8,
+    "maxLevel": 100,
+    "conditions": ["trade-abra"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-route-2",
+    "method": "npc-trade",
+    "minLevel": 8,
+    "maxLevel": 100,
+    "conditions": ["trade-abra"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-route-2",
+    "method": "npc-trade",
+    "minLevel": 9,
+    "maxLevel": 100,
+    "conditions": ["trade-clefairy"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-celadon-city",
+    "method": "gift",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["coins-3333"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-celadon-city",
+    "method": "gift",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["coins-3333"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-route-2",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-abra"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-route-2",
+    "method": "npc-trade",
+    "minLevel": 5,
+    "maxLevel": 100,
+    "conditions": ["trade-abra"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-citadark-isle",
+    "method": "snag",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-218",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 30,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-218",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 42,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-218",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": ["johto-safari-blocks-plains-min-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-celadon-city",
+    "method": "gift",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["coins-3333"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 16,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 45,
+    "conditions": ["johto-safari-blocks-plains-min-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-celadon-city",
+    "method": "gift",
+    "minLevel": 15,
+    "maxLevel": 15,
+    "conditions": ["coins-3333"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-21",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-reflection-cave",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 23,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-reflection-cave",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 23,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-hauoli-city",
+    "method": "sos",
+    "minLevel": 6,
+    "maxLevel": 9,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-hauoli-city",
+    "method": "sos",
+    "minLevel": 6,
+    "maxLevel": 9,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-route-11",
+    "method": "overworld",
+    "minLevel": 13,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-route-11",
+    "method": "overworld",
+    "minLevel": 13,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-spikemuth",
+    "method": "npc-trade",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["trade-obstagoon"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "dynamax-adventure",
+    "minLevel": 65,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-spikemuth",
+    "method": "npc-trade",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["trade-obstagoon"],
+    "source": "pokeapi"
+  }
+]

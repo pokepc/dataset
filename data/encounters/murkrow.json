@@ -1,0 +1,398 @@
+[
+  {
+    "game": "gs-g",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 19,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-18",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-shadow-pokemon-lab",
+    "method": "snag",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-lost-cave",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 22,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-eterna-forest",
+    "method": "walk",
+    "minLevel": 10,
+    "maxLevel": 11,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-lost-tower",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 21,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-forest-min-5", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-forest-min-5", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": ["johto-safari-blocks-water-min-10"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 19,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["johto-safari-blocks-inactive", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-forest-min-5", "time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-forest-min-5", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": ["johto-safari-blocks-water-min-10"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-16",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["radio-off", "time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-7",
+    "method": "walk",
+    "minLevel": 17,
+    "maxLevel": 17,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-abundant-shrine",
+    "method": "walk",
+    "minLevel": 48,
+    "maxLevel": 48,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-abundant-shrine",
+    "method": "dark-grass",
+    "minLevel": 58,
+    "maxLevel": 58,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-pinwheel-forest",
+    "method": "hidden-grotto",
+    "minLevel": 55,
+    "maxLevel": 59,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-pinwheel-forest",
+    "method": "hidden-grotto",
+    "minLevel": 55,
+    "maxLevel": 59,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-15",
+    "method": "horde",
+    "minLevel": 18,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-16",
+    "method": "horde",
+    "minLevel": 18,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-15",
+    "method": "horde",
+    "minLevel": 18,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-16",
+    "method": "horde",
+    "minLevel": 18,
+    "maxLevel": 18,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-vast-poni-canyon",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-poke-pelago",
+    "method": "gift",
+    "minLevel": 21,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-vast-poni-canyon",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 44,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-hauoli-cemetery",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 9,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-hauoli-cemetery",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 9,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

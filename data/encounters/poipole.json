@@ -1,0 +1,38 @@
+[
+  {
+    "game": "usum-us",
+    "location": "alola-ultra-megalopolis",
+    "method": "gift",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-ultra-megalopolis",
+    "method": "gift",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-max-lair",
+    "method": "gift",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": ["story-progress-catch-five-ultra-beasts"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-max-lair",
+    "method": "gift",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": ["story-progress-catch-five-ultra-beasts"],
+    "source": "pokeapi"
+  }
+]

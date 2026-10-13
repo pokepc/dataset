@@ -1,0 +1,119 @@
+[
+  {
+    "game": "pt",
+    "location": "sinnoh-route-229",
+    "method": "surf",
+    "minLevel": 35,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["johto-safari-blocks-water-min-10"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": ["johto-safari-blocks-water-min-14"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["johto-safari-blocks-water-min-10"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 46,
+    "maxLevel": 46,
+    "conditions": ["johto-safari-blocks-water-min-14"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-2"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-3",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-2"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-3",
+    "method": "surf",
+    "minLevel": 25,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-malie-garden",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-malie-garden",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-malie-garden",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-malie-garden",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": ["johto-safari-blocks-forest-min-56", "johto-safari-blocks-plains-min-28"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": ["johto-safari-blocks-forest-min-56", "johto-safari-blocks-plains-min-28"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-pinwheel-forest",
+    "method": "walk",
+    "minLevel": 55,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-pinwheel-forest",
+    "method": "dark-grass",
+    "minLevel": 63,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-pinwheel-forest",
+    "method": "walk",
+    "minLevel": 55,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-pinwheel-forest",
+    "method": "dark-grass",
+    "minLevel": 63,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-route-11",
+    "method": "island-scan",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-route-11",
+    "method": "island-scan",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

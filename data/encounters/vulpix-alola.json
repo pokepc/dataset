@@ -1,0 +1,83 @@
+[
+  {
+    "game": "sm-s",
+    "location": "alola-mount-lanakila",
+    "method": "walk",
+    "minLevel": 42,
+    "maxLevel": 45,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-route-14",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-tapu-village",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-mount-lanakila",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-route-14",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-tapu-village",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-celadon-city",
+    "method": "npc-trade",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-fields-of-honor",
+    "method": "gift",
+    "minLevel": 5,
+    "maxLevel": 5,
+    "conditions": ["alolan-diglett-found-20"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-fields-of-honor",
+    "method": "gift",
+    "minLevel": 5,
+    "maxLevel": 5,
+    "conditions": ["alolan-diglett-found-20"],
+    "source": "pokeapi"
+  }
+]

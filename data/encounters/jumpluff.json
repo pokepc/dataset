@@ -1,0 +1,38 @@
+[
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["johto-safari-blocks-plains-min-5"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": ["johto-safari-blocks-water-min-10"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["johto-safari-blocks-plains-min-5"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "surf",
+    "minLevel": 47,
+    "maxLevel": 47,
+    "conditions": ["johto-safari-blocks-water-min-10"],
+    "source": "pokeapi"
+  }
+]

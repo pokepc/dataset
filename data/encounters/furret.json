@@ -1,0 +1,155 @@
+[
+  {
+    "game": "gs-g",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-43",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-43",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 17,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "col",
+    "location": "orre-pyrite-town",
+    "method": "snag",
+    "minLevel": 33,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-plains-min-2"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["johto-safari-blocks-plains-min-5"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 37,
+    "conditions": ["johto-safari-blocks-plains-min-2"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-safari-zone",
+    "method": "walk",
+    "minLevel": 42,
+    "maxLevel": 42,
+    "conditions": ["johto-safari-blocks-plains-min-5"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-route-1",
+    "method": "walk",
+    "minLevel": 6,
+    "maxLevel": 6,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  }
+]

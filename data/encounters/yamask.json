@@ -1,0 +1,56 @@
+[
+  {
+    "game": "bw-b",
+    "location": "unova-relic-castle",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 22,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-relic-castle",
+    "method": "walk",
+    "minLevel": 19,
+    "maxLevel": 22,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-relic-castle",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-relic-castle",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-ballonlea",
+    "method": "npc-trade",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["trade-yamask-galar"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-ballonlea",
+    "method": "npc-trade",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["trade-yamask-galar"],
+    "source": "pokeapi"
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "game": "dp-d",
+    "location": "sinnoh-eterna-city",
+    "method": "npc-trade",
+    "minLevel": 1,
+    "maxLevel": 100,
+    "conditions": ["trade-buizel"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 41,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 41,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-224",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 54,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-224",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 54,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-eterna-city",
+    "method": "npc-trade",
+    "minLevel": 1,
+    "maxLevel": 100,
+    "conditions": ["trade-buizel"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 41,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 41,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-224",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 54,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-224",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 54,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-eterna-city",
+    "method": "npc-trade",
+    "minLevel": 1,
+    "maxLevel": 100,
+    "conditions": ["trade-buizel"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-213",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 25,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-213",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 25,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-218",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-218",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 30,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-222",
+    "method": "walk",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-bell-tower",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 21,
+    "conditions": ["radio-sinnoh"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-burned-tower",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 14,
+    "conditions": ["radio-sinnoh"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-sprout-tower",
+    "method": "walk",
+    "minLevel": 3,
+    "maxLevel": 4,
+    "conditions": ["radio-sinnoh"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-bell-tower",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 21,
+    "conditions": ["radio-sinnoh"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-burned-tower",
+    "method": "walk",
+    "minLevel": 13,
+    "maxLevel": 14,
+    "conditions": ["radio-sinnoh"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-sprout-tower",
+    "method": "walk",
+    "minLevel": 3,
+    "maxLevel": 4,
+    "conditions": ["radio-sinnoh"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-b2",
+    "location": "unova-route-18",
+    "method": "hidden-grotto",
+    "minLevel": 55,
+    "maxLevel": 59,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-route-18",
+    "method": "hidden-grotto",
+    "minLevel": 55,
+    "maxLevel": 59,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-azure-bay",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-12",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-12",
+    "method": "yellow-flowers",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-azure-bay",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-12",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-12",
+    "method": "yellow-flowers",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

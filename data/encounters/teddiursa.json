@@ -1,0 +1,155 @@
+[
+  {
+    "game": "gs-g",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 2,
+    "maxLevel": 2,
+    "conditions": ["swarm-no", "time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-altering-cave",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-altering-cave",
+    "method": "walk",
+    "minLevel": 18,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-safari-zone",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 36,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xd",
+    "location": "orre-pokemon-hq-lab",
+    "method": "snag",
+    "minLevel": 11,
+    "maxLevel": 11,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-acuity-lakefront",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-211",
+    "method": "walk",
+    "minLevel": 12,
+    "maxLevel": 28,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-acuity-lakefront",
+    "method": "walk",
+    "minLevel": 36,
+    "maxLevel": 36,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-211",
+    "method": "walk",
+    "minLevel": 12,
+    "maxLevel": 28,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-lake-acuity",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 41,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-211",
+    "method": "walk",
+    "minLevel": 15,
+    "maxLevel": 16,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 48,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-1"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-1"],
+    "source": "pokeapi"
+  }
+]

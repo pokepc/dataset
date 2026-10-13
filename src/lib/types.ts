@@ -36,6 +36,7 @@ import type {
   classicBoxPresetSchema,
   codeMapEntrySchema,
   colorSchema,
+  encounterSchema,
   gameFeaturesSchema,
   gameSchema,
   generationSchema,
@@ -92,6 +93,7 @@ export type Color = z.infer<typeof colorSchema>
 export type EvolutionCondition = z.infer<typeof evolutionConditionSchema>
 export type EvolutionMethod = z.infer<typeof evolutionMethodSchema>
 export type FormCondition = z.infer<typeof formConditionSchema>
+export type Encounter = z.infer<typeof encounterSchema>
 export type FormMethod = z.infer<typeof formMethodSchema>
 export type FormRevert = z.infer<typeof formRevertSchema>
 export type FormRevertDetail = z.infer<typeof formRevertDetailSchema>
@@ -182,6 +184,7 @@ type V8EvolutionCondition = EvolutionCondition
 type V8EvolutionMethod = EvolutionMethod
 type V8FormCondition = FormCondition
 type V8FormMethod = FormMethod
+type V8Encounter = Encounter
 type V8FormRevert = FormRevert
 type V8FormRevertDetail = FormRevertDetail
 type V8Game = Game
@@ -237,6 +240,7 @@ declare global {
     export type EvolutionCondition = V8EvolutionCondition
     export type EvolutionMethod = V8EvolutionMethod
     export type FormCondition = V8FormCondition
+    export type Encounter = V8Encounter
     export type FormMethod = V8FormMethod
     export type FormRevert = V8FormRevert
     export type FormRevertDetail = V8FormRevertDetail

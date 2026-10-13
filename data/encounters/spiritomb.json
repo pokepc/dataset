@@ -1,0 +1,101 @@
+[
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-209",
+    "method": "static",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["item-odd-keystone", "other-talked-to-32-people-underground"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-209",
+    "method": "static",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["item-odd-keystone", "other-talked-to-32-people-underground"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-209",
+    "method": "static",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["item-odd-keystone", "other-talked-to-32-people-underground"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-friend-safari",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 30,
+    "conditions": ["friend-safari-slot-3"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-sea-mauville",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-sea-mauville",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["story-progress-defeated-groudon-or-kyogre"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-sea-mauville",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-sea-mauville",
+    "method": "static",
+    "minLevel": 50,
+    "maxLevel": 50,
+    "conditions": ["story-progress-defeated-groudon-or-kyogre"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sw",
+    "location": "galar-ballimere-lake",
+    "method": "static",
+    "minLevel": 72,
+    "maxLevel": 72,
+    "conditions": ["other-talked-to-32-people"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "swsh-sh",
+    "location": "galar-ballimere-lake",
+    "method": "static",
+    "minLevel": 72,
+    "maxLevel": 72,
+    "conditions": ["other-talked-to-32-people"],
+    "source": "pokeapi"
+  }
+]

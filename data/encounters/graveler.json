@@ -1,0 +1,1811 @@
+[
+  {
+    "game": "rb-r",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rb-b",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-cerulean-cave",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 55,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "y",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 47,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-g",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "gs-s",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 48,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 48,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 48,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 27,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 34,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 34,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "c",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 40,
+    "conditions": ["time-night"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-r",
+    "location": "hoenn-victory-road",
+    "method": "rock-smash",
+    "minLevel": 30,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "rs-s",
+    "location": "hoenn-victory-road",
+    "method": "rock-smash",
+    "minLevel": 30,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-cerulean-cave",
+    "method": "rock-smash",
+    "minLevel": 40,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-kindle-road",
+    "method": "rock-smash",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-mt-ember",
+    "method": "rock-smash",
+    "minLevel": 25,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-rock-tunnel",
+    "method": "rock-smash",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-fr",
+    "location": "kanto-sevault-canyon",
+    "method": "rock-smash",
+    "minLevel": 30,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-cerulean-cave",
+    "method": "rock-smash",
+    "minLevel": 40,
+    "maxLevel": 65,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-kindle-road",
+    "method": "rock-smash",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-mt-ember",
+    "method": "rock-smash",
+    "minLevel": 25,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-rock-tunnel",
+    "method": "rock-smash",
+    "minLevel": 25,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "frlg-lg",
+    "location": "kanto-sevault-canyon",
+    "method": "rock-smash",
+    "minLevel": 30,
+    "maxLevel": 50,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-magma-hideout",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "e",
+    "location": "hoenn-victory-road",
+    "method": "rock-smash",
+    "minLevel": 30,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 34,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-leafgreen"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-mt-coronet",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-211",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-ruby"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-sapphire"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-leafgreen"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-ruby"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-sapphire"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-227",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-227",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-route-227",
+    "method": "walk",
+    "minLevel": 56,
+    "maxLevel": 56,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-snowpoint-temple",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 56,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-stark-mountain",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-stark-mountain",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-stark-mountain",
+    "method": "walk",
+    "minLevel": 55,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 21,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 21,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-d",
+    "location": "sinnoh-victory-road",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 51,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 29,
+    "maxLevel": 34,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-leafgreen"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 34,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-mt-coronet",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 40,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-211",
+    "method": "walk",
+    "minLevel": 27,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-ruby"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": ["slot2-sapphire"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-leafgreen"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-ruby"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 33,
+    "maxLevel": 34,
+    "conditions": ["slot2-sapphire"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-227",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-227",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-route-227",
+    "method": "walk",
+    "minLevel": 56,
+    "maxLevel": 56,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-snowpoint-temple",
+    "method": "walk",
+    "minLevel": 52,
+    "maxLevel": 56,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-stark-mountain",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-stark-mountain",
+    "method": "walk",
+    "minLevel": 54,
+    "maxLevel": 54,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-stark-mountain",
+    "method": "walk",
+    "minLevel": 55,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 21,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 21,
+    "maxLevel": 21,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-valor-lakefront",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": ["radar-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "dp-p",
+    "location": "sinnoh-victory-road",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 51,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 32,
+    "conditions": ["slot2-emerald"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 32,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 32,
+    "conditions": ["slot2-leafgreen"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 32,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-iron-island",
+    "method": "walk",
+    "minLevel": 30,
+    "maxLevel": 34,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-mt-coronet",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 36,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-mt-coronet",
+    "method": "walk",
+    "minLevel": 34,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-211",
+    "method": "walk",
+    "minLevel": 28,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 22,
+    "maxLevel": 22,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["swarm-no"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-214",
+    "method": "walk",
+    "minLevel": 24,
+    "maxLevel": 24,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": ["slot2-firered"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": ["slot2-leafgreen"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": ["slot2-none"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": ["slot2-ruby"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-216",
+    "method": "walk",
+    "minLevel": 35,
+    "maxLevel": 35,
+    "conditions": ["slot2-sapphire"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-225",
+    "method": "walk",
+    "minLevel": 49,
+    "maxLevel": 49,
+    "conditions": ["swarm-no"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-226",
+    "method": "walk",
+    "minLevel": 49,
+    "maxLevel": 49,
+    "conditions": ["swarm-no"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-route-227",
+    "method": "walk",
+    "minLevel": 51,
+    "maxLevel": 53,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-sendoff-spring",
+    "method": "walk",
+    "minLevel": 37,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-sendoff-spring",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 39,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-sendoff-spring",
+    "method": "walk",
+    "minLevel": 39,
+    "maxLevel": 39,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-stark-mountain",
+    "method": "walk",
+    "minLevel": 51,
+    "maxLevel": 54,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-victory-road",
+    "method": "walk",
+    "minLevel": 40,
+    "maxLevel": 49,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-victory-road",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 49,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "pt",
+    "location": "sinnoh-victory-road",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 49,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 42,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["swarm-no"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 27,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-47",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "johto-route-47",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-cerulean-cave",
+    "method": "rock-smash",
+    "minLevel": 26,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-hg",
+    "location": "kanto-victory-road",
+    "method": "rock-smash",
+    "minLevel": 30,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-dark-cave",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-mt-mortar",
+    "method": "walk",
+    "minLevel": 31,
+    "maxLevel": 31,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 41,
+    "maxLevel": 42,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-mt-silver",
+    "method": "walk",
+    "minLevel": 43,
+    "maxLevel": 43,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 23,
+    "conditions": ["swarm-no"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 23,
+    "maxLevel": 24,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-45",
+    "method": "walk",
+    "minLevel": 25,
+    "maxLevel": 25,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-47",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": ["time-day"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "johto-route-47",
+    "method": "walk",
+    "minLevel": 20,
+    "maxLevel": 20,
+    "conditions": ["time-morning"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-cerulean-cave",
+    "method": "rock-smash",
+    "minLevel": 26,
+    "maxLevel": 30,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-victory-road",
+    "method": "walk",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": ["radio-off"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "hgss-ss",
+    "location": "kanto-victory-road",
+    "method": "rock-smash",
+    "minLevel": 30,
+    "maxLevel": 33,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-b",
+    "location": "unova-challengers-cave",
+    "method": "walk",
+    "minLevel": 47,
+    "maxLevel": 49,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "bw-w",
+    "location": "unova-challengers-cave",
+    "method": "walk",
+    "minLevel": 47,
+    "maxLevel": 49,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-13",
+    "method": "rock-smash",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-18",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-18",
+    "method": "red-flowers",
+    "minLevel": 45,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-route-18",
+    "method": "rock-smash",
+    "minLevel": 44,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-terminus-cave",
+    "method": "walk",
+    "minLevel": 44,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-terminus-cave",
+    "method": "rock-smash",
+    "minLevel": 44,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-victory-road",
+    "method": "walk",
+    "minLevel": 57,
+    "maxLevel": 58,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-victory-road",
+    "method": "rock-smash",
+    "minLevel": 57,
+    "maxLevel": 59,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-victory-road",
+    "method": "horde",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-x",
+    "location": "kalos-victory-road",
+    "method": "ceiling-ambush",
+    "minLevel": 57,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-13",
+    "method": "rock-smash",
+    "minLevel": 26,
+    "maxLevel": 28,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-18",
+    "method": "walk",
+    "minLevel": 45,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-18",
+    "method": "red-flowers",
+    "minLevel": 45,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-route-18",
+    "method": "rock-smash",
+    "minLevel": 44,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-terminus-cave",
+    "method": "walk",
+    "minLevel": 44,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-terminus-cave",
+    "method": "rock-smash",
+    "minLevel": 44,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-victory-road",
+    "method": "walk",
+    "minLevel": 57,
+    "maxLevel": 58,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-victory-road",
+    "method": "rock-smash",
+    "minLevel": 57,
+    "maxLevel": 59,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-victory-road",
+    "method": "horde",
+    "minLevel": 29,
+    "maxLevel": 29,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "xy-y",
+    "location": "kalos-victory-road",
+    "method": "ceiling-ambush",
+    "minLevel": 57,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-mirage-cave",
+    "method": "rock-smash",
+    "minLevel": 35,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-mirage-forest",
+    "method": "rock-smash",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-mirage-island-oras",
+    "method": "rock-smash",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-or",
+    "location": "hoenn-mirage-mountain",
+    "method": "rock-smash",
+    "minLevel": 35,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-mirage-cave",
+    "method": "rock-smash",
+    "minLevel": 35,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-mirage-forest",
+    "method": "rock-smash",
+    "minLevel": 36,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-mirage-island-oras",
+    "method": "rock-smash",
+    "minLevel": 38,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "oras-as",
+    "location": "hoenn-mirage-mountain",
+    "method": "rock-smash",
+    "minLevel": 35,
+    "maxLevel": 38,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-s",
+    "location": "alola-tapu-village",
+    "method": "npc-trade",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "sm-m",
+    "location": "alola-tapu-village",
+    "method": "npc-trade",
+    "minLevel": 32,
+    "maxLevel": 32,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-cerulean-cave",
+    "method": "overworld",
+    "minLevel": 51,
+    "maxLevel": 56,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-rock-tunnel",
+    "method": "overworld",
+    "minLevel": 18,
+    "maxLevel": 23,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lgp",
+    "location": "kanto-victory-road",
+    "method": "overworld",
+    "minLevel": 41,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-cerulean-cave",
+    "method": "overworld",
+    "minLevel": 51,
+    "maxLevel": 56,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-rock-tunnel",
+    "method": "overworld",
+    "minLevel": 18,
+    "maxLevel": 23,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "lgpe-lge",
+    "location": "kanto-victory-road",
+    "method": "overworld",
+    "minLevel": 41,
+    "maxLevel": 46,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]

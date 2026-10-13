@@ -1,0 +1,38 @@
+[
+  {
+    "game": "b2w2-b2",
+    "location": "unova-accumula-town",
+    "method": "npc-trade",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["trade-excadrill"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "b2w2-w2",
+    "location": "unova-accumula-town",
+    "method": "npc-trade",
+    "minLevel": 40,
+    "maxLevel": 40,
+    "conditions": ["trade-excadrill"],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-us",
+    "location": "alola-poni-plains",
+    "method": "sos-from-bubbling-spot",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  },
+  {
+    "game": "usum-um",
+    "location": "alola-poni-plains",
+    "method": "sos-from-bubbling-spot",
+    "minLevel": 54,
+    "maxLevel": 57,
+    "conditions": [],
+    "source": "pokeapi"
+  }
+]
