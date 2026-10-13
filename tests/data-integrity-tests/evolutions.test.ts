@@ -101,6 +101,33 @@ describe('evolution method data', () => {
       expect(byId.get(id)!.evoMethods, id).toBeUndefined()
   })
 
+  it('scopes every trade evolution to games where a link trade evolves the Pokémon', () => {
+    // Legends: Arceus uses the Linking Cord and items, GO uses candy, and Colosseum, XD, storage
+    // apps and spin-offs other than Let's Go never evolve a Pokémon on trade.
+    const tradeGames = new Set(
+      [...games.values()]
+        .filter((game) => game.series === 'main' || /^(lgpe-|lza$)/.test(game.id))
+        .map((game) => game.id),
+    )
+    const trades = pokemon.flatMap((record) =>
+      (record.evoMethods ?? [])
+        .filter((method) => method.trigger === 'trade')
+        .map((method) => ({ record, method })),
+    )
+    expect(trades.length).toBeGreaterThanOrEqual(36)
+    for (const { record, method } of trades) {
+      expect(method.games?.length, record.id).toBeGreaterThan(0)
+      for (const game of method.games!) {
+        expect(tradeGames.has(game), `${record.id}: ${game}`).toBe(true)
+        expect(record.storableIn, `${record.id}: ${game}`).toContain(game)
+      }
+    }
+    expect(byId.get('alakazam')!.evoMethods![0].games).not.toContain('la')
+    expect(byId.get('alakazam')!.evoMethods![0].games).toContain('lza')
+    expect(byId.get('milotic')!.evoMethods![1].games).not.toContain('e')
+    expect(byId.get('steelix')!.evoMethods![0].games).not.toContain('y')
+  })
+
   it('retains translated special keys, distinct recipes, and unresolved evidence', () => {
     expect(byId.get('malamar')!.evoMethods![0].conditions).toContainEqual({
       key: 'device_upside_down',

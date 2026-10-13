@@ -3,7 +3,7 @@ id: doc-8
 title: Pokémon evolution methods
 type: specification
 created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 06:06'
+updated_date: '2026-10-13 02:13'
 ---
 `evoMethods` on a resulting Pokémon/form contains alternative ways to evolve into that record. Meet
 **one method**, and **all conditions within that method**. `from` lists alternative eligible
@@ -51,6 +51,32 @@ methods into every form.
 An explicitly scoped method is evidence for those games, not an assertion that no other game
 supports it. A method with omitted `games` can be displayed as a general guide, but does not
 establish eligibility in a requested game.
+
+## Trade evolution scope
+
+Every `trade` method lists `games` (reviewed 2026-10-13, TASK-271 in pokepc-net). A link trade
+evolves the received Pokémon in every mainline game, Let's Go Pikachu and Eevee, and Legends: Z-A,
+so each method lists those games where both the predecessor and the result can be stored, from
+the generation its held item was introduced (Generation 2 for King's Rock, Metal Coat, Dragon
+Scale and Up-Grade, 3 for the Deep Sea items, 4 for Protector, Electirizer, Magmarizer, Reaper
+Cloth and Dubious Disc, 5 for Prism Scale, 6 for Sachet and Whipped Dream). Let's Go has no held
+items, so only its plain trades apply.
+
+Excluded on purpose:
+
+- **Legends: Arceus** trades never evolve; the Linking Cord and the former trade items are used
+  instead (separate `use_item` methods scoped to `la`).
+- **GO** evolves these Pokémon with candy (a traded one costs none), which is not a trade trigger.
+- **Colosseum and XD** trade with Generation 3 games, but evolution happens in the receiving
+  handheld game. Storage apps (Bank, HOME, Box, Ranch), Champions and Pokopia never evolve.
+
+Sources: game8 "All Trade Evolutions" for Legends: Z-A
+(https://game8.co/games/Pokemon-Legends-Z-A/archives/557964), which lists Link Trade evolutions for
+Kadabra, Machoke, Haunter, Pumpkaboo, Phantump, Swirlix, Spritzee, Scyther, Slowpoke, Onix,
+Porygon, Porygon2 and Feebas, with no Linking Cord in that game; the Linking Cord and PLA item
+routes already recorded in the [evolution audit](../audits/doc-16%20-%20Pok%C3%A9mon-evolution-audit.md).
+`tests/data-integrity-tests/evolutions.test.ts` keeps every trade method scoped to these games and
+to games where the result is storable.
 
 ## Translation and special conditions
 
