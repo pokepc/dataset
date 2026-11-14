@@ -8,22 +8,18 @@ import { loadAllAbilities, loadAllItems, loadAllMoves, loadAllPokemon } from '..
  */
 
 /** In Showdown's master branch but not yet in the @pkmn/dex release we depend on. */
-const notYetInPkmnDex = new Set(['auraguard'])
+const notYetInPkmnDex = new Set<string>()
 
 /** Items Showdown does not have: key items and form-change items that cannot be held in battle. */
 const itemsNotInShowdown = new Set([
-  'blackaugurite',
-  'blankplate',
   'dnasplicers',
   'gimmighoulcoin',
   'gracidea',
   'leaderscrest',
-  'legendplate',
   'linkingcord',
   'meteorite',
   'nlunarizer',
   'nsolarizer',
-  'peatblock',
   'pinknectar',
   'prisonbottle',
   'purplenectar',
