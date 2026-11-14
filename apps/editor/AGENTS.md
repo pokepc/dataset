@@ -4,8 +4,6 @@ Read [the editor guide](../../backlog/docs/guides/doc-10%20-%20Dataset-editor.md
 behavior. This is trusted local maintainer tooling for the repository's `data/`; use disposable
 copies for write verification.
 
-- This repository is public. Keep documentation self-contained, use public links, and avoid private
-  tracker references, nonpublic repositories, and developer-specific paths.
 - Preserve the existing UI and editing contracts; retain the CDN image URLs.
 - Reuse the local dataset package through its public exports. Filesystem work belongs in
   `app/lib/*.server.ts`; routes delegate to those modules.

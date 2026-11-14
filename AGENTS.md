@@ -15,10 +15,8 @@ and `src/lib` follow the v8 model in the
 
 Create and update Backlog records with the `backlog` CLI rather than editing their files.
 
-## The 7.x line
-
-The `7.x` branch receives no more backports (2026-10-13). PokéPC moves to v8 after its PC v7
-release, and until then the dataset takes no further changes unless the user asks for one.
+This repository is public. Keep documentation self-contained, use public links, and avoid private
+tracker references, nonpublic repositories, and developer-specific paths.
 
 Before editing Pokémon availability data, schemas, parsers, or editor behavior, read the
 [canonical availability field definitions](backlog/docs/reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md).
@@ -31,3 +29,8 @@ documents source mappings, curated rules, unresolved coverage, and offline valid
 Adding, renaming or removing a Pokémon, ribbon, mark or move changes the append-only code maps in
 `data/codes/`. Read the [code map rules](backlog/docs/reference/doc-3%20-%20Code-maps.md), run
 `pnpm codes:sync` and never edit or reorder an existing code.
+
+## The 7.x line
+
+The `7.x` branch receives no more backports (2026-10-13). PokéPC moves to v8 after its PC v7
+release, and until then the dataset takes no further changes unless the user asks for one.
