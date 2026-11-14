@@ -13,6 +13,13 @@ const homeDexCompletionGifts: Record<string, string> = {
   keldeo: 'Galar, Isle of Armor and Crown Tundra Pokédexes (Sword/Shield origins)',
   meltan: 'Kanto Pokédex (Let’s Go origins)',
   'magearna-original': 'National Pokédex through Eternatus, including Mythical Pokémon',
+  celebi: 'Kanto Pokédex (FireRed/LeafGreen for Nintendo Switch origins)',
+}
+
+const homeDexCompletionGiftSources: Record<string, string> = {
+  'magearna-original':
+    'https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex_(HOME)#Pokédex_entries',
+  celebi: 'https://www.serebii.net/pokemonhome/giftpokemon.shtml',
 }
 
 const megaGames: Record<string, readonly string[]> = {
@@ -33,9 +40,7 @@ export function resolveFormAvailabilityRule(
       text: `HOME Pokédex-completion Mystery Gift: ${homeDexCompletionGifts[pokemon.id]}.`,
       status: 'eventOnlyIn',
       sourceUrl:
-        pokemon.id === 'magearna-original'
-          ? 'https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex_(HOME)#Pokédex_entries'
-          : 'https://home.pokemon.com/en-gb/features/',
+        homeDexCompletionGiftSources[pokemon.id] ?? 'https://home.pokemon.com/en-gb/features/',
     }
   const vivillon = resolveVivillonAvailability(main, pokemon, gameId)
   if (vivillon) return vivillon

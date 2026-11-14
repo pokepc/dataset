@@ -2,38 +2,38 @@
 id: doc-20
 title: Vivillon availability audit
 type: other
-created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 00:00'
+created_date: 2026-09-30 23:59
+updated_date: '2026-11-14T22:32:00Z'
 ---
-Reviewed 2026-09-22. Covers all 20 dataset records, including `vivillon` = Icy Snow. The shared CLI
+Reviewed 2026-09-22; Legends: Z-A column revised 2026-11-14. Covers all 20 dataset records, including `vivillon` = Icy Snow. The shared CLI
 and editor use `vivillon-availability-rules.ts`; blanket base inheritance is removed.
 
-O = `obtainableIn`, T = `transferOnlyIn`, U = unavailable. Each acquisition cell belongs to only one
+O = `obtainableIn`, T = `transferOnlyIn`, E = `eventOnlyIn`, U = unavailable. Each acquisition cell belongs to only one
 field. X/Y and US/UM depend on the 3DS region; O does not mean every pattern is native to every
 save.
 
 | Pattern     | XY / USUM | Scarlet / Violet | Legends: Z-A | Champions | GO  |
 | ----------- | --------- | ---------------- | ------------ | --------- | --- |
-| Icy Snow    | O         | T                | T            | T         | O   |
-| Polar       | O         | T                | T            | T         | O   |
-| Tundra      | O         | T                | T            | T         | O   |
-| Continental | O         | T                | T            | T         | O   |
+| Icy Snow    | O         | T                | E            | T         | O   |
+| Polar       | O         | T                | E            | T         | O   |
+| Tundra      | O         | T                | E            | T         | O   |
+| Continental | O         | T                | E            | T         | O   |
 | Garden      | O         | T                | O            | T         | O   |
-| Elegant     | O         | T                | T            | T         | O   |
+| Elegant     | O         | T                | E            | T         | O   |
 | Meadow      | O         | T                | O            | T         | O   |
-| Modern      | O         | T                | T            | T         | O   |
+| Modern      | O         | T                | E            | T         | O   |
 | Marine      | O         | T                | O            | T         | O   |
-| Archipelago | O         | T                | T            | T         | O   |
-| High Plains | O         | T                | T            | T         | O   |
-| Sandstorm   | O         | T                | T            | T         | O   |
-| River       | O         | T                | T            | T         | O   |
-| Monsoon     | O         | T                | T            | T         | O   |
-| Savanna     | O         | T                | T            | T         | O   |
-| Sun         | O         | T                | T            | T         | O   |
-| Ocean       | O         | T                | T            | T         | O   |
-| Jungle      | O         | T                | T            | T         | O   |
-| Fancy       | T         | O                | T            | T         | U   |
-| Poké Ball   | T         | T                | T            | T         | U   |
+| Archipelago | O         | T                | E            | T         | O   |
+| High Plains | O         | T                | E            | T         | O   |
+| Sandstorm   | O         | T                | E            | T         | O   |
+| River       | O         | T                | E            | T         | O   |
+| Monsoon     | O         | T                | E            | T         | O   |
+| Savanna     | O         | T                | E            | T         | O   |
+| Sun         | O         | T                | E            | T         | O   |
+| Ocean       | O         | T                | E            | T         | O   |
+| Jungle      | O         | T                | E            | T         | O   |
+| Fancy       | T         | O                | E            | T         | U   |
+| Poké Ball   | T         | T                | E            | T         | U   |
 
 ORAS, Sun/Moon and HOME are T for all patterns. Import-dependent breeding does not remove the
 external acquisition requirement. Pre-Gen-6 games, Let's Go, Sword/Shield, BDSP and Legends: Arceus
@@ -56,7 +56,15 @@ Plains can also visit from HOME, but local recruits cannot be exported, as docum
 [official connectivity rules](https://champions.pokemon.com/en-gb/pokemon/). This is a current
 snapshot, not an assumption about eventual roster expansion.
 
-Fancy/Poké Ball distributions follow **Ev → T**, not the in-game event category EV. Their old
+In Legends: Z-A the other 17 patterns are E, at the product owner's request (2026-11-14): their only
+routes in that game are the Mystery Gifts of the 2026 Vivillon campaign listed on
+[Serebii's Legends: Z-A events page](https://www.serebii.net/legendsz-a/internetevents.shtml). A
+Spewpa distributed from 29 October to 19 November 2026 evolves into one of 16 patterns (Polar,
+Tundra, Continental, Elegant, Icy Snow, Modern, Archipelago, High Plains, Sandstorm, River, Monsoon,
+Savanna, Sun, Ocean, Jungle or Fancy), and a Poké Ball Pattern Vivillon was the campaign reward from
+6 November 2026 to 26 February 2027. Meadow, Garden and Marine keep their ordinary routes.
+
+The older Fancy/Poké Ball distributions in other games follow **Ev → T**, not the in-game event category EV. Their old
 overlapping XY acquisition fields are removed. The distribution history is recorded in
 [Vivillon's event tables](<https://bulbapedia.bulbagarden.net/wiki/Vivillon_(Pok%C3%A9mon)#In_events>).
 

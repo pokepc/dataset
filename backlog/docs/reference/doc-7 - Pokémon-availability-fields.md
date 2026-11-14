@@ -2,8 +2,8 @@
 id: doc-7
 title: Pokémon availability fields
 type: specification
-created_date: '2026-09-30 23:59'
-updated_date: '2026-10-13 04:14'
+created_date: 2026-09-30 23:59
+updated_date: '2026-11-14T22:32:00Z'
 ---
 This is the canonical field reference for humans and agents editing `data/pokemon/*.json`, the
 schemas, the editor, and the availability tools. These fields are game-independent base data; they
@@ -62,11 +62,14 @@ Keep HOME in `storableIn`. This rule applies only to the rewarded form.
 | Keldeo (Ordinary)       | Galar, Isle of Armor and Crown Tundra, using Sword/Shield origins |
 | Meltan                  | Kanto, using Let's Go origins                                     |
 | Original Color Magearna | National Pokédex through Eternatus, including Mythical Pokémon    |
+| Celebi                  | Kanto, using FireRed/LeafGreen for Nintendo Switch origins        |
 
 The first five are shiny rewards documented on the
 [official HOME features page](https://home.pokemon.com/en-gb/features/); the
 [HOME Pokédex reference](<https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex_(HOME)#Pokédex_entries>)
-documents Original Color Magearna. These curated rules supplement the two parsed lists without
+documents Original Color Magearna, and
+[Serebii's HOME gift list](https://www.serebii.net/pokemonhome/giftpokemon.shtml) documents Celebi
+(added October 2026). These curated rules supplement the two parsed lists without
 adding runtime fetches. Other ordinary HOME gifts retain their separate classifications.
 
 ### Champions

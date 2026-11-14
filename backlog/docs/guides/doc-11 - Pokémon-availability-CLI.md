@@ -2,8 +2,8 @@
 id: doc-11
 title: Pokémon availability CLI
 type: guide
-created_date: '2026-09-30 23:59'
-updated_date: '2026-10-01 00:00'
+created_date: 2026-09-30 23:59
+updated_date: '2026-11-14T22:32:00Z'
 ---
 Read the [canonical field definitions](../reference/doc-7%20-%20Pok%C3%A9mon-availability-fields.md) for acquisition, storage, shiny
 availability, and related form metadata. The rules below describe how the tools implement them.
@@ -198,7 +198,8 @@ infer a Gigantamax release from an ordinary Toxtricity release.
 All 20 Vivillon patterns use a [curated game-by-pattern matrix](../audits/doc-20%20-%20Vivillon-availability-audit.md),
 including the unsuffixed Icy Snow record and the two special patterns. Positive species cells never
 establish a pattern’s availability. Scarlet/Violet postcard-dependent patterns are `transferOnlyIn`
-by user policy. GO is still parsed independently and storage is preserved. The research references
+by user policy. In Legends: Z-A, the 17 patterns without an ordinary route are `eventOnlyIn`
+(the 2026 Vivillon campaign Mystery Gifts). GO is still parsed independently and storage is preserved. The research references
 are recorded alongside the rules; no additional pages are fetched at runtime.
 
 ### Mega and Gigantamax rules

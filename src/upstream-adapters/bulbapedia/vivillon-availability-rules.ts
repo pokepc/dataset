@@ -2,11 +2,12 @@ import type { AvailabilityPokemon, LocationMethod } from './availability.ts'
 import type { MainAvailability } from './main-availability.ts'
 
 export const vivillonAvailabilityReferences = {
-  reviewedAt: '2026-09-22',
+  reviewedAt: '2026-11-14',
   forms: 'https://bulbapedia.bulbagarden.net/wiki/Vivillon_(Pok%C3%A9mon)#Form_data',
   museum: 'https://bulbapedia.bulbagarden.net/wiki/Lumiose_Museum#Pokémon_Legends:_Z-A',
   champions:
     'https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_in_Pok%C3%A9mon_Champions',
+  zaEvents: 'https://www.serebii.net/legendsz-a/internetevents.shtml',
 } as const
 
 const regionalPatterns = new Set([
@@ -99,9 +100,13 @@ export function resolveVivillonAvailability(
         'Evolve the Marine Pattern Spewpa gifted by Side Mission 021, Spewpa in the Museum. This is an ordinary permanent quest reward.',
         vivillonAvailabilityReferences.museum,
       )
+    // The only Legends: Z-A routes for the other 17 patterns are Mystery Gift distributions.
     return method(
-      'transferOnlyIn',
-      'This pattern has no native Legends: Z-A acquisition route and must be transferred through HOME.',
+      'eventOnlyIn',
+      pattern === 'pokeball'
+        ? 'Poké Ball Pattern Vivillon was a Mystery Gift for completing the 2026 Vivillon campaign (6 November 2026 to 26 February 2027).'
+        : 'Evolve the Mystery Gift Spewpa of the 2026 Vivillon campaign (29 October to 19 November 2026), which becomes one of 16 patterns not native to Legends: Z-A.',
+      vivillonAvailabilityReferences.zaEvents,
     )
   }
 

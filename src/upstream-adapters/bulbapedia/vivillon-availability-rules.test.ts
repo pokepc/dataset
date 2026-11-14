@@ -51,13 +51,13 @@ describe('curated Vivillon availability by game and pattern', () => {
         ['usum-um', !special],
         ['sv-s', id === 'vivillon-fancy'],
         ['sv-v', id === 'vivillon-fancy'],
-        ['lza', nativeZa.includes(id)],
+        ['lza', nativeZa.includes(id) ? true : ('eventOnlyIn' as const)],
         ['home', false],
         ['champions', false],
       ])
       const candidate = availabilityJson(report)
-      for (const [game, obtainable] of expected) {
-        const status = obtainable ? 'obtainableIn' : 'transferOnlyIn'
+      for (const [game, route] of expected) {
+        const status = route === true ? 'obtainableIn' : route === false ? 'transferOnlyIn' : route
         expect(
           report.rows.find((row) => row.game.id === game),
           `${id}/${game}`,
@@ -85,7 +85,7 @@ describe('curated Vivillon availability by game and pattern', () => {
       games,
       forms,
     )
-    expect(report.rows.find((row) => row.game.id === 'lza')?.status).toBe('transferOnlyIn')
+    expect(report.rows.find((row) => row.game.id === 'lza')?.status).toBe('eventOnlyIn')
     expect(report.rows.find((row) => row.game.id === 'sv-s')?.status).toBe('transferOnlyIn')
   })
 

@@ -41,7 +41,7 @@ const tables = parseAvailabilityTables({ main: mainPage(), go: goPage() })
 const report = (id: string) => createAvailabilityReport(tables, pokemon(id), games)
 
 describe('HOME Pokédex-completion gifts', () => {
-  it.each(['meloetta', 'enamorus', 'manaphy', 'keldeo', 'meltan', 'magearna-original'])(
+  it.each(['meloetta', 'enamorus', 'manaphy', 'keldeo', 'meltan', 'magearna-original', 'celebi'])(
     'classifies %s exclusively as a HOME event and preserves storage',
     (id) => {
       const saved = pokemon(id)
