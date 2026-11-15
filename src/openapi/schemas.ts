@@ -8,6 +8,7 @@ import {
   classicBoxPresetSchema,
   codeMapSchema,
   colorSchema,
+  encountersSchema,
   gameSchema,
   generationSchema,
   itemSchema,
@@ -54,6 +55,7 @@ export const CharacterSchema = characterSchema.meta({ id: 'Character' })
 export const CharacterListSchema = z.array(CharacterSchema).meta({ id: 'CharacterList' })
 export const ColorSchema = colorSchema.meta({ id: 'Color' })
 export const ColorListSchema = z.array(ColorSchema).meta({ id: 'ColorList' })
+export const EncounterListSchema = encountersSchema.meta({ id: 'EncounterList' })
 export const GameSchema = gameSchema.meta({ id: 'Game' })
 export const GenerationSchema = generationSchema.meta({ id: 'Generation' })
 export const GenerationListSchema = z.array(GenerationSchema).meta({ id: 'GenerationList' })

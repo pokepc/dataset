@@ -14,6 +14,7 @@ import {
   ClassicBoxPresetMapSchema,
   CodeMapKindParamSchema,
   CodeMapSchema,
+  EncounterListSchema,
   ErrorResponseSchema,
   GameIdParamSchema,
   GameSchema,
@@ -129,6 +130,16 @@ export function createStaticApiDocument(options: StaticApiDocumentOptions) {
     params: z.object({ pokemonId: PokemonIdParamSchema }),
     schema: PokemonSchema,
     notFound: 'Static Pokemon file not found.',
+  })
+  add('/encounters/{pokemonId}.json', {
+    operationId: 'getPokemonEncounters',
+    summary: 'Get the encounters of a Pokemon',
+    description:
+      'Ways to meet one Pokemon record, one entry per game, location and method. Only Pokemon with known encounters have a file.',
+    tags: ['Pokemon'],
+    params: z.object({ pokemonId: PokemonIdParamSchema }),
+    schema: EncounterListSchema,
+    notFound: 'This Pokemon has no encounters file.',
   })
   add('/games/{gameId}.json', {
     operationId: 'getGame',

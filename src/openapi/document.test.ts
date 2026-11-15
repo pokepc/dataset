@@ -18,6 +18,7 @@ describe('static OpenAPI document', () => {
     expect(paths['/abilities.json']).toBeDefined()
     expect(paths['/battle-states.json']).toBeDefined()
     expect(paths['/pokemon/{pokemonId}.json']).toBeDefined()
+    expect(paths['/encounters/{pokemonId}.json']).toBeDefined()
     expect(paths['/games/{gameId}.json']).toBeDefined()
     expect(paths['/pokedexes/{pokedexId}.json']).toBeDefined()
     expect(paths['/boxpresets/modern/{gameSet}/{presetId}.json']).toBeDefined()
