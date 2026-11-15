@@ -37,6 +37,7 @@
     "build:pages": "node src/openapi/build.ts",
     "build:pages:versions": "node src/pages/build.ts",
     "generate:pokemon-prose": "bun src/upstream-adapters/pokeapi/generate-pokemon-prose.ts",
+    "i18n:import-names": "bun src/upstream-adapters/pokeapi/import-names.ts",
     "pokemon:availability": "node src/upstream-adapters/bulbapedia/cli.ts",
     "pokemon:availability:all": "node src/upstream-adapters/bulbapedia/review-cli.ts",
     "locations:import": "bun src/upstream-adapters/locations/cli.ts",

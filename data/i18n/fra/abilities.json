@@ -44,6 +44,9 @@
   "insomnia": {
     "name": "Insomnia"
   },
+  "colorchange": {
+    "name": "Homochromie"
+  },
   "immunity": {
     "name": "Vaccin"
   },
@@ -68,6 +71,9 @@
   "roughskin": {
     "name": "Peau Dure"
   },
+  "wonderguard": {
+    "name": "Garde Mystik"
+  },
   "levitate": {
     "name": "Lévitation"
   },
@@ -85,6 +91,9 @@
   },
   "lightningrod": {
     "name": "Paratonnerre"
+  },
+  "serenegrace": {
+    "name": "Sérénité"
   },
   "swiftswim": {
     "name": "Glissade"
@@ -109,6 +118,12 @@
   },
   "magmaarmor": {
     "name": "Armumagma"
+  },
+  "waterveil": {
+    "name": "Ignifu-Voile"
+  },
+  "magnetpull": {
+    "name": "Magnépiège"
   },
   "soundproof": {
     "name": "Anti-Bruit"
@@ -142,6 +157,9 @@
   },
   "pickup": {
     "name": "Ramassage"
+  },
+  "truant": {
+    "name": "Absentéisme"
   },
   "hustle": {
     "name": "Agitation"
@@ -191,6 +209,9 @@
   "drought": {
     "name": "Sécheresse"
   },
+  "arenatrap": {
+    "name": "Piège Sable"
+  },
   "vitalspirit": {
     "name": "Esprit Vital"
   },
@@ -202,6 +223,9 @@
   },
   "shellarmor": {
     "name": "Coque Armure"
+  },
+  "airlock": {
+    "name": "Air Lock"
   },
   "tangledfeet": {
     "name": "Pieds Confus"
@@ -236,6 +260,9 @@
   "dryskin": {
     "name": "Peau Sèche"
   },
+  "download": {
+    "name": "Télécharge"
+  },
   "ironfist": {
     "name": "Poing de Fer"
   },
@@ -256,6 +283,9 @@
   },
   "quickfeet": {
     "name": "Pied Véloce"
+  },
+  "normalize": {
+    "name": "Normalise"
   },
   "sniper": {
     "name": "Sniper"
@@ -296,11 +326,20 @@
   "unaware": {
     "name": "Inconscient"
   },
+  "tintedlens": {
+    "name": "Lentiteintée"
+  },
   "filter": {
     "name": "Filtre"
   },
+  "slowstart": {
+    "name": "Début Calme"
+  },
   "scrappy": {
     "name": "Querelleur"
+  },
+  "stormdrain": {
+    "name": "Lavabo"
   },
   "icebody": {
     "name": "Corps Gel"
@@ -311,11 +350,23 @@
   "snowwarning": {
     "name": "Alerte Neige"
   },
+  "honeygather": {
+    "name": "Cherche Miel"
+  },
   "frisk": {
     "name": "Fouille"
   },
   "reckless": {
     "name": "Téméraire"
+  },
+  "multitype": {
+    "name": "Multi-Type"
+  },
+  "flowergift": {
+    "name": "Don Floral"
+  },
+  "baddreams": {
+    "name": "Mauvais Rêve"
   },
   "pickpocket": {
     "name": "Pickpocket"
@@ -331,6 +382,9 @@
   },
   "defiant": {
     "name": "Acharné"
+  },
+  "defeatist": {
+    "name": "Défaitiste"
   },
   "cursedbody": {
     "name": "Corps Maudit"
@@ -352,6 +406,12 @@
   },
   "multiscale": {
     "name": "Multiécaille"
+  },
+  "toxicboost": {
+    "name": "Rage Poison"
+  },
+  "flareboost": {
+    "name": "Rage Brûlure"
   },
   "harvest": {
     "name": "Récolte"
@@ -376,6 +436,9 @@
   },
   "sandrush": {
     "name": "Baigne Sable"
+  },
+  "wonderskin": {
+    "name": "Peau Miracle"
   },
   "analytic": {
     "name": "Analyste"
@@ -412,6 +475,21 @@
   },
   "sandforce": {
     "name": "Force Sable"
+  },
+  "ironbarbs": {
+    "name": "Épine de Fer"
+  },
+  "zenmode": {
+    "name": "Mode Transe"
+  },
+  "victorystar": {
+    "name": "Victorieux"
+  },
+  "turboblaze": {
+    "name": "Turbo Brasier"
+  },
+  "teravolt": {
+    "name": "Téra-Voltage"
   },
   "aromaveil": {
     "name": "Aroma-Voile"
@@ -476,23 +554,50 @@
   "parentalbond": {
     "name": "Amour Filial"
   },
+  "darkaura": {
+    "name": "Aura Ténébreuse"
+  },
   "fairyaura": {
     "name": "Aura Féérique"
+  },
+  "aurabreak": {
+    "name": "Aura Inversée"
+  },
+  "primordialsea": {
+    "name": "Mer Primaire"
+  },
+  "desolateland": {
+    "name": "Terre Finale"
+  },
+  "deltastream": {
+    "name": "Souffle Delta"
   },
   "stamina": {
     "name": "Endurance"
   },
+  "wimpout": {
+    "name": "Escampette"
+  },
   "emergencyexit": {
     "name": "Repli Tactique"
   },
+  "watercompaction": {
+    "name": "Sable Humide"
+  },
   "merciless": {
     "name": "Cruauté"
+  },
+  "shieldsdown": {
+    "name": "Bouclier-Carcan"
   },
   "stakeout": {
     "name": "Filature"
   },
   "waterbubble": {
     "name": "Aquabulle"
+  },
+  "steelworker": {
+    "name": "Expert Acier"
   },
   "berserk": {
     "name": "Folle Furie"
@@ -506,14 +611,32 @@
   "liquidvoice": {
     "name": "Hydrata-Son"
   },
+  "triage": {
+    "name": "Prioguérison"
+  },
+  "galvanize": {
+    "name": "Peau Électrique"
+  },
   "surgesurfer": {
     "name": "Surf Caudal"
+  },
+  "schooling": {
+    "name": "Banc"
   },
   "disguise": {
     "name": "Fantômasque"
   },
+  "battlebond": {
+    "name": "Synergie"
+  },
+  "powerconstruct": {
+    "name": "Rassemblement"
+  },
   "corrosion": {
     "name": "Corrosion"
+  },
+  "comatose": {
+    "name": "Hypersommeil"
   },
   "queenlymajesty": {
     "name": "Prestance Royale"
@@ -521,8 +644,20 @@
   "innardsout": {
     "name": "Expuls'Organes"
   },
+  "dancer": {
+    "name": "Danseuse"
+  },
+  "battery": {
+    "name": "Batterie"
+  },
   "fluffy": {
     "name": "Boule de Poils"
+  },
+  "dazzling": {
+    "name": "Corps Coloré"
+  },
+  "soulheart": {
+    "name": "Animacœur"
   },
   "tanglinghair": {
     "name": "Mèche Rebelle"
@@ -530,23 +665,68 @@
   "receiver": {
     "name": "Receveur"
   },
+  "powerofalchemy": {
+    "name": "Osmose"
+  },
+  "beastboost": {
+    "name": "Boost Chimère"
+  },
+  "rkssystem": {
+    "name": "Système Alpha"
+  },
   "electricsurge": {
     "name": "Créa-Élec"
   },
   "psychicsurge": {
     "name": "Créa-Psy"
   },
+  "mistysurge": {
+    "name": "Créa-Brume"
+  },
   "grassysurge": {
     "name": "Créa-Herbe"
+  },
+  "fullmetalbody": {
+    "name": "Métallo-Garde"
+  },
+  "shadowshield": {
+    "name": "Spectro-Bouclier"
+  },
+  "prismarmor": {
+    "name": "Prisme-Armure"
+  },
+  "neuroforce": {
+    "name": "Cérébro-Force"
+  },
+  "intrepidsword": {
+    "name": "Lame Indomptable"
+  },
+  "dauntlessshield": {
+    "name": "Égide Inflexible"
   },
   "libero": {
     "name": "Libéro"
   },
+  "ballfetch": {
+    "name": "Ramasse Ball"
+  },
+  "cottondown": {
+    "name": "Effilochage"
+  },
+  "propellertail": {
+    "name": "Propulseur"
+  },
   "mirrorarmor": {
     "name": "Armure Miroir"
   },
+  "gulpmissile": {
+    "name": "Dégobage"
+  },
   "stalwart": {
     "name": "Nerfs d'Acier"
+  },
+  "steamengine": {
+    "name": "Turbine"
   },
   "punkrock": {
     "name": "Punk Rock"
@@ -554,8 +734,17 @@
   "sandspit": {
     "name": "Expul'Sable"
   },
+  "icescales": {
+    "name": "Écailles Glacées"
+  },
   "ripen": {
     "name": "Mûrissement"
+  },
+  "iceface": {
+    "name": "Tête de Gel"
+  },
+  "powerspot": {
+    "name": "Cercle d’Énergie"
   },
   "mimicry": {
     "name": "Mimétisme"
@@ -566,8 +755,20 @@
   "steelyspirit": {
     "name": "Boost Acier"
   },
+  "perishbody": {
+    "name": "Corps Condamné"
+  },
   "wanderingspirit": {
     "name": "Âme Vagabonde"
+  },
+  "gorillatactics": {
+    "name": "Entêtement"
+  },
+  "neutralizinggas": {
+    "name": "Gaz Inhibiteur"
+  },
+  "pastelveil": {
+    "name": "Voile Pastel"
   },
   "hungerswitch": {
     "name": "Déclic Fringale"
@@ -581,26 +782,89 @@
   "curiousmedicine": {
     "name": "Breuvage Suspect"
   },
+  "transistor": {
+    "name": "Transistor"
+  },
+  "dragonsmaw": {
+    "name": "Dent de Dragon"
+  },
+  "chillingneigh": {
+    "name": "Blanche Ruade"
+  },
+  "grimneigh": {
+    "name": "Sombre Ruade"
+  },
+  "asoneglastrier": {
+    "name": "Osmose Équine"
+  },
+  "asonespectrier": {
+    "name": "Osmose Équine"
+  },
+  "lingeringaroma": {
+    "name": "Odeur Tenace"
+  },
   "seedsower": {
     "name": "Semencier"
   },
   "thermalexchange": {
     "name": "Thermodynamique"
   },
+  "angershell": {
+    "name": "Courroupace"
+  },
   "purifyingsalt": {
     "name": "Sel Purificateur"
+  },
+  "wellbakedbody": {
+    "name": "Bien Cuit"
+  },
+  "windrider": {
+    "name": "Aéroporté"
   },
   "guarddog": {
     "name": "Chien de Garde"
   },
+  "rockypayload": {
+    "name": "Porte-Roche"
+  },
+  "windpower": {
+    "name": "Turbine Éolienne"
+  },
   "zerotohero": {
     "name": "Supermutation"
+  },
+  "commander": {
+    "name": "Commandant"
   },
   "electromorphosis": {
     "name": "Grecharge"
   },
+  "protosynthesis": {
+    "name": "Paléosynthèse"
+  },
+  "quarkdrive": {
+    "name": "Charge Quantique"
+  },
   "goodasgold": {
     "name": "Corps en Or"
+  },
+  "beadsofruin": {
+    "name": "Perles du Fléau"
+  },
+  "tabletsofruin": {
+    "name": "Bois du Fléau"
+  },
+  "vesselofruin": {
+    "name": "Urne du Fléau"
+  },
+  "swordofruin": {
+    "name": "Épée du Fléau"
+  },
+  "orichalcumpulse": {
+    "name": "Pouls Orichalque"
+  },
+  "hadronengine": {
+    "name": "Moteur à Hadrons"
   },
   "opportunist": {
     "name": "Opportuniste"
@@ -614,6 +878,9 @@
   "supremeoverlord": {
     "name": "Général Suprême"
   },
+  "costar": {
+    "name": "Collab"
+  },
   "toxicdebris": {
     "name": "Dépôt Toxique"
   },
@@ -623,11 +890,32 @@
   "eartheater": {
     "name": "Absorbe-Terre"
   },
+  "myceliummight": {
+    "name": "Force Fongique"
+  },
   "hospitality": {
     "name": "Aux Petits Soins"
   },
+  "mindseye": {
+    "name": "Œil Révélateur"
+  },
+  "toxicchain": {
+    "name": "Chaîne Toxique"
+  },
   "supersweetsyrup": {
     "name": "Nectar Mielleux"
+  },
+  "terashift": {
+    "name": "Téramorphose"
+  },
+  "terashell": {
+    "name": "Téra-Carapace"
+  },
+  "teraformzero": {
+    "name": "Téraformation 0"
+  },
+  "poisonpuppeteer": {
+    "name": "Emprise Toxique"
   },
   "piercingdrill": {
     "name": "Transperceuse"
