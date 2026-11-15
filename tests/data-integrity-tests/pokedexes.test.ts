@@ -80,4 +80,19 @@ describe('Validate pokedexes.json data', () => {
     }
     expect(pairs).toBeGreaterThan(0)
   })
+
+  // Colosseum and XD have no in-game Pokédex: their records are the list of what a save can hold
+  // from the game itself. That includes what a caught or gifted Pokémon evolves into, not only
+  // the Shadow and gift Pokémon. Female gender-difference records are left out, as in the other
+  // Generation III Pokédexes, because those differences start in Generation IV.
+  it.each(['col', 'xd'])('%s lists every Pokémon obtainable in the game', (dexId) => {
+    const dex = recordList.find((record) => record.id === dexId)
+    expect(dex).toBeDefined()
+    const listed = new Set(dex?.entries.map((entry) => entry.pid))
+    const missing = Object.values(pokemonById)
+      .filter((pokemon) => !pokemon.isForm && pokemon.obtainableIn.includes(dexId))
+      .map((pokemon) => pokemon.id)
+      .filter((id) => !listed.has(id))
+    expect(missing).toEqual([])
+  })
 })
