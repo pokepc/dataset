@@ -34,6 +34,8 @@ const localeByLanguageId: Record<string, string> = {
   14: 'es-la',
 }
 const ENGLISH = '9'
+/** PokeAPI's Latin American Spanish genus is a copy of the European Spanish one, so it is not imported. */
+const localesWithoutGenus = new Set(['es-la'])
 const JAPANESE_KANA = '1'
 const JAPANESE_KANJI = '11'
 
@@ -241,6 +243,7 @@ async function importPokemon(): Promise<void> {
           changed = true
         }
       if (
+        !localesWithoutGenus.has(locale) &&
         englishEntry.genus === englishSource.genus &&
         fill(entry, 'genus', localSource.genus, context)
       ) {
