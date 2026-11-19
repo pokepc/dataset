@@ -30,6 +30,15 @@ async function visit(page: Page, path: string) {
   await page.waitForLoadState('networkidle')
 }
 
+// A save message shows before the loader revalidation that follows the action has ended, and
+// reloading mid-request aborts it. Start waiting before the save and await it before reloading.
+function loaderRevalidated(page: Page) {
+  return page.waitForEvent(
+    'requestfinished',
+    (request) => request.method() === 'GET' && new URL(request.url()).pathname.endsWith('.data'),
+  )
+}
+
 test.beforeEach(async ({ page }) => {
   const errors: string[] = []
   diagnostics.set(page, errors)
@@ -37,9 +46,12 @@ test.beforeEach(async ({ page }) => {
   page.on('console', (message) => {
     if (['warning', 'error'].includes(message.type())) errors.push(message.text())
   })
-  page.on('requestfailed', (request) =>
-    errors.push(`${request.method()} ${request.url()}: ${request.failure()?.errorText}`),
-  )
+  page.on('requestfailed', (request) => {
+    // React Router prefetches route discovery patches after the page is idle; the next navigation
+    // aborts that request, which is not an app failure.
+    if (new URL(request.url()).pathname === '/__manifest') return
+    errors.push(`${request.method()} ${request.url()}: ${request.failure()?.errorText}`)
+  })
   await page.route('https://fonts.googleapis.com/**', (route) =>
     route.fulfill({ body: '', contentType: 'text/css' }),
   )
@@ -70,8 +82,10 @@ test('dataset loader and persisted Pokedex edit preserve sibling files', async (
     await visit(page, '/pokedexes/kanto')
     const name = page.getByLabel('Name', { exact: true })
     await name.fill('Kanto QA')
+    const revalidated = loaderRevalidated(page)
     await page.getByRole('button', { name: 'Save', exact: true }).click()
     await expect(page.getByText('Pokedex saved.', { exact: true })).toBeVisible()
+    await revalidated
     await page.reload({ waitUntil: 'domcontentloaded' })
     await expect(name).toHaveValue('Kanto QA')
     // Records hold no text: the name lands in the English locale file.
@@ -115,9 +129,12 @@ for (const variant of ['classic', 'modern']) {
     await expect(page).toHaveURL(new RegExp(`/box-presets/${variant}/home/${presetId}$`))
     await expect(page.getByRole('heading', { name: 'Migration QA', exact: true })).toBeVisible()
     await page.getByRole('textbox').first().fill('Migration QA saved')
+    const revalidated = loaderRevalidated(page)
     await page.getByRole('button', { name: 'Save', exact: true }).first().click()
     await expect(page.getByText('Box preset saved with', { exact: false }).first()).toBeVisible()
-    await page.reload({ waitUntil: 'domcontentloaded' })
+    await revalidated
+    // Wait for hydration too: the Delete dialog below does not open on a server-rendered button.
+    await visit(page, page.url())
     await expect(
       page.getByRole('heading', { name: 'Migration QA saved', exact: true }),
     ).toBeVisible()
